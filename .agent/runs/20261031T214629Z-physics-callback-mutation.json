@@ -3,7 +3,7 @@
   "task_id": "TASK-2026-0060",
   "started_at": "2026-10-31T21:46:29Z",
   "local_review_completed_at": "2026-10-31T21:58:37.203604Z",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS for v2 only; original v1 remains FAIL",
     "v1_failed_direct_attempts": 3,
@@ -33,7 +33,12 @@
     "archive_checks": 324,
     "unchanged_old_noncontact_combat_files": 88,
     "new_indexed_articles": 0,
-    "indexed_source_backed_articles": 28
+    "indexed_source_backed_articles": 28,
+    "selected_blob_hashes_verified": 111,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 420,
+    "receipt_queue_tasks_checked": 61,
+    "receipt_declared_paths_checked": 41
   },
   "limits": [
     "First startup returncode -6 differs from printed signal11 crash diagnostic",
@@ -41,5 +46,7 @@
     "Configured backend/thread readback is not implementation authentication",
     "Finite return window and callback marker are not universal timing, permanent absence, native-stack instrumentation or damage policy",
     "Original v2 stdout parser false acceptance preserved; current parser replay and independent pure tests do not relabel old receipts"
-  ]
+  ],
+  "commit_sha": "93467bbbf29aaae51769186f8b161c0cbee2ac75",
+  "ended_at": "2026-10-31T22:02:05.938162Z"
 }

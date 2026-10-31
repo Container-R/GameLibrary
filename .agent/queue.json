@@ -1464,7 +1464,7 @@
       "id": "TASK-2026-0060",
       "question": "What collision-callback mutation boundary can be established beyond the current ordering-only combat fixture?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Existing actor-priority observations do not validate actual physical contact callbacks or safe collision-state mutation",
       "expected_artifact": "Source-gated minimal callback/mutation study, or explicit bounded negative feasibility finding",
@@ -1480,11 +1480,36 @@
         "Freeze a finite original contact/mutation observation oracle before any native execution; stop if phase semantics remain unclear",
         "Keep installed-binary provenance caveat; no general physics/engine bug claim or task-policy substitution"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T22:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:58:37.203604Z",
-      "next_action": "Publish bounded kinematic physics-callback evidence, preserved static failures and parser correction",
+      "next_action": "Preserve failed static controls and exact successful kinematic scope; no universal timing, original-cause or damage-policy inference",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:02:05.938162Z",
+      "commit_sha": "93467bbbf29aaae51769186f8b161c0cbee2ac75"
+    },
+    {
+      "id": "TASK-2026-0061",
+      "question": "How can future runners reject omitted or redirected writable runtime locations without rewriting historical fixture identities?",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 95,
+      "priority_rationale": "A real omitted XDG_DATA_HOME caused failed startup; close the reusable setup contract rather than repeat ad hoc environment construction",
+      "expected_artifact": "Additive future-only five-variable environment helper, finite pure/filesystem and synthetic-child tests, independent acceptance",
+      "artifact_paths": [],
+      "acceptance": [
+        "Prepare and validate HOME/XDG_CACHE_HOME/XDG_CONFIG_HOME/XDG_DATA_HOME/TMPDIR under caller-owned fresh root",
+        "Reject omitted keys, redirected values, missing directories, symlinks and reserved-directory reuse before synthetic launch",
+        "Do not log full parent environment or claim sandbox/full-environment/crash prevention guarantees",
+        "Normal and optimized suites with one synthetic Python child each; no Godot or historical runner replays",
+        "Existing fresh harness/registry and archived fixtures unchanged; normal adapter coverage remains focus only until separate migration"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:02:05.938162Z",
+      "next_action": "Implement and independently review finite future-runner isolation helper without modifying historical evidence",
       "blockers": []
     }
   ]
