@@ -1079,7 +1079,7 @@
       "id": "TASK-2026-0046",
       "question": "Threaded candidate resource root isolation versus mutable external dependency sharing",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Deepen existing asset boundary with actual object-graph ownership evidence; new root identity does not necessarily imply isolated mutable dependencies",
       "expected_artifact": "Existing asset-import/ownership solution plus actual ResourceLoader evidence",
@@ -1088,11 +1088,33 @@
         "Two fresh engine modes IGNORE and IGNORE_DEEP, no concurrent same-path request confound",
         "Independent raw identity/mutation evidence, no GPU, race, performance or official-build authenticity claim"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:55:19.967959Z",
-      "next_action": "Publish independently repeated native resource alias/color counterexample and preserved ID-oracle failure",
+      "last_progress_at": "2026-10-31T19:58:04.212817Z",
+      "next_action": "Keep finite native dependency isolation separate from general cache or concurrent loader guarantees",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:58:04.212817Z",
+      "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e"
+    },
+    {
+      "id": "TASK-2026-0047",
+      "question": "Outstanding same-path threaded requests with conflicting cache policies and request registration lifetime",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Pinned source indicates second same-path request can reuse existing uncollected token before applying new policy; distinct from mutable dependency isolation",
+      "expected_artifact": "Existing asset-loading article plus bounded request ownership evidence",
+      "acceptance": [
+        "Freeze two mode-order cases, first request reaches LOADED before second request",
+        "Actual incremented call counters and request/status/get identity traces",
+        "Separate path registration lifetime from still-held Resource validity; no worker-race, latency or generalbroker claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:25:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:58:04.212817Z",
+      "next_action": "Execute two fresh actual request-policy sequences and independently review raw call/identity/status evidence",
       "blockers": []
     }
   ]

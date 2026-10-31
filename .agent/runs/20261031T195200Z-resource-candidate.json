@@ -1,10 +1,10 @@
 {
   "run_id": "20261031T195200Z-resource-candidate",
   "started_at": "2026-10-31T19:52:00Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T19:58:04.212817Z",
   "task_id": "TASK-2026-0046",
-  "commit_sha": null,
-  "outcome": "independently reviewed; publication pending",
+  "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e",
+  "outcome": "published and read back",
   "validation": {
     "unique_engine_scenarios": 2,
     "initial_author_engine_processes_before_runner_rejection": 1,
@@ -16,7 +16,12 @@
     "archive_normal_optimized_identical": true,
     "independent_literal_alias_color_identity_disk_check": true,
     "first_observed_status": "LOADED in both final cases, not timing or synchronous claim",
-    "new_indexed_articles": 0
+    "new_indexed_articles": 0,
+    "selected_blob_hashes_verified": 96,
+    "outside_tree_changes": 0,
+    "local_markdown_links": 332,
+    "missing_links": 0,
+    "indexed_source_backed_articles": 25
   },
   "corrections": [
     "Initial positive-instance-ID guard rejected observed signed negative IDs; original failure retained, resource graph and alias/color expectations unchanged"
