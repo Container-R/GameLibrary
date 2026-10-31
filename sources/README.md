@@ -29,3 +29,5 @@
 4. 原创契约、建议实验和实际执行结果分别标明；无法观察的状态保持未知。
 
 Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](../research/experiments/godot-pause-input/README.md)；Python3.12路径替换契约及实际tmpfs反例见[文件系统档案](../research/experiments/filesystem-save-publication/README.md)。
+
+焦点条目的Godot4.6官方API及4.6.3实际无头证据见[实例身份档案](../research/experiments/godot-focus-boundary/README.md)，不替代Unity/UI可访问性验收。

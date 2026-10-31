@@ -1,0 +1,56 @@
+{
+  "version": "4.6.3.stable.official.7d41c59c4",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "source_sha256": {
+    "main.gd": "b63a5198b379efa5f673ba0b9110bac7bb390020de9463f7de7fefcafdffe210",
+    "main.tscn": "2a54f36ff1dbc1b5e07021beef65d02a9f1021a833504039eefea22e6da9d4c1",
+    "project.godot": "b7ff7a2326492049ae83058454682b7ccd247ec6911675fc543d31fa4a926185",
+    "run.py": "0f5c3a92971b886766dd6219163c89105e126e4f990c940006fc7f24505d1f3f"
+  },
+  "runs": [
+    {
+      "mode": "gate",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-focus-boundary",
+        "--single-threaded-scene",
+        "--",
+        "gate"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    },
+    {
+      "mode": "naive",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-focus-boundary",
+        "--single-threaded-scene",
+        "--",
+        "naive"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    },
+    {
+      "mode": "guarded",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-focus-boundary",
+        "--single-threaded-scene",
+        "--",
+        "guarded"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    }
+  ]
+}

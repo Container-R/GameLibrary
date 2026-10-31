@@ -1,0 +1,25 @@
+{
+  "source_fingerprints_match": true,
+  "binary_fingerprint_match": true,
+  "version": "4.6.3.stable.official.7d41c59c4",
+  "runs": [
+    {
+      "mode": "gate",
+      "owner_final": "Close"
+    },
+    {
+      "mode": "naive",
+      "owner_final": "Opener",
+      "current_revision": 1,
+      "distinct_ids": true,
+      "actual_deferred_order": true
+    },
+    {
+      "mode": "guarded",
+      "owner_final": "SafeReturn",
+      "current_revision": 1,
+      "distinct_ids": true,
+      "actual_deferred_order": true
+    }
+  ]
+}

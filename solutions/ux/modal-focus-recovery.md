@@ -7,11 +7,11 @@ primary_discipline: UX
 related_disciplines: [A11Y, QA, PROG]
 related_roles: [ui-programmer,ux-designer,accessibility-specialist,qa-tester]
 related_topics: [modal-dialog,keyboard-navigation,gamepad-navigation,focus-restoration]
-engines: [Unity]
-versions: ["Unity 6000.0 UI Toolkit 文档", "XAG 113：2026-03-04 更新页面"]
+engines: [Unity, Godot]
+versions: ["Unity 6000.0 UI Toolkit 文档", "XAG 113：2026-03-04 更新页面", "Godot4.6.3.stable.official.7d41c59c4 实际夹具"]
 platforms: [PC,console]
 updated_at: 2026-10-31
-verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；未执行Unity或平台认证测试
+verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；另有Godot实际焦点身份夹具；未执行Unity或平台认证测试
 sources:
   - https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/113
   - https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/112
@@ -20,6 +20,10 @@ sources:
   - https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-Panel-Events.html
   - https://docs.unity3d.com/6000.0/Documentation/ScriptReference/UIElements.VisualElement.html
   - https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-Runtime-Event-System.html
+  - https://docs.godotengine.org/en/4.6/classes/class_control.html
+  - https://docs.godotengine.org/en/4.6/classes/class_viewport.html
+  - https://docs.godotengine.org/en/4.6/classes/class_object.html
+  - https://docs.godotengine.org/en/4.6/classes/class_node.html
 ---
 
 # 模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退
@@ -198,3 +202,11 @@ onReady(request):
 ## 关联知识
 
 [伪本地化契约](../localization/pseudo-localization-contract.md)补充文本变化后的布局验收；[音乐状态交接](../audio/music-state-transition-contract.md)使用类似的异步请求失效原则，但不能替代UI自身生命周期。
+
+## 实际引擎补证：同路径重建不等于原控件身份
+
+Godot4.6.3无头实验把实际Button从树中移除后，在相同路径创建表示另一业务记录的新Button。恢复请求通过引擎deferred队列执行，且请求版本保持有效：朴素路径查找使新记录真实取得焦点；显式实例身份检查则记录不匹配并把焦点交给有效SafeReturn。独立判据同时读取Viewport实际owner、focus信号和回调序号，不把请求值当作成功结果。三个真实进程（能力门槛、朴素策略、身份守卫）全部满足其判据，朴素策略的预期业务错误确实出现。
+
+本例契约要求保持原业务记录身份；若产品允许按业务键重建同记录控件，应另行解析而非机械拒绝新实例。该实验仅补证Godot的程序化焦点/活树适配行为，不能替代正文Unity集成、视觉可访问性或完整模态导航测试。普通Control对话框不是原生模态Window；naive行为是应用策略错误，不是引擎缺陷。详见配套实验README和原始记录。
+
+[配套原始夹具与证据](../../research/experiments/godot-focus-boundary/README.md)。

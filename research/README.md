@@ -29,3 +29,5 @@ python3 scripts/run_model_tests.py
 - [Godot暂停与合成输入](experiments/godot-pause-input/README.md)：真实引擎中的应用队列反例；ALWAYS固定心跳排除暂停观察的空洞通过；不是设备测试。
 
 - [真实文件路径替换反例](experiments/filesystem-save-publication/README.md)：tmpfs上完整旧版本仍可覆盖新版本；对照重检查不是通用修复或Steam验证。
+
+- [Godot实际焦点身份](experiments/godot-focus-boundary/README.md)：同路径重建导致恢复到不同业务对象；查询实际Viewport焦点与信号，不验证视觉或Unity。

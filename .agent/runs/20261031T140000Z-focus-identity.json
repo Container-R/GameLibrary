@@ -1,0 +1,73 @@
+{
+  "run_id": "20261031T140000Z-focus-identity",
+  "started_at": "2026-10-31T13:54:40Z",
+  "ended_at": null,
+  "task_id": [
+    "TASK-2026-0019"
+  ],
+  "actions": [
+    "先实际Control焦点能力门槛，再运行naive/guarded两策略，不做无关FPS矩阵",
+    "同路径新业务对象实际获焦反例；身份守卫回到SafeReturn，请求revision保持有效以隔离单一守卫",
+    "查询Viewport实际owner、真实focus信号、引擎deferred及后续process顺序",
+    "独立相同环境复制冻结源代码再跑3进程，四份源码与二进制哈希一致；集成者核对清单"
+  ],
+  "sources_examined": [
+    "https://docs.godotengine.org/en/4.6/classes/class_control.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_viewport.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_object.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_node.html"
+  ],
+  "evidence_added": [
+    "路径相同不代表控件/业务身份相同的实际Godot焦点行为",
+    "身份守卫独立触发，版本守卫未掩盖",
+    "原始owner/信号/回调顺序及独立复跑记录"
+  ],
+  "files_changed": [
+    "solutions/ux/modal-focus-recovery.md",
+    "research/README.md",
+    "sources/README.md",
+    ".agent/queue.json",
+    ".agent/state.json",
+    "research/experiments/godot-focus-boundary/project.godot",
+    "research/experiments/godot-focus-boundary/run.py",
+    "research/experiments/godot-focus-boundary/README.md",
+    "research/experiments/godot-focus-boundary/main.tscn",
+    "research/experiments/godot-focus-boundary/main.gd",
+    "research/experiments/godot-focus-boundary/review/optimized-rejection.txt",
+    "research/experiments/godot-focus-boundary/review/runner-output.txt",
+    "research/experiments/godot-focus-boundary/review/README.md",
+    "research/experiments/godot-focus-boundary/review/review-checks.json",
+    "research/experiments/godot-focus-boundary/results/guarded.log",
+    "research/experiments/godot-focus-boundary/results/summary.json",
+    "research/experiments/godot-focus-boundary/results/optimized-rejection.txt",
+    "research/experiments/godot-focus-boundary/results/runner-output.txt",
+    "research/experiments/godot-focus-boundary/results/naive.log",
+    "research/experiments/godot-focus-boundary/results/naive.json",
+    "research/experiments/godot-focus-boundary/results/version.txt",
+    "research/experiments/godot-focus-boundary/results/guarded.json",
+    "research/experiments/godot-focus-boundary/results/gate.log",
+    "research/experiments/godot-focus-boundary/results/gate.json",
+    "research/experiments/godot-focus-boundary/review/fixture/results/guarded.log",
+    "research/experiments/godot-focus-boundary/review/fixture/results/summary.json",
+    "research/experiments/godot-focus-boundary/review/fixture/results/naive.log",
+    "research/experiments/godot-focus-boundary/review/fixture/results/naive.json",
+    "research/experiments/godot-focus-boundary/review/fixture/results/version.txt",
+    "research/experiments/godot-focus-boundary/review/fixture/results/guarded.json",
+    "research/experiments/godot-focus-boundary/review/fixture/results/gate.log",
+    "research/experiments/godot-focus-boundary/review/fixture/results/gate.json"
+  ],
+  "commit_sha": null,
+  "validation": {
+    "actual_engine": "gate+2strategy processes, author and independent repeats;6total not6scenarios",
+    "source_fingerprints": "4source files and binary hash match author/reviewer",
+    "structure_errors": 0,
+    "structure_warnings": 0,
+    "knowledge_documents": 12,
+    "python_model_suite": "unchanged; not claimed as new coverage"
+  },
+  "blockers": [
+    "未验证Unity、视觉可访问性、原生Window模态、输入导航、同实例业务重绑定或独立版本守卫"
+  ],
+  "next_action": "评估锁定ink原始来源的叙事状态契约是否有独立价值",
+  "outcome": "reviewed; publication pending"
+}
