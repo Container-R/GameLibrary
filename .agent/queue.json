@@ -1013,7 +1013,7 @@
       "id": "TASK-2026-0043",
       "question": "Sprite alpha association handoff in actual stored-byte CPU compositing",
       "discipline": "ART2D",
-      "status": "reviewing",
+      "status": "published",
       "priority": 87,
       "priority_rationale": "Primary source gate exposes practical representation or production handoff gap, distinct from existing payload and save compatibility research",
       "expected_artifact": "solutions/art2d/alpha-association-contract.md",
@@ -1022,12 +1022,14 @@
         "Bounded independent review and reproducible evidence where executed",
         "No inferred production implementation or visual/audio quality guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:28:31.261632Z",
-      "next_action": "Publish independently repeated alpha-association numeric evidence with stored-byte color-domain limits",
-      "blockers": []
+      "last_progress_at": "2026-10-31T19:31:46.222052Z",
+      "next_action": "Maintain stored-byte representation scope; real renderer/color pipeline remains separate",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:31:46.222052Z",
+      "commit_sha": "a0bdda39195635322d852af69e0f28cd849ca473"
     },
     {
       "id": "TASK-2026-0044",
@@ -1050,6 +1052,26 @@
       "blockers": [],
       "completed_at": "2026-10-31T19:26:44.936173Z",
       "commit_sha": "f36dbd5004973d41f280e3d18d853491d5db3117"
+    },
+    {
+      "id": "TASK-2026-0045",
+      "question": "Same-tick combat eligibility and commit policy beyond fixed-timestep repeatability",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Deepen existing high-value combat timing article: scalar per-tick tests do not express actors invalidating one another during iteration",
+      "expected_artifact": "Existing fixed-step solution plus supplemental simultaneous-combat finite model",
+      "acceptance": [
+        "Freeze simultaneous policy explicitly without claiming it universal",
+        "Exact finite ordering counterexample and initially-dead eligibility boundary",
+        "Independent literal outcome oracle; no engine/production guarantee"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:31:46.222052Z",
+      "next_action": "Verify finite policy-specific supplemental model and integrate into existing article after independent review",
+      "blockers": []
     }
   ]
 }

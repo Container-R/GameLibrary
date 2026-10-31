@@ -1,17 +1,24 @@
 {
   "run_id": "20261031T192800Z-alpha-association",
   "started_at": "2026-10-31T19:28:31.261632Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T19:31:46.222052Z",
   "task_id": "TASK-2026-0043",
-  "commit_sha": null,
-  "outcome": "independently reviewed; publication pending",
+  "commit_sha": "a0bdda39195635322d852af69e0f28cd849ca473",
+  "outcome": "published and read back",
   "validation": {
     "author_conversions": 5,
     "author_composites": 6,
     "reviewer_conversions": 5,
     "reviewer_composites": 6,
     "independent_literal_operation_checks": 11,
-    "reviewer_synthetic_startup_failures": 2
+    "reviewer_synthetic_startup_failures": 2,
+    "selected_blob_hashes_verified": 46,
+    "outside_tree_changes": 0,
+    "local_markdown_links": 318,
+    "missing_links": 0,
+    "indexed_source_backed_articles": 25,
+    "archive_consistency_checks": 134,
+    "integrator_new_composite_calls": 0
   },
   "scope": "Finite original raw numeric buffers; stored-byte arithmetic, no color-managed, PNG, GPU, engine or perceptual validation"
 }
