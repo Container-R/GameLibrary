@@ -63,6 +63,11 @@
           "document_id": "SOL-ART2D-001",
           "question": "相同四通道字节为什么仍可能在消费者处重复乘 alpha？",
           "rationale": "实际有限 CPU 反例区分模式转换与字节重标，不冒称渲染器或真实暗边修复。"
+        },
+        {
+          "document_id": "SOL-GFX-002",
+          "question": "矩阵大小和 stride 都相同，为何变换仍然错？",
+          "rationale": "把编译产物的 major 约定、主机字节编码与逻辑乘法分开验收；离线证据不替代 GPU 读回。"
         }
       ],
       "subject_profile_id": "ROLE-TA-001"

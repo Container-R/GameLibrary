@@ -1,0 +1,63 @@
+; SPIR-V
+; Version: 1.0
+; Generator: Google Shaderc over Glslang; 11
+; Bound: 31
+; Schema: 0
+               OpCapability Shader
+          %1 = OpExtInstImport "GLSL.std.450"
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main"
+               OpExecutionMode %main LocalSize 1 1 1
+               OpSource GLSL 450
+               OpSourceExtension "GL_GOOGLE_cpp_style_line_directive"
+               OpSourceExtension "GL_GOOGLE_include_directive"
+               OpName %main "main"
+               OpName %Output "Output"
+               OpMemberName %Output 0 "value"
+               OpName %output_data "output_data"
+               OpName %Params "Params"
+               OpMemberName %Params 0 "transform"
+               OpName %params "params"
+               OpDecorate %Output BufferBlock
+               OpMemberDecorate %Output 0 Offset 0
+               OpDecorate %output_data Binding 1
+               OpDecorate %output_data DescriptorSet 0
+               OpDecorate %Params Block
+               OpMemberDecorate %Params 0 RowMajor
+               OpMemberDecorate %Params 0 MatrixStride 16
+               OpMemberDecorate %Params 0 Offset 0
+               OpDecorate %params Binding 0
+               OpDecorate %params DescriptorSet 0
+               OpDecorate %gl_WorkGroupSize BuiltIn WorkgroupSize
+       %void = OpTypeVoid
+          %3 = OpTypeFunction %void
+      %float = OpTypeFloat 32
+    %v3float = OpTypeVector %float 3
+     %Output = OpTypeStruct %v3float
+%_ptr_Uniform_Output = OpTypePointer Uniform %Output
+%output_data = OpVariable %_ptr_Uniform_Output Uniform
+        %int = OpTypeInt 32 1
+      %int_0 = OpConstant %int 0
+%mat3v3float = OpTypeMatrix %v3float 3
+     %Params = OpTypeStruct %mat3v3float
+%_ptr_Uniform_Params = OpTypePointer Uniform %Params
+     %params = OpVariable %_ptr_Uniform_Params Uniform
+%_ptr_Uniform_mat3v3float = OpTypePointer Uniform %mat3v3float
+    %float_1 = OpConstant %float 1
+    %float_2 = OpConstant %float 2
+    %float_3 = OpConstant %float 3
+         %23 = OpConstantComposite %v3float %float_1 %float_2 %float_3
+%_ptr_Uniform_v3float = OpTypePointer Uniform %v3float
+       %uint = OpTypeInt 32 0
+     %v3uint = OpTypeVector %uint 3
+     %uint_1 = OpConstant %uint 1
+%gl_WorkGroupSize = OpConstantComposite %v3uint %uint_1 %uint_1 %uint_1
+       %main = OpFunction %void None %3
+          %5 = OpLabel
+         %18 = OpAccessChain %_ptr_Uniform_mat3v3float %params %int_0
+         %19 = OpLoad %mat3v3float %18
+         %24 = OpMatrixTimesVector %v3float %19 %23
+         %26 = OpAccessChain %_ptr_Uniform_v3float %output_data %int_0
+               OpStore %26 %24
+               OpReturn
+               OpFunctionEnd

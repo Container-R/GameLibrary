@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/shader-matrix-layout/negatives/missing-library/run.py", line 51, in <module>
+    need(p.returncode==0 and not p.stderr,'child failure')
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/shader-matrix-layout/negatives/missing-library/run.py", line 10, in need
+    if not c: raise RuntimeError(m)
+              ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: child failure

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archived_compiler_results_checked": 4,
+  "author_compiler_processes": 2,
+  "independent_compiler_processes": 2,
+  "integrator_compiler_processes": 0,
+  "reviewer_synthetic_startup_negatives": 3,
+  "reviewer_negative_native_compilations": 0,
+  "archived_baseline_assemblies_semantically_checked": 2,
+  "synthetic_semantic_rejects": 14,
+  "archive_consistency_checks": 209,
+  "normal_optimized_identical": true,
+  "source_checks": [
+    "Pinned GLSL storage qualifiers and matrix multiplication rules",
+    "Pinned Vulkan equivalent arrays/base/extended alignment rules with feature conditions",
+    "Pinned shaderc fixed ABI/header and environment constants"
+  ],
+  "provenance": "Actual library SHA checked; exact upstream build identity unknown",
+  "metadata_correction": "Active queue discipline RENDER corrected to existing GFX; no taxonomy expansion",
+  "scope": "Compiler interface data and original CPU interpretation, not shader execution or general SPIR-V validation",
+  "local_markdown_links": 343,
+  "missing_links": 0,
+  "indexed_source_backed_articles": 26
+}

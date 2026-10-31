@@ -1777,6 +1777,135 @@
         "run_py_sha256"
       ],
       "target": "research/experiments/godot-resource-broker/run.py"
+    },
+    {
+      "kind": "manifest",
+      "id": "shader-layout/author/source",
+      "document": "research/experiments/shader-matrix-layout/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/shader-matrix-layout/run.py",
+        "compile_case.py": "research/experiments/shader-matrix-layout/compile_case.py",
+        "row.comp": "research/experiments/shader-matrix-layout/row.comp",
+        "column.comp": "research/experiments/shader-matrix-layout/column.comp",
+        "contract.json": "research/experiments/shader-matrix-layout/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/author/receipt-invocation_id",
+      "left": "research/experiments/shader-matrix-layout/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ],
+      "right_field": [
+        "id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/author/receipt-status",
+      "left": "research/experiments/shader-matrix-layout/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/results/invocation.json",
+      "field": [
+        "status"
+      ],
+      "right_field": [
+        "state"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "shader-layout/author/row",
+      "log": "research/experiments/shader-matrix-layout/results/row.stdout",
+      "parsed": "research/experiments/shader-matrix-layout/results/row.json"
+    },
+    {
+      "kind": "log",
+      "id": "shader-layout/author/column",
+      "log": "research/experiments/shader-matrix-layout/results/column.stdout",
+      "parsed": "research/experiments/shader-matrix-layout/results/column.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "shader-layout/review/source",
+      "document": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/shader-matrix-layout/review/fixture/run.py",
+        "compile_case.py": "research/experiments/shader-matrix-layout/review/fixture/compile_case.py",
+        "row.comp": "research/experiments/shader-matrix-layout/review/fixture/row.comp",
+        "column.comp": "research/experiments/shader-matrix-layout/review/fixture/column.comp",
+        "contract.json": "research/experiments/shader-matrix-layout/review/fixture/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/review/receipt-invocation_id",
+      "left": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/review/fixture/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ],
+      "right_field": [
+        "id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/review/receipt-status",
+      "left": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/review/fixture/results/invocation.json",
+      "field": [
+        "status"
+      ],
+      "right_field": [
+        "state"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "shader-layout/review/row",
+      "log": "research/experiments/shader-matrix-layout/review/fixture/results/row.stdout",
+      "parsed": "research/experiments/shader-matrix-layout/review/fixture/results/row.json"
+    },
+    {
+      "kind": "log",
+      "id": "shader-layout/review/column",
+      "log": "research/experiments/shader-matrix-layout/review/fixture/results/column.stdout",
+      "parsed": "research/experiments/shader-matrix-layout/review/fixture/results/column.json"
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/compare/source_sha256",
+      "left": "research/experiments/shader-matrix-layout/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/compare/python",
+      "left": "research/experiments/shader-matrix-layout/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "shader-layout/compare/platform",
+      "left": "research/experiments/shader-matrix-layout/results/summary.json",
+      "right": "research/experiments/shader-matrix-layout/review/fixture/results/summary.json",
+      "field": [
+        "platform"
+      ]
     }
   ]
 }

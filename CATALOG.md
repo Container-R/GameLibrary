@@ -28,6 +28,7 @@
 - [客户端移动预测的权威边界与确认重放契约](solutions/programming/client-prediction-authority-boundary.md) — `source-backed` · `NET`
 - [用固定 Tick 划清战斗模拟与引擎表现边界](solutions/programming/fixed-step-simulation-boundary.md) — `source-backed` · `PROG`
 - [BC 压缩纹理预算：逐 mip 计算 payload，不把 DDS 文件长度当作显存](solutions/rendering/block-compressed-mip-budget.md) — `source-backed` · `GFX`
+- [CPU 与 shader 矩阵交接：相同大小和 stride，不代表相同矩阵约定](solutions/rendering/matrix-major-interface-contract.md) — `source-backed` · `GFX`
 - [模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退](solutions/ux/modal-focus-recovery.md) — `source-backed` · `UX`
 - [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `source-backed` · `VFX`
 

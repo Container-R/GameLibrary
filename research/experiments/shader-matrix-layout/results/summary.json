@@ -1,0 +1,91 @@
+{
+  "invocation_id": "617b1412-8773-433c-8a8c-eb58a03fa4d4",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "run.py": "64d4d46db69fceae21cebe085c3782756327d663ceb51701b144d81c1a80a86f",
+    "compile_case.py": "100b5731090d854f2f97d85276dcbcf5d9aadb08a6632acb95157abff25dfc99",
+    "row.comp": "dfa4a00db5623ade014ec757f663ff8c3420f6e2f86622d4583316929f469c4f",
+    "column.comp": "8581374d43cd5f65a6b49fa6a10e9b51d1e71ca93e3b4fa79258df9199de9bc1",
+    "contract.json": "00ed61e278ef0411640e162a3b49059f702816a306f9797ca43784dede996b75"
+  },
+  "cases": [
+    {
+      "case": "row",
+      "decorations": {
+        "major": "RowMajor",
+        "offset": 0,
+        "matrix_stride": 16,
+        "columns": 3,
+        "rows": 3,
+        "scalar_bits": 32
+      },
+      "matrix": [
+        [
+          1.0,
+          2.0,
+          3.0
+        ],
+        [
+          4.0,
+          5.0,
+          6.0
+        ],
+        [
+          7.0,
+          8.0,
+          10.0
+        ]
+      ],
+      "cpu_product": [
+        14.0,
+        32.0,
+        53.0
+      ],
+      "library_sha256": "31400b359d2f4b4a43168978412a72913474725befb87966068cfac1922ac6c9",
+      "assembly_sha256": "d51a34a2e563eac0cb3bd2273ac489aa2c27e0c16d91533ca89aea338adc7d57"
+    },
+    {
+      "case": "column",
+      "decorations": {
+        "major": "ColMajor",
+        "offset": 0,
+        "matrix_stride": 16,
+        "columns": 3,
+        "rows": 3,
+        "scalar_bits": 32
+      },
+      "matrix": [
+        [
+          1.0,
+          2.0,
+          3.0
+        ],
+        [
+          4.0,
+          5.0,
+          6.0
+        ],
+        [
+          7.0,
+          8.0,
+          10.0
+        ]
+      ],
+      "cpu_product": [
+        14.0,
+        32.0,
+        53.0
+      ],
+      "library_sha256": "31400b359d2f4b4a43168978412a72913474725befb87966068cfac1922ac6c9",
+      "assembly_sha256": "8e023fced56cac1578aed3b70aa7555237f78b7fd38e3f06c11cd6a6580fbf9f"
+    }
+  ],
+  "status": "PASS",
+  "wrong_cpu_product": [
+    30.0,
+    36.0,
+    45.0
+  ],
+  "actual_compiler_processes": 2
+}

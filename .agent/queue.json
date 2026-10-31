@@ -1122,8 +1122,8 @@
     {
       "id": "TASK-2026-0048",
       "question": "CPU-to-shader matrix major order: identical stride and occupancy can require different host serialization",
-      "discipline": "RENDER",
-      "status": "researching",
+      "discipline": "GFX",
+      "status": "reviewed",
       "priority": 89,
       "priority_rationale": "Installed compiler can expose actual interface decorations, closing a representation gap not covered by texture budget or vertex stride arithmetic",
       "expected_artifact": "Source-backed matrix layout handoff with original compiler and host-byte evidence",
@@ -1135,8 +1135,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:35:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:07:22.886362Z",
-      "next_action": "Main-integrator source/API and receipt review of independently repeated compiler fixture",
+      "last_progress_at": "2026-10-31T20:11:26.044850Z",
+      "next_action": "Publish original matrix-major compiler interface evidence and final article review",
       "blockers": []
     }
   ]

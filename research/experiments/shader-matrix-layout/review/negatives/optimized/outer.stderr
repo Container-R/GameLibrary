@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/shader-matrix-layout/negatives/optimized/run.py", line 35, in <module>
+    need(not sys.flags.optimize,'Run without -O')
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/shader-matrix-layout/negatives/optimized/run.py", line 10, in need
+    if not c: raise RuntimeError(m)
+              ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Run without -O

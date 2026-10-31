@@ -33,6 +33,8 @@
   - 关联理由：区分属性跨度、步长解释与索引恢复的内容意图。
 - 相同四通道字节为什么仍可能在消费者处重复乘 alpha？ → [精灵透明度交接：四通道字节不说明 RGB 是否已经乘过 alpha](solutions/art2d/alpha-association-contract.md) — `SOL-ART2D-001` · `source-backed` · `ART2D`
   - 关联理由：实际有限 CPU 反例区分模式转换与字节重标，不冒称渲染器或真实暗边修复。
+- 矩阵大小和 stride 都相同，为何变换仍然错？ → [CPU 与 shader 矩阵交接：相同大小和 stride，不代表相同矩阵约定](solutions/rendering/matrix-major-interface-contract.md) — `SOL-GFX-002` · `source-backed` · `GFX`
+  - 关联理由：把编译产物的 major 约定、主机字节编码与逻辑乘法分开验收；离线证据不替代 GPU 读回。
 
 ## 从交互音频出发
 路线 ID：`role-interactive-audio`
