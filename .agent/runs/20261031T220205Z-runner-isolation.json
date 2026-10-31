@@ -3,7 +3,7 @@
   "task_id": "TASK-2026-0061",
   "started_at": "2026-10-31T22:02:05Z",
   "local_review_completed_at": "2026-10-31T22:12:06.166850Z",
-  "outcome": "reviewed locally; publication pending",
+  "outcome": "published and read back",
   "validation": {
     "synthetic_children_total": 8,
     "engine_processes": 0,
@@ -17,7 +17,12 @@
     "archive_checks": 340,
     "historical_experiment_and_fresh_files_unchanged": 1723,
     "indexed_source_backed_articles": 28,
-    "new_indexed_articles": 0
+    "new_indexed_articles": 0,
+    "selected_blob_hashes_verified": 67,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 433,
+    "receipt_queue_tasks_checked": 62,
+    "receipt_declared_paths_checked": 44
   },
   "limits": [
     "Five selected writable directories only, not a sandbox or full environment/XDG compliance",
@@ -25,5 +30,7 @@
     "No historical runner migration, replay, normal adapter coverage expansion or engine launch",
     "Removed temporary child sentinel files were checked by original suites, not rechecked by static archive checker"
   ],
-  "local_integration_correction": "An initially mis-shaped added registry equality entry failed validation; removed redundant equality entry before publication. Production helper identity is checked explicitly by the portable archive checker; 340 retained registry checks pass."
+  "local_integration_correction": "An initially mis-shaped added registry equality entry failed validation; removed redundant equality entry before publication. Production helper identity is checked explicitly by the portable archive checker; 340 retained registry checks pass.",
+  "commit_sha": "fb7227b65886b624988de06063a6bdc1038d1f95",
+  "ended_at": "2026-10-31T22:13:53.402116Z"
 }

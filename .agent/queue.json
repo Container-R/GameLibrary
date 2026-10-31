@@ -1493,7 +1493,7 @@
       "id": "TASK-2026-0061",
       "question": "How can future runners reject omitted or redirected writable runtime locations without rewriting historical fixture identities?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "A real omitted XDG_DATA_HOME caused failed startup; close the reusable setup contract rather than repeat ad hoc environment construction",
       "expected_artifact": "Additive future-only five-variable environment helper, finite pure/filesystem and synthetic-child tests, independent acceptance",
@@ -1509,11 +1509,36 @@
         "Normal and optimized suites with one synthetic Python child each; no Godot or historical runner replays",
         "Existing fresh harness/registry and archived fixtures unchanged; normal adapter coverage remains focus only until separate migration"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:12:06.166850Z",
-      "next_action": "Finish independent integration acceptance, publish exact staged helper and finite evidence without historical migration",
+      "next_action": "Adopt only in separately reviewed new callers; preserve historical source identities and narrow environment scope",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:13:53.402116Z",
+      "commit_sha": "fb7227b65886b624988de06063a6bdc1038d1f95"
+    },
+    {
+      "id": "TASK-2026-0062",
+      "question": "How should build/deployment engineering prove that the QA-accepted package and configuration are the candidate promoted to release?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Important missing occupation and cross-team artifact promotion boundary; pipeline completion is not QA approval or deployment authorization",
+      "expected_artifact": "Source-gated build/deployment role profile and bounded original artifact-promotion handoff proposal",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact current role coverage and primary employer/team sources across Japanese and English evidence",
+        "Separate build/test/package distribution from deployment and live-service ownership; no universal title equivalence",
+        "Use a concrete documented production case if available without transferring unverified outcomes",
+        "Mark original handoff worksheet unexecuted; no benchmark or operational adoption claims",
+        "Independent source and applicability review before publication"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:13:53.402116Z",
+      "next_action": "Review primary-source discovery gate and current occupation coverage before drafting build/deployment responsibility handoff",
       "blockers": []
     }
   ]
