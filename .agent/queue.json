@@ -1723,7 +1723,7 @@
       "id": "TASK-2026-0069",
       "question": "How does a fresh Ogg Opus stream separate encoded granule positions, pre-skip/end trim and presented PCM frame count?",
       "discipline": "MUSIC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Existing music article explicitly excludes encoded padding; installed FFmpeg/libopus capabilities permit a concrete codec/container boundary beyond PCM-only evidence",
       "expected_artifact": "Source-gated finite OggOpus count experiment or precise negative, supplementing existing PCM loop article without playback/quality claims",
@@ -1738,11 +1738,36 @@
         "Lossy output notbyteequal; length agreement notseamless loop/marker/phase/playback proof",
         "Preserve tool/source/library identities, rawlogs/generatedartifacts and independent exactoracle; noinstall/resampling/alternatecodec expansion"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T00:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T23:29:21.698030Z",
-      "next_action": "Publish reviewed finite codec/container count boundary; preserve old PCM fixture and scope beyond full decoding",
+      "next_action": "Retain original finite codec count evidence; playback/seek/quality remain unverified",
+      "blockers": [],
+      "completed_at": "2026-10-31T23:35:26.722156Z",
+      "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b"
+    },
+    {
+      "id": "TASK-2026-0070",
+      "question": "How does production management distinguish reported local completion, receiver-ready dependencies and milestone acceptance?",
+      "discipline": "PROD",
+      "status": "reviewing",
+      "priority": 90,
+      "priority_rationale": "Whole-role matrix remains incomplete; concrete first-party production samples support an actionable missing dependency/commitment role interface",
+      "expected_artifact": "One source-backed production-manager role and original unexecuted dependency handoff worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Verify original Ubisoft Frank Roy interview, BNS Oshiyama historical project experience and Riot cosmetics responsibility sample",
+        "Preserve organization-specific title and authority differences; no universal producer release power",
+        "Distinguish original hypothetical asset/build handoff from actual studio practice or measured efficacy",
+        "Maintain unknown source dates and historical remote-policy scope",
+        "Independently review source alignment; complete navigation and queue checks before publication"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T00:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T23:35:26.722156Z",
+      "next_action": "Integrate independently reviewed role draft and source record; verify indexes and publish as partial TASK0008 coverage",
       "blockers": []
     }
   ]

@@ -5,8 +5,8 @@
     "TASK-2026-0069"
   ],
   "started_at": "2026-10-31T23:14:11.486756Z",
-  "ended_at": "2026-10-31T23:29:21.698030Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T23:35:26.722156Z",
+  "outcome": "published and read back",
   "sources": [
     "RFC 7845 \u00a7\u00a73\u20135.2",
     "RFC 6716 \u00a73.1/Table2/\u00a73.2.2",
@@ -47,7 +47,12 @@
     "prior_experiment_files_unchanged": 1938,
     "relocated_archive_only_static_commands": 8,
     "local_markdown_links_checked": 509,
-    "selected_blobs_pending_verification": true
+    "selected_blobs_pending_verification": false,
+    "selected_blob_hashes_verified": 144,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 70,
+    "receipt_declared_paths_checked": 63
   },
-  "next_action": "Complete reviewed production manager role contribution from concrete original sources; whole role matrix stays incomplete"
+  "next_action": "Complete reviewed production manager role contribution from concrete original sources; whole role matrix stays incomplete",
+  "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b"
 }
