@@ -177,10 +177,10 @@
       "id": "TASK-2026-0007",
       "question": "分析游戏经济系统产出消耗平衡与数据监控的实际方案",
       "discipline": "DESIGN",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 84,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
-      "expected_artifact": "solutions/game-design/economy-sinks-and-sources.md",
+      "expected_artifact": "solutions/design/single-player-economy-ledger.md",
       "acceptance": [
         "真实原始资料至少一项",
         "问题或职业职责有可操作细节",
@@ -192,15 +192,15 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T13:12:49.695863Z",
-      "next_action": "读取一手资料，设计原创交付/验收或账本模型",
+      "last_progress_at": "2026-10-31T13:17:23.011356Z",
+      "next_action": "独立复核完成，等待发表核验",
       "blockers": []
     },
     {
       "id": "TASK-2026-0008",
       "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
       "discipline": "PROD",
-      "status": "backlog",
+      "status": "needs-research",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
@@ -213,17 +213,21 @@
       "source_leads": [],
       "owner": null,
       "lease_until": null,
-      "attempts": 0,
+      "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "利用公开职业体系与多工作室岗位信息比较分工",
-      "blockers": []
+      "last_progress_at": "2026-10-31T13:17:23.011356Z",
+      "next_action": "七篇覆盖审计已完成；全学科职责核实仍未完成，分类兼容拆分待实施和测试",
+      "blockers": [],
+      "partial_artifacts": [
+        "research/audits/initial-coverage-and-taxonomy.md"
+      ],
+      "scope_note": "局部覆盖审计不是全学科分类研究完成"
     },
     {
       "id": "TASK-2026-0010",
       "question": "核实交互音频岗位分工、声音资产与集成交付物；与音乐状态契约交叉索引",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 82,
       "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
       "expected_artifact": "roles/audio/interactive-audio-designer.md",
@@ -236,9 +240,9 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "next_action": "读取一手资料，设计原创交付/验收或账本模型",
+      "next_action": "独立复核完成，等待发表核验",
       "blockers": [],
-      "last_progress_at": "2026-10-31T13:12:49.695863Z"
+      "last_progress_at": "2026-10-31T13:17:23.011356Z"
     }
   ]
 }

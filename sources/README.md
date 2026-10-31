@@ -13,6 +13,9 @@
 | 客户端预测与确认 | [知识条目](../solutions/programming/client-prediction-authority-boundary.md) | Gambetta原作者与Unity指定版本；离散模型不验证网络/物理/反作弊 |
 | Niagara预算与测量 | [知识条目](../solutions/vfx/niagara-performance-budget.md) | UE5.6为主，5.8补充单独标记；没有硬件性能实测 |
 
+| 单机经济事件账本 | [知识条目](../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型，不预测真实玩家 |
+| 交互音频职责交付 | [岗位档案](../roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
+
 ## 更新规则
 
 1. 新增结论必须能定位到实际读取的来源或已执行实验；搜索结果摘要不代替正文。

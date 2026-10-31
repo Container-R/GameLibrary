@@ -1,0 +1,18 @@
+test_baseline_threshold_and_stock (test_model.EconomyTests.test_baseline_threshold_and_stock) ... ok
+test_bool_currency_rejected_without_mutation (test_model.EconomyTests.test_bool_currency_rejected_without_mutation) ... ok
+test_cohort_mean_does_not_predict_completion (test_model.EconomyTests.test_cohort_mean_does_not_predict_completion) ... ok
+test_conservation_all_cases (test_model.EconomyTests.test_conservation_all_cases) ... ok
+test_constructor_state_injection_disallowed (test_model.EconomyTests.test_constructor_state_injection_disallowed) ... ok
+test_duplicate_rejected_without_mutation (test_model.EconomyTests.test_duplicate_rejected_without_mutation) ... ok
+test_insufficient_balance_is_atomic (test_model.EconomyTests.test_insufficient_balance_is_atomic) ... ok
+test_integer_currency_rejects_fraction (test_model.EconomyTests.test_integer_currency_rejects_fraction) ... ok
+test_malformed_event_id_is_atomic (test_model.EconomyTests.test_malformed_event_id_is_atomic) ... ok
+test_malformed_parameters_rejected (test_model.EconomyTests.test_malformed_parameters_rejected) ... ok
+test_one_time_events_do_not_recur (test_model.EconomyTests.test_one_time_events_do_not_recur) ... ok
+test_opening_stock_requires_entry (test_model.EconomyTests.test_opening_stock_requires_entry) ... ok
+test_sensitivity_not_universal_balance (test_model.EconomyTests.test_sensitivity_not_universal_balance) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK

@@ -41,7 +41,7 @@ class Server:
 class Client:
     def __init__(self, epoch=1, history_limit=32):
         self.epoch, self.seq, self.last_tick, self.ack, self.x = epoch, 0, -1, 0, 0
-        self.pending, self.effects = [], set()
+        self.pending, self.effects = [], []  # audit log, deliberately not a runtime cache
         self.history_limit = history_limit
     def issue(self, axis):
         if len(self.pending) >= self.history_limit:
@@ -52,7 +52,7 @@ class Client:
         c = Command(self.epoch, self.seq, axis)
         self.pending.append(c)
         self.x += axis
-        self.effects.add((c.epoch, c.seq, 'step'))
+        self.effects.append((c.epoch, c.seq, 'step'))
         return c
     def reconcile(self, s):
         if not isinstance(s, Snapshot):
@@ -110,7 +110,7 @@ class ContractTests(unittest.TestCase):
     def test_snapshot_does_not_duplicate_effect(self):
         c = Client(); c.issue(1); c.issue(1)
         c.reconcile(Snapshot(1, 5, 0, 0)); c.reconcile(Snapshot(1, 6, 1, 1))
-        self.assertEqual(len(c.effects), 2)
+        self.assertEqual(c.effects, [(1, 1, 'step'), (1, 2, 'step')])
     def test_epoch_rejects_old_life(self):
         c, s = Client(2), Server(2)
         self.assertFalse(s.receive(Command(1, 1, 1)))
