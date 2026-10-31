@@ -31,3 +31,7 @@
 固定版本 [MIT 许可](https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/LICENSE.txt) 已检查；本文为原创分析，没有转载实现代码。关联已有[经济事件账本](../../solutions/design/single-player-economy-ledger.md)和[云存档边界](../../solutions/platform/cloud-save-resume-boundary.md)，但二者不证明叙事与宿主状态的一致检查点。
 
 [独立源码复核记录](../audits/ink-source-independent-review.md)保存行号与两项措辞纠正；其确认的是固定版本源码事实，不是运行结果。
+
+## 追加的内容兼容性深审
+
+[旧状态遇到新内容](ink-save-content-compatibility.md)进一步追踪近似路径恢复、load阶段warning缓存、Continue报告分支和onDidLoadState重入风险。保存格式版本/编译故事格式/项目内容身份不混同；协议仅来源支持，仍没有ink运行时验证。

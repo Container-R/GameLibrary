@@ -1,0 +1,12 @@
+test_current_compatibility (__main__.TaxonomyTests.test_current_compatibility) ... ok
+test_cycle_rejected (__main__.TaxonomyTests.test_cycle_rejected) ... ok
+test_document_discipline_references (__main__.TaxonomyTests.test_document_discipline_references) ... ok
+test_duplicate_id_rejected (__main__.TaxonomyTests.test_duplicate_id_rejected) ... ok
+test_missing_target_rejected (__main__.TaxonomyTests.test_missing_target_rejected) ... ok
+test_removed_legacy_rejected (__main__.TaxonomyTests.test_removed_legacy_rejected) ... ok
+test_single_alias_rejected (__main__.TaxonomyTests.test_single_alias_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK

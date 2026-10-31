@@ -1,0 +1,73 @@
+{
+  "observed_at": "2026-10-31T19:00:54.923182+00:00",
+  "source_head": "6bf41a3cc51cb70f3c0c8fe3754f9e2f97276113",
+  "scope": "Original isolated teaching-model/unit tests plus read-only archive/navigation checks; no Godot/Pillow/SQLite/ICU/ink fixture reruns",
+  "checks": [
+    {
+      "name": "models",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/run_model_tests.py"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "taxonomy",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/test_taxonomy.py"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "navigation",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/navigation/test_routes.py"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "archive-unit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/evidence/test_verify.py"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "archive-normal",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/evidence/verify.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "archive-optimized",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/evidence/verify.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "navigation-current",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/scripts/navigation/build_routes.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry",
+        "--registry",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/taxonomy/reading-routes.json",
+        "--output",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-telemetry/DISCOVERY.md",
+        "--check"
+      ],
+      "exit": 0
+    }
+  ],
+  "archive_normal_equals_optimized": true
+}

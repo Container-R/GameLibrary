@@ -61,3 +61,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [网格属性契约](../solutions/modeling/gltf-interleaved-attribute-contract.md)固定Khronos glTF规范与schema版本；同项目多文件不冒充独立厂商验证，CPU字面oracle是另一证据层。
 
 [遥测尝试分母](../solutions/data/attempt-completion-denominator-contract.md)分别记录Unity事件身份与GameAnalytics指标人口定义，不把原创模型策略当作供应商服务实现。
+
+[ink保存内容兼容性](../research/source-notes/ink-save-content-compatibility.md)沿固定源码区分入口返回、近似路径诊断、延迟回调及作者批准的叙事延续；能力门槛限制了实测，未用抽象模型冒充运行。

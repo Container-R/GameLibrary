@@ -75,3 +75,5 @@ python3 scripts/evidence/test_verify.py
 [交错网格属性](experiments/mesh-attribute-contract/README.md)区分合法字节的错误解释、非法view跨度与独立几何意图。十一夹具阶段115项档案一致性检查；不替代DCC/引擎/GPU验收。
 
 [合成尝试分母](experiments/telemetry-attempt-contract/README.md)保留两份as-of与身份/冲突/未知状态，不能当真实玩家研究。当前十二夹具120项档案检查，不是120次行为测试。
+
+[ink内容恢复深审](source-notes/ink-save-content-compatibility.md)是固定源码调用链，不是新运行时实验或新增已验证文章。[19:00离线回归](audits/release-regression-1900/README.md)重跑86个原有模型方法及隔离工具测试；120档案检查正常/-O一致，无引擎/数据库/解码器重跑。

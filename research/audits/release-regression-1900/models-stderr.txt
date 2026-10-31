@@ -1,0 +1,131 @@
+test_bounded_interleavings (__main__.LifecycleTests.test_bounded_interleavings) ... ok
+test_cancel_before_ready_and_duplicate_completion (__main__.LifecycleTests.test_cancel_before_ready_and_duplicate_completion) ... ok
+test_exit_active_and_late_callbacks_do_not_duplicate_cleanup (__main__.LifecycleTests.test_exit_active_and_late_callbacks_do_not_duplicate_cleanup) ... ok
+test_failed_same_value_is_retryable (__main__.LifecycleTests.test_failed_same_value_is_retryable) ... ok
+test_old_generation_cannot_touch_new_handle (__main__.LifecycleTests.test_old_generation_cannot_touch_new_handle) ... ok
+test_revision_retry_success_cache_and_invalidation (__main__.LifecycleTests.test_revision_retry_success_cache_and_invalidation) ... ok
+test_start_failed_needs_no_stopped (__main__.LifecycleTests.test_start_failed_needs_no_stopped) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.035s
+
+OK
+test_ack_replays_only_suffix (__main__.ContractTests.test_ack_replays_only_suffix) ... ok
+test_command_window_boundaries (__main__.ContractTests.test_command_window_boundaries) ... ok
+test_epoch_rejects_old_life (__main__.ContractTests.test_epoch_rejects_old_life) ... ok
+test_history_exhaustion_not_silent_loss (__main__.ContractTests.test_history_exhaustion_not_silent_loss) ... ok
+test_impossible_ack_rejected (__main__.ContractTests.test_impossible_ack_rejected) ... ok
+test_invalid_input_finalized_without_trust (__main__.ContractTests.test_invalid_input_finalized_without_trust) ... ok
+test_malformed_command_envelopes_rejected_without_mutation (__main__.ContractTests.test_malformed_command_envelopes_rejected_without_mutation) ... ok
+test_malformed_snapshot_envelopes_rejected_before_mutation (__main__.ContractTests.test_malformed_snapshot_envelopes_rejected_before_mutation) ... ok
+test_new_tick_same_ack_applies_correction (__main__.ContractTests.test_new_tick_same_ack_applies_correction) ... ok
+test_rate_budget_one_command_per_server_tick (__main__.ContractTests.test_rate_budget_one_command_per_server_tick) ... ok
+test_regressed_ack_rejected_before_mutation (__main__.ContractTests.test_regressed_ack_rejected_before_mutation) ... ok
+test_reordered_delivery_cannot_ack_gap (__main__.ContractTests.test_reordered_delivery_cannot_ack_gap) ... ok
+test_retry_duplicate_not_extra_movement (__main__.ContractTests.test_retry_duplicate_not_extra_movement) ... ok
+test_snapshot_does_not_duplicate_effect (__main__.ContractTests.test_snapshot_does_not_duplicate_effect) ... ok
+test_stale_snapshot_ignored (__main__.ContractTests.test_stale_snapshot_ignored) ... ok
+test_zero_tick_and_ack_valid (__main__.ContractTests.test_zero_tick_and_ack_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
+test_ancestor_revision_cannot_be_reissued (__main__.Tests.test_ancestor_revision_cannot_be_reissued) ... ok
+test_clean_fast_forward (__main__.Tests.test_clean_fast_forward) ... ok
+test_dirty_divergence_preserves_both (__main__.Tests.test_dirty_divergence_preserves_both) ... ok
+test_disk_changed_during_read (__main__.Tests.test_disk_changed_during_read) ... ok
+test_duplicate_notification_does_not_write (__main__.Tests.test_duplicate_notification_does_not_write) ... ok
+test_duplicate_queued_jobs_only_one_dispatch (__main__.Tests.test_duplicate_queued_jobs_only_one_dispatch) ... ok
+test_gate_prevents_new_edits (__main__.Tests.test_gate_prevents_new_edits) ... ok
+test_identity_registry_exhaustion_fails_closed (__main__.Tests.test_identity_registry_exhaustion_fails_closed) ... ok
+test_incoming_ancestor_id_cannot_form_cycle (__main__.Tests.test_incoming_ancestor_id_cannot_form_cycle) ... ok
+test_incoming_reserved_identity_is_recovery_only (__main__.Tests.test_incoming_reserved_identity_is_recovery_only) ... ok
+test_missing_file_not_recreated (__main__.Tests.test_missing_file_not_recreated) ... ok
+test_no_notification_disk_change_rejects_queued_job (__main__.Tests.test_no_notification_disk_change_rejects_queued_job) ... ok
+test_old_load_completion_rejected (__main__.Tests.test_old_load_completion_rejected) ... ok
+test_queued_and_observed_ids_cannot_be_reissued (__main__.Tests.test_queued_and_observed_ids_cannot_be_reissued) ... ok
+test_revision_identity_requires_exact_nonempty_string (__main__.Tests.test_revision_identity_requires_exact_nonempty_string) ... ok
+test_same_revision_changed_content_is_not_accepted (__main__.Tests.test_same_revision_changed_content_is_not_accepted) ... ok
+test_sibling_revision_requires_policy (__main__.Tests.test_sibling_revision_requires_policy) ... ok
+test_stale_queued_write_cannot_overwrite_download (__main__.Tests.test_stale_queued_write_cannot_overwrite_download) ... ok
+test_unknown_schema_fails_closed (__main__.Tests.test_unknown_schema_fails_closed) ... ok
+test_unnotified_same_revision_content_preserved_on_dispatch (__main__.Tests.test_unnotified_same_revision_content_preserved_on_dispatch) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.001s
+
+OK
+test_completion_rejection_cannot_undo_already_issued_write (__main__.InflightCounterexample.test_completion_rejection_cannot_undo_already_issued_write) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test_dirty_deletion_does_not_recreate (__main__.AdversarialTests.test_dirty_deletion_does_not_recreate) ... ok
+test_late_conflict_candidate_rejected_after_third_revision (__main__.AdversarialTests.test_late_conflict_candidate_rejected_after_third_revision) ... ok
+test_old_revision_identity_not_reused (__main__.AdversarialTests.test_old_revision_identity_not_reused) ... ok
+test_same_revision_changed_disk_without_notification_blocks_dispatch (__main__.AdversarialTests.test_same_revision_changed_disk_without_notification_blocks_dispatch) ... ok
+test_same_snapshot_notification_preserves_dirty_memory (__main__.AdversarialTests.test_same_snapshot_notification_preserves_dirty_memory) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK
+test_baseline_threshold_and_stock (__main__.EconomyTests.test_baseline_threshold_and_stock) ... ok
+test_bool_currency_rejected_without_mutation (__main__.EconomyTests.test_bool_currency_rejected_without_mutation) ... ok
+test_cohort_mean_does_not_predict_completion (__main__.EconomyTests.test_cohort_mean_does_not_predict_completion) ... ok
+test_conservation_all_cases (__main__.EconomyTests.test_conservation_all_cases) ... ok
+test_constructor_state_injection_disallowed (__main__.EconomyTests.test_constructor_state_injection_disallowed) ... ok
+test_duplicate_rejected_without_mutation (__main__.EconomyTests.test_duplicate_rejected_without_mutation) ... ok
+test_failed_spend_can_retry_same_id_after_funding (__main__.EconomyTests.test_failed_spend_can_retry_same_id_after_funding) ... ok
+test_insufficient_balance_is_atomic (__main__.EconomyTests.test_insufficient_balance_is_atomic) ... ok
+test_integer_currency_rejects_fraction (__main__.EconomyTests.test_integer_currency_rejects_fraction) ... ok
+test_malformed_event_id_is_atomic (__main__.EconomyTests.test_malformed_event_id_is_atomic) ... ok
+test_malformed_parameters_rejected (__main__.EconomyTests.test_malformed_parameters_rejected) ... ok
+test_one_time_events_do_not_recur (__main__.EconomyTests.test_one_time_events_do_not_recur) ... ok
+test_opening_stock_requires_entry (__main__.EconomyTests.test_opening_stock_requires_entry) ... ok
+test_sensitivity_not_universal_balance (__main__.EconomyTests.test_sensitivity_not_universal_balance) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
+test_catchup_consumes_edge_once (__main__.ContractTests.test_catchup_consumes_edge_once) ... ok
+test_input_sampling_is_not_render_invariant (__main__.ContractTests.test_input_sampling_is_not_render_invariant) ... ok
+test_invalid_step_budget_rejected (__main__.ContractTests.test_invalid_step_budget_rejected) ... ok
+test_negative_clock_rejected (__main__.ContractTests.test_negative_clock_rejected) ... ok
+test_render_has_no_authoritative_write (__main__.ContractTests.test_render_has_no_authoritative_write) ... ok
+test_render_partitions_replay_same_tick_inputs (__main__.ContractTests.test_render_partitions_replay_same_tick_inputs) ... ok
+test_short_frame_keeps_fraction (__main__.ContractTests.test_short_frame_keeps_fraction) ... ok
+test_stall_budget_preserves_debt (__main__.ContractTests.test_stall_budget_preserves_debt) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+OK
+test_authored_contact_compensates_root_turn (__main__.ContactTests.test_authored_contact_compensates_root_turn) ... ok
+test_blending_local_feet_need_not_preserve_contact (__main__.ContactTests.test_blending_local_feet_need_not_preserve_contact) ... ok
+test_second_writer_breaks_contact (__main__.ContactTests.test_second_writer_breaks_contact) ... ok
+test_world_anchor_requires_new_local_target (__main__.ContactTests.test_world_anchor_requires_new_local_target) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+test_each_invalid_flag_falls_back (__main__.Tests.test_each_invalid_flag_falls_back) ... ok
+test_nested_restore (__main__.Tests.test_nested_restore) ... ok
+test_no_background_focus (__main__.Tests.test_no_background_focus) ... ok
+test_no_candidate_does_not_escape_scope (__main__.Tests.test_no_candidate_does_not_escape_scope) ... ok
+test_old_close_cannot_close_reopened_same_scope (__main__.Tests.test_old_close_cannot_close_reopened_same_scope) ... ok
+test_opener_removed (__main__.Tests.test_opener_removed) ... ok
+test_out_of_order_close_is_rejected (__main__.Tests.test_out_of_order_close_is_rejected) ... ok
+test_recycled_id_is_not_old_opener (__main__.Tests.test_recycled_id_is_not_old_opener) ... ok
+test_same_scope_reentry_rejected_without_mutation (__main__.Tests.test_same_scope_reentry_rejected_without_mutation) ... ok
+test_stale_callback_cannot_steal_focus (__main__.Tests.test_stale_callback_cannot_steal_focus) ... ok
+test_user_navigation_supersedes_pending_focus (__main__.Tests.test_user_navigation_supersedes_pending_focus) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.000s
+
+OK

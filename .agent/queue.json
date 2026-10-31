@@ -941,7 +941,7 @@
       "id": "TASK-2026-0040",
       "question": "Narrative save loading versus intended content continuity across story revisions",
       "discipline": "NARR",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "Existing pinned ink source gate exposes approximate saved-pointer recovery; distinguish source-backed compatibility protocol from unavailable runtime verification",
       "expected_artifact": "research/source-notes/ink-save-content-compatibility.md",
@@ -953,8 +953,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:57:32.357950Z",
-      "next_action": "Read pinned load-state and error propagation paths; independent source review without fabricated runtime tests",
+      "last_progress_at": "2026-10-31T19:01:46.621792Z",
+      "next_action": "Publish independently checked source-only compatibility analysis and bounded offline regression evidence",
       "blockers": [
         {
           "scope": "actual ink runtime execution",
