@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "project": "Container-R/GameLibrary",
+  "tasks": [
+    {
+      "id": "TASK-2026-0009",
+      "question": "如何将固定步长战斗逻辑从渲染和动画适配器分离，并明确过载与输入重放边界？",
+      "discipline": "PROG",
+      "status": "reviewing",
+      "priority": 98,
+      "priority_rationale": "跨引擎架构、战斗时序与QA共同基础，可用原始文献和独立模型复核",
+      "expected_artifact": "solutions/programming/fixed-step-simulation-boundary.md",
+      "acceptance": [
+        "核对原始时间步长和输入资料",
+        "明确追帧上限/积压策略及确定性边界",
+        "提供可复验的纯调度模型与引擎未测声明"
+      ],
+      "source_leads": [
+        "https://gafferongames.com/post/fix_your_timestep/",
+        "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Settings.html"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:00:00Z",
+      "attempts": 1,
+      "completed_at": null,
+      "last_progress_at": "2026-10-31T12:52:49.015984Z",
+      "next_action": "通过结构检查和7项模型测试；发表并回读提交后标记published",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0001",
+      "question": "核实并整理游戏程序各主要岗位职责与交付物",
+      "discipline": "PROG",
+      "status": "backlog",
+      "priority": 92,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "roles/programming/gameplay-programmer.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "阅读原始职业资料，整理技术责任边界和下游任务",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0002",
+      "question": "核实技术美术主要岗位与TA生产管线角色边界",
+      "discipline": "TA",
+      "status": "backlog",
+      "priority": 90,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "roles/technical-art/technical-artist.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "寻找工作室技术美术岗位/公开项目技术演讲",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0003",
+      "question": "拆解技术动画中角色大角度转身的脚滑和Root Motion责任划分",
+      "discipline": "ANIM",
+      "status": "backlog",
+      "priority": 94,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "solutions/animation/turn-in-place-foot-sliding.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "找到可公开访问的第一手转身技术资料及可定位实例",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0004",
+      "question": "研究游戏音效与动态配乐跨岗位交付和常见技术系统",
+      "discipline": "SFX",
+      "status": "backlog",
+      "priority": 81,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "roles/audio/interactive-audio-designer.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "阅读音频中间件官方公开文档和音频开发案例",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0005",
+      "question": "比较多人游戏客户端预测与权威服务器的常见同步策略",
+      "discipline": "NET",
+      "status": "backlog",
+      "priority": 89,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "solutions/networking/client-prediction-authority.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "搜索实际同步/延迟补偿开发文章和代码证据",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0006",
+      "question": "研究移动和PC平台的特效性能预算及实际GPU粒子限制",
+      "discipline": "VFX",
+      "status": "backlog",
+      "priority": 86,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "solutions/vfx/gpu-particle-budget.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "查找具体引擎Profiler指南及特效生产实践",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0007",
+      "question": "分析游戏经济系统产出消耗平衡与数据监控的实际方案",
+      "discipline": "DESIGN",
+      "status": "backlog",
+      "priority": 84,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "solutions/game-design/economy-sinks-and-sources.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "收集游戏设计者一手公开案例与可计算经济模型",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0008",
+      "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
+      "discipline": "PROD",
+      "status": "backlog",
+      "priority": 88,
+      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "expected_artifact": "taxonomy/roles-and-work-areas.md",
+      "acceptance": [
+        "真实原始资料至少一项",
+        "问题或职业职责有可操作细节",
+        "适用条件与技术局限明确",
+        "符合仓库知识模板与证据要求"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "completed_at": null,
+      "last_progress_at": null,
+      "next_action": "利用公开职业体系与多工作室岗位信息比较分工",
+      "blockers": []
+    }
+  ]
+}

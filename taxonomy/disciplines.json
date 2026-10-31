@@ -1,0 +1,934 @@
+{
+  "schema_version": 1,
+  "seeded_at": "2026-10-31",
+  "status": "provisional",
+  "description": "跨学科游戏开发知识分类的候选骨架，不代表已研究完成；应持续证据驱动拆分/调整。",
+  "reference": "https://developer.microsoft.com/en-us/games/resources/industry-careers/",
+  "disciplines": [
+    {
+      "id": "PROG",
+      "name_zh": "客户端玩法与软件工程",
+      "name_en": "Client gameplay engineering",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "战斗/技能程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "角色控制与动画程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "客户端AI与导航程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "游戏UI程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "物理交互程序",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "输入与响应",
+        "帧更新与状态",
+        "实时战斗判定",
+        "AI移动与寻路",
+        "客户端性能"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "NET",
+      "name_zh": "服务器与网络工程",
+      "name_en": "Network and server engineering",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "权威游戏服务器",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "实时同步",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "后端业务服务",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "分布式与数据库",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "多人游戏安全",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "预测与回滚",
+        "延迟补偿",
+        "状态持久化",
+        "匹配与容量",
+        "安全审计"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "ENGINE",
+      "name_zh": "引擎与工具工程",
+      "name_en": "Engine and tools engineering",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "引擎底层",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "内存与并行系统",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "构建与部署工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "编辑器与工具开发",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "性能分析工程",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "资源管理",
+        "编译流水线",
+        "任务调度",
+        "Profiler",
+        "自动构建"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "TA",
+      "name_zh": "技术美术",
+      "name_en": "Technical art",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "角色TA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "动画TA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "环境TA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "渲染TA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "工具与管线TA",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "绑定/蒙皮",
+        "Shader与材质",
+        "DCC集成",
+        "程序化场景",
+        "美术性能预算"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "ART2D",
+      "name_zh": "原画与2D视觉开发",
+      "name_en": "Concept and 2D art",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "角色概念美术",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "环境概念美术",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "道具设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "UI美术",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "视觉开发",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "造型与材质语言",
+        "视觉叙事",
+        "配色与构图",
+        "2D资产输出",
+        "跨部门风格规范"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "MODEL",
+      "name_zh": "3D建模与数字资产",
+      "name_en": "3D modeling and assets",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "角色建模",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "场景建模",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "道具建模",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "材质贴图",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "扫描和程序化建模",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "拓扑优化",
+        "UV/烘焙",
+        "LOD",
+        "PBR贴图",
+        "资产规范"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "ANIM",
+      "name_zh": "动画与技术动画",
+      "name_en": "Animation and technical animation",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "关键帧动画",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "动捕与清理",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "角色绑定",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "技术动画",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "面部动画",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "重定向",
+        "IK/FK",
+        "动作混合",
+        "Root Motion",
+        "运动匹配"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "VFX",
+      "name_zh": "视觉特效",
+      "name_en": "Visual effects",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "战斗特效",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "环境特效",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "Shader特效",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "实时模拟",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "特效工具",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "粒子系统",
+        "GPU模拟",
+        "LOD与裁剪",
+        "技能反馈",
+        "特效性能"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "GFX",
+      "name_zh": "实时渲染与光照",
+      "name_en": "Rendering and lighting",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "图形程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "光照技术",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "材质技术",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "后处理",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "渲染优化",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "BRDF与PBR",
+        "GI",
+        "阴影/反射",
+        "光线追踪",
+        "剔除与过绘"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "SFX",
+      "name_zh": "音效与交互音频",
+      "name_en": "Sound design and interactive audio",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "音效设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "Foley与录音",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "声音集成",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "音频程序",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "空间音频",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "声音合成",
+        "事件触发",
+        "环境混音",
+        "音频中间件",
+        "压缩与性能"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "MUSIC",
+      "name_zh": "游戏音乐",
+      "name_en": "Game music",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "作曲",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "编曲/配器",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "互动音乐",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "音乐制作",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "音频技术集成",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "主题动机",
+        "分层音乐",
+        "动态转场",
+        "循环结构",
+        "音乐系统状态"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "DESIGN",
+      "name_zh": "游戏设计与策划",
+      "name_en": "Game design",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "战斗策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "系统策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "数值策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "关卡策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "经济策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "AI行为策划",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "任务策划",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "游戏机制",
+        "反馈循环",
+        "难度与平衡",
+        "成长与货币",
+        "关卡节奏"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "NARR",
+      "name_zh": "叙事与编剧",
+      "name_en": "Narrative design",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "剧情写作",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "互动叙事",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "任务叙事",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "对话设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "世界观设计",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "分支结构",
+        "角色弧线",
+        "环境叙事",
+        "本地化叙事",
+        "剧情工具"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "UX",
+      "name_zh": "UI/UX与玩家体验",
+      "name_en": "Interface and experience design",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "UI交互设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "HUD设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "信息架构",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "用户研究",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "无障碍体验",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "输入与反馈",
+        "可读性",
+        "玩家引导",
+        "测试研究",
+        "控制器与触屏"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "QA",
+      "name_zh": "测试和质量保障",
+      "name_en": "QA and test engineering",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "功能QA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "自动化QA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "性能QA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "兼容性QA",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "联机测试",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "Bug复现",
+        "回归测试",
+        "测试金字塔",
+        "运行质量",
+        "跨平台验收"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "DATA",
+      "name_zh": "数据分析与实验",
+      "name_en": "Game analytics and experimentation",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "数据分析",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "A/B试验",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "游戏经济分析",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "数据工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "玩家行为分析",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "事件埋点",
+        "留存/流失",
+        "实验设计",
+        "数据质量",
+        "异常侦测"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "LIVE",
+      "name_zh": "在线运营与LiveOps",
+      "name_en": "Live operations",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "运营工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "服务可靠性",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "反作弊",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "运营后台",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "在线内容更新",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "灰度发布",
+        "运营活动",
+        "监控报警",
+        "配置管理",
+        "事故响应"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "PROD",
+      "name_zh": "项目制作与生产管理",
+      "name_en": "Production and project management",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "游戏制作人",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "技术制作",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "项目经理",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "敏捷教练",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "资源协调",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "排期与依赖",
+        "研发风险",
+        "预算与成本",
+        "跨工种交付",
+        "里程碑"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "PLATFORM",
+      "name_zh": "平台发布与适配",
+      "name_en": "Platforms and release engineering",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "PC平台工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "主机平台工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "移动平台工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "Web游戏工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "XR开发工程",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "本地化工程",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "SDK集成",
+        "包体与补丁",
+        "认证",
+        "低端设备适配",
+        "发布自动化"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "BIZ",
+      "name_zh": "发行、商业与社区",
+      "name_en": "Publishing and business",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "发行制作",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "社区运营",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "市场营销",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "用户获取",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "商务合作",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "发行定位",
+        "渠道策略",
+        "社群反馈",
+        "商店页面",
+        "商业分析"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "AI",
+      "name_zh": "游戏AI与智能技术",
+      "name_en": "AI for games",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "NPC行为AI",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "路径/战术AI",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "机器学习",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "AI开发工具",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "程序化生成",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "行为树",
+        "GOAP",
+        "强化学习",
+        "模型部署",
+        "内容生成验证"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    },
+    {
+      "id": "ACCESS",
+      "name_zh": "可访问性与本地化",
+      "name_en": "Accessibility and localization",
+      "state": "candidate-taxonomy",
+      "specializations": [
+        {
+          "name_zh": "无障碍设计",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "游戏翻译",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "文化本地化",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "本地化测试",
+          "state": "candidate",
+          "work_area_leads": []
+        },
+        {
+          "name_zh": "音视频辅助",
+          "state": "candidate",
+          "work_area_leads": []
+        }
+      ],
+      "work_areas_seed": [
+        "字幕设计",
+        "文本扩展",
+        "替代输入",
+        "色彩辅助",
+        "区域规范"
+      ],
+      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+    }
+  ],
+  "relation_types": [
+    "depends-on",
+    "addresses",
+    "used-by",
+    "alternative-to",
+    "case-of",
+    "see-also"
+  ]
+}
