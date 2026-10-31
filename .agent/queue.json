@@ -499,7 +499,7 @@
       "id": "TASK-2026-0021",
       "question": "Godot干净检出时资源导入配置/UID与生成缓存的边界如何影响引用恢复？",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "构建与资产管线具体缺口，优先原始资料和实际已有导入器验证",
       "expected_artifact": "solutions/engine/asset-import-intent-contract.md",
@@ -512,11 +512,37 @@
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/tutorials/assets_pipeline/import_process.html"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T14:12:40.611861Z",
+      "next_action": "保留实际导入语义检查，其他资产类型和工具链前提未测",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:14:56.217288Z",
+      "commit_sha": "db4a64b038ae9e3db46cd71122689a742a84103d"
+    },
+    {
+      "id": "TASK-2026-0022",
+      "question": "非英语一手工具/生产资料能否补充资产导入策略可用性与交接成本的具体失败边界？",
+      "discipline": "TA",
+      "status": "researching",
+      "priority": 84,
+      "priority_rationale": "全球来源深化，不用语言翻译冒充独立生产案例",
+      "expected_artifact": "research/source-notes/asset-import-policy-availability.md",
+      "acceptance": [
+        "官方或实际作者来源",
+        "记录语言/日期及可访问范围",
+        "历史API不冒充当前建议",
+        "翻译不计独立证据"
+      ],
+      "source_leads": [
+        "https://docs.unity3d.com/jp/460/ScriptReference/AssetPostprocessor.html"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:12:40.611861Z",
-      "next_action": "实际导入反例、独立复跑及正文审查完成，待发布",
+      "last_progress_at": "2026-10-31T14:14:56.217288Z",
+      "next_action": "核对日本语历史工具文档及可访问当前官方对照，限定其证据强度",
       "blockers": []
     }
   ]
