@@ -2,8 +2,8 @@
   "run_id": "20261031T200345Z-shader-layout",
   "started_at": "2026-10-31T20:03:45Z",
   "task_id": "TASK-2026-0048",
-  "outcome": "reviewed locally; publication pending",
-  "commit_sha": null,
+  "outcome": "published and read back",
+  "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
   "validation": {
     "status": "PASS",
     "archived_compiler_results_checked": 4,
@@ -26,7 +26,10 @@
     "scope": "Compiler interface data and original CPU interpretation, not shader execution or general SPIR-V validation",
     "local_markdown_links": 343,
     "missing_links": 0,
-    "indexed_source_backed_articles": 26
+    "indexed_source_backed_articles": 26,
+    "selected_blob_hashes_verified": 106,
+    "outside_tree_changes": 0
   },
-  "scope": "Actual compiler assembly plus CPU interpretation; not shader execution or universal ABI validation"
+  "scope": "Actual compiler assembly plus CPU interpretation; not shader execution or universal ABI validation",
+  "ended_at": "2026-10-31T20:14:09.268058Z"
 }

@@ -1123,7 +1123,7 @@
       "id": "TASK-2026-0048",
       "question": "CPU-to-shader matrix major order: identical stride and occupancy can require different host serialization",
       "discipline": "GFX",
-      "status": "reviewed",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Installed compiler can expose actual interface decorations, closing a representation gap not covered by texture budget or vertex stride arithmetic",
       "expected_artifact": "Source-backed matrix layout handoff with original compiler and host-byte evidence",
@@ -1132,11 +1132,33 @@
         "Actual installed compiler outputs and independent reflection checks",
         "No GPU execution, driver validation, performance or exact official binary provenance claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:11:26.044850Z",
-      "next_action": "Publish original matrix-major compiler interface evidence and final article review",
+      "last_progress_at": "2026-10-31T20:14:09.268058Z",
+      "next_action": "Maintain compiler/CPU/GPU evidence distinction and revalidate changed shader interface variants",
+      "blockers": [],
+      "completed_at": "2026-10-31T20:14:09.268058Z",
+      "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be"
+    },
+    {
+      "id": "TASK-2026-0049",
+      "question": "Prevent invalid queue discipline IDs and unsafe or unresolved recovery artifact paths without breaking legacy descriptions",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Actual queue taxonomy typo escaped existing article validation; recovery requires machine-checkable state rather than only prose",
+      "expected_artifact": "scripts/queue/validate_queue.py with tests and optional artifact_paths migration",
+      "acceptance": [
+        "Reject unknown disciplines and duplicate task IDs",
+        "Optional relative artifact paths cannot escape repository; published paths must exist",
+        "Legacy expected_artifact prose and existing statuses remain compatible; independent adversarial tests"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:14:09.268058Z",
+      "next_action": "Review isolated guard implementation and independent tests before migration",
       "blockers": []
     }
   ]
