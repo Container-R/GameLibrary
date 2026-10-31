@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T134400Z-engine-audio-depth",
   "started_at": "2026-10-31T13:34:00Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T13:46:58.412770Z",
   "task_id": [
     "TASK-2026-0015",
     "TASK-2026-0016"
@@ -58,7 +58,7 @@
     "research/experiments/audio-lifecycle/test-results.txt",
     "research/experiments/audio-lifecycle/model.py"
   ],
-  "commit_sha": null,
+  "commit_sha": "54ac14885833314527986edb8071759345e7fc50",
   "validation": {
     "all_unittest_methods": "86 passed in9 suites; includes1 limitation counterexample, not86 protection proofs",
     "audio_sequences": "4096 bounded action sequences in7 test methods;200 independent seeds x150 actions,4568 calls",
@@ -73,5 +73,5 @@
     "未验证设备输入、暂停、卡顿/过载、物理碰撞、可见渲染、跨平台或真实音频中间件"
   ],
   "next_action": "继续深入实际引擎输入与暂停等现有边界，先确定有界验收问题",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; seven remote blob hashes matched local artifacts"
 }

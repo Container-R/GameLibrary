@@ -345,7 +345,7 @@
       "id": "TASK-2026-0015",
       "question": "以纯状态适配模型检验既有音乐契约的启动拒绝、取消、异步失效与成功提交去重",
       "discipline": "SFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 96,
       "priority_rationale": "现有高价值合同的失败路径深化，不新增泛化文章",
       "expected_artifact": "research/experiments/audio-lifecycle/README.md",
@@ -358,18 +358,20 @@
       "source_leads": [
         "https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:44:47.843138Z",
-      "next_action": "7项模型测试及独立200种子审查通过，待发布",
-      "blockers": []
+      "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:46:58.412770Z",
+      "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
     },
     {
       "id": "TASK-2026-0016",
       "question": "实际Godot4.6.3中固定规则回调与主帧表现边界是否通过独立整数轨迹判据？",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 98,
       "priority_rationale": "深化既有固定步文章真实引擎证据，不增加文章数量",
       "expected_artifact": "research/experiments/godot-fixed-step/README.md",
@@ -382,11 +384,37 @@
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:44:47.843138Z",
+      "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:46:58.412770Z",
+      "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
+    },
+    {
+      "id": "TASK-2026-0017",
+      "question": "Godot暂停期间合成输入队列能否导致恢复后旧攻击，如何用显式epoch策略隔离？",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 96,
+      "priority_rationale": "既有固定回调契约的实际输入/暂停边界深化",
+      "expected_artifact": "research/experiments/godot-pause-input/README.md",
+      "acceptance": [
+        "明确合成API而非设备输入",
+        "实际引擎反例及修正日志",
+        "阶段屏障而非偶然时序",
+        "独立审查和有限结论"
+      ],
+      "source_leads": [
+        "https://docs.godotengine.org/en/4.6/tutorials/scripting/pausing_games.html"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:44:47.843138Z",
-      "next_action": "6个实际引擎进程通过，待发布和远程内容验证",
+      "last_progress_at": "2026-10-31T13:46:58.412770Z",
+      "next_action": "核查官方输入/暂停语义并运行有界原始夹具",
       "blockers": []
     }
   ]
