@@ -5,8 +5,8 @@
     "TASK-2026-0068"
   ],
   "started_at": "2026-10-31T22:57:06Z",
-  "ended_at": "2026-10-31T23:10:05.511323Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T23:14:11.486756Z",
+  "outcome": "published and read back",
   "sources": [
     "ICU release76-1 commit8eca245c7484ac6cc179e3e5f7c1ea7680810f39; CLDR46-derived comparisondata"
   ],
@@ -42,7 +42,13 @@
     "declared_paths": 61,
     "prior_experiment_files_byte_identical": 1833,
     "independent_literal_archive_checks": "both archived batches normal/O; zero new native",
-    "author_consumer_checks": "six archived configs normal/O; zero new native"
+    "author_consumer_checks": "six archived configs normal/O; zero new native",
+    "selected_blob_hashes_verified": 112,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 503,
+    "receipt_queue_tasks_checked": 69,
+    "receipt_declared_paths_checked": 61
   },
-  "next_action": "Use documented remaining evidence gaps to choose next bounded source-backed depth unit, not more locale permutations"
+  "next_action": "Use documented remaining evidence gaps to choose next bounded source-backed depth unit, not more locale permutations",
+  "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9"
 }

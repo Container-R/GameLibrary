@@ -1695,7 +1695,7 @@
       "id": "TASK-2026-0068",
       "question": "Can a syntactically valid target-locale plural pattern omit a relevant category and silently fall back to other despite passing English smoke inputs?",
       "discipline": "LOC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Existing LOC article explicitly limits ICU evidence to English1/2 and lacks target-locale category coverage; installed formatter permits a bounded source-gated supplement",
       "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs\u00d76integer native requests if ABI/protocol gate passes",
@@ -1710,11 +1710,36 @@
         "Freeze literal outputs and bounded invocation counts before code; independent source/oracle review",
         "Actual formatter output not translation quality, rendering, RTL, engine or full locale support; preserve all failures and warnings"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T00:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T23:10:05.511323Z",
-      "next_action": "Publish independently observed finite locale fallback supplement, preserving all141 prior ICU files and complete-project limits",
+      "next_action": "Retain finite en/ar category evidence and old fixtures; do not expand into translation/RTL certification",
+      "blockers": [],
+      "completed_at": "2026-10-31T23:14:11.486756Z",
+      "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9"
+    },
+    {
+      "id": "TASK-2026-0069",
+      "question": "How does a fresh Ogg Opus stream separate encoded granule positions, pre-skip/end trim and presented PCM frame count?",
+      "discipline": "MUSIC",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "Existing music article explicitly excludes encoded padding; installed FFmpeg/libopus capabilities permit a concrete codec/container boundary beyond PCM-only evidence",
+      "expected_artifact": "Source-gated finite OggOpus count experiment or precise negative, supplementing existing PCM loop article without playback/quality claims",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read RFC7845 granule/preskip/endtrim/initial-position and sufficient Oggpage/Opuspacket framing definitions before readerprotocol",
+        "Freeze one original93659frame48k stereo source, exact explicit20ms encode/decode commands and bounded reader beforemediaexecution",
+        "Read actual preskip/granules rather than guessing encoderconstants; check fresh uncropped nonchained stream assumptions",
+        "Lossy output notbyteequal; length agreement notseamless loop/marker/phase/playback proof",
+        "Preserve tool/source/library identities, rawlogs/generatedartifacts and independent exactoracle; noinstall/resampling/alternatecodec expansion"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T00:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T23:14:11.486756Z",
+      "next_action": "Finish original container/header/page/packet-duration source gate and dependency identity; freeze finite protocol before any encode/decode",
       "blockers": []
     }
   ]
