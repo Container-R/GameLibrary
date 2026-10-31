@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T131100Z-network-vfx",
   "started_at": "2026-10-31T13:06:50Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T13:12:49.695863Z",
   "task_id": [
     "TASK-2026-0005",
     "TASK-2026-0006"
@@ -39,7 +39,7 @@
     ".agent/state.json",
     ".agent/queue.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4",
   "validation": {
     "protocol_model_tests": "16 passed independently rerun",
     "structure_errors": 0,
@@ -51,5 +51,5 @@
     "Valve原页403未使用；UE5.6测量页不可访问，5.8补充明确标版"
   ],
   "next_action": "研究非真钱游戏经济来源/消耗账本；继续独立质量检查",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; both documents and 16-test output read back from default branch"
 }

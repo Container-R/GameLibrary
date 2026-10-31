@@ -129,7 +129,7 @@
       "id": "TASK-2026-0005",
       "question": "比较多人游戏客户端预测与权威服务器的常见同步策略",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/programming/client-prediction-authority-boundary.md",
@@ -140,19 +140,20 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "completed_at": null,
+      "completed_at": "2026-10-31T13:12:49.695863Z",
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
-      "next_action": "原始来源与模型/实验边界已验收，等待发布核验",
-      "blockers": []
+      "next_action": "按版本和真实集成实验维护",
+      "blockers": [],
+      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
     },
     {
       "id": "TASK-2026-0006",
       "question": "研究移动和PC平台的特效性能预算及实际GPU粒子限制",
       "discipline": "VFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/vfx/niagara-performance-budget.md",
@@ -163,19 +164,20 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "completed_at": null,
+      "completed_at": "2026-10-31T13:12:49.695863Z",
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
-      "next_action": "原始来源与模型/实验边界已验收，等待发布核验",
-      "blockers": []
+      "next_action": "按版本和真实集成实验维护",
+      "blockers": [],
+      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
     },
     {
       "id": "TASK-2026-0007",
       "question": "分析游戏经济系统产出消耗平衡与数据监控的实际方案",
       "discipline": "DESIGN",
-      "status": "backlog",
+      "status": "researching",
       "priority": 84,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/game-design/economy-sinks-and-sources.md",
@@ -186,12 +188,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
-      "attempts": 0,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "收集游戏设计者一手公开案例与可计算经济模型",
+      "last_progress_at": "2026-10-31T13:12:49.695863Z",
+      "next_action": "读取一手资料，设计原创交付/验收或账本模型",
       "blockers": []
     },
     {
@@ -221,7 +223,7 @@
       "id": "TASK-2026-0010",
       "question": "核实交互音频岗位分工、声音资产与集成交付物；与音乐状态契约交叉索引",
       "discipline": "SFX",
-      "status": "backlog",
+      "status": "researching",
       "priority": 82,
       "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
       "expected_artifact": "roles/audio/interactive-audio-designer.md",
@@ -231,11 +233,12 @@
         "明确项目样本边界"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
-      "attempts": 0,
-      "next_action": "检索当前原始岗位与工具集成资料",
-      "blockers": []
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
+      "next_action": "读取一手资料，设计原创交付/验收或账本模型",
+      "blockers": [],
+      "last_progress_at": "2026-10-31T13:12:49.695863Z"
     }
   ]
 }
