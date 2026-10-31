@@ -6,7 +6,7 @@
       "id": "TASK-2026-0009",
       "question": "如何将固定步长战斗逻辑从渲染和动画适配器分离，并明确过载与输入重放边界？",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 98,
       "priority_rationale": "跨引擎架构、战斗时序与QA共同基础，可用原始文献和独立模型复核",
       "expected_artifact": "solutions/programming/fixed-step-simulation-boundary.md",
@@ -19,13 +19,14 @@
         "https://gafferongames.com/post/fix_your_timestep/",
         "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Settings.html"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "completed_at": null,
-      "last_progress_at": "2026-10-31T12:52:49.015984Z",
-      "next_action": "通过结构检查和7项模型测试；发表并回读提交后标记published",
-      "blockers": []
+      "completed_at": "2026-10-31T12:53:58.977252Z",
+      "last_progress_at": "2026-10-31T12:53:58.977252Z",
+      "next_action": "按版本变化或引擎复现证据维护；不外推模型结论",
+      "blockers": [],
+      "commit_sha": "b166843c07dc69c591fa736e1559ca51785e0de8"
     },
     {
       "id": "TASK-2026-0001",
@@ -77,7 +78,7 @@
       "id": "TASK-2026-0003",
       "question": "拆解技术动画中角色大角度转身的脚滑和Root Motion责任划分",
       "discipline": "ANIM",
-      "status": "backlog",
+      "status": "researching",
       "priority": 94,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/animation/turn-in-place-foot-sliding.md",
@@ -88,12 +89,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
-      "attempts": 0,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
       "completed_at": null,
       "last_progress_at": null,
-      "next_action": "找到可公开访问的第一手转身技术资料及可定位实例",
+      "next_action": "核对Unity/Unreal根运动及混合资料，分离控制器双重驱动与脚底锁定问题",
       "blockers": []
     },
     {
