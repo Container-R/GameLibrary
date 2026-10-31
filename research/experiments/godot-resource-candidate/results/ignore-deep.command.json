@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/godot/4.6.3/Godot_v4.6.3-stable_linux.x86_64",
+    "--headless",
+    "--path",
+    "/tmp/resource-candidate-rxj8_8pq/project",
+    "--script",
+    "res://main.gd",
+    "--",
+    "ignore-deep"
+  ],
+  "invocation_id": "049b42fe-2c69-41df-bc61-f7b6265fee83",
+  "isolation": "fresh temporary project and HOME/XDG per case",
+  "returncode": 0,
+  "timeout_seconds": 20
+}

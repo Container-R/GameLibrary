@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/resource-freshness-w0gnshsj/run.py", line 127, in <module>
+    main()
+  File "/tmp/resource-freshness-w0gnshsj/run.py", line 49, in main
+    check(not sys.flags.optimize, 'Refusing optimized mode; stale success already removed')
+  File "/tmp/resource-freshness-w0gnshsj/run.py", line 28, in check
+    raise RuntimeError(message)
+RuntimeError: Refusing optimized mode; stale success already removed

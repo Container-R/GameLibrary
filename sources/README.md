@@ -73,3 +73,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Alpha 表示来源门槛](../research/experiments/art2d-alpha-contract/source-gate.md)使用固定 W3C 文档与 Pillow 源码；明确区分历史 PNG 文件规定和实际数值 buffer 运行范围。
 
 [Godot actor 调度来源门槛](../research/experiments/godot-combat-policy/source-gate.md)记录 Node 物理优先级及固定官方比较源码；本地已安装二进制的未认证来源身份沿用共享取证说明，不因观察符合文档而升级认证。
+
+[资源加载来源门槛](../research/experiments/godot-resource-candidate/source-gate.md)区分 ResourceLoader CacheMode、外部依赖传播与同路径请求 token；当前实验仅验证一个原生资源图，ObjectID 比较源码不认证本地程序。

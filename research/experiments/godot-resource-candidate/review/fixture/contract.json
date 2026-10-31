@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "scope": "Two fresh installed-engine processes; native text resource graph; ownership after completed threaded load, not a concurrent mutation race.",
+  "root_type": "GradientTexture1D",
+  "dependency_type": "Gradient",
+  "root_path": "res://candidate.tres",
+  "dependency_path": "res://gradient.tres",
+  "point_offsets": [0, 1],
+  "initial_colors": [[1, 0, 0, 1], [1, 1, 1, 1]],
+  "candidate_mutation": {"point": 0, "color": [0, 0, 1, 1]},
+  "cases": [
+    {"name": "ignore", "mode": 0, "root_same": false, "dependency_same": true, "active_after": [0, 0, 1, 1]},
+    {"name": "ignore-deep", "mode": 3, "root_same": false, "dependency_same": false, "active_after": [1, 0, 0, 1]}
+  ],
+  "candidate_after": [0, 0, 1, 1],
+  "active_root_reference": "retained and unchanged; candidate never assigned to active",
+  "disk_inputs": "all original project/GDScript/tres bytes unchanged before and after each process",
+  "request_policy": "one threaded request per process, use_sub_threads=false, poll across frames, get once only after THREAD_LOAD_LOADED",
+  "status_expectation": "success required; no mandatory IN_PROGRESS sample or timing-performance assertion",
+  "budgets": {"frame_callbacks": 600, "subprocess_timeout_seconds": 20},
+  "source_identity": "public source commit35e80b3a is semantic reference, not authenticated source of installed binary"
+}

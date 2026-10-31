@@ -1421,6 +1421,185 @@
       "id": "godot-combat/review/staged-B",
       "log": "research/experiments/godot-combat-policy/review/fixture/results/staged-B.stdout",
       "parsed": "research/experiments/godot-combat-policy/review/fixture/results/staged-B.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "resource-candidate/author/source",
+      "document": "research/experiments/godot-resource-candidate/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-resource-candidate/run.py",
+        "main.gd": "research/experiments/godot-resource-candidate/main.gd",
+        "project.godot": "research/experiments/godot-resource-candidate/project.godot",
+        "gradient.tres": "research/experiments/godot-resource-candidate/gradient.tres",
+        "candidate.tres": "research/experiments/godot-resource-candidate/candidate.tres",
+        "contract.json": "research/experiments/godot-resource-candidate/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/author/receipt-invocation_id",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/author/receipt-status",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/results/invocation.json",
+      "field": [
+        "status"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/author/receipt-process-count",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/results/invocation.json",
+      "field": [
+        "engine_processes"
+      ],
+      "right_field": [
+        "engine_processes_started"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "resource-candidate/author/ignore",
+      "log": "research/experiments/godot-resource-candidate/results/ignore.stdout.txt",
+      "parsed": "research/experiments/godot-resource-candidate/results/ignore.json"
+    },
+    {
+      "kind": "log",
+      "id": "resource-candidate/author/ignore-deep",
+      "log": "research/experiments/godot-resource-candidate/results/ignore-deep.stdout.txt",
+      "parsed": "research/experiments/godot-resource-candidate/results/ignore-deep.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "resource-candidate/review/source",
+      "document": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-resource-candidate/run.py",
+        "main.gd": "research/experiments/godot-resource-candidate/main.gd",
+        "project.godot": "research/experiments/godot-resource-candidate/project.godot",
+        "gradient.tres": "research/experiments/godot-resource-candidate/gradient.tres",
+        "candidate.tres": "research/experiments/godot-resource-candidate/candidate.tres",
+        "contract.json": "research/experiments/godot-resource-candidate/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/review/receipt-invocation_id",
+      "left": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/review/receipt-status",
+      "left": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/invocation.json",
+      "field": [
+        "status"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/review/receipt-process-count",
+      "left": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/invocation.json",
+      "field": [
+        "engine_processes"
+      ],
+      "right_field": [
+        "engine_processes_started"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "resource-candidate/review/ignore",
+      "log": "research/experiments/godot-resource-candidate/review/fixture/results/ignore.stdout.txt",
+      "parsed": "research/experiments/godot-resource-candidate/review/fixture/results/ignore.json"
+    },
+    {
+      "kind": "log",
+      "id": "resource-candidate/review/ignore-deep",
+      "log": "research/experiments/godot-resource-candidate/review/fixture/results/ignore-deep.stdout.txt",
+      "parsed": "research/experiments/godot-resource-candidate/review/fixture/results/ignore-deep.json"
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/compare/source_sha256",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/compare/binary_sha256",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/compare/version",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "version"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/compare/python",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-candidate/compare/platform",
+      "left": "research/experiments/godot-resource-candidate/results/summary.json",
+      "right": "research/experiments/godot-resource-candidate/review/fixture/results/summary.json",
+      "field": [
+        "platform"
+      ]
+    },
+    {
+      "kind": "hash",
+      "id": "resource-candidate/author/freshness-runner",
+      "document": "research/experiments/godot-resource-candidate/freshness-results/summary.json",
+      "field": [
+        "run_py_sha256"
+      ],
+      "target": "research/experiments/godot-resource-candidate/run.py"
+    },
+    {
+      "kind": "hash",
+      "id": "resource-candidate/review/freshness-runner",
+      "document": "research/experiments/godot-resource-candidate/review/fixture/freshness-results/summary.json",
+      "field": [
+        "run_py_sha256"
+      ],
+      "target": "research/experiments/godot-resource-candidate/run.py"
     }
   ]
 }

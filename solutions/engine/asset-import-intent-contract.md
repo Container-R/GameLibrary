@@ -6,13 +6,16 @@ status: source-backed
 primary_discipline: ENGINE
 related_disciplines: [TA, QA, PROD]
 related_roles: [tools-programmer, technical-artist, build-engineer, qa-engineer]
-related_topics: [asset-pipeline, import-settings, source-control, clean-checkout, resource-identity]
+related_topics: [asset-pipeline, import-settings, source-control, clean-checkout, resource-identity, resource-ownership, threaded-loading]
 engines: [Godot]
 versions: ["Godot 4.6 官方文档", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-10-31
-verification_method: 官方来源核对；原创 SVG 的实际无头导入与资源加载对照；未验证 GPU、导出包或跨版本缓存复现
+verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离的实际无头对照；未验证 GPU、导出包或跨版本缓存复现
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_resourceloader.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/resource_format_text.cpp
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/object/object_id.h
   - https://docs.godotengine.org/en/4.6/tutorials/assets_pipeline/import_process.html
   - https://docs.godotengine.org/en/4.6/tutorials/best_practices/version_control_systems.html
   - https://docs.godotengine.org/en/4.6/classes/class_resourceimportertexture.html
@@ -77,6 +80,27 @@ sources:
 保留 sidecar 增加文本审查和合并工作，却保住了非默认导入决策；发生冲突时不能只选“让编辑器能开”的一边，应确认参数意图。完整干净导入会增加 CI 时间，可按依赖选择验收资产，但要另设周期性全量干净检出以发现遗漏依赖；本文没有量化这些成本或实现依赖调度。
 
 一个最小场景的成功加载不能证明整个项目导出正确。无头加载和尺寸查询也不等于 GPU 渲染、像素质量或显存性能。此处未执行导出包、LFS 获取、跨机器/跨 Godot 版本、DCC 插件、VRAM 压缩、多进程构建或资源移动测试；不承诺缓存逐字节一致。不同引擎的源控制规则需重新查证。
+
+## 5. 运行时补充：候选根不同，不等于可变依赖已隔离
+
+前面验收的是磁盘输入与导入意图；下面是**加载后的对象图所有权**，不能互相替代。若要先加载候选、修正其数据、审核后再发布，新的根对象可能仍引用活动资源的可变依赖。仅延后根引用替换，不能隔离已发生的共享数据修改。
+
+Godot 4.6 [ResourceLoader 的 CacheMode 文档](https://docs.godotengine.org/en/4.6/classes/class_resourceloader.html)明确：普通 `CACHE_MODE_IGNORE` 不重用根与内嵌子资源，但外部依赖使用 REUSE；`CACHE_MODE_IGNORE_DEEP` 将忽略策略传播到外部依赖。[固定官方文本加载器](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/resource_format_text.cpp#L1432-L1453)可见这两类模式的外部加载参数差别。这是来源分析，不是本地二进制身份认证。
+
+[原创两进程夹具](../../research/experiments/godot-resource-candidate/README.md)使用原生 `.tres`：`GradientTexture1D` 根引用外部 `Gradient`，只观察点颜色，不采样 GPU 纹理。每个隔离进程先 REUSE 加载并持有活动根/依赖，再对同一路径发起一个 threaded 请求；在帧回调观察到 LOADED 后取候选，仅把候选 Gradient 的点 0 从红改成蓝，不把候选赋给活动根，也不修改磁盘文件。
+
+| 实际模式 | 活动根与候选根 | 两者外部 Gradient | 改候选后活动点色 | 候选点色 |
+|---|---|---|---|---|
+| IGNORE | 不同活对象 | 同一活对象 | 蓝 | 蓝 |
+| IGNORE_DEEP | 不同活对象 | 不同活对象 | 红 | 蓝 |
+
+前后对象身份保持，活动根仍为原引用，单独保留的活动 Gradient 也得到相同观察；受控输入文件摘要未变。[独立复验](../../research/experiments/godot-resource-candidate/review/REVIEW.md)重新执行两个进程，以不导入作者实现的字面身份/颜色/磁盘判据核对原始记录。请求/get 字段是声明值，实际一次调用的依据是审查后的单调用点、LOADED/finished 控制流与单条 REQUEST/RESULT，而非独立递增计数器。
+
+两种模式首次观察均已 LOADED，状态序列为 `[3]`；这既不证明同步加载，也不证明无卡顿。文档说明过早调用 `load_threaded_get` 可能阻塞，因此本例只在就绪后取结果；没有强行制造大资源或 sleep 来要求观察到 IN_PROGRESS。修改发生在加载完成后的主线程，不是并发写入竞态实验。
+
+一个真实验证器错误被保留：最初要求 instance ID 为正，拒绝了实际非零负整数。修正为精确保留整数符号、非零以及同进程活对象的前后相等/不等，未改变图、预期颜色或 GDScript。[ObjectID 比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/object/object_id.h)包含 64-bit 表示及有符号转换，不支持正数限定。原始失败和最终完整重跑均在归档；这些 ID 不是持久资产身份，也不能经过有损 JavaScript Number 转换再做比较。
+
+**项目建议**：先列出候选审核/预处理会修改哪些对象，再决定需要隔离根、哪些依赖或整个可变子图；只读审核未必需要深复制。这个简单原生图中的 IGNORE_DEEP 有效，不是任意插件、全局对象或资源图的通用隔离承诺。未测试取消、并发同路径请求、REPLACE、导出包、内存释放、GPU、加载性能或跨构建行为；新二进制摘要与既有身份取证一致，但官方精确来源对应仍未建立。
 
 ## 来源与关联
 

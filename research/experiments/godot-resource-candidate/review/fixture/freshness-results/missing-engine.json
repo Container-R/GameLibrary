@@ -1,0 +1,18 @@
+{
+  "case": "missing-engine",
+  "returncode": 1,
+  "old_summary_removed": true,
+  "receipt": {
+    "engine_processes_started": 0,
+    "error": "RuntimeError: engine does not exist",
+    "invocation_id": "d71f61ca-60da-4891-8392-399a9b9fa087",
+    "optimization": 0,
+    "started_utc": "2026-10-31T19:51:03.778357+00:00",
+    "status": "FAILED"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/tmp/resource-freshness-jqnfctlr/run.py"
+  ]
+}

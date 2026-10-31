@@ -1079,7 +1079,7 @@
       "id": "TASK-2026-0046",
       "question": "Threaded candidate resource root isolation versus mutable external dependency sharing",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Deepen existing asset boundary with actual object-graph ownership evidence; new root identity does not necessarily imply isolated mutable dependencies",
       "expected_artifact": "Existing asset-import/ownership solution plus actual ResourceLoader evidence",
@@ -1091,8 +1091,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:49:28.999222Z",
-      "next_action": "Execute two bounded actual threaded-load cases and independently review object aliasing and mutation effect",
+      "last_progress_at": "2026-10-31T19:55:19.967959Z",
+      "next_action": "Publish independently repeated native resource alias/color counterexample and preserved ID-oracle failure",
       "blockers": []
     }
   ]

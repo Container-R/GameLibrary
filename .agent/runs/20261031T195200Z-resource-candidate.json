@@ -1,0 +1,25 @@
+{
+  "run_id": "20261031T195200Z-resource-candidate",
+  "started_at": "2026-10-31T19:52:00Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0046",
+  "commit_sha": null,
+  "outcome": "independently reviewed; publication pending",
+  "validation": {
+    "unique_engine_scenarios": 2,
+    "initial_author_engine_processes_before_runner_rejection": 1,
+    "final_author_engine_processes": 2,
+    "final_reviewer_engine_processes": 2,
+    "author_and_reviewer_preengine_failure_cases_each": 2,
+    "integrator_engine_processes": 0,
+    "archive_consistency_checks": 177,
+    "archive_normal_optimized_identical": true,
+    "independent_literal_alias_color_identity_disk_check": true,
+    "first_observed_status": "LOADED in both final cases, not timing or synchronous claim",
+    "new_indexed_articles": 0
+  },
+  "corrections": [
+    "Initial positive-instance-ID guard rejected observed signed negative IDs; original failure retained, resource graph and alias/color expectations unchanged"
+  ],
+  "scope": "One native external Gradient graph, mutation after completed threaded load on main thread; no general graph isolation, concurrency, GPU, cancellation or build authentication"
+}

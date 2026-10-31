@@ -22,7 +22,7 @@
 岗位起点：[技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
 
 - 换机干净检出后资产为何变样？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
-  - 关联理由：检查源文件、导入配置与生成缓存的边界。
+  - 关联理由：检查源文件、导入配置与生成缓存的边界。 补充运行时候选根与可变外部依赖的隔离检查，不能把新根身份当作整图独立。
 - 如何定位特效预算来源？ → [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `SOL-VFX-001` · `source-backed` · `VFX`
   - 关联理由：区分实例、模拟和像素成本，保留未运行UE的证据限制。
 - 导入正确为何仍会脚滑？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
@@ -56,7 +56,7 @@
 - 提示后的完成能否证明独立引导成功？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：区分观察条件、主持人介入与改后复测；不是划定QA与UX的职业禁区。
 - 可加载的资产是否仍可能违反交付意图？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
-  - 关联理由：用具体配置和干净检出对照定义验收，不以无报错替代语义一致。
+  - 关联理由：用具体配置和干净检出对照定义验收，不以无报错替代语义一致。 补充运行时候选根与可变外部依赖的隔离检查，不能把新根身份当作整图独立。
 - 对白字幕全覆盖是否已经保住关键行动信息？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
   - 关联理由：把内容覆盖合同与真实玩家理解分开；假设矩阵不是可访问性认证。
 - 完成事件证明了哪个分母的结果？ → [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `SOL-DATA-001` · `source-backed` · `DATA`
@@ -74,7 +74,7 @@
 - NPC没有走到目标，是空间不可达还是导航未就绪？ → [导航查询的就绪边界：空路径不等于不可达，非空路径不等于到达](solutions/ai/navigation-readiness-and-partial-path.md) — `SOL-AI-001` · `source-backed` · `AI`
   - 关联理由：区分数据状态、部分路径与实际到达；不把导航API结果当作玩家体验。
 - 美术与导入改动后，旧白盒通过状态还能直接继承吗？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
-  - 关联理由：借资产意图契约建立版本与接收条件，仍需按关卡受影响点复查。
+  - 关联理由：借资产意图契约建立版本与接收条件，仍需按关卡受影响点复查。 补充运行时候选根与可变外部依赖的隔离检查，不能把新根身份当作整图独立。
 
 ## 状态切换后，旧状态或迟到回调覆盖当前意图
 路线 ID：`problem-stale-intent-after-transition`

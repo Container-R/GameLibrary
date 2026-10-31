@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "case": "optimized",
+      "returncode": 1,
+      "old_summary_removed": true,
+      "receipt": {
+        "engine_processes_started": 0,
+        "error": "RuntimeError: Refusing optimized mode; stale success already removed",
+        "invocation_id": "ab651a75-7feb-4e8a-8293-71c2d8dc027a",
+        "optimization": 1,
+        "started_utc": "2026-10-31T19:49:36.043451+00:00",
+        "status": "FAILED"
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-O",
+        "/tmp/resource-freshness-koefkbm0/run.py"
+      ]
+    },
+    {
+      "case": "missing-engine",
+      "returncode": 1,
+      "old_summary_removed": true,
+      "receipt": {
+        "engine_processes_started": 0,
+        "error": "RuntimeError: engine does not exist",
+        "invocation_id": "7a90b847-9dc1-4997-bd9a-9d89e994c56c",
+        "optimization": 0,
+        "started_utc": "2026-10-31T19:49:36.080086+00:00",
+        "status": "FAILED"
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/tmp/resource-freshness-0y8thgmu/run.py"
+      ]
+    }
+  ],
+  "run_py_sha256": "f2ef26f570b62f07e505322534f6fcc8e7bfa0d5d458a552eee04672553288bc",
+  "engine_runs": 0
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-resource/scripts/evidence/verify.py",
+        "gamelibrary-publish-resource"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "gamelibrary-publish-resource/scripts/evidence/verify.py",
+        "gamelibrary-publish-resource"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-resource/research/experiments/godot-resource-candidate/review/check.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "archive_consistency_checks": 177,
+  "normal_optimized_identical": true,
+  "archived_final_processes_checked": 4,
+  "author_and_reviewer_preengine_negative_cases_each": 2,
+  "new_engine_processes": 0,
+  "new_negative_invocations": 0,
+  "historical_initial_runner_failure_preserved": true,
+  "same_process_identity_only": true,
+  "scope": "Archive integration/read-only independent checker and literal record checks, not new engine execution"
+}

@@ -1,0 +1,33 @@
+{
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "cases": [
+    "ignore",
+    "ignore-deep"
+  ],
+  "engine_path": "/opt/godot/4.6.3/Godot_v4.6.3-stable_linux.x86_64",
+  "engine_processes": 2,
+  "invocation_id": "049b42fe-2c69-41df-bc61-f7b6265fee83",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "provenance": "self-report; official source correspondence not authenticated",
+  "python": "3.12.14",
+  "source_sha256": {
+    "candidate.tres": "b2d24ba51ad9918923c5a9e4294a4522284936a681fb085619d3ee4695580dd0",
+    "contract.json": "267f450ad57c6a802346d0b9c7ac9d79e240871a64a2e6566f62e3810f6bd941",
+    "gradient.tres": "a0772edb0e57c872bef9dd6487ba12ccbdd6696c04820527c5f557597203f4af",
+    "main.gd": "da1eb0a9edb0b0799c4b6fac131d8c19404123a6b8de3fe9c7c4a94a1a58e026",
+    "project.godot": "e6af33e9751b0f89915e7fbd4c2ec79dafe7c185c24c5f780725900cd27ac469",
+    "run.py": "f2ef26f570b62f07e505322534f6fcc8e7bfa0d5d458a552eee04672553288bc"
+  },
+  "status": "PASS",
+  "version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  }
+}
