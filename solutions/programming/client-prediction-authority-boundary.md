@@ -5,11 +5,11 @@ type: solution
 status: source-backed
 primary_discipline: NET
 related_roles: [network-programmer, gameplay-programmer, qa-engineer]
-related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep]
+related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots]
 engines: [engine-agnostic, Unity]
 versions: ["Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档"]
 updated_at: 2026-10-31
-verification_method: 原始来源核对与原创离散协议模型16项测试；未进行引擎、真实网络或跨平台物理验证
+verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；未进行引擎、真实网络或跨平台物理验证
 sources:
   - https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html
   - https://www.gabrielgambetta.com/entity-interpolation.html
@@ -82,6 +82,33 @@ python3 research/experiments/client-prediction/test_prediction.py
 表现测试以追加日志计数，重放不得追加发射记录；此日志仅用于有限测试审计，会随输入增长，不是生产去重缓存。运行时缓存需定义安全退休水位与 epoch 清理。
 
 模型使用一维整数加法，没有 socket、丢包概率分布、碰撞世界、序号回绕、认证、客户端时钟同步或跨平台浮点。测试通过只验证该模型中的协议性质，**不证明真实游戏网络正确或反作弊安全**。下一步集成验收：加入真实阻挡/移动平台状态、不同 RTT/乱序/丢包、重连 epoch、历史溢出、敌对超速输入和副作用撤销；对每次纠正保存输入范围及状态差异。
+
+## 重放依赖的时间归属：正确ack仍不足以恢复正确交互
+
+现有单角色整数加法模型及16项测试不读取其他实体，仍按原合同有效；它们不能验证跨实体重放依赖。这里补充**来源核对与原创手算，没有新增执行模型或Unity运行结果**。
+
+[Unity Netcode for Entities 1.4.1](https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/prediction-details.html#interactions-between-predicted-ghosts-using-partial-snapshots)说明，部分快照可使被回退实体与仍保留较新状态的实体交互。[Gambetta原文的Odds and ends](https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html)也提醒，多玩家场景中纠正后不匹配并不必然意味着作弊或非确定性。不能只检查输入后缀是否正确，还要问它读取了哪个时刻的世界。
+
+**原创未执行反例**：A在整数格移动，每tick尝试+1；先读取该tick的B占用格，目标格等于B时A不动。权威基线tick0为A=0、ack=0；本例仅约定seq1/seq2分别在tick1/tick2消费，不推广成seq等于serverTick。
+
+|重放的依赖|tick1：B格→A结果|tick2：B格→A结果|
+|---|---|---|
+|各tick的B历史|1→0，被阻挡|3→1|
+|B始终冻结为较新的tick2状态|3→1|3→2|
+
+两行基线和输入相同，只差依赖时间。若稍后收到完整tick2、ack2、A=1快照，可以再次纠正；这不是永久失同步证明、物理碰撞实验或Unity ECS复现。
+
+建议为纠正验收保留以下**原创逻辑信息，不是Unity报文schema**：
+
+|信息|应确认的关系|
+|---|---|
+|基线stateTick与字段范围|所有需恢复状态属于哪个时刻，不能只恢复位置|
+|最终处理命令边界|ack与权威状态对应，且含义为连续最终处理前缀|
+|输入到tick的映射|明确何时消费及缺口策略，不把序号当时钟|
+|依赖身份、时间与覆盖|本次重放读什么、各tick从何处取得，哪里缺历史|
+|缺失历史政策|拒绝本次精确候选并重同步、有限等待，或显式近似|
+
+拒绝精确候选不等于宣告服务器状态无效；等待需有容量/超时回退；近似可能引入误交互和更大纠正，必须标明，不能悄悄使用最新值却称精确重放。这些选择均未在本文实现，也不是要求全世界一起回滚。完整的[依赖验收矩阵、代价与来源定位](../../research/source-notes/prediction-dependency-time-contract.md)区分项目策略与特定引擎版本事实。
 
 ## 来源、定位与版权
 

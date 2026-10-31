@@ -1215,7 +1215,7 @@
       "id": "TASK-2026-0051",
       "question": "Valid correction and input suffix do not establish temporal completeness of other-entity replay dependencies",
       "discipline": "NET",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Existing scalar model cannot express current-time interacting entity during historical replay; clarify acceptance rather than add random transport cases",
       "expected_artifact": "Existing prediction article depth and supporting source note",
@@ -1231,8 +1231,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:26:11.121107Z",
-      "next_action": "Draft and independently review source-depth dependency contract; no new model or engine run",
+      "last_progress_at": "2026-10-31T20:29:21.588282Z",
+      "next_action": "Publish source-depth supplement; no new model/runtime claimed",
       "blockers": []
     }
   ]

@@ -11,17 +11,13 @@
 | 玩法程序工作接口 | [岗位档案](../roles/programming/gameplay-programmer.md) | 行业组织、雇主和教学项目的公开样本，不推定全行业组织结构 |
 | 技术美术资产交接 | [岗位档案来源S1–S5](../roles/technical-art/technical-artist.md) | ScreenSkills、Ubisoft历史/岗位样本、UE5.6 FBX；不外推所有导入器 |
 | 交互音乐状态契约 | [知识条目](../solutions/audio/music-state-transition-contract.md) | FMOD2.04手册为主；Wwise历史案例和旧公开头文件明确标年，不假定当前SDK等价 |
-
 | 客户端预测与确认 | [知识条目](../solutions/programming/client-prediction-authority-boundary.md) | Gambetta原作者与Unity指定版本；离散模型不验证网络/物理/反作弊 |
 | Niagara预算与测量 | [知识条目](../solutions/vfx/niagara-performance-budget.md) | UE5.6为主，5.8补充单独标记；没有硬件性能实测 |
-
-| 单机经济事件账本 | [知识条目](../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型，不预测真实玩家 |
+| 单机经济事件账本 | [知识条目](../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型及实际 SQLite 事务/写锁证据，不预测真实玩家 |
 | 交互音频职责交付 | [岗位档案](../roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
-
-| 模态焦点恢复 | [知识条目](../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，纯状态模型不证明真实渲染和认证 |
-| 伪本地化与格式契约 | [知识条目](../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；未执行引擎或格式化器 |
-
-| Steam恢复与存档写隔离 | [知识条目](../solutions/platform/cloud-save-resume-boundary.md) | Valve滚动中英文文档同源；串行内存模型不证明文件系统或平台时序 |
+| 模态焦点恢复 | [知识条目](../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，状态模型及 Godot 实例/焦点无头证据，不证明真实渲染和认证 |
+| 伪本地化与格式契约 | [知识条目](../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；已执行有限 ICU 格式化，未执行 Unity |
+| Steam恢复与存档写隔离 | [知识条目](../solutions/platform/cloud-save-resume-boundary.md) | Valve滚动中英文文档同源；串行模型与实际 tmpfs 路径替换反例，不证明 Steam 平台时序或持久介质断电恢复 |
 
 ## 更新规则
 
@@ -75,3 +71,11 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Godot actor 调度来源门槛](../research/experiments/godot-combat-policy/source-gate.md)记录 Node 物理优先级及固定官方比较源码；本地已安装二进制的未认证来源身份沿用共享取证说明，不因观察符合文档而升级认证。
 
 [资源加载来源门槛](../research/experiments/godot-resource-candidate/source-gate.md)区分 ResourceLoader CacheMode、外部依赖传播与同路径请求 token；当前实验仅验证一个原生资源图，ObjectID 比较源码不认证本地程序。
+
+[同路径请求登记证据](../research/experiments/godot-resource-broker/README.md)将第二次请求策略与首个未收取 token 的复用分开；登记失效不等于已持有资源失效。固定官方源码是语义参照，不是已安装二进制身份认证。
+
+[矩阵接口来源与编译证据](../solutions/rendering/matrix-major-interface-contract.md)对照固定 GLSL/Vulkan 规范及 shaderc API；实际 assembly decoration 与 CPU 字节解释分层，不称为 GPU 执行。
+
+[导航体型交接](../research/experiments/godot-navigation-radius/README.md)区分烘焙半径、避让配置与独立静止物理重叠；原生地面三角形和墙体不属于同一烘焙输入，未执行角色运动。
+
+[预测依赖时间合同](../research/source-notes/prediction-dependency-time-contract.md)重新核对 Unity Netcode for Entities 1.4.1 与 Gambetta 原文；跨实体反例为原创未执行手算，不是 ECS 复现，也不否定现有单角色模型范围。

@@ -1,0 +1,29 @@
+{
+  "run_id": "20261031T202200Z-prediction-dependencies",
+  "started_at": "2026-10-31T20:22:00Z",
+  "task_id": "TASK-2026-0051",
+  "outcome": "reviewed locally; publication pending",
+  "commit_sha": null,
+  "validation": {
+    "status": "PASS",
+    "method": "Primary source rereading and independently reviewed original hand calculation; not executed model",
+    "new_engine_processes": 0,
+    "new_model_executions": 0,
+    "new_semantic_tests": 0,
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 26,
+    "archive_consistency_checks": 223,
+    "normal_optimized_identical": true,
+    "local_markdown_links": 355,
+    "missing_links": 0,
+    "queue_tasks_checked": 51,
+    "declared_artifact_paths_checked": 16,
+    "source_index_corrections": [
+      "ICU actual formatting no longer described as unexecuted",
+      "Focus actual Godot evidence distinguished from rendering/accessibility",
+      "SQLite and tmpfs evidence distinguished from player economy/platform timing/power loss",
+      "Added broker, shader interface and navigation radius source entry points"
+    ],
+    "scope": "Source-depth dependency contract and index synchronization; original single-actor model remains within prior scope"
+  }
+}

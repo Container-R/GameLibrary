@@ -1,0 +1,899 @@
+{
+  "scope": "Declared archive consistency only; not genuine execution, binary authenticity or semantic correctness",
+  "checks": [
+    {
+      "id": "fixed-step/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/fixed-fps-30",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/fixed-fps-60",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/fixed-fps-144",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/max-fps-30",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/max-fps-60",
+      "status": "pass"
+    },
+    {
+      "id": "fixed-step/author/max-fps-144",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/author/30",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/author/60",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/author/144",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/review/30",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/review/60",
+      "status": "pass"
+    },
+    {
+      "id": "pause-input/review/144",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/author/gate",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/author/naive",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/author/guarded",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/review/gate",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/review/naive",
+      "status": "pass"
+    },
+    {
+      "id": "focus-boundary/review/guarded",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/baseline-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/kept-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/omitted-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/configured",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/seed",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/author/kept-manifest",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/baseline-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/kept-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/omitted-probe",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/configured",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/seed",
+      "status": "pass"
+    },
+    {
+      "id": "import-boundary/review/kept-manifest",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/naive",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/guarded",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/diagnostic-source",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/base_main_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/diagnostic_runner_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/diagnostic-binary",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/author/diagnostic-result",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/naive",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/guarded",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/diagnostic-source",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/base_main_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/diagnostic_runner_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/diagnostic-binary",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-sync/review/diagnostic-result",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/advance_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_exact",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_exact_update_only",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/advance_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/advance_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_exact",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_exact_update_only",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/advance_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/baseline",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/naive",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/literal_only",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/swapped",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/baseline",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/naive",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/literal_only",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/swapped",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/libraries",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/compare/metadata",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/compare/metadata",
+      "status": "pass"
+    },
+    {
+      "id": "texture/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "texture/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/pillow",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/runtime_files",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/gltf_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/fixture_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "music/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "music/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "music/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "music/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "music/compare/tools",
+      "status": "pass"
+    },
+    {
+      "id": "music/compare/cases",
+      "status": "pass"
+    },
+    {
+      "id": "music/compare/artifacts",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/compare/pillow",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/compare/runtime_files",
+      "status": "pass"
+    },
+    {
+      "id": "alpha/compare/operations",
+      "status": "pass"
+    },
+    {
+      "id": "combat/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "combat/author/contract",
+      "status": "pass"
+    },
+    {
+      "id": "combat/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "combat/review/contract",
+      "status": "pass"
+    },
+    {
+      "id": "combat/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "combat/compare/contract_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "combat/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "combat/compare/platform",
+      "status": "pass"
+    },
+    {
+      "id": "combat/compare/traces",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/compare/python_version",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/compare/platform",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/compare/runs",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/author/immediate-A",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/author/immediate-B",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/author/staged-A",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/author/staged-B",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/review/immediate-A",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/review/immediate-B",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/review/staged-A",
+      "status": "pass"
+    },
+    {
+      "id": "godot-combat/review/staged-B",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/receipt-process-count",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/ignore",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/ignore-deep",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/receipt-process-count",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/ignore",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/ignore-deep",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/compare/platform",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/author/freshness-runner",
+      "status": "pass"
+    },
+    {
+      "id": "resource-candidate/review/freshness-runner",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/receipt-process-count",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/reuse-then-deep",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/deep-then-reuse",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/receipt-process-count",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/reuse-then-deep",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/deep-then-reuse",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/compare/platform",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/author/freshness-runner",
+      "status": "pass"
+    },
+    {
+      "id": "resource-broker/review/freshness-runner",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/author/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/author/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/author/row",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/author/column",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/review/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/review/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/review/row",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/review/column",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "shader-layout/compare/platform",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/author/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/author/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/author/small",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/author/large",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/review/receipt-invocation_id",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/review/receipt-status",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/review/small",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/review/large",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "nav-radius/compare/platform",
+      "status": "pass"
+    }
+  ],
+  "passed": 223,
+  "failed": 0
+}
