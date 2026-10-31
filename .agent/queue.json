@@ -32,7 +32,7 @@
       "id": "TASK-2026-0001",
       "question": "核实并整理游戏程序各主要岗位职责与交付物",
       "discipline": "PROG",
-      "status": "backlog",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "roles/programming/gameplay-programmer.md",
@@ -43,12 +43,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
-      "attempts": 0,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "阅读原始职业资料，整理技术责任边界和下游任务",
+      "last_progress_at": "2026-10-31T12:57:31.875426Z",
+      "next_action": "文档/来源已审阅，等待发布与远端核验",
       "blockers": []
     },
     {
@@ -78,7 +78,7 @@
       "id": "TASK-2026-0003",
       "question": "拆解技术动画中角色大角度转身的脚滑和Root Motion责任划分",
       "discipline": "ANIM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/animation/turn-in-place-foot-sliding.md",
@@ -93,8 +93,8 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "核对Unity/Unreal根运动及混合资料，分离控制器双重驱动与脚底锁定问题",
+      "last_progress_at": "2026-10-31T12:57:31.875426Z",
+      "next_action": "文档/来源已审阅，等待发布与远端核验",
       "blockers": []
     },
     {

@@ -86,3 +86,7 @@ record(backlog=A, simulatedSteps=steps)
 - **S3** Unity，[*Input settings*](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Settings.html#update-mode)，页面元数据版本 **1.11.2**，定位 Update Mode。这里只核对处理时机，未推断所有输入设备时间戳语义。
 - **S4** Unity，[*Handling variation in time*](https://docs.unity.com/en-us/engine/6000.0/manual/scripting/managing-time-and-frame-rate/time-handling-variations)，**6000.0**，定位 Limiting recorded time variation / Time variation and the fixed update loop。
 - 多语言交叉检索：日文 [Unity 6000.0 Time](https://docs.unity3d.com/ja/6000.0/Manual/class-TimeManager.html)，固定時間ステップ / 最大許容時間ステップ；属同一厂商译版，**不算独立复核**。
+
+## 关联方案
+
+[转身脚滑与根运动职责](../animation/turn-in-place-foot-sliding.md)进一步讨论动画增量、控制器与足底接触之间的边界。
