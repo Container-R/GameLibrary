@@ -1380,7 +1380,7 @@
       "id": "TASK-2026-0057",
       "question": "Do current article verification metadata and role crosslinks accurately scope their exact linked evidence after depth additions?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Apply new exact-artifact applicability gate after a rejected unpublished scope conflation; correct only demonstrated ambiguity or stale links, not force findings",
       "expected_artifact": "27-entry exact-metadata audit and minimal verified TA/audio wording corrections",
@@ -1395,11 +1395,38 @@
         "Only correct TA SVG-vs-FBX scope and proven existing audio role link; optional exact fake-model metadata",
         "No runtime reruns, no evidence transfer by engine/topic label, no status upgrade or certification of all facts"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T22:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:28:56.966980Z",
-      "next_action": "Publish verified27-entry applicability audit and only three supported TA/audio text corrections",
+      "next_action": "Maintain exact artifact applicability when adding new evidence; no execution or all-source recertification implied",
+      "blockers": [],
+      "completed_at": "2026-10-31T21:34:05.398548Z",
+      "commit_sha": "44728a918d1871739132ca78409b458568371cfd"
+    },
+    {
+      "id": "TASK-2026-0058",
+      "question": "Does a manually evaluated native root-motion fixture expose stable same-evaluation deltas without automatically moving its owner, and what does explicit duplicate application do?",
+      "discipline": "ANIM",
+      "status": "reviewing",
+      "priority": 95,
+      "priority_rationale": "Address the exact native extraction gap left by four geometric model tests, without conflating IK or real-character quality",
+      "expected_artifact": "Original one-bone native fixture, frozen oracle, author and independent execution receipts, narrow article extension",
+      "artifact_paths": [
+        "solutions/animation/turn-in-place-foot-sliding.md"
+      ],
+      "acceptance": [
+        "Quote current canonical verification metadata before work; old evidence is only four Python geometric tests",
+        "Compare ordinary bone pose and extracted root motion in exactly two behavior configurations",
+        "Record repeated same-evaluation reads, next smaller advance, unchanged owner and explicit zero/one/two application receivers",
+        "Preserve original first failures if any; unique invocation results and exact binary/source/input hashes",
+        "Independent fresh rerun; distinguish installed binary observations from authenticated public source identity; no IK, collision or multiplayer claims"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T22:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T21:34:05.398548Z",
+      "next_action": "Review original native fixture and independent fresh rerun before bounded article integration",
       "blockers": []
     }
   ]

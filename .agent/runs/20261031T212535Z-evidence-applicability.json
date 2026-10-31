@@ -2,7 +2,7 @@
   "run_id": "20261031T212535Z-evidence-applicability",
   "started_at": "2026-10-31T21:25:35Z",
   "task_id": "TASK-2026-0057",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "articles_audited": 27,
@@ -15,7 +15,14 @@
     "new_model_tests": 0,
     "archive_consistency_checks": 297,
     "scope": "Editorial exact-artifact applicability and minimal wording/crosslink corrections; not all factual sources or archived execution authenticated anew",
-    "no_status_upgrade": true
+    "no_status_upgrade": true,
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 384,
+    "receipt_queue_tasks_checked": 58,
+    "receipt_declared_paths_checked": 33
   },
-  "local_review_completed_at": "2026-10-31T21:28:56.966980Z"
+  "local_review_completed_at": "2026-10-31T21:28:56.966980Z",
+  "commit_sha": "44728a918d1871739132ca78409b458568371cfd",
+  "ended_at": "2026-10-31T21:34:05.398548Z"
 }
