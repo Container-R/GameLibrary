@@ -3320,6 +3320,69 @@
       "id": "isolation/final-review/optimized/log",
       "log": "research/audits/runner-isolation/review/final/optimized.stdout",
       "parsed": "research/audits/runner-isolation/review/final/optimized.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "skeleton-order/initial-author/source",
+      "document": "research/experiments/godot-skeleton-modifier-order/results/d950544e-f0af-4068-aa0f-780ede638355/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-skeleton-modifier-order/historical-false-interpolation-oracle/run.py",
+        "main.gd": "research/experiments/godot-skeleton-modifier-order/historical-false-interpolation-oracle/main.gd",
+        "project.godot": "research/experiments/godot-skeleton-modifier-order/historical-false-interpolation-oracle/project.godot",
+        "contract.json": "research/experiments/godot-skeleton-modifier-order/historical-false-interpolation-oracle/contract.json",
+        "isolation.py": "research/experiments/godot-skeleton-modifier-order/historical-false-interpolation-oracle/isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "skeleton-order/initial-author/behavior",
+      "log": "research/experiments/godot-skeleton-modifier-order/results/d950544e-f0af-4068-aa0f-780ede638355/behavior.stdout",
+      "parsed": "research/experiments/godot-skeleton-modifier-order/results/d950544e-f0af-4068-aa0f-780ede638355/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "skeleton-order/corrected-author/source",
+      "document": "research/experiments/godot-skeleton-modifier-order/results/94105a77-e9f7-4367-ba9e-dfd4802f1224/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-skeleton-modifier-order/run.py",
+        "main.gd": "research/experiments/godot-skeleton-modifier-order/main.gd",
+        "project.godot": "research/experiments/godot-skeleton-modifier-order/project.godot",
+        "contract.json": "research/experiments/godot-skeleton-modifier-order/contract.json",
+        "isolation.py": "research/experiments/godot-skeleton-modifier-order/isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "skeleton-order/corrected-author/behavior",
+      "log": "research/experiments/godot-skeleton-modifier-order/results/94105a77-e9f7-4367-ba9e-dfd4802f1224/behavior.stdout",
+      "parsed": "research/experiments/godot-skeleton-modifier-order/results/94105a77-e9f7-4367-ba9e-dfd4802f1224/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "skeleton-order/independent/source",
+      "document": "research/experiments/godot-skeleton-modifier-order/review/evidence/6703fd88-731a-4879-8a5d-6f2ac968b3e2/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-skeleton-modifier-order/review/fixture/run.py",
+        "main.gd": "research/experiments/godot-skeleton-modifier-order/review/fixture/main.gd",
+        "project.godot": "research/experiments/godot-skeleton-modifier-order/review/fixture/project.godot",
+        "contract.json": "research/experiments/godot-skeleton-modifier-order/review/fixture/contract.json",
+        "isolation.py": "research/experiments/godot-skeleton-modifier-order/review/fixture/isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "skeleton-order/independent/behavior",
+      "log": "research/experiments/godot-skeleton-modifier-order/review/evidence/6703fd88-731a-4879-8a5d-6f2ac968b3e2/behavior.stdout",
+      "parsed": "research/experiments/godot-skeleton-modifier-order/review/evidence/6703fd88-731a-4879-8a5d-6f2ac968b3e2/behavior.json"
     }
   ]
 }

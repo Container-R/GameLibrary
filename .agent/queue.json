@@ -1580,11 +1580,15 @@
       "id": "TASK-2026-0064",
       "question": "Can two built-in LookAtModifier3D nodes demonstrate ancestor-order invalidation and the difference between signal-time modified poses and restored base poses?",
       "discipline": "ANIM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 95,
       "priority_rationale": "Existing single-bone root extraction does not validate modifier-order worksheet; native bounded observation can address a distinct high-value pose dependency gap",
       "expected_artifact": "Source-frozen two-bone native modifier-order evidence or accurately retained failed gate; integrate into existing animation article only if accepted",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/animation/turn-in-place-foot-sliding.md",
+        "research/experiments/godot-skeleton-modifier-order",
+        "research/source-notes/skeleton-modifier-order.md"
+      ],
       "acceptance": [
         "Exact current animation metadata/source gate; do not transfer four geometry tests or single-bone extraction to modifier order",
         "Freeze same skeleton/target/modifier IDs, direct-child order-only change and literal basis/position oracle before code",
@@ -1596,8 +1600,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:26:33.877270Z",
-      "next_action": "Implement accepted protocol46d4965f and inspect first bounded author run before any independent replay or scope changes",
+      "last_progress_at": "2026-10-31T22:34:43.473737Z",
+      "next_action": "Publish independently reviewed native order/observation evidence and original failed oracle without upgrading prior Rig or IK scope",
       "blockers": []
     }
   ]

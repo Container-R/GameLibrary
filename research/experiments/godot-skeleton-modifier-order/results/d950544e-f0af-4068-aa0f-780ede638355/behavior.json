@@ -1,0 +1,3110 @@
+{
+  "evaluations": [
+    {
+      "before": {
+        "bones": [
+          {
+            "name": "P",
+            "parent": -1,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "C",
+            "parent": 0,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "callback_mode": 2,
+        "children": [
+          {
+            "id": 26004686260,
+            "name": "P"
+          },
+          {
+            "id": 26038240694,
+            "name": "C"
+          }
+        ],
+        "interpolation_mode": 2,
+        "modifiers": [
+          {
+            "active": true,
+            "bone": 0,
+            "bone_name": "P",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26004686260,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 25987909043,
+            "target_path": "../../TargetP",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          },
+          {
+            "active": true,
+            "bone": 1,
+            "bone_name": "C",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26038240694,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 26021463477,
+            "target_path": "../../TargetC",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          }
+        ],
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "skeleton_id": 25971131826,
+        "targets": [
+          {
+            "id": 25987909043,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                10.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "id": 26021463477,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                10.0
+              ]
+            }
+          }
+        ],
+        "world": {
+          "basis": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "final": {
+        "evaluation": 0,
+        "kind": "skeleton_updated",
+        "phase": "armed",
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  -1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      "index": 0,
+      "restored": {
+        "bones": [
+          {
+            "name": "P",
+            "parent": -1,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "C",
+            "parent": 0,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "callback_mode": 2,
+        "children": [
+          {
+            "id": 26004686260,
+            "name": "P"
+          },
+          {
+            "id": 26038240694,
+            "name": "C"
+          }
+        ],
+        "interpolation_mode": 2,
+        "modifiers": [
+          {
+            "active": true,
+            "bone": 0,
+            "bone_name": "P",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26004686260,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 25987909043,
+            "target_path": "../../TargetP",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          },
+          {
+            "active": true,
+            "bone": 1,
+            "bone_name": "C",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26038240694,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 26021463477,
+            "target_path": "../../TargetC",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          }
+        ],
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "skeleton_id": 25971131826,
+        "targets": [
+          {
+            "id": 25987909043,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                10.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "id": 26021463477,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                10.0
+              ]
+            }
+          }
+        ],
+        "world": {
+          "basis": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "bone": 0,
+          "emitter": 26004686260,
+          "evaluation": 0,
+          "kind": "stage",
+          "phase": "armed",
+          "poses": [
+            {
+              "global": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "global": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "bone": 1,
+          "emitter": 26038240694,
+          "evaluation": 0,
+          "kind": "stage",
+          "phase": "armed",
+          "poses": [
+            {
+              "global": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "global": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "before": {
+        "bones": [
+          {
+            "name": "P",
+            "parent": -1,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "C",
+            "parent": 0,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "callback_mode": 2,
+        "children": [
+          {
+            "id": 26038240694,
+            "name": "C"
+          },
+          {
+            "id": 26004686260,
+            "name": "P"
+          }
+        ],
+        "interpolation_mode": 2,
+        "modifiers": [
+          {
+            "active": true,
+            "bone": 0,
+            "bone_name": "P",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26004686260,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 25987909043,
+            "target_path": "../../TargetP",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          },
+          {
+            "active": true,
+            "bone": 1,
+            "bone_name": "C",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26038240694,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 26021463477,
+            "target_path": "../../TargetC",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          }
+        ],
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "skeleton_id": 25971131826,
+        "targets": [
+          {
+            "id": 25987909043,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                10.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "id": 26021463477,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                10.0
+              ]
+            }
+          }
+        ],
+        "world": {
+          "basis": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "final": {
+        "evaluation": 1,
+        "kind": "skeleton_updated",
+        "phase": "armed",
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ]
+      },
+      "index": 1,
+      "restored": {
+        "bones": [
+          {
+            "name": "P",
+            "parent": -1,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "C",
+            "parent": 0,
+            "rest": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "callback_mode": 2,
+        "children": [
+          {
+            "id": 26038240694,
+            "name": "C"
+          },
+          {
+            "id": 26004686260,
+            "name": "P"
+          }
+        ],
+        "interpolation_mode": 2,
+        "modifiers": [
+          {
+            "active": true,
+            "bone": 0,
+            "bone_name": "P",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26004686260,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 25987909043,
+            "target_path": "../../TargetP",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          },
+          {
+            "active": true,
+            "bone": 1,
+            "bone_name": "C",
+            "duration": 0.0,
+            "forward_axis": 4,
+            "id": 26038240694,
+            "influence": 1.0,
+            "interpolating": true,
+            "interpolation_remaining": 0.0,
+            "origin_from": 0,
+            "origin_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "origin_safe_margin": 0.100000001490116,
+            "primary_rotation_axis": 1,
+            "relative": false,
+            "target_id": 26021463477,
+            "target_path": "../../TargetC",
+            "use_angle_limitation": false,
+            "use_secondary_rotation": true
+          }
+        ],
+        "poses": [
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "global": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "local": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "skeleton_id": 25971131826,
+        "targets": [
+          {
+            "id": 25987909043,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                10.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "id": 26021463477,
+            "world": {
+              "basis": [
+                [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  1.0
+                ]
+              ],
+              "origin": [
+                0.0,
+                1.0,
+                10.0
+              ]
+            }
+          }
+        ],
+        "world": {
+          "basis": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "origin": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "stages": [
+        {
+          "bone": 1,
+          "emitter": 26038240694,
+          "evaluation": 1,
+          "kind": "stage",
+          "phase": "armed",
+          "poses": [
+            {
+              "global": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "global": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "bone": 0,
+          "emitter": 26004686260,
+          "evaluation": 1,
+          "kind": "stage",
+          "phase": "armed",
+          "poses": [
+            {
+              "global": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "global": {
+                "basis": [
+                  [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "local": {
+                "basis": [
+                  [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                ],
+                "origin": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "trace": [
+    {
+      "bone": 0,
+      "emitter": 26004686260,
+      "evaluation": -1,
+      "kind": "stage",
+      "phase": "setup",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "bone": 1,
+      "emitter": 26038240694,
+      "evaluation": -1,
+      "kind": "stage",
+      "phase": "setup",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": -1,
+      "kind": "skeleton_updated",
+      "phase": "setup",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 0,
+      "kind": "drain_marker",
+      "phase": "setup"
+    },
+    {
+      "evaluation": 0,
+      "kind": "advance_call"
+    },
+    {
+      "evaluation": 0,
+      "kind": "advance_return"
+    },
+    {
+      "bone": 0,
+      "emitter": 26004686260,
+      "evaluation": 0,
+      "kind": "stage",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "bone": 1,
+      "emitter": 26038240694,
+      "evaluation": 0,
+      "kind": "stage",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 0,
+      "kind": "skeleton_updated",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                -1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 0,
+      "kind": "deferred_restored",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 1,
+      "kind": "drain_marker",
+      "phase": "reconfigure"
+    },
+    {
+      "evaluation": 1,
+      "kind": "advance_call"
+    },
+    {
+      "evaluation": 1,
+      "kind": "advance_return"
+    },
+    {
+      "bone": 1,
+      "emitter": 26038240694,
+      "evaluation": 1,
+      "kind": "stage",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "bone": 0,
+      "emitter": 26004686260,
+      "evaluation": 1,
+      "kind": "stage",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 1,
+      "kind": "skeleton_updated",
+      "phase": "armed",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                0.0,
+                0.0,
+                -1.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                1.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evaluation": 1,
+      "kind": "deferred_restored",
+      "poses": [
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "global": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          },
+          "local": {
+            "basis": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "origin": [
+              0.0,
+              1.0,
+              0.0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  }
+}

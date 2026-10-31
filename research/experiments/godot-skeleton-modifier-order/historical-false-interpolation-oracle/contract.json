@@ -1,0 +1,497 @@
+{
+  "protocol_id": "godot-skeleton-modifier-order-v1",
+  "frozen_before_fixture_code_or_native_run": true,
+  "status": "protocol_only_pending_parent_acceptance",
+  "created_utc": "2026-10-31T22:25:00Z",
+  "counts": {
+    "author_behavior_processes": 1,
+    "manual_evaluations_per_behavior_process": 2,
+    "author_version_processes": 1,
+    "reviewer_repeat": "separate future approval; not executed"
+  },
+  "geometry": {
+    "world_basis_columns": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "skeleton_world_origin": [
+      0,
+      0,
+      0
+    ],
+    "bones": [
+      {
+        "name": "P",
+        "parent": -1,
+        "rest_local_origin": [
+          0,
+          0,
+          0
+        ],
+        "rest_local_basis_columns": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "name": "C",
+        "parent": 0,
+        "rest_local_origin": [
+          0,
+          1,
+          0
+        ],
+        "rest_local_basis_columns": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    ],
+    "base_pose": "reset_bone_poses to declared local rests: P local origin (0,0,0), C local origin (0,1,0); both identity basis. Pose is not a zero-position delta added to rest.",
+    "target_world_positions": {
+      "P": [
+        10,
+        0,
+        0
+      ],
+      "C": [
+        0,
+        1,
+        10
+      ]
+    },
+    "targets_outside_skeleton": true
+  },
+  "modifiers": {
+    "type": "LookAtModifier3D",
+    "count": 2,
+    "direct_children": true,
+    "one_bound_to_each_bone": true,
+    "settings": {
+      "forward_axis": "+Z",
+      "primary_rotation_axis": "Y",
+      "relative": false,
+      "origin_from": "SELF",
+      "origin_offset": [
+        0,
+        0,
+        0
+      ],
+      "duration": 0,
+      "influence": 1,
+      "active": true,
+      "use_angle_limitation": false,
+      "use_secondary_rotation": true,
+      "origin_safe_margin": 0.1
+    }
+  },
+  "skeleton": {
+    "callback_mode": "MANUAL",
+    "advance_delta_seconds": 0.016666666666666666,
+    "physics_interpolation": "disabled",
+    "animation_mixer": false,
+    "skin_mesh": false
+  },
+  "identity_invariants": [
+    "same skeleton ID",
+    "same target IDs and world transforms",
+    "same two modifier IDs/bone bindings/settings",
+    "only modifier child order changes using move_child",
+    "same bone parent/rest and base poses before both evaluations"
+  ],
+  "oracle": {
+    "basis_representation": "three columns x/y/z, skeleton-space global bone pose; identity skeleton world transform",
+    "absolute_component_tolerance": 1e-05,
+    "finite_orthonormal_required": true,
+    "bone_global_origins": {
+      "P": [
+        0,
+        0,
+        0
+      ],
+      "C": [
+        0,
+        1,
+        0
+      ]
+    },
+    "evaluations": [
+      {
+        "name": "parent_then_child",
+        "child_order": [
+          "P",
+          "C"
+        ],
+        "stages": [
+          {
+            "emitter": "P",
+            "P_basis": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ],
+            "C_basis": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "emitter": "C",
+            "P_basis": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ],
+            "C_basis": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "final": {
+          "P_basis": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "C_basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "child_forward_dot_target_direction": 1
+        }
+      },
+      {
+        "name": "child_then_parent",
+        "child_order": [
+          "C",
+          "P"
+        ],
+        "stages": [
+          {
+            "emitter": "C",
+            "P_basis": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ],
+            "C_basis": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "emitter": "P",
+            "P_basis": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ],
+            "C_basis": [
+              [
+                0,
+                0,
+                -1
+              ],
+              [
+                0,
+                1,
+                0
+              ],
+              [
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        ],
+        "final": {
+          "P_basis": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "C_basis": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "child_forward_dot_target_direction": 0
+        }
+      }
+    ],
+    "restored_after_each_deferred_continuation": {
+      "P_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "C_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "P_origin": [
+        0,
+        0,
+        0
+      ],
+      "C_origin": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "observation_protocol": [
+    "Construct/configure outside tree where possible; tag setup signals separately and drain at explicit deferred marker before arming.",
+    "Before arming each evaluation, capture actual child IDs/order, modifier bindings/settings, skeleton/target transforms, bone parent/rest/local/global poses.",
+    "Arm one evaluation then call advance once; record immediate return as sequencing only, never final-pose evidence.",
+    "Record modification_processed emitter IDs and both bone poses; exactly two matching ordered stage events for armed evaluation.",
+    "Capture final poses in skeleton_updated only after both expected stage events. Reject extra/missing armed events.",
+    "Schedule continuation via call_deferred from final signal; do not treat await signal resumption as after restore. Record restored poses in that continuation.",
+    "Reset identical base input and reorder same direct children for second evaluation; setup/reconfiguration drain is explicitly tagged and excluded from the two manual evaluations. No adaptive warmups.",
+    "After second restored snapshot emit one RESULT_JSON then exit. Retain setup events in trace."
+  ],
+  "runner_contract": {
+    "stdlib_plus_local_isolation_helper_only": true,
+    "helper_sha256": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "five_environment_locations": [
+      "HOME",
+      "XDG_CACHE_HOME",
+      "XDG_CONFIG_HOME",
+      "XDG_DATA_HOME",
+      "TMPDIR"
+    ],
+    "unique_owned_invocation_root": true,
+    "source_manifest": [
+      "run.py",
+      "main.gd",
+      "project.godot",
+      "contract.json",
+      "isolation.py"
+    ],
+    "external_timeout_seconds_per_process": 30,
+    "engine_watchdog_seconds": 10,
+    "optimized_python": "reject before native processes; remove previous success summary first",
+    "diagnostics": "Both stdout and stderr fail closed on ERROR or SCRIPT ERROR and unexpected diagnostics; no expected native error whitelist. Preserve raw streams/status including failure/timeout.",
+    "result_json": "exactly one behavior payload; parsed object must equal raw payload",
+    "receipt": "source and binary hashes, self-reported version/full hash, exact argv, per-process streams/status/hash, attempted/successful counts; emit PASS only after strict independent literal oracle",
+    "no_current_binary_authentication": true
+  },
+  "expected_binary_identity": {
+    "sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+    "self_report": "4.6.3.stable.official.7d41c59c4",
+    "comparison_source_commit": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+    "meaning": "re-measure if run; not authenticated exact official binary/source match"
+  },
+  "failure_policy": "Preserve first complete source and raw failure. Stop and inspect before any changed geometry/tolerance/warmup or scope. No fitting expected vectors to observed output.",
+  "limits": [
+    "built-in look-at only, no hand/foot IK",
+    "no AnimationMixer scheduling evidence",
+    "no skin, rendered deformation, character quality or contact guarantee",
+    "no Unity/Unreal order-rule transfer",
+    "two fixed evaluations only, not arbitrary history independence",
+    "no native execution at protocol freeze"
+  ]
+}

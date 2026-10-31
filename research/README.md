@@ -48,9 +48,9 @@ python3 scripts/evidence/verify.py .
 python3 scripts/evidence/test_verify.py
 ```
 
-[工具说明与显式注册表](../scripts/evidence/README.md)在本次快照登记340项一致性检查；九夹具103项是历史阶段，后续范围以注册表逐项绑定为准。[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史结果只有显式绑定对应历史源码才参与检查；isolation初始/最终阶段分别登记，不与最新源码混比。注册表变更需审查。
+[工具说明与显式注册表](../scripts/evidence/README.md)在本次快照登记346项一致性检查；九夹具103项是历史阶段，后续范围以注册表逐项绑定为准。[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史结果只有显式绑定对应历史源码才参与检查；isolation初始/最终阶段分别登记，不与最新源码混比。注册表变更需审查。
 
-原工具审查记录的9项单元测试与当时86项游戏模型测试是不同范围；当前340项文件/记录检查也不是340项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
+原工具审查记录的9项单元测试与当时86项游戏模型测试是不同范围；当前346项文件/记录检查也不是346项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
 
 精确字节哈希也会发现换行变化。仓库`.gitattributes`使用`* -text`禁止Git自动换行转换，而不禁止普通文本diff；这是[Git官方属性语义](https://git-scm.com/docs/gitattributes)，不是字符编码或运行时兼容保证。保留原始字节比替换换行后继续沿用旧哈希更重要。[本地策略检查](audits/evidence-integrity/check_git_byte_policy.py)在临时Git仓库设`core.autocrlf=true`后验证检出字节与文本diff；它是Linux/Git2.52.0的有限测试，不是Windows执行测试，也不修改用户全局Git配置。该检查需Git，和只需Python标准库的校验器分开。
 
@@ -103,3 +103,5 @@ python3 scripts/evidence/test_verify.py
 [构建工程候选交接](../roles/engine/build-engineer.md)将源、产物、测试对象和晋级权限分开；六阶段交付与五项接收工作表均是未执行的原创建议。
 
 [Addressables已发布基线合同](../solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。
+
+[双骨LookAt顺序与读取时点](experiments/godot-skeleton-modifier-order/README.md)采用新的五位置helper，但不改旧运行器；三次行为尝试含一次完整判据失败，接受结果仅覆盖两个顺序和固定输入。

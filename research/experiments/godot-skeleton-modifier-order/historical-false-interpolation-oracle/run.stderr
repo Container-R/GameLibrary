@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-skeleton-modifier-order/run.py", line 145, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-skeleton-modifier-order/run.py", line 134, in main
+    data=json.loads(payload[0]);(out/'behavior.json').write_text(json.dumps(data,indent=2)+'\n');check(data)
+                                                                                                 ^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-skeleton-modifier-order/run.py", line 70, in check
+    require(m['interpolating'] is False,'unexpected interpolation');near(m['interpolation_remaining'],0)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-skeleton-modifier-order/run.py", line 20, in require
+    if not ok: raise RuntimeError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: unexpected interpolation

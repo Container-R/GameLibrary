@@ -1,0 +1,49 @@
+{
+  "run_id": "20261031T222634Z-skeleton-modifier-order",
+  "task_id": "TASK-2026-0064",
+  "started_at": "2026-10-31T22:26:34Z",
+  "protocol_accepted_before_code_at": "2026-10-31T22:26:15Z",
+  "local_review_completed_at": "2026-10-31T22:34:43.473737Z",
+  "outcome": "reviewed locally; publication pending",
+  "validation": {
+    "native_behavior_attempts": 3,
+    "native_behavior_full_oracle_accepted": 2,
+    "native_behavior_full_oracle_failed": 1,
+    "native_version_queries": 3,
+    "manual_evaluations_per_behavior_process": 2,
+    "unique_order_configurations": 2,
+    "reviewer_synthetic_record_mutations": 6,
+    "reviewer_mutation_modes": [
+      "normal",
+      "-O"
+    ],
+    "reviewer_optimized_startup_negatives": 1,
+    "negative_check_native_processes": 0,
+    "archive_checks": 346,
+    "archive_modes": [
+      "normal",
+      "-O"
+    ],
+    "portable_checker_modes": [
+      "normal",
+      "-O"
+    ],
+    "portable_checker_child_processes": 0,
+    "unchanged_existing_experiment_files": 1719,
+    "indexed_source_backed_articles": 30,
+    "new_indexed_articles": 0
+  },
+  "limits": [
+    "Initial full-oracle failure retained; only unfrozen false-only getter assumption removed, no geometry/tolerance/history changes",
+    "Observed setup records are excluded from requested manual evaluation count",
+    "Exact same-member direct-child order, fixed bases/targets, built-in LookAt only",
+    "No AnimationMixer, skin/rendering, hand/foot IK, arbitrary history or Unity/Unreal guarantee",
+    "Copied new isolation helper adopted by this runner only; legacy fresh harness unchanged",
+    "Binary self report differs from comparison source identity; no official-source authentication"
+  ],
+  "source_identities": {
+    "contract_sha256": "46d4965fb6b945e9acc0f5d41118747525a2545180af9181874933e6eb95ea65",
+    "current_runner_sha256": "eeacbeff431533918d472ff5804eb0efe222e91503402bb86e56c425f04f8ef1",
+    "initial_runner_sha256": "898905d9beec2c9e215b7fb6d0e330c3a0a896b2e6b155050fd77206c89ca565"
+  }
+}

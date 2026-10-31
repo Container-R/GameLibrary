@@ -99,3 +99,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [未来运行器五位置合同](../research/source-notes/runner-environment-contract.md)使用Python版本化API和XDG0.8规范作范围参照；有限合成子进程不等于引擎或完整隔离验证。
 
 [Addressables内容更新来源](../research/source-notes/addressables-content-update-baseline.md)明确1.21.21文档版本、远端state缺失时已有本地缓存的精确条件和措辞差异；不声称执行Unity或验证读取观测接口。
+
+[内建LookAt修正顺序](../research/source-notes/skeleton-modifier-order.md)分开阶段信号、最终姿态与延后恢复；保留首轮Boolean附加判据失败，不把这个双骨证据转移给Unity Rig或通用IK。

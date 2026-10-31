@@ -11,8 +11,13 @@ engines: [Unity, Unreal Engine, Godot]
 versions: ["Unity 6000.0", "Unreal Engine 5.6", "Unity Animation Rigging 1.2.1 documentation only", "Godot 4.6 documentation", "Installed Godot self-report 4.6.3.stable.official.7d41c59c4; provenance caveat"]
 platforms: [engine-agnostic-diagnostic-workflow]
 updated_at: 2026-10-31
-verification_method: 官方版本文档与日本项目材料核对；4项Python二维模型测试；新增Godot原生两配置及独立两配置复跑（双方各另一次版本查询）；Rig六行表及真实角色/Unity/UE验证未执行
+verification_method: 官方版本文档与日本项目材料核对；4项Python二维模型测试；新增Godot原生两配置及独立两配置复跑（双方各另一次版本查询）；另有Godot双骨LookAt两顺序与独立复验，首轮附加判据失败保留；Rig六行表及真实角色/Unity/UE验证未执行
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_lookatmodifier3d.html
+  - https://docs.godotengine.org/en/4.6/classes/class_skeletonmodifier3d.html
+  - https://docs.godotengine.org/en/4.6/classes/class_skeleton3d.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/skeleton_3d.cpp
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/look_at_modifier_3d.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_animationmixer.html
   - https://docs.godotengine.org/en/4.6/classes/class_animationtree.html
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/animation/animation_mixer.cpp
@@ -178,6 +183,29 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 作为本库的实验控制建议，A/B还应核对实际收集到的约束成员/ID、Rig层归属、启用状态、权重和目标/骨骼引用，并保存实际有序列表。重挂层级若改变成员范围或设置，必须另列变化，不能得出“仅顺序导致”的因果结论；这不是未经运行确认的Unity内部行为断言。
 
 至少记录角色/Rig/包版本、输入、真实顺序、阶段输出、最终误差、项目容差及审核决定。容差由动作比例、镜头和玩法共同决定，不给通用厘米阈值。数值接触通过也不等于动作自然；美术评审与必要的实际玩法观察仍是另一项证据。
+
+## 独立补证：内建 LookAt 的顺序与姿态读取时点
+
+上述 Unity 躯干/手 IK 工作表仍未执行。这里另建一个 **Godot 双骨、两个内建 LookAtModifier3D** 的无头夹具，验证更窄的问题：子骨已经瞄准后，后续父骨旋转能否改变它的最终方向？既有单骨根运动提取实验不回答此问题，也没有被重命名为本轮证据。
+
+父骨 P 位于原点，子骨 C 的局部静止位置为 `(0,1,0)`；骨架世界变换为单位变换。固定目标分别为 `(10,0,0)`、`(0,1,10)`。两个 modifier 均以 `+Z` 为前向，`relative=false`、`duration=0`、`influence=1`，无角度限制。无 AnimationMixer、网格、蒙皮、IK 或角色资产。仅以 `move_child` 改同一组节点的直接子节点顺序，记录实际成员 ID、骨骼/目标绑定、设置、静止姿态和目标世界变换。
+
+| 同一进程内的顺序 | 第一修正后 P/C 的整体前向 | 全部修正后 P/C 的整体前向 | C 前向与固定目标方向点积 |
+|---|---|---|---|
+| P → C | +X / +X | +X / +Z | 约 1 |
+| C → P | +Z / +Z | +X / +X | 约 0 |
+
+子骨偏移沿 Y，父骨绕 Y 旋转不会移动其原点，因此这个输入区分了**继承方向变化**与目标/原点位置变化。验收比较完整基矩阵、位置及正交性，容差 `1e-5`；不是只检查回调出现或拿作者摘要与自己比较。这个容差仅用于本夹具数值，不是角色动作质量标准。
+
+另一个实测边界是读取时点：`advance(1/60)` 返回后，修正通过延后处理发生；在各 `modification_processed` 信号内读阶段姿态，在 `skeleton_updated` 信号内读最终姿态。该信号返回后，通过另外排队的 deferred continuation 读到基础姿态已恢复。`await skeleton_updated` 的恢复执行仍在信号发送过程中，不能冒充这个后置观察。预备阶段信号单独标记保留，不计入两次手动求值。
+
+当前实际记录为：作者首轮 1 个行为进程完成两次求值，但额外 Boolean 判据使完整验收失败；修正后的作者与独立复核各 1 个行为进程、各两次求值通过。三次调用各另有 1 次版本查询。因此共 **3 个行为进程尝试，2 个完整接受，3 次版本查询；只有 2 种不同顺序配置**，不是六个独立场景。
+
+首轮错误是把 `is_interpolating()` 名称推断成“零时长时必为 false”。实际字段为 true、剩余秒数为 0；固定比较源码的 getter 判断内部剩余值近零，实际插值分支另检查正剩余量，官方描述也同时出现运行与零剩余的措辞。原始失败源与日志保留为 FAIL，修正只把该未冻结的 false 判据改为记录 Boolean 类型，未调整几何、时限、顺序或容差。不能据此认证本机源码身份或宣称通用引擎缺陷。
+
+[完整夹具、冻结协议与独立复核](../../research/experiments/godot-skeleton-modifier-order/README.md)保留来源/输出摘要和原始轨迹。官方 [LookAtModifier3D 4.6](https://docs.godotengine.org/en/4.6/classes/class_lookatmodifier3d.html) 指出父骨修正应先于子骨；[SkeletonModifier3D](https://docs.godotengine.org/en/4.6/classes/class_skeletonmodifier3d.html) 说明阶段读取信号；[Skeleton3D](https://docs.godotengine.org/en/4.6/classes/class_skeleton3d.html) 区分骨架空间整体姿态与世界空间。公开比较源码只作为解释参照，仍有[本地二进制来源限制](../../research/source-notes/godot-runtime-provenance.md)。
+
+可据此采用的诊断方法是：记录实际修改顺序与所读写骨链，并在正确阶段捕获姿态；不要仅凭事后一次读取或“单个约束能瞄准”判断组合正确。这不是所有 Rig 的唯一排序规则，也不验证真实手足接触、动画混合顺序、渲染变形、Unity/Unreal 或上面的六行接收表。
 
 ## 原始来源、定位与版权
 
