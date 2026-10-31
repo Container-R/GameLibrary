@@ -1,0 +1,17 @@
+{
+  "run_id": "20261031T181400Z-publication-recovery",
+  "started_at": "2026-10-31T18:14:36Z",
+  "ended_at": null,
+  "kind": "operational-recovery-not-new-research",
+  "verified_remote_head": "2ed9b593c3ff99e34540ebb66e96080a7e673cbf",
+  "attempt": "Prior 299-file create_tree call returned no response before interruption",
+  "uncertain_effect": "An unreferenced tree may exist; no commit/ref call was attempted",
+  "actual_actions": [
+    "Read remote master ref and commit tree",
+    "Read current remote state and queue",
+    "Prepared historical 16:50 audit sync and lease recovery"
+  ],
+  "research_claim": "No continuous progress claimed during blocked wait",
+  "next_action": "Small coherent ICU publication, bounded operation waits",
+  "commit_sha": null
+}

@@ -1,22 +1,25 @@
 {
   "schema_version": 1,
   "project": "Container-R/GameLibrary",
-  "current_phase": "reviewed-batch-publication",
+  "current_phase": "publication-recovery",
   "active_task_ids": [
+    "TASK-2026-0032",
     "TASK-2026-0037"
   ],
   "last_completed_at": "2026-10-31T16:25:34.959720Z",
   "last_real_progress_at": "2026-10-31T16:25:34.959720Z",
   "last_commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
   "last_run_id": "20261031T162200Z-content-contracts",
-  "next_action": "Publish reviewed ICU and SQLite evidence; integrate independently reviewed texture budget experiment",
+  "next_action": "Publish minimal coherent ICU evidence using bounded tree uploads; then remaining reviewed SQLite and texture artifacts",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
-    "last_checked_at": "2026-10-31T14:49:56Z",
+    "last_checked_at": "2026-10-31T16:54:31.781525Z",
     "research_health": "healthy",
     "publication_hold_resolved_at": "2026-10-31T16:18:40.694275Z",
-    "last_audit_record": ".agent/audits/20261031T145000Z.json"
+    "last_audit_record": ".agent/audits/20261031T165000Z.json",
+    "historical_research_health": "healthy_at_1654_observation",
+    "current_health": "recovering_after_tool_wait"
   },
   "publication": {
     "visibility": "public",
@@ -24,5 +27,15 @@
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
     "latest_verified_content_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
+  },
+  "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
+  "recovery": {
+    "recorded_at": "2026-10-31T18:15:40Z",
+    "last_attempt": "GitHub create_tree for 299 reviewed files",
+    "attempt_started_approx": "2026-10-31T16:29:59Z",
+    "outcome": "Interrupted after about 6268 seconds without response; tree-object creation uncertain; no commit or ref update attempted",
+    "head_rechecked": "2ed9b593c3ff99e34540ebb66e96080a7e673cbf",
+    "blocked_interval_research": "No new main-worker research during unresolved tool wait",
+    "prevention": "Tree uploads capped to small groups; report pending calls by 60 seconds and reconcile uncertain outcome before retry"
   }
 }

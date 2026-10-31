@@ -771,12 +771,13 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T18:45:00Z",
       "attempts": 1,
       "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "next_action": "Publish independently reviewed minimal ICU artifact batch",
+      "blockers": [],
+      "last_operational_checkpoint_at": "2026-10-31T18:15:40Z"
     },
     {
       "id": "TASK-2026-0033",
@@ -876,11 +877,12 @@
         "No inferred production guarantees"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "lease_until": "2026-10-31T18:45:00Z",
       "attempts": 1,
       "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "next_action": "Integrate accepted texture article after current safe publication recovery",
+      "blockers": [],
+      "last_operational_checkpoint_at": "2026-10-31T18:15:40Z"
     }
   ]
 }
