@@ -101,3 +101,5 @@ python3 scripts/evidence/test_verify.py
 - [Future runner five-location environment contract](source-notes/runner-environment-contract.md) — additive helper, source-stage-bound synthetic evidence and preserved historical fixtures; no engine rerun or automatic migration.
 
 [构建工程候选交接](../roles/engine/build-engineer.md)将源、产物、测试对象和晋级权限分开；六阶段交付与五项接收工作表均是未执行的原创建议。
+
+[Addressables已发布基线合同](../solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。

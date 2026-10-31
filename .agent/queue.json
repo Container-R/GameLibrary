@@ -1551,11 +1551,15 @@
       "id": "TASK-2026-0063",
       "question": "How should an Addressables content-update job distinguish its configured prior-state URL from the exact release/platform baseline bytes actually selected?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 95,
       "priority_rationale": "Official1.21.21 documentation permits cached previous-state fallback for missing remote file; concrete build-time lineage risk is distinct from Godot runtime cache ownership",
       "expected_artifact": "Version-scoped source-backed content-update baseline contract with explicit unexecuted acceptance and runtime gap",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/engine/addressables-content-update-baseline.md",
+        "research/source-notes/addressables-content-update-baseline.md",
+        "research/audits/addressables-update-contract"
+      ],
       "acceptance": [
         "Directly read official Addressables1.21 pages identifying1.21.21 and exact missing-remote cached-state fallback condition",
         "Separate original per-platform release state, update outputs, build-time cache and loaded runtime assets",
@@ -1566,8 +1570,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:19:42.198473Z",
-      "next_action": "Deep-read exact official baseline/cache and update compatibility sections, then draft narrow source-backed contract with unresolved runtime gate",
+      "last_progress_at": "2026-10-31T22:25:10.075666Z",
+      "next_action": "Publish independently reviewed source-backed baseline selection contract; keep actual consumed-byte hook and Unity runtime protocol unresolved",
       "blockers": []
     }
   ]

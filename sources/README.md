@@ -97,3 +97,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [构建工程职责与候选交接来源](../research/source-notes/build-engineer-role.md)区分日本共享引擎、美国高级发布架构、Cygames历史生成任务与SLSA概念参照；原创候选工作表未执行，不建立厂商实践或供应链认证。
 
 [未来运行器五位置合同](../research/source-notes/runner-environment-contract.md)使用Python版本化API和XDG0.8规范作范围参照；有限合成子进程不等于引擎或完整隔离验证。
+
+[Addressables内容更新来源](../research/source-notes/addressables-content-update-baseline.md)明确1.21.21文档版本、远端state缺失时已有本地缓存的精确条件和措辞差异；不声称执行Unity或验证读取观测接口。

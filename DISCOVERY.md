@@ -117,6 +117,8 @@
 
 岗位起点：[构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `ROLE-ENGINE-001` · `source-backed` · `ENGINE`
 
+- 更新作业实际读了哪个已发布内容基线？ → [Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端](solutions/engine/addressables-content-update-baseline.md) — `SOL-ENGINE-002` · `source-backed` · `ENGINE`
+  - 关联理由：查看Addressables1.21.21文档中的远端缺失/本地state回退条件；实际读取观测与旧版客户端协议尚未执行。
 - 源和导入配置相同，就能保证候选产物相同吗？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
   - 关联理由：区分资产意图、导入阶段与运行时对象；已有实验不是完整包可重复构建证明。
 - 测试结论究竟属于哪个候选与配置？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`

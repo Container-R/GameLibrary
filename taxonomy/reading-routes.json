@@ -233,6 +233,11 @@
       "subject_profile_id": "ROLE-ENGINE-001",
       "entries": [
         {
+          "document_id": "SOL-ENGINE-002",
+          "question": "更新作业实际读了哪个已发布内容基线？",
+          "rationale": "查看Addressables1.21.21文档中的远端缺失/本地state回退条件；实际读取观测与旧版客户端协议尚未执行。"
+        },
+        {
           "document_id": "SOL-ENGINE-001",
           "question": "源和导入配置相同，就能保证候选产物相同吗？",
           "rationale": "区分资产意图、导入阶段与运行时对象；已有实验不是完整包可重复构建证明。"

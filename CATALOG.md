@@ -21,6 +21,7 @@
 - [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `source-backed` · `SFX`
 - [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `source-backed` · `DATA`
 - [单机成长经济：用事件账本验证来源、消耗与升级可达性](solutions/design/single-player-economy-ledger.md) — `source-backed` · `DESIGN`
+- [Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端](solutions/engine/addressables-content-update-baseline.md) — `source-backed` · `ENGINE`
 - [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `source-backed` · `ENGINE`
 - [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `source-backed` · `LOC`
 - [有效字节不等于正确顶点：glTF 交错属性的偏移、步长与几何验收](solutions/modeling/gltf-interleaved-attribute-contract.md) — `source-backed` · `MODEL`

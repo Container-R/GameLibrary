@@ -83,6 +83,8 @@ Cygames在**2020-10-08**的CEDEC2020后续问答 [B4] 说明：CI定期运行C++
 
 ## 与已有知识的责任接口
 
+- [Addressables内容更新基线](../../solutions/engine/addressables-content-update-baseline.md)：配置的远端state位置不等于实际读取身份；版本化文档支持的基线门禁和旧版客户端接收协议尚未执行。
+
 - [游戏QA](../qa/game-quality-assurance.md)：缺陷复现、版本风险和未测范围；构建角色提供可定位对象，不取代QA证据或其组织权限。
 - [技术美术](../technical-art/technical-artist.md)：负责的内容工具/资产交接可能成为构建输入；不因此把所有DCC制作工具归入构建岗位。
 - [干净检出后的资产导入](../../solutions/engine/asset-import-intent-contract.md)：已有导入/身份与运行时资源实验，不能直接证明生产包的可复现构建或发布授权。

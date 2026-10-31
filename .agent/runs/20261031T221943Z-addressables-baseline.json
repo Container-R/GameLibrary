@@ -1,0 +1,30 @@
+{
+  "run_id": "20261031T221943Z-addressables-baseline",
+  "task_id": "TASK-2026-0063",
+  "started_at": "2026-10-31T22:19:43Z",
+  "local_review_completed_at": "2026-10-31T22:25:10.075666Z",
+  "outcome": "reviewed locally; publication pending",
+  "validation": {
+    "official_versioned_document_pages": 5,
+    "document_package_version": "1.21.21",
+    "original_unexecuted_handoff_stages": 5,
+    "original_unexecuted_test_protocol_steps": 4,
+    "new_runtime_or_model_tests": 0,
+    "archive_checks": 340,
+    "archive_modes": [
+      "normal",
+      "-O"
+    ],
+    "unchanged_existing_experiment_files": 1719,
+    "indexed_source_backed_articles": 30,
+    "role_profiles": 7
+  },
+  "limits": [
+    "Configured remote state URL is not proof of actual selected/consumed baseline bytes",
+    "Fallback only documented for missing remote state and existing local cached state; not all HTTP failures",
+    "No verified selection observation API/log hook or automatic custom-digest enforcement",
+    "No Unity/runtime/CDN experiment or transferred Godot evidence",
+    "Prevent Updates versus Cannot Change Post Release is a documentation wording discrepancy, not observed Inspector behavior",
+    "Wrong-baseline runtime outcome, CDN atomicity and arbitrary compatibility remain unknown"
+  ]
+}
