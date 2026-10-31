@@ -3,7 +3,7 @@
   "task_id": "TASK-2026-0062",
   "started_at": "2026-10-31T22:13:54Z",
   "local_review_completed_at": "2026-10-31T22:18:06.407290Z",
-  "outcome": "reviewed locally; publication pending",
+  "outcome": "published and read back",
   "validation": {
     "primary_employer_sources": 3,
     "dated_public_production_case_sources": 1,
@@ -18,7 +18,12 @@
     ],
     "unchanged_existing_experiment_files": 1719,
     "indexed_source_backed_articles": 29,
-    "role_profiles": 7
+    "role_profiles": 7,
+    "selected_blob_hashes_verified": 20,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 448,
+    "receipt_queue_tasks_checked": 63,
+    "receipt_declared_paths_checked": 47
   },
   "limits": [
     "Employer job duties do not prove internal operational success or universal authority",
@@ -26,5 +31,7 @@
     "SLSA concepts do not establish employer/library adoption, signature verification, compliance or QA approval",
     "Original worksheet not executed; full occupation matrix TASK-2026-0008 remains incomplete"
   ],
-  "maintenance": "Correct stale current103/120 index wording to historical stages and current340 explicit registry checks; distinguish separate fixed-step synthetic-input and kinematic-contact fixtures without upgrading early evidence"
+  "maintenance": "Correct stale current103/120 index wording to historical stages and current340 explicit registry checks; distinguish separate fixed-step synthetic-input and kinematic-contact fixtures without upgrading early evidence",
+  "commit_sha": "2dfb7f18d9b462c57c5bc75cd6c73a8ace19641f",
+  "ended_at": "2026-10-31T22:19:42.198473Z"
 }

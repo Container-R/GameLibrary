@@ -1522,7 +1522,7 @@
       "id": "TASK-2026-0062",
       "question": "How should build/deployment engineering prove that the QA-accepted package and configuration are the candidate promoted to release?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Important missing occupation and cross-team artifact promotion boundary; pipeline completion is not QA approval or deployment authorization",
       "expected_artifact": "Source-gated build/deployment role profile and bounded original artifact-promotion handoff proposal",
@@ -1538,11 +1538,36 @@
         "Mark original handoff worksheet unexecuted; no benchmark or operational adoption claims",
         "Independent source and applicability review before publication"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:18:06.407290Z",
-      "next_action": "Publish independently reviewed build-engineering responsibility profile and bounded candidate handoff; keep matrix incomplete",
+      "next_action": "Keep candidate worksheet unexecuted; investigate real external-content baseline selection separately",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:19:42.198473Z",
+      "commit_sha": "2dfb7f18d9b462c57c5bc75cd6c73a8ace19641f"
+    },
+    {
+      "id": "TASK-2026-0063",
+      "question": "How should an Addressables content-update job distinguish its configured prior-state URL from the exact release/platform baseline bytes actually selected?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 95,
+      "priority_rationale": "Official1.21.21 documentation permits cached previous-state fallback for missing remote file; concrete build-time lineage risk is distinct from Godot runtime cache ownership",
+      "expected_artifact": "Version-scoped source-backed content-update baseline contract with explicit unexecuted acceptance and runtime gap",
+      "artifact_paths": [],
+      "acceptance": [
+        "Directly read official Addressables1.21 pages identifying1.21.21 and exact missing-remote cached-state fallback condition",
+        "Separate original per-platform release state, update outputs, build-time cache and loaded runtime assets",
+        "Do not transfer Godot resource fixtures or claim actual Unity pipeline/old-player compatibility execution",
+        "Preserve Prevent Updates versus Cannot Change Post Release documentation wording discrepancy without asserting installed UI",
+        "Independent source review; no inferred HTTP error paths, CDN atomicity or custom digest enforcement"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:19:42.198473Z",
+      "next_action": "Deep-read exact official baseline/cache and update compatibility sections, then draft narrow source-backed contract with unresolved runtime gate",
       "blockers": []
     }
   ]
