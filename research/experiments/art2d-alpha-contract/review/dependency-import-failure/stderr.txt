@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/art2d-alpha-contract/dependency-import-failure/run.py", line 8, in <module>
+    import PIL
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/art2d-alpha-contract/dependency-import-failure/PIL.py", line 1, in <module>
+    raise ImportError('synthetic failure before numeric operations')
+ImportError: synthetic failure before numeric operations

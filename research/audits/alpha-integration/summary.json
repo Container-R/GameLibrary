@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-alpha/scripts/evidence/verify.py",
+        "gamelibrary-publish-alpha"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "gamelibrary-publish-alpha/scripts/evidence/verify.py",
+        "gamelibrary-publish-alpha"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "archive_consistency_checks": 134,
+  "normal_optimized_identical": true,
+  "raw_summary_equalities": 2,
+  "author_and_reviewer_literal_output_checks": 11,
+  "actual_current_recorded_runtime_file_hashes_match": true,
+  "new_conversion_or_composite_calls": 0,
+  "new_negative_invocations": 0,
+  "scope": "Integration of archived actual observations; not new color behavior or negative test executions"
+}

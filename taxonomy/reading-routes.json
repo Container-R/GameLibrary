@@ -58,6 +58,11 @@
           "document_id": "SOL-MODEL-001",
           "question": "字节可读是否意味着几何正确？",
           "rationale": "区分属性跨度、步长解释与索引恢复的内容意图。"
+        },
+        {
+          "document_id": "SOL-ART2D-001",
+          "question": "相同四通道字节为什么仍可能在消费者处重复乘 alpha？",
+          "rationale": "实际有限 CPU 反例区分模式转换与字节重标，不冒称渲染器或真实暗边修复。"
         }
       ],
       "subject_profile_id": "ROLE-TA-001"

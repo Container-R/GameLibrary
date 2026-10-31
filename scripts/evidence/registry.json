@@ -1142,6 +1142,75 @@
       "field": [
         "artifacts"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "alpha/author/source",
+      "document": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/art2d-alpha-contract/run.py",
+        "contract.md": "research/experiments/art2d-alpha-contract/contract.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "alpha/review/source",
+      "document": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/art2d-alpha-contract/run.py",
+        "contract.md": "research/experiments/art2d-alpha-contract/contract.md"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "alpha/compare/source_sha256",
+      "left": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "right": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "alpha/compare/python",
+      "left": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "right": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "alpha/compare/pillow",
+      "left": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "right": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "pillow"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "alpha/compare/runtime_files",
+      "left": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "right": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "runtime_files"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "alpha/compare/operations",
+      "left": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "right": "research/experiments/art2d-alpha-contract/review/fixture/results/summary.json",
+      "field": [
+        "operations"
+      ]
     }
   ]
 }

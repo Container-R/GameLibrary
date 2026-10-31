@@ -31,6 +31,8 @@
   - 关联理由：逐mip核算压缩payload，分开文件、上传、分配和驻留证据。
 - 字节可读是否意味着几何正确？ → [有效字节不等于正确顶点：glTF 交错属性的偏移、步长与几何验收](solutions/modeling/gltf-interleaved-attribute-contract.md) — `SOL-MODEL-001` · `source-backed` · `MODEL`
   - 关联理由：区分属性跨度、步长解释与索引恢复的内容意图。
+- 相同四通道字节为什么仍可能在消费者处重复乘 alpha？ → [精灵透明度交接：四通道字节不说明 RGB 是否已经乘过 alpha](solutions/art2d/alpha-association-contract.md) — `SOL-ART2D-001` · `source-backed` · `ART2D`
+  - 关联理由：实际有限 CPU 反例区分模式转换与字节重标，不冒称渲染器或真实暗边修复。
 
 ## 从交互音频出发
 路线 ID：`role-interactive-audio`

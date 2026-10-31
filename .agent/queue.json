@@ -1013,7 +1013,7 @@
       "id": "TASK-2026-0043",
       "question": "Sprite alpha association handoff in actual stored-byte CPU compositing",
       "discipline": "ART2D",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 87,
       "priority_rationale": "Primary source gate exposes practical representation or production handoff gap, distinct from existing payload and save compatibility research",
       "expected_artifact": "solutions/art2d/alpha-association-contract.md",
@@ -1025,8 +1025,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:23:05.063665Z",
-      "next_action": "Complete bounded actual alpha fixture",
+      "last_progress_at": "2026-10-31T19:28:31.261632Z",
+      "next_action": "Publish independently repeated alpha-association numeric evidence with stored-byte color-domain limits",
       "blockers": []
     },
     {

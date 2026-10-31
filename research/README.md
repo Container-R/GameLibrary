@@ -83,3 +83,5 @@ python3 scripts/evidence/test_verify.py
 [音乐主体 PCM 帧区间](../solutions/music/pcm-loop-frame-contract.md)通过原创 marker WAV 的实际离线 FFmpeg 提取，分离半开区间与 inclusive 循环端点；[实验与无损归档](experiments/music-loop-frame-contract/README.md)、[独立复验](experiments/music-loop-frame-contract/review/REVIEW.md)、[集成归档检查](audits/music-frame-integration/README.md)。不包含设备播放或 FMOD 运行。
 
 [日本 Cygames 叙事制作交接案例](../case-studies/narrative/cygames-scenario-voice-handoff.md)使用实际可读的日语第一方博客，区分历史工具采用过程和原创未执行验收矩阵；[独立来源审查](audits/cygames-scenario-handoff/REVIEW.md)。未假称读完幻灯片或测得制作效率。
+
+[精灵 alpha 表示交接](../solutions/art2d/alpha-association-contract.md)通过实际 CPU 数值 buffer 转换与合成，检验 associated 字节被当成 straight 后的重复衰减；[原始证据](experiments/art2d-alpha-contract/README.md)、[独立复验](experiments/art2d-alpha-contract/review/REVIEW.md)。未做图片作品、PNG、引擎、颜色管理或可见暗边验证。

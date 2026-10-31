@@ -1,0 +1,17 @@
+{
+  "run_id": "20261031T192800Z-alpha-association",
+  "started_at": "2026-10-31T19:28:31.261632Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0043",
+  "commit_sha": null,
+  "outcome": "independently reviewed; publication pending",
+  "validation": {
+    "author_conversions": 5,
+    "author_composites": 6,
+    "reviewer_conversions": 5,
+    "reviewer_composites": 6,
+    "independent_literal_operation_checks": 11,
+    "reviewer_synthetic_startup_failures": 2
+  },
+  "scope": "Finite original raw numeric buffers; stored-byte arithmetic, no color-managed, PNG, GPU, engine or perceptual validation"
+}
