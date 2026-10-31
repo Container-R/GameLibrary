@@ -1057,7 +1057,7 @@
       "id": "TASK-2026-0045",
       "question": "Same-tick combat eligibility and commit policy beyond fixed-timestep repeatability",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Deepen existing high-value combat timing article: scalar per-tick tests do not express actors invalidating one another during iteration",
       "expected_artifact": "solutions/programming/fixed-step-simulation-boundary.md and finite policy/actual callback evidence",
@@ -1066,11 +1066,33 @@
         "Exact finite ordering counterexample and initially-dead eligibility boundary",
         "Independent literal outcome oracle; no engine/production guarantee"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:45:28.124428Z",
-      "next_action": "Publish independently checked Python policy and four-schedule actual Godot integration as one existing-article depth unit",
+      "last_progress_at": "2026-10-31T19:49:28.999222Z",
+      "next_action": "Keep model and actual per-node scheduling evidence distinct; policy is original and bounded",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:49:28.999222Z",
+      "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0"
+    },
+    {
+      "id": "TASK-2026-0046",
+      "question": "Threaded candidate resource root isolation versus mutable external dependency sharing",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Deepen existing asset boundary with actual object-graph ownership evidence; new root identity does not necessarily imply isolated mutable dependencies",
+      "expected_artifact": "Existing asset-import/ownership solution plus actual ResourceLoader evidence",
+      "acceptance": [
+        "Freeze original external Gradient graph and root/dependency/color oracle",
+        "Two fresh engine modes IGNORE and IGNORE_DEEP, no concurrent same-path request confound",
+        "Independent raw identity/mutation evidence, no GPU, race, performance or official-build authenticity claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:49:28.999222Z",
+      "next_action": "Execute two bounded actual threaded-load cases and independently review object aliasing and mutation effect",
       "blockers": []
     }
   ]

@@ -1,10 +1,10 @@
 {
   "run_id": "20261031T193400Z-combat-policy-depth",
   "started_at": "2026-10-31T19:34:00Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T19:49:28.999222Z",
   "task_id": "TASK-2026-0045",
-  "commit_sha": null,
-  "outcome": "independently reviewed model and engine evidence; publication pending",
+  "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0",
+  "outcome": "published and read back",
   "validation": {
     "unique_model_inputs": 12,
     "model_next_tick_checks_per_run": 4,
@@ -18,7 +18,12 @@
     "integrator_engine_runs": 0,
     "archive_consistency_checks": 158,
     "normal_optimized_archive_equal": true,
-    "new_indexed_articles": 0
+    "new_indexed_articles": 0,
+    "selected_blob_hashes_verified": 156,
+    "outside_tree_changes": 0,
+    "local_markdown_links": 327,
+    "missing_links": 0,
+    "indexed_source_backed_articles": 25
   },
   "corrections": [
     "Initial tree order echoed declaration; final source observes get_children and independently reruns unchanged oracle",
