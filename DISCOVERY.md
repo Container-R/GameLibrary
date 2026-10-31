@@ -112,3 +112,17 @@
 - 缺陷证据何时足以支撑发布决定？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：技术解释与风险签收分开，不把单项通过当整体验收。
 
+## 从构建工程出发：候选身份、测试证据与晋级责任
+路线 ID：`role-build-engineer`
+
+岗位起点：[构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `ROLE-ENGINE-001` · `source-backed` · `ENGINE`
+
+- 源和导入配置相同，就能保证候选产物相同吗？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：区分资产意图、导入阶段与运行时对象；已有实验不是完整包可重复构建证明。
+- 测试结论究竟属于哪个候选与配置？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：建立可定位的测试对象和未测范围，不把流水线成功当作QA或发布批准。
+- 包已通过检查，目标环境与恢复条件也满足了吗？ → [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `CASE-LIVE-001` · `source-backed` · `LIVE`
+  - 关联理由：运行时配置准入和数据回退仍是独立责任，不从候选构建成功推断环境兼容。
+- 生成资产回到仓库后，谁负责新的输入与接收条件？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：保留制作/导入与构建的接口边界，不把全部内容工具归到构建岗位。
+

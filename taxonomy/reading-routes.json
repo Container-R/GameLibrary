@@ -225,6 +225,34 @@
           "rationale": "技术解释与风险签收分开，不把单项通过当整体验收。"
         }
       ]
+    },
+    {
+      "id": "role-build-engineer",
+      "title": "从构建工程出发：候选身份、测试证据与晋级责任",
+      "kind": "role",
+      "subject_profile_id": "ROLE-ENGINE-001",
+      "entries": [
+        {
+          "document_id": "SOL-ENGINE-001",
+          "question": "源和导入配置相同，就能保证候选产物相同吗？",
+          "rationale": "区分资产意图、导入阶段与运行时对象；已有实验不是完整包可重复构建证明。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "测试结论究竟属于哪个候选与配置？",
+          "rationale": "建立可定位的测试对象和未测范围，不把流水线成功当作QA或发布批准。"
+        },
+        {
+          "document_id": "CASE-LIVE-001",
+          "question": "包已通过检查，目标环境与恢复条件也满足了吗？",
+          "rationale": "运行时配置准入和数据回退仍是独立责任，不从候选构建成功推断环境兼容。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "生成资产回到仓库后，谁负责新的输入与接收条件？",
+          "rationale": "保留制作/导入与构建的接口边界，不把全部内容工具归到构建岗位。"
+        }
+      ]
     }
   ]
 }

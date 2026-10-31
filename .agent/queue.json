@@ -1522,11 +1522,15 @@
       "id": "TASK-2026-0062",
       "question": "How should build/deployment engineering prove that the QA-accepted package and configuration are the candidate promoted to release?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Important missing occupation and cross-team artifact promotion boundary; pipeline completion is not QA approval or deployment authorization",
       "expected_artifact": "Source-gated build/deployment role profile and bounded original artifact-promotion handoff proposal",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/engine/build-engineer.md",
+        "research/source-notes/build-engineer-role.md",
+        "research/audits/build-engineering-role"
+      ],
       "acceptance": [
         "Read exact current role coverage and primary employer/team sources across Japanese and English evidence",
         "Separate build/test/package distribution from deployment and live-service ownership; no universal title equivalence",
@@ -1537,8 +1541,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:13:53.402116Z",
-      "next_action": "Review primary-source discovery gate and current occupation coverage before drafting build/deployment responsibility handoff",
+      "last_progress_at": "2026-10-31T22:18:06.407290Z",
+      "next_action": "Publish independently reviewed build-engineering responsibility profile and bounded candidate handoff; keep matrix incomplete",
       "blockers": []
     }
   ]

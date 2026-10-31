@@ -1,0 +1,30 @@
+{
+  "run_id": "20261031T221354Z-build-engineer-role",
+  "task_id": "TASK-2026-0062",
+  "started_at": "2026-10-31T22:13:54Z",
+  "local_review_completed_at": "2026-10-31T22:18:06.407290Z",
+  "outcome": "reviewed locally; publication pending",
+  "validation": {
+    "primary_employer_sources": 3,
+    "dated_public_production_case_sources": 1,
+    "versioned_SLSA_reference_pages": 2,
+    "original_delivery_stages": 6,
+    "original_unexecuted_acceptance_rows": 5,
+    "new_runtime_or_model_tests": 0,
+    "archive_checks": 340,
+    "archive_modes": [
+      "normal",
+      "-O"
+    ],
+    "unchanged_existing_experiment_files": 1719,
+    "indexed_source_backed_articles": 29,
+    "role_profiles": 7
+  },
+  "limits": [
+    "Employer job duties do not prove internal operational success or universal authority",
+    "Cygames thumbnail CI case does not establish shipped package content or historical rebuild defect",
+    "SLSA concepts do not establish employer/library adoption, signature verification, compliance or QA approval",
+    "Original worksheet not executed; full occupation matrix TASK-2026-0008 remains incomplete"
+  ],
+  "maintenance": "Correct stale current103/120 index wording to historical stages and current340 explicit registry checks; distinguish separate fixed-step synthetic-input and kinematic-contact fixtures without upgrading early evidence"
+}

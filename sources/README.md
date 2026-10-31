@@ -6,7 +6,7 @@
 
 | 研究问题 | 来源记录入口 | 证据边界 |
 |---|---|---|
-| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；另有Godot4.6.3真实无头回调证据，范围不外推物理/输入 |
+| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；分开的本地Godot回调、合成输入与有限kinematic接触夹具各有独立范围，不能互相迁移证据或外推真实设备/完整物理政策 |
 | 转身脚滑与运动责任 | [知识条目来源S1–S6](../solutions/animation/turn-in-place-foot-sliding.md) | Unity6000.0、UE5.6；平面接触模型不验证IK实现 |
 | 玩法程序工作接口 | [岗位档案](../roles/programming/gameplay-programmer.md) | 行业组织、雇主和教学项目的公开样本，不推定全行业组织结构 |
 | 技术美术资产交接 | [岗位档案来源S1–S5](../roles/technical-art/technical-artist.md) | ScreenSkills、Ubisoft历史/岗位样本、UE5.6 FBX；不外推所有导入器 |
@@ -93,3 +93,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [图形程序职责与案例来源](../research/source-notes/graphics-programmer-role.md)区分加拿大/日本/波兰雇主责任样本与 Wube 2018 树/阴影制作进展；职责材料不等于功能效果测试，原创接收工作表尚未试用。
 
 [碰撞回调变更边界](../research/source-notes/physics-callback-mutation-boundary.md)把官方deferred规范、固定比较源码、本机有限事件轨迹与原创业务交接建议分层；三个旧失败不因后续kinematic对照通过而获得重新解释。
+
+[构建工程职责与候选交接来源](../research/source-notes/build-engineer-role.md)区分日本共享引擎、美国高级发布架构、Cygames历史生成任务与SLSA概念参照；原创候选工作表未执行，不建立厂商实践或供应链认证。
+
+[未来运行器五位置合同](../research/source-notes/runner-environment-contract.md)使用Python版本化API和XDG0.8规范作范围参照；有限合成子进程不等于引擎或完整隔离验证。

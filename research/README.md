@@ -48,9 +48,9 @@ python3 scripts/evidence/verify.py .
 python3 scripts/evidence/test_verify.py
 ```
 
-[工具说明与显式注册表](../scripts/evidence/README.md)覆盖九个运行夹具（六个 Godot、一个 ICU、两个 SQLite）阶段的103项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
+[工具说明与显式注册表](../scripts/evidence/README.md)在本次快照登记340项一致性检查；九夹具103项是历史阶段，后续范围以注册表逐项绑定为准。[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史结果只有显式绑定对应历史源码才参与检查；isolation初始/最终阶段分别登记，不与最新源码混比。注册表变更需审查。
 
-9项工具单元测试与游戏模型的86项测试是不同范围，103项文件/记录检查也不是103项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
+原工具审查记录的9项单元测试与当时86项游戏模型测试是不同范围；当前340项文件/记录检查也不是340项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
 
 精确字节哈希也会发现换行变化。仓库`.gitattributes`使用`* -text`禁止Git自动换行转换，而不禁止普通文本diff；这是[Git官方属性语义](https://git-scm.com/docs/gitattributes)，不是字符编码或运行时兼容保证。保留原始字节比替换换行后继续沿用旧哈希更重要。[本地策略检查](audits/evidence-integrity/check_git_byte_policy.py)在临时Git仓库设`core.autocrlf=true`后验证检出字节与文本diff；它是Linux/Git2.52.0的有限测试，不是Windows执行测试，也不修改用户全局Git配置。该检查需Git，和只需Python标准库的校验器分开。
 
@@ -74,7 +74,7 @@ python3 scripts/evidence/test_verify.py
 
 [交错网格属性](experiments/mesh-attribute-contract/README.md)区分合法字节的错误解释、非法view跨度与独立几何意图。十一夹具阶段115项档案一致性检查；不替代DCC/引擎/GPU验收。
 
-[合成尝试分母](experiments/telemetry-attempt-contract/README.md)保留两份as-of与身份/冲突/未知状态，不能当真实玩家研究。当前十二夹具120项档案检查，不是120次行为测试。
+[合成尝试分母](experiments/telemetry-attempt-contract/README.md)保留两份as-of与身份/冲突/未知状态，不能当真实玩家研究。当时十二夹具120项档案检查，不是120次行为测试。
 
 [ink内容恢复深审](source-notes/ink-save-content-compatibility.md)是固定源码调用链，不是新运行时实验或新增已验证文章。[19:00离线回归](audits/release-regression-1900/README.md)重跑86个原有模型方法及隔离工具测试；120档案检查正常/-O一致，无引擎/数据库/解码器重跑。
 
@@ -99,3 +99,5 @@ python3 scripts/evidence/test_verify.py
 [物理查询回调中的形状状态](experiments/godot-physics-callback-v2/README.md)区分场景属性与有限物理参与证据；[原始失败夹具](experiments/godot-physics-callback-v1/README.md)保持失败身份。重新冻结的kinematic配置、原始错误、解析器缺口和修正分别归档，不承诺下一tick或完整伤害政策。
 
 - [Future runner five-location environment contract](source-notes/runner-environment-contract.md) — additive helper, source-stage-bound synthetic evidence and preserved historical fixtures; no engine rerun or automatic migration.
+
+[构建工程候选交接](../roles/engine/build-engineer.md)将源、产物、测试对象和晋级权限分开；六阶段交付与五项接收工作表均是未执行的原创建议。
