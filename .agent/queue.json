@@ -1033,7 +1033,7 @@
       "id": "TASK-2026-0044",
       "question": "Japanese first-party scenario and voice production handoff case",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 87,
       "priority_rationale": "Primary source gate exposes practical representation or production handoff gap, distinct from existing payload and save compatibility research",
       "expected_artifact": "case-studies/narrative/cygames-scenario-voice-handoff.md",
@@ -1042,12 +1042,14 @@
         "Bounded independent review and reproducible evidence where executed",
         "No inferred production implementation or visual/audio quality guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:25:27.839039Z",
-      "next_action": "Publish independently source-reviewed Japanese production case; no inferred schema or executed walkthrough",
-      "blockers": []
+      "last_progress_at": "2026-10-31T19:26:44.936173Z",
+      "next_action": "Keep illustrative Excel compatibility and original acceptance proposal distinct from studio implementation",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:26:44.936173Z",
+      "commit_sha": "f36dbd5004973d41f280e3d18d853491d5db3117"
     }
   ]
 }

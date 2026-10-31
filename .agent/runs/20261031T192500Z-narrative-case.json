@@ -1,17 +1,23 @@
 {
   "run_id": "20261031T192500Z-narrative-case",
   "started_at": "2026-10-31T19:25:27.839039Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T19:26:44.936173Z",
   "task_id": "TASK-2026-0044",
-  "commit_sha": null,
-  "outcome": "independently source-reviewed; publication pending",
+  "commit_sha": "f36dbd5004973d41f280e3d18d853491d5db3117",
+  "outcome": "published and read back",
   "validation": {
     "primary_language": "ja",
     "independently_read_complete_blog": true,
     "internal_tool_executions": 0,
     "walkthrough_executions": 0,
     "slide_or_video_completion_claim": false,
-    "excel_example_not_verified_implementation": true
+    "excel_example_not_verified_implementation": true,
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "local_markdown_links": 309,
+    "missing_links": 0,
+    "indexed_source_backed_articles": 24,
+    "new_runtime_tests": 0
   },
   "scope": "Historical first-party production adoption and original unexecuted handoff acceptance analysis"
 }
