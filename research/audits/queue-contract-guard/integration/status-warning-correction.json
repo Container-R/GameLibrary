@@ -1,0 +1,7 @@
+{
+  "initial_library_validator_errors": [],
+  "initial_library_validator_warnings": [
+    ".agent/queue.json: unexpected task status reviewed"
+  ],
+  "correction": "Changed transient TASK-0049 status to existing supported reviewing before publication. Queue guard intentionally does not constrain status enum; library validator remains complementary."
+}

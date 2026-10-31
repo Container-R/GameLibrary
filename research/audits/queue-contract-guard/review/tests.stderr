@@ -1,0 +1,20 @@
+test_control_normalization_and_directory (__main__.Added.test_control_normalization_and_directory) ... ok
+test_core_types (__main__.Added.test_core_types) ... ok
+test_dangling_escape_and_missing (__main__.Added.test_dangling_escape_and_missing) ... ok
+test_json_duplicate_constants (__main__.Added.test_json_duplicate_constants) ... ok
+test_root_symlink_and_inside_link (__main__.Added.test_root_symlink_and_inside_link) ... ok
+test_taxonomy_duplicate_or_invalid (__main__.Added.test_taxonomy_duplicate_or_invalid) ... ok
+test_bad_shapes (test_queue.QueueTests.test_bad_shapes) ... ok
+test_duplicate_task (test_queue.QueueTests.test_duplicate_task) ... ok
+test_existing_published_path (test_queue.QueueTests.test_existing_published_path) ... ok
+test_legacy_optional_and_unknown_status (test_queue.QueueTests.test_legacy_optional_and_unknown_status) ... ok
+test_path_spellings (test_queue.QueueTests.test_path_spellings) ... ok
+test_planned_missing_allowed (test_queue.QueueTests.test_planned_missing_allowed) ... ok
+test_published_missing (test_queue.QueueTests.test_published_missing) ... ok
+test_symlink_escape (test_queue.QueueTests.test_symlink_escape) ... ok
+test_unknown_discipline (test_queue.QueueTests.test_unknown_discipline) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.005s
+
+OK

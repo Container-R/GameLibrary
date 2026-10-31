@@ -1,0 +1,9 @@
+{
+  "scope": "Proposal only, no queue migration applied; keep existing expected_artifact fields",
+  "tasks": [
+    {"id": "TASK-2026-0045", "artifact_paths": ["solutions/programming/fixed-step-simulation-boundary.md", "research/experiments/simultaneous-combat-policy", "research/experiments/godot-combat-policy"]},
+    {"id": "TASK-2026-0046", "artifact_paths": ["solutions/engine/asset-import-intent-contract.md", "research/experiments/godot-resource-candidate"]},
+    {"id": "TASK-2026-0047", "artifact_paths": ["solutions/engine/asset-import-intent-contract.md", "research/experiments/godot-resource-broker"]},
+    {"id": "TASK-2026-0048", "artifact_paths": [], "note": "Destination not frozen in audited queue; leave absent or empty until integrator chooses exact paths. Do not invent a published artifact."}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "run_id": "20261031T201200Z-queue-guard",
+  "started_at": "2026-10-31T20:12:00Z",
+  "task_id": "TASK-2026-0049",
+  "outcome": "reviewed locally; publication pending",
+  "commit_sha": null,
+  "validation": {
+    "status": "PASS",
+    "test_methods": 15,
+    "author_methods": 9,
+    "reviewer_added_methods": 6,
+    "normal_optimized_tests_pass": true,
+    "tasks_checked": 49,
+    "declared_artifact_paths_checked": 12,
+    "migrated_task_ids": [
+      "TASK-2026-0045",
+      "TASK-2026-0046",
+      "TASK-2026-0047",
+      "TASK-2026-0048",
+      "TASK-2026-0049"
+    ],
+    "runtime_code_sha256": "935abf2b7a469b7188f0c036c15e41218f717e479d6b6c6bf3be6031218009dc",
+    "new_engine_or_compiler_processes": 0,
+    "new_indexed_articles": 0,
+    "scope": "Optional queue metadata guard; no inferred artifact content or unannotated legacy task coverage",
+    "archive_consistency_checks": 209,
+    "archive_normal_optimized_identical": true,
+    "indexed_source_backed_articles": 26,
+    "local_markdown_links": 346,
+    "missing_links": 0
+  }
+}

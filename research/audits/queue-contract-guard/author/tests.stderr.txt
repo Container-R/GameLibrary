@@ -1,0 +1,14 @@
+test_bad_shapes (__main__.QueueTests.test_bad_shapes) ... ok
+test_duplicate_task (__main__.QueueTests.test_duplicate_task) ... ok
+test_existing_published_path (__main__.QueueTests.test_existing_published_path) ... ok
+test_legacy_optional_and_unknown_status (__main__.QueueTests.test_legacy_optional_and_unknown_status) ... ok
+test_path_spellings (__main__.QueueTests.test_path_spellings) ... ok
+test_planned_missing_allowed (__main__.QueueTests.test_planned_missing_allowed) ... ok
+test_published_missing (__main__.QueueTests.test_published_missing) ... ok
+test_symlink_escape (__main__.QueueTests.test_symlink_escape) ... ok
+test_unknown_discipline (__main__.QueueTests.test_unknown_discipline) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK

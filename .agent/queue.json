@@ -1073,7 +1073,12 @@
       "next_action": "Keep model and actual per-node scheduling evidence distinct; policy is original and bounded",
       "blockers": [],
       "completed_at": "2026-10-31T19:49:28.999222Z",
-      "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0"
+      "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0",
+      "artifact_paths": [
+        "solutions/programming/fixed-step-simulation-boundary.md",
+        "research/experiments/simultaneous-combat-policy",
+        "research/experiments/godot-combat-policy"
+      ]
     },
     {
       "id": "TASK-2026-0046",
@@ -1095,7 +1100,11 @@
       "next_action": "Keep finite native dependency isolation separate from general cache or concurrent loader guarantees",
       "blockers": [],
       "completed_at": "2026-10-31T19:58:04.212817Z",
-      "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e"
+      "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e",
+      "artifact_paths": [
+        "solutions/engine/asset-import-intent-contract.md",
+        "research/experiments/godot-resource-candidate"
+      ]
     },
     {
       "id": "TASK-2026-0047",
@@ -1117,7 +1126,11 @@
       "next_action": "Keep finite same-path registration behavior distinct from general concurrency, cancellation and implemented application broker guarantees",
       "blockers": [],
       "completed_at": "2026-10-31T20:07:22.886362Z",
-      "commit_sha": "1b87df988bb4eca396247ff2659bea28065ab512"
+      "commit_sha": "1b87df988bb4eca396247ff2659bea28065ab512",
+      "artifact_paths": [
+        "solutions/engine/asset-import-intent-contract.md",
+        "research/experiments/godot-resource-broker"
+      ]
     },
     {
       "id": "TASK-2026-0048",
@@ -1139,13 +1152,17 @@
       "next_action": "Maintain compiler/CPU/GPU evidence distinction and revalidate changed shader interface variants",
       "blockers": [],
       "completed_at": "2026-10-31T20:14:09.268058Z",
-      "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be"
+      "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
+      "artifact_paths": [
+        "solutions/rendering/matrix-major-interface-contract.md",
+        "research/experiments/shader-matrix-layout"
+      ]
     },
     {
       "id": "TASK-2026-0049",
       "question": "Prevent invalid queue discipline IDs and unsafe or unresolved recovery artifact paths without breaking legacy descriptions",
       "discipline": "QA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Actual queue taxonomy typo escaped existing article validation; recovery requires machine-checkable state rather than only prose",
       "expected_artifact": "scripts/queue/validate_queue.py with tests and optional artifact_paths migration",
@@ -1157,9 +1174,14 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:40:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:14:09.268058Z",
-      "next_action": "Review isolated guard implementation and independent tests before migration",
-      "blockers": []
+      "last_progress_at": "2026-10-31T20:16:27.089793Z",
+      "next_action": "Publish guard with15normal/optimized tests and12explicit artifact locations",
+      "blockers": [],
+      "artifact_paths": [
+        "scripts/queue/validate_queue.py",
+        "scripts/queue/test_queue.py",
+        "scripts/queue/adversarial.py"
+      ]
     }
   ]
 }
