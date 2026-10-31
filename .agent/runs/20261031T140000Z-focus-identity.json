@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T140000Z-focus-identity",
   "started_at": "2026-10-31T13:54:40Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T14:02:10.919486Z",
   "task_id": [
     "TASK-2026-0019"
   ],
@@ -56,7 +56,7 @@
     "research/experiments/godot-focus-boundary/review/fixture/results/gate.log",
     "research/experiments/godot-focus-boundary/review/fixture/results/gate.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "b51ca500c376f40a26ba64953e53cc0dedb41e66",
   "validation": {
     "actual_engine": "gate+2strategy processes, author and independent repeats;6total not6scenarios",
     "source_fingerprints": "4source files and binary hash match author/reviewer",
@@ -69,5 +69,5 @@
     "未验证Unity、视觉可访问性、原生Window模态、输入导航、同实例业务重绑定或独立版本守卫"
   ],
   "next_action": "评估锁定ink原始来源的叙事状态契约是否有独立价值",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; four remote blob hashes matched local artifacts"
 }

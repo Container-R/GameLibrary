@@ -31,3 +31,7 @@ python3 scripts/run_model_tests.py
 - [真实文件路径替换反例](experiments/filesystem-save-publication/README.md)：tmpfs上完整旧版本仍可覆盖新版本；对照重检查不是通用修复或Steam验证。
 
 - [Godot实际焦点身份](experiments/godot-focus-boundary/README.md)：同路径重建导致恢复到不同业务对象；查询实际Viewport焦点与信号，不验证视觉或Unity。
+
+## 固定版本来源审计（未执行运行时）
+
+[ink v1.2.1宿主边界](source-notes/ink-v1.2.1-host-boundary.md)：General与便利重载的默认纯度不同，状态格式不等于内容/宿主检查点身份。没有C#运行证据，不计作新增成熟叙事文章。

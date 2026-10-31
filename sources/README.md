@@ -31,3 +31,5 @@
 Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](../research/experiments/godot-pause-input/README.md)；Python3.12路径替换契约及实际tmpfs反例见[文件系统档案](../research/experiments/filesystem-save-publication/README.md)。
 
 焦点条目的Godot4.6官方API及4.6.3实际无头证据见[实例身份档案](../research/experiments/godot-focus-boundary/README.md)，不替代Unity/UI可访问性验收。
+
+[ink固定提交取证清单](../research/source-notes/ink-v1.2.1-receipt.json)与[原创源码审计](../research/source-notes/ink-v1.2.1-host-boundary.md)：仅代码阅读，不声称运行时验证。

@@ -449,7 +449,7 @@
       "id": "TASK-2026-0019",
       "question": "真实Godot Control焦点API能否验证延迟恢复请求的模态作用域边界？",
       "discipline": "UX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "先评估既有焦点策略的窄真实引擎证据增量，不冒充Unity或可见可访问性验证",
       "expected_artifact": "research/experiments/godot-focus-boundary/README.md",
@@ -461,21 +461,23 @@
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/classes/class_control.html"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:00:33.013176Z",
-      "next_action": "Godot实际焦点身份夹具及独立复核通过，待发布",
-      "blockers": []
+      "next_action": "保持身份单一守卫边界，其他模态/视觉前提未测",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:02:10.919486Z",
+      "commit_sha": "b51ca500c376f40a26ba64953e53cc0dedb41e66"
     },
     {
       "id": "TASK-2026-0020",
       "question": "锁定ink版本后核实故事状态与外部奖励副作用的真实API边界，判断独立叙事专题价值",
       "discipline": "NARR",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 85,
       "priority_rationale": "先补原始版本证据而非扩张通用存档文章",
-      "expected_artifact": "research/source-notes/ink-state-contract.md",
+      "expected_artifact": "research/source-notes/ink-v1.2.1-host-boundary.md",
       "acceptance": [
         "确认真实标签完整commit及文件blob",
         "区分默认lookahead行为与事务保证",
@@ -487,8 +489,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:00:33.013176Z",
-      "next_action": "仅版本锁定来源深化与范围评估，暂不发布新知识文章",
+      "last_progress_at": "2026-10-31T14:04:29.220255Z",
+      "next_action": "固定源码与独立复核完成，发布来源审计而非运行时知识升级",
       "blockers": []
     }
   ]

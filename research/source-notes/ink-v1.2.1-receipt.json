@@ -1,0 +1,37 @@
+{
+  "accessed_at": "2026-10-31",
+  "method": "GitHub plugin fetch_commit(v1.2.1), fetch full-commit files and directory blob metadata",
+  "repo": "inkle/ink",
+  "tag": "v1.2.1",
+  "commit": "35c63e52f1d36060930dc7ed3cfba38ea224b528",
+  "commit_created_at": "2026-05-05T11:19:29Z",
+  "license": "MIT, copyright 2025 inkle Ltd.",
+  "files": [
+    {
+      "path": "Documentation/RunningYourInk.md",
+      "blob_sha": "eb9a20368c97a9c42293dc04ad400dbe60c34793",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/Documentation/RunningYourInk.md"
+    },
+    {
+      "path": "ink-engine-runtime/Choice.cs",
+      "blob_sha": "1610f3f23414baa1a0ad2b3afb369ad6eb80cae7",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Choice.cs"
+    },
+    {
+      "path": "ink-engine-runtime/Story.cs",
+      "blob_sha": "45292b9b4e0fc4fc2ea4e496f4c4a19637e8ec0f",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs"
+    },
+    {
+      "path": "ink-engine-runtime/StoryState.cs",
+      "blob_sha": "b505255ca0842d8f863684cbd6c3d9ba2fd79485",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/StoryState.cs"
+    },
+    {
+      "path": "LICENSE.txt",
+      "blob_sha": "25f347be37007f41e1003e4a0862b8ab83615c30",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/LICENSE.txt"
+    }
+  ],
+  "runtime_executed": false
+}
