@@ -216,13 +216,14 @@
       "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T18:49:57.824989Z",
-      "next_action": "Continue evidence-driven coverage audit after current DATA unit; 19-article audit archived, not all taxonomy roles completed",
+      "last_progress_at": "2026-10-31T20:18:21Z",
+      "next_action": "Continue evidence-driven role/work-area research;25-article classification audit and queue-ID guard published, current27articles do not complete all role coverage",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
         "taxonomy/README.md",
-        "scripts/test_taxonomy.py"
+        "scripts/test_taxonomy.py",
+        "research/audits/queue-contract-guard/coverage-gate.md"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成"
     },
@@ -1241,7 +1242,7 @@
       "id": "TASK-2026-0052",
       "question": "Derived cache validity after mutable input expansion: uninterrupted versus load/recompute continuation",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "First-party production incident supplies concrete hidden-state mechanism beyond scalar prediction and source-only replay-time counterexample",
       "expected_artifact": "Focused historical Factorio cache/load-equivalence case and original acceptance worksheet",
@@ -1255,11 +1256,39 @@
         "Separate diagnostic feature ablation from actual product remedy",
         "Original mutation/cache/read/load worksheet labeled unimplemented; no Factorio runtime or current release claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T21:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:35:17.377303Z",
-      "next_action": "Publish source-only historical case and verified source/role-navigation links",
+      "last_progress_at": "2026-10-31T20:38:45.712878Z",
+      "next_action": "Apply original legal-checkpoint and cache-dependency acceptance questions to actual projects; no shipped-fix or runtime claim",
+      "blockers": [],
+      "completed_at": "2026-10-31T20:38:45.712878Z",
+      "commit_sha": "d86746fab455b45d96cac4cad7a9a439d24b741c"
+    },
+    {
+      "id": "TASK-2026-0053",
+      "question": "Prevent stale historical PASS consumption by isolated registered legacy-runner invocation and terminal receipt validation",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "Known six-runner early-O rejection leaves old summaries; additive caller contract can close operational gap without rewriting scientific history",
+      "expected_artifact": "Additive source-pinned isolated invocation harness, registry, tests and fresh audit receipts",
+      "artifact_paths": [
+        "scripts/evidence/fresh/harness.py",
+        "scripts/evidence/fresh/registry.json",
+        "research/audits/fresh-invocation-harness"
+      ],
+      "acceptance": [
+        "Do not modify6legacyrunner sources or historical manifests/results",
+        "Unique externalworkcopy and expectedID/terminalexit/hash/containedpath acceptance",
+        "Sixactual early-O rejections plus one actual focuspositive; accurately distinguish3behaviorcases and2source-auditedhelpercalls",
+        "Synthetic stale/missing/mismatched/timeout negatives and independentreview; no allOSfailure or sixnormal-run guarantee"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T21:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:38:45.712878Z",
+      "next_action": "Implement frozen protocol, verify bounded outcomes and independently audit consumer/process cleanup semantics",
       "blockers": []
     }
   ]

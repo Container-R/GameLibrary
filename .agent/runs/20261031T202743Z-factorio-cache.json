@@ -2,8 +2,8 @@
   "run_id": "20261031T202743Z-factorio-cache",
   "started_at": "2026-10-31T20:27:43Z",
   "task_id": "TASK-2026-0052",
-  "outcome": "reviewed locally; publication pending",
-  "commit_sha": null,
+  "outcome": "published and read back",
+  "commit_sha": "d86746fab455b45d96cac4cad7a9a439d24b741c",
   "validation": {
     "status": "PASS",
     "new_runtime_executions": 0,
@@ -21,6 +21,11 @@
       "https://www.factorio.com/blog/post/fff-415"
     ],
     "scope": "First-party historical account and original unexecuted acceptance worksheet; no Factorio installation, private code, reproduced desync or current fix-shipping claim",
-    "copyright": "Compact fact recap and metadata only; discovery gate kept local, no source bulk or images"
-  }
+    "copyright": "Compact fact recap and metadata only; discovery gate kept local, no source bulk or images",
+    "selected_blob_hashes_verified": 15,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 53,
+    "receipt_declared_paths_checked": 22
+  },
+  "ended_at": "2026-10-31T20:38:45.712878Z"
 }
