@@ -17,6 +17,9 @@ sources:
   - https://gafferongames.com/post/deterministic_lockstep/
   - https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Settings.html
   - https://docs.unity.com/en-us/engine/6000.0/manual/scripting/managing-time-and-frame-rate/time-handling-variations
+  - https://docs.godotengine.org/en/4.6/tutorials/scripting/pausing_games.html
+  - https://docs.godotengine.org/en/4.6/classes/class_input.html
+  - https://docs.godotengine.org/en/4.6/classes/class_inputeventaction.html
 ---
 
 # 用固定 Tick 划清战斗模拟与引擎表现边界
@@ -106,3 +109,13 @@ record(backlog=A, simulatedSteps=steps)
 此结果将“单调度者、规范化输入、只读表现”的证据推进到真实Godot回调，但没有运行设备输入、可见渲染、物理刚体、跨平台/不同构建或Unity；也没有测试卡顿欠账策略。不能把原文自定义Python调度器的保留欠账语义归给Godot。整篇仍为source-backed，以上有限夹具结果为实际执行证据。
 
 官方定位：[Godot4.6 Idle and Physics Processing](https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html)、[Godot4.6 CLI reference](https://docs.godotengine.org/en/4.6/tutorials/editor/command_line_tutorial.html)；访问2026-10-31。
+
+## 暂停不等于清空应用输入队列：Godot 4.6.3 反例
+
+新增真实引擎夹具以 `Input.parse_input_event(InputEventAction)` 合成三组按下/释放，经引擎 `_input` 分发。常驻ALWAYS输入适配器仍能在场景暂停时收集攻击，而显式PAUSABLE玩法节点不执行固定回调。三个30/60/144人工主帧配置均观察到：朴素队列在恢复后的玩法步执行了暂停前未消费与暂停期间的两次旧攻击；暂停/恢复边界清队列并递增输入代次的对照队列只执行恢复后的新攻击。
+
+这证明“暂停玩法消费者”不足以约束另一个常驻节点的应用队列，不是Godot自身偷偷缓存攻击。原始日志同时检查暂停期间至少2次ALWAYS固定心跳出现时玩法tick仍不变、真实输入接收列表，以及新输入前的已消费列表。实验没有物理键盘/手柄输入，也没有验证真实5秒暂停补时；`--fixed-fps` 为人工时间。组合策略中的epoch过滤未被异步旧投递单独触发，不能推导它会识别恢复后才收到且被标成新epoch的旧设备事件。
+
+工程上应明确攻击、移动持有态及菜单输入各自的暂停策略，并通过单一暂停入口协调输入上下文、队列和代次；暂停节点仍可能接收信号，不是全局业务写屏障。来源：[Godot4.6暂停模式](https://docs.godotengine.org/en/4.6/tutorials/scripting/pausing_games.html)、[Input API](https://docs.godotengine.org/en/4.6/classes/class_input.html)、[InputEventAction](https://docs.godotengine.org/en/4.6/classes/class_inputeventaction.html)，访问2026-10-31。
+
+[夹具、来源与原始证据](../../research/experiments/godot-pause-input/README.md)。

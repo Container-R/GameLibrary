@@ -25,3 +25,7 @@ python3 scripts/run_model_tests.py
 ## 实际引擎回调证据
 
 [Godot4.6.3无头夹具](experiments/godot-fixed-step/README.md)记录真实二进制与6组回调轨迹；其脚本需本机Godot，不由纯Python模型总入口自动触发。只证明声明配置下的规范化输入回调集成，不等于GPU、设备输入或物理确定性验证。
+
+- [Godot暂停与合成输入](experiments/godot-pause-input/README.md)：真实引擎中的应用队列反例；ALWAYS固定心跳排除暂停观察的空洞通过；不是设备测试。
+
+- [真实文件路径替换反例](experiments/filesystem-save-publication/README.md)：tmpfs上完整旧版本仍可覆盖新版本；对照重检查不是通用修复或Steam验证。

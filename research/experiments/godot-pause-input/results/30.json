@@ -1,0 +1,210 @@
+{
+  "accumulated_input": false,
+  "controller_inputs": [
+    {
+      "epoch": 0,
+      "label": "pre_pause",
+      "paused": false,
+      "pressed": true
+    },
+    {
+      "epoch": 0,
+      "label": "pre_pause",
+      "paused": false,
+      "pressed": false
+    },
+    {
+      "epoch": 1,
+      "label": "during_pause",
+      "paused": true,
+      "pressed": true
+    },
+    {
+      "epoch": 1,
+      "label": "during_pause",
+      "paused": true,
+      "pressed": false
+    },
+    {
+      "epoch": 2,
+      "label": "fresh",
+      "paused": false,
+      "pressed": true
+    },
+    {
+      "epoch": 2,
+      "label": "fresh",
+      "paused": false,
+      "pressed": false
+    }
+  ],
+  "controller_mode": 3,
+  "epoch": 2,
+  "gameplay_inputs": [
+    {
+      "label": "pre_pause",
+      "paused": false,
+      "pressed": true
+    },
+    {
+      "label": "pre_pause",
+      "paused": false,
+      "pressed": false
+    },
+    {
+      "label": "fresh",
+      "paused": false,
+      "pressed": true
+    },
+    {
+      "label": "fresh",
+      "paused": false,
+      "pressed": false
+    }
+  ],
+  "gameplay_mode": 1,
+  "guarded_before_fresh": [],
+  "guarded_events": [
+    "fresh"
+  ],
+  "jitter_fix": 0.0,
+  "naive_before_fresh": [
+    "pre_pause",
+    "during_pause"
+  ],
+  "naive_events": [
+    "pre_pause",
+    "during_pause",
+    "fresh"
+  ],
+  "paused_heartbeats": 2,
+  "physics_callbacks": 6,
+  "physics_hz": 60,
+  "process_callbacks": 4,
+  "trace": [
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 1
+    },
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 2
+    },
+    {
+      "delta": 0.0333333333333333,
+      "gameplay_tick": 2,
+      "kind": "controller_process",
+      "paused": false,
+      "stage": 0
+    },
+    {
+      "global_pressed": false,
+      "kind": "injected_pair",
+      "label": "pre_pause",
+      "paused": false
+    },
+    {
+      "epoch": 1,
+      "gameplay_tick": 2,
+      "kind": "pause_boundary",
+      "paused": true
+    },
+    {
+      "global_pressed": false,
+      "kind": "injected_pair",
+      "label": "during_pause",
+      "paused": true
+    },
+    {
+      "count": 1,
+      "delta": 0.0166666666666667,
+      "gameplay_tick": 2,
+      "kind": "paused_heartbeat"
+    },
+    {
+      "count": 2,
+      "delta": 0.0166666666666667,
+      "gameplay_tick": 2,
+      "kind": "paused_heartbeat"
+    },
+    {
+      "delta": 0.0333333333333333,
+      "gameplay_tick": 2,
+      "kind": "controller_process",
+      "paused": true,
+      "stage": 1
+    },
+    {
+      "after": 2,
+      "before": 2,
+      "kind": "pause_observation",
+      "queued_guarded": 1,
+      "queued_naive": 2
+    },
+    {
+      "epoch": 2,
+      "gameplay_tick": 2,
+      "kind": "pause_boundary",
+      "paused": false
+    },
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 3
+    },
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 4
+    },
+    {
+      "delta": 0.0333333333333333,
+      "gameplay_tick": 4,
+      "kind": "controller_process",
+      "paused": false,
+      "stage": 2
+    },
+    {
+      "global_pressed": false,
+      "kind": "injected_pair",
+      "label": "fresh",
+      "paused": false
+    },
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 5
+    },
+    {
+      "delta": 0.0166666666666667,
+      "kind": "gameplay_physics",
+      "paused": false,
+      "tick": 6
+    },
+    {
+      "delta": 0.0333333333333333,
+      "gameplay_tick": 6,
+      "kind": "controller_process",
+      "paused": false,
+      "stage": 3
+    }
+  ],
+  "version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  }
+}

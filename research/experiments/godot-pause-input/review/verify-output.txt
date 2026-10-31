@@ -1,0 +1,6 @@
+PASS: all five source fingerprints match author files and both manifests.
+PASS: author/reviewer engine binary hash and version match (same-build evidence).
+PASS: 30 artificial fps; 2 fixed heartbeats strictly between pause/resume, unchanged gameplay tick and no gameplay physics entry.
+PASS: 60 artificial fps; 2 fixed heartbeats strictly between pause/resume, unchanged gameplay tick and no gameplay physics entry.
+PASS: 144 artificial fps; 2 fixed heartbeats strictly between pause/resume, unchanged gameplay tick and no gameplay physics entry.
+No engine rerun performed; this verifies saved traces, not physical-device behavior.

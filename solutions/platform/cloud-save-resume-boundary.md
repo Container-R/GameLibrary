@@ -9,11 +9,12 @@ related_topics: [cloud-save, suspend-resume, revision-lineage, asynchronous-io, 
 engines: [engine-agnostic]
 versions: ["Steamworks 滚动在线文档，2026-10-31 访问；未锁定 SDK 二进制版本"]
 updated_at: 2026-10-31
-verification_method: Valve 官方中英文文档核对；原创串行内存模型20项状态测试及1项独立失效反例；未做Steam、文件系统或真实挂起恢复集成测试
+verification_method: Valve 官方中英文文档核对；原创串行内存模型20项状态测试及1项独立失效反例；另有Linux/tmpfs路径替换反例；未做Steam或真实挂起恢复集成测试
 sources:
   - https://partner.steamgames.com/doc/features/cloud
   - https://partner.steamgames.com/doc/api/ISteamRemoteStorage
   - https://partner.steamgames.com/doc/features/cloud?l=schinese
+  - https://docs.python.org/3.12/library/os.html#os.replace
 ---
 
 # Steam 动态云同步恢复时的存档写入隔离与冲突契约
@@ -91,3 +92,11 @@ Valve 的 *Dynamic Cloud Sync* 描述：恢复前下载其他设备的变化，�
 ## 关联知识与复核
 
 [独立失败与修复复核](../../research/audits/cloud-save-adversarial-review.md)保留发布前发现的反例；[经济事件账本](../design/single-player-economy-ledger.md)说明经济事件幂等不自动等于持久存档事务。
+
+## Linux/tmpfs 实际路径替换反例：完整不等于新版本
+
+[原创文件系统实验](../../research/experiments/filesystem-save-publication/README.md)在Python3.12.14、Linux6.18.57的tmpfs临时目录实际运行两个受控进程轨迹。旧写者确认基线O后等待；协调者调用`os.replace`发布完整B并重新读取确认，再使旧令牌失效，最后放行旧写者发布完整A。最终完整字节和摘要均正确，却是旧A；完成通知被拒绝没有撤销替换。此结果将“文件完整≠业务版本正确”落实到真实路径操作，而不是只在内存中模拟磁盘。
+
+对照在安排好的放行之后、替换调用之前检查失效标志，因此保留B。**它不是通用修复**：若新写者能在该检查与替换之间进入，竞争仍在。实验通过进程事件决定顺序，不靠sleep；两次替换调用不重叠。旧任务延迟在API调用之前，不是已进入内核的I/O取消；未跟踪底层syscall，没有持续并发读者、持久磁盘、fsync或崩溃测试，不能推出CAS、任意平台原子可见性或Steam正确性。这两条是反例与有限对照，不计入前述20项保护测试。
+
+Python[3.12系列官方`os.replace`契约](https://docs.python.org/3.12/library/os.html#os.replace)描述成功重命名的原子性，但不提供业务版本比较或崩溃持久性。访问2026-10-31时文档显示3.12.16，实际运行3.12.14；两者分别记录。

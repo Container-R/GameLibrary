@@ -397,7 +397,7 @@
       "id": "TASK-2026-0017",
       "question": "Godot暂停期间合成输入队列能否导致恢复后旧攻击，如何用显式epoch策略隔离？",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 96,
       "priority_rationale": "既有固定回调契约的实际输入/暂停边界深化",
       "expected_artifact": "research/experiments/godot-pause-input/README.md",
@@ -413,8 +413,32 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:46:58.412770Z",
-      "next_action": "核查官方输入/暂停语义并运行有界原始夹具",
+      "last_progress_at": "2026-10-31T13:53:02.484752Z",
+      "next_action": "实际集成证据与独立复核通过，待发布哈希核验",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0018",
+      "question": "真实Linux路径替换是否仍允许预检查通过的旧存档覆盖新存档？",
+      "discipline": "PLATFORM",
+      "status": "reviewing",
+      "priority": 96,
+      "priority_rationale": "将已发表存档模型限制落实为真实文件系统反例，不宣称Steam或持久性保证",
+      "expected_artifact": "research/experiments/filesystem-save-publication/README.md",
+      "acceptance": [
+        "确定性线程屏障而非sleep",
+        "实际文件内容与路径替换观测",
+        "明确系统调用前延迟不是已入内核I/O",
+        "协调者权限边界和未验证持久性"
+      ],
+      "source_leads": [
+        "https://docs.python.org/3/library/os.html#os.replace"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:53:02.484752Z",
+      "next_action": "实际集成证据与独立复核通过，待发布哈希核验",
       "blockers": []
     }
   ]
