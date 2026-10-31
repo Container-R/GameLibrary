@@ -2,7 +2,7 @@
   "run_id": "20261031T213200Z-native-root-motion",
   "task_id": "TASK-2026-0058",
   "started_at": "2026-10-31T21:32:00Z",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "local_review_completed_at": "2026-10-31T21:37:15.589267Z",
   "validation": {
     "status": "PASS",
@@ -24,10 +24,18 @@
     "new_indexed_articles": 0,
     "indexed_source_backed_articles": 27,
     "old_root_motion_files_unchanged": 3,
-    "scope": "Two exact installed-build one-bone configurations; no real-character/Rig/IK/physics or public-source binary authentication"
+    "scope": "Two exact installed-build one-bone configurations; no real-character/Rig/IK/physics or public-source binary authentication",
+    "selected_blob_hashes_verified": 58,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 393,
+    "link_scan_excluded_fenced_code": true,
+    "receipt_queue_tasks_checked": 59,
+    "receipt_declared_paths_checked": 34
   },
   "prepublication_corrections": [
     "Source gate initially quoted obsolete local gltf stage; canonical article metadata reread before fixture execution",
     "Article links changed to actual public experiment path; historical TA and source-note wording scoped to old vs newly added evidence"
-  ]
+  ],
+  "commit_sha": "77a70b64c0d22d7f3ca1ca3c7f494030afd53623",
+  "ended_at": "2026-10-31T21:39:19.094019Z"
 }

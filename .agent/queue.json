@@ -1408,7 +1408,7 @@
       "id": "TASK-2026-0058",
       "question": "Does a manually evaluated native root-motion fixture expose stable same-evaluation deltas without automatically moving its owner, and what does explicit duplicate application do?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Address the exact native extraction gap left by four geometric model tests, without conflating IK or real-character quality",
       "expected_artifact": "Original one-bone native fixture, frozen oracle, author and independent execution receipts, narrow article extension",
@@ -1423,11 +1423,35 @@
         "Preserve original first failures if any; unique invocation results and exact binary/source/input hashes",
         "Independent fresh rerun; distinguish installed binary observations from authenticated public source identity; no IK, collision or multiplayer claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T22:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:37:15.589267Z",
-      "next_action": "Publish independently repeated native root-motion fixture and narrow article extension",
+      "next_action": "Keep native delta extraction scope separate from real-character/Rig acceptance; preserve original model history",
+      "blockers": [],
+      "completed_at": "2026-10-31T21:39:19.094019Z",
+      "commit_sha": "77a70b64c0d22d7f3ca1ca3c7f494030afd53623"
+    },
+    {
+      "id": "TASK-2026-0059",
+      "question": "What evidence and responsibility handoffs make a graphics/rendering feature maintainable across visual requirements, renderer interfaces and platform acceptance?",
+      "discipline": "GFX",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Address an important uncovered occupation with direct employer evidence and concrete feature handoff rather than duplicating existing numeric models",
+      "expected_artifact": "Bounded graphics-programmer role profile and original unexecuted rendering-feature acceptance worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
+        "Separate senior cross-domain, shared-engine and product-maintenance samples; dates and engine versions unknown where unspecified",
+        "Original visual/interface/CPU-GPU/regression/maintenance handoff with explicit ownership boundaries",
+        "Independent source review; no runtime, gain claims, universal aliases or completed occupation matrix"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T22:25:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T21:39:19.094019Z",
+      "next_action": "Read primary role pages and independently review original graphics-feature handoff draft",
       "blockers": []
     }
   ]
