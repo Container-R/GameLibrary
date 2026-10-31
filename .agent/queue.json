@@ -525,7 +525,7 @@
       "id": "TASK-2026-0022",
       "question": "非英语一手工具/生产资料能否补充资产导入策略可用性与交接成本的具体失败边界？",
       "discipline": "TA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 84,
       "priority_rationale": "全球来源深化，不用语言翻译冒充独立生产案例",
       "expected_artifact": "research/source-notes/asset-import-policy-availability.md",
@@ -538,11 +538,37 @@
       "source_leads": [
         "https://docs.unity3d.com/jp/460/ScriptReference/AssetPostprocessor.html"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T14:17:19.904743Z",
+      "next_action": "有限历史来源审计已归档；现代Unity运行与独立工作室案例仍未获证据",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:19:44.720440Z",
+      "commit_sha": "b5e84573ccdcc1655496f39844a70b087f79b3a1"
+    },
+    {
+      "id": "TASK-2026-0023",
+      "question": "导航图未同步与目标不可达如何区分，非空部分路径是否会误报成功？",
+      "discipline": "AI",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "AI初始化与负结果缓存的具体运行边界，利用现有CPU导航能力验证",
+      "expected_artifact": "research/experiments/godot-navigation-sync/README.md",
+      "acceptance": [
+        "实际图同步前后查询与诊断",
+        "可达及断开目标末点判据，不只检查路径长度",
+        "显式单写者/地图信号/迭代号边界",
+        "不依赖弃用force_update或固定等一帧"
+      ],
+      "source_leads": [
+        "https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:17:19.904743Z",
-      "next_action": "历史日语线索及6000.0英文正文对照完成；未得到独立工作室案例，按有限来源审计归档",
+      "last_progress_at": "2026-10-31T14:19:44.720440Z",
+      "next_action": "运行原创有界导航夹具，再进行独立复核",
       "blockers": []
     }
   ]

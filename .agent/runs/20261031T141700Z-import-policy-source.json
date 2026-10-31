@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T141700Z-import-policy-source",
   "started_at": "2026-10-31T14:13:40Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T14:19:44.720440Z",
   "task_id": [
     "TASK-2026-0022"
   ],
@@ -26,7 +26,7 @@
     ".agent/queue.json",
     ".agent/state.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "b5e84573ccdcc1655496f39844a70b087f79b3a1",
   "validation": {
     "runtime_executed": false,
     "new_tests": 0,
@@ -37,5 +37,5 @@
     "没有独立工作室事故/成本案例；没有Unity执行验证，不能由旧文档推导当前行为"
   ],
   "next_action": "保持文档历史与实际工程前提分层，评估可执行导航同步问题",
-  "outcome": "bounded source audit; publication pending"
+  "outcome": "published bounded source audit; remote blob hash matched local artifact"
 }
