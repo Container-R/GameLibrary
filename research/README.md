@@ -21,6 +21,8 @@ python3 scripts/run_model_tests.py
 - [焦点恢复的实例身份](experiments/godot-focus-boundary/README.md)：实际 Viewport owner、信号和延迟调用；不是 Unity、视觉或完整模态输入墙验收。
 - [干净检出后的资产导入](experiments/godot-import-boundary/README.md)：遗漏 sidecar 时仍可加载、UID 相同但纹理尺寸不同；[工程契约](../solutions/engine/asset-import-intent-contract.md)区分源文件、导入意图与生成缓存。
 
+- [导航就绪与部分路径](experiments/godot-navigation-sync/README.md)：实际地图/region同步阶段、空路径与非空部分路径；不证明持续异步事务或角色运动。
+
 ## 实际文件系统反例
 
 [Linux/tmpfs 路径替换](experiments/filesystem-save-publication/README.md)：完整旧版本仍可覆盖已发布的新版本；安排好的预调用重检查仅是有限对照，不是 CAS、持久性或 Steam 验证。

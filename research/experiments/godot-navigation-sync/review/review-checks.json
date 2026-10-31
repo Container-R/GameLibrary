@@ -1,0 +1,80 @@
+{
+  "main_hashes_match": true,
+  "diagnostic_runner_match": true,
+  "binary_hash_match": true,
+  "naive": {
+    "iteration": 0,
+    "path": []
+  },
+  "guarded_paths": [
+    [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        25.0,
+        5.0
+      ]
+    ],
+    [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        30.0,
+        5.0
+      ]
+    ]
+  ],
+  "default_region_paths": [
+    [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        25.0,
+        5.0
+      ]
+    ],
+    [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        30.0,
+        5.0
+      ]
+    ]
+  ],
+  "diagnostic_verification": {
+    "exit_code": 0,
+    "checks": "passed",
+    "map_ready_region_pending_observations": 4,
+    "final_map_iteration": 2,
+    "reachable_path": [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        25.0,
+        5.0
+      ]
+    ],
+    "partial_path": [
+      [
+        5.0,
+        5.0
+      ],
+      [
+        30.0,
+        5.0
+      ]
+    ]
+  },
+  "error_exemptions": []
+}

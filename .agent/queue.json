@@ -551,10 +551,10 @@
       "id": "TASK-2026-0023",
       "question": "导航图未同步与目标不可达如何区分，非空部分路径是否会误报成功？",
       "discipline": "AI",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "AI初始化与负结果缓存的具体运行边界，利用现有CPU导航能力验证",
-      "expected_artifact": "research/experiments/godot-navigation-sync/README.md",
+      "expected_artifact": "solutions/ai/navigation-readiness-and-partial-path.md",
       "acceptance": [
         "实际图同步前后查询与诊断",
         "可达及断开目标末点判据，不只检查路径长度",
@@ -567,8 +567,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:19:44.720440Z",
-      "next_action": "运行原创有界导航夹具，再进行独立复核",
+      "last_progress_at": "2026-10-31T14:27:41.755540Z",
+      "next_action": "主对照、发现后的诊断、独立复跑和正文审查通过，待发布",
       "blockers": []
     }
   ]

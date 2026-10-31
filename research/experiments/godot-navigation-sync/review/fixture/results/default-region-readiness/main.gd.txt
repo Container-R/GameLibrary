@@ -1,0 +1,119 @@
+extends Node
+# Single writer, one submission batch, no baking or force-update.
+const START := Vector2(5, 5)
+const REACHABLE := Vector2(25, 5)
+const DISCONNECTED := Vector2(105, 5)
+var mode: String
+var map: RID
+var regions: Array[RID] = []
+var polygons: Array[NavigationPolygon] = []
+var geometry: Array = []
+var trace: Array = []
+var results: Array = []
+var initial_iteration: int = 0
+var matched_signal: bool = false
+var submitted: bool = false
+var finished: bool = false
+var frames: int = 0
+
+func add_rectangle(left: float, right: float) -> void:
+    var polygon := NavigationPolygon.new()
+    polygon.cell_size = 1.0
+    polygon.vertices = PackedVector2Array([Vector2(left,0), Vector2(left,10), Vector2(right,10), Vector2(right,0)])
+    polygon.add_polygon(PackedInt32Array([0,1,2,3]))
+    polygons.append(polygon)
+    geometry.append([[left,0],[left,10],[right,10],[right,0]])
+    var region: RID = NavigationServer2D.region_create()
+    NavigationServer2D.region_set_navigation_layers(region, 1)
+    NavigationServer2D.region_set_navigation_polygon(region, polygon)
+    NavigationServer2D.region_set_map(region, map)
+    regions.append(region)
+
+func _ready() -> void:
+    mode = OS.get_cmdline_user_args()[0]
+    NavigationServer2D.map_changed.connect(on_map_changed)
+    call_deferred("setup")
+
+func on_map_changed(changed: RID) -> void:
+    if changed == map:
+        matched_signal = true
+        trace.append({"kind":"matching_map_changed", "map_id": map.get_id(),
+            "iteration":NavigationServer2D.map_get_iteration_id(map)})
+
+func setup() -> void:
+    map = NavigationServer2D.map_create()
+    initial_iteration = NavigationServer2D.map_get_iteration_id(map)
+    NavigationServer2D.map_set_active(map,true)
+    NavigationServer2D.map_set_use_async_iterations(map,false)
+    NavigationServer2D.map_set_cell_size(map,1.0)
+    NavigationServer2D.map_set_edge_connection_margin(map,0.1)
+    NavigationServer2D.map_set_use_edge_connections(map,true)
+    add_rectangle(0,30)
+    add_rectangle(100,110)
+    trace.append({"kind":"submitted", "iteration":NavigationServer2D.map_get_iteration_id(map),
+        "map_id":map.get_id(),"initial_iteration":initial_iteration})
+    submitted = true
+    if mode == "naive":
+        query("pre_sync_reachable", REACHABLE)
+        finish()
+
+func query(label: String, goal: Vector2) -> void:
+    var iteration: int = NavigationServer2D.map_get_iteration_id(map)
+    var path: PackedVector2Array = NavigationServer2D.map_get_path(map,START,goal,true,1)
+    var points: Array = []
+    for point in path:
+        points.append([point.x,point.y])
+    var row: Dictionary = {"label":label,"iteration":iteration,"start":[START.x,START.y],
+        "goal":[goal.x,goal.y],"path":points,"map_id":map.get_id(),"layers":1}
+    if iteration != 0:
+        var nearest: Vector2 = NavigationServer2D.map_get_closest_point(map,goal)
+        row["closest_goal"] = [nearest.x,nearest.y]
+        row["goal_region_id"] = NavigationServer2D.map_get_closest_point_owner(map,goal).get_id()
+        row["start_region_id"] = NavigationServer2D.map_get_closest_point_owner(map,START).get_id()
+    results.append(row)
+
+func _process(_delta: float) -> void:
+    if finished or not submitted or mode != "guarded":
+        return
+    frames += 1
+    if frames > 200:
+        push_error("navigation synchronization watchdog: pending, not unreachable")
+        get_tree().quit(2)
+        return
+    var current: int = NavigationServer2D.map_get_iteration_id(map)
+    if not matched_signal or current == 0 or current == initial_iteration:
+        return
+    if NavigationServer2D.map_get_regions(map).size() != 2:
+        return
+    for region in regions:
+        trace.append({"kind":"region_readiness_observation","region_id":region.get_id(),"region_iteration":NavigationServer2D.region_get_iteration_id(region),"region_async":NavigationServer2D.region_get_use_async_iterations(region),"region_enabled":NavigationServer2D.region_get_enabled(region),"map_iteration":current})
+        if NavigationServer2D.region_get_iteration_id(region) == 0:
+            return
+    trace.append({"kind":"ready_predicate", "iteration":current,"map_id":map.get_id(),"frames_observed":frames})
+    query("synced_reachable",REACHABLE)
+    query("synced_disconnected",DISCONNECTED)
+    finish()
+
+func finish() -> void:
+    finished = true
+    var registered: Array = []
+    var region_config: Array = []
+    for region in NavigationServer2D.map_get_regions(map):
+        registered.append(region.get_id())
+        region_config.append({"id":region.get_id(),"enabled":NavigationServer2D.region_get_enabled(region),
+            "async_iterations":NavigationServer2D.region_get_use_async_iterations(region),
+            "layers":NavigationServer2D.region_get_navigation_layers(region),
+            "iteration":NavigationServer2D.region_get_iteration_id(region),
+            "connections":NavigationServer2D.region_get_connections_count(region),
+            "map_id":NavigationServer2D.region_get_map(region).get_id()})
+    print("RESULT_JSON=" + JSON.stringify({"mode":mode,"version":Engine.get_version_info(),
+        "display_server":DisplayServer.get_name(),"map_id":map.get_id(),"geometry":geometry,
+        "initial_iteration":initial_iteration,"current_iteration":NavigationServer2D.map_get_iteration_id(map),
+        "registered_regions":registered,"region_config":region_config,"requested_config":{"map_async":false,"region_async":"default","region_enabled":"default","edge_margin":0.1,"layers":1},"links_count":NavigationServer2D.map_get_links(map).size(),
+        "edge_margin":NavigationServer2D.map_get_edge_connection_margin(map),
+        "async_iterations":NavigationServer2D.map_get_use_async_iterations(map),
+        "trace":trace,"queries":results}))
+    for region in regions:
+        NavigationServer2D.free_rid(region)
+    NavigationServer2D.free_rid(map)
+    get_tree().quit(0)

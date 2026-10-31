@@ -18,6 +18,7 @@ sources:
   - https://www.ubisoftsingapore.com/post/meet-usama-ghufran-senior-technical-artist
   - https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-import-options-reference-in-unreal-engine?application_version=5.6
   - https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-material-pipeline-in-unreal-engine?application_version=5.6
+  - https://www.bandainamcostudios.com/recruit/graduate/recruitworks/649
 ---
 
 # 技术美术：把艺术意图变成可重复交付的资产管线
@@ -107,3 +108,9 @@ FBX 材质文档 [S5] 指定 FBX 2020.2 兼容基线，并说明只支持基本�
 ## 资产交接的实际补证
 
 [干净检出导入契约](../../solutions/engine/asset-import-intent-contract.md)给出Godot4.6.3实际反例：只遗漏导入sidecar时，场景和UID仍正常，但纹理尺寸失去原配置。岗位验收应区分源文件、导入意图与生成缓存，并检查关键资源语义；不把该SVG例子外推为所有资产质量保证。
+
+## 日本工作室的一手职责对照
+
+万代南梦宫工作室官方日语[工作流/工具/管线工程师与技术美术岗位介绍](https://www.bandainamcostudios.com/recruit/graduate/recruitworks/649)在“仕事”及学习建议部分，将DCC/Excel到游戏数据的流程、资产管理、容量/图像尺寸/格式/一致性检查、批处理和工具开发列为该岗位工作，并强调资产制作流程、数据结构及艺术专业术语。这支持将TA交付理解为跨资产类别的数据生产与校验接口，而不只是着色器制作。访问2026-10-31；页面未标精确发布日期，页脚版权不作发布日期。
+
+这是工作室对自身岗位的第一方说明，与厂商文档日语翻译不同；但仍不是某项目事故复盘、效果量化或全行业岗位标准。它不证明本库Godot夹具被该工作室采用，也不能从岗位列表推断团队规模或生产效率。
