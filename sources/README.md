@@ -67,3 +67,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Bungie2020事故案例](../case-studies/liveops/destiny-config-admission-rollback.md)使用紧凑事实概述与原创分析，不转载整篇复盘；Kubernetes文档只提供概念对照，不充当历史技术栈证据。
 
 [音乐帧端点来源记录](../research/experiments/music-loop-frame-contract/source-receipt.json)区分固定 FFmpeg 上游文档、FMOD 2.04 API 约定和本地工具自报身份；不认证二进制供应链。
+
+[Cygames 日语原始来源记录](../research/audits/cygames-scenario-handoff/source-receipt.json)保留发布/活动日期和访问边界；Excel 兼容仅按原文示例处理，不扩写内部系统规格。

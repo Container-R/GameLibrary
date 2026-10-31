@@ -81,3 +81,5 @@ python3 scripts/evidence/test_verify.py
 [Destiny配置准入与数据恢复案例](../case-studies/liveops/destiny-config-admission-rollback.md)分析历史第一方复盘，分开当时已部署措施、后续承诺和原创未执行验收协议；[独立来源审查](audits/liveops-destiny-2020/REVIEW.md)。没有事故复现或新增运行测试。
 
 [音乐主体 PCM 帧区间](../solutions/music/pcm-loop-frame-contract.md)通过原创 marker WAV 的实际离线 FFmpeg 提取，分离半开区间与 inclusive 循环端点；[实验与无损归档](experiments/music-loop-frame-contract/README.md)、[独立复验](experiments/music-loop-frame-contract/review/REVIEW.md)、[集成归档检查](audits/music-frame-integration/README.md)。不包含设备播放或 FMOD 运行。
+
+[日本 Cygames 叙事制作交接案例](../case-studies/narrative/cygames-scenario-voice-handoff.md)使用实际可读的日语第一方博客，区分历史工具采用过程和原创未执行验收矩阵；[独立来源审查](audits/cygames-scenario-handoff/REVIEW.md)。未假称读完幻灯片或测得制作效率。

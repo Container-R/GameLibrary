@@ -43,6 +43,8 @@
   - 关联理由：把声音设计交付延伸到跨模态信息验收。
 - 带前置和尾部的素材，如何准确交接音乐主体与循环端点？ → [音乐循环素材交接：用 PCM 帧区间表达主体，不混淆文件尾部与循环终点](solutions/music/pcm-loop-frame-contract.md) — `SOL-MUSIC-001` · `source-backed` · `MUSIC`
   - 关联理由：用实际离线 PCM 帧证据核对单位和端点，避免把素材边界验收误当作中间件或听感验收。
+- 对白、录音和审核结果怎样完整交给下一制作环节？ → [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `CASE-NARR-001` · `source-backed` · `NARR`
+  - 关联理由：日本第一方制作案例与原创验收矩阵分层，避免把文件身份或可用界面当成声音和叙事正确性。
 
 ## 从游戏质量保证出发：按证据类型选择方法
 路线 ID：`role-game-quality-assurance`

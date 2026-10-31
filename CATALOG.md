@@ -33,4 +33,5 @@
 ## 真实案例
 
 - [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `source-backed` · `LIVE`
+- [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `source-backed` · `NARR`
 
