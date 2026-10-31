@@ -2,7 +2,7 @@
   "run_id": "20261031T205507Z-sqlite-commit-busy",
   "started_at": "2026-10-31T20:55:07Z",
   "task_id": "TASK-2026-0054",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "indexed_source_backed_articles": 27,
@@ -18,7 +18,11 @@
     "local_markdown_links": 374,
     "missing_links": 0,
     "queue_tasks_checked": 54,
-    "declared_artifact_paths_checked": 24
+    "declared_artifact_paths_checked": 24,
+    "selected_blob_hashes_verified": 46,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 55,
+    "receipt_declared_paths_checked": 26
   },
   "workspace_recovery": {
     "incident_at": "2026-10-31T20:56:23Z",
@@ -29,5 +33,7 @@
     "new_review_uuid": "09655ed4-1da6-452e-a086-97a8960926cc",
     "record": "research/audits/workspace-recovery-2056/recovery.json"
   },
-  "local_review_completed_at": "2026-10-31T21:03:15.518976Z"
+  "local_review_completed_at": "2026-10-31T21:03:15.518976Z",
+  "commit_sha": "f72bbfc3352966a3baac01ac5386148c0eead715",
+  "ended_at": "2026-10-31T21:06:25.892342Z"
 }

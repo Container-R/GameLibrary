@@ -1297,7 +1297,7 @@
       "id": "TASK-2026-0054",
       "question": "Distinguish reader-blocked SQLite COMMIT_BUSY with active transaction from failed BEGIN; retry commit without replaying reward mutation",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Existing save-ledger study explicitly excludes COMMIT_BUSY; actual bounded transaction evidence can close this gap without adding another article",
       "expected_artifact": "Existing economy-ledger section and original SQLite transaction fixture",
@@ -1311,11 +1311,39 @@
         "SQL trace proves one reward mutation and two COMMIT attempts; independent readonly final rows125",
         "Preserve original fixture/results; no WAL, powerloss, concurrency stress or arbitrary-exception retry claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T21:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:03:15.518976Z",
-      "next_action": "Publish reviewed post-reset SQLite COMMIT_BUSY depth extension and canonical workspace recovery record",
+      "next_action": "Apply explicit transaction-state and deadline policy; retained fixture does not validate arbitrary errors or production retry queues",
+      "blockers": [],
+      "completed_at": "2026-10-31T21:06:25.892342Z",
+      "commit_sha": "f72bbfc3352966a3baac01ac5386148c0eead715"
+    },
+    {
+      "id": "TASK-2026-0055",
+      "question": "Does the installed engine import the original interleaved glTF fixture into correct mesh arrays, including declared winding conversion?",
+      "discipline": "MODEL",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Close existing CPU-format-only mesh article evidence gap with one actual native import, not a new indexed article",
+      "expected_artifact": "Existing modeling article depth extension with actual GLTFDocument import and data-stage observations",
+      "artifact_paths": [
+        "solutions/modeling/gltf-interleaved-attribute-contract.md",
+        "research/experiments/godot-gltf-import-boundary"
+      ],
+      "acceptance": [
+        "Exact original glTF JSON and embedded160byte input hashes unchanged",
+        "Frozen prospective index winding oracle based on pinned source; do not adjust silently after unexpected result",
+        "Actual append return code, ImporterMesh and ArrayMesh arrays/classes/counts/primitive verified independently",
+        "Version probe distinct from import count; installed binary hash not official-source authentication",
+        "No UV/tangents/skin/editor/GPU or general importer validity/security claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T21:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T21:06:25.892342Z",
+      "next_action": "Execute frozen original-input import protocol and independent literal array review, preserve any capability failure",
       "blockers": []
     }
   ]
