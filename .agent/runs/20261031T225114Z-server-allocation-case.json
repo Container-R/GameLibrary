@@ -5,8 +5,8 @@
     "TASK-2026-0067"
   ],
   "started_at": "2026-10-31T22:51:15Z",
-  "ended_at": "2026-10-31T22:55:31.861277Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T22:57:20.427068Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.riotgames.com/en/news/tech-blog-cpu-usage"
   ],
@@ -21,7 +21,13 @@
     "indexed_articles": 32,
     "queue_tasks": 67,
     "declared_paths": 59,
-    "prior_experiment_files_byte_identical": 1833
+    "prior_experiment_files_byte_identical": 1833,
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 495,
+    "receipt_queue_tasks_checked": 68,
+    "receipt_declared_paths_checked": 59
   },
-  "next_action": "Prioritize strengthening a documented existing evidence gap after bounded exact-artifact/capability triage"
+  "next_action": "Prioritize strengthening a documented existing evidence gap after bounded exact-artifact/capability triage",
+  "commit_sha": "7f1279ca338520c1c30951a9fa00055add518568"
 }

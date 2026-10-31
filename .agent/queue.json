@@ -1667,7 +1667,7 @@
       "id": "TASK-2026-0067",
       "question": "Why can low observed server CPU coexist with insufficient future match headroom, and what measurement/placement handoff exposes that gap?",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "First-party historical allocation evidence adds concrete delayed-observation/young-match-demand boundary beyond platform mock scope",
       "expected_artifact": "Narrow source-backed historical case and original unexecuted measurement/lifecycle acceptance worksheet",
@@ -1682,11 +1682,36 @@
         "No uninspected graph values, scoring formula, toy production benchmark or universal RoundRobin recommendation",
         "Independent review; historical author claims not independently reproduced causal proof"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:55:31.861277Z",
-      "next_action": "Publish independently reviewed case; preserve historical comparison, uninspected formula and unexecuted worksheet boundaries",
+      "next_action": "Preserve historical source boundaries and unexecuted worksheet; no production replay implied",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:57:20.427068Z",
+      "commit_sha": "7f1279ca338520c1c30951a9fa00055add518568"
+    },
+    {
+      "id": "TASK-2026-0068",
+      "question": "Can a syntactically valid target-locale plural pattern omit a relevant category and silently fall back to other despite passing English smoke inputs?",
+      "discipline": "LOC",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "Existing LOC article explicitly limits ICU evidence to English1/2 and lacks target-locale category coverage; installed formatter permits a bounded source-gated supplement",
+      "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs\u00d76integer native requests if ABI/protocol gate passes",
+      "artifact_paths": [],
+      "acceptance": [
+        "Verify exact current LOC artifact identity and fixed ICU API definitions without importing executing legacy case",
+        "Read pinned cardinal rule data and MessageFormat omitted-category fallback semantics before freezing outputs",
+        "Only single positional double and nonnegative exactly representable integer inputs; no offset/ordinal/nesting expansion",
+        "Freeze literal outputs and bounded invocation counts before code; independent source/oracle review",
+        "Actual formatter output not translation quality, rendering, RTL, engine or full locale support; preserve all failures and warnings"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T00:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:57:20.427068Z",
+      "next_action": "Read pinned ICU rule/API/fallback sources, reconcile existing LOC identity, and review proposed literal category table before any native implementation",
       "blockers": []
     }
   ]
