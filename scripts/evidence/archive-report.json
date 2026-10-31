@@ -436,8 +436,32 @@
     {
       "id": "texture/compare/runtime_files",
       "status": "pass"
+    },
+    {
+      "id": "mesh/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "mesh/compare/gltf_sha256",
+      "status": "pass"
     }
   ],
-  "passed": 109,
+  "passed": 115,
   "failed": 0
 }

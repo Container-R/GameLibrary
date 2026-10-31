@@ -958,6 +958,68 @@
       "field": [
         "runtime_files"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "mesh/author/source",
+      "document": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "reader.py": "research/experiments/mesh-attribute-contract/reader.py",
+        "run.py": "research/experiments/mesh-attribute-contract/run.py",
+        "geometry-contract.md": "research/experiments/mesh-attribute-contract/geometry-contract.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "mesh/review/source",
+      "document": "research/experiments/mesh-attribute-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "reader.py": "research/experiments/mesh-attribute-contract/reader.py",
+        "run.py": "research/experiments/mesh-attribute-contract/run.py",
+        "geometry-contract.md": "research/experiments/mesh-attribute-contract/geometry-contract.md"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "mesh/compare/source_sha256",
+      "left": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "right": "research/experiments/mesh-attribute-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "mesh/compare/python",
+      "left": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "right": "research/experiments/mesh-attribute-contract/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "mesh/compare/binary_sha256",
+      "left": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "right": "research/experiments/mesh-attribute-contract/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "mesh/compare/gltf_sha256",
+      "left": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "right": "research/experiments/mesh-attribute-contract/review/fixture/results/summary.json",
+      "field": [
+        "gltf_sha256"
+      ]
     }
   ]
 }

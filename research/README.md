@@ -70,4 +70,6 @@ python3 scripts/evidence/test_verify.py
 
 [SQLite 提交与应答](experiments/sqlite-ledger-boundary/README.md)保存直接退出、重新读取和同键重试；[双写者握手](experiments/sqlite-writer-contention/README.md)仅补一个 BEGIN BUSY 序列。不是断电持久性、生产重试策略或远程授权保证。
 
-[BC纹理逐mip预算](experiments/texture-block-budget/README.md)增加有限CPU布局与逐级包装解码；当前十夹具109项档案一致性检查，不是109项运行测试。
+[BC纹理逐mip预算](experiments/texture-block-budget/README.md)增加有限CPU布局与逐级包装解码；十夹具阶段109项档案一致性检查，不是109项运行测试。
+
+[交错网格属性](experiments/mesh-attribute-contract/README.md)区分合法字节的错误解释、非法view跨度与独立几何意图。当前十一夹具115项档案一致性检查；不替代DCC/引擎/GPU验收。

@@ -1,0 +1,78 @@
+[
+  {
+    "name": "optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/mesh-attribute-contract/negatives/optimized/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  },
+  {
+    "name": "reader-import-failure",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/mesh-attribute-contract/negatives/reader-import-failure/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  },
+  {
+    "name": "missing-view",
+    "exception": "KeyError",
+    "reason": "'bufferView'"
+  },
+  {
+    "name": "invalid-view-index",
+    "exception": "ValueError",
+    "reason": "view index"
+  },
+  {
+    "name": "backing-valid-view-short",
+    "exception": "ValueError",
+    "reason": "accessor outside declared view"
+  },
+  {
+    "name": "incorrect-position-bounds",
+    "exception": "ValueError",
+    "reason": "position bounds"
+  },
+  {
+    "name": "nonunit-normal",
+    "exception": "ValueError",
+    "reason": "normal unit length"
+  },
+  {
+    "name": "unequal-count",
+    "exception": "ValueError",
+    "reason": "attribute count mismatch"
+  },
+  {
+    "name": "inbounds-other-attribute-with-consistent-bounds",
+    "reader_accepts": true,
+    "intended_geometry_matches": false,
+    "positions": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  }
+]

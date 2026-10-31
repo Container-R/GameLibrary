@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/mesh-attribute-contract/negatives/reader-import-failure/run.py", line 6, in <module>
+    import reader
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/mesh-attribute-contract/negatives/reader-import-failure/reader.py", line 1, in <module>
+    raise ImportError('synthetic reader import failure')
+ImportError: synthetic reader import failure

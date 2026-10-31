@@ -892,6 +892,26 @@
       "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
       "completed_at": "2026-10-31T18:40:11.675407Z",
       "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580"
+    },
+    {
+      "id": "TASK-2026-0038",
+      "question": "Interleaved mesh attribute identity and intended topology handoff",
+      "discipline": "MODEL",
+      "status": "reviewing",
+      "priority": 90,
+      "priority_rationale": "Coverage audit identifies missing mesh-content handoff; finite falsifiable artifact rather than directory count",
+      "expected_artifact": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "acceptance": [
+        "Pinned original source",
+        "Literal independent geometry oracle",
+        "Bounded invalid and semantic counterexamples"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T18:47:21.700149Z",
+      "next_action": "Verify reviewed mesh content publication",
+      "blockers": []
     }
   ]
 }

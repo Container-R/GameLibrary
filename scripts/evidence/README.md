@@ -41,6 +41,8 @@ SQLite 的终止进程有意没有 RESULT_JSON，不纳入现有单载荷 log �
 
 写者竞争的 EVENT/CONFIG 与父协议先后由独立 raw checker 验证，base64 由其另行解码核对；这里只登记 source/metadata 四项，不冒充协议行为检查。
 
-纹理夹具新增两组 source manifest 与四组版本/来源字段比较，当前十夹具109项检查；103项历史报告保留于 `archive-report-103.json`。这6项不验证解码器身份、像素、DDS语义或GPU行为；独立原始制品checker另存于纹理review目录。
+纹理夹具新增两组 source manifest 与四组版本/来源字段比较，当时十夹具109项检查（历史报告archive-report-109.json）；103项历史报告保留于 `archive-report-103.json`。这6项不验证解码器身份、像素、DDS语义或GPU行为；独立原始制品checker另存于纹理review目录。
 
 纹理stdout使用 `RESULT_JSON `（空格），而当前log规则只接受 `RESULT_JSON=`；未把它注册为兼容日志。集成时另行精确解析一条空格前缀记录并与summary比较，不修改既有verifier或计入109项。
+
+网格夹具新增两份source manifest及四组source/Python/制品哈希字段比较，当前十一夹具115项。不是115次运行测试，也不验证几何语义、官方validator或GPU；原始空格前缀stdout另行比较，字面几何oracle见该夹具review。

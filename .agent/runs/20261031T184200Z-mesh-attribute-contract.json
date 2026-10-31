@@ -1,0 +1,19 @@
+{
+  "run_id": "20261031T184200Z-mesh-attribute-contract",
+  "started_at": "2026-10-31T18:42:27Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0038",
+  "commit_sha": null,
+  "outcome": "reviewed; publication pending",
+  "validation": {
+    "original_fixtures": 1,
+    "original_rejections": 9,
+    "reviewer_repeats_original": true,
+    "reviewer_extra_inprocess_rejections": 6,
+    "reviewer_structurally_accepted_unintended_geometry_cases": 1,
+    "reviewer_child_startup_failures": 2,
+    "archive_consistency_expected": 115,
+    "gpu_dcc_engine_import_runs": 0
+  },
+  "scope": "View-backed finite CPU glTF attribute extraction; implicit-zero legal accessors unsupported, not invalid-format claim"
+}

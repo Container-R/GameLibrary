@@ -53,6 +53,11 @@
           "document_id": "SOL-GFX-001",
           "question": "纹理预算究竟量的是哪一层？",
           "rationale": "逐mip核算压缩payload，分开文件、上传、分配和驻留证据。"
+        },
+        {
+          "document_id": "SOL-MODEL-001",
+          "question": "字节可读是否意味着几何正确？",
+          "rationale": "区分属性跨度、步长解释与索引恢复的内容意图。"
         }
       ],
       "subject_profile_id": "ROLE-TA-001"

@@ -57,3 +57,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [SQLite 事务边界](../research/experiments/sqlite-ledger-boundary/README.md)及[写锁序列](../research/experiments/sqlite-writer-contention/README.md)分别保留官方接口依据、运行时自报身份与有限实际证据；不以本地事务代替远程权益或玩家经济研究。
 
 [BC纹理预算](../solutions/rendering/block-compressed-mip-budget.md)对照Microsoft/Khronos官方文档和固定DirectXTex源码；离线payload、上传布局、分配与驻留证据分层。未执行GPU资源创建。
+
+[网格属性契约](../solutions/modeling/gltf-interleaved-attribute-contract.md)固定Khronos glTF规范与schema版本；同项目多文件不冒充独立厂商验证，CPU字面oracle是另一证据层。

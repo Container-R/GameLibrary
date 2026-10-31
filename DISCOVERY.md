@@ -29,6 +29,8 @@
   - 关联理由：资产正确不自动证明运行时运动责任正确。
 - 纹理预算究竟量的是哪一层？ → [BC 压缩纹理预算：逐 mip 计算 payload，不把 DDS 文件长度当作显存](solutions/rendering/block-compressed-mip-budget.md) — `SOL-GFX-001` · `source-backed` · `GFX`
   - 关联理由：逐mip核算压缩payload，分开文件、上传、分配和驻留证据。
+- 字节可读是否意味着几何正确？ → [有效字节不等于正确顶点：glTF 交错属性的偏移、步长与几何验收](solutions/modeling/gltf-interleaved-attribute-contract.md) — `SOL-MODEL-001` · `source-backed` · `MODEL`
+  - 关联理由：区分属性跨度、步长解释与索引恢复的内容意图。
 
 ## 从交互音频出发
 路线 ID：`role-interactive-audio`
