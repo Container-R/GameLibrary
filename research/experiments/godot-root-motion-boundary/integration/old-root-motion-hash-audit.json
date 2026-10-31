@@ -1,0 +1,17 @@
+{
+  "scope": "Read-only equality of three original files; no modifications or execution",
+  "files": {
+    "README.md": {
+      "sha256": "46e8a039ba46ae3a63fe79f3d4b0fb3689f005d4c6c7a25c44cdb03c83490277",
+      "recovered_equals_publish_rig": true
+    },
+    "test-output.txt": {
+      "sha256": "65b82009f71b99ad493a38b27481565c53204e0ae49f9a3bb470e2cbbcecfa95",
+      "recovered_equals_publish_rig": true
+    },
+    "test_contact_transform.py": {
+      "sha256": "1a55ce854b7308742b5d58d41612b02cd75650de1a9eefc0d6a690762694ac42",
+      "recovered_equals_publish_rig": true
+    }
+  }
+}

@@ -2854,6 +2854,104 @@
       "id": "gltf-import/historical-failed-oracle/raw",
       "log": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stdout.txt",
       "parsed": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "root-motion-native/author/source",
+      "document": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-root-motion-boundary/run.py",
+        "main.gd": "research/experiments/godot-root-motion-boundary/main.gd",
+        "project.godot": "research/experiments/godot-root-motion-boundary/project.godot",
+        "contract.json": "research/experiments/godot-root-motion-boundary/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "root-motion-native/author/outputs",
+      "document": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/summary.json",
+      "field": [
+        "outputs_sha256"
+      ],
+      "files": {
+        "extract.json": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/extract.json",
+        "extract.stderr": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/extract.stderr",
+        "extract.stdout": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/extract.stdout",
+        "pose.json": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/pose.json",
+        "pose.stderr": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/pose.stderr",
+        "pose.stdout": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/pose.stdout",
+        "version.stderr": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/version.stderr",
+        "version.stdout": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/version.stdout"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "root-motion-native/author/pose",
+      "log": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/pose.stdout",
+      "parsed": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/pose.json"
+    },
+    {
+      "kind": "log",
+      "id": "root-motion-native/author/extract",
+      "log": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/extract.stdout",
+      "parsed": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/extract.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "root-motion-native/review/source",
+      "document": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-root-motion-boundary/review/fixture/run.py",
+        "main.gd": "research/experiments/godot-root-motion-boundary/review/fixture/main.gd",
+        "project.godot": "research/experiments/godot-root-motion-boundary/review/fixture/project.godot",
+        "contract.json": "research/experiments/godot-root-motion-boundary/review/fixture/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "root-motion-native/review/outputs",
+      "document": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/summary.json",
+      "field": [
+        "outputs_sha256"
+      ],
+      "files": {
+        "extract.json": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/extract.json",
+        "extract.stderr": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/extract.stderr",
+        "extract.stdout": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/extract.stdout",
+        "pose.json": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/pose.json",
+        "pose.stderr": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/pose.stderr",
+        "pose.stdout": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/pose.stdout",
+        "version.stderr": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/version.stderr",
+        "version.stdout": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/version.stdout"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "root-motion-native/review/pose",
+      "log": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/pose.stdout",
+      "parsed": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/pose.json"
+    },
+    {
+      "kind": "log",
+      "id": "root-motion-native/review/extract",
+      "log": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/extract.stdout",
+      "parsed": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/extract.json"
+    },
+    {
+      "kind": "equal",
+      "id": "root-motion-native/binary",
+      "left": "research/experiments/godot-root-motion-boundary/results/e53803a1-eab0-4823-a9f8-69e5624522c3/summary.json",
+      "right": "research/experiments/godot-root-motion-boundary/review/evidence/8f7817ac-8c38-44ed-80a9-b861b168ac3d/summary.json",
+      "field": [
+        "engine_sha256"
+      ],
+      "sha256": true
     }
   ]
 }

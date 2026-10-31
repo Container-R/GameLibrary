@@ -91,3 +91,5 @@ python3 scripts/evidence/test_verify.py
 [真实 Godot actor 回调政策夹具](experiments/godot-combat-policy/README.md)补足纯规则模型：固定实际子节点顺序、交换物理回调优先级；立即结算先手反转，快照资格/末阶段提交的规范化结果不变。[独立原始轨迹复验](experiments/godot-combat-policy/review/REVIEW.md)不冒充碰撞、并发或跨构建确定性。
 
 [资源候选与可变外部依赖](experiments/godot-resource-candidate/README.md)为既有资产文章补实际对象图所有权证据：IGNORE 新根仍可共享 Gradient，DEEP 在这个原生图中隔离修改。初始正数 ID 判据错误、最终原始记录和[独立复验](experiments/godot-resource-candidate/review/REVIEW.md)均保留。
+
+[Godot单骨根运动](experiments/godot-root-motion-boundary/README.md)分别保留普通姿态、提取、重复读取与显式应用的原生观察；作者与独立复验各两行为进程，不将四项旧几何测试改写为引擎证据。

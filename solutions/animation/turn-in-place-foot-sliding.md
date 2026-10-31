@@ -7,12 +7,15 @@ primary_discipline: ANIM
 related_disciplines: [PROG, TA, QA]
 related_roles: [technical-animator, gameplay-programmer, character-technical-artist]
 related_topics: [root-motion, turn-in-place, foot-planting, animation-retargeting, rig-evaluation-order, pose-dependencies]
-engines: [Unity, Unreal Engine]
-versions: ["Unity 6000.0", "Unreal Engine 5.6", "Unity Animation Rigging 1.2.1 documentation only"]
+engines: [Unity, Unreal Engine, Godot]
+versions: ["Unity 6000.0", "Unreal Engine 5.6", "Unity Animation Rigging 1.2.1 documentation only", "Godot 4.6 documentation", "Installed Godot self-report 4.6.3.stable.official.7d41c59c4; provenance caveat"]
 platforms: [engine-agnostic-diagnostic-workflow]
 updated_at: 2026-10-31
-verification_method: 官方版本文档与日本原始项目职责材料核对；既有4项Python二维接触模型测试；Rig依赖交接与六行接收表未执行，未运行引擎或真实角色资产
+verification_method: 官方版本文档与日本项目材料核对；4项Python二维模型测试；新增Godot原生两配置及独立两配置复跑（双方各另一次版本查询）；Rig六行表及真实角色/Unity/UE验证未执行
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_animationmixer.html
+  - https://docs.godotengine.org/en/4.6/classes/class_animationtree.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/animation/animation_mixer.cpp
   - https://www.jp.square-enix.com/tech/library/pdf/CEDEC2015_Luminous_FFXV_Animation.pdf
   - https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.2/manual/RiggingWorkflow.html
   - https://hrmos.co/pages/capcom/jobs/01_03_040
@@ -88,9 +91,29 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 
 2026-10-31 在 Python 3.12.14 实际执行了 4 项几何模型测试，全部通过。[脚本](../../research/experiments/root-motion/test_contact_transform.py)、[测试输出](../../research/experiments/root-motion/test-output.txt)和[运行范围](../../research/experiments/root-motion/README.md)已归档。通过结果不能外推为骨架约束、真实 IK 求解器或角色动画已验证。
 
-## 待执行引擎验证矩阵
+## 原生接口补证：提取、读取与应用是三件事
 
-以下均为**建议引擎实验，未执行**。
+[原创 Godot 夹具](../../research/experiments/godot-root-motion-boundary/README.md)在本机安装构建上执行两种配置：[独立复核](../../research/experiments/godot-root-motion-boundary/review/REVIEW.md)另重复两种配置。作者2个行为进程、审查者2个行为进程；双方另各1次`--version`命令，不把版本查询算成行为场景。没有下载角色或调用真实 IK：输入为原创单骨 Skeleton3D、两秒非循环位置/旋转轨道及 RESET，AnimationTree 以 MANUAL 明确推进，AnimationPlayer 只提供资源。
+
+| 观察 | 实际结果 |
+|---|---|
+| 普通姿态对照，未选根运动轨道，推进0.5秒 | 根骨位置x=1、绕Y旋转22.5°，父Node3D不动；证明轨道确实生效 |
+| 选择根骨为root_motion_track，同样推进 | 骨与父节点保持identity；位置delta为(1,0,0)，旋转delta为22.5° |
+| 没有再次求值，连续读取getter | 第二次仍返回同一非零delta，并不因第一次读取而清空 |
+| 用同一delta明确应用零次/一次/两次 | 独立Node3D接收者位置x=0/1/2，绕Y角0/22.5/45° |
+| 再推进0.25秒 | 新delta为(0.5,0,0)/11.25°，不是从片段起点累计的1.5/33.75° |
+
+这里重复读取本身不移动节点；重复执行应用代码才重复移动。适配层必须决定一个求值结果由谁、何时应用。**这不是引擎自动提供的事件消费或恰好一次协议**，本例也没有实现通用评估ID系统。
+
+`root_motion_local=false`被明确固定；接收者平移在父坐标中直接相加、旋转同轴相乘。它们是无碰撞Node3D，不是CharacterBody控制器，不能据此定义任意3D根运动积分。浮点容差、完整四元数、原始输出、源hash和运行ID见夹具；四元数判据识别q/-q的旋转等价。
+
+[Godot4.6 AnimationMixer文档](https://docs.godotengine.org/en/4.6/classes/class_animationmixer.html)区分根轨道提取、delta getter和用户应用；[固定比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/animation/animation_mixer.cpp)的getter仅返回成员，混合初始化与普通姿态应用另有分支。**构建身份限制：** 本轮安装二进制SHA256为`f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`，自报4.6.3.stable.official.7d41c59c4，与公开tag源码身份不一致；源码是比较依据，不是已认证的精确构建来源，见[共享说明](../../research/source-notes/godot-runtime-provenance.md)。
+
+此原生补证不把之前4项Python几何测试变成引擎测试，也不升级后面的Rig依赖工作表。实际角色、脚底接触质量、IK可达性、碰撞、混合、中断、循环、重定向以及Unity/Unreal行为仍未由本夹具验证，文章整体保持`source-backed`。
+
+## 待执行的真实角色与目标引擎验证矩阵
+
+以下针对实际角色/控制器的组合验证仍**未执行**，包括本文Unity/UE路径。上节Godot单骨数值夹具不等于这些用例通过。
 
 | 用例 | 采集与验收 |
 |---|---|
@@ -101,7 +124,7 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 | 30/60/144渲染帧率及卡顿 | 同一逻辑输入与片段策略下无重复根增量消费；不宣称网络确定性 |
 | 源角色与比例不同的目标角色 | 区分资产问题与重定向问题；检查腿可达范围与接触阈值 |
 
-关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)。后续若加入真正引擎复现，应保存版本、骨架/资产许可、控制器配置、日志与失败对照，再把相应**具体测试结论**标为 verified。
+关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)。后续若执行上述实际角色/目标引擎用例，应保存版本、骨架/资产许可、控制器配置、日志与失败对照，仅对相应具体结论更新证据，不扩大现有单骨夹具的范围。
 
 ## 补充：Rig 的组织层级也可能是姿态执行顺序
 
@@ -113,7 +136,7 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 - **Unity Animation Rigging 1.2.1**：`Rig Component` 文档明确，约束通过 `GetComponentsInChildren` 收集，层级深度优先顺序决定所生成 jobs 的求值顺序；这些 jobs 作用于 Animator 正常求值后的姿态。因此在这个版本，重排层级不一定只是整理文件。此处没有运行 Unity，也不声称 FFXV 使用这个实现。
 - **Capcom 的日文“テクニカルアニメーター/リガー”职责页**：列出控制 Rig、IK 和脚本辅助等工作，只支持该雇主的职责示例，不能把技术动画、绑定与动画程序统一成同一个全球职称。
 
-来源定位与访问限制见[姿态求值交接来源笔记](../../research/source-notes/rig-evaluation-handoff.md)。本节为来源支持的原创交接设计；原文已归档的是 4 项 Python 二维刚体接触几何模型测试，没有骨骼、真实 IK 或引擎回调；本节不改变其范围，也不把它当作 Unity Rigging 验证。
+来源定位与访问限制见[姿态求值交接来源笔记](../../research/source-notes/rig-evaluation-handoff.md)。本节为来源支持的原创交接设计。此前4项Python二维模型没有骨骼、真实IK或引擎回调；后来新增的Godot单骨根运动夹具也未执行本节Rig依赖表。两类实验均不构成Unity Rigging验证。
 
 ### 交付的是依赖关系，不只是一份骨骼名单
 
@@ -158,7 +181,7 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 
 ## 原始来源、定位与版权
 
-全部访问于 2026-10-31；只核对文本，不声称观看了嵌入动画全部帧，不转载官方示例代码、图片或角色资产。版本固定的入口可能仍被厂商更新，复现时应再次确认页面和安装版本。
+全部访问于 2026-10-31；外部来源核对限于文本/源码，不声称观看了嵌入动画全部帧，不转载官方示例代码、图片或角色资产。版本固定的入口可能仍被厂商更新，复现时应再次确认页面和安装版本。
 
 - **S1** Unity Technologies，[How Root Motion works](https://docs.unity3d.com/6000.0/Documentation/Manual/RootMotion.html)，Unity 6000.0；Root Transform Rotation / Loop Pose / Generic Root Motion and Loop Pose。
 - **S2** Unity Technologies，[OnAnimatorMove](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MonoBehaviour.OnAnimatorMove.html)，6000.0，Remarks。

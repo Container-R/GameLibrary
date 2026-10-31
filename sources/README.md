@@ -87,3 +87,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [原生 glTF 导入阶段](../research/experiments/godot-gltf-import-boundary/source-gate.md)保留固定规范、Godot API 与公开比较源码的边界；原生逻辑数组观察不等于编辑器/GPU证据。首轮额外AABB断言失败与修正过程公开保留，未调整冻结几何意图。
 
 [Rig 求值交接来源](../research/source-notes/rig-evaluation-handoff.md)将 Square Enix 的2015年日文项目材料、Unity Animation Rigging 1.2.1 的版本化规则与 Capcom 雇主职责例子分开。原创接收矩阵尚未执行；原根运动证据仍是 Python 几何模型，不因其他 Godot 实验存在而升级为引擎证据。
+
+[新增原生根运动观察](../research/experiments/godot-root-motion-boundary/README.md)独立于之前四项几何模型：两份新运行各包含普通骨姿态/根运动提取配置，重复读取不消费delta，显式重复应用才重复移动；不验证真实角色、IK或Unity Rig表。固定比较源码不认证安装构建。

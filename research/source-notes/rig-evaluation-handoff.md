@@ -43,3 +43,5 @@ https://hrmos.co/pages/capcom/jobs/01_03_040
 与原根运动方案互补：原方案处理对象运动提取/消费及接触诊断，这里处理局部姿态修正之间的依赖。已重新核对原文“4项几何模型测试”段与 research/experiments/root-motion/README.md：原根运动证据是Python二维刚体模型，不是Godot运行；没有骨骼、求解器或引擎回调。其他Godot动画事件实验也不建立根运动或Unity Rig约束顺序结论。若后续无法取得对应运行环境，保持source-backed方法，不声称测试通过。
 
 一次Autodesk2025资料链接读取失败；没有采用其支持结论，没有规避访问限制或重复穷举。
+
+后续证据说明：上述旧证据核对对应 Rig 交接研究时的快照。之后单独新增[Godot 单骨根运动接口观察](../experiments/godot-root-motion-boundary/README.md)，没有回写旧 Python 测试身份，也没有执行本文 Rig 接收工作表或 Unity 约束顺序验证。

@@ -1,0 +1,21 @@
+{
+  "normal": {
+    "command": [
+      "python",
+      "check_archives.py",
+      "assembled"
+    ],
+    "exit_code": 0
+  },
+  "optimized": {
+    "command": [
+      "python",
+      "-O",
+      "check_archives.py",
+      "assembled"
+    ],
+    "exit_code": 0
+  },
+  "stdout_identical": true,
+  "engine_executions": 0
+}
