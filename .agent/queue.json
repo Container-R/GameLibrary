@@ -919,7 +919,7 @@
       "id": "TASK-2026-0039",
       "question": "Level completion telemetry event, attempt and actor denominators",
       "discipline": "DATA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Coverage audit plus primary schema/metric sources identify report-validity gap connecting playtest and gameplay instrumentation",
       "expected_artifact": "solutions/data/attempt-completion-denominator-contract.md",
@@ -928,12 +928,40 @@
         "Separate event/attempt/actor identity and unresolved outcomes",
         "Independent enumerated oracle and bounded conflicts/retries"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:54:19.831575Z",
-      "next_action": "Verify reviewed telemetry article and neutral supervisor audit publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T18:57:32.357950Z",
+      "next_action": "Maintain explicit cohort/as-of/provider distinctions; no player outcome inference",
+      "blockers": [],
+      "completed_at": "2026-10-31T18:57:32.357950Z",
+      "commit_sha": "fe79fd5a6a8dc550d98b4d4acc94906a3b75ecd8"
+    },
+    {
+      "id": "TASK-2026-0040",
+      "question": "Narrative save loading versus intended content continuity across story revisions",
+      "discipline": "NARR",
+      "status": "researching",
+      "priority": 89,
+      "priority_rationale": "Existing pinned ink source gate exposes approximate saved-pointer recovery; distinguish source-backed compatibility protocol from unavailable runtime verification",
+      "expected_artifact": "research/source-notes/ink-save-content-compatibility.md",
+      "acceptance": [
+        "Exact pinned load/warning/error call chain",
+        "Content identity distinct from save-format version",
+        "Explicit runtime absence and bounded unexecuted acceptance protocol"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T18:57:32.357950Z",
+      "next_action": "Read pinned load-state and error propagation paths; independent source review without fabricated runtime tests",
+      "blockers": [
+        {
+          "scope": "actual ink runtime execution",
+          "reason": "No dotnet/mono/csi/inklecate on PATH or ink/inkjs in checked package roots; no install performed",
+          "alternative": "Proceed with bounded primary-source analysis"
+        }
+      ]
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "run_id": "20261031T184800Z-telemetry-attempt-contract",
   "started_at": "2026-10-31T18:48:18Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T18:57:32.357950Z",
   "task_id": "TASK-2026-0039",
-  "commit_sha": null,
-  "outcome": "reviewed; publication pending",
+  "commit_sha": "fe79fd5a6a8dc550d98b4d4acc94906a3b75ecd8",
+  "outcome": "Published and verified",
   "validation": {
     "fictional_rows": 18,
     "asof_snapshots": 2,
@@ -16,5 +16,11 @@
     "archive_consistency_expected": 120,
     "player_service_sdk_runs": 0
   },
-  "scope": "Finite original complete-batch identity/cohort policy; no causal or provider behavior guarantees"
+  "scope": "Finite original complete-batch identity/cohort policy; no causal or provider behavior guarantees",
+  "verified_selected_blobs": 62,
+  "local_links": 275,
+  "missing_local_links": 0,
+  "archive_checks_passed": 120,
+  "archive_checks_failed": 0,
+  "supervisor_record_published": ".agent/audits/20261031T185000Z.json"
 }
