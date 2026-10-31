@@ -25,6 +25,11 @@
           "document_id": "SOL-ANIM-001",
           "question": "角色转身脚滑由谁处理？",
           "rationale": "检查控制器与动画运动职责交接。"
+        },
+        {
+          "document_id": "CASE-ENGINE-001",
+          "question": "派生值不保存，为何读档后规则会分叉？",
+          "rationale": "以第一方历史案例区分可重建性、实时失效和合法检查点续跑等价；验收工作表未执行。"
         }
       ],
       "subject_profile_id": "ROLE-PROG-001"
@@ -130,6 +135,11 @@
           "document_id": "CASE-LIVE-001",
           "question": "登录测试通过是否覆盖所有实例的修改数据资格？",
           "rationale": "真实历史案例区分实例准入覆盖与数据恢复验收，建议不冒充已执行防护。"
+        },
+        {
+          "document_id": "CASE-ENGINE-001",
+          "question": "关闭触发功能后不再出错，算修复验收吗？",
+          "rationale": "区分诊断消融与保留产品语义的修复，并定位缓存首次读取和读档续跑差异。"
         }
       ]
     },

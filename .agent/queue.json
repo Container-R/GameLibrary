@@ -1241,13 +1241,14 @@
       "id": "TASK-2026-0052",
       "question": "Derived cache validity after mutable input expansion: uninterrupted versus load/recompute continuation",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "First-party production incident supplies concrete hidden-state mechanism beyond scalar prediction and source-only replay-time counterexample",
       "expected_artifact": "Focused historical Factorio cache/load-equivalence case and original acceptance worksheet",
       "artifact_paths": [
         "case-studies/engine/factorio-derived-cache-load-equivalence.md",
-        "research/audits/factorio-derived-cache"
+        "research/audits/factorio-derived-cache",
+        "research/source-notes/factorio-derived-cache-sources.md"
       ],
       "acceptance": [
         "Compact first-party FFF340 account with correct notify/recalculate remedy, not invented serialization fix",
@@ -1257,8 +1258,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T21:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:31:36.646177Z",
-      "next_action": "Draft and independently source-review concise case; FFF415 contrast remains historical and algorithm unspecified",
+      "last_progress_at": "2026-10-31T20:35:17.377303Z",
+      "next_action": "Publish source-only historical case and verified source/role-navigation links",
       "blockers": []
     }
   ]

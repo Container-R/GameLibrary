@@ -79,3 +79,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [导航体型交接](../research/experiments/godot-navigation-radius/README.md)区分烘焙半径、避让配置与独立静止物理重叠；原生地面三角形和墙体不属于同一烘焙输入，未执行角色运动。
 
 [预测依赖时间合同](../research/source-notes/prediction-dependency-time-contract.md)重新核对 Unity Netcode for Entities 1.4.1 与 Gambetta 原文；跨实体反例为原创未执行手算，不是 ECS 复现，也不否定现有单角色模型范围。
+
+[Factorio 派生缓存案例](../case-studies/engine/factorio-derived-cache-load-equivalence.md)与[来源回执](../research/source-notes/factorio-derived-cache-sources.md)区分 FFF 340 当时报告的通知/重算修复、FFF 415 的历史后续版本计划与本库未执行验收工作表；没有私有源码或游戏复现证据。

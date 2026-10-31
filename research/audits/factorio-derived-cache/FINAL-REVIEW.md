@@ -1,0 +1,7 @@
+# Final Factorio case integration acceptance
+
+2026-10-31 20:35 UTC. Accepted read-only gamelibrary-publish-factorio integration. Case SHA256 d684656b6f8a414b1d6d29add6d99eeaddc7cff4aa44a1615c82fa9b0997738f and receipt0781fbf3700ab550d603944fa35b19111908ac457e6373b47a8420156b6f3945 match independently reviewed drafts byte-for-byte. CASE-ENGINE-001 identifies case-studies/engine/factorio-derived-cache-load-equivalence.md; source receipt at research/source-notes/factorio-derived-cache-sources.md.
+
+Checked reading-route registry and generated DISCOVERY entries: gameplay role and game-quality-assurance role route to the exact case ID/path, retain source-backed/ENGINE classification, and provide distinct cache/load-equivalence versus diagnostic-ablation rationales. Neither implies completed player/usability testing or implemented worksheet. Source-index addition correctly separates FFF340 reported remedy, FFF415 historical future-release statement and original unexecuted acceptance work. No private source/game reproduction claim.
+
+All relative links in case, receipt, source index and DISCOVERY resolve. Full discovery gate remains local rather than duplicating an expanded source retelling publicly. Parent's27-document/52-task/19-path validator results are integration evidence, not newly executed reviewer runtime; this check made no native/game calls or main edits. No material blocker found.

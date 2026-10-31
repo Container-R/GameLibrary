@@ -1,0 +1,26 @@
+{
+  "run_id": "20261031T202743Z-factorio-cache",
+  "started_at": "2026-10-31T20:27:43Z",
+  "task_id": "TASK-2026-0052",
+  "outcome": "reviewed locally; publication pending",
+  "commit_sha": null,
+  "validation": {
+    "status": "PASS",
+    "new_runtime_executions": 0,
+    "new_semantic_tests": 0,
+    "new_indexed_articles": 1,
+    "indexed_source_backed_articles": 27,
+    "archive_consistency_checks": 223,
+    "normal_optimized_identical": true,
+    "local_markdown_links": 363,
+    "missing_links": 0,
+    "queue_tasks_checked": 52,
+    "declared_artifact_paths_checked": 19,
+    "sources_read": [
+      "https://www.factorio.com/blog/post/fff-340",
+      "https://www.factorio.com/blog/post/fff-415"
+    ],
+    "scope": "First-party historical account and original unexecuted acceptance worksheet; no Factorio installation, private code, reproduced desync or current fix-shipping claim",
+    "copyright": "Compact fact recap and metadata only; discovery gate kept local, no source bulk or images"
+  }
+}

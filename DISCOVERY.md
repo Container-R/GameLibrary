@@ -15,6 +15,8 @@
   - 关联理由：区分尚未就绪、部分路径与目标到达。
 - 角色转身脚滑由谁处理？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
   - 关联理由：检查控制器与动画运动职责交接。
+- 派生值不保存，为何读档后规则会分叉？ → [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `CASE-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：以第一方历史案例区分可重建性、实时失效和合法检查点续跑等价；验收工作表未执行。
 
 ## 从技术美术出发
 路线 ID：`role-technical-art`
@@ -65,6 +67,8 @@
   - 关联理由：用固定人口与as-of验收报表，不把未知终态、重试或帮助上下文混成玩家失败。
 - 登录测试通过是否覆盖所有实例的修改数据资格？ → [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `CASE-LIVE-001` · `source-backed` · `LIVE`
   - 关联理由：真实历史案例区分实例准入覆盖与数据恢复验收，建议不冒充已执行防护。
+- 关闭触发功能后不再出错，算修复验收吗？ → [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `CASE-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：区分诊断消融与保留产品语义的修复，并定位缓存首次读取和读档续跑差异。
 
 ## 从关卡策划出发：区分空间意图、可行性与玩家理解
 路线 ID：`role-level-design`
