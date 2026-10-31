@@ -1,0 +1,15 @@
+# Vulkan capability gate: independent pre-execution acceptance
+
+2026-10-31 22:37 UTC. Source/ABI/control review only; no ctypes CDLL load, Vulkan call, compilation, engine or capability probe executed by reviewer. This accepts a bounded proposal, not a runtime result.
+
+Independently fetched Vulkan-Headers b379292b2ab6df5771ba9870d53cf8b2c9295daf vulkan_core.h and vk_platform.h through GitHub. VkInstanceCreateInfo field order, pointer dispatchable handles, uint32 flags/count and VkResult signatures match the proposed Linux x86_64 LP64 mapping. Natural alignment yields offsets 0,8,16,24,32,40,48,56 and size64/alignment8; no packed structure. Default Linux ordinary C calling convention supports CDLL explicit signatures. Null application/allocator fields avoid additional structure ABI. Size/architecture checks must execute before the library load, not merely be documented.
+
+Official current refpages independently read: VkInstanceCreateInfo, VkApplicationInfo, vkCreateInstance, vkEnumeratePhysicalDevices, vkDestroyInstance at docs.vulkan.org/refpages/latest/refpages/source/. NULL application info requests API1.0 semantics. Enumeration count/fill uses uint32 capacity then actual written count; VK_INCOMPLETE means partial results. Destroy uses matching NULL allocator and is called once only for successfully created nonnull instance. Physical-device handles have no separate destruction here; no device/queue/resource is created.
+
+Pinned loader documentation aa6dee8385afe4b2cc0152d086af2184743e16fd docs/LoaderDriverInterface.md Linux discovery section confirms XDG/system roots and build-time path caveats. Fresh HOME/XDG and explicit system XDG_DIRS plus minimal env create a scoped probe, not the unchanged desktop environment or exhaustive driver/hardware census. No private-home scans or manufactured VK_DRIVER_FILES failure needed. Implicit system layers and build paths remain possible; installed filename/hash is not authenticated loader origin.
+
+Control plan is sound: bind three symbols first; create once; count once only after valid success; fill once at capacity1..64; no growth/retry; destroy in finally on normal Python paths. Preserve ABI/binding/API/count-bound/partial/timeout/crash/anomaly categories separately. Negative API return is an observed obstacle, not a passed GPU test; nonzero enumeration is not shader execution and can represent software devices.
+
+Two implementation details sent to author/main before code: apply returned-count<=capacity and nonnull-in-returned-range validation to BOTH SUCCESS and INCOMPLETE, without calling the latter complete; log call attempt before native entry and returned result afterward to distinguish incomplete/crashed calls. Suppress handle addresses in structured reports. Timeout bounds waiting, not crash-safe cleanup. No generic native safety or sandbox guarantee.
+
+Source-only gate has no material blocker under these constraints. Existing shader article stays compile+CPU interpretation only regardless of enumeration result. Future code must be reviewed against this gate before accepting any observed capability.

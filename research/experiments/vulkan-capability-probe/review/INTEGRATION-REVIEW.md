@@ -1,0 +1,3 @@
+# Staged integration acceptance
+
+2026-10-31 22:47 UTC. Read final `gamelibrary-publish-vulkan` matrix article and source note; exact hashes in `integration-hashes.json`. Accepted: verification_method explicitly separates the single -9 instance request from prior actual compilation/CPU interpretation; old no-GPU-API wording now scoped to original compilation fixture. New subsection correctly retains no instance, zero enumeration/destruction and no shader execution; normal child exit is not GPU success. Minimal environment and lack of authenticated loader origin are explicit. Source note is byte-identical to reviewed corrected d18e3137 draft. Relative links resolve in staged tree. No native calls or new runtime tests for this integration review.

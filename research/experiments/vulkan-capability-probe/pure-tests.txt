@@ -1,0 +1,11 @@
+test_abi (test_pure.Pure.test_abi) ... ok
+test_create_negative_trace (test_pure.Pure.test_create_negative_trace) ... ok
+test_failure_category_guards (test_pure.Pure.test_failure_category_guards) ... ok
+test_fill (test_pure.Pure.test_fill) ... ok
+test_json (test_pure.Pure.test_json) ... ok
+test_missing_abi (test_pure.Pure.test_missing_abi) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

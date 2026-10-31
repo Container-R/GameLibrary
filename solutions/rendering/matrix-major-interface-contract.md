@@ -11,7 +11,7 @@ engines: []
 versions: ["GLSL 450", "Vulkan 1.0 / SPIR-V 1.0 compile target", "installed libshaderc byte identity, release unknown", "shaderc API comparison 3362e24c42ab5bf7ad32c0fec64b0a0ddeb2fda1", "Python 3.12.14"]
 platforms: [offline-cpu-compilation]
 updated_at: 2026-10-31
-verification_method: 固定官方规范与 C API 核对；两个实际编译进程及独立同库复跑，字面 assembly/host bytes 判据，三个启动失败负例；CPU 数值解释，不含 shader 执行
+verification_method: 固定官方规范与 C API 核对；两个实际编译进程及独立同库复跑，字面 assembly/host bytes 判据，三个启动失败负例；CPU 数值解释；另一次隔离 Vulkan instance 请求返回 -9，不含 shader 执行
 sources:
   - https://github.com/KhronosGroup/GLSL/blob/0099bf83b0288469917fc2e2972cb0a2b74d6711/chapters/variables.adoc
   - https://github.com/KhronosGroup/GLSL/blob/0099bf83b0288469917fc2e2972cb0a2b74d6711/chapters/operators.adoc
@@ -84,7 +84,13 @@ std140 下本例的每个行/列记录使用 16-byte stride。3 个 float32 分�
 
 [补充语义审查](../../research/experiments/shader-matrix-layout/review/SEMANTIC-AUDIT.md)逐项追踪这两份已归档 assembly 的 Params 变量 → 成员 0 地址 → 矩阵 load → 与 `(1,2,3)` 相乘 → Output.value store，补上“模块中存在某个乘法指令”还不足以证明消费关系的缺口。对 major、stride、块/成员名、host 元素、load 连线和 store 来源各作一次合成修改，两份输出共 14 个变异均被独立字面判据拒绝。这些是归档文本/字节反例，不是另外 14 次编译；精确标识符检查也不是通用 SPIR-V 验证器。
 
-这证明的是**实际编译器产生了需要区分 major 的接口信息**，以及有限 CPU 解释能够揭示错误编码。没有执行 SPIR-V，也没有调用 GPU API、上传缓冲区、创建 pipeline、验证实际 binding 或读回 shader 结果；同库复跑不是第二种编译器的交叉验证。已检查的 PATH 与有限工具目录中未找到独立 SPIR-V validator CLI，本例不宣称完整模块验证。
+这证明的是**实际编译器产生了需要区分 major 的接口信息**，以及有限 CPU 解释能够揭示错误编码。原编译夹具没有执行 SPIR-V，也没有调用 GPU API、上传缓冲区、创建 pipeline、验证实际 binding 或读回 shader 结果；同库复跑不是第二种编译器的交叉验证。已检查的 PATH 与有限工具目录中未找到独立 SPIR-V validator CLI，本例不宣称完整模块验证。
+
+### 后续能力门：库存在，不等于可以执行 shader
+
+为判断是否能够开始独立的实际执行方案，另行冻结 ABI 与调用协议，并在一个隔离 Python 子进程中请求 Vulkan 1.0 instance。[能力门原始记录](../../research/experiments/vulkan-capability-probe/README.md)显示：`vkCreateInstance` 尝试一次、返回一次，结果为 `-9 / VK_ERROR_INCOMPATIBLE_DRIVER`。没有成功 instance，因而枚举与销毁调用均为零；未创建 device、pipeline 或执行 shader。子进程正常退出只表示负面结果已记录，不是 GPU 测试通过。
+
+这次观察只针对归档的 loader 字节和 system-path-only 最小环境，不证明机器没有物理 GPU，也不认证驱动/loader 来源。标准目录扫描未见 manifest 是有限线索，不是全局硬件调查；没有安装驱动、改变覆盖变量或重试其他 API。独立审查只复核原始记录和源代码，没有第二次原生运行。[来源与停止条件](../../research/source-notes/vulkan-capability-gate.md)保留接口、环境与证据层级。**原有两种矩阵结果仍是编译输出加 CPU 解释，实际 shader 执行关卡仍未完成。**
 
 ## 4. 项目验收：不要只比较结构体 sizeof
 

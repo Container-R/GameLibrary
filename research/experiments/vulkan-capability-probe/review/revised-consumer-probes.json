@@ -1,0 +1,61 @@
+{
+  "native_calls": 0,
+  "cases": [
+    {
+      "case": "consistent API negative",
+      "accepted": true,
+      "expected_acceptance": true,
+      "matches": true,
+      "reason": "INSTANCE_CREATION_FAILED"
+    },
+    {
+      "case": "wrong ABI",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: missing/malformed ABI fields"
+    },
+    {
+      "case": "wrong loader",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: recorded loader mismatch"
+    },
+    {
+      "case": "missing after hash",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: missing/changed loader after hash"
+    },
+    {
+      "case": "empty failure trace",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: creation failure mismatch"
+    },
+    {
+      "case": "wrong negative category",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: unexpected create category"
+    },
+    {
+      "case": "unfinished call",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: unfinished native call"
+    },
+    {
+      "case": "missing ABI guard evidence",
+      "accepted": false,
+      "expected_acceptance": false,
+      "matches": true,
+      "reason": "ValueError: missing/malformed ABI fields"
+    }
+  ]
+}

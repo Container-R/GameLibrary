@@ -3383,6 +3383,58 @@
       "id": "skeleton-order/independent/behavior",
       "log": "research/experiments/godot-skeleton-modifier-order/review/evidence/6703fd88-731a-4879-8a5d-6f2ac968b3e2/behavior.stdout",
       "parsed": "research/experiments/godot-skeleton-modifier-order/review/evidence/6703fd88-731a-4879-8a5d-6f2ac968b3e2/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "vulkan-capability/source_sha256",
+      "document": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/vulkan-capability-probe/protocol.json",
+        "isolation.py": "research/experiments/vulkan-capability-probe/isolation.py",
+        "child.py": "research/experiments/vulkan-capability-probe/child.py",
+        "run.py": "research/experiments/vulkan-capability-probe/run.py",
+        "consume.py": "research/experiments/vulkan-capability-probe/consume.py",
+        "test_pure.py": "research/experiments/vulkan-capability-probe/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "vulkan-capability/source_after_sha256",
+      "document": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/vulkan-capability-probe/protocol.json",
+        "isolation.py": "research/experiments/vulkan-capability-probe/isolation.py",
+        "child.py": "research/experiments/vulkan-capability-probe/child.py",
+        "run.py": "research/experiments/vulkan-capability-probe/run.py",
+        "consume.py": "research/experiments/vulkan-capability-probe/consume.py",
+        "test_pure.py": "research/experiments/vulkan-capability-probe/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "vulkan-capability/stdout.txt",
+      "document": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "vulkan-capability/stderr.txt",
+      "document": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/stderr.txt"
     }
   ]
 }

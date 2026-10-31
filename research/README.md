@@ -105,3 +105,5 @@ python3 scripts/evidence/test_verify.py
 [Addressables已发布基线合同](../solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。
 
 [双骨LookAt顺序与读取时点](experiments/godot-skeleton-modifier-order/README.md)采用新的五位置helper，但不改旧运行器；三次行为尝试含一次完整判据失败，接受结果仅覆盖两个顺序和固定输入。
+
+[Vulkan隔离能力门](experiments/vulkan-capability-probe/README.md)记录一次create返回-9、零枚举/销毁；退出0是负面观察已归档，不是GPU成功。

@@ -1,0 +1,77 @@
+{
+  "native_calls": 0,
+  "observations": [
+    {
+      "synthetic_record": {
+        "category": "ENUMERATION_FAILED",
+        "trace": []
+      },
+      "accepted_as": "ENUMERATION_FAILED"
+    },
+    {
+      "synthetic_record": {
+        "category": "LOADER_BINDING_FAILED",
+        "trace": []
+      },
+      "accepted_as": "LOADER_BINDING_FAILED"
+    },
+    {
+      "synthetic_record": {
+        "category": "ABI_GUARD_FAILED",
+        "trace": []
+      },
+      "accepted_as": "ABI_GUARD_FAILED"
+    },
+    {
+      "synthetic_record": {
+        "category": "ENUMERATED_ZERO",
+        "trace": [
+          {
+            "call": 1,
+            "name": "create",
+            "phase": "attempt"
+          },
+          {
+            "call": 1,
+            "name": "create",
+            "phase": "returned",
+            "result": 0
+          },
+          {
+            "call": 2,
+            "name": "enumerate_count",
+            "phase": "attempt"
+          },
+          {
+            "call": 2,
+            "name": "enumerate_count",
+            "phase": "returned",
+            "result": 0
+          },
+          {
+            "call": 3,
+            "name": "destroy",
+            "phase": "attempt"
+          },
+          {
+            "call": 3,
+            "name": "destroy",
+            "phase": "returned",
+            "result": 123
+          }
+        ],
+        "create_result": 0,
+        "instance_nonnull": true,
+        "count_result": 0,
+        "count_query": 0,
+        "abi": {
+          "invalid": true
+        },
+        "loader": {
+          "sha256": "wrong"
+        }
+      },
+      "accepted_as": "ENUMERATED_ZERO"
+    }
+  ]
+}

@@ -1610,11 +1610,14 @@
       "id": "TASK-2026-0065",
       "question": "Does the scoped installed Vulkan loader support instance/device enumeration sufficiently to justify a later shader-execution proposal, or is that branch blocked?",
       "discipline": "GFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Existing matrix article is actual compile plus CPU interpretation only; loader presence cannot establish shader execution capability",
       "expected_artifact": "Frozen ABI-reviewed bounded loader/instance/enumeration capability observation or exact negative; no shader execution claim",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/vulkan-capability-gate.md",
+        "research/experiments/vulkan-capability-probe/README.md"
+      ],
       "acceptance": [
         "Read current matrix evidence and official pinned header/calling convention and loader discovery docs",
         "Review LP64 structure layout and all three function signatures before ctypes native execution",
@@ -1626,8 +1629,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:37:39.108968Z",
-      "next_action": "Complete independent ABI/control review of source gate, freeze minimal probe before one authorized scoped invocation",
+      "last_progress_at": "2026-10-31T22:47:16.913671Z",
+      "next_action": "Publish reviewed scoped negative and retain shader execution gap; no runtime retry",
       "blockers": []
     }
   ]

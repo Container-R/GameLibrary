@@ -6,10 +6,10 @@
     "TASK-2026-0065"
   ],
   "last_completed_at": "2026-10-31T22:37:39.108968Z",
-  "last_real_progress_at": "2026-10-31T22:37:39.108968Z",
+  "last_real_progress_at": "2026-10-31T22:47:16.913671Z",
   "last_commit_sha": "46721b505d6e8f1d367668a05ace2d58a23fc8ae",
-  "last_run_id": "20261031T222634Z-skeleton-modifier-order",
-  "next_action": "Complete independent ABI/control review of source gate, freeze minimal probe before one authorized scoped invocation",
+  "last_run_id": "20261031T224540Z-vulkan-capability",
+  "next_action": "Publish reviewed scoped negative and retain shader execution gap; no runtime retry",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
