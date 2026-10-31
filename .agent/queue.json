@@ -1464,11 +1464,16 @@
       "id": "TASK-2026-0060",
       "question": "What collision-callback mutation boundary can be established beyond the current ordering-only combat fixture?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 95,
       "priority_rationale": "Existing actor-priority observations do not validate actual physical contact callbacks or safe collision-state mutation",
       "expected_artifact": "Source-gated minimal callback/mutation study, or explicit bounded negative feasibility finding",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/programming/fixed-step-simulation-boundary.md",
+        "research/experiments/godot-physics-callback-v1",
+        "research/experiments/godot-physics-callback-v2",
+        "research/source-notes/physics-callback-mutation-boundary.md"
+      ],
       "acceptance": [
         "Read current exact fixed-step/combat evidence before claiming new applicability",
         "Verify versioned official physics/collision docs and fixed comparison source",
@@ -1478,8 +1483,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T22:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T21:44:22.341807Z",
-      "next_action": "Review source-only callback mutation gate before deciding whether a bounded native fixture is justified",
+      "last_progress_at": "2026-10-31T21:58:37.203604Z",
+      "next_action": "Publish bounded kinematic physics-callback evidence, preserved static failures and parser correction",
       "blockers": []
     }
   ]

@@ -9,8 +9,15 @@ related_topics: [fixed-timestep, input-buffering, deterministic-simulation, pres
 engines: [engine-agnostic, Unity, Godot]
 versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 updated_at: 2026-10-31
-verification_method: 原始文档核对、原创模型与本地Godot实际无头回调夹具；未运行Unity或跨平台确定性测试
+verification_method: 原始文档、原创模型与本地Godot回调及两配置kinematic碰撞查询边界；含失败历史与独立复验，未运行Unity或跨平台确定性测试
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_collisionshape2d.html
+  - https://docs.godotengine.org/en/4.6/classes/class_area2d.html
+  - https://docs.godotengine.org/en/4.6/classes/class_object.html
+  - https://docs.godotengine.org/en/4.6/classes/class_scenetree.html
+  - https://docs.godotengine.org/en/4.6/classes/class_physicsserver2d.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/2d/physics/collision_shape_2d.cpp
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/godot_physics_2d/godot_physics_server_2d.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_node.html
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/main/scene_tree.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_animationplayer.html
@@ -174,3 +181,27 @@ record(backlog=A, simulatedSteps=steps)
 因此，用表现位置追赶模拟时间不能证明规则事件已按区间完整交付或恰好一次；是否补算、跳过、去重，仍需应用合同。不能反向断言动画事件永远不应参与玩法，更不能把 IMMEDIATE 当作生产默认建议。本实验不覆盖 DEFERRED、循环、倒播、混合、AnimationTree、其他构建或引擎。
 
 官方固定提交的实现只作语义参照，与本地二进制的精确来源对应尚未建立；详见[身份取证](../../research/source-notes/godot-runtime-provenance.md)。[独立复核](../../research/experiments/godot-animation-events/review/README.md)使用原始 CONFIG/TRACE/SIGNAL 重新验收，不把同摘要复跑变成发行真实性认证。
+
+## 碰撞回调中的“已禁用”标志，不等于物理参与已经撤销
+
+前述四配置战斗夹具只验证 Node 回调中的业务结算，没有接触检测。本节另用两个原创圆形、一个 Area2D 和一个 CharacterBody2D（服务器读取 body mode 为 KINEMATIC）补充一个**真实物理查询回调边界**：第一次 `body_entered` 中禁用传感器的 CollisionShape2D，直接赋值与 `set_deferred` 有何不同？没有调用 `move_and_slide`，也没有真实伤害或角色控制器。
+
+| 相同有限移动协议下的观察 | 回调内直接赋值 | 回调内排入 deferred setter |
+|---|---|---|
+| setter 调用后立即读取 `disabled` | true | false |
+| 同线程、setter 后排入的 deferred 观察点 | true | true |
+| 诊断 | 一条确切的 flushing-queries 错误及限定上下文 | 无错误 |
+| 同一真实 callback 参数对象的接触序列 | enter → exit → enter | enter → exit；返回后的固定窗口内无第二次 enter |
+| 最终 overlap 列表 | 仍包含该对象 | 空 |
+
+两个分支在相同 deferred 观察点把物体移到外侧，等待四次 `SceneTree.physics_frame` 边界后移回，再观察四次边界；不是一边回调内移动、一边延后移动。直接分支要求**实际 exit 位于两次 enter 之间**，排除把重复通知当成重新接触；全程不反向切换 disabled 来修复它。`physics_frame` 在逐节点物理回调前发出，不等于“已完成一轮求解”；未再次进入传感区域的观察只限归档的有限窗口。
+
+这个结果的重点不是“引擎没看到 true”，而是**场景端请求状态和物理服务器接受状态不能混为一谈**。固定公共比较源码中，CollisionShape2D 先写本地成员，owner 再写其状态，最后服务器在 flushing queries 检查处拒绝修改；因此属性读回不足以充当物理变更回执。Godot 4.6 文档要求该属性使用 deferred 设置，但 deferred 也不承诺下一整帧才生效：本次两分支观察点均与第一次进入处于同一 physics-frame 计数。源码身份与本地二进制的精确对应仍[未确认](../../research/source-notes/godot-runtime-provenance.md)。[来源与接收边界](../../research/source-notes/physics-callback-mutation-boundary.md)逐项区分了文档、比较源码和本地观察。
+
+**原创业务交接建议，未实现为伤害系统：** 分别记录“本次攻击是否仍具业务资格”“物理禁用请求是否已排队”“后续物理参与证据”。收到已在分发中的接触时，按项目已选的伤害/去重政策判断，而不要只凭 `disabled==true` 推导后端已撤销接触。本文既没有证明 deferred 可以撤回已分发事件，也不要求所有游戏采用同时结算；旧业务政策夹具的边界保持不变。
+
+### 证据计数与失败保留
+
+[当前 v2 归档](../../research/experiments/godot-physics-callback-v2/README.md)只有**两个配置**。初次作者、独立复验、加固解析器后的作者各执行这两个配置和一条版本命令，共六个行为进程、三条版本命令，不是六种场景。当前作者 UUID `b3e7b2d4-351b-4342-8b6b-a084fda177f8`；[独立复核](../../research/experiments/godot-physics-callback-v2/review/REVIEW.md)另存实际 callback 身份、轨迹、诊断和有限窗口判据。解析器纯测试不增加引擎案例数。
+
+[原始 v1](../../research/experiments/godot-physics-callback-v1/README.md)另保留三条版本命令和三次失败的 direct 尝试：首个子进程返回 -6，stderr 另打印 signal 11 诊断；隔离数据目录后，两次 StaticBody2D 配置均未在初始窗口收到接触。其确切原因未证实。v2 的 kinematic 类型是**重新冻结的实验**，不是把 v1 改判成功。初次 v2 解析器还曾遗漏 stdout 中的额外错误文本；实际日志无此错误，现已保留旧解析器及合成负例，并以新解析器重新执行两个配置。整篇仍为 `source-backed`，不升级为所有物理后端、线程、接触顺序或生产伤害系统的保证。

@@ -95,3 +95,5 @@ python3 scripts/evidence/test_verify.py
 [Godot单骨根运动](experiments/godot-root-motion-boundary/README.md)分别保留普通姿态、提取、重复读取与显式应用的原生观察；作者与独立复验各两行为进程，不将四项旧几何测试改写为引擎证据。
 
 [图形与渲染程序](../roles/rendering/graphics-programmer.md)补充视觉需求、接口、性能证据与维护的职责交接；三份雇主材料和一个历史制作案例不证明原创建议已被采用。
+
+[物理查询回调中的形状状态](experiments/godot-physics-callback-v2/README.md)区分场景属性与有限物理参与证据；[原始失败夹具](experiments/godot-physics-callback-v1/README.md)保持失败身份。重新冻结的kinematic配置、原始错误、解析器缺口和修正分别归档，不承诺下一tick或完整伤害政策。

@@ -1,0 +1,68 @@
+{
+  "invocation": "a253567d-2230-43ca-9e02-8a8eb8415367",
+  "started_utc": "2026-10-31T21:53:21.708958+00:00",
+  "status": "PASS",
+  "source_sha256": {
+    "run.py": "3db75326470b308647e0b5db8174e8858ffb9fa45c7376c9ea1804fc55d13b7f",
+    "main.gd": "51b43cf26885774284459aa67d46d603945e389b2b5352bfd760a2b2c5be4d2e",
+    "project.godot": "6a6c99fb0351651f8701f07062a0b16a39daa913d6ec098005e753dcee9e896c",
+    "contract.json": "26f80627f6afea5413b664c3a4097118c437655b81fdfaa8ec47866b10aa6dde"
+  },
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "name": "version",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--version"
+      ],
+      "timeout_seconds": 20,
+      "returncode": 0,
+      "timed_out": false
+    },
+    {
+      "name": "direct-shape",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/physics-callback-kt6b8wvq",
+        "--script",
+        "res://main.gd",
+        "--",
+        "direct-shape"
+      ],
+      "timeout_seconds": 20,
+      "returncode": 0,
+      "timed_out": false
+    },
+    {
+      "name": "deferred-shape",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/tmp/physics-callback-kt6b8wvq",
+        "--script",
+        "res://main.gd",
+        "--",
+        "deferred-shape"
+      ],
+      "timeout_seconds": 20,
+      "returncode": 0,
+      "timed_out": false
+    }
+  ],
+  "output_sha256": {
+    "deferred-shape.json": "1a866eff642532f0baffa6e1e00de5017be46c352ffe78237df2cbeb39e7b1a3",
+    "deferred-shape.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "deferred-shape.stdout": "d52781c1e90b7ad8277c00ecf5ac16ba75ab1ecb5c4e8d29a63336e2a450e693",
+    "direct-shape.json": "d4c1ee5aa7fbad5af1d6843ef08195fa8b0563324f77a39d3db1ca587f1426a9",
+    "direct-shape.stderr": "ef5397a34f999a21010f7287bbd766add995d3a6b30f30420449c23de7534025",
+    "direct-shape.stdout": "06094d93c5410ea339640766ee981cf7a9687ac3d2b1ecabe56843d5eb854f18",
+    "version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.stdout": "1e07780c365549219ffd8e6bd120a818c80424e8295d4ee7451c10d0ed0fa84f"
+  }
+}

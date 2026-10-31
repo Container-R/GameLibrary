@@ -1,0 +1,81 @@
+{
+  "hardened_runner_sha256": "2b00a96795564d2dc067928ceaa2f3c541ecc699873c80d9f9ae2d54a54f4803",
+  "accepted_clean_records": 2,
+  "rejected_synthetic_records": 16,
+  "new_engine_executions": 0,
+  "mode": "normal",
+  "checks": [
+    {
+      "name": "direct-shape clean",
+      "accepted": true
+    },
+    {
+      "name": "direct-shape stdout ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "direct-shape stdout SCRIPT ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "direct-shape stdout    ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "direct-shape extra stderr",
+      "rejected": true
+    },
+    {
+      "name": "direct-shape duplicate result",
+      "rejected": true
+    },
+    {
+      "name": "direct-shape missing result",
+      "rejected": true
+    },
+    {
+      "name": "duplicate primary",
+      "rejected": true
+    },
+    {
+      "name": "missing primary",
+      "rejected": true
+    },
+    {
+      "name": "extra script stderr",
+      "rejected": true
+    },
+    {
+      "name": "unknown context",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape clean",
+      "accepted": true
+    },
+    {
+      "name": "deferred-shape stdout ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape stdout SCRIPT ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape stdout    ERROR: unrelated",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape extra stderr",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape duplicate result",
+      "rejected": true
+    },
+    {
+      "name": "deferred-shape missing result",
+      "rejected": true
+    }
+  ]
+}

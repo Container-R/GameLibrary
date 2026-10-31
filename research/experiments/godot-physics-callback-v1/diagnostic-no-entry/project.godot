@@ -1,0 +1,9 @@
+config_version=5
+[application]
+config/name="Physics callback mutation boundary"
+[physics]
+2d/physics_engine="GodotPhysics2D"
+2d/run_on_separate_thread=false
+common/physics_ticks_per_second=60
+[rendering]
+renderer/rendering_method="gl_compatibility"

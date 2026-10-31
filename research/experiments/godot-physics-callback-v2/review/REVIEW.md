@@ -1,0 +1,19 @@
+# Independent kinematic physics-callback review
+
+2026-10-31 21:54 UTC. Current native observations accepted; runner publication acceptance pending bounded stdout diagnostic hardening.
+
+Read contract before new run and preserved prospective oracle. Copied frozen runner3db75326/main51b43cf2/contract26f80627 (full hashes in check.json). Independent UUID a253567d-2230-43ca-9e02-8a8eb8415367 executed exactly two behavior processes plus one version command, all exit0. No additional native/optimized/timeout probes performed.
+
+Independent check.py imports no author implementation. It parses raw results and checks signed/nonzero actual callback body identity, direct enter-exit-enter and final overlap, deferred enter-exit and empty final list within frozen finite window, shape-property timings, no toggle repair, same geometry/config/body mode, four distinct prephysics boundaries per phase, ordered markers and source/output/binary hashes. Actual direct stderr is one exact primary plus three known context lines; deferred stderr empty; both actual stdout have no errors. Exact frame numbers remain observations, not acceptance requirements or universal latency.
+
+Read v1 failure archives and source-only diagnosis history: startup reported signal11 but recorded subprocess code is -6; two later static configurations had no initial contact. Those three failures are not a successful comparison or proof of an engine defect. Separate v2 uses CharacterBody2D/KINEMATIC; the source scheduling hypothesis justifies this configuration, not an established cause for v1. No move_and_slide or general controller/collision response claim. Backend/thread fields are configuration readback; same binary digest does not authenticate public source identity.
+
+Pure parser probes (parser-tests.py, no engine/subprocess) accepted two clean stderr baselines and rejected five mutations: duplicated primary, missing primary, extra ERROR, extra SCRIPT ERROR and unrelated context. A sixth synthetic probe demonstrates appended stdout SCRIPT ERROR survives original runner extraction and semantic checks. This is an avoidable acceptance gap, not a failure in the actual native trace. Parent/author notified; preserve current receipts/source, harden future stdout acceptance and retain correction history. Any new native replay requires explicit coordination; none performed here after initial repeat.
+
+## Hardened parser closure — 21:55 UTC
+
+Accepted hardened runner SHA256 `2b00a96795564d2dc067928ceaa2f3c541ecc699873c80d9f9ae2d54a54f4803` after exact diff inspection: adds parse_result and rejects stdout ERROR/SCRIPT ERROR before parsing/semantic acceptance; replaces inline extraction with that function. GDScript, project and frozen contract are byte-identical to independent native repeat. Original reviewer fixture/receipt still correctly identify runner3db75326; they were not relabeled as a run of the hardened version.
+
+Separate hardened-parser/check_parser.py imports only the copied new runner and reads retained reviewer raw streams. Normal and optimized Python each accept two clean raw records and reject sixteen synthetic stdout/stderr/result-record mutations, including duplicate/missing expected primary and unknown context. Reports normal.json/optimized.json preserve counts. These are pure parser calls with zero new engine executions, not thirty-two additional physics scenarios. Original stdout false-acceptance demonstration remains in parser-results.json.
+
+Author separately reports one coordinated additional two-config/version invocation under the final runner; that author execution is not counted as reviewer repeat. No additional reviewer native runtime occurred. Current behavior evidence and hardened acceptance checks are accepted within the frozen kinematic configuration and finite observation window. Generic output-parser/security proof and original static-failure causation remain excluded.

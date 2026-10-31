@@ -1,0 +1,45 @@
+{
+  "run_id": "20261031T214629Z-physics-callback-mutation",
+  "task_id": "TASK-2026-0060",
+  "started_at": "2026-10-31T21:46:29Z",
+  "local_review_completed_at": "2026-10-31T21:58:37.203604Z",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS for v2 only; original v1 remains FAIL",
+    "v1_failed_direct_attempts": 3,
+    "v1_version_queries": 3,
+    "v1_deferred_attempts": 0,
+    "v2_author_invocations": 2,
+    "v2_author_behavior_processes": 4,
+    "v2_author_version_queries": 2,
+    "v2_reviewer_behavior_processes": 2,
+    "v2_reviewer_version_queries": 1,
+    "total_behavior_attempts": 9,
+    "total_failed_behavior_attempts": 3,
+    "total_accepted_behavior_attempts": 6,
+    "total_version_queries": 6,
+    "unique_accepted_configurations": 2,
+    "author_pure_parser_unit_methods": 4,
+    "reviewer_hardened_parser_clean_records_per_mode": 2,
+    "reviewer_hardened_parser_rejected_synthetic_records_per_mode": 16,
+    "reviewer_parser_modes": [
+      "normal",
+      "-O"
+    ],
+    "main_archive_only_modes": [
+      "normal",
+      "-O"
+    ],
+    "archive_checks": 324,
+    "unchanged_old_noncontact_combat_files": 88,
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 28
+  },
+  "limits": [
+    "First startup returncode -6 differs from printed signal11 crash diagnostic",
+    "Static v1 no-entry cause remains unproven; source scheduling hypothesis only motivated separate frozen kinematic revision",
+    "Configured backend/thread readback is not implementation authentication",
+    "Finite return window and callback marker are not universal timing, permanent absence, native-stack instrumentation or damage policy",
+    "Original v2 stdout parser false acceptance preserved; current parser replay and independent pure tests do not relabel old receipts"
+  ]
+}

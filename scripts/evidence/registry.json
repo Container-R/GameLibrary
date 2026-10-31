@@ -2952,6 +2952,222 @@
         "engine_sha256"
       ],
       "sha256": true
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/source",
+      "document": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v1/initial-startup-failure/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v1/initial-startup-failure/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v1/initial-startup-failure/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v1/initial-startup-failure/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/outputs",
+      "document": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v1/results/fb43cbe6-ccbd-4507-9e2f-a3d61e2da016/version.stdout"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/a51adba6-2f98-4911-849f-a4a4b3831aac/source",
+      "document": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v1/initial-no-entry/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v1/initial-no-entry/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v1/initial-no-entry/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v1/initial-no-entry/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/a51adba6-2f98-4911-849f-a4a4b3831aac/outputs",
+      "document": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v1/results/a51adba6-2f98-4911-849f-a4a4b3831aac/version.stdout"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/1c95ee67-42da-438e-b857-becfdbc2aa10/source",
+      "document": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v1/diagnostic-no-entry/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v1/diagnostic-no-entry/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v1/diagnostic-no-entry/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v1/diagnostic-no-entry/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v1/1c95ee67-42da-438e-b857-becfdbc2aa10/outputs",
+      "document": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v1/results/1c95ee67-42da-438e-b857-becfdbc2aa10/version.stdout"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v2/39536c18-7525-4dcc-b264-ca94a2097a2d/source",
+      "document": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v2/historical-runner-before-stdout-guard/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v2/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v2/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v2/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v2/39536c18-7525-4dcc-b264-ca94a2097a2d/outputs",
+      "document": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "deferred-shape.json": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape.json",
+        "deferred-shape.stderr": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape.stderr",
+        "deferred-shape.stdout": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape.stdout",
+        "direct-shape.json": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape.json",
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/version.stdout"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/v2/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape",
+      "log": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/direct-shape.json"
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/v2/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape",
+      "log": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/results/39536c18-7525-4dcc-b264-ca94a2097a2d/deferred-shape.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v2/b3e7b2d4-351b-4342-8b6b-a084fda177f8/source",
+      "document": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v2/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v2/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v2/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v2/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/v2/b3e7b2d4-351b-4342-8b6b-a084fda177f8/outputs",
+      "document": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "deferred-shape.json": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape.json",
+        "deferred-shape.stderr": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape.stderr",
+        "deferred-shape.stdout": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape.stdout",
+        "direct-shape.json": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape.json",
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/version.stdout"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/v2/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape",
+      "log": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/direct-shape.json"
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/v2/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape",
+      "log": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/results/b3e7b2d4-351b-4342-8b6b-a084fda177f8/deferred-shape.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/review/source",
+      "document": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-physics-callback-v2/review/fixture/run.py",
+        "main.gd": "research/experiments/godot-physics-callback-v2/review/fixture/main.gd",
+        "project.godot": "research/experiments/godot-physics-callback-v2/review/fixture/project.godot",
+        "contract.json": "research/experiments/godot-physics-callback-v2/review/fixture/contract.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "physics-callback/review/outputs",
+      "document": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/receipt.json",
+      "field": [
+        "output_sha256"
+      ],
+      "files": {
+        "deferred-shape.json": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.json",
+        "deferred-shape.stderr": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.stderr",
+        "deferred-shape.stdout": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.stdout",
+        "direct-shape.json": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/direct-shape.json",
+        "direct-shape.stderr": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/direct-shape.stderr",
+        "direct-shape.stdout": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/direct-shape.stdout",
+        "version.stderr": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/version.stderr",
+        "version.stdout": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/version.stdout"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/review/direct-shape",
+      "log": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/direct-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/direct-shape.json"
+    },
+    {
+      "kind": "log",
+      "id": "physics-callback/review/deferred-shape",
+      "log": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.stdout",
+      "parsed": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.json"
     }
   ]
 }

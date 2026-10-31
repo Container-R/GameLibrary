@@ -91,3 +91,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [新增原生根运动观察](../research/experiments/godot-root-motion-boundary/README.md)独立于之前四项几何模型：两份新运行各包含普通骨姿态/根运动提取配置，重复读取不消费delta，显式重复应用才重复移动；不验证真实角色、IK或Unity Rig表。固定比较源码不认证安装构建。
 
 [图形程序职责与案例来源](../research/source-notes/graphics-programmer-role.md)区分加拿大/日本/波兰雇主责任样本与 Wube 2018 树/阴影制作进展；职责材料不等于功能效果测试，原创接收工作表尚未试用。
+
+[碰撞回调变更边界](../research/source-notes/physics-callback-mutation-boundary.md)把官方deferred规范、固定比较源码、本机有限事件轨迹与原创业务交接建议分层；三个旧失败不因后续kinematic对照通过而获得重新解释。

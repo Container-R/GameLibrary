@@ -1,0 +1,34 @@
+--- historical/run.py
++++ current/run.py
+@@ -45,6 +45,18 @@
+         if re.fullmatch(r'\s+GDScript backtrace \(most recent call first\):',line): continue
+         if re.fullmatch(r'\s+\[0\] entered \(res://main.gd:\d+\)',line): continue
+         raise ValueError('Outside restricted error envelope: '+line)
++def parse_result(stdout, stderr, mode):
++    """Validate both streams before accepting the sole native result record."""
++    if any(re.search(r"\b(?:SCRIPT )?ERROR:", line) for line in stdout.splitlines()):
++        raise ValueError('Unexpected stdout error diagnostic')
++    errors(stderr, mode)
++    matches = [line[len('RESULT_JSON='):] for line in stdout.splitlines() if line.startswith('RESULT_JSON=')]
++    if len(matches) != 1:
++        raise ValueError('one result required')
++    result = json.loads(matches[0])
++    check(result, mode)
++    return result
++
+ def main():
+     ap=argparse.ArgumentParser(); ap.add_argument('--output-root',type=pathlib.Path,default=HERE/'results'); ap.add_argument('--engine',default='/usr/local/bin/godot'); a=ap.parse_args()
+     out=a.output_root/str(uuid.uuid4()); out.mkdir(parents=True,exist_ok=False)
+@@ -72,10 +84,8 @@
+                 if name=='version':
+                     if stderr: raise ValueError('version stderr')
+                     continue
+-                errors(stderr,name)
+-                matches=[line[len('RESULT_JSON='):] for line in stdout.splitlines() if line.startswith('RESULT_JSON=')]
+-                if len(matches)!=1: raise ValueError('one result required')
+-                result=json.loads(matches[0]); (out/(name+'.json')).write_text(json.dumps(result,indent=2)+'\n'); check(result,name)
++                result=parse_result(stdout,stderr,name)
++                (out/(name+'.json')).write_text(json.dumps(result,indent=2)+'\n')
+         if receipt['source_sha256']!={f:digest(HERE/f) for f in FILES}: raise ValueError('source changed')
+         receipt['status']='PASS'
+     except Exception as e:
