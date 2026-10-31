@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/bin/true",
+    "--headless",
+    "--single-threaded-scene",
+    "--path",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/empty-output",
+    "--",
+    "small"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0
+}

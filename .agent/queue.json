@@ -1189,7 +1189,7 @@
       "id": "TASK-2026-0050",
       "question": "Separate baked navigation clearance, avoidance agent radius and actual physical shape occupancy",
       "discipline": "AI",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Deepen navigation readiness article with actual baked geometry and physical queries rather than treating valid paths as collision clearance",
       "expected_artifact": "Existing navigation article plus original actual bake/agent/physics evidence",
@@ -1205,8 +1205,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:18:45.046089Z",
-      "next_action": "Independently inspect author two-case bake/path/overlap results and source boundaries",
+      "last_progress_at": "2026-10-31T20:22:45.230579Z",
+      "next_action": "Publish existing navigation article supplement and independently repeated2bake/4path evidence",
       "blockers": []
     }
   ]

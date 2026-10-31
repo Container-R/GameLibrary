@@ -1906,6 +1906,144 @@
       "field": [
         "platform"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "nav-radius/author/source",
+      "document": "research/experiments/godot-navigation-radius/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-navigation-radius/run.py",
+        "main.gd": "research/experiments/godot-navigation-radius/main.gd",
+        "main.tscn": "research/experiments/godot-navigation-radius/main.tscn",
+        "project.godot": "research/experiments/godot-navigation-radius/project.godot",
+        "contract.json": "research/experiments/godot-navigation-radius/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/author/receipt-invocation_id",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ],
+      "right_field": [
+        "id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/author/receipt-status",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/results/invocation.json",
+      "field": [
+        "status"
+      ],
+      "right_field": [
+        "state"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "nav-radius/author/small",
+      "log": "research/experiments/godot-navigation-radius/results/small.stdout",
+      "parsed": "research/experiments/godot-navigation-radius/results/small.json"
+    },
+    {
+      "kind": "log",
+      "id": "nav-radius/author/large",
+      "log": "research/experiments/godot-navigation-radius/results/large.stdout",
+      "parsed": "research/experiments/godot-navigation-radius/results/large.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "nav-radius/review/source",
+      "document": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-navigation-radius/review/fixture/run.py",
+        "main.gd": "research/experiments/godot-navigation-radius/review/fixture/main.gd",
+        "main.tscn": "research/experiments/godot-navigation-radius/review/fixture/main.tscn",
+        "project.godot": "research/experiments/godot-navigation-radius/review/fixture/project.godot",
+        "contract.json": "research/experiments/godot-navigation-radius/review/fixture/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/review/receipt-invocation_id",
+      "left": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ],
+      "right_field": [
+        "id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/review/receipt-status",
+      "left": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/invocation.json",
+      "field": [
+        "status"
+      ],
+      "right_field": [
+        "state"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "nav-radius/review/small",
+      "log": "research/experiments/godot-navigation-radius/review/fixture/results/small.stdout",
+      "parsed": "research/experiments/godot-navigation-radius/review/fixture/results/small.json"
+    },
+    {
+      "kind": "log",
+      "id": "nav-radius/review/large",
+      "log": "research/experiments/godot-navigation-radius/review/fixture/results/large.stdout",
+      "parsed": "research/experiments/godot-navigation-radius/review/fixture/results/large.json"
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/compare/source_sha256",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/compare/binary_sha256",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/compare/python",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "nav-radius/compare/platform",
+      "left": "research/experiments/godot-navigation-radius/results/summary.json",
+      "right": "research/experiments/godot-navigation-radius/review/fixture/results/summary.json",
+      "field": [
+        "platform"
+      ]
     }
   ]
 }

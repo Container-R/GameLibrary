@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/empty-output/run.py", line 33, in <module>
+    r=record('RESULT_JSON=');src=record('SOURCE_JSON=');bake=record('BAKE_JSON=')
+      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/empty-output/run.py", line 32, in record
+    rs=[json.loads(x[len(prefix):]) for x in p.stdout.splitlines() if x.startswith(prefix)];need(len(rs)==1,'record count '+prefix);return rs[0]
+                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/empty-output/run.py", line 7, in need
+    if not c:raise RuntimeError(m)
+             ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: record count RESULT_JSON=

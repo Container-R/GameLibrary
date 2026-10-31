@@ -1,0 +1,48 @@
+[
+  {
+    "case": "optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/optimized/run.py"
+    ],
+    "returncode": 1,
+    "receipt": {
+      "id": "d2289390-7f9d-4902-a14b-1aef0f2f02eb",
+      "state": "FAILED",
+      "exception": "RuntimeError('no -O')"
+    },
+    "godot_processes": 0,
+    "old_summary_removed": true
+  },
+  {
+    "case": "missing-engine",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/missing-engine/run.py"
+    ],
+    "returncode": 1,
+    "receipt": {
+      "id": "ec5f51cb-9293-444a-9b43-a0c8b3b0f43e",
+      "state": "FAILED",
+      "exception": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    "godot_processes": 0,
+    "old_summary_removed": true
+  },
+  {
+    "case": "empty-output",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/empty-output/run.py"
+    ],
+    "returncode": 1,
+    "receipt": {
+      "id": "96fd6b56-5e6c-48e8-88b2-1b69adea2f7e",
+      "state": "FAILED",
+      "exception": "RuntimeError('record count RESULT_JSON=')"
+    },
+    "godot_processes": 0,
+    "old_summary_removed": true
+  }
+]

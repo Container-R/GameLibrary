@@ -6,13 +6,17 @@ status: source-backed
 primary_discipline: AI
 related_disciplines: [PROG, ENGINE, QA]
 related_roles: [ai-programmer, gameplay-programmer, engine-programmer, qa-engineer]
-related_topics: [navigation, synchronization, partial-path, negative-cache, initialization]
+related_topics: [navigation, synchronization, partial-path, negative-cache, initialization, navigation-clearance, agent-radius, physics-overlap]
 engines: [Godot]
 versions: ["Godot 4.6 文档：NavigationServer2D 为 Experimental", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-10-31
-verification_method: 官方同步与API资料核对；原创CPU无头导航图实际查询及默认异步region诊断；未测试角色移动或持续并发更新
+verification_method: 官方同步与API资料核对；原创CPU无头导航图查询及异步region诊断；两次3D实际烘焙、四条agent路径与静止形状重叠独立复验；未测试角色移动或持续并发更新
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_navigationmesh.html
+  - https://docs.godotengine.org/en/4.6/classes/class_navigationagent3d.html
+  - https://docs.godotengine.org/en/4.6/classes/class_physicsdirectspacestate3d.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/navigation_3d/3d/nav_mesh_generator_3d.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html
   - https://docs.godotengine.org/en/4.6/tutorials/navigation/navigation_using_navigationservers.html
   - https://docs.godotengine.org/en/4.6/classes/class_navigationpolygon.html
@@ -82,11 +86,62 @@ Godot4.6官方说明导航服务器的多数变更在后续物理帧同步而非
 
 本轮同步超时看门狗只判“未能建立就绪条件”，不会返回“目标不可达”。生产应明确谁提交导航数据、谁确认本轮完成、查询绑定哪个快照，以及变更期间AI保持什么安全状态。图形化场景节点、直接服务器RID与后台烘焙的生命周期不应凭名字相似而互换。
 
+## 6. 体型交接补充：路径可查，不等于碰撞形状放得下
+
+就绪之后仍有另一道边界：**导航图为多大的身体留出了空间？** `NavigationMesh.agent_radius`、`NavigationAgent3D.radius` 与实际物理形状不是同一个参数的三个别名。
+
+| 契约 | 控制什么 | 不能替代什么 |
+|---|---|---|
+| 烘焙半径 | 生成导航网格时侵蚀可行走区域 | 运行时碰撞形状、动态避让输出 |
+| NavigationAgent3D.radius | 避让代理的体积参数 | 重新烘焙、普通路径查询的体型筛选 |
+| Shape3D 与变换/层 | 物理查询或碰撞中的实际形状 | 可行走拓扑、角色运动与到达逻辑 |
+
+Godot 4.6 [NavigationMesh 文档](https://docs.godotengine.org/en/4.6/classes/class_navigationmesh.html#class-navigationmesh-property-agent-radius)明确烘焙半径用于侵蚀，并向上取整到 cell_size 的倍数；[NavigationAgent3D 文档](https://docs.godotengine.org/en/4.6/classes/class_navigationagent3d.html#class-navigationagent3d-property-radius)明确 agent radius 不改变普通寻路，支持不同体型应使用相应烘焙数据/地图。[固定源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/navigation/navigation_agent_3d.cpp#L607-L615)的 setter 转发到 agent_set_radius，而[烘焙器](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/navigation_3d/3d/nav_mesh_generator_3d.cpp#L353-L372)将另一项 agent_radius 转成体素半径，再用于[侵蚀](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/navigation_3d/3d/nav_mesh_generator_3d.cpp#L461-L482)。这是来源分析，不认证本地二进制来源。
+
+### 两次实际烘焙，四条实际 agent 路径
+
+[原创 3D 无头夹具](../../research/experiments/godot-navigation-radius/README.md)使用 y=0 的六个地面三角形：两个宽房间通过 x∈[-2,2]、z∈[-1,1] 的窄桥相连。输入为 Godot 要求的 clockwise 面序；`add_faces` 的[固定实现](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/3d/navigation_mesh_source_geometry_data_3d.cpp#L180-L193)反转索引，原始解析数组实际核对为 +Y 法线。这一约定在运行前已明确，不是失败后倒置面序来凑结果。
+
+两个新进程只改变烘焙半径，其余几何和显式烘焙参数相同，cell_size / cell_height 均为 0.1。每个进程创建两个不同 radius 的 NavigationAgent3D；**avoidance_enabled 都为 false**。父节点不移动，通过 agent 自己的路径更新/getter 获取结果，不把直接 map 查询冒充 agent 行为。
+
+| 实际烘焙半径 | Agent radius | 实际路径末点 | 解释 |
+|---:|---:|---|---|
+| 0.2 | 0.2 | 到达右房间目标 x≈4 | 此图提供通路 |
+| 0.2 | 1.2 | 与上一条路径相同 | 只扩大避让半径未收窄此图 |
+| 1.2 | 0.2 | 非空部分路径，x=-2.5 | 本次路径未通向右房间 |
+| 1.2 | 1.2 | 与上一条部分路径相同 | 决定通路的是本次烘焙结果 |
+
+起点/目标实际投影到 `(-4,≈0.2,0)` / `(4,≈0.2,0)`；体素化后的 Y 没有被重写成输入的 0。大半径案例的目标仍投影在保留下来的右房间，不能把结果误解为目标落在所有导航数据之外。两份生成网格在 agent 创建/设置前后均保持相同顶点和多边形记录。多边形数量是观察值，不是通用验收常数。
+
+每轮先确认烘焙回调与非空网格，再等待本地图信号、非零且变化的 map iteration、非零 region iteration，并核对所属地图/层/启用状态。两者使用显式同步 iteration、单写者的一次初始化；240 个物理回调的看门狗只用于失败退出，不意味着等待固定帧数总能就绪。没有 force_update 或 sleep。路径末点容差 0.01 是此样例判据，不是通用角色到达阈值。
+
+### 另一个实际系统给出不同答案：静止形状重叠
+
+物理场景另建两面墙，位于窄桥两侧 z∈[1,4] 与 [-4,-1]、x∈[-2,2]、y∈[0,4]。**烘焙输入只有地面三角形，墙的 collider 没有被解析进烘焙；桥边的自由边界侵蚀形成导航间隙。** 两套输入的 XZ 边界对齐，但来源不同，不能说本实验验证了 collider 自动参与烘焙。
+
+实际 `intersect_shape` 在 `(0,1.5,0)` 查询：半径 0.2 的球不与墙重叠，半径 1.2 的球与两面墙都重叠。另把小球放在正侧墙内作为正对照，确实命中该墙，避免把尚未同步的空物理空间当作“没有碰撞”。日志保留实际 collider 身份、shape index、墙尺寸/变换/层；查询代码显式设置 margin=0，但没有另记运行时 margin getter。
+
+球心 Y=1.5 是显式的身体形状中心，不等于导航表面 Y≈0.2；比较的是同一通道的 XZ 容纳关系。没有角色真正沿路径走到这里，也没有执行碰撞响应。依据 [PhysicsDirectSpaceState3D 文档](https://docs.godotengine.org/en/4.6/classes/class_physicsdirectspacestate3d.html#class-physicsdirectspacestate3d-method-intersect-shape)，此 API 检查静止重叠且忽略 motion。因此这证明大球在所查位置与墙相交，不证明小球整条路线安全，也不是 capsule、台阶、旋转、地板接触或移动 sweep 的测试。
+
+### 应用验收应按体型与阶段分账
+
+以下为原创工程建议：
+
+1. 为角色配置记录烘焙档位、导航地图/层、避让 radius、真实碰撞形状及缩放/中心偏移，不把一个编辑器字段当作全部体型信息。
+2. 在地图制作/体型调整后，用代表性的狭窄连接做实际烘焙与路径末点验收；数据未就绪与图上无通路仍按前文分开处理。
+3. 对同一空间另做真实物理形状查询或角色运动测试；静止重叠、连续运动、地形跟随和实际到达是不同验收层级。
+4. 若启用避让，另记录请求 velocity 与实际 `velocity_computed`，并验证应用怎样移动身体；本例未运行 RVO，不能据此声称调大 radius 会自动避免墙体碰撞或改变通路。
+5. 多体型导航图增加烘焙、存储和版本一致性成本；共享图或分档必须显式接受其取舍。本例没有测量这些成本，不推荐无限细分，也不提供“一次烘焙适合所有身体”的承诺。
+
+[独立复验](../../research/experiments/godot-navigation-radius/review/REVIEW.md)重跑两次实际烘焙/四条路径，另用独立字面判据核对输入几何、绕序、就绪状态及真实重叠结果。三个合成启动失败案例均拒绝旧 PASS，它们启动了零个 Godot 进程，不是新增导航案例。runner 记录启动时源码摘要，不强制匹配预存冻结摘要，也不在结束时再次哈希；审查仍须关联保存的源码、运行记录与当前 invocation。
+
+本次仍使用既有字节身份的已安装 Godot 程序，官方标签与自报源码身份的对应仍[未认证](../../research/source-notes/godot-runtime-provenance.md)。上述 4.6 文档访问于 2026-10-31，导航类标为 Experimental。有限证据覆盖实际烘焙、agent 路径及静止重叠，不覆盖 RVO 输出、角色移动、并发更新、GPU、跨构建或性能；不能把本节有限新增覆盖扩写成通用导航/物理一致性保证。
+
 ## 验证范围与来源
 
 实际环境：2026-10-31，Godot`4.6.3.stable.official.7d41c59c4`，Linux x86_64，Python3.12.14；源码/二进制摘要、几何、调用命令、完整stdout/stderr、主对照与诊断见夹具档案。官方4.6将NavigationServer2D和NavigationPolygon标为Experimental；不保证未来版本接口不变。
 
-未覆盖持续多批并发、异步烘焙、流式地图、RVO、角色碰撞/半径侵蚀、3D、跨平台/版本、寻路预算或运行性能。手工凸多边形消除了烘焙变量，不等于验证了完整地图制作流程。文章保留`source-backed`，只有明确记录的有限引擎结果实际执行。
+前文第 1–5 节的 2D 手工凸多边形实验消除了烘焙变量，不覆盖 3D、半径侵蚀或物理形状。第 6 节另有实际 3D 烘焙、agent 路径和静止形状重叠证据；两组均未覆盖持续多批并发、异步烘焙、流式地图、RVO 输出、角色移动/碰撞响应、跨平台/版本、寻路预算或运行性能，也不等于验证完整地图制作流程。文章保留`source-backed`，只有明确记录的有限引擎结果实际执行。
 
 - [S1] [NavigationServer2D](https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html)：同步说明、map/region iteration、查询、最近点、连接与force_update状态。
 - [S2] [Using NavigationServer](https://docs.godotengine.org/en/4.6/tutorials/navigation/navigation_using_navigationservers.html)：Threading and Synchronization / Waiting for synchronization。

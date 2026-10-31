@@ -1,0 +1,7 @@
+# Final integrated navigation article acceptance
+
+2026-10-31 20:22 UTC. Reviewed complete staged gamelibrary-publish-navradius/solutions/ai/navigation-readiness-and-partial-path.md SHA256 d476a1192f3e3c611de3115cb6d23a51d1b871ec880333b707248fe7b77f93dc. Accepted; no runtime rerun or main edits.
+
+Section6 retains independently accepted two-bake/four-agent-path and stationary-overlap results, three synthetic freshness failures with zero Godot executions, no RVO/movement/world-wide safety guarantee. Margin wording now distinguishes source-set0 from fields actually logged. Input winding/source reversal, floor-only bake versus physical walls, navY versus elevated spherecenter and partial endpoint scope remain explicit. Source startup hashes are not mislabeled enforced freeze or post-run invariance.
+
+Full article closing scope now assigns 2D hand-built polygon exclusions specifically to sections1–5 and separately identifies section6 actual3D bake/overlap evidence. Shared exclusions (character movement, sustained concurrent updates, RVO, performance/build portability) remain coherent. Existing pending/query/arrival distinction is compatible with the new body-clearance boundary, not contradicted by it. Six relative link occurrences resolve, including both fixture/review and shared provenance destinations. No material issue found. Prior author-section hash is not this staged publication hash.

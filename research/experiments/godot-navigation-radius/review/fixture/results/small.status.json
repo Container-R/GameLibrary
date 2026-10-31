@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/local/bin/godot",
+    "--headless",
+    "--single-threaded-scene",
+    "--path",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/fixture",
+    "--",
+    "small"
+  ],
+  "timeout_seconds": 30,
+  "returncode": 0
+}

@@ -1,0 +1,17 @@
+# Independent navigation radius integration review
+
+2026-10-31. Accepted within finite bake/path/stationary-overlap scope. Read frozen9c296194 contract and wrote oracle-before-run.md before independent execution. Copied sources into fixture, originals/main unchanged.
+
+Actual commands: python3 research-drafts/deep-qa/godot-navigation-radius/fixture/run.py; python3 research-drafts/deep-qa/godot-navigation-radius/check.py; python3 research-drafts/deep-qa/godot-navigation-radius/negative.py. All exit0, raw outer output/stderr retained. Two actual fresh engine processes, two bakes total, four NavigationAgent3D paths. No moved character or RVO execution. Source and binary hashes independently checked against actual bytes.
+
+Independent checker imports no author code/contract: exact literal six input triangles and parsed triangle membership, opposite input/parsed Y winding, room projections, stable generated mesh, map/region ownership/readiness/config, actual per-agent path endpoints/settings, and wall geometry/layer/overlap membership checked. Both agent radii yield identical paths within a bake. Small bake reaches right-room goal; large ends x=-2.5 while goal still projects x4. Navigation surface observed at approximatelyY0.2, not overwritten to match sourceY0. Count/polygon ordering is not universal oracle.
+
+Reviewed original GDScript: source geometry populated only by explicit floor faces; physical wall colliders are never parsed as bake input. Bake callback and nonempty polygons precede submission; map_changed filtered to owned RID, changed nonzero map iteration and nonzero region iteration plus physical positive control gate agent creation. Agent path update occurs in following physics phase via get_next_path_position, then actual path/final getters. Agent parents stationary, avoidance explicitly false. No force_update or sleep; readiness tick1 is observation, not synchronization guarantee.
+
+Physics sphere centerY1.5 lies inside wall vertical span0..4; centerline XZ distance to either wall face is1. Thus radius0.2 and1.2 provide independently understandable no-overlap/both-overlap controls; positive sphere centerz2.5 lies within positive box. Actual hit records agree. This is stationary occupancy only, not swept movement, floor contact, capsule clearance or whole-route safety. Large-bake partial path is finite returned-path evidence, not all-world reachability proof.
+
+Three synthetic seeded-PASS negatives reject with FAILED invocation/no summary: -O, missing engine path at hashing, substitute/usr/bin/true produces no records despite exit0. Zero Godot executions in negatives; actual timeout/cancellation/filesystem fault paths not injected. Negative harness rejects -O and refuses reuse of output directory. Preserve current exit/invocation association; old per-case files alone are not completion.
+
+Independently read current official4.6 NavigationAgent3D and NavigationMesh pages on2026-10-31; agent radius documentation explicitly separates avoidance footprint from normal pathfinding, and classes are Experimental. This supports the limited property distinction; no dynamic avoidance output inferred. Pinned winding/baker implementation links remain author/integrator source evidence, not independently refetched in this review; literal input/output winding itself verified in raw records.
+
+Same measured binary f64d4ed…/selfreported7d41… is not authenticated source correspondence to public35e80…. No GPU, performance, other-platform, generic path optimality or moving-body safety claim. No material blocker found.
