@@ -3,16 +3,13 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "reviewed-batch-publication",
   "active_task_ids": [
-    "TASK-2026-0029",
-    "TASK-2026-0030",
-    "TASK-2026-0033",
     "TASK-2026-0037"
   ],
-  "last_completed_at": "2026-10-31T14:44:23.826421Z",
-  "last_real_progress_at": "2026-10-31T16:18:40.694275Z",
-  "last_commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0",
+  "last_completed_at": "2026-10-31T16:21:38.644794Z",
+  "last_real_progress_at": "2026-10-31T16:21:38.644794Z",
+  "last_commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b",
   "last_run_id": "20261031T161400Z-public-resume-corrections",
-  "next_action": "Verify correction commit, record receipt, then publish reviewed content and storage/localization evidence batches",
+  "next_action": "Publish reviewed accessibility, playtest, role and discovery batch; then bounded ICU and SQLite evidence; texture evidence independently reviewed",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -25,6 +22,7 @@
     "visibility": "public",
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
-    "single_writer": "gamelibrary-main-integrator"
+    "single_writer": "gamelibrary-main-integrator",
+    "latest_verified_content_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
   }
 }

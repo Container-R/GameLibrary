@@ -688,7 +688,7 @@
       "id": "TASK-2026-0029",
       "question": "Animation seek and advance event boundary",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/experiments/godot-animation-events/README.md",
@@ -697,18 +697,20 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:21:38.644794Z",
+      "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:21:38.644794Z",
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
     },
     {
       "id": "TASK-2026-0030",
       "question": "Runtime provenance clarification",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/source-notes/godot-runtime-provenance.md",
@@ -717,12 +719,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:21:38.644794Z",
+      "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:21:38.644794Z",
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
     },
     {
       "id": "TASK-2026-0031",
@@ -768,7 +772,7 @@
       "id": "TASK-2026-0033",
       "question": "Historical summary versus latest invocation status",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/source-notes/runner-invocation-freshness.md",
@@ -777,12 +781,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:21:38.644794Z",
+      "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:21:38.644794Z",
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
     },
     {
       "id": "TASK-2026-0034",
