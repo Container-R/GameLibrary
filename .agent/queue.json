@@ -177,7 +177,7 @@
       "id": "TASK-2026-0007",
       "question": "分析游戏经济系统产出消耗平衡与数据监控的实际方案",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 84,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "solutions/design/single-player-economy-ledger.md",
@@ -188,13 +188,14 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "completed_at": null,
+      "completed_at": "2026-10-31T13:18:40.323328Z",
       "last_progress_at": "2026-10-31T13:17:23.011356Z",
-      "next_action": "独立复核完成，等待发表核验",
-      "blockers": []
+      "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
+      "blockers": [],
+      "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61"
     },
     {
       "id": "TASK-2026-0008",
@@ -227,7 +228,7 @@
       "id": "TASK-2026-0010",
       "question": "核实交互音频岗位分工、声音资产与集成交付物；与音乐状态契约交叉索引",
       "discipline": "SFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 82,
       "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
       "expected_artifact": "roles/audio/interactive-audio-designer.md",
@@ -237,12 +238,56 @@
         "明确项目样本边界"
       ],
       "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
+      "blockers": [],
+      "last_progress_at": "2026-10-31T13:17:23.011356Z",
+      "completed_at": "2026-10-31T13:18:40.323328Z",
+      "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61"
+    },
+    {
+      "id": "TASK-2026-0011",
+      "question": "模态关闭与控件失效后如何安全恢复手柄/键盘焦点？",
+      "discipline": "UX",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
+      "expected_artifact": "solutions/ux/modal-focus-recovery.md",
+      "acceptance": [
+        "官方版本资料核对",
+        "原创可执行契约与失败路径",
+        "模型/引擎/玩家验证边界明确"
+      ],
+      "source_leads": [],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "next_action": "独立复核完成，等待发表核验",
-      "blockers": [],
-      "last_progress_at": "2026-10-31T13:17:23.011356Z"
+      "last_progress_at": "2026-10-31T13:18:40.323328Z",
+      "next_action": "来源研究与原创模型/验收设计",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0012",
+      "question": "如何用伪本地化检查文本布局与占位符契约，同时不冒充真实语言验证？",
+      "discipline": "ACCESS",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
+      "expected_artifact": "solutions/localization/pseudo-localization-contract.md",
+      "acceptance": [
+        "官方版本资料核对",
+        "原创可执行契约与失败路径",
+        "模型/引擎/玩家验证边界明确"
+      ],
+      "source_leads": [],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:18:40.323328Z",
+      "next_action": "来源研究与原创模型/验收设计",
+      "blockers": []
     }
   ]
 }
