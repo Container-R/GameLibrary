@@ -201,7 +201,7 @@
       "id": "TASK-2026-0008",
       "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
       "discipline": "PROD",
-      "status": "researching",
+      "status": "needs-research",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
@@ -212,12 +212,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T18:40:11.675407Z",
-      "next_action": "Evidence-based gap audit of 19 articles, then select one undercovered concrete engineering handoff",
+      "last_progress_at": "2026-10-31T18:49:57.824989Z",
+      "next_action": "Continue evidence-driven coverage audit after current DATA unit; 19-article audit archived, not all taxonomy roles completed",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -897,7 +897,7 @@
       "id": "TASK-2026-0038",
       "question": "Interleaved mesh attribute identity and intended topology handoff",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Coverage audit identifies missing mesh-content handoff; finite falsifiable artifact rather than directory count",
       "expected_artifact": "solutions/modeling/gltf-interleaved-attribute-contract.md",
@@ -906,11 +906,33 @@
         "Literal independent geometry oracle",
         "Bounded invalid and semantic counterexamples"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T18:49:57.824989Z",
+      "next_action": "Maintain limited view-backed geometry evidence; no full validator or engine claim",
+      "blockers": [],
+      "completed_at": "2026-10-31T18:49:57.824989Z",
+      "commit_sha": "2eaf640f5b6869c70eddccb2399638564dba084b"
+    },
+    {
+      "id": "TASK-2026-0039",
+      "question": "Level completion telemetry event, attempt and actor denominators",
+      "discipline": "DATA",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Coverage audit plus primary schema/metric sources identify report-validity gap connecting playtest and gameplay instrumentation",
+      "expected_artifact": "solutions/data/attempt-completion-denominator-contract.md",
+      "acceptance": [
+        "Frozen fictional cohort and explicit as-of cutoff",
+        "Separate event/attempt/actor identity and unresolved outcomes",
+        "Independent enumerated oracle and bounded conflicts/retries"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:47:21.700149Z",
-      "next_action": "Verify reviewed mesh content publication",
+      "last_progress_at": "2026-10-31T18:49:57.824989Z",
+      "next_action": "Implement frozen18-row synthetic contract and independently verify denominators; no service/player data",
       "blockers": []
     }
   ]
