@@ -551,7 +551,7 @@
       "id": "TASK-2026-0023",
       "question": "导航图未同步与目标不可达如何区分，非空部分路径是否会误报成功？",
       "discipline": "AI",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "AI初始化与负结果缓存的具体运行边界，利用现有CPU导航能力验证",
       "expected_artifact": "solutions/ai/navigation-readiness-and-partial-path.md",
@@ -564,11 +564,36 @@
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T14:27:41.755540Z",
+      "next_action": "同步与部分路径证据已归档，持续更新/多写者前提仍需另验",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:30:40.037539Z",
+      "commit_sha": "d669ee6e65d5ed35696e8854d18072fc48a68bb5"
+    },
+    {
+      "id": "TASK-2026-0024",
+      "question": "如何自动发现当前引擎证据源码哈希、原始日志和解析记录的脱节，而不误验历史失败快照？",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 96,
+      "priority_rationale": "已有真实证据数量增加，优先完整性和长期可维护性而非新文章数量",
+      "expected_artifact": "scripts/verify_evidence_manifests.py",
+      "acceptance": [
+        "只读，不启动引擎或执行仓库代码",
+        "五个当前Godot夹具显式清单，历史记录排除明确",
+        "源码/作者复核清单/原始JSON一致性检查",
+        "损坏/缺文件/越界路径/坏JSON负向单元测试及独立审查",
+        "完整性不冒充执行真实性或语义正确性"
+      ],
+      "source_leads": [],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:27:41.755540Z",
-      "next_action": "主对照、发现后的诊断、独立复跑和正文审查通过，待发布",
+      "last_progress_at": "2026-10-31T14:30:40.037539Z",
+      "next_action": "编写有界标准库证据校验器，运行真实归档并独立故障复核",
       "blockers": []
     }
   ]
