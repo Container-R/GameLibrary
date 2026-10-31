@@ -1,0 +1,58 @@
+{
+  "uuid": "e3400eeb-07ca-4b43-bf66-f84792719c0f",
+  "config": "en_full",
+  "state": "COMPLETE",
+  "started_utc": "2026-10-31T23:07:39.011410+00:00",
+  "parent_pid": 6,
+  "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_root": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/final-source",
+  "source_sha256": {
+    "protocol.json": "e44d2d3a7463eeb2669ad1a3ad37d894611d792ee3221642b1d459dda32d377c",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "child.py": "e4f879c4b6439266d0a6f16e40be1eabd48e0b124fb8bea2119aae4dbabd8c94",
+    "run.py": "d1013713afcfe0fd1560c572dfa367fa223738b8d371bdd5a477d2bb65af5b26",
+    "consume.py": "a20cbbce599dca620d896ab3d29c3a475a37c322742126f48ec7d5eeb04508c8",
+    "test_pure.py": "6f84074e040b88e129f88f7af8c30b313d9891142657a071027c2ba17f6558f1"
+  },
+  "timeout": false,
+  "termination_attempts": [],
+  "returncode": 0,
+  "base_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C"
+  },
+  "isolation": {
+    "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5/HOME",
+    "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5/XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5/XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5/XDG_DATA_HOME",
+    "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5/TMPDIR"
+  },
+  "owned_runtime_root": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/runtime-xzpkzci5",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-plural-coverage/final-source/child.py",
+    "en_full",
+    "e3400eeb-07ca-4b43-bf66-f84792719c0f"
+  ],
+  "child_pid": 8,
+  "group_remaining": false,
+  "category": "COMPLETE_EXPECTED_OUTPUTS",
+  "finished_utc": "2026-10-31T23:07:39.180172+00:00",
+  "elapsed_seconds": 0.1672668060000433,
+  "output_sha256": {
+    "stdout.txt": "2ab65b212a8a786d0754b8d8f0c73f41744b18ffff64c5141f096b72cdf66eea",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_after_sha256": {
+    "child.py": "e4f879c4b6439266d0a6f16e40be1eabd48e0b124fb8bea2119aae4dbabd8c94",
+    "consume.py": "a20cbbce599dca620d896ab3d29c3a475a37c322742126f48ec7d5eeb04508c8",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "protocol.json": "e44d2d3a7463eeb2669ad1a3ad37d894611d792ee3221642b1d459dda32d377c",
+    "run.py": "d1013713afcfe0fd1560c572dfa367fa223738b8d371bdd5a477d2bb65af5b26",
+    "test_pure.py": "6f84074e040b88e129f88f7af8c30b313d9891142657a071027c2ba17f6558f1"
+  }
+}

@@ -3435,6 +3435,318 @@
         "stderr.txt"
       ],
       "target": "research/experiments/vulkan-capability-probe/results/c8cf0a91-18ed-4b66-afb4-11141bb7ed0d/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/en_full/source_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/en_full/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/en_full/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/en_full/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/5f3aa989-086b-43da-99a4-10881748371a/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/ar_full/source_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/ar_full/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/ar_full/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/ar_full/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/172771b1-821c-4867-be5d-1a16b54963d6/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/ar_omit_few/source_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/author/ar_omit_few/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/child.py",
+        "run.py": "research/experiments/icu-plural-locale/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/ar_omit_few/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/author/ar_omit_few/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/results/2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0/31d1abc5-36d6-487a-8ad5-ef313e665ceb/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/en_full/source_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/en_full/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/en_full/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/en_full/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/e3400eeb-07ca-4b43-bf66-f84792719c0f/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/ar_full/source_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/ar_full/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/ar_full/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/ar_full/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/9178dad8-4087-4da2-923f-6c91cd36d9e3/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/ar_omit_few/source_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-plural/independent/ar_omit_few/source_after_sha256",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/receipt.json",
+      "field": [
+        "source_after_sha256"
+      ],
+      "files": {
+        "protocol.json": "research/experiments/icu-plural-locale/review/final-source/protocol.json",
+        "isolation.py": "research/experiments/icu-plural-locale/review/final-source/isolation.py",
+        "child.py": "research/experiments/icu-plural-locale/review/final-source/child.py",
+        "run.py": "research/experiments/icu-plural-locale/review/final-source/run.py",
+        "consume.py": "research/experiments/icu-plural-locale/review/final-source/consume.py",
+        "test_pure.py": "research/experiments/icu-plural-locale/review/final-source/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/ar_omit_few/stdout.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/receipt.json",
+      "field": [
+        "output_sha256",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "icu-plural/independent/ar_omit_few/stderr.txt",
+      "document": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/receipt.json",
+      "field": [
+        "output_sha256",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/stderr.txt"
     }
   ]
 }

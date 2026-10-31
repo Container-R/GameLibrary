@@ -1,0 +1,3 @@
+{"case": "report input bool replacing zero", "result": "REJECTED ValueError"}
+{"case": "intent bool replaced numeric zero", "result": "REJECTED ValueError"}
+{"case": "attempt input bool replacing zero", "result": "REJECTED ValueError"}

@@ -1,0 +1,245 @@
+{
+  "protocol_id": "TASK-0068-icu-plural-locale-v1",
+  "frozen_at_utc": "2026-10-31T23:01:18Z",
+  "status": "protocol only; code and native invocation require coordinator approval",
+  "source_gate": {
+    "path": "research-drafts/icu-plural-locale-gate/gate.md",
+    "sha256": "ff4100876cdb0e2fa725d8eb88aea92c44c2342b038a4b5cec955bd784d896dc",
+    "icu_commit": "8eca245c7484ac6cc179e3e5f7c1ea7680810f39",
+    "source_cldr_version": "46",
+    "limits": "Source comparison, not authentication of installed binary/data or full dependency closure.",
+    "independent_review_sha256": "56cf6e4f802ed798d04ae01a4aba26e2bcf8cf82e0b61cd3de54d3c91e8d6800"
+  },
+  "baseline": {
+    "tree": "gamelibrary-publish-allocation-case",
+    "published_commit_prefix_supplied_by_coordinator": "7f1279",
+    "article": "solutions/localization/pseudo-localization-contract.md",
+    "article_sha256": "2d9ddb7a7e02a32ca442bfb484406736f4c8cacc3ac57d4d7dde20ea21b4c08d",
+    "old_fixture": "research/experiments/icu-message-boundary",
+    "old_fixture_policy": "Read only; 141 existing files unchanged. Do not import old top-level case.py."
+  },
+  "configurations": [
+    {
+      "id": "en_full",
+      "locale": "en",
+      "pattern": "{0, plural, zero {ZERO} one {ONE} two {TWO} few {FEW} many {MANY} other {OTHER}}",
+      "expected": [
+        "OTHER",
+        "ONE",
+        "OTHER",
+        "OTHER",
+        "OTHER",
+        "OTHER"
+      ]
+    },
+    {
+      "id": "ar_full",
+      "locale": "ar",
+      "pattern": "{0, plural, zero {ZERO} one {ONE} two {TWO} few {FEW} many {MANY} other {OTHER}}",
+      "expected": [
+        "ZERO",
+        "ONE",
+        "TWO",
+        "FEW",
+        "MANY",
+        "OTHER"
+      ]
+    },
+    {
+      "id": "ar_omit_few",
+      "locale": "ar",
+      "pattern": "{0, plural, zero {ZERO} one {ONE} two {TWO} many {MANY} other {OTHER}}",
+      "expected": [
+        "ZERO",
+        "ONE",
+        "TWO",
+        "OTHER",
+        "MANY",
+        "OTHER"
+      ],
+      "target_contract": {
+        "number": 3,
+        "intended_marker": "FEW",
+        "expected_actual_marker": "OTHER",
+        "expected_intent_acceptance": false,
+        "meaning": "Intent-coverage rejection, not ICU parse/format failure or linguistic quality judgment."
+      }
+    }
+  ],
+  "inputs": [
+    0,
+    1,
+    2,
+    3,
+    11,
+    100
+  ],
+  "input_limits": "Only these exactly representable nonnegative integers passed as one positional c_double at argument0. No fractions, lexical trailing zeros, offsets, =n selectors, #, nesting, custom number formatting, ordinal, duplicate keyword or arbitrary pattern.",
+  "libraries": {
+    "icuuc": {
+      "requested": "/lib/x86_64-linux-gnu/libicuuc.so.76",
+      "resolved": "/usr/lib/x86_64-linux-gnu/libicuuc.so.76.1",
+      "exists": true,
+      "sha256": "a8e433e81075732faf255b17d4a25ce28632e41fef1a75e727ee7f4ed73ab151"
+    },
+    "icui18n": {
+      "requested": "/lib/x86_64-linux-gnu/libicui18n.so.76",
+      "resolved": "/usr/lib/x86_64-linux-gnu/libicui18n.so.76.1",
+      "exists": true,
+      "sha256": "596132c352dc25d1e8a1f91e2c5790262ed02376d27afc14b545a1952341b3fc"
+    },
+    "icudata": {
+      "requested": "/lib/x86_64-linux-gnu/libicudata.so.76",
+      "resolved": "/usr/lib/x86_64-linux-gnu/libicudata.so.76.1",
+      "exists": true,
+      "sha256": "a04b2b906193fa1e40f968a3d16d7d6c844a1fafbdd5bce6e9f67b01c124ff24"
+    }
+  },
+  "library_policy": "Check requested/resolved paths and exact bytes before any CDLL. Load resolved uc/i18n paths only; hash all three checked files again after cleanup. Drift/unreadable identity fails closed. These three files are not asserted to authenticate all loaded dependencies or runtime data. No native handle addresses in logs.",
+  "abi": {
+    "platform": "Linux",
+    "machine": "x86_64",
+    "byteorder": "little",
+    "pointer_size": 8,
+    "int32_size": 4,
+    "uint16_size": 2,
+    "double_size": 8,
+    "UParseError": {
+      "size": 72,
+      "alignment": 4,
+      "offsets": {
+        "line": 0,
+        "offset": 4,
+        "preContext": 8,
+        "postContext": 40
+      },
+      "context_units_each": 16
+    },
+    "UChar": "uint16 UTF-16LE; not wchar_t",
+    "status": "signed32 UErrorCode; status<=0 allows success, positive is failure",
+    "signatures": {
+      "u_getVersion_76": {
+        "argtypes": [
+          "POINTER(c_uint8)"
+        ],
+        "restype": "None",
+        "output_length": 4
+      },
+      "umsg_open_76": {
+        "argtypes": [
+          "POINTER(c_uint16)",
+          "c_int32",
+          "c_char_p",
+          "POINTER(UParseError)",
+          "POINTER(c_int32)"
+        ],
+        "restype": "c_void_p"
+      },
+      "umsg_format_76": {
+        "fixed_argtypes": [
+          "c_void_p",
+          "POINTER(c_uint16)",
+          "c_int32",
+          "POINTER(c_int32)"
+        ],
+        "variadic_arguments": [
+          "one explicit c_double"
+        ],
+        "restype": "c_int32"
+      },
+      "umsg_close_76": {
+        "argtypes": [
+          "c_void_p"
+        ],
+        "restype": "None"
+      }
+    },
+    "bind_all_before_first_call": true
+  },
+  "call_contract": {
+    "version": "One actual u_getVersion call per started valid child. Require returned [76,1,0,0] before open; preserve mismatch as failure, not authenticated provenance.",
+    "open": "Once after successful guards/version; fresh status0, explicit UTF-16 unit length, null-terminated backing array, exact ASCII locale. Record status, nonnull bool and bounded parse-context unit arrays. Nonnull alone is not success.",
+    "format": "Exactly six calls only after successful nonnull open; each status reset0, capacity64 UTF-16 units, input c_double from frozen list. Check status<=0 AND 0<=returned_length<64 before reading exactly returned_length units. Decode strictly and compare exact marker. Stop immediately on first unexpected failure/mismatch; do not run remaining inputs or configurations.",
+    "close": "Finally once for every nonnull handle returned by open, even if open status failed or later formatting failed. Record attempt and return; failed/crashed close prevents complete success. No close for null handle.",
+    "error_name": "Do not call u_errorName or any other native helper. Preserve numeric status; optional static labels must explicitly say source mapping, unknown numbers remain numbers.",
+    "expected_per_successful_config": {
+      "version_attempts": 1,
+      "version_returns": 1,
+      "open_attempts": 1,
+      "open_returns": 1,
+      "format_attempts": 6,
+      "format_returns": 6,
+      "close_attempts": 1,
+      "close_returns": 1,
+      "total_native_attempts": 9,
+      "total_native_returns": 9
+    },
+    "expected_max_complete_batch": {
+      "native_children": 3,
+      "version_calls": 3,
+      "open_calls": 3,
+      "format_calls": 18,
+      "close_calls": 3,
+      "native_function_calls": 27
+    },
+    "warning_policy": "All negative warning statuses are retained per call and allowed only with otherwise valid output. Do not require/reproduce/erase old -127 warning or infer its resource cause.",
+    "call_trace": "Flush monotonically numbered attempt BEFORE every native function and returned AFTER. Include name/phase/config/input where applicable and scalar/bounded output facts; open logs only handle_nonnull, never numeric pointer. Void result null. Separate attempted/returned counts derive from trace, never declared constants. CDLL loads are separate load-attempt/return records, not these native-function totals."
+  },
+  "environment": {
+    "helper_sha256": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "helper": "Exact copy of reviewed isolation.py; fresh owned absolute nonsymlink temporary root per child, prepare and validate before spawn.",
+    "base_exact": {
+      "PATH": "/usr/bin:/bin",
+      "LANG": "C",
+      "LC_ALL": "C"
+    },
+    "helper_keys": [
+      "HOME",
+      "XDG_CACHE_HOME",
+      "XDG_CONFIG_HOME",
+      "XDG_DATA_HOME",
+      "TMPDIR"
+    ],
+    "inherit_parent_environment": false,
+    "excluded_overrides": [
+      "ICU_DATA",
+      "PYTHONPATH",
+      "PYTHONHOME",
+      "LD_PRELOAD",
+      "LD_LIBRARY_PATH"
+    ],
+    "limits": "Five writable locations and explicit environment, not sandbox or complete dependency/data authentication."
+  },
+  "parent": {
+    "order": [
+      "en_full",
+      "ar_full",
+      "ar_omit_few"
+    ],
+    "launch": "Absolute current Python executable and frozen child path; argv only, no shell; own Linux session/group. One fresh child per config, serial.",
+    "timeout_seconds_per_child": 20,
+    "receipt": "Exclusive fresh batch UUID and per-config child UUID directories; STARTED receipt before spawn with parent/child IDs, command, source/protocol/helper/library identities, UTC and monotonic times, explicit environment map. Separate terminal receipt and raw stdout/stderr for every attempted config. Never reuse old PASS.",
+    "fail_closed": "No success summary until all expected calls/outputs/source hashes are verified. First failed/incomplete config stops expansion; later configs explicitly not started. Preserve partial trace and failure receipt; no retry. -O rejected before child spawn with fresh failed receipt, zero native calls.",
+    "timeout": "Preserve partial output; bounded TERM then KILL for owned group, inspect group state even if leader exits, record sent/return/remaining facts. No guaranteed reaping or crash-safe close.",
+    "source_before_after": "Pin protocol and every executable Python source via a frozen manifest before native launch and reread after each config. Preserve changed/missing sources as identity failure.",
+    "result_classes": [
+      "COMPLETE_EXPECTED_OUTPUTS",
+      "ABI_OR_VERSION_GUARD_FAILURE",
+      "SOURCE_OR_LIBRARY_IDENTITY_FAILURE",
+      "ENVIRONMENT_OR_BINDING_FAILURE",
+      "OPEN_FAILURE",
+      "FORMAT_FAILURE",
+      "OUTPUT_MISMATCH",
+      "CLEANUP_FAILURE",
+      "TIMEOUT",
+      "CHILD_CRASH",
+      "MALFORMED_OR_INCOMPLETE_EVIDENCE"
+    ],
+    "success_meaning": "Only the finite formatting/marker contract. Expected intent rejection in ar_omit_few is separately reported and does not turn normal ICU fallback into parser failure."
+  },
+  "archive_acceptance": {
+    "static_consumer": "Check exact invocation/config IDs, pinned sources/raw hashes, typed metadata/environment/ABI, original patterns/inputs and literal outputs, native trace/call counts, lifecycle and cleanup. No import of executable child main or CDLL. Archive consistency is not signed/authenticated execution.",
+    "independent_repeat": "Not yet authorized; require separate explicit coordinator instruction.",
+    "stopping_point": "This finite batch or first unexpected failure. No expansion, engine/Unity, rendered Arabic/RTL/fonts, real translation/LQA, plural coverage of all numbers/locales or general transformer claim."
+  }
+}

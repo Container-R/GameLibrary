@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "-O",
+    "research-drafts/icu-plural-locale/run.py",
+    "--output-parent",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/icu-plural-locale/negative-startup"
+  ],
+  "parent_exitcode": 1,
+  "native_children": 0,
+  "icu_calls": 0,
+  "source_sha256_observed_after": {
+    "protocol.json": "e44d2d3a7463eeb2669ad1a3ad37d894611d792ee3221642b1d459dda32d377c",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "child.py": "e4f879c4b6439266d0a6f16e40be1eabd48e0b124fb8bea2119aae4dbabd8c94",
+    "run.py": "d1013713afcfe0fd1560c572dfa367fa223738b8d371bdd5a477d2bb65af5b26",
+    "consume.py": "a20cbbce599dca620d896ab3d29c3a475a37c322742126f48ec7d5eeb04508c8",
+    "test_pure.py": "6f84074e040b88e129f88f7af8c30b313d9891142657a071027c2ba17f6558f1"
+  },
+  "scope": "One optimized-startup rejection; no seeded stale PASS, timeout, filesystem interruption or native invocation"
+}

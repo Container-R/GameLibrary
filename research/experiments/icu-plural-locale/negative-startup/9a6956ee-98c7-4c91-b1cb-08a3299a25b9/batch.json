@@ -1,0 +1,17 @@
+{
+  "uuid": "9a6956ee-98c7-4c91-b1cb-08a3299a25b9",
+  "state": "FAILED_OR_INCOMPLETE",
+  "started_utc": "2026-10-31T23:08:03.214043+00:00",
+  "configs": [],
+  "not_started": [
+    "en_full",
+    "ar_full",
+    "ar_omit_few"
+  ],
+  "native_child_spawn_count": 0,
+  "error": "optimized parent rejected before spawn",
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/6d9a354d4cae/research-drafts/icu-plural-locale/run.py\", line 82, in main\n    require(not sys.flags.optimize,'optimized parent rejected before spawn')\n  File \"/workspace/scratch/6d9a354d4cae/research-drafts/icu-plural-locale/consume.py\", line 7, in require\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: optimized parent rejected before spawn\n",
+  "observed_child_receipts": 0,
+  "spawn_count_complete": true,
+  "finished_utc": "2026-10-31T23:08:03.233934+00:00"
+}

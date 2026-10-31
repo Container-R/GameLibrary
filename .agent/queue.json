@@ -1695,11 +1695,14 @@
       "id": "TASK-2026-0068",
       "question": "Can a syntactically valid target-locale plural pattern omit a relevant category and silently fall back to other despite passing English smoke inputs?",
       "discipline": "LOC",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "Existing LOC article explicitly limits ICU evidence to English1/2 and lacks target-locale category coverage; installed formatter permits a bounded source-gated supplement",
       "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs\u00d76integer native requests if ABI/protocol gate passes",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/icu-locale-plural-coverage.md",
+        "research/experiments/icu-plural-locale/README.md"
+      ],
       "acceptance": [
         "Verify exact current LOC artifact identity and fixed ICU API definitions without importing executing legacy case",
         "Read pinned cardinal rule data and MessageFormat omitted-category fallback semantics before freezing outputs",
@@ -1710,8 +1713,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T00:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:57:20.427068Z",
-      "next_action": "Read pinned ICU rule/API/fallback sources, reconcile existing LOC identity, and review proposed literal category table before any native implementation",
+      "last_progress_at": "2026-10-31T23:10:05.511323Z",
+      "next_action": "Publish independently observed finite locale fallback supplement, preserving all141 prior ICU files and complete-project limits",
       "blockers": []
     }
   ]

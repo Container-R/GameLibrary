@@ -1,0 +1,151 @@
+{
+  "batch_uuid": "2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0",
+  "state": "COMPLETE_EXPECTED_OUTPUTS",
+  "native_child_spawn_count": 3,
+  "not_started": [],
+  "configurations": [
+    {
+      "config": "en_full",
+      "uuid": "5f3aa989-086b-43da-99a4-10881748371a",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "returncode": 0,
+      "timeout": false,
+      "stderr_bytes": 0,
+      "counts": {
+        "version": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "open": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "format": {
+          "attempt": 6,
+          "returned": 6
+        },
+        "close": {
+          "attempt": 1,
+          "returned": 1
+        }
+      },
+      "outputs": [
+        "OTHER",
+        "ONE",
+        "OTHER",
+        "OTHER",
+        "OTHER",
+        "OTHER"
+      ],
+      "statuses": [
+        0,
+        -127,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "intent": null,
+      "libraries_unchanged": true,
+      "source_unchanged": true
+    },
+    {
+      "config": "ar_full",
+      "uuid": "172771b1-821c-4867-be5d-1a16b54963d6",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "returncode": 0,
+      "timeout": false,
+      "stderr_bytes": 0,
+      "counts": {
+        "version": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "open": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "format": {
+          "attempt": 6,
+          "returned": 6
+        },
+        "close": {
+          "attempt": 1,
+          "returned": 1
+        }
+      },
+      "outputs": [
+        "ZERO",
+        "ONE",
+        "TWO",
+        "FEW",
+        "MANY",
+        "OTHER"
+      ],
+      "statuses": [
+        0,
+        -127,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "intent": null,
+      "libraries_unchanged": true,
+      "source_unchanged": true
+    },
+    {
+      "config": "ar_omit_few",
+      "uuid": "31d1abc5-36d6-487a-8ad5-ef313e665ceb",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "returncode": 0,
+      "timeout": false,
+      "stderr_bytes": 0,
+      "counts": {
+        "version": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "open": {
+          "attempt": 1,
+          "returned": 1
+        },
+        "format": {
+          "attempt": 6,
+          "returned": 6
+        },
+        "close": {
+          "attempt": 1,
+          "returned": 1
+        }
+      },
+      "outputs": [
+        "ZERO",
+        "ONE",
+        "TWO",
+        "OTHER",
+        "MANY",
+        "OTHER"
+      ],
+      "statuses": [
+        0,
+        -127,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "intent": {
+        "number": 3,
+        "intended": "FEW",
+        "actual": "OTHER",
+        "accepted": false
+      },
+      "libraries_unchanged": true,
+      "source_unchanged": true
+    }
+  ]
+}

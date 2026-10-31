@@ -8,7 +8,7 @@ related_disciplines: [ENGINE, QA, UX, PROG]
 related_roles: [localization-engineer, localization-producer, ui-programmer, ui-designer, qa-engineer]
 updated_at: 2026-10-31
 review_after: 2027-01-31
-verification_method: Unity Localization 1.5.13 文档、官方问题记录、ICU 与 W3C 原文核对；原创验证流程；本机 ICU 76.1 四例执行与四例独立复跑；未运行 Unity
+verification_method: Unity Localization 1.5.13 文档、官方问题记录、ICU 与 W3C 原文核对；原创验证流程；本机 ICU 76.1 四例与独立复跑；新增 en/ar 三配置18格式化请求及独立复跑，合法fallback与意图拒绝分层；未运行 Unity
 sources:
   - https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/Pseudo-Localization.html
   - https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/Pseudo-Localization-Methods.html
@@ -146,7 +146,46 @@ Unity 三个手册页面 URL 使用 `@1.5` 分支，本轮 HTML 元数据与标�
 
 运行器另经六个有限拒绝路径检查：优化模式、非零子进程、坏/重复载荷、错误输出、缩短阈值的人工超时。修复了优化模式留下旧 PASS 摘要和超时部分输出未归档的问题；原始失败保留，新 runner 已重新执行上述四例并独立复跑。拒绝路径不计入 ICU 功能覆盖。
 
-对应公开 release-76-1 源码固定为 `8eca245c7484ac6cc179e3e5f7c1ea7680810f39`，本地库摘要与版本单独归档；版本相同不等于认证的官方构建，检查过的文件摘要也不是全部实际依赖来源证明。没有嵌套、多参数、其他 locale、分数、字体、布局、RTL 或真实 LQA 覆盖。正文验收矩阵仍是未执行的完整项目建议，不能用这四例升级为已验收。
+对应公开 release-76-1 源码固定为 `8eca245c7484ac6cc179e3e5f7c1ea7680810f39`，本地库摘要与版本单独归档；版本相同不等于认证的官方构建，检查过的文件摘要也不是全部实际依赖来源证明。上述旧四例没有嵌套、多参数、其他 locale、分数、字体、布局、RTL 或真实 LQA 覆盖。正文验收矩阵仍是未执行的完整项目建议，不能用这四例升级为已验收。
+
+## 目标 locale 的分支覆盖：合法回退不等于满足消息意图
+
+前述四例固定为英语。本节补充一个不同的交接问题：**字符串仍能解析，英语冒烟检查也不报警，是否就能批准另一个 locale 的复数分支？** 不能直接这样批准。
+
+固定 ICU release-76-1 [cardinal rule 数据](https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/data/misc/plurals.txt)把 `en` 与 `ar` 映射到不同规则。对本例整数，英语只在 1 选择 `one`；Arabic 在 0、1、2、3、11、100 分别命中 zero、one、two、few、many、other。这里不是从字符语言猜类别，也不是把 `0/1/2` 当完整覆盖。英语涉及的可见小数位条件按固定默认 NumberFormat 路径解释，不把 C double 的值当成保留了输入词法 `1.0`。
+
+ICU [明确规定](https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/plurfmt.h#L106-L118)：有 `other` 时，未提供的选中类别使用它的正文。原始诊断 pattern 给六个类别分别填入 ASCII 标记；删除且只删除 `few {FEW}` 后，Arabic 输入 3 应合法输出 `OTHER`。这违反我们预先声明的 `FEW` 标记意图，但不表示 ICU 出错，也不能据这些诊断标记判断一段真实阿拉伯语译文是否错误。
+
+[新增夹具与原始记录](../../research/experiments/icu-plural-locale/README.md)按实现前冻结的表执行。作者与独立复验各运行三个新子进程，每进程一次打开、六次格式化及关闭，并查询一次版本；每批共 27 次 ICU 导出函数调用，其中 18 次格式化。两批实际输出一致：
+
+| 输入 | en 完整模式 | ar 完整模式 | ar 仅删 few |
+|---:|---|---|---|
+| 0 | OTHER | ZERO | ZERO |
+| 1 | ONE | ONE | ONE |
+| 2 | OTHER | TWO | TWO |
+| 3 | OTHER | FEW | OTHER |
+| 11 | OTHER | MANY | MANY |
+| 100 | OTHER | OTHER | OTHER |
+
+六个子进程均退出 0、stderr 为空、无超时，三份已检查库与源码前后摘要不变。每进程打开状态为 0，首个格式化请求（输入 0）状态为 -127，后五次为 0；警告保留，不推测资源回退原因。输入 3 的目标意图拒绝另行记录，不把合法 fallback 伪装成解析失败。合计 36 次格式化是两次重复的同一有限输入集，不是 36 个新场景。
+
+另一个优化模式启动拒绝检查返回 1、没有启动原生子进程；没有注入超时或播种旧 PASS 文件。执行前审查发现的 bool/int 与事件流检查器缺口保留为历史草稿，修正后才调用 ICU，并未修改冻结 marker 期望。独立阅读器直接检查 UTF-16 原始单位、状态与生命周期，不导入作者的语义判据；静态归档一致性也不是签名认证的执行证明。
+
+比较源码内的数据声明为 CLDR 46，但本机版本函数 76.1.0.0 与三个库摘要不能认证全部实际资源/依赖来自该源码。新夹具只补充这些 `en` / `ar` 整数与诊断标记，旧四例文件保持不变；没有分数、词法尾零、区域变体、嵌套或任意格式串覆盖，更没有真实阿拉伯语呈现或 Unity 集成证据。
+
+### 原创接收建议：为消息建立 locale 专属向量
+
+以下建议未在真实项目流水线实施：
+
+1. **按消费者记录合同。** 同时保存消息身份、目标 locale、实际 formatter 版本/配置、参数类型与消息用途。源语言的分支清单不是所有目标语言的唯一正确结构。
+2. **从已确认规则选输入，而不是只复用源语言冒烟值。** 把预期类别与实际可见正文分开记录。测试值还应随项目声明覆盖的规则边界、数值格式和业务范围调整；本例六个整数不是所有输入的完备集。
+3. **分别检查可解析、调用成功与意图覆盖。** 某条消息有合法 `other`，只能解释为什么运行未报错，不能自动签收原本要表达的不同语义。允许类别共用正文时，应由真实语言/产品合同明确决定，不能一律把缺分支当翻译错误。
+4. **对改变做有区分力的对照。** 保持 locale、数字、其他分支和格式配置不变，只删去待测分支，检查是否仍能暴露声明意图的缺口。通过这样的反例不等于生成器或所有译文都正确。
+5. **把文本与呈现分开验收。** ASCII 类别标记的正确选择，不证明字形、RTL、布局、屏幕阅读或真实语言质量；这些仍需要相应实际环境与专业审校。
+
+这是一项有维护成本的消息级合同：业务含义、目标语言规则、formatter 配置或译文结构改变后，向量与期望都可能需要复核。不能静默改掉失败期望以追随输出，也不能只增加测试数量而没有分支/语义消费者。
+
+[目标 locale 来源与证据范围](../../research/source-notes/icu-locale-plural-coverage.md)记录固定规则、默认数字格式路径与新旧夹具身份。
 
 ## 关联知识
 

@@ -1,0 +1,41 @@
+{
+  "uuid": "2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0",
+  "state": "COMPLETE_EXPECTED_OUTPUTS",
+  "started_utc": "2026-10-31T23:06:46.551101+00:00",
+  "configs": [
+    {
+      "config": "en_full",
+      "uuid": "5f3aa989-086b-43da-99a4-10881748371a",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "accepted": true,
+      "receipt_sha256": "afcaee8ec175c3e6380347cf35d166924f4f79de385c9ec72c75b94836c453c0"
+    },
+    {
+      "config": "ar_full",
+      "uuid": "172771b1-821c-4867-be5d-1a16b54963d6",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "accepted": true,
+      "receipt_sha256": "f10592bae0ccdda2035e21ee374e5eaec433b301eb7c7916c0ff707711ee1e2c"
+    },
+    {
+      "config": "ar_omit_few",
+      "uuid": "31d1abc5-36d6-487a-8ad5-ef313e665ceb",
+      "category": "COMPLETE_EXPECTED_OUTPUTS",
+      "accepted": true,
+      "receipt_sha256": "b8d218823c8d7860b70eeff0a50aa22f9062f6199e5e20e5a9f59f5662fdcf7a"
+    }
+  ],
+  "not_started": [],
+  "native_child_spawn_count": 3,
+  "source_sha256": {
+    "protocol.json": "e44d2d3a7463eeb2669ad1a3ad37d894611d792ee3221642b1d459dda32d377c",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "child.py": "e4f879c4b6439266d0a6f16e40be1eabd48e0b124fb8bea2119aae4dbabd8c94",
+    "run.py": "d1013713afcfe0fd1560c572dfa367fa223738b8d371bdd5a477d2bb65af5b26",
+    "consume.py": "a20cbbce599dca620d896ab3d29c3a475a37c322742126f48ec7d5eeb04508c8",
+    "test_pure.py": "6f84074e040b88e129f88f7af8c30b313d9891142657a071027c2ba17f6558f1"
+  },
+  "observed_child_receipts": 3,
+  "spawn_count_complete": true,
+  "finished_utc": "2026-10-31T23:06:46.967324+00:00"
+}

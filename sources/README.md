@@ -107,3 +107,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [在线服务职责与平台压测来源](../research/source-notes/online-services-engineer-role.md)将日本团队实际责任、Riot历史替身范围和原创未执行交接工作表分开；不从平台请求链推断真实玩法容量。
 
 [League服务器分配来源](../research/source-notes/league-server-allocation-observation-age.md)区分观测更新延迟、年轻对局未来需求和机器就绪；历史报告不证明普适策略或收益。
+
+[ICU目标locale分支来源](../research/source-notes/icu-locale-plural-coverage.md)核对固定CLDR派生规则、默认数字格式与other回退；格式化成功不等于完整消息意图或语言呈现验收。

@@ -111,3 +111,5 @@ python3 scripts/evidence/test_verify.py
 [在线服务工程师](../roles/network/online-services-engineer.md)补充已有NET分类下的岗位交接：声明实际组件、替身及遗漏边界责任，不运行虚构服务制造容量证据。
 
 [League分配与观测年龄案例](../case-studies/network/league-server-allocation-observation-age.md)提出未执行的五方交接与区分力验收问题，不以虚构模拟结果充当历史复现。
+
+[ICU en/ar分支覆盖](experiments/icu-plural-locale/README.md)新增三配置六整数，作者/独立各18格式化请求；遗漏few合法回退但拒绝冻结FEW意图，未测RTL或翻译质量。
