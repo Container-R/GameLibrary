@@ -3,13 +3,13 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "coverage-and-depth",
   "active_task_ids": [
-    "TASK-2026-0049"
+    "TASK-2026-0050"
   ],
-  "last_completed_at": "2026-10-31T20:14:09.268058Z",
-  "last_real_progress_at": "2026-10-31T20:16:27.089793Z",
-  "last_commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
-  "last_run_id": "20261031T200345Z-shader-layout",
-  "next_action": "Publish tested queue metadata guard and optional artifact paths, then actual navigation-radius depth fixture review",
+  "last_completed_at": "2026-10-31T20:18:45.046089Z",
+  "last_real_progress_at": "2026-10-31T20:18:45.046089Z",
+  "last_commit_sha": "1fb46a24ad89b699fda6c04a463ff4e9c0b3838a",
+  "last_run_id": "20261031T201200Z-queue-guard",
+  "next_action": "Review actual navigation bake radius, avoidance radius and physical occupancy evidence as existing-article depth",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -26,7 +26,7 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be"
+    "latest_verified_content_sha": "1fb46a24ad89b699fda6c04a463ff4e9c0b3838a"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {

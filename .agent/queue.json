@@ -1162,7 +1162,7 @@
       "id": "TASK-2026-0049",
       "question": "Prevent invalid queue discipline IDs and unsafe or unresolved recovery artifact paths without breaking legacy descriptions",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Actual queue taxonomy typo escaped existing article validation; recovery requires machine-checkable state rather than only prose",
       "expected_artifact": "scripts/queue/validate_queue.py with tests and optional artifact_paths migration",
@@ -1171,17 +1171,43 @@
         "Optional relative artifact paths cannot escape repository; published paths must exist",
         "Legacy expected_artifact prose and existing statuses remain compatible; independent adversarial tests"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:16:27.089793Z",
-      "next_action": "Publish guard with15normal/optimized tests and12explicit artifact locations",
+      "last_progress_at": "2026-10-31T20:18:45.046089Z",
+      "next_action": "Run queue guard on future recovery-state changes; optional paths do not imply legacy artifact-content coverage",
       "blockers": [],
       "artifact_paths": [
         "scripts/queue/validate_queue.py",
         "scripts/queue/test_queue.py",
         "scripts/queue/adversarial.py"
-      ]
+      ],
+      "completed_at": "2026-10-31T20:18:45.046089Z",
+      "commit_sha": "1fb46a24ad89b699fda6c04a463ff4e9c0b3838a"
+    },
+    {
+      "id": "TASK-2026-0050",
+      "question": "Separate baked navigation clearance, avoidance agent radius and actual physical shape occupancy",
+      "discipline": "AI",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Deepen navigation readiness article with actual baked geometry and physical queries rather than treating valid paths as collision clearance",
+      "expected_artifact": "Existing navigation article plus original actual bake/agent/physics evidence",
+      "artifact_paths": [
+        "solutions/ai/navigation-readiness-and-partial-path.md",
+        "research/experiments/godot-navigation-radius"
+      ],
+      "acceptance": [
+        "Freeze original geometry and two bake radii before actual capability execution",
+        "Observe actual agent paths for two avoidance-radius values with avoidance disabled",
+        "Separate stationary shape overlap from locomotion/RVO and preserve all runtime failures"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:18:45.046089Z",
+      "next_action": "Independently inspect author two-case bake/path/overlap results and source boundaries",
+      "blockers": []
     }
   ]
 }

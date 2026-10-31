@@ -2,8 +2,8 @@
   "run_id": "20261031T201200Z-queue-guard",
   "started_at": "2026-10-31T20:12:00Z",
   "task_id": "TASK-2026-0049",
-  "outcome": "reviewed locally; publication pending",
-  "commit_sha": null,
+  "outcome": "published and read back",
+  "commit_sha": "1fb46a24ad89b699fda6c04a463ff4e9c0b3838a",
   "validation": {
     "status": "PASS",
     "test_methods": 15,
@@ -27,6 +27,12 @@
     "archive_normal_optimized_identical": true,
     "indexed_source_backed_articles": 26,
     "local_markdown_links": 346,
-    "missing_links": 0
-  }
+    "missing_links": 0,
+    "selected_blob_hashes_verified": 46,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 50,
+    "receipt_declared_paths_checked": 14,
+    "receipt_planned_path_may_not_exist": true
+  },
+  "ended_at": "2026-10-31T20:18:45.046089Z"
 }
