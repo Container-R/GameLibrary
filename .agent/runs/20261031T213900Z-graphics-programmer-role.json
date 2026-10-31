@@ -3,7 +3,7 @@
   "task_id": "TASK-2026-0059",
   "started_at": "2026-10-31T21:39:00Z",
   "local_review_completed_at": "2026-10-31T21:42:23.098284Z",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "new_indexed_articles": 1,
@@ -17,6 +17,13 @@
     "new_model_tests": 0,
     "new_organizational_trials": 0,
     "archive_checks": 306,
-    "occupation_matrix_complete": false
-  }
+    "occupation_matrix_complete": false,
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 408,
+    "receipt_queue_tasks_checked": 60,
+    "receipt_declared_paths_checked": 37
+  },
+  "commit_sha": "0146a5ad5e025a189ec35eb7916a0c9e4eced62c",
+  "ended_at": "2026-10-31T21:44:22.341807Z"
 }

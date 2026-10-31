@@ -1436,7 +1436,7 @@
       "id": "TASK-2026-0059",
       "question": "What evidence and responsibility handoffs make a graphics/rendering feature maintainable across visual requirements, renderer interfaces and platform acceptance?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Address an important uncovered occupation with direct employer evidence and concrete feature handoff rather than duplicating existing numeric models",
       "expected_artifact": "Bounded graphics-programmer role profile and original unexecuted rendering-feature acceptance worksheet",
@@ -1451,11 +1451,35 @@
         "Original visual/interface/CPU-GPU/regression/maintenance handoff with explicit ownership boundaries",
         "Independent source review; no runtime, gain claims, universal aliases or completed occupation matrix"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T22:25:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:42:23.098284Z",
-      "next_action": "Publish original graphics-programmer role with independently checked sources and curated route",
+      "next_action": "Use bounded feature handoff as an unexecuted proposal; continue role coverage without claiming full matrix completion",
+      "blockers": [],
+      "completed_at": "2026-10-31T21:44:22.341807Z",
+      "commit_sha": "0146a5ad5e025a189ec35eb7916a0c9e4eced62c"
+    },
+    {
+      "id": "TASK-2026-0060",
+      "question": "What collision-callback mutation boundary can be established beyond the current ordering-only combat fixture?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 95,
+      "priority_rationale": "Existing actor-priority observations do not validate actual physical contact callbacks or safe collision-state mutation",
+      "expected_artifact": "Source-gated minimal callback/mutation study, or explicit bounded negative feasibility finding",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read current exact fixed-step/combat evidence before claiming new applicability",
+        "Verify versioned official physics/collision docs and fixed comparison source",
+        "Freeze a finite original contact/mutation observation oracle before any native execution; stop if phase semantics remain unclear",
+        "Keep installed-binary provenance caveat; no general physics/engine bug claim or task-policy substitution"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T22:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T21:44:22.341807Z",
+      "next_action": "Review source-only callback mutation gate before deciding whether a bounded native fixture is justified",
       "blockers": []
     }
   ]
