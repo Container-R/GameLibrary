@@ -3,7 +3,7 @@
   "task_id": "TASK-2026-0063",
   "started_at": "2026-10-31T22:19:43Z",
   "local_review_completed_at": "2026-10-31T22:25:10.075666Z",
-  "outcome": "reviewed locally; publication pending",
+  "outcome": "published and read back",
   "validation": {
     "official_versioned_document_pages": 5,
     "document_package_version": "1.21.21",
@@ -17,7 +17,12 @@
     ],
     "unchanged_existing_experiment_files": 1719,
     "indexed_source_backed_articles": 30,
-    "role_profiles": 7
+    "role_profiles": 7,
+    "selected_blob_hashes_verified": 16,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 457,
+    "receipt_queue_tasks_checked": 64,
+    "receipt_declared_paths_checked": 50
   },
   "limits": [
     "Configured remote state URL is not proof of actual selected/consumed baseline bytes",
@@ -26,5 +31,7 @@
     "No Unity/runtime/CDN experiment or transferred Godot evidence",
     "Prevent Updates versus Cannot Change Post Release is a documentation wording discrepancy, not observed Inspector behavior",
     "Wrong-baseline runtime outcome, CDN atomicity and arbitrary compatibility remain unknown"
-  ]
+  ],
+  "commit_sha": "08b178f9cdbbbbd8392ea039bde3d28f20b13cf5",
+  "ended_at": "2026-10-31T22:26:33.877270Z"
 }

@@ -1551,7 +1551,7 @@
       "id": "TASK-2026-0063",
       "question": "How should an Addressables content-update job distinguish its configured prior-state URL from the exact release/platform baseline bytes actually selected?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Official1.21.21 documentation permits cached previous-state fallback for missing remote file; concrete build-time lineage risk is distinct from Godot runtime cache ownership",
       "expected_artifact": "Version-scoped source-backed content-update baseline contract with explicit unexecuted acceptance and runtime gap",
@@ -1567,11 +1567,37 @@
         "Preserve Prevent Updates versus Cannot Change Post Release documentation wording discrepancy without asserting installed UI",
         "Independent source review; no inferred HTTP error paths, CDN atomicity or custom digest enforcement"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:25:10.075666Z",
-      "next_action": "Publish independently reviewed source-backed baseline selection contract; keep actual consumed-byte hook and Unity runtime protocol unresolved",
+      "next_action": "Keep consumed-byte observation and old-client runtime protocol unexecuted until legitimate compatible toolchain is available",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:26:33.877270Z",
+      "commit_sha": "08b178f9cdbbbbd8392ea039bde3d28f20b13cf5"
+    },
+    {
+      "id": "TASK-2026-0064",
+      "question": "Can two built-in LookAtModifier3D nodes demonstrate ancestor-order invalidation and the difference between signal-time modified poses and restored base poses?",
+      "discipline": "ANIM",
+      "status": "researching",
+      "priority": 95,
+      "priority_rationale": "Existing single-bone root extraction does not validate modifier-order worksheet; native bounded observation can address a distinct high-value pose dependency gap",
+      "expected_artifact": "Source-frozen two-bone native modifier-order evidence or accurately retained failed gate; integrate into existing animation article only if accepted",
+      "artifact_paths": [],
+      "acceptance": [
+        "Exact current animation metadata/source gate; do not transfer four geometry tests or single-bone extraction to modifier order",
+        "Freeze same skeleton/target/modifier IDs, direct-child order-only change and literal basis/position oracle before code",
+        "One author behavior process with two evaluations plus version query, independent repeat only after reviewed result",
+        "Observe modification_processed and skeleton_updated synchronously, restored base pose in separately deferred continuation",
+        "Use exact additive five-location helper; preserve all raw failures, binary provenance caveat and finite timeouts",
+        "No real IK, AnimationMixer, skin/rendering, physical contacts or Unity/Unreal order guarantee"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:26:33.877270Z",
+      "next_action": "Implement accepted protocol46d4965f and inspect first bounded author run before any independent replay or scope changes",
       "blockers": []
     }
   ]
