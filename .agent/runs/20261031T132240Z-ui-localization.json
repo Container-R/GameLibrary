@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T132240Z-ui-localization",
   "started_at": "2026-10-31T13:16:30Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T13:25:27.472113Z",
   "task_id": [
     "TASK-2026-0011",
     "TASK-2026-0012",
@@ -49,7 +49,7 @@
     ".agent/state.json",
     ".agent/queue.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d",
   "validation": {
     "ui_model_tests": "11 passed",
     "all_model_tests": "53 passed in5 suites",
@@ -61,5 +61,5 @@
   },
   "blockers": [],
   "next_action": "Steam动态云同步恢复写入边界研究；继续独立质量检查",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; articles, taxonomy and UI/economy output blob hashes matched remote"
 }

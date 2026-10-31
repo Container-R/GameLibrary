@@ -253,7 +253,7 @@
       "id": "TASK-2026-0011",
       "question": "模态关闭与控件失效后如何安全恢复手柄/键盘焦点？",
       "discipline": "UX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
       "expected_artifact": "solutions/ux/modal-focus-recovery.md",
@@ -263,18 +263,20 @@
         "模型/引擎/玩家验证边界明确"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:22:59.146248Z",
-      "next_action": "来源独立复核与模型边界检查完成，待发表核验",
-      "blockers": []
+      "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:25:27.472113Z",
+      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
     },
     {
       "id": "TASK-2026-0012",
       "question": "如何用伪本地化检查文本布局与占位符契约，同时不冒充真实语言验证？",
       "discipline": "LOC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
       "expected_artifact": "solutions/localization/pseudo-localization-contract.md",
@@ -284,11 +286,55 @@
         "模型/引擎/玩家验证边界明确"
       ],
       "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:22:59.146248Z",
+      "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:25:27.472113Z",
+      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
+    },
+    {
+      "id": "TASK-2026-0013",
+      "question": "Steam动态云同步恢复如何避免旧内存覆盖已下载存档？",
+      "discipline": "PLATFORM",
+      "status": "researching",
+      "priority": 97,
+      "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
+      "expected_artifact": "solutions/platform/cloud-save-resume-boundary.md",
+      "acceptance": [
+        "独立来源/模型边界核查",
+        "可复现测试和明确假设",
+        "保留原始输出与失败证据"
+      ],
+      "source_leads": [],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:22:59.146248Z",
-      "next_action": "来源独立复核与模型边界检查完成，待发表核验",
+      "last_progress_at": "2026-10-31T13:25:27.472113Z",
+      "next_action": "存档稿审查与现有模型对抗实验",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0014",
+      "question": "独立对固定步长与预测模型进行有种子的乱序/重复/积压状态测试并用故障变异检验断言强度",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 97,
+      "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
+      "expected_artifact": "research/experiments/deep-model-qa/README.md",
+      "acceptance": [
+        "独立来源/模型边界核查",
+        "可复现测试和明确假设",
+        "保留原始输出与失败证据"
+      ],
+      "source_leads": [],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:25:27.472113Z",
+      "next_action": "存档稿审查与现有模型对抗实验",
       "blockers": []
     }
   ]
