@@ -201,7 +201,7 @@
       "id": "TASK-2026-0008",
       "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
       "discipline": "PROD",
-      "status": "needs-research",
+      "status": "researching",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
@@ -212,12 +212,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T13:22:59.146248Z",
-      "next_action": "ACCESS兼容拆分和7项结构/引用测试已实施；其余学科职责核实继续",
+      "last_progress_at": "2026-10-31T18:40:11.675407Z",
+      "next_action": "Evidence-based gap audit of 19 articles, then select one undercovered concrete engineering handoff",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -874,7 +874,7 @@
       "id": "TASK-2026-0037",
       "question": "Compressed texture block and mip-tail payload boundary",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/experiments/texture-block-budget/README.md",
@@ -883,13 +883,15 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:36:37.925799Z",
-      "next_action": "Publish reviewed texture article and verify remote tree; CPU-only evidence",
+      "last_progress_at": "2026-10-31T18:40:11.675407Z",
+      "next_action": "Maintain scoped offline evidence; no GPU allocation or residence claim",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z"
+      "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
+      "completed_at": "2026-10-31T18:40:11.675407Z",
+      "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580"
     }
   ]
 }

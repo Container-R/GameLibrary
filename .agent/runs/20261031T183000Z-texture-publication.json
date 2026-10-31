@@ -1,10 +1,10 @@
 {
   "run_id": "20261031T183000Z-texture-publication",
   "started_at": "2026-10-31T18:31:18.088979Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T18:40:11.675407Z",
   "task_id": "TASK-2026-0037",
-  "commit_sha": null,
-  "outcome": "prepared; publication pending",
+  "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580",
+  "outcome": "Published and verified",
   "validation": {
     "numeric_cases": 14,
     "invalid_input_guards": 6,
@@ -22,5 +22,10 @@
     "v2_negative_decodes": 0,
     "separate_current_stdout_summary_comparisons": 2
   },
-  "scope": "Original finite BC payload arithmetic and legacy DDS fixture; no BC7 decoding, GPU allocation, residency or performance claims"
+  "scope": "Original finite BC payload arithmetic and legacy DDS fixture; no BC7 decoding, GPU allocation, residency or performance claims",
+  "verified_selected_blobs": 174,
+  "local_links": 254,
+  "missing_local_links": 0,
+  "archive_checks_passed": 109,
+  "archive_checks_failed": 0
 }
