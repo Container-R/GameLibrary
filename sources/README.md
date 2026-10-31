@@ -109,3 +109,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [League服务器分配来源](../research/source-notes/league-server-allocation-observation-age.md)区分观测更新延迟、年轻对局未来需求和机器就绪；历史报告不证明普适策略或收益。
 
 [ICU目标locale分支来源](../research/source-notes/icu-locale-plural-coverage.md)核对固定CLDR派生规则、默认数字格式与other回退；格式化成功不等于完整消息意图或语言呈现验收。
+
+[Ogg Opus 计数来源](../research/source-notes/ogg-opus-frame-boundary.md)区分容器位置、pre-skip、尾裁与呈现 PCM；固定完整解码不证明随机访问循环。

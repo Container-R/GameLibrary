@@ -3747,6 +3747,468 @@
         "stderr.txt"
       ],
       "target": "research/experiments/icu-plural-locale/review/native-repeat/51693796-d462-4068-8d93-cf96d488eb99/6107b93c-3894-4178-9ce8-fa9ca851f065/stderr.txt"
+    },
+    {
+      "kind": "manifest",
+      "id": "ogg-opus/author/source_sha256",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/ogg-opus-frame-boundary/protocol.md",
+        "run.py": "research/experiments/ogg-opus-frame-boundary/run.py",
+        "reader.py": "research/experiments/ogg-opus-frame-boundary/reader.py",
+        "common.py": "research/experiments/ogg-opus-frame-boundary/common.py",
+        "consumer.py": "research/experiments/ogg-opus-frame-boundary/consumer.py",
+        "test_pure.py": "research/experiments/ogg-opus-frame-boundary/test_pure.py",
+        "isolation.py": "research/experiments/ogg-opus-frame-boundary/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "ogg-opus/author/source_after",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/ogg-opus-frame-boundary/protocol.md",
+        "run.py": "research/experiments/ogg-opus-frame-boundary/run.py",
+        "reader.py": "research/experiments/ogg-opus-frame-boundary/reader.py",
+        "common.py": "research/experiments/ogg-opus-frame-boundary/common.py",
+        "consumer.py": "research/experiments/ogg-opus-frame-boundary/consumer.py",
+        "test_pure.py": "research/experiments/ogg-opus-frame-boundary/test_pure.py",
+        "isolation.py": "research/experiments/ogg-opus-frame-boundary/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/version/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/version/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/encode/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/encode.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/encode/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/encode.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decode/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        2,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decode.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decode/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "processes",
+        2,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decode.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/input.pcm.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "input.pcm",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/input.pcm.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/encoded.opus.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "encoded.opus",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/encoded.opus.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.001",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        1,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.001"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.002",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        2,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.002"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.003",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        3,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.003"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.004",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        4,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.004"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.005",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        5,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.005"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.006",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        6,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.006"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/decoded.pcm.gz.b64.007",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        7,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm.gz.b64.007"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/author/parsed",
+      "document": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/receipt.json",
+      "field": [
+        "artifacts",
+        "parsed.json",
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "ogg-opus/independent/source_sha256",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/ogg-opus-frame-boundary/review/final-source/protocol.md",
+        "run.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/run.py",
+        "reader.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/reader.py",
+        "common.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/common.py",
+        "consumer.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/consumer.py",
+        "test_pure.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/test_pure.py",
+        "isolation.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "ogg-opus/independent/source_after",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/ogg-opus-frame-boundary/review/final-source/protocol.md",
+        "run.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/run.py",
+        "reader.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/reader.py",
+        "common.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/common.py",
+        "consumer.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/consumer.py",
+        "test_pure.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/test_pure.py",
+        "isolation.py": "research/experiments/ogg-opus-frame-boundary/review/final-source/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/version/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/version/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/encode/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/encode.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/encode/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/encode.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decode/stdout",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        2,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decode.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decode/stderr",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "processes",
+        2,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decode.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/input.pcm.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "input.pcm",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/input.pcm.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/encoded.opus.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "encoded.opus",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/encoded.opus.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.000",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        0,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.000"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.001",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        1,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.001"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.002",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        2,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.002"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.003",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        3,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.003"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.004",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        4,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.004"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.005",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        5,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.005"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.006",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        6,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.006"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/decoded.pcm.gz.b64.007",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "archives",
+        "decoded.pcm",
+        7,
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/decoded.pcm.gz.b64.007"
+    },
+    {
+      "kind": "hash",
+      "id": "ogg-opus/independent/parsed",
+      "document": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/receipt.json",
+      "field": [
+        "artifacts",
+        "parsed.json",
+        "sha256"
+      ],
+      "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/parsed.json"
     }
   ]
 }

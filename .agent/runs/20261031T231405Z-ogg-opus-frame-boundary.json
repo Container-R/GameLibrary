@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T231405Z-ogg-opus-frame-boundary",
+  "task_ids": [
+    "TASK-2026-0069"
+  ],
+  "started_at": "2026-10-31T23:14:11.486756Z",
+  "ended_at": "2026-10-31T23:29:21.698030Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "RFC 7845 \u00a7\u00a73\u20135.2",
+    "RFC 6716 \u00a73.1/Table2/\u00a73.2.2",
+    "RFC 3533 \u00a7\u00a75\u20136",
+    "Xiph Ogg framing",
+    "FFmpeg fixed comparison documentation 3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587"
+  ],
+  "evidence": {
+    "author_uuid": "2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab",
+    "independent_uuid": "1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab",
+    "version_processes": 2,
+    "encode_processes": 2,
+    "decode_processes": 2,
+    "unique_inputs": 1,
+    "unique_configurations": 1,
+    "presented_frames": 93659,
+    "pre_skip": 312,
+    "final_granule": 93971,
+    "coded_frames": 94080,
+    "tail_trim": 109,
+    "actual_continuation_pages": 0,
+    "native_timeout_coverage": false,
+    "scope": "same installed codec complete decode count, not waveform/loop/playback quality"
+  },
+  "negative_startup": {
+    "exit_code": 1,
+    "tool_processes": 0,
+    "seeded_synthetic_summary_removed": true,
+    "scope": "one optimized startup rejection only"
+  },
+  "review": "Initial synthetic consumer false accepts preserved; corrected before any codec sequence. Independent observed-count checker complements full archive consumer; neither authenticates execution.",
+  "validation": {
+    "library_errors": 0,
+    "indexed_articles": 32,
+    "archive_checks_normal": 412,
+    "archive_checks_optimized": 412,
+    "archive_check_failures": 0,
+    "prior_experiment_files_unchanged": 1938,
+    "relocated_archive_only_static_commands": 8,
+    "local_markdown_links_checked": 509,
+    "selected_blobs_pending_verification": true
+  },
+  "next_action": "Complete reviewed production manager role contribution from concrete original sources; whole role matrix stays incomplete"
+}

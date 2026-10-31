@@ -1723,11 +1723,14 @@
       "id": "TASK-2026-0069",
       "question": "How does a fresh Ogg Opus stream separate encoded granule positions, pre-skip/end trim and presented PCM frame count?",
       "discipline": "MUSIC",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "Existing music article explicitly excludes encoded padding; installed FFmpeg/libopus capabilities permit a concrete codec/container boundary beyond PCM-only evidence",
       "expected_artifact": "Source-gated finite OggOpus count experiment or precise negative, supplementing existing PCM loop article without playback/quality claims",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/ogg-opus-frame-boundary.md",
+        "research/experiments/ogg-opus-frame-boundary/README.md"
+      ],
       "acceptance": [
         "Read RFC7845 granule/preskip/endtrim/initial-position and sufficient Oggpage/Opuspacket framing definitions before readerprotocol",
         "Freeze one original93659frame48k stereo source, exact explicit20ms encode/decode commands and bounded reader beforemediaexecution",
@@ -1738,8 +1741,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T00:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T23:14:11.486756Z",
-      "next_action": "Finish original container/header/page/packet-duration source gate and dependency identity; freeze finite protocol before any encode/decode",
+      "last_progress_at": "2026-10-31T23:29:21.698030Z",
+      "next_action": "Publish reviewed finite codec/container count boundary; preserve old PCM fixture and scope beyond full decoding",
       "blockers": []
     }
   ]

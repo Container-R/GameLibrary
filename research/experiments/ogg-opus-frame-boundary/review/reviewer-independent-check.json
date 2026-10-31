@@ -1,0 +1,40 @@
+{
+  "uuid": "1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab",
+  "accepted": true,
+  "processes": 3,
+  "media_processes": 2,
+  "pages": 4,
+  "audio_packets": 98,
+  "pre_skip": 312,
+  "granule": 93971,
+  "coded_frames": 94080,
+  "tail_trim": 109,
+  "presented_frames": 93659,
+  "source_sha256": {
+    "protocol.md": "4024d6fda4d3533eeca3e124d79c398cae1ec540d143da7ef18b6fb0ba27db5e",
+    "run.py": "301fd5346075d0d7ce4c4ecd26545c4a2e4b3efe298bca284216a2181eaf14c8",
+    "reader.py": "6bcd411db25f6e2cb92f5b80ddb39a8e26a34f4b265f7df520278f83b57d1f98",
+    "common.py": "da589ab8f761083d610499b5ba7e9f7bca8e4cc36a8d4ffa3fae6a748eba4e40",
+    "consumer.py": "a8a94ecad732492dc4fd8f71f0c3d54fa4d2e9175516f554972da08023d2f1ff",
+    "test_pure.py": "8919cbf958c713ef7546ac97f394f921d67b09b093bd82291ca5eb07ade77b71",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "artifacts": {
+    "input.pcm": {
+      "bytes": 374636,
+      "sha256": "dad93e0c0dc54422a45caaf2d141e51afd077509834e204d88b737aebad50c44"
+    },
+    "encoded.opus": {
+      "bytes": 23808,
+      "sha256": "232b4c8829884ccc80544e4995b42287b5ae2cc97edebcbf375844afea2cc7e9"
+    },
+    "decoded.pcm": {
+      "bytes": 374636,
+      "sha256": "e3f52fd692d8d8b61a7620b02b20f1c4330b863cc22eaea3f5ab508cba9523db"
+    },
+    "parsed.json": {
+      "bytes": 21315,
+      "sha256": "cb31a269cebdc84f28358271b6f36a0397748ff1b1610b6cc03279eb70dd498a"
+    }
+  }
+}

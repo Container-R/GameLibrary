@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "uuid": "2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab",
+  "processes": [
+    {
+      "name": "version",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-version"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-10-31T23:26:37.114839+00:00",
+      "pid": 6,
+      "returncode": 0,
+      "returned_utc": "2026-10-31T23:26:37.184682+00:00",
+      "stdout_sha256": "b241942a091ee91966e5b04017a34f1f2a3bcfb1cf80a195e274db03874459d9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "encode",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-y",
+        "-f",
+        "s16le",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/input.pcm",
+        "-map",
+        "0:a:0",
+        "-c:a",
+        "libopus",
+        "-application",
+        "audio",
+        "-frame_duration",
+        "20",
+        "-b:a",
+        "96000",
+        "-vbr",
+        "off",
+        "-mapping_family",
+        "0",
+        "-f",
+        "opus",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/encoded.opus"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-10-31T23:26:37.185380+00:00",
+      "pid": 7,
+      "returncode": 0,
+      "returned_utc": "2026-10-31T23:26:37.266325+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "decode",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-y",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/encoded.opus",
+        "-map",
+        "0:a:0",
+        "-c:a",
+        "pcm_s16le",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-f",
+        "s16le",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/decoded.pcm"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-10-31T23:26:37.290782+00:00",
+      "pid": 22,
+      "returncode": 0,
+      "returned_utc": "2026-10-31T23:26:37.363523+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "source_sha256": {
+    "protocol.md": "4024d6fda4d3533eeca3e124d79c398cae1ec540d143da7ef18b6fb0ba27db5e",
+    "run.py": "301fd5346075d0d7ce4c4ecd26545c4a2e4b3efe298bca284216a2181eaf14c8",
+    "reader.py": "6bcd411db25f6e2cb92f5b80ddb39a8e26a34f4b265f7df520278f83b57d1f98",
+    "common.py": "da589ab8f761083d610499b5ba7e9f7bca8e4cc36a8d4ffa3fae6a748eba4e40",
+    "consumer.py": "a8a94ecad732492dc4fd8f71f0c3d54fa4d2e9175516f554972da08023d2f1ff",
+    "test_pure.py": "8919cbf958c713ef7546ac97f394f921d67b09b093bd82291ca5eb07ade77b71",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "identity_before": {
+    "/usr/bin/ffmpeg": "e8a8d46f5225f3062cec7c07fb145d58ae73c603cb740dcd5bad34bfb54e455a",
+    "/usr/lib/x86_64-linux-gnu/libopus.so.0.10.1": "621e97f23655dbf2727873b7717e3b65ae8c734f84a0848f88c21edb95202357",
+    "/usr/lib/x86_64-linux-gnu/libavcodec.so.61.19.101": "c01e80460c07b27883a61c53e549755b9ff052071a83f4912ff285168719219d",
+    "/usr/lib/x86_64-linux-gnu/libavformat.so.61.7.103": "8cde31eb30ee1ccc7d3758f60fe46dc9f342c4c9fef98cef81ecf7b681b78eeb",
+    "/usr/lib/x86_64-linux-gnu/libswresample.so.5.3.100": "de57f190891cf107b9c2fb51fc7d45c02c6c652f6fc7992a3c26d1f16f371674",
+    "/usr/lib/x86_64-linux-gnu/libavutil.so.59.39.100": "6c463f7e033438989533aea3c35e4c9a98fd6b0a637ddb8529733c0f3db1850a"
+  },
+  "artifacts": {
+    "input.pcm": {
+      "bytes": 374636,
+      "sha256": "dad93e0c0dc54422a45caaf2d141e51afd077509834e204d88b737aebad50c44"
+    },
+    "encoded.opus": {
+      "bytes": 23808,
+      "sha256": "40cc7f2c644554667df776b7e4a4e75f8f32515d2d9374b643179c97f0dc665d"
+    },
+    "decoded.pcm": {
+      "bytes": 374636,
+      "sha256": "e3f52fd692d8d8b61a7620b02b20f1c4330b863cc22eaea3f5ab508cba9523db"
+    },
+    "parsed.json": {
+      "bytes": 21318,
+      "sha256": "b600c878b0227bf2c50576b54c43605f963638c2ef8d90ccc1aa16f748e72395"
+    }
+  },
+  "archives": {
+    "input.pcm": [
+      {
+        "path": "input.pcm.gz.b64.000",
+        "bytes": 4384,
+        "sha256": "4cd03126fdb05898b4ac2f4185f739df0572bfb70c09eca2995377d17f6d3134"
+      }
+    ],
+    "encoded.opus": [
+      {
+        "path": "encoded.opus.gz.b64.000",
+        "bytes": 3560,
+        "sha256": "a7f496bb02163d5ebbf0fafb7a3d8c7e24ae9736cc91478cfb4ea384e1e8c5ce"
+      }
+    ],
+    "decoded.pcm": [
+      {
+        "path": "decoded.pcm.gz.b64.000",
+        "bytes": 65536,
+        "sha256": "21e357d272acb537e6ff49c1e662950ce1d64ac1e1420e561b7c56aab16e3e0d"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.001",
+        "bytes": 65536,
+        "sha256": "cbe9a18adf6d92df8e4b708f6a67a345b96d785bdc8f713947957058e6bbe73b"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.002",
+        "bytes": 65536,
+        "sha256": "561c3069e2fcc5fa798a1ad199528fd853992a4893ba968b483d38927e8b4e2b"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.003",
+        "bytes": 65536,
+        "sha256": "408a7ad189820d7e78a644b63235e5cfc8a4b65c4eff8fe4e54bdb643ad0d15c"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.004",
+        "bytes": 65536,
+        "sha256": "27e8c1528d63f6e2c24bddeac2885ce8bbce83202a57d1533ddc65e9567ff774"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.005",
+        "bytes": 65536,
+        "sha256": "8e1d730cd586ab5efd55445f23421789e1ee01c9259fa89f1286fcbefb1e4cec"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.006",
+        "bytes": 65536,
+        "sha256": "ece7b0748c7ea9cbfc263210adf9453220006dda98ff5762a7004676f27fc0ae"
+      },
+      {
+        "path": "decoded.pcm.gz.b64.007",
+        "bytes": 3608,
+        "sha256": "8a10e31d3d54dd8a182e5a5e1d55599808b5a547c57245064629872fb83ccbd1"
+      }
+    ]
+  },
+  "original_process_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab",
+  "base_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C"
+  },
+  "selected_environment": {
+    "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/environment/HOME",
+    "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/environment/XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/environment/XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/environment/XDG_DATA_HOME",
+    "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/ogg-opus-frame-boundary/evidence/2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab/environment/TMPDIR"
+  },
+  "encoded_before_parse": {
+    "bytes": 23808,
+    "sha256": "40cc7f2c644554667df776b7e4a4e75f8f32515d2d9374b643179c97f0dc665d"
+  },
+  "encoded_subset_gate": "PASS",
+  "identity_after": {
+    "/usr/bin/ffmpeg": "e8a8d46f5225f3062cec7c07fb145d58ae73c603cb740dcd5bad34bfb54e455a",
+    "/usr/lib/x86_64-linux-gnu/libopus.so.0.10.1": "621e97f23655dbf2727873b7717e3b65ae8c734f84a0848f88c21edb95202357",
+    "/usr/lib/x86_64-linux-gnu/libavcodec.so.61.19.101": "c01e80460c07b27883a61c53e549755b9ff052071a83f4912ff285168719219d",
+    "/usr/lib/x86_64-linux-gnu/libavformat.so.61.7.103": "8cde31eb30ee1ccc7d3758f60fe46dc9f342c4c9fef98cef81ecf7b681b78eeb",
+    "/usr/lib/x86_64-linux-gnu/libswresample.so.5.3.100": "de57f190891cf107b9c2fb51fc7d45c02c6c652f6fc7992a3c26d1f16f371674",
+    "/usr/lib/x86_64-linux-gnu/libavutil.so.59.39.100": "6c463f7e033438989533aea3c35e4c9a98fd6b0a637ddb8529733c0f3db1850a"
+  },
+  "source_after": {
+    "protocol.md": "4024d6fda4d3533eeca3e124d79c398cae1ec540d143da7ef18b6fb0ba27db5e",
+    "run.py": "301fd5346075d0d7ce4c4ecd26545c4a2e4b3efe298bca284216a2181eaf14c8",
+    "reader.py": "6bcd411db25f6e2cb92f5b80ddb39a8e26a34f4b265f7df520278f83b57d1f98",
+    "common.py": "da589ab8f761083d610499b5ba7e9f7bca8e4cc36a8d4ffa3fae6a748eba4e40",
+    "consumer.py": "a8a94ecad732492dc4fd8f71f0c3d54fa4d2e9175516f554972da08023d2f1ff",
+    "test_pure.py": "8919cbf958c713ef7546ac97f394f921d67b09b093bd82291ca5eb07ade77b71",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "native_media_processes": 2,
+  "version_processes": 1
+}

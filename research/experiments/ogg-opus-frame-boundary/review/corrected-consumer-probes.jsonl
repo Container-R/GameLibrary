@@ -1,0 +1,10 @@
+{"case": "synthetic internally consistent control, NOT executed", "result": "ACCEPTED"}
+{"case": "jointly altered libopus pin", "result": "REJECTED ValueError: all selected identity pins"}
+{"case": "unrelated environment map", "result": "REJECTED ValueError: five selected environment paths"}
+{"case": "unbound UUID", "result": "REJECTED ValueError: badly formed hexadecimal UUID string"}
+{"case": "rehashed header channels", "result": "REJECTED ValueError: all header metadata"}
+{"case": "rehashed packet stereo", "result": "REJECTED ValueError: all packet metadata"}
+{"case": "rehashed packet start", "result": "REJECTED ValueError: all packet metadata"}
+{"case": "rehashed continuation count", "result": "REJECTED ValueError: continuation count"}
+{"case": "rehashed granule origin", "result": "REJECTED ValueError: parsed page binding"}
+{"case": "rehashed Tags padding", "result": "REJECTED ValueError: all header metadata"}
