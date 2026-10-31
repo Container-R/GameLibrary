@@ -1,0 +1,725 @@
+{
+  "baseline": "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rig",
+  "catalog_sha256": "48f911217608292ab55f4ed7cdbbb2bbe6cfafa0f6365f4ff3bee915cb145862",
+  "indexed_article_count": 27,
+  "articles": [
+    {
+      "path": "roles/audio/interactive-audio-designer.md",
+      "sha256": "469f72a1168b3dbf081cdca81f4cc2ced168d40b96eb1077b0afa2babdbe5be0",
+      "verification_method_verbatim": "verification_method: 雇主岗位原文与机构职业档案交叉阅读；交付契约为原创建议；未运行音频工程或试听",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "roles/design/level-designer.md",
+      "sha256": "5a678d55253e9261abf591c02443101c7e80894fdc199128cb6388182b09e4c3",
+      "verification_method_verbatim": "verification_method: 两家雇主原文、第一方制作案例与历史挑战材料核对；交付矩阵和变更案例为原创分析，未执行关卡、招募玩家或验证组织流程",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "roles/programming/gameplay-programmer.md",
+      "sha256": "8572f6cf530f6f7dfd87bb86c86b4d894fa405a1d6192923beeff11a279eb3c8",
+      "verification_method_verbatim": "verification_method: 雇主原始岗位描述与行业组织档案交叉阅读；交付矩阵为原创建议，不是行业统一标准",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "roles/qa/game-quality-assurance.md",
+      "sha256": "22cf310097fc68886d2336e9089b8cd712c2c25b593434e0ef15ed8e5a7795e2",
+      "verification_method_verbatim": "verification_method: 行业职业资料、三个独立雇主原文及方法指南核对；交付矩阵与模板为原创建议，未进行招聘访谈、组织试用或玩家研究",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "roles/technical-art/technical-artist.md",
+      "sha256": "d101b6a84d28778c29a380dd778c0443934a45df7e3556d1b7cd2ea6711d1467",
+      "verification_method_verbatim": "verification_method: 行业组织、雇主原始说明与官方导入文档核对；流程矩阵为原创建议，未运行DCC或引擎导入测试",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "solutions/accessibility/critical-sound-information-contract.md",
+      "sha256": "f504bd973ebb5814e8c31f6aa1a79ad5902808ac4bd2688c9efcb2fd97ea0691",
+      "verification_method_verbatim": "verification_method: 四份公开原始指南/开发者资料核对；原创假设遭遇的静态信息覆盖分析；未运行游戏、未做用户试验或认证",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "solutions/ai/navigation-readiness-and-partial-path.md",
+      "sha256": "d476a1192f3e3c611de3115cb6d23a51d1b871ec880333b707248fe7b77f93dc",
+      "verification_method_verbatim": "verification_method: 官方同步与API资料核对；原创CPU无头导航图查询及异步region诊断；两次3D实际烘焙、四条agent路径与静止形状重叠独立复验；未测试角色移动或持续并发更新",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/godot-navigation-sync/README.md",
+          "sha256": "68ec703cbb4e93f99e12240e56eb2dd569f4767c3d959f80f02b904a20a95263"
+        },
+        {
+          "path": "research/experiments/godot-navigation-radius/README.md",
+          "sha256": "cac476be857b1b7ab0282030784ba95611591e10af4e27c3024533fdbb908dfa"
+        },
+        {
+          "path": "research/experiments/godot-navigation-radius/review/REVIEW.md",
+          "sha256": "4520d93981269ad376ef1da51b1833f36246f137faeed3b334c2bd956bb11a37"
+        }
+      ]
+    },
+    {
+      "path": "solutions/animation/turn-in-place-foot-sliding.md",
+      "sha256": "8a319935609ffc530791f5c92b2c2ce93e6363f1db0bd5bd67a8ebdbe14257a1",
+      "verification_method_verbatim": "verification_method: 官方版本文档与日本原始项目职责材料核对；既有4项Python二维接触模型测试；Rig依赖交接与六行接收表未执行，未运行引擎或真实角色资产",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/root-motion/test_contact_transform.py",
+          "sha256": "1a55ce854b7308742b5d58d41612b02cd75650de1a9eefc0d6a690762694ac42"
+        },
+        {
+          "path": "research/experiments/root-motion/test-output.txt",
+          "sha256": "65b82009f71b99ad493a38b27481565c53204e0ae49f9a3bb470e2cbbcecfa95"
+        },
+        {
+          "path": "research/experiments/root-motion/README.md",
+          "sha256": "46e8a039ba46ae3a63fe79f3d4b0fb3689f005d4c6c7a25c44cdb03c83490277"
+        }
+      ]
+    },
+    {
+      "path": "solutions/art2d/alpha-association-contract.md",
+      "sha256": "2fc2423598b2b040c7dadf6e304c575f0e27e37fcca48307f7c9949a78441b70",
+      "verification_method_verbatim": "verification_method: 固定第一方源码与格式文档核对；原创数值 buffer 的 5 次模式转换和 6 次实际 CPU 合成；无图片作品、引擎或颜色管理验证",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/art2d-alpha-contract/README.md",
+          "sha256": "dbbb6983d15f901675df07264a1707a71132c95219dd0c9f129ff938b90ea0aa"
+        }
+      ]
+    },
+    {
+      "path": "solutions/audio/music-state-transition-contract.md",
+      "sha256": "467198c56e6399149dbe0562f9f86e637aac3874139bed5c29dea67276f37a81",
+      "verification_method_verbatim": "verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创契约设计；未运行中间件或游戏引擎",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/audio-lifecycle/README.md",
+          "sha256": "4c62bd564f35898f78e807f37ce66910b742249e17d3bd8f6593cedac5156758"
+        },
+        {
+          "path": "research/experiments/deep-model-qa/README.md",
+          "sha256": "c3d67195b38242d7e59a77bf3ea22d400c3d0fac13426a1d3a4d7596ac6652e4"
+        }
+      ]
+    },
+    {
+      "path": "solutions/data/attempt-completion-denominator-contract.md",
+      "sha256": "afaccd2fb95685df8e627fd30b47f2041fa819444eabddf8a976d8f54a7ef0cb",
+      "verification_method_verbatim": "verification_method: 官方事件/指标文档核对；原创18行合成输入与预先冻结手算结果；固定快照和有限输入排列，不含真实玩家或服务调用",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/telemetry-attempt-contract/README.md",
+          "sha256": "dd8f9a08cdc65e9bc454ea8c86325c52a3e020edbfcbaddb00422bc2b10b8c56"
+        }
+      ]
+    },
+    {
+      "path": "solutions/design/single-player-economy-ledger.md",
+      "sha256": "541b4669ab0dca38180664593d2bb5e8dd9b5e4ff7be35038c5c96dbbda220b0",
+      "verification_method_verbatim": "verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试；SQLite 四场景10进程、单个双写者握手序列及独立复跑；读者阻塞 COMMIT 后同事务重试两轮各2进程；未进行真实玩家试验",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/sqlite-ledger-boundary/README.md",
+          "sha256": "77d719e0ca5098f0238454f1281992df8f6d42dcb9ad66dc2139f9bb7f7c4d8a"
+        },
+        {
+          "path": "research/experiments/sqlite-writer-contention/README.md",
+          "sha256": "3c579eb25acd811ab15fff3bdede78a209645d62faf90945ae4cb0730aa33625"
+        },
+        {
+          "path": "research/experiments/sqlite-commit-busy/README.md",
+          "sha256": "77cb959eb34e41d89aec3ea8ccee564e6350a39b1f35b3738731e5fa62f95ce2"
+        }
+      ]
+    },
+    {
+      "path": "solutions/engine/asset-import-intent-contract.md",
+      "sha256": "fb68adbd1a4ce1b60e061d6caa804fad0534dcf96daa2d111a42350989a723d3",
+      "verification_method_verbatim": "verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离及同路径请求登记的实际无头对照；未验证 GPU、导出包或跨版本缓存复现",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/godot-import-boundary/README.md",
+          "sha256": "52a580f34453613d9bef072f2d410d7066369aab4ae7bd9080feedc2a1ea607b"
+        },
+        {
+          "path": "research/experiments/godot-resource-candidate/README.md",
+          "sha256": "3b010d953570fcf5cbb038df32148a850e15ed2d4246021f66b738b37bafade1"
+        },
+        {
+          "path": "research/experiments/godot-resource-candidate/review/REVIEW.md",
+          "sha256": "df7543f8f917285cae0dce71790c6c967ea9237cd537c2db77f4a4eb2fc4d932"
+        },
+        {
+          "path": "research/experiments/godot-resource-broker/README.md",
+          "sha256": "d2d2d4f0322d61f76beced96a43d2a4203ed4b2a5846a9409911f32d7ca30d96"
+        },
+        {
+          "path": "research/experiments/godot-resource-broker/review/REVIEW.md",
+          "sha256": "0dd3e47e96d287b0cdfa6bb9cf4d643a613539b94b7fd24136aed8736774ff33"
+        }
+      ]
+    },
+    {
+      "path": "solutions/localization/pseudo-localization-contract.md",
+      "sha256": "2d9ddb7a7e02a32ca442bfb484406736f4c8cacc3ac57d4d7dde20ea21b4c08d",
+      "verification_method_verbatim": "verification_method: Unity Localization 1.5.13 文档、官方问题记录、ICU 与 W3C 原文核对；原创验证流程；本机 ICU 76.1 四例执行与四例独立复跑；未运行 Unity",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/icu-message-boundary/README.md",
+          "sha256": "358dfc8628c1b74946f5dbe74d14ab3579e2891f53321f2480aa9ef555004c69"
+        }
+      ]
+    },
+    {
+      "path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "sha256": "ed79aacd254b92b4b64b989e7bf69d4b707e63c51068a351b82d81deefe36c92",
+      "verification_method_verbatim": "verification_method: 固定官方规范与schema核对；原创有限交错网格CPU读取与独立字面验收；Godot原生导入2次作者进程含1次额外AABB断言失败，另1次独立复跑；未执行DCC导出、编辑器导入或GPU渲染",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/mesh-attribute-contract/README.md",
+          "sha256": "696b087bf9c704b4a0747d3da69465de8367133f8fb3db7d01900c649d19a1c7"
+        },
+        {
+          "path": "research/experiments/godot-gltf-import-boundary/README.md",
+          "sha256": "939eaa90789e058384564cff1842b072f4e3ff275a4b0763174d3ef678d97b40"
+        }
+      ]
+    },
+    {
+      "path": "solutions/music/pcm-loop-frame-contract.md",
+      "sha256": "063bbaec9a51b2c87d3beda8fdfcf4e5debd4c2d6e5f6deefc74eb85ecf93a0c",
+      "verification_method_verbatim": "verification_method: 官方端点文档核对；原创 PCM WAV 的两次实际 FFmpeg 裁剪、完整 PCM 字节验证与独立复跑；不含 FMOD 或设备播放",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/music-loop-frame-contract/README.md",
+          "sha256": "97001c9b704f55e1e69766fe7349e3e584e15641f53389118bcc990de4836cc3"
+        }
+      ]
+    },
+    {
+      "path": "solutions/platform/cloud-save-resume-boundary.md",
+      "sha256": "70641ee0157674556c067a259aaf8dbd3ef0c92a51317e7a126ca1d60693244d",
+      "verification_method_verbatim": "verification_method: Valve 官方中英文文档核对；原创串行内存模型20项状态测试及1项独立失效反例；另有Linux/tmpfs路径替换反例；未做Steam或真实挂起恢复集成测试",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/filesystem-save-publication/README.md",
+          "sha256": "a494ee6c79ba40f4732dc27ff96c8de62d971cbb743c24f8120be541d9a0ea2d"
+        }
+      ]
+    },
+    {
+      "path": "solutions/production/playtest-intervention-evidence.md",
+      "sha256": "fd1e1b424fb2bdd6c42721855ab33f8f8e32f7b523bb1000367bf19eb7f65e3f",
+      "verification_method_verbatim": "verification_method: 两家独立机构原始方法资料核对；原创假设记录的推理边界分析；未招募参与者、未执行试玩或验证改版效果",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "solutions/programming/client-prediction-authority-boundary.md",
+      "sha256": "833d6d37ee69bc6f6665fb7516f54fd3f81deb71c1f36c296528bd158cdcc3ae",
+      "verification_method_verbatim": "verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；未进行引擎、真实网络或跨平台物理验证",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/deep-model-qa/README.md",
+          "sha256": "c3d67195b38242d7e59a77bf3ea22d400c3d0fac13426a1d3a4d7596ac6652e4"
+        }
+      ]
+    },
+    {
+      "path": "solutions/programming/fixed-step-simulation-boundary.md",
+      "sha256": "6736206936c526f049b724063f2b97645157ab77ea257b6ffa7264a2b89e79b3",
+      "verification_method_verbatim": "verification_method: 原始文档核对、原创模型与本地Godot实际无头回调夹具；未运行Unity或跨平台确定性测试",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/simultaneous-combat-policy/README.md",
+          "sha256": "109fe7740ed1ebe842a91bd0c00a539eb7ac2f92a2587662c61f50b3caf6df09"
+        },
+        {
+          "path": "research/experiments/simultaneous-combat-policy/review/REVIEW.md",
+          "sha256": "cdcfed85aed6c9ef5744b16b65030664c31fad671319ea28bb0a6b13055ee8ae"
+        },
+        {
+          "path": "research/experiments/godot-combat-policy/README.md",
+          "sha256": "3e0882bfec30986b4dbb2710aef2d370af4ef4d245f8d54815c8a7fd8d4b502b"
+        },
+        {
+          "path": "research/experiments/godot-combat-policy/review/REVIEW.md",
+          "sha256": "d2e32e3a91b876a064a3933887c00ca35f91aa0486fa14a84d2ff543272b717d"
+        },
+        {
+          "path": "research/experiments/fixed-step/test_fixed_step.py",
+          "sha256": "64b4c8964a957438be7be453a617140363b3197ee693faa3470c5fabf4d406a0"
+        },
+        {
+          "path": "research/experiments/fixed-step/test-output.txt",
+          "sha256": "c55fc86a55fbf134f6435b774e82424231fb69e57c08b912b395d549673d9878"
+        },
+        {
+          "path": "research/experiments/fixed-step/README.md",
+          "sha256": "41d96a3d3ca2424523b185155cb9736139257bbcaf3dfb52718e86168d272ab1"
+        },
+        {
+          "path": "research/experiments/deep-model-qa/README.md",
+          "sha256": "c3d67195b38242d7e59a77bf3ea22d400c3d0fac13426a1d3a4d7596ac6652e4"
+        },
+        {
+          "path": "research/experiments/godot-fixed-step/README.md",
+          "sha256": "29e34b8673047c3d0b2ed3b96499b4b35e2000ace23b86b556fb567248cfa38a"
+        },
+        {
+          "path": "research/experiments/godot-pause-input/README.md",
+          "sha256": "5ccfae5541decdab58998e34e5ad361fd2eed8decfbca937fa4ae1b119d8005a"
+        },
+        {
+          "path": "research/experiments/godot-animation-events/README.md",
+          "sha256": "90c8c76fd6e204cd84d200322a4767cc80704df257b22f7188728c0eed32bcb7"
+        },
+        {
+          "path": "research/experiments/godot-animation-events/review/README.md",
+          "sha256": "b0e977d05ba10ffc7ba7a8d6440aa3a32f679dbaaa3352717c865fb744da8c06"
+        }
+      ]
+    },
+    {
+      "path": "solutions/rendering/block-compressed-mip-budget.md",
+      "sha256": "900eb014097593c77a6dc4ae0bdb8409ebacb4f56296fd19b5fc18b989d8eff6",
+      "verification_method_verbatim": "verification_method: 官方格式文档与固定源码核对；14 个有限算术案例、6 个输入拒绝、6 个实际 Pillow 单 mip 包装解码及截断拒绝；独立同环境复跑，不含 GPU 验证",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/texture-block-budget/README.md",
+          "sha256": "5c1b991aff9e4f0d8d23662bbada6a36667282d316e53bade7fc8cade03e4663"
+        }
+      ]
+    },
+    {
+      "path": "solutions/rendering/matrix-major-interface-contract.md",
+      "sha256": "94f58229014b70f246d3c70e80d11a29274524cc6355e680b8a5b3b3a2b90b3c",
+      "verification_method_verbatim": "verification_method: 固定官方规范与 C API 核对；两个实际编译进程及独立同库复跑，字面 assembly/host bytes 判据，三个启动失败负例；CPU 数值解释，不含 shader 执行",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/shader-matrix-layout/README.md",
+          "sha256": "cade0d66b4cc6ca18ae76472b1337a6846d8c0031d758d76a8c87337d00078d1"
+        },
+        {
+          "path": "research/experiments/shader-matrix-layout/review/REVIEW.md",
+          "sha256": "8c0548ab3910a2f9d29b108d2202d7587edebc731e0d3e0ad16631128cfdf107"
+        },
+        {
+          "path": "research/experiments/shader-matrix-layout/review/SEMANTIC-AUDIT.md",
+          "sha256": "b398dfa2c5f69668805c7b6066620ba9e98e27c77b32f59ed31e2f306417b9e0"
+        }
+      ]
+    },
+    {
+      "path": "solutions/ux/modal-focus-recovery.md",
+      "sha256": "4a1dfa34a87e638ec4c00b76a3fb6bcc82ad606d9947159041141c72f9949b78",
+      "verification_method_verbatim": "verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；另有Godot实际焦点身份夹具；未执行Unity或平台认证测试",
+      "direct_experiment_links": [
+        {
+          "path": "research/experiments/ui-focus/README.md",
+          "sha256": "585beb6db7dd55014a22dc48a1681cda0a0f07956a67471e6a20c1fb1fdabb2d"
+        },
+        {
+          "path": "research/experiments/godot-focus-boundary/README.md",
+          "sha256": "37fd3973dc99affa0c97b0f69821534f89aebdf064ffd726bff6841ad59c01d7"
+        }
+      ]
+    },
+    {
+      "path": "solutions/vfx/niagara-performance-budget.md",
+      "sha256": "5c7a4a3d6fa9a10aa5891803928340418c67d2402446ecef2fa046e0ebce5a8e",
+      "verification_method_verbatim": "verification_method: 官方文本溯源和原创建议实验协议；未运行UE、未采集硬件性能数据",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "case-studies/engine/factorio-derived-cache-load-equivalence.md",
+      "sha256": "d684656b6f8a414b1d6d29add6d99eeaddc7cff4aa44a1615c82fa9b0997738f",
+      "verification_method_verbatim": "verification_method: 两篇第一方开发说明核对；限定事实简述与原创验收工作表分层；未安装游戏、读取私有源码或执行失同步复现",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "case-studies/liveops/destiny-config-admission-rollback.md",
+      "sha256": "a94ace53738b20613f4e11ad89540c03d6efed9920ef0bd1df8b60afdac05924",
+      "verification_method_verbatim": "verification_method: 第一方事故说明与当前基础设施概念文档核对；事实、当时措施状态与原创验收建议分层；无生产日志、事故复现或部署试验",
+      "direct_experiment_links": []
+    },
+    {
+      "path": "case-studies/narrative/cygames-scenario-voice-handoff.md",
+      "sha256": "0ced83f526a4abbf20deb8b826219324620a1e4e4e77ff277271ba842d3b20e7",
+      "verification_method_verbatim": "verification_method: 日语第一方博客全文核对；实际工作流与原创交接验收建议分层；未观看演讲、未运行内部工具、未测试真实对白或录音",
+      "direct_experiment_links": []
+    }
+  ],
+  "receipt_inventory": [
+    {
+      "path": "research/experiments/godot-import-boundary/README.md",
+      "sha256": "52a580f34453613d9bef072f2d410d7066369aab4ae7bd9080feedc2a1ea607b",
+      "bytes": 8503
+    },
+    {
+      "path": "research/experiments/music-loop-frame-contract/README.md",
+      "sha256": "97001c9b704f55e1e69766fe7349e3e584e15641f53389118bcc990de4836cc3",
+      "bytes": 3823
+    },
+    {
+      "path": "research/experiments/godot-fixed-step/README.md",
+      "sha256": "29e34b8673047c3d0b2ed3b96499b4b35e2000ace23b86b556fb567248cfa38a",
+      "bytes": 6411
+    },
+    {
+      "path": "research/experiments/sqlite-ledger-boundary/README.md",
+      "sha256": "77d719e0ca5098f0238454f1281992df8f6d42dcb9ad66dc2139f9bb7f7c4d8a",
+      "bytes": 8323
+    },
+    {
+      "path": "research/experiments/godot-combat-policy/README.md",
+      "sha256": "3e0882bfec30986b4dbb2710aef2d370af4ef4d245f8d54815c8a7fd8d4b502b",
+      "bytes": 5784
+    },
+    {
+      "path": "research/experiments/client-prediction/test-output.txt",
+      "sha256": "ab19aeaae528d1ba518fa4917f8bc8b906509c61f325870e5e98c048f2296934",
+      "bytes": 1861
+    },
+    {
+      "path": "research/experiments/client-prediction/README.md",
+      "sha256": "7ccab9d461c416b75a57d34e789f8552aee5c545d5e40c49c6e7ad017a9397ee",
+      "bytes": 2322
+    },
+    {
+      "path": "research/experiments/sqlite-writer-contention/README.md",
+      "sha256": "3c579eb25acd811ab15fff3bdede78a209645d62faf90945ae4cb0730aa33625",
+      "bytes": 4381
+    },
+    {
+      "path": "research/experiments/audio-lifecycle/test-results.txt",
+      "sha256": "68078d95ff96ca3ceda14dea9cb2ac436e3120fc83852c14fe47905127024c1b",
+      "bytes": 951
+    },
+    {
+      "path": "research/experiments/audio-lifecycle/README.md",
+      "sha256": "4c62bd564f35898f78e807f37ce66910b742249e17d3bd8f6593cedac5156758",
+      "bytes": 5161
+    },
+    {
+      "path": "research/experiments/telemetry-attempt-contract/README.md",
+      "sha256": "dd8f9a08cdc65e9bc454ea8c86325c52a3e020edbfcbaddb00422bc2b10b8c56",
+      "bytes": 4753
+    },
+    {
+      "path": "research/experiments/godot-navigation-radius/README.md",
+      "sha256": "cac476be857b1b7ab0282030784ba95611591e10af4e27c3024533fdbb908dfa",
+      "bytes": 8943
+    },
+    {
+      "path": "research/experiments/root-motion/test-output.txt",
+      "sha256": "65b82009f71b99ad493a38b27481565c53204e0ae49f9a3bb470e2cbbcecfa95",
+      "bytes": 568
+    },
+    {
+      "path": "research/experiments/root-motion/README.md",
+      "sha256": "46e8a039ba46ae3a63fe79f3d4b0fb3689f005d4c6c7a25c44cdb03c83490277",
+      "bytes": 1200
+    },
+    {
+      "path": "research/experiments/godot-resource-broker/README.md",
+      "sha256": "d2d2d4f0322d61f76beced96a43d2a4203ed4b2a5846a9409911f32d7ca30d96",
+      "bytes": 6142
+    },
+    {
+      "path": "research/experiments/texture-block-budget/README.md",
+      "sha256": "5c1b991aff9e4f0d8d23662bbada6a36667282d316e53bade7fc8cade03e4663",
+      "bytes": 6314
+    },
+    {
+      "path": "research/experiments/art2d-alpha-contract/README.md",
+      "sha256": "dbbb6983d15f901675df07264a1707a71132c95219dd0c9f129ff938b90ea0aa",
+      "bytes": 4522
+    },
+    {
+      "path": "research/experiments/fixed-step/test-output.txt",
+      "sha256": "c55fc86a55fbf134f6435b774e82424231fb69e57c08b912b395d549673d9878",
+      "bytes": 934
+    },
+    {
+      "path": "research/experiments/fixed-step/README.md",
+      "sha256": "41d96a3d3ca2424523b185155cb9736139257bbcaf3dfb52718e86168d272ab1",
+      "bytes": 1160
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/README.md",
+      "sha256": "939eaa90789e058384564cff1842b072f4e3ff275a4b0763174d3ef678d97b40",
+      "bytes": 6190
+    },
+    {
+      "path": "research/experiments/sqlite-commit-busy/README.md",
+      "sha256": "77cb959eb34e41d89aec3ea8ccee564e6350a39b1f35b3738731e5fa62f95ce2",
+      "bytes": 4261
+    },
+    {
+      "path": "research/experiments/economy-ledger/test-output.txt",
+      "sha256": "8643058736fb93daf96d0efdf829556398d67c9e2b244abec0ebc5f3e5260e33",
+      "bytes": 1609
+    },
+    {
+      "path": "research/experiments/economy-ledger/README.md",
+      "sha256": "d6d888904a947a627fd3c49612f4da4ad619b6f54c79deeb67b13691b9c81466",
+      "bytes": 1273
+    },
+    {
+      "path": "research/experiments/godot-resource-candidate/README.md",
+      "sha256": "3b010d953570fcf5cbb038df32148a850e15ed2d4246021f66b738b37bafade1",
+      "bytes": 5870
+    },
+    {
+      "path": "research/experiments/godot-animation-events/README.md",
+      "sha256": "90c8c76fd6e204cd84d200322a4767cc80704df257b22f7188728c0eed32bcb7",
+      "bytes": 5583
+    },
+    {
+      "path": "research/experiments/shader-matrix-layout/README.md",
+      "sha256": "cade0d66b4cc6ca18ae76472b1337a6846d8c0031d758d76a8c87337d00078d1",
+      "bytes": 7293
+    },
+    {
+      "path": "research/experiments/filesystem-save-publication/README.md",
+      "sha256": "a494ee6c79ba40f4732dc27ff96c8de62d971cbb743c24f8120be541d9a0ea2d",
+      "bytes": 4292
+    },
+    {
+      "path": "research/experiments/ui-focus/test-output.txt",
+      "sha256": "d64d01c3a32b1242012e1e0a8b24645ab4b5ffddd83978854e004dd8530f16f5",
+      "bytes": 1149
+    },
+    {
+      "path": "research/experiments/ui-focus/README.md",
+      "sha256": "585beb6db7dd55014a22dc48a1681cda0a0f07956a67471e6a20c1fb1fdabb2d",
+      "bytes": 2240
+    },
+    {
+      "path": "research/experiments/godot-focus-boundary/README.md",
+      "sha256": "37fd3973dc99affa0c97b0f69821534f89aebdf064ffd726bff6841ad59c01d7",
+      "bytes": 6294
+    },
+    {
+      "path": "research/experiments/deep-model-qa/output.json",
+      "sha256": "dace6b56918b8dead5b6ec6a703ae88fd6294f589406bcb2e4707250121fe94d",
+      "bytes": 2623
+    },
+    {
+      "path": "research/experiments/deep-model-qa/audio-output.json",
+      "sha256": "c279d3189f87eb2c1b259470637dc748cd195bedf3631b080b85965aae77969f",
+      "bytes": 343
+    },
+    {
+      "path": "research/experiments/deep-model-qa/README.md",
+      "sha256": "c3d67195b38242d7e59a77bf3ea22d400c3d0fac13426a1d3a4d7596ac6652e4",
+      "bytes": 4248
+    },
+    {
+      "path": "research/experiments/simultaneous-combat-policy/README.md",
+      "sha256": "109fe7740ed1ebe842a91bd0c00a539eb7ac2f92a2587662c61f50b3caf6df09",
+      "bytes": 4718
+    },
+    {
+      "path": "research/experiments/godot-navigation-sync/README.md",
+      "sha256": "68ec703cbb4e93f99e12240e56eb2dd569f4767c3d959f80f02b904a20a95263",
+      "bytes": 10012
+    },
+    {
+      "path": "research/experiments/icu-message-boundary/README.md",
+      "sha256": "358dfc8628c1b74946f5dbe74d14ab3579e2891f53321f2480aa9ef555004c69",
+      "bytes": 7710
+    },
+    {
+      "path": "research/experiments/godot-pause-input/README.md",
+      "sha256": "5ccfae5541decdab58998e34e5ad361fd2eed8decfbca937fa4ae1b119d8005a",
+      "bytes": 7296
+    },
+    {
+      "path": "research/experiments/cloud-save-resume/test-output.txt",
+      "sha256": "601055bfcc454a054e45aa680243a3e76af06641432dbec8bac5d47701eb10df",
+      "bytes": 2263
+    },
+    {
+      "path": "research/experiments/cloud-save-resume/README.md",
+      "sha256": "817ab3cb00cc5122b8613f799da29a9371ccc930a9b1b38e25e1f412324ecdfc",
+      "bytes": 2868
+    },
+    {
+      "path": "research/experiments/mesh-attribute-contract/README.md",
+      "sha256": "696b087bf9c704b4a0747d3da69465de8367133f8fb3db7d01900c649d19a1c7",
+      "bytes": 4000
+    },
+    {
+      "path": "research/experiments/godot-import-boundary/results/summary.json",
+      "sha256": "9c18c666c977e92d74825e88f0e6fc451729a4a161b163541669c64dd8acf659",
+      "bytes": 2870
+    },
+    {
+      "path": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "sha256": "65427eea9795ce2e2265a2b494616a27a1a494604e3a8920afa7c7d6f498aa83",
+      "bytes": 6333
+    },
+    {
+      "path": "research/experiments/godot-fixed-step/results/summary.json",
+      "sha256": "55ef87b6e976cfa03724b69772cd0c67a3d80b496824f14a5a0b20bda0d80311",
+      "bytes": 4552
+    },
+    {
+      "path": "research/experiments/sqlite-ledger-boundary/results/summary.json",
+      "sha256": "02a812339a9a8e7f4be8b4e512bc0a99e8837c59fce414e9e9394d6f60f302dc",
+      "bytes": 5388
+    },
+    {
+      "path": "research/experiments/godot-combat-policy/results/summary.json",
+      "sha256": "c9bbfe344c0b97ca97885a2d088361f36a1bc23b522e14dfc5bb6cbc71d1582c",
+      "bytes": 10727
+    },
+    {
+      "path": "research/experiments/sqlite-writer-contention/results/summary.json",
+      "sha256": "651121a2fe0d3e77e5661c5ffd0d00901f2b25ccae1c9ad19bb2c7cc325694ec",
+      "bytes": 2645
+    },
+    {
+      "path": "research/experiments/telemetry-attempt-contract/results/summary.json",
+      "sha256": "a7e115c4e5c957d0ea644bf225249b8ad0500d712865df10406a726aaf413188",
+      "bytes": 3162
+    },
+    {
+      "path": "research/experiments/godot-navigation-radius/results/summary.json",
+      "sha256": "6dc4ac3c3b69203e3e23f72b42122f30562e304a93979556c9c4735e072b3851",
+      "bytes": 34559
+    },
+    {
+      "path": "research/experiments/godot-resource-broker/freshness-results/summary.json",
+      "sha256": "f71e7a08fdc6ff1d1821a10e07049c66937746b7c6011807099024a7b7fcad7b",
+      "bytes": 1317
+    },
+    {
+      "path": "research/experiments/godot-resource-broker/results/summary.json",
+      "sha256": "ffe92437a09bb12921b125ffdbb742314a2e6a0a328aa61590b67fefe02e2d33",
+      "bytes": 1193
+    },
+    {
+      "path": "research/experiments/texture-block-budget/results/summary.json",
+      "sha256": "b165e02585f307865a417b5bcf79d8e7ce3168d703c1cd98c56915529d9146e1",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/README.md",
+      "sha256": "3814137091dd4e7224ff4395beb34f83a689779ae06f92a2a3b669be5c12d229",
+      "bytes": 4119
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v2/cases/malformed-summary/results/summary.json",
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "bytes": 1
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v2/cases/missing-artifact/results/summary.json",
+      "sha256": "b165e02585f307865a417b5bcf79d8e7ce3168d703c1cd98c56915529d9146e1",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v2/cases/optimized-checker/results/summary.json",
+      "sha256": "b165e02585f307865a417b5bcf79d8e7ce3168d703c1cd98c56915529d9146e1",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/model-import-failure/results/summary.json",
+      "sha256": "5fddea0d4216ee6100e5b7eacacdde2fc70d23b81df9e6ba17df86c0e31534a3",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/wrong-payload-offset/results/summary.json",
+      "sha256": "416b06cbb5efb5777775b063df792eda2d0d82c7aa1ac0bd3eca3b41547c91d1",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/dependency-import-failure/results/summary.json",
+      "sha256": "5fddea0d4216ee6100e5b7eacacdde2fc70d23b81df9e6ba17df86c0e31534a3",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/malformed-summary/results/summary.json",
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "bytes": 1
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/missing-artifact/results/summary.json",
+      "sha256": "5fddea0d4216ee6100e5b7eacacdde2fc70d23b81df9e6ba17df86c0e31534a3",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/texture-block-budget/negative-v1/cases/optimized-checker/results/summary.json",
+      "sha256": "5fddea0d4216ee6100e5b7eacacdde2fc70d23b81df9e6ba17df86c0e31534a3",
+      "bytes": 14224
+    },
+    {
+      "path": "research/experiments/art2d-alpha-contract/results/summary.json",
+      "sha256": "d7555abc8477253a19c95cb4f68d53b8973bf623578de78eece79cfe94203799",
+      "bytes": 5099
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/summary.json",
+      "sha256": "78f1991dbe8efc2fdb814d6ec023b3a93987d7c2c0123cc057da7e187bb40d51",
+      "bytes": 4604
+    },
+    {
+      "path": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/summary.json",
+      "sha256": "b477f974539ab74951323d5cdd3fcfd477535f0e7f71cda0b1407e4a1d096203",
+      "bytes": 2216
+    },
+    {
+      "path": "research/experiments/godot-resource-candidate/freshness-results/summary.json",
+      "sha256": "debbab812f03f0b796243dc4fb3e6eeabb78703c09c6d1809d6b16861c70afe7",
+      "bytes": 1327
+    },
+    {
+      "path": "research/experiments/godot-resource-candidate/results/summary.json",
+      "sha256": "c9181b2e90a0bb2d44a1d03e37774bef8dc78b09d158dfe4981cfe3d63b82d1c",
+      "bytes": 1270
+    },
+    {
+      "path": "research/experiments/godot-animation-events/results/summary.json",
+      "sha256": "c6c0d24b7ebc7a2f7cc6f71bc4d2773983acf4f159ffbbc92b886ca7b211de1a",
+      "bytes": 2496
+    },
+    {
+      "path": "research/experiments/shader-matrix-layout/results/summary.json",
+      "sha256": "d8a1c2fcefca144bc6ac51913a20687e051e0dd813c7b52b78932e0a1cb01145",
+      "bytes": 2157
+    },
+    {
+      "path": "research/experiments/godot-focus-boundary/results/summary.json",
+      "sha256": "09044b259896604bbe3c829169322091545a30c0b7c709217cc83887db260c1c",
+      "bytes": 1580
+    },
+    {
+      "path": "research/experiments/godot-navigation-sync/results/summary.json",
+      "sha256": "3f9c3bd44cf68570b19598561b93fc09d41881068b16df01466981ccedb2d22d",
+      "bytes": 1043
+    },
+    {
+      "path": "research/experiments/icu-message-boundary/results/summary.json",
+      "sha256": "25a0977f09db130580a5ae0bd251682a15efe68c5fc0891830b58645d17606b4",
+      "bytes": 2021
+    },
+    {
+      "path": "research/experiments/icu-message-boundary/runner-negative/README.md",
+      "sha256": "c6f22daaed143cd1e864baa9af12a8a50e6dd5c6bff93d5be0472bebb464bf33",
+      "bytes": 4678
+    },
+    {
+      "path": "research/experiments/godot-pause-input/results/summary.json",
+      "sha256": "93de3dd76be415db34d2dc2b193ed70651525bd78609865a4a9c7902e974b287",
+      "bytes": 2089
+    },
+    {
+      "path": "research/experiments/mesh-attribute-contract/results/summary.json",
+      "sha256": "ae41b58ae24aeae2b407930bbb492278386d73bfea664c190bdef3ecff92a7f1",
+      "bytes": 3024
+    }
+  ]
+}

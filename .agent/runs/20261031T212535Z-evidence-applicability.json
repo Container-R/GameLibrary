@@ -1,0 +1,21 @@
+{
+  "run_id": "20261031T212535Z-evidence-applicability",
+  "started_at": "2026-10-31T21:25:35Z",
+  "task_id": "TASK-2026-0057",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS",
+    "articles_audited": 27,
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 27,
+    "declared_text_replacements": 3,
+    "articles_changed": 2,
+    "experiment_files_unchanged": 1567,
+    "new_runtime_executions": 0,
+    "new_model_tests": 0,
+    "archive_consistency_checks": 297,
+    "scope": "Editorial exact-artifact applicability and minimal wording/crosslink corrections; not all factual sources or archived execution authenticated anew",
+    "no_status_upgrade": true
+  },
+  "local_review_completed_at": "2026-10-31T21:28:56.966980Z"
+}

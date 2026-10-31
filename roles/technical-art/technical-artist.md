@@ -11,7 +11,7 @@ engines: [Unreal Engine]
 versions: ["Unreal Engine 5.6 FBX 文档"]
 updated_at: 2026-10-31
 review_after: 2027-01-31
-verification_method: 行业组织、雇主原始说明与官方导入文档核对；流程矩阵为原创建议，未运行DCC或引擎导入测试
+verification_method: 行业组织、雇主原始说明与官方导入文档核对；UE 5.6 FBX 交付矩阵未执行；关联实际 Godot SVG 导入配置反例，不验证 DCC/FBX 或完整岗位流程
 sources:
   - https://www.screenskills.com/job-profiles/browse/games/technical-art/technical-artist/
   - https://jobs.smartrecruiters.com/Ubisoft2/744000110207267-senior-technical-artist-tool-art-pipelines-w-m-nb-

@@ -7,7 +7,7 @@ primary_discipline: SFX
 related_disciplines: [MUSIC, PROG, DESIGN, QA]
 related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay-programmer, qa-engineer]
 updated_at: 2026-10-31
-verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创契约设计；未运行中间件或游戏引擎
+verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；未运行中间件或游戏引擎
 sources:
   - https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html
   - https://www.fmod.com/docs/2.04/api/studio-guide.html
@@ -124,7 +124,7 @@ FMOD 2.04 API Guide §13.4/13.8/13.11也直接说明命令异步处理、样本�
 
 问题关键词：interactive music、music state、quantized transition、transition region、magnet region、exit cue、music switch container、音乐强度抖动、音乐事件重复启动。
 
-关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)、[玩法程序职责](../../roles/programming/gameplay-programmer.md)。待研究关联：异步资源生命周期、音频 QA 与平台时延。完整“交互音频设计师”职业画像仍应独立研究招聘/组织/交付证据，不用本条有限接口表替代。
+关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)、[玩法程序职责](../../roles/programming/gameplay-programmer.md)。待研究关联：异步资源生命周期、音频 QA 与平台时延。岗位职责与交付证据见[交互音频设计](../../roles/audio/interactive-audio-designer.md)；该档案也有来源与适用范围，不用本条有限接口表替代。
 
 来源访问日期：2026-10-31。保存原创契约分析和必要的短述，不转载中间件源码、音乐、工程素材或原文全文。
 

@@ -1,0 +1,27 @@
+{
+  "canonical_baseline": "6492be88ea30f13813028591f188724b8eeed82e",
+  "scope": "Three narrowly supported text replacements across two existing articles; no status/runtime/source changes",
+  "changes": [
+    {
+      "path": "roles/technical-art/technical-artist.md",
+      "before": "verification_method: \u884c\u4e1a\u7ec4\u7ec7\u3001\u96c7\u4e3b\u539f\u59cb\u8bf4\u660e\u4e0e\u5b98\u65b9\u5bfc\u5165\u6587\u6863\u6838\u5bf9\uff1b\u6d41\u7a0b\u77e9\u9635\u4e3a\u539f\u521b\u5efa\u8bae\uff0c\u672a\u8fd0\u884cDCC\u6216\u5f15\u64ce\u5bfc\u5165\u6d4b\u8bd5",
+      "after": "verification_method: \u884c\u4e1a\u7ec4\u7ec7\u3001\u96c7\u4e3b\u539f\u59cb\u8bf4\u660e\u4e0e\u5b98\u65b9\u5bfc\u5165\u6587\u6863\u6838\u5bf9\uff1bUE 5.6 FBX \u4ea4\u4ed8\u77e9\u9635\u672a\u6267\u884c\uff1b\u5173\u8054\u5b9e\u9645 Godot SVG \u5bfc\u5165\u914d\u7f6e\u53cd\u4f8b\uff0c\u4e0d\u9a8c\u8bc1 DCC/FBX \u6216\u5b8c\u6574\u5c97\u4f4d\u6d41\u7a0b",
+      "before_article_sha256": "d101b6a84d28778c29a380dd778c0443934a45df7e3556d1b7cd2ea6711d1467",
+      "after_article_sha256": "988686250a11c7f6bdd268bc9cf2f894166ebfe25f9277fae43507d3a97551d5"
+    },
+    {
+      "path": "solutions/audio/music-state-transition-contract.md",
+      "before": "verification_method: FMOD 2.04.00 \u5b98\u65b9\u6587\u6863\u4e0e Wwise \u5386\u53f2\u4e00\u624b\u6848\u4f8b\u6838\u5bf9\uff1b\u539f\u521b\u5951\u7ea6\u8bbe\u8ba1\uff1b\u672a\u8fd0\u884c\u4e2d\u95f4\u4ef6\u6216\u6e38\u620f\u5f15\u64ce",
+      "after": "verification_method: FMOD 2.04.00 \u5b98\u65b9\u6587\u6863\u4e0e Wwise \u5386\u53f2\u4e00\u624b\u6848\u4f8b\u6838\u5bf9\uff1b\u539f\u521b\u5047\u7aef\u53e3\u6a21\u578b7\u9879\u6d4b\u8bd5\u53ca200\u6761\u6709\u754c\u8c03\u5ea6\u590d\u6838\uff1b\u672a\u8fd0\u884c\u4e2d\u95f4\u4ef6\u6216\u6e38\u620f\u5f15\u64ce",
+      "before_article_sha256": "467198c56e6399149dbe0562f9f86e637aac3874139bed5c29dea67276f37a81",
+      "after_article_sha256": "66ac662caaa250bbf07b770ec48595c394d5cdd42016f707656af8ec1f143abb"
+    },
+    {
+      "path": "solutions/audio/music-state-transition-contract.md",
+      "before": "\u5b8c\u6574\u201c\u4ea4\u4e92\u97f3\u9891\u8bbe\u8ba1\u5e08\u201d\u804c\u4e1a\u753b\u50cf\u4ecd\u5e94\u72ec\u7acb\u7814\u7a76\u62db\u8058/\u7ec4\u7ec7/\u4ea4\u4ed8\u8bc1\u636e\uff0c\u4e0d\u7528\u672c\u6761\u6709\u9650\u63a5\u53e3\u8868\u66ff\u4ee3\u3002",
+      "after": "\u5c97\u4f4d\u804c\u8d23\u4e0e\u4ea4\u4ed8\u8bc1\u636e\u89c1[\u4ea4\u4e92\u97f3\u9891\u8bbe\u8ba1](../../roles/audio/interactive-audio-designer.md)\uff1b\u8be5\u6863\u6848\u4e5f\u6709\u6765\u6e90\u4e0e\u9002\u7528\u8303\u56f4\uff0c\u4e0d\u7528\u672c\u6761\u6709\u9650\u63a5\u53e3\u8868\u66ff\u4ee3\u3002",
+      "before_article_sha256": "467198c56e6399149dbe0562f9f86e637aac3874139bed5c29dea67276f37a81",
+      "after_article_sha256": "66ac662caaa250bbf07b770ec48595c394d5cdd42016f707656af8ec1f143abb"
+    }
+  ]
+}
