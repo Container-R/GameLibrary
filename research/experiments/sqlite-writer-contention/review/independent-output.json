@@ -1,0 +1,193 @@
+{
+  "checks": "passed",
+  "events": [
+    {
+      "role": "init",
+      "phase": "INITIALIZED",
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    {
+      "role": "A",
+      "phase": "READY",
+      "busy_timeout": 0,
+      "in_transaction": false
+    },
+    {
+      "role": "A",
+      "phase": "HELD",
+      "in_transaction": true,
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    {
+      "role": "A",
+      "phase": "COMMITTED",
+      "in_transaction": false
+    },
+    {
+      "role": "A",
+      "phase": "CLOSING",
+      "in_transaction": false
+    },
+    {
+      "role": "B",
+      "phase": "READY",
+      "busy_timeout": 0,
+      "in_transaction": false
+    },
+    {
+      "role": "B",
+      "phase": "BUSY_OBSERVED",
+      "code": 5,
+      "name": "SQLITE_BUSY",
+      "message": "database is locked",
+      "at": "BEGIN IMMEDIATE",
+      "in_transaction": false,
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    {
+      "role": "B",
+      "phase": "DUPLICATE",
+      "outcome": {
+        "outcome": "duplicate",
+        "balance_after": 125
+      },
+      "in_transaction": false,
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    {
+      "role": "B",
+      "phase": "CLOSING",
+      "in_transaction": false
+    },
+    {
+      "role": "read",
+      "phase": "FINAL",
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    }
+  ],
+  "database_verified": {
+    "filename": "ledger.db",
+    "bytes": 16384,
+    "sha256": "f7ac95a4c3f3e4021f95d17cac88741625c102ce90be2b7ba4eb8aa5a40d76e4",
+    "encoded_file": "ledger.db.base64"
+  },
+  "original_runtime_file_compared": true,
+  "source_sha256": {
+    "ledger.py": "0dac2e06ee86007d6f09aa5e5bd17b92185bcf6d96ec679b7bb0ecb6f016b5a7",
+    "worker.py": "6aee69d65917d338716fcf4018d52f2112ae3516556f70e2293e1732d876acf7",
+    "run.py": "3efe3e3f5d85ef2b9c012a3e3b195e99cbec7698c0b7c95e134c625220a40d6c"
+  },
+  "metadata": {
+    "sqlite_module_origin": "built-in",
+    "sqlite_extension_file": null,
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+    "binaries": {
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+    }
+  }
+}

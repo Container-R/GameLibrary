@@ -1,0 +1,58 @@
+{
+  "command": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/sqlite-ledger-boundary/worker.py",
+      "init",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/sqlite-ledger-boundary/results/databases-l2rwagl2/after.db"
+    ],
+    "returncode": 0,
+    "expected_exit": 0
+  },
+  "config": {
+    "config": {
+      "journal_mode": "delete",
+      "synchronous": 3,
+      "autocommit": -1,
+      "isolation_level": null
+    },
+    "metadata": {
+      "sqlite_module_origin": "built-in",
+      "sqlite_extension_file": null,
+      "python": "3.12.14",
+      "sqlite": "3.53.1",
+      "source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+      "binaries": {
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+      }
+    }
+  },
+  "payload": [
+    {
+      "mode": "init",
+      "outcome": {
+        "outcome": "applied",
+        "balance_after": 100
+      },
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    }
+  ],
+  "checkpoints": []
+}

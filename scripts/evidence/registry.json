@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "selection": "Current six Godot and one ICU evidence summaries; excludes historical initial/old-runner and synthetic negative copied inputs",
+  "selection": "Explicit current summaries; excludes author-run-summary.json and initial-map-only-predicate snapshots; excludes animation historical-initial and historical-corrected-four; excludes ICU historical-runner-v1 and copied runner-negative injected artifacts; SQLite source/metadata only, raw termination logs and database encoding checked separately",
   "checks": [
     {
       "kind": "manifest",
@@ -811,6 +811,92 @@
       "right": "research/experiments/icu-message-boundary/review/results/summary.json",
       "field": [
         "libraries"
+      ]
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-ledger/author/source",
+      "document": "research/experiments/sqlite-ledger-boundary/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "worker.py": "research/experiments/sqlite-ledger-boundary/worker.py",
+        "run.py": "research/experiments/sqlite-ledger-boundary/run.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-ledger/review/source",
+      "document": "research/experiments/sqlite-ledger-boundary/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "worker.py": "research/experiments/sqlite-ledger-boundary/worker.py",
+        "run.py": "research/experiments/sqlite-ledger-boundary/run.py"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "sqlite-ledger/compare/source_sha256",
+      "left": "research/experiments/sqlite-ledger-boundary/results/summary.json",
+      "right": "research/experiments/sqlite-ledger-boundary/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "sqlite-ledger/compare/metadata",
+      "left": "research/experiments/sqlite-ledger-boundary/results/summary.json",
+      "right": "research/experiments/sqlite-ledger-boundary/review/results/summary.json",
+      "field": [
+        "metadata"
+      ]
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-contention/author/source",
+      "document": "research/experiments/sqlite-writer-contention/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "ledger.py": "research/experiments/sqlite-writer-contention/ledger.py",
+        "worker.py": "research/experiments/sqlite-writer-contention/worker.py",
+        "run.py": "research/experiments/sqlite-writer-contention/run.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-contention/review/source",
+      "document": "research/experiments/sqlite-writer-contention/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "ledger.py": "research/experiments/sqlite-writer-contention/ledger.py",
+        "worker.py": "research/experiments/sqlite-writer-contention/worker.py",
+        "run.py": "research/experiments/sqlite-writer-contention/run.py"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "sqlite-contention/compare/source_sha256",
+      "left": "research/experiments/sqlite-writer-contention/results/summary.json",
+      "right": "research/experiments/sqlite-writer-contention/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "sqlite-contention/compare/metadata",
+      "left": "research/experiments/sqlite-writer-contention/results/summary.json",
+      "right": "research/experiments/sqlite-writer-contention/review/results/summary.json",
+      "field": [
+        "metadata"
       ]
     }
   ]

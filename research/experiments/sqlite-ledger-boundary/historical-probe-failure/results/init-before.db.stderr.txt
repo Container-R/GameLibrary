@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/sqlite-ledger-boundary/worker.py", line 52, in <module>
+    mode,path=sys.argv[1:];db=connect(path)
+                              ^^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/sqlite-ledger-boundary/worker.py", line 17, in connect
+    print('CONFIG='+json.dumps({'config':config,'metadata':metadata(db)}),flush=True)
+                                                           ^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/sqlite-ledger-boundary/worker.py", line 7, in metadata
+    paths={pathlib.Path(sys.executable).resolve(),pathlib.Path(_sqlite3.__file__).resolve()}
+                                                               ^^^^^^^^^^^^^^^^^
+AttributeError: module '_sqlite3' has no attribute '__file__'. Did you mean: '__name__'?

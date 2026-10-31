@@ -53,3 +53,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [关卡策划职责与交接](../roles/design/level-designer.md)对照 ORCA 日语职责、Ubisoft 特定负责人岗位、Double Fine 移动度量制作案例和历史 NEXT 挑战；原创建议不冒充工作室内部规程。
 
 [ICU 固定接口与运行观察](../research/experiments/icu-message-boundary/README.md)区分公开源码、已安装库文件摘要和有限格式化证据，不以版本相同认证构建来源。
+
+[SQLite 事务边界](../research/experiments/sqlite-ledger-boundary/README.md)及[写锁序列](../research/experiments/sqlite-writer-contention/README.md)分别保留官方接口依据、运行时自报身份与有限实际证据；不以本地事务代替远程权益或玩家经济研究。

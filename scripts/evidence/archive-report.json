@@ -380,8 +380,40 @@
     {
       "id": "icu-message/compare/libraries",
       "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-ledger/compare/metadata",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "sqlite-contention/compare/metadata",
+      "status": "pass"
     }
   ],
-  "passed": 95,
+  "passed": 103,
   "failed": 0
 }

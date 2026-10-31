@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/sqlite-ledger-boundary/fixture/worker.py",
+    "read",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/sqlite-ledger-boundary/fixture/results/databases-3igx3dle/before.db"
+  ],
+  "returncode": 0,
+  "expected_exit": 0
+}

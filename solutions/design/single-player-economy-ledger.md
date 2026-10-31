@@ -9,10 +9,14 @@ related_roles: [economy-designer, systems-designer, gameplay-programmer, data-an
 engines: [engine-agnostic]
 platforms: [single-player]
 updated_at: 2026-10-31
-verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试通过，未进行真实玩家试验
+verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试；SQLite 四场景10进程、单个双写者握手序列及独立复跑；未进行真实玩家试验
 sources:
   - https://gamebalanceconcepts.wordpress.com/2010/09/08/level-10-final-boss/
   - https://unity.com/how-to/building-game-economy-guide-part-2
+  - https://www.sqlite.org/lang_transaction.html
+  - https://www.sqlite.org/pragma.html#pragma_synchronous
+  - https://www.sqlite.org/atomiccommit.html
+  - https://docs.python.org/3.12/library/sqlite3.html#transaction-control
 ---
 
 # 单机成长经济：用事件账本验证来源、消耗与升级可达性
@@ -99,7 +103,36 @@ Python 3.12.14，纯标准库，14 项测试通过：基准阈值/库存、一�
 
 账本的余额、条目和已见 ID 都从空状态构造；期初库存必须用 `post` 记账，才能被守恒式计入。事件 ID 必须为非空白字符串；`kind` 仅是描述标签，不强制来源/消耗标签与金额符号一致。模型字段并未做防篡改封装，所有余额变动必须走 `post`，不承诺外部直接改字段后仍满足不变量。
 
-已归档路径：`research/experiments/economy-ledger/model.py`、`test_model.py`、`scenario-output.json`、`test-output.txt`。仓库根目录运行 `python3 research/experiments/economy-ledger/test_model.py` 与 `python3 research/experiments/economy-ledger/model.py`。**仅证明该演示模型在这些输入下满足断言**；未测试引擎存档、并发交易、崩溃恢复、真实玩家或经济是否有趣。正文保持 `source-backed`，不将模型通过外推为完整经济已验证。
+已归档路径：`research/experiments/economy-ledger/model.py`、`test_model.py`、`scenario-output.json`、`test-output.txt`。仓库根目录运行 `python3 research/experiments/economy-ledger/test_model.py` 与 `python3 research/experiments/economy-ledger/model.py`。**仅证明该演示模型在这些输入下满足断言**；该内存模型未测试引擎存档、并发交易、崩溃恢复、真实玩家或经济是否有趣；另有下节严格受限的 SQLite 进程终止补充，不扩大原模型结论。正文保持 `source-backed`，不将模型通过外推为完整经济已验证。
+
+## 存储边界补充：提交了，却没来得及应答
+
+内存中防重复还不等于持久幂等。[原创 SQLite 夹具](../../research/experiments/sqlite-ledger-boundary/README.md)把余额变化与 event_id 唯一 receipt 放进同一数据库、同一 SQL 事务。固定单存档、coin、amount/reason 两字段请求合同；先以 opening 事件记入 100，再尝试 reward-1 增加 25。
+
+本机 Python 3.12.14 / SQLite 自报 3.53.1，显式 DELETE journal 与 EXTRA 同步设置并逐连接回验。四个场景跨十个实际子进程，另有十个独立复跑进程：
+
+| 边界 | 实际观察 |
+|---|---|
+| 更新余额并插入 receipt 后、COMMIT 前直接退出 | 新进程读到余额 100、只有 opening，无 reward-1 |
+| COMMIT 返回后、业务应答前直接退出 | 新进程读到余额 125、reward-1 恰一条 |
+| 同 ID、同 payload 重试 | 返回保存的原收据，余额仍 125，不重复发奖 |
+| 同 ID、金额改为 26 | 明确冲突拒绝，余额和完整收据集合不变 |
+
+检查点日志不是业务应答；两个终止进程均没有正常 RESULT_JSON。关键不是假定调用者总能知道提交结果，而是未知结果重试时仍能识别原事件。生产 payload 身份可能还需币种、配置版本、存档 ID 等，不能套用这个极小字段集合。
+
+另一个独立补充进程执行十组输入/事务检查，包括余额已变为 135 时重试仍返回该事件原余额 125，以及人为使 receipt INSERT 失败后，之前的余额 UPDATE 被回滚。这说明“返回原结果”不等于“查询当前余额”，也检验了本例双写失败路径；不是一般并发或跨节点保证。
+
+来源依据为 [SQLite 事务](https://www.sqlite.org/lang_transaction.html)、[同步设置](https://www.sqlite.org/pragma.html#pragma_synchronous)、[回滚日志提交机制](https://www.sqlite.org/atomiccommit.html)和 [Python 显式事务控制](https://docs.python.org/3.12/library/sqlite3.html#transaction-control)。这些官方页面解释接口与环境假设，不替代本例测量；Python 滚动文档当时为 3.12.16，非运行时精确源码。版本/source_id 是自报，二进制摘要不是官方构建认证。
+
+**边界：** os._exit 只测试进程直接终止与重开，不是断电、OS 崩溃、磁盘写撕裂、热日志路径或硬件 flush 验证。EXTRA 读回不证明底层设备兑现持久性。该终止夹具无并发写者；另有下节单个写锁序列。无 WAL、云同步、支付、反作弊、远程权益或真实玩家证据；也不推荐所有游戏采用 SQLite。完整原始输出、源码、历史失败与数据库无损文本副本见夹具。
+
+### 写锁扩展：BEGIN 失败不等于 COMMIT 失败
+
+[双写者握手夹具](../../research/experiments/sqlite-writer-contention/README.md)在两个连接都配置就绪后，让 A 持有未提交的奖励事务，再命令 B 以 busy_timeout=0 执行 BEGIN IMMEDIATE。B 实际收到 SQLITE_BUSY（5），未进入事务；在 A 仍持有期间读到旧余额 100。父收到这个结果后才允许 A 提交，收到提交成功后才允许 B 重试同一请求；B 返回原收据，最终新读者看到余额 125、奖励仅一次。
+
+作者与审查者各执行一个序列、四个子进程（初始化、A、B、新读者），不是四种竞争场景。通过管道/事件握手决定先后，不靠 sleep 猜测；原始角色输出与父收发记录一起保存。
+
+这只验证 BEGIN IMMEDIATE 的被拒绝入口。SQLite 文档另说明 COMMIT 因读取者而 BUSY 时事务可能仍活动；本实验未构造该情况，不能把“没有进入事务”套到任何 BUSY。等待明确提交后重试是实验协议，不是无限立即重试的生产建议；公平性、吞吐、完整隔离性、超时取消和多写者队列仍未验证。
 
 ## 原始来源与访问限制
 

@@ -1,0 +1,246 @@
+{
+  "checks": "passed",
+  "observations": {
+    "init-before.db": {
+      "mode": "init",
+      "outcome": {
+        "outcome": "applied",
+        "balance_after": 100
+      },
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "init-after.db": {
+      "mode": "init",
+      "outcome": {
+        "outcome": "applied",
+        "balance_after": 100
+      },
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "before-exit": [
+      {
+        "phase": "before_commit",
+        "in_transaction": true,
+        "local_balance": 125,
+        "local_receipt": 1
+      }
+    ],
+    "before-reopen": {
+      "mode": "read",
+      "outcome": null,
+      "snapshot": {
+        "balance": 100,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ]
+        ],
+        "sum_delta": 100,
+        "reward_count": 0,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "after-exit": [
+      {
+        "phase": "committed_before_ack",
+        "in_transaction": false
+      }
+    ],
+    "after-reopen": {
+      "mode": "read",
+      "outcome": null,
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "retry-same": {
+      "mode": "retry_same",
+      "outcome": {
+        "outcome": "duplicate",
+        "balance_after": 125
+      },
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "same-reopen": {
+      "mode": "read",
+      "outcome": null,
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "retry-changed": {
+      "mode": "retry_changed",
+      "outcome": {
+        "outcome": "payload_conflict"
+      },
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    },
+    "changed-reopen": {
+      "mode": "read",
+      "outcome": null,
+      "snapshot": {
+        "balance": 125,
+        "receipts": [
+          [
+            "opening",
+            100,
+            "opening",
+            100
+          ],
+          [
+            "reward-1",
+            25,
+            "quest",
+            125
+          ]
+        ],
+        "sum_delta": 125,
+        "reward_count": 1,
+        "integrity": [
+          [
+            "ok"
+          ]
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "sqlite_module_origin": "built-in",
+    "sqlite_extension_file": null,
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+    "binaries": {
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+    }
+  }
+}
