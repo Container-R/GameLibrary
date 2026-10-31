@@ -2,7 +2,7 @@
   "run_id": "20261031T203845Z-fresh-invocation",
   "started_at": "2026-10-31T20:38:45Z",
   "task_id": "TASK-2026-0053",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "new_indexed_articles": 0,
@@ -27,7 +27,15 @@
     "relocated_positive_consumers": 2,
     "relocated_negative_consumers": 12,
     "scope": "Linux additive wrapper; focus normal adapter only; unchanged original sources/results; unsigned consistency not execution authenticity; initial descendant final state unknown, distinct same-namespace probe gone",
-    "review": "research/audits/fresh-invocation-harness/integration/independent-review.md"
+    "review": "research/audits/fresh-invocation-harness/integration/independent-review.md",
+    "selected_blob_hashes_verified": 240,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 54,
+    "receipt_declared_paths_checked": 24,
+    "supervisor_record_synced": ".agent/audits/20261031T205000Z.json",
+    "receipt_preflight_correction": "Queue guard rejected draft TASK54 discipline ECON; corrected to declared DESIGN before receipt upload"
   },
-  "local_review_completed_at": "2026-10-31T20:51:24.780289Z"
+  "local_review_completed_at": "2026-10-31T20:51:24.780289Z",
+  "commit_sha": "f719a70fba446cb40e1443e2840695cbef9ebc3c",
+  "ended_at": "2026-10-31T20:55:20.992233Z"
 }

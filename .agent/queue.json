@@ -1269,7 +1269,7 @@
       "id": "TASK-2026-0053",
       "question": "Prevent stale historical PASS consumption by isolated registered legacy-runner invocation and terminal receipt validation",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Known six-runner early-O rejection leaves old summaries; additive caller contract can close operational gap without rewriting scientific history",
       "expected_artifact": "Additive source-pinned isolated invocation harness, registry, tests and fresh audit receipts",
@@ -1284,11 +1284,38 @@
         "Sixactual early-O rejections plus one actual focuspositive; accurately distinguish3behaviorcases and2source-auditedhelpercalls",
         "Synthetic stale/missing/mismatched/timeout negatives and independentreview; no allOSfailure or sixnormal-run guarantee"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T21:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T20:50:12.930424Z",
-      "next_action": "Complete independent published-layout review and bounded publication of additive fresh invocation harness",
+      "next_action": "Preserve versioned reviewed tool and registry pairs; no implicit migration or five additional normal-adapter claims",
+      "blockers": [],
+      "completed_at": "2026-10-31T20:55:20.992233Z",
+      "commit_sha": "f719a70fba446cb40e1443e2840695cbef9ebc3c"
+    },
+    {
+      "id": "TASK-2026-0054",
+      "question": "Distinguish reader-blocked SQLite COMMIT_BUSY with active transaction from failed BEGIN; retry commit without replaying reward mutation",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 93,
+      "priority_rationale": "Existing save-ledger study explicitly excludes COMMIT_BUSY; actual bounded transaction evidence can close this gap without adding another article",
+      "expected_artifact": "Existing economy-ledger section and original SQLite transaction fixture",
+      "artifact_paths": [
+        "solutions/design/single-player-economy-ledger.md",
+        "research/experiments/sqlite-commit-busy"
+      ],
+      "acceptance": [
+        "Primary SQLite transaction and rollback locking sources checked",
+        "Actual held read transaction makes COMMIT return code5 with writer transaction active; distinct BEGIN behavior",
+        "SQL trace proves one reward mutation and two COMMIT attempts; independent readonly final rows125",
+        "Preserve original fixture/results; no WAL, powerloss, concurrency stress or arbitrary-exception retry claims"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T21:35:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:55:20.992233Z",
+      "next_action": "Main source/code/raw evidence acceptance then integrate independently repeated fixture and existing article clarification",
       "blockers": []
     }
   ]
