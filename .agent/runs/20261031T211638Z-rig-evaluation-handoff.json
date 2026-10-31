@@ -1,0 +1,25 @@
+{
+  "run_id": "20261031T211638Z-rig-evaluation-handoff",
+  "started_at": "2026-10-31T21:16:38Z",
+  "task_id": "TASK-2026-0056",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS",
+    "new_runtime_executions": 0,
+    "new_model_tests": 0,
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 27,
+    "archive_consistency_checks": 297,
+    "original_root_motion_files_unchanged": 3,
+    "source_review": "Square Enix CEDEC2015 selected PDF text pages, Unity Animation Rigging1.2.1 metadata and Rig Component semantics, Capcom employer duties; no video/diagram inference",
+    "original_design": "Six-field ownership/read-write table and six-row explicitly unexecuted acceptance worksheet; no universal constraint order",
+    "material_prepublication_correction": "Initial draft and source review mischaracterized four Python contact-model tests as Godot root-motion runtime; actual article/fixture read rejected claim, corrected all current prose, preserved review history; added exact artifact applicability gate",
+    "local_markdown_links": 382,
+    "missing_links": 0,
+    "queue_tasks_checked": 56,
+    "declared_artifact_paths_checked": 29,
+    "normal_optimized_archive_checks_equal": true,
+    "publication_layout_correction": "Archived reviewed section retains exact bytes as .txt because its relative link was authored for article directory; global Markdown relocation error caught before publication"
+  },
+  "local_review_completed_at": "2026-10-31T21:21:24.488030Z"
+}

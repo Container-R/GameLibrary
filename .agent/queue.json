@@ -1352,25 +1352,26 @@
       "id": "TASK-2026-0056",
       "question": "Who owns rig pose read/write dependencies when content hierarchy changes constraint evaluation order?",
       "discipline": "ANIM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "Concrete responsibility gap in existing animation and TA coverage; primary Japanese production material and versioned Unity package semantics, not a role-page quota",
       "expected_artifact": "Existing animation article source-depth section with original dependency/acceptance handoff and independently checked source receipts",
       "artifact_paths": [
         "solutions/animation/turn-in-place-foot-sliding.md",
-        "research/audits/rig-evaluation-handoff"
+        "research/audits/rig-evaluation-handoff",
+        "research/source-notes/rig-evaluation-handoff.md"
       ],
       "acceptance": [
         "Distinguish Square Enix CEDEC2015 production workflow from Unity Animation Rigging1.2.1 implementation and Capcom employer role scope",
         "Original dependency and acceptance worksheet, explicitly unexecuted torso-aim/hand-IK scenario; no fake Unity runtime",
-        "Keep original Godot/root-motion evidence and full occupation-taxonomy task scope unchanged",
+        "Keep existing Python root-motion/contact model and separate Godot animation-event evidence scopes distinct; full occupation-taxonomy task remains incomplete",
         "Compact source paraphrases and selective PDF physical-page receipts; no slides or third-party material bulk"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T22:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T21:16:37.113203Z",
-      "next_action": "Develop focused existing-article handoff section and independently verify primary-source responsibility/evaluation claims",
+      "last_progress_at": "2026-10-31T21:21:24.488030Z",
+      "next_action": "Publish corrected source-backed rig dependency handoff with exact evidence-scope review record",
       "blockers": []
     }
   ]
