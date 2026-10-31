@@ -1101,7 +1101,7 @@
       "id": "TASK-2026-0047",
       "question": "Outstanding same-path threaded requests with conflicting cache policies and request registration lifetime",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewed",
       "priority": 90,
       "priority_rationale": "Pinned source indicates second same-path request can reuse existing uncollected token before applying new policy; distinct from mutable dependency isolation",
       "expected_artifact": "Existing asset-loading article plus bounded request ownership evidence",
@@ -1113,8 +1113,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:25:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:58:04.212817Z",
-      "next_action": "Execute two fresh actual request-policy sequences and independently review raw call/identity/status evidence",
+      "last_progress_at": "2026-10-31T20:04:49.054878Z",
+      "next_action": "Publish existing-article supplement with author/reviewer traces and corrected archive registrations",
       "blockers": []
     }
   ]

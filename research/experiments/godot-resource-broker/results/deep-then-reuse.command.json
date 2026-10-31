@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/godot/4.6.3/Godot_v4.6.3-stable_linux.x86_64",
+    "--headless",
+    "--path",
+    "/tmp/resource-broker-fen6x1xs/project",
+    "--script",
+    "res://main.gd",
+    "--",
+    "deep-then-reuse"
+  ],
+  "invocation_id": "7108d222-fbb2-4205-bfae-505f5aa96ccf",
+  "isolation": "fresh temporary project and HOME/XDG per case",
+  "returncode": 0,
+  "timeout_seconds": 20
+}

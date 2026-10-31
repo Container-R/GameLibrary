@@ -1,0 +1,18 @@
+{
+  "case": "missing-engine",
+  "returncode": 1,
+  "old_summary_removed": true,
+  "receipt": {
+    "engine_spawn_attempts": 0,
+    "error": "RuntimeError: engine does not exist",
+    "invocation_id": "692ce441-e235-4e7a-8ed9-4d16a6188ad7",
+    "optimization": 0,
+    "started_utc": "2026-10-31T19:58:36.974153+00:00",
+    "status": "FAILED"
+  },
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "/tmp/broker-freshness-2jg2smov/run.py"
+  ]
+}

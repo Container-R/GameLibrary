@@ -1,0 +1,43 @@
+{
+  "cases": [
+    {
+      "case": "optimized",
+      "returncode": 1,
+      "old_summary_removed": true,
+      "receipt": {
+        "engine_spawn_attempts": 0,
+        "error": "RuntimeError: Refusing optimized mode; stale success already removed",
+        "invocation_id": "f0068096-7cdf-4906-af14-5f398b7b0836",
+        "optimization": 1,
+        "started_utc": "2026-10-31T20:00:04.281490+00:00",
+        "status": "FAILED"
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "-O",
+        "/tmp/broker-freshness-_p_z9vsw/run.py"
+      ]
+    },
+    {
+      "case": "missing-engine",
+      "returncode": 1,
+      "old_summary_removed": true,
+      "receipt": {
+        "engine_spawn_attempts": 0,
+        "error": "RuntimeError: engine does not exist",
+        "invocation_id": "8425efaa-66a3-4db4-9bd4-9acc606cd02e",
+        "optimization": 0,
+        "started_utc": "2026-10-31T20:00:04.316092+00:00",
+        "status": "FAILED"
+      },
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "/tmp/broker-freshness-tvs7golg/run.py"
+      ]
+    }
+  ],
+  "run_py_sha256": "180e4e2050a2f36825bd3ec58a22c072cbbdef54bf653b7555f43e79f69d6648",
+  "engine_runs": 0
+}

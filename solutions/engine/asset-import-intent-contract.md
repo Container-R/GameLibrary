@@ -11,8 +11,9 @@ engines: [Godot]
 versions: ["Godot 4.6 官方文档", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-10-31
-verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离的实际无头对照；未验证 GPU、导出包或跨版本缓存复现
+verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离及同路径请求登记的实际无头对照；未验证 GPU、导出包或跨版本缓存复现
 sources:
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_resourceloader.html
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/resource_format_text.cpp
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/object/object_id.h
@@ -101,6 +102,25 @@ Godot 4.6 [ResourceLoader 的 CacheMode 文档](https://docs.godotengine.org/en/
 一个真实验证器错误被保留：最初要求 instance ID 为正，拒绝了实际非零负整数。修正为精确保留整数符号、非零以及同进程活对象的前后相等/不等，未改变图、预期颜色或 GDScript。[ObjectID 比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/object/object_id.h)包含 64-bit 表示及有符号转换，不支持正数限定。原始失败和最终完整重跑均在归档；这些 ID 不是持久资产身份，也不能经过有损 JavaScript Number 转换再做比较。
 
 **项目建议**：先列出候选审核/预处理会修改哪些对象，再决定需要隔离根、哪些依赖或整个可变子图；只读审核未必需要深复制。这个简单原生图中的 IGNORE_DEEP 有效，不是任意插件、全局对象或资源图的通用隔离承诺。未测试取消、并发同路径请求、REPLACE、导出包、内存释放、GPU、加载性能或跨构建行为；新二进制摘要与既有身份取证一致，但官方精确来源对应仍未建立。
+
+## 6. 第二次请求返回OK，不等于新的加载策略已经生效
+
+上一节检查候选对象图的隔离范围；这里先问另一道门槛：**这个候选是否真的按本次调用方要求的cache_mode加载？**
+
+新增[同路径请求夹具](../../research/experiments/godot-resource-broker/README.md)只使用原创二点Gradient。每个新进程先以REUSE加载并持有活动资源，然后发第一次threaded请求；明确观察到LOADED但**不get收取**，再对完全相同路径发第二次、相反模式的请求。随后执行status→get1→status→get2→status。没有修改资源、第三次get或人为延迟。
+
+|实际请求顺序|两次request返回|两个get结果|与先前活动资源的关系|
+|---|---|---|---|
+|REUSE→IGNORE_DEEP|均为OK|同一活对象|均与活动资源相同|
+|IGNORE_DEEP→REUSE|均为OK|同一活对象|均不同于活动资源|
+
+两例在第二请求之后及第一次get之后均观察到LOADED；第二次get后为INVALID_RESOURCE，但已持有的活动资源与两个返回引用仍可读到原有点色和offset。因此**请求登记被收取完，不等于Resource引用失效**。活动对象身份、原始颜色及磁盘输入摘要保持不变；调用计数在实际request/get位置递增，原始调用轨迹另行核对。
+
+固定官方源码的[用户token复用与提前返回](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp#L516-L625)表明：已有同路径用户token时递增计数并返回，未进入保存新cache_mode的任务创建分支；[get后的计数处理](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp#L791-L801)在计数归零时移除登记。这里支持“未收取请求复用首个策略”的解释，不把公开API说成承诺了每次请求都独立。
+
+作者两个进程与[独立重复及原始记录审查](../../research/experiments/godot-resource-broker/review/REVIEW.md)各自通过两种模式顺序。首请求在发第二请求前已完成，因此这不是worker竞争测试；没有必须观察IN_PROGRESS、性能或线程安全结论。实际程序自报4.6.3，SHA256为`f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`；与上述固定官方源码的精确对应仍未认证，见[共享身份说明](../../research/source-notes/godot-runtime-provenance.md)。对象ID只按单进程活引用精确比较，不作为持久化身份。
+
+**原创工程建议，尚未实现broker：** 同路径调用方的共享/隔离要求冲突时，可以明确拒绝、排队至先前请求收取完，或由单一broker拥有请求并分发事先约定的共享结果。只将应用字典key改成`(path, mode)`不够：若仍把两种策略提交到同一个按路径复用的底层入口，两个应用key不会自动变成两个独立结果。本文没有验证这些解决方案，也不覆盖路径别名、不同type_hint、取消、失败重试或任意资源图。
 
 ## 来源与关联
 

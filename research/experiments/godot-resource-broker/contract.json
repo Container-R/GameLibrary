@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "root_type": "Gradient",
+  "path": "res://gradient.tres",
+  "offsets": [0, 1],
+  "colors": [[1, 0, 0, 1], [1, 1, 1, 1]],
+  "active_load": "synchronous CACHE_MODE_REUSE, retain active reference",
+  "cases": [
+    {"name": "reuse-then-deep", "first_mode": 1, "second_mode": 3, "result_same_as_active": true},
+    {"name": "deep-then-reuse", "first_mode": 3, "second_mode": 1, "result_same_as_active": false}
+  ],
+  "sequence": "request1; poll on frames until LOADED without get; request2; status; get1; status; get2; status",
+  "request_returns": [0, 0],
+  "post_second_request_status": 3,
+  "after_get1_status": 3,
+  "after_get2_status": 0,
+  "result1_same_as_result2": true,
+  "retained_resources": "active, result1, result2 remain alive/readable; all colors and offsets unchanged",
+  "request_count": 2,
+  "get_count": 2,
+  "use_sub_threads": false,
+  "disk": "all controlled original inputs unchanged",
+  "budgets": {"frame_callbacks": 600, "process_timeout_seconds": 20},
+  "limits": "No required IN_PROGRESS, no third get, no worker concurrency claim, no timing or cancellation claim. Exact same path string. Pinned public source not authenticated source of local binary."
+}

@@ -1600,6 +1600,183 @@
         "run_py_sha256"
       ],
       "target": "research/experiments/godot-resource-candidate/run.py"
+    },
+    {
+      "kind": "manifest",
+      "id": "resource-broker/author/source",
+      "document": "research/experiments/godot-resource-broker/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-resource-broker/run.py",
+        "main.gd": "research/experiments/godot-resource-broker/main.gd",
+        "project.godot": "research/experiments/godot-resource-broker/project.godot",
+        "gradient.tres": "research/experiments/godot-resource-broker/gradient.tres",
+        "contract.json": "research/experiments/godot-resource-broker/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/author/receipt-invocation_id",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/author/receipt-status",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/results/invocation.json",
+      "field": [
+        "status"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/author/receipt-process-count",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/results/invocation.json",
+      "field": [
+        "engine_processes"
+      ],
+      "right_field": [
+        "engine_spawn_attempts"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "resource-broker/author/reuse-then-deep",
+      "log": "research/experiments/godot-resource-broker/results/reuse-then-deep.stdout.txt",
+      "parsed": "research/experiments/godot-resource-broker/results/reuse-then-deep.json"
+    },
+    {
+      "kind": "log",
+      "id": "resource-broker/author/deep-then-reuse",
+      "log": "research/experiments/godot-resource-broker/results/deep-then-reuse.stdout.txt",
+      "parsed": "research/experiments/godot-resource-broker/results/deep-then-reuse.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "resource-broker/review/source",
+      "document": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-resource-broker/run.py",
+        "main.gd": "research/experiments/godot-resource-broker/main.gd",
+        "project.godot": "research/experiments/godot-resource-broker/project.godot",
+        "gradient.tres": "research/experiments/godot-resource-broker/gradient.tres",
+        "contract.json": "research/experiments/godot-resource-broker/contract.json"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/review/receipt-invocation_id",
+      "left": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/invocation.json",
+      "field": [
+        "invocation_id"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/review/receipt-status",
+      "left": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/invocation.json",
+      "field": [
+        "status"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/review/receipt-process-count",
+      "left": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/invocation.json",
+      "field": [
+        "engine_processes"
+      ],
+      "right_field": [
+        "engine_spawn_attempts"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "resource-broker/review/reuse-then-deep",
+      "log": "research/experiments/godot-resource-broker/review/fixture/results/reuse-then-deep.stdout.txt",
+      "parsed": "research/experiments/godot-resource-broker/review/fixture/results/reuse-then-deep.json"
+    },
+    {
+      "kind": "log",
+      "id": "resource-broker/review/deep-then-reuse",
+      "log": "research/experiments/godot-resource-broker/review/fixture/results/deep-then-reuse.stdout.txt",
+      "parsed": "research/experiments/godot-resource-broker/review/fixture/results/deep-then-reuse.json"
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/compare/source_sha256",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/compare/binary_sha256",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/compare/version",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "version"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/compare/python",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "resource-broker/compare/platform",
+      "left": "research/experiments/godot-resource-broker/results/summary.json",
+      "right": "research/experiments/godot-resource-broker/review/fixture/results/summary.json",
+      "field": [
+        "platform"
+      ]
+    },
+    {
+      "kind": "hash",
+      "id": "resource-broker/author/freshness-runner",
+      "document": "research/experiments/godot-resource-broker/freshness-results/summary.json",
+      "field": [
+        "run_py_sha256"
+      ],
+      "target": "research/experiments/godot-resource-broker/run.py"
+    },
+    {
+      "kind": "hash",
+      "id": "resource-broker/review/freshness-runner",
+      "document": "research/experiments/godot-resource-broker/review/fixture/freshness-results/summary.json",
+      "field": [
+        "run_py_sha256"
+      ],
+      "target": "research/experiments/godot-resource-broker/run.py"
     }
   ]
 }

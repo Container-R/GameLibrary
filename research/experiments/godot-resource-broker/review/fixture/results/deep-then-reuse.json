@@ -1,0 +1,195 @@
+{
+  "active_after": {
+    "colors": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "id": -9223372010883643983,
+    "offsets": [
+      0.0,
+      1.0
+    ],
+    "type": "Gradient"
+  },
+  "case": "deep-then-reuse",
+  "final_status": 0,
+  "first_mode": 3,
+  "frames": 1,
+  "get_count": 2,
+  "initial": {
+    "colors": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "id": -9223372010883643983,
+    "offsets": [
+      0.0,
+      1.0
+    ],
+    "type": "Gradient"
+  },
+  "request_count": 2,
+  "result1": {
+    "colors": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "id": -9223372010766203470,
+    "offsets": [
+      0.0,
+      1.0
+    ],
+    "type": "Gradient"
+  },
+  "result2": {
+    "colors": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "id": -9223372010766203470,
+    "offsets": [
+      0.0,
+      1.0
+    ],
+    "type": "Gradient"
+  },
+  "second_mode": 1,
+  "trace": [
+    {
+      "mode": 3,
+      "number": 1,
+      "op": "request",
+      "return": 0
+    },
+    {
+      "op": "status",
+      "stage": "first-poll",
+      "value": 3
+    },
+    {
+      "mode": 1,
+      "number": 2,
+      "op": "request",
+      "return": 0
+    },
+    {
+      "op": "status",
+      "stage": "after-second-request",
+      "value": 3
+    },
+    {
+      "number": 1,
+      "op": "get",
+      "resource": {
+        "colors": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "id": -9223372010766203470,
+        "offsets": [
+          0.0,
+          1.0
+        ],
+        "type": "Gradient"
+      }
+    },
+    {
+      "op": "status",
+      "stage": "after-first-get",
+      "value": 3
+    },
+    {
+      "number": 2,
+      "op": "get",
+      "resource": {
+        "colors": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        "id": -9223372010766203470,
+        "offsets": [
+          0.0,
+          1.0
+        ],
+        "type": "Gradient"
+      }
+    },
+    {
+      "op": "status",
+      "stage": "after-second-get",
+      "value": 0
+    }
+  ],
+  "use_sub_threads": false,
+  "version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  }
+}

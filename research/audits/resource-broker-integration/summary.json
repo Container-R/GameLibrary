@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "archive_consistency_checks": 196,
+  "normal_optimized_identical": true,
+  "archived_final_processes_checked": 4,
+  "author_and_reviewer_preengine_negative_cases_each": 2,
+  "integrator_engine_processes": 0,
+  "integrator_negative_invocations": 0,
+  "local_markdown_links": 335,
+  "missing_links": 0,
+  "indexed_source_backed_articles": 25,
+  "registry_correction": "Initial copied registration used prior case names and engine_processes_started receipt field: 190 passed/6 failed. Corrected declared paths and actual engine_spawn_attempts field only, retained initial report. Attempt counts are not themselves proof of process execution; per-command exit/raw records checked separately.",
+  "scope": "Read-only archive integration, no new engine execution or binary authentication"
+}
