@@ -1,0 +1,76 @@
+[
+  {
+    "name": "late-conflict-reduces-completed",
+    "before": [
+      "a1",
+      "b1",
+      "d1"
+    ],
+    "after": [
+      "a1",
+      "b1"
+    ]
+  },
+  {
+    "name": "transport-only-retry",
+    "retry_extra_rows": 3
+  },
+  {
+    "name": "semantic-conflict-whole-id",
+    "conflicts": [
+      "c-a1",
+      "x-d1"
+    ],
+    "unresolved": [
+      "a1",
+      "d1",
+      "e1"
+    ]
+  },
+  {
+    "name": "conflict-before-event-window",
+    "unresolved": [
+      "a1",
+      "d1",
+      "e1"
+    ]
+  },
+  {
+    "name": "future-arrival-no-leak"
+  },
+  {
+    "name": "distinct-start",
+    "error": "multiple distinct starts"
+  },
+  {
+    "name": "distinct-terminal",
+    "error": "multiple distinct terminals"
+  },
+  {
+    "name": "actor-mismatch",
+    "error": "actor mismatch"
+  },
+  {
+    "name": "before-start",
+    "error": "outcome before start"
+  },
+  {
+    "name": "optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/telemetry-attempt-contract/adversarial/optimized/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  },
+  {
+    "name": "report-import-failure",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/telemetry-attempt-contract/adversarial/report-import-failure/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  }
+]

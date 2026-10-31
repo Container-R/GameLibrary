@@ -45,4 +45,6 @@ SQLite 的终止进程有意没有 RESULT_JSON，不纳入现有单载荷 log �
 
 纹理stdout使用 `RESULT_JSON `（空格），而当前log规则只接受 `RESULT_JSON=`；未把它注册为兼容日志。集成时另行精确解析一条空格前缀记录并与summary比较，不修改既有verifier或计入109项。
 
-网格夹具新增两份source manifest及四组source/Python/制品哈希字段比较，当前十一夹具115项。不是115次运行测试，也不验证几何语义、官方validator或GPU；原始空格前缀stdout另行比较，字面几何oracle见该夹具review。
+网格夹具新增两份source manifest及四组source/Python/制品哈希字段比较，当时十一夹具115项（历史archive-report-115.json）。不是115次运行测试，也不验证几何语义、官方validator或GPU；原始空格前缀stdout另行比较，字面几何oracle见该夹具review。
+
+合成遥测报表新增两份source manifest和三组source/Python/输入哈希字段比较，当前十二夹具120项。不是120次玩家、服务或运行试验；actual输入SHA、空格前缀stdout、两份as-of输出另行核对，独立字面人口oracle见该夹具review。

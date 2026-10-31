@@ -53,6 +53,8 @@
   - 关联理由：用具体配置和干净检出对照定义验收，不以无报错替代语义一致。
 - 对白字幕全覆盖是否已经保住关键行动信息？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
   - 关联理由：把内容覆盖合同与真实玩家理解分开；假设矩阵不是可访问性认证。
+- 完成事件证明了哪个分母的结果？ → [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `SOL-DATA-001` · `source-backed` · `DATA`
+  - 关联理由：用固定人口与as-of验收报表，不把未知终态、重试或帮助上下文混成玩家失败。
 
 ## 从关卡策划出发：区分空间意图、可行性与玩家理解
 路线 ID：`role-level-design`

@@ -919,7 +919,7 @@
       "id": "TASK-2026-0039",
       "question": "Level completion telemetry event, attempt and actor denominators",
       "discipline": "DATA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Coverage audit plus primary schema/metric sources identify report-validity gap connecting playtest and gameplay instrumentation",
       "expected_artifact": "solutions/data/attempt-completion-denominator-contract.md",
@@ -931,8 +931,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:49:57.824989Z",
-      "next_action": "Implement frozen18-row synthetic contract and independently verify denominators; no service/player data",
+      "last_progress_at": "2026-10-31T18:54:19.831575Z",
+      "next_action": "Verify reviewed telemetry article and neutral supervisor audit publication",
       "blockers": []
     }
   ]

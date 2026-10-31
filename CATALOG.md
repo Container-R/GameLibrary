@@ -16,6 +16,7 @@
 - [导航查询的就绪边界：空路径不等于不可达，非空路径不等于到达](solutions/ai/navigation-readiness-and-partial-path.md) — `source-backed` · `AI`
 - [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `source-backed` · `ANIM`
 - [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `source-backed` · `SFX`
+- [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `source-backed` · `DATA`
 - [单机成长经济：用事件账本验证来源、消耗与升级可达性](solutions/design/single-player-economy-ledger.md) — `source-backed` · `DESIGN`
 - [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `source-backed` · `ENGINE`
 - [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `source-backed` · `LOC`

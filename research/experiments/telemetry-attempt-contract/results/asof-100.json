@@ -1,0 +1,74 @@
+{
+  "event_window": [
+    0,
+    100
+  ],
+  "retry_extra_rows": 2,
+  "conflict_ids": [
+    "x-d1"
+  ],
+  "quarantined_rows": 2,
+  "cohort_attempts": [
+    "a1",
+    "a2",
+    "b1",
+    "c1",
+    "d1",
+    "e1"
+  ],
+  "cohort_actors": [
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T"
+  ],
+  "failed": [
+    "a2"
+  ],
+  "conflict_affected_unresolved": [
+    "d1"
+  ],
+  "orphan_event_ids": [
+    "c-z"
+  ],
+  "out_of_cohort_event_ids": [
+    "c-old"
+  ],
+  "asof": 100,
+  "visible_rows": 16,
+  "raw_fraction": [
+    6,
+    7
+  ],
+  "completed": [
+    "a1",
+    "b1"
+  ],
+  "unresolved": [
+    "c1",
+    "d1",
+    "e1"
+  ],
+  "completion_per_started_attempt": [
+    2,
+    6
+  ],
+  "actors_with_completion_per_starting_actor": [
+    2,
+    5
+  ],
+  "completed_actors": [
+    "P",
+    "Q"
+  ],
+  "finished_only_fraction": [
+    2,
+    3
+  ],
+  "assistance": {
+    "unassisted": 1,
+    "assisted": 1,
+    "unknown": 0
+  }
+}

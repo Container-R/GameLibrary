@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "report": {
+    "asof": 100,
+    "event_window": [
+      0,
+      100
+    ],
+    "visible_rows": 0,
+    "raw_fraction": [
+      0,
+      0
+    ],
+    "retry_extra_rows": 0,
+    "conflict_ids": [],
+    "quarantined_rows": 0,
+    "cohort_attempts": [],
+    "cohort_actors": [],
+    "completed": [],
+    "failed": [],
+    "unresolved": [],
+    "conflict_affected_unresolved": [],
+    "orphan_event_ids": [],
+    "out_of_cohort_event_ids": [],
+    "completion_per_started_attempt": [
+      0,
+      0
+    ],
+    "actors_with_completion_per_starting_actor": [
+      0,
+      0
+    ],
+    "completed_actors": [],
+    "finished_only_fraction": [
+      0,
+      0
+    ],
+    "assistance": {
+      "unassisted": 0,
+      "assisted": 0,
+      "unknown": 0
+    }
+  },
+  "interpretation": "zero-denominator pairs; no defined percentage"
+}

@@ -8,17 +8,18 @@
   "last_completed_at": "2026-10-31T18:49:57.824989Z",
   "last_real_progress_at": "2026-10-31T18:49:57.824989Z",
   "last_commit_sha": "2eaf640f5b6869c70eddccb2399638564dba084b",
-  "last_run_id": "20261031T184200Z-mesh-attribute-contract",
-  "next_action": "Validate synthetic telemetry identity/as-of/cohort contract and independent literal denominators",
+  "last_run_id": "20261031T184800Z-telemetry-attempt-contract",
+  "next_action": "Publish reviewed synthetic telemetry denominator contract and18:50audit",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
-    "last_checked_at": "2026-10-31T16:54:31.781525Z",
+    "last_checked_at": "2026-10-31T18:50:44Z",
     "research_health": "healthy",
     "publication_hold_resolved_at": "2026-10-31T16:18:40.694275Z",
-    "last_audit_record": ".agent/audits/20261031T165000Z.json",
+    "last_audit_record": ".agent/audits/20261031T185000Z.json",
     "historical_research_health": "healthy_at_1654_observation",
-    "current_health": "publication_restored"
+    "current_health": "healthy_after_documented_recovery",
+    "whole_audit_window_healthy": false
   },
   "publication": {
     "visibility": "public",

@@ -1,0 +1,20 @@
+{
+  "run_id": "20261031T184800Z-telemetry-attempt-contract",
+  "started_at": "2026-10-31T18:48:18Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0039",
+  "commit_sha": null,
+  "outcome": "reviewed; publication pending",
+  "validation": {
+    "fictional_rows": 18,
+    "asof_snapshots": 2,
+    "author_order_comparisons": 12,
+    "reviewer_repeated_order_comparisons": 12,
+    "reviewer_extra_inprocess_groups": 9,
+    "reviewer_child_startup_failures": 2,
+    "separate_empty_cohort_case": 1,
+    "archive_consistency_expected": 120,
+    "player_service_sdk_runs": 0
+  },
+  "scope": "Finite original complete-batch identity/cohort policy; no causal or provider behavior guarantees"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T185000Z-supervision",
+  "observed_at": "2026-10-31T18:50:44Z",
+  "display_time": "2026-11-01 02:50:44 Asia/Shanghai",
+  "repository": "Container-R/GameLibrary",
+  "branch": "master",
+  "visibility": "public",
+  "visibility_authorization": "Previously confirmed by repository owner",
+  "head_examined": "2eaf640f5b6869c70eddccb2399638564dba084b",
+  "health": "healthy",
+  "window_incident": {
+    "started_approx": "2026-10-31T16:29:59Z",
+    "interrupted": "2026-10-31T18:14:29Z",
+    "description": "A large create_tree request remained unresolved; no new main-worker research during the blocked interval. Previously reported running status was insufficient evidence of continued research.",
+    "recovery": "Outcome reconciled; no earlier commit/ref update. Small bounded tree batches resumed substantive publication.",
+    "first_substantive_recovery_sha": "701a8616e2648b9987099c308dc522b8353fcd00",
+    "whole_window_healthy": false
+  },
+  "actual_progress": [
+    {
+      "sha": "701a8616e2648b9987099c308dc522b8353fcd00",
+      "path": "research/experiments/icu-message-boundary/README.md"
+    },
+    {
+      "sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623",
+      "path": "research/experiments/sqlite-ledger-boundary/README.md"
+    },
+    {
+      "sha": "b5104e494dc2c1da34fd8b939e2b089297d91580",
+      "path": "solutions/rendering/block-compressed-mip-budget.md"
+    },
+    {
+      "sha": "2eaf640f5b6869c70eddccb2399638564dba084b",
+      "path": "solutions/modeling/gltf-interleaved-attribute-contract.md"
+    }
+  ],
+  "indexed_articles": 20,
+  "quality_sample": {
+    "path": "solutions/rendering/block-compressed-mip-budget.md",
+    "outcome": "No material issue found in bounded sample",
+    "sources_checked": [
+      "https://learn.microsoft.com/en-us/windows/win32/direct3d11/texture-block-compression-in-direct3d-11",
+      "https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dx-graphics-dds-pguide",
+      "https://docs.vulkan.org/refpages/latest/refpages/source/VkMemoryRequirements.html"
+    ],
+    "checks": [
+      "BC1 and BC7 bytes per 4x4 block match official table",
+      "DDS base 128-byte and DX10 148-byte descriptions match source",
+      "Allocation requirements are explicitly separated from payload and residency",
+      "Independent arithmetic: 60x40 BC1 mip bytes [1200,320,96,32,8,8], sum1664, legacy DDS1792",
+      "Original fixture, CPU/Pillow only scope, hypothetical workflow versus measured evidence and public copyright boundaries stated"
+    ]
+  },
+  "independent_validation": {
+    "remote_blob_matches": 1001,
+    "mismatches": 0,
+    "archive_checks_passed": 115,
+    "archive_checks_failed": 0,
+    "scope": "Pinned snapshot byte identity and declared archive consistency; no engine/Pillow/SQLite runtime replay or binary-authenticity certification"
+  },
+  "activity": {
+    "main_writer": "gamelibrary-main-integrator",
+    "main_worker_active": true,
+    "source_worker_active": true,
+    "active_tasks": [
+      {
+        "id": "TASK-2026-0008",
+        "status": "researching",
+        "owner": "gamelibrary-main-integrator",
+        "lease_until": "2026-10-31T19:30:00Z",
+        "next_action": "Evidence-based gap audit of 19 articles, then select one undercovered concrete engineering handoff"
+      },
+      {
+        "id": "TASK-2026-0038",
+        "status": "reviewing",
+        "owner": "gamelibrary-main-integrator",
+        "lease_until": "2026-10-31T19:30:00Z",
+        "next_action": "Verify reviewed mesh content publication"
+      }
+    ],
+    "note": "New mesh content is already remote; its receipt/state update was pending when snapshot was read. Do not duplicate the active owner."
+  },
+  "action": "Keep main research running; integrate this audit and current mesh receipt through the existing single writer. Preserve timeout incident and continue bounded upload waits.",
+  "consecutive_no_progress_checks": 0,
+  "user_action_required": false,
+  "remote_write_performed": false
+}

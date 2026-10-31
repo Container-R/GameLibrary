@@ -59,3 +59,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [BC纹理预算](../solutions/rendering/block-compressed-mip-budget.md)对照Microsoft/Khronos官方文档和固定DirectXTex源码；离线payload、上传布局、分配与驻留证据分层。未执行GPU资源创建。
 
 [网格属性契约](../solutions/modeling/gltf-interleaved-attribute-contract.md)固定Khronos glTF规范与schema版本；同项目多文件不冒充独立厂商验证，CPU字面oracle是另一证据层。
+
+[遥测尝试分母](../solutions/data/attempt-completion-denominator-contract.md)分别记录Unity事件身份与GameAnalytics指标人口定义，不把原创模型策略当作供应商服务实现。

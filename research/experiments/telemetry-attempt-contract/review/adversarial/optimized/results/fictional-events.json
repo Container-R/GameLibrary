@@ -1,0 +1,149 @@
+[
+  {
+    "event_id": "s-a1",
+    "attempt_id": "a1",
+    "actor_id": "P",
+    "kind": "start",
+    "event_time": 10,
+    "arrival_time": 11
+  },
+  {
+    "event_id": "s-a1",
+    "attempt_id": "a1",
+    "actor_id": "P",
+    "kind": "start",
+    "event_time": 10,
+    "arrival_time": 12
+  },
+  {
+    "event_id": "c-a1",
+    "attempt_id": "a1",
+    "actor_id": "P",
+    "kind": "complete",
+    "event_time": 20,
+    "arrival_time": 21,
+    "assistance": "unassisted"
+  },
+  {
+    "event_id": "c-a1",
+    "attempt_id": "a1",
+    "actor_id": "P",
+    "kind": "complete",
+    "event_time": 20,
+    "arrival_time": 22,
+    "assistance": "unassisted"
+  },
+  {
+    "event_id": "s-a2",
+    "attempt_id": "a2",
+    "actor_id": "P",
+    "kind": "start",
+    "event_time": 30,
+    "arrival_time": 31
+  },
+  {
+    "event_id": "f-a2",
+    "attempt_id": "a2",
+    "actor_id": "P",
+    "kind": "fail",
+    "event_time": 40,
+    "arrival_time": 41
+  },
+  {
+    "event_id": "s-b1",
+    "attempt_id": "b1",
+    "actor_id": "Q",
+    "kind": "start",
+    "event_time": 12,
+    "arrival_time": 13
+  },
+  {
+    "event_id": "c-b1",
+    "attempt_id": "b1",
+    "actor_id": "Q",
+    "kind": "complete",
+    "event_time": 25,
+    "arrival_time": 26,
+    "assistance": "assisted"
+  },
+  {
+    "event_id": "s-c1",
+    "attempt_id": "c1",
+    "actor_id": "R",
+    "kind": "start",
+    "event_time": 14,
+    "arrival_time": 15
+  },
+  {
+    "event_id": "c-c1",
+    "attempt_id": "c1",
+    "actor_id": "R",
+    "kind": "complete",
+    "event_time": 50,
+    "arrival_time": 150
+  },
+  {
+    "event_id": "s-d1",
+    "attempt_id": "d1",
+    "actor_id": "S",
+    "kind": "start",
+    "event_time": 16,
+    "arrival_time": 17
+  },
+  {
+    "event_id": "x-d1",
+    "attempt_id": "d1",
+    "actor_id": "S",
+    "kind": "complete",
+    "event_time": 35,
+    "arrival_time": 36
+  },
+  {
+    "event_id": "x-d1",
+    "attempt_id": "d1",
+    "actor_id": "S",
+    "kind": "fail",
+    "event_time": 35,
+    "arrival_time": 37
+  },
+  {
+    "event_id": "c-z",
+    "attempt_id": "z",
+    "actor_id": "U",
+    "kind": "complete",
+    "event_time": 45,
+    "arrival_time": 46
+  },
+  {
+    "event_id": "s-e1",
+    "attempt_id": "e1",
+    "actor_id": "T",
+    "kind": "start",
+    "event_time": 18,
+    "arrival_time": 19
+  },
+  {
+    "event_id": "s-old",
+    "attempt_id": "old",
+    "actor_id": "W",
+    "kind": "start",
+    "event_time": -10,
+    "arrival_time": 1
+  },
+  {
+    "event_id": "c-old",
+    "attempt_id": "old",
+    "actor_id": "W",
+    "kind": "complete",
+    "event_time": 60,
+    "arrival_time": 61
+  },
+  {
+    "event_id": "future-a2",
+    "attempt_id": "a2",
+    "actor_id": "P",
+    "kind": "complete",
+    "event_time": 110,
+    "arrival_time": 111
+  }
+]

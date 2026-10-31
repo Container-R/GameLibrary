@@ -1020,6 +1020,59 @@
       "field": [
         "gltf_sha256"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "telemetry/author/source",
+      "document": "research/experiments/telemetry-attempt-contract/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "report.py": "research/experiments/telemetry-attempt-contract/report.py",
+        "run.py": "research/experiments/telemetry-attempt-contract/run.py",
+        "contract.md": "research/experiments/telemetry-attempt-contract/contract.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "telemetry/review/source",
+      "document": "research/experiments/telemetry-attempt-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "report.py": "research/experiments/telemetry-attempt-contract/report.py",
+        "run.py": "research/experiments/telemetry-attempt-contract/run.py",
+        "contract.md": "research/experiments/telemetry-attempt-contract/contract.md"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "telemetry/compare/source_sha256",
+      "left": "research/experiments/telemetry-attempt-contract/results/summary.json",
+      "right": "research/experiments/telemetry-attempt-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "telemetry/compare/python",
+      "left": "research/experiments/telemetry-attempt-contract/results/summary.json",
+      "right": "research/experiments/telemetry-attempt-contract/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "telemetry/compare/fixture_sha256",
+      "left": "research/experiments/telemetry-attempt-contract/results/summary.json",
+      "right": "research/experiments/telemetry-attempt-contract/review/fixture/results/summary.json",
+      "field": [
+        "fixture_sha256"
+      ]
     }
   ]
 }

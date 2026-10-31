@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "literal_memberships": {
+    "100": [
+      [
+        "a1",
+        "b1"
+      ],
+      [
+        "c1",
+        "d1",
+        "e1"
+      ]
+    ],
+    "200": [
+      [
+        "a1",
+        "b1",
+        "c1"
+      ],
+      [
+        "d1",
+        "e1"
+      ]
+    ]
+  },
+  "comparisons_recorded": 12
+}

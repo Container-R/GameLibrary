@@ -460,8 +460,28 @@
     {
       "id": "mesh/compare/gltf_sha256",
       "status": "pass"
+    },
+    {
+      "id": "telemetry/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "telemetry/compare/fixture_sha256",
+      "status": "pass"
     }
   ],
-  "passed": 115,
+  "passed": 120,
   "failed": 0
 }
