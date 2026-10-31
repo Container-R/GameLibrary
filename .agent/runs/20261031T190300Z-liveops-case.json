@@ -1,0 +1,17 @@
+{
+  "run_id": "20261031T190300Z-liveops-case",
+  "started_at": "2026-10-31T19:03:33Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0041",
+  "commit_sha": null,
+  "outcome": "reviewed; publication pending",
+  "validation": {
+    "primary_incident_date": "2020-02-11",
+    "developer_account_not_production_log_access": true,
+    "independent_source_review": true,
+    "runtime_tests": 0,
+    "incident_reproductions": 0,
+    "source_fact_and_original_proposal_separated": true
+  },
+  "scope": "Historical factual recap and original unexecuted admission/recovery acceptance analysis; current probe docs not historical technology attribution"
+}

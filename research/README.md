@@ -77,3 +77,5 @@ python3 scripts/evidence/test_verify.py
 [合成尝试分母](experiments/telemetry-attempt-contract/README.md)保留两份as-of与身份/冲突/未知状态，不能当真实玩家研究。当前十二夹具120项档案检查，不是120次行为测试。
 
 [ink内容恢复深审](source-notes/ink-save-content-compatibility.md)是固定源码调用链，不是新运行时实验或新增已验证文章。[19:00离线回归](audits/release-regression-1900/README.md)重跑86个原有模型方法及隔离工具测试；120档案检查正常/-O一致，无引擎/数据库/解码器重跑。
+
+[Destiny配置准入与数据恢复案例](../case-studies/liveops/destiny-config-admission-rollback.md)分析历史第一方复盘，分开当时已部署措施、后续承诺和原创未执行验收协议；[独立来源审查](audits/liveops-destiny-2020/REVIEW.md)。没有事故复现或新增运行测试。

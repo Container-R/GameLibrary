@@ -1,0 +1,35 @@
+{
+  "accessed_date": "2026-10-31",
+  "sources": [
+    {
+      "url": "https://www.bungie.net/7/en/News/article/48723",
+      "title": "Destiny 2 Outage and Rollback",
+      "author": "Destiny Dev Team",
+      "published": "2020-02-11",
+      "read_sections": [
+        "Inventory Management",
+        "Server Configurations",
+        "Preventive Measures"
+      ],
+      "scope": "Historical developer account, not independently accessed production logs"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/",
+      "title": "Liveness, Readiness, and Startup Probes",
+      "version": "rolling documentation; no deployed runtime inspected",
+      "read_sections": [
+        "Types of probe",
+        "Startup probe",
+        "Liveness probe",
+        "Readiness probe"
+      ],
+      "scope": "Conceptual distinction only; not evidence of Bungie technology stack"
+    }
+  ],
+  "execution": {
+    "production_access": false,
+    "incident_reproduction": false,
+    "deployment": false
+  },
+  "copyright": "No full article/body snapshots or extended quotes retained for publication; compact factual recap and original analysis only"
+}

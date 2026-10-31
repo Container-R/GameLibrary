@@ -969,7 +969,7 @@
       "id": "TASK-2026-0041",
       "question": "LiveOps instance admission versus persistent-data recovery in Destiny2020 rollback case",
       "discipline": "LIVE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "First-party incident exposes configuration and verification bypass after startup restart, not another hypothetical state model",
       "expected_artifact": "case-studies/liveops/destiny-config-admission-rollback.md",
@@ -981,8 +981,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:05:48.439836Z",
-      "next_action": "Analyze Bungie2020 first-party postmortem with scoped factual recap and independent source review",
+      "last_progress_at": "2026-10-31T19:09:52.167646Z",
+      "next_action": "Publish independently checked historical LiveOps case; no incident recreation or completed-future-fix claim",
       "blockers": []
     }
   ]

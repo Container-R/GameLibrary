@@ -55,6 +55,8 @@
   - 关联理由：把内容覆盖合同与真实玩家理解分开；假设矩阵不是可访问性认证。
 - 完成事件证明了哪个分母的结果？ → [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `SOL-DATA-001` · `source-backed` · `DATA`
   - 关联理由：用固定人口与as-of验收报表，不把未知终态、重试或帮助上下文混成玩家失败。
+- 登录测试通过是否覆盖所有实例的修改数据资格？ → [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `CASE-LIVE-001` · `source-backed` · `LIVE`
+  - 关联理由：真实历史案例区分实例准入覆盖与数据恢复验收，建议不冒充已执行防护。
 
 ## 从关卡策划出发：区分空间意图、可行性与玩家理解
 路线 ID：`role-level-design`
