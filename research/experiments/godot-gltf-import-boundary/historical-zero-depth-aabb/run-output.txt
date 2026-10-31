@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-gltf-import-boundary/run.py", line 84, in <module>
+    require(data['array_mesh']['aabb'] == {'position':[1,2,3],'size':[4,6,0]}, 'AABB')
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/godot-gltf-import-boundary/run.py", line 23, in require
+    raise RuntimeError(message)
+RuntimeError: AABB

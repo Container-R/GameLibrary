@@ -7,12 +7,17 @@ primary_discipline: MODEL
 related_disciplines: [TA, ENGINE, GFX, QA]
 related_roles: [environment-artist, technical-artist, engine-programmer]
 related_topics: [gltf, mesh-attributes, interleaved-buffer, asset-handoff, topology]
-engines: []
-versions: ["glTF 2.0 specification source 59ecbdba704206bb656965ab4e202881806066f1", "Python standard-library fixture"]
-platforms: [offline-cpu-format-validation]
+engines: [Godot]
+versions: ["glTF 2.0 specification source 59ecbdba704206bb656965ab4e202881806066f1", "Python standard-library fixture", "installed Godot self-report 4.6.3; source identity unverified"]
+platforms: [offline-cpu-format-validation, headless-native-import-data]
 updated_at: 2026-10-31
-verification_method: 固定官方规范与schema核对；原创有限交错网格CPU读取与独立字面几何验收；未执行DCC导出、引擎导入或GPU渲染
+verification_method: 固定官方规范与schema核对；原创有限交错网格CPU读取与独立字面验收；Godot原生导入2次作者进程含1次额外AABB断言失败，另1次独立复跑；未执行DCC导出、编辑器导入或GPU渲染
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_gltfdocument.html
+  - https://docs.godotengine.org/en/4.6/classes/class_importermesh.html
+  - https://docs.godotengine.org/en/4.6/classes/class_arraymesh.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/gltf/gltf_document.cpp
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/servers/rendering/rendering_server.cpp
   - https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc
   - https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json
   - https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json
@@ -25,7 +30,7 @@ sources:
 
 资产检查显示JSON可读、二进制长度足够，但自制处理工具得到的顶点仍不对。此时不能立即要求美术重导：读取器可能把交错POSITION/NORMAL当作连续POSITION，也可能只验证整个buffer足够，却越过了声明的bufferView。
 
-本方案把三个验收分开：**存储跨度合法、属性解释正确、索引恢复出的几何符合意图**。原创样例仅四个顶点、两个三角形，能用字面表独立对照；不是通用glTF解析器，也未验证任何DCC或引擎的实际导入行为。
+本方案把三个验收分开：**存储跨度合法、属性解释正确、索引恢复出的几何符合意图**。原创样例仅四个顶点、两个三角形，能用字面表独立对照；不是通用 glTF 解析器；原 CPU 实验没有执行引擎，第7节另有同一资产的实际 Godot 原生导入数据观察，仍未验证任何 DCC 导出或编辑器导入流程。
 
 ## 1. 三层地址必须保留
 
@@ -87,6 +92,35 @@ POSITION最后访问到view内100bytes；NORMAL最后访问到112bytes。若把v
 原创buffer SHA256为 `06572d2d89cac7d7dc8c9586ecde6325b82fe0615dfe0e5d4236d7e37a16f268`；reader为 `b9b5709b6730c3acaf662112169a28f50e9330ee05bf8208ca1692515d7d3e36`，runner为 `499ba210218426691e50597d067e69d2aea39a8bd3bc124d2d2a71041004b8f0`。Python自报3.12.14；没有据此认证上游解释器构建。不要把每个字段比较累计成新的独立格式实验。
 
 限定子集：一个已提供的binary buffer，一个mesh/primitive，TRIANGLES，FLOAT VEC3 POSITION/NORMAL，UNSIGNED_SHORT SCALAR indices。也不支持合法的无bufferView隐式零初始化accessor；当前缺该字段会抛KeyError，不应把它误报为规范禁止。没有稀疏accessor、矩阵、normalized整数、外部URI解析、扩展、压缩、蒙皮或动画。NORMAL长度的1e-6容差、字面POSITION bounds精确比较是该有限reader政策，不是规范指定epsilon或一般导出浮点容差。标准库CPU处理不是官方validator、DCC导出、引擎导入或GPU运行。
+
+## 7. 同一文件真正进入引擎后，不能再要求所有表示逐字相等
+
+[原生导入夹具](../../research/experiments/godot-gltf-import-boundary/README.md)把此前 `mesh.gltf` **逐字节复制**到隔离工作目录，保留 JSON 与嵌入160字节 buffer 的固定摘要。实际调用 `GLTFDocument.append_from_file`，读取 `GLTFState` 中的 `GLTFMesh.mesh`（ImporterMesh），再调用其 `get_mesh()`，读取返回的 ArrayMesh。这是同一次导入的两个数据阶段，不是两个独立解析器，也没有生成或渲染场景。
+
+实际返回码为0；状态包含1个mesh、1个node、3个accessor、2个bufferView及160字节buffer。两个阶段均为1个 TRIANGLES surface，四个位置与原字面表精确一致：
+
+| 交接项 | 源文件 / CPU意图 | ImporterMesh | ArrayMesh读回 |
+|---|---|---|---|
+| 索引 | `0,1,2,2,1,3` | `0,2,1,2,3,1` | 与ImporterMesh相同 |
+| 位置 | 原四个字面坐标 | 精确一致 | 精确一致，仅此有限输入 |
+| 法线 | 全部`(0,0,1)` | 精确一致 | 约`(3.66e-10,-3.05e-5,1)`，在预冻结每分量`1e-4`容差内 |
+| UV | 无此输入属性 | 无 | 无；不是UV正确性验证 |
+
+**索引变化不自动等于几何损坏。** Godot 4.6 [ArrayMesh文档](https://docs.godotengine.org/en/4.6/classes/class_arraymesh.html)说明三角形正面采用顺时针；预先检查的[固定导入源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/gltf/gltf_document.cpp#L1482-L1518)交换每个三角形后两个索引，并按原顶点顺序映射已使用顶点。全部四顶点均被使用，所以本次在运行前即冻结上述目标索引，不是事后排序凑相等。导入后数学叉积Z为-24，而提供的法线仍近+Z；不能为追求二者同号擅自翻转源法线。
+
+ArrayMesh 的小法线差异是**实际读回观察**，不是本研究测得的视觉误差，也不据此给出所有网格通用误差界限。这里没有验证其实际GPU物理布局；源buffer的28字节stride不能当作ArrayMesh或GPU存储stride。
+
+### 不能把诊断边界变成事后补出的强断言
+
+第一次作者运行的原生导入成功，但完整 Python 验收失败：代码额外要求平面 AABB 的Z尺寸严格为0。这个条件不在冻结几何契约内；实际 AABB位置为`(1,2,3)`、尺寸约`(4,6,1e-5)`。原源码、原始输出和失败回溯保存在 `historical-zero-depth-aabb/`，没有改标为PASS。
+
+随后检查的[固定渲染服务源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/servers/rendering/rendering_server.cpp#L451-L458)在计算点集AABB后以 `SMALL_VEC3` 限制最小尺寸。修正仅移除多加的零厚度断言，把AABB保留为诊断；源输入、位置/索引判据及预定法线容差不变。新作者运行和一次独立重复均通过。总计作者2次导入（含首次全验收失败）、审查者1次导入；另有1次版本探测，不算导入案例。审查者3项旧PASS清理反例不启动Godot，其中仅1个合成程序实际执行，不是坏glTF资产测试。
+
+### 接口证据不等于编辑器或视觉证据
+
+实际安装二进制摘要为 `f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`，自报4.6.3/`7d41c59c4`；它与用于比较的公开源码提交 `35e80b3a…` 未建立认证对应关系，见[共享来源边界](../../research/source-notes/godot-runtime-provenance.md)。源码解释是比较依据，不是认证该二进制实现的证明。
+
+因此工程交接应分别规定：不可变源字节、API成功与实际资源枚举、逻辑几何/属性、目标表示约定、最终渲染验收。前四项在本小输入上有有限证据；编辑器`.import`配置、DCC导出、材质/切线/UV/蒙皮/动画、场景组装、错误资产安全性、GPU渲染和性能仍不在范围。原CPU负例没有因此变成Godot拒绝测试。
 
 ## 来源定位
 

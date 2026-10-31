@@ -1,0 +1,60 @@
+{
+  "scope": "Read-only retained data and failure-history acceptance; no engine rerun or binary authentication",
+  "results": [
+    {
+      "scope": "author",
+      "import_return_code": 0,
+      "full_runner_acceptance": "PASS",
+      "observed_aabb": {
+        "position": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "size": [
+          4.0,
+          6.0,
+          9.99999974737875e-06
+        ]
+      },
+      "new_engine_executions": 0
+    },
+    {
+      "scope": "review",
+      "import_return_code": 0,
+      "full_runner_acceptance": "PASS",
+      "observed_aabb": {
+        "position": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "size": [
+          4.0,
+          6.0,
+          9.99999974737875e-06
+        ]
+      },
+      "new_engine_executions": 0
+    },
+    {
+      "scope": "historical-failed-extra-aabb",
+      "import_return_code": 0,
+      "full_runner_acceptance": "FAILED extra AABB assertion",
+      "observed_aabb": {
+        "position": [
+          1.0,
+          2.0,
+          3.0
+        ],
+        "size": [
+          4.0,
+          6.0,
+          9.99999974737875e-06
+        ]
+      },
+      "new_engine_executions": 0
+    }
+  ],
+  "source_diff": "--- historical/run.py\n+++ current/run.py\n@@ -81,7 +81,8 @@\n         a,b,c = [surface['positions'][i] for i in indices[offset:offset+3]]\n         cross_z = (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])\n         require(cross_z == -24, key+' literal triangle orientation')\n-require(data['array_mesh']['aabb'] == {'position':[1,2,3],'size':[4,6,0]}, 'AABB')\n+# AABB is a recorded diagnostic, not the extra zero-depth assumption from v1.\n+# Frozen position/index/normal acceptance remains unchanged.\n require({name:sha(ROOT/name) for name in sources} == manifest, 'source mutated during run')\n summary = {'status':'PASS','actual_import_processes':1,'source_sha256':manifest,'binary_sha256':binary_hash,'binary_path':str(binary),'version':data['engine_version'],'python':sys.version,'platform':platform.platform(),'source_indices':source_indices,'expected_engine_indices':indices,'normal_component_tolerance':0.0001,'provenance':'Runtime self-report is not independently authenticated source/build identity.','result':data}\n (OUT/'summary.json').write_text(json.dumps(summary, indent=2)+'\\n')"
+}

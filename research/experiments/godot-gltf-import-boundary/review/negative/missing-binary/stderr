@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/negative/missing-binary/run.py", line 34, in <module>
+    binary_hash = sha(binary)
+                  ^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/negative/missing-binary/run.py", line 26, in sha
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+                          ^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/negative/missing-binary/absent'

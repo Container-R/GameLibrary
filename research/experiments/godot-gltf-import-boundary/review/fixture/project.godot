@@ -1,0 +1,5 @@
+config_version=5
+[application]
+config/name="Original glTF runtime data boundary"
+[rendering]
+renderer/rendering_method="gl_compatibility"

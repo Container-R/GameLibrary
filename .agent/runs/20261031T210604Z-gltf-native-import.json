@@ -1,0 +1,31 @@
+{
+  "run_id": "20261031T210604Z-gltf-native-import",
+  "started_at": "2026-10-31T21:06:04Z",
+  "task_id": "TASK-2026-0055",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS",
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 27,
+    "author_actual_import_processes": 2,
+    "author_full_runner_failures_preserved": 1,
+    "author_current_accepted_imports": 1,
+    "reviewer_actual_import_processes": 1,
+    "separate_version_probes": 1,
+    "reviewer_freshness_probes": 3,
+    "Godot_calls_in_freshness_probes": 0,
+    "synthetic_executable_calls": 1,
+    "main_new_engine_executions": 0,
+    "normal_optimized_archive_semantic_checks_equal": true,
+    "original_mesh_files_unchanged": 41,
+    "archive_consistency_checks": 297,
+    "scope": "One original interleaved indexed primitive; native runtime ImporterMesh and ArrayMesh arrays, not two importers, editor pipeline, GPU, malformed asset security or official binary authentication",
+    "frozen_contract_sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+    "failure_correction": "Removed extra unfrozen exact-zero-depth AABB assertion after preserved failure and pinned comparison source inspection; input and frozen geometry/normal oracle unchanged",
+    "local_markdown_links": 378,
+    "missing_links": 0,
+    "queue_tasks_checked": 55,
+    "declared_artifact_paths_checked": 26
+  },
+  "local_review_completed_at": "2026-10-31T21:13:34.351219Z"
+}

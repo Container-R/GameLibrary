@@ -2776,6 +2776,84 @@
         "scenario.stderr": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/scenario.stderr",
         "scenario.stdout": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/scenario.stdout"
       }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-import/author/sources",
+      "document": "research/experiments/godot-gltf-import-boundary/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-gltf-import-boundary/run.py",
+        "main.gd": "research/experiments/godot-gltf-import-boundary/main.gd",
+        "project.godot": "research/experiments/godot-gltf-import-boundary/project.godot",
+        "contract.json": "research/experiments/godot-gltf-import-boundary/contract.json",
+        "mesh.gltf": "research/experiments/godot-gltf-import-boundary/mesh.gltf"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "gltf-import/author/raw",
+      "log": "research/experiments/godot-gltf-import-boundary/results/import.stdout.txt",
+      "parsed": "research/experiments/godot-gltf-import-boundary/results/import.json"
+    },
+    {
+      "kind": "equal",
+      "id": "gltf-import/author/summary-result",
+      "left": "research/experiments/godot-gltf-import-boundary/results/summary.json",
+      "field": [
+        "result"
+      ],
+      "right": "research/experiments/godot-gltf-import-boundary/results/import.json",
+      "right_field": []
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-import/review/sources",
+      "document": "research/experiments/godot-gltf-import-boundary/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-gltf-import-boundary/review/fixture/run.py",
+        "main.gd": "research/experiments/godot-gltf-import-boundary/review/fixture/main.gd",
+        "project.godot": "research/experiments/godot-gltf-import-boundary/review/fixture/project.godot",
+        "contract.json": "research/experiments/godot-gltf-import-boundary/review/fixture/contract.json",
+        "mesh.gltf": "research/experiments/godot-gltf-import-boundary/review/fixture/mesh.gltf"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "gltf-import/review/raw",
+      "log": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.stdout.txt",
+      "parsed": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.json"
+    },
+    {
+      "kind": "equal",
+      "id": "gltf-import/review/summary-result",
+      "left": "research/experiments/godot-gltf-import-boundary/review/fixture/results/summary.json",
+      "field": [
+        "result"
+      ],
+      "right": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.json",
+      "right_field": []
+    },
+    {
+      "kind": "equal",
+      "id": "gltf-import/author-review-binary",
+      "left": "research/experiments/godot-gltf-import-boundary/results/summary.json",
+      "right": "research/experiments/godot-gltf-import-boundary/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ],
+      "sha256": true
+    },
+    {
+      "kind": "log",
+      "id": "gltf-import/historical-failed-oracle/raw",
+      "log": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stdout.txt",
+      "parsed": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.json"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "actual_import_processes": 1,
+  "source_sha256": {
+    "run.py": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+    "main.gd": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+    "project.godot": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+    "contract.json": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+    "mesh.gltf": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b"
+  },
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "observed_aabb": {
+    "position": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "size": [
+      4.0,
+      6.0,
+      9.99999974737875e-06
+    ]
+  }
+}

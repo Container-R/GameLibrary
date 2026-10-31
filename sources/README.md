@@ -83,3 +83,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Factorio 派生缓存案例](../case-studies/engine/factorio-derived-cache-load-equivalence.md)与[来源回执](../research/source-notes/factorio-derived-cache-sources.md)区分 FFF 340 当时报告的通知/重算修复、FFF 415 的历史后续版本计划与本库未执行验收工作表；没有私有源码或游戏复现证据。
 
 [SQLite 提交恢复边界](../research/experiments/sqlite-commit-busy/README.md)将滚动 Transaction/lockingv3 文档与本地 DELETE journal 实测区分；BEGIN 入口拒绝和仍活动事务内的 COMMIT BUSY 不共用重试假设。旧本地证据丢失后以新 UUID 重跑，不冒充恢复。
+
+[原生 glTF 导入阶段](../research/experiments/godot-gltf-import-boundary/source-gate.md)保留固定规范、Godot API 与公开比较源码的边界；原生逻辑数组观察不等于编辑器/GPU证据。首轮额外AABB断言失败与修正过程公开保留，未调整冻结几何意图。

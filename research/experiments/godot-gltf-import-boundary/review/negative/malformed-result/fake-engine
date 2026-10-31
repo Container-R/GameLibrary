@@ -1,0 +1,3 @@
+#!/bin/sh
+touch "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/negative/malformed-result/fake-called"
+printf "RESULT_JSON={broken}\n"

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/local/bin/godot",
+    "--headless",
+    "--version"
+  ],
+  "returncode": 0,
+  "stdout": "4.6.3.stable.official.7d41c59c4\n",
+  "stderr": "",
+  "sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3"
+}

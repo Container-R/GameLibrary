@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/local/bin/godot",
+    "--headless",
+    "--path",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/fixture",
+    "--script",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-gltf-import-boundary/fixture/main.gd"
+  ],
+  "timeout_seconds": 30,
+  "isolated_home_xdg": true,
+  "returncode": 0,
+  "timed_out": false
+}
