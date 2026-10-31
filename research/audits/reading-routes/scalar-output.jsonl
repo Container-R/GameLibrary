@@ -1,0 +1,5 @@
+{"value": "# only comment", "accepted": "# only comment"}
+{"value": "foo: bar", "accepted": "foo: bar"}
+{"value": "null", "accepted": "null"}
+{"value": "[a, b]", "rejected": "unsupported required scalar: [a, b]"}
+{"value": "foo\t# comment", "accepted": "foo\t# comment"}

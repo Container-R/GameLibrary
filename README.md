@@ -3,6 +3,7 @@
 持续整理可追溯、可应用的多学科游戏开发工程知识。中文为主，保留原始来源和多语言术语。
 
 - [已发表知识目录](CATALOG.md)
+- [按岗位与跨学科问题阅读](DISCOVERY.md)（精选路线，不替代完整目录）
 - [研究规范](RESEARCH_STANDARDS.md)
 - [学科分类骨架](taxonomy/disciplines.json)
 - [研究队列](.agent/queue.json)与[恢复状态](.agent/state.json)

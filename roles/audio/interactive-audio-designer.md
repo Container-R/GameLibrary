@@ -131,4 +131,6 @@ sources:
 
 后续应以一个合法最小音频功能验证 G1–G5：提交可验证 manifest、明确版本的工程与失败注入记录；另行研究平台响度/输出规范，不能由本岗位条目代替。对外包作曲和录音的具体权利、费用与合同也须独立处理，不从岗位名称推导。
 
+关键非语音反馈的跨岗位内容验收见[声音信息等价合同](../../solutions/accessibility/critical-sound-information-contract.md)：声音已播放或对白字幕齐全，都不证明行动信息可获得。该方案及假设遭遇没有玩家效果实测。
+
 关联：[玩法程序责任接口](../programming/gameplay-programmer.md)、[音乐状态交接契约](../../solutions/audio/music-state-transition-contract.md)。检索词：interactive audio designer、technical sound designer、audio integrator、audio programmer、composer、concepteur sonore technique、音频交付、事件契约、声音验收。

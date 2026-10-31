@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "routes": [
+    {
+      "id": "role-gameplay",
+      "title": "从玩法程序出发",
+      "kind": "role",
+      "entries": [
+        {
+          "document_id": "SOL-PROG-001",
+          "question": "战斗规则与表现由谁推进？",
+          "rationale": "区分固定模拟、输入归属与表现侧职责。"
+        },
+        {
+          "document_id": "SOL-NET-001",
+          "question": "联网预测如何确认与重放？",
+          "rationale": "跨网络权威边界阅读，不把本地确定性当作协议正确性。"
+        },
+        {
+          "document_id": "SOL-AI-001",
+          "question": "导航查询结果何时有意义？",
+          "rationale": "区分尚未就绪、部分路径与目标到达。"
+        },
+        {
+          "document_id": "SOL-ANIM-001",
+          "question": "角色转身脚滑由谁处理？",
+          "rationale": "检查控制器与动画运动职责交接。"
+        }
+      ],
+      "subject_profile_id": "ROLE-PROG-001"
+    },
+    {
+      "id": "role-technical-art",
+      "title": "从技术美术出发",
+      "kind": "role",
+      "entries": [
+        {
+          "document_id": "SOL-ENGINE-001",
+          "question": "换机干净检出后资产为何变样？",
+          "rationale": "检查源文件、导入配置与生成缓存的边界。"
+        },
+        {
+          "document_id": "SOL-VFX-001",
+          "question": "如何定位特效预算来源？",
+          "rationale": "区分实例、模拟和像素成本，保留未运行UE的证据限制。"
+        },
+        {
+          "document_id": "SOL-ANIM-001",
+          "question": "导入正确为何仍会脚滑？",
+          "rationale": "资产正确不自动证明运行时运动责任正确。"
+        }
+      ],
+      "subject_profile_id": "ROLE-TA-001"
+    },
+    {
+      "id": "role-interactive-audio",
+      "title": "从交互音频出发",
+      "kind": "role",
+      "entries": [
+        {
+          "document_id": "SOL-SFX-001",
+          "question": "玩法状态改变为何不等于可听切换？",
+          "rationale": "区分意图、提交、生命周期与实际声音观察。"
+        },
+        {
+          "document_id": "SOL-A11Y-001",
+          "question": "关键信息如何不只依赖声音？",
+          "rationale": "把声音设计交付延伸到跨模态信息验收。"
+        }
+      ],
+      "subject_profile_id": "ROLE-SFX-001"
+    },
+    {
+      "id": "role-game-quality-assurance",
+      "title": "从游戏质量保证出发：按证据类型选择方法",
+      "kind": "role",
+      "subject_profile_id": "ROLE-QA-001",
+      "entries": [
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "提示后的完成能否证明独立引导成功？",
+          "rationale": "区分观察条件、主持人介入与改后复测；不是划定QA与UX的职业禁区。"
+        },
+        {
+          "document_id": "SOL-ENGINE-001",
+          "question": "可加载的资产是否仍可能违反交付意图？",
+          "rationale": "用具体配置和干净检出对照定义验收，不以无报错替代语义一致。"
+        },
+        {
+          "document_id": "SOL-A11Y-001",
+          "question": "对白字幕全覆盖是否已经保住关键行动信息？",
+          "rationale": "把内容覆盖合同与真实玩家理解分开；假设矩阵不是可访问性认证。"
+        }
+      ]
+    },
+    {
+      "id": "role-level-design",
+      "title": "从关卡策划出发：区分空间意图、可行性与玩家理解",
+      "kind": "role",
+      "subject_profile_id": "ROLE-DESIGN-001",
+      "entries": [
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "提示后的通关能证明路线已被独立理解吗？",
+          "rationale": "先确定观察与干预条件，不以主持人援助替代空间引导证据。"
+        },
+        {
+          "document_id": "SOL-AI-001",
+          "question": "NPC没有走到目标，是空间不可达还是导航未就绪？",
+          "rationale": "区分数据状态、部分路径与实际到达；不把导航API结果当作玩家体验。"
+        },
+        {
+          "document_id": "SOL-ENGINE-001",
+          "question": "美术与导入改动后，旧白盒通过状态还能直接继承吗？",
+          "rationale": "借资产意图契约建立版本与接收条件，仍需按关卡受影响点复查。"
+        }
+      ]
+    },
+    {
+      "id": "problem-stale-intent-after-transition",
+      "title": "状态切换后，旧状态或迟到回调覆盖当前意图",
+      "kind": "problem",
+      "entries": [
+        {
+          "document_id": "SOL-PROG-001",
+          "question": "暂停恢复后旧攻击为何仍被消费？",
+          "rationale": "查看输入队列边界；不外推真实设备迟到事件识别。"
+        },
+        {
+          "document_id": "SOL-UX-001",
+          "question": "关闭界面后为何恢复到错误焦点？",
+          "rationale": "检查目标身份、作用域与延迟恢复动作。"
+        },
+        {
+          "document_id": "SOL-PLATFORM-001",
+          "question": "恢复后旧存档为何覆盖新版本？",
+          "rationale": "在途I/O不能仅靠拒绝旧完成通知撤销。"
+        },
+        {
+          "document_id": "SOL-SFX-001",
+          "question": "音乐迟到回调为何覆盖新意图？",
+          "rationale": "生命周期、generation与revision需要联合检查。"
+        }
+      ]
+    }
+  ]
+}

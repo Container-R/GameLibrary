@@ -57,3 +57,11 @@ python3 scripts/evidence/test_verify.py
 [Godot 运行来源边界](source-notes/godot-runtime-provenance.md)区分公开源码、程序自报版本与文件身份；[调用新鲜度](source-notes/runner-invocation-freshness.md)说明历史 PASS 不等于最近调用成功。
 
 [动画方法轨 seek 与 advance](experiments/godot-animation-events/README.md)保留初始错误假设与六例实际回调、独立复跑和明确构建身份限制。
+
+## 内容与职责证据
+
+- [关键声音信息合同](../solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](case-notes/critical-sound-encounter.md)：不是实际玩家研究。
+- [试玩干预证据](../solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
+- [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
+- [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
+- [精选阅读路线](../DISCOVERY.md)连接五个已归档岗位与一个跨学科问题，完整清单仍见 CATALOG。

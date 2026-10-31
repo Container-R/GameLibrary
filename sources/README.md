@@ -1,5 +1,7 @@
 # 来源索引
 
+> Godot 执行版本为本地程序自报；文件摘要、官方文档和公开源码标签不能互相替代身份认证。[共享来源取证](../research/source-notes/godot-runtime-provenance.md)说明未解决对应关系及早期固定步摘要缺口。
+
 来源记录就近保存在各知识条目的“来源”部分：原始 URL、组织/作者、可确认的版本或日期、读取日期、章节与用途。这里提供跨专题入口，不重复复制厂商正文。公开可访问不等于允许再分发。
 
 | 研究问题 | 来源记录入口 | 证据边界 |
@@ -38,6 +40,14 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [导航就绪边界](../solutions/ai/navigation-readiness-and-partial-path.md)记录Godot4.6 Experimental API来源、4.6.3实际查询及默认region诊断。[TA岗位](../roles/technical-art/technical-artist.md)另加入万代南梦宫工作室日语职责说明，属于工作室自述而非事故/效率量化证据。
 
-[Godot 运行来源边界](../research/source-notes/godot-runtime-provenance.md)区分公开源码、程序自报版本与文件身份；[调用新鲜度](../research/source-notes/runner-invocation-freshness.md)说明历史 PASS 不等于最近调用成功。
+[关键非语音声音来源档案](accessibility-critical-sound-sources.md)区分 Microsoft XAG103/104、Game Accessibility Guidelines 和 Naughty Dog 2020 年功能披露；[工程合同](../solutions/accessibility/critical-sound-information-contract.md)的具体信息粒度和时序策略是原创提案，不是用户研究结果。
 
-[动画方法轨 seek 与 advance](../research/experiments/godot-animation-events/README.md)保留初始错误假设与六例实际回调、独立复跑和明确构建身份限制。
+[试玩介入来源档案](playtest-intervention-sources.md)对照 Valve 居家模拟试玩条件与 GDS 服务可用性研究的救场目的；[工程方案](../solutions/production/playtest-intervention-evidence.md)区分额外解题提示、预定参与支持、观察、解释和改后验证。没有真实参与者或改版收益数据。
+
+[Steam 胶囊素材来源记录](../research/source-notes/steam-capsule-handoff.md)的官方规则、当前规格与覆盖工作流分别定位；尺寸通过不等于文案、可用内容、语言及排期通过。没有平台上传或审核结果。
+
+[动画方法事件来源与实测](../research/experiments/godot-animation-events/README.md)区分官方 4.6 文档、固定公开提交的语义参照与本地二进制观察；[共享身份取证](../research/source-notes/godot-runtime-provenance.md)禁止把三者合并为已认证精确源码。
+
+[游戏质量保证职责来源](../roles/qa/game-quality-assurance.md)核对 ScreenSkills、SIE、Riot 与万代南梦宫工作室日语原始岗位；GDS 方法指南仅用于证据边界。公开职责不证明实际质量成果或当前招聘有效。
+
+[关卡策划职责与交接](../roles/design/level-designer.md)对照 ORCA 日语职责、Ubisoft 特定负责人岗位、Double Fine 移动度量制作案例和历史 NEXT 挑战；原创建议不冒充工作室内部规程。

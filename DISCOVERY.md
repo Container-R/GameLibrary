@@ -1,0 +1,78 @@
+# 精选阅读路线（本地候选预览）
+
+仅表示编者选择的阅读关系，未经用户寻路测试；不是远端发表凭证。完整清单仍见 [CATALOG](CATALOG.md)。链接以仓库根目录为基准。证据状态原样来自文章，不由路线推断。
+
+## 从玩法程序出发
+路线 ID：`role-gameplay`
+
+岗位起点：[玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `ROLE-PROG-001` · `source-backed` · `PROG`
+
+- 战斗规则与表现由谁推进？ → [用固定 Tick 划清战斗模拟与引擎表现边界](solutions/programming/fixed-step-simulation-boundary.md) — `SOL-PROG-001` · `source-backed` · `PROG`
+  - 关联理由：区分固定模拟、输入归属与表现侧职责。
+- 联网预测如何确认与重放？ → [客户端移动预测的权威边界与确认重放契约](solutions/programming/client-prediction-authority-boundary.md) — `SOL-NET-001` · `source-backed` · `NET`
+  - 关联理由：跨网络权威边界阅读，不把本地确定性当作协议正确性。
+- 导航查询结果何时有意义？ → [导航查询的就绪边界：空路径不等于不可达，非空路径不等于到达](solutions/ai/navigation-readiness-and-partial-path.md) — `SOL-AI-001` · `source-backed` · `AI`
+  - 关联理由：区分尚未就绪、部分路径与目标到达。
+- 角色转身脚滑由谁处理？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
+  - 关联理由：检查控制器与动画运动职责交接。
+
+## 从技术美术出发
+路线 ID：`role-technical-art`
+
+岗位起点：[技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+
+- 换机干净检出后资产为何变样？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：检查源文件、导入配置与生成缓存的边界。
+- 如何定位特效预算来源？ → [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `SOL-VFX-001` · `source-backed` · `VFX`
+  - 关联理由：区分实例、模拟和像素成本，保留未运行UE的证据限制。
+- 导入正确为何仍会脚滑？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
+  - 关联理由：资产正确不自动证明运行时运动责任正确。
+
+## 从交互音频出发
+路线 ID：`role-interactive-audio`
+
+岗位起点：[交互音频设计：从声音意图到游戏内验收的责任接口](roles/audio/interactive-audio-designer.md) — `ROLE-SFX-001` · `source-backed` · `SFX`
+
+- 玩法状态改变为何不等于可听切换？ → [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `SOL-SFX-001` · `source-backed` · `SFX`
+  - 关联理由：区分意图、提交、生命周期与实际声音观察。
+- 关键信息如何不只依赖声音？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
+  - 关联理由：把声音设计交付延伸到跨模态信息验收。
+
+## 从游戏质量保证出发：按证据类型选择方法
+路线 ID：`role-game-quality-assurance`
+
+岗位起点：[游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+
+- 提示后的完成能否证明独立引导成功？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：区分观察条件、主持人介入与改后复测；不是划定QA与UX的职业禁区。
+- 可加载的资产是否仍可能违反交付意图？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：用具体配置和干净检出对照定义验收，不以无报错替代语义一致。
+- 对白字幕全覆盖是否已经保住关键行动信息？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
+  - 关联理由：把内容覆盖合同与真实玩家理解分开；假设矩阵不是可访问性认证。
+
+## 从关卡策划出发：区分空间意图、可行性与玩家理解
+路线 ID：`role-level-design`
+
+岗位起点：[关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `ROLE-DESIGN-001` · `source-backed` · `DESIGN`
+
+- 提示后的通关能证明路线已被独立理解吗？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：先确定观察与干预条件，不以主持人援助替代空间引导证据。
+- NPC没有走到目标，是空间不可达还是导航未就绪？ → [导航查询的就绪边界：空路径不等于不可达，非空路径不等于到达](solutions/ai/navigation-readiness-and-partial-path.md) — `SOL-AI-001` · `source-backed` · `AI`
+  - 关联理由：区分数据状态、部分路径与实际到达；不把导航API结果当作玩家体验。
+- 美术与导入改动后，旧白盒通过状态还能直接继承吗？ → [干净检出后的资产导入：保留导入意图，而不是依赖作者缓存](solutions/engine/asset-import-intent-contract.md) — `SOL-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：借资产意图契约建立版本与接收条件，仍需按关卡受影响点复查。
+
+## 状态切换后，旧状态或迟到回调覆盖当前意图
+路线 ID：`problem-stale-intent-after-transition`
+
+问题入口，不代表新增岗位档案。相似的状态边界不意味着可直接共享算法；分别阅读各文适用条件。
+
+- 暂停恢复后旧攻击为何仍被消费？ → [用固定 Tick 划清战斗模拟与引擎表现边界](solutions/programming/fixed-step-simulation-boundary.md) — `SOL-PROG-001` · `source-backed` · `PROG`
+  - 关联理由：查看输入队列边界；不外推真实设备迟到事件识别。
+- 关闭界面后为何恢复到错误焦点？ → [模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退](solutions/ux/modal-focus-recovery.md) — `SOL-UX-001` · `source-backed` · `UX`
+  - 关联理由：检查目标身份、作用域与延迟恢复动作。
+- 恢复后旧存档为何覆盖新版本？ → [Steam 动态云同步恢复时的存档写入隔离与冲突契约](solutions/platform/cloud-save-resume-boundary.md) — `SOL-PLATFORM-001` · `source-backed` · `PLATFORM`
+  - 关联理由：在途I/O不能仅靠拒绝旧完成通知撤销。
+- 音乐迟到回调为何覆盖新意图？ → [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `SOL-SFX-001` · `source-backed` · `SFX`
+  - 关联理由：生命周期、generation与revision需要联合检查。
+
