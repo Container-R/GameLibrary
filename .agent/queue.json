@@ -1189,7 +1189,7 @@
       "id": "TASK-2026-0050",
       "question": "Separate baked navigation clearance, avoidance agent radius and actual physical shape occupancy",
       "discipline": "AI",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Deepen navigation readiness article with actual baked geometry and physical queries rather than treating valid paths as collision clearance",
       "expected_artifact": "Existing navigation article plus original actual bake/agent/physics evidence",
@@ -1202,11 +1202,37 @@
         "Observe actual agent paths for two avoidance-radius values with avoidance disabled",
         "Separate stationary shape overlap from locomotion/RVO and preserve all runtime failures"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:22:45.230579Z",
-      "next_action": "Publish existing navigation article supplement and independently repeated2bake/4path evidence",
+      "last_progress_at": "2026-10-31T20:26:11.121107Z",
+      "next_action": "Preserve baked topology, avoidance configuration and stationary physics scope as separate evidence",
+      "blockers": [],
+      "completed_at": "2026-10-31T20:26:11.121107Z",
+      "commit_sha": "b2cd86bde0f530f0f36722d7d5f46111ece71692"
+    },
+    {
+      "id": "TASK-2026-0051",
+      "question": "Valid correction and input suffix do not establish temporal completeness of other-entity replay dependencies",
+      "discipline": "NET",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Existing scalar model cannot express current-time interacting entity during historical replay; clarify acceptance rather than add random transport cases",
+      "expected_artifact": "Existing prediction article depth and supporting source note",
+      "artifact_paths": [
+        "solutions/programming/client-prediction-authority-boundary.md",
+        "research/source-notes/prediction-dependency-time-contract.md"
+      ],
+      "acceptance": [
+        "Read Unity Netcode for Entities1.4.1 partial snapshot and original reconciliation explanation",
+        "Original2tick hand-derived counterexample explicitly unexecuted and not Unity reproduction",
+        "Dependency acceptance policy distinguishes reject/defer/declared approximation and does not imply universal whole-world rollback"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:26:11.121107Z",
+      "next_action": "Draft and independently review source-depth dependency contract; no new model or engine run",
       "blockers": []
     }
   ]

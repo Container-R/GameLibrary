@@ -2,8 +2,8 @@
   "run_id": "20261031T201535Z-navigation-radius",
   "started_at": "2026-10-31T20:15:35Z",
   "task_id": "TASK-2026-0050",
-  "outcome": "reviewed locally; publication pending",
-  "commit_sha": null,
+  "outcome": "published and read back",
+  "commit_sha": "b2cd86bde0f530f0f36722d7d5f46111ece71692",
   "validation": {
     "status": "PASS",
     "archive_consistency_checks": 223,
@@ -115,6 +115,11 @@
     "article_precision_corrections": [
       "Margin=0 is recorded in contract and actual call source, not raw getter log",
       "Prior2Dscope exclusions now distinguished from new3Dbake and stationary overlap"
-    ]
-  }
+    ],
+    "selected_blob_hashes_verified": 85,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 51,
+    "receipt_declared_paths_checked": 16
+  },
+  "ended_at": "2026-10-31T20:26:11.121107Z"
 }
