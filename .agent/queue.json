@@ -1215,7 +1215,7 @@
       "id": "TASK-2026-0051",
       "question": "Valid correction and input suffix do not establish temporal completeness of other-entity replay dependencies",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Existing scalar model cannot express current-time interacting entity during historical replay; clarify acceptance rather than add random transport cases",
       "expected_artifact": "Existing prediction article depth and supporting source note",
@@ -1228,11 +1228,37 @@
         "Original2tick hand-derived counterexample explicitly unexecuted and not Unity reproduction",
         "Dependency acceptance policy distinguishes reject/defer/declared approximation and does not imply universal whole-world rollback"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T20:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:29:21.588282Z",
-      "next_action": "Publish source-depth supplement; no new model/runtime claimed",
+      "last_progress_at": "2026-10-31T20:31:36.646177Z",
+      "next_action": "Apply dependency coverage and explicit missing-history policy to actual projects before claiming precise interaction replay",
+      "blockers": [],
+      "completed_at": "2026-10-31T20:31:36.646177Z",
+      "commit_sha": "56d1b5c6d1bf39db8501c8936138eb01ba0b1159"
+    },
+    {
+      "id": "TASK-2026-0052",
+      "question": "Derived cache validity after mutable input expansion: uninterrupted versus load/recompute continuation",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 89,
+      "priority_rationale": "First-party production incident supplies concrete hidden-state mechanism beyond scalar prediction and source-only replay-time counterexample",
+      "expected_artifact": "Focused historical Factorio cache/load-equivalence case and original acceptance worksheet",
+      "artifact_paths": [
+        "case-studies/engine/factorio-derived-cache-load-equivalence.md",
+        "research/audits/factorio-derived-cache"
+      ],
+      "acceptance": [
+        "Compact first-party FFF340 account with correct notify/recalculate remedy, not invented serialization fix",
+        "Separate diagnostic feature ablation from actual product remedy",
+        "Original mutation/cache/read/load worksheet labeled unimplemented; no Factorio runtime or current release claims"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T21:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T20:31:36.646177Z",
+      "next_action": "Draft and independently source-review concise case; FFF415 contrast remains historical and algorithm unspecified",
       "blockers": []
     }
   ]

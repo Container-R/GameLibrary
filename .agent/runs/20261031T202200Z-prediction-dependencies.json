@@ -2,8 +2,8 @@
   "run_id": "20261031T202200Z-prediction-dependencies",
   "started_at": "2026-10-31T20:22:00Z",
   "task_id": "TASK-2026-0051",
-  "outcome": "reviewed locally; publication pending",
-  "commit_sha": null,
+  "outcome": "published and read back",
+  "commit_sha": "56d1b5c6d1bf39db8501c8936138eb01ba0b1159",
   "validation": {
     "status": "PASS",
     "method": "Primary source rereading and independently reviewed original hand calculation; not executed model",
@@ -24,6 +24,11 @@
       "SQLite and tmpfs evidence distinguished from player economy/platform timing/power loss",
       "Added broker, shader interface and navigation radius source entry points"
     ],
-    "scope": "Source-depth dependency contract and index synchronization; original single-actor model remains within prior scope"
-  }
+    "scope": "Source-depth dependency contract and index synchronization; original single-actor model remains within prior scope",
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 52,
+    "receipt_declared_paths_checked": 18
+  },
+  "ended_at": "2026-10-31T20:31:36.646177Z"
 }
