@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "version": [
+    76,
+    1,
+    0,
+    0
+  ],
+  "libraries": {
+    "icuuc": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicuuc.so.76.1",
+      "sha256": "a8e433e81075732faf255b17d4a25ce28632e41fef1a75e727ee7f4ed73ab151"
+    },
+    "icui18n": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicui18n.so.76.1",
+      "sha256": "596132c352dc25d1e8a1f91e2c5790262ed02376d27afc14b545a1952341b3fc"
+    },
+    "icudata": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicudata.so.76.1",
+      "sha256": "a04b2b906193fa1e40f968a3d16d7d6c844a1fafbdd5bce6e9f67b01c124ff24"
+    }
+  },
+  "source_sha256": {
+    "case.py": "6305b982792337ccab59e0ae23237d2b834683408090e20365840bfa75702e45",
+    "run.py": "09d317dbfaf41a0411c6d082221c03fa9ef96a760a86e7e5c7d6722ab3e3176c"
+  },
+  "runs": [
+    {
+      "case": "baseline",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-message-boundary/fixture/case.py",
+        "baseline"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    },
+    {
+      "case": "naive",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-message-boundary/fixture/case.py",
+        "naive"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    },
+    {
+      "case": "literal_only",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-message-boundary/fixture/case.py",
+        "literal_only"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    },
+    {
+      "case": "swapped",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-message-boundary/fixture/case.py",
+        "swapped"
+      ],
+      "exit_code": 0,
+      "checks": "passed"
+    }
+  ]
+}

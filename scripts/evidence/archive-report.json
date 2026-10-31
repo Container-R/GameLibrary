@@ -328,8 +328,60 @@
     {
       "id": "animation-events/compare/version",
       "status": "pass"
+    },
+    {
+      "id": "icu-message/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/baseline",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/naive",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/literal_only",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/author/swapped",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/baseline",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/naive",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/literal_only",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/review/swapped",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/version",
+      "status": "pass"
+    },
+    {
+      "id": "icu-message/compare/libraries",
+      "status": "pass"
     }
   ],
-  "passed": 82,
+  "passed": 95,
   "failed": 0
 }

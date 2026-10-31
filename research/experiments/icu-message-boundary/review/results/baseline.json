@@ -1,0 +1,65 @@
+{
+  "case": "baseline",
+  "pattern": "{0, plural, one {One key} other {Many keys}}",
+  "locale": "en",
+  "pattern_utf16_units": 44,
+  "version": [
+    76,
+    1,
+    0,
+    0
+  ],
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "byteorder": "little",
+  "libraries": {
+    "icuuc": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicuuc.so.76.1",
+      "sha256": "a8e433e81075732faf255b17d4a25ce28632e41fef1a75e727ee7f4ed73ab151"
+    },
+    "icui18n": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicui18n.so.76.1",
+      "sha256": "596132c352dc25d1e8a1f91e2c5790262ed02376d27afc14b545a1952341b3fc"
+    },
+    "icudata": {
+      "path": "/usr/lib/x86_64-linux-gnu/libicudata.so.76.1",
+      "sha256": "a04b2b906193fa1e40f968a3d16d7d6c844a1fafbdd5bce6e9f67b01c124ff24"
+    }
+  },
+  "format_calls": [
+    {
+      "number": 1.0,
+      "c_argument_type": "double",
+      "capacity_utf16": 256,
+      "returned_length": 7,
+      "status": {
+        "code": -127,
+        "name": "U_USING_DEFAULT_WARNING",
+        "success": true
+      },
+      "output": "One key"
+    },
+    {
+      "number": 2.0,
+      "c_argument_type": "double",
+      "capacity_utf16": 256,
+      "returned_length": 9,
+      "status": {
+        "code": 0,
+        "name": "U_ZERO_ERROR",
+        "success": true
+      },
+      "output": "Many keys"
+    }
+  ],
+  "open": {
+    "code": 0,
+    "name": "U_ZERO_ERROR",
+    "success": true,
+    "handle_nonnull": true,
+    "parse_line": 0,
+    "parse_offset": 0,
+    "pre_context": "",
+    "post_context": ""
+  }
+}

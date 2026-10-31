@@ -9,3 +9,5 @@
 本审计没有验证所有失败分支、并发调用、权限错误、崩溃持久性或上游程序身份。`godot-fixed-step/run.py` 的旧注释关于失败不留旧摘要，只适用于已到达清理点之后；保持原始源哈希，不静默修改历史实验代码。未来可以设计唯一调用 ID 与每次独立输出目录，此处不声称已经实现。
 
 本说明不宣称六个 Godot runner 已修改；原始源与既有执行记录保持不变。
+
+ICU 夹具的新版 runner 已单独修复优化拒绝前的摘要清理，并测试超时部分输出保留；[有限证据](../experiments/icu-message-boundary/runner-negative/README.md)不代表六个 Godot runner 也已修改。

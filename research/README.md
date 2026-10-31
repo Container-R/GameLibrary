@@ -48,9 +48,9 @@ python3 scripts/evidence/verify.py .
 python3 scripts/evidence/test_verify.py
 ```
 
-[工具说明与显式注册表](../scripts/evidence/README.md)覆盖当前6个Godot夹具的82项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
+[工具说明与显式注册表](../scripts/evidence/README.md)覆盖当前七个运行夹具（六个 Godot、一个 ICU）的95项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
 
-9项工具单元测试与游戏模型的86项测试是不同范围，82项文件/记录检查也不是82项引擎行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
+9项工具单元测试与游戏模型的86项测试是不同范围，95项文件/记录检查也不是95项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
 
 精确字节哈希也会发现换行变化。仓库`.gitattributes`使用`* -text`禁止Git自动换行转换，而不禁止普通文本diff；这是[Git官方属性语义](https://git-scm.com/docs/gitattributes)，不是字符编码或运行时兼容保证。保留原始字节比替换换行后继续沿用旧哈希更重要。[本地策略检查](audits/evidence-integrity/check_git_byte_policy.py)在临时Git仓库设`core.autocrlf=true`后验证检出字节与文本diff；它是Linux/Git2.52.0的有限测试，不是Windows执行测试，也不修改用户全局Git配置。该检查需Git，和只需Python标准库的校验器分开。
 
@@ -65,3 +65,5 @@ python3 scripts/evidence/test_verify.py
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
 - [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
 - [精选阅读路线](../DISCOVERY.md)连接五个已归档岗位与一个跨学科问题，完整清单仍见 CATALOG。
+
+[ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。

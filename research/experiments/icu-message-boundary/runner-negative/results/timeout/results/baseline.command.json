@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/timeout/case.py",
+    "baseline"
+  ],
+  "returncode": null,
+  "timed_out": true,
+  "timeout_seconds": 0.05
+}

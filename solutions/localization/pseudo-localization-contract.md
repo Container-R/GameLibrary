@@ -8,12 +8,14 @@ related_disciplines: [ENGINE, QA, UX, PROG]
 related_roles: [localization-engineer, localization-producer, ui-programmer, ui-designer, qa-engineer]
 updated_at: 2026-10-31
 review_after: 2027-01-31
-verification_method: Unity Localization 1.5.13 文档、官方问题记录、ICU 与 W3C 原文核对；原创验证流程；未运行 Unity 或格式化器
+verification_method: Unity Localization 1.5.13 文档、官方问题记录、ICU 与 W3C 原文核对；原创验证流程；本机 ICU 76.1 四例执行与四例独立复跑；未运行 Unity
 sources:
   - https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/Pseudo-Localization.html
   - https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/Pseudo-Localization-Methods.html
   - https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/Smart/SmartStrings.html
   - https://unicode-org.github.io/icu/userguide/format_parse/messages/
+  - https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/umsg.h
+  - https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/umsg.cpp
   - https://www.w3.org/International/articles/article-text-size/
   - https://issuetracker.unity.com/issues/24673/localization-the-pseudo-localization-manuals-property-table-does-not-match-the-pseudo-locale-inspector-documenting-a-code-field-that-does-not-exist-and-omitting-five-fields-that-do
 ---
@@ -24,7 +26,7 @@ sources:
 
 没有正式译文时，团队仍可检查：哪些界面文字绕过字符串表；短按钮扩展后是否裁切；文本拼接是否限制语序；格式占位符或富文本是否会在处理流程中损坏。
 
-本条提出一条**原创验证管线**，以 Unity Localization 1.5.13 为版本化参考，ICU 仅用于说明另一种语法为什么不能混用。没有提供或执行一个“通吃所有格式”的替换器。
+本条提出一条**原创验证管线**，以 Unity Localization 1.5.13 为版本化参考，ICU 用于说明另一种语法为什么不能混用，并补充一个版本受限的实际格式化实验。没有提供或执行一个“通吃所有格式”的替换器。
 
 成功标准不是“屏幕出现带重音的英语”，而是：每个结果能追到字符串 ID、格式方言、变换配置与测试场景；不支持的语法明确失败；布局缺陷可复现。伪本地化不是翻译，不是语言质量验收（LQA），也不能证明阿拉伯文塑形、双向文本、实际字体覆盖或文化适配正确。本条采用本地化分类 LOC；无障碍相关结论须单独验证，不将本地化与无障碍混为一体。
 
@@ -127,7 +129,24 @@ Unity 三个手册页面 URL 使用 `@1.5` 分支，本轮 HTML 元数据与标�
 
 伪本地化之后仍需目标语言译文与专业审校；语言特定的复数、日期数字、字形/塑形、双向文本、断行、输入、屏幕阅读与字幕体验分别验证。反转拉丁字母既不是阿拉伯文，也不验证无障碍技术。
 
-下一步可执行成果是一个明确版本的最小 Unity UI 工程：保存合法字体与文本样本、探针配置、错误注入、完整构建和截图清单。当前只完成原始来源核对与测试设计，未安装或运行 Unity/ICU，未声称解析、渲染或 RTL 测试通过。
+下一步可执行成果是一个明确版本的最小 Unity UI 工程：保存合法字体与文本样本、探针配置、错误注入、完整构建和截图清单。初稿阶段仅有来源核对与测试设计；后续补充了下述本机 ICU 有限实验。仍未安装或运行 Unity，未声称渲染或 RTL 测试通过。
+
+## 实际补充：四个 ICU MessageFormat 输入
+
+[可复跑夹具与原始日志](../../research/experiments/icu-message-boundary/README.md)使用已安装 ICU 版本函数返回的 76.1.0.0，在 Linux x86_64 上固定 locale=en、参数 1.0/2.0、单个 double 可变参数。作者四个新子进程与独立审查四个新子进程结果一致；不是 Unity SmartFormat 集成测试。
+
+| 输入 | 实际结果 | 工程含义 |
+|---|---|---|
+| 基线 one/other | One key / Many keys | 有限正控制 |
+| 全文逐字重音替换，包含 plural 等语法 | 65799 U_PATTERN_SYNTAX_ERROR；未调用格式化 | 不能把语法载体视为纯正文 |
+| 人工只修改分支正文 | Óné kéy / Mány kéys | 人工控制成立，不等于通用变换算法正确 |
+| 故意交换两个分支的正文 | Many keys / One key，解析仍成功 | 语法通过不能认证预设语义合同 |
+
+失败输入仍返回非空 handle，因此必须检查错误状态再格式化，最后关闭非空对象；仅判断指针会误报成功。合法输入的首次格式化均记录 -127 U_USING_DEFAULT_WARNING，第二次为 0；负警告允许成功，但不能从报告删除，也未确定其资源回退原因。
+
+运行器另经六个有限拒绝路径检查：优化模式、非零子进程、坏/重复载荷、错误输出、缩短阈值的人工超时。修复了优化模式留下旧 PASS 摘要和超时部分输出未归档的问题；原始失败保留，新 runner 已重新执行上述四例并独立复跑。拒绝路径不计入 ICU 功能覆盖。
+
+对应公开 release-76-1 源码固定为 `8eca245c7484ac6cc179e3e5f7c1ea7680810f39`，本地库摘要与版本单独归档；版本相同不等于认证的官方构建，检查过的文件摘要也不是全部实际依赖来源证明。没有嵌套、多参数、其他 locale、分数、字体、布局、RTL 或真实 LQA 覆盖。正文验收矩阵仍是未执行的完整项目建议，不能用这四例升级为已验收。
 
 ## 关联知识
 

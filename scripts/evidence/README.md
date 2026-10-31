@@ -13,7 +13,7 @@ python3 test_verify.py
 
 ## 当前显式范围
 
-六个 Godot 夹具 fixed-step、pause-input、focus-boundary、import-boundary、navigation-sync、animation-events，共82项检查（每个 manifest 项内部还检查各文件）：
+六个 Godot 夹具 fixed-step、pause-input、focus-boundary、import-boundary、navigation-sync、animation-events 及一个 ICU MessageFormat 夹具，共95项检查（每个 manifest 项内部还检查各文件）：
 
 - 当前 summary `source_sha256` 的完整键集合及每个实际文件 SHA256；review summary 也对应同一当前归档源文件，而不是不存在的复跑临时目录。
 - 五个含 reviewer summary 的夹具：作者/审查者 source map、二进制 SHA256 元数据及 version 字段一致性。**不读取或验证 `/usr/local/bin/godot`**，不声称证实真正使用该二进制。fixed-step 当前 summary 无 binary_sha256、无另存 current reviewer summary，未伪造该覆盖。
@@ -33,6 +33,10 @@ python3 test_verify.py
 
 ## 本轮扩展与边界修正
 
-初次65项报告另存 archive-report-initial65.json；当前加入动画的两个 source manifest、十二个原始日志对比和三个元数据比较，共82项归档一致性检查。新增17项不是17个引擎行为测试。原始错误假设在 animation historical-initial 中保留，不与当前源混比。
+初次65项报告另存 archive-report-initial65.json；此前加入动画的两个 source manifest、十二个原始日志对比和三个元数据比较，共82项归档一致性检查。新增17项不是17个引擎行为测试。原始错误假设在 animation historical-initial 中保留，不与当前源混比。
 
 [运行身份](../../research/source-notes/godot-runtime-provenance.md)尚未认证官方构建；[调用新鲜度](../../research/source-notes/runner-invocation-freshness.md)要求检查本次退出码，旧 PASS 不证明最新运行成功。历史65项结果只描述原范围，不能用于新增文件。
+
+## ICU 扩展
+
+此前82项报告保留为 archive-report-82.json；当前新增两份 source manifest、八个原始日志/解析 JSON 比对与三组来源/库文件元数据/版本比较，共95项全部通过，报告 archive-report.json。不读取本机 ICU 库、不认证真实依赖闭包或官方来源。历史 runner-v1 与注入负例不参与当前来源比对；新增13项是档案一致性检查，不是13个格式化功能测试。

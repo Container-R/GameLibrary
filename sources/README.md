@@ -51,3 +51,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [游戏质量保证职责来源](../roles/qa/game-quality-assurance.md)核对 ScreenSkills、SIE、Riot 与万代南梦宫工作室日语原始岗位；GDS 方法指南仅用于证据边界。公开职责不证明实际质量成果或当前招聘有效。
 
 [关卡策划职责与交接](../roles/design/level-designer.md)对照 ORCA 日语职责、Ubisoft 特定负责人岗位、Double Fine 移动度量制作案例和历史 NEXT 挑战；原创建议不冒充工作室内部规程。
+
+[ICU 固定接口与运行观察](../research/experiments/icu-message-boundary/README.md)区分公开源码、已安装库文件摘要和有限格式化证据，不以版本相同认证构建来源。

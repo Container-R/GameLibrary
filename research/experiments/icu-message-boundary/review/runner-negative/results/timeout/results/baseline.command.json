@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/icu-message-boundary/negative/results/timeout/case.py",
+    "baseline"
+  ],
+  "returncode": null,
+  "timed_out": true,
+  "timeout_seconds": 0.05
+}

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "selection": "Explicit current Godot summaries; excludes historical fixed-step author-run-summary, navigation initial-map-only-predicate, and animation historical-initial",
+  "selection": "Current six Godot and one ICU evidence summaries; excludes historical initial/old-runner and synthetic negative copied inputs",
   "checks": [
     {
       "kind": "manifest",
@@ -712,6 +712,105 @@
       "right": "research/experiments/godot-animation-events/review/results/summary.json",
       "field": [
         "version"
+      ]
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-message/author/source",
+      "document": "research/experiments/icu-message-boundary/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "case.py": "research/experiments/icu-message-boundary/case.py",
+        "run.py": "research/experiments/icu-message-boundary/run.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/author/baseline",
+      "log": "research/experiments/icu-message-boundary/results/baseline.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/results/baseline.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/author/naive",
+      "log": "research/experiments/icu-message-boundary/results/naive.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/results/naive.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/author/literal_only",
+      "log": "research/experiments/icu-message-boundary/results/literal_only.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/results/literal_only.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/author/swapped",
+      "log": "research/experiments/icu-message-boundary/results/swapped.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/results/swapped.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "icu-message/review/source",
+      "document": "research/experiments/icu-message-boundary/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "case.py": "research/experiments/icu-message-boundary/case.py",
+        "run.py": "research/experiments/icu-message-boundary/run.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/review/baseline",
+      "log": "research/experiments/icu-message-boundary/review/results/baseline.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/review/results/baseline.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/review/naive",
+      "log": "research/experiments/icu-message-boundary/review/results/naive.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/review/results/naive.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/review/literal_only",
+      "log": "research/experiments/icu-message-boundary/review/results/literal_only.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/review/results/literal_only.json"
+    },
+    {
+      "kind": "log",
+      "id": "icu-message/review/swapped",
+      "log": "research/experiments/icu-message-boundary/review/results/swapped.stdout.txt",
+      "parsed": "research/experiments/icu-message-boundary/review/results/swapped.json"
+    },
+    {
+      "kind": "equal",
+      "id": "icu-message/compare/source_sha256",
+      "left": "research/experiments/icu-message-boundary/results/summary.json",
+      "right": "research/experiments/icu-message-boundary/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "icu-message/compare/version",
+      "left": "research/experiments/icu-message-boundary/results/summary.json",
+      "right": "research/experiments/icu-message-boundary/review/results/summary.json",
+      "field": [
+        "version"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "icu-message/compare/libraries",
+      "left": "research/experiments/icu-message-boundary/results/summary.json",
+      "right": "research/experiments/icu-message-boundary/review/results/summary.json",
+      "field": [
+        "libraries"
       ]
     }
   ]
