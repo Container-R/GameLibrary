@@ -5,8 +5,8 @@
     "TASK-2026-0065"
   ],
   "started_at": "2026-10-31T22:33:00Z",
-  "ended_at": "2026-10-31T22:47:16.913671Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T22:49:47.549652Z",
+  "outcome": "published and read back",
   "sources": [
     "Vulkan-Headers b379292b2ab6df5771ba9870d53cf8b2c9295daf",
     "Vulkan-Loader document aa6dee8385afe4b2cc0152d086af2184743e16fd",
@@ -37,7 +37,12 @@
     "queue_tasks": 65,
     "declared_paths": 55,
     "prior_experiment_files_byte_identical": 1782,
-    "local_markdown_links_checked": 471
+    "local_markdown_links_checked": 471,
+    "selected_blob_hashes_verified": 60,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 66,
+    "receipt_declared_paths_checked": 55
   },
-  "next_action": "Continue missing NET services role source-backed research; do not repair drivers or retry native branch"
+  "next_action": "Continue missing NET services role source-backed research; do not repair drivers or retry native branch",
+  "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7"
 }

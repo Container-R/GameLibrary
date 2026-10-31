@@ -1610,7 +1610,7 @@
       "id": "TASK-2026-0065",
       "question": "Does the scoped installed Vulkan loader support instance/device enumeration sufficiently to justify a later shader-execution proposal, or is that branch blocked?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Existing matrix article is actual compile plus CPU interpretation only; loader presence cannot establish shader execution capability",
       "expected_artifact": "Frozen ABI-reviewed bounded loader/instance/enumeration capability observation or exact negative; no shader execution claim",
@@ -1626,11 +1626,36 @@
         "No driver install, override-manufactured failure, private manifest search, logical device, shader or pipeline operation",
         "Negative is not universal absence of physical GPU; positive enumeration is not shader execution or hardware proof"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:47:16.913671Z",
-      "next_action": "Publish reviewed scoped negative and retain shader execution gap; no runtime retry",
+      "next_action": "Retain exact scoped API-negative observation; shader execution branch blocked, no retry or driver repair",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:49:47.549652Z",
+      "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7"
+    },
+    {
+      "id": "TASK-2026-0066",
+      "question": "\u5728\u7ebf\u670d\u52a1\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u63a5\u5e73\u53f0\u670d\u52a1\u94fe\u538b\u6d4b\u4e2d\u7684\u771f\u5b9e\u7ec4\u4ef6\u3001\u66ff\u8eab\u4e0e\u9057\u6f0f\u9a8c\u6536\u8d23\u4efb\uff1f",
+      "discipline": "NET",
+      "status": "reviewing",
+      "priority": 90,
+      "priority_rationale": "Current role coverage omits online services; prior prediction/local storage cases do not prove service-chain capacity",
+      "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read primary BNS Japanese responsibilities and Riot2020 load-harness scope",
+        "Separate simulated clients/mock game servers from real gameplay execution",
+        "Do not generalize microservices or universal infra/security ownership",
+        "Original worksheet explicitly unexecuted; no invented service load tests",
+        "Validate links and taxonomy; keep whole role matrix incomplete"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:49:47.549652Z",
+      "next_action": "Integrate independently accepted local role draft b7c1ce4a and source note b3e63fb9; update navigation and partial coverage truthfully",
       "blockers": []
     }
   ]
