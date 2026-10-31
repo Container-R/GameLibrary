@@ -217,7 +217,7 @@
       "attempts": 1,
       "completed_at": null,
       "last_progress_at": "2026-10-31T20:18:21Z",
-      "next_action": "Continue evidence-driven role/work-area research;25-article classification audit and queue-ID guard published, current27articles do not complete all role coverage",
+      "next_action": "Continue evidence-driven role/work-area research; current 28 articles and six role profiles do not complete all occupation coverage",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -1436,11 +1436,15 @@
       "id": "TASK-2026-0059",
       "question": "What evidence and responsibility handoffs make a graphics/rendering feature maintainable across visual requirements, renderer interfaces and platform acceptance?",
       "discipline": "GFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Address an important uncovered occupation with direct employer evidence and concrete feature handoff rather than duplicating existing numeric models",
       "expected_artifact": "Bounded graphics-programmer role profile and original unexecuted rendering-feature acceptance worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/rendering/graphics-programmer.md",
+        "research/source-notes/graphics-programmer-role.md",
+        "research/audits/graphics-programmer-role"
+      ],
       "acceptance": [
         "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
         "Separate senior cross-domain, shared-engine and product-maintenance samples; dates and engine versions unknown where unspecified",
@@ -1450,8 +1454,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T22:25:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T21:39:19.094019Z",
-      "next_action": "Read primary role pages and independently review original graphics-feature handoff draft",
+      "last_progress_at": "2026-10-31T21:42:23.098284Z",
+      "next_action": "Publish original graphics-programmer role with independently checked sources and curated route",
       "blockers": []
     }
   ]

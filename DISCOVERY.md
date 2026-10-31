@@ -96,3 +96,19 @@
 - 音乐迟到回调为何覆盖新意图？ → [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `SOL-SFX-001` · `source-backed` · `SFX`
   - 关联理由：生命周期、generation与revision需要联合检查。
 
+## 从图形与渲染程序出发
+路线 ID：`role-graphics-programmer`
+
+岗位起点：[图形与渲染程序：从视觉需求到可维护渲染功能的交付责任](roles/rendering/graphics-programmer.md) — `ROLE-GFX-001` · `source-backed` · `GFX`
+
+- CPU与shader的矩阵接口如何接受？ → [CPU 与 shader 矩阵交接：相同大小和 stride，不代表相同矩阵约定](solutions/rendering/matrix-major-interface-contract.md) — `SOL-GFX-002` · `source-backed` · `GFX`
+  - 关联理由：区分编译反射、CPU字节解释与尚未执行的GPU行为。
+- 纹理预算指的是payload还是实际驻留？ → [BC 压缩纹理预算：逐 mip 计算 payload，不把 DDS 文件长度当作显存](solutions/rendering/block-compressed-mip-budget.md) — `SOL-GFX-001` · `source-backed` · `GFX`
+  - 关联理由：先定位资源成本口径，不从文件大小推断帧性能。
+- 内容侧特效优化需要什么测量合同？ → [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `SOL-VFX-001` · `source-backed` · `VFX`
+  - 关联理由：阅读未执行的受控协议，保留UE版本与无硬件采集限制。
+- 怎样让渲染功能成为可制作的内容接口？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：明确底层实现与资产制作/导入配置的交接责任。
+- 缺陷证据何时足以支撑发布决定？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：技术解释与风险签收分开，不把单项通过当整体验收。
+

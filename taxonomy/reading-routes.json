@@ -192,6 +192,39 @@
           "rationale": "生命周期、generation与revision需要联合检查。"
         }
       ]
+    },
+    {
+      "id": "role-graphics-programmer",
+      "title": "从图形与渲染程序出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-GFX-001",
+      "entries": [
+        {
+          "document_id": "SOL-GFX-002",
+          "question": "CPU与shader的矩阵接口如何接受？",
+          "rationale": "区分编译反射、CPU字节解释与尚未执行的GPU行为。"
+        },
+        {
+          "document_id": "SOL-GFX-001",
+          "question": "纹理预算指的是payload还是实际驻留？",
+          "rationale": "先定位资源成本口径，不从文件大小推断帧性能。"
+        },
+        {
+          "document_id": "SOL-VFX-001",
+          "question": "内容侧特效优化需要什么测量合同？",
+          "rationale": "阅读未执行的受控协议，保留UE版本与无硬件采集限制。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "怎样让渲染功能成为可制作的内容接口？",
+          "rationale": "明确底层实现与资产制作/导入配置的交接责任。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "缺陷证据何时足以支撑发布决定？",
+          "rationale": "技术解释与风险签收分开，不把单项通过当整体验收。"
+        }
+      ]
     }
   ]
 }

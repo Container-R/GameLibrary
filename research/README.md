@@ -64,7 +64,7 @@ python3 scripts/evidence/test_verify.py
 - [试玩干预证据](../solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
 - [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
-- [精选阅读路线](../DISCOVERY.md)连接五个已归档岗位与一个跨学科问题，完整清单仍见 CATALOG。
+- [精选阅读路线](../DISCOVERY.md)连接已归档岗位与一个跨学科问题，完整清单仍见 CATALOG。
 
 [ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。
 
@@ -93,3 +93,5 @@ python3 scripts/evidence/test_verify.py
 [资源候选与可变外部依赖](experiments/godot-resource-candidate/README.md)为既有资产文章补实际对象图所有权证据：IGNORE 新根仍可共享 Gradient，DEEP 在这个原生图中隔离修改。初始正数 ID 判据错误、最终原始记录和[独立复验](experiments/godot-resource-candidate/review/REVIEW.md)均保留。
 
 [Godot单骨根运动](experiments/godot-root-motion-boundary/README.md)分别保留普通姿态、提取、重复读取与显式应用的原生观察；作者与独立复验各两行为进程，不将四项旧几何测试改写为引擎证据。
+
+[图形与渲染程序](../roles/rendering/graphics-programmer.md)补充视觉需求、接口、性能证据与维护的职责交接；三份雇主材料和一个历史制作案例不证明原创建议已被采用。

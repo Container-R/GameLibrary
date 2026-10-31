@@ -89,3 +89,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Rig 求值交接来源](../research/source-notes/rig-evaluation-handoff.md)将 Square Enix 的2015年日文项目材料、Unity Animation Rigging 1.2.1 的版本化规则与 Capcom 雇主职责例子分开。原创接收矩阵尚未执行；原根运动证据仍是 Python 几何模型，不因其他 Godot 实验存在而升级为引擎证据。
 
 [新增原生根运动观察](../research/experiments/godot-root-motion-boundary/README.md)独立于之前四项几何模型：两份新运行各包含普通骨姿态/根运动提取配置，重复读取不消费delta，显式重复应用才重复移动；不验证真实角色、IK或Unity Rig表。固定比较源码不认证安装构建。
+
+[图形程序职责与案例来源](../research/source-notes/graphics-programmer-role.md)区分加拿大/日本/波兰雇主责任样本与 Wube 2018 树/阴影制作进展；职责材料不等于功能效果测试，原创接收工作表尚未试用。
