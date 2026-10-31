@@ -21,12 +21,12 @@
     "research/experiments/fixed-step/README.md",
     "solutions/programming/fixed-step-simulation-boundary.md"
   ],
-  "commit_sha": null,
+  "commit_sha": "48ce08025c2890f3b6fdec0b8ec8c79709f12c24",
   "validation": {
     "model_tests": "8 passed",
     "engine_integration": "not run"
   },
   "blockers": [],
   "next_action": "将改进纳入首篇方案；保持TA/audio在途研究",
-  "outcome": "review improvements tested; commit receipt recorded in subsequent checkpoint"
+  "outcome": "published; updated test output read back from default branch"
 }

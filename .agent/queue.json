@@ -56,7 +56,7 @@
       "id": "TASK-2026-0002",
       "question": "核实技术美术主要岗位与TA生产管线角色边界",
       "discipline": "TA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "在已完成程序与动画基础后补技术美术和音频覆盖，仍以具体工程问题为验收",
       "expected_artifact": "roles/technical-art/technical-artist.md",
@@ -71,8 +71,8 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "核对官方职责/流程资料，构建可操作交付边界",
+      "last_progress_at": "2026-10-31T13:07:26.939076Z",
+      "next_action": "来源与边界已独立抽查，等待发布与远端核验",
       "blockers": []
     },
     {
@@ -101,12 +101,12 @@
     },
     {
       "id": "TASK-2026-0004",
-      "question": "研究游戏音效与动态配乐跨岗位交付和常见技术系统",
+      "question": "如何以可验收契约分离玩法音乐意图、提交状态与实际音乐转场？",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 81,
       "priority_rationale": "在已完成程序与动画基础后补技术美术和音频覆盖，仍以具体工程问题为验收",
-      "expected_artifact": "roles/audio/interactive-audio-designer.md",
+      "expected_artifact": "solutions/audio/music-state-transition-contract.md",
       "acceptance": [
         "真实原始资料至少一项",
         "问题或职业职责有可操作细节",
@@ -118,9 +118,10 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": null,
-      "next_action": "核对官方职责/流程资料，构建可操作交付边界",
-      "blockers": []
+      "last_progress_at": "2026-10-31T13:07:26.939076Z",
+      "next_action": "来源与边界已独立抽查，等待发布与远端核验",
+      "blockers": [],
+      "scope_note": "本轮收窄为音乐状态交接；完整音频岗位图谱移交TASK-2026-0010，不视作已完成"
     },
     {
       "id": "TASK-2026-0005",
@@ -212,6 +213,26 @@
       "completed_at": null,
       "last_progress_at": null,
       "next_action": "利用公开职业体系与多工作室岗位信息比较分工",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0010",
+      "question": "核实交互音频岗位分工、声音资产与集成交付物；与音乐状态契约交叉索引",
+      "discipline": "SFX",
+      "status": "backlog",
+      "priority": 82,
+      "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
+      "expected_artifact": "roles/audio/interactive-audio-designer.md",
+      "acceptance": [
+        "一手行业/雇主资料",
+        "职责交付验收矩阵",
+        "明确项目样本边界"
+      ],
+      "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 0,
+      "next_action": "检索当前原始岗位与工具集成资料",
       "blockers": []
     }
   ]

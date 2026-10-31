@@ -5,9 +5,11 @@
 ## 岗位档案
 
 - [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `source-backed` · `PROG`
+- [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `source-backed` · `TA`
 
 ## 工程解决方案
 
 - [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `source-backed` · `ANIM`
+- [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `source-backed` · `SFX`
 - [用固定 Tick 划清战斗模拟与引擎表现边界](solutions/programming/fixed-step-simulation-boundary.md) — `source-backed` · `PROG`
 

@@ -1,0 +1,116 @@
+---
+id: SOL-SFX-001
+title: 交互音乐状态交接契约：玩法意图不等于可听见的切换
+type: solution
+status: source-backed
+primary_discipline: SFX
+related_disciplines: [MUSIC, PROG, DESIGN, QA]
+related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay-programmer, qa-engineer]
+updated_at: 2026-10-31
+verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创契约设计；未运行中间件或游戏引擎
+sources:
+  - https://www.fmod.com/docs/2.04/studio/authoring-events.html
+  - https://qa.fmod.com/t/best-practices-for-tempo-sync-beatmatched-timing-across-events/20836/2
+  - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game.html
+  - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game-page-four.html
+  - https://github.com/audiokinetic/WwiseIncludes/blob/master/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h
+---
+
+# 交互音乐状态交接契约：玩法意图不等于可听见的切换
+
+## 解决的问题与适用范围
+
+战斗强度每帧变化，音乐却应在合适的拍、小节或乐句边界转场。把“进入战斗”直接做成每帧播放一次音乐事件，会把持续音乐生命周期与强度更新混在一起；具体后果可能是重启、重叠实例或触发实例限制，不能假定各中间件行为相同。
+
+本条给出**原创团队交接契约**，目标是：同一音乐会话只启动一个受控实例；玩法只表达意图，音乐工程决定转场；快速反复变化、失败和迟到回调都可追踪。主要面向单一背景音乐实例，不涵盖节奏游戏输入判定、多首独立事件的采样级同步、动态变速或网络音乐同步。
+
+证据分层：FMOD 2.04.00 文档支持当前版本的创作机制；Wwise 案例只作为历史设计反例；下文适配器、职责表与验收项是本文建议，**不是厂商提供的现成实现，也不是已通过运行验证的方案**。
+
+## 已核对的机制，不作跨产品等价推断
+
+- **FMOD 手册 2.04.00（页脚标记日期 2026-09-29；不据此断言软件发布日期）**：事件实例独立，可有不同本地参数。transition region 与 magnet region 可按拍值/小节量化；transition marker 与 loop region 不具备同样量化选项。多个可用逻辑标记发生竞争时，垂直位置靠上的标记优先；transition timeline 可在到达目标前承载过渡。以上分别见官方手册 §4.1.3、§4.11.1–4.11.4。本文只采用这些边界，不把完整手册改写成教程。[FMOD：Authoring Events](https://www.fmod.com/docs/2.04/studio/authoring-events.html)
+- **FMOD 官方人员案例（2023-11-06）**：Jeff 描述用条件决定 transition region 的退出或 magnet region 的进入，再通过量化控制节奏对齐。其示例不是“在游戏帧回调中自行估算下一小节”。[FMOD 官方论坛原答](https://qa.fmod.com/t/best-practices-for-tempo-sync-beatmatched-timing-across-events/20836/2)
+- **Wwise 历史项目**：Louis-Xavier Buffoni 的原作者案例建立于 Wwise 2010.1.3；以 Intensity Switch 驱动音乐容器，并处理段落尾音。作者在文章中把 Switch 值简称为 state，**不表示可把 SetSwitch API 随意换成 SetState**。[原案例：Game Interface / Assigning Content](https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game.html)
+- **历史快速变化反例**：同一案例第四部分指出，待转场目标尚未开始时可能撤回旧转场，快速变化可能跳过中间强度；目标已经开始则不能假定仍可撤回。因此音乐图不能只设计相邻强度之间的边。[原案例：Jump Transitions](https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game-page-four.html) 这是该案例语义，不是对 FMOD 或当前 Wwise 的取消保证。
+- **Wwise API 边界证据**：本轮访问日期为 2026-10-31；所链 master 为可变分支，公开头文件内容标明 v2017.2.0 Build 6500，PostEvent 为异步提交；SetSwitch 带关联 game object，SetState 签名没有该参数；音频处理是否使用独立线程受配置影响。这里只据此警告“提交不等于播放”“名字相似不等于作用域相同”“不能猜测回调线程”，不提供当前 SDK 接入代码。[Audiokinetic 官方公开头文件](https://github.com/audiokinetic/WwiseIncludes/blob/master/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h)
+
+## 一份可交接的最小合同（原创建议）
+
+### 1. 三种状态必须分别记录
+
+| 字段 | 含义 | 禁止推断 |
+|---|---|---|
+| desired_mode | 玩法当前希望的音乐强度，例如 Explore / Tension / Combat | 不表示音乐已经切换 |
+| submitted_mode | 适配器最近成功提交给当前实例的目标值 | 不表示规则已命中或素材已就绪 |
+| observed_section | 从实际支持的观察机制获得的音乐段落；未知时明确 unknown | 不用参数设置返回值冒充已听见 |
+
+每条记录至少附 `session_id、generation、revision、game_time、event_identity、result`。若中间件观察值不能反推出准确段落，则保留 unknown，并用 profiler 捕获辅助调试，不能“补全”一个想当然的段落。
+
+### 2. 生命周期与意图更新分离
+
+采用单写入者管理 `Stopped / Starting / Active / Stopping`：
+
+1. **进入会话**：确认资源准备条件与实例作用域；创建或启动一次。初始目标值在何时设置，须按所选版本 API 与项目验证，避免先听见默认段落后才修正。
+2. **更新意图**：更新 desired_mode 与 revision，不重新启动音乐。只有提交成功才更新 submitted_mode；失败保留待提交状态，按有界重试策略处理。
+3. **同值去重**：仅当当前 generation 已成功提交相同值且未失效时才去重。切换场景或重建实例后不能沿用旧缓存。
+4. **连续强度可合并**：普通强度请求使用“最新值优先”，而不是强制逐个播放过期状态。胜利、死亡、章节结束等一次性叙事事件使用独立命令语义，不能被强度合并器吞掉。
+5. **退出会话**：明确淡出/立即停止策略，以及何时释放实例与资源。停止与释放不是同义词；具体 API 顺序必须按目标 SDK 确认。
+6. **迟到通知**：携带或关联旧 generation 的通知只能更新旧会话记录，不得清空新实例句柄；对象与回调数据的寿命必须覆盖仍可能到达的通知。
+
+这里的“成功提交”只是适配器成功边界；若底层 API 返回值无法检测素材或路由错误，还必须单独保留诊断/观察通道。不要建立“未观察到目标就不断重新 Play”的自激恢复循环。
+
+### 3. 谁拥有时间
+
+玩法拥有意图产生时间；音乐工程拥有允许的退出点、目标入口和桥段；音频集成拥有调度与输出诊断。不要用渲染帧累计出的下一小节时间代替中间件音乐时间线，然后在那个帧上临时启动目标。
+
+建议记录 `intent_time → dispatch_time → observed_transition_time`，并注明各时间戳的时钟域。观察回调到达游戏线程的时间不等于声卡出声时间；没有时钟映射或外部录音测量，不应报告“端到端延迟精确到采样”。
+
+例如固定 120 BPM、4/4 时每小节 2 秒。这只是音乐周期的算术例子，**不是请求必在 2 秒内可听见的服务承诺**：资源准备、规则优先级、桥段、边界附近的调度和输出缓冲都须另测。若设计要求急迫反馈，可把即时提示音与随后量化的背景音乐转场拆开，而不是为追求立即响应破坏全部音乐规则。
+
+回调处理建议只搬运小型有界记录，避免磁盘 I/O、阻塞等待和直接调用游戏对象；具体线程归属、同步方式与溢出策略由音频程序员按集成版本验证。这里提出实时路径防护要求，并未验证某个回调一定运行在音频线程。
+
+## 音乐图与玩法合同一起验收
+
+以下表是交付接口建议，不是声称所有工作室都采用这些岗位边界。
+
+| 责任接口 | 应交付的证据 | 常见交接缺口 |
+|---|---|---|
+| 作曲 / 音乐设计 | 各模式音乐意图、节拍信息、入口/出口、桥段与尾音、可接受响应区间 | 只交线性混音，未说明可切位置 |
+| 交互音频设计 | 参数值映射、完整有向转场图、优先级、紧急路径、默认/缺失状态 | 只听相邻上升路径，忽略下降与跨级 |
+| 玩法程序 | 强度判定、滞回/最短驻留策略、终局优先级、会话边界 | 每帧重播；暂停或离开场景后仍投递 |
+| 音频程序 | 单实例所有权、资源就绪与失败处理、版本/线程合同、可观测日志 | 把 API 接受请求记成已播放 |
+| QA + 音频设计 | 时序压力脚本、profiler 捕获、听感记录、平台/版本/素材哈希 | 只看参数变化，没有听音与实例数检查 |
+
+滞回用于减少玩法状态抖动；量化用于约束音乐切换时机。二者不能互相替代。阈值和驻留时间应来自设计试听，不在公共条目中发明“行业标准毫秒数”。
+
+## 最小验收矩阵（尚未执行）
+
+| 输入/故障 | 应检查的不变量或产品决策 | 必留证据 |
+|---|---|---|
+| 连续 600 帧提交同一模式 | 会话启动次数为 1；普通更新不得增加音乐实例 | 适配器日志 + 实际实例列表 |
+| 一个小节内 Explore→Tension→Combat | 不要求 Tension 必须可听见；Explore→Combat 有有效设计路径 | 实际转场路径与录音 |
+| Combat→Explore，紧邻边界前后各测试 | 离开战斗的响应与尾音满足已声明规则；无通用“立即撤回”假设 | 带时间戳的 profiler 捕获 |
+| 同一边界切到不同目标段落 | 分别检查退出节拍与目标乐句位置；对齐切换边界不自动代表乐句衔接正确 | 两端拍号、入口设置、录音 |
+| 参数请求失败后重试 | 不把失败缓存为已提交；恢复后仍能应用最新目标 | 返回值和 revision 轨迹 |
+| 资源尚未就绪 / 素材缺失 | 不产生无限 Play 循环；明确静音、保留旧音乐或降级策略 | 失败原因及恢复记录 |
+| 会话 A 退出，B 启动，A 回调迟到 | A 通知不能停止或清空 B | generation 与实例对应表 |
+| 胜利事件与强度下降同时发生 | 按产品优先级只产生预期终局行为 | 规则优先级、最终路径 |
+| 暂停、切后台、恢复、场景重载 | 是否继续音乐由产品明确；恢复不得意外复制实例 | 平台、配置及前后实例数 |
+
+可先用纯状态模型测试去重、generation 隔离和失败重试；这些测试**不能证明**量化、尾音、流式加载、混音或设备时延正确。升级为运行验证必须提交目标版本、最小音频工程、合法测试素材、输入脚本、捕获与听感结果。
+
+## 取舍、失败模式与后续验证
+
+- 一个持续事件/容器便于集中音乐规则，但大型音乐图需要命名和优先级审查；这不是所有配乐项目都必须采用的结构。
+- 默认“最新强度优先”可能丢弃戏剧性中间段。若某桥段必须完整播完，应把不可打断期作为显式合同，而不是依赖偶然调度。
+- 每条跨级边都手工制作可能膨胀成本。允许共享过渡或兜底路径，但要写明允许哪些听感折中，并覆盖全部可达输入。
+- 本轮已读取来源正文；未运行 FMOD、Wwise、Unity 或 Unreal，未下载项目、试听素材或观看视频。Wwise 当前官方文档访问受阻，未绕过限制；因此不把历史资料升级为当前兼容性结论。
+- 下一步最有价值的验证是 **FMOD 2.04 的三模式最小工程**：固定合法测试音色、一个持续实例、显式条件/量化/优先级，重放上表并确认快速变化期间的实际行为；未验证前不对取消机制、采样精度或跨产品迁移作保证。
+
+## 关联知识与检索入口
+
+问题关键词：interactive music、music state、quantized transition、transition region、magnet region、exit cue、music switch container、音乐强度抖动、音乐事件重复启动。
+
+关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)、[玩法程序职责](../../roles/programming/gameplay-programmer.md)。待研究关联：异步资源生命周期、音频 QA 与平台时延。完整“交互音频设计师”职业画像仍应独立研究招聘/组织/交付证据，不用本条有限接口表替代。
+
+来源访问日期：2026-10-31。保存原创契约分析和必要的短述，不转载中间件源码、音乐、工程素材或原文全文。
