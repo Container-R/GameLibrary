@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T162200Z-content-contracts",
   "started_at": "2026-10-31T16:23:15.812073Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T16:25:34.959720Z",
   "task_id": [
     "TASK-2026-0025",
     "TASK-2026-0026",
@@ -48,14 +48,18 @@
     "sources/playtest-intervention-sources.md",
     "taxonomy/reading-routes.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
   "validation": {
     "source_and_integration_reviews": "Independent primary-source and responsibility-boundary checks passed",
     "new_player_or_platform_tests": false,
     "navigation_author_methods": 11,
     "navigation_reviewer_additions": 5,
     "navigation_reviewer_inherited_total": 16,
-    "taxonomy_methods": 7
+    "taxonomy_methods": 7,
+    "knowledge_articles": 18,
+    "curated_routes": 6,
+    "local_links_checked": 225,
+    "broken_links": 0
   },
   "publication_review": {
     "professional_content_only": true,
@@ -63,5 +67,5 @@
     "history_selection": "Initial parser failure and final portable checks retained; redundant intermediate output copies omitted"
   },
   "next_action": "Verify remote files and record actual SHA",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; 37 selected remote blob hashes match release files"
 }

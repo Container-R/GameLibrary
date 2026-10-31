@@ -602,7 +602,7 @@
       "id": "TASK-2026-0025",
       "question": "对白字幕齐全为何仍可能遗漏关键非语音声音，如何制定跨岗位信息等价验收？",
       "discipline": "A11Y",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "14篇覆盖审计后的具体内容与体验缺口，不继续堆同类引擎夹具",
       "expected_artifact": "solutions/accessibility/critical-sound-information-contract.md",
@@ -617,18 +617,20 @@
         "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/104",
         "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0026",
       "question": "Playtest intervention evidence",
       "discipline": "PROD",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "solutions/production/playtest-intervention-evidence.md",
@@ -637,18 +639,20 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0027",
       "question": "Steam capsule handoff source audit",
       "discipline": "BIZ",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/source-notes/steam-capsule-handoff.md",
@@ -657,18 +661,20 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0028",
       "question": "Curated cross-disciplinary reading routes",
       "discipline": "PROD",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "DISCOVERY.md",
@@ -677,12 +683,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0029",
@@ -732,7 +740,7 @@
       "id": "TASK-2026-0031",
       "question": "Game QA role evidence contracts",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "roles/qa/game-quality-assurance.md",
@@ -741,12 +749,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0032",
@@ -834,7 +844,7 @@
       "id": "TASK-2026-0036",
       "question": "Level designer delivery and acceptance contracts",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "roles/design/level-designer.md",
@@ -843,12 +853,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T16:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:23:15.812073Z",
-      "next_action": "Publish reviewed content batch; record verified commit after publication",
-      "blockers": []
+      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
+      "blockers": [],
+      "completed_at": "2026-10-31T16:25:34.959720Z",
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
     },
     {
       "id": "TASK-2026-0037",

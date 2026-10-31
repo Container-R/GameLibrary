@@ -3,19 +3,13 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "reviewed-batch-publication",
   "active_task_ids": [
-    "TASK-2026-0025",
-    "TASK-2026-0026",
-    "TASK-2026-0027",
-    "TASK-2026-0028",
-    "TASK-2026-0031",
-    "TASK-2026-0036",
     "TASK-2026-0037"
   ],
-  "last_completed_at": "2026-10-31T16:21:38.644794Z",
-  "last_real_progress_at": "2026-10-31T16:23:15.812073Z",
-  "last_commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b",
+  "last_completed_at": "2026-10-31T16:25:34.959720Z",
+  "last_real_progress_at": "2026-10-31T16:25:34.959720Z",
+  "last_commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
   "last_run_id": "20261031T162200Z-content-contracts",
-  "next_action": "Verify content and role publication, then publish bounded ICU/SQLite evidence",
+  "next_action": "Publish reviewed ICU and SQLite evidence; integrate independently reviewed texture budget experiment",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -29,6 +23,6 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
+    "latest_verified_content_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
   }
 }
