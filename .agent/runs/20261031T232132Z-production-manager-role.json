@@ -6,8 +6,8 @@
     "TASK-2026-0008"
   ],
   "started_at": "2026-10-31T23:21:32Z",
-  "ended_at": "2026-10-31T23:36:39.261386Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T23:38:28.473301Z",
+  "outcome": "published and read back",
   "sources": [
     "https://toronto.ubisoft.com/people-of-ubisoft-toronto-meet-frank-roy-production-director/",
     "https://www.bandainamcostudios.com/creator-interviews/14742",
@@ -25,7 +25,12 @@
     "archive_check_failures": 0,
     "prior_experiment_files_unchanged": 2071,
     "local_markdown_links_checked": 522,
-    "selected_blobs_pending_verification": true
+    "selected_blobs_pending_verification": false,
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 71,
+    "receipt_declared_paths_checked": 65
   },
-  "next_action": "Inspect exact existing modal-focus fixture and original sources for one bounded lifecycle evidence gap before proposing native tests"
+  "next_action": "Inspect exact existing modal-focus fixture and original sources for one bounded lifecycle evidence gap before proposing native tests",
+  "commit_sha": "bb7ca5fe0964e487b31bb2f886fa3e2fd4e2c384"
 }

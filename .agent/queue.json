@@ -1751,7 +1751,7 @@
       "id": "TASK-2026-0070",
       "question": "How does production management distinguish reported local completion, receiver-ready dependencies and milestone acceptance?",
       "discipline": "PROD",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Whole-role matrix remains incomplete; concrete first-party production samples support an actionable missing dependency/commitment role interface",
       "expected_artifact": "One source-backed production-manager role and original unexecuted dependency handoff worksheet",
@@ -1766,11 +1766,36 @@
         "Maintain unknown source dates and historical remote-policy scope",
         "Independently review source alignment; complete navigation and queue checks before publication"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T23:36:39.261386Z",
+      "next_action": "Retain source-specific role/authority distinctions and unexecuted worksheet; whole role matrix remains incomplete",
+      "blockers": [],
+      "completed_at": "2026-10-31T23:38:28.473301Z",
+      "commit_sha": "bb7ca5fe0964e487b31bb2f886fa3e2fd4e2c384"
+    },
+    {
+      "id": "TASK-2026-0071",
+      "question": "Does inherited recursive focus disabling establish an application modal scope boundary when a child overrides it?",
+      "discipline": "UX",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "Existing native UX fixture covers replacement identity, not same-instance inherited eligibility changes; official sources expose a concrete composition boundary",
+      "expected_artifact": "Source-gated finite Control focus observation or exact negative, supplementing existing UX article",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact current article/fixture identities and preserve old evidence applicability",
+        "Verify Control recursive focus override and Viewport gain/loss semantics using versioned originals before freezing protocol",
+        "One same-instance finite sequence only if installed capability verified, with passive callbacks and actual owner identity",
+        "Retain unauthenticated local Godot source/release correspondence; no actual navigation/window/visual-accessibility certification",
+        "Stop failed oracle without widening timings or variants; independent review and original raw logs required"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T00:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T23:36:39.261386Z",
-      "next_action": "Publish independently reviewed role and hypothetical dependency worksheet; retain matrix incompleteness",
+      "last_progress_at": "2026-10-31T23:38:28.473301Z",
+      "next_action": "Complete independent source gate for recursive focus eligibility and passive owner signals, then freeze protocol before code/runtime",
       "blockers": []
     }
   ]
