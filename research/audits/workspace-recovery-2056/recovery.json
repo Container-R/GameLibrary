@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-31T21:00:52.850791+00:00",
+  "incident_started_at": "2026-10-31T20:56:23Z",
+  "incident": "exec-server transport disconnected; next command saw older workspace snapshot",
+  "canonical_head": "3721e5b6ae2fd506aca022c30e489524c03442f0",
+  "write_in_flight": false,
+  "recovered_remote_blobs": 2005,
+  "remote_blob_mismatches": 0,
+  "archive_consistency_checks": 285,
+  "archive_failures": 0,
+  "indexed_articles": 27,
+  "queue_tasks": 54,
+  "declared_artifact_paths": 24,
+  "methods": [
+    "Matched existing old workspace files against canonical Git blob SHA1",
+    "Matched retained upload content against canonical Git blob SHA1",
+    "Fetched128missing canonical blobs via authorized GitHub plugin and matched hashes"
+  ],
+  "unpublished_loss": [
+    "Prior SQLite COMMIT_BUSY author and reviewer raw evidence, DB archives, code and review files unavailable on disk"
+  ],
+  "not_recovered_from_memory": "Previous raw execution artifacts were not reconstructed or relabeled",
+  "new_evidence": "Author and reviewer reconstructed protocol/code and ran new identified post-reset invocations; main acceptance pending",
+  "scope": "Repository restoration and static consistency only, no reexecution of2005 archived files or authentication of runtime build"
+}

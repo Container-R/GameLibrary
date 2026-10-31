@@ -81,3 +81,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [预测依赖时间合同](../research/source-notes/prediction-dependency-time-contract.md)重新核对 Unity Netcode for Entities 1.4.1 与 Gambetta 原文；跨实体反例为原创未执行手算，不是 ECS 复现，也不否定现有单角色模型范围。
 
 [Factorio 派生缓存案例](../case-studies/engine/factorio-derived-cache-load-equivalence.md)与[来源回执](../research/source-notes/factorio-derived-cache-sources.md)区分 FFF 340 当时报告的通知/重算修复、FFF 415 的历史后续版本计划与本库未执行验收工作表；没有私有源码或游戏复现证据。
+
+[SQLite 提交恢复边界](../research/experiments/sqlite-commit-busy/README.md)将滚动 Transaction/lockingv3 文档与本地 DELETE journal 实测区分；BEGIN 入口拒绝和仍活动事务内的 COMMIT BUSY 不共用重试假设。旧本地证据丢失后以新 UUID 重跑，不冒充恢复。

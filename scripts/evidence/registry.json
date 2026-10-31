@@ -2716,6 +2716,66 @@
         "registry_sha256"
       ],
       "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-commit-busy/author/source_sha256",
+      "document": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/sqlite-commit-busy/run.py",
+        "worker.py": "research/experiments/sqlite-commit-busy/worker.py",
+        "protocol.md": "research/experiments/sqlite-commit-busy/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-commit-busy/author/outputs_sha256",
+      "document": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/summary.json",
+      "field": [
+        "outputs_sha256"
+      ],
+      "files": {
+        "ledger.db.base64": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/ledger.db.base64",
+        "observe.json": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/observe.json",
+        "observe.stderr": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/observe.stderr",
+        "observe.stdout": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/observe.stdout",
+        "scenario.json": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/scenario.json",
+        "scenario.stderr": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/scenario.stderr",
+        "scenario.stdout": "research/experiments/sqlite-commit-busy/results/64d9242a-4f54-491f-b959-2b54196a7521/scenario.stdout"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-commit-busy/review/source_sha256",
+      "document": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/sqlite-commit-busy/review/fixture/run.py",
+        "worker.py": "research/experiments/sqlite-commit-busy/review/fixture/worker.py",
+        "protocol.md": "research/experiments/sqlite-commit-busy/review/fixture/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "sqlite-commit-busy/review/outputs_sha256",
+      "document": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/summary.json",
+      "field": [
+        "outputs_sha256"
+      ],
+      "files": {
+        "ledger.db.base64": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/ledger.db.base64",
+        "observe.json": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/observe.json",
+        "observe.stderr": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/observe.stderr",
+        "observe.stdout": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/observe.stdout",
+        "scenario.json": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/scenario.json",
+        "scenario.stderr": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/scenario.stderr",
+        "scenario.stdout": "research/experiments/sqlite-commit-busy/review/evidence/09655ed4-1da6-452e-a086-97a8960926cc/scenario.stdout"
+      }
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "run_id": "20261031T205507Z-sqlite-commit-busy",
+  "started_at": "2026-10-31T20:55:07Z",
+  "task_id": "TASK-2026-0054",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS",
+    "indexed_source_backed_articles": 27,
+    "new_indexed_articles": 0,
+    "new_retained_runtime_sequences": 2,
+    "child_processes_per_sequence": 2,
+    "retained_runtime_processes": 4,
+    "main_new_runtime_executions": 0,
+    "normal_optimized_archive_semantic_checks_equal": true,
+    "original_sqlite_files_unchanged": 144,
+    "archive_consistency_checks": 289,
+    "scope": "Held reader in DELETE journal blocks COMMIT; active write transaction retried by COMMIT only; no WAL/powerloss/production queue claim",
+    "local_markdown_links": 374,
+    "missing_links": 0,
+    "queue_tasks_checked": 54,
+    "declared_artifact_paths_checked": 24
+  },
+  "workspace_recovery": {
+    "incident_at": "2026-10-31T20:56:23Z",
+    "canonical_head": "3721e5b6ae2fd506aca022c30e489524c03442f0",
+    "remote_blobs_restored": 2005,
+    "prior_uncommitted_evidence": "unavailable, not reconstructed as original",
+    "new_author_uuid": "64d9242a-4f54-491f-b959-2b54196a7521",
+    "new_review_uuid": "09655ed4-1da6-452e-a086-97a8960926cc",
+    "record": "research/audits/workspace-recovery-2056/recovery.json"
+  },
+  "local_review_completed_at": "2026-10-31T21:03:15.518976Z"
+}

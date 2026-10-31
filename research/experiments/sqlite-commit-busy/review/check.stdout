@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "invocation": "09655ed4-1da6-452e-a086-97a8960926cc",
+  "actual_child_processes": 2,
+  "database_bytes": 16384,
+  "sqlite_version": "3.53.1",
+  "sqlite_source_id": "2026-05-05 10:34:17 c88b22011a54b4f6fbd149e9f8e4de77658ce58143a1af0e3785e4e6475127e9",
+  "source_sha256": {
+    "run.py": "4af4c79d3ebdaf4a7f5f6fa0a87198a3793f8f93be04ef54d3a7f599b6cbc463",
+    "worker.py": "4bebf4bad22fe8b43f489f1084759ccfa2d31f0e7d4cb0871db5af4ed2f07091",
+    "protocol.md": "ebf353bf2c9543765f583beedfdc1b51fd1b42da8ec60f16de8c9e3c0570965b"
+  }
+}

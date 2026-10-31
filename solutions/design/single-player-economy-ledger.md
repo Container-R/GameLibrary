@@ -9,11 +9,12 @@ related_roles: [economy-designer, systems-designer, gameplay-programmer, data-an
 engines: [engine-agnostic]
 platforms: [single-player]
 updated_at: 2026-10-31
-verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试；SQLite 四场景10进程、单个双写者握手序列及独立复跑；未进行真实玩家试验
+verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试；SQLite 四场景10进程、单个双写者握手序列及独立复跑；读者阻塞 COMMIT 后同事务重试两轮各2进程；未进行真实玩家试验
 sources:
   - https://gamebalanceconcepts.wordpress.com/2010/09/08/level-10-final-boss/
   - https://unity.com/how-to/building-game-economy-guide-part-2
   - https://www.sqlite.org/lang_transaction.html
+  - https://www.sqlite.org/lockingv3.html
   - https://www.sqlite.org/pragma.html#pragma_synchronous
   - https://www.sqlite.org/atomiccommit.html
   - https://docs.python.org/3.12/library/sqlite3.html#transaction-control
@@ -132,7 +133,17 @@ Python 3.12.14，纯标准库，14 项测试通过：基准阈值/库存、一�
 
 作者与审查者各执行一个序列、四个子进程（初始化、A、B、新读者），不是四种竞争场景。通过管道/事件握手决定先后，不靠 sleep 猜测；原始角色输出与父收发记录一起保存。
 
-这只验证 BEGIN IMMEDIATE 的被拒绝入口。SQLite 文档另说明 COMMIT 因读取者而 BUSY 时事务可能仍活动；本实验未构造该情况，不能把“没有进入事务”套到任何 BUSY。等待明确提交后重试是实验协议，不是无限立即重试的生产建议；公平性、吞吐、完整隔离性、超时取消和多写者队列仍未验证。
+这只验证 BEGIN IMMEDIATE 的被拒绝入口。SQLite 文档另说明 COMMIT 因读取者而 BUSY 时事务可能仍活动；这个双写者实验未构造该情况；下节另有读者阻塞 COMMIT 的新证据，不能把“没有进入事务”套到任何 BUSY。等待明确提交后重试是实验协议，不是无限立即重试的生产建议；公平性、吞吐、完整隔离性、超时取消和多写者队列仍未验证。
+
+### COMMIT BUSY：重试提交，而非再次执行奖励
+
+[读者阻塞提交夹具](../../research/experiments/sqlite-commit-busy/README.md)补足BEGIN竞争实验未覆盖的分支。在本机Python3.12.14/SQLite自报3.53.1，DELETE journal、EXTRA、busy_timeout=0下，两个独立连接保留重叠事务：读者持有余额100的读事务；写者已执行余额+25及receipt插入。第一次COMMIT实际返回SQLITE_BUSY（5），Python `in_transaction`仍为true；写者可见125，原读者仍可见100。
+
+释放读者后，写者**仅重试同一事务COMMIT**，不重新BEGIN或重做业务DML。提交成功后，另一个新只读进程核对完整收据opening100、reward-1金额25/结果125与余额125。实际SQL trace包含一次奖励UPDATE、一次INSERT和两次COMMIT尝试。两个进程是一轮受控序列加独立读回，不是并发压力测试。
+
+因此重试入口必须区分“BEGIN未进入事务”和“COMMIT失败但仍保留修改”。后者直接重复非幂等UPDATE可能重复发奖。生产仍需错误分类、实际事务状态和截止期限，选择继续提交或明确回滚后幂等重试，不能无限重试所有异常。
+
+[SQLite Transaction §2.3](https://www.sqlite.org/lang_transaction.html)解释该活动事务语义。这个扩展不改变旧实验范围，不证明WAL、断电持久性、云同步、公平性或真实游戏正确性。环境重置前的本地档案已丢失，当前归档为明确标记的新运行，而非冒充恢复的旧证据。
 
 ## 原始来源与访问限制
 

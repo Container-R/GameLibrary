@@ -1,0 +1,21 @@
+{
+  "scope": "Read-only retained archive semantics and consistency, no SQLite execution",
+  "results": [
+    {
+      "side": "author",
+      "invocation": "64d9242a-4f54-491f-b959-2b54196a7521",
+      "status": "PASS",
+      "database_bytes": 16384,
+      "archived_processes": 2,
+      "new_process_executions": 0
+    },
+    {
+      "side": "review",
+      "invocation": "09655ed4-1da6-452e-a086-97a8960926cc",
+      "status": "PASS",
+      "database_bytes": 16384,
+      "archived_processes": 2,
+      "new_process_executions": 0
+    }
+  ]
+}
