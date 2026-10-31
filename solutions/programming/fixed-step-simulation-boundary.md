@@ -66,7 +66,7 @@ record(backlog=A, simulatedSteps=steps)
 
 ## 验证范围与验收矩阵
 
-2026-10-31 在 Python 3.12.14 上实际运行了原创、无引擎依赖的 `Fraction` 调度模型，7 项测试通过：不同渲染分片、半 tick 余量、过载欠账、单次边沿消费、只读插值、负时间拒绝及实时采样不具帧率不变性的反例。[实验脚本](../../research/experiments/fixed-step/test_fixed_step.py)、[原始测试输出](../../research/experiments/fixed-step/test-output.txt)与[环境和范围](../../research/experiments/fixed-step/README.md)已归档。这只验证该离散模型，不验证 Unity 调用顺序、物理后端或跨平台浮点确定性；下表仍包含待执行的引擎集成检查。
+2026-10-31 在 Python 3.12.14 上实际运行了原创、无引擎依赖的 `Fraction` 调度模型，8 项测试通过：不同渲染分片、半 tick 余量、过载欠账、单次边沿消费、只读插值、负时间与非法步数预算拒绝及实时采样不具帧率不变性的反例。[实验脚本](../../research/experiments/fixed-step/test_fixed_step.py)、[原始测试输出](../../research/experiments/fixed-step/test-output.txt)与[环境和范围](../../research/experiments/fixed-step/README.md)已归档。这只验证该离散模型，不验证 Unity 调用顺序、物理后端或跨平台浮点确定性；下表仍包含待执行的引擎集成检查。
 
 | 输入条件 | 必须断言 |
 |---|---|

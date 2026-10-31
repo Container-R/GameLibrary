@@ -14,6 +14,8 @@ class Runner:
         self.inputs = inputs or {}
 
     def frame(self, elapsed, budget=8):
+        if isinstance(budget, bool) or not isinstance(budget, int) or budget <= 0:
+            raise ValueError('budget must be a positive integer')
         if elapsed < 0:
             raise ValueError('elapsed must be nonnegative')
         self.accumulator += elapsed * 60  # time expressed in simulation ticks
@@ -75,8 +77,27 @@ class ContractTests(unittest.TestCase):
     def test_input_sampling_is_not_render_invariant(self):
         # Same physical arrival time can be observed on different frames.
         # Replay guarantee therefore requires a canonical tick-input stream.
-        observed_30 = F(1,30)
-        observed_144 = F(3,144)
-        self.assertNotEqual(int(observed_30*60), int(observed_144*60))
+        arrival = F(1,50)  # one physical edge at exactly 20 ms
+        def poll_and_assign(hz):
+            # Poll after draining completed fixed ticks at each render boundary.
+            # Earliest observed frame >= the shared arrival time wins.
+            r = Runner()
+            for frame in range(1, hz + 1):
+                r.frame(F(1,hz))
+                observed = F(frame,hz)
+                if observed >= arrival:
+                    command = {'target_tick':r.tick, 'sequence':0, 'pressed':True}
+                    return observed, command
+            raise AssertionError('edge never sampled')
+        at_30, cmd_30 = poll_and_assign(30)
+        at_144, cmd_144 = poll_and_assign(144)
+        self.assertEqual((at_30, cmd_30['target_tick']), (F(1,30),2))
+        self.assertEqual((at_144, cmd_144['target_tick']), (F(3,144),1))
+        self.assertNotEqual(cmd_30['target_tick'],cmd_144['target_tick'])
+
+    def test_invalid_step_budget_rejected(self):
+        for budget in (0, -1, F(1,2), True):
+            with self.subTest(budget=budget):
+                with self.assertRaises(ValueError): Runner().frame(F(1),budget)
 
 if __name__ == '__main__': unittest.main(verbosity=2)
