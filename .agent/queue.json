@@ -216,7 +216,7 @@
       "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T22:51:07.134069Z",
+      "last_progress_at": "2026-10-31T23:36:39.261386Z",
       "next_action": "Continue source-backed role/work-area research guided by current catalog; partial profiles do not complete the whole occupation matrix",
       "blockers": [],
       "partial_artifacts": [
@@ -1755,7 +1755,10 @@
       "priority": 90,
       "priority_rationale": "Whole-role matrix remains incomplete; concrete first-party production samples support an actionable missing dependency/commitment role interface",
       "expected_artifact": "One source-backed production-manager role and original unexecuted dependency handoff worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/production/production-manager.md",
+        "research/source-notes/production-manager-role.md"
+      ],
       "acceptance": [
         "Verify original Ubisoft Frank Roy interview, BNS Oshiyama historical project experience and Riot cosmetics responsibility sample",
         "Preserve organization-specific title and authority differences; no universal producer release power",
@@ -1766,8 +1769,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T00:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T23:35:26.722156Z",
-      "next_action": "Integrate independently reviewed role draft and source record; verify indexes and publish as partial TASK0008 coverage",
+      "last_progress_at": "2026-10-31T23:36:39.261386Z",
+      "next_action": "Publish independently reviewed role and hypothetical dependency worksheet; retain matrix incompleteness",
       "blockers": []
     }
   ]

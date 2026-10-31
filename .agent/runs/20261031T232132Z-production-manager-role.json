@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T232132Z-production-manager-role",
+  "task_ids": [
+    "TASK-2026-0070",
+    "TASK-2026-0008"
+  ],
+  "started_at": "2026-10-31T23:21:32Z",
+  "ended_at": "2026-10-31T23:36:39.261386Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://toronto.ubisoft.com/people-of-ubisoft-toronto-meet-frank-roy-production-director/",
+    "https://www.bandainamcostudios.com/creator-interviews/14742",
+    "https://www.riotgames.com/en/work-with-us/job/8163433/game-producer-ii-league-of-legends-contract-singapore"
+  ],
+  "evidence": "Original English/Japanese interviews and employer responsibilities; historical remote context and organizational title differences retained",
+  "new_runtime_or_team_experiments": 0,
+  "original_contribution": "Unexecuted hypothetical A7 asset to C17 receiver-ready dependency handoff, scope/date/authority decisions distinct from technical acceptance",
+  "review": "Main and independent original source/editorial review accepted article1bf3beb6 and sourcea9617e94",
+  "validation": {
+    "library_errors": 0,
+    "indexed_articles": 33,
+    "archive_checks_normal": 412,
+    "archive_checks_optimized": 412,
+    "archive_check_failures": 0,
+    "prior_experiment_files_unchanged": 2071,
+    "local_markdown_links_checked": 522,
+    "selected_blobs_pending_verification": true
+  },
+  "next_action": "Inspect exact existing modal-focus fixture and original sources for one bounded lifecycle evidence gap before proposing native tests"
+}

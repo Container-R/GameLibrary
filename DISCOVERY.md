@@ -144,3 +144,17 @@
 - 进入运行环境还需要哪些准入与恢复条件？ → [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `CASE-LIVE-001` · `source-backed` · `LIVE`
   - 关联理由：历史配置事故提供另一条运行边界，不是本文假设服务链的复现。
 
+## 从制作管理出发：局部完成、依赖接收与承诺变化
+路线 ID：`role-production-manager`
+
+岗位起点：[制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `ROLE-PROD-001` · `source-backed` · `PROD`
+
+- 承诺对应哪份候选，交接后还能定位吗？ → [构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `ROLE-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：先确认源与配置产物身份，构建成功不自动证明接收条件或里程碑通过。
+- 上游资产做完，导入意图也随之交接了吗？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：内容生产与技术接收是不同工作，保留工具及资产管线的专业责任。
+- 测试证据、风险决定与计划调整如何分开？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：改变范围和日期不使失败检查变为通过，实际放行权依具体项目。
+- 试玩完成记录可以支持哪种里程碑判断？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：主持人干预下的观察有自己的推断边界，制作管理不能替代玩家研究方法。
+

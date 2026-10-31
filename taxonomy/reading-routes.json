@@ -291,6 +291,34 @@
           "rationale": "历史配置事故提供另一条运行边界，不是本文假设服务链的复现。"
         }
       ]
+    },
+    {
+      "id": "role-production-manager",
+      "title": "从制作管理出发：局部完成、依赖接收与承诺变化",
+      "kind": "role",
+      "subject_profile_id": "ROLE-PROD-001",
+      "entries": [
+        {
+          "document_id": "ROLE-ENGINE-001",
+          "question": "承诺对应哪份候选，交接后还能定位吗？",
+          "rationale": "先确认源与配置产物身份，构建成功不自动证明接收条件或里程碑通过。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "上游资产做完，导入意图也随之交接了吗？",
+          "rationale": "内容生产与技术接收是不同工作，保留工具及资产管线的专业责任。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "测试证据、风险决定与计划调整如何分开？",
+          "rationale": "改变范围和日期不使失败检查变为通过，实际放行权依具体项目。"
+        },
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "试玩完成记录可以支持哪种里程碑判断？",
+          "rationale": "主持人干预下的观察有自己的推断边界，制作管理不能替代玩家研究方法。"
+        }
+      ]
     }
   ]
 }

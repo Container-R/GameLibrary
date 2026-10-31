@@ -115,3 +115,5 @@ python3 scripts/evidence/test_verify.py
 [ICU en/ar分支覆盖](experiments/icu-plural-locale/README.md)新增三配置六整数，作者/独立各18格式化请求；遗漏few合法回退但拒绝冻结FEW意图，未测RTL或翻译质量。
 
 [Ogg Opus 三种帧数](experiments/ogg-opus-frame-boundary/README.md)保留一个原创输入的作者/独立编码解码：呈现 93,659、granule 93,971、包时长 94,080，非听感或中间件验证。
+
+[制作管理依赖交接](../roles/production/production-manager.md)区分局部完成、接收方可用与里程碑接受，提供明确标注未执行的 A7→C17 工作表；岗位矩阵仍未完整。
