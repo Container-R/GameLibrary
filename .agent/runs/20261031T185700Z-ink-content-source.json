@@ -1,10 +1,10 @@
 {
   "run_id": "20261031T185700Z-ink-content-source",
   "started_at": "2026-10-31T18:57:17Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T19:05:48.439836Z",
   "task_id": "TASK-2026-0040",
-  "commit_sha": null,
-  "outcome": "reviewed; publication pending",
+  "commit_sha": "c7cf1bb13ea1bde77390a2038824bf5fe57aebf6",
+  "outcome": "Published and verified",
   "validation": {
     "ink_runtime_runs": 0,
     "pinned_source_commit": "35c63e52f1d36060930dc7ed3cfba38ea224b528",
@@ -18,5 +18,9 @@
     "archive_checks_optimized": 120,
     "normal_optimized_reports_equal": true
   },
-  "scope": "Source control-flow analysis and original offline integration checks; no story compile, migration success or runtime replays"
+  "scope": "Source control-flow analysis and original offline integration checks; no story compile, migration success or runtime replays",
+  "verified_selected_blobs": 29,
+  "local_links": 281,
+  "missing_local_links": 0,
+  "indexed_articles_unchanged": 21
 }

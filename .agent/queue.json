@@ -941,7 +941,7 @@
       "id": "TASK-2026-0040",
       "question": "Narrative save loading versus intended content continuity across story revisions",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Existing pinned ink source gate exposes approximate saved-pointer recovery; distinguish source-backed compatibility protocol from unavailable runtime verification",
       "expected_artifact": "research/source-notes/ink-save-content-compatibility.md",
@@ -950,18 +950,40 @@
         "Content identity distinct from save-format version",
         "Explicit runtime absence and bounded unexecuted acceptance protocol"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:01:46.621792Z",
-      "next_action": "Publish independently checked source-only compatibility analysis and bounded offline regression evidence",
+      "last_progress_at": "2026-10-31T19:05:48.439836Z",
+      "next_action": "Runtime continuation tests deferred until an authorized verified runtime is available; source analysis complete",
       "blockers": [
         {
           "scope": "actual ink runtime execution",
           "reason": "No dotnet/mono/csi/inklecate on PATH or ink/inkjs in checked package roots; no install performed",
           "alternative": "Proceed with bounded primary-source analysis"
         }
-      ]
+      ],
+      "completed_at": "2026-10-31T19:05:48.439836Z",
+      "commit_sha": "c7cf1bb13ea1bde77390a2038824bf5fe57aebf6"
+    },
+    {
+      "id": "TASK-2026-0041",
+      "question": "LiveOps instance admission versus persistent-data recovery in Destiny2020 rollback case",
+      "discipline": "LIVE",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "First-party incident exposes configuration and verification bypass after startup restart, not another hypothetical state model",
+      "expected_artifact": "case-studies/liveops/destiny-config-admission-rollback.md",
+      "acceptance": [
+        "Compact original-source fact recap and explicit unknowns",
+        "Separate already-deployed remediation from historical future commitments",
+        "Clearly distinguish original acceptance protocol and infrastructure vocabulary from studio implementation"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:05:48.439836Z",
+      "next_action": "Analyze Bungie2020 first-party postmortem with scoped factual recap and independent source review",
+      "blockers": []
     }
   ]
 }
