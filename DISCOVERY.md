@@ -41,6 +41,8 @@
   - 关联理由：区分意图、提交、生命周期与实际声音观察。
 - 关键信息如何不只依赖声音？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
   - 关联理由：把声音设计交付延伸到跨模态信息验收。
+- 带前置和尾部的素材，如何准确交接音乐主体与循环端点？ → [音乐循环素材交接：用 PCM 帧区间表达主体，不混淆文件尾部与循环终点](solutions/music/pcm-loop-frame-contract.md) — `SOL-MUSIC-001` · `source-backed` · `MUSIC`
+  - 关联理由：用实际离线 PCM 帧证据核对单位和端点，避免把素材边界验收误当作中间件或听感验收。
 
 ## 从游戏质量保证出发：按证据类型选择方法
 路线 ID：`role-game-quality-assurance`

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-music/scripts/evidence/verify.py",
+        "gamelibrary-publish-music"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "gamelibrary-publish-music/scripts/evidence/verify.py",
+        "gamelibrary-publish-music"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-music/research/experiments/music-loop-frame-contract/review/check_raw.py",
+        "gamelibrary-publish-music/research/experiments/music-loop-frame-contract/results"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-music/research/experiments/music-loop-frame-contract/review/check_raw.py",
+        "gamelibrary-publish-music/research/experiments/music-loop-frame-contract/review/fixture/results"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "archive_checks": 127,
+  "normal_optimized_identical": true,
+  "two_raw_stdout_summary_equalities": true,
+  "two_archive_only_full_pcm_oracles": true,
+  "new_audio_filter_invocations": 0,
+  "scope": "Integration archive checks only; actual filters executed by author and reviewer separately",
+  "local_markdown_links": 300,
+  "missing_links": 0,
+  "indexed_source_backed_articles": 23,
+  "editorial_review": true
+}

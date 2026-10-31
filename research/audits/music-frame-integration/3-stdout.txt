@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "artifacts": {
+    "source.wav": {
+      "frames": 96539,
+      "pcm_bytes": 386156,
+      "first": [
+        -111,
+        111
+      ],
+      "last": [
+        222,
+        -222
+      ],
+      "archive_verified": true
+    },
+    "correct.wav": {
+      "frames": 93659,
+      "pcm_bytes": 374636,
+      "first": [
+        1234,
+        -2345
+      ],
+      "last": [
+        3456,
+        -4567
+      ],
+      "archive_verified": true
+    },
+    "offbyone.wav": {
+      "frames": 93658,
+      "pcm_bytes": 374632,
+      "first": [
+        1234,
+        -2345
+      ],
+      "last": [
+        100,
+        -100
+      ],
+      "archive_verified": true
+    }
+  }
+}

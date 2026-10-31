@@ -1,0 +1,19 @@
+{
+  "run_id": "20261031T191700Z-music-frame-contract",
+  "started_at": "2026-10-31T19:17:00Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0042",
+  "commit_sha": null,
+  "outcome": "reviewed actual fixture; publication pending",
+  "validation": {
+    "author_actual_filters": 2,
+    "reviewer_actual_filters": 2,
+    "reviewer_synthetic_failure_probes": 3,
+    "integrator_audio_filters": 0,
+    "independent_full_pcm_archive_oracles": 2,
+    "raw_stdout_summary_equalities": 2,
+    "archive_consistency_checks": 127,
+    "archive_normal_optimized_byte_equal": true
+  },
+  "scope": "Original numeric marker asset; finite offline PCM filtering only; FMOD mapping source-only; no playback, audible quality, latency or official binary authentication"
+}

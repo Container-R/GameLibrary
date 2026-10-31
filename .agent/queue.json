@@ -991,10 +991,10 @@
       "id": "TASK-2026-0042",
       "question": "Music body PCM sample-frame interval versus inclusive loop and exclusive trim endpoints",
       "discipline": "MUSIC",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 88,
       "priority_rationale": "Existing interactive-music lifecycle article lacks authoring body/pre-tail exact frame handoff; installed offline FFmpeg allows bounded actual extraction",
-      "expected_artifact": "solutions/music/pcm-loop-frame-boundary.md",
+      "expected_artifact": "solutions/music/pcm-loop-frame-contract.md",
       "acceptance": [
         "Pinned primary endpoint/unit definitions",
         "Original PCM marker WAV and actual finite extraction",
@@ -1003,8 +1003,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:12:43.368100Z",
-      "next_action": "Freeze original frame contract and execute bounded offline FFmpeg trim; independent review before publication",
+      "last_progress_at": "2026-10-31T19:19:22.443016Z",
+      "next_action": "Publish actual finite PCM extraction and independent full-byte review; no middleware or hearing claims",
       "blockers": []
     }
   ]

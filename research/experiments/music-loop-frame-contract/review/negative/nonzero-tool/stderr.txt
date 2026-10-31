@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/nonzero-tool/run.py", line 35, in <module>
+    versions={str(p):command(p.name+'-version',[str(p),'-version']) for p in (ffmpeg,ffprobe)}
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/nonzero-tool/run.py", line 23, in command
+    need(p.returncode==0,f'{name} process failed {p.returncode}')
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/nonzero-tool/run.py", line 10, in need
+    if not ok:raise RuntimeError(why)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: false-version process failed 1

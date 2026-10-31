@@ -76,6 +76,11 @@
           "document_id": "SOL-A11Y-001",
           "question": "关键信息如何不只依赖声音？",
           "rationale": "把声音设计交付延伸到跨模态信息验收。"
+        },
+        {
+          "document_id": "SOL-MUSIC-001",
+          "question": "带前置和尾部的素材，如何准确交接音乐主体与循环端点？",
+          "rationale": "用实际离线 PCM 帧证据核对单位和端点，避免把素材边界验收误当作中间件或听感验收。"
         }
       ],
       "subject_profile_id": "ROLE-SFX-001"

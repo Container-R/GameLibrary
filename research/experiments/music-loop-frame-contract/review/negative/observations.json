@@ -1,0 +1,30 @@
+[
+  {
+    "name": "optimized",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/optimized/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  },
+  {
+    "name": "missing-tool",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/missing-tool/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  },
+  {
+    "name": "nonzero-tool",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/negative/nonzero-tool/run.py"
+    ],
+    "exit": 1,
+    "summary_exists": false
+  }
+]

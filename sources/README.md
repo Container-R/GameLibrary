@@ -65,3 +65,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [ink保存内容兼容性](../research/source-notes/ink-save-content-compatibility.md)沿固定源码区分入口返回、近似路径诊断、延迟回调及作者批准的叙事延续；能力门槛限制了实测，未用抽象模型冒充运行。
 
 [Bungie2020事故案例](../case-studies/liveops/destiny-config-admission-rollback.md)使用紧凑事实概述与原创分析，不转载整篇复盘；Kubernetes文档只提供概念对照，不充当历史技术栈证据。
+
+[音乐帧端点来源记录](../research/experiments/music-loop-frame-contract/source-receipt.json)区分固定 FFmpeg 上游文档、FMOD 2.04 API 约定和本地工具自报身份；不认证二进制供应链。

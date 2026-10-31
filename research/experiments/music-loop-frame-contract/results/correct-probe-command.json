@@ -1,0 +1,1 @@
+["/usr/bin/ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=sample_rate,channels,bits_per_sample,duration_ts,time_base", "-of", "json", "/workspace/scratch/6d9a354d4cae/research-drafts/music-loop-frame-contract/results/correct.wav"]

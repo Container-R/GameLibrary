@@ -1073,6 +1073,75 @@
       "field": [
         "fixture_sha256"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "music/author/source",
+      "document": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/music-loop-frame-contract/run.py",
+        "contract.md": "research/experiments/music-loop-frame-contract/contract.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "music/review/source",
+      "document": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/music-loop-frame-contract/run.py",
+        "contract.md": "research/experiments/music-loop-frame-contract/contract.md"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "music/compare/source_sha256",
+      "left": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "right": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "music/compare/python",
+      "left": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "right": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "music/compare/tools",
+      "left": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "right": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "tools"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "music/compare/cases",
+      "left": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "right": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "cases"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "music/compare/artifacts",
+      "left": "research/experiments/music-loop-frame-contract/results/summary.json",
+      "right": "research/experiments/music-loop-frame-contract/review/fixture/results/summary.json",
+      "field": [
+        "artifacts"
+      ]
     }
   ]
 }
