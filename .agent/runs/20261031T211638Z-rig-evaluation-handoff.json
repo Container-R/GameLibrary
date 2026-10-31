@@ -2,7 +2,7 @@
   "run_id": "20261031T211638Z-rig-evaluation-handoff",
   "started_at": "2026-10-31T21:16:38Z",
   "task_id": "TASK-2026-0056",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "new_runtime_executions": 0,
@@ -19,7 +19,13 @@
     "queue_tasks_checked": 56,
     "declared_artifact_paths_checked": 29,
     "normal_optimized_archive_checks_equal": true,
-    "publication_layout_correction": "Archived reviewed section retains exact bytes as .txt because its relative link was authored for article directory; global Markdown relocation error caught before publication"
+    "publication_layout_correction": "Archived reviewed section retains exact bytes as .txt because its relative link was authored for article directory; global Markdown relocation error caught before publication",
+    "selected_blob_hashes_verified": 16,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 57,
+    "receipt_declared_paths_checked": 32
   },
-  "local_review_completed_at": "2026-10-31T21:21:24.488030Z"
+  "local_review_completed_at": "2026-10-31T21:21:24.488030Z",
+  "commit_sha": "5882e8c4253333406d33dea8ac0d50b8fe05b334",
+  "ended_at": "2026-10-31T21:25:33.780756Z"
 }

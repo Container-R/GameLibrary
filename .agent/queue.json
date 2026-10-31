@@ -1352,7 +1352,7 @@
       "id": "TASK-2026-0056",
       "question": "Who owns rig pose read/write dependencies when content hierarchy changes constraint evaluation order?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Concrete responsibility gap in existing animation and TA coverage; primary Japanese production material and versioned Unity package semantics, not a role-page quota",
       "expected_artifact": "Existing animation article source-depth section with original dependency/acceptance handoff and independently checked source receipts",
@@ -1367,11 +1367,39 @@
         "Keep existing Python root-motion/contact model and separate Godot animation-event evidence scopes distinct; full occupation-taxonomy task remains incomplete",
         "Compact source paraphrases and selective PDF physical-page receipts; no slides or third-party material bulk"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T22:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T21:21:24.488030Z",
-      "next_action": "Publish corrected source-backed rig dependency handoff with exact evidence-scope review record",
+      "next_action": "Use explicit artifact identity and actual constraint/spatial-input controls; no runtime acceptance inferred from this source-backed worksheet",
+      "blockers": [],
+      "completed_at": "2026-10-31T21:25:33.780756Z",
+      "commit_sha": "5882e8c4253333406d33dea8ac0d50b8fe05b334"
+    },
+    {
+      "id": "TASK-2026-0057",
+      "question": "Do current article verification metadata and role crosslinks accurately scope their exact linked evidence after depth additions?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 95,
+      "priority_rationale": "Apply new exact-artifact applicability gate after a rejected unpublished scope conflation; correct only demonstrated ambiguity or stale links, not force findings",
+      "expected_artifact": "27-entry exact-metadata audit and minimal verified TA/audio wording corrections",
+      "artifact_paths": [
+        "research/audits/evidence-applicability-27",
+        "roles/technical-art/technical-artist.md",
+        "solutions/audio/music-state-transition-contract.md"
+      ],
+      "acceptance": [
+        "Retain all27 verification_method lines verbatim with exact article and evidence hashes",
+        "Distinguish current blanket statements from valid historical/subset exclusions",
+        "Only correct TA SVG-vs-FBX scope and proven existing audio role link; optional exact fake-model metadata",
+        "No runtime reruns, no evidence transfer by engine/topic label, no status upgrade or certification of all facts"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T22:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T21:25:33.780756Z",
+      "next_action": "Read exact supporting SVG/audio model/role artifacts and independently review minimal applicability corrections",
       "blockers": []
     }
   ]
