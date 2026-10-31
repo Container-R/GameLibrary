@@ -128,3 +128,17 @@
 - 生成资产回到仓库后，谁负责新的输入与接收条件？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
   - 关联理由：保留制作/导入与构建的接口边界，不把全部内容工具归到构建岗位。
 
+## 从在线服务工程出发：服务链、替身与会话交接
+路线 ID：`role-online-services-engineer`
+
+岗位起点：[在线服务工程师：把服务调用成功交接为可验证的游戏会话](roles/network/online-services-engineer.md) — `ROLE-NET-001` · `source-backed` · `NET`
+
+- 对局内预测与平台服务链是同一种验证吗？ → [客户端移动预测的权威边界与确认重放契约](solutions/programming/client-prediction-authority-boundary.md) — `SOL-NET-001` · `source-backed` · `NET`
+  - 关联理由：既有离散协议模型不证明登录、匹配或分配服务容量。
+- 压测报告对应哪个候选和配置？ → [构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `ROLE-ENGINE-001` · `source-backed` · `ENGINE`
+  - 关联理由：先定位产物身份与外部依赖，不把构建成功等同于运行验收。
+- 哪些缺口阻止本次发行承诺被接受？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：区分测试结论、未测范围和实际风险签收责任。
+- 进入运行环境还需要哪些准入与恢复条件？ → [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `CASE-LIVE-001` · `source-backed` · `LIVE`
+  - 关联理由：历史配置事故提供另一条运行边界，不是本文假设服务链的复现。
+

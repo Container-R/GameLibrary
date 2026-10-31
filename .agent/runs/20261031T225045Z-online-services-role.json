@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T225045Z-online-services-role",
+  "task_ids": [
+    "TASK-2026-0066"
+  ],
+  "started_at": "2026-10-31T22:41:17Z",
+  "ended_at": "2026-10-31T22:51:07.134069Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.bandainamcostudios.com/creator-interviews/19539",
+    "https://www.riotgames.com/en/news/scalability-and-load-testing-valorant"
+  ],
+  "evidence": "First-party Japanese role interview and historical2020 platform request-harness/mock-server account; original handoff worksheet unexecuted",
+  "new_runtime_or_load_tests": 0,
+  "review": "Main and independent source review accepted exact draft b7c1ce4a and source b3e63fb9",
+  "supervision": "Neutral22:50scheduled audit observed66fc snapshot at22:49:10; 2457blobs/346checks distinct from later Vulkan350checks; stale volatile task0008 counts removed",
+  "validation": {
+    "archive_checks_normal": 350,
+    "archive_checks_optimized": 350,
+    "archive_failures": 0,
+    "indexed_articles": 31,
+    "queue_tasks": 66,
+    "declared_paths": 57,
+    "prior_experiment_files_byte_identical": 1833
+  },
+  "next_action": "Investigate a concrete service allocation demand-observation gap from original project evidence, without invented production tests"
+}

@@ -216,8 +216,8 @@
       "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T20:18:21Z",
-      "next_action": "Continue evidence-driven role/work-area research; current 28 articles and six role profiles do not complete all occupation coverage",
+      "last_progress_at": "2026-10-31T22:51:07.134069Z",
+      "next_action": "Continue source-backed role/work-area research guided by current catalog; partial profiles do not complete the whole occupation matrix",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -1643,7 +1643,10 @@
       "priority": 90,
       "priority_rationale": "Current role coverage omits online services; prior prediction/local storage cases do not prove service-chain capacity",
       "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/network/online-services-engineer.md",
+        "research/source-notes/online-services-engineer-role.md"
+      ],
       "acceptance": [
         "Read primary BNS Japanese responsibilities and Riot2020 load-harness scope",
         "Separate simulated clients/mock game servers from real gameplay execution",
@@ -1654,8 +1657,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:40:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:49:47.549652Z",
-      "next_action": "Integrate independently accepted local role draft b7c1ce4a and source note b3e63fb9; update navigation and partial coverage truthfully",
+      "last_progress_at": "2026-10-31T22:51:07.134069Z",
+      "next_action": "Publish independently reviewed role and original unexecuted handoff worksheet; retain role-matrix incompleteness",
       "blockers": []
     }
   ]

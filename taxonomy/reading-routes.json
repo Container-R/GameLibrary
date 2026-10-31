@@ -258,6 +258,34 @@
           "rationale": "保留制作/导入与构建的接口边界，不把全部内容工具归到构建岗位。"
         }
       ]
+    },
+    {
+      "id": "role-online-services-engineer",
+      "title": "从在线服务工程出发：服务链、替身与会话交接",
+      "kind": "role",
+      "subject_profile_id": "ROLE-NET-001",
+      "entries": [
+        {
+          "document_id": "SOL-NET-001",
+          "question": "对局内预测与平台服务链是同一种验证吗？",
+          "rationale": "既有离散协议模型不证明登录、匹配或分配服务容量。"
+        },
+        {
+          "document_id": "ROLE-ENGINE-001",
+          "question": "压测报告对应哪个候选和配置？",
+          "rationale": "先定位产物身份与外部依赖，不把构建成功等同于运行验收。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "哪些缺口阻止本次发行承诺被接受？",
+          "rationale": "区分测试结论、未测范围和实际风险签收责任。"
+        },
+        {
+          "document_id": "CASE-LIVE-001",
+          "question": "进入运行环境还需要哪些准入与恢复条件？",
+          "rationale": "历史配置事故提供另一条运行边界，不是本文假设服务链的复现。"
+        }
+      ]
     }
   ]
 }
