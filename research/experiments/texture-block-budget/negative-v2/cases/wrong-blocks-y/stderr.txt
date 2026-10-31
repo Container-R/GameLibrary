@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-blocks-y/run.py", line 65, in <module>
+    require((row["blocks_x"], row["blocks_y"]) ==
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-blocks-y/run.py", line 24, in require
+    raise RuntimeError(message)
+RuntimeError: block axes mismatch (1, 1, 'BC1')

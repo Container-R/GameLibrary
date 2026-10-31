@@ -898,6 +898,66 @@
       "field": [
         "metadata"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "texture/author/source",
+      "document": "research/experiments/texture-block-budget/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "model.py": "research/experiments/texture-block-budget/model.py",
+        "run.py": "research/experiments/texture-block-budget/run.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "texture/review/source",
+      "document": "research/experiments/texture-block-budget/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "model.py": "research/experiments/texture-block-budget/model.py",
+        "run.py": "research/experiments/texture-block-budget/run.py"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "texture/compare/source_sha256",
+      "left": "research/experiments/texture-block-budget/results/summary.json",
+      "right": "research/experiments/texture-block-budget/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "texture/compare/python",
+      "left": "research/experiments/texture-block-budget/results/summary.json",
+      "right": "research/experiments/texture-block-budget/review/results/summary.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "texture/compare/pillow",
+      "left": "research/experiments/texture-block-budget/results/summary.json",
+      "right": "research/experiments/texture-block-budget/review/results/summary.json",
+      "field": [
+        "pillow"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "texture/compare/runtime_files",
+      "left": "research/experiments/texture-block-budget/results/summary.json",
+      "right": "research/experiments/texture-block-budget/review/results/summary.json",
+      "field": [
+        "runtime_files"
+      ]
     }
   ]
 }

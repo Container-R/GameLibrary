@@ -1,0 +1,2 @@
+/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-v2/run.py:103: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colors=set(rgb.getdata())

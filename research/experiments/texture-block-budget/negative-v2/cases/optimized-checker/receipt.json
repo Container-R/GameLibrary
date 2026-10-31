@@ -1,0 +1,15 @@
+{
+  "name": "optimized-checker",
+  "kind": "checker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-O",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/optimized-checker/check_raw.py",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/optimized-checker/results"
+  ],
+  "exit": 1,
+  "stdout_bytes": 0,
+  "stderr_bytes": 30,
+  "prior_summary_retained": true,
+  "summary_exists": true
+}

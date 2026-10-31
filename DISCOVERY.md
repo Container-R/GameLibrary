@@ -27,6 +27,8 @@
   - 关联理由：区分实例、模拟和像素成本，保留未运行UE的证据限制。
 - 导入正确为何仍会脚滑？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
   - 关联理由：资产正确不自动证明运行时运动责任正确。
+- 纹理预算究竟量的是哪一层？ → [BC 压缩纹理预算：逐 mip 计算 payload，不把 DDS 文件长度当作显存](solutions/rendering/block-compressed-mip-budget.md) — `SOL-GFX-001` · `source-backed` · `GFX`
+  - 关联理由：逐mip核算压缩payload，分开文件、上传、分配和驻留证据。
 
 ## 从交互音频出发
 路线 ID：`role-interactive-audio`

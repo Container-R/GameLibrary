@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/model-import-failure/run.py", line 11, in <module>
+    import model
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/model-import-failure/model.py", line 1, in <module>
+    raise RuntimeError('synthetic model import failure')
+RuntimeError: synthetic model import failure

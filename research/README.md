@@ -48,7 +48,7 @@ python3 scripts/evidence/verify.py .
 python3 scripts/evidence/test_verify.py
 ```
 
-[工具说明与显式注册表](../scripts/evidence/README.md)覆盖当前九个运行夹具（六个 Godot、一个 ICU、两个 SQLite）的103项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
+[工具说明与显式注册表](../scripts/evidence/README.md)覆盖九个运行夹具（六个 Godot、一个 ICU、两个 SQLite）阶段的103项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
 
 9项工具单元测试与游戏模型的86项测试是不同范围，103项文件/记录检查也不是103项运行行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
 
@@ -69,3 +69,5 @@ python3 scripts/evidence/test_verify.py
 [ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。
 
 [SQLite 提交与应答](experiments/sqlite-ledger-boundary/README.md)保存直接退出、重新读取和同键重试；[双写者握手](experiments/sqlite-writer-contention/README.md)仅补一个 BEGIN BUSY 序列。不是断电持久性、生产重试策略或远程授权保证。
+
+[BC纹理逐mip预算](experiments/texture-block-budget/README.md)增加有限CPU布局与逐级包装解码；当前十夹具109项档案一致性检查，不是109项运行测试。

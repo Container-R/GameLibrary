@@ -1,0 +1,167 @@
+{
+  "source_sha256": {
+    "model.py": "cea6af8ac132485f7492ee60ab1019daaf9f690257bafc62d989fcfdc5697544",
+    "run.py": "1ca81455b9ef0605a01b7dbfff15454a3294c16bfe335e5f964919ba251b7cef"
+  },
+  "checker_sha256": "f2804388a33d1891d9d4cf2f9a5731a928305f3136d90b9bcfa252e0739078a8",
+  "cases": [
+    {
+      "name": "optimized-prior-pass",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/optimized-prior-pass/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 30,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "dependency-import-failure",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/dependency-import-failure/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 447,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "model-import-failure",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/model-import-failure/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 447,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "wrong-numeric-model",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-numeric-model/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 467,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "wrong-payload-offset",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-payload-offset/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 472,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "wrong-blocks-x",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-blocks-x/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 444,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "wrong-blocks-y",
+      "kind": "runner",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-blocks-y/run.py"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 444,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "missing-artifact",
+      "kind": "checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/missing-artifact/check_raw.py",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/missing-artifact/results"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 1271,
+      "prior_summary_retained": true,
+      "summary_exists": true
+    },
+    {
+      "name": "malformed-summary",
+      "kind": "checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/malformed-summary/check_raw.py",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/malformed-summary/results"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 1062,
+      "prior_summary_retained": true,
+      "summary_exists": true
+    },
+    {
+      "name": "missing-summary",
+      "kind": "checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/missing-summary/check_raw.py",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/missing-summary/results"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 1011,
+      "prior_summary_retained": false,
+      "summary_exists": false
+    },
+    {
+      "name": "optimized-checker",
+      "kind": "checker",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/optimized-checker/check_raw.py",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/optimized-checker/results"
+      ],
+      "exit": 1,
+      "stdout_bytes": 0,
+      "stderr_bytes": 30,
+      "prior_summary_retained": true,
+      "summary_exists": true
+    },
+    {
+      "name": "wrong-payload-offset-independent-check",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-payload-offset/check_raw.py",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-payload-offset/results"
+      ],
+      "exit": 1
+    }
+  ]
+}

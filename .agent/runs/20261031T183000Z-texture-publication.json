@@ -1,0 +1,26 @@
+{
+  "run_id": "20261031T183000Z-texture-publication",
+  "started_at": "2026-10-31T18:31:18.088979Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0037",
+  "commit_sha": null,
+  "outcome": "prepared; publication pending",
+  "validation": {
+    "numeric_cases": 14,
+    "invalid_input_guards": 6,
+    "author_wrapped_cpu_decodes": 6,
+    "reviewer_same_decoder_checks": 6,
+    "gpu_runs": 0,
+    "new_runtime_rerun_during_publication": true,
+    "archive_consistency_expected": 109,
+    "runner_correction": "import cleanup plus independent offset and block-axis validation",
+    "v2_author_wrapped_cpu_decodes": 6,
+    "v2_reviewer_runner_decodes": 6,
+    "v2_reviewer_oracle_decodes": 6,
+    "v1_synthetic_child_invocations": 10,
+    "v2_synthetic_child_invocations": 12,
+    "v2_negative_decodes": 0,
+    "separate_current_stdout_summary_comparisons": 2
+  },
+  "scope": "Original finite BC payload arithmetic and legacy DDS fixture; no BC7 decoding, GPU allocation, residency or performance claims"
+}

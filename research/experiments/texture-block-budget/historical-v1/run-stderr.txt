@@ -1,0 +1,2 @@
+/workspace/scratch/6d9a354d4cae/research-drafts/texture-block-budget/run.py:93: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  colors=set(rgb.getdata())

@@ -25,7 +25,7 @@ python3 test_verify.py
 
 ## 实际结果与测试
 
-2026-10-31：初次五夹具65项报告保留于 `archive-report-initial65.json`。新增动画夹具的17项显式检查后，当时六夹具82项全部通过，报告保留为 `archive-report-82.json`。新增 ICU 的13项显式检查后，当时七夹具95项全部通过，报告保留为 `archive-report-95.json`。新增 SQLite 两个 source manifest 与两组 metadata/source 比较后，当时八夹具99项报告保留为 `archive-report-99.json`。写者竞争新增两组 source manifest 与两组 source/metadata 比较后，当前九夹具103项全部通过，报告为 `archive-report.json`。上述增量均为扩展档案检查范围，不是对应数量的新增引擎或数据库行为测试。9项隔离单元测试全部通过，覆盖文件损坏、缺失、路径逃逸、外部符号链接、坏JSON/重复键/非有限数值、manifest漏项、日志缺失/重复/类型差异与空/重复注册项。只向 TemporaryDirectory 写单元测试数据，自动清理。
+2026-10-31：初次五夹具65项报告保留于 `archive-report-initial65.json`。新增动画夹具的17项显式检查后，当时六夹具82项全部通过，报告保留为 `archive-report-82.json`。新增 ICU 的13项显式检查后，当时七夹具95项全部通过，报告保留为 `archive-report-95.json`。新增 SQLite 两个 source manifest 与两组 metadata/source 比较后，当时八夹具99项报告保留为 `archive-report-99.json`。写者竞争新增两组 source manifest 与两组 source/metadata 比较后，当时九夹具103项全部通过，历史报告为 `archive-report-103.json`。上述增量均为扩展档案检查范围，不是对应数量的新增引擎或数据库行为测试。9项隔离单元测试全部通过，覆盖文件损坏、缺失、路径逃逸、外部符号链接、坏JSON/重复键/非有限数值、manifest漏项、日志缺失/重复/类型差异与空/重复注册项。只向 TemporaryDirectory 写单元测试数据，自动清理。
 
 一致性既不证明执行真实发生，也不证明语义正确、测试完整、来源可信或防恶意篡改：攻击者同时改源与声明仍可一致。哈希不等于签名。没有下载执行任何归档代码；只执行本原创 verifier 与隔离测试。代码使用显式错误检查，不依赖 assert，不受 `-O` 影响。运行日志和工具文件哈希列于 `SHA256SUMS`。
 
@@ -40,3 +40,7 @@ ICU 当前 registry 对应加固后的 runner；historical-runner-v1 与 runner-
 SQLite 的终止进程有意没有 RESULT_JSON，不纳入现有单载荷 log 类型；其 CONFIG/CHECKPOINT/RESULT_JSON、退出码、持久结果由独立 raw checker 验收。四个 base64 数据库的解码字节摘要另核对，不在这103项内；不能声称本注册表覆盖了全部 SQLite 原始证据。
 
 写者竞争的 EVENT/CONFIG 与父协议先后由独立 raw checker 验证，base64 由其另行解码核对；这里只登记 source/metadata 四项，不冒充协议行为检查。
+
+纹理夹具新增两组 source manifest 与四组版本/来源字段比较，当前十夹具109项检查；103项历史报告保留于 `archive-report-103.json`。这6项不验证解码器身份、像素、DDS语义或GPU行为；独立原始制品checker另存于纹理review目录。
+
+纹理stdout使用 `RESULT_JSON `（空格），而当前log规则只接受 `RESULT_JSON=`；未把它注册为兼容日志。集成时另行精确解析一条空格前缀记录并与summary比较，不修改既有verifier或计入109项。

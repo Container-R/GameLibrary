@@ -1,0 +1,14 @@
+{
+  "name": "missing-artifact",
+  "kind": "checker",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/missing-artifact/check_raw.py",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/missing-artifact/results"
+  ],
+  "exit": 1,
+  "stdout_bytes": 0,
+  "stderr_bytes": 1244,
+  "prior_summary_retained": true,
+  "summary_exists": true
+}

@@ -873,7 +873,7 @@
     {
       "id": "TASK-2026-0037",
       "question": "Compressed texture block and mip-tail payload boundary",
-      "discipline": "TA",
+      "discipline": "GFX",
       "status": "reviewing",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
@@ -886,10 +886,10 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
+      "last_progress_at": "2026-10-31T18:36:37.925799Z",
+      "next_action": "Publish reviewed texture article and verify remote tree; CPU-only evidence",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
+      "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z"
     }
   ]
 }

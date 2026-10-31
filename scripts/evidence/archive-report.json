@@ -412,8 +412,32 @@
     {
       "id": "sqlite-contention/compare/metadata",
       "status": "pass"
+    },
+    {
+      "id": "texture/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "texture/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/python",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/pillow",
+      "status": "pass"
+    },
+    {
+      "id": "texture/compare/runtime_files",
+      "status": "pass"
     }
   ],
-  "passed": 103,
+  "passed": 109,
   "failed": 0
 }

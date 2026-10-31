@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-numeric-model/run.py", line 60, in <module>
+    require([(r['width'],r['height'],r['size']) for r in rows] ==
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-numeric-model/run.py", line 24, in require
+    raise RuntimeError(message)
+RuntimeError: numeric mismatch (1, 1, 'BC7')

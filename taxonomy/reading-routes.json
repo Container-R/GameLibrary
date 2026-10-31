@@ -48,6 +48,11 @@
           "document_id": "SOL-ANIM-001",
           "question": "导入正确为何仍会脚滑？",
           "rationale": "资产正确不自动证明运行时运动责任正确。"
+        },
+        {
+          "document_id": "SOL-GFX-001",
+          "question": "纹理预算究竟量的是哪一层？",
+          "rationale": "逐mip核算压缩payload，分开文件、上传、分配和驻留证据。"
         }
       ],
       "subject_profile_id": "ROLE-TA-001"
