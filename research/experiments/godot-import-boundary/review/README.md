@@ -33,3 +33,7 @@ Accessed2026-10-31:
 - [ResourceImporterTexture.svg/scale](https://docs.godotengine.org/en/4.6/classes/class_resourceimportertexture.html#class-resourceimportertexture-property-svg-scale): scale1.0 uses original SVG design size; higher values increase imported image size.
 
 These support the scoped interpretation; independently observed sizes remain execution evidence rather than borrowed documentation assertions.
+
+## Provenance clarification — 2026-10-31
+
+The version string is the local executable’s self-report. Matching fixture-source and executable hashes establish consistency for these runs, not official release authentication or exact engine-source correspondence. Original observations and raw logs remain unchanged. See the [shared evidence note](../../../source-notes/godot-runtime-provenance.md).

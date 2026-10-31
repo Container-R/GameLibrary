@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "selection": "Explicit current summaries; excludes author-run-summary.json and initial-map-only-predicate snapshots",
+  "selection": "Explicit current Godot summaries; excludes historical fixed-step author-run-summary, navigation initial-map-only-predicate, and animation historical-initial",
   "checks": [
     {
       "kind": "manifest",
@@ -585,6 +585,134 @@
       "id": "navigation-sync/review/diagnostic-result",
       "log": "research/experiments/godot-navigation-sync/review/fixture/results/default-region-readiness/stdout.log",
       "parsed": "research/experiments/godot-navigation-sync/review/fixture/results/default-region-readiness/result.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "animation-events/author/source",
+      "document": "research/experiments/godot-animation-events/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/experiments/godot-animation-events/main.gd",
+        "main.tscn": "research/experiments/godot-animation-events/main.tscn",
+        "project.godot": "research/experiments/godot-animation-events/project.godot",
+        "run.py": "research/experiments/godot-animation-events/run.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/seek_cross",
+      "log": "research/experiments/godot-animation-events/results/seek_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/seek_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/advance_cross",
+      "log": "research/experiments/godot-animation-events/results/advance_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/advance_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/seek_exact",
+      "log": "research/experiments/godot-animation-events/results/seek_exact.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/seek_exact.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/seek_exact_update_only",
+      "log": "research/experiments/godot-animation-events/results/seek_exact_update_only.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/seek_exact_update_only.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/seek_two_cross",
+      "log": "research/experiments/godot-animation-events/results/seek_two_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/seek_two_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/author/advance_two_cross",
+      "log": "research/experiments/godot-animation-events/results/advance_two_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/results/advance_two_cross.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "animation-events/review/source",
+      "document": "research/experiments/godot-animation-events/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/experiments/godot-animation-events/main.gd",
+        "main.tscn": "research/experiments/godot-animation-events/main.tscn",
+        "project.godot": "research/experiments/godot-animation-events/project.godot",
+        "run.py": "research/experiments/godot-animation-events/run.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/seek_cross",
+      "log": "research/experiments/godot-animation-events/review/results/seek_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/seek_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/advance_cross",
+      "log": "research/experiments/godot-animation-events/review/results/advance_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/advance_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/seek_exact",
+      "log": "research/experiments/godot-animation-events/review/results/seek_exact.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/seek_exact.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/seek_exact_update_only",
+      "log": "research/experiments/godot-animation-events/review/results/seek_exact_update_only.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/seek_exact_update_only.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/seek_two_cross",
+      "log": "research/experiments/godot-animation-events/review/results/seek_two_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/seek_two_cross.json"
+    },
+    {
+      "kind": "log",
+      "id": "animation-events/review/advance_two_cross",
+      "log": "research/experiments/godot-animation-events/review/results/advance_two_cross.stdout.txt",
+      "parsed": "research/experiments/godot-animation-events/review/results/advance_two_cross.json"
+    },
+    {
+      "kind": "equal",
+      "id": "animation-events/compare/source_sha256",
+      "left": "research/experiments/godot-animation-events/results/summary.json",
+      "right": "research/experiments/godot-animation-events/review/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "animation-events/compare/binary_sha256",
+      "left": "research/experiments/godot-animation-events/results/summary.json",
+      "right": "research/experiments/godot-animation-events/review/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ],
+      "sha256": true
+    },
+    {
+      "kind": "equal",
+      "id": "animation-events/compare/version",
+      "left": "research/experiments/godot-animation-events/results/summary.json",
+      "right": "research/experiments/godot-animation-events/review/results/summary.json",
+      "field": [
+        "version"
+      ]
     }
   ]
 }

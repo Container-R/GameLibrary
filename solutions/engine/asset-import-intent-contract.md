@@ -8,7 +8,7 @@ related_disciplines: [TA, QA, PROD]
 related_roles: [tools-programmer, technical-artist, build-engineer, qa-engineer]
 related_topics: [asset-pipeline, import-settings, source-control, clean-checkout, resource-identity]
 engines: [Godot]
-versions: ["Godot 4.6 官方文档", "Godot 4.6.3.stable.official.7d41c59c4 实际导入器"]
+versions: ["Godot 4.6 官方文档", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-10-31
 verification_method: 官方来源核对；原创 SVG 的实际无头导入与资源加载对照；未验证 GPU、导出包或跨版本缓存复现
@@ -22,6 +22,8 @@ sources:
 ---
 
 # 干净检出后的资产导入：保留导入意图，而不是依赖作者缓存
+
+> **运行身份说明（2026-10-31）：** 下述 Godot 版本为已安装程序自报，不代表已认证官方发行包或精确源码身份。[共享取证与缺口](../../research/source-notes/godot-runtime-provenance.md)保留原始版本、文件摘要及公共标签查询差异；各次有限行为观察仍按实际归档字段解释。
 
 ## 工程故障：场景能打开，交付仍然错误
 
@@ -56,7 +58,7 @@ sources:
 
 两边资源均为 `CompressedTexture2D`。此次还观察到 **UID 相同而尺寸不同**：因此 UID 一致也不能替代导入语义检查。本结论不依赖 UID 必然变化；路径/项目名、资源格式与工具版本都会影响相关行为，不能从某次观察推导通用生成规则。[S4]
 
-本例隔离的是参数丢失，场景采用源路径引用，没有故意制造 UID 失效。错误案例“成功运行”是要保留的反例，而不是将测试改成只检查返回码为零。具体版本、源码/二进制哈希、导入前清单、生成的 sidecar、完整命令、日志和加载结果均归档。
+本例隔离的是参数丢失，场景采用源路径引用，没有故意制造 UID 失效。错误案例“成功运行”是要保留的反例，而不是将测试改成只检查返回码为零。具体版本、原创夹具源文件/被测可执行文件摘要、导入前清单、生成的 sidecar、完整命令、日志和加载结果均归档。
 
 ## 3. 交接和 CI 应验收语义，不只验收文件存在
 

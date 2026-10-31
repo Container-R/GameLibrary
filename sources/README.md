@@ -37,3 +37,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [资产导入意图契约](../solutions/engine/asset-import-intent-contract.md)与[原始夹具](../research/experiments/godot-import-boundary/README.md)保存Godot4.6官方来源、4.6.3工具版本及独立复跑证据。
 
 [导航就绪边界](../solutions/ai/navigation-readiness-and-partial-path.md)记录Godot4.6 Experimental API来源、4.6.3实际查询及默认region诊断。[TA岗位](../roles/technical-art/technical-artist.md)另加入万代南梦宫工作室日语职责说明，属于工作室自述而非事故/效率量化证据。
+
+[Godot 运行来源边界](../research/source-notes/godot-runtime-provenance.md)区分公开源码、程序自报版本与文件身份；[调用新鲜度](../research/source-notes/runner-invocation-freshness.md)说明历史 PASS 不等于最近调用成功。
+
+[动画方法轨 seek 与 advance](../research/experiments/godot-animation-events/README.md)保留初始错误假设与六例实际回调、独立复跑和明确构建身份限制。

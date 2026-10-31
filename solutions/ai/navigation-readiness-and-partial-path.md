@@ -8,7 +8,7 @@ related_disciplines: [PROG, ENGINE, QA]
 related_roles: [ai-programmer, gameplay-programmer, engine-programmer, qa-engineer]
 related_topics: [navigation, synchronization, partial-path, negative-cache, initialization]
 engines: [Godot]
-versions: ["Godot 4.6 文档：NavigationServer2D 为 Experimental", "Godot 4.6.3.stable.official.7d41c59c4 实际运行"]
+versions: ["Godot 4.6 文档：NavigationServer2D 为 Experimental", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-10-31
 verification_method: 官方同步与API资料核对；原创CPU无头导航图实际查询及默认异步region诊断；未测试角色移动或持续并发更新
@@ -20,6 +20,8 @@ sources:
 ---
 
 # 导航查询的就绪边界：空路径不等于不可达，非空路径不等于到达
+
+> **运行身份说明（2026-10-31）：** 下述 Godot 版本为已安装程序自报，不代表已认证官方发行包或精确源码身份。[共享取证与缺口](../../research/source-notes/godot-runtime-provenance.md)保留原始版本、文件摘要及公共标签查询差异；各次有限行为观察仍按实际归档字段解释。
 
 ## 一个常见的错误决策链
 

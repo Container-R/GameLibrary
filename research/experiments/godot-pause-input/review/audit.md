@@ -31,3 +31,7 @@ Actual output: `verify-output.txt`. No dependency on that original sibling layou
 ## Confidence limits
 
 Exact synthetic input receiver/event-list oracles and queue results passed in the independent engine runs. The naive failure is deliberately retained **application-owned queue persistence**, not an engine input-buffer bug. Dual-boundary queue clearing prevents old commands reaching the epoch filter; rejection of separately delayed stale-epoch commands remains untested. The fixture does not show that a late physical event tagged with the new epoch can be detected. Artificial `--fixed-fps` schedules, headless callbacks and manually injected InputEventAction pairs establish neither physical device delivery nor real-time rendering performance. Signals may still execute on paused nodes; this is not a global business-state write barrier. No material blocker remains for these explicitly scoped claims.
+
+## Provenance clarification — 2026-10-31
+
+The version string is the local executable’s self-report. Matching fixture-source and executable hashes establish consistency for these runs, not official release authentication or exact engine-source correspondence. Original observations and raw logs remain unchanged. See the [shared evidence note](../../../source-notes/godot-runtime-provenance.md).

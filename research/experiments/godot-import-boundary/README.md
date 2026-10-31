@@ -1,5 +1,7 @@
 # 干净检出：可重建的是缓存，不是丢失的导入配置
 
+> **身份边界：** 本文版本字符串是本地程序自报；`official` 字样及同机构建复跑不认证官方来源。源文件摘要指原创夹具，不是引擎构建源码。[统一取证说明](../../source-notes/godot-runtime-provenance.md)记录公开标签与自报提交未对应的问题。
+
 本夹具针对Godot4.6.3资产交接的一个具体失败模式：把资产旁的`.import`误当成`.godot/`缓存一起忽略，可能仍能加载场景，却改变导入纹理的语义。代码与16×8矩形SVG均原创，无字体、外链、插件、下载或第三方资产。
 
 ## 运行及输入边界
@@ -8,7 +10,7 @@
 python run.py
 ```
 
-运行器使用已安装的Godot编辑器构建，先检查`--import`等CLI选项。实际版本、二进制SHA-256、平台、Python版本、种子文件/运行器hash见`results/summary.json`。每个引擎调用的完整命令与隔离HOME/XDG目录记录在`*-command.json`，原始stdout/stderr记录在同名`.log`。禁止-O；每轮先移除旧成功summary，超时、非零退出、stderr、ERROR或判据失败均不能生成成功summary。
+运行器使用已安装的Godot编辑器构建，先检查`--import`等CLI选项。实际版本、二进制SHA-256、平台、Python版本、种子文件/运行器hash见`results/summary.json`。每个引擎调用的完整命令与隔离HOME/XDG目录记录在`*-command.json`，原始stdout/stderr记录在同名`.log`。禁止-O；通过优化模式拒绝后，正常路径先移除旧成功summary，超时、非零退出、stderr、ERROR或判据失败均不能生成成功summary。
 
 `seed/`是原创最小输入：SVG、项目、场景和探测脚本。程序在临时工作目录生成元数据，不把本机旧`.godot/`带入测试，也不改动种子。`results/configured-inputs/`保存经真实引擎导入后冻结的完整配置输入，包括`asset.svg.import`和`probe.gd.uid`，可核对交接清单；它不是待复制的`.godot/`缓存。
 
@@ -74,4 +76,6 @@ UID作为单独观察：加载时读取实际sidecar UID，检查ResourceUID登�
 
 ## 独立复核
 
-[独立审查](review/README.md)在相同二进制和机器复制冻结输入，完整重跑基线及两个案例：4次实际导入、3次实际场景/资源探测。五份源码及引擎哈希一致，唯一初始文件差异和尺寸结果复现。复核输出单独保存在review/fixture/results，不覆盖作者结果；重复运行不扩大案例种类或平台范围。
+[独立审查](review/README.md)在相同二进制和机器复制冻结输入，完整重跑基线及两个案例：4次实际导入、3次实际场景/资源探测。五份原创夹具源文件及被测可执行文件摘要一致，唯一初始文件差异和尺寸结果复现。复核输出单独保存在review/fixture/results，不覆盖作者结果；重复运行不扩大案例种类或平台范围。
+
+**调用新鲜度：** [历史摘要与本次退出状态必须分开](../../source-notes/runner-invocation-freshness.md)。早期拒绝可能保留旧成功文件，不能只读 PASS 判断最新调用。

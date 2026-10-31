@@ -27,3 +27,7 @@ Official Godot4.6 docs accessed2026-10-31:
 - [Viewport.gui_get_focus_owner](https://docs.godotengine.org/en/4.6/classes/class_viewport.html#class-viewport-method-gui-get-focus-owner): returns actual currently focused Control or null. Supports distinguishing actual owner from requested target.
 
 Independent execution used `4.6.3.stable.official.7d41c59c4`, matching author version and binary digest. The runner records rather than pins arbitrary future binaries; this review attests only the captured binary and source hashes.
+
+## Provenance clarification — 2026-10-31
+
+The version string is the local executable’s self-report. Matching fixture-source and executable hashes establish consistency for these runs, not official release authentication or exact engine-source correspondence. Original observations and raw logs remain unchanged. See the [shared evidence note](../../../source-notes/godot-runtime-provenance.md).

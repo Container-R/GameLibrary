@@ -7,10 +7,12 @@ primary_discipline: PROG
 related_roles: [gameplay-programmer, animation-programmer, engine-programmer, network-programmer]
 related_topics: [fixed-timestep, input-buffering, deterministic-simulation, presentation-adapter]
 engines: [engine-agnostic, Unity, Godot]
-versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 实际夹具"]
+versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 updated_at: 2026-10-31
-verification_method: 原始文档核对、原创模型与Godot4.6.3实际无头回调夹具；未运行Unity或跨平台确定性测试
+verification_method: 原始文档核对、原创模型与本地Godot实际无头回调夹具；未运行Unity或跨平台确定性测试
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_animationplayer.html
+  - https://docs.godotengine.org/en/4.6/classes/class_animationmixer.html
   - https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html
   - https://docs.godotengine.org/en/4.6/tutorials/editor/command_line_tutorial.html
   - https://gafferongames.com/post/fix_your_timestep/
@@ -23,6 +25,8 @@ sources:
 ---
 
 # 用固定 Tick 划清战斗模拟与引擎表现边界
+
+> **运行身份说明（2026-10-31）：** 下述 Godot 版本为已安装程序自报，不代表已认证官方发行包或精确源码身份。[共享取证与缺口](../../research/source-notes/godot-runtime-provenance.md)保留原始版本、文件摘要及公共标签查询差异；各次有限行为观察仍按实际归档字段解释。
 
 ## 问题与适用范围
 
@@ -119,3 +123,13 @@ record(backlog=A, simulatedSteps=steps)
 工程上应明确攻击、移动持有态及菜单输入各自的暂停策略，并通过单一暂停入口协调输入上下文、队列和代次；暂停节点仍可能接收信号，不是全局业务写屏障。来源：[Godot4.6暂停模式](https://docs.godotengine.org/en/4.6/tutorials/scripting/pausing_games.html)、[Input API](https://docs.godotengine.org/en/4.6/classes/class_input.html)、[InputEventAction](https://docs.godotengine.org/en/4.6/classes/class_inputeventaction.html)，访问2026-10-31。
 
 [夹具、来源与原始证据](../../research/experiments/godot-pause-input/README.md)。
+
+## 表现跳转不是规则事件重放：实际方法轨观察
+
+[六进程动画夹具](../../research/experiments/godot-animation-events/README.md)使用本地已安装、自报 4.6.3 的同一字节身份程序，显式 MANUAL 推进与 IMMEDIATE 方法模式；方法只记录标签，没有真实伤害或物理。两个键位于 0.25（A）与 0.6（B）。`seek(0.75, true, false)` 再 `seek(1.0, true, false)` 得到 **B,B**；从相同初态 `advance(0.75)` 再 `advance(0.25)` 得到 **A,B**。两者属性采样与播放位置相同，完成信号却分别为 0 和 1。
+
+这纠正了初始“seek 跨越方法键就不会调用方法”的过强推断。失败判据、原始输出、修正后的四例及新增两标签例全部保留；不是把错误预期悄悄改成通过。另两例说明在该配置下，恰落键位的 seek 可以调用方法，而 `update_only=true` 抑制该方法但仍更新属性。
+
+因此，用表现位置追赶模拟时间不能证明规则事件已按区间完整交付或恰好一次；是否补算、跳过、去重，仍需应用合同。不能反向断言动画事件永远不应参与玩法，更不能把 IMMEDIATE 当作生产默认建议。本实验不覆盖 DEFERRED、循环、倒播、混合、AnimationTree、其他构建或引擎。
+
+官方固定提交的实现只作语义参照，与本地二进制的精确来源对应尚未建立；详见[身份取证](../../research/source-notes/godot-runtime-provenance.md)。[独立复核](../../research/experiments/godot-animation-events/review/README.md)使用原始 CONFIG/TRACE/SIGNAL 重新验收，不把同摘要复跑变成发行真实性认证。

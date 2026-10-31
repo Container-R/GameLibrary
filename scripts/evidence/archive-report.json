@@ -260,8 +260,76 @@
     {
       "id": "navigation-sync/review/diagnostic-result",
       "status": "pass"
+    },
+    {
+      "id": "animation-events/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/advance_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_exact",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_exact_update_only",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/seek_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/author/advance_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/source",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/advance_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_exact",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_exact_update_only",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/seek_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/review/advance_two_cross",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/binary_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "animation-events/compare/version",
+      "status": "pass"
     }
   ],
-  "passed": 65,
+  "passed": 82,
   "failed": 0
 }

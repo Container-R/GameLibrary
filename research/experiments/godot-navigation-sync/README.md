@@ -1,5 +1,7 @@
 # 启动寻路：空路径不是不可达证明，非空路径也不是到达证明
 
+> **身份边界：** 本文版本字符串是本地程序自报；`official` 字样及同机构建复跑不认证官方来源。源文件摘要指原创夹具，不是引擎构建源码。[统一取证说明](../../source-notes/godot-runtime-provenance.md)记录公开标签与自报提交未对应的问题。
+
 原创CPU/headless Godot4.6.3夹具。目标是给AI导航决策建立明确的三种状态：导航数据尚未就绪、已完成查询且到达目标、已完成查询但只得到部分路径。没有角色移动、RVO、碰撞、渲染或资产烘焙。
 
 ## 运行与证据
@@ -8,9 +10,9 @@
 python run.py
 ```
 
-运行器分别启动naive和guarded两个真实引擎进程，独立Python判据读取实际`NavigationServer2D.map_get_path`结果。版本、平台、Python版本、引擎/四份源文件SHA-256记录在`results/summary.json`；每次调用命令与隔离HOME/XDG记录在`*-command.json`。stdout/stderr分开完整归档。
+运行器分别启动naive和guarded两个真实引擎进程，独立Python判据读取实际`NavigationServer2D.map_get_path`结果。版本、平台、Python版本、被测可执行文件/四份夹具源文件SHA-256记录在`results/summary.json`；每次调用命令与隔离HOME/XDG记录在`*-command.json`。stdout/stderr分开完整归档。
 
-实测2026-10-31，Godot`4.6.3.stable.official.7d41c59c4`，Linux x86_64，Python3.12.14。禁止-O；已保存实际拒绝记录。每次先删除旧成功summary，超时、非零退出、stderr、ERROR或oracle不匹配均失败。**本安装版本的过早查询没有产生stderr诊断**；不虚构预期错误，也没有任何吞错白名单。
+实测2026-10-31，Godot`4.6.3.stable.official.7d41c59c4`，Linux x86_64，Python3.12.14。禁止-O；已保存实际拒绝记录。通过优化模式拒绝后，正常路径先删除旧成功summary，超时、非零退出、stderr、ERROR或oracle不匹配均失败。**本安装版本的过早查询没有产生stderr诊断**；不虚构预期错误，也没有任何吞错白名单。
 
 ## 一个地图、两个区域、三个查询
 
@@ -89,3 +91,5 @@ naive进程中设置async=false/margin0.1之后立即读取getter，仍观察到
 ## 独立复核
 
 [独立审查](review/README.md)在相同机器和二进制复制冻结源文件，重跑主对照两进程及默认region诊断一进程；四份主源文件、诊断runner和二进制哈希一致。原始复核输出在review/fixture/results，作者结果未被覆盖。两组重复不是六种场景，更不是跨平台同步协议证明。
+
+**调用新鲜度：** [历史摘要与本次退出状态必须分开](../../source-notes/runner-invocation-freshness.md)。早期拒绝可能保留旧成功文件，不能只读 PASS 判断最新调用。

@@ -1,6 +1,8 @@
 # Godot4.6.3：同路径的新控件不是原 opener
 
-这是现有模态焦点恢复方案的窄范围引擎实验，不是 Unity UI Toolkit 集成验证或新的完整模态实现。2026-10-31，实际 Godot `4.6.3.stable.official.7d41c59c4`、Linux x86_64、Python3.12.14；二进制和四份源码 SHA-256 在 `results/summary.json`。
+> **身份边界：** 本文版本字符串是本地程序自报；`official` 字样及同机构建复跑不认证官方来源。源文件摘要指原创夹具，不是引擎构建源码。[统一取证说明](../../source-notes/godot-runtime-provenance.md)记录公开标签与自报提交未对应的问题。
+
+这是现有模态焦点恢复方案的窄范围引擎实验，不是 Unity UI Toolkit 集成验证或新的完整模态实现。2026-10-31，实际 Godot `4.6.3.stable.official.7d41c59c4`、Linux x86_64、Python3.12.14；被测可执行文件和四份原创夹具源文件 SHA-256 在 `results/summary.json`。
 
 ## 产品契约与可证伪问题
 
@@ -14,7 +16,7 @@
 python run.py
 ```
 
-运行器先做实际引擎能力门槛，再运行 naive、guarded 各一个独立进程。环境HOME/XDG隔离，禁止 `-O`（实际拒绝记录见 `results/optimized-rejection.txt`），先删除旧summary；检查已安装引擎的CLI参数，拒绝超时/非零退出/stderr/引擎错误/缺失或重复结果。失败时不发布成功summary；阶段原始输出写 `.log`。程序不下载引擎。
+运行器先做实际引擎能力门槛，再运行 naive、guarded 各一个独立进程。环境HOME/XDG隔离，禁止 `-O`（实际拒绝记录见 `results/optimized-rejection.txt`），正常路径随后删除旧summary；早期拒绝可能保留历史summary；检查已安装引擎的CLI参数，拒绝超时/非零退出/stderr/引擎错误/缺失或重复结果。失败时不发布成功summary；阶段原始输出写 `.log`。程序不下载引擎。
 
 ## 真实调用与观察
 
@@ -58,3 +60,5 @@ python run.py
 ## 独立复核
 
 [独立审查](review/README.md)在相同环境复制冻结源码，重复能力门槛和两策略共3进程，源码与二进制指纹一致。复核日志在review/fixture/results，不覆盖作者results。作者与复核各3进程是同一组的重复，不是6种场景或跨平台验证。
+
+**调用新鲜度：** [历史摘要与本次退出状态必须分开](../../source-notes/runner-invocation-freshness.md)。早期拒绝可能保留旧成功文件，不能只读 PASS 判断最新调用。

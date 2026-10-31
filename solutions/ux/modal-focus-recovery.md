@@ -8,7 +8,7 @@ related_disciplines: [A11Y, QA, PROG]
 related_roles: [ui-programmer,ux-designer,accessibility-specialist,qa-tester]
 related_topics: [modal-dialog,keyboard-navigation,gamepad-navigation,focus-restoration]
 engines: [Unity, Godot]
-versions: ["Unity 6000.0 UI Toolkit 文档", "XAG 113：2026-03-04 更新页面", "Godot4.6.3.stable.official.7d41c59c4 实际夹具"]
+versions: ["Unity 6000.0 UI Toolkit 文档", "XAG 113：2026-03-04 更新页面", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC,console]
 updated_at: 2026-10-31
 verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；另有Godot实际焦点身份夹具；未执行Unity或平台认证测试
@@ -27,6 +27,8 @@ sources:
 ---
 
 # 模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退
+
+> **运行身份说明（2026-10-31）：** 下述 Godot 版本为已安装程序自报，不代表已认证官方发行包或精确源码身份。[共享取证与缺口](../../research/source-notes/godot-runtime-provenance.md)保留原始版本、文件摘要及公共标签查询差异；各次有限行为观察仍按实际归档字段解释。
 
 ## 问题与适用边界
 

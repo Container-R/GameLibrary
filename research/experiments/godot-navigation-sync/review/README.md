@@ -31,3 +31,7 @@ Official Godot4.6, accessed2026-10-31:
 - [Using NavigationServer / Threading and Synchronization, Waiting for synchronization](https://docs.godotengine.org/en/4.6/tutorials/navigation/navigation_using_navigationservers.html): startup and queued-update distinction.
 
 No graphics, avoidance, baking, continuous topology changes, pathfinding performance, engine-version generality or final-agent movement was independently tested.
+
+## Provenance clarification — 2026-10-31
+
+The version string is the local executable’s self-report. Matching fixture-source and executable hashes establish consistency for these runs, not official release authentication or exact engine-source correspondence. Original observations and raw logs remain unchanged. See the [shared evidence note](../../../source-notes/godot-runtime-provenance.md).

@@ -1,5 +1,8 @@
 # Godot 4.6.3 固定回调边界：真实引擎无头夹具
 
+> **身份边界：** 本文版本字符串是本地程序自报；`official` 字样及同机构建复跑不认证官方来源。源文件摘要指原创夹具，不是引擎构建源码。[统一取证说明](../../source-notes/godot-runtime-provenance.md)记录公开标签与自报提交未对应的问题。
+> 本夹具早期当前 summary 未保存当次二进制摘要，不能将后续共享环境的测量回填为当时字段。
+
 ## 范围与运行
 
 本夹具为原创，补充 SOL-PROG-001，不是新引擎物理确定性基准。运行：
@@ -10,7 +13,7 @@ python run.py
 
 禁止使用 `python -O`：运行器在执行测试前显式拒绝优化模式，实际拒绝记录见 `results/optimized-rejection.txt`，防止assert被跳过。
 
-要求 PATH 内已有 `godot` 和 Python 标准库；不安装依赖、不下载代码。运行器在 `/tmp/gamelibrary-godot-*` 下建立 HOME、XDG_CACHE_HOME、XDG_DATA_HOME、XDG_CONFIG_HOME，用户数据/字体缓存不会写到默认只读 HOME。Godot 的项目解析和运行均为实际进程，不是 Python 模拟。进程超时20秒、非零退出、stderr、ERROR、结果缺失或判据不符均使运行器失败。重新运行会替换 `results/` 中的运行输出；启动先移除旧summary，只有全部检查成功才写新summary，失败时零散日志不可当整批通过。`results/` 保存每个进程的原始日志、逐回调 JSON、引擎版本、实际配置、命令、墙钟耗时、源文件 SHA256 和汇总。
+要求 PATH 内已有 `godot` 和 Python 标准库；不安装依赖、不下载代码。运行器在 `/tmp/gamelibrary-godot-*` 下建立 HOME、XDG_CACHE_HOME、XDG_DATA_HOME、XDG_CONFIG_HOME，用户数据/字体缓存不会写到默认只读 HOME。Godot 的项目解析和运行均为实际进程，不是 Python 模拟。进程超时20秒、非零退出、stderr、ERROR、结果缺失或判据不符均使运行器失败。重新运行会替换 `results/` 中的运行输出；通过优化模式拒绝门槛、进入正常路径后移除旧summary，只有全部检查成功才写新summary，失败时零散日志不可当整批通过。`results/` 保存每个进程的原始日志、逐回调 JSON、引擎版本、实际配置、命令、墙钟耗时、源文件 SHA256 和汇总。
 
 首次探测命令在重定向 HOME 前出现字体缓存不可写提示；未作为正式测试结果。归档的正式运行全部使用隔离目录且 stderr 为空。
 
@@ -56,3 +59,5 @@ python run.py
 - [Godot4.6 Engine](https://docs.godotengine.org/en/4.6/classes/class_engine.html)：实际配置属性及插值fraction API入口。本文只用它做数值只读表现，不宣称验证引擎自动节点插值。
 
 文档版本4.6与实际二进制4.6.3分别记录，不将滚动文档当作该二进制源码审计。
+
+**调用新鲜度：** [历史摘要与本次退出状态必须分开](../../source-notes/runner-invocation-freshness.md)。早期拒绝可能保留旧成功文件，不能只读 PASS 判断最新调用。

@@ -1,0 +1,166 @@
+{
+  "date_utc": "2026-10-31T15:46:22.224469+00:00",
+  "python": "3.12.14",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "audit_source_sha256": "a1ed20ceb12b6a5d97d4ac1f00a386717ae77faca547d6e247e96a7dba48dbf1",
+  "scope": "Six current run.py copies only; -O rejection, no engine invocation",
+  "cases": [
+    {
+      "fixture": "godot-fixed-step",
+      "source": "research/experiments/godot-fixed-step/run.py",
+      "source_sha256": "5c8ebec7b7456a7193e1aa87a9f655e1f1a68c582df77718396b85c7b088ad2a",
+      "guard_line": 14,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-s0tsxl76/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-fixed-step.stdout.txt",
+      "stderr_path": "godot-fixed-step.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "fe3a57559552dc6f33de813d24b4bab6e7498fd6dbfe77b3552510a3dfad1c33",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    },
+    {
+      "fixture": "godot-pause-input",
+      "source": "research/experiments/godot-pause-input/run.py",
+      "source_sha256": "1dfb5745dd92f6e41da61ca7540eb0cc4dcf27aabbd015621798a5a3d911f2bc",
+      "guard_line": 13,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-i78g_ihn/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-pause-input.stdout.txt",
+      "stderr_path": "godot-pause-input.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e60c94c91f062880675c82dd859631a919872e77055f435b52a681e45cef9003",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    },
+    {
+      "fixture": "godot-focus-boundary",
+      "source": "research/experiments/godot-focus-boundary/run.py",
+      "source_sha256": "0f5c3a92971b886766dd6219163c89105e126e4f990c940006fc7f24505d1f3f",
+      "guard_line": 11,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-jlsq9sfu/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-focus-boundary.stdout.txt",
+      "stderr_path": "godot-focus-boundary.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "19f97ab28ae83f90fc00c3fe1a1e6bfabdddc77b919d14d6f227f38c7e6fda12",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    },
+    {
+      "fixture": "godot-import-boundary",
+      "source": "research/experiments/godot-import-boundary/run.py",
+      "source_sha256": "dee22cd0498cffb4aefd4358749b74a2ee14f20a3ac2683ef5246d073b2408af",
+      "guard_line": 12,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-k50e5luc/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-import-boundary.stdout.txt",
+      "stderr_path": "godot-import-boundary.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0ed65cd4984679a3fd54fcb98a97a7738e5d24ae849801c19bbff25f3199f1b5",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    },
+    {
+      "fixture": "godot-navigation-sync",
+      "source": "research/experiments/godot-navigation-sync/run.py",
+      "source_sha256": "73cf5bf3233ec0cec1c60cd78a310fbdf2d0be5629d43a6a6f4afe14e57a7314",
+      "guard_line": 12,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-ri4_9b30/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-navigation-sync.stdout.txt",
+      "stderr_path": "godot-navigation-sync.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "2e1220ec63df258c5ff85ec1d7bd5a24d3406e6800b4911ac1be5e07d802adad",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    },
+    {
+      "fixture": "godot-animation-events",
+      "source": "research/experiments/godot-animation-events/run.py",
+      "source_sha256": "c898d637a1ac9ead8a8d564278defe3af4ac2e6766a2930dd95b28f4897098cf",
+      "guard_line": 3,
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-I",
+        "-B",
+        "-O",
+        "/tmp/runner-rejection-iuexqfo8/run.py"
+      ],
+      "returncode": 1,
+      "stdout_path": "godot-animation-events.stdout.txt",
+      "stderr_path": "godot-animation-events.stderr.txt",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8d06effcc91c67534a8c2ea7642168266600052776f0533d50118440c4d398a9",
+      "sentinel_before_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_after_sha256": "de930def3bcb8bd28793250fd50baa56e8348cfb4b7d35bdd2a6ee101aedb474",
+      "sentinel_unchanged": true,
+      "temporary_files_after": [
+        "results/summary.json",
+        "run.py"
+      ],
+      "source_unchanged": true
+    }
+  ]
+}

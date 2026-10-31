@@ -1,0 +1,92 @@
+{
+  "seek_cross": {
+    "labels_after": [
+      [
+        "single"
+      ],
+      [
+        "single",
+        "single"
+      ]
+    ],
+    "sample_after": [
+      0.75,
+      1.0
+    ],
+    "finished": 0,
+    "method_calls": 2
+  },
+  "advance_cross": {
+    "labels_after": [
+      [
+        "single"
+      ],
+      [
+        "single"
+      ]
+    ],
+    "sample_after": [
+      0.75,
+      1.0
+    ],
+    "finished": 1,
+    "method_calls": 1
+  },
+  "seek_exact": {
+    "labels_after": [
+      [
+        "single"
+      ]
+    ],
+    "sample_after": [
+      0.5
+    ],
+    "finished": 0,
+    "method_calls": 1
+  },
+  "seek_exact_update_only": {
+    "labels_after": [
+      []
+    ],
+    "sample_after": [
+      0.5
+    ],
+    "finished": 0,
+    "method_calls": 0
+  },
+  "seek_two_cross": {
+    "labels_after": [
+      [
+        "B"
+      ],
+      [
+        "B",
+        "B"
+      ]
+    ],
+    "sample_after": [
+      0.75,
+      1.0
+    ],
+    "finished": 0,
+    "method_calls": 2
+  },
+  "advance_two_cross": {
+    "labels_after": [
+      [
+        "A",
+        "B"
+      ],
+      [
+        "A",
+        "B"
+      ]
+    ],
+    "sample_after": [
+      0.75,
+      1.0
+    ],
+    "finished": 1,
+    "method_calls": 2
+  }
+}

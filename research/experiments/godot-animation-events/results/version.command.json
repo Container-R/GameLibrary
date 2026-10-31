@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/usr/local/bin/godot",
+    "--headless",
+    "--version"
+  ],
+  "returncode": 0,
+  "isolation": "fresh temporary HOME/XDG_CACHE_HOME/XDG_CONFIG_HOME/XDG_DATA_HOME"
+}

@@ -13,10 +13,10 @@ python3 test_verify.py
 
 ## 当前显式范围
 
-五个夹具 fixed-step、pause-input、focus-boundary、import-boundary、navigation-sync，共65项检查（每个 manifest 项内部还检查各文件）：
+六个 Godot 夹具 fixed-step、pause-input、focus-boundary、import-boundary、navigation-sync、animation-events，共82项检查（每个 manifest 项内部还检查各文件）：
 
 - 当前 summary `source_sha256` 的完整键集合及每个实际文件 SHA256；review summary 也对应同一当前归档源文件，而不是不存在的复跑临时目录。
-- 四个含 reviewer summary 的夹具：作者/审查者 source map、二进制 SHA256 元数据及 version 字段一致性。**不读取或验证 `/usr/local/bin/godot`**，不声称证实真正使用该二进制。fixed-step 当前 summary 无 binary_sha256、无另存 current reviewer summary，未伪造该覆盖。
+- 五个含 reviewer summary 的夹具：作者/审查者 source map、二进制 SHA256 元数据及 version 字段一致性。**不读取或验证 `/usr/local/bin/godot`**，不声称证实真正使用该二进制。fixed-step 当前 summary 无 binary_sha256、无另存 current reviewer summary，未伪造该覆盖。
 - 明确选定的作者/审查者 RESULT_JSON 日志，恰好一条记录，与独立解析结果 JSON 比对；JSON 拒绝重复键、NaN/Infinity 及溢出为非有限浮点数的指数值（如1e999）；比较保留布尔/数值类型差异。并不校验每个摘要中的衍生统计或退出码。
 - import 的 seed、configured-inputs 文件 manifest 及 kept initial manifest 一致性。未将临时路径当可重现文件读取。
 - navigation 的诊断源 variant 快照、当前 base main、诊断 runner 哈希及 binary metadata、诊断 stdout/parsed JSON。
@@ -25,8 +25,14 @@ python3 test_verify.py
 
 ## 实际结果与测试
 
-2026-10-31：针对 `gamelibrary-work` 静态档案执行65项检查，65通过、0失败；没有发现本范围内真正不一致。原始报告 `archive-report.json`。9项隔离单元测试全部通过，覆盖文件损坏、缺失、路径逃逸、外部符号链接、坏JSON/重复键/非有限数值、manifest漏项、日志缺失/重复/类型差异与空/重复注册项。只向 TemporaryDirectory 写单元测试数据，自动清理。
+2026-10-31：针对 `gamelibrary-work` 静态档案执行65项检查，65通过、0失败；没有发现本范围内真正不一致。原始65项报告 `archive-report-initial65.json`。9项隔离单元测试全部通过，覆盖文件损坏、缺失、路径逃逸、外部符号链接、坏JSON/重复键/非有限数值、manifest漏项、日志缺失/重复/类型差异与空/重复注册项。只向 TemporaryDirectory 写单元测试数据，自动清理。
 
 一致性既不证明执行真实发生，也不证明语义正确、测试完整、来源可信或防恶意篡改：攻击者同时改源与声明仍可一致。哈希不等于签名。没有下载执行任何归档代码；只执行本原创 verifier 与隔离测试。代码使用显式错误检查，不依赖 assert，不受 `-O` 影响。运行日志和工具文件哈希列于 `SHA256SUMS`。
 
 独立审查发现并修复：最初 parse_constant 只拦截NaN字面量，1e999仍可由默认parse_float溢出为inf；现对parse_float显式检查math.isfinite，并在坏JSON测试加入正负溢出值。此缺陷来自隔离构造证据，不是实际档案发现。
+
+## 本轮扩展与边界修正
+
+初次65项报告另存 archive-report-initial65.json；当前加入动画的两个 source manifest、十二个原始日志对比和三个元数据比较，共82项归档一致性检查。新增17项不是17个引擎行为测试。原始错误假设在 animation historical-initial 中保留，不与当前源混比。
+
+[运行身份](../../research/source-notes/godot-runtime-provenance.md)尚未认证官方构建；[调用新鲜度](../../research/source-notes/runner-invocation-freshness.md)要求检查本次退出码，旧 PASS 不证明最新运行成功。历史65项结果只描述原范围，不能用于新增文件。

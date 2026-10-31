@@ -602,7 +602,7 @@
       "id": "TASK-2026-0025",
       "question": "对白字幕齐全为何仍可能遗漏关键非语音声音，如何制定跨岗位信息等价验收？",
       "discipline": "A11Y",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 95,
       "priority_rationale": "14篇覆盖审计后的具体内容与体验缺口，不继续堆同类引擎夹具",
       "expected_artifact": "solutions/accessibility/critical-sound-information-contract.md",
@@ -617,11 +617,251 @@
         "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/104",
         "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T15:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:44:23.826421Z",
-      "next_action": "原创方案和遭遇矩阵编写，独立核对来源及信息边界",
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Source-backed content and independent review complete; publish in next coherent batch",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0026",
+      "question": "Playtest intervention evidence",
+      "discipline": "PROD",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "solutions/production/playtest-intervention-evidence.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0027",
+      "question": "Steam capsule handoff source audit",
+      "discipline": "BIZ",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/source-notes/steam-capsule-handoff.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0028",
+      "question": "Curated cross-disciplinary reading routes",
+      "discipline": "PROD",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "DISCOVERY.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0029",
+      "question": "Animation seek and advance event boundary",
+      "discipline": "ANIM",
+      "status": "reviewing",
+      "priority": 96,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/experiments/godot-animation-events/README.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T16:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0030",
+      "question": "Runtime provenance clarification",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 96,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/source-notes/godot-runtime-provenance.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T16:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0031",
+      "question": "Game QA role evidence contracts",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "roles/qa/game-quality-assurance.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0032",
+      "question": "Finite ICU MessageFormat and runner failure evidence",
+      "discipline": "LOC",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/experiments/icu-message-boundary/README.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0033",
+      "question": "Historical summary versus latest invocation status",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 96,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/source-notes/runner-invocation-freshness.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T16:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0034",
+      "question": "SQLite ledger process termination and retry boundary",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/experiments/sqlite-ledger-boundary/README.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0035",
+      "question": "SQLite writer contention handshake",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/experiments/sqlite-writer-contention/README.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0036",
+      "question": "Level designer delivery and acceptance contracts",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "roles/design/level-designer.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0037",
+      "question": "Compressed texture block and mip-tail payload boundary",
+      "discipline": "TA",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
+      "expected_artifact": "research/experiments/texture-block-budget/README.md",
+      "acceptance": [
+        "Primary evidence and explicit scope",
+        "Independent review",
+        "No inferred production guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T16:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T16:18:40.694275Z",
+      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
       "blockers": []
     }
   ]

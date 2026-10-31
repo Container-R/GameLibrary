@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/local/bin/godot",
+    "--headless",
+    "--path",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/animation-events/fixture",
+    "--",
+    "seek_cross"
+  ],
+  "returncode": 0,
+  "isolation": "fresh temporary HOME/XDG_CACHE_HOME/XDG_CONFIG_HOME/XDG_DATA_HOME"
+}
