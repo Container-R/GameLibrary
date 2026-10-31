@@ -762,7 +762,7 @@
       "id": "TASK-2026-0032",
       "question": "Finite ICU MessageFormat and runner failure evidence",
       "discipline": "LOC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/experiments/icu-message-boundary/README.md",
@@ -771,13 +771,14 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T18:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish independently reviewed minimal ICU artifact batch",
+      "last_progress_at": "2026-10-31T18:22:05Z",
+      "next_action": "Maintain finite evidence scope and formatter/source version distinctions",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:15:40Z"
+      "completed_at": "2026-10-31T18:22:05Z",
+      "commit_sha": "701a8616e2648b9987099c308dc522b8353fcd00"
     },
     {
       "id": "TASK-2026-0033",
@@ -814,12 +815,13 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:00:00Z",
       "attempts": 1,
       "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
+      "blockers": [],
+      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
     },
     {
       "id": "TASK-2026-0035",
@@ -834,12 +836,13 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T19:00:00Z",
       "attempts": 1,
       "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish reviewed coherent batch; final SHA recorded after remote verification",
-      "blockers": []
+      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
+      "blockers": [],
+      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
     },
     {
       "id": "TASK-2026-0036",
@@ -877,12 +880,12 @@
         "No inferred production guarantees"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T18:45:00Z",
+      "lease_until": "2026-10-31T19:00:00Z",
       "attempts": 1,
       "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Integrate accepted texture article after current safe publication recovery",
+      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:15:40Z"
+      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
     }
   ]
 }

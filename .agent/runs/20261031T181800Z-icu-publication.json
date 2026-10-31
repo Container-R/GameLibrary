@@ -1,11 +1,11 @@
 {
   "run_id": "20261031T181800Z-icu-publication",
   "started_at": "2026-10-31T18:18:59.179126Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T18:22:05Z",
   "task_id": [
     "TASK-2026-0032"
   ],
-  "commit_sha": null,
+  "commit_sha": "701a8616e2648b9987099c308dc522b8353fcd00",
   "artifacts": [
     ".agent/state.json",
     "research/README.md",
@@ -164,9 +164,12 @@
     "current_independent_processes": 4,
     "synthetic_negative_cases_per_repeat": 6,
     "archive_checks_expected": 95,
-    "no_new_runtime_rerun_during_publication": true
+    "no_new_runtime_rerun_during_publication": true,
+    "archive_checks_passed": 95,
+    "local_links_checked": 232,
+    "broken_links": 0
   },
   "scope": "Finite ICU syntax and semantic counterexamples; no Unity/rendering/LQA or authenticated package claim",
   "publication_method": "Small unreferenced tree chunks, one final checked ref update",
-  "outcome": "prepared; publication pending"
+  "outcome": "published; 152 selected tree blobs verified, master ref and three representative files read back"
 }
