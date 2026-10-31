@@ -1493,11 +1493,15 @@
       "id": "TASK-2026-0061",
       "question": "How can future runners reject omitted or redirected writable runtime locations without rewriting historical fixture identities?",
       "discipline": "QA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 95,
       "priority_rationale": "A real omitted XDG_DATA_HOME caused failed startup; close the reusable setup contract rather than repeat ad hoc environment construction",
       "expected_artifact": "Additive future-only five-variable environment helper, finite pure/filesystem and synthetic-child tests, independent acceptance",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "scripts/evidence/isolation.py",
+        "research/audits/runner-isolation",
+        "research/source-notes/runner-environment-contract.md"
+      ],
       "acceptance": [
         "Prepare and validate HOME/XDG_CACHE_HOME/XDG_CONFIG_HOME/XDG_DATA_HOME/TMPDIR under caller-owned fresh root",
         "Reject omitted keys, redirected values, missing directories, symlinks and reserved-directory reuse before synthetic launch",
@@ -1508,8 +1512,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:02:05.938162Z",
-      "next_action": "Implement and independently review finite future-runner isolation helper without modifying historical evidence",
+      "last_progress_at": "2026-10-31T22:12:06.166850Z",
+      "next_action": "Finish independent integration acceptance, publish exact staged helper and finite evidence without historical migration",
       "blockers": []
     }
   ]

@@ -1,0 +1,31 @@
+{
+  "child": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-I",
+      "-c",
+      "import os,json\nfrom pathlib import Path\nkeys=['HOME','XDG_CACHE_HOME','XDG_CONFIG_HOME','XDG_DATA_HOME','TMPDIR']\nfor key in keys: (Path(os.environ[key])/'child-sentinel.txt').write_text(key)\nprint(json.dumps({key:os.environ[key] for key in keys},sort_keys=True))\n"
+    ],
+    "returncode": 0,
+    "selected_environment": {
+      "HOME": "/tmp/tmp1u8nm_xg/HOME",
+      "TMPDIR": "/tmp/tmp1u8nm_xg/TMPDIR",
+      "XDG_CACHE_HOME": "/tmp/tmp1u8nm_xg/XDG_CACHE_HOME",
+      "XDG_CONFIG_HOME": "/tmp/tmp1u8nm_xg/XDG_CONFIG_HOME",
+      "XDG_DATA_HOME": "/tmp/tmp1u8nm_xg/XDG_DATA_HOME"
+    },
+    "stderr": "",
+    "stdout": "{\"HOME\": \"/tmp/tmp1u8nm_xg/HOME\", \"TMPDIR\": \"/tmp/tmp1u8nm_xg/TMPDIR\", \"XDG_CACHE_HOME\": \"/tmp/tmp1u8nm_xg/XDG_CACHE_HOME\", \"XDG_CONFIG_HOME\": \"/tmp/tmp1u8nm_xg/XDG_CONFIG_HOME\", \"XDG_DATA_HOME\": \"/tmp/tmp1u8nm_xg/XDG_DATA_HOME\"}\n",
+    "timeout_seconds": 5
+  },
+  "engine_processes": 0,
+  "optimization": 1,
+  "source_sha256": {
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "protocol.json": "543f5a4b9388dd1bc95350fd78ab284ac31701282e8bfe5a49258bed7f505d26",
+    "test_isolation.py": "1a9e1553dbeaacf6cc87e8d90c3c0270b6eb69873d5b6d5ca591704d437d082d"
+  },
+  "status": "PASS",
+  "synthetic_children": 1,
+  "test_methods": 5
+}

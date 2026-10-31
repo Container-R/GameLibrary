@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": [
+    "ancestor symlink",
+    "literal parent traversal",
+    "dangling reserved symlink",
+    "partial creation propagates and remains caller owned; base unchanged"
+  ],
+  "synthetic_children": 0,
+  "engine_processes": 0
+}

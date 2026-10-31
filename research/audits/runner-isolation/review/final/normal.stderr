@@ -1,0 +1,10 @@
+test_invalid_root_and_reserved_reuse (__main__.IsolationTests.test_invalid_root_and_reserved_reuse) ... ok
+test_missing_and_redirected_keys (__main__.IsolationTests.test_missing_and_redirected_keys) ... ok
+test_missing_directory_and_symlink (__main__.IsolationTests.test_missing_directory_and_symlink) ... ok
+test_one_synthetic_child (__main__.IsolationTests.test_one_synthetic_child) ... ok
+test_prepare_copy_and_two_roots (__main__.IsolationTests.test_prepare_copy_and_two_roots) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.030s
+
+OK

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "archived_suites": [
+    "author/historical-pre-root-guard/normal",
+    "author/historical-pre-root-guard/optimized",
+    "author/normal",
+    "author/optimized",
+    "review/normal",
+    "review/optimized",
+    "review/final/normal",
+    "review/final/optimized"
+  ],
+  "archived_synthetic_children": 8,
+  "archived_engine_processes": 0,
+  "supplementary_unique_scenarios": 4,
+  "historical_files_unchanged": 1723,
+  "checker_child_processes": 0,
+  "scope": "Static consistency only; removed temporary sentinel files are not rechecked; no authenticity or complete isolation claim"
+}

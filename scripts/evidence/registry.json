@@ -3168,6 +3168,158 @@
       "id": "physics-callback/review/deferred-shape",
       "log": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.stdout",
       "parsed": "research/experiments/godot-physics-callback-v2/review/evidence/a253567d-2230-43ca-9e02-8a8eb8415367/deferred-shape.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/initial-author/normal/source",
+      "document": "research/audits/runner-isolation/author/historical-pre-root-guard/normal.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/author/historical-pre-root-guard/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/author/historical-pre-root-guard/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/author/historical-pre-root-guard/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/initial-author/normal/log",
+      "log": "research/audits/runner-isolation/author/historical-pre-root-guard/normal.stdout",
+      "parsed": "research/audits/runner-isolation/author/historical-pre-root-guard/normal.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/initial-author/optimized/source",
+      "document": "research/audits/runner-isolation/author/historical-pre-root-guard/optimized.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/author/historical-pre-root-guard/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/author/historical-pre-root-guard/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/author/historical-pre-root-guard/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/initial-author/optimized/log",
+      "log": "research/audits/runner-isolation/author/historical-pre-root-guard/optimized.stdout",
+      "parsed": "research/audits/runner-isolation/author/historical-pre-root-guard/optimized.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/final-author/normal/source",
+      "document": "research/audits/runner-isolation/author/normal.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/author/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/author/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/author/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/final-author/normal/log",
+      "log": "research/audits/runner-isolation/author/normal.stdout",
+      "parsed": "research/audits/runner-isolation/author/normal.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/final-author/optimized/source",
+      "document": "research/audits/runner-isolation/author/optimized.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/author/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/author/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/author/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/final-author/optimized/log",
+      "log": "research/audits/runner-isolation/author/optimized.stdout",
+      "parsed": "research/audits/runner-isolation/author/optimized.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/initial-review/normal/source",
+      "document": "research/audits/runner-isolation/review/normal.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/review/fixture/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/review/fixture/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/review/fixture/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/initial-review/normal/log",
+      "log": "research/audits/runner-isolation/review/normal.stdout",
+      "parsed": "research/audits/runner-isolation/review/normal.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/initial-review/optimized/source",
+      "document": "research/audits/runner-isolation/review/optimized.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/review/fixture/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/review/fixture/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/review/fixture/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/initial-review/optimized/log",
+      "log": "research/audits/runner-isolation/review/optimized.stdout",
+      "parsed": "research/audits/runner-isolation/review/optimized.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/final-review/normal/source",
+      "document": "research/audits/runner-isolation/review/final/normal.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/review/final/fixture/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/review/final/fixture/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/review/final/fixture/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/final-review/normal/log",
+      "log": "research/audits/runner-isolation/review/final/normal.stdout",
+      "parsed": "research/audits/runner-isolation/review/final/normal.parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "isolation/final-review/optimized/source",
+      "document": "research/audits/runner-isolation/review/final/optimized.parsed.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "isolation.py": "research/audits/runner-isolation/review/final/fixture/isolation.py",
+        "protocol.json": "research/audits/runner-isolation/review/final/fixture/protocol.json",
+        "test_isolation.py": "research/audits/runner-isolation/review/final/fixture/test_isolation.py"
+      }
+    },
+    {
+      "kind": "log",
+      "id": "isolation/final-review/optimized/log",
+      "log": "research/audits/runner-isolation/review/final/optimized.stdout",
+      "parsed": "research/audits/runner-isolation/review/final/optimized.parsed.json"
     }
   ]
 }

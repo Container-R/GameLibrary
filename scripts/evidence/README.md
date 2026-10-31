@@ -48,3 +48,9 @@ SQLite 的终止进程有意没有 RESULT_JSON，不纳入现有单载荷 log �
 网格夹具新增两份source manifest及四组source/Python/制品哈希字段比较，当时十一夹具115项（历史archive-report-115.json）。不是115次运行测试，也不验证几何语义、官方validator或GPU；原始空格前缀stdout另行比较，字面几何oracle见该夹具review。
 
 合成遥测报表新增两份source manifest和三组source/Python/输入哈希字段比较，当前十二夹具120项。不是120次玩家、服务或运行试验；actual输入SHA、空格前缀stdout、两份as-of输出另行核对，独立字面人口oracle见该夹具review。
+
+## Additive environment helper for future callers
+
+[isolation.py](isolation.py) provides `prepare_environment(base_env, owned_root)` and `validate_environment(env, owned_root)`. From the repository root, import with `from scripts.evidence.isolation import prepare_environment, validate_environment`. The caller supplies a fresh, exclusively owned absolute temporary root and retains it through all child activity; validation must occur immediately before spawning. Only HOME, XDG_CACHE_HOME, XDG_CONFIG_HOME, XDG_DATA_HOME and TMPDIR are selected. Preserve the returned five-key manifest, not the complete environment. Partial creation cleanup remains caller-owned. This is not a sandbox, complete XDG implementation, race defense or crash-prevention guarantee.
+
+[Protocol, original tests and independent evidence](../../research/audits/runner-isolation/README.md) distinguish initial and final source stages and eight synthetic children from zero engine runs. [Source contract](../../research/source-notes/runner-environment-contract.md) documents limits. Existing runners and fresh-harness registry/adapters are unchanged; callers are **not automatically migrated**.

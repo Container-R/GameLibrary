@@ -19,3 +19,7 @@
 委派、加深或复核既有文章前，直接读取当前仓库的目标文章 `verification_method`、实验 README 与相应原始输出；在审查记录中写明具体路径、修订/摘要、已执行范围和排除项。主题、引擎标签、另一篇文章的成功或对话记忆，不能替代这些检查。来源准确性审查与仓库既有证据范围审查是两项不同门槛。
 
 新结论只能绑定实际支持它的夹具/模型与配置；例如 Python 接触几何模型不能改称 Godot 根运动实测，Godot 动画事件测试也不能证明 Unity Rig 约束顺序。发现错误继承时，先拒绝该草稿结论、保留审查纠正记录，再重新核对目标产物；不要改写旧日志或扩大原实验范围。
+
+## Future runner writable-location setup
+
+For new process-running fixtures, explicitly prepare and validate HOME, XDG_CACHE_HOME, XDG_CONFIG_HOME, XDG_DATA_HOME and TMPDIR beneath a fresh caller-owned temporary root, using [the additive helper](scripts/evidence/isolation.py) or equivalent reviewed checks. Record only the selected mapping, not a full environment that may contain credentials. Own root lifetime, partial-creation cleanup and process lifecycle separately. This selected-location check is not filesystem sandboxing or a complete environment policy. Preserve any exceptions and failed attempts rather than widening acceptance after execution. Existing fixture hashes, old receipts and focus-only normal fresh-harness coverage are not retroactively altered by this requirement. See [exact finite acceptance and limitations](research/source-notes/runner-environment-contract.md).

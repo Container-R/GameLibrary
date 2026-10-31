@@ -1,0 +1,29 @@
+{
+  "run_id": "20261031T220205Z-runner-isolation",
+  "task_id": "TASK-2026-0061",
+  "started_at": "2026-10-31T22:02:05Z",
+  "local_review_completed_at": "2026-10-31T22:12:06.166850Z",
+  "outcome": "reviewed locally; publication pending",
+  "validation": {
+    "synthetic_children_total": 8,
+    "engine_processes": 0,
+    "suite_methods_each": 5,
+    "suites": 8,
+    "supplementary_unique_scenarios": 4,
+    "main_static_modes": [
+      "normal",
+      "-O"
+    ],
+    "archive_checks": 340,
+    "historical_experiment_and_fresh_files_unchanged": 1723,
+    "indexed_source_backed_articles": 28,
+    "new_indexed_articles": 0
+  },
+  "limits": [
+    "Five selected writable directories only, not a sandbox or full environment/XDG compliance",
+    "Initial and final source-stage results retained separately; anchor-root guard added by explicit protocol amendment",
+    "No historical runner migration, replay, normal adapter coverage expansion or engine launch",
+    "Removed temporary child sentinel files were checked by original suites, not rechecked by static archive checker"
+  ],
+  "local_integration_correction": "An initially mis-shaped added registry equality entry failed validation; removed redundant equality entry before publication. Production helper identity is checked explicitly by the portable archive checker; 340 retained registry checks pass."
+}
