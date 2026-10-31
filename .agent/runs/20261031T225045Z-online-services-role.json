@@ -5,8 +5,8 @@
     "TASK-2026-0066"
   ],
   "started_at": "2026-10-31T22:41:17Z",
-  "ended_at": "2026-10-31T22:51:07.134069Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-10-31T22:53:12.628710Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.bandainamcostudios.com/creator-interviews/19539",
     "https://www.riotgames.com/en/news/scalability-and-load-testing-valorant"
@@ -22,7 +22,13 @@
     "indexed_articles": 31,
     "queue_tasks": 66,
     "declared_paths": 57,
-    "prior_experiment_files_byte_identical": 1833
+    "prior_experiment_files_byte_identical": 1833,
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 485,
+    "receipt_queue_tasks_checked": 67,
+    "receipt_declared_paths_checked": 57
   },
-  "next_action": "Investigate a concrete service allocation demand-observation gap from original project evidence, without invented production tests"
+  "next_action": "Investigate a concrete service allocation demand-observation gap from original project evidence, without invented production tests",
+  "commit_sha": "55537026baffc85d470bc43ad28bea0ca273076a"
 }

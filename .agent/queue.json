@@ -1639,7 +1639,7 @@
       "id": "TASK-2026-0066",
       "question": "\u5728\u7ebf\u670d\u52a1\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u63a5\u5e73\u53f0\u670d\u52a1\u94fe\u538b\u6d4b\u4e2d\u7684\u771f\u5b9e\u7ec4\u4ef6\u3001\u66ff\u8eab\u4e0e\u9057\u6f0f\u9a8c\u6536\u8d23\u4efb\uff1f",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Current role coverage omits online services; prior prediction/local storage cases do not prove service-chain capacity",
       "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
@@ -1654,11 +1654,36 @@
         "Original worksheet explicitly unexecuted; no invented service load tests",
         "Validate links and taxonomy; keep whole role matrix incomplete"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:51:07.134069Z",
-      "next_action": "Publish independently reviewed role and original unexecuted handoff worksheet; retain role-matrix incompleteness",
+      "next_action": "Keep original role handoff unexecuted and broader matrix incomplete; service allocation timing is a separate case",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:53:12.628710Z",
+      "commit_sha": "55537026baffc85d470bc43ad28bea0ca273076a"
+    },
+    {
+      "id": "TASK-2026-0067",
+      "question": "Why can low observed server CPU coexist with insufficient future match headroom, and what measurement/placement handoff exposes that gap?",
+      "discipline": "NET",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "First-party historical allocation evidence adds concrete delayed-observation/young-match-demand boundary beyond platform mock scope",
+      "expected_artifact": "Narrow source-backed historical case and original unexecuted measurement/lifecycle acceptance worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read Riot2025 original allocation report; distinguish collection granularity and selector refresh",
+        "Separate workload growth, stale observations, pending work and fleet readiness without inventing internal mechanisms",
+        "Preserve uniform-within-scenario assumptions and selector versus eligibility distinction",
+        "No uninspected graph values, scoring formula, toy production benchmark or universal RoundRobin recommendation",
+        "Independent review; historical author claims not independently reproduced causal proof"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:53:12.628710Z",
+      "next_action": "Draft accepted source-gate14f06dfb into concise historical case plus original five-party handoff; independent source review next",
       "blockers": []
     }
   ]
