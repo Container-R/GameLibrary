@@ -806,7 +806,7 @@
       "id": "TASK-2026-0034",
       "question": "SQLite ledger process termination and retry boundary",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/experiments/sqlite-ledger-boundary/README.md",
@@ -815,19 +815,21 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
+      "last_progress_at": "2026-10-31T18:27:00Z",
+      "next_action": "Maintain scoped process and contention evidence; no power-loss or remote authority extrapolation",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
+      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
+      "completed_at": "2026-10-31T18:27:00Z",
+      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623"
     },
     {
       "id": "TASK-2026-0035",
       "question": "SQLite writer contention handshake",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
       "expected_artifact": "research/experiments/sqlite-writer-contention/README.md",
@@ -836,13 +838,15 @@
         "Independent review",
         "No inferred production guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:18:40.694275Z",
-      "next_action": "Publish separately reviewed coherent unit through bounded tree chunks",
+      "last_progress_at": "2026-10-31T18:27:00Z",
+      "next_action": "Maintain scoped process and contention evidence; no power-loss or remote authority extrapolation",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z"
+      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
+      "completed_at": "2026-10-31T18:27:00Z",
+      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623"
     },
     {
       "id": "TASK-2026-0036",
