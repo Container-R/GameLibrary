@@ -14,4 +14,4 @@ python3 scripts/run_model_tests.py
 
 ## 覆盖与分类审计
 
-[初始七篇覆盖快照与ACCESS兼容拆分提案](audits/initial-coverage-and-taxonomy.md)：历史快照不是实时完成率，分类提案尚未应用。
+[初始七篇覆盖快照与ACCESS兼容拆分提案](audits/initial-coverage-and-taxonomy.md)：历史快照不是实时完成率，该历史提案后的兼容拆分记录见[分类说明](../taxonomy/README.md)。

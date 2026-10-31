@@ -16,6 +16,9 @@
 | 单机经济事件账本 | [知识条目](../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型，不预测真实玩家 |
 | 交互音频职责交付 | [岗位档案](../roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
 
+| 模态焦点恢复 | [知识条目](../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，纯状态模型不证明真实渲染和认证 |
+| 伪本地化与格式契约 | [知识条目](../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；未执行引擎或格式化器 |
+
 ## 更新规则
 
 1. 新增结论必须能定位到实际读取的来源或已执行实验；搜索结果摘要不代替正文。

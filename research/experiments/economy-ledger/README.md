@@ -2,7 +2,7 @@
 
 本库原创、标准库 Python 模型，2026-10-31 在 Python 3.12.14 执行。
 
-- `python3 -m unittest -v`：13 项测试通过，原始结果 `test-output.txt`。
+- `python3 -m unittest -v`：14 项测试通过，原始结果 `test-output.txt`。
 - `python3 model.py`：生成六种确定性参数场景，结果 `scenario-output.json`。
 
 币种为整数 coin，时间窗口为 session；每次遭遇先入奖励、后扣服务费，session 末检查一次性购买。全部数字为演示假设。升级不改变产出，未建模随机性、离线收入、交易市场、真实货币、玩家行为。

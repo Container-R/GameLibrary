@@ -885,7 +885,7 @@
       "id": "ACCESS",
       "name_zh": "可访问性与本地化",
       "name_en": "Accessibility and localization",
-      "state": "candidate-taxonomy",
+      "state": "legacy-umbrella",
       "specializations": [
         {
           "name_zh": "无障碍设计",
@@ -920,7 +920,50 @@
         "色彩辅助",
         "区域规范"
       ],
-      "notes": "待基于一手来源研究岗位职责；骨架不等于已验证知识"
+      "notes": "保留旧ID、名称和范围以兼容历史引用；不是单目标别名。新内容按主要验收目标选择A11Y或LOC，跨域关联可同时使用。",
+      "split_into": [
+        "A11Y",
+        "LOC"
+      ],
+      "split_effective_revision": "2026-10-31.2",
+      "evidence": [
+        "https://igda.org/sigs/localization/",
+        "https://igda.org/sigs/game-accessibility/"
+      ]
+    },
+    {
+      "id": "A11Y",
+      "name_zh": "游戏无障碍与可访问性",
+      "name_en": "Game accessibility",
+      "state": "candidate-taxonomy",
+      "specializations": [],
+      "work_areas_seed": [
+        "输入与焦点",
+        "信息替代",
+        "字幕与可读性",
+        "辅助技术接口"
+      ],
+      "notes": "行业组织资料支持独立领域的存在，不证明本库已完成其职责/技术覆盖。",
+      "evidence": [
+        "https://igda.org/sigs/game-accessibility/"
+      ]
+    },
+    {
+      "id": "LOC",
+      "name_zh": "国际化与游戏本地化",
+      "name_en": "Internationalization and game localization",
+      "state": "candidate-taxonomy",
+      "specializations": [],
+      "work_areas_seed": [
+        "字符串与格式化",
+        "翻译上下文",
+        "字体与双向布局",
+        "语言质量验收"
+      ],
+      "notes": "行业组织资料支持独立领域的存在，不证明本库已完成其职责/技术覆盖。",
+      "evidence": [
+        "https://igda.org/sigs/localization/"
+      ]
     }
   ],
   "relation_types": [
@@ -930,5 +973,6 @@
     "alternative-to",
     "case-of",
     "see-also"
-  ]
+  ],
+  "taxonomy_revision": "2026-10-31.2"
 }

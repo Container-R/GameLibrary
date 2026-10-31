@@ -216,11 +216,13 @@
       "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T13:17:23.011356Z",
-      "next_action": "七篇覆盖审计已完成；全学科职责核实仍未完成，分类兼容拆分待实施和测试",
+      "last_progress_at": "2026-10-31T13:22:59.146248Z",
+      "next_action": "ACCESS兼容拆分和7项结构/引用测试已实施；其余学科职责核实继续",
       "blockers": [],
       "partial_artifacts": [
-        "research/audits/initial-coverage-and-taxonomy.md"
+        "research/audits/initial-coverage-and-taxonomy.md",
+        "taxonomy/README.md",
+        "scripts/test_taxonomy.py"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成"
     },
@@ -251,7 +253,7 @@
       "id": "TASK-2026-0011",
       "question": "模态关闭与控件失效后如何安全恢复手柄/键盘焦点？",
       "discipline": "UX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
       "expected_artifact": "solutions/ux/modal-focus-recovery.md",
@@ -264,15 +266,15 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:18:40.323328Z",
-      "next_action": "来源研究与原创模型/验收设计",
+      "last_progress_at": "2026-10-31T13:22:59.146248Z",
+      "next_action": "来源独立复核与模型边界检查完成，待发表核验",
       "blockers": []
     },
     {
       "id": "TASK-2026-0012",
       "question": "如何用伪本地化检查文本布局与占位符契约，同时不冒充真实语言验证？",
-      "discipline": "ACCESS",
-      "status": "researching",
+      "discipline": "LOC",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
       "expected_artifact": "solutions/localization/pseudo-localization-contract.md",
@@ -285,8 +287,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:18:40.323328Z",
-      "next_action": "来源研究与原创模型/验收设计",
+      "last_progress_at": "2026-10-31T13:22:59.146248Z",
+      "next_action": "来源独立复核与模型边界检查完成，待发表核验",
       "blockers": []
     }
   ]

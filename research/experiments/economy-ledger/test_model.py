@@ -54,8 +54,17 @@ class EconomyTests(unittest.TestCase):
 
     def test_insufficient_balance_is_atomic(self):
         x=Ledger();x.post('initial',3,'source')
+        before=(x.balance,list(x.entries),set(x.seen))
         with self.assertRaises(ValueError):x.post('spend',-4,'sink')
-        self.assertEqual((x.balance,len(x.entries)),(3,1))
+        self.assertEqual((x.balance,x.entries,x.seen),before)
+
+    def test_failed_spend_can_retry_same_id_after_funding(self):
+        x=Ledger();x.post('initial',3,'source')
+        with self.assertRaises(ValueError):x.post('spend',-4,'sink')
+        x.post('topup',1,'source');x.post('spend',-4,'sink')
+        self.assertEqual(x.balance,0)
+        self.assertEqual(sum(e[0]=='spend' for e in x.entries),1)
+        x.assert_conservation()
 
     def test_integer_currency_rejects_fraction(self):
         with self.assertRaises(TypeError):Ledger().post('bad',0.5,'source')

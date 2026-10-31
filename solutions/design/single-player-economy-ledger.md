@@ -9,7 +9,7 @@ related_roles: [economy-designer, systems-designer, gameplay-programmer, data-an
 engines: [engine-agnostic]
 platforms: [single-player]
 updated_at: 2026-10-31
-verification_method: 两项原始设计资料核对；原创 Python 整数货币模型13项测试通过，未进行真实玩家试验
+verification_method: 两项原始设计资料核对；原创 Python 整数货币模型14项测试通过，未进行真实玩家试验
 sources:
   - https://gamebalanceconcepts.wordpress.com/2010/09/08/level-10-final-boss/
   - https://unity.com/how-to/building-game-economy-guide-part-2
@@ -95,7 +95,7 @@ Unity 的 *Building an in-game economy* 在 Resources and game progression / Map
 
 ## 已执行的模型验证
 
-Python 3.12.14，纯标准库，13 项测试通过：基准阈值/库存、一次性事件计数、重复事件无副作用拒绝、余额不足无副作用拒绝、整数单位检查、账本守恒、分群平均反例、单变量敏感性，以及期初库存经条目入账、构造参数不能注入状态、无效事件 ID 无副作用拒绝、无效参数及布尔币值拒绝。
+Python 3.12.14，纯标准库，14 项测试通过：基准阈值/库存、一次性事件计数、重复事件无副作用拒绝、余额不足无副作用拒绝、整数单位检查、账本守恒、分群平均反例、单变量敏感性，以及期初库存经条目入账、构造参数不能注入状态、无效事件 ID 无副作用拒绝、无效参数及布尔币值拒绝。
 
 账本的余额、条目和已见 ID 都从空状态构造；期初库存必须用 `post` 记账，才能被守恒式计入。事件 ID 必须为非空白字符串；`kind` 仅是描述标签，不强制来源/消耗标签与金额符号一致。模型字段并未做防篡改封装，所有余额变动必须走 `post`，不承诺外部直接改字段后仍满足不变量。
 
