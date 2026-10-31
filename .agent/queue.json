@@ -991,7 +991,7 @@
       "id": "TASK-2026-0042",
       "question": "Music body PCM sample-frame interval versus inclusive loop and exclusive trim endpoints",
       "discipline": "MUSIC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Existing interactive-music lifecycle article lacks authoring body/pre-tail exact frame handoff; installed offline FFmpeg allows bounded actual extraction",
       "expected_artifact": "solutions/music/pcm-loop-frame-contract.md",
@@ -1000,11 +1000,53 @@
         "Original PCM marker WAV and actual finite extraction",
         "Independent byte/frame oracle; no hearing/device/middleware guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T19:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:19:22.443016Z",
-      "next_action": "Publish actual finite PCM extraction and independent full-byte review; no middleware or hearing claims",
+      "last_progress_at": "2026-10-31T19:23:05.063665Z",
+      "next_action": "Maintain finite offline scope; target middleware and listening remain untested",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:23:05.063665Z",
+      "commit_sha": "9ebc9baf78c3a61bd014bf14b9d710485f7ba6c5"
+    },
+    {
+      "id": "TASK-2026-0043",
+      "question": "Sprite alpha association handoff in actual stored-byte CPU compositing",
+      "discipline": "ART2D",
+      "status": "researching",
+      "priority": 87,
+      "priority_rationale": "Primary source gate exposes practical representation or production handoff gap, distinct from existing payload and save compatibility research",
+      "expected_artifact": "solutions/art2d/alpha-association-contract.md",
+      "acceptance": [
+        "Source claims and original proposals separated",
+        "Bounded independent review and reproducible evidence where executed",
+        "No inferred production implementation or visual/audio quality guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:23:05.063665Z",
+      "next_action": "Complete bounded actual alpha fixture",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0044",
+      "question": "Japanese first-party scenario and voice production handoff case",
+      "discipline": "NARR",
+      "status": "researching",
+      "priority": 87,
+      "priority_rationale": "Primary source gate exposes practical representation or production handoff gap, distinct from existing payload and save compatibility research",
+      "expected_artifact": "case-studies/narrative/cygames-scenario-voice-handoff.md",
+      "acceptance": [
+        "Source claims and original proposals separated",
+        "Bounded independent review and reproducible evidence where executed",
+        "No inferred production implementation or visual/audio quality guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T20:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:23:05.063665Z",
+      "next_action": "Develop source-depth case without fabricating studio schema or runtime tests",
       "blockers": []
     }
   ]
