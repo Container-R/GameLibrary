@@ -9,11 +9,13 @@ related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay
 updated_at: 2026-10-31
 verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创契约设计；未运行中间件或游戏引擎
 sources:
+  - https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html
+  - https://www.fmod.com/docs/2.04/api/studio-guide.html
   - https://www.fmod.com/docs/2.04/studio/authoring-events.html
   - https://qa.fmod.com/t/best-practices-for-tempo-sync-beatmatched-timing-across-events/20836/2
   - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game.html
   - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game-page-four.html
-  - https://github.com/audiokinetic/WwiseIncludes/blob/master/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h
+  - https://github.com/audiokinetic/WwiseIncludes/blob/be96b3af20bf27647f458bac10d973a63cd75e02/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h
 ---
 
 # 交互音乐状态交接契约：玩法意图不等于可听见的切换
@@ -32,7 +34,7 @@ sources:
 - **FMOD 官方人员案例（2023-11-06）**：Jeff 描述用条件决定 transition region 的退出或 magnet region 的进入，再通过量化控制节奏对齐。其示例不是“在游戏帧回调中自行估算下一小节”。[FMOD 官方论坛原答](https://qa.fmod.com/t/best-practices-for-tempo-sync-beatmatched-timing-across-events/20836/2)
 - **Wwise 历史项目**：Louis-Xavier Buffoni 的原作者案例建立于 Wwise 2010.1.3；以 Intensity Switch 驱动音乐容器，并处理段落尾音。作者在文章中把 Switch 值简称为 state，**不表示可把 SetSwitch API 随意换成 SetState**。[原案例：Game Interface / Assigning Content](https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game.html)
 - **历史快速变化反例**：同一案例第四部分指出，待转场目标尚未开始时可能撤回旧转场，快速变化可能跳过中间强度；目标已经开始则不能假定仍可撤回。因此音乐图不能只设计相邻强度之间的边。[原案例：Jump Transitions](https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game-page-four.html) 这是该案例语义，不是对 FMOD 或当前 Wwise 的取消保证。
-- **Wwise API 边界证据**：本轮访问日期为 2026-10-31；所链 master 为可变分支，公开头文件内容标明 v2017.2.0 Build 6500，PostEvent 为异步提交；SetSwitch 带关联 game object，SetState 签名没有该参数；音频处理是否使用独立线程受配置影响。这里只据此警告“提交不等于播放”“名字相似不等于作用域相同”“不能猜测回调线程”，不提供当前 SDK 接入代码。[Audiokinetic 官方公开头文件](https://github.com/audiokinetic/WwiseIncludes/blob/master/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h)
+- **Wwise API 边界证据**：本轮访问日期为 2026-10-31；已锁定提交 `be96b3af20bf27647f458bac10d973a63cd75e02`，历史公开头文件标明 v2017.2.0 Build 6500，PostEvent 为异步提交；SetSwitch 带关联 game object，SetState 签名没有该参数；音频处理是否使用独立线程受配置影响。这里只据此警告“提交不等于播放”“名字相似不等于作用域相同”“不能猜测回调线程”，不提供当前 SDK 接入代码。[Audiokinetic 官方公开头文件](https://github.com/audiokinetic/WwiseIncludes/blob/be96b3af20bf27647f458bac10d973a63cd75e02/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h)
 
 ## 一份可交接的最小合同（原创建议）
 
@@ -61,6 +63,10 @@ sources:
 
 这里的“成功提交”只是适配器成功边界；若底层 API 返回值无法检测素材或路由错误，还必须单独保留诊断/观察通道。不要建立“未观察到目标就不断重新 Play”的自激恢复循环。
 
+FMOD 2.04 的复音限制可通过 `START_FAILED` 报告启动拒绝；此路径不会产生 `STARTING`、`STARTED` 或 `STOPPED`。适配器应把它作为独立失败结果处理，按当前 generation 与句柄归属回收或决定有界重试，不能无限等待不存在的 STOPPED。`start` 返回成功仅表示提交，不据此把本地 Starting 标为 Active；Active 的工程定义与观察证据须明确，应用状态并不自动对应SDK枚举。[EventInstance API：callback types](https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html#fmod_studio_event_callback_type)
+
+同值去重假设由此适配器独占参数写入；若外部系统或事件逻辑也会改同一值，先仲裁或使缓存失效。submitted_mode记录的是提交，不冒充参数实时读值。
+
 ### 3. 谁拥有时间
 
 玩法拥有意图产生时间；音乐工程拥有允许的退出点、目标入口和桥段；音频集成拥有调度与输出诊断。不要用渲染帧累计出的下一小节时间代替中间件音乐时间线，然后在那个帧上临时启动目标。
@@ -68,6 +74,8 @@ sources:
 建议记录 `intent_time → dispatch_time → observed_transition_time`，并注明各时间戳的时钟域。观察回调到达游戏线程的时间不等于声卡出声时间；没有时钟映射或外部录音测量，不应报告“端到端延迟精确到采样”。
 
 例如固定 120 BPM、4/4 时每小节 2 秒。这只是音乐周期的算术例子，**不是请求必在 2 秒内可听见的服务承诺**：资源准备、规则优先级、桥段、边界附近的调度和输出缓冲都须另测。若设计要求急迫反馈，可把即时提示音与随后量化的背景音乐转场拆开，而不是为追求立即响应破坏全部音乐规则。
+
+FMOD 2.04 API Guide §13.4/13.8/13.11也直接说明命令异步处理、样本加载与依初始化设置变化的回调线程；deferred marker/beat设置不能推广为所有回调都在游戏线程。[当前版本依据](https://www.fmod.com/docs/2.04/api/studio-guide.html)
 
 回调处理建议只搬运小型有界记录，避免磁盘 I/O、阻塞等待和直接调用游戏对象；具体线程归属、同步方式与溢出策略由音频程序员按集成版本验证。这里提出实时路径防护要求，并未验证某个回调一定运行在音频线程。
 
@@ -94,6 +102,7 @@ sources:
 | Combat→Explore，紧邻边界前后各测试 | 离开战斗的响应与尾音满足已声明规则；无通用“立即撤回”假设 | 带时间戳的 profiler 捕获 |
 | 同一边界切到不同目标段落 | 分别检查退出节拍与目标乐句位置；对齐切换边界不自动代表乐句衔接正确 | 两端拍号、入口设置、录音 |
 | 参数请求失败后重试 | 不把失败缓存为已提交；恢复后仍能应用最新目标 | 返回值和 revision 轨迹 |
+| 复音限制拒绝启动 | 独立处理 START_FAILED，不等待 STOPPED，不无限重启；旧实例不影响新会话 | 限制配置、回调与句柄轨迹 |
 | 资源尚未就绪 / 素材缺失 | 不产生无限 Play 循环；明确静音、保留旧音乐或降级策略 | 失败原因及恢复记录 |
 | Starting 尚未完成即退出，随后资源就绪 | 取消的会话不得启动；资源按原任务归属释放 | 生命周期、任务取消与句柄记录 |
 | 旧 revision 重试晚于新模式成功提交 | 旧请求不得覆盖最新意图；重试读取最新值或丢弃失效任务 | revision、提交顺序及实际参数轨迹 |

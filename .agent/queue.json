@@ -299,7 +299,7 @@
       "id": "TASK-2026-0013",
       "question": "Steam动态云同步恢复如何避免旧内存覆盖已下载存档？",
       "discipline": "PLATFORM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 97,
       "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
       "expected_artifact": "solutions/platform/cloud-save-resume-boundary.md",
@@ -312,15 +312,15 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:25:27.472113Z",
-      "next_action": "存档稿审查与现有模型对抗实验",
+      "last_progress_at": "2026-10-31T13:31:48.752103Z",
+      "next_action": "独立对抗复核及修正已完成，等待发布与内容哈希核验",
       "blockers": []
     },
     {
       "id": "TASK-2026-0014",
       "question": "独立对固定步长与预测模型进行有种子的乱序/重复/积压状态测试并用故障变异检验断言强度",
       "discipline": "QA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 97,
       "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
       "expected_artifact": "research/experiments/deep-model-qa/README.md",
@@ -333,8 +333,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:25:27.472113Z",
-      "next_action": "存档稿审查与现有模型对抗实验",
+      "last_progress_at": "2026-10-31T13:31:48.752103Z",
+      "next_action": "独立对抗复核及修正已完成，等待发布与内容哈希核验",
       "blockers": []
     }
   ]

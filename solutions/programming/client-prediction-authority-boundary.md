@@ -98,3 +98,7 @@ python3 research/experiments/client-prediction/test_prediction.py
 ## 关联知识
 
 [固定Tick与输入流](fixed-step-simulation-boundary.md)区分重放不变量与实际采样；[玩法程序交付](../../roles/programming/gameplay-programmer.md)用于明确集成与验收责任。
+
+## 有种子的对抗性复核
+
+[独立模型审查](../../research/experiments/deep-model-qa/README.md)使用200个预测调度和200个固定步调度、独立状态/事件判据及4类故障变异；原始输出含模型内容哈希。该结果加强有限模型证据，不替代真实输入、网络、引擎或物理集成。

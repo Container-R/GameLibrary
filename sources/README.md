@@ -19,6 +19,8 @@
 | 模态焦点恢复 | [知识条目](../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，纯状态模型不证明真实渲染和认证 |
 | 伪本地化与格式契约 | [知识条目](../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；未执行引擎或格式化器 |
 
+| Steam恢复与存档写隔离 | [知识条目](../solutions/platform/cloud-save-resume-boundary.md) | Valve滚动中英文文档同源；串行内存模型不证明文件系统或平台时序 |
+
 ## 更新规则
 
 1. 新增结论必须能定位到实际读取的来源或已执行实验；搜索结果摘要不代替正文。

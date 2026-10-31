@@ -90,3 +90,7 @@ record(backlog=A, simulatedSteps=steps)
 ## 关联方案
 
 [转身脚滑与根运动职责](../animation/turn-in-place-foot-sliding.md)进一步讨论动画增量、控制器与足底接触之间的边界。
+
+## 有种子的对抗性复核
+
+[独立模型审查](../../research/experiments/deep-model-qa/README.md)使用200个预测调度和200个固定步调度、独立状态/事件判据及4类故障变异；原始输出含模型内容哈希。该结果加强有限模型证据，不替代真实输入、网络、引擎或物理集成。

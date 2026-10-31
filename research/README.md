@@ -15,3 +15,9 @@ python3 scripts/run_model_tests.py
 ## 覆盖与分类审计
 
 [初始七篇覆盖快照与ACCESS兼容拆分提案](audits/initial-coverage-and-taxonomy.md)：历史快照不是实时完成率，该历史提案后的兼容拆分记录见[分类说明](../taxonomy/README.md)。
+
+## 对抗性深度验证
+
+[独立调度、守恒与故障变异实验](experiments/deep-model-qa/README.md)单独运行，不把增加种子数当真实系统验证。[音频来源深度复核](audits/audio-source-depth-review.md)记录固定历史提交与启动失败回调边界。
+
+[存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留初始失败和修复后回归；已提交I/O的反例单列，不能把反例断言通过计作保护能力。

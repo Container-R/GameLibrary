@@ -1,0 +1,25 @@
+test_ancestor_revision_cannot_be_reissued (__main__.Tests.test_ancestor_revision_cannot_be_reissued) ... ok
+test_clean_fast_forward (__main__.Tests.test_clean_fast_forward) ... ok
+test_dirty_divergence_preserves_both (__main__.Tests.test_dirty_divergence_preserves_both) ... ok
+test_disk_changed_during_read (__main__.Tests.test_disk_changed_during_read) ... ok
+test_duplicate_notification_does_not_write (__main__.Tests.test_duplicate_notification_does_not_write) ... ok
+test_duplicate_queued_jobs_only_one_dispatch (__main__.Tests.test_duplicate_queued_jobs_only_one_dispatch) ... ok
+test_gate_prevents_new_edits (__main__.Tests.test_gate_prevents_new_edits) ... ok
+test_identity_registry_exhaustion_fails_closed (__main__.Tests.test_identity_registry_exhaustion_fails_closed) ... ok
+test_incoming_ancestor_id_cannot_form_cycle (__main__.Tests.test_incoming_ancestor_id_cannot_form_cycle) ... ok
+test_incoming_reserved_identity_is_recovery_only (__main__.Tests.test_incoming_reserved_identity_is_recovery_only) ... ok
+test_missing_file_not_recreated (__main__.Tests.test_missing_file_not_recreated) ... ok
+test_no_notification_disk_change_rejects_queued_job (__main__.Tests.test_no_notification_disk_change_rejects_queued_job) ... ok
+test_old_load_completion_rejected (__main__.Tests.test_old_load_completion_rejected) ... ok
+test_queued_and_observed_ids_cannot_be_reissued (__main__.Tests.test_queued_and_observed_ids_cannot_be_reissued) ... ok
+test_revision_identity_requires_exact_nonempty_string (__main__.Tests.test_revision_identity_requires_exact_nonempty_string) ... ok
+test_same_revision_changed_content_is_not_accepted (__main__.Tests.test_same_revision_changed_content_is_not_accepted) ... ok
+test_sibling_revision_requires_policy (__main__.Tests.test_sibling_revision_requires_policy) ... ok
+test_stale_queued_write_cannot_overwrite_download (__main__.Tests.test_stale_queued_write_cannot_overwrite_download) ... ok
+test_unknown_schema_fails_closed (__main__.Tests.test_unknown_schema_fails_closed) ... ok
+test_unnotified_same_revision_content_preserved_on_dispatch (__main__.Tests.test_unnotified_same_revision_content_preserved_on_dispatch) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.001s
+
+OK
