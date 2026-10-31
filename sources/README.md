@@ -105,3 +105,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Vulkan能力门来源](../research/source-notes/vulkan-capability-gate.md)区分固定ABI/发现规则与单次instance创建失败；库存在、设备枚举和shader执行不是同一证据。
 
 [在线服务职责与平台压测来源](../research/source-notes/online-services-engineer-role.md)将日本团队实际责任、Riot历史替身范围和原创未执行交接工作表分开；不从平台请求链推断真实玩法容量。
+
+[League服务器分配来源](../research/source-notes/league-server-allocation-observation-age.md)区分观测更新延迟、年轻对局未来需求和机器就绪；历史报告不证明普适策略或收益。

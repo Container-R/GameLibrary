@@ -1667,11 +1667,14 @@
       "id": "TASK-2026-0067",
       "question": "Why can low observed server CPU coexist with insufficient future match headroom, and what measurement/placement handoff exposes that gap?",
       "discipline": "NET",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "First-party historical allocation evidence adds concrete delayed-observation/young-match-demand boundary beyond platform mock scope",
       "expected_artifact": "Narrow source-backed historical case and original unexecuted measurement/lifecycle acceptance worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "case-studies/network/league-server-allocation-observation-age.md",
+        "research/source-notes/league-server-allocation-observation-age.md"
+      ],
       "acceptance": [
         "Read Riot2025 original allocation report; distinguish collection granularity and selector refresh",
         "Separate workload growth, stale observations, pending work and fleet readiness without inventing internal mechanisms",
@@ -1682,8 +1685,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T23:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:53:12.628710Z",
-      "next_action": "Draft accepted source-gate14f06dfb into concise historical case plus original five-party handoff; independent source review next",
+      "last_progress_at": "2026-10-31T22:55:31.861277Z",
+      "next_action": "Publish independently reviewed case; preserve historical comparison, uninspected formula and unexecuted worksheet boundaries",
       "blockers": []
     }
   ]

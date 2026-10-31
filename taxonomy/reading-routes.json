@@ -266,6 +266,11 @@
       "subject_profile_id": "ROLE-NET-001",
       "entries": [
         {
+          "document_id": "CASE-NET-001",
+          "question": "刚读到低CPU，为什么仍可能放下过多年轻对局？",
+          "rationale": "区分观测年龄、需求年龄和机器就绪；历史比较不是通用策略或实际复现。"
+        },
+        {
           "document_id": "SOL-NET-001",
           "question": "对局内预测与平台服务链是同一种验证吗？",
           "rationale": "既有离散协议模型不证明登录、匹配或分配服务容量。"

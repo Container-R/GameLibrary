@@ -133,6 +133,8 @@
 
 岗位起点：[在线服务工程师：把服务调用成功交接为可验证的游戏会话](roles/network/online-services-engineer.md) — `ROLE-NET-001` · `source-backed` · `NET`
 
+- 刚读到低CPU，为什么仍可能放下过多年轻对局？ → [League 服务器分配：观测到的低负载，不等于下一场对局的余量](case-studies/network/league-server-allocation-observation-age.md) — `CASE-NET-001` · `source-backed` · `NET`
+  - 关联理由：区分观测年龄、需求年龄和机器就绪；历史比较不是通用策略或实际复现。
 - 对局内预测与平台服务链是同一种验证吗？ → [客户端移动预测的权威边界与确认重放契约](solutions/programming/client-prediction-authority-boundary.md) — `SOL-NET-001` · `source-backed` · `NET`
   - 关联理由：既有离散协议模型不证明登录、匹配或分配服务容量。
 - 压测报告对应哪个候选和配置？ → [构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `ROLE-ENGINE-001` · `source-backed` · `ENGINE`

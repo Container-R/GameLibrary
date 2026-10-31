@@ -109,3 +109,5 @@ python3 scripts/evidence/test_verify.py
 [Vulkan隔离能力门](experiments/vulkan-capability-probe/README.md)记录一次create返回-9、零枚举/销毁；退出0是负面观察已归档，不是GPU成功。
 
 [在线服务工程师](../roles/network/online-services-engineer.md)补充已有NET分类下的岗位交接：声明实际组件、替身及遗漏边界责任，不运行虚构服务制造容量证据。
+
+[League分配与观测年龄案例](../case-studies/network/league-server-allocation-observation-age.md)提出未执行的五方交接与区分力验收问题，不以虚构模拟结果充当历史复现。

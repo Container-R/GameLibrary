@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "20261031T225114Z-server-allocation-case",
+  "task_ids": [
+    "TASK-2026-0067"
+  ],
+  "started_at": "2026-10-31T22:51:15Z",
+  "ended_at": "2026-10-31T22:55:31.861277Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.riotgames.com/en/news/tech-blog-cpu-usage"
+  ],
+  "evidence": "Historical first-party report dated2025-01-16; original observation-age/future-demand handoff and acceptance questions unexecuted",
+  "new_runtime_or_load_tests": 0,
+  "review": "Main and independent direct original source read accepted exact draft6b840e89/sourceb0dbd4b3; no universal policy or causal proof",
+  "source_limits": "Direct original formula/weight image fetch by main returnedcachemiss; no image values/formula inferred; no raw data or private implementation",
+  "validation": {
+    "archive_checks_normal": 350,
+    "archive_checks_optimized": 350,
+    "archive_failures": 0,
+    "indexed_articles": 32,
+    "queue_tasks": 67,
+    "declared_paths": 59,
+    "prior_experiment_files_byte_identical": 1833
+  },
+  "next_action": "Prioritize strengthening a documented existing evidence gap after bounded exact-artifact/capability triage"
+}
