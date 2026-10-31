@@ -299,7 +299,7 @@
       "id": "TASK-2026-0013",
       "question": "Steam动态云同步恢复如何避免旧内存覆盖已下载存档？",
       "discipline": "PLATFORM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 97,
       "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
       "expected_artifact": "solutions/platform/cloud-save-resume-boundary.md",
@@ -309,18 +309,20 @@
         "保留原始输出与失败证据"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:31:48.752103Z",
-      "next_action": "独立对抗复核及修正已完成，等待发布与内容哈希核验",
-      "blockers": []
+      "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:34:12.035660Z",
+      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
     },
     {
       "id": "TASK-2026-0014",
       "question": "独立对固定步长与预测模型进行有种子的乱序/重复/积压状态测试并用故障变异检验断言强度",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 97,
       "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
       "expected_artifact": "research/experiments/deep-model-qa/README.md",
@@ -330,11 +332,37 @@
         "保留原始输出与失败证据"
       ],
       "source_leads": [],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:31:48.752103Z",
+      "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
+      "blockers": [],
+      "completed_at": "2026-10-31T13:34:12.035660Z",
+      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
+    },
+    {
+      "id": "TASK-2026-0015",
+      "question": "以纯状态适配模型检验既有音乐契约的启动拒绝、取消、异步失效与成功提交去重",
+      "discipline": "SFX",
+      "status": "researching",
+      "priority": 96,
+      "priority_rationale": "现有高价值合同的失败路径深化，不新增泛化文章",
+      "expected_artifact": "research/experiments/audio-lifecycle/README.md",
+      "acceptance": [
+        "实际调用日志而非集合掩盖重复",
+        "START_FAILED无STOPPED路径明确结束",
+        "跨generation/revision与取消失效回归",
+        "严格限定无中间件/音频执行"
+      ],
+      "source_leads": [
+        "https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:31:48.752103Z",
-      "next_action": "独立对抗复核及修正已完成，等待发布与内容哈希核验",
+      "last_progress_at": "2026-10-31T13:34:12.035660Z",
+      "next_action": "原创假端口状态模型与独立对抗审查",
       "blockers": []
     }
   ]
