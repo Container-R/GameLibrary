@@ -129,10 +129,10 @@
       "id": "TASK-2026-0005",
       "question": "比较多人游戏客户端预测与权威服务器的常见同步策略",
       "discipline": "NET",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
-      "expected_artifact": "solutions/networking/client-prediction-authority.md",
+      "expected_artifact": "solutions/programming/client-prediction-authority-boundary.md",
       "acceptance": [
         "真实原始资料至少一项",
         "问题或职业职责有可操作细节",
@@ -144,18 +144,18 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T13:08:23.726120Z",
-      "next_action": "原始资料核对与原创契约/实验设计",
+      "last_progress_at": "2026-10-31T13:11:28.886629Z",
+      "next_action": "原始来源与模型/实验边界已验收，等待发布核验",
       "blockers": []
     },
     {
       "id": "TASK-2026-0006",
       "question": "研究移动和PC平台的特效性能预算及实际GPU粒子限制",
       "discipline": "VFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 86,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
-      "expected_artifact": "solutions/vfx/gpu-particle-budget.md",
+      "expected_artifact": "solutions/vfx/niagara-performance-budget.md",
       "acceptance": [
         "真实原始资料至少一项",
         "问题或职业职责有可操作细节",
@@ -167,8 +167,8 @@
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-10-31T13:08:23.726120Z",
-      "next_action": "原始资料核对与原创契约/实验设计",
+      "last_progress_at": "2026-10-31T13:11:28.886629Z",
+      "next_action": "原始来源与模型/实验边界已验收，等待发布核验",
       "blockers": []
     },
     {

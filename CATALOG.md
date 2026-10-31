@@ -11,5 +11,7 @@
 
 - [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `source-backed` · `ANIM`
 - [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `source-backed` · `SFX`
+- [客户端移动预测的权威边界与确认重放契约](solutions/programming/client-prediction-authority-boundary.md) — `source-backed` · `NET`
 - [用固定 Tick 划清战斗模拟与引擎表现边界](solutions/programming/fixed-step-simulation-boundary.md) — `source-backed` · `PROG`
+- [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `source-backed` · `VFX`
 
