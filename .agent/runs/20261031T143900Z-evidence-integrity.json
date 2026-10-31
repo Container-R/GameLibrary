@@ -1,0 +1,75 @@
+{
+  "run_id": "20261031T143900Z-evidence-integrity",
+  "started_at": "2026-10-31T14:29:30Z",
+  "ended_at": null,
+  "task_id": [
+    "TASK-2026-0024"
+  ],
+  "actions": [
+    "显式注册5个当前Godot夹具，检查当前源码/作者复核元数据/原始RESULT_JSON与解析记录，排除历史初稿",
+    "独立审查发现1e999浮点溢出绕过parse_constant；修正parse_float有限性并新增正负溢出回归，未发现真实档案污染",
+    "65项真实档案检查及9项隔离工具单测通过；独立快照确认档案未被校验器修改",
+    "集成者在发布路径重跑并比较普通/-O报告逐字节相同，不执行任何归档夹具",
+    "仓库属性禁止隐式换行转换以保留哈希字节；临时Linux Git仓库core.autocrlf=true验证检出字节和文本diff，禁用hooks及签名，不改用户全局配置",
+    "新增忽略Python缓存与.godot目录，保留.import/.uid元数据规则"
+  ],
+  "sources_examined": [
+    "https://git-scm.com/docs/gitattributes"
+  ],
+  "evidence_added": [
+    "只读显式注册表一致性工具",
+    "工具负向测试与审查缺陷/修正记录",
+    "精确字节检出策略的本地Git检查"
+  ],
+  "files_changed": [
+    ".gitattributes",
+    ".gitignore",
+    "README.md",
+    "research/README.md",
+    ".agent/queue.json",
+    ".agent/state.json",
+    "scripts/evidence/test-output.txt",
+    "scripts/evidence/test_verify.py",
+    "scripts/evidence/SHA256SUMS",
+    "scripts/evidence/verify.py",
+    "scripts/evidence/README.md",
+    "scripts/evidence/registry.json",
+    "scripts/evidence/archive-report.json",
+    "research/audits/evidence-integrity/check_git_byte_policy.py",
+    "research/audits/evidence-integrity/git-byte-policy-result.json",
+    "research/audits/evidence-integrity/test_verify.py",
+    "research/audits/evidence-integrity/AUDIT.md",
+    "research/audits/evidence-integrity/verify.py",
+    "research/audits/evidence-integrity/tests.stderr",
+    "research/audits/evidence-integrity/tests.stdout",
+    "research/audits/evidence-integrity/integrator-check.txt",
+    "research/audits/evidence-integrity/verifier.stderr",
+    "research/audits/evidence-integrity/registry.json",
+    "research/audits/evidence-integrity/archive-report.json",
+    "research/audits/evidence-integrity/final/test_verify.py",
+    "research/audits/evidence-integrity/final/verify.py",
+    "research/audits/evidence-integrity/final/tests.stderr",
+    "research/audits/evidence-integrity/final/tests.stdout",
+    "research/audits/evidence-integrity/final/regressions.txt",
+    "research/audits/evidence-integrity/final/verifier.stderr",
+    "research/audits/evidence-integrity/final/registry.json",
+    "research/audits/evidence-integrity/final/archive-report.json"
+  ],
+  "commit_sha": null,
+  "validation": {
+    "archive_consistency": "65 passed;0failed; not65 engine tests",
+    "isolated_checker_tests": "9 passed; separate from86 model methods",
+    "independent_review": "final source SHA b62a4bfc2c8b83506290e513e9de4965023c810531b6d18a17d21301b99c2cd8 verified",
+    "optimized_mode": "normal/-O archive reports identical",
+    "git_policy": "Linux Git2.52.0 temporary repository check passed; not Windows OS test",
+    "structure_errors": 0,
+    "structure_warnings": 0,
+    "knowledge_documents": 14,
+    "local_markdown_links": "120 checked;0 missing"
+  },
+  "blockers": [
+    "一致性不是执行真实性、语义正确性或抗恶意篡改证明；静态快照路径检查不是TOCTOU安全屏障；fixed-step未有binary元数据不虚构校验"
+  ],
+  "next_action": "审计下一项跨学科高价值问题，避免继续偏向同类引擎小样例",
+  "outcome": "reviewed; publication pending"
+}

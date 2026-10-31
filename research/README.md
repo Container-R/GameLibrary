@@ -36,3 +36,18 @@ python3 scripts/run_model_tests.py
 ## 审查与分类历史
 
 [初始七篇覆盖快照](audits/initial-coverage-and-taxonomy.md)不是实时完成率；其后 ACCESS 兼容拆分见 [分类说明](../taxonomy/README.md)。[存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留发布前失败和修复回归。各实际夹具的独立复核记录在其 README 中定位，同一机器的重复验证不冒称跨平台复现。
+
+## 只读证据一致性检查
+
+从仓库根运行：
+
+```sh
+python3 scripts/evidence/verify.py .
+python3 scripts/evidence/test_verify.py
+```
+
+[工具说明与显式注册表](../scripts/evidence/README.md)覆盖当前5个Godot夹具的65项一致性检查；[独立工具审查](audits/evidence-integrity/AUDIT.md)保留数值溢出解析缺陷及修正。它不启动归档夹具或引擎，不检查当前安装的Godot二进制，不以一致性证明执行真实性、来源可信或语义正确。历史作者摘要和失败初稿不会误当当前源码校验；新增当前证据需审查注册表。
+
+9项工具单元测试与游戏模型的86项测试是不同范围，65项文件/记录检查也不是65项引擎行为测试。运行前仍应审阅工具代码；应针对静止快照，不能在恶意并发改写目录上宣称无竞态安全。
+
+精确字节哈希也会发现换行变化。仓库`.gitattributes`使用`* -text`禁止Git自动换行转换，而不禁止普通文本diff；这是[Git官方属性语义](https://git-scm.com/docs/gitattributes)，不是字符编码或运行时兼容保证。保留原始字节比替换换行后继续沿用旧哈希更重要。[本地策略检查](audits/evidence-integrity/check_git_byte_policy.py)在临时Git仓库设`core.autocrlf=true`后验证检出字节与文本diff；它是Linux/Git2.52.0的有限测试，不是Windows执行测试，也不修改用户全局Git配置。该检查需Git，和只需Python标准库的校验器分开。

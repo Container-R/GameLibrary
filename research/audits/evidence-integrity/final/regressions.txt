@@ -1,0 +1,5 @@
+overflow rejected 1e999
+overflow rejected -1e999
+unselected metadata overflow: {'scope': 'Declared archive consistency only; not genuine execution, binary authenticity or semantic correctness', 'checks': [{'id': 'x', 'status': 'fail', 'detail': 'nonfinite JSON number: 1e999'}], 'passed': 0, 'failed': 1}
+real archive 65 0
+verifier_sha256 b62a4bfc2c8b83506290e513e9de4965023c810531b6d18a17d21301b99c2cd8

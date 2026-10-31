@@ -577,10 +577,10 @@
       "id": "TASK-2026-0024",
       "question": "如何自动发现当前引擎证据源码哈希、原始日志和解析记录的脱节，而不误验历史失败快照？",
       "discipline": "QA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 96,
       "priority_rationale": "已有真实证据数量增加，优先完整性和长期可维护性而非新文章数量",
-      "expected_artifact": "scripts/verify_evidence_manifests.py",
+      "expected_artifact": "scripts/evidence/verify.py",
       "acceptance": [
         "只读，不启动引擎或执行仓库代码",
         "五个当前Godot夹具显式清单，历史记录排除明确",
@@ -592,8 +592,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:30:40.037539Z",
-      "next_action": "编写有界标准库证据校验器，运行真实归档并独立故障复核",
+      "last_progress_at": "2026-10-31T14:39:29.406486Z",
+      "next_action": "65项静态证据检查、9项隔离单测及独立审查完成，待发布",
       "blockers": []
     }
   ]

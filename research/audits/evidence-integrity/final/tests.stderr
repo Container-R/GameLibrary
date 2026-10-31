@@ -1,0 +1,14 @@
+test_bad_json_rejected (__main__.Tests.test_bad_json_rejected) ... ok
+test_corruption_detected (__main__.Tests.test_corruption_detected) ... ok
+test_empty_or_duplicate_registry_rejected (__main__.Tests.test_empty_or_duplicate_registry_rejected) ... ok
+test_good_source (__main__.Tests.test_good_source) ... ok
+test_log_records (__main__.Tests.test_log_records) ... ok
+test_manifest_omission_rejected (__main__.Tests.test_manifest_omission_rejected) ... ok
+test_missing_file_detected (__main__.Tests.test_missing_file_detected) ... ok
+test_path_escape_rejected (__main__.Tests.test_path_escape_rejected) ... ok
+test_symlink_escape_rejected (__main__.Tests.test_symlink_escape_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK
