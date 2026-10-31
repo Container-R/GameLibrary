@@ -4,7 +4,7 @@
   "started_at": "2026-10-31T22:26:34Z",
   "protocol_accepted_before_code_at": "2026-10-31T22:26:15Z",
   "local_review_completed_at": "2026-10-31T22:34:43.473737Z",
-  "outcome": "reviewed locally; publication pending",
+  "outcome": "published and read back",
   "validation": {
     "native_behavior_attempts": 3,
     "native_behavior_full_oracle_accepted": 2,
@@ -31,7 +31,12 @@
     "portable_checker_child_processes": 0,
     "unchanged_existing_experiment_files": 1719,
     "indexed_source_backed_articles": 30,
-    "new_indexed_articles": 0
+    "new_indexed_articles": 0,
+    "selected_blob_hashes_verified": 73,
+    "outside_tree_changes": 0,
+    "local_markdown_links_checked": 466,
+    "receipt_queue_tasks_checked": 65,
+    "receipt_declared_paths_checked": 53
   },
   "limits": [
     "Initial full-oracle failure retained; only unfrozen false-only getter assumption removed, no geometry/tolerance/history changes",
@@ -45,5 +50,7 @@
     "contract_sha256": "46d4965fb6b945e9acc0f5d41118747525a2545180af9181874933e6eb95ea65",
     "current_runner_sha256": "eeacbeff431533918d472ff5804eb0efe222e91503402bb86e56c425f04f8ef1",
     "initial_runner_sha256": "898905d9beec2c9e215b7fb6d0e330c3a0a896b2e6b155050fd77206c89ca565"
-  }
+  },
+  "commit_sha": "46721b505d6e8f1d367668a05ace2d58a23fc8ae",
+  "ended_at": "2026-10-31T22:37:39.108968Z"
 }

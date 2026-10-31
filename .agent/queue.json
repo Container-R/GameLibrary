@@ -1580,7 +1580,7 @@
       "id": "TASK-2026-0064",
       "question": "Can two built-in LookAtModifier3D nodes demonstrate ancestor-order invalidation and the difference between signal-time modified poses and restored base poses?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Existing single-bone root extraction does not validate modifier-order worksheet; native bounded observation can address a distinct high-value pose dependency gap",
       "expected_artifact": "Source-frozen two-bone native modifier-order evidence or accurately retained failed gate; integrate into existing animation article only if accepted",
@@ -1597,11 +1597,37 @@
         "Use exact additive five-location helper; preserve all raw failures, binary provenance caveat and finite timeouts",
         "No real IK, AnimationMixer, skin/rendering, physical contacts or Unity/Unreal order guarantee"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T23:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T22:34:43.473737Z",
-      "next_action": "Publish independently reviewed native order/observation evidence and original failed oracle without upgrading prior Rig or IK scope",
+      "next_action": "Preserve exact built-in modifier and observation boundary; no upgrade of unexecuted Rig/IK/animation scope",
+      "blockers": [],
+      "completed_at": "2026-10-31T22:37:39.108968Z",
+      "commit_sha": "46721b505d6e8f1d367668a05ace2d58a23fc8ae"
+    },
+    {
+      "id": "TASK-2026-0065",
+      "question": "Does the scoped installed Vulkan loader support instance/device enumeration sufficiently to justify a later shader-execution proposal, or is that branch blocked?",
+      "discipline": "GFX",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Existing matrix article is actual compile plus CPU interpretation only; loader presence cannot establish shader execution capability",
+      "expected_artifact": "Frozen ABI-reviewed bounded loader/instance/enumeration capability observation or exact negative; no shader execution claim",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read current matrix evidence and official pinned header/calling convention and loader discovery docs",
+        "Review LP64 structure layout and all three function signatures before ctypes native execution",
+        "One isolated native child; create once, count once, bounded fill once, destroy only a successfully created instance",
+        "Record exact scoped minimal environment, real call counts, return codes and diagnostics without full parent environment or handle addresses",
+        "No driver install, override-manufactured failure, private manifest search, logical device, shader or pipeline operation",
+        "Negative is not universal absence of physical GPU; positive enumeration is not shader execution or hardware proof"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T23:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T22:37:39.108968Z",
+      "next_action": "Complete independent ABI/control review of source gate, freeze minimal probe before one authorized scoped invocation",
       "blockers": []
     }
   ]
