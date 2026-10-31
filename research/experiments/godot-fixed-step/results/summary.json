@@ -1,0 +1,145 @@
+{
+  "version": "4.6.3.stable.official.7d41c59c4",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "runtime_dir": "/tmp/gamelibrary-godot-etixq9vg",
+  "source_sha256": {
+    "main.gd": "720b12a28815c02dc48bcd0acbccadf7f3b757f24d0fe3717cf9dc86cbe38efa",
+    "main.tscn": "123d4fc6d936a4c6f062edeb67d4fa5fdf68f859d086591fe69ea7fa8dcaefc6",
+    "project.godot": "bde86f587b7b7d112fee449a8f48736687fcd0b8f50d72491a1b303376395ada",
+    "run.py": "5c8ebec7b7456a7193e1aa87a9f655e1f1a68c582df77718396b85c7b088ad2a"
+  },
+  "runs": [
+    {
+      "name": "fixed-fps-30",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--fixed-fps",
+        "30"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.27063948300019547,
+      "process_callbacks": 60,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "2": 60
+      },
+      "process_delta_sum": 1.9999999999999978,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    },
+    {
+      "name": "fixed-fps-60",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--fixed-fps",
+        "60"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.2677999400002591,
+      "process_callbacks": 120,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "1": 120
+      },
+      "process_delta_sum": 2.000000000000004,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    },
+    {
+      "name": "fixed-fps-144",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--fixed-fps",
+        "144"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.27956887599975744,
+      "process_callbacks": 289,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "0": 169,
+        "1": 120
+      },
+      "process_delta_sum": 2.006944444444443,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    },
+    {
+      "name": "max-fps-30",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--max-fps",
+        "30"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.2225828000000547,
+      "process_callbacks": 63,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "0": 3,
+        "2": 60
+      },
+      "process_delta_sum": 2.01151,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    },
+    {
+      "name": "max-fps-60",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--max-fps",
+        "60"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.216298879000533,
+      "process_callbacks": 123,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "0": 3,
+        "1": 120
+      },
+      "process_delta_sum": 2.011452,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    },
+    {
+      "name": "max-fps-144",
+      "command": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step",
+        "--single-threaded-scene",
+        "--max-fps",
+        "144"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.215275376000136,
+      "process_callbacks": 290,
+      "physics_callbacks": 120,
+      "steps_per_process_histogram": {
+        "0": 170,
+        "1": 120
+      },
+      "process_delta_sum": 2.005032,
+      "tick_states_sha256": "db519adc4374bf18ba72ac2da4fa0e2c12fdebad5d87d0807f0eec6b9b404267"
+    }
+  ],
+  "checks": "6 actual Godot processes matched the independent 120-tick integer oracle"
+}

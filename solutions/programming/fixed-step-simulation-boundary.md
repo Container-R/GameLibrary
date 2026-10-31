@@ -6,11 +6,13 @@ status: source-backed
 primary_discipline: PROG
 related_roles: [gameplay-programmer, animation-programmer, engine-programmer, network-programmer]
 related_topics: [fixed-timestep, input-buffering, deterministic-simulation, presentation-adapter]
-engines: [engine-agnostic, Unity]
-versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档"]
+engines: [engine-agnostic, Unity, Godot]
+versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 实际夹具"]
 updated_at: 2026-10-31
-verification_method: 原始文档核对；设计与测试矩阵为原创推导，未运行 Unity 或跨平台确定性测试
+verification_method: 原始文档核对、原创模型与Godot4.6.3实际无头回调夹具；未运行Unity或跨平台确定性测试
 sources:
+  - https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html
+  - https://docs.godotengine.org/en/4.6/tutorials/editor/command_line_tutorial.html
   - https://gafferongames.com/post/fix_your_timestep/
   - https://gafferongames.com/post/deterministic_lockstep/
   - https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Settings.html
@@ -94,3 +96,13 @@ record(backlog=A, simulatedSteps=steps)
 ## 有种子的对抗性复核
 
 [独立模型审查](../../research/experiments/deep-model-qa/README.md)使用200个预测调度和200个固定步调度、独立状态/事件判据及4类故障变异；原始输出含模型内容哈希。该结果加强有限模型证据，不替代真实输入、网络、引擎或物理集成。
+
+## Godot 4.6.3 实际回调集成补充
+
+2026-10-31 使用 `4.6.3.stable.official.7d41c59c4` 实际运行原创无头夹具：唯一 `_physics_process` 调度者以60 Hz消费规范化tick输入，`_process` 只读数值快照，不再叠加自建累加器。六个进程分别使用 `--fixed-fps` 与 `--max-fps` 的30/60/144配置；全部运行到120规则tick，逐tick整数状态与独立Python判据一致，最终x=-30、攻击事件[6,8]，tick9边界事件不生效。原始计数、版本、命令、配置和输出见[实际引擎夹具](../../research/experiments/godot-fixed-step/README.md)。集成复核还断言低频多步/高频零步确实发生、每帧tick与steps一致，并核对数值插值和核心/previous快照只读。
+
+人工固定时间组的主回调数为60/120/289，并不等于实际显示帧；Godot官方CLI说明 `--fixed-fps` 关闭实时同步，本机约0.2秒墙钟就完成约2秒模拟。`--max-fps` 组按实时上限运行约2秒，主回调数与启动/调度有关，不保证精确目标频率。这里比较的是相同规则tick终点，而非相同墙钟时刻。
+
+此结果将“单调度者、规范化输入、只读表现”的证据推进到真实Godot回调，但没有运行设备输入、可见渲染、物理刚体、跨平台/不同构建或Unity；也没有测试卡顿欠账策略。不能把原文自定义Python调度器的保留欠账语义归给Godot。整篇仍为source-backed，以上有限夹具结果为实际执行证据。
+
+官方定位：[Godot4.6 Idle and Physics Processing](https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html)、[Godot4.6 CLI reference](https://docs.godotengine.org/en/4.6/tutorials/editor/command_line_tutorial.html)；访问2026-10-31。

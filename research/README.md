@@ -21,3 +21,7 @@ python3 scripts/run_model_tests.py
 [独立调度、守恒与故障变异实验](experiments/deep-model-qa/README.md)单独运行，不把增加种子数当真实系统验证。[音频来源深度复核](audits/audio-source-depth-review.md)记录固定历史提交与启动失败回调边界。
 
 [存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留初始失败和修复后回归；已提交I/O的反例单列，不能把反例断言通过计作保护能力。
+
+## 实际引擎回调证据
+
+[Godot4.6.3无头夹具](experiments/godot-fixed-step/README.md)记录真实二进制与6组回调轨迹；其脚本需本机Godot，不由纯Python模型总入口自动触发。只证明声明配置下的规范化输入回调集成，不等于GPU、设备输入或物理确定性验证。

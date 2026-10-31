@@ -345,7 +345,7 @@
       "id": "TASK-2026-0015",
       "question": "以纯状态适配模型检验既有音乐契约的启动拒绝、取消、异步失效与成功提交去重",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 96,
       "priority_rationale": "现有高价值合同的失败路径深化，不新增泛化文章",
       "expected_artifact": "research/experiments/audio-lifecycle/README.md",
@@ -361,8 +361,32 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T14:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:34:12.035660Z",
-      "next_action": "原创假端口状态模型与独立对抗审查",
+      "last_progress_at": "2026-10-31T13:44:47.843138Z",
+      "next_action": "7项模型测试及独立200种子审查通过，待发布",
+      "blockers": []
+    },
+    {
+      "id": "TASK-2026-0016",
+      "question": "实际Godot4.6.3中固定规则回调与主帧表现边界是否通过独立整数轨迹判据？",
+      "discipline": "PROG",
+      "status": "reviewing",
+      "priority": 98,
+      "priority_rationale": "深化既有固定步文章真实引擎证据，不增加文章数量",
+      "expected_artifact": "research/experiments/godot-fixed-step/README.md",
+      "acceptance": [
+        "实际已安装引擎和版本记录",
+        "人工delta与实时上限分开",
+        "原始逐回调日志与独立判据",
+        "未测范围明确"
+      ],
+      "source_leads": [
+        "https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T14:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T13:44:47.843138Z",
+      "next_action": "6个实际引擎进程通过，待发布和远程内容验证",
       "blockers": []
     }
   ]

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/gamelibrary-work/research/experiments/godot-fixed-step/run.py", line 15, in <module>
+    raise RuntimeError('Run without -O: verification requires enabled assertions')
+RuntimeError: Run without -O: verification requires enabled assertions

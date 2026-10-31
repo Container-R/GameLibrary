@@ -4,7 +4,7 @@
 
 | 研究问题 | 来源记录入口 | 证据边界 |
 |---|---|---|
-| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；Python模型不替代引擎验证 |
+| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；另有Godot4.6.3真实无头回调证据，范围不外推物理/输入 |
 | 转身脚滑与运动责任 | [知识条目来源S1–S6](../solutions/animation/turn-in-place-foot-sliding.md) | Unity6000.0、UE5.6；平面接触模型不验证IK实现 |
 | 玩法程序工作接口 | [岗位档案](../roles/programming/gameplay-programmer.md) | 行业组织、雇主和教学项目的公开样本，不推定全行业组织结构 |
 | 技术美术资产交接 | [岗位档案来源S1–S5](../roles/technical-art/technical-artist.md) | ScreenSkills、Ubisoft历史/岗位样本、UE5.6 FBX；不外推所有导入器 |

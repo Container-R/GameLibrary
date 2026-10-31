@@ -37,3 +37,7 @@
 ## 存档发布前独立回归
 
 `python3 research/experiments/deep-model-qa/test_cloud_adversarial.py` 在修复后执行5项通过。`cloud-before-fix-output.txt` 是未发表初稿的2项失败记录，`cloud-after-fix-output.txt` 为同一独立断言修复后记录；[审查说明](../../audits/cloud-save-adversarial-review.md)解释差异。它们不证明真实文件事务或云同步安全。
+
+## 音频假端口状态复核
+
+运行 `python3 research/experiments/deep-model-qa/audio_adversarial.py`。200个种子各150次动作，4568条有序调用检查启动前成功参数提交、所有权、释放后不使用及最终退出后的清理；输出`audio-output.json`含模型哈希。最后退出是施加条件，不证明活性、中间件线程或真实声音。
