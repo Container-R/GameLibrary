@@ -33,3 +33,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 焦点条目的Godot4.6官方API及4.6.3实际无头证据见[实例身份档案](../research/experiments/godot-focus-boundary/README.md)，不替代Unity/UI可访问性验收。
 
 [ink固定提交取证清单](../research/source-notes/ink-v1.2.1-receipt.json)与[原创源码审计](../research/source-notes/ink-v1.2.1-host-boundary.md)：仅代码阅读，不声称运行时验证。
+
+[资产导入意图契约](../solutions/engine/asset-import-intent-contract.md)与[原始夹具](../research/experiments/godot-import-boundary/README.md)保存Godot4.6官方来源、4.6.3工具版本及独立复跑证据。

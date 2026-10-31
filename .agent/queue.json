@@ -499,10 +499,10 @@
       "id": "TASK-2026-0021",
       "question": "Godot干净检出时资源导入配置/UID与生成缓存的边界如何影响引用恢复？",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "构建与资产管线具体缺口，优先原始资料和实际已有导入器验证",
-      "expected_artifact": "research/experiments/godot-import-boundary/README.md",
+      "expected_artifact": "solutions/engine/asset-import-intent-contract.md",
       "acceptance": [
         "核查4.6来源和精确metadata规则",
         "两份隔离原创资源工程形成可证伪交错",
@@ -515,8 +515,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T15:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:05:24.852332Z",
-      "next_action": "官方来源及最小夹具提案评估，尚未实际导入",
+      "last_progress_at": "2026-10-31T14:12:40.611861Z",
+      "next_action": "实际导入反例、独立复跑及正文审查完成，待发布",
       "blockers": []
     }
   ]

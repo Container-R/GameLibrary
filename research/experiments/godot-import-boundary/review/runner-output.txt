@@ -1,0 +1,74 @@
+{
+  "date_utc": "2026-10-31",
+  "version": "4.6.3.stable.official.7d41c59c4",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "work_dir": "/tmp/gamelibrary-import-x_kjh_jb",
+  "seed_manifest": {
+    "asset.svg": "fde76957f3235e76ecb96990f388966c0092b611747585745c4f5c99024f93b9",
+    "main.tscn": "59f584dba7cfc28427c3387382828bc02590ae92dbd5786ce36aeab358436b86",
+    "probe.gd": "cff5427183f10cfa04795685057f4d88d8114dfbe2d39a78d5c6ea3c50902a75",
+    "project.godot": "9124133459d780a5e7d60dc4eec80a323efb672f71a76a99d7de00a1ba3ca659"
+  },
+  "source_sha256": {
+    "run.py": "dee22cd0498cffb4aefd4358749b74a2ee14f20a3ac2683ef5246d073b2408af",
+    "seed/asset.svg": "fde76957f3235e76ecb96990f388966c0092b611747585745c4f5c99024f93b9",
+    "seed/main.tscn": "59f584dba7cfc28427c3387382828bc02590ae92dbd5786ce36aeab358436b86",
+    "seed/probe.gd": "cff5427183f10cfa04795685057f4d88d8114dfbe2d39a78d5c6ea3c50902a75",
+    "seed/project.godot": "9124133459d780a5e7d60dc4eec80a323efb672f71a76a99d7de00a1ba3ca659"
+  },
+  "configured_manifest": {
+    "asset.svg": "fde76957f3235e76ecb96990f388966c0092b611747585745c4f5c99024f93b9",
+    "asset.svg.import": "63e77cb4177f4342c3537937cea846c88103f00fe124e61684652ae9962d152c",
+    "main.tscn": "59f584dba7cfc28427c3387382828bc02590ae92dbd5786ce36aeab358436b86",
+    "probe.gd": "cff5427183f10cfa04795685057f4d88d8114dfbe2d39a78d5c6ea3c50902a75",
+    "probe.gd.uid": "a526dd7f1cf3e86905c826c53408255025bcf2bb6e0396629f465bf8293eb96b",
+    "project.godot": "9124133459d780a5e7d60dc4eec80a323efb672f71a76a99d7de00a1ba3ca659"
+  },
+  "cases": [
+    {
+      "name": "kept",
+      "initial_cache_absent": true,
+      "work_path": "/tmp/gamelibrary-import-x_kjh_jb/kept",
+      "expected_size": [
+        32,
+        16
+      ],
+      "actual_size": [
+        32,
+        16
+      ],
+      "generated_import_files": [
+        ".godot/imported/asset.svg-f63002a9308448249d0c67a32a28dd37.ctex",
+        ".godot/imported/asset.svg-f63002a9308448249d0c67a32a28dd37.md5"
+      ],
+      "checks": "passed"
+    },
+    {
+      "name": "omitted",
+      "initial_cache_absent": true,
+      "work_path": "/tmp/gamelibrary-import-x_kjh_jb/omitted",
+      "expected_size": [
+        16,
+        8
+      ],
+      "actual_size": [
+        16,
+        8
+      ],
+      "generated_import_files": [
+        ".godot/imported/asset.svg-f63002a9308448249d0c67a32a28dd37.ctex",
+        ".godot/imported/asset.svg-f63002a9308448249d0c67a32a28dd37.md5"
+      ],
+      "checks": "passed"
+    }
+  ],
+  "config_change": {
+    "file": "asset.svg.import",
+    "key": "params.svg/scale",
+    "from": 1.0,
+    "to": 2.0
+  },
+  "oracle": "Both actual ResourceLoader and instantiated scene textures: kept32x16, omitted16x8; only target sidecar omitted"
+}

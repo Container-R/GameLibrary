@@ -103,3 +103,7 @@ FBX 材质文档 [S5] 指定 FBX 2020.2 兼容基线，并说明只支持基本�
 - **S5** Epic Games，[FBX Material Pipeline](https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-material-pipeline-in-unreal-engine?application_version=5.6)，UE 5.6；引言 / Material Support / Material Ordering。只用于格式兼容与材质转移范围，不推定完整Shader等价。
 
 未作为证据：Ubisoft Toronto “Bridging the gap…” 页面读取超时，未从搜索摘要补写其内部实践。
+
+## 资产交接的实际补证
+
+[干净检出导入契约](../../solutions/engine/asset-import-intent-contract.md)给出Godot4.6.3实际反例：只遗漏导入sidecar时，场景和UID仍正常，但纹理尺寸失去原配置。岗位验收应区分源文件、导入意图与生成缓存，并检查关键资源语义；不把该SVG例子外推为所有资产质量保证。
