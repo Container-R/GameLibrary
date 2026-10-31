@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "scope": "Additive Linux read-only legacy invocation wrapper; six optimization rejection paths, normal positive only godot-focus-boundary",
+  "inputs": "Explicit six-fixture source hash allowlist; never copy archived results, reviews, histories, caches or symlinks",
+  "identity": "Unique UUID directory outside inspected repository; caller supplies expected UUID to consumer",
+  "acceptance": ["terminal ACCEPTED receipt", "exit code zero, no timeout or surviving process group", "registered fixture and unchanged source pins", "new structurally valid fixture-specific summary without universal PASS requirement", "contained regular output files and exact hashes", "harness and registry hashes agree"],
+  "legacy_preservation": "Hash all six original fixture directory files before and after validation; never execute inside them",
+  "process_control": "No shell; own Linux session/process group only; bounded TERM then KILL on timeout; unknown/interrupted never accepted",
+  "positive": "One actual focus runner: --version and --help plus gate/naive/guarded = five Godot subprocess calls by source control flow; no extra binary version subprocess",
+  "negative": ["six real copied runners -O rejected", "nonzero child plus summary rejected", "zero child without summary rejected", "wrong expected ID or changed output/source rejected", "STARTED receipt rejected", "timeout preserves partial stdout and rejects"],
+  "limits": "Not execution authenticity, engine provenance, crash durability, complete semantic review, all OS cancellation, or six normal-positive reruns"
+}

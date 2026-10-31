@@ -2044,6 +2044,678 @@
       "field": [
         "platform"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/stdout.txt",
+        "work/results/gate.json": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/gate.json",
+        "work/results/gate.log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/gate.log",
+        "work/results/guarded.json": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/guarded.json",
+        "work/results/guarded.log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/guarded.log",
+        "work/results/naive.json": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/naive.json",
+        "work/results/naive.log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/naive.log",
+        "work/results/summary.json": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/summary.json",
+        "work/results/version.txt": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/version.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/gate",
+      "log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/gate.log",
+      "parsed": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/gate.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/naive",
+      "log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/naive.log",
+      "parsed": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/naive.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/author/527c24ef-5722-4120-8b39-910d9f888b5a/guarded",
+      "log": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/guarded.log",
+      "parsed": "research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a/work/results/guarded.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/b72fc704-8208-46fb-8793-dbcbadf04dd7/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/b72fc704-8208-46fb-8793-dbcbadf04dd7/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/b72fc704-8208-46fb-8793-dbcbadf04dd7/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/b72fc704-8208-46fb-8793-dbcbadf04dd7/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "consumer.gd": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/work/consumer.gd",
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/fbb02ed5-622f-4097-9f93-ae3fa78013e1/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/fbb02ed5-622f-4097-9f93-ae3fa78013e1/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/work/run.py",
+        "seed/asset.svg": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/work/seed/asset.svg",
+        "seed/main.tscn": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/work/seed/main.tscn",
+        "seed/probe.gd": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/work/seed/probe.gd",
+        "seed/project.godot": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/work/seed/project.godot"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/fbb02ed5-622f-4097-9f93-ae3fa78013e1/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/fbb02ed5-622f-4097-9f93-ae3fa78013e1/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/4167d2db-6716-4cdf-adb6-18520cea96e0/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/4167d2db-6716-4cdf-adb6-18520cea96e0/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/4167d2db-6716-4cdf-adb6-18520cea96e0/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/4167d2db-6716-4cdf-adb6-18520cea96e0/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/43d03410-e54f-4b19-aefb-5d8c13b3e749/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/43d03410-e54f-4b19-aefb-5d8c13b3e749/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/43d03410-e54f-4b19-aefb-5d8c13b3e749/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/43d03410-e54f-4b19-aefb-5d8c13b3e749/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/artifacts",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/author/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/author/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/00c1137b-8637-4a1d-8c38-c33d7c33d227/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/00c1137b-8637-4a1d-8c38-c33d7c33d227/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/work/run.py",
+        "seed/asset.svg": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/work/seed/asset.svg",
+        "seed/main.tscn": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/work/seed/main.tscn",
+        "seed/probe.gd": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/work/seed/probe.gd",
+        "seed/project.godot": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/work/seed/project.godot"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/00c1137b-8637-4a1d-8c38-c33d7c33d227/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/00c1137b-8637-4a1d-8c38-c33d7c33d227/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/stdout.txt",
+        "work/results/gate.json": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/gate.json",
+        "work/results/gate.log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/gate.log",
+        "work/results/guarded.json": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/guarded.json",
+        "work/results/guarded.log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/guarded.log",
+        "work/results/naive.json": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/naive.json",
+        "work/results/naive.log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/naive.log",
+        "work/results/summary.json": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/summary.json",
+        "work/results/version.txt": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/version.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/gate",
+      "log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/gate.log",
+      "parsed": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/gate.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/naive",
+      "log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/naive.log",
+      "parsed": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/naive.json"
+    },
+    {
+      "kind": "log",
+      "id": "fresh-invocation/review/27edddde-d919-42ba-a5e0-516ea5964cad/guarded",
+      "log": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/guarded.log",
+      "parsed": "research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad/work/results/guarded.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/5abb2bd3-792f-4c77-b4ef-08126020e8ec/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/5abb2bd3-792f-4c77-b4ef-08126020e8ec/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/5abb2bd3-792f-4c77-b4ef-08126020e8ec/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/5abb2bd3-792f-4c77-b4ef-08126020e8ec/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/339dc8d4-a15a-4886-a6d3-812d53efbdd3/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/339dc8d4-a15a-4886-a6d3-812d53efbdd3/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/339dc8d4-a15a-4886-a6d3-812d53efbdd3/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/339dc8d4-a15a-4886-a6d3-812d53efbdd3/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/f4af9d05-3aec-46ee-b5ec-f60abf395093/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/f4af9d05-3aec-46ee-b5ec-f60abf395093/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/f4af9d05-3aec-46ee-b5ec-f60abf395093/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/f4af9d05-3aec-46ee-b5ec-f60abf395093/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/17b6bedf-ce06-4000-90a8-2dd07987a199/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/17b6bedf-ce06-4000-90a8-2dd07987a199/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "consumer.gd": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/work/consumer.gd",
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/17b6bedf-ce06-4000-90a8-2dd07987a199/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/17b6bedf-ce06-4000-90a8-2dd07987a199/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/45aebb0a-4d59-4a51-84b2-69e0e71d9622/artifacts",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/receipt.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "stderr.txt": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/stderr.txt",
+        "stdout.txt": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/stdout.txt"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "fresh-invocation/review/45aebb0a-4d59-4a51-84b2-69e0e71d9622/source_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "main.gd": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/work/main.gd",
+        "main.tscn": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/work/main.tscn",
+        "project.godot": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/work/project.godot",
+        "run.py": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/work/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/45aebb0a-4d59-4a51-84b2-69e0e71d9622/harness_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/receipt.json",
+      "field": [
+        "harness_sha256"
+      ],
+      "target": "scripts/evidence/fresh/harness.py"
+    },
+    {
+      "kind": "hash",
+      "id": "fresh-invocation/review/45aebb0a-4d59-4a51-84b2-69e0e71d9622/registry_sha256",
+      "document": "research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622/receipt.json",
+      "field": [
+        "registry_sha256"
+      ],
+      "target": "scripts/evidence/fresh/registry.json"
     }
   ]
 }

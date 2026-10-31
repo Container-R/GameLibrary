@@ -1,0 +1,15 @@
+{
+  "child": {
+    "pid": 8,
+    "state": "gone"
+  },
+  "no_additional_signals": true,
+  "process": {
+    "exit_code": 0,
+    "group_remaining": true,
+    "pid": 7,
+    "spawned": true,
+    "timed_out": false,
+    "unexpected_descendants": true
+  }
+}

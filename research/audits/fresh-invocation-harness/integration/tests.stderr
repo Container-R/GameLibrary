@@ -1,0 +1,20 @@
+test_changed_output (__main__.Tests.test_changed_output) ... ok
+test_changed_source (__main__.Tests.test_changed_source) ... ok
+test_changed_trusted_pins (__main__.Tests.test_changed_trusted_pins) ... ok
+test_escape_symlink_and_unregistered_output (__main__.Tests.test_escape_symlink_and_unregistered_output) ... ok
+test_expected_id (__main__.Tests.test_expected_id) ... ok
+test_missing_summary (__main__.Tests.test_missing_summary) ... ok
+test_nonzero_even_with_success_summary (__main__.Tests.test_nonzero_even_with_success_summary) ... ok
+test_normalized_paths (__main__.Tests.test_normalized_paths) ... ok
+test_optimized_never_accepted (__main__.Tests.test_optimized_never_accepted) ... ok
+test_origin_historical_pass_not_copied (__main__.Tests.test_origin_historical_pass_not_copied) ... ok
+test_positive_consumer (__main__.Tests.test_positive_consumer) ... ok
+test_real_nonzero_child_writes_pass (__main__.Tests.test_real_nonzero_child_writes_pass) ... ok
+test_real_zero_child_missing_summary (__main__.Tests.test_real_zero_child_missing_summary) ... ok
+test_started_rejected (__main__.Tests.test_started_rejected) ... ok
+test_timeout_partial_output (__main__.Tests.test_timeout_partial_output) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.586s
+
+OK

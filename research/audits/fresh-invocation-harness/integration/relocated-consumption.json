@@ -1,0 +1,240 @@
+[
+  {
+    "side": "author",
+    "id": "527c24ef-5722-4120-8b39-910d9f888b5a",
+    "expected_status": "ACCEPTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/527c24ef-5722-4120-8b39-910d9f888b5a",
+      "--expected-id",
+      "527c24ef-5722-4120-8b39-910d9f888b5a"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"ACCEPTED\", \"invocation_id\": \"527c24ef-5722-4120-8b39-910d9f888b5a\", \"fixture\": \"godot-focus-boundary\"}\n",
+    "stderr": ""
+  },
+  {
+    "side": "author",
+    "id": "b72fc704-8208-46fb-8793-dbcbadf04dd7",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/b72fc704-8208-46fb-8793-dbcbadf04dd7",
+      "--expected-id",
+      "b72fc704-8208-46fb-8793-dbcbadf04dd7"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "author",
+    "id": "5b84a8e4-70b9-42e2-9266-5f2a0df14a3a",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/5b84a8e4-70b9-42e2-9266-5f2a0df14a3a",
+      "--expected-id",
+      "5b84a8e4-70b9-42e2-9266-5f2a0df14a3a"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "author",
+    "id": "fbb02ed5-622f-4097-9f93-ae3fa78013e1",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/fbb02ed5-622f-4097-9f93-ae3fa78013e1",
+      "--expected-id",
+      "fbb02ed5-622f-4097-9f93-ae3fa78013e1"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "author",
+    "id": "4167d2db-6716-4cdf-adb6-18520cea96e0",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/4167d2db-6716-4cdf-adb6-18520cea96e0",
+      "--expected-id",
+      "4167d2db-6716-4cdf-adb6-18520cea96e0"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "author",
+    "id": "43d03410-e54f-4b19-aefb-5d8c13b3e749",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/43d03410-e54f-4b19-aefb-5d8c13b3e749",
+      "--expected-id",
+      "43d03410-e54f-4b19-aefb-5d8c13b3e749"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "author",
+    "id": "2eb1cc10-ac37-43c5-94fe-a8d551a2dff4",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/author/invocations/2eb1cc10-ac37-43c5-94fe-a8d551a2dff4",
+      "--expected-id",
+      "2eb1cc10-ac37-43c5-94fe-a8d551a2dff4"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "00c1137b-8637-4a1d-8c38-c33d7c33d227",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/00c1137b-8637-4a1d-8c38-c33d7c33d227",
+      "--expected-id",
+      "00c1137b-8637-4a1d-8c38-c33d7c33d227"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "27edddde-d919-42ba-a5e0-516ea5964cad",
+    "expected_status": "ACCEPTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/27edddde-d919-42ba-a5e0-516ea5964cad",
+      "--expected-id",
+      "27edddde-d919-42ba-a5e0-516ea5964cad"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"ACCEPTED\", \"invocation_id\": \"27edddde-d919-42ba-a5e0-516ea5964cad\", \"fixture\": \"godot-focus-boundary\"}\n",
+    "stderr": ""
+  },
+  {
+    "side": "review",
+    "id": "5abb2bd3-792f-4c77-b4ef-08126020e8ec",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/5abb2bd3-792f-4c77-b4ef-08126020e8ec",
+      "--expected-id",
+      "5abb2bd3-792f-4c77-b4ef-08126020e8ec"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "339dc8d4-a15a-4886-a6d3-812d53efbdd3",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/339dc8d4-a15a-4886-a6d3-812d53efbdd3",
+      "--expected-id",
+      "339dc8d4-a15a-4886-a6d3-812d53efbdd3"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "f4af9d05-3aec-46ee-b5ec-f60abf395093",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/f4af9d05-3aec-46ee-b5ec-f60abf395093",
+      "--expected-id",
+      "f4af9d05-3aec-46ee-b5ec-f60abf395093"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "17b6bedf-ce06-4000-90a8-2dd07987a199",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/17b6bedf-ce06-4000-90a8-2dd07987a199",
+      "--expected-id",
+      "17b6bedf-ce06-4000-90a8-2dd07987a199"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  },
+  {
+    "side": "review",
+    "id": "45aebb0a-4d59-4a51-84b2-69e0e71d9622",
+    "expected_status": "REJECTED",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/scripts/evidence/fresh/harness.py",
+      "consume",
+      "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-fresh/research/audits/fresh-invocation-harness/review/invocations/45aebb0a-4d59-4a51-84b2-69e0e71d9622",
+      "--expected-id",
+      "45aebb0a-4d59-4a51-84b2-69e0e71d9622"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "harness rejected: not accepted invocation\n"
+  }
+]

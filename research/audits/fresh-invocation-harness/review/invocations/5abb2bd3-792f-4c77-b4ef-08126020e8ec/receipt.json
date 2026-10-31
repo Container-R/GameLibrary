@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "stderr.txt": "8d06effcc91c67534a8c2ea7642168266600052776f0533d50118440c4d398a9",
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "-O",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/fresh-invocation-harness/evidence/5abb2bd3-792f-4c77-b4ef-08126020e8ec/work/run.py"
+  ],
+  "elapsed_seconds": 0.3024446759955026,
+  "ended_utc": "2026-10-31T20:41:20.632749+00:00",
+  "engine_path": "/opt/godot/4.6.3/Godot_v4.6.3-stable_linux.x86_64",
+  "error": "Rejected: child not successful",
+  "fixture": "godot-animation-events",
+  "harness_sha256": "ab74e41ecf123c6a5ae1b60728d55ca06a4feb7f367d4f0bfcfdfab0257a5eb0",
+  "invocation_id": "5abb2bd3-792f-4c77-b4ef-08126020e8ec",
+  "optimize_child": true,
+  "process": {
+    "exit_code": 1,
+    "group_remaining": false,
+    "pid": 20,
+    "spawned": true,
+    "timed_out": false
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "registry_sha256": "bb063ecaf012b00cf16338fe21f043313624a8bf8d57931cd26c26376ace0aee",
+  "repository": "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-factorio",
+  "source_sha256": {
+    "main.gd": "90c1eedc6bcfa282be945ad9d0b9aeb30c5a5371da241d7e8df582756dc61343",
+    "main.tscn": "f85872f76bad18c324d2898596b8fd87cfa0d56e50fb5762379411f94f40097c",
+    "project.godot": "f03cbe1910b102816a360cb1fed33f8c223c34ae15f079d9c9a55bfcc063f052",
+    "run.py": "c898d637a1ac9ead8a8d564278defe3af4ac2e6766a2930dd95b28f4897098cf"
+  },
+  "started_utc": "2026-10-31T20:41:20.330131+00:00",
+  "status": "REJECTED",
+  "timeout_seconds": 90
+}

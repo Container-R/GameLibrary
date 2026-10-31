@@ -1,0 +1,33 @@
+{
+  "run_id": "20261031T203845Z-fresh-invocation",
+  "started_at": "2026-10-31T20:38:45Z",
+  "task_id": "TASK-2026-0053",
+  "outcome": "reviewed local batch awaiting publication",
+  "validation": {
+    "status": "PASS",
+    "new_indexed_articles": 0,
+    "indexed_source_backed_articles": 27,
+    "archive_consistency_checks": 285,
+    "normal_optimized_identical": true,
+    "local_markdown_links": 370,
+    "missing_links": 0,
+    "queue_tasks_checked": 53,
+    "declared_artifact_paths_checked": 22,
+    "original_legacy_files_unchanged": 306,
+    "normal_focus_invocations": 2,
+    "behavior_cases_per_normal_focus": 3,
+    "source_audited_Godot_calls_per_normal_focus": 5,
+    "campaign_optimized_rejections": 12,
+    "unit_suite_methods": 15,
+    "unit_suite_executions": 5,
+    "unit_additional_optimized_rejections": 5,
+    "unit_synthetic_children": 15,
+    "reviewer_descendant_probes": 2,
+    "integration_new_Godot_calls": 0,
+    "relocated_positive_consumers": 2,
+    "relocated_negative_consumers": 12,
+    "scope": "Linux additive wrapper; focus normal adapter only; unchanged original sources/results; unsigned consistency not execution authenticity; initial descendant final state unknown, distinct same-namespace probe gone",
+    "review": "research/audits/fresh-invocation-harness/integration/independent-review.md"
+  },
+  "local_review_completed_at": "2026-10-31T20:51:24.780289Z"
+}

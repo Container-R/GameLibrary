@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/fresh-invocation-harness/evidence/43d03410-e54f-4b19-aefb-5d8c13b3e749/work/run.py", line 13, in <module>
+    raise RuntimeError('Assertions required; do not run with -O')
+RuntimeError: Assertions required; do not run with -O
