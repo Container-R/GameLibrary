@@ -1,0 +1,41 @@
+{
+  "run_id": "20261031T141700Z-import-policy-source",
+  "started_at": "2026-10-31T14:13:40Z",
+  "ended_at": null,
+  "task_id": [
+    "TASK-2026-0022"
+  ],
+  "actions": [
+    "研究者和集成者读取Unity4.6.0日本语官方AssetPostprocessor描述，确认历史编译失败/后处理隔离线索",
+    "明确官方本地化不是日本工作室独立案例，页脚2014不是精确发布日期",
+    "6000.7及部分旧页Cache miss不计已读；集成者另读成功重定向的6000.0英文正文，未见旧警告段落",
+    "保留负结果边界：页面缺段不能证明风险消失或建议被正式废止；未推荐现代DLL方案"
+  ],
+  "sources_examined": [
+    "https://docs.unity3d.com/jp/460/ScriptReference/AssetPostprocessor.html",
+    "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityeditor/assetpostprocessor"
+  ],
+  "evidence_added": [
+    "导入规则代码可运行性的历史一手线索",
+    "语言覆盖与独立性区分",
+    "可访问现代页面有限对照及失败检索说明"
+  ],
+  "files_changed": [
+    "research/source-notes/asset-import-policy-availability.md",
+    "research/README.md",
+    ".agent/queue.json",
+    ".agent/state.json"
+  ],
+  "commit_sha": null,
+  "validation": {
+    "runtime_executed": false,
+    "new_tests": 0,
+    "new_mature_articles": 0,
+    "knowledge_documents": 13
+  },
+  "blockers": [
+    "没有独立工作室事故/成本案例；没有Unity执行验证，不能由旧文档推导当前行为"
+  ],
+  "next_action": "保持文档历史与实际工程前提分层，评估可执行导航同步问题",
+  "outcome": "bounded source audit; publication pending"
+}

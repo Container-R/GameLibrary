@@ -28,6 +28,7 @@ python3 scripts/run_model_tests.py
 ## 固定版本来源审计：没有运行时执行
 
 - [ink v1.2.1 宿主边界](source-notes/ink-v1.2.1-host-boundary.md)：General 与便捷重载默认纯度不同；状态格式不等于项目内容或宿主检查点身份。没有 C# 运行证据，不作为成熟叙事文章计入索引。
+- [多语言导入策略线索](source-notes/asset-import-policy-availability.md)：日本语历史Unity文档与可访问6000.0英文正文对照；不是独立工作室案例，也不形成当前DLL建议。
 - [音频来源深度审查](audits/audio-source-depth-review.md)：固定 Wwise 历史提交与 FMOD 启动失败回调边界。
 
 ## 审查与分类历史
