@@ -2,7 +2,7 @@
   "run_id": "20261031T210604Z-gltf-native-import",
   "started_at": "2026-10-31T21:06:04Z",
   "task_id": "TASK-2026-0055",
-  "outcome": "reviewed local batch awaiting publication",
+  "outcome": "published and read back",
   "validation": {
     "status": "PASS",
     "new_indexed_articles": 0,
@@ -25,7 +25,13 @@
     "local_markdown_links": 378,
     "missing_links": 0,
     "queue_tasks_checked": 55,
-    "declared_artifact_paths_checked": 26
+    "declared_artifact_paths_checked": 26,
+    "selected_blob_hashes_verified": 87,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 56,
+    "receipt_declared_paths_checked": 28
   },
-  "local_review_completed_at": "2026-10-31T21:13:34.351219Z"
+  "local_review_completed_at": "2026-10-31T21:13:34.351219Z",
+  "commit_sha": "7a7689e0e325a7c1f78c6596842061446186f8a7",
+  "ended_at": "2026-10-31T21:16:37.113203Z"
 }
