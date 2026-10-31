@@ -35,6 +35,8 @@ python3 scripts/run_model_tests.py
 
 ## 审查与分类历史
 
+[14篇时的覆盖/优先级快照](audits/2026-10-31-coverage-priority.md)将下一项转向关键非语音声音的可访问性验收；这是带日期的选择依据，不是不断增长的实时完成率。
+
 [初始七篇覆盖快照](audits/initial-coverage-and-taxonomy.md)不是实时完成率；其后 ACCESS 兼容拆分见 [分类说明](../taxonomy/README.md)。[存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留发布前失败和修复回归。各实际夹具的独立复核记录在其 README 中定位，同一机器的重复验证不冒称跨平台复现。
 
 ## 只读证据一致性检查

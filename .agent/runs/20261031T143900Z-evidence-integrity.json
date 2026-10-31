@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T143900Z-evidence-integrity",
   "started_at": "2026-10-31T14:29:30Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T14:44:23.826421Z",
   "task_id": [
     "TASK-2026-0024"
   ],
@@ -55,7 +55,7 @@
     "research/audits/evidence-integrity/final/registry.json",
     "research/audits/evidence-integrity/final/archive-report.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0",
   "validation": {
     "archive_consistency": "65 passed;0failed; not65 engine tests",
     "isolated_checker_tests": "9 passed; separate from86 model methods",
@@ -71,5 +71,5 @@
     "一致性不是执行真实性、语义正确性或抗恶意篡改证明；静态快照路径检查不是TOCTOU安全屏障；fixed-step未有binary元数据不虚构校验"
   ],
   "next_action": "审计下一项跨学科高价值问题，避免继续偏向同类引擎小样例",
-  "outcome": "reviewed; publication pending"
+  "outcome": "published; seven remote blob hashes matched local artifacts"
 }

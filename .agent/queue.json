@@ -577,7 +577,7 @@
       "id": "TASK-2026-0024",
       "question": "如何自动发现当前引擎证据源码哈希、原始日志和解析记录的脱节，而不误验历史失败快照？",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 96,
       "priority_rationale": "已有真实证据数量增加，优先完整性和长期可维护性而非新文章数量",
       "expected_artifact": "scripts/evidence/verify.py",
@@ -589,11 +589,39 @@
         "完整性不冒充执行真实性或语义正确性"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T15:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:39:29.406486Z",
-      "next_action": "65项静态证据检查、9项隔离单测及独立审查完成，待发布",
+      "next_action": "新增当前夹具时审查显式注册表；完整性检查不代替语义和执行验收",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:44:23.826421Z",
+      "commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0"
+    },
+    {
+      "id": "TASK-2026-0025",
+      "question": "对白字幕齐全为何仍可能遗漏关键非语音声音，如何制定跨岗位信息等价验收？",
+      "discipline": "A11Y",
+      "status": "researching",
+      "priority": 95,
+      "priority_rationale": "14篇覆盖审计后的具体内容与体验缺口，不继续堆同类引擎夹具",
+      "expected_artifact": "solutions/accessibility/critical-sound-information-contract.md",
+      "acceptance": [
+        "当前官方指南与原始开发者来源分层",
+        "原创且明确假设的遭遇/信息覆盖反例",
+        "时间/方向/未知身份/并发负担与可配置通道合同",
+        "不虚构玩家研究、效益或平台认证",
+        "工程推导与指南原文区分"
+      ],
+      "source_leads": [
+        "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/104",
+        "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T15:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T14:44:23.826421Z",
+      "next_action": "原创方案和遭遇矩阵编写，独立核对来源及信息边界",
       "blockers": []
     }
   ]
