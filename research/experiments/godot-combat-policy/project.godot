@@ -1,0 +1,10 @@
+config_version=5
+
+[application]
+run/main_scene="res://main.tscn"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+
+[physics]
+common/physics_ticks_per_second=60

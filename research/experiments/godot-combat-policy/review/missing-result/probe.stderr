@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-combat-policy/missing-result/run.py", line 68, in <module>
+    need(len(records) == 1, name+" result count")
+  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-combat-policy/missing-result/run.py", line 27, in need
+    raise RuntimeError(message)
+RuntimeError: immediate-A result count

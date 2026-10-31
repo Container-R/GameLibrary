@@ -1,0 +1,475 @@
+{
+  "scope": "Intermediate observed-tree batch before runner Python/platform metadata; retained locally, duplicate raw files omitted from public archive",
+  "source_and_results": {
+    "binary": "/usr/local/bin/godot",
+    "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+    "source_sha256": {
+      "run.py": "3adc96f6431a68af2fa0a05305e6bbd3e1ab939bb3948eaae7953bedaa577869",
+      "main.gd": "2d68cf65ee599285dae082a292fe8932d41a398bb7bf1771308c75400ed5f35d",
+      "main.tscn": "23ef1b66cf64accf2ce5b6619e2abedee571ac733bb21afba4757d11f7e26b72",
+      "project.godot": "125ac33d052bfd44061a63fe0dae97b3b22ae04db0e8afb4cbedfb37d9d87053",
+      "contract.md": "ef2ff66f0e7124fc74cc67036b7cd6f248836fc093263bef3f89bb6ccba649d5"
+    },
+    "runs": [
+      {
+        "name": "immediate-A",
+        "result": {
+          "events": [
+            {
+              "amount": 1,
+              "attacker": "A",
+              "kind": "damage",
+              "target": "B"
+            },
+            {
+              "actor": "B",
+              "kind": "death"
+            }
+          ],
+          "first": "A",
+          "hp": {
+            "A": 1,
+            "B": 0
+          },
+          "initial": {
+            "A": 1,
+            "B": 1
+          },
+          "intents": [
+            {
+              "attacker": "A",
+              "damage": 1,
+              "frame": 1,
+              "target": "B"
+            }
+          ],
+          "mode": "immediate",
+          "physics_ticks_per_second": 60,
+          "root_group": 0,
+          "snapshot": {
+            "A": 1,
+            "B": 1
+          },
+          "trace": [
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "Begin",
+              "priority": -100
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "A",
+              "priority": 0
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": false,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 0
+              },
+              "label": "B",
+              "priority": 10
+            },
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 0
+              },
+              "label": "End",
+              "priority": 100
+            }
+          ],
+          "tree_order": [
+            "Begin",
+            "A",
+            "B",
+            "End"
+          ],
+          "version": {
+            "build": "official",
+            "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+            "hex": 263683,
+            "major": 4,
+            "minor": 6,
+            "patch": 3,
+            "status": "stable",
+            "string": "4.6.3-stable (official)",
+            "timestamp": 0
+          }
+        }
+      },
+      {
+        "name": "immediate-B",
+        "result": {
+          "events": [
+            {
+              "amount": 1,
+              "attacker": "B",
+              "kind": "damage",
+              "target": "A"
+            },
+            {
+              "actor": "A",
+              "kind": "death"
+            }
+          ],
+          "first": "B",
+          "hp": {
+            "A": 0,
+            "B": 1
+          },
+          "initial": {
+            "A": 1,
+            "B": 1
+          },
+          "intents": [
+            {
+              "attacker": "B",
+              "damage": 1,
+              "frame": 1,
+              "target": "A"
+            }
+          ],
+          "mode": "immediate",
+          "physics_ticks_per_second": 60,
+          "root_group": 0,
+          "snapshot": {
+            "A": 1,
+            "B": 1
+          },
+          "trace": [
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "Begin",
+              "priority": -100
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "B",
+              "priority": 0
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": false,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 0,
+                "B": 1
+              },
+              "label": "A",
+              "priority": 10
+            },
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 0,
+                "B": 1
+              },
+              "label": "End",
+              "priority": 100
+            }
+          ],
+          "tree_order": [
+            "Begin",
+            "A",
+            "B",
+            "End"
+          ],
+          "version": {
+            "build": "official",
+            "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+            "hex": 263683,
+            "major": 4,
+            "minor": 6,
+            "patch": 3,
+            "status": "stable",
+            "string": "4.6.3-stable (official)",
+            "timestamp": 0
+          }
+        }
+      },
+      {
+        "name": "staged-A",
+        "result": {
+          "events": [
+            {
+              "amount": 1,
+              "attacker": "A",
+              "kind": "damage",
+              "target": "B"
+            },
+            {
+              "actor": "B",
+              "kind": "death"
+            },
+            {
+              "amount": 1,
+              "attacker": "B",
+              "kind": "damage",
+              "target": "A"
+            },
+            {
+              "actor": "A",
+              "kind": "death"
+            }
+          ],
+          "first": "A",
+          "hp": {
+            "A": 0,
+            "B": 0
+          },
+          "initial": {
+            "A": 1,
+            "B": 1
+          },
+          "intents": [
+            {
+              "attacker": "A",
+              "damage": 1,
+              "frame": 1,
+              "target": "B"
+            },
+            {
+              "attacker": "B",
+              "damage": 1,
+              "frame": 1,
+              "target": "A"
+            }
+          ],
+          "mode": "staged",
+          "physics_ticks_per_second": 60,
+          "root_group": 0,
+          "snapshot": {
+            "A": 1,
+            "B": 1
+          },
+          "trace": [
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "Begin",
+              "priority": -100
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "A",
+              "priority": 0
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "B",
+              "priority": 10
+            },
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "End",
+              "priority": 100
+            }
+          ],
+          "tree_order": [
+            "Begin",
+            "A",
+            "B",
+            "End"
+          ],
+          "version": {
+            "build": "official",
+            "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+            "hex": 263683,
+            "major": 4,
+            "minor": 6,
+            "patch": 3,
+            "status": "stable",
+            "string": "4.6.3-stable (official)",
+            "timestamp": 0
+          }
+        }
+      },
+      {
+        "name": "staged-B",
+        "result": {
+          "events": [
+            {
+              "amount": 1,
+              "attacker": "B",
+              "kind": "damage",
+              "target": "A"
+            },
+            {
+              "actor": "A",
+              "kind": "death"
+            },
+            {
+              "amount": 1,
+              "attacker": "A",
+              "kind": "damage",
+              "target": "B"
+            },
+            {
+              "actor": "B",
+              "kind": "death"
+            }
+          ],
+          "first": "B",
+          "hp": {
+            "A": 0,
+            "B": 0
+          },
+          "initial": {
+            "A": 1,
+            "B": 1
+          },
+          "intents": [
+            {
+              "attacker": "B",
+              "damage": 1,
+              "frame": 1,
+              "target": "A"
+            },
+            {
+              "attacker": "A",
+              "damage": 1,
+              "frame": 1,
+              "target": "B"
+            }
+          ],
+          "mode": "staged",
+          "physics_ticks_per_second": 60,
+          "root_group": 0,
+          "snapshot": {
+            "A": 1,
+            "B": 1
+          },
+          "trace": [
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "Begin",
+              "priority": -100
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "B",
+              "priority": 0
+            },
+            {
+              "delta": 0.0166666666666667,
+              "eligible": true,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "A",
+              "priority": 10
+            },
+            {
+              "delta": 0.0166666666666667,
+              "frame": 1,
+              "group": 0,
+              "hp_before": {
+                "A": 1,
+                "B": 1
+              },
+              "label": "End",
+              "priority": 100
+            }
+          ],
+          "tree_order": [
+            "Begin",
+            "A",
+            "B",
+            "End"
+          ],
+          "version": {
+            "build": "official",
+            "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+            "hex": 263683,
+            "major": 4,
+            "minor": 6,
+            "patch": 3,
+            "status": "stable",
+            "string": "4.6.3-stable (official)",
+            "timestamp": 0
+          }
+        }
+      }
+    ]
+  },
+  "reason": "No behavioral expectation or oracle failure; final source includes same actual child-order instrumentation plus runner environment metadata",
+  "historical_review_runs": "Earlier independent v1 and observed-tree repeats retained in local research drafts; only final independent full repeat published here",
+  "unique_scenarios_across_repeats": 4
+}

@@ -71,3 +71,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Cygames 日语原始来源记录](../research/audits/cygames-scenario-handoff/source-receipt.json)保留发布/活动日期和访问边界；Excel 兼容仅按原文示例处理，不扩写内部系统规格。
 
 [Alpha 表示来源门槛](../research/experiments/art2d-alpha-contract/source-gate.md)使用固定 W3C 文档与 Pillow 源码；明确区分历史 PNG 文件规定和实际数值 buffer 运行范围。
+
+[Godot actor 调度来源门槛](../research/experiments/godot-combat-policy/source-gate.md)记录 Node 物理优先级及固定官方比较源码；本地已安装二进制的未认证来源身份沿用共享取证说明，不因观察符合文档而升级认证。

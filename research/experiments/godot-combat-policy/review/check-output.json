@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "actual_engine_processes": 4,
+  "startup_negatives": 3,
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "source_sha256": {
+    "run.py": "f177a1f40883a3ff6ff10a41aac1a32d627a7f0a55a173fb1a98e7b2c187bc11",
+    "main.gd": "2d68cf65ee599285dae082a292fe8932d41a398bb7bf1771308c75400ed5f35d",
+    "main.tscn": "23ef1b66cf64accf2ce5b6619e2abedee571ac733bb21afba4757d11f7e26b72",
+    "project.godot": "125ac33d052bfd44061a63fe0dae97b3b22ae04db0e8afb4cbedfb37d9d87053",
+    "contract.md": "ef2ff66f0e7124fc74cc67036b7cd6f248836fc093263bef3f89bb6ccba649d5"
+  }
+}

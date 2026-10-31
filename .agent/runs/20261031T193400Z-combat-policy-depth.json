@@ -1,0 +1,29 @@
+{
+  "run_id": "20261031T193400Z-combat-policy-depth",
+  "started_at": "2026-10-31T19:34:00Z",
+  "ended_at": null,
+  "task_id": "TASK-2026-0045",
+  "commit_sha": null,
+  "outcome": "independently reviewed model and engine evidence; publication pending",
+  "validation": {
+    "unique_model_inputs": 12,
+    "model_next_tick_checks_per_run": 4,
+    "model_domain_test_methods": 5,
+    "targeted_model_policy_mutation_rejected": true,
+    "final_author_engine_processes": 4,
+    "final_reviewer_engine_processes": 4,
+    "engine_unique_scenarios": 4,
+    "physics_frames_per_engine_case": 1,
+    "final_runner_startup_negative_cases": 3,
+    "integrator_engine_runs": 0,
+    "archive_consistency_checks": 158,
+    "normal_optimized_archive_equal": true,
+    "new_indexed_articles": 0
+  },
+  "corrections": [
+    "Initial tree order echoed declaration; final source observes get_children and independently reruns unchanged oracle",
+    "Runner provenance metadata added; intermediate repeat disclosed, no extra unique cases claimed",
+    "Integrator registry field python corrected to actual python_version after verifier rejection; failed report retained"
+  ],
+  "scope": "Original simultaneous policy, not universal combat design; real single-group callback dispatch only, no collisions/concurrency/networking/official-build authentication"
+}

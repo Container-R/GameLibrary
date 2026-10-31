@@ -1057,10 +1057,10 @@
       "id": "TASK-2026-0045",
       "question": "Same-tick combat eligibility and commit policy beyond fixed-timestep repeatability",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Deepen existing high-value combat timing article: scalar per-tick tests do not express actors invalidating one another during iteration",
-      "expected_artifact": "Existing fixed-step solution plus supplemental simultaneous-combat finite model",
+      "expected_artifact": "solutions/programming/fixed-step-simulation-boundary.md and finite policy/actual callback evidence",
       "acceptance": [
         "Freeze simultaneous policy explicitly without claiming it universal",
         "Exact finite ordering counterexample and initially-dead eligibility boundary",
@@ -1069,8 +1069,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T20:05:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:31:46.222052Z",
-      "next_action": "Verify finite policy-specific supplemental model and integrate into existing article after independent review",
+      "last_progress_at": "2026-10-31T19:45:28.124428Z",
+      "next_action": "Publish independently checked Python policy and four-schedule actual Godot integration as one existing-article depth unit",
       "blockers": []
     }
   ]

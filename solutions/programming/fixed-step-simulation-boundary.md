@@ -11,6 +11,8 @@ versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stab
 updated_at: 2026-10-31
 verification_method: 原始文档核对、原创模型与本地Godot实际无头回调夹具；未运行Unity或跨平台确定性测试
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_node.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/main/scene_tree.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_animationplayer.html
   - https://docs.godotengine.org/en/4.6/classes/class_animationmixer.html
   - https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html
@@ -67,7 +69,46 @@ record(backlog=A, simulatedSteps=steps)
 `previous` 初始为 `current` 的值拷贝。正常插值显示的是过去两个完成状态间的值，约引入一个模拟步的显示延迟。瞬移与离散事件不插值；伤害、声音、特效事件按事件 ID 去重，不能由渲染插值再次产生。回滚后的副作用确认另需协议，不在此实现范围。
 
 5. **表现单向消费**：渲染/动画适配器读取快照与事件，不反向改核心冷却或命中状态。若项目要求 Root Motion 驱动物理，必须把运动结果作为显式适配输入，并承认核心仍依赖引擎的求解语义。
-6. **确定性分层**：先固定命令顺序、随机种子、配置版本、序列化字段顺序；每 tick 记录规范化状态哈希。测试同一二进制后，再测试不同构建与平台。不能以“用了整数 tick”推导浮点物理也确定。
+6. **确定性分层**：先固定命令顺序、随机种子、配置版本、序列化字段顺序；每 tick 记录规范化状态哈希。测试同一二进制后，再测试不同构建与平台。不能以“用了整数 tick”推导浮点物理也确定。 同样，固定排序只能决定可重复的执行次序，不能替代项目对同 tick 冲突的规则选择。
+
+## 同 tick 规则补充：可重复结果仍可能实现错了政策
+
+固定步回答“何时推进”，不自动回答“这一 tick 内谁仍有攻击资格”。新增的[有限规则模型](../../research/experiments/simultaneous-combat-policy/README.md)在实现前冻结一条**原创项目政策**：攻击者和目标在本 tick 开始时都存活，攻击才合格；已合格攻击不因本 tick 内受到致死伤害而取消，先收集伤害，再统一提交。无碰撞、护盾、治疗或复活，每个角色最多一条攻击，仅两名角色、HP 为 0 或 1。
+
+设 A、B 各 1 HP，本 tick 互相造成 1 点伤害：
+
+| 实现 | 结果 | 与选定政策关系 |
+|---|---|---|
+| 根据当前 tick 开始快照判断资格，再统一提交 | 双方 0 HP，两条伤害、两条死亡记录 | 符合同时结算政策 |
+| 逐条检查当前 HP 并立刻修改目标 | 先遍历者存活，后遍历者不能反击 | 改变遍历顺序会改变胜者 |
+| 先按稳定身份排序，再逐条立即修改 | A 始终先行动并存活 | 完全可重复，但仍违反本例同时结算政策 |
+
+这不是要求所有游戏都允许相杀。先手击杀中断反击也可以是有意的设计；问题是不能让容器遍历顺序在未声明的情况下替设计者选规则。Fiedler 的处理顺序讨论仅是复现背景，不为本例政策背书。
+
+实际枚举三种冻结初态（双方存活、A 已死、B 已死），各组合两种 actor 插入顺序与两种命令顺序，共 **12 个有限输入**。同时结算全部符合手写状态/事件判据；两种立即修改实现各在四个双方存活输入中不符合该政策，另八个初始死者输入符合边界约定。死亡结果再进入下一 tick 的四次检查均无攻击事件，不能拿旧的存活资格无限沿用。
+
+[独立复验](../../research/experiments/simultaneous-combat-policy/review/REVIEW.md)重跑 normal / `-O`，使用不导入作者规则函数的字面判据核对 12 个唯一输入；另有五个输入域/状态别名 unittest 方法。一项将同时结算实现替换成“稳定排序立即修改”的定向变异被合同判据以非零退出拒绝。这里比较规范化状态和事件记录，**没有规定实际事件发布顺序，也没有提供跨调用去重或 exactly-once 提交**。
+
+原先每 tick 一个加法标量的模型与单 x/axis 的 Godot 夹具不能表达这类相互致死关系；本补充是规则语义证据，不把原有窄验证说成缺陷。这一模型本身只运行 Python 标准库，不覆盖引擎调度、物理命中、联网回滚或动作取消。下面的独立引擎夹具仅补其中的节点调度边界，其他需求仍需另外的政策与证据。
+
+### 真实节点调度补充：优先级会改变先手，不会替项目选择结算政策
+
+[实际 Godot 四进程夹具](../../research/experiments/godot-combat-policy/README.md)不是把上述 Python 循环换成 GDScript：A、B 是各自接收 `_physics_process` 的独立节点。实际子节点顺序固定为 Begin、A、B、End；Begin 的物理优先级为 -100，End 为 100，交换的仅是 A、B 的 `process_physics_priority`（0 与 10），所有节点继承同一默认主线程处理组。
+
+| 模式 | A / B 物理优先级 | 实际回调顺序 | 最终 A / B HP |
+|---|---|---|---|
+| 立即修改当前状态 | 0 / 10 | Begin、A、B、End | 1 / 0 |
+| 立即修改当前状态 | 10 / 0 | Begin、B、A、End | 0 / 1 |
+| 快照资格、末阶段提交 | 0 / 10 | Begin、A、B、End | 0 / 0 |
+| 快照资格、末阶段提交 | 10 / 0 | Begin、B、A、End | 0 / 0 |
+
+每个进程四条原始回调记录共享同一个实际 `Engine.get_physics_frames()` 值（本次均为 1）。记录还包含实际节点优先级、处理组、进入回调时的 HP 与资格；最后通过 `get_children()` 读取真实子节点顺序。立即模式第二名角色进入时已见到第一次伤害；分阶段模式两者资格都来自 Begin 的同一快照。End 在已收集资格后提交伤害，不重新用中途 HP 否决第二个意图。
+
+因此，换优先级确实改变了**引擎实际分发的 actor 顺序**；同时结算政策的结果不随这两种顺序改变。但这是应用代码划分的阶段，不是引擎提供的原子事务，也不是所有游戏都应采用的架构。分阶段事件的实际追加顺序仍会变化；本例保证的是规范化内容，而非相同发出次序。
+
+[独立复验](../../research/experiments/godot-combat-policy/review/REVIEW.md)用最终源码重新执行四个进程，并直接解析原始 TRACE / RESULT，核对字面 HP、伤害/死亡记录、资格与回调轨迹。三项独立启动负例（`-O`、不可执行文件导致实际启动错误、成功退出但缺少结果的假工具）均拒绝且移除旧 PASS；它们不是额外 Godot 行为案例，也未注入超时。初版树序仅回显常量的取证弱点及后续修正/重复记录被保留，不能把重复四例写成更多独立场景。
+
+新的二进制摘要仍为 `f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`；自报源码身份与公开官方标签的差异仍[未解决](../../research/source-notes/godot-runtime-provenance.md)。[Godot 4.6 Node 文档](https://docs.godotengine.org/en/4.6/classes/class_node.html#class-node-property-process-physics-priority)及[固定官方比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/main/scene_tree.cpp#L1151-L1209)支持优先级/分发机制的来源分析，不认证本地程序来源。没有测试相同优先级、跨处理组、真实碰撞、第二 tick、并发、网络或性能；Python 模型中的初始死者与下一 tick 检查不能挪算成引擎测试。
 
 ## 取舍与失败模式
 

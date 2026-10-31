@@ -1,0 +1,20 @@
+{
+  "contract_version": 1,
+  "policy": "tick-start eligibility; simultaneous damage commit; no resurrection or within-tick cancellation",
+  "tick": 7,
+  "actors": ["A", "B"],
+  "commands": [["A", "hit-A", "B"], ["B", "hit-B", "A"]],
+  "damage": 1,
+  "cases": [
+    {"name": "both-alive", "initial_hp": {"A": 1, "B": 1}, "expected_hp": {"A": 0, "B": 0}, "expected_events": [[7, "damage", "A", "hit-A", "B"], [7, "damage", "B", "hit-B", "A"], [7, "death", "A"], [7, "death", "B"]]},
+    {"name": "A-already-dead", "initial_hp": {"A": 0, "B": 1}, "expected_hp": {"A": 0, "B": 1}, "expected_events": []},
+    {"name": "B-already-dead", "initial_hp": {"A": 1, "B": 0}, "expected_hp": {"A": 1, "B": 0}, "expected_events": []}
+  ],
+  "eligibility": "Both attacker and target must be alive at this tick start. Commands from dead actors or aimed at dead targets produce no events.",
+  "enumeration": "For each case: both actor insertion permutations times both command iteration permutations = 4 inputs; total 12.",
+  "comparison": "Canonical HP by actor identity and canonical event records; actual emission order is not specified.",
+  "next_tick": "Both-dead result at tick 8 has zero events with the same attack intentions.",
+  "naive_counterexample": "For both-alive, process and mutate immediately in supplied command order. First attacker survives at 1, second dies at 0; one damage and one death event.",
+  "sorted_counterexample": "Sort by attacker/action/target then immediately mutate. Always A survives; stable but violates chosen simultaneous policy.",
+  "scope": "Original finite integer gameplay policy, not physics, engine integration, rollback or a universal combat rule. Unique command identities, only two actors and one attack per actor."
+}

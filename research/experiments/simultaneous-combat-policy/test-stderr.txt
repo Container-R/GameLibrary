@@ -1,0 +1,10 @@
+test_command_domain (__main__.DomainTests.test_command_domain) ... ok
+test_invalid_health (__main__.DomainTests.test_invalid_health) ... ok
+test_invalid_tick (__main__.DomainTests.test_invalid_tick) ... ok
+test_multiple_commands_per_actor_rejected (__main__.DomainTests.test_multiple_commands_per_actor_rejected) ... ok
+test_result_not_alias_caller (__main__.DomainTests.test_result_not_alias_caller) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

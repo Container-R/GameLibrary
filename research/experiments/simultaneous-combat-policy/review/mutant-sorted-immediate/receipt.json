@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "research-drafts/deep-qa/simultaneous-combat-policy/mutant-sorted-immediate/run.py"
+  ],
+  "exit": 1,
+  "synthetic_mutation": "replace simultaneous policy with sorted immediate",
+  "expected_oracle_rejection": true
+}

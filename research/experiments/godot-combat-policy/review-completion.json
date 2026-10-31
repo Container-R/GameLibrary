@@ -1,0 +1,10 @@
+{
+  "review_path": "research-drafts/deep-qa/godot-combat-policy/REVIEW.md",
+  "accepted_runner_sha256": "f177a1f40883a3ff6ff10a41aac1a32d627a7f0a55a173fb1a98e7b2c187bc11",
+  "accepted_main_sha256": "2d68cf65ee599285dae082a292fe8932d41a398bb7bf1771308c75400ed5f35d",
+  "independent_current_engine_processes": 4,
+  "independent_seeded_summary_negatives": 3,
+  "negative_scope": "optimized invocation, actual spawn permission failure, successful child without result; no timeout injection",
+  "status": "accepted within frozen finite scope",
+  "note": "README and execution.json retain their author-freeze pending status; this later receipt closes it without changing reviewed bytes. Earlier author/reviewer batches remain historical, not extra unique scenarios."
+}

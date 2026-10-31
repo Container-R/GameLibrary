@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-combat-policy/spawn-failure/contract.md",
+    "--headless",
+    "--single-threaded-scene",
+    "--path",
+    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-combat-policy/spawn-failure",
+    "--",
+    "immediate",
+    "A"
+  ],
+  "timeout_seconds": 20,
+  "spawn_error": "PermissionError(13, 'Permission denied')"
+}

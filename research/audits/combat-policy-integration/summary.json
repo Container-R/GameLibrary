@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "gamelibrary-publish-combat/research/experiments/simultaneous-combat-policy/run.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-O",
+        "gamelibrary-publish-combat/research/experiments/simultaneous-combat-policy/run.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "gamelibrary-publish-combat/research/experiments/simultaneous-combat-policy/test_model.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "gamelibrary-publish-combat/scripts/evidence/verify.py",
+        "gamelibrary-publish-combat"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "gamelibrary-publish-combat/scripts/evidence/verify.py",
+        "gamelibrary-publish-combat"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "actual_model_enumerated_inputs_per_mode": 12,
+  "normal_optimized_equal_except_flag": true,
+  "unit_methods": 5,
+  "archive_consistency_checks": 143,
+  "archive_normal_optimized_identical": true,
+  "author_archive_checksum_manifest_verified": true,
+  "engine_processes": 0,
+  "scope": "Actual finite Python policy model rerun; not engine scheduling or complete combat validation"
+}

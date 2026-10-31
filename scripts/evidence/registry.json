@@ -1211,6 +1211,216 @@
       "field": [
         "operations"
       ]
+    },
+    {
+      "kind": "manifest",
+      "id": "combat/author/source",
+      "document": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "model.py": "research/experiments/simultaneous-combat-policy/model.py",
+        "run.py": "research/experiments/simultaneous-combat-policy/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "combat/author/contract",
+      "document": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "field": [
+        "contract_sha256"
+      ],
+      "target": "research/experiments/simultaneous-combat-policy/contract.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "combat/review/source",
+      "document": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "model.py": "research/experiments/simultaneous-combat-policy/model.py",
+        "run.py": "research/experiments/simultaneous-combat-policy/run.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "combat/review/contract",
+      "document": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "contract_sha256"
+      ],
+      "target": "research/experiments/simultaneous-combat-policy/contract.json"
+    },
+    {
+      "kind": "equal",
+      "id": "combat/compare/source_sha256",
+      "left": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "right": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "combat/compare/contract_sha256",
+      "left": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "right": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "contract_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "combat/compare/python",
+      "left": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "right": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "python"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "combat/compare/platform",
+      "left": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "right": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "platform"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "combat/compare/traces",
+      "left": "research/experiments/simultaneous-combat-policy/author-results.json",
+      "right": "research/experiments/simultaneous-combat-policy/review/normal.json",
+      "field": [
+        "traces"
+      ]
+    },
+    {
+      "kind": "manifest",
+      "id": "godot-combat/author/source",
+      "document": "research/experiments/godot-combat-policy/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-combat-policy/run.py",
+        "main.gd": "research/experiments/godot-combat-policy/main.gd",
+        "main.tscn": "research/experiments/godot-combat-policy/main.tscn",
+        "project.godot": "research/experiments/godot-combat-policy/project.godot",
+        "contract.md": "research/experiments/godot-combat-policy/contract.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "godot-combat/review/source",
+      "document": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "run.py": "research/experiments/godot-combat-policy/run.py",
+        "main.gd": "research/experiments/godot-combat-policy/main.gd",
+        "main.tscn": "research/experiments/godot-combat-policy/main.tscn",
+        "project.godot": "research/experiments/godot-combat-policy/project.godot",
+        "contract.md": "research/experiments/godot-combat-policy/contract.md"
+      }
+    },
+    {
+      "kind": "equal",
+      "id": "godot-combat/compare/source_sha256",
+      "left": "research/experiments/godot-combat-policy/results/summary.json",
+      "right": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "source_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "godot-combat/compare/binary_sha256",
+      "left": "research/experiments/godot-combat-policy/results/summary.json",
+      "right": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "binary_sha256"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "godot-combat/compare/python_version",
+      "left": "research/experiments/godot-combat-policy/results/summary.json",
+      "right": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "python_version"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "godot-combat/compare/platform",
+      "left": "research/experiments/godot-combat-policy/results/summary.json",
+      "right": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "platform"
+      ]
+    },
+    {
+      "kind": "equal",
+      "id": "godot-combat/compare/runs",
+      "left": "research/experiments/godot-combat-policy/results/summary.json",
+      "right": "research/experiments/godot-combat-policy/review/fixture/results/summary.json",
+      "field": [
+        "runs"
+      ]
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/author/immediate-A",
+      "log": "research/experiments/godot-combat-policy/results/immediate-A.stdout",
+      "parsed": "research/experiments/godot-combat-policy/results/immediate-A.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/author/immediate-B",
+      "log": "research/experiments/godot-combat-policy/results/immediate-B.stdout",
+      "parsed": "research/experiments/godot-combat-policy/results/immediate-B.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/author/staged-A",
+      "log": "research/experiments/godot-combat-policy/results/staged-A.stdout",
+      "parsed": "research/experiments/godot-combat-policy/results/staged-A.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/author/staged-B",
+      "log": "research/experiments/godot-combat-policy/results/staged-B.stdout",
+      "parsed": "research/experiments/godot-combat-policy/results/staged-B.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/review/immediate-A",
+      "log": "research/experiments/godot-combat-policy/review/fixture/results/immediate-A.stdout",
+      "parsed": "research/experiments/godot-combat-policy/review/fixture/results/immediate-A.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/review/immediate-B",
+      "log": "research/experiments/godot-combat-policy/review/fixture/results/immediate-B.stdout",
+      "parsed": "research/experiments/godot-combat-policy/review/fixture/results/immediate-B.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/review/staged-A",
+      "log": "research/experiments/godot-combat-policy/review/fixture/results/staged-A.stdout",
+      "parsed": "research/experiments/godot-combat-policy/review/fixture/results/staged-A.json"
+    },
+    {
+      "kind": "log",
+      "id": "godot-combat/review/staged-B",
+      "log": "research/experiments/godot-combat-policy/review/fixture/results/staged-B.stdout",
+      "parsed": "research/experiments/godot-combat-policy/review/fixture/results/staged-B.json"
     }
   ]
 }
