@@ -969,7 +969,7 @@
       "id": "TASK-2026-0041",
       "question": "LiveOps instance admission versus persistent-data recovery in Destiny2020 rollback case",
       "discipline": "LIVE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "First-party incident exposes configuration and verification bypass after startup restart, not another hypothetical state model",
       "expected_artifact": "case-studies/liveops/destiny-config-admission-rollback.md",
@@ -978,11 +978,33 @@
         "Separate already-deployed remediation from historical future commitments",
         "Clearly distinguish original acceptance protocol and infrastructure vocabulary from studio implementation"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T19:12:43.368100Z",
+      "next_action": "Maintain historical remediation-status boundaries; no unverified later completion claim",
+      "blockers": [],
+      "completed_at": "2026-10-31T19:12:43.368100Z",
+      "commit_sha": "c8bffbcb925cbf6c16148d5204b81f880dd2ba37"
+    },
+    {
+      "id": "TASK-2026-0042",
+      "question": "Music body PCM sample-frame interval versus inclusive loop and exclusive trim endpoints",
+      "discipline": "MUSIC",
+      "status": "researching",
+      "priority": 88,
+      "priority_rationale": "Existing interactive-music lifecycle article lacks authoring body/pre-tail exact frame handoff; installed offline FFmpeg allows bounded actual extraction",
+      "expected_artifact": "solutions/music/pcm-loop-frame-boundary.md",
+      "acceptance": [
+        "Pinned primary endpoint/unit definitions",
+        "Original PCM marker WAV and actual finite extraction",
+        "Independent byte/frame oracle; no hearing/device/middleware guarantees"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-10-31T19:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:09:52.167646Z",
-      "next_action": "Publish independently checked historical LiveOps case; no incident recreation or completed-future-fix claim",
+      "last_progress_at": "2026-10-31T19:12:43.368100Z",
+      "next_action": "Freeze original frame contract and execute bounded offline FFmpeg trim; independent review before publication",
       "blockers": []
     }
   ]
