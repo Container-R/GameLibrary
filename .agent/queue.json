@@ -474,7 +474,7 @@
       "id": "TASK-2026-0020",
       "question": "锁定ink版本后核实故事状态与外部奖励副作用的真实API边界，判断独立叙事专题价值",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 85,
       "priority_rationale": "先补原始版本证据而非扩张通用存档文章",
       "expected_artifact": "research/source-notes/ink-v1.2.1-host-boundary.md",
@@ -486,11 +486,37 @@
       "source_leads": [
         "https://github.com/inkle/ink"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-10-31T14:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:04:29.220255Z",
-      "next_action": "固定源码与独立复核完成，发布来源审计而非运行时知识升级",
+      "next_action": "来源审计已发布；实际ink回调/恢复验证仍需合适运行环境，不以模型替代",
+      "blockers": [],
+      "completed_at": "2026-10-31T14:05:24.852332Z",
+      "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd"
+    },
+    {
+      "id": "TASK-2026-0021",
+      "question": "Godot干净检出时资源导入配置/UID与生成缓存的边界如何影响引用恢复？",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "构建与资产管线具体缺口，优先原始资料和实际已有导入器验证",
+      "expected_artifact": "research/experiments/godot-import-boundary/README.md",
+      "acceptance": [
+        "核查4.6来源和精确metadata规则",
+        "两份隔离原创资源工程形成可证伪交错",
+        "不把缓存二进制相同当通用可复现构建",
+        "先范围评估再执行"
+      ],
+      "source_leads": [
+        "https://docs.godotengine.org/en/4.6/tutorials/assets_pipeline/import_process.html"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-10-31T15:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-10-31T14:05:24.852332Z",
+      "next_action": "官方来源及最小夹具提案评估，尚未实际导入",
       "blockers": []
     }
   ]

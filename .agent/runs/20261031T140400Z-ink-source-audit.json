@@ -1,7 +1,7 @@
 {
   "run_id": "20261031T140400Z-ink-source-audit",
   "started_at": "2026-10-31T13:59:30Z",
-  "ended_at": null,
+  "ended_at": "2026-10-31T14:05:24.852332Z",
   "task_id": [
     "TASK-2026-0020"
   ],
@@ -30,7 +30,7 @@
     ".agent/state.json",
     ".agent/runs/20261031T140000Z-focus-identity.json"
   ],
-  "commit_sha": null,
+  "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd",
   "validation": {
     "runtime_executed": false,
     "new_tests": 0,
@@ -42,5 +42,5 @@
     "当前PATH无C#或ink工具；未执行安装或下载代码，不报告调用次数/加载测试"
   ],
   "next_action": "保留真实ink运行验证缺口，研究其他现有工具可执行的高价值边界",
-  "outcome": "reviewed; source-audit publication pending"
+  "outcome": "published source audit; three remote blob hashes matched local artifacts"
 }
