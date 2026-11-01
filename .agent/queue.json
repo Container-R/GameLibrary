@@ -2655,7 +2655,7 @@
       "id": "TASK-2026-0103",
       "question": "Does disabling an in-progress Unity input action invoke cancellation synchronously, and what ownership or reentrancy boundary follows?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Close a concrete gameplay input teardown lifecycle gap with pinned implementation evidence instead of assuming callbacks occur later",
       "expected_artifact": "Bounded pinned-source gate and, if supported, an original teardown ordering analysis",
@@ -2668,11 +2668,35 @@
         "Keep original call sequence explicitly unexecuted and distinguish action from map behavior",
         "No engine run, private execution metadata, fabricated observed bug or unsupported version transfer"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:55:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:21:06.410019Z",
-      "next_action": "Publish pinned synchronous cancellation and application teardown ownership analysis",
+      "next_action": "Retain finite teardown assumptions and application ownership policy; no Unity runtime result inferred",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:22:40.920711Z",
+      "commit_sha": "e68da81fd9fb0f9dd3856b60e3723da9d2496ecd"
+    },
+    {
+      "id": "TASK-2026-0104",
+      "question": "How does glTF tangent handedness relate to a transformed tangent basis, and which finite example separates local data from reflection/normal transformation?",
+      "discipline": "MODEL",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Close an explicitly excluded tangent-space asset interpretation gap using normative source and exact hand geometry rather than claiming rendered correctness",
+      "expected_artifact": "Bounded pinned-source gate and original hand-derived tangent basis explanation if supported",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin actual Khronos specification revision and inspect primary semantics",
+        "Separate asset-local tangent convention from transformed basis and degeneracy assumptions",
+        "Verify finite hand derivation independently; no renderer or exporter failure inferred",
+        "No runtime, model execution, private execution metadata or legacy article edits"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:22:40.920711Z",
+      "next_action": "Review exact glTF tangent convention and bounded transformed-basis example",
       "blockers": []
     }
   ]
