@@ -5,8 +5,8 @@
     "TASK-2026-0081"
   ],
   "started_at": "2026-11-01T01:55:05Z",
-  "ended_at": "2026-11-01T01:57:36.830673Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T01:59:15.977030Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.valvesoftware.com/en/publications",
     "https://cdn.fastly.steamstatic.com/apps/valve/2009/ai_systems_of_l4d_mike_booth.pdf"
@@ -27,7 +27,12 @@
     "archive_checks_optimized": 495,
     "queue_tasks_checked": 81,
     "declared_paths_checked": 92,
-    "local_links": 630
+    "local_links": 630,
+    "selected_blob_hashes_verified": 15,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 82,
+    "receipt_declared_paths_checked": 92
   },
-  "next_action": "Review narrow data analyst role draft and independent existing cloud-save correctness audit"
+  "next_action": "Review narrow data analyst role draft and independent existing cloud-save correctness audit",
+  "commit_sha": "c9e8b3b7aa9801cf2e412ceacd00bac24beae0be"
 }

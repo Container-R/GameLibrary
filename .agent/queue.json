@@ -2060,7 +2060,7 @@
       "id": "TASK-2026-0081",
       "question": "How should adaptive pacing separate estimated intensity, population requests, ongoing encounters and player experience?",
       "discipline": "AI",
-      "status": "reviewing",
+      "status": "published",
       "priority": 87,
       "priority_rationale": "Original Valve Director source case complements individual NPC execution boundaries",
       "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
@@ -2074,11 +2074,35 @@
         "No reconstructed runtime, player outcome or universal difficulty guarantee",
         "Independent source and editorial review"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T01:57:36.830673Z",
+      "next_action": "Retain historical algorithm scope and unexecuted observation worksheet; no game or player validation",
+      "blockers": [],
+      "completed_at": "2026-11-01T01:59:15.977030Z",
+      "commit_sha": "c9e8b3b7aa9801cf2e412ceacd00bac24beae0be"
+    },
+    {
+      "id": "TASK-2026-0082",
+      "question": "What must a game data analyst hand off so a requested chart supports a qualified design decision?",
+      "discipline": "DATA",
+      "status": "reviewing",
+      "priority": 87,
+      "priority_rationale": "Missing analyst role connected to existing synthetic metric contract and production decision responsibility",
+      "expected_artifact": "Narrow source-backed analyst role and original unexecuted tutorial-comparison handoff",
+      "artifact_paths": [],
+      "acceptance": [
+        "Named Bandai Namco Nexus and Riot first-party historical practitioner sources",
+        "Distinguish question, metric eligibility, interpretation and authorized decision",
+        "No causal experiment recipe, invented player data or universal staffing claim",
+        "Independent source/editorial review and exact existing evidence metadata"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:57:36.830673Z",
-      "next_action": "Publish reviewed historical pacing case, unexecuted observation worksheet and accurate navigation cross-reference maintenance",
+      "last_progress_at": "2026-11-01T01:59:15.977030Z",
+      "next_action": "Review ROLE-DATA-001 draft386c7801 and source50561caa; archive useful negative cloud-save second review without inventing defects",
       "blockers": []
     }
   ]
