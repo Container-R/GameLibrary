@@ -3062,7 +3062,7 @@
       "id": "TASK-2026-0118",
       "question": "Which normal host-frame advancement must stop when fixed GGPO P2P local input submission hits the prediction barrier?",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Resolve a concrete upstream control-flow distinction between local submission rejection and later input synchronization success",
       "expected_artifact": "Integrated fixed-source GGPO normal-advance control-flow explanation, not a new protocol or runtime test",
@@ -3077,11 +3077,36 @@
         "Retain submission failure across later calls; no automatic SDK host-state freeze assumed",
         "Reject dynamic delay advice contrary to public API timing precondition"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:41:24.495756Z",
-      "next_action": "Review exact public-wrapper, P2P and normal host-loop conditions without inheriting runtime claims",
+      "next_action": "Preserve normal-forward submission gate; no whole-state freeze or inherited GGPO runtime evidence",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:44:16.830620Z",
+      "commit_sha": "c6a4297d3ea0cc3b94b34bf69fda3f677d13db60"
+    },
+    {
+      "id": "TASK-2026-0119",
+      "question": "Why does requesting an event fadeout and release not justify immediately unloading its FMOD bank?",
+      "discipline": "SFX",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Resolve a concrete event-versus-bank lifetime conflict in existing interactive music exit policy",
+      "expected_artifact": "Integrated source-backed teardown decision separating tail preservation from immediate bank reclamation",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact versioned event stop/release, bank unload and sample-data reference rules",
+        "Separate event deferred destruction from bank ownership and all-handle invalidation",
+        "Do not treat sample references or DESTROYED as proof of preserved fadeout",
+        "Preserve update and callback-thread boundaries without inventing a manager implementation",
+        "No middleware run, waveform or acoustic-tail guarantee"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:44:16.830620Z",
+      "next_action": "Verify independent FMOD lifetime gate before integrating a bounded teardown choice",
       "blockers": []
     }
   ]

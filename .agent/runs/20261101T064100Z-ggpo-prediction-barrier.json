@@ -5,8 +5,8 @@
     "TASK-2026-0118"
   ],
   "started_at": "2026-11-01T06:38:36Z",
-  "ended_at": "2026-11-01T06:41:24.495756Z",
-  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "ended_at": "2026-11-01T06:44:16.830620Z",
+  "outcome": "published and read back",
   "sources": [
     "https://github.com/pond3r/ggpo/tree/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a"
   ],
@@ -31,8 +31,12 @@
     "archive_fail": 0,
     "archive_scope": "Static archived consistency; no new SDK or network execution",
     "declared_paths_checked": 152,
-    "local_links_checked": 818
+    "local_links_checked": 818,
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 119
   },
-  "next_action": "Continue useful source/code analysis after exact-scope publication",
-  "reviewed_article_sha256": "4b14a283b83e4015c6ef64dad5592b05454571b2ae9bdd971517df14763f40ff"
+  "next_action": "Verify independent FMOD lifetime gate before integrating a bounded teardown choice",
+  "reviewed_article_sha256": "4b14a283b83e4015c6ef64dad5592b05454571b2ae9bdd971517df14763f40ff",
+  "commit_sha": "c6a4297d3ea0cc3b94b34bf69fda3f677d13db60"
 }
