@@ -1,0 +1,252 @@
+{
+  "status": "historical_observation_projection",
+  "method": "Read and project existing records only; no native or archived checker execution. Selected technical fields, not a substitute for the original archive or authenticity proof. Private execution identities omitted.",
+  "observations": [
+    {
+      "observation_label": "author",
+      "events": 52,
+      "exported_attempts": 19,
+      "exported_returns": 19,
+      "status_zero_returns": 8,
+      "completed_closes": 2,
+      "process_returncode": 0,
+      "stderr_empty": true,
+      "cases": [
+        {
+          "case": "bmp",
+          "input": [
+            1488,
+            1489
+          ],
+          "mode": 0,
+          "options": 0,
+          "paragraph_level": 1,
+          "write_options": 0,
+          "visual_to_logical": [
+            1,
+            0
+          ],
+          "naive": [
+            1489,
+            1488
+          ],
+          "naive_wellformed": true,
+          "safe": [
+            1489,
+            1488
+          ],
+          "safe_wellformed": true,
+          "source_wellformed": true,
+          "terminator": 0
+        },
+        {
+          "case": "supplementary",
+          "input": [
+            1488,
+            55357,
+            56832,
+            1489
+          ],
+          "mode": 0,
+          "options": 0,
+          "paragraph_level": 1,
+          "write_options": 0,
+          "visual_to_logical": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "naive": [
+            1489,
+            56832,
+            55357,
+            1488
+          ],
+          "naive_wellformed": false,
+          "safe": [
+            1489,
+            55357,
+            56832,
+            1488
+          ],
+          "safe_wellformed": true,
+          "source_wellformed": true,
+          "terminator": 0
+        }
+      ],
+      "original_output_sha256": "8de66cdc5e2b847cffea580bbe7da425f962c14c0ac07c61521712c8a94cf37b",
+      "archived_source_sha256": {
+        "child.py": "40b6a702a75c129752268977630a9ab28c0b669339a2186d59ea685010104cce",
+        "consumer.py": "c2731aa103d741273ca71485e6a531e9d7845fd84f3a8f9f281cf3b552d7665a",
+        "run.py": "14e4acb0efad67c330d61b1156400695cb7a110b2259286cfb540c9d46407c8c"
+      },
+      "version_return": [
+        76,
+        1,
+        0,
+        0
+      ],
+      "loads_recorded": 1,
+      "children_recorded": 1,
+      "lengths": [
+        {
+          "case": "bmp",
+          "processed": 2,
+          "result": 2,
+          "written": 2,
+          "output_capacity": 3
+        },
+        {
+          "case": "supplementary",
+          "processed": 4,
+          "result": 4,
+          "written": 4,
+          "output_capacity": 5
+        }
+      ],
+      "historical_source_before_after_equal": true,
+      "historical_selected_files_before_after_equal": true
+    },
+    {
+      "observation_label": "independent_repeat",
+      "events": 52,
+      "exported_attempts": 19,
+      "exported_returns": 19,
+      "status_zero_returns": 8,
+      "completed_closes": 2,
+      "process_returncode": 0,
+      "stderr_empty": true,
+      "cases": [
+        {
+          "case": "bmp",
+          "input": [
+            1488,
+            1489
+          ],
+          "mode": 0,
+          "options": 0,
+          "paragraph_level": 1,
+          "write_options": 0,
+          "visual_to_logical": [
+            1,
+            0
+          ],
+          "naive": [
+            1489,
+            1488
+          ],
+          "naive_wellformed": true,
+          "safe": [
+            1489,
+            1488
+          ],
+          "safe_wellformed": true,
+          "source_wellformed": true,
+          "terminator": 0
+        },
+        {
+          "case": "supplementary",
+          "input": [
+            1488,
+            55357,
+            56832,
+            1489
+          ],
+          "mode": 0,
+          "options": 0,
+          "paragraph_level": 1,
+          "write_options": 0,
+          "visual_to_logical": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "naive": [
+            1489,
+            56832,
+            55357,
+            1488
+          ],
+          "naive_wellformed": false,
+          "safe": [
+            1489,
+            55357,
+            56832,
+            1488
+          ],
+          "safe_wellformed": true,
+          "source_wellformed": true,
+          "terminator": 0
+        }
+      ],
+      "original_output_sha256": "649da7a19673e24877e0b439b38719de0183c163f5538a7f4a85800b884a7c29",
+      "archived_source_sha256": {
+        "child.py": "40b6a702a75c129752268977630a9ab28c0b669339a2186d59ea685010104cce",
+        "consumer.py": "c2731aa103d741273ca71485e6a531e9d7845fd84f3a8f9f281cf3b552d7665a",
+        "run.py": "14e4acb0efad67c330d61b1156400695cb7a110b2259286cfb540c9d46407c8c"
+      },
+      "version_return": [
+        76,
+        1,
+        0,
+        0
+      ],
+      "loads_recorded": 1,
+      "children_recorded": 1,
+      "lengths": [
+        {
+          "case": "bmp",
+          "processed": 2,
+          "result": 2,
+          "written": 2,
+          "output_capacity": 3
+        },
+        {
+          "case": "supplementary",
+          "processed": 4,
+          "result": 4,
+          "written": 4,
+          "output_capacity": 5
+        }
+      ],
+      "historical_source_before_after_equal": true,
+      "historical_selected_files_before_after_equal": true
+    }
+  ],
+  "schema": "icu-bidi-finite-observation-projection-v1",
+  "transformation_provenance": {
+    "transformed_on": "2026-11-01",
+    "operation": "Allowlist projection of two existing archived traces; numeric fields statically checked against original records. Original records were not edited. No native rerun.",
+    "retained": [
+      "literal UTF-16 inputs and outputs",
+      "paragraph and write options",
+      "visual-to-logical map",
+      "exported call and status counts",
+      "original source code and original output file hashes"
+    ],
+    "omitted": [
+      "execution paths and environment",
+      "process identifiers and per-run identifiers",
+      "installed library and interpreter fingerprints",
+      "private manifest and receipt identities"
+    ],
+    "checksum_meaning": "original_output_sha256 identifies an internally retained unredacted historical output, not this projection. The original output is not supplied as a public replay package. Its hash cannot verify omitted metadata, enable independent reproduction from this summary, or authenticate execution; the projection requires its own file hash and review.",
+    "source_identity_limit": "source hashes identify archived implementation files, not the installed ICU build; original version return is self-report.",
+    "selected_file_statement": "Equality fields summarize the historical archived before/after records. No currently installed library or interpreter was queried or hashed for this derivative."
+  },
+  "source_pin": {
+    "repository": "unicode-org/icu",
+    "commit": "8eca245c7484ac6cc179e3e5f7c1ea7680810f39",
+    "unicode_data_version": "16.0.0"
+  },
+  "limits": [
+    "Two unique configurations repeated, not four unique cases or a second implementation.",
+    "Both permutations are self-inverse; direction depends on API binding, not numeric discrimination.",
+    "No level getter was called.",
+    "Well-formed UTF-16 does not prove shaping, grapheme or caret behavior, display, accessibility, language quality or engine integration.",
+    "No native warning/error/timeout/cleanup fault was exercised; failure probes were mocked Python.",
+    "Do not pre-reorder for a renderer already responsible for BiDi."
+  ]
+}

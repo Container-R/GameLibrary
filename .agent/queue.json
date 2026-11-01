@@ -289,7 +289,7 @@
       "id": "TASK-2026-0008",
       "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
       "discipline": "PROD",
-      "status": "paused",
+      "status": "researching",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "管理档案/分类/roles-and-work-areas.md",
@@ -300,12 +300,12 @@
         "符合仓库知识模板与证据要求"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T18:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:32:58.438383Z",
-      "next_action": "Resume only after reader-baseline migration and editorial acceptance; do not add new topics meanwhile",
+      "last_progress_at": "2026-11-01T17:35:57Z",
+      "next_action": "Inspect the existing role/coverage gap around character movement and collision: compare current root-motion coverage with original Box2D/Jolt mover documentation, pin source versions and decide a concrete nonduplicative mechanism before drafting; no new native experiment.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -314,7 +314,6 @@
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",
-      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence",
       "historical_artifacts": [
         {
           "path": "research/audits/initial-coverage-and-taxonomy.md",
@@ -3490,11 +3489,17 @@
       "id": "TASK-2026-0092",
       "question": "Can ICU BiDi index correspondence safely construct UTF-16 text through raw code-unit gathering?",
       "discipline": "LOC",
-      "status": "blocked",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Prioritize deeper verified evidence rather than article count; inspect existing artifacts before choosing a new bounded integration",
       "expected_artifact": "Source-backed gap gate and, if feasible, frozen protocol with independently reviewed evidence",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/本地化制作/文字排版/双向文本的索引映射为何不能直接用来重排字符串.md",
+        "管理档案/支持资料/ICU双向索引历史观察/README.md",
+        "管理档案/支持资料/ICU双向索引历史观察/observation-summary.json",
+        "管理档案/审查/ICU双向索引-公开衍生审查.md",
+        "管理档案/审查/ICU双向索引-读者与原始来源审读.md"
+      ],
       "acceptance": [
         "Read exact current articles and evidence before proposing a gap",
         "Select one concrete question not a generic revision/ownership worksheet or duplicate toy model",
@@ -3504,11 +3509,10 @@
       "owner": null,
       "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:20:23.558424Z",
-      "next_action": "Prepare a public-safe derivative under the authorized redaction scope, then obtain independent content/privacy review before any publication; preserve technical findings and failures. No completion or release is claimed.",
-      "blockers": [
-        "Redaction is authorized; the unpublished evidence still requires scoped derivative preparation and independent review. Authorization alone is not publication or technical acceptance."
-      ]
+      "last_progress_at": "2026-11-01T17:35:57Z",
+      "next_action": "Retain finite observation and source boundaries; do not treat the public projection as the original replay package.",
+      "blockers": [],
+      "completion_scope": "Reader article and reviewed public-safe historical projection; original private runtime package not published; no new native run."
     },
     {
       "id": "TASK-2026-0093",
@@ -4961,7 +4965,7 @@
       "id": "TASK-2026-0133",
       "question": "Can original DOOM production combat and animation material support a concrete encounter-control mechanism beyond existing timing and ownership notes?",
       "discipline": "DESIGN",
-      "status": "researching",
+      "status": "blocked",
       "priority": 92,
       "priority_rationale": "Deepen actual production-case understanding and implementation tradeoffs without role-count padding",
       "expected_artifact": "A primary-source access and mechanism gate with concrete constraints, source locations and transfer limits",
@@ -4975,13 +4979,13 @@
         "Reject generic or duplicative expansion and preserve source-access limits",
         "No participant data, private runtime artifacts or held publication content"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T18:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-11-01T17:23:03Z",
-      "next_action": "Revisit the existing DOOM original-source access gate; admit a mechanism article only after inspecting a concrete primary technical segment. If access remains insufficient, retain the negative finding and continue another existing executable queue item.",
+      "last_progress_at": "2026-11-01T17:34:04Z",
+      "next_action": "Reopen only when a directly inspectable official technical segment becomes available; bounded repeated access still yielded abstracts/player shells, not a mechanism. Do not continue generic repeated searches.",
       "blockers": [
-        "No directly inspected original technical segment available through the attempted public text/video routes"
+        "Original technical content not obtained through bounded official public access revisit; no user authorization needed to continue other research."
       ],
       "previous_status": "needs-research",
       "historical_artifacts": [

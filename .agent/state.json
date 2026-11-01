@@ -9,17 +9,20 @@
     "rewritten_reader_books": 55,
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
-    "physical_root_consolidation_complete": true
+    "physical_root_consolidation_complete": true,
+    "reader_books_total": 56
   },
   "publication": {
-    "last_verified_head_sha": "0702cce22b393a038e9d500788b5d022ae39fba5",
-    "status": "published-verified",
+    "last_verified_head_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
+    "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Frozen reader baseline remediation accepted; 55 reader articles and current support/maintenance hierarchy published. Historical records remain in fixed Git history.",
+    "scope": "Accepted ICU BiDi reader article and explicitly transformed historical observation added to 55 accepted baseline books. Remote readback of the containing commit is recorded separately; no self-referential SHA.",
     "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-    "latest_verified_content_sha": "0702cce22b393a038e9d500788b5d022ae39fba5"
+    "latest_verified_content_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
+    "reader_books_total": 56,
+    "post_baseline_research_books": 1
   },
-  "next_action": "Revisit the existing DOOM original-source access gate; admit a mechanism article only after inspecting a concrete primary technical segment. If access remains insufficient, retain the negative finding and continue another existing executable queue item.",
+  "next_action": "Inspect the existing role/coverage gap around character movement and collision: compare current root-motion coverage with original Box2D/Jolt mover documentation, pin source versions and decide a concrete nonduplicative mechanism before drafting; no new native experiment.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -34,7 +37,7 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "source-grounded-reader-research",
   "active_task_ids": [
-    "TASK-2026-0133"
+    "TASK-2026-0008"
   ],
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -53,10 +56,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T18:05:00Z",
+    "lease_until": "2026-11-01T18:15:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T172303Z-reader-baseline-acceptance",
+  "last_run_id": "20261101T173557Z-icu-bidi-reader",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -75,8 +78,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T17:23:03Z",
-  "last_commit_sha": "0702cce22b393a038e9d500788b5d022ae39fba5",
+  "last_real_progress_at": "2026-11-01T17:35:57Z",
+  "last_commit_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -100,5 +103,8 @@
     "old_experiments_executed": false,
     "verified_commit": "0702cce22b393a038e9d500788b5d022ae39fba5",
     "verified_tree": "536833c7406af95ead3ec54029a3028c4091274d"
+  },
+  "research_limits": {
+    "TASK-2026-0133": "Bounded official-source revisit still lacked technical content. No mechanism article admitted; other existing research proceeds."
   }
 }

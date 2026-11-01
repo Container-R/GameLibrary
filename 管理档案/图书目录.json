@@ -1,6 +1,6 @@
 {
   "baseline_sha": "6bd1dfbec5e22126189ec87171d9bcadde4a6997",
-  "phase": "reader-baseline-rebuild",
+  "phase": "reader-first-maintenance",
   "entries": [
     {
       "internal_id": "ROLE-ANIM-001",
@@ -1185,16 +1185,35 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/02eb6dbf6897b8582b31c2169c04060d5d6dccf4/case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
       "old_path_history_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4"
+    },
+    {
+      "internal_id": "SOL-LOC-002",
+      "reader_title": "双向文本的索引映射为何不能直接用来重排字符串",
+      "floor": "本地化与无障碍",
+      "area": "本地化制作",
+      "shelf": "文字排版",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/双向文本的索引映射为何不能直接用来重排字符串.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/双向文本的索引映射为何不能直接用来重排字符串.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立代理读者、固定原始来源与有限历史观察衍生审查接受；非真人或渲染测试",
+      "origin": "existing-task-0092-recovered-research",
+      "scope_note": "ICU76.1具体接口与UTF-16码元反例；不声称字体、塑形或真实游戏呈现验证",
+      "review_paths": [
+        "管理档案/审查/ICU双向索引-读者与原始来源审读.md",
+        "管理档案/审查/ICU双向索引-公开衍生审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
   "legacy_entries_remaining": 0,
-  "whole_library_rebuild_complete": false,
-  "counting_note": "55篇改写正文及原文范围去向已分别审读；不等于根目录归并、历史记录脱敏或全库整改已经完成。",
+  "whole_library_rebuild_complete": true,
+  "counting_note": "冻结的55项旧书整改及内容去向已验收，根目录归并见0702cce；最后独立远端审读抽查三条路线，不代表所有知识和历史实验重新认证。",
   "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
-  "inventory_state": "reader_bodies_in_this_revision",
-  "counts_scope": "All 55 reader bodies included in this repository revision; original archives remain separate",
-  "publication_base_sha": "06af32a40b38f11a2981db19d8b919b43b54dc77",
-  "accounted_for_original_items": 55
+  "inventory_state": "published-reader-inventory",
+  "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
+  "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
+  "accounted_for_original_items": 55,
+  "reader_books_total": 56,
+  "post_baseline_research_books": 1
 }
