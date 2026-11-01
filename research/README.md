@@ -221,3 +221,5 @@ python3 scripts/evidence/test_verify.py
 [FFXV 越障的片段后继候选](../case-studies/animation/ffxv-vaulting-successor-candidates.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。
 
 [三个生产案例的对抗审查](audits/production-case-adversarial-review/REVIEW.md)复核 Horizon、Warlander 与 For Honor 的来源和推理边界；发现并精确修订 Warlander 类别数量措辞，不以负面结果认证全库或实际运行。
+
+[延迟补偿的目标与历史样本](source-notes/lag-compensation-target-and-history-sample.md)以固定 Valve SDK 源码和原创手算，区分命令目标、服务器接受目标与条件历史采样；不把位置候选称为实际命中或全世界回退。

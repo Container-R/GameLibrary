@@ -1,0 +1,14 @@
+{
+  "intended_path": "research/source-notes/lag-compensation-target-and-history-sample.md",
+  "note_sha256": "99e12a7cdb9605a4f6908b698689557274024d6963f601a6a6c0bff6d1ed921f",
+  "source_commit": "be57e3d01ac7d7aa6a2cacbfef187c0b46616db0",
+  "source_scope": [
+    "player_lagcompensation.cpp full; recording order, selection/interpolation/fallback and optional recursion checked",
+    "shareddefs.h 16–19",
+    "hl2mp_player.cpp 640–659"
+  ],
+  "original_example": "two independent ideal-arithmetic trials; fixstuck off; no hit-result model",
+  "execution": "none",
+  "unavailable_source": "Valve paper page returned 403; not retried",
+  "review_status": "awaiting independent review"
+}

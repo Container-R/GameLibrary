@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T101800Z-lag-compensation-target",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0149"
+  ],
+  "started_at": "2026-11-01T10:18:38Z",
+  "ended_at": "2026-11-01T10:21:45.726091Z",
+  "outcome": "Independently reviewed fixed-source lag-compensation note; publication validation pending",
+  "sources_examined": [
+    "https://github.com/ValveSoftware/source-sdk-2013/blob/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/game/server/player_lagcompensation.cpp",
+    "https://github.com/ValveSoftware/source-sdk-2013/blob/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/game/shared/shareddefs.h",
+    "https://github.com/ValveSoftware/source-sdk-2013/blob/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/game/server/hl2mp/hl2mp_player.cpp"
+  ],
+  "evidence_added": "Fixed time selection, advancing-simulation-time history and conditional position interpolation; independent source review",
+  "original_contribution": "Two independent commands distinguish initial targets 990/968 from accepted 990/992, followed by conditional historical position candidates",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No compilation, engine, live service, network or model execution",
+    "Ideal arithmetic away from float and rounding boundaries",
+    "No full-world rewind or dynamic-obstacle hit outcome",
+    "Fixed SDK identity does not establish current commercial-game behavior",
+    "Original paper access returned 403 once; not retried or substituted with a mirror",
+    "Separate pending runtime-evidence release unchanged"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 149,
+    "indexed_articles": 55,
+    "archive_consistency_checks": 519,
+    "archive_consistency_failures": 0,
+    "normal_and_optimized_agree": true,
+    "archive_scope": "Declared archive consistency only, not new runtime, binary authenticity or semantic correctness"
+  },
+  "next_action": "Verify exact publication and continue evidence-driven depth selection"
+}

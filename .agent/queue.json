@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T11:05:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:17:43.351985Z",
-      "next_action": "Read fixed Valve lag-compensation history selection and deduplicate existing prediction notes; maintain source-only release scope",
+      "last_progress_at": "2026-11-01T10:21:45.726091Z",
+      "next_action": "Deepen server lag-compensation target selection separately from existing client movement replay",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3924,6 +3924,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T10:17:43.351985Z",
       "commit_sha": "1706dad975a6cfc879c8db1e203d980b4df0a13d"
+    },
+    {
+      "id": "TASK-2026-0149",
+      "question": "How do command-requested time, server-accepted target time and selected player history sample differ in fixed Valve SDK lag compensation?",
+      "discipline": "NET",
+      "status": "reviewing",
+      "priority": 86,
+      "priority_rationale": "Concrete time-validation and conditional history-sampling mechanism absent from existing movement prediction and dependency-time notes",
+      "expected_artifact": "Fixed-source mechanism note with ideal two-command arithmetic and conditional position sample",
+      "artifact_paths": [
+        "research/source-notes/lag-compensation-target-and-history-sample.md"
+      ],
+      "acceptance": [
+        "Resolve and read exact official SDK source without inferring current commercial behavior",
+        "Keep latency API quantity and rounded interpolation time precise",
+        "Verify strict target replacement branch and avoid numerical boundary claims",
+        "Distinguish empty history, missing brackets and conditional interpolation",
+        "Account for optional recursive eligibility bypass and later position application",
+        "No actual hit, all-world rewind, live game or runtime claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T11:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:21:45.726091Z",
+      "next_action": "Validate exact final source review and selected publication diff",
+      "blockers": []
     }
   ]
 }
