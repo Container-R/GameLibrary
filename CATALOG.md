@@ -58,6 +58,7 @@
 
 - [Killzone 3 行动执行：计划可继续、动作完成与优先级替换不是同一判断](case-studies/ai/killzone3-plan-execution-continuation.md) — `source-backed` · `AI`
 - [Left 4 Dead Director：强度估计、节奏控制与实际体验的证据边界](case-studies/ai/left4dead-director-pacing-evidence.md) — `source-backed` · `AI`
+- [FFXV 越障动画的后继候选：状态图归并不等于片段关系消失](case-studies/animation/ffxv-vaulting-successor-candidates.md) — `source-backed` · `ANIM`
 - [For Honor 的 Motion Matching 制作接口：事件标记与请求时刻怎样对齐](case-studies/animation/for-honor-motion-matching-event-request.md) — `source-backed` · `ANIM`
 - [Warlander 的取消许可与输入预约：记住命令不等于允许行动](case-studies/design/warlander-cancel-input-reservation.md) — `source-backed` · `DESIGN`
 - [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `source-backed` · `ENGINE`

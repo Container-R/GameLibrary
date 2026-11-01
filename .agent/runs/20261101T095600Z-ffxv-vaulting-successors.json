@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T095600Z-ffxv-vaulting-successors",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0146"
+  ],
+  "started_at": "2026-11-01T09:56:10Z",
+  "ended_at": "2026-11-01T10:02:06.738237Z",
+  "outcome": "Original production vaulting successor case independently reviewed; publication validation pending",
+  "sources_examined": [
+    "https://www.jp.square-enix.com/tech/library/pdf/CEDEC2017_Kawachi.pdf"
+  ],
+  "evidence_added": "Original conference diagrams and speaker notes establish current-clip successor hints, selection payload and state consolidation",
+  "original_contribution": "Two current clips sharing an abstract state can require distinct successor sets; geometry alone does not justify a union during behavior-preserving refactor",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No FFXV game, animation graph, collision query or video execution",
+    "No inferred ranking, no-candidate fallback, transaction, event deduplication or full motion guarantee",
+    "Specific vaulting foot-phase/IK refinements are future work in source, not a claim about all FFXV animation",
+    "No original slides, notes, PDF or game assets republished"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 146,
+    "indexed_articles": 55,
+    "archive_consistency_normal_pass": 519,
+    "archive_consistency_optimized_pass": 519,
+    "archive_consistency_fail": 0,
+    "archive_scope": "Declared archive consistency only; no new runtime or semantic test",
+    "declared_paths_checked": 198,
+    "full_changed_file_privacy_scan": "PASS"
+  },
+  "next_action": "Verify publication and prioritize substantive evidence review over new article count"
+}

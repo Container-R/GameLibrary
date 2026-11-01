@@ -217,3 +217,5 @@ python3 scripts/evidence/test_verify.py
 [Horizon 流送的依赖初始化许可](../case-studies/engine/horizon-streaming-dependency-initialization.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
 
 [Warlander 取消类别与输入预约](../case-studies/design/warlander-cancel-input-reservation.md)依据开发者原始日语文章区分行动许可和命令有效期；原创分开试次明确半开边界及共同计时前提，没有推定实际队列、hitstop或执行结果。
+
+[FFXV 越障的片段后继候选](../case-studies/animation/ffxv-vaulting-successor-candidates.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。

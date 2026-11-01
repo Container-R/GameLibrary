@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:54:54.043930Z",
-      "next_action": "Examine original FFXV vaulting candidate supply and geometry checks; separate implemented behavior from future foot-phase and IK proposals",
+      "last_progress_at": "2026-11-01T10:02:06.738237Z",
+      "next_action": "Read original production animation diagrams and notes to separate state consolidation from authored clip successor policy",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3838,6 +3838,33 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:54:54.043930Z",
       "commit_sha": "5b3d180b268c2573422edb34e28a20e69883c9da"
+    },
+    {
+      "id": "TASK-2026-0146",
+      "question": "When multiple vaulting clips share one animation state, how is each current clip successor set preserved for foothold selection?",
+      "discipline": "ANIM",
+      "status": "reviewing",
+      "priority": 92,
+      "priority_rationale": "Original FFXV production graph transformation exposes concrete animation content data retained after structural simplification",
+      "expected_artifact": "Source-backed historical case with original two-clip counterfactual and explicit source/future-work scope",
+      "artifact_paths": [
+        "case-studies/animation/ffxv-vaulting-successor-candidates.md",
+        "research/source-notes/ffxv-vaulting-successor-candidates.md"
+      ],
+      "acceptance": [
+        "Read original diagrams and speaker notes with physical and printed page distinction",
+        "Keep per-current-clip hints distinct from a global candidate union",
+        "Scope counterfactual to preserving authored policy rather than declaring every broadening a bug",
+        "Keep selected clip and foothold association without inventing transaction or priority algorithm",
+        "Do not turn self-transition into recursive execution or future vaulting IK into shipped feature",
+        "Exclude all original document assets and preserve prior runtime scopes"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:02:06.738237Z",
+      "next_action": "Validate independently reviewed candidate topology case and exact publication",
+      "blockers": []
     }
   ]
 }
