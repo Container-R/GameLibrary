@@ -3010,7 +3010,10 @@
       "priority": 92,
       "priority_rationale": "Deepen existing rendering role with a concrete shader maintenance decision rather than a generic evidence checklist",
       "expected_artifact": "Integrated source-backed depth-space decision example and bounded source review",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/rendering/graphics-programmer.md",
+        "research/source-notes/graphics-programmer-role.md"
+      ],
       "acceptance": [
         "Read historical Godot migration and versioned 4.6 tutorial with renderer-specific conventions",
         "Distinguish homogeneous clip, divided NDC and sampled depth values",
@@ -3021,8 +3024,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:29:40.345628Z",
-      "next_action": "Integrate independently reviewed reverse-Z comparison-space decision in existing graphics role",
+      "last_progress_at": "2026-11-01T06:31:11.266041Z",
+      "next_action": "Review exact depth-space choices and renderer-specific reconstruction before source-only publication",
       "blockers": []
     }
   ]

@@ -6,18 +6,20 @@ status: source-backed
 primary_discipline: GFX
 related_disciplines: [ENGINE, TA, QA, PLATFORM, PROD]
 related_roles: [rendering-programmer, technical-artist, engine-programmer, tools-programmer, qa-engineer]
-related_topics: [rendering-feature-handoff, visual-regression, frame-budget, graphics-debugging, quality-tiers]
+related_topics: [rendering-feature-handoff, visual-regression, frame-budget, graphics-debugging, quality-tiers, reverse-z, depth-reconstruction]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["雇主职责原文读取于2026-10-31；首次发布日期未知", "Unreal与RE ENGINE仅为来源中的环境，不指明技术版本"]
-updated_at: 2026-10-31
+versions: ["雇主职责原文读取于2026-10-31；首次发布日期未知", "Unreal与RE ENGINE仅为来源中的环境，不指明技术版本", "Godot4.3历史迁移及4.6版本化教程"]
+updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 加拿大、日本、波兰三个雇主原文及Factorio2018原始制作案例核对；责任矩阵与有限接收工作表为原创建议，未执行渲染基准、组织试用或实际项目验收
+verification_method: 三个雇主原文、Factorio2018制作案例及Godot深度迁移文档所列章节核对；责任表与深度效果决策例为原创未执行建议，未编译shader或执行渲染基准、组织试用、实际项目验收
 sources:
   - https://www.ubisoft.com/en-us/company/careers/search/744000138127992-senior-3d-programmer
   - https://hrmos.co/pages/capcom/jobs/01_06_020
   - https://techland.net/job-offers/rendering-programmer
   - https://www.factorio.com/blog/post/fff-227
+  - https://godotengine.org/article/introducing-reverse-z/
+  - https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html
 ---
 
 # 图形与渲染程序：从视觉需求到可维护渲染功能的交付责任
@@ -69,6 +71,24 @@ sources:
 
 关键能力不是背工具名，而是能回答：资源从谁处产生、由哪个pass读取、谁控制生命周期；内容参数怎样改变执行路径；错误来自接口、内容、算法还是平台；改变之后如何让别人复查。图形程序应能与TA协商可制作的参数与限制，也应向引擎/平台工程说明底层依赖，而非要求内容作者理解全部渲染器内部细节。
 
+### 维护中的具体选择：深度效果究竟比较什么量？
+
+Godot 的反向 Z 迁移说明提供了一个具体例子：直接写深度常量、直接比较深度，与通过投影／逆投影矩阵转换的路径，不能一律采用同一种修补。[S5] 这不是三家雇主的技术栈要求，而是图形程序与 TA 约定参数含义的一项引擎特定案例。
+
+**原创未执行场景：** 一个水面交界提示在迁移后表现不符预期。先不要调大阈值；“差得近”究竟是前后关系、沿相机视轴的间隔，还是水体厚度？三种要求会导向不同实现。
+
+| 实际要表达的效果 | 技术选择与接收问题 |
+|---|---|
+| 只判断前后 | 可以保留原始深度的排序比较，但须让两侧处于同一深度约定，并按反向 Z 的近大远小解释方向。不要连已经转换到其他空间的比较也一起翻转 |
+| 根据视轴间隔渐变 | 从深度样本重建视空间位置，再对两个位置的视轴深度作有符号差；明确哪一侧减哪一侧，以及阈值的单位。先取绝对值会抹掉前后信息，不是普遍修复 |
+| 表达水体厚度或沿某条射线的长度 | 先定义所需的两端点与度量；不能直接把原始深度差，甚至视轴差，命名为该长度。现有深度采样是否提供所需表面，也需另行确认 |
+
+按 Godot 4.6 教程，Forward+／Mobile 的 NDC z 区间为 `[0,1]`，Compatibility 为 `[-1,1]`。深度样本 `d` 的 z 重建分别使用 `d` 与 `2d−1`；再把 NDC 的齐次表示乘逆投影矩阵，除以所得 w，才得到视空间位置。[S6] 这里限有效深度样本、对应的可逆投影及重建结果 w 非零且可得到有限位置的情况；背景或退化输入另订处理。 这里区分**齐次裁剪坐标**与**除以 w 后的 NDC**，不把文档中较宽泛的“clip space”称呼当作两个量相同。
+
+数学上，`−view.z` 是视轴深度，不是相机到该点的欧氏距离：例如视空间点 `(3,0,−4)` 的两者分别为 `4` 与 `5`。这是手算示例，不是 shader 输出。透视投影下的原始深度差也不能直接当作统一长度阈值；此处不把该非线性说法推广到所有投影。
+
+交给 TA 的决定应是“此参数控制哪种间隔、保留哪种前后语义、支持哪个 renderer 的重建路径”，而不只是“反向 Z 已修好”。之后仍需实际编译、内容与画面检查；本文没有运行 shader、证明水体效果、测量精度或性能，也没有给出完整可运行实现。
+
 ## 典型工程问题与已有证据
 
 - **接口字节合法却画面错误**：[CPU与shader矩阵合同](../../solutions/rendering/matrix-major-interface-contract.md)区分布局与代数语义；该文的实际编译证据不是GPU执行证明。
@@ -91,7 +111,7 @@ Wube 的2018-01-26开发日志 [S4] 中，Posila讨论优化对不同机器可�
 
 ## 原始来源
 
-均访问2026-10-31；S1–S3首次发布/修订日期未确认，不能用搜索抓取日期替代；S4有明确发布日期。职位页面可访问不表示当前仍招聘。未记录联系人、薪酬或应聘信息。
+初始 S1–S4 访问2026-10-31，技术补充 S5–S6 访问2026-11-01；S1–S3首次发布/修订日期未确认，不能用搜索抓取日期替代；S4有明确发布日期。职位页面可访问不表示当前仍招聘。未记录联系人、薪酬或应聘信息。
 
 - **S1** Ubisoft，*Senior 3D Programmer*，Montreal，职位标识744000138127992；JOB DESCRIPTION / What you'll do / Qualifications：[原文](https://www.ubisoft.com/en-us/company/careers/search/744000138127992-senior-3d-programmer)。Unreal具体版本未知。
 - **S2** Capcom，*レンダリングエンジニア*，职位标识01_06_020；仕事内容 / 歓迎条件：[原始日文](https://hrmos.co/pages/capcom/jobs/01_06_020)。RE ENGINE版本未知。
@@ -100,3 +120,6 @@ Wube 的2018-01-26开发日志 [S4] 中，Posila讨论优化对不同机器可�
 - **S4** Wube Software，Posila、Ernestas、Klonan，*Friday Facts #227 - Rendering, Trees & Scenario talk*，2018-01-26；本次仅以Rendering/VRAM optimizations（Posila）和Trees refresh（Ernestas）两节正文为案例依据：[原文](https://www.factorio.com/blog/post/fff-227)。没有将无关场景章节或图片当作已分析证据。
 
 详细范围与来源链见[来源笔记](../../research/source-notes/graphics-programmer-role.md)。仅原创概述，不转载职位全文。
+
+- **S5** Clay John / Godot，*Introducing Reverse Z*，2024-04-29；4.3 历史迁移说明的 POSITION、DEPTH、depth_texture 与比较空间章节：[原文](https://godotengine.org/article/introducing-reverse-z/)。
+- **S6** Godot 4.6，*Advanced post-processing*；Full screen quad 与 Depth texture：[版本化文档](https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html)。页面可变，不是固定源码；仅文字阅读，未编译或运行 shader。

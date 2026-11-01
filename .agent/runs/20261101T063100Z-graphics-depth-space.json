@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T063100Z-graphics-depth-space",
+  "task_ids": [
+    "TASK-2026-0116"
+  ],
+  "started_at": "2026-11-01T06:28:16Z",
+  "ended_at": "2026-11-01T06:31:11.266041Z",
+  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "sources": [
+    "https://godotengine.org/article/introducing-reverse-z/",
+    "https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html"
+  ],
+  "evidence": "Main and independent source review read historical migration and versioned tutorial selected sections",
+  "original_contribution": "Choose raw ordering, view-axis gap or separately specified physical length before repairing effect thresholds; hand-calculated axial/radial distinction",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No shader compilation, GPU execution, captures, images or benchmark",
+    "Versioned tutorial mutable; historical migration not current all-renderer specification",
+    "No copied vector-scalar conditional or assertion of observed compilation failure",
+    "No water-effect repair, physical thickness, precision or performance measurement"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 116,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Static archived consistency; no new runtime or semantic testing",
+    "declared_paths_checked": 148,
+    "local_links_checked": 818
+  },
+  "next_action": "Continue source-depth gaps after bounded editorial review",
+  "prepublication_correction": "Bounded inverse reconstruction to valid sample, matching invertible projection and nonzero homogeneous w yielding finite position; background/degenerate inputs require a separate policy",
+  "reviewed_article_sha256": "018d277f18458b8190c3959a707478593390eb688be2a90a5445b97bb21eded0"
+}
