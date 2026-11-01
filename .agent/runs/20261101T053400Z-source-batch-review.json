@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T053400Z-source-batch-review",
+  "task_ids": [
+    "TASK-2026-0106"
+  ],
+  "started_at": "2026-11-01T05:30:20Z",
+  "ended_at": "2026-11-01T05:34:23.590575Z",
+  "outcome": "bounded technical review accepted; archival publication pending",
+  "review_snapshot": "5e0531d7f258099d4170ce9fd72e8e516d6bd35b",
+  "checked_notes": [
+    "mesh-simplification-request-result.md",
+    "pso-precache-first-use-acceptance.md",
+    "input-disable-teardown-callback.md",
+    "tangent-handedness-normal-transform.md"
+  ],
+  "finding": "No material correction found in the four checked notes and listed primary-source/example scope",
+  "reviewer_independence": "Prior source/author overlap explicitly disclosed; not wholly fresh author-independent review",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Exact four-note source/math review only, not whole repository or historical archive authentication",
+    "Crossfade note published after review snapshot is outside this review",
+    "No code, numerical model, engine, audio or rendering run by reviewer",
+    "No existing article or source note modified"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 106,
+    "integrator_archive_consistency_checks": 519,
+    "reviewer_archive_reruns": 0,
+    "declared_paths_checked": 135,
+    "local_links_checked": 803
+  },
+  "next_action": "Investigate legal original commercial gameplay architecture source for a distinct mechanism case"
+}

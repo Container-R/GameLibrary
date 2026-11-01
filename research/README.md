@@ -177,3 +177,5 @@ python3 scripts/evidence/test_verify.py
 [单位向量仍可能变换错误](source-notes/tangent-handedness-normal-transform.md)用原创非均匀缩放手推比较点积 0 与 3/5，不把规范读取或代数证明升级为渲染测试。
 
 [相同曲线的三种均方结果](source-notes/equal-power-crossfade-correlation.md)用四样本原创代数分开窗口交叉矩、均方、样本峰值与听感验收。
+
+[四篇已发布来源笔记的有界反向核查](audits/source-batch-adversarial-review/REVIEW.md)记录精确快照、逐项挑战、无实质修正的有限结果及审查者既往角色重叠；不是全库或运行验收。

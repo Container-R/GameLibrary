@@ -2738,7 +2738,9 @@
       "priority": 94,
       "priority_rationale": "Strengthen recent mechanism analyses before expanding coverage; seek material contradictions rather than ceremonial edits",
       "expected_artifact": "A bounded exact-snapshot technical review with findings or scoped negative result, and any supported corrections",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/audits/source-batch-adversarial-review/REVIEW.md"
+      ],
       "acceptance": [
         "Read exact published mesh, PSO, input-disable and tangent notes at pinned snapshot",
         "Recheck primary sources and example assumptions for evidence transfer or overclaim",
@@ -2749,8 +2751,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:33:00.723537Z",
-      "next_action": "Review bounded exact-snapshot adversarial findings and integrate only material corrections",
+      "last_progress_at": "2026-11-01T05:34:23.590575Z",
+      "next_action": "Archive accepted bounded four-note review with exact snapshot and overlap disclosure",
       "blockers": []
     }
   ]
