@@ -201,7 +201,7 @@
       "id": "TASK-2026-0008",
       "question": "\u6838\u5b9e\u6e38\u620f\u5f00\u53d1\u5168\u5b66\u79d1\u804c\u8d23\u77e9\u9635\uff0c\u8865\u9f50\u672a\u8986\u76d6\u7684\u91cd\u8981\u65b9\u5411",
       "discipline": "PROD",
-      "status": "needs-research",
+      "status": "researching",
       "priority": 88,
       "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
@@ -212,12 +212,12 @@
         "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T09:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T00:36:56.701815Z",
-      "next_action": "Continue source-backed role/work-area research guided by current catalog; partial profiles do not complete the whole occupation matrix",
+      "last_progress_at": "2026-11-01T08:23:30.741812Z",
+      "next_action": "Audit actual discipline and role coverage against taxonomy; select one undercovered high-value engineering interface from original technical sources, without a role-count target",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3506,7 +3506,7 @@
       "id": "TASK-2026-0134",
       "question": "How does adding a history guard affect both rule eligibility and criterion-count ranking in the historical Valve contextual-dialogue design?",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Tie a concrete content edit to an original production selection mechanism and distinguish history guards from response variants",
       "expected_artifact": "Source-backed historical case with original two-rule trace and bounded receiving decision",
@@ -3521,12 +3521,14 @@
         "Treat history updates as stipulated query snapshots, not audio-completion receipts",
         "Do not inherit ink evidence or claim Valve defects/current implementation"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:21:31.142344Z",
-      "next_action": "Complete independent final draft review and publish coherent case without full source deck",
-      "blockers": []
+      "next_action": "Retain source-only history-guard ranking distinction; no audio completion or current engine guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T08:23:30.741812Z",
+      "commit_sha": "0a0705ed692555d4c320e8bfa3ce6966e3de8bff"
     }
   ]
 }

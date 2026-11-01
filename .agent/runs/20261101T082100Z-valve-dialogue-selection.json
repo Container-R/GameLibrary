@@ -6,8 +6,8 @@
     "TASK-2026-0134"
   ],
   "started_at": "2026-11-01T08:12:06Z",
-  "ended_at": "2026-11-01T08:21:31.142344Z",
-  "outcome": "DOOM gate deferred; distinct Valve case accepted by source and logic review; publication pending",
+  "ended_at": "2026-11-01T08:23:30.741812Z",
+  "outcome": "Valve case published and read back; DOOM technical-source gate deferred separately",
   "sources_examined": [
     "https://gdcvault.com/play/1024186/Bringing-Hell-to-Life-AI",
     "https://gdcvault.com/play/1024940/Embracing-Push-Forward-Combat-in",
@@ -30,7 +30,13 @@
     "archive_static_opt_passed": 519,
     "indexed_articles": 49,
     "archive_static_failed": 0,
-    "scope": "Static archive consistency only, not new execution or semantic validation"
+    "scope": "Static archive consistency only, not new execution or semantic validation",
+    "selected_blob_hashes_verified": 12,
+    "outside_tree_changes": 0,
+    "local_links_checked": 850,
+    "receipt_queue_tasks_checked": 134,
+    "declared_paths_checked": 179
   },
-  "next_action": "Verify coherent publication then continue source-depth work"
+  "next_action": "Audit actual discipline and role coverage against taxonomy; select one undercovered high-value engineering interface from original technical sources, without a role-count target",
+  "commit_sha": "0a0705ed692555d4c320e8bfa3ce6966e3de8bff"
 }
