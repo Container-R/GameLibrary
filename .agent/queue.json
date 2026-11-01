@@ -2091,7 +2091,11 @@
       "priority": 87,
       "priority_rationale": "Missing analyst role connected to existing synthetic metric contract and production decision responsibility",
       "expected_artifact": "Narrow source-backed analyst role and original unexecuted tutorial-comparison handoff",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/data/game-data-analyst.md",
+        "research/source-notes/game-data-analyst-role.md",
+        "research/audits/cloud-save-second-review/REVIEW.md"
+      ],
       "acceptance": [
         "Named Bandai Namco Nexus and Riot first-party historical practitioner sources",
         "Distinguish question, metric eligibility, interpretation and authorized decision",
@@ -2101,8 +2105,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:59:15.977030Z",
-      "next_action": "Review ROLE-DATA-001 draft386c7801 and source50561caa; archive useful negative cloud-save second review without inventing defects",
+      "last_progress_at": "2026-11-01T02:01:38.117945Z",
+      "next_action": "Publish reviewed analyst responsibility profile and useful-negative cloud-save review without inventing a defect",
       "blockers": []
     }
   ]

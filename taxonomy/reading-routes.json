@@ -446,6 +446,34 @@
           "rationale": "需要与问题相匹配的真实观察，不借用其他实验结果。"
         }
       ]
+    },
+    {
+      "id": "role-game-data",
+      "title": "从游戏数据分析出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-DATA-001",
+      "entries": [
+        {
+          "document_id": "SOL-DATA-001",
+          "question": "完成率的分子分母到底指什么？",
+          "rationale": "已有合成输入验证有限指标契约，不代表线上数据或玩家效果。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "版本和复现证据怎样进入分析？",
+          "rationale": "检查通过不替代问题定义和解释。"
+        },
+        {
+          "document_id": "ROLE-PROD-001",
+          "question": "谁接收建议并决定后续动作？",
+          "rationale": "分析建议不自动取得发布权限。"
+        },
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "完成行为是否依赖主持人提示？",
+          "rationale": "遥测结果与实际观察条件必须一起解释。"
+        }
+      ]
     }
   ]
 }

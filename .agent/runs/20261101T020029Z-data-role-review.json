@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T020029Z-data-role-review",
+  "task_ids": [
+    "TASK-2026-0082"
+  ],
+  "started_at": "2026-11-01T02:00:29Z",
+  "ended_at": "2026-11-01T02:01:38.117945Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.wantedly.com/companies/bandainamco-nexus/post_articles/362598",
+    "https://www.riotgames.com/en/work-with-us/disciplines/insights/get-data-informed-on-the-insights-blog",
+    "https://bandainamco-nexus.co.jp/news/1378/"
+  ],
+  "evidence": "Named Japanese/English first-party historical practitioner accounts; official announcement corroborates publication platform, not exact2021story",
+  "original_contribution": "Unexecuted tutorial-comparison question/measurement/eligibility/interpretation/decision handoff",
+  "native_player_experiments": 0,
+  "maintenance_review": {
+    "result": "No new in-domain material cloud-save defect found",
+    "existing_protection_tests_rerun": 20,
+    "existing_counterexample_tests_rerun": 1,
+    "reviewer_python_model_processes": 2,
+    "new_filesystem_executions": 0,
+    "main_read_only_archive_checks": 2
+  },
+  "limitations": [
+    "No real player data, production query or intervention effect",
+    "No experiment statistics recipe or causal claim",
+    "No current universal staffing or release authority",
+    "Static cloud-save checks do not authenticate historical execution or establish CAS"
+  ],
+  "validation": {
+    "indexed_articles": 40,
+    "unchanged_prior_experiment_files": 2787,
+    "archive_checks_normal": 495,
+    "archive_checks_optimized": 495,
+    "queue_tasks_checked": 82,
+    "declared_paths_checked": 95,
+    "local_links": 645
+  },
+  "next_action": "Read original animation-smoothing mathematical source gate before choosing finite continuity experiment"
+}

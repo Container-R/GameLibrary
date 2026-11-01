@@ -129,3 +129,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [环境概念美术来源](../research/source-notes/environment-concept-artist-role.md)定位PlatinumGames与Bungie历史实践者资料；不把概念图当作制作或玩家结果。
 
 [Left 4 Dead Director 来源](../research/source-notes/left4dead-director-pacing.md)定位历史 AIIDE 演讲文字，不把代理强度量或阶段名当作玩家体验验证。
+
+[游戏数据分析岗位来源](../research/source-notes/game-data-analyst-role.md)定位 Nexus 与 Riot 历史实践者文字；不把描述性比较升级为因果实验。

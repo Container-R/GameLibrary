@@ -220,3 +220,17 @@
 - 设计者能解释画面，是否等于玩家理解？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：需要与问题相匹配的真实观察，不借用其他实验结果。
 
+## 从游戏数据分析出发
+路线 ID：`role-game-data`
+
+岗位起点：[游戏数据分析师：从指标请求到可解释的设计决定](roles/data/game-data-analyst.md) — `ROLE-DATA-001` · `source-backed` · `DATA`
+
+- 完成率的分子分母到底指什么？ → [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `SOL-DATA-001` · `source-backed` · `DATA`
+  - 关联理由：已有合成输入验证有限指标契约，不代表线上数据或玩家效果。
+- 版本和复现证据怎样进入分析？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：检查通过不替代问题定义和解释。
+- 谁接收建议并决定后续动作？ → [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `ROLE-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：分析建议不自动取得发布权限。
+- 完成行为是否依赖主持人提示？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：遥测结果与实际观察条件必须一起解释。
+
