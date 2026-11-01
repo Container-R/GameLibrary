@@ -1,0 +1,53 @@
+{
+  "scope": "Eight independent design-review expectations frozen before candidate implementation; not rendered or observed outputs.",
+  "cases": [
+    {
+      "name": "number_paren_list",
+      "target": "# Hidden\n\n1) Value `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "number_period_list",
+      "target": "# Hidden\n\n12. Value `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "plain_list_no_angle",
+      "target": "# Hidden\n\n- Value `abc`\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "leading_text_html_attribute",
+      "target": "# Hidden\n\nValue <a title=\"`x`\">ok</a>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "code_then_plain_text",
+      "target": "# Hidden\n\n`<div>` text\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "code_then_real_html",
+      "target": "# Hidden\n\n`<div>` <span>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "long_open_no_matching_close",
+      "target": "# Hidden\n\nValue ```a<b``\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "leading_three_invalid_fence",
+      "target": "# Hidden\n\n```<div>```\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    }
+  ]
+}

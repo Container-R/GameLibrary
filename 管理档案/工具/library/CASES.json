@@ -1,0 +1,161 @@
+{
+  "scope": "Prospective checker expectations, not renderer or executed results",
+  "cases": [
+    {
+      "name": "actual_fixed_step_paragraph",
+      "target": "# Hidden\n\n正常情况下 `0≤A<h`。假设前一步位置是0，当前位置是10，余量为 `A=0.3h`，则线性插值显示3。这个显示来自过去两个完成状态之间，按这种做法通常会落后目标游戏时间一个模拟步；它不是预测未来位置。\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "multiple_spans",
+      "target": "# Hidden\n\nValue `a<b` then `c<d`.\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "long_delimiter_inner_short",
+      "target": "# Hidden\n\nValue ``a`<b`` done.\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "short_delimiter_inner_long",
+      "target": "# Hidden\n\nValue `a``<b` done.\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "outside_html",
+      "target": "# Hidden\n\nValue `a<b` <div>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "mismatch_run",
+      "target": "# Hidden\n\nValue ``a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "valid_then_unmatched",
+      "target": "# Hidden\n\nValue `a<b` then `unfinished\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "prior_unmatched_no_angle",
+      "target": "Value `open\n# Hidden\nValue `<div>` end\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "escaped_opener",
+      "target": "# Hidden\n\nValue \\`<div>`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "even_slashes_before_opener",
+      "target": "# Hidden\n\nValue \\\\`<div>`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "backslash_inside_before_close",
+      "target": "# Hidden\n\nValue `x\\` <div> `\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "backslash_inside_otherwise_valid",
+      "target": "# Hidden\n\nValue `x\\<y` end\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "raw_div_fake",
+      "target": "<div>\n# Hidden\n</div>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "raw_comment_fake",
+      "target": "<!--\nValue `a<b`\n# Hidden\n-->\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "html_attribute_backticks",
+      "target": "<div data-x=\"`\">\n# Hidden\n`\n</div>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "standalone_code_span",
+      "target": "# Hidden\n\n`<div>`\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "formatted_heading",
+      "target": "# Hidden `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "indented_prose",
+      "target": "# Hidden\n\n    Value `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "list_prose",
+      "target": "# Hidden\n\n- Value `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "quote_prose",
+      "target": "# Hidden\n\n> Value `a<b`\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "link_mix",
+      "target": "# Hidden\n\nValue [x](`a<b`)\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "valid_fence",
+      "target": "```html\n<div>\n# Fake\n```\n# Hidden\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    },
+    {
+      "name": "invalid_fence",
+      "target": "```bad`\n<div>\n# Hidden\n</div>\n",
+      "fragment": "hidden",
+      "expected_status": "incomplete"
+    },
+    {
+      "name": "missing_fragment",
+      "target": "# Hidden\n\nValue `a<b`.\n",
+      "fragment": "missing",
+      "expected_status": "fail"
+    },
+    {
+      "name": "duplicate_collision",
+      "target": "# A\n# A\n# A-1\n\nValue `a<b`.\n",
+      "fragment": "a-1-1",
+      "expected_status": "pass"
+    },
+    {
+      "name": "standalone_double_delimiter_inner_single",
+      "target": "# Hidden\n\n``a`<b``\n",
+      "fragment": "hidden",
+      "expected_status": "pass"
+    }
+  ]
+}

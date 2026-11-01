@@ -1,0 +1,42 @@
+{
+  "run_id": "20261101T220030Z-inline-heading-guard",
+  "observed_at": "2026-11-01T22:00:30Z",
+  "parent_verified_head": "00c7bbdbd86defddae1674f148f2c23cf97ec4e3",
+  "task": "TASK-2026-0167",
+  "outcome": "Accepted finite heading-checker correction and preserved negative findings in containing commit.",
+  "checker_sha256": "b28ddde4c6b6bdfc976f1d5e0d57d06eba1b8beefbdfb3132eb22181592fd42f",
+  "independent_review_sha256": "bf20f1984451f72c5d0e7c98248fe0d771cf66af76f206af5e7271bc0a2d7ba0",
+  "tests": {
+    "unittest_methods": 60,
+    "frozen_cases": 34,
+    "old_html_cases": 18,
+    "independent_cases": 23,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "repeated_modes_add_no_cases": true
+  },
+  "current_scan": {
+    "books": 67,
+    "unsupported_before": 32,
+    "unsupported_after": 31,
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "status": "incomplete"
+  },
+  "negative_findings": [
+    "Initial candidate missed outside-code underscores; declared subset violation, not proof of absent rendered anchor",
+    "Existing title guard omitted underscore formatting; final finite guard also rejects literal word-internal underscores"
+  ],
+  "renderer_execution": false,
+  "engine_execution": false,
+  "prior_publication_readback": {
+    "commit": "00c7bbdbd86defddae1674f148f2c23cf97ec4e3",
+    "all_blobs_matched": 756,
+    "key_files_matched": 3,
+    "reader_books_tree_matched": 67,
+    "reader_links_tree_matched": 166
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

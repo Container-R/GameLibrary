@@ -36,9 +36,12 @@ class HTMLHeadingScope(unittest.TestCase):
                 self.assertEqual([x['reason'] for x in result['unsupported']],['unsupported target heading syntax'])
 
     def test_whole_target_conservative_even_when_heading_precedes_marker(self):
-        for tail in ('<div>\ntext\n</div>\n','inline a < b\n','`<div>`\n','<https://example.test>\n'):
+        for tail in ('<div>\ntext\n</div>\n','inline a < b\n','<https://example.test>\n'):
             with self.subTest(tail=tail):
                 self.assertEqual(self.result('# Hidden\n\n'+tail)['status'],'incomplete')
+
+    def test_standalone_code_span_is_not_raw_html(self):
+        self.assertEqual(self.result('# Hidden\n\n`<div>`\n')['status'], 'pass')
 
     def test_supported_fences_do_not_create_html_context(self):
         for fence in ('```','~~~'):

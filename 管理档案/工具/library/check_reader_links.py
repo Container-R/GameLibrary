@@ -71,6 +71,46 @@ def prose(text):
     return lines
 
 
+def heading_code_outside(line):
+    """Return text outside exact same-line code spans, or None for ambiguity.
+
+    Target-heading guard only; not an inline renderer or link parser. Backslashes
+    on backtick-bearing lines are deliberately unsupported, even inside code.
+    """
+    if '`' in line and '\\' in line:
+        return None
+    outside = []
+    opened = None
+    i = 0
+    while i < len(line):
+        if line[i] == '`':
+            end = i + 1
+            while end < len(line) and line[end] == '`':
+                end += 1
+            length = end - i
+            if opened is None:
+                opened = length
+            elif length == opened:
+                opened = None
+            i = end
+        else:
+            if opened is None:
+                outside.append(line[i])
+            i += 1
+    return ''.join(outside) if opened is None else None
+
+
+def heading_angle_code_allowed(line, outside):
+    """Narrow unindented prose/code-only subset, after fence handling."""
+    if not line or not (line[0].isalnum() or line[0] == '`'):
+        return False
+    if re.match(r'^[0-9]+[.)]\s', line):
+        return False
+    if line.startswith('```'):
+        return False
+    return not any(c in outside for c in '<[]\\*_~|!')
+
+
 def headings(text):
     """GitHub-like slugs for plain-text ATX headings only, with duplicates."""
     slugs = set()
@@ -93,10 +133,12 @@ def headings(text):
         if m:
             fence = (m[1][0], len(m[1]))
             continue
-        # Do not certify headings through possible raw HTML block context.
-        # Deliberately conservative: any literal '<' outside a supported fence
-        # makes this whole target unsupported, even if it might be inline text.
-        if '<' in line:
+        # Sticky whole-target uncertainty. Never use stripped text for slugs.
+        outside = heading_code_outside(line)
+        if outside is None:
+            unsupported = True
+            continue
+        if '<' in line and not heading_angle_code_allowed(line, outside):
             unsupported = True
             continue
         m = re.match(r'^ {0,3}#{1,6}\s+(.+?)\s*$', line)
@@ -105,7 +147,7 @@ def headings(text):
                 unsupported = True  # Setext or thematic break: can't infer a title.
             continue
         title = re.sub(r'\s+#+\s*$', '', m[1])
-        if any(c in title for c in '`*[]<>\\&'):
+        if any(c in title for c in '`*_[]<>\\&'):
             unsupported = True
             continue
         slug = ''.join(c for c in title.lower() if c in '-_ ' or unicodedata.category(c)[0] in 'LN').replace(' ', '-')

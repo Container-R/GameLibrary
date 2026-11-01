@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T22:30:00Z",
+      "lease_until": "2026-11-01T22:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T21:44:10Z",
-      "next_action": "Review a narrowly scoped heading-link checker improvement for angle brackets inside unambiguous same-line code spans, preserving the raw-HTML fail-closed guard and explicit unsupported cases.",
+      "last_progress_at": "2026-11-01T22:00:30Z",
+      "next_action": "Continue existing source-grounded reader research; select a concrete uncovered engineering question rather than expanding Markdown parsing beyond the accepted finite scope.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6246,6 +6246,34 @@
       "next_action": "Check actual content, view, sampling and decode location; existing mip content and target support require separate validation.",
       "blockers": [],
       "verification_method": "Fixed original Vulkan specification, Data Format EOTF and ideal formula arithmetic; no GPU, image or LittleCMS execution."
+    },
+    {
+      "id": "TASK-2026-0167",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Can the known fixed-step code-span false uncertainty be removed without certifying raw HTML or formatted headings?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Repair a concrete reader navigation verification gap without rewriting valid prose or pretending a complete Markdown parser.",
+      "expected_artifact": "管理档案/工具/library/check_reader_links.py",
+      "artifact_paths": [
+        "管理档案/工具/library/check_reader_links.py",
+        "管理档案/审查/单行代码标题检查-有限审查.md"
+      ],
+      "acceptance": [
+        "Frozen 34 literal cases retained",
+        "Raw HTML negative cases remain unsupported",
+        "Outside-code and raw-title underscore omissions corrected before release",
+        "Independent 23 cases and 60 unittest methods repeated in normal and optimized modes",
+        "Current reader scan remains explicitly incomplete"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T22:00:30Z",
+      "next_action": "Keep remaining unsupported grammar explicit; do not widen scope simply to obtain pass.",
+      "blockers": [],
+      "verification_method": "Finite Python unit/negative cases, independent code review and current reader scan; no browser-renderer equivalence claim."
     }
   ],
   "execution_policy": {
