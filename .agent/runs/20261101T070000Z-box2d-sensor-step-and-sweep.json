@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T070000Z-box2d-sensor-step-and-sweep",
+  "task_ids": [
+    "TASK-2026-0121"
+  ],
+  "started_at": "2026-11-01T06:55:36Z",
+  "ended_at": "2026-11-01T07:00:39.598083Z",
+  "outcome": "source-only sensor-path analysis accepted by independent source and editorial reviews",
+  "sources": [
+    "https://github.com/erincatto/box2d/blob/8c661469c9507d3ad6fbd2fea3f1aa71669c2fe3/docs/simulation.md",
+    "https://github.com/erincatto/box2d/blob/dd8bd3fb525f0f33f1079f8ca3c5770783c44a53/src/solver.c"
+  ],
+  "evidence": "Main and independent reviewer read pinned docs and world/sensor/continuous control flow; old release tag and newer snapshot date checked",
+  "original_contribution": "Occupancy versus traversal decision with a historical endpoint-only counterexample and version-qualified engine-path alternatives",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No Box2D build, collision execution or observed event sequence",
+    "Hypothetical straight circular sweep is not a generated trajectory",
+    "New main snapshot is not identified as a release or exact website deployment",
+    "No arbitrary moving-sensor reliability, unlimited coverage or exact begin/end ordering claim"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 121,
+    "archive_consistency_normal_passed": 519,
+    "archive_consistency_optimized_passed": 519,
+    "archive_consistency_failed": 0,
+    "archive_scope": "Static declared archive consistency only; not new engine execution, binary authenticity or semantic correctness",
+    "declared_paths_checked": 157
+  },
+  "next_action": "Continue bounded adversarial source review of existing high-value mechanisms"
+}

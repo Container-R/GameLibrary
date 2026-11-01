@@ -3146,11 +3146,13 @@
       "id": "TASK-2026-0121",
       "question": "Which exact Box2D version and sensor configuration can detect fast swept crossings, and how should a trigger-detection decision respect that boundary?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Resolve a discovered discrepancy between versioned sensor semantics and rolling documentation before making a current or general recommendation",
       "expected_artifact": "Bounded version-specific source/code gate followed by useful trigger-query analysis if evidence supports it",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/box2d-sensor-step-and-sweep.md"
+      ],
       "acceptance": [
         "Pin original documentation and implementation revisions rather than mixing release and rolling text",
         "Verify sensor setup and continuous-collision scope directly",
@@ -3161,8 +3163,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:40:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:54:45.997500Z",
-      "next_action": "Resolve reported versioned-versus-rolling sensor CCD discrepancy from fixed official sources before drafting",
+      "last_progress_at": "2026-11-01T07:00:39.598083Z",
+      "next_action": "Review pinned version contrast and query responsibility without inferring executed traversal",
       "blockers": []
     }
   ]

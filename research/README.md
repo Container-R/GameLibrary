@@ -187,3 +187,5 @@ python3 scripts/evidence/test_verify.py
 [拼接标签与片段内容接口](source-notes/herringbone-tile-content-contract.md)定位模板元数据、RGB 载荷与选择器的交接，提出未执行的共享接口修改场景。
 
 [从症状放大到可追溯定位](source-notes/riot-divergence-diagnostic-interventions.md)提出比较对、诊断谓词与构造序号交接要求，并以原创有限逻辑例子说明稳定判据仍未必有单一分界。
+
+[传感区域占用与路径穿越](source-notes/box2d-sensor-step-and-sweep.md)对照 Box2D 固定旧版本与新版源码路径；区分求解子步、静止传感器连续检测和显式扫掠责任，没有物理运行。
