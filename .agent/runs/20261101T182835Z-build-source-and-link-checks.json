@@ -1,0 +1,46 @@
+{
+  "run_id": "20261101T182835Z-build-source-and-link-checks",
+  "observed_at": "2026-11-01T18:28:35Z",
+  "parent_verified_head": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
+  "task": "TASK-2026-0008",
+  "outcome": "Integrated the Korean shader-build fallback case and the existing quaternion interpolation failure condition into two reader chapters; added a deliberately limited offline reader-link checker. No new reader book.",
+  "accepted_reader_sha256": {
+    "build": "31ae477a2fcf0116ec1070f4029e2ae0005a66b8abd9bb2cb0e4eb1f67bb6701",
+    "animation": "92dc2d393b794c1823ae1bd8c34e724223c6da07cd5fe68d07f6305f821950e9"
+  },
+  "source_scope": "NDC2013 Nexon Mabinogi2 session official full Korean transcript, not author-edited text, slides or watched video. Development fallback does not establish release coverage; no numerical or diagram claims copied.",
+  "checker_scope": "Offline supported Markdown subset only; fail and incomplete return nonzero. External sources and rendered reader experience are not checked.",
+  "checker_regressions": {
+    "normal": 35,
+    "optimized": 35,
+    "scope": "Same finite suite in two Python modes, not 70 distinct tests"
+  },
+  "reader_scan": {
+    "status": "incomplete",
+    "readers": 58,
+    "local_links": 133,
+    "fragment_attempts": 22,
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "unsupported": 31,
+    "external_links_not_checked": 265
+  },
+  "negative_evidence": "Independent review rejected earlier false PASS cases for empty text, indentation, multiline labels, invalid fences and multiline HTML. Final limited acceptance does not certify a complete parser.",
+  "reader_books": 58,
+  "new_books": 0,
+  "verification_method": "Primary-source reading, independent reader-context review, finite synthetic parser tests and real-tree input scan; no game build, rendering or player test.",
+  "prior_publication_readback": {
+    "commit": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
+    "changed_reader_files_matched": 2,
+    "reader_books_tree_matched": 58,
+    "reader_links_tree_matched": 132
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "reader_paths": [
+    "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+    "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md"
+  ],
+  "animation_review": "Independent full-context reader review accepted after explaining the technical normalization premise in ordinary language and defining rotational LINEAR as spherical interpolation. Fixed glTF 59ecbdba704206bb656965ab4e202881806066f1 Appendix C and existing nonzero paper counterexample checked; no asset or exporter run.",
+  "accepted_checker_sha256": "c63c04feb666aeae282307f0b074063becc0bb104bfd6679a76c7ba1a13a6c43",
+  "independent_checker_review": "Final limited diff accepted; same 35 tests in normal and optimized modes, plus earlier 19 adversarial cases and new conservative rejections. Not a complete Markdown parser."
+}
