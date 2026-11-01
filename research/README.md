@@ -139,3 +139,5 @@ python3 scripts/evidence/test_verify.py
 [标量转场连续性](../solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。
 
 [稀疏accessor实验](experiments/gltf-sparse-accessor/README.md)保存44字节双基底与5拒绝用例；不继承密集网格的引擎证据。
+
+[对白语义交接](../roles/narrative/narrative-designer-writer.md)把世界事实、角色知识和任务资格分别交接；桥梁情境为原创未执行建议。

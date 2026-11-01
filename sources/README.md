@@ -135,3 +135,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [标量惯性化来源](../research/source-notes/scalar-inertialization-continuity.md)区分弹簧残差、有限时间多项式及数值近似。
 
 [glTF稀疏accessor来源](../research/source-notes/gltf-sparse-accessor.md)定位基底、替换和元数据子集边界。
+
+[叙事设计与写作职责来源](../research/source-notes/narrative-designer-writer-role.md)区分日英实践者角色与任务图历史样本。

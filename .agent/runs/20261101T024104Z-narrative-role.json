@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T024104Z-narrative-role",
+  "task_ids": [
+    "TASK-2026-0085"
+  ],
+  "started_at": "2026-11-01T02:41:04Z",
+  "ended_at": "2026-11-01T02:46:37.124660Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.guerrilla-games.com/read/guerrilla-spotlight-annie-kitain",
+    "https://www.monolithsoft.co.jp/interview/2307.html",
+    "https://www.guerrilla-games.com/media/News/Files/GDC2017_Szczepanski_BuildingNonLinearNarrativesInHorizonZeroDawn.pdf"
+  ],
+  "evidence": "Two studio practitioner interviews and historical original quest architecture text; independent source and editorial review",
+  "original_contribution": "Unexecuted dialogue semantic-state handoff separating world fact, NPC knowledge and quest/reward eligibility",
+  "prepublication_corrections": [
+    "Do not call a repeated request wrong without considering deliberately ignorant NPC state",
+    "Translate scenario-planner role without confusing it with level/scene planning"
+  ],
+  "runtime_experiments": 0,
+  "limitations": [
+    "No complete internal studio schema or universal role authority",
+    "No implemented dialogue, save, localization or player validation",
+    "No interpretation of PDF graphic edges or video"
+  ],
+  "validation": {
+    "indexed_articles": 42,
+    "unchanged_prior_experiment_files": 2886,
+    "archive_checks_normal": 505,
+    "archive_checks_optimized": 505,
+    "queue_tasks_checked": 85,
+    "declared_paths_checked": 103
+  },
+  "next_action": "Read rollback side-effect source gate; choose depth only after exact prior scope review"
+}

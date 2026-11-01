@@ -479,6 +479,34 @@
           "rationale": "遥测结果与实际观察条件必须一起解释。"
         }
       ]
+    },
+    {
+      "id": "role-narrative",
+      "title": "从叙事设计与写作出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-NARR-001",
+      "entries": [
+        {
+          "document_id": "CASE-NARR-001",
+          "question": "对白改写后，文字与录音批准还对应吗？",
+          "rationale": "生产版本交接不同于语义分支条件。"
+        },
+        {
+          "document_id": "SOL-LOC-001",
+          "question": "格式和占位符正确，是否证明这句话适合此情境？",
+          "rationale": "有限格式验证不是译文或角色意图判断。"
+        },
+        {
+          "document_id": "ROLE-PROG-001",
+          "question": "对白请求的效果由哪个系统确认？",
+          "rationale": "区分创作承诺、实际状态及反馈。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "怎样让对白矛盾可复现而非只凭印象？",
+          "rationale": "记录状态快照、版本和实际观察；不冒称穷尽所有分支。"
+        }
+      ]
     }
   ]
 }

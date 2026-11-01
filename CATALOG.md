@@ -10,6 +10,7 @@
 - [游戏数据分析师：从指标请求到可解释的设计决定](roles/data/game-data-analyst.md) — `source-backed` · `DATA`
 - [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `source-backed` · `DESIGN`
 - [构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `source-backed` · `ENGINE`
+- [游戏叙事设计与写作：让对白意图、知识状态和实现条件一起交接](roles/narrative/narrative-designer-writer.md) — `source-backed` · `NARR`
 - [在线服务工程师：把服务调用成功交接为可验证的游戏会话](roles/network/online-services-engineer.md) — `source-backed` · `NET`
 - [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `source-backed` · `PROD`
 - [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `source-backed` · `PROG`

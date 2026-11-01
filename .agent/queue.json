@@ -2171,11 +2171,14 @@
       "id": "TASK-2026-0085",
       "question": "What semantic state and intent must accompany branching dialogue beyond its prose?",
       "discipline": "NARR",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 88,
       "priority_rationale": "Missing narrative role and concrete state-aware content handoff, distinct from existing voice approval and save source analysis",
       "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/narrative/narrative-designer-writer.md",
+        "research/source-notes/narrative-designer-writer-role.md"
+      ],
       "acceptance": [
         "Read Guerrilla and Monolith first-party practitioner sources and retain actual role distinctions",
         "Do not infer full studio schema or universal approval authority",
@@ -2185,8 +2188,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T03:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:44:21.150605Z",
-      "next_action": "Main read three originals; review narrative role draft against accepted independent source gate",
+      "last_progress_at": "2026-11-01T02:46:37.124660Z",
+      "next_action": "Publish reviewed narrative role and original unexecuted semantic-state handoff",
       "blockers": []
     }
   ]

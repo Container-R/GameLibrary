@@ -236,3 +236,17 @@
 - 完成行为是否依赖主持人提示？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：遥测结果与实际观察条件必须一起解释。
 
+## 从叙事设计与写作出发
+路线 ID：`role-narrative`
+
+岗位起点：[游戏叙事设计与写作：让对白意图、知识状态和实现条件一起交接](roles/narrative/narrative-designer-writer.md) — `ROLE-NARR-001` · `source-backed` · `NARR`
+
+- 对白改写后，文字与录音批准还对应吗？ → [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `CASE-NARR-001` · `source-backed` · `NARR`
+  - 关联理由：生产版本交接不同于语义分支条件。
+- 格式和占位符正确，是否证明这句话适合此情境？ → [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `SOL-LOC-001` · `source-backed` · `LOC`
+  - 关联理由：有限格式验证不是译文或角色意图判断。
+- 对白请求的效果由哪个系统确认？ → [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `ROLE-PROG-001` · `source-backed` · `PROG`
+  - 关联理由：区分创作承诺、实际状态及反馈。
+- 怎样让对白矛盾可复现而非只凭印象？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：记录状态快照、版本和实际观察；不冒称穷尽所有分支。
+
