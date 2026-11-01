@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T052100Z-input-disable",
+  "task_ids": [
+    "TASK-2026-0103"
+  ],
+  "started_at": "2026-11-01T05:16:44Z",
+  "ended_at": "2026-11-01T05:21:06.410019Z",
+  "outcome": "source and exact final editorial review accepted; publication pending",
+  "sources": [
+    "https://github.com/Unity-Technologies/InputSystem/tree/c8518694c7fdd2c755755e028e2ec19cdceda19b",
+    "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/api/UnityEngine.InputSystem.InputAction.html#UnityEngine_InputSystem_InputAction_Disable"
+  ],
+  "evidence": "Official tag and package 1.11.2; pinned disable, cancellation, state transition, listener and shared disposal code read with independent review",
+  "original_contribution": "Finite unexecuted application double-cleanup call sequence and pre-call Stopping/single-owner remedy; enabled-state observation separated from shutdown reason",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Historical pinned package, not latest or installed version",
+    "No Unity run, synthetic device, crash reproduction or production teardown verification",
+    "Value action without explicit interaction, Started; single-thread normal-return no-other-state-mutation assumptions",
+    "No assertion safety, universal next-frame disposal or callback exception propagation guarantee",
+    "All existing indexed articles and experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "queue_tasks_checked": 103,
+    "accepted_note_sha256": "784a088cf0b652ab898ba23564020cb75437fe08bb6d8b5bef849963cd24050f",
+    "declared_paths_checked": 132
+  },
+  "next_action": "Review precise glTF tangent-basis source gate and bounded hand derivation"
+}

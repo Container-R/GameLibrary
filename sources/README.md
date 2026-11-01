@@ -165,3 +165,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [网格简化的请求与结果](../research/source-notes/mesh-simplification-request-result.md)定位 meshoptimizer 固定源码、实际返回计数和相对误差尺度。
 
 [PSO 预缓存首显验收](../research/source-notes/pso-precache-first-use-acceptance.md)定位 UE 5.6 官方手册与组件收集、完整绘制状态和退化策略边界。
+
+[输入禁用的同步取消边界](../research/source-notes/input-disable-teardown-callback.md)核对 Unity Input System 1.11.2 固定源码与应用清理所有权。

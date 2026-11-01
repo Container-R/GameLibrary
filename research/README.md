@@ -171,3 +171,5 @@ python3 scripts/evidence/test_verify.py
 [简化预算接收](source-notes/mesh-simplification-request-result.md)区分目标索引数、返回结果、原始容量与视觉验收；两次假设请求没有伪填输出或运行结果。
 
 [新增 pass 的首显接收](source-notes/pso-precache-first-use-acceptance.md)提出未执行的收集—绘制对照与画面/时间验收表，不把当前预编译完成写成无停顿保证。
+
+[先进入停止态，再禁用输入](source-notes/input-disable-teardown-callback.md)以原创未执行调用序列解释重复清理与单一所有者；不迁移其他引擎实验为证据。

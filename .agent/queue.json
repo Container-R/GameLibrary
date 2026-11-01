@@ -2655,11 +2655,13 @@
       "id": "TASK-2026-0103",
       "question": "Does disabling an in-progress Unity input action invoke cancellation synchronously, and what ownership or reentrancy boundary follows?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Close a concrete gameplay input teardown lifecycle gap with pinned implementation evidence instead of assuming callbacks occur later",
       "expected_artifact": "Bounded pinned-source gate and, if supported, an original teardown ordering analysis",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/input-disable-teardown-callback.md"
+      ],
       "acceptance": [
         "Verify exact official Input System tag and commit; inspect actual cancellation and disable path",
         "Check existing input coverage for duplication",
@@ -2669,8 +2671,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:55:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:16:43.739634Z",
-      "next_action": "Review exact pinned action-disable cancellation path and existing input coverage",
+      "last_progress_at": "2026-11-01T05:21:06.410019Z",
+      "next_action": "Publish pinned synchronous cancellation and application teardown ownership analysis",
       "blockers": []
     }
   ]
