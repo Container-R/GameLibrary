@@ -2548,7 +2548,7 @@
       "id": "TASK-2026-0099",
       "question": "Do independent reliable channels establish the entity-readiness dependency between creation and a subsequent action?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Deepen network integration evidence with precise channel-local ordering versus application lifecycle boundary",
       "expected_artifact": "Source-only note with pinned ENet mechanism, independently scoped Godot docs, two-message scenario and intervention table",
@@ -2562,11 +2562,36 @@
         "Separate transport ACK, application readiness, generation and authorization",
         "No packets, native execution or runtime metadata publication"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T04:58:36.745175Z",
-      "next_action": "Publish reviewed reliable-channel source analysis and explicit application-readiness boundaries",
+      "next_action": "Retain source-only permitted ordering and application lifecycle boundaries; no runtime delivery guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:59:55.958390Z",
+      "commit_sha": "cbd89912bbec0b7dd95ceaefc66cd76c4effe5ca"
+    },
+    {
+      "id": "TASK-2026-0100",
+      "question": "When does a mesh simplification request fail to establish the requested index budget, error meaning or asset acceptance?",
+      "discipline": "MODEL",
+      "status": "researching",
+      "priority": 89,
+      "priority_rationale": "Deepen asset-budget handoff with pinned source-level target/result and metric-unit distinctions",
+      "expected_artifact": "Standalone source note grounded in meshoptimizer API and stopping/scale implementation, with unexecuted two-request acceptance scenario",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read pinned official API and actual return/stopping/scale branches",
+        "Separate target index count from returned count and original-count output capacity",
+        "Do not equate approximate geometric metric with visual, deformation or GPU acceptance",
+        "Do not invent results for hypothetical meshes or silently change tolerance/options",
+        "No simplifier/native/model execution or runtime metadata release"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:59:55.958390Z",
+      "next_action": "Independently review meshoptimizer v0.25 target/result and metric-scale source gate",
       "blockers": []
     }
   ]
