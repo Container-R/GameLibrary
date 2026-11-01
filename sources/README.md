@@ -161,3 +161,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Unreal 5.6 Notify 资格与权威请求](../research/source-notes/unreal-notify-eligibility-authority.md)核对版本化官方文档，不把生成 API 当作已读实现。
 
 [可靠信道与实体就绪](../research/source-notes/reliable-channel-entity-readiness.md)定位固定 ENet 实现与独立 Godot 文档，不把协议确认当应用就绪。
+
+[网格简化的请求与结果](../research/source-notes/mesh-simplification-request-result.md)定位 meshoptimizer 固定源码、实际返回计数和相对误差尺度。

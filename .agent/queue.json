@@ -2575,11 +2575,13 @@
       "id": "TASK-2026-0100",
       "question": "When does a mesh simplification request fail to establish the requested index budget, error meaning or asset acceptance?",
       "discipline": "MODEL",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "Deepen asset-budget handoff with pinned source-level target/result and metric-unit distinctions",
       "expected_artifact": "Standalone source note grounded in meshoptimizer API and stopping/scale implementation, with unexecuted two-request acceptance scenario",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/mesh-simplification-request-result.md"
+      ],
       "acceptance": [
         "Read pinned official API and actual return/stopping/scale branches",
         "Separate target index count from returned count and original-count output capacity",
@@ -2590,8 +2592,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:40:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:59:55.958390Z",
-      "next_action": "Independently review meshoptimizer v0.25 target/result and metric-scale source gate",
+      "last_progress_at": "2026-11-01T05:04:13.037341Z",
+      "next_action": "Publish reviewed mesh simplification request/result and metric-scale source analysis",
       "blockers": []
     }
   ]
