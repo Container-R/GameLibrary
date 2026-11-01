@@ -289,9 +289,11 @@
       "area": "角色移动",
       "shelf": "脚部接触",
       "proposed_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/animation/turn-in-place-foot-sliding.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+      "current_read_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+      "legacy_retention": "旧复合正文和执行归档原位保留，子主题另行整理，不重复发布运行信息",
+      "extraction_scope": "通用诊断或调度主线重写；具体引擎回调/碰撞/复杂骨架子专题仍保留待整理"
     },
     {
       "internal_id": "SOL-ART2D-001",
@@ -461,9 +463,11 @@
       "area": "玩法系统",
       "shelf": "时间与模拟",
       "proposed_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/programming/fixed-step-simulation-boundary.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+      "legacy_retention": "旧复合正文和执行归档原位保留，子主题另行整理，不重复发布运行信息",
+      "extraction_scope": "通用诊断或调度主线重写；具体引擎回调/碰撞/复杂骨架子专题仍保留待整理"
     },
     {
       "internal_id": "SOL-GFX-001",
@@ -671,7 +675,7 @@
       "current_read_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
     }
   ],
-  "rewritten_reader_books": 5,
-  "legacy_entries_remaining": 50,
+  "rewritten_reader_books": 7,
+  "legacy_entries_remaining": 48,
   "whole_library_rebuild_complete": false
 }

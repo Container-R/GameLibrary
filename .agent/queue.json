@@ -4031,7 +4031,12 @@
         "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md",
         "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md",
         "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u6a21\u578b\u5bfc\u5165/\u8bfb\u53d6glTF\u4ea4\u9519\u9876\u70b9\u6570\u636e\u65f6\u7684\u504f\u79fb\u4e0e\u6b65\u957f.md",
-        "\u7ba1\u7406\u6863\u6848/\u590d\u5408\u65e7\u6587\u5f85\u6574\u7406.json"
+        "\u7ba1\u7406\u6863\u6848/\u590d\u5408\u65e7\u6587\u5f85\u6574\u7406.json",
+        "GameLibrary/\u89d2\u8272\u52a8\u753b/\u89d2\u8272\u79fb\u52a8/\u811a\u90e8\u63a5\u89e6/\u6392\u67e5\u539f\u5730\u8f6c\u8eab\u65f6\u7684\u811a\u6ed1.md",
+        "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u65f6\u95f4\u4e0e\u6a21\u62df/\u7528\u56fa\u5b9a\u65f6\u95f4\u6b65\u7ec4\u7ec7\u6218\u6597\u6a21\u62df.md",
+        "DISCOVERY.md",
+        "CATALOG.md",
+        "scripts/navigation/build_routes.py"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4042,10 +4047,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T12:15:00Z",
+      "lease_until": "2026-11-01T12:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:09:56.711027Z",
-      "next_action": "Rewrite existing turn-in-place foot sliding and fixed-step simulation books with independent reader reviews; retain composite chapter backlog; no new topics",
+      "last_progress_at": "2026-11-01T11:14:01.142843Z",
+      "next_action": "Review motion and fixed-step rewrites, retire competing legacy reader entry pages, then continue existing-book remediation",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

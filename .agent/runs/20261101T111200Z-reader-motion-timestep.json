@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T111200Z-reader-motion-timestep",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:10:35Z",
+  "ended_at": "2026-11-01T11:14:01.142843Z",
+  "outcome": "Two reader-reviewed books, retired legacy entries and protected generator ready; remote publication pending",
+  "baseline_head": "5f9e99a8c7d02a4ab87c02bae0791ed70b51bf0e",
+  "books": [
+    "GameLibrary/\u89d2\u8272\u52a8\u753b/\u89d2\u8272\u79fb\u52a8/\u811a\u90e8\u63a5\u89e6/\u6392\u67e5\u539f\u5730\u8f6c\u8eab\u65f6\u7684\u811a\u6ed1.md",
+    "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u65f6\u95f4\u4e0e\u6a21\u62df/\u7528\u56fa\u5b9a\u65f6\u95f4\u6b65\u7ec4\u7ec7\u6218\u6597\u6a21\u62df.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u89d2\u8272\u52a8\u753b/\u89d2\u8272\u79fb\u52a8/\u811a\u90e8\u63a5\u89e6/\u6392\u67e5\u539f\u5730\u8f6c\u8eab\u65f6\u7684\u811a\u6ed1.md": "e5d9d382f3c2707727eed12b9ab9279e1a286d6865dae22b1039f684109ccbfa",
+    "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u65f6\u95f4\u4e0e\u6a21\u62df/\u7528\u56fa\u5b9a\u65f6\u95f4\u6b65\u7ec4\u7ec7\u6218\u6597\u6a21\u62df.md": "8ba3af66feb7cb5b751a11e9db7b00015cef5260f32c4b81b432c5741d0be2df"
+  },
+  "rewritten_reader_books": 7,
+  "remaining_legacy_entries": 48,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "Only scoped article and route acceptance; whole library incomplete",
+    "Legacy composite subtopics retained in separate pending ledger",
+    "No restricted execution metadata republished"
+  ],
+  "next_action": "Review motion and fixed-step rewrites, retire competing legacy reader entry pages, then continue existing-book remediation",
+  "content_review": "Independent readers accepted turn-foot and fixed-step prose; fixed-step paused-debt defect corrected and rereviewed before publication",
+  "compatibility_review": "Old entry retirement and protected generator accepted after independent code checks",
+  "navigation_generator_tests": {
+    "methods": 16,
+    "main_final_stage_pass": true,
+    "not_human_usability_test": true
+  },
+  "historical_commands": "Old archived root DISCOVERY check commands intentionally rejected by new generator; historical audit records unchanged",
+  "reader_routes": "Compatibility entry to animation book and root to gameplay book followed, including returns",
+  "inventory_shelf_coverage": {
+    "total": 55,
+    "rewritten": 7,
+    "legacy": 48
+  },
+  "audit_copy": "Inline navigation code examples are rendered as descriptive text in archived review"
+}

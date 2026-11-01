@@ -21,6 +21,25 @@
         "源几何与引擎表示的区别",
         "稀疏属性替换"
       ]
+    },
+    {
+      "old_path": "solutions/animation/turn-in-place-foot-sliding.md",
+      "pending_subtopics": [
+        "Rig生产与求值顺序",
+        "FFXV Tuning Set与角色配置",
+        "双骨LookAt次序观察"
+      ]
+    },
+    {
+      "old_path": "solutions/programming/fixed-step-simulation-boundary.md",
+      "pending_subtopics": [
+        "同一步伤害结算与相杀政策",
+        "暂停输入的具体引擎处理",
+        "动画seek/advance方法轨与混合控制",
+        "物理回调中修改碰撞对象的时机",
+        "EVE TiDi过载时钟案例",
+        "GGPO表现副作用与回滚；优先合并现有网络主题"
+      ]
     }
   ],
   "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index"

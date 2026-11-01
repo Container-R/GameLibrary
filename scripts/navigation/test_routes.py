@@ -60,7 +60,8 @@ class Tests(unittest.TestCase):
 
     def test_cli_check_and_no_overwrite_on_error(self):
         reg=self.root/'routes.json';reg.write_text(json.dumps(self.reg))
-        out=self.root/'DISCOVERY.md'
+        out=self.root/'管理档案'/'草稿'/'旧路线候选.md'
+        out.parent.mkdir(parents=True)
         cmd=[sys.executable,str(Path(__file__).with_name('build_routes.py')),str(self.root),'--registry',str(reg),'--output',str(out)]
         self.assertEqual(subprocess.run(cmd,capture_output=True).returncode,0)
         before=out.read_bytes();mtime=out.stat().st_mtime_ns
@@ -69,5 +70,57 @@ class Tests(unittest.TestCase):
         reg.write_text('{}')
         self.assertEqual(subprocess.run(cmd,capture_output=True).returncode,2)
         self.assertEqual(out.read_bytes(),before)
+
+    def command(self, out):
+        reg=self.root/'routes.json';reg.write_text(json.dumps(self.reg))
+        return [sys.executable,str(Path(__file__).with_name('build_routes.py')),str(self.root),'--registry',str(reg),'--output',str(out)]
+
+    def test_protected_roots_refused_in_write_and_check(self):
+        for name in ('README.md','DISCOVERY.md','CATALOG.md'):
+            out=self.root/name;out.write_text('reader entry')
+            for flags in ([],['--check']):
+                result=subprocess.run(self.command(out)+flags,capture_output=True)
+                self.assertEqual(result.returncode,2)
+                self.assertIn(b'protected reader entry',result.stderr)
+                self.assertEqual(out.read_text(),'reader entry')
+            # Even byte-matching generated content cannot bless a protected entry.
+            out.write_text(render(self.root,self.reg))
+            before=out.read_bytes()
+            self.assertEqual(subprocess.run(self.command(out)+['--check'],capture_output=True).returncode,2)
+            self.assertEqual(out.read_bytes(),before)
+
+    def test_canonical_and_outside_draft_refused(self):
+        for name in ('管理档案/图书目录.json','GameLibrary/README.md','preview.md','管理档案/草稿/no.json'):
+            result=subprocess.run(self.command(self.root/name),capture_output=True)
+            self.assertEqual(result.returncode,2)
+            self.assertFalse((self.root/name).exists())
+
+    def test_draft_relative_links_and_check_mismatch(self):
+        out=self.root/'管理档案/草稿/nested/preview.md';out.parent.mkdir(parents=True)
+        cmd=self.command(out)
+        self.assertEqual(subprocess.run(cmd,capture_output=True).returncode,0)
+        text=out.read_text()
+        self.assertIn('../../../solutions/one.md',text)
+        self.assertIn('../../../GameLibrary/README.md',text)
+        self.assertEqual(subprocess.run(cmd+['--check'],capture_output=True).returncode,0)
+        out.write_text('stale')
+        self.assertEqual(subprocess.run(cmd+['--check'],capture_output=True).returncode,1)
+        self.assertEqual(out.read_text(),'stale')
+        out.unlink()
+        self.assertEqual(subprocess.run(cmd+['--check'],capture_output=True).returncode,1)
+        self.assertFalse(out.exists())
+
+    def test_symlink_cannot_overwrite_root(self):
+        out=self.root/'管理档案/草稿/alias.md';out.parent.mkdir(parents=True)
+        target=self.root/'README.md';target.write_text('reader entry');out.symlink_to(target)
+        for flags in ([],['--check']):
+            self.assertEqual(subprocess.run(self.command(out)+flags,capture_output=True).returncode,2)
+            self.assertEqual(target.read_text(),'reader entry')
+
+    def test_draft_directory_symlink_escape(self):
+        (self.root/'管理档案').mkdir();(self.root/'管理档案/草稿').symlink_to(self.root, target_is_directory=True)
+        out=self.root/'管理档案/草稿/escape.md'
+        self.assertEqual(subprocess.run(self.command(out),capture_output=True).returncode,2)
+        self.assertFalse((self.root/'escape.md').exists())
 
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -1,4 +1,4 @@
-"""Build selected reading routes; limited explicit frontmatter, no YAML dependency."""
+"""Build a legacy-route management draft, never a reader entry or canonical catalog."""
 import argparse
 import html
 import json
@@ -111,12 +111,29 @@ def validate(reg,docs):
             if docs[ident]['status']=='needs-research': raise Invalid('unfinished target')
             targets.add(ident);plain(entry['question']);plain(entry['rationale'])
 
-def render(root,registry):
+def output_path(root, output):
+    root = root.resolve()
+    target = output.resolve()
+    protected = {root / name for name in ('README.md', 'DISCOVERY.md', 'CATALOG.md')}
+    if target in protected:
+        raise Invalid('protected reader entry; output must be a management draft')
+    draft = root / '管理档案' / '草稿'
+    # Resolve the destination, but not the allowed boundary: a symlink cannot
+    # redirect the draft directory outside the literal management subtree.
+    if not target.is_relative_to(draft) or target.suffix != '.md':
+        raise Invalid('output must be a .md file under 管理档案/草稿')
+    return target
+
+def render(root,registry,output=None):
+    root = root.resolve()
+    output = output_path(root, output or root/'管理档案'/'草稿'/'旧路线候选.md')
+    def relative(path):
+        return quote(Path(os.path.relpath(root/path, output.parent)).as_posix(), safe='/')
     docs=documents(root);validate(registry,docs)
     def link(ident):
         d=docs[ident]
-        return f'[{plain(d["title"])}]({quote(d["path"],safe="/")}) — `{d["id"]}` · `{d["status"]}` · `{d["primary_discipline"]}`'
-    lines=['# 精选阅读路线（本地候选预览）','','仅表示编者选择的阅读关系，未经用户寻路测试；不是远端发表凭证。完整清单仍见 [CATALOG](CATALOG.md)。链接以仓库根目录为基准。证据状态原样来自文章，不由路线推断。','']
+        return f'[{plain(d["title"])}]({relative(d["path"])}) — `{d["id"]}` · `{d["status"]}` · `{d["primary_discipline"]}`'
+    lines=['# 旧路线维护候选（非读者目录）','',f'本文件仅预览旧元数据中的路线关系，不是当前书目或编辑验收结果。读者请使用 [中文书库]({relative("GameLibrary/README.md")})；规范书目由维护者保留在管理档案中，本工具不读写或重新生成它。链接按本草稿所在位置解析。','']
     for route in registry['routes']:
         lines += [f'## {plain(route["title"])}',f'路线 ID：`{route["id"]}`','']
         if route['kind']=='role': lines += ['岗位起点：'+link(route['subject_profile_id']),'']
@@ -132,7 +149,8 @@ def main():
     p.add_argument('--output',type=Path,required=True);p.add_argument('--check',action='store_true')
     args=p.parse_args()
     try:
-        content=render(args.root,registry_load(args.registry)) # validate fully before any output write
+        args.output=output_path(args.root,args.output) # reject protected targets even in --check mode
+        content=render(args.root,registry_load(args.registry),args.output) # validate before write
         if args.check:
             if not args.output.is_file() or args.output.read_text(encoding='utf-8')!=content:
                 print('navigation differs or is missing',file=sys.stderr);return 1

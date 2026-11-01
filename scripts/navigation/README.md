@@ -1,36 +1,31 @@
-# 精选阅读路线生成器
+# 旧路线的维护草稿生成器
 
-标准库工具，具体路线以 [当前注册表](../../taxonomy/reading-routes.json) 为准，包含已有岗位档案入口和跨学科问题入口。是编者选择关系，不是自动角色分类、职业同义词库或用户寻路试验结果。CATALOG仍为完整清单。生成物只描述当前输入目录；它不能独立证明远端发表状态。
+读者入口已经改为[中文书库](../../GameLibrary/README.md)。本工具仅将[旧路线注册表](../../taxonomy/reading-routes.json)中的关系生成维护草稿，不再生成根目录阅读页，也不代表现行分类或文章通过编辑验收。
 
-在仓库根运行：
+`管理档案/图书目录.json` 是现行规范书目；本工具不重新生成、不修改该文件。旧角色、方案等目录仍作为本工具输入，生成结果只供维护者查旧关系，不应直接发布成另一套书架。
+
+## 用法
+
+在仓库根目录运行，先创建专用草稿目录：
 
 ```sh
-python3 scripts/navigation/build_routes.py . --registry taxonomy/reading-routes.json --output DISCOVERY.md
-python3 scripts/navigation/build_routes.py . --registry taxonomy/reading-routes.json --output DISCOVERY.md --check
+mkdir -p 管理档案/草稿
+python3 scripts/navigation/build_routes.py . --registry taxonomy/reading-routes.json --output 管理档案/草稿/旧路线候选.md
+python3 scripts/navigation/build_routes.py . --registry taxonomy/reading-routes.json --output 管理档案/草稿/旧路线候选.md --check
 python3 scripts/navigation/test_routes.py
 ```
 
-生成索引应放在仓库根，链接以该位置解析；它不是可任意搬移的独立站点。
+- 输出仅允许位于指定仓库的 `管理档案/草稿/` 内，且扩展名必须为 `.md`。可使用其下级目录，链接会按输出文件所在目录重新计算并编码。
+- 根 `README.md`、`DISCOVERY.md`、`CATALOG.md` 均受保护；写入和 `--check` 都拒绝，不会因旧生成结果碰巧相同而报告通过。其他书库、规范书目和根预览路径同样不允许输出。
+- 已有符号链接按解析后的目标检查；不能经草稿文件或草稿目录的链接覆盖读者入口或跳出草稿范围。这是本地维护防误写检查，不是针对恶意并发更换链接的安全边界。
+- `--check` 只比较当前草稿与生成文本：一致退出 0，缺失或不同退出 1；输入、路径或解析错误退出 2。输出父目录须预先存在。完整校验后才写临时文件并替换，不承诺断电持久性或并发发布协调。
 
-## 契约
+## 原解析范围不变
 
-- 通过文章稳定ID解析路径，移动保留ID会更新链接；不根据文件名猜角色，不猜主题或合并QA标签。
-- role入口显式subject_profile_id，必须存在且type为role；problem入口禁止该字段，不计为岗位成果。每条目标附问题/编者关联理由。
-- 标题、status、primary_discipline均来自原文；既不提升证据等级，也不因有实验就宣称verified。needs-research不能作为路线目标。缺失/重复ID、未知状态、非法注册字段报错。
-- 字符输出HTML转义并转义可能产生Markdown链接的方括号，路径使用URL编码。注册表字符串不能含换行。现有阅读关系不隐含跨引擎统一算法。
-- 确定性顺序取注册表；`--check`只比较不写文件，缺失/不同退出1，一致退出0。校验/解析错误退出2。完整校验后在输出目录写临时文件再替换，校验或临时写失败不会先截断旧输出；不是并发发布协调或断电持久性保证。
-- 工具读取知识目录中的全部.md检查重复ID和元数据；候选变化可能使预览过期。没有读取.agent或把草稿误算成远端状态。
+仍从 `roles`、`knowledge`、`solutions`、`case-studies`、`comparisons` 读取有限 frontmatter，通过稳定 ID 解析目标。必需字段为 `id,title,type,status,primary_discipline`，限定单行标量而非完整 YAML；缺失／重复 ID、未知状态、未完成目标及非法注册字段报错。其他 YAML 字段不作完整验证。保留文本转义、路径编码和确定顺序；旧证据状态不因路线存在而升级。
 
-## 明确限定的 frontmatter 解析
+## 检查与历史
 
-不是完整YAML解析器。识别LF分隔的首部`---`，仅消费顶层`id,title,type,status,primary_discipline`五个单行标量；允许非空裸文本或无内嵌同类引号/转义的成对单/双引号文本。拒绝这些必需字段的重复、缺失、引号包裹的必需字段键、缩进/多行、块标量、别名/锚点、集合、反斜线与行内注释形式；裸文本也拒绝注释开头、空白后#、冒号后空白/行尾及null/布尔/数字或日期等歧义起始（这些文本应加引号）。必需字段后出现缩进注释亦保守拒绝。所有非空非注释顶层行必须使用无空格小写键`key:`形式（否则报错，不静默忽略键变体）；合法的其他字段内容不解析，尤其不声称校验sources/versions或完整YAML合法性。仓库若改用复杂YAML写法，应升级解析约定或显式报错，不能把本工具当通用YAML验证器。
+本次有限测试为 16 个方法：11 个既有方法保留并将成功输出改到草稿路径，另加 5 个方法覆盖保护路径、规范书目拒绝、嵌套相对链接与缺失／陈旧检查、文件及目录符号链接误写防护。测试只使用临时合成目录，不重生成全库目录。
 
-## 验证范围
-
-作者 11 项隔离测试与独立增加的 5 项测试分开记录；独立套件继承作者测试，因此其 16 项不是 16 项新测试。集成者在最终仓库路径重跑作者测试与 `--check`。记录见 [审查档案](../../research/audits/reading-routes/REVIEW.md)。
-
-这些检查证明限定输入和脚本行为，不证明角色分类覆盖完整、读者寻路更快或已经远端发布。未做用户导航试验；文章的来源与执行边界仍应到正文确认。
-
-后续 QA 职责档案以显式 `ROLE-QA-001` 加入精选路线；它是责任集合入口，不建立 qa-tester、qa-engineer 或 performance-qa 的全局同义关系。原四路线审查记录保留其历史快照。
-
-关卡策划以显式 ROLE-DESIGN-001 加入第六条路线；[集成审查](../../research/audits/level-designer-role/integration-review.md)仅核对文章关联与生成一致性，不宣称用户寻路效果。
+此前根目录生成方式与旧审查保留在版本历史及[旧路线审查档案](../../research/audits/reading-routes/REVIEW.md)，其中旧 `--check` 结论不等于新读者导航验收。通过这些回归测试也不证明真人寻路、全学科分类或文章可读性。
