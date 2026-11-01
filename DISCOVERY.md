@@ -15,6 +15,8 @@
   - 关联理由：区分尚未就绪、部分路径与目标到达。
 - NPC 计划可继续，是否意味着动作完成或替换已生效？ → [Killzone 3 行动执行：计划可继续、动作完成与优先级替换不是同一判断](case-studies/ai/killzone3-plan-execution-continuation.md) — `CASE-AI-001` · `source-backed` · `AI`
   - 关联理由：历史开发者案例与原创未执行接口审查分开；导航查询、取消请求和迟到报告都不能代替效果确认。
+- 遭遇控制器决定减压，是否意味着交战结束或玩家获得喘息？ → [Left 4 Dead Director：强度估计、节奏控制与实际体验的证据边界](case-studies/ai/left4dead-director-pacing-evidence.md) — `CASE-AI-002` · `source-backed` · `AI`
+  - 关联理由：历史节奏算法与原创未执行观察表分开，估计、生成请求和体验结论需要不同证据。
 - 角色转身脚滑由谁处理？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
   - 关联理由：检查控制器与动画运动职责交接。
 - 派生值不保存，为何读档后规则会分叉？ → [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `CASE-ENGINE-001` · `source-backed` · `ENGINE`

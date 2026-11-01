@@ -127,3 +127,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [角色实际移动来源](../research/source-notes/character-motion-obstruction.md)区分位移请求、静止占用与实际碰撞位移；不使用slide状态冒充继承方法结果。
 
 [环境概念美术来源](../research/source-notes/environment-concept-artist-role.md)定位PlatinumGames与Bungie历史实践者资料；不把概念图当作制作或玩家结果。
+
+[Left 4 Dead Director 来源](../research/source-notes/left4dead-director-pacing.md)定位历史 AIIDE 演讲文字，不把代理强度量或阶段名当作玩家体验验证。

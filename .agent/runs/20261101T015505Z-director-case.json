@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T015505Z-director-case",
+  "task_ids": [
+    "TASK-2026-0081"
+  ],
+  "started_at": "2026-11-01T01:55:05Z",
+  "ended_at": "2026-11-01T01:57:36.830673Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.valvesoftware.com/en/publications",
+    "https://cdn.fastly.steamstatic.com/apps/valve/2009/ai_systems_of_l4d_mike_booth.pdf"
+  ],
+  "evidence": "Michael Booth AIIDE2009 presentation; original index and selected PDF text independently read, core one-based pages75,79-82,92",
+  "original_contribution": "Unexecuted six-layer observation worksheet, hypothetical aggregation arithmetic and suppression-with-ongoing-combat counterexample",
+  "maintenance": "Correct stale Killzone cross-reference after separate actual CharacterBody motion publication; no navigation-controller integration claimed",
+  "native_model_gameplay_experiments": 0,
+  "limitations": [
+    "No game reproduction, code access or telemetry",
+    "No graph or video interpretation",
+    "No participant validation, causal benefit or universal difficulty guarantee"
+  ],
+  "validation": {
+    "indexed_articles": 39,
+    "unchanged_prior_experiment_files": 2787,
+    "archive_checks_normal": 495,
+    "archive_checks_optimized": 495,
+    "queue_tasks_checked": 81,
+    "declared_paths_checked": 92,
+    "local_links": 630
+  },
+  "next_action": "Review narrow data analyst role draft and independent existing cloud-save correctness audit"
+}

@@ -2060,11 +2060,14 @@
       "id": "TASK-2026-0081",
       "question": "How should adaptive pacing separate estimated intensity, population requests, ongoing encounters and player experience?",
       "discipline": "AI",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 87,
       "priority_rationale": "Original Valve Director source case complements individual NPC execution boundaries",
       "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "case-studies/ai/left4dead-director-pacing-evidence.md",
+        "research/source-notes/left4dead-director-pacing.md"
+      ],
       "acceptance": [
         "Original Michael Booth AIIDE 2009 presentation and publisher index",
         "Explicit per-survivor estimate, team aggregation, pacing phase and population exception scope",
@@ -2074,8 +2077,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:54:08.221118Z",
-      "next_action": "Complete main source reading then draft narrowly scoped Director case from independently accepted source gate",
+      "last_progress_at": "2026-11-01T01:57:36.830673Z",
+      "next_action": "Publish reviewed historical pacing case, unexecuted observation worksheet and accurate navigation cross-reference maintenance",
       "blockers": []
     }
   ]

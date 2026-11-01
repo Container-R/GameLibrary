@@ -131,3 +131,5 @@ python3 scripts/evidence/test_verify.py
 [CharacterBody3D实际移动夹具](experiments/godot-character-motion/README.md)以双通道证明空起终点不能替代途中碰撞检查；未验证完整导航控制器或最终无重叠。
 
 [环境概念美术](../roles/art2d/environment-concept-artist.md)区分图的用途、白盒约束与未定义制作问题；原创工作表未绘制或执行。
+
+[Left 4 Dead Director 案例](../case-studies/ai/left4dead-director-pacing-evidence.md)区分估计、控制、执行、遭遇与体验；六层观察表为原创未执行建议。同步修正 Killzone 案例对后续导航运动证据的过时交叉引用。
