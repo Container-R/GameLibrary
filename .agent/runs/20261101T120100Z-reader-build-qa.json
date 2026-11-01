@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:53:38Z",
-  "ended_at": "2026-11-01T12:09:15.309719Z",
-  "outcome": "Build and QA bodies and actual reader routes accepted; BC gaps merged; four original scopes accounted for; publication pending",
+  "ended_at": "2026-11-01T12:11:31.125357Z",
+  "outcome": "Build-engineer and QA books, BC corrections and four original-scope dispositions published and read back; continuing remaining inventory remediation",
   "baseline_head": "4e874196a177ac83d7d7cb104ae2710922ba9c32",
   "books": [
     "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u6784\u5efa\u53d1\u5e03/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6784\u5efa\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u4ed8\u53ef\u7528\u7684\u6e38\u620f\u7248\u672c.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Publish reviewed build and QA reader books and BC scope corrections after verifying exact tree; continue animator and VFX rewrites and finite old-scope review",
+  "next_action": "Rewrite existing animator and VFX books; close finite UI and completion-rate scope checks through coverage or minimal merges, not automatic new books; no new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u6784\u5efa\u5de5\u7a0b-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u6e38\u620f\u6d4b\u8bd5-\u72ec\u7acb\u5ba1\u8bfb.md",
@@ -38,10 +38,12 @@
     "new_book_requirement": false
   },
   "validation": {
+    "selected_blob_hashes_verified": 19,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1067,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "queue_artifact_paths_checked": 234,
-    "inventory_shelf_entries_checked": 55,
-    "runtime_experiments": 0
-  }
+    "remote_books_read_back": true
+  },
+  "commit_sha": "f06814ffa4f7401ba4791366e02371f46a4e0398"
 }

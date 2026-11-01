@@ -4063,8 +4063,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:02:54.538047Z",
-      "next_action": "Publish reviewed build and QA reader books and BC scope corrections after verifying exact tree; continue animator and VFX rewrites and finite old-scope review",
+      "last_progress_at": "2026-11-01T12:11:31.125357Z",
+      "next_action": "Rewrite existing animator and VFX books; close finite UI and completion-rate scope checks through coverage or minimal merges, not automatic new books; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4089,7 +4089,9 @@
         "ninth_reader_batch_published_sha": "792160e3e85526ea1a5ca63a96a2be1bbeb05c09",
         "ninth_batch_readback_verified": true,
         "tenth_reader_batch_published_sha": "47b38beca46ea2329acecd7714663163e2f1df0d",
-        "tenth_batch_readback_verified": true
+        "tenth_batch_readback_verified": true,
+        "eleventh_reader_batch_published_sha": "f06814ffa4f7401ba4791366e02371f46a4e0398",
+        "eleventh_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }
