@@ -6,8 +6,8 @@
     "TASK-2026-0138"
   ],
   "started_at": "2026-11-01T08:54:25Z",
-  "ended_at": "2026-11-01T08:58:38.850503Z",
-  "outcome": "Navigation diff independently accepted; existing generator and checks pass; historical supervisor audit ready for integration",
+  "ended_at": "2026-11-01T09:01:21.229396Z",
+  "outcome": "Selected navigation and historical supervision audit published and exact readback matched",
   "sources_examined": [
     "Repository navigation and four already-published source-only analyses at fd1cc1b23d130bb3d7819bce49a9cc71308b4aae"
   ],
@@ -31,13 +31,18 @@
     "archive_checks_failed": 0,
     "optimized_archive_checks_passed": 519,
     "optimized_archive_checks_failed": 0,
-    "archive_check_scope": "Static declared archive consistency only; not runtime or semantic testing"
+    "archive_check_scope": "Static declared archive consistency only; not runtime or semantic testing",
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "local_links_checked": 870,
+    "receipt_queue_tasks_checked": 138
   },
-  "next_action": "Verify navigation publication then inspect original Naughty Dog lighting production source gate",
+  "next_action": "Review original Naughty Dog lighting abstract and official deck hybrid luminance/chrominance mechanism; compare actual receiving question with existing lighting role scope",
   "audit_integrated": {
     "path": ".agent/audits/20261101T085000Z.json",
     "snapshot": "fd1cc1b23d130bb3d7819bce49a9cc71308b4aae",
     "observed_at": "2026-11-01T08:56:00Z",
     "scope": "Independent Steam source/logic spot-check; 50/519 counts attributed to remote primary run"
-  }
+  },
+  "commit_sha": "649cfc048ac6149f3ac75f6c58883c45841be76c"
 }

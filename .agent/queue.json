@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:40:00Z",
+      "lease_until": "2026-11-01T09:50:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:53:36.795003Z",
-      "next_action": "Inspect research source-note discoverability against the catalog and existing reading routes; address a concrete navigation gap without upgrading evidence or recategorizing private records",
+      "last_progress_at": "2026-11-01T09:01:21.229396Z",
+      "next_action": "Review original Naughty Dog lighting abstract and official deck hybrid luminance/chrominance mechanism; compare actual receiving question with existing lighting role scope",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3616,7 +3616,7 @@
       "id": "TASK-2026-0138",
       "question": "Can selected source-only analyses be surfaced by receiving question without recategorizing evidence or duplicating the knowledge catalog?",
       "discipline": "PROD",
-      "status": "reviewing",
+      "status": "published",
       "priority": 80,
       "priority_rationale": "Close observed discoverability gap and stale route-count wording while preserving existing reachable content and type boundaries",
       "expected_artifact": "Four selected source-question entries and two existing role-route additions, with historical supervisor audit integrated",
@@ -3633,12 +3633,14 @@
         "Run existing navigation checks and inspect exact diff",
         "Keep audit snapshot and reported-versus-rerun validation scopes explicit"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:58:38.850503Z",
-      "next_action": "Review exact navigation diff and validation before single-writer publication",
-      "blockers": []
+      "next_action": "Retain selected navigation scope and current registry reference; no user-navigation improvement claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:01:21.229396Z",
+      "commit_sha": "649cfc048ac6149f3ac75f6c58883c45841be76c"
     }
   ]
 }
