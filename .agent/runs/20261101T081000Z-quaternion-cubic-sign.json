@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T081000Z-quaternion-cubic-sign",
+  "task_ids": [
+    "TASK-2026-0132"
+  ],
+  "started_at": "2026-11-01T08:06:03Z",
+  "ended_at": "2026-11-01T08:10:34.242633Z",
+  "outcome": "source-only quaternion counterexample accepted; publication pending",
+  "evidence": "Fixed Khronos glTF TRS and interpolation clauses read directly; independent exact-real algebra and final-note review",
+  "original_contribution": "120-degree endpoint sign-flip counterexample, midpoint rotation distinction, whole-segment nonzero proof and bounded tool handoff",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No asset, exporter, player or mathematical program executed",
+    "Exact real algebra is not serialized float32 verification",
+    "No universal sampling threshold or automatic repair algorithm",
+    "Existing scalar and translation experiments not inherited"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 132,
+    "archive_consistency_normal_passed": 519,
+    "archive_consistency_optimized_passed": 519,
+    "archive_consistency_failed": 0,
+    "scope": "Static archive consistency only, not new execution or semantic validation"
+  },
+  "next_action": "Continue bounded source-depth research after publication verification"
+}

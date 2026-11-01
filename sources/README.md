@@ -187,3 +187,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [NativeArray 值副本与延迟释放](../research/source-notes/nativearray-copy-and-disposal-ownership.md)依据固定 Unity 6000.0.0f1 C# reference source，并分别标示 Collections 2.1.4 和 6000.0 API 文档；未认证安装组合或执行作业。
 
 [释放与复用合同路由](../research/source-notes/resource-release-and-reuse-routing.md)区分分配完成、操作引用放弃、音频 bank 政策与正常呈现同步复用；原创 adapter 审查不把不同证据压成通用 done 布尔值，无新增 SDK 执行。
+
+[四元数符号与立方动画](../research/source-notes/quaternion-sign-and-cubic-animation.md)给出逐键符号变化保持关键姿势却改变中间旋转的原创反例；保留非零曲线证明、工具交接范围与未执行边界。

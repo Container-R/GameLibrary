@@ -3452,11 +3452,13 @@
       "id": "TASK-2026-0132",
       "question": "Which existing gameplay or animation source-backed contract has a concrete unresolved integration decision worth deeper primary-source study?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Strengthen a real existing evidence gap rather than expand topic or commit counts",
       "expected_artifact": "A concrete original-source depth gate tied to exact existing content and a new receiving decision",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/quaternion-sign-and-cubic-animation.md"
+      ],
       "acceptance": [
         "Inspect actual existing target and record exact identity",
         "Use original source or specification with version scope",
@@ -3467,8 +3469,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T08:04:23.266860Z",
-      "next_action": "Evaluate existing-depth-selection-20 for a nonduplicative gameplay or animation source-depth gap",
+      "last_progress_at": "2026-11-01T08:10:34.242633Z",
+      "next_action": "Publish exact cubic quaternion-sign counterexample with independent source/algebra review",
       "blockers": []
     }
   ]
