@@ -304,8 +304,8 @@
       "lease_until": "2026-11-01T21:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T20:49:20Z",
-      "next_action": "Review current source-backed reader chapters for a concrete unresolved engineering gap; avoid duplicating already covered UI focus handling and sensor analysis. Preserve stopped native ENet lane.",
+      "last_progress_at": "2026-11-01T20:58:02Z",
+      "next_action": "Inspect existing Noita dirty-region/write-ownership source note and current simulation-reader coverage; only propose a reader-facing explanation if a concrete gap remains, not a duplicate mechanism article.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6102,6 +6102,33 @@
       "next_action": "Use as bounded debugging guidance; actual project trajectory and physics events remain untested.",
       "blockers": [],
       "verification_method": "Existing research readerization, fixed primary source revisit and independent agent review; no Box2D runtime or general collision-correctness proof."
+    },
+    {
+      "id": "TASK-2026-0162",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can choosing an equivalent quaternion sign per key change a glTF cubic rotation curve?",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 83,
+      "priority_rationale": "Existing mathematical research and brief role reminder lacked an accessible complete tool-programmer chapter.",
+      "expected_artifact": "GameLibrary/角色动画/动画运行时/动画插值/统一四元数符号为什么会改掉三次插值动画.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/动画运行时/动画插值/统一四元数符号为什么会改掉三次插值动画.md",
+        "管理档案/审查/四元数符号与三次插值-读者与来源审查.md"
+      ],
+      "acceptance": [
+        "Explain quaternion sign equivalence before interpolation algebra",
+        "Derive different midpoint orientations and nonzero interval bounds",
+        "Separate global negation from per-key changes and LINEAR from CUBICSPLINE",
+        "Independent math/source/full-reader and real local retrieval review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T20:58:02Z",
+      "next_action": "Use as ideal-real counterexample and transformation-scope guidance, not a floating-point validator or actual exporter defect report.",
+      "blockers": [],
+      "verification_method": "Existing original algebra readerization, fixed normative source reread and independent paper derivation; no asset, player or engine execution."
     }
   ],
   "execution_policy": {

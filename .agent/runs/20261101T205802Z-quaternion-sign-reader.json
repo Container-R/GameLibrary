@@ -1,0 +1,32 @@
+{
+  "run_id": "20261101T205802Z-quaternion-sign-reader",
+  "observed_at": "2026-11-01T20:58:02Z",
+  "parent_verified_head": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
+  "task": "TASK-2026-0162",
+  "outcome": "Promoted existing quaternion sign analysis to an independently reviewed reader chapter without claiming new discovery or runtime evidence.",
+  "reader_path": "GameLibrary/角色动画/动画运行时/动画插值/统一四元数符号为什么会改掉三次插值动画.md",
+  "reader_sha256": "445f9c22f012ad5413d617d3cb76191aaa9efa71984cbd684f2d031e24bba839",
+  "fixed_source": "KhronosGroup/glTF@59ecbdba704206bb656965ab4e202881806066f1",
+  "independent_reader_review_sha256": "b78d95edfe67cacc48d8360537c486e7993267609db2787bb5d5e1341b96fa99",
+  "local_navigation_review_sha256": "cf72b5f9763d36cccdec11fa7c6e16f00d03fbdedc591c28ef0048cee83fbc43",
+  "verification_method": "Fixed specification reading and independent ideal-real algebra; no floating-point test, exporter, player or engine execution.",
+  "scope_limits": [
+    "Both end rotations unchanged does not ensure interval motion unchanged.",
+    "All values and relevant tangents globally negated is sufficient where original curve is nonzero; not complete classification.",
+    "No universal sampling count, error bound or automatic repair."
+  ],
+  "prior_publication_readback": {
+    "commit": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
+    "key_files_matched": 6,
+    "reader_books_tree_matched": 64,
+    "reader_links_tree_matched": 158
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "supervision_sync": {
+    "path": ".agent/audits/20261101T205500Z-reader.md",
+    "sha256": "462a35cabea9a74b17ac8846b960af6f9736fc61aa9a3eff69e4d5d3d0a18aaa",
+    "snapshot": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
+    "observed_window": "2026-11-01T20:55Z through20:56Z",
+    "scope": "Historical independent sensor-reader audit, not current quaternion chapter acceptance."
+  }
+}
