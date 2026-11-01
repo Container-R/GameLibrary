@@ -5,8 +5,8 @@
     "TASK-2026-0131"
   ],
   "started_at": "2026-11-01T07:57:00Z",
-  "ended_at": "2026-11-01T08:02:58.462409Z",
-  "outcome": "source-only synthesis accepted; publication pending",
+  "ended_at": "2026-11-01T08:04:23.266860Z",
+  "outcome": "published and read back",
   "evidence": "Five exact published input bodies with restricted source-only scopes; fresh independent primary-source and final-note review",
   "original_contribution": "Four distinct permitted actions, typed adapter reception questions and an unexecuted retire-queue counterexample",
   "runtime_experiments": 0,
@@ -19,7 +19,13 @@
   "validation": {
     "indexed_articles": 48,
     "unchanged_prior_experiment_files": 3227,
-    "queue_tasks_checked": 131
+    "queue_tasks_checked": 131,
+    "selected_blob_hashes_verified": 10,
+    "outside_tree_changes": 0,
+    "local_links_checked": 839,
+    "receipt_queue_tasks_checked": 132,
+    "declared_paths_checked": 175
   },
-  "next_action": "Continue bounded source-depth research after publication verification"
+  "next_action": "Evaluate existing-depth-selection-20 for a nonduplicative gameplay or animation source-depth gap",
+  "commit_sha": "bc06a54243263fde378d49011ea71388e6091741"
 }

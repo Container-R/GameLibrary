@@ -3425,7 +3425,7 @@
       "id": "TASK-2026-0131",
       "question": "Can a bounded cross-contract comparison help callers choose the correct ownership and completion evidence without merging unlike handle semantics?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Improve problem-driven synthesis and navigation across existing resource-lifetime evidence rather than adding another isolated topic",
       "expected_artifact": "A bounded comparison gate with distinct decisions and exact existing source identities; reject generic repetition",
@@ -3439,11 +3439,36 @@
         "Reject generic or duplicative expansion and preserve source-access limits",
         "No participant data, private runtime artifacts or held publication content"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:02:58.462409Z",
-      "next_action": "Publish independently reviewed four-contract routing with typed responsibility and evidence boundaries",
+      "next_action": "Retain four distinct responsibility and permission outputs; no universal destruction or runtime proof",
+      "blockers": [],
+      "completed_at": "2026-11-01T08:04:23.266860Z",
+      "commit_sha": "bc06a54243263fde378d49011ea71388e6091741"
+    },
+    {
+      "id": "TASK-2026-0132",
+      "question": "Which existing gameplay or animation source-backed contract has a concrete unresolved integration decision worth deeper primary-source study?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Strengthen a real existing evidence gap rather than expand topic or commit counts",
+      "expected_artifact": "A concrete original-source depth gate tied to exact existing content and a new receiving decision",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect actual existing target and record exact identity",
+        "Use original source or specification with version scope",
+        "Identify a concrete counterexample or receiving decision not already covered",
+        "Reject generic or duplicative expansion and preserve source-access limits",
+        "No participant data, private runtime artifacts or held publication content"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T08:04:23.266860Z",
+      "next_action": "Evaluate existing-depth-selection-20 for a nonduplicative gameplay or animation source-depth gap",
       "blockers": []
     }
   ]
