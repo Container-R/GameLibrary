@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T11:00:36.591619Z",
-  "last_commit_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+  "last_real_progress_at": "2026-11-01T11:03:58.375278Z",
+  "last_commit_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
   "last_run_id": "20261101T110000Z-reader-art-roles",
-  "next_action": "Publish two reader-reviewed art role rewrites, then repair existing texture budget and glTF reader chapters; no new topics",
+  "next_action": "Rewrite existing texture-budget and glTF data books, then independently review content and actual reader routes; no new topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -22,10 +22,10 @@
     "whole_audit_window_healthy": false,
     "audit_snapshot_head": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
     "snapshot_archive_checks": 519,
-    "latest_post_snapshot_content": "0b3042daccb997d57cfc375e045d8590f0513da9",
+    "latest_post_snapshot_content": "e88adbddc927f216ed2949108e53f6e668f19d62",
     "remote_blob_sample_scope": "Supervisor followed complete reader route and checked original sources; no whole-tree or runtime rerun",
     "snapshot_archive_check_scope": "Historical check count is not reader acceptance",
-    "reader_baseline_status": "phase-one independently accepted within scope; two further rewrites prepared",
+    "reader_baseline_status": "Three inventory entries now have reader-reviewed new bodies; 52 remain, composite subtopics retained for later editing",
     "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
@@ -33,7 +33,7 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+    "latest_verified_content_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
     "status": "reader-baseline-rebuild-active; normal topic expansion paused",
     "deferred_optional_indexes": [],
     "object_visibility_recovery": {
@@ -49,7 +49,7 @@
     "pending_task_ids": [
       "TASK-2026-0092"
     ],
-    "latest_substantive_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe"
+    "latest_substantive_sha": "e88adbddc927f216ed2949108e53f6e668f19d62"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {
@@ -85,6 +85,8 @@
     "whole_library_rebuild_complete": false,
     "legacy_composite_retained_unchanged": true,
     "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
-    "phase_one_readback_verified": true
+    "phase_one_readback_verified": true,
+    "second_batch_published_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
+    "second_batch_readback_verified": true
   }
 }

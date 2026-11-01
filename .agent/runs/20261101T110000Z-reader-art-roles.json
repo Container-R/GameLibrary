@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T10:54:00Z",
-  "ended_at": "2026-11-01T11:00:36.591619Z",
-  "outcome": "Two rewritten books and actual reader routes accepted; remote publication pending",
+  "ended_at": "2026-11-01T11:03:58.375278Z",
+  "outcome": "Two rewritten art books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "72b39213d2299f1fe76771dfac4a8b0de1e18f3d",
   "books": [
     "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md",
@@ -25,7 +25,16 @@
     "Whole library remediation remains incomplete",
     "Restricted evidence hold unchanged"
   ],
-  "next_action": "Publish two reader-reviewed art role rewrites, then repair existing texture budget and glTF reader chapters; no new topics",
+  "next_action": "Rewrite existing texture-budget and glTF data books, then independently review content and actual reader routes; no new topics",
   "navigation_review": "Two full hierarchy routes, direct root routes and return links followed; missing return links corrected before acceptance",
-  "navigation_review_public_copy": "Inline Markdown examples rendered as descriptive text to avoid false links in archived report"
+  "navigation_review_public_copy": "Inline Markdown examples rendered as descriptive text to avoid false links in archived report",
+  "commit_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
+  "validation": {
+    "selected_blob_hashes_verified": 16,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1206,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_home_read_back": true
+  }
 }

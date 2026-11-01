@@ -4041,15 +4041,17 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T12:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:00:36.591619Z",
-      "next_action": "Publish two reader-reviewed art role rewrites, then repair existing texture budget and glTF reader chapters; no new topics",
+      "last_progress_at": "2026-11-01T11:03:58.375278Z",
+      "next_action": "Rewrite existing texture-budget and glTF data books, then independently review content and actual reader routes; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
         "sample_reader_review_accepted": true,
         "whole_library_rebuild_complete": false,
         "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
-        "phase_one_readback_verified": true
+        "phase_one_readback_verified": true,
+        "second_reader_batch_published_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
+        "second_batch_readback_verified": true
       }
     }
   ],
