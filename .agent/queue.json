@@ -3343,7 +3343,7 @@
       "id": "TASK-2026-0128",
       "question": "Can immediate story-output checks exclude state changes caused by omitted default globals during content migration?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Attempted falsification found no central error but a concrete source-backed state-migration completeness limit",
       "expected_artifact": "Bounded adversarial audit and a dated link from the unchanged prior analysis",
@@ -3358,11 +3358,36 @@
         "Separate migration policy from immediate output equality and from historical value recovery",
         "No actual saves, runtime execution, inkjs parity or broad migration certification"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:41:35.998872Z",
-      "next_action": "Review exact audit and original source-note preservation before publication",
+      "next_action": "Retain original content-version gate and conditional omitted-default migration boundary; no runtime compatibility certification",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:43:29.917705Z",
+      "commit_sha": "8272194c7f471e789413bff0cfaedf77b49520c9"
+    },
+    {
+      "id": "TASK-2026-0129",
+      "question": "Can a successful navigation path-query status still require a partial-route receiving decision?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Check original versioned navigation query semantics for a concrete unaddressed caller contract",
+      "expected_artifact": "A finite source gate and caller-contract analysis only if not duplicated in existing coverage",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect actual existing target and record exact identity",
+        "Use original source or specification with version scope",
+        "Identify a concrete counterexample or receiving decision not already covered",
+        "Reject generic or duplicative expansion and preserve source-access limits",
+        "No participant data, private runtime artifacts or held publication content"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:25:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:43:29.917705Z",
+      "next_action": "Check existing-depth-selection-17 against current navigation coverage and pinned original query status/control flow",
       "blockers": []
     }
   ]
