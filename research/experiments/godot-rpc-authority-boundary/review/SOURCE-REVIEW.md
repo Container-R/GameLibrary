@@ -1,0 +1,28 @@
+# Independent RPC authority source gate
+
+2026-11-01 00:08 UTC. Read triage SHA256 `3c8913057d618ae6a97823654d5f0b4b69ee54c2a8d531ed4028bced6d5698a4`, current prediction article metadata and existing client-prediction test definitions. Source-only acceptance for a frozen protocol; no code, engine/version process, socket, port probe or packet transmission.
+
+## Existing gap and value
+
+The existing article explicitly reports sixteen discrete model tests plus an unexecuted dependency-time proposal, not native networking. Its model has sequence/axis policy but no native sender-to-actor binding. A finite real RPC ingress observation would therefore add a distinct boundary: permission to invoke an endpoint is not authorization for every actor/payload. It must not be described as native prediction/reconciliation, physics, security, authentication or general anti-cheat validation.
+
+## Original sources independently read
+
+- [MultiplayerAPI 4.6](https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html), RPCMode and get_remote_sender_id: ANY_PEER is independent of node authority; sender is contextual to the current RPC and is zero outside it. This is a peer identifier, not an authenticated account. Polling can invoke RPCs, so the fixture must not recursively poll inside its deferred check.
+- [High-level multiplayer 4.6](https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html), initialization/connections/RPC sections: matching node paths/configuration and server identity support the proposed endpoint arrangement. Explicit annotations avoid reliance on defaults. Enqueue success alone does not witness remote handler execution.
+- [Pinned dispatch](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/multiplayer/scene_rpc_interface.cpp#L240-L300): the RPC-mode gate precedes argument decoding/call; ANY_PEER permits that dispatch, while AUTHORITY compares sender with node authority. This branch does not implement this proposed game's actor/range rules; other decoding/signature validation still exists.
+- [Pinned sender scope](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/multiplayer/scene_multiplayer.cpp#L130-L135): sender is assigned around packet processing and cleared afterwards. Capturing inside the handler and passing the captured integer to a genuinely deferred callback is source-supported. The getter there can be frozen as zero, with no nested polling or other remote context.
+- [ENetMultiplayerPeer 4.6](https://docs.godotengine.org/en/4.6/classes/class_enetmultiplayerpeer.html), create_server/client and set_bind_ip; [pinned implementation](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/enet/enet_multiplayer_peer.cpp#L60-L106): server defaults must not be mistaken for loopback. Client creation uses bind_ip through the bound-host branch only with nonzero local_port. Explicit numeric 127.0.0.1 on both peers plus a nonzero client port is therefore material, not decorative configuration.
+- [ENetConnection 4.6](https://docs.godotengine.org/en/4.6/classes/class_enetconnection.html), create_host_bound/get_local_port: supports recording requested address and observed local port. A local-port getter alone does not independently authenticate which interface the installed implementation bound. Do not present it as packet capture or OS interface audit.
+
+Accessed 2026-11-01. Public comparison commit35e80b3a is not authenticated source of the installed binary; retain the shared provenance caveat.
+
+## Protocol decisions needed before code
+
+1. Resolve stage wording: triage says both accumulators execute in the handler, whereas the proposed extension passes the captured sender to deferred validation. Freeze one precise arrangement. Prefer handler records/captures, then exactly one deferred policy application and outcome acknowledgment. Record current getter separately from captured sender; never replace captured identity with client payload identity.
+2. Freeze identical endpoint NodePath/RPC declarations, server authority1, actual client ID, server-owned actor map, exact integer payloads and one outstanding intent. Validate actual sender equals the mapped client for all three requests. Actor B belongs to server, not a fictional second client.
+3. Expected policy arithmetic is A10001/B1 naive and A1/B0 guarded for the three specified intents. This is original application arithmetic, not physical movement. Record per-request decision/state, not final totals alone.
+4. Readiness must precede client launch/assignment, and acknowledgment must follow deferred validation before the next intent. Explicitly freeze terminal delivery: do not assume a queued reliable final RPC has arrived when the server immediately quits. Preserve both sides' received/processed records and a bounded terminal handshake or coordinator-controlled release. This is finite completion evidence, not exactly-once/loss robustness.
+5. Select two fixed distinct unprivileged ports, no pre-scan, no retries on occupied/denied bind and no wildcard fallback. Record creation returns and actual local ports. Requested loopback plus inspected source is narrower than independent OS bind-address verification. Stop first failure and retain both process outputs; no socket capability is yet established.
+
+Conditional source gate accepted. Protocol/code/native authority remain separate gates. No claim is made about real user identity, malicious serialization, reconnect/replay, WAN behavior, latency, encryption, rate limiting, physics or prediction.

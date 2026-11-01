@@ -4449,6 +4449,320 @@
         "stderr_sha256"
       ],
       "target": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/behavior.stderr"
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/author/source_before",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "source_before"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/author/source_after",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/version.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/version.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/server.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/server.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/server.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/server.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/client.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/client.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/client.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/client.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/server.json",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.json"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/server.json"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/author/client.json",
+      "document": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.json"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad/client.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/independent/source_before",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "source_before"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/independent/source_after",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/version.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/version.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/server.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/server.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/server.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/server.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/client.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/client.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/client.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/client.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/server.json",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.json"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/server.json"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/independent/client.json",
+      "document": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/receipt.json",
+      "field": [
+        "output_sha256",
+        "client.json"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/client.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/historical-failed/source_before",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "source_before"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "rpc-authority/historical-failed/source_after",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "consumer.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/consumer.py",
+        "endpoint.gd": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/endpoint.gd",
+        "isolation.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/isolation.py",
+        "main.gd": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/main.gd",
+        "oracle.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/oracle.py",
+        "project.godot": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/project.godot",
+        "protocol.md": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/protocol.md",
+        "run.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/run.py",
+        "test_pure.py": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/historical-failed/version.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/historical-failed/version.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "output_sha256",
+        "version.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/historical-failed/server.stdout",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stdout"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/server.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "rpc-authority/historical-failed/server.stderr",
+      "document": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/receipt.json",
+      "field": [
+        "output_sha256",
+        "server.stderr"
+      ],
+      "target": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/server.stderr"
     }
   ]
 }

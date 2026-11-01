@@ -5,17 +5,21 @@ type: solution
 status: source-backed
 primary_discipline: NET
 related_roles: [network-programmer, gameplay-programmer, qa-engineer]
-related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots]
-engines: [engine-agnostic, Unity]
-versions: ["Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档"]
-updated_at: 2026-10-31
-verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；未进行引擎、真实网络或跨平台物理验证
+related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots, rpc-ingress, queued-sender-identity]
+engines: [engine-agnostic, Unity, Godot]
+versions: ["Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档", "Godot 4.6.3.stable.official.7d41c59c4 本机自报；发行及源码对应未认证"]
+updated_at: 2026-11-01
+verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；新增本机自报Godot4.6.3双进程回环RPC入口与应用授权观察及独立重复，保留初次解析失败；未验证实际预测纠正、WAN、Unity或跨平台物理
 sources:
   - https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html
   - https://www.gabrielgambetta.com/entity-interpolation.html
   - https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/intro-to-prediction.html
   - https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/prediction-details.html
   - https://mp-docs.dl.it.unity3d.com/netcode/2.2.0/advanced-topics/client-anticipation/
+  - https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html
+  - https://docs.godotengine.org/en/4.6/classes/class_enetmultiplayerpeer.html
+  - https://docs.godotengine.org/en/4.6/classes/class_callable.html
+  - https://docs.godotengine.org/en/4.6/classes/class_node.html
 ---
 
 # 客户端移动预测的权威边界与确认重放契约
@@ -129,3 +133,55 @@ python3 research/experiments/client-prediction/test_prediction.py
 ## 有种子的对抗性复核
 
 [独立模型审查](../../research/experiments/deep-model-qa/README.md)使用200个预测调度和200个固定步调度、独立状态/事件判据及4类故障变异；原始输出含模型内容哈希。该结果加强有限模型证据，不替代真实输入、网络、引擎或物理集成。
+
+## RPC 入口补充：可远程调用，不等于有权修改这个角色
+
+前面的 16 项整数协议测试验证确认、重放与有限输入窗口；跨实体时间依赖部分仍是未执行提案。下面新增的是 **本机自报 Godot 4.6.3 的本地双进程 RPC 入口实验**，不把它当作预测、纠正、移动或物理集成的证据。
+
+### 三种身份不能合并
+
+[Godot 4.6 的 `any_peer`](https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html#enum-multiplayerapi-rpcmode) 允许其他 peer 调用被开放的方法。它没有替项目定义“这个 peer 能控制哪个角色”。另一个容易遗漏的边界是：[`get_remote_sender_id()`](https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html#class-multiplayerapi-method-get-remote-sender-id) 属于当前 RPC 上下文，离开该调用后不能再把新读取的结果当作原始发送者。
+
+应分别记录：
+
+| 层次 | 本实验观察或设定 | 不能替代什么 |
+|---|---|---|
+| 节点 RPC authority | 两端同名 Endpoint 的 authority 都是服务器 ID `1`；`submit` 明确开放 `any_peer` | 不是每个游戏角色的所有权表 |
+| 实际调用者 | 在 `submit` 入口立即读取真实 peer ID，并由服务器复制进待处理记录 | 不是客户端自报的 actor、owner 或账号身份 |
+| 应用规则授权 | 服务器自己的 `{A: client, B: server}` 映射，以及整数轴值 `-1/0/1` | 不是网络库自动提供的反作弊结论 |
+
+peer ID 是这次连接中的标识，不是已认证用户。本实验显式关闭对象解码，但没有实现账号认证。
+
+### 实际收到三条请求，规则只接受一条
+
+原始场景只含普通 Node。两个进程请求绑定 `127.0.0.1` 的两个固定非零端口，并读取实际本地端口；没有扫描、端口重试或外部服务器。客户端逐条等待实际 outcome，随后才发送下一条命令。
+
+服务器入口只捕获 sender、复制数据、排队；两种算术处理都在 deferred 回调内进行。每条请求都实际进入 RPC，入口 sender 为客户端；回调中保留的 sender 仍为客户端，而重新读取的上下文 sender 为 `0`。这不是“一定延迟整帧”的证据。
+
+| 请求 | 不检查所有权/范围的累计结果 A/B | 服务器规则结果 | 规则累计结果 A/B |
+|---|---:|---|---:|
+| `A, +1` | `1 / 0` | 接受 | `1 / 0` |
+| `B, +1` | `1 / 1` | 拒绝：角色不属于发送者 | `1 / 0` |
+| `A, 10000` | `10001 / 1` | 拒绝：超出本例轴值范围 | `1 / 0` |
+
+这些整数是原创教学状态，不是实际位移或伤害。实验没有通过让客户端自报 sender 来伪装身份；第二条请求故意指向另一个角色，第三条使用超界整数。代码显式检查 Variant 类型，纯检查覆盖有限类型替换；没有追加布尔或浮点网络输入场景。
+
+发送 API 返回成功与对端实际处理分开记录。最后一条 outcome 到达客户端后，客户端发出 finish；服务器实际收到确认后，两端终态还须通过父进程检查，才由父进程创建 STOP。这里共有 **3 次命令 RPC、5 次控制 RPC**，不是 8 个网络包，也不是可靠性压力测试。
+
+### 可交付给网络与玩法团队的最小检查表
+
+以下是原创项目验收建议，不是已经执行的生产网络方案：
+
+1. **入口复制身份，而非延后查询。** 若要跨队列处理，把实际 sender 与有限请求字段一起存入服务器拥有的记录；不要稍后再读上下文 getter，也不要信任 payload 中的 owner。连接重建后如何失效这份身份，需要另行规定，本实验未覆盖。
+2. **分别定义开放入口与对象授权。** 对每种命令写清开放给谁、目标对象由谁控制、权限在哪个时刻判断。节点 authority 与游戏对象所有权可能不同，不应复用一个布尔变量掩盖两层判断。
+3. **先验证类型和范围，再改变权威状态。** 本例先做严格 Variant 类型检查，避免 `int()` 把浮点或布尔转换为“合法整数”；再查服务器映射和轴值范围。不要把本例范围或静态映射照搬到真实技能、载具与观战系统。
+4. **证明拒绝没有产生规则效果。** 同时保留入口、决定和前后状态，而不是只统计“服务器收到了三条消息”。若系统有日志、奖励或表现副作用，需另设对应的拒绝判据；本实验只有两个整数累计器。
+5. **把排队成本写进设计。** 捕获身份不等于允许无限排队。生产方案仍需容量、过期、断线、所有权转移、速率与重复命令策略；这些代价没有在三条 stop-and-wait 请求中得到测量或解决。
+
+### 证据与失败边界
+
+[可复查原始场景、双方输出及静态 consumer](../../research/experiments/godot-rpc-authority-boundary/README.md) 保留 23 条服务器事件和 13 条客户端事件，绑定源码、命令、实际退出状态和原始 JSON。初次 author attempt 因错误地向 `Callable.rpc_id()` 的 void 返回值赋值而出现 4 个解析错误：服务器未 READY，客户端未启动。这是实验代码错误，不是网络拒绝或引擎缺陷；失败没有被改记为成功。随后仅将 4 处发送改为返回 Error 的 `Node.rpc_id(peer, method, ...)`，原协议、端口、判据及超时保持不变。
+
+修正后的 author sequence 和独立同源重复各有 1 个服务器、1 个客户端，全部正常退出且 stderr 为空。计入首次解析失败，合计 3 次版本查询、3 个服务器进程、2 个客户端进程；只有 2 次交换被接受，仍是同一套三命令配置，而非 8 种情景。纯合成变异、预置合成旧 PASS 的 `-O` 启动拒绝均不是网络运行。后者使用改正 Callable 调用前的源码快照，只证明相同 runner 的前置启动保护。
+
+已安装二进制的 SHA 与自报版本已记录，但它与用于比较的官方源码提交没有完成来源认证。该有限回环实验不证明账号安全、通用反作弊、丢包/重连、重放去重、WAN 表现、预测纠正、物理确定性或其他引擎行为。更完整的[来源定位与分层证据说明](../../research/source-notes/godot-rpc-authority-boundary.md) 将原始文档、源码比较和实际观察分开。

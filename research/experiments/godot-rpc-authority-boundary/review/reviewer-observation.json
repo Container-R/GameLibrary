@@ -1,0 +1,23 @@
+{
+  "uuid": "58830003-76ab-4bab-a089-36d642139fb4",
+  "status": "ACCEPTED_OBSERVATION",
+  "client_id": 1799021229,
+  "version_processes": 1,
+  "server_processes": 1,
+  "client_processes": 1,
+  "command_deliveries": 3,
+  "control_deliveries": 5,
+  "naive": {
+    "A": 10001,
+    "B": 1
+  },
+  "guarded": {
+    "A": 1,
+    "B": 0
+  },
+  "deferred_getters": [
+    0,
+    0,
+    0
+  ]
+}

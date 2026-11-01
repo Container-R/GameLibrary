@@ -1,0 +1,152 @@
+{
+  "base_environment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "PATH": "/usr/bin:/bin"
+  },
+  "behavior_processes": 2,
+  "binary_after": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "binary_before": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "orchestration": [
+    {
+      "kind": "ATTEMPT",
+      "name": "version"
+    },
+    {
+      "kind": "VERSION_ACCEPTED"
+    },
+    {
+      "kind": "ATTEMPT",
+      "name": "server"
+    },
+    {
+      "kind": "SERVER_READY_ACCEPTED"
+    },
+    {
+      "kind": "ATTEMPT",
+      "name": "client"
+    },
+    {
+      "kind": "BOTH_TERMINALS_ACCEPTED"
+    },
+    {
+      "kind": "STOP_CREATED"
+    }
+  ],
+  "original_invocation": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4",
+  "original_source_root": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+  "output_sha256": {
+    "client.json": "18155ad546231579e40a4cbbba2adad2b1237bb9f8851a3e1bd672adf3fdae0f",
+    "client.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "client.stdout": "d193dc9ef47a172a937f8ad38e9b32f888dd10daecdbf2898603304e4c4e00b4",
+    "server.json": "66e4f9a1b78e2296fb4f335efb234f0b35eeaf96af320d421acf66269361d329",
+    "server.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server.stdout": "c610152f96d681519c6a4f8a20263a2d663d02bf9b1d98fc66b3cac79ac3e727",
+    "version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.stdout": "1e07780c365549219ffd8e6bd120a818c80424e8295d4ee7451c10d0ed0fa84f"
+  },
+  "processes": [
+    {
+      "argv": [
+        "/usr/local/bin/godot",
+        "--version"
+      ],
+      "attempted_utc": "2026-11-01T00:23:02.770410+00:00",
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+      "exit_code": 0,
+      "name": "version",
+      "pid": 7,
+      "returned_utc": "2026-11-01T00:23:03.123581+00:00",
+      "selected_environment": {
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/version/HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/version/TMPDIR",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/version/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/version/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/version/XDG_DATA_HOME"
+      },
+      "status": "RETURNED"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+        "--single-threaded-scene",
+        "--script",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/main.gd",
+        "--",
+        "server",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/STOP"
+      ],
+      "attempted_utc": "2026-11-01T00:23:03.125024+00:00",
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+      "exit_code": 0,
+      "name": "server",
+      "pid": 10,
+      "returned_utc": "2026-11-01T00:23:04.175492+00:00",
+      "selected_environment": {
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/server/HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/server/TMPDIR",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/server/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/server/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/server/XDG_DATA_HOME"
+      },
+      "status": "RETURNED"
+    },
+    {
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+        "--single-threaded-scene",
+        "--script",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/main.gd",
+        "--",
+        "client",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/STOP"
+      ],
+      "attempted_utc": "2026-11-01T00:23:03.576009+00:00",
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat",
+      "exit_code": 0,
+      "name": "client",
+      "pid": 24,
+      "returned_utc": "2026-11-01T00:23:04.176950+00:00",
+      "selected_environment": {
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/client/HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/client/TMPDIR",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/client/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/client/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4/environment/client/XDG_DATA_HOME"
+      },
+      "status": "RETURNED"
+    }
+  ],
+  "source_after": {
+    "consumer.py": "baa4cce3ac42383ae42a999374a4738f1968979d65ef9a4ba58045dea39dcc10",
+    "endpoint.gd": "5694668f6e561e371152dbe97fc7dea5e80de41d8377546e7cc31ceebd506eb5",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "main.gd": "28f082266444bead4bd944c803c7886bd9aae4c03894f2340f29ad0c9bee7aa6",
+    "oracle.py": "71df946e784a5857b79d65170d35dd93ad1921e45728b309d20bfe7bf6788d4c",
+    "project.godot": "c1c1e2a850bbe99c166668d4aaf4ce93fecb2991363fc624cf2584d1ce61d9cc",
+    "protocol.md": "86323211989a29ef3a8cdb008fe9789100e2235c5929af979d2743c940c80e6e",
+    "run.py": "5c0fe8c47dbda92f3bf2790d3e5c574fb00d3626dd0b043c51fa9209d308432f",
+    "test_pure.py": "b242393aee39ec4b23e1d35e3a8b1e5dd0ccd3aae9500582cc562e2a6bfe296a"
+  },
+  "source_before": {
+    "consumer.py": "baa4cce3ac42383ae42a999374a4738f1968979d65ef9a4ba58045dea39dcc10",
+    "endpoint.gd": "5694668f6e561e371152dbe97fc7dea5e80de41d8377546e7cc31ceebd506eb5",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "main.gd": "28f082266444bead4bd944c803c7886bd9aae4c03894f2340f29ad0c9bee7aa6",
+    "oracle.py": "71df946e784a5857b79d65170d35dd93ad1921e45728b309d20bfe7bf6788d4c",
+    "project.godot": "c1c1e2a850bbe99c166668d4aaf4ce93fecb2991363fc624cf2584d1ce61d9cc",
+    "protocol.md": "86323211989a29ef3a8cdb008fe9789100e2235c5929af979d2743c940c80e6e",
+    "run.py": "5c0fe8c47dbda92f3bf2790d3e5c574fb00d3626dd0b043c51fa9209d308432f",
+    "test_pure.py": "b242393aee39ec4b23e1d35e3a8b1e5dd0ccd3aae9500582cc562e2a6bfe296a"
+  },
+  "status": "PASS",
+  "stop_initially_absent": true,
+  "uuid": "58830003-76ab-4bab-a089-36d642139fb4",
+  "version_processes": 1
+}

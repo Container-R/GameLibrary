@@ -1836,11 +1836,15 @@
       "id": "TASK-2026-0073",
       "question": "Can transport RPC admission be distinguished from gameplay command authorization using a finite local-only engine observation?",
       "discipline": "NET",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Existing prediction solution has protocol models and unexecuted dependency proposal, not actual RPC admission evidence; investigate applicability before native work",
       "expected_artifact": "Original-source gap assessment, then a bounded RPC authorization observation only if justified and feasible",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/programming/client-prediction-authority-boundary.md",
+        "research/source-notes/godot-rpc-authority-boundary.md",
+        "research/experiments/godot-rpc-authority-boundary/README.md"
+      ],
       "acceptance": [
         "Inspect exact existing article and model identities before assigning evidence",
         "Read versioned official RPC modes, sender identity and authority documentation",
@@ -1851,8 +1855,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T01:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T00:06:24.597686Z",
-      "next_action": "Evaluate original-source RPC authority gate and reject low-value or unjustified scope before implementation",
+      "last_progress_at": "2026-11-01T00:26:37.510410Z",
+      "next_action": "Publish narrow actual RPC ingress/context evidence with original parser failure and independent review",
       "blockers": []
     }
   ]

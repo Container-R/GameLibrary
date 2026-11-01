@@ -1,0 +1,117 @@
+{
+  "scope": "Eight static Python checks; zero engine/version/network calls",
+  "checks": [
+    {
+      "archive": "author",
+      "checker": "consumer",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/consumer.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "author",
+      "checker": "independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/check_native.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 817464963,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "author",
+      "checker": "consumer",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/consumer.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "author",
+      "checker": "independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/check_native.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 817464963,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "review",
+      "checker": "consumer",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/consumer.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "review",
+      "checker": "independent",
+      "optimized": false,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/check_native.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 1799021229,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "review",
+      "checker": "consumer",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/consumer.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "archive": "review",
+      "checker": "independent",
+      "optimized": true,
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/check_native.py",
+        "/workspace/scratch/6d9a354d4cae/gamelibrary-publish-rpc/research/experiments/godot-rpc-authority-boundary/review/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 1799021229,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

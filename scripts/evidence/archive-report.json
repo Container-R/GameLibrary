@@ -1724,8 +1724,112 @@
     {
       "id": "recursive-focus/historical-failed/behavior/stderr",
       "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/source_before",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/server.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/server.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/client.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/client.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/server.json",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/author/client.json",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/source_before",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/server.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/server.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/client.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/client.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/server.json",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/independent/client.json",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/source_before",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/server.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "rpc-authority/historical-failed/server.stderr",
+      "status": "pass"
     }
   ],
-  "passed": 431,
+  "passed": 457,
   "failed": 0
 }

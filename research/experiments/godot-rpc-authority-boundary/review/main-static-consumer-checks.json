@@ -1,0 +1,94 @@
+{
+  "at": "2026-11-01T00:24:11.576593+00:00",
+  "engine_invocations": 0,
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "research-drafts/godot-rpc-authority-boundary/consumer.py",
+        "research-drafts/godot-rpc-authority-boundary",
+        "research-drafts/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "returncode": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "research-drafts/deep-qa/rpc-authority/check_native.py",
+        "research-drafts/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 817464963,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "research-drafts/godot-rpc-authority-boundary/consumer.py",
+        "research-drafts/godot-rpc-authority-boundary",
+        "research-drafts/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "returncode": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "research-drafts/deep-qa/rpc-authority/check_native.py",
+        "research-drafts/godot-rpc-authority-boundary/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"uuid\": \"27e538cb-7c1e-4feb-8e60-ddfb3960b6ad\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 817464963,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/consumer.py",
+        "research-drafts/deep-qa/rpc-authority/native-repeat",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "returncode": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "research-drafts/deep-qa/rpc-authority/check_native.py",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 1799021229,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/consumer.py",
+        "research-drafts/deep-qa/rpc-authority/native-repeat",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "returncode": 0,
+      "stdout": "{\"behavior_processes\": 2, \"client_events\": 13, \"command_rpc_deliveries\": 3, \"control_rpc_deliveries\": 5, \"scope\": \"static archive consistency; no execution authenticity or current binary check\", \"server_events\": 23, \"status\": \"PASS\", \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\", \"version_processes\": 1}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "research-drafts/deep-qa/rpc-authority/check_native.py",
+        "research-drafts/deep-qa/rpc-authority/native-repeat/evidence/58830003-76ab-4bab-a089-36d642139fb4"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"uuid\": \"58830003-76ab-4bab-a089-36d642139fb4\",\n  \"status\": \"ACCEPTED_OBSERVATION\",\n  \"client_id\": 1799021229,\n  \"version_processes\": 1,\n  \"server_processes\": 1,\n  \"client_processes\": 1,\n  \"command_deliveries\": 3,\n  \"control_deliveries\": 5,\n  \"naive\": {\n    \"A\": 10001,\n    \"B\": 1\n  },\n  \"guarded\": {\n    \"A\": 1,\n    \"B\": 0\n  },\n  \"deferred_getters\": [\n    0,\n    0,\n    0\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

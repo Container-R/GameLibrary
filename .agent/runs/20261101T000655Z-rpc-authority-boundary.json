@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T000655Z-rpc-authority-boundary",
+  "task_ids": [
+    "TASK-2026-0073"
+  ],
+  "started_at": "2026-11-01T00:06:55Z",
+  "ended_at": "2026-11-01T00:26:37.510410Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_enetmultiplayerpeer.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_callable.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_node.html"
+  ],
+  "native_attempts": 3,
+  "accepted_exchanges": 2,
+  "failed_attempts": 1,
+  "version_queries": 3,
+  "behavior_processes": 5,
+  "unique_command_sequence_configurations": 1,
+  "commands_per_accepted_exchange": 3,
+  "control_rpc_deliveries_per_accepted_exchange": 5,
+  "packet_count": "not measured",
+  "engine_binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "engine_identity": "Local self-report only; official release/source correspondence unverified",
+  "failed_attempt": "cee0c49d-8f19-4f76-aeee-76d302a255ca",
+  "accepted_attempts": [
+    "27e538cb-7c1e-4feb-8e60-ddfb3960b6ad",
+    "58830003-76ab-4bab-a089-36d642139fb4"
+  ],
+  "evidence": "Real same-host RPC admission and captured sender across deferred command processing; actual owner/range rejection and client outcomes",
+  "negative": "Initial fixture confused Callable.rpc_id void with Node.rpc_id Error; parser failed before READY/client launch, server killed/reaped; four-call correction preserved protocol",
+  "limitations": [
+    "No account authentication, anticheat or production security proof",
+    "No WAN loss/latency, reconnect or replay protection test",
+    "No native prediction/reconciliation or physics evidence",
+    "Requested loopback and port readback, not independent OS interface audit",
+    "Optimized startup negative belongs to pre-correction endpoint snapshot; unchanged runner rejects before local imports"
+  ],
+  "validation": {
+    "indexed_articles": 34,
+    "archive_checks_normal": 457,
+    "archive_checks_optimized": 457,
+    "unchanged_prior_experiment_files": 2206,
+    "queue_tasks_checked": 73,
+    "declared_paths_checked": 73,
+    "local_links": 547,
+    "main_static_commands": 8,
+    "static_command_engine_invocations": 0,
+    "relocated_static_commands": 8,
+    "archive_verifier_unit_methods": 9
+  },
+  "next_action": "Integrate independently reviewed VFX role and original unexecuted gameplay-signal handoff"
+}
