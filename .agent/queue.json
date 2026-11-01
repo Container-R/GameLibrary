@@ -2602,11 +2602,13 @@
       "id": "TASK-2026-0101",
       "question": "Why is an isolated supporting-plane quadric residual not a finite-surface distance bound, and which real-library terms must not be omitted from interpretation?",
       "discipline": "MODEL",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Deepen the existing simplification metric explanation with an exact geometric counterexample and explicit complete-algorithm boundary",
       "expected_artifact": "Compact source-backed mechanism supplement to the new mesh request/result note, with hand derivation and original-paper/source comparison",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/mesh-simplification-request-result.md"
+      ],
       "acceptance": [
         "Read original QEM paper and pinned meshoptimizer plane/point/border construction and error evaluation",
         "Verify exact coplanar outside-triangle distance derivation without execution",
@@ -2617,8 +2619,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:05:54.248311Z",
-      "next_action": "Independently review original QEM paper, finite-triangle proof and pinned full-metric scope",
+      "last_progress_at": "2026-11-01T05:10:08.901462Z",
+      "next_action": "Publish independently checked finite-triangle proof and complete-metric source boundaries",
       "blockers": []
     }
   ]

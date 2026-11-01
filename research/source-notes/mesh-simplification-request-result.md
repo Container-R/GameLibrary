@@ -50,6 +50,40 @@ README 把误差描述为近似度量，而不是视觉通过证据。[Basic sim
 
 尺度必须来自同一份所提供的顶点数据。在本例 options 为零的条件下，不能擅自只对引用子集算尺度。零尺度不能用于上述除法；Sparse、绝对误差或属性加权模式需另建单位合同，不能沿用此例或重复换算。
 
+## 为什么“平面距离近似”不是有限曲面距离
+
+Garland 与 Heckbert 的 SIGGRAPH 1997 原始论文在 §5 用支撑平面的距离构造二次型，并在 §6 单独加入边界约束；物理 PDF 第 6 页 §7 末尾明确区分无限平面与有限面片。这里读到的是近似量的构造依据，不是最大曲面距离定理。[作者出版页](https://www.cs.cmu.edu/~garland/quadrics/)、[原始 PDF](https://www.cs.cmu.edu/~garland/Papers/quadrics.pdf)（物理第 3–5 页 §4–§6；第 6 页上述段落）。
+
+**以下是原创手算，只隔离一个面平面项。它不是 meshoptimizer 的完整误差，也不是实际简化结果。** 取闭三角形
+
+\[
+T=\operatorname{conv}\{(0,0,0),(1,0,0),(0,1,0)\},\qquad P=(2,0,0).
+\]
+
+支撑平面为 \(z=0\)。令单位法向量对应的齐次平面系数 \(p=(0,0,1,0)^T\)，齐次点 \(v=(x,y,z,1)^T\)，则该孤立平面项为
+
+\[
+q_{\rm plane}(v)=(p^Tv)^2=v^T(pp^T)v=z^2,
+\qquad v_P=(2,0,0,1)^T,\quad q_{\rm plane}(v_P)=0.
+\]
+
+但三角形内任意点 \((x,y,0)\) 满足 \(x\ge0,y\ge0,x+y\le1\)，因此 \(x\le1\)，有
+
+\[
+\|P-(x,y,0)\|^2=(2-x)^2+y^2\ge1.
+\]
+
+在 \((1,0,0)\) 取等号，所以 **点 P 到有限三角形 T 的距离恰为 1**，并非零。这个推导只说明支撑平面没有表达面片在平面内的有限范围；同一平面项的正权重叠加仍不能补回该信息。
+
+**不要把它写成 meshoptimizer 返回零误差却把顶点移到 P。** P 不是本例原顶点，也没有被证明是可用折叠候选或可达输出；普通 API 仍引用原顶点。固定源码除了面项，还构造点正则项和符合条件的 border／seam 边项，且有拓扑准入规则：
+
+- [quadricFromPlane / quadricFromTriangle / quadricFromTriangleEdge](https://github.com/zeux/meshoptimizer/blob/6daea4695c48338363b08022d2fb15deaef6ac09/src/simplifier.cpp#L790-L856)分别提供相应构造；[quadricError](https://github.com/zeux/meshoptimizer/blob/6daea4695c48338363b08022d2fb15deaef6ac09/src/simplifier.cpp#L765-L787)还有位置误差归一化及独立的属性重载。
+- [fillFaceQuadrics / fillVertexQuadrics / fillEdgeQuadrics](https://github.com/zeux/meshoptimizer/blob/6daea4695c48338363b08022d2fb15deaef6ac09/src/simplifier.cpp#L1046-L1141)与[调用位置](https://github.com/zeux/meshoptimizer/blob/6daea4695c48338363b08022d2fb15deaef6ac09/src/simplifier.cpp#L2381-L2386)表明，默认路径也并非只有无限面平面项。边项对符合条件的边界／接缝作额外约束，不能从孤立项反例推导完整算法忽略边界。
+
+反过来，存在这些额外约束也不自动构成 Hausdorff 距离或视图轮廓误差保证。点到一个有限三角形的距离，不等于两张完整网格的距离；轮廓还需要视角与投影定义。本例没有输出网格、相机或画面，因而没有测量轮廓。
+
+实际接收问题应是：**如果要求的是有限曲面的最大偏差或指定视图下的轮廓容差，用什么独立比较与覆盖范围证明它？** 不应把优化过程中采用的代理量无声替换为这个验收量。论文 §6.1 本身另用采样曲面距离作评价；采样评价也不能不加条件地称为最大距离界。本文没有复制论文图表、结果或实现，也没有执行数值模型。
+
 ## 适用边界
 
 本说明没有证明任一未知网格的返回数量、误差或停止原因，也没有推荐通用减面比例。目标变小、函数正常返回、索引上限达标与最终资产可接受是四件不同的事。后续若要声称某项实际资产通过，应提交对应输入、返回数据和项目验收证据，而不是把本次源码阅读或关联文章的导入证据充当简化测试。
