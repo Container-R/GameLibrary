@@ -2681,11 +2681,13 @@
       "id": "TASK-2026-0104",
       "question": "How does glTF tangent handedness relate to a transformed tangent basis, and which finite example separates local data from reflection/normal transformation?",
       "discipline": "MODEL",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Close an explicitly excluded tangent-space asset interpretation gap using normative source and exact hand geometry rather than claiming rendered correctness",
       "expected_artifact": "Bounded pinned-source gate and original hand-derived tangent basis explanation if supported",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/tangent-handedness-normal-transform.md"
+      ],
       "acceptance": [
         "Pin actual Khronos specification revision and inspect primary semantics",
         "Separate asset-local tangent convention from transformed basis and degeneracy assumptions",
@@ -2695,8 +2697,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:22:40.920711Z",
-      "next_action": "Review exact glTF tangent convention and bounded transformed-basis example",
+      "last_progress_at": "2026-11-01T05:25:34.695098Z",
+      "next_action": "Publish reviewed local tangent handedness and nonuniform-transform hand derivation",
       "blockers": []
     }
   ]

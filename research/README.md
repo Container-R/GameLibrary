@@ -173,3 +173,5 @@ python3 scripts/evidence/test_verify.py
 [新增 pass 的首显接收](source-notes/pso-precache-first-use-acceptance.md)提出未执行的收集—绘制对照与画面/时间验收表，不把当前预编译完成写成无停顿保证。
 
 [先进入停止态，再禁用输入](source-notes/input-disable-teardown-callback.md)以原创未执行调用序列解释重复清理与单一所有者；不迁移其他引擎实验为证据。
+
+[单位向量仍可能变换错误](source-notes/tangent-handedness-normal-transform.md)用原创非均匀缩放手推比较点积 0 与 3/5，不把规范读取或代数证明升级为渲染测试。

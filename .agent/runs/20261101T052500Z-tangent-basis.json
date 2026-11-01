@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T052500Z-tangent-basis",
+  "task_ids": [
+    "TASK-2026-0104"
+  ],
+  "started_at": "2026-11-01T05:22:41Z",
+  "ended_at": "2026-11-01T05:25:34.695098Z",
+  "outcome": "source, exact hand proof and final editorial review accepted; publication pending",
+  "sources": [
+    "https://github.com/KhronosGroup/glTF/tree/59ecbdba704206bb656965ab4e202881806066f1",
+    "https://github.com/KhronosGroup/glTF-Sample-Renderer/tree/6e8a3d1aaa6f07e9f1310a488453e21325677786"
+  ],
+  "evidence": "Pinned normative tangent attribute and reconstruction clauses plus selected sample renderer vertex/material path; independent exact algebra",
+  "original_contribution": "Original positive nonuniform-scale basis example: both normals normalized but tangent dot is zero versus 3/5; local handedness sign preserves a separate bitangent distinction",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No numerical model, asset, importer, shader run or image observation",
+    "Selected supplied normal/tangent static path without morph, skin, normal-UV transform or USE_INSTANCING",
+    "Vertex-basis proof does not establish interpolated basis, normal map or visual correctness",
+    "No universal determinant correction or reference renderer defect claim",
+    "All indexed articles and prior experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "queue_tasks_checked": 104,
+    "accepted_note_sha256": "59b3b75a5c7f8a50fb24fe09293c69ea7ef50ce925e6bde0f69f740350e19615",
+    "declared_paths_checked": 133
+  },
+  "next_action": "Review bounded equal-power crossfade correlation source gate"
+}
