@@ -1,0 +1,21 @@
+{
+  "run_id": "20261101T193913Z-opus-seek-entry",
+  "observed_at": "2026-11-01T19:39:13Z",
+  "parent_verified_head": "dc610aa5a52a5c5ed0c91659d66164fcf7e2f00a",
+  "task": "TASK-2026-0008",
+  "outcome": "Integrated a bounded seeking/pre-roll clarification into the existing PCM reader; no new book, model or runtime test.",
+  "reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+  "reader_sha256": "41b37147ca284bfb04aaea40960c5b668afa14b5f40f2c1a882593925c407df9",
+  "source": "RFC7845 April2016 sections4.2 and4.6; 48k per-channel convention also read",
+  "scope": "Decoder preparation is not audible loop range; preserve SHOULD and near-stream-start handling; no assumed80ms wall-clock delay or seamless-loop guarantee.",
+  "independent_reader_review_sha256": "9e3edba57d4ff97ef825385d89638023f3b6fd6368479c7d153c7879efe769fa",
+  "verification_method": "Original standard reading and independent full-reader/source review; historical full decode remains separate and not rerun.",
+  "reader_books": 62,
+  "prior_publication_readback": {
+    "commit": "dc610aa5a52a5c5ed0c91659d66164fcf7e2f00a",
+    "key_files_matched": 5,
+    "reader_books_tree_matched": 62,
+    "reader_links_tree_matched": 153
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

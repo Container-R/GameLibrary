@@ -107,6 +107,10 @@ FMOD Core 2.04的 `Sound::setLoopPoints` 则把开始和结束位置都包含在
 
 旧文另有固定Ogg Opus文件的完整编码/解码观察；它与前面的测试主体长度相同，但内容不同，并不是同一份音乐经过所有工具仍保持字节不变。该专题涉及起始跳过、尾部裁剪和包时长，详细计数与适用限制保留在旧资料的[编码计数支持章节](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md#7-编码补充呈现帧数最终-granule-与包时长不是同一数字)。已有完整解码观察也不等于任意位置启动或循环重入已无缝。
 
+例如，从 Ogg Opus 的中间位置开始播放，**要听见的起点**与**开始准备解码的位置**不必相同。RFC 7845 第4.6节建议（SHOULD）比目标至少提前3840帧（以48 kHz计为80 ms）开始解码，丢弃这段预滚（pre-roll）的输出，再到达目标。[5] 它不是文件头规定的流头跳过量（pre-skip）；若提前80 ms已经越过流的初始PCM位置，规范建议从流头正常处理 pre-skip，再丢弃到目标，而不是机械地减去3840后读取。
+
+这不会改变音乐约定的循环主体：为解码准备历史，不等于把要播放的起点向前挪。也不能把80 ms当成每次循环必加的等待时间；缓存已解码PCM与从压缩数据重新定位，并非同一路径。交接时应另问播放器采用哪种方式，并检查目标位置输出与实际接缝，不能用整段解码的帧数正确代替重入检查。这里没有新增定位、解码或试听结果。
+
 因此，本篇能提供的是清楚的PCM单位、区间和检查顺序。它不承诺压缩格式兼容性、设备输出延迟、无限循环的时钟同步，也不代替音乐创作和目标播放环境的听感判断。
 
 ## 参考来源
@@ -117,6 +121,8 @@ FMOD Core 2.04的 `Sound::setLoopPoints` 则把开始和结束位置都包含在
 2. FMOD Studio User Manual 2.04，[*Tempo Marker*](https://www.fmod.com/docs/2.04/studio/glossary.html#tempo-marker)。
 3. FFmpeg官方固定版本文档，[*atrim*](https://github.com/FFmpeg/FFmpeg/blob/3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587/doc/filters.texi#L3773-L3822)，n7.1.5对应文档；参见计数端点与时间戳说明。该来源身份不认证旧实验的本地工具构建。
 4. FMOD Engine User Manual 2.04，[*Sound::setLoopPoints*](https://www.fmod.com/docs/2.04/api/core-api-sound.html#setlooppoints)，包含式端点、范围、循环模式与已缓冲流限制。
+
+5. IETF，[RFC 7845](https://www.rfc-editor.org/rfc/rfc7845.html#section-4.6)，2016年4月，第4.2节 Pre-skip、第4.6节 Seeking and Pre-roll；此处只解释定位准备与呈现起点的区别，不宣称任何具体播放器已实现或验证。
 
 ---
 
