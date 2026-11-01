@@ -5,8 +5,8 @@
     "TASK-2026-0119"
   ],
   "started_at": "2026-11-01T06:44:03Z",
-  "ended_at": "2026-11-01T06:46:37.576600Z",
-  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "ended_at": "2026-11-01T06:50:29.283110Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html",
     "https://www.fmod.com/docs/2.04/api/studio-api-bank.html",
@@ -32,9 +32,13 @@
     "archive_fail": 0,
     "archive_scope": "Static archived consistency; no new middleware or audio execution",
     "declared_paths_checked": 154,
-    "local_links_checked": 820
+    "local_links_checked": 820,
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 120
   },
-  "next_action": "Continue concrete build/tool dependency source gate",
+  "next_action": "Integrate source-reviewed executable dependency mechanism and obtain final editorial review",
   "prepublication_wording_refinement": "Studio update processing avoids implying destruction must always run in asynchronous mode",
-  "reviewed_article_sha256": "0fb9f95ae8070e74c803275dec6b54ca46ab4f0efd297cf680439f54ce4294cb"
+  "reviewed_article_sha256": "0fb9f95ae8070e74c803275dec6b54ca46ab4f0efd297cf680439f54ce4294cb",
+  "commit_sha": "e2e40f9466e1af6361ac905de761be11e93a261a"
 }

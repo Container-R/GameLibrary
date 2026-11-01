@@ -3090,7 +3090,7 @@
       "id": "TASK-2026-0119",
       "question": "Why does requesting an event fadeout and release not justify immediately unloading its FMOD bank?",
       "discipline": "SFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Resolve a concrete event-versus-bank lifetime conflict in existing interactive music exit policy",
       "expected_artifact": "Integrated source-backed teardown decision separating tail preservation from immediate bank reclamation",
@@ -3105,11 +3105,36 @@
         "Preserve update and callback-thread boundaries without inventing a manager implementation",
         "No middleware run, waveform or acoustic-tail guarantee"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:46:37.576600Z",
-      "next_action": "Review event-release versus bank teardown policy, copied notification identity and bounded completion claims",
+      "next_action": "Retain separate event, sample and bank lifetimes; no audible completion or full manager guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:50:29.283110Z",
+      "commit_sha": "e2e40f9466e1af6361ac905de761be11e93a261a"
+    },
+    {
+      "id": "TASK-2026-0120",
+      "question": "Why does ordering an asset generator target before a custom command not guarantee regenerated output when that executable changes?",
+      "discipline": "ENGINE",
+      "status": "reviewing",
+      "priority": 93,
+      "priority_rationale": "Resolve a concrete missing invalidation edge in generated game-asset builds using pinned official CMake semantics",
+      "expected_artifact": "Integrated build-role example separating target ordering from executable file-level dependency",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read fixed CMake 3.31.12 COMMAND, DEPENDS and CMP0112 source documentation",
+        "Require actual same-directory consumer build of the declared OUTPUT",
+        "Distinguish missing rerun guarantee from proof of no rerun under every cause",
+        "Do not claim DEPENDS captures every dynamic input or actual build result",
+        "Keep independent hypothetical example separate from historical Cygames practice"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:35:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:50:29.283110Z",
+      "next_action": "Integrate source-reviewed executable dependency mechanism and obtain final editorial review",
       "blockers": []
     }
   ]
