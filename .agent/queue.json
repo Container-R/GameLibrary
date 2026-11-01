@@ -2521,11 +2521,13 @@
       "id": "TASK-2026-0098",
       "question": "When can authored Unreal animation Notify eligibility exclude a hook expected to request an authoritative combat decision?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Deepen existing simulation-versus-presentation boundary with concrete engine configuration and ownership mismatch",
-      "expected_artifact": "Reviewed source-only existing-article supplement and authored-event/authority acceptance checklist if supported",
-      "artifact_paths": [],
+      "expected_artifact": "Independent source-only analysis note with original authored-event/authority checklist; existing article unchanged",
+      "artifact_paths": [
+        "research/source-notes/unreal-notify-eligibility-authority.md"
+      ],
       "acceptance": [
         "Read version-selected original Epic documentation and keep generated API distinct from source implementation",
         "Keep dedicated-server eligibility and authoritative hit decision separate",
@@ -2536,8 +2538,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:49:32.176498Z",
-      "next_action": "Independently review Epic 5.6 Notify eligibility and server-ownership sources",
+      "last_progress_at": "2026-11-01T04:53:19.434424Z",
+      "next_action": "Publish reviewed note-only Notify eligibility analysis and neutral scheduled audit",
       "blockers": []
     }
   ]

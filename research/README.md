@@ -163,3 +163,5 @@ python3 scripts/evidence/test_verify.py
 [呈现队列与输入时效](../solutions/rendering/presentation-queue-latency-boundary.md)用未执行有限反例区分上游等待、图像容量与采样状态年龄，不提供硬件延迟测量。
 
 [音乐状态交接的观察层补充](../solutions/audio/music-state-transition-contract.md)分析事件非虚拟但底层声道虚拟的具体反例；开头/尾音情景未运行或试听，不升级已有生命周期模型。
+
+[动画事件资格与规则入口](source-notes/unreal-notify-eligibility-authority.md)分析唯一服务端本地入口与资产配置的冲突；原创建议未执行，既有固定步与方法轨证据不变。
