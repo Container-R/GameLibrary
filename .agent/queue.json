@@ -1893,7 +1893,7 @@
       "id": "TASK-2026-0075",
       "question": "Which exact color-space assumptions remain untested after existing alpha-association evidence, and is a bounded linear-light compositing counterexample useful?",
       "discipline": "ART2D",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Strengthen a declared existing color-management gap instead of inferring encoded-channel arithmetic is linear-light behavior",
       "expected_artifact": "Exact-evidence source gate; only proceed to a finite original experiment if justified and independently reviewed",
@@ -1909,11 +1909,36 @@
         "Keep color encoding separate from alpha association and physical display/player observations",
         "Do not run native or graphics tests before protocol acceptance"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T01:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T01:00:20.212095Z",
-      "next_action": "Publish reviewed finite color-transfer evidence and preserve normalized-only acceptance boundary",
+      "next_action": "Retain finite normalized conversion scope and independent prior alpha evidence; target renderer/display pipelines require separate validation",
+      "blockers": [],
+      "completed_at": "2026-11-01T01:06:10.224999Z",
+      "commit_sha": "48c257cf39608548e482cff555d97734feacf72a"
+    },
+    {
+      "id": "TASK-2026-0076",
+      "question": "How did Killzone3 distinguish multi-update task completion, continuation relevance and priority replacement, and what should a new planner/executor handoff record?",
+      "discipline": "AI",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Developer-authored historical case addresses decision/execution boundary not covered by navigation readiness; useful original handoff analysis without invented shipped implementation",
+      "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original author chapter29 GameAIPro2013 and exact task/continuation/queue pages",
+        "Separate historical implementation facts from original cancellation/late-result questions",
+        "No PDF/listing/diagram redistribution or extensive translation; concise sourced account",
+        "No runtime, fairness, optimality, modern engine or universal HTN claims",
+        "Independent source/editorial review and exact crosslinks to existing navigation/programming evidence"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T01:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T01:06:10.224999Z",
+      "next_action": "Independently review source gate and original proposed action-handoff case; no model/native experiment authorized",
       "blockers": []
     }
   ]
