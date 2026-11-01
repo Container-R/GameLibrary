@@ -149,3 +149,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [游戏光照美术职责来源](../research/source-notes/game-lighting-artist-role.md)定位两篇具名第一手访谈；独立出版者承载的实践说明不等于工作室技术规范。
 
 [历史 TiDi 时钟与饱和边界](../research/source-notes/time-dilation-overload-clocks.md)：区分提案、部署说明和回顾，不推断当前服务。
+
+[游戏 UI 美术来源](../research/source-notes/game-ui-artist-role.md)以日英工作室原始说明定位受限视觉语言；组合状态方案为原创未执行建议。

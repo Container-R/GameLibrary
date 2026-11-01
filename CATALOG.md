@@ -6,6 +6,7 @@
 
 - [游戏动画师：从动作表演到运行时角色组合的验收交接](roles/animation/game-animator.md) — `source-backed` · `ANIM`
 - [环境概念美术：从透视图中的意图到可解释的制作交接](roles/art2d/environment-concept-artist.md) — `source-backed` · `ART2D`
+- [游戏 UI 美术：组合状态如何分配图形通道](roles/art2d/game-ui-artist.md) — `source-backed` · `ART2D`
 - [交互音频设计：从声音意图到游戏内验收的责任接口](roles/audio/interactive-audio-designer.md) — `source-backed` · `SFX`
 - [游戏数据分析师：从指标请求到可解释的设计决定](roles/data/game-data-analyst.md) — `source-backed` · `DATA`
 - [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `source-backed` · `DESIGN`

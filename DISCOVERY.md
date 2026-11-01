@@ -278,3 +278,15 @@
 - 为了构图移动遮挡，是否改变玩法约束？ → [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `ROLE-DESIGN-001` · `source-backed` · `DESIGN`
   - 关联理由：修改范围须由对应空间和玩法责任人接收。
 
+## 从游戏 UI 美术出发
+路线 ID：`role-ui-artist`
+
+岗位起点：[游戏 UI 美术：组合状态如何分配图形通道](roles/art2d/game-ui-artist.md) — `ROLE-ART2D-002` · `source-backed` · `ART2D`
+
+- 画出的选择状态对应什么实际行动含义？ → [游戏 UX 设计师：从交互意图到可操作流程的接收责任](roles/ux/game-ux-designer.md) — `ROLE-UX-001` · `source-backed` · `UX`
+  - 关联理由：视觉表达与交互规则分别确认。
+- 选择边框是否等于真正获得输入焦点？ → [模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退](solutions/ux/modal-focus-recovery.md) — `SOL-UX-001` · `source-backed` · `UX`
+  - 关联理由：焦点所有权不能由静态样稿推断。
+- 格式化成功是否证明这个组合布局合适？ → [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `SOL-LOC-001` · `source-backed` · `LOC`
+  - 关联理由：格式、布局和用户理解属于不同证据。
+

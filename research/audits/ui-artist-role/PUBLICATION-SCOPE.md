@@ -1,0 +1,3 @@
+# Source-only UI art responsibility scope
+
+Main and independent reviewer read both original English/Japanese studio practitioner bodies. The prose author's separate reread timed out; no additional successful original reading is claimed. Historical title/information dates and reuse of the Bandai Namco source remain explicit. The original equipment-row semantic axes, combined-state policies and layer boundaries are unexecuted suggestions, not source-game defects or measured comprehension. No images, assets, UI, native code, performance or accessibility test is added. This independent publication excludes a separate pending runtime-evidence unit and all of its records. No execution metadata is introduced.

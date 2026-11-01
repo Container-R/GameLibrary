@@ -563,6 +563,29 @@
           "rationale": "修改范围须由对应空间和玩法责任人接收。"
         }
       ]
+    },
+    {
+      "id": "role-ui-artist",
+      "title": "从游戏 UI 美术出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-ART2D-002",
+      "entries": [
+        {
+          "document_id": "ROLE-UX-001",
+          "question": "画出的选择状态对应什么实际行动含义？",
+          "rationale": "视觉表达与交互规则分别确认。"
+        },
+        {
+          "document_id": "SOL-UX-001",
+          "question": "选择边框是否等于真正获得输入焦点？",
+          "rationale": "焦点所有权不能由静态样稿推断。"
+        },
+        {
+          "document_id": "SOL-LOC-001",
+          "question": "格式化成功是否证明这个组合布局合适？",
+          "rationale": "格式、布局和用户理解属于不同证据。"
+        }
+      ]
     }
   ]
 }

@@ -153,3 +153,5 @@ python3 scripts/evidence/test_verify.py
 [共享灯具的分层交接](../roles/rendering/game-lighting-artist.md)把作者、摆放者和接收场景分开，先决定局部/共享/场景修改范围；没有实际渲染或因果验证。
 
 [固定 Tick 的历史生产来源补充](../solutions/programming/fixed-step-simulation-boundary.md)区分有意减速、未完成工作与外部时间义务；没有新增过载运行测试。
+
+[UI 美术的组合状态交接](../roles/art2d/game-ui-artist.md)区分选择、可用性与比较含义，并明确图形层作用范围；没有制作界面或验证玩家理解。

@@ -2360,9 +2360,9 @@
     },
     {
       "id": "TASK-2026-0092",
-      "question": "Which existing engineering solution has a distinct high-value source or finite integration gap that current evidence does not already cover?",
-      "discipline": "PROG",
-      "status": "researching",
+      "question": "Can ICU BiDi index correspondence safely construct UTF-16 text through raw code-unit gathering?",
+      "discipline": "LOC",
+      "status": "blocked",
       "priority": 88,
       "priority_rationale": "Prioritize deeper verified evidence rather than article count; inspect existing artifacts before choosing a new bounded integration",
       "expected_artifact": "Source-backed gap gate and, if feasible, frozen protocol with independently reviewed evidence",
@@ -2373,11 +2373,38 @@
         "Use original sources and actual installed capabilities; no native run before frozen protocol and review",
         "Do not transfer runtime claims from a related fixture or manufacture performance guarantees"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T04:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:55:27.443110Z",
-      "next_action": "Review existing solution evidence and select one distinct finite engineering gap",
+      "last_progress_at": "2026-11-01T04:20:23.558424Z",
+      "next_action": "Wait for scoped release decision; preserve unpublished evidence separately",
+      "blockers": [
+        "Separate evidence release review pending; unpublished runtime records excluded from current source-only publication"
+      ]
+    },
+    {
+      "id": "TASK-2026-0093",
+      "question": "How can game UI art distinguish simultaneous selection, availability and comparison meanings under a constrained visual vocabulary?",
+      "discipline": "ART2D",
+      "status": "reviewing",
+      "priority": 86,
+      "priority_rationale": "Fill distinct UI art responsibility gap with original practitioner sources and concrete unexecuted combined-state analysis",
+      "expected_artifact": "UI artist role and original-source note",
+      "artifact_paths": [
+        "roles/art2d/game-ui-artist.md",
+        "research/source-notes/game-ui-artist-role.md"
+      ],
+      "acceptance": [
+        "Two original practitioner bodies verified",
+        "Separate availability, selection and input focus",
+        "No measured readability, runtime or image-derived claims",
+        "Exclude pending runtime records and execution metadata"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:20:23.558424Z",
+      "next_action": "Publish independently reviewed source-only UI art scope",
       "blockers": []
     }
   ]
