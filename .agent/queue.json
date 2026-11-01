@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:10:00Z",
+      "lease_until": "2026-11-01T09:25:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:33:09.261587Z",
-      "next_action": "Coverage inventory found a specific BIZ/DATA report-reconciliation gap; review its exact source-only note before selecting further gaps",
+      "last_progress_at": "2026-11-01T08:34:37.435344Z",
+      "next_action": "Use recorded coverage gaps to inspect one concrete model-authoring handoff from primary production or tool sources, avoiding a generic role profile",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3534,7 +3534,7 @@
       "id": "TASK-2026-0135",
       "question": "Can Steam Traffic Breakdown Total Visits minus UTM Total Visits identify non-UTM or organic traffic?",
       "discipline": "BIZ",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Correct a concrete marketing-to-analysis receiving error without importing private account data or duplicating causal inference guidance",
       "expected_artifact": "Source-backed narrow note with original negative and positive set-difference counterexamples and receiving conditions",
@@ -3548,12 +3548,14 @@
         "Keep rolling documentation and no-account evidence scope explicit",
         "Independently bind reviewed final artifact"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:33:09.261587Z",
-      "next_action": "Complete exact artifact review and publish source-only note with preserved prior evidence",
-      "blockers": []
+      "next_action": "Retain report observation-set and business-classification boundaries; no actual traffic reconstruction",
+      "blockers": [],
+      "completed_at": "2026-11-01T08:34:37.435344Z",
+      "commit_sha": "994717808cae597012c0fe8b0ca4c93508506951"
     }
   ]
 }

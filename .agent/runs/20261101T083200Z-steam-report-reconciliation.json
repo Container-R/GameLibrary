@@ -6,8 +6,8 @@
     "TASK-2026-0135"
   ],
   "started_at": "2026-11-01T08:24:09Z",
-  "ended_at": "2026-11-01T08:33:09.261587Z",
-  "outcome": "Source-only report-reconciliation note independently accepted; validated for publication",
+  "ended_at": "2026-11-01T08:34:37.435344Z",
+  "outcome": "Steam report-reconciliation source note published and exact readback matched; coverage review archived",
   "sources_examined": [
     "https://partner.steamgames.com/doc/marketing/traffic_reporting",
     "https://partner.steamgames.com/doc/marketing/utm_analytics"
@@ -31,7 +31,11 @@
     "optimized_archive_checks_failed": 0,
     "archive_check_scope": "Static declared archive consistency, not runtime or semantics",
     "local_links_checked": 854,
-    "declared_paths_checked": 180
+    "declared_paths_checked": 180,
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 135
   },
-  "next_action": "Verify publication then continue actual coverage gaps, not document quotas"
+  "next_action": "Use recorded coverage gaps to inspect one concrete model-authoring handoff from primary production or tool sources, avoiding a generic role profile",
+  "commit_sha": "994717808cae597012c0fe8b0ca4c93508506951"
 }
