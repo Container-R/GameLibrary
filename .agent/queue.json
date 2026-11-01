@@ -2335,7 +2335,7 @@
       "id": "TASK-2026-0091",
       "question": "What do historical CCP Time Dilation sources distinguish between intentional clock slowing, shared scope and unfinished work after rate saturation?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Add source-grounded production clock scope and saturation distinction to existing overload/debt article without another toy model",
       "expected_artifact": "Small source-only supplement to solutions/programming/fixed-step-simulation-boundary.md and source note",
@@ -2349,11 +2349,35 @@
         "Separate selected timer policy, historical node scope and lateness units; retain uncertainty",
         "No new runtime/model/controller/current-service claim or inherited experiment upgrade"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T04:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T03:54:04.029133Z",
-      "next_action": "Publish reviewed historical clock-policy and saturation supplement",
+      "next_action": "Retain historical source scope; clock-control runtime and current service policy remain untested",
+      "blockers": [],
+      "completed_at": "2026-11-01T03:55:27.443110Z",
+      "commit_sha": "5da482e1b8f7ca4a59f62b77e66197695508d53c"
+    },
+    {
+      "id": "TASK-2026-0092",
+      "question": "Which existing engineering solution has a distinct high-value source or finite integration gap that current evidence does not already cover?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 88,
+      "priority_rationale": "Prioritize deeper verified evidence rather than article count; inspect existing artifacts before choosing a new bounded integration",
+      "expected_artifact": "Source-backed gap gate and, if feasible, frozen protocol with independently reviewed evidence",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact current articles and evidence before proposing a gap",
+        "Select one concrete question not a generic revision/ownership worksheet or duplicate toy model",
+        "Use original sources and actual installed capabilities; no native run before frozen protocol and review",
+        "Do not transfer runtime claims from a related fixture or manufacture performance guarantees"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T04:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T03:55:27.443110Z",
+      "next_action": "Review existing solution evidence and select one distinct finite engineering gap",
       "blockers": []
     }
   ]
