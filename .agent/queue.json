@@ -2761,7 +2761,7 @@
       "id": "TASK-2026-0107",
       "question": "Can original Rocket League input-buffer slides support a concrete cadence-control case after the Overwatch mechanism source gate was rejected?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Return from mechanism notes and adversarial review to an original commercial engineering case, subject to primary-source access and nonduplication",
       "expected_artifact": "Bounded original-source case gate, followed by a concrete case analysis only if evidence supports it",
@@ -2776,11 +2776,36 @@
         "Do not claim watched video from metadata/slides or invent production performance",
         "Reject unsupported case scope and switch safely if primary content unavailable"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:42:45.109779Z",
-      "next_action": "Publish reviewed historical input-buffer production/consumption comparison",
+      "next_action": "Retain historical production/consumption comparison and unknown controller semantics; no current-service guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:45:11.438430Z",
+      "commit_sha": "bb076e418680b0f19d999bcd03dea0d981da879e"
+    },
+    {
+      "id": "TASK-2026-0108",
+      "question": "What does Noita developer testimony establish about dirty work selection versus bounded cross-chunk update ownership?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Study a distinct commercial simulation scheduling constraint from named primary developer testimony without reconstructing unprovided concurrency code",
+      "expected_artifact": "A bounded historical mechanism source note with explicit testimony and implementation limits",
+      "artifact_paths": [],
+      "acceptance": [
+        "Verify original named developer interview attribution and selected optimization statements",
+        "Separate publisher-hosted firsthand testimony from studio source code or independent performance proof",
+        "Distinguish dirty-work selection from cross-chunk scheduling ownership",
+        "Do not infer deterministic or race-free execution, diagonal range, barriers or complete checkerboard schedule",
+        "Original future rule-change scenario must remain hypothetical; no runtime or private metadata"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:45:11.438430Z",
+      "next_action": "Read and review original Noita optimization testimony and bounded update-ownership implications",
       "blockers": []
     }
   ]
