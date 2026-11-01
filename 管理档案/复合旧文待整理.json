@@ -1,0 +1,27 @@
+{
+  "purpose": "Track subtopics retained in old composite bodies; not accepted reader books",
+  "items": [
+    {
+      "old_path": "solutions/engine/asset-import-intent-contract.md",
+      "pending_subtopics": [
+        "运行时资源隔离",
+        "同路径请求复用",
+        "资源图复制"
+      ]
+    },
+    {
+      "old_path": "roles/technical-art/technical-artist.md",
+      "pending_subtopics": [
+        "绑定与技术动画细分检查；优先与既有动画主题合并，避免重复"
+      ]
+    },
+    {
+      "old_path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "pending_subtopics": [
+        "源几何与引擎表示的区别",
+        "稀疏属性替换"
+      ]
+    }
+  ],
+  "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index"
+}

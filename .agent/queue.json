@@ -4028,7 +4028,10 @@
         "\u7ba1\u7406\u6863\u6848/\u56fe\u4e66\u76ee\u5f55.json",
         "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md",
         "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md",
-        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md"
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u6a21\u578b\u5bfc\u5165/\u8bfb\u53d6glTF\u4ea4\u9519\u9876\u70b9\u6570\u636e\u65f6\u7684\u504f\u79fb\u4e0e\u6b65\u957f.md",
+        "\u7ba1\u7406\u6863\u6848/\u590d\u5408\u65e7\u6587\u5f85\u6574\u7406.json"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4039,10 +4042,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T12:00:00Z",
+      "lease_until": "2026-11-01T12:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:03:58.375278Z",
-      "next_action": "Rewrite existing texture-budget and glTF data books, then independently review content and actual reader routes; no new topics",
+      "last_progress_at": "2026-11-01T11:06:32.723372Z",
+      "next_action": "Complete independent reviews and publish texture/glTF reader rewrite batch; then repair animation and fixed-step simulation books",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

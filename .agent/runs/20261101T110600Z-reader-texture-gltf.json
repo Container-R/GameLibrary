@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T110600Z-reader-texture-gltf",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:04:48Z",
+  "ended_at": "2026-11-01T11:06:32.723372Z",
+  "outcome": "Two rewritten books and reader routes accepted; remote publication pending",
+  "baseline_head": "d4a9488006c19fbfc8bb01dbdb6bbb2b2de155da",
+  "books": [
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md",
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u6a21\u578b\u5bfc\u5165/\u8bfb\u53d6glTF\u4ea4\u9519\u9876\u70b9\u6570\u636e\u65f6\u7684\u504f\u79fb\u4e0e\u6b65\u957f.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md": "d7bab2612237eb8c2c9576b5646ff3045fe3a66e81c758990e318f71bc64e155",
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u6a21\u578b\u5bfc\u5165/\u8bfb\u53d6glTF\u4ea4\u9519\u9876\u70b9\u6570\u636e\u65f6\u7684\u504f\u79fb\u4e0e\u6b65\u957f.md": "ecad875a218b0c832e6db73a83ca4a103bb28de167b5cac1eaba1b1f8a6896f8"
+  },
+  "rewritten_reader_books": 5,
+  "remaining_legacy_entries": 50,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "All legacy bodies and execution archives retained unchanged",
+    "Composite chapter backlog explicitly retained separately",
+    "Restricted evidence publication and cleanup hold unchanged",
+    "Five rewritten inventory entries is not full remediation"
+  ],
+  "next_action": "Complete independent reviews and publish texture/glTF reader rewrite batch; then repair animation and fixed-step simulation books",
+  "navigation_review": "Mixed shelf replacement omitted one legacy alpha article link; independent review found it, restored and rechecked before publication",
+  "route_check": {
+    "inventory_entries": 55,
+    "new_body_links": 5,
+    "legacy_links": 50,
+    "focused_scenarios": 3,
+    "reader_review_separate": true
+  }
+}
