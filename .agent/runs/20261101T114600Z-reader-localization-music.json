@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:40:40Z",
-  "ended_at": "2026-11-01T11:48:56.192990+00:00",
-  "outcome": "Reader bodies, root routes and additional UI entry accepted; publication pending",
+  "ended_at": "2026-11-01T11:50:53.572496Z",
+  "outcome": "Pseudo-localization and music-transition books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "166573b5c4b888be9ddf27a9d46885bd737d1932",
   "books": [
     "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u754c\u9762\u9a8c\u8bc1/\u7528\u4f2a\u672c\u5730\u5316\u53d1\u73b0\u5e03\u5c40\u4e0e\u5360\u4f4d\u7b26\u95ee\u9898.md",
@@ -26,7 +26,7 @@
     "Original composite chapter scope not completed by new body publication",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Complete pseudo-localization and music-transition reader reviews and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing navigation-readiness and gameplay-programmer books with independent reader reviews; retain composite chapter backlog; no new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u4f2a\u672c\u5730\u5316-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u97f3\u4e50\u5207\u6362-\u72ec\u7acb\u5ba1\u8bfb.md"
@@ -40,5 +40,14 @@
     "composite_items": 13,
     "original_scope_completion_not_assumed": true
   },
-  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u4f2a\u672c\u5730\u5316\u4e0e\u97f3\u4e50-\u5bfc\u822a\u5ba1\u8bfb.md"
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u4f2a\u672c\u5730\u5316\u4e0e\u97f3\u4e50-\u5bfc\u822a\u5ba1\u8bfb.md",
+  "commit_sha": "792160e3e85526ea1a5ca63a96a2be1bbeb05c09",
+  "validation": {
+    "selected_blob_hashes_verified": 15,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1061,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_ui_cross_entry_read_back": true
+  }
 }
