@@ -5073,6 +5073,184 @@
         "parsed_sha256"
       ],
       "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "character-motion/author/source_sha256",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-character-motion/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-character-motion/main.gd",
+        "project.godot": "research/experiments/godot-character-motion/project.godot",
+        "run.py": "research/experiments/godot-character-motion/run.py",
+        "oracle.py": "research/experiments/godot-character-motion/oracle.py",
+        "consumer.py": "research/experiments/godot-character-motion/consumer.py",
+        "test_pure.py": "research/experiments/godot-character-motion/test_pure.py",
+        "isolation.py": "research/experiments/godot-character-motion/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "character-motion/author/source_after",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-character-motion/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-character-motion/main.gd",
+        "project.godot": "research/experiments/godot-character-motion/project.godot",
+        "run.py": "research/experiments/godot-character-motion/run.py",
+        "oracle.py": "research/experiments/godot-character-motion/oracle.py",
+        "consumer.py": "research/experiments/godot-character-motion/consumer.py",
+        "test_pure.py": "research/experiments/godot-character-motion/test_pure.py",
+        "isolation.py": "research/experiments/godot-character-motion/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/author/version.stdout",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/author/version.stderr",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/author/behavior.stdout",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/author/behavior.stderr",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/author/parsed",
+      "document": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "character-motion/independent/source_sha256",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-character-motion/review/native-repeat/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-character-motion/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-character-motion/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-character-motion/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-character-motion/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-character-motion/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-character-motion/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-character-motion/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "character-motion/independent/source_after",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-character-motion/review/native-repeat/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-character-motion/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-character-motion/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-character-motion/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-character-motion/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-character-motion/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-character-motion/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-character-motion/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/independent/version.stdout",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/independent/version.stderr",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/independent/behavior.stdout",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/independent/behavior.stderr",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "character-motion/independent/parsed",
+      "document": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/behavior.json"
     }
   ]
 }

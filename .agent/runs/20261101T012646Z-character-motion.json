@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T012646Z-character-motion",
+  "task_ids": [
+    "TASK-2026-0079"
+  ],
+  "started_at": "2026-11-01T01:26:46Z",
+  "ended_at": "2026-11-01T01:43:09.025239Z",
+  "outcome": "reviewed locally; publication pending",
+  "protocol_sha256": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
+  "native_attempts": 2,
+  "accepted_attempts": [
+    "44ce134f-f0fc-4316-9097-d99cbd8745f9",
+    "24fbda1c-b719-4fea-a8de-5d3448c538fe"
+  ],
+  "behavior_processes": 2,
+  "separate_version_processes": 2,
+  "unique_configurations": 1,
+  "actual_moves_per_invocation": 2,
+  "stationary_queries_per_invocation": 5,
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "evidence": "Both starts and requested endpoints have empty stationary controls; blocked actual travel0.9765625 with wall collision/remainder3.0234375, open travel4 with null collision",
+  "pre_native_corrections": "Finite numeric guards and explicit subtype casts reviewed before first native attempt; no observed parser or engine failure",
+  "limitations": [
+    "No post-move occupancy query or zero-penetration claim",
+    "No full navigation/controller integration or slide behavior",
+    "No ideal contact-minus-margin or universal CCD theorem",
+    "No native timeout/cleanup failure branch exercised",
+    "Installed binary/public source identity unauthenticated; backend setting not provider instrumentation"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 2660,
+    "indexed_articles": 37,
+    "archive_checks_normal": 495,
+    "archive_checks_optimized": 495,
+    "main_static_commands": 8,
+    "new_native_during_static_checks": 0,
+    "queue_tasks_checked": 79,
+    "declared_paths_checked": 88,
+    "local_links": 606,
+    "relocated_static_commands": 8
+  },
+  "next_action": "Integrate independently reviewed environment concept role and original unexecuted handoff worksheet"
+}

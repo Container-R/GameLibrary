@@ -2005,11 +2005,15 @@
       "id": "TASK-2026-0079",
       "question": "Can clear start and requested endpoint occupancy still conceal obstruction during actual CharacterBody3D motion?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Existing navigation and static-overlap observations do not validate actual collision movement; close one finite gap without full controller integration",
       "expected_artifact": "Source-gated bounded actual move_and_collide obstruction/control experiment or preserved failed gate",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/ai/navigation-readiness-and-partial-path.md",
+        "research/source-notes/character-motion-obstruction.md",
+        "research/experiments/godot-character-motion/README.md"
+      ],
       "acceptance": [
         "Exact prior article/fixture scope and versioned original API/source review",
         "Frozen original geometry, explicit method arguments/backend and readiness controls",
@@ -2019,8 +2023,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:28:57.171555Z",
-      "next_action": "Independently review source gate03eaf1c2 and freeze finite collision-motion protocol; no fixture/native invocation authorized yet",
+      "last_progress_at": "2026-11-01T01:43:09.025239Z",
+      "next_action": "Publish independently repeated finite character collision-motion witness without inferring full navigation integration or final zero overlap",
       "blockers": []
     }
   ]

@@ -1,0 +1,13 @@
+# Independent native review — bounded CharacterBody3D motion
+
+2026-11-01 01:40 UTC. Accepted the observed frozen configuration; no broader locomotion claim.
+
+Before launch I checked the author receipt/raw stream hashes, eight source pins and recorded/current binary digest, then copied exactly the eight frozen source files into `native-repeat/`. Exactly one authorized independent runner invocation produced UUID `24fbda1c-b719-4fea-a8de-5d3448c538fe`: one version query and one behavior process, both exit 0 with empty stderr. No retry, parameter change or extra native invocation. Parent stdout/stderr and full child receipts/raw streams are preserved. Current GD is `0697b51ff020e9a42dcfcb4e7dd8d2c1cb516cb0f21a8b609fd871a8931a6595`; all eight copied source hashes remained unchanged.
+
+The independently authored stdlib `check_native.py` (SHA256 `62614277fe176bd58f0040c2e30768672acc15045a50480ed890b3643bd5b33c`) imports no author oracle. It checks raw/process/source association, query order and stationary start/end controls, actual object/RID/shape-owner-node relations, same-callback movement sequence, transforms and travel/remainder against the frozen finite relationships. It passes both author UUID `44ce134f-f0fc-4316-9097-d99cbd8745f9` and the independent archive; optimized-Python replay also passes. It is an observed-layout complementary checker, not a replacement for the author's full strict schema, environment and protocol consumer, nor proof of execution authenticity.
+
+Both observations have one readiness callback, five stationary queries and two actual move calls. Blocked actual travel/post x = 0.9765625, remainder x = 3.0234375, contact x = 1.5, normal = (-1,0,0), depth = 0.000999927520751953. Open actual end = (4,0,4), with null collision. Shape getters refer to the constructed CollisionShape3D owner nodes, separately identified from resource IDs. The two source-reviewed pre-native corrections were not native failures.
+
+Combined author + reviewer count: two behavior processes plus two version queries (four Godot processes), repeating the same two-lane configuration. There are no additional native cases or timeout tests. Configured GodotPhysics3D and the local version self-report do not authenticate the installed implementation to the public comparison source. No ideal `1 - margin` derivation, zero-penetration assertion, final non-overlap proof, universal CCD/controller/navigation integration or player-character result follows. In particular there was no post-move occupancy query.
+
+Portable static reproduction: `python check_native.py SOURCE_ROOT EVIDENCE_DIR`. All needed raw JSON/text is retained; no engine call occurs in this checker.

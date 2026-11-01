@@ -1924,8 +1924,64 @@
     {
       "id": "navigation-completion/independent/parsed",
       "status": "pass"
+    },
+    {
+      "id": "character-motion/author/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/behavior.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/behavior.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/author/parsed",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/behavior.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/behavior.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "character-motion/independent/parsed",
+      "status": "pass"
     }
   ],
-  "passed": 481,
+  "passed": 495,
   "failed": 0
 }

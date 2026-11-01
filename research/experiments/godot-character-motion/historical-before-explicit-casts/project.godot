@@ -1,0 +1,7 @@
+config_version=5
+[application]
+config/name="Character motion obstruction finite observation"
+[physics]
+3d/physics_engine="GodotPhysics3D"
+[rendering]
+renderer/rendering_method="gl_compatibility"

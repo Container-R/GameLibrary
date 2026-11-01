@@ -127,3 +127,5 @@ python3 scripts/evidence/test_verify.py
 [导航路径消耗夹具](experiments/godot-navigation-completion/README.md)保留同一两agent配置的作者与独立观察；导航完成不等于请求目标到达，不是碰撞移动或业务成功证明。
 
 [游戏 UX 设计师](../roles/ux/game-ux-designer.md)区分决策意图、真实交互、语言布局与玩家理解；原创工作表没有执行或用户验证。
+
+[CharacterBody3D实际移动夹具](experiments/godot-character-motion/README.md)以双通道证明空起终点不能替代途中碰撞检查；未验证完整导航控制器或最终无重叠。

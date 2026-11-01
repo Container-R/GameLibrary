@@ -123,3 +123,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [NavigationAgent 路径结束来源](../research/source-notes/navigation-agent-completion.md)区分原始文档、固定比较源码与受控位置更新下的实际状态。
 
 [游戏 UX 岗位来源](../research/source-notes/game-ux-designer-role.md)以英日实践者资料定位交互流程交接，保留未知与历史日期。
+
+[角色实际移动来源](../research/source-notes/character-motion-obstruction.md)区分位移请求、静止占用与实际碰撞位移；不使用slide状态冒充继承方法结果。

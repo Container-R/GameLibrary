@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-01T01:39:46.143723+00:00",
+  "scope": "Exactly one author runner attempt, one version query and one behavior process; stop on first failure",
+  "source_sha256": {
+    "PROTOCOL.md": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
+    "main.gd": "0697b51ff020e9a42dcfcb4e7dd8d2c1cb516cb0f21a8b609fd871a8931a6595",
+    "project.godot": "10ffbe5d580bad0a3e4d816de63eabd0de3a26dbbe6cba8f29803e4597d03003",
+    "run.py": "32ca5e7a9065f0c3098d42b95ce3bb15ff0e19f3d7dbc958d484a5e5550c4ac5",
+    "oracle.py": "b437c40a47da4e2e8329733b81acc0120617cea5254a69990e2f978e4d04fc59",
+    "consumer.py": "58e68dc9207ee3dabb1169a3c88b2c91593cd05e16a26736c4d42e363b6234b1",
+    "test_pure.py": "e3110a1dc026af3209d78acbd7c316331bd687bdd8da58582a4884139dff0395",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "independent_review": "58022397e3eba049ceb9dfbda2fe7709f95a9019c83905d22a10c995725de2ad",
+  "main_final_pure_methods_per_mode": 7,
+  "main_pure_modes": [
+    "normal",
+    "optimized"
+  ],
+  "no_previous_native_in_this_unit": true
+}

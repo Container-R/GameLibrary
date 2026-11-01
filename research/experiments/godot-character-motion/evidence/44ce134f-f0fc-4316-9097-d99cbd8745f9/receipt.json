@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "uuid": "44ce134f-f0fc-4316-9097-d99cbd8745f9",
+  "processes": [
+    {
+      "name": "version",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--version"
+      ],
+      "timeout_seconds": 10,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T01:39:46.376887+00:00",
+      "pid": 7,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T01:39:46.774429+00:00",
+      "stdout_sha256": "1e07780c365549219ffd8e6bd120a818c80424e8295d4ee7451c10d0ed0fa84f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "behavior",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion",
+        "--single-threaded-scene",
+        "--script",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/main.gd"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T01:39:46.775257+00:00",
+      "pid": 10,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T01:39:46.952597+00:00",
+      "stdout_sha256": "56acedc4ac1230d6c53774406311f1af6cb2e70590c198f9109a5a597ea38b9e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "original_source_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion",
+  "original_process_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9",
+  "source_sha256": {
+    "PROTOCOL.md": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
+    "main.gd": "0697b51ff020e9a42dcfcb4e7dd8d2c1cb516cb0f21a8b609fd871a8931a6595",
+    "project.godot": "10ffbe5d580bad0a3e4d816de63eabd0de3a26dbbe6cba8f29803e4597d03003",
+    "run.py": "32ca5e7a9065f0c3098d42b95ce3bb15ff0e19f3d7dbc958d484a5e5550c4ac5",
+    "oracle.py": "b437c40a47da4e2e8329733b81acc0120617cea5254a69990e2f978e4d04fc59",
+    "consumer.py": "58e68dc9207ee3dabb1169a3c88b2c91593cd05e16a26736c4d42e363b6234b1",
+    "test_pure.py": "e3110a1dc026af3209d78acbd7c316331bd687bdd8da58582a4884139dff0395",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "binary_before": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "base_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C"
+  },
+  "selected_environment": {
+    "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/environment/HOME",
+    "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/environment/XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/environment/XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/environment/XDG_DATA_HOME",
+    "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9/environment/TMPDIR"
+  },
+  "oracle": {
+    "status": "PASS",
+    "stationary_queries": 5,
+    "readiness_attempts": 1,
+    "actual_moves": 2,
+    "blocked_collision": true,
+    "open_collision": false
+  },
+  "parsed_sha256": "9922dd3c669215aea2c48f6b4bcf8c9c60afb883e4125d3a209cbed8a57705e9",
+  "binary_after": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "source_after": {
+    "PROTOCOL.md": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
+    "main.gd": "0697b51ff020e9a42dcfcb4e7dd8d2c1cb516cb0f21a8b609fd871a8931a6595",
+    "project.godot": "10ffbe5d580bad0a3e4d816de63eabd0de3a26dbbe6cba8f29803e4597d03003",
+    "run.py": "32ca5e7a9065f0c3098d42b95ce3bb15ff0e19f3d7dbc958d484a5e5550c4ac5",
+    "oracle.py": "b437c40a47da4e2e8329733b81acc0120617cea5254a69990e2f978e4d04fc59",
+    "consumer.py": "58e68dc9207ee3dabb1169a3c88b2c91593cd05e16a26736c4d42e363b6234b1",
+    "test_pure.py": "e3110a1dc026af3209d78acbd7c316331bd687bdd8da58582a4884139dff0395",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "behavior_processes": 1,
+  "version_processes": 1
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "research-drafts/godot-character-motion/consumer.py",
+      "research-drafts/godot-character-motion",
+      "research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9"
+    ],
+    "returncode": 0,
+    "stdout": "{\"actual_moves\": 2, \"blocked_collision\": true, \"open_collision\": false, \"readiness_attempts\": 1, \"stationary_queries\": 5, \"status\": \"PASS\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "research-drafts/godot-character-motion/consumer.py",
+      "research-drafts/godot-character-motion",
+      "research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9"
+    ],
+    "returncode": 0,
+    "stdout": "{\"actual_moves\": 2, \"blocked_collision\": true, \"open_collision\": false, \"readiness_attempts\": 1, \"stationary_queries\": 5, \"status\": \"PASS\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "research-drafts/deep-qa/character-motion/check_native.py",
+      "research-drafts/godot-character-motion",
+      "research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"44ce134f-f0fc-4316-9097-d99cbd8745f9\",\n  \"readiness_attempts\": 1,\n  \"stationary_queries\": 5,\n  \"actual_moves\": 2,\n  \"blocked_travel\": [\n    0.9765625,\n    0.0,\n    0.0\n  ],\n  \"remainder\": [\n    3.0234375,\n    0.0,\n    0.0\n  ],\n  \"contact_position\": [\n    1.5,\n    0.0,\n    0.0\n  ],\n  \"normal\": [\n    -1.0,\n    0.0,\n    0.0\n  ],\n  \"depth\": 0.000999927520751953,\n  \"open_position\": [\n    4.0,\n    0.0,\n    4.0\n  ],\n  \"status\": \"CONSISTENT_OBSERVED_LAYOUT\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "research-drafts/deep-qa/character-motion/check_native.py",
+      "research-drafts/godot-character-motion",
+      "research-drafts/godot-character-motion/evidence/44ce134f-f0fc-4316-9097-d99cbd8745f9"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"44ce134f-f0fc-4316-9097-d99cbd8745f9\",\n  \"readiness_attempts\": 1,\n  \"stationary_queries\": 5,\n  \"actual_moves\": 2,\n  \"blocked_travel\": [\n    0.9765625,\n    0.0,\n    0.0\n  ],\n  \"remainder\": [\n    3.0234375,\n    0.0,\n    0.0\n  ],\n  \"contact_position\": [\n    1.5,\n    0.0,\n    0.0\n  ],\n  \"normal\": [\n    -1.0,\n    0.0,\n    0.0\n  ],\n  \"depth\": 0.000999927520751953,\n  \"open_position\": [\n    4.0,\n    0.0,\n    4.0\n  ],\n  \"status\": \"CONSISTENT_OBSERVED_LAYOUT\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "research-drafts/godot-character-motion/consumer.py",
+      "research-drafts/deep-qa/character-motion/native-repeat",
+      "research-drafts/deep-qa/character-motion/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe"
+    ],
+    "returncode": 0,
+    "stdout": "{\"actual_moves\": 2, \"blocked_collision\": true, \"open_collision\": false, \"readiness_attempts\": 1, \"stationary_queries\": 5, \"status\": \"PASS\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "research-drafts/godot-character-motion/consumer.py",
+      "research-drafts/deep-qa/character-motion/native-repeat",
+      "research-drafts/deep-qa/character-motion/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe"
+    ],
+    "returncode": 0,
+    "stdout": "{\"actual_moves\": 2, \"blocked_collision\": true, \"open_collision\": false, \"readiness_attempts\": 1, \"stationary_queries\": 5, \"status\": \"PASS\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "research-drafts/deep-qa/character-motion/check_native.py",
+      "research-drafts/deep-qa/character-motion/native-repeat",
+      "research-drafts/deep-qa/character-motion/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"24fbda1c-b719-4fea-a8de-5d3448c538fe\",\n  \"readiness_attempts\": 1,\n  \"stationary_queries\": 5,\n  \"actual_moves\": 2,\n  \"blocked_travel\": [\n    0.9765625,\n    0.0,\n    0.0\n  ],\n  \"remainder\": [\n    3.0234375,\n    0.0,\n    0.0\n  ],\n  \"contact_position\": [\n    1.5,\n    0.0,\n    0.0\n  ],\n  \"normal\": [\n    -1.0,\n    0.0,\n    0.0\n  ],\n  \"depth\": 0.000999927520751953,\n  \"open_position\": [\n    4.0,\n    0.0,\n    4.0\n  ],\n  \"status\": \"CONSISTENT_OBSERVED_LAYOUT\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "research-drafts/deep-qa/character-motion/check_native.py",
+      "research-drafts/deep-qa/character-motion/native-repeat",
+      "research-drafts/deep-qa/character-motion/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"24fbda1c-b719-4fea-a8de-5d3448c538fe\",\n  \"readiness_attempts\": 1,\n  \"stationary_queries\": 5,\n  \"actual_moves\": 2,\n  \"blocked_travel\": [\n    0.9765625,\n    0.0,\n    0.0\n  ],\n  \"remainder\": [\n    3.0234375,\n    0.0,\n    0.0\n  ],\n  \"contact_position\": [\n    1.5,\n    0.0,\n    0.0\n  ],\n  \"normal\": [\n    -1.0,\n    0.0,\n    0.0\n  ],\n  \"depth\": 0.000999927520751953,\n  \"open_position\": [\n    4.0,\n    0.0,\n    4.0\n  ],\n  \"status\": \"CONSISTENT_OBSERVED_LAYOUT\"\n}\n",
+    "stderr": ""
+  }
+]

@@ -6,12 +6,12 @@ status: source-backed
 primary_discipline: AI
 related_disciplines: [PROG, ENGINE, QA]
 related_roles: [ai-programmer, gameplay-programmer, engine-programmer, qa-engineer]
-related_topics: [navigation, synchronization, partial-path, negative-cache, initialization, navigation-clearance, agent-radius, physics-overlap, path-consumption, target-arrival]
+related_topics: [navigation, synchronization, partial-path, negative-cache, initialization, navigation-clearance, agent-radius, physics-overlap, path-consumption, target-arrival, character-motion, transit-obstruction]
 engines: [Godot]
 versions: ["Godot 4.6 文档：NavigationServer2D 为 Experimental", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
 updated_at: 2026-11-01
-verification_method: 官方资料与固定源码核对；既有导航同步、烘焙半径及静止重叠证据；新增作者与独立各一次两agent受控Node3D位置赋值、实际路径结束与目标到达信号观察；未测试角色碰撞移动或持续并发更新
+verification_method: 官方资料与固定源码核对；既有导航同步、烘焙半径、静止重叠及受控Node3D路径跟随证据；新增作者与独立各一次CharacterBody3D双通道实际move_and_collide观察；未测试导航与碰撞控制器联动、slide或持续并发更新
 sources:
   - https://docs.godotengine.org/en/4.6/classes/class_navigationmesh.html
   - https://docs.godotengine.org/en/4.6/classes/class_navigationagent3d.html
@@ -191,4 +191,52 @@ Godot 4.6 [navigation_finished / target_reached 文档](https://docs.godotengine
 
 作者与独立审阅者分别重复同一有限序列：合计 **2 个行为进程 + 2 个版本查询，共 4 个 Godot 进程**，不是 4 种不同条件；每轮都是上述 2 条路线。独立重复同样观察到 337 个事件、17 次驱动回调与 12/16 次位置赋值。静态 consumer 从原始事件重建步进、信号与数组关联，不只信任子进程结论。运行前的合成记录曾暴露帧顺序及嵌套 bool/int 验收漏洞，已保留初稿与修正；它们不是导航引擎失败或新的移动场景。
 
-新结果仅覆盖受控 Node3D 位置更新下的 agent 状态/信号，不覆盖 CharacterBody3D、碰撞响应、RVO、取消/重规划、动态地图、性能或跨构建稳定性。安装字节与官方源码的对应仍[未认证](../../research/source-notes/godot-runtime-provenance.md)。[来源说明](../../research/source-notes/navigation-agent-completion.md)分开记录文档、源码预期与实际有限观察。
+本节结果仅覆盖受控 Node3D 位置更新下的 agent 状态/信号，不覆盖 CharacterBody3D、碰撞响应、RVO、取消/重规划、动态地图、性能或跨构建稳定性。安装字节与官方源码的对应仍[未认证](../../research/source-notes/godot-runtime-provenance.md)。[来源说明](../../research/source-notes/navigation-agent-completion.md)分开记录文档、源码预期与实际有限观察。
+
+## 8. 物理移动补充：终点放得下，不等于这次位移走得过去
+
+第 6 节只查静止重叠，第 7 节由脚本直接赋值 Node3D 位置。两者都不能回答：**把带碰撞形状的身体交给实际运动 API 后，请求位移是否完整执行？** 本节另做一个不含导航代理的 CharacterBody3D 实验，将这道物理边界独立出来，不把三组证据拼成已经验收的完整导航控制器。
+
+### 起点和期望终点均未检出重叠，途中仍可能被墙截断
+
+[新夹具](../../research/experiments/godot-character-motion/README.md)使用两个半径 0.5 的球形 CharacterBody3D，分别从 `(0,0,0)` 与 `(0,0,4)` 出发。静止墙体中心为 `(2,0,0)`，BoxShape3D 尺寸 `(1,4,2)`；所有基底均为 identity，没有地板、旋转或重力积分。每个身体只请求一次 `(4,0,0)` 位移。
+
+实际移动前，球形查询先在墙中心命中同一墙体，确认几何可见；随后分别查询两个起点与两个期望终点，四次都没有重叠。查询显式排除两名角色，并使用只匹配墙体的层掩码。**这些空结果只说明所查位置没有交叠，不说明从起点到终点的整段运动可通过。**
+
+随后调用 `move_and_collide(motion, false, 0.001, false, 1)`，没有 `test_only`、手动改终点或再次执行 remainder。实际结果如下：
+
+| 路线 | 请求 X 位移 | 实际 X 位移 / 返回 travel.X | 返回 remainder.X | 碰撞返回 |
+|---|---:|---:|---:|---|
+| 穿过墙所在通道 | 4 | 0.9765625 | 3.0234375 | 非空；精确指向该墙及其 shape index 0 |
+| 平行开放通道 | 4 | 4 | 不调用 null 对象的 getter | null |
+
+阻挡路线的接触点为 `(1.5,0,0)`，法线为 `(-1,0,0)`；实际身体停在 x=0.9765625，未按请求移动到 x=4。返回 travel 与真实前后变换差一致，travel 与 remainder 之和在冻结容差内等于请求位移。这里的 remainder 是未实现的移动量，不是引擎已经自动执行的第二段运动。
+
+本例没有移动后再次查询重叠，因而不宣称额外验证了最终形状“零重叠”。实际数值通过运行前冻结的中心 X 区间 `[0.95,1.05]`；没有要求它恰好为 `1−safe_margin`，也没有在看到 0.9765625 后修改区间。这个区间是有限实验的接受政策，不是引擎精度或误差上界。具体分数如何形成不在本次来源分析范围，不能自行归因于某个内部搜索精度。
+
+### 两个 motion 合同不能按名称互换
+
+[PhysicsBody3D 的版本化文档](https://docs.godotengine.org/en/4.6/classes/class_physicsbody3d.html#class-physicsbody3d-method-move-and-collide)把 `move_and_collide` 的输入定义为位移；本例的 4 是距离，不是速度。[CharacterBody3D 的文档](https://docs.godotengine.org/en/4.6/classes/class_characterbody3d.html#class-characterbody3d-method-move-and-slide)另有基于 velocity 与物理 delta 的 `move_and_slide` 合同。不能把预乘 delta 后的位移当作后者的 velocity 输入；也不能拿由 slide 路径维护基准或状态的 getter 来证明这次 inherited move 的结果。
+
+本次读取实际前后 Transform3D 与 KinematicCollision3D，不调用 `get_real_velocity`、`get_position_delta` 或 slide collision getter。`safe_margin=0.001` 是这次方法的显式参数；CharacterBody 同名属性也记录，但不拿属性值冒充实参。[固定实现](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/physics/physics_body_3d.cpp#L87-L162)涉及碰撞恢复与 travel 调整，不能把 margin 简化为对理想接触距离的一次普适减法。
+
+### 碰撞中的“shape”还要确认返回的是谁
+
+本例每个身体通过一个 CollisionShape3D 子节点注册资源。实际 `get_local_shape(0)` 与 `get_collider_shape(0)` 分别匹配角色与墙的 **CollisionShape3D 节点**，而不是 SphereShape3D / BoxShape3D 资源。这与[固定的所有者解析路径](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/physics/kinematic_collision_3d.cpp#L67-L112)一致。
+
+因此交接不能只记录资源文件名或“碰到一个 box”：至少把 collider 对象/RID、shape index、shape owner 对象以及实际资源关联起来。这个节点类型结论仅适用于本场景的注册方式，不保证所有直接服务器创建的 shape owner 都是 CollisionShape3D。
+
+### 给导航与身体驱动的最小交接规则
+
+以下是原创工程建议，而非引擎内置业务状态：
+
+1. 分开保留目标点、期望位移、实际变换差及阻挡对象；不能仅凭导航 finish、目标位置空闲或请求已提交就触发业务到达。
+2. 约定谁积分速度、谁调用运动 API、谁处理 remainder。对 same-frame 多次移动也要逐次归档，不能把最后一次返回当作整帧完整位移。
+3. 明确碰撞层、形状尺寸/变换、轴锁、恢复 margin 与 shape-owner 映射。调整这些输入后，旧的路径与身体测试不能自动代表新角色。
+4. 真正接入导航时再验收受阻后的重规划、停止与到达政策。本例没有把 NavigationAgent 和 CharacterBody 接在一起，更没有验证动画、根运动或多人同步。
+
+### 有限证据与代价
+
+作者与独立审阅者各接受 1 个行为进程与 1 个版本查询，合计 **2 个行为进程 + 2 个版本查询**；每轮都是相同的两条通道。累计 **10 次静止查询、4 次实际运动调用**，不是 4 种不同运动场景。两份原始输出的上述有限数值一致；独立静态 reader 另行核对实际参数、位置和碰撞身份。程序自报版本与固定公共源码的对应仍[未认证](../../research/source-notes/godot-runtime-provenance.md)。项目明确选择并读回 `GodotPhysics3D` 配置，诊断类名为 `PhysicsServer3D`，不将该通用类名扩写为独立的底层 provider 认证。
+
+运动发生于一个 `_physics_process` 回调，没有用耗时来测速度或性能。此证据只覆盖固定静止墙与两个球形身体的一次位移，不能证明任意速度/薄墙的 CCD、安全通行整张地图、斜坡/台阶/转身、动态推挤或 `move_and_slide` 行为。比静止重叠更接近实际身体交接，但仍不是完整角色控制器验收。[来源说明](../../research/source-notes/character-motion-obstruction.md)保留文档、源码、真实结果与未执行部分的区别。
