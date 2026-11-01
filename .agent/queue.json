@@ -3258,7 +3258,7 @@
       "id": "TASK-2026-0125",
       "question": "What control semantics and change notifications must a settings flow hand off beyond a visible label when screen narration is enabled?",
       "discipline": "UX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Strengthen the existing UX settings workflow with concrete nonvisual control identity and value-change responsibilities",
       "expected_artifact": "Source-backed finite settings-control narration addition with unexecuted receiving conditions",
@@ -3273,11 +3273,36 @@
         "No screen reader run, listening, image/video inspection or accessibility certification claim",
         "Preserve existing UX workflow and studio-attribution boundaries"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:19:57.296332Z",
-      "next_action": "Review focus-item narration replacement and semantics without generalizing to every message channel",
+      "next_action": "Retain focus-item scope and unexecuted receiving conditions; no device or accessibility certification",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:22:01.165472Z",
+      "commit_sha": "38275d6507c5ade0ac1c568db3752d6022e8dc9f"
+    },
+    {
+      "id": "TASK-2026-0126",
+      "question": "How should playtest evidence distinguish spontaneous verbalization from requested explanations and accuracy outcomes from completion-time outcomes?",
+      "discipline": "PROD",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Investigate a concrete measurement distinction using original research rather than treating all non-solution verbal interaction as equivalent",
+      "expected_artifact": "Original-source evidence gate and bounded protocol addition only if full evidence supports practical value",
+      "artifact_paths": [],
+      "acceptance": [
+        "Seek legitimately public original full paper or author manuscript before extending abstract-only claims",
+        "Separate verbalization instructions and measured outcome definitions",
+        "Do not infer a universal silent-test prescription or causal safety for a specific game",
+        "Preserve source-access limits and avoid fabricated study methods or effect sizes",
+        "No participant testing, raw runtime inspection or access-limit bypass"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:22:01.165472Z",
+      "next_action": "Locate lawful original full text and evaluate whether the verbalization/outcome distinction yields a finite useful protocol addition",
       "blockers": []
     }
   ]
