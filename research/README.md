@@ -157,3 +157,5 @@ python3 scripts/evidence/test_verify.py
 [UI 美术的组合状态交接](../roles/art2d/game-ui-artist.md)区分选择、可用性与比较含义，并明确图形层作用范围；没有制作界面或验证玩家理解。
 
 [作曲与交互编配](../roles/music/game-composer.md)区分技术对齐与有意的组合/缺席；三声部选择表未制作、试听或运行。
+
+[战斗、动画与预测的适用范围复核](audits/combat-applicability/REVIEW.md)追踪五条高风险证据转移边界；未发现新的实质越界，不新增运行结果或改写既有结论。

@@ -2440,11 +2440,13 @@
       "id": "TASK-2026-0095",
       "question": "Do existing fixed-step, root-motion and prediction articles keep each model, source and actual fixture claim within its exact evidence scope?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Deep adversarial applicability review of high-value combat/animation/network boundaries before broader coverage",
       "expected_artifact": "Scoped read-only review and precise source/prose correction if supported, otherwise bounded negative findings",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/audits/combat-applicability/REVIEW.md"
+      ],
       "acceptance": [
         "Trace concrete reader-facing claims to exact existing evidence identities",
         "Do not transfer related fixture results or infer production guarantees",
@@ -2454,8 +2456,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:28:18.992188Z",
-      "next_action": "Review three existing high-value studies against their actual archived applicability boundaries",
+      "last_progress_at": "2026-11-01T04:31:39.809482Z",
+      "next_action": "Archive bounded negative applicability result without cosmetic article changes",
       "blockers": []
     }
   ]
