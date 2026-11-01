@@ -2629,7 +2629,7 @@
       "id": "TASK-2026-0102",
       "question": "What does Unreal PSO precaching completion establish, and how should first-use rendering strategy and validation coverage be interpreted?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Investigate a concrete first-use rendering performance gap using exact official sources, rejecting unsupported universal hitch-free claims",
       "expected_artifact": "Bounded source gate followed by useful source-backed engineering analysis if evidence is sufficient",
@@ -2642,11 +2642,35 @@
         "Record validation coverage and scenario assumptions rather than inventing a runtime benchmark",
         "No private runtime metadata, experiments or unsupported implementation claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:14:57.623801Z",
-      "next_action": "Publish reviewed PSO collector-to-draw and first-use acceptance source note",
+      "next_action": "Retain collector-to-draw and visual/time acceptance distinctions; no engine result inferred",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:16:43.739634Z",
+      "commit_sha": "7bc3099dde72d20aa234a747d3e823d5001bc67a"
+    },
+    {
+      "id": "TASK-2026-0103",
+      "question": "Does disabling an in-progress Unity input action invoke cancellation synchronously, and what ownership or reentrancy boundary follows?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Close a concrete gameplay input teardown lifecycle gap with pinned implementation evidence instead of assuming callbacks occur later",
+      "expected_artifact": "Bounded pinned-source gate and, if supported, an original teardown ordering analysis",
+      "artifact_paths": [],
+      "acceptance": [
+        "Verify exact official Input System tag and commit; inspect actual cancellation and disable path",
+        "Check existing input coverage for duplication",
+        "Keep original call sequence explicitly unexecuted and distinguish action from map behavior",
+        "No engine run, private execution metadata, fabricated observed bug or unsupported version transfer"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:55:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:16:43.739634Z",
+      "next_action": "Review exact pinned action-disable cancellation path and existing input coverage",
       "blockers": []
     }
   ]
