@@ -2984,7 +2984,9 @@
       "priority": 91,
       "priority_rationale": "Deepen existing level-design article with a concrete first-party action-selection mechanism rather than generic buffering advice",
       "expected_artifact": "Source-gated in-place role subsection and bounded source review",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/design/level-designer.md"
+      ],
       "acceptance": [
         "Read original Double Fine action priority description",
         "Check novelty against existing input and level-design guidance",
@@ -2994,8 +2996,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:24:50.769203Z",
-      "next_action": "Verify original coyote mode-selection account and independent source gate before drafting",
+      "last_progress_at": "2026-11-01T06:27:11.110008Z",
+      "next_action": "Review integrated action-selection contract and its explicit unobserved resource/trajectory limits",
       "blockers": []
     }
   ]

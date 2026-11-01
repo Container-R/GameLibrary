@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T062700Z-level-coyote-action-selection",
+  "task_ids": [
+    "TASK-2026-0115"
+  ],
+  "started_at": "2026-11-01T06:24:38Z",
+  "ended_at": "2026-11-01T06:27:11.110008Z",
+  "outcome": "source and final editorial review accepted; publication pending",
+  "sources": [
+    "https://www.doublefine.com/news/devin-article-raz-jump"
+  ],
+  "evidence": "Main and independent reviewer read Metrics, Jump Metrics Tool and Coyote Time sections; historical developer account, not implementation execution",
+  "original_contribution": "Separate requested challenge action sequence from airborne input state, selected prior-mode action and unobserved subsequent resources/trajectory",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No controller code, images, videos, game execution or player observations",
+    "No inferred remaining aerial-jump resources, reachability, bypass or measured benefit",
+    "Same existing L3 source reused; no increase in independent source count",
+    "Prior historical source-reading scope and all runtime artifacts unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 115,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Static consistency of preserved archive; not newly executed experiments or semantic validation",
+    "declared_paths_checked": 146,
+    "local_links_checked": 818
+  },
+  "next_action": "Resolve next existing-topic mechanism gap after source gate",
+  "prepublication_correction": "Clarified priority wording to avoid implying current mode always receives an input after previous-mode consumption",
+  "reviewed_article_sha256": "31421f0edc09fa505a05381fa04c83e354479ace36c6dae12ec5b652aa823da0"
+}

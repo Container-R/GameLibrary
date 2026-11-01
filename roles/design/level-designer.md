@@ -6,13 +6,13 @@ status: source-backed
 primary_discipline: DESIGN
 related_disciplines: [PROG, AI, TA, MODEL, UX, QA, PROD, NARR]
 related_roles: [level-designer, gameplay-programmer, technical-artist, qa-tester, ux-researcher, producer]
-related_topics: [level-blockout, encounter-intent, locomotion-layout-contract, spatial-handoff, playtest-evidence]
+related_topics: [level-blockout, encounter-intent, locomotion-layout-contract, spatial-handoff, playtest-evidence, coyote-time, action-selection]
 engines: [engine-agnostic]
 platforms: [cross-platform]
 versions: ["岗位原文于2026-10-31读取，不表示招聘有效", "Double Fine案例发布2024-04-23", "Ubisoft Toronto NEXT历史2024–2025挑战"]
-updated_at: 2026-10-31
+updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 两家雇主原文、第一方制作案例与历史挑战材料核对；交付矩阵和变更案例为原创分析，未执行关卡、招募玩家或验证组织流程
+verification_method: 两家雇主原文、第一方制作案例与历史挑战材料核对；追加 Double Fine 前模式输入优先权文字核对；交付矩阵和变更案例为原创分析，未执行关卡、招募玩家或验证组织流程
 sources:
   - https://www.orca-inc.co.jp/wp/recruit/career/career_level_designer/
   - https://jobs.smartrecruiters.com/Ubisoft2/744000140062699
@@ -71,6 +71,20 @@ sources:
 
 “兼容”不是要求永远冻结角色移动，而是避免旧布局在新能力下继续无条件继承通过状态。Double Fine 的生产案例说明这种依赖确实存在；上表的字段和流程是本文建议，并非其原样规程。[L3]
 
+### 动作序列验收：离地后按跳，不一定选择空中跳跃
+
+Double Fine 的同一制作说明还描述了一种输入优先关系：结束的移动模式可留下带期限、最低速度条件及动作的 Coyote Data；收到输入时，优先检查近期数据是否能消费该输入，而不是直接由当前模式响应。因此，符合条件的离地后 Jump 可以选中上一模式的跳跃，而非空中跳跃。[L3，Coyote Time]
+
+这让关卡交接多了一个具体问题：**挑战要求的是某种动作序列，还是只要求抵达？** 以下是假设项目的原创验收矩阵，未执行关卡，也不是 Double Fine 的内部表单。设某段教学原本希望玩家“先地面起跳，再追加空中动作”，另一段则只要求跨越；两者未必应采用相同的接受条件。
+
+| 候选操作 | 关卡与玩法先约定的挑战要求 | 必须区分的动作选择 | 仍需单独观察，不能从选择推导 |
+|---|---|---|---|
+| 边缘前按跳，再按跳 | 教的是追加动作，还是严格要求边缘前启动？ | 两次输入实际各由什么动作消费；不能仅以按键次数记作完成序列 | 后续动作是否允许、资源扣除与恢复，以及实际落点 |
+| 先离开边缘，在符合前模式条件时按跳 | 延迟起跳是否属于允许的容错？若仍要求追加动作，应把它单列为后续条件 | 即使当前已在空中，先检查的前模式规则仍可能选择上一模式动作 | “不是空中跳跃”不等于必然还剩一次空中能力，也不等于跨越成立 |
+| 前模式条件不满足后才按跳 | 这段是否接受当前模式动作，或要求重试？ | 确认本项目当前模式如何处理该输入；不替它预设动作或资源规则 | 是否到达、是否碰撞及是否满足教学目标，分别记录 |
+
+如果只是希望玩家跨越，不必把容错操作自动视为作弊；如果要教某种能力组合，应把**允许的动作序列**交给玩法实现与 QA，而不是只交一道缝的宽度或“按键时在空中”的标签。随后用项目自己的动作、资源和轨迹记录判断是否成立，再决定保留容错、改变教学条件或调整布局。本例没有证明额外跳跃、绕关、难度变化或玩家理解收益，也不规定通用宽限时间。
+
 ### 假设案例：跳得更远，为什么原来通过的关卡要重查？
 
 以下是原创静态推演，**不是运行结果或真实玩家记录**。
@@ -100,9 +114,13 @@ sources:
 
 ## 来源、定位与边界
 
-全部访问于 **2026-10-31**。招聘页仅用作职责原文样本，不代表仍在招聘；没有采访、账户交互或申请行为。正文为原创综合，不复制第三方图表、资产、实现或长篇翻译。
+初始来源访问于 **2026-10-31**；2026-11-01 补读 L3 的 Coyote Time，见末尾增补记录。招聘页仅用作职责原文样本，不代表仍在招聘；没有采访、账户交互或申请行为。正文为原创综合，不复制第三方图表、资产、实现或长篇翻译。
 
 - **[L1] ORCA，レベルデザイナー**，日期未标明。[原文](https://www.orca-inc.co.jp/wp/recruit/career/career_level_designer/)，定位：業務内容、必要なスキル・経験、目指す方向・意欲。日语原始工作室说明，非翻译版本。
 - **[L2] Ubisoft Annecy，Lead Level Design (F/M/NB) [AAA Project]**，日期未标明。[原文](https://jobs.smartrecruiters.com/Ubisoft2/744000140062699)，定位：Job Description；Collaboration within the World Team / with the rest of the project；Level Design excellence。仅该负责人岗位的组织样本。
 - **[L3] Devin Kelly-Sneed / Double Fine，Behind the Code: Designing Raz's Jump**，**2024-04-23**。[原文](https://www.doublefine.com/news/devin-article-raz-jump)，定位：Metrics、Jump Metrics Tool，及开头跨学科说明。阅读文字，未观看嵌入视频或执行其代码；仅作为《Psychonauts 2》制作案例。
 - **[L4] Ubisoft Toronto，NEXT 2024–2025 Level Design Brief**，历史项目2024–2025，独立发布日期未确认。[原始 PDF](https://static-wordpressv2.ubisoft.com/toronto.ubisoft.com/wp-content/uploads/2024/09/Ubisoft-Toronto-NEXT-2024-2025-Level-Design-Brief.pdf)，定位：PDF第2页设计文档/可玩白盒阶段，第4页文档评价标准。读取文本，不宣称取得第二阶段专属说明或内部生产标准。
+
+**2026-11-01 补读 [L3]：** 同一篇 Double Fine 官方制作说明（Devin Kelly-Sneed，2024-04-23）的 **Coyote Time** 节，定位为“输入优先检查近期 Coyote Data，而不是直接交给当前模式”的段落；并回查既有 Metrics、Jump Metrics Tool。仅阅读文字，未观看视频、检查图片或执行控制器。原文也给出了地面宽限与预跳重力参数；此处不复用这些数值，因为新增问题是动作选择优先关系，而非轨迹调参。新增验收矩阵为原创未执行建议，不能从该节推导后续资源一定保留或某个间隙可通过。
+
+[原文：Behind the Code: Designing Raz's Jump](https://www.doublefine.com/news/devin-article-raz-jump)
