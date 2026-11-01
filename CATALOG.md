@@ -58,6 +58,7 @@
 
 - [Killzone 3 行动执行：计划可继续、动作完成与优先级替换不是同一判断](case-studies/ai/killzone3-plan-execution-continuation.md) — `source-backed` · `AI`
 - [Left 4 Dead Director：强度估计、节奏控制与实际体验的证据边界](case-studies/ai/left4dead-director-pacing-evidence.md) — `source-backed` · `AI`
+- [For Honor 的 Motion Matching 制作接口：事件标记与请求时刻怎样对齐](case-studies/animation/for-honor-motion-matching-event-request.md) — `source-backed` · `ANIM`
 - [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `source-backed` · `ENGINE`
 - [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `source-backed` · `LIVE`
 - [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `source-backed` · `NARR`

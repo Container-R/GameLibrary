@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:14:20.438093Z",
-      "next_action": "Review one unresolved content-production question in existing original-source research before choosing the next depth unit",
+      "last_progress_at": "2026-11-01T09:21:44.001255Z",
+      "next_action": "Connect original production motion-selection inputs to concrete content-author receiving decisions",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3696,6 +3696,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:14:20.438093Z",
       "commit_sha": "879604d97e1de3b09f165b28ae2ced7b7d1aad5f"
+    },
+    {
+      "id": "TASK-2026-0141",
+      "question": "How do authored motion events and request clocks constrain candidate timing without equating a source marker with gameplay success?",
+      "discipline": "ANIM",
+      "status": "reviewing",
+      "priority": 92,
+      "priority_rationale": "Original production event-request mechanism addresses combat animation timing beyond transition continuity and notify eligibility",
+      "expected_artifact": "Historical production case with explicit original fixed-deadline and marker-semantics examples",
+      "artifact_paths": [
+        "case-studies/animation/for-honor-motion-matching-event-request.md"
+      ],
+      "acceptance": [
+        "Read original GDC technical material and inspect relevant event-editor slides",
+        "Separate request-context clip from raw mocap sequence without claiming internal API knowledge",
+        "Label original rematch timing policy and unit-rate candidate assumptions",
+        "Do not infer hard filter, full cost function, final winner or collision result",
+        "Keep motion application and event-authoring responsibilities distinct",
+        "Exclude source slides and motion assets from publication"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:21:44.001255Z",
+      "next_action": "Validate independently reviewed historical motion-event case and exact publication",
+      "blockers": []
     }
   ]
 }

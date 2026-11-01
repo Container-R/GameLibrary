@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T091500Z-motion-event-request",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0141"
+  ],
+  "started_at": "2026-11-01T09:15:39Z",
+  "ended_at": "2026-11-01T09:21:44.001255Z",
+  "outcome": "Original production motion-event case independently reviewed; publication validation pending",
+  "sources_examined": [
+    "https://www.gdcvault.com/play/1023280/Motion-Matching-and-The-Road",
+    "https://media.gdcvault.com/gdc2016/Presentations/Clavet_Simon_MotionMatching.pdf"
+  ],
+  "evidence_added": "Official historical slide text with visual checks of physical pages75\u201377 and explicit request-context terminology",
+  "original_contribution": "Retained-deadline rematch and two unit-rate candidate examples separate temporal compatibility from marker semantics and full search selection",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No motion search, animation playback, collision or network execution",
+    "No source-code check of full matching objective, hard filtering or fallback",
+    "Logical clip interpretation is contextual, not verified internal class identity",
+    "No original slide, screenshot or game asset redistribution",
+    "Normalization alternative deferred rather than mixed into Clavet2016"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 141,
+    "indexed_articles": 52,
+    "archive_checks_passed": 519,
+    "archive_checks_failed": 0,
+    "optimized_archive_checks_passed": 519,
+    "archive_check_scope": "Static declared archive consistency, not runtime or semantic validation",
+    "local_links_checked": 883,
+    "declared_paths_checked": 189
+  },
+  "next_action": "Verify publication then choose substantive remaining evidence gap without article-count targets"
+}
