@@ -2280,7 +2280,7 @@
       "id": "TASK-2026-0089",
       "question": "Can an all-zero offline stem ending change the gain of an unchanged stem through input normalization?",
       "discipline": "SFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Assess actual offline mixer gain/topology boundary distinct from fake scheduling and PCM frame-count evidence",
       "expected_artifact": "Source/EOF gate first; finite original offline mix only if exact oracle and capability justified",
@@ -2295,11 +2295,35 @@
         "Freeze finite format/length/boundary oracle before implementation or execution",
         "Stop on source/capability failure; no listening or general normalize-off recommendation"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T04:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T03:37:26.608505Z",
-      "next_action": "Publish independently reviewed finite offline mixing waveform and source boundary",
+      "next_action": "Retain finite offline gain/topology result; no middleware, perception, arbitrary EOF or bit-reproducibility upgrade",
+      "blockers": [],
+      "completed_at": "2026-11-01T03:44:59.934039Z",
+      "commit_sha": "353a7207f4477b8a11c303d59161c41b135c4aff"
+    },
+    {
+      "id": "TASK-2026-0090",
+      "question": "When a reusable light prop is placed in a receiving scene, which author should own a local, shared-preset or scene-policy correction?",
+      "discipline": "GFX",
+      "status": "researching",
+      "priority": 84,
+      "priority_rationale": "Address lighting-specific author/placer/receiving-scene interface; revised to avoid duplicating generic concept-art revision worksheets",
+      "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
+      "artifact_paths": [],
+      "acceptance": [
+        "Direct named primary practitioner interviews and independent source/editorial review",
+        "Concrete instance/shared/surface/scene-policy decision fork, not generic approval bookkeeping",
+        "No rendered, causal, performance, player or current-employment claim from interviews",
+        "Original comparison proposal clearly unexecuted; preserve initial novelty critique"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T04:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T03:44:59.934039Z",
+      "next_action": "Stage revised lighting responsibility draft after main and independent source/editorial acceptance",
       "blockers": []
     }
   ]
