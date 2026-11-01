@@ -3286,7 +3286,7 @@
       "id": "TASK-2026-0126",
       "question": "Can coarse label agreement authorize fine-grained playtest production work orders?",
       "discipline": "PROD",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Prevent coarse automated evidence scores from silently authorizing finer production decisions; retain unresolved original measurement inquiry separately",
       "expected_artifact": "Bounded original-source addition on label granularity and receiving decisions",
@@ -3301,13 +3301,38 @@
         "Preserve original intervention example and source access dates",
         "No participant data, audio processing, model execution or invented benchmark"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:29:29.478267Z",
-      "next_action": "Review label-granularity addition and exact article/source diff",
+      "next_action": "Retain metric granularity, source-study and unexecuted game-example scope; original reactivity inquiry remains unresolved",
       "blockers": [],
-      "deferred_question": "Original verbalization-reactivity inquiry remains unresolved: full methods were not obtained; alternate paper answers a different narrower question"
+      "deferred_question": "Original verbalization-reactivity inquiry remains unresolved: full methods were not obtained; alternate paper answers a different narrower question",
+      "completed_at": "2026-11-01T07:32:17.204785Z",
+      "commit_sha": "7e0d46200b35c7192d24af44f092b18ac2b34b00"
+    },
+    {
+      "id": "TASK-2026-0127",
+      "question": "Which existing engineering article has a concrete unresolved source-level mechanism that changes a receiving decision?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Select an evidence gap before drafting; deepen a version-specific mechanism instead of increasing article count",
+      "expected_artifact": "One finite original-source gate and bounded addition only if evidence and novelty support it",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect actual existing target and record exact identity",
+        "Use original source or specification with version scope",
+        "Identify a concrete counterexample or receiving decision not already covered",
+        "Reject generic or duplicative expansion and preserve source-access limits",
+        "No participant data, private runtime artifacts or held publication content"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:32:17.204785Z",
+      "next_action": "Inspect source-depth candidate from existing-depth-selection-15 and accept or reject against existing coverage",
+      "blockers": []
     }
   ]
 }
