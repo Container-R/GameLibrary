@@ -155,3 +155,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [游戏作曲的原始来源](../research/source-notes/game-composer-role.md)定位具名创作者的声部分合与写作重点；意图不等于玩家效果。
 
 [呈现队列的固定来源](../research/source-notes/presentation-queue-latency-boundary.md)区分 Vulkan 请求政策与独立 DXGI 等待样例。
+
+[FMOD 虚拟化观察边界](../research/source-notes/fmod-virtualization-observation-boundary.md)区分事件层状态与实际承载提示的 Core Channel，保留2.04.00文档范围。

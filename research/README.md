@@ -161,3 +161,5 @@ python3 scripts/evidence/test_verify.py
 [战斗、动画与预测的适用范围复核](audits/combat-applicability/REVIEW.md)追踪五条高风险证据转移边界；未发现新的实质越界，不新增运行结果或改写既有结论。
 
 [呈现队列与输入时效](../solutions/rendering/presentation-queue-latency-boundary.md)用未执行有限反例区分上游等待、图像容量与采样状态年龄，不提供硬件延迟测量。
+
+[音乐状态交接的观察层补充](../solutions/audio/music-state-transition-contract.md)分析事件非虚拟但底层声道虚拟的具体反例；开头/尾音情景未运行或试听，不升级已有生命周期模型。

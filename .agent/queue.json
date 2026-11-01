@@ -2493,11 +2493,14 @@
       "id": "TASK-2026-0097",
       "question": "Does a virtualized audio playback timeline or event identity establish delivery of a time-sensitive audible cue?",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "Deepen existing audio-state and accessible-information evidence without equating logical playback with audible delivery",
       "expected_artifact": "Version-specific primary-source gate and bounded existing-article supplement only if it closes a distinct gap",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/audio/music-state-transition-contract.md",
+        "research/source-notes/fmod-virtualization-observation-boundary.md"
+      ],
       "acceptance": [
         "Inspect existing audio and accessibility coverage before drafting",
         "Read exact-version original virtualization and return-to-physical policy documentation",
@@ -2508,8 +2511,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:42:03.181770Z",
-      "next_action": "Read original voice virtualization policy and assess distinct applicability gap",
+      "last_progress_at": "2026-11-01T04:48:11.156356Z",
+      "next_action": "Publish reviewed FMOD event/Core observation-layer supplement",
       "blockers": []
     }
   ]

@@ -6,9 +6,11 @@ status: source-backed
 primary_discipline: SFX
 related_disciplines: [MUSIC, PROG, DESIGN, QA]
 related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay-programmer, qa-engineer]
-updated_at: 2026-10-31
-verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；未运行中间件或游戏引擎
+updated_at: 2026-11-01
+verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；补充 FMOD 事件／Core 声道虚拟化的官方文本溯源与未执行观察合同；未运行中间件或游戏引擎
 sources:
+  - https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html
+  - https://www.fmod.com/docs/2.04/studio/advanced-topics.html
   - https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html
   - https://www.fmod.com/docs/2.04/api/studio-guide.html
   - https://www.fmod.com/docs/2.04/studio/authoring-events.html
@@ -78,6 +80,28 @@ FMOD 2.04 的复音限制可通过 `START_FAILED` 报告启动拒绝；此路径
 FMOD 2.04 API Guide §13.4/13.8/13.11也直接说明命令异步处理、样本加载与依初始化设置变化的回调线程；deferred marker/beat设置不能推广为所有回调都在游戏线程。[当前版本依据](https://www.fmod.com/docs/2.04/api/studio-guide.html)
 
 回调处理建议只搬运小型有界记录，避免磁盘 I/O、阻塞等待和直接调用游戏对象；具体线程归属、同步方式与溢出策略由音频程序员按集成版本验证。这里提出实时路径防护要求，并未验证某个回调一定运行在音频线程。
+
+### 4. 虚拟化必须注明观察层：事件非虚拟，不等于关键声道参与混音
+
+FMOD 文档给出一个具体反例：`EventInstance::isVirtual` 查询成功且输出状态为 false 时，底层部分乃至全部 Core 声道仍可能因软件声道限制而虚拟化。该事件查询针对事件复音限制，不是各声道状态的汇总。[Core 资源管理 §9.1.7](https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html)、[EventInstance::isVirtual](https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html#studio_eventinstance_isvirtual)
+
+这里补强的是 `observed_section` 的**证据来源**，不重定义前文 Active，也不修改旧模型的生命周期语义。即使段落位置已知，仍须另问承载关键信息的声道是否参与实际混音。SDK 的 real 是中间件状态，不是扬声器输出或玩家听见的回执。
+
+以下是原创观察决策表，尚未接入或执行。每行都应保留**查询返回码／回调类型、事件与相关声道身份、观察时间及其时钟域**；查询失败不能填成 false。分别采集的事件、声道和位置状态不是一个原子快照。
+
+| 已取得的有限观察 | 可以记录什么 | 仍需核对的证据或决策 |
+|---|---|---|
+| 事件查询成功且 isVirtual 为 false | 该次事件层观察为非虚拟 | 哪个 Core 声道承载关键入口？不能据此代填该声道的虚拟状态 |
+| 相关 Core 声道仍有效，查询为虚拟 | 保留的声道当前不作为 real 声道参与混音 | 内容位置与返回策略是什么；信息入口是否已在虚拟期间经过？ |
+| 已有独立诊断确认容量抢占，随后该声道句柄失效 | 不把这个已被抢占的声道记为“等待恢复” | 是否仍有重播意义？**句柄失效本身不能反推抢占原因** |
+| 收到 START_FAILED | 按前文独立启动拒绝路径记录 | 不归类为已启动但暂时虚拟，不等待该路径不存在的 STOPPED |
+| 相关声道查询为 real，或段落位置已推进 | 只记录对应层、对应时刻的状态 | 仍需路由与输出证据；不能升级为关键入口已送达或已被理解 |
+
+**条件例子（原创、未执行）：**一个非循环提示由可辨识的入口和较长尾部组成。假定同一有效 Core 声道在整个入口期间虚拟，随后在内容尚未结束时恢复为 real；期间没有 seek、重新触发、循环、变速或停止。Core 默认策略让虚拟位置推进并在返回时从相应位置继续，因此“后来成为 real”不能补证此前入口已送达。Core 的 `FMOD_VIRTUAL_PLAYFROMSTART` 是另一种返回策略，但不能据此声称整个 Studio 事件及其所有乐器会重启。[Core §9.1.6](https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html)
+
+这个例子不保证一定恢复，也不假定尾部仍有信息价值。项目应分别决定：尾部是否足以表达当前意图、延迟入口是否仍有效、是否需要另一个语义适当的提示；不要因句柄存在或段落推进就关闭待确认项。它与[关键声音信息的替代通道](../accessibility/critical-sound-information-contract.md)互补，不能让视觉等替代信息随声音虚拟化一起消失。
+
+Studio 的停止、拒绝新增与 Virtualize 也不是同一结果；不要把 Core 指南中的 stealing 简称推广到全部 Studio 策略。[Studio §16.4.1–16.4.2](https://www.fmod.com/docs/2.04/studio/advanced-topics.html) 本节只核对文档和提出观察合同，没有运行中间件、听音或测量设备输出；旧假端口测试不覆盖虚拟化。文档版本与边界见[来源说明](../../research/source-notes/fmod-virtualization-observation-boundary.md)。
 
 ## 音乐图与玩法合同一起验收
 
