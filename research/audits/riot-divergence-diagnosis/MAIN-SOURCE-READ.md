@@ -1,0 +1,11 @@
+# Main source read — Chronobreak divergence diagnosis
+
+2026-11-01 UTC. Independently opened Riot Games' original 2018-05-01 article, Rick Hoskinson, with the case credited to Robin Maddock. Read Detecting Divergences, the complete Case Study and Conclusion; no pictures, internal code or executable investigation inspected. News recommendations are unrelated to this source evidence.
+
+The described comparison workflow distinguishes original recording versus playback from two playbacks, with known coverage limits. First observed diff is not the earliest cause. The case moves from a spell-target coordinate symptom through altered initialization and assignment tracing to constructor-threshold localization; the threshold selects zero before versus FLT_MAX after, not a frame interval. The reported cause is an earlier network level-of-detail conditional comparing an uninitialized value. It is not a demonstrated fix to the spellcasting or interpolation algorithms.
+
+The note may explain the historical mechanism, but must not generalize the reported success rate or prescribe treating an uninitialized read as a portable, stable oracle. Source mentions compiler changes as a diagnostic risk. Original proposed comparison/intervention records and non-diagnostic regression acceptance are our engineering suggestions, not independently established Riot procedures. Repeated diagnosis success is not itself a proof of universal monotonicity across altered construction orders or multiple causes.
+
+No current League guarantee, copied source code/log screenshot, runtime rerun, benchmark or production repair was performed. Existing replay and Factorio notes concern different mechanisms. Public publication remains source-only.
+
+Final original logical example independently evaluated by main: for fixed order 1..4 and injected suffix i >= k, the defined predicate (3 included AND 2 excluded) is false, false, true, false at k=1,2,3,4. This finite definition has no single threshold boundary despite repeatability. It models neither the studio implementation nor uninitialized-read behavior. Editorial y-component precision is accepted: the historical threshold-specific probe narrows the initialization intervention to y.

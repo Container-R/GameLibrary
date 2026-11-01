@@ -2843,11 +2843,13 @@
       "id": "TASK-2026-0110",
       "question": "How did Riot localize an intermittent Chronobreak divergence, and what comparison and diagnostic-intervention identities must remain traceable?",
       "discipline": "QA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Concrete original developer diagnosis case fills a gap beyond replay correctness models and generic failure-retention checklists",
       "expected_artifact": "Bounded source-backed diagnosis note after independent primary-source review",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/riot-divergence-diagnostic-interventions.md"
+      ],
       "acceptance": [
         "Read original Riot 2018 detection and divergence case text with author attribution",
         "Distinguish observed symptom from causal origin and controlled diagnostic intervention",
@@ -2858,8 +2860,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:35:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:58:24.492442Z",
-      "next_action": "Independently review Riot Chronobreak divergence diagnosis source gate",
+      "last_progress_at": "2026-11-01T06:00:41.240370Z",
+      "next_action": "Review final original predicate example and publish bounded divergence diagnosis note",
       "blockers": []
     }
   ]

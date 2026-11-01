@@ -177,3 +177,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Noita 活跃区域与更新所有权](../research/source-notes/noita-dirty-region-update-ownership.md)依据 Petri Purho 2019 年具名原始访谈，明确开发者陈述与实现证明的区别。
 
 [Herringbone 片段内容合同](../research/source-notes/herringbone-tile-content-contract.md)连接 Sean Barrett 原始制作分析与固定 stb 模板枚举、标签赋值、选择路径；不据此证明地图可达。
+
+[Riot 分歧诊断与干预身份](../research/source-notes/riot-divergence-diagnostic-interventions.md)采用 2018 年原始技术文章的构造阈值定位案例，区分历史成功与一般二分条件。

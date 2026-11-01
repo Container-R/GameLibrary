@@ -185,3 +185,5 @@ python3 scripts/evidence/test_verify.py
 [少更新与安全调度是两个决定](source-notes/noita-dirty-region-update-ownership.md)结合历史范围约束与原创访问集合例子，审查规则变更的所有权依据；没有并行运行或确定性结果。
 
 [拼接标签与片段内容接口](source-notes/herringbone-tile-content-contract.md)定位模板元数据、RGB 载荷与选择器的交接，提出未执行的共享接口修改场景。
+
+[从症状放大到可追溯定位](source-notes/riot-divergence-diagnostic-interventions.md)提出比较对、诊断谓词与构造序号交接要求，并以原创有限逻辑例子说明稳定判据仍未必有单一分界。

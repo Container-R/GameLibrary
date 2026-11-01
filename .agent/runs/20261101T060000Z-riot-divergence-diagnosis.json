@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T060000Z-riot-divergence-diagnosis",
+  "task_ids": [
+    "TASK-2026-0110"
+  ],
+  "started_at": "2026-11-01T05:58:47Z",
+  "ended_at": "2026-11-01T06:00:41.240370Z",
+  "outcome": "source case and final logical predicate reviewed; publication pending",
+  "sources": [
+    "https://www.riotgames.com/en/news/determinism-league-legends-fixing-divergences"
+  ],
+  "evidence": "Rick Hoskinson 2018-05-01 original article; case credited to Robin Maddock; comparison workflow, controlled initialization, constructor threshold and earlier network LOD root cause directly read",
+  "original_contribution": "Explicit diagnosis handoff plus invented finite predicate showing stable threshold observations need not have one boundary",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No League or replay execution, diagnostic code, performance measurement or current-product guarantee",
+    "No image or log screenshot inspection; no private implementation read",
+    "Original logical predicate is not an actual program, undefined-behavior model or observed fault",
+    "Non-diagnostic regression acceptance is our recommendation, not a reported complete Riot release process",
+    "All indexed articles and prior experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 110,
+    "accepted_note_sha256": "193db60c5e8bd61e530945755b1537571cec2b67e37a193320b5bf5de1ded609",
+    "static_archive_checks": 519,
+    "static_archive_failed": 0,
+    "optimized_python_archive_checks": 519,
+    "declared_paths_checked": 139,
+    "independent_truth_table_rows": 4,
+    "prepublication_correction": "Specify y component for historical threshold-specific probe; distinguish earlier all-components initialization experiment"
+  },
+  "next_action": "Deepen a specific existing source-mechanism gap after bounded selection"
+}
