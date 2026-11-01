@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T120100Z-reader-build-qa",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:53:38Z",
+  "ended_at": "2026-11-01T12:09:15.309719Z",
+  "outcome": "Build and QA bodies and actual reader routes accepted; BC gaps merged; four original scopes accounted for; publication pending",
+  "baseline_head": "4e874196a177ac83d7d7cb104ae2710922ba9c32",
+  "books": [
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u6784\u5efa\u53d1\u5e03/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6784\u5efa\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u4ed8\u53ef\u7528\u7684\u6e38\u620f\u7248\u672c.md",
+    "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u8d28\u91cf\u4fdd\u8bc1/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6e38\u620f\u6d4b\u8bd5\u5982\u4f55\u590d\u73b0\u7f3a\u9677\u548c\u8bc4\u4f30\u7248\u672c\u98ce\u9669.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u6784\u5efa\u53d1\u5e03/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6784\u5efa\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u4ed8\u53ef\u7528\u7684\u6e38\u620f\u7248\u672c.md": "a674935ad9e601b2e0048dc88fd26a45fdac3029cefe9037e48282e08d714a8e",
+    "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u8d28\u91cf\u4fdd\u8bc1/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6e38\u620f\u6d4b\u8bd5\u5982\u4f55\u590d\u73b0\u7f3a\u9677\u548c\u8bc4\u4f30\u7248\u672c\u98ce\u9669.md": "d55d592053d7b1b791f507cf509436acf09d1f10bcf1fdc662efb1cd59f46264"
+  },
+  "rewritten_reader_books": 21,
+  "remaining_legacy_entries": 34,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No interface or participant study executed",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Publish reviewed build and QA reader books and BC scope corrections after verifying exact tree; continue animator and VFX rewrites and finite old-scope review",
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u6784\u5efa\u5de5\u7a0b-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u6e38\u620f\u6d4b\u8bd5-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/BC\u8303\u56f4\u8865\u5145-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u6784\u5efa\u4e0e\u6d4b\u8bd5-\u5bfc\u822a\u5ba1\u8bfb.md"
+  ],
+  "scope_dispositions": {
+    "accounted_for_originals": 4,
+    "pending_claim_section_checks": 40,
+    "new_book_requirement": false
+  },
+  "validation": {
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "queue_artifact_paths_checked": 234,
+    "inventory_shelf_entries_checked": 55,
+    "runtime_experiments": 0
+  }
+}

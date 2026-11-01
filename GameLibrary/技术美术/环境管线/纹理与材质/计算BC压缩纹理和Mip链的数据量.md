@@ -77,9 +77,15 @@ h_i = max(1, floor(H / 2^i))
 
 把本例数据装入 DDS 文件，还要加入描述尺寸、格式等信息的文件头。采用基本 DDS 描述时，本例为 `1664+128=1792` 字节；带 DX10 扩展的描述长度则为 148 字节，不能把 128 写死到所有 DDS。[3] 如果再放进压缩发行包，下载大小还需要按实际包文件统计。
 
+接收 DDS 时，还要确认文件真的装下了这些数据。Microsoft 提醒，某些历史工具写入的 `dwPitchOrLinearSize` 字段并不可靠，不能直接把它当作逐级数据布局的依据；应按已识别的格式重新计算。[3] 对本文这种单层、单面二维文件，先核对文件头、格式、尺寸和声明级数，再从正确的数据起点开始，将每一级的计算长度依次累加，得到各级偏移，并检查每段都落在文件范围内。
+
+例如，本例基本 DDS 的最后一级从字节偏移 1784 开始，还需要 8 字节，所以文件至少要覆盖到 1792 字节。若文件只有 1784 字节，即使顶层仍能显示，最后一级也已经缺失，应拒绝按声明的完整链接收。若比约定布局多出数据，也应先解释其来源，不能默默算作纹理数据或随意忽略。这是本例的接收检查思路，不是完整 DDS 安全解析器，也不是所有 DDS 都必须等于 1792 字节。
+
 数据上传到 GPU 时，又可能需要按指定间隔排列每行。这个间隔称为 **row pitch（行跨度）**，可能大于一行有效数据的字节数。D3D12 的 `GetCopyableFootprints` 文档明确区分这两个数字；它提供的是可复制的上传布局，不是纹理永久占用量。[5]
 
 纹理资源本身的分配要求要由目标 API 与资源描述确定。例如 Vulkan 的 `VkMemoryRequirements` 分别提供所需分配大小和对齐要求。[6] 而运行时实际驻留多少，还涉及场景和纹理流送状态——流送是按需要加载不同级别或部分资源的管理方式。减少磁盘中的数据、减少分配量和减少某一时刻的驻留量，不能视为同一个动作。
+
+流送还有管理粒度的限制。某些资源按内存页或稀疏块管理，几个很小的 mip 也可能被合在一个 **mip-tail（尾部 mip 区域）**里，而不是每一级都能独立对应一份可释放空间。例如 Vulkan 的稀疏驻留图像规范描述了尾级合并以及按不透明区域绑定的方式，尾区大小还要满足稀疏块粒度。[7] 这里的内存管理块不是 BC 编码的 4×4 块。若几个级共用这样的管理单元，从预算表删掉其中一级，不会自动证明已经释放相应驻留空间；只汇总所选 mip 的编码量，也不等于真实资源分配量。是否支持该格式与稀疏驻留、尾部从哪一级开始以及怎样加载，应查实际设备与引擎；本例没有创建这种资源，不能给它套一个假定的页大小。
 
 如果性能工具的数字与 1664 不一致，先确认它显示的是哪一层，而不是立即判定工具或引擎出错。也不要反过来用一份小 DDS 文件证明场景显存足够。
 
@@ -107,13 +113,15 @@ h_i = max(1, floor(H / 2^i))
 
 [2] Microsoft，*Block Compression (Direct3D 10)*，基础资源约束与 “Virtual Size versus Physical Size”。未把其概括性性能描述作为本例测试结论。[原文](https://learn.microsoft.com/en-us/windows/win32/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)
 
-[3] Microsoft，*Programming Guide for DDS*，“DDS File Layout”“DDS Variants”及块行大小计算。[原文](https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dx-graphics-dds-pguide)
+[3] Microsoft，*Programming Guide for DDS*，“DDS File Layout”“DDS Variants”、历史 pitch 字段警告及块行大小计算。[原文](https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dx-graphics-dds-pguide)
 
 [4] Microsoft DirectXTex，固定源码版本中的 `ComputePitch` 正常块布局分支，以及二维 mip 逐级累计；不采用旧数据兼容分支。[块布局源码](https://github.com/microsoft/DirectXTex/blob/ec66b78b37389e8373a8e14ccc3cd29be94146b3/DirectXTex/DirectXTexUtil.cpp#L908-L973)、[逐级累计源码](https://github.com/microsoft/DirectXTex/blob/ec66b78b37389e8373a8e14ccc3cd29be94146b3/DirectXTex/DirectXTexImage.cpp#L47-L72)
 
 [5] Microsoft，*ID3D12Device::GetCopyableFootprints*，`pRowSizeInBytes` 与 Remarks，页面标注更新2025-11-25。[原文](https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints)
 
 [6] Khronos，*VkMemoryRequirements*，Members 中的 `size` 与 `alignment`。[原文](https://docs.vulkan.org/refpages/latest/refpages/source/VkMemoryRequirements.html)
+
+[7] Khronos，*Sparse Resources*，“Sparse Resource Features”“Mip Tail Regions”及 `VkSparseImageMemoryRequirements` 的尾区字段。仅解释可能的管理粒度，不表示本例执行了流送或目标设备支持 BC 稀疏资源。[原文](https://docs.vulkan.org/spec/latest/chapters/sparsemem.html)
 
 ---
 

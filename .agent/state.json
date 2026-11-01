@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T11:57:25.344715Z",
+  "last_real_progress_at": "2026-11-01T12:02:54.538047Z",
   "last_commit_sha": "47b38beca46ea2329acecd7714663163e2f1df0d",
-  "last_run_id": "20261101T115300Z-reader-navigation-gameplay",
-  "next_action": "Rewrite existing build-engineer and quality-assurance books; audit retained original scopes with independent reader reviews; retain composite chapter backlog; no new topics",
+  "last_run_id": "20261101T120100Z-reader-build-qa",
+  "next_action": "Publish reviewed build and QA reader books and BC scope corrections after verifying exact tree; continue animator and VFX rewrites and finite old-scope review",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -80,8 +80,8 @@
     "sample_rewrite_accepted": true,
     "restricted_evidence_hold_unchanged": true,
     "sample_review_kind": "Independent reader-perspective review by agents, not human usability testing",
-    "rewritten_reader_books": 19,
-    "legacy_entries_remaining": 36,
+    "rewritten_reader_books": 21,
+    "legacy_entries_remaining": 34,
     "whole_library_rebuild_complete": false,
     "legacy_composite_retained_unchanged": true,
     "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
@@ -107,6 +107,7 @@
     "ninth_batch_published_sha": "792160e3e85526ea1a5ca63a96a2be1bbeb05c09",
     "ninth_batch_readback_verified": true,
     "tenth_batch_published_sha": "47b38beca46ea2329acecd7714663163e2f1df0d",
-    "tenth_batch_readback_verified": true
+    "tenth_batch_readback_verified": true,
+    "accounted_for_original_items": 4
   }
 }

@@ -30,8 +30,10 @@
       "current_read_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
       "legacy_retention": "旧文保留为历史资料；读者入口采用重写正文，相关技术细节与来源仍可追溯",
       "reader_body_status": "published",
-      "original_scope_status": "scope_disposition_review_pending",
-      "pending_chapter_tasks": []
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition_review": "管理档案/审查/环境概念与BC-原范围去向核对.md",
+      "scope_disposition": "Useful old content mapped to the accepted reader article; repeated occupational lists, adjacent links and agent metadata explicitly excluded from reader scope. Historical original remains unchanged."
     },
     {
       "internal_id": "ROLE-ART2D-002",
@@ -102,12 +104,16 @@
       "area": "构建发布",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/engine/build-engineer.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+      "current_read_path": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition_review": "管理档案/审查/构建工程-独立审读.md",
+      "scope_disposition": "Stage identity and CMake counterexamples merged into the reader article; SLSA field-level material explicitly retained at its existing original section as supporting research, not a new book.",
+      "supporting_material": "管理档案/支持资料/构建来源字段的保留去向.md"
     },
     {
       "internal_id": "ROLE-LOC-001",
@@ -213,12 +219,15 @@
       "area": "质量保证",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/qa/game-quality-assurance.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
+      "current_read_path": "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition_review": "管理档案/审查/游戏测试-独立审读.md",
+      "scope_disposition": "Observed behavior wording corrected; independent-repeat and quarantined-test risk responsibility merged. Adjacent playtest, simulation and build material is explicitly delegated to existing topics; old article did not contain missing performance tutorials."
     },
     {
       "internal_id": "ROLE-GFX-002",
@@ -664,8 +673,13 @@
       "current_read_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
       "legacy_retention": "旧复合文章和实验原位保留，不复制原始执行材料",
       "reader_body_status": "published",
-      "original_scope_status": "scope_disposition_review_pending",
-      "pending_chapter_tasks": []
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition_review": [
+        "管理档案/审查/环境概念与BC-原范围去向核对.md",
+        "管理档案/审查/BC范围补充-独立审读.md"
+      ],
+      "scope_disposition": "T1 DDS completeness and T2 sparse/mip-tail granularity merged into existing reader article. Remaining original content is covered or explicitly retained as historical implementation evidence; no new book required."
     },
     {
       "internal_id": "SOL-GFX-002",
@@ -913,10 +927,11 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 19,
-  "legacy_entries_remaining": 36,
+  "rewritten_reader_books": 21,
+  "legacy_entries_remaining": 34,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
-  "fully_remediated_original_items": 0,
-  "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item."
+  "fully_remediated_original_items": 4,
+  "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
+  "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority."
 }
