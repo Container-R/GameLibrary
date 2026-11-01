@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T11:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:28:59.604307Z",
-      "next_action": "Adversarially review recent assignment/exposure, lag-compensation and tangent reindexing notes against decisive original sources before adding topics",
+      "last_progress_at": "2026-11-01T10:32:58.438383Z",
+      "next_action": "Read first-party VALORANT visibility and ongoing-effect re-entry mechanism; distinguish deliberate event omission from reliable delivery",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3985,7 +3985,7 @@
       "id": "TASK-2026-0151",
       "question": "Do three newly published source-only mechanisms survive fresh adversarial original-source review without borrowing runtime evidence?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Independent reviewer outside authorship/final-review roles challenges recent statistical, networking and mesh-reception examples before more expansion",
       "expected_artifact": "Exact-snapshot adversarial review with source reading scope and bounded negative findings",
@@ -4000,12 +4000,14 @@
         "Check all six tangent remap corner identities",
         "Do not certify runtime or whole repository from negative findings"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T10:31:37.221461Z",
-      "next_action": "Archive bounded no-correction review while preserving all reviewed notes unchanged",
-      "blockers": []
+      "next_action": "Retain exact three-artifact review scope and no-correction outcome; not runtime or repository-wide validation",
+      "blockers": [],
+      "completed_at": "2026-11-01T10:32:58.438383Z",
+      "commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9"
     }
   ]
 }

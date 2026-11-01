@@ -6,8 +6,8 @@
     "TASK-2026-0151"
   ],
   "started_at": "2026-11-01T10:28:48Z",
-  "ended_at": "2026-11-01T10:31:37.221461Z",
-  "outcome": "Independent three-note source review found no material correction in exact bounded scope; archive publication pending",
+  "ended_at": "2026-11-01T10:32:58.438383Z",
+  "outcome": "Independent three-note adversarial review archived with exact readback; no material correction requested",
   "reviewed_content_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec",
   "review_sha256": "8ff5840480e54476312fb266cd61d4292eeeec44c6ba74e1c50078fc91264f0a",
   "evidence_added": "Fresh original-source rereading, attempted falsification and exact three-artifact bindings by reviewer outside authorship/final review",
@@ -27,7 +27,13 @@
     "archive_consistency_checks": 519,
     "archive_consistency_failures": 0,
     "normal_and_optimized_agree": true,
-    "archive_scope": "Declared archive consistency only; not new runtime, authenticity or semantic correctness"
+    "archive_scope": "Declared archive consistency only; not new runtime, authenticity or semantic correctness",
+    "selected_blob_hashes_verified": 5,
+    "outside_tree_changes": 0,
+    "local_links_checked": 924,
+    "receipt_queue_tasks_checked": 151,
+    "declared_paths_checked": 205
   },
-  "next_action": "Verify archive and inspect first-party visibility-relevancy production source gate"
+  "next_action": "Read first-party VALORANT visibility and ongoing-effect re-entry mechanism; distinguish deliberate event omission from reliable delivery",
+  "commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9"
 }
