@@ -10,12 +10,16 @@
       "area": "动画制作",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/animation/game-animator.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+      "current_read_path": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "角色表演、制作接入与反馈进入抬臂示意主线；glTF平移重定时详细公式和编码限制明确保留旧精确小节，并提供可选支持入口；重叠职责样本和后台数据有合理排除",
+      "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
+      "supporting_material": "roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够"
     },
     {
       "internal_id": "ROLE-ART2D-001",
@@ -48,8 +52,10 @@
       "current_read_path": "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "reader_body_status": "published",
-      "original_scope_status": "scope_disposition_review_pending",
-      "pending_chapter_tasks": []
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition": "旧状态组合、图层作用及接入检查均由新按钮主线和列表反例承接；岗位枚举、后台元数据与未展开外链明确排除",
+      "scope_disposition_review": "管理档案/审查/界面与完成率-原范围去向核对.md"
     },
     {
       "internal_id": "ROLE-SFX-001",
@@ -301,12 +307,15 @@
       "area": "特效制作",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/vfx/real-time-vfx-artist.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
+      "current_read_path": "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "旧技能信号、时序、接入、场景、优化和玩家证据边界进入同一虚构技能主线；外链仅保留既有主题归属，不制造新书",
+      "scope_disposition_review": "管理档案/审查/特效制作-独立审读.md"
     },
     {
       "internal_id": "KNOW-GFX-GRID-001",
@@ -468,8 +477,13 @@
       "current_read_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "reader_body_status": "published",
-      "original_scope_status": "scope_disposition_review_pending",
-      "pending_chapter_tasks": []
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition": "统计身份、窗口、分母与未知完整承接；末节补回分析去重不授权发奖；旧夹具和执行细节保留历史支持记录，不重新发布或声称复验",
+      "scope_disposition_review": [
+        "管理档案/审查/界面与完成率-原范围去向核对.md",
+        "管理档案/审查/完成率范围补充-独立审读.md"
+      ]
     },
     {
       "internal_id": "SOL-DESIGN-001",
@@ -927,11 +941,11 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 21,
-  "legacy_entries_remaining": 34,
+  "rewritten_reader_books": 23,
+  "legacy_entries_remaining": 32,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
-  "fully_remediated_original_items": 4,
+  "fully_remediated_original_items": 8,
   "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority."
 }
