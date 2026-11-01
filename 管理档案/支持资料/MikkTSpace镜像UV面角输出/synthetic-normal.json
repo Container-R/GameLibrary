@@ -1,0 +1,90 @@
+{
+  "scope": "synthetic consumer only; no native invocation",
+  "mode": "normal",
+  "cases": [
+    {
+      "case": "valid_synthetic",
+      "expected_accept": true,
+      "accepted": true,
+      "matched": true
+    },
+    {
+      "case": "missing_corner",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "bad_identity",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "wrong_sign",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "bad_position",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "wrong_index",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "duplicate_callback",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "boolean_numeric",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "outside_tolerance",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "wrong_replay",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "shortened_oracle",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "oracle_whitespace_mutation",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "duplicate_json_key",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    },
+    {
+      "case": "nonfinite_json",
+      "expected_accept": false,
+      "accepted": false,
+      "matched": true
+    }
+  ]
+}

@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T22:00:00Z",
+      "lease_until": "2026-11-01T22:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T21:06:42Z",
-      "next_action": "Inspect existing PSO first-use source note and current rendering/build reader coverage for a concrete actionable gap; verify current official version context before deciding whether a reader update is justified.",
+      "last_progress_at": "2026-11-01T21:23:57Z",
+      "next_action": "Check whether the existing SQLite commit/BUSY explanation is discoverable from save-migration readers; close a concrete cross-discipline retrieval gap without duplicating technical prose.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6158,6 +6158,38 @@
       "next_action": "Apply access and phase questions to concrete implementations; finite interpreter does not certify their concurrency or performance.",
       "blockers": [],
       "verification_method": "Historical original interview, original finite sequential interpreter and independent repeated checks; no Noita or real concurrency execution."
+    },
+    {
+      "id": "TASK-2026-0164",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Does the original MikkTSpace C implementation produce the six face-corner results predicted by the existing mirrored-UV example?",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "Close a concrete hand-calculation to original-library evidence gap in the existing importer reader without creating another book.",
+      "expected_artifact": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+        "管理档案/审查/MikkTSpace面角观察-读者审查.md",
+        "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+        "管理档案/支持资料/MikkTSpace镜像UV面角输出/fixture.c",
+        "管理档案/支持资料/MikkTSpace镜像UV面角输出/observation.json",
+        "管理档案/支持资料/MikkTSpace镜像UV面角输出/NATIVE-REVIEW.md"
+      ],
+      "acceptance": [
+        "Pre-execution literal oracle and independent source/fixture review",
+        "Corrected oracle binding before native build",
+        "One original-source fixture call per independent copy",
+        "Full face-corner records and wrong-slot counterexamples checked",
+        "Reader/support/return navigation and finite claims reviewed"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T21:23:57Z",
+      "next_action": "Retain this one-input result as limited importer evidence; do not infer exporter, renderer or arbitrary-mesh guarantees.",
+      "blockers": [],
+      "verification_method": "Pinned original C compiled and called in two independently built copies of the same fixed input; no additional geometric coverage or rendering."
     }
   ],
   "execution_policy": {

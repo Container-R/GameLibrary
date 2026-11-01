@@ -1,0 +1,13 @@
+{
+  "native_fixture_invocations": 1,
+  "build_exit": 0,
+  "build_diagnostics_empty": true,
+  "fixture_exit": 0,
+  "fixture_stderr_empty": true,
+  "inputs_unchanged": true,
+  "frozen_oracle_accepted": true,
+  "native_conditions": "One fixed mirrored-UV two-triangle input; consumer modes do not add native invocations.",
+  "observation_sha256": "e44f11bbf5407738f7aabfb8f3d2660acc6392c0012ecc6d2c02edb2aeb35881",
+  "validation_sha256": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19",
+  "scope": "Actual compiled pinned-source callback observation, no rendering, exporter or general mesh guarantee."
+}

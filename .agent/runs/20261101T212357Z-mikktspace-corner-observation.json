@@ -1,0 +1,34 @@
+{
+  "run_id": "20261101T212357Z-mikktspace-corner-observation",
+  "observed_at": "2026-11-01T21:23:57Z",
+  "parent_verified_head": "4f01e0a50b664fa46620e003bc9a8415fefde81e",
+  "task": "TASK-2026-0164",
+  "outcome": "Published existing-reader evidence increment with frozen source inputs, actual numeric output and independent same-input native review.",
+  "reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "reader_sha256": "a7a216e5deb6ca1d1c42ee1b3768999e90c7f4525774b8e2eb7fa0dfc077ae58",
+  "source_commit": "3e895b49d05ea07e4c2133156cfa94369e19e409",
+  "native_scope": {
+    "distinct_inputs": 1,
+    "author_fixture_invocations": 1,
+    "independent_fixture_invocations": 1,
+    "builds": 2,
+    "both_builds_and_fixture_runs_exit_zero": true,
+    "diagnostics_empty": true,
+    "source_inputs_unchanged": true,
+    "observation_sha256": "e44f11bbf5407738f7aabfb8f3d2660acc6392c0012ecc6d2c02edb2aeb35881",
+    "outputs_byte_identical": true,
+    "both_outputs_consumed_in_normal_and_optimized_modes": true,
+    "meaning": "Same six-corner input repeated, not extra geometry scenarios. Callback order observed, not guaranteed. No glTF exporter, engine import, GPU or performance test."
+  },
+  "pre_execution_correction": "Independent synthetic test exposed replaceable-oracle false PASS. Bound raw oracle identity and removed misleading call-count label before any native build; retained review chronology.",
+  "synthetic_consumer_conditions": 14,
+  "counts_note": "Normal/optimized runs repeat the same 14 synthetic conditions and same native output, not extra native tests.",
+  "rejected_scope": "PSO candidate found no concrete gap beyond current reader and support; no extra article created. SQLite COMMIT retry semantics already covered by the growth-economy book; no duplicate migration chapter.",
+  "prior_publication_readback": {
+    "commit": "4f01e0a50b664fa46620e003bc9a8415fefde81e",
+    "all_blobs_matched": 732,
+    "reader_books_tree_matched": 66,
+    "reader_links_tree_matched": 163
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

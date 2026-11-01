@@ -1,0 +1,20 @@
+{
+  "scope": "Published source protocol and numeric observations; no local executable identity or rerun claim. Upstream sources referenced by SOURCE-MANIFEST must be obtained separately.",
+  "files": {
+    "ACCEPTANCE.json": "a2843ed2d1b54815ea1982ee2cd1b2d3f5703d9824c49944397b2261f2dc22ab",
+    "NATIVE-REVIEW.md": "96e655e43d75f89698125ac44a8ba78dc1a8d6660dd9ab57a97d5851ee8b916b",
+    "PRE-REVIEW.md": "0f7edc4e952b6883c86b0bceb4aadad0eb0368a3e72cbe46d14510320eaea143",
+    "PROTOCOL.md": "8ca3ef52313f411cc6d18b658b69e5bf8a1d9d652fddae6cdf6d5447b5772ef5",
+    "README.md": "bb8aaedbfca19382fe9e62a1ab07bf4acd96c7adb7591c7f5eff9b050d7726ed",
+    "SOURCE-MANIFEST.json": "49ecb85282c057d78a4851074aee9f13c808f655bca0aed603cd925288bcd9a8",
+    "expected.json": "bb0b71cc525a8f4438a1ddc464e2a42d16aa83055bfc232be129f6139e3a3532",
+    "fixture.c": "315529ee9079983bebadefa8fe3ee02233fc48c614fbe29b0d3651f15d8e43d5",
+    "observation.json": "e44f11bbf5407738f7aabfb8f3d2660acc6392c0012ecc6d2c02edb2aeb35881",
+    "synthetic-consumer-review.py": "e132bcd4955b538bcee2e964e678f691d8512cac1abc066b54bfd7ca0ca2c4cd",
+    "synthetic-normal.json": "30719ef97070297081540951a83787557821c2d92ea3cd75a62424a01bc7139f",
+    "synthetic-optimized.json": "31650498b8809dc2cab3926f5893e855c2fc43b344e7dd5fcbfe4598c2254d17",
+    "validate.py": "c9210e5017c2ef50b40c9008634d99068d1cb282d7e237425ba9f4818b61dd13",
+    "validation-optimized.json": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19",
+    "validation.json": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19"
+  }
+}
