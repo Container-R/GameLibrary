@@ -2980,7 +2980,7 @@
       "id": "TASK-2026-0115",
       "question": "How does previous-mode coyote input priority change a level designer\u2019s ability-sequence contract?",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Deepen existing level-design article with a concrete first-party action-selection mechanism rather than generic buffering advice",
       "expected_artifact": "Source-gated in-place role subsection and bounded source review",
@@ -2993,11 +2993,36 @@
         "Do not infer remaining aerial resources, trajectories or observed level bypass",
         "Preserve historical reading records and source-only evidence scope"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:27:11.110008Z",
-      "next_action": "Review integrated action-selection contract and its explicit unobserved resource/trajectory limits",
+      "next_action": "Retain conditional input priority; do not infer remaining resources, trajectory or observed level outcome",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:29:40.345628Z",
+      "commit_sha": "42ac7527f78a981647907342d15c6a89b4f3b759"
+    },
+    {
+      "id": "TASK-2026-0116",
+      "question": "When migrating reverse-Z depth effects, which comparison space and renderer-specific NDC reconstruction preserve the intended quantity?",
+      "discipline": "GFX",
+      "status": "reviewing",
+      "priority": 92,
+      "priority_rationale": "Deepen existing rendering role with a concrete shader maintenance decision rather than a generic evidence checklist",
+      "expected_artifact": "Integrated source-backed depth-space decision example and bounded source review",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read historical Godot migration and versioned 4.6 tutorial with renderer-specific conventions",
+        "Distinguish homogeneous clip, divided NDC and sampled depth values",
+        "Distinguish view-axis gap from radial distance or physical water thickness",
+        "No shader compilation, GPU run, precision or performance measurement implied",
+        "Keep prior role attribution and source-reading history intact"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:29:40.345628Z",
+      "next_action": "Integrate independently reviewed reverse-Z comparison-space decision in existing graphics role",
       "blockers": []
     }
   ]

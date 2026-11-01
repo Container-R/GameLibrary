@@ -5,8 +5,8 @@
     "TASK-2026-0115"
   ],
   "started_at": "2026-11-01T06:24:38Z",
-  "ended_at": "2026-11-01T06:27:11.110008Z",
-  "outcome": "source and final editorial review accepted; publication pending",
+  "ended_at": "2026-11-01T06:29:40.345628Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.doublefine.com/news/devin-article-raz-jump"
   ],
@@ -30,9 +30,13 @@
     "archive_fail": 0,
     "archive_scope": "Static consistency of preserved archive; not newly executed experiments or semantic validation",
     "declared_paths_checked": 146,
-    "local_links_checked": 818
+    "local_links_checked": 818,
+    "selected_blob_hashes_verified": 7,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 116
   },
-  "next_action": "Resolve next existing-topic mechanism gap after source gate",
+  "next_action": "Integrate independently reviewed reverse-Z comparison-space decision in existing graphics role",
   "prepublication_correction": "Clarified priority wording to avoid implying current mode always receives an input after previous-mode consumption",
-  "reviewed_article_sha256": "31421f0edc09fa505a05381fa04c83e354479ace36c6dae12ec5b652aa823da0"
+  "reviewed_article_sha256": "31421f0edc09fa505a05381fa04c83e354479ace36c6dae12ec5b652aa823da0",
+  "commit_sha": "42ac7527f78a981647907342d15c6a89b4f3b759"
 }
