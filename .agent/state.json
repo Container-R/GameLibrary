@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T11:36:51.377955Z",
+  "last_real_progress_at": "2026-11-01T11:39:55.653434Z",
   "last_commit_sha": "84c6d129eacd9e4166b3b9f60790dd73730566bd",
-  "last_run_id": "20261101T113400Z-reader-alpha-pcm",
-  "next_action": "Rewrite existing modal-focus and critical-sound accessibility books with independent reader reviews; retain composite chapter backlog; no new topics",
+  "last_run_id": "20261101T114000Z-reader-focus-sound",
+  "next_action": "Complete focus-recovery and critical-sound reader reviews and routes; then continue existing-book remediation without new topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -80,8 +80,8 @@
     "sample_rewrite_accepted": true,
     "restricted_evidence_hold_unchanged": true,
     "sample_review_kind": "Independent reader-perspective review by agents, not human usability testing",
-    "rewritten_reader_books": 13,
-    "legacy_entries_remaining": 42,
+    "rewritten_reader_books": 15,
+    "legacy_entries_remaining": 40,
     "whole_library_rebuild_complete": false,
     "legacy_composite_retained_unchanged": true,
     "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
@@ -98,6 +98,9 @@
     "sixth_batch_published_sha": "960c4748d1680921b2f20694ab609e230bc006e7",
     "sixth_batch_readback_verified": true,
     "seventh_batch_published_sha": "84c6d129eacd9e4166b3b9f60790dd73730566bd",
-    "seventh_batch_readback_verified": true
+    "seventh_batch_readback_verified": true,
+    "counting_note": "Published reader bodies do not mean original composite items are fully remediated; pending chapters and disposition reviews remain tracked separately.",
+    "composite_backlog": "\u7ba1\u7406\u6863\u6848/\u590d\u5408\u65e7\u6587\u5f85\u6574\u7406.json",
+    "original_scope_completion_not_assumed": true
   }
 }

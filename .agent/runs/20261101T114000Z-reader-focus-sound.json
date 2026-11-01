@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T114000Z-reader-focus-sound",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:34:29Z",
+  "ended_at": "2026-11-01T11:42:52.351414+00:00",
+  "outcome": "Focus and critical-sound bodies, routes and accounting distinction accepted; publication pending",
+  "baseline_head": "717be0fdf7ed908290ac37e01f512660e9f8c521",
+  "books": [
+    "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u4ea4\u4e92\u8bbe\u8ba1/\u952e\u76d8\u4e0e\u624b\u67c4\u5bfc\u822a/\u5173\u95ed\u5f39\u7a97\u540e\u5982\u4f55\u6062\u590d\u64cd\u4f5c\u7126\u70b9.md",
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u65e0\u969c\u788d\u8bbe\u8ba1/\u58f0\u97f3\u4fe1\u606f/\u600e\u6837\u8ba9\u5173\u952e\u58f0\u97f3\u4fe1\u606f\u4e0d\u53ea\u4f9d\u8d56\u542c\u89c9.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u4ea4\u4e92\u8bbe\u8ba1/\u952e\u76d8\u4e0e\u624b\u67c4\u5bfc\u822a/\u5173\u95ed\u5f39\u7a97\u540e\u5982\u4f55\u6062\u590d\u64cd\u4f5c\u7126\u70b9.md": "af4bd6939a0e99ff4e27f408f2eba0501672fe3dcc75c67d59ee5a4f6424b94a",
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u65e0\u969c\u788d\u8bbe\u8ba1/\u58f0\u97f3\u4fe1\u606f/\u600e\u6837\u8ba9\u5173\u952e\u58f0\u97f3\u4fe1\u606f\u4e0d\u53ea\u4f9d\u8d56\u542c\u89c9.md": "dfe24faac664b3ef6b18e69d1ffdaa6e66293c9dc353007cf5417685461b22ab"
+  },
+  "rewritten_reader_books": 15,
+  "remaining_legacy_entries": 40,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No new engine, input, audio, model or player test",
+    "New reader body count does not complete original composite scopes",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Complete focus-recovery and critical-sound reader reviews and routes; then continue existing-book remediation without new topics",
+  "accounting_check": {
+    "pending_chapter_tasks": 27,
+    "composite_items": 11,
+    "original_scope_completion_not_assumed": true
+  },
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5f39\u7a97\u7126\u70b9-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5173\u952e\u58f0\u97f3-\u72ec\u7acb\u5ba1\u8bfb.md"
+  ],
+  "additional_edit": "Expanded playtest UX/QA terms and moved non-game memory-study aside, independently reviewed",
+  "main_source_spot_checks": [
+    "Xbox Accessibility Guideline 113 Goal/Overview and focus visibility",
+    "Game Accessibility Guidelines essential sound information and first-time muted play"
+  ],
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5f39\u7a97\u4e0e\u5173\u952e\u58f0\u97f3-\u5bfc\u822a\u5ba1\u8bfb.md"
+}

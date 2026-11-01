@@ -7,12 +7,46 @@
         "运行时资源隔离",
         "同路径请求复用",
         "资源图复制"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-01-01",
+          "topic": "运行时资源隔离",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-01-02",
+          "topic": "同路径请求复用",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-01-03",
+          "topic": "资源图复制",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
       "old_path": "roles/technical-art/technical-artist.md",
       "pending_subtopics": [
         "绑定与技术动画细分检查；优先与既有动画主题合并，避免重复"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-02-01",
+          "topic": "绑定与技术动画细分检查；优先与既有动画主题合并，避免重复",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -20,6 +54,23 @@
       "pending_subtopics": [
         "源几何与引擎表示的区别",
         "稀疏属性替换"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-03-01",
+          "topic": "源几何与引擎表示的区别",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-03-02",
+          "topic": "稀疏属性替换",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -28,6 +79,30 @@
         "Rig生产与求值顺序",
         "FFXV Tuning Set与角色配置",
         "双骨LookAt次序观察"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-04-01",
+          "topic": "Rig生产与求值顺序",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-04-02",
+          "topic": "FFXV Tuning Set与角色配置",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-04-03",
+          "topic": "双骨LookAt次序观察",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -39,12 +114,67 @@
         "物理回调中修改碰撞对象的时机",
         "EVE TiDi过载时钟案例",
         "GGPO表现副作用与回滚；优先合并现有网络主题"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-05-01",
+          "topic": "同一步伤害结算与相杀政策",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-05-02",
+          "topic": "暂停输入的具体引擎处理",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-05-03",
+          "topic": "动画seek/advance方法轨与混合控制",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-05-04",
+          "topic": "物理回调中修改碰撞对象的时机",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-05-05",
+          "topic": "EVE TiDi过载时钟案例",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-05-06",
+          "topic": "GGPO表现副作用与回滚；优先合并现有网络主题",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
       "old_path": "solutions/production/playtest-intervention-evidence.md",
       "pending_subtopics": [
         "细标签合并后的一致率形式推导；优先与数据分析方法主题合并"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-06-01",
+          "topic": "细标签合并后的一致率形式推导；优先与数据分析方法主题合并",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -52,6 +182,23 @@
       "pending_subtopics": [
         "SQLite写入与提交阶段重试",
         "崩溃恢复与交易结果存储的有限实验说明"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-07-01",
+          "topic": "SQLite写入与提交阶段重试",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-07-02",
+          "topic": "崩溃恢复与交易结果存储的有限实验说明",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -59,6 +206,23 @@
       "pending_subtopics": [
         "Ogg Opus预跳过与尾部修剪",
         "包边界、裁剪与循环重入的范围限制"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-08-01",
+          "topic": "Ogg Opus预跳过与尾部修剪",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-08-02",
+          "topic": "包边界、裁剪与循环重入的范围限制",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     },
     {
@@ -66,8 +230,82 @@
       "pending_subtopics": [
         "颜色转换与预乘操作次序的精度细节",
         "ICC转换、有限精度与不同合成工作空间的独立实验边界"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-09-01",
+          "topic": "颜色转换与预乘操作次序的精度细节",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-09-02",
+          "topic": "ICC转换、有限精度与不同合成工作空间的独立实验边界",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
+      ]
+    },
+    {
+      "old_path": "solutions/ux/modal-focus-recovery.md",
+      "pending_subtopics": [
+        "混合UI系统的输入桥接与设备归属",
+        "引擎焦点回调的中间状态和最终状态",
+        "平台覆盖层、多用户与读屏的范围复核"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-10-01",
+          "topic": "混合UI系统的输入桥接与设备归属",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-10-02",
+          "topic": "引擎焦点回调的中间状态和最终状态",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-10-03",
+          "topic": "平台覆盖层、多用户与读屏的范围复核",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
+      ]
+    },
+    {
+      "old_path": "solutions/accessibility/critical-sound-information-contract.md",
+      "pending_subtopics": [
+        "无线电、未知说话者、门锁和音乐提示等旧矩阵分支的去向核对",
+        "多重感官需求与多人信息披露政策的范围复核"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-11-01",
+          "topic": "无线电、未知说话者、门锁和音乐提示等旧矩阵分支的去向核对",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-11-02",
+          "topic": "多重感官需求与多人信息披露政策的范围复核",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
       ]
     }
   ],
-  "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index"
+  "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index",
+  "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item."
 }
