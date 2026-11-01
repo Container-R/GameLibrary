@@ -2681,7 +2681,7 @@
       "id": "TASK-2026-0104",
       "question": "How does glTF tangent handedness relate to a transformed tangent basis, and which finite example separates local data from reflection/normal transformation?",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Close an explicitly excluded tangent-space asset interpretation gap using normative source and exact hand geometry rather than claiming rendered correctness",
       "expected_artifact": "Bounded pinned-source gate and original hand-derived tangent basis explanation if supported",
@@ -2694,11 +2694,36 @@
         "Verify finite hand derivation independently; no renderer or exporter failure inferred",
         "No runtime, model execution, private execution metadata or legacy article edits"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:25:34.695098Z",
-      "next_action": "Publish reviewed local tangent handedness and nonuniform-transform hand derivation",
+      "next_action": "Retain local handedness and finite vertex-basis scope; no rendered acceptance inferred",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:27:13.565510Z",
+      "commit_sha": "9b693fc462f0eec24147b244fdf9aa629d473b87"
+    },
+    {
+      "id": "TASK-2026-0105",
+      "question": "When does an equal-power crossfade preserve sample power, and what changes for correlated or inverted music stems?",
+      "discipline": "MUSIC",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Examine a concrete music transition assumption with primary DSP evidence and exact algebra, separating sample power from loudness and clipping",
+      "expected_artifact": "Bounded primary-source gate and original finite correlation derivation if supported",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect primary DSP documentation or pinned implementation; do not infer latest version",
+        "Check existing audio and music notes for duplicate coverage",
+        "Independently verify finite covariance and gain arithmetic with explicit assumptions",
+        "Separate mean-square power, peaks and perceived loudness; no playback or production guarantee",
+        "No runtime/model generation, private metadata or legacy article rewrites"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:27:13.565510Z",
+      "next_action": "Review original equal-power crossfade source and finite correlation example",
       "blockers": []
     }
   ]
