@@ -190,3 +190,17 @@
 - 玩家理解判断是否被解释或提示改变？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：专家审查或作者演示不是玩家无提示识别的结果。
 
+## 从游戏 UX 设计师出发
+路线 ID：`role-ux`
+
+岗位起点：[游戏 UX 设计师：从交互意图到可操作流程的接收责任](roles/ux/game-ux-designer.md) — `ROLE-UX-001` · `source-backed` · `UX`
+
+- 设计了返回路径，为何仍接不上操作？ → [模态菜单关闭后的焦点恢复：有效目标、嵌套作用域与失效回退](solutions/ux/modal-focus-recovery.md) — `SOL-UX-001` · `source-backed` · `UX`
+  - 关联理由：区分焦点意图、实际状态与真实设备可用性。
+- 格式化成功，是否已证明译文布局可读？ → [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `SOL-LOC-001` · `source-backed` · `LOC`
+  - 关联理由：把消息格式、本地化内容和实际布局接收分别记录。
+- 增加提示后，关键意思是否仍可能丢失？ → [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `SOL-A11Y-001` · `source-backed` · `A11Y`
+  - 关联理由：先明确必要信息和渠道，不把设置存在当作完整可访问性。
+- 作者引导后的顺利操作，能说明什么？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：区分试玩干预、观察范围与玩家研究结论。
+

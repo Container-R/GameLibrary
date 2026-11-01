@@ -121,3 +121,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Killzone 3 行动执行来源](../research/source-notes/killzone3-plan-execution-continuation.md)定位开发者历史章节，避免把原创取消与迟到结果审查表归为原作实现。
 
 [NavigationAgent 路径结束来源](../research/source-notes/navigation-agent-completion.md)区分原始文档、固定比较源码与受控位置更新下的实际状态。
+
+[游戏 UX 岗位来源](../research/source-notes/game-ux-designer-role.md)以英日实践者资料定位交互流程交接，保留未知与历史日期。

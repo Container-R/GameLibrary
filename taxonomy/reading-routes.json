@@ -385,6 +385,34 @@
           "rationale": "专家审查或作者演示不是玩家无提示识别的结果。"
         }
       ]
+    },
+    {
+      "id": "role-ux",
+      "title": "从游戏 UX 设计师出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-UX-001",
+      "entries": [
+        {
+          "document_id": "SOL-UX-001",
+          "question": "设计了返回路径，为何仍接不上操作？",
+          "rationale": "区分焦点意图、实际状态与真实设备可用性。"
+        },
+        {
+          "document_id": "SOL-LOC-001",
+          "question": "格式化成功，是否已证明译文布局可读？",
+          "rationale": "把消息格式、本地化内容和实际布局接收分别记录。"
+        },
+        {
+          "document_id": "SOL-A11Y-001",
+          "question": "增加提示后，关键意思是否仍可能丢失？",
+          "rationale": "先明确必要信息和渠道，不把设置存在当作完整可访问性。"
+        },
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "作者引导后的顺利操作，能说明什么？",
+          "rationale": "区分试玩干预、观察范围与玩家研究结论。"
+        }
+      ]
     }
   ]
 }

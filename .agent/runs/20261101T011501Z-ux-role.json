@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T011501Z-ux-role",
+  "task_ids": [
+    "TASK-2026-0078"
+  ],
+  "started_at": "2026-11-01T01:15:01Z",
+  "ended_at": "2026-11-01T01:27:13.257187Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.ubisoft.com/en-us/company/careers/interns-graduates/articles/min-yee-ux-designer-singapore-toronto",
+    "https://www.bandainamcostudios.com/recruit/career/interview/1161"
+  ],
+  "evidence": "Original English/Japanese practitioner accounts; Ubisoft date unknown, BNS heading2021-11-15/footerasof2023-12 remain distinct",
+  "original_contribution": "Unexecuted setting-confirm-cancel decision flow and six receiver-facing interfaces, not mandatory headcount or uniform profession definition",
+  "native_model_player_experiments": 0,
+  "prepublication_correction": "Mock-ups translated as interface mockups instead of ambiguous models",
+  "limitations": [
+    "No whole-flow runtime, actual input-device, localization-layout or accessibility validation",
+    "No participant/player study or efficacy measurement",
+    "Existing solution evidence does not validate this proposed interaction flow",
+    "Occupation matrix remains incomplete"
+  ],
+  "validation": {
+    "indexed_articles": 37,
+    "unchanged_prior_experiment_files": 2660,
+    "archive_checks_normal": 481,
+    "archive_checks_optimized": 481,
+    "queue_tasks_checked": 78,
+    "declared_paths_checked": 85,
+    "local_links": 599
+  },
+  "next_action": "Source-gate actual character motion versus requested movement and static overlap before selecting any experiment"
+}
