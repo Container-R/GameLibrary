@@ -22,9 +22,10 @@
       "area": "环境设计",
       "shelf": "概念设计",
       "proposed_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/art2d/environment-concept-artist.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+      "current_read_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+      "legacy_retention": "旧文保留为历史资料；读者入口采用重写正文，相关技术细节与来源仍可追溯"
     },
     {
       "internal_id": "ROLE-ART2D-002",
@@ -202,9 +203,11 @@
       "area": "美术管线",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/technical-art/technical-artist.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+      "current_read_path": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+      "legacy_retention": "旧文保留为历史资料；读者入口采用重写正文，相关技术细节与来源仍可追溯",
+      "extraction_scope": "岗位与协作已重写；旧文中细分绑定和导入检查讨论保留，后续按专门主题整理"
     },
     {
       "internal_id": "ROLE-UX-001",
@@ -665,7 +668,7 @@
       "current_read_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
     }
   ],
-  "rewritten_reader_books": 1,
-  "legacy_entries_remaining": 54,
+  "rewritten_reader_books": 3,
+  "legacy_entries_remaining": 52,
   "whole_library_rebuild_complete": false
 }

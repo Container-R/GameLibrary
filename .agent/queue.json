@@ -4026,7 +4026,9 @@
         "README.md",
         "GameLibrary/README.md",
         "\u7ba1\u7406\u6863\u6848/\u56fe\u4e66\u76ee\u5f55.json",
-        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md"
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md",
+        "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4037,10 +4039,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:45:00Z",
+      "lease_until": "2026-11-01T12:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T10:53:00.078478Z",
-      "next_action": "Integrate environment-concept and technical-artist rewrites after independent reader review; continue all retained books without new research topics",
+      "last_progress_at": "2026-11-01T11:00:36.591619Z",
+      "next_action": "Publish two reader-reviewed art role rewrites, then repair existing texture budget and glTF reader chapters; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

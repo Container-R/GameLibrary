@@ -1,0 +1,48 @@
+{
+  "scheduled_at": "2026-11-01T10:50:00Z",
+  "checked_at": "2026-11-01T10:54:59.143699+00:00",
+  "repository": "Container-R/GameLibrary",
+  "observed_content_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+  "status": "quality-regression",
+  "assessment": "Remediation is active. The first navigation and rewritten article meet this scoped independent reader-perspective review; remaining legacy articles are not accepted.",
+  "review_type": "Independent agent reader-perspective review, not human usability testing",
+  "route": [
+    "README.md",
+    "GameLibrary/README.md",
+    "GameLibrary/技术美术/README.md",
+    "GameLibrary/技术美术/环境管线/README.md",
+    "GameLibrary/技术美术/环境管线/资产导入/README.md",
+    "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md"
+  ],
+  "route_result": "Every actual relative link followed and target read remotely at observed_content_sha; title consistency passed.",
+  "reader_comprehension": {
+    "problem": "An asset loads after handoff but its imported dimensions differ.",
+    "mechanism": "Import configuration and identity metadata are production inputs, not disposable cache.",
+    "procedure": "Retain source/configuration/dependencies/tool versions; import into an independent copy without old cache; compare agreed properties and scene references.",
+    "limits": "Fresh directory does not establish cross-machine correctness. Local Godot observation is limited, not a guarantee for every engine or official build. No experiment rerun during review."
+  },
+  "cross_domain_route": "GameLibrary/游戏设计/关卡设计/README.md -> GameLibrary/项目管理与测试/玩家测试/关卡引导/README.md -> solutions/production/playtest-intervention-evidence.md",
+  "cross_domain_result": "Links resolve; legacy destination clearly marked pending rewrite.",
+  "source_checks": [
+    {
+      "url": "https://docs.godotengine.org/en/4.6/tutorials/assets_pipeline/import_process.html",
+      "locator": "Files generated",
+      "result": "Supports keeping adjacent .import settings under version control and treating .godot generated output as cache."
+    },
+    {
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/assets-and-media/import-assets/asset-metadata",
+      "locator": "Asset IDs; Meta files",
+      "result": "Supports .meta containing identity and import settings. No Unity experiment claimed."
+    }
+  ],
+  "remaining_issues": [
+    "Most old articles still require rewriting and migration; new navigation is not full remediation.",
+    "Restricted execution-evidence publication and historical cleanup approval remain unresolved; no sensitive evidence was moved or republished by this audit."
+  ],
+  "next_task": "TASK-2026-0152",
+  "next_action": "Existing single writer continues old-book rewrite batches and updates recovery checkpoint with actual phase-one publication SHA.",
+  "main_execution": "Active; do not duplicate or interrupt",
+  "audit_sync": "Local audit only; writer may publish safe record in normal checkpoint.",
+  "checkpoint_sha": "72b39213d2299f1fe76771dfac4a8b0de1e18f3d",
+  "recovery_checkpoint_followup": "A subsequent remote checkpoint records completed phase-one publication and next rewrite batches; pending-publication snapshot issue resolved."
+}

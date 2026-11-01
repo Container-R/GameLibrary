@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T110000Z-reader-art-roles",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T10:54:00Z",
+  "ended_at": "2026-11-01T11:00:36.591619Z",
+  "outcome": "Two rewritten books and actual reader routes accepted; remote publication pending",
+  "baseline_head": "72b39213d2299f1fe76771dfac4a8b0de1e18f3d",
+  "books": [
+    "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md",
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md": "ef20844406f88af7290e4593f125590b5f6d5cc54f4e4f60e8fa21240c07330d",
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md": "e88e7e243e73bbf21dc31065f5b2442549c868f27187c6ddb1785d271522ba93"
+  },
+  "rewritten_reader_books": 3,
+  "remaining_legacy_entries": 52,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "Existing raw archives and old composite articles retained unchanged",
+    "Whole library remediation remains incomplete",
+    "Restricted evidence hold unchanged"
+  ],
+  "next_action": "Publish two reader-reviewed art role rewrites, then repair existing texture budget and glTF reader chapters; no new topics",
+  "navigation_review": "Two full hierarchy routes, direct root routes and return links followed; missing return links corrected before acceptance",
+  "navigation_review_public_copy": "Inline Markdown examples rendered as descriptive text to avoid false links in archived report"
+}
