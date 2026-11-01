@@ -1,0 +1,67 @@
+{
+  "status": "FAIL",
+  "uuid": "fb2313fd-98a4-44b1-9527-12547d3925af",
+  "source_sha256": {
+    "protocol.md": "7e365c4fe586fb7487cc913842b256faed13ecd122f4ecb5177439e97a19564f",
+    "main.gd": "5bf1cdaaae8b19b08308089adea17238c599b36ad50456de37caa91297fa3660",
+    "project.godot": "d3dea4a936bc72afb5b134bb0802a5516bb037aa5383d1758868c10b1e8ac60b",
+    "run.py": "4b85a697a5b259be4c15eb4835b32b0800f32768e428212619f3b103dc8bf751",
+    "oracle.py": "2416c21420261f13ad78a9ab3c4d0f8cb25b21c7fc8de3cad1989f0fd6b7f0b1",
+    "consumer.py": "48083e36ffe2b12d0db0706df040cbd49b1c19ee221bc623cef780e5170e5336",
+    "test_pure.py": "2f58f25c2ba99db849636634b8d13f6745c9f5afdef35787fa33ed7e41053114",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "processes": [
+    {
+      "name": "version",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--version"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-10-31T23:46:21.788872+00:00",
+      "pid": 6,
+      "returncode": 0,
+      "returned_utc": "2026-10-31T23:46:22.165419+00:00",
+      "stdout_sha256": "1e07780c365549219ffd8e6bd120a818c80424e8295d4ee7451c10d0ed0fa84f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "behavior",
+      "argv": [
+        "/usr/local/bin/godot",
+        "--headless",
+        "--path",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary",
+        "--single-threaded-scene",
+        "--script",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/main.gd"
+      ],
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-10-31T23:46:22.166026+00:00",
+      "pid": 9,
+      "returncode": 0,
+      "returned_utc": "2026-10-31T23:46:22.321871+00:00",
+      "stdout_sha256": "91da3693b606ab925fe59b75cf5128d5c972c54b739668a5e7f02e6cf18a8e10",
+      "stderr_sha256": "a4afc8ff6baf6cfbec7240cc5e18aea9d2db6313dcc42bb3629075f3acd50b70"
+    }
+  ],
+  "original_source_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary",
+  "original_process_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af",
+  "binary_before": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "base_environment": {
+    "PATH": "/usr/bin:/bin",
+    "LANG": "C",
+    "LC_ALL": "C"
+  },
+  "selected_environment": {
+    "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af/environment/HOME",
+    "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af/environment/XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af/environment/XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af/environment/XDG_DATA_HOME",
+    "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/godot-recursive-focus-boundary/evidence/fb2313fd-98a4-44b1-9527-12547d3925af/environment/TMPDIR"
+  },
+  "error": "ValueError('process exit/stderr behavior')"
+}

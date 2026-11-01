@@ -11,7 +11,7 @@ engines: [Unity, Godot]
 versions: ["Unity 6000.0 UI Toolkit 文档", "XAG 113：2026-03-04 更新页面", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC,console]
 updated_at: 2026-10-31
-verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；另有Godot实际焦点身份夹具；未执行Unity或平台认证测试
+verification_method: 官方文档溯源；Python 3.12.14 原创纯状态模型11项测试通过；Godot实际焦点身份夹具及同实例递归焦点资格序列（含独立复跑和保留的初次失败）；未执行Unity、真实输入导航或平台认证测试
 sources:
   - https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/113
   - https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/112
@@ -212,3 +212,51 @@ Godot4.6.3无头实验把实际Button从树中移除后，在相同路径创建�
 本例契约要求保持原业务记录身份；若产品允许按业务键重建同记录控件，应另行解析而非机械拒绝新实例。该实验仅补证Godot的程序化焦点/活树适配行为，不能替代正文Unity集成、视觉可访问性或完整模态导航测试。普通Control对话框不是原生模态Window；naive行为是应用策略错误，不是引擎缺陷。详见配套实验README和原始记录。
 
 [配套原始夹具与证据](../../research/experiments/godot-focus-boundary/README.md)。
+
+## 实际引擎补证：父级禁用、有效资格与应用作用域是三层判断
+
+前面的原生夹具隔离的是“同路径的新对象不是旧 opener”；它没有改变祖先的焦点配置。本节保持**同一组真实 Control 实例**，补证另一种交接问题：打开应用级模态时，把背景父控件的 `focus_behavior_recursive` 设为 DISABLED，是否足以保证所有后代都不能再次取得焦点？
+
+Godot 4.6 的递归行为有继承与显式覆盖之分。继承者可因祖先禁用而得到有效 FOCUS_NONE；显式 ENABLED 的子控件则可以忽略父级限制，再使用自己的局部 `focus_mode`。[Control 4.6](https://docs.godotengine.org/en/4.6/classes/class_control.html#enum-control-focusbehaviorrecursive) 因而“本地是 ALL”“实际允许聚焦”“属于当前应用模态”不能合并成一个布尔值。
+
+### 一条真实的同实例配置序列
+
+[递归焦点实验](../../research/experiments/godot-recursive-focus-boundary/README.md)在无头 Godot 中构造 `Background/Opener` 和同级 `LogicalModal/Default`。Opener 的局部 FOCUS_ALL、实例身份、真实父级关系和树可见状态始终不变；所有回调只记录，不自行修复焦点。观察实际 viewport owner，而非只记录请求名称。
+
+| 调用后的状态 | Background 递归设置 | Opener 递归设置 | Opener 有效模式 | 实际焦点 |
+|---|---|---|---|---|
+| 初次取得焦点 | ENABLED | INHERITED | ALL | Opener |
+| 禁用父级，setter 返回后 | DISABLED | INHERITED | NONE | null |
+| 明确聚焦模态默认项 | DISABLED | INHERITED | NONE | Default |
+| 仅把子项改为 ENABLED，尚未 grab | DISABLED | ENABLED | ALL | Default |
+| 朴素代码再次 grab 背景项 | DISABLED | ENABLED | ALL | Opener |
+| 另一个 deferred 观察点 | DISABLED | ENABLED | ALL | Opener |
+
+最后两行是相对于本例产品规则的**预期错误**：模态仍应拥有交互范围，实际焦点却到了其真实子树之外。引擎执行了文档允许的显式覆盖，不是引擎忽略配置，也不是证明所有项目都应禁止这种覆盖。业务允许背景焦点的界面可以有不同规则。
+
+反例有直接的交接价值：复用子视图的实现者可能为了独立工作设置 ENABLED；上层菜单若只依赖父级禁用，并不了解该覆盖，就没有落实自己的范围约束。只从局部 ALL 改为读取有效模式也还不够——最后一行的有效 ALL 是真的，但应用作用域仍不对。
+
+### 回调中的“现在”不一定是 setter 返回后的状态
+
+父级禁用引发的 `focus_exited` 回调实际读到 owner 为 null，而 Opener 有效模式仍为 ALL；setter 返回后的明确快照才读到 NONE。冻结的判据没有要求回调内必为 ALL 或 NONE，只要求在调用完成后验证目标状态。固定比较源码的传播顺序是先释放焦点，再更新继承缓存；这与观测相符，但不认证本地二进制就是该源码的构建。[Control 传播路径](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/gui/control.cpp#L2337-L2353)
+
+另一个观测陷阱是只缓存 `Viewport.gui_focus_changed`：官方说明该信号通知取得焦点，单纯失焦不触发它。本次增益信号依次是 Opener、Default、Opener，中间 null 状态必须结合实际 owner 和 Control 退出信号读取。[Viewport 信号说明](https://docs.godotengine.org/en/4.6/classes/class_viewport.html#class-viewport-signal-gui-focus-changed) 这里没有证明 null 持续过一个可见帧；deferred 也不等于已渲染一帧。
+
+### 给 UI 适配器增加一个可验收的边界
+
+以下为原创工程建议，不是替代完整模态管理器的单 API 修复：
+
+1. **视图提供者声明覆盖。** 交付可复用控件时，列出哪些后代显式设置递归 ENABLED，以及它们为何需要覆盖祖先；不要让上层只看父节点配置推断全部子树。
+2. **协调器分开记录三个结论。** 保存局部模式、引擎有效资格、当前应用作用域成员关系及各自拒绝原因。恢复时通过前两项，不代表可以跳过第三项。
+3. **生命周期处理标注观察阶段。** 区分通知回调、setter 返回后与延迟观察；不要在退出回调里基于一个尚未稳定的资格值立即反向 grab。需要自动修复时，先定义独立的提交/再验证阶段，另测重入行为。
+4. **QA 核对真实目标。** 同一实例、同一父级禁用值下切换子覆盖，分别检查 setter-only 与后续 grab 的实际 owner；不能把“设置 ENABLED”本身写成“取得焦点”。
+
+这些检查会增加视图配置审查和日志字段，但比把所有焦点丢失都归因于延迟请求更能定位问题。仍必须另外验证键盘、手柄、鼠标、确认动作消费与视觉指示；本例没有发送任何输入事件，不能声称建立了完整导航围栏。
+
+### 失败记录与证据范围
+
+首个作者调用虽输出了完整有限轨迹，却因 stderr 中两条 SCRIPT ERROR 被判为整体 FAIL。一个与源码一致的解释是，被动记录器在终止观察后仍可能尝试读取全树；退出树时可能再发退出信号，但独立 stdout/stderr 流不能证明精确跨流时序。修正仅让记录器在最终快照或明确失败结束后停止记录，保留原场景、20 行判据和严格 stderr 规则；旧失败不改成成功。
+
+修正后的作者调用与独立实际复跑均通过，各包含一次版本查询和一个行为进程；审查者另用独立字面判据检查原始轨迹。合计三次行为尝试，其中一次失败、两次接受，以及三次版本查询，只有一种有限序列。复跑使用同一个已安装二进制，不是独立实现。另有纯合成判据检查、静态归档复核，以及一次预置合成旧 PASS summary 的 `python -O` 启动拒绝：该拒绝清除旧 summary、没有创建证据目录，调用引擎次数为零。这些不能计作更多真实 UI 场景，也没有覆盖实际超时清理。
+
+本节仍适用统一 Godot 身份说明：版本为程序自报，同机复跑不证明官方源码身份。它只增加程序化焦点配置与调用阶段证据，不升级 Unity、原生模态 Window、读屏、可见指示、多用户或平台认证结论。

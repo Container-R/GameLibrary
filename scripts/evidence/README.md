@@ -25,7 +25,7 @@ python3 test_verify.py
 
 ## 当前注册范围与历史结果
 
-本次快照的 `registry.json` 显式登记 412 项一致性检查，涵盖后续追加的证据及 isolation 初始/最终阶段的来源与日志绑定。412 是登记项数，不是夹具数、子进程数或运行测试数；每项只检查其声明字段，完整语义与制品验收仍见对应独立 checker。以下 65/82/95/99/103 等数值是各历史阶段记录，不描述当前全部范围。
+本次快照的 `registry.json` 显式登记 431 项一致性检查，涵盖后续追加的证据及 isolation 初始/最终阶段的来源与日志绑定。431 是登记项数，不是夹具数、子进程数或运行测试数；每项只检查其声明字段，完整语义与制品验收仍见对应独立 checker。以下 65/82/95/99/103 等数值是各历史阶段记录，不描述当前全部范围。
 
 2026-10-31：初次五夹具65项报告保留于 `archive-report-initial65.json`。新增动画夹具的17项显式检查后，当时六夹具82项全部通过，报告保留为 `archive-report-82.json`。新增 ICU 的13项显式检查后，当时七夹具95项全部通过，报告保留为 `archive-report-95.json`。新增 SQLite 两个 source manifest 与两组 metadata/source 比较后，当时八夹具99项报告保留为 `archive-report-99.json`。写者竞争新增两组 source manifest 与两组 source/metadata 比较后，当时九夹具103项全部通过，历史报告为 `archive-report-103.json`。上述增量均为扩展档案检查范围，不是对应数量的新增引擎或数据库行为测试。9项隔离单元测试全部通过，覆盖文件损坏、缺失、路径逃逸、外部符号链接、坏JSON/重复键/非有限数值、manifest漏项、日志缺失/重复/类型差异与空/重复注册项。只向 TemporaryDirectory 写单元测试数据，自动清理。
 
@@ -56,3 +56,5 @@ SQLite 的终止进程有意没有 RESULT_JSON，不纳入现有单载荷 log �
 [isolation.py](isolation.py) provides `prepare_environment(base_env, owned_root)` and `validate_environment(env, owned_root)`. From the repository root, import with `from scripts.evidence.isolation import prepare_environment, validate_environment`. The caller supplies a fresh, exclusively owned absolute temporary root and retains it through all child activity; validation must occur immediately before spawning. Only HOME, XDG_CACHE_HOME, XDG_CONFIG_HOME, XDG_DATA_HOME and TMPDIR are selected. Preserve the returned five-key manifest, not the complete environment. Partial creation cleanup remains caller-owned. This is not a sandbox, complete XDG implementation, race defense or crash-prevention guarantee.
 
 [Protocol, original tests and independent evidence](../../research/audits/runner-isolation/README.md) distinguish initial and final source stages and eight synthetic children from zero engine runs. [Source contract](../../research/source-notes/runner-environment-contract.md) documents limits. Existing runners and fresh-harness registry/adapters are unchanged; callers are **not automatically migrated**.
+
+递归焦点补证新增 19 项档案绑定：两份接受调用各包含前后源码 manifest、四份原始流摘要与解析结果摘要；初次失败只绑定其当时源码和四份原始流，不伪造失败后的来源记录或解析成功。431 是一致性检查数，不是 UI 或引擎测试次数。

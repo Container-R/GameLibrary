@@ -1,0 +1,15 @@
+# Recursive focus eligibility: exact source and evidence receipt
+
+Accessed 2026-10-31. Existing article `solutions/ux/modal-focus-recovery.md` originally inspected at SHA256 `4a1dfa34a87e638ec4c00b76a3fb6bcc82ad606d9947159041141c72f9949b78`; prior model and native identity fixture remain distinct. No prior evidence was relabeled to cover this configuration transition.
+
+| Primary source actually read | Exact location | Supported scope |
+|---|---|---|
+| [Godot Control 4.6](https://docs.godotengine.org/en/4.6/classes/class_control.html) | FocusBehaviorRecursive enum; focus_behavior_recursive/focus_mode; get_focus_mode_with_override; grab_focus | Inherited eligibility versus explicit ENABLED override. Not an automatic application modal scope contract. |
+| [Godot Viewport 4.6](https://docs.godotengine.org/en/4.6/classes/class_viewport.html) | gui_focus_changed signal; gui_get_focus_owner / gui_release_focus | Gain notification differs from all ownership transitions; actual owner may be null. |
+| [Pinned Control source](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/gui/control.cpp#L2285-L2378) | Effective mode and recursive propagation, especially 2337–2353 | Release-before-cache order supports distinguishing callback snapshots from post-setter state. Comparison source only. |
+| [Pinned Viewport acquisition](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/main/viewport.cpp#L2699-L2718) and [release/getter](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/main/viewport.cpp#L3726-L3739) | Owner assignment/clearing around notification | Supports literal callback-owner checks; no arbitrary host callback behavior proved. |
+| [Pinned exit-tree handler](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/gui/control.cpp#L3858-L3863) and [exit notification](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/gui/control.cpp#L3957-L3959) | Teardown may release focus / emit exit signal | Supports a narrowly stated explanation of the failed recorder; separate captured streams do not establish exact cross-stream error timing. |
+
+Protocol `7e365c4f…` was frozen before code and native execution. Historical pre-native validator gaps, first native FAIL and exact one-guard correction are retained separately. Actual runtime process metadata and complete source/raw/parsed hashes belong to the [experiment archive](../experiments/godot-recursive-focus-boundary/README.md); the source comparison does not authenticate the local binary. Original scene and acceptance logic contain no third-party UI asset or copied application implementation.
+
+See the [existing focus solution](../../solutions/ux/modal-focus-recovery.md) for the broader original application strategy. This receipt does not transfer native evidence to that article's unexecuted Unity, physical-input or accessibility acceptance matrix.

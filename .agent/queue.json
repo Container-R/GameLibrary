@@ -1779,11 +1779,15 @@
       "id": "TASK-2026-0071",
       "question": "Does inherited recursive focus disabling establish an application modal scope boundary when a child overrides it?",
       "discipline": "UX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "Existing native UX fixture covers replacement identity, not same-instance inherited eligibility changes; official sources expose a concrete composition boundary",
       "expected_artifact": "Source-gated finite Control focus observation or exact negative, supplementing existing UX article",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/ux/modal-focus-recovery.md",
+        "research/source-notes/godot-recursive-focus-boundary.md",
+        "research/experiments/godot-recursive-focus-boundary/README.md"
+      ],
       "acceptance": [
         "Read exact current article/fixture identities and preserve old evidence applicability",
         "Verify Control recursive focus override and Viewport gain/loss semantics using versioned originals before freezing protocol",
@@ -1794,8 +1798,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T00:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-10-31T23:38:28.473301Z",
-      "next_action": "Complete independent source gate for recursive focus eligibility and passive owner signals, then freeze protocol before code/runtime",
+      "last_progress_at": "2026-10-31T23:58:35.943879Z",
+      "next_action": "Publish independently reviewed same-instance recursive eligibility evidence with failed initial observation retained",
       "blockers": []
     }
   ]

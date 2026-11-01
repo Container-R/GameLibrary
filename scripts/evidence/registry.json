@@ -4209,6 +4209,246 @@
         "sha256"
       ],
       "target": "research/experiments/ogg-opus-frame-boundary/review/final-source/evidence/1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab/parsed.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "recursive-focus/author/source_sha256",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/godot-recursive-focus-boundary/protocol.md",
+        "main.gd": "research/experiments/godot-recursive-focus-boundary/main.gd",
+        "project.godot": "research/experiments/godot-recursive-focus-boundary/project.godot",
+        "run.py": "research/experiments/godot-recursive-focus-boundary/run.py",
+        "oracle.py": "research/experiments/godot-recursive-focus-boundary/oracle.py",
+        "consumer.py": "research/experiments/godot-recursive-focus-boundary/consumer.py",
+        "test_pure.py": "research/experiments/godot-recursive-focus-boundary/test_pure.py",
+        "isolation.py": "research/experiments/godot-recursive-focus-boundary/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "recursive-focus/author/source_after",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/godot-recursive-focus-boundary/protocol.md",
+        "main.gd": "research/experiments/godot-recursive-focus-boundary/main.gd",
+        "project.godot": "research/experiments/godot-recursive-focus-boundary/project.godot",
+        "run.py": "research/experiments/godot-recursive-focus-boundary/run.py",
+        "oracle.py": "research/experiments/godot-recursive-focus-boundary/oracle.py",
+        "consumer.py": "research/experiments/godot-recursive-focus-boundary/consumer.py",
+        "test_pure.py": "research/experiments/godot-recursive-focus-boundary/test_pure.py",
+        "isolation.py": "research/experiments/godot-recursive-focus-boundary/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/author/version/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/author/version/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/author/behavior/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/author/behavior/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/author/parsed",
+      "document": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/evidence/8f698718-c420-4687-965d-4785a3154987/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "recursive-focus/independent/source_sha256",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/protocol.md",
+        "main.gd": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "recursive-focus/independent/source_after",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/protocol.md",
+        "main.gd": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/independent/version/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/independent/version/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/independent/behavior/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/independent/behavior/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/independent/parsed",
+      "document": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/review/native-repeat/evidence/96fca0bb-b725-4072-9549-1192b45bdd49/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "recursive-focus/historical-failed/source_sha256",
+      "document": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "protocol.md": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/protocol.md",
+        "main.gd": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/main.gd",
+        "project.godot": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/project.godot",
+        "run.py": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/run.py",
+        "oracle.py": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/oracle.py",
+        "consumer.py": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/consumer.py",
+        "test_pure.py": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/test_pure.py",
+        "isolation.py": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/historical-failed/version/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/historical-failed/version/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/historical-failed/behavior/stdout",
+      "document": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "recursive-focus/historical-failed/behavior/stderr",
+      "document": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-recursive-focus-boundary/historical-teardown-callback-failure/fb2313fd-98a4-44b1-9527-12547d3925af/behavior.stderr"
     }
   ]
 }
