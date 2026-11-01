@@ -2734,7 +2734,7 @@
       "id": "TASK-2026-0106",
       "question": "Do four recent published source notes preserve their exact source applicability and unexecuted-example assumptions under adversarial rereading?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Strengthen recent mechanism analyses before expanding coverage; seek material contradictions rather than ceremonial edits",
       "expected_artifact": "A bounded exact-snapshot technical review with findings or scoped negative result, and any supported corrections",
@@ -2748,11 +2748,37 @@
         "No whole-repo, archive authentication, runtime or scheduled-supervisor claims",
         "Keep review public-safe and avoid unrelated cosmetic changes"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:34:23.590575Z",
-      "next_action": "Archive accepted bounded four-note review with exact snapshot and overlap disclosure",
+      "next_action": "Retain exact four-note snapshot review and reviewer overlap; no material correction required in checked scope",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:37:15.515106Z",
+      "commit_sha": "13a5264e2f358717a3bfb8f83d1826174068dbe6"
+    },
+    {
+      "id": "TASK-2026-0107",
+      "question": "Can original Rocket League input-buffer slides support a concrete cadence-control case after the Overwatch mechanism source gate was rejected?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Return from mechanism notes and adversarial review to an original commercial engineering case, subject to primary-source access and nonduplication",
+      "expected_artifact": "Bounded original-source case gate, followed by a concrete case analysis only if evidence supports it",
+      "artifact_paths": [],
+      "acceptance": [
+        "Check existing coverage before claiming a new case",
+        "Read legal original talk, slides or other primary material with exact pages/timestamps",
+        "Preserve Overwatch metadata-only rejection; do not infer its mechanism from a later talk citation",
+        "Distinguish author statements from original inference and unexecuted engineering proposals",
+        "Do not claim watched video from metadata/slides or invent production performance",
+        "Reject unsupported case scope and switch safely if primary content unavailable"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:37:15.515106Z",
+      "next_action": "Review original Rocket League 2018 input-buffer production/consumption slides; Overwatch body unavailable in this pass",
       "blockers": []
     }
   ]
