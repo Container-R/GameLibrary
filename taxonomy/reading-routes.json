@@ -347,6 +347,39 @@
           "rationale": "将复现和覆盖事实交给专业审核，避免局部修复隐式批准全部角色。"
         }
       ]
+    },
+    {
+      "id": "role-real-time-vfx-artist",
+      "title": "从实时特效美术出发：游戏信号与情境接收",
+      "kind": "role",
+      "subject_profile_id": "ROLE-VFX-001",
+      "entries": [
+        {
+          "document_id": "ROLE-PROG-001",
+          "question": "谁提供实际状态、触发和判定契约？",
+          "rationale": "效果绘制不是权威规则，表现可见不证明判定正确。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "同一候选及其资产与导入条件能否定位？",
+          "rationale": "技术接收不代替信号含义判断，保留内容身份和工具条件。"
+        },
+        {
+          "document_id": "ROLE-GFX-001",
+          "question": "哪些证据支持升级为系统性渲染问题？",
+          "rationale": "不能只因效果不清楚就认定渲染器有错。"
+        },
+        {
+          "document_id": "SOL-VFX-001",
+          "question": "如何分开实例、模拟和像素成本？",
+          "rationale": "既有 Niagara 预算文档是未执行协议，不是本角色的性能验证。"
+        },
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "玩家理解判断是否被解释或提示改变？",
+          "rationale": "专家审查或作者演示不是玩家无提示识别的结果。"
+        }
+      ]
     }
   ]
 }

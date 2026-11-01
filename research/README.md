@@ -119,3 +119,5 @@ python3 scripts/evidence/test_verify.py
 [制作管理依赖交接](../roles/production/production-manager.md)区分局部完成、接收方可用与里程碑接受，提供明确标注未执行的 A7→C17 工作表；岗位矩阵仍未完整。
 
 [游戏动画师](../roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。
+
+[实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。

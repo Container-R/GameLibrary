@@ -216,7 +216,7 @@
       "lease_until": null,
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T00:04:24.892567Z",
+      "last_progress_at": "2026-11-01T00:36:56.701815Z",
       "next_action": "Continue source-backed role/work-area research guided by current catalog; partial profiles do not complete the whole occupation matrix",
       "blockers": [],
       "partial_artifacts": [
@@ -1869,7 +1869,10 @@
       "priority": 91,
       "priority_rationale": "Whole-role matrix lacks VFX authoring and gameplay-signal responsibility despite separate Niagara cost protocol",
       "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/vfx/real-time-vfx-artist.md",
+        "research/source-notes/real-time-vfx-artist-role.md"
+      ],
       "acceptance": [
         "Read original Japanese BNS project account and English League/VALORANT developer articles",
         "Separate source-described historical visual revisions from current game or self-executed visual evidence",
@@ -1880,8 +1883,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T01:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T00:35:42.312119Z",
-      "next_action": "Integrate already independently reviewed local VFX role and source note, then validate final repository paths",
+      "last_progress_at": "2026-11-01T00:36:56.701815Z",
+      "next_action": "Publish reviewed VFX responsibility interface and unexecuted gameplay-signal handoff",
       "blockers": []
     }
   ]

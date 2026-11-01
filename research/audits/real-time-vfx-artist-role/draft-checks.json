@@ -1,0 +1,22 @@
+{
+  "hashes": {
+    "article.md": "f733913c5763787c9ba7c9f36485be4965434aa47e56a70a2982719be5cfe59a",
+    "source-note.md": "f1a0010ed3d3dc86a94f22e3ed9b48709f942d53e05ea45ccf983dc0dd558fc5",
+    "gate.md": "6078bee6c518c8de2438f092e8db3594195ef0d1cf936c625d33605f4fdcb975"
+  },
+  "relative_links": {
+    "article.md": {
+      "../../solutions/vfx/niagara-performance-budget.md": true,
+      "../technical-art/technical-artist.md": true,
+      "../rendering/graphics-programmer.md": true,
+      "../programming/gameplay-programmer.md": true,
+      "../../solutions/production/playtest-intervention-evidence.md": true,
+      "../../research/source-notes/real-time-vfx-artist-role.md": true
+    },
+    "source-note.md": {
+      "../../roles/vfx/real-time-vfx-artist.md": true
+    }
+  },
+  "new_pair_pending_publication": true,
+  "local_role_id_collision": false
+}

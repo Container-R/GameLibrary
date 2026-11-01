@@ -14,6 +14,7 @@
 - [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `source-backed` · `QA`
 - [图形与渲染程序：从视觉需求到可维护渲染功能的交付责任](roles/rendering/graphics-programmer.md) — `source-backed` · `GFX`
 - [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `source-backed` · `TA`
+- [实时特效美术：把视觉表现交接为有明确含义的游戏信号](roles/vfx/real-time-vfx-artist.md) — `source-backed` · `VFX`
 
 ## 工程解决方案
 

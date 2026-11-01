@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T003638Z-real-time-vfx-artist-role",
+  "task_ids": [
+    "TASK-2026-0074",
+    "TASK-2026-0008"
+  ],
+  "started_at": "2026-11-01T00:36:38Z",
+  "ended_at": "2026-11-01T00:36:56.701815Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.bandainamcostudios.com/recruit/career/interview/1034",
+    "https://www.leagueoflegends.com/en-au/news/dev/clarity-in-league/",
+    "https://www.riotgames.com/en/news/valorant-shaders-and-gameplay-clarity"
+  ],
+  "evidence": "Main and independent Japanese/English primary-source review; historical textual project accounts are not current game/media observations",
+  "new_runtime_or_asset_experiments": 0,
+  "original_contribution": "Unexecuted game-signal handoff distinguishes actual state, authored cue, observed display, contextual review and player understanding",
+  "limitations": [
+    "No engine, GPU, image/video analysis, player study or accessibility test",
+    "No universal thresholds or role permissions",
+    "Niagara cost crosslink remains unexecuted protocol",
+    "Global role matrix remains incomplete"
+  ],
+  "validation": {
+    "indexed_articles": 35,
+    "unchanged_prior_experiment_files": 2407,
+    "queue_tasks_checked": 74,
+    "declared_paths_checked": 75,
+    "archive_checks_normal": 457,
+    "archive_checks_optimized": 457,
+    "local_links": 563
+  },
+  "next_action": "Read exact existing alpha-association evidence and primary color-space sources before selecting any experiment",
+  "run_scope": "Integration of previously independently reviewed draft; source research and review timestamps are retained in their audit records"
+}

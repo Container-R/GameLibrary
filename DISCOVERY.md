@@ -172,3 +172,19 @@
 - 哪些角色组合检查过，哪些仍未知？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：将复现和覆盖事实交给专业审核，避免局部修复隐式批准全部角色。
 
+## 从实时特效美术出发：游戏信号与情境接收
+路线 ID：`role-real-time-vfx-artist`
+
+岗位起点：[实时特效美术：把视觉表现交接为有明确含义的游戏信号](roles/vfx/real-time-vfx-artist.md) — `ROLE-VFX-001` · `source-backed` · `VFX`
+
+- 谁提供实际状态、触发和判定契约？ → [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `ROLE-PROG-001` · `source-backed` · `PROG`
+  - 关联理由：效果绘制不是权威规则，表现可见不证明判定正确。
+- 同一候选及其资产与导入条件能否定位？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：技术接收不代替信号含义判断，保留内容身份和工具条件。
+- 哪些证据支持升级为系统性渲染问题？ → [图形与渲染程序：从视觉需求到可维护渲染功能的交付责任](roles/rendering/graphics-programmer.md) — `ROLE-GFX-001` · `source-backed` · `GFX`
+  - 关联理由：不能只因效果不清楚就认定渲染器有错。
+- 如何分开实例、模拟和像素成本？ → [Niagara 特效预算：分离实例、模拟与像素成本的受控测量流程](solutions/vfx/niagara-performance-budget.md) — `SOL-VFX-001` · `source-backed` · `VFX`
+  - 关联理由：既有 Niagara 预算文档是未执行协议，不是本角色的性能验证。
+- 玩家理解判断是否被解释或提示改变？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：专家审查或作者演示不是玩家无提示识别的结果。
+
