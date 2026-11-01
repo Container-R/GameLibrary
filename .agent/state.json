@@ -13,16 +13,16 @@
     "reader_books_total": 69
   },
   "publication": {
-    "last_verified_head_sha": "49a576a4cae4943a56b5c4b4c59c5bc8c2a163b5",
+    "last_verified_head_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "69 reader books; focused crossfade-correlation explanation on the existing mixing shelf with PCM cross-links.",
-    "latest_verified_content_sha": "49a576a4cae4943a56b5c4b4c59c5bc8c2a163b5",
+    "scope": "69 reader books unchanged; a source-backed in-progress native sensor investigation is checkpointed, not a runtime result.",
+    "latest_verified_content_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
     "reader_books_total": 69,
     "post_baseline_research_books": 14,
-    "counts_basis": "One distinct reviewed mixing reader; four-sample calculations are not native audio or listening tests. Frozen55 remediation remains separate."
+    "counts_basis": "No new reader book or native behavior accepted in this checkpoint."
   },
-  "next_action": "Continue concrete engineering research with original-source gates and reader-focused scope; retain averaging, signal and perception distinctions rather than universal curve prescriptions.",
+  "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -38,7 +38,8 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "source-grounded-reader-research",
   "active_task_ids": [
-    "TASK-2026-0008"
+    "TASK-2026-0008",
+    "TASK-2026-0174"
   ],
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -58,10 +59,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T00:10:00Z",
+    "lease_until": "2026-11-02T00:30:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T232747Z-crossfade-correlation",
+  "last_run_id": "20261101T235530Z-box2d-native-source-gate",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +81,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T23:27:47Z",
-  "last_commit_sha": "49a576a4cae4943a56b5c4b4c59c5bc8c2a163b5",
+  "last_real_progress_at": "2026-11-01T23:55:30Z",
+  "last_commit_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

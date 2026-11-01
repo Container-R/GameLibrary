@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T00:10:00Z",
+      "lease_until": "2026-11-02T00:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T23:27:47Z",
-      "next_action": "Continue concrete engineering research with original-source gates and reader-focused scope; retain averaging, signal and perception distinctions rather than universal curve prescriptions.",
+      "last_progress_at": "2026-11-01T23:55:30Z",
+      "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6443,6 +6443,32 @@
       "next_action": "Check actual overlap, gains, power, peak headroom and listening separately; do not infer automatic correlation compensation or a universal curve prescription.",
       "blockers": [],
       "verification_method": "Original four-sample fixed-gain paper calculations plus independent primary-source and reader review; no audio generation, mixer, renderer or listening execution."
+    },
+    {
+      "id": "TASK-2026-0174",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "In fixed Box2D3.2.0, how are a complete static-sensor crossing and visitor-event flag reflected in step-end begin/end and cached overlap?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 85,
+      "priority_rationale": "Strengthen an existing sensor reader with a tightly bounded native observation rather than another generic CCD explanation.",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+      "artifact_paths": [
+        "管理档案/研究记录/在途/Box2D静止传感区穿越验证.md"
+      ],
+      "acceptance": [
+        "Fixed original source and independent pre-execution oracle review",
+        "Actual getter-bound two-world six-step protocol",
+        "Separate source-identified build and execution with retained failures",
+        "Independent raw observation and reader review before claiming runtime findings"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-02T00:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T23:55:30Z",
+      "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
+      "blockers": [],
+      "verification_method": "Source and pure mock checks complete; first build stopped at diagnostic gate; no native observation yet."
     }
   ],
   "execution_policy": {
