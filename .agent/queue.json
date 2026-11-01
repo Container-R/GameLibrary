@@ -2253,7 +2253,7 @@
       "id": "TASK-2026-0088",
       "question": "When source text is unchanged but use changes, who reassesses locale acceptance and the receiving build?",
       "discipline": "LOC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 85,
       "priority_rationale": "Close a specific localization coordination gap distinct from existing formatter, narrative and UX evidence",
       "expected_artifact": "roles/localization/localization-coordinator.md and source note",
@@ -2267,11 +2267,35 @@
         "No claim of actual stale-translation defect or validated workflow",
         "Separate locale reviewed-unchanged from never-reviewed and delivery from actual build consumption"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T03:55:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T03:20:59.798943Z",
-      "next_action": "Publish reviewed localization context-reassessment responsibility and original unexecuted worksheet",
+      "next_action": "Retain historical source and original unexecuted handoff scope; real locale review and receiving-build validation remain separate",
+      "blockers": [],
+      "completed_at": "2026-11-01T03:23:17.946585Z",
+      "commit_sha": "945d30cc4f60bf2b2bf7827ce66691d6eaac921d"
+    },
+    {
+      "id": "TASK-2026-0089",
+      "question": "Can an all-zero offline stem ending change the gain of an unchanged stem through input normalization?",
+      "discipline": "SFX",
+      "status": "researching",
+      "priority": 88,
+      "priority_rationale": "Assess actual offline mixer gain/topology boundary distinct from fake scheduling and PCM frame-count evidence",
+      "expected_artifact": "Source/EOF gate first; finite original offline mix only if exact oracle and capability justified",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read pinned amix options and active-input/EOF source before deciding native scope",
+        "Preserve binary/library provenance and no inherited middleware results",
+        "Freeze finite format/length/boundary oracle before implementation or execution",
+        "Stop on source/capability failure; no listening or general normalize-off recommendation"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T04:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T03:23:17.946585Z",
+      "next_action": "Read pinned offline mixer sources and define or reject finite silent-stem lifetime experiment",
       "blockers": []
     }
   ]
