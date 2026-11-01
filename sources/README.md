@@ -181,3 +181,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Riot 分歧诊断与干预身份](../research/source-notes/riot-divergence-diagnostic-interventions.md)采用 2018 年原始技术文章的构造阈值定位案例，区分历史成功与一般二分条件。
 
 [Box2D 传感器步末与扫掠](../research/source-notes/box2d-sensor-step-and-sweep.md)定位 v3.1.1 与固定 main 快照的文档和实现，避免把旧版限制传播成当前普遍结论。
+
+[Detour 同步路径状态与容量](../research/source-notes/detour-findpath-status-and-capacity.md)定位官方 v1.6.0 固定状态位、搜索、父链输出与节点池实现；不借既有引擎导航实验作验证。

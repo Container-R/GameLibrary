@@ -3369,25 +3369,27 @@
     },
     {
       "id": "TASK-2026-0129",
-      "question": "Can a successful navigation path-query status still require a partial-route receiving decision?",
-      "discipline": "ENGINE",
-      "status": "researching",
+      "question": "How should a Detour caller distinguish found-end search from truncated corridor output and node-pool exhaustion?",
+      "discipline": "AI",
+      "status": "reviewing",
       "priority": 92,
-      "priority_rationale": "Check original versioned navigation query semantics for a concrete unaddressed caller contract",
-      "expected_artifact": "A finite source gate and caller-contract analysis only if not duplicated in existing coverage",
-      "artifact_paths": [],
+      "priority_rationale": "Output truncation can omit the destination without PARTIAL_RESULT; caller decisions must separate two resource limits",
+      "expected_artifact": "New source-only fixed-version note with original caller policy and explicit preconditions",
+      "artifact_paths": [
+        "research/source-notes/detour-findpath-status-and-capacity.md"
+      ],
       "acceptance": [
-        "Inspect actual existing target and record exact identity",
-        "Use original source or specification with version scope",
-        "Identify a concrete counterexample or receiving decision not already covered",
-        "Reject generic or duplicative expansion and preserve source-access limits",
-        "No participant data, private runtime artifacts or held publication content"
+        "Trace complete synchronous findPath and getPathToNode in fixed original version",
+        "Preserve SUCCESS detail-bit coexistence and any-bit mask semantics",
+        "Distinguish output-capacity retry from search-node resource handling",
+        "Keep valid initialization, input/reference pairing and lifecycle preconditions",
+        "Do not inherit runtime evidence or edit existing navigation artifacts"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:25:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:43:29.917705Z",
-      "next_action": "Check existing-depth-selection-17 against current navigation coverage and pinned original query status/control flow",
+      "last_progress_at": "2026-11-01T07:47:24.067670Z",
+      "next_action": "Review complete new note, index links and exact fixed-source status/capacity scope",
       "blockers": []
     }
   ]

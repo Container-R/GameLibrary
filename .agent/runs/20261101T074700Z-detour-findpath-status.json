@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T074700Z-detour-findpath-status",
+  "task_ids": [
+    "TASK-2026-0129"
+  ],
+  "started_at": "2026-11-01T07:44:20Z",
+  "ended_at": "2026-11-01T07:48:01.027607Z",
+  "outcome": "independently source-reviewed and editorially accepted; ready for publication",
+  "sources": [
+    "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Source/DetourNavMeshQuery.cpp#L973-L1204",
+    "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Include/DetourStatus.h#L22-L63"
+  ],
+  "evidence": "Main and independent reviewer read fixed original synchronous query, output extraction, status helpers, node allocation and API preconditions; tag resolution checked",
+  "original_contribution": "Unexecuted three-node/two-slot output trace and conservative receiving policy separate output truncation from search-resource limits",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No compiler, query, navmesh or actual returned route execution",
+    "No sliced query, Crowd, engine-fork or straight-path guarantee",
+    "No optimality, physical traversal or business-arrival certification",
+    "Valid capacity and input/reference pairing remain caller preconditions",
+    "Prior navigation artifacts remain unchanged and supply no execution evidence for this note"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 129,
+    "static_archive_checks_normal": 519,
+    "static_archive_checks_optimized": 519,
+    "static_archive_failures": 0,
+    "declared_paths_checked": 173
+  },
+  "next_action": "Continue bounded original-source research after verifying publication"
+}
