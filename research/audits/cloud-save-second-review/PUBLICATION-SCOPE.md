@@ -1,5 +1,0 @@
-# Review reproducibility and publication scope
-
-The useful-negative review, exact prior-source hashes, independent read-only checker and raw review outputs are archived. Disposable model-copy files are not duplicated: they match the existing two model test files in research/experiments/cloud-save-resume byte for byte. The reviewer ran each directly in a disposable copy (20 tests and 1 counterexample, two Python processes). No new filesystem-replacement or Steam execution occurred. The archive reader takes research/experiments/filesystem-save-publication as its sole path argument. It checks recorded consistency, not historical execution authenticity or arbitrary malformed data.
-
-Main independently read the checker and review and reran that read-only checker in normal and optimized Python; those outputs are separately named main-archive-normal/optimized. These are static rechecks, not new native scenarios or extra model tests. No changes to prior experiment evidence or claims are requested.

@@ -1,1 +1,0 @@
-Main integrator reran only the frozen independent Python archive checker on relocated author and repeat files. Two static checks, no new engine or pure-suite execution. Neither portable record consistency nor the binary self-report establishes official build provenance.

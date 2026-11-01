@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/tmp/broker-freshness-2jg2smov/run.py", line 133, in <module>
-    main()
-  File "/tmp/broker-freshness-2jg2smov/run.py", line 53, in main
-    check(engine.is_file(), 'engine does not exist')
-  File "/tmp/broker-freshness-2jg2smov/run.py", line 28, in check
-    raise RuntimeError(message)
-RuntimeError: engine does not exist

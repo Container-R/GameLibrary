@@ -1,1 +1,0 @@
-["/usr/bin/ffmpeg", "-hide_banner", "-nostdin", "-y", "-i", "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/fixture/results/source.wav", "-af", "atrim=start_sample=480:end_sample=94139,asetpts=PTS-STARTPTS", "-c:a", "pcm_s16le", "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/music-loop-frame-contract/fixture/results/correct.wav"]

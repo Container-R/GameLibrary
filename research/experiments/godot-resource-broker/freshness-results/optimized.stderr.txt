@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/tmp/broker-freshness-yazuyyni/run.py", line 133, in <module>
-    main()
-  File "/tmp/broker-freshness-yazuyyni/run.py", line 49, in main
-    check(not sys.flags.optimize, 'Refusing optimized mode; stale success already removed')
-  File "/tmp/broker-freshness-yazuyyni/run.py", line 28, in check
-    raise RuntimeError(message)
-RuntimeError: Refusing optimized mode; stale success already removed

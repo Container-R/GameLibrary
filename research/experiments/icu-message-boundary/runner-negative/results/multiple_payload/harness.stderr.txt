@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/multiple_payload/run.py", line 25, in <module>
-    check(len(lines)==1,'payload count');data=json.loads(lines[0]);(OUT/(case+'.json')).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/multiple_payload/run.py", line 7, in check
-    if not ok:raise RuntimeError(msg)
-              ^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: payload count

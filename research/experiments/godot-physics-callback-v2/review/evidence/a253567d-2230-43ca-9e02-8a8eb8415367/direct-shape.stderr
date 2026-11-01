@@ -1,4 +1,0 @@
-ERROR: Can't change this state while flushing queries. Use call_deferred() or set_deferred() to change monitoring state instead.
-   at: area_set_shape_disabled (modules/godot_physics_2d/godot_physics_server_2d.cpp:355)
-   GDScript backtrace (most recent call first):
-       [0] entered (res://main.gd:30)

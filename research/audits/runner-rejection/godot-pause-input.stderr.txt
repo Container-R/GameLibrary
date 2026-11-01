@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/tmp/runner-rejection-i78g_ihn/run.py", line 14, in <module>
-    raise RuntimeError('Assertions required; do not run with -O')
-RuntimeError: Assertions required; do not run with -O

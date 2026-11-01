@@ -8,9 +8,7 @@
   "skills_read": [
     "gamelibrary-research/SKILL.md",
     "references/07-execution-and-recovery.md",
-    "references/08-supervision-and-stagnation.md",
-    "sitara-persona/SKILL.md",
-    "sitara-persona/references/01-04"
+    "references/08-supervision-and-stagnation.md"
   ],
   "repository": {
     "default_branch": "master",
@@ -52,14 +50,14 @@
     "resolved_interruption": "RPC tree-upload wrapper interrupted 00:31 UTC after approximately 00:28 start; no commit/ref attempted before recovery; bounded per-group receipts resumed and published 00:35. Run retains recovery record."
   },
   "static_validation": {
-    "local_snapshot": "gamelibrary-publish-vfx-role",
     "remote_blobs": 3132,
     "remote_tree_truncated": false,
     "all_remote_blob_hashes_match": true,
     "archive_checks_passed": 457,
     "archive_checks_failed": 0,
     "indexed_articles_reported_by_matched_run": 35,
-    "scope": "Read-only declared archive consistency; no native rerun, binary authentication or semantic proof."
+    "scope": "Read-only declared archive consistency; no native rerun, binary authentication or semantic proof.",
+    "snapshot_basis": "Repository tree at the historical repository.head recorded above"
   },
   "quality_spot_check": {
     "article": "roles/vfx/real-time-vfx-artist.md",
@@ -76,7 +74,6 @@
     "limits": "No current game behavior, visual review, player study, accessibility test or performance experiment undertaken by auditor."
   },
   "execution": {
-    "main_agent": "/root/build_gamelibrary_research",
     "live_status": "running",
     "active_task_id": "TASK-2026-0075",
     "owner": "gamelibrary-main-integrator",
@@ -84,9 +81,21 @@
     "next_action": "Review exact prior alpha evidence and source-only color-space gate; reject duplication or unsupported color-management claims before new experiment.",
     "lock_model": "No .agent/locks directory in exact tree; owner/lease maintained in queue, corroborated by live worker."
   },
-  "provenance_caveat": "Godot evidence remains tied to archived local binary SHA256 f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3; official release/source correspondence unverified. Same binary does not make unrelated fixtures interchangeable.",
+  "provenance_caveat": "Godot evidence remains tied to the recorded historical installation; the installation fingerprint is omitted from this public derivative. Official release/source correspondence remains unverified. Use of the same installation does not make unrelated fixtures interchangeable.",
   "intervention": "Keep main research active; independent source and archive audit only. No takeover, duplicate research, remote write, native rerun or schedule creation. Hand audit to single writer at normal checkpoint.",
   "needs_user_action": false,
   "audit_sync_status": "archived_by_single_writer",
-  "archived_at": "2026-11-01T01:00:20.212095Z"
+  "archived_at": "2026-11-01T01:00:20.212095Z",
+  "public_record_transformation": {
+    "kind": "public derivative of a historical supervisory record",
+    "original_record_at_commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+    "omitted_categories": [
+      "installation fingerprint",
+      "private assistant configuration references",
+      "local execution labels"
+    ],
+    "technical_checks_counts_failures_and_limits_preserved": true,
+    "audit_or_runtime_rerun": false,
+    "history_rewritten": false
+  }
 }

@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/wrong_output/run.py", line 34, in <module>
-    check([x.get('output') for x in data['format_calls']]==expected[case],'actual output')
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/wrong_output/run.py", line 7, in check
-    if not ok:raise RuntimeError(msg)
-              ^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: actual output

@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/filesystem-independent/final/experiment.py", line 12, in <module>
-    raise RuntimeError('Run without -O: this experiment requires assertions and their checks')
-RuntimeError: Run without -O: this experiment requires assertions and their checks

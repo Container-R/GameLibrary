@@ -1,5 +1,0 @@
-# Final staged integration acceptance
-
-2026-10-31 20:11 UTC. Read staged gamelibrary-publish-shader/solutions/rendering/matrix-major-interface-contract.md SHA256 **94f58229014b70f246d3c70e80d11a29274524cc6355e680b8a5b3b3a2b90b3c**, not the preceding author hash. Compared complete staged text with accepted author draft: only additions are the14-mutation/dataflow audit paragraph and narrowed PATH/finite-directory tool availability statement.
-
-Accepted. Added dataflow and14 synthetic rejects match semantic_audit.py and raw output: seven mutation categories per archived assembly, zero native reruns, no claim mutants are valid compiled modules or shader executions. Exact-identifier scope and incomplete general SPIR-V validation remain explicit. Narrower tool-search statement avoids environment-wide absence proof. All relative article links resolve in staged tree, including SEMANTIC-AUDIT.md. Frozen runtime untouched; no reviewer native rerun.209archive checks remain integrator evidence rather than this editorial review's independent run. No material issue found.

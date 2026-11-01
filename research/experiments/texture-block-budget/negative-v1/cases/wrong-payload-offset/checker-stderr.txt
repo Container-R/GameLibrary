@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/wrong-payload-offset/check_raw.py", line 33, in <module>
-    assert [l['payload_offset'] for l in item['levels']]==[sum(sizes[:i]) for i in range(len(sizes))]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

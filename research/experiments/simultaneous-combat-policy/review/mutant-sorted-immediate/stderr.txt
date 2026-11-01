@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/simultaneous-combat-policy/mutant-sorted-immediate/run.py", line 74, in <module>
-    main()
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/simultaneous-combat-policy/mutant-sorted-immediate/run.py", line 39, in main
-    require(result == expected, f'simultaneous oracle mismatch: {case["name"]}')
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/simultaneous-combat-policy/mutant-sorted-immediate/run.py", line 20, in require
-    raise RuntimeError(message)
-RuntimeError: simultaneous oracle mismatch: both-alive

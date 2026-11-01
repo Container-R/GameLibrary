@@ -1,3 +1,0 @@
-# Final pre-run delta acceptance
-
-2026-11-01 02:37 UTC. Accepted runner `a1364f544309e0e45a0f70c375092eda4976d271b8371595da6ca2e1fcb03065`. Exact two-line refinement inspected against preserved historical-pre-run-review/run.py: docstring now accurately scopes standard-library processing, and each negative document data URI is synchronized to its supplied mutated bytes. The five negative probes remain direct decoder calls, not extra serialized imports. Reader f4236fac and protocol de8c9bd7 are unchanged; no semantic case, expected result or tolerance added. Prior CODE-REVIEW.md remains historical, with its URI mismatch note superseded by this change. No imports, compile, decoder or runner execution performed by reviewer. Main retains execution authority.

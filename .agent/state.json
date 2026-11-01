@@ -11,14 +11,14 @@
     "accounted_for_original_items": 55
   },
   "publication": {
-    "last_verified_head_sha": "be9998d71bbca82e9159a415d8f7e0b7a36c1169",
-    "status": "authorized-remediation-in-progress",
-    "authorization": "Public-record sanitization and replacement approved; preserve technical content, sources and Git history",
+    "last_verified_head_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+    "status": "local-root-consolidation-preview-not-published",
+    "authorization": "Reader-standard-consistent, recoverable reorganization authorized; no private disclosure, force push or irreversible deletion; this preview is not published",
     "scope": "All 55 reader articles are published; historical-record sanitization and repository-root consolidation remain in progress.",
     "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-    "latest_verified_content_sha": "be9998d71bbca82e9159a415d8f7e0b7a36c1169"
+    "latest_verified_content_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476"
   },
-  "next_action": "Consolidate remaining research and scripts into reviewed source/support derivatives, safe technical indexes and explicit historical archive references; preserve reader support and historical failures.",
+  "next_action": "Verify the published root guide and required support paths; complete independent reader review before resuming the paused research backlog.",
   "audit": {
     "overall_reader_rebuild_status": "quality-regression",
     "meaning": "Existing library remediation is incomplete; accepted new reader bodies have individual review records",
@@ -43,14 +43,19 @@
     "reading_routes": "管理档案/分类/reading-routes.json",
     "queue_validator": "管理档案/工具/queue/validate_queue.py",
     "reader_validator": "管理档案/工具/taxonomy/check_taxonomy.py",
-    "route_generator": "管理档案/工具/navigation/build_routes.py"
+    "route_generator": "管理档案/工具/navigation/build_routes.py",
+    "research_records": "管理档案/研究记录/README.md",
+    "historical_research_index": "管理档案/研究记录/历史单元索引.json",
+    "archive_relation_checker": "管理档案/工具/evidence/verify_relocated.py",
+    "shelf_checker": "管理档案/工具/library/check_reader_routes.py",
+    "model_selection": "管理档案/工具/models/run_model_tests.py"
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T17:30:00Z",
+    "lease_until": "2026-11-01T17:45:00Z",
     "scope": "Single writer for authorized reader remediation and public-record sanitization"
   },
-  "last_run_id": "20261101T163204Z-source-card-consolidation",
+  "last_run_id": "20261101T170301Z-legacy-reader-retirement",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -69,8 +74,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T16:32:04Z",
-  "last_commit_sha": "be9998d71bbca82e9159a415d8f7e0b7a36c1169",
+  "last_real_progress_at": "2026-11-01T17:03:01Z",
+  "last_commit_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -78,7 +83,19 @@
       "operational recovery internals"
     ],
     "history_rewritten": false,
-    "technical_articles_changed": false,
-    "historical_records_sanitized": "Eleven selected run summaries after this batch; remaining execution archives not yet fully sanitized"
+    "historical_records_sanitized": "Eleven selected run summaries, selected source explanations and one supervisory record explicitly transformed. Original execution archives remain in fixed Git history, not duplicated into the current reader tree; this is not historical erasure.",
+    "technical_claims_changed_in_this_revision": false
+  },
+  "root_consolidation": {
+    "status": "awaiting_remote_readback_and_independent_reader_review",
+    "basis_commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+    "current_layout_intent": [
+      "README.md",
+      "GameLibrary",
+      "管理档案",
+      "necessary hidden project files"
+    ],
+    "history_rewritten": false,
+    "old_experiments_executed": false
   }
 }

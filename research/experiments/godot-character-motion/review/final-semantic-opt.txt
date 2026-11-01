@@ -1,8 +1,0 @@
-control ACCEPTED
-test_only REJECTED actual movement
-resource_as_node REJECTED collision identity local_shape_node_id
-early_move_frame REJECTED move frame
-endpoint_occupied REJECTED query hits length
-travel_not_transform REJECTED numeric mismatch
-open_incomplete REJECTED numeric mismatch
-bool_query_index REJECTED query hits type

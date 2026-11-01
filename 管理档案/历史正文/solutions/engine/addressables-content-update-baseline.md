@@ -130,4 +130,4 @@ sources:
 
 - [构建工程师](../../../../GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md)：把包内程序与外部内容组合交付；本文补充基线身份这一个具体门禁。
 - [干净检出后的资产导入](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md)：同样重视输入意图，但其 Godot 导入与资源候选实验**不能充当本文 Unity 流程的运行证据**。
-- [来源核对记录](../../../../research/source-notes/addressables-content-update-baseline.md)：官方文档的版本、章节、分日补读记录和证据边界。
+- [来源核对记录](../../../研究记录/source-notes/addressables-content-update-baseline.md)：官方文档的版本、章节、分日补读记录和证据边界。

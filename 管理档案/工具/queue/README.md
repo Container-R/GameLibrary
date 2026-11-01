@@ -18,4 +18,4 @@ python3 -B -O 管理档案/工具/queue/adversarial.py
 
 校验任务ID、学科引用与可选artifact_paths；published声明路径必须存在，目录存在不验证内容，planned缺失仍允许，额外状态和旧expected_artifact自由描述兼容。不是完整schema或并发文件系统安全边界。通过不认证证据、发布或根整改完成。
 
-历史[queue审查](../../../research/audits/queue-contract-guard/README.md)及其原源/夹具按当时版本保留；不要用新工具替换旧指纹，或据旧PASS认领当前队列通过。
+历史[queue审查](https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/queue-contract-guard/README.md)及其原源/夹具按当时版本保留；不要用新工具替换旧指纹，或据旧PASS认领当前队列通过。

@@ -1,9 +1,0 @@
-# Independent VFX-role source review
-
-2026-11-01 00:15 UTC. Gate read; all three original pages independently reopened. This is source acceptance pending final role draft, not publication/runtime acceptance.
-
-- [BNS effect-artist account](https://www.bandainamcostudios.com/recruit/career/interview/1034): displayed date2021-08-24; selected Tales of Arise passage28–34 signed小島武史 and introduction19 support role/shader/programming collaboration. Frame-level authoring is not a universal one-frame tolerance or measured clarity result. Do not borrow the separate Tekken passage's60FPS as Tales of Arise configuration.
-- [Clarity in League](https://www.leagueoflegends.com/en-au/news/dev/clarity-in-league/): date2021-03-12, authorbananaband1t. Hierarchy goals14–21, abilities47–54 and visible Jhin development text87–89 support a scoped historical cue revision. This is textual evidence, not independently viewed footage or measured recognition/reaction. Present game behavior and other carousel slides were not verified.
-- [VALORANT shader account](https://www.riotgames.com/en/news/valorant-shaders-and-gameplay-clarity): date2020-06-30; Brandon “mochi” Wang self-identifies as Content Support software engineer10. VFX226–233 and scaling247–250 describe project-specific systemic rendering support and gameplay-essential versus cosmetic smoke features; testing255–262 is the developer's account, not our experiment. Do not turn it into universal staffing, current implementation, fairness or comprehension proof.
-
-No media visually analyzed, source code reproduced, native execution or player study. Proposed boundary is useful: actual gameplay state, authored cue, contextual visual inspection and measured player understanding are distinct evidence stages. Final draft must keep the original hypothetical handoff explicitly unexecuted and avoid repeating Niagara budget/TA import protocols.

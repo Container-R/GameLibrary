@@ -308,14 +308,27 @@
       "next_action": "Resume only after reader-baseline migration and editorial acceptance; do not add new topics meanwhile",
       "blockers": [],
       "partial_artifacts": [
-        "research/audits/initial-coverage-and-taxonomy.md",
+        "管理档案/研究记录/历史单元索引.json",
         "管理档案/分类/README.md",
-        "管理档案/工具/taxonomy/check_taxonomy.py",
-        "research/audits/queue-contract-guard/coverage-gate.md"
+        "管理档案/工具/taxonomy/check_taxonomy.py"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",
-      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence"
+      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/initial-coverage-and-taxonomy.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/initial-coverage-and-taxonomy.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "64569a06417459569eecf468c3aa303e444958127597e47043890167b8dcd92b"
+        },
+        {
+          "path": "research/audits/queue-contract-guard/coverage-gate.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/queue-contract-guard/coverage-gate.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "981748d826a26bb4c81fcd8166e6d1b6b54c46fec64a9c5c70fb41a45c292df8"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0010",
@@ -449,7 +462,7 @@
       "status": "published",
       "priority": 97,
       "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
-      "expected_artifact": "research/experiments/deep-model-qa/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "独立来源/模型边界核查",
         "可复现测试和明确假设",
@@ -463,7 +476,15 @@
       "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
       "blockers": [],
       "completed_at": "2026-10-31T13:34:12.035660Z",
-      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
+      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/deep-model-qa/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/deep-model-qa/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "c3d67195b38242d7e59a77bf3ea22d400c3d0fac13426a1d3a4d7596ac6652e4"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0015",
@@ -472,7 +493,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "现有高价值合同的失败路径深化，不新增泛化文章",
-      "expected_artifact": "research/experiments/audio-lifecycle/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "实际调用日志而非集合掩盖重复",
         "START_FAILED无STOPPED路径明确结束",
@@ -489,7 +510,15 @@
       "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
       "blockers": [],
       "completed_at": "2026-10-31T13:46:58.412770Z",
-      "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
+      "commit_sha": "54ac14885833314527986edb8071759345e7fc50",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/audio-lifecycle/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/audio-lifecycle/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4c62bd564f35898f78e807f37ce66910b742249e17d3bd8f6593cedac5156758"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0016",
@@ -498,7 +527,7 @@
       "status": "published",
       "priority": 98,
       "priority_rationale": "深化既有固定步文章真实引擎证据，不增加文章数量",
-      "expected_artifact": "research/experiments/godot-fixed-step/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "实际已安装引擎和版本记录",
         "人工delta与实时上限分开",
@@ -515,7 +544,15 @@
       "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
       "blockers": [],
       "completed_at": "2026-10-31T13:46:58.412770Z",
-      "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
+      "commit_sha": "54ac14885833314527986edb8071759345e7fc50",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/godot-fixed-step/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-fixed-step/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "29e34b8673047c3d0b2ed3b96499b4b35e2000ace23b86b556fb567248cfa38a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0017",
@@ -524,7 +561,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "既有固定回调契约的实际输入/暂停边界深化",
-      "expected_artifact": "research/experiments/godot-pause-input/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "明确合成API而非设备输入",
         "实际引擎反例及修正日志",
@@ -541,7 +578,15 @@
       "next_action": "保存有限证据与未测前提，随运行时或实现变更重验",
       "blockers": [],
       "completed_at": "2026-10-31T13:54:58.529931Z",
-      "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08"
+      "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/godot-pause-input/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-pause-input/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5ccfae5541decdab58998e34e5ad361fd2eed8decfbca937fa4ae1b119d8005a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0018",
@@ -550,7 +595,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "将已发表存档模型限制落实为真实文件系统反例，不宣称Steam或持久性保证",
-      "expected_artifact": "research/experiments/filesystem-save-publication/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "确定性线程屏障而非sleep",
         "实际文件内容与路径替换观测",
@@ -567,7 +612,15 @@
       "next_action": "保存有限证据与未测前提，随运行时或实现变更重验",
       "blockers": [],
       "completed_at": "2026-10-31T13:54:58.529931Z",
-      "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08"
+      "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/filesystem-save-publication/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/filesystem-save-publication/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a494ee6c79ba40f4732dc27ff96c8de62d971cbb743c24f8120be541d9a0ea2d"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0019",
@@ -576,7 +629,7 @@
       "status": "published",
       "priority": 92,
       "priority_rationale": "先评估既有焦点策略的窄真实引擎证据增量，不冒充Unity或可见可访问性验证",
-      "expected_artifact": "research/experiments/godot-focus-boundary/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "官方API核查后确定可证伪命题",
         "最终焦点观测而非请求即成功",
@@ -592,7 +645,15 @@
       "next_action": "保持身份单一守卫边界，其他模态/视觉前提未测",
       "blockers": [],
       "completed_at": "2026-10-31T14:02:10.919486Z",
-      "commit_sha": "b51ca500c376f40a26ba64953e53cc0dedb41e66"
+      "commit_sha": "b51ca500c376f40a26ba64953e53cc0dedb41e66",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/godot-focus-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-focus-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "37fd3973dc99affa0c97b0f69821534f89aebdf064ffd726bff6841ad59c01d7"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0020",
@@ -601,7 +662,7 @@
       "status": "published",
       "priority": 85,
       "priority_rationale": "先补原始版本证据而非扩张通用存档文章",
-      "expected_artifact": "research/source-notes/ink-v1.2.1-host-boundary.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/ink-v1.2.1-host-boundary.md",
       "acceptance": [
         "确认真实标签完整commit及文件blob",
         "区分默认lookahead行为与事务保证",
@@ -617,7 +678,15 @@
       "next_action": "来源审计已发布；实际ink回调/恢复验证仍需合适运行环境，不以模型替代",
       "blockers": [],
       "completed_at": "2026-10-31T14:05:24.852332Z",
-      "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd"
+      "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/ink-v1.2.1-host-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ink-v1.2.1-host-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4b2d56d4c24629de010761a56ce59eea81c0452e471bcb8fdb74314b6d658acf"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0021",
@@ -663,7 +732,7 @@
       "status": "published",
       "priority": 84,
       "priority_rationale": "全球来源深化，不用语言翻译冒充独立生产案例",
-      "expected_artifact": "research/source-notes/asset-import-policy-availability.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/asset-import-policy-availability.md",
       "acceptance": [
         "官方或实际作者来源",
         "记录语言/日期及可访问范围",
@@ -680,7 +749,15 @@
       "next_action": "有限历史来源审计已归档；现代Unity运行与独立工作室案例仍未获证据",
       "blockers": [],
       "completed_at": "2026-10-31T14:19:44.720440Z",
-      "commit_sha": "b5e84573ccdcc1655496f39844a70b087f79b3a1"
+      "commit_sha": "b5e84573ccdcc1655496f39844a70b087f79b3a1",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/asset-import-policy-availability.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/asset-import-policy-availability.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4903f66dab40223d11761b3dd6da5ba220cad7b21d5aa2062245e17561b802fc"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0023",
@@ -726,7 +803,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "已有真实证据数量增加，优先完整性和长期可维护性而非新文章数量",
-      "expected_artifact": "scripts/evidence/verify.py",
+      "expected_artifact": "管理档案/工具/evidence/verify.py",
       "acceptance": [
         "只读，不启动引擎或执行仓库代码",
         "五个当前Godot夹具显式清单，历史记录排除明确",
@@ -742,7 +819,15 @@
       "next_action": "新增当前夹具时审查显式注册表；完整性检查不代替语义和执行验收",
       "blockers": [],
       "completed_at": "2026-10-31T14:44:23.826421Z",
-      "commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0"
+      "commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0",
+      "historical_artifacts": [
+        {
+          "path": "scripts/evidence/verify.py",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/scripts/evidence/verify.py",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "b62a4bfc2c8b83506290e513e9de4965023c810531b6d18a17d21301b99c2cd8"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0025",
@@ -812,7 +897,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/source-notes/steam-capsule-handoff.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/steam-capsule-handoff.md",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -825,7 +910,15 @@
       "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
       "blockers": [],
       "completed_at": "2026-10-31T16:25:34.959720Z",
-      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/steam-capsule-handoff.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/steam-capsule-handoff.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "1459aad6dd8b2c83f47030afa178fadec890684c4b3e98566b66a1061f8307ae"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0028",
@@ -856,7 +949,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/experiments/godot-animation-events/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -869,7 +962,15 @@
       "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
       "blockers": [],
       "completed_at": "2026-10-31T16:21:38.644794Z",
-      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/godot-animation-events/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-animation-events/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "90c8c76fd6e204cd84d200322a4767cc80704df257b22f7188728c0eed32bcb7"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0030",
@@ -878,7 +979,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/source-notes/godot-runtime-provenance.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/godot-runtime-provenance.md",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -891,7 +992,15 @@
       "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
       "blockers": [],
       "completed_at": "2026-10-31T16:21:38.644794Z",
-      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/godot-runtime-provenance.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/godot-runtime-provenance.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4894e74c9fa2738b3939eb2db44c9d7d9182d43463615d9bbbe533fb76c1a651"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0031",
@@ -933,7 +1042,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/experiments/icu-message-boundary/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -946,7 +1055,15 @@
       "next_action": "Maintain finite evidence scope and formatter/source version distinctions",
       "blockers": [],
       "completed_at": "2026-10-31T18:22:05Z",
-      "commit_sha": "701a8616e2648b9987099c308dc522b8353fcd00"
+      "commit_sha": "701a8616e2648b9987099c308dc522b8353fcd00",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/icu-message-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/icu-message-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "358dfc8628c1b74946f5dbe74d14ab3579e2891f53321f2480aa9ef555004c69"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0033",
@@ -955,7 +1072,7 @@
       "status": "published",
       "priority": 96,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/source-notes/runner-invocation-freshness.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/runner-invocation-freshness.md",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -968,7 +1085,15 @@
       "next_action": "Preserve scoped evidence and update only for new verified source/runtime facts",
       "blockers": [],
       "completed_at": "2026-10-31T16:21:38.644794Z",
-      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b"
+      "commit_sha": "32f239e9a91ed255474cd9b066731d1b35ad119b",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/runner-invocation-freshness.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/runner-invocation-freshness.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "6f92637c7c130efc2955d5b8c3353dd2a5fcc1e50db81f4a8b7d5e4b03994005"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0034",
@@ -977,7 +1102,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/experiments/sqlite-ledger-boundary/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -991,7 +1116,15 @@
       "blockers": [],
       "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
       "completed_at": "2026-10-31T18:27:00Z",
-      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623"
+      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/sqlite-ledger-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-ledger-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "77d719e0ca5098f0238454f1281992df8f6d42dcb9ad66dc2139f9bb7f7c4d8a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0035",
@@ -1000,7 +1133,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/experiments/sqlite-writer-contention/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -1014,7 +1147,15 @@
       "blockers": [],
       "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
       "completed_at": "2026-10-31T18:27:00Z",
-      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623"
+      "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/sqlite-writer-contention/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-writer-contention/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "3c579eb25acd811ab15fff3bdede78a209645d62faf90945ae4cb0730aa33625"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0036",
@@ -1045,7 +1186,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "research/experiments/texture-block-budget/README.md",
+      "expected_artifact": "管理档案/研究记录/历史单元索引.json",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -1059,7 +1200,15 @@
       "blockers": [],
       "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
       "completed_at": "2026-10-31T18:40:11.675407Z",
-      "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580"
+      "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580",
+      "historical_artifacts": [
+        {
+          "path": "research/experiments/texture-block-budget/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/texture-block-budget/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5c1b991aff9e4f0d8d23662bbada6a36667282d316e53bade7fc8cade03e4663"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0038",
@@ -1134,7 +1283,7 @@
       "status": "published",
       "priority": 89,
       "priority_rationale": "Existing pinned ink source gate exposes approximate saved-pointer recovery; distinguish source-backed compatibility protocol from unavailable runtime verification",
-      "expected_artifact": "research/source-notes/ink-save-content-compatibility.md",
+      "expected_artifact": "管理档案/研究记录/source-notes/ink-save-content-compatibility.md",
       "acceptance": [
         "Exact pinned load/warning/error call chain",
         "Content identity distinct from save-format version",
@@ -1153,7 +1302,15 @@
         }
       ],
       "completed_at": "2026-10-31T19:05:48.439836Z",
-      "commit_sha": "c7cf1bb13ea1bde77390a2038824bf5fe57aebf6"
+      "commit_sha": "c7cf1bb13ea1bde77390a2038824bf5fe57aebf6",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/ink-save-content-compatibility.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ink-save-content-compatibility.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a662d26f2deb2c2c58c8a3f5cdb6ad655a5919dac92c1780bad0a2b8f7a20465"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0041",
@@ -1310,8 +1467,7 @@
       "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0",
       "artifact_paths": [
         "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-        "research/experiments/simultaneous-combat-policy",
-        "research/experiments/godot-combat-policy"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "historical_artifacts": [
         {
@@ -1319,6 +1475,20 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        },
+        {
+          "path": "research/experiments/simultaneous-combat-policy",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/simultaneous-combat-policy",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/experiments/godot-combat-policy",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-combat-policy",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1345,7 +1515,7 @@
       "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
-        "research/experiments/godot-resource-candidate"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "historical_artifacts": [
         {
@@ -1353,6 +1523,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        },
+        {
+          "path": "research/experiments/godot-resource-candidate",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-candidate",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1379,7 +1556,7 @@
       "commit_sha": "1b87df988bb4eca396247ff2659bea28065ab512",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
-        "research/experiments/godot-resource-broker"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "historical_artifacts": [
         {
@@ -1387,6 +1564,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        },
+        {
+          "path": "research/experiments/godot-resource-broker",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-broker",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1413,7 +1597,7 @@
       "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
       "artifact_paths": [
         "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
-        "research/experiments/shader-matrix-layout"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "historical_artifacts": [
         {
@@ -1421,6 +1605,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "8c64ceda922565f485a1e5caada462f55190461267cc5d513208e8033a96bf50"
+        },
+        {
+          "path": "research/experiments/shader-matrix-layout",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/shader-matrix-layout",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1461,7 +1652,7 @@
       "expected_artifact": "Existing navigation article plus original actual bake/agent/physics evidence",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
-        "research/experiments/godot-navigation-radius"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Freeze original geometry and two bake radii before actual capability execution",
@@ -1482,6 +1673,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        },
+        {
+          "path": "research/experiments/godot-navigation-radius",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-navigation-radius",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1495,7 +1693,7 @@
       "expected_artifact": "Existing prediction article depth and supporting source note",
       "artifact_paths": [
         "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
-        "research/source-notes/prediction-dependency-time-contract.md"
+        "管理档案/研究记录/source-notes/prediction-dependency-time-contract.md"
       ],
       "acceptance": [
         "Read Unity Netcode for Entities1.4.1 partial snapshot and original reconciliation explanation",
@@ -1516,6 +1714,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        },
+        {
+          "path": "research/source-notes/prediction-dependency-time-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/prediction-dependency-time-contract.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "1f076113b8199cae8f79d46926e10e5c4d13f6487f600a907ce61f683c53e9cd"
         }
       ]
     },
@@ -1529,8 +1733,8 @@
       "expected_artifact": "Focused historical Factorio cache/load-equivalence case and original acceptance worksheet",
       "artifact_paths": [
         "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
-        "research/audits/factorio-derived-cache",
-        "research/source-notes/factorio-derived-cache-sources.md"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/factorio-derived-cache-sources.md"
       ],
       "acceptance": [
         "Compact first-party FFF340 account with correct notify/recalculate remedy, not invented serialization fix",
@@ -1551,6 +1755,19 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/factorio-derived-cache-load-equivalence.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "sha256": "d684656b6f8a414b1d6d29add6d99eeaddc7cff4aa44a1615c82fa9b0997738f"
+        },
+        {
+          "path": "research/audits/factorio-derived-cache",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/factorio-derived-cache",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/source-notes/factorio-derived-cache-sources.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/factorio-derived-cache-sources.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "c04aceae2ed3279ecff144690e213062b5d319fa8dcd5bb592cc8d44fb17be55"
         }
       ]
     },
@@ -1563,9 +1780,7 @@
       "priority_rationale": "Known six-runner early-O rejection leaves old summaries; additive caller contract can close operational gap without rewriting scientific history",
       "expected_artifact": "Additive source-pinned isolated invocation harness, registry, tests and fresh audit receipts",
       "artifact_paths": [
-        "scripts/evidence/fresh/harness.py",
-        "scripts/evidence/fresh/registry.json",
-        "research/audits/fresh-invocation-harness"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Do not modify6legacyrunner sources or historical manifests/results",
@@ -1580,7 +1795,28 @@
       "next_action": "Preserve versioned reviewed tool and registry pairs; no implicit migration or five additional normal-adapter claims",
       "blockers": [],
       "completed_at": "2026-10-31T20:55:20.992233Z",
-      "commit_sha": "f719a70fba446cb40e1443e2840695cbef9ebc3c"
+      "commit_sha": "f719a70fba446cb40e1443e2840695cbef9ebc3c",
+      "historical_artifacts": [
+        {
+          "path": "scripts/evidence/fresh/harness.py",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/scripts/evidence/fresh/harness.py",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "ab74e41ecf123c6a5ae1b60728d55ca06a4feb7f367d4f0bfcfdfab0257a5eb0"
+        },
+        {
+          "path": "scripts/evidence/fresh/registry.json",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/scripts/evidence/fresh/registry.json",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "bb063ecaf012b00cf16338fe21f043313624a8bf8d57931cd26c26376ace0aee"
+        },
+        {
+          "path": "research/audits/fresh-invocation-harness",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/fresh-invocation-harness",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0054",
@@ -1592,7 +1828,7 @@
       "expected_artifact": "Existing economy-ledger section and original SQLite transaction fixture",
       "artifact_paths": [
         "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
-        "research/experiments/sqlite-commit-busy"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Primary SQLite transaction and rollback locking sources checked",
@@ -1614,6 +1850,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "541b4669ab0dca38180664593d2bb5e8dd9b5e4ff7be35038c5c96dbbda220b0"
+        },
+        {
+          "path": "research/experiments/sqlite-commit-busy",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-commit-busy",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1627,7 +1870,7 @@
       "expected_artifact": "Existing modeling article depth extension with actual GLTFDocument import and data-stage observations",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-        "research/experiments/godot-gltf-import-boundary"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Exact original glTF JSON and embedded160byte input hashes unchanged",
@@ -1650,6 +1893,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
+        },
+        {
+          "path": "research/experiments/godot-gltf-import-boundary",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1663,8 +1913,8 @@
       "expected_artifact": "Existing animation article source-depth section with original dependency/acceptance handoff and independently checked source receipts",
       "artifact_paths": [
         "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-        "research/audits/rig-evaluation-handoff",
-        "research/source-notes/rig-evaluation-handoff.md"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/rig-evaluation-handoff.md"
       ],
       "acceptance": [
         "Distinguish Square Enix CEDEC2015 production workflow from Unity Animation Rigging1.2.1 implementation and Capcom employer role scope",
@@ -1686,6 +1936,19 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        },
+        {
+          "path": "research/audits/rig-evaluation-handoff",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/rig-evaluation-handoff",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/source-notes/rig-evaluation-handoff.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/rig-evaluation-handoff.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "802b6bffaf240ff986ec35362dc7705aa75d4afc265b4beb7dc3e850b02ce8e2"
         }
       ]
     },
@@ -1698,7 +1961,7 @@
       "priority_rationale": "Apply new exact-artifact applicability gate after a rejected unpublished scope conflation; correct only demonstrated ambiguity or stale links, not force findings",
       "expected_artifact": "27-entry exact-metadata audit and minimal verified TA/audio wording corrections",
       "artifact_paths": [
-        "research/audits/evidence-applicability-27",
+        "管理档案/研究记录/历史单元索引.json",
         "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
         "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md"
       ],
@@ -1728,6 +1991,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        },
+        {
+          "path": "research/audits/evidence-applicability-27",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/evidence-applicability-27",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1741,7 +2011,7 @@
       "expected_artifact": "Original one-bone native fixture, frozen oracle, author and independent execution receipts, narrow article extension",
       "artifact_paths": [
         "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-        "research/experiments/godot-root-motion-boundary"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Quote current canonical verification metadata before work; old evidence is only four Python geometric tests",
@@ -1764,6 +2034,13 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        },
+        {
+          "path": "research/experiments/godot-root-motion-boundary",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-root-motion-boundary",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1777,8 +2054,8 @@
       "expected_artifact": "Bounded graphics-programmer role profile and original unexecuted rendering-feature acceptance worksheet",
       "artifact_paths": [
         "管理档案/历史正文/roles/rendering/graphics-programmer.md",
-        "research/source-notes/graphics-programmer-role.md",
-        "research/audits/graphics-programmer-role"
+        "管理档案/研究记录/source-notes/graphics-programmer-role.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
@@ -1793,7 +2070,22 @@
       "next_action": "Use bounded feature handoff as an unexecuted proposal; continue role coverage without claiming full matrix completion",
       "blockers": [],
       "completed_at": "2026-10-31T21:44:22.341807Z",
-      "commit_sha": "0146a5ad5e025a189ec35eb7916a0c9e4eced62c"
+      "commit_sha": "0146a5ad5e025a189ec35eb7916a0c9e4eced62c",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/graphics-programmer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/graphics-programmer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "2c205fb735ab1b4b44cc03a0828010e42c2adb02769c7361bccb10f7f3776314"
+        },
+        {
+          "path": "research/audits/graphics-programmer-role",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/graphics-programmer-role",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0060",
@@ -1805,9 +2097,8 @@
       "expected_artifact": "Source-gated minimal callback/mutation study, or explicit bounded negative feasibility finding",
       "artifact_paths": [
         "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-        "research/experiments/godot-physics-callback-v1",
-        "research/experiments/godot-physics-callback-v2",
-        "research/source-notes/physics-callback-mutation-boundary.md"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/physics-callback-mutation-boundary.md"
       ],
       "acceptance": [
         "Read current exact fixed-step/combat evidence before claiming new applicability",
@@ -1829,6 +2120,26 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        },
+        {
+          "path": "research/experiments/godot-physics-callback-v1",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-physics-callback-v1",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/experiments/godot-physics-callback-v2",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-physics-callback-v2",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/source-notes/physics-callback-mutation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/physics-callback-mutation-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "e334552d36cb50ab59e3b07d76984c2d6ee447089cb7f9d2b3e6992a96d40649"
         }
       ]
     },
@@ -1841,9 +2152,9 @@
       "priority_rationale": "A real omitted XDG_DATA_HOME caused failed startup; close the reusable setup contract rather than repeat ad hoc environment construction",
       "expected_artifact": "Additive future-only five-variable environment helper, finite pure/filesystem and synthetic-child tests, independent acceptance",
       "artifact_paths": [
-        "scripts/evidence/isolation.py",
-        "research/audits/runner-isolation",
-        "research/source-notes/runner-environment-contract.md"
+        "管理档案/工具/evidence/isolation.py",
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/runner-environment-contract.md"
       ],
       "acceptance": [
         "Prepare and validate HOME/XDG_CACHE_HOME/XDG_CONFIG_HOME/XDG_DATA_HOME/TMPDIR under caller-owned fresh root",
@@ -1859,7 +2170,28 @@
       "next_action": "Adopt only in separately reviewed new callers; preserve historical source identities and narrow environment scope",
       "blockers": [],
       "completed_at": "2026-10-31T22:13:53.402116Z",
-      "commit_sha": "fb7227b65886b624988de06063a6bdc1038d1f95"
+      "commit_sha": "fb7227b65886b624988de06063a6bdc1038d1f95",
+      "historical_artifacts": [
+        {
+          "path": "scripts/evidence/isolation.py",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/scripts/evidence/isolation.py",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+        },
+        {
+          "path": "research/audits/runner-isolation",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/runner-isolation",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/source-notes/runner-environment-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/runner-environment-contract.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d261bc53f69d2f2d0dd7d923203ef306d1904901db2180a552def65ed658c8ee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0062",
@@ -1871,8 +2203,8 @@
       "expected_artifact": "Source-gated build/deployment role profile and bounded original artifact-promotion handoff proposal",
       "artifact_paths": [
         "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
-        "research/source-notes/build-engineer-role.md",
-        "research/audits/build-engineering-role"
+        "管理档案/研究记录/source-notes/build-engineer-role.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read exact current role coverage and primary employer/team sources across Japanese and English evidence",
@@ -1895,6 +2227,19 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3b53ab362c7383a14decb7b843e7c67156810d753016a7e4373c29fa0fc5c1fc"
+        },
+        {
+          "path": "research/source-notes/build-engineer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/build-engineer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0e2578c47913516535f1beb92355d2cff1d6da4f09b677689cba304063d85512"
+        },
+        {
+          "path": "research/audits/build-engineering-role",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/build-engineering-role",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
         }
       ]
     },
@@ -1908,8 +2253,8 @@
       "expected_artifact": "Version-scoped source-backed content-update baseline contract with explicit unexecuted acceptance and runtime gap",
       "artifact_paths": [
         "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
-        "research/source-notes/addressables-content-update-baseline.md",
-        "research/audits/addressables-update-contract"
+        "管理档案/研究记录/source-notes/addressables-content-update-baseline.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Directly read official Addressables1.21 pages identifying1.21.21 and exact missing-remote cached-state fallback condition",
@@ -1925,7 +2270,22 @@
       "next_action": "Keep consumed-byte observation and old-client runtime protocol unexecuted until legitimate compatible toolchain is available",
       "blockers": [],
       "completed_at": "2026-10-31T22:26:33.877270Z",
-      "commit_sha": "08b178f9cdbbbbd8392ea039bde3d28f20b13cf5"
+      "commit_sha": "08b178f9cdbbbbd8392ea039bde3d28f20b13cf5",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/addressables-content-update-baseline.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/addressables-content-update-baseline.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d4cf7e6a01cbdf500606444a5e8e951cf3e329a7e35bdc50b545018970632d07"
+        },
+        {
+          "path": "research/audits/addressables-update-contract",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/addressables-update-contract",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0064",
@@ -1937,8 +2297,8 @@
       "expected_artifact": "Source-frozen two-bone native modifier-order evidence or accurately retained failed gate; integrate into existing animation article only if accepted",
       "artifact_paths": [
         "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-        "research/experiments/godot-skeleton-modifier-order",
-        "research/source-notes/skeleton-modifier-order.md"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/skeleton-modifier-order.md"
       ],
       "acceptance": [
         "Exact current animation metadata/source gate; do not transfer four geometry tests or single-bone extraction to modifier order",
@@ -1962,6 +2322,19 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        },
+        {
+          "path": "research/experiments/godot-skeleton-modifier-order",
+          "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-skeleton-modifier-order",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "kind": "historical_directory",
+          "scope": "Fixed historical directory; no invented file SHA256"
+        },
+        {
+          "path": "research/source-notes/skeleton-modifier-order.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/skeleton-modifier-order.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "69836993c9adc300b2d103f6bf6528ced465d938a1ead5aa8953838f1bb6387d"
         }
       ]
     },
@@ -1974,8 +2347,8 @@
       "priority_rationale": "Existing matrix article is actual compile plus CPU interpretation only; loader presence cannot establish shader execution capability",
       "expected_artifact": "Frozen ABI-reviewed bounded loader/instance/enumeration capability observation or exact negative; no shader execution claim",
       "artifact_paths": [
-        "research/source-notes/vulkan-capability-gate.md",
-        "research/experiments/vulkan-capability-probe/README.md"
+        "管理档案/研究记录/source-notes/vulkan-capability-gate.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read current matrix evidence and official pinned header/calling convention and loader discovery docs",
@@ -1992,7 +2365,21 @@
       "next_action": "Retain exact scoped API-negative observation; shader execution branch blocked, no retry or driver repair",
       "blockers": [],
       "completed_at": "2026-10-31T22:49:47.549652Z",
-      "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7"
+      "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/vulkan-capability-gate.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/vulkan-capability-gate.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d18e313736c68bd3db6a35734fecf2323a8f681854ec27ab1c635e1253ee37a4"
+        },
+        {
+          "path": "research/experiments/vulkan-capability-probe/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/vulkan-capability-probe/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "e8d95011341b188658754b6098fb783a444cb37eae92b3ed2f73b203e553081d"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0066",
@@ -2004,7 +2391,7 @@
       "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
       "artifact_paths": [
         "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
-        "research/source-notes/online-services-engineer-role.md"
+        "管理档案/研究记录/source-notes/online-services-engineer-role.md"
       ],
       "acceptance": [
         "Read primary BNS Japanese responsibilities and Riot2020 load-harness scope",
@@ -2027,6 +2414,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "e6af1f5c1d789b32d003f96e98953f8fa4000bf453c4561d7ba6d31c4dd230f0"
+        },
+        {
+          "path": "research/source-notes/online-services-engineer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/online-services-engineer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "23f4a72e922d8d06c80b04d811f7de3c4a748c461cf244aa6d57a3e7ce46465e"
         }
       ]
     },
@@ -2040,7 +2433,7 @@
       "expected_artifact": "Narrow source-backed historical case and original unexecuted measurement/lifecycle acceptance worksheet",
       "artifact_paths": [
         "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
-        "research/source-notes/league-server-allocation-observation-age.md"
+        "管理档案/研究记录/source-notes/league-server-allocation-observation-age.md"
       ],
       "acceptance": [
         "Read Riot2025 original allocation report; distinguish collection granularity and selector refresh",
@@ -2056,7 +2449,15 @@
       "next_action": "Preserve historical source boundaries and unexecuted worksheet; no production replay implied",
       "blockers": [],
       "completed_at": "2026-10-31T22:57:20.427068Z",
-      "commit_sha": "7f1279ca338520c1c30951a9fa00055add518568"
+      "commit_sha": "7f1279ca338520c1c30951a9fa00055add518568",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/league-server-allocation-observation-age.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/league-server-allocation-observation-age.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4771d9df447529b136ae08d6d350e80ed477da83224a94a5440478301048c70a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0068",
@@ -2067,8 +2468,8 @@
       "priority_rationale": "Existing LOC article explicitly limits ICU evidence to English1/2 and lacks target-locale category coverage; installed formatter permits a bounded source-gated supplement",
       "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs×6integer native requests if ABI/protocol gate passes",
       "artifact_paths": [
-        "research/source-notes/icu-locale-plural-coverage.md",
-        "research/experiments/icu-plural-locale/README.md"
+        "管理档案/研究记录/source-notes/icu-locale-plural-coverage.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Verify exact current LOC artifact identity and fixed ICU API definitions without importing executing legacy case",
@@ -2084,7 +2485,21 @@
       "next_action": "Retain finite en/ar category evidence and old fixtures; do not expand into translation/RTL certification",
       "blockers": [],
       "completed_at": "2026-10-31T23:14:11.486756Z",
-      "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9"
+      "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/icu-locale-plural-coverage.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/icu-locale-plural-coverage.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "dc92999fb6692544d882097418394f99ec7e1e050011f89134720bc1d4d9b4bf"
+        },
+        {
+          "path": "research/experiments/icu-plural-locale/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/icu-plural-locale/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a6c9feb7710439a4be06750e8983e82117d8a02543b04a4fc9560a5c688a0bc6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0069",
@@ -2095,8 +2510,8 @@
       "priority_rationale": "Existing music article explicitly excludes encoded padding; installed FFmpeg/libopus capabilities permit a concrete codec/container boundary beyond PCM-only evidence",
       "expected_artifact": "Source-gated finite OggOpus count experiment or precise negative, supplementing existing PCM loop article without playback/quality claims",
       "artifact_paths": [
-        "research/source-notes/ogg-opus-frame-boundary.md",
-        "research/experiments/ogg-opus-frame-boundary/README.md"
+        "管理档案/研究记录/source-notes/ogg-opus-frame-boundary.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read RFC7845 granule/preskip/endtrim/initial-position and sufficient Oggpage/Opuspacket framing definitions before readerprotocol",
@@ -2112,7 +2527,21 @@
       "next_action": "Retain original finite codec count evidence; playback/seek/quality remain unverified",
       "blockers": [],
       "completed_at": "2026-10-31T23:35:26.722156Z",
-      "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b"
+      "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/ogg-opus-frame-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ogg-opus-frame-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "df485cf8a68a0836f0ad608980fe17787290972cd2686cc63f056e769c097f7e"
+        },
+        {
+          "path": "research/experiments/ogg-opus-frame-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/ogg-opus-frame-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "17d189e6bccecd083f6dea5873caff938f4839a405a72cdeb1ebafeaf472edab"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0070",
@@ -2124,7 +2553,7 @@
       "expected_artifact": "One source-backed production-manager role and original unexecuted dependency handoff worksheet",
       "artifact_paths": [
         "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
-        "research/source-notes/production-manager-role.md"
+        "管理档案/研究记录/source-notes/production-manager-role.md"
       ],
       "acceptance": [
         "Verify original Ubisoft Frank Roy interview, BNS Oshiyama historical project experience and Riot cosmetics responsibility sample",
@@ -2147,6 +2576,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/production/production-manager.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "bd829f61fc8d12f1ffe92ae18114af6fb88749b01b4dcf2986edca65ad81dce5"
+        },
+        {
+          "path": "research/source-notes/production-manager-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/production-manager-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "931dc1390e77e5c51aa7ce9923dd283610b0d452c70b97077dc7b14f654ed144"
         }
       ]
     },
@@ -2160,8 +2595,8 @@
       "expected_artifact": "Source-gated finite Control focus observation or exact negative, supplementing existing UX article",
       "artifact_paths": [
         "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
-        "research/source-notes/godot-recursive-focus-boundary.md",
-        "research/experiments/godot-recursive-focus-boundary/README.md"
+        "管理档案/研究记录/source-notes/godot-recursive-focus-boundary.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read exact current article/fixture identities and preserve old evidence applicability",
@@ -2184,6 +2619,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ux/modal-focus-recovery.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "2f5a295a68a3e48b81a93f2a6468ae6007da3a255c93e7aef8ad993f502f0048"
+        },
+        {
+          "path": "research/source-notes/godot-recursive-focus-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/godot-recursive-focus-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "fb70fe34d498d4bd143f244ad596f3af976fae17bc0170e6791f0aa7227ab93a"
+        },
+        {
+          "path": "research/experiments/godot-recursive-focus-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-recursive-focus-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "e8f61426a8a43c5652aaf3c17495520c54b8aadbc851bfbae3bfd89dc398b70b"
         }
       ]
     },
@@ -2197,7 +2644,7 @@
       "expected_artifact": "Source-backed game animator role and original unexecuted combination handoff worksheet",
       "artifact_paths": [
         "管理档案/历史正文/roles/animation/game-animator.md",
-        "research/source-notes/game-animator-role.md"
+        "管理档案/研究记录/source-notes/game-animator-role.md"
       ],
       "acceptance": [
         "Verify Japanese original studio interview and cohort duties plus English adjacent technical animator responsibility sample",
@@ -2213,7 +2660,15 @@
       "next_action": "Retain original unexecuted character-combination worksheet; real asset/performance validation remains future work",
       "blockers": [],
       "completed_at": "2026-11-01T00:06:24.597686Z",
-      "commit_sha": "ef18fdf64d5b747c38ed9818df0627bc33d585b4"
+      "commit_sha": "ef18fdf64d5b747c38ed9818df0627bc33d585b4",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/game-animator-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-animator-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "b343f82e0e6b4146a1bc2425b3efb9ce9becf7d0ea6da99d8bf674319138daed"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0073",
@@ -2225,8 +2680,8 @@
       "expected_artifact": "Original-source gap assessment, then a bounded RPC authorization observation only if justified and feasible",
       "artifact_paths": [
         "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
-        "research/source-notes/godot-rpc-authority-boundary.md",
-        "research/experiments/godot-rpc-authority-boundary/README.md"
+        "管理档案/研究记录/source-notes/godot-rpc-authority-boundary.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Inspect exact existing article and model identities before assigning evidence",
@@ -2249,6 +2704,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        },
+        {
+          "path": "research/source-notes/godot-rpc-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/godot-rpc-authority-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "79edc3ebb51189228c03f081aeb289216bff9aa279ada0e56a0f87a739adeb09"
+        },
+        {
+          "path": "research/experiments/godot-rpc-authority-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-rpc-authority-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "cf3d803ad3507605e07ffb8349102fbebe2d6f924782ef718c2fc8de4c175170"
         }
       ]
     },
@@ -2262,7 +2729,7 @@
       "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
       "artifact_paths": [
         "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
-        "research/source-notes/real-time-vfx-artist-role.md"
+        "管理档案/研究记录/source-notes/real-time-vfx-artist-role.md"
       ],
       "acceptance": [
         "Read original Japanese BNS project account and English League/VALORANT developer articles",
@@ -2285,6 +2752,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/vfx/real-time-vfx-artist.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "6ddc916b183a49dfa9927b1dec031cbcbd51de30fbd4b31a580d9dd91cb44689"
+        },
+        {
+          "path": "research/source-notes/real-time-vfx-artist-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/real-time-vfx-artist-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "6e24b059104293dff7075f3874c6271f89adbd8af9e1a0c211ff8c899e4aa05e"
         }
       ]
     },
@@ -2298,8 +2771,8 @@
       "expected_artifact": "Exact-evidence source gate; only proceed to a finite original experiment if justified and independently reviewed",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
-        "research/source-notes/lcms-transfer-boundary.md",
-        "research/experiments/lcms-transfer-boundary/README.md"
+        "管理档案/研究记录/source-notes/lcms-transfer-boundary.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read and hash the exact prior article and tested fixture",
@@ -2322,6 +2795,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "6aa421015e4ecb35e64279e0d372928ace1ff0b1dc0adc3658ed3c015653b0bd"
+        },
+        {
+          "path": "research/source-notes/lcms-transfer-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/lcms-transfer-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "6a7a1ebb4969e10a3fd6371206ec9257056ebf20722d63092f90d39743a8f31f"
+        },
+        {
+          "path": "research/experiments/lcms-transfer-boundary/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/lcms-transfer-boundary/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0aa8f0b63baa1a396e6b88fbcc656503753baf0b8ab4c700f314e2992ad1a68d"
         }
       ]
     },
@@ -2335,7 +2820,7 @@
       "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
-        "research/source-notes/killzone3-plan-execution-continuation.md"
+        "管理档案/研究记录/source-notes/killzone3-plan-execution-continuation.md"
       ],
       "acceptance": [
         "Read original author chapter29 GameAIPro2013 and exact task/continuation/queue pages",
@@ -2358,6 +2843,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/killzone3-plan-execution-continuation.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "sha256": "760111acdd8bed9946d96fb73e114b2612811ce6b0f2cb1cb9a5ae7df884fa07"
+        },
+        {
+          "path": "research/source-notes/killzone3-plan-execution-continuation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/killzone3-plan-execution-continuation.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "78d19d2e30b29db5d23bda3bf3fd894f9f414464d2cdd823e11c790e7d0da40c"
         }
       ]
     },
@@ -2371,8 +2862,8 @@
       "expected_artifact": "Bounded controlled Node3D path-consumption experiment or preserved failed gate",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
-        "research/source-notes/navigation-agent-completion.md",
-        "research/experiments/godot-navigation-completion/README.md"
+        "管理档案/研究记录/source-notes/navigation-agent-completion.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Exact prior fixture scope and pinned source review",
@@ -2394,6 +2885,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        },
+        {
+          "path": "research/source-notes/navigation-agent-completion.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/navigation-agent-completion.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "dd7590d9a0bef455c51fe1d00cae75a6556a9b5d7cc5cc8958c55c434e5e5cca"
+        },
+        {
+          "path": "research/experiments/godot-navigation-completion/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-navigation-completion/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "218d1a2fb09669549c99c2f5012a091f533ca663d7fa57161de3280f4c5dc048"
         }
       ]
     },
@@ -2407,7 +2910,7 @@
       "expected_artifact": "Narrow game UX interaction-flow handoff role and original unexecuted acceptance worksheet",
       "artifact_paths": [
         "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
-        "research/source-notes/game-ux-designer-role.md"
+        "管理档案/研究记录/source-notes/game-ux-designer-role.md"
       ],
       "acceptance": [
         "English and Japanese original practitioner sources with dates and scope",
@@ -2429,6 +2932,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "9bc08a7db641df46592658e7b837cba200b036d81faae648db12b8d0ca79551b"
+        },
+        {
+          "path": "research/source-notes/game-ux-designer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-ux-designer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "c708733ea9ca2ae5b7f786bd80134b7cad948254d4c46883ffe2a04dd5256395"
         }
       ]
     },
@@ -2442,8 +2951,8 @@
       "expected_artifact": "Source-gated bounded actual move_and_collide obstruction/control experiment or preserved failed gate",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
-        "research/source-notes/character-motion-obstruction.md",
-        "research/experiments/godot-character-motion/README.md"
+        "管理档案/研究记录/source-notes/character-motion-obstruction.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Exact prior article/fixture scope and versioned original API/source review",
@@ -2465,6 +2974,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        },
+        {
+          "path": "research/source-notes/character-motion-obstruction.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/character-motion-obstruction.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "9a7c4b89569284fa2f13a2473582ba7bab9d239fb2763d1cd2f48b2d1372a72f"
+        },
+        {
+          "path": "research/experiments/godot-character-motion/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-character-motion/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d470741ebe4ae182bfdcad5aad46521a4a25415c6fb5f3bea0488c5901f220da"
         }
       ]
     },
@@ -2478,7 +2999,7 @@
       "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
       "artifact_paths": [
         "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
-        "research/source-notes/environment-concept-artist-role.md"
+        "管理档案/研究记录/source-notes/environment-concept-artist-role.md"
       ],
       "acceptance": [
         "Named PlatinumGames and Bungie original practitioner text with exact historical dates",
@@ -2500,6 +3021,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "f0aaaedece323f9a04f14997ff0fb29e940201fe5b7b9070a7bfbbc9b0a9df68"
+        },
+        {
+          "path": "research/source-notes/environment-concept-artist-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/environment-concept-artist-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d6a647584a32b4d4d49e7fc4afa3480d0da5e6dcd7e4087add5f4a0d51b51d63"
         }
       ]
     },
@@ -2513,7 +3040,7 @@
       "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
-        "research/source-notes/left4dead-director-pacing.md"
+        "管理档案/研究记录/source-notes/left4dead-director-pacing.md"
       ],
       "acceptance": [
         "Original Michael Booth AIIDE 2009 presentation and publisher index",
@@ -2535,6 +3062,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/left4dead-director-pacing-evidence.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "sha256": "83fdd0acde4a6b806551ebb12fa8b11263c9a16ad51b584d3ea4c34de301b202"
+        },
+        {
+          "path": "research/source-notes/left4dead-director-pacing.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/left4dead-director-pacing.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "88f0af300f43314b87628ee450c05b57e44159145f68704f7455b5127e594316"
         }
       ]
     },
@@ -2548,8 +3081,8 @@
       "expected_artifact": "Narrow source-backed analyst role and original unexecuted tutorial-comparison handoff",
       "artifact_paths": [
         "管理档案/历史正文/roles/data/game-data-analyst.md",
-        "research/source-notes/game-data-analyst-role.md",
-        "research/audits/cloud-save-second-review/REVIEW.md"
+        "管理档案/研究记录/source-notes/game-data-analyst-role.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Named Bandai Namco Nexus and Riot first-party historical practitioner sources",
@@ -2564,7 +3097,21 @@
       "next_action": "Retain historical role scope and unexecuted tutorial worksheet; useful-negative audit does not enlarge platform validation",
       "blockers": [],
       "completed_at": "2026-11-01T02:03:33.615459Z",
-      "commit_sha": "c92454589a5be8e10e74f0b815f254d42e99ae61"
+      "commit_sha": "c92454589a5be8e10e74f0b815f254d42e99ae61",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/game-data-analyst-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-data-analyst-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "aa23d389770daa81b9e92404ed3be463d84a1d21c33b6a3490924b8d118b9bd0"
+        },
+        {
+          "path": "research/audits/cloud-save-second-review/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/cloud-save-second-review/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "05b04a254245d693a275a2eee2422b173cffda750a2b55b755bc70d433175bb4"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0083",
@@ -2576,8 +3123,8 @@
       "expected_artifact": "Source-derived scalar residual derivation, bounded original numerical fixture and discriminating negative controls",
       "artifact_paths": [
         "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
-        "research/source-notes/scalar-inertialization-continuity.md",
-        "research/experiments/scalar-inertialization/README.md"
+        "管理档案/研究记录/source-notes/scalar-inertialization-continuity.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read original author mathematical source and distinguish spring residual from tracking spring and finite-time quintic",
@@ -2599,6 +3146,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "2669be9c9c38273ba646151c616924148c2917e6f308706951210c7049bb37d8"
+        },
+        {
+          "path": "research/source-notes/scalar-inertialization-continuity.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/scalar-inertialization-continuity.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "da860983741831c1ef212b20fa0249ac145230e7d83989c0a0df7b48c31023a6"
+        },
+        {
+          "path": "research/experiments/scalar-inertialization/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/scalar-inertialization/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "19d65e3fadad18fda8a8e8c2912e8e4d8e1e4bca8fa9fe4595998ee380f65ea7"
         }
       ]
     },
@@ -2613,7 +3172,7 @@
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
         "管理档案/来源笔记/gltf-sparse-accessor.md",
-        "research/experiments/gltf-sparse-accessor/README.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Pinned Khronos glTF source and strict sparse replacement/base initialization semantics",
@@ -2635,6 +3194,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
+        },
+        {
+          "path": "research/experiments/gltf-sparse-accessor/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/gltf-sparse-accessor/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "b1a010067bac81e887804a583360e5d44862c10e44720e0b2f30e25185a76940"
         }
       ]
     },
@@ -2648,7 +3213,7 @@
       "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
       "artifact_paths": [
         "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
-        "research/source-notes/narrative-designer-writer-role.md"
+        "管理档案/研究记录/source-notes/narrative-designer-writer-role.md"
       ],
       "acceptance": [
         "Read Guerrilla and Monolith first-party practitioner sources and retain actual role distinctions",
@@ -2663,7 +3228,15 @@
       "next_action": "Retain role-specific historical evidence and unexecuted semantic-state worksheet; no dialogue runtime or language result",
       "blockers": [],
       "completed_at": "2026-11-01T02:48:49.280844Z",
-      "commit_sha": "caf03252380b9faff46b9467c07800880634d146"
+      "commit_sha": "caf03252380b9faff46b9467c07800880634d146",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/narrative-designer-writer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/narrative-designer-writer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "50227851a12061c9dbd5d8d725ad11c0cadcedba26b2fd5a805a8ebdb9bf543a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0086",
@@ -2710,8 +3283,8 @@
       "expected_artifact": "Source gate first; finite original native protocol only if distinct value is established",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
-        "research/source-notes/resource-duplication-policy.md",
-        "research/experiments/godot-resource-duplication/README.md"
+        "管理档案/研究记录/source-notes/resource-duplication-policy.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read exact existing resource isolation evidence before defining new scope",
@@ -2733,6 +3306,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        },
+        {
+          "path": "research/source-notes/resource-duplication-policy.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/resource-duplication-policy.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5f7941d611971e2dfb46785e4e95422a0104ab9fda8ed0233cacb6718e4822b3"
+        },
+        {
+          "path": "research/experiments/godot-resource-duplication/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-duplication/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "94ea86edba38fe6cf222a199692ba3d00942f25d2327f2b702a3e3ee99ff7ca6"
         }
       ]
     },
@@ -2781,8 +3366,8 @@
       "expected_artifact": "Source/EOF gate first; finite original offline mix only if exact oracle and capability justified",
       "artifact_paths": [
         "GameLibrary/声音与音乐/音频制作/混音/静音分轨为何会影响其他音轨的增益.md",
-        "research/source-notes/silent-stem-normalization.md",
-        "research/experiments/ffmpeg-silent-stem/README.md"
+        "管理档案/研究记录/source-notes/silent-stem-normalization.md",
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read pinned amix options and active-input/EOF source before deciding native scope",
@@ -2804,6 +3389,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "2c7e8f6bd204ca20d6fc8f3de949db67876830568dfb3a91f371d72ae37642cc"
+        },
+        {
+          "path": "research/source-notes/silent-stem-normalization.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/silent-stem-normalization.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4ed6cc3791dc24f3cdf53226ad48ca2fc84e9440a8bee2549b4903e4cd036053"
+        },
+        {
+          "path": "research/experiments/ffmpeg-silent-stem/README.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/ffmpeg-silent-stem/README.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "81158b9c727fa17f7712762a24f37bbaa2db4e495ae71e73cc1f855d3708e0c1"
         }
       ]
     },
@@ -2817,7 +3414,7 @@
       "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
-        "research/source-notes/game-lighting-artist-role.md"
+        "管理档案/研究记录/source-notes/game-lighting-artist-role.md"
       ],
       "acceptance": [
         "Direct named primary practitioner interviews and independent source/editorial review",
@@ -2839,6 +3436,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "b621f4a4df67b24617ceae1f07cbeb6f5131c21e5a71bc6156552f136006e503"
+        },
+        {
+          "path": "research/source-notes/game-lighting-artist-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-lighting-artist-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5c9533309bcf2b8461dae43b52f5ae750759d8f10ce434b440856b17c09b28d4"
         }
       ]
     },
@@ -2852,7 +3455,7 @@
       "expected_artifact": "Small source-only supplement to solutions/programming/fixed-step-simulation-boundary.md and source note",
       "artifact_paths": [
         "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-        "research/source-notes/time-dilation-overload-clocks.md"
+        "管理档案/研究记录/source-notes/time-dilation-overload-clocks.md"
       ],
       "acceptance": [
         "Read three official original CCP Veritas texts and distinguish proposal/deployment/retrospective dates",
@@ -2874,6 +3477,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        },
+        {
+          "path": "research/source-notes/time-dilation-overload-clocks.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/time-dilation-overload-clocks.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "db33631ef52956be1f22f3b6573251e5691993fc9ffc2c30f1655c98f1b27d7c"
         }
       ]
     },
@@ -2911,7 +3520,7 @@
       "expected_artifact": "UI artist role and original-source note",
       "artifact_paths": [
         "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
-        "research/source-notes/game-ui-artist-role.md"
+        "管理档案/研究记录/source-notes/game-ui-artist-role.md"
       ],
       "acceptance": [
         "Two original practitioner bodies verified",
@@ -2933,6 +3542,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "e92f84e1fcd56f5aea001ed41e0ae0bd594cb7f1a4c0efeef52c4337e56599fa"
+        },
+        {
+          "path": "research/source-notes/game-ui-artist-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-ui-artist-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "ef36d3da1102d0573884ea33d5f6ff2b49f127092c92434f9beefd91d4622f45"
         }
       ]
     },
@@ -2946,7 +3561,7 @@
       "expected_artifact": "Two-source original-practitioner gate and, if distinct, source-only composer role analysis",
       "artifact_paths": [
         "GameLibrary/声音与音乐/交互音乐/岗位与协作/游戏作曲如何为交互安排音乐.md",
-        "research/source-notes/game-composer-role.md"
+        "管理档案/研究记录/source-notes/game-composer-role.md"
       ],
       "acceptance": [
         "Read existing audio role, transition and PCM evidence first",
@@ -2968,6 +3583,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/music/game-composer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "25540d5b33f642440199c694a6181a4f82298cc320487a2b4d3ae6545afbdb27"
+        },
+        {
+          "path": "research/source-notes/game-composer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-composer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a5d6f44bb0d09a526f93483039091e96659b618582be306363fc9646f468093f"
         }
       ]
     },
@@ -2980,7 +3601,7 @@
       "priority_rationale": "Deep adversarial applicability review of high-value combat/animation/network boundaries before broader coverage",
       "expected_artifact": "Scoped read-only review and precise source/prose correction if supported, otherwise bounded negative findings",
       "artifact_paths": [
-        "research/audits/combat-applicability/REVIEW.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Trace concrete reader-facing claims to exact existing evidence identities",
@@ -2995,7 +3616,15 @@
       "next_action": "No unsupported correction identified; retain bounded review and existing integration gaps",
       "blockers": [],
       "completed_at": "2026-11-01T04:33:31.519213Z",
-      "commit_sha": "031b35aac06f8f49e9f5d019d856d943bf95c418"
+      "commit_sha": "031b35aac06f8f49e9f5d019d856d943bf95c418",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/combat-applicability/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/combat-applicability/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "e2b33ee4ed492614c3f43cf844e07e31bc6b6b9f4325cb9f325c305c5ccbe376"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0096",
@@ -3007,7 +3636,7 @@
       "expected_artifact": "Pinned primary-source analysis with explicitly hypothetical queue timeline and no measured latency claim",
       "artifact_paths": [
         "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
-        "research/source-notes/presentation-queue-latency-boundary.md"
+        "管理档案/研究记录/source-notes/presentation-queue-latency-boundary.md"
       ],
       "acceptance": [
         "Read fixed Vulkan surface/swapchain clauses and independently review scope",
@@ -3029,6 +3658,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3c899eb1d2b94b1c0a815d6a27ba2546332a0f2616881ae5aa4f4724da8b6353"
+        },
+        {
+          "path": "research/source-notes/presentation-queue-latency-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/presentation-queue-latency-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "828e0a0fd63ff545709ec00cfc70ddd1a4d7c66ca17b55562db89dd2ab5c3ec7"
         }
       ]
     },
@@ -3042,7 +3677,7 @@
       "expected_artifact": "Version-specific primary-source gate and bounded existing-article supplement only if it closes a distinct gap",
       "artifact_paths": [
         "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
-        "research/source-notes/fmod-virtualization-observation-boundary.md"
+        "管理档案/研究记录/source-notes/fmod-virtualization-observation-boundary.md"
       ],
       "acceptance": [
         "Inspect existing audio and accessibility coverage before drafting",
@@ -3065,6 +3700,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        },
+        {
+          "path": "research/source-notes/fmod-virtualization-observation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/fmod-virtualization-observation-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "cd21d87366de2b94f3d2c8c6856c23929cde64875c45a78ff58ca45729bd379e"
         }
       ]
     },
@@ -3077,7 +3718,7 @@
       "priority_rationale": "Deepen existing simulation-versus-presentation boundary with concrete engine configuration and ownership mismatch",
       "expected_artifact": "Independent source-only analysis note with original authored-event/authority checklist; existing article unchanged",
       "artifact_paths": [
-        "research/source-notes/unreal-notify-eligibility-authority.md"
+        "管理档案/研究记录/source-notes/unreal-notify-eligibility-authority.md"
       ],
       "acceptance": [
         "Read version-selected original Epic documentation and keep generated API distinct from source implementation",
@@ -3093,7 +3734,15 @@
       "next_action": "Retain source-only eligibility and sole server-local premise; existing engine evidence unchanged",
       "blockers": [],
       "completed_at": "2026-11-01T04:54:52.131797Z",
-      "commit_sha": "4fb1939b61fbb02a4e57ba3c9ec9c0e709156a87"
+      "commit_sha": "4fb1939b61fbb02a4e57ba3c9ec9c0e709156a87",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/unreal-notify-eligibility-authority.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/unreal-notify-eligibility-authority.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "fe3e19ebd76a390442150c5d70092a7df5d8bfc3c83c485fa8289bfb31e1897c"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0099",
@@ -3104,7 +3753,7 @@
       "priority_rationale": "Deepen network integration evidence with precise channel-local ordering versus application lifecycle boundary",
       "expected_artifact": "Source-only note with pinned ENet mechanism, independently scoped Godot docs, two-message scenario and intervention table",
       "artifact_paths": [
-        "research/source-notes/reliable-channel-entity-readiness.md"
+        "管理档案/研究记录/source-notes/reliable-channel-entity-readiness.md"
       ],
       "acceptance": [
         "Read pinned original ENet design and exact channel sequence/dispatch branches",
@@ -3120,7 +3769,15 @@
       "next_action": "Retain source-only permitted ordering and application lifecycle boundaries; no runtime delivery guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T04:59:55.958390Z",
-      "commit_sha": "cbd89912bbec0b7dd95ceaefc66cd76c4effe5ca"
+      "commit_sha": "cbd89912bbec0b7dd95ceaefc66cd76c4effe5ca",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/reliable-channel-entity-readiness.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/reliable-channel-entity-readiness.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5fe53d0ecc881f7ea94c84e4c28ad7adf361af4c40c722670b9759a4cf4ec446"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0100",
@@ -3131,7 +3788,7 @@
       "priority_rationale": "Deepen asset-budget handoff with pinned source-level target/result and metric-unit distinctions",
       "expected_artifact": "Standalone source note grounded in meshoptimizer API and stopping/scale implementation, with unexecuted two-request acceptance scenario",
       "artifact_paths": [
-        "research/source-notes/mesh-simplification-request-result.md"
+        "管理档案/研究记录/source-notes/mesh-simplification-request-result.md"
       ],
       "acceptance": [
         "Read pinned official API and actual return/stopping/scale branches",
@@ -3147,7 +3804,15 @@
       "next_action": "Retain actual-count and approximate-metric acceptance boundaries; no asset outcome inferred",
       "blockers": [],
       "completed_at": "2026-11-01T05:05:54.248311Z",
-      "commit_sha": "04beaaf3f36a5d0bed8308c3dad4c99dcf1b8cde"
+      "commit_sha": "04beaaf3f36a5d0bed8308c3dad4c99dcf1b8cde",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/mesh-simplification-request-result.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/mesh-simplification-request-result.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0705ebb4f3a21fb3165301f299a0dcafda2e3cb0076b4ed23625ca6ed0575e92"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0101",
@@ -3158,7 +3823,7 @@
       "priority_rationale": "Deepen the existing simplification metric explanation with an exact geometric counterexample and explicit complete-algorithm boundary",
       "expected_artifact": "Compact source-backed mechanism supplement to the new mesh request/result note, with hand derivation and original-paper/source comparison",
       "artifact_paths": [
-        "research/source-notes/mesh-simplification-request-result.md"
+        "管理档案/研究记录/source-notes/mesh-simplification-request-result.md"
       ],
       "acceptance": [
         "Read original QEM paper and pinned meshoptimizer plane/point/border construction and error evaluation",
@@ -3174,7 +3839,15 @@
       "next_action": "Retain isolated-plane proof beside full-metric exclusions; no library output inferred",
       "blockers": [],
       "completed_at": "2026-11-01T05:12:16.496918Z",
-      "commit_sha": "9e8a34719ee14687e96abe85ebc305126f3f2946"
+      "commit_sha": "9e8a34719ee14687e96abe85ebc305126f3f2946",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/mesh-simplification-request-result.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/mesh-simplification-request-result.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0705ebb4f3a21fb3165301f299a0dcafda2e3cb0076b4ed23625ca6ed0575e92"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0102",
@@ -3185,7 +3858,7 @@
       "priority_rationale": "Investigate a concrete first-use rendering performance gap using exact official sources, rejecting unsupported universal hitch-free claims",
       "expected_artifact": "Bounded source gate followed by useful source-backed engineering analysis if evidence is sufficient",
       "artifact_paths": [
-        "research/source-notes/pso-precache-first-use-acceptance.md"
+        "管理档案/研究记录/source-notes/pso-precache-first-use-acceptance.md"
       ],
       "acceptance": [
         "Identify exact official documentation version and primary-source scope",
@@ -3200,7 +3873,15 @@
       "next_action": "Retain collector-to-draw and visual/time acceptance distinctions; no engine result inferred",
       "blockers": [],
       "completed_at": "2026-11-01T05:16:43.739634Z",
-      "commit_sha": "7bc3099dde72d20aa234a747d3e823d5001bc67a"
+      "commit_sha": "7bc3099dde72d20aa234a747d3e823d5001bc67a",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/pso-precache-first-use-acceptance.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/pso-precache-first-use-acceptance.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4445a924855419ea75eebe5a62534264b7e0a7bf54b24cf880d1c2f8e12ef7d6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0103",
@@ -3211,7 +3892,7 @@
       "priority_rationale": "Close a concrete gameplay input teardown lifecycle gap with pinned implementation evidence instead of assuming callbacks occur later",
       "expected_artifact": "Bounded pinned-source gate and, if supported, an original teardown ordering analysis",
       "artifact_paths": [
-        "research/source-notes/input-disable-teardown-callback.md"
+        "管理档案/研究记录/source-notes/input-disable-teardown-callback.md"
       ],
       "acceptance": [
         "Verify exact official Input System tag and commit; inspect actual cancellation and disable path",
@@ -3226,7 +3907,15 @@
       "next_action": "Retain finite teardown assumptions and application ownership policy; no Unity runtime result inferred",
       "blockers": [],
       "completed_at": "2026-11-01T05:22:40.920711Z",
-      "commit_sha": "e68da81fd9fb0f9dd3856b60e3723da9d2496ecd"
+      "commit_sha": "e68da81fd9fb0f9dd3856b60e3723da9d2496ecd",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/input-disable-teardown-callback.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/input-disable-teardown-callback.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "784a088cf0b652ab898ba23564020cb75437fe08bb6d8b5bef849963cd24050f"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0104",
@@ -3263,7 +3952,7 @@
       "priority_rationale": "Examine a concrete music transition assumption with primary DSP evidence and exact algebra, separating sample power from loudness and clipping",
       "expected_artifact": "Bounded primary-source gate and original finite correlation derivation if supported",
       "artifact_paths": [
-        "research/source-notes/equal-power-crossfade-correlation.md"
+        "管理档案/研究记录/source-notes/equal-power-crossfade-correlation.md"
       ],
       "acceptance": [
         "Inspect primary DSP documentation or pinned implementation; do not infer latest version",
@@ -3279,7 +3968,15 @@
       "next_action": "Retain exact finite cross-moment and ideal-gain limits; no mixer or loudness result inferred",
       "blockers": [],
       "completed_at": "2026-11-01T05:33:00.723537Z",
-      "commit_sha": "cb564d4e7ae63004f118ceffdec2deb3292f064a"
+      "commit_sha": "cb564d4e7ae63004f118ceffdec2deb3292f064a",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/equal-power-crossfade-correlation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/equal-power-crossfade-correlation.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "dc81d0c83a8727566362f4e7f84ef5377fe4d3f5b5e9e5d8516e7b077fbd659c"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0106",
@@ -3290,7 +3987,7 @@
       "priority_rationale": "Strengthen recent mechanism analyses before expanding coverage; seek material contradictions rather than ceremonial edits",
       "expected_artifact": "A bounded exact-snapshot technical review with findings or scoped negative result, and any supported corrections",
       "artifact_paths": [
-        "research/audits/source-batch-adversarial-review/REVIEW.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Read exact published mesh, PSO, input-disable and tangent notes at pinned snapshot",
@@ -3306,7 +4003,15 @@
       "next_action": "Retain exact four-note snapshot review and reviewer overlap; no material correction required in checked scope",
       "blockers": [],
       "completed_at": "2026-11-01T05:37:15.515106Z",
-      "commit_sha": "13a5264e2f358717a3bfb8f83d1826174068dbe6"
+      "commit_sha": "13a5264e2f358717a3bfb8f83d1826174068dbe6",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/source-batch-adversarial-review/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/source-batch-adversarial-review/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "226012f68601441613ed7331d8bbc69b130ee387369ca2c36310b8e365818571"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0107",
@@ -3317,7 +4022,7 @@
       "priority_rationale": "Return from mechanism notes and adversarial review to an original commercial engineering case, subject to primary-source access and nonduplication",
       "expected_artifact": "Bounded original-source case gate, followed by a concrete case analysis only if evidence supports it",
       "artifact_paths": [
-        "research/source-notes/rocket-league-input-buffer-cadence.md"
+        "管理档案/研究记录/source-notes/rocket-league-input-buffer-cadence.md"
       ],
       "acceptance": [
         "Check existing coverage before claiming a new case",
@@ -3334,7 +4039,15 @@
       "next_action": "Retain historical production/consumption comparison and unknown controller semantics; no current-service guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T05:45:11.438430Z",
-      "commit_sha": "bb076e418680b0f19d999bcd03dea0d981da879e"
+      "commit_sha": "bb076e418680b0f19d999bcd03dea0d981da879e",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/rocket-league-input-buffer-cadence.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/rocket-league-input-buffer-cadence.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "9860d18a3abcfeed99b0e30bd57fcf10118fe9350604e44ac5d3aeed763711f3"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0108",
@@ -3345,7 +4058,7 @@
       "priority_rationale": "Study a distinct commercial simulation scheduling constraint from named primary developer testimony without reconstructing unprovided concurrency code",
       "expected_artifact": "A bounded historical mechanism source note with explicit testimony and implementation limits",
       "artifact_paths": [
-        "research/source-notes/noita-dirty-region-update-ownership.md"
+        "管理档案/研究记录/source-notes/noita-dirty-region-update-ownership.md"
       ],
       "acceptance": [
         "Verify original named developer interview attribution and selected optimization statements",
@@ -3361,7 +4074,15 @@
       "next_action": "Retain historical testimony and abstract access-set scope; no concurrency or current-engine guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T05:51:11.540422Z",
-      "commit_sha": "c0b8d36facfcbffb5e8a83f4b7a07aa99fac359b"
+      "commit_sha": "c0b8d36facfcbffb5e8a83f4b7a07aa99fac359b",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/noita-dirty-region-update-ownership.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/noita-dirty-region-update-ownership.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "8af0365527fd4091c36c3fcbf5ac7bfdba4f72a63ac9b58d1ec1f47d20e6d7d6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0109",
@@ -3372,7 +4093,7 @@
       "priority_rationale": "Follow a primary procedural-generation lead into an actual authoring/selection contract, rather than inferring semantic level correctness from compatibility labels",
       "expected_artifact": "Bounded original-author and pinned-source mechanism note if review supports the distinction",
       "artifact_paths": [
-        "research/source-notes/herringbone-tile-content-contract.md"
+        "管理档案/研究记录/source-notes/herringbone-tile-content-contract.md"
       ],
       "acceptance": [
         "Read original author texts and exact official stb source version/commit",
@@ -3388,7 +4109,15 @@
       "next_action": "Retain source-only template-interface scope; no generated map or Noita implementation guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T05:58:24.492442Z",
-      "commit_sha": "59e862880efdcdc7b2283b8dcfca5a75b083f875"
+      "commit_sha": "59e862880efdcdc7b2283b8dcfca5a75b083f875",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/herringbone-tile-content-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/herringbone-tile-content-contract.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "796597b6779b920274df046895d0ae7a26af5596338a856a4b8996bb1a655dd7"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0110",
@@ -3399,7 +4128,7 @@
       "priority_rationale": "Concrete original developer diagnosis case fills a gap beyond replay correctness models and generic failure-retention checklists",
       "expected_artifact": "Bounded source-backed diagnosis note after independent primary-source review",
       "artifact_paths": [
-        "research/source-notes/riot-divergence-diagnostic-interventions.md"
+        "管理档案/研究记录/source-notes/riot-divergence-diagnostic-interventions.md"
       ],
       "acceptance": [
         "Read original Riot 2018 detection and divergence case text with author attribution",
@@ -3415,7 +4144,15 @@
       "next_action": "Retain historical diagnostic case and explicitly invented predicate scope; no runtime or general bisection guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T06:02:34.014702Z",
-      "commit_sha": "6a2ac2cdceef9e0831b403988f77b05c0edd1f6b"
+      "commit_sha": "6a2ac2cdceef9e0831b403988f77b05c0edd1f6b",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/riot-divergence-diagnostic-interventions.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/riot-divergence-diagnostic-interventions.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "14edac4a47835ebcf8616f5368bdc985a04a9368dcfa9100f023c6db6f297562"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0111",
@@ -3515,9 +4252,7 @@
       "priority_rationale": "Independently challenge recent in-place source deepening before further expansion, separately labeling author-side self-review",
       "expected_artifact": "Bounded three-topic author and fresh-independent source review with exact file identities",
       "artifact_paths": [
-        "research/audits/integrated-source-depth/independent-review.md",
-        "research/audits/integrated-source-depth/author-check.md",
-        "research/audits/integrated-source-depth/SNAPSHOT-READBACK.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Pin exact three final articles and original baselines, not inferred latest content",
@@ -3533,7 +4268,27 @@
       "next_action": "Retain bounded review and disclosed author overlap; not whole-repository clearance",
       "blockers": [],
       "completed_at": "2026-11-01T06:24:50.769203Z",
-      "commit_sha": "384d13e4238e45a4e09799f7789669833c8e1dfc"
+      "commit_sha": "384d13e4238e45a4e09799f7789669833c8e1dfc",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/integrated-source-depth/independent-review.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth/independent-review.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "efb5b2e1ee917131ef8549d09be540a19bf4e18270e5fd3783e555eea6ff33d6"
+        },
+        {
+          "path": "research/audits/integrated-source-depth/author-check.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth/author-check.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "79d75c49782948cc5d97515d8b31fa5cc60e503a6dbe562ef8905e1ec42dbcde"
+        },
+        {
+          "path": "research/audits/integrated-source-depth/SNAPSHOT-READBACK.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth/SNAPSHOT-READBACK.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a59affd9b65d45517078e691753c7506acc7a2214d7b6c62865b8bf245ee01f0"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0115",
@@ -3571,7 +4326,7 @@
       "expected_artifact": "Integrated source-backed depth-space decision example and bounded source review",
       "artifact_paths": [
         "管理档案/历史正文/roles/rendering/graphics-programmer.md",
-        "research/source-notes/graphics-programmer-role.md"
+        "管理档案/研究记录/source-notes/graphics-programmer-role.md"
       ],
       "acceptance": [
         "Read historical Godot migration and versioned 4.6 tutorial with renderer-specific conventions",
@@ -3587,7 +4342,15 @@
       "next_action": "Retain valid reconstruction premises and separate ordering, axial depth and geometric length",
       "blockers": [],
       "completed_at": "2026-11-01T06:33:34.020978Z",
-      "commit_sha": "aae08932f12883d1a0f2049d208c260854a4e836"
+      "commit_sha": "aae08932f12883d1a0f2049d208c260854a4e836",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/graphics-programmer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/graphics-programmer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "2c205fb735ab1b4b44cc03a0828010e42c2adb02769c7361bccb10f7f3776314"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0117",
@@ -3599,7 +4362,7 @@
       "expected_artifact": "Integrated animation role example with source-backed formula and clearly unexecuted counterexample",
       "artifact_paths": [
         "管理档案/历史正文/roles/animation/game-animator.md",
-        "research/source-notes/game-animator-role.md"
+        "管理档案/研究记录/source-notes/game-animator-role.md"
       ],
       "acceptance": [
         "Read exact fixed Khronos formula and sampler constraints",
@@ -3615,7 +4378,15 @@
       "next_action": "Retain single-sampler ideal translation proof; no encoded asset or full character guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T06:38:47.132684Z",
-      "commit_sha": "84b583e2b35a9bfc45f1692f5631cb312f699c70"
+      "commit_sha": "84b583e2b35a9bfc45f1692f5631cb312f699c70",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/game-animator-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-animator-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "b343f82e0e6b4146a1bc2425b3efb9ce9becf7d0ea6da99d8bf674319138daed"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0118",
@@ -3663,7 +4434,7 @@
       "expected_artifact": "Integrated source-backed teardown decision separating tail preservation from immediate bank reclamation",
       "artifact_paths": [
         "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
-        "research/source-notes/fmod-event-bank-teardown.md"
+        "管理档案/研究记录/source-notes/fmod-event-bank-teardown.md"
       ],
       "acceptance": [
         "Read exact versioned event stop/release, bank unload and sample-data reference rules",
@@ -3686,6 +4457,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        },
+        {
+          "path": "research/source-notes/fmod-event-bank-teardown.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/fmod-event-bank-teardown.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0261f287349a581863dbdcc4419449aa91b3d2a9ae805c1ee76a8a9dbfa5e82f"
         }
       ]
     },
@@ -3699,7 +4476,7 @@
       "expected_artifact": "Integrated build-role example separating target ordering from executable file-level dependency",
       "artifact_paths": [
         "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
-        "research/source-notes/build-engineer-role.md"
+        "管理档案/研究记录/source-notes/build-engineer-role.md"
       ],
       "acceptance": [
         "Read fixed CMake 3.31.12 COMMAND, DEPENDS and CMP0112 source documentation",
@@ -3722,6 +4499,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3b53ab362c7383a14decb7b843e7c67156810d753016a7e4373c29fa0fc5c1fc"
+        },
+        {
+          "path": "research/source-notes/build-engineer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/build-engineer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "0e2578c47913516535f1beb92355d2cff1d6da4f09b677689cba304063d85512"
         }
       ]
     },
@@ -3734,7 +4517,7 @@
       "priority_rationale": "Resolve a discovered discrepancy between versioned sensor semantics and rolling documentation before making a current or general recommendation",
       "expected_artifact": "Bounded version-specific source/code gate followed by useful trigger-query analysis if evidence supports it",
       "artifact_paths": [
-        "research/source-notes/box2d-sensor-step-and-sweep.md"
+        "管理档案/研究记录/source-notes/box2d-sensor-step-and-sweep.md"
       ],
       "acceptance": [
         "Pin original documentation and implementation revisions rather than mixing release and rolling text",
@@ -3750,7 +4533,15 @@
       "next_action": "Retain pinned-version sensor scope and unexecuted geometry; no universal CCD or event-order guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T07:02:54.028160Z",
-      "commit_sha": "3025918b0af1b97c40dad779df25ba1357695e82"
+      "commit_sha": "3025918b0af1b97c40dad779df25ba1357695e82",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/box2d-sensor-step-and-sweep.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/box2d-sensor-step-and-sweep.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d8bb020a98e9d724c200902e94ed8372c1d1655c674b027701ec4518a405f838"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0122",
@@ -3762,7 +4553,7 @@
       "expected_artifact": "Version-specific source-backed catalog operation ownership addition and bounded unexecuted acceptance scenario",
       "artifact_paths": [
         "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
-        "research/source-notes/addressables-content-update-baseline.md"
+        "管理档案/研究记录/source-notes/addressables-content-update-baseline.md"
       ],
       "acceptance": [
         "Read official Addressables 1.21.21 manual and API pages directly",
@@ -3778,7 +4569,15 @@
       "next_action": "Retain explicit operation ownership and separate cache layers; no executed catalog or freshness claim",
       "blockers": [],
       "completed_at": "2026-11-01T07:07:38.419702Z",
-      "commit_sha": "85d67685cc2b5f2e0571701d79cd09b2d86c5dcb"
+      "commit_sha": "85d67685cc2b5f2e0571701d79cd09b2d86c5dcb",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/addressables-content-update-baseline.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/addressables-content-update-baseline.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d4cf7e6a01cbdf500606444a5e8e951cf3e329a7e35bdc50b545018970632d07"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0123",
@@ -3789,9 +4588,7 @@
       "priority_rationale": "Verify three recent depth additions with a fresh reviewer rather than expanding topic count; preserve original scouting overlap disclosure",
       "expected_artifact": "Bounded snapshot-linked adversarial review with exact article identities and source checks",
       "artifact_paths": [
-        "research/audits/integrated-source-depth-2/review.md",
-        "research/audits/integrated-source-depth-2/independent-review.md",
-        "research/audits/integrated-source-depth-2/SNAPSHOT-READBACK.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Pin the published snapshot and exact article hashes",
@@ -3807,7 +4604,27 @@
       "next_action": "Retain exact reviewed snapshot and limited source-only conclusions; no whole-article or runtime certification",
       "blockers": [],
       "completed_at": "2026-11-01T07:11:02.382205Z",
-      "commit_sha": "52471c9e69b9eaaf1efdd9a73314b52db61e0ff3"
+      "commit_sha": "52471c9e69b9eaaf1efdd9a73314b52db61e0ff3",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/integrated-source-depth-2/review.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth-2/review.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "633765778bc37d84512227969e279866dea136b1546a2379c2529f55400c08b7"
+        },
+        {
+          "path": "research/audits/integrated-source-depth-2/independent-review.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth-2/independent-review.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "3e56874252c156182e94920dbda180e91da07108999fd7d9ef833246a2f671dc"
+        },
+        {
+          "path": "research/audits/integrated-source-depth-2/SNAPSHOT-READBACK.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth-2/SNAPSHOT-READBACK.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "5363e2ae398f44fe9061eb4d16161cc5aed8b3d6dabbac78fea8916f2ff5f5c8"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0124",
@@ -3819,7 +4636,7 @@
       "expected_artifact": "Finite source-backed narrative role addition on lookahead-safe external binding and execution placement",
       "artifact_paths": [
         "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
-        "research/source-notes/narrative-designer-writer-role.md"
+        "管理档案/研究记录/source-notes/narrative-designer-writer-role.md"
       ],
       "acceptance": [
         "Pin ink v1.2.1 official tag and decisive Story.cs control flow",
@@ -3835,7 +4652,15 @@
       "next_action": "Retain fixed C# implementation and conditional host-effect scenario; no exactly-once or display guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T07:18:06.362311Z",
-      "commit_sha": "cb05b900135081fc823fa33131ac92ee70616939"
+      "commit_sha": "cb05b900135081fc823fa33131ac92ee70616939",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/narrative-designer-writer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/narrative-designer-writer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "50227851a12061c9dbd5d8d725ad11c0cadcedba26b2fd5a805a8ebdb9bf543a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0125",
@@ -3847,7 +4672,7 @@
       "expected_artifact": "Source-backed finite settings-control narration addition with unexecuted receiving conditions",
       "artifact_paths": [
         "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
-        "research/source-notes/game-ux-designer-role.md"
+        "管理档案/研究记录/source-notes/game-ux-designer-role.md"
       ],
       "acceptance": [
         "Read official XAG106 focused control, value/state and interruption guidance directly",
@@ -3870,6 +4695,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "9bc08a7db641df46592658e7b837cba200b036d81faae648db12b8d0ca79551b"
+        },
+        {
+          "path": "research/source-notes/game-ux-designer-role.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-ux-designer-role.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "c708733ea9ca2ae5b7f786bd80134b7cad948254d4c46883ffe2a04dd5256395"
         }
       ]
     },
@@ -3912,7 +4743,7 @@
       "expected_artifact": "Bounded source-backed normal-cycle semaphore reuse addition",
       "artifact_paths": [
         "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
-        "research/source-notes/presentation-queue-latency-boundary.md"
+        "管理档案/研究记录/source-notes/presentation-queue-latency-boundary.md"
       ],
       "acceptance": [
         "Separate submission fence completion from presentation wait completion",
@@ -3935,6 +4766,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3c899eb1d2b94b1c0a815d6a27ba2546332a0f2616881ae5aa4f4724da8b6353"
+        },
+        {
+          "path": "research/source-notes/presentation-queue-latency-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/presentation-queue-latency-boundary.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "828e0a0fd63ff545709ec00cfc70ddd1a4d7c66ca17b55562db89dd2ab5c3ec7"
         }
       ]
     },
@@ -3947,8 +4784,8 @@
       "priority_rationale": "Attempted falsification found no central error but a concrete source-backed state-migration completeness limit",
       "expected_artifact": "Bounded adversarial audit and a dated link from the unchanged prior analysis",
       "artifact_paths": [
-        "research/audits/ink-default-migration/review.md",
-        "research/source-notes/ink-save-content-compatibility.md"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/研究记录/source-notes/ink-save-content-compatibility.md"
       ],
       "acceptance": [
         "Do not invent a central-claim correction; preserve existing content-version and host-binding conditions",
@@ -3964,7 +4801,21 @@
       "next_action": "Retain original content-version gate and conditional omitted-default migration boundary; no runtime compatibility certification",
       "blockers": [],
       "completed_at": "2026-11-01T07:43:29.917705Z",
-      "commit_sha": "8272194c7f471e789413bff0cfaedf77b49520c9"
+      "commit_sha": "8272194c7f471e789413bff0cfaedf77b49520c9",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/ink-default-migration/review.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-default-migration/review.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a17b661be5fa868aae96948513fd2e0418f131c0edfe4b2d822b04a03795823f"
+        },
+        {
+          "path": "research/source-notes/ink-save-content-compatibility.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ink-save-content-compatibility.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a662d26f2deb2c2c58c8a3f5cdb6ad655a5919dac92c1780bad0a2b8f7a20465"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0129",
@@ -3975,7 +4826,7 @@
       "priority_rationale": "Output truncation can omit the destination without PARTIAL_RESULT; caller decisions must separate two resource limits",
       "expected_artifact": "New source-only fixed-version note with original caller policy and explicit preconditions",
       "artifact_paths": [
-        "research/source-notes/detour-findpath-status-and-capacity.md"
+        "管理档案/研究记录/source-notes/detour-findpath-status-and-capacity.md"
       ],
       "acceptance": [
         "Trace complete synchronous findPath and getPathToNode in fixed original version",
@@ -3991,7 +4842,15 @@
       "next_action": "Retain distinct search/output limits, documented preconditions and conservative caller policy; no Detour runtime claim",
       "blockers": [],
       "completed_at": "2026-11-01T07:49:16.798972Z",
-      "commit_sha": "cefd75e0c608f1f109e40b3ffe08e194f9912a43"
+      "commit_sha": "cefd75e0c608f1f109e40b3ffe08e194f9912a43",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/detour-findpath-status-and-capacity.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/detour-findpath-status-and-capacity.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "9bdb2a4659b2c34fd2a87bb04f5a2e6c075b3340415cc0e57e5efd54f69044af"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0130",
@@ -4002,7 +4861,7 @@
       "priority_rationale": "Wrapper-local fields and delayed free completion support different lifetime decisions",
       "expected_artifact": "New source-only note with ordinary-copy counterexamples and bounded release protocol",
       "artifact_paths": [
-        "research/source-notes/nativearray-copy-and-disposal-ownership.md"
+        "管理档案/研究记录/source-notes/nativearray-copy-and-disposal-ownership.md"
       ],
       "acceptance": [
         "Keep ordinary owning struct copies distinct from special non-owning views",
@@ -4018,7 +4877,15 @@
       "next_action": "Retain wrapper-local state, all-consumer and returned-disposal-handle boundaries; no engine execution claim",
       "blockers": [],
       "completed_at": "2026-11-01T07:56:08.774063Z",
-      "commit_sha": "0a82d32391ae71de85506dd5e1efeed5a180cb88"
+      "commit_sha": "0a82d32391ae71de85506dd5e1efeed5a180cb88",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/nativearray-copy-and-disposal-ownership.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/nativearray-copy-and-disposal-ownership.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "aac5d02abeaa013c5689f7b6e0677a6276104af4ddf7930dd2796236f4eee037"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0131",
@@ -4029,7 +4896,7 @@
       "priority_rationale": "Improve problem-driven synthesis and navigation across existing resource-lifetime evidence rather than adding another isolated topic",
       "expected_artifact": "A bounded comparison gate with distinct decisions and exact existing source identities; reject generic repetition",
       "artifact_paths": [
-        "research/source-notes/resource-release-and-reuse-routing.md"
+        "管理档案/研究记录/source-notes/resource-release-and-reuse-routing.md"
       ],
       "acceptance": [
         "Inspect actual existing target and record exact identity",
@@ -4045,7 +4912,15 @@
       "next_action": "Retain four distinct responsibility and permission outputs; no universal destruction or runtime proof",
       "blockers": [],
       "completed_at": "2026-11-01T08:04:23.266860Z",
-      "commit_sha": "bc06a54243263fde378d49011ea71388e6091741"
+      "commit_sha": "bc06a54243263fde378d49011ea71388e6091741",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/resource-release-and-reuse-routing.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/resource-release-and-reuse-routing.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "65b1a1f5b96b0d4361360fe1ffd25b00cf94506957dbd980e3b98f76a2d7044a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0132",
@@ -4056,7 +4931,7 @@
       "priority_rationale": "Strengthen a real existing evidence gap rather than expand topic or commit counts",
       "expected_artifact": "A concrete original-source depth gate tied to exact existing content and a new receiving decision",
       "artifact_paths": [
-        "research/source-notes/quaternion-sign-and-cubic-animation.md"
+        "管理档案/研究记录/source-notes/quaternion-sign-and-cubic-animation.md"
       ],
       "acceptance": [
         "Inspect actual existing target and record exact identity",
@@ -4072,7 +4947,15 @@
       "next_action": "Preserve exact-real cubic counterexample and nonzero scope; no exporter or player execution claim",
       "blockers": [],
       "completed_at": "2026-11-01T08:12:18.941858Z",
-      "commit_sha": "22522c44c86f92291859f9000ab1b2103d2dfd0f"
+      "commit_sha": "22522c44c86f92291859f9000ab1b2103d2dfd0f",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/quaternion-sign-and-cubic-animation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/quaternion-sign-and-cubic-animation.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "60b7000066babec7d83f66cae5bcbebd9ba051aa36a6c1339dba453c89cf7599"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0133",
@@ -4083,7 +4966,7 @@
       "priority_rationale": "Deepen actual production-case understanding and implementation tradeoffs without role-count padding",
       "expected_artifact": "A primary-source access and mechanism gate with concrete constraints, source locations and transfer limits",
       "artifact_paths": [
-        "research/source-gates/doom-combat-technical-content.md"
+        "管理档案/研究记录/source-gates/doom-combat-technical-content.md"
       ],
       "acceptance": [
         "Inspect actual existing target and record exact identity",
@@ -4101,7 +4984,15 @@
         "No directly inspected original technical segment available through the attempted public text/video routes"
       ],
       "previous_status": "needs-research",
-      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence"
+      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence",
+      "historical_artifacts": [
+        {
+          "path": "research/source-gates/doom-combat-technical-content.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-gates/doom-combat-technical-content.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "9e6052e8d8310eb5941aeb776df4659d76b3a729dd8715094914f2078d7ecf48"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0134",
@@ -4113,7 +5004,7 @@
       "expected_artifact": "Source-backed historical case with original two-rule trace and bounded receiving decision",
       "artifact_paths": [
         "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
-        "research/source-notes/valve-contextual-dialogue-rule-selection.md"
+        "管理档案/研究记录/source-notes/valve-contextual-dialogue-rule-selection.md"
       ],
       "acceptance": [
         "Read official original mechanism and exact physical page identities",
@@ -4136,6 +5027,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
           "commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
           "sha256": "cc29892f51c0047ccdbddb1d9437910d87b3545178b58b446f64ab62b38deba9"
+        },
+        {
+          "path": "research/source-notes/valve-contextual-dialogue-rule-selection.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/valve-contextual-dialogue-rule-selection.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "cdfcf645e2bd84db5ae712ab42c5b23c46bd2c80def910205072b8c88b81ee39"
         }
       ]
     },
@@ -4148,7 +5045,7 @@
       "priority_rationale": "Correct a concrete marketing-to-analysis receiving error without importing private account data or duplicating causal inference guidance",
       "expected_artifact": "Source-backed narrow note with original negative and positive set-difference counterexamples and receiving conditions",
       "artifact_paths": [
-        "research/source-notes/steam-report-reconciliation.md"
+        "管理档案/研究记录/source-notes/steam-report-reconciliation.md"
       ],
       "acceptance": [
         "Read both original Steam public report definitions",
@@ -4164,7 +5061,15 @@
       "next_action": "Retain report observation-set and business-classification boundaries; no actual traffic reconstruction",
       "blockers": [],
       "completed_at": "2026-11-01T08:34:37.435344Z",
-      "commit_sha": "994717808cae597012c0fe8b0ca4c93508506951"
+      "commit_sha": "994717808cae597012c0fe8b0ca4c93508506951",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/steam-report-reconciliation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/steam-report-reconciliation.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "e9b52b7461ac76503c00545b3984fe3133a6fc9ca56072668506efa747940536"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0136",
@@ -4175,7 +5080,7 @@
       "priority_rationale": "Clarify model-authoring component partition as a bake input, distinct from coordinate or tangent validity",
       "expected_artifact": "Source-backed narrow note with original partition merge and bijective rename contrast plus finite receiving procedure",
       "artifact_paths": [
-        "research/source-notes/model-bake-piece-visibility.md"
+        "管理档案/研究记录/source-notes/model-bake-piece-visibility.md"
       ],
       "acceptance": [
         "Read original node documentation with precise page and node identity",
@@ -4191,7 +5096,15 @@
       "next_action": "Retain primitive partition and candidate-hit scope; no actual bake or image result",
       "blockers": [],
       "completed_at": "2026-11-01T08:42:38.760677Z",
-      "commit_sha": "8a7ea75620b1633d5d049de26f91d88cbae21fdf"
+      "commit_sha": "8a7ea75620b1633d5d049de26f91d88cbae21fdf",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/model-bake-piece-visibility.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/model-bake-piece-visibility.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "54805925c54f3a5302cc41f84db86181d144cf9f8dec2ad3cb367d214d2c1a27"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0137",
@@ -4241,7 +5154,7 @@
         "管理档案/来源卡片/README.md",
         "GameLibrary/README.md",
         "管理档案/分类/reading-routes.json",
-        "research/audits/source-discovery-review/REVIEW.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Preserve already reachable paths and do not claim orphan rescue or user speed improvement",
@@ -4264,6 +5177,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/DISCOVERY.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "scope": "Retired compatibility entry; current reader guide is GameLibrary/README.md"
+        },
+        {
+          "path": "research/audits/source-discovery-review/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/source-discovery-review/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d85646badae1e343d330f277fdf2258106f10c3ada85e6f0cc47d613c042d95e"
         }
       ]
     },
@@ -4312,7 +5231,7 @@
       "priority_rationale": "Close a documented extension-path exclusion with a precise positive retirement condition rather than a generic completion warning",
       "expected_artifact": "Fixed-source note with finite semaphore and swapchain receiving decisions",
       "artifact_paths": [
-        "research/source-notes/vulkan-present-fence-retirement-coverage.md"
+        "管理档案/研究记录/source-notes/vulkan-present-fence-retirement-coverage.md"
       ],
       "acceptance": [
         "Pin official normative source and inspect transcluded signal conditions",
@@ -4328,7 +5247,15 @@
       "next_action": "Retain successful enabled KHR path and object-specific request coverage; no full shutdown or platform guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T09:14:20.438093Z",
-      "commit_sha": "879604d97e1de3b09f165b28ae2ced7b7d1aad5f"
+      "commit_sha": "879604d97e1de3b09f165b28ae2ced7b7d1aad5f",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/vulkan-present-fence-retirement-coverage.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/vulkan-present-fence-retirement-coverage.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "38795b0e571e3725eaa17ca6e9b77189c89ec5b03f57b6251c956a511b8ad8d4"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0141",
@@ -4376,7 +5303,7 @@
       "expected_artifact": "Small additive music subsection with source-scope note and unchanged historical model evidence",
       "artifact_paths": [
         "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
-        "research/source-notes/ffxv-pre-end-music-window.md"
+        "管理档案/研究记录/source-notes/ffxv-pre-end-music-window.md"
       ],
       "acceptance": [
         "Read original MAGI slide text and inspect relevant fixed/variable timing diagram",
@@ -4399,6 +5326,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        },
+        {
+          "path": "research/source-notes/ffxv-pre-end-music-window.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ffxv-pre-end-music-window.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "8fc8fecce8cc6785b3885a9b1852c13a20bc55f347b5817159340551422fa48b"
         }
       ]
     },
@@ -4412,7 +5345,7 @@
       "expected_artifact": "Historical production case and original finite dependency counterexample, with no scheduler implementation claim",
       "artifact_paths": [
         "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
-        "research/source-notes/horizon-streaming-dependency-initialization.md"
+        "管理档案/研究记录/source-notes/horizon-streaming-dependency-initialization.md"
       ],
       "acceptance": [
         "Read original official slide text and inspect order/process pages",
@@ -4436,6 +5369,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/horizon-streaming-dependency-initialization.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "sha256": "33f63c1679372ced520e33c9780680ca1066baeb90e8466398b4ec1d088356a4"
+        },
+        {
+          "path": "research/source-notes/horizon-streaming-dependency-initialization.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/horizon-streaming-dependency-initialization.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "59cf65c29bb494c64b4a0956321f2c6d2aa0a2efca79b3c98864f100a05c700f"
         }
       ]
     },
@@ -4448,7 +5387,7 @@
       "priority_rationale": "Concrete pinned collision interface and original geometry address weapon/query motion representation without claiming an observed engine failure",
       "expected_artifact": "Small additive subsection in existing source-only sensor and sweep note",
       "artifact_paths": [
-        "research/source-notes/box2d-sensor-step-and-sweep.md"
+        "管理档案/研究记录/source-notes/box2d-sensor-step-and-sweep.md"
       ],
       "acceptance": [
         "Verify exact release tag and original linear cast versus rotation sweep inputs",
@@ -4465,7 +5404,15 @@
       "next_action": "Retain explicit counterclockwise path and geometric-only scope; no actual engine miss or safe substep guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T09:45:48.423764Z",
-      "commit_sha": "58e20e961285e9342353340eb5593ce1d890abe2"
+      "commit_sha": "58e20e961285e9342353340eb5593ce1d890abe2",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/box2d-sensor-step-and-sweep.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/box2d-sensor-step-and-sweep.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d8bb020a98e9d724c200902e94ed8372c1d1655c674b027701ec4518a405f838"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0145",
@@ -4477,7 +5424,7 @@
       "expected_artifact": "Source-backed production case with original conditional timing analysis, not a reconstructed private queue",
       "artifact_paths": [
         "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
-        "research/source-notes/warlander-cancel-input-reservation.md"
+        "管理档案/研究记录/source-notes/warlander-cancel-input-reservation.md"
       ],
       "acceptance": [
         "Read original Japanese developer article and establish author/date/project scope",
@@ -4501,6 +5448,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md",
           "commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba",
           "sha256": "3c93c7a42044da1818334c081cc908ca590fa2a1f4592ae871bd101f4ae8fe96"
+        },
+        {
+          "path": "research/source-notes/warlander-cancel-input-reservation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/warlander-cancel-input-reservation.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "ce9cbe64261333be0256eaa49e3beac78084e3d3762114555fbea0873dd0dbf2"
         }
       ]
     },
@@ -4514,7 +5467,7 @@
       "expected_artifact": "Source-backed historical case with original two-clip counterfactual and explicit source/future-work scope",
       "artifact_paths": [
         "GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md",
-        "research/source-notes/ffxv-vaulting-successor-candidates.md"
+        "管理档案/研究记录/source-notes/ffxv-vaulting-successor-candidates.md"
       ],
       "acceptance": [
         "Read original diagrams and speaker notes with physical and printed page distinction",
@@ -4538,6 +5491,12 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/ffxv-vaulting-successor-candidates.md",
           "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
           "sha256": "a93d0762d0963539a3d1c996aedd973f15b3b65381e44460eef5dc97fa8cf573"
+        },
+        {
+          "path": "research/source-notes/ffxv-vaulting-successor-candidates.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/ffxv-vaulting-successor-candidates.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "d4e116be776fd73348ce62071efa473c5383966115b3a27393e38760ff34f3f0"
         }
       ]
     },
@@ -4551,8 +5510,7 @@
       "expected_artifact": "Bounded three-case audit and one-phrase source-aligned correction",
       "artifact_paths": [
         "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
-        "research/audits/production-case-adversarial-review/REVIEW.md",
-        "research/audits/production-case-adversarial-review/resolution.json"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Pin exact reviewed file identities",
@@ -4575,6 +5533,18 @@
           "url": "https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md",
           "commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba",
           "sha256": "3c93c7a42044da1818334c081cc908ca590fa2a1f4592ae871bd101f4ae8fe96"
+        },
+        {
+          "path": "research/audits/production-case-adversarial-review/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/production-case-adversarial-review/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "a6bd8df160b74a9ea26ade65b641681ece0987004d6508d5392106ae7d7cd7c2"
+        },
+        {
+          "path": "research/audits/production-case-adversarial-review/resolution.json",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/production-case-adversarial-review/resolution.json",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "c345d5d3c00f5cebf4b5bea33c629af87896674a1c31df1da2669731a1be381b"
         }
       ]
     },
@@ -4587,7 +5557,7 @@
       "priority_rationale": "Original gaming research supplies a concrete shared-treatment mechanism absent from existing eligibility and denominator notes",
       "expected_artifact": "Source-only note and one additive role discoverability link; no new indexed article",
       "artifact_paths": [
-        "research/source-notes/game-experiment-assignment-and-session-exposure.md"
+        "管理档案/研究记录/source-notes/game-experiment-assignment-and-session-exposure.md"
       ],
       "acceptance": [
         "Read fixed original preprint mechanism and assumptions, not just abstract",
@@ -4604,7 +5574,15 @@
       "next_action": "Retain assignment versus observed exposure and finite information-only examples; no estimator or effect inference",
       "blockers": [],
       "completed_at": "2026-11-01T10:17:43.351985Z",
-      "commit_sha": "1706dad975a6cfc879c8db1e203d980b4df0a13d"
+      "commit_sha": "1706dad975a6cfc879c8db1e203d980b4df0a13d",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/game-experiment-assignment-and-session-exposure.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/game-experiment-assignment-and-session-exposure.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "91b288039a0bdb50b6a34f53cbe7b853de2c0259332400181e7fc319199ad774"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0149",
@@ -4615,7 +5593,7 @@
       "priority_rationale": "Concrete time-validation and conditional history-sampling mechanism absent from existing movement prediction and dependency-time notes",
       "expected_artifact": "Fixed-source mechanism note with ideal two-command arithmetic and conditional position sample",
       "artifact_paths": [
-        "research/source-notes/lag-compensation-target-and-history-sample.md"
+        "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md"
       ],
       "acceptance": [
         "Resolve and read exact official SDK source without inferring current commercial behavior",
@@ -4632,7 +5610,15 @@
       "next_action": "Retain fixed-source target/history/candidate distinctions; no actual hit, global rewind or commercial-game guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T10:23:15.753941Z",
-      "commit_sha": "a280f1b2f0b7e781f93f50e56e1ece35c6588e66"
+      "commit_sha": "a280f1b2f0b7e781f93f50e56e1ece35c6588e66",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/lag-compensation-target-and-history-sample.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/lag-compensation-target-and-history-sample.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "4c1c0b2c01d31a90dcf4143198a1ba34a5a8b9083808ce25544372b1c261c6a1"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0150",
@@ -4643,7 +5629,7 @@
       "priority_rationale": "Original generator output contract and explicit mirrored-UV remap close a mesh reception gap separate from transforms and byte addressing",
       "expected_artifact": "Source-only note with two-triangle frame analysis and explicit six-record remap",
       "artifact_paths": [
-        "research/source-notes/tangent-corner-output-and-reindexing.md"
+        "管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md"
       ],
       "acceptance": [
         "Read fixed author callback contract, orientation grouping and glTF scope",
@@ -4660,7 +5646,15 @@
       "next_action": "Retain face-corner output and complete-attribute remapping scope; no generator output or rendered result claim",
       "blockers": [],
       "completed_at": "2026-11-01T10:28:59.604307Z",
-      "commit_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec"
+      "commit_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec",
+      "historical_artifacts": [
+        {
+          "path": "research/source-notes/tangent-corner-output-and-reindexing.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/source-notes/tangent-corner-output-and-reindexing.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "157ea0bf202dfb83879d2e44a5bd1e951537dc3d402e3e255e81354987539a1e"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0151",
@@ -4671,7 +5665,7 @@
       "priority_rationale": "Independent reviewer outside authorship/final-review roles challenges recent statistical, networking and mesh-reception examples before more expansion",
       "expected_artifact": "Exact-snapshot adversarial review with source reading scope and bounded negative findings",
       "artifact_paths": [
-        "research/audits/three-source-depth-adversarial/REVIEW.md"
+        "管理档案/研究记录/历史单元索引.json"
       ],
       "acceptance": [
         "Bind exact three remote and local artifact identities",
@@ -4688,7 +5682,15 @@
       "next_action": "Retain exact three-artifact review scope and no-correction outcome; not runtime or repository-wide validation",
       "blockers": [],
       "completed_at": "2026-11-01T10:32:58.438383Z",
-      "commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9"
+      "commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
+      "historical_artifacts": [
+        {
+          "path": "research/audits/three-source-depth-adversarial/REVIEW.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/three-source-depth-adversarial/REVIEW.md",
+          "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+          "sha256": "8ff5840480e54476312fb266cd61d4292eeeec44c6ba74e1c50078fc91264f0a"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0152",
@@ -4770,10 +5772,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T17:30:00Z",
+      "lease_until": "2026-11-01T17:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T16:32:04Z",
-      "next_action": "Consolidate remaining research and scripts into reviewed source/support derivatives, safe technical indexes and explicit historical archive references; preserve reader support and historical failures.",
+      "last_progress_at": "2026-11-01T17:03:01Z",
+      "next_action": "Verify the published root guide and required support paths; complete independent reader review before resuming the paused research backlog.",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

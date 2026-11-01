@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/optimized/run.py", line 13, in <module>
-    need(not sys.flags.optimize,'no -O')
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/godot-navigation-radius/negatives/optimized/run.py", line 7, in need
-    if not c:raise RuntimeError(m)
-             ^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: no -O

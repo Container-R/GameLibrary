@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/dependency-import-failure/run.py", line 9, in <module>
-    import PIL
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative/cases/dependency-import-failure/PIL.py", line 1, in <module>
-    raise ImportError('synthetic dependency failure')
-ImportError: synthetic dependency failure

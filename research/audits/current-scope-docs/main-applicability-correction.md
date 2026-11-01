@@ -1,3 +1,0 @@
-# Main source-index applicability correction
-
-2026-10-31 22:16 UTC. The original fixed-step source-index row described only the early noncontact callback scope and blanket-excluded physics/input. The current article already contains distinct synthetic-input and kinematic-contact evidence; the old row was stale, not proof that early fixtures gained those capabilities. Updated that one row to distinguish the separate fixtures and preserve physical-device/full-policy limits. The shared binary provenance caveat remains at the index top. No article, raw result, fixture source or runtime was changed or rerun. Reviewer numerical-scope findings are retained separately unchanged.

@@ -1,3 +1,0 @@
-# Scope and editorial correction
-
-Main and independent reviewer read the three official originals; main read the narrative/production sections and designated PDF extracted-text pages, not diagrams or videos. The bridge handoff is original and unexecuted. One prepublication acceptance row was corrected to respect deliberately ignorant NPC knowledge instead of assuming any repeated request is wrong. Japanese scenario-planner title was translated as narrative planning, avoiding confusion with level/scene planning. Review and final closure preserve distinct draft hashes. No runtime, translator/player result or private studio schema was obtained. Discovery gates and redundant extended source paraphrases are not published.

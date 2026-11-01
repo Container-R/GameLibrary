@@ -1,9 +1,0 @@
-# Main source reading: previous-mode input selection
-
-2026-11-01 UTC. Directly reopened Double Fine’s [Behind the Code: Designing Raz’s Jump](https://www.doublefine.com/news/devin-article-raz-jump), published 2024-04-23, Devin Kelly-Sneed. Read returned text at Metrics (70–73), Jump Metrics Tool (90–93), and Coyote Time (161–170). Read current ROLE-DESIGN-001 completely; baseline SHA-256 `5a678d55253e9261abf591c02443101c7e80894fdc199128cb6388182b09e4c3`.
-
-The decisive mechanism is conditional priority: when a movement mode ends, it can supply temporary data, including duration, a minimum-speed condition and input actions. Recent qualifying data is checked before the current mode reacts. The author distinguishes the selected prior-mode jump from an aerial jump. This is an action-classification question, not merely a timestamp-buffer question. The same page connects movement metrics to level-design single/double-jump requirements.
-
-The page also supplies example ground-mode coyote and pre-jump gravity settings. This unit deliberately does not turn those historical settings into a tuning recommendation or trajectory calculation; it must not claim the article supplies no parameters. No images, embedded videos, controller implementation or current game build were inspected. No inference about remaining aerial-jump resources, actual reachability, bypasses or measured player benefit follows from this reading.
-
-Existing role already discusses ability/layout contracts but not this input-priority mechanism. A narrow text search of existing solutions and case-studies returned no coyote/土狼/previous-movement-mode matches; this is a limited duplicate check, not proof that every related concept is absent. Reusing L3 adds a reading scope, not an independent source. Preserve the original 2026-10-31 reading record and date the new subsection separately.

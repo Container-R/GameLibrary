@@ -122,7 +122,7 @@ Wube 的2018-01-26开发日志 [S4] 中，Posila讨论优化对不同机器可�
 
 - **S4** Wube Software，Posila、Ernestas、Klonan，*Friday Facts #227 - Rendering, Trees & Scenario talk*，2018-01-26；本次仅以Rendering/VRAM optimizations（Posila）和Trees refresh（Ernestas）两节正文为案例依据：[原文](https://www.factorio.com/blog/post/fff-227)。没有将无关场景章节或图片当作已分析证据。
 
-详细范围与来源链见[来源笔记](../../../../research/source-notes/graphics-programmer-role.md)。仅原创概述，不转载职位全文。
+详细范围与来源链见[来源笔记](../../../研究记录/source-notes/graphics-programmer-role.md)。仅原创概述，不转载职位全文。
 
 - **S5** Clay John / Godot，*Introducing Reverse Z*，2024-04-29；4.3 历史迁移说明的 POSITION、DEPTH、depth_texture 与比较空间章节：[原文](https://godotengine.org/article/introducing-reverse-z/)。
 - **S6** Godot 4.6，*Advanced post-processing*；Full screen quad 与 Depth texture：[版本化文档](https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html)。页面可变，不是固定源码；仅文字阅读，未编译或运行 shader。

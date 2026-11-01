@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/fresh-invocation-harness/evidence/45aebb0a-4d59-4a51-84b2-69e0e71d9622/work/run.py", line 15, in <module>
-    raise RuntimeError('Run without -O: verification requires enabled assertions')
-RuntimeError: Run without -O: verification requires enabled assertions

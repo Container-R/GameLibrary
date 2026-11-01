@@ -1,5 +1,0 @@
-{"value": "# only comment", "rejected": "unsupported bare scalar syntax"}
-{"value": "foo: bar", "rejected": "unsupported bare scalar syntax"}
-{"value": "null", "rejected": "ambiguous nontext scalar must be quoted"}
-{"value": "[a, b]", "rejected": "unsupported bare scalar syntax"}
-{"value": "foo\t# comment", "rejected": "unsupported bare scalar syntax"}

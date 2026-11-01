@@ -1,9 +1,0 @@
-# Rig evaluation handoff: corrected source-depth acceptance
-
-2026-10-31. Current accepted addition extends the existing animation solution and adds a source note, not a new indexed article or role quota. There were **no new runtime tests**. The six-row worksheet and torso-aim/hand-IK counterfactual are explicitly unexecuted original proposals.
-
-[Review history](REVIEW.md) retains an important rejected draft attribution: early drafting and source review called the existing contact model a Godot root-motion experiment. Main integration checked the actual repository article, model README and raw four-test output and rejected that characterization before publication. Corrected section/note/gate identify only Python 2D geometry tests; unrelated Godot animation-event evidence is not applicable. Earlier review hashes/acceptance paragraphs are historical and superseded by the corrected acceptance near the end of REVIEW.md. No false root-motion runtime claim was published.
-
-Independent review also added spatial-input controls; main acceptance added constraint membership, Rig-layer, enable-state, weight/reference and actual-order controls. A hierarchy edit changing any of these does not isolate evaluation order as the sole cause. These are original experimental-design requirements, not claimed Unity observations.
-
-`baseline-and-sources.json` identifies the exact pre-edit article/model evidence and three primary-source scopes. `reviewed-article-section.txt` preserves exact corrected reviewed prose (its relative Markdown link is authored for the article directory, so it is archived as plain text rather than a falsely relocatable page); `discovery-gate.md` is a prospective historical gate with correction history, not a runtime report. No PDF pages, third-party diagrams, complete job page or full documentation body is republished. Main source review reproduced PDF screenshot cache failures and relied only on accessible selected text facts.

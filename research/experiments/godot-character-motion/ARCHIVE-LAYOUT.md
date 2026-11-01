@@ -1,5 +1,0 @@
-# Archive layout
-
-Current eight sources and author evidence are at this root. Independent exact sources and evidence are under review/native-repeat. Both finite invocations passed; there were no failed Godot attempts in this unit. Historical pre-native snapshots concern finite-number guards and explicit subtype casts; neither is a native failure. The review initial/final-code directories support the retained probe scripts. Main final-cast pure logs use the exact current eight sources; earlier no-cast logs correspond to historical-before-explicit-casts. Duplicate main source-copy directories remain local.
-
-No environment directories, bytecode, generated caches or third-party source bulk are published. Absolute directories in receipts bind historical invocations, not required current filesystem locations. Static consumer.py and review/check_native.py take explicit source/evidence roots. The independent checker is an observed-layout replay complementary to the author consumer's full configuration/schema/environment checks. Fresh execution requires a disposable exact-source copy, not running in these archived observations.

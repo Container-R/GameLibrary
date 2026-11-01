@@ -1,7 +1,0 @@
-Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
-
-CONFIG {"key_time":0.5,"key_value":{"args":[],"method":"marker"},"length":1.0,"loop":0,"method_mode":1,"method_path":".","process_mode":2,"value_path":".:sample","version":{"build":"official","hash":"7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3","hex":263683,"major":4,"minor":6,"patch":3,"status":"stable","string":"4.6.3-stable (official)","timestamp":0}}
-TRACE {"assigned":"attack_visual","finishes":0,"hits":0,"kind":"initialized","phase":"setup","position":0.0,"sample":0.0,"strategy":"seek_exact"}
-TRACE {"assigned":"attack_visual","finishes":0,"hits":0,"kind":"before","phase":"first","position":0.0,"sample":0.0,"strategy":"seek_exact"}
-TRACE {"assigned":"attack_visual","finishes":0,"hits":1,"kind":"method","phase":"first","position":0.5,"sample":0.0,"strategy":"seek_exact"}
-TRACE {"assigned":"attack_visual","finishes":0,"hits":1,"kind":"after","phase":"first","position":0.5,"sample":0.5,"strategy":"seek_exact"}

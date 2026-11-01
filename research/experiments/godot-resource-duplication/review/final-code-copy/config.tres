@@ -1,9 +1,0 @@
-[gd_resource type="Resource" load_steps=4 format=3]
-[ext_resource type="Script" path="res://config.gd" id="1_script"]
-[ext_resource type="Gradient" path="res://external.tres" id="2_external"]
-[sub_resource type="Gradient" id="Gradient_B"]
-offsets = PackedFloat32Array(0, 1)
-colors = PackedColorArray(1, 0, 0, 1, 1, 1, 1, 1)
-[resource]
-script = ExtResource("1_script")
-entries = [SubResource("Gradient_B"), SubResource("Gradient_B"), ExtResource("2_external")]

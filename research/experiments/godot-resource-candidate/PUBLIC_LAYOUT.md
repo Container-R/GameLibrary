@@ -1,9 +1,0 @@
-# Public archive and identity notes
-
-Final author and reviewer artifacts, original text-only resources, failure receipts and initial rejected oracle are preserved. No third-party asset, engine binary or upstream source code is distributed. The failed initial author run started one real engine process, which produced alias/color observations; the Python positive-ID predicate then rejected its negative integer ID. Final author and reviewer each ran two fresh processes. Do not describe these as five successful unique cases.
-
-Read-only `review/check.py` checks the archived final raw records with a separate literal oracle and validates the actual binary at its recorded path. It requires the same available binary and exact fixture layout; it is not a portable archive-only checker. The repository evidence registry does not execute the engine. Copy the author fixture to a fresh directory before invoking `run.py` or the freshness harness so historical records are not overwritten. Invocation ID, exit outcome and summary must be checked together.
-
-Instance IDs are exact Python integers here, including negative signed values. They identify simultaneously held objects within one process, not persistent assets or cross-process identity. Do not parse these tokens through lossy JavaScript Number conversion. The official comparison source `core/object/object_id.h` at 35e80b3a8822a9df9be390814b62f44c0a9c69e8 stores a uint64 ID, uses bit 63 for the ref-counted flag, provides an int64 conversion and defines validity as nonzero. This supports rejecting a positive-only assumption; it does not authenticate the installed build or establish every ID-generation detail.
-
-Request/get counts in result JSON are declarations. One request/get in this fixture is established by inspected call sites/control flow plus request/result record cardinality, not by independently incremented counters. No general exactly-once loading or cancellation guarantee is claimed.

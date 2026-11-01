@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/child_nonzero/run.py", line 23, in <module>
-    check(r.returncode==0 and not r.stderr.strip(),'subprocess failure: '+case)
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/icu-runner-negative/results/child_nonzero/run.py", line 7, in check
-    if not ok:raise RuntimeError(msg)
-              ^^^^^^^^^^^^^^^^^^^^^^^
-RuntimeError: subprocess failure: baseline

@@ -66,3 +66,7 @@
 3. Godot 4.6，[Resource](https://docs.godotengine.org/en/4.6/classes/class_resource.html#class-resource-method-duplicate)：duplicate、duplicate_deep与DeepDuplicateMode；包含属性flags、必需构造参数及资源重复引用的限制。
 4. Godot，[resource.cpp](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource.cpp#L268-L423)：`_duplicate_recursive`、`_duplicate`的范围、重映射与STORAGE遍历；另读508–552行左右的公开duplicate入口，确认默认INTERNAL与显式深复制模式。
 5. Godot，[resource_loader.cpp，516–625行](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp#L516-L625)及[791–801行](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp#L791-L801)：用户token提前复用、任务模式保存与收取计数。
+
+---
+
+[返回资产导入正文](../../GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md)

@@ -116,13 +116,13 @@ ink **v1.2.1** 的固定 C# 实现提供一个具体机制：为了判断换行�
 
 [玩法程序](../../../../GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md)帮助落实真实规则与反馈，[关卡设计](../design/level-designer.md)提供空间及任务约束，[QA](../../../../GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md)保留具体条件与复现，而不替作者决定全部角色意图。职责可能由同一人兼任，但创作决定、实现证据和语言判断不应互相冒充。
 
-[既有 Cygames 案例](../../../../GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md)继续负责文字/录音/批准的生产交接；本档案不重复其中的录音版本与认可范围交接说明。[ink 来源分析](../../../../research/source-notes/ink-save-content-compatibility.md)讨论另一条内容更新边界，且未执行运行时验证；能恢复路径不证明角色的知识状态和新内容含义仍吻合。
+[既有 Cygames 案例](../../../../GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md)继续负责文字/录音/批准的生产交接；本档案不重复其中的录音版本与认可范围交接说明。[ink 来源分析](../../../研究记录/source-notes/ink-save-content-compatibility.md)讨论另一条内容更新边界，且未执行运行时验证；能恢复路径不证明角色的知识状态和新内容含义仍吻合。
 
 下一项有价值的工作是让真实项目选择一个受控对白，先决定上述语义，再检查实现和接收语言包。当前没有运行对白、验证存档、录音、翻译或玩家结果；本文不能支持完整分支覆盖、发布审批权或效率提升声明。
 
 ## 参考来源
 
-访问2026-11-01。详细身份与未读范围见[来源记录](../../../../research/source-notes/narrative-designer-writer-role.md)。
+访问2026-11-01。详细身份与未读范围见[来源记录](../../../研究记录/source-notes/narrative-designer-writer-role.md)。
 
 - **S1** Guerrilla，[Guerrilla Spotlight: Annie Kitain](https://www.guerrilla-games.com/read/guerrilla-spotlight-annie-kitain)，2023-04-17；写作过程、协作及开放世界挑战问答。
 - **S2** Monolith Soft，[シナリオプランナー編](https://www.monolithsoft.co.jp/interview/2307.html)，2023-07-18；「世界の広がりを描く仕事」「NPCの人間らしさ」。

@@ -1,0 +1,983 @@
+{
+  "historical_commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+  "scope": "Directory-level preservation of technical source, outputs and failures in immutable history; not rerun or whole-archive verification",
+  "units": [
+    {
+      "unit": "research/experiments/art2d-alpha-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/art2d-alpha-contract",
+      "files_in_historical_unit": 30,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/audio-lifecycle",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/audio-lifecycle",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/client-prediction",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/client-prediction",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/cloud-save-resume",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/cloud-save-resume",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/deep-model-qa",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/deep-model-qa",
+      "files_in_historical_unit": 8,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/economy-ledger",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/economy-ledger",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/ffmpeg-silent-stem",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/ffmpeg-silent-stem",
+      "files_in_historical_unit": 145,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/filesystem-save-publication",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/filesystem-save-publication",
+      "files_in_historical_unit": 20,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/fixed-step",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/fixed-step",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/gltf-sparse-accessor",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/gltf-sparse-accessor",
+      "files_in_historical_unit": 59,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-animation-events",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-animation-events",
+      "files_in_historical_unit": 85,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-character-motion",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-character-motion",
+      "files_in_historical_unit": 127,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-combat-policy",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-combat-policy",
+      "files_in_historical_unit": 88,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-fixed-step",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-fixed-step",
+      "files_in_historical_unit": 22,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-focus-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-focus-boundary",
+      "files_in_historical_unit": 27,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-gltf-import-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary",
+      "files_in_historical_unit": 81,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-import-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-import-boundary",
+      "files_in_historical_unit": 80,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-navigation-completion",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-navigation-completion",
+      "files_in_historical_unit": 108,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-navigation-radius",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-navigation-radius",
+      "files_in_historical_unit": 75,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-navigation-sync",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-navigation-sync",
+      "files_in_historical_unit": 63,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-pause-input",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-pause-input",
+      "files_in_historical_unit": 29,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-physics-callback-v1",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-physics-callback-v1",
+      "files_in_historical_unit": 33,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-physics-callback-v2",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-physics-callback-v2",
+      "files_in_historical_unit": 70,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-recursive-focus-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-recursive-focus-boundary",
+      "files_in_historical_unit": 135,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-resource-broker",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-broker",
+      "files_in_historical_unit": 67,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-resource-candidate",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-candidate",
+      "files_in_historical_unit": 79,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-resource-duplication",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-resource-duplication",
+      "files_in_historical_unit": 196,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-root-motion-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-root-motion-boundary",
+      "files_in_historical_unit": 49,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-rpc-authority-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-rpc-authority-boundary",
+      "files_in_historical_unit": 201,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/godot-skeleton-modifier-order",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-skeleton-modifier-order",
+      "files_in_historical_unit": 63,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/icu-message-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/icu-message-boundary",
+      "files_in_historical_unit": 141,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/icu-plural-locale",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/icu-plural-locale",
+      "files_in_historical_unit": 103,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/lcms-transfer-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/lcms-transfer-boundary",
+      "files_in_historical_unit": 145,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/mesh-attribute-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/mesh-attribute-contract",
+      "files_in_historical_unit": 41,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/music-loop-frame-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/music-loop-frame-contract",
+      "files_in_historical_unit": 82,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/ogg-opus-frame-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/ogg-opus-frame-boundary",
+      "files_in_historical_unit": 135,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/root-motion",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/root-motion",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/scalar-inertialization",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/scalar-inertialization",
+      "files_in_historical_unit": 40,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/shader-matrix-layout",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/shader-matrix-layout",
+      "files_in_historical_unit": 92,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/simultaneous-combat-policy",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/simultaneous-combat-policy",
+      "files_in_historical_unit": 42,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/sqlite-commit-busy",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-commit-busy",
+      "files_in_historical_unit": 38,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/sqlite-ledger-boundary",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-ledger-boundary",
+      "files_in_historical_unit": 105,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/sqlite-writer-contention",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-writer-contention",
+      "files_in_historical_unit": 39,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/telemetry-attempt-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/telemetry-attempt-contract",
+      "files_in_historical_unit": 47,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/texture-block-budget",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/texture-block-budget",
+      "files_in_historical_unit": 160,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/ui-focus",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/ui-focus",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/experiments/vulkan-capability-probe",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/vulkan-capability-probe",
+      "files_in_historical_unit": 51,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/2026-10-31-coverage-priority.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/2026-10-31-coverage-priority.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/accessibility-critical-sound",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/accessibility-critical-sound",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/addressables-catalog-operation-ownership",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/addressables-catalog-operation-ownership",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/addressables-dependency-depth",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/addressables-dependency-depth",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/addressables-update-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/addressables-update-contract",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ai-director-case",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ai-director-case",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/alpha-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/alpha-integration",
+      "files_in_historical_unit": 6,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/animation-cubic-retiming",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/animation-cubic-retiming",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/audio-source-depth-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/audio-source-depth-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/box2d-rotation-input",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/box2d-rotation-input",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/box2d-sensor-step-and-sweep",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/box2d-sensor-step-and-sweep",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/build-engineering-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/build-engineering-role",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/cloud-save-adversarial-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/cloud-save-adversarial-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/cloud-save-second-review",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/cloud-save-second-review",
+      "files_in_historical_unit": 12,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/cmake-generated-tool-dependency",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/cmake-generated-tool-dependency",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/combat-applicability",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/combat-applicability",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/combat-engine-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/combat-engine-integration",
+      "files_in_historical_unit": 7,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/combat-policy-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/combat-policy-integration",
+      "files_in_historical_unit": 12,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/concept-art-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/concept-art-role",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/coverage-20261031",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/coverage-20261031",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/coverage-review-20261101",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/coverage-review-20261101",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/crossfade-correlation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/crossfade-correlation",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/current-scope-docs",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/current-scope-docs",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/cygames-scenario-handoff",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/cygames-scenario-handoff",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/data-triggered-eligibility",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/data-triggered-eligibility",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/detour-findpath-status",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/detour-findpath-status",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/evidence-applicability-27",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/evidence-applicability-27",
+      "files_in_historical_unit": 9,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/evidence-integrity",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/evidence-integrity",
+      "files_in_historical_unit": 19,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/factorio-derived-cache",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/factorio-derived-cache",
+      "files_in_historical_unit": 6,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ffxv-pre-end-window",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ffxv-pre-end-window",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ffxv-vaulting-successors",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ffxv-vaulting-successors",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/fmod-event-bank-teardown",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/fmod-event-bank-teardown",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/fresh-invocation-harness",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/fresh-invocation-harness",
+      "files_in_historical_unit": 230,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/game-animator-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/game-animator-role",
+      "files_in_historical_unit": 6,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/game-composer-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/game-composer-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/game-data-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/game-data-role",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/game-experiment-assignment",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/game-experiment-assignment",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/game-qa-role-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/game-qa-role-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ggpo-prediction-barrier",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ggpo-prediction-barrier",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/godot-provenance-audit.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/godot-provenance-audit.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/graphics-depth-space",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/graphics-depth-space",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/graphics-programmer-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/graphics-programmer-role",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/grid-nearest-hit",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/grid-nearest-hit",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/herringbone-content-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/herringbone-content-contract",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/horizon-streaming-dependency",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/horizon-streaming-dependency",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/initial-coverage-and-taxonomy.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/initial-coverage-and-taxonomy.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ink-content-compatibility-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-content-compatibility-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ink-default-migration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-default-migration",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ink-lookahead-host-actions",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-lookahead-host-actions",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ink-runtime-gate",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-runtime-gate",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ink-source-independent-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ink-source-independent-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/input-disable-callback",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/input-disable-callback",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/integrated-source-depth",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/integrated-source-depth-2",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/integrated-source-depth-2",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/lag-compensation-target",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/lag-compensation-target",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/level-coyote-action-selection",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/level-coyote-action-selection",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/level-designer-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/level-designer-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/lighting-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/lighting-role",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/liveops-destiny-2020",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/liveops-destiny-2020",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/localization-context-depth",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/localization-context-depth",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/localization-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/localization-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/mesh-simplification",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/mesh-simplification",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/model-bake-piece-contract",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/model-bake-piece-contract",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/motion-matching-event-request",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/motion-matching-event-request",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/music-frame-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/music-frame-integration",
+      "files_in_historical_unit": 10,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/narrative-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/narrative-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/nativearray-copy-disposal",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/nativearray-copy-disposal",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/navigation-radius-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/navigation-radius-integration",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/noita-update-ownership",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/noita-update-ownership",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/notify-eligibility",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/notify-eligibility",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/npc-action-case",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/npc-action-case",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/online-services-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/online-services-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/playtest-label-granularity",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/playtest-label-granularity",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/playtest-observation-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/playtest-observation-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/prediction-dependency-depth",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/prediction-dependency-depth",
+      "files_in_historical_unit": 7,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/present-latency",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/present-latency",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/present-wait-semaphore",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/present-wait-semaphore",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/production-case-adversarial-review",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/production-case-adversarial-review",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/production-manager-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/production-manager-role",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/pso-precache",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/pso-precache",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/quadric-metric",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/quadric-metric",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/quaternion-cubic-sign",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/quaternion-cubic-sign",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/queue-contract-guard",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/queue-contract-guard",
+      "files_in_historical_unit": 38,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/reading-routes",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/reading-routes",
+      "files_in_historical_unit": 8,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/real-time-vfx-artist-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/real-time-vfx-artist-role",
+      "files_in_historical_unit": 7,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/release-regression-1900",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/release-regression-1900",
+      "files_in_historical_unit": 17,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/reliable-channel",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/reliable-channel",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/resource-broker-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/resource-broker-integration",
+      "files_in_historical_unit": 5,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/resource-candidate-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/resource-candidate-integration",
+      "files_in_historical_unit": 8,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/resource-release-routing",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/resource-release-routing",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/rig-evaluation-handoff",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/rig-evaluation-handoff",
+      "files_in_historical_unit": 8,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/riot-divergence-diagnosis",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/riot-divergence-diagnosis",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/rocket-league-buffer",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/rocket-league-buffer",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/rollback-presentation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/rollback-presentation",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/runner-isolation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/runner-isolation",
+      "files_in_historical_unit": 57,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/runner-rejection",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/runner-rejection",
+      "files_in_historical_unit": 17,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/server-allocation-case",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/server-allocation-case",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/shader-layout-integration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/shader-layout-integration",
+      "files_in_historical_unit": 6,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/source-batch-adversarial-review",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/source-batch-adversarial-review",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/source-discovery-review",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/source-discovery-review",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/steam-report-reconciliation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/steam-report-reconciliation",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/store-artwork-review.md",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/store-artwork-review.md",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/tangent-basis",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/tangent-basis",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/tangent-index-reception",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/tangent-index-reception",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/three-source-depth-adversarial",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/three-source-depth-adversarial",
+      "files_in_historical_unit": 1,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/time-dilation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/time-dilation",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/tlou2-hybrid-probe",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/tlou2-hybrid-probe",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ui-artist-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ui-artist-role",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ux-focused-control-narration",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ux-focused-control-narration",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/ux-role",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/ux-role",
+      "files_in_historical_unit": 4,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/valve-dialogue-rule-selection",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/valve-dialogue-rule-selection",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/voice-observation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/voice-observation",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/vulkan-present-fence-retirement",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/vulkan-present-fence-retirement",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/warlander-cancel-input",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/warlander-cancel-input",
+      "files_in_historical_unit": 3,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "research/audits/workspace-recovery-2056",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/audits/workspace-recovery-2056",
+      "files_in_historical_unit": 2,
+      "disposition": "fixed_history_no_new_execution_or_republication_of_environment_values"
+    },
+    {
+      "unit": "scripts",
+      "historical_url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/scripts",
+      "disposition": "Historical tool versions and reports retained unchanged in fixed history; current tools are separately reviewed"
+    }
+  ]
+}

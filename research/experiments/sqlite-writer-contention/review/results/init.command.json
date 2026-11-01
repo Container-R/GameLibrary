@@ -1,9 +1,0 @@
-{
-  "command": [
-    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
-    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/sqlite-writer-contention/fixture/worker.py",
-    "init",
-    "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/sqlite-writer-contention/fixture/results/database-tj_1ac96/ledger.db"
-  ],
-  "returncode": 0
-}

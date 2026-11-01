@@ -24,3 +24,12 @@
 ## 已停用的根入口
 
 当前只使用[图书馆首页](../README.md)和[学科导览](../GameLibrary/README.md)。旧 CATALOG、DISCOVERY 兼容页已退出当前根目录；需要核对过去的入口时，可查[固定历史版本](https://github.com/Container-R/GameLibrary/tree/cc99dab476ab93db828afed227eb88b93574fcde)。这不改变历史审查当时所引用的文件。
+
+## 研究记录与维护工具
+
+- [来源分析与固定历史研究记录](研究记录/README.md)
+- [显式归档关系校验](工具/evidence/README.md)
+- [冻结ID书架检查](工具/library/README.md)
+- [只列出为默认的教学模型选择](工具/models/README.md)
+
+历史源码/输出保留在固定提交，目录归并不是新实验。当前维护工具只验证所声明的输入，不由空扫描认领完成。

@@ -105,4 +105,4 @@ Tomasz Mozolewski 在 Riot **2025-01-16** 的[第一方技术报告](https://www
 
 ## 来源定位
 
-Tomasz Mozolewski，Riot Games，[*Riot Tech Blog: Improving Performance by Streamlining League’s Server Selection*](https://www.riotgames.com/en/news/tech-blog-cpu-usage)，2025-01-16，英语，访问于 2026-10-31。关键定位：`The Goals`、`Building a Simulation`、`Solution Criteria`、`Results`、`Scoring`、`Live Results`、`Learnings`；[阅读范围与未知项](../../../../research/source-notes/league-server-allocation-observation-age.md)。本文无源代码、图表复制或独立性能复现。
+Tomasz Mozolewski，Riot Games，[*Riot Tech Blog: Improving Performance by Streamlining League’s Server Selection*](https://www.riotgames.com/en/news/tech-blog-cpu-usage)，2025-01-16，英语，访问于 2026-10-31。关键定位：`The Goals`、`Building a Simulation`、`Solution Criteria`、`Results`、`Scoring`、`Live Results`、`Learnings`；[阅读范围与未知项](../../../研究记录/source-notes/league-server-allocation-observation-age.md)。本文无源代码、图表复制或独立性能复现。

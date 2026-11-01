@@ -1,5 +1,0 @@
-  --path <directory>                X  Path to a project (<directory> must contain a "project.godot" file).
-  --headless                        R  Enable headless mode (--display-driver headless --audio-driver Dummy). Useful for servers and with --script.
-                                       --fixed-fps is forced when enabled, but it can be used to change movie FPS.
-  --single-threaded-scene           R  Force scene tree to run in single-threaded mode. Sub-thread groups are disabled and run on the main thread.
-  --fixed-fps <fps>                 R  Force a fixed number of frames per second. This setting disables real-time synchronization.

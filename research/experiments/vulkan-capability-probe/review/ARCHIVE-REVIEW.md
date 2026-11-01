@@ -1,7 +1,0 @@
-# Actual archived negative review
-
-2026-10-31 22:46 UTC. Read author invocation `c8cf0a91-18ed-4b66-afb4-11141bb7ed0d`: one native child, exactly one create attempt/return, VkResult -9 / VK_ERROR_INCOMPATIBLE_DRIVER; no enumeration or destroy call, no successful instance. Child exit 0 means structured observation completed, not Vulkan or GPU success. Empty stderr, no timeout, unchanged recorded source/loader identities. No claim about absence of physical GPUs or execution of shaders follows.
-
-Independent portable `check_archive.py` uses `archive-pins.json`, literal ABI/environment/trace/result expectations and source/raw/receipt hashes. It imports neither author code nor ctypes and reads no current library. Run it as `python -B check_archive.py <fixture-root>` (and `python -B -O ...`); both outputs passed and are retained in `archive-normal.json` / `archive-optimized.json`. The author consumer independently ran against this archive in both modes; outputs `consumer-archive-normal.json` / `consumer-archive-optimized.json`. All four checks are static; zero new native calls and no native repeat.
-
-Keep checker and pins adjacent when relocating. All pin paths are relative to fixture root, so historical absolute paths inside receipt remain provenance, not filesystem inputs. Hashes establish consistency of this fixed archive under the reviewed checker, not authenticated execution or signed provenance. Only this negative branch was actually exercised. Initial pre-native consumer weaknesses and pure checks remain separate history.

@@ -1,2 +1,0 @@
-# Independent literal oracle, before reviewer execution
-Four vertices: (1,2,3),(5,2,3),(1,8,3),(5,8,3). Original indices 0,1,2,2,1,3; engine stage indices 0,2,1,2,3,1. Each triangle cross Z=-24; normals near +Z component tolerance 1e-4, not inferred from winding. One TRIANGLES surface in ImporterMesh and ArrayMesh, no UV. One runtime import, not editor import or rendering. AABB recorded only. Original 160-byte buffer and JSON hashes must match frozen contract. Source/binary self-reported identities are not build authentication.

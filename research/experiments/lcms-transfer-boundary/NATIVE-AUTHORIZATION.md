@@ -1,5 +1,0 @@
-# Single author invocation authorization
-
-2026-11-01 00:54 UTC. Main accepts protocol31792686 and independently reviewed exact eight-source manifest (CODE-ACCEPTANCE SHA256 0faa31fc48a1910efc5abae6f8e611c7723720062cd5a1ae8f96014ed26e4671). Child b736a2447006453f3aa6f191eec5cb7e6b182b726187b6787951b6c76e78b22a; runner da79fb462d260692e6342b165193e45b6e85b234f5662c4ae5676318dd20c94c; checker01e4d03ddafd35d3cfe701a2be43a609b4ea8c6168cc20977907d226287b1549. Main full-code inspection and seven pure methods normal/-O pass. Initial pre-native false-accept findings/corrections preserved.
-
-Authorize exactly one run.py invocation, owning one bounded CMM child with version check and three conversion calls/two alpha conditions. Fixed library4cf9f690, protocol inputs/flags/tolerance unchanged. No independent repeat yet, no fallback/retry/profile search. Main executes and reviews the actual receipt/raw streams before any further authorization. No target CMM invocation occurred during prior source/code/pure reviews.

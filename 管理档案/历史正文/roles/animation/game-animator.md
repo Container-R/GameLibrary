@@ -112,7 +112,7 @@ glTF 的该模式为每个关键帧存储入切线、关键值和出切线；段
 
 ## 参考来源
 
-初始 S1–S3 于 2026-10-31 读取正文，S4 规范补读于 2026-11-01；未观看页面关联视频，未转载访谈或图像。完整适用范围见[来源记录](../../../../research/source-notes/game-animator-role.md)。
+初始 S1–S3 于 2026-10-31 读取正文，S4 规范补读于 2026-11-01；未观看页面关联视频，未转载访谈或图像。完整适用范围见[来源记录](../../../研究记录/source-notes/game-animator-role.md)。
 
 - **S1** Bandai Namco Studios，日语，[*仕事紹介：３Dアニメーター*](https://www.bandainamcostudios.com/recruit/career/interview/1229)，2021-12-03。定位：`私たちは、ここにこだわっています！` 中 `「アイドルマスター ミリオンライブ！シアターデイズ」の場合`，署名吉武敬一朗。
 - **S2** Ubisoft Montréal，英语雇主说明，[*Senior Technical Animator – March of Giants*](https://montreal.ubisoft.com/en/jobs/senior-technical-animator-march-of-giants/)，REF31771Z，发布日期未确认。定位：`Job description`、`What you’ll do`、`Qualifications`。

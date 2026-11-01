@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-payload-offset/run.py", line 68, in <module>
-    require(row['payload_offset'] == expected_offset,
-  File "/workspace/scratch/6d9a354d4cae/research-drafts/texture-runner-negative-v2-final/cases/wrong-payload-offset/run.py", line 24, in require
-    raise RuntimeError(message)
-RuntimeError: payload offset mismatch (1, 1, 'BC1'): 1 != 0

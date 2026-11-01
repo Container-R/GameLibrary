@@ -1,9 +1,0 @@
-# Revised source acceptance before native invocation
-
-2026-10-31 22:45 UTC. Exact files are recorded in `accepted-code-hashes.json`: child `dea86a157764b2767b9ad567d55a949fba86b7db8d418e62fd063ad99b584d84`, runner `7c86240726856e6ddee3651227a14b78a8be4b74a3292dd2d3b0863c68dad41f`, consumer `7b03c7e74c131bb3acd1f7dafdd2e5a47fcd68ce857cd76645835b01d811a9bc`.
-
-Accepted bounded source/control design. The prior false acceptances remain preserved, not actual native failures. Consumer now checks typed literal ABI without current-host ABI dependence, exact loader path/hash before and after, phase/category relationships, signed results/count bounds, void destruction return, metadata/argv/environment and post-run source identity. Native child loads the resolved hashed path and emits attempt/return records. Parent retains terminal setup/spawn failure evidence and checks the owned group even when its leader returns; this is not guaranteed process reaping or crash-safe native cleanup.
-
-Independent `probe_consumer.py` ran normal and optimized against these final sources: one consistent synthetic -9 creation failure was accepted as an API-negative observation, seven malformed records rejected. Each mode has eight record checks, zero subprocess/native calls. Raw outputs `final-consumer-probes.json` and `final-consumer-probes-optimized.json`. This does not test every category, timeout, real loader availability or any native result. Probe imports are inert, and no CDLL was loaded. Parent retains execution authorization; no independent native repeat has been requested.
-
-Unsigned source/output hashes and this consumer establish internal archive consistency under the reviewed source, not execution authenticity or GPU availability. A consistent API failure remains a failure observation, not a GPU test pass. No device creation, shader execution or hardware census follows from this acceptance.

@@ -1,0 +1,29 @@
+{
+  "run_id": "20261101T170301Z-legacy-reader-retirement",
+  "observed_at": "2026-11-01T17:03:01Z",
+  "verified_head_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+  "status": "legacy-reader-entry-retirement-published",
+  "published": {
+    "changed_paths": 118,
+    "legacy_current_files_retired": 35,
+    "retired_root_directories": [
+      "roles",
+      "knowledge",
+      "solutions"
+    ],
+    "reader_articles_preserved": 55,
+    "current_reader_local_outlinks": 117,
+    "fixed_history_links_checked": 103
+  },
+  "verification": "Expected tree blobs/deletions matched with no additional changes. Current and fixed-history target hashes and common heading slugs checked; actual navigation book to support note fetched. Not a rerun of old experiments or full browser proof.",
+  "publication_corrections": {
+    "full_payload_installation_metadata_miss": "Stopped original payload; three explicit derivatives independently reviewed before materially safer operation was accepted.",
+    "legacy_file_retirement_scope": "Stopped denied current-file removal; scope clarified before one permitted recovery, with published replacement and content-disposition record read back."
+  },
+  "supervisor_record": ".agent/audits/20261101T165000Z-reader.md",
+  "remaining_at_this_checkpoint": [
+    "research",
+    "scripts"
+  ],
+  "history_rewritten": false
+}

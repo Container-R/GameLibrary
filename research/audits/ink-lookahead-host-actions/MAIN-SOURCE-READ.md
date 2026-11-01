@@ -1,9 +1,0 @@
-# Main source read — ink lookahead and host actions
-
-2026-11-01. Official `inkle/ink` tag API resolves `v1.2.1` directly to `35c63e52f1d36060930dc7ed3cfba38ea224b528`. Read fixed `ink-engine-runtime/Story.cs` at 590–660, 788–825, 1943–2061 and 2104–2150. Also inspected the declarations of all BindExternalFunction overloads in the returned file: the General entry defaults to true; the shown zero-to-four-argument convenience declarations default to false. This is one implementation source, not independent execution evidence.
-
-ContinueSingleStep saves a newline snapshot and continues evaluating in case glue removes that boundary. Added text or the unsafe-function marker can restore the engine snapshot. CallExternalFunction rejects a bound unsafe function during string evaluation before it reaches the host delegate; outside that condition, an existing newline snapshot causes the unsafe marker and early return. The host delegate invocation is after those gates. General binding comments explicitly warn of earlier and repeated calls.
-
-State restoration swaps/patches ink state. This is not a supplied compensation mechanism for independently committed host rewards. The proposed reward scenario remains conditional and unexecuted; no compiled story or exact invocation count is supplied. Explicit false controls this lookahead boundary but does not implement exactly-once effects across re-entry, saves or retries. Moving a call before string generation is not proof that it waits for player selection; execution placement remains a separate narrative-host responsibility.
-
-Read the complete existing narrative role article and its source-note context; the new ink mechanism is distinct from studio interviews, task-system history and the adjacent save-compatibility source note. No original studio workflow is inferred from this hypothetical. No compiler, runtime, game, reward system, raw execution archive or binary was inspected or run.

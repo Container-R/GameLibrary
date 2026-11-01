@@ -1,3 +1,0 @@
-# Source-only composition responsibility scope
-
-Main and independent reviewer read both original English named-composer accounts. The Gameplay source is an original media interview transcript, not a studio specification; the PlayStation source is an attributed composer Q&A. Speaker testimony is separated from host generalizations and intended player effects. The original three-part arrangement choices are unexecuted musical-design proposals, not a source-project whitelist, legal permission or universal job authority. No music, notation, lyrics, audio/video, assets or runtime are analyzed or added. A separate pending runtime-evidence unit remains excluded.
