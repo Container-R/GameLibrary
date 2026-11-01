@@ -5,8 +5,8 @@
     "TASK-2026-0114"
   ],
   "started_at": "2026-11-01T06:17:00Z",
-  "ended_at": "2026-11-01T06:20:29.774386Z",
-  "outcome": "author and fresh-independent bounded reviews accepted; archival pending",
+  "ended_at": "2026-11-01T06:24:50.769203Z",
+  "outcome": "published and read back",
   "snapshot_commit": "aa990214ee20bbc0abf196810c50a4eb1755358d",
   "review_scope": "Three integrated additions: Addressables dependency/packing, Godot localization identity, ExP tutorial eligibility; not complete historical article or whole-repository clearance",
   "independence": "Author-side check explicitly overlaps authoring; separate fresh reviewer independently read decisive originals",
@@ -21,7 +21,12 @@
     "static_archive_checks": 519,
     "static_archive_failed": 0,
     "optimized_python_archive_checks": 519,
-    "declared_paths_checked": 145
+    "declared_paths_checked": 145,
+    "selected_blob_hashes_verified": 6,
+    "outside_tree_changes": 0,
+    "local_links_checked": 818,
+    "receipt_queue_tasks_checked": 115
   },
-  "next_action": "Continue next useful existing-topic mechanism after its source gate"
+  "next_action": "Verify original coyote mode-selection account and independent source gate before drafting",
+  "commit_sha": "384d13e4238e45a4e09799f7789669833c8e1dfc"
 }

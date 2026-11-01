@@ -2951,7 +2951,7 @@
       "id": "TASK-2026-0114",
       "question": "Do the integrated Addressables, localization and DATA depth additions preserve exact evidence scope and valid engineering decisions under adversarial review?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Independently challenge recent in-place source deepening before further expansion, separately labeling author-side self-review",
       "expected_artifact": "Bounded three-topic author and fresh-independent source review with exact file identities",
@@ -2967,11 +2967,35 @@
         "No whole-repository clearance, runtime rerun or privacy clearance inferred",
         "Resolve material findings before accepting the review; preserve scoped negatives"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:20:29.774386Z",
-      "next_action": "Archive verified bounded reviews; retain separate authorship and fresh-review scopes",
+      "next_action": "Retain bounded review and disclosed author overlap; not whole-repository clearance",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:24:50.769203Z",
+      "commit_sha": "384d13e4238e45a4e09799f7789669833c8e1dfc"
+    },
+    {
+      "id": "TASK-2026-0115",
+      "question": "How does previous-mode coyote input priority change a level designer\u2019s ability-sequence contract?",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 91,
+      "priority_rationale": "Deepen existing level-design article with a concrete first-party action-selection mechanism rather than generic buffering advice",
+      "expected_artifact": "Source-gated in-place role subsection and bounded source review",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original Double Fine action priority description",
+        "Check novelty against existing input and level-design guidance",
+        "Do not infer remaining aerial resources, trajectories or observed level bypass",
+        "Preserve historical reading records and source-only evidence scope"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:24:50.769203Z",
+      "next_action": "Verify original coyote mode-selection account and independent source gate before drafting",
       "blockers": []
     }
   ]
