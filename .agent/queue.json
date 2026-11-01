@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:13:10.128560Z",
-      "next_action": "Resolve a source-deferred object-specific presentation retirement contract without inheriting runtime evidence",
+      "last_progress_at": "2026-11-01T09:14:20.438093Z",
+      "next_action": "Review one unresolved content-production question in existing original-source research before choosing the next depth unit",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3674,7 +3674,7 @@
       "id": "TASK-2026-0140",
       "question": "Which object and past-request obligations are covered by one signaled maintenance1 present fence?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Close a documented extension-path exclusion with a precise positive retirement condition rather than a generic completion warning",
       "expected_artifact": "Fixed-source note with finite semaphore and swapchain receiving decisions",
@@ -3688,12 +3688,14 @@
         "Limit ordered fence inference to same queue and swapchain with retained request identity",
         "Do not claim platform support, runtime execution or full shutdown recovery"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T09:13:10.128560Z",
-      "next_action": "Validate exact independently reviewed source note and publish without legacy article changes",
-      "blockers": []
+      "next_action": "Retain successful enabled KHR path and object-specific request coverage; no full shutdown or platform guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:14:20.438093Z",
+      "commit_sha": "879604d97e1de3b09f165b28ae2ced7b7d1aad5f"
     }
   ]
 }

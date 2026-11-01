@@ -6,8 +6,8 @@
     "TASK-2026-0140"
   ],
   "started_at": "2026-11-01T09:10:33Z",
-  "ended_at": "2026-11-01T09:13:10.128560Z",
-  "outcome": "Fixed-source maintenance1 retirement note independently reviewed; validation pending",
+  "ended_at": "2026-11-01T09:14:20.438093Z",
+  "outcome": "Present-fence retirement source note published and exact readback matched",
   "sources_examined": [
     "https://github.com/KhronosGroup/Vulkan-Docs/tree/b94f8bd2d004d2949469d8a5071ee10eb7d23566",
     "https://docs.vulkan.org/refpages/latest/refpages/source/VkSwapchainPresentFenceInfoKHR.html"
@@ -30,7 +30,11 @@
     "optimized_archive_checks_passed": 519,
     "archive_check_scope": "Static declared archive consistency, not runtime or semantic validation",
     "local_links_checked": 878,
-    "declared_paths_checked": 188
+    "declared_paths_checked": 188,
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 140
   },
-  "next_action": "Verify publication then review a distinct evidence gap in existing production research"
+  "next_action": "Review one unresolved content-production question in existing original-source research before choosing the next depth unit",
+  "commit_sha": "879604d97e1de3b09f165b28ae2ced7b7d1aad5f"
 }
