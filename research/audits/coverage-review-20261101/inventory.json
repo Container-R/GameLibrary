@@ -1,0 +1,340 @@
+{
+  "snapshot": "5b494258a8c4e2c1db0df60f68b6b8ca761332a1",
+  "scope": "Metadata-bearing published knowledge roots only; not full source-note coverage or industry completeness",
+  "taxonomy_sha256": "c28cc442ed8851804e5d96bc6a38b27bc8ad367e8218441178e37905d4e79025",
+  "articles": [
+    [
+      "roles/production/production-manager.md",
+      "ROLE-PROD-001",
+      "PROD"
+    ],
+    [
+      "roles/animation/game-animator.md",
+      "ROLE-ANIM-001",
+      "ANIM"
+    ],
+    [
+      "roles/music/game-composer.md",
+      "ROLE-MUSIC-001",
+      "MUSIC"
+    ],
+    [
+      "roles/audio/interactive-audio-designer.md",
+      "ROLE-SFX-001",
+      "SFX"
+    ],
+    [
+      "roles/localization/localization-coordinator.md",
+      "ROLE-LOC-001",
+      "LOC"
+    ],
+    [
+      "roles/design/level-designer.md",
+      "ROLE-DESIGN-001",
+      "DESIGN"
+    ],
+    [
+      "roles/rendering/game-lighting-artist.md",
+      "ROLE-GFX-002",
+      "GFX"
+    ],
+    [
+      "roles/rendering/graphics-programmer.md",
+      "ROLE-GFX-001",
+      "GFX"
+    ],
+    [
+      "roles/engine/build-engineer.md",
+      "ROLE-ENGINE-001",
+      "ENGINE"
+    ],
+    [
+      "roles/data/game-data-analyst.md",
+      "ROLE-DATA-001",
+      "DATA"
+    ],
+    [
+      "roles/network/online-services-engineer.md",
+      "ROLE-NET-001",
+      "NET"
+    ],
+    [
+      "roles/art2d/environment-concept-artist.md",
+      "ROLE-ART2D-001",
+      "ART2D"
+    ],
+    [
+      "roles/art2d/game-ui-artist.md",
+      "ROLE-ART2D-002",
+      "ART2D"
+    ],
+    [
+      "roles/narrative/narrative-designer-writer.md",
+      "ROLE-NARR-001",
+      "NARR"
+    ],
+    [
+      "roles/programming/gameplay-programmer.md",
+      "ROLE-PROG-001",
+      "PROG"
+    ],
+    [
+      "roles/ux/game-ux-designer.md",
+      "ROLE-UX-001",
+      "UX"
+    ],
+    [
+      "roles/vfx/real-time-vfx-artist.md",
+      "ROLE-VFX-001",
+      "VFX"
+    ],
+    [
+      "roles/technical-art/technical-artist.md",
+      "ROLE-TA-001",
+      "TA"
+    ],
+    [
+      "roles/qa/game-quality-assurance.md",
+      "ROLE-QA-001",
+      "QA"
+    ],
+    [
+      "solutions/production/playtest-intervention-evidence.md",
+      "SOL-PROD-001",
+      "PROD"
+    ],
+    [
+      "solutions/animation/turn-in-place-foot-sliding.md",
+      "SOL-ANIM-001",
+      "ANIM"
+    ],
+    [
+      "solutions/animation/scalar-inertialization-continuity.md",
+      "SOL-ANIM-002",
+      "ANIM"
+    ],
+    [
+      "solutions/music/pcm-loop-frame-contract.md",
+      "SOL-MUSIC-001",
+      "MUSIC"
+    ],
+    [
+      "solutions/audio/silent-stem-normalization-boundary.md",
+      "SOL-SFX-002",
+      "SFX"
+    ],
+    [
+      "solutions/audio/music-state-transition-contract.md",
+      "SOL-SFX-001",
+      "SFX"
+    ],
+    [
+      "solutions/localization/pseudo-localization-contract.md",
+      "SOL-LOC-001",
+      "LOC"
+    ],
+    [
+      "solutions/design/single-player-economy-ledger.md",
+      "SOL-DESIGN-001",
+      "DESIGN"
+    ],
+    [
+      "solutions/rendering/presentation-queue-latency-boundary.md",
+      "SOL-GFX-003",
+      "GFX"
+    ],
+    [
+      "solutions/rendering/matrix-major-interface-contract.md",
+      "SOL-GFX-002",
+      "GFX"
+    ],
+    [
+      "solutions/rendering/block-compressed-mip-budget.md",
+      "SOL-GFX-001",
+      "GFX"
+    ],
+    [
+      "solutions/engine/addressables-content-update-baseline.md",
+      "SOL-ENGINE-002",
+      "ENGINE"
+    ],
+    [
+      "solutions/engine/asset-import-intent-contract.md",
+      "SOL-ENGINE-001",
+      "ENGINE"
+    ],
+    [
+      "solutions/data/attempt-completion-denominator-contract.md",
+      "SOL-DATA-001",
+      "DATA"
+    ],
+    [
+      "solutions/accessibility/critical-sound-information-contract.md",
+      "SOL-A11Y-001",
+      "A11Y"
+    ],
+    [
+      "solutions/art2d/alpha-association-contract.md",
+      "SOL-ART2D-001",
+      "ART2D"
+    ],
+    [
+      "solutions/ai/navigation-readiness-and-partial-path.md",
+      "SOL-AI-001",
+      "AI"
+    ],
+    [
+      "solutions/programming/client-prediction-authority-boundary.md",
+      "SOL-NET-001",
+      "NET"
+    ],
+    [
+      "solutions/programming/fixed-step-simulation-boundary.md",
+      "SOL-PROG-001",
+      "PROG"
+    ],
+    [
+      "solutions/ux/modal-focus-recovery.md",
+      "SOL-UX-001",
+      "UX"
+    ],
+    [
+      "solutions/vfx/niagara-performance-budget.md",
+      "SOL-VFX-001",
+      "VFX"
+    ],
+    [
+      "solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "SOL-MODEL-001",
+      "MODEL"
+    ],
+    [
+      "solutions/platform/cloud-save-resume-boundary.md",
+      "SOL-PLATFORM-001",
+      "PLATFORM"
+    ],
+    [
+      "case-studies/engine/factorio-derived-cache-load-equivalence.md",
+      "CASE-ENGINE-001",
+      "ENGINE"
+    ],
+    [
+      "case-studies/network/league-server-allocation-observation-age.md",
+      "CASE-NET-001",
+      "NET"
+    ],
+    [
+      "case-studies/ai/killzone3-plan-execution-continuation.md",
+      "CASE-AI-001",
+      "AI"
+    ],
+    [
+      "case-studies/ai/left4dead-director-pacing-evidence.md",
+      "CASE-AI-002",
+      "AI"
+    ],
+    [
+      "case-studies/narrative/cygames-scenario-voice-handoff.md",
+      "CASE-NARR-001",
+      "NARR"
+    ],
+    [
+      "case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
+      "CASE-NARR-002",
+      "NARR"
+    ],
+    [
+      "case-studies/liveops/destiny-config-admission-rollback.md",
+      "CASE-LIVE-001",
+      "LIVE"
+    ]
+  ],
+  "counts": {
+    "PROD": {
+      "role": 1,
+      "solution": 1
+    },
+    "ANIM": {
+      "role": 1,
+      "solution": 2
+    },
+    "MUSIC": {
+      "role": 1,
+      "solution": 1
+    },
+    "SFX": {
+      "role": 1,
+      "solution": 2
+    },
+    "LOC": {
+      "role": 1,
+      "solution": 1
+    },
+    "DESIGN": {
+      "role": 1,
+      "solution": 1
+    },
+    "GFX": {
+      "role": 2,
+      "solution": 3
+    },
+    "ENGINE": {
+      "role": 1,
+      "solution": 2,
+      "case-study": 1
+    },
+    "DATA": {
+      "role": 1,
+      "solution": 1
+    },
+    "NET": {
+      "role": 1,
+      "solution": 1,
+      "case-study": 1
+    },
+    "ART2D": {
+      "role": 2,
+      "solution": 1
+    },
+    "NARR": {
+      "role": 1,
+      "case-study": 2
+    },
+    "PROG": {
+      "role": 1,
+      "solution": 1
+    },
+    "UX": {
+      "role": 1,
+      "solution": 1
+    },
+    "VFX": {
+      "role": 1,
+      "solution": 1
+    },
+    "TA": {
+      "role": 1
+    },
+    "QA": {
+      "role": 1
+    },
+    "A11Y": {
+      "solution": 1
+    },
+    "AI": {
+      "solution": 1,
+      "case-study": 2
+    },
+    "MODEL": {
+      "solution": 1
+    },
+    "PLATFORM": {
+      "solution": 1
+    },
+    "LIVE": {
+      "case-study": 1
+    },
+    "BIZ": {},
+    "ACCESS": {}
+  }
+}

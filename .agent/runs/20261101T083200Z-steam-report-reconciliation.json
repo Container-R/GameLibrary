@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T083200Z-steam-report-reconciliation",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0135"
+  ],
+  "started_at": "2026-11-01T08:24:09Z",
+  "ended_at": "2026-11-01T08:33:09.261587Z",
+  "outcome": "Source-only report-reconciliation note independently accepted; validated for publication",
+  "sources_examined": [
+    "https://partner.steamgames.com/doc/marketing/traffic_reporting",
+    "https://partner.steamgames.com/doc/marketing/utm_analytics"
+  ],
+  "evidence_added": "Both original report definitions and discrepancy clause directly read; overlapping finite-set counterexamples reviewed",
+  "original_contribution": "Distinguish arithmetic difference, observation-set exclusion, actual untagged traffic and organic classification in a receiving decision",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Rolling documentation without fixed revision",
+    "No actual report, account, export, user data or link execution",
+    "Illustrative common-unit event sets are not claimed to model Steam implementation",
+    "Coverage counts do not establish complete professions or independent mechanisms"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 135,
+    "indexed_articles": 49,
+    "archive_checks_passed": 519,
+    "archive_checks_failed": 0,
+    "optimized_archive_checks_passed": 519,
+    "optimized_archive_checks_failed": 0,
+    "archive_check_scope": "Static declared archive consistency, not runtime or semantics",
+    "local_links_checked": 854,
+    "declared_paths_checked": 180
+  },
+  "next_action": "Verify publication then continue actual coverage gaps, not document quotas"
+}

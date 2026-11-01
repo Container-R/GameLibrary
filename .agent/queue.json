@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T09:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:23:30.741812Z",
-      "next_action": "Audit actual discipline and role coverage against taxonomy; select one undercovered high-value engineering interface from original technical sources, without a role-count target",
+      "last_progress_at": "2026-11-01T08:33:09.261587Z",
+      "next_action": "Coverage inventory found a specific BIZ/DATA report-reconciliation gap; review its exact source-only note before selecting further gaps",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3529,6 +3529,31 @@
       "blockers": [],
       "completed_at": "2026-11-01T08:23:30.741812Z",
       "commit_sha": "0a0705ed692555d4c320e8bfa3ce6966e3de8bff"
+    },
+    {
+      "id": "TASK-2026-0135",
+      "question": "Can Steam Traffic Breakdown Total Visits minus UTM Total Visits identify non-UTM or organic traffic?",
+      "discipline": "BIZ",
+      "status": "reviewing",
+      "priority": 92,
+      "priority_rationale": "Correct a concrete marketing-to-analysis receiving error without importing private account data or duplicating causal inference guidance",
+      "expected_artifact": "Source-backed narrow note with original negative and positive set-difference counterexamples and receiving conditions",
+      "artifact_paths": [
+        "research/source-notes/steam-report-reconciliation.md"
+      ],
+      "acceptance": [
+        "Read both original Steam public report definitions",
+        "Distinguish counts, overlapping observation sets, untagged events and organic sources",
+        "Do not invent actual event deduplication or missing-user reconstruction",
+        "Keep rolling documentation and no-account evidence scope explicit",
+        "Independently bind reviewed final artifact"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T09:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T08:33:09.261587Z",
+      "next_action": "Complete exact artifact review and publish source-only note with preserved prior evidence",
+      "blockers": []
     }
   ]
 }
