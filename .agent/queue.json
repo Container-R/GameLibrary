@@ -2924,11 +2924,13 @@
       "id": "TASK-2026-0113",
       "question": "How can a tutorial-hint experiment define comparable eligibility in both arms without selecting on treatment-only clicks?",
       "discipline": "DATA",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Deepen an exact cohort-selection mechanism in existing ROLE-DATA-001 with a concrete design tradeoff, not another generic causality disclaimer",
       "expected_artifact": "Integrated first-opportunity eligibility and counterfactual-logging method box if independent source review supports assumptions",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/data/game-data-analyst.md"
+      ],
       "acceptance": [
         "Read original Microsoft ExP pre/post experiment methods and distinguish cross-domain migration from game evidence",
         "Define shared eligibility and evaluation timing before treatment can affect it; preserve this as an assumption to verify",
@@ -2939,8 +2941,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:13:39.272887Z",
-      "next_action": "Independently review counterfactual logging and triggered population source gate",
+      "last_progress_at": "2026-11-01T06:16:18.558382Z",
+      "next_action": "Review integrated shared eligibility method and metric-window conditions",
       "blockers": []
     }
   ]

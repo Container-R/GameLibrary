@@ -6,16 +6,18 @@ status: source-backed
 primary_discipline: DATA
 related_disciplines: [DESIGN, PROG, QA, PROD, LIVE, UX]
 related_roles: [game-data-analyst, data-engineer, game-designer, gameplay-programmer, producer, user-researcher]
-related_topics: [metric-definition, analysis-question, cohort-eligibility, interpretation, decision-handoff]
+related_topics: [metric-definition, analysis-question, cohort-eligibility, interpretation, decision-handoff, counterfactual-logging, triggered-analysis]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["Bandai Namco Nexus 实践者文章2021-12-07", "Riot Insights介绍2015-11-16"]
+versions: ["Bandai Namco Nexus 实践者文章2021-12-07", "Riot Insights介绍2015-11-16", "Microsoft ExP 方法文2020-07-31与2021-12-24"]
 updated_at: 2026-11-01
 review_after: 2027-02-01
-verification_method: 日英第一方实践者正文核对；教程改版比较表为原创未执行建议；未收集玩家数据、执行实验或测量改版效果
+verification_method: 日英第一方实践者及 Microsoft ExP 方法原文所列章节核对；教程比较与资格设计为原创未执行建议；未收集玩家数据、执行实验或测量改版效果
 sources:
   - https://www.wantedly.com/companies/bandainamco-nexus/post_articles/362598
   - https://www.riotgames.com/en/work-with-us/disciplines/insights/get-data-informed-on-the-insights-blog
+  - https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/
+  - https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/
 ---
 
 # 游戏数据分析师：从指标请求到可解释的设计决定
@@ -69,6 +71,24 @@ sources:
 
 这不要求每次分析都成为大规模实验。描述性报告也能定位后续问题；关键是报告实际支持的结论，而非给所有分析贴上“因果”或“优化成功”。本工作表未在团队试用，不声称提高效率或降低错误率。
 
+### 方法补充：控制组没有新提示时，怎样定义可比较的资格？
+
+这是将 **Microsoft ExP 的跨领域方法迁移到教程问题的原创建议**，不是游戏实验结果。其 2020 年方法文介绍反事实记录：控制组不提供新功能，但记录在相应条件下是否本会触发；2021 年后续文讨论按触发资格分析及检查未触发补集。这里的“反事实”是功能触发条件的记录，**不是知道某个玩家接受另一种处理后的真实结果**。[实验前方法](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/) [实验后方法](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/)
+
+延续教程假设：设以玩家为随机分配单位，两组到达相同检查点后，才有首次显示新提示的机会。拟议资格在显示前按两组相同规则评估；控制组只记资格，不显示提示。**这要求资格及此前到达路径尚未被本次处理影响**，不能仅因字段名称相同就假定成立。若处理已改变更早导航、预加载或耗时，就需要重新设计资格，而不是继续套用此例。
+
+| 分析选择 | 能回答什么、付出什么代价 |
+|---|---|
+| 保留全部已分配对象 | 对准总体问题；大量没有机会受影响的对象可能降低检测灵敏度，但不能无数据就断言功效不足 |
+| 只筛点击新提示者 | 控制组没有同一点击机会，点击又可能由提示设计改变；这不是两组对称的资格条件 |
+| 两组共同记录首次提示资格 | 可聚焦潜在受影响者；需要核对覆盖、日志完整性和处理前条件。额外计算可能增加成本或延迟；较宽资格可降低实现负担，但会纳入更多未受影响者 |
+
+**资格不是完整的估计方案。** Microsoft 后文所述用户触发分析还排除首次触发前的日志。迁移到教程完成率时，必须另外规定观察单位、起点与窗口：不能删掉触发前的教程开始事件，却继续沿用原来的尝试分母；也不能把“有资格的玩家”与“该玩家之后的尝试”默认为同一单位。若改问“从首次资格机会起，指定窗口内是否完成”，就应明确这是怎样的新指标，而不是悄悄改变原完成率。
+
+实际交接至少包括：**两组共用的资格谓词及评估时点、排除对象为何不应受影响、指标单位与窗口如何衔接**。触发样本的分配比例检查（SRM）和未触发补集分析可以暴露问题，但未发现异常不证明无偏或遗漏影响为零。子群结果也不自动代表全体；教程完成率是比例指标，不能未经推导就把子群变化乘以触发比例作为总体收益。
+
+这段方法补充没有提供样本量、显著性阈值或实施保证。分析师应先把上述取舍交给玩法、埋点与研究接收者，再决定是否具备实施条件；没有实际数据时，不填写改版有效或无效的结论。
+
 ## 与既有工程证据的关系
 
 - [事件、尝试与玩家分母](../../solutions/data/attempt-completion-denominator-contract.md)已用18行原创合成输入检查有限快照与排列，帮助约束身份、窗口和未知状态。它没有真实玩家或服务调用，更不是上述教程改版实验；本角色不重写其算法，也不把纯模型升级为线上采集可靠性。
@@ -88,3 +108,5 @@ sources:
 
 - **S1** 中村一哉，Bandai Namco Nexus 企业 Wantedly 文章，日语，2021-12-07：[组织与分析流程介绍](https://www.wantedly.com/companies/bandainamco-nexus/post_articles/362598)。定位：課題設定フェーズ、分析報告フェーズ。
 - **S2** Riot Games 企业编辑，英语，2015-11-16：[Get Data Informed on the Insights Blog](https://www.riotgames.com/en/work-with-us/disciplines/insights/get-data-informed-on-the-insights-blog)。定位：开头、READY YOUR SPREADSHEETS、研究方法区分。
+
+- **方法补充** Microsoft ExP [Pre-Experiment Stage](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/)（2020-07-31）与 [Post-Experiment Stage](https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/)（2021-12-24）；采用反事实记录、用户触发分析与解释范围章节，不作为游戏效果证据。

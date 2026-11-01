@@ -1,0 +1,11 @@
+# Main source read — tutorial eligibility design
+
+2026-11-01 UTC. Main fully read existing ROLE-DATA-001 and source record; the selected files are safe prose without private execution metadata. Existing Japanese/English game-practitioner attribution remains unchanged. Read Microsoft ExP originals: Pre-Experiment Stage, dated 2020-07-31, Set Up Counterfactual Logging (50–58); Post-Experiment Stage, dated 2021-12-24, Segment By Triggered/Non-Triggered Users (42–51), Dilute Gains (52–57), plus observation-unit context. No figures or unpublished platform implementation read.
+
+The source method supplies symmetric feature eligibility when the control has no displayed feature. It is not knowledge of an individual's outcome under another treatment. The new tutorial design is an original cross-domain proposal: first opportunity, shared predicate and no prior treatment effect on the path, inputs or recording. That assumption is not guaranteed merely because evaluation precedes visible display. Preloading and logging overhead are possible influence routes to consider.
+
+The useful design choice is all assigned units versus treatment-only click filtering versus shared potential-exposure eligibility, retaining the original population question and the computational/sensitivity tradeoff. A wider flag may include unaffected units; missing affected units is a different issue. No quantitative power or product benefit is measured.
+
+Source-specific window qualification accepted: the post article excludes logs before first triggering. An eligibility proposal alone does not specify the complete estimator. Metric observation unit, numerator/denominator and post-eligibility outcome window must be defined separately; blindly discarding tutorial-start observations while retaining their old denominator is not a valid implementation recipe.
+
+SRM and complementary-population checks are diagnostics, not a proof of absence of bias or exact zero effects. A conditional population result is not the total-population result; no completion-rate multiplication shortcut is offered. No player data, production query, telemetry deployment, assignment, experiment or native execution occurred. Existing synthetic denominator checks remain unrelated to causal evidence for this new scenario.
