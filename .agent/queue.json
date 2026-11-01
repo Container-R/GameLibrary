@@ -304,8 +304,8 @@
       "lease_until": "2026-11-02T00:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T23:06:01Z",
-      "next_action": "Continue existing-reader evidence-gap research; prefer a direct source explanation when a new native experiment would not add necessary evidence.",
+      "last_progress_at": "2026-11-01T23:10:45Z",
+      "next_action": "Continue source-grounded engineering depth after duplicate screening; keep paper counterexamples separate from native observations and defer unsupported full rotational inertialization.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6360,6 +6360,33 @@
       "next_action": "Use only for fixed-source two-positive-equal-weight explanation; actual pipeline waveforms and listening outcomes remain separate.",
       "blockers": [],
       "verification_method": "Fixed official source and original ideal arithmetic comparison, independently reviewed; zero new mixing processes."
+    },
+    {
+      "id": "TASK-2026-0171",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Can independently normalizing an object-space ray invalidate a grid stopping comparison even when its reported hit point is correct?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Extend the existing A/B example to a concrete parameter-scale handoff error instead of adding a separate generic transform book.",
+      "expected_artifact": "GameLibrary/图形渲染/空间查询/光线求交/均匀网格中的最近命中与提前停止.md",
+      "artifact_paths": [
+        "GameLibrary/图形渲染/空间查询/光线求交/均匀网格中的最近命中与提前停止.md",
+        "管理档案/审查/射线参数尺度-读者与来源审查.md"
+      ],
+      "acceptance": [
+        "Read fixed Ray and Transform original implementation",
+        "Preserve existing A/B geometry in an explicit hypothetical helper example",
+        "Distinguish affine parameter preservation from normalized parameter conversion",
+        "Independent full-reader review without claiming a PBRT defect or runtime result"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T23:10:45Z",
+      "next_action": "Follow the actual API direction and interval contract; floating error, projective maps and complete transformed intersection remain outside this paper example.",
+      "blockers": [],
+      "verification_method": "Fixed original source and exact-real affine arithmetic, independently reviewed; no new ray query, build or rendering."
     }
   ],
   "execution_policy": {
