@@ -2308,7 +2308,7 @@
       "id": "TASK-2026-0090",
       "question": "When a reusable light prop is placed in a receiving scene, which author should own a local, shared-preset or scene-policy correction?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 84,
       "priority_rationale": "Address lighting-specific author/placer/receiving-scene interface; revised to avoid duplicating generic concept-art revision worksheets",
       "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
@@ -2322,11 +2322,35 @@
         "No rendered, causal, performance, player or current-employment claim from interviews",
         "Original comparison proposal clearly unexecuted; preserve initial novelty critique"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T04:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T03:47:13.519206Z",
-      "next_action": "Publish revised lighting production interface after source and novelty review",
+      "next_action": "Retain original unrendered correction-ownership proposal; actual scene, causal, performance and player evidence remain absent",
+      "blockers": [],
+      "completed_at": "2026-11-01T03:50:22.667497Z",
+      "commit_sha": "60b7a5d3e48ec3ef93c8bd7b336cc8819017799a"
+    },
+    {
+      "id": "TASK-2026-0091",
+      "question": "What do historical CCP Time Dilation sources distinguish between intentional clock slowing, shared scope and unfinished work after rate saturation?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 89,
+      "priority_rationale": "Add source-grounded production clock scope and saturation distinction to existing overload/debt article without another toy model",
+      "expected_artifact": "Small source-only supplement to solutions/programming/fixed-step-simulation-boundary.md and source note",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read three official original CCP Veritas texts and distinguish proposal/deployment/retrospective dates",
+        "Do not equate2011hypothetical5percent with2014reported10percent floor",
+        "Separate selected timer policy, historical node scope and lateness units; retain uncertainty",
+        "No new runtime/model/controller/current-service claim or inherited experiment upgrade"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T04:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T03:50:22.667497Z",
+      "next_action": "Review compact historical selective-clock and saturation supplement against original sources",
       "blockers": []
     }
   ]
