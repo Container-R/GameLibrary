@@ -1392,6 +1392,22 @@
       "review_paths": [
         "管理档案/审查/循环声音恢复位置-读者与导航审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-AI-002",
+      "reader_title": "把道路费用调低后，寻路为什么可能绕开便宜路线",
+      "floor": "游戏人工智能",
+      "area": "移动导航",
+      "shelf": "路径查询",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
+      "current_read_path": "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定原源、独立纸面数学与完整读者审读、实际本地路线接受；未运行引擎",
+      "origin": "original-three-node-explanation-of-cost-and-heuristic-scale",
+      "scope_note": "固定Detour源码与Unity文档提供实现边界；纸面图不是导航网格复现或性能证据",
+      "review_paths": [
+        "管理档案/审查/寻路费用尺度-读者与来源审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1404,6 +1420,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 67,
-  "post_baseline_research_books": 12
+  "reader_books_total": 68,
+  "post_baseline_research_books": 13
 }

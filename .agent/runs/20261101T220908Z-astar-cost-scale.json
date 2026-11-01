@@ -1,0 +1,39 @@
+{
+  "run_id": "20261101T220908Z-astar-cost-scale",
+  "observed_at": "2026-11-01T22:09:08Z",
+  "parent_verified_head": "c6f069e709587c44a66ba9a4bffa43c9b25226be",
+  "task": "TASK-2026-0168",
+  "outcome": "Accepted source-grounded navigation cost reader and bidirectional existing-reader links in containing commit.",
+  "reader_path": "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
+  "reader_sha256": "f6ab3ea312041dd4deff7ab5a98ad8de4d588b931c2d937fb54828bcff8fb5ac",
+  "reader_review_sha256": "483b669984cbe3a5bad6632c96fd0334c1f888dfaaec45a998ddf6789aa9b416",
+  "paper_review_sha256": "4f75601132bb32e2dfcc1690a871853c3d6937110a63fd5092ac250bb7de2f46",
+  "source_scope": {
+    "recast_tag": "v1.6.0",
+    "annotated_tag": "b4554541b658630816dba41466eb1cefb624519e",
+    "commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+    "tag_relation_not_signature_authentication": true,
+    "unity_actual_page_package": "AI Navigation 2.0.16"
+  },
+  "example": "Three directed edges, two complete routes; h scale0.999 selects cost10 while global distance-cost lower bound0.1 admits route1+0.1sqrt101. Paper derivation only.",
+  "runtime_experiments": 0,
+  "model_executions": 0,
+  "limits": [
+    "Not a Detour navmesh reproduction",
+    "No universal lower-cost parameter workaround",
+    "No geometric shortest-path or performance guarantee"
+  ],
+  "negative_selection_results": [
+    "Existing prediction reader already covers rollback side effects; fixed GGPO source revisit found no new required correction",
+    "Existing cloud-save reader already covers rename, fsync and multi-file crash boundaries; no duplicate book",
+    "CMake incremental dependency native candidate not executed because required build commands unavailable; existing source-only explanation retained"
+  ],
+  "prior_publication_readback": {
+    "commit": "c6f069e709587c44a66ba9a4bffa43c9b25226be",
+    "all_blobs_matched": 761,
+    "key_files_matched": 5,
+    "reader_books_tree_matched": 67,
+    "reader_links_tree_matched": 166
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 67
+    "reader_books_total": 68
   },
   "publication": {
-    "last_verified_head_sha": "00c7bbdbd86defddae1674f148f2c23cf97ec4e3",
+    "last_verified_head_sha": "c6f069e709587c44a66ba9a4bffa43c9b25226be",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "67 reader books unchanged; finite heading-checker code-span exception with raw HTML and formatted-heading refusal.",
-    "latest_verified_content_sha": "00c7bbdbd86defddae1674f148f2c23cf97ec4e3",
-    "reader_books_total": 67,
-    "post_baseline_research_books": 12,
-    "counts_basis": "Tool correction only; no new book or engine experiment."
+    "scope": "68 reader books; source-grounded cost/heuristic explanation with original paper graph and actual navigation links.",
+    "latest_verified_content_sha": "c6f069e709587c44a66ba9a4bffa43c9b25226be",
+    "reader_books_total": 68,
+    "post_baseline_research_books": 13,
+    "counts_basis": "One reviewed reader article, no native or graph-model execution; frozen55 remediation remains distinct."
   },
-  "next_action": "Continue existing source-grounded reader research; select a concrete uncovered engineering question rather than expanding Markdown parsing beyond the accepted finite scope.",
+  "next_action": "Continue existing reader-grounded engineering research after explicit duplicate-content checks; preserve source, paper-calculation and native execution boundaries.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T22:45:00Z",
+    "lease_until": "2026-11-01T22:50:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T220030Z-inline-heading-guard",
+  "last_run_id": "20261101T220908Z-astar-cost-scale",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T22:00:30Z",
-  "last_commit_sha": "00c7bbdbd86defddae1674f148f2c23cf97ec4e3",
+  "last_real_progress_at": "2026-11-01T22:09:08Z",
+  "last_commit_sha": "c6f069e709587c44a66ba9a4bffa43c9b25226be",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
