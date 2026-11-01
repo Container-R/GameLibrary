@@ -203,3 +203,5 @@ python3 scripts/evidence/test_verify.py
 [Steam 流量报表对账](source-notes/steam-report-reconciliation.md)用两个有限集合反例区分总数差、观察集合差、实际未标记访问与自然来源；提供市场到分析的接收条件，未访问真实报表。
 
 [模型烘焙 piece 可见集合](source-notes/model-bake-piece-visibility.md)区分跨输入名称对应与追踪分组不变；原创组件合并反例及接收步骤不预填实际命中或纹理结果。
+
+[均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。

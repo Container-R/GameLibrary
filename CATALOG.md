@@ -24,6 +24,10 @@
 - [游戏 UX 设计师：从交互意图到可操作流程的接收责任](roles/ux/game-ux-designer.md) — `source-backed` · `UX`
 - [实时特效美术：把视觉表现交接为有明确含义的游戏信号](roles/vfx/real-time-vfx-artist.md) — `source-backed` · `VFX`
 
+## 技术机制
+
+- [均匀网格最近命中：访问顺序为什么还需要停止边界](knowledge/rendering/uniform-grid-nearest-hit-termination.md) — `source-backed` · `GFX`
+
 ## 工程解决方案
 
 - [对白字幕齐全仍不够：关键非语音声音的信息等价验收](solutions/accessibility/critical-sound-information-contract.md) — `source-backed` · `A11Y`
