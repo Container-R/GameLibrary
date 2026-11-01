@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T062000Z-integrated-source-depth-audit",
+  "task_ids": [
+    "TASK-2026-0114"
+  ],
+  "started_at": "2026-11-01T06:17:00Z",
+  "ended_at": "2026-11-01T06:20:29.774386Z",
+  "outcome": "author and fresh-independent bounded reviews accepted; archival pending",
+  "snapshot_commit": "aa990214ee20bbc0abf196810c50a4eb1755358d",
+  "review_scope": "Three integrated additions: Addressables dependency/packing, Godot localization identity, ExP tutorial eligibility; not complete historical article or whole-repository clearance",
+  "independence": "Author-side check explicitly overlaps authoring; separate fresh reviewer independently read decisive originals",
+  "findings": "No material correction requested in exact reviewed additions",
+  "runtime_experiments": 0,
+  "validation": {
+    "indexed_articles": 48,
+    "queue_tasks_checked": 114,
+    "remote_article_bodies_read": 6,
+    "remote_article_sha256_matches": 6,
+    "unchanged_prior_experiment_files": 3227,
+    "static_archive_checks": 519,
+    "static_archive_failed": 0,
+    "optimized_python_archive_checks": 519,
+    "declared_paths_checked": 145
+  },
+  "next_action": "Continue next useful existing-topic mechanism after its source gate"
+}

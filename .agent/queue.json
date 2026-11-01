@@ -2955,7 +2955,11 @@
       "priority": 95,
       "priority_rationale": "Independently challenge recent in-place source deepening before further expansion, separately labeling author-side self-review",
       "expected_artifact": "Bounded three-topic author and fresh-independent source review with exact file identities",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/audits/integrated-source-depth/independent-review.md",
+        "research/audits/integrated-source-depth/author-check.md",
+        "research/audits/integrated-source-depth/SNAPSHOT-READBACK.md"
+      ],
       "acceptance": [
         "Pin exact three final articles and original baselines, not inferred latest content",
         "Review decisive original documents/code and material cross-source scope",
@@ -2966,8 +2970,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:18:43.236047Z",
-      "next_action": "Receive and verify fresh independent review alongside author-side adversarial check",
+      "last_progress_at": "2026-11-01T06:20:29.774386Z",
+      "next_action": "Archive verified bounded reviews; retain separate authorship and fresh-review scopes",
       "blockers": []
     }
   ]
