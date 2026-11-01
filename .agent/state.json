@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T10:49:03.268258Z",
-  "last_commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
+  "last_real_progress_at": "2026-11-01T10:53:00.078478Z",
+  "last_commit_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
   "last_run_id": "20261101T104400Z-reader-navigation-sample",
-  "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics",
+  "next_action": "Integrate environment-concept and technical-artist rewrites after independent reader review; continue all retained books without new research topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -25,7 +25,7 @@
     "latest_post_snapshot_content": "0b3042daccb997d57cfc375e045d8590f0513da9",
     "remote_blob_sample_scope": "No independent blob-equality sample in this supervisor; Steam sources and finite-set reasoning reviewed",
     "snapshot_archive_check_scope": "Supervisor read the primary worker remote run report; no independent rerun",
-    "reader_baseline_status": "phase-one-ready; remaining-books-require-rewrite",
+    "reader_baseline_status": "phase-one-published; one rewritten sample, remaining books require individual remediation",
     "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
@@ -33,8 +33,8 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
-    "status": "new-topic-publication-paused; reader-baseline checkpoint and coordinated migration only",
+    "latest_verified_content_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+    "status": "reader-baseline-rebuild-active; normal topic expansion paused",
     "deferred_optional_indexes": [],
     "object_visibility_recovery": {
       "first_observed": "2026-11-01T02:20:00Z",
@@ -49,7 +49,7 @@
     "pending_task_ids": [
       "TASK-2026-0092"
     ],
-    "latest_substantive_sha": "0b3042daccb997d57cfc375e045d8590f0513da9"
+    "latest_substantive_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {
@@ -83,6 +83,8 @@
     "rewritten_reader_books": 1,
     "legacy_entries_remaining": 54,
     "whole_library_rebuild_complete": false,
-    "legacy_composite_retained_unchanged": true
+    "legacy_composite_retained_unchanged": true,
+    "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+    "phase_one_readback_verified": true
   }
 }

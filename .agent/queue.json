@@ -4039,13 +4039,15 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T11:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T10:49:03.268258Z",
-      "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics",
+      "last_progress_at": "2026-11-01T10:53:00.078478Z",
+      "next_action": "Integrate environment-concept and technical-artist rewrites after independent reader review; continue all retained books without new research topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
         "sample_reader_review_accepted": true,
-        "whole_library_rebuild_complete": false
+        "whole_library_rebuild_complete": false,
+        "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+        "phase_one_readback_verified": true
       }
     }
   ],

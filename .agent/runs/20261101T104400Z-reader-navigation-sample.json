@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T10:43:54Z",
-  "ended_at": "2026-11-01T10:49:03.268258Z",
-  "outcome": "Actual navigation and first reader-oriented sample ready; remote publication pending",
+  "ended_at": "2026-11-01T10:53:00.078478Z",
+  "outcome": "Reader navigation and first rewritten asset-import book published and read back; remainder still requires individual editing",
   "baseline_head": "6bd1dfbec5e22126189ec87171d9bcadde4a6997",
   "reader_inventory_entries": 55,
   "rewritten_reader_books": 1,
@@ -31,5 +31,19 @@
     "Directory and script checks do not establish full reader acceptance",
     "Separate restricted execution-evidence hold unchanged"
   ],
-  "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics"
+  "next_action": "Integrate environment-concept and technical-artist rewrites after independent reader review; continue all retained books without new research topics",
+  "commit_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
+  "validation": {
+    "selected_blob_hashes_verified": 120,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1202,
+    "exact_remote_readbacks": [
+      "README.md",
+      "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/README.md",
+      "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md"
+    ],
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "reader_review_not_replaceable_by_script": true
+  }
 }
