@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T104400Z-reader-navigation-sample",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T10:43:54Z",
+  "ended_at": "2026-11-01T10:49:03.268258Z",
+  "outcome": "Actual navigation and first reader-oriented sample ready; remote publication pending",
+  "baseline_head": "6bd1dfbec5e22126189ec87171d9bcadde4a6997",
+  "reader_inventory_entries": 55,
+  "rewritten_reader_books": 1,
+  "remaining_legacy_entries": 54,
+  "physical_navigation": {
+    "floors": 17,
+    "areas": 39,
+    "shelves": 53
+  },
+  "reader_review": {
+    "navigation_questions": 5,
+    "concrete_finding": "Level-design route lacked a direct pointer to playtest guidance",
+    "resolution": "Added and independently followed cross-area guidance",
+    "sample": "Independent reader-perspective review; added concrete handoff and clean-copy versus cross-machine distinction",
+    "human_usability_test": false
+  },
+  "sample_sha256": "e3da00fdb813ad582b30974e90f5532f3bf29594087f9c8184ba7ba52ffa8e1b",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Remaining legacy entries have not passed new editorial baseline",
+    "Old composite body and all runtime archives retained in place unchanged",
+    "Directory and script checks do not establish full reader acceptance",
+    "Separate restricted execution-evidence hold unchanged"
+  ],
+  "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics"
+}

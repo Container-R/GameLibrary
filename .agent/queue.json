@@ -4022,7 +4022,11 @@
       "priority_rationale": "Current reader-facing baseline is inadequate; navigation and article quality supersede normal coverage expansion",
       "expected_artifact": "Inventory and old/new mapping, root reader guide, discipline/area/shelf/book hierarchy, rewritten sample and reader-first acceptance records",
       "artifact_paths": [
-        "RESEARCH_STANDARDS.md"
+        "RESEARCH_STANDARDS.md",
+        "README.md",
+        "GameLibrary/README.md",
+        "\u7ba1\u7406\u6863\u6848/\u56fe\u4e66\u76ee\u5f55.json",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4033,11 +4037,16 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:40:00Z",
+      "lease_until": "2026-11-01T11:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T10:42:26.603278Z",
-      "next_action": "Integrate coordinated architecture mapping, rewritten sample and updated skill; no restructuring until mapping is ready",
-      "blockers": []
+      "last_progress_at": "2026-11-01T10:49:03.268258Z",
+      "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics",
+      "blockers": [],
+      "milestones": {
+        "navigation_stage_ready": true,
+        "sample_reader_review_accepted": true,
+        "whole_library_rebuild_complete": false
+      }
     }
   ],
   "execution_policy": {

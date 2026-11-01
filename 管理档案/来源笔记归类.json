@@ -1,0 +1,774 @@
+[
+  {
+    "old_path": "research/source-notes/addressables-content-update-baseline.md",
+    "title": "Addressables 内容更新：来源与适用性记录",
+    "subject_route": "引擎与工具/构建发布",
+    "proposed_physical_path": "research/source-notes/addressables-content-update-baseline.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/engine/build-engineer.md",
+      "solutions/engine/addressables-content-update-baseline.md",
+      "case-studies/engine/horizon-streaming-dependency-initialization.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/asset-import-policy-availability.md",
+    "title": "日语原始来源发现：导入规则本身也必须可运行",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/asset-import-policy-availability.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/box2d-sensor-step-and-sweep.md",
+    "title": "Box2D 传感区域：检查当前占用，还是检查一步内经过？",
+    "subject_route": "玩法程序/玩法系统",
+    "proposed_physical_path": "research/source-notes/box2d-sensor-step-and-sweep.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/build-engineer-role.md",
+    "title": "Build-engineering role: source and method boundaries",
+    "subject_route": "引擎与工具/构建发布",
+    "proposed_physical_path": "research/source-notes/build-engineer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/engine/build-engineer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/character-motion-obstruction.md",
+    "title": "CharacterBody3D 位移与阻挡：来源和证据适用范围",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/character-motion-obstruction.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/ai/navigation-readiness-and-partial-path.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/detour-findpath-status-and-capacity.md",
+    "title": "Detour findPath：成功搜索与完整输出，是两项接收条件",
+    "subject_route": "游戏人工智能/移动导航",
+    "proposed_physical_path": "research/source-notes/detour-findpath-status-and-capacity.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/environment-concept-artist-role.md",
+    "title": "环境概念美术岗位：来源记录",
+    "subject_route": "美术设计/环境设计",
+    "proposed_physical_path": "research/source-notes/environment-concept-artist-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/art2d/environment-concept-artist.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/equal-power-crossfade-correlation.md",
+    "title": "等功率交叉淡化：增益曲线不能替素材签署相关性合同",
+    "subject_route": "声音与音乐/交互音乐",
+    "proposed_physical_path": "research/source-notes/equal-power-crossfade-correlation.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/factorio-derived-cache-sources.md",
+    "title": "Factorio derived-cache case source receipt",
+    "subject_route": "引擎与工具/运行时系统",
+    "proposed_physical_path": "research/source-notes/factorio-derived-cache-sources.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/engine/factorio-derived-cache-load-equivalence.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/ffxv-pre-end-music-window.md",
+    "title": "FFXV 预结束段与最终同步窗口：来源范围",
+    "subject_route": "声音与音乐/交互音乐",
+    "proposed_physical_path": "research/source-notes/ffxv-pre-end-music-window.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/audio/music-state-transition-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/ffxv-vaulting-successor-candidates.md",
+    "title": "FFXV 越障后继候选：来源与阅读边界",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/ffxv-vaulting-successor-candidates.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/animation/ffxv-vaulting-successor-candidates.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/fmod-event-bank-teardown.md",
+    "title": "FMOD 事件结束与 bank 卸载：来源范围",
+    "subject_route": "声音与音乐/游戏音效",
+    "proposed_physical_path": "research/source-notes/fmod-event-bank-teardown.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/audio/music-state-transition-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/fmod-virtualization-observation-boundary.md",
+    "title": "FMOD 虚拟化观察层：来源与适用边界",
+    "subject_route": "声音与音乐/游戏音效",
+    "proposed_physical_path": "research/source-notes/fmod-virtualization-observation-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/audio/music-state-transition-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-animator-role.md",
+    "title": "游戏动画师岗位：来源记录",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/game-animator-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/animation/game-animator.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-composer-role.md",
+    "title": "游戏作曲：原始来源定位",
+    "subject_route": "声音与音乐/交互音乐",
+    "proposed_physical_path": "research/source-notes/game-composer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/music/game-composer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-data-analyst-role.md",
+    "title": "游戏数据分析师：来源与适用范围",
+    "subject_route": "数据分析/指标设计",
+    "proposed_physical_path": "research/source-notes/game-data-analyst-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/data/game-data-analyst.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-experiment-assignment-and-session-exposure.md",
+    "title": "游戏实验：玩家分配不等于每一场的实际暴露",
+    "subject_route": "数据分析/指标设计",
+    "proposed_physical_path": "research/source-notes/game-experiment-assignment-and-session-exposure.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/data/game-data-analyst.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-lighting-artist-role.md",
+    "title": "游戏光照美术：来源定位与适用范围",
+    "subject_route": "技术美术/环境管线/场景光照",
+    "proposed_physical_path": "research/source-notes/game-lighting-artist-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/rendering/game-lighting-artist.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-ui-artist-role.md",
+    "title": "UI 美术：来源定位和适用边界",
+    "subject_route": "界面与体验/界面美术",
+    "proposed_physical_path": "research/source-notes/game-ui-artist-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/art2d/game-ui-artist.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/game-ux-designer-role.md",
+    "title": "游戏 UX 设计师：来源记录",
+    "subject_route": "界面与体验/交互设计",
+    "proposed_physical_path": "research/source-notes/game-ux-designer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/ux/game-ux-designer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/gltf-sparse-accessor.md",
+    "title": "glTF sparse accessor 来源与证据分层",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/gltf-sparse-accessor.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/godot-recursive-focus-boundary.md",
+    "title": "Recursive focus eligibility: exact source and evidence receipt",
+    "subject_route": "界面与体验/交互设计",
+    "proposed_physical_path": "research/source-notes/godot-recursive-focus-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/godot-rpc-authority-boundary.md",
+    "title": "Godot RPC 入口与应用授权：来源和证据定位",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/godot-rpc-authority-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/programming/client-prediction-authority-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/godot-runtime-provenance.md",
+    "title": "Godot 运行证据的身份边界：自报版本不等于构建来源已认证",
+    "subject_route": "管理档案/验证环境",
+    "proposed_physical_path": "research/source-notes/godot-runtime-provenance.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/qa/game-quality-assurance.md",
+      "roles/technical-art/technical-artist.md",
+      "solutions/ai/navigation-readiness-and-partial-path.md",
+      "solutions/animation/turn-in-place-foot-sliding.md",
+      "solutions/engine/asset-import-intent-contract.md",
+      "solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "solutions/programming/fixed-step-simulation-boundary.md",
+      "solutions/ux/modal-focus-recovery.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/graphics-programmer-role.md",
+    "title": "图形程序岗位：三份雇主材料的证据边界",
+    "subject_route": "图形渲染/渲染开发",
+    "proposed_physical_path": "research/source-notes/graphics-programmer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/rendering/graphics-programmer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/herringbone-tile-content-contract.md",
+    "title": "Herringbone Wang tiles：标签相容之后，谁保证片段接口相容？",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/herringbone-tile-content-contract.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/horizon-streaming-dependency-initialization.md",
+    "title": "Horizon 流送依赖与初始化：来源范围",
+    "subject_route": "引擎与工具/世界加载",
+    "proposed_physical_path": "research/source-notes/horizon-streaming-dependency-initialization.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/engine/horizon-streaming-dependency-initialization.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/icu-locale-plural-coverage.md",
+    "title": "ICU locale 分支覆盖：来源与运行证据分层",
+    "subject_route": "本地化与无障碍/本地化制作",
+    "proposed_physical_path": "research/source-notes/icu-locale-plural-coverage.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/localization/pseudo-localization-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/ink-save-content-compatibility.md",
+    "title": "ink旧存档遇到新内容：路径恢复、警告传播与叙事验收",
+    "subject_route": "叙事设计/运行时叙事",
+    "proposed_physical_path": "research/source-notes/ink-save-content-compatibility.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/narrative/narrative-designer-writer.md",
+      "case-studies/narrative/cygames-scenario-voice-handoff.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/ink-v1.2.1-host-boundary.md",
+    "title": "ink v1.2.1：外部绑定与故事检查点的固定版本来源审计",
+    "subject_route": "叙事设计/运行时叙事",
+    "proposed_physical_path": "research/source-notes/ink-v1.2.1-host-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/input-disable-teardown-callback.md",
+    "title": "Unity 输入禁用与清理：先进入停止态，再跨越回调边界",
+    "subject_route": "玩法程序/玩法系统",
+    "proposed_physical_path": "research/source-notes/input-disable-teardown-callback.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/killzone3-plan-execution-continuation.md",
+    "title": "Killzone 3 计划与执行案例：来源记录",
+    "subject_route": "游戏人工智能/行为决策",
+    "proposed_physical_path": "research/source-notes/killzone3-plan-execution-continuation.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/ai/killzone3-plan-execution-continuation.md",
+      "case-studies/ai/left4dead-director-pacing-evidence.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/lag-compensation-target-and-history-sample.md",
+    "title": "延迟补偿：命令目标、采用目标与历史样本不是同一个量",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/lag-compensation-target-and-history-sample.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/lcms-transfer-boundary.md",
+    "title": "sRGB 工作域交接：固定来源与实际证据分层",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/lcms-transfer-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/art2d/alpha-association-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/league-server-allocation-observation-age.md",
+    "title": "League 服务器分配：来源定位与证据边界",
+    "subject_route": "网络与在线服务/在线服务",
+    "proposed_physical_path": "research/source-notes/league-server-allocation-observation-age.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/network/online-services-engineer.md",
+      "case-studies/network/league-server-allocation-observation-age.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/left4dead-director-pacing.md",
+    "title": "Left 4 Dead Director 节奏案例：来源记录",
+    "subject_route": "游戏人工智能/体验调节",
+    "proposed_physical_path": "research/source-notes/left4dead-director-pacing.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/ai/left4dead-director-pacing-evidence.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/localization-coordinator-role.md",
+    "title": "本地化协调角色：来源定位",
+    "subject_route": "本地化与无障碍/本地化制作",
+    "proposed_physical_path": "research/source-notes/localization-coordinator-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/localization/localization-coordinator.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/mesh-simplification-request-result.md",
+    "title": "网格简化请求与返回结果：目标比例不是资产验收回执",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/mesh-simplification-request-result.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/model-bake-piece-visibility.md",
+    "title": "模型烘焙交接：piece 名称对应，不等于追踪集合未变",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/model-bake-piece-visibility.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/narrative-designer-writer-role.md",
+    "title": "叙事设计与写作职责：来源定位",
+    "subject_route": "叙事设计/剧情制作",
+    "proposed_physical_path": "research/source-notes/narrative-designer-writer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/narrative/narrative-designer-writer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/nativearray-copy-and-disposal-ownership.md",
+    "title": "NativeArray：值副本的 IsCreated，不是全局存活或释放完成通知",
+    "subject_route": "引擎与工具/运行时系统",
+    "proposed_physical_path": "research/source-notes/nativearray-copy-and-disposal-ownership.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/navigation-agent-completion.md",
+    "title": "NavigationAgent3D 路径结束与目标到达：来源说明",
+    "subject_route": "游戏人工智能/移动导航",
+    "proposed_physical_path": "research/source-notes/navigation-agent-completion.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/ai/navigation-readiness-and-partial-path.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/noita-dirty-region-update-ownership.md",
+    "title": "Noita 的 dirty region 与更新所有权：少做工作，不等于可以随意并行",
+    "subject_route": "玩法程序/玩法系统",
+    "proposed_physical_path": "research/source-notes/noita-dirty-region-update-ownership.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/ogg-opus-frame-boundary.md",
+    "title": "Ogg Opus frame-count boundary: source receipt",
+    "subject_route": "声音与音乐/音频制作",
+    "proposed_physical_path": "research/source-notes/ogg-opus-frame-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/music/pcm-loop-frame-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/online-services-engineer-role.md",
+    "title": "在线服务工程师：来源记录",
+    "subject_route": "网络与在线服务/在线服务",
+    "proposed_physical_path": "research/source-notes/online-services-engineer-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/network/online-services-engineer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/physics-callback-mutation-boundary.md",
+    "title": "Physics callback mutation: three distinct acknowledgments",
+    "subject_route": "玩法程序/玩法系统",
+    "proposed_physical_path": "research/source-notes/physics-callback-mutation-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/programming/fixed-step-simulation-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/prediction-dependency-time-contract.md",
+    "title": "预测纠正的依赖时间：输入后缀正确仍不等于相互作用重放正确",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/prediction-dependency-time-contract.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/programming/client-prediction-authority-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/presentation-queue-latency-boundary.md",
+    "title": "呈现队列与输入时效：来源定位",
+    "subject_route": "图形渲染/画面呈现",
+    "proposed_physical_path": "research/source-notes/presentation-queue-latency-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/rendering/presentation-queue-latency-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/production-manager-role.md",
+    "title": "制作管理岗位：来源记录",
+    "subject_route": "项目管理与测试/制作管理",
+    "proposed_physical_path": "research/source-notes/production-manager-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/production/production-manager.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/pso-precache-first-use-acceptance.md",
+    "title": "PSO 预缓存首显验收：新增 pass 应对照什么，而不只等待什么",
+    "subject_route": "图形渲染/着色器开发",
+    "proposed_physical_path": "research/source-notes/pso-precache-first-use-acceptance.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/quaternion-sign-and-cubic-animation.md",
+    "title": "四元数关键姿势等价，不代表立方动画等价",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/quaternion-sign-and-cubic-animation.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/real-time-vfx-artist-role.md",
+    "title": "实时特效美术岗位：来源记录",
+    "subject_route": "视觉特效/特效制作",
+    "proposed_physical_path": "research/source-notes/real-time-vfx-artist-role.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/vfx/real-time-vfx-artist.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/reliable-channel-entity-readiness.md",
+    "title": "可靠通道的顺序边界：先发送创建，不等于依赖实体已经就绪",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/reliable-channel-entity-readiness.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/resource-duplication-policy.md",
+    "title": "Resource复制图：来源与证据范围",
+    "subject_route": "引擎与工具/运行时系统",
+    "proposed_physical_path": "research/source-notes/resource-duplication-policy.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/resource-release-and-reuse-routing.md",
+    "title": "释放与复用合同：先选择责任单位，再设计 adapter",
+    "subject_route": "引擎与工具/运行时系统",
+    "proposed_physical_path": "research/source-notes/resource-release-and-reuse-routing.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/rig-evaluation-handoff.md",
+    "title": "Rig 求值顺序与跨岗位交接：来源边界",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/rig-evaluation-handoff.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/animation/turn-in-place-foot-sliding.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/riot-divergence-diagnostic-interventions.md",
+    "title": "Riot 分歧诊断：放大症状之后，还要保留同一条定位证据链",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/riot-divergence-diagnostic-interventions.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/rocket-league-input-buffer-cadence.md",
+    "title": "Rocket League 输入缓冲：生产节奏不等于权威端消费映射",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/rocket-league-input-buffer-cadence.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/rollback-presentation-boundary.md",
+    "title": "GGPO重放与表现输出：来源定位",
+    "subject_route": "网络与在线服务/实时同步",
+    "proposed_physical_path": "research/source-notes/rollback-presentation-boundary.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/programming/client-prediction-authority-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/runner-environment-contract.md",
+    "title": "Future runner environment contract: five selected writable locations",
+    "subject_route": "管理档案/验证环境",
+    "proposed_physical_path": "research/source-notes/runner-environment-contract.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/runner-invocation-freshness.md",
+    "title": "历史成功摘要不等于本次调用成功",
+    "subject_route": "管理档案/验证环境",
+    "proposed_physical_path": "research/source-notes/runner-invocation-freshness.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "roles/engine/build-engineer.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/scalar-inertialization-continuity.md",
+    "title": "标量惯性化：来源与数学选择",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/scalar-inertialization-continuity.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/animation/turn-in-place-foot-sliding.md",
+      "case-studies/animation/for-honor-motion-matching-event-request.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/silent-stem-normalization.md",
+    "title": "静音 stem 与结束输入：来源与有限取证范围",
+    "subject_route": "声音与音乐/音频制作",
+    "proposed_physical_path": "research/source-notes/silent-stem-normalization.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/audio/silent-stem-normalization-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/skeleton-modifier-order.md",
+    "title": "内建 LookAt 顺序与姿态观察：来源及证据范围",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/skeleton-modifier-order.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/steam-capsule-handoff.md",
+    "title": "Steam胶囊图交接：尺寸通过不等于用途、文案与排期通过",
+    "subject_route": "平台与发行/商店运营",
+    "proposed_physical_path": "research/source-notes/steam-capsule-handoff.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/steam-report-reconciliation.md",
+    "title": "Steam 流量报表对账：两个 Total Visits 不能直接相减为自然流量",
+    "subject_route": "平台与发行/商店运营",
+    "proposed_physical_path": "research/source-notes/steam-report-reconciliation.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/tangent-corner-output-and-reindexing.md",
+    "title": "切线生成的面角输出：旧顶点索引不是结果接收索引",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/tangent-corner-output-and-reindexing.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/tangent-handedness-normal-transform.md",
+    "title": "glTF 切线基交接：单位向量不等于正确的变换方向",
+    "subject_route": "技术美术/环境管线",
+    "proposed_physical_path": "research/source-notes/tangent-handedness-normal-transform.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "knowledge/rendering/uniform-grid-nearest-hit-termination.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/time-dilation-overload-clocks.md",
+    "title": "Time Dilation：历史时钟政策与过载边界的来源定位",
+    "subject_route": "玩法程序/玩法系统",
+    "proposed_physical_path": "research/source-notes/time-dilation-overload-clocks.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/programming/fixed-step-simulation-boundary.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/unreal-notify-eligibility-authority.md",
+    "title": "Unreal Notify 执行资格与权威请求：来源边界",
+    "subject_route": "角色动画/动画运行时",
+    "proposed_physical_path": "research/source-notes/unreal-notify-eligibility-authority.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/valve-contextual-dialogue-rule-selection.md",
+    "title": "Valve 情境对白规则选择：来源与读取范围",
+    "subject_route": "叙事设计/运行时叙事",
+    "proposed_physical_path": "research/source-notes/valve-contextual-dialogue-rule-selection.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/narrative/valve-contextual-dialogue-rule-selection.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/vulkan-capability-gate.md",
+    "title": "Vulkan 能力门：loader、instance、枚举和 shader 执行是不同证据",
+    "subject_route": "图形渲染/渲染开发",
+    "proposed_physical_path": "research/source-notes/vulkan-capability-gate.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "solutions/rendering/matrix-major-interface-contract.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/vulkan-present-fence-retirement-coverage.md",
+    "title": "Vulkan present fence：先按对象核对退役凭据的覆盖范围",
+    "subject_route": "图形渲染/画面呈现",
+    "proposed_physical_path": "research/source-notes/vulkan-present-fence-retirement-coverage.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  },
+  {
+    "old_path": "research/source-notes/warlander-cancel-input-reservation.md",
+    "title": "Warlander 取消许可与输入预约：来源定位",
+    "subject_route": "游戏设计/战斗设计",
+    "proposed_physical_path": "research/source-notes/warlander-cancel-input-reservation.md",
+    "status": "资料／待整理，不计入成书数量",
+    "linked_from_articles": [
+      "case-studies/animation/ffxv-vaulting-successor-candidates.md",
+      "case-studies/design/warlander-cancel-input-reservation.md"
+    ],
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+  }
+]

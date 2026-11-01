@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T10:42:26.603278Z",
+  "last_real_progress_at": "2026-11-01T10:49:03.268258Z",
   "last_commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
-  "last_run_id": "20261101T104100Z-reader-baseline-reset",
-  "next_action": "Integrate coordinated architecture mapping, rewritten sample and updated skill; no restructuring until mapping is ready",
+  "last_run_id": "20261101T104400Z-reader-navigation-sample",
+  "next_action": "Publish reviewed navigation and first rewritten sample; then rewrite remaining legacy books in reader-reviewed batches without new research topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -25,7 +25,7 @@
     "latest_post_snapshot_content": "0b3042daccb997d57cfc375e045d8590f0513da9",
     "remote_blob_sample_scope": "No independent blob-equality sample in this supervisor; Steam sources and finite-set reasoning reviewed",
     "snapshot_archive_check_scope": "Supervisor read the primary worker remote run report; no independent rerun",
-    "reader_baseline_status": "rebuild-required",
+    "reader_baseline_status": "phase-one-ready; remaining-books-require-rewrite",
     "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
@@ -76,8 +76,13 @@
     "normal_backlog_paused": true,
     "hierarchy_target": "GameLibrary / discipline / area / shelf / book",
     "root_guide_required": true,
-    "migration_started": false,
-    "sample_rewrite_accepted": false,
-    "restricted_evidence_hold_unchanged": true
+    "migration_started": true,
+    "sample_rewrite_accepted": true,
+    "restricted_evidence_hold_unchanged": true,
+    "sample_review_kind": "Independent reader-perspective review by agents, not human usability testing",
+    "rewritten_reader_books": 1,
+    "legacy_entries_remaining": 54,
+    "whole_library_rebuild_complete": false,
+    "legacy_composite_retained_unchanged": true
   }
 }
