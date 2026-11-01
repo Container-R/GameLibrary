@@ -2335,11 +2335,14 @@
       "id": "TASK-2026-0091",
       "question": "What do historical CCP Time Dilation sources distinguish between intentional clock slowing, shared scope and unfinished work after rate saturation?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 89,
       "priority_rationale": "Add source-grounded production clock scope and saturation distinction to existing overload/debt article without another toy model",
       "expected_artifact": "Small source-only supplement to solutions/programming/fixed-step-simulation-boundary.md and source note",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/programming/fixed-step-simulation-boundary.md",
+        "research/source-notes/time-dilation-overload-clocks.md"
+      ],
       "acceptance": [
         "Read three official original CCP Veritas texts and distinguish proposal/deployment/retrospective dates",
         "Do not equate2011hypothetical5percent with2014reported10percent floor",
@@ -2349,8 +2352,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T04:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:50:22.667497Z",
-      "next_action": "Review compact historical selective-clock and saturation supplement against original sources",
+      "last_progress_at": "2026-11-01T03:54:04.029133Z",
+      "next_action": "Publish reviewed historical clock-policy and saturation supplement",
       "blockers": []
     }
   ]

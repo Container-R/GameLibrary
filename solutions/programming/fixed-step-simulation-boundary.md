@@ -7,10 +7,13 @@ primary_discipline: PROG
 related_roles: [gameplay-programmer, animation-programmer, engine-programmer, network-programmer]
 related_topics: [fixed-timestep, input-buffering, deterministic-simulation, presentation-adapter]
 engines: [engine-agnostic, Unity, Godot]
-versions: ["Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
-updated_at: 2026-10-31
-verification_method: 原始文档、原创模型与本地Godot回调及两配置kinematic碰撞查询边界；含失败历史与独立复验，未运行Unity或跨平台确定性测试
+versions: ["CCP Veritas historical posts 2011-04-22 / 2012-02-10 / 2014-01-24", "Unity 6000.0 文档", "Input System 1.11.2 文档", "Godot4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
+updated_at: 2026-11-01
+verification_method: TiDi补充仅历史原文与未执行接收问题；原始文档、原创模型与本地Godot回调及两配置kinematic碰撞查询边界；含失败历史与独立复验，未运行Unity或跨平台确定性测试
 sources:
+  - https://www.eveonline.com/news/view/introducing-time-dilation-tidi
+  - https://www.eveonline.com/news/view/time-dilation-hows-that-going
+  - https://www.eveonline.com/news/view/what-a-hed-ache
   - https://docs.godotengine.org/en/4.6/classes/class_collisionshape2d.html
   - https://docs.godotengine.org/en/4.6/classes/class_area2d.html
   - https://docs.godotengine.org/en/4.6/classes/class_object.html
@@ -207,3 +210,35 @@ record(backlog=A, simulatedSteps=steps)
 [原始 v1](../../research/experiments/godot-physics-callback-v1/README.md)另保留三条版本命令和三次失败的 direct 尝试：首个子进程返回 -6，stderr 另打印 signal 11 诊断；隔离数据目录后，两次 StaticBody2D 配置均未在初始窗口收到接触。其确切原因未证实。v2 的 kinematic 类型是**重新冻结的实验**，不是把 v1 改判成功。初次 v2 解析器还曾遗漏 stdout 中的额外错误文本；实际日志无此错误，现已保留旧解析器及合成负例，并以新解析器重新执行两个配置。整篇仍为 `source-backed`，不升级为所有物理后端、线程、接触顺序或生产伤害系统的保证。
 
 [GGPO回放与表现责任补充](client-prediction-authority-boundary.md)进一步区分重复输出与纠正后新增事件；仅源码核对与未执行验收表，旧固定Tick及物理实验不因此验证回滚表现。
+
+## 生产来源补充：放慢游戏钟，不等于欠账已经消失
+
+本文原始调度模型选择保留欠账、每帧限步。另一种生产取舍是主动降低游戏时间相对于墙钟的推进速度。二者不能混称为“服务器慢了”，也不能直接把已有 Python 或 Godot 夹具当作后者的验证。
+
+CCP Veritas 的三篇历史原文提供了不同阶段的依据：
+
+- **2011-04-22，提案阶段。** TiDi 拟通过放慢游戏钟，减少随该钟产生的工作；计时规则并非一律缩放：作者提出强化到期计时不应膨胀，而护盾恢复应随战斗时钟减慢。文中 5% 是假想战斗过程，不是已部署配置。[T1]
+- **2012-02-10，部署报告。** 作者报告此前 1 月 18 日全面启用，并说明当时按服务器节点而非单个星系控制时间，因此其他同节点区域也可能受影响。跳跃等工作仍会带来负载。[T2]
+- **2014-01-24，HED-GP 回顾。** 作者描述了当时 10% 的时间速率下限；达到下限后仍可能积压工作，因此还需观察模块停止/重复处理的 lateness。他将无人机使用和战斗长度列为可能原因，并没有声称完成因果验证。[T3]
+
+这些是官方开发者的历史说明，不是本库测量或当前 EVE 服务保证。2011 年的计时分类不能自动升级为完整的上线计时器清单；2014 年的下限也不能倒填进早期提案。
+
+### 接收时区分三件事
+
+以下是本库从来源提出的解释与接收问题，不是 CCP 公布的控制算法：
+
+| 要区分的量 | 接收问题 |
+|---|---|
+| 有意推进的游戏时间 | 每段墙钟时间内，系统**打算**推进多少游戏时间？这是获准的减速，还是原本应执行却没完成的工作？ |
+| 相对该计划尚未完成的工作 | 时间速率已降到下限时，队列或处理迟到量是否仍增长？记录的单位是游戏秒还是墙钟秒，不能只看一个“减速中”指示器。 |
+| 保留外部时间语义的义务 | 哪些到期时间不能随战斗节奏改动，哪些工作由加入/离开等事件触发而非仅由游戏钟驱动？它们由谁接收，是否仍可能压满系统？ |
+
+还应明确共享该钟的范围。若控制作用于节点，不能仅凭某场战斗结束就推断同节点全部工作恢复。请求能够被处理，与某个模拟动作多久完成，也不是同一项验收。
+
+这个区别并不证明“时间膨胀优于保留欠账”，更不保证减速后没有积压。若项目选择减速，应分别说明获准的时钟变化、尚未完成的工作和不随之缩放的义务；不能把所有未完成工作解释为正常减速，也不能把有意放慢的游戏时间全部记成必须追赶的债务。
+
+本补充没有实现反馈控制器、复现 EVE、测试网络或测量玩家体验。历史百分比不是其他项目的性能门槛。已有模型与实际引擎结果的验证范围不变；详见[来源与边界](../../research/source-notes/time-dilation-overload-clocks.md)。
+
+- **T1** CCP Veritas，[Introducing Time Dilation (TiDi)](https://www.eveonline.com/news/view/introducing-time-dilation-tidi)，2011-04-22；定位游戏钟提案、长计时器段及 “Expectations management time!”。
+- **T2** CCP Veritas，[Time Dilation – How’s That Going?](https://www.eveonline.com/news/view/time-dilation-hows-that-going)，2012-02-10；定位开头的启用说明、跳跃负载及 node-level 范围段。
+- **T3** CCP Veritas，[HED-GP Technical Retrospective: What a HED-ache](https://www.eveonline.com/news/view/what-a-hed-ache)，2014-01-24；定位三种负载指标、速率下限、Dogma Lateness 及原因不确定性段。
