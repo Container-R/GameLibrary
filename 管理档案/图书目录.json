@@ -1269,6 +1269,22 @@
         "管理档案/审查/HUD对比度-读者与数学审查.md"
       ],
       "supporting_material": "管理档案/支持资料/HUD对比度/README.md"
+    },
+    {
+      "internal_id": "SOL-ENGINE-003",
+      "reader_title": "迁移函数返回了数据为什么还不能直接保存",
+      "floor": "引擎与工具",
+      "area": "运行时系统",
+      "shelf": "缓存与存档",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/迁移函数返回了数据为什么还不能直接保存.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/迁移函数返回了数据为什么还不能直接保存.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立固定原源与完整读者审读接受；无Java库运行或实际存档验证",
+      "origin": "specific-save-migration-return-semantics-from-task-0008",
+      "scope_note": "DataFixerUpper固定分支与应用接受条件；不是完整升级实现或安全写盘教程",
+      "review_paths": [
+        "管理档案/审查/存档迁移返回值-来源与读者审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1281,6 +1297,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 60,
-  "post_baseline_research_books": 5
+  "reader_books_total": 61,
+  "post_baseline_research_books": 6
 }

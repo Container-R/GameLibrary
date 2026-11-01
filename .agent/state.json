@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 60
+    "reader_books_total": 61
   },
   "publication": {
-    "last_verified_head_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
+    "last_verified_head_sha": "16d22369807966330e162bef32320ae3a6ae47a0",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "60 reader books including finite SDR HUD contrast chapter; no rendering or accessibility certification.",
-    "latest_verified_content_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
-    "reader_books_total": 60,
-    "post_baseline_research_books": 5,
-    "counts_basis": "59 previously verified readers plus accepted SOL-A11Y-003 in containing commit; frozen original55 unchanged."
+    "scope": "61 reader books; DFU return-value chapter is fixed-source analysis, not executed migration or safe persistence certification.",
+    "latest_verified_content_sha": "16d22369807966330e162bef32320ae3a6ae47a0",
+    "reader_books_total": 61,
+    "post_baseline_research_books": 6,
+    "counts_basis": "60 previously verified readers plus accepted SOL-ENGINE-003 in containing commit; frozen original55 unchanged."
   },
-  "next_action": "Audit the existing swapchain/presentation reader against its cited primary source versions for image-count, CPU frames-in-flight and present-mode queue distinctions; repair only a demonstrated claim or applicability error.",
+  "next_action": "Read fixed ENet v1.3.18 packet-flag documentation and peer_send fragmentation branches, compare existing prediction/channel coverage, and determine whether large unreliable-message transport behavior is a genuine uncovered engineering question before accepting an artifact.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T20:00:00Z",
+    "lease_until": "2026-11-01T20:10:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T191554Z-hud-contrast",
+  "last_run_id": "20261101T192640Z-save-migration-return",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T19:15:54Z",
-  "last_commit_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
+  "last_real_progress_at": "2026-11-01T19:26:40Z",
+  "last_commit_sha": "16d22369807966330e162bef32320ae3a6ae47a0",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

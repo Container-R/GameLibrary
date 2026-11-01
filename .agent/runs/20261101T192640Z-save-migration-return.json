@@ -1,0 +1,26 @@
+{
+  "run_id": "20261101T192640Z-save-migration-return",
+  "observed_at": "2026-11-01T19:26:40Z",
+  "parent_verified_head": "16d22369807966330e162bef32320ae3a6ae47a0",
+  "task": "TASK-2026-0157",
+  "outcome": "Published-scope candidate explains fixed DFU early return, no-op, partial/fallback and application acceptance; not a complete migration tutorial.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/迁移函数返回了数据为什么还不能直接保存.md",
+  "reader_sha256": "361e2d69855e264a0603dbf9f4dbb3c54e5509da2e34caf3cc470d3dfbdeb002",
+  "source_commit": "b6c712effbac69b119439e47f9ed1025c13b7a3f",
+  "verification_method": "Primary Java source and official codec-test assertions read, not executed; independent source and full-reader review.",
+  "independent_reader_review_sha256": "cec1bc8f25af834cdb2f26987aa7af56a1f837e17551c147afd4dedfd4c5af6a",
+  "scope_decision": "Generic acceptance principle overlaps existing ink support; specific DFU control flow and unavailable structured return status justify this narrower chapter. No synthetic model substitutes for missing native integration.",
+  "reader_books": 61,
+  "prior_publication_readback": {
+    "commit": "16d22369807966330e162bef32320ae3a6ae47a0",
+    "key_files_matched": 6,
+    "reader_books_tree_matched": 60,
+    "reader_links_tree_matched": 146
+  },
+  "maintenance_review": {
+    "reader": "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
+    "finding": "Bounded reread found no material image-count, queue, frames-in-flight or display-timing error; no forced content change.",
+    "scope": "Reviewer disclosed earlier topic participation; source-only maintenance, no runtime rerun."
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

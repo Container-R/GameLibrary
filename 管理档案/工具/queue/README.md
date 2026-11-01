@@ -3,7 +3,7 @@
 从仓库根运行，明确选择当前输入与预先确定的任务数：
 
 ```sh
-python3 管理档案/工具/queue/validate_queue.py . --taxonomy 管理档案/分类/disciplines.json --queue .agent/queue.json --expected-task-count 156
+python3 管理档案/工具/queue/validate_queue.py . --taxonomy 管理档案/分类/disciplines.json --queue .agent/queue.json --expected-task-count 157
 python3 -B -m unittest discover -s 管理档案/工具/queue -p 'test_*.py'
 python3 -B 管理档案/工具/queue/adversarial.py
 python3 -B -O -m unittest discover -s 管理档案/工具/queue -p 'test_*.py'
