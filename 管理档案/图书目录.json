@@ -1202,6 +1202,23 @@
         "管理档案/审查/ICU双向索引-读者与原始来源审读.md",
         "管理档案/审查/ICU双向索引-公开衍生审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-PROG-002",
+      "reader_title": "角色贴墙移动时为什么要分别修正位移和速度",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "角色移动",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/角色移动/角色贴墙移动时为什么要分别修正位移和速度.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/角色移动/角色贴墙移动时为什么要分别修正位移和速度.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立代理读者、固定源码、纸面代数与集成导航审读接受；不是运行或真人可用性测试",
+      "origin": "concrete-movement-gap-from-task-0008",
+      "scope_note": "固定Box2D几何移动器，位置限额/活动push/速度开关区别；无运行、复杂场景或引擎集成保证",
+      "review_paths": [
+        "管理档案/审查/角色移动-独立读者与来源审读.md",
+        "管理档案/审查/角色移动-裁剪代数复核.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1214,6 +1231,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 56,
-  "post_baseline_research_books": 1
+  "reader_books_total": 57,
+  "post_baseline_research_books": 2
 }
