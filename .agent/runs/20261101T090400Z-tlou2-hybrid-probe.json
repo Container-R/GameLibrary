@@ -6,8 +6,8 @@
     "TASK-2026-0139"
   ],
   "started_at": "2026-11-01T09:04:49Z",
-  "ended_at": "2026-11-01T09:08:14.749891Z",
-  "outcome": "Historical hybrid-probe production case independently reviewed; publication validation pending",
+  "ended_at": "2026-11-01T09:09:39.602956Z",
+  "outcome": "TLOU2 hybrid-probe production case published and exact readback matched",
   "sources_examined": [
     "https://www.naughtydog.com/blog/naughty_dog_at_siggraph_2020",
     "https://history.siggraph.org/wp-content/uploads/2022/08/2020-Talks-Doghramachi_Lighting-Technology-of-The-Last-of-Us-Part-II.pdf",
@@ -31,7 +31,11 @@
     "optimized_archive_checks_passed": 519,
     "archive_check_scope": "Static declared archive consistency, not new runtime or semantic validation",
     "local_links_checked": 874,
-    "declared_paths_checked": 187
+    "declared_paths_checked": 187,
+    "selected_blob_hashes_verified": 10,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 139
   },
-  "next_action": "Verify publication and investigate one unresolved official-source synchronization contract without private runtime archive access"
+  "next_action": "Read fixed official Vulkan maintenance1 present-fence retirement clauses; determine exact object-specific scope before any source-only addition",
+  "commit_sha": "9ee60b56d3908cf4641d78542ecc057e18054356"
 }
