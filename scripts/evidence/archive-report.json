@@ -1980,8 +1980,28 @@
     {
       "id": "character-motion/independent/parsed",
       "status": "pass"
+    },
+    {
+      "id": "scalar-inertialization/author-normal/sources",
+      "status": "pass"
+    },
+    {
+      "id": "scalar-inertialization/author-optimized/sources",
+      "status": "pass"
+    },
+    {
+      "id": "scalar-inertialization/repeat-normal/sources",
+      "status": "pass"
+    },
+    {
+      "id": "scalar-inertialization/repeat-optimized/sources",
+      "status": "pass"
+    },
+    {
+      "id": "scalar-inertialization/archive-bindings",
+      "status": "pass"
     }
   ],
-  "passed": 495,
+  "passed": 500,
   "failed": 0
 }

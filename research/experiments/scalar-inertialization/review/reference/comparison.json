@@ -1,0 +1,42 @@
+[
+  {
+    "path": "research-drafts/animation-smoothing-triage/fixture/results/normal.json",
+    "status": "PASS",
+    "rk4_rows": 35,
+    "final_vs_independent_fine_errors": [
+      8.572476062340684e-12,
+      2.2886359474227902e-11
+    ],
+    "scope": "finite arithmetic comparison; no execution-authenticity claim"
+  },
+  {
+    "path": "research-drafts/animation-smoothing-triage/fixture/results/optimized.json",
+    "status": "PASS",
+    "rk4_rows": 35,
+    "final_vs_independent_fine_errors": [
+      8.572476062340684e-12,
+      2.2886359474227902e-11
+    ],
+    "scope": "finite arithmetic comparison; no execution-authenticity claim"
+  },
+  {
+    "path": "research-drafts/deep-qa/animation-smoothing/repeat/fixture/normal.json",
+    "status": "PASS",
+    "rk4_rows": 35,
+    "final_vs_independent_fine_errors": [
+      8.572476062340684e-12,
+      2.2886359474227902e-11
+    ],
+    "scope": "finite arithmetic comparison; no execution-authenticity claim"
+  },
+  {
+    "path": "research-drafts/deep-qa/animation-smoothing/repeat/fixture/optimized.json",
+    "status": "PASS",
+    "rk4_rows": 35,
+    "final_vs_independent_fine_errors": [
+      8.572476062340684e-12,
+      2.2886359474227902e-11
+    ],
+    "scope": "finite arithmetic comparison; no execution-authenticity claim"
+  }
+]

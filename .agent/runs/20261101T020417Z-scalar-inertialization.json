@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T020417Z-scalar-inertialization",
+  "task_ids": [
+    "TASK-2026-0083"
+  ],
+  "started_at": "2026-11-01T02:04:17Z",
+  "ended_at": "2026-11-01T02:16:31.174800Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://theorangeduck.com/page/spring-roll-call",
+    "https://www.gdcvault.com/play/1025331/Inertialization-High-Performance-Animation-Transitions"
+  ],
+  "evidence": "Original scalar closed form and rebase; predeclared protocol b39a921e; independent ODE reference frozen before author inspection",
+  "suite_executions": {
+    "author_normal": 8,
+    "author_optimized": 8,
+    "reviewer_normal": 8,
+    "reviewer_optimized": 8,
+    "distinct_named_methods": 8,
+    "guard_subcases_per_suite": 139
+  },
+  "other_execution_counts": {
+    "reviewer_reference": 1,
+    "reviewer_static_comparison": 1,
+    "main_static_comparison": 2,
+    "native_engine": 0
+  },
+  "negative_controls": "Position-only velocity jump; interrupted raw-only value/velocity jumps; C2 jump; transient growth/crossing and half-life convention",
+  "post_result_tolerance_changes": 0,
+  "prepublication_refinement": "General theorem premise clarified to piecewise C1 and finite one-sided limits; analytic targets already satisfy it, frozen code/protocol unchanged",
+  "limitations": [
+    "Finite scalar cases, no general floating-point error bound",
+    "No engine, skeleton, contacts, root motion, arbitrary derivative estimator or visual/performance result",
+    "RK4 independent implementations use same numerical method family",
+    "Small harness requires fresh output path and actual process status; not execution authentication"
+  ],
+  "validation": {
+    "indexed_articles": 41,
+    "unchanged_prior_experiment_files": 2787,
+    "archive_checks_normal": 500,
+    "archive_checks_optimized": 500,
+    "queue_tasks_checked": 83,
+    "declared_paths_checked": 98,
+    "local_links": 659,
+    "archive_validator_unit_tests": 9
+  },
+  "next_action": "Review narrow glTF normalized/sparse accessor depth gate before selecting next implementable unit",
+  "numerical_failures_observed": 0,
+  "publication_recovery": {
+    "observed_at": "2026-11-01T02:22:46.233059+00:00",
+    "master_unchanged_during_diagnosis": "fa13d7d3f0ec34406ababfc756640971aa0a5209",
+    "verified_predecessor_tree": "f83e5202161b849cfd5dcb0f7fea938d361f1a6d",
+    "acknowledged_but_unreadable_trees": [
+      "73361cb8702873d5360f4b14139e4f13252fdc98",
+      "551db91e3874ce04bd53bfa6cbfbe11e4353adc0"
+    ],
+    "errors": "Final recursive tree GET422 invalid object; nonrecursive GET404 for final two trees. One deterministic group21 replay returned same SHA but GET remained404.",
+    "commit_or_ref_attempted_before_reconciliation": false,
+    "resolution": "Build a different coherent tree from verified predecessor20; retain prior optional source/route indexes and matching DISCOVERY. Updated catalog and direct crosslinks retain substantive discoverability.",
+    "deferred_index_changes": [
+      "sources/README.md new scalar source entry",
+      "taxonomy/reading-routes.json new scalar route entry and generated DISCOVERY"
+    ]
+  }
+}

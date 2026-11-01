@@ -2115,11 +2115,15 @@
       "id": "TASK-2026-0083",
       "question": "Can a scalar decaying animation residual preserve value and velocity through an interrupted transition without filtering a continuous target forever?",
       "discipline": "ANIM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Deepen animation knowledge with explicit mathematical continuity and independent numerical oracle, not more role coverage",
       "expected_artifact": "Source-derived scalar residual derivation, bounded original numerical fixture and discriminating negative controls",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/animation/scalar-inertialization-continuity.md",
+        "research/source-notes/scalar-inertialization-continuity.md",
+        "research/experiments/scalar-inertialization/README.md"
+      ],
       "acceptance": [
         "Read original author mathematical source and distinguish spring residual from tracking spring and finite-time quintic",
         "Freeze scalar domain, units, tolerances and transition schedule before execution",
@@ -2129,8 +2133,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:03:33.615459Z",
-      "next_action": "Read Holden original source and independent mathematical gate review before authorizing finite scalar implementation",
+      "last_progress_at": "2026-11-01T02:16:31.174800Z",
+      "next_action": "Publish accepted scalar mathematical derivation, original finite tests and independent numerical evidence",
       "blockers": []
     }
   ]

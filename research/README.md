@@ -135,3 +135,5 @@ python3 scripts/evidence/test_verify.py
 [Left 4 Dead Director 案例](../case-studies/ai/left4dead-director-pacing-evidence.md)区分估计、控制、执行、遭遇与体验；六层观察表为原创未执行建议。同步修正 Killzone 案例对后续导航运动证据的过时交叉引用。
 
 [游戏数据分析师](../roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
+
+[标量转场连续性](../solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。

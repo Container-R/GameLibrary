@@ -1,0 +1,2 @@
+python test_scalar.py --output results/normal.json
+python -O test_scalar.py --output results/optimized.json

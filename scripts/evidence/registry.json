@@ -5251,6 +5251,111 @@
         "parsed_sha256"
       ],
       "target": "research/experiments/godot-character-motion/review/native-repeat/evidence/24fbda1c-b719-4fea-a8de-5d3448c538fe/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "scalar-inertialization/author-normal/sources",
+      "document": "research/experiments/scalar-inertialization/fixture/results/normal.json",
+      "field": [
+        "metadata",
+        "source_sha256"
+      ],
+      "files": {
+        "scalar.py": "research/experiments/scalar-inertialization/fixture/scalar.py",
+        "test_scalar.py": "research/experiments/scalar-inertialization/fixture/test_scalar.py",
+        "protocol.md": "research/experiments/scalar-inertialization/./protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "scalar-inertialization/author-optimized/sources",
+      "document": "research/experiments/scalar-inertialization/fixture/results/optimized.json",
+      "field": [
+        "metadata",
+        "source_sha256"
+      ],
+      "files": {
+        "scalar.py": "research/experiments/scalar-inertialization/fixture/scalar.py",
+        "test_scalar.py": "research/experiments/scalar-inertialization/fixture/test_scalar.py",
+        "protocol.md": "research/experiments/scalar-inertialization/./protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "scalar-inertialization/repeat-normal/sources",
+      "document": "research/experiments/scalar-inertialization/review/repeat/fixture/normal.json",
+      "field": [
+        "metadata",
+        "source_sha256"
+      ],
+      "files": {
+        "scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/scalar.py",
+        "test_scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/test_scalar.py",
+        "protocol.md": "research/experiments/scalar-inertialization/review/repeat/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "scalar-inertialization/repeat-optimized/sources",
+      "document": "research/experiments/scalar-inertialization/review/repeat/fixture/optimized.json",
+      "field": [
+        "metadata",
+        "source_sha256"
+      ],
+      "files": {
+        "scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/scalar.py",
+        "test_scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/test_scalar.py",
+        "protocol.md": "research/experiments/scalar-inertialization/review/repeat/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "scalar-inertialization/archive-bindings",
+      "document": "research/experiments/scalar-inertialization/archive-bindings.json",
+      "field": [
+        "sha256"
+      ],
+      "files": {
+        "README.md": "research/experiments/scalar-inertialization/README.md",
+        "fixture/README.md": "research/experiments/scalar-inertialization/fixture/README.md",
+        "fixture/RESULTS.md": "research/experiments/scalar-inertialization/fixture/RESULTS.md",
+        "fixture/results/commands.txt": "research/experiments/scalar-inertialization/fixture/results/commands.txt",
+        "fixture/results/exit-codes.txt": "research/experiments/scalar-inertialization/fixture/results/exit-codes.txt",
+        "fixture/results/normal.json": "research/experiments/scalar-inertialization/fixture/results/normal.json",
+        "fixture/results/normal.log": "research/experiments/scalar-inertialization/fixture/results/normal.log",
+        "fixture/results/optimized.json": "research/experiments/scalar-inertialization/fixture/results/optimized.json",
+        "fixture/results/optimized.log": "research/experiments/scalar-inertialization/fixture/results/optimized.log",
+        "fixture/scalar.py": "research/experiments/scalar-inertialization/fixture/scalar.py",
+        "fixture/test_scalar.py": "research/experiments/scalar-inertialization/fixture/test_scalar.py",
+        "history/protocol-before-review.md": "research/experiments/scalar-inertialization/history/protocol-before-review.md",
+        "protocol.md": "research/experiments/scalar-inertialization/protocol.md",
+        "review/CODE-NUMERICAL-REVIEW.md": "research/experiments/scalar-inertialization/review/CODE-NUMERICAL-REVIEW.md",
+        "review/EDITORIAL-CLOSURE.md": "research/experiments/scalar-inertialization/review/EDITORIAL-CLOSURE.md",
+        "review/EDITORIAL-REVIEW.md": "research/experiments/scalar-inertialization/review/EDITORIAL-REVIEW.md",
+        "review/PROTOCOL-REVIEW.md": "research/experiments/scalar-inertialization/review/PROTOCOL-REVIEW.md",
+        "review/PUBLICATION-NOTE.md": "research/experiments/scalar-inertialization/review/PUBLICATION-NOTE.md",
+        "review/reference/README.md": "research/experiments/scalar-inertialization/review/reference/README.md",
+        "review/reference/SHA256SUMS": "research/experiments/scalar-inertialization/review/reference/SHA256SUMS",
+        "review/reference/compare.py": "research/experiments/scalar-inertialization/review/reference/compare.py",
+        "review/reference/comparison.json": "research/experiments/scalar-inertialization/review/reference/comparison.json",
+        "review/reference/comparison.stderr": "research/experiments/scalar-inertialization/review/reference/comparison.stderr",
+        "review/reference/main-comparison-normal.json": "research/experiments/scalar-inertialization/review/reference/main-comparison-normal.json",
+        "review/reference/main-comparison-optimized.json": "research/experiments/scalar-inertialization/review/reference/main-comparison-optimized.json",
+        "review/reference/process.txt": "research/experiments/scalar-inertialization/review/reference/process.txt",
+        "review/reference/reference-output.json": "research/experiments/scalar-inertialization/review/reference/reference-output.json",
+        "review/reference/reference.py": "research/experiments/scalar-inertialization/review/reference/reference.py",
+        "review/reference/stderr.txt": "research/experiments/scalar-inertialization/review/reference/stderr.txt",
+        "review/repeat/fixture/exit-codes.txt": "research/experiments/scalar-inertialization/review/repeat/fixture/exit-codes.txt",
+        "review/repeat/fixture/normal.json": "research/experiments/scalar-inertialization/review/repeat/fixture/normal.json",
+        "review/repeat/fixture/normal.stderr": "research/experiments/scalar-inertialization/review/repeat/fixture/normal.stderr",
+        "review/repeat/fixture/normal.stdout": "research/experiments/scalar-inertialization/review/repeat/fixture/normal.stdout",
+        "review/repeat/fixture/optimized.json": "research/experiments/scalar-inertialization/review/repeat/fixture/optimized.json",
+        "review/repeat/fixture/optimized.stderr": "research/experiments/scalar-inertialization/review/repeat/fixture/optimized.stderr",
+        "review/repeat/fixture/optimized.stdout": "research/experiments/scalar-inertialization/review/repeat/fixture/optimized.stdout",
+        "review/repeat/fixture/scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/scalar.py",
+        "review/repeat/fixture/test_scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/test_scalar.py",
+        "review/repeat/protocol.md": "research/experiments/scalar-inertialization/review/repeat/protocol.md"
+      }
     }
   ]
 }

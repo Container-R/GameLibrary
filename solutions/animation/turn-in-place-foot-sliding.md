@@ -218,3 +218,5 @@ Unity 自定义 OnAnimatorMove 路径应把增量交给明确的运动适配器�
 - **S5** Epic Games，[Pose Warping](https://dev.epicgames.com/documentation/en-us/unreal-engine/pose-warping-in-unreal-engine?application_version=5.6)，UE 5.6，Stride Warping / Stride Scale / Min Locomotion Speed Threshold。文中不把 Slope Warping 作为已生产验证方案。
 - **S6** Epic Games，[Fix Foot Sliding with IK Retargeter](https://dev.epicgames.com/documentation/en-us/unreal-engine/fix-foot-sliding-with-ik-retargeter-in-unreal-engine?application_version=5.6)，UE 5.6，Source Animation Setup / Generate Speed Curve / IK Rig Setup / Speed Planting in IK Retargeter。
 - 多语言检索使用“原地转身 脚滑”“turn in place foot sliding”“ルートモーション ポーズ焼き込み”；已打开 [Unity 6000.0 日文版](https://docs.unity3d.com/ja/6000.0/Manual/RootMotion.html)，只作术语核对，不计作独立来源。
+
+相关但不同的问题：[标量惯性化的值与速度连续性](scalar-inertialization-continuity.md)给出有限数学实现和中断反例；连续信号并不自动满足本条足底、根运动或碰撞约束。
