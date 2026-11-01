@@ -1,0 +1,25 @@
+{
+  "run_id": "20261101T201746Z-plural-offset-scope",
+  "observed_at": "2026-11-01T20:17:46Z",
+  "parent_verified_head": "e5ee4eaf3b2a4d71403d7496099389b6065db1d3",
+  "task": "TASK-2026-0008",
+  "outcome": "Added original group-count example distinguishing explicit total, adjusted plural value and display; clarified upstream-source prerequisite for archived pure tests.",
+  "reader_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+  "reader_sha256": "86f1acfec03917ba24ca68deb69ece576a8e65d27c1b9c1607a1adaf748a7af3",
+  "fixed_source": "unicode-org/icu@8eca245c7484ac6cc179e3e5f7c1ea7680810f39",
+  "verification_method": "Fixed original API/source reading and independent full-reader/source review; no new formatting, language or display runtime.",
+  "independent_review_sha256": "87f218275e409888928c02d6380dab82e34fbfb9982c35d9c896f290c86baf9f",
+  "prior_publication_readback": {
+    "commit": "e5ee4eaf3b2a4d71403d7496099389b6065db1d3",
+    "key_files_matched": 3,
+    "reader_books_tree_matched": 62,
+    "reader_links_tree_matched": 153
+  },
+  "published_archive_followup": {
+    "scope": "Pure synthetic tests only, not compiler/tracer/native execution.",
+    "initial_result": "Nine methods ran with three missing-source-input errors; optimized mode not reached.",
+    "recovery": "In a separate copy, supplied and verified 17 upstream source inputs; the same nine methods passed in normal and optimized modes.",
+    "clarification": "Pure tests also require the documented upstream source preparation. Frozen inputs unchanged; no native success claim."
+  },
+  "publication_note": "Containing commit readback follows publication."
+}
