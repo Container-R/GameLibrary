@@ -4044,8 +4044,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T12:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:06:32.723372Z",
-      "next_action": "Complete independent reviews and publish texture/glTF reader rewrite batch; then repair animation and fixed-step simulation books",
+      "last_progress_at": "2026-11-01T11:09:56.711027Z",
+      "next_action": "Rewrite existing turn-in-place foot sliding and fixed-step simulation books with independent reader reviews; retain composite chapter backlog; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4054,7 +4054,9 @@
         "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
         "phase_one_readback_verified": true,
         "second_reader_batch_published_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
-        "second_batch_readback_verified": true
+        "second_batch_readback_verified": true,
+        "third_reader_batch_published_sha": "6f2a0162271ded905444f358ef58858812385320",
+        "third_batch_readback_verified": true
       }
     }
   ],

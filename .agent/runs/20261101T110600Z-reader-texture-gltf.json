@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:04:48Z",
-  "ended_at": "2026-11-01T11:06:32.723372Z",
-  "outcome": "Two rewritten books and reader routes accepted; remote publication pending",
+  "ended_at": "2026-11-01T11:09:56.711027Z",
+  "outcome": "Texture-budget and glTF books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "d4a9488006c19fbfc8bb01dbdb6bbb2b2de155da",
   "books": [
     "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md",
@@ -26,7 +26,7 @@
     "Restricted evidence publication and cleanup hold unchanged",
     "Five rewritten inventory entries is not full remediation"
   ],
-  "next_action": "Complete independent reviews and publish texture/glTF reader rewrite batch; then repair animation and fixed-step simulation books",
+  "next_action": "Rewrite existing turn-in-place foot sliding and fixed-step simulation books with independent reader reviews; retain composite chapter backlog; no new topics",
   "navigation_review": "Mixed shelf replacement omitted one legacy alpha article link; independent review found it, restored and rechecked before publication",
   "route_check": {
     "inventory_entries": 55,
@@ -34,5 +34,14 @@
     "legacy_links": 50,
     "focused_scenarios": 3,
     "reader_review_separate": true
+  },
+  "commit_sha": "6f2a0162271ded905444f358ef58858812385320",
+  "validation": {
+    "selected_blob_hashes_verified": 16,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1208,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_home_read_back": true
   }
 }
