@@ -6,8 +6,8 @@
     "TASK-2026-0146"
   ],
   "started_at": "2026-11-01T09:56:10Z",
-  "ended_at": "2026-11-01T10:02:06.738237Z",
-  "outcome": "Original production vaulting successor case independently reviewed; publication validation pending",
+  "ended_at": "2026-11-01T10:03:48.675102Z",
+  "outcome": "FFXV vaulting successor case published and exact readback matched",
   "sources_examined": [
     "https://www.jp.square-enix.com/tech/library/pdf/CEDEC2017_Kawachi.pdf"
   ],
@@ -29,7 +29,12 @@
     "archive_consistency_fail": 0,
     "archive_scope": "Declared archive consistency only; no new runtime or semantic test",
     "declared_paths_checked": 198,
-    "full_changed_file_privacy_scan": "PASS"
+    "full_changed_file_privacy_scan": "PASS",
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "local_links_checked": 911,
+    "receipt_queue_tasks_checked": 146
   },
-  "next_action": "Verify publication and prioritize substantive evidence review over new article count"
+  "next_action": "Integrate independent three-case adversarial review and correct Warlander category count wording from more than ten to at least ten",
+  "commit_sha": "e25565d83100b741f4ca2b807488d5c6042d6877"
 }
