@@ -3034,7 +3034,7 @@
       "id": "TASK-2026-0117",
       "question": "Why must glTF CUBICSPLINE translation tangents change when uniformly retiming stored key times to preserve the normalized trajectory?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Resolve a concrete animation-tool handoff ambiguity through the fixed normative interpolation formula and a distinguishing hand calculation",
       "expected_artifact": "Integrated animation role example with source-backed formula and clearly unexecuted counterexample",
@@ -3049,11 +3049,36 @@
         "Separate stored-key modification from playback-clock scaling",
         "No exported asset or runtime playback claimed"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:35:39.335112Z",
-      "next_action": "Review fixed-formula retiming proof and finite-precision/asset-scope exclusions",
+      "next_action": "Retain single-sampler ideal translation proof; no encoded asset or full character guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:38:47.132684Z",
+      "commit_sha": "84b583e2b35a9bfc45f1692f5631cb312f699c70"
+    },
+    {
+      "id": "TASK-2026-0118",
+      "question": "Which normal host-frame advancement must stop when fixed GGPO P2P local input submission hits the prediction barrier?",
+      "discipline": "NET",
+      "status": "researching",
+      "priority": 94,
+      "priority_rationale": "Resolve a concrete upstream control-flow distinction between local submission rejection and later input synchronization success",
+      "expected_artifact": "Integrated fixed-source GGPO normal-advance control-flow explanation, not a new protocol or runtime test",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact upstream AddLocalInput, SyncInput, IncrementFrame and official host loop",
+        "Preserve initial-sync, one-local-player and non-rollback assumptions",
+        "Do not reinterpret peer confirmation as server authority",
+        "Retain submission failure across later calls; no automatic SDK host-state freeze assumed",
+        "Reject dynamic delay advice contrary to public API timing precondition"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:38:47.132684Z",
+      "next_action": "Read pinned normal-advance call chain and independently verify prediction barrier gate",
       "blockers": []
     }
   ]
