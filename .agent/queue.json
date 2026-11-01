@@ -3230,11 +3230,14 @@
       "id": "TASK-2026-0124",
       "question": "How can ink lookahead execute a host action before a displayed narrative boundary, and how should external binding policy distinguish API defaults?",
       "discipline": "NARR",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Deepen narrative-host handoff with a fixed implementation mechanism beyond generic commit-point advice",
       "expected_artifact": "Finite source-backed narrative role addition on lookahead-safe external binding and execution placement",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/narrative/narrative-designer-writer.md",
+        "research/source-notes/narrative-designer-writer-role.md"
+      ],
       "acceptance": [
         "Pin ink v1.2.1 official tag and decisive Story.cs control flow",
         "Distinguish General true default from convenience false defaults",
@@ -3245,8 +3248,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:11:02.382205Z",
-      "next_action": "Read fixed lookahead snapshot, host delegate invocation and binding overload paths before drafting",
+      "last_progress_at": "2026-11-01T07:13:20.937651Z",
+      "next_action": "Review fixed lookahead gate and separate narrative execution placement from exactly-once effects",
       "blockers": []
     }
   ]

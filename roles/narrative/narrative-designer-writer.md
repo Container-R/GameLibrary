@@ -6,17 +6,18 @@ status: source-backed
 primary_discipline: NARR
 related_disciplines: [DESIGN, PROG, LOC, SFX, QA, PROD]
 related_roles: [narrative-designer, game-writer, gameplay-designer, gameplay-programmer, localization-engineer, qa-engineer]
-related_topics: [reactive-dialogue, narrative-state, branch-precedence, semantic-handoff, localization-context]
+related_topics: [reactive-dialogue, narrative-state, branch-precedence, semantic-handoff, localization-context, external-function-lookahead]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["Guerrilla Annie Kitain 访谈，2023-04-17", "Monolith Soft 剧情策划访谈，2023-07-18", "Guerrilla GDC 2017 任务系统演讲"]
+versions: ["Guerrilla Annie Kitain 访谈，2023-04-17", "Monolith Soft 剧情策划访谈，2023-07-18", "Guerrilla GDC 2017 任务系统演讲", "ink v1.2.1 C#固定源码35c63e52f1d36060930dc7ed3cfba38ea224b528"]
 updated_at: 2026-11-01
 review_after: 2027-02-01
-verification_method: 两篇日英工作室访谈及原始任务系统演讲指定页文字核对；对白语义交接表与桥梁情境为原创未执行建议；无对白运行、翻译、存档或玩家验证
+verification_method: 两篇日英工作室访谈、任务系统演讲指定页及固定 ink 向前探测/外部绑定源码核对；语义交接与宿主发奖例为原创未执行建议；无对白运行、翻译、存档或玩家验证
 sources:
   - https://www.guerrilla-games.com/read/guerrilla-spotlight-annie-kitain
   - https://www.monolithsoft.co.jp/interview/2307.html
   - https://www.guerrilla-games.com/media/News/Files/GDC2017_Szczepanski_BuildingNonLinearNarrativesInHorizonZeroDawn.pdf
+  - https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs
 ---
 
 # 游戏叙事设计与写作：让对白意图、知识状态和实现条件一起交接
@@ -76,6 +77,18 @@ Narrative Designer、Writer、Scenario Planner 和 Quest Designer 不是可直�
 
 这是一组待项目决定的问题，不是本文已经验证的中断协议。若接口尚不能反馈结果，就明确尚未验证，不用一个“对话结束”事件代替全部效果证明。
 
+#### 独立 ink 例子：向前探测不等于宿主动作提交
+
+ink **v1.2.1** 的固定 C# 实现提供一个具体机制：为了判断换行是否被 glue 合并，引擎会保存故事快照、继续向前求值，再按后续内容恢复。允许 lookahead 的宿主外部函数因此可能提前或重复调用；恢复故事快照不能被当作撤销宿主副作用。[S4]
+
+这里还有不能凭名称猜测的默认值差别：`BindExternalFunctionGeneral` 的 `lookaheadSafe` 默认 **true**，所核对的无参数 Func／Action 便利重载默认 **false**。后者在换行快照后的探测中会暂不调用宿主函数；但字符串求值中的 unsafe 调用会报错，不能靠把参数改成 true 来掩盖。[S4]
+
+把它放回**原创、未执行的桥梁场景**：如果发奖函数绑定到 general 入口却省略参数，作者看见前一行对白还未结束，不足以断言奖励尚未发生。假设函数已在探测中执行，随后故事恢复，不能据此把宿主奖励账目也恢复。这里没有运行脚本或断言固定调用次数，更不是 Guerrilla 或 Monolith 的实现案例。
+
+具体交接应是：对白作者与宿主程序共同指出哪些外部动作不能接受提前／重复求值，对它们显式选择 `lookaheadSafe=false`，并放到允许这种调用的普通执行位置。需要显示结果时，可先在普通语句求值再用于文本；**移到文本之前，不等于移到玩家选择之后**。若发奖必须由已选项触发，还须安排到相应已选分支的执行路径，不能放在仅生成选项文字时执行的位置。
+
+这项配置只处理所述探测边界，不是幂等或恰好一次机制：再次进入分支、读档或重试仍需另定规则。只读函数也不能仅因“不写文件”就标 safe，提前／重复求值的结果必须可接受。本例未验证具体选择脚本、奖励事务或玩家表现；它补的是外部函数执行位置与绑定策略，不替代前文提交结果的观察责任。
+
 ### 4. 让本地化接收到条件，而不只是“完成了”
 
 为相关条目提供“完成”指桥梁修复、任务登记还是奖励领取的上下文；说明说话者、指代与语气。译者不应被迫从孤立短句猜测系统状态。语言侧可能发现原文歧义并反馈，但不能要求译者替团队选择奖励规则。
@@ -111,3 +124,5 @@ Narrative Designer、Writer、Scenario Planner 和 Quest Designer 不是可直�
 - **S1** Guerrilla，[Guerrilla Spotlight: Annie Kitain](https://www.guerrilla-games.com/read/guerrilla-spotlight-annie-kitain)，2023-04-17；写作过程、协作及开放世界挑战问答。
 - **S2** Monolith Soft，[シナリオプランナー編](https://www.monolithsoft.co.jp/interview/2307.html)，2023-07-18；「世界の広がりを描く仕事」「NPCの人間らしさ」。
 - **S3** Leszek Szczepański，[Building Non-linear Narratives in HORIZON: ZERO DAWN](https://www.guerrilla-games.com/media/News/Files/GDC2017_Szczepanski_BuildingNonLinearNarrativesInHorizonZeroDawn.pdf)，GDC 2017；从1开始的PDF页11、14–19、22、25–26。未解读图中连线或观看视频。
+
+- **S4** inkle，ink v1.2.1 [Story.cs](https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs)，固定提交的 ContinueSingleStep、snapshot、CallExternalFunction 与外部绑定声明；2026-11-01 读取，未编译或运行。

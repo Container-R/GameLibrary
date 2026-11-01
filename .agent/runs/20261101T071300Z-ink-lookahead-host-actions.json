@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T071300Z-ink-lookahead-host-actions",
+  "task_ids": [
+    "TASK-2026-0124"
+  ],
+  "started_at": "2026-11-01T07:11:55Z",
+  "ended_at": "2026-11-01T07:13:20.937651Z",
+  "outcome": "fixed-source narrative mechanism accepted by independent source and editorial review",
+  "sources": [
+    "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs"
+  ],
+  "evidence": "Main and independent reviewer resolved official tag and read lookahead snapshots, pre-delegate gates and binding default distinctions",
+  "original_contribution": "A displayed line is not a host action commit boundary; explicit lookahead policy and selected-branch execution placement answer different questions",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No compiled ink script, runtime, reward effect or invocation trace",
+    "Fixed C# implementation, not inkjs or every version",
+    "No exactly-once effects across re-entry, saves or host retries",
+    "Hypothetical reward scenario not a studio production incident"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 124,
+    "archive_consistency_normal_passed": 519,
+    "archive_consistency_optimized_passed": 519,
+    "archive_consistency_failed": 0,
+    "archive_scope": "Static declared archive consistency only; not new execution or semantic tests",
+    "declared_paths_checked": 164
+  },
+  "next_action": "Continue a finite cross-disciplinary source-depth gap"
+}
