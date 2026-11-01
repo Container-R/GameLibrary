@@ -1,0 +1,23 @@
+{
+  "run_id": "20261101T202542Z-preview-load-ownership",
+  "observed_at": "2026-11-01T20:25:42Z",
+  "parent_verified_head": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+  "task": "TASK-2026-0160",
+  "outcome": "Reader, real hierarchy and cross-disciplinary links, independent review and accurate publication metadata included in one coherent tree.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
+  "reader_sha256": "bb5a468511a83081bb673acbd372f5c5cb0660ebe1b98522510a6f0e2e9c48ec",
+  "source_scope": "Unity Addressables1.21 branch pages marked1.21.21; five official text pages, not immutable package source.",
+  "independent_reader_review_sha256": "e7e9acfa52d067e201f3fded6fe49521bbf247b43aba16cff9c9b927e7f2dba8",
+  "local_navigation_review_sha256": "5aeb4ef5584fbfea13ec870b05229013b92d4c44cff331ec5ae310682c23c67a",
+  "verification_method": "Source text, original paper trajectories and independent full-reader/local navigation review; no Unity, loading, memory or network runtime.",
+  "editorial_decision": "Source gate initially preferred integration; follow-up compared actual current chapters and accepted a separate runtime problem rather than diluting content-update scope.",
+  "prior_publication_readback": {
+    "commit": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+    "key_files_matched": 2,
+    "reader_books_tree_matched": 62,
+    "reader_links_tree_matched": 153
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "final_reference_label_review_sha256": "4ad93837fbc977b88e97cb3c937f1e99ed6d5e51a8c9a82e478ce23eefa5a7a2",
+  "prepublication_correction": "Bare generic-angle type label in reference5 was replaced with readable text; exact destination unchanged, full diff independently reviewed."
+}

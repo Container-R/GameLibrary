@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 62
+    "reader_books_total": 63
   },
   "publication": {
-    "last_verified_head_sha": "e5ee4eaf3b2a4d71403d7496099389b6065db1d3",
+    "last_verified_head_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "62 readers unchanged; fixed traditional ICU plural offset example integrated into pseudo-localization chapter, source-only.",
-    "latest_verified_content_sha": "e5ee4eaf3b2a4d71403d7496099389b6065db1d3",
-    "reader_books_total": 62,
-    "post_baseline_research_books": 7,
-    "counts_basis": "Finite existing-reader revision; no additional book or native result."
+    "scope": "63 reader books; bounded preview-loading ownership strategy grounded in Addressables1.21.21 documentation, no implementation or engine guarantee.",
+    "latest_verified_content_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+    "reader_books_total": 63,
+    "post_baseline_research_books": 8,
+    "counts_basis": "62 verified readers plus reviewed SOL-ENGINE-004; frozen55 remediation remains separate."
   },
-  "next_action": "Inspect existing coverage and official versioned sources for asynchronous-load cancellation versus handle release; reject duplicate or unsupported scope before drafting. Native ENet verification remains stopped.",
+  "next_action": "Review current reader-link checker target-heading ambiguity and actual counterexamples for one conservative, fail-closed improvement; retain incomplete results if unsupported syntax prevents a justified check. No native retry.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T21:00:00Z",
+    "lease_until": "2026-11-01T21:10:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T201746Z-plural-offset-scope",
+  "last_run_id": "20261101T202542Z-preview-load-ownership",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T20:17:46Z",
-  "last_commit_sha": "e5ee4eaf3b2a4d71403d7496099389b6065db1d3",
+  "last_real_progress_at": "2026-11-01T20:25:42Z",
+  "last_commit_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
