@@ -179,3 +179,5 @@ python3 scripts/evidence/test_verify.py
 [相同曲线的三种均方结果](source-notes/equal-power-crossfade-correlation.md)用四样本原创代数分开窗口交叉矩、均方、样本峰值与听感验收。
 
 [四篇已发布来源笔记的有界反向核查](audits/source-batch-adversarial-review/REVIEW.md)记录精确快照、逐项挑战、无实质修正的有限结果及审查者既往角色重叠；不是全库或运行验收。
+
+[生产节奏与权威消费映射](source-notes/rocket-league-input-buffer-cadence.md)对照历史上游/下游调节位置，不从消费数量补造世界步数、控制阈值或命令合并实现。

@@ -2761,11 +2761,13 @@
       "id": "TASK-2026-0107",
       "question": "Can original Rocket League input-buffer slides support a concrete cadence-control case after the Overwatch mechanism source gate was rejected?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Return from mechanism notes and adversarial review to an original commercial engineering case, subject to primary-source access and nonduplication",
       "expected_artifact": "Bounded original-source case gate, followed by a concrete case analysis only if evidence supports it",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/rocket-league-input-buffer-cadence.md"
+      ],
       "acceptance": [
         "Check existing coverage before claiming a new case",
         "Read legal original talk, slides or other primary material with exact pages/timestamps",
@@ -2777,8 +2779,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:37:15.515106Z",
-      "next_action": "Review original Rocket League 2018 input-buffer production/consumption slides; Overwatch body unavailable in this pass",
+      "last_progress_at": "2026-11-01T05:42:45.109779Z",
+      "next_action": "Publish reviewed historical input-buffer production/consumption comparison",
       "blockers": []
     }
   ]

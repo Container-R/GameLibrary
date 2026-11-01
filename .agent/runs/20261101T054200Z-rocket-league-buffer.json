@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T054200Z-rocket-league-buffer",
+  "task_ids": [
+    "TASK-2026-0107"
+  ],
+  "started_at": "2026-11-01T05:37:15Z",
+  "ended_at": "2026-11-01T05:42:45.109779Z",
+  "outcome": "primary selected text and editorial review accepted; publication pending",
+  "sources": [
+    "https://www.gdcvault.com/play/1025341/It-IS-Rocket-Science-The",
+    "https://media.gdcvault.com/gdc2018/presentations/Cone_Jared_It_Is_Rocket.pdf"
+  ],
+  "evidence": "Original 182-page GDC 2018 deck, selected physical pages 135\u2013138 text; independently checked historical low/full upstream/downstream descriptions",
+  "original_contribution": "Handoff separating input production, admission, removal/reuse and authoritative steps; optional explicitly defined queue bookkeeping not attributed to the commercial algorithm",
+  "runtime_experiments": 0,
+  "source_access": [
+    "Overwatch candidate rejected for metadata-only mechanism access; no third-party transcript substituted",
+    "Official Rocket League PDF selected text successfully read by main and reviewers",
+    "Main separate session metadata lookup exceeded bounded wait and was stopped; reviewers read metadata independently",
+    "Screenshot requests produced references but no inspectable images; no visual or video inspection claimed"
+  ],
+  "limitations": [
+    "Historical 2018 presentation, not current service behavior or code revision",
+    "No unknown thresholds, world-step counts, command-combination rule or simultaneous strategy use inferred",
+    "No gameplay, network, code, model or performance experiment",
+    "Existing teaching model and all indexed articles/experiments unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 107,
+    "accepted_note_sha256": "82f80da044403e1725fa835c52dcb40530ca77fea6ed3b93b63e9615830688ed",
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "declared_paths_checked": 136,
+    "local_links_checked": 806
+  },
+  "next_action": "Check distinct original simulation scheduling source gate without adopting unsupported claims"
+}

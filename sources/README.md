@@ -171,3 +171,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [切线 handedness 与方向变换](../research/source-notes/tangent-handedness-normal-transform.md)核对固定 glTF 规范与示例实现，区分局部属性、顶点基和最终画面。
 
 [等功率淡化与素材相关性](../research/source-notes/equal-power-crossfade-correlation.md)核对固定 SuperCollider 源码与增益机制，严格区分理想手推和实际实现输出。
+
+[Rocket League 输入缓冲节奏](../research/source-notes/rocket-league-input-buffer-cadence.md)定位 Jared Cone / Psyonix 2018 原始幻灯片物理第 135–138 页，区分历史陈述与原创接收提案。
