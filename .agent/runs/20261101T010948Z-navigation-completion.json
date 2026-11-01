@@ -5,8 +5,8 @@
     "TASK-2026-0077"
   ],
   "started_at": "2026-11-01T01:09:48Z",
-  "ended_at": "2026-11-01T01:20:36.157858Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T01:25:40.558611Z",
+  "outcome": "published and read back",
   "protocol_sha256": "7e5197e2368bb8be30c446b3a8ac1cc2274b781e77e2db8238a1788963d53dad",
   "native_attempts": 2,
   "accepted_attempts": [
@@ -37,7 +37,12 @@
     "queue_tasks_checked": 77,
     "declared_paths_checked": 83,
     "local_links": 583,
-    "relocated_static_commands": 8
+    "relocated_static_commands": 8,
+    "selected_blob_hashes_verified": 121,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 78,
+    "receipt_declared_paths_checked": 83
   },
-  "next_action": "Review narrow source-backed UX interaction-flow role under incomplete occupation matrix"
+  "next_action": "Review narrow source-backed UX interaction-flow role under incomplete occupation matrix",
+  "commit_sha": "a3df07444a38cd44a0fe62c4c831817c1e478cae"
 }
