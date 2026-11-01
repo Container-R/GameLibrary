@@ -3146,7 +3146,7 @@
       "id": "TASK-2026-0121",
       "question": "Which exact Box2D version and sensor configuration can detect fast swept crossings, and how should a trigger-detection decision respect that boundary?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Resolve a discovered discrepancy between versioned sensor semantics and rolling documentation before making a current or general recommendation",
       "expected_artifact": "Bounded version-specific source/code gate followed by useful trigger-query analysis if evidence supports it",
@@ -3160,11 +3160,36 @@
         "Select an actionable finite trigger-detection decision, not generic source-age warnings",
         "No collision execution or reachable trajectory result without actual evidence"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:00:39.598083Z",
-      "next_action": "Review pinned version contrast and query responsibility without inferring executed traversal",
+      "next_action": "Retain pinned-version sensor scope and unexecuted geometry; no universal CCD or event-order guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:02:54.028160Z",
+      "commit_sha": "3025918b0af1b97c40dad779df25ba1357695e82"
+    },
+    {
+      "id": "TASK-2026-0122",
+      "question": "When can a retained Addressables catalog-load operation prevent a later catalog reload from fetching updated data, and who owns its release?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Strengthen an existing correct catalog-update boundary with the missing operation-handle prerequisite, without confusing asset and bundle lifetimes",
+      "expected_artifact": "Version-specific source-backed catalog operation ownership addition and bounded unexecuted acceptance scenario",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read official Addressables 1.21.21 manual and API pages directly",
+        "Separate operation cache from catalog hash cache, asset references and bundle disk cache",
+        "Release removes a blocker but does not guarantee remote freshness or download",
+        "Do not claim cancellation, concurrent broker behavior or executed network results",
+        "Keep unchanged evidence and safe whole-file publication scope"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:02:54.028160Z",
+      "next_action": "Verify official catalog operation ownership and API overload semantics before drafting the finite addition",
       "blockers": []
     }
   ]
