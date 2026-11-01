@@ -5,8 +5,8 @@
     "TASK-2026-0086"
   ],
   "started_at": "2026-11-01T02:49:20Z",
-  "ended_at": "2026-11-01T02:51:46.099316Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T02:54:28.998440Z",
+  "outcome": "published and read back",
   "source_commit": "7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a",
   "sources": [
     "doc/DeveloperGuide.md",
@@ -28,7 +28,11 @@
     "archive_checks_normal": 505,
     "archive_checks_optimized": 505,
     "queue_tasks_checked": 86,
-    "declared_paths_checked": 105
+    "declared_paths_checked": 105,
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "local_links_checked": 685,
+    "receipt_queue_tasks_checked": 87
   },
   "next_action": "Evaluate evidence-backed follow-up by remaining source or integration gaps, not article count",
   "supervisor_record": {
@@ -36,6 +40,8 @@
     "observed_at": "2026-11-01T02:50:54Z",
     "snapshot_head": "faa677dc12dc971b1800a26b11cae3cbaed9a3cb",
     "static_checks": 505,
-    "scope": "Historical independent source/archive audit, no new model or native run"
-  }
+    "scope": "Historical independent source/archive audit, no new model or native run",
+    "archived_in_content_sha": "a6b11138b68f06794a4a468b4a027da756d9a47f"
+  },
+  "commit_sha": "a6b11138b68f06794a4a468b4a027da756d9a47f"
 }
