@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:55:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:03:48.675102Z",
-      "next_action": "Integrate independent three-case adversarial review and correct Warlander category count wording from more than ten to at least ten",
+      "last_progress_at": "2026-11-01T10:05:41.121490Z",
+      "next_action": "Close an independent original-source wording correction before further expansion",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3867,6 +3867,33 @@
       "blockers": [],
       "completed_at": "2026-11-01T10:03:48.675102Z",
       "commit_sha": "e25565d83100b741f4ca2b807488d5c6042d6877"
+    },
+    {
+      "id": "TASK-2026-0147",
+      "question": "Do recent production-case source interpretations and original examples survive independent adversarial rereading?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 95,
+      "priority_rationale": "Independent reviewer found a precise published translation boundary error while validating distinct original reasoning",
+      "expected_artifact": "Bounded three-case audit and one-phrase source-aligned correction",
+      "artifact_paths": [
+        "case-studies/design/warlander-cancel-input-reservation.md",
+        "research/audits/production-case-adversarial-review/REVIEW.md",
+        "research/audits/production-case-adversarial-review/resolution.json"
+      ],
+      "acceptance": [
+        "Pin exact reviewed file identities",
+        "Independently reread original sources and challenge hidden assumptions",
+        "Correct only the at-least-ten category phrase",
+        "Verify inverse patch preserves all other article bytes",
+        "Distinguish negative source review from runtime or whole-library certification"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T11:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:05:41.121490Z",
+      "next_action": "Validate narrow correction and archive independent review",
+      "blockers": []
     }
   ]
 }

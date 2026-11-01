@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "finding": "F1",
+  "status": "corrected-local-awaiting-publication",
+  "artifact": "case-studies/design/warlander-cancel-input-reservation.md",
+  "prior_sha256": "5ca1ccddcc2b8336d9f1cf926478834c88d8d805ecf7eb53a7c928abdf4a0c5a",
+  "corrected_sha256": "3c93c7a42044da1818334c081cc908ca590fa2a1f4592ae871bd101f4ae8fe96",
+  "review_sha256": "a6bd8df160b74a9ea26ade65b641681ece0987004d6508d5392106ae7d7cd7c2",
+  "change": "Clarify 10 or more rather than more than 10; no exact count inferred",
+  "source": "https://blog.toylogic.co.jp/programmer/3758.html",
+  "inverse_replacement_reproduces_old_bytes": true,
+  "scope": "One phrase only; conditional arithmetic, historical source dates and all evidence methods unchanged",
+  "runtime_experiments": 0,
+  "correction_review_sha256": "c3d526b7e1dfb97371c1794e5a52a15ae9205465f62413c00b549d16d10f61f6"
+}

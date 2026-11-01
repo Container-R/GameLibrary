@@ -219,3 +219,5 @@ python3 scripts/evidence/test_verify.py
 [Warlander 取消类别与输入预约](../case-studies/design/warlander-cancel-input-reservation.md)依据开发者原始日语文章区分行动许可和命令有效期；原创分开试次明确半开边界及共同计时前提，没有推定实际队列、hitstop或执行结果。
 
 [FFXV 越障的片段后继候选](../case-studies/animation/ffxv-vaulting-successor-candidates.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。
+
+[三个生产案例的对抗审查](audits/production-case-adversarial-review/REVIEW.md)复核 Horizon、Warlander 与 For Honor 的来源和推理边界；发现并精确修订 Warlander 类别数量措辞，不以负面结果认证全库或实际运行。
