@@ -1252,6 +1252,23 @@
         "管理档案/审查/序列号回绕-数学与读者审查.md"
       ],
       "supporting_material": "管理档案/支持资料/序列号回绕/README.md"
+    },
+    {
+      "internal_id": "SOL-A11Y-003",
+      "reader_title": "背景变化时怎样保持HUD文字的对比度",
+      "floor": "本地化与无障碍",
+      "area": "无障碍设计",
+      "shelf": "视觉信息",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/背景变化时怎样保持HUD文字的对比度.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/背景变化时怎样保持HUD文字的对比度.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立代理读者、原源和有限数学检查；非渲染或真人测试",
+      "origin": "dynamic-background-contrast-gap-from-task-0008",
+      "scope_note": "限定线性SDR白字黑板推导；不是HDR参数、引擎测试或无障碍认证",
+      "review_paths": [
+        "管理档案/审查/HUD对比度-读者与数学审查.md"
+      ],
+      "supporting_material": "管理档案/支持资料/HUD对比度/README.md"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1264,6 +1281,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 59,
-  "post_baseline_research_books": 4
+  "reader_books_total": 60,
+  "post_baseline_research_books": 5
 }

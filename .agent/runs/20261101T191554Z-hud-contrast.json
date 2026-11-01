@@ -1,0 +1,40 @@
+{
+  "run_id": "20261101T191554Z-hud-contrast",
+  "observed_at": "2026-11-01T19:15:54Z",
+  "parent_verified_head": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
+  "task": "TASK-2026-0156",
+  "outcome": "New reader chapter explains changing-background contrast with a bounded mathematical helper and independent reader/model reviews.",
+  "reader_path": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/背景变化时怎样保持HUD文字的对比度.md",
+  "reader_sha256": "0e6490c8a9df5bfb7992a3aaede2cafed56b5e118581328d2804100130907297",
+  "verification_method": "Primary sources, paper derivation and finite pure Python arithmetic only.",
+  "model_verification": "管理档案/支持资料/HUD对比度/verification.json",
+  "reader_books": 60,
+  "frozen_baseline_rewrites": 55,
+  "post_baseline_books": 5,
+  "prior_publication_readback": {
+    "commit": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
+    "key_files_matched": 2,
+    "reader_books_tree_matched": 59,
+    "reader_links_tree_matched": 141
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "limitations": [
+    "No runtime-rendered image or screenshot measurement",
+    "No HDR, display or player study",
+    "Guideline categories are not a compliance certificate"
+  ],
+  "offline_reader_scan": {
+    "status": "incomplete",
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "unsupported": 31,
+    "readers_checked": 60,
+    "local_links_checked": 146,
+    "fragments_checked": 22,
+    "external_links_not_checked": 278,
+    "errors": 31,
+    "scope": "Offline simple inline Markdown targets and plain ATX heading fragments only; not rendered Markdown, source truth, or reader quality"
+  },
+  "independent_reader_review_sha256": "0c01d31e3b26985a5896b2996d8881b6ea74b1d9f78e8fa6f3ae426d3076b6cb",
+  "independent_model_review_sha256": "5159b0756aee02968d5278b03f4cff2dc31e284b6ca52e32ffa55b91e4bea4d6"
+}

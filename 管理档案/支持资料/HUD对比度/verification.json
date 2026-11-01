@@ -1,0 +1,22 @@
+{
+  "scope": "Finite pure Python teaching arithmetic for declared linear SDR black panel and opaque white text; no rendering, screenshot, engine or player test.",
+  "files_sha256": {
+    "hud_contrast.py": "69e96c4f672c5c856fc6bee376febf6995b66e9ab8f623c5208e5a0ef97c98d4",
+    "test_hud_contrast.py": "f3aa2e7514578d7a66f0c1a8ed429b35f92f4d193f88dc677a2450f381e30003",
+    "test_hud_independent.py": "f6ec05d673dbfad7158225fe9146abfe68536386bc9892b38dc8b5f4c534b44f"
+  },
+  "author_methods": 7,
+  "independent_methods": 4,
+  "main_combined_methods": 11,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "outcome": "All stated finite checks passed; repeated modes do not multiply coverage.",
+  "independent_oracle": "49 exact-Fraction feasibility bisections, 17x17 monotonic grid, input edges and literal quantization comparisons.",
+  "preserved_precision_observations": [
+    "For target4.5 and maximum background1, returned float was below exact49/60 by1/67553994410557440.",
+    "Smallest positive subnormal decoding rounded to0; contrast with a subnormal background rounded to21."
+  ],
+  "interpretation": "No safe upper-bound or accessibility decision interface; approximate equality in tests is not a relaxed contrast threshold."
+}

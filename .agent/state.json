@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 59
+    "reader_books_total": 60
   },
   "publication": {
-    "last_verified_head_sha": "b15b169e0ca93632749d8ae5541d3c98683d80b4",
+    "last_verified_head_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "59 reader books; asset reference interpretation added to existing handoff chapter from primary sources, no new import experiment.",
-    "latest_verified_content_sha": "b15b169e0ca93632749d8ae5541d3c98683d80b4",
-    "reader_books_total": 59,
-    "post_baseline_research_books": 4,
-    "counts_basis": "59 reader inventory entries verified at c32b8d910122bf08846946f047e1be22ae7e7b1d; unchanged by this integration."
+    "scope": "60 reader books including finite SDR HUD contrast chapter; no rendering or accessibility certification.",
+    "latest_verified_content_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
+    "reader_books_total": 60,
+    "post_baseline_research_books": 5,
+    "counts_basis": "59 previously verified readers plus accepted SOL-A11Y-003 in containing commit; frozen original55 unchanged."
   },
-  "next_action": "Evaluate dynamic HUD background contrast as a distinct practical gap using existing UI/alpha coverage, XAG102 and fixed W3C luminance definitions before accepting a model or new reader chapter.",
+  "next_action": "Audit the existing swapchain/presentation reader against its cited primary source versions for image-count, CPU frames-in-flight and present-mode queue distinctions; repair only a demonstrated claim or applicability error.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T19:45:00Z",
+    "lease_until": "2026-11-01T20:00:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T190847Z-asset-reference-entry",
+  "last_run_id": "20261101T191554Z-hud-contrast",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T19:08:47Z",
-  "last_commit_sha": "b15b169e0ca93632749d8ae5541d3c98683d80b4",
+  "last_real_progress_at": "2026-11-01T19:15:54Z",
+  "last_commit_sha": "523496922afe939d1c5a1434a34fbf1d51dc28cb",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
