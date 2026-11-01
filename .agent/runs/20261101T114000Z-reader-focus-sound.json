@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:34:29Z",
-  "ended_at": "2026-11-01T11:42:52.351414+00:00",
-  "outcome": "Focus and critical-sound bodies, routes and accounting distinction accepted; publication pending",
+  "ended_at": "2026-11-01T11:44:45.214713Z",
+  "outcome": "Focus-recovery and critical-sound books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "717be0fdf7ed908290ac37e01f512660e9f8c521",
   "books": [
     "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u4ea4\u4e92\u8bbe\u8ba1/\u952e\u76d8\u4e0e\u624b\u67c4\u5bfc\u822a/\u5173\u95ed\u5f39\u7a97\u540e\u5982\u4f55\u6062\u590d\u64cd\u4f5c\u7126\u70b9.md",
@@ -25,7 +25,7 @@
     "New reader body count does not complete original composite scopes",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Complete focus-recovery and critical-sound reader reviews and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing pseudo-localization and music-transition books with independent reader reviews; retain composite chapter backlog; no new topics",
   "accounting_check": {
     "pending_chapter_tasks": 27,
     "composite_items": 11,
@@ -40,5 +40,14 @@
     "Xbox Accessibility Guideline 113 Goal/Overview and focus visibility",
     "Game Accessibility Guidelines essential sound information and first-time muted play"
   ],
-  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5f39\u7a97\u4e0e\u5173\u952e\u58f0\u97f3-\u5bfc\u822a\u5ba1\u8bfb.md"
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5f39\u7a97\u4e0e\u5173\u952e\u58f0\u97f3-\u5bfc\u822a\u5ba1\u8bfb.md",
+  "commit_sha": "4a7030576784bcf83470b8dc37b25179e2a0f79c",
+  "validation": {
+    "selected_blob_hashes_verified": 19,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1058,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_scope_manifest_read_back": true
+  }
 }
