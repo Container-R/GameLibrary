@@ -2225,11 +2225,15 @@
       "id": "TASK-2026-0087",
       "question": "Does resource duplication isolate mutable child state while preserving intentional aliases within the new graph?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Assess a graph-duplication boundary distinct from already executed cache isolation and threaded request ownership",
       "expected_artifact": "Source gate first; finite original native protocol only if distinct value is established",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/engine/asset-import-intent-contract.md",
+        "research/source-notes/resource-duplication-policy.md",
+        "research/experiments/godot-resource-duplication/README.md"
+      ],
       "acceptance": [
         "Read exact existing resource isolation evidence before defining new scope",
         "Official Resource duplicate/deep-duplicate docs and pinned source expectations",
@@ -2239,8 +2243,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T03:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:54:28.998440Z",
-      "next_action": "Assess duplication graph source gate; do not rerun existing resource cache scenarios",
+      "last_progress_at": "2026-11-01T03:12:46.524017Z",
+      "next_action": "Publish finite duplication graph with independent literal checks, repeated native observations and corrected pre-native consumer evidence",
       "blockers": []
     }
   ]

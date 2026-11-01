@@ -2020,8 +2020,52 @@
     {
       "id": "gltf-sparse/archive-bindings",
       "status": "pass"
+    },
+    {
+      "id": "resource-duplication/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/author/parsed",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/author/shallow/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/author/internal/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/author/all/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/repeat/source",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/repeat/parsed",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/repeat/shallow/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/repeat/internal/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/repeat/all/inputs",
+      "status": "pass"
+    },
+    {
+      "id": "resource-duplication/archive-bindings",
+      "status": "pass"
     }
   ],
-  "passed": 505,
+  "passed": 516,
   "failed": 0
 }

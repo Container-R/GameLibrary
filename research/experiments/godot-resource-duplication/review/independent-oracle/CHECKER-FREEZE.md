@@ -1,0 +1,9 @@
+# Pre-native independent checker freeze
+
+2026-11-01 03:05 UTC. Prepared from pre-author literal expected.json, accepted protocol and the current raw field schema read in author oracle/consumer/runner. The author oracle was not imported or used for expected values. The checker expands the frozen palette/stage tables and symbolic identity classes directly.
+
+`check.py` is read-only and accepts source root, evidence UUID directory and separately reviewed `--pins` JSON. It binds source/project inputs, recorded binary hash, mode/PID/UUID/argv, UTC ordering, exact streams and parsed results. No current engine binary is read and no engine is launched. Originals and fresh-copy before/after inputs must remain archived at their expected relative paths. Historical absolute paths are checked lexically only; no files are read through them.
+
+No checker execution or synthetic test has occurred at this freeze. A Python text-edit command was used solely to tighten the receipt key list; it did not import or execute this checker, author code, fixture or engine. No additional behavior scenarios or malformed graph cases were added. Static guard checks must not be counted as additional native scenarios. First execution failures, if any, must be retained and diagnosed rather than silently editing expected literals.
+
+Final code closure received 2026-11-01 03:09 UTC. `source-pins-final.json` SHA256 `c105634a0748ccd16589138bc94e5a292e80e4ff7f822cdb32f16f8160d60ddf` is a distinct exact copy of the accepted final author manifest. Initial `source-pins.json` (`bd5acde2…`) is preserved unchanged. Use `--pins source-pins-final.json` for eventual final-code evidence. Literal expected.json (`8da52809…`) and checker (`b333beb8…`) remain byte-identical. The checker already uses recursive exact-type raw/parsed equality. No checker/native execution performed at this update; independent author-code closure is owned by the separate gameplay reviewer.

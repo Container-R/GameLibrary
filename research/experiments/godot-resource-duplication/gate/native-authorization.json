@@ -1,0 +1,9 @@
+{
+  "authorized_utc": "2026-11-01T03:09:38.180201+00:00",
+  "scope": "one author run.py invocation, maximum one version plus three behavior processes; stop first failure, no retries",
+  "manifest_sha256": "c105634a0748ccd16589138bc94e5a292e80e4ff7f822cdb32f16f8160d60ddf",
+  "protocol_sha256": "748ab0748d80145721fa8ca3095b0264bf393b47d3062da424fe60f5605a5d0c",
+  "code_acceptance_sha256": "7a3834d6748b226ab4f7634348b2591a61cc0d652c7b0aa3b69149cb5d23b57e",
+  "independent_checker_sha256": "b333beb890c12505d031ae5d346b7b7b1cfe47173521147ce49df1cd644dfc17",
+  "native_attempts_before_authorization": 0
+}

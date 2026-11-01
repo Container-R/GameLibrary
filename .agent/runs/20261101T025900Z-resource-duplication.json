@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T025900Z-resource-duplication",
+  "task_ids": [
+    "TASK-2026-0087"
+  ],
+  "started_at": "2026-11-01T02:59:00Z",
+  "ended_at": "2026-11-01T03:12:46.524017Z",
+  "outcome": "reviewed locally; publication pending",
+  "evidence": "Original finite acyclic Array[B,B,C] clone scope and intra-copy alias preservation on installed binary; pinned source comparison separate",
+  "native_execution": {
+    "author_uuid": "db16c3a8-a67e-48ce-9e63-ab2b6706e777",
+    "repeat_uuid": "0ab51875-74f4-4335-8af7-7e0cdbdf9ab9",
+    "version_processes": 2,
+    "behavior_processes": 6,
+    "unique_modes": 3,
+    "stages_per_mode": 4,
+    "retries": 0
+  },
+  "pure_tests": {
+    "final_methods_per_suite": 6,
+    "author_suite_processes": 2,
+    "reviewer_suite_processes": 2,
+    "optimized_in_each_pair": true,
+    "prior_five_method_suites_historical": true
+  },
+  "static_checks": {
+    "reviewer_frozen_checker_invocations": 2,
+    "main_relocated_checker_invocations": 2
+  },
+  "corrected_before_native": "Python bool/number coercion in raw/parsed and derived verdict equality; initial actual synthetic false acceptance retained and final strict comparison rejects",
+  "limitations": [
+    "Same installed binary and platform; no official provenance authentication",
+    "Only original acyclic graph and specific three calls",
+    "No arbitrary flags, constructors, threading, lifecycle, save or render claim",
+    "No timeout/kill fault injection"
+  ],
+  "validation": {
+    "indexed_articles": 42,
+    "unchanged_prior_experiment_files": 2886,
+    "archive_checks_normal": 516,
+    "archive_checks_optimized": 516,
+    "queue_tasks_checked": 87
+  },
+  "next_action": "Evaluate localization role source gate against existing pseudo-localization and narrative evidence"
+}

@@ -139,3 +139,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [叙事设计与写作职责来源](../research/source-notes/narrative-designer-writer-role.md)区分日英实践者角色与任务图历史样本。
 
 [GGPO重放与表现边界](../research/source-notes/rollback-presentation-boundary.md)固定源码中的宿主责任，不将追赶结束解释为外部提交确认。
+
+[Resource 复制图](../research/source-notes/resource-duplication-policy.md)将浅/内部/全部深复制与容器、子资源和副本内部别名分开，保留固定源码与实际安装程序的身份界限。

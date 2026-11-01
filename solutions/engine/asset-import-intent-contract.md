@@ -6,13 +6,16 @@ status: source-backed
 primary_discipline: ENGINE
 related_disciplines: [TA, QA, PROD]
 related_roles: [tools-programmer, technical-artist, build-engineer, qa-engineer]
-related_topics: [asset-pipeline, import-settings, source-control, clean-checkout, resource-identity, resource-ownership, threaded-loading]
+related_topics: [asset-pipeline, import-settings, source-control, clean-checkout, resource-identity, resource-ownership, threaded-loading, resource-duplication, alias-preservation]
 engines: [Godot]
 versions: ["Godot 4.6 官方文档", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
-updated_at: 2026-10-31
-verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离及同路径请求登记的实际无头对照；未验证 GPU、导出包或跨版本缓存复现
+updated_at: 2026-11-01
+verification_method: 官方来源核对；原创 SVG 导入及原生资源候选依赖隔离、同路径请求登记及有限资源复制图的实际无头对照；未验证 GPU、导出包或跨版本缓存复现
 sources:
+  - https://docs.godotengine.org/en/4.6/classes/class_resource.html
+  - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource.cpp
+  - https://docs.godotengine.org/en/4.6/classes/class_@globalscope.html#class-globalscope-method-is-same
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource_loader.cpp
   - https://docs.godotengine.org/en/4.6/classes/class_resourceloader.html
   - https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/resource_format_text.cpp
@@ -121,6 +124,44 @@ Godot 4.6 [ResourceLoader 的 CacheMode 文档](https://docs.godotengine.org/en/
 作者两个进程与[独立重复及原始记录审查](../../research/experiments/godot-resource-broker/review/REVIEW.md)各自通过两种模式顺序。首请求在发第二请求前已完成，因此这不是worker竞争测试；没有必须观察IN_PROGRESS、性能或线程安全结论。实际程序自报4.6.3，SHA256为`f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`；与上述固定官方源码的精确对应仍未认证，见[共享身份说明](../../research/source-notes/godot-runtime-provenance.md)。对象ID只按单进程活引用精确比较，不作为持久化身份。
 
 **原创工程建议，尚未实现broker：** 同路径调用方的共享/隔离要求冲突时，可以明确拒绝、排队至先前请求收取完，或由单一broker拥有请求并分发事先约定的共享结果。只将应用字典key改成`(path, mode)`不够：若仍把两种策略提交到同一个按路径复用的底层入口，两个应用key不会自动变成两个独立结果。本文没有验证这些解决方案，也不覆盖路径别名、不同type_hint、取消、失败重试或任意资源图。
+
+## 7. 已加载的图再复制：隔离原对象，不代表拆散副本内部的别名
+
+前两节讨论加载策略与请求登记，本节问另一件事：设计工具拿到一个已加载配置，复制后改内部值时，哪些使用者仍会看见变化？重新加载和复制当前内存图不是同一个操作；根对象不同、Array不同、子Resource不同，也不是同一项判据。
+
+Godot4.6 [Resource.duplicate](https://docs.godotengine.org/en/4.6/classes/class_resource.html#class-resource-method-duplicate)说明浅复制共享嵌套容器和资源；默认深复制递归复制容器，但Resource限于内部范围。`duplicate_deep(ALL)`扩大子资源范围，仍不能脱离属性规则和脚本处理就宣称“所有可达对象都独立”。内部路径分类也不等于 `resource_local_to_scene`；后者涉及场景实例化，本例不创建场景。
+
+[固定比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/io/resource.cpp)的 `_duplicate_recursive`、`_duplicate` 和公开duplicate入口展示范围选择、STORAGE属性复制以及资源重映射表。重映射的意义是：原图两个位置都指向B，深复制后可以正确地都指向同一个B'，而不是生成两个互不相干的子对象。这里的内部别名保留是意图，不是隔离失败；脚本依赖也应与可变配置载荷分开。
+
+### 一张图同时区分三种分享关系
+
+原创输入只含脚本Resource根A，其导出、非typed Array为 `[B,B,C]`：B是内嵌Gradient，C是外部Gradient。初始B红/白，C绿/白，两者offsets均为0/1。三个模式分别在新进程中复制为D，然后按冻结顺序：给D的Array追加137；把D中B的首点改蓝；把D中C的首点改品红。每步同时记录原图、别名、持有的外部引用与缓存根，不将活Resource引用误当历史值快照。
+
+作者实际运行的三个新行为进程得到下表。各进程先确认原图、缓存和 STORAGE 属性前提，再记录四个阶段；这不是只比较根对象是否不同。
+
+| 复制调用 | D 与 A 共用 Array | D 的 B 仍是原 B | D 的 C 仍是原 C | 修改结束后 A 的长度 / B 首色 / C 首色 |
+|---|---|---|---|---|
+| `duplicate(false)` | 是 | 是 | 是 | 4 / 蓝 / 品红 |
+| `duplicate(true)` | 否 | 否 | 是 | 3 / 红 / 品红 |
+| `duplicate_deep(Resource.DEEP_DUPLICATE_ALL)` | 否 | 否 | 否 | 3 / 红 / 绿 |
+
+三种模式的 D 根均不同于 A；D 最终长度均为 4，D 中 B 首色为蓝、C 首色为品红，两个 B 位置始终共享同一个对象。脚本依赖保持共享，原缓存根没有被副本替换。所有白色端点、offsets 和点数保持冻结值。
+
+独立复跑使用同一冻结输入、协议和安装程序，在新目录执行相同三种模式；另写、提前冻结的字面检查器分别验收作者和复跑原始档案。合计是 **6 个行为进程 + 2 个版本进程**，即三种模式各运行两次，不是六种独立测试场景。每个行为进程的四个阶段不是额外进程。两次运行均成功退出、stderr 为空，输入与程序摘要前后一致。当前最终纯 Python 回归套件有 6 个方法，作者和独立审查各以普通 / `-O` 模式运行一次；这些合成取证测试不是引擎行为试验。
+
+[完整实验归档](../../research/experiments/godot-resource-duplication/README.md)保留冻结协议、原创输入、程序摘要、原始输出、进程记录和独立字面预期。运行前审查发现证据消费者曾用 Python 的宽松 `==` 比较 JSON，可能把数字 0 与 `false` 混同；已在任何本例引擎执行前改为逐层精确类型比较，并保存初始反例和修正后拒绝结果。这是取证代码缺陷，不是 Godot 行为失败。
+
+既要看ID关系，也要看实际值。根ID不同不能证明子对象隔离；两个位置颜色一样也不能证明它们是同一个对象。副本内部两个B引用应始终指向同一个对象；这与副本B是否仍指向原B是两个问题。ID只在同一进程、活引用同时持有时比较，不是持久化资产身份。
+
+### 选择复制策略前，先写清哪些共享是有意的
+
+- 要独立编辑数组结构，不等于要复制每个资源元素；分别验收容器和元素。
+- 要保留副本内部的关系，不应把每一次引用都无条件复制成新对象；否则同一个设计参数可能被拆成两份。
+- 外部资源是否继续共享，应成为明确的配置政策。ALL扩大复制范围，不是未经评估的默认修复；本实验没有测内存或性能代价。
+- 修改当前STORAGE属性的副本，不等于重新从磁盘读取原始版本，也不保证复制所有瞬态状态。
+
+本例不覆盖自定义setter、特殊属性flags、必需构造参数、循环容器、C#回收、信号、线程、缓存驱逐、持久化保存、场景本地化或GPU。不能借用前面的候选加载/请求登记实验补出这些结论；本机二进制与公开源码仍没有认证对应关系。
+
 
 ## 来源与关联
 
