@@ -163,3 +163,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [可靠信道与实体就绪](../research/source-notes/reliable-channel-entity-readiness.md)定位固定 ENet 实现与独立 Godot 文档，不把协议确认当应用就绪。
 
 [网格简化的请求与结果](../research/source-notes/mesh-simplification-request-result.md)定位 meshoptimizer 固定源码、实际返回计数和相对误差尺度。
+
+[PSO 预缓存首显验收](../research/source-notes/pso-precache-first-use-acceptance.md)定位 UE 5.6 官方手册与组件收集、完整绘制状态和退化策略边界。

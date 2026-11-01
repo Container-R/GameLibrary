@@ -169,3 +169,5 @@ python3 scripts/evidence/test_verify.py
 [跨信道依赖与实体就绪](source-notes/reliable-channel-entity-readiness.md)以已有接收器的两消息假设区分传输顺序、就绪、实体代次与权限；没有网络运行或重排实测。
 
 [简化预算接收](source-notes/mesh-simplification-request-result.md)区分目标索引数、返回结果、原始容量与视觉验收；两次假设请求没有伪填输出或运行结果。
+
+[新增 pass 的首显接收](source-notes/pso-precache-first-use-acceptance.md)提出未执行的收集—绘制对照与画面/时间验收表，不把当前预编译完成写成无停顿保证。

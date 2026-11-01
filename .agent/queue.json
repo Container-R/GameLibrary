@@ -2629,11 +2629,13 @@
       "id": "TASK-2026-0102",
       "question": "What does Unreal PSO precaching completion establish, and how should first-use rendering strategy and validation coverage be interpreted?",
       "discipline": "GFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Investigate a concrete first-use rendering performance gap using exact official sources, rejecting unsupported universal hitch-free claims",
       "expected_artifact": "Bounded source gate followed by useful source-backed engineering analysis if evidence is sufficient",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/pso-precache-first-use-acceptance.md"
+      ],
       "acceptance": [
         "Identify exact official documentation version and primary-source scope",
         "Distinguish component creation strategy, fallback or skip behavior only where directly documented",
@@ -2643,8 +2645,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:12:16.496918Z",
-      "next_action": "Review exact official PSO precaching and validation sources; reject gate if insufficient",
+      "last_progress_at": "2026-11-01T05:14:57.623801Z",
+      "next_action": "Publish reviewed PSO collector-to-draw and first-use acceptance source note",
       "blockers": []
     }
   ]
