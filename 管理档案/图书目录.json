@@ -340,9 +340,10 @@
       "area": "指标设计",
       "shelf": "玩家行为",
       "proposed_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/data/attempt-completion-denominator-contract.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+      "current_read_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
     },
     {
       "internal_id": "SOL-DESIGN-001",
@@ -352,9 +353,11 @@
       "area": "系统设计",
       "shelf": "成长与经济",
       "proposed_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/design/single-player-economy-ledger.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+      "current_read_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "extraction_scope": "单机成长数值主线重写；SQLite写事务、提交重试与崩溃恢复细节仍待专门整理"
     },
     {
       "internal_id": "SOL-ENGINE-002",
@@ -678,7 +681,7 @@
       "current_read_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
     }
   ],
-  "rewritten_reader_books": 9,
-  "legacy_entries_remaining": 46,
+  "rewritten_reader_books": 11,
+  "legacy_entries_remaining": 44,
   "whole_library_rebuild_complete": false
 }

@@ -46,6 +46,13 @@
       "pending_subtopics": [
         "细标签合并后的一致率形式推导；优先与数据分析方法主题合并"
       ]
+    },
+    {
+      "old_path": "solutions/design/single-player-economy-ledger.md",
+      "pending_subtopics": [
+        "SQLite写入与提交阶段重试",
+        "崩溃恢复与交易结果存储的有限实验说明"
+      ]
     }
   ],
   "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index"

@@ -4038,7 +4038,9 @@
         "CATALOG.md",
         "scripts/navigation/build_routes.py",
         "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u754c\u9762\u7f8e\u672f/\u72b6\u6001\u8868\u8fbe/\u7528\u56fe\u5f62\u8868\u73b0\u6309\u94ae\u548c\u754c\u9762\u7684\u72b6\u6001.md",
-        "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u73a9\u5bb6\u6d4b\u8bd5/\u5173\u5361\u5f15\u5bfc/\u4e3b\u6301\u4eba\u63d0\u793a\u4f1a\u600e\u6837\u5f71\u54cd\u5173\u5361\u6d4b\u8bd5\u7ed3\u8bba.md"
+        "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u73a9\u5bb6\u6d4b\u8bd5/\u5173\u5361\u5f15\u5bfc/\u4e3b\u6301\u4eba\u63d0\u793a\u4f1a\u600e\u6837\u5f71\u54cd\u5173\u5361\u6d4b\u8bd5\u7ed3\u8bba.md",
+        "GameLibrary/\u6570\u636e\u5206\u6790/\u6307\u6807\u8bbe\u8ba1/\u73a9\u5bb6\u884c\u4e3a/\u5982\u4f55\u8ba1\u7b97\u5173\u5361\u5b8c\u6210\u7387.md",
+        "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u7cfb\u7edf\u8bbe\u8ba1/\u6210\u957f\u4e0e\u7ecf\u6d4e/\u7528\u6536\u652f\u8bb0\u5f55\u68c0\u67e5\u5355\u673a\u6e38\u620f\u7684\u6210\u957f\u7ecf\u6d4e.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4049,10 +4051,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T12:45:00Z",
+      "lease_until": "2026-11-01T13:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:23:19.265672Z",
-      "next_action": "Rewrite existing completion-rate and single-player economy books with independent reader reviews; retain composite chapter backlog; no new topics",
+      "last_progress_at": "2026-11-01T11:25:19.171697Z",
+      "next_action": "Complete completion-rate and economy reader reviews and routes; then continue existing-book remediation without new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

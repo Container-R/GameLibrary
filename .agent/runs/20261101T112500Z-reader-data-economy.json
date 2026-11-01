@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T112500Z-reader-data-economy",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:24:13Z",
+  "ended_at": "2026-11-01T11:25:19.171697Z",
+  "outcome": "Completion-rate and economy rewrites and reader routes accepted; remote publication pending",
+  "baseline_head": "69325abf4a40cca9c69ffdaaf06de47418daa0b9",
+  "books": [
+    "GameLibrary/\u6570\u636e\u5206\u6790/\u6307\u6807\u8bbe\u8ba1/\u73a9\u5bb6\u884c\u4e3a/\u5982\u4f55\u8ba1\u7b97\u5173\u5361\u5b8c\u6210\u7387.md",
+    "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u7cfb\u7edf\u8bbe\u8ba1/\u6210\u957f\u4e0e\u7ecf\u6d4e/\u7528\u6536\u652f\u8bb0\u5f55\u68c0\u67e5\u5355\u673a\u6e38\u620f\u7684\u6210\u957f\u7ecf\u6d4e.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u6570\u636e\u5206\u6790/\u6307\u6807\u8bbe\u8ba1/\u73a9\u5bb6\u884c\u4e3a/\u5982\u4f55\u8ba1\u7b97\u5173\u5361\u5b8c\u6210\u7387.md": "d0833d0b1df1343192f79ea3bbf90602c770f924ed598f9222d58617afeb74fc",
+    "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u7cfb\u7edf\u8bbe\u8ba1/\u6210\u957f\u4e0e\u7ecf\u6d4e/\u7528\u6536\u652f\u8bb0\u5f55\u68c0\u67e5\u5355\u673a\u6e38\u620f\u7684\u6210\u957f\u7ecf\u6d4e.md": "377cdb720ad790c09e1cd0d8932bfa8456edfde84c369affc4a2455934dde05a"
+  },
+  "rewritten_reader_books": 11,
+  "remaining_legacy_entries": 44,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No analytics service, database, economic model or player study executed during this rewrite",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Complete completion-rate and economy reader reviews and routes; then continue existing-book remediation without new topics",
+  "editorial_integration": "Completion-rate bottom heading normalized from \u53c2\u8003\u8d44\u6599 to \u53c2\u8003\u6765\u6e90; both books add return footer",
+  "content_review": "Both independent reader reviews accepted, including member-level denominators and economy arithmetic; no new runtime checks",
+  "navigation_review": "Data analysis and game design routes followed with matching titles and return links",
+  "inventory_shelf_coverage": {
+    "total": 55,
+    "rewritten": 11,
+    "legacy": 44
+  }
+}
