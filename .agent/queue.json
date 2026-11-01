@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T11:05:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:16:15.176779Z",
-      "next_action": "Separate player assignment and actual shared-session exposure in a narrow source-only measurement note",
+      "last_progress_at": "2026-11-01T10:17:43.351985Z",
+      "next_action": "Read fixed Valve lag-compensation history selection and deduplicate existing prediction notes; maintain source-only release scope",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3901,7 +3901,7 @@
       "id": "TASK-2026-0148",
       "question": "Which assignment and session-delivery records must remain distinct when a shared team rule changes player exposure after randomization?",
       "discipline": "DATA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "Original gaming research supplies a concrete shared-treatment mechanism absent from existing eligibility and denominator notes",
       "expected_artifact": "Source-only note and one additive role discoverability link; no new indexed article",
@@ -3916,12 +3916,14 @@
         "Count compression shows lost order only, not outcome effects",
         "No estimator endorsement, universal bias sign, current production or peer-review claim"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T10:16:15.176779Z",
-      "next_action": "Validate exact note review, preserved existing prose and non-destructive publication",
-      "blockers": []
+      "next_action": "Retain assignment versus observed exposure and finite information-only examples; no estimator or effect inference",
+      "blockers": [],
+      "completed_at": "2026-11-01T10:17:43.351985Z",
+      "commit_sha": "1706dad975a6cfc879c8db1e203d980b4df0a13d"
     }
   ]
 }

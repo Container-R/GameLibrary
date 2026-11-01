@@ -6,8 +6,8 @@
     "TASK-2026-0148"
   ],
   "started_at": "2026-11-01T10:11:00Z",
-  "ended_at": "2026-11-01T10:16:15.176779Z",
-  "outcome": "Independently reviewed source-only assignment/exposure note; publication validation pending",
+  "ended_at": "2026-11-01T10:17:43.351985Z",
+  "outcome": "Source-only assignment/session exposure note published with exact note and role-link readbacks",
   "sources_examined": [
     "https://arxiv.org/html/2402.05336v1"
   ],
@@ -31,7 +31,12 @@
     "archive_consistency_failures": 0,
     "normal_and_optimized_agree": true,
     "archive_scope": "Declared archive consistency only, not new runtime, binary authenticity or semantic correctness",
-    "local_links_checked": 915
+    "local_links_checked": 915,
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 148,
+    "declared_paths_checked": 202
   },
-  "next_action": "Verify exact publication; then assess a distinct lag-compensation source gate without broadening this note"
+  "next_action": "Read fixed Valve lag-compensation history selection and deduplicate existing prediction notes; maintain source-only release scope",
+  "commit_sha": "1706dad975a6cfc879c8db1e203d980b4df0a13d"
 }
