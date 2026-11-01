@@ -2413,7 +2413,7 @@
       "id": "TASK-2026-0094",
       "question": "Which concrete composition-to-interactive-arrangement responsibility is supported by original game-composer production accounts beyond existing runtime-transition and PCM studies?",
       "discipline": "MUSIC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 85,
       "priority_rationale": "Assess missing composition-role coverage without duplicating audio implementation or inventing player-effect claims",
       "expected_artifact": "Two-source original-practitioner gate and, if distinct, source-only composer role analysis",
@@ -2427,11 +2427,35 @@
         "Choose concrete composition/arrangement decision, not generic ownership worksheet",
         "No runtime, emotional-effectiveness, player or image/audio analysis claim without actual evidence"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:26:43.403331Z",
+      "next_action": "Retain original unexecuted arrangement choices; listening, implementation and player evidence remain separate",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:28:18.992188Z",
+      "commit_sha": "296a735c09ea62f19d42703285bfee210257d509"
+    },
+    {
+      "id": "TASK-2026-0095",
+      "question": "Do existing fixed-step, root-motion and prediction articles keep each model, source and actual fixture claim within its exact evidence scope?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Deep adversarial applicability review of high-value combat/animation/network boundaries before broader coverage",
+      "expected_artifact": "Scoped read-only review and precise source/prose correction if supported, otherwise bounded negative findings",
+      "artifact_paths": [],
+      "acceptance": [
+        "Trace concrete reader-facing claims to exact existing evidence identities",
+        "Do not transfer related fixture results or infer production guarantees",
+        "Reopen original sources where necessary; no invented corrections",
+        "No new native execution or runtime metadata publication; separate pending release remains blocked"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:26:43.403331Z",
-      "next_action": "Publish reviewed source-only composition and interactive arrangement responsibilities",
+      "last_progress_at": "2026-11-01T04:28:18.992188Z",
+      "next_action": "Review three existing high-value studies against their actual archived applicability boundaries",
       "blockers": []
     }
   ]
