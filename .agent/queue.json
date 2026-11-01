@@ -3201,7 +3201,7 @@
       "id": "TASK-2026-0123",
       "question": "Do the published sensor, generated-tool dependency and event/bank lifetime additions preserve their decisive premises under fresh adversarial source review?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Verify three recent depth additions with a fresh reviewer rather than expanding topic count; preserve original scouting overlap disclosure",
       "expected_artifact": "Bounded snapshot-linked adversarial review with exact article identities and source checks",
@@ -3217,11 +3217,36 @@
         "Do not read or certify unrelated runtime archives",
         "Archive actionable correction or honest no-material-error result without claiming runtime validation"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:55:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:09:35.763846Z",
-      "next_action": "Archive exact-snapshot review findings and preserve their source-only bounds",
+      "next_action": "Retain exact reviewed snapshot and limited source-only conclusions; no whole-article or runtime certification",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:11:02.382205Z",
+      "commit_sha": "52471c9e69b9eaaf1efdd9a73314b52db61e0ff3"
+    },
+    {
+      "id": "TASK-2026-0124",
+      "question": "How can ink lookahead execute a host action before a displayed narrative boundary, and how should external binding policy distinguish API defaults?",
+      "discipline": "NARR",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Deepen narrative-host handoff with a fixed implementation mechanism beyond generic commit-point advice",
+      "expected_artifact": "Finite source-backed narrative role addition on lookahead-safe external binding and execution placement",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin ink v1.2.1 official tag and decisive Story.cs control flow",
+        "Distinguish General true default from convenience false defaults",
+        "Preserve string-evaluation rejection and no exactly-once guarantee",
+        "Original reward scenario is conditional and unexecuted, not a production incident",
+        "No runtime archive inspection or claim of tested ink script"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:11:02.382205Z",
+      "next_action": "Read fixed lookahead snapshot, host delegate invocation and binding overload paths before drafting",
       "blockers": []
     }
   ]
