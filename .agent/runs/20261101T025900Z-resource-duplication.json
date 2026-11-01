@@ -9,8 +9,6 @@
   "outcome": "published and read back",
   "evidence": "Original finite acyclic Array[B,B,C] clone scope and intra-copy alias preservation on installed binary; pinned source comparison separate",
   "native_execution": {
-    "author_uuid": "db16c3a8-a67e-48ce-9e63-ab2b6706e777",
-    "repeat_uuid": "0ab51875-74f4-4335-8af7-7e0cdbdf9ab9",
     "version_processes": 2,
     "behavior_processes": 6,
     "unique_modes": 3,
@@ -49,5 +47,21 @@
     "verifier_unit_methods": 9
   },
   "next_action": "Evaluate localization role source gate against existing pseudo-localization and narrative evidence",
-  "commit_sha": "1f7bfe1a1eb3648e3f9346f012c53a120df169ec"
+  "commit_sha": "1f7bfe1a1eb3648e3f9346f012c53a120df169ec",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "native_execution.author_uuid": "execution attempt identity",
+      "native_execution.repeat_uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "native_execution.author_uuid": 1,
+      "native_execution.repeat_uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

@@ -140,7 +140,7 @@ sources:
 
 3. Tehilla Ostrovsky、Paul Ungermann、Chris Donkin，*Using machine learning to automate the collection, transcription, and analysis of verbal-report data*，Behavior Research Methods 57, 285，2025-09-12，DOI 10.3758/s13428-025-02800-5。访问 2026-11-01。定向阅读章节见自动编码小节及专用档案的同日增补；原有两份来源的访问日期不变。
 
-来源取证与日期边界见[专用档案](../../../../sources/playtest-intervention-sources.md)。
+来源取证与日期边界见[专用档案](../../../来源卡片/playtest-intervention-sources.md)。
 
 与测试执行、自动化和版本风险的职责交接见[游戏质量保证档案](../../../../roles/qa/game-quality-assurance.md)；研究方法边界不意味着 QA 不能参与体验研究。
 

@@ -9,8 +9,6 @@
   "outcome": "published and read back",
   "evidence": "Pinned original FFmpeg sources; frozen literal full-waveform expectations; installed offline mixing with independently checked repeat",
   "native_execution": {
-    "author_uuid": "0522fc0d-998a-489a-ba2d-05a8418dabd2",
-    "repeat_uuid": "59a5d8a4-39ef-448f-8771-622108e7b86c",
     "version_processes": 2,
     "mix_processes": 6,
     "unique_conditions": 3,
@@ -63,5 +61,21 @@
     "verifier_unit_methods": 9
   },
   "next_action": "Assess lighting-production responsibility source gate without repeating concept-art or graphics-programmer scope",
-  "commit_sha": "353a7207f4477b8a11c303d59161c41b135c4aff"
+  "commit_sha": "353a7207f4477b8a11c303d59161c41b135c4aff",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "native_execution.author_uuid": "execution attempt identity",
+      "native_execution.repeat_uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "native_execution.author_uuid": 1,
+      "native_execution.repeat_uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

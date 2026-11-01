@@ -29,11 +29,25 @@
     "canonical_head": "3721e5b6ae2fd506aca022c30e489524c03442f0",
     "remote_blobs_restored": 2005,
     "prior_uncommitted_evidence": "unavailable, not reconstructed as original",
-    "new_author_uuid": "64d9242a-4f54-491f-b959-2b54196a7521",
-    "new_review_uuid": "09655ed4-1da6-452e-a086-97a8960926cc",
     "record": "research/audits/workspace-recovery-2056/recovery.json"
   },
   "local_review_completed_at": "2026-10-31T21:03:15.518976Z",
   "commit_sha": "f72bbfc3352966a3baac01ac5386148c0eead715",
-  "ended_at": "2026-10-31T21:06:25.892342Z"
+  "ended_at": "2026-10-31T21:06:25.892342Z",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "workspace_recovery.new_author_uuid": "execution attempt identity",
+      "workspace_recovery.new_review_uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "workspace_recovery.new_author_uuid": 1,
+      "workspace_recovery.new_review_uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

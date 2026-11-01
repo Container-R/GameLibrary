@@ -8,15 +8,13 @@
   "ended_at": "2026-10-31T23:35:26.722156Z",
   "outcome": "published and read back",
   "sources": [
-    "RFC 7845 \u00a7\u00a73\u20135.2",
-    "RFC 6716 \u00a73.1/Table2/\u00a73.2.2",
-    "RFC 3533 \u00a7\u00a75\u20136",
+    "RFC 7845 §§3–5.2",
+    "RFC 6716 §3.1/Table2/§3.2.2",
+    "RFC 3533 §§5–6",
     "Xiph Ogg framing",
     "FFmpeg fixed comparison documentation 3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587"
   ],
   "evidence": {
-    "author_uuid": "2a1a6a1b-8731-4540-ac7d-f5ada6ec49ab",
-    "independent_uuid": "1c7b7ced-e93e-44b8-bca0-ce7b8650a1ab",
     "version_processes": 2,
     "encode_processes": 2,
     "decode_processes": 2,
@@ -54,5 +52,21 @@
     "receipt_declared_paths_checked": 63
   },
   "next_action": "Complete reviewed production manager role contribution from concrete original sources; whole role matrix stays incomplete",
-  "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b"
+  "commit_sha": "57fd44cd267ad7eee3f783714194c6a28965505b",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "evidence.author_uuid": "execution attempt identity",
+      "evidence.independent_uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "evidence.author_uuid": 1,
+      "evidence.independent_uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

@@ -11,8 +11,6 @@
     "ICU release76-1 commit8eca245c7484ac6cc179e3e5f7c1ea7680810f39; CLDR46-derived comparisondata"
   ],
   "evidence": {
-    "author_batch": "2f4f411a-b9d7-485e-b837-8d5d1ed5cfe0",
-    "independent_batch": "51693796-d462-4068-8d93-cf96d488eb99",
     "native_children": 6,
     "unique_configurations": 3,
     "inputs_per_configuration": 6,
@@ -27,7 +25,6 @@
     "semantic_boundary": "ar omittedfew n3OTHER succeeds asformat butrejectsdeclaredFEWintent; nottranslationquality"
   },
   "negative_startup": {
-    "uuid": "9a6956ee-98c7-4c91-b1cb-08a3299a25b9",
     "parent_exitcode": 1,
     "native_children": 0,
     "scope": "one optimizedstartuprejection, no seededPASS/timeoutinjection; sourcehashesobservedafter only"
@@ -50,5 +47,23 @@
     "receipt_declared_paths_checked": 61
   },
   "next_action": "Use documented remaining evidence gaps to choose next bounded source-backed depth unit, not more locale permutations",
-  "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9"
+  "commit_sha": "3cd1eb680b2d8c6bbda8a3981eb05c4342cd51d9",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "evidence.author_batch": "execution attempt identity",
+      "evidence.independent_batch": "execution attempt identity",
+      "negative_startup.uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "evidence.author_batch": 1,
+      "evidence.independent_batch": 1,
+      "negative_startup.uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

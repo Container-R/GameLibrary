@@ -50,7 +50,7 @@ sources:
 
 五栏证据结构、介入分类、虚构E1–E5水泵房序列与生产决策卡是本研究原创。方法来源并不包含该场景。未招募、未运行游戏、未录制参与者、未修改关卡、未复测；不能从静态反例推出任何玩家群体的成功率或因果收益。
 
-关联[工程方案](../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)。来源方法与原创假设保持分层，不以文档归档代替真实试玩。
+关联[工程方案](../历史正文/solutions/production/playtest-intervention-evidence.md)。来源方法与原创假设保持分层，不以文档归档代替真实试玩。
 
 ## 2026-11-01 增补：标签粒度与生产决定
 

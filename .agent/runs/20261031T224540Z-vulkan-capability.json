@@ -13,7 +13,6 @@
     "Official moving latest API refpages accessed2026-10-31"
   ],
   "evidence": {
-    "uuid": "c8cf0a91-18ed-4b66-afb4-11141bb7ed0d",
     "native_children": 1,
     "create_attempts": 1,
     "create_returns": 1,
@@ -44,5 +43,19 @@
     "receipt_declared_paths_checked": 55
   },
   "next_action": "Continue missing NET services role source-backed research; do not repair drivers or retry native branch",
-  "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7"
+  "commit_sha": "1637db9494828b1fda584d9d846b71ae60059cf7",
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "evidence.uuid": "execution attempt identity"
+    },
+    "omitted_identity_item_counts": {
+      "evidence.uuid": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }

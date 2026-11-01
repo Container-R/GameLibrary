@@ -9,17 +9,12 @@
   "outcome": "published and read back",
   "protocol_sha256": "31792686b01bbe1a71d03fc66e7852e1771eb02dabf7431db43aa8f1d5fd69e6",
   "native_attempts": 2,
-  "accepted_attempts": [
-    "35db4b98-af25-4248-a14f-cf56e196cde7",
-    "bb5b395c-6e2c-4f22-89e7-284c5a06f658"
-  ],
   "target_child_processes": 2,
   "explicit_c_api_calls": 40,
   "color_conversion_calls": 6,
   "unique_rgb_configurations": 1,
   "alpha_conditions_per_invocation": 2,
   "separate_version_processes": 0,
-  "library_sha256": "4cf9f69016c7804bcb4fa56f5bbc55640cb1b7196ac7b93ba29ed9df9bd9ff4d",
   "library_provenance": "Identified local bytes/self-report2190/mapping; upstream source correspondence unverified",
   "evidence": "Actual RGB conversion with host linear-space arithmetic differs from direct encoded-space arithmetic under a frozen finite contract",
   "pre_native_corrections": "Synthetic receipt false accepts, UTC chronology and hash-failure recording corrected before any target CMM invocation",
@@ -48,5 +43,22 @@
   },
   "supervision_record": ".agent/audits/20261101T005000Z.json",
   "next_action": "Review developer-authored Killzone3 task continuation and execution case against exact original chapter; no runtime authorized",
-  "commit_sha": "48c257cf39608548e482cff555d97734feacf72a"
+  "commit_sha": "48c257cf39608548e482cff555d97734feacf72a",
+  "accepted_attempt_count": 2,
+  "public_record_transformation": {
+    "kind": "environment-identity omission from a historical summary",
+    "historical_source_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "removed_field_categories": {
+      "accepted_attempts": "execution attempt identity",
+      "library_sha256": "installed library fingerprint"
+    },
+    "omitted_identity_item_counts": {
+      "accepted_attempts": 2,
+      "library_sha256": 1
+    },
+    "historical_observations_and_validation_counts_retained": true,
+    "new_runtime_executions": 0,
+    "history_rewritten": false,
+    "limitation": "This derivative is not the original execution record and does not authenticate execution or extend the historical evidence scope."
+  }
 }
