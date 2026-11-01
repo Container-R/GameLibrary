@@ -2440,7 +2440,7 @@
       "id": "TASK-2026-0095",
       "question": "Do existing fixed-step, root-motion and prediction articles keep each model, source and actual fixture claim within its exact evidence scope?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Deep adversarial applicability review of high-value combat/animation/network boundaries before broader coverage",
       "expected_artifact": "Scoped read-only review and precise source/prose correction if supported, otherwise bounded negative findings",
@@ -2453,11 +2453,35 @@
         "Reopen original sources where necessary; no invented corrections",
         "No new native execution or runtime metadata publication; separate pending release remains blocked"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:31:39.809482Z",
+      "next_action": "No unsupported correction identified; retain bounded review and existing integration gaps",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:33:31.519213Z",
+      "commit_sha": "031b35aac06f8f49e9f5d019d856d943bf95c418"
+    },
+    {
+      "id": "TASK-2026-0096",
+      "question": "Which presentation policy and upstream work boundaries prevent swapchain mode or image count from proving end-to-end input latency?",
+      "discipline": "GFX",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Concrete source-depth performance decision gap, independent of blocked GPU execution and pending runtime release",
+      "expected_artifact": "Pinned primary-source analysis with explicitly hypothetical queue timeline and no measured latency claim",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read fixed Vulkan surface/swapchain clauses and independently review scope",
+        "Keep separate DXGI waitable-swapchain guidance from Vulkan guarantees",
+        "Distinguish image capacity, admitted work, presentation requests and physical response",
+        "No GPU run, driver changes, universal performance recommendation or runtime metadata"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:31:39.809482Z",
-      "next_action": "Archive bounded negative applicability result without cosmetic article changes",
+      "last_progress_at": "2026-11-01T04:33:31.519213Z",
+      "next_action": "Review fixed presentation-queue sources and finite unexecuted timeline",
       "blockers": []
     }
   ]
