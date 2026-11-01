@@ -13,16 +13,16 @@
     "reader_books_total": 68
   },
   "publication": {
-    "last_verified_head_sha": "36a16f326556207746ca51a6a16caccd7c3ff39d",
+    "last_verified_head_sha": "7098ce36dc049fa15d335752b5e6a317b4be6bae",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "68 reader books unchanged; existing navigation reader adds fixed Detour output-capacity observations and complete safe reproduction records.",
-    "latest_verified_content_sha": "36a16f326556207746ca51a6a16caccd7c3ff39d",
+    "scope": "68 reader books unchanged; existing silent-stem book clarifies nonzero dropout scaling from fixed original source.",
+    "latest_verified_content_sha": "7098ce36dc049fa15d335752b5e6a317b4be6bae",
     "reader_books_total": 68,
     "post_baseline_research_books": 13,
-    "counts_basis": "Existing reader increment; two native invocations repeat two conditions, not four distinct experiments."
+    "counts_basis": "Source-only reader increment, not a new native experiment or new book."
   },
-  "next_action": "Continue substantive source and evidence-gap research with duplicate-content screening; leave weighted Detour native experiment declined and distinguish accepted output-capacity observations from untested budgets.",
+  "next_action": "Continue existing-reader evidence-gap research; prefer a direct source explanation when a new native experiment would not add necessary evidence.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T23:15:00Z",
+    "lease_until": "2026-11-02T00:00:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T223915Z-detour-output-capacity",
+  "last_run_id": "20261101T230601Z-amix-transition-shape",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T22:39:15Z",
-  "last_commit_sha": "36a16f326556207746ca51a6a16caccd7c3ff39d",
+  "last_real_progress_at": "2026-11-01T23:06:01Z",
+  "last_commit_sha": "7098ce36dc049fa15d335752b5e6a317b4be6bae",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -113,6 +113,7 @@
     "interval": "2026-11-01T22:39Z through 22:55Z",
     "issue": "An awaited preparation/read wrapper stopped returning; no research progress claimed during this interval.",
     "reconciliation": "Sequential checkpoint inspection showed tree creation was not reached; no commit or ref operation was invoked. Fresh read-only HEAD verification at 22:56Z confirmed unchanged 36a16f326556207746ca51a6a16caccd7c3ff39d.",
-    "next_step": "Separate bounded local payload loading from each remote request; publish accepted content only after full tree verification."
+    "next_step": "Separate bounded local payload loading from each remote request; publish accepted content only after full tree verification.",
+    "resolution": "At 23:00Z accepted Detour content published as 7098ce36dc049fa15d335752b5e6a317b4be6bae. All 792 tree blobs matched the expected baseline plus delta; reader, support README and state read back exactly. No uncertain mutation remains."
   }
 }

@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T23:15:00Z",
+      "lease_until": "2026-11-02T00:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T22:39:15Z",
-      "next_action": "Continue substantive source and evidence-gap research with duplicate-content screening; leave weighted Detour native experiment declined and distinguish accepted output-capacity observations from untested budgets.",
+      "last_progress_at": "2026-11-01T23:06:01Z",
+      "next_action": "Continue existing-reader evidence-gap research; prefer a direct source explanation when a new native experiment would not add necessary evidence.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6333,6 +6333,33 @@
       "next_action": "Do not generalize to node exhaustion, weights, dynamic topology, geometry, movement or memory safety. Any extension requires new explicit inputs and independent expectations.",
       "blockers": [],
       "verification_method": "Two independently built copies of fixed native Detour fixture, four total findPath calls covering the same two conditions; three builds including initial gate stop. Pure tests and source reviews recorded separately."
+    },
+    {
+      "id": "TASK-2026-0170",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Does a dropout transition duration imply a sample-linear output gain fade in the fixed amix implementation?",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 75,
+      "priority_rationale": "Clarify an existing offline mixing reader with a concrete reciprocal-gain comparison; no duplicate book or unnecessary native suite.",
+      "expected_artifact": "GameLibrary/声音与音乐/音频制作/混音/静音分轨为何会影响其他音轨的增益.md",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/音频制作/混音/静音分轨为何会影响其他音轨的增益.md",
+        "管理档案/审查/静音分轨-退出过渡形状审查.md"
+      ],
+      "acceptance": [
+        "Read fixed implementation and official documentation",
+        "Distinguish denominator midpoint from a measured temporal midpoint",
+        "Preserve historical zero-transition experiment scope",
+        "Independent full-reader review of exact staged bytes"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T23:06:01Z",
+      "next_action": "Use only for fixed-source two-positive-equal-weight explanation; actual pipeline waveforms and listening outcomes remain separate.",
+      "blockers": [],
+      "verification_method": "Fixed official source and original ideal arithmetic comparison, independently reviewed; zero new mixing processes."
     }
   ],
   "execution_policy": {

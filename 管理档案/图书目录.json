@@ -581,7 +581,12 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
+      "latest_increment": {
+        "scope": "Fixed-source nonzero dropout denominator and blockwise gain explanation; no new media execution or listening.",
+        "reader_review": "管理档案/审查/静音分轨-退出过渡形状审查.md",
+        "reader_sha256": "171dbacd51a56827b207ec3fe8413227a0de6baf530f4f2e0889a8c63ff2eedf"
+      }
     },
     {
       "internal_id": "SOL-DATA-001",
