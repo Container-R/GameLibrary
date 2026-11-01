@@ -2707,7 +2707,7 @@
       "id": "TASK-2026-0105",
       "question": "When does an equal-power crossfade preserve sample power, and what changes for correlated or inverted music stems?",
       "discipline": "MUSIC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Examine a concrete music transition assumption with primary DSP evidence and exact algebra, separating sample power from loudness and clipping",
       "expected_artifact": "Bounded primary-source gate and original finite correlation derivation if supported",
@@ -2721,11 +2721,36 @@
         "Separate mean-square power, peaks and perceived loudness; no playback or production guarantee",
         "No runtime/model generation, private metadata or legacy article rewrites"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:31:03.427146Z",
-      "next_action": "Publish reviewed equal-power crossfade correlation source and exact finite proof",
+      "next_action": "Retain exact finite cross-moment and ideal-gain limits; no mixer or loudness result inferred",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:33:00.723537Z",
+      "commit_sha": "cb564d4e7ae63004f118ceffdec2deb3292f064a"
+    },
+    {
+      "id": "TASK-2026-0106",
+      "question": "Do four recent published source notes preserve their exact source applicability and unexecuted-example assumptions under adversarial rereading?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 94,
+      "priority_rationale": "Strengthen recent mechanism analyses before expanding coverage; seek material contradictions rather than ceremonial edits",
+      "expected_artifact": "A bounded exact-snapshot technical review with findings or scoped negative result, and any supported corrections",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact published mesh, PSO, input-disable and tangent notes at pinned snapshot",
+        "Recheck primary sources and example assumptions for evidence transfer or overclaim",
+        "Disclose reviewer overlap with previous author/source roles, not claim wholly blind independence",
+        "No whole-repo, archive authentication, runtime or scheduled-supervisor claims",
+        "Keep review public-safe and avoid unrelated cosmetic changes"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:33:00.723537Z",
+      "next_action": "Review bounded exact-snapshot adversarial findings and integrate only material corrections",
       "blockers": []
     }
   ]
