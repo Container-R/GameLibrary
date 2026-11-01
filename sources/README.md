@@ -131,3 +131,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Left 4 Dead Director 来源](../research/source-notes/left4dead-director-pacing.md)定位历史 AIIDE 演讲文字，不把代理强度量或阶段名当作玩家体验验证。
 
 [游戏数据分析岗位来源](../research/source-notes/game-data-analyst-role.md)定位 Nexus 与 Riot 历史实践者文字；不把描述性比较升级为因果实验。
+
+[标量惯性化来源](../research/source-notes/scalar-inertialization-continuity.md)区分弹簧残差、有限时间多项式及数值近似。
+
+[glTF稀疏accessor来源](../research/source-notes/gltf-sparse-accessor.md)定位基底、替换和元数据子集边界。

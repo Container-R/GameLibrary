@@ -5356,6 +5356,124 @@
         "review/repeat/fixture/test_scalar.py": "research/experiments/scalar-inertialization/review/repeat/fixture/test_scalar.py",
         "review/repeat/protocol.md": "research/experiments/scalar-inertialization/review/repeat/protocol.md"
       }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-sparse/author/sources",
+      "document": "research/experiments/gltf-sparse-accessor/results/summary.json",
+      "field": [
+        "sources"
+      ],
+      "files": {
+        "reader.py": "research/experiments/gltf-sparse-accessor/reader.py",
+        "run.py": "research/experiments/gltf-sparse-accessor/run.py",
+        "protocol.md": "research/experiments/gltf-sparse-accessor/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-sparse/author/artifacts",
+      "document": "research/experiments/gltf-sparse-accessor/results/summary.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "dense.gltf.json": "research/experiments/gltf-sparse-accessor/results/dense.gltf.json",
+        "zero.gltf.json": "research/experiments/gltf-sparse-accessor/results/zero.gltf.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-sparse/repeat/sources",
+      "document": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/summary.json",
+      "field": [
+        "sources"
+      ],
+      "files": {
+        "reader.py": "research/experiments/gltf-sparse-accessor/review/independent-repeat/reader.py",
+        "run.py": "research/experiments/gltf-sparse-accessor/review/independent-repeat/run.py",
+        "protocol.md": "research/experiments/gltf-sparse-accessor/review/independent-repeat/protocol.md"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-sparse/repeat/artifacts",
+      "document": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/summary.json",
+      "field": [
+        "artifacts"
+      ],
+      "files": {
+        "dense.gltf.json": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/dense.gltf.json",
+        "zero.gltf.json": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/zero.gltf.json"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "gltf-sparse/archive-bindings",
+      "document": "research/experiments/gltf-sparse-accessor/archive-bindings.json",
+      "field": [
+        "sha256"
+      ],
+      "files": {
+        "README.md": "research/experiments/gltf-sparse-accessor/README.md",
+        "SHA256SUMS": "research/experiments/gltf-sparse-accessor/SHA256SUMS",
+        "author-execution/command.txt": "research/experiments/gltf-sparse-accessor/author-execution/command.txt",
+        "author-execution/end-utc.txt": "research/experiments/gltf-sparse-accessor/author-execution/end-utc.txt",
+        "author-execution/exit-code.txt": "research/experiments/gltf-sparse-accessor/author-execution/exit-code.txt",
+        "author-execution/sources-after.txt": "research/experiments/gltf-sparse-accessor/author-execution/sources-after.txt",
+        "author-execution/sources-before.txt": "research/experiments/gltf-sparse-accessor/author-execution/sources-before.txt",
+        "author-execution/start-utc.txt": "research/experiments/gltf-sparse-accessor/author-execution/start-utc.txt",
+        "author-execution/stderr.txt": "research/experiments/gltf-sparse-accessor/author-execution/stderr.txt",
+        "author-execution/stdout.txt": "research/experiments/gltf-sparse-accessor/author-execution/stdout.txt",
+        "historical-pre-run-review/SHA256SUMS": "research/experiments/gltf-sparse-accessor/historical-pre-run-review/SHA256SUMS",
+        "historical-pre-run-review/protocol.md": "research/experiments/gltf-sparse-accessor/historical-pre-run-review/protocol.md",
+        "historical-pre-run-review/reader.py": "research/experiments/gltf-sparse-accessor/historical-pre-run-review/reader.py",
+        "historical-pre-run-review/run.py": "research/experiments/gltf-sparse-accessor/historical-pre-run-review/run.py",
+        "protocol.md": "research/experiments/gltf-sparse-accessor/protocol.md",
+        "reader.py": "research/experiments/gltf-sparse-accessor/reader.py",
+        "results/dense.gltf.json": "research/experiments/gltf-sparse-accessor/results/dense.gltf.json",
+        "results/summary.json": "research/experiments/gltf-sparse-accessor/results/summary.json",
+        "results/zero.gltf.json": "research/experiments/gltf-sparse-accessor/results/zero.gltf.json",
+        "review/CODE-CLOSURE.md": "research/experiments/gltf-sparse-accessor/review/CODE-CLOSURE.md",
+        "review/CODE-REVIEW.md": "research/experiments/gltf-sparse-accessor/review/CODE-REVIEW.md",
+        "review/EDITORIAL-REVIEW.md": "research/experiments/gltf-sparse-accessor/review/EDITORIAL-REVIEW.md",
+        "review/PROTOCOL-REVIEW.md": "research/experiments/gltf-sparse-accessor/review/PROTOCOL-REVIEW.md",
+        "review/independent-oracle/CHECKER-FREEZE.md": "research/experiments/gltf-sparse-accessor/review/independent-oracle/CHECKER-FREEZE.md",
+        "review/independent-oracle/EXECUTION-REVIEW.md": "research/experiments/gltf-sparse-accessor/review/independent-oracle/EXECUTION-REVIEW.md",
+        "review/independent-oracle/README.md": "research/experiments/gltf-sparse-accessor/review/independent-oracle/README.md",
+        "review/independent-oracle/SHA256SUMS": "research/experiments/gltf-sparse-accessor/review/independent-oracle/SHA256SUMS",
+        "review/independent-oracle/author-static/checker-sources.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/author-static/checker-sources.txt",
+        "review/independent-oracle/author-static/command.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/author-static/command.txt",
+        "review/independent-oracle/author-static/exit-code.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/author-static/exit-code.txt",
+        "review/independent-oracle/author-static/stderr.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/author-static/stderr.txt",
+        "review/independent-oracle/author-static/stdout.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/author-static/stdout.txt",
+        "review/independent-oracle/check.py": "research/experiments/gltf-sparse-accessor/review/independent-oracle/check.py",
+        "review/independent-oracle/expected.json": "research/experiments/gltf-sparse-accessor/review/independent-oracle/expected.json",
+        "review/independent-oracle/repeat-static/checker-sources.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/repeat-static/checker-sources.txt",
+        "review/independent-oracle/repeat-static/command.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/repeat-static/command.txt",
+        "review/independent-oracle/repeat-static/exit-code.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/repeat-static/exit-code.txt",
+        "review/independent-oracle/repeat-static/stderr.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/repeat-static/stderr.txt",
+        "review/independent-oracle/repeat-static/stdout.txt": "research/experiments/gltf-sparse-accessor/review/independent-oracle/repeat-static/stdout.txt",
+        "review/independent-oracle/source-pins.json": "research/experiments/gltf-sparse-accessor/review/independent-oracle/source-pins.json",
+        "review/independent-repeat/execution/command.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/command.txt",
+        "review/independent-repeat/execution/end-utc.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/end-utc.txt",
+        "review/independent-repeat/execution/exit-code.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/exit-code.txt",
+        "review/independent-repeat/execution/sources-after.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/sources-after.txt",
+        "review/independent-repeat/execution/sources-before.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/sources-before.txt",
+        "review/independent-repeat/execution/start-utc.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/start-utc.txt",
+        "review/independent-repeat/execution/stderr.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/stderr.txt",
+        "review/independent-repeat/execution/stdout.txt": "research/experiments/gltf-sparse-accessor/review/independent-repeat/execution/stdout.txt",
+        "review/independent-repeat/protocol.md": "research/experiments/gltf-sparse-accessor/review/independent-repeat/protocol.md",
+        "review/independent-repeat/reader.py": "research/experiments/gltf-sparse-accessor/review/independent-repeat/reader.py",
+        "review/independent-repeat/results/dense.gltf.json": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/dense.gltf.json",
+        "review/independent-repeat/results/summary.json": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/summary.json",
+        "review/independent-repeat/results/zero.gltf.json": "research/experiments/gltf-sparse-accessor/review/independent-repeat/results/zero.gltf.json",
+        "review/independent-repeat/run.py": "research/experiments/gltf-sparse-accessor/review/independent-repeat/run.py",
+        "review/main-static/README.md": "research/experiments/gltf-sparse-accessor/review/main-static/README.md",
+        "review/main-static/author.json": "research/experiments/gltf-sparse-accessor/review/main-static/author.json",
+        "review/main-static/repeat.json": "research/experiments/gltf-sparse-accessor/review/main-static/repeat.json",
+        "run.py": "research/experiments/gltf-sparse-accessor/run.py"
+      }
     }
   ]
 }

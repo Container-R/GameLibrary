@@ -2143,11 +2143,15 @@
       "id": "TASK-2026-0084",
       "question": "How does a sparse glTF accessor replace indexed elements over dense or implicit-zero base data?",
       "discipline": "MODEL",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Deepen explicitly excluded sparse-accessor semantics without transferring dense-engine evidence",
       "expected_artifact": "Pinned normative source, finite original scalar accessor bytes and independent literal decode checks",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/modeling/gltf-interleaved-attribute-contract.md",
+        "research/source-notes/gltf-sparse-accessor.md",
+        "research/experiments/gltf-sparse-accessor/README.md"
+      ],
       "acceptance": [
         "Pinned Khronos glTF source and strict sparse replacement/base initialization semantics",
         "Freeze44-byte input, offsets, two literal outputs and bounded rejects before implementation",
@@ -2157,8 +2161,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T03:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:28:58.373198Z",
-      "next_action": "Complete main/independent sparse source gate review before finite protocol; restore deferred scalar source and route indexes in next coherent publication",
+      "last_progress_at": "2026-11-01T02:40:45.231284Z",
+      "next_action": "Publish reviewed finite sparse evidence and restore deferred scalar navigation",
       "blockers": []
     }
   ]

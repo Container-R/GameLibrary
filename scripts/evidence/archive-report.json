@@ -2000,8 +2000,28 @@
     {
       "id": "scalar-inertialization/archive-bindings",
       "status": "pass"
+    },
+    {
+      "id": "gltf-sparse/author/sources",
+      "status": "pass"
+    },
+    {
+      "id": "gltf-sparse/author/artifacts",
+      "status": "pass"
+    },
+    {
+      "id": "gltf-sparse/repeat/sources",
+      "status": "pass"
+    },
+    {
+      "id": "gltf-sparse/repeat/artifacts",
+      "status": "pass"
+    },
+    {
+      "id": "gltf-sparse/archive-bindings",
+      "status": "pass"
     }
   ],
-  "passed": 500,
+  "passed": 505,
   "failed": 0
 }

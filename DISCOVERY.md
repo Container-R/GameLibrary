@@ -175,6 +175,8 @@
   - 关联理由：动作意图、规则执行与运行状态需要不同责任人提供证据。
 - 哪些角色组合检查过，哪些仍未知？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：将复现和覆盖事实交给专业审核，避免局部修复隐式批准全部角色。
+- 上一轮转场尚未结束，怎样避免丢失输出值和速度？ → [中断动画转场的标量惯性化：保留输出值与速度，而不是重用旧片段](solutions/animation/scalar-inertialization-continuity.md) — `SOL-ANIM-002` · `source-backed` · `ANIM`
+  - 关联理由：用有限标量残差与独立数值证据理解C1；不升级为足底接触、完整姿态或视觉验证。
 
 ## 从实时特效美术出发：游戏信号与情境接收
 路线 ID：`role-real-time-vfx-artist`

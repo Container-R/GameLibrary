@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T023055Z-gltf-sparse-accessor",
+  "task_ids": [
+    "TASK-2026-0084"
+  ],
+  "started_at": "2026-11-01T02:30:55Z",
+  "ended_at": "2026-11-01T02:40:45.231284Z",
+  "outcome": "reviewed locally; publication pending",
+  "source_commit": "59ecbdba704206bb656965ab4e202881806066f1",
+  "protocol_sha256": "de8c9bd74299fb409d58859a099de8b5ff2802df6b78ba1308400762b294172d",
+  "evidence": "Original44-byte accessor with dense and zero base; independent literal oracle and repeat",
+  "execution_counts": {
+    "author_runner": 1,
+    "reviewer_runner": 1,
+    "unique_semantic_cases": 7,
+    "positive_configurations": 2,
+    "negative_cases": 5,
+    "distinct_negative_categories": 4,
+    "reviewer_static_checks": 2,
+    "main_static_checks": 2,
+    "native": 0
+  },
+  "pre_execution_correction": "Synchronize negative document URI to mutated bytes; preserve unexecuted initial runner; no expectation or decoder change",
+  "failures_observed": 0,
+  "limitations": [
+    "Not a full validator or URI loader",
+    "Strict-int metadata is narrower than normative JSON integer encoding",
+    "Five negatives directly decode inputs; mutated assets not separately serialized/archived",
+    "No engine sparse import, DCC, mesh, morph, GPU or performance evidence"
+  ],
+  "validation": {
+    "indexed_articles": 41,
+    "unchanged_prior_experiment_files": 2827,
+    "new_experiment_files": 59,
+    "archive_checks_normal": 505,
+    "archive_checks_optimized": 505,
+    "queue_tasks_checked": 84,
+    "declared_paths_checked": 101
+  },
+  "deferred_navigation_restored": [
+    "sources/README.md",
+    "taxonomy/reading-routes.json",
+    "DISCOVERY.md"
+  ],
+  "next_action": "Read first-party narrative role sources and inspect concrete branching dialogue handoff gap"
+}

@@ -10,8 +10,8 @@ related_topics: [gltf, mesh-attributes, interleaved-buffer, asset-handoff, topol
 engines: [Godot]
 versions: ["glTF 2.0 specification source 59ecbdba704206bb656965ab4e202881806066f1", "Python standard-library fixture", "installed Godot self-report 4.6.3; source identity unverified"]
 platforms: [offline-cpu-format-validation, headless-native-import-data]
-updated_at: 2026-10-31
-verification_method: 固定官方规范与schema核对；原创有限交错网格CPU读取与独立字面验收；Godot原生导入2次作者进程含1次额外AABB断言失败，另1次独立复跑；未执行DCC导出、编辑器导入或GPU渲染
+updated_at: 2026-11-01
+verification_method: 固定官方规范与schema核对；原创有限交错网格CPU读取与独立字面验收；Godot原生导入2次作者进程含1次额外AABB断言失败，另1次独立复跑；另有独立44字节sparse CPU夹具2次运行同样7用例；未执行DCC导出、编辑器导入或GPU渲染
 sources:
   - https://docs.godotengine.org/en/4.6/classes/class_gltfdocument.html
   - https://docs.godotengine.org/en/4.6/classes/class_importermesh.html
@@ -91,7 +91,7 @@ POSITION最后访问到view内100bytes；NORMAL最后访问到112bytes。若把v
 
 原创buffer SHA256为 `06572d2d89cac7d7dc8c9586ecde6325b82fe0615dfe0e5d4236d7e37a16f268`；reader为 `b9b5709b6730c3acaf662112169a28f50e9330ee05bf8208ca1692515d7d3e36`，runner为 `499ba210218426691e50597d067e69d2aea39a8bd3bc124d2d2a71041004b8f0`。Python自报3.12.14；没有据此认证上游解释器构建。不要把每个字段比较累计成新的独立格式实验。
 
-限定子集：一个已提供的binary buffer，一个mesh/primitive，TRIANGLES，FLOAT VEC3 POSITION/NORMAL，UNSIGNED_SHORT SCALAR indices。也不支持合法的无bufferView隐式零初始化accessor；当前缺该字段会抛KeyError，不应把它误报为规范禁止。没有稀疏accessor、矩阵、normalized整数、外部URI解析、扩展、压缩、蒙皮或动画。NORMAL长度的1e-6容差、字面POSITION bounds精确比较是该有限reader政策，不是规范指定epsilon或一般导出浮点容差。标准库CPU处理不是官方validator、DCC导出、引擎导入或GPU运行。
+原160字节reader限定子集（新增独立sparse夹具见第8节）：一个已提供的binary buffer，一个mesh/primitive，TRIANGLES，FLOAT VEC3 POSITION/NORMAL，UNSIGNED_SHORT SCALAR indices。也不支持合法的无bufferView隐式零初始化accessor；当前缺该字段会抛KeyError，不应把它误报为规范禁止。没有稀疏accessor、矩阵、normalized整数、外部URI解析、扩展、压缩、蒙皮或动画。NORMAL长度的1e-6容差、字面POSITION bounds精确比较是该有限reader政策，不是规范指定epsilon或一般导出浮点容差。标准库CPU处理不是官方validator、DCC导出、引擎导入或GPU运行。
 
 ## 7. 同一文件真正进入引擎后，不能再要求所有表示逐字相等
 
@@ -122,6 +122,34 @@ ArrayMesh 的小法线差异是**实际读回观察**，不是本研究测得的
 
 因此工程交接应分别规定：不可变源字节、API成功与实际资源枚举、逻辑几何/属性、目标表示约定、最终渲染验收。前四项在本小输入上有有限证据；编辑器`.import`配置、DCC导出、材质/切线/UV/蒙皮/动画、场景组装、错误资产安全性、GPU渲染和性能仍不在范围。原CPU负例没有因此变成Godot拒绝测试。
 
+## 8. 稀疏 accessor：先取得基底，再替换，不是把补丁相加
+
+前述160字节网格及其原生导入没有覆盖 sparse。新增[独立44字节CPU夹具](../../research/experiments/gltf-sparse-accessor/README.md)只研究 accessor 的有限表示契约，没有把旧 Godot 结果移接到新资产。
+
+固定规范的 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)把 sparse 元素定义为替换值。应先解析基底（本例无扩展、无基底view时初始化为零），再按稀疏索引覆盖对应元素。索引是目的元素编号，不是值的字节地址，也不是第4节的 primitive 三角形索引流。
+
+本原创字面契约让三类错误可以被区分，而非只检查文件是否打开：
+
+| 输入区域 | view跨度 | 局部偏移与实际地址 | 字面内容 |
+|---|---|---|---|
+| 基底 | offset0，length16 | offset0 → 0/4/8/12 | FLOAT 10/20/30/40 |
+| 稀疏索引 | offset16，length8 | offset2 → 18/20 | uint16 1/3 |
+| 替换值 | offset24，length20 | offset4 → 28/32 | FLOAT 7/9 |
+
+使用基底view的结果应为 `[10,7,30,9]`；省略 accessor 的 `bufferView` 和 `byteOffset` 时，应为 `[0,7,0,9]`，不是偷偷读取仍留在buffer里的10/30。错误的“加补丁”算法会给出 `[10,27,30,49]`：这三个数组是运行前冻结的不同意图，不是运行后挑选的容差。
+
+**总buffer够长仍可能越界。** 将替换值view长度从20改为11，第二个值的局部末端为 `4 + 2×4 = 12`，所以必须拒绝；44字节 backing buffer 不替该view授权额外字节。索引view与值view各有自己的局部偏移；对齐要求不能只检验二者相加后的绝对地址。本子集按2字节索引、4字节FLOAT分别检查view偏移和局部偏移。
+
+### 有限验收，不是新的通用导入器
+
+作者与独立复跑各执行一次普通Python runner，均通过同样的2个正配置和5个拒绝用例：合计2个进程、7个不同语义用例，不是14种场景。独立字面oracle在作者实现检查前冻结；复核checker不导入作者reader，逐一核对两份完整输入JSON、44字节、地址、结果、源码摘要及原始日志关联。审查者与主整合者各进行2次静态检查，不算新解码实验。两份summary均为 `892b9c2e…`，真实进程退出0且stderr为空。负例没有单独输出变更后完整输入；它们的证据是固定源码、预期和实际拒绝日志，不冒称独立重建了每份负例资产。
+
+五个直接解码负例分别是重复索引 `[1,1]`、降序 `[3,1]`、越范围 `[1,4]`、上述短view、索引view带 `byteStride`。前两者命中同一严格递增错误类别，不能数成五种不同错误类别。负例在内存中变更输入，并同步其data URI；它们不是五次磁盘文件导入，更没有验证引擎拒绝行为。
+
+新reader只接收已物化的44字节buffer、三个view、一个 FLOAT SCALAR accessor及uint16 sparse索引，数量最多4；没有任意URI加载、矩阵、normalized整数、扩展、mesh或morph求值。它采用严格Python整数元数据政策；规范允许整数值写作 `4.0` 或 `4e0`，因此这类输入被本reader拒绝只表示**编码子集不支持**，不能据此宣判glTF非法。对齐、类型、有限数等代码检查也不等于每项都已有单独执行的负例。
+
+工程交接时应留下“基底来源、目的索引、替换值来源、最终元素”的四栏证据；只记录补丁大小会漏掉替换/相加混淆，只核对索引则会漏掉初始化来源错误。这是上述有限反例支持的验收建议，不是对所有导出器、官方validator或运行时的认证。
+
 ## 来源定位
 
-Khronos源固定到 `59ecbdba704206bb656965ab4e202881806066f1`，提交日期2026-10-30，读取2026-10-31。正文公式、属性和索引要求对应该不可变源；schema是同一项目的补充证据，不算独立厂商交叉验证。访问其他手册失败的发现线索未充作已读来源。
+Khronos源固定到 `59ecbdba704206bb656965ab4e202881806066f1`，提交日期2026-10-30，原实验读取2026-10-31，sparse章节复核2026-11-01。正文公式、属性和索引要求对应该不可变源；schema是同一项目的补充证据，不算独立厂商交叉验证。访问其他手册失败的发现线索未充作已读来源。

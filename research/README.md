@@ -137,3 +137,5 @@ python3 scripts/evidence/test_verify.py
 [游戏数据分析师](../roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
 
 [标量转场连续性](../solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。
+
+[稀疏accessor实验](experiments/gltf-sparse-accessor/README.md)保存44字节双基底与5拒绝用例；不继承密集网格的引擎证据。
