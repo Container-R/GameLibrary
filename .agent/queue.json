@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:25:00Z",
+      "lease_until": "2026-11-01T09:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:40:24.599563Z",
-      "next_action": "Coverage review selected a concrete model-authoring trace-set handoff; no generic role profile required",
+      "last_progress_at": "2026-11-01T08:42:38.760677Z",
+      "next_action": "Inspect original GPU Gems 3 Chapter 22 sampling and cage implementation to determine a deeper bake-quality mechanism not covered by the trace-set note",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3561,7 +3561,7 @@
       "id": "TASK-2026-0136",
       "question": "Can high/low/cage piece names remain corresponding while a grouping edit changes permitted bake tracing interactions?",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Clarify model-authoring component partition as a bake input, distinct from coordinate or tangent validity",
       "expected_artifact": "Source-backed narrow note with original partition merge and bijective rename contrast plus finite receiving procedure",
@@ -3575,12 +3575,14 @@
         "Keep effective filters and cage validity as distinct conditions",
         "Independently bind exact final source-only artifact"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:40:24.599563Z",
-      "next_action": "Complete exact artifact review and publish source-only note with preserved prior evidence",
-      "blockers": []
+      "next_action": "Retain primitive partition and candidate-hit scope; no actual bake or image result",
+      "blockers": [],
+      "completed_at": "2026-11-01T08:42:38.760677Z",
+      "commit_sha": "8a7ea75620b1633d5d049de26f91d88cbae21fdf"
     }
   ]
 }

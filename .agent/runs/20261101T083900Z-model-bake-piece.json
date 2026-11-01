@@ -6,8 +6,8 @@
     "TASK-2026-0136"
   ],
   "started_at": "2026-11-01T08:35:34Z",
-  "ended_at": "2026-11-01T08:40:24.599563Z",
-  "outcome": "Source-only model bake partition note independently accepted; validated for publication",
+  "ended_at": "2026-11-01T08:42:38.760677Z",
+  "outcome": "Model bake piece partition source note published and exact readback matched",
   "sources_examined": [
     "https://www.sidefx.com/docs/houdini/nodes/cop/bakegeometrytextures-2.0"
   ],
@@ -30,7 +30,11 @@
     "optimized_archive_checks_failed": 0,
     "archive_check_scope": "Static declared archive consistency only, not runtime or semantic testing",
     "local_links_checked": 858,
-    "declared_paths_checked": 181
+    "declared_paths_checked": 181,
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 136
   },
-  "next_action": "Verify publication then continue actual coverage gaps, not document quotas"
+  "next_action": "Inspect original GPU Gems 3 Chapter 22 sampling and cage implementation to determine a deeper bake-quality mechanism not covered by the trace-set note",
+  "commit_sha": "8a7ea75620b1633d5d049de26f91d88cbae21fdf"
 }
