@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:10:35Z",
-  "ended_at": "2026-11-01T11:14:01.142843Z",
-  "outcome": "Two reader-reviewed books, retired legacy entries and protected generator ready; remote publication pending",
+  "ended_at": "2026-11-01T11:17:49.748405Z",
+  "outcome": "Motion and fixed-step books, compatibility entries and generator protection published and read back; continuing remaining inventory remediation",
   "baseline_head": "5f9e99a8c7d02a4ab87c02bae0791ed70b51bf0e",
   "books": [
     "GameLibrary/\u89d2\u8272\u52a8\u753b/\u89d2\u8272\u79fb\u52a8/\u811a\u90e8\u63a5\u89e6/\u6392\u67e5\u539f\u5730\u8f6c\u8eab\u65f6\u7684\u811a\u6ed1.md",
@@ -25,7 +25,7 @@
     "Legacy composite subtopics retained in separate pending ledger",
     "No restricted execution metadata republished"
   ],
-  "next_action": "Review motion and fixed-step rewrites, retire competing legacy reader entry pages, then continue existing-book remediation",
+  "next_action": "Rewrite existing UI state representation and playtest intervention books with independent reader reviews; retain composite chapter backlog; no new topics",
   "content_review": "Independent readers accepted turn-foot and fixed-step prose; fixed-step paused-debt defect corrected and rereviewed before publication",
   "compatibility_review": "Old entry retirement and protected generator accepted after independent code checks",
   "navigation_generator_tests": {
@@ -40,5 +40,14 @@
     "rewritten": 7,
     "legacy": 48
   },
-  "audit_copy": "Inline navigation code examples are rendered as descriptive text in archived review"
+  "audit_copy": "Inline navigation code examples are rendered as descriptive text in archived review",
+  "commit_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
+  "validation": {
+    "selected_blob_hashes_verified": 22,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1047,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_home_read_back": true
+  }
 }

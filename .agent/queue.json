@@ -4049,8 +4049,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T12:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:14:01.142843Z",
-      "next_action": "Review motion and fixed-step rewrites, retire competing legacy reader entry pages, then continue existing-book remediation",
+      "last_progress_at": "2026-11-01T11:17:49.748405Z",
+      "next_action": "Rewrite existing UI state representation and playtest intervention books with independent reader reviews; retain composite chapter backlog; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4061,7 +4061,9 @@
         "second_reader_batch_published_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
         "second_batch_readback_verified": true,
         "third_reader_batch_published_sha": "6f2a0162271ded905444f358ef58858812385320",
-        "third_batch_readback_verified": true
+        "third_batch_readback_verified": true,
+        "fourth_reader_batch_published_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
+        "fourth_batch_readback_verified": true
       }
     }
   ],
