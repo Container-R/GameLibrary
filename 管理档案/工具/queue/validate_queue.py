@@ -78,12 +78,50 @@ def read(path):
                       parse_constant=lambda s: (_ for _ in ()).throw(Invalid('nonstandard JSON constant: '+s)))
 
 
+def input_path(root, raw):
+    """Resolve an explicitly named repository-relative input, without fallback."""
+    if (not raw or raw != raw.strip() or '\\' in raw
+            or re.search(r'[\x00-\x1f\x7f]', raw)
+            or PurePosixPath(raw).is_absolute()
+            or re.match(r'^[A-Za-z]:', raw)
+            or any(part in ('', '.', '..') for part in raw.split('/'))):
+        raise Invalid('input path must be normalized repository-relative POSIX spelling')
+    target = (root / raw).resolve()
+    if not target.is_relative_to(root):
+        raise Invalid('input path escapes repository')
+    if not target.is_file():
+        raise Invalid('input file missing or not a regular file: ' + raw)
+    return target
+
+
+def positive_count(raw):
+    value = int(raw)
+    if value <= 0:
+        raise argparse.ArgumentTypeError('expected task count must be positive')
+    return value
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('root', type=Path)
+    parser.add_argument('root', type=Path, help='explicit repository root (relative to cwd or absolute)')
+    parser.add_argument('--taxonomy', default='taxonomy/disciplines.json',
+                        help='repository-relative taxonomy input; no fallback search')
+    parser.add_argument('--queue', default='.agent/queue.json',
+                        help='repository-relative queue input; no fallback search')
+    parser.add_argument('--expected-task-count', type=positive_count,
+                        help='optional positive migration gate; exact count, not an identity baseline')
     args = parser.parse_args()
     try:
-        result = validate(read(args.root/'taxonomy/disciplines.json'), read(args.root/'.agent/queue.json'), args.root)
+        root = args.root.resolve(strict=True)
+        if not root.is_dir():
+            raise Invalid('repository root must be a directory')
+        # Check both locations before reading either file. Tool location is irrelevant.
+        taxonomy_path = input_path(root, args.taxonomy)
+        queue_path = input_path(root, args.queue)
+        result = validate(read(taxonomy_path), read(queue_path), root)
+        if args.expected_task_count is not None and result['tasks_checked'] != args.expected_task_count:
+            raise Invalid('task count mismatch: expected %s, found %s' %
+                          (args.expected_task_count, result['tasks_checked']))
     except (ValueError, OSError, RuntimeError) as exc:
         print('queue contract error: ' + str(exc), file=sys.stderr)
         return 1

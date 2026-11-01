@@ -1,6 +1,6 @@
 # Horizon 流送依赖与初始化：来源范围
 
-2026-11-01。对应 [CASE-ENGINE-002](../../case-studies/engine/horizon-streaming-dependency-initialization.md)。本记录提供定位，不重复历史机制摘要。
+2026-11-01。对应 [CASE-ENGINE-002 历史正文](https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/horizon-streaming-dependency-initialization.md)。本记录提供定位，不重复历史机制摘要。 当前读者正文：[Horizon如何组织资源读取与依赖初始化](../../GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md)。
 
 - [Guerrilla 原始发布页](https://www.guerrilla-games.com/read/Streaming-the-World-of-Horizon-Zero-Dawn)：页面日期2023-03-21；讲者介绍使用 Jan-Jaap。没有据此确认原演讲日期或补出完整署名。
 - [官方直接链接 PDF](https://d3d3g8mu99pzk9.cloudfront.net/AstridHuntjens/Streaming%20the%20world%20of%20Horizon%20Zero%20Dawn.pdf)：107页，SHA-256 `e7865c1c3f2ac165a745156406f42f5a5eb38c15b9f1b8b51aea0b0b17e18647`。这是取得的公开文档身份，不是游戏实现版本或二进制认证。

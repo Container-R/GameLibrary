@@ -1,6 +1,6 @@
 # Valve 情境对白规则选择：来源与读取范围
 
-核对日期：2026-11-01。对应[CASE-NARR-002](../../case-studies/narrative/valve-contextual-dialogue-rule-selection.md)。本记录不重复案例的来源概括；规则和事实名字、三行推导及接收建议均为本库原创未执行分析。
+核对日期：2026-11-01。对应[CASE-NARR-002 历史正文](https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/valve-contextual-dialogue-rule-selection.md)；当前读者正文见[Valve如何根据游戏情境选择对白](../../GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md)。本记录不重复案例的来源概括；规则和事实名字、三行推导及接收建议均为本库原创未执行分析。
 
 ## 唯一内容主源
 

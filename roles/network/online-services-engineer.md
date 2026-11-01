@@ -92,7 +92,7 @@ Riot 的 2020 年文章说明：服务各自测试不足以覆盖跨服务调用
 - [客户端预测与确认重放](../../solutions/programming/client-prediction-authority-boundary.md)：是对局中同步问题；现有离散模型与来源不能证明平台服务链容量。
 - [构建工程师](../engine/build-engineer.md)：提供可定位候选；在线服务配置与依赖仍需进入测试对象说明。
 - [游戏 QA](../qa/game-quality-assurance.md)：帮助区分缺陷、证据范围与发行风险；不把运行一次压测等同于放行权限。
-- [Destiny 配置准入与回退案例](../../case-studies/liveops/destiny-config-admission-rollback.md)：说明另一条真实运行准入/恢复边界；它不是本文假设链的故障复现。
+- [Destiny 配置准入与回退案例](../../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)：说明另一条真实运行准入/恢复边界；它不是本文假设链的故障复现。
 
 下一项有价值的研究不是再做一个假 HTTP 服务来获得绿色测试，而是选择获准的真实项目，写清一个具体服务链与替身边界，取得相应集成或负载证据。本岗位档案只推进全学科职责矩阵的一部分；没有建立全行业组织标准。
 

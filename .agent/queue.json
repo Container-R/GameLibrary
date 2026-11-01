@@ -204,7 +204,7 @@
       "status": "paused",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
-      "expected_artifact": "taxonomy/roles-and-work-areas.md",
+      "expected_artifact": "管理档案/分类/roles-and-work-areas.md",
       "acceptance": [
         "真实原始资料至少一项",
         "问题或职业职责有可操作细节",
@@ -221,8 +221,8 @@
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
-        "taxonomy/README.md",
-        "scripts/test_taxonomy.py",
+        "管理档案/分类/README.md",
+        "管理档案/工具/taxonomy/check_taxonomy.py",
         "research/audits/queue-contract-guard/coverage-gate.md"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
@@ -988,7 +988,18 @@
       "next_action": "Maintain historical remediation-status boundaries; no unverified later completion claim",
       "blockers": [],
       "completed_at": "2026-10-31T19:12:43.368100Z",
-      "commit_sha": "c8bffbcb925cbf6c16148d5204b81f880dd2ba37"
+      "commit_sha": "c8bffbcb925cbf6c16148d5204b81f880dd2ba37",
+      "artifact_paths": [
+        "GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "case-studies/liveops/destiny-config-admission-rollback.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/liveops/destiny-config-admission-rollback.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "a94ace53738b20613f4e11ad89540c03d6efed9920ef0bd1df8b60afdac05924"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0042",
@@ -1054,7 +1065,18 @@
       "next_action": "Keep illustrative Excel compatibility and original acceptance proposal distinct from studio implementation",
       "blockers": [],
       "completed_at": "2026-10-31T19:26:44.936173Z",
-      "commit_sha": "f36dbd5004973d41f280e3d18d853491d5db3117"
+      "commit_sha": "f36dbd5004973d41f280e3d18d853491d5db3117",
+      "artifact_paths": [
+        "GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "case-studies/narrative/cygames-scenario-voice-handoff.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/cygames-scenario-voice-handoff.md",
+          "commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
+          "sha256": "0ced83f526a4abbf20deb8b826219324620a1e4e4e77ff277271ba842d3b20e7"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0045",
@@ -1181,9 +1203,9 @@
       "next_action": "Run queue guard on future recovery-state changes; optional paths do not imply legacy artifact-content coverage",
       "blockers": [],
       "artifact_paths": [
-        "scripts/queue/validate_queue.py",
-        "scripts/queue/test_queue.py",
-        "scripts/queue/adversarial.py"
+        "管理档案/工具/queue/validate_queue.py",
+        "管理档案/工具/queue/test_queue.py",
+        "管理档案/工具/queue/adversarial.py"
       ],
       "completed_at": "2026-10-31T20:18:45.046089Z",
       "commit_sha": "1fb46a24ad89b699fda6c04a463ff4e9c0b3838a"
@@ -1249,7 +1271,7 @@
       "priority_rationale": "First-party production incident supplies concrete hidden-state mechanism beyond scalar prediction and source-only replay-time counterexample",
       "expected_artifact": "Focused historical Factorio cache/load-equivalence case and original acceptance worksheet",
       "artifact_paths": [
-        "case-studies/engine/factorio-derived-cache-load-equivalence.md",
+        "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
         "research/audits/factorio-derived-cache",
         "research/source-notes/factorio-derived-cache-sources.md"
       ],
@@ -1265,7 +1287,15 @@
       "next_action": "Apply original legal-checkpoint and cache-dependency acceptance questions to actual projects; no shipped-fix or runtime claim",
       "blockers": [],
       "completed_at": "2026-10-31T20:38:45.712878Z",
-      "commit_sha": "d86746fab455b45d96cac4cad7a9a439d24b741c"
+      "commit_sha": "d86746fab455b45d96cac4cad7a9a439d24b741c",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/engine/factorio-derived-cache-load-equivalence.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/factorio-derived-cache-load-equivalence.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "d684656b6f8a414b1d6d29add6d99eeaddc7cff4aa44a1615c82fa9b0997738f"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0053",
@@ -1929,7 +1959,7 @@
       "priority_rationale": "Developer-authored historical case addresses decision/execution boundary not covered by navigation readiness; useful original handoff analysis without invented shipped implementation",
       "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
       "artifact_paths": [
-        "case-studies/ai/killzone3-plan-execution-continuation.md",
+        "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
         "research/source-notes/killzone3-plan-execution-continuation.md"
       ],
       "acceptance": [
@@ -1946,7 +1976,15 @@
       "next_action": "Retain historical source-only scope and unexecuted original acceptance worksheet; no shipped reproduction or cancellation guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T01:13:23.479743Z",
-      "commit_sha": "cbd47c78a859d49563b44e13cd29b2ed21b1826c"
+      "commit_sha": "cbd47c78a859d49563b44e13cd29b2ed21b1826c",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/ai/killzone3-plan-execution-continuation.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/killzone3-plan-execution-continuation.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "760111acdd8bed9946d96fb73e114b2612811ce6b0f2cb1cb9a5ae7df884fa07"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0077",
@@ -2067,7 +2105,7 @@
       "priority_rationale": "Original Valve Director source case complements individual NPC execution boundaries",
       "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
       "artifact_paths": [
-        "case-studies/ai/left4dead-director-pacing-evidence.md",
+        "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
         "research/source-notes/left4dead-director-pacing.md"
       ],
       "acceptance": [
@@ -2083,7 +2121,15 @@
       "next_action": "Retain historical algorithm scope and unexecuted observation worksheet; no game or player validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:59:15.977030Z",
-      "commit_sha": "c9e8b3b7aa9801cf2e412ceacd00bac24beae0be"
+      "commit_sha": "c9e8b3b7aa9801cf2e412ceacd00bac24beae0be",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/ai/left4dead-director-pacing-evidence.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/left4dead-director-pacing-evidence.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "83fdd0acde4a6b806551ebb12fa8b11263c9a16ad51b584d3ea4c34de301b202"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0082",
@@ -3515,7 +3561,7 @@
       "priority_rationale": "Tie a concrete content edit to an original production selection mechanism and distinguish history guards from response variants",
       "expected_artifact": "Source-backed historical case with original two-rule trace and bounded receiving decision",
       "artifact_paths": [
-        "case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
+        "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
         "research/source-notes/valve-contextual-dialogue-rule-selection.md"
       ],
       "acceptance": [
@@ -3532,7 +3578,15 @@
       "next_action": "Retain source-only history-guard ranking distinction; no audio completion or current engine guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T08:23:30.741812Z",
-      "commit_sha": "0a0705ed692555d4c320e8bfa3ce6966e3de8bff"
+      "commit_sha": "0a0705ed692555d4c320e8bfa3ce6966e3de8bff",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
+          "commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
+          "sha256": "cc29892f51c0047ccdbddb1d9437910d87b3545178b58b446f64ab62b38deba9"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0135",
@@ -3626,8 +3680,8 @@
       "expected_artifact": "Four selected source-question entries and two existing role-route additions, with historical supervisor audit integrated",
       "artifact_paths": [
         "sources/README.md",
-        "DISCOVERY.md",
-        "taxonomy/reading-routes.json",
+        "GameLibrary/README.md",
+        "管理档案/分类/reading-routes.json",
         "research/audits/source-discovery-review/REVIEW.md"
       ],
       "acceptance": [
@@ -3644,7 +3698,15 @@
       "next_action": "Retain selected navigation scope and current registry reference; no user-navigation improvement claim",
       "blockers": [],
       "completed_at": "2026-11-01T09:01:21.229396Z",
-      "commit_sha": "649cfc048ac6149f3ac75f6c58883c45841be76c"
+      "commit_sha": "649cfc048ac6149f3ac75f6c58883c45841be76c",
+      "historical_artifacts": [
+        {
+          "path": "DISCOVERY.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/DISCOVERY.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "scope": "Retired compatibility entry; current reader guide is GameLibrary/README.md"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0139",
@@ -3718,7 +3780,7 @@
       "priority_rationale": "Original production event-request mechanism addresses combat animation timing beyond transition continuity and notify eligibility",
       "expected_artifact": "Historical production case with explicit original fixed-deadline and marker-semantics examples",
       "artifact_paths": [
-        "case-studies/animation/for-honor-motion-matching-event-request.md"
+        "GameLibrary/角色动画/动画运行时/动作选择/ForHonor动作匹配中的事件与请求时机.md"
       ],
       "acceptance": [
         "Read original GDC technical material and inspect relevant event-editor slides",
@@ -3735,7 +3797,15 @@
       "next_action": "Retain contextual clip interpretation and original candidate-timing assumptions; no actual search or collision guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T09:23:06.869878Z",
-      "commit_sha": "175005bfb475e000893e5976d12002f03509bec0"
+      "commit_sha": "175005bfb475e000893e5976d12002f03509bec0",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/animation/for-honor-motion-matching-event-request.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/for-honor-motion-matching-event-request.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "ebfa044768f7d989be115ef0c702538e69532fb035c19813cdc1efe7c19ec51b"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0142",
@@ -3774,7 +3844,7 @@
       "priority_rationale": "Original Decima production mechanism provides concrete graph constraints beyond import intent and release-baseline coverage",
       "expected_artifact": "Historical production case and original finite dependency counterexample, with no scheduler implementation claim",
       "artifact_paths": [
-        "case-studies/engine/horizon-streaming-dependency-initialization.md",
+        "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
         "research/source-notes/horizon-streaming-dependency-initialization.md"
       ],
       "acceptance": [
@@ -3792,7 +3862,15 @@
       "next_action": "Retain source date uncertainty, separate file/object graphs and original dependency assumptions; no runtime or performance guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T09:41:02.840844Z",
-      "commit_sha": "d3af6c619e9275210259def564f3f8b78e413427"
+      "commit_sha": "d3af6c619e9275210259def564f3f8b78e413427",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/engine/horizon-streaming-dependency-initialization.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/horizon-streaming-dependency-initialization.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "33f63c1679372ced520e33c9780680ca1066baeb90e8466398b4ec1d088356a4"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0144",
@@ -3868,7 +3946,7 @@
       "priority_rationale": "Original FFXV production graph transformation exposes concrete animation content data retained after structural simplification",
       "expected_artifact": "Source-backed historical case with original two-clip counterfactual and explicit source/future-work scope",
       "artifact_paths": [
-        "case-studies/animation/ffxv-vaulting-successor-candidates.md",
+        "GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md",
         "research/source-notes/ffxv-vaulting-successor-candidates.md"
       ],
       "acceptance": [
@@ -3886,7 +3964,15 @@
       "next_action": "Retain authored-policy preservation premise and limited future-work scope; no inferred private selection algorithm",
       "blockers": [],
       "completed_at": "2026-11-01T10:03:48.675102Z",
-      "commit_sha": "e25565d83100b741f4ca2b807488d5c6042d6877"
+      "commit_sha": "e25565d83100b741f4ca2b807488d5c6042d6877",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/animation/ffxv-vaulting-successor-candidates.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/ffxv-vaulting-successor-candidates.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "sha256": "a93d0762d0963539a3d1c996aedd973f15b3b65381e44460eef5dc97fa8cf573"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0147",
@@ -4058,8 +4144,6 @@
         "管理档案/复合旧文待整理.json",
         "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
         "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-        "DISCOVERY.md",
-        "CATALOG.md",
         "管理档案/工具/navigation/build_routes.py",
         "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
         "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
@@ -4119,10 +4203,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T16:15:00Z",
+      "lease_until": "2026-11-01T17:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T15:50:59Z",
-      "next_action": "Continue reviewed old-body retirement and reader-manifest tool compatibility; preserve supporting scopes and sanitize remaining historical records",
+      "last_progress_at": "2026-11-01T16:01:52Z",
+      "next_action": "Complete grouped retirement and historical-support relocation, then consolidate remaining source and execution archives without changing historical assertions",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4169,7 +4253,21 @@
         "root_consolidation_complete": false,
         "scope_note": "Reader bodies and reviewed original-content dispositions are published; this does not certify every technical claim, physically migrate historical files, or finish root consolidation and historical-record redaction."
       },
-      "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
+      "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation.",
+      "historical_artifacts": [
+        {
+          "path": "DISCOVERY.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/DISCOVERY.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "scope": "Retired compatibility entry; current reader guide is GameLibrary/README.md"
+        },
+        {
+          "path": "CATALOG.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/CATALOG.md",
+          "commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+          "scope": "Retired compatibility entry; current reader guide is GameLibrary/README.md"
+        }
+      ]
     }
   ],
   "execution_policy": {

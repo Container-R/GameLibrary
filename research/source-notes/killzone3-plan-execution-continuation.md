@@ -1,6 +1,6 @@
 # Killzone 3 计划与执行案例：来源记录
 
-对应 [CASE-AI-001](../../case-studies/ai/killzone3-plan-execution-continuation.md)；访问2026-11-01。
+对应 [CASE-AI-001 历史正文](https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/killzone3-plan-execution-continuation.md)；访问2026-11-01。 当前读者正文：[Killzone3如何判断计划继续和动作结束](../../GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md)。
 
 ## 原始文献身份与阅读范围
 

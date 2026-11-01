@@ -1,6 +1,6 @@
 # 研究记录与可复核证据
 
-任务以 [队列](../.agent/queue.json) 和 [恢复状态](../.agent/state.json) 为准；草稿、来源审计、模型测试和实际运行证据不混称为完整生产验证。成熟知识见 [CATALOG](../CATALOG.md)。
+任务以 [队列](../.agent/queue.json) 和 [恢复状态](../.agent/state.json) 为准；草稿、来源审计、模型测试和实际运行证据不混称为完整生产验证。当前正文见[图书馆导览](../GameLibrary/README.md)。
 
 ## 原创 Python 模型
 
@@ -37,7 +37,7 @@ python3 scripts/run_model_tests.py
 
 [14篇时的覆盖/优先级快照](audits/2026-10-31-coverage-priority.md)将下一项转向关键非语音声音的可访问性验收；这是带日期的选择依据，不是不断增长的实时完成率。
 
-[初始七篇覆盖快照](audits/initial-coverage-and-taxonomy.md)不是实时完成率；其后 ACCESS 兼容拆分见 [分类说明](../taxonomy/README.md)。[存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留发布前失败和修复回归。各实际夹具的独立复核记录在其 README 中定位，同一机器的重复验证不冒称跨平台复现。
+[初始七篇覆盖快照](audits/initial-coverage-and-taxonomy.md)不是实时完成率；其后 ACCESS 兼容拆分见 [分类说明](../管理档案/分类/README.md)。[存档草稿对抗审查](audits/cloud-save-adversarial-review.md)保留发布前失败和修复回归。各实际夹具的独立复核记录在其 README 中定位，同一机器的重复验证不冒称跨平台复现。
 
 ## 只读证据一致性检查
 
@@ -64,7 +64,7 @@ python3 scripts/evidence/test_verify.py
 - [试玩干预证据](../solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
 - [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
-- [精选阅读路线](../DISCOVERY.md)连接已归档岗位与一个跨学科问题，完整清单仍见 CATALOG。
+- [按学科找书](../GameLibrary/README.md)提供当前读者入口；旧路线资料只作历史记录，不再构成另一套现行目录。
 
 [ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。
 
@@ -78,11 +78,11 @@ python3 scripts/evidence/test_verify.py
 
 [ink内容恢复深审](source-notes/ink-save-content-compatibility.md)是固定源码调用链，不是新运行时实验或新增已验证文章。[19:00离线回归](audits/release-regression-1900/README.md)重跑86个原有模型方法及隔离工具测试；120档案检查正常/-O一致，无引擎/数据库/解码器重跑。
 
-[Destiny配置准入与数据恢复案例](../case-studies/liveops/destiny-config-admission-rollback.md)分析历史第一方复盘，分开当时已部署措施、后续承诺和原创未执行验收协议；[独立来源审查](audits/liveops-destiny-2020/REVIEW.md)。没有事故复现或新增运行测试。
+[Destiny配置准入与数据恢复案例](../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)分析历史第一方复盘，分开当时已部署措施、后续承诺和原创未执行验收协议；[独立来源审查](audits/liveops-destiny-2020/REVIEW.md)。没有事故复现或新增运行测试。
 
 [音乐主体 PCM 帧区间](../solutions/music/pcm-loop-frame-contract.md)通过原创 marker WAV 的实际离线 FFmpeg 提取，分离半开区间与 inclusive 循环端点；[实验与无损归档](experiments/music-loop-frame-contract/README.md)、[独立复验](experiments/music-loop-frame-contract/review/REVIEW.md)、[集成归档检查](audits/music-frame-integration/README.md)。不包含设备播放或 FMOD 运行。
 
-[日本 Cygames 叙事制作交接案例](../case-studies/narrative/cygames-scenario-voice-handoff.md)使用实际可读的日语第一方博客，区分历史工具采用过程和原创未执行验收矩阵；[独立来源审查](audits/cygames-scenario-handoff/REVIEW.md)。未假称读完幻灯片或测得制作效率。
+[日本 Cygames 叙事制作交接案例](../GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md)使用实际可读的日语第一方博客，区分历史工具采用过程和原创未执行交接检查建议；[独立来源审查](audits/cygames-scenario-handoff/REVIEW.md)。未假称读完幻灯片或测得制作效率。
 
 [精灵 alpha 表示交接](../solutions/art2d/alpha-association-contract.md)通过实际 CPU 数值 buffer 转换与合成，检验 associated 字节被当成 straight 后的重复衰减；[原始证据](experiments/art2d-alpha-contract/README.md)、[独立复验](experiments/art2d-alpha-contract/review/REVIEW.md)。未做图片作品、PNG、引擎、颜色管理或可见暗边验证。
 
@@ -122,7 +122,7 @@ python3 scripts/evidence/test_verify.py
 
 [实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。
 
-[Killzone 3 计划与执行案例](../case-studies/ai/killzone3-plan-execution-continuation.md)以有限历史事实引出原创未执行的行动交接审查；没有运行游戏或模型，不能把取消请求或报告过滤当作效果回滚。
+[Killzone 3 计划与执行案例](../GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md)以有限历史事实引出原创未执行的行动交接审查；没有运行游戏或模型，不能把取消请求或报告过滤当作效果回滚。
 
 [导航路径消耗夹具](experiments/godot-navigation-completion/README.md)保留同一两agent配置的作者与独立观察；导航完成不等于请求目标到达，不是碰撞移动或业务成功证明。
 
@@ -132,7 +132,7 @@ python3 scripts/evidence/test_verify.py
 
 [环境概念美术](../roles/art2d/environment-concept-artist.md)区分图的用途、白盒约束与未定义制作问题；原创工作表未绘制或执行。
 
-[Left 4 Dead Director 案例](../case-studies/ai/left4dead-director-pacing-evidence.md)区分估计、控制、执行、遭遇与体验；六层观察表为原创未执行建议。同步修正 Killzone 案例对后续导航运动证据的过时交叉引用。
+[Left 4 Dead Director 案例](../GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md)区分估计、控制、执行、遭遇与体验；原研究的六层观察表为原创未执行建议，新书以自然说明保留这些观察层次；当时同步修正 Killzone 案例对后续导航运动证据的过时交叉引用，属历史编辑记录。
 
 [游戏数据分析师](../roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
 
@@ -198,7 +198,7 @@ python3 scripts/evidence/test_verify.py
 
 [四元数符号与立方动画](source-notes/quaternion-sign-and-cubic-animation.md)给出逐键符号变化保持关键姿势却改变中间旋转的原创反例；保留非零曲线证明、工具交接范围与未执行边界。
 
-[Valve 情境对白的历史条件与排名](../case-studies/narrative/valve-contextual-dialogue-rule-selection.md)区分规则资格和条件计数竞争；原创两规则轨迹说明一次防重复编辑为何会改变首次排名，未执行引擎或音频测试。
+[Valve 情境对白的历史条件与排名](../GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md)区分规则资格和条件计数竞争；原创两规则轨迹说明一次防重复编辑为何会改变首次排名，未执行引擎或音频测试。
 
 [Steam 流量报表对账](source-notes/steam-report-reconciliation.md)用两个有限集合反例区分总数差、观察集合差、实际未标记访问与自然来源；提供市场到分析的接收条件，未访问真实报表。
 
@@ -210,15 +210,15 @@ python3 scripts/evidence/test_verify.py
 
 [Vulkan present fence 的退役覆盖](source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。
 
-[For Honor 动作事件标记与请求时刻](../case-studies/animation/for-honor-motion-matching-event-request.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
+[For Honor 动作事件标记与请求时刻](../GameLibrary/角色动画/动画运行时/动作选择/ForHonor动作匹配中的事件与请求时机.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
 
 [FFXV 预结束段与同步窗口](source-notes/ffxv-pre-end-music-window.md)补强既有音乐时间交接：原始会议资料区分准备阶段与最终固定/可变编排；没有新增运行或听感结果。
 
-[Horizon 流送的依赖初始化许可](../case-studies/engine/horizon-streaming-dependency-initialization.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
+[Horizon 流送的依赖初始化许可](../GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
 
 [Warlander 取消类别与输入预约](../GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md)依据开发者原始日语文章区分行动许可和命令有效期；原创分开试次明确半开边界及共同计时前提，没有推定实际队列、hitstop或执行结果。
 
-[FFXV 越障的片段后继候选](../case-studies/animation/ffxv-vaulting-successor-candidates.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。
+[FFXV 越障的片段后继候选](../GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。
 
 [三个生产案例的对抗审查](audits/production-case-adversarial-review/REVIEW.md)复核 Horizon、Warlander 与 For Honor 的来源和推理边界；发现并精确修订 Warlander 类别数量措辞，不以负面结果认证全库或实际运行。
 

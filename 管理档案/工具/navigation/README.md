@@ -1,6 +1,6 @@
 # 既有稳定ID路线的维护工具
 
-读者使用[中文书库](../../../GameLibrary/README.md)。这里仅校验和预览[既有路线注册表](../../../taxonomy/reading-routes.json)，不是另一套读者导览，也不自动改写[规范书目](../../图书目录.json)。
+读者使用[中文书库](../../../GameLibrary/README.md)。这里仅校验和预览[既有路线注册表](../../分类/reading-routes.json)，不是另一套读者导览，也不自动改写[规范书目](../../图书目录.json)。
 
 ## 当前无YAML正文：reader模式
 
@@ -8,8 +8,8 @@
 
 ```sh
 mkdir -p 管理档案/草稿
-python3 管理档案/工具/navigation/build_routes.py . --registry taxonomy/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md
-python3 管理档案/工具/navigation/build_routes.py . --registry taxonomy/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md --check
+python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md
+python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md --check
 ```
 
 要求非空清单、正数且精确匹配的预期篇数、唯一稳定ID/文件、有效当前与canonical路径、实际H1一致，路线目标须可解析。不从无YAML正文猜证据等级或学科；岗位起点只按稳定ID的ROLE命名空间判断，不另认证职业分类。预期55不是黄金ID集合，历史完整性仍需对照冻结清单。
@@ -19,7 +19,7 @@ python3 管理档案/工具/navigation/build_routes.py . --registry taxonomy/rea
 仅检查仍然存在且各自非空的明确旧frontmatter目录，不回退到自动扫描：
 
 ```sh
-python3 管理档案/工具/navigation/build_routes.py . --registry taxonomy/reading-routes.json --source-dir roles --source-dir knowledge --source-dir solutions --source-dir case-studies --source-dir comparisons --output 管理档案/草稿/旧元数据路线候选.md
+python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --source-dir roles --source-dir knowledge --source-dir solutions --source-dir case-studies --source-dir comparisons --output 管理档案/草稿/旧元数据路线候选.md
 ```
 
 这条命令仅在上述五目录仍齐全、包含registry所需旧ID时适用。旧正文退出后应使用reader模式；不要删除缺目录错误来制造零扫描通过。两模式必须明确二选一，legacy不接受reader的expected-count。

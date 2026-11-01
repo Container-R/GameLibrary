@@ -111,7 +111,7 @@ Cygames在**2020-10-08**的CEDEC2020后续问答 [B4] 说明：CI定期运行C++
 - [技术美术](../technical-art/technical-artist.md)：负责的内容工具/资产交接可能成为构建输入；不因此把所有DCC制作工具归入构建岗位。
 - [干净检出后的资产导入](../../solutions/engine/asset-import-intent-contract.md)：已有导入/身份与运行时资源实验，不能直接证明生产包的可复现构建或发布授权。
 - [独立调用回执与历史摘要](../../research/source-notes/runner-invocation-freshness.md)：已有有限研究夹具的实际实现；支持区分本次执行与旧PASS，但不是游戏发布流水线或候选晋级服务的验证。
-- [Destiny配置准入与回退](../../case-studies/liveops/destiny-config-admission-rollback.md)：是另一条运行时准入/恢复边界，不能用构建完成替代环境兼容和数据恢复决策。
+- [Destiny配置准入与回退](../../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)：是另一条运行时准入/恢复边界，不能用构建完成替代环境兼容和数据恢复决策。
 
 后续研究应验证一个真实构建系统如何表达包外配置、重新签名与测试对象身份，再决定哪些证据可以继承。当前职业/学科覆盖矩阵仍未完成；本档案没有建立全行业职位别名或普遍组织标准。
 

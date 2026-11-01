@@ -1,6 +1,6 @@
 # Left 4 Dead Director 节奏案例：来源记录
 
-对应 [CASE-AI-002](../../case-studies/ai/left4dead-director-pacing-evidence.md)；访问2026-11-01。
+对应 [CASE-AI-002 历史正文](https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/left4dead-director-pacing-evidence.md)；访问2026-11-01。 当前读者正文：[Left4Dead导演系统如何调节战斗节奏](../../GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md)。
 
 ## 文献身份与定位
 

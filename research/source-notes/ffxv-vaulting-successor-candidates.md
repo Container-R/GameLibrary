@@ -1,6 +1,6 @@
 # FFXV 越障后继候选：来源与阅读边界
 
-2026-11-01。对应[案例](../../case-studies/animation/ffxv-vaulting-successor-candidates.md)。本记录提供定位，不复制案例中的机制摘要。
+2026-11-01。对应[案例 历史正文](https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/ffxv-vaulting-successor-candidates.md)。本记录提供定位，不复制案例中的机制摘要。 当前读者正文：[FFXV如何组织越障动画的后续片段](../../GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md)。
 
 ## 原始来源
 

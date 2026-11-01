@@ -1,6 +1,6 @@
 # Factorio derived-cache case source receipt
 
-Accessed2026-10-31. Source-only primary developer accounts; no game/runtime/source execution. Intended companion to case-studies/engine/factorio-derived-cache-load-equivalence.md.
+Accessed2026-10-31. Source-only primary developer accounts; no game/runtime/source execution. Intended companion to [case-studies/engine/factorio-derived-cache-load-equivalence.md](https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/factorio-derived-cache-load-equivalence.md). 当前读者正文：[Factorio缓存失效与读档后的重算](../../GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md)。
 
 | Source | Authorship/date verified on page | Exact section/location | Claim boundary |
 |---|---|---|---|

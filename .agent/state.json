@@ -11,14 +11,14 @@
     "accounted_for_original_items": 55
   },
   "publication": {
-    "last_verified_head_sha": "404f20ff1ef33da88a8dd071a6247c4371bd0940",
+    "last_verified_head_sha": "cc99dab476ab93db828afed227eb88b93574fcde",
     "status": "authorized-remediation-in-progress",
     "authorization": "Public-record sanitization and replacement approved; preserve technical content, sources and Git history",
-    "scope": "This checkpoint replaces public project state only; archive sanitization and remaining reader publication are not yet complete",
+    "scope": "All 55 reader articles are published; historical-record sanitization and repository-root consolidation remain in progress.",
     "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-    "latest_verified_content_sha": "404f20ff1ef33da88a8dd071a6247c4371bd0940"
+    "latest_verified_content_sha": "cc99dab476ab93db828afed227eb88b93574fcde"
   },
-  "next_action": "Continue reviewed old-body retirement and reader-manifest tool compatibility; preserve supporting scopes and sanitize remaining historical records",
+  "next_action": "Complete grouped retirement and historical-support relocation, then consolidate remaining source and execution archives without changing historical assertions",
   "audit": {
     "overall_reader_rebuild_status": "quality-regression",
     "meaning": "Existing library remediation is incomplete; accepted new reader bodies have individual review records",
@@ -34,11 +34,16 @@
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "reader_inventory": "管理档案/图书目录.json",
-    "content_dispositions": "管理档案/复合旧文待整理.json"
+    "content_dispositions": "管理档案/复合旧文待整理.json",
+    "taxonomy": "管理档案/分类/disciplines.json",
+    "reading_routes": "管理档案/分类/reading-routes.json",
+    "queue_validator": "管理档案/工具/queue/validate_queue.py",
+    "reader_validator": "管理档案/工具/taxonomy/check_taxonomy.py",
+    "route_generator": "管理档案/工具/navigation/build_routes.py"
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T16:15:00Z",
+    "lease_until": "2026-11-01T17:00:00Z",
     "scope": "Single writer for authorized reader remediation and public-record sanitization"
   },
   "last_run_id": "20261101T155059Z-support-migration",
@@ -60,8 +65,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T15:50:59Z",
-  "last_commit_sha": "404f20ff1ef33da88a8dd071a6247c4371bd0940",
+  "last_real_progress_at": "2026-11-01T16:01:52Z",
+  "last_commit_sha": "cc99dab476ab93db828afed227eb88b93574fcde",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

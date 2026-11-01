@@ -73,7 +73,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [ink保存内容兼容性](../research/source-notes/ink-save-content-compatibility.md)沿固定源码区分入口返回、近似路径诊断、延迟回调及作者批准的叙事延续；能力门槛限制了实测，未用抽象模型冒充运行。
 
-[Bungie2020事故案例](../case-studies/liveops/destiny-config-admission-rollback.md)使用紧凑事实概述与原创分析，不转载整篇复盘；Kubernetes文档只提供概念对照，不充当历史技术栈证据。
+[Bungie2020事故案例](../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)使用紧凑事实概述与原创分析，不转载整篇复盘；Kubernetes文档只提供概念对照，不充当历史技术栈证据。
 
 [音乐帧端点来源记录](../research/experiments/music-loop-frame-contract/source-receipt.json)区分固定 FFmpeg 上游文档、FMOD 2.04 API 约定和本地工具自报身份；不认证二进制供应链。
 
@@ -93,7 +93,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [预测依赖时间合同](../research/source-notes/prediction-dependency-time-contract.md)重新核对 Unity Netcode for Entities 1.4.1 与 Gambetta 原文；跨实体反例为原创未执行手算，不是 ECS 复现，也不否定现有单角色模型范围。
 
-[Factorio 派生缓存案例](../case-studies/engine/factorio-derived-cache-load-equivalence.md)与[来源回执](../research/source-notes/factorio-derived-cache-sources.md)区分 FFF 340 当时报告的通知/重算修复、FFF 415 的历史后续版本计划与本库未执行验收工作表；没有私有源码或游戏复现证据。
+[Factorio 派生缓存案例](../GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md)与[来源回执](../research/source-notes/factorio-derived-cache-sources.md)区分 FFF 340 当时报告的通知/重算修复、FFF 415 的历史后续版本计划与本库未执行验收工作表；没有私有源码或游戏复现证据。
 
 [SQLite 提交恢复边界](../research/experiments/sqlite-commit-busy/README.md)将滚动 Transaction/lockingv3 文档与本地 DELETE journal 实测区分；BEGIN 入口拒绝和仍活动事务内的 COMMIT BUSY 不共用重试假设。旧本地证据丢失后以新 UUID 重跑，不冒充恢复。
 
@@ -215,12 +215,12 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [Vulkan present fence 的退役覆盖](../research/source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。
 
-[For Honor 动作事件标记与请求时刻](../case-studies/animation/for-honor-motion-matching-event-request.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
+[For Honor 动作事件标记与请求时刻](../GameLibrary/角色动画/动画运行时/动作选择/ForHonor动作匹配中的事件与请求时机.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
 
 [FFXV 预结束段与同步窗口](../research/source-notes/ffxv-pre-end-music-window.md)补强既有音乐时间交接：原始会议资料区分准备阶段与最终固定/可变编排；没有新增运行或听感结果。
 
-[Horizon 流送的依赖初始化许可](../case-studies/engine/horizon-streaming-dependency-initialization.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
+[Horizon 流送的依赖初始化许可](../GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
 
 [Warlander 取消类别与输入预约](../GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md)依据开发者原始日语文章区分行动许可和命令有效期；原创分开试次明确半开边界及共同计时前提，没有推定实际队列、hitstop或执行结果。
 
-[FFXV 越障的片段后继候选](../case-studies/animation/ffxv-vaulting-successor-candidates.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。
+[FFXV 越障的片段后继候选](../GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md)以原始会议图和讲稿核对状态归并后的候选供给；原创A/B例区分结构简化与内容政策变化，不推导排序、无候选回退或已实现足相位精修。

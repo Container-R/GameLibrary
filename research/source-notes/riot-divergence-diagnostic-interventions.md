@@ -45,6 +45,6 @@
 
 ## 与现有知识的接口
 
-[游戏 QA 责任边界](../../roles/qa/game-quality-assurance.md)已有复现材料、失败分类与重跑记录要求；本说明进一步限定诊断干预与症状定位之间要交接哪些证据。[Factorio 派生缓存案例](../../case-studies/engine/factorio-derived-cache-load-equivalence.md)处理缓存失效和读档重算语义，不是这里的构造定位问题。[客户端预测契约](../../solutions/programming/client-prediction-authority-boundary.md)的有限模型也不验证这个商业游戏的回放或调试工具。
+[游戏 QA 责任边界](../../roles/qa/game-quality-assurance.md)已有复现材料、失败分类与重跑记录要求；本说明进一步限定诊断干预与症状定位之间要交接哪些证据。[Factorio 派生缓存案例](../../GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md)处理缓存失效和读档重算语义，不是这里的构造定位问题。[客户端预测契约](../../solutions/programming/client-prediction-authority-boundary.md)的有限模型也不验证这个商业游戏的回放或调试工具。
 
 本文不复制日志、代码或图示，不承诺复现率、排查速度、全局确定性或已修复现行版本。具体诊断工具与发布接收仍需要自己的实现和证据；这里提供的是一个可追溯的排查决策，而不是“加更多日志”或“全部置零”的通用处方。
