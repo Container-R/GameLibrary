@@ -5,8 +5,8 @@
     "TASK-2026-0101"
   ],
   "started_at": "2026-11-01T05:05:54Z",
-  "ended_at": "2026-11-01T05:10:08.901462Z",
-  "outcome": "source, proof and final editorial review accepted; publication pending",
+  "ended_at": "2026-11-01T05:12:16.496918Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.cs.cmu.edu/~garland/Papers/quadrics.pdf",
     "https://github.com/zeux/meshoptimizer/tree/6daea4695c48338363b08022d2fb15deaef6ac09"
@@ -28,7 +28,12 @@
     "archive_checks_optimized": 519,
     "queue_tasks_checked": 101,
     "accepted_note_sha256": "edd71b9565b0f5697bd23284c3f4c2fdfcc4ccc132f31e3fb4c64a05712514e5",
-    "declared_paths_checked": 130
+    "declared_paths_checked": 130,
+    "selected_blob_hashes_verified": 7,
+    "outside_tree_changes": 0,
+    "local_links_checked": 789,
+    "receipt_queue_tasks_checked": 102
   },
-  "next_action": "Investigate a bounded independent primary-source performance gap after current depth unit"
+  "next_action": "Review exact official PSO precaching and validation sources; reject gate if insufficient",
+  "commit_sha": "9e8a34719ee14687e96abe85ebc305126f3f2946"
 }
