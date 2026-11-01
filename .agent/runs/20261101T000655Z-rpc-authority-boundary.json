@@ -23,13 +23,7 @@
   "commands_per_accepted_exchange": 3,
   "control_rpc_deliveries_per_accepted_exchange": 5,
   "packet_count": "not measured",
-  "engine_binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
   "engine_identity": "Local self-report only; official release/source correspondence unverified",
-  "failed_attempt": "cee0c49d-8f19-4f76-aeee-76d302a255ca",
-  "accepted_attempts": [
-    "27e538cb-7c1e-4feb-8e60-ddfb3960b6ad",
-    "58830003-76ab-4bab-a089-36d642139fb4"
-  ],
   "evidence": "Real same-host RPC admission and captured sender across deferred command processing; actual owner/range rejection and client outcomes",
   "negative": "Initial fixture confused Callable.rpc_id void with Node.rpc_id Error; parser failed before READY/client launch, server killed/reaped; four-call correction preserved protocol",
   "limitations": [
@@ -64,5 +58,17 @@
     "commit_or_ref_attempted_before_recovery": false,
     "head_rechecked": "798a389fdf606010c5f311f7c168e486cac95671",
     "resolution": "Regenerated content-addressed unreferenced trees in bounded groups with persisted per-group receipts; full selected and outside-tree checks before publishing"
+  },
+  "public_record_derivative": {
+    "kind": "environment_identity_redacted_summary",
+    "source_record_path": ".agent/runs/20261101T000655Z-rpc-authority-boundary.json",
+    "source_record_sha256": "361885440708e9bf629db8374d07191c5c644a5bfc737f8f6a7508aa9bcffd88",
+    "removed_field_categories": {
+      "engine_binary_sha256": "installed executable fingerprint",
+      "failed_attempt": "execution attempt identifier",
+      "accepted_attempts": "execution attempt identifiers"
+    },
+    "historical_claims": "Retained as historical assertions; not independently rerun or newly validated.",
+    "raw_status": "This transformed summary is not an original raw execution record."
   }
 }

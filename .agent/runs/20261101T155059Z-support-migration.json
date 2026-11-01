@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "run_id": "20261101T155059Z-support-migration",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "commit_sha": "404f20ff1ef33da88a8dd071a6247c4371bd0940",
+  "verified_at": "2026-11-01T15:50:59Z",
+  "outcome": "Five public supporting notes moved, one accepted previously unpublished support note first published, and superseded TLOU2 body retained in fixed Git history",
+  "selected_changed_blobs_verified": 34,
+  "outside_tree_changes": 0,
+  "reader_verification": {
+    "books": 55,
+    "local_outbound_links": 134,
+    "missing_targets_or_fragments": 0,
+    "method": "Every reader body and linked file content hash matched the immutable remote tree; common GitHub heading fragments checked; external HTTP excluded",
+    "direct_remote_route": "Asset-import reader body to resource-sharing supporting note"
+  },
+  "prior_check_limitation": "An unpublished local supporting draft had incorrectly satisfied a local-only path check. Its absence in the remote baseline was detected before this migration; the broken public supporting link is now repaired. Earlier local checks were not remote-link certification.",
+  "runtime_experiments": 0,
+  "historical_records_in_this_revision": "Character-motion and RPC summaries remove installed fingerprints and attempt identifiers; historical failures and result limits retained, derivative labels included",
+  "whole_library_complete": false,
+  "root_consolidation_complete": false,
+  "historical_sanitization_complete": false
+}

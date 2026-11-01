@@ -9,16 +9,11 @@
   "outcome": "published and read back",
   "protocol_sha256": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
   "native_attempts": 2,
-  "accepted_attempts": [
-    "44ce134f-f0fc-4316-9097-d99cbd8745f9",
-    "24fbda1c-b719-4fea-a8de-5d3448c538fe"
-  ],
   "behavior_processes": 2,
   "separate_version_processes": 2,
   "unique_configurations": 1,
   "actual_moves_per_invocation": 2,
   "stationary_queries_per_invocation": 5,
-  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
   "evidence": "Both starts and requested endpoints have empty stationary controls; blocked actual travel0.9765625 with wall collision/remainder3.0234375, open travel4 with null collision",
   "pre_native_corrections": "Finite numeric guards and explicit subtype casts reviewed before first native attempt; no observed parser or engine failure",
   "limitations": [
@@ -45,5 +40,17 @@
     "receipt_declared_paths_checked": 88
   },
   "next_action": "Integrate independently reviewed environment concept role and original unexecuted handoff worksheet",
-  "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c"
+  "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c",
+  "accepted_attempt_count": 2,
+  "public_record_derivative": {
+    "kind": "environment_identity_redacted_summary",
+    "source_record_path": ".agent/runs/20261101T012646Z-character-motion.json",
+    "source_record_sha256": "7666623478ae42f1bfa756edc972bcf50a833337f40a452644157cb166041597",
+    "removed_field_categories": {
+      "binary_sha256": "installed executable fingerprint",
+      "accepted_attempts": "execution attempt identifiers"
+    },
+    "historical_claims": "Retained as historical assertions; not independently rerun or newly validated.",
+    "raw_status": "This transformed summary is not an original raw execution record."
+  }
 }
