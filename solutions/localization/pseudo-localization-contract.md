@@ -190,3 +190,5 @@ ICU [明确规定](https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e
 ## 关联知识
 
 [技术美术资产管线](../../roles/technical-art/technical-artist.md)提供版本/依赖清单思路；[分类兼容拆分](../../taxonomy/README.md)解释LOC与A11Y的区别，分类存在不表示全部技术已研究。
+
+[本地化协调职责](../../roles/localization/localization-coordinator.md)进一步区分原文未变、复查后保留译文和候选已接入。格式化实验不验证这些语义与生产状态。

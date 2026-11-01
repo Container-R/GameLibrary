@@ -250,3 +250,17 @@
 - 怎样让对白矛盾可复现而非只凭印象？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：记录状态快照、版本和实际观察；不冒称穷尽所有分支。
 
+## 从本地化协调出发
+路线 ID：`role-localization`
+
+岗位起点：[游戏本地化协调：原文未变时，谁重新接收变化后的语境](roles/localization/localization-coordinator.md) — `ROLE-LOC-001` · `source-backed` · `LOC`
+
+- 占位符和格式通过，是否说明新用途下的译文仍合适？ → [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `SOL-LOC-001` · `source-backed` · `LOC`
+  - 关联理由：已有有限格式证据不承担语言接收。
+- 谁能解释角色知识和文字语义？ → [游戏叙事设计与写作：让对白意图、知识状态和实现条件一起交接](roles/narrative/narrative-designer-writer.md) — `ROLE-NARR-001` · `source-backed` · `NARR`
+  - 关联理由：将疑问交给语义责任人，而非由协调者猜测。
+- 同一按钮文字的操作后果有没有变化？ → [游戏 UX 设计师：从交互意图到可操作流程的接收责任](roles/ux/game-ux-designer.md) — `ROLE-UX-001` · `source-backed` · `UX`
+  - 关联理由：交互意图与语言、运行验证需要不同证据。
+- 尚未审阅的范围由谁接受？ → [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `ROLE-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：明确依赖和授权，不把风险接受记为测试通过。
+

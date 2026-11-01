@@ -2253,11 +2253,14 @@
       "id": "TASK-2026-0088",
       "question": "When source text is unchanged but use changes, who reassesses locale acceptance and the receiving build?",
       "discipline": "LOC",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 85,
       "priority_rationale": "Close a specific localization coordination gap distinct from existing formatter, narrative and UX evidence",
       "expected_artifact": "roles/localization/localization-coordinator.md and source note",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/localization/localization-coordinator.md",
+        "research/source-notes/localization-coordinator-role.md"
+      ],
       "acceptance": [
         "Primary named practitioner accounts and independent source review",
         "Distinguish historical work samples from original unexecuted context-change worksheet",
@@ -2267,8 +2270,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T03:55:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:19:21.242707Z",
-      "next_action": "Close independent editorial review of source-only localization context-change handoff; no new runtime",
+      "last_progress_at": "2026-11-01T03:20:59.798943Z",
+      "next_action": "Publish reviewed localization context-reassessment responsibility and original unexecuted worksheet",
       "blockers": []
     }
   ]

@@ -507,6 +507,34 @@
           "rationale": "记录状态快照、版本和实际观察；不冒称穷尽所有分支。"
         }
       ]
+    },
+    {
+      "id": "role-localization",
+      "title": "从本地化协调出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-LOC-001",
+      "entries": [
+        {
+          "document_id": "SOL-LOC-001",
+          "question": "占位符和格式通过，是否说明新用途下的译文仍合适？",
+          "rationale": "已有有限格式证据不承担语言接收。"
+        },
+        {
+          "document_id": "ROLE-NARR-001",
+          "question": "谁能解释角色知识和文字语义？",
+          "rationale": "将疑问交给语义责任人，而非由协调者猜测。"
+        },
+        {
+          "document_id": "ROLE-UX-001",
+          "question": "同一按钮文字的操作后果有没有变化？",
+          "rationale": "交互意图与语言、运行验证需要不同证据。"
+        },
+        {
+          "document_id": "ROLE-PROD-001",
+          "question": "尚未审阅的范围由谁接受？",
+          "rationale": "明确依赖和授权，不把风险接受记为测试通过。"
+        }
+      ]
     }
   ]
 }

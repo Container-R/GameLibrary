@@ -145,3 +145,5 @@ python3 scripts/evidence/test_verify.py
 [客户端预测补充](../solutions/programming/client-prediction-authority-boundary.md)以固定GGPO源码收紧旧表现建议；新增短事件、失效事件与持久输出各有未执行验收问题，没有新增运行实验。
 
 [资源复制图实验](experiments/godot-resource-duplication/README.md)记录三种模式各两次的有限图对照；预先冻结的独立字面预期分别验收作者与复跑，初始取证消费者缺陷在引擎执行前修正。
+
+[本地化语境变更交接](../roles/localization/localization-coordinator.md)研究同样文字的新用途如何进入各语言复查与实际候选；不是一次真实翻译、集成或LQA验收。
