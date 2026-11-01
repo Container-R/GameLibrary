@@ -4,16 +4,16 @@
   "tasks": [
     {
       "id": "TASK-2026-0009",
-      "question": "如何将固定步长战斗逻辑从渲染和动画适配器分离，并明确过载与输入重放边界？",
+      "question": "\u5982\u4f55\u5c06\u56fa\u5b9a\u6b65\u957f\u6218\u6597\u903b\u8f91\u4ece\u6e32\u67d3\u548c\u52a8\u753b\u9002\u914d\u5668\u5206\u79bb\uff0c\u5e76\u660e\u786e\u8fc7\u8f7d\u4e0e\u8f93\u5165\u91cd\u653e\u8fb9\u754c\uff1f",
       "discipline": "PROG",
       "status": "published",
       "priority": 98,
-      "priority_rationale": "跨引擎架构、战斗时序与QA共同基础，可用原始文献和独立模型复核",
+      "priority_rationale": "\u8de8\u5f15\u64ce\u67b6\u6784\u3001\u6218\u6597\u65f6\u5e8f\u4e0eQA\u5171\u540c\u57fa\u7840\uff0c\u53ef\u7528\u539f\u59cb\u6587\u732e\u548c\u72ec\u7acb\u6a21\u578b\u590d\u6838",
       "expected_artifact": "solutions/programming/fixed-step-simulation-boundary.md",
       "acceptance": [
-        "核对原始时间步长和输入资料",
-        "明确追帧上限/积压策略及确定性边界",
-        "提供可复验的纯调度模型与引擎未测声明"
+        "\u6838\u5bf9\u539f\u59cb\u65f6\u95f4\u6b65\u957f\u548c\u8f93\u5165\u8d44\u6599",
+        "\u660e\u786e\u8ffd\u5e27\u4e0a\u9650/\u79ef\u538b\u7b56\u7565\u53ca\u786e\u5b9a\u6027\u8fb9\u754c",
+        "\u63d0\u4f9b\u53ef\u590d\u9a8c\u7684\u7eaf\u8c03\u5ea6\u6a21\u578b\u4e0e\u5f15\u64ce\u672a\u6d4b\u58f0\u660e"
       ],
       "source_leads": [
         "https://gafferongames.com/post/fix_your_timestep/",
@@ -24,23 +24,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T12:53:58.977252Z",
       "last_progress_at": "2026-10-31T12:53:58.977252Z",
-      "next_action": "按版本变化或引擎复现证据维护；不外推模型结论",
+      "next_action": "\u6309\u7248\u672c\u53d8\u5316\u6216\u5f15\u64ce\u590d\u73b0\u8bc1\u636e\u7ef4\u62a4\uff1b\u4e0d\u5916\u63a8\u6a21\u578b\u7ed3\u8bba",
       "blockers": [],
       "commit_sha": "b166843c07dc69c591fa736e1559ca51785e0de8"
     },
     {
       "id": "TASK-2026-0001",
-      "question": "核实并整理游戏程序各主要岗位职责与交付物",
+      "question": "\u6838\u5b9e\u5e76\u6574\u7406\u6e38\u620f\u7a0b\u5e8f\u5404\u4e3b\u8981\u5c97\u4f4d\u804c\u8d23\u4e0e\u4ea4\u4ed8\u7269",
       "discipline": "PROG",
       "status": "published",
       "priority": 92,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "roles/programming/gameplay-programmer.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -48,23 +48,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T12:59:03.575994Z",
       "last_progress_at": "2026-10-31T12:57:31.875426Z",
-      "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
+      "next_action": "\u540e\u7eed\u5b9e\u9645\u5f15\u64ce/\u4ea4\u4ed8\u8bc1\u636e\u53ef\u589e\u5f3a\u6b64\u6863\u6848\uff1b\u7ef4\u6301\u8303\u56f4\u58f0\u660e",
       "blockers": [],
       "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc"
     },
     {
       "id": "TASK-2026-0002",
-      "question": "核实技术美术主要岗位与TA生产管线角色边界",
+      "question": "\u6838\u5b9e\u6280\u672f\u7f8e\u672f\u4e3b\u8981\u5c97\u4f4d\u4e0eTA\u751f\u4ea7\u7ba1\u7ebf\u89d2\u8272\u8fb9\u754c",
       "discipline": "TA",
       "status": "published",
       "priority": 90,
-      "priority_rationale": "在已完成程序与动画基础后补技术美术和音频覆盖，仍以具体工程问题为验收",
+      "priority_rationale": "\u5728\u5df2\u5b8c\u6210\u7a0b\u5e8f\u4e0e\u52a8\u753b\u57fa\u7840\u540e\u8865\u6280\u672f\u7f8e\u672f\u548c\u97f3\u9891\u8986\u76d6\uff0c\u4ecd\u4ee5\u5177\u4f53\u5de5\u7a0b\u95ee\u9898\u4e3a\u9a8c\u6536",
       "expected_artifact": "roles/technical-art/technical-artist.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -72,23 +72,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T13:08:23.726120Z",
       "last_progress_at": "2026-10-31T13:07:26.939076Z",
-      "next_action": "按版本变化与实际集成证据维护",
+      "next_action": "\u6309\u7248\u672c\u53d8\u5316\u4e0e\u5b9e\u9645\u96c6\u6210\u8bc1\u636e\u7ef4\u62a4",
       "blockers": [],
       "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e"
     },
     {
       "id": "TASK-2026-0003",
-      "question": "拆解技术动画中角色大角度转身的脚滑和Root Motion责任划分",
+      "question": "\u62c6\u89e3\u6280\u672f\u52a8\u753b\u4e2d\u89d2\u8272\u5927\u89d2\u5ea6\u8f6c\u8eab\u7684\u811a\u6ed1\u548cRoot Motion\u8d23\u4efb\u5212\u5206",
       "discipline": "ANIM",
       "status": "published",
       "priority": 94,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "solutions/animation/turn-in-place-foot-sliding.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -96,23 +96,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T12:59:03.575994Z",
       "last_progress_at": "2026-10-31T12:57:31.875426Z",
-      "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
+      "next_action": "\u540e\u7eed\u5b9e\u9645\u5f15\u64ce/\u4ea4\u4ed8\u8bc1\u636e\u53ef\u589e\u5f3a\u6b64\u6863\u6848\uff1b\u7ef4\u6301\u8303\u56f4\u58f0\u660e",
       "blockers": [],
       "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc"
     },
     {
       "id": "TASK-2026-0004",
-      "question": "如何以可验收契约分离玩法音乐意图、提交状态与实际音乐转场？",
+      "question": "\u5982\u4f55\u4ee5\u53ef\u9a8c\u6536\u5951\u7ea6\u5206\u79bb\u73a9\u6cd5\u97f3\u4e50\u610f\u56fe\u3001\u63d0\u4ea4\u72b6\u6001\u4e0e\u5b9e\u9645\u97f3\u4e50\u8f6c\u573a\uff1f",
       "discipline": "SFX",
       "status": "published",
       "priority": 81,
-      "priority_rationale": "在已完成程序与动画基础后补技术美术和音频覆盖，仍以具体工程问题为验收",
+      "priority_rationale": "\u5728\u5df2\u5b8c\u6210\u7a0b\u5e8f\u4e0e\u52a8\u753b\u57fa\u7840\u540e\u8865\u6280\u672f\u7f8e\u672f\u548c\u97f3\u9891\u8986\u76d6\uff0c\u4ecd\u4ee5\u5177\u4f53\u5de5\u7a0b\u95ee\u9898\u4e3a\u9a8c\u6536",
       "expected_artifact": "solutions/audio/music-state-transition-contract.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -120,24 +120,24 @@
       "attempts": 1,
       "completed_at": "2026-10-31T13:08:23.726120Z",
       "last_progress_at": "2026-10-31T13:07:26.939076Z",
-      "next_action": "按版本变化与实际集成证据维护",
+      "next_action": "\u6309\u7248\u672c\u53d8\u5316\u4e0e\u5b9e\u9645\u96c6\u6210\u8bc1\u636e\u7ef4\u62a4",
       "blockers": [],
-      "scope_note": "本轮收窄为音乐状态交接；完整音频岗位图谱移交TASK-2026-0010，不视作已完成",
+      "scope_note": "\u672c\u8f6e\u6536\u7a84\u4e3a\u97f3\u4e50\u72b6\u6001\u4ea4\u63a5\uff1b\u5b8c\u6574\u97f3\u9891\u5c97\u4f4d\u56fe\u8c31\u79fb\u4ea4TASK-2026-0010\uff0c\u4e0d\u89c6\u4f5c\u5df2\u5b8c\u6210",
       "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e"
     },
     {
       "id": "TASK-2026-0005",
-      "question": "比较多人游戏客户端预测与权威服务器的常见同步策略",
+      "question": "\u6bd4\u8f83\u591a\u4eba\u6e38\u620f\u5ba2\u6237\u7aef\u9884\u6d4b\u4e0e\u6743\u5a01\u670d\u52a1\u5668\u7684\u5e38\u89c1\u540c\u6b65\u7b56\u7565",
       "discipline": "NET",
       "status": "published",
       "priority": 89,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "solutions/programming/client-prediction-authority-boundary.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -145,23 +145,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T13:12:49.695863Z",
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
-      "next_action": "按版本和真实集成实验维护",
+      "next_action": "\u6309\u7248\u672c\u548c\u771f\u5b9e\u96c6\u6210\u5b9e\u9a8c\u7ef4\u62a4",
       "blockers": [],
       "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
     },
     {
       "id": "TASK-2026-0006",
-      "question": "研究移动和PC平台的特效性能预算及实际GPU粒子限制",
+      "question": "\u7814\u7a76\u79fb\u52a8\u548cPC\u5e73\u53f0\u7684\u7279\u6548\u6027\u80fd\u9884\u7b97\u53ca\u5b9e\u9645GPU\u7c92\u5b50\u9650\u5236",
       "discipline": "VFX",
       "status": "published",
       "priority": 86,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "solutions/vfx/niagara-performance-budget.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -169,23 +169,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T13:12:49.695863Z",
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
-      "next_action": "按版本和真实集成实验维护",
+      "next_action": "\u6309\u7248\u672c\u548c\u771f\u5b9e\u96c6\u6210\u5b9e\u9a8c\u7ef4\u62a4",
       "blockers": [],
       "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
     },
     {
       "id": "TASK-2026-0007",
-      "question": "分析游戏经济系统产出消耗平衡与数据监控的实际方案",
+      "question": "\u5206\u6790\u6e38\u620f\u7ecf\u6d4e\u7cfb\u7edf\u4ea7\u51fa\u6d88\u8017\u5e73\u8861\u4e0e\u6570\u636e\u76d1\u63a7\u7684\u5b9e\u9645\u65b9\u6848",
       "discipline": "DESIGN",
       "status": "published",
       "priority": 84,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "solutions/design/single-player-economy-ledger.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -193,23 +193,23 @@
       "attempts": 1,
       "completed_at": "2026-10-31T13:18:40.323328Z",
       "last_progress_at": "2026-10-31T13:17:23.011356Z",
-      "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
+      "next_action": "\u57fa\u4e8e\u5b9e\u9645\u5de5\u7a0b\u6216\u7248\u672c\u53d8\u5316\u7ef4\u62a4\uff0c\u4e0d\u5916\u63a8\u6a21\u578b/\u5c97\u4f4d\u6837\u672c",
       "blockers": [],
       "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61"
     },
     {
       "id": "TASK-2026-0008",
-      "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
+      "question": "\u6838\u5b9e\u6e38\u620f\u5f00\u53d1\u5168\u5b66\u79d1\u804c\u8d23\u77e9\u9635\uff0c\u8865\u9f50\u672a\u8986\u76d6\u7684\u91cd\u8981\u65b9\u5411",
       "discipline": "PROD",
       "status": "paused",
       "priority": 88,
-      "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
+      "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
       "acceptance": [
-        "真实原始资料至少一项",
-        "问题或职业职责有可操作细节",
-        "适用条件与技术局限明确",
-        "符合仓库知识模板与证据要求"
+        "\u771f\u5b9e\u539f\u59cb\u8d44\u6599\u81f3\u5c11\u4e00\u9879",
+        "\u95ee\u9898\u6216\u804c\u4e1a\u804c\u8d23\u6709\u53ef\u64cd\u4f5c\u7ec6\u8282",
+        "\u9002\u7528\u6761\u4ef6\u4e0e\u6280\u672f\u5c40\u9650\u660e\u786e",
+        "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
       "owner": null,
@@ -225,28 +225,28 @@
         "scripts/test_taxonomy.py",
         "research/audits/queue-contract-guard/coverage-gate.md"
       ],
-      "scope_note": "局部覆盖审计不是全学科分类研究完成",
+      "scope_note": "\u5c40\u90e8\u8986\u76d6\u5ba1\u8ba1\u4e0d\u662f\u5168\u5b66\u79d1\u5206\u7c7b\u7814\u7a76\u5b8c\u6210",
       "previous_status": "researching",
       "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence"
     },
     {
       "id": "TASK-2026-0010",
-      "question": "核实交互音频岗位分工、声音资产与集成交付物；与音乐状态契约交叉索引",
+      "question": "\u6838\u5b9e\u4ea4\u4e92\u97f3\u9891\u5c97\u4f4d\u5206\u5de5\u3001\u58f0\u97f3\u8d44\u4ea7\u4e0e\u96c6\u6210\u4ea4\u4ed8\u7269\uff1b\u4e0e\u97f3\u4e50\u72b6\u6001\u5951\u7ea6\u4ea4\u53c9\u7d22\u5f15",
       "discipline": "SFX",
       "status": "published",
       "priority": 82,
-      "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
+      "priority_rationale": "\u8865\u9f50\u539fTASK-2026-0004\u672a\u8986\u76d6\u7684\u5b8c\u6574\u5c97\u4f4d\u804c\u8d23",
       "expected_artifact": "roles/audio/interactive-audio-designer.md",
       "acceptance": [
-        "一手行业/雇主资料",
-        "职责交付验收矩阵",
-        "明确项目样本边界"
+        "\u4e00\u624b\u884c\u4e1a/\u96c7\u4e3b\u8d44\u6599",
+        "\u804c\u8d23\u4ea4\u4ed8\u9a8c\u6536\u77e9\u9635",
+        "\u660e\u786e\u9879\u76ee\u6837\u672c\u8fb9\u754c"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
-      "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
+      "next_action": "\u57fa\u4e8e\u5b9e\u9645\u5de5\u7a0b\u6216\u7248\u672c\u53d8\u5316\u7ef4\u62a4\uff0c\u4e0d\u5916\u63a8\u6a21\u578b/\u5c97\u4f4d\u6837\u672c",
       "blockers": [],
       "last_progress_at": "2026-10-31T13:17:23.011356Z",
       "completed_at": "2026-10-31T13:18:40.323328Z",
@@ -254,109 +254,109 @@
     },
     {
       "id": "TASK-2026-0011",
-      "question": "模态关闭与控件失效后如何安全恢复手柄/键盘焦点？",
+      "question": "\u6a21\u6001\u5173\u95ed\u4e0e\u63a7\u4ef6\u5931\u6548\u540e\u5982\u4f55\u5b89\u5168\u6062\u590d\u624b\u67c4/\u952e\u76d8\u7126\u70b9\uff1f",
       "discipline": "UX",
       "status": "published",
       "priority": 90,
-      "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
+      "priority_rationale": "\u8986\u76d6\u5ba1\u8ba1\u53d1\u73b0\u7684\u8de8\u56e2\u961f\u5177\u4f53\u5de5\u7a0b\u7f3a\u53e3",
       "expected_artifact": "solutions/ux/modal-focus-recovery.md",
       "acceptance": [
-        "官方版本资料核对",
-        "原创可执行契约与失败路径",
-        "模型/引擎/玩家验证边界明确"
+        "\u5b98\u65b9\u7248\u672c\u8d44\u6599\u6838\u5bf9",
+        "\u539f\u521b\u53ef\u6267\u884c\u5951\u7ea6\u4e0e\u5931\u8d25\u8def\u5f84",
+        "\u6a21\u578b/\u5f15\u64ce/\u73a9\u5bb6\u9a8c\u8bc1\u8fb9\u754c\u660e\u786e"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:22:59.146248Z",
-      "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
+      "next_action": "\u6309\u5f15\u64ce/\u683c\u5f0f\u5316\u5668\u771f\u5b9e\u96c6\u6210\u8bc1\u636e\u7ef4\u62a4\uff0c\u4e0d\u5916\u63a8\u6a21\u578b",
       "blockers": [],
       "completed_at": "2026-10-31T13:25:27.472113Z",
       "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
     },
     {
       "id": "TASK-2026-0012",
-      "question": "如何用伪本地化检查文本布局与占位符契约，同时不冒充真实语言验证？",
+      "question": "\u5982\u4f55\u7528\u4f2a\u672c\u5730\u5316\u68c0\u67e5\u6587\u672c\u5e03\u5c40\u4e0e\u5360\u4f4d\u7b26\u5951\u7ea6\uff0c\u540c\u65f6\u4e0d\u5192\u5145\u771f\u5b9e\u8bed\u8a00\u9a8c\u8bc1\uff1f",
       "discipline": "LOC",
       "status": "published",
       "priority": 90,
-      "priority_rationale": "覆盖审计发现的跨团队具体工程缺口",
+      "priority_rationale": "\u8986\u76d6\u5ba1\u8ba1\u53d1\u73b0\u7684\u8de8\u56e2\u961f\u5177\u4f53\u5de5\u7a0b\u7f3a\u53e3",
       "expected_artifact": "solutions/localization/pseudo-localization-contract.md",
       "acceptance": [
-        "官方版本资料核对",
-        "原创可执行契约与失败路径",
-        "模型/引擎/玩家验证边界明确"
+        "\u5b98\u65b9\u7248\u672c\u8d44\u6599\u6838\u5bf9",
+        "\u539f\u521b\u53ef\u6267\u884c\u5951\u7ea6\u4e0e\u5931\u8d25\u8def\u5f84",
+        "\u6a21\u578b/\u5f15\u64ce/\u73a9\u5bb6\u9a8c\u8bc1\u8fb9\u754c\u660e\u786e"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:22:59.146248Z",
-      "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
+      "next_action": "\u6309\u5f15\u64ce/\u683c\u5f0f\u5316\u5668\u771f\u5b9e\u96c6\u6210\u8bc1\u636e\u7ef4\u62a4\uff0c\u4e0d\u5916\u63a8\u6a21\u578b",
       "blockers": [],
       "completed_at": "2026-10-31T13:25:27.472113Z",
       "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
     },
     {
       "id": "TASK-2026-0013",
-      "question": "Steam动态云同步恢复如何避免旧内存覆盖已下载存档？",
+      "question": "Steam\u52a8\u6001\u4e91\u540c\u6b65\u6062\u590d\u5982\u4f55\u907f\u514d\u65e7\u5185\u5b58\u8986\u76d6\u5df2\u4e0b\u8f7d\u5b58\u6863\uff1f",
       "discipline": "PLATFORM",
       "status": "published",
       "priority": 97,
-      "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
+      "priority_rationale": "\u5b58\u6863\u6570\u636e\u5b89\u5168\u4e0e\u5df2\u53d1\u8868\u9ad8\u4ef7\u503c\u6a21\u578b\u7684\u5bf9\u6297\u6027\u8d28\u91cf\u6df1\u5316\uff0c\u975e\u6587\u7ae0\u6570\u91cf\u6269\u5f20",
       "expected_artifact": "solutions/platform/cloud-save-resume-boundary.md",
       "acceptance": [
-        "独立来源/模型边界核查",
-        "可复现测试和明确假设",
-        "保留原始输出与失败证据"
+        "\u72ec\u7acb\u6765\u6e90/\u6a21\u578b\u8fb9\u754c\u6838\u67e5",
+        "\u53ef\u590d\u73b0\u6d4b\u8bd5\u548c\u660e\u786e\u5047\u8bbe",
+        "\u4fdd\u7559\u539f\u59cb\u8f93\u51fa\u4e0e\u5931\u8d25\u8bc1\u636e"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:31:48.752103Z",
-      "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
+      "next_action": "\u6309\u771f\u5b9e\u96c6\u6210\u6216\u6a21\u578b\u53d8\u66f4\u91cd\u9a8c\uff1b\u4e0d\u5c06\u6709\u754c\u8c03\u5ea6\u6269\u5c55\u4e3a\u5e73\u53f0\u4fdd\u8bc1",
       "blockers": [],
       "completed_at": "2026-10-31T13:34:12.035660Z",
       "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
     },
     {
       "id": "TASK-2026-0014",
-      "question": "独立对固定步长与预测模型进行有种子的乱序/重复/积压状态测试并用故障变异检验断言强度",
+      "question": "\u72ec\u7acb\u5bf9\u56fa\u5b9a\u6b65\u957f\u4e0e\u9884\u6d4b\u6a21\u578b\u8fdb\u884c\u6709\u79cd\u5b50\u7684\u4e71\u5e8f/\u91cd\u590d/\u79ef\u538b\u72b6\u6001\u6d4b\u8bd5\u5e76\u7528\u6545\u969c\u53d8\u5f02\u68c0\u9a8c\u65ad\u8a00\u5f3a\u5ea6",
       "discipline": "QA",
       "status": "published",
       "priority": 97,
-      "priority_rationale": "存档数据安全与已发表高价值模型的对抗性质量深化，非文章数量扩张",
+      "priority_rationale": "\u5b58\u6863\u6570\u636e\u5b89\u5168\u4e0e\u5df2\u53d1\u8868\u9ad8\u4ef7\u503c\u6a21\u578b\u7684\u5bf9\u6297\u6027\u8d28\u91cf\u6df1\u5316\uff0c\u975e\u6587\u7ae0\u6570\u91cf\u6269\u5f20",
       "expected_artifact": "research/experiments/deep-model-qa/README.md",
       "acceptance": [
-        "独立来源/模型边界核查",
-        "可复现测试和明确假设",
-        "保留原始输出与失败证据"
+        "\u72ec\u7acb\u6765\u6e90/\u6a21\u578b\u8fb9\u754c\u6838\u67e5",
+        "\u53ef\u590d\u73b0\u6d4b\u8bd5\u548c\u660e\u786e\u5047\u8bbe",
+        "\u4fdd\u7559\u539f\u59cb\u8f93\u51fa\u4e0e\u5931\u8d25\u8bc1\u636e"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:31:48.752103Z",
-      "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
+      "next_action": "\u6309\u771f\u5b9e\u96c6\u6210\u6216\u6a21\u578b\u53d8\u66f4\u91cd\u9a8c\uff1b\u4e0d\u5c06\u6709\u754c\u8c03\u5ea6\u6269\u5c55\u4e3a\u5e73\u53f0\u4fdd\u8bc1",
       "blockers": [],
       "completed_at": "2026-10-31T13:34:12.035660Z",
       "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
     },
     {
       "id": "TASK-2026-0015",
-      "question": "以纯状态适配模型检验既有音乐契约的启动拒绝、取消、异步失效与成功提交去重",
+      "question": "\u4ee5\u7eaf\u72b6\u6001\u9002\u914d\u6a21\u578b\u68c0\u9a8c\u65e2\u6709\u97f3\u4e50\u5951\u7ea6\u7684\u542f\u52a8\u62d2\u7edd\u3001\u53d6\u6d88\u3001\u5f02\u6b65\u5931\u6548\u4e0e\u6210\u529f\u63d0\u4ea4\u53bb\u91cd",
       "discipline": "SFX",
       "status": "published",
       "priority": 96,
-      "priority_rationale": "现有高价值合同的失败路径深化，不新增泛化文章",
+      "priority_rationale": "\u73b0\u6709\u9ad8\u4ef7\u503c\u5408\u540c\u7684\u5931\u8d25\u8def\u5f84\u6df1\u5316\uff0c\u4e0d\u65b0\u589e\u6cdb\u5316\u6587\u7ae0",
       "expected_artifact": "research/experiments/audio-lifecycle/README.md",
       "acceptance": [
-        "实际调用日志而非集合掩盖重复",
-        "START_FAILED无STOPPED路径明确结束",
-        "跨generation/revision与取消失效回归",
-        "严格限定无中间件/音频执行"
+        "\u5b9e\u9645\u8c03\u7528\u65e5\u5fd7\u800c\u975e\u96c6\u5408\u63a9\u76d6\u91cd\u590d",
+        "START_FAILED\u65e0STOPPED\u8def\u5f84\u660e\u786e\u7ed3\u675f",
+        "\u8de8generation/revision\u4e0e\u53d6\u6d88\u5931\u6548\u56de\u5f52",
+        "\u4e25\u683c\u9650\u5b9a\u65e0\u4e2d\u95f4\u4ef6/\u97f3\u9891\u6267\u884c"
       ],
       "source_leads": [
         "https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html"
@@ -365,24 +365,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:44:47.843138Z",
-      "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
+      "next_action": "\u968f\u6a21\u578b\u6216\u5f15\u64ce\u7248\u672c\u53d8\u66f4\u91cd\u9a8c\uff1b\u672a\u6d4b\u8fb9\u754c\u4fdd\u6301\u660e\u786e",
       "blockers": [],
       "completed_at": "2026-10-31T13:46:58.412770Z",
       "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
     },
     {
       "id": "TASK-2026-0016",
-      "question": "实际Godot4.6.3中固定规则回调与主帧表现边界是否通过独立整数轨迹判据？",
+      "question": "\u5b9e\u9645Godot4.6.3\u4e2d\u56fa\u5b9a\u89c4\u5219\u56de\u8c03\u4e0e\u4e3b\u5e27\u8868\u73b0\u8fb9\u754c\u662f\u5426\u901a\u8fc7\u72ec\u7acb\u6574\u6570\u8f68\u8ff9\u5224\u636e\uff1f",
       "discipline": "PROG",
       "status": "published",
       "priority": 98,
-      "priority_rationale": "深化既有固定步文章真实引擎证据，不增加文章数量",
+      "priority_rationale": "\u6df1\u5316\u65e2\u6709\u56fa\u5b9a\u6b65\u6587\u7ae0\u771f\u5b9e\u5f15\u64ce\u8bc1\u636e\uff0c\u4e0d\u589e\u52a0\u6587\u7ae0\u6570\u91cf",
       "expected_artifact": "research/experiments/godot-fixed-step/README.md",
       "acceptance": [
-        "实际已安装引擎和版本记录",
-        "人工delta与实时上限分开",
-        "原始逐回调日志与独立判据",
-        "未测范围明确"
+        "\u5b9e\u9645\u5df2\u5b89\u88c5\u5f15\u64ce\u548c\u7248\u672c\u8bb0\u5f55",
+        "\u4eba\u5de5delta\u4e0e\u5b9e\u65f6\u4e0a\u9650\u5206\u5f00",
+        "\u539f\u59cb\u9010\u56de\u8c03\u65e5\u5fd7\u4e0e\u72ec\u7acb\u5224\u636e",
+        "\u672a\u6d4b\u8303\u56f4\u660e\u786e"
       ],
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/tutorials/scripting/idle_and_physics_processing.html"
@@ -391,24 +391,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:44:47.843138Z",
-      "next_action": "随模型或引擎版本变更重验；未测边界保持明确",
+      "next_action": "\u968f\u6a21\u578b\u6216\u5f15\u64ce\u7248\u672c\u53d8\u66f4\u91cd\u9a8c\uff1b\u672a\u6d4b\u8fb9\u754c\u4fdd\u6301\u660e\u786e",
       "blockers": [],
       "completed_at": "2026-10-31T13:46:58.412770Z",
       "commit_sha": "54ac14885833314527986edb8071759345e7fc50"
     },
     {
       "id": "TASK-2026-0017",
-      "question": "Godot暂停期间合成输入队列能否导致恢复后旧攻击，如何用显式epoch策略隔离？",
+      "question": "Godot\u6682\u505c\u671f\u95f4\u5408\u6210\u8f93\u5165\u961f\u5217\u80fd\u5426\u5bfc\u81f4\u6062\u590d\u540e\u65e7\u653b\u51fb\uff0c\u5982\u4f55\u7528\u663e\u5f0fepoch\u7b56\u7565\u9694\u79bb\uff1f",
       "discipline": "PROG",
       "status": "published",
       "priority": 96,
-      "priority_rationale": "既有固定回调契约的实际输入/暂停边界深化",
+      "priority_rationale": "\u65e2\u6709\u56fa\u5b9a\u56de\u8c03\u5951\u7ea6\u7684\u5b9e\u9645\u8f93\u5165/\u6682\u505c\u8fb9\u754c\u6df1\u5316",
       "expected_artifact": "research/experiments/godot-pause-input/README.md",
       "acceptance": [
-        "明确合成API而非设备输入",
-        "实际引擎反例及修正日志",
-        "阶段屏障而非偶然时序",
-        "独立审查和有限结论"
+        "\u660e\u786e\u5408\u6210API\u800c\u975e\u8bbe\u5907\u8f93\u5165",
+        "\u5b9e\u9645\u5f15\u64ce\u53cd\u4f8b\u53ca\u4fee\u6b63\u65e5\u5fd7",
+        "\u9636\u6bb5\u5c4f\u969c\u800c\u975e\u5076\u7136\u65f6\u5e8f",
+        "\u72ec\u7acb\u5ba1\u67e5\u548c\u6709\u9650\u7ed3\u8bba"
       ],
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/tutorials/scripting/pausing_games.html"
@@ -417,24 +417,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:53:02.484752Z",
-      "next_action": "保存有限证据与未测前提，随运行时或实现变更重验",
+      "next_action": "\u4fdd\u5b58\u6709\u9650\u8bc1\u636e\u4e0e\u672a\u6d4b\u524d\u63d0\uff0c\u968f\u8fd0\u884c\u65f6\u6216\u5b9e\u73b0\u53d8\u66f4\u91cd\u9a8c",
       "blockers": [],
       "completed_at": "2026-10-31T13:54:58.529931Z",
       "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08"
     },
     {
       "id": "TASK-2026-0018",
-      "question": "真实Linux路径替换是否仍允许预检查通过的旧存档覆盖新存档？",
+      "question": "\u771f\u5b9eLinux\u8def\u5f84\u66ff\u6362\u662f\u5426\u4ecd\u5141\u8bb8\u9884\u68c0\u67e5\u901a\u8fc7\u7684\u65e7\u5b58\u6863\u8986\u76d6\u65b0\u5b58\u6863\uff1f",
       "discipline": "PLATFORM",
       "status": "published",
       "priority": 96,
-      "priority_rationale": "将已发表存档模型限制落实为真实文件系统反例，不宣称Steam或持久性保证",
+      "priority_rationale": "\u5c06\u5df2\u53d1\u8868\u5b58\u6863\u6a21\u578b\u9650\u5236\u843d\u5b9e\u4e3a\u771f\u5b9e\u6587\u4ef6\u7cfb\u7edf\u53cd\u4f8b\uff0c\u4e0d\u5ba3\u79f0Steam\u6216\u6301\u4e45\u6027\u4fdd\u8bc1",
       "expected_artifact": "research/experiments/filesystem-save-publication/README.md",
       "acceptance": [
-        "确定性线程屏障而非sleep",
-        "实际文件内容与路径替换观测",
-        "明确系统调用前延迟不是已入内核I/O",
-        "协调者权限边界和未验证持久性"
+        "\u786e\u5b9a\u6027\u7ebf\u7a0b\u5c4f\u969c\u800c\u975esleep",
+        "\u5b9e\u9645\u6587\u4ef6\u5185\u5bb9\u4e0e\u8def\u5f84\u66ff\u6362\u89c2\u6d4b",
+        "\u660e\u786e\u7cfb\u7edf\u8c03\u7528\u524d\u5ef6\u8fdf\u4e0d\u662f\u5df2\u5165\u5185\u6838I/O",
+        "\u534f\u8c03\u8005\u6743\u9650\u8fb9\u754c\u548c\u672a\u9a8c\u8bc1\u6301\u4e45\u6027"
       ],
       "source_leads": [
         "https://docs.python.org/3/library/os.html#os.replace"
@@ -443,23 +443,23 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T13:53:02.484752Z",
-      "next_action": "保存有限证据与未测前提，随运行时或实现变更重验",
+      "next_action": "\u4fdd\u5b58\u6709\u9650\u8bc1\u636e\u4e0e\u672a\u6d4b\u524d\u63d0\uff0c\u968f\u8fd0\u884c\u65f6\u6216\u5b9e\u73b0\u53d8\u66f4\u91cd\u9a8c",
       "blockers": [],
       "completed_at": "2026-10-31T13:54:58.529931Z",
       "commit_sha": "f3188119f5de04753401877ffcb4c1213ec12a08"
     },
     {
       "id": "TASK-2026-0019",
-      "question": "真实Godot Control焦点API能否验证延迟恢复请求的模态作用域边界？",
+      "question": "\u771f\u5b9eGodot Control\u7126\u70b9API\u80fd\u5426\u9a8c\u8bc1\u5ef6\u8fdf\u6062\u590d\u8bf7\u6c42\u7684\u6a21\u6001\u4f5c\u7528\u57df\u8fb9\u754c\uff1f",
       "discipline": "UX",
       "status": "published",
       "priority": 92,
-      "priority_rationale": "先评估既有焦点策略的窄真实引擎证据增量，不冒充Unity或可见可访问性验证",
+      "priority_rationale": "\u5148\u8bc4\u4f30\u65e2\u6709\u7126\u70b9\u7b56\u7565\u7684\u7a84\u771f\u5b9e\u5f15\u64ce\u8bc1\u636e\u589e\u91cf\uff0c\u4e0d\u5192\u5145Unity\u6216\u53ef\u89c1\u53ef\u8bbf\u95ee\u6027\u9a8c\u8bc1",
       "expected_artifact": "research/experiments/godot-focus-boundary/README.md",
       "acceptance": [
-        "官方API核查后确定可证伪命题",
-        "最终焦点观测而非请求即成功",
-        "明确无头可见性和Unity未测"
+        "\u5b98\u65b9API\u6838\u67e5\u540e\u786e\u5b9a\u53ef\u8bc1\u4f2a\u547d\u9898",
+        "\u6700\u7ec8\u7126\u70b9\u89c2\u6d4b\u800c\u975e\u8bf7\u6c42\u5373\u6210\u529f",
+        "\u660e\u786e\u65e0\u5934\u53ef\u89c1\u6027\u548cUnity\u672a\u6d4b"
       ],
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/classes/class_control.html"
@@ -468,23 +468,23 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:00:33.013176Z",
-      "next_action": "保持身份单一守卫边界，其他模态/视觉前提未测",
+      "next_action": "\u4fdd\u6301\u8eab\u4efd\u5355\u4e00\u5b88\u536b\u8fb9\u754c\uff0c\u5176\u4ed6\u6a21\u6001/\u89c6\u89c9\u524d\u63d0\u672a\u6d4b",
       "blockers": [],
       "completed_at": "2026-10-31T14:02:10.919486Z",
       "commit_sha": "b51ca500c376f40a26ba64953e53cc0dedb41e66"
     },
     {
       "id": "TASK-2026-0020",
-      "question": "锁定ink版本后核实故事状态与外部奖励副作用的真实API边界，判断独立叙事专题价值",
+      "question": "\u9501\u5b9aink\u7248\u672c\u540e\u6838\u5b9e\u6545\u4e8b\u72b6\u6001\u4e0e\u5916\u90e8\u5956\u52b1\u526f\u4f5c\u7528\u7684\u771f\u5b9eAPI\u8fb9\u754c\uff0c\u5224\u65ad\u72ec\u7acb\u53d9\u4e8b\u4e13\u9898\u4ef7\u503c",
       "discipline": "NARR",
       "status": "published",
       "priority": 85,
-      "priority_rationale": "先补原始版本证据而非扩张通用存档文章",
+      "priority_rationale": "\u5148\u8865\u539f\u59cb\u7248\u672c\u8bc1\u636e\u800c\u975e\u6269\u5f20\u901a\u7528\u5b58\u6863\u6587\u7ae0",
       "expected_artifact": "research/source-notes/ink-v1.2.1-host-boundary.md",
       "acceptance": [
-        "确认真实标签完整commit及文件blob",
-        "区分默认lookahead行为与事务保证",
-        "评估无安装运行时验证可行性，未执行不得宣称"
+        "\u786e\u8ba4\u771f\u5b9e\u6807\u7b7e\u5b8c\u6574commit\u53ca\u6587\u4ef6blob",
+        "\u533a\u5206\u9ed8\u8ba4lookahead\u884c\u4e3a\u4e0e\u4e8b\u52a1\u4fdd\u8bc1",
+        "\u8bc4\u4f30\u65e0\u5b89\u88c5\u8fd0\u884c\u65f6\u9a8c\u8bc1\u53ef\u884c\u6027\uff0c\u672a\u6267\u884c\u4e0d\u5f97\u5ba3\u79f0"
       ],
       "source_leads": [
         "https://github.com/inkle/ink"
@@ -493,24 +493,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:04:29.220255Z",
-      "next_action": "来源审计已发布；实际ink回调/恢复验证仍需合适运行环境，不以模型替代",
+      "next_action": "\u6765\u6e90\u5ba1\u8ba1\u5df2\u53d1\u5e03\uff1b\u5b9e\u9645ink\u56de\u8c03/\u6062\u590d\u9a8c\u8bc1\u4ecd\u9700\u5408\u9002\u8fd0\u884c\u73af\u5883\uff0c\u4e0d\u4ee5\u6a21\u578b\u66ff\u4ee3",
       "blockers": [],
       "completed_at": "2026-10-31T14:05:24.852332Z",
       "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd"
     },
     {
       "id": "TASK-2026-0021",
-      "question": "Godot干净检出时资源导入配置/UID与生成缓存的边界如何影响引用恢复？",
+      "question": "Godot\u5e72\u51c0\u68c0\u51fa\u65f6\u8d44\u6e90\u5bfc\u5165\u914d\u7f6e/UID\u4e0e\u751f\u6210\u7f13\u5b58\u7684\u8fb9\u754c\u5982\u4f55\u5f71\u54cd\u5f15\u7528\u6062\u590d\uff1f",
       "discipline": "ENGINE",
       "status": "published",
       "priority": 90,
-      "priority_rationale": "构建与资产管线具体缺口，优先原始资料和实际已有导入器验证",
+      "priority_rationale": "\u6784\u5efa\u4e0e\u8d44\u4ea7\u7ba1\u7ebf\u5177\u4f53\u7f3a\u53e3\uff0c\u4f18\u5148\u539f\u59cb\u8d44\u6599\u548c\u5b9e\u9645\u5df2\u6709\u5bfc\u5165\u5668\u9a8c\u8bc1",
       "expected_artifact": "solutions/engine/asset-import-intent-contract.md",
       "acceptance": [
-        "核查4.6来源和精确metadata规则",
-        "两份隔离原创资源工程形成可证伪交错",
-        "不把缓存二进制相同当通用可复现构建",
-        "先范围评估再执行"
+        "\u6838\u67e54.6\u6765\u6e90\u548c\u7cbe\u786emetadata\u89c4\u5219",
+        "\u4e24\u4efd\u9694\u79bb\u539f\u521b\u8d44\u6e90\u5de5\u7a0b\u5f62\u6210\u53ef\u8bc1\u4f2a\u4ea4\u9519",
+        "\u4e0d\u628a\u7f13\u5b58\u4e8c\u8fdb\u5236\u76f8\u540c\u5f53\u901a\u7528\u53ef\u590d\u73b0\u6784\u5efa",
+        "\u5148\u8303\u56f4\u8bc4\u4f30\u518d\u6267\u884c"
       ],
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/tutorials/assets_pipeline/import_process.html"
@@ -519,24 +519,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:12:40.611861Z",
-      "next_action": "保留实际导入语义检查，其他资产类型和工具链前提未测",
+      "next_action": "\u4fdd\u7559\u5b9e\u9645\u5bfc\u5165\u8bed\u4e49\u68c0\u67e5\uff0c\u5176\u4ed6\u8d44\u4ea7\u7c7b\u578b\u548c\u5de5\u5177\u94fe\u524d\u63d0\u672a\u6d4b",
       "blockers": [],
       "completed_at": "2026-10-31T14:14:56.217288Z",
       "commit_sha": "db4a64b038ae9e3db46cd71122689a742a84103d"
     },
     {
       "id": "TASK-2026-0022",
-      "question": "非英语一手工具/生产资料能否补充资产导入策略可用性与交接成本的具体失败边界？",
+      "question": "\u975e\u82f1\u8bed\u4e00\u624b\u5de5\u5177/\u751f\u4ea7\u8d44\u6599\u80fd\u5426\u8865\u5145\u8d44\u4ea7\u5bfc\u5165\u7b56\u7565\u53ef\u7528\u6027\u4e0e\u4ea4\u63a5\u6210\u672c\u7684\u5177\u4f53\u5931\u8d25\u8fb9\u754c\uff1f",
       "discipline": "TA",
       "status": "published",
       "priority": 84,
-      "priority_rationale": "全球来源深化，不用语言翻译冒充独立生产案例",
+      "priority_rationale": "\u5168\u7403\u6765\u6e90\u6df1\u5316\uff0c\u4e0d\u7528\u8bed\u8a00\u7ffb\u8bd1\u5192\u5145\u72ec\u7acb\u751f\u4ea7\u6848\u4f8b",
       "expected_artifact": "research/source-notes/asset-import-policy-availability.md",
       "acceptance": [
-        "官方或实际作者来源",
-        "记录语言/日期及可访问范围",
-        "历史API不冒充当前建议",
-        "翻译不计独立证据"
+        "\u5b98\u65b9\u6216\u5b9e\u9645\u4f5c\u8005\u6765\u6e90",
+        "\u8bb0\u5f55\u8bed\u8a00/\u65e5\u671f\u53ca\u53ef\u8bbf\u95ee\u8303\u56f4",
+        "\u5386\u53f2API\u4e0d\u5192\u5145\u5f53\u524d\u5efa\u8bae",
+        "\u7ffb\u8bd1\u4e0d\u8ba1\u72ec\u7acb\u8bc1\u636e"
       ],
       "source_leads": [
         "https://docs.unity3d.com/jp/460/ScriptReference/AssetPostprocessor.html"
@@ -545,24 +545,24 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:17:19.904743Z",
-      "next_action": "有限历史来源审计已归档；现代Unity运行与独立工作室案例仍未获证据",
+      "next_action": "\u6709\u9650\u5386\u53f2\u6765\u6e90\u5ba1\u8ba1\u5df2\u5f52\u6863\uff1b\u73b0\u4ee3Unity\u8fd0\u884c\u4e0e\u72ec\u7acb\u5de5\u4f5c\u5ba4\u6848\u4f8b\u4ecd\u672a\u83b7\u8bc1\u636e",
       "blockers": [],
       "completed_at": "2026-10-31T14:19:44.720440Z",
       "commit_sha": "b5e84573ccdcc1655496f39844a70b087f79b3a1"
     },
     {
       "id": "TASK-2026-0023",
-      "question": "导航图未同步与目标不可达如何区分，非空部分路径是否会误报成功？",
+      "question": "\u5bfc\u822a\u56fe\u672a\u540c\u6b65\u4e0e\u76ee\u6807\u4e0d\u53ef\u8fbe\u5982\u4f55\u533a\u5206\uff0c\u975e\u7a7a\u90e8\u5206\u8def\u5f84\u662f\u5426\u4f1a\u8bef\u62a5\u6210\u529f\uff1f",
       "discipline": "AI",
       "status": "published",
       "priority": 94,
-      "priority_rationale": "AI初始化与负结果缓存的具体运行边界，利用现有CPU导航能力验证",
+      "priority_rationale": "AI\u521d\u59cb\u5316\u4e0e\u8d1f\u7ed3\u679c\u7f13\u5b58\u7684\u5177\u4f53\u8fd0\u884c\u8fb9\u754c\uff0c\u5229\u7528\u73b0\u6709CPU\u5bfc\u822a\u80fd\u529b\u9a8c\u8bc1",
       "expected_artifact": "solutions/ai/navigation-readiness-and-partial-path.md",
       "acceptance": [
-        "实际图同步前后查询与诊断",
-        "可达及断开目标末点判据，不只检查路径长度",
-        "显式单写者/地图信号/迭代号边界",
-        "不依赖弃用force_update或固定等一帧"
+        "\u5b9e\u9645\u56fe\u540c\u6b65\u524d\u540e\u67e5\u8be2\u4e0e\u8bca\u65ad",
+        "\u53ef\u8fbe\u53ca\u65ad\u5f00\u76ee\u6807\u672b\u70b9\u5224\u636e\uff0c\u4e0d\u53ea\u68c0\u67e5\u8def\u5f84\u957f\u5ea6",
+        "\u663e\u5f0f\u5355\u5199\u8005/\u5730\u56fe\u4fe1\u53f7/\u8fed\u4ee3\u53f7\u8fb9\u754c",
+        "\u4e0d\u4f9d\u8d56\u5f03\u7528force_update\u6216\u56fa\u5b9a\u7b49\u4e00\u5e27"
       ],
       "source_leads": [
         "https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html"
@@ -571,50 +571,50 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:27:41.755540Z",
-      "next_action": "同步与部分路径证据已归档，持续更新/多写者前提仍需另验",
+      "next_action": "\u540c\u6b65\u4e0e\u90e8\u5206\u8def\u5f84\u8bc1\u636e\u5df2\u5f52\u6863\uff0c\u6301\u7eed\u66f4\u65b0/\u591a\u5199\u8005\u524d\u63d0\u4ecd\u9700\u53e6\u9a8c",
       "blockers": [],
       "completed_at": "2026-10-31T14:30:40.037539Z",
       "commit_sha": "d669ee6e65d5ed35696e8854d18072fc48a68bb5"
     },
     {
       "id": "TASK-2026-0024",
-      "question": "如何自动发现当前引擎证据源码哈希、原始日志和解析记录的脱节，而不误验历史失败快照？",
+      "question": "\u5982\u4f55\u81ea\u52a8\u53d1\u73b0\u5f53\u524d\u5f15\u64ce\u8bc1\u636e\u6e90\u7801\u54c8\u5e0c\u3001\u539f\u59cb\u65e5\u5fd7\u548c\u89e3\u6790\u8bb0\u5f55\u7684\u8131\u8282\uff0c\u800c\u4e0d\u8bef\u9a8c\u5386\u53f2\u5931\u8d25\u5feb\u7167\uff1f",
       "discipline": "QA",
       "status": "published",
       "priority": 96,
-      "priority_rationale": "已有真实证据数量增加，优先完整性和长期可维护性而非新文章数量",
+      "priority_rationale": "\u5df2\u6709\u771f\u5b9e\u8bc1\u636e\u6570\u91cf\u589e\u52a0\uff0c\u4f18\u5148\u5b8c\u6574\u6027\u548c\u957f\u671f\u53ef\u7ef4\u62a4\u6027\u800c\u975e\u65b0\u6587\u7ae0\u6570\u91cf",
       "expected_artifact": "scripts/evidence/verify.py",
       "acceptance": [
-        "只读，不启动引擎或执行仓库代码",
-        "五个当前Godot夹具显式清单，历史记录排除明确",
-        "源码/作者复核清单/原始JSON一致性检查",
-        "损坏/缺文件/越界路径/坏JSON负向单元测试及独立审查",
-        "完整性不冒充执行真实性或语义正确性"
+        "\u53ea\u8bfb\uff0c\u4e0d\u542f\u52a8\u5f15\u64ce\u6216\u6267\u884c\u4ed3\u5e93\u4ee3\u7801",
+        "\u4e94\u4e2a\u5f53\u524dGodot\u5939\u5177\u663e\u5f0f\u6e05\u5355\uff0c\u5386\u53f2\u8bb0\u5f55\u6392\u9664\u660e\u786e",
+        "\u6e90\u7801/\u4f5c\u8005\u590d\u6838\u6e05\u5355/\u539f\u59cbJSON\u4e00\u81f4\u6027\u68c0\u67e5",
+        "\u635f\u574f/\u7f3a\u6587\u4ef6/\u8d8a\u754c\u8def\u5f84/\u574fJSON\u8d1f\u5411\u5355\u5143\u6d4b\u8bd5\u53ca\u72ec\u7acb\u5ba1\u67e5",
+        "\u5b8c\u6574\u6027\u4e0d\u5192\u5145\u6267\u884c\u771f\u5b9e\u6027\u6216\u8bed\u4e49\u6b63\u786e\u6027"
       ],
       "source_leads": [],
       "owner": null,
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T14:39:29.406486Z",
-      "next_action": "新增当前夹具时审查显式注册表；完整性检查不代替语义和执行验收",
+      "next_action": "\u65b0\u589e\u5f53\u524d\u5939\u5177\u65f6\u5ba1\u67e5\u663e\u5f0f\u6ce8\u518c\u8868\uff1b\u5b8c\u6574\u6027\u68c0\u67e5\u4e0d\u4ee3\u66ff\u8bed\u4e49\u548c\u6267\u884c\u9a8c\u6536",
       "blockers": [],
       "completed_at": "2026-10-31T14:44:23.826421Z",
       "commit_sha": "7ff021d594a7f2d664d3755630e51ce1e8c5f6d0"
     },
     {
       "id": "TASK-2026-0025",
-      "question": "对白字幕齐全为何仍可能遗漏关键非语音声音，如何制定跨岗位信息等价验收？",
+      "question": "\u5bf9\u767d\u5b57\u5e55\u9f50\u5168\u4e3a\u4f55\u4ecd\u53ef\u80fd\u9057\u6f0f\u5173\u952e\u975e\u8bed\u97f3\u58f0\u97f3\uff0c\u5982\u4f55\u5236\u5b9a\u8de8\u5c97\u4f4d\u4fe1\u606f\u7b49\u4ef7\u9a8c\u6536\uff1f",
       "discipline": "A11Y",
       "status": "published",
       "priority": 95,
-      "priority_rationale": "14篇覆盖审计后的具体内容与体验缺口，不继续堆同类引擎夹具",
+      "priority_rationale": "14\u7bc7\u8986\u76d6\u5ba1\u8ba1\u540e\u7684\u5177\u4f53\u5185\u5bb9\u4e0e\u4f53\u9a8c\u7f3a\u53e3\uff0c\u4e0d\u7ee7\u7eed\u5806\u540c\u7c7b\u5f15\u64ce\u5939\u5177",
       "expected_artifact": "solutions/accessibility/critical-sound-information-contract.md",
       "acceptance": [
-        "当前官方指南与原始开发者来源分层",
-        "原创且明确假设的遭遇/信息覆盖反例",
-        "时间/方向/未知身份/并发负担与可配置通道合同",
-        "不虚构玩家研究、效益或平台认证",
-        "工程推导与指南原文区分"
+        "\u5f53\u524d\u5b98\u65b9\u6307\u5357\u4e0e\u539f\u59cb\u5f00\u53d1\u8005\u6765\u6e90\u5206\u5c42",
+        "\u539f\u521b\u4e14\u660e\u786e\u5047\u8bbe\u7684\u906d\u9047/\u4fe1\u606f\u8986\u76d6\u53cd\u4f8b",
+        "\u65f6\u95f4/\u65b9\u5411/\u672a\u77e5\u8eab\u4efd/\u5e76\u53d1\u8d1f\u62c5\u4e0e\u53ef\u914d\u7f6e\u901a\u9053\u5408\u540c",
+        "\u4e0d\u865a\u6784\u73a9\u5bb6\u7814\u7a76\u3001\u6548\u76ca\u6216\u5e73\u53f0\u8ba4\u8bc1",
+        "\u5de5\u7a0b\u63a8\u5bfc\u4e0e\u6307\u5357\u539f\u6587\u533a\u5206"
       ],
       "source_leads": [
         "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/104",
@@ -1639,7 +1639,7 @@
     },
     {
       "id": "TASK-2026-0066",
-      "question": "在线服务工程师如何交接平台服务链压测中的真实组件、替身与遗漏验收责任？",
+      "question": "\u5728\u7ebf\u670d\u52a1\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u63a5\u5e73\u53f0\u670d\u52a1\u94fe\u538b\u6d4b\u4e2d\u7684\u771f\u5b9e\u7ec4\u4ef6\u3001\u66ff\u8eab\u4e0e\u9057\u6f0f\u9a8c\u6536\u8d23\u4efb\uff1f",
       "discipline": "NET",
       "status": "published",
       "priority": 90,
@@ -1700,7 +1700,7 @@
       "status": "published",
       "priority": 94,
       "priority_rationale": "Existing LOC article explicitly limits ICU evidence to English1/2 and lacks target-locale category coverage; installed formatter permits a bounded source-gated supplement",
-      "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs×6integer native requests if ABI/protocol gate passes",
+      "expected_artifact": "Supplement existing LOC article with verified English/Arabic category source table and at most3configs\u00d76integer native requests if ABI/protocol gate passes",
       "artifact_paths": [
         "research/source-notes/icu-locale-plural-coverage.md",
         "research/experiments/icu-plural-locale/README.md"
@@ -2980,7 +2980,7 @@
     },
     {
       "id": "TASK-2026-0115",
-      "question": "How does previous-mode coyote input priority change a level designer’s ability-sequence contract?",
+      "question": "How does previous-mode coyote input priority change a level designer\u2019s ability-sequence contract?",
       "discipline": "DESIGN",
       "status": "published",
       "priority": 91,
@@ -4025,42 +4025,42 @@
         "RESEARCH_STANDARDS.md",
         "README.md",
         "GameLibrary/README.md",
-        "管理档案/图书目录.json",
-        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
-        "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
-        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
-        "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
-        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-        "管理档案/复合旧文待整理.json",
-        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+        "\u7ba1\u7406\u6863\u6848/\u56fe\u4e66\u76ee\u5f55.json",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u8d44\u4ea7\u5bfc\u5165/\u6362\u4e00\u53f0\u7535\u8111\u540e\u5982\u4f55\u4fdd\u6301\u8d44\u4ea7\u5bfc\u5165\u7ed3\u679c\u4e00\u81f4.md",
+        "GameLibrary/\u7f8e\u672f\u8bbe\u8ba1/\u73af\u5883\u8bbe\u8ba1/\u6982\u5ff5\u8bbe\u8ba1/\u73af\u5883\u6982\u5ff5\u56fe\u600e\u6837\u6307\u5bfc\u540e\u7eed\u5236\u4f5c.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u7f8e\u672f\u7ba1\u7ebf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6280\u672f\u7f8e\u672f\u5982\u4f55\u8fde\u63a5\u7f8e\u672f\u5236\u4f5c\u4e0e\u5f15\u64ce.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u8ba1\u7b97BC\u538b\u7f29\u7eb9\u7406\u548cMip\u94fe\u7684\u6570\u636e\u91cf.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u6a21\u578b\u5bfc\u5165/\u8bfb\u53d6glTF\u4ea4\u9519\u9876\u70b9\u6570\u636e\u65f6\u7684\u504f\u79fb\u4e0e\u6b65\u957f.md",
+        "\u7ba1\u7406\u6863\u6848/\u590d\u5408\u65e7\u6587\u5f85\u6574\u7406.json",
+        "GameLibrary/\u89d2\u8272\u52a8\u753b/\u89d2\u8272\u79fb\u52a8/\u811a\u90e8\u63a5\u89e6/\u6392\u67e5\u539f\u5730\u8f6c\u8eab\u65f6\u7684\u811a\u6ed1.md",
+        "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u65f6\u95f4\u4e0e\u6a21\u62df/\u7528\u56fa\u5b9a\u65f6\u95f4\u6b65\u7ec4\u7ec7\u6218\u6597\u6a21\u62df.md",
         "DISCOVERY.md",
         "CATALOG.md",
         "scripts/navigation/build_routes.py",
-        "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
-        "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
-        "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
-        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
-        "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
-        "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
-        "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
-        "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
-        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
-        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
-        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
-        "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
-        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
-        "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
-        "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
-        "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
-        "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
-        "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
-        "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
-        "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
-        "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
-        "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
-        "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
-        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md"
+        "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u754c\u9762\u7f8e\u672f/\u72b6\u6001\u8868\u8fbe/\u7528\u56fe\u5f62\u8868\u73b0\u6309\u94ae\u548c\u754c\u9762\u7684\u72b6\u6001.md",
+        "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u73a9\u5bb6\u6d4b\u8bd5/\u5173\u5361\u5f15\u5bfc/\u4e3b\u6301\u4eba\u63d0\u793a\u4f1a\u600e\u6837\u5f71\u54cd\u5173\u5361\u6d4b\u8bd5\u7ed3\u8bba.md",
+        "GameLibrary/\u6570\u636e\u5206\u6790/\u6307\u6807\u8bbe\u8ba1/\u73a9\u5bb6\u884c\u4e3a/\u5982\u4f55\u8ba1\u7b97\u5173\u5361\u5b8c\u6210\u7387.md",
+        "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u7cfb\u7edf\u8bbe\u8ba1/\u6210\u957f\u4e0e\u7ecf\u6d4e/\u7528\u6536\u652f\u8bb0\u5f55\u68c0\u67e5\u5355\u673a\u6e38\u620f\u7684\u6210\u957f\u7ecf\u6d4e.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u9884\u4e58\u900f\u660e\u5ea6\u4e0e\u666e\u901a\u900f\u660e\u5ea6\u7684\u6df7\u7528\u95ee\u9898.md",
+        "GameLibrary/\u58f0\u97f3\u4e0e\u97f3\u4e50/\u97f3\u9891\u5236\u4f5c/\u5faa\u73af\u7d20\u6750/\u5982\u4f55\u6807\u8bb0\u548c\u68c0\u67e5PCM\u97f3\u4e50\u5faa\u73af\u533a\u95f4.md",
+        "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u4ea4\u4e92\u8bbe\u8ba1/\u952e\u76d8\u4e0e\u624b\u67c4\u5bfc\u822a/\u5173\u95ed\u5f39\u7a97\u540e\u5982\u4f55\u6062\u590d\u64cd\u4f5c\u7126\u70b9.md",
+        "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u65e0\u969c\u788d\u8bbe\u8ba1/\u58f0\u97f3\u4fe1\u606f/\u600e\u6837\u8ba9\u5173\u952e\u58f0\u97f3\u4fe1\u606f\u4e0d\u53ea\u4f9d\u8d56\u542c\u89c9.md",
+        "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u754c\u9762\u9a8c\u8bc1/\u7528\u4f2a\u672c\u5730\u5316\u53d1\u73b0\u5e03\u5c40\u4e0e\u5360\u4f4d\u7b26\u95ee\u9898.md",
+        "GameLibrary/\u58f0\u97f3\u4e0e\u97f3\u4e50/\u4ea4\u4e92\u97f3\u4e50/\u97f3\u4e50\u5207\u6362/\u73a9\u6cd5\u53d8\u5316\u600e\u6837\u89e6\u53d1\u53ef\u542c\u89c1\u7684\u97f3\u4e50\u5207\u6362.md",
+        "GameLibrary/\u6e38\u620f\u4eba\u5de5\u667a\u80fd/\u79fb\u52a8\u5bfc\u822a/\u8def\u5f84\u67e5\u8be2/\u5982\u4f55\u5224\u65ad\u5bfc\u822a\u8def\u5f84\u662f\u5426\u771f\u6b63\u53ef\u7528.md",
+        "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u73a9\u6cd5\u7a0b\u5e8f\u5458\u5982\u4f55\u5b9e\u73b0\u548c\u9a8c\u8bc1\u8bbe\u8ba1\u89c4\u5219.md",
+        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u6784\u5efa\u53d1\u5e03/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6784\u5efa\u5de5\u7a0b\u5e08\u5982\u4f55\u4ea4\u4ed8\u53ef\u7528\u7684\u6e38\u620f\u7248\u672c.md",
+        "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u8d28\u91cf\u4fdd\u8bc1/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6e38\u620f\u6d4b\u8bd5\u5982\u4f55\u590d\u73b0\u7f3a\u9677\u548c\u8bc4\u4f30\u7248\u672c\u98ce\u9669.md",
+        "GameLibrary/\u89d2\u8272\u52a8\u753b/\u52a8\u753b\u5236\u4f5c/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6e38\u620f\u52a8\u753b\u5e08\u7684\u5de5\u4f5c\u4e0e\u534f\u4f5c.md",
+        "GameLibrary/\u89c6\u89c9\u7279\u6548/\u7279\u6548\u5236\u4f5c/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u5b9e\u65f6\u7279\u6548\u5982\u4f55\u517c\u987e\u8868\u73b0\u4e0e\u73a9\u6cd5\u4fe1\u606f.md",
+        "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u573a\u666f\u5149\u7167/\u5171\u4eab\u706f\u5177\u5982\u4f55\u7ba1\u7406\u8d44\u4ea7\u4e0e\u573a\u666f\u5b9e\u4f8b\u7684\u4fee\u6539.md",
+        "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u5185\u5bb9\u534f\u4f5c/\u539f\u6587\u672a\u53d8\u65f6\u54ea\u4e9b\u8bed\u5883\u53d8\u5316\u9700\u8981\u91cd\u65b0\u7ffb\u8bd1.md",
+        "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u6218\u6597\u8bbe\u8ba1/\u64cd\u4f5c\u54cd\u5e94/Warlander\u5982\u4f55\u533a\u5206\u62db\u5f0f\u53d6\u6d88\u4e0e\u8f93\u5165\u7f13\u5b58.md",
+        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u8fd0\u884c\u65f6\u7cfb\u7edf/\u7f13\u5b58\u4e0e\u5b58\u6863/Factorio\u7f13\u5b58\u5931\u6548\u4e0e\u8bfb\u6863\u540e\u7684\u91cd\u7b97.md",
+        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u4e16\u754c\u52a0\u8f7d/\u8d44\u6e90\u6d41\u9001/Horizon\u5982\u4f55\u7ec4\u7ec7\u8d44\u6e90\u8bfb\u53d6\u4e0e\u4f9d\u8d56\u521d\u59cb\u5316.md",
+        "GameLibrary/\u6e38\u620f\u4eba\u5de5\u667a\u80fd/\u4f53\u9a8c\u8c03\u8282/\u6218\u6597\u8282\u594f/Left4Dead\u5bfc\u6f14\u7cfb\u7edf\u5982\u4f55\u8c03\u8282\u6218\u6597\u8282\u594f.md",
+        "GameLibrary/\u56fe\u5f62\u6e32\u67d3/\u7740\u8272\u5668\u5f00\u53d1/\u6570\u636e\u4f20\u9012/CPU\u4e0e\u7740\u8272\u5668\u4e4b\u95f4\u7684\u77e9\u9635\u5e03\u5c40\u548c\u4e58\u6cd5\u7ea6\u5b9a.md",
+        "GameLibrary/\u7f51\u7edc\u4e0e\u5728\u7ebf\u670d\u52a1/\u5b9e\u65f6\u540c\u6b65/\u79fb\u52a8\u9884\u6d4b/\u5ba2\u6237\u7aef\u79fb\u52a8\u9884\u6d4b\u4e0e\u670d\u52a1\u5668\u7ea0\u6b63.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4073,8 +4073,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:44:15.372343Z",
-      "next_action": "Verify matrix and prediction reader routes; resolve bounded gameplay scope gaps; continue existing case rewrites without new topics",
+      "last_progress_at": "2026-11-01T12:48:53.483470Z",
+      "next_action": "Integrate accepted Killzone and Valve dialogue case rewrites; review bounded glTF and music/pseudolocalization merges; retain limited support scopes without new-topic expansion",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4109,7 +4109,9 @@
         "fourteenth_reader_batch_published_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
         "fourteenth_batch_readback_verified": true,
         "fifteenth_reader_batch_published_sha": "e3310a798b6a26f7b021086771cfe58c9586d6e7",
-        "fifteenth_batch_readback_verified": true
+        "fifteenth_batch_readback_verified": true,
+        "sixteenth_reader_batch_published_sha": "89add0e4e68cc0a05116a01bdbf6e86a97a8ac1b",
+        "sixteenth_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }

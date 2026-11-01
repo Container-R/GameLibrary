@@ -5,29 +5,29 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T12:44:15.372343Z",
-  "ended_at": "2026-11-01T12:47:03.147023Z",
-  "outcome": "Matrix and prediction reader bodies, bounded gameplay corrections and actual navigation accepted; publication pending",
+  "ended_at": "2026-11-01T12:48:53.483470Z",
+  "outcome": "Matrix and client prediction reader bodies plus finite gameplay corrections published and read back; matrix original support scope remains partial",
   "baseline_head": "682ed780507c8ab477e8189436ce21f9c9a81bec",
   "books": [
-    "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
-    "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
-    "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md"
+    "GameLibrary/\u56fe\u5f62\u6e32\u67d3/\u7740\u8272\u5668\u5f00\u53d1/\u6570\u636e\u4f20\u9012/CPU\u4e0e\u7740\u8272\u5668\u4e4b\u95f4\u7684\u77e9\u9635\u5e03\u5c40\u548c\u4e58\u6cd5\u7ea6\u5b9a.md",
+    "GameLibrary/\u7f51\u7edc\u4e0e\u5728\u7ebf\u670d\u52a1/\u5b9e\u65f6\u540c\u6b65/\u79fb\u52a8\u9884\u6d4b/\u5ba2\u6237\u7aef\u79fb\u52a8\u9884\u6d4b\u4e0e\u670d\u52a1\u5668\u7ea0\u6b63.md",
+    "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u73a9\u6cd5\u7a0b\u5e8f\u5458\u5982\u4f55\u5b9e\u73b0\u548c\u9a8c\u8bc1\u8bbe\u8ba1\u89c4\u5219.md"
   ],
   "book_sha256": {
-    "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md": "d9a70cd1ac74c4ae8232dab9dad00d974941e0f062a89a9961bf4df12a66441e",
-    "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md": "e03324b19032abbbbc0f9caab7c07c25a47d21db22f3b05270a1eaea3cfc0687",
-    "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md": "efa73a4a15380354bc4655bc82f43a7f0c98bbef42cc1fc7fa6dbf2491680c96"
+    "GameLibrary/\u56fe\u5f62\u6e32\u67d3/\u7740\u8272\u5668\u5f00\u53d1/\u6570\u636e\u4f20\u9012/CPU\u4e0e\u7740\u8272\u5668\u4e4b\u95f4\u7684\u77e9\u9635\u5e03\u5c40\u548c\u4e58\u6cd5\u7ea6\u5b9a.md": "d9a70cd1ac74c4ae8232dab9dad00d974941e0f062a89a9961bf4df12a66441e",
+    "GameLibrary/\u7f51\u7edc\u4e0e\u5728\u7ebf\u670d\u52a1/\u5b9e\u65f6\u540c\u6b65/\u79fb\u52a8\u9884\u6d4b/\u5ba2\u6237\u7aef\u79fb\u52a8\u9884\u6d4b\u4e0e\u670d\u52a1\u5668\u7ea0\u6b63.md": "e03324b19032abbbbc0f9caab7c07c25a47d21db22f3b05270a1eaea3cfc0687",
+    "GameLibrary/\u73a9\u6cd5\u7a0b\u5e8f/\u73a9\u6cd5\u7cfb\u7edf/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u73a9\u6cd5\u7a0b\u5e8f\u5458\u5982\u4f55\u5b9e\u73b0\u548c\u9a8c\u8bc1\u8bbe\u8ba1\u89c4\u5219.md": "efa73a4a15380354bc4655bc82f43a7f0c98bbef42cc1fc7fa6dbf2491680c96"
   },
   "rewritten_reader_books": 31,
   "remaining_legacy_entries": 24,
   "runtime_experiments": 0,
   "human_usability_test": false,
   "independent_reviews": [
-    "管理档案/审查/矩阵布局-独立审读.md",
-    "管理档案/审查/客户端预测-独立审读.md",
-    "管理档案/审查/玩法程序-有限补充审读.md"
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u77e9\u9635\u5e03\u5c40-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5ba2\u6237\u7aef\u9884\u6d4b-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u73a9\u6cd5\u7a0b\u5e8f-\u6709\u9650\u8865\u5145\u5ba1\u8bfb.md"
   ],
-  "next_action": "Verify matrix and prediction reader routes; resolve bounded gameplay scope gaps; continue existing case rewrites without new topics",
+  "next_action": "Integrate accepted Killzone and Valve dialogue case rewrites; review bounded glTF and music/pseudolocalization merges; retain limited support scopes without new-topic expansion",
   "scope_dispositions": {
     "accounted_for_originals": 20,
     "matrix_support_scope": "limited_review_pending",
@@ -46,11 +46,13 @@
     "Legacy bodies and evidence unchanged"
   ],
   "validation": {
+    "selected_blob_hashes_verified": 17,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1087,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "artifact_paths_checked": 244,
-    "inventory_entries_checked": 55,
-    "runtime_experiments": 0
+    "remote_books_read_back": true
   },
-  "navigation_review": "管理档案/审查/矩阵与预测-导航验收.md"
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u77e9\u9635\u4e0e\u9884\u6d4b-\u5bfc\u822a\u9a8c\u6536.md",
+  "commit_sha": "89add0e4e68cc0a05116a01bdbf6e86a97a8ac1b"
 }
