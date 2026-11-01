@@ -5,8 +5,8 @@
     "TASK-2026-0097"
   ],
   "started_at": "2026-11-01T04:42:01Z",
-  "ended_at": "2026-11-01T04:48:11.156356Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T04:49:32.176498Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html",
     "https://fmod.com/docs/2.04/studio/advanced-topics.html",
@@ -28,7 +28,13 @@
     "unchanged_prior_experiment_files": 3227,
     "archive_checks_normal": 519,
     "archive_checks_optimized": 519,
-    "queue_tasks_checked": 97
+    "queue_tasks_checked": 97,
+    "selected_blob_hashes_verified": 10,
+    "outside_tree_changes": 0,
+    "local_links_checked": 778,
+    "receipt_queue_tasks_checked": 98,
+    "declared_paths_checked": 126
   },
-  "next_action": "Select a concrete remaining source-depth gap after assessing current coverage"
+  "next_action": "Independently review Epic 5.6 Notify eligibility and server-ownership sources",
+  "commit_sha": "a5dd191d6228dddd4ea54639f4d0c94210f4be94"
 }

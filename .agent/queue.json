@@ -2493,7 +2493,7 @@
       "id": "TASK-2026-0097",
       "question": "Does a virtualized audio playback timeline or event identity establish delivery of a time-sensitive audible cue?",
       "discipline": "SFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Deepen existing audio-state and accessible-information evidence without equating logical playback with audible delivery",
       "expected_artifact": "Version-specific primary-source gate and bounded existing-article supplement only if it closes a distinct gap",
@@ -2508,11 +2508,36 @@
         "Reject duplicate coverage and unsupported universal performance rules",
         "No native execution, listening or runtime metadata release"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T04:48:11.156356Z",
-      "next_action": "Publish reviewed FMOD event/Core observation-layer supplement",
+      "next_action": "Keep event and Core channel observations scoped; runtime and listener evidence remain separate",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:49:32.176498Z",
+      "commit_sha": "a5dd191d6228dddd4ea54639f4d0c94210f4be94"
+    },
+    {
+      "id": "TASK-2026-0098",
+      "question": "When can authored Unreal animation Notify eligibility exclude a hook expected to request an authoritative combat decision?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Deepen existing simulation-versus-presentation boundary with concrete engine configuration and ownership mismatch",
+      "expected_artifact": "Reviewed source-only existing-article supplement and authored-event/authority acceptance checklist if supported",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read version-selected original Epic documentation and keep generated API distinct from source implementation",
+        "Keep dedicated-server eligibility and authoritative hit decision separate",
+        "No branching-point filter-bypass, numeric delivery or exactly-once guarantees without evidence",
+        "Preserve existing Godot and Python evidence scopes",
+        "No engine execution, runtime metadata release or guessed dispatch internals"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:49:32.176498Z",
+      "next_action": "Independently review Epic 5.6 Notify eligibility and server-ownership sources",
       "blockers": []
     }
   ]
