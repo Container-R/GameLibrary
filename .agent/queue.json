@@ -2575,7 +2575,7 @@
       "id": "TASK-2026-0100",
       "question": "When does a mesh simplification request fail to establish the requested index budget, error meaning or asset acceptance?",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 89,
       "priority_rationale": "Deepen asset-budget handoff with pinned source-level target/result and metric-unit distinctions",
       "expected_artifact": "Standalone source note grounded in meshoptimizer API and stopping/scale implementation, with unexecuted two-request acceptance scenario",
@@ -2589,11 +2589,36 @@
         "Do not invent results for hypothetical meshes or silently change tolerance/options",
         "No simplifier/native/model execution or runtime metadata release"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:04:13.037341Z",
-      "next_action": "Publish reviewed mesh simplification request/result and metric-scale source analysis",
+      "next_action": "Retain actual-count and approximate-metric acceptance boundaries; no asset outcome inferred",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:05:54.248311Z",
+      "commit_sha": "04beaaf3f36a5d0bed8308c3dad4c99dcf1b8cde"
+    },
+    {
+      "id": "TASK-2026-0101",
+      "question": "Why is an isolated supporting-plane quadric residual not a finite-surface distance bound, and which real-library terms must not be omitted from interpretation?",
+      "discipline": "MODEL",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen the existing simplification metric explanation with an exact geometric counterexample and explicit complete-algorithm boundary",
+      "expected_artifact": "Compact source-backed mechanism supplement to the new mesh request/result note, with hand derivation and original-paper/source comparison",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original QEM paper and pinned meshoptimizer plane/point/border construction and error evaluation",
+        "Verify exact coplanar outside-triangle distance derivation without execution",
+        "Do not claim reachable meshoptimizer output or zero complete metric; include default point and boundary terms",
+        "Do not turn finite-plane example into measured silhouette or universal algorithm claim",
+        "No figure copying, assets, model/native execution or runtime metadata release"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:05:54.248311Z",
+      "next_action": "Independently review original QEM paper, finite-triangle proof and pinned full-metric scope",
       "blockers": []
     }
   ]
