@@ -2171,7 +2171,7 @@
       "id": "TASK-2026-0085",
       "question": "What semantic state and intent must accompany branching dialogue beyond its prose?",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 88,
       "priority_rationale": "Missing narrative role and concrete state-aware content handoff, distinct from existing voice approval and save source analysis",
       "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
@@ -2185,11 +2185,35 @@
         "Original bridge-state example explicitly unexecuted; no runtime or translation quality claim",
         "Independent source and editorial review"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T03:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T02:46:37.124660Z",
-      "next_action": "Publish reviewed narrative role and original unexecuted semantic-state handoff",
+      "next_action": "Retain role-specific historical evidence and unexecuted semantic-state worksheet; no dialogue runtime or language result",
+      "blockers": [],
+      "completed_at": "2026-11-01T02:48:49.280844Z",
+      "commit_sha": "caf03252380b9faff46b9467c07800880634d146"
+    },
+    {
+      "id": "TASK-2026-0086",
+      "question": "Which rollback replay and presentation responsibilities does pinned GGPO delegate to the host?",
+      "discipline": "NET",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Deepen existing prediction effects advice using original SDK callbacks and missed-short-event counterpressure, not another toy model",
+      "expected_artifact": "Source-depth supplement and original unexecuted host acceptance matrix",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin GGPO guide/header/Sync source and exact callback boundary",
+        "Do not treat catch-up completion or reserved flags as effect confirmation",
+        "Distinguish gameplay-relevant state from non-gameplay presentation and unresolved reconciliation policy",
+        "No installed GGPO, native, WAN, once-only or persistent transaction guarantee"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T03:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T02:48:49.280844Z",
+      "next_action": "Main and independent source review before source-depth supplement; no implementation authorized",
       "blockers": []
     }
   ]

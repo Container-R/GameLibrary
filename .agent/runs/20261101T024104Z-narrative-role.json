@@ -5,8 +5,8 @@
     "TASK-2026-0085"
   ],
   "started_at": "2026-11-01T02:41:04Z",
-  "ended_at": "2026-11-01T02:46:37.124660Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T02:48:49.280844Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.guerrilla-games.com/read/guerrilla-spotlight-annie-kitain",
     "https://www.monolithsoft.co.jp/interview/2307.html",
@@ -30,7 +30,12 @@
     "archive_checks_normal": 505,
     "archive_checks_optimized": 505,
     "queue_tasks_checked": 85,
-    "declared_paths_checked": 103
+    "declared_paths_checked": 103,
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "local_links_checked": 680,
+    "receipt_queue_tasks_checked": 86
   },
-  "next_action": "Read rollback side-effect source gate; choose depth only after exact prior scope review"
+  "next_action": "Read rollback side-effect source gate; choose depth only after exact prior scope review",
+  "commit_sha": "caf03252380b9faff46b9467c07800880634d146"
 }
