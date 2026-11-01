@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T18:25:00Z",
+      "lease_until": "2026-11-01T18:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T18:00:03Z",
-      "next_action": "Inspect original accessibility input guidelines and first-party hold/toggle behavior for a concrete input-design gap; distinguish finite timed actions from persistent toggles and reject unsupported game behavior claims.",
+      "last_progress_at": "2026-11-01T18:06:00Z",
+      "next_action": "Review remaining reader questions against existing sources, prioritizing substantive gaps and deeper verification rather than article count; current hold/toggle design remains unimplemented and untested with participants.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -5873,6 +5873,34 @@
       "blockers": [],
       "source_commit": "dd8bd3fb525f0f33f1079f8ca3c5770783c44a53",
       "verification_method": "Fixed original source analysis, independent algebra and reader/navigation review; no runtime."
+    },
+    {
+      "id": "TASK-2026-0154",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "When replacing sustained holds with taps, how are cancellation, exit and completion preserved without assuming one toggle policy fits every action or player?",
+      "discipline": "A11Y",
+      "status": "published",
+      "priority": 90,
+      "priority_rationale": "Existing sound accessibility and menu focus coverage do not explain sustained gameplay-input alternatives; first-party controls expose distinct second-input meanings.",
+      "expected_artifact": "GameLibrary/本地化与无障碍/无障碍设计/输入操作/把持续按住改成点按时如何保留取消与完成的含义.md",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/无障碍设计/输入操作/把持续按住改成点按时如何保留取消与完成的含义.md",
+        "管理档案/审查/持按改点按-读者与纸面轨迹审查.md"
+      ],
+      "acceptance": [
+        "Readable concrete example and target audience",
+        "Primary historical game controls distinguished from general guideline and original policy",
+        "Independent whole-reader comprehension and adversarial paper trajectories",
+        "Actual floor and cross-role entry routes",
+        "No hardware, player, game or certification claim"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T18:06:00Z",
+      "next_action": "Treat the repair example as an unimplemented design proposal; project input and participant evaluation remain required.",
+      "blockers": [],
+      "verification_method": "Original source reading, independent reader/source and paper-trajectory review, actual navigation checks; no runtime or human usability study."
     }
   ],
   "execution_policy": {

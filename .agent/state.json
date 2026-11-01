@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 57
+    "reader_books_total": 58
   },
   "publication": {
-    "last_verified_head_sha": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
+    "last_verified_head_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "57 reader articles: 55 baseline rewrites plus two source-grounded recovered/new studies; source and paper results do not imply runtime verification.",
-    "counts_snapshot_head": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
-    "latest_verified_content_sha": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
-    "reader_books_total": 57,
-    "post_baseline_research_books": 2
+    "scope": "58 reader books: 55 frozen baseline rewrites plus three subsequent studies. Input accessibility article is source reading and original unimplemented design, not runtime or participant evidence.",
+    "counts_snapshot_head": "c19316324405af05dfe92d37e8ecd3686b856b17",
+    "latest_verified_content_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
+    "reader_books_total": 58,
+    "post_baseline_research_books": 3
   },
-  "next_action": "Inspect original accessibility input guidelines and first-party hold/toggle behavior for a concrete input-design gap; distinguish finite timed actions from persistent toggles and reject unsupported game behavior claims.",
+  "next_action": "Review remaining reader questions against existing sources, prioritizing substantive gaps and deeper verification rather than article count; current hold/toggle design remains unimplemented and untested with participants.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -56,10 +56,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T18:25:00Z",
+    "lease_until": "2026-11-01T18:40:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T180003Z-reward-retention",
+  "last_run_id": "20261101T180600Z-hold-toggle-reader",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -78,8 +78,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T18:00:03Z",
-  "last_commit_sha": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
+  "last_real_progress_at": "2026-11-01T18:06:00Z",
+  "last_commit_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
