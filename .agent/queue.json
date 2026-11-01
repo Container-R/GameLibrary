@@ -3611,6 +3611,34 @@
       "blockers": [],
       "completed_at": "2026-11-01T08:53:36.795003Z",
       "commit_sha": "522b92eaa90b37ab530b901cc23cc9b1207d85ea"
+    },
+    {
+      "id": "TASK-2026-0138",
+      "question": "Can selected source-only analyses be surfaced by receiving question without recategorizing evidence or duplicating the knowledge catalog?",
+      "discipline": "PROD",
+      "status": "reviewing",
+      "priority": 80,
+      "priority_rationale": "Close observed discoverability gap and stale route-count wording while preserving existing reachable content and type boundaries",
+      "expected_artifact": "Four selected source-question entries and two existing role-route additions, with historical supervisor audit integrated",
+      "artifact_paths": [
+        "sources/README.md",
+        "DISCOVERY.md",
+        "taxonomy/reading-routes.json",
+        "research/audits/source-discovery-review/REVIEW.md"
+      ],
+      "acceptance": [
+        "Preserve already reachable paths and do not claim orphan rescue or user speed improvement",
+        "Do not change article content, evidence status or parser directory/type policy",
+        "Resolve two added stable IDs uniquely and regenerate routes through existing tool",
+        "Run existing navigation checks and inspect exact diff",
+        "Keep audit snapshot and reported-versus-rerun validation scopes explicit"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T09:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T08:58:38.850503Z",
+      "next_action": "Review exact navigation diff and validation before single-writer publication",
+      "blockers": []
     }
   ]
 }

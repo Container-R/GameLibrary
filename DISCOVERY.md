@@ -117,6 +117,8 @@
   - 关联理由：明确底层实现与资产制作/导入配置的交接责任。
 - 缺陷证据何时足以支撑发布决定？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：技术解释与风险签收分开，不把单项通过当整体验收。
+- 沿有序格子遍历，第一个命中为何还可能不是最近表面？ → [均匀网格最近命中：访问顺序为什么还需要停止边界](knowledge/rendering/uniform-grid-nearest-hit-termination.md) — `KNOW-GFX-GRID-001` · `source-backed` · `GFX`
+  - 关联理由：固定原始源码与原创手推区分访问顺序、最近命中停止边界和任意命中；未执行射线查询。
 
 ## 从构建工程出发：候选身份、测试证据与晋级责任
 路线 ID：`role-build-engineer`
@@ -251,6 +253,8 @@
   - 关联理由：区分创作承诺、实际状态及反馈。
 - 怎样让对白矛盾可复现而非只凭印象？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
   - 关联理由：记录状态快照、版本和实际观察；不冒称穷尽所有分支。
+- 给对白增加历史条件，为什么也会改变首次候选排名？ → [Valve 情境对白：新增历史条件为何也会改变候选排名](case-studies/narrative/valve-contextual-dialogue-rule-selection.md) — `CASE-NARR-002` · `source-backed` · `NARR`
+  - 关联理由：历史 Valve 规则机制与原创两规则轨迹分开；历史条件既影响资格也可能影响条件计数，不证明当前引擎或音频执行。
 
 ## 从本地化协调出发
 路线 ID：`role-localization`

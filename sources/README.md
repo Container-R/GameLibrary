@@ -4,6 +4,19 @@
 
 来源记录就近保存在各知识条目的“来源”部分：原始 URL、组织/作者、可确认的版本或日期、读取日期、章节与用途。这里提供跨专题入口，不重复复制厂商正文。公开可访问不等于允许再分发。
 
+## 精选来源分析：按接收问题进入
+
+以下是少量问题入口，不是全量分类，也不改变 CATALOG 收录范围或提升证据等级。原有专题来源仍保留在下方；具体版本与限制以正文为准。
+
+| 接收问题 | 阅读入口 | 不应外推的结论 |
+|---|---|---|
+| 两张 Steam Total Visits 相减，能否称为自然流量？ | [流量报表对账](../research/source-notes/steam-report-reconciliation.md) | 文档与有限集合推导，不是真实后台测量 |
+| piece 名称仍对应，合并分组为何还需重审？ | [模型烘焙的追踪集合](../research/source-notes/model-bake-piece-visibility.md) | 节点文档与分组反例，没有实际烘焙结果 |
+| 关键姿势相同，逐键四元数取负能否保留动画？ | [四元数符号与立方动画](../research/source-notes/quaternion-sign-and-cubic-animation.md) | 固定规范与实数代数反例，没有播放器执行 |
+| 通用 done 能否授权不同资源释放或复用？ | [释放与复用合同路由](../research/source-notes/resource-release-and-reuse-routing.md) | 有限合同比较，不是统一关闭算法或新的 SDK 运行 |
+
+## 专题与岗位来源
+
 | 研究问题 | 来源记录入口 | 证据边界 |
 |---|---|---|
 | 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；分开的本地Godot回调、合成输入与有限kinematic接触夹具各有独立范围，不能互相迁移证据或外推真实设备/完整物理政策 |

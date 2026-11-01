@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "scheduled_for": "2026-11-01T08:50:00Z",
+  "checked_at": "2026-11-01T08:56:00Z",
+  "project": "Container-R/GameLibrary",
+  "branch": "master",
+  "visibility": "public",
+  "health": "healthy",
+  "snapshot_head": "fd1cc1b23d130bb3d7819bce49a9cc71308b4aae",
+  "last_substantive_commit": "522b92eaa90b37ab530b901cc23cc9b1207d85ea",
+  "last_substantive_commit_at": "2026-11-01T08:53:16Z",
+  "consecutive_no_progress_checks": 0,
+  "skills_read": [
+    "gamelibrary-research/SKILL.md",
+    "gamelibrary-research/references/07-execution-and-recovery.md",
+    "gamelibrary-research/references/08-supervision-and-stagnation.md",
+    "sitara-persona/SKILL.md",
+    "sitara-persona/references/01-canon-and-evidence.md",
+    "sitara-persona/references/02-cognition-and-motives.md",
+    "sitara-persona/references/03-voice-and-dialogue.md",
+    "sitara-persona/references/04-context-and-work.md"
+  ],
+  "checks": {
+    "repository_metadata": true,
+    "default_branch_resolved": true,
+    "state_queue_read": true,
+    "recent_commit_metadata_read": 80,
+    "commits_in_scheduled_two_hour_window": 33,
+    "commits_in_scheduled_four_hour_window": 76,
+    "commit_counts_are_not_research_output_counts": true,
+    "latest_run": ".agent/runs/20261101T085100Z-grid-nearest-hit.json",
+    "locks_path": "404; active ownership taken from queue",
+    "active_owner": "gamelibrary-main-integrator",
+    "task_id": "TASK-2026-0008",
+    "lease_until": "2026-11-01T09:40:00Z",
+    "activity": "Primary worker running; recent substantive remote publication and completed independent article review corroborate activity beyond status label"
+  },
+  "progress": [
+    {
+      "sha": "994717808cae597012c0fe8b0ca4c93508506951",
+      "path": "research/source-notes/steam-report-reconciliation.md",
+      "scope": "Official report definitions plus original finite set reasoning; not account data"
+    },
+    {
+      "sha": "8a7ea75620b1633d5d049de26f91d88cbae21fdf",
+      "path": "research/source-notes/model-bake-piece-visibility.md",
+      "scope": "Source-only piece partition contract; not actual bake"
+    },
+    {
+      "sha": "522b92eaa90b37ab530b901cc23cc9b1207d85ea",
+      "path": "knowledge/rendering/uniform-grid-nearest-hit-termination.md",
+      "scope": "Post-trigger original nearest-hit analysis, per remote run; not independently rederived in this audit"
+    }
+  ],
+  "quality_sample": {
+    "path": "research/source-notes/steam-report-reconciliation.md",
+    "result": "pass within source-only scope",
+    "sources": [
+      {
+        "url": "https://partner.steamgames.com/doc/marketing/traffic_reporting?l=english",
+        "sections": [
+          "Accessing Reports",
+          "Visits",
+          "Notes on Data collection date ranges"
+        ]
+      },
+      {
+        "url": "https://partner.steamgames.com/doc/marketing/utm_analytics?l=english",
+        "sections": [
+          "Privacy",
+          "Testing a link",
+          "Discrepancies Between UTM Analytics and Traffic Breakdown"
+        ]
+      }
+    ],
+    "findings": [
+      "Both original rolling documentation pages support differing report populations and visibility constraints",
+      "Visits hourly refresh is distinct from four-day conversion finalization",
+      "Independently checked negative and positive finite-set examples and disjoint-set cardinality identity; no execution claimed",
+      "Receiving table specifies units, scope, time, visibility and classification evidence",
+      "Related capsule note concerns asset handoff rather than report reconciliation; narrow overlap not a duplicate",
+      "Original paraphrase and hypothetical examples; no copied media or extensive source text observed",
+      "No LICENSE file found at inspected path; not a full license inventory or legal clearance"
+    ],
+    "limits": [
+      "No account access, live report validation or experiment",
+      "No full-repository duplicate, privacy or license clearance"
+    ]
+  },
+  "validation_reported_by_main": {
+    "indexed_articles": 50,
+    "archive_checks": 519,
+    "queue_tasks": 137,
+    "scope": "Remote run report read; not independently rerun. Static archive consistency is not runtime or semantic verification."
+  },
+  "intervention": "Keep active primary research; independent source and mathematical spot-check only",
+  "next_action": "Inspect research source-note discoverability against the catalog and existing reading routes; address a concrete navigation gap without upgrading evidence or recategorizing private records",
+  "scoped_hold": {
+    "task_id": "TASK-2026-0092",
+    "status": "blocked pending separate release decision; excluded from source-only lane",
+    "retry_performed": false
+  },
+  "publication": "Local audit prepared for the established single writer; not synchronized by this supervisor"
+}
