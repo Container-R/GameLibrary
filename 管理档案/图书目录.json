@@ -35,9 +35,10 @@
       "area": "界面美术",
       "shelf": "状态表达",
       "proposed_path": "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/art2d/game-ui-artist.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
+      "current_read_path": "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
     },
     {
       "internal_id": "ROLE-SFX-001",
@@ -439,9 +440,11 @@
       "area": "玩家测试",
       "shelf": "关卡引导",
       "proposed_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/production/playtest-intervention-evidence.md"
+      "editorial_status": "已通过独立读者视角审读；非真人用户测试",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
+      "current_read_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "extraction_scope": "主持人介入与试玩判断主线重写；标签合并的形式推导留作专门方法说明，暂未迁移"
     },
     {
       "internal_id": "SOL-NET-001",
@@ -675,7 +678,7 @@
       "current_read_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
     }
   ],
-  "rewritten_reader_books": 7,
-  "legacy_entries_remaining": 48,
+  "rewritten_reader_books": 9,
+  "legacy_entries_remaining": 46,
   "whole_library_rebuild_complete": false
 }

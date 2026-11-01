@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T111900Z-reader-ui-playtest",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:18:32Z",
+  "ended_at": "2026-11-01T11:19:55.881076Z",
+  "outcome": "UI-state and playtest rewrites and actual reader routes accepted; remote publication pending",
+  "baseline_head": "f75fe5a78540228d35f00ebcfdbe8d233980f763",
+  "books": [
+    "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u754c\u9762\u7f8e\u672f/\u72b6\u6001\u8868\u8fbe/\u7528\u56fe\u5f62\u8868\u73b0\u6309\u94ae\u548c\u754c\u9762\u7684\u72b6\u6001.md",
+    "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u73a9\u5bb6\u6d4b\u8bd5/\u5173\u5361\u5f15\u5bfc/\u4e3b\u6301\u4eba\u63d0\u793a\u4f1a\u600e\u6837\u5f71\u54cd\u5173\u5361\u6d4b\u8bd5\u7ed3\u8bba.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u754c\u9762\u7f8e\u672f/\u72b6\u6001\u8868\u8fbe/\u7528\u56fe\u5f62\u8868\u73b0\u6309\u94ae\u548c\u754c\u9762\u7684\u72b6\u6001.md": "b206a0f5f55bbceda38eb5416bd1f389cc877f28e4c7ee19f382dfa2b30b72cd",
+    "GameLibrary/\u9879\u76ee\u7ba1\u7406\u4e0e\u6d4b\u8bd5/\u73a9\u5bb6\u6d4b\u8bd5/\u5173\u5361\u5f15\u5bfc/\u4e3b\u6301\u4eba\u63d0\u793a\u4f1a\u600e\u6837\u5f71\u54cd\u5173\u5361\u6d4b\u8bd5\u7ed3\u8bba.md": "1db23aa31f7127d9a7de3035e1517798da09eeca6f71ef84541320d37d16aa7d"
+  },
+  "rewritten_reader_books": 9,
+  "remaining_legacy_entries": 46,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No interface or participant study executed",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Complete UI-state and playtest reader review and routes; then continue existing-book remediation without new topics",
+  "editorial_integration": "Playtest bottom reference heading normalized from \u53c2\u8003\u8d44\u6599 to \u53c2\u8003\u6765\u6e90 for validator compatibility; both books add return footer; no technical prose changed",
+  "navigation_review": "UI hierarchy and cross-discipline level-design to playtest route followed with return links",
+  "inventory_shelf_coverage": {
+    "total": 55,
+    "rewritten": 9,
+    "legacy": 46
+  }
+}
