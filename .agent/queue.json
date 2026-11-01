@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T00:00:00Z",
+      "lease_until": "2026-11-02T00:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T23:19:06Z",
-      "next_action": "Continue finite high-value engineering research and independent review; keep rotational coordinate-rate explanation separate from unimplemented moving-target inertialization.",
+      "last_progress_at": "2026-11-01T23:27:47Z",
+      "next_action": "Continue concrete engineering research with original-source gates and reader-focused scope; retain averaging, signal and perception distinctions rather than universal curve prescriptions.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6415,6 +6415,34 @@
       "next_action": "Check actual representation and frame contracts before connecting velocities; moving target composition, branch handling, estimation and full inertialization remain separate.",
       "blockers": [],
       "verification_method": "Primary-source reading with selected PDF equations visually checked, original exact-real quaternion derivative and independent review; no numerical trajectory or engine execution."
+    },
+    {
+      "id": "TASK-2026-0173",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why does an equal-power crossfade not guarantee unchanged output level for identical or opposite-polarity content?",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "A distinct mixing choice not covered by PCM interval ownership or active-input normalization; retain narrow books with actual shelf and cross-reader routes.",
+      "expected_artifact": "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+        "管理档案/审查/交叉淡化相关性-读者与来源审查.md"
+      ],
+      "acceptance": [
+        "Read original DAFx2016 paper and historical official Avid12.3 help",
+        "Independently derive three original fixed-gain four-sample cases",
+        "Separate signal mean-square from peak, loudness and a full time-varying fade",
+        "Correct sufficient-versus-necessary claim before publication",
+        "Complete independent reader and actual root/shelf/PCM navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T23:27:47Z",
+      "next_action": "Check actual overlap, gains, power, peak headroom and listening separately; do not infer automatic correlation compensation or a universal curve prescription.",
+      "blockers": [],
+      "verification_method": "Original four-sample fixed-gain paper calculations plus independent primary-source and reader review; no audio generation, mixer, renderer or listening execution."
     }
   ],
   "execution_policy": {

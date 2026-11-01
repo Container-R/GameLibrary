@@ -1,0 +1,32 @@
+{
+  "run_id": "20261101T232747Z-crossfade-correlation",
+  "observed_at": "2026-11-01T23:27:47Z",
+  "parent_verified_head": "49a576a4cae4943a56b5c4b4c59c5bc8c2a163b5",
+  "task": "TASK-2026-0173",
+  "outcome": "Accepted mixing reader, actual shelf route and PCM cross-links in containing commit.",
+  "reader_path": "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+  "reader_sha256": "e5c2d249d62a2d88d245ce782b32f981347941e3eb66d68c1e7d917436fdbde2",
+  "review_path": "管理档案/审查/交叉淡化相关性-读者与来源审查.md",
+  "source_scope": [
+    "DAFx2016 original4page paper, equal-power/zero-mean assumptions, cross-term and negative correlation/temporal-average limitations; main visually checked printed110",
+    "Historical Avid Pro Tools First12.3 official crossfade Link Settings"
+  ],
+  "original_example": "x=(.25,-.25,.25,-.25), three equal-power zero-mean z sequences; fixed equal gains1/sqrt2 give mean-square2P/P/0, gains.5 giveP/.5P/0. No time-varying gain sweep.",
+  "new_audio_generations": 0,
+  "new_mixer_executions": 0,
+  "new_listening_tests": 0,
+  "prepublication_correction": "Changed an overly strong only-if statement into a sufficient-condition statement: equal input mean-square and zero product average suffice, but are not asserted necessary for every particular weight/level combination.",
+  "scope_limits": [
+    "Mean-square is neither watts nor perceived loudness",
+    "Chosen equal-gain mixing point is not universal temporal halfway",
+    "Four samples do not measure a full fade or certify clipping",
+    "No proposed automatic amplification near perfect cancellation"
+  ],
+  "prior_publication_readback": {
+    "commit": "49a576a4cae4943a56b5c4b4c59c5bc8c2a163b5",
+    "all_blobs_matched": 799,
+    "key_files_exact": 4
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "heading_check_correction": "Initial complete references heading used a label outside the configured validator prefixes. Renamed only to 参考来源与适用范围; citations retained, no validator bypass."
+}

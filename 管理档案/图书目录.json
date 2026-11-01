@@ -1431,6 +1431,23 @@
       "review_paths": [
         "管理档案/审查/寻路费用尺度-读者与来源审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-SFX-004",
+      "reader_title": "交叉淡化时为什么声音中间变大或变小",
+      "floor": "声音与音乐",
+      "area": "音频制作",
+      "shelf": "混音",
+      "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+      "current_read_path": "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+      "reader_body_status": "published",
+      "editorial_status": "原始论文与历史官方帮助、独立有限数学及完整读者路线审查接受；无混音器或听音执行",
+      "origin": "original-four-sample-fixed-gain-comparison",
+      "scope_note": "固定增益点的均方解释；不等于完整时变淡化、感知响度或相关补偿算法验收",
+      "review_paths": [
+        "管理档案/审查/交叉淡化相关性-读者与来源审查.md"
+      ],
+      "reader_sha256": "e5c2d249d62a2d88d245ce782b32f981347941e3eb66d68c1e7d917436fdbde2"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1443,6 +1460,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 68,
-  "post_baseline_research_books": 13
+  "reader_books_total": 69,
+  "post_baseline_research_books": 14
 }
