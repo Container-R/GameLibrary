@@ -6,20 +6,21 @@ status: source-backed
 primary_discipline: PROD
 related_disciplines: [QA, DESIGN, UX]
 related_roles: [producer,level-designer,ux-researcher]
-related_topics: [playtesting,research-methods]
+related_topics: [playtesting,research-methods,label-granularity]
 engines: [engine-agnostic]
 platforms: [cross-platform]
-versions: ["ValvePDF日期冲突未解决", "GDS更新2017-10-03"]
-updated_at: 2026-10-31
-verification_method: 原始PDF文本和原始机构方法页核对；无参与者研究
+versions: ["ValvePDF日期冲突未解决", "GDS更新2017-10-03", "Ostrovsky等论文2025-09-12"]
+updated_at: 2026-11-01
+verification_method: 原始PDF、机构方法页与非游戏记忆研究的论文正文定向核对；无新增参与者研究或模型运行
 sources:
   - https://cdn.akamai.steamstatic.com/apps/valve/2006/GDC2006_HL2DesignProcess.pdf
   - https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing
+  - https://link.springer.com/article/10.3758/s13428-025-02800-5
 ---
 
 # 来源记录与主张边界
 
-访问日期均为2026-10-31。两份来源来自不同机构，但都是方法说明，不是两个验证本文协议的独立实验。未复制整页幻灯片、图片或他人的研究数据。
+以下 Valve 与 GDS 两份来源的初始访问日期均为2026-10-31。两份来源来自不同机构，但都是方法说明，不是两个验证本文协议的独立实验。未复制整页幻灯片、图片或他人的研究数据。
 
 ## Valve PDF
 
@@ -50,3 +51,13 @@ sources:
 五栏证据结构、介入分类、虚构E1–E5水泵房序列与生产决策卡是本研究原创。方法来源并不包含该场景。未招募、未运行游戏、未录制参与者、未修改关卡、未复测；不能从静态反例推出任何玩家群体的成功率或因果收益。
 
 关联[工程方案](../solutions/production/playtest-intervention-evidence.md)。来源方法与原创假设保持分层，不以文档归档代替真实试玩。
+
+## 2026-11-01 增补：标签粒度与生产决定
+
+保留前述 2026-10-31 的两份来源记录；本增补引入第三份原始研究，不把旧资料改称自动编码实验。
+
+- Tehilla Ostrovsky、Paul Ungermann、Chris Donkin，*Using machine learning to automate the collection, transcription, and analysis of verbal-report data*，Behavior Research Methods 57, 285；出版商标示发表于 2025-09-12，DOI 10.3758/s13428-025-02800-5。[原始开放全文](https://link.springer.com/article/10.3758/s13428-025-02800-5)。
+- 本次定向阅读：Methods；Text analysis / Effectiveness test；Discussion / Evaluating the efficacy of the framework；Transcription & text analysis pipelines。正文定位以章节为准；未据图片推断结果。
+- 采用的研究任务、评分过程与两种粒度的一致率集中记在关联方案的新增小节，本记录不再重复。人工评分是比较参照，不是对真实心理状态的直接测量；不把这项跨领域案例当成游戏模型基准。
+- 新增的合并函数推导、“需要帮助”与不同工单的反例、按决定选择粒度的接收建议均为本稿原创。它们不是论文执行过的游戏任务，也不改变原水泵房记录的虚构身份。
+- 未获取参与者音频或个体数据，未运行研究仓库或模型，未复算统计；未验证任何游戏分类、转录、派单或改版收益。未采用论文其他速度、成本或模型确定性主张。

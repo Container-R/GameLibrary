@@ -3284,26 +3284,30 @@
     },
     {
       "id": "TASK-2026-0126",
-      "question": "How should playtest evidence distinguish spontaneous verbalization from requested explanations and accuracy outcomes from completion-time outcomes?",
+      "question": "Can coarse label agreement authorize fine-grained playtest production work orders?",
       "discipline": "PROD",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
-      "priority_rationale": "Investigate a concrete measurement distinction using original research rather than treating all non-solution verbal interaction as equivalent",
-      "expected_artifact": "Original-source evidence gate and bounded protocol addition only if full evidence supports practical value",
-      "artifact_paths": [],
+      "priority_rationale": "Prevent coarse automated evidence scores from silently authorizing finer production decisions; retain unresolved original measurement inquiry separately",
+      "expected_artifact": "Bounded original-source addition on label granularity and receiving decisions",
+      "artifact_paths": [
+        "solutions/production/playtest-intervention-evidence.md",
+        "sources/playtest-intervention-sources.md"
+      ],
       "acceptance": [
-        "Seek legitimately public original full paper or author manuscript before extending abstract-only claims",
-        "Separate verbalization instructions and measured outcome definitions",
-        "Do not infer a universal silent-test prescription or causal safety for a specific game",
-        "Preserve source-access limits and avoid fabricated study methods or effect sizes",
-        "No participant testing, raw runtime inspection or access-limit bypass"
+        "Distinguish original memory-study evaluation from game performance or mental-state truth",
+        "Retain fixed nonempty sample and exact-match mapping proof assumptions",
+        "Separate model-label agreement from upstream recording and transcription validity",
+        "Preserve original intervention example and source access dates",
+        "No participant data, audio processing, model execution or invented benchmark"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:22:01.165472Z",
-      "next_action": "Locate lawful original full text and evaluate whether the verbalization/outcome distinction yields a finite useful protocol addition",
-      "blockers": []
+      "last_progress_at": "2026-11-01T07:29:29.478267Z",
+      "next_action": "Review label-granularity addition and exact article/source diff",
+      "blockers": [],
+      "deferred_question": "Original verbalization-reactivity inquiry remains unresolved: full methods were not obtained; alternate paper answers a different narrower question"
     }
   ]
 }

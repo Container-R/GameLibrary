@@ -6,15 +6,16 @@ status: source-backed
 primary_discipline: PROD
 related_disciplines: [QA, DESIGN, UX, A11Y]
 related_roles: [producer,gameplay-designer,level-designer,qa-tester,ux-researcher]
-related_topics: [playtesting,moderator-intervention,evidence-quality,design-iteration]
+related_topics: [playtesting,moderator-intervention,evidence-quality,design-iteration,label-granularity]
 engines: [engine-agnostic]
 platforms: [cross-platform]
-versions: ["Valve原始PDF：URL含2006，页脚©2007，演讲日期未确认", "GDS方法页更新2017-10-03"]
-updated_at: 2026-10-31
-verification_method: 两家独立机构原始方法资料核对；原创假设记录的推理边界分析；未招募参与者、未执行试玩或验证改版效果
+versions: ["Valve原始PDF：URL含2006，页脚©2007，演讲日期未确认", "GDS方法页更新2017-10-03", "Ostrovsky等论文发表于2025-09-12"]
+updated_at: 2026-11-01
+verification_method: 两家独立机构原始方法资料及一项非游戏记忆研究的出版商全文定向核对；原创假设记录与标签合并关系分析；未招募参与者、执行试玩、运行模型或验证改版效果
 sources:
   - https://cdn.akamai.steamstatic.com/apps/valve/2006/GDC2006_HL2DesignProcess.pdf
   - https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing
+  - https://link.springer.com/article/10.3758/s13428-025-02800-5
 ---
 
 # 主持人提示后的通关，不能验证无提示关卡引导
@@ -56,6 +57,25 @@ sources:
 | 改后验证 | 新构建、保持/改变的条件、实际新观察与未解问题 | 让已经听过答案的人再过一次，就宣称首次引导有效 |
 
 观察定位可以用视频时间码或事件序号；后者不假装测过秒数。没有录制授权时不要求录制，按允许方式记录。公开案例不应包含可识别参与者的数据；本稿的虚构记录也不能混入真实研究库。
+
+## 自动编码：粗标签一致，不能替细工单验收
+
+**S3 的有限启发。** Ostrovsky、Ungermann 与 Donkin（2025）的案例是 31 人词语识别记忆研究，不是游戏试玩。标签评估随机抽取 10% 的测试试次，由论文作者阅读同一批转录文本，使用与模型相同的候选标签评分。八标签精确一致为 36%；将双方标签合并为“确定／不确定”后，一致为 82%。这不是更换模型后的进步，也不是可迁移到游戏的基准；作者将评估定位为概念验证与内部检查示范。[出版商全文：Methods；Text analysis / Effectiveness test；Evaluating the efficacy of the framework](https://link.springer.com/article/10.3758/s13428-025-02800-5)
+
+下面是原创集合推导，不是对该研究数据的复算。对同一批非空条目（N > 0），设人工细标签为 H、模型细标签为 M，双方采用同一固定、确定性的合并函数 f，则：
+
+`H = M ⇒ f(H) = f(M)`，反向不成立。
+
+因此，按相同条目逐项等权计数、均以正数 N 为分母时，粗标签的精确相等比例不会低于细标签的精确相等比例。这一论证不是对 kappa 或类别平衡指标的保证。原先不同的标签被归入同一类，就可能增加一致；单凭这个增加，不能断言系统更理解玩家。若同时换了样本或权重，也不能套用这个比较。
+
+**一个未执行的生产反例：** 团队把“目标不明”“路线线索不显著”“不知交互键”都归入“需要帮助”。假设人工给第一类、模型给第三类，粗标签相同，却分别指向目标说明与交互提示的不同工单。这里没有判断哪位评分者正确；反例只说明粗一致没有检查这项分歧。即使细标签一致，也仍不等于确诊玩家心理或改动根因。
+
+接收人应先写清输出将触发什么决定：
+
+- **只进入复看队列：** 可以按“需要帮助”这个粗筛任务核对遗漏与误收，并明确仍由复看决定修改什么；本文没有为它提供合格阈值。
+- **分别派发修改工单：** 必须核对会改变工单去向的细类别区分，不能拿粗筛的一致率代替。如果主动放弃这些区分，就也应放弃由这些细标签自动选定改动。
+
+同一转录文本上的标签比较还共享了文本输入：若文本已经漏掉否定词或混入主持人提示，双方标签相同也不能单独揭示该输入问题。应继续保留五栏中的原始观察定位和介入边界，把机器标签放在解释层，而非重新命名为“玩家原话”。这不是完整转录验收方案，也没有新增音频处理、模型运行或游戏研究结果。
 
 ## 干预应显式标注，但不要把所有支持都污名化
 
@@ -105,8 +125,8 @@ sources:
 
 ## 本稿的实际验收状态
 
-- 已做：两份独立机构原始方法资料的定向核对；构造并分析一个援助后完成的逻辑反例。
-- 未做：真实招募、试玩、录屏分析、任何版本改动、改后复测、统计或收益估计。
+- 已做：两份独立机构原始方法资料及一项非游戏记忆研究的定向核对；构造并分析援助后完成、标签合并与工单分歧的逻辑反例。
+- 未做：真实招募、试玩、录屏分析、任何版本改动、改后复测、统计或收益估计；未运行模型、处理参与者音频或复算论文数据。
 - 可直接复用：五栏记录结构、干预边界、决策卡字段；使用前应按项目和研究问题调整。
 - 不应复用为事实：虚构水泵房事件；不能拿它填真实项目的成功率、问题频率或人员表现。
 
@@ -114,6 +134,8 @@ sources:
 
 1. Valve，David Speyrer / Brian Jacobson，*Valve’s Design Process for Creating Half-Life 2*，28页。本文页码按PDF从1起计，不是另加的幻灯片编号。定向依据第3、10、11、19页。URL目录和文件名含2006，而PDF页脚为©2007；当前未确认讲演日期，不把路径推断当作日期事实。访问2026-10-31。
 2. GOV.UK Service Manual / User research community，*Using moderated usability testing*，发布2017-02-21，更新2017-10-03；Design the tasks、Run a session。访问2026-10-31。将服务研究原则迁移到关卡是本文推导，不代表该指南做过本例游戏实验。
+
+3. Tehilla Ostrovsky、Paul Ungermann、Chris Donkin，*Using machine learning to automate the collection, transcription, and analysis of verbal-report data*，Behavior Research Methods 57, 285，2025-09-12，DOI 10.3758/s13428-025-02800-5。访问 2026-11-01。定向阅读章节见自动编码小节及专用档案的同日增补；原有两份来源的访问日期不变。
 
 来源取证与日期边界见[专用档案](../../sources/playtest-intervention-sources.md)。
 
