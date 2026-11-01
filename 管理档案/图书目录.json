@@ -212,14 +212,11 @@
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
       "current_read_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
       "reader_body_status": "published",
-      "original_scope_status": "partially_extracted",
-      "pending_chapter_tasks": [
-        "REMEDIATION-15-01",
-        "REMEDIATION-15-02",
-        "REMEDIATION-15-03",
-        "REMEDIATION-15-04"
-      ],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "输入编号与消费已有固定步章节；岗位书补充暂停失焦政策、网络协作字段、受控性能比较、有效无效配置与接口协商；原未交付领域不扩为新书。",
+      "scope_disposition_review": "管理档案/审查/玩法程序-有限补充审读.md"
     },
     {
       "internal_id": "ROLE-QA-001",
@@ -657,12 +654,15 @@
       "area": "实时同步",
       "shelf": "移动预测",
       "proposed_path": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/programming/client-prediction-authority-boundary.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+      "current_read_path": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究原位保留；未搬运执行材料",
+      "scope_disposition": "服务器移动预测主线完整承接；RPC身份与GGPO正常推进等精确机制明确保留原正文及来源笔记，未继承为当前预测验证。",
+      "scope_disposition_review": "管理档案/审查/客户端预测-独立审读.md"
     },
     {
       "internal_id": "SOL-PROG-001",
@@ -717,12 +717,24 @@
       "area": "着色器开发",
       "shelf": "数据传递",
       "proposed_path": "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/rendering/matrix-major-interface-contract.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+      "current_read_path": "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+      "reader_body_status": "published",
+      "original_scope_status": "partially_extracted",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究原位保留；未搬运执行材料",
+      "scope_disposition": "矩阵教学与排查范围已承接；旧§3/§5支持范围本轮独立审读未展开，保留待核对，不新增书义务。",
+      "scope_disposition_review": "管理档案/审查/矩阵布局-独立审读.md",
+      "remaining_scope_review": {
+        "sections": [
+          "旧§3编译证据及能力范围",
+          "旧§5接口与支持范围"
+        ],
+        "status": "limited_review_pending",
+        "new_book_requirement": false,
+        "resolution_condition": "以可审的安全范围说明明确方法、实验专用实现及历史管理信息的去向，再独立核对；不为结清强行扩大读取范围。"
+      }
     },
     {
       "internal_id": "SOL-GFX-003",
@@ -969,8 +981,8 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 29,
-  "legacy_entries_remaining": 26,
+  "rewritten_reader_books": 31,
+  "legacy_entries_remaining": 24,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
   "fully_remediated_original_items": 18,

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T124400Z-reader-matrix-prediction",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T12:44:15.372343Z",
+  "ended_at": "2026-11-01T12:47:03.147023Z",
+  "outcome": "Matrix and prediction reader bodies, bounded gameplay corrections and actual navigation accepted; publication pending",
+  "baseline_head": "682ed780507c8ab477e8189436ce21f9c9a81bec",
+  "books": [
+    "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+    "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+    "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md": "d9a70cd1ac74c4ae8232dab9dad00d974941e0f062a89a9961bf4df12a66441e",
+    "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md": "e03324b19032abbbbc0f9caab7c07c25a47d21db22f3b05270a1eaea3cfc0687",
+    "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md": "efa73a4a15380354bc4655bc82f43a7f0c98bbef42cc1fc7fa6dbf2491680c96"
+  },
+  "rewritten_reader_books": 31,
+  "remaining_legacy_entries": 24,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "independent_reviews": [
+    "管理档案/审查/矩阵布局-独立审读.md",
+    "管理档案/审查/客户端预测-独立审读.md",
+    "管理档案/审查/玩法程序-有限补充审读.md"
+  ],
+  "next_action": "Verify matrix and prediction reader routes; resolve bounded gameplay scope gaps; continue existing case rewrites without new topics",
+  "scope_dispositions": {
+    "accounted_for_originals": 20,
+    "matrix_support_scope": "limited_review_pending",
+    "pending_claim_section_checks": 27,
+    "new_book_requirement": false,
+    "completed_gameplay_checks": [
+      "REMEDIATION-15-01",
+      "REMEDIATION-15-02",
+      "REMEDIATION-15-03",
+      "REMEDIATION-15-04"
+    ]
+  },
+  "limitations": [
+    "No runtime experiments or independent historical output recertification",
+    "Reader body acceptance does not close unreviewed original support scope",
+    "Legacy bodies and evidence unchanged"
+  ],
+  "validation": {
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "artifact_paths_checked": 244,
+    "inventory_entries_checked": 55,
+    "runtime_experiments": 0
+  },
+  "navigation_review": "管理档案/审查/矩阵与预测-导航验收.md"
+}

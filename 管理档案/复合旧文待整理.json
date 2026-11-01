@@ -403,40 +403,55 @@
     },
     {
       "old_path": "roles/programming/gameplay-programmer.md",
-      "pending_subtopics": [
-        "输入归属模拟步、暂停恢复及失焦处理的去向核对，优先合并既有时间与模拟主题",
-        "网络命令身份、状态同步及乱序重复处理的去向核对，优先合并既有网络主题",
-        "同设备构建场景的性能对照及峰值分配方法，优先合并已有性能主题",
-        "内容失败隔离、有效无效样本及共享接口变更协商，优先合并既有内容接入与协作主题"
-      ],
-      "scope_status": "partially_extracted",
+      "pending_subtopics": [],
+      "scope_status": "accounted_for",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-15-01",
           "topic": "输入归属模拟步、暂停恢复及失焦处理的去向核对，优先合并既有时间与模拟主题",
-          "status": "pending",
-          "resolution": null,
+          "status": "completed",
+          "resolution": {
+            "method": "bounded_merge_and_existing_section_coverage",
+            "reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+            "review": "管理档案/审查/玩法程序-有限补充审读.md",
+            "new_book_required": false
+          },
           "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
         },
         {
           "id": "REMEDIATION-15-02",
           "topic": "网络命令身份、状态同步及乱序重复处理的去向核对，优先合并既有网络主题",
-          "status": "pending",
-          "resolution": null,
+          "status": "completed",
+          "resolution": {
+            "method": "bounded_merge_and_existing_section_coverage",
+            "reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+            "review": "管理档案/审查/玩法程序-有限补充审读.md",
+            "new_book_required": false
+          },
           "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
         },
         {
           "id": "REMEDIATION-15-03",
           "topic": "同设备构建场景的性能对照及峰值分配方法，优先合并已有性能主题",
-          "status": "pending",
-          "resolution": null,
+          "status": "completed",
+          "resolution": {
+            "method": "bounded_merge_and_existing_section_coverage",
+            "reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+            "review": "管理档案/审查/玩法程序-有限补充审读.md",
+            "new_book_required": false
+          },
           "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
         },
         {
           "id": "REMEDIATION-15-04",
           "topic": "内容失败隔离、有效无效样本及共享接口变更协商，优先合并既有内容接入与协作主题",
-          "status": "pending",
-          "resolution": null,
+          "status": "completed",
+          "resolution": {
+            "method": "bounded_merge_and_existing_section_coverage",
+            "reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+            "review": "管理档案/审查/玩法程序-有限补充审读.md",
+            "new_book_required": false
+          },
           "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
         }
       ]
