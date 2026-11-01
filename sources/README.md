@@ -159,3 +159,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [FMOD 虚拟化观察边界](../research/source-notes/fmod-virtualization-observation-boundary.md)区分事件层状态与实际承载提示的 Core Channel，保留2.04.00文档范围。
 
 [Unreal 5.6 Notify 资格与权威请求](../research/source-notes/unreal-notify-eligibility-authority.md)核对版本化官方文档，不把生成 API 当作已读实现。
+
+[可靠信道与实体就绪](../research/source-notes/reliable-channel-entity-readiness.md)定位固定 ENet 实现与独立 Godot 文档，不把协议确认当应用就绪。

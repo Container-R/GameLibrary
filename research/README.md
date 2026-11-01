@@ -165,3 +165,5 @@ python3 scripts/evidence/test_verify.py
 [音乐状态交接的观察层补充](../solutions/audio/music-state-transition-contract.md)分析事件非虚拟但底层声道虚拟的具体反例；开头/尾音情景未运行或试听，不升级已有生命周期模型。
 
 [动画事件资格与规则入口](source-notes/unreal-notify-eligibility-authority.md)分析唯一服务端本地入口与资产配置的冲突；原创建议未执行，既有固定步与方法轨证据不变。
+
+[跨信道依赖与实体就绪](source-notes/reliable-channel-entity-readiness.md)以已有接收器的两消息假设区分传输顺序、就绪、实体代次与权限；没有网络运行或重排实测。

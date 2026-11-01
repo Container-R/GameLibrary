@@ -2548,11 +2548,13 @@
       "id": "TASK-2026-0099",
       "question": "Do independent reliable channels establish the entity-readiness dependency between creation and a subsequent action?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Deepen network integration evidence with precise channel-local ordering versus application lifecycle boundary",
       "expected_artifact": "Source-only note with pinned ENet mechanism, independently scoped Godot docs, two-message scenario and intervention table",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/reliable-channel-entity-readiness.md"
+      ],
       "acceptance": [
         "Read pinned original ENet design and exact channel sequence/dispatch branches",
         "Do not equate upstream source with Godot modified ENet binary or spawn implementation",
@@ -2563,8 +2565,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:35:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:54:52.131797Z",
-      "next_action": "Independently review pinned channel ordering and entity-readiness source gate",
+      "last_progress_at": "2026-11-01T04:58:36.745175Z",
+      "next_action": "Publish reviewed reliable-channel source analysis and explicit application-readiness boundaries",
       "blockers": []
     }
   ]
