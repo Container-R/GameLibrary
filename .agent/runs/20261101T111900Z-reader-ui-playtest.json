@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:18:32Z",
-  "ended_at": "2026-11-01T11:19:55.881076Z",
-  "outcome": "UI-state and playtest rewrites and actual reader routes accepted; remote publication pending",
+  "ended_at": "2026-11-01T11:23:19.265672Z",
+  "outcome": "UI-state and playtest intervention books and cross-discipline routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "f75fe5a78540228d35f00ebcfdbe8d233980f763",
   "books": [
     "GameLibrary/\u754c\u9762\u4e0e\u4f53\u9a8c/\u754c\u9762\u7f8e\u672f/\u72b6\u6001\u8868\u8fbe/\u7528\u56fe\u5f62\u8868\u73b0\u6309\u94ae\u548c\u754c\u9762\u7684\u72b6\u6001.md",
@@ -25,12 +25,21 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Complete UI-state and playtest reader review and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing completion-rate and single-player economy books with independent reader reviews; retain composite chapter backlog; no new topics",
   "editorial_integration": "Playtest bottom reference heading normalized from \u53c2\u8003\u8d44\u6599 to \u53c2\u8003\u6765\u6e90 for validator compatibility; both books add return footer; no technical prose changed",
   "navigation_review": "UI hierarchy and cross-discipline level-design to playtest route followed with return links",
   "inventory_shelf_coverage": {
     "total": 55,
     "rewritten": 9,
     "legacy": 46
+  },
+  "commit_sha": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72",
+  "validation": {
+    "selected_blob_hashes_verified": 15,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1049,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_home_read_back": true
   }
 }

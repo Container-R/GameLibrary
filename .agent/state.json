@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T11:19:55.881076Z",
-  "last_commit_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
+  "last_real_progress_at": "2026-11-01T11:23:19.265672Z",
+  "last_commit_sha": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72",
   "last_run_id": "20261101T111900Z-reader-ui-playtest",
-  "next_action": "Complete UI-state and playtest reader review and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing completion-rate and single-player economy books with independent reader reviews; retain composite chapter backlog; no new topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -22,10 +22,10 @@
     "whole_audit_window_healthy": false,
     "audit_snapshot_head": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
     "snapshot_archive_checks": 519,
-    "latest_post_snapshot_content": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
+    "latest_post_snapshot_content": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72",
     "remote_blob_sample_scope": "Supervisor followed complete reader route and checked original sources; no whole-tree or runtime rerun",
     "snapshot_archive_check_scope": "Historical check count is not reader acceptance",
-    "reader_baseline_status": "Seven inventory entries now have reader-reviewed new bodies; 48 remain, composite subtopics retained for later editing",
+    "reader_baseline_status": "Nine inventory entries now have reader-reviewed new bodies; 46 remain, composite subtopics retained for later editing",
     "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
@@ -33,7 +33,7 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
+    "latest_verified_content_sha": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72",
     "status": "reader-baseline-rebuild-active; normal topic expansion paused",
     "deferred_optional_indexes": [],
     "object_visibility_recovery": {
@@ -49,7 +49,7 @@
     "pending_task_ids": [
       "TASK-2026-0092"
     ],
-    "latest_substantive_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d"
+    "latest_substantive_sha": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {
@@ -92,6 +92,8 @@
     "third_batch_published_sha": "6f2a0162271ded905444f358ef58858812385320",
     "third_batch_readback_verified": true,
     "fourth_batch_published_sha": "4ff3a1668db7c12cae2cabe8e13e923618e64e7d",
-    "fourth_batch_readback_verified": true
+    "fourth_batch_readback_verified": true,
+    "fifth_batch_published_sha": "3fbdaf88e32fa1f162e27ff5f06f8fe61c187f72",
+    "fifth_batch_readback_verified": true
   }
 }
