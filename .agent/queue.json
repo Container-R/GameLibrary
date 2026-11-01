@@ -2789,7 +2789,7 @@
       "id": "TASK-2026-0108",
       "question": "What does Noita developer testimony establish about dirty work selection versus bounded cross-chunk update ownership?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Study a distinct commercial simulation scheduling constraint from named primary developer testimony without reconstructing unprovided concurrency code",
       "expected_artifact": "A bounded historical mechanism source note with explicit testimony and implementation limits",
@@ -2803,11 +2803,36 @@
         "Do not infer deterministic or race-free execution, diagonal range, barriers or complete checkerboard schedule",
         "Original future rule-change scenario must remain hypothetical; no runtime or private metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:49:24.197055Z",
-      "next_action": "Publish reviewed historical dirty-work and update-ownership mechanism note",
+      "next_action": "Retain historical testimony and abstract access-set scope; no concurrency or current-engine guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:51:11.540422Z",
+      "commit_sha": "c0b8d36facfcbffb5e8a83f4b7a07aa99fac359b"
+    },
+    {
+      "id": "TASK-2026-0109",
+      "question": "What do herringbone tile template constraints establish, and which authored content or connectivity assumptions remain outside tile selection?",
+      "discipline": "DESIGN",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Follow a primary procedural-generation lead into an actual authoring/selection contract, rather than inferring semantic level correctness from compatibility labels",
+      "expected_artifact": "Bounded original-author and pinned-source mechanism note if review supports the distinction",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original author texts and exact official stb source version/commit",
+        "Trace template constraints, pixel payload and selection comparisons without executing generator",
+        "Keep hypothetical artwork edits and connectivity assumptions separate from observed output",
+        "No visual repetition assessment, Noita implementation transfer or universal connectivity guarantee",
+        "Preserve relevant author corrections and finite-boundary limitations; no private metadata"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:25:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:51:11.540422Z",
+      "next_action": "Review original herringbone authoring and tile-selection source gate",
       "blockers": []
     }
   ]
