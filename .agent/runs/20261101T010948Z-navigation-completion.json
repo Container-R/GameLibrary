@@ -9,15 +9,10 @@
   "outcome": "published and read back",
   "protocol_sha256": "7e5197e2368bb8be30c446b3a8ac1cc2274b781e77e2db8238a1788963d53dad",
   "native_attempts": 2,
-  "accepted_attempts": [
-    "67f74800-c547-4c0b-aba1-1bea7445f2c8",
-    "20597db7-f5c8-49d4-95eb-c4f80d1d781e"
-  ],
   "behavior_processes": 2,
   "separate_version_processes": 2,
   "unique_configurations": 1,
   "agents_per_invocation": 2,
-  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
   "evidence": "Each invocation: 17 driver callbacks, 337 raw events, 12/16 controlled assignments; reachable target then finish at x8, partial finish without target at x10 while target x22",
   "pre_native_corrections": "Synthetic same-frame and nested-bool false accepts fixed before native; initial snapshots/probes preserved",
   "limitations": [
@@ -44,5 +39,17 @@
     "receipt_declared_paths_checked": 83
   },
   "next_action": "Review narrow source-backed UX interaction-flow role under incomplete occupation matrix",
-  "commit_sha": "a3df07444a38cd44a0fe62c4c831817c1e478cae"
+  "commit_sha": "a3df07444a38cd44a0fe62c4c831817c1e478cae",
+  "accepted_attempt_count": 2,
+  "public_record_derivative": {
+    "kind": "environment_identity_redacted_summary",
+    "source_record_path": ".agent/runs/20261101T010948Z-navigation-completion.json",
+    "source_record_sha256": "c315b61d7b1ff4114e4a2ded2bce85852533cf9723f5e464b847fdd90f979eaa",
+    "removed_field_categories": {
+      "binary_sha256": "installed executable fingerprint",
+      "accepted_attempts": "execution attempt identifiers"
+    },
+    "historical_claims": "Retained as historical assertions; not independently rerun or newly validated.",
+    "raw_status": "This transformed summary is not an original raw execution record."
+  }
 }

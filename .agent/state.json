@@ -3,22 +3,22 @@
   "reader_baseline": {
     "normal_backlog_paused": true,
     "whole_library_rebuild_complete": false,
-    "pending_content_dispositions": 27,
+    "pending_content_dispositions": 0,
     "counts_are_not_quality_approval": true,
-    "counts_scope": "Verified published snapshot, not unpublished candidates",
-    "rewritten_reader_books": 31,
-    "legacy_entries_remaining": 24,
-    "accounted_for_original_items": 20
+    "counts_scope": "Reader bodies and scope dispositions in verified content revision 02eb6dbf6897b8582b31c2169c04060d5d6dccf4; physical root migration incomplete",
+    "rewritten_reader_books": 55,
+    "legacy_entries_remaining": 0,
+    "accounted_for_original_items": 55
   },
   "publication": {
-    "last_verified_head_sha": "e59f124304d139b7cc292783329368a3ecaac0f9",
+    "last_verified_head_sha": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
     "status": "authorized-remediation-in-progress",
     "authorization": "Public-record sanitization and replacement approved; preserve technical content, sources and Git history",
     "scope": "This checkpoint replaces public project state only; archive sanitization and remaining reader publication are not yet complete",
-    "counts_snapshot_head": "e59f124304d139b7cc292783329368a3ecaac0f9",
-    "latest_verified_content_sha": "89add0e4e68cc0a05116a01bdbf6e86a97a8ac1b"
+    "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
+    "latest_verified_content_sha": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4"
   },
-  "next_action": "Publish the 24 accepted remaining reader rewrites in reviewed batches; sanitize historical execution records and consolidate root layout without rewriting history",
+  "next_action": "Sanitize remaining execution records in reviewed groups and consolidate root layout while preserving fixed inventory and supporting content",
   "audit": {
     "overall_reader_rebuild_status": "quality-regression",
     "meaning": "Existing library remediation is incomplete; accepted new reader bodies have individual review records",
@@ -41,7 +41,7 @@
     "lease_until": "2026-11-01T16:15:00Z",
     "scope": "Single writer for authorized reader remediation and public-record sanitization"
   },
-  "last_run_id": "20261101T124400Z-reader-matrix-prediction",
+  "last_run_id": "20261101T153110Z-reader-recovery",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -58,10 +58,11 @@
       "queue.tasks.lease_until",
       "queue.tasks.last_progress_at",
       "queue.tasks.next_action"
-    ]
+    ],
+    "queue_checkpoint_pending": true
   },
-  "last_real_progress_at": "2026-11-01T12:48:53.483470Z",
-  "last_commit_sha": "89add0e4e68cc0a05116a01bdbf6e86a97a8ac1b",
+  "last_real_progress_at": "2026-11-01T15:31:10Z",
+  "last_commit_sha": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -70,11 +71,6 @@
     ],
     "history_rewritten": false,
     "technical_articles_changed": false,
-    "historical_records_sanitized": false
-  },
-  "unpublished_candidate": {
-    "accepted_reader_bodies": 24,
-    "published": false,
-    "root_consolidation_complete": false
+    "historical_records_sanitized": "Two selected run summaries in this revision; remaining archives not yet sanitized"
   }
 }

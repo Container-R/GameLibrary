@@ -17,13 +17,7 @@
   "failed_behavior_attempts": 1,
   "version_queries": 3,
   "unique_behavior_configurations": 1,
-  "engine_binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
   "engine_identity": "Local self-report only; official release/source correspondence unverified",
-  "failed_attempt": "fb2313fd-98a4-44b1-9527-12547d3925af",
-  "accepted_attempts": [
-    "8f698718-c420-4687-965d-4785a3154987",
-    "96fca0bb-b725-4072-9549-1192b45bdd49"
-  ],
   "evidence": "Actual owner/instance/tree/eligibility observations; passive callbacks and post-setter states distinguished",
   "negative": "Initial complete serialized trace still FAIL due stderr script diagnostics; narrow recorder observation-end guard independently reviewed; exact cross-stream teardown chronology remains inference",
   "limitations": [
@@ -47,5 +41,17 @@
     "outside_tree_changes": 0
   },
   "next_action": "Independently review source-backed animator role and hypothetical performance/runtime combination handoff",
-  "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3"
+  "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3",
+  "public_record_derivative": {
+    "kind": "environment_identity_redacted_summary",
+    "source_record_path": ".agent/runs/20261031T233828Z-recursive-focus-boundary.json",
+    "source_record_sha256": "1c624a9219f1758e2484c614c5d7976477e8c5d96aaaae08e05f444b48c00e4a",
+    "removed_field_categories": {
+      "engine_binary_sha256": "installed executable fingerprint",
+      "failed_attempt": "execution attempt identifier",
+      "accepted_attempts": "execution attempt identifiers"
+    },
+    "historical_claims": "Retained as historical assertions; not independently rerun or newly validated.",
+    "raw_status": "This transformed summary is not an original raw execution record."
+  }
 }
