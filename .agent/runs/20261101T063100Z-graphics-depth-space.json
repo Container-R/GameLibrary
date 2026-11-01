@@ -5,8 +5,8 @@
     "TASK-2026-0116"
   ],
   "started_at": "2026-11-01T06:28:16Z",
-  "ended_at": "2026-11-01T06:31:11.266041Z",
-  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "ended_at": "2026-11-01T06:33:34.020978Z",
+  "outcome": "published and read back",
   "sources": [
     "https://godotengine.org/article/introducing-reverse-z/",
     "https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html"
@@ -31,9 +31,13 @@
     "archive_fail": 0,
     "archive_scope": "Static archived consistency; no new runtime or semantic testing",
     "declared_paths_checked": 148,
-    "local_links_checked": 818
+    "local_links_checked": 818,
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 117
   },
-  "next_action": "Continue source-depth gaps after bounded editorial review",
+  "next_action": "Verify fixed interpolation formula and independent retiming proof before drafting",
   "prepublication_correction": "Bounded inverse reconstruction to valid sample, matching invertible projection and nonzero homogeneous w yielding finite position; background/degenerate inputs require a separate policy",
-  "reviewed_article_sha256": "018d277f18458b8190c3959a707478593390eb688be2a90a5445b97bb21eded0"
+  "reviewed_article_sha256": "018d277f18458b8190c3959a707478593390eb688be2a90a5445b97bb21eded0",
+  "commit_sha": "aae08932f12883d1a0f2049d208c260854a4e836"
 }

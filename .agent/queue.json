@@ -3006,7 +3006,7 @@
       "id": "TASK-2026-0116",
       "question": "When migrating reverse-Z depth effects, which comparison space and renderer-specific NDC reconstruction preserve the intended quantity?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Deepen existing rendering role with a concrete shader maintenance decision rather than a generic evidence checklist",
       "expected_artifact": "Integrated source-backed depth-space decision example and bounded source review",
@@ -3021,11 +3021,36 @@
         "No shader compilation, GPU run, precision or performance measurement implied",
         "Keep prior role attribution and source-reading history intact"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:31:11.266041Z",
-      "next_action": "Review exact depth-space choices and renderer-specific reconstruction before source-only publication",
+      "next_action": "Retain valid reconstruction premises and separate ordering, axial depth and geometric length",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:33:34.020978Z",
+      "commit_sha": "aae08932f12883d1a0f2049d208c260854a4e836"
+    },
+    {
+      "id": "TASK-2026-0117",
+      "question": "Why must glTF CUBICSPLINE translation tangents change when uniformly retiming stored key times to preserve the normalized trajectory?",
+      "discipline": "ANIM",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Resolve a concrete animation-tool handoff ambiguity through the fixed normative interpolation formula and a distinguishing hand calculation",
+      "expected_artifact": "Integrated animation role example with source-backed formula and clearly unexecuted counterexample",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read exact fixed Khronos formula and sampler constraints",
+        "Independently check tangent scaling and midpoint arithmetic",
+        "Restrict to positive uniform asset retiming and translation; exclude quaternion/time-warp generalization",
+        "Separate stored-key modification from playback-clock scaling",
+        "No exported asset or runtime playback claimed"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:33:34.020978Z",
+      "next_action": "Verify fixed interpolation formula and independent retiming proof before drafting",
       "blockers": []
     }
   ]
