@@ -4069,8 +4069,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:27:17.651699Z",
-      "next_action": "Publish exact reviewed tree; integrate reviewed Horizon and L4D cases while matrix and prediction rewrites continue; no new topics",
+      "last_progress_at": "2026-11-01T12:34:39.551237Z",
+      "next_action": "Integrate reviewed Horizon streaming and L4D pacing cases; continue matrix and prediction rewrites and finite scope dispositions; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4101,7 +4101,9 @@
         "twelfth_reader_batch_published_sha": "099efaa05f4224833016fd3a51d9bbd482171695",
         "twelfth_batch_readback_verified": true,
         "thirteenth_reader_batch_published_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
-        "thirteenth_batch_readback_verified": true
+        "thirteenth_batch_readback_verified": true,
+        "fourteenth_reader_batch_published_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
+        "fourteenth_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }

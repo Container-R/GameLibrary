@@ -6,10 +6,10 @@
     "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T12:27:17.651699Z",
-  "last_commit_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
+  "last_real_progress_at": "2026-11-01T12:34:39.551237Z",
+  "last_commit_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
   "last_run_id": "20261101T122700Z-reader-warlander-factorio",
-  "next_action": "Publish exact reviewed tree; integrate reviewed Horizon and L4D cases while matrix and prediction rewrites continue; no new topics",
+  "next_action": "Integrate reviewed Horizon streaming and L4D pacing cases; continue matrix and prediction rewrites and finite scope dispositions; no new topics",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -22,10 +22,10 @@
     "whole_audit_window_healthy": false,
     "audit_snapshot_head": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
     "snapshot_archive_checks": 519,
-    "latest_post_snapshot_content": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
+    "latest_post_snapshot_content": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
     "remote_blob_sample_scope": "Supervisor followed complete reader route and checked original sources; no whole-tree or runtime rerun",
     "snapshot_archive_check_scope": "Historical check count is not reader acceptance",
-    "reader_baseline_status": "Twenty-five reader-reviewed bodies are published; 30 entries still point to legacy bodies. Twelve original scopes have explicit dispositions; 36 pending checks are content disposition work, not promised books.",
+    "reader_baseline_status": "Twenty-seven reader-reviewed bodies are published; 28 entries still point to legacy bodies. Sixteen original scopes have explicit dispositions; 31 pending checks are content disposition work, not promised books.",
     "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
@@ -33,7 +33,7 @@
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
+    "latest_verified_content_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
     "status": "reader-baseline-rebuild-active; normal topic expansion paused",
     "deferred_optional_indexes": [],
     "object_visibility_recovery": {
@@ -49,7 +49,7 @@
     "pending_task_ids": [
       "TASK-2026-0092"
     ],
-    "latest_substantive_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf"
+    "latest_substantive_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {
@@ -114,6 +114,8 @@
     "twelfth_batch_published_sha": "099efaa05f4224833016fd3a51d9bbd482171695",
     "twelfth_batch_readback_verified": true,
     "thirteenth_batch_published_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
-    "thirteenth_batch_readback_verified": true
+    "thirteenth_batch_readback_verified": true,
+    "fourteenth_batch_published_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383",
+    "fourteenth_batch_readback_verified": true
   }
 }

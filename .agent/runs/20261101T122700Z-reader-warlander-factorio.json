@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T12:20:45Z",
-  "ended_at": "2026-11-01T12:32:54.086296Z",
-  "outcome": "Warlander and Factorio bodies and routes accepted; focus and sound finite gaps closed; publication pending",
+  "ended_at": "2026-11-01T12:34:39.551237Z",
+  "outcome": "Warlander and Factorio cases and focus/sound finite corrections published and read back; sixteen cumulative original scopes accounted for",
   "baseline_head": "cdc513e299da8a6bb83148e6630f147d25ff4678",
   "books": [
     "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u6218\u6597\u8bbe\u8ba1/\u64cd\u4f5c\u54cd\u5e94/Warlander\u5982\u4f55\u533a\u5206\u62db\u5f0f\u53d6\u6d88\u4e0e\u8f93\u5165\u7f13\u5b58.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Publish exact reviewed tree; integrate reviewed Horizon and L4D cases while matrix and prediction rewrites continue; no new topics",
+  "next_action": "Integrate reviewed Horizon streaming and L4D pacing cases; continue matrix and prediction rewrites and finite scope dispositions; no new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Warlander\u8f93\u5165-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Factorio\u7f13\u5b58-\u72ec\u7acb\u5ba1\u8bfb.md",
@@ -45,10 +45,12 @@
     "new_book_requirement": false
   },
   "validation": {
+    "selected_blob_hashes_verified": 19,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1080,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "queue_artifact_paths_checked": 240,
-    "inventory_shelf_entries_checked": 55,
-    "runtime_experiments": 0
-  }
+    "remote_books_read_back": true
+  },
+  "commit_sha": "2c90c951e2c5deb5fd4e37acaec43d857c27b383"
 }
