@@ -3341,25 +3341,28 @@
     },
     {
       "id": "TASK-2026-0128",
-      "question": "Does one existing high-value source-only solution hide a premise that could invalidate its central receiving claim?",
-      "discipline": "ENGINE",
-      "status": "researching",
+      "question": "Can immediate story-output checks exclude state changes caused by omitted default globals during content migration?",
+      "discipline": "PROG",
+      "status": "reviewing",
       "priority": 92,
-      "priority_rationale": "Attempt to falsify an existing claim before adding coverage; prioritize substantive hidden premises over routine review counts",
-      "expected_artifact": "A bounded adversarial source audit, with correction only if evidence establishes a gap",
-      "artifact_paths": [],
+      "priority_rationale": "Attempted falsification found no central error but a concrete source-backed state-migration completeness limit",
+      "expected_artifact": "Bounded adversarial audit and a dated link from the unchanged prior analysis",
+      "artifact_paths": [
+        "research/audits/ink-default-migration/review.md",
+        "research/source-notes/ink-save-content-compatibility.md"
+      ],
       "acceptance": [
-        "Inspect actual existing target and record exact identity",
-        "Use original source or specification with version scope",
-        "Identify a concrete counterexample or receiving decision not already covered",
-        "Reject generic or duplicative expansion and preserve source-access limits",
-        "No participant data, private runtime artifacts or held publication content"
+        "Do not invent a central-claim correction; preserve existing content-version and host-binding conditions",
+        "Bind default omission and restore branches to fixed original source",
+        "Keep boolean counterexample conditional and unexecuted",
+        "Separate migration policy from immediate output equality and from historical value recovery",
+        "No actual saves, runtime execution, inkjs parity or broad migration certification"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:38:15.862201Z",
-      "next_action": "Inspect existing-depth-selection-16 source audit and reproduce its attempted falsification against exact published prose",
+      "last_progress_at": "2026-11-01T07:41:35.998872Z",
+      "next_action": "Review exact audit and original source-note preservation before publication",
       "blockers": []
     }
   ]

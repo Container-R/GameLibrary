@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T074200Z-ink-default-migration-audit",
+  "task_ids": [
+    "TASK-2026-0128"
+  ],
+  "started_at": "2026-11-01T07:39:04Z",
+  "ended_at": "2026-11-01T07:42:21.234107Z",
+  "outcome": "independently source-reviewed and editorially accepted; ready for publication",
+  "sources": [
+    "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/VariablesState.cs#L145-L225",
+    "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs#L303-L348"
+  ],
+  "evidence": "Main and independent reviewer read fixed serializer/default-snapshot/load code and existing note",
+  "original_contribution": "Conditional omitted-boolean default migration shows why immediate output matching does not exhaust state-preservation decisions",
+  "negative_results": [
+    "No central-claim error found in the existing source note",
+    "Direct dictionary restoration does not support the proposed eager variable-observer allegation"
+  ],
+  "runtime_experiments": 0,
+  "limitations": [
+    "No compiled story, actual save, runtime or inkjs execution",
+    "No complete load-success, diagnostic-count or branch observation",
+    "No exhaustive type or host-side-effect validation",
+    "Migration may intentionally adopt new defaults when explicitly approved"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 128,
+    "static_archive_checks_normal": 519,
+    "static_archive_checks_optimized": 519,
+    "static_archive_failures": 0,
+    "declared_paths_checked": 172
+  },
+  "next_action": "Continue original-source investigation of a distinct high-value engineering boundary"
+}
