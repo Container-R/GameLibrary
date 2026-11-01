@@ -211,3 +211,5 @@ python3 scripts/evidence/test_verify.py
 [Vulkan present fence 的退役覆盖](source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。
 
 [For Honor 动作事件标记与请求时刻](../case-studies/animation/for-honor-motion-matching-event-request.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
+
+[FFXV 预结束段与同步窗口](source-notes/ffxv-pre-end-music-window.md)补强既有音乐时间交接：原始会议资料区分准备阶段与最终固定/可变编排；没有新增运行或听感结果。

@@ -7,7 +7,7 @@ primary_discipline: SFX
 related_disciplines: [MUSIC, PROG, DESIGN, QA]
 related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay-programmer, qa-engineer]
 updated_at: 2026-11-01
-verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；补充 FMOD 虚拟化及事件／bank 生命周期的官方文本溯源与未执行观察、退出合同；未运行中间件或游戏引擎
+verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；新增 MAGI/FFXV 历史演讲正文及指定图页审阅与未执行内容接收问题；原创假端口模型7项测试及200条有界调度复核；补充 FMOD 虚拟化及事件／bank 生命周期的官方文本溯源与未执行观察、退出合同；未运行中间件或游戏引擎
 sources:
   - https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html
   - https://www.fmod.com/docs/2.04/studio/advanced-topics.html
@@ -19,6 +19,8 @@ sources:
   - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game.html
   - https://www.gamesounddesign.com/in-depth-creation-of-dynamic-music-in-a-video-game-page-four.html
   - https://github.com/audiokinetic/WwiseIncludes/blob/be96b3af20bf27647f458bac10d973a63cd75e02/SDK/include/AK/SoundEngine/Common/AkSoundEngine.h
+  - https://www.gdcvault.com/play/1024486/Epic-AND-Interactive-Music-in
+  - https://media.gdcvault.com/gdc2017/Presentations/Iwamoto_Sho_Epic_AND_Interactive.pdf
 ---
 
 # 交互音乐状态交接契约：玩法意图不等于可听见的切换
@@ -98,6 +100,16 @@ FMOD 2.04 文档中，`stop(ALLOWFADEOUT)` 允许 AHDSR 的 release 与 DSP 尾�
 FMOD 2.04 API Guide §13.4/13.8/13.11也直接说明命令异步处理、样本加载与依初始化设置变化的回调线程；deferred marker/beat设置不能推广为所有回调都在游戏线程。[当前版本依据](https://www.fmod.com/docs/2.04/api/studio-guide.html)
 
 回调处理建议只搬运小型有界记录，避免磁盘 I/O、阻塞等待和直接调用游戏对象；具体线程归属、同步方式与溢出策略由音频程序员按集成版本验证。这里提出实时路径防护要求，并未验证某个回调一定运行在音频线程。
+
+#### 制作案例：提前进入预结束段，不等于最终同步已解决
+
+《Final Fantasy XV》的 MAGI 制作演讲给出另一项内容约束：为了保留乐曲推进，某些转场使用逐曲安排的同步点，而非任意拍点；讲者举出可能等待16小节、约14秒的情形。其结构将主循环到预结束段设为音乐优先，再将预结束段到结束段设为同步优先。利维亚桑案例分别用龙卷风与结尾场景启动这两阶段。[GDC 2017 原始幻灯片，PDF第26–27、31页](https://media.gdcvault.com/gdc2017/Presentations/Iwamoto_Sho_Epic_AND_Interactive.pdf)
+
+第32页的最终同步图还区分固定场景片段与可变 QTE、音乐过渡时间。因此，准备进入预结束段和最终高潮的时间编排不能压成一个“提前触发”指令。这里是该项目公开的制作方案，不是通用等待上限，也不是当前中间件的调度保证。
+
+**原创接收问题：**一个需要音乐结束落点的遭遇，是否同时交代了准备信号、允许的音乐入口、最终编排的固定段落与可变玩家操作窗口？若只有终止事件，不应仅凭合法同步点承诺既保留完整乐句又立即落到结尾。窗口不足时，应明确讨论改写过渡、调整入口或接受时序折中；这些是接收方的选择，不冒称 FFXV 的兜底规则。
+
+本例不推断图形比例、时长相加关系或预测算法，也未验证听感及运行时行为。资料版本与阅读范围见[来源记录](../../research/source-notes/ffxv-pre-end-music-window.md)。
 
 ### 4. 虚拟化必须注明观察层：事件非虚拟，不等于关键声道参与混音
 
