@@ -193,3 +193,5 @@ python3 scripts/evidence/test_verify.py
 [Detour 成功位与两种容量](source-notes/detour-findpath-status-and-capacity.md)区分搜索到达与输出前缀，给出未执行的截断反例和保守调用者接收政策；没有导航查询运行。
 
 [NativeArray 副本与释放责任](source-notes/nativearray-copy-and-disposal-ownership.md)分开包装字段、分配存活与释放作业完成；原创协议显式收齐使用者，不把 IsCreated 当全局安全证明。
+
+[释放与复用合同路由](source-notes/resource-release-and-reuse-routing.md)区分分配完成、操作引用放弃、音频 bank 政策与正常呈现同步复用；原创 adapter 审查不把不同证据压成通用 done 布尔值，无新增 SDK 执行。

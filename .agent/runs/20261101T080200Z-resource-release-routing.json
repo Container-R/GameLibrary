@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T080200Z-resource-release-routing",
+  "task_ids": [
+    "TASK-2026-0131"
+  ],
+  "started_at": "2026-11-01T07:57:00Z",
+  "ended_at": "2026-11-01T08:02:58.462409Z",
+  "outcome": "source-only synthesis accepted; publication pending",
+  "evidence": "Five exact published input bodies with restricted source-only scopes; fresh independent primary-source and final-note review",
+  "original_contribution": "Four distinct permitted actions, typed adapter reception questions and an unexecuted retire-queue counterexample",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No universal shutdown barrier or complete resource manager",
+    "No SDK, model, engine, audio or driver execution",
+    "No existing runtime result inherited",
+    "FMOD policy handoff is not sufficient unload permission; Vulkan normal-cycle reuse excludes teardown"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 131
+  },
+  "next_action": "Continue bounded source-depth research after publication verification"
+}
