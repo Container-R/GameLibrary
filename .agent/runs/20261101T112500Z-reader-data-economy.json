@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:24:13Z",
-  "ended_at": "2026-11-01T11:25:19.171697Z",
-  "outcome": "Completion-rate and economy rewrites and reader routes accepted; remote publication pending",
+  "ended_at": "2026-11-01T11:29:57.596712Z",
+  "outcome": "Completion-rate and single-player economy books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "69325abf4a40cca9c69ffdaaf06de47418daa0b9",
   "books": [
     "GameLibrary/\u6570\u636e\u5206\u6790/\u6307\u6807\u8bbe\u8ba1/\u73a9\u5bb6\u884c\u4e3a/\u5982\u4f55\u8ba1\u7b97\u5173\u5361\u5b8c\u6210\u7387.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Complete completion-rate and economy reader reviews and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing alpha-compositing and PCM-loop books with independent reader reviews; retain composite chapter backlog; no new topics",
   "editorial_integration": "Completion-rate bottom heading normalized from \u53c2\u8003\u8d44\u6599 to \u53c2\u8003\u6765\u6e90; both books add return footer",
   "content_review": "Both independent reader reviews accepted, including member-level denominators and economy arithmetic; no new runtime checks",
   "navigation_review": "Data analysis and game design routes followed with matching titles and return links",
@@ -33,5 +33,14 @@
     "total": 55,
     "rewritten": 11,
     "legacy": 44
+  },
+  "commit_sha": "960c4748d1680921b2f20694ab609e230bc006e7",
+  "validation": {
+    "selected_blob_hashes_verified": 15,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1051,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_home_read_back": true
   }
 }
