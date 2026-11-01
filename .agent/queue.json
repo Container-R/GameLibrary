@@ -304,8 +304,8 @@
       "lease_until": "2026-11-02T00:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T23:10:45Z",
-      "next_action": "Continue source-grounded engineering depth after duplicate screening; keep paper counterexamples separate from native observations and defer unsupported full rotational inertialization.",
+      "last_progress_at": "2026-11-01T23:19:06Z",
+      "next_action": "Continue finite high-value engineering research and independent review; keep rotational coordinate-rate explanation separate from unimplemented moving-target inertialization.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6387,6 +6387,34 @@
       "next_action": "Follow the actual API direction and interval contract; floating error, projective maps and complete transformed intersection remain outside this paper example.",
       "blockers": [],
       "verification_method": "Fixed original source and exact-real affine arithmetic, independently reviewed; no new ray query, build or rendering."
+    },
+    {
+      "id": "TASK-2026-0172",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can the derivative of a scaled-axis-angle vector differ from both body and world angular velocity when connecting animation state?",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Resolve one explicitly excluded representation prerequisite with an optional readable mathematical appendix, not an unsupported complete rotational algorithm.",
+      "expected_artifact": "管理档案/支持资料/旋转向量与角速度/README.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+        "管理档案/支持资料/旋转向量与角速度/README.md",
+        "管理档案/审查/旋转向量与角速度-读者与数学审查.md"
+      ],
+      "acceptance": [
+        "Fixed primary mathematical source and convention checks",
+        "One local non-coaxial paper example checked through Jacobian and direct quaternion differentiation",
+        "Frame and parameter derivative distinguished before formulas",
+        "Independent complete support and parent-reader review with return navigation"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T23:19:06Z",
+      "next_action": "Check actual representation and frame contracts before connecting velocities; moving target composition, branch handling, estimation and full inertialization remain separate.",
+      "blockers": [],
+      "verification_method": "Primary-source reading with selected PDF equations visually checked, original exact-real quaternion derivative and independent review; no numerical trajectory or engine execution."
     }
   ],
   "execution_policy": {

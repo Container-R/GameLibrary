@@ -491,7 +491,14 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
+      "latest_increment": {
+        "scope": "Optional source-grounded rotation-coordinate versus physical angular-rate explanation; original main text remains a scalar method.",
+        "reader_review": "管理档案/审查/旋转向量与角速度-读者与数学审查.md",
+        "support_path": "管理档案/支持资料/旋转向量与角速度/README.md",
+        "reader_sha256": "418db06b5a21d7bafd11cf5f3fba4c49a44b00e3e1d4914f4912c86998ab73ea",
+        "support_sha256": "2c270f28806dbedcf5bd4f60da8f32ce455e0c0a729ee9fab53fc31abcd6032b"
+      }
     },
     {
       "internal_id": "SOL-ANIM-001",
