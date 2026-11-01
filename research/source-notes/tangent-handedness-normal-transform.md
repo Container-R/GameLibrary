@@ -78,3 +78,5 @@ N_{\rm wrong}\cdot T'=\frac{4-1}{5}=\frac35.
 本例的 determinant 为正。[glTF 实例化条款](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2195-L2203)另行规定 determinant 符号与正面绕序的关系；绕序、法线方向及副切线构造不是同一个字段。本文不据此要求所有接收器统一翻转 w，也不宣称示例渲染器的负缩放实现有缺陷。
 
 这里没有证明插值后的基仍正交、normal-map 重建正确或画面无伪影。奇异/近退化变换、剪切、蒙皮、morph、切线生成、双面材质和纹理变换需要各自的合同与证据；不能把一次顶点基手推推广为完整渲染流水线认证。
+
+生成之前后的共享关系另见[面角切线输出与重索引](tangent-corner-output-and-reindexing.md)：旧索引可以提供输入属性，却未必能保存新增切线的逐面角区别；该来源分析与原创手推不改变本文的变换范围。

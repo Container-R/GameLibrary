@@ -1,0 +1,17 @@
+{
+  "kind": "author-self-review",
+  "date": "2026-11-01",
+  "intended_path": "research/source-notes/tangent-corner-output-and-reindexing.md",
+  "id": "NOTE-MODEL-TANGENT-INDEX-001",
+  "note_sha256": "76c1f632fed1b78f4dd70c19534d12c88f4aee2bacdeed3cc02aafd17de03da8",
+  "body_sha256": "436fa2a7f2fc1758710636f2408f834446aa77cf7c81e7b10175be98b2dfb588",
+  "source_scope": "Fixed author header output callbacks; C output/orientation/group branches; fixed glTF Using Primitive Data. No algorithm execution.",
+  "original_contribution": "Two triangle corner parameterization and explicit six-record/index mapping; full final attribute equivalence required, not w alone.",
+  "limitations": [
+    "No actual MikkTSpace output bytes",
+    "No exporter/importer/rendering execution",
+    "No general pipeline guarantee",
+    "Unlisted per-vertex attributes not validated"
+  ],
+  "review_status": "awaiting independent review"
+}

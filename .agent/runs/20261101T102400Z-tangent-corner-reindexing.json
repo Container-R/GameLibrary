@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T102400Z-tangent-corner-reindexing",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0150"
+  ],
+  "started_at": "2026-11-01T10:24:03Z",
+  "ended_at": "2026-11-01T10:27:21.995709Z",
+  "outcome": "Independently reviewed tangent-corner reception note; publication validation pending",
+  "sources_examined": [
+    "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h",
+    "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.c",
+    "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc"
+  ],
+  "evidence_added": "Author output callback domain and orientation group checks, with pinned glTF frame convention",
+  "original_contribution": "Two mirrored-UV triangles sharing old position/normal/UV need distinct final sign records; explicit one-to-many remap preserves face corners",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No actual generator output, export, import, rendering or GPU execution",
+    "Finite nondegenerate triangles only; no morph, skin or quad policy",
+    "Complete final-attribute equivalence remains required; no generic epsilon",
+    "No observed exporter defect or rendered seam",
+    "Prior tangent transform note unchanged outside one cross-link"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 150,
+    "inverse_patch_reproduces_base_bytes": true,
+    "indexed_articles": 55,
+    "archive_consistency_checks": 519,
+    "archive_consistency_failures": 0,
+    "normal_and_optimized_agree": true,
+    "archive_scope": "Declared archive consistency only, not new runtime, binary authenticity or semantic correctness"
+  },
+  "next_action": "Verify exact publication then adversarially review recent distinct source notes before expanding scope"
+}
