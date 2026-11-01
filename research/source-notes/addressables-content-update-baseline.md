@@ -25,3 +25,13 @@
 ## 当前没有的证据
 
 未执行 Unity、Addressables 构建、远程服务请求或旧版 Player 加载；未安装或探测本机 Unity 能力。没有构造 Python 替身来冒充包行为。邻近 Godot 导入、候选依赖隔离及同路径请求实验不适用于本次运行结论。需要合法可用的对应 Unity 项目和隔离托管环境后，才可执行正文的有限对照；未执行状态不能因来源审阅通过而升级。
+
+## 2026-11-01 补充阅读：依赖消费者与输出粒度
+
+保留上文 2026-10-31 的阅读记录：当时 S4 的依赖示例仅作为起始背景，未据其建立完整依赖算法。此次追加阅读不把原记录追溯改成“当时已完整核对”。
+
+本次实际读取 [Content update examples — Content update dependencies](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html#content-update-dependencies) 正文与 HTML 表格（当次位置 272–387），覆盖单支、共享依赖及资产间引用链的官方假想示例；另重新读取 [Content update build settings — Unique Bundle IDs setting](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html#unique-bundle-ids-setting)（163–172）。并追加读取 [Content Packing & Loading schema reference — Advanced Options / Bundle Mode](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/ContentPackingAndLoadingSchema.html#advanced-options) 的配置行（238–239），仅用于说明组内打包模式需要记录，不据此扩展压缩、缓存或完整打包实现结论。三页实际包标识均为 **1.21.21**，不是不可变实现提交；未检查图片或包源码。
+
+文章 §3.1 据此区分直接编辑、依赖消费者、检查后资产组织与最终 bundle/catalog。装备与共享纹理场景及接收表是原创、未执行的交接建议；没有把官方示例换名当作独立实验，也没有从资产数量推导输出文件或下载字节。具体迁组与输出保持未知，等待实际工具结果。
+
+此补充不验证任意传递闭包、循环或隐式依赖的检测实现，也不把 `Unique Bundle IDs` 的 bundle 重建影响与限制检查的迁组混成同一机制。没有执行 Unity、构建、客户端加载或测量更新成本；原有运行证据边界不变。

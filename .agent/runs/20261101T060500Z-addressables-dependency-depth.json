@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T060500Z-addressables-dependency-depth",
+  "task_ids": [
+    "TASK-2026-0111"
+  ],
+  "started_at": "2026-11-01T06:03:17Z",
+  "ended_at": "2026-11-01T06:05:14.030491Z",
+  "outcome": "integrated source depth and editorial review accepted; publication pending",
+  "sources": [
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html#content-update-dependencies",
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html#unique-bundle-ids-setting",
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/ContentPackingAndLoadingSchema.html#advanced-options"
+  ],
+  "evidence": "Versioned mutable 1.21.21 official text and HTML dependency tables directly read; Bundle Mode row and Unique Bundle IDs conditions",
+  "original_contribution": "Integrated dependency-consumer / restriction-group / bundle-catalog / client-cache handoff within existing SOL-ENGINE-002, no new article",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No Unity implementation, build, hosting or client execution",
+    "Original equipment/shared-texture example has no observed migration or output",
+    "No arbitrary dependency closure algorithm, byte/download counts or current-version guarantee",
+    "Prior partial source-reading history preserved with dated addendum",
+    "All prior experiments and other solution files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 111,
+    "accepted_article_sha256": "4b61e9ff20ab730d7566a7d9a01a0b204fa4ea9390308971ee38299a32faf9a9",
+    "accepted_source_note_sha256": "ea98b43e276c3e451e3d2ac4a6a6714e8e80a1e76d4d593e2f6dee7e186904c9",
+    "static_archive_checks": 519,
+    "static_archive_failed": 0,
+    "optimized_python_archive_checks": 519,
+    "declared_paths_checked": 140,
+    "prepublication_correction": "Remove stale current-scope source count from final navigation label; preserve historical five-page record"
+  },
+  "next_action": "Review next concrete existing knowledge gap without expanding article counts"
+}

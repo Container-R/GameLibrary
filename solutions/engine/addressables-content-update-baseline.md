@@ -10,15 +10,16 @@ related_topics: [addressables, content-update, build-baseline, release-compatibi
 engines: [Unity]
 versions: ["Addressables 1.21.21 官方文档；未执行 Unity"]
 platforms: [跨平台，具体发布平台须分别验证]
-updated_at: 2026-10-31
+updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 五篇 Unity 官方版本化文档逐节核对；原创基线选择与旧版客户端验收协议，未执行 Unity 构建、内容托管或客户端加载测试
+verification_method: 六篇 Unity 官方版本化文档在所列章节核对；原创基线选择、依赖交接与旧版客户端验收协议，未执行 Unity 构建、内容托管或客户端加载测试
 sources:
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-overview.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-create.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html
+  - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/ContentPackingAndLoadingSchema.html
 ---
 
 # Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端
@@ -27,7 +28,7 @@ sources:
 
 给已发布 Player（客户端构建）P 做内容更新，不能只交付“构建成功”和一个 catalog。应回答两个不同问题：**本次实际读取的 previous state 属于 P 的哪个平台发行基线？P 是否能通过这个候选 catalog 加载预期的新旧内容？** 第一问是构建输入身份，第二问是运行兼容性；任一未知都不应改写为通过。
 
-本文是文档支持的工程协议，不是 Unity 实验报告。下述假设场景、验收门禁和记录字段均为原创建议；没有 Unity 构建、客户端运行、服务部署或下载量数据。阅读日期为 2026-10-31，版本页面标识 Addressables 1.21.21。
+本文是文档支持的工程协议，不是 Unity 实验报告。下述假设场景、验收门禁和记录字段均为原创建议；没有 Unity 构建、客户端运行、服务部署或下载量数据。初始阅读日期为 2026-10-31；2026-11-01 补读依赖示例与 Bundle Mode，并加入 §3.1。版本页面标识 Addressables 1.21.21。
 
 ## 1. 一个容易遗漏的具体输入边界
 
@@ -63,6 +64,25 @@ sources:
 
 原创建议：给内容作者一张“变更资产 → 使用它的场景/功能 → 预期新语义”的小清单，再由构建负责人核对真实输出引用。分组规则负责打包组织，功能负责人负责语义验收；不要让“静态”一词替代任何一项责任。
 
+### 3.1 未编辑资产，也可能进入更新范围：先追依赖，再看打包结果
+
+“内容作者只改了一个文件”不能直接推出“发布只需替换一个 bundle”。官方 *Content update dependencies* 的假想示例说明，依赖变化也会使未直接编辑的消费者进入更新组，影响可沿资产引用链传播。这里补充的是文档机制，不是本库构建结果或通用依赖检测算法。[S4：依赖示例](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html#content-update-dependencies)
+
+考虑一个**原创、未执行的交接场景**：两种装备各自通过材质引用同一纹理，第三种装备使用另一组材质与纹理。内容作者只改共享纹理。此时，两种装备的源文件可以都没有编辑，但“没有编辑”不等于“更新依赖未变”；也不能反过来直接宣布这两个装备必然分别产生两个新 bundle。实际分组、依赖表示与检查结果仍待核对。
+
+| 接收层 | 针对此次共享纹理变更要回答什么 | 在实际结果出现前保留什么未知 |
+|---|---|---|
+| 编辑对象与引用关系 | 哪个纹理变了；哪些材质直接引用它，哪些装备经这些材质间接引用；第三种装备是否确实没有相关依赖 | 未核对的引用边不能因“文件没改”而删除，也不能凭相似外观补出 |
+| 限制检查后的资产组织 | 在既定发行基线和组 restriction 下，工具实际移动了哪些资产；哪些仍留在原组 | 预先关注的消费者不是已观测的迁组清单 |
+| 构建后的打包与引用 | 保留各组实际 Bundle Mode；受影响资产被放进哪些 bundle，是否与其他内容同包；候选 catalog 实际指向哪些新旧输出 | 资产数量不能直接换算为 bundle 数量、文件字节数或下载量 |
+| 客户端接收 | 使用哪个旧版客户端与缓存前提，加载哪种装备验证共享纹理的新语义；用第三种装备核对预期不变内容 | 构建输出变化不替代客户端语义结果，也不证明每个用户都下载相同文件 |
+
+其中，组并不天然对应一个输出文件：官方 `Bundle Mode` 决定组内资产如何打包，因此应记录实际模式，再核对构建输出，而不是用组数代替 bundle 数。[Content Packing & Loading：Advanced Options / Bundle Mode](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/ContentPackingAndLoadingSchema.html#advanced-options)
+
+这张表是接收建议，不是独立发明或复现 Unity 的依赖算法。它补充前文的基线门禁：**即使用对了原始基线，更新范围仍需从依赖关系与实际打包结果核对，不能只从编辑清单推算。**
+
+还应把两种影响分开：限制检查决定资产组织；`Unique Bundle IDs` 则服务于内存中新旧 bundle 共存时的身份冲突问题。设置页明确指出，启用该选项时，包含引用变更资产的 bundle 也需要重建。它可以扩大更新成本，但不能据此把每次迁组都解释为该选项造成，或不经构建就填入具体成本数字。[S2：Unique Bundle IDs](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html#unique-bundle-ids-setting)
+
 ## 4. 旧版客户端验证：最小有区分力的候选测试
 
 先限定发行线和平台，再选一个可明确识别版本的变更资产 A，以及同一交付范围中预期不变的资产 B。预先写下 A 的新语义和 B 的原语义，不能加载后再把观察到的值填成预期。以下四步是**待实施协议**，不是测试结果：
@@ -90,4 +110,4 @@ sources:
 
 - [构建工程师](../../roles/engine/build-engineer.md)：把包内程序与外部内容组合交付；本文补充基线身份这一个具体门禁。
 - [干净检出后的资产导入](asset-import-intent-contract.md)：同样重视输入意图，但其 Godot 导入与资源候选实验**不能充当本文 Unity 流程的运行证据**。
-- [来源核对记录](../../research/source-notes/addressables-content-update-baseline.md)：五篇官方文档的版本、章节和证据边界。
+- [来源核对记录](../../research/source-notes/addressables-content-update-baseline.md)：官方文档的版本、章节、分日补读记录和证据边界。

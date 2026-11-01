@@ -2870,11 +2870,13 @@
       "id": "TASK-2026-0111",
       "question": "How can changed Addressables dependencies affect unedited consumers, and how do restriction-group changes differ from bundle rebuild and download granularity?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Deepen an explicitly unread dependency-example gap in existing SOL-ENGINE-002 rather than expanding topic counts",
       "expected_artifact": "Bounded official-source deepening of existing Addressables topic after full-file privacy and evidence review",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/engine/addressables-content-update-baseline.md"
+      ],
       "acceptance": [
         "Read official 1.21.21 dependency examples and Unique Bundle IDs scope directly",
         "Distinguish edited files, dependency consumers, restriction-group changes and output bundles",
@@ -2885,8 +2887,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:40:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:02:34.014702Z",
-      "next_action": "Review Addressables dependency examples and select safe existing-topic integration",
+      "last_progress_at": "2026-11-01T06:05:14.030491Z",
+      "next_action": "Review integrated dependency and packing-granularity section and publish existing-topic depth",
       "blockers": []
     }
   ]
