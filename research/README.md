@@ -223,3 +223,5 @@ python3 scripts/evidence/test_verify.py
 [三个生产案例的对抗审查](audits/production-case-adversarial-review/REVIEW.md)复核 Horizon、Warlander 与 For Honor 的来源和推理边界；发现并精确修订 Warlander 类别数量措辞，不以负面结果认证全库或实际运行。
 
 [延迟补偿的目标与历史样本](source-notes/lag-compensation-target-and-history-sample.md)以固定 Valve SDK 源码和原创手算，区分命令目标、服务器接受目标与条件历史采样；不把位置候选称为实际命中或全世界回退。
+
+[三项来源深度的独立对抗审查](audits/three-source-depth-adversarial/REVIEW.md)重新核对实验分配/暴露、延迟补偿目标/历史样本与面角切线重索引；所绑定正文未发现需修正项，不等于估计器、命中或渲染验证。

@@ -3980,6 +3980,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T10:28:59.604307Z",
       "commit_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec"
+    },
+    {
+      "id": "TASK-2026-0151",
+      "question": "Do three newly published source-only mechanisms survive fresh adversarial original-source review without borrowing runtime evidence?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 88,
+      "priority_rationale": "Independent reviewer outside authorship/final-review roles challenges recent statistical, networking and mesh-reception examples before more expansion",
+      "expected_artifact": "Exact-snapshot adversarial review with source reading scope and bounded negative findings",
+      "artifact_paths": [
+        "research/audits/three-source-depth-adversarial/REVIEW.md"
+      ],
+      "acceptance": [
+        "Bind exact three remote and local artifact identities",
+        "Independently reopen decisive original sources",
+        "Challenge assignment/exposure selection and estimand scope",
+        "Challenge target replacement and history boundary paths",
+        "Check all six tangent remap corner identities",
+        "Do not certify runtime or whole repository from negative findings"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T11:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:31:37.221461Z",
+      "next_action": "Archive bounded no-correction review while preserving all reviewed notes unchanged",
+      "blockers": []
     }
   ]
 }
