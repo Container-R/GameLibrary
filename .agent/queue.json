@@ -4061,8 +4061,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T11:53:32.649048Z",
-      "next_action": "Complete navigation-readiness and gameplay-programmer reader reviews and routes; then continue existing-book remediation without new topics",
+      "last_progress_at": "2026-11-01T11:57:25.344715Z",
+      "next_action": "Rewrite existing build-engineer and quality-assurance books; audit retained original scopes with independent reader reviews; retain composite chapter backlog; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4085,7 +4085,9 @@
         "eighth_reader_batch_published_sha": "4a7030576784bcf83470b8dc37b25179e2a0f79c",
         "eighth_batch_readback_verified": true,
         "ninth_reader_batch_published_sha": "792160e3e85526ea1a5ca63a96a2be1bbeb05c09",
-        "ninth_batch_readback_verified": true
+        "ninth_batch_readback_verified": true,
+        "tenth_reader_batch_published_sha": "47b38beca46ea2329acecd7714663163e2f1df0d",
+        "tenth_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }
