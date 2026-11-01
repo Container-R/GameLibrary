@@ -769,6 +769,10 @@
       "case-studies/animation/ffxv-vaulting-successor-candidates.md",
       "case-studies/design/warlander-cancel-input-reservation.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前路径存在性清单；Warlander 旧正文已仅保留在固定 Git 历史，当前正文见图书目录。",
+    "historical_article_urls": {
+      "case-studies/design/warlander-cancel-input-reservation.md": "https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md"
+    }
   }
 ]

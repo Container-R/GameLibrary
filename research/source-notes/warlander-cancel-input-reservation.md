@@ -1,6 +1,6 @@
 # Warlander 取消许可与输入预约：来源定位
 
-2026-11-01。对应 [CASE-DESIGN-001](../../case-studies/design/warlander-cancel-input-reservation.md)。
+2026-11-01。对应 [CASE-DESIGN-001 历史正文](https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md)；当前读者正文见[Warlander如何区分招式取消与输入缓存](../../GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md)。
 
 唯一正式来源为 [Toylogic 官方技术博客《アクションゲームの手触りについて》](https://blog.toylogic.co.jp/programmer/3758.html)，发表日期 2023-07-13。文末署名 T.K，正文自述负责 Warlander 动作程序。它是日语开发者制作说明，不是当前游戏版本文档或内部源码。
 

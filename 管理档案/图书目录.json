@@ -761,7 +761,14 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "区分状态年龄、上游等待与呈现，保留普通同步身份条件；不冒充物理延迟或驱动实测。",
-      "scope_disposition_review": "管理档案/审查/呈现与输入延迟-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/呈现与输入延迟-独立审读.md",
+      "supporting_material_disposition": {
+        "old_section": "§1.1 正常循环中的同步对象：帧槽结束，不是 present 等待结束",
+        "disposition": "现有读者正文已完整覆盖；删除冗余进一步对照链接，原旧文暂留不删。",
+        "covered_by": "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
+        "scope": "保留正常提交、acquire同步、帧槽资源及失败/重建/退出/队列族/扩展排除；无新增运行。",
+        "covered_section": "Vulkan 接入补充：帧槽轮回，不代表呈现信号量可以重用"
+      }
     },
     {
       "internal_id": "SOL-UX-001",
@@ -888,7 +895,10 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "原分类取消与行动预约、同钟三试次、期限端点与条件全部自然承接；未披露实现和旁题外链明确排除，不新增教程",
-      "scope_disposition_review": "管理档案/审查/Warlander输入-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/Warlander输入-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md",
+      "old_path_history_commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba"
     },
     {
       "internal_id": "CASE-ENGINE-001",

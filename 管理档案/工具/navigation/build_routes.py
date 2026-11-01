@@ -4,13 +4,12 @@ import html
 import json
 import os
 import tempfile
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 import sys
 from urllib.parse import quote
 
 STATUSES={'verified','source-backed','experimental','disputed','outdated','needs-research'}
-FOLDERS=('roles','knowledge','solutions','case-studies','comparisons')
 REQUIRED=('id','title','type','status','primary_discipline')
 class Invalid(ValueError): pass
 
@@ -66,17 +65,113 @@ def metadata(text):
     if result['type'] not in {'role','knowledge','solution','case-study','comparison'}: raise Invalid('unknown document type')
     return result
 
-def documents(root):
-    docs={}
-    root=root.resolve()
-    for folder in FOLDERS:
-        for path in sorted((root/folder).rglob('*.md')):
-            if not path.resolve().is_relative_to(root): raise Invalid('source path escapes root')
-            doc=metadata(path.read_text(encoding='utf-8'))
-            if doc['id'] in docs: raise Invalid('duplicate document ID: '+doc['id'])
-            doc['path']=path.relative_to(root).as_posix()
-            docs[doc['id']]=doc
+def source_folders(root, source_dirs):
+    """Read an explicitly declared, nonempty set of legacy frontmatter folders.
+
+    This does not discover or certify the frontmatter-free reader library.
+    Existing symlinks are bounded; hostile concurrent filesystem changes are
+    outside this local maintenance tool's threat model.
+    """
+    root = root.resolve(strict=True)
+    if not root.is_dir():
+        raise Invalid('repository root must be a directory')
+    if not isinstance(source_dirs, (list, tuple)) or not source_dirs:
+        raise Invalid('declare at least one legacy source directory')
+    folders = []
+    for value in source_dirs:
+        if not isinstance(value, str) or not value or value != value.strip():
+            raise Invalid('source directory must be a normalized repository-relative path')
+        pure = PurePosixPath(value)
+        if (pure.is_absolute() or re.match(r'^[A-Za-z]:', value)
+                or '\\' in value or any(ord(c) < 32 or ord(c) == 127 for c in value)
+                or any(x in ('', '.', '..') for x in value.split('/'))):
+            raise Invalid('source directory must be a normalized repository-relative path')
+        folder = root / value
+        if not folder.is_dir():
+            raise Invalid('missing declared source directory: ' + value)
+        resolved = folder.resolve(strict=True)
+        if not resolved.is_relative_to(root):
+            raise Invalid('source directory escapes root')
+        if any(resolved.is_relative_to(prior) or prior.is_relative_to(resolved)
+               for _, prior in folders):
+            raise Invalid('duplicate or overlapping source directories')
+        folders.append((folder, resolved))
+    return folders
+
+
+def documents(root, source_dirs):
+    root = root.resolve(strict=True)
+    folders = source_folders(root, source_dirs)
+    docs = {}
+    for folder, _ in folders:
+        paths = sorted(folder.rglob('*.md'))
+        if not paths:
+            raise Invalid('declared source directory has no Markdown documents: '
+                          + folder.relative_to(root).as_posix())
+        for path in paths:
+            if not path.resolve(strict=True).is_relative_to(root):
+                raise Invalid('source path escapes root')
+            doc = metadata(path.read_text(encoding='utf-8'))
+            if doc['id'] in docs:
+                raise Invalid('duplicate document ID')
+            doc['path'] = path.relative_to(root).as_posix()
+            docs[doc['id']] = doc
+    if not docs:
+        raise Invalid('no legacy documents scanned')
     return docs
+
+
+def reader_documents(root, manifest, expected_count):
+    """Read declared IDs/titles/paths, not editorial or per-book discipline claims."""
+    root = root.resolve(strict=True)
+    if not root.is_dir(): raise Invalid('repository root must be a directory')
+    if type(expected_count) is not int or expected_count <= 0:
+        raise Invalid('reader expected-count must be positive')
+    if not isinstance(manifest, str) or not manifest or manifest != manifest.strip():
+        raise Invalid('manifest must be normalized root-relative path')
+    if (PurePosixPath(manifest).is_absolute() or re.match(r'^[A-Za-z]:', manifest)
+            or '\\' in manifest or re.search(r'[\x00-\x1f\x7f]', manifest)
+            or any(x in ('', '.', '..') for x in manifest.split('/'))):
+        raise Invalid('manifest must be normalized root-relative path')
+    manifest_path = (root / manifest).resolve(strict=True)
+    if not manifest_path.is_relative_to(root): raise Invalid('manifest escapes root')
+    data = registry_load(manifest_path)
+    if not isinstance(data, dict) or not isinstance(data.get('entries'), list) or not data['entries']:
+        raise Invalid('reader entries must be nonempty')
+    docs = {}; paths = set()
+    for entry in data['entries']:
+        if not isinstance(entry, dict): raise Invalid('invalid reader entry')
+        ident = entry.get('internal_id'); title = entry.get('reader_title')
+        if not isinstance(ident, str) or not re.fullmatch(r'[A-Z0-9]+(?:-[A-Z0-9]+)+', ident):
+            raise Invalid('invalid reader ID')
+        plain(title)
+        raw = entry.get('current_read_path')
+        if (not isinstance(raw, str) or not raw.startswith('GameLibrary/') or not raw.endswith('.md')
+                or '\\' in raw or re.search(r'[\x00-\x1f\x7f]',raw)
+                or any(x in ('', '.', '..') for x in raw.split('/'))):
+            raise Invalid('invalid reader path')
+        if entry.get('canonical_reader_path') != raw:
+            raise Invalid('current/canonical path mismatch')
+        target = (root / raw).resolve(strict=True)
+        if not target.is_relative_to(root/'GameLibrary'): raise Invalid('reader path escapes library')
+        if ident in docs or target in paths: raise Invalid('duplicate reader ID/path')
+        if any(target.samefile(prior) for prior in paths): raise Invalid('duplicate reader file')
+        lines = target.read_text(encoding='utf-8').splitlines()
+        if not lines or lines[0] != '# ' + title: raise Invalid('reader H1 mismatch')
+        paths.add(target)
+        docs[ident] = {'id':ident, 'title':title, 'path':raw,
+                       'type':'role' if ident.startswith('ROLE-') else 'reader',
+                       'status':'declared-reader'}
+    if len(docs) != expected_count: raise Invalid('reader document count mismatch')
+    return docs
+
+
+def protect_inputs(output, inputs):
+    for item in inputs:
+        item = Path(item).resolve(strict=True)
+        if output == item or (output.exists() and output.samefile(item)):
+            raise Invalid('output overlaps an input file')
+
 
 def plain(value):
     if not isinstance(value,str) or not value.strip() or '\n' in value or '\r' in value:
@@ -124,16 +219,33 @@ def output_path(root, output):
         raise Invalid('output must be a .md file under 管理档案/草稿')
     return target
 
-def render(root,registry,output=None):
+def render(root,registry,output=None,source_dirs=None,reader_manifest=None,expected_count=None,input_paths=()):
     root = root.resolve()
     output = output_path(root, output or root/'管理档案'/'草稿'/'旧路线候选.md')
+    if (source_dirs is not None) == (reader_manifest is not None):
+        raise Invalid('choose exactly one legacy source set or reader manifest')
+    if reader_manifest is None:
+        if expected_count is not None: raise Invalid('expected-count applies only to reader mode')
+        for _, source in source_folders(root, source_dirs):
+            if output.is_relative_to(source):
+                raise Invalid('output overlaps declared source directory')
+        docs = documents(root, source_dirs)
+    else:
+        docs = reader_documents(root, reader_manifest, expected_count)
+        protect_inputs(output, [root/reader_manifest])
+    protect_inputs(output, list(input_paths) + [root/d['path'] for d in docs.values()])
     def relative(path):
         return quote(Path(os.path.relpath(root/path, output.parent)).as_posix(), safe='/')
-    docs=documents(root);validate(registry,docs)
+    validate(registry,docs)
     def link(ident):
         d=docs[ident]
+        if reader_manifest is not None:
+            return f'[{plain(d["title"])}]({relative(d["path"])}) — `{d["id"]}`'
         return f'[{plain(d["title"])}]({relative(d["path"])}) — `{d["id"]}` · `{d["status"]}` · `{d["primary_discipline"]}`'
     lines=['# 旧路线维护候选（非读者目录）','',f'本文件仅预览旧元数据中的路线关系，不是当前书目或编辑验收结果。读者请使用 [中文书库]({relative("GameLibrary/README.md")})；规范书目由维护者保留在管理档案中，本工具不读写或重新生成它。链接按本草稿所在位置解析。','']
+    if reader_manifest is not None:
+        lines = ['# 稳定ID路线维护候选（非读者目录）', '',
+                 f'依据显式图书清单解析既有路线ID；不推断正文的学科、证据等级或发表状态，不新增读者导览。读者请使用 [中文书库]({relative("GameLibrary/README.md")})。', '']
     for route in registry['routes']:
         lines += [f'## {plain(route["title"])}',f'路线 ID：`{route["id"]}`','']
         if route['kind']=='role': lines += ['岗位起点：'+link(route['subject_profile_id']),'']
@@ -146,11 +258,16 @@ def render(root,registry,output=None):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('root',type=Path);p.add_argument('--registry',type=Path,required=True)
+    mode=p.add_mutually_exclusive_group(required=True)
+    mode.add_argument('--source-dir',action='append',help='Repeatable explicit legacy input directory')
+    mode.add_argument('--reader-manifest',help='Explicit root-relative reader manifest; no YAML scanning')
+    p.add_argument('--expected-count',type=int,help='Required positive exact count in reader mode')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--check',action='store_true')
     args=p.parse_args()
     try:
         args.output=output_path(args.root,args.output) # reject protected targets even in --check mode
-        content=render(args.root,registry_load(args.registry),args.output) # validate before write
+        content=render(args.root,registry_load(args.registry),args.output,args.source_dir,
+                       args.reader_manifest,args.expected_count,input_paths=[args.registry]) # validate before write
         if args.check:
             if not args.output.is_file() or args.output.read_text(encoding='utf-8')!=content:
                 print('navigation differs or is missing',file=sys.stderr);return 1

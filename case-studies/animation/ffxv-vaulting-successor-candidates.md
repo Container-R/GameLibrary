@@ -58,7 +58,7 @@ sources:
 
 ## 与相邻案例的边界
 
-[For Honor 的事件请求](for-honor-motion-matching-event-request.md)关注请求目标时刻与候选源标记；[Warlander 的取消与预约](../design/warlander-cancel-input-reservation.md)关注后续类别许可与请求寿命。本题既不建立目标时间，也不定义输入保留，而是区分**当前内容提供的接续范围**和环境条件下的选择。
+[For Honor 的事件请求](for-honor-motion-matching-event-request.md)关注请求目标时刻与候选源标记；[Warlander 的取消与预约](../../GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md)关注后续类别许可与请求寿命。本题既不建立目标时间，也不定义输入保留，而是区分**当前内容提供的接续范围**和环境条件下的选择。
 
 [根运动与足底接触](../../solutions/animation/turn-in-place-foot-sliding.md)讨论运动应用和姿态接收，不能替本历史系统验证候选、足场或过渡结果。来源未来工作页只限制所讨论越障改善的完成状态，不能扩张成 FFXV 全局能力结论。
 
