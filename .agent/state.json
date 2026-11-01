@@ -13,16 +13,16 @@
     "reader_books_total": 59
   },
   "publication": {
-    "last_verified_head_sha": "7ce5079bd371e9d8d1218ad60e894f0594747912",
+    "last_verified_head_sha": "c32b8d910122bf08846946f047e1be22ae7e7b1d",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
     "scope": "59 reader books: frozen55 rewrites plus4 later studies. Sequence-wrap checks are a finite Python model and selected source guard, not native transport or production verification.",
-    "latest_verified_content_sha": "7ce5079bd371e9d8d1218ad60e894f0594747912",
+    "latest_verified_content_sha": "c32b8d910122bf08846946f047e1be22ae7e7b1d",
     "reader_books_total": 59,
     "post_baseline_research_books": 4,
-    "counts_basis": "Containing commit reader inventory, distinct from previous verified HEAD."
+    "counts_basis": "59 reader inventory entries verified at c32b8d910122bf08846946f047e1be22ae7e7b1d; unchanged by this integration."
   },
-  "next_action": "Verify published sequence-wrap reader and support routes, then choose a concrete nonduplicate engineering gap after inspecting current coverage; keep original-source, independent reader and bounded verification gates.",
+  "next_action": "Evaluate whether glTF external-resource IRI/URI handling is an uncovered concrete import problem; compare current reader coverage and fixed specification/RFC scope before accepting a new artifact.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T19:20:00Z",
+    "lease_until": "2026-11-01T19:30:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T185150Z-sequence-wrap",
+  "last_run_id": "20261101T190034Z-existing-data-support-entry",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T18:51:50Z",
-  "last_commit_sha": "7ce5079bd371e9d8d1218ad60e894f0594747912",
+  "last_real_progress_at": "2026-11-01T19:00:34Z",
+  "last_commit_sha": "c32b8d910122bf08846946f047e1be22ae7e7b1d",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

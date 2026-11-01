@@ -1,0 +1,378 @@
+{
+  "baseline": "c32b8d910122bf08846946f047e1be22ae7e7b1d",
+  "input_scan_sha256": "539e3a79cb39145c0700aec03b499da5c73bb7651670c124fbe035521ab6874a",
+  "tool_status_unchanged": "incomplete",
+  "items": [
+    {
+      "item": 1,
+      "reader": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+      "line": 83,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "3. Khronos，glTF 2.0：[固定版本 Appendix C 的插值定义](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L3979-L4077)。曲线重定时的详细推导留作旧资料支持章节；本文只保留播放时间与存储数据变换需区分的提醒，不声称进行过资产处理。 需要处理实际曲线数据时，可选读[技术支持：曲线重定时推导与手算](../../../../管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够)；理解本书岗位主线不需要先读公式。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/animation/game-animator.md",
+      "fragment": "曲线交接例片段减速时为什么只改关键帧时间还不够",
+      "heading": {
+        "line": 84,
+        "text": "### 曲线交接例：片段减速时，为什么只改关键帧时间还不够？"
+      },
+      "target_sha256": "003ce7f7295c296f59f0507120e7832d071d4582f56661f85610237b084719ba",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 2,
+      "reader": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+      "line": 27,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "详细的资产接收字段可选读[旧资料的素材交付部分](../../../../管理档案/历史正文/roles/audio/interactive-audio-designer.md#g1资产可追溯可重新生成)。它是接收建议，不是已执行的资产检查，也不提供法律许可结论。初学者先把切割器这几段声音交清楚，不必把整张表变成每天填写的负担。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
+      "fragment": "g1资产可追溯可重新生成",
+      "heading": {
+        "line": 64,
+        "text": "### G1：资产可追溯、可重新生成"
+      },
+      "target_sha256": "17674058e4b71dad606b5d3ccc78d5f76912528672aed2eac1b3de74055cded9",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 3,
+      "reader": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+      "line": 67,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "若需要落实更细的接收安排，可选读旧资料从[事件与作用对象](../../../../管理档案/历史正文/roles/audio/interactive-audio-designer.md#g2事件合同能解释什么时候和对谁)到后续 G3–G5 的支持说明：参数的单位与默认值、重新导入构建、后台和设备变化检查，以及批准范围和回退记录。这些是待按项目实施的检查建议，不是本篇已经完成的测试。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
+      "fragment": "g2事件合同能解释什么时候和对谁",
+      "heading": {
+        "line": 83,
+        "text": "### G2：事件合同能解释“什么时候”和“对谁”"
+      },
+      "target_sha256": "17674058e4b71dad606b5d3ccc78d5f76912528672aed2eac1b3de74055cded9",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 4,
+      "reader": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+      "line": 53,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "更细的三种选择比较、触发前日志处理和局限，保留在[旧资料的“方法补充：控制组没有新提示时，怎样定义可比较的资格？”](../../../../管理档案/历史正文/roles/data/game-data-analyst.md#方法补充控制组没有新提示时怎样定义可比较的资格)。它是跨领域方法的游戏化示例，不是已经实施的教程实验。分组比例等检查没有发现异常，也不等于因果解释已经成立；子群的完成率变化更不能随手乘一个人数占比，充当总体收益。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/data/game-data-analyst.md",
+      "fragment": "方法补充控制组没有新提示时怎样定义可比较的资格",
+      "heading": {
+        "line": 77,
+        "text": "### 方法补充：控制组没有新提示时，怎样定义可比较的资格？"
+      },
+      "target_sha256": "88c1e2a82b6c6c7256201d58f653f8a1e6ad8bbb84233cd56b8891104d36b96f",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 5,
+      "reader": "GameLibrary/游戏设计/关卡设计/岗位与协作/关卡策划从白盒到制作交付的工作.md",
+      "line": 70,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "2. Ubisoft Annecy，[*Lead Level Design (F/M/NB) [AAA Project]*](https://jobs.smartrecruiters.com/Ubisoft2/744000140062699)，发布日期未标明；Job Description、Collaboration within the World Team、Collaboration with the rest of the project。负责人岗位样本，不将管理职责推广给所有关卡策划。",
+      "classification": "real external inline link with nested square brackets in italic label",
+      "target": "https://jobs.smartrecruiters.com/Ubisoft2/744000140062699",
+      "finding": "Opened official employer page; title matches; no fragment. Not a current-hiring certification"
+    },
+    {
+      "item": 6,
+      "reader": "GameLibrary/游戏设计/关卡设计/岗位与协作/关卡策划从白盒到制作交付的工作.md",
+      "line": 61,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "这类细节需要关卡和玩法共同决定。旧技术支持段[“动作序列验收：离地后按跳，不一定选择空中跳跃”](../../../../管理档案/历史正文/roles/design/level-designer.md#动作序列验收离地后按跳不一定选择空中跳跃)保留了更细的候选操作比较；它没有证明剩余能力、落点或通关结果。本书不要求新人先掌握控制器实现，而是要知道何时应向玩法同事追问。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/design/level-designer.md",
+      "fragment": "动作序列验收离地后按跳不一定选择空中跳跃",
+      "heading": {
+        "line": 77,
+        "text": "### 动作序列验收：离地后按跳，不一定选择空中跳跃"
+      },
+      "target_sha256": "7aed01b689bd9616f7806f8cb584ccbaa3d415f56dd68c1556968a521dba6c6e",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 7,
+      "reader": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+      "line": 47,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "这段特定工具机制的绑定默认值、禁止提前求值的配置和字符串求值限制，保留在[旧资料“独立 ink 例子：向前探测不等于宿主动作提交”](../../../../管理档案/历史正文/roles/narrative/narrative-designer-writer.md#独立-ink-例子向前探测不等于宿主动作提交)。需要接入该版本时再读。它不提供恰好一次发奖保证；即使正确安排了执行位置，重新进入、读档和重试仍需项目自己的规则。这不是 Guerrilla 或 Monolith 的内部实现，也不是本篇执行过的实验。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
+      "fragment": "独立-ink-例子向前探测不等于宿主动作提交",
+      "heading": {
+        "line": 83,
+        "text": "#### 独立 ink 例子：向前探测不等于宿主动作提交"
+      },
+      "target_sha256": "edfbcbbcb0b32023ad1b9ff7d2d2e34ad1b952a9b17fba239066b265ff8d942d",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 8,
+      "reader": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "line": 71,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "旧资料中的[深度效果选择例](../../../../管理档案/历史正文/roles/rendering/graphics-programmer.md#维护中的具体选择深度效果究竟比较什么量)保留了前后判断、沿视轴的间隔与实际长度的区别，以及 Godot 4.6 两类渲染器的重建条件。需要处理这种迁移时再读；这些来源分析没有编译 shader 或验证水面效果，不能当作通用修补代码。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
+      "fragment": "维护中的具体选择深度效果究竟比较什么量",
+      "heading": {
+        "line": 77,
+        "text": "### 维护中的具体选择：深度效果究竟比较什么量？"
+      },
+      "target_sha256": "3791dae3c512ec6db53749db0cc6dcce59b316f19a92d7d014dcb7347c3e863f",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 9,
+      "reader": "GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md",
+      "line": 54,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "还可以在隔离构建环境中故意准备一个已知不同的 state，并使指定远程文件缺失，检查团队自己的输入核对是否会拦下错配。这个负例不应指向生产服务，也不预设 Unity 最后一定报哪一种错。需要详细分工与记录时，可选读旧文的[基线交接建议](../../../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md#2-原创交接协议把选择结果变成可核对的证据)及[旧客户端检查安排](../../../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md#4-旧版客户端验证最小有区分力的候选测试)。它们仍是未执行方案。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
+      "fragment": "2-原创交接协议把选择结果变成可核对的证据",
+      "heading": {
+        "line": 48,
+        "text": "## 2. 原创交接协议：把选择结果变成可核对的证据"
+      },
+      "target_sha256": "dd256e2fcce97f2a667c4cccdc2a397c2c6f6619abd4d5add0c1bb857fddacf6",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 10,
+      "reader": "GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md",
+      "line": 54,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "还可以在隔离构建环境中故意准备一个已知不同的 state，并使指定远程文件缺失，检查团队自己的输入核对是否会拦下错配。这个负例不应指向生产服务，也不预设 Unity 最后一定报哪一种错。需要详细分工与记录时，可选读旧文的[基线交接建议](../../../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md#2-原创交接协议把选择结果变成可核对的证据)及[旧客户端检查安排](../../../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md#4-旧版客户端验证最小有区分力的候选测试)。它们仍是未执行方案。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
+      "fragment": "4-旧版客户端验证最小有区分力的候选测试",
+      "heading": {
+        "line": 91,
+        "text": "## 4. 旧版客户端验证：最小有区分力的候选测试"
+      },
+      "target_sha256": "dd256e2fcce97f2a667c4cccdc2a397c2c6f6619abd4d5add0c1bb857fddacf6",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 11,
+      "reader": "GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md",
+      "line": 74,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "释放的是操作，不是卸载已经加载的 catalog；它也不保证一定重新下载。按 hash 判断目录缓存是否可用是另一层规则，hash 未变化时仍可能使用缓存。[7][8] 旧资产、设备上的 bundle 缓存，又分别是其他对象。详细的对象区分及两种持有条件对照，可读旧文[附加 catalog 的操作所有权](../../../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md#41-手动加载附加-catalog先交代加载操作的所有权)。不要把其中任何一种“释放完成”当成所有内容已经更新。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
+      "fragment": "41-手动加载附加-catalog先交代加载操作的所有权",
+      "heading": {
+        "line": 104,
+        "text": "### 4.1 手动加载附加 catalog：先交代加载操作的所有权"
+      },
+      "target_sha256": "dd256e2fcce97f2a667c4cccdc2a397c2c6f6619abd4d5add0c1bb857fddacf6",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 12,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 45,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| [0,16) | 前缀，不是本例顶点数据 | 16字节 |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 13,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 46,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| [16,128) | 4条交错顶点记录 | 112字节 |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 14,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 47,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| [128,140) | 6个无符号16位索引 | 12字节 |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 15,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 48,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| [140,160) | 尾部，不属于上述两个view | 20字节 |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 16,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 76,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| 0 | 20 | [20,32) | 32 | [32,44) |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 17,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 77,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| 1 | 48 | [48,60) | 60 | [60,72) |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 18,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 78,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| 2 | 76 | [76,88) | 88 | [88,100) |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 19,
+      "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "line": 79,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| 3 | 104 | [104,116) | 116 | [116,128) |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 20,
+      "reader": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
+      "line": 83,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "若需要核对合并标签为什么会提高或保持精确一致率，可选读旧资料的[标签合并推导与适用边界](../../../../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md#自动编码粗标签一致不能替细工单验收)；那里说明同批条目、相同合并规则等前提，以及粗一致不能验证细工单或转录输入的限制。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md",
+      "fragment": "自动编码粗标签一致不能替细工单验收",
+      "heading": {
+        "line": 64,
+        "text": "## 自动编码：粗标签一致，不能替细工单验收"
+      },
+      "target_sha256": "bff094966eadb6e7fc858af0ae1d0b71530d8c076998873ab5b5f022d62817d4",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 21,
+      "reader": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+      "line": 135,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "| 规则窗口为[6,9) | 6、7、8有效，9无效 |",
+      "classification": "numeric half-open interval, not a link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 22,
+      "reader": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+      "line": 11,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "Killzone 3 的开发者在《Game AI Pro》第 29 章介绍：当前任务可以跨多次更新运行，成功后推进到下一任务，失败则使计划失效。底层技能通过虚拟控制器驱动角色，而不是让规划代码直接控制动画和武器。[1，印刷页 379–380、382]",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 23,
+      "reader": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+      "line": 19,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "来源描述了两种处理。系统会周期性重新规划，并可能用领域中排序更靠前的分支替换现有计划；文中以治疗期间发现附近手雷、转向自保为例。另一方面，领域还定义继续条件；满足时通过一个 `continue` 任务保留当前计划，不必重新展开后续规划。[1，印刷页 382–383]",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 24,
+      "reader": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+      "line": 37,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "来源的小队层也区分下达命令与成员报告到达、完成。[1，印刷页 383–384] 这支持把选择与执行分开理解，但不替上述虚构治疗定义提供现成协议。",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 25,
+      "reader": "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
+      "line": 11,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "Valve 发布目录将 *The AI Systems of Left 4 Dead* 列为 Michael Booth 的 AIIDE 2009 演讲。[1] 相关幻灯片说明：系统从受伤等游戏事件估计各幸存者的强度，取四人最大值，交战中不让估计自然衰减。它经历 Build Up（积累）、Sustain Peak（维持峰值）、Peak Fade（等待峰值消退）、Relax（缓和）四阶段：先供应威胁直到越过峰值阈值，短暂维持，再降低供应、等待强度退出峰值范围，最后保持一段缓和并返回积累。Peak Fade 为现有交战留下结束时间。低威胁配置并不保证没有攻击：既存特殊感染者仍可攻击，Boss 不受该自适应节奏控制。作者将这套算法描述为调节节奏而非难度；物品则另有设计师安排的候选点。[2，第75、79–82、92页]",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 26,
+      "reader": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "line": 13,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "Guerrilla 的幻灯片把对象加载分成反序列化、引用链接、初始化和激活：分别涉及从数据建立对象及属性、连接对象引用、执行初始化代码，以及加入世界、物理等系统。[1，物理页 16–17] 这些名称不要求其他引擎照搬，但提醒我们：磁盘数据已经到内存，并不等于所有后续工作都完成了。",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 27,
+      "reader": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "line": 17,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "资料描述的内容图无环，并要求被引用的对象先初始化。加载时先确定文件图，复用已加载文件并取得引用，把其余文件按深度优先顺序提交异步读取，同时建立对象初始化任务图；文件完成后运行相应的初始化工作。[1，物理页 8、18–20]",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 28,
+      "reader": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "line": 23,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "依赖信息并非到运行时才临时猜测。资料还介绍了转换期生成的预取文件层级，以及发行布局按子图和深度优先关系组织的方法。[1，物理页 29、49] 这使内容加工、文件布局和运行时加载能够围绕同一组依赖安排工作；但读取安排与初始化条件仍然是两种不同的约束。",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 29,
+      "reader": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "line": 48,
+      "reason": "unsupported bracket/reference syntax",
+      "reviewed_line": "Horizon 资料在文件层面采用引用计数：复用已加载文件时取得引用，最后一次释放后卸载。[1，物理页 20] 这给前面的例子一个重要提示：避免重复读取，与正确保存共享资源的使用责任，需要一起考虑。",
+      "classification": "numbered citation with page locator, not a Markdown link",
+      "finding": "No destination or fragment to resolve"
+    },
+    {
+      "item": 30,
+      "reader": "GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md",
+      "line": 61,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "需要落实记录与分工时，可选读旧资料的[测量、放置与准入交接建议](../../../../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md#原创五方交接表测量放置与准入分开)，以及[有限检查问题](../../../../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md#有区分力的验收问题而不是新造一个基准分数)。它们不是Riot内部格式，也不是本库已经通过的负载测试。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
+      "fragment": "原创五方交接表测量放置与准入分开",
+      "heading": {
+        "line": 47,
+        "text": "## 原创五方交接表：测量、放置与准入分开"
+      },
+      "target_sha256": "ea77eb4e062a29f4ceea08b6a896b7addacbe8757b7915837c4191250033d047",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    },
+    {
+      "item": 31,
+      "reader": "GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md",
+      "line": 61,
+      "reason": "unsupported target heading syntax",
+      "reviewed_line": "需要落实记录与分工时，可选读旧资料的[测量、放置与准入交接建议](../../../../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md#原创五方交接表测量放置与准入分开)，以及[有限检查问题](../../../../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md#有区分力的验收问题而不是新造一个基准分数)。它们不是Riot内部格式，也不是本库已经通过的负载测试。",
+      "classification": "existing local fragment; whole-target parser declined YAML/formatting context",
+      "target": "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
+      "fragment": "有区分力的验收问题而不是新造一个基准分数",
+      "heading": {
+        "line": 63,
+        "text": "## 有区分力的验收问题，而不是新造一个基准分数"
+      },
+      "target_sha256": "ea77eb4e062a29f4ceea08b6a896b7addacbe8757b7915837c4191250033d047",
+      "finding": "Target exists within root; exact unique plain heading matches documented GitHub anchor rules"
+    }
+  ]
+}
