@@ -4056,7 +4056,9 @@
         "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u573a\u666f\u5149\u7167/\u5171\u4eab\u706f\u5177\u5982\u4f55\u7ba1\u7406\u8d44\u4ea7\u4e0e\u573a\u666f\u5b9e\u4f8b\u7684\u4fee\u6539.md",
         "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u5185\u5bb9\u534f\u4f5c/\u539f\u6587\u672a\u53d8\u65f6\u54ea\u4e9b\u8bed\u5883\u53d8\u5316\u9700\u8981\u91cd\u65b0\u7ffb\u8bd1.md",
         "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u6218\u6597\u8bbe\u8ba1/\u64cd\u4f5c\u54cd\u5e94/Warlander\u5982\u4f55\u533a\u5206\u62db\u5f0f\u53d6\u6d88\u4e0e\u8f93\u5165\u7f13\u5b58.md",
-        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u8fd0\u884c\u65f6\u7cfb\u7edf/\u7f13\u5b58\u4e0e\u5b58\u6863/Factorio\u7f13\u5b58\u5931\u6548\u4e0e\u8bfb\u6863\u540e\u7684\u91cd\u7b97.md"
+        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u8fd0\u884c\u65f6\u7cfb\u7edf/\u7f13\u5b58\u4e0e\u5b58\u6863/Factorio\u7f13\u5b58\u5931\u6548\u4e0e\u8bfb\u6863\u540e\u7684\u91cd\u7b97.md",
+        "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u4e16\u754c\u52a0\u8f7d/\u8d44\u6e90\u6d41\u9001/Horizon\u5982\u4f55\u7ec4\u7ec7\u8d44\u6e90\u8bfb\u53d6\u4e0e\u4f9d\u8d56\u521d\u59cb\u5316.md",
+        "GameLibrary/\u6e38\u620f\u4eba\u5de5\u667a\u80fd/\u4f53\u9a8c\u8c03\u8282/\u6218\u6597\u8282\u594f/Left4Dead\u5bfc\u6f14\u7cfb\u7edf\u5982\u4f55\u8c03\u8282\u6218\u6597\u8282\u594f.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -4069,8 +4071,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:34:39.551237Z",
-      "next_action": "Integrate reviewed Horizon streaming and L4D pacing cases; continue matrix and prediction rewrites and finite scope dispositions; no new topics",
+      "last_progress_at": "2026-11-01T12:36:01.865719Z",
+      "next_action": "Complete Horizon and L4D actual reader routes; continue existing matrix-layout and client-prediction rewrites without new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

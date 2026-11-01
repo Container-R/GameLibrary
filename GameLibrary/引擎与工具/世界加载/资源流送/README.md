@@ -2,6 +2,6 @@
 
 [返回世界加载](../README.md)
 
-本书架目前链接到旧稿，正在逐篇重写。这些资料可供查阅，但尚未通过新的可读性审查。
+沿四个对象的依赖关系，区分异步读取、初始化、激活和共享资源的释放。
 
-- [Horizon如何组织资源读取与依赖初始化](../../../../case-studies/engine/horizon-streaming-dependency-initialization.md)
+- [Horizon如何组织资源读取与依赖初始化](Horizon如何组织资源读取与依赖初始化.md)

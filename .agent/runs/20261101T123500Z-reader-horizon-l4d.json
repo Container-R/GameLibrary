@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T123500Z-reader-horizon-l4d",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T12:26:54Z",
+  "ended_at": "2026-11-01T12:40:30.905582Z",
+  "outcome": "Horizon streaming and L4D pacing reader bodies and actual navigation accepted; publication pending",
+  "baseline_head": "f48ad9af9110bb14c9ac416978573093154ee760",
+  "books": [
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u4e16\u754c\u52a0\u8f7d/\u8d44\u6e90\u6d41\u9001/Horizon\u5982\u4f55\u7ec4\u7ec7\u8d44\u6e90\u8bfb\u53d6\u4e0e\u4f9d\u8d56\u521d\u59cb\u5316.md",
+    "GameLibrary/\u6e38\u620f\u4eba\u5de5\u667a\u80fd/\u4f53\u9a8c\u8c03\u8282/\u6218\u6597\u8282\u594f/Left4Dead\u5bfc\u6f14\u7cfb\u7edf\u5982\u4f55\u8c03\u8282\u6218\u6597\u8282\u594f.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u4e16\u754c\u52a0\u8f7d/\u8d44\u6e90\u6d41\u9001/Horizon\u5982\u4f55\u7ec4\u7ec7\u8d44\u6e90\u8bfb\u53d6\u4e0e\u4f9d\u8d56\u521d\u59cb\u5316.md": "8a1ca18b69fd958e369de81005f2ddbb1fdc6756cab14176426f817ea2671a96",
+    "GameLibrary/\u6e38\u620f\u4eba\u5de5\u667a\u80fd/\u4f53\u9a8c\u8c03\u8282/\u6218\u6597\u8282\u594f/Left4Dead\u5bfc\u6f14\u7cfb\u7edf\u5982\u4f55\u8c03\u8282\u6218\u6597\u8282\u594f.md": "c220a2abaa162fd250b0d3b0ff621ae2984eab47bfabf3232ef839042942b9eb"
+  },
+  "rewritten_reader_books": 29,
+  "remaining_legacy_entries": 26,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No interface or participant study executed",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Publish accepted Horizon and L4D batch; integrate accepted matrix and client-prediction bodies with distinct original-scope limits",
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Horizon\u6d41\u9001-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/L4D\u8282\u594f-\u72ec\u7acb\u5ba1\u8bfb.md"
+  ],
+  "scope_dispositions": {
+    "accounted_for_originals": 18,
+    "newly_accounted_for": [
+      "horizon-streaming",
+      "l4d-director"
+    ],
+    "pending_claim_section_checks": 31,
+    "new_book_requirement": false
+  },
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Horizon\u4e0eL4D-\u5bfc\u822a\u9a8c\u6536.md",
+  "validation": {
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "artifact_paths_checked": 242,
+    "inventory_entries_checked": 55,
+    "runtime_experiments": 0
+  }
+}

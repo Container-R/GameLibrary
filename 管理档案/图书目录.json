@@ -799,12 +799,15 @@
       "area": "体验调节",
       "shelf": "战斗节奏",
       "proposed_path": "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "case-studies/ai/left4dead-director-pacing-evidence.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
+      "current_read_path": "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "历史四阶段、强度代理量、最大平均反例、缺失时效、执行与体验区别完整承接；未公开完整算法不变成新书债务",
+      "scope_disposition_review": "管理档案/审查/L4D节奏-独立审读.md"
     },
     {
       "internal_id": "CASE-ANIM-002",
@@ -880,12 +883,15 @@
       "area": "世界加载",
       "shelf": "资源流送",
       "proposed_path": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "case-studies/engine/horizon-streaming-dependency-initialization.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "current_read_path": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "文件与对象、读取和初始化依赖、共享使用责任全部由四节点示意承接；取消恢复等原未讲算法仍排除，不新增调度器教程",
+      "scope_disposition_review": "管理档案/审查/Horizon流送-独立审读.md"
     },
     {
       "internal_id": "CASE-LIVE-001",
@@ -963,11 +969,11 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 27,
-  "legacy_entries_remaining": 28,
+  "rewritten_reader_books": 29,
+  "legacy_entries_remaining": 26,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
-  "fully_remediated_original_items": 16,
+  "fully_remediated_original_items": 18,
   "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority."
 }
