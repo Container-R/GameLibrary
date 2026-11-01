@@ -3396,25 +3396,27 @@
     },
     {
       "id": "TASK-2026-0130",
-      "question": "What can an allocation wrapper liveness property establish after a value-copy alias is disposed?",
-      "discipline": "ENGINE",
-      "status": "researching",
+      "question": "What do NativeArray value-copy IsCreated and a deferred-disposal return establish about ownership and completion?",
+      "discipline": "PROG",
+      "status": "reviewing",
       "priority": 92,
-      "priority_rationale": "Investigate fixed original allocation-wrapper ownership and alias semantics before making a liveness claim",
-      "expected_artifact": "One finite original-source gate on value-copy alias lifetime, only if novel and sufficiently evidenced",
-      "artifact_paths": [],
+      "priority_rationale": "Wrapper-local fields and delayed free completion support different lifetime decisions",
+      "expected_artifact": "New source-only note with ordinary-copy counterexamples and bounded release protocol",
+      "artifact_paths": [
+        "research/source-notes/nativearray-copy-and-disposal-ownership.md"
+      ],
       "acceptance": [
-        "Inspect actual existing target and record exact identity",
-        "Use original source or specification with version scope",
-        "Identify a concrete counterexample or receiving decision not already covered",
-        "Reject generic or duplicative expansion and preserve source-access limits",
-        "No participant data, private runtime artifacts or held publication content"
+        "Keep ordinary owning struct copies distinct from special non-owning views",
+        "Separate local IsCreated from allocation liveness and disposal job completion",
+        "Require all consumers and retain returned disposal handle; do not invalidate correctly covered prior jobs",
+        "Keep reference-source, package-doc and API-doc versions separate",
+        "No engine, unsafe access, allocator or scheduler execution or installed-combination guarantee"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:49:16.798972Z",
-      "next_action": "Inspect existing-depth-selection-18 against existing coverage and original versioned alias/disposal implementation",
+      "last_progress_at": "2026-11-01T07:53:43.933143Z",
+      "next_action": "Review final source-only ownership note and index links before publication",
       "blockers": []
     }
   ]

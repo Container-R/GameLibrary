@@ -183,3 +183,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Box2D 传感器步末与扫掠](../research/source-notes/box2d-sensor-step-and-sweep.md)定位 v3.1.1 与固定 main 快照的文档和实现，避免把旧版限制传播成当前普遍结论。
 
 [Detour 同步路径状态与容量](../research/source-notes/detour-findpath-status-and-capacity.md)定位官方 v1.6.0 固定状态位、搜索、父链输出与节点池实现；不借既有引擎导航实验作验证。
+
+[NativeArray 值副本与延迟释放](../research/source-notes/nativearray-copy-and-disposal-ownership.md)依据固定 Unity 6000.0.0f1 C# reference source，并分别标示 Collections 2.1.4 和 6000.0 API 文档；未认证安装组合或执行作业。

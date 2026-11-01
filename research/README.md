@@ -191,3 +191,5 @@ python3 scripts/evidence/test_verify.py
 [传感区域占用与路径穿越](source-notes/box2d-sensor-step-and-sweep.md)对照 Box2D 固定旧版本与新版源码路径；区分求解子步、静止传感器连续检测和显式扫掠责任，没有物理运行。
 
 [Detour 成功位与两种容量](source-notes/detour-findpath-status-and-capacity.md)区分搜索到达与输出前缀，给出未执行的截断反例和保守调用者接收政策；没有导航查询运行。
+
+[NativeArray 副本与释放责任](source-notes/nativearray-copy-and-disposal-ownership.md)分开包装字段、分配存活与释放作业完成；原创协议显式收齐使用者，不把 IsCreated 当全局安全证明。
