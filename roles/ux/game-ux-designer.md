@@ -6,16 +6,17 @@ status: source-backed
 primary_discipline: UX
 related_disciplines: [PROG, ART2D, LOC, A11Y, QA, DESIGN]
 related_roles: [ux-designer, ui-artist, ui-programmer, user-researcher, localization-specialist, accessibility-specialist, qa-engineer]
-related_topics: [interaction-flow, decision-feedback, input-ownership, localized-layout, design-handoff]
+related_topics: [interaction-flow, decision-feedback, input-ownership, localized-layout, design-handoff, focused-control-narration]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["Ubisoft Min Yee 访谈，发布日期未知", "BNS 页面标题日期2021-11-15；另有截至2023-12的信息提示"]
+versions: ["Ubisoft Min Yee 访谈，发布日期未知", "BNS 页面标题日期2021-11-15；另有截至2023-12的信息提示", "XAG106页面更新2026-03-04，读取2026-11-01"]
 updated_at: 2026-11-01
 review_after: 2027-02-01
-verification_method: 英日第一方实践者访谈与项目介绍核对；设置确认/取消流程及六接口表为原创未执行建议；未执行焦点、设备输入、翻译布局、可访问性或玩家研究验证
+verification_method: 英日第一方实践者材料及 XAG106 指定文字章节核对；设置流程、接口表与焦点朗读情境为原创未执行建议；未执行 UI、设备、朗读、翻译布局或玩家研究验证
 sources:
   - https://www.ubisoft.com/en-us/company/careers/interns-graduates/articles/min-yee-ux-designer-singapore-toronto
   - https://www.bandainamcostudios.com/recruit/career/interview/1161
+  - https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/106
 ---
 
 # 游戏 UX 设计师：从交互意图到可操作流程的接收责任
@@ -72,6 +73,18 @@ S2 标题日期为 **2021-11-15**，末尾另有“截至2023年12月的信息�
 
 上述三项均为假设分岔，不是来源工作室的已发生故障或本库测试。实际项目中也可能多层同时失效；接口分离用于定位，不要求机械地按单一顺序排查。
 
+### 焦点移动后的朗读：替换旧对象，而不是排队念完
+
+Microsoft **XAG 106: Screen narration**（页面更新 2026-03-04）给出具体规则：焦点移到新元素时，旧焦点项尚未完成的朗读应立即停止，并开始新焦点项的朗读。指南还要求让朗读传达元素名称、角色及适用的值／状态，而非只检查标签有无声音。[S3]
+
+把它用于上述设置流程，可以增加一个**原创、未执行的检查**：确认框先聚焦“保存”，正在朗读它的长说明；用户移到“取消”，视觉选中与确认键作用对象都已切换，声音却仍描述“保存”。此时按钮可操作、焦点 ID 正确、两项都有预录标签，都不足以排除失配。问题不是缺了一份录音，而是旧对象的说明还占着当前操作的听觉通道。
+
+本例应把**焦点项朗读**交成可替换的任务，而不是每次移焦都追加到不可打断的 FIFO：旧描述未结束时移焦，观察旧项停止与新项开始；停留和主动重读时，确认能够取得当前对象及其操作含义；返回设置页后，再检查朗读是否仍滞留于已关闭确认框。这里需要实际输出与操作对象的对应关系，不能用语音请求提交成功代替。
+
+值变化同样需要当前语义，但“避免重复”不应被简化为所有控件一律只读变化数字。UX 应与实现及语言接收者决定：哪些名称／角色／说明在当前上下文仍充分，何时必须重述；否则单独一个数值可能失去对象和单位。保留主动取消、重读的能力，而不是强迫用户等待整段旧描述。
+
+这项替换规则限定于焦点项朗读，不规定系统警告、剧情对白或其他重要通知都丢弃或统一打断。本文没有实现 TTS 调度器、试听、运行设备或研究玩家，也不发明延迟阈值。既有焦点恢复和声音替代通道证据不能为这个流程提供可访问性认证。
+
 ## 典型工程难题与相邻专业
 
 - **流程状态少于实现状态。** 线框只有成功界面，实现却有等待、重试、失去目标等状态。UX 与程序应补齐决策和反馈意图；不能让程序临时猜一个默认后果。
@@ -93,3 +106,5 @@ S2 标题日期为 **2021-11-15**，末尾另有“截至2023年12月的信息�
 
 - **S1** Ubisoft 企业访谈，受访者 Min Yee，英语，[*Min Yee | UX Designer, Singapore*](https://www.ubisoft.com/en-us/company/careers/interns-graduates/articles/min-yee-ux-designer-singapore-toronto)。发布日期未确认。定位：`What does your job consist in?`、`What makes your job special?`、`With which teams do you work?`。
 - **S2** Bandai Namco Studios，日语，[*仕事紹介：UIアーティスト*](https://www.bandainamcostudios.com/recruit/career/interview/1161)。标题日期2021-11-15；定位：职责介绍、`「テイルズ オブ アライズ」の場合`，署名鈴木佑梨；页末另有历史信息提示。
+
+- **S3** Microsoft，[Xbox Accessibility Guideline 106: Screen narration](https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/106)，页面更新2026-03-04；读取控件语义、焦点/值变化、朗读中断与程序化属性章节文字；未看嵌入视频或检查截图、实际游戏。

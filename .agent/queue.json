@@ -3258,11 +3258,14 @@
       "id": "TASK-2026-0125",
       "question": "What control semantics and change notifications must a settings flow hand off beyond a visible label when screen narration is enabled?",
       "discipline": "UX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Strengthen the existing UX settings workflow with concrete nonvisual control identity and value-change responsibilities",
       "expected_artifact": "Source-backed finite settings-control narration addition with unexecuted receiving conditions",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/ux/game-ux-designer.md",
+        "research/source-notes/game-ux-designer-role.md"
+      ],
       "acceptance": [
         "Read official XAG106 focused control, value/state and interruption guidance directly",
         "Separate labels, roles, current values, interaction hints and action confirmation",
@@ -3273,8 +3276,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:05:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:18:06.362311Z",
-      "next_action": "Reconcile source gate with directly read XAG106 control semantics and value-change guidance before drafting",
+      "last_progress_at": "2026-11-01T07:19:57.296332Z",
+      "next_action": "Review focus-item narration replacement and semantics without generalizing to every message channel",
       "blockers": []
     }
   ]
