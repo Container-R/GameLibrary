@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T22:10:00Z",
+      "lease_until": "2026-11-01T22:20:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T21:23:57Z",
-      "next_action": "Check whether the existing SQLite commit/BUSY explanation is discoverable from save-migration readers; close a concrete cross-discipline retrieval gap without duplicating technical prose.",
+      "last_progress_at": "2026-11-01T21:34:10Z",
+      "next_action": "Inspect existing alpha and BC/Mip readers for a concrete sRGB filtering or mip-generation gap; distinguish any new source contract from already-covered linear composition and avoid duplicate tutorials.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6190,6 +6190,34 @@
       "next_action": "Retain this one-input result as limited importer evidence; do not infer exporter, renderer or arbitrary-mesh guarantees.",
       "blockers": [],
       "verification_method": "Pinned original C compiled and called in two independently built copies of the same fixed input; no additional geometric coverage or rendering."
+    },
+    {
+      "id": "TASK-2026-0165",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "When an inaudible loop returns, should it retain its old position, follow elapsed time, or restart?",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "Make resource recovery preserve a deliberate audible-time meaning; distinguish authoring policy from allocation and streaming limits.",
+      "expected_artifact": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+        "管理档案/审查/循环声音恢复位置-读者与导航审查.md"
+      ],
+      "acceptance": [
+        "Original English and Japanese CRI documentation read",
+        "One simple fictional loop distinguishes three desired positions",
+        "Volume-zero authoring and native allocation retry not conflated",
+        "No sample-sync, performance or SDK-version overclaim",
+        "Independent reader comprehension and actual shelf/cross-domain navigation"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T21:34:10Z",
+      "next_action": "Check the selected policy with actual project content, codec and target output before using it as an implementation guarantee.",
+      "blockers": [],
+      "verification_method": "Original rolling CRI documentation and explicit hypothetical arithmetic; no middleware, audio playback, device or performance execution."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,40 @@
+{
+  "run_id": "20261101T213410Z-virtual-loop-position",
+  "observed_at": "2026-11-01T21:34:10Z",
+  "parent_verified_head": "12d1f9e7206f698b822f596123c39e00f3ceac2e",
+  "task": "TASK-2026-0165",
+  "outcome": "Published reviewed virtual-loop recovery reader and actual cross-discipline links.",
+  "reader_path": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+  "reader_sha256": "a8357fd9c6310a7f6047b10e1eead9d6494813964b0e56d5c7efcec5abd8a42d",
+  "reader_review_sha256": "35974b3d0e4b929831042552856c8d5d377c1f3426c7cb9e3d8aad90d1cafa72",
+  "navigation_review_sha256": "0a6baab817048d9666a16104ba7b55d196f8e1192add72467889f09632077f9c",
+  "source_scope": "Official CRI English/Japanese Voice Behavior, Virtual Voice, Cue, Voice and Voice Limit, native sample; rolling latest docs, no asserted fixed SDK version.",
+  "original_example": "Single-track ten-second loop at position3 with four-second virtual interval; desired positions3/7/0 are illustrative choices, not measured output.",
+  "runtime_experiments": 0,
+  "limits": [
+    "No middleware, content, device or performance execution",
+    "No guarantee elapsed-time recovery is sample-accurate",
+    "Authoring zero-volume policy distinct from native allocation retry",
+    "Wwise official help not successfully read; no Wwise control or version claim"
+  ],
+  "navigation_increment": "Cache/save shelf now directly finds already-existing growth-economy SQLite commit/retry explanation; no duplicate transaction chapter.",
+  "prior_publication_readback": {
+    "commit": "12d1f9e7206f698b822f596123c39e00f3ceac2e",
+    "all_blobs_matched": 750,
+    "key_files_matched": 9,
+    "reader_books_tree_matched": 66,
+    "reader_links_tree_matched": 164
+  },
+  "publication_note": "Containing commit readback follows publication.",
+  "structural_checks": {
+    "queue_tasks": 165,
+    "reader_inventory": 67,
+    "skill_errors": 0,
+    "route_errors": 0,
+    "outlink_status": "incomplete",
+    "outlink_unsupported": 32,
+    "outlink_target_errors": 0,
+    "outlink_fragment_errors": 0,
+    "scope": "Offline checks only; incomplete is not an all-link PASS."
+  }
+}

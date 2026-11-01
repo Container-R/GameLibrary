@@ -1371,6 +1371,22 @@
       "review_paths": [
         "管理档案/审查/分块模拟读写关系-读者与有限模型审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-SFX-003",
+      "reader_title": "循环声音重新听见时，应该从哪里继续",
+      "floor": "声音与音乐",
+      "area": "游戏音效",
+      "shelf": "播放管理",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "current_read_path": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "reader_body_status": "published",
+      "editorial_status": "主编与独立原源、全文理解及实际本地检索接受；未试听或运行中间件",
+      "origin": "original-reader-explanation-grounded-in-cri-authoring-and-native-documentation",
+      "scope_note": "三恢复位置为限定循环的设计示意；工具音量零政策与原生分配重试分开，未验证全部组合或采样同步",
+      "review_paths": [
+        "管理档案/审查/循环声音恢复位置-读者与导航审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1383,6 +1399,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 66,
-  "post_baseline_research_books": 11
+  "reader_books_total": 67,
+  "post_baseline_research_books": 12
 }
