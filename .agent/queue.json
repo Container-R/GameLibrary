@@ -3205,7 +3205,11 @@
       "priority": 94,
       "priority_rationale": "Verify three recent depth additions with a fresh reviewer rather than expanding topic count; preserve original scouting overlap disclosure",
       "expected_artifact": "Bounded snapshot-linked adversarial review with exact article identities and source checks",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/audits/integrated-source-depth-2/review.md",
+        "research/audits/integrated-source-depth-2/independent-review.md",
+        "research/audits/integrated-source-depth-2/SNAPSHOT-READBACK.md"
+      ],
       "acceptance": [
         "Pin the published snapshot and exact article hashes",
         "Separate prior scouting recheck from fresh independent review",
@@ -3216,8 +3220,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:55:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:07:38.419702Z",
-      "next_action": "Reconcile fresh reviewer findings with published snapshot and archive bounded review results",
+      "last_progress_at": "2026-11-01T07:09:35.763846Z",
+      "next_action": "Archive exact-snapshot review findings and preserve their source-only bounds",
       "blockers": []
     }
   ]
