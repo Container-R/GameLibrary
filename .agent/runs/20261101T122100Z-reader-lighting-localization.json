@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T12:14:47Z",
-  "ended_at": "2026-11-01T12:23:45.387754Z",
-  "outcome": "Lighting and localization bodies and routes accepted; alpha and PCM support dispositions accepted; publication pending",
+  "ended_at": "2026-11-01T12:25:32.252670Z",
+  "outcome": "Shared-light and localization-context books and alpha/PCM support links published and read back; twelve cumulative original scopes accounted for",
   "baseline_head": "8facfebe6b664c78bd498b1673407b2e81ab125b",
   "books": [
     "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u573a\u666f\u5149\u7167/\u5171\u4eab\u706f\u5177\u5982\u4f55\u7ba1\u7406\u8d44\u4ea7\u4e0e\u573a\u666f\u5b9e\u4f8b\u7684\u4fee\u6539.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Publish exact reviewed tree; continue existing Warlander input and Factorio cache case rewrites without new topics",
+  "next_action": "Rewrite existing Warlander input and Factorio cache cases; review remaining original scopes without automatic new books; no new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5171\u4eab\u706f\u5177-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u8bed\u5883\u672c\u5730\u5316-\u72ec\u7acb\u5ba1\u8bfb.md",
@@ -45,10 +45,12 @@
     "new_book_requirement": false
   },
   "validation": {
+    "selected_blob_hashes_verified": 18,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1076,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "queue_artifact_paths_checked": 238,
-    "inventory_shelf_entries_checked": 55,
-    "runtime_experiments": 0
-  }
+    "remote_books_read_back": true
+  },
+  "commit_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf"
 }

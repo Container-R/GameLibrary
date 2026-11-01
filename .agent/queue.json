@@ -4065,10 +4065,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T13:00:00Z",
+      "lease_until": "2026-11-01T13:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:21:10.006119Z",
-      "next_action": "Publish exact reviewed tree; continue existing Warlander input and Factorio cache case rewrites without new topics",
+      "last_progress_at": "2026-11-01T12:25:32.252670Z",
+      "next_action": "Rewrite existing Warlander input and Factorio cache cases; review remaining original scopes without automatic new books; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4097,7 +4097,9 @@
         "eleventh_reader_batch_published_sha": "f06814ffa4f7401ba4791366e02371f46a4e0398",
         "eleventh_batch_readback_verified": true,
         "twelfth_reader_batch_published_sha": "099efaa05f4224833016fd3a51d9bbd482171695",
-        "twelfth_batch_readback_verified": true
+        "twelfth_batch_readback_verified": true,
+        "thirteenth_reader_batch_published_sha": "f1eb116f2f93b0ba6a1776aeb579ac77e8dedbaf",
+        "thirteenth_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }
