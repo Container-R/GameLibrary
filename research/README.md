@@ -19,7 +19,7 @@ python3 scripts/run_model_tests.py
 - [固定规则与表现回调](experiments/godot-fixed-step/README.md)：6 组实际进程；人工 `fixed-fps` 与实时 `max-fps` 分开，不证明设备输入、GPU 或物理确定性。
 - [暂停与合成输入队列](experiments/godot-pause-input/README.md)：实际输入 API 分发与常驻应用队列反例；固定心跳排除空洞暂停观察，不是物理设备测试。
 - [焦点恢复的实例身份](experiments/godot-focus-boundary/README.md)：实际 Viewport owner、信号和延迟调用；不是 Unity、视觉或完整模态输入墙验收。
-- [干净检出后的资产导入](experiments/godot-import-boundary/README.md)：遗漏 sidecar 时仍可加载、UID 相同但纹理尺寸不同；[工程契约](../solutions/engine/asset-import-intent-contract.md)区分源文件、导入意图与生成缓存。
+- [干净检出后的资产导入](experiments/godot-import-boundary/README.md)：遗漏 sidecar 时仍可加载、UID 相同但纹理尺寸不同；[工程契约](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md)区分源文件、导入意图与生成缓存。
 
 - [导航就绪与部分路径](experiments/godot-navigation-sync/README.md)：实际地图/region同步阶段、空路径与非空部分路径；不证明持续异步事务或角色运动。
 
@@ -60,10 +60,10 @@ python3 scripts/evidence/test_verify.py
 
 ## 内容与职责证据
 
-- [关键声音信息合同](../solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](../管理档案/来源笔记/critical-sound-encounter.md)：不是实际玩家研究。
+- [关键声音信息合同](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](../管理档案/来源笔记/critical-sound-encounter.md)：不是实际玩家研究。
 - [试玩干预证据](../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
-- [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../管理档案/历史正文/roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
+- [游戏 QA 职责](../GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md)与[关卡策划职责](../管理档案/历史正文/roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
 - [按学科找书](../GameLibrary/README.md)提供当前读者入口；旧路线资料只作历史记录，不再构成另一套现行目录。
 
 [ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。
@@ -80,11 +80,11 @@ python3 scripts/evidence/test_verify.py
 
 [Destiny配置准入与数据恢复案例](../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)分析历史第一方复盘，分开当时已部署措施、后续承诺和原创未执行验收协议；[独立来源审查](audits/liveops-destiny-2020/REVIEW.md)。没有事故复现或新增运行测试。
 
-[音乐主体 PCM 帧区间](../solutions/music/pcm-loop-frame-contract.md)通过原创 marker WAV 的实际离线 FFmpeg 提取，分离半开区间与 inclusive 循环端点；[实验与无损归档](experiments/music-loop-frame-contract/README.md)、[独立复验](experiments/music-loop-frame-contract/review/REVIEW.md)、[集成归档检查](audits/music-frame-integration/README.md)。不包含设备播放或 FMOD 运行。
+[音乐主体 PCM 帧区间](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md)通过原创 marker WAV 的实际离线 FFmpeg 提取，分离半开区间与 inclusive 循环端点；[实验与无损归档](experiments/music-loop-frame-contract/README.md)、[独立复验](experiments/music-loop-frame-contract/review/REVIEW.md)、[集成归档检查](audits/music-frame-integration/README.md)。不包含设备播放或 FMOD 运行。
 
 [日本 Cygames 叙事制作交接案例](../GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md)使用实际可读的日语第一方博客，区分历史工具采用过程和原创未执行交接检查建议；[独立来源审查](audits/cygames-scenario-handoff/REVIEW.md)。未假称读完幻灯片或测得制作效率。
 
-[精灵 alpha 表示交接](../solutions/art2d/alpha-association-contract.md)通过实际 CPU 数值 buffer 转换与合成，检验 associated 字节被当成 straight 后的重复衰减；[原始证据](experiments/art2d-alpha-contract/README.md)、[独立复验](experiments/art2d-alpha-contract/review/REVIEW.md)。未做图片作品、PNG、引擎、颜色管理或可见暗边验证。
+[精灵 alpha 表示交接](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md)通过实际 CPU 数值 buffer 转换与合成，检验 associated 字节被当成 straight 后的重复衰减；[原始证据](experiments/art2d-alpha-contract/README.md)、[独立复验](experiments/art2d-alpha-contract/review/REVIEW.md)。未做图片作品、PNG、引擎、颜色管理或可见暗边验证。
 
 [同 tick 战斗政策补充](experiments/simultaneous-combat-policy/README.md)深化既有固定步文章：明确选定同时结算政策后，稳定排序仍可稳定实现错误规则；有限独立判据与定向变异不冒充完整战斗或引擎验证。
 
@@ -100,7 +100,7 @@ python3 scripts/evidence/test_verify.py
 
 - [Future runner five-location environment contract](source-notes/runner-environment-contract.md) — additive helper, source-stage-bound synthetic evidence and preserved historical fixtures; no engine rerun or automatic migration.
 
-[构建工程候选交接](../roles/engine/build-engineer.md)将源、产物、测试对象和晋级权限分开；六阶段交付与五项接收工作表均是未执行的原创建议。
+[构建工程候选交接](../GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md)将源、产物、测试对象和晋级权限分开；原研究的六阶段交付与五项接收工作表为未执行建议；新书用武器构建情境承接这些判断。
 
 [Addressables已发布基线合同](../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。
 
@@ -108,7 +108,7 @@ python3 scripts/evidence/test_verify.py
 
 [Vulkan隔离能力门](experiments/vulkan-capability-probe/README.md)记录一次create返回-9、零枚举/销毁；退出0是负面观察已归档，不是GPU成功。
 
-[在线服务工程师](../roles/network/online-services-engineer.md)补充已有NET分类下的岗位交接：声明实际组件、替身及遗漏边界责任，不运行虚构服务制造容量证据。
+[在线服务工程师](../GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md)补充已有NET分类下的岗位交接：声明实际组件、替身及遗漏边界责任，不运行虚构服务制造容量证据。
 
 [League分配与观测年龄案例](../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md)提出未执行的五方交接与区分力验收问题，不以虚构模拟结果充当历史复现。
 
@@ -116,53 +116,53 @@ python3 scripts/evidence/test_verify.py
 
 [Ogg Opus 三种帧数](experiments/ogg-opus-frame-boundary/README.md)保留一个原创输入的作者/独立编码解码：呈现 93,659、granule 93,971、包时长 94,080，非听感或中间件验证。
 
-[制作管理依赖交接](../roles/production/production-manager.md)区分局部完成、接收方可用与里程碑接受，提供明确标注未执行的 A7→C17 工作表；岗位矩阵仍未完整。
+[制作管理依赖交接](../GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md)区分局部完成、接收方可用与里程碑接受，原研究用未执行的 A7→C17 工作表表达这些区别；新书改用机关提示试玩情境，不承诺保留该表。
 
 [游戏动画师](../管理档案/历史正文/roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。
 
-[实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。
+[实时特效美术](../GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；原研究的游戏信号交接表为未执行建议；新书以固定区域冲击的预警、释放、命中与残留解释交接。
 
 [Killzone 3 计划与执行案例](../GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md)以有限历史事实引出原创未执行的行动交接审查；没有运行游戏或模型，不能把取消请求或报告过滤当作效果回滚。
 
 [导航路径消耗夹具](experiments/godot-navigation-completion/README.md)保留同一两agent配置的作者与独立观察；导航完成不等于请求目标到达，不是碰撞移动或业务成功证明。
 
-[游戏 UX 设计师](../roles/ux/game-ux-designer.md)区分决策意图、真实交互、语言布局与玩家理解；原创工作表没有执行或用户验证。
+[游戏 UX 设计师](../GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md)区分决策意图、真实交互、语言布局与玩家理解；原研究的工作表没有执行或用户验证；新书用字幕设置情境说明协作与取消语义。
 
 [CharacterBody3D实际移动夹具](experiments/godot-character-motion/README.md)以双通道证明空起终点不能替代途中碰撞检查；未验证完整导航控制器或最终无重叠。
 
-[环境概念美术](../roles/art2d/environment-concept-artist.md)区分图的用途、白盒约束与未定义制作问题；原创工作表未绘制或执行。
+[环境概念美术](../GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md)区分图的用途、白盒约束与未定义制作问题；原研究的工作表未绘制或执行；新书以环境任务说明图的用途与交付。
 
 [Left 4 Dead Director 案例](../GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md)区分估计、控制、执行、遭遇与体验；原研究的六层观察表为原创未执行建议，新书以自然说明保留这些观察层次；当时同步修正 Killzone 案例对后续导航运动证据的过时交叉引用，属历史编辑记录。
 
 [游戏数据分析师](../管理档案/历史正文/roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
 
-[标量转场连续性](../solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。
+[标量转场连续性](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。
 
 [稀疏accessor实验](experiments/gltf-sparse-accessor/README.md)保存44字节双基底与5拒绝用例；不继承密集网格的引擎证据。
 
 [对白语义交接](../管理档案/历史正文/roles/narrative/narrative-designer-writer.md)把世界事实、角色知识和任务资格分别交接；桥梁情境为原创未执行建议。
 
-[客户端预测补充](../solutions/programming/client-prediction-authority-boundary.md)以固定GGPO源码收紧旧表现建议；新增短事件、失效事件与持久输出各有未执行验收问题，没有新增运行实验。
+[客户端预测补充](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)以固定GGPO源码收紧旧表现建议；新增短事件、失效事件与持久输出各有未执行验收问题，没有新增运行实验。
 
 [资源复制图实验](experiments/godot-resource-duplication/README.md)记录三种模式各两次的有限图对照；预先冻结的独立字面预期分别验收作者与复跑，初始取证消费者缺陷在引擎执行前修正。
 
-[本地化语境变更交接](../roles/localization/localization-coordinator.md)研究同样文字的新用途如何进入各语言复查与实际候选；不是一次真实翻译、集成或LQA验收。
+[本地化语境变更交接](../GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md)研究同样文字的新用途如何进入各语言复查与实际候选；不是一次真实翻译、集成或LQA验收。
 
-[零值 stem 与结束输入](../solutions/audio/silent-stem-normalization-boundary.md)以完整原始 float32 波形区分输入寿命与缩放，三种配置各独立运行两次；没有听音或中间件调度验证。
+[零值 stem 与结束输入](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md)以完整原始 float32 波形区分输入寿命与缩放，三种配置各独立运行两次；没有听音或中间件调度验证。
 
-[共享灯具的分层交接](../roles/rendering/game-lighting-artist.md)把作者、摆放者和接收场景分开，先决定局部/共享/场景修改范围；没有实际渲染或因果验证。
+[共享灯具的分层交接](../GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md)把作者、摆放者和接收场景分开，先决定局部/共享/场景修改范围；没有实际渲染或因果验证。
 
-[固定 Tick 的历史生产来源补充](../solutions/programming/fixed-step-simulation-boundary.md)区分有意减速、未完成工作与外部时间义务；没有新增过载运行测试。
+[固定 Tick 的历史生产来源补充](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md)区分有意减速、未完成工作与外部时间义务；没有新增过载运行测试。
 
-[UI 美术的组合状态交接](../roles/art2d/game-ui-artist.md)区分选择、可用性与比较含义，并明确图形层作用范围；没有制作界面或验证玩家理解。
+[UI 美术的组合状态交接](../GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md)区分选择、可用性与比较含义，并明确图形层作用范围；没有制作界面或验证玩家理解。
 
-[作曲与交互编配](../roles/music/game-composer.md)区分技术对齐与有意的组合/缺席；三声部选择表未制作、试听或运行。
+[作曲与交互编配](../GameLibrary/声音与音乐/交互音乐/岗位与协作/游戏作曲如何为交互安排音乐.md)区分技术对齐与有意的组合/缺席；原研究的三声部选择表未制作、试听或运行；新书以灯塔任务说明作曲协作，不承诺保留该表。
 
 [战斗、动画与预测的适用范围复核](audits/combat-applicability/REVIEW.md)追踪五条高风险证据转移边界；未发现新的实质越界，不新增运行结果或改写既有结论。
 
-[呈现队列与输入时效](../solutions/rendering/presentation-queue-latency-boundary.md)用未执行有限反例区分上游等待、图像容量与采样状态年龄，不提供硬件延迟测量。
+[呈现队列与输入时效](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md)用未执行有限反例区分上游等待、图像容量与采样状态年龄，不提供硬件延迟测量。
 
-[音乐状态交接的观察层补充](../solutions/audio/music-state-transition-contract.md)分析事件非虚拟但底层声道虚拟的具体反例；开头/尾音情景未运行或试听，不升级已有生命周期模型。
+[音乐状态交接的观察层补充](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md)分析事件非虚拟但底层声道虚拟的具体反例；开头/尾音情景未运行或试听，不升级已有生命周期模型。
 
 [动画事件资格与规则入口](source-notes/unreal-notify-eligibility-authority.md)分析唯一服务端本地入口与资产配置的冲突；原创建议未执行，既有固定步与方法轨证据不变。
 
@@ -204,7 +204,7 @@ python3 scripts/evidence/test_verify.py
 
 [模型烘焙 piece 可见集合](source-notes/model-bake-piece-visibility.md)区分跨输入名称对应与追踪分组不变；原创组件合并反例及接收步骤不预填实际命中或纹理结果。
 
-[均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
+[均匀网格最近命中的停止边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
 
 [最后生还者第二部如何结合顶点与探针照明](../GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
 

@@ -1,0 +1,20 @@
+{
+  "run_id": "20261101T164630Z-payload-screening-correction",
+  "observed_at": "2026-11-01T16:46:28Z",
+  "verified_unchanged_head": "be9998d71bbca82e9159a415d8f7e0b7a36c1169",
+  "incident": "A proposed full-file publication retained installation-specific metadata in a source note despite its link-only editorial change. The operation was denied before any commit or ref update.",
+  "response": "Stopped the original payload, reviewed every changed full file for environment-identity categories, and prepared explicit public derivatives preserving technical observations, failures, provenance limits and fixed source references. No alternate publication route used.",
+  "affected_notes": [
+    "research/source-notes/lcms-transfer-boundary.md",
+    "research/source-notes/navigation-agent-completion.md",
+    "research/source-notes/ink-v1.2.1-host-boundary.md"
+  ],
+  "preserved_categories": [
+    "published-source and original-artifact integrity hashes",
+    "public source identifiers",
+    "historical process and test counts",
+    "failure observations and scope limits"
+  ],
+  "limitations": "Pattern scans alone missed contextual installation data; acceptance requires semantic review of complete payloads. This correction does not certify all historical archives or erase Git history.",
+  "runtime_experiments_rerun": false
+}

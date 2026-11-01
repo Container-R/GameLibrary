@@ -53,7 +53,7 @@
 
 ## 与旧观察的关系
 
-旧研究分别用简单原生资源观察过外部依赖共享、相反模式的同路径请求以及 `[B,B,C]` 复制关系。这些是不同的有限输入与流程，不能拼成任意资源图的整体验证。本说明只重新核对公开文档和源码，未重跑、未读取运行附件；历史观察及其失败诊断仍留在原支持记录。所读固定源码与当时被测程序的精确对应并未由此建立。
+旧研究分别用简单原生资源观察过外部依赖共享、相反模式的同路径请求以及 `[B,B,C]` 复制关系。这些是不同的有限输入与流程，不能拼成任意资源图的整体验证。本说明只重新核对公开文档和源码，未重跑、未读取运行附件；历史观察及其失败诊断仍留在固定旧支持：[候选依赖](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md#5-运行时补充候选根不同不等于可变依赖已隔离)、[同路径请求](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md#6-第二次请求返回ok不等于新的加载策略已经生效)与[复制图内部别名](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md#7-已加载的图再复制隔离原对象不代表拆散副本内部的别名)。所读固定源码与当时被测程序的精确对应并未由此建立。
 
 实际选择时，先确定哪些修改不能泄漏到活动图、哪些副本内部共享应保留，再核对具体加载/复制入口是否兑现这一要求。不要把全量深复制当默认修复：它可能扩大复制成本，却仍不能替代对属性和用户代码的检查。
 

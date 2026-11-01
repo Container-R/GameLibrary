@@ -1,6 +1,8 @@
 # UI 美术：来源定位和适用边界
 
-关联[游戏 UI 美术](../../roles/art2d/game-ui-artist.md)。本条只支持两份项目/岗位实践样本，不把其表述升级为通用组织结构或可读性测量。
+关联[游戏 UI 美术 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md)。本条只支持两份项目/岗位实践样本，不把其表述升级为通用组织结构或可读性测量。
+
+当前读者正文：[用图形表现按钮和界面的状态](../../GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md)。
 
 | 来源 | 原始定位 | 日期与限制 |
 |---|---|---|

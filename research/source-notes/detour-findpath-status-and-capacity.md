@@ -44,4 +44,4 @@
 
 即使以上接收通过，也仅是该政策下的 polygon corridor：不会替调用者验证坐标位于对应 polygon 的前提，也不证明直线路径输出完整、身体碰撞可通行或玩法已到达。不涵盖 sliced 查询、Crowd、引擎分叉、动态 tile 更新或自定义成本最优性。
 
-[既有导航证据](../../solutions/ai/navigation-readiness-and-partial-path.md)讨论不同的准备、路径与运动边界，不能替本篇提供 Detour 执行证据。本篇也不回写或升级那些实验的覆盖范围。
+[既有导航证据](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md)讨论不同的准备、路径与运动边界，不能替本篇提供 Detour 执行证据。本篇也不回写或升级那些实验的覆盖范围。

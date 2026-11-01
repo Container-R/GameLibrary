@@ -87,6 +87,8 @@ GLSL 的 `row_major` 和 `column_major` 限定符控制矩阵在缓冲区中的�
 
 本次改写只读取旧正文并重新核对规范，没有重跑编译、读取原始执行档案或运行着色器。读者可以手算本文例子；要确认自己的驱动、上传路径和着色器，仍需在自己的目标环境完成集成验证。
 
+需要追查旧工具检查方法时，可选读[编译消费链、启动负例与能力门](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md#3-实际编译证据到哪里为止)和[原C接口及释放范围](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md#5-来源身份与可复现范围)。它们保留当时的失败与限制，不是当前环境认证；本文的矩阵算式不依赖读者先复现这些工具。
+
 ## 参考来源
 
 [1] Khronos，《GLSL Specification》，固定源码快照的 [Operators and Expressions](https://github.com/KhronosGroup/GLSL/blob/0099bf83b0288469917fc2e2972cb0a2b74d6711/chapters/operators.adoc#L812-L820)，矩阵与向量的乘法规则。本文以明确的 `M × v` 展开手算，不提供完整坐标变换教程。

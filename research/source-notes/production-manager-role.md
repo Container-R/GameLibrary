@@ -1,6 +1,8 @@
 # 制作管理岗位：来源记录
 
-访问日期 2026-10-31；对应 [ROLE-PROD-001](../../roles/production/production-manager.md)。此档案是有限岗位与依赖交接研究，不是行业组织标准或实施验证。
+访问日期 2026-10-31；对应 [ROLE-PROD-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/production/production-manager.md)。此档案是有限岗位与依赖交接研究，不是行业组织标准或实施验证。
+
+当前读者正文：[制作人如何协调任务依赖与交付](../../GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md)。
 
 | 原始来源 | 作者、语言、日期 | 实际阅读定位及用途 |
 |---|---|---|

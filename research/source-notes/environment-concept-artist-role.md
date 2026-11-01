@@ -1,6 +1,8 @@
 # 环境概念美术岗位：来源记录
 
-对应 [ROLE-ART2D-001](../../roles/art2d/environment-concept-artist.md)；访问2026-11-01。
+对应 [ROLE-ART2D-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md)；访问2026-11-01。
+
+当前读者正文：[环境概念图怎样指导后续制作](../../GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md)。
 
 | 原始来源 | 作者与日期 | 实际阅读定位 |
 |---|---|---|

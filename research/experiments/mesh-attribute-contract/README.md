@@ -34,7 +34,7 @@ results/mesh.gltf带内嵌buffer；results/mesh.bin.base64保存相同160bytes�
 
 清旧summary在reader import前；-O拒绝、显式非assert验收；不保证解释器/权限/任意终止报告原子性。重跑用独立复制目录。冻结reader `b9b5709b6730c3acaf662112169a28f50e9330ee05bf8208ca1692515d7d3e36`；runner `499ba210218426691e50597d067e69d2aea39a8bd3bc124d2d2a71041004b8f0`。
 
-对应文章见 [几何交接契约](../../../solutions/modeling/gltf-interleaved-attribute-contract.md)。一次仅为归档官方文本hash的大参数命令被exec工具以Argument list too long拒绝，未执行；不涉及fixture运行失败，未改动已通过源码/结果。采用不可变commit链接保留来源定位。
+对应文章见 [几何交接契约](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md)。一次仅为归档官方文本hash的大参数命令被exec工具以Argument list too long拒绝，未执行；不涉及fixture运行失败，未改动已通过源码/结果。采用不可变commit链接保留来源定位。
 
 ## Public reproducibility layout
 

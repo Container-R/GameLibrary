@@ -4,7 +4,7 @@
 
 ## 新问题不是正常循环中的 semaphore 复用
 
-[既有呈现说明 §1.1](../../solutions/rendering/presentation-queue-latency-boundary.md)讨论重新取得同一图像并满足 acquire 同步之后的正常循环复用，明确没有提供关闭方案。本篇问另一件事：有了扩展提供的 present fence，**哪一份 signal 证据能支持哪一个对象退役？**
+[既有呈现说明 §1.1](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md)讨论重新取得同一图像并满足 acquire 同步之后的正常循环复用，明确没有提供关闭方案。本篇问另一件事：有了扩展提供的 present fence，**哪一份 signal 证据能支持哪一个对象退役？**
 
 这里的 present fence 是通过 `VkSwapchainPresentFenceInfoKHR` 附到 `VkPresentInfoKHR` 的 fence，不是渲染提交 fence。其数组按本次 present 的交换链条目对应；非空 fence 还须满足未 signal、没有关联其他未完成队列命令等有效使用条件。[固定规范：present fence](https://github.com/KhronosGroup/Vulkan-Docs/blob/b94f8bd2d004d2949469d8a5071ee10eb7d23566/chapters/VK_KHR_surface/wsi.adoc#L8677-L8745)
 

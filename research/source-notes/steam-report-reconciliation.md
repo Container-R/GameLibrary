@@ -78,6 +78,6 @@ $$
 
 ## 与现有材料的关系及限制
 
-[Steam 胶囊图交接](steam-capsule-handoff.md)处理素材用途与发布条件；本文处理其后可能使用的流量证据，但不声称某张图提高了访问。[完成率分母合同](../../solutions/data/attempt-completion-denominator-contract.md)可帮助区分观察单位；本文不继承其合成数据测试，也不打开运行归档。
+[Steam 胶囊图交接](steam-capsule-handoff.md)处理素材用途与发布条件；本文处理其后可能使用的流量证据，但不声称某张图提高了访问。[完成率分母合同](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/data/attempt-completion-denominator-contract.md)可帮助区分观察单位；本文不继承其合成数据测试，也不打开运行归档。
 
 本次没有登录账户、提取实际 CSV、测试链接、播放视频或解读截图。没有对平台去重窗口、完整过滤算法、个别隐藏行或任何真实活动做推断。两个官方网页来自同一平台，不是两项独立效果验证；原始集合例子只说明接收前提，不是新的因果或流量估计方法。

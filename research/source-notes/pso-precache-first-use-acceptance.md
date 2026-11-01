@@ -2,7 +2,7 @@
 
 核对日期：2026-11-01。本文依据 Epic **Unreal Engine 5.6** 版本化手册，提出原创、未执行的组件首显接收方案。没有运行 UE、编译 PSO、操作驱动缓存、观察缺失的 PSO 或测量性能；也没有检查引擎实现。
 
-[呈现队列与输入时效](../../solutions/rendering/presentation-queue-latency-boundary.md)讨论呈现请求与上游工作，不验证 UE 的 PSO 覆盖。本条关注更具体的交接：**渲染程序为组件增加一个 pass / render-target 组合后，收集路径是否描述了实际绘制需要的状态，以及准备不足时允许显示什么。**
+[呈现队列与输入时效](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md)讨论呈现请求与上游工作，不验证 UE 的 PSO 覆盖。本条关注更具体的交接：**渲染程序为组件增加一个 pass / render-target 组合后，收集路径是否描述了实际绘制需要的状态，以及准备不足时允许显示什么。**
 
 ## 文档支持的有限机制
 

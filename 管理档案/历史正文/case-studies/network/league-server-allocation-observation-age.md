@@ -99,9 +99,9 @@ Tomasz Mozolewski 在 Riot **2025-01-16** 的[第一方技术报告](https://www
 
 ## 与已有知识的区别
 
-- [在线服务工程师](../../../../roles/network/online-services-engineer.md)关注一条服务链究竟使用了哪些真实组件与替身；本案例进一步关注分配决策的输入时间与需求增长。
+- [在线服务工程师](../../../../GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md)关注一条服务链究竟使用了哪些真实组件与替身；本案例进一步关注分配决策的输入时间与需求增长。
 - [Destiny 配置准入与回退](../../../../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)关注运行实例的配置一致性和恢复；这里不研究配置回滚。
-- [客户端预测与确认重放](../../../../solutions/programming/client-prediction-authority-boundary.md)关注对局中的权威状态，不为机群放置策略提供实测证明。
+- [客户端预测与确认重放](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)关注对局中的权威状态，不为机群放置策略提供实测证明。
 
 ## 来源定位
 

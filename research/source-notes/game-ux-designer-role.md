@@ -1,6 +1,8 @@
 # 游戏 UX 设计师：来源记录
 
-对应 [ROLE-UX-001](../../roles/ux/game-ux-designer.md)；访问2026-11-01。
+对应 [ROLE-UX-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md)；访问2026-11-01。
+
+当前读者正文：[游戏体验设计师如何梳理操作流程](../../GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md)。
 
 | 原始来源 | 身份与日期 | 已读定位及用途 |
 |---|---|---|

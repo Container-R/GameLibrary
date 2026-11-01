@@ -42,4 +42,4 @@
 
 因此，对旋转武器或细长判定体，接收方先要决定规则关心的是中心路径还是整个形状扫过的区域。若是后者，不能用“中心没有移动”的线性查询替代旋转路径；若改用含旋转的连续检测，还须保留该版本的限制，另行验证项目关心的运动。这个反例既不给出安全子步数，也不证明某个旋转查询算法能够完整捕获所有经过。
 
-本题与[固定 Tick 的模拟边界](../../solutions/programming/fixed-step-simulation-boundary.md)相邻，但那里的模型与 Godot 观察不能验证 Box2D 的本条路径。这里仅新增版本明确的检测选择依据，不继承其运行结果，也不证明跨引擎碰撞正确性。
+本题与[固定 Tick 的模拟边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md)相邻，但那里的模型与 Godot 观察不能验证 Box2D 的本条路径。这里仅新增版本明确的检测选择依据，不继承其运行结果，也不证明跨引擎碰撞正确性。

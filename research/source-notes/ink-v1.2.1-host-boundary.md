@@ -26,12 +26,14 @@
 
 下一项真正有价值的实验需要固定运行时、原创故事及编译结果摘要，比较显式 `false` 与 General 省略参数的实际轨迹，并观察奖励前后检查点恢复；不能预设任何故事必然重复调用。还需区分恢复旧兼容检查点与加载不同内容版本。
 
-本环境 `command -v dotnet`、`mono`、`inklecate` 均未发现 PATH 入口；这不是全盘不存在的证明。本轮不安装依赖、不执行下载代码，不以抽象 Python 模型冒充 ink 行为。无运行时证据时停止在本来源审计，不新增“已验证叙事方案”。
+当时未具备运行 ink 的已确认条件，因此没有执行运行时验证；不据此断言所有可用实现均不存在。本轮不安装依赖、不执行下载代码，不以抽象 Python 模型冒充 ink 行为。无运行时证据时停止在本来源审计，不新增“已验证叙事方案”。
 
-固定版本 [MIT 许可](https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/LICENSE.txt) 已检查；本文为原创分析，没有转载实现代码。关联已有[经济事件账本](../../solutions/design/single-player-economy-ledger.md)和[云存档边界](../../solutions/platform/cloud-save-resume-boundary.md)，但二者不证明叙事与宿主状态的一致检查点。
+固定版本 [MIT 许可](https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/LICENSE.txt) 已检查；本文为原创分析，没有转载实现代码。关联已有[经济事件账本](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md)和[云存档边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md)，但二者不证明叙事与宿主状态的一致检查点。
 
 [独立源码复核记录](../audits/ink-source-independent-review.md)保存行号与两项措辞纠正；其确认的是固定版本源码事实，不是运行结果。
 
 ## 追加的内容兼容性深审
 
 [旧状态遇到新内容](ink-save-content-compatibility.md)进一步追踪近似路径恢复、load阶段warning缓存、Continue报告分支和onDidLoadState重入风险。保存格式版本/编译故事格式/项目内容身份不混同；协议仅来源支持，仍没有ink运行时验证。
+
+公开衍生维护说明：本次仅省略安装环境信息，保留原有技术结论、失败与证据限制及已修正的固定历史链接；未运行旧实验，也未重写历史记录。

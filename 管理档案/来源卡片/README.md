@@ -19,18 +19,18 @@
 
 | 研究问题 | 来源记录入口 | 证据边界 |
 |---|---|---|
-| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../../solutions/programming/fixed-step-simulation-boundary.md) | 原作者时间步讨论、Unity版本文档；分开的本地Godot回调、合成输入与有限kinematic接触夹具各有独立范围，不能互相迁移证据或外推真实设备/完整物理政策 |
-| 转身脚滑与运动责任 | [知识条目来源S1–S6](../../solutions/animation/turn-in-place-foot-sliding.md) | Unity6000.0、UE5.6；平面接触模型不验证IK实现 |
+| 固定时间步与输入流 | [专用来源档案](fixed-step-primary-sources.md)、[知识条目](../../GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md) | 原作者时间步讨论、Unity版本文档；分开的本地Godot回调、合成输入与有限kinematic接触夹具各有独立范围，不能互相迁移证据或外推真实设备/完整物理政策 |
+| 转身脚滑与运动责任 | [知识条目来源S1–S6](../../GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md) | Unity6000.0、UE5.6；平面接触模型不验证IK实现 |
 | 玩法程序工作接口 | [岗位档案](../../GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md) | 行业组织、雇主和教学项目的公开样本，不推定全行业组织结构 |
-| 技术美术资产交接 | [岗位档案来源S1–S5](../../GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md) | ScreenSkills、Ubisoft历史/岗位样本、UE5.6 FBX；不外推所有导入器 |
-| 交互音乐状态契约 | [知识条目](../../solutions/audio/music-state-transition-contract.md) | FMOD2.04手册为主；Wwise历史案例和旧公开头文件明确标年，不假定当前SDK等价 |
-| 客户端预测与确认 | [知识条目](../../solutions/programming/client-prediction-authority-boundary.md) | Gambetta原作者与Unity指定版本；离散模型不验证网络/物理/反作弊 |
-| Niagara预算与测量 | [知识条目](../../solutions/vfx/niagara-performance-budget.md) | UE5.6为主，5.8补充单独标记；没有硬件性能实测 |
-| 单机经济事件账本 | [知识条目](../../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型及实际 SQLite 事务/写锁证据，不预测真实玩家 |
+| 技术美术资产交接 | [技术美术读者正文与参考来源](../../GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md) | ScreenSkills、Ubisoft历史/岗位样本、UE5.6 FBX；不外推所有导入器 |
+| 交互音乐状态契约 | [知识条目](../../GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md) | FMOD2.04手册为主；Wwise历史案例和旧公开头文件明确标年，不假定当前SDK等价 |
+| 客户端预测与确认 | [知识条目](../../GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md) | Gambetta原作者与Unity指定版本；离散模型不验证网络/物理/反作弊 |
+| Niagara预算与测量 | [知识条目](../../GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md) | UE5.6为主，5.8补充单独标记；没有硬件性能实测 |
+| 单机经济事件账本 | [知识条目](../../GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md) | 设计作者与Unity资源映射；原创整数模型及实际 SQLite 事务/写锁证据，不预测真实玩家 |
 | 交互音频职责交付 | [岗位档案](../历史正文/roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
-| 模态焦点恢复 | [知识条目](../../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，状态模型及 Godot 实例/焦点无头证据，不证明真实渲染和认证 |
-| 伪本地化与格式契约 | [知识条目](../../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；已执行有限 ICU 格式化，未执行 Unity |
-| Steam恢复与存档写隔离 | [知识条目](../../solutions/platform/cloud-save-resume-boundary.md) | Valve滚动中英文文档同源；串行模型与实际 tmpfs 路径替换反例，不证明 Steam 平台时序或持久介质断电恢复 |
+| 模态焦点恢复 | [知识条目](../../GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md) | XAG113/112与Unity6000.0，状态模型及 Godot 实例/焦点无头证据，不证明真实渲染和认证 |
+| 伪本地化与格式契约 | [知识条目](../../GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md) | Unity1.5.13、官方问题记录、ICU/W3C；已执行有限 ICU 格式化，未执行 Unity |
+| Steam恢复与存档写隔离 | [知识条目](../../GameLibrary/平台与发行/平台接入/云存档/Steam动态云同步恢复后的存档冲突处理.md) | Valve滚动中英文文档同源；串行模型与实际 tmpfs 路径替换反例，不证明 Steam 平台时序或持久介质断电恢复 |
 
 ## 更新规则
 
@@ -45,11 +45,11 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [ink固定提交取证清单](../../research/source-notes/ink-v1.2.1-receipt.json)与[原创源码审计](../../research/source-notes/ink-v1.2.1-host-boundary.md)：仅代码阅读，不声称运行时验证。
 
-[资产导入意图契约](../../solutions/engine/asset-import-intent-contract.md)与[原始夹具](../../research/experiments/godot-import-boundary/README.md)保存Godot4.6官方来源、4.6.3工具版本及独立复跑证据。
+[资产导入意图契约](../../GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md)与[原始夹具](../../research/experiments/godot-import-boundary/README.md)保存Godot4.6官方来源、4.6.3工具版本及独立复跑证据。
 
-[导航就绪边界](../../solutions/ai/navigation-readiness-and-partial-path.md)记录Godot4.6 Experimental API来源、4.6.3实际查询及默认region诊断。[TA岗位](../../GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md)另加入万代南梦宫工作室日语职责说明，属于工作室自述而非事故/效率量化证据。
+[导航就绪边界](../../GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md)记录Godot4.6 Experimental API来源、4.6.3实际查询及默认region诊断。[TA岗位](../../GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md)另加入万代南梦宫工作室日语职责说明，属于工作室自述而非事故/效率量化证据。
 
-[关键非语音声音来源档案](accessibility-critical-sound-sources.md)区分 Microsoft XAG103/104、Game Accessibility Guidelines 和 Naughty Dog 2020 年功能披露；[工程合同](../../solutions/accessibility/critical-sound-information-contract.md)的具体信息粒度和时序策略是原创提案，不是用户研究结果。
+[关键非语音声音来源档案](accessibility-critical-sound-sources.md)区分 Microsoft XAG103/104、Game Accessibility Guidelines 和 Naughty Dog 2020 年功能披露；[工程合同](../../GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md)的具体信息粒度和时序策略是原创提案，不是用户研究结果。
 
 [试玩介入来源档案](playtest-intervention-sources.md)对照 Valve 居家模拟试玩条件与 GDS 服务可用性研究的救场目的；[工程方案](../历史正文/solutions/production/playtest-intervention-evidence.md)区分额外解题提示、预定参与支持、观察、解释和改后验证。没有真实参与者或改版收益数据。
 
@@ -65,11 +65,11 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [SQLite 事务边界](../../research/experiments/sqlite-ledger-boundary/README.md)及[写锁序列](../../research/experiments/sqlite-writer-contention/README.md)分别保留官方接口依据、运行时自报身份与有限实际证据；不以本地事务代替远程权益或玩家经济研究。
 
-[BC纹理预算](../../solutions/rendering/block-compressed-mip-budget.md)对照Microsoft/Khronos官方文档和固定DirectXTex源码；离线payload、上传布局、分配与驻留证据分层。未执行GPU资源创建。
+[BC纹理预算](../../GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md)对照Microsoft/Khronos官方文档和固定DirectXTex源码；离线payload、上传布局、分配与驻留证据分层。未执行GPU资源创建。
 
-[网格属性契约](../../solutions/modeling/gltf-interleaved-attribute-contract.md)固定Khronos glTF规范与schema版本；同项目多文件不冒充独立厂商验证，CPU字面oracle是另一证据层。
+[网格属性契约](../../GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md)固定Khronos glTF规范与schema版本；同项目多文件不冒充独立厂商验证，CPU字面oracle是另一证据层。
 
-[遥测尝试分母](../../solutions/data/attempt-completion-denominator-contract.md)分别记录Unity事件身份与GameAnalytics指标人口定义，不把原创模型策略当作供应商服务实现。
+[遥测尝试分母](../../GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md)分别记录Unity事件身份与GameAnalytics指标人口定义，不把原创模型策略当作供应商服务实现。
 
 [ink保存内容兼容性](../../research/source-notes/ink-save-content-compatibility.md)沿固定源码区分入口返回、近似路径诊断、延迟回调及作者批准的叙事延续；能力门槛限制了实测，未用抽象模型冒充运行。
 
@@ -87,7 +87,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [同路径请求登记证据](../../research/experiments/godot-resource-broker/README.md)将第二次请求策略与首个未收取 token 的复用分开；登记失效不等于已持有资源失效。固定官方源码是语义参照，不是已安装二进制身份认证。
 
-[矩阵接口来源与编译证据](../../solutions/rendering/matrix-major-interface-contract.md)对照固定 GLSL/Vulkan 规范及 shaderc API；实际 assembly decoration 与 CPU 字节解释分层，不称为 GPU 执行。
+[矩阵接口来源与编译证据](../../GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md)对照固定 GLSL/Vulkan 规范及 shaderc API；实际 assembly decoration 与 CPU 字节解释分层，不称为 GPU 执行。
 
 [导航体型交接](../../research/experiments/godot-navigation-radius/README.md)区分烘焙半径、避让配置与独立静止物理重叠；原生地面三角形和墙体不属于同一烘焙输入，未执行角色运动。
 
@@ -209,7 +209,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [模型烘焙 piece 可见集合](../../research/source-notes/model-bake-piece-visibility.md)区分跨输入名称对应与追踪分组不变；原创组件合并反例及接收步骤不预填实际命中或纹理结果。
 
-[均匀网格最近命中的停止边界](../../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
+[均匀网格最近命中的停止边界](../../GameLibrary/图形渲染/空间查询/光线求交/均匀网格中的最近命中与提前停止.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
 
 [最后生还者第二部如何结合顶点与探针照明](../../GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
 

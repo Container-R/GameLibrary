@@ -95,9 +95,9 @@ sources:
 ## 与既有工程证据的关系
 
 - [玩家分配与逐场实际暴露](../../../../research/source-notes/game-experiment-assignment-and-session-exposure.md)用原始预印本机制和原创未执行情景，区分原分配、共享规则预测与实际启用证据；记录关系不构成估计器或因果识别验证。
-- [事件、尝试与玩家分母](../../../../solutions/data/attempt-completion-denominator-contract.md)已用18行原创合成输入检查有限快照与排列，帮助约束身份、窗口和未知状态。它没有真实玩家或服务调用，更不是上述教程改版实验；本角色不重写其算法，也不把纯模型升级为线上采集可靠性。
-- [游戏 QA](../../../../roles/qa/game-quality-assurance.md)可提供版本、复现与数据检查证据；检查通过不替代分析解释，分析师也不能把不利观察简单标为测试错误。
-- [制作管理](../../../../roles/production/production-manager.md)协调接收、依赖和决定权限；指标成为决策输入不等于已经调整了范围或发布承诺。
+- [事件、尝试与玩家分母](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/data/attempt-completion-denominator-contract.md)已用18行原创合成输入检查有限快照与排列，帮助约束身份、窗口和未知状态。它没有真实玩家或服务调用，更不是上述教程改版实验；本角色不重写其算法，也不把纯模型升级为线上采集可靠性。
+- [游戏 QA](../../../../GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md)可提供版本、复现与数据检查证据；检查通过不替代分析解释，分析师也不能把不利观察简单标为测试错误。
+- [制作管理](../../../../GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md)协调接收、依赖和决定权限；指标成为决策输入不等于已经调整了范围或发布承诺。
 - [试玩干预与证据边界](../../solutions/production/playtest-intervention-evidence.md)帮助区分辅助完成与无提示理解；遥测和玩家研究可以互补，但不能互相冒名。
 
 ## 限制与后续工作

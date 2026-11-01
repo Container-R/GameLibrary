@@ -1,6 +1,6 @@
 # sRGB 工作域交接：固定来源与实际证据分层
 
-读取日期 2026-11-01。对应[alpha 关联交接文章的新工作域小节](../../solutions/art2d/alpha-association-contract.md)与[独立 LittleCMS 数值夹具](../experiments/lcms-transfer-boundary/README.md)。不是现有 Pillow 字节域实验的重跑。
+读取日期 2026-11-01。对应[alpha 关联交接文章的新工作域小节](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md)与[独立 LittleCMS 数值夹具](../experiments/lcms-transfer-boundary/README.md)。不是现有 Pillow 字节域实验的重跑。
 
 ## 原始来源
 
@@ -20,6 +20,8 @@
 
 ## 身份与未覆盖项
 
-选定字节为 Pillow 包目录中的 `liblcms2-88eaba2f.so.2.0.19`，SHA256 `4cf9f69016c7804bcb4fa56f5bbc55640cb1b7196ac7b93ba29ed9df9bd9ff4d`；读取进程映射、版本及前后摘要以确认本次选择一致。系统另有不同的 liblcms2，未将其混作此结果。源码 tag、文件名和运行时自报都不认证安装构建来源；未审计全部加载依赖。
+当时选择的是 Pillow 所带的 LittleCMS 库，而非系统中的另一份库。具体安装文件名及安装摘要已从本公开衍生说明省略；原记录通过加载映射、版本和前后摘要核对所选库的一致性，本轮未重复该核对。源码 tag 和运行时自报仍不能认证安装构建来源，也没有审计全部加载依赖。
 
 没有导入第三方图片或任意 ICC 文件，没有 GPU、显示、感知、HDR/广色域、过滤或性能测试。源文件/原始流/静态 checker 一致只支持可复查记录，不构成执行真实性签名。初次代码审查的合成假接受与修正保留，但从未运行有缺陷初稿的 CMM 目标子进程；不能把合成检查数写成颜色场景数。
+
+公开衍生维护说明：本次仅省略安装环境信息，保留原有技术结论、失败与证据限制及已修正的固定历史链接；未运行旧实验，也未重写历史记录。

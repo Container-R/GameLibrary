@@ -2,7 +2,7 @@
 
 访问与核对日期：2026-11-01。本文仅核对 meshoptimizer 固定源码，并提出原创、未执行的接收示例；没有生成网格、运行简化器、观察画面或测量性能。
 
-[glTF 属性与几何交接](../../solutions/modeling/gltf-interleaved-attribute-contract.md)关注数据解释和实际导入所得几何；[BC mip 预算](../../solutions/rendering/block-compressed-mip-budget.md)区分纹理 payload 与其他存储层次。它们都不能证明一次网格简化达到了请求比例或保留了所需外观。这里补充的是请求端到资产接收端的另一条边界。
+[glTF 属性与几何交接](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md)关注数据解释和实际导入所得几何；[BC mip 预算](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md)区分纹理 payload 与其他存储层次。它们都不能证明一次网格简化达到了请求比例或保留了所需外观。这里补充的是请求端到资产接收端的另一条边界。
 
 ## 固定版本与实际读取的合同
 

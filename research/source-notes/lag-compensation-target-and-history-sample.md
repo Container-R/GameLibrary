@@ -1,6 +1,6 @@
 # 延迟补偿：命令目标、采用目标与历史样本不是同一个量
 
-2026-11-01。本文只核对 Valve 官方 SDK 的一个固定源码版本，并给出原创手算；没有运行游戏、网络或命中测试。关联[客户端预测与权威边界](../../solutions/programming/client-prediction-authority-boundary.md)，不改变其原有验证范围。
+2026-11-01。本文只核对 Valve 官方 SDK 的一个固定源码版本，并给出原创手算；没有运行游戏、网络或命中测试。关联[客户端预测与权威边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)，不改变其原有验证范围。
 
 ## 固定来源中的时间选择
 

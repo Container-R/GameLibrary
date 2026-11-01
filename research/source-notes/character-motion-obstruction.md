@@ -1,6 +1,6 @@
 # CharacterBody3D 位移与阻挡：来源和证据适用范围
 
-读取日期2026-11-01。关联[现有导航文章](../../solutions/ai/navigation-readiness-and-partial-path.md)与[新增原生运动夹具](../experiments/godot-character-motion/README.md)。此前静止重叠与 Node3D 路径跟随是不同实验，未被改写成物理移动证据。
+读取日期2026-11-01。关联[现有导航文章](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md)与[新增原生运动夹具](../experiments/godot-character-motion/README.md)。此前静止重叠与 Node3D 路径跟随是不同实验，未被改写成物理移动证据。
 
 ## 原始资料
 

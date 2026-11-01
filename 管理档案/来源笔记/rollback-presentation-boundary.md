@@ -1,6 +1,6 @@
 # GGPO重放与表现输出：来源定位
 
-补充[客户端预测与权威边界](../../solutions/programming/client-prediction-authority-boundary.md)。读取2026-11-01；仅源码/文档，不运行SDK。
+补充[客户端预测与权威边界](../../GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md)。读取2026-11-01；仅源码/文档，不运行SDK。
 
 统一固定提交：`7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a`，GitHub commit时间2019-11-07T17:39:58Z。以下初始三个文件属于同一作者项目，不构成三个独立厂商交叉验证；未建立任何安装二进制对应关系。
 
@@ -26,3 +26,11 @@
 - [ggponet.h 419–500](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h#L419-L500)：输入、同步与 idle 使用说明。另据其中 frame delay 须在首次同步输入前设置的前提，**未采用运行中动态调延迟建议**；内部队列分支不替代公开调用约束。
 
 条件例与正常步控制流为原创未执行推导；没有展示可达网络轨迹、恢复时间或输入保留保证。仅限单本地玩家、初始化完成后的 P2P 正常前进，不套在回滚回调上。内部确认帧不被重命名为原服务器模型的 ack；idle 可涉及回滚，故不把分支拒绝写成全状态冻结。原始源码、示例及接口注释各自支持有限结论，没有新增 SDK、网络或模型执行。
+
+## 正常步不能用后一次成功覆盖提交失败
+
+只看最后一个返回码，会把两个不同决定混在一起。在上述固定P2P实现中，设当前帧为F、内部最后确认帧为C、预测上限为M，`AddLocalInput` 在 `F >= M` 且 `F-C >= M` 时拒绝，发生在本次输入进入队列之前。随后调用 `SyncInput` 并不会重新执行这道预测上限检查；它正常返回成功，不能补发先前遭拒的输入。[提交分支](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp#L57-L77)、[P2P两入口](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/backends/p2p.cpp#L263-L338)。
+
+因此正常前进要保留每一步的结果：本地提交失败便停止本次正常推进；提交成功后才取同步输入，取成功后才推进玩法并通知完成该帧。网络服务和绘制仍有各自路径，不能一并停掉；服务可能触发回滚，所以这里也不是“整个游戏状态冻结”。此说明只针对初始化完成、单个有效本地玩家的正常P2P路径；不覆盖多个本地玩家部分提交或回滚回调。短按如何保留、重采样或消费仍由应用决定。
+
+这是旧源分析的可读承接，2026-11-01再次核对固定sync/P2P分支；未运行GGPO，也未把条件式当成已构造的网络历史。旧条件例与完整适用限制见[固定历史支持](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md#正常推进还有一道门预测上限拒绝不能被后续成功覆盖)。

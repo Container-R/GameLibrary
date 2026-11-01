@@ -2,7 +2,7 @@
 
 核对日期：2026-11-01。本文核对固定 Khronos 规范与示例实现，并给出原创的精确手推。没有执行数值模型、导入器、shader 或渲染，没有生成资产，也没有观察某个导出器的错误。
 
-[glTF 属性与几何交接](../../solutions/modeling/gltf-interleaved-attribute-contract.md)已有有限字节读取、稀疏属性与实际导入证据，但明确不覆盖切线和最终画面。[CPU 与 shader 矩阵合同](../../solutions/rendering/matrix-major-interface-contract.md)区分存储与代数约定，也不能替代这里的方向语义。本条新增的问题是：**NORMAL 与 TANGENT 都保持单位长度，是否就足以接收一次非均匀缩放？**
+[glTF 属性与几何交接](../../GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md)已有有限字节读取、稀疏属性与实际导入证据，但明确不覆盖切线和最终画面。[CPU 与 shader 矩阵合同](../../GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md)区分存储与代数约定，也不能替代这里的方向语义。本条新增的问题是：**NORMAL 与 TANGENT 都保持单位长度，是否就足以接收一次非均匀缩放？**
 
 ## 先分清局部属性合同与接收端实现
 

@@ -14,4 +14,4 @@ Runtime evidence is separate: exact FFmpeg self-report, executable hash, five re
 
 The source-only gate, independent source/protocol/code reviews and pre-native synthetic defect probes retain chronology. This case's formulas and handoff checklist are original analysis; all PCM bytes are generated from the frozen integer formulas. No third-party audio or copied standards diagrams are included.
 
-[Experiment and exact evidence](../experiments/ogg-opus-frame-boundary/README.md) · [Music handoff article](../../solutions/music/pcm-loop-frame-contract.md)
+[Experiment and exact evidence](../experiments/ogg-opus-frame-boundary/README.md) · [Music handoff article](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md)

@@ -1,6 +1,6 @@
 # NavigationAgent3D 路径结束与目标到达：来源说明
 
-读取日期 2026-11-01。关联[现有导航文章](../../solutions/ai/navigation-readiness-and-partial-path.md)与[新增跟随夹具](../experiments/godot-navigation-completion/README.md)。旧查询/半径夹具保持原字节与范围。
+读取日期 2026-11-01。关联[现有导航文章](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md)与[新增跟随夹具](../experiments/godot-navigation-completion/README.md)。旧查询/半径夹具保持原字节与范围。
 
 ## 版本化原始资料
 
@@ -16,6 +16,8 @@
 
 ## 身份与失败记录
 
-本机选定 Godot 文件 SHA256 `f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`，版本为程序自报。固定公共提交仅作实现比较，构建来源对应仍未认证。前后摘要/命令/原始流绑定支持档案复查，不是执行真实性签名。
+当时选定的 Godot 文件安装摘要已从本公开衍生说明省略，版本仍为程序自报。固定公共提交仅作实现比较，构建来源对应仍未认证。前后摘要/命令/原始流绑定支持档案复查，不是执行真实性签名。
 
 协议与代码审查先于原生调用。运行前合成假记录暴露的 consumer/oracle 缺口单独保留，不写成引擎错误；启动保护测试只启动 Python，不启动 Godot。原生失败/超时分支没有因为代码存在就算作已执行。
+
+公开衍生维护说明：本次仅省略安装环境信息，保留原有技术结论、失败与证据限制及已修正的固定历史链接；未运行旧实验，也未重写历史记录。

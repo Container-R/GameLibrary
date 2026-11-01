@@ -94,11 +94,11 @@ Godot 的反向 Z 迁移说明提供了一个具体例子：直接写深度常�
 
 ## 典型工程问题与已有证据
 
-- **接口字节合法却画面错误**：[CPU与shader矩阵合同](../../../../solutions/rendering/matrix-major-interface-contract.md)区分布局与代数语义；该文的实际编译证据不是GPU执行证明。
-- **资产文件大小被当作运行预算**：[压缩纹理mip预算](../../../../solutions/rendering/block-compressed-mip-budget.md)区分payload与其他资源成本；不能从字节计算直接推断帧时间。
-- **内容性能与信息质量互相牺牲**：[Niagara预算](../../../../solutions/vfx/niagara-performance-budget.md)提供未执行的内容侧受控测量协议，未运行UE或采集硬件性能数据，不能代替整个渲染器的功能接收。
-- **功能可用但内容无法稳定制作**：[技术美术](../../../../roles/technical-art/technical-artist.md)负责生产接口；底层架构与内容流程需共同决策。
-- **复现记录不足以形成发布决定**：[游戏QA](../../../../roles/qa/game-quality-assurance.md)区分缺陷证据和版本风险；图形程序给出的技术解释不能取代全部发布责任。
+- **接口字节合法却画面错误**：[CPU与shader矩阵合同](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md)区分布局与代数语义；该文的实际编译证据不是GPU执行证明。
+- **资产文件大小被当作运行预算**：[压缩纹理mip预算](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md)区分payload与其他资源成本；不能从字节计算直接推断帧时间。
+- **内容性能与信息质量互相牺牲**：[Niagara预算](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/vfx/niagara-performance-budget.md)提供未执行的内容侧受控测量协议，未运行UE或采集硬件性能数据，不能代替整个渲染器的功能接收。
+- **功能可用但内容无法稳定制作**：[技术美术](../../../../GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md)负责生产接口；底层架构与内容流程需共同决策。
+- **复现记录不足以形成发布决定**：[游戏QA](../../../../GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md)区分缺陷证据和版本风险；图形程序给出的技术解释不能取代全部发布责任。
 
 ## 公开工作证据及后续研究
 

@@ -6,14 +6,14 @@ A finite original two-process observation, not prediction or network security ce
 
 | Record | Version | Server | Client | Result |
 |---|---:|---:|---:|---|
-| Initial author `cee0c49d-8f19-4f76-aeee-76d302a255ca` | 1 | 1 | 0 | FAIL: four parse errors before READY; no accepted RPC behavior |
-| Corrected author `27e538cb-7c1e-4feb-8e60-ddfb3960b6ad` | 1 | 1 | 1 | Accepted finite exchange |
-| Independent repeat `58830003-76ab-4bab-a089-36d642139fb4` | 1 | 1 | 1 | Accepted same-source, same-binary exchange |
+| Initial author `initial-failed-record` | 1 | 1 | 0 | FAIL: four parse errors before READY; no accepted RPC behavior |
+| Corrected author `accepted-author-record` | 1 | 1 | 1 | Accepted finite exchange |
+| Independent repeat `accepted-review-record` | 1 | 1 | 1 | Accepted same-source, same-binary exchange |
 | Total actual processes | **3** | **3** | **2** | 8 processes; 2 accepted exchanges, not 8 scenarios |
 
 The initial failure assigned the void result of Callable `method.rpc_id(...)` to a variable. It remains FAIL; the owned server was terminated with observed exit -9 and no client launched. Only four send expressions changed to the Error-returning Node `self.rpc_id(peer, "method", ...)`. Protocol, oracle, ports and timing were not relaxed. `historical-callable-return-failure/` preserves its exact nine-source snapshot and complete raw receipt; `CALLABLE-CORRECTION.md` explains the original API distinction.
 
-Both accepted runs have empty stderr and exit 0 for every process. Author peer C is `817464963`; reviewer C is `1799021229`. Each run has 23 server events and 13 client events. For every request, the RPC context sender is C, the copied sender remains C, and the fresh deferred getter is 0.
+Both accepted runs have empty stderr and exit 0 for every process. Each accepted run records its own client peer as C; the two observed numeric peer identifiers are omitted here. Each run has 23 server events and 13 client events. For every request, the RPC context sender is C, the copied sender remains C, and the fresh deferred getter is 0.
 
 | Request | Naive poststate A/B | Guarded decision | Guarded poststate A/B |
 |---|---:|---|---:|
@@ -39,14 +39,14 @@ The reviewer ran seven pure methods and ten independent finite payload mutations
 
 ## Inspect or reproduce without overwriting the archive
 
-For static checking, use the supplied current source directory and an accepted evidence UUID directory:
+The following historical command shapes use public record aliases, not executable directory names. They document the original checking contract; this derivative does not establish that a redacted receipt can pass that original consumer:
 
 ```sh
-python consumer.py /path/to/experiment /path/to/experiment/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad
-python -O consumer.py /path/to/experiment /path/to/experiment/evidence/27e538cb-7c1e-4feb-8e60-ddfb3960b6ad
+python consumer.py /path/to/experiment /path/to/experiment/evidence/accepted-author-record
+python -O consumer.py /path/to/experiment /path/to/experiment/evidence/accepted-author-record
 ```
 
-Reviewer evidence uses its exact `review/native-repeat/` source copy and nested `evidence/58830003-76ab-4bab-a089-36d642139fb4/`. Static validation needs no currently installed Godot or historical absolute directories. It checks recorded paths against receipt structure, local provided source hashes and raw files. Do not run the PASS-only consumer on the failed parse attempt and interpret rejection as missing evidence; that record is intentionally FAIL and retains its own snapshot.
+Reviewer evidence uses its exact `review/native-repeat/` source copy and nested `evidence/accepted-review-record/`. Static validation needs no currently installed Godot or historical absolute directories. It checks recorded paths against receipt structure, local provided source hashes and raw files. Do not run the PASS-only consumer on the failed parse attempt and interpret rejection as missing evidence; that record is intentionally FAIL and retains its own snapshot.
 
 Native reproduction is optional and separate from archive inspection. It opens two local UDP ports. First obtain permission for this exact local operation and make a **fresh external disposable directory**, copying only the nine files listed in `SOURCE-SHA256.json`; never run in this archived directory or its historical snapshots. Run `python test_pure.py` there before any authorized `python run.py`. The runner requires the exact recorded executable bytes and protocol/helper pins; no automatic install, binary replacement, alternate ports or retries. Fixed ports 32187/32188 may be unavailable: bind failure must end the attempt. The version query is bounded at 20 seconds; server/client share a 20-second deadline with 15-second internal watchdogs. Cleanup attempts have separate bounded waits. These bounds are not latency performance evidence.
 
@@ -54,6 +54,8 @@ The runner deletes its own stale summary before optimized rejection/local import
 
 ## Limits and provenance
 
-Installed binary SHA256 `f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`, self-report `4.6.3.stable.official.7d41c59c4`. The self-reported “official” build string is not independently authenticated. Compared upstream commit `35e80b3a8822a9df9be390814b62f44c0a9c69e8` is not established as the build source of those bytes.
+Installed binary fingerprint omitted from this public derivative; historical self-report `4.6.3.stable.official.7d41c59c4`. The self-reported “official” build string is not independently authenticated. Compared upstream commit `35e80b3a8822a9df9be390814b62f44c0a9c69e8` is not established as the build source of those bytes.
 
-No WAN impairment, reconnect, ownership transfer, replay/dedup, authentication, encryption, rate limit, general anti-cheat, simulation tick, physics, movement, prediction, rollback, cross-platform or user-study result is established. Existing integer prediction tests and Unity source-only analysis keep their previous scope. See [source note](../../source-notes/godot-rpc-authority-boundary.md) and [article](../../../solutions/programming/client-prediction-authority-boundary.md).
+No WAN impairment, reconnect, ownership transfer, replay/dedup, authentication, encryption, rate limit, general anti-cheat, simulation tick, physics, movement, prediction, rollback, cross-platform or user-study result is established. Existing integer prediction tests and Unity source-only analysis keep their previous scope. See [source note](../../source-notes/godot-rpc-authority-boundary.md) and [article](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md).
+
+Public derivative notice: installation fingerprint, three execution identifiers and two observed numeric client identifiers are omitted or replaced with descriptive aliases. Technical outcomes, initial failure, process counts and equality relationships remain historical claims; no archive or engine was rerun. Original source and receipt hashes are not recalculated into historical declarations.

@@ -1,6 +1,6 @@
 # FMOD 事件结束与 bank 卸载：来源范围
 
-2026-11-01 读取；补充[交互音乐状态交接契约](../../solutions/audio/music-state-transition-contract.md)的生命周期部分。依据 FMOD Engine User Manual **2.04.00**，页脚标记 **2026-09-29**；这是可变网页的版本／日期标记，不认证软件发布日期、固定实现或安装版本。
+2026-11-01 读取；补充[交互音乐状态交接契约](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md)的生命周期部分。依据 FMOD Engine User Manual **2.04.00**，页脚标记 **2026-09-29**；这是可变网页的版本／日期标记，不认证软件发布日期、固定实现或安装版本。
 
 ## 原始资料与定位
 

@@ -63,6 +63,6 @@ P_z=a^2P_x+b^2P_y+2abC_{xy}.
 
 ## 与已有证据的关系
 
-[交互音乐状态交接](../../solutions/audio/music-state-transition-contract.md)处理会话、转场时机和观察层；本文不增加其中间件执行证据。[静音 stem 与结束输入](../../solutions/audio/silent-stem-normalization-boundary.md)研究输入参与范围影响自动缩放；本文始终保留两输入，分析的是样本关系与交叉项，不把那项离线结果迁移成这里的淡化验证。
+[交互音乐状态交接](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md)处理会话、转场时机和观察层；本文不增加其中间件执行证据。[静音 stem 与结束输入](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md)研究输入参与范围影响自动缩放；本文始终保留两输入，分析的是样本关系与交叉项，不把那项离线结果迁移成这里的淡化验证。
 
 本说明止于固定源码机制与有限精确代数：不涵盖完整音乐淡化、立体声相关性、跨频段处理、实际波形峰值测量或听感效果。没有转载上游实现、帮助示例或第三方乐谱。

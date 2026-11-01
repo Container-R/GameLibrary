@@ -1,6 +1,6 @@
 # Unreal Notify 执行资格与权威请求：来源边界
 
-访问日期：2026-11-01。对应[固定 Tick 与引擎表现边界](../../solutions/programming/fixed-step-simulation-boundary.md)的源文本补充，不是 Unreal 运行报告。
+访问日期：2026-11-01。对应[固定 Tick 与引擎表现边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md)的源文本补充，不是 Unreal 运行报告。
 
 ## 执行资格与权威判定
 

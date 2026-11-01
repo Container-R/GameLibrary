@@ -1,6 +1,6 @@
 # FMOD 虚拟化观察层：来源与适用边界
 
-访问日期：2026-11-01。服务于[音乐状态交接契约](../../solutions/audio/music-state-transition-contract.md)的源文本补充，不是运行验证报告。
+访问日期：2026-11-01。服务于[音乐状态交接契约](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md)的源文本补充，不是运行验证报告。
 
 ## 读取范围
 

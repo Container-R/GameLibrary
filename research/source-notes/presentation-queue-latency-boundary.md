@@ -1,6 +1,6 @@
 # 呈现队列与输入时效：来源定位
 
-关联[呈现队列与输入时效](../../solutions/rendering/presentation-queue-latency-boundary.md)。访问日期2026-11-01。仅有原文核对与原创推演；没有呈现链、渲染或物理延迟实验。
+关联[呈现队列与输入时效](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md)。访问日期2026-11-01。仅有原文核对与原创推演；没有呈现链、渲染或物理延迟实验。
 
 ## 固定 Khronos 范围
 

@@ -1,6 +1,6 @@
 # Godot RPC 入口与应用授权：来源和证据定位
 
-访问/复核日期：2026-11-01。对应[客户端预测与权威边界](../../solutions/programming/client-prediction-authority-boundary.md)的新增 RPC 小节；[实验档案](../experiments/godot-rpc-authority-boundary/README.md)。不是对预测算法的实际引擎验证。
+访问/复核日期：2026-11-01。对应[客户端预测与权威边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)的新增 RPC 小节；[实验档案](../experiments/godot-rpc-authority-boundary/README.md)。不是对预测算法的实际引擎验证。
 
 ## 本次实际阅读的原始来源
 
@@ -28,4 +28,6 @@
 - 初次解析失败、修正后的接受记录、纯测试与优化启动拒绝分开保存。没有用失败的 parse attempt 充当 ENet 能力或 RPC 行为证据。
 - 所有权映射、整数规则、stop-and-wait、STOP 屏障和验收表是原创有限设计；不是 Godot 对账号、攻击、速率或重连的保证。
 
-安装字节 SHA256 `f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3`，自报 `4.6.3.stable.official.7d41c59c4`；自报 “official” 不构成独立来源认证，比较提交未证明就是这些字节的构建来源。只保留原创实现、分析和定位链接，不批量转载引擎源码或文档。
+安装字节指纹已从本公开衍生说明省略；历史自报 `4.6.3.stable.official.7d41c59c4`；自报 “official” 不构成独立来源认证，比较提交未证明就是这些字节的构建来源。只保留原创实现、分析和定位链接，不批量转载引擎源码或文档。
+
+公开记录维护说明：本次仅省略安装指纹并固定旧文章引用；技术观察与失败范围保留，没有重新运行或认证安装来源。

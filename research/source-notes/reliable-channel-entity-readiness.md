@@ -1,6 +1,6 @@
 # 可靠通道的顺序边界：先发送创建，不等于依赖实体已经就绪
 
-访问与核对日期：2026-11-01。本文是固定源码核对与原创、未执行的交接分析；没有发送测试数据包或观察真实乱序。关联[客户端预测与权威边界](../../solutions/programming/client-prediction-authority-boundary.md)，但不修改该文已有模型或 RPC 实验的验证范围。
+访问与核对日期：2026-11-01。本文是固定源码核对与原创、未执行的交接分析；没有发送测试数据包或观察真实乱序。关联[客户端预测与权威边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)，但不修改该文已有模型或 RPC 实验的验证范围。
 
 ## 来源支持的有限机制
 

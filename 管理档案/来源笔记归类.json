@@ -13,7 +13,8 @@
     "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
     "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
     "historical_article_urls": {
-      "case-studies/engine/horizon-streaming-dependency-initialization.md": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/horizon-streaming-dependency-initialization.md"
+      "case-studies/engine/horizon-streaming-dependency-initialization.md": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/horizon-streaming-dependency-initialization.md",
+      "roles/engine/build-engineer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md"
     }
   },
   {
@@ -43,7 +44,11 @@
     "linked_from_articles": [
       "roles/engine/build-engineer.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/engine/build-engineer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md"
+    }
   },
   {
     "old_path": "research/source-notes/character-motion-obstruction.md",
@@ -54,7 +59,11 @@
     "linked_from_articles": [
       "solutions/ai/navigation-readiness-and-partial-path.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/ai/navigation-readiness-and-partial-path.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/detour-findpath-status-and-capacity.md",
@@ -74,7 +83,11 @@
     "linked_from_articles": [
       "roles/art2d/environment-concept-artist.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/art2d/environment-concept-artist.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md"
+    }
   },
   {
     "old_path": "research/source-notes/equal-power-crossfade-correlation.md",
@@ -109,7 +122,11 @@
     "linked_from_articles": [
       "solutions/audio/music-state-transition-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/audio/music-state-transition-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/ffxv-vaulting-successor-candidates.md",
@@ -135,7 +152,11 @@
     "linked_from_articles": [
       "solutions/audio/music-state-transition-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/audio/music-state-transition-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/fmod-virtualization-observation-boundary.md",
@@ -146,7 +167,11 @@
     "linked_from_articles": [
       "solutions/audio/music-state-transition-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/audio/music-state-transition-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/game-animator-role.md",
@@ -168,7 +193,11 @@
     "linked_from_articles": [
       "roles/music/game-composer.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/music/game-composer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/music/game-composer.md"
+    }
   },
   {
     "old_path": "research/source-notes/game-data-analyst-role.md",
@@ -201,7 +230,11 @@
     "linked_from_articles": [
       "roles/rendering/game-lighting-artist.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/rendering/game-lighting-artist.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md"
+    }
   },
   {
     "old_path": "research/source-notes/game-ui-artist-role.md",
@@ -212,7 +245,11 @@
     "linked_from_articles": [
       "roles/art2d/game-ui-artist.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/art2d/game-ui-artist.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md"
+    }
   },
   {
     "old_path": "research/source-notes/game-ux-designer-role.md",
@@ -223,7 +260,11 @@
     "linked_from_articles": [
       "roles/ux/game-ux-designer.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/ux/game-ux-designer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md"
+    }
   },
   {
     "old_path": "research/source-notes/gltf-sparse-accessor.md",
@@ -252,7 +293,11 @@
     "linked_from_articles": [
       "solutions/programming/client-prediction-authority-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/programming/client-prediction-authority-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/godot-runtime-provenance.md",
@@ -270,7 +315,18 @@
       "solutions/programming/fixed-step-simulation-boundary.md",
       "solutions/ux/modal-focus-recovery.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/qa/game-quality-assurance.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/qa/game-quality-assurance.md",
+      "roles/technical-art/technical-artist.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
+      "solutions/ai/navigation-readiness-and-partial-path.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+      "solutions/animation/turn-in-place-foot-sliding.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+      "solutions/engine/asset-import-intent-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+      "solutions/modeling/gltf-interleaved-attribute-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "solutions/programming/fixed-step-simulation-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+      "solutions/ux/modal-focus-recovery.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ux/modal-focus-recovery.md"
+    }
   },
   {
     "old_path": "research/source-notes/graphics-programmer-role.md",
@@ -316,7 +372,11 @@
     "linked_from_articles": [
       "solutions/localization/pseudo-localization-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/localization/pseudo-localization-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/localization/pseudo-localization-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/ink-save-content-compatibility.md",
@@ -387,7 +447,11 @@
     "linked_from_articles": [
       "solutions/art2d/alpha-association-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/art2d/alpha-association-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/league-server-allocation-observation-age.md",
@@ -399,7 +463,11 @@
       "roles/network/online-services-engineer.md",
       "case-studies/network/league-server-allocation-observation-age.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/network/online-services-engineer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md"
+    }
   },
   {
     "old_path": "research/source-notes/left4dead-director-pacing.md",
@@ -425,7 +493,11 @@
     "linked_from_articles": [
       "roles/localization/localization-coordinator.md"
     ],
-    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。"
+    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/localization/localization-coordinator.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md"
+    }
   },
   {
     "old_path": "research/source-notes/mesh-simplification-request-result.md",
@@ -474,7 +546,11 @@
     "linked_from_articles": [
       "solutions/ai/navigation-readiness-and-partial-path.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/ai/navigation-readiness-and-partial-path.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/noita-dirty-region-update-ownership.md",
@@ -494,7 +570,11 @@
     "linked_from_articles": [
       "solutions/music/pcm-loop-frame-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/music/pcm-loop-frame-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/online-services-engineer-role.md",
@@ -505,7 +585,11 @@
     "linked_from_articles": [
       "roles/network/online-services-engineer.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/network/online-services-engineer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md"
+    }
   },
   {
     "old_path": "research/source-notes/physics-callback-mutation-boundary.md",
@@ -516,7 +600,11 @@
     "linked_from_articles": [
       "solutions/programming/fixed-step-simulation-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/programming/fixed-step-simulation-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/prediction-dependency-time-contract.md",
@@ -527,7 +615,11 @@
     "linked_from_articles": [
       "solutions/programming/client-prediction-authority-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/programming/client-prediction-authority-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/presentation-queue-latency-boundary.md",
@@ -538,7 +630,11 @@
     "linked_from_articles": [
       "solutions/rendering/presentation-queue-latency-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/rendering/presentation-queue-latency-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/production-manager-role.md",
@@ -549,7 +645,11 @@
     "linked_from_articles": [
       "roles/production/production-manager.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/production/production-manager.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/production/production-manager.md"
+    }
   },
   {
     "old_path": "research/source-notes/pso-precache-first-use-acceptance.md",
@@ -578,7 +678,11 @@
     "linked_from_articles": [
       "roles/vfx/real-time-vfx-artist.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/vfx/real-time-vfx-artist.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/vfx/real-time-vfx-artist.md"
+    }
   },
   {
     "old_path": "research/source-notes/reliable-channel-entity-readiness.md",
@@ -616,7 +720,11 @@
     "linked_from_articles": [
       "solutions/animation/turn-in-place-foot-sliding.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/animation/turn-in-place-foot-sliding.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/riot-divergence-diagnostic-interventions.md",
@@ -645,7 +753,11 @@
     "linked_from_articles": [
       "solutions/programming/client-prediction-authority-boundary.md"
     ],
-    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。"
+    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。",
+    "historical_article_urls": {
+      "solutions/programming/client-prediction-authority-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/runner-environment-contract.md",
@@ -665,7 +777,11 @@
     "linked_from_articles": [
       "roles/engine/build-engineer.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
+    "historical_article_urls": {
+      "roles/engine/build-engineer.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md"
+    }
   },
   {
     "old_path": "research/source-notes/scalar-inertialization-continuity.md",
@@ -680,7 +796,8 @@
     "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
     "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。",
     "historical_article_urls": {
-      "case-studies/animation/for-honor-motion-matching-event-request.md": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/for-honor-motion-matching-event-request.md"
+      "case-studies/animation/for-honor-motion-matching-event-request.md": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/animation/for-honor-motion-matching-event-request.md",
+      "solutions/animation/turn-in-place-foot-sliding.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md"
     }
   },
   {
@@ -692,7 +809,11 @@
     "linked_from_articles": [
       "solutions/audio/silent-stem-normalization-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/audio/silent-stem-normalization-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/skeleton-modifier-order.md",
@@ -739,7 +860,11 @@
     "linked_from_articles": [
       "knowledge/rendering/uniform-grid-nearest-hit-termination.md"
     ],
-    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。"
+    "migration_action": "迁移候选：单一正文保留于管理档案/来源笔记；旧路径作为历史定位保留，须与入站链接和当前消费者同步变更后才可删除原文件。",
+    "historical_article_urls": {
+      "knowledge/rendering/uniform-grid-nearest-hit-termination.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/knowledge/rendering/uniform-grid-nearest-hit-termination.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/time-dilation-overload-clocks.md",
@@ -750,7 +875,11 @@
     "linked_from_articles": [
       "solutions/programming/fixed-step-simulation-boundary.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/programming/fixed-step-simulation-boundary.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/unreal-notify-eligibility-authority.md",
@@ -785,7 +914,11 @@
     "linked_from_articles": [
       "solutions/rendering/matrix-major-interface-contract.md"
     ],
-    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查"
+    "migration_action": "原址保留；可在相关书末的进一步阅读引用，不复制为新书；发布或移动前另做隐私与版权审查",
+    "historical_article_urls": {
+      "solutions/rendering/matrix-major-interface-contract.md": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md"
+    },
+    "linked_from_articles_scope": "历史入站关系快照，不是当前文件存在性清单；退场旧正文见固定 Git 历史，当前书见图书目录。"
   },
   {
     "old_path": "research/source-notes/vulkan-present-fence-retirement-coverage.md",

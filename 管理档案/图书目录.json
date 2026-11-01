@@ -38,7 +38,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition_review": "管理档案/审查/环境概念与BC-原范围去向核对.md",
-      "scope_disposition": "Useful old content mapped to the accepted reader article; repeated occupational lists, adjacent links and agent metadata explicitly excluded from reader scope. Historical original remains unchanged."
+      "scope_disposition": "Useful old content mapped to the accepted reader article; repeated occupational lists, adjacent links and agent metadata explicitly excluded from reader scope. Historical original remains unchanged.",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-ART2D-002",
@@ -56,7 +59,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "旧状态组合、图层作用及接入检查均由新按钮主线和列表反例承接；岗位枚举、后台元数据与未展开外链明确排除",
-      "scope_disposition_review": "管理档案/审查/界面与完成率-原范围去向核对.md"
+      "scope_disposition_review": "管理档案/审查/界面与完成率-原范围去向核对.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-SFX-001",
@@ -131,8 +137,15 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition_review": "管理档案/审查/构建工程-独立审读.md",
-      "scope_disposition": "Stage identity and CMake counterexamples merged into the reader article; SLSA field-level material explicitly retained at its existing original section as supporting research, not a new book.",
-      "supporting_material": "管理档案/支持资料/构建来源字段的保留去向.md"
+      "scope_disposition": "阶段身份与CMake反例已并入读者正文；SLSA字段级说明融入现有构建来源支持页，旧段保留固定历史定位，不新增书。",
+      "supporting_material": "管理档案/支持资料/构建来源字段的保留去向.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "supporting_material_disposition": {
+        "path": "管理档案/支持资料/构建来源字段的保留去向.md",
+        "scope": "subject/buildDefinition/runDetails/invocationId、依赖完整性与验证信任边界；原旧段固定Git历史保留。"
+      }
     },
     {
       "internal_id": "ROLE-LOC-001",
@@ -151,7 +164,10 @@
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "原文不变的语境复查、Confirm共享、各语言决定和候选检查已承接；Godot默认消息身份保留版本短节，完整源码链明确留现有支持记录",
       "scope_disposition_review": "管理档案/审查/语境本地化-独立审读.md",
-      "supporting_material": "管理档案/来源笔记/localization-coordinator-role.md"
+      "supporting_material": "管理档案/来源笔记/localization-coordinator-role.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-MUSIC-001",
@@ -168,7 +184,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "灯塔主线承接创作方向、可组合与音乐选择、交付、反馈和职责边界；播放机制由已存在音乐切换书承接，旧邻题链接不变新书债务。",
-      "scope_disposition_review": "管理档案/审查/游戏作曲-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/游戏作曲-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/music/game-composer.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-NARR-001",
@@ -204,7 +223,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "沿双人联机会话解释组队、分配、连接与恢复，区分服务状态、游戏权威和重试。",
-      "scope_disposition_review": "管理档案/审查/在线服务岗位-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/在线服务岗位-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-PROD-001",
@@ -221,7 +243,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "机关提示试玩贯穿目标、依赖、变更、人手与判断责任；构建、QA与试玩跨章承接，不以制作批准替代专业证据。",
-      "scope_disposition_review": "管理档案/审查/制作岗位-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/制作岗位-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/production/production-manager.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-PROG-001",
@@ -239,7 +264,10 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "输入编号与消费已有固定步章节；岗位书补充暂停失焦政策、网络协作字段、受控性能比较、有效无效配置与接口协商；原未交付领域不扩为新书。",
-      "scope_disposition_review": "管理档案/审查/玩法程序-有限补充审读.md"
+      "scope_disposition_review": "管理档案/审查/玩法程序-有限补充审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/programming/gameplay-programmer.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-QA-001",
@@ -257,7 +285,10 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition_review": "管理档案/审查/游戏测试-独立审读.md",
-      "scope_disposition": "Observed behavior wording corrected; independent-repeat and quarantined-test risk responsibility merged. Adjacent playtest, simulation and build material is explicitly delegated to existing topics; old article did not contain missing performance tutorials."
+      "scope_disposition": "Observed behavior wording corrected; independent-repeat and quarantined-test risk responsibility merged. Adjacent playtest, simulation and build material is explicitly delegated to existing topics; old article did not contain missing performance tutorials.",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/qa/game-quality-assurance.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-GFX-002",
@@ -275,7 +306,10 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "共享预设、实例覆盖、接收条件及受影响引用的有限比较全部合并旅馆壁灯主线；未展开外链与管理元数据明确排除，不新增参数或性能保证",
-      "scope_disposition_review": "管理档案/审查/共享灯具-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/共享灯具-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-GFX-001",
@@ -313,7 +347,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "门资产主线保留；角色预设由FFXV历史分工例与脚滑跨章承接，不扩成通用绑定岗位标准。",
-      "scope_disposition_review": "管理档案/审查/角色约束顺序-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/角色约束顺序-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-UX-001",
@@ -330,7 +367,10 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "字幕调整贯穿规则、原型、输入、语言、朗读与研究；原有焦点朗读机制在正文保留，其他实现由现有跨章承接。",
-      "scope_disposition_review": "管理档案/审查/游戏体验设计-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/游戏体验设计-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "ROLE-VFX-001",
@@ -348,7 +388,10 @@
       "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "旧技能信号、时序、接入、场景、优化和玩家证据边界进入同一虚构技能主线；外链仅保留既有主题归属，不制造新书",
-      "scope_disposition_review": "管理档案/审查/特效制作-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/特效制作-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/vfx/real-time-vfx-artist.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "KNOW-GFX-GRID-001",
@@ -365,7 +408,11 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "完整保留两三角形几何与停止证明，区分最近/任意/区间查询；均为未执行手推。",
-      "scope_disposition_review": "管理档案/审查/网格最近命中-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/网格最近命中-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/knowledge/rendering/uniform-grid-nearest-hit-termination.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-A11Y-001",
@@ -381,13 +428,16 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "scope_disposition_review": [
         "管理档案/审查/焦点与声音-原范围去向核对.md",
         "管理档案/审查/焦点与声音范围补充-独立审读.md"
       ],
       "scope_disposition": "多通道与可知范围已覆盖；补回多人披露审查，非战斗声音语义保留现有静态矩阵可选入口，不新增玩家或运行结果",
-      "supporting_material": "管理档案/来源笔记/critical-sound-encounter.md"
+      "supporting_material": "管理档案/来源笔记/critical-sound-encounter.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/accessibility/critical-sound-information-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-AI-001",
@@ -403,10 +453,13 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "现有仓库主线承接查询/跟随/移动区别，持续更新未覆盖；具体调用顺序、体型烘焙与碰撞身份有精确旧支持，未重认证运行。",
       "scope_disposition": "现有仓库主线承接查询/跟随/移动区别，持续更新未覆盖；具体调用顺序、体型烘焙与碰撞身份有精确旧支持，未重认证运行。",
-      "scope_disposition_review": "管理档案/审查/导航支持入口-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/导航支持入口-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-ANIM-002",
@@ -423,7 +476,11 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "保留位置与速度连续、分段事件、过零与半衰期限制，原数值模型作为精确支持保留。",
-      "scope_disposition_review": "管理档案/审查/标量惯性化-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/标量惯性化-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-ANIM-001",
@@ -436,13 +493,16 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
       "current_read_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-      "legacy_retention": "旧复合正文和执行归档原位保留，子主题另行整理，不重复发布运行信息",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "握点例解释读写依赖；版本化Unity层级与旧依赖/工作表、独立LookAt观察精确保留，不重认证历史运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "握点例解释读写依赖；版本化Unity层级与旧依赖/工作表、独立LookAt观察精确保留，不重认证历史运行。",
-      "scope_disposition_review": "管理档案/审查/角色约束顺序-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/角色约束顺序-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-ART2D-001",
@@ -455,7 +515,7 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
@@ -464,7 +524,10 @@
         "管理档案/审查/透明度与PCM-支持入口复核.md"
       ],
       "scope_disposition": "颜色域和转换次序已在新主线覆盖；精度、舍入与有限实验限制留旧double buffer精确小节，新书增加可选入口，不新增颜色管理书",
-      "supporting_material": "solutions/art2d/alpha-association-contract.md#double-buffer-不代表全程-double也不保证最终字节相同"
+      "supporting_material": "solutions/art2d/alpha-association-contract.md#double-buffer-不代表全程-double也不保证最终字节相同",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-SFX-001",
@@ -480,10 +543,13 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "主线补共享资源与通知寿命、FMOD观察层；虚拟化、事件释放及FFXV预结束制作保留精确可选旧支持入口。",
       "scope_disposition": "主线补共享资源与通知寿命、FMOD观察层；虚拟化、事件释放及FFXV预结束制作保留精确可选旧支持入口。",
-      "scope_disposition_review": "管理档案/审查/音乐与伪本地化有限补充-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/音乐与伪本地化有限补充-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-SFX-002",
@@ -500,7 +566,11 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "解释静音样本与结束状态不同，保留固定版本amix公式及有限旧观察，不代表听音验证。",
-      "scope_disposition_review": "管理档案/审查/静音分轨-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/静音分轨-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-DATA-001",
@@ -513,7 +583,7 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
       "current_read_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
@@ -521,7 +591,10 @@
       "scope_disposition_review": [
         "管理档案/审查/界面与完成率-原范围去向核对.md",
         "管理档案/审查/完成率范围补充-独立审读.md"
-      ]
+      ],
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/data/attempt-completion-denominator-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-DESIGN-001",
@@ -534,13 +607,16 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
       "current_read_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "经济主线不扩数据库教程；附录说明原结果非当前余额、事务开始与提交重试不同，精确旧支持保留受限观察。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "经济主线不扩数据库教程；附录说明原结果非当前余额、事务开始与提交重试不同，精确旧支持保留受限观察。",
-      "scope_disposition_review": "管理档案/审查/经济存储支持入口-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/经济存储支持入口-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-ENGINE-002",
@@ -579,7 +655,11 @@
       "pending_chapter_tasks": [],
       "scope_disposition": "离线导入正文保留；对象共享、同路径请求与复制图由可选支持笔记承接，具体历史实验与验证器在旧§5–7保留，未重新认证历史执行。",
       "scope_disposition_review": "管理档案/审查/资源共享支持笔记-独立审读.md",
-      "supporting_reader_note": "管理档案/来源笔记/runtime-resource-sharing-boundaries.md"
+      "supporting_reader_note": "管理档案/来源笔记/runtime-resource-sharing-boundaries.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-LOC-001",
@@ -595,10 +675,13 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "scope_disposition": "现有正文保留语言专属向量与呈现界限；接口生命周期/警告、整数分支与词法分数未覆盖精确保留，不采用待批新材料。",
       "scope_disposition_review": "管理档案/审查/伪本地化程序支持入口-增量审读.md",
-      "extraction_scope": "现有正文保留语言专属向量与呈现界限；接口生命周期/警告、整数分支与词法分数未覆盖精确保留，不采用待批新材料。"
+      "extraction_scope": "现有正文保留语言专属向量与呈现界限；接口生命周期/警告、整数分支与词法分数未覆盖精确保留，不采用待批新材料。",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/localization/pseudo-localization-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-MODEL-001",
@@ -611,13 +694,16 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-      "legacy_retention": "旧复合文章和实验原位保留，不复制原始执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "新书补替换与目标表示方法；旧§7两阶段、绕序、近似及失败诊断、§8详细布局原位精确保留，不重新认证历史执行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "新书补替换与目标表示方法；旧§7两阶段、绕序、近似及失败诊断、§8详细布局原位精确保留，不重新认证历史执行。",
-      "scope_disposition_review": "管理档案/审查/glTF有限补充-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/glTF有限补充-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-MUSIC-001",
@@ -630,7 +716,7 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
       "current_read_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
@@ -639,7 +725,10 @@
         "管理档案/审查/透明度与PCM-支持入口复核.md"
       ],
       "scope_disposition": "PCM主线已覆盖；Opus呈现位置、包时长及子集限制明确保留旧第7节支持，新书不再承诺另一本文章；未验证循环重入不变成遗失教程",
-      "supporting_material": "solutions/music/pcm-loop-frame-contract.md#7-编码补充呈现帧数最终-granule-与包时长不是同一数字"
+      "supporting_material": "solutions/music/pcm-loop-frame-contract.md#7-编码补充呈现帧数最终-granule-与包时长不是同一数字",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-PLATFORM-001",
@@ -656,7 +745,11 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "解释旧内存覆盖新存档、已提交写入与版本分支，旧模型和路径反例作为有限支持。",
-      "scope_disposition_review": "管理档案/审查/云存档恢复-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/云存档恢复-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-PROD-001",
@@ -692,9 +785,12 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究原位保留；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "scope_disposition": "服务器移动预测主线完整承接；RPC身份与GGPO正常推进等精确机制明确保留原正文及来源笔记，未继承为当前预测验证。",
-      "scope_disposition_review": "管理档案/审查/客户端预测-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/客户端预测-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-PROG-001",
@@ -707,13 +803,16 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
       "current_read_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
-      "legacy_retention": "旧复合正文和执行归档原位保留，子主题另行整理，不重复发布运行信息",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "extraction_scope": "补同tick手算与计划减速/欠账区分，链接已发表预测输出章；具体节点、暂停、方法轨、物理回调及TiDi历史范围保留精确旧支持，不要求新书或重新认证运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "补同tick手算与计划减速/欠账区分，链接已发表预测输出章；具体节点、暂停、方法轨、物理回调及TiDi历史范围保留精确旧支持，不要求新书或重新认证运行。",
-      "scope_disposition_review": "管理档案/审查/固定步有限补充-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/固定步有限补充-增量审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-GFX-001",
@@ -726,7 +825,7 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
-      "legacy_retention": "旧复合文章和实验原位保留，不复制原始执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
@@ -734,7 +833,10 @@
         "管理档案/审查/环境概念与BC-原范围去向核对.md",
         "管理档案/审查/BC范围补充-独立审读.md"
       ],
-      "scope_disposition": "T1 DDS completeness and T2 sparse/mip-tail granularity merged into existing reader article. Remaining original content is covered or explicitly retained as historical implementation evidence; no new book required."
+      "scope_disposition": "T1 DDS completeness and T2 sparse/mip-tail granularity merged into existing reader article. Remaining original content is covered or explicitly retained as historical implementation evidence; no new book required.",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-GFX-002",
@@ -750,7 +852,7 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究原位保留；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "scope_disposition": "核心教学已承接；旧§3消费链与启动负例、§5首段ABI生命周期精确保留为历史方法；运行身份不迁移，历史执行未重新认证。",
       "scope_disposition_review": "管理档案/审查/矩阵历史支持-处置补查.md",
       "remaining_scope_review": {
@@ -758,7 +860,10 @@
         "review": "管理档案/审查/矩阵历史支持-处置补查.md",
         "historical_runtime_recertified": false,
         "new_book_requirement": false
-      }
+      },
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-GFX-003",
@@ -782,7 +887,11 @@
         "covered_by": "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
         "scope": "保留正常提交、acquire同步、帧槽资源及失败/重建/退出/队列族/扩展排除；无新增运行。",
         "covered_section": "Vulkan 接入补充：帧槽轮回，不代表呈现信号量可以重用"
-      }
+      },
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "SOL-UX-001",
@@ -798,13 +907,16 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "scope_disposition_review": [
         "管理档案/审查/焦点与声音-原范围去向核对.md",
         "管理档案/审查/焦点与声音范围补充-独立审读.md"
       ],
       "scope_disposition": "现章补回重复关闭、退出过渡、后置请求版本、设备归属和混合输入桥接；Godot回调中间态保留精确旧支持；完整平台/多用户/读屏仍不冒称实现",
-      "supporting_material": "solutions/ux/modal-focus-recovery.md#回调中的现在不一定是-setter-返回后的状态"
+      "supporting_material": "solutions/ux/modal-focus-recovery.md#回调中的现在不一定是-setter-返回后的状态",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ux/modal-focus-recovery.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
     },
     {
       "internal_id": "SOL-VFX-001",
@@ -821,7 +933,11 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "烟雾场景串联实例、模拟、像素与范围，保留可重复测量和视觉底线；版本化说明无实测。",
-      "scope_disposition_review": "管理档案/审查/Niagara性能-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/Niagara性能-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/vfx/niagara-performance-budget.md",
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
     },
     {
       "internal_id": "CASE-AI-001",

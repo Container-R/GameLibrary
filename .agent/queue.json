@@ -26,7 +26,18 @@
       "last_progress_at": "2026-10-31T12:53:58.977252Z",
       "next_action": "按版本变化或引擎复现证据维护；不外推模型结论",
       "blockers": [],
-      "commit_sha": "b166843c07dc69c591fa736e1559ca51785e0de8"
+      "commit_sha": "b166843c07dc69c591fa736e1559ca51785e0de8",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/fixed-step-simulation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0001",
@@ -50,7 +61,18 @@
       "last_progress_at": "2026-10-31T12:57:31.875426Z",
       "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
       "blockers": [],
-      "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc"
+      "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "roles/programming/gameplay-programmer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/programming/gameplay-programmer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "8572f6cf530f6f7dfd87bb86c86b4d894fa405a1d6192923beeff11a279eb3c8"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0002",
@@ -74,7 +96,18 @@
       "last_progress_at": "2026-10-31T13:07:26.939076Z",
       "next_action": "按版本变化与实际集成证据维护",
       "blockers": [],
-      "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e"
+      "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e",
+      "artifact_paths": [
+        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "roles/technical-art/technical-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2bc487e50e5ef22468ac3a9186538efe50c5bd49c8fa7fd19b7c022c12bbbd8b"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0003",
@@ -98,7 +131,18 @@
       "last_progress_at": "2026-10-31T12:57:31.875426Z",
       "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
       "blockers": [],
-      "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc"
+      "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc",
+      "artifact_paths": [
+        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/animation/turn-in-place-foot-sliding.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0004",
@@ -123,7 +167,18 @@
       "next_action": "按版本变化与实际集成证据维护",
       "blockers": [],
       "scope_note": "本轮收窄为音乐状态交接；完整音频岗位图谱移交TASK-2026-0010，不视作已完成",
-      "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e"
+      "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/audio/music-state-transition-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0005",
@@ -147,7 +202,18 @@
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
       "next_action": "按版本和真实集成实验维护",
       "blockers": [],
-      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
+      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4",
+      "artifact_paths": [
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/client-prediction-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0006",
@@ -171,7 +237,18 @@
       "last_progress_at": "2026-10-31T13:11:28.886629Z",
       "next_action": "按版本和真实集成实验维护",
       "blockers": [],
-      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4"
+      "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4",
+      "artifact_paths": [
+        "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/vfx/niagara-performance-budget.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/vfx/niagara-performance-budget.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "5c7a4a3d6fa9a10aa5891803928340418c67d2402446ecef2fa046e0ebce5a8e"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0007",
@@ -195,7 +272,18 @@
       "last_progress_at": "2026-10-31T13:17:23.011356Z",
       "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
       "blockers": [],
-      "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61"
+      "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61",
+      "artifact_paths": [
+        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/design/single-player-economy-ledger.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "541b4669ab0dca38180664593d2bb5e8dd9b5e4ff7be35038c5c96dbbda220b0"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0008",
@@ -273,7 +361,18 @@
       "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
       "blockers": [],
       "completed_at": "2026-10-31T13:25:27.472113Z",
-      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
+      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d",
+      "artifact_paths": [
+        "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/ux/modal-focus-recovery.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ux/modal-focus-recovery.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2f5a295a68a3e48b81a93f2a6468ae6007da3a255c93e7aef8ad993f502f0048"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0012",
@@ -296,7 +395,18 @@
       "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
       "blockers": [],
       "completed_at": "2026-10-31T13:25:27.472113Z",
-      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d"
+      "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/localization/pseudo-localization-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/localization/pseudo-localization-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "73f1ca5fce9865fc30196e78816a4dbae80b27f40e38d1aad766a18795cff350"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0013",
@@ -319,7 +429,18 @@
       "next_action": "按真实集成或模型变更重验；不将有界调度扩展为平台保证",
       "blockers": [],
       "completed_at": "2026-10-31T13:34:12.035660Z",
-      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b"
+      "commit_sha": "7c713effa2e3d7eb3573f546dc87de602667407b",
+      "artifact_paths": [
+        "GameLibrary/平台与发行/平台接入/云存档/Steam动态云同步恢复后的存档冲突处理.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/platform/cloud-save-resume-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "70641ee0157674556c067a259aaf8dbd3ef0c92a51317e7a126ca1d60693244d"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0014",
@@ -522,7 +643,18 @@
       "next_action": "保留实际导入语义检查，其他资产类型和工具链前提未测",
       "blockers": [],
       "completed_at": "2026-10-31T14:14:56.217288Z",
-      "commit_sha": "db4a64b038ae9e3db46cd71122689a742a84103d"
+      "commit_sha": "db4a64b038ae9e3db46cd71122689a742a84103d",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/engine/asset-import-intent-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0022",
@@ -574,7 +706,18 @@
       "next_action": "同步与部分路径证据已归档，持续更新/多写者前提仍需另验",
       "blockers": [],
       "completed_at": "2026-10-31T14:30:40.037539Z",
-      "commit_sha": "d669ee6e65d5ed35696e8854d18072fc48a68bb5"
+      "commit_sha": "d669ee6e65d5ed35696e8854d18072fc48a68bb5",
+      "artifact_paths": [
+        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/ai/navigation-readiness-and-partial-path.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0024",
@@ -627,7 +770,18 @@
       "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
       "blockers": [],
       "completed_at": "2026-10-31T16:25:34.959720Z",
-      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/accessibility/critical-sound-information-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/accessibility/critical-sound-information-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f2b76bffde7402c0b7699bd8263e0bcd3330c534cd0314a83a7ed4c35617b269"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0026",
@@ -759,7 +913,18 @@
       "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
       "blockers": [],
       "completed_at": "2026-10-31T16:25:34.959720Z",
-      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+      "artifact_paths": [
+        "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "roles/qa/game-quality-assurance.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/qa/game-quality-assurance.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "989a072c530774e48ba4075ed0a606011a2e4ee04995977a404d34d21d6b4ea6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0032",
@@ -916,7 +1081,18 @@
       "next_action": "Maintain limited view-backed geometry evidence; no full validator or engine claim",
       "blockers": [],
       "completed_at": "2026-10-31T18:49:57.824989Z",
-      "commit_sha": "2eaf640f5b6869c70eddccb2399638564dba084b"
+      "commit_sha": "2eaf640f5b6869c70eddccb2399638564dba084b",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0039",
@@ -938,7 +1114,18 @@
       "next_action": "Maintain explicit cohort/as-of/provider distinctions; no player outcome inference",
       "blockers": [],
       "completed_at": "2026-10-31T18:57:32.357950Z",
-      "commit_sha": "fe79fd5a6a8dc550d98b4d4acc94906a3b75ecd8"
+      "commit_sha": "fe79fd5a6a8dc550d98b4d4acc94906a3b75ecd8",
+      "artifact_paths": [
+        "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/data/attempt-completion-denominator-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/data/attempt-completion-denominator-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "88088f75d5ca5e77f3f5bb7c0eaf962382b5c1537be46e036bb4b818c70c56f7"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0040",
@@ -1021,7 +1208,18 @@
       "next_action": "Maintain finite offline scope; target middleware and listening remain untested",
       "blockers": [],
       "completed_at": "2026-10-31T19:23:05.063665Z",
-      "commit_sha": "9ebc9baf78c3a61bd014bf14b9d710485f7ba6c5"
+      "commit_sha": "9ebc9baf78c3a61bd014bf14b9d710485f7ba6c5",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/music/pcm-loop-frame-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "86e0a3c9a37ac16e47e6a3b223d1b5a36e1860d05cad202f0a62d23c7195080c"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0043",
@@ -1043,7 +1241,18 @@
       "next_action": "Maintain stored-byte representation scope; real renderer/color pipeline remains separate",
       "blockers": [],
       "completed_at": "2026-10-31T19:31:46.222052Z",
-      "commit_sha": "a0bdda39195635322d852af69e0f28cd849ca473"
+      "commit_sha": "a0bdda39195635322d852af69e0f28cd849ca473",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/art2d/alpha-association-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "6aa421015e4ecb35e64279e0d372928ace1ff0b1dc0adc3658ed3c015653b0bd"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0044",
@@ -1100,9 +1309,17 @@
       "completed_at": "2026-10-31T19:49:28.999222Z",
       "commit_sha": "7b269a2aef9140365bca601d172b3f2238e220d0",
       "artifact_paths": [
-        "solutions/programming/fixed-step-simulation-boundary.md",
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
         "research/experiments/simultaneous-combat-policy",
         "research/experiments/godot-combat-policy"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/fixed-step-simulation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        }
       ]
     },
     {
@@ -1127,8 +1344,16 @@
       "completed_at": "2026-10-31T19:58:04.212817Z",
       "commit_sha": "9944458c5bc5f5ace0bd35598a12a7584c7ecb0e",
       "artifact_paths": [
-        "solutions/engine/asset-import-intent-contract.md",
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
         "research/experiments/godot-resource-candidate"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/engine/asset-import-intent-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        }
       ]
     },
     {
@@ -1153,8 +1378,16 @@
       "completed_at": "2026-10-31T20:07:22.886362Z",
       "commit_sha": "1b87df988bb4eca396247ff2659bea28065ab512",
       "artifact_paths": [
-        "solutions/engine/asset-import-intent-contract.md",
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
         "research/experiments/godot-resource-broker"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/engine/asset-import-intent-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        }
       ]
     },
     {
@@ -1179,8 +1412,16 @@
       "completed_at": "2026-10-31T20:14:09.268058Z",
       "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
       "artifact_paths": [
-        "solutions/rendering/matrix-major-interface-contract.md",
+        "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
         "research/experiments/shader-matrix-layout"
+      ],
+      "historical_artifacts": [
+        {
+          "path": "solutions/rendering/matrix-major-interface-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/matrix-major-interface-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "8c64ceda922565f485a1e5caada462f55190461267cc5d513208e8033a96bf50"
+        }
       ]
     },
     {
@@ -1219,7 +1460,7 @@
       "priority_rationale": "Deepen navigation readiness article with actual baked geometry and physical queries rather than treating valid paths as collision clearance",
       "expected_artifact": "Existing navigation article plus original actual bake/agent/physics evidence",
       "artifact_paths": [
-        "solutions/ai/navigation-readiness-and-partial-path.md",
+        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
         "research/experiments/godot-navigation-radius"
       ],
       "acceptance": [
@@ -1234,7 +1475,15 @@
       "next_action": "Preserve baked topology, avoidance configuration and stationary physics scope as separate evidence",
       "blockers": [],
       "completed_at": "2026-10-31T20:26:11.121107Z",
-      "commit_sha": "b2cd86bde0f530f0f36722d7d5f46111ece71692"
+      "commit_sha": "b2cd86bde0f530f0f36722d7d5f46111ece71692",
+      "historical_artifacts": [
+        {
+          "path": "solutions/ai/navigation-readiness-and-partial-path.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0051",
@@ -1245,7 +1494,7 @@
       "priority_rationale": "Existing scalar model cannot express current-time interacting entity during historical replay; clarify acceptance rather than add random transport cases",
       "expected_artifact": "Existing prediction article depth and supporting source note",
       "artifact_paths": [
-        "solutions/programming/client-prediction-authority-boundary.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
         "research/source-notes/prediction-dependency-time-contract.md"
       ],
       "acceptance": [
@@ -1260,7 +1509,15 @@
       "next_action": "Apply dependency coverage and explicit missing-history policy to actual projects before claiming precise interaction replay",
       "blockers": [],
       "completed_at": "2026-10-31T20:31:36.646177Z",
-      "commit_sha": "56d1b5c6d1bf39db8501c8936138eb01ba0b1159"
+      "commit_sha": "56d1b5c6d1bf39db8501c8936138eb01ba0b1159",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/client-prediction-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0052",
@@ -1334,7 +1591,7 @@
       "priority_rationale": "Existing save-ledger study explicitly excludes COMMIT_BUSY; actual bounded transaction evidence can close this gap without adding another article",
       "expected_artifact": "Existing economy-ledger section and original SQLite transaction fixture",
       "artifact_paths": [
-        "solutions/design/single-player-economy-ledger.md",
+        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
         "research/experiments/sqlite-commit-busy"
       ],
       "acceptance": [
@@ -1350,7 +1607,15 @@
       "next_action": "Apply explicit transaction-state and deadline policy; retained fixture does not validate arbitrary errors or production retry queues",
       "blockers": [],
       "completed_at": "2026-10-31T21:06:25.892342Z",
-      "commit_sha": "f72bbfc3352966a3baac01ac5386148c0eead715"
+      "commit_sha": "f72bbfc3352966a3baac01ac5386148c0eead715",
+      "historical_artifacts": [
+        {
+          "path": "solutions/design/single-player-economy-ledger.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "541b4669ab0dca38180664593d2bb5e8dd9b5e4ff7be35038c5c96dbbda220b0"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0055",
@@ -1361,7 +1626,7 @@
       "priority_rationale": "Close existing CPU-format-only mesh article evidence gap with one actual native import, not a new indexed article",
       "expected_artifact": "Existing modeling article depth extension with actual GLTFDocument import and data-stage observations",
       "artifact_paths": [
-        "solutions/modeling/gltf-interleaved-attribute-contract.md",
+        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
         "research/experiments/godot-gltf-import-boundary"
       ],
       "acceptance": [
@@ -1378,7 +1643,15 @@
       "next_action": "Use explicit format-convention and numerical acceptance per data stage; no extrapolation to editor/GPU/general importer correctness",
       "blockers": [],
       "completed_at": "2026-10-31T21:16:37.113203Z",
-      "commit_sha": "7a7689e0e325a7c1f78c6596842061446186f8a7"
+      "commit_sha": "7a7689e0e325a7c1f78c6596842061446186f8a7",
+      "historical_artifacts": [
+        {
+          "path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0056",
@@ -1389,7 +1662,7 @@
       "priority_rationale": "Concrete responsibility gap in existing animation and TA coverage; primary Japanese production material and versioned Unity package semantics, not a role-page quota",
       "expected_artifact": "Existing animation article source-depth section with original dependency/acceptance handoff and independently checked source receipts",
       "artifact_paths": [
-        "solutions/animation/turn-in-place-foot-sliding.md",
+        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
         "research/audits/rig-evaluation-handoff",
         "research/source-notes/rig-evaluation-handoff.md"
       ],
@@ -1406,7 +1679,15 @@
       "next_action": "Use explicit artifact identity and actual constraint/spatial-input controls; no runtime acceptance inferred from this source-backed worksheet",
       "blockers": [],
       "completed_at": "2026-10-31T21:25:33.780756Z",
-      "commit_sha": "5882e8c4253333406d33dea8ac0d50b8fe05b334"
+      "commit_sha": "5882e8c4253333406d33dea8ac0d50b8fe05b334",
+      "historical_artifacts": [
+        {
+          "path": "solutions/animation/turn-in-place-foot-sliding.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0057",
@@ -1418,8 +1699,8 @@
       "expected_artifact": "27-entry exact-metadata audit and minimal verified TA/audio wording corrections",
       "artifact_paths": [
         "research/audits/evidence-applicability-27",
-        "roles/technical-art/technical-artist.md",
-        "solutions/audio/music-state-transition-contract.md"
+        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md"
       ],
       "acceptance": [
         "Retain all27 verification_method lines verbatim with exact article and evidence hashes",
@@ -1434,7 +1715,21 @@
       "next_action": "Maintain exact artifact applicability when adding new evidence; no execution or all-source recertification implied",
       "blockers": [],
       "completed_at": "2026-10-31T21:34:05.398548Z",
-      "commit_sha": "44728a918d1871739132ca78409b458568371cfd"
+      "commit_sha": "44728a918d1871739132ca78409b458568371cfd",
+      "historical_artifacts": [
+        {
+          "path": "roles/technical-art/technical-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2bc487e50e5ef22468ac3a9186538efe50c5bd49c8fa7fd19b7c022c12bbbd8b"
+        },
+        {
+          "path": "solutions/audio/music-state-transition-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0058",
@@ -1445,7 +1740,7 @@
       "priority_rationale": "Address the exact native extraction gap left by four geometric model tests, without conflating IK or real-character quality",
       "expected_artifact": "Original one-bone native fixture, frozen oracle, author and independent execution receipts, narrow article extension",
       "artifact_paths": [
-        "solutions/animation/turn-in-place-foot-sliding.md",
+        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
         "research/experiments/godot-root-motion-boundary"
       ],
       "acceptance": [
@@ -1462,7 +1757,15 @@
       "next_action": "Keep native delta extraction scope separate from real-character/Rig acceptance; preserve original model history",
       "blockers": [],
       "completed_at": "2026-10-31T21:39:19.094019Z",
-      "commit_sha": "77a70b64c0d22d7f3ca1ca3c7f494030afd53623"
+      "commit_sha": "77a70b64c0d22d7f3ca1ca3c7f494030afd53623",
+      "historical_artifacts": [
+        {
+          "path": "solutions/animation/turn-in-place-foot-sliding.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0059",
@@ -1501,7 +1804,7 @@
       "priority_rationale": "Existing actor-priority observations do not validate actual physical contact callbacks or safe collision-state mutation",
       "expected_artifact": "Source-gated minimal callback/mutation study, or explicit bounded negative feasibility finding",
       "artifact_paths": [
-        "solutions/programming/fixed-step-simulation-boundary.md",
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
         "research/experiments/godot-physics-callback-v1",
         "research/experiments/godot-physics-callback-v2",
         "research/source-notes/physics-callback-mutation-boundary.md"
@@ -1519,7 +1822,15 @@
       "next_action": "Preserve failed static controls and exact successful kinematic scope; no universal timing, original-cause or damage-policy inference",
       "blockers": [],
       "completed_at": "2026-10-31T22:02:05.938162Z",
-      "commit_sha": "93467bbbf29aaae51769186f8b161c0cbee2ac75"
+      "commit_sha": "93467bbbf29aaae51769186f8b161c0cbee2ac75",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/fixed-step-simulation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0061",
@@ -1559,7 +1870,7 @@
       "priority_rationale": "Important missing occupation and cross-team artifact promotion boundary; pipeline completion is not QA approval or deployment authorization",
       "expected_artifact": "Source-gated build/deployment role profile and bounded original artifact-promotion handoff proposal",
       "artifact_paths": [
-        "roles/engine/build-engineer.md",
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
         "research/source-notes/build-engineer-role.md",
         "research/audits/build-engineering-role"
       ],
@@ -1577,7 +1888,15 @@
       "next_action": "Keep candidate worksheet unexecuted; investigate real external-content baseline selection separately",
       "blockers": [],
       "completed_at": "2026-10-31T22:19:42.198473Z",
-      "commit_sha": "2dfb7f18d9b462c57c5bc75cd6c73a8ace19641f"
+      "commit_sha": "2dfb7f18d9b462c57c5bc75cd6c73a8ace19641f",
+      "historical_artifacts": [
+        {
+          "path": "roles/engine/build-engineer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3b53ab362c7383a14decb7b843e7c67156810d753016a7e4373c29fa0fc5c1fc"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0063",
@@ -1617,7 +1936,7 @@
       "priority_rationale": "Existing single-bone root extraction does not validate modifier-order worksheet; native bounded observation can address a distinct high-value pose dependency gap",
       "expected_artifact": "Source-frozen two-bone native modifier-order evidence or accurately retained failed gate; integrate into existing animation article only if accepted",
       "artifact_paths": [
-        "solutions/animation/turn-in-place-foot-sliding.md",
+        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
         "research/experiments/godot-skeleton-modifier-order",
         "research/source-notes/skeleton-modifier-order.md"
       ],
@@ -1636,7 +1955,15 @@
       "next_action": "Preserve exact built-in modifier and observation boundary; no upgrade of unexecuted Rig/IK/animation scope",
       "blockers": [],
       "completed_at": "2026-10-31T22:37:39.108968Z",
-      "commit_sha": "46721b505d6e8f1d367668a05ace2d58a23fc8ae"
+      "commit_sha": "46721b505d6e8f1d367668a05ace2d58a23fc8ae",
+      "historical_artifacts": [
+        {
+          "path": "solutions/animation/turn-in-place-foot-sliding.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0065",
@@ -1676,7 +2003,7 @@
       "priority_rationale": "Current role coverage omits online services; prior prediction/local storage cases do not prove service-chain capacity",
       "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
       "artifact_paths": [
-        "roles/network/online-services-engineer.md",
+        "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
         "research/source-notes/online-services-engineer-role.md"
       ],
       "acceptance": [
@@ -1693,7 +2020,15 @@
       "next_action": "Keep original role handoff unexecuted and broader matrix incomplete; service allocation timing is a separate case",
       "blockers": [],
       "completed_at": "2026-10-31T22:53:12.628710Z",
-      "commit_sha": "55537026baffc85d470bc43ad28bea0ca273076a"
+      "commit_sha": "55537026baffc85d470bc43ad28bea0ca273076a",
+      "historical_artifacts": [
+        {
+          "path": "roles/network/online-services-engineer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "e6af1f5c1d789b32d003f96e98953f8fa4000bf453c4561d7ba6d31c4dd230f0"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0067",
@@ -1788,7 +2123,7 @@
       "priority_rationale": "Whole-role matrix remains incomplete; concrete first-party production samples support an actionable missing dependency/commitment role interface",
       "expected_artifact": "One source-backed production-manager role and original unexecuted dependency handoff worksheet",
       "artifact_paths": [
-        "roles/production/production-manager.md",
+        "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
         "research/source-notes/production-manager-role.md"
       ],
       "acceptance": [
@@ -1805,7 +2140,15 @@
       "next_action": "Retain source-specific role/authority distinctions and unexecuted worksheet; whole role matrix remains incomplete",
       "blockers": [],
       "completed_at": "2026-10-31T23:38:28.473301Z",
-      "commit_sha": "bb7ca5fe0964e487b31bb2f886fa3e2fd4e2c384"
+      "commit_sha": "bb7ca5fe0964e487b31bb2f886fa3e2fd4e2c384",
+      "historical_artifacts": [
+        {
+          "path": "roles/production/production-manager.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/production/production-manager.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "bd829f61fc8d12f1ffe92ae18114af6fb88749b01b4dcf2986edca65ad81dce5"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0071",
@@ -1816,7 +2159,7 @@
       "priority_rationale": "Existing native UX fixture covers replacement identity, not same-instance inherited eligibility changes; official sources expose a concrete composition boundary",
       "expected_artifact": "Source-gated finite Control focus observation or exact negative, supplementing existing UX article",
       "artifact_paths": [
-        "solutions/ux/modal-focus-recovery.md",
+        "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
         "research/source-notes/godot-recursive-focus-boundary.md",
         "research/experiments/godot-recursive-focus-boundary/README.md"
       ],
@@ -1834,7 +2177,15 @@
       "next_action": "Retain finite eligibility/scope distinction; device navigation and full modal enforcement remain unverified",
       "blockers": [],
       "completed_at": "2026-11-01T00:02:56.775000Z",
-      "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3"
+      "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3",
+      "historical_artifacts": [
+        {
+          "path": "solutions/ux/modal-focus-recovery.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ux/modal-focus-recovery.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2f5a295a68a3e48b81a93f2a6468ae6007da3a255c93e7aef8ad993f502f0048"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0072",
@@ -1873,7 +2224,7 @@
       "priority_rationale": "Existing prediction solution has protocol models and unexecuted dependency proposal, not actual RPC admission evidence; investigate applicability before native work",
       "expected_artifact": "Original-source gap assessment, then a bounded RPC authorization observation only if justified and feasible",
       "artifact_paths": [
-        "solutions/programming/client-prediction-authority-boundary.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
         "research/source-notes/godot-rpc-authority-boundary.md",
         "research/experiments/godot-rpc-authority-boundary/README.md"
       ],
@@ -1891,7 +2242,15 @@
       "next_action": "Retain narrow RPC ingress/deferred identity evidence; account authentication, prediction and transport resilience remain unverified",
       "blockers": [],
       "completed_at": "2026-11-01T00:35:42.312119Z",
-      "commit_sha": "102f85870303562dab3f7bc71fb884252247ba8c"
+      "commit_sha": "102f85870303562dab3f7bc71fb884252247ba8c",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/client-prediction-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0074",
@@ -1902,7 +2261,7 @@
       "priority_rationale": "Whole-role matrix lacks VFX authoring and gameplay-signal responsibility despite separate Niagara cost protocol",
       "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
       "artifact_paths": [
-        "roles/vfx/real-time-vfx-artist.md",
+        "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
         "research/source-notes/real-time-vfx-artist-role.md"
       ],
       "acceptance": [
@@ -1919,7 +2278,15 @@
       "next_action": "Preserve historical source and unexecuted workflow scope; concrete visual/player validation requires a separate accepted protocol",
       "blockers": [],
       "completed_at": "2026-11-01T00:38:21.006705Z",
-      "commit_sha": "66d3fa37d469e0f62518f57bd228a85cf25bdb13"
+      "commit_sha": "66d3fa37d469e0f62518f57bd228a85cf25bdb13",
+      "historical_artifacts": [
+        {
+          "path": "roles/vfx/real-time-vfx-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/vfx/real-time-vfx-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "6ddc916b183a49dfa9927b1dec031cbcbd51de30fbd4b31a580d9dd91cb44689"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0075",
@@ -1930,7 +2297,7 @@
       "priority_rationale": "Strengthen a declared existing color-management gap instead of inferring encoded-channel arithmetic is linear-light behavior",
       "expected_artifact": "Exact-evidence source gate; only proceed to a finite original experiment if justified and independently reviewed",
       "artifact_paths": [
-        "solutions/art2d/alpha-association-contract.md",
+        "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
         "research/source-notes/lcms-transfer-boundary.md",
         "research/experiments/lcms-transfer-boundary/README.md"
       ],
@@ -1948,7 +2315,15 @@
       "next_action": "Retain finite normalized conversion scope and independent prior alpha evidence; target renderer/display pipelines require separate validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:06:10.224999Z",
-      "commit_sha": "48c257cf39608548e482cff555d97734feacf72a"
+      "commit_sha": "48c257cf39608548e482cff555d97734feacf72a",
+      "historical_artifacts": [
+        {
+          "path": "solutions/art2d/alpha-association-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "6aa421015e4ecb35e64279e0d372928ace1ff0b1dc0adc3658ed3c015653b0bd"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0076",
@@ -1995,7 +2370,7 @@
       "priority_rationale": "Close actual path consumption gap while separating navigation completion from target arrival and physical locomotion",
       "expected_artifact": "Bounded controlled Node3D path-consumption experiment or preserved failed gate",
       "artifact_paths": [
-        "solutions/ai/navigation-readiness-and-partial-path.md",
+        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
         "research/source-notes/navigation-agent-completion.md",
         "research/experiments/godot-navigation-completion/README.md"
       ],
@@ -2012,7 +2387,15 @@
       "next_action": "Retain same-binary finite path-consumption observations; physical locomotion, mission semantics and dynamic topology require separate evidence",
       "blockers": [],
       "completed_at": "2026-11-01T01:25:40.558611Z",
-      "commit_sha": "a3df07444a38cd44a0fe62c4c831817c1e478cae"
+      "commit_sha": "a3df07444a38cd44a0fe62c4c831817c1e478cae",
+      "historical_artifacts": [
+        {
+          "path": "solutions/ai/navigation-readiness-and-partial-path.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0078",
@@ -2023,7 +2406,7 @@
       "priority_rationale": "Missing practitioner-grounded UX role connects existing focus, formatting and accessibility boundaries without claiming complete user validation",
       "expected_artifact": "Narrow game UX interaction-flow handoff role and original unexecuted acceptance worksheet",
       "artifact_paths": [
-        "roles/ux/game-ux-designer.md",
+        "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
         "research/source-notes/game-ux-designer-role.md"
       ],
       "acceptance": [
@@ -2039,7 +2422,15 @@
       "next_action": "Retain source-only practitioner scope and original unexecuted flow-handoff worksheet; actual user and implementation validation remain separate",
       "blockers": [],
       "completed_at": "2026-11-01T01:28:57.171555Z",
-      "commit_sha": "aba77fce70f0d889e92b596b39c7274927ec851f"
+      "commit_sha": "aba77fce70f0d889e92b596b39c7274927ec851f",
+      "historical_artifacts": [
+        {
+          "path": "roles/ux/game-ux-designer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "9bc08a7db641df46592658e7b837cba200b036d81faae648db12b8d0ca79551b"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0079",
@@ -2050,7 +2441,7 @@
       "priority_rationale": "Existing navigation and static-overlap observations do not validate actual collision movement; close one finite gap without full controller integration",
       "expected_artifact": "Source-gated bounded actual move_and_collide obstruction/control experiment or preserved failed gate",
       "artifact_paths": [
-        "solutions/ai/navigation-readiness-and-partial-path.md",
+        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
         "research/source-notes/character-motion-obstruction.md",
         "research/experiments/godot-character-motion/README.md"
       ],
@@ -2067,7 +2458,15 @@
       "next_action": "Retain finite actual motion witness; no post-move occupancy, universal CCD or full navigation-controller validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:48:19.195821Z",
-      "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c"
+      "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c",
+      "historical_artifacts": [
+        {
+          "path": "solutions/ai/navigation-readiness-and-partial-path.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0080",
@@ -2078,7 +2477,7 @@
       "priority_rationale": "Practitioner-grounded concept-art role gap connects design intent to environment production without duplicating technical import checks",
       "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
       "artifact_paths": [
-        "roles/art2d/environment-concept-artist.md",
+        "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
         "research/source-notes/environment-concept-artist-role.md"
       ],
       "acceptance": [
@@ -2094,7 +2493,15 @@
       "next_action": "Retain historical practitioner scope and unexecuted handoff; no visual or production-outcome validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:54:08.221118Z",
-      "commit_sha": "7e876317578dce3e2f948287f7cbfea5aba5cd74"
+      "commit_sha": "7e876317578dce3e2f948287f7cbfea5aba5cd74",
+      "historical_artifacts": [
+        {
+          "path": "roles/art2d/environment-concept-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f0aaaedece323f9a04f14997ff0fb29e940201fe5b7b9070a7bfbbc9b0a9df68"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0081",
@@ -2168,7 +2575,7 @@
       "priority_rationale": "Deepen animation knowledge with explicit mathematical continuity and independent numerical oracle, not more role coverage",
       "expected_artifact": "Source-derived scalar residual derivation, bounded original numerical fixture and discriminating negative controls",
       "artifact_paths": [
-        "solutions/animation/scalar-inertialization-continuity.md",
+        "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
         "research/source-notes/scalar-inertialization-continuity.md",
         "research/experiments/scalar-inertialization/README.md"
       ],
@@ -2185,7 +2592,15 @@
       "next_action": "Retain finite scalar C1 evidence without engine/contact extrapolation; deferred source and route indexes restored in TASK-2026-0084",
       "blockers": [],
       "completed_at": "2026-11-01T02:28:58.373198Z",
-      "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b"
+      "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b",
+      "historical_artifacts": [
+        {
+          "path": "solutions/animation/scalar-inertialization-continuity.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2669be9c9c38273ba646151c616924148c2917e6f308706951210c7049bb37d8"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0084",
@@ -2196,7 +2611,7 @@
       "priority_rationale": "Deepen explicitly excluded sparse-accessor semantics without transferring dense-engine evidence",
       "expected_artifact": "Pinned normative source, finite original scalar accessor bytes and independent literal decode checks",
       "artifact_paths": [
-        "solutions/modeling/gltf-interleaved-attribute-contract.md",
+        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
         "管理档案/来源笔记/gltf-sparse-accessor.md",
         "research/experiments/gltf-sparse-accessor/README.md"
       ],
@@ -2213,7 +2628,15 @@
       "next_action": "Maintain separate sparse CPU and dense native evidence; no full validator or morph claims",
       "blockers": [],
       "completed_at": "2026-11-01T02:44:21.150605Z",
-      "commit_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d"
+      "commit_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d",
+      "historical_artifacts": [
+        {
+          "path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0085",
@@ -2251,7 +2674,7 @@
       "priority_rationale": "Deepen existing prediction effects advice using original SDK callbacks and missed-short-event counterpressure, not another toy model",
       "expected_artifact": "Source-depth supplement and original unexecuted host acceptance matrix",
       "artifact_paths": [
-        "solutions/programming/client-prediction-authority-boundary.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
         "管理档案/来源笔记/rollback-presentation-boundary.md"
       ],
       "acceptance": [
@@ -2267,7 +2690,15 @@
       "next_action": "Retain source-only SDK/host boundary; output coordination remains unimplemented and distinct from historical model",
       "blockers": [],
       "completed_at": "2026-11-01T02:54:28.998440Z",
-      "commit_sha": "a6b11138b68f06794a4a468b4a027da756d9a47f"
+      "commit_sha": "a6b11138b68f06794a4a468b4a027da756d9a47f",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/client-prediction-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0087",
@@ -2278,7 +2709,7 @@
       "priority_rationale": "Assess a graph-duplication boundary distinct from already executed cache isolation and threaded request ownership",
       "expected_artifact": "Source gate first; finite original native protocol only if distinct value is established",
       "artifact_paths": [
-        "solutions/engine/asset-import-intent-contract.md",
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
         "research/source-notes/resource-duplication-policy.md",
         "research/experiments/godot-resource-duplication/README.md"
       ],
@@ -2295,7 +2726,15 @@
       "next_action": "Retain finite clone-scope/alias evidence; arbitrary graphs, lifecycle and other binaries remain unverified",
       "blockers": [],
       "completed_at": "2026-11-01T03:19:21.242707Z",
-      "commit_sha": "1f7bfe1a1eb3648e3f9346f012c53a120df169ec"
+      "commit_sha": "1f7bfe1a1eb3648e3f9346f012c53a120df169ec",
+      "historical_artifacts": [
+        {
+          "path": "solutions/engine/asset-import-intent-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "f5064889acaaa40e92dd03eabf32be861e1c28c3a08f46712627d9ce39bde2b6"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0088",
@@ -2306,7 +2745,7 @@
       "priority_rationale": "Close a specific localization coordination gap distinct from existing formatter, narrative and UX evidence",
       "expected_artifact": "roles/localization/localization-coordinator.md and source note",
       "artifact_paths": [
-        "roles/localization/localization-coordinator.md",
+        "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
         "管理档案/来源笔记/localization-coordinator-role.md"
       ],
       "acceptance": [
@@ -2322,7 +2761,15 @@
       "next_action": "Retain historical source and original unexecuted handoff scope; real locale review and receiving-build validation remain separate",
       "blockers": [],
       "completed_at": "2026-11-01T03:23:17.946585Z",
-      "commit_sha": "945d30cc4f60bf2b2bf7827ce66691d6eaac921d"
+      "commit_sha": "945d30cc4f60bf2b2bf7827ce66691d6eaac921d",
+      "historical_artifacts": [
+        {
+          "path": "roles/localization/localization-coordinator.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "78ca195596d4ce176ec55bf7a83f08d4d1cd038c014e994089ccd7d78f8acd34"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0089",
@@ -2333,7 +2780,7 @@
       "priority_rationale": "Assess actual offline mixer gain/topology boundary distinct from fake scheduling and PCM frame-count evidence",
       "expected_artifact": "Source/EOF gate first; finite original offline mix only if exact oracle and capability justified",
       "artifact_paths": [
-        "solutions/audio/silent-stem-normalization-boundary.md",
+        "GameLibrary/声音与音乐/音频制作/混音/静音分轨为何会影响其他音轨的增益.md",
         "research/source-notes/silent-stem-normalization.md",
         "research/experiments/ffmpeg-silent-stem/README.md"
       ],
@@ -2350,7 +2797,15 @@
       "next_action": "Retain finite offline gain/topology result; no middleware, perception, arbitrary EOF or bit-reproducibility upgrade",
       "blockers": [],
       "completed_at": "2026-11-01T03:44:59.934039Z",
-      "commit_sha": "353a7207f4477b8a11c303d59161c41b135c4aff"
+      "commit_sha": "353a7207f4477b8a11c303d59161c41b135c4aff",
+      "historical_artifacts": [
+        {
+          "path": "solutions/audio/silent-stem-normalization-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/silent-stem-normalization-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "2c7e8f6bd204ca20d6fc8f3de949db67876830568dfb3a91f371d72ae37642cc"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0090",
@@ -2361,7 +2816,7 @@
       "priority_rationale": "Address lighting-specific author/placer/receiving-scene interface; revised to avoid duplicating generic concept-art revision worksheets",
       "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
       "artifact_paths": [
-        "roles/rendering/game-lighting-artist.md",
+        "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
         "research/source-notes/game-lighting-artist-role.md"
       ],
       "acceptance": [
@@ -2377,7 +2832,15 @@
       "next_action": "Retain original unrendered correction-ownership proposal; actual scene, causal, performance and player evidence remain absent",
       "blockers": [],
       "completed_at": "2026-11-01T03:50:22.667497Z",
-      "commit_sha": "60b7a5d3e48ec3ef93c8bd7b336cc8819017799a"
+      "commit_sha": "60b7a5d3e48ec3ef93c8bd7b336cc8819017799a",
+      "historical_artifacts": [
+        {
+          "path": "roles/rendering/game-lighting-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "b621f4a4df67b24617ceae1f07cbeb6f5131c21e5a71bc6156552f136006e503"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0091",
@@ -2388,7 +2851,7 @@
       "priority_rationale": "Add source-grounded production clock scope and saturation distinction to existing overload/debt article without another toy model",
       "expected_artifact": "Small source-only supplement to solutions/programming/fixed-step-simulation-boundary.md and source note",
       "artifact_paths": [
-        "solutions/programming/fixed-step-simulation-boundary.md",
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
         "research/source-notes/time-dilation-overload-clocks.md"
       ],
       "acceptance": [
@@ -2404,7 +2867,15 @@
       "next_action": "Retain historical source scope; clock-control runtime and current service policy remain untested",
       "blockers": [],
       "completed_at": "2026-11-01T03:55:27.443110Z",
-      "commit_sha": "5da482e1b8f7ca4a59f62b77e66197695508d53c"
+      "commit_sha": "5da482e1b8f7ca4a59f62b77e66197695508d53c",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/fixed-step-simulation-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0092",
@@ -2439,7 +2910,7 @@
       "priority_rationale": "Fill distinct UI art responsibility gap with original practitioner sources and concrete unexecuted combined-state analysis",
       "expected_artifact": "UI artist role and original-source note",
       "artifact_paths": [
-        "roles/art2d/game-ui-artist.md",
+        "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md",
         "research/source-notes/game-ui-artist-role.md"
       ],
       "acceptance": [
@@ -2455,7 +2926,15 @@
       "next_action": "Retain proposed combined-state scope; actual UI, readability and focus evidence remain separate",
       "blockers": [],
       "completed_at": "2026-11-01T04:22:10.816553Z",
-      "commit_sha": "958e4722e6f7c044af064781e6d0b40c00d363b2"
+      "commit_sha": "958e4722e6f7c044af064781e6d0b40c00d363b2",
+      "historical_artifacts": [
+        {
+          "path": "roles/art2d/game-ui-artist.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "e92f84e1fcd56f5aea001ed41e0ae0bd594cb7f1a4c0efeef52c4337e56599fa"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0094",
@@ -2466,7 +2945,7 @@
       "priority_rationale": "Assess missing composition-role coverage without duplicating audio implementation or inventing player-effect claims",
       "expected_artifact": "Two-source original-practitioner gate and, if distinct, source-only composer role analysis",
       "artifact_paths": [
-        "roles/music/game-composer.md",
+        "GameLibrary/声音与音乐/交互音乐/岗位与协作/游戏作曲如何为交互安排音乐.md",
         "research/source-notes/game-composer-role.md"
       ],
       "acceptance": [
@@ -2482,7 +2961,15 @@
       "next_action": "Retain original unexecuted arrangement choices; listening, implementation and player evidence remain separate",
       "blockers": [],
       "completed_at": "2026-11-01T04:28:18.992188Z",
-      "commit_sha": "296a735c09ea62f19d42703285bfee210257d509"
+      "commit_sha": "296a735c09ea62f19d42703285bfee210257d509",
+      "historical_artifacts": [
+        {
+          "path": "roles/music/game-composer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/music/game-composer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "25540d5b33f642440199c694a6181a4f82298cc320487a2b4d3ae6545afbdb27"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0095",
@@ -2519,7 +3006,7 @@
       "priority_rationale": "Concrete source-depth performance decision gap, independent of blocked GPU execution and pending runtime release",
       "expected_artifact": "Pinned primary-source analysis with explicitly hypothetical queue timeline and no measured latency claim",
       "artifact_paths": [
-        "solutions/rendering/presentation-queue-latency-boundary.md",
+        "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
         "research/source-notes/presentation-queue-latency-boundary.md"
       ],
       "acceptance": [
@@ -2535,7 +3022,15 @@
       "next_action": "Retain explicit hypothetical scheduling and no physical latency claims; platform measurements need separate evidence",
       "blockers": [],
       "completed_at": "2026-11-01T04:42:03.181770Z",
-      "commit_sha": "efde1be8775db97f530eebcbc38d1ed5ad4b64e4"
+      "commit_sha": "efde1be8775db97f530eebcbc38d1ed5ad4b64e4",
+      "historical_artifacts": [
+        {
+          "path": "solutions/rendering/presentation-queue-latency-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3c899eb1d2b94b1c0a815d6a27ba2546332a0f2616881ae5aa4f4724da8b6353"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0097",
@@ -2546,7 +3041,7 @@
       "priority_rationale": "Deepen existing audio-state and accessible-information evidence without equating logical playback with audible delivery",
       "expected_artifact": "Version-specific primary-source gate and bounded existing-article supplement only if it closes a distinct gap",
       "artifact_paths": [
-        "solutions/audio/music-state-transition-contract.md",
+        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
         "research/source-notes/fmod-virtualization-observation-boundary.md"
       ],
       "acceptance": [
@@ -2563,7 +3058,15 @@
       "next_action": "Keep event and Core channel observations scoped; runtime and listener evidence remain separate",
       "blockers": [],
       "completed_at": "2026-11-01T04:49:32.176498Z",
-      "commit_sha": "a5dd191d6228dddd4ea54639f4d0c94210f4be94"
+      "commit_sha": "a5dd191d6228dddd4ea54639f4d0c94210f4be94",
+      "historical_artifacts": [
+        {
+          "path": "solutions/audio/music-state-transition-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0098",
@@ -2950,7 +3453,7 @@
       "priority_rationale": "Deepen an exact semantic-context to runtime-identity gap in existing ROLE-LOC-001 using targeted official documents and pinned source",
       "expected_artifact": "Bounded existing-role integration after documentation and extractor/import/lookup source-chain review",
       "artifact_paths": [
-        "roles/localization/localization-coordinator.md"
+        "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md"
       ],
       "acceptance": [
         "Read official Godot 4.6 translator comments, context and message-identity documentation",
@@ -2966,7 +3469,15 @@
       "next_action": "Retain default-path source scope and language-first decisions; no generated template or runtime translation result",
       "blockers": [],
       "completed_at": "2026-11-01T06:13:39.272887Z",
-      "commit_sha": "9bf16fd822888f7a218df5a192be8f86e7da6160"
+      "commit_sha": "9bf16fd822888f7a218df5a192be8f86e7da6160",
+      "historical_artifacts": [
+        {
+          "path": "roles/localization/localization-coordinator.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "78ca195596d4ce176ec55bf7a83f08d4d1cd038c014e994089ccd7d78f8acd34"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0113",
@@ -3115,7 +3626,7 @@
       "priority_rationale": "Resolve a concrete upstream control-flow distinction between local submission rejection and later input synchronization success",
       "expected_artifact": "Integrated fixed-source GGPO normal-advance control-flow explanation, not a new protocol or runtime test",
       "artifact_paths": [
-        "solutions/programming/client-prediction-authority-boundary.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
         "管理档案/来源笔记/rollback-presentation-boundary.md"
       ],
       "acceptance": [
@@ -3132,7 +3643,15 @@
       "next_action": "Preserve normal-forward submission gate; no whole-state freeze or inherited GGPO runtime evidence",
       "blockers": [],
       "completed_at": "2026-11-01T06:44:16.830620Z",
-      "commit_sha": "c6a4297d3ea0cc3b94b34bf69fda3f677d13db60"
+      "commit_sha": "c6a4297d3ea0cc3b94b34bf69fda3f677d13db60",
+      "historical_artifacts": [
+        {
+          "path": "solutions/programming/client-prediction-authority-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0119",
@@ -3143,7 +3662,7 @@
       "priority_rationale": "Resolve a concrete event-versus-bank lifetime conflict in existing interactive music exit policy",
       "expected_artifact": "Integrated source-backed teardown decision separating tail preservation from immediate bank reclamation",
       "artifact_paths": [
-        "solutions/audio/music-state-transition-contract.md",
+        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
         "research/source-notes/fmod-event-bank-teardown.md"
       ],
       "acceptance": [
@@ -3160,7 +3679,15 @@
       "next_action": "Retain separate event, sample and bank lifetimes; no audible completion or full manager guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T06:50:29.283110Z",
-      "commit_sha": "e2e40f9466e1af6361ac905de761be11e93a261a"
+      "commit_sha": "e2e40f9466e1af6361ac905de761be11e93a261a",
+      "historical_artifacts": [
+        {
+          "path": "solutions/audio/music-state-transition-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0120",
@@ -3171,7 +3698,7 @@
       "priority_rationale": "Resolve a concrete missing invalidation edge in generated game-asset builds using pinned official CMake semantics",
       "expected_artifact": "Integrated build-role example separating target ordering from executable file-level dependency",
       "artifact_paths": [
-        "roles/engine/build-engineer.md",
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
         "research/source-notes/build-engineer-role.md"
       ],
       "acceptance": [
@@ -3188,7 +3715,15 @@
       "next_action": "Retain actual consumer and finite dependency scope; no executed build or complete input graph claim",
       "blockers": [],
       "completed_at": "2026-11-01T06:54:45.997500Z",
-      "commit_sha": "6591e04edd1e635616474c5999c7649e58a7fef4"
+      "commit_sha": "6591e04edd1e635616474c5999c7649e58a7fef4",
+      "historical_artifacts": [
+        {
+          "path": "roles/engine/build-engineer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3b53ab362c7383a14decb7b843e7c67156810d753016a7e4373c29fa0fc5c1fc"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0121",
@@ -3311,7 +3846,7 @@
       "priority_rationale": "Strengthen the existing UX settings workflow with concrete nonvisual control identity and value-change responsibilities",
       "expected_artifact": "Source-backed finite settings-control narration addition with unexecuted receiving conditions",
       "artifact_paths": [
-        "roles/ux/game-ux-designer.md",
+        "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
         "research/source-notes/game-ux-designer-role.md"
       ],
       "acceptance": [
@@ -3328,7 +3863,15 @@
       "next_action": "Retain focus-item scope and unexecuted receiving conditions; no device or accessibility certification",
       "blockers": [],
       "completed_at": "2026-11-01T07:22:01.165472Z",
-      "commit_sha": "38275d6507c5ade0ac1c568db3752d6022e8dc9f"
+      "commit_sha": "38275d6507c5ade0ac1c568db3752d6022e8dc9f",
+      "historical_artifacts": [
+        {
+          "path": "roles/ux/game-ux-designer.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "9bc08a7db641df46592658e7b837cba200b036d81faae648db12b8d0ca79551b"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0126",
@@ -3368,7 +3911,7 @@
       "priority_rationale": "Turn distinct frame/image identities into a concrete synchronization receiving decision",
       "expected_artifact": "Bounded source-backed normal-cycle semaphore reuse addition",
       "artifact_paths": [
-        "solutions/rendering/presentation-queue-latency-boundary.md",
+        "GameLibrary/图形渲染/画面呈现/输入延迟/交换链和呈现队列怎样影响输入延迟.md",
         "research/source-notes/presentation-queue-latency-boundary.md"
       ],
       "acceptance": [
@@ -3385,7 +3928,15 @@
       "next_action": "Retain normal-cycle synchronization premises and unexecuted identity counterexample; no visibility or latency guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T07:38:15.862201Z",
-      "commit_sha": "39a7403e2111accbd66059c680975f0353d93955"
+      "commit_sha": "39a7403e2111accbd66059c680975f0353d93955",
+      "historical_artifacts": [
+        {
+          "path": "solutions/rendering/presentation-queue-latency-boundary.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "3c899eb1d2b94b1c0a815d6a27ba2546332a0f2616881ae5aa4f4724da8b6353"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0128",
@@ -3651,7 +4202,7 @@
       "priority_rationale": "Close a concrete geometry-query invariant with original author text and fixed implementation rather than infer a defect from an incomplete shader listing",
       "expected_artifact": "Source-backed knowledge article with exact nonboundary geometric counterexample and unexecuted finite acceptance plan",
       "artifact_paths": [
-        "knowledge/rendering/uniform-grid-nearest-hit-termination.md"
+        "GameLibrary/图形渲染/空间查询/光线求交/均匀网格中的最近命中与提前停止.md"
       ],
       "acceptance": [
         "Read original PBRT interval and candidate-update mechanism at fixed source identity",
@@ -3668,7 +4219,15 @@
       "next_action": "Retain conservative grid and exact geometric assumptions; no actual ray-query or baker defect claim",
       "blockers": [],
       "completed_at": "2026-11-01T08:53:36.795003Z",
-      "commit_sha": "522b92eaa90b37ab530b901cc23cc9b1207d85ea"
+      "commit_sha": "522b92eaa90b37ab530b901cc23cc9b1207d85ea",
+      "historical_artifacts": [
+        {
+          "path": "knowledge/rendering/uniform-grid-nearest-hit-termination.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/knowledge/rendering/uniform-grid-nearest-hit-termination.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "7a50af8162562d36f8269e4cc2d716b496f5097ae5597e16d2aefaa227a8365c"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0138",
@@ -3816,7 +4375,7 @@
       "priority_rationale": "Original FFXV production mechanism adds concrete content timing requirements without another lifecycle or generic quantization note",
       "expected_artifact": "Small additive music subsection with source-scope note and unchanged historical model evidence",
       "artifact_paths": [
-        "solutions/audio/music-state-transition-contract.md",
+        "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
         "research/source-notes/ffxv-pre-end-music-window.md"
       ],
       "acceptance": [
@@ -3833,7 +4392,15 @@
       "next_action": "Retain historical pre-end preparation and final timing distinctions; old music model evidence remains unchanged",
       "blockers": [],
       "completed_at": "2026-11-01T09:32:25.294942Z",
-      "commit_sha": "f563b4ec42677f6b9207a2ef6a3197ce4281718b"
+      "commit_sha": "f563b4ec42677f6b9207a2ef6a3197ce4281718b",
+      "historical_artifacts": [
+        {
+          "path": "solutions/audio/music-state-transition-contract.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
+          "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+          "sha256": "833cc203c6189ef0ad2b92ec20ddc85f55f9b38abab5e127af39efddffbccfee"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0143",
@@ -4203,10 +4770,10 @@
         "Preserve history and keep restricted execution evidence separately held"
       ],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T17:00:00Z",
+      "lease_until": "2026-11-01T17:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T16:25:37Z",
-      "next_action": "Complete grouped retirement and historical-support relocation, then consolidate remaining source and execution archives without changing historical assertions",
+      "last_progress_at": "2026-11-01T16:32:04Z",
+      "next_action": "Consolidate remaining research and scripts into reviewed source/support derivatives, safe technical indexes and explicit historical archive references; preserve reader support and historical failures.",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,

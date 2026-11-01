@@ -1,6 +1,6 @@
 # 标量惯性化：来源与数学选择
 
-对应[ SOL-ANIM-002 ](../../solutions/animation/scalar-inertialization-continuity.md)。读取2026-11-01。
+对应[ SOL-ANIM-002 ](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/scalar-inertialization-continuity.md)。读取2026-11-01。
 
 核心来源为Daniel Holden的[Spring-It-On](https://theorangeduck.com/page/spring-roll-call)，页面显示04/03/2021，正文可变；作者身份由[本人介绍](https://theorangeduck.com/page/about)核对，不据当前雇主倒推文章历史归属。定位Half-life and Frequency、Critical Spring Damper、Inertialization三节。正文只短述机制；公式用本库符号重新推导，夹具为原创标量实现。没有复制演示或源仓库代码。
 

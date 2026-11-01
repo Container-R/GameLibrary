@@ -1,6 +1,6 @@
 # FFXV 预结束段与最终同步窗口：来源范围
 
-读取日期：2026-11-01。补强[音乐状态交接](../../solutions/audio/music-state-transition-contract.md)的音乐时间与内容约束，不替代其中的 FMOD 文档、历史 Wwise 案例或模型证据。
+读取日期：2026-11-01。补强[音乐状态交接](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md)的音乐时间与内容约束，不替代其中的 FMOD 文档、历史 Wwise 案例或模型证据。
 
 ## 原始来源及定位
 

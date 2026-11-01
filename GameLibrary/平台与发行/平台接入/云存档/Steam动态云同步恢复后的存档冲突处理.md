@@ -68,7 +68,7 @@ Steam 层可能已经处理过某些文件冲突，应用不一定能拿到云�
 
 本库旧 Linux/tmpfs 观察曾实际安排过这样的顺序；拒绝旧完成通知并没有撤销替换。有限对照在旧写调用前检查了失效标记，但不能推广为通用修复：如果另一个写者能插入“检查”和“替换”之间，竞争依旧存在。它也不是取消一个已经进入内核的 I/O 的实测。
 
-需要复查该边界，可读[旧文件替换反例](../../../../solutions/platform/cloud-save-resume-boundary.md#linuxtmpfs-实际路径替换反例完整不等于新版本)。这与断电持久性、跨设备同步和任意平台上的完整保证不同，本次没有重跑或新增文件系统测试。
+需要复查该边界，可读[旧文件替换反例](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md#linuxtmpfs-实际路径替换反例完整不等于新版本)。这与断电持久性、跨设备同步和任意平台上的完整保证不同，本次没有重跑或新增文件系统测试。
 
 ## 用真正的双设备过程检验，而不只看云图标
 
@@ -78,7 +78,7 @@ Valve 提供了动态云同步的本地测试办法，并警告：直接向不�
 
 `BeginFileWriteBatch` 与 `EndFileWriteBatch` 可以向 Steam 提示哪些相关本地写入属于同一次状态变化，但不能代替前文的隔离和版本判断；异步写的本地成功，也不能单独证明另一设备已经看到内容。[2]
 
-本库旧串行模型用内存字段表示磁盘，检查了旧排队任务、候选冲突与身份重用等有限状态；它没有真实后台 I/O 或 Steam 集成。具体条件和反例保留在[旧模型说明](../../../../solutions/platform/cloud-save-resume-boundary.md#原创模型与验证边界)，不能据其通过就跳过上述平台过程。
+本库旧串行模型用内存字段表示磁盘，检查了旧排队任务、候选冲突与身份重用等有限状态；它没有真实后台 I/O 或 Steam 集成。具体条件和反例保留在[旧模型说明](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md#原创模型与验证边界)，不能据其通过就跳过上述平台过程。
 
 处理恢复的目标，不是尽快把所有状态涂成“成功”，而是在不知道哪份进度应胜出时不先破坏选择。先控制谁还能写，再理解读到的是什么，最后按已经说明的规则恢复游戏，才能把云文件变化真正接到玩家继续游玩的过程上。
 

@@ -1,6 +1,8 @@
 # 本地化协调角色：来源定位
 
-对应[ROLE-LOC-001](../../roles/localization/localization-coordinator.md)。访问2026-11-01，仅正文阅读。
+对应[ROLE-LOC-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md)。访问2026-11-01，仅正文阅读。
+
+当前读者正文：[原文未变时哪些语境变化需要重新翻译](../../GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md)。
 
 | 来源 | 身份/日期与已读范围 |
 |---|---|

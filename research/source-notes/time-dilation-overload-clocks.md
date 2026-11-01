@@ -1,6 +1,6 @@
 # Time Dilation：历史时钟政策与过载边界的来源定位
 
-对应[固定 Tick 方案](../../solutions/programming/fixed-step-simulation-boundary.md)的来源补充。2026-11-01 实际读取下列三篇官方 EVE 原始开发日志英文正文；没有运行游戏、检查图像曲线或观看视频。以下日期是发表日期，不是精确软件构建版本。
+对应[固定 Tick 方案](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md)的来源补充。2026-11-01 实际读取下列三篇官方 EVE 原始开发日志英文正文；没有运行游戏、检查图像曲线或观看视频。以下日期是发表日期，不是精确软件构建版本。
 
 | 来源 | 精确回查位置 | 用途与限制 |
 |---|---|---|

@@ -1,6 +1,8 @@
 # 实时特效美术岗位：来源记录
 
-访问日期 2026-11-01；对应 [ROLE-VFX-001](../../roles/vfx/real-time-vfx-artist.md)。以下是有限的历史项目和职责证据，不是当前游戏行为或本库运行结果。
+访问日期 2026-11-01；对应 [ROLE-VFX-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/vfx/real-time-vfx-artist.md)。以下是有限的历史项目和职责证据，不是当前游戏行为或本库运行结果。
+
+当前读者正文：[实时特效如何兼顾表现与玩法信息](../../GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md)。
 
 | 来源 | 作者、语言与日期 | 实际阅读定位 |
 |---|---|---|

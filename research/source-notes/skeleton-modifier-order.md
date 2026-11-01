@@ -1,6 +1,6 @@
 # 内建 LookAt 顺序与姿态观察：来源及证据范围
 
-2026-10-31。对应既有 [SOL-ANIM-001](../../solutions/animation/turn-in-place-foot-sliding.md) 的独立双骨补证。原四项二维模型、单骨根运动提取与仍未执行的 Unity Rig 工作表各保留原有范围，不互相迁移结论。
+2026-10-31。对应既有 [SOL-ANIM-001](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md) 的独立双骨补证。原四项二维模型、单骨根运动提取与仍未执行的 Unity Rig 工作表各保留原有范围，不互相迁移结论。
 
 ## 原始资料实际读取
 

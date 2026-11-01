@@ -1,6 +1,8 @@
 # Build-engineering role: source and method boundaries
 
-Accessed 2026-10-31. Intended role: `roles/engine/build-engineer.md`, ROLE-ENGINE-001. Primary ENGINE; PLATFORM/LIVE/QA are related interfaces, not synonymous occupations. Baseline inspected: `gamelibrary-publish-isolation`, six existing role profiles. No runtime, CI service, package publication or organization trial performed for this role.
+Accessed 2026-10-31. Intended role: [roles/engine/build-engineer.md](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/engine/build-engineer.md), ROLE-ENGINE-001. Primary ENGINE; PLATFORM/LIVE/QA are related interfaces, not synonymous occupations. Baseline inspected: `gamelibrary-publish-isolation`, six existing role profiles. No runtime, CI service, package publication or organization trial performed for this role.
+
+当前读者正文：[构建工程师如何交付可用的游戏版本](../../GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md)。
 
 ## Sources actually read
 

@@ -1,6 +1,8 @@
 # 在线服务工程师：来源记录
 
-访问日期 2026-10-31；对应 [ROLE-NET-001](../../roles/network/online-services-engineer.md)。两条来源支持有限岗位与项目边界，不是全行业标准或本库运行结果。
+访问日期 2026-10-31；对应 [ROLE-NET-001 历史正文](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/network/online-services-engineer.md)。两条来源支持有限岗位与项目边界，不是全行业标准或本库运行结果。
+
+当前读者正文：[在线服务工程师如何保障游戏会话](../../GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md)。
 
 | 原始来源 | 作者、语言与日期 | 实际阅读定位与用途 |
 |---|---|---|

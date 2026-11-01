@@ -2,7 +2,7 @@
 
 核对日期：2026-11-01。本文依据 **2019 年具名开发者访谈**，提出原创、未执行的规则变更接收问题。没有运行 Noita、模拟器或并行测试，也没有检查图片、观看演讲视频或阅读其引擎源码。
 
-[固定 Tick 与模拟边界](../../solutions/programming/fixed-step-simulation-boundary.md)讨论模拟步和规则时序；其中的模型与引擎观察不能证明这里的 Noita 调度。本条关注另一层：**哪些像素需要更新，与哪些任务能同时访问它们，是两个不同的决定。**
+[固定 Tick 与模拟边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md)讨论模拟步和规则时序；其中的模型与引擎观察不能证明这里的 Noita 调度。本条关注另一层：**哪些像素需要更新，与哪些任务能同时访问它们，是两个不同的决定。**
 
 ## 来源中的具体制作机制
 
