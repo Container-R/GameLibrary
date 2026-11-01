@@ -527,7 +527,12 @@
       "supporting_material": "solutions/art2d/alpha-association-contract.md#double-buffer-不代表全程-double也不保证最终字节相同",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "latest_increment": {
+        "scope": "Fixed Vulkan texel conversion/filter ordering and ideal sRGB arithmetic; no image, GPU or old CPU test rerun.",
+        "reader_review": "管理档案/审查/sRGB采样顺序-有限增补审查.md",
+        "reader_sha256": "9ca8281f1995f9c15340c209c445b7c37d760aede546c82f471e70fdad64dfa6"
+      }
     },
     {
       "internal_id": "SOL-SFX-001",

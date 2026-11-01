@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T22:20:00Z",
+      "lease_until": "2026-11-01T22:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T21:34:10Z",
-      "next_action": "Inspect existing alpha and BC/Mip readers for a concrete sRGB filtering or mip-generation gap; distinguish any new source contract from already-covered linear composition and avoid duplicate tutorials.",
+      "last_progress_at": "2026-11-01T21:44:10Z",
+      "next_action": "Review a narrowly scoped heading-link checker improvement for angle brackets inside unambiguous same-line code spans, preserving the raw-HTML fail-closed guard and explicit unsupported cases.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6218,6 +6218,34 @@
       "next_action": "Check the selected policy with actual project content, codec and target output before using it as an implementation guarantee.",
       "blockers": [],
       "verification_method": "Original rolling CRI documentation and explicit hypothetical arithmetic; no middleware, audio playback, device or performance execution."
+    },
+    {
+      "id": "TASK-2026-0166",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Can decoding an already filtered UNORM sample replace decoding each sRGB texel before weighted filtering?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Close a specific sampling-order gap after alpha/compositing checks without adding a generic color-management book.",
+      "expected_artifact": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+        "管理档案/审查/sRGB采样顺序-有限增补审查.md"
+      ],
+      "acceptance": [
+        "Fixed Vulkan source ordering and tag relation checked",
+        "sRGB EOTF original specification directly read",
+        "Same linear-domain black/white counterexample explained",
+        "Manual per-texel decode distinguished from after-filter decode",
+        "No mip-generation or GPU implementation claim"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T21:44:10Z",
+      "next_action": "Check actual content, view, sampling and decode location; existing mip content and target support require separate validation.",
+      "blockers": [],
+      "verification_method": "Fixed original Vulkan specification, Data Format EOTF and ideal formula arithmetic; no GPU, image or LittleCMS execution."
     }
   ],
   "execution_policy": {
