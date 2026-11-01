@@ -1,6 +1,6 @@
 # 游戏数据分析师：来源与适用范围
 
-对应[ROLE-DATA-001](../../roles/data/game-data-analyst.md)，读取2026-11-01。
+对应[ROLE-DATA-001](../../管理档案/历史正文/roles/data/game-data-analyst.md)，读取2026-11-01。
 
 | 来源 | 身份、日期与定位 |
 |---|---|

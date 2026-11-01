@@ -16,10 +16,11 @@
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
       "scope_disposition": "角色表演、制作接入与反馈进入抬臂示意主线；glTF平移重定时详细公式和编码限制明确保留旧精确小节，并提供可选支持入口；重叠职责样本和后台数据有合理排除",
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
-      "supporting_material": "roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够"
+      "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
+      "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md"
     },
     {
       "internal_id": "ROLE-ART2D-001",
@@ -72,7 +73,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "以切割器的启动、接触、持续和停止说明素材、事件、混音与接收；G1及G2–G5精确旧支持保留，不声称听音或运行。",
-      "scope_disposition_review": "管理档案/审查/交互音频岗位-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/交互音频岗位-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "ROLE-DATA-001",
@@ -89,7 +92,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "围绕闪避提示问题，承接事件、定义、观察窗、比较和团队决策；触发资格细方法保留精确旧支持入口。",
-      "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "ROLE-DESIGN-001",
@@ -106,7 +111,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "围绕虚构水闸两路线，从目标、可见性、移动尺度到白盒验证及制作交接；旧输入缓冲细节以精确支持入口保留。",
-      "scope_disposition_review": "管理档案/审查/关卡策划-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/关卡策划-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/roles/design/level-designer.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "ROLE-ENGINE-001",
@@ -178,7 +185,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "守桥人例说明叙事职责、运行时状态、对白交付与团队边界；Valve情境对白和Cygames录音制作各有独立正文及审查，不以岗位文章的接受代替案例审查。",
-      "scope_disposition_review": "管理档案/审查/游戏编剧与叙事设计-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/游戏编剧与叙事设计-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "ROLE-NET-001",
@@ -283,7 +292,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "虚构阴影改版贯穿接口、画面、性能与维护；Factorio历史制作例和精确深度度量支持保留，无shader运行或性能结果。",
-      "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "ROLE-TA-001",
@@ -546,7 +557,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "基于1.21.21解释原始基线、依赖、旧客户端及目录操作寿命，保留精确旧支持，无Unity实测。",
-      "scope_disposition_review": "管理档案/审查/Addressables更新-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/Addressables更新-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "SOL-ENGINE-001",
@@ -656,13 +669,14 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
       "current_read_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
       "extraction_scope": "水泵房试玩主线不变；细粗标签一致率的推导与限制通过明确可选入口保留于旧自动编码小节。",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "水泵房试玩主线不变；细粗标签一致率的推导与限制通过明确可选入口保留于旧自动编码小节。",
-      "scope_disposition_review": "管理档案/审查/试玩标签支持入口-增量审读.md"
+      "scope_disposition_review": "管理档案/审查/试玩标签支持入口-增量审读.md",
+      "historical_body_path": "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md"
     },
     {
       "internal_id": "SOL-NET-001",
@@ -1030,7 +1044,9 @@
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
       "scope_disposition": "观测年龄、年轻对局需求增长与准入分开；历史研究和原创时间线区分，保留两处精确支持。",
-      "scope_disposition_review": "管理档案/审查/League分配-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/League分配-独立审读.md",
+      "historical_body_path": "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
     },
     {
       "internal_id": "CASE-GFX-001",

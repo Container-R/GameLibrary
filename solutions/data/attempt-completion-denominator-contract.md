@@ -76,7 +76,7 @@ as-of100：a1、b1完成；a2明确fail；c1、d1、e1未知。as-of200仅c1晚�
 
 [GameAnalytics Event Types](https://docs.gameanalytics.com/event-tracking-and-integrations/sdks-and-collection-api/api/event-types/)讨论程序关闭导致session end未及时处理及随后恢复记录。这提供一种缺失终态的工程动机，不证明某次关卡未完成的实际原因，更没有定义本文attempt协议。
 
-unknown可以来自未结束、未到达、被冲突隔离或其他未辨明情况；本模型只标记记录能支持的状态。assisted完成也不是无提示引导成功：与[主持人介入后的试玩证据](../production/playtest-intervention-evidence.md)一起使用，保留上下文，不能用埋点名称替代研究问题。
+unknown可以来自未结束、未到达、被冲突隔离或其他未辨明情况；本模型只标记记录能支持的状态。assisted完成也不是无提示引导成功：与[主持人介入后的试玩证据](../../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)一起使用，保留上下文，不能用埋点名称替代研究问题。
 
 数据报表也不直接授权奖励。分析去重和发奖幂等是不同责任：前者服务解释，后者保护游戏状态；参见[经济事件账本](../design/single-player-economy-ledger.md)。不要因为分析端看到了complete就跳过权威校验或重放保护。
 

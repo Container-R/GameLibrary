@@ -19,6 +19,9 @@ sources:
 
 # League 服务器分配：观测到的低负载，不等于下一场对局的余量
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《英雄联盟如何用负载信息分配对局服务器》](../../../../GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 可证实背景与有限事实
 
 Tomasz Mozolewski 在 Riot **2025-01-16** 的[第一方技术报告](https://www.riotgames.com/en/news/tech-blog-cpu-usage)中介绍 League 的服务器分配改进。以下仅概括其历史报告，不是本库测量或当前线上保证。
@@ -96,10 +99,10 @@ Tomasz Mozolewski 在 Riot **2025-01-16** 的[第一方技术报告](https://www
 
 ## 与已有知识的区别
 
-- [在线服务工程师](../../roles/network/online-services-engineer.md)关注一条服务链究竟使用了哪些真实组件与替身；本案例进一步关注分配决策的输入时间与需求增长。
-- [Destiny 配置准入与回退](../../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)关注运行实例的配置一致性和恢复；这里不研究配置回滚。
-- [客户端预测与确认重放](../../solutions/programming/client-prediction-authority-boundary.md)关注对局中的权威状态，不为机群放置策略提供实测证明。
+- [在线服务工程师](../../../../roles/network/online-services-engineer.md)关注一条服务链究竟使用了哪些真实组件与替身；本案例进一步关注分配决策的输入时间与需求增长。
+- [Destiny 配置准入与回退](../../../../GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md)关注运行实例的配置一致性和恢复；这里不研究配置回滚。
+- [客户端预测与确认重放](../../../../solutions/programming/client-prediction-authority-boundary.md)关注对局中的权威状态，不为机群放置策略提供实测证明。
 
 ## 来源定位
 
-Tomasz Mozolewski，Riot Games，[*Riot Tech Blog: Improving Performance by Streamlining League’s Server Selection*](https://www.riotgames.com/en/news/tech-blog-cpu-usage)，2025-01-16，英语，访问于 2026-10-31。关键定位：`The Goals`、`Building a Simulation`、`Solution Criteria`、`Results`、`Scoring`、`Live Results`、`Learnings`；[阅读范围与未知项](../../research/source-notes/league-server-allocation-observation-age.md)。本文无源代码、图表复制或独立性能复现。
+Tomasz Mozolewski，Riot Games，[*Riot Tech Blog: Improving Performance by Streamlining League’s Server Selection*](https://www.riotgames.com/en/news/tech-blog-cpu-usage)，2025-01-16，英语，访问于 2026-10-31。关键定位：`The Goals`、`Building a Simulation`、`Solution Criteria`、`Results`、`Scoring`、`Live Results`、`Learnings`；[阅读范围与未知项](../../../../research/source-notes/league-server-allocation-observation-age.md)。本文无源代码、图表复制或独立性能复现。

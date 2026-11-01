@@ -20,6 +20,9 @@ sources:
 
 # 主持人提示后的通关，不能验证无提示关卡引导
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《主持人提示会怎样影响关卡测试结论》](../../../../GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 这条结论究竟限制什么
 
 研究问题若是“首次进入关卡的目标玩家，能否只依赖发布版本已有信息找到出口”，主持人说出出口方向后的完成，只能证明**在包含该帮助的条件下，发生了完成行为**。它不能单独证明原有引导足够，也不能反向证明玩家永远不可能自行找到出口。援助发生时，原本无额外提示的观察条件已经改变。
@@ -137,8 +140,8 @@ sources:
 
 3. Tehilla Ostrovsky、Paul Ungermann、Chris Donkin，*Using machine learning to automate the collection, transcription, and analysis of verbal-report data*，Behavior Research Methods 57, 285，2025-09-12，DOI 10.3758/s13428-025-02800-5。访问 2026-11-01。定向阅读章节见自动编码小节及专用档案的同日增补；原有两份来源的访问日期不变。
 
-来源取证与日期边界见[专用档案](../../sources/playtest-intervention-sources.md)。
+来源取证与日期边界见[专用档案](../../../../sources/playtest-intervention-sources.md)。
 
-与测试执行、自动化和版本风险的职责交接见[游戏质量保证档案](../../roles/qa/game-quality-assurance.md)；研究方法边界不意味着 QA 不能参与体验研究。
+与测试执行、自动化和版本风险的职责交接见[游戏质量保证档案](../../../../roles/qa/game-quality-assurance.md)；研究方法边界不意味着 QA 不能参与体验研究。
 
 [关卡策划交付接口](../../roles/design/level-designer.md)将空间意图、实际可行性和玩家理解分开验收；这是基于公开来源的协作建议，不是已执行的组织流程。

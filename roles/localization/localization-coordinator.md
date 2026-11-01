@@ -98,7 +98,7 @@ sources:
 ## 与相邻专业及已有证据的关系
 
 - [伪本地化与占位符契约](../../solutions/localization/pseudo-localization-contract.md)已有内容身份与语境字段、有限ICU格式化观察；它不验证本例译文或语言接收状态。本角色新增的是变化后的复查与接入责任，不重复格式算法。
-- [叙事设计与写作](../narrative/narrative-designer-writer.md)提供说话者、知识状态和语义条件；协调者将疑问交还对应责任人，而非代替作者决定故事。
+- [叙事设计与写作](../../管理档案/历史正文/roles/narrative/narrative-designer-writer.md)提供说话者、知识状态和语义条件；协调者将疑问交还对应责任人，而非代替作者决定故事。
 - [游戏UX设计](../ux/game-ux-designer.md)说明操作后果和返回路径；本例语言审阅不能代替实际输入、布局或玩家理解验证。
 - [制作管理](../production/production-manager.md)协调依赖和承诺；本地化的locale接收状态是输入，不等于整个里程碑已通过。
 

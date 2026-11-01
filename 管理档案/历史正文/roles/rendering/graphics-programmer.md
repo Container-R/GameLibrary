@@ -24,6 +24,9 @@ sources:
 
 # 图形与渲染程序：从视觉需求到可维护渲染功能的交付责任
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《图形程序员如何交付和维护渲染功能》](../../../../GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 定位与责任边界
 
 本档案研究的岗位负责把视觉需求转成可集成、可诊断、能在约定平台与预算下维护的渲染功能。交付物不只是shader文件或漂亮截图，还包括功能接口、资源要求、失败边界、性能归因与后续回归依据。
@@ -91,11 +94,11 @@ Godot 的反向 Z 迁移说明提供了一个具体例子：直接写深度常�
 
 ## 典型工程问题与已有证据
 
-- **接口字节合法却画面错误**：[CPU与shader矩阵合同](../../solutions/rendering/matrix-major-interface-contract.md)区分布局与代数语义；该文的实际编译证据不是GPU执行证明。
-- **资产文件大小被当作运行预算**：[压缩纹理mip预算](../../solutions/rendering/block-compressed-mip-budget.md)区分payload与其他资源成本；不能从字节计算直接推断帧时间。
-- **内容性能与信息质量互相牺牲**：[Niagara预算](../../solutions/vfx/niagara-performance-budget.md)提供未执行的内容侧受控测量协议，未运行UE或采集硬件性能数据，不能代替整个渲染器的功能接收。
-- **功能可用但内容无法稳定制作**：[技术美术](../technical-art/technical-artist.md)负责生产接口；底层架构与内容流程需共同决策。
-- **复现记录不足以形成发布决定**：[游戏QA](../qa/game-quality-assurance.md)区分缺陷证据和版本风险；图形程序给出的技术解释不能取代全部发布责任。
+- **接口字节合法却画面错误**：[CPU与shader矩阵合同](../../../../solutions/rendering/matrix-major-interface-contract.md)区分布局与代数语义；该文的实际编译证据不是GPU执行证明。
+- **资产文件大小被当作运行预算**：[压缩纹理mip预算](../../../../solutions/rendering/block-compressed-mip-budget.md)区分payload与其他资源成本；不能从字节计算直接推断帧时间。
+- **内容性能与信息质量互相牺牲**：[Niagara预算](../../../../solutions/vfx/niagara-performance-budget.md)提供未执行的内容侧受控测量协议，未运行UE或采集硬件性能数据，不能代替整个渲染器的功能接收。
+- **功能可用但内容无法稳定制作**：[技术美术](../../../../roles/technical-art/technical-artist.md)负责生产接口；底层架构与内容流程需共同决策。
+- **复现记录不足以形成发布决定**：[游戏QA](../../../../roles/qa/game-quality-assurance.md)区分缺陷证据和版本风险；图形程序给出的技术解释不能取代全部发布责任。
 
 ## 公开工作证据及后续研究
 
@@ -119,7 +122,7 @@ Wube 的2018-01-26开发日志 [S4] 中，Posila讨论优化对不同机器可�
 
 - **S4** Wube Software，Posila、Ernestas、Klonan，*Friday Facts #227 - Rendering, Trees & Scenario talk*，2018-01-26；本次仅以Rendering/VRAM optimizations（Posila）和Trees refresh（Ernestas）两节正文为案例依据：[原文](https://www.factorio.com/blog/post/fff-227)。没有将无关场景章节或图片当作已分析证据。
 
-详细范围与来源链见[来源笔记](../../research/source-notes/graphics-programmer-role.md)。仅原创概述，不转载职位全文。
+详细范围与来源链见[来源笔记](../../../../research/source-notes/graphics-programmer-role.md)。仅原创概述，不转载职位全文。
 
 - **S5** Clay John / Godot，*Introducing Reverse Z*，2024-04-29；4.3 历史迁移说明的 POSITION、DEPTH、depth_texture 与比较空间章节：[原文](https://godotengine.org/article/introducing-reverse-z/)。
 - **S6** Godot 4.6，*Advanced post-processing*；Full screen quad 与 Depth texture：[版本化文档](https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html)。页面可变，不是固定源码；仅文字阅读，未编译或运行 shader。

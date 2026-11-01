@@ -92,7 +92,7 @@ Microsoft **XAG 106: Screen narration**（页面更新 2026-03-04）给出具体
 - **文字条件变化未进入接收。** 同一空间在不同语言或设置下可能容纳不同信息。格式成功和布局成功应分别说明，不用缩小所有文字掩盖内容优先级问题。
 - **配置存在被当作可用。** [关键非语音声音的信息等价](../../solutions/accessibility/critical-sound-information-contract.md)说明需要先确定关键内容与渠道；它没有替本例验证可访问性，也不能用“有字幕”概括所有需求。
 
-[玩法程序](../programming/gameplay-programmer.md)协助确立状态和操作后果；[游戏 QA](../qa/game-quality-assurance.md)保留版本与复现证据；[试玩干预与证据边界](../../solutions/production/playtest-intervention-evidence.md)约束研究结论。跨专业意见不同时，应记录各自判断对象和依据，而非把“设计已通过”写成实现、研究和可访问性全部通过。
+[玩法程序](../programming/gameplay-programmer.md)协助确立状态和操作后果；[游戏 QA](../qa/game-quality-assurance.md)保留版本与复现证据；[试玩干预与证据边界](../../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)约束研究结论。跨专业意见不同时，应记录各自判断对象和依据，而非把“设计已通过”写成实现、研究和可访问性全部通过。
 
 ## 后续研究与适用限制
 

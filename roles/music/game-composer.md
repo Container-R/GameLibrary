@@ -68,7 +68,7 @@ sources:
 
 若继续验证，先只制作上述必要候选，分别记录创作者评审和实际情境检查；不要为凑覆盖率枚举全部子集。无须从两个案例推导统一轨道数量、情绪阈值、编配规则或最优工作流。本档案不提供职业收入、招聘或全行业权限结论。
 
-- [交互音频设计](../audio/interactive-audio-designer.md)：素材、事件、集成与交付接口；本文细化音乐内容选择，而非再造一份通用 manifest。
+- [交互音频设计](../../管理档案/历史正文/roles/audio/interactive-audio-designer.md)：素材、事件、集成与交付接口；本文细化音乐内容选择，而非再造一份通用 manifest。
 - [PCM 循环帧合同](../../solutions/music/pcm-loop-frame-contract.md)：素材边界与计数；数值正确不等于本例编配已获音乐认可。
 - [离线 stem 归一化](../../solutions/audio/silent-stem-normalization-boundary.md)：输入寿命和增益行为；它不决定哪些声部应共同出现。
 

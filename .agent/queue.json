@@ -236,7 +236,7 @@
       "status": "published",
       "priority": 82,
       "priority_rationale": "补齐原TASK-2026-0004未覆盖的完整岗位职责",
-      "expected_artifact": "roles/audio/interactive-audio-designer.md",
+      "expected_artifact": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
       "acceptance": [
         "一手行业/雇主资料",
         "职责交付验收矩阵",
@@ -636,7 +636,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "solutions/production/playtest-intervention-evidence.md",
+      "expected_artifact": "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -858,7 +858,7 @@
       "status": "published",
       "priority": 88,
       "priority_rationale": "Reviewed evidence quality corrections first; other bounded research prepared locally",
-      "expected_artifact": "roles/design/level-designer.md",
+      "expected_artifact": "管理档案/历史正文/roles/design/level-designer.md",
       "acceptance": [
         "Primary evidence and explicit scope",
         "Independent review",
@@ -1473,7 +1473,7 @@
       "priority_rationale": "Address an important uncovered occupation with direct employer evidence and concrete feature handoff rather than duplicating existing numeric models",
       "expected_artifact": "Bounded graphics-programmer role profile and original unexecuted rendering-feature acceptance worksheet",
       "artifact_paths": [
-        "roles/rendering/graphics-programmer.md",
+        "管理档案/历史正文/roles/rendering/graphics-programmer.md",
         "research/source-notes/graphics-programmer-role.md",
         "research/audits/graphics-programmer-role"
       ],
@@ -1588,7 +1588,7 @@
       "priority_rationale": "Official1.21.21 documentation permits cached previous-state fallback for missing remote file; concrete build-time lineage risk is distinct from Godot runtime cache ownership",
       "expected_artifact": "Version-scoped source-backed content-update baseline contract with explicit unexecuted acceptance and runtime gap",
       "artifact_paths": [
-        "solutions/engine/addressables-content-update-baseline.md",
+        "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
         "research/source-notes/addressables-content-update-baseline.md",
         "research/audits/addressables-update-contract"
       ],
@@ -1704,7 +1704,7 @@
       "priority_rationale": "First-party historical allocation evidence adds concrete delayed-observation/young-match-demand boundary beyond platform mock scope",
       "expected_artifact": "Narrow source-backed historical case and original unexecuted measurement/lifecycle acceptance worksheet",
       "artifact_paths": [
-        "case-studies/network/league-server-allocation-observation-age.md",
+        "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
         "research/source-notes/league-server-allocation-observation-age.md"
       ],
       "acceptance": [
@@ -1845,7 +1845,7 @@
       "priority_rationale": "Role matrix lacks authored animation performance and handoff boundaries despite existing animation mechanism solutions",
       "expected_artifact": "Source-backed game animator role and original unexecuted combination handoff worksheet",
       "artifact_paths": [
-        "roles/animation/game-animator.md",
+        "管理档案/历史正文/roles/animation/game-animator.md",
         "research/source-notes/game-animator-role.md"
       ],
       "acceptance": [
@@ -2140,7 +2140,7 @@
       "priority_rationale": "Missing analyst role connected to existing synthetic metric contract and production decision responsibility",
       "expected_artifact": "Narrow source-backed analyst role and original unexecuted tutorial-comparison handoff",
       "artifact_paths": [
-        "roles/data/game-data-analyst.md",
+        "管理档案/历史正文/roles/data/game-data-analyst.md",
         "research/source-notes/game-data-analyst-role.md",
         "research/audits/cloud-save-second-review/REVIEW.md"
       ],
@@ -2224,7 +2224,7 @@
       "priority_rationale": "Missing narrative role and concrete state-aware content handoff, distinct from existing voice approval and save source analysis",
       "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
       "artifact_paths": [
-        "roles/narrative/narrative-designer-writer.md",
+        "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
         "research/source-notes/narrative-designer-writer-role.md"
       ],
       "acceptance": [
@@ -2923,7 +2923,7 @@
       "priority_rationale": "Deepen an explicitly unread dependency-example gap in existing SOL-ENGINE-002 rather than expanding topic counts",
       "expected_artifact": "Bounded official-source deepening of existing Addressables topic after full-file privacy and evidence review",
       "artifact_paths": [
-        "solutions/engine/addressables-content-update-baseline.md"
+        "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md"
       ],
       "acceptance": [
         "Read official 1.21.21 dependency examples and Unique Bundle IDs scope directly",
@@ -2977,7 +2977,7 @@
       "priority_rationale": "Deepen an exact cohort-selection mechanism in existing ROLE-DATA-001 with a concrete design tradeoff, not another generic causality disclaimer",
       "expected_artifact": "Integrated first-opportunity eligibility and counterfactual-logging method box if independent source review supports assumptions",
       "artifact_paths": [
-        "roles/data/game-data-analyst.md"
+        "管理档案/历史正文/roles/data/game-data-analyst.md"
       ],
       "acceptance": [
         "Read original Microsoft ExP pre/post experiment methods and distinguish cross-domain migration from game evidence",
@@ -3033,7 +3033,7 @@
       "priority_rationale": "Deepen existing level-design article with a concrete first-party action-selection mechanism rather than generic buffering advice",
       "expected_artifact": "Source-gated in-place role subsection and bounded source review",
       "artifact_paths": [
-        "roles/design/level-designer.md"
+        "管理档案/历史正文/roles/design/level-designer.md"
       ],
       "acceptance": [
         "Read original Double Fine action priority description",
@@ -3059,7 +3059,7 @@
       "priority_rationale": "Deepen existing rendering role with a concrete shader maintenance decision rather than a generic evidence checklist",
       "expected_artifact": "Integrated source-backed depth-space decision example and bounded source review",
       "artifact_paths": [
-        "roles/rendering/graphics-programmer.md",
+        "管理档案/历史正文/roles/rendering/graphics-programmer.md",
         "research/source-notes/graphics-programmer-role.md"
       ],
       "acceptance": [
@@ -3087,7 +3087,7 @@
       "priority_rationale": "Resolve a concrete animation-tool handoff ambiguity through the fixed normative interpolation formula and a distinguishing hand calculation",
       "expected_artifact": "Integrated animation role example with source-backed formula and clearly unexecuted counterexample",
       "artifact_paths": [
-        "roles/animation/game-animator.md",
+        "管理档案/历史正文/roles/animation/game-animator.md",
         "research/source-notes/game-animator-role.md"
       ],
       "acceptance": [
@@ -3226,7 +3226,7 @@
       "priority_rationale": "Strengthen an existing correct catalog-update boundary with the missing operation-handle prerequisite, without confusing asset and bundle lifetimes",
       "expected_artifact": "Version-specific source-backed catalog operation ownership addition and bounded unexecuted acceptance scenario",
       "artifact_paths": [
-        "solutions/engine/addressables-content-update-baseline.md",
+        "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
         "research/source-notes/addressables-content-update-baseline.md"
       ],
       "acceptance": [
@@ -3283,7 +3283,7 @@
       "priority_rationale": "Deepen narrative-host handoff with a fixed implementation mechanism beyond generic commit-point advice",
       "expected_artifact": "Finite source-backed narrative role addition on lookahead-safe external binding and execution placement",
       "artifact_paths": [
-        "roles/narrative/narrative-designer-writer.md",
+        "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
         "research/source-notes/narrative-designer-writer-role.md"
       ],
       "acceptance": [
@@ -3339,7 +3339,7 @@
       "priority_rationale": "Prevent coarse automated evidence scores from silently authorizing finer production decisions; retain unresolved original measurement inquiry separately",
       "expected_artifact": "Bounded original-source addition on label granularity and receiving decisions",
       "artifact_paths": [
-        "solutions/production/playtest-intervention-evidence.md",
+        "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md",
         "sources/playtest-intervention-sources.md"
       ],
       "acceptance": [
@@ -4205,7 +4205,7 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T17:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T16:01:52Z",
+      "last_progress_at": "2026-11-01T16:20:41Z",
       "next_action": "Complete grouped retirement and historical-support relocation, then consolidate remaining source and execution archives without changing historical assertions",
       "blockers": [],
       "milestones": {

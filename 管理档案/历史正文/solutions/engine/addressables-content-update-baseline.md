@@ -26,6 +26,9 @@ sources:
 
 # Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《Unity Addressables内容更新与旧客户端兼容》](../../../../GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 决策：构建成功不等于更新了正确的发行线
 
 给已发布 Player（客户端构建）P 做内容更新，不能只交付“构建成功”和一个 catalog。应回答两个不同问题：**本次实际读取的 previous state 属于 P 的哪个平台发行基线？P 是否能通过这个候选 catalog 加载预期的新旧内容？** 第一问是构建输入身份，第二问是运行兼容性；任一未知都不应改写为通过。
@@ -125,6 +128,6 @@ sources:
 
 本文没有执行 Unity、CDN 部署或客户端加载；未证明所有网络失败路径、发布原子性、回滚安全、目录签名、运行时内存上限或下载性能。第三方服务的上线顺序和并发读者一致性还需要独立协议与实际验证。文档中的 catalog/hash 输出关系不是 CDN 原子提交保证。
 
-- [构建工程师](../../roles/engine/build-engineer.md)：把包内程序与外部内容组合交付；本文补充基线身份这一个具体门禁。
-- [干净检出后的资产导入](asset-import-intent-contract.md)：同样重视输入意图，但其 Godot 导入与资源候选实验**不能充当本文 Unity 流程的运行证据**。
-- [来源核对记录](../../research/source-notes/addressables-content-update-baseline.md)：官方文档的版本、章节、分日补读记录和证据边界。
+- [构建工程师](../../../../roles/engine/build-engineer.md)：把包内程序与外部内容组合交付；本文补充基线身份这一个具体门禁。
+- [干净检出后的资产导入](../../../../solutions/engine/asset-import-intent-contract.md)：同样重视输入意图，但其 Godot 导入与资源候选实验**不能充当本文 Unity 流程的运行证据**。
+- [来源核对记录](../../../../research/source-notes/addressables-content-update-baseline.md)：官方文档的版本、章节、分日补读记录和证据边界。

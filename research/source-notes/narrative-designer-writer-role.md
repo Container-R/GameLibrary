@@ -1,6 +1,6 @@
 # 叙事设计与写作职责：来源定位
 
-对应 [ROLE-NARR-001](../../roles/narrative/narrative-designer-writer.md)，访问2026-11-01。本文记录定位，不重复正文事实概括。
+对应 [ROLE-NARR-001](../../管理档案/历史正文/roles/narrative/narrative-designer-writer.md)，访问2026-11-01。本文记录定位，不重复正文事实概括。
 
 | 原始材料 | 身份、日期与定位 | 使用边界 |
 |---|---|---|

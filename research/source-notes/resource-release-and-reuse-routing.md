@@ -7,7 +7,7 @@
 | 你真正要决定什么 | 转去核对的责任与证据 | 应退回的 adapter 推断 |
 |---|---|---|
 | 一份 NativeArray 分配是否已完成释放 | [普通值副本与释放依赖](nativearray-copy-and-disposal-ownership.md)：负责人先收束同步借用，并覆盖所有已调度消费者；延迟释放时保存返回的 disposal handle，需同步确认时 Complete 它 | 将 owner 的 `IsCreated=false` 当作 free 完成；将另一值副本的 true 当作访问或再次释放权。输入 lastUse 不是返回的释放依赖 |
-| 本方是否还持有 catalog 加载操作引用 | [Addressables §4.1](../../solutions/engine/addressables-content-update-baseline.md)：明确自动或手动释放的互斥所有权政策；更新前核对相关旧加载操作的持有者 | 将“操作完成”当作已放弃引用，或把释放本方引用等同卸载 catalog、清空 bundle 缓存、取得最新远端内容 |
+| 本方是否还持有 catalog 加载操作引用 | [Addressables §4.1](../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md)：明确自动或手动释放的互斥所有权政策；更新前核对相关旧加载操作的持有者 | 将“操作完成”当作已放弃引用，或把释放本方引用等同卸载 catalog、清空 bundle 缓存、取得最新远端内容 |
 | 场景退出时是否继续保有所需音频 bank | [FMOD 生命周期退出段](../../solutions/audio/music-state-transition-contract.md)及[来源范围](fmod-event-bank-teardown.md)：先决定保尾部还是允许中断；bank 管理方结合项目结束记录、其他使用者及卸载政策作决定 | 由一次 STOPPED / DESTROYED 通知直接批准所有 bank 卸载，或把实例 release 当作 bank 保留权、声学尾部完成证明 |
 | 正常持续呈现中，某个 present-wait semaphore 能否再次使用 | [Vulkan §1.1](../../solutions/rendering/presentation-queue-latency-boundary.md)：沿固定指南的正常路径，以实际交换链图像数与 image index 对应资源，并满足重新获取该图像的 acquire 同步关系 | 将帧槽提交 fence，或 CPU 取得 image index 的返回，替代该同步条件；把复用许可当作图像已显示或关闭／重建回收许可 |
 

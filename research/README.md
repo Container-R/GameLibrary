@@ -61,9 +61,9 @@ python3 scripts/evidence/test_verify.py
 ## 内容与职责证据
 
 - [关键声音信息合同](../solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](../管理档案/来源笔记/critical-sound-encounter.md)：不是实际玩家研究。
-- [试玩干预证据](../solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
+- [试玩干预证据](../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
-- [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
+- [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../管理档案/历史正文/roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
 - [按学科找书](../GameLibrary/README.md)提供当前读者入口；旧路线资料只作历史记录，不再构成另一套现行目录。
 
 [ICU MessageFormat 有限实测](experiments/icu-message-boundary/README.md)保留四种输入、独立复跑及运行器拒绝路径，不是 Unity、布局或 LQA 验证。
@@ -94,7 +94,7 @@ python3 scripts/evidence/test_verify.py
 
 [Godot单骨根运动](experiments/godot-root-motion-boundary/README.md)分别保留普通姿态、提取、重复读取与显式应用的原生观察；作者与独立复验各两行为进程，不将四项旧几何测试改写为引擎证据。
 
-[图形与渲染程序](../roles/rendering/graphics-programmer.md)补充视觉需求、接口、性能证据与维护的职责交接；三份雇主材料和一个历史制作案例不证明原创建议已被采用。
+[图形与渲染程序](../管理档案/历史正文/roles/rendering/graphics-programmer.md)补充视觉需求、接口、性能证据与维护的职责交接；三份雇主材料和一个历史制作案例不证明原创建议已被采用。
 
 [物理查询回调中的形状状态](experiments/godot-physics-callback-v2/README.md)区分场景属性与有限物理参与证据；[原始失败夹具](experiments/godot-physics-callback-v1/README.md)保持失败身份。重新冻结的kinematic配置、原始错误、解析器缺口和修正分别归档，不承诺下一tick或完整伤害政策。
 
@@ -102,7 +102,7 @@ python3 scripts/evidence/test_verify.py
 
 [构建工程候选交接](../roles/engine/build-engineer.md)将源、产物、测试对象和晋级权限分开；六阶段交付与五项接收工作表均是未执行的原创建议。
 
-[Addressables已发布基线合同](../solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。
+[Addressables已发布基线合同](../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md)把构建时state缓存、catalog引用和旧版客户端加载分层；五阶段交接与四步对照是未执行协议，不借用Godot资源实测。
 
 [双骨LookAt顺序与读取时点](experiments/godot-skeleton-modifier-order/README.md)采用新的五位置helper，但不改旧运行器；三次行为尝试含一次完整判据失败，接受结果仅覆盖两个顺序和固定输入。
 
@@ -110,7 +110,7 @@ python3 scripts/evidence/test_verify.py
 
 [在线服务工程师](../roles/network/online-services-engineer.md)补充已有NET分类下的岗位交接：声明实际组件、替身及遗漏边界责任，不运行虚构服务制造容量证据。
 
-[League分配与观测年龄案例](../case-studies/network/league-server-allocation-observation-age.md)提出未执行的五方交接与区分力验收问题，不以虚构模拟结果充当历史复现。
+[League分配与观测年龄案例](../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md)提出未执行的五方交接与区分力验收问题，不以虚构模拟结果充当历史复现。
 
 [ICU en/ar分支覆盖](experiments/icu-plural-locale/README.md)新增三配置六整数，作者/独立各18格式化请求；遗漏few合法回退但拒绝冻结FEW意图，未测RTL或翻译质量。
 
@@ -118,7 +118,7 @@ python3 scripts/evidence/test_verify.py
 
 [制作管理依赖交接](../roles/production/production-manager.md)区分局部完成、接收方可用与里程碑接受，提供明确标注未执行的 A7→C17 工作表；岗位矩阵仍未完整。
 
-[游戏动画师](../roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。
+[游戏动画师](../管理档案/历史正文/roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。
 
 [实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。
 
@@ -134,13 +134,13 @@ python3 scripts/evidence/test_verify.py
 
 [Left 4 Dead Director 案例](../GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md)区分估计、控制、执行、遭遇与体验；原研究的六层观察表为原创未执行建议，新书以自然说明保留这些观察层次；当时同步修正 Killzone 案例对后续导航运动证据的过时交叉引用，属历史编辑记录。
 
-[游戏数据分析师](../roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
+[游戏数据分析师](../管理档案/历史正文/roles/data/game-data-analyst.md)把问题、测量与解释交给决定者；教程工作表未执行。另有[云存档二次审查](audits/cloud-save-second-review/REVIEW.md)：在声明域内未发现新缺陷，复跑既有纯测试和静态档案检查，不新增平台运行结论。
 
 [标量转场连续性](../solutions/animation/scalar-inertialization-continuity.md)含独立RK4、分区比较和中断反例；[实验归档](experiments/scalar-inertialization/README.md)保存前置协议、真实数值表及复核，未运行角色或引擎。
 
 [稀疏accessor实验](experiments/gltf-sparse-accessor/README.md)保存44字节双基底与5拒绝用例；不继承密集网格的引擎证据。
 
-[对白语义交接](../roles/narrative/narrative-designer-writer.md)把世界事实、角色知识和任务资格分别交接；桥梁情境为原创未执行建议。
+[对白语义交接](../管理档案/历史正文/roles/narrative/narrative-designer-writer.md)把世界事实、角色知识和任务资格分别交接；桥梁情境为原创未执行建议。
 
 [客户端预测补充](../solutions/programming/client-prediction-authority-boundary.md)以固定GGPO源码收紧旧表现建议；新增短事件、失效事件与持久输出各有未执行验收问题，没有新增运行实验。
 

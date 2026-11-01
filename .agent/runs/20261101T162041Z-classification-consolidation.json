@@ -1,0 +1,27 @@
+{
+  "run_id": "20261101T162041Z-classification-consolidation",
+  "observed_at": "2026-11-01T16:20:41Z",
+  "verified_head_sha": "7530f9a0af42d9f2c8f0d302009c510a389ccb54",
+  "status": "root-consolidation-in-progress",
+  "published": {
+    "changed_files": 52,
+    "classification_paths": [
+      "管理档案/分类/disciplines.json",
+      "管理档案/分类/reading-routes.json"
+    ],
+    "retired_old_cases": 9,
+    "retired_root_entries": [
+      "CATALOG.md",
+      "DISCOVERY.md"
+    ],
+    "taxonomy_json_bytes_unchanged": true
+  },
+  "verification": {
+    "reader_articles": 55,
+    "repository_local_outlinks_bound_to_published_tree": 133,
+    "queue_tasks": 152,
+    "artifact_paths": 268,
+    "runtime_experiments_rerun": false
+  },
+  "remaining": "Historical-record sanitization and consolidation of remaining legacy content, source records and tools; no claim of whole-library completion."
+}

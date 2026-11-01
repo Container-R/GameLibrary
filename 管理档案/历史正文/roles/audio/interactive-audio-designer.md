@@ -19,6 +19,9 @@ sources:
 
 # 交互音频设计：从声音意图到游戏内验收的责任接口
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《交互音频设计师的工作与协作》](../../../../GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 岗位定位：交付行为，不只交付文件
 
 交互音频设计需要把“玩家应听懂什么、感到什么”变成可在游戏状态、空间和时间条件下工作的声音行为。本条将它作为跨声音创作与实时实现的责任集合，而非断言所有工作室都有同名职位。
@@ -83,7 +86,7 @@ sources:
 
 例如蓄力武器不能仅交付 `Play_Charge`：必须回答松手、击退、死亡、武器卸载分别如何结束；释放声音是否依赖真正成功发射；多个玩家是否各有实例；迟到通知是否可能作用到新武器。游戏玩法提供事实，音频设计提供表达，不应由资产文件名暗示游戏规则。
 
-音乐接口直接复用[音乐状态交接契约](../../solutions/audio/music-state-transition-contract.md)：期望模式、成功提交与实际观察分开；异步启动/重试联合检查 generation、生命周期和 revision。不要复制一份较旧状态机并漏掉“退出后资源才就绪”与“旧 revision 重试覆盖新意图”的验收。
+音乐接口直接复用[音乐状态交接契约](../../../../solutions/audio/music-state-transition-contract.md)：期望模式、成功提交与实际观察分开；异步启动/重试联合检查 generation、生命周期和 revision。不要复制一份较旧状态机并漏掉“退出后资源才就绪”与“旧 revision 重试覆盖新意图”的验收。
 
 ### G3：导入构建可重复
 
@@ -131,6 +134,6 @@ sources:
 
 后续应以一个合法最小音频功能验证 G1–G5：提交可验证 manifest、明确版本的工程与失败注入记录；另行研究平台响度/输出规范，不能由本岗位条目代替。对外包作曲和录音的具体权利、费用与合同也须独立处理，不从岗位名称推导。
 
-关键非语音反馈的跨岗位内容验收见[声音信息等价合同](../../solutions/accessibility/critical-sound-information-contract.md)：声音已播放或对白字幕齐全，都不证明行动信息可获得。该方案及假设遭遇没有玩家效果实测。
+关键非语音反馈的跨岗位内容验收见[声音信息等价合同](../../../../solutions/accessibility/critical-sound-information-contract.md)：声音已播放或对白字幕齐全，都不证明行动信息可获得。该方案及假设遭遇没有玩家效果实测。
 
-关联：[玩法程序责任接口](../programming/gameplay-programmer.md)、[音乐状态交接契约](../../solutions/audio/music-state-transition-contract.md)。检索词：interactive audio designer、technical sound designer、audio integrator、audio programmer、composer、concepteur sonore technique、音频交付、事件契约、声音验收。
+关联：[玩法程序责任接口](../../../../roles/programming/gameplay-programmer.md)、[音乐状态交接契约](../../../../solutions/audio/music-state-transition-contract.md)。检索词：interactive audio designer、technical sound designer、audio integrator、audio programmer、composer、concepteur sonore technique、音频交付、事件契约、声音验收。

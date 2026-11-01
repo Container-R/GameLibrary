@@ -1,6 +1,6 @@
 # League 服务器分配：来源定位与证据边界
 
-对应 [CASE-NET-001](../../case-studies/network/league-server-allocation-observation-age.md)。访问日期 2026-10-31。
+对应 [CASE-NET-001](../../管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md)。访问日期 2026-10-31。
 
 原始来源：[Riot Tech Blog: Improving Performance by Streamlining League’s Server Selection](https://www.riotgames.com/en/news/tech-blog-cpu-usage)，作者 Tomasz Mozolewski，页面日期 **2025-01-16**，英语，第一方历史技术报告。正文介绍作者与 Robin Maddock 的技术负责人身份；不据此推断当前职务。版本无代码提交或运行环境可供本次独立验证。
 

@@ -1,0 +1,96 @@
+{
+  "status": "historical source-group migration derivative",
+  "scope": "No rerun; old audits keep old hashes; candidate until independently accepted and integrated.",
+  "moves": [
+    {
+      "old_path": "case-studies/network/league-server-allocation-observation-age.md",
+      "new_path": "管理档案/历史正文/case-studies/network/league-server-allocation-observation-age.md",
+      "before_sha256": "3e74fc664e270b627a7dc68fd3a84d4ce6fe13b1dac88046bfe25976bc9cdf8c",
+      "after_sha256": "b06aa246668ae64a22613601fff61957dea66e5eeb85e4c720b208f68e7684c6",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md"
+    },
+    {
+      "old_path": "roles/animation/game-animator.md",
+      "new_path": "管理档案/历史正文/roles/animation/game-animator.md",
+      "before_sha256": "28eb64ee55cf6c71881aceb211fe1a840e28dabccaeafcf90d2cba6231237f6c",
+      "after_sha256": "638d71ed3c5f8da51c2a1680f6a161d605ceb88999d0933f0ac56358486343fd",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md"
+    },
+    {
+      "old_path": "roles/audio/interactive-audio-designer.md",
+      "new_path": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
+      "before_sha256": "469f72a1168b3dbf081cdca81f4cc2ced168d40b96eb1077b0afa2babdbe5be0",
+      "after_sha256": "b9701be40beae81fe4c7bc207fab8a55411c0d0c104beab5af73eb1157fd8910",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md"
+    },
+    {
+      "old_path": "roles/data/game-data-analyst.md",
+      "new_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
+      "before_sha256": "acce6bdd14f5c120c29803e0cafd45ce1a9c6acf1ffce97856cfd6b27d25688b",
+      "after_sha256": "ee016fabcb629f1bd08a3d365d6ae256f981b764586456d902865fa23764f3bf",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md"
+    },
+    {
+      "old_path": "roles/design/level-designer.md",
+      "new_path": "管理档案/历史正文/roles/design/level-designer.md",
+      "before_sha256": "31421f0edc09fa505a05381fa04c83e354479ace36c6dae12ec5b652aa823da0",
+      "after_sha256": "b34105e976ec90d3131d25596e763858985979078b35bda761d98124dfce5bcc",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/游戏设计/关卡设计/岗位与协作/关卡策划从白盒到制作交付的工作.md"
+    },
+    {
+      "old_path": "roles/narrative/narrative-designer-writer.md",
+      "new_path": "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
+      "before_sha256": "7f0f04043cb87b27b13f6237f3724a5fe6f63f1074ed901f2b387ba0aaeb9d75",
+      "after_sha256": "1a38f1a350b5e4522766110e3227bc608e5163eb7bb4481d43287aceb0264c6c",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md"
+    },
+    {
+      "old_path": "roles/rendering/graphics-programmer.md",
+      "new_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
+      "before_sha256": "018d277f18458b8190c3959a707478593390eb688be2a90a5445b97bb21eded0",
+      "after_sha256": "15e88672e43c7b857d4333e55fc6b4f36623dcad53b821101d3935b7e36f437b",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md"
+    },
+    {
+      "old_path": "solutions/engine/addressables-content-update-baseline.md",
+      "new_path": "管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md",
+      "before_sha256": "971f27e4c38c6da3f3e3b83440349ed161debbd635f508f21ff208119acc6092",
+      "after_sha256": "3eff6ba1a9ad8d668ce113cf8af34ed83b9a669ed72bc67aec9c4f48d2326157",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md"
+    },
+    {
+      "old_path": "solutions/production/playtest-intervention-evidence.md",
+      "new_path": "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md",
+      "before_sha256": "b1d950fd42076c0fea16e225d8692a2b968f8dd03f99e1a9273dc7cba7527604",
+      "after_sha256": "ebf55c6822ba04d7bf9d7830a41bdd646af7107cc73697dfb360f76f6a7afc71",
+      "redactions": [],
+      "safety_review": "complete prose read: no installed fingerprints, private absolute execution paths or observed PID/attempt IDs; public source identifiers preserved",
+      "transform": "history banner + relative links only; no technical content removed",
+      "current_reader_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md"
+    }
+  ]
+}

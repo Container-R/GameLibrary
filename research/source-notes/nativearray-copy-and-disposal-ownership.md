@@ -37,4 +37,4 @@
 
 不覆盖 Temp / TempJob、自定义或 rewindable allocator、外部指针、各种 view 的完整释放政策、unsafe 绕过或结构体防御性复制；也不承诺错误访问在所有构建中都会被诊断拒绝。
 
-[Addressables 操作所有权](../../solutions/engine/addressables-content-update-baseline.md)处理的是另一类引用管理，不能据此把 NativeArray 普通值副本解释为新增一次引用计数。本篇没有执行失效访问、释放、作业或引擎实验。
+[Addressables 操作所有权](../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md)处理的是另一类引用管理，不能据此把 NativeArray 普通值副本解释为新增一次引用计数。本篇没有执行失效访问、释放、作业或引擎实验。

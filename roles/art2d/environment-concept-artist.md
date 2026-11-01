@@ -86,10 +86,10 @@ sources:
 
 ## 职业交叉关系与证据边界
 
-- [关卡策划](../design/level-designer.md)：提供遭遇与空间意图，明确美术变化何时需要复核。其方案不是本文入口案例的实际玩法证据。
+- [关卡策划](../../管理档案/历史正文/roles/design/level-designer.md)：提供遭遇与空间意图，明确美术变化何时需要复核。其方案不是本文入口案例的实际玩法证据。
 - [技术美术](../technical-art/technical-artist.md)：负责相关资产/工具接口的支持。可重复导入不能证明概念意图已实现。
 - [glTF 属性与几何验收](../../solutions/modeling/gltf-interleaved-attribute-contract.md)：有限实验区分数据合法、属性解释与预期几何；未验证本文资产、DCC 流程或视觉保真。
-- [试玩干预与证据边界](../../solutions/production/playtest-intervention-evidence.md)：若要判断玩家是否读懂入口线索，应取得匹配问题的观察；设计者能解释图片不构成玩家理解证据。
+- [试玩干预与证据边界](../../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)：若要判断玩家是否读懂入口线索，应取得匹配问题的观察；设计者能解释图片不构成玩家理解证据。
 
 下一步应在获准的实际设计交接中选一份明确用途的稿件，记录接收者仍需回答的问题，再评估是否需要补图、补规格或修改空间。本文没有制作资产、运行场景、检查来源图片或取得玩家结果。
 

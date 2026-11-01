@@ -84,9 +84,9 @@ sources:
 ## 职业交叉关系与后续研究
 
 - [技术美术](../technical-art/technical-artist.md)：支持可重复的资产与工具流程，不替代具体信号意图的确认。
-- [图形与渲染程序](../rendering/graphics-programmer.md)：接收系统性绘制问题；不能仅凭一个效果不清楚就要求改渲染器。
+- [图形与渲染程序](../../管理档案/历史正文/roles/rendering/graphics-programmer.md)：接收系统性绘制问题；不能仅凭一个效果不清楚就要求改渲染器。
 - [玩法程序](../programming/gameplay-programmer.md)：提供状态与行为契约；特效可见不证明判定正确。
-- [试玩干预与证据边界](../../solutions/production/playtest-intervention-evidence.md)：若开展玩家理解研究，应保留提示和干预，不能把被解释后的识别当成自发理解。
+- [试玩干预与证据边界](../../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)：若开展玩家理解研究，应保留提示和干预，不能把被解释后的识别当成自发理解。
 
 下一步有价值的验证是选择获准的真实或原创效果，明确一个信号契约和有限情境，再分别取得运行对应、视觉审查及必要的玩家研究证据。本档案没有这些运行结果，不为凑测试数量建立无视觉判据的粒子模型。它只补充一个 VFX 岗位接口，不宣称完成全学科矩阵。
 

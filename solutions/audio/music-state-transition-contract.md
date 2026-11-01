@@ -178,7 +178,7 @@ Studio 的停止、拒绝新增与 Virtualize 也不是同一结果；不要把 
 
 问题关键词：interactive music、music state、quantized transition、transition region、magnet region、exit cue、music switch container、音乐强度抖动、音乐事件重复启动。
 
-关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)、[玩法程序职责](../../roles/programming/gameplay-programmer.md)。待研究关联：异步资源生命周期、音频 QA 与平台时延。岗位职责与交付证据见[交互音频设计](../../roles/audio/interactive-audio-designer.md)；该档案也有来源与适用范围，不用本条有限接口表替代。
+关联：[固定 Tick 与引擎表现边界](../programming/fixed-step-simulation-boundary.md)、[玩法程序职责](../../roles/programming/gameplay-programmer.md)。待研究关联：异步资源生命周期、音频 QA 与平台时延。岗位职责与交付证据见[交互音频设计](../../管理档案/历史正文/roles/audio/interactive-audio-designer.md)；该档案也有来源与适用范围，不用本条有限接口表替代。
 
 来源访问日期：2026-10-31。保存原创契约分析和必要的短述，不转载中间件源码、音乐、工程素材或原文全文。
 

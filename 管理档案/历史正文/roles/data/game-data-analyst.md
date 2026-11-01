@@ -22,6 +22,9 @@ sources:
 
 # 游戏数据分析师：从指标请求到可解释的设计决定
 
+> **历史技术补充（迁移衍生），不是当前读者书。** 当前阅读请见[《游戏数据分析师如何支持设计决策》](../../../../GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md)。以下保留旧正文的完整技术上下文、来源和未执行范围；此次只增加历史标记并调整链接，没有重新运行或重新认证历史主张。原路径与前后文件绑定见[迁移记录](../../迁移记录-source-group.json)。
+
+
 ## 定位与责任边界
 
 本文限定一个工作单元：**把设计或运营提出的问题转为有定义的观察，再把观察连同解释边界交回决定者。** 分析师不是只接收“算一个完成率”的报表执行者，也不能因为拥有数据就替设计决定目标、替制作授权发布。
@@ -91,10 +94,10 @@ sources:
 
 ## 与既有工程证据的关系
 
-- [玩家分配与逐场实际暴露](../../research/source-notes/game-experiment-assignment-and-session-exposure.md)用原始预印本机制和原创未执行情景，区分原分配、共享规则预测与实际启用证据；记录关系不构成估计器或因果识别验证。
-- [事件、尝试与玩家分母](../../solutions/data/attempt-completion-denominator-contract.md)已用18行原创合成输入检查有限快照与排列，帮助约束身份、窗口和未知状态。它没有真实玩家或服务调用，更不是上述教程改版实验；本角色不重写其算法，也不把纯模型升级为线上采集可靠性。
-- [游戏 QA](../qa/game-quality-assurance.md)可提供版本、复现与数据检查证据；检查通过不替代分析解释，分析师也不能把不利观察简单标为测试错误。
-- [制作管理](../production/production-manager.md)协调接收、依赖和决定权限；指标成为决策输入不等于已经调整了范围或发布承诺。
+- [玩家分配与逐场实际暴露](../../../../research/source-notes/game-experiment-assignment-and-session-exposure.md)用原始预印本机制和原创未执行情景，区分原分配、共享规则预测与实际启用证据；记录关系不构成估计器或因果识别验证。
+- [事件、尝试与玩家分母](../../../../solutions/data/attempt-completion-denominator-contract.md)已用18行原创合成输入检查有限快照与排列，帮助约束身份、窗口和未知状态。它没有真实玩家或服务调用，更不是上述教程改版实验；本角色不重写其算法，也不把纯模型升级为线上采集可靠性。
+- [游戏 QA](../../../../roles/qa/game-quality-assurance.md)可提供版本、复现与数据检查证据；检查通过不替代分析解释，分析师也不能把不利观察简单标为测试错误。
+- [制作管理](../../../../roles/production/production-manager.md)协调接收、依赖和决定权限；指标成为决策输入不等于已经调整了范围或发布承诺。
 - [试玩干预与证据边界](../../solutions/production/playtest-intervention-evidence.md)帮助区分辅助完成与无提示理解；遥测和玩家研究可以互补，但不能互相冒名。
 
 ## 限制与后续工作
@@ -105,7 +108,7 @@ sources:
 
 ## 来源
 
-访问2026-11-01，正文阅读，未查看图像；详见[来源记录](../../research/source-notes/game-data-analyst-role.md)。
+访问2026-11-01，正文阅读，未查看图像；详见[来源记录](../../../../research/source-notes/game-data-analyst-role.md)。
 
 - **S1** 中村一哉，Bandai Namco Nexus 企业 Wantedly 文章，日语，2021-12-07：[组织与分析流程介绍](https://www.wantedly.com/companies/bandainamco-nexus/post_articles/362598)。定位：課題設定フェーズ、分析報告フェーズ。
 - **S2** Riot Games 企业编辑，英语，2015-11-16：[Get Data Informed on the Insights Blog](https://www.riotgames.com/en/work-with-us/disciplines/insights/get-data-informed-on-the-insights-blog)。定位：开头、READY YOUR SPREADSHEETS、研究方法区分。

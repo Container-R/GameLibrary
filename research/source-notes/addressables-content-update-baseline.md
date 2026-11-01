@@ -1,6 +1,6 @@
 # Addressables 内容更新：来源与适用性记录
 
-核对日期：2026-10-31。对应 [SOL-ENGINE-002](../../solutions/engine/addressables-content-update-baseline.md)。本记录仅列来源定位与阅读范围，不保存官方全文、图片或大段翻译。
+核对日期：2026-10-31。对应 [SOL-ENGINE-002](../../管理档案/历史正文/solutions/engine/addressables-content-update-baseline.md)。本记录仅列来源定位与阅读范围，不保存官方全文、图片或大段翻译。
 
 ## 版本与方法
 

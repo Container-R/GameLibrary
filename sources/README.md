@@ -27,7 +27,7 @@
 | 客户端预测与确认 | [知识条目](../solutions/programming/client-prediction-authority-boundary.md) | Gambetta原作者与Unity指定版本；离散模型不验证网络/物理/反作弊 |
 | Niagara预算与测量 | [知识条目](../solutions/vfx/niagara-performance-budget.md) | UE5.6为主，5.8补充单独标记；没有硬件性能实测 |
 | 单机经济事件账本 | [知识条目](../solutions/design/single-player-economy-ledger.md) | 设计作者与Unity资源映射；原创整数模型及实际 SQLite 事务/写锁证据，不预测真实玩家 |
-| 交互音频职责交付 | [岗位档案](../roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
+| 交互音频职责交付 | [岗位档案](../管理档案/历史正文/roles/audio/interactive-audio-designer.md) | 中英法雇主/机构样本；不由名称推断全行业分工 |
 | 模态焦点恢复 | [知识条目](../solutions/ux/modal-focus-recovery.md) | XAG113/112与Unity6000.0，状态模型及 Godot 实例/焦点无头证据，不证明真实渲染和认证 |
 | 伪本地化与格式契约 | [知识条目](../solutions/localization/pseudo-localization-contract.md) | Unity1.5.13、官方问题记录、ICU/W3C；已执行有限 ICU 格式化，未执行 Unity |
 | Steam恢复与存档写隔离 | [知识条目](../solutions/platform/cloud-save-resume-boundary.md) | Valve滚动中英文文档同源；串行模型与实际 tmpfs 路径替换反例，不证明 Steam 平台时序或持久介质断电恢复 |
@@ -51,7 +51,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [关键非语音声音来源档案](accessibility-critical-sound-sources.md)区分 Microsoft XAG103/104、Game Accessibility Guidelines 和 Naughty Dog 2020 年功能披露；[工程合同](../solutions/accessibility/critical-sound-information-contract.md)的具体信息粒度和时序策略是原创提案，不是用户研究结果。
 
-[试玩介入来源档案](playtest-intervention-sources.md)对照 Valve 居家模拟试玩条件与 GDS 服务可用性研究的救场目的；[工程方案](../solutions/production/playtest-intervention-evidence.md)区分额外解题提示、预定参与支持、观察、解释和改后验证。没有真实参与者或改版收益数据。
+[试玩介入来源档案](playtest-intervention-sources.md)对照 Valve 居家模拟试玩条件与 GDS 服务可用性研究的救场目的；[工程方案](../管理档案/历史正文/solutions/production/playtest-intervention-evidence.md)区分额外解题提示、预定参与支持、观察、解释和改后验证。没有真实参与者或改版收益数据。
 
 [Steam 胶囊素材来源记录](../research/source-notes/steam-capsule-handoff.md)的官方规则、当前规格与覆盖工作流分别定位；尺寸通过不等于文案、可用内容、语言及排期通过。没有平台上传或审核结果。
 
@@ -59,7 +59,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [游戏质量保证职责来源](../roles/qa/game-quality-assurance.md)核对 ScreenSkills、SIE、Riot 与万代南梦宫工作室日语原始岗位；GDS 方法指南仅用于证据边界。公开职责不证明实际质量成果或当前招聘有效。
 
-[关卡策划职责与交接](../roles/design/level-designer.md)对照 ORCA 日语职责、Ubisoft 特定负责人岗位、Double Fine 移动度量制作案例和历史 NEXT 挑战；原创建议不冒充工作室内部规程。
+[关卡策划职责与交接](../管理档案/历史正文/roles/design/level-designer.md)对照 ORCA 日语职责、Ubisoft 特定负责人岗位、Double Fine 移动度量制作案例和历史 NEXT 挑战；原创建议不冒充工作室内部规程。
 
 [ICU 固定接口与运行观察](../research/experiments/icu-message-boundary/README.md)区分公开源码、已安装库文件摘要和有限格式化证据，不以版本相同认证构建来源。
 

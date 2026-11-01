@@ -103,4 +103,4 @@ Microsoft 的 DXGI 1.3 指南介绍从 Direct3D 11.2 起可用的 waitable swapc
 
 - **S4** Khronos Vulkan Guide，[Swapchain Semaphore Reuse](https://github.com/KhronosGroup/Vulkan-Guide/blob/82887e8444045655cc4578827e4183be9de593ff/chapters/swapchain_semaphore_reuse.adoc)，快照提交 `82887e8444045655cc4578827e4183be9de593ff`，2026-10-23；Problem Statement、Discussion of Solution 与正常循环示例。快照日期不是章节最后修改日。访问2026-11-01。
 
-关联：[图形程序职责](../../roles/rendering/graphics-programmer.md)负责将视觉需求与可观察成本/行为交接；[矩阵接口合同](matrix-major-interface-contract.md)讨论另一种数据边界，其证据不验证本条的呈现或延迟；[固定 Tick](../programming/fixed-step-simulation-boundary.md)的模拟时间规则也不等于显示时效。
+关联：[图形程序职责](../../管理档案/历史正文/roles/rendering/graphics-programmer.md)负责将视觉需求与可观察成本/行为交接；[矩阵接口合同](matrix-major-interface-contract.md)讨论另一种数据边界，其证据不验证本条的呈现或延迟；[固定 Tick](../programming/fixed-step-simulation-boundary.md)的模拟时间规则也不等于显示时效。
