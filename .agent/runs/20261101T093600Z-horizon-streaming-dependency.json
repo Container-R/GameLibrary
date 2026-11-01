@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T093600Z-horizon-streaming-dependency",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0143"
+  ],
+  "started_at": "2026-11-01T09:36:00Z",
+  "ended_at": "2026-11-01T09:39:28.837833Z",
+  "outcome": "Bounded original production case independently reviewed; publication validation pending",
+  "sources_examined": [
+    "https://www.guerrilla-games.com/read/Streaming-the-World-of-Horizon-Zero-Dawn",
+    "https://d3d3g8mu99pzk9.cloudfront.net/AstridHuntjens/Streaming%20the%20world%20of%20Horizon%20Zero%20Dawn.pdf"
+  ],
+  "evidence_added": "Original PDF selected text and visual order/process checks distinguish async reads from dependency-controlled object initialization",
+  "original_contribution": "Explicit A-to-B-to-S and D-to-S receiving example separates byte completion, own preparation, dependency permission and shared ownership",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Historical source only; exact talk date unverified",
+    "No runtime scheduler, game or I/O performance test",
+    "No inferred global read-all barrier, cancellation algorithm or unrestricted initialization parallelism",
+    "No source assets republished"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 143,
+    "indexed_articles": 53,
+    "archive_consistency_normal_pass": 519,
+    "archive_consistency_optimized_pass": 519,
+    "archive_consistency_fail": 0,
+    "archive_scope": "Declared archive consistency only; no new runtime execution or semantic verification",
+    "local_links_checked": 894,
+    "declared_paths_checked": 193,
+    "full_changed_file_privacy_scan": "PASS"
+  },
+  "next_action": "Verify exact publication then investigate fixed tick versus physics substep and continuous collision evidence gap"
+}

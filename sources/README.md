@@ -218,3 +218,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [For Honor 动作事件标记与请求时刻](../case-studies/animation/for-honor-motion-matching-event-request.md)根据原始 GDC2016 演讲区分作者约定、逻辑请求和候选源起点；原创时间算例未执行，不预测搜索胜者或战斗命中。
 
 [FFXV 预结束段与同步窗口](../research/source-notes/ffxv-pre-end-music-window.md)补强既有音乐时间交接：原始会议资料区分准备阶段与最终固定/可变编排；没有新增运行或听感结果。
+
+[Horizon 流送的依赖初始化许可](../case-studies/engine/horizon-streaming-dependency-initialization.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。

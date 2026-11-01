@@ -60,6 +60,7 @@
 - [Left 4 Dead Director：强度估计、节奏控制与实际体验的证据边界](case-studies/ai/left4dead-director-pacing-evidence.md) — `source-backed` · `AI`
 - [For Honor 的 Motion Matching 制作接口：事件标记与请求时刻怎样对齐](case-studies/animation/for-honor-motion-matching-event-request.md) — `source-backed` · `ANIM`
 - [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `source-backed` · `ENGINE`
+- [Horizon 世界流送：读取顺序与依赖初始化许可分开设计](case-studies/engine/horizon-streaming-dependency-initialization.md) — `source-backed` · `ENGINE`
 - [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `source-backed` · `LIVE`
 - [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `source-backed` · `NARR`
 - [Valve 情境对白：新增历史条件为何也会改变候选排名](case-studies/narrative/valve-contextual-dialogue-rule-selection.md) — `source-backed` · `NARR`

@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:32:25.294942Z",
-      "next_action": "Inspect original production streaming dependency and initialization scheduling sources; avoid generic loaded-versus-ready repetition",
+      "last_progress_at": "2026-11-01T09:39:28.837833Z",
+      "next_action": "Examine production dependency scheduling with explicit file/object graph scope, not generic loaded-versus-ready summaries",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3752,6 +3752,33 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:32:25.294942Z",
       "commit_sha": "f563b4ec42677f6b9207a2ef6a3197ce4281718b"
+    },
+    {
+      "id": "TASK-2026-0143",
+      "question": "How does known asset dependency structure constrain initialization separately from asynchronous I/O submission and completion?",
+      "discipline": "ENGINE",
+      "status": "reviewing",
+      "priority": 91,
+      "priority_rationale": "Original Decima production mechanism provides concrete graph constraints beyond import intent and release-baseline coverage",
+      "expected_artifact": "Historical production case and original finite dependency counterexample, with no scheduler implementation claim",
+      "artifact_paths": [
+        "case-studies/engine/horizon-streaming-dependency-initialization.md",
+        "research/source-notes/horizon-streaming-dependency-initialization.md"
+      ],
+      "acceptance": [
+        "Read original official slide text and inspect order/process pages",
+        "Keep file graph and object initialization graph distinct",
+        "Do not infer a global read-all barrier or arbitrary parallel initialization safety",
+        "State exact graph arrows and one-file/one-object simplification",
+        "Keep original talk date unknown rather than infer it from later webpage",
+        "Exclude source slides and all private execution metadata"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:39:28.837833Z",
+      "next_action": "Validate independent source review and publish bounded historical dependency case",
+      "blockers": []
     }
   ]
 }
