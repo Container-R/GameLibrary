@@ -2,6 +2,6 @@
 
 [返回在线运维](../README.md)
 
-本书架目前链接到旧稿，正在逐篇重写。这些资料可供查阅，但尚未通过新的可读性审查。
+配置修复以后，为什么玩家数据仍可能需要独立恢复？
 
-- [Destiny2配置回退事故中的数据恢复问题](../../../../case-studies/liveops/destiny-config-admission-rollback.md)
+- [Destiny2配置回退事故中的数据恢复问题](Destiny2配置回退事故中的数据恢复问题.md)

@@ -2,6 +2,6 @@
 
 [返回构建发布](../README.md)
 
-本书架目前链接到旧稿，正在逐篇重写。这些资料可供查阅，但尚未通过新的可读性审查。
+从一张装备纹理的修改，追到旧客户端实际会读到的内容。
 
-- [Unity Addressables内容更新与旧客户端兼容](../../../../solutions/engine/addressables-content-update-baseline.md)
+- [Unity Addressables内容更新与旧客户端兼容](Unity Addressables内容更新与旧客户端兼容.md)

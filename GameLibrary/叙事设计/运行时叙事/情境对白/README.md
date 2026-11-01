@@ -2,6 +2,6 @@
 
 [返回运行时叙事](../README.md)
 
-本书架目前链接到旧稿，正在逐篇重写。这些资料可供查阅，但尚未通过新的可读性审查。
+用营地对白说明规则匹配、候选排名与实际播放为什么要分开。
 
-- [Valve如何根据游戏情境选择对白](../../../../case-studies/narrative/valve-contextual-dialogue-rule-selection.md)
+- [Valve如何根据游戏情境选择对白](Valve如何根据游戏情境选择对白.md)

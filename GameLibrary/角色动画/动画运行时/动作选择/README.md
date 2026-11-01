@@ -2,7 +2,11 @@
 
 [返回动画运行时](../README.md)
 
-本书架目前链接到旧稿，正在逐篇重写。这些资料可供查阅，但尚未通过新的可读性审查。
+比较允许接什么动作与请求何时到达某个动作阶段。
 
-- [FFXV如何组织越障动画的后续片段](../../../../case-studies/animation/ffxv-vaulting-successor-candidates.md)
-- [ForHonor动作匹配中的事件与请求时机](../../../../case-studies/animation/for-honor-motion-matching-event-request.md)
+- [FFXV如何组织越障动画的后续片段](FFXV如何组织越障动画的后续片段.md)
+- [ForHonor动作匹配中的事件与请求时机](ForHonor动作匹配中的事件与请求时机.md)
+
+## 相关问题
+
+- [Warlander如何区分招式取消与输入缓存](../../../游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md)：如果你要判断当前动作何时允许被打断、提前按下的输入怎样保留，可接着读这篇战斗设计案例。

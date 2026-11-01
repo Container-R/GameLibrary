@@ -151,9 +151,25 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 
 本库旧版研究曾用这个小输入进行有限CPU读取和独立数值对照。这里保留足以手算的布局与预期，不把有限读取器当成生产导入器，也不要求读者先看运行日志。本文没有重新执行实验。
 
-本章仅处理有 bufferView、无稀疏替换的普通位置、法线和索引。稀疏 accessor 会在基底之上替换部分元素；矩阵还有自己的排列要求，压缩扩展、外部资源加载、蒙皮和动画也需要另作处理。对暂未支持的合法形式，应明确报告“不支持”，而不是把它们一概称为非法文件。
+## 遇到稀疏属性，先找基底，再做替换
 
-最后，源 buffer 的布局不一定就是引擎或GPU最终使用的布局。某个引擎导入后可能重组数据或转换表示；那是下一层问题，不能由本文的28字节步长推出。这里解决的是：**按glTF声明读到正确的属性，并知道每一次读取为什么合法。**
+前面的逐项地址计算针对有 bufferView、无稀疏替换的普通属性。稀疏 accessor 则先确定元素的基底来源，再替换其中指定的元素；不是把补丁数值加上去。[5]
+
+用旧版研究的另一个小例子手算：基底为 `[10,20,30,40]`，从0开始编号，要替换的元素编号为1和3，对应新值为7和9。最终得到 `[10,7,30,9]`，而不是相加后的 `[10,27,30,49]`。这里的1和3是在 accessor 中选择待替换元素，不是前文用来连接三角形的索引流。
+
+如果这个例子不使用扩展提供元素，也省略基底的 `bufferView` 和 `byteOffset`，就从四个零开始，替换后得到 `[0,7,0,9]`。即便 buffer 的其他位置仍保存10和30，也不能擅自把那些字节当作基底。[5]
+
+稀疏索引和值分别来自自己的 view，各自有偏移、长度和对齐要求；索引还须严格递增且小于 accessor 的元素数量。整个 buffer 够长，不意味着其中某个 view 可以越界。[5] 这里仅解释替换含义，不把前文普通属性的读取公式变成完整稀疏解析器。这个标量例子也不是上面矩形的引擎导入结果，本次没有执行它。
+
+关于详细规则和旧有限读取器的适用范围，可选读[稀疏 accessor 来源说明](../../../../research/source-notes/gltf-sparse-accessor.md)。矩阵、压缩扩展、外部资源加载、蒙皮和动画仍需另作处理。对暂未支持的合法形式，应明确报告“不支持”，而不是把它们一概称为非法文件。
+
+## 导入之后，应按目标表示的规则比较
+
+源 buffer 的布局不一定就是引擎或GPU最终使用的布局。某个引擎导入后可能重组数据或转换表示；那是下一层问题，不能由本文的28字节步长推出。
+
+比较时应先确认目标表示的约定，再决定哪些值必须保持一致。例如，若目标采用不同的三角形正面绕序，就应按明确的转换规则核对索引与正面含义，不能只因索引数组不再逐项相等便判定模型损坏。属性精度或包围盒处理也要分别说明；一个小样例观察到的差异，不能自动成为所有网格的容差标准。
+
+这是对导入结果的检查建议，不是本章已完成的引擎验证。既不能要求所有阶段逐字相等，也不能没有依据地把任何差异都归为“引擎优化”。先确认目标规则，再检查该规则是否被正确执行；本章的交错读取主线仍只解决：**按glTF声明读到正确的属性，并知道每一次读取为什么合法。**
 
 ## 参考来源
 
@@ -163,6 +179,8 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 2. Khronos Group，[Accessing Data from Buffer Views](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#data-alignment)。参见元素地址、所需范围、独立偏移对齐与步长条件。
 3. Khronos Group，[bufferView schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json)。这是同一规范项目的字段定义，不能替代读取数据后的检查。
 4. Khronos Group，[Topology and Connectivity](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-topology)。参见索引与各属性元素的对应关系；属性数量要求位于相邻属性章节。
+
+5. Khronos Group，同一固定规范的 [Accessors：元素来源](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview) 与 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)。2026-11-01重新核对基底来源、替换顺序、稀疏索引及值的独立范围和对齐。标量数组为旧原创例子的手算解释，不是新解码或引擎测量。
 
 ---
 
