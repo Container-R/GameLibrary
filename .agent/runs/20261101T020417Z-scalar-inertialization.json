@@ -5,8 +5,8 @@
     "TASK-2026-0083"
   ],
   "started_at": "2026-11-01T02:04:17Z",
-  "ended_at": "2026-11-01T02:16:31.174800Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T02:28:58.373198Z",
+  "outcome": "published and read back",
   "sources": [
     "https://theorangeduck.com/page/spring-roll-call",
     "https://www.gdcvault.com/play/1025331/Inertialization-High-Performance-Animation-Transitions"
@@ -43,7 +43,11 @@
     "queue_tasks_checked": 83,
     "declared_paths_checked": 98,
     "local_links": 659,
-    "archive_validator_unit_tests": 9
+    "archive_validator_unit_tests": 9,
+    "selected_blob_hashes_verified": 52,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 84,
+    "receipt_declared_paths_checked": 98
   },
   "next_action": "Review narrow glTF normalized/sparse accessor depth gate before selecting next implementable unit",
   "numerical_failures_observed": 0,
@@ -61,6 +65,10 @@
     "deferred_index_changes": [
       "sources/README.md new scalar source entry",
       "taxonomy/reading-routes.json new scalar route entry and generated DISCOVERY"
-    ]
-  }
+    ],
+    "resolved_by": "Unreferenced commit df1aa64b made coherent tree readable before branch update; exact selected/outside checks and raw readbacks passed",
+    "actual_parent": "5403d6db61b7671a58622cf6da26fb2b145a4b60",
+    "resolved_at": "2026-11-01T02:28:58.373198Z"
+  },
+  "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b"
 }

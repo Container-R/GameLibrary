@@ -2115,7 +2115,7 @@
       "id": "TASK-2026-0083",
       "question": "Can a scalar decaying animation residual preserve value and velocity through an interrupted transition without filtering a continuous target forever?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Deepen animation knowledge with explicit mathematical continuity and independent numerical oracle, not more role coverage",
       "expected_artifact": "Source-derived scalar residual derivation, bounded original numerical fixture and discriminating negative controls",
@@ -2130,11 +2130,35 @@
         "Independent ODE/reference review and initial-value/interruption negative controls",
         "No skeleton, contact, root-motion, visual quality or engine performance guarantee"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T02:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T02:16:31.174800Z",
-      "next_action": "Publish accepted scalar mathematical derivation, original finite tests and independent numerical evidence",
+      "next_action": "Retain finite scalar C1 evidence; no engine/contact validation. Optional source/route entries deferred to TASK-2026-0084",
+      "blockers": [],
+      "completed_at": "2026-11-01T02:28:58.373198Z",
+      "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b"
+    },
+    {
+      "id": "TASK-2026-0084",
+      "question": "How does a sparse glTF accessor replace indexed elements over dense or implicit-zero base data?",
+      "discipline": "MODEL",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen explicitly excluded sparse-accessor semantics without transferring dense-engine evidence",
+      "expected_artifact": "Pinned normative source, finite original scalar accessor bytes and independent literal decode checks",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pinned Khronos glTF source and strict sparse replacement/base initialization semantics",
+        "Freeze44-byte input, offsets, two literal outputs and bounded rejects before implementation",
+        "No full validator, mesh validity, native sparse importer or morph-evaluation claim",
+        "Preserve prior dense evidence and restore deferred scalar source/route indexes with matching generated navigation"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T03:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T02:28:58.373198Z",
+      "next_action": "Complete main/independent sparse source gate review before finite protocol; restore deferred scalar source and route indexes in next coherent publication",
       "blockers": []
     }
   ]
