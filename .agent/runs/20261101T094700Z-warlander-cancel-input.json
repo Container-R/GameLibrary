@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T094700Z-warlander-cancel-input",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0145"
+  ],
+  "started_at": "2026-11-01T09:47:40Z",
+  "ended_at": "2026-11-01T09:53:41.230274Z",
+  "outcome": "Original production cancellation and reservation case independently reviewed; publication validation pending",
+  "sources_examined": [
+    "https://blog.toylogic.co.jp/programmer/3758.html"
+  ],
+  "evidence_added": "Original Japanese Toylogic developer explanation distinguishes cancellation categories from bounded input reservation",
+  "original_contribution": "Separate conditional trials and half-open interval intersection reveal eligibility versus expiry without inferred actual command arbitration",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No Warlander code, game, input or player test",
+    "No inferred hitstop clock, queue overwrite, priority or network behavior",
+    "Original integer timing assumptions are not historical engine implementation",
+    "No source images or long quotations republished",
+    "Cygames time hierarchy and FFXV vaulting remain separate research leads"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 145,
+    "indexed_articles": 54,
+    "archive_consistency_normal_pass": 519,
+    "archive_consistency_optimized_pass": 519,
+    "archive_consistency_fail": 0,
+    "archive_scope": "Declared archive consistency only; no new runtime or semantic test",
+    "declared_paths_checked": 196,
+    "full_changed_file_privacy_scan": "PASS"
+  },
+  "next_action": "Verify publication and assess original FFXV vaulting candidate/geometry mechanism without mixing production systems"
+}

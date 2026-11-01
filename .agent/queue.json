@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:35:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:45:48.423764Z",
-      "next_action": "Review existing high-value source and discovery gaps before selecting another substantive unit; avoid repeated small notes",
+      "last_progress_at": "2026-11-01T09:53:41.230274Z",
+      "next_action": "Study original Japanese production action timing rather than reproduce generic input-buffer advice",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3809,6 +3809,33 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:45:48.423764Z",
       "commit_sha": "58e20e961285e9342353340eb5593ce1d890abe2"
+    },
+    {
+      "id": "TASK-2026-0145",
+      "question": "When does a remembered action request overlap its own category-specific cancellation eligibility?",
+      "discipline": "DESIGN",
+      "status": "reviewing",
+      "priority": 94,
+      "priority_rationale": "Original Warlander developer mechanism ties authored combat categories to bounded input reservation and explicit acceptance conditions",
+      "expected_artifact": "Source-backed production case with original conditional timing analysis, not a reconstructed private queue",
+      "artifact_paths": [
+        "case-studies/design/warlander-cancel-input-reservation.md",
+        "research/source-notes/warlander-cancel-input-reservation.md"
+      ],
+      "acceptance": [
+        "Read original Japanese developer article and establish author/date/project scope",
+        "Distinguish illustrative frame values from reported historical project settings",
+        "Use separate trials rather than invent simultaneous-command arbitration",
+        "Fix half-open expiration and shared-clock assumptions for original arithmetic",
+        "Do not confuse eligibility overlap with actual execution or hit confirmation",
+        "Exclude source images and preserve existing runtime evidence boundaries"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:53:41.230274Z",
+      "next_action": "Validate source review, conditional arithmetic and exact publication",
+      "blockers": []
     }
   ]
 }

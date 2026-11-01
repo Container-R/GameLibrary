@@ -215,3 +215,5 @@ python3 scripts/evidence/test_verify.py
 [FFXV 预结束段与同步窗口](source-notes/ffxv-pre-end-music-window.md)补强既有音乐时间交接：原始会议资料区分准备阶段与最终固定/可变编排；没有新增运行或听感结果。
 
 [Horizon 流送的依赖初始化许可](../case-studies/engine/horizon-streaming-dependency-initialization.md)核对原始项目资料中的异步读取与对象工作图，并用原创有限 DAG 区分完成通知、依赖许可和共享持有；没有新运行或性能结论。
+
+[Warlander 取消类别与输入预约](../case-studies/design/warlander-cancel-input-reservation.md)依据开发者原始日语文章区分行动许可和命令有效期；原创分开试次明确半开边界及共同计时前提，没有推定实际队列、hitstop或执行结果。
