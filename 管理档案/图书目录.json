@@ -304,9 +304,10 @@
       "area": "环境管线",
       "shelf": "纹理与材质",
       "proposed_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/art2d/alpha-association-contract.md"
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
     },
     {
       "internal_id": "SOL-SFX-001",
@@ -419,9 +420,11 @@
       "area": "音频制作",
       "shelf": "循环素材",
       "proposed_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/music/pcm-loop-frame-contract.md"
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+      "current_read_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "extraction_scope": "PCM帧、半开区间与播放接口端点主线重写；Ogg Opus预跳过、尾部修剪与包级语义仍待整理"
     },
     {
       "internal_id": "SOL-PLATFORM-001",
@@ -681,7 +684,7 @@
       "current_read_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
     }
   ],
-  "rewritten_reader_books": 11,
-  "legacy_entries_remaining": 44,
+  "rewritten_reader_books": 13,
+  "legacy_entries_remaining": 42,
   "whole_library_rebuild_complete": false
 }

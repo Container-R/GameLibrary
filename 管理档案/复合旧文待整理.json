@@ -53,6 +53,20 @@
         "SQLite写入与提交阶段重试",
         "崩溃恢复与交易结果存储的有限实验说明"
       ]
+    },
+    {
+      "old_path": "solutions/music/pcm-loop-frame-contract.md",
+      "pending_subtopics": [
+        "Ogg Opus预跳过与尾部修剪",
+        "包边界、裁剪与循环重入的范围限制"
+      ]
+    },
+    {
+      "old_path": "solutions/art2d/alpha-association-contract.md",
+      "pending_subtopics": [
+        "颜色转换与预乘操作次序的精度细节",
+        "ICC转换、有限精度与不同合成工作空间的独立实验边界"
+      ]
     }
   ],
   "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index"
