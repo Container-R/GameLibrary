@@ -290,3 +290,15 @@
 - 格式化成功是否证明这个组合布局合适？ → [伪本地化与占位符契约：让布局失败暴露，而不是破坏字符串语法](solutions/localization/pseudo-localization-contract.md) — `SOL-LOC-001` · `source-backed` · `LOC`
   - 关联理由：格式、布局和用户理解属于不同证据。
 
+## 从游戏作曲出发
+路线 ID：`role-game-composer`
+
+岗位起点：[游戏作曲：把完整乐曲变成有意图的交互编配](roles/music/game-composer.md) — `ROLE-MUSIC-001` · `source-backed` · `MUSIC`
+
+- 音乐选择由谁落实为实际交互行为？ → [交互音频设计：从声音意图到游戏内验收的责任接口](roles/audio/interactive-audio-designer.md) — `ROLE-SFX-001` · `source-backed` · `SFX`
+  - 关联理由：创作和实现可兼任，但责任证据不同。
+- 正确提交音乐模式是否已进入所需段落？ → [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `SOL-SFX-001` · `source-backed` · `SFX`
+  - 关联理由：音乐选择不替代生命周期与观察合同。
+- 帧数和循环边界正确是否等于编配合适？ → [音乐循环素材交接：用 PCM 帧区间表达主体，不混淆文件尾部与循环终点](solutions/music/pcm-loop-frame-contract.md) — `SOL-MUSIC-001` · `source-backed` · `MUSIC`
+  - 关联理由：素材计数与音乐判断分层。
+

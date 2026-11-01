@@ -155,3 +155,5 @@ python3 scripts/evidence/test_verify.py
 [固定 Tick 的历史生产来源补充](../solutions/programming/fixed-step-simulation-boundary.md)区分有意减速、未完成工作与外部时间义务；没有新增过载运行测试。
 
 [UI 美术的组合状态交接](../roles/art2d/game-ui-artist.md)区分选择、可用性与比较含义，并明确图形层作用范围；没有制作界面或验证玩家理解。
+
+[作曲与交互编配](../roles/music/game-composer.md)区分技术对齐与有意的组合/缺席；三声部选择表未制作、试听或运行。

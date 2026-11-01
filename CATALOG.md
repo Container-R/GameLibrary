@@ -12,6 +12,7 @@
 - [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `source-backed` · `DESIGN`
 - [构建工程：把源与配置变成可验收、可交接的候选产物](roles/engine/build-engineer.md) — `source-backed` · `ENGINE`
 - [游戏本地化协调：原文未变时，谁重新接收变化后的语境](roles/localization/localization-coordinator.md) — `source-backed` · `LOC`
+- [游戏作曲：把完整乐曲变成有意图的交互编配](roles/music/game-composer.md) — `source-backed` · `MUSIC`
 - [游戏叙事设计与写作：让对白意图、知识状态和实现条件一起交接](roles/narrative/narrative-designer-writer.md) — `source-backed` · `NARR`
 - [在线服务工程师：把服务调用成功交接为可验证的游戏会话](roles/network/online-services-engineer.md) — `source-backed` · `NET`
 - [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `source-backed` · `PROD`

@@ -586,6 +586,29 @@
           "rationale": "格式、布局和用户理解属于不同证据。"
         }
       ]
+    },
+    {
+      "id": "role-game-composer",
+      "title": "从游戏作曲出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-MUSIC-001",
+      "entries": [
+        {
+          "document_id": "ROLE-SFX-001",
+          "question": "音乐选择由谁落实为实际交互行为？",
+          "rationale": "创作和实现可兼任，但责任证据不同。"
+        },
+        {
+          "document_id": "SOL-SFX-001",
+          "question": "正确提交音乐模式是否已进入所需段落？",
+          "rationale": "音乐选择不替代生命周期与观察合同。"
+        },
+        {
+          "document_id": "SOL-MUSIC-001",
+          "question": "帧数和循环边界正确是否等于编配合适？",
+          "rationale": "素材计数与音乐判断分层。"
+        }
+      ]
     }
   ]
 }
