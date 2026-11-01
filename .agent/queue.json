@@ -3371,7 +3371,7 @@
       "id": "TASK-2026-0129",
       "question": "How should a Detour caller distinguish found-end search from truncated corridor output and node-pool exhaustion?",
       "discipline": "AI",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Output truncation can omit the destination without PARTIAL_RESULT; caller decisions must separate two resource limits",
       "expected_artifact": "New source-only fixed-version note with original caller policy and explicit preconditions",
@@ -3385,11 +3385,36 @@
         "Keep valid initialization, input/reference pairing and lifecycle preconditions",
         "Do not inherit runtime evidence or edit existing navigation artifacts"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:25:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:47:24.067670Z",
-      "next_action": "Review complete new note, index links and exact fixed-source status/capacity scope",
+      "next_action": "Retain distinct search/output limits, documented preconditions and conservative caller policy; no Detour runtime claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:49:16.798972Z",
+      "commit_sha": "cefd75e0c608f1f109e40b3ffe08e194f9912a43"
+    },
+    {
+      "id": "TASK-2026-0130",
+      "question": "What can an allocation wrapper liveness property establish after a value-copy alias is disposed?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Investigate fixed original allocation-wrapper ownership and alias semantics before making a liveness claim",
+      "expected_artifact": "One finite original-source gate on value-copy alias lifetime, only if novel and sufficiently evidenced",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect actual existing target and record exact identity",
+        "Use original source or specification with version scope",
+        "Identify a concrete counterexample or receiving decision not already covered",
+        "Reject generic or duplicative expansion and preserve source-access limits",
+        "No participant data, private runtime artifacts or held publication content"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:49:16.798972Z",
+      "next_action": "Inspect existing-depth-selection-18 against existing coverage and original versioned alias/disposal implementation",
       "blockers": []
     }
   ]
