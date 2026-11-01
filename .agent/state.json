@@ -13,16 +13,16 @@
     "reader_books_total": 57
   },
   "publication": {
-    "last_verified_head_sha": "b9a2d6c94b09ed1bb9d2a9cf1ec0032869e51c88",
+    "last_verified_head_sha": "ddd54231f781eca0786e05c29e66049d54c92cd5",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
     "scope": "57 reader articles: 55 baseline rewrites plus two source-grounded recovered/new studies; source and paper results do not imply runtime verification.",
-    "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-    "latest_verified_content_sha": "46128ff2b7b4a70b529b31fa889cecca374f0b2c",
+    "counts_snapshot_head": "ddd54231f781eca0786e05c29e66049d54c92cd5",
+    "latest_verified_content_sha": "ddd54231f781eca0786e05c29e66049d54c92cd5",
     "reader_books_total": 57,
     "post_baseline_research_books": 2
   },
-  "next_action": "Compare existing BC texture and glTF attribute coverage with the practical normal-map seam problem; inspect original MikkTSpace and glTF tangent-basis sources before admitting a distinct reader topic. No rendering or native claims from source reading.",
+  "next_action": "Review current discipline coverage and existing support notes for the next concrete reader gap; reject duplicate source-only topics and admit work only after original-source inspection.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -59,7 +59,7 @@
     "lease_until": "2026-11-01T18:25:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T174824Z-movement-reader",
+  "last_run_id": "20261101T175506Z-tangent-reader-integration",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -78,8 +78,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T17:48:24Z",
-  "last_commit_sha": "b9a2d6c94b09ed1bb9d2a9cf1ec0032869e51c88",
+  "last_real_progress_at": "2026-11-01T17:55:06Z",
+  "last_commit_sha": "ddd54231f781eca0786e05c29e66049d54c92cd5",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

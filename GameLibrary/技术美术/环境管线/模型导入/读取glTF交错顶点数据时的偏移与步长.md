@@ -137,6 +137,16 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 
 还应检查索引是否在属性数量允许的范围内，以及各属性的数量是否一致。若两个角点位置相同但法线或UV不同，不能仅按位置合并记录；索引引用的是整组属性。[4] 本例没有这些接缝，只说明阅读和检查索引时应保留这种含义。
 
+### 补上切线后，原来的共享关系也可能需要改变
+
+**切线**用于描述沿表面的方向。法线贴图里的方向不是直接写在模型的 XYZ 坐标中，而是相对于表面的切线、副切线和法线来解释；glTF 用 `TANGENT.xyz` 保存切线方向，第四个分量 `w` 保存重建副切线所需的正负号。[6] 所以，位置读对了、切线的前三个数也相同，仍不足以证明两份顶点记录可以共用。
+
+例如，两片面沿一条边连接，其中一片的 UV 是镜像的。共享边上的位置、法线和 UV 可以相同，切线方向也可以相同，但所需的 `w` 一正一负。一个顶点槽只能保存一个符号；若把两面的结果依次写回这个槽，后写的会覆盖先写的。这里描述的是一种可构造的属性冲突，不是说所有镜像 UV 都必须采用同样的拆分方式，也不是本文矩形已经出现的渲染故障。
+
+负责补切线的导入器尤其需要注意这一步。MikkTSpace 的结果回调按“第几个面、该面的第几个角点”返回，而不是承诺每个旧顶点编号只有一份结果；作者明确警告不要沿用旧索引去平均或覆盖这些输出。[7] 可以先保存各面角的完整属性，再决定哪些记录仍能共享，并同时更新索引。不能只增加一个切线数组，却继续假定原来的共享关系一定正确。
+
+需要实现这一步时，可继续读[两片镜像 UV 面如何从四份旧记录整理成六份新记录](../../../../管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md)。其中有完整输入和对应表，是未执行的手算例，不是生成器测试。它补充的是**属性与索引的对应关系**；烘焙与渲染是否使用一致的网格、三角化和切线基，仍要另外核对。字节读取正确，不能单独保证法线贴图没有接缝。
+
 ## 调试时，区分三类结论
 
 完成上面的计算后，你可以把问题分得更清楚：
@@ -183,6 +193,9 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 4. Khronos Group，[Topology and Connectivity](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-topology)。参见索引与各属性元素的对应关系；属性数量要求位于相邻属性章节。
 
 5. Khronos Group，同一固定规范的 [Accessors：元素来源](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview) 与 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)。2026-11-01重新核对基底来源、替换顺序、稀疏索引及值的独立范围和对齐。标量数组为旧原创例子的手算解释，不是新解码或引擎测量。
+
+6. Khronos Group，同一固定规范的 [Using Primitive Data](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1808-L1830) 与 [Normal Texture](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2819-L2841)。说明切线基、符号和法线纹理含义；本文未运行渲染。
+7. Morten S. Mikkelsen，[MikkTSpace 输出回调及烘焙／渲染配对说明](https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h#L79-L139)，固定作者提交，2026-11-01复核。这里只转述接口，不复制算法实现；不同三角化即使有相同顶点基，也可能产生不同插值。
 
 ---
 
