@@ -35,3 +35,13 @@
 文章 §3.1 据此区分直接编辑、依赖消费者、检查后资产组织与最终 bundle/catalog。装备与共享纹理场景及接收表是原创、未执行的交接建议；没有把官方示例换名当作独立实验，也没有从资产数量推导输出文件或下载字节。具体迁组与输出保持未知，等待实际工具结果。
 
 此补充不验证任意传递闭包、循环或隐式依赖的检测实现，也不把 `Unique Bundle IDs` 的 bundle 重建影响与限制检查的迁组混成同一机制。没有执行 Unity、构建、客户端加载或测量更新成本；原有运行证据边界不变。
+
+## 2026-11-01 补充阅读：catalog 加载操作与不同缓存层
+
+- [Manage catalogs at runtime](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/LoadContentCatalogAsync.html)：Load additional catalogs、Update catalogs（当次 HTML 114–140）。用于先前加载操作的释放要求与操作缓存复用，区分操作释放和已加载 catalog。
+- [LoadContentCatalogAsync API](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/UnityEngine.AddressableAssets.Addressables.LoadContentCatalogAsync.html)：两种重载、bool 参数和 Remarks（117–235）。用于自动释放时点及 hash 参与的 catalog 缓存选择，不能脱离手册的操作缓存前提解读为无条件下载。
+- 既有 [S5：Check for content updates at runtime](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html)（110–124）的资产释放与 bundle 缓存清理边界仍有效；新补充不替换这些责任。
+
+新增两页实际元数据均为 **Addressables 1.21.21**；`@1.21` 是版本化文档地址，不是不可变源码提交。未检查包实现。附加 catalog C 的再次加载情景、单一操作所有者及两个待验条件是原创未执行建议，不是已观察网络结果或厂商完整管理器。
+
+本次不增加 Unity、服务请求、构建或客户端测试。没有把释放操作写成刷新 CDN、保证下载、自动替换资产或清空所有缓存，也未给出取消、并发协调或多引用者仲裁实现。既有构建基线、依赖打包与运行验收仍保留原适用范围。

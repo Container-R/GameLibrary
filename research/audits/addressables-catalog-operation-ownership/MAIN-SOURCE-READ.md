@@ -1,0 +1,11 @@
+# Main source read — catalog load-operation ownership
+
+2026-11-01. Reviewed the existing Addressables solution and source note in full. The prior distinction between catalog updates and stale asset release is correct; the proposed addition supplies a separate operation-lifetime prerequisite rather than retracting that distinction.
+
+Directly opened Unity Addressables pages with package metadata 1.21.21:
+
+- [Manage catalogs at runtime](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/LoadContentCatalogAsync.html): Load additional catalogs and Update catalogs, HTML text positions 114–140. Retained prior load operations can be reused from the operation cache, preventing a new remote catalog download. Manual catalog-load operation handles must be released before catalog updates. Catalog registration and operation ownership are distinct.
+- [LoadContentCatalogAsync API](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/UnityEngine.AddressableAssets.Addressables.LoadContentCatalogAsync.html): both declarations, the explicit Boolean parameter and Remarks, 117–235. Explicit true means release on completion. The omitted-Boolean overload is not assigned an inferred default policy in this addition. The hash-based catalog cache remains a separate condition after operation ownership is resolved.
+- [Check for content updates at runtime](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html): 110–124. Existing stale-asset responsibility remains supported; bundle-cache cleanup is another option, not a catalog-operation release substitute.
+
+Versioned documentation URLs are mutable, not fixed implementation revisions. No Unity project, package implementation, network request sequence, cancellation behavior, concurrent catalog broker, download count or actual refreshed locator was tested. The proposed retained-versus-released contrast is unexecuted. Releasing the operation removes this prerequisite blocker, not a guarantee of download, CDN freshness, content compatibility or atomic publication. Automatic and manual ownership must not be combined into duplicate release or later access to an already released handle.

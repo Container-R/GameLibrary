@@ -3173,11 +3173,14 @@
       "id": "TASK-2026-0122",
       "question": "When can a retained Addressables catalog-load operation prevent a later catalog reload from fetching updated data, and who owns its release?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Strengthen an existing correct catalog-update boundary with the missing operation-handle prerequisite, without confusing asset and bundle lifetimes",
       "expected_artifact": "Version-specific source-backed catalog operation ownership addition and bounded unexecuted acceptance scenario",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/engine/addressables-content-update-baseline.md",
+        "research/source-notes/addressables-content-update-baseline.md"
+      ],
       "acceptance": [
         "Read official Addressables 1.21.21 manual and API pages directly",
         "Separate operation cache from catalog hash cache, asset references and bundle disk cache",
@@ -3188,8 +3191,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:02:54.028160Z",
-      "next_action": "Verify official catalog operation ownership and API overload semantics before drafting the finite addition",
+      "last_progress_at": "2026-11-01T07:05:11.865482Z",
+      "next_action": "Review operation cache versus catalog hash cache and single-owner release policy before publication",
       "blockers": []
     }
   ]

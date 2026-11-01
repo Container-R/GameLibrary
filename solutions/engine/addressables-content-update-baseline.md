@@ -6,13 +6,13 @@ status: source-backed
 primary_discipline: ENGINE
 related_disciplines: [QA, PROD, TA, PLATFORM, LIVE]
 related_roles: [build-engineer, tools-programmer, qa-engineer, technical-artist]
-related_topics: [addressables, content-update, build-baseline, release-compatibility, asset-pipeline]
+related_topics: [addressables, content-update, build-baseline, release-compatibility, asset-pipeline, catalog-operation-ownership]
 engines: [Unity]
 versions: ["Addressables 1.21.21 官方文档；未执行 Unity"]
 platforms: [跨平台，具体发布平台须分别验证]
 updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 六篇 Unity 官方版本化文档在所列章节核对；原创基线选择、依赖交接与旧版客户端验收协议，未执行 Unity 构建、内容托管或客户端加载测试
+verification_method: 八篇 Unity 官方版本化文档在所列章节核对；原创基线选择、依赖交接、catalog 操作所有权与旧版客户端验收协议，未执行 Unity 构建、内容托管或客户端加载测试
 sources:
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-overview.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html
@@ -20,6 +20,8 @@ sources:
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html
   - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/ContentPackingAndLoadingSchema.html
+  - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/LoadContentCatalogAsync.html
+  - https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/UnityEngine.AddressableAssets.Addressables.LoadContentCatalogAsync.html
 ---
 
 # Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端
@@ -28,7 +30,7 @@ sources:
 
 给已发布 Player（客户端构建）P 做内容更新，不能只交付“构建成功”和一个 catalog。应回答两个不同问题：**本次实际读取的 previous state 属于 P 的哪个平台发行基线？P 是否能通过这个候选 catalog 加载预期的新旧内容？** 第一问是构建输入身份，第二问是运行兼容性；任一未知都不应改写为通过。
 
-本文是文档支持的工程协议，不是 Unity 实验报告。下述假设场景、验收门禁和记录字段均为原创建议；没有 Unity 构建、客户端运行、服务部署或下载量数据。初始阅读日期为 2026-10-31；2026-11-01 补读依赖示例与 Bundle Mode，并加入 §3.1。版本页面标识 Addressables 1.21.21。
+本文是文档支持的工程协议，不是 Unity 实验报告。下述假设场景、验收门禁和记录字段均为原创建议；没有 Unity 构建、客户端运行、服务部署或下载量数据。初始阅读日期为 2026-10-31；2026-11-01 补读依赖示例与 Bundle Mode，并加入 §3.1；随后补读 catalog 加载操作所有权，加入 §4.1。版本页面标识 Addressables 1.21.21。
 
 ## 1. 一个容易遗漏的具体输入边界
 
@@ -95,6 +97,21 @@ sources:
 运行时检查更新、更新 catalog、处理已加载资源是不同动作。官方运行时页将旧资产释放责任交给调用方，不能据 catalog 更新成功宣称现有对象已经自动换成新资产。[S5](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html)
 
 本协议优先验证受控启动后的加载。若产品要求会话中更新，另立持有旧对象、释放、重载与功能状态交接用例；不能直接继承启动用例结论。`Unique Bundle IDs` 的内存中 bundle ID 冲突用途也不是客户端兼容性证明，并有构建和更新成本。[S2](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html#unique-bundle-ids-setting)
+
+### 4.1 手动加载附加 catalog：先交代加载操作的所有权
+
+前文“释放旧资产”仍然必要，但它不是唯一的释放对象。Addressables 1.21.21 文档另有一个前置条件：指向同一 catalog 的先前 `LoadContentCatalogAsync` 操作若未释放，后续加载可能复用**操作缓存**，不下载新的远端 catalog；手动加载 catalog 后，更新前也须释放该加载操作句柄。释放操作并不等于卸载已加载的 catalog。[Manage catalogs at runtime：Load additional catalogs / Update catalogs](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/LoadContentCatalogAsync.html)
+
+**原创未执行情景：**应用已加载附加 catalog C，并保留加载操作；远端另有新 catalog/hash。再次调用同 catalog 的加载入口，即使成功，也不能单凭这个结果声称取到了新远端版本。这里应先修正操作所有权，而不是先清 bundle 缓存：
+
+- **不需持续持有加载操作：**显式选择 `autoReleaseHandle=true`，由系统在完成时释放。之后不再读取该句柄结果，也不再手动重复释放。
+- **需要手动持有：**显式选择 `autoReleaseHandle=false`，给该操作一个确定的所有者；在完成且不再需要操作后由它释放，并在后续重载／更新前满足上述前置条件。所需结果处理应安排在释放之前，不能把无效句柄留给后续任务查询。
+
+这些是同一拥有引用的两种互斥管理选择，不是完整异步管理器实现。若还有其他持有者，只释放自己的一份引用，不足以宣称所有先前加载操作都已释放。[API 的 bool 参数](https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/UnityEngine.AddressableAssets.Addressables.LoadContentCatalogAsync.html)明确了自动释放时点；不能把无 bool 重载的行为靠猜测填写。
+
+应分开记录四类对象：**加载操作缓存、按 hash 判断更新的 catalog 缓存、已加载资产、客户端 bundle 缓存**。它们也都不同于 §1 制作更新时的 previous-state 缓存。释放加载操作只是移除操作复用这道阻碍；hash 未变化时仍可使用已有 catalog，因此释放不保证发生下载，更不保证 CDN 最新性或现有资产自动替换。
+
+若将这一情景纳入旧版客户端验收，应分别保留“旧加载操作仍持有”与“已按所有权释放”的条件，并核对实际解析内容和预先定义的新旧语义；不能把第二次调用成功当成版本证据。这里没有请求日志、Unity 运行结果或下载量，也未设计取消、并发重载与发布原子性协议。
 
 ## 5. 何时不走这条增量路径
 

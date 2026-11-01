@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T070500Z-addressables-catalog-operation-ownership",
+  "task_ids": [
+    "TASK-2026-0122"
+  ],
+  "started_at": "2026-11-01T07:03:49Z",
+  "ended_at": "2026-11-01T07:05:11.865482Z",
+  "outcome": "source-only catalog operation ownership accepted by independent source and editorial reviews",
+  "sources": [
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/LoadContentCatalogAsync.html",
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/api/UnityEngine.AddressableAssets.Addressables.LoadContentCatalogAsync.html",
+    "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-builds-check.html"
+  ],
+  "evidence": "Main and independent reviewers read package1.21.21 manual and API; distinguish retained operation from hash catalog and bundle caches",
+  "original_contribution": "Catalog-load operation has a separate release owner; a successful repeated load is not itself proof of fresh remote content",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No Unity build, engine run, network trace or refreshed locator observation",
+    "Versioned docs are mutable rather than fixed implementation revisions",
+    "Release removes the operation-cache prerequisite, not a download or CDN-freshness guarantee",
+    "No cancellation, concurrent catalog broker, asset replacement or update atomicity implementation"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 122,
+    "archive_consistency_normal_passed": 519,
+    "archive_consistency_optimized_passed": 519,
+    "archive_consistency_failed": 0,
+    "archive_scope": "Static declared archive consistency only; not engine execution or semantic tests",
+    "declared_paths_checked": 159
+  },
+  "next_action": "Complete bounded cross-topic adversarial review before selecting another mechanism"
+}
