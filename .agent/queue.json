@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T22:50:00Z",
+      "lease_until": "2026-11-01T23:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T22:09:08Z",
-      "next_action": "Continue existing reader-grounded engineering research after explicit duplicate-content checks; preserve source, paper-calculation and native execution boundaries.",
+      "last_progress_at": "2026-11-01T22:39:15Z",
+      "next_action": "Continue substantive source and evidence-gap research with duplicate-content screening; leave weighted Detour native experiment declined and distinguish accepted output-capacity observations from untested budgets.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6302,6 +6302,37 @@
       "next_action": "For a real navigation project, check its graph, custom costs, allowed links, heuristic and supported interface; no native result is established here.",
       "blockers": [],
       "verification_method": "Original source reading and independently checked finite paper derivation; no graph-model execution, engine query or performance measurement."
+    },
+    {
+      "id": "TASK-2026-0169",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Can a successful Detour search return a truncated corridor without PARTIAL_RESULT when maxPath is too small?",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Close an existing source-only query/output distinction with a pre-reviewed finite native fixture, not another general navigation book.",
+      "expected_artifact": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+      "artifact_paths": [
+        "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+        "管理档案/支持资料/Detour路径输出容量观察/README.md",
+        "管理档案/支持资料/Detour路径输出容量观察/observations/main.json",
+        "管理档案/支持资料/Detour路径输出容量观察/observations/independent.json",
+        "管理档案/审查/导航输出容量-原生观察与读者审查.md"
+      ],
+      "acceptance": [
+        "Fixed source and geometric/adjacency oracle frozen before native calls",
+        "First diagnostic-gate stop retained with zero query count",
+        "Exact warning review only, no source or compiler flag change",
+        "Two native invocations each observe the same two output-capacity conditions",
+        "Independent raw-record and complete reader/navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 2,
+      "last_progress_at": "2026-11-01T22:39:15Z",
+      "next_action": "Do not generalize to node exhaustion, weights, dynamic topology, geometry, movement or memory safety. Any extension requires new explicit inputs and independent expectations.",
+      "blockers": [],
+      "verification_method": "Two independently built copies of fixed native Detour fixture, four total findPath calls covering the same two conditions; three builds including initial gate stop. Pure tests and source reviews recorded separately."
     }
   ],
   "execution_policy": {

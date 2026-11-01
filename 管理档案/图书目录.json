@@ -459,7 +459,13 @@
       "scope_disposition_review": "管理档案/审查/导航支持入口-增量审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/ai/navigation-readiness-and-partial-path.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "latest_increment": {
+        "scope": "Fixed Detour output-capacity observation; original Godot/Unity, node exhaustion and weighted-cost scopes not rerun.",
+        "reader_review": "管理档案/审查/导航输出容量-原生观察与读者审查.md",
+        "support_path": "管理档案/支持资料/Detour路径输出容量观察/README.md",
+        "reader_sha256": "f9c4b9a40fdca6ffad12f3202cf554d94be6ade77068ce03b3572f61d9d86c1c"
+      }
     },
     {
       "internal_id": "SOL-ANIM-002",

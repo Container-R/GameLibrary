@@ -1,0 +1,46 @@
+{
+  "run_id": "20261101T223915Z-detour-output-capacity",
+  "observed_at": "2026-11-01T22:39:15Z",
+  "parent_verified_head": "36a16f326556207746ca51a6a16caccd7c3ff39d",
+  "task": "TASK-2026-0169",
+  "outcome": "Accepted native output-capacity evidence, reader increment and safe supporting records in containing commit.",
+  "reader_path": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+  "reader_sha256": "f9c4b9a40fdca6ffad12f3202cf554d94be6ade77068ce03b3572f61d9d86c1c",
+  "reader_review_sha256": "176d81e2df87e1958f7faf2fd2741a26950916b7f4ad54519d31765cc8babb61",
+  "support_archive_manifest_sha256": "7531098a144745c9da95485d7b55f7ce83128f2868bc9cb078ac0dd928c99fbe",
+  "upstream_commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+  "fixture_sha256": "dce68bd7eeb9508f72e1c207c0de67e36cca578934ff49f5d70747326728c085",
+  "observations_sha256": "0edf850d701be23d45c1fdca270b578081b7cc62371a2165d267dca198404674",
+  "actual_counts": {
+    "builds": 3,
+    "native_invocations": 2,
+    "findPath_calls": 4,
+    "distinct_capacity_conditions": 2,
+    "same_environment_independent_copies": 2
+  },
+  "first_attempt": "Build command returned0 but unreviewed warning stopped the gate; no native invocation or query. Original fail retained.",
+  "accepted_warning": "Exact reviewed upstream class-memaccess diagnostic retained in both successful builds; no suppression, source edit or flag change. Not C++ portability or memory-safety certification.",
+  "pure_tests": {
+    "author_methods": 13,
+    "independent_methods": 11,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "repeated_modes_do_not_add_native_calls": true
+  },
+  "pre_execution_corrections": [
+    "Failed initialization exit strategy reviewed without OOM injection",
+    "Actual setup preservation and ordering corrected before compilation",
+    "Consumer-only pass explicitly distinguished from overall receipt acceptance"
+  ],
+  "declined_extension": "Weighted corridor native experiment not started because first-visit target-position semantics complicate internal-cost versus returned-corridor interpretation; published paper graph remains paper only.",
+  "prior_publication_readback": {
+    "commit": "36a16f326556207746ca51a6a16caccd7c3ff39d",
+    "all_blobs_matched": 764,
+    "key_files_matched": 6,
+    "reader_books_tree_matched": 68,
+    "reader_links_tree_matched": 169
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

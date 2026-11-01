@@ -1,0 +1,287 @@
+{
+  "protocol": "detour-capacity-v1",
+  "commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+  "status": "pass",
+  "stage": "complete",
+  "completed": [
+    "builder",
+    "nav_init",
+    "mesh_checked",
+    "query_init",
+    "setup_checked",
+    "prefix_checked",
+    "full_checked",
+    "released"
+  ],
+  "query_calls": 2,
+  "setup": {
+    "builder_calls": 1,
+    "nav_init_calls": 1,
+    "query_init_calls": 1,
+    "data_size": "POSITIVE_INT",
+    "nav_status": 1073741824,
+    "query_status": 1073741824,
+    "node_capacity": 16,
+    "filter": [
+      65535,
+      0,
+      1.0
+    ],
+    "input": {
+      "nvp": 4,
+      "cs": 1.0,
+      "ch": 1.0,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          3.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "walkable": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "build_bv_tree": false,
+      "detail_count": 0,
+      "offmesh_count": 0,
+      "polys": [
+        [
+          0,
+          4,
+          5,
+          1,
+          65535,
+          65535,
+          1,
+          65535
+        ],
+        [
+          1,
+          5,
+          6,
+          2,
+          0,
+          65535,
+          2,
+          65535
+        ],
+        [
+          2,
+          6,
+          7,
+          3,
+          1,
+          65535,
+          65535,
+          65535
+        ]
+      ]
+    },
+    "refs": [
+      "A",
+      "B",
+      "C"
+    ],
+    "refs_valid": true,
+    "vertices": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        1.0
+      ],
+      [
+        2.0,
+        0.0,
+        1.0
+      ],
+      [
+        3.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "polygons": [
+      {
+        "index": 0,
+        "type": 0,
+        "flags": 1,
+        "area": 0,
+        "vertices": [
+          0,
+          4,
+          5,
+          1
+        ],
+        "neis": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "links": [
+          {
+            "target": 1,
+            "ref": "B",
+            "edge": 2,
+            "side": 255
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "type": 0,
+        "flags": 1,
+        "area": 0,
+        "vertices": [
+          1,
+          5,
+          6,
+          2
+        ],
+        "neis": [
+          1,
+          0,
+          3,
+          0
+        ],
+        "links": [
+          {
+            "target": 0,
+            "ref": "A",
+            "edge": 0,
+            "side": 255
+          },
+          {
+            "target": 2,
+            "ref": "C",
+            "edge": 2,
+            "side": 255
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "type": 0,
+        "flags": 1,
+        "area": 0,
+        "vertices": [
+          2,
+          6,
+          7,
+          3
+        ],
+        "neis": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "links": [
+          {
+            "target": 1,
+            "ref": "B",
+            "edge": 0,
+            "side": 255
+          }
+        ]
+      }
+    ],
+    "header": [
+      3,
+      8,
+      3,
+      6,
+      0,
+      0,
+      12
+    ]
+  },
+  "cases": [
+    {
+      "name": "prefix",
+      "max_path": 2,
+      "path_count": 2,
+      "start": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "end": [
+        2.5,
+        0.0,
+        0.5
+      ],
+      "status": 1073741840,
+      "status_hex": "0x40000010",
+      "path": [
+        "A",
+        "B",
+        "0"
+      ],
+      "indices": [
+        0,
+        1,
+        null
+      ]
+    },
+    {
+      "name": "full",
+      "max_path": 3,
+      "path_count": 3,
+      "start": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "end": [
+        2.5,
+        0.0,
+        0.5
+      ],
+      "status": 1073741824,
+      "status_hex": "0x40000000",
+      "path": [
+        "A",
+        "B",
+        "C"
+      ],
+      "indices": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}
