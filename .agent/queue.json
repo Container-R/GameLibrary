@@ -2843,7 +2843,7 @@
       "id": "TASK-2026-0110",
       "question": "How did Riot localize an intermittent Chronobreak divergence, and what comparison and diagnostic-intervention identities must remain traceable?",
       "discipline": "QA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Concrete original developer diagnosis case fills a gap beyond replay correctness models and generic failure-retention checklists",
       "expected_artifact": "Bounded source-backed diagnosis note after independent primary-source review",
@@ -2857,11 +2857,36 @@
         "Keep original proposed handoff separate from reported studio process",
         "No runtime, current-product guarantee, private metadata or legacy edits"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:00:41.240370Z",
-      "next_action": "Review final original predicate example and publish bounded divergence diagnosis note",
+      "next_action": "Retain historical diagnostic case and explicitly invented predicate scope; no runtime or general bisection guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:02:34.014702Z",
+      "commit_sha": "6a2ac2cdceef9e0831b403988f77b05c0edd1f6b"
+    },
+    {
+      "id": "TASK-2026-0111",
+      "question": "How can changed Addressables dependencies affect unedited consumers, and how do restriction-group changes differ from bundle rebuild and download granularity?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen an explicitly unread dependency-example gap in existing SOL-ENGINE-002 rather than expanding topic counts",
+      "expected_artifact": "Bounded official-source deepening of existing Addressables topic after full-file privacy and evidence review",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read official 1.21.21 dependency examples and Unique Bundle IDs scope directly",
+        "Distinguish edited files, dependency consumers, restriction-group changes and output bundles",
+        "Keep original proposed equipment dependency scenario separate from documented examples and actual builds",
+        "No arbitrary closure algorithm, byte/download count, current-version or Unity runtime guarantee",
+        "Full uploaded files must exclude private execution metadata; preserve separate pending runtime hold"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:02:34.014702Z",
+      "next_action": "Review Addressables dependency examples and select safe existing-topic integration",
       "blockers": []
     }
   ]

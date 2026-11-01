@@ -5,8 +5,8 @@
     "TASK-2026-0110"
   ],
   "started_at": "2026-11-01T05:58:47Z",
-  "ended_at": "2026-11-01T06:00:41.240370Z",
-  "outcome": "source case and final logical predicate reviewed; publication pending",
+  "ended_at": "2026-11-01T06:02:34.014702Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.riotgames.com/en/news/determinism-league-legends-fixing-divergences"
   ],
@@ -30,7 +30,12 @@
     "optimized_python_archive_checks": 519,
     "declared_paths_checked": 139,
     "independent_truth_table_rows": 4,
-    "prepublication_correction": "Specify y component for historical threshold-specific probe; distinguish earlier all-components initialization experiment"
+    "prepublication_correction": "Specify y component for historical threshold-specific probe; distinguish earlier all-components initialization experiment",
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "local_links_checked": 816,
+    "receipt_queue_tasks_checked": 111
   },
-  "next_action": "Deepen a specific existing source-mechanism gap after bounded selection"
+  "next_action": "Review Addressables dependency examples and select safe existing-topic integration",
+  "commit_sha": "6a2ac2cdceef9e0831b403988f77b05c0edd1f6b"
 }
