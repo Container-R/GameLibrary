@@ -5,8 +5,8 @@
     "TASK-2026-0073"
   ],
   "started_at": "2026-11-01T00:06:55Z",
-  "ended_at": "2026-11-01T00:26:37.510410Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T00:35:42.312119Z",
+  "outcome": "published and read back",
   "sources": [
     "https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html",
     "https://docs.godotengine.org/en/4.6/classes/class_multiplayerapi.html",
@@ -50,7 +50,19 @@
     "main_static_commands": 8,
     "static_command_engine_invocations": 0,
     "relocated_static_commands": 8,
-    "archive_verifier_unit_methods": 9
+    "archive_verifier_unit_methods": 9,
+    "selected_blob_hashes_verified": 211,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 74,
+    "receipt_declared_paths_checked": 73
   },
-  "next_action": "Integrate independently reviewed VFX role and original unexecuted gameplay-signal handoff"
+  "next_action": "Integrate independently reviewed VFX role and original unexecuted gameplay-signal handoff",
+  "commit_sha": "102f85870303562dab3f7bc71fb884252247ba8c",
+  "publication_recovery": {
+    "interrupted_at": "2026-11-01T00:31:00Z",
+    "operation": "Unreferenced create_tree upload wrapper stopped after progress output became unavailable",
+    "commit_or_ref_attempted_before_recovery": false,
+    "head_rechecked": "798a389fdf606010c5f311f7c168e486cac95671",
+    "resolution": "Regenerated content-addressed unreferenced trees in bounded groups with persisted per-group receipts; full selected and outside-tree checks before publishing"
+  }
 }

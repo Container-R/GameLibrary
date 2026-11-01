@@ -1836,7 +1836,7 @@
       "id": "TASK-2026-0073",
       "question": "Can transport RPC admission be distinguished from gameplay command authorization using a finite local-only engine observation?",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Existing prediction solution has protocol models and unexecuted dependency proposal, not actual RPC admission evidence; investigate applicability before native work",
       "expected_artifact": "Original-source gap assessment, then a bounded RPC authorization observation only if justified and feasible",
@@ -1852,11 +1852,36 @@
         "No port binding or network process before source gate and frozen finite protocol accepted",
         "Use local-only owned endpoints if justified, retain failure evidence and independent review; no external server or credentials"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T01:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T00:26:37.510410Z",
-      "next_action": "Publish narrow actual RPC ingress/context evidence with original parser failure and independent review",
+      "next_action": "Retain narrow RPC ingress/deferred identity evidence; account authentication, prediction and transport resilience remain unverified",
+      "blockers": [],
+      "completed_at": "2026-11-01T00:35:42.312119Z",
+      "commit_sha": "102f85870303562dab3f7bc71fb884252247ba8c"
+    },
+    {
+      "id": "TASK-2026-0074",
+      "question": "How does a real-time VFX artist distinguish authored appearance, gameplay-state correspondence, context review and player understanding?",
+      "discipline": "VFX",
+      "status": "reviewing",
+      "priority": 91,
+      "priority_rationale": "Whole-role matrix lacks VFX authoring and gameplay-signal responsibility despite separate Niagara cost protocol",
+      "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original Japanese BNS project account and English League/VALORANT developer articles",
+        "Separate source-described historical visual revisions from current game or self-executed visual evidence",
+        "Keep authored cue, actual game state, contextual review and measured player understanding distinct",
+        "Label hypothetical ground-warning workflow unexecuted; no numerical wins or universal timings",
+        "Independently review source alignment and validate final navigation without duplicating performance/asset protocols"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T01:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T00:35:42.312119Z",
+      "next_action": "Integrate already independently reviewed local VFX role and source note, then validate final repository paths",
       "blockers": []
     }
   ]
