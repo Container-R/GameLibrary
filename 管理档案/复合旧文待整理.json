@@ -251,59 +251,59 @@
     },
     {
       "old_path": "solutions/ux/modal-focus-recovery.md",
-      "pending_subtopics": [
-        "混合UI系统的输入桥接与设备归属",
-        "引擎焦点回调的中间状态和最终状态",
-        "平台覆盖层、多用户与读屏的范围复核"
-      ],
-      "scope_status": "partially_extracted",
+      "pending_subtopics": [],
+      "scope_status": "accounted_for",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-10-01",
           "topic": "混合UI系统的输入桥接与设备归属",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Reviewed existing coverage plus finite chapter merge and exact retained support; full unimplemented domains remain excluded, no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:31:17.043560Z"
         },
         {
           "id": "REMEDIATION-10-02",
           "topic": "引擎焦点回调的中间状态和最终状态",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Reviewed existing coverage plus finite chapter merge and exact retained support; full unimplemented domains remain excluded, no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:31:17.043574Z"
         },
         {
           "id": "REMEDIATION-10-03",
           "topic": "平台覆盖层、多用户与读屏的范围复核",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Reviewed existing coverage plus finite chapter merge and exact retained support; full unimplemented domains remain excluded, no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:31:17.043577Z"
         }
-      ]
+      ],
+      "disposition_review": "管理档案/审查/焦点与声音范围补充-独立审读.md"
     },
     {
       "old_path": "solutions/accessibility/critical-sound-information-contract.md",
-      "pending_subtopics": [
-        "无线电、未知说话者、门锁和音乐提示等旧矩阵分支的去向核对",
-        "多重感官需求与多人信息披露政策的范围复核"
-      ],
-      "scope_status": "partially_extracted",
+      "pending_subtopics": [],
+      "scope_status": "accounted_for",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-11-01",
           "topic": "无线电、未知说话者、门锁和音乐提示等旧矩阵分支的去向核对",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Reviewed existing coverage plus finite chapter merge and exact retained support; full unimplemented domains remain excluded, no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:31:17.043579Z"
         },
         {
           "id": "REMEDIATION-11-02",
           "topic": "多重感官需求与多人信息披露政策的范围复核",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Reviewed existing coverage plus finite chapter merge and exact retained support; full unimplemented domains remain excluded, no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:31:17.043581Z"
         }
-      ]
+      ],
+      "disposition_review": "管理档案/审查/焦点与声音范围补充-独立审读.md"
     },
     {
       "old_path": "solutions/localization/pseudo-localization-contract.md",

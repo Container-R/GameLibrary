@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T122700Z-reader-warlander-factorio",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T12:20:45Z",
+  "ended_at": "2026-11-01T12:32:54.086296Z",
+  "outcome": "Warlander and Factorio bodies and routes accepted; focus and sound finite gaps closed; publication pending",
+  "baseline_head": "cdc513e299da8a6bb83148e6630f147d25ff4678",
+  "books": [
+    "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u6218\u6597\u8bbe\u8ba1/\u64cd\u4f5c\u54cd\u5e94/Warlander\u5982\u4f55\u533a\u5206\u62db\u5f0f\u53d6\u6d88\u4e0e\u8f93\u5165\u7f13\u5b58.md",
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u8fd0\u884c\u65f6\u7cfb\u7edf/\u7f13\u5b58\u4e0e\u5b58\u6863/Factorio\u7f13\u5b58\u5931\u6548\u4e0e\u8bfb\u6863\u540e\u7684\u91cd\u7b97.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u6e38\u620f\u8bbe\u8ba1/\u6218\u6597\u8bbe\u8ba1/\u64cd\u4f5c\u54cd\u5e94/Warlander\u5982\u4f55\u533a\u5206\u62db\u5f0f\u53d6\u6d88\u4e0e\u8f93\u5165\u7f13\u5b58.md": "eeaec81859fca984e43ad7ccc14e9b4c6bebdf9242c1f870e8b9ea99c9276465",
+    "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u8fd0\u884c\u65f6\u7cfb\u7edf/\u7f13\u5b58\u4e0e\u5b58\u6863/Factorio\u7f13\u5b58\u5931\u6548\u4e0e\u8bfb\u6863\u540e\u7684\u91cd\u7b97.md": "560e2c5dc09e9ec55b616259f37ce378658cc160d50a7a548696177d09846a05"
+  },
+  "rewritten_reader_books": 27,
+  "remaining_legacy_entries": 28,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No interface or participant study executed",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Publish exact reviewed tree; integrate reviewed Horizon and L4D cases while matrix and prediction rewrites continue; no new topics",
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Warlander\u8f93\u5165-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Factorio\u7f13\u5b58-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u7126\u70b9\u4e0e\u58f0\u97f3\u8303\u56f4\u8865\u5145-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Warlander\u4e0eFactorio-\u5bfc\u822a\u5ba1\u8bfb.md"
+  ],
+  "scope_dispositions": {
+    "accounted_for_originals": 16,
+    "newly_accounted_for": [
+      "warlander-input",
+      "factorio-cache",
+      "focus-recovery",
+      "critical-sound"
+    ],
+    "pending_claim_section_checks": 31,
+    "resolved_existing_checks_this_batch": 5,
+    "new_book_requirement": false
+  },
+  "validation": {
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "queue_artifact_paths_checked": 240,
+    "inventory_shelf_entries_checked": 55,
+    "runtime_experiments": 0
+  }
+}

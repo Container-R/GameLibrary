@@ -351,13 +351,15 @@
       "canonical_reader_path": "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
       "current_read_path": "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
       "reader_body_status": "published",
-      "original_scope_status": "partially_extracted",
-      "pending_chapter_tasks": [
-        "REMEDIATION-11-01",
-        "REMEDIATION-11-02"
-      ],
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
-      "extraction_scope": "关键声音的信息、表达与时机主线重写；旧矩阵分支及多重需求范围仍待核对"
+      "scope_disposition_review": [
+        "管理档案/审查/焦点与声音-原范围去向核对.md",
+        "管理档案/审查/焦点与声音范围补充-独立审读.md"
+      ],
+      "scope_disposition": "多通道与可知范围已覆盖；补回多人披露审查，非战斗声音语义保留现有静态矩阵可选入口，不新增玩家或运行结果",
+      "supporting_material": "research/case-notes/critical-sound-encounter.md"
     },
     {
       "internal_id": "SOL-AI-001",
@@ -749,13 +751,15 @@
       "canonical_reader_path": "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
       "current_read_path": "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
       "reader_body_status": "published",
-      "original_scope_status": "partially_extracted",
-      "pending_chapter_tasks": [
-        "REMEDIATION-10-01",
-        "REMEDIATION-10-02",
-        "REMEDIATION-10-03"
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition_review": [
+        "管理档案/审查/焦点与声音-原范围去向核对.md",
+        "管理档案/审查/焦点与声音范围补充-独立审读.md"
       ],
-      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
+      "scope_disposition": "现章补回重复关闭、退出过渡、后置请求版本、设备归属和混合输入桥接；Godot回调中间态保留精确旧支持；完整平台/多用户/读屏仍不冒称实现",
+      "supporting_material": "solutions/ux/modal-focus-recovery.md#回调中的现在不一定是-setter-返回后的状态"
     },
     {
       "internal_id": "SOL-VFX-001",
@@ -840,12 +844,15 @@
       "area": "战斗设计",
       "shelf": "操作响应",
       "proposed_path": "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "case-studies/design/warlander-cancel-input-reservation.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
+      "current_read_path": "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "原分类取消与行动预约、同钟三试次、期限端点与条件全部自然承接；未披露实现和旁题外链明确排除，不新增教程",
+      "scope_disposition_review": "管理档案/审查/Warlander输入-独立审读.md"
     },
     {
       "internal_id": "CASE-ENGINE-001",
@@ -855,12 +862,15 @@
       "area": "运行时系统",
       "shelf": "缓存与存档",
       "proposed_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "case-studies/engine/factorio-derived-cache-load-equivalence.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "历史修法、缓存时间语义、四种策略代价、合法保存点与首次分歧检查完整进入数值例主线；原无运行模型，不继承别文实验",
+      "scope_disposition_review": "管理档案/审查/Factorio缓存-独立审读.md"
     },
     {
       "internal_id": "CASE-ENGINE-002",
@@ -953,11 +963,11 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 25,
-  "legacy_entries_remaining": 30,
+  "rewritten_reader_books": 27,
+  "legacy_entries_remaining": 28,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
-  "fully_remediated_original_items": 12,
+  "fully_remediated_original_items": 16,
   "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority."
 }
