@@ -2789,11 +2789,13 @@
       "id": "TASK-2026-0108",
       "question": "What does Noita developer testimony establish about dirty work selection versus bounded cross-chunk update ownership?",
       "discipline": "ENGINE",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 91,
       "priority_rationale": "Study a distinct commercial simulation scheduling constraint from named primary developer testimony without reconstructing unprovided concurrency code",
       "expected_artifact": "A bounded historical mechanism source note with explicit testimony and implementation limits",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/noita-dirty-region-update-ownership.md"
+      ],
       "acceptance": [
         "Verify original named developer interview attribution and selected optimization statements",
         "Separate publisher-hosted firsthand testimony from studio source code or independent performance proof",
@@ -2804,8 +2806,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:45:11.438430Z",
-      "next_action": "Read and review original Noita optimization testimony and bounded update-ownership implications",
+      "last_progress_at": "2026-11-01T05:49:24.197055Z",
+      "next_action": "Publish reviewed historical dirty-work and update-ownership mechanism note",
       "blockers": []
     }
   ]

@@ -181,3 +181,5 @@ python3 scripts/evidence/test_verify.py
 [四篇已发布来源笔记的有界反向核查](audits/source-batch-adversarial-review/REVIEW.md)记录精确快照、逐项挑战、无实质修正的有限结果及审查者既往角色重叠；不是全库或运行验收。
 
 [生产节奏与权威消费映射](source-notes/rocket-league-input-buffer-cadence.md)对照历史上游/下游调节位置，不从消费数量补造世界步数、控制阈值或命令合并实现。
+
+[少更新与安全调度是两个决定](source-notes/noita-dirty-region-update-ownership.md)结合历史范围约束与原创访问集合例子，审查规则变更的所有权依据；没有并行运行或确定性结果。

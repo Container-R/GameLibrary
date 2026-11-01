@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T054900Z-noita-update-ownership",
+  "task_ids": [
+    "TASK-2026-0108"
+  ],
+  "started_at": "2026-11-01T05:45:11Z",
+  "ended_at": "2026-11-01T05:49:24.197055Z",
+  "outcome": "original testimony, access-set proof and editorial review accepted; publication pending",
+  "sources": [
+    "https://80.lv/articles/noita-a-game-based-on-falling-sand-simulation"
+  ],
+  "evidence": "Named Petri Purho interview dated 2019-04-05, original Optimization paragraphs directly read by main and independent reviewers; publisher-hosted testimony not studio source",
+  "original_contribution": "Hypothetical rule-range handoff plus exact two-storage-slot read/write-set counterexample separating disjoint writes from all access conflicts",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No Noita source implementation, game, simulator, parallel test, timing or deterministic replay",
+    "No diagram, image, animation or talk video inspection",
+    "Historical developer explanation not independently established race freedom or current version contract",
+    "No complete group coordinates, barriers, diagonal access, shared-state or serial-equivalence proof",
+    "Original set example does not prescribe execution overlap, language memory model or actual race",
+    "All indexed articles and prior experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 108,
+    "accepted_note_sha256": "99961820461d913b171a4a7c8b8a4ff0101607b36008dc478e4287d04cb3c458",
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "declared_paths_checked": 137,
+    "local_links_checked": 809
+  },
+  "next_action": "Review original herringbone tiling source lead and bounded compatibility question"
+}
