@@ -158,3 +158,17 @@
 - 试玩完成记录可以支持哪种里程碑判断？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：主持人干预下的观察有自己的推断边界，制作管理不能替代玩家研究方法。
 
+## 从游戏动画师出发：表演意图与角色组合接收
+路线 ID：`role-game-animator`
+
+岗位起点：[游戏动画师：从动作表演到运行时角色组合的验收交接](roles/animation/game-animator.md) — `ROLE-ANIM-001` · `source-backed` · `ANIM`
+
+- 动作和角色资产的源修订与导入条件能否重建？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：先保留内容身份与技术接收条件，不以播放成功替代表演验收。
+- 最终角色运动与片段表演由谁消费和观察？ → [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `SOL-ANIM-001` · `source-backed` · `ANIM`
+  - 关联理由：根运动职责与有限引擎观察有明确边界，不能转作服装或真实足底接触验证。
+- 表现被认可，是否等于玩法规则也成立？ → [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `ROLE-PROG-001` · `source-backed` · `PROG`
+  - 关联理由：动作意图、规则执行与运行状态需要不同责任人提供证据。
+- 哪些角色组合检查过，哪些仍未知？ → [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `ROLE-QA-001` · `source-backed` · `QA`
+  - 关联理由：将复现和覆盖事实交给专业审核，避免局部修复隐式批准全部角色。
+

@@ -319,6 +319,34 @@
           "rationale": "主持人干预下的观察有自己的推断边界，制作管理不能替代玩家研究方法。"
         }
       ]
+    },
+    {
+      "id": "role-game-animator",
+      "title": "从游戏动画师出发：表演意图与角色组合接收",
+      "kind": "role",
+      "subject_profile_id": "ROLE-ANIM-001",
+      "entries": [
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "动作和角色资产的源修订与导入条件能否重建？",
+          "rationale": "先保留内容身份与技术接收条件，不以播放成功替代表演验收。"
+        },
+        {
+          "document_id": "SOL-ANIM-001",
+          "question": "最终角色运动与片段表演由谁消费和观察？",
+          "rationale": "根运动职责与有限引擎观察有明确边界，不能转作服装或真实足底接触验证。"
+        },
+        {
+          "document_id": "ROLE-PROG-001",
+          "question": "表现被认可，是否等于玩法规则也成立？",
+          "rationale": "动作意图、规则执行与运行状态需要不同责任人提供证据。"
+        },
+        {
+          "document_id": "ROLE-QA-001",
+          "question": "哪些角色组合检查过，哪些仍未知？",
+          "rationale": "将复现和覆盖事实交给专业审核，避免局部修复隐式批准全部角色。"
+        }
+      ]
     }
   ]
 }

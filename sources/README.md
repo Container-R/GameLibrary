@@ -113,3 +113,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Ogg Opus 计数来源](../research/source-notes/ogg-opus-frame-boundary.md)区分容器位置、pre-skip、尾裁与呈现 PCM；固定完整解码不证明随机访问循环。
 
 [制作管理岗位来源](../research/source-notes/production-manager-role.md)以英日第一方样本区分组织职称、历史经历及原创未执行依赖交接；不推断统一放行权或管理效果。
+
+[游戏动画师岗位来源](../research/source-notes/game-animator-role.md)区分历史项目经历、雇主职责与原创未执行的角色组合交接。

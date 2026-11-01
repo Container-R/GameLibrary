@@ -117,3 +117,5 @@ python3 scripts/evidence/test_verify.py
 [Ogg Opus 三种帧数](experiments/ogg-opus-frame-boundary/README.md)保留一个原创输入的作者/独立编码解码：呈现 93,659、granule 93,971、包时长 94,080，非听感或中间件验证。
 
 [制作管理依赖交接](../roles/production/production-manager.md)区分局部完成、接收方可用与里程碑接受，提供明确标注未执行的 A7→C17 工作表；岗位矩阵仍未完整。
+
+[游戏动画师](../roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。

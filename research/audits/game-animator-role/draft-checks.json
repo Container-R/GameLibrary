@@ -1,0 +1,21 @@
+{
+  "hashes": {
+    "article.md": "d4f2cdadd14ae54a8db0f2930621b03b921adc76876d8f7f7df31b4814b6b0f5",
+    "source-note.md": "8f987f6c371983de4131610292027c584e512a3175c6e36ffb1c08594aa839a4",
+    "gate.md": "c6bc03c00720f043ae1f53655b6a24ee9d4aa4cc5ea5d32d595ff2a8aec4d190"
+  },
+  "links": {
+    "article.md": {
+      "../technical-art/technical-artist.md": true,
+      "../programming/gameplay-programmer.md": true,
+      "../../solutions/animation/turn-in-place-foot-sliding.md": true,
+      "../qa/game-quality-assurance.md": true,
+      "../../research/source-notes/game-animator-role.md": true
+    },
+    "source-note.md": {
+      "../../roles/animation/game-animator.md": true
+    }
+  },
+  "local_id_collision": false,
+  "new_article_source_links_pending": true
+}
