@@ -4763,6 +4763,138 @@
         "server.stderr"
       ],
       "target": "research/experiments/godot-rpc-authority-boundary/historical-callable-return-failure/evidence/cee0c49d-8f19-4f76-aeee-76d302a255ca/server.stderr"
+    },
+    {
+      "kind": "manifest",
+      "id": "lcms-transfer/author/source_before",
+      "document": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/receipt.json",
+      "field": [
+        "source_before"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/lcms-transfer-boundary/PROTOCOL.md",
+        "check.py": "research/experiments/lcms-transfer-boundary/check.py",
+        "child.py": "research/experiments/lcms-transfer-boundary/child.py",
+        "isolation.py": "research/experiments/lcms-transfer-boundary/isolation.py",
+        "protocol-reference.json": "research/experiments/lcms-transfer-boundary/protocol-reference.json",
+        "protocol-reference.py": "research/experiments/lcms-transfer-boundary/protocol-reference.py",
+        "run.py": "research/experiments/lcms-transfer-boundary/run.py",
+        "test_pure.py": "research/experiments/lcms-transfer-boundary/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "lcms-transfer/author/source_after",
+      "document": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/lcms-transfer-boundary/PROTOCOL.md",
+        "check.py": "research/experiments/lcms-transfer-boundary/check.py",
+        "child.py": "research/experiments/lcms-transfer-boundary/child.py",
+        "isolation.py": "research/experiments/lcms-transfer-boundary/isolation.py",
+        "protocol-reference.json": "research/experiments/lcms-transfer-boundary/protocol-reference.json",
+        "protocol-reference.py": "research/experiments/lcms-transfer-boundary/protocol-reference.py",
+        "run.py": "research/experiments/lcms-transfer-boundary/run.py",
+        "test_pure.py": "research/experiments/lcms-transfer-boundary/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/author/stdout.txt",
+      "document": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/receipt.json",
+      "field": [
+        "outputs",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/author/stderr.txt",
+      "document": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/receipt.json",
+      "field": [
+        "outputs",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/stderr.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/author/result.json",
+      "document": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/receipt.json",
+      "field": [
+        "outputs",
+        "result.json"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7/result.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "lcms-transfer/independent/source_before",
+      "document": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/receipt.json",
+      "field": [
+        "source_before"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/lcms-transfer-boundary/review/native-repeat/PROTOCOL.md",
+        "check.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/check.py",
+        "child.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/child.py",
+        "isolation.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/isolation.py",
+        "protocol-reference.json": "research/experiments/lcms-transfer-boundary/review/native-repeat/protocol-reference.json",
+        "protocol-reference.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/protocol-reference.py",
+        "run.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/run.py",
+        "test_pure.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/test_pure.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "lcms-transfer/independent/source_after",
+      "document": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/lcms-transfer-boundary/review/native-repeat/PROTOCOL.md",
+        "check.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/check.py",
+        "child.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/child.py",
+        "isolation.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/isolation.py",
+        "protocol-reference.json": "research/experiments/lcms-transfer-boundary/review/native-repeat/protocol-reference.json",
+        "protocol-reference.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/protocol-reference.py",
+        "run.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/run.py",
+        "test_pure.py": "research/experiments/lcms-transfer-boundary/review/native-repeat/test_pure.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/independent/stdout.txt",
+      "document": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/receipt.json",
+      "field": [
+        "outputs",
+        "stdout.txt"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/stdout.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/independent/stderr.txt",
+      "document": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/receipt.json",
+      "field": [
+        "outputs",
+        "stderr.txt"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/stderr.txt"
+    },
+    {
+      "kind": "hash",
+      "id": "lcms-transfer/independent/result.json",
+      "document": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/receipt.json",
+      "field": [
+        "outputs",
+        "result.json"
+      ],
+      "target": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/result.json"
     }
   ]
 }

@@ -1893,11 +1893,15 @@
       "id": "TASK-2026-0075",
       "question": "Which exact color-space assumptions remain untested after existing alpha-association evidence, and is a bounded linear-light compositing counterexample useful?",
       "discipline": "ART2D",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Strengthen a declared existing color-management gap instead of inferring encoded-channel arithmetic is linear-light behavior",
       "expected_artifact": "Exact-evidence source gate; only proceed to a finite original experiment if justified and independently reviewed",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/art2d/alpha-association-contract.md",
+        "research/source-notes/lcms-transfer-boundary.md",
+        "research/experiments/lcms-transfer-boundary/README.md"
+      ],
       "acceptance": [
         "Read and hash the exact prior article and tested fixture",
         "Read authoritative transfer-function/compositing sources with version and applicability limits",
@@ -1908,8 +1912,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T01:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T00:38:21.006705Z",
-      "next_action": "Review delegated source-only gate and exact existing alpha evidence; reject duplication or unsupported color-management scope",
+      "last_progress_at": "2026-11-01T01:00:20.212095Z",
+      "next_action": "Publish reviewed finite color-transfer evidence and preserve normalized-only acceptance boundary",
       "blockers": []
     }
   ]

@@ -1,0 +1,11 @@
+# Pre-native finite code review
+
+2026-11-01. Exact accepted protocol31792686 is copied unchanged. Source manifest binds eight original/protocol/helper/reference files. **No target CMM library loading, profile construction, transform or version function has executed.** Only stdlib synthetic checks have run.
+
+Five test methods normal/-O pass. Each suite contains two guarded Python startup subprocesses (-O and deliberately failing local import) seeded with synthetic PASS; they reject before evidence-directory/native-child creation. Current pair of suites therefore includes four synthetic startup children and zero CMM target children. Earlier four-method development outputs remain separate. No images, Pillow import, installed-library operation or media produced.
+
+`child.py` imports ctypes only inside main and binds fixed non-vararg APIs. The successful sequence has20 C calls, including three actual conversion calls if later executed. NaN output sentinels are checked finite/range before arithmetic acceptance. The callback catches Python exceptions into a failure flag. Opaque handles are held until explicit cleanup; one gamma allocation is freed once, both transforms before profiles. Final status cannot become PASS until callback/cleanup/after-hash checks finish. The raw call ENTRY/RETURN sequence remains distinct from final data and is checked independently of the final PASS string.
+
+`run.py` is the sole target-child launcher. Do not invoke it normally during this review; main must separately authorize the first native attempt. `test_pure.py` imports no ctypes or target child. Its synthetic data and reconstructed reference outputs are not execution evidence. The portable checker does not read currently installed runtime/library bytes and cannot authenticate execution; it binds the supplied source, receipt, raw streams and finite semantics.
+
+Please inspect fixed signatures and null handling, callback lifetime, cleanup on partial allocations, true input-array readback, decoded→host→reverse-input association, exact count/format/identity binding, and startup guards. No broad fixture framework or arbitrary ICC inputs are included. Any material correction must preserve this initial source snapshot first.

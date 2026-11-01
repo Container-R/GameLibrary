@@ -1,0 +1,201 @@
+{
+  "scope": "8 relocated archive reads; zero target native calls",
+  "checks": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/check.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "c_api_calls": 20,
+        "conditions": 2,
+        "conversion_calls": 3,
+        "scope": "finite normalized values; no exact byte/visual/GPU claim",
+        "status": "PASS"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/check.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "c_api_calls": 20,
+        "conditions": 2,
+        "conversion_calls": 3,
+        "scope": "finite normalized values; no exact byte/visual/GPU claim",
+        "status": "PASS"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/check_native.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "uuid": "35db4b98-af25-4248-a14f-cf56e196cde7",
+        "status": "ACCEPTED_FINITE_OBSERVATION",
+        "c_api_calls": 20,
+        "conversions": 3,
+        "conditions": 2,
+        "decoded": [
+          0.2158605307340622,
+          0.05126946419477463,
+          0.5271151661872864
+        ],
+        "main": [
+          0.36293014883995056,
+          0.17460043728351593,
+          0.5512598752975464
+        ],
+        "opaque": [
+          0.501960813999176,
+          0.250980406999588,
+          0.7529411911964417
+        ],
+        "scope": "independent raw lifecycle/numerical/source consistency; complementary author full ABI/environment/schema checks, not authenticated execution"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/check_native.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/evidence/35db4b98-af25-4248-a14f-cf56e196cde7"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "uuid": "35db4b98-af25-4248-a14f-cf56e196cde7",
+        "status": "ACCEPTED_FINITE_OBSERVATION",
+        "c_api_calls": 20,
+        "conversions": 3,
+        "conditions": 2,
+        "decoded": [
+          0.2158605307340622,
+          0.05126946419477463,
+          0.5271151661872864
+        ],
+        "main": [
+          0.36293014883995056,
+          0.17460043728351593,
+          0.5512598752975464
+        ],
+        "opaque": [
+          0.501960813999176,
+          0.250980406999588,
+          0.7529411911964417
+        ],
+        "scope": "independent raw lifecycle/numerical/source consistency; complementary author full ABI/environment/schema checks, not authenticated execution"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/check.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "c_api_calls": 20,
+        "conditions": 2,
+        "conversion_calls": 3,
+        "scope": "finite normalized values; no exact byte/visual/GPU claim",
+        "status": "PASS"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/check.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "c_api_calls": 20,
+        "conditions": 2,
+        "conversion_calls": 3,
+        "scope": "finite normalized values; no exact byte/visual/GPU claim",
+        "status": "PASS"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/check_native.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "uuid": "bb5b395c-6e2c-4f22-89e7-284c5a06f658",
+        "status": "ACCEPTED_FINITE_OBSERVATION",
+        "c_api_calls": 20,
+        "conversions": 3,
+        "conditions": 2,
+        "decoded": [
+          0.2158605307340622,
+          0.05126946419477463,
+          0.5271151661872864
+        ],
+        "main": [
+          0.36293014883995056,
+          0.17460043728351593,
+          0.5512598752975464
+        ],
+        "opaque": [
+          0.501960813999176,
+          0.250980406999588,
+          0.7529411911964417
+        ],
+        "scope": "independent raw lifecycle/numerical/source consistency; complementary author full ABI/environment/schema checks, not authenticated execution"
+      }
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-O",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/check_native.py",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat",
+        "gamelibrary-publish-lcms/research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "uuid": "bb5b395c-6e2c-4f22-89e7-284c5a06f658",
+        "status": "ACCEPTED_FINITE_OBSERVATION",
+        "c_api_calls": 20,
+        "conversions": 3,
+        "conditions": 2,
+        "decoded": [
+          0.2158605307340622,
+          0.05126946419477463,
+          0.5271151661872864
+        ],
+        "main": [
+          0.36293014883995056,
+          0.17460043728351593,
+          0.5512598752975464
+        ],
+        "opaque": [
+          0.501960813999176,
+          0.250980406999588,
+          0.7529411911964417
+        ],
+        "scope": "independent raw lifecycle/numerical/source consistency; complementary author full ABI/environment/schema checks, not authenticated execution"
+      }
+    }
+  ]
+}

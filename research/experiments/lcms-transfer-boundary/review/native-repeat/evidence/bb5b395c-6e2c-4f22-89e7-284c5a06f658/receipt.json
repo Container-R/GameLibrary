@@ -1,0 +1,60 @@
+{
+  "base_environment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "PATH": "/usr/bin:/bin"
+  },
+  "library_after": "4cf9f69016c7804bcb4fa56f5bbc55640cb1b7196ac7b93ba29ed9df9bd9ff4d",
+  "library_before": "4cf9f69016c7804bcb4fa56f5bbc55640cb1b7196ac7b93ba29ed9df9bd9ff4d",
+  "original_invocation": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658",
+  "original_source": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat",
+  "outputs": {
+    "result.json": "43af5483e6e989b1e2af560f4ffe3f19830281bda4c6b9a421f0c3c4082fc41c",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.txt": "d86022099b0fae9cbf8a04305f2369efefcbf7db694533136053a388c5c1981c"
+  },
+  "process": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+      "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/child.py"
+    ],
+    "attempted_utc": "2026-11-01T00:54:52.966121+00:00",
+    "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat",
+    "exit_code": 0,
+    "pid": 7,
+    "returned_utc": "2026-11-01T00:54:52.999784+00:00",
+    "status": "RETURNED"
+  },
+  "python_after": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "python_before": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7",
+  "python_path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+  "selected_environment": {
+    "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/environment/HOME",
+    "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/environment/TMPDIR",
+    "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/environment/XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/environment/XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/deep-qa/color-space/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/environment/XDG_DATA_HOME"
+  },
+  "source_after": {
+    "PROTOCOL.md": "31792686b01bbe1a71d03fc66e7852e1771eb02dabf7431db43aa8f1d5fd69e6",
+    "check.py": "01e4d03ddafd35d3cfe701a2be43a609b4ea8c6168cc20977907d226287b1549",
+    "child.py": "b736a2447006453f3aa6f191eec5cb7e6b182b726187b6787951b6c76e78b22a",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "protocol-reference.json": "ef18c62716121f7c1d52d39c226b5fe89d555942e73556807de96dc30f479412",
+    "protocol-reference.py": "2771d3a5f3de5944383402f380dcc20693b9d9232f9e0099daf789f053a64c75",
+    "run.py": "da79fb462d260692e6342b165193e45b6e85b234f5662c4ae5676318dd20c94c",
+    "test_pure.py": "9657fba66a284c5492dd0dca8843cc32ac344ea56c727e8312f8931fe7336f0d"
+  },
+  "source_before": {
+    "PROTOCOL.md": "31792686b01bbe1a71d03fc66e7852e1771eb02dabf7431db43aa8f1d5fd69e6",
+    "check.py": "01e4d03ddafd35d3cfe701a2be43a609b4ea8c6168cc20977907d226287b1549",
+    "child.py": "b736a2447006453f3aa6f191eec5cb7e6b182b726187b6787951b6c76e78b22a",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "protocol-reference.json": "ef18c62716121f7c1d52d39c226b5fe89d555942e73556807de96dc30f479412",
+    "protocol-reference.py": "2771d3a5f3de5944383402f380dcc20693b9d9232f9e0099daf789f053a64c75",
+    "run.py": "da79fb462d260692e6342b165193e45b6e85b234f5662c4ae5676318dd20c94c",
+    "test_pure.py": "9657fba66a284c5492dd0dca8843cc32ac344ea56c727e8312f8931fe7336f0d"
+  },
+  "status": "PASS",
+  "uuid": "bb5b395c-6e2c-4f22-89e7-284c5a06f658"
+}

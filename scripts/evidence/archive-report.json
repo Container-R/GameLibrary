@@ -1828,8 +1828,48 @@
     {
       "id": "rpc-authority/historical-failed/server.stderr",
       "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/author/source_before",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/author/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/author/stdout.txt",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/author/stderr.txt",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/author/result.json",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/independent/source_before",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/independent/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/independent/stdout.txt",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/independent/stderr.txt",
+      "status": "pass"
+    },
+    {
+      "id": "lcms-transfer/independent/result.json",
+      "status": "pass"
     }
   ],
-  "passed": 457,
+  "passed": 467,
   "failed": 0
 }
