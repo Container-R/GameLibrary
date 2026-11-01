@@ -5,8 +5,8 @@
     "TASK-2026-0132"
   ],
   "started_at": "2026-11-01T08:06:03Z",
-  "ended_at": "2026-11-01T08:10:34.242633Z",
-  "outcome": "source-only quaternion counterexample accepted; publication pending",
+  "ended_at": "2026-11-01T08:12:18.941858Z",
+  "outcome": "published and read back",
   "evidence": "Fixed Khronos glTF TRS and interpolation clauses read directly; independent exact-real algebra and final-note review",
   "original_contribution": "120-degree endpoint sign-flip counterexample, midpoint rotation distinction, whole-segment nonzero proof and bounded tool handoff",
   "runtime_experiments": 0,
@@ -23,7 +23,13 @@
     "archive_consistency_normal_passed": 519,
     "archive_consistency_optimized_passed": 519,
     "archive_consistency_failed": 0,
-    "scope": "Static archive consistency only, not new execution or semantic validation"
+    "scope": "Static archive consistency only, not new execution or semantic validation",
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "local_links_checked": 843,
+    "receipt_queue_tasks_checked": 133,
+    "declared_paths_checked": 176
   },
-  "next_action": "Continue bounded source-depth research after publication verification"
+  "next_action": "Read accessible original DOOM combat/animation material; reject duplicate or source-insufficient expansion",
+  "commit_sha": "22522c44c86f92291859f9000ab1b2103d2dfd0f"
 }
