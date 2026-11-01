@@ -144,7 +144,7 @@
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "scope_disposition": "原文不变的语境复查、Confirm共享、各语言决定和候选检查已承接；Godot默认消息身份保留版本短节，完整源码链明确留现有支持记录",
       "scope_disposition_review": "管理档案/审查/语境本地化-独立审读.md",
-      "supporting_material": "research/source-notes/localization-coordinator-role.md"
+      "supporting_material": "管理档案/来源笔记/localization-coordinator-role.md"
     },
     {
       "internal_id": "ROLE-MUSIC-001",
@@ -376,7 +376,7 @@
         "管理档案/审查/焦点与声音范围补充-独立审读.md"
       ],
       "scope_disposition": "多通道与可知范围已覆盖；补回多人披露审查，非战斗声音语义保留现有静态矩阵可选入口，不新增玩家或运行结果",
-      "supporting_material": "research/case-notes/critical-sound-encounter.md"
+      "supporting_material": "管理档案/来源笔记/critical-sound-encounter.md"
     },
     {
       "internal_id": "SOL-AI-001",
@@ -566,7 +566,7 @@
       "pending_chapter_tasks": [],
       "scope_disposition": "离线导入正文保留；对象共享、同路径请求与复制图由可选支持笔记承接，具体历史实验与验证器在旧§5–7保留，未重新认证历史执行。",
       "scope_disposition_review": "管理档案/审查/资源共享支持笔记-独立审读.md",
-      "supporting_reader_note": "research/source-notes/runtime-resource-sharing-boundaries.md"
+      "supporting_reader_note": "管理档案/来源笔记/runtime-resource-sharing-boundaries.md"
     },
     {
       "internal_id": "SOL-LOC-001",
@@ -1012,7 +1012,10 @@
       "former_reader_title": "最后生还者第二部如何组合不同光照探针",
       "former_proposed_path": "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何组合不同光照探针.md",
       "scope_disposition": "准确说明顶点亮度与探针色度/主导方向分工，两个独立比较保留，无运行或普适质量保证。",
-      "scope_disposition_review": "管理档案/审查/TLOU2光照-独立审读.md"
+      "scope_disposition_review": "管理档案/审查/TLOU2光照-独立审读.md",
+      "old_path_availability": "git_history_only",
+      "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/02eb6dbf6897b8582b31c2169c04060d5d6dccf4/case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
+      "old_path_history_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4"
     }
   ],
   "rewritten_reader_books": 55,

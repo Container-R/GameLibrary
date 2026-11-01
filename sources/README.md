@@ -147,15 +147,15 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [标量惯性化来源](../research/source-notes/scalar-inertialization-continuity.md)区分弹簧残差、有限时间多项式及数值近似。
 
-[glTF稀疏accessor来源](../research/source-notes/gltf-sparse-accessor.md)定位基底、替换和元数据子集边界。
+[glTF稀疏accessor来源](../管理档案/来源笔记/gltf-sparse-accessor.md)定位基底、替换和元数据子集边界。
 
 [叙事设计与写作职责来源](../research/source-notes/narrative-designer-writer-role.md)区分日英实践者角色与任务图历史样本。
 
-[GGPO重放与表现边界](../research/source-notes/rollback-presentation-boundary.md)固定源码中的宿主责任，不将追赶结束解释为外部提交确认。
+[GGPO重放与表现边界](../管理档案/来源笔记/rollback-presentation-boundary.md)固定源码中的宿主责任，不将追赶结束解释为外部提交确认。
 
 [Resource 复制图](../research/source-notes/resource-duplication-policy.md)将浅/内部/全部深复制与容器、子资源和副本内部别名分开，保留固定源码与实际安装程序的身份界限。
 
-[本地化协调职责来源](../research/source-notes/localization-coordinator-role.md)核对两份历史实践者说明，区分语义沟通与原创未执行的变更接收表。
+[本地化协调职责来源](../管理档案/来源笔记/localization-coordinator-role.md)核对两份历史实践者说明，区分语义沟通与原创未执行的变更接收表。
 
 [离线 stem 混音来源](../research/source-notes/silent-stem-normalization.md)定位固定 FFmpeg 的输入归一化与 EOF/FIFO 机制；程序自报与源码身份分列。
 
@@ -181,7 +181,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [输入禁用的同步取消边界](../research/source-notes/input-disable-teardown-callback.md)核对 Unity Input System 1.11.2 固定源码与应用清理所有权。
 
-[切线 handedness 与方向变换](../research/source-notes/tangent-handedness-normal-transform.md)核对固定 glTF 规范与示例实现，区分局部属性、顶点基和最终画面。
+[切线 handedness 与方向变换](../管理档案/来源笔记/tangent-handedness-normal-transform.md)核对固定 glTF 规范与示例实现，区分局部属性、顶点基和最终画面。
 
 [等功率淡化与素材相关性](../research/source-notes/equal-power-crossfade-correlation.md)核对固定 SuperCollider 源码与增益机制，严格区分理想手推和实际实现输出。
 
@@ -211,7 +211,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 
 [均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
 
-[TLOU2 混合探针表示的内容前提](../case-studies/rendering/tlou2-hybrid-probe-content-frequency.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
+[最后生还者第二部如何结合顶点与探针照明](../GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
 
 [Vulkan present fence 的退役覆盖](../research/source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。
 

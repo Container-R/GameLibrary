@@ -65,6 +65,6 @@ sources:
 
 ## 与已有研究的边界
 
-[切线 handedness 与法线变换](tangent-handedness-normal-transform.md)讨论方向与空间合同；[网格简化请求与返回](mesh-simplification-request-result.md)讨论数量和误差接收。本条不重复这些推导，也不继承它们或关联实验的测试结果。
+[切线 handedness 与法线变换](../../管理档案/来源笔记/tangent-handedness-normal-transform.md)讨论方向与空间合同；[网格简化请求与返回](mesh-simplification-request-result.md)讨论数量和误差接收。本条不重复这些推导，也不继承它们或关联实验的测试结果。
 
 缺失属性、未匹配名字的具体行为、不同 AOV 的所有影响、cage 错配后的输出、渲染器结果及性能都未验证。本文不是完整烘焙教程、自动修复器或 Houdini 缺陷报告。来源定位为官方页的 `Baking best practices`、`Match Pieces by Name`、`Cage mesh`；没有复制图片、软件画面或节点实现。

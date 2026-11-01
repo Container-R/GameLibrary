@@ -2151,7 +2151,7 @@
       "expected_artifact": "Pinned normative source, finite original scalar accessor bytes and independent literal decode checks",
       "artifact_paths": [
         "solutions/modeling/gltf-interleaved-attribute-contract.md",
-        "research/source-notes/gltf-sparse-accessor.md",
+        "管理档案/来源笔记/gltf-sparse-accessor.md",
         "research/experiments/gltf-sparse-accessor/README.md"
       ],
       "acceptance": [
@@ -2206,7 +2206,7 @@
       "expected_artifact": "Source-depth supplement and original unexecuted host acceptance matrix",
       "artifact_paths": [
         "solutions/programming/client-prediction-authority-boundary.md",
-        "research/source-notes/rollback-presentation-boundary.md"
+        "管理档案/来源笔记/rollback-presentation-boundary.md"
       ],
       "acceptance": [
         "Pin GGPO guide/header/Sync source and exact callback boundary",
@@ -2261,7 +2261,7 @@
       "expected_artifact": "roles/localization/localization-coordinator.md and source note",
       "artifact_paths": [
         "roles/localization/localization-coordinator.md",
-        "research/source-notes/localization-coordinator-role.md"
+        "管理档案/来源笔记/localization-coordinator-role.md"
       ],
       "acceptance": [
         "Primary named practitioner accounts and independent source review",
@@ -2688,7 +2688,7 @@
       "priority_rationale": "Close an explicitly excluded tangent-space asset interpretation gap using normative source and exact hand geometry rather than claiming rendered correctness",
       "expected_artifact": "Bounded pinned-source gate and original hand-derived tangent basis explanation if supported",
       "artifact_paths": [
-        "research/source-notes/tangent-handedness-normal-transform.md"
+        "管理档案/来源笔记/tangent-handedness-normal-transform.md"
       ],
       "acceptance": [
         "Pin actual Khronos specification revision and inspect primary semantics",
@@ -3070,7 +3070,7 @@
       "expected_artifact": "Integrated fixed-source GGPO normal-advance control-flow explanation, not a new protocol or runtime test",
       "artifact_paths": [
         "solutions/programming/client-prediction-authority-boundary.md",
-        "research/source-notes/rollback-presentation-boundary.md"
+        "管理档案/来源笔记/rollback-presentation-boundary.md"
       ],
       "acceptance": [
         "Read exact upstream AddLocalInput, SyncInput, IncrementFrame and official host loop",
@@ -3655,7 +3655,7 @@
       "priority_rationale": "A concrete historical production mechanism links lighting content requirements to which representation carries each component",
       "expected_artifact": "Source-backed historical case with finite unexecuted receiving comparisons",
       "artifact_paths": [
-        "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
+        "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md"
       ],
       "acceptance": [
         "Read original two-page report and selected official slide text and notes",
@@ -3672,7 +3672,15 @@
       "next_action": "Retain historical content premise, direction dependencies and unexecuted comparison scope",
       "blockers": [],
       "completed_at": "2026-11-01T09:09:39.602956Z",
-      "commit_sha": "9ee60b56d3908cf4641d78542ecc057e18054356"
+      "commit_sha": "9ee60b56d3908cf4641d78542ecc057e18054356",
+      "historical_artifacts": [
+        {
+          "path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
+          "url": "https://github.com/Container-R/GameLibrary/blob/02eb6dbf6897b8582b31c2169c04060d5d6dccf4/case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
+          "commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
+          "sha256": "c8f08c70665b3a59733f6b75d7449bf8b28ab25c80054d9d093eeb4e2c7d5052"
+        }
+      ]
     },
     {
       "id": "TASK-2026-0140",

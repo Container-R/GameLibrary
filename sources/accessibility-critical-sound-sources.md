@@ -54,10 +54,10 @@ sources:
 
 ## 原创内容归属
 
-[主方案](../solutions/accessibility/critical-sound-information-contract.md)的可知范围、相对行动窗口、拥挤/取消策略和跨岗位接收合同，以及[泵站假设遭遇](../research/case-notes/critical-sound-encounter.md)全部为本研究原创。后者的事件、对话和缺陷版本不是任何原作复述，不包含真实玩家或受试数据。
+[主方案](../solutions/accessibility/critical-sound-information-contract.md)的可知范围、相对行动窗口、拥挤/取消策略和跨岗位接收合同，以及[泵站假设遭遇](../管理档案/来源笔记/critical-sound-encounter.md)全部为本研究原创。后者的事件、对话和缺陷版本不是任何原作复述，不包含真实玩家或受试数据。
 
 正文没有复制游戏截图、音频、表格或源码；仅短述相关机制后自行分析。未播放嵌入视频，未调用可能受限的GDK接口。静态信息审计不提供GPU、引擎、设备、呈现或认证结果。
 
 ## 归档关系
 
-本档案对应[主方案](../solutions/accessibility/critical-sound-information-contract.md)与[原创假设遭遇](../research/case-notes/critical-sound-encounter.md)。来源依据、原创合同、假设反例和未执行的验收保持分层。
+本档案对应[主方案](../solutions/accessibility/critical-sound-information-contract.md)与[原创假设遭遇](../管理档案/来源笔记/critical-sound-encounter.md)。来源依据、原创合同、假设反例和未执行的验收保持分层。

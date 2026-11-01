@@ -43,7 +43,7 @@ Morten S. Mikkelsen 的固定 [MikkTSpace 头文件输出回调](https://github.
 
 F0 的位置参数化为 `(u,v,0)`，F1 为 `(u,−v,0)`。因此两者的单位切向都是 `T=(1,0,0)`，副切向分别为 `(0,1,0)` 和 `(0,−1,0)`。按上述叉积关系，所需符号分别为 +1、−1。
 
-这里沿用[已有切线基说明](tangent-handedness-normal-transform.md)中的符号合同，但问题发生在生成结果的接收，而非实例变换。O 或 X 的同一个旧槽无法同时保存这两份完整结果。将面角结果写回旧索引会让结果依赖覆盖顺序，或者在平均时丢掉两者的区别；不能以 T.xyz 相同证明整个切线属性相同。
+这里沿用[已有切线基说明](../../管理档案/来源笔记/tangent-handedness-normal-transform.md)中的符号合同，但问题发生在生成结果的接收，而非实例变换。O 或 X 的同一个旧槽无法同时保存这两份完整结果。将面角结果写回旧索引会让结果依赖覆盖顺序，或者在平均时丢掉两者的区别；不能以 T.xyz 相同证明整个切线属性相同。
 
 ## 明确映射：六份记录，不改变面角对应关系
 
@@ -74,6 +74,6 @@ F0 的位置参数化为 `(u,v,0)`，F1 为 `(u,−v,0)`。因此两者的单位
 
 ## 与相邻问题及来源身份的界限
 
-[glTF 属性交接](../../solutions/modeling/gltf-interleaved-attribute-contract.md)已有字节跨度和几何接收，但其中的 primitive 索引不等于 [sparse accessor](gltf-sparse-accessor.md) 的目的元素索引；本题又增加了输出面角与最终记录的映射层。[piece 烘焙过滤](model-bake-piece-visibility.md)控制候选表面集合，不负责解决顶点属性共享。任何既有执行结果都不作为本例证据。
+[glTF 属性交接](../../solutions/modeling/gltf-interleaved-attribute-contract.md)已有字节跨度和几何接收，但其中的 primitive 索引不等于 [sparse accessor](../../管理档案/来源笔记/gltf-sparse-accessor.md) 的目的元素索引；本题又增加了输出面角与最终记录的映射层。[piece 烘焙过滤](model-bake-piece-visibility.md)控制候选表面集合，不负责解决顶点属性共享。任何既有执行结果都不作为本例证据。
 
 MikkTSpace 固定提交为 `3e895b49d05ea07e4c2133156cfa94369e19e409`（2020-03-25），头文件署名 Morten S. Mikkelsen、标注 Version 1.0；提交日期不是版本首次发布日期。glTF规范源固定于 `59ecbdba704206bb656965ab4e202881806066f1`。2026-11-01实读上述接口及分支、规范1800–1840行；没有证明完整生成算法、退化输入政策、切线量化或任意重索引优化正确，也不扩写采样逆变换与四边形三角化问题。

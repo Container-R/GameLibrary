@@ -1,0 +1,84 @@
+{
+  "status": "moves_applied_in_this_revision",
+  "scope": "Five existing support notes relocated and one previously unpublished reviewed resource-sharing note published; historical assertions and hashes unchanged; no new runtime validation",
+  "moves": [
+    {
+      "old_path": "research/source-notes/tangent-handedness-normal-transform.md",
+      "new_path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+      "old_sha256": "a0662f4015c48c11af7d25b69042e8920ff746e1b0dd8a1b5c02fd6f66085f62",
+      "new_sha256": "19cd206e4af8fce2b0c25cbabe79f545fc8e68a96e0d2fc1f81f328b2cf4f694",
+      "body_change": "relative links only",
+      "operation": "relocate_existing_public_note"
+    },
+    {
+      "old_path": "research/source-notes/gltf-sparse-accessor.md",
+      "new_path": "管理档案/来源笔记/gltf-sparse-accessor.md",
+      "old_sha256": "6f7dce239f4d16e4f85d07da6e87f03fd98ad5c64fda943978284c6544442b90",
+      "new_sha256": "6f7dce239f4d16e4f85d07da6e87f03fd98ad5c64fda943978284c6544442b90",
+      "body_change": "byte-identical",
+      "operation": "relocate_existing_public_note"
+    },
+    {
+      "old_path": "research/source-notes/runtime-resource-sharing-boundaries.md",
+      "new_path": "管理档案/来源笔记/runtime-resource-sharing-boundaries.md",
+      "new_sha256": "7c1900d40d868a2a9d94b5b64476db88b23196a63a04ecd2c6a5a03b3a03d64f",
+      "body_change": "byte-identical",
+      "operation": "first_publication_of_reviewed_support_note",
+      "old_path_status": "local_draft_only_not_in_remote_base",
+      "draft_sha256": "7c1900d40d868a2a9d94b5b64476db88b23196a63a04ecd2c6a5a03b3a03d64f"
+    },
+    {
+      "old_path": "research/source-notes/localization-coordinator-role.md",
+      "new_path": "管理档案/来源笔记/localization-coordinator-role.md",
+      "old_sha256": "b031331649e37d6ad5544f3a5e28367e314ea09af272d8100fec2a56120609f9",
+      "new_sha256": "b031331649e37d6ad5544f3a5e28367e314ea09af272d8100fec2a56120609f9",
+      "body_change": "byte-identical",
+      "operation": "relocate_existing_public_note"
+    },
+    {
+      "old_path": "research/case-notes/critical-sound-encounter.md",
+      "new_path": "管理档案/来源笔记/critical-sound-encounter.md",
+      "old_sha256": "fd75f30ba7ed45688ae3aff764a5551d8570773121c47f5305b26ac8b1e3efd4",
+      "new_sha256": "fd75f30ba7ed45688ae3aff764a5551d8570773121c47f5305b26ac8b1e3efd4",
+      "body_change": "byte-identical",
+      "operation": "relocate_existing_public_note"
+    },
+    {
+      "old_path": "research/source-notes/rollback-presentation-boundary.md",
+      "new_path": "管理档案/来源笔记/rollback-presentation-boundary.md",
+      "old_sha256": "206f79951f4ba32d3ab5e46554a0d2dcbafc2f8eb6318d25bf82a0314c3fd278",
+      "new_sha256": "206f79951f4ba32d3ab5e46554a0d2dcbafc2f8eb6318d25bf82a0314c3fd278",
+      "body_change": "byte-identical",
+      "operation": "relocate_existing_public_note"
+    }
+  ],
+  "base_commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba",
+  "current_reference_bindings": [
+    {
+      "path": ".agent/queue.json",
+      "before_sha256": "17f207259bcb018fe4b8e385b9e6ee45690fcac64fe63e570fa8f3b399cc470b",
+      "after_sha256": "dd235eaea5141d385ac62a7cdc523c0e1e6a914d3bd7086cd6a5c0bcfc75f07e"
+    },
+    {
+      "path": "管理档案/图书目录.json",
+      "before_sha256": "e55b78e404a9bbf56751b5f5a6a34e7d90b2c348973def930f70b633f2dd1ab9",
+      "after_sha256": "0e2bdd46ae58619bf9fffe076ac43badcb30d114f37f0d6e3b694fd45226b2eb"
+    },
+    {
+      "path": "管理档案/复合旧文待整理.json",
+      "before_sha256": "09db9e607c7372dbda995f459edff098d6aa408f6a43013edc3d8e02a4b49cec",
+      "after_sha256": "4c28b93e2f447ffc29f3b3912ddaa5166468281978df5b38cbb233cb4a2f1917"
+    },
+    {
+      "path": "管理档案/来源笔记归类.json",
+      "before_sha256": "42b27bcb505f819f11445d3f399df7e831733522b3743c64378b25553b9e5998",
+      "after_sha256": "bc3fd824379566f1fd2774ddde59aa3a6d3ec91c2274f1385e7b02e979b2e40d"
+    }
+  ],
+  "separate_legacy_retirement": {
+    "old_path": "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
+    "historical_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
+    "current_reader_path": "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+    "reason": "Reviewed reader rewrite covers retained technical scope; current references point to it, full old body remains in fixed Git history"
+  }
+}

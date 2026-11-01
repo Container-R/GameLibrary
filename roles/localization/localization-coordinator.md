@@ -106,7 +106,7 @@ sources:
 
 ## 来源
 
-2026-11-01读取正文；未查看图片或音视频。详见[来源记录](../../research/source-notes/localization-coordinator-role.md)。
+2026-11-01读取正文；未查看图片或音视频。详见[来源记录](../../管理档案/来源笔记/localization-coordinator-role.md)。
 
 - **S1** [Plarium Natalia Gladkaya访谈](https://company.plarium.com/en/articles/good-lockits-and-style-guides-save-time/)，英语，官方转载日期2021-11-22。定位：外部语言人员/指南、GaaS更新与语境支持。
 - **S2** [JP Kellams — Butmoni Coronzon](https://www.platinumgames.com/official-blog/article/2188)，英语，2009-12-11。定位：开头的改编与审批、末段日语字幕调整。

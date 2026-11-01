@@ -60,7 +60,7 @@ python3 scripts/evidence/test_verify.py
 
 ## 内容与职责证据
 
-- [关键声音信息合同](../solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](case-notes/critical-sound-encounter.md)：不是实际玩家研究。
+- [关键声音信息合同](../solutions/accessibility/critical-sound-information-contract.md)及[原创假设遭遇表](../管理档案/来源笔记/critical-sound-encounter.md)：不是实际玩家研究。
 - [试玩干预证据](../solutions/production/playtest-intervention-evidence.md)：不将提示后完成当作独立发现。
 - [Steam 胶囊素材交付](source-notes/steam-capsule-handoff.md)：规则核对不是平台审核或销量证据。
 - [游戏 QA 职责](../roles/qa/game-quality-assurance.md)与[关卡策划职责](../roles/design/level-designer.md)：多家雇主和制作资料分层，原创交付矩阵不是内部规程。
@@ -174,7 +174,7 @@ python3 scripts/evidence/test_verify.py
 
 [先进入停止态，再禁用输入](source-notes/input-disable-teardown-callback.md)以原创未执行调用序列解释重复清理与单一所有者；不迁移其他引擎实验为证据。
 
-[单位向量仍可能变换错误](source-notes/tangent-handedness-normal-transform.md)用原创非均匀缩放手推比较点积 0 与 3/5，不把规范读取或代数证明升级为渲染测试。
+[单位向量仍可能变换错误](../管理档案/来源笔记/tangent-handedness-normal-transform.md)用原创非均匀缩放手推比较点积 0 与 3/5，不把规范读取或代数证明升级为渲染测试。
 
 [相同曲线的三种均方结果](source-notes/equal-power-crossfade-correlation.md)用四样本原创代数分开窗口交叉矩、均方、样本峰值与听感验收。
 
@@ -206,7 +206,7 @@ python3 scripts/evidence/test_verify.py
 
 [均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
 
-[TLOU2 混合探针表示的内容前提](../case-studies/rendering/tlou2-hybrid-probe-content-frequency.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
+[最后生还者第二部如何结合顶点与探针照明](../GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
 
 [Vulkan present fence 的退役覆盖](source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。
 
