@@ -304,6 +304,70 @@
           "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
         }
       ]
+    },
+    {
+      "old_path": "solutions/localization/pseudo-localization-contract.md",
+      "pending_subtopics": [
+        "已发表ICU格式器接口、生命周期与警告处理范围",
+        "CLDR分支、分数词法和目标语言验证的范围核对",
+        "双向文本、真实字体塑形与光标行为的旧范围核对"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-12-01",
+          "topic": "已发表ICU格式器接口、生命周期与警告处理范围",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-12-02",
+          "topic": "CLDR分支、分数词法和目标语言验证的范围核对",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-12-03",
+          "topic": "双向文本、真实字体塑形与光标行为的旧范围核对",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
+      ]
+    },
+    {
+      "old_path": "solutions/audio/music-state-transition-contract.md",
+      "pending_subtopics": [
+        "FMOD虚拟化与输出观察的边界",
+        "事件释放、共享资源包与迟到通知寿命",
+        "FFXV预结束音乐编排案例"
+      ],
+      "scope_status": "partially_extracted",
+      "chapter_tasks": [
+        {
+          "id": "REMEDIATION-13-01",
+          "topic": "FMOD虚拟化与输出观察的边界",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-13-02",
+          "topic": "事件释放、共享资源包与迟到通知寿命",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        },
+        {
+          "id": "REMEDIATION-13-03",
+          "topic": "FFXV预结束音乐编排案例",
+          "status": "pending",
+          "resolution": null,
+          "completion_rule": "Accepted reader chapter or explicit merge/exclusion rationale; retained historical evidence alone is not completion"
+        }
+      ]
     }
   ],
   "restricted_execution_evidence": "Retained in place; no new publication or cleanup authorized by this index",

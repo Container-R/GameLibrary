@@ -406,12 +406,18 @@
       "area": "交互音乐",
       "shelf": "音乐切换",
       "proposed_path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/audio/music-state-transition-contract.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "current_read_path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "reader_body_status": "published",
+      "original_scope_status": "partially_extracted",
+      "pending_chapter_tasks": [
+        "REMEDIATION-13-01",
+        "REMEDIATION-13-02",
+        "REMEDIATION-13-03"
+      ],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "extraction_scope": "探索到战斗再返回的音乐切换主线重写；虚拟化、资源寿命与FFXV制作案例仍待整理"
     },
     {
       "internal_id": "SOL-SFX-002",
@@ -508,12 +514,17 @@
       "area": "本地化制作",
       "shelf": "界面验证",
       "proposed_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/localization/pseudo-localization-contract.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+      "reader_body_status": "published",
+      "original_scope_status": "partially_extracted",
+      "pending_chapter_tasks": [
+        "REMEDIATION-12-01",
+        "REMEDIATION-12-02",
+        "REMEDIATION-12-03"
+      ],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
     },
     {
       "internal_id": "SOL-MODEL-001",
@@ -890,8 +901,8 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 15,
-  "legacy_entries_remaining": 40,
+  "rewritten_reader_books": 17,
+  "legacy_entries_remaining": 38,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
   "fully_remediated_original_items": 0,

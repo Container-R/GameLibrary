@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T114600Z-reader-localization-music",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T11:40:40Z",
+  "ended_at": "2026-11-01T11:48:56.192990+00:00",
+  "outcome": "Reader bodies, root routes and additional UI entry accepted; publication pending",
+  "baseline_head": "166573b5c4b888be9ddf27a9d46885bd737d1932",
+  "books": [
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u754c\u9762\u9a8c\u8bc1/\u7528\u4f2a\u672c\u5730\u5316\u53d1\u73b0\u5e03\u5c40\u4e0e\u5360\u4f4d\u7b26\u95ee\u9898.md",
+    "GameLibrary/\u58f0\u97f3\u4e0e\u97f3\u4e50/\u4ea4\u4e92\u97f3\u4e50/\u97f3\u4e50\u5207\u6362/\u73a9\u6cd5\u53d8\u5316\u600e\u6837\u89e6\u53d1\u53ef\u542c\u89c1\u7684\u97f3\u4e50\u5207\u6362.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u754c\u9762\u9a8c\u8bc1/\u7528\u4f2a\u672c\u5730\u5316\u53d1\u73b0\u5e03\u5c40\u4e0e\u5360\u4f4d\u7b26\u95ee\u9898.md": "7ac2bfa21f38a4f2fa2e63aa3c3e7899b59b5db6659d58b507ce164e88528767",
+    "GameLibrary/\u58f0\u97f3\u4e0e\u97f3\u4e50/\u4ea4\u4e92\u97f3\u4e50/\u97f3\u4e50\u5207\u6362/\u73a9\u6cd5\u53d8\u5316\u600e\u6837\u89e6\u53d1\u53ef\u542c\u89c1\u7684\u97f3\u4e50\u5207\u6362.md": "eb6b7437fa09763c9692c61690bb9d6f8c525c10a360bf522af0fdb317868043"
+  },
+  "rewritten_reader_books": 17,
+  "remaining_legacy_entries": 38,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No new formatter, engine, audio or player tests",
+    "Only previously published body summaries and public sources used",
+    "Original composite chapter scope not completed by new body publication",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Complete pseudo-localization and music-transition reader reviews and routes; then continue existing-book remediation without new topics",
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u4f2a\u672c\u5730\u5316-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u97f3\u4e50\u5207\u6362-\u72ec\u7acb\u5ba1\u8bfb.md"
+  ],
+  "main_source_spot_checks": [
+    "W3C Text size in translation",
+    "FMOD Studio 2.04 Authoring Events section 4.11.1-4.11.4"
+  ],
+  "accounting_check": {
+    "pending_chapter_tasks": 33,
+    "composite_items": 13,
+    "original_scope_completion_not_assumed": true
+  },
+  "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u4f2a\u672c\u5730\u5316\u4e0e\u97f3\u4e50-\u5bfc\u822a\u5ba1\u8bfb.md"
+}
