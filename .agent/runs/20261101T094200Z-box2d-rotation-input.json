@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T094200Z-box2d-rotation-input",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0144"
+  ],
+  "started_at": "2026-11-01T09:42:06Z",
+  "ended_at": "2026-11-01T09:44:51.594124Z",
+  "outcome": "Independently reviewed additive motion-representation section; publication validation pending",
+  "sources_examined": [
+    "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/collision.h#L435-L490",
+    "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/collision.md#L266-L296"
+  ],
+  "evidence_added": "Fixed v3.2.0 cast/sweep input definitions and original rotational limitation text",
+  "original_contribution": "Counterclockwise capsule path distinguishes swept volume from unchanged center translation; rotation-direction ambiguity corrected before publication",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No query, solver, world-step or engine execution",
+    "Geometry example does not predict actual collision routine return",
+    "No safe substep count or guaranteed rotational detection algorithm",
+    "Existing source-only historical note retained byte-for-byte outside insertion"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 144,
+    "inverse_patch_reproduces_base_bytes": true,
+    "indexed_articles": 53,
+    "archive_consistency_normal_pass": 519,
+    "archive_consistency_optimized_pass": 519,
+    "archive_consistency_fail": 0,
+    "archive_scope": "Declared archive consistency only; no new runtime or semantic test",
+    "declared_paths_checked": 194,
+    "full_changed_file_privacy_scan": "PASS"
+  },
+  "next_action": "Verify exact publication and inspect remaining source-depth priorities rather than repeat coverage summaries"
+}

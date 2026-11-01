@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:25:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:41:02.840844Z",
-      "next_action": "Review a collision source gate for a distinct rotational TOI limit; do not duplicate existing sensor and substep note",
+      "last_progress_at": "2026-11-01T09:44:51.594124Z",
+      "next_action": "Strengthen existing source-only physics note with a distinct motion-input premise, not a duplicate sensor or substep article",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3781,6 +3781,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:41:02.840844Z",
       "commit_sha": "d3af6c619e9275210259def564f3f8b78e413427"
+    },
+    {
+      "id": "TASK-2026-0144",
+      "question": "Does a center-translation cast express the region traversed by an explicitly rotating extended shape?",
+      "discipline": "PROG",
+      "status": "reviewing",
+      "priority": 86,
+      "priority_rationale": "Concrete pinned collision interface and original geometry address weapon/query motion representation without claiming an observed engine failure",
+      "expected_artifact": "Small additive subsection in existing source-only sensor and sweep note",
+      "artifact_paths": [
+        "research/source-notes/box2d-sensor-step-and-sweep.md"
+      ],
+      "acceptance": [
+        "Verify exact release tag and original linear cast versus rotation sweep inputs",
+        "Explicitly fix rotation direction rather than infer it from endpoint poses",
+        "Separate geometric representation counterexample from any actual TOI or world-step result",
+        "Do not infer a safe substep count or unrestricted rotation guarantee",
+        "Preserve all existing historical-version prose exactly",
+        "Scan complete uploaded note and exclude private execution metadata"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:44:51.594124Z",
+      "next_action": "Validate independent review, exact inverse patch and publication",
+      "blockers": []
     }
   ]
 }
