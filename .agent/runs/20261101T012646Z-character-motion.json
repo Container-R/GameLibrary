@@ -5,8 +5,8 @@
     "TASK-2026-0079"
   ],
   "started_at": "2026-11-01T01:26:46Z",
-  "ended_at": "2026-11-01T01:43:09.025239Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T01:48:19.195821Z",
+  "outcome": "published and read back",
   "protocol_sha256": "193a8a05c6034ed59152b5c6c948139a1bc4c44068a27232ce38b1b971cfca41",
   "native_attempts": 2,
   "accepted_attempts": [
@@ -38,7 +38,12 @@
     "queue_tasks_checked": 79,
     "declared_paths_checked": 88,
     "local_links": 606,
-    "relocated_static_commands": 8
+    "relocated_static_commands": 8,
+    "selected_blob_hashes_verified": 140,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 80,
+    "receipt_declared_paths_checked": 88
   },
-  "next_action": "Integrate independently reviewed environment concept role and original unexecuted handoff worksheet"
+  "next_action": "Integrate independently reviewed environment concept role and original unexecuted handoff worksheet",
+  "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c"
 }

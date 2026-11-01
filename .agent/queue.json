@@ -2005,7 +2005,7 @@
       "id": "TASK-2026-0079",
       "question": "Can clear start and requested endpoint occupancy still conceal obstruction during actual CharacterBody3D motion?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Existing navigation and static-overlap observations do not validate actual collision movement; close one finite gap without full controller integration",
       "expected_artifact": "Source-gated bounded actual move_and_collide obstruction/control experiment or preserved failed gate",
@@ -2020,11 +2020,35 @@
         "Independent protocol/code/pure review before separate native authorization",
         "Observe actual transform delta and collision travel/identity; no slide-state or universal safe-transit claim"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T01:43:09.025239Z",
+      "next_action": "Retain finite actual motion witness; no post-move occupancy, universal CCD or full navigation-controller validation",
+      "blockers": [],
+      "completed_at": "2026-11-01T01:48:19.195821Z",
+      "commit_sha": "94663be1f3f67a249434cd69adefcea1e272058c"
+    },
+    {
+      "id": "TASK-2026-0080",
+      "question": "How should an environment concept paintover distinguish visual exploration, construction decisions and preserved blockout intent?",
+      "discipline": "ART2D",
+      "status": "reviewing",
+      "priority": 87,
+      "priority_rationale": "Practitioner-grounded concept-art role gap connects design intent to environment production without duplicating technical import checks",
+      "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Named PlatinumGames and Bungie original practitioner text with exact historical dates",
+        "Separate image purpose and production handoff from buildable asset/visual/player proof",
+        "No image reproduction, inferred visual inspection or universal job boundaries",
+        "Independent source/editorial review and precise existing TA/design/model links"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:43:09.025239Z",
-      "next_action": "Publish independently repeated finite character collision-motion witness without inferring full navigation integration or final zero overlap",
+      "last_progress_at": "2026-11-01T01:48:19.195821Z",
+      "next_action": "Integrate independently reviewed ROLE-ART2D-001 article429b80d2 and source90ee4856; no runtime or image validation claimed",
       "blockers": []
     }
   ]
