@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T11:29:00Z",
-  "ended_at": "2026-11-01T11:35:30.097625+00:00",
-  "outcome": "Alpha and PCM bodies and actual routes accepted; publication pending",
+  "ended_at": "2026-11-01T11:36:51.377955Z",
+  "outcome": "Alpha-compositing and PCM-loop books and routes published and read back; continuing remaining inventory remediation",
   "baseline_head": "1858194ceaa06e09afea59d0af8f24202d092c3e",
   "books": [
     "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u7eb9\u7406\u4e0e\u6750\u8d28/\u9884\u4e58\u900f\u660e\u5ea6\u4e0e\u666e\u901a\u900f\u660e\u5ea6\u7684\u6df7\u7528\u95ee\u9898.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Complete alpha-compositing and PCM-loop reader reviews and routes; then continue existing-book remediation without new topics",
+  "next_action": "Rewrite existing modal-focus and critical-sound accessibility books with independent reader reviews; retain composite chapter backlog; no new topics",
   "independent_reviews": {
     "alpha": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u900f\u660e\u5ea6\u6df7\u7528-\u72ec\u7acb\u5ba1\u8bfb.md",
     "pcm": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/PCM\u5faa\u73af-\u72ec\u7acb\u5ba1\u8bfb.md"
@@ -34,5 +34,14 @@
   "main_source_spot_checks": [
     "W3C Compositing 2024-03-21 section 5.1",
     "FMOD Core 2.04 Sound::setLoopPoints"
-  ]
+  ],
+  "commit_sha": "84c6d129eacd9e4166b3b9f60790dd73730566bd",
+  "validation": {
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1053,
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "remote_books_and_mixed_shelf_read_back": true
+  }
 }
