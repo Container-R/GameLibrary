@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T11:05:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:21:45.726091Z",
-      "next_action": "Deepen server lag-compensation target selection separately from existing client movement replay",
+      "last_progress_at": "2026-11-01T10:23:15.753941Z",
+      "next_action": "Evaluate original MikkTSpace corner-output indexing source gate against existing mesh/import material; keep source-only release scope",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3929,7 +3929,7 @@
       "id": "TASK-2026-0149",
       "question": "How do command-requested time, server-accepted target time and selected player history sample differ in fixed Valve SDK lag compensation?",
       "discipline": "NET",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "Concrete time-validation and conditional history-sampling mechanism absent from existing movement prediction and dependency-time notes",
       "expected_artifact": "Fixed-source mechanism note with ideal two-command arithmetic and conditional position sample",
@@ -3944,12 +3944,14 @@
         "Account for optional recursive eligibility bypass and later position application",
         "No actual hit, all-world rewind, live game or runtime claim"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T10:21:45.726091Z",
-      "next_action": "Validate exact final source review and selected publication diff",
-      "blockers": []
+      "next_action": "Retain fixed-source target/history/candidate distinctions; no actual hit, global rewind or commercial-game guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T10:23:15.753941Z",
+      "commit_sha": "a280f1b2f0b7e781f93f50e56e1ece35c6588e66"
     }
   ]
 }
