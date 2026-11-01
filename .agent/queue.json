@@ -3034,11 +3034,14 @@
       "id": "TASK-2026-0117",
       "question": "Why must glTF CUBICSPLINE translation tangents change when uniformly retiming stored key times to preserve the normalized trajectory?",
       "discipline": "ANIM",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 92,
       "priority_rationale": "Resolve a concrete animation-tool handoff ambiguity through the fixed normative interpolation formula and a distinguishing hand calculation",
       "expected_artifact": "Integrated animation role example with source-backed formula and clearly unexecuted counterexample",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/animation/game-animator.md",
+        "research/source-notes/game-animator-role.md"
+      ],
       "acceptance": [
         "Read exact fixed Khronos formula and sampler constraints",
         "Independently check tangent scaling and midpoint arithmetic",
@@ -3049,8 +3052,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:33:34.020978Z",
-      "next_action": "Verify fixed interpolation formula and independent retiming proof before drafting",
+      "last_progress_at": "2026-11-01T06:35:39.335112Z",
+      "next_action": "Review fixed-formula retiming proof and finite-precision/asset-scope exclusions",
       "blockers": []
     }
   ]

@@ -6,17 +6,19 @@ status: source-backed
 primary_discipline: ANIM
 related_disciplines: [TA, MODEL, PROG, DESIGN, QA]
 related_roles: [game-animator, technical-animator, character-artist, gameplay-programmer, qa-engineer]
-related_topics: [animation-intent, character-variants, rig-handoff, runtime-animation-review]
+related_topics: [animation-intent, character-variants, rig-handoff, runtime-animation-review, cubic-spline, uniform-retiming]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["Bandai Namco Studios 项目经历，2021-12-03", "BNS 2027 招聘届次说明，发布日期未确认", "Ubisoft REF31771Z，发布日期未确认"]
-updated_at: 2026-10-31
+versions: ["Bandai Namco Studios 项目经历，2021-12-03", "BNS 2027 招聘届次说明，发布日期未确认", "Ubisoft REF31771Z，发布日期未确认", "glTF2.0规范提交59ecbdba704206bb656965ab4e202881806066f1"]
+updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 日语第一方项目经历与日英雇主职责样本核对；角色组合交接工作表及袖口例子为原创未执行建议；未制作或运行角色资产，未观看来源视频
+verification_method: 日语第一方项目经历、日英雇主职责及固定glTF插值规范核对；角色交接建议与平移曲线重定时代数例为原创未执行分析；未制作或运行资产，未观看来源视频
 sources:
   - https://www.bandainamcostudios.com/recruit/career/interview/1229
   - https://montreal.ubisoft.com/en/jobs/senior-technical-animator-march-of-giants/
   - https://bandainamcostudios.snar.jp/jobboard/detail.aspx?id=WnBP0-KhtUu_o64YK6Et3A
+  - https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc
+  - https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/animation.sampler.schema.json
 ---
 
 # 游戏动画师：从动作表演到运行时角色组合的验收交接
@@ -76,6 +78,26 @@ sources:
 
 工具应帮助定位同一动作、同一角色组合和相关时间区间，而非只生成更多预览视频。运行时的混合或程序化处理可能使最终姿态不同于单独片段，但是否实际发生、由哪个环节造成，仍需具体证据。没有视觉观察的骨骼数值测试，也不能单独认证轮廓、角色感或服装表现。
 
+### 曲线交接例：片段减速时，为什么只改关键帧时间还不够？
+
+动画侧先要说明“减速”保留什么。以下只讨论**重写单个 glTF 平移 CUBICSPLINE 采样器的存储数据**：关键值不变，所有时间间隔乘同一个正数 s，并希望相同归一化进度的平移值不变。它不是对所有 DCC 曲线的通用规则，也不是完整角色姿态保证。
+
+glTF 的该模式为每个关键帧存储入切线、关键值和出切线；段内求值会把切线乘以段时长。[S4] 记两端关键值为 v₀、v₁，起点出切线为 b₀、终点入切线为 a₁，段时长为 Δt，归一化进度为 u，则 Hermite 形式为：
+
+`v(u) = h00(u)v₀ + h10(u)Δt b₀ + h01(u)v₁ + h11(u)Δt a₁`
+
+其中 `h00=2u³−3u²+1`、`h10=u³−2u²+u`、`h01=−2u³+3u²`、`h11=u³−u²`。同一 u 下基函数不变，所以把 Δt 改成 sΔt 时，将相应入／出切线除以 s，才能保持原来的两个切线乘积。这是规范公式的代数推论，不是已实现的重定时工具。
+
+**原创手算反例：** 只取平移 x 分量，另外两分量及其切线均为零。原关键时间为 0、1 秒，x 为 0、1，b₀=2，a₁=0。在 u=1/2 时：
+
+- 原曲线：`1/2 + (1/8)×1×2 = 0.75`。
+- 结束时间改为 2 秒，切线不变：`1/2 + (1/8)×2×2 = 1`。
+- 同样改为 2 秒，同时 b₀ 除以 2：`1/2 + (1/8)×2×1 = 0.75`。
+
+三者端点相同，中间值却不同；比较的是同一**归一化进度**，原片段时间为 0.5 秒，重定时片段为 1 秒，并非同一绝对时间的三次测量。因此“关键姿势没改”不足以说明只是变慢。动画与技术动画／工具接收者应先约定保留平移曲线还是重新设计缓入缓出，再选择数据变换；动画师不必独自实现导入器。
+
+如果只是让运行时播放时钟走得更慢而不改资产时间，这属于另一条路径，不应再按本例缩放存储切线。上述理想实数推导也没有证明 float32 编码可表示、结果有限、时间仍严格递增，或时间 accessor 的 min/max 已正确更新；这些仍是资产处理要检查的条件。这里没有生成或播放资产，不覆盖旋转、非线性变速、分段不同倍率、事件、根运动消费、混合或完整角色表现。
+
 ## 职业交叉关系与后续研究
 
 - [技术美术](../technical-art/technical-artist.md)：提供可重复的资产与技术支持；本文关注动作意图和具体角色组合的接收，不替代其管线规范。
@@ -87,8 +109,10 @@ sources:
 
 ## 参考来源
 
-均于 2026-10-31 读取正文；未观看页面关联视频，未转载访谈或图像。完整适用范围见[来源记录](../../research/source-notes/game-animator-role.md)。
+初始 S1–S3 于 2026-10-31 读取正文，S4 规范补读于 2026-11-01；未观看页面关联视频，未转载访谈或图像。完整适用范围见[来源记录](../../research/source-notes/game-animator-role.md)。
 
 - **S1** Bandai Namco Studios，日语，[*仕事紹介：３Dアニメーター*](https://www.bandainamcostudios.com/recruit/career/interview/1229)，2021-12-03。定位：`私たちは、ここにこだわっています！` 中 `「アイドルマスター ミリオンライブ！シアターデイズ」の場合`，署名吉武敬一朗。
 - **S2** Ubisoft Montréal，英语雇主说明，[*Senior Technical Animator – March of Giants*](https://montreal.ubisoft.com/en/jobs/senior-technical-animator-march-of-giants/)，REF31771Z，发布日期未确认。定位：`Job description`、`What you’ll do`、`Qualifications`。
 - **S3** Bandai Namco Studios，日语雇主说明，[*2027年新卒採用 アニメーター*](https://bandainamcostudios.snar.jp/jobboard/detail.aspx?id=WnBP0-KhtUu_o64YK6Et3A)，发布日期未确认；2027 是招聘届次。定位：`業務内容` 三类职责；读取时页面末尾显示 `受付終了`，不能当作开放职位推荐。
+
+- **S4** Khronos glTF 2.0 固定提交 `59ecbdba704206bb656965ab4e202881806066f1`：[规范 Appendix C](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L3979-L4077)、[sampler 正文](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L3257-L3293)及[同提交 schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/animation.sampler.schema.json)。一个规范体系，不是多个独立实现；重定时结论是公式推导，未执行导出或播放。

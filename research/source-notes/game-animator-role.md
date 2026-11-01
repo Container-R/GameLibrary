@@ -18,4 +18,13 @@ S1 没有公开引擎版本、具体 rig/skin 实现、服装算法、检查矩�
 
 发现使用日语 `アニメーター リグ モーション` 及英语 `animator interview animation gameplay technical animator`。Ubisoft 的 Rainbow Six Siege gameplay animator 职位原链接实际返回404，搜索摘要未作事实依据；改用可读的 S2。未深读的 GDC 幻灯片、挑战PDF及其他访谈不计入来源。
 
-现有 TA 档案已覆盖通用资产身份与导入检查，原地转身文章已覆盖根运动和有限运行观察。本档案只补动画表演与角色组合接收的职责，不宣称完成全学科岗位矩阵。
+现有 TA 档案已覆盖通用资产身份与导入检查，原地转身文章已覆盖根运动和有限运行观察。初始档案只补动画表演与角色组合接收的职责，不宣称完成全学科岗位矩阵。
+
+## 2026-11-01 补读：S4，平移样条重定时的规范与代数
+
+Khronos glTF 2.0，固定提交 `59ecbdba704206bb656965ab4e202881806066f1`：
+
+- [Appendix C：Animation Sampler Interpolation Modes](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L3979-L4077)：段时长、归一化进度、逐分量求值及 Cubic Spline Interpolation 公式。
+- [Animation sampler](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L3257-L3293) 与 [animation.sampler.schema.json](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/animation.sampler.schema.json)：秒单位、平移输出类型及时间／输出约束。schema 与正文属于同一规范体系，不计为独立实现验证。
+
+新增小节依据规范求值式，原创推导正统一时间缩放下的切线反向缩放，并手算同进度的 0.75／1／0.75 对照。它只证明理想数学中的平移曲线关系，不证明编码资产合法、逐位一致、引擎播放或艺术质量。没有执行程序、生成资产、观看动画或继承其他动画／glTF 实验的结果；不是规范直接规定的重定时生产流程，也不主张全部 DCC 切线具有相同约定。

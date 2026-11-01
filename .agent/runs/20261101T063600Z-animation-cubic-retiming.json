@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T063600Z-animation-cubic-retiming",
+  "task_ids": [
+    "TASK-2026-0117"
+  ],
+  "started_at": "2026-11-01T06:33:22Z",
+  "ended_at": "2026-11-01T06:35:39.335112Z",
+  "outcome": "independent source, algebra and editorial reviews accepted; publication pending",
+  "sources": [
+    "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc"
+  ],
+  "evidence": "Main and independent reviewer read fixed Appendix C, sampler section and schema; hand-checked normalized midpoint",
+  "original_contribution": "Positive uniform stored-key retiming requires inverse tangent scaling to preserve ideal translation curve; endpoint-preserving counterexample distinguishes duration-only modification",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No exported asset, engine playback, image or program execution",
+    "Ideal algebra does not prove float32 representability, metadata validity or full character pose",
+    "Translation only; no quaternion rotation, nonlinear time warp, events, blend or root-motion guarantee",
+    "Playback-clock rescaling is separate from rewriting stored key data"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 117,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Static archive consistency; no new experiment or curve execution",
+    "declared_paths_checked": 150,
+    "local_links_checked": 818
+  },
+  "next_action": "Continue concrete source/code depth after verified handoff",
+  "prepublication_scope_refinement": "Made single translation sampler explicit; no whole-animation channel synchronization claimed",
+  "reviewed_article_sha256": "28eb64ee55cf6c71881aceb211fe1a840e28dabccaeafcf90d2cba6231237f6c"
+}
