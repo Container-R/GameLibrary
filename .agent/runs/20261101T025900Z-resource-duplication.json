@@ -5,8 +5,8 @@
     "TASK-2026-0087"
   ],
   "started_at": "2026-11-01T02:59:00Z",
-  "ended_at": "2026-11-01T03:12:46.524017Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T03:19:21.242707Z",
+  "outcome": "published and read back",
   "evidence": "Original finite acyclic Array[B,B,C] clone scope and intra-copy alias preservation on installed binary; pinned source comparison separate",
   "native_execution": {
     "author_uuid": "db16c3a8-a67e-48ce-9e63-ab2b6706e777",
@@ -40,7 +40,14 @@
     "unchanged_prior_experiment_files": 2886,
     "archive_checks_normal": 516,
     "archive_checks_optimized": 516,
-    "queue_tasks_checked": 87
+    "queue_tasks_checked": 87,
+    "selected_blob_hashes_verified": 208,
+    "outside_tree_changes": 0,
+    "local_links_checked": 692,
+    "receipt_queue_tasks_checked": 88,
+    "declared_paths_checked": 108,
+    "verifier_unit_methods": 9
   },
-  "next_action": "Evaluate localization role source gate against existing pseudo-localization and narrative evidence"
+  "next_action": "Evaluate localization role source gate against existing pseudo-localization and narrative evidence",
+  "commit_sha": "1f7bfe1a1eb3648e3f9346f012c53a120df169ec"
 }
