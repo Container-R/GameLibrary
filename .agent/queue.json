@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T20:10:00Z",
+      "lease_until": "2026-11-01T20:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T19:26:40Z",
-      "next_action": "Read fixed ENet v1.3.18 packet-flag documentation and peer_send fragmentation branches, compare existing prediction/channel coverage, and determine whether large unreliable-message transport behavior is a genuine uncovered engineering question before accepting an artifact.",
+      "last_progress_at": "2026-11-01T19:35:58Z",
+      "next_action": "Check RFC7845 seeking, pre-skip and pre-roll against existing PCM reader and retained Ogg Opus support; accept only a genuinely uncovered practical question, with no playback or seamless-loop claim from source reading.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -5992,6 +5992,33 @@
       "next_action": "Use only as fixed-source integration analysis; complete nested migration, diagnostics adapter and persistence implementation remain unverified.",
       "blockers": [],
       "verification_method": "Fixed Java source reading and independent agent reader/source review; no Java build, DFU execution, Minecraft or real save modification."
+    },
+    {
+      "id": "TASK-2026-0158",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can increasing an ENet snapshot payload change its reliable-fragment path despite unchanged application flags?",
+      "discipline": "NET",
+      "status": "published",
+      "priority": 87,
+      "priority_rationale": "Specific transport branch affects discardable snapshot assumptions; not covered by prediction or sequence-window readers.",
+      "expected_artifact": "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
+      "artifact_paths": [
+        "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
+        "管理档案/审查/ENet分片发送选择-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Concrete independent-versus-delta snapshot scenario",
+        "Fixed send threshold, flags, sequence reset and late compression source checks",
+        "No packet observation or universal UDP threshold claim",
+        "Independent full-reader questions and actual hierarchy navigation"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T19:35:58Z",
+      "next_action": "Retain fixed-upstream scope; actual network timing, engine modifications and project snapshot policy require separate checks.",
+      "blockers": [],
+      "verification_method": "Primary source and independent agent source/full-reader/local navigation review; no network/native tests."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,26 @@
+{
+  "run_id": "20261101T193558Z-enet-fragment-choice",
+  "observed_at": "2026-11-01T19:35:58Z",
+  "parent_verified_head": "43f6314ebb881e025209eb4877249d8ca3b8a332",
+  "task": "TASK-2026-0158",
+  "outcome": "Accepted ENet reader included with its references, navigation, review and queue state in one coherent publication tree.",
+  "reader_path": "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
+  "reader_sha256": "600ae95ed43a8322c19b4d06ba1c05bbdc9b32fc991da8c23d7d74af3ecec87b",
+  "source_commit": "2662c0de09e36f2a2030ccc2c528a3e4c9e8138a",
+  "independent_reader_review_sha256": "703b4df07ddf55052d220a4f3aea2142fb8743c7c1bb404faec273a71165e542",
+  "verification_method": "Fixed source reading, original conditional reasoning and independent local reader-route review; no runtime test.",
+  "reader_books": 62,
+  "prior_publication_readback": {
+    "commit": "43f6314ebb881e025209eb4877249d8ca3b8a332",
+    "key_files_matched": 6,
+    "reader_books_tree_matched": 61,
+    "reader_links_tree_matched": 149
+  },
+  "prior_publication_recovery": {
+    "initial_issue": "A metadata-only intermediate tree asserted publication without including the new article and review.",
+    "resolution": "The unchanged branch was checked; one coherent tree included all16 changed files and verified content before the successful CAS publication.",
+    "corrected_commit": "43f6314ebb881e025209eb4877249d8ca3b8a332",
+    "partial_publication": false
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

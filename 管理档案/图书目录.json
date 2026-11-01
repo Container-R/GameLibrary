@@ -1285,6 +1285,22 @@
       "review_paths": [
         "管理档案/审查/存档迁移返回值-来源与读者审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-NET-003",
+      "reader_title": "ENet状态包变大后为什么开始可靠传输",
+      "floor": "网络与在线服务",
+      "area": "实时同步",
+      "shelf": "消息传输",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
+      "current_read_path": "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定源码、完整读者审读和实际本地路径接受；无网络运行测试",
+      "origin": "fragment-selection-source-analysis-from-task-0008",
+      "scope_note": "固定上游ENet的长度与选项分支；快照设计取舍不是测得的网络延迟",
+      "review_paths": [
+        "管理档案/审查/ENet分片发送选择-来源与读者审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1297,6 +1313,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 61,
-  "post_baseline_research_books": 6
+  "reader_books_total": 62,
+  "post_baseline_research_books": 7
 }
