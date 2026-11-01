@@ -175,3 +175,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Rocket League 输入缓冲节奏](../research/source-notes/rocket-league-input-buffer-cadence.md)定位 Jared Cone / Psyonix 2018 原始幻灯片物理第 135–138 页，区分历史陈述与原创接收提案。
 
 [Noita 活跃区域与更新所有权](../research/source-notes/noita-dirty-region-update-ownership.md)依据 Petri Purho 2019 年具名原始访谈，明确开发者陈述与实现证明的区别。
+
+[Herringbone 片段内容合同](../research/source-notes/herringbone-tile-content-contract.md)连接 Sean Barrett 原始制作分析与固定 stb 模板枚举、标签赋值、选择路径；不据此证明地图可达。

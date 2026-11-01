@@ -2816,11 +2816,13 @@
       "id": "TASK-2026-0109",
       "question": "What do herringbone tile template constraints establish, and which authored content or connectivity assumptions remain outside tile selection?",
       "discipline": "DESIGN",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Follow a primary procedural-generation lead into an actual authoring/selection contract, rather than inferring semantic level correctness from compatibility labels",
       "expected_artifact": "Bounded original-author and pinned-source mechanism note if review supports the distinction",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/herringbone-tile-content-contract.md"
+      ],
       "acceptance": [
         "Read original author texts and exact official stb source version/commit",
         "Trace template constraints, pixel payload and selection comparisons without executing generator",
@@ -2831,8 +2833,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:25:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:51:11.540422Z",
-      "next_action": "Review original herringbone authoring and tile-selection source gate",
+      "last_progress_at": "2026-11-01T05:56:21.752359Z",
+      "next_action": "Publish reviewed template label, payload and content-interface contract note",
       "blockers": []
     }
   ]

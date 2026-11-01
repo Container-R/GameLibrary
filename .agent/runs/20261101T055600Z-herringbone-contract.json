@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T055600Z-herringbone-contract",
+  "task_ids": [
+    "TASK-2026-0109"
+  ],
+  "started_at": "2026-11-01T05:54:33Z",
+  "ended_at": "2026-11-01T05:56:21.752359Z",
+  "outcome": "source and editorial review accepted; publication pending",
+  "sources": [
+    "https://nothings.org/gamedev/herringbone/herringbone_tiles.html",
+    "https://nothings.org/gamedev/herringbone/more_herringbone_tiles.html",
+    "https://github.com/nothings/stb/blob/003501f6d7a8668ce8b6d875e34dd97ad0d5d5b5/stb_herringbone_wang_tile.h"
+  ],
+  "evidence": "Original author text plus fixed v0.7 source producer / payload / selector paths independently read",
+  "original_contribution": "Hypothetical valid edge-template payload-only edit and concrete authoring handoff decisions, not semantic tile classification or observed generated output",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No generator execution, map load, assets, images or visual inspection",
+    "No Noita integration or version transfer",
+    "No full layout geometry, malformed-input safety, rotation or connectivity proof",
+    "2011 example ignored constraints; 2014 minimum correction and finite-crop limits retained",
+    "All indexed articles and prior experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 109,
+    "accepted_note_sha256": "796597b6779b920274df046895d0ae7a26af5596338a856a4b8996bb1a655dd7",
+    "static_archive_checks": 519,
+    "static_archive_failed": 0,
+    "optimized_python_archive_checks": 519,
+    "declared_paths_checked": 138,
+    "reviewed_locator_only_refinement": true
+  },
+  "next_action": "Select concrete undercovered production or QA source study after gate review"
+}
