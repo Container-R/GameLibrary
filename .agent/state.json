@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 65
+    "reader_books_total": 66
   },
   "publication": {
-    "last_verified_head_sha": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
+    "last_verified_head_sha": "6757162a2c28c5c0bc76df8ed7ae3c77eb14eae3",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "65 reader books; existing quaternion cubic-animation analysis now has a natural reader chapter and role/tool entry links.",
-    "latest_verified_content_sha": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
-    "reader_books_total": 65,
-    "post_baseline_research_books": 10,
-    "counts_basis": "One existing mathematical note readerization, not a new experimental result. Frozen55 remediation remains separate."
+    "scope": "66 reader books; chunk-update access guide with explicit sequential model, not native concurrency validation.",
+    "latest_verified_content_sha": "6757162a2c28c5c0bc76df8ed7ae3c77eb14eae3",
+    "reader_books_total": 66,
+    "post_baseline_research_books": 11,
+    "counts_basis": "Existing source-note readerization plus bounded original arithmetic interpreter; frozen55 remediation remains separate."
   },
-  "next_action": "Inspect existing Noita dirty-region/write-ownership source note and current simulation-reader coverage; only propose a reader-facing explanation if a concrete gap remains, not a duplicate mechanism article.",
+  "next_action": "Inspect existing PSO first-use source note and current rendering/build reader coverage for a concrete actionable gap; verify current official version context before deciding whether a reader update is justified.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T21:45:00Z",
+    "lease_until": "2026-11-01T22:00:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T205802Z-quaternion-sign-reader",
+  "last_run_id": "20261101T210642Z-simulation-read-write-reader",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T20:58:02Z",
-  "last_commit_sha": "2e6662bbb1a9f8f01a4635bf5a9b31d6e6428f64",
+  "last_real_progress_at": "2026-11-01T21:06:42Z",
+  "last_commit_sha": "6757162a2c28c5c0bc76df8ed7ae3c77eb14eae3",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

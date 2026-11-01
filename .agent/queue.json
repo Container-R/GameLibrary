@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T21:45:00Z",
+      "lease_until": "2026-11-01T22:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T20:58:02Z",
-      "next_action": "Inspect existing Noita dirty-region/write-ownership source note and current simulation-reader coverage; only propose a reader-facing explanation if a concrete gap remains, not a duplicate mechanism article.",
+      "last_progress_at": "2026-11-01T21:06:42Z",
+      "next_action": "Inspect existing PSO first-use source note and current rendering/build reader coverage for a concrete actionable gap; verify current official version context before deciding whether a reader update is justified.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6129,6 +6129,35 @@
       "next_action": "Use as ideal-real counterexample and transformation-scope guidance, not a floating-point validator or actual exporter defect report.",
       "blockers": [],
       "verification_method": "Existing original algebra readerization, fixed normative source reread and independent paper derivation; no asset, player or engine execution."
+    },
+    {
+      "id": "TASK-2026-0163",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can chunk-update tasks writing different locations still influence one another through reads?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "Make existing access-ownership research actionable through an explicit small example, without reconstructing an undocumented scheduler.",
+      "expected_artifact": "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+        "管理档案/审查/分块模拟读写关系-读者与有限模型审查.md",
+        "管理档案/支持资料/双位置更新顺序/README.md",
+        "管理档案/支持资料/双位置更新顺序/check.py"
+      ],
+      "acceptance": [
+        "Historical developer account separated from original model",
+        "Distinguish active region, update count, read/write coordination and semantics",
+        "Six finite orders with frozen expectations and independent review",
+        "Natural reader path, support return and source attribution"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T21:06:42Z",
+      "next_action": "Apply access and phase questions to concrete implementations; finite interpreter does not certify their concurrency or performance.",
+      "blockers": [],
+      "verification_method": "Historical original interview, original finite sequential interpreter and independent repeated checks; no Noita or real concurrency execution."
     }
   ],
   "execution_policy": {

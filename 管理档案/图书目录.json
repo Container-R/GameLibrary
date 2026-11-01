@@ -1349,6 +1349,22 @@
       "review_paths": [
         "管理档案/审查/四元数符号与三次插值-读者与来源审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-ENGINE-005",
+      "reader_title": "分块模拟中，为什么写不同位置仍可能互相影响",
+      "floor": "引擎与工具",
+      "area": "运行时系统",
+      "shelf": "并行模拟",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+      "reader_body_status": "published",
+      "editorial_status": "原访谈、独立全文审读与有限顺序解释器复核；实际本地检索接受",
+      "origin": "readerization-of-noita-dirty-region-note-with-finite-sequential-example",
+      "scope_note": "原创建模区分访问协调与更新语义；不证明Noita、真实线程或任意双缓冲安全",
+      "review_paths": [
+        "管理档案/审查/分块模拟读写关系-读者与有限模型审查.md"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -1361,6 +1377,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 65,
-  "post_baseline_research_books": 10
+  "reader_books_total": 66,
+  "post_baseline_research_books": 11
 }

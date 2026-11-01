@@ -1,0 +1,26 @@
+{
+  "run_id": "20261101T210642Z-simulation-read-write-reader",
+  "observed_at": "2026-11-01T21:06:42Z",
+  "parent_verified_head": "6757162a2c28c5c0bc76df8ed7ae3c77eb14eae3",
+  "task": "TASK-2026-0163",
+  "outcome": "Published reader-facing access/phase explanation and finite sequential model with pre-execution expectations and independent repeat.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+  "reader_sha256": "21f144ccda5bb6f4398ce6e5fe851a94b02307fe359c139129c95a65d794b8d7",
+  "source_scope": "2019-04-05 Petri Purho interview Optimization section; no source-code reconstruction or currentgame assertion.",
+  "independent_reader_review_sha256": "006f698620c9ba91dd3f0135f944fd265bec59c8adb349db723d66e84a5e84bc",
+  "local_navigation_review_sha256": "3ff4aa15d8e6c99ded59f325e0697e7e9100d16beca57875e141f3de75c12082",
+  "model": {
+    "protocol_sha256": "8c83cdec0aa24f332298c3a5846a68742d026f9850e45f76f909d8fff3d52fd6",
+    "script_sha256": "e263fccae254ed018e835647c23952b86dc16bf42856e69a823268aa10ee5fa8",
+    "output_sha256": "caf181e3b9551748aff601127cdabc6a830e14d258cdd0c114f0c2a413e7d74c",
+    "conditions": "Six legal event orders, two reading policies, five invalid controls; repeated normal/optimized runs do not multiply distinct coverage.",
+    "meaning": "Sequential enumeration of indivisible model events, not threads, language memory model, Noita or performance."
+  },
+  "prior_publication_readback": {
+    "commit": "6757162a2c28c5c0bc76df8ed7ae3c77eb14eae3",
+    "key_files_matched": 8,
+    "reader_books_tree_matched": 65,
+    "reader_links_tree_matched": 160
+  },
+  "publication_note": "Containing commit readback follows publication."
+}
