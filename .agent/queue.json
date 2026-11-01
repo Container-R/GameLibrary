@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T10:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:09:39.602956Z",
-      "next_action": "Read fixed official Vulkan maintenance1 present-fence retirement clauses; determine exact object-specific scope before any source-only addition",
+      "last_progress_at": "2026-11-01T09:13:10.128560Z",
+      "next_action": "Resolve a source-deferred object-specific presentation retirement contract without inheriting runtime evidence",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3669,6 +3669,31 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:09:39.602956Z",
       "commit_sha": "9ee60b56d3908cf4641d78542ecc057e18054356"
+    },
+    {
+      "id": "TASK-2026-0140",
+      "question": "Which object and past-request obligations are covered by one signaled maintenance1 present fence?",
+      "discipline": "GFX",
+      "status": "reviewing",
+      "priority": 90,
+      "priority_rationale": "Close a documented extension-path exclusion with a precise positive retirement condition rather than a generic completion warning",
+      "expected_artifact": "Fixed-source note with finite semaphore and swapchain receiving decisions",
+      "artifact_paths": [
+        "research/source-notes/vulkan-present-fence-retirement-coverage.md"
+      ],
+      "acceptance": [
+        "Pin official normative source and inspect transcluded signal conditions",
+        "Distinguish one associated operation fence from all past requests to a swapchain",
+        "Preserve image-use and host synchronization obligations",
+        "Limit ordered fence inference to same queue and swapchain with retained request identity",
+        "Do not claim platform support, runtime execution or full shutdown recovery"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T10:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:13:10.128560Z",
+      "next_action": "Validate exact independently reviewed source note and publish without legacy article changes",
+      "blockers": []
     }
   ]
 }

@@ -212,3 +212,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
 
 [TLOU2 混合探针表示的内容前提](../case-studies/rendering/tlou2-hybrid-probe-content-frequency.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。
+
+[Vulkan present fence 的退役覆盖](../research/source-notes/vulkan-present-fence-retirement-coverage.md)区分一次操作的 wait semaphore 与交换链全部过去请求的凭据；固定 KHR maintenance1 来源及原创未执行接收例，不是完整关闭流程。

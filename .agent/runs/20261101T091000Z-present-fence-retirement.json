@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T091000Z-present-fence-retirement",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0140"
+  ],
+  "started_at": "2026-11-01T09:10:33Z",
+  "ended_at": "2026-11-01T09:13:10.128560Z",
+  "outcome": "Fixed-source maintenance1 retirement note independently reviewed; validation pending",
+  "sources_examined": [
+    "https://github.com/KhronosGroup/Vulkan-Docs/tree/b94f8bd2d004d2949469d8a5071ee10eb7d23566",
+    "https://docs.vulkan.org/refpages/latest/refpages/source/VkSwapchainPresentFenceInfoKHR.html"
+  ],
+  "evidence_added": "Original normative present-fence, included signal, destruction and feature clauses with exact source identity",
+  "original_contribution": "Finite successful multi-swapchain request separates semaphore evidence from swapchain request coverage; same-queue ordering inference remains bounded",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No driver, validation layer, swapchain or platform support query",
+    "Successful enabled KHR path only; no errors or no-extension fallback",
+    "No display completion, memory-release timing or performance result",
+    "Existing historical presentation article and runtime archives unchanged"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 140,
+    "indexed_articles": 51,
+    "archive_checks_passed": 519,
+    "archive_checks_failed": 0,
+    "optimized_archive_checks_passed": 519,
+    "archive_check_scope": "Static declared archive consistency, not runtime or semantic validation",
+    "local_links_checked": 878,
+    "declared_paths_checked": 188
+  },
+  "next_action": "Verify publication then review a distinct evidence gap in existing production research"
+}
