@@ -2308,11 +2308,14 @@
       "id": "TASK-2026-0090",
       "question": "When a reusable light prop is placed in a receiving scene, which author should own a local, shared-preset or scene-policy correction?",
       "discipline": "GFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 84,
       "priority_rationale": "Address lighting-specific author/placer/receiving-scene interface; revised to avoid duplicating generic concept-art revision worksheets",
       "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/rendering/game-lighting-artist.md",
+        "research/source-notes/game-lighting-artist-role.md"
+      ],
       "acceptance": [
         "Direct named primary practitioner interviews and independent source/editorial review",
         "Concrete instance/shared/surface/scene-policy decision fork, not generic approval bookkeeping",
@@ -2322,8 +2325,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T04:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:44:59.934039Z",
-      "next_action": "Stage revised lighting responsibility draft after main and independent source/editorial acceptance",
+      "last_progress_at": "2026-11-01T03:47:13.519206Z",
+      "next_action": "Publish revised lighting production interface after source and novelty review",
       "blockers": []
     }
   ]

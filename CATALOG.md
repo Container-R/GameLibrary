@@ -16,6 +16,7 @@
 - [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `source-backed` · `PROD`
 - [玩法程序：从设计规则到可验收系统的责任边界](roles/programming/gameplay-programmer.md) — `source-backed` · `PROG`
 - [游戏质量保证：缺陷复现、版本风险与体验研究的责任边界](roles/qa/game-quality-assurance.md) — `source-backed` · `QA`
+- [游戏光照美术：共享灯具交给别人摆放后，应该改哪一层](roles/rendering/game-lighting-artist.md) — `source-backed` · `GFX`
 - [图形与渲染程序：从视觉需求到可维护渲染功能的交付责任](roles/rendering/graphics-programmer.md) — `source-backed` · `GFX`
 - [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `source-backed` · `TA`
 - [游戏 UX 设计师：从交互意图到可操作流程的接收责任](roles/ux/game-ux-designer.md) — `source-backed` · `UX`

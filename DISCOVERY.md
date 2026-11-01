@@ -266,3 +266,15 @@
 - 尚未审阅的范围由谁接受？ → [制作管理：从局部完成到接收方可用的依赖交接](roles/production/production-manager.md) — `ROLE-PROD-001` · `source-backed` · `PROD`
   - 关联理由：明确依赖和授权，不把风险接受记为测试通过。
 
+## 从游戏光照美术出发
+路线 ID：`role-lighting`
+
+岗位起点：[游戏光照美术：共享灯具交给别人摆放后，应该改哪一层](roles/rendering/game-lighting-artist.md) — `ROLE-GFX-002` · `source-backed` · `GFX`
+
+- 观感问题是否已经证实是渲染功能缺陷？ → [图形与渲染程序：从视觉需求到可维护渲染功能的交付责任](roles/rendering/graphics-programmer.md) — `ROLE-GFX-001` · `source-backed` · `GFX`
+  - 关联理由：艺术意图与实现/性能证据各自验收。
+- 内容工具能检查参数，但谁判断某次摆放合适？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：工具处理有效不等于视觉目的已经成立。
+- 为了构图移动遮挡，是否改变玩法约束？ → [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `ROLE-DESIGN-001` · `source-backed` · `DESIGN`
+  - 关联理由：修改范围须由对应空间和玩法责任人接收。
+

@@ -540,6 +540,29 @@
           "rationale": "明确依赖和授权，不把风险接受记为测试通过。"
         }
       ]
+    },
+    {
+      "id": "role-lighting",
+      "title": "从游戏光照美术出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-GFX-002",
+      "entries": [
+        {
+          "document_id": "ROLE-GFX-001",
+          "question": "观感问题是否已经证实是渲染功能缺陷？",
+          "rationale": "艺术意图与实现/性能证据各自验收。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "内容工具能检查参数，但谁判断某次摆放合适？",
+          "rationale": "工具处理有效不等于视觉目的已经成立。"
+        },
+        {
+          "document_id": "ROLE-DESIGN-001",
+          "question": "为了构图移动遮挡，是否改变玩法约束？",
+          "rationale": "修改范围须由对应空间和玩法责任人接收。"
+        }
+      ]
     }
   ]
 }

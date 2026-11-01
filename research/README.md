@@ -149,3 +149,5 @@ python3 scripts/evidence/test_verify.py
 [本地化语境变更交接](../roles/localization/localization-coordinator.md)研究同样文字的新用途如何进入各语言复查与实际候选；不是一次真实翻译、集成或LQA验收。
 
 [零值 stem 与结束输入](../solutions/audio/silent-stem-normalization-boundary.md)以完整原始 float32 波形区分输入寿命与缩放，三种配置各独立运行两次；没有听音或中间件调度验证。
+
+[共享灯具的分层交接](../roles/rendering/game-lighting-artist.md)把作者、摆放者和接收场景分开，先决定局部/共享/场景修改范围；没有实际渲染或因果验证。
