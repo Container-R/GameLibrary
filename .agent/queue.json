@@ -2897,7 +2897,7 @@
       "id": "TASK-2026-0112",
       "question": "How do translator comments and message lookup context differ in the Godot PO workflow, and which identity handoff deepens the existing localization role?",
       "discipline": "LOC",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Deepen an exact semantic-context to runtime-identity gap in existing ROLE-LOC-001 using targeted official documents and pinned source",
       "expected_artifact": "Bounded existing-role integration after documentation and extractor/import/lookup source-chain review",
@@ -2911,11 +2911,36 @@
         "Preserve original language-review decision and unexecuted Confirm scenario; no imposed translation",
         "No runtime, installed-binary identity, GNU merge/fuzzy behavior or undocumented fallback claims"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:11:13.574740Z",
-      "next_action": "Review integrated translator-comment versus lookup-identity mechanism and publish existing-role depth",
+      "next_action": "Retain default-path source scope and language-first decisions; no generated template or runtime translation result",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:13:39.272887Z",
+      "commit_sha": "9bf16fd822888f7a218df5a192be8f86e7da6160"
+    },
+    {
+      "id": "TASK-2026-0113",
+      "question": "How can a tutorial-hint experiment define comparable eligibility in both arms without selecting on treatment-only clicks?",
+      "discipline": "DATA",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen an exact cohort-selection mechanism in existing ROLE-DATA-001 with a concrete design tradeoff, not another generic causality disclaimer",
+      "expected_artifact": "Integrated first-opportunity eligibility and counterfactual-logging method box if independent source review supports assumptions",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original Microsoft ExP pre/post experiment methods and distinguish cross-domain migration from game evidence",
+        "Define shared eligibility and evaluation timing before treatment can affect it; preserve this as an assumption to verify",
+        "Contrast all-assigned and triggered populations against treatment-only click filtering",
+        "Discuss logging cost and sensitivity without quantitative power or outcome claims",
+        "No SRM/complement-pass sufficiency, individual counterfactual-outcome knowledge or ratio dilution shortcut; no player data/runtime"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:50:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:13:39.272887Z",
+      "next_action": "Independently review counterfactual logging and triggered population source gate",
       "blockers": []
     }
   ]
