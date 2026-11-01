@@ -1,39 +1,40 @@
 {
   "schema_version": 2,
   "reader_baseline": {
-    "normal_backlog_paused": true,
-    "whole_library_rebuild_complete": false,
+    "normal_backlog_paused": false,
+    "whole_library_rebuild_complete": true,
     "pending_content_dispositions": 0,
     "counts_are_not_quality_approval": true,
-    "counts_scope": "Reader bodies and scope dispositions in verified content revision 02eb6dbf6897b8582b31c2169c04060d5d6dccf4; physical root migration incomplete",
+    "counts_scope": "Frozen 55-item reader remediation and content dispositions accepted; current root consolidation verified at 0702cce22b393a038e9d500788b5d022ae39fba5. Not a claim of complete domain coverage or fresh semantic review of every source.",
     "rewritten_reader_books": 55,
     "legacy_entries_remaining": 0,
-    "accounted_for_original_items": 55
+    "accounted_for_original_items": 55,
+    "physical_root_consolidation_complete": true
   },
   "publication": {
-    "last_verified_head_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476",
-    "status": "local-root-consolidation-preview-not-published",
-    "authorization": "Reader-standard-consistent, recoverable reorganization authorized; no private disclosure, force push or irreversible deletion; this preview is not published",
-    "scope": "All 55 reader articles are published; historical-record sanitization and repository-root consolidation remain in progress.",
+    "last_verified_head_sha": "0702cce22b393a038e9d500788b5d022ae39fba5",
+    "status": "published-verified",
+    "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
+    "scope": "Frozen reader baseline remediation accepted; 55 reader articles and current support/maintenance hierarchy published. Historical records remain in fixed Git history.",
     "counts_snapshot_head": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-    "latest_verified_content_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476"
+    "latest_verified_content_sha": "0702cce22b393a038e9d500788b5d022ae39fba5"
   },
-  "next_action": "Verify the published root guide and required support paths; complete independent reader review before resuming the paused research backlog.",
+  "next_action": "Revisit the existing DOOM original-source access gate; admit a mechanism article only after inspecting a concrete primary technical segment. If access remains insufficient, retain the negative finding and continue another existing executable queue item.",
   "audit": {
-    "overall_reader_rebuild_status": "quality-regression",
-    "meaning": "Existing library remediation is incomplete; accepted new reader bodies have individual review records",
-    "current_health": "quality-regression",
-    "scope": "reader_content_remediation; not whole-window operational availability",
-    "latest_review_path": ".agent/audits/20261101T165000Z-reader.md",
-    "latest_review_observed_at": "2026-11-01T16:46:00Z",
-    "latest_review_status": "at-risk",
-    "latest_review_scope": "Published reader sample passed; pending publication payload screening missed installation metadata and required correction. Historical observation retained; not a current whole-project pass."
+    "overall_reader_rebuild_status": "accepted-scoped",
+    "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
+    "current_health": "active",
+    "scope": "Frozen inventory and reader navigation acceptance; not all historical experiments or all technical claims independently rerun.",
+    "latest_review_path": ".agent/audits/20261101T171800Z-final-reader.md",
+    "latest_review_observed_at": "2026-11-01T17:18:00Z",
+    "latest_review_status": "accepted-scoped",
+    "latest_review_scope": "Remote root, three complete reader routes, three full articles, one support note and key primary sources. Not a human usability study or all-55 fresh semantic re-review."
   },
   "evidence_policy": "Distinguish source analysis, paper calculations, historical observations and new runtime evidence; publish no private execution metadata",
   "project": "Container-R/GameLibrary",
-  "current_phase": "reader-baseline-rebuild",
+  "current_phase": "source-grounded-reader-research",
   "active_task_ids": [
-    "TASK-2026-0152"
+    "TASK-2026-0133"
   ],
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -52,10 +53,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T17:45:00Z",
-    "scope": "Single writer for authorized reader remediation and public-record sanitization"
+    "lease_until": "2026-11-01T18:05:00Z",
+    "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T170301Z-legacy-reader-retirement",
+  "last_run_id": "20261101T172303Z-reader-baseline-acceptance",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -74,8 +75,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T17:03:01Z",
-  "last_commit_sha": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+  "last_real_progress_at": "2026-11-01T17:23:03Z",
+  "last_commit_sha": "0702cce22b393a038e9d500788b5d022ae39fba5",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -87,7 +88,7 @@
     "technical_claims_changed_in_this_revision": false
   },
   "root_consolidation": {
-    "status": "awaiting_remote_readback_and_independent_reader_review",
+    "status": "published-and-reader-review-accepted",
     "basis_commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
     "current_layout_intent": [
       "README.md",
@@ -96,6 +97,8 @@
       "necessary hidden project files"
     ],
     "history_rewritten": false,
-    "old_experiments_executed": false
+    "old_experiments_executed": false,
+    "verified_commit": "0702cce22b393a038e9d500788b5d022ae39fba5",
+    "verified_tree": "536833c7406af95ead3ec54029a3028c4091274d"
   }
 }

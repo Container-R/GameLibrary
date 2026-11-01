@@ -4961,7 +4961,7 @@
       "id": "TASK-2026-0133",
       "question": "Can original DOOM production combat and animation material support a concrete encounter-control mechanism beyond existing timing and ownership notes?",
       "discipline": "DESIGN",
-      "status": "paused",
+      "status": "researching",
       "priority": 92,
       "priority_rationale": "Deepen actual production-case understanding and implementation tradeoffs without role-count padding",
       "expected_artifact": "A primary-source access and mechanism gate with concrete constraints, source locations and transfer limits",
@@ -4975,16 +4975,15 @@
         "Reject generic or duplicative expansion and preserve source-access limits",
         "No participant data, private runtime artifacts or held publication content"
       ],
-      "owner": null,
-      "lease_until": null,
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T18:05:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T08:21:31.142344Z",
-      "next_action": "Resume only after reader-baseline migration and editorial acceptance; do not add new topics meanwhile",
+      "last_progress_at": "2026-11-01T17:23:03Z",
+      "next_action": "Revisit the existing DOOM original-source access gate; admit a mechanism article only after inspecting a concrete primary technical segment. If access remains insufficient, retain the negative finding and continue another existing executable queue item.",
       "blockers": [
         "No directly inspected original technical segment available through the attempted public text/video routes"
       ],
       "previous_status": "needs-research",
-      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence",
       "historical_artifacts": [
         {
           "path": "research/source-gates/doom-combat-technical-content.md",
@@ -5696,7 +5695,7 @@
       "id": "TASK-2026-0152",
       "question": "How can the library be reorganized and rewritten so developers can browse by discipline and read useful natural technical articles?",
       "discipline": "PROD",
-      "status": "researching",
+      "status": "published",
       "priority": 100,
       "priority_rationale": "Current reader-facing baseline is inadequate; navigation and article quality supersede normal coverage expansion",
       "expected_artifact": "Inventory and old/new mapping, root reader guide, discipline/area/shelf/book hierarchy, rewritten sample and reader-first acceptance records",
@@ -5761,7 +5760,8 @@
         "GameLibrary/叙事设计/剧情制作/对白与配音/Cygames如何衔接剧本修改与录音制作.md",
         "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
         "GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md",
-        "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md"
+        "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+        ".agent/audits/20261101T171800Z-final-reader.md"
       ],
       "acceptance": [
         "Agree hierarchy mapping before moving files",
@@ -5771,16 +5771,16 @@
         "Use independent reader comprehension review, not only source correctness",
         "Preserve history and keep restricted execution evidence separately held"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T17:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-11-01T17:03:01Z",
-      "next_action": "Verify the published root guide and required support paths; complete independent reader review before resuming the paused research backlog.",
+      "last_progress_at": "2026-11-01T17:23:03Z",
+      "next_action": "Maintain the accepted reader-first baseline during subsequent research; address concrete reader findings without reopening the entire completed remediation by counts alone.",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
         "sample_reader_review_accepted": true,
-        "whole_library_rebuild_complete": false,
+        "whole_library_rebuild_complete": true,
         "phase_one_published_sha": "3f5d5140fcd7d113476e8cc0aab962a7900f53fe",
         "phase_one_readback_verified": true,
         "second_reader_batch_published_sha": "e88adbddc927f216ed2949108e53f6e668f19d62",
@@ -5819,8 +5819,10 @@
         "reader_content_published_sha": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
         "public_recovery_record_published_sha": "60b517c093d0fc1e5ee002ae38a0a0286c6f6076",
         "public_recovery_receipt": ".agent/runs/20261101T153110Z-reader-recovery.json",
-        "root_consolidation_complete": false,
-        "scope_note": "Reader bodies and reviewed original-content dispositions are published; this does not certify every technical claim, physically migrate historical files, or finish root consolidation and historical-record redaction."
+        "root_consolidation_complete": true,
+        "scope_note": "All frozen original items have reviewed dispositions and reader treatments. Current root and necessary support paths are consolidated; final independent remote review sampled three full reader routes, not all sources or historical runtime evidence.",
+        "root_published_sha": "0702cce22b393a038e9d500788b5d022ae39fba5",
+        "final_independent_reader_review": ".agent/audits/20261101T171800Z-final-reader.md"
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation.",
       "historical_artifacts": [
