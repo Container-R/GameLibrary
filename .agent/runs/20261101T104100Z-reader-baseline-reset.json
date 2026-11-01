@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T104100Z-reader-baseline-reset",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T10:42:26.603278Z",
+  "ended_at": "2026-11-01T10:42:26.603278Z",
+  "outcome": "Reader-first requirements and backlog pause recorded; hierarchy and prose repair not yet completed",
+  "baseline_head": "7b814940f8fb48f3567588f21cc95e5169391a23",
+  "baseline_indexed_articles": 55,
+  "new_articles_published": 0,
+  "actions": [
+    "Raised reader-baseline rebuild above normal topic expansion",
+    "Paused coverage and deferred topic queue entries without changing published or separately blocked tasks",
+    "Added reader navigation, natural technical writing, bottom references and cross-engine acceptance requirements"
+  ],
+  "pending": [
+    "Coordinated architecture mapping",
+    "Representative rewritten sample and independent reader review",
+    "Physical migration and root guide"
+  ],
+  "limitations": [
+    "This checkpoint is not evidence that readers can already navigate or understand the existing library",
+    "No old article or runtime archive moved, rewritten or republished",
+    "Unpublished candidate stays local; no ref update from its prepared trees"
+  ],
+  "next_action": "Integrate coordinated architecture mapping, rewritten sample and updated skill; no restructuring until mapping is ready"
+}

@@ -1,30 +1,32 @@
 {
   "schema_version": 1,
   "project": "Container-R/GameLibrary",
-  "current_phase": "coverage-and-depth",
+  "current_phase": "reader-baseline-rebuild",
   "active_task_ids": [
-    "TASK-2026-0008"
+    "TASK-2026-0152"
   ],
   "last_completed_at": "2026-11-01T10:32:58.438383Z",
-  "last_real_progress_at": "2026-11-01T10:32:58.438383Z",
+  "last_real_progress_at": "2026-11-01T10:42:26.603278Z",
   "last_commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
-  "last_run_id": "20261101T102800Z-three-source-depth-review",
-  "next_action": "Read first-party VALORANT visibility and ongoing-effect re-entry mechanism; distinguish deliberate event omission from reliable delivery",
+  "last_run_id": "20261101T104100Z-reader-baseline-reset",
+  "next_action": "Integrate coordinated architecture mapping, rewritten sample and updated skill; no restructuring until mapping is ready",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
     "last_checked_at": "2026-11-01T08:56:00Z",
-    "research_health": "healthy",
+    "research_health": "quality-regression",
     "publication_hold_resolved_at": "2026-10-31T16:18:40.694275Z",
     "last_audit_record": ".agent/audits/20261101T085000Z.json",
     "historical_research_health": "healthy_at_1654_observation",
-    "current_health": "healthy",
+    "current_health": "quality-regression",
     "whole_audit_window_healthy": false,
     "audit_snapshot_head": "fd1cc1b23d130bb3d7819bce49a9cc71308b4aae",
     "snapshot_archive_checks": 519,
     "latest_post_snapshot_content": "0b3042daccb997d57cfc375e045d8590f0513da9",
     "remote_blob_sample_scope": "No independent blob-equality sample in this supervisor; Steam sources and finite-set reasoning reviewed",
-    "snapshot_archive_check_scope": "Supervisor read the primary worker remote run report; no independent rerun"
+    "snapshot_archive_check_scope": "Supervisor read the primary worker remote run report; no independent rerun",
+    "reader_baseline_status": "rebuild-required",
+    "assessment_basis": "Directory usability, natural technical writing, bottom references and cross-engine usefulness require correction; prior counts and archive checks do not establish reader acceptance"
   },
   "publication": {
     "visibility": "public",
@@ -32,7 +34,7 @@
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
     "latest_verified_content_sha": "0b3042daccb997d57cfc375e045d8590f0513da9",
-    "status": "source-only-lane-operational; separate runtime-evidence release pending",
+    "status": "new-topic-publication-paused; reader-baseline checkpoint and coordinated migration only",
     "deferred_optional_indexes": [],
     "object_visibility_recovery": {
       "first_observed": "2026-11-01T02:20:00Z",
@@ -68,5 +70,14 @@
     "all_2005_remote_blobs_matched": true,
     "prior_uncommitted_SQLite_evidence_lost": true,
     "new_runs_independently_reviewed": true
+  },
+  "reader_baseline": {
+    "priority": "highest",
+    "normal_backlog_paused": true,
+    "hierarchy_target": "GameLibrary / discipline / area / shelf / book",
+    "root_guide_required": true,
+    "migration_started": false,
+    "sample_rewrite_accepted": false,
+    "restricted_evidence_hold_unchanged": true
   }
 }

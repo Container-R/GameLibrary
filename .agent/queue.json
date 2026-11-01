@@ -201,7 +201,7 @@
       "id": "TASK-2026-0008",
       "question": "\u6838\u5b9e\u6e38\u620f\u5f00\u53d1\u5168\u5b66\u79d1\u804c\u8d23\u77e9\u9635\uff0c\u8865\u9f50\u672a\u8986\u76d6\u7684\u91cd\u8981\u65b9\u5411",
       "discipline": "PROD",
-      "status": "researching",
+      "status": "paused",
       "priority": 88,
       "priority_rationale": "\u5177\u4f53\u95ee\u9898\u5177\u6709\u8de8\u5b66\u79d1\u590d\u7528\u4ef7\u503c\u53ca\u516c\u5f00\u4e00\u624b\u8d44\u6599\u6f5c\u529b",
       "expected_artifact": "taxonomy/roles-and-work-areas.md",
@@ -212,12 +212,12 @@
         "\u7b26\u5408\u4ed3\u5e93\u77e5\u8bc6\u6a21\u677f\u4e0e\u8bc1\u636e\u8981\u6c42"
       ],
       "source_leads": [],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "completed_at": null,
       "last_progress_at": "2026-11-01T10:32:58.438383Z",
-      "next_action": "Read first-party VALORANT visibility and ongoing-effect re-entry mechanism; distinguish deliberate event omission from reliable delivery",
+      "next_action": "Resume only after reader-baseline migration and editorial acceptance; do not add new topics meanwhile",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -225,7 +225,9 @@
         "scripts/test_taxonomy.py",
         "research/audits/queue-contract-guard/coverage-gate.md"
       ],
-      "scope_note": "\u5c40\u90e8\u8986\u76d6\u5ba1\u8ba1\u4e0d\u662f\u5168\u5b66\u79d1\u5206\u7c7b\u7814\u7a76\u5b8c\u6210"
+      "scope_note": "\u5c40\u90e8\u8986\u76d6\u5ba1\u8ba1\u4e0d\u662f\u5168\u5b66\u79d1\u5206\u7c7b\u7814\u7a76\u5b8c\u6210",
+      "previous_status": "researching",
+      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence"
     },
     {
       "id": "TASK-2026-0010",
@@ -3479,7 +3481,7 @@
       "id": "TASK-2026-0133",
       "question": "Can original DOOM production combat and animation material support a concrete encounter-control mechanism beyond existing timing and ownership notes?",
       "discipline": "DESIGN",
-      "status": "needs-research",
+      "status": "paused",
       "priority": 92,
       "priority_rationale": "Deepen actual production-case understanding and implementation tradeoffs without role-count padding",
       "expected_artifact": "A primary-source access and mechanism gate with concrete constraints, source locations and transfer limits",
@@ -3497,10 +3499,12 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:21:31.142344Z",
-      "next_action": "Reopen only when a legally readable original technical slide or timed talk segment establishes actual DOOM mechanism and limits; no abstract-based article",
+      "next_action": "Resume only after reader-baseline migration and editorial acceptance; do not add new topics meanwhile",
       "blockers": [
         "No directly inspected original technical segment available through the attempted public text/video routes"
-      ]
+      ],
+      "previous_status": "needs-research",
+      "pause_reason": "Reader-first hierarchy, navigation, article quality and engine-generality baseline rebuild takes precedence"
     },
     {
       "id": "TASK-2026-0134",
@@ -4008,6 +4012,37 @@
       "blockers": [],
       "completed_at": "2026-11-01T10:32:58.438383Z",
       "commit_sha": "0b3042daccb997d57cfc375e045d8590f0513da9"
+    },
+    {
+      "id": "TASK-2026-0152",
+      "question": "How can the library be reorganized and rewritten so developers can browse by discipline and read useful natural technical articles?",
+      "discipline": "PROD",
+      "status": "researching",
+      "priority": 100,
+      "priority_rationale": "Current reader-facing baseline is inadequate; navigation and article quality supersede normal coverage expansion",
+      "expected_artifact": "Inventory and old/new mapping, root reader guide, discipline/area/shelf/book hierarchy, rewritten sample and reader-first acceptance records",
+      "artifact_paths": [
+        "RESEARCH_STANDARDS.md"
+      ],
+      "acceptance": [
+        "Agree hierarchy mapping before moving files",
+        "Provide a root guide and browsable discipline/area/shelf/book paths",
+        "Rewrite a representative book in natural technical prose with bottom references",
+        "Separate general knowledge from engine-specific validation",
+        "Use independent reader comprehension review, not only source correctness",
+        "Preserve history and keep restricted execution evidence separately held"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T11:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:42:26.603278Z",
+      "next_action": "Integrate coordinated architecture mapping, rewritten sample and updated skill; no restructuring until mapping is ready",
+      "blockers": []
     }
-  ]
+  ],
+  "execution_policy": {
+    "normal_research_paused": true,
+    "highest_priority": "reader-baseline-rebuild",
+    "resume_condition": "Reader navigation and editorial baseline accepted"
+  }
 }
