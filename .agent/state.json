@@ -13,16 +13,16 @@
     "reader_books_total": 62
   },
   "publication": {
-    "last_verified_head_sha": "dc610aa5a52a5c5ed0c91659d66164fcf7e2f00a",
+    "last_verified_head_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "62 reader books; existing PCM chapter gains limited RFC7845 seek-preparation distinction, not new playback evidence.",
-    "latest_verified_content_sha": "dc610aa5a52a5c5ed0c91659d66164fcf7e2f00a",
+    "scope": "62 reader books; existing cloud-save chapter distinguishes replacement visibility, storage synchronization and multi-file coherence, not a crash-safe implementation.",
+    "latest_verified_content_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
     "reader_books_total": 62,
     "post_baseline_research_books": 7,
-    "counts_basis": "62 readers unchanged; focused integration into SOL-MUSIC-001 rather than another book."
+    "counts_basis": "62 readers unchanged; finite integration into SOL-PLATFORM-001."
   },
-  "next_action": "Complete bounded independent Horizon streaming reader/source maintenance review and resolve any actual dependency-readiness wording gap; do not force an edit if the source and current reader already agree.",
+  "next_action": "Review a finite native ENet peer_send queue-only protocol using fixed upstream sources, initialization invariants and literal expected command cases; do not execute sockets or infer delivery/performance, and do not replace upstream branches with a toy model.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T20:20:00Z",
+    "lease_until": "2026-11-01T20:30:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T193913Z-opus-seek-entry",
+  "last_run_id": "20261101T194643Z-save-replacement-scope",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T19:39:13Z",
-  "last_commit_sha": "dc610aa5a52a5c5ed0c91659d66164fcf7e2f00a",
+  "last_real_progress_at": "2026-11-01T19:46:43Z",
+  "last_commit_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

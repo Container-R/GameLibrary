@@ -1,0 +1,33 @@
+{
+  "run_id": "20261101T194643Z-save-replacement-scope",
+  "observed_at": "2026-11-01T19:46:43Z",
+  "parent_verified_head": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
+  "task": "TASK-2026-0008",
+  "outcome": "Added bounded OS-source distinctions to the current cloud-save reader; no new book or filesystem experiment.",
+  "reader_path": "GameLibrary/平台与发行/平台接入/云存档/Steam动态云同步恢复后的存档冲突处理.md",
+  "reader_sha256": "f59209f9a9ff9daeab9372b7d87b2ac0de94ef0fdb1a37cb17983354822dd21e",
+  "sources": [
+    "Linux man-pages6.19 rename/fsync",
+    "Microsoft ReplaceFileW rolling reference read2026-11-01"
+  ],
+  "independent_reader_review_sha256": "de736766c5c278097d6f837c1e291b397d25490d0224f450aa081b92982e3a35",
+  "verification_method": "Primary API text and independent full-reader/source review; original two-file step counterexample is not an observed crash outcome.",
+  "reader_books": 62,
+  "prior_publication_readback": {
+    "commit": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
+    "key_files_matched": 2,
+    "reader_books_tree_matched": 62,
+    "reader_links_tree_matched": 153
+  },
+  "maintenance_review": {
+    "reader": "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
+    "review_sha256": "348029a5a1e55c31445968ba3a625a6cf280fe710d10ea770ca851b5b9f68535",
+    "result": "No necessary content change after independent full-reader and original PDF text review, physical pages8,16-20,29,49 plus21-27.",
+    "scope": "No image-detail analysis, runtime or all-library review; earlier access failure remains a historical observation."
+  },
+  "rejected_duplicate": {
+    "question": "glTF cubic rotation sign changes versus key-pose equivalence",
+    "reason": "Current animation-role reader and existing quaternion support already fully cover the proposed mechanism; fixed spec reread agreed, no new model or reader."
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

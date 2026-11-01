@@ -70,6 +70,14 @@ Steam 层可能已经处理过某些文件冲突，应用不一定能拿到云�
 
 需要复查该边界，可读[旧文件替换反例](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/platform/cloud-save-resume-boundary.md#linuxtmpfs-实际路径替换反例完整不等于新版本)。这与断电持久性、跨设备同步和任意平台上的完整保证不同，本次没有重跑或新增文件系统测试。
 
+### 替换完整、落盘可靠和多文件一致，是不同的检查
+
+以 Linux 文档为例，`rename` 替换已有目标名称时，其他进程不会在中间发现目标名称暂时缺失；已经打开的文件描述符则不因此切换到新文件。[4] 这是名称替换的可见行为，不等于断电恢复协议。`fsync` 文档还区分文件数据与目录项：同步文件本身，不一定已经把包含它的目录项同步到持久存储，后者需要另行同步目录。[5] 因此，不能只看到“替换成功”，就宣布新存档已经按项目的崩溃恢复要求保存；调用失败、存储支持与恢复流程仍要分别检查。
+
+也不要把一套操作的结论直接搬到另一平台。Windows `ReplaceFileW` 的 `REPLACEFILE_WRITE_THROUGH` 标志被文档明确标为不支持；它还列出不同失败后的文件状态。例如错误1176在未指定备份名时，原被替换文件可能已经不存在，而替换文件仍保留原名。[6] 失败不是可以一律重试或一律当作“什么也没发生”的同义词。本节不是 Windows 持久保存配方；项目应按实际接口结果检查保留下来的候选，而不是无条件清理临时文件。
+
+最后，即使单个文件的替换各自完整，也不自动组成多文件的一次提交。假设槽里有角色数据和任务数据：两者原本都属于 A，程序先把角色文件换成 B，随后在替换任务文件前停止，就留下 B/A 的组合。这是按步骤推演的反例，不是断电实验。前面的候选验证因此需要能识别它们是否属于同一份保存；选择单一容器、版本清单或其他恢复办法，还要设计各自的提交与恢复过程，不能只给两次替换套一个“批次”名字。
+
 ## 用真正的双设备过程检验，而不只看云图标
 
 Valve 提供了动态云同步的本地测试办法，并警告：直接向不处理新回调的旧构建全面启用，可能导致数据丢失。[1] 接入前应对照项目实际 SDK、Steam 客户端、操作系统和应用版本，在受控账户及可丢弃存档上安排验证，不直接拿玩家唯一进度试错。
@@ -89,6 +97,10 @@ Valve 提供了动态云同步的本地测试办法，并警告：直接向不�
 1. Valve，[*Steam Cloud*](https://partner.steamgames.com/doc/features/cloud)，Dynamic Cloud Sync 及其 Pre-release Testing。仅据文档解释通知与测试入口，不声称获得完整应用写入顺序保证。
 2. Valve，[*ISteamRemoteStorage Interface*](https://partner.steamgames.com/doc/api/ISteamRemoteStorage)，本地文件变化枚举、路径类型、写入批次与异步写完成说明。
 3. Python，3.12系列 [*os.replace*](https://docs.python.org/3.12/library/os.html#os.replace)，本次页面显示3.12.16。用于区分文件操作语义与业务版本决策，不将它解释为条件比较替换或崩溃持久性承诺。
+
+4. Linux man-pages 6.19，[*rename(2)*](https://man7.org/linux/man-pages/man2/rename.2.html)，DESCRIPTION；该接口不跨挂载点重命名，NFS还存在返回失败但操作已发生的情况，不将局部说明推广为任意文件系统的失败保证。
+5. Linux man-pages 6.19，[*fsync(2)*](https://man7.org/linux/man-pages/man2/fsync.2.html)，DESCRIPTION、RETURN VALUE与ERRORS；文档页标注2026-02-08，不表示本篇运行了对应内核或文件系统。
+6. Microsoft，[*ReplaceFileW*](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew)，标志、返回错误及同卷要求；2026-11-01读取滚动API文档，无Windows执行。
 
 版本关系、停写与候选处理是本文整理的应用设计建议；历史模型和有限文件实验仍按原范围解释，没有被重新认证成平台方案。
 
