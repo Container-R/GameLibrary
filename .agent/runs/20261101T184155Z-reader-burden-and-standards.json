@@ -1,0 +1,33 @@
+{
+  "run_id": "20261101T184155Z-reader-burden-and-standards",
+  "observed_at": "2026-11-01T18:41:55Z",
+  "parent_verified_head": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
+  "task": "TASK-2026-0008",
+  "outcome": "Applied two small readability changes after an independent reader-question review; reconciled obsolete temporary pause wording and queue count in the current standards. No new mechanism or book.",
+  "reader_review_scope": "Agent read both full build and graphics chapters and answered concrete newcomer questions; not a human usability study, independent remote snapshot comparison or renewed review of every original source.",
+  "reader_changes": [
+    "Marked advanced CMake distinctions as implementation-time details.",
+    "Split PSO preparation scope from display timing and explained the rendering-side proxy term."
+  ],
+  "standards_correction": {
+    "old_status": "Temporary research pause and incomplete consolidation remained in standards after scoped closure.",
+    "new_status": "Permanent reader baseline retained; restored research status is backed by historical closure state. No relaxation of quality, source or privacy requirements.",
+    "closure_commit_verified": "2a9573326c8a280965aa2881d41022d7a634c5df",
+    "queue_expected_count": 154
+  },
+  "prior_publication_readback": {
+    "commit": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
+    "changed_reader_files_matched": 2,
+    "reader_books_tree_matched": 58,
+    "reader_links_tree_matched": 135
+  },
+  "reader_books": 58,
+  "new_books": 0,
+  "verification_method": "Limited text comparison and reader comprehension review; no runtime or player test.",
+  "publication_note": "Containing commit readback follows publication.",
+  "accepted_reader_sha256": {
+    "build": "302b84d4e5697f08f2ab1c994a1a97db1c10e66c5fd64b35d8b5107f86ba9af9",
+    "graphics": "0c50df2f2706f2c9b4129cfa3209e9d2d40e6ccf5fc392c8623d2f6babb04852"
+  },
+  "independent_revision_check": "Reversing only the two proposed wording changes restored the exact initial reviewed body hashes; no unrelated prose changes."
+}

@@ -13,16 +13,16 @@
     "reader_books_total": 58
   },
   "publication": {
-    "last_verified_head_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
+    "last_verified_head_sha": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
     "scope": "58 reader books, unchanged by existing-chapter integrations. Source analysis and finite offline checks are not runtime or participant evidence.",
-    "counts_snapshot_head": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
-    "latest_verified_content_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
+    "counts_snapshot_head": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
+    "latest_verified_content_sha": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
     "reader_books_total": 58,
     "post_baseline_research_books": 3
   },
-  "next_action": "Review an existing cross-disciplinary source mechanism against current reader coverage; prefer a specific missing failure condition and reject duplicate or inaccessible leads before editing.",
+  "next_action": "Stop adding mechanisms to the reviewed build and graphics role chapters. Select a specific uncovered engineering question only after checking existing reader and support coverage; maintain reader comprehension and original-source gates.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T19:00:00Z",
+    "lease_until": "2026-11-01T19:10:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T183735Z-render-readiness-integration",
+  "last_run_id": "20261101T184155Z-reader-burden-and-standards",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T18:37:35Z",
-  "last_commit_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
+  "last_real_progress_at": "2026-11-01T18:41:55Z",
+  "last_commit_sha": "3b44ecc1f6815e7363ecec40defafdcfb5bb5d59",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
