@@ -2037,7 +2037,10 @@
       "priority": 87,
       "priority_rationale": "Practitioner-grounded concept-art role gap connects design intent to environment production without duplicating technical import checks",
       "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/art2d/environment-concept-artist.md",
+        "research/source-notes/environment-concept-artist-role.md"
+      ],
       "acceptance": [
         "Named PlatinumGames and Bungie original practitioner text with exact historical dates",
         "Separate image purpose and production handoff from buildable asset/visual/player proof",
@@ -2047,8 +2050,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T02:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:48:19.195821Z",
-      "next_action": "Integrate independently reviewed ROLE-ART2D-001 article429b80d2 and source90ee4856; no runtime or image validation claimed",
+      "last_progress_at": "2026-11-01T01:49:48.989263Z",
+      "next_action": "Publish independently reviewed environment concept role and original unexecuted ambiguity-map worksheet",
       "blockers": []
     }
   ]

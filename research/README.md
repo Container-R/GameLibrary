@@ -129,3 +129,5 @@ python3 scripts/evidence/test_verify.py
 [游戏 UX 设计师](../roles/ux/game-ux-designer.md)区分决策意图、真实交互、语言布局与玩家理解；原创工作表没有执行或用户验证。
 
 [CharacterBody3D实际移动夹具](experiments/godot-character-motion/README.md)以双通道证明空起终点不能替代途中碰撞检查；未验证完整导航控制器或最终无重叠。
+
+[环境概念美术](../roles/art2d/environment-concept-artist.md)区分图的用途、白盒约束与未定义制作问题；原创工作表未绘制或执行。

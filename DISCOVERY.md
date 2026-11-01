@@ -204,3 +204,17 @@
 - 作者引导后的顺利操作，能说明什么？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
   - 关联理由：区分试玩干预、观察范围与玩家研究结论。
 
+## 从环境概念美术出发
+路线 ID：`role-concept-art`
+
+岗位起点：[环境概念美术：从透视图中的意图到可解释的制作交接](roles/art2d/environment-concept-artist.md) — `ROLE-ART2D-001` · `source-backed` · `ART2D`
+
+- 覆盖绘制输入中的空间要求由谁确认？ → [关卡策划：从遭遇意图与白盒到可验收的空间交接](roles/design/level-designer.md) — `ROLE-DESIGN-001` · `source-backed` · `DESIGN`
+  - 关联理由：区分美术意图与实际关卡设计/行为证据。
+- 设计方案怎样进入技术制作接口？ → [技术美术：把艺术意图变成可重复交付的资产管线](roles/technical-art/technical-artist.md) — `ROLE-TA-001` · `source-backed` · `TA`
+  - 关联理由：不把可导入资产当作概念目标已实现。
+- 数据合法是否说明已做出预期形状？ → [有效字节不等于正确顶点：glTF 交错属性的偏移、步长与几何验收](solutions/modeling/gltf-interleaved-attribute-contract.md) — `SOL-MODEL-001` · `source-backed` · `MODEL`
+  - 关联理由：保持属性、拓扑和视觉结果的验收边界。
+- 设计者能解释画面，是否等于玩家理解？ → [主持人提示后的通关，不能验证无提示关卡引导](solutions/production/playtest-intervention-evidence.md) — `SOL-PROD-001` · `source-backed` · `PROD`
+  - 关联理由：需要与问题相匹配的真实观察，不借用其他实验结果。
+

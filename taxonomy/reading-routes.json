@@ -413,6 +413,34 @@
           "rationale": "区分试玩干预、观察范围与玩家研究结论。"
         }
       ]
+    },
+    {
+      "id": "role-concept-art",
+      "title": "从环境概念美术出发",
+      "kind": "role",
+      "subject_profile_id": "ROLE-ART2D-001",
+      "entries": [
+        {
+          "document_id": "ROLE-DESIGN-001",
+          "question": "覆盖绘制输入中的空间要求由谁确认？",
+          "rationale": "区分美术意图与实际关卡设计/行为证据。"
+        },
+        {
+          "document_id": "ROLE-TA-001",
+          "question": "设计方案怎样进入技术制作接口？",
+          "rationale": "不把可导入资产当作概念目标已实现。"
+        },
+        {
+          "document_id": "SOL-MODEL-001",
+          "question": "数据合法是否说明已做出预期形状？",
+          "rationale": "保持属性、拓扑和视觉结果的验收边界。"
+        },
+        {
+          "document_id": "SOL-PROD-001",
+          "question": "设计者能解释画面，是否等于玩家理解？",
+          "rationale": "需要与问题相匹配的真实观察，不借用其他实验结果。"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T013313Z-concept-role",
+  "task_ids": [
+    "TASK-2026-0080"
+  ],
+  "started_at": "2026-11-01T01:33:13Z",
+  "ended_at": "2026-11-01T01:49:48.989263Z",
+  "outcome": "reviewed locally; publication pending",
+  "sources": [
+    "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+    "https://www.bungie.net/7/en/News/article/10543"
+  ],
+  "evidence": "Named Japanese/English first-party practitioner accounts; PlatinumGames2025-09-19 and Bungie2013-05-30 historical scope",
+  "original_contribution": "Unexecuted entrance-area purpose/input-revision/preserve-change-unknown handoff and receiver questions; not studio internal workflow",
+  "native_model_player_experiments": 0,
+  "source_images_inspected": 0,
+  "prepublication_correction": "Image art translated as mood/direction image rather than ambiguous generic image term",
+  "limitations": [
+    "No source image inspection/reproduction or visual fidelity comparison",
+    "No built asset, DCC, gameplay or player validation",
+    "No universal job/approval boundaries or measured production benefit",
+    "Occupation matrix remains incomplete"
+  ],
+  "validation": {
+    "indexed_articles": 38,
+    "unchanged_prior_experiment_files": 2787,
+    "archive_checks_normal": 495,
+    "archive_checks_optimized": 495,
+    "queue_tasks_checked": 80,
+    "declared_paths_checked": 90,
+    "local_links": 620
+  },
+  "next_action": "Review original Valve AIIDE2009 Director presentation and exact pacing/proxy/actuation scope"
+}
