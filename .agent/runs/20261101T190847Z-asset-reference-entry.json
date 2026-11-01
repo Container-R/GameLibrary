@@ -1,0 +1,22 @@
+{
+  "run_id": "20261101T190847Z-asset-reference-entry",
+  "observed_at": "2026-11-01T19:08:47Z",
+  "parent_verified_head": "b15b169e0ca93632749d8ae5541d3c98683d80b4",
+  "task": "TASK-2026-0008",
+  "outcome": "Integrated the files-present-but-wrong-reference failure branch into the existing asset handoff reader; no new book or parser.",
+  "reader_path": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+  "reader_sha256": "0d9666fe966ca112bf447e75832a70c67513bd4647330b35d6853813d0a92822",
+  "source_scope": "Fixed glTF59ecbdba704206bb656965ab4e202881806066f1 URIs/Relative Paths and RFC3986 sections2.4/2.5 directly read; RFC3987 mapping additionally checked during gate but not expanded into article.",
+  "verification_method": "Original-source analysis, paper filename counterexample, full-context independent agent reader/source review. No import, filesystem, engine or security experiment.",
+  "independent_review_sha256": "f851351d553d9d156f393563e063eb1cc0055f801fdff9f2a80105cb51ac8b92",
+  "reader_books": 59,
+  "new_books": 0,
+  "prior_publication_readback": {
+    "commit": "b15b169e0ca93632749d8ae5541d3c98683d80b4",
+    "key_files_matched": 3,
+    "reader_books_tree_matched": 59,
+    "reader_links_tree_matched": 141
+  },
+  "rejected_duplicate": "Reward-retry idempotency already covered by current online-service reader and economy support; no duplicate article admitted.",
+  "publication_note": "Containing commit readback follows publication."
+}
