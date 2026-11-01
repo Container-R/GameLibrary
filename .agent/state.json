@@ -13,16 +13,16 @@
     "reader_books_total": 58
   },
   "publication": {
-    "last_verified_head_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
+    "last_verified_head_sha": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
     "scope": "58 reader books: 55 frozen baseline rewrites plus three subsequent studies. Input accessibility article is source reading and original unimplemented design, not runtime or participant evidence.",
-    "counts_snapshot_head": "c19316324405af05dfe92d37e8ecd3686b856b17",
-    "latest_verified_content_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
+    "counts_snapshot_head": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
+    "latest_verified_content_sha": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
     "reader_books_total": 58,
     "post_baseline_research_books": 3
   },
-  "next_action": "Review remaining reader questions against existing sources, prioritizing substantive gaps and deeper verification rather than article count; current hold/toggle design remains unimplemented and untested with participants.",
+  "next_action": "Evaluate one directly readable first-party Korean asset-build or content-update technical source against existing Addressables and Horizon coverage; reject inaccessible or duplicate mechanism leads before admitting a reader artifact.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -59,7 +59,7 @@
     "lease_until": "2026-11-01T18:40:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T180600Z-hold-toggle-reader",
+  "last_run_id": "20261101T181325Z-narrative-qa-integration",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -78,8 +78,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T18:06:00Z",
-  "last_commit_sha": "c19316324405af05dfe92d37e8ecd3686b856b17",
+  "last_real_progress_at": "2026-11-01T18:13:25Z",
+  "last_commit_sha": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

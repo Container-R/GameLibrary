@@ -1,0 +1,35 @@
+{
+  "run_id": "20261101T181325Z-narrative-qa-integration",
+  "observed_at": "2026-11-01T18:13:25Z",
+  "parent_verified_head": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
+  "task": "TASK-2026-0008",
+  "outcome": "Integrated two existing support mechanisms into reader chapters: omitted narrative defaults after content changes, and diagnostic-condition changes during defect investigation. No duplicate source note or new book.",
+  "reader_paths": [
+    "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+    "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md"
+  ],
+  "independent_reviews": [
+    {
+      "article": "narrative",
+      "accepted_sha256": "f69b378f55ee19cf747abf5f3fd10d2517f4e1c134b4eaf9acf9aa282e143628",
+      "correction": "Replaced player-reported implication with character-knows wording, preserving the article distinction between world state, knowledge and reward eligibility."
+    },
+    {
+      "article": "quality-assurance",
+      "accepted_sha256": "a224b9fe0e0fc3e6807a3b809b0070e4e3147652d828fab300b002b15b4ee2b9",
+      "scope": "Reader context, source limitations and actual support link accepted. Difficulty reproducing with detailed logs does not establish that logging caused the symptom to disappear."
+    }
+  ],
+  "source_scope": "ink v1.2.1 commit 35c63e52f1d36060930dc7ed3cfba38ea224b528 variable save/load paths; Riot 2018-05-01 developer report, no private implementation or images.",
+  "verification_method": "Original-source rereading and independent limited reader review; no story compilation, replay, fault injection, runtime or participant test.",
+  "reader_books": 58,
+  "new_books": 0,
+  "reader_local_links": 132,
+  "prior_publication_readback": {
+    "commit": "b4a93b29b25a31c06cf2c5cbc17b2ff7d8d92f22",
+    "changed_reader_files_matched": 5,
+    "reader_books_tree_matched": 58,
+    "reader_links_tree_matched": 130
+  },
+  "publication_note": "Containing commit readback follows publication."
+}
