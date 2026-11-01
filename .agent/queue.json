@@ -2707,11 +2707,13 @@
       "id": "TASK-2026-0105",
       "question": "When does an equal-power crossfade preserve sample power, and what changes for correlated or inverted music stems?",
       "discipline": "MUSIC",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Examine a concrete music transition assumption with primary DSP evidence and exact algebra, separating sample power from loudness and clipping",
       "expected_artifact": "Bounded primary-source gate and original finite correlation derivation if supported",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-notes/equal-power-crossfade-correlation.md"
+      ],
       "acceptance": [
         "Inspect primary DSP documentation or pinned implementation; do not infer latest version",
         "Check existing audio and music notes for duplicate coverage",
@@ -2722,8 +2724,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:05:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T05:27:13.565510Z",
-      "next_action": "Review original equal-power crossfade source and finite correlation example",
+      "last_progress_at": "2026-11-01T05:31:03.427146Z",
+      "next_action": "Publish reviewed equal-power crossfade correlation source and exact finite proof",
       "blockers": []
     }
   ]

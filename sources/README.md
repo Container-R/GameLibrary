@@ -169,3 +169,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [输入禁用的同步取消边界](../research/source-notes/input-disable-teardown-callback.md)核对 Unity Input System 1.11.2 固定源码与应用清理所有权。
 
 [切线 handedness 与方向变换](../research/source-notes/tangent-handedness-normal-transform.md)核对固定 glTF 规范与示例实现，区分局部属性、顶点基和最终画面。
+
+[等功率淡化与素材相关性](../research/source-notes/equal-power-crossfade-correlation.md)核对固定 SuperCollider 源码与增益机制，严格区分理想手推和实际实现输出。

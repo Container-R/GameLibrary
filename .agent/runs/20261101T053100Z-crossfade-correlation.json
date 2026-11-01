@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T053100Z-crossfade-correlation",
+  "task_ids": [
+    "TASK-2026-0105"
+  ],
+  "started_at": "2026-11-01T05:27:13Z",
+  "ended_at": "2026-11-01T05:31:03.427146Z",
+  "outcome": "source, exact hand proof and final editorial review accepted; publication pending",
+  "sources": [
+    "https://doc.sccode.org/Classes/XFade2.html",
+    "https://github.com/supercollider/supercollider/tree/d263b8cc9905302bb6cfc26e8e68f22bb43092e9"
+  ],
+  "evidence": "Official SuperCollider 3.14.0 tag, help, selected XFade2 scalar implementation and sine table wiring; independent finite hand algebra",
+  "original_contribution": "Equal individual input mean squares yield P, 2P or zero for three explicit four-sample relationships at ideal fixed midpoint gains; sample peak separated from mean square",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No generated PCM, audio playback, numerical model, native mixer or listening test",
+    "Ideal constant gains and level1 are not exact float LUT or changing-parameter samples",
+    "Uncentered cross moment differs from covariance when means contribute",
+    "No clipping, true peak, physical power, LUFS or subjective loudness guarantee",
+    "All indexed articles and prior experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "queue_tasks_checked": 105,
+    "accepted_note_sha256": "260aeec74df5dc5c49fe01a536cfe3106bc667ef23998031a8d87ae7d75668e2",
+    "declared_paths_checked": 134
+  },
+  "next_action": "Integrate bounded adversarial source-batch review before broadening coverage"
+}

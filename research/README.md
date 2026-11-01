@@ -175,3 +175,5 @@ python3 scripts/evidence/test_verify.py
 [先进入停止态，再禁用输入](source-notes/input-disable-teardown-callback.md)以原创未执行调用序列解释重复清理与单一所有者；不迁移其他引擎实验为证据。
 
 [单位向量仍可能变换错误](source-notes/tangent-handedness-normal-transform.md)用原创非均匀缩放手推比较点积 0 与 3/5，不把规范读取或代数证明升级为渲染测试。
+
+[相同曲线的三种均方结果](source-notes/equal-power-crossfade-correlation.md)用四样本原创代数分开窗口交叉矩、均方、样本峰值与听感验收。
