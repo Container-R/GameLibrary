@@ -1,0 +1,50 @@
+{
+  "run_id": "20261101T185150Z-sequence-wrap",
+  "observed_at": "2026-11-01T18:51:50Z",
+  "parent_verified_head": "7ce5079bd371e9d8d1218ad60e894f0594747912",
+  "task": "TASK-2026-0155",
+  "outcome": "New reader chapter on finite sequence wrap, explicit half-space ambiguity and history assumptions, with selected ENet window contrast and finite pure Python model.",
+  "reader_path": "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+  "reader_sha256": "6d2e2916c0b9ccbfea066ce0813e89ce55c5026366a5650888489ef8fe53aec5",
+  "model_sha256": "b65fe8aa3461db865923d0e7b5b16850b8f5754cfe7e06e5f4cfe0a4fdb12588",
+  "test_sha256": "20c00e1828f1b103e68db0122e76fa424321ce484465440446f49a4e1b2b01bf",
+  "verification_method": "Original RFC and fixed ENet source reading; independent reader/math review; finite Python synthetic tests in normal and optimized modes. No packets, native library, engine or human participant test.",
+  "test_methods": 12,
+  "unique_ordered_pairs": 65792,
+  "pair_widths": [
+    4,
+    8
+  ],
+  "sixteen_bit_scope": "Selected cases only",
+  "independent_checks": "Successor-walk four-bit oracle, literal comparison/window examples and invalid input checks; same candidate not another native implementation.",
+  "reader_review_correction": "Added an explicitly sufficient but nonunique less-than-half-circle known-history condition; fields alone do not establish this premise.",
+  "reader_books": 59,
+  "new_books": 1,
+  "frozen_baseline_books": 55,
+  "post_baseline_books": 4,
+  "supervision_integrated": ".agent/audits/20261101T184727Z-reader.md",
+  "maintenance_corrections": [
+    "Root welcome now describes ongoing maintenance instead of unfinished historical consolidation.",
+    "Current taxonomy command corrected from stale55 to declared59; retired legacy mode remains explicit."
+  ],
+  "prior_publication_readback": {
+    "commit": "7ce5079bd371e9d8d1218ad60e894f0594747912",
+    "reader_files_matched": 2,
+    "standards_file_matched": true,
+    "reader_books_tree_matched": 58,
+    "reader_links_tree_matched": 135
+  },
+  "publication_note": "Containing commit readback follows publication; source comparisons are not complete protocol acceptance.",
+  "offline_reader_scan": {
+    "status": "incomplete",
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "unsupported": 31,
+    "readers_checked": 59,
+    "local_links_checked": 140,
+    "fragments_checked": 22,
+    "external_links_not_checked": 271,
+    "errors": 31,
+    "scope": "Offline simple inline Markdown targets and plain ATX heading fragments only; not rendered Markdown, source truth, or reader quality"
+  }
+}

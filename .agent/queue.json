@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T19:10:00Z",
+      "lease_until": "2026-11-01T19:20:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T18:41:55Z",
-      "next_action": "Stop adding mechanisms to the reviewed build and graphics role chapters. Select a specific uncovered engineering question only after checking existing reader and support coverage; maintain reader comprehension and original-source gates.",
+      "last_progress_at": "2026-11-01T18:51:50Z",
+      "next_action": "Verify published sequence-wrap reader and support routes, then choose a concrete nonduplicate engineering gap after inspecting current coverage; keep original-source, independent reader and bounded verification gates.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -5901,6 +5901,38 @@
       "next_action": "Treat the repair example as an unimplemented design proposal; project input and participant evaluation remain required.",
       "blockers": [],
       "verification_method": "Original source reading, independent reader/source and paper-trajectory review, actual navigation checks; no runtime or human usability study."
+    },
+    {
+      "id": "TASK-2026-0155",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can finite sequence numbers be compared across wrap without confusing a half-range relation with real chronology or a transport receive window?",
+      "discipline": "NET",
+      "status": "published",
+      "priority": 90,
+      "priority_rationale": "Existing prediction and channel-readiness chapters leave finite field rollover unspecified; source and finite model gates establish a distinct engineering problem.",
+      "expected_artifact": "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+      "artifact_paths": [
+        "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+        "管理档案/支持资料/序列号回绕/README.md",
+        "管理档案/支持资料/序列号回绕/sequence_wrap.py",
+        "管理档案/支持资料/序列号回绕/test_sequence_wrap.py",
+        "管理档案/支持资料/序列号回绕/verification.json",
+        "管理档案/审查/序列号回绕-数学与读者审查.md"
+      ],
+      "acceptance": [
+        "Concrete reader example and explicit history assumptions",
+        "RFC scope distinguished from game protocol choices",
+        "Fixed ENet window guard separated from final admission and delivery",
+        "Independent reader/source review and finite mathematical model checks",
+        "Actual shelf, cross-link and support return routes"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T18:51:50Z",
+      "next_action": "Use the model only within declared finite domain; native transport, production lifecycle and security integration remain unverified.",
+      "blockers": [],
+      "verification_method": "Source analysis, finite pure Python tests with independent oracle and reader comprehension review; no network, native library, engine or human participant test."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,18 @@
+{
+  "scope": "Pure Python finite mathematics and a selected ENet window guard; no native library, network or engine execution.",
+  "model_sha256": "b65fe8aa3461db865923d0e7b5b16850b8f5754cfe7e06e5f4cfe0a4fdb12588",
+  "test_sha256": "20c00e1828f1b103e68db0122e76fa424321ce484465440446f49a4e1b2b01bf",
+  "test_methods": 12,
+  "modes": [
+    "normal",
+    "optimized"
+  ],
+  "unique_ordered_pairs": 65792,
+  "pair_widths": [
+    4,
+    8
+  ],
+  "sixteen_bit_scope": "Selected boundary examples only",
+  "outcome": "passed within stated finite scope",
+  "independent_review": "Different successor-walk oracle for four-bit pairs and literal/invalid input probes; no claim of complete sixteen-bit enumeration."
+}

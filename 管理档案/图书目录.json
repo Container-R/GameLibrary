@@ -1235,6 +1235,23 @@
       "review_paths": [
         "管理档案/审查/持按改点按-读者与纸面轨迹审查.md"
       ]
+    },
+    {
+      "internal_id": "SOL-NET-002",
+      "reader_title": "序列号回到零时怎样判断消息的新旧",
+      "floor": "网络与在线服务",
+      "area": "实时同步",
+      "shelf": "消息顺序",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+      "current_read_path": "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定原源与独立代理读者/数学模型有限审查接受；不是原生协议或真人测试",
+      "origin": "specific-finite-sequence-gap-from-task-0008",
+      "scope_note": "RFC比较关系、原创有限历史反例与ENet指定窗口guard分别说明；不提供完整接收协议",
+      "review_paths": [
+        "管理档案/审查/序列号回绕-数学与读者审查.md"
+      ],
+      "supporting_material": "管理档案/支持资料/序列号回绕/README.md"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1247,6 +1264,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 58,
-  "post_baseline_research_books": 3
+  "reader_books_total": 59,
+  "post_baseline_research_books": 4
 }
