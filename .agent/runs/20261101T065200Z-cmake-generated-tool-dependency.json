@@ -5,8 +5,8 @@
     "TASK-2026-0120"
   ],
   "started_at": "2026-11-01T06:48:03Z",
-  "ended_at": "2026-11-01T06:51:49.733614Z",
-  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "ended_at": "2026-11-01T06:54:45.997500Z",
+  "outcome": "published and read back",
   "sources": [
     "https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst",
     "https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/policy/CMP0112.rst"
@@ -31,14 +31,18 @@
     "archive_fail": 0,
     "archive_scope": "Main static archive consistency; not new build execution or supervisor rerun",
     "declared_paths_checked": 156,
-    "local_links_checked": 820
+    "local_links_checked": 820,
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 121
   },
-  "next_action": "Continue source/code gaps and integrate scheduled audit at normal checkpoint",
+  "next_action": "Resolve reported versioned-versus-rolling sensor CCD discrepancy from fixed official sources before drafting",
   "scheduled_audit_included": {
     "path": ".agent/audits/20261101T065000Z.json",
     "observed_at": "2026-11-01T06:51:38Z",
     "snapshot_sha": "e2e40f9466e1af6361ac905de761be11e93a261a",
     "scope": "Independent GGPO/glTF source checks; archive519 is remote report only, not rerun"
   },
-  "reviewed_article_sha256": "e6973e93f1a37e63272f154646c70471b81aee524d0b73bd15da62ff06570c2c"
+  "reviewed_article_sha256": "e6973e93f1a37e63272f154646c70471b81aee524d0b73bd15da62ff06570c2c",
+  "commit_sha": "6591e04edd1e635616474c5999c7649e58a7fef4"
 }

@@ -3118,7 +3118,7 @@
       "id": "TASK-2026-0120",
       "question": "Why does ordering an asset generator target before a custom command not guarantee regenerated output when that executable changes?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Resolve a concrete missing invalidation edge in generated game-asset builds using pinned official CMake semantics",
       "expected_artifact": "Integrated build-role example separating target ordering from executable file-level dependency",
@@ -3133,11 +3133,36 @@
         "Do not claim DEPENDS captures every dynamic input or actual build result",
         "Keep independent hypothetical example separate from historical Cygames practice"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:51:49.733614Z",
-      "next_action": "Review consumer-target premise and ordering-versus-invalidation semantics before publication",
+      "next_action": "Retain actual consumer and finite dependency scope; no executed build or complete input graph claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:54:45.997500Z",
+      "commit_sha": "6591e04edd1e635616474c5999c7649e58a7fef4"
+    },
+    {
+      "id": "TASK-2026-0121",
+      "question": "Which exact Box2D version and sensor configuration can detect fast swept crossings, and how should a trigger-detection decision respect that boundary?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Resolve a discovered discrepancy between versioned sensor semantics and rolling documentation before making a current or general recommendation",
+      "expected_artifact": "Bounded version-specific source/code gate followed by useful trigger-query analysis if evidence supports it",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin original documentation and implementation revisions rather than mixing release and rolling text",
+        "Verify sensor setup and continuous-collision scope directly",
+        "Do not infer current release behavior or all-sensor guarantees from historical docs",
+        "Select an actionable finite trigger-detection decision, not generic source-age warnings",
+        "No collision execution or reachable trajectory result without actual evidence"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:40:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:54:45.997500Z",
+      "next_action": "Resolve reported versioned-versus-rolling sensor CCD discrepancy from fixed official sources before drafting",
       "blockers": []
     }
   ]
