@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:10:00Z",
+      "lease_until": "2026-11-01T10:25:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:39:28.837833Z",
-      "next_action": "Examine production dependency scheduling with explicit file/object graph scope, not generic loaded-versus-ready summaries",
+      "last_progress_at": "2026-11-01T09:41:02.840844Z",
+      "next_action": "Review a collision source gate for a distinct rotational TOI limit; do not duplicate existing sensor and substep note",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3757,7 +3757,7 @@
       "id": "TASK-2026-0143",
       "question": "How does known asset dependency structure constrain initialization separately from asynchronous I/O submission and completion?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Original Decima production mechanism provides concrete graph constraints beyond import intent and release-baseline coverage",
       "expected_artifact": "Historical production case and original finite dependency counterexample, with no scheduler implementation claim",
@@ -3773,12 +3773,14 @@
         "Keep original talk date unknown rather than infer it from later webpage",
         "Exclude source slides and all private execution metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:20:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T09:39:28.837833Z",
-      "next_action": "Validate independent source review and publish bounded historical dependency case",
-      "blockers": []
+      "next_action": "Retain source date uncertainty, separate file/object graphs and original dependency assumptions; no runtime or performance guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:41:02.840844Z",
+      "commit_sha": "d3af6c619e9275210259def564f3f8b78e413427"
     }
   ]
 }

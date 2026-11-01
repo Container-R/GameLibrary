@@ -6,8 +6,8 @@
     "TASK-2026-0143"
   ],
   "started_at": "2026-11-01T09:36:00Z",
-  "ended_at": "2026-11-01T09:39:28.837833Z",
-  "outcome": "Bounded original production case independently reviewed; publication validation pending",
+  "ended_at": "2026-11-01T09:41:02.840844Z",
+  "outcome": "Horizon streaming dependency case published and exact readback matched",
   "sources_examined": [
     "https://www.guerrilla-games.com/read/Streaming-the-World-of-Horizon-Zero-Dawn",
     "https://d3d3g8mu99pzk9.cloudfront.net/AstridHuntjens/Streaming%20the%20world%20of%20Horizon%20Zero%20Dawn.pdf"
@@ -31,7 +31,11 @@
     "archive_scope": "Declared archive consistency only; no new runtime execution or semantic verification",
     "local_links_checked": 894,
     "declared_paths_checked": 193,
-    "full_changed_file_privacy_scan": "PASS"
+    "full_changed_file_privacy_scan": "PASS",
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 143
   },
-  "next_action": "Verify exact publication then investigate fixed tick versus physics substep and continuous collision evidence gap"
+  "next_action": "Review a collision source gate for a distinct rotational TOI limit; do not duplicate existing sensor and substep note",
+  "commit_sha": "d3af6c619e9275210259def564f3f8b78e413427"
 }
