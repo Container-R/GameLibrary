@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T11:05:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:07:42.456625Z",
-      "next_action": "Investigate a distinct source-depth question only after closing published review findings; keep source-only release scope",
+      "last_progress_at": "2026-11-01T10:16:15.176779Z",
+      "next_action": "Separate player assignment and actual shared-session exposure in a narrow source-only measurement note",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3896,6 +3896,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T10:07:42.456625Z",
       "commit_sha": "9bbbddb925dd10b211864a8c9dbbae5ffc5244f5"
+    },
+    {
+      "id": "TASK-2026-0148",
+      "question": "Which assignment and session-delivery records must remain distinct when a shared team rule changes player exposure after randomization?",
+      "discipline": "DATA",
+      "status": "reviewing",
+      "priority": 86,
+      "priority_rationale": "Original gaming research supplies a concrete shared-treatment mechanism absent from existing eligibility and denominator notes",
+      "expected_artifact": "Source-only note and one additive role discoverability link; no new indexed article",
+      "artifact_paths": [
+        "research/source-notes/game-experiment-assignment-and-session-exposure.md"
+      ],
+      "acceptance": [
+        "Read fixed original preprint mechanism and assumptions, not just abstract",
+        "Preserve policy-versus-exposure question and original assignment",
+        "Separate predicted activation from observed delivery or unknown evidence",
+        "Keep session units, zero-session inclusion and observation windows explicit",
+        "Count compression shows lost order only, not outcome effects",
+        "No estimator endorsement, universal bias sign, current production or peer-review claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T11:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T10:16:15.176779Z",
+      "next_action": "Validate exact note review, preserved existing prose and non-destructive publication",
+      "blockers": []
     }
   ]
 }

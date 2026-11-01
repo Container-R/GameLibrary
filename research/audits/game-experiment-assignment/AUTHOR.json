@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-01",
+  "review_kind": "author-side scope check, not independent review",
+  "intended_path": "research/source-notes/game-experiment-assignment-and-session-exposure.md",
+  "note_sha256": "cb15a8f7a436a56fff6386100cc69400c33feea55d3460f4783ca0b9aa5b215d",
+  "inputs": {
+    "gate_sha256": "054bb6fb8d9c9861a315a2ea4a02254430f1d43ea8012d311aff9a5e0d001fea",
+    "method_gate_review_sha256": "11248a9f0e8008aaf606d4901bb697368405a7fe61929d0d54b065b73dac490b",
+    "data_role_sha256": "4b994d5bf96beab94df2f3c94587aa44e2d3e6da29e2bf1d0001e9c534d35863",
+    "attempt_solution_sha256": "afaccd2fb95685df8e627fd30b47f2041fa819444eabddf8a976d8f54a7ef0cb"
+  },
+  "source": {
+    "url": "https://arxiv.org/html/2402.05336v1",
+    "version": "v1",
+    "date": "2024-02-08",
+    "authors": [
+      "Yu Zhu",
+      "Zehang Richard Li",
+      "Yang Su",
+      "Zhenyu Zhao"
+    ],
+    "read_scope": "HTML sections 1–6 relevant text and equations; focus 2, 3.1–3.2, 5.1, 6. No figures, code, dataset or result reproduction."
+  },
+  "original_contribution": "Unexecuted two-player, two-session A/B/C example; assignment/predicted activation/assumed actual delivery separated. [1,0] vs [0,1] is information compression only. Receiving record relations and unit/window/zero-session choices are proposed, not deployed.",
+  "boundaries": [
+    "No estimator recommendation or universal bias direction",
+    "No claim randomization implies exposure sufficiency or joint unconfoundedness",
+    "Policy effect and exposure-history question kept distinct",
+    "Session records are not automatically independent observations",
+    "Missing actual activation evidence remains unknown",
+    "No peer review, current Tencent implementation, actual game effect or privacy certification claim"
+  ],
+  "changes": "New local source-only note and this record; no existing article, staging, remote or runtime changes."
+}
