@@ -5,8 +5,8 @@
     "TASK-2026-0096"
   ],
   "started_at": "2026-11-01T04:33:31Z",
-  "ended_at": "2026-11-01T04:40:17.655329Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T04:42:03.181770Z",
+  "outcome": "published and read back",
   "sources": [
     "https://github.com/KhronosGroup/Vulkan-Docs/tree/486e4b289053a7d64784e7ce791711843c60c235",
     "https://learn.microsoft.com/en-us/windows/uwp/gaming/reduce-latency-with-dxgi-1-3-swap-chains"
@@ -25,7 +25,14 @@
     "unchanged_prior_experiment_files": 3227,
     "archive_checks_normal": 519,
     "archive_checks_optimized": 519,
-    "queue_tasks_checked": 96
+    "queue_tasks_checked": 96,
+    "selected_blob_hashes_verified": 11,
+    "outside_tree_changes": 0,
+    "local_links_checked": 773,
+    "receipt_queue_tasks_checked": 97,
+    "declared_paths_checked": 124
   },
-  "next_action": "Evaluate pinned narrative save/load source compatibility boundary against existing persistence and narrative coverage"
+  "next_action": "Read original voice virtualization policy and assess distinct applicability gap",
+  "commit_sha": "efde1be8775db97f530eebcbc38d1ed5ad4b64e4",
+  "rejected_next_candidate": "Narrative save-format versus content identity source candidate duplicated existing ink-save-content-compatibility note; no new article or runtime proposed"
 }

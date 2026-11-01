@@ -2466,7 +2466,7 @@
       "id": "TASK-2026-0096",
       "question": "Which presentation policy and upstream work boundaries prevent swapchain mode or image count from proving end-to-end input latency?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Concrete source-depth performance decision gap, independent of blocked GPU execution and pending runtime release",
       "expected_artifact": "Pinned primary-source analysis with explicitly hypothetical queue timeline and no measured latency claim",
@@ -2480,11 +2480,36 @@
         "Distinguish image capacity, admitted work, presentation requests and physical response",
         "No GPU run, driver changes, universal performance recommendation or runtime metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:10:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T04:40:17.655329Z",
-      "next_action": "Publish reviewed presentation-policy source analysis and explicitly unexecuted sampled-state-age counterexample",
+      "next_action": "Retain explicit hypothetical scheduling and no physical latency claims; platform measurements need separate evidence",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:42:03.181770Z",
+      "commit_sha": "efde1be8775db97f530eebcbc38d1ed5ad4b64e4"
+    },
+    {
+      "id": "TASK-2026-0097",
+      "question": "Does a virtualized audio playback timeline or event identity establish delivery of a time-sensitive audible cue?",
+      "discipline": "SFX",
+      "status": "researching",
+      "priority": 89,
+      "priority_rationale": "Deepen existing audio-state and accessible-information evidence without equating logical playback with audible delivery",
+      "expected_artifact": "Version-specific primary-source gate and bounded existing-article supplement only if it closes a distinct gap",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect existing audio and accessibility coverage before drafting",
+        "Read exact-version original virtualization and return-to-physical policy documentation",
+        "Keep source-only hypothetical reactivation separate from observed audio",
+        "Reject duplicate coverage and unsupported universal performance rules",
+        "No native execution, listening or runtime metadata release"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:42:03.181770Z",
+      "next_action": "Read original voice virtualization policy and assess distinct applicability gap",
       "blockers": []
     }
   ]
