@@ -6,25 +6,25 @@
     "TASK-2026-0120"
   ],
   "last_completed_at": "2026-11-01T06:50:29.283110Z",
-  "last_real_progress_at": "2026-11-01T06:50:29.283110Z",
+  "last_real_progress_at": "2026-11-01T06:51:49.733614Z",
   "last_commit_sha": "e2e40f9466e1af6361ac905de761be11e93a261a",
-  "last_run_id": "20261101T064700Z-fmod-event-bank-teardown",
-  "next_action": "Integrate source-reviewed executable dependency mechanism and obtain final editorial review",
+  "last_run_id": "20261101T065200Z-cmake-generated-tool-dependency",
+  "next_action": "Review consumer-target premise and ordering-versus-invalidation semantics before publication",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
-    "last_checked_at": "2026-11-01T04:49:38Z",
+    "last_checked_at": "2026-11-01T06:51:38Z",
     "research_health": "healthy",
     "publication_hold_resolved_at": "2026-10-31T16:18:40.694275Z",
-    "last_audit_record": ".agent/audits/20261101T045000Z.json",
+    "last_audit_record": ".agent/audits/20261101T065000Z.json",
     "historical_research_health": "healthy_at_1654_observation",
     "current_health": "healthy",
     "whole_audit_window_healthy": false,
-    "audit_snapshot_head": "004300fc4bbe0e041262521fb03131433c5db6c2",
+    "audit_snapshot_head": "e2e40f9466e1af6361ac905de761be11e93a261a",
     "snapshot_archive_checks": 519,
     "latest_post_snapshot_content": "e2e40f9466e1af6361ac905de761be11e93a261a",
-    "remote_blob_sample_checked": 73,
-    "remote_blob_sample_scope": "Selected documentation and verifier files only; not full tree equality"
+    "remote_blob_sample_scope": "No blob equality sample in this supervisor; two source/semantic additions reviewed",
+    "snapshot_archive_check_scope": "Remote run report read by supervisor; not independently re-executed"
   },
   "publication": {
     "visibility": "public",

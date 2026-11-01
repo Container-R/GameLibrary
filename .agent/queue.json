@@ -3122,7 +3122,10 @@
       "priority": 93,
       "priority_rationale": "Resolve a concrete missing invalidation edge in generated game-asset builds using pinned official CMake semantics",
       "expected_artifact": "Integrated build-role example separating target ordering from executable file-level dependency",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "roles/engine/build-engineer.md",
+        "research/source-notes/build-engineer-role.md"
+      ],
       "acceptance": [
         "Read fixed CMake 3.31.12 COMMAND, DEPENDS and CMP0112 source documentation",
         "Require actual same-directory consumer build of the declared OUTPUT",
@@ -3133,8 +3136,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:35:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:50:29.283110Z",
-      "next_action": "Integrate source-reviewed executable dependency mechanism and obtain final editorial review",
+      "last_progress_at": "2026-11-01T06:51:49.733614Z",
+      "next_action": "Review consumer-target premise and ordering-versus-invalidation semantics before publication",
       "blockers": []
     }
   ]

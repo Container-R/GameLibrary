@@ -6,13 +6,13 @@ status: source-backed
 primary_discipline: ENGINE
 related_disciplines: [PLATFORM, LIVE, QA]
 related_roles: [build-engineer, engine-programmer, tools-programmer, qa-engineer]
-related_topics: [build-pipeline, candidate-identity, generated-inputs, test-evidence-binding, release-handoff]
+related_topics: [build-pipeline, candidate-identity, generated-inputs, test-evidence-binding, release-handoff, generated-file-dependencies, incremental-invalidation]
 engines: [engine-agnostic]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["三个雇主岗位原文读取于2026-10-31；首次发布日期未知", "Cyllista开发环境案例发表于2020-10-08；未确认引擎技术版本"]
-updated_at: 2026-10-31
+versions: ["三个雇主岗位原文读取于2026-10-31；首次发布日期未知", "Cyllista开发环境案例发表于2020-10-08；未确认引擎技术版本", "CMake3.31.12固定文档源6acf7153156bb45038be62e79a32ed5a6ea2d00e"]
+updated_at: 2026-11-01
 review_after: 2027-01-31
-verification_method: 日本与美国三个雇主职责原文及Cygames2020技术博客问答、SLSA1.2限定章节核对；交付矩阵和候选产物工作表为原创建议，未运行构建流水线、发布服务或组织验收
+verification_method: 三个雇主职责、Cygames2020问答、SLSA1.2及固定CMake3.31.12文档所列章节核对；交付表与资产增量依赖例为原创未执行建议，未运行构建、发布服务或组织验收
 sources:
   - https://hrmos.co/pages/cygames/jobs/1793262169510682626
   - https://hrmos.co/pages/bandainamcostudios/jobs/050_0050_sa010_0500_0082
@@ -20,6 +20,9 @@ sources:
   - https://tech.cygames.co.jp/archives/3442/
   - https://slsa.dev/spec/v1.2/build-provenance
   - https://slsa.dev/spec/v1.2/verifying-artifacts
+  - https://cmake.org/cmake/help/v3.31/command/add_custom_command.html
+  - https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst
+  - https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/policy/CMP0112.rst
 ---
 
 # 构建工程：把源与配置变成可验收、可交接的候选产物
@@ -81,6 +84,25 @@ Cygames在**2020-10-08**的CEDEC2020后续问答 [B4] 说明：CI定期运行C++
 
 这个有限实例说明自动化的产物不一定止于最终安装包，也可能回到资产仓库。原创交接推论是：应明确生成任务的输入版本、输出归属及何时成为后续任务的输入。来源没有说这些缩略图必然随游戏出货、曾导致重建错误，或实现了本文的候选晋级协议；不能把它扩写成一个并不存在的发布事故案例。
 
+### 生成工具也是输入：先构建工具，不等于工具变了就重新生成
+
+下面是独立的 **CMake 3.31.12 文档例子与原创未执行推演**，不表示 Cygames 使用了这套构建规则，更不是其发生过的事故。
+
+假设同一 `CMakeLists.txt` 中，项目内可执行 target `asset_packer` 将一张规则表生成单个 `OUTPUT`，并由同目录中消费该输出的 target 带入实际构建；只声明命令并不保证它执行。生成命令使用 `$<TARGET_FILE:asset_packer>` 定位工具，`DEPENDS` 只列规则表。输出已经存在时，即使工具源改变并重新编译，只要表、命令行和工具路径未变，工具能先编好也不等于输出会因此重新生成；这里只说缺少该保证，不排除其他原因触发重跑。
+
+原因是两种边承担不同职责：完整 `TARGET_FILE` 表达式建立**目标级顺序依赖**；它不自动增加工具重编触发生成命令的**文件级依赖**。CMake 文档给出的补法是把相应 executable target 也列入 `DEPENDS`。[B7] 本例即在保留表文件依赖的同时，加入 `asset_packer`，而不是只改日志中的工具版本字符串。
+
+两个增量检查能区分这些边，不能只做一次干净构建：
+
+| 输出已存在时的独立变更 | 本例需要表达的依赖与预期 |
+|---|---|
+| 只改规则表 | 表文件的文件级依赖应使输出重新生成 |
+| 表不变，只重新编译工具 | 只靠 TARGET_FILE 的顺序边不保证重跑；`DEPENDS` 中的 executable target 才补上这项文件级失效关系 |
+
+这是待执行检查，不是两条已取得的日志。干净构建中输出原本缺失，生成成功不能单独证明第二条边存在；重新生成也不证明数据符合游戏规则。工具读取的额外配置、插件等不会因为加入一个 target 名就自动全部成为依赖。
+
+本例限定同目录、单输出、本机可运行的项目内工具与已知显式输入；不覆盖交叉编译、多配置、动态依赖、时间戳保留或并行共享输出。也不能把 executable 的文件级结论套给没有对应可执行产物的 `add_custom_target`，或把完整 TARGET_FILE 的规则推广到所有名称／目录组件表达式。[B8] 构建工程与工具作者要交接的不只是“哪个工具先完成”，还包括“它的哪项变化应使哪个生成文件失效”。
+
 ## 与已有知识的责任接口
 
 - [Addressables内容更新基线](../../solutions/engine/addressables-content-update-baseline.md)：配置的远端state位置不等于实际读取身份；版本化文档支持的基线门禁和旧版客户端接收协议尚未执行。
@@ -104,3 +126,6 @@ Cygames在**2020-10-08**的CEDEC2020后续问答 [B4] 说明：CI定期运行C++
 
 - **B5** SLSA Working Group，[*Build: Provenance，v1.2*](https://slsa.dev/spec/v1.2/build-provenance)。定位：Model、BuildDefinition、RunDetails、BuildMetadata；读取于2026-10-31。
 - **B6** SLSA Working Group，[*Build: Verifying artifacts，v1.2*](https://slsa.dev/spec/v1.2/verifying-artifacts)。定位：How to verify、Step 1与Step 2；仅作技术边界参照。
+
+- **B7** CMake 3.31.12，2026-11-01 补读 [add_custom_command](https://cmake.org/cmake/help/v3.31/command/add_custom_command.html) 的 Generating Files、COMMAND、DEPENDS；固定 [官方文档源](https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst#L102-L206)。仅文档语义，不是构建执行。
+- **B8** 同提交 [CMP0112](https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/policy/CMP0112.rst)，2026-11-01 全文读取；组件表达式政策与完整 TARGET_FILE 分开。

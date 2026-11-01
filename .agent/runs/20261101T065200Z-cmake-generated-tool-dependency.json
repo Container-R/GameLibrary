@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T065200Z-cmake-generated-tool-dependency",
+  "task_ids": [
+    "TASK-2026-0120"
+  ],
+  "started_at": "2026-11-01T06:48:03Z",
+  "ended_at": "2026-11-01T06:51:49.733614Z",
+  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "sources": [
+    "https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst",
+    "https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/policy/CMP0112.rst"
+  ],
+  "evidence": "Main and independent reviewer read fixed COMMAND/DEPENDS and policy, versioned HTML consumer rule; official annotated tag resolved",
+  "original_contribution": "Asset-generator executable is a separate invalidation input beyond build ordering; contrast input-only and tool-only hypothetical changes",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No configure, compile, Ninja, asset generation or timing experiment",
+    "Same directory, native executable target, actual consumer, one output and known explicit inputs",
+    "No dynamic input completeness, timestamp preservation, multi-config or parallel shared-output guarantee",
+    "Independent example not a Cygames tool choice or observed incident"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 120,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Main static archive consistency; not new build execution or supervisor rerun",
+    "declared_paths_checked": 156,
+    "local_links_checked": 820
+  },
+  "next_action": "Continue source/code gaps and integrate scheduled audit at normal checkpoint",
+  "scheduled_audit_included": {
+    "path": ".agent/audits/20261101T065000Z.json",
+    "observed_at": "2026-11-01T06:51:38Z",
+    "snapshot_sha": "e2e40f9466e1af6361ac905de761be11e93a261a",
+    "scope": "Independent GGPO/glTF source checks; archive519 is remote report only, not rerun"
+  },
+  "reviewed_article_sha256": "e6973e93f1a37e63272f154646c70471b81aee524d0b73bd15da62ff06570c2c"
+}

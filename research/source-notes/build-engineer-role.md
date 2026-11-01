@@ -24,3 +24,12 @@ Direct Ubisoft release-build pages returned404 and Toronto's job-download endpoi
 ## Optional technical reference, not employer practice
 
 SLSA v1.2 official pages, accessed2026-10-31: https://slsa.dev/spec/v1.2/build-provenance (Model, BuildDefinition, RunDetails, BuildMetadata) and https://slsa.dev/spec/v1.2/verifying-artifacts (How to verify, Step1/2). Artifact identity and invocation identity are different; dependencies are best-effort even through Build L3. Verification includes matching the artifact subject digest and checking the envelope signature against configured signer/builder trust and expectations. These support only the short terminology/trust distinction. No copied schema, signing implementation, SLSA level claim, employer adoption inference or QA/promotion certification.
+
+## 2026-11-01 补读：生成任务的目标顺序与文件失效
+
+- **B7：** [CMake 3.31 add_custom_command](https://cmake.org/cmake/help/v3.31/command/add_custom_command.html)，页面版本标为 **3.31.12**。固定官方 tag `v3.31.12` 指向提交 `6acf7153156bb45038be62e79a32ed5a6ea2d00e`；决定性文档源为 [COMMAND 102–152](https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst#L102-L152) 和 [DEPENDS 164–206](https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst#L164-L206)。用于目标级顺序与 executable/library 文件级依赖的区别；Generating Files 用于限定已有消费 target 的场景。
+- **B8：** 同一固定提交 [CMP0112](https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/policy/CMP0112.rst)，全文。用于避免把完整 TARGET_FILE 的结论扩张到 TARGET_FILE_DIR／NAME 等组件表达式。
+
+以上为官方文档源，不是生成器实现审计或构建图观察。网页与固定文档源属于同一项目，不算独立实现验证；tag 身份也不是本地工具认证。
+
+规则表／打包工具／单输出及两个独立变更是原创未执行例子。没有配置 CMake、运行编译或 Ninja、生成资产、记录调度结果或测量时间收益。未采用 BYPRODUCTS、DEPFILE 等其他机制来扩大本例，也未证明工具所有隐式输入已完整追踪。旧 SLSA、候选晋级与雇主职责证据保持原范围；新例子只补何种变化应重新执行生成任务，不提供内容正确性或发布批准。
