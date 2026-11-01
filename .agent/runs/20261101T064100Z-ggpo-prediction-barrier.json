@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T064100Z-ggpo-prediction-barrier",
+  "task_ids": [
+    "TASK-2026-0118"
+  ],
+  "started_at": "2026-11-01T06:38:36Z",
+  "ended_at": "2026-11-01T06:41:24.495756Z",
+  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "sources": [
+    "https://github.com/pond3r/ggpo/tree/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a"
+  ],
+  "evidence": "Pinned sync, P2P, queue, public wrappers and official VectorWar host control flow; API timing preconditions",
+  "original_contribution": "Preserve failed local-submission gate instead of replacing it with later synchronization status; separate normal forward step from idle-triggered rollback",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No GGPO compilation, network trace, SDK run or recovery timing",
+    "One local player, initial synchronization complete, valid internal conditions and normal forward path only",
+    "Condition arithmetic is not proof of reachable network history; SyncInput OK requires normal internal return",
+    "No server-authority ack transfer, whole-state freeze or input-retention guarantee",
+    "Existing RPC experiment text and all experiment files unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 118,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Static archived consistency; no new SDK or network execution",
+    "declared_paths_checked": 152,
+    "local_links_checked": 818
+  },
+  "next_action": "Continue useful source/code analysis after exact-scope publication",
+  "reviewed_article_sha256": "4b14a283b83e4015c6ef64dad5592b05454571b2ae9bdd971517df14763f40ff"
+}

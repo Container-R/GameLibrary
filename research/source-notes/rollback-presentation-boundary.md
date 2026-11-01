@@ -2,7 +2,7 @@
 
 补充[客户端预测与权威边界](../../solutions/programming/client-prediction-authority-boundary.md)。读取2026-11-01；仅源码/文档，不运行SDK。
 
-统一固定提交：`7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a`，GitHub commit时间2019-11-07T17:39:58Z。三个文件属于同一作者项目，不构成三个独立厂商交叉验证；未建立任何安装二进制对应关系。
+统一固定提交：`7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a`，GitHub commit时间2019-11-07T17:39:58Z。以下初始三个文件属于同一作者项目，不构成三个独立厂商交叉验证；未建立任何安装二进制对应关系。
 
 | 原始文件 | 已读定位 |
 |---|---|
@@ -13,3 +13,16 @@
 指南短闪烁例子在同段混用frames/seconds，本库只采用其定性风险，不自行修正数字后当成规范。文档要求、应用回调责任和代码实际调用路径分开理解；所读路径的推进/保存/恢复回调返回值未构成外部效果投递确认。不能把这项局部检查扩展为全SDK或所有集成的缺失证明。Sync中确有SetLastConfirmedFrame等内部确认帧机制；这里没有把它解释为外部输出或经济事务的确认保证。网页抽取行号与源码视图可能不同，定位采用固定提交、方法和章节名称。
 
 正文五行情形及验收条件为原创未执行建议，不是GGPO公开内部表单或已经验证的事件协调器。原权威服务器模型与P2P回滚语境不同；原有16项模型测试保持原范围。本次未进行安装、编译、网络、音频、渲染或持久交易验证；未复制完整指南、源码或第三方案例图像。
+
+## 2026-11-01 新增阅读：正常前进的预测屏障
+
+仍固定于上游 `pond3r/ggpo` 提交 `7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a`。这是同一项目的新增调用链阅读，不增加独立厂商证据或运行验证。
+
+- [main.cpp](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/main.cpp)：ggpo_start_session 创建 Peer2PeerBackend；ggpo_add_local_input、ggpo_synchronize_input、ggpo_advance_frame 检查非空 session 后委托对应方法，所读包装层没有另一道预测屏障。
+- [sync.cpp 57–141](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp#L57-L141)：AddLocalInput 的双条件拒绝、SynchronizeInputs、IncrementFrame。
+- [backends/p2p.cpp 263–338](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/backends/p2p.cpp#L263-L338)：提交错误映射、同步正常返回与单独推进。
+- [input_queue.cpp 116–181](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/input_queue.cpp#L116-L181)：GetInput 的已有／预测输入分支及内部断言前提，不能省略为“同步总成功”。
+- [VectorWar 329–439](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/apps/vectorwar/vectorwar.cpp#L329-L439)：AdvanceFrame、RunFrame、Idle，区分正常更新、绘制及服务。
+- [ggponet.h 419–500](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h#L419-L500)：输入、同步与 idle 使用说明。另据其中 frame delay 须在首次同步输入前设置的前提，**未采用运行中动态调延迟建议**；内部队列分支不替代公开调用约束。
+
+条件例与正常步控制流为原创未执行推导；没有展示可达网络轨迹、恢复时间或输入保留保证。仅限单本地玩家、初始化完成后的 P2P 正常前进，不套在回滚回调上。内部确认帧不被重命名为原服务器模型的 ack；idle 可涉及回滚，故不把分支拒绝写成全状态冻结。原始源码、示例及接口注释各自支持有限结论，没有新增 SDK、网络或模型执行。

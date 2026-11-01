@@ -3062,11 +3062,14 @@
       "id": "TASK-2026-0118",
       "question": "Which normal host-frame advancement must stop when fixed GGPO P2P local input submission hits the prediction barrier?",
       "discipline": "NET",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 94,
       "priority_rationale": "Resolve a concrete upstream control-flow distinction between local submission rejection and later input synchronization success",
       "expected_artifact": "Integrated fixed-source GGPO normal-advance control-flow explanation, not a new protocol or runtime test",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/programming/client-prediction-authority-boundary.md",
+        "research/source-notes/rollback-presentation-boundary.md"
+      ],
       "acceptance": [
         "Read exact upstream AddLocalInput, SyncInput, IncrementFrame and official host loop",
         "Preserve initial-sync, one-local-player and non-rollback assumptions",
@@ -3077,8 +3080,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:20:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:38:47.132684Z",
-      "next_action": "Read pinned normal-advance call chain and independently verify prediction barrier gate",
+      "last_progress_at": "2026-11-01T06:41:24.495756Z",
+      "next_action": "Review exact public-wrapper, P2P and normal host-loop conditions without inheriting runtime claims",
       "blockers": []
     }
   ]

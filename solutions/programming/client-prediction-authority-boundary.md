@@ -5,15 +5,17 @@ type: solution
 status: source-backed
 primary_discipline: NET
 related_roles: [network-programmer, gameplay-programmer, qa-engineer]
-related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots, rpc-ingress, queued-sender-identity]
+related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots, rpc-ingress, queued-sender-identity, prediction-barrier, host-frame-advance]
 engines: [engine-agnostic, Unity, Godot]
 versions: ["GGPO source 7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a", "Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档", "Godot 4.6.3.stable.official.7d41c59c4 本机自报；发行及源码对应未认证"]
 updated_at: 2026-11-01
-verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；新增本机自报Godot4.6.3双进程回环RPC入口与应用授权观察及独立重复，保留初次解析失败；另核对固定GGPO回放与宿主输出责任，验收矩阵未执行；未验证实际预测纠正、WAN、Unity或跨平台物理
+verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；新增本机自报Godot4.6.3双进程回环RPC入口与应用授权观察及独立重复，保留初次解析失败；另核对固定GGPO回放、宿主输出及正常推进屏障，控制流与验收矩阵未执行；未验证实际预测纠正、WAN、Unity或跨平台物理
 sources:
   - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/doc/DeveloperGuide.md
   - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h
   - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp
+  - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/backends/p2p.cpp
+  - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/apps/vectorwar/vectorwar.cpp
   - https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html
   - https://www.gabrielgambetta.com/entity-interpolation.html
   - https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/intro-to-prediction.html
@@ -198,6 +200,26 @@ peer ID 是这次连接中的标识，不是已认证用户。本实验显式关
 固定于 `7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a` 的 [GGPO 开发指南](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/doc/DeveloperGuide.md#separate-updating-game-state-from-rendering-in-your-game-loop)要求分离模拟与渲染，并将回滚期间产生的声音/效果延后处理；只有不影响游戏结果的表现部分才可排除在游戏状态之外，模拟使用的随机数状态需保存。指南也提醒，短暂视觉事件可能在追赶中耗尽，玩家根本没有看到它；这不是“只显示最终状态”总能保留反馈的保证。
 
 [回调头文件](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h)把保存、恢复和逐帧推进交给应用。[Sync::AdjustSimulation](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp)恢复旧帧后反复调用推进回调，再结束追赶；所读路径没有提供音频投递确认或应用交易提交。**追赶结束不等于持久奖励已经得到权威确认。**
+
+### 正常推进还有一道门：预测上限拒绝不能被后续成功覆盖
+
+以下仍是同一固定 GGPO 提交的 **P2P 源码分析**，限定初始同步已完成、一个有效本地玩家的正常前进路径；不适用于回滚回调或 spectator，也不借用前文服务器 ack 的含义。
+
+记当前帧为 F、内部最后确认帧为 C、配置预测上限为 M。[`Sync::AddLocalInput`](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp#L57-L77) 在 `F >= M && F−C >= M` 时拒绝，且拒绝发生在本次队列写入之前；P2P 层将其映射成 `GGPO_ERRORCODE_PREDICTION_THRESHOLD`。
+
+容易误接的是下一步：[`SyncInput`](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/backends/p2p.cpp#L263-L338) 不重复这个屏障检查。初始同步完成、内部输入队列及断言前提成立且调用正常返回时，它走到 OK，并不表示先前遭拒的本地输入被补接纳。取得同步输入与获准执行这个正常模拟步，不能合并成最后一个返回码。
+
+**原创条件例，未执行：** 若 M>0、F=M、C=0，两项拒绝条件同时成立。此算式只说明分支条件，不证明已构造出相应网络历史，也不保证继续调用同步接口一定正常返回。
+
+正常步的接收逻辑应保留第一处失败，而不是让后一次调用覆盖它：
+
+1. 提交本地输入；若失败，结束**本次正常前进分支**，不要为这一分支更新玩法或通知 GGPO 前进一帧。
+2. 只有提交成功，才取得同步输入；再次成功后，用返回的输入更新玩法，再通知 GGPO 完成该帧。
+3. 将绘制与会话服务安排在各自路径；不要因为第 1 步拒绝，就把网络服务也停掉。
+
+这是从上游 [VectorWar 的正常循环](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/apps/vectorwar/vectorwar.cpp#L395-L439)提炼的有限控制流，不是可直接粘贴的完整集成。尤其 `ggpo_idle` 可能处理回滚，因此“此次不正常前进”**不是所有游戏状态被冻结**。失败期间的短按要保留、重采样还是消费，仍须应用另定，不能从示例推出无丢输入或必然恢复。
+
+本补充没有执行 GGPO、制造迟到输入或测量停顿；不处理多个本地玩家的部分提交、其他后端、断连策略或最佳预测窗口。它新增的是正常推进门禁的具体位置，不改变既有模型与 RPC 实验的证据范围。
 
 ### “不重复播放”与“不丢新事件”是两个条件
 
