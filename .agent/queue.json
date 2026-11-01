@@ -1808,7 +1808,7 @@
       "id": "TASK-2026-0072",
       "question": "How does a game animator distinguish authored performance acceptance from acceptance in a specified runtime character and outfit combination?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Role matrix lacks authored animation performance and handoff boundaries despite existing animation mechanism solutions",
       "expected_artifact": "Source-backed game animator role and original unexecuted combination handoff worksheet",
@@ -1823,11 +1823,36 @@
         "Preserve historical date, closed recruitment and unviewed embedded video limitations",
         "Independent source/editorial review and navigation validation before publication"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T00:04:24.892567Z",
+      "next_action": "Retain original unexecuted character-combination worksheet; real asset/performance validation remains future work",
+      "blockers": [],
+      "completed_at": "2026-11-01T00:06:24.597686Z",
+      "commit_sha": "ef18fdf64d5b747c38ed9818df0627bc33d585b4"
+    },
+    {
+      "id": "TASK-2026-0073",
+      "question": "Can transport RPC admission be distinguished from gameplay command authorization using a finite local-only engine observation?",
+      "discipline": "NET",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Existing prediction solution has protocol models and unexecuted dependency proposal, not actual RPC admission evidence; investigate applicability before native work",
+      "expected_artifact": "Original-source gap assessment, then a bounded RPC authorization observation only if justified and feasible",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect exact existing article and model identities before assigning evidence",
+        "Read versioned official RPC modes, sender identity and authority documentation",
+        "Do not confuse RPC-only validation with prediction, packet-loss, physics or production security evidence",
+        "No port binding or network process before source gate and frozen finite protocol accepted",
+        "Use local-only owned endpoints if justified, retain failure evidence and independent review; no external server or credentials"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T01:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T00:04:24.892567Z",
-      "next_action": "Publish reviewed animator responsibility interface and explicitly unexecuted character-combination worksheet",
+      "last_progress_at": "2026-11-01T00:06:24.597686Z",
+      "next_action": "Evaluate original-source RPC authority gate and reject low-value or unjustified scope before implementation",
       "blockers": []
     }
   ]

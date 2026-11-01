@@ -6,8 +6,8 @@
     "TASK-2026-0008"
   ],
   "started_at": "2026-10-31T23:54:51Z",
-  "ended_at": "2026-11-01T00:04:24.892567Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T00:06:24.597686Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.bandainamcostudios.com/recruit/career/interview/1229",
     "https://montreal.ubisoft.com/en/jobs/senior-technical-animator-march-of-giants/",
@@ -24,7 +24,12 @@
     "unchanged_prior_experiment_files": 2206,
     "queue_tasks_checked": 72,
     "declared_paths_checked": 70,
-    "local_links": 540
+    "local_links": 540,
+    "selected_blob_hashes_verified": 16,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 73,
+    "receipt_declared_paths_checked": 70
   },
-  "next_action": "Select a bounded existing evidence gap after inspecting precise article and fixture scope"
+  "next_action": "Select a bounded existing evidence gap after inspecting precise article and fixture scope",
+  "commit_sha": "ef18fdf64d5b747c38ed9818df0627bc33d585b4"
 }
