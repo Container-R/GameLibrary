@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T061100Z-localization-context-depth",
+  "task_ids": [
+    "TASK-2026-0112"
+  ],
+  "started_at": "2026-11-01T06:08:19Z",
+  "ended_at": "2026-11-01T06:11:13.574740Z",
+  "outcome": "integrated pinned source chain and editorial review accepted; publication pending",
+  "sources": [
+    "https://docs.godotengine.org/en/4.6/tutorials/i18n/localization_using_gettext.html",
+    "https://docs.godotengine.org/en/4.6/classes/class_translation.html",
+    "https://github.com/godotengine/godot/tree/89cea143987d564363e15d207438530651d943ac"
+  ],
+  "evidence": "Official 4.6-stable tag independently resolved; constant-call extraction, POT key/comment fields, text PO context insertion and default Translation pair lookup read",
+  "original_contribution": "Existing localization role now separates human semantic explanation from call/template/locale message identity when two Confirm uses coexist",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No translation, generation, import, engine or UI execution",
+    "Source conclusions limited to recognized constant singular builtin extraction, valid non-skipped text PO and default Translation path",
+    "No blanket claim all comments are inert; fuzzy handling exists",
+    "No custom override, full Object.tr domain/locale/fallback, GNU merge, MO/CSV or plural algorithm audit",
+    "Prior practice attribution preserved; all prior experiments, solutions and other roles unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 112,
+    "accepted_role_sha256": "e7a50a13e496a327157d81a55ff96b717fcca0ab2795aac8e4d5a9e2b9cc6796",
+    "accepted_source_note_sha256": "b031331649e37d6ad5544f3a5e28367e314ea09af272d8100fec2a56120609f9",
+    "static_archive_checks": 519,
+    "static_archive_failed": 0,
+    "optimized_python_archive_checks": 519,
+    "declared_paths_checked": 141,
+    "review_result": "Accepted unchanged; same source/context premise and ordinary default-path limitations explicit"
+  },
+  "next_action": "Select next substantive existing-topic depth gap after review"
+}

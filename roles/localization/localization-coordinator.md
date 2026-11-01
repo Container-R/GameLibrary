@@ -6,16 +6,19 @@ status: source-backed
 primary_discipline: LOC
 related_disciplines: [NARR, UX, PROG, QA, PROD, LIVE]
 related_roles: [localization-coordinator, localization-producer, translator, narrative-designer, ui-programmer, qa-tester]
-related_topics: [context-revision, locale-acceptance, localization-handoff, change-impact]
-engines: [engine-agnostic]
+related_topics: [context-revision, locale-acceptance, localization-handoff, change-impact, translation-context]
+engines: [engine-agnostic, "Godot（仅接入示例）"]
 platforms: [cross-platform-responsibility-not-validation]
-versions: ["Plarium访谈官方转载2021-11-22", "PlatinumGames JP Kellams制作自述2009-12-11"]
+versions: ["Plarium访谈官方转载2021-11-22", "PlatinumGames JP Kellams制作自述2009-12-11", "Godot 4.6-stable 固定源码；未执行"]
 updated_at: 2026-11-01
 review_after: 2027-02-01
-verification_method: 两篇具名实践者原文核对；同文异境的本地化交接表为原创未执行建议；未翻译、集成、运行界面或执行LQA
+verification_method: 两篇具名实践者原文及 Godot 4.6 文档和固定源码特定链路核对；同文异境交接表为原创未执行建议；未翻译、集成、运行界面或执行LQA
 sources:
   - https://company.plarium.com/en/articles/good-lockits-and-style-guides-save-time/
   - https://www.platinumgames.com/official-blog/article/2188
+  - https://docs.godotengine.org/en/4.6/tutorials/i18n/localization_using_gettext.html
+  - https://docs.godotengine.org/en/4.6/classes/class_translation.html
+  - https://github.com/godotengine/godot/tree/89cea143987d564363e15d207438530651d943ac
 ---
 
 # 游戏本地化协调：原文未变时，谁重新接收变化后的语境
@@ -31,7 +34,7 @@ sources:
 - **Plarium，Natalia Gladkaya访谈，官方页面2021-11-22。** 这位本地化部门负责人谈到为持续变化的机制更新译者指南、提供语境，以及上线后修改既有名称可能带来的玩家混淆。[S1] 页面注明原载InLingo；这是官方转载的实践者说明，不是本库测量出的效率收益。
 - **PlatinumGames，JP Kellams，2009-12-11。** 其《Bayonetta》英语改编自述涉及与神谷英树讨论并审批改写，以及根据英语语义调整日语字幕。[S2] Kellams在此讲的是英语改编工作，不能据此称他为本地化协调员；此例支持语义决定需要沟通，不规定所有项目的批准链。
 
-两条来源都没有公开本文的修订字段或状态表，也没有报告下述“原文未变”故障。下文是由这些接口问题提出的原创建议，尚未实施。
+两条来源都没有公开本文的修订字段或状态表，也没有报告下述“原文未变”故障。下文的交接建议由这些接口问题提出，尚未实施；Godot 特定接入示例另列官方文档与固定源码依据。
 
 ## 常见任务与交付物
 
@@ -67,6 +70,22 @@ sources:
 
 若审核者认为原译文在新用途下仍合适，应保留依据，而不是强迫产生字符差异。若构建尚未消费新内容，也不能借语言审阅通过关闭集成问题。若语言侧发现原文歧义，应退回语义责任人澄清，不把“协调完成”当作问题已经解决。
 
+### 一个 Godot 特定的接入例子：译者说明与查找 context 不同
+
+协调责任不限于某种引擎，但可以用一个具体机制说明需要交接什么。Godot 4.6 文档把 `TRANSLATORS:` 注释用于译者说明，把 `tr()` 的 context 参数用于区分同文异义。固定官方源码进一步显示：内置提取器分别记录说明与 context；POT 生成器按 **context 与源消息**组成的键归集条目，说明则收入该条目的注释集合。因此，在源消息与 context 相同的前提下，两处不同说明不会单独形成两个查找键。[官方工作流](https://docs.godotengine.org/en/4.6/tutorials/i18n/localization_using_gettext.html#using-context) [固定生成器](https://github.com/godotengine/godot/blob/89cea143987d564363e15d207438530651d943ac/editor/translations/template_generator.cpp#L77-L99)
+
+延续前面的假设，预览确认与资源消耗确认两个按钮**同时存在**，源文都为 `Confirm`。先由语言接收者依据操作后果判断：某个 locale 是否确需不同译文？若仍可共用，保留判断依据即可，不必强迫拆分；若确需区分，仅给两处增加不同注释，不能代替查找身份的区分。
+
+| 交接对象 | 本例需要的决定 |
+|---|---|
+| 给人的语义说明 | 两种操作的后果、撤销条件及未知规则；它帮助语言判断，不自行决定运行时选哪条消息 |
+| 给程序与内容管线的身份 | 确需拆分时，约定两个 context，并核对调用点、提取模板与各语言条目使用相应身份；命名是项目选择，不是自动得到的译文 |
+| 变更后的接收 | context 改变也应进入接入检查，即使 `Confirm` 的字符未变；模板中存在条目仍不能代替实际候选的语言与界面验证 |
+
+上述机制只核对了**内置提取器可识别的常量、单数 `tr()` 调用 → POT → 有效且未被跳过的文本 PO → 默认 `Translation` 消息键**。生成器把说明写为注释，把非空 context 写为 `msgctxt`；PO 读取路径将 context 连同源消息传入消息表，默认添加与查找使用相同二元键。[写出字段](https://github.com/godotengine/godot/blob/89cea143987d564363e15d207438530651d943ac/editor/translations/template_generator.cpp#L175-L213) [默认消息表](https://github.com/godotengine/godot/blob/89cea143987d564363e15d207438530651d943ac/core/string/translation.cpp#L145-L175)
+
+这是源码支持的交接示例，未生成文件、导入译文或运行界面。不把所有注释说成无行为影响：PO 路径还处理 fuzzy 跳过标记；也不据此判断自定义虚方法、动态提取、完整 `Object.tr` 的语言域选择或缺失项回退。角色的实际任务仍是让**语义判断与正确的消息身份一起交付**，而不是用技术字段替译者作决定。
+
 ## 取舍与典型失败
 
 - **只按原文差异派工。** 容易漏掉用途、变量或术语变化；但每次修改都全语言重审又可能制造无效返工。应记录影响范围与排除理由，而非默认两种极端策略。
@@ -91,3 +110,5 @@ sources:
 
 - **S1** [Plarium Natalia Gladkaya访谈](https://company.plarium.com/en/articles/good-lockits-and-style-guides-save-time/)，英语，官方转载日期2021-11-22。定位：外部语言人员/指南、GaaS更新与语境支持。
 - **S2** [JP Kellams — Butmoni Coronzon](https://www.platinumgames.com/official-blog/article/2188)，英语，2009-12-11。定位：开头的改编与审批、末段日语字幕调整。
+
+- **工具示例** [Godot 4.6 PO 工作流](https://docs.godotengine.org/en/4.6/tutorials/i18n/localization_using_gettext.html)与固定提交 `89cea143987d564363e15d207438530651d943ac`；各提取、模板、PO 读取与默认消息键路径详见来源记录追加部分。
