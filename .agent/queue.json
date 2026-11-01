@@ -2466,11 +2466,14 @@
       "id": "TASK-2026-0096",
       "question": "Which presentation policy and upstream work boundaries prevent swapchain mode or image count from proving end-to-end input latency?",
       "discipline": "GFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Concrete source-depth performance decision gap, independent of blocked GPU execution and pending runtime release",
       "expected_artifact": "Pinned primary-source analysis with explicitly hypothetical queue timeline and no measured latency claim",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/rendering/presentation-queue-latency-boundary.md",
+        "research/source-notes/presentation-queue-latency-boundary.md"
+      ],
       "acceptance": [
         "Read fixed Vulkan surface/swapchain clauses and independently review scope",
         "Keep separate DXGI waitable-swapchain guidance from Vulkan guarantees",
@@ -2480,8 +2483,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T05:10:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T04:33:31.519213Z",
-      "next_action": "Review fixed presentation-queue sources and finite unexecuted timeline",
+      "last_progress_at": "2026-11-01T04:40:17.655329Z",
+      "next_action": "Publish reviewed presentation-policy source analysis and explicitly unexecuted sampled-state-age counterexample",
       "blockers": []
     }
   ]

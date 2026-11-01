@@ -153,3 +153,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [游戏 UI 美术来源](../research/source-notes/game-ui-artist-role.md)以日英工作室原始说明定位受限视觉语言；组合状态方案为原创未执行建议。
 
 [游戏作曲的原始来源](../research/source-notes/game-composer-role.md)定位具名创作者的声部分合与写作重点；意图不等于玩家效果。
+
+[呈现队列的固定来源](../research/source-notes/presentation-queue-latency-boundary.md)区分 Vulkan 请求政策与独立 DXGI 等待样例。

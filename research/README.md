@@ -159,3 +159,5 @@ python3 scripts/evidence/test_verify.py
 [作曲与交互编配](../roles/music/game-composer.md)区分技术对齐与有意的组合/缺席；三声部选择表未制作、试听或运行。
 
 [战斗、动画与预测的适用范围复核](audits/combat-applicability/REVIEW.md)追踪五条高风险证据转移边界；未发现新的实质越界，不新增运行结果或改写既有结论。
+
+[呈现队列与输入时效](../solutions/rendering/presentation-queue-latency-boundary.md)用未执行有限反例区分上游等待、图像容量与采样状态年龄，不提供硬件延迟测量。
