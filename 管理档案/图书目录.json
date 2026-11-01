@@ -192,12 +192,18 @@
       "area": "玩法系统",
       "shelf": "岗位与协作",
       "proposed_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/programming/gameplay-programmer.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+      "reader_body_status": "published",
+      "original_scope_status": "partially_extracted",
+      "pending_chapter_tasks": [
+        "REMEDIATION-15-01",
+        "REMEDIATION-15-02",
+        "REMEDIATION-15-03",
+        "REMEDIATION-15-04"
+      ],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料"
     },
     {
       "internal_id": "ROLE-QA-001",
@@ -336,12 +342,18 @@
       "area": "移动导航",
       "shelf": "路径查询",
       "proposed_path": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "solutions/ai/navigation-readiness-and-partial-path.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "已通过独立读者视角审读与实际导航检查",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+      "current_read_path": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+      "reader_body_status": "published",
+      "original_scope_status": "partially_extracted",
+      "pending_chapter_tasks": [
+        "REMEDIATION-14-01",
+        "REMEDIATION-14-02",
+        "REMEDIATION-14-03"
+      ],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "extraction_scope": "导航可用性排查主线重写；地图更新时序、烘焙细节和碰撞所有者观察仍待整理"
     },
     {
       "internal_id": "SOL-ANIM-002",
@@ -901,8 +913,8 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 17,
-  "legacy_entries_remaining": 38,
+  "rewritten_reader_books": 19,
+  "legacy_entries_remaining": 36,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
   "fully_remediated_original_items": 0,
