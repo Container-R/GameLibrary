@@ -2521,7 +2521,7 @@
       "id": "TASK-2026-0098",
       "question": "When can authored Unreal animation Notify eligibility exclude a hook expected to request an authoritative combat decision?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Deepen existing simulation-versus-presentation boundary with concrete engine configuration and ownership mismatch",
       "expected_artifact": "Independent source-only analysis note with original authored-event/authority checklist; existing article unchanged",
@@ -2535,11 +2535,36 @@
         "Preserve existing Godot and Python evidence scopes",
         "No engine execution, runtime metadata release or guessed dispatch internals"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T04:53:19.434424Z",
-      "next_action": "Publish reviewed note-only Notify eligibility analysis and neutral scheduled audit",
+      "next_action": "Retain source-only eligibility and sole server-local premise; existing engine evidence unchanged",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:54:52.131797Z",
+      "commit_sha": "4fb1939b61fbb02a4e57ba3c9ec9c0e709156a87"
+    },
+    {
+      "id": "TASK-2026-0099",
+      "question": "Do independent reliable channels establish the entity-readiness dependency between creation and a subsequent action?",
+      "discipline": "PROG",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen network integration evidence with precise channel-local ordering versus application lifecycle boundary",
+      "expected_artifact": "Source-only note with pinned ENet mechanism, independently scoped Godot docs, two-message scenario and intervention table",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read pinned original ENet design and exact channel sequence/dispatch branches",
+        "Do not equate upstream source with Godot modified ENet binary or spawn implementation",
+        "Use an already-existing receiver dispatcher and distinguish possible order from observed traffic",
+        "Separate transport ACK, application readiness, generation and authorization",
+        "No packets, native execution or runtime metadata publication"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:35:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:54:52.131797Z",
+      "next_action": "Independently review pinned channel ordering and entity-readiness source gate",
       "blockers": []
     }
   ]
