@@ -6,8 +6,8 @@
     "TASK-2026-0147"
   ],
   "started_at": "2026-11-01T10:05:12Z",
-  "ended_at": "2026-11-01T10:05:41.121490Z",
-  "outcome": "Independent review accepted; one source-translation phrase corrected locally pending publication",
+  "ended_at": "2026-11-01T10:07:42.456625Z",
+  "outcome": "Independent three-case audit archived and precise inclusive-count correction published with exact readback",
   "sources_examined": [
     "https://blog.toylogic.co.jp/programmer/3758.html"
   ],
@@ -29,7 +29,11 @@
     "local_links_checked": 912,
     "queue_tasks_checked": 147,
     "declared_paths_checked": 201,
-    "full_changed_file_privacy_scan": "PASS"
+    "full_changed_file_privacy_scan": "PASS",
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 147
   },
-  "next_action": "Verify correction publication then assess substantive remaining source-depth gaps"
+  "next_action": "Investigate a distinct source-depth question only after closing published review findings; keep source-only release scope",
+  "commit_sha": "9bbbddb925dd10b211864a8c9dbbae5ffc5244f5"
 }
