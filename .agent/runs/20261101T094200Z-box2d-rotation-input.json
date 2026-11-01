@@ -6,8 +6,8 @@
     "TASK-2026-0144"
   ],
   "started_at": "2026-11-01T09:42:06Z",
-  "ended_at": "2026-11-01T09:44:51.594124Z",
-  "outcome": "Independently reviewed additive motion-representation section; publication validation pending",
+  "ended_at": "2026-11-01T09:45:48.423764Z",
+  "outcome": "Existing Box2D source note supplemented with reviewed rotation-input example and exact readback matched",
   "sources_examined": [
     "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/collision.h#L435-L490",
     "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/collision.md#L266-L296"
@@ -31,7 +31,12 @@
     "archive_consistency_fail": 0,
     "archive_scope": "Declared archive consistency only; no new runtime or semantic test",
     "declared_paths_checked": 194,
-    "full_changed_file_privacy_scan": "PASS"
+    "full_changed_file_privacy_scan": "PASS",
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "local_links_checked": 894,
+    "receipt_queue_tasks_checked": 144
   },
-  "next_action": "Verify exact publication and inspect remaining source-depth priorities rather than repeat coverage summaries"
+  "next_action": "Review existing high-value source and discovery gaps before selecting another substantive unit; avoid repeated small notes",
+  "commit_sha": "58e20e961285e9342353340eb5593ce1d890abe2"
 }

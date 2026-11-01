@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:25:00Z",
+      "lease_until": "2026-11-01T10:35:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:44:51.594124Z",
-      "next_action": "Strengthen existing source-only physics note with a distinct motion-input premise, not a duplicate sensor or substep article",
+      "last_progress_at": "2026-11-01T09:45:48.423764Z",
+      "next_action": "Review existing high-value source and discovery gaps before selecting another substantive unit; avoid repeated small notes",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3786,7 +3786,7 @@
       "id": "TASK-2026-0144",
       "question": "Does a center-translation cast express the region traversed by an explicitly rotating extended shape?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "Concrete pinned collision interface and original geometry address weapon/query motion representation without claiming an observed engine failure",
       "expected_artifact": "Small additive subsection in existing source-only sensor and sweep note",
@@ -3801,12 +3801,14 @@
         "Preserve all existing historical-version prose exactly",
         "Scan complete uploaded note and exclude private execution metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T09:44:51.594124Z",
-      "next_action": "Validate independent review, exact inverse patch and publication",
-      "blockers": []
+      "next_action": "Retain explicit counterclockwise path and geometric-only scope; no actual engine miss or safe substep guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:45:48.423764Z",
+      "commit_sha": "58e20e961285e9342353340eb5593ce1d890abe2"
     }
   ]
 }
