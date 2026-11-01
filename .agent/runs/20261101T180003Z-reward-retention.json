@@ -1,0 +1,28 @@
+{
+  "run_id": "20261101T180003Z-reward-retention",
+  "observed_at": "2026-11-01T18:00:03Z",
+  "parent_verified_head": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
+  "task": "TASK-2026-0008",
+  "outcome": "Added provider deduplication retention limits and repeatable-task identity example to existing online-services reader article, rather than duplicating existing economy explanations.",
+  "reader_path": "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+  "new_books": 0,
+  "reader_inventory": 57,
+  "source_scope": "Public rolling PlayFab Economy v2 tutorial and AddInventoryItems reference read on 2026-11-01; no fixed service build claimed.",
+  "source_observation_difference": "Independent page reads displayed different API version labels; shared field text used, not version-specific execution claims.",
+  "verification_method": "Source reading and editorial comparison; no account request, service test or native execution.",
+  "independent_review": {
+    "result": "Technical and prose scope accepted; initial relative link off by one directory corrected before publication.",
+    "accepted_reader_sha256": "13eef45498dbe267b9d95a7036bed9be3aa530b45f7c847d291961173a0d957f"
+  },
+  "prior_publication_readback": {
+    "commit": "2bd5001f96392eafe542e46e27e20b5c7c8adf60",
+    "reader_content_matched": true,
+    "support_target_in_tree": true
+  },
+  "structural_checks": {
+    "reader_books": 57,
+    "local_reader_links": 126,
+    "local_fragments": 22
+  },
+  "publication_note": "Readback of containing commit follows publication."
+}
