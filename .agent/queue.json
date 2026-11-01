@@ -2033,7 +2033,7 @@
       "id": "TASK-2026-0080",
       "question": "How should an environment concept paintover distinguish visual exploration, construction decisions and preserved blockout intent?",
       "discipline": "ART2D",
-      "status": "reviewing",
+      "status": "published",
       "priority": 87,
       "priority_rationale": "Practitioner-grounded concept-art role gap connects design intent to environment production without duplicating technical import checks",
       "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
@@ -2047,11 +2047,35 @@
         "No image reproduction, inferred visual inspection or universal job boundaries",
         "Independent source/editorial review and precise existing TA/design/model links"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T02:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T01:49:48.989263Z",
-      "next_action": "Publish independently reviewed environment concept role and original unexecuted ambiguity-map worksheet",
+      "next_action": "Retain historical practitioner scope and unexecuted handoff; no visual or production-outcome validation",
+      "blockers": [],
+      "completed_at": "2026-11-01T01:54:08.221118Z",
+      "commit_sha": "7e876317578dce3e2f948287f7cbfea5aba5cd74"
+    },
+    {
+      "id": "TASK-2026-0081",
+      "question": "How should adaptive pacing separate estimated intensity, population requests, ongoing encounters and player experience?",
+      "discipline": "AI",
+      "status": "researching",
+      "priority": 87,
+      "priority_rationale": "Original Valve Director source case complements individual NPC execution boundaries",
+      "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Original Michael Booth AIIDE 2009 presentation and publisher index",
+        "Explicit per-survivor estimate, team aggregation, pacing phase and population exception scope",
+        "No reconstructed runtime, player outcome or universal difficulty guarantee",
+        "Independent source and editorial review"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T02:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T01:54:08.221118Z",
+      "next_action": "Complete main source reading then draft narrowly scoped Director case from independently accepted source gate",
       "blockers": []
     }
   ]
