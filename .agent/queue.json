@@ -3173,7 +3173,7 @@
       "id": "TASK-2026-0122",
       "question": "When can a retained Addressables catalog-load operation prevent a later catalog reload from fetching updated data, and who owns its release?",
       "discipline": "PROG",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Strengthen an existing correct catalog-update boundary with the missing operation-handle prerequisite, without confusing asset and bundle lifetimes",
       "expected_artifact": "Version-specific source-backed catalog operation ownership addition and bounded unexecuted acceptance scenario",
@@ -3188,11 +3188,36 @@
         "Do not claim cancellation, concurrent broker behavior or executed network results",
         "Keep unchanged evidence and safe whole-file publication scope"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T07:50:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:05:11.865482Z",
-      "next_action": "Review operation cache versus catalog hash cache and single-owner release policy before publication",
+      "next_action": "Retain explicit operation ownership and separate cache layers; no executed catalog or freshness claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:07:38.419702Z",
+      "commit_sha": "85d67685cc2b5f2e0571701d79cd09b2d86c5dcb"
+    },
+    {
+      "id": "TASK-2026-0123",
+      "question": "Do the published sensor, generated-tool dependency and event/bank lifetime additions preserve their decisive premises under fresh adversarial source review?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 94,
+      "priority_rationale": "Verify three recent depth additions with a fresh reviewer rather than expanding topic count; preserve original scouting overlap disclosure",
+      "expected_artifact": "Bounded snapshot-linked adversarial review with exact article identities and source checks",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin the published snapshot and exact article hashes",
+        "Separate prior scouting recheck from fresh independent review",
+        "Challenge version and control-flow premises directly using original sources",
+        "Do not read or certify unrelated runtime archives",
+        "Archive actionable correction or honest no-material-error result without claiming runtime validation"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T07:55:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:07:38.419702Z",
+      "next_action": "Reconcile fresh reviewer findings with published snapshot and archive bounded review results",
       "blockers": []
     }
   ]
