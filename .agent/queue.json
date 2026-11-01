@@ -2386,7 +2386,7 @@
       "id": "TASK-2026-0093",
       "question": "How can game UI art distinguish simultaneous selection, availability and comparison meanings under a constrained visual vocabulary?",
       "discipline": "ART2D",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "Fill distinct UI art responsibility gap with original practitioner sources and concrete unexecuted combined-state analysis",
       "expected_artifact": "UI artist role and original-source note",
@@ -2400,11 +2400,35 @@
         "No measured readability, runtime or image-derived claims",
         "Exclude pending runtime records and execution metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T05:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T04:20:23.558424Z",
-      "next_action": "Publish independently reviewed source-only UI art scope",
+      "next_action": "Retain proposed combined-state scope; actual UI, readability and focus evidence remain separate",
+      "blockers": [],
+      "completed_at": "2026-11-01T04:22:10.816553Z",
+      "commit_sha": "958e4722e6f7c044af064781e6d0b40c00d363b2"
+    },
+    {
+      "id": "TASK-2026-0094",
+      "question": "Which concrete composition-to-interactive-arrangement responsibility is supported by original game-composer production accounts beyond existing runtime-transition and PCM studies?",
+      "discipline": "MUSIC",
+      "status": "researching",
+      "priority": 85,
+      "priority_rationale": "Assess missing composition-role coverage without duplicating audio implementation or inventing player-effect claims",
+      "expected_artifact": "Two-source original-practitioner gate and, if distinct, source-only composer role analysis",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read existing audio role, transition and PCM evidence first",
+        "Verify original named composer or studio production accounts",
+        "Choose concrete composition/arrangement decision, not generic ownership worksheet",
+        "No runtime, emotional-effectiveness, player or image/audio analysis claim without actual evidence"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T05:10:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T04:22:10.816553Z",
+      "next_action": "Review original composer production sources and distinct role scope",
       "blockers": []
     }
   ]

@@ -5,8 +5,8 @@
     "TASK-2026-0093"
   ],
   "started_at": "2026-11-01T04:09:54Z",
-  "ended_at": "2026-11-01T04:20:23.558424Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T04:22:10.816553Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.platinumgames.com/official-blog/article/9624",
     "https://www.bandainamcostudios.com/recruit/career/interview/1161"
@@ -25,7 +25,13 @@
     "unchanged_prior_experiment_files": 3227,
     "archive_checks_normal": 519,
     "archive_checks_optimized": 519,
-    "queue_tasks_checked": 93
+    "queue_tasks_checked": 93,
+    "selected_blob_hashes_verified": 14,
+    "outside_tree_changes": 0,
+    "local_links_checked": 751,
+    "receipt_queue_tasks_checked": 94,
+    "declared_paths_checked": 119
   },
-  "next_action": "Continue source-led research while separate evidence release review remains pending"
+  "next_action": "Continue source-led research while separate evidence release review remains pending",
+  "commit_sha": "958e4722e6f7c044af064781e6d0b40c00d363b2"
 }
