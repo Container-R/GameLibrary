@@ -3479,11 +3479,13 @@
       "id": "TASK-2026-0133",
       "question": "Can original DOOM production combat and animation material support a concrete encounter-control mechanism beyond existing timing and ownership notes?",
       "discipline": "DESIGN",
-      "status": "researching",
+      "status": "needs-research",
       "priority": 92,
       "priority_rationale": "Deepen actual production-case understanding and implementation tradeoffs without role-count padding",
       "expected_artifact": "A primary-source access and mechanism gate with concrete constraints, source locations and transfer limits",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "research/source-gates/doom-combat-technical-content.md"
+      ],
       "acceptance": [
         "Inspect actual existing target and record exact identity",
         "Use original source or specification with version scope",
@@ -3491,11 +3493,39 @@
         "Reject generic or duplicative expansion and preserve source-access limits",
         "No participant data, private runtime artifacts or held publication content"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T08:21:31.142344Z",
+      "next_action": "Reopen only when a legally readable original technical slide or timed talk segment establishes actual DOOM mechanism and limits; no abstract-based article",
+      "blockers": [
+        "No directly inspected original technical segment available through the attempted public text/video routes"
+      ]
+    },
+    {
+      "id": "TASK-2026-0134",
+      "question": "How does adding a history guard affect both rule eligibility and criterion-count ranking in the historical Valve contextual-dialogue design?",
+      "discipline": "NARR",
+      "status": "reviewing",
+      "priority": 93,
+      "priority_rationale": "Tie a concrete content edit to an original production selection mechanism and distinguish history guards from response variants",
+      "expected_artifact": "Source-backed historical case with original two-rule trace and bounded receiving decision",
+      "artifact_paths": [
+        "case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
+        "research/source-notes/valve-contextual-dialogue-rule-selection.md"
+      ],
+      "acceptance": [
+        "Read official original mechanism and exact physical page identities",
+        "Evaluate eligibility before count-based ranking",
+        "Keep history fact presence and false value distinct",
+        "Treat history updates as stipulated query snapshots, not audio-completion receipts",
+        "Do not inherit ink evidence or claim Valve defects/current implementation"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T09:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T08:12:18.941858Z",
-      "next_action": "Read accessible original DOOM combat/animation material; reject duplicate or source-insufficient expansion",
+      "last_progress_at": "2026-11-01T08:21:31.142344Z",
+      "next_action": "Complete independent final draft review and publish coherent case without full source deck",
       "blockers": []
     }
   ]

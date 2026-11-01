@@ -57,5 +57,6 @@
 - [Factorio 派生缓存失同步：读取前失效与读档后重算必须遵守同一语义](case-studies/engine/factorio-derived-cache-load-equivalence.md) — `source-backed` · `ENGINE`
 - [Destiny 2 配置回退事故：实例准入与角色数据恢复不是同一道验收](case-studies/liveops/destiny-config-admission-rollback.md) — `source-backed` · `LIVE`
 - [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `source-backed` · `NARR`
+- [Valve 情境对白：新增历史条件为何也会改变候选排名](case-studies/narrative/valve-contextual-dialogue-rule-selection.md) — `source-backed` · `NARR`
 - [League 服务器分配：观测到的低负载，不等于下一场对局的余量](case-studies/network/league-server-allocation-observation-age.md) — `source-backed` · `NET`
 
