@@ -18,3 +18,12 @@ Vulkan-Docs `v1.3.296` 的 annotated tag `7353f6ced118815d61852a739b9eae6f0055d7
 ## 原创分析范围
 
 16/32 毫秒时间线、串行占用、下一更新机会和有限评审表均是本文假设/建议，不是规范给出的数字或实测记录。只在假设内比较采样状态年龄，不称为 input-to-photon。没有来源图表、长代码或硬件测量资料复制；事实短述集中在正文。
+
+## 2026-11-01 增补：present-wait semaphore 的正常循环复用
+
+既有 Vulkan 1.3.296 与 Microsoft 来源记录及时间线假设保留不变。本次补充一个同步对象选择机制，不把指南当作独立驱动验证。
+
+- **S4** Khronos Vulkan Guide，*Swapchain Semaphore Reuse*，固定提交 `82887e8444045655cc4578827e4183be9de593ff`（快照提交日期 2026-10-23，不据此推定本章最后修改日期），访问 2026-11-01。[固定原文](https://github.com/KhronosGroup/Vulkan-Guide/blob/82887e8444045655cc4578827e4183be9de593ff/chapters/swapchain_semaphore_reuse.adoc)。定向依据 *Problem Statement*、*Discussion of Solution* 及正常循环示例；按章节标题定位。复用事实短述集中于正文 §1.1，不复制上游伪代码。
+- 与既有 **S2** 的 [acquire 返回与同步区分](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc#L1065-L1091) 联读。Guide 的固定提交与历史规范版本分别标示，不以指南日期推定规则首次生效时间。
+- 两个帧槽、三张图像与 S0 的身份反例是原创假设，不是上游示例的执行结果，也未证明某次实际 present 尚未完成。新片段没有变更原 16/32 毫秒时间线的数值、串行条件或显示机会假设。
+- 未创建交换链、运行驱动／验证层或模型，未测量延迟；未据指南末尾扩展讨论制定重建、关闭或错误恢复方案。

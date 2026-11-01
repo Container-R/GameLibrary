@@ -6,17 +6,18 @@ status: source-backed
 primary_discipline: GFX
 related_disciplines: [ENGINE, PROG, PLATFORM, UX, QA]
 related_roles: [rendering-programmer, engine-programmer, gameplay-programmer, qa-engineer]
-related_topics: [presentation-queue, swapchain, input-sampling, frame-pacing, latency-boundary]
+related_topics: [presentation-queue, swapchain, input-sampling, frame-pacing, latency-boundary, present-wait-semaphore-reuse]
 engines: []
 platforms: [Vulkan-WSI-documentation, Windows-DXGI-documentation]
-versions: ["Vulkan 1.3.296，2024-09-26，486e4b289053a7d64784e7ce791711843c60c235", "Microsoft DXGI 1.3 / Direct3D 11.2 指南，页面更新2022-10-20"]
+versions: ["Vulkan 1.3.296，2024-09-26，486e4b289053a7d64784e7ce791711843c60c235", "Microsoft DXGI 1.3 / Direct3D 11.2 指南，页面更新2022-10-20", "Khronos Vulkan Guide 固定快照 82887e8444045655cc4578827e4183be9de593ff，2026-10-23"]
 updated_at: 2026-11-01
 review_after: 2027-02-01
-verification_method: 固定 Khronos 规范与 Microsoft 平台指南正文核对；有限时间线为原创未执行推演；未创建呈现链、运行渲染或测量输入到光子延迟
+verification_method: 固定 Khronos 规范、同步指南与 Microsoft 平台指南正文核对；有限时间线及同步对象身份反例为原创未执行推演；未创建呈现链、运行渲染或验证层、测量输入到光子延迟
 sources:
   - https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_surface/wsi.adoc
   - https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc
   - https://learn.microsoft.com/en-us/windows/uwp/gaming/reduce-latency-with-dxgi-1-3-swap-chains
+  - https://github.com/KhronosGroup/Vulkan-Guide/blob/82887e8444045655cc4578827e4183be9de593ff/chapters/swapchain_semaphore_reuse.adoc
 ---
 
 # 呈现队列与输入时效：为何 MAILBOX 和图像数量不能单独给出延迟
@@ -34,6 +35,16 @@ sources:
 `minImageCount` 是创建时要求的最小图像数，不是实际图像数或延迟。规范提醒不要依赖 `vkAcquireNextImageKHR` 必然阻塞来控制生成节奏；获取返回不等于可安全访问图像数据；访问前须等待相应 semaphore 或 fence 发出信号。`vkQueuePresentKHR` 的队列操作范围不含呈现引擎对图像的实际处理，具体呈现时机依平台而定。[S2]
 
 因此下面这些数量必须分开：图像存储容量、应用已准入的帧工作、GPU 待处理工作、呈现端待处理请求。它们可能相互约束，但不是同一个计数。由上述机制不能推出“有三张图就固定多两帧延迟”，也不能推出“MAILBOX 会取消此前的 GPU 渲染”。
+
+### 1.1 正常循环中的同步对象：帧槽结束，不是 present 等待结束
+
+这里有一项独立于延迟优化的正确性决定。Khronos 固定指南说明：等待渲染提交的 fence，不能保证 `vkQueuePresentKHR` 对 `pWaitSemaphores` 的使用已经结束；重新获取同一交换链图像并等待相应 acquire 同步对象，才建立其方案所需的复用条件。指南因此按**实际交换链图像数**分配这些二值信号量，再按取得的 `image_index` 选择。[S4]
+
+**原创未执行反例：** 假设有两个在途帧槽、三张交换链图像 A、B、C。帧槽 0 渲染 A，提交 signal S0，随后 present 等待 S0。槽 0 再次轮到时，CPU 已等到该槽的提交 fence；这次获取的是 C。如果仅凭槽号再次 signal S0，就把“槽 0 的渲染提交结束”误当成“A 的 present 已不再使用 S0”。这里不是声称观察到了冲突，而是指出现有等待不足以证明这次复用安全。两个计数不同只是让身份错配更明显，并不意味着计数相同就能免除同步要求。
+
+正常成功路径的接收重点是：**数组容量、图像索引、acquire 等待三者一起核对**。若取得 C，就选与 C 对应的 present-wait semaphore，并保留 acquire 的同步关系；不能把 CPU 得到索引的返回时刻当作等待完成。在指南所示、同步设置有效的普通 `vkQueueSubmit` 路径中，可由 GPU 提交等待 acquire semaphore，再 signal 对应的 present-wait semaphore，不必为此额外增加一次 CPU 阻塞；这里不推广到任意 `vkQueueSubmit2` stage mask 配置。帧 fence、命令缓冲和 acquire semaphore 仍可按各自的帧槽寿命管理，不是把所有数组一律改为图像索引。[S4]
+
+这个片段只讨论持续呈现的正常循环，不提供完整可运行实现，也不覆盖获取失败、交换链重建、关闭、队列族或扩展路径。先前 presentation 操作及其 semaphore 等待结束，也不等于那张图像实际显示给了用户：请求可能被替换或丢弃。本文没有运行驱动或验证层，不给后面的假设时间线增加任何实测依据。
 
 ## 2. 有限反例：相同模式，相同图像数，不同上游等待
 
@@ -89,5 +100,7 @@ Microsoft 的 DXGI 1.3 指南介绍从 Direct3D 11.2 起可用的 waitable swapc
 - **S1** Khronos，Vulkan 1.3.296，2024-09-26，固定提交 `486e4b289053a7d64784e7ce791711843c60c235`：[VkPresentModeKHR](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_surface/wsi.adoc#L1545-L1563)。
 - **S2** 同版本，[最小图像数](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc#L267-L270)、[获取与节奏](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc#L1065-L1091)、[呈现操作范围](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc#L1368-L1389)。
 - **S3** Microsoft，[Reduce latency with DXGI 1.3 swap chains](https://learn.microsoft.com/en-us/windows/uwp/gaming/reduce-latency-with-dxgi-1-3-swap-chains)，页面更新2022-10-20；动机说明、Steps 2/4。
+
+- **S4** Khronos Vulkan Guide，[Swapchain Semaphore Reuse](https://github.com/KhronosGroup/Vulkan-Guide/blob/82887e8444045655cc4578827e4183be9de593ff/chapters/swapchain_semaphore_reuse.adoc)，快照提交 `82887e8444045655cc4578827e4183be9de593ff`，2026-10-23；Problem Statement、Discussion of Solution 与正常循环示例。快照日期不是章节最后修改日。访问2026-11-01。
 
 关联：[图形程序职责](../../roles/rendering/graphics-programmer.md)负责将视觉需求与可观察成本/行为交接；[矩阵接口合同](matrix-major-interface-contract.md)讨论另一种数据边界，其证据不验证本条的呈现或延迟；[固定 Tick](../programming/fixed-step-simulation-boundary.md)的模拟时间规则也不等于显示时效。

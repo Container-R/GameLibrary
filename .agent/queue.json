@@ -3313,25 +3313,28 @@
     },
     {
       "id": "TASK-2026-0127",
-      "question": "Which existing engineering article has a concrete unresolved source-level mechanism that changes a receiving decision?",
-      "discipline": "ENGINE",
-      "status": "researching",
+      "question": "What completion evidence permits reuse of a binary semaphore previously waited on by presentation?",
+      "discipline": "GFX",
+      "status": "reviewing",
       "priority": 92,
-      "priority_rationale": "Select an evidence gap before drafting; deepen a version-specific mechanism instead of increasing article count",
-      "expected_artifact": "One finite original-source gate and bounded addition only if evidence and novelty support it",
-      "artifact_paths": [],
+      "priority_rationale": "Turn distinct frame/image identities into a concrete synchronization receiving decision",
+      "expected_artifact": "Bounded source-backed normal-cycle semaphore reuse addition",
+      "artifact_paths": [
+        "solutions/rendering/presentation-queue-latency-boundary.md",
+        "research/source-notes/presentation-queue-latency-boundary.md"
+      ],
       "acceptance": [
-        "Inspect actual existing target and record exact identity",
-        "Use original source or specification with version scope",
-        "Identify a concrete counterexample or receiving decision not already covered",
-        "Reject generic or duplicative expansion and preserve source-access limits",
-        "No participant data, private runtime artifacts or held publication content"
+        "Separate submission fence completion from presentation wait completion",
+        "Keep actual image count, acquired image index and acquire synchronization together",
+        "Preserve old unexecuted latency timeline and distinguish synchronization from visibility",
+        "Exclude error, recreation, shutdown, queue-family and extension paths",
+        "No GPU, validation-layer, model or runtime-archive work"
       ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T08:15:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T07:32:17.204785Z",
-      "next_action": "Inspect source-depth candidate from existing-depth-selection-15 and accept or reject against existing coverage",
+      "last_progress_at": "2026-11-01T07:35:42.599952Z",
+      "next_action": "Review exact normal-cycle addition and its synchronization scope",
       "blockers": []
     }
   ]
