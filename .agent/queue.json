@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:30:00Z",
+      "lease_until": "2026-11-01T09:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:52:01.998887Z",
-      "next_action": "Coverage inquiry led to a deeper nearest-hit traversal contract; preserve source and runtime distinctions",
+      "last_progress_at": "2026-11-01T08:53:36.795003Z",
+      "next_action": "Inspect research source-note discoverability against the catalog and existing reading routes; address a concrete navigation gap without upgrading evidence or recategorizing private records",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3588,7 +3588,7 @@
       "id": "TASK-2026-0137",
       "question": "When do ordered uniform-grid cells justify nearest-hit termination if lists retain whole overlapping primitives?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 95,
       "priority_rationale": "Close a concrete geometry-query invariant with original author text and fixed implementation rather than infer a defect from an incomplete shader listing",
       "expected_artifact": "Source-backed knowledge article with exact nonboundary geometric counterexample and unexecuted finite acceptance plan",
@@ -3603,12 +3603,14 @@
         "Separate nearest-hit from any-hit and finite query interval",
         "Do not allege a defect in uninspected full NVIDIA implementation or claim execution"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T09:35:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T08:52:01.998887Z",
-      "next_action": "Finalize independent exact artifact review, validate and publish original nearest-hit analysis",
-      "blockers": []
+      "next_action": "Retain conservative grid and exact geometric assumptions; no actual ray-query or baker defect claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T08:53:36.795003Z",
+      "commit_sha": "522b92eaa90b37ab530b901cc23cc9b1207d85ea"
     }
   ]
 }
