@@ -1,0 +1,27 @@
+upstream/peer.c: In function 'enet_peer_remove_incoming_commands':
+upstream/peer.c:279:48: warning: unused parameter 'queue' [-Wunused-parameter]
+  279 | enet_peer_remove_incoming_commands (ENetList * queue, ENetListIterator startCommand, ENetListIterator endCommand, ENetIncomingCommand * excludeCommand)
+      |                                     ~~~~~~~~~~~^~~~~
+upstream/protocol.c: In function 'enet_protocol_change_state':
+upstream/protocol.c:36:40: warning: unused parameter 'host' [-Wunused-parameter]
+   36 | enet_protocol_change_state (ENetHost * host, ENetPeer * peer, ENetPeerState state)
+      |                             ~~~~~~~~~~~^~~~
+upstream/protocol.c: In function 'enet_protocol_handle_connect':
+upstream/protocol.c:295:69: warning: unused parameter 'header' [-Wunused-parameter]
+  295 | enet_protocol_handle_connect (ENetHost * host, ENetProtocolHeader * header, ENetProtocol * command)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+upstream/protocol.c: In function 'enet_protocol_handle_ping':
+upstream/protocol.c:766:39: warning: unused parameter 'host' [-Wunused-parameter]
+  766 | enet_protocol_handle_ping (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)
+      |                            ~~~~~~~~~~~^~~~
+upstream/protocol.c:766:83: warning: unused parameter 'command' [-Wunused-parameter]
+  766 | enet_protocol_handle_ping (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)
+      |                                                              ~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+upstream/protocol.c: In function 'enet_protocol_handle_throttle_configure':
+upstream/protocol.c:809:53: warning: unused parameter 'host' [-Wunused-parameter]
+  809 | enet_protocol_handle_throttle_configure (ENetHost * host, ENetPeer * peer, const ENetProtocol * command)
+      |                                          ~~~~~~~~~~~^~~~
+upstream/protocol.c: In function 'enet_protocol_check_timeouts':
+upstream/protocol.c:1376:62: warning: comparison of integer expressions of different signedness: 'int' and 'enet_uint32' {aka 'unsigned int'} [-Wsign-compare]
+ 1376 |                ((1 << (outgoingCommand -> sendAttempts - 1)) >= peer -> timeoutLimit &&
+      |                                                              ^~

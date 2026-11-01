@@ -13,16 +13,16 @@
     "reader_books_total": 62
   },
   "publication": {
-    "last_verified_head_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
+    "last_verified_head_sha": "9553c937836ea64e7718c6399c23dc4b7297b8cd",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "62 reader books; existing cloud-save chapter distinguishes replacement visibility, storage synchronization and multi-file coherence, not a crash-safe implementation.",
-    "latest_verified_content_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
+    "scope": "62 readers unchanged; input snapshot distinction integrated into fixed-step reader; native ENet preparation and failed-gate evidence archived without runtime validation.",
+    "latest_verified_content_sha": "9553c937836ea64e7718c6399c23dc4b7297b8cd",
     "reader_books_total": 62,
     "post_baseline_research_books": 7,
-    "counts_basis": "62 readers unchanged; finite integration into SOL-PLATFORM-001."
+    "counts_basis": "Existing reader integration, no new book."
   },
-  "next_action": "Review a finite native ENet peer_send queue-only protocol using fixed upstream sources, initialization invariants and literal expected command cases; do not execute sockets or infer delivery/performance, and do not replace upstream branches with a toy model.",
+  "next_action": "Review existing localization coverage before selecting a concrete primary-source gap; native ENet queue verification is stopped on tracing permissions, with no untraced or escalated retry.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T20:30:00Z",
+    "lease_until": "2026-11-01T20:55:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T194643Z-save-replacement-scope",
+  "last_run_id": "20261101T201110Z-input-snapshot-and-native-limit",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T19:46:43Z",
-  "last_commit_sha": "453e56bc19eac3d573a5fb4df3d379e0fa0c3053",
+  "last_real_progress_at": "2026-11-01T20:11:10Z",
+  "last_commit_sha": "9553c937836ea64e7718c6399c23dc4b7297b8cd",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

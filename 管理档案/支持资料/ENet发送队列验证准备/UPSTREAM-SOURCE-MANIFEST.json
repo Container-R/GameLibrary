@@ -1,0 +1,91 @@
+{
+  "commit": "2662c0de09e36f2a2030ccc2c528a3e4c9e8138a",
+  "scope": "Fixed upstream UTF-8 source text; no compilation or native execution",
+  "files": [
+    {
+      "path": "peer.c",
+      "git_blob": "a7ac012079adacd49fb0c007635d40b1fd2ccfef",
+      "sha256": "a967be4d6b03e8059838587f6f0e13fe092109121f51bec4ed039721ddc1a157"
+    },
+    {
+      "path": "packet.c",
+      "git_blob": "d51c6404049fc08d9f7548176f288d77a53b33eb",
+      "sha256": "cfa444c3bf8460a1a14909166b08efc2cf82112b4368011814396d6d09a3bce7"
+    },
+    {
+      "path": "callbacks.c",
+      "git_blob": "b3990af1fb91951cd7bf17f57e0108b9c27319e1",
+      "sha256": "0d42c2a191c7d22ed0da2b14617b958cce2efd2a185b3aef9fe51a0fb6704ba2"
+    },
+    {
+      "path": "list.c",
+      "git_blob": "1c1a8dfaafc9119a68c599ed90a90600fa65d8c1",
+      "sha256": "c5350bfa7b7d3cc49fa4b2ebab92e359995e4b1ca47c2c17b0fa338dad87e5a4"
+    },
+    {
+      "path": "host.c",
+      "git_blob": "fff946a392c1e2bf9a1ec50bf957e98d048d76c5",
+      "sha256": "396e27689fe5ad6cc88d3a96fb93fa274f951663fe2f627391ab8f48a6d95830"
+    },
+    {
+      "path": "protocol.c",
+      "git_blob": "843a719af381d6ae0b5c331d5ccfda15f20b42ab",
+      "sha256": "5f9bf575cef8c36a24687e4f4c2fd2f2d2f57232350816376a18f50b4a328095"
+    },
+    {
+      "path": "unix.c",
+      "git_blob": "66692169c1360c891492b785bbf73ca8ab83470d",
+      "sha256": "eb901bc255150fdf867b4a71419b1b233e5bb0858abf298da282320a2fa02045"
+    },
+    {
+      "path": "compress.c",
+      "git_blob": "784489a7877cca4e6f13bb57a856434d2a0a60be",
+      "sha256": "6af9da787bf5aaeb44befcf4e4a822d6e4d0972279bac73004f628bf06788774"
+    },
+    {
+      "path": "include/enet/enet.h",
+      "git_blob": "30010187633fa1e31cba58a1d066669e789054a8",
+      "sha256": "1780a6ecc27574a207438639869573f4e417bffc9c95f48a95837a887fad9acf"
+    },
+    {
+      "path": "include/enet/protocol.h",
+      "git_blob": "f8c73d8a668c7a73bf41b9d793ec539b1c0df376",
+      "sha256": "32de2a7e94e7dcfdf1b9fae2e4cde44f2e44ef49e9a1c4a9dac2165289da281f"
+    },
+    {
+      "path": "include/enet/unix.h",
+      "git_blob": "b55be33103d0d3cad4c7b96ea69b72b7e2dadb3a",
+      "sha256": "c37171b9f5f37e813059f6e37f247d32ae96037b6f2165d743fc757c6ea80c83"
+    },
+    {
+      "path": "include/enet/types.h",
+      "git_blob": "ab010a4b13ddd439e807db5ffcda6ead134b8fef",
+      "sha256": "543482db06a0086983641f550effec827e0ccf722667d4e1956cc92cb074dca6"
+    },
+    {
+      "path": "include/enet/list.h",
+      "git_blob": "d7b2600848ff0cdc67838ecc7d6a1e7471b66aef",
+      "sha256": "845120efb4ad1633eb2f61c8d8f5529b33de2170152779bc6046ac0453cab46b"
+    },
+    {
+      "path": "include/enet/callbacks.h",
+      "git_blob": "340a4a9896b0860da09112b6ebe48a617254089d",
+      "sha256": "20b3d8834bd19b77d9e8b6bcef4cd6fccb9875a4c1cdb0e5f7881b1b285c8d16"
+    },
+    {
+      "path": "include/enet/time.h",
+      "git_blob": "c82a5460351bc2f160124f89cc91458ddd84a649",
+      "sha256": "808d5c402c908c14afd0df385855a1b8713e5f69a04008c341a70928647d3e6e"
+    },
+    {
+      "path": "include/enet/utility.h",
+      "git_blob": "b04bb7a5b3584149617e72c5623eaee883043a53",
+      "sha256": "5f9f3b9f5110d6a0e4be94bcf7950031985c278b49c922f637074e30784fc392"
+    },
+    {
+      "path": "Makefile.am",
+      "git_blob": "ddd69cfb60d2fabf2292a05352096cd0ba3051b4",
+      "sha256": "bf0d7504c810cff4ab8e4c0ad000a4e7835d4ad8fcb3aaa5914baa7f5f9d6266"
+    }
+  ]
+}

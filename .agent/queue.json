@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T20:30:00Z",
+      "lease_until": "2026-11-01T20:55:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T19:46:43Z",
-      "next_action": "Review a finite native ENet peer_send queue-only protocol using fixed upstream sources, initialization invariants and literal expected command cases; do not execute sockets or infer delivery/performance, and do not replace upstream branches with a toy model.",
+      "last_progress_at": "2026-11-01T20:11:10Z",
+      "next_action": "Review existing localization coverage before selecting a concrete primary-source gap; native ENet queue verification is stopped on tracing permissions, with no untraced or escalated retry.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6019,11 +6019,40 @@
       "next_action": "Retain fixed-upstream scope; actual network timing, engine modifications and project snapshot policy require separate checks.",
       "blockers": [],
       "verification_method": "Primary source and independent agent source/full-reader/local navigation review; no network/native tests."
+    },
+    {
+      "id": "TASK-2026-0159",
+      "parent_task_id": "TASK-2026-0158",
+      "question": "Can the fixed ENet peer_send queue branches and selected ownership states be observed with the original library under a no-network tracing gate?",
+      "discipline": "NET",
+      "status": "blocked",
+      "priority": 75,
+      "priority_rationale": "Strengthen an existing source-only article without substituting a toy implementation.",
+      "expected_artifact": "管理档案/支持资料/ENet发送队列验证准备/README.md",
+      "artifact_paths": [
+        "管理档案/支持资料/ENet发送队列验证准备/README.md",
+        "管理档案/支持资料/ENet发送队列验证准备/FAILURE-SUMMARY.md",
+        "管理档案/支持资料/ENet发送队列验证准备/FAILURE-REVIEW.md"
+      ],
+      "acceptance": [
+        "Frozen literal oracle and unchanged upstream inputs",
+        "Valid bounded trace and native output for all intended cases",
+        "No production transport or latency extrapolation"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 2,
+      "last_progress_at": "2026-11-01T20:11:10Z",
+      "next_action": "Remain stopped in this environment; only reconsider in an authorized tracing-capable environment after fixed-source protocol review.",
+      "blockers": [
+        "Tracing permission unavailable; no confirmed native cases."
+      ],
+      "verification_method": "Two builds, one failed tracer launch, zero confirmed native cases. Synthetic tests and source reviews are not native behavior validation."
     }
   ],
   "execution_policy": {
-    "normal_research_paused": true,
-    "highest_priority": "reader-baseline-rebuild",
-    "resume_condition": "Reader navigation and editorial baseline accepted"
+    "normal_research_paused": false,
+    "highest_priority": "reader-first-source-grounded-research",
+    "resume_condition": "Frozen reader-baseline rebuild accepted; preserve reader-first standards and scoped evidence limits."
   }
 }
