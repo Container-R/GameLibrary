@@ -1865,7 +1865,7 @@
       "id": "TASK-2026-0074",
       "question": "How does a real-time VFX artist distinguish authored appearance, gameplay-state correspondence, context review and player understanding?",
       "discipline": "VFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 91,
       "priority_rationale": "Whole-role matrix lacks VFX authoring and gameplay-signal responsibility despite separate Niagara cost protocol",
       "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
@@ -1880,11 +1880,36 @@
         "Label hypothetical ground-warning workflow unexecuted; no numerical wins or universal timings",
         "Independently review source alignment and validate final navigation without duplicating performance/asset protocols"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T01:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T00:36:56.701815Z",
-      "next_action": "Publish reviewed VFX responsibility interface and unexecuted gameplay-signal handoff",
+      "next_action": "Preserve historical source and unexecuted workflow scope; concrete visual/player validation requires a separate accepted protocol",
+      "blockers": [],
+      "completed_at": "2026-11-01T00:38:21.006705Z",
+      "commit_sha": "66d3fa37d469e0f62518f57bd228a85cf25bdb13"
+    },
+    {
+      "id": "TASK-2026-0075",
+      "question": "Which exact color-space assumptions remain untested after existing alpha-association evidence, and is a bounded linear-light compositing counterexample useful?",
+      "discipline": "ART2D",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Strengthen a declared existing color-management gap instead of inferring encoded-channel arithmetic is linear-light behavior",
+      "expected_artifact": "Exact-evidence source gate; only proceed to a finite original experiment if justified and independently reviewed",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read and hash the exact prior article and tested fixture",
+        "Read authoritative transfer-function/compositing sources with version and applicability limits",
+        "Inspect installed capabilities read-only before selecting an experiment",
+        "Keep color encoding separate from alpha association and physical display/player observations",
+        "Do not run native or graphics tests before protocol acceptance"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T01:30:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T00:38:21.006705Z",
+      "next_action": "Review delegated source-only gate and exact existing alpha evidence; reject duplication or unsupported color-management scope",
       "blockers": []
     }
   ]

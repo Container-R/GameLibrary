@@ -6,8 +6,8 @@
     "TASK-2026-0008"
   ],
   "started_at": "2026-11-01T00:36:38Z",
-  "ended_at": "2026-11-01T00:36:56.701815Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T00:38:21.006705Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.bandainamcostudios.com/recruit/career/interview/1034",
     "https://www.leagueoflegends.com/en-au/news/dev/clarity-in-league/",
@@ -29,8 +29,13 @@
     "declared_paths_checked": 75,
     "archive_checks_normal": 457,
     "archive_checks_optimized": 457,
-    "local_links": 563
+    "local_links": 563,
+    "selected_blob_hashes_verified": 17,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 75,
+    "receipt_declared_paths_checked": 75
   },
   "next_action": "Read exact existing alpha-association evidence and primary color-space sources before selecting any experiment",
-  "run_scope": "Integration of previously independently reviewed draft; source research and review timestamps are retained in their audit records"
+  "run_scope": "Integration of previously independently reviewed draft; source research and review timestamps are retained in their audit records",
+  "commit_sha": "66d3fa37d469e0f62518f57bd228a85cf25bdb13"
 }
