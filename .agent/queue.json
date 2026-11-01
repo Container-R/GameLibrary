@@ -3230,7 +3230,7 @@
       "id": "TASK-2026-0124",
       "question": "How can ink lookahead execute a host action before a displayed narrative boundary, and how should external binding policy distinguish API defaults?",
       "discipline": "NARR",
-      "status": "reviewing",
+      "status": "published",
       "priority": 93,
       "priority_rationale": "Deepen narrative-host handoff with a fixed implementation mechanism beyond generic commit-point advice",
       "expected_artifact": "Finite source-backed narrative role addition on lookahead-safe external binding and execution placement",
@@ -3245,11 +3245,36 @@
         "Original reward scenario is conditional and unexecuted, not a production incident",
         "No runtime archive inspection or claim of tested ink script"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:13:20.937651Z",
-      "next_action": "Review fixed lookahead gate and separate narrative execution placement from exactly-once effects",
+      "next_action": "Retain fixed C# implementation and conditional host-effect scenario; no exactly-once or display guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:18:06.362311Z",
+      "commit_sha": "cb05b900135081fc823fa33131ac92ee70616939"
+    },
+    {
+      "id": "TASK-2026-0125",
+      "question": "What control semantics and change notifications must a settings flow hand off beyond a visible label when screen narration is enabled?",
+      "discipline": "UX",
+      "status": "researching",
+      "priority": 93,
+      "priority_rationale": "Strengthen the existing UX settings workflow with concrete nonvisual control identity and value-change responsibilities",
+      "expected_artifact": "Source-backed finite settings-control narration addition with unexecuted receiving conditions",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read official XAG106 focused control, value/state and interruption guidance directly",
+        "Separate labels, roles, current values, interaction hints and action confirmation",
+        "Do not turn one context-preserving example into a universal only-value rule",
+        "No screen reader run, listening, image/video inspection or accessibility certification claim",
+        "Preserve existing UX workflow and studio-attribution boundaries"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:05:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:18:06.362311Z",
+      "next_action": "Reconcile source gate with directly read XAG106 control semantics and value-change guidance before drafting",
       "blockers": []
     }
   ]
