@@ -4065,8 +4065,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T13:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T12:14:02.085884Z",
-      "next_action": "Publish exact reviewed tree; continue existing lighting-instance and localization-context rewrites and alpha/PCM scope review without new topics",
+      "last_progress_at": "2026-11-01T12:18:40.384518Z",
+      "next_action": "Rewrite existing shared-light and localization-context books; review alpha and PCM original scope and retain appropriate detailed support without automatic new books; no new topics",
       "blockers": [],
       "milestones": {
         "navigation_stage_ready": true,
@@ -4093,7 +4093,9 @@
         "tenth_reader_batch_published_sha": "47b38beca46ea2329acecd7714663163e2f1df0d",
         "tenth_batch_readback_verified": true,
         "eleventh_reader_batch_published_sha": "f06814ffa4f7401ba4791366e02371f46a4e0398",
-        "eleventh_batch_readback_verified": true
+        "eleventh_batch_readback_verified": true,
+        "twelfth_reader_batch_published_sha": "099efaa05f4224833016fd3a51d9bbd482171695",
+        "twelfth_batch_readback_verified": true
       },
       "completion_rule": "Every original inventory item and retained useful subtopic must have an accepted reader treatment or a reviewed merge/exclusion rationale; counts and script passes cannot close remediation."
     }

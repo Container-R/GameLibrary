@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T12:07:45Z",
-  "ended_at": "2026-11-01T12:17:15.458347Z",
-  "outcome": "Animator and VFX bodies and real routes accepted; UI and completion-rate C1 old scopes accounted for; publication pending",
+  "ended_at": "2026-11-01T12:18:40.384518Z",
+  "outcome": "Animator and VFX books, completion-rate correction and eight cumulative original-scope dispositions published and read back; continuing remaining inventory remediation",
   "baseline_head": "61ff06aa62cdd51820d7e9f1d642e58c3d5ac98f",
   "books": [
     "GameLibrary/\u89d2\u8272\u52a8\u753b/\u52a8\u753b\u5236\u4f5c/\u5c97\u4f4d\u4e0e\u534f\u4f5c/\u6e38\u620f\u52a8\u753b\u5e08\u7684\u5de5\u4f5c\u4e0e\u534f\u4f5c.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Publish exact reviewed tree; continue existing lighting-instance and localization-context rewrites and alpha/PCM scope review without new topics",
+  "next_action": "Rewrite existing shared-light and localization-context books; review alpha and PCM original scope and retain appropriate detailed support without automatic new books; no new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u52a8\u753b\u5236\u4f5c-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u7279\u6548\u5236\u4f5c-\u72ec\u7acb\u5ba1\u8bfb.md",
@@ -44,10 +44,12 @@
     "new_book_requirement": false
   },
   "validation": {
+    "selected_blob_hashes_verified": 17,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1071,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "queue_artifact_paths_checked": 236,
-    "inventory_shelf_entries_checked": 55,
-    "runtime_experiments": 0
-  }
+    "remote_books_read_back": true
+  },
+  "commit_sha": "099efaa05f4224833016fd3a51d9bbd482171695"
 }
