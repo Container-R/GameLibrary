@@ -14,6 +14,16 @@ Valve 的动态云同步文档描述了这样的流程：挂起期间，玩家�
 
 下面的“停止旧写入、读取候选、比较版本、接受后恢复保存”是应用设计建议。SDK 的通知与批次接口不替游戏提供应用内锁、事务或冲突合并。
 
+## 进入恢复流程前，先分清这是谁的本地存档
+
+还有一个比版本比较更早的前提：同一台电脑上的两个 Steam 账户，不应仅因共用操作系统账户，就被游戏指向同一份本地档案。假设 A 玩完退出，B 换用自己的 Steam 账户启动；如果两次“继续游戏”仍读取一个固定共同文件，路径本身并没有区分两人。这是未执行的配置反例，不是在预测 Steam 会按什么次序覆盖或上传文件。
+
+Valve 要求保存路径对当前 Steam 用户唯一。对使用普通文件和 Auto-Cloud 的项目，配置中的 **Subdirectory** 支持 `{64BitSteamID}` 与 `{Steam3AccountID}`，分别对应用户的 64 位 Steam ID 与 Steam3 Account ID；游戏实际读写的目录也必须与所选表示相对应。[1] `GetSteamID` 返回当前登录 Steam 客户端的账户标识，不是操作系统用户名或显示昵称。[7] 这些占位符属于 Auto-Cloud 配置，不能把带花括号的字串直接交给普通文件接口，就期待它自动替换。
+
+配置后应检查 A、B 分别启动时实际选中的位置，以及 B 是否仍回退到旧共同文件。旧档迁移还要判断归属，不能把“当前登录的是 B”当作旧文件属于 B 的证据。跨系统使用 Root Override 时，`Replace Path` 会替换整个原 Subdirectory，因此还需复查最终路径是否保留用户区分。[1] 这是建议的接入检查，不是已完成的账户或迁移测试。
+
+Cloud API 自身会隔离各 Steam 用户的文件，不能把上述 Auto-Cloud 配置办法一律套给它。[1] 同时，按用户分目录不等于文件权限或服务端授权，也不能解决同一用户在两台设备上产生不同进度的问题。下面仍讨论单用户、单槽恢复；原有模型没有因此获得多账户切换覆盖。
+
 ## 第一件事是挡住旧保存，而不是立刻保存一次
 
 恢复时，为了“确保进度安全”先自动保存，反而可能把旧内存写回刚更新的文件。自动保存、手动保存、退出保存和后台线程，应由同一个协调入口管理，否则只暂停其中一条路径没有用。
@@ -94,13 +104,15 @@ Valve 提供了动态云同步的本地测试办法，并警告：直接向不�
 
 2026-11-01 重新读取以下官方正文。Steamworks 为滚动在线文档，未锁定 SDK 二进制版本；本篇没有操作 Steam App 配置、账户或真实存档，也没有执行双设备恢复。
 
-1. Valve，[*Steam Cloud*](https://partner.steamgames.com/doc/features/cloud)，Dynamic Cloud Sync 及其 Pre-release Testing。仅据文档解释通知与测试入口，不声称获得完整应用写入顺序保证。
+1. Valve，[*Steam Cloud*](https://partner.steamgames.com/doc/features/cloud)，Dynamic Cloud Sync 及其 Pre-release Testing、Save File Paths、Steam Auto-Cloud 的 Subdirectory 与 Root Overrides。仅据文档解释通知、路径配置与测试入口，不声称获得完整应用写入顺序保证。
 2. Valve，[*ISteamRemoteStorage Interface*](https://partner.steamgames.com/doc/api/ISteamRemoteStorage)，本地文件变化枚举、路径类型、写入批次与异步写完成说明。
 3. Python，3.12系列 [*os.replace*](https://docs.python.org/3.12/library/os.html#os.replace)，本次页面显示3.12.16。用于区分文件操作语义与业务版本决策，不将它解释为条件比较替换或崩溃持久性承诺。
 
 4. Linux man-pages 6.19，[*rename(2)*](https://man7.org/linux/man-pages/man2/rename.2.html)，DESCRIPTION；该接口不跨挂载点重命名，NFS还存在返回失败但操作已发生的情况，不将局部说明推广为任意文件系统的失败保证。
 5. Linux man-pages 6.19，[*fsync(2)*](https://man7.org/linux/man-pages/man2/fsync.2.html)，DESCRIPTION、RETURN VALUE与ERRORS；文档页标注2026-02-08，不表示本篇运行了对应内核或文件系统。
 6. Microsoft，[*ReplaceFileW*](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew)，标志、返回错误及同卷要求；2026-11-01读取滚动API文档，无Windows执行。
+
+7. Valve，[*ISteamUser::GetSteamID*](https://partner.steamgames.com/doc/api/ISteamUser#GetSteamID)，当前登录 Steam 客户端账户标识；未调用接口或读取实际账户。
 
 版本关系、停写与候选处理是本文整理的应用设计建议；历史模型和有限文件实验仍按原范围解释，没有被重新认证成平台方案。
 

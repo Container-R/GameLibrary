@@ -1,0 +1,23 @@
+{
+  "run_id": "20261101T203941Z-steam-account-path",
+  "observed_at": "2026-11-01T20:39:41Z",
+  "parent_verified_head": "0a094329e70df3d7ef03794087f745b5fa3c74e3",
+  "task": "TASK-2026-0008",
+  "outcome": "Integrated user-specific Auto-Cloud subdirectories, matching game paths and Replace Path review into the existing cloud-save reader.",
+  "reader_path": "GameLibrary/平台与发行/平台接入/云存档/Steam动态云同步恢复后的存档冲突处理.md",
+  "reader_sha256": "26997502dc534837f364061d132c56d7320d25f292df42e944db8ad1635446a8",
+  "verification_method": "Official rolling Steamworks sections and independent full-reader/source review. No Steam client, application configuration, account, save data or device test accessed.",
+  "independent_review_sha256": "1930c1b7184ddcc18b34a03afa86f365490917fedfb4277ebf9cbd4dfbe3191d",
+  "prior_publication_readback": {
+    "commit": "0a094329e70df3d7ef03794087f745b5fa3c74e3",
+    "key_files_matched": 3,
+    "reader_books_tree_matched": 63,
+    "reader_links_tree_matched": 155
+  },
+  "scope_limits": [
+    "No new book or expansion of historical single-user model.",
+    "Path separation does not provide file permissions, server authentication or version merging.",
+    "ENet native attempt remains stopped; no new runtime result."
+  ],
+  "publication_note": "Containing commit readback follows publication."
+}
