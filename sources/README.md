@@ -143,3 +143,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [Resource 复制图](../research/source-notes/resource-duplication-policy.md)将浅/内部/全部深复制与容器、子资源和副本内部别名分开，保留固定源码与实际安装程序的身份界限。
 
 [本地化协调职责来源](../research/source-notes/localization-coordinator-role.md)核对两份历史实践者说明，区分语义沟通与原创未执行的变更接收表。
+
+[离线 stem 混音来源](../research/source-notes/silent-stem-normalization.md)定位固定 FFmpeg 的输入归一化与 EOF/FIFO 机制；程序自报与源码身份分列。

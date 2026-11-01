@@ -1,0 +1,318 @@
+{
+  "status": "PASS",
+  "uuid": "0522fc0d-998a-489a-ba2d-05a8418dabd2",
+  "original_directory": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2",
+  "processes": [
+    {
+      "name": "version",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-version"
+      ],
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/version/HOME",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/version/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/version/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/version/XDG_DATA_HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/version/TMPDIR"
+      },
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T03:33:54.891697+00:00",
+      "inputs_before": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      },
+      "pid": 7,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T03:33:54.957836+00:00",
+      "stdout_sha256": "b241942a091ee91966e5b04017a34f1f2a3bcfb1cf80a195e274db03874459d9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inputs_after": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      }
+    },
+    {
+      "name": "full-normalized",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/A.f32le",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/B-full.f32le",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "[0:a]asetnsamples=n=256:p=0[a];[1:a]asetnsamples=n=256:p=0[b];[a][b]amix=inputs=2:duration=longest:dropout_transition=0:weights=1 1:normalize=1[out]",
+        "-map",
+        "[out]",
+        "-c:a",
+        "pcm_f32le",
+        "-f",
+        "f32le",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/full-normalized.f32le"
+      ],
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/full-normalized/HOME",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/full-normalized/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/full-normalized/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/full-normalized/XDG_DATA_HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/full-normalized/TMPDIR"
+      },
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T03:33:54.959350+00:00",
+      "inputs_before": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      },
+      "pid": 8,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T03:33:55.026731+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inputs_after": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      }
+    },
+    {
+      "name": "short-normalized",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/A.f32le",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/B-short.f32le",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "[0:a]asetnsamples=n=256:p=0[a];[1:a]asetnsamples=n=256:p=0[b];[a][b]amix=inputs=2:duration=longest:dropout_transition=0:weights=1 1:normalize=1[out]",
+        "-map",
+        "[out]",
+        "-c:a",
+        "pcm_f32le",
+        "-f",
+        "f32le",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/short-normalized.f32le"
+      ],
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-normalized/HOME",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-normalized/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-normalized/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-normalized/XDG_DATA_HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-normalized/TMPDIR"
+      },
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T03:33:55.029220+00:00",
+      "inputs_before": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      },
+      "pid": 16,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T03:33:55.094871+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inputs_after": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      }
+    },
+    {
+      "name": "short-unscaled",
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-nostdin",
+        "-n",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/A.f32le",
+        "-f",
+        "f32le",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
+        "-i",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/B-short.f32le",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "[0:a]asetnsamples=n=256:p=0[a];[1:a]asetnsamples=n=256:p=0[b];[a][b]amix=inputs=2:duration=longest:dropout_transition=0:weights=1 1:normalize=0[out]",
+        "-map",
+        "[out]",
+        "-c:a",
+        "pcm_f32le",
+        "-f",
+        "f32le",
+        "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/short-unscaled.f32le"
+      ],
+      "cwd": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2",
+      "environment": {
+        "PATH": "/usr/bin:/bin",
+        "LANG": "C",
+        "LC_ALL": "C",
+        "HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-unscaled/HOME",
+        "XDG_CACHE_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-unscaled/XDG_CACHE_HOME",
+        "XDG_CONFIG_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-unscaled/XDG_CONFIG_HOME",
+        "XDG_DATA_HOME": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-unscaled/XDG_DATA_HOME",
+        "TMPDIR": "/workspace/scratch/6d9a354d4cae/research-drafts/ffmpeg-silent-stem-author-run/evidence/0522fc0d-998a-489a-ba2d-05a8418dabd2/environment/short-unscaled/TMPDIR"
+      },
+      "timeout_seconds": 20,
+      "status": "RETURNED",
+      "attempted_utc": "2026-11-01T03:33:55.097171+00:00",
+      "inputs_before": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      },
+      "pid": 24,
+      "returncode": 0,
+      "returned_utc": "2026-11-01T03:33:55.161785+00:00",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inputs_after": {
+        "A": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+        "B-full": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe",
+        "B-short": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+      }
+    }
+  ],
+  "manifest_sha256": "e830cfff7cbae792af06a6cdbba4e0a6a16e73fc66978328a1adbc046fd9540c",
+  "source_before": {
+    "PROTOCOL.md": "04beb14e9feab0215f5493fe4eda59426f2f4be75a22e1ba1fb3d9588e386f36",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "signals.py": "2d90bbf612a39dba16030e38af66e48c86b21e861f05173d58795d10cd2184b0",
+    "consumer.py": "5fe2136ed65421958d2ca4b150b069e1053d9860ae4d85e492eecaa727100285",
+    "run.py": "825dc0a008423b48c3d6ef99d54e4da0a87697277aed2afbc577e47d637d65e0",
+    "test_pure.py": "2f7fa5557f7ed9368d14f4da2ef92400ccfa34f962ef5e0b5afca9eb6ad88414"
+  },
+  "tools_before": {
+    "/usr/bin/ffmpeg": "e8a8d46f5225f3062cec7c07fb145d58ae73c603cb740dcd5bad34bfb54e455a",
+    "/lib/x86_64-linux-gnu/libavfilter.so.10": "420fe0833b4a7062a7ed811ce854c8cbdf566979aa32657a23ffe51dbea0d053"
+  },
+  "inputs": {
+    "A": {
+      "bytes": 16384,
+      "sha256": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c"
+    },
+    "B-full": {
+      "bytes": 16384,
+      "sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe"
+    },
+    "B-short": {
+      "bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+    }
+  },
+  "outputs": {
+    "full-normalized": {
+      "archive": {
+        "bytes": 16384,
+        "sha256": "680aca77ba6b819a4489730f3e42f69ba9f6d7a5921e748a8a46eb1974d0867c"
+      },
+      "check": {
+        "frames": 4096,
+        "bytes": 16384,
+        "all_samples_equal": true
+      }
+    },
+    "short-normalized": {
+      "archive": {
+        "bytes": 16384,
+        "sha256": "882c6f4354476535c7eec3d6c7e165d80ceefc3f52dc9b8663bf65c7acf70a4c"
+      },
+      "check": {
+        "frames": 4096,
+        "bytes": 16384,
+        "all_samples_equal": true
+      }
+    },
+    "short-unscaled": {
+      "archive": {
+        "bytes": 16384,
+        "sha256": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c"
+      },
+      "check": {
+        "frames": 4096,
+        "bytes": 16384,
+        "all_samples_equal": true
+      }
+    }
+  },
+  "source_after": {
+    "PROTOCOL.md": "04beb14e9feab0215f5493fe4eda59426f2f4be75a22e1ba1fb3d9588e386f36",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "signals.py": "2d90bbf612a39dba16030e38af66e48c86b21e861f05173d58795d10cd2184b0",
+    "consumer.py": "5fe2136ed65421958d2ca4b150b069e1053d9860ae4d85e492eecaa727100285",
+    "run.py": "825dc0a008423b48c3d6ef99d54e4da0a87697277aed2afbc577e47d637d65e0",
+    "test_pure.py": "2f7fa5557f7ed9368d14f4da2ef92400ccfa34f962ef5e0b5afca9eb6ad88414"
+  },
+  "tools_after": {
+    "/usr/bin/ffmpeg": "e8a8d46f5225f3062cec7c07fb145d58ae73c603cb740dcd5bad34bfb54e455a",
+    "/lib/x86_64-linux-gnu/libavfilter.so.10": "420fe0833b4a7062a7ed811ce854c8cbdf566979aa32657a23ffe51dbea0d053"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "prospective literal oracle; no native/media execution",
+  "protocol_sha256": "04beb14e9feab0215f5493fe4eda59426f2f4be75a22e1ba1fb3d9588e386f36",
+  "inputs": {
+    "A": {
+      "frames": 4096,
+      "bytes": 16384,
+      "sha256": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c"
+    },
+    "B-full": {
+      "frames": 4096,
+      "bytes": 16384,
+      "sha256": "4fe7b59af6de3b665b67788cc2f99892ab827efae3a467342b3bb4e3bc8e5bfe"
+    },
+    "B-short": {
+      "frames": 2048,
+      "bytes": 8192,
+      "sha256": "9f1dcbc35c350d6027f98be0f5c8b43b42ca52b7604459c0c42be3aa88913d47"
+    }
+  },
+  "outputs": {
+    "full-normalized": {
+      "frames": 4096,
+      "bytes": 16384,
+      "sha256": "680aca77ba6b819a4489730f3e42f69ba9f6d7a5921e748a8a46eb1974d0867c",
+      "segments_start_inclusive_end_exclusive": [
+        [
+          0,
+          4096,
+          "0000803e"
+        ]
+      ]
+    },
+    "short-normalized": {
+      "frames": 4096,
+      "bytes": 16384,
+      "sha256": "882c6f4354476535c7eec3d6c7e165d80ceefc3f52dc9b8663bf65c7acf70a4c",
+      "segments_start_inclusive_end_exclusive": [
+        [
+          0,
+          2048,
+          "0000803e"
+        ],
+        [
+          2048,
+          4096,
+          "0000003f"
+        ]
+      ]
+    },
+    "short-unscaled": {
+      "frames": 4096,
+      "bytes": 16384,
+      "sha256": "66e39e41bccc0a57ae90a77b426f4075e81ba877b0653c3aabe0a9e00762769c",
+      "segments_start_inclusive_end_exclusive": [
+        [
+          0,
+          4096,
+          "0000003f"
+        ]
+      ]
+    }
+  }
+}

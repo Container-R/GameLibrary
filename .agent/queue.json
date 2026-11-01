@@ -2280,11 +2280,15 @@
       "id": "TASK-2026-0089",
       "question": "Can an all-zero offline stem ending change the gain of an unchanged stem through input normalization?",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 88,
       "priority_rationale": "Assess actual offline mixer gain/topology boundary distinct from fake scheduling and PCM frame-count evidence",
       "expected_artifact": "Source/EOF gate first; finite original offline mix only if exact oracle and capability justified",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/audio/silent-stem-normalization-boundary.md",
+        "research/source-notes/silent-stem-normalization.md",
+        "research/experiments/ffmpeg-silent-stem/README.md"
+      ],
       "acceptance": [
         "Read pinned amix options and active-input/EOF source before deciding native scope",
         "Preserve binary/library provenance and no inherited middleware results",
@@ -2294,8 +2298,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T04:00:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:23:17.946585Z",
-      "next_action": "Read pinned offline mixer sources and define or reject finite silent-stem lifetime experiment",
+      "last_progress_at": "2026-11-01T03:37:26.608505Z",
+      "next_action": "Publish independently reviewed finite offline mixing waveform and source boundary",
       "blockers": []
     }
   ]

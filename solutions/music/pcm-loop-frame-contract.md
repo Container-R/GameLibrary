@@ -187,3 +187,5 @@ RFC 7845 分别定义 pre-skip、granule 对应的 PCM 位置和末尾裁剪；�
 ## 来源与访问记录
 
 FMOD 2.04 `Sound::setLoopPoints`、`FMOD_TIMEUNIT`、Tempo Marker，以及上述固定 FFmpeg 文档均于 2026-10-31 核对。FFmpeg 网站整页抓取超时后使用其官方 GitHub 固定文本；未将不可访问的 Wwise 页面计为证据。公式、素材合同和验收表为原创分析；原始数值素材不包含第三方音频资产。
+
+[离线 stem 归一化](../audio/silent-stem-normalization-boundary.md)说明相同输出帧数仍可能有不同波形；输入寿命与增益政策是另一项交付责任，不由本条裁剪/编码证据推出。

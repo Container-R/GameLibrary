@@ -2064,8 +2064,20 @@
     {
       "id": "resource-duplication/archive-bindings",
       "status": "pass"
+    },
+    {
+      "id": "silent-stem/author/source",
+      "status": "pass"
+    },
+    {
+      "id": "silent-stem/repeat/source",
+      "status": "pass"
+    },
+    {
+      "id": "silent-stem/archive-bindings",
+      "status": "pass"
     }
   ],
-  "passed": 516,
+  "passed": 519,
   "failed": 0
 }

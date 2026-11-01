@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T032300Z-silent-stem",
+  "task_ids": [
+    "TASK-2026-0089"
+  ],
+  "started_at": "2026-11-01T03:23:00Z",
+  "ended_at": "2026-11-01T03:37:26.608505Z",
+  "outcome": "reviewed locally; publication pending",
+  "evidence": "Pinned original FFmpeg sources; frozen literal full-waveform expectations; installed offline mixing with independently checked repeat",
+  "native_execution": {
+    "author_uuid": "0522fc0d-998a-489a-ba2d-05a8418dabd2",
+    "repeat_uuid": "59a5d8a4-39ef-448f-8771-622108e7b86c",
+    "version_processes": 2,
+    "mix_processes": 6,
+    "unique_conditions": 3,
+    "output_frames_each": 4096,
+    "retries": 0
+  },
+  "pure_tests": {
+    "final_methods_per_suite": 7,
+    "author_suite_processes": 2,
+    "reviewer_suite_processes": 2,
+    "normal_and_optimized_in_each_pair": true,
+    "independent_checker_control_plus_rejections": [
+      1,
+      8
+    ],
+    "independent_checker_probe_modes": [
+      "normal",
+      "optimized"
+    ],
+    "earlier_six_method_suites_historical": true,
+    "main_timestamp_probes": "one initial false acceptance and two final rejections, final portable-copy probe archived"
+  },
+  "static_checks": {
+    "reviewer_author_pre_repeat": 1,
+    "reviewer_repeat": 1,
+    "main_relocated": 2,
+    "reviewer_author_normal_and_optimized": 2
+  },
+  "pre_native_corrections": [
+    "Best-effort failure post-identities and reversible partial output preservation",
+    "Strict UTC timestamp strings; initial real synthetic false acceptance retained"
+  ],
+  "limitations": [
+    "No listening, loudness, device or middleware integration",
+    "No arbitrary mix/EOF/cross-platform bit reproducibility",
+    "Selected file hashes not authenticated dynamic dependency closure",
+    "No actual timeout or failed native process"
+  ],
+  "validation": {
+    "indexed_articles": 44,
+    "unchanged_prior_experiment_files": 3082,
+    "archive_checks_normal": 519,
+    "archive_checks_optimized": 519,
+    "queue_tasks_checked": 89,
+    "declared_paths_checked": 113
+  },
+  "next_action": "Assess lighting-production responsibility source gate without repeating concept-art or graphics-programmer scope"
+}

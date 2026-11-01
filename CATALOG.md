@@ -29,6 +29,7 @@
 - [大角度原地转身脚滑：先划分根运动与控制器职责，再处理足底接触](solutions/animation/turn-in-place-foot-sliding.md) — `source-backed` · `ANIM`
 - [精灵透明度交接：四通道字节不说明 RGB 是否已经乘过 alpha](solutions/art2d/alpha-association-contract.md) — `source-backed` · `ART2D`
 - [交互音乐状态交接契约：玩法意图不等于可听见的切换](solutions/audio/music-state-transition-contract.md) — `source-backed` · `SFX`
+- [离线 stem 混音：零值输入结束，为何可能改变另一轨增益](solutions/audio/silent-stem-normalization-boundary.md) — `source-backed` · `SFX`
 - [关卡完成率：事件、尝试与玩家分母不能混用](solutions/data/attempt-completion-denominator-contract.md) — `source-backed` · `DATA`
 - [单机成长经济：用事件账本验证来源、消耗与升级可达性](solutions/design/single-player-economy-ledger.md) — `source-backed` · `DESIGN`
 - [Addressables 内容更新：先证明用了哪个已发布基线，再验证旧版客户端](solutions/engine/addressables-content-update-baseline.md) — `source-backed` · `ENGINE`

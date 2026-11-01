@@ -55,6 +55,8 @@
   - 关联理由：用实际离线 PCM 帧证据核对单位和端点，避免把素材边界验收误当作中间件或听感验收。
 - 对白、录音和审核结果怎样完整交给下一制作环节？ → [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `CASE-NARR-001` · `source-backed` · `NARR`
   - 关联理由：日本第一方制作案例与原创验收矩阵分层，避免把文件身份或可用界面当成声音和叙事正确性。
+- 零值尾部被裁掉后，其他 stem 的预览增益为何可能变化？ → [离线 stem 混音：零值输入结束，为何可能改变另一轨增益](solutions/audio/silent-stem-normalization-boundary.md) — `SOL-SFX-002` · `source-backed` · `SFX`
+  - 关联理由：离线输入集合和缩放政策不等于实时音乐状态；完整数值证据也不是听感验收。
 
 ## 从游戏质量保证出发：按证据类型选择方法
 路线 ID：`role-game-quality-assurance`

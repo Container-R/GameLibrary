@@ -1,0 +1,49 @@
+{
+  "kind": "pure synthetic; no native execution",
+  "results": [
+    {
+      "case": "synthetic control",
+      "accepted": true
+    },
+    {
+      "case": "shifted-boundary",
+      "rejected": true,
+      "reason": "literal bytes short-normalized"
+    },
+    {
+      "case": "non-UTC",
+      "rejected": true,
+      "reason": "time order"
+    },
+    {
+      "case": "bool-return",
+      "rejected": true,
+      "reason": "process returncode"
+    },
+    {
+      "case": "timeout-flag",
+      "rejected": true,
+      "reason": "process schema"
+    },
+    {
+      "case": "environment",
+      "rejected": true,
+      "reason": "process environment"
+    },
+    {
+      "case": "wrong-library",
+      "rejected": true,
+      "reason": "tools_after"
+    },
+    {
+      "case": "missing-process",
+      "rejected": true,
+      "reason": "process count"
+    },
+    {
+      "case": "stderr",
+      "rejected": true,
+      "reason": "unexpected diagnostic"
+    }
+  ]
+}

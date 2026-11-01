@@ -1,0 +1,1 @@
+Main reran only the frozen independent checker against the relocated text-only author/repeat archives. Two static Python inspections; no new native, version or media process. Complete inputs/outputs reconstructed from hex; original paths checked lexically. This verifies record consistency, not execution authenticity.
