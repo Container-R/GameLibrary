@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:00:00Z",
+      "lease_until": "2026-11-01T10:10:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:21:44.001255Z",
-      "next_action": "Connect original production motion-selection inputs to concrete content-author receiving decisions",
+      "last_progress_at": "2026-11-01T09:23:06.869878Z",
+      "next_action": "Inspect a distinct original game-audio production source for a concrete scheduling or content constraint beyond existing lifecycle notes",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3701,7 +3701,7 @@
       "id": "TASK-2026-0141",
       "question": "How do authored motion events and request clocks constrain candidate timing without equating a source marker with gameplay success?",
       "discipline": "ANIM",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Original production event-request mechanism addresses combat animation timing beyond transition continuity and notify eligibility",
       "expected_artifact": "Historical production case with explicit original fixed-deadline and marker-semantics examples",
@@ -3716,12 +3716,14 @@
         "Keep motion application and event-authoring responsibilities distinct",
         "Exclude source slides and motion assets from publication"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:05:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T09:21:44.001255Z",
-      "next_action": "Validate independently reviewed historical motion-event case and exact publication",
-      "blockers": []
+      "next_action": "Retain contextual clip interpretation and original candidate-timing assumptions; no actual search or collision guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:23:06.869878Z",
+      "commit_sha": "175005bfb475e000893e5976d12002f03509bec0"
     }
   ]
 }
