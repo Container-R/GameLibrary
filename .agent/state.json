@@ -13,16 +13,16 @@
     "reader_books_total": 58
   },
   "publication": {
-    "last_verified_head_sha": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
+    "last_verified_head_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
     "scope": "58 reader books, unchanged by existing-chapter integrations. Source analysis and finite offline checks are not runtime or participant evidence.",
-    "counts_snapshot_head": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
-    "latest_verified_content_sha": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
+    "counts_snapshot_head": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
+    "latest_verified_content_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
     "reader_books_total": 58,
     "post_baseline_research_books": 3
   },
-  "next_action": "Inspect one existing technical support mechanism for a concrete reader-facing gap, verify the primary source and integrate only if it adds a missing failure condition; maintain explicit incomplete status for unsupported link syntax.",
+  "next_action": "Review an existing cross-disciplinary source mechanism against current reader coverage; prefer a specific missing failure condition and reject duplicate or inaccessible leads before editing.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -60,7 +60,7 @@
     "lease_until": "2026-11-01T19:00:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T182835Z-build-source-and-link-checks",
+  "last_run_id": "20261101T183735Z-render-readiness-integration",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T18:28:35Z",
-  "last_commit_sha": "2d8711c3257c963bb8aaa11a472f9b89ba949f88",
+  "last_real_progress_at": "2026-11-01T18:37:35Z",
+  "last_commit_sha": "ccfaed7ab4a23221253e48dd985eb8ed8306b69e",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
