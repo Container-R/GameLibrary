@@ -3315,7 +3315,7 @@
       "id": "TASK-2026-0127",
       "question": "What completion evidence permits reuse of a binary semaphore previously waited on by presentation?",
       "discipline": "GFX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 92,
       "priority_rationale": "Turn distinct frame/image identities into a concrete synchronization receiving decision",
       "expected_artifact": "Bounded source-backed normal-cycle semaphore reuse addition",
@@ -3330,11 +3330,36 @@
         "Exclude error, recreation, shutdown, queue-family and extension paths",
         "No GPU, validation-layer, model or runtime-archive work"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T08:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:35:42.599952Z",
-      "next_action": "Review exact normal-cycle addition and its synchronization scope",
+      "next_action": "Retain normal-cycle synchronization premises and unexecuted identity counterexample; no visibility or latency guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T07:38:15.862201Z",
+      "commit_sha": "39a7403e2111accbd66059c680975f0353d93955"
+    },
+    {
+      "id": "TASK-2026-0128",
+      "question": "Does one existing high-value source-only solution hide a premise that could invalidate its central receiving claim?",
+      "discipline": "ENGINE",
+      "status": "researching",
+      "priority": 92,
+      "priority_rationale": "Attempt to falsify an existing claim before adding coverage; prioritize substantive hidden premises over routine review counts",
+      "expected_artifact": "A bounded adversarial source audit, with correction only if evidence establishes a gap",
+      "artifact_paths": [],
+      "acceptance": [
+        "Inspect actual existing target and record exact identity",
+        "Use original source or specification with version scope",
+        "Identify a concrete counterexample or receiving decision not already covered",
+        "Reject generic or duplicative expansion and preserve source-access limits",
+        "No participant data, private runtime artifacts or held publication content"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T08:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T07:38:15.862201Z",
+      "next_action": "Inspect existing-depth-selection-16 source audit and reproduce its attempted falsification against exact published prose",
       "blockers": []
     }
   ]

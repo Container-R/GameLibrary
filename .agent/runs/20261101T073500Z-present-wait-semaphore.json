@@ -5,8 +5,8 @@
     "TASK-2026-0127"
   ],
   "started_at": "2026-11-01T07:32:55Z",
-  "ended_at": "2026-11-01T07:37:16.957112Z",
-  "outcome": "independently source-reviewed and editorially accepted; ready for publication",
+  "ended_at": "2026-11-01T07:38:15.862201Z",
+  "outcome": "published and read back",
   "sources": [
     "https://github.com/KhronosGroup/Vulkan-Guide/blob/82887e8444045655cc4578827e4183be9de593ff/chapters/swapchain_semaphore_reuse.adoc",
     "https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/VK_KHR_swapchain/wsi.adoc#L1065-L1091"
@@ -28,7 +28,12 @@
     "static_archive_checks_normal": 519,
     "static_archive_checks_optimized": 519,
     "static_archive_failures": 0,
-    "declared_paths_checked": 170
+    "declared_paths_checked": 170,
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "local_links_checked": 823,
+    "receipt_queue_tasks_checked": 128
   },
-  "next_action": "Adversarially review recent source-depth changes before broader expansion"
+  "next_action": "Inspect existing-depth-selection-16 source audit and reproduce its attempted falsification against exact published prose",
+  "commit_sha": "39a7403e2111accbd66059c680975f0353d93955"
 }
