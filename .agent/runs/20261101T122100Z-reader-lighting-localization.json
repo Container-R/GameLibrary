@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T122100Z-reader-lighting-localization",
+  "task_ids": [
+    "TASK-2026-0152"
+  ],
+  "started_at": "2026-11-01T12:14:47Z",
+  "ended_at": "2026-11-01T12:23:45.387754Z",
+  "outcome": "Lighting and localization bodies and routes accepted; alpha and PCM support dispositions accepted; publication pending",
+  "baseline_head": "8facfebe6b664c78bd498b1673407b2e81ab125b",
+  "books": [
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u573a\u666f\u5149\u7167/\u5171\u4eab\u706f\u5177\u5982\u4f55\u7ba1\u7406\u8d44\u4ea7\u4e0e\u573a\u666f\u5b9e\u4f8b\u7684\u4fee\u6539.md",
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u5185\u5bb9\u534f\u4f5c/\u539f\u6587\u672a\u53d8\u65f6\u54ea\u4e9b\u8bed\u5883\u53d8\u5316\u9700\u8981\u91cd\u65b0\u7ffb\u8bd1.md"
+  ],
+  "book_sha256": {
+    "GameLibrary/\u6280\u672f\u7f8e\u672f/\u73af\u5883\u7ba1\u7ebf/\u573a\u666f\u5149\u7167/\u5171\u4eab\u706f\u5177\u5982\u4f55\u7ba1\u7406\u8d44\u4ea7\u4e0e\u573a\u666f\u5b9e\u4f8b\u7684\u4fee\u6539.md": "4f309805b7208f3f6b4f6dcd16354adfb0721c8f06fcd505adaeadc38c2fd283",
+    "GameLibrary/\u672c\u5730\u5316\u4e0e\u65e0\u969c\u788d/\u672c\u5730\u5316\u5236\u4f5c/\u5185\u5bb9\u534f\u4f5c/\u539f\u6587\u672a\u53d8\u65f6\u54ea\u4e9b\u8bed\u5883\u53d8\u5316\u9700\u8981\u91cd\u65b0\u7ffb\u8bd1.md": "f843b54848abdf1e02321163979e40be967b1fe13b0a3fa8dcb7c2fc291dfe5a"
+  },
+  "rewritten_reader_books": 25,
+  "remaining_legacy_entries": 30,
+  "runtime_experiments": 0,
+  "human_usability_test": false,
+  "limitations": [
+    "No interface or participant study executed",
+    "Composite chapter backlog remains distinct from rewritten entry count",
+    "Legacy bodies and restricted evidence unchanged"
+  ],
+  "next_action": "Publish exact reviewed tree; continue existing Warlander input and Factorio cache case rewrites without new topics",
+  "independent_reviews": [
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5171\u4eab\u706f\u5177-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u8bed\u5883\u672c\u5730\u5316-\u72ec\u7acb\u5ba1\u8bfb.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u900f\u660e\u5ea6\u4e0ePCM-\u652f\u6301\u5165\u53e3\u590d\u6838.md",
+    "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/\u5171\u4eab\u706f\u5177\u4e0e\u672c\u5730\u5316-\u5bfc\u822a\u5ba1\u8bfb.md"
+  ],
+  "scope_dispositions": {
+    "accounted_for_originals": 12,
+    "newly_accounted_for": [
+      "lighting-role",
+      "localization-role",
+      "alpha-association",
+      "pcm-loop"
+    ],
+    "pending_claim_section_checks": 36,
+    "resolved_existing_checks_this_batch": 4,
+    "new_book_requirement": false
+  },
+  "validation": {
+    "skill_v2_schema_errors": 0,
+    "queue_tasks_checked": 152,
+    "queue_artifact_paths_checked": 238,
+    "inventory_shelf_entries_checked": 55,
+    "runtime_experiments": 0
+  }
+}

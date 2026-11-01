@@ -129,12 +129,16 @@
       "area": "本地化制作",
       "shelf": "内容协作",
       "proposed_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/localization/localization-coordinator.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "原文不变的语境复查、Confirm共享、各语言决定和候选检查已承接；Godot默认消息身份保留版本短节，完整源码链明确留现有支持记录",
+      "scope_disposition_review": "管理档案/审查/语境本地化-独立审读.md",
+      "supporting_material": "research/source-notes/localization-coordinator-role.md"
     },
     {
       "internal_id": "ROLE-MUSIC-001",
@@ -243,12 +247,15 @@
       "area": "环境管线",
       "shelf": "场景光照",
       "proposed_path": "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
-      "editorial_status": "整理中／旧版资料",
-      "canonical_reader_path": null,
-      "current_read_path": "roles/rendering/game-lighting-artist.md",
-      "reader_body_status": "legacy_only",
-      "original_scope_status": "not_rewritten",
-      "pending_chapter_tasks": []
+      "editorial_status": "正文已通过独立代理读者视角审读；导航接受记录随本批归档，不代表真人可用性测试",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
+      "reader_body_status": "published",
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
+      "scope_disposition": "共享预设、实例覆盖、接收条件及受影响引用的有限比较全部合并旅馆壁灯主线；未展开外链与管理元数据明确排除，不新增参数或性能保证",
+      "scope_disposition_review": "管理档案/审查/共享灯具-独立审读.md"
     },
     {
       "internal_id": "ROLE-GFX-001",
@@ -422,11 +429,14 @@
       "current_read_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
       "reader_body_status": "published",
-      "original_scope_status": "partially_extracted",
-      "pending_chapter_tasks": [
-        "REMEDIATION-09-01",
-        "REMEDIATION-09-02"
-      ]
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition_review": [
+        "管理档案/审查/透明度与PCM-原范围去向核对.md",
+        "管理档案/审查/透明度与PCM-支持入口复核.md"
+      ],
+      "scope_disposition": "颜色域和转换次序已在新主线覆盖；精度、舍入与有限实验限制留旧double buffer精确小节，新书增加可选入口，不新增颜色管理书",
+      "supporting_material": "solutions/art2d/alpha-association-contract.md#double-buffer-不代表全程-double也不保证最终字节相同"
     },
     {
       "internal_id": "SOL-SFX-001",
@@ -593,13 +603,15 @@
       "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
       "current_read_path": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
       "legacy_retention": "原稿及相关研究保留，读者入口采用重写主题；未搬运执行材料",
-      "extraction_scope": "PCM帧、半开区间与播放接口端点主线重写；Ogg Opus预跳过、尾部修剪与包级语义仍待整理",
       "reader_body_status": "published",
-      "original_scope_status": "partially_extracted",
-      "pending_chapter_tasks": [
-        "REMEDIATION-08-01",
-        "REMEDIATION-08-02"
-      ]
+      "original_scope_status": "accounted_for",
+      "pending_chapter_tasks": [],
+      "scope_disposition_review": [
+        "管理档案/审查/透明度与PCM-原范围去向核对.md",
+        "管理档案/审查/透明度与PCM-支持入口复核.md"
+      ],
+      "scope_disposition": "PCM主线已覆盖；Opus呈现位置、包时长及子集限制明确保留旧第7节支持，新书不再承诺另一本文章；未验证循环重入不变成遗失教程",
+      "supporting_material": "solutions/music/pcm-loop-frame-contract.md#7-编码补充呈现帧数最终-granule-与包时长不是同一数字"
     },
     {
       "internal_id": "SOL-PLATFORM-001",
@@ -941,11 +953,11 @@
       "pending_chapter_tasks": []
     }
   ],
-  "rewritten_reader_books": 23,
-  "legacy_entries_remaining": 32,
+  "rewritten_reader_books": 25,
+  "legacy_entries_remaining": 30,
   "whole_library_rebuild_complete": false,
   "counting_note": "rewritten_reader_books counts published reader bodies, not fully remediated original items. legacy_entries_remaining counts entries still linked to legacy bodies, not all remaining work. Retained composite chapters and scope disposition checks remain separately tracked.",
-  "fully_remediated_original_items": 8,
+  "fully_remediated_original_items": 12,
   "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority."
 }

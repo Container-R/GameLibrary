@@ -203,51 +203,51 @@
     },
     {
       "old_path": "solutions/music/pcm-loop-frame-contract.md",
-      "pending_subtopics": [
-        "Ogg Opus预跳过与尾部修剪",
-        "包边界、裁剪与循环重入的范围限制"
-      ],
-      "scope_status": "partially_extracted",
+      "pending_subtopics": [],
+      "scope_status": "accounted_for",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-08-01",
           "topic": "Ogg Opus预跳过与尾部修剪",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Existing reader coverage plus exact retained support section and optional link; no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:22:07.625654Z"
         },
         {
           "id": "REMEDIATION-08-02",
           "topic": "包边界、裁剪与循环重入的范围限制",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Existing reader coverage plus exact retained support section and optional link; no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:22:07.625665Z"
         }
-      ]
+      ],
+      "disposition_review": "管理档案/审查/透明度与PCM-支持入口复核.md"
     },
     {
       "old_path": "solutions/art2d/alpha-association-contract.md",
-      "pending_subtopics": [
-        "颜色转换与预乘操作次序的精度细节",
-        "ICC转换、有限精度与不同合成工作空间的独立实验边界"
-      ],
-      "scope_status": "partially_extracted",
+      "pending_subtopics": [],
+      "scope_status": "accounted_for",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-09-01",
           "topic": "颜色转换与预乘操作次序的精度细节",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Existing reader coverage plus exact retained support section and optional link; no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:22:07.625669Z"
         },
         {
           "id": "REMEDIATION-09-02",
           "topic": "ICC转换、有限精度与不同合成工作空间的独立实验边界",
-          "status": "pending",
-          "resolution": null,
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "status": "completed",
+          "resolution": "Existing reader coverage plus exact retained support section and optional link; no new book required",
+          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement.",
+          "resolved_at": "2026-11-01T12:22:07.625670Z"
         }
-      ]
+      ],
+      "disposition_review": "管理档案/审查/透明度与PCM-支持入口复核.md"
     },
     {
       "old_path": "solutions/ux/modal-focus-recovery.md",
