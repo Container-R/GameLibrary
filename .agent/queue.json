@@ -1922,11 +1922,14 @@
       "id": "TASK-2026-0076",
       "question": "How did Killzone3 distinguish multi-update task completion, continuation relevance and priority replacement, and what should a new planner/executor handoff record?",
       "discipline": "AI",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 90,
       "priority_rationale": "Developer-authored historical case addresses decision/execution boundary not covered by navigation readiness; useful original handoff analysis without invented shipped implementation",
       "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "case-studies/ai/killzone3-plan-execution-continuation.md",
+        "research/source-notes/killzone3-plan-execution-continuation.md"
+      ],
       "acceptance": [
         "Read original author chapter29 GameAIPro2013 and exact task/continuation/queue pages",
         "Separate historical implementation facts from original cancellation/late-result questions",
@@ -1937,8 +1940,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T01:45:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:06:10.224999Z",
-      "next_action": "Independently review source gate and original proposed action-handoff case; no model/native experiment authorized",
+      "last_progress_at": "2026-11-01T01:08:33.301165Z",
+      "next_action": "Publish concise reviewed historical case and original unexecuted planner/executor acceptance worksheet",
       "blockers": []
     }
   ]

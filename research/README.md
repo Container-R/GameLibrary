@@ -121,3 +121,5 @@ python3 scripts/evidence/test_verify.py
 [游戏动画师](../roles/animation/game-animator.md)把表演意图、指定角色组合与共用修改影响分别交接；袖口反例是假设，未制作资产或验证修复。
 
 [实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。
+
+[Killzone 3 计划与执行案例](../case-studies/ai/killzone3-plan-execution-continuation.md)以有限历史事实引出原创未执行的行动交接审查；没有运行游戏或模型，不能把取消请求或报告过滤当作效果回滚。
