@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T090400Z-tlou2-hybrid-probe",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0139"
+  ],
+  "started_at": "2026-11-01T09:04:49Z",
+  "ended_at": "2026-11-01T09:08:14.749891Z",
+  "outcome": "Historical hybrid-probe production case independently reviewed; publication validation pending",
+  "sources_examined": [
+    "https://www.naughtydog.com/blog/naughty_dog_at_siggraph_2020",
+    "https://history.siggraph.org/wp-content/uploads/2022/08/2020-Talks-Doghramachi_Lighting-Technology-of-The-Last-of-Us-Part-II.pdf",
+    "https://s3.amazonaws.com/nd.images/research/2020_siggraph/LightingTechTlou2.pptx"
+  ],
+  "evidence_added": "Original two-page text and selected official slide/notes text, with independent OOXML slide identity checks",
+  "original_contribution": "Finite wall receiving question distinguishes which sampled component changes; paired hypothetical comparisons disclose topology and direction coupling",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No screenshots inspected, talk video watched or scene rendered",
+    "No reconstruction formula, current engine guarantee or budget recommendation",
+    "Comparison candidates are not claimed as implemented engine options",
+    "Original PPTX and extracted text excluded from publication"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 139,
+    "indexed_articles": 51,
+    "archive_checks_passed": 519,
+    "archive_checks_failed": 0,
+    "optimized_archive_checks_passed": 519,
+    "archive_check_scope": "Static declared archive consistency, not new runtime or semantic validation",
+    "local_links_checked": 874,
+    "declared_paths_checked": 187
+  },
+  "next_action": "Verify publication and investigate one unresolved official-source synchronization contract without private runtime archive access"
+}

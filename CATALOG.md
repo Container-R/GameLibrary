@@ -63,4 +63,5 @@
 - [Cygames 叙事制作工具：对白、录音与上下游交接的验收边界](case-studies/narrative/cygames-scenario-voice-handoff.md) — `source-backed` · `NARR`
 - [Valve 情境对白：新增历史条件为何也会改变候选排名](case-studies/narrative/valve-contextual-dialogue-rule-selection.md) — `source-backed` · `NARR`
 - [League 服务器分配：观测到的低负载，不等于下一场对局的余量](case-studies/network/league-server-allocation-observation-age.md) — `source-backed` · `NET`
+- [《The Last of Us Part II》混合探针光照：内容变化应由哪一层采样承载](case-studies/rendering/tlou2-hybrid-probe-content-frequency.md) — `source-backed` · `GFX`
 

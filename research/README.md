@@ -205,3 +205,5 @@ python3 scripts/evidence/test_verify.py
 [模型烘焙 piece 可见集合](source-notes/model-bake-piece-visibility.md)区分跨输入名称对应与追踪分组不变；原创组件合并反例及接收步骤不预填实际命中或纹理结果。
 
 [均匀网格最近命中的停止边界](../knowledge/rendering/uniform-grid-nearest-hit-termination.md)以固定 PBRT 源码、作者书文和原创双三角形手推区分有序格子访问、最近命中与任意命中；有限验收计划未执行。
+
+[TLOU2 混合探针表示的内容前提](../case-studies/rendering/tlou2-hybrid-probe-content-frequency.md)核对原始演讲及作者注释，区分顶点亮度、探针色度与方向依赖；长墙接收问题及有限比较为原创未执行设计。

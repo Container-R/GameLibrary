@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T09:50:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:01:21.229396Z",
-      "next_action": "Review original Naughty Dog lighting abstract and official deck hybrid luminance/chrominance mechanism; compare actual receiving question with existing lighting role scope",
+      "last_progress_at": "2026-11-01T09:08:14.749891Z",
+      "next_action": "Deepen content-to-representation production evidence without treating missing role profiles as quotas",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3641,6 +3641,32 @@
       "blockers": [],
       "completed_at": "2026-11-01T09:01:21.229396Z",
       "commit_sha": "649cfc048ac6149f3ac75f6c58883c45841be76c"
+    },
+    {
+      "id": "TASK-2026-0139",
+      "question": "When does a hybrid probe representation fit the spatial luminance and chrominance changes required by content?",
+      "discipline": "GFX",
+      "status": "reviewing",
+      "priority": 90,
+      "priority_rationale": "A concrete historical production mechanism links lighting content requirements to which representation carries each component",
+      "expected_artifact": "Source-backed historical case with finite unexecuted receiving comparisons",
+      "artifact_paths": [
+        "case-studies/rendering/tlou2-hybrid-probe-content-frequency.md"
+      ],
+      "acceptance": [
+        "Read original two-page report and selected official slide text and notes",
+        "Keep mainly-overcast content premise conditional",
+        "Retain dominant-direction and SH-mask dependencies",
+        "Separate source-reported production practice from hypothetical receiving decisions",
+        "Specify topology changes and coupled sampling limitations in comparison plan",
+        "Do not redistribute slides or imply rendering, visual or performance reproduction"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T09:55:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T09:08:14.749891Z",
+      "next_action": "Validate exact independently reviewed article and publish bounded historical production case",
+      "blockers": []
     }
   ]
 }
