@@ -5,8 +5,8 @@
     "TASK-2026-0152"
   ],
   "started_at": "2026-11-01T12:26:54Z",
-  "ended_at": "2026-11-01T12:40:30.905582Z",
-  "outcome": "Horizon streaming and L4D pacing reader bodies and actual navigation accepted; publication pending",
+  "ended_at": "2026-11-01T12:41:55.198142Z",
+  "outcome": "Horizon streaming and Left 4 Dead pacing cases published and read back; eighteen cumulative original scopes accounted for",
   "baseline_head": "f48ad9af9110bb14c9ac416978573093154ee760",
   "books": [
     "GameLibrary/\u5f15\u64ce\u4e0e\u5de5\u5177/\u4e16\u754c\u52a0\u8f7d/\u8d44\u6e90\u6d41\u9001/Horizon\u5982\u4f55\u7ec4\u7ec7\u8d44\u6e90\u8bfb\u53d6\u4e0e\u4f9d\u8d56\u521d\u59cb\u5316.md",
@@ -25,7 +25,7 @@
     "Composite chapter backlog remains distinct from rewritten entry count",
     "Legacy bodies and restricted evidence unchanged"
   ],
-  "next_action": "Publish accepted Horizon and L4D batch; integrate accepted matrix and client-prediction bodies with distinct original-scope limits",
+  "next_action": "Integrate accepted matrix-layout and client-prediction reader bodies; keep unreviewed matrix support scope partial; address finite gameplay gaps and existing case rewrites without new topics",
   "independent_reviews": [
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Horizon\u6d41\u9001-\u72ec\u7acb\u5ba1\u8bfb.md",
     "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/L4D\u8282\u594f-\u72ec\u7acb\u5ba1\u8bfb.md"
@@ -41,10 +41,12 @@
   },
   "navigation_review": "\u7ba1\u7406\u6863\u6848/\u5ba1\u67e5/Horizon\u4e0eL4D-\u5bfc\u822a\u9a8c\u6536.md",
   "validation": {
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "local_links_checked": 1082,
     "skill_v2_schema_errors": 0,
     "queue_tasks_checked": 152,
-    "artifact_paths_checked": 242,
-    "inventory_entries_checked": 55,
-    "runtime_experiments": 0
-  }
+    "remote_books_read_back": true
+  },
+  "commit_sha": "e3310a798b6a26f7b021086771cfe58c9586d6e7"
 }
