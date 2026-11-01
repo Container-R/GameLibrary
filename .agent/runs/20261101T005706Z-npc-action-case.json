@@ -5,8 +5,8 @@
     "TASK-2026-0076"
   ],
   "started_at": "2026-11-01T00:57:06Z",
-  "ended_at": "2026-11-01T01:08:33.301165Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T01:13:23.479743Z",
+  "outcome": "published and read back",
   "sources": [
     "https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter29_Hierarchical_AI_for_Multiplayer_Bots_in_Killzone_3.pdf",
     "https://www.gameaipro.com/"
@@ -29,7 +29,12 @@
     "archive_checks_optimized": 467,
     "queue_tasks_checked": 76,
     "declared_paths_checked": 80,
-    "local_links": 576
+    "local_links": 576,
+    "selected_blob_hashes_verified": 13,
+    "outside_tree_changes": 0,
+    "receipt_queue_tasks_checked": 77,
+    "receipt_declared_paths_checked": 80
   },
-  "next_action": "Read exact existing navigation evidence and original NavigationAgent semantics before selecting any runtime experiment"
+  "next_action": "Read exact existing navigation evidence and original NavigationAgent semantics before selecting any runtime experiment",
+  "commit_sha": "cbd47c78a859d49563b44e13cd29b2ed21b1826c"
 }

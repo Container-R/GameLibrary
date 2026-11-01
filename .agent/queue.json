@@ -1922,7 +1922,7 @@
       "id": "TASK-2026-0076",
       "question": "How did Killzone3 distinguish multi-update task completion, continuation relevance and priority replacement, and what should a new planner/executor handoff record?",
       "discipline": "AI",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Developer-authored historical case addresses decision/execution boundary not covered by navigation readiness; useful original handoff analysis without invented shipped implementation",
       "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
@@ -1937,11 +1937,35 @@
         "No runtime, fairness, optimality, modern engine or universal HTN claims",
         "Independent source/editorial review and exact crosslinks to existing navigation/programming evidence"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T01:45:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T01:08:33.301165Z",
-      "next_action": "Publish concise reviewed historical case and original unexecuted planner/executor acceptance worksheet",
+      "next_action": "Retain historical source-only scope and unexecuted original acceptance worksheet; no shipped reproduction or cancellation guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T01:13:23.479743Z",
+      "commit_sha": "cbd47c78a859d49563b44e13cd29b2ed21b1826c"
+    },
+    {
+      "id": "TASK-2026-0077",
+      "question": "Can a consumed partial NavigationAgent3D path finish without reaching the requested target under a controlled positional driver?",
+      "discipline": "AI",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Close actual path consumption gap while separating navigation completion from target arrival and physical locomotion",
+      "expected_artifact": "Bounded controlled Node3D path-consumption experiment or preserved failed gate",
+      "artifact_paths": [],
+      "acceptance": [
+        "Exact prior fixture scope and pinned source review",
+        "Frozen geometry, query-before-move phases and passive signal oracle",
+        "Independent code and pure fail-closed tests before native authorization",
+        "Separate author and independent invocation receipts; no physical character movement claim"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T02:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T01:13:23.479743Z",
+      "next_action": "Implement independently accepted frozen protocol 7e5197e2; review code and pure tests before any Godot process",
       "blockers": []
     }
   ]
