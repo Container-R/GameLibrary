@@ -5,8 +5,8 @@
     "TASK-2026-0071"
   ],
   "started_at": "2026-10-31T23:38:28Z",
-  "ended_at": "2026-10-31T23:58:35.943879Z",
-  "outcome": "reviewed locally; publication pending",
+  "ended_at": "2026-11-01T00:02:56.775000Z",
+  "outcome": "published and read back",
   "sources": [
     "https://docs.godotengine.org/en/4.6/classes/class_control.html",
     "https://docs.godotengine.org/en/4.6/classes/class_viewport.html",
@@ -42,7 +42,10 @@
     "local_links": 525,
     "main_static_commands": 8,
     "relocated_static_commands": 8,
-    "static_commands_engine_invocations": 0
+    "static_commands_engine_invocations": 0,
+    "selected_blob_hashes_verified": 145,
+    "outside_tree_changes": 0
   },
-  "next_action": "Independently review source-backed animator role and hypothetical performance/runtime combination handoff"
+  "next_action": "Independently review source-backed animator role and hypothetical performance/runtime combination handoff",
+  "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3"
 }

@@ -1779,7 +1779,7 @@
       "id": "TASK-2026-0071",
       "question": "Does inherited recursive focus disabling establish an application modal scope boundary when a child overrides it?",
       "discipline": "UX",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Existing native UX fixture covers replacement identity, not same-instance inherited eligibility changes; official sources expose a concrete composition boundary",
       "expected_artifact": "Source-gated finite Control focus observation or exact negative, supplementing existing UX article",
@@ -1795,11 +1795,36 @@
         "Retain unauthenticated local Godot source/release correspondence; no actual navigation/window/visual-accessibility certification",
         "Stop failed oracle without widening timings or variants; independent review and original raw logs required"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T00:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-10-31T23:58:35.943879Z",
-      "next_action": "Publish independently reviewed same-instance recursive eligibility evidence with failed initial observation retained",
+      "next_action": "Retain finite eligibility/scope distinction; device navigation and full modal enforcement remain unverified",
+      "blockers": [],
+      "completed_at": "2026-11-01T00:02:56.775000Z",
+      "commit_sha": "d32d9efd574f9cf3c16e5b390c7506961eb437b3"
+    },
+    {
+      "id": "TASK-2026-0072",
+      "question": "How does a game animator distinguish authored performance acceptance from acceptance in a specified runtime character and outfit combination?",
+      "discipline": "ANIM",
+      "status": "researching",
+      "priority": 91,
+      "priority_rationale": "Role matrix lacks authored animation performance and handoff boundaries despite existing animation mechanism solutions",
+      "expected_artifact": "Source-backed game animator role and original unexecuted combination handoff worksheet",
+      "artifact_paths": [],
+      "acceptance": [
+        "Verify Japanese original studio interview and cohort duties plus English adjacent technical animator responsibility sample",
+        "Keep performance author and technical animator distinct; no universal job title alias or engine ownership",
+        "Label original hypothetical character/outfit handoff as unexecuted and avoid assigning unseen clipping causes",
+        "Preserve historical date, closed recruitment and unviewed embedded video limitations",
+        "Independent source/editorial review and navigation validation before publication"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T01:00:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T00:02:56.775000Z",
+      "next_action": "Review drafted role against main-read original sources and independently assess concrete handoff boundaries",
       "blockers": []
     }
   ]
