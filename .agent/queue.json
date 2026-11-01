@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:35:00Z",
+      "lease_until": "2026-11-01T10:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T09:53:41.230274Z",
-      "next_action": "Study original Japanese production action timing rather than reproduce generic input-buffer advice",
+      "last_progress_at": "2026-11-01T09:54:54.043930Z",
+      "next_action": "Examine original FFXV vaulting candidate supply and geometry checks; separate implemented behavior from future foot-phase and IK proposals",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3814,7 +3814,7 @@
       "id": "TASK-2026-0145",
       "question": "When does a remembered action request overlap its own category-specific cancellation eligibility?",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 94,
       "priority_rationale": "Original Warlander developer mechanism ties authored combat categories to bounded input reservation and explicit acceptance conditions",
       "expected_artifact": "Source-backed production case with original conditional timing analysis, not a reconstructed private queue",
@@ -3830,12 +3830,14 @@
         "Do not confuse eligibility overlap with actual execution or hit confirmation",
         "Exclude source images and preserve existing runtime evidence boundaries"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T10:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T09:53:41.230274Z",
-      "next_action": "Validate source review, conditional arithmetic and exact publication",
-      "blockers": []
+      "next_action": "Retain separate command trials, conditional clock/eligibility assumptions and source-only historical scope",
+      "blockers": [],
+      "completed_at": "2026-11-01T09:54:54.043930Z",
+      "commit_sha": "5b3d180b268c2573422edb34e28a20e69883c9da"
     }
   ]
 }
