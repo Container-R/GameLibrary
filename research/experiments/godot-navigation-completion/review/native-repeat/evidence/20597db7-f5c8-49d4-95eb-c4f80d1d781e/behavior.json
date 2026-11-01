@@ -1,0 +1,8382 @@
+{
+  "events": [
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 3,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "signal",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "signal": "path_changed",
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "signal",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "signal": "waypoint_reached",
+      "step": 1,
+      "waypoint": [
+        1.99999988079071,
+        0.0,
+        1.99999988079071
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 3,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 6.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 3,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          2.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 1
+      },
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 3,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "signal",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "signal": "path_changed",
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "signal",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "signal": "waypoint_reached",
+      "step": 1,
+      "waypoint": [
+        1.99999988079071,
+        0.0,
+        1.99999988079071
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 3,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 3,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "step": 1,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 3,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 20.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 3,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          2.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 1
+      },
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "frame": 3,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "frame": 3,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 4,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 4,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 5.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 4,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          2.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 2
+      },
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 4,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 4,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 4,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "step": 2,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 4,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 19.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 4,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          2.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 2
+      },
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "frame": 4,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "frame": 4,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 5,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 5,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 5.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 5,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          3.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 3
+      },
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 5,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 5,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 5,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "step": 3,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 5,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 19.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 5,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          3.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 3
+      },
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "frame": 5,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "frame": 5,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 6,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 6,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 4.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 6,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          3.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 4
+      },
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 6,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 6,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 6,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "step": 4,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 6,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 18.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 6,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          3.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 4
+      },
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "frame": 6,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "frame": 6,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 7,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 7,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 4.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 7,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 5
+      },
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 7,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 7,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 7,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "step": 5,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 7,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 18.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 7,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          4.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 5
+      },
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "frame": 7,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "frame": 7,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 8,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 8,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 3.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 8,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          4.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 6
+      },
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 8,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 8,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 8,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "step": 6,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 8,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 17.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 8,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          4.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 6
+      },
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "frame": 8,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "frame": 8,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 9,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 9,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 3.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 9,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          5.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 7
+      },
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 9,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 9,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 9,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "step": 7,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 9,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 17.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 9,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          5.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 7
+      },
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "frame": 9,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "frame": 9,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 10,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 10,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 2.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 10,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          5.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 8
+      },
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 10,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 10,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 10,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "step": 8,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 10,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 16.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 10,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          5.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 8
+      },
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "frame": 10,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "frame": 10,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 11,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 11,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 2.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 11,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          6.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 9
+      },
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 11,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 11,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 11,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "step": 9,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 11,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 16.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 11,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          6.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 9
+      },
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "frame": 11,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "frame": 11,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 12,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 12,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 1.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 12,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          6.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 10
+      },
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 12,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 12,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 12,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "step": 10,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 12,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 15.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 12,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          6.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 10
+      },
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "frame": 12,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "frame": 12,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 13,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 13,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 1.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 13,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          7.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 11
+      },
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 13,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 13,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 13,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "step": 11,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 13,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 15.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 13,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          7.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 11
+      },
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "frame": 13,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "frame": 13,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 14,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": false
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 14,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 0.5,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 14,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          7.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": false,
+        "step": 12
+      },
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 14,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 14,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 14,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "step": 12,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 14,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 14.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 14,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          7.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 12
+      },
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "computed": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "frame": 14,
+      "kind": "position_assigned",
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26088572337,
+      "phase": "movement",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "frame": 14,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 15,
+      "kind": "before_update",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "signal",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "signal": "waypoint_reached",
+      "step": 13,
+      "waypoint": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "signal",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "signal": "target_reached",
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "signal",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "signal": "navigation_finished",
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_navigation_finished",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "is_target_reachable",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": true
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "get_final_position",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 0,
+      "agent_id": 26105349558,
+      "call": "none",
+      "frame": 15,
+      "kind": "after_queries",
+      "parent_id": 26088572337,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 0,
+        "distance": 0.0,
+        "final": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "finished": true,
+        "frame": 15,
+        "index": 1,
+        "next": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            8.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": true,
+        "reached": true,
+        "step": 13
+      },
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 15,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 15,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 15,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "step": 13,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 15,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 14.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 15,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 13
+      },
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "frame": 15,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 16,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 16,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 16,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 16,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 16,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 16,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 16,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 16,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 16,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "step": 14,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 16,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 13.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 16,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          8.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 14
+      },
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "frame": 16,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 17,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 17,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 17,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 17,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 17,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 17,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 17,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 17,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 17,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "step": 15,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 17,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 13.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 17,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          9.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 15
+      },
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "frame": 17,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 18,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 18,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 18,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 18,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 18,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 18,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 18,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 18,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 18,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "step": 16,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 18,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 12.5,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": false,
+        "frame": 18,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          9.5,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 16
+      },
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "computed": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "frame": 18,
+      "kind": "position_assigned",
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "old": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "parent_id": 26155681209,
+      "phase": "movement",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 19,
+      "kind": "before_update",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 19,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 19,
+      "kind": "signal",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "signal": "waypoint_reached",
+      "step": 17,
+      "waypoint": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 19,
+      "kind": "signal",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "signal": "navigation_finished",
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_next_path_position",
+      "frame": 19,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 19,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_navigation_finished",
+      "frame": 19,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17,
+      "value": true
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 19,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "is_target_reachable",
+      "frame": 19,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17,
+      "value": false
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 19,
+      "kind": "call_enter",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "get_final_position",
+      "frame": 19,
+      "kind": "call_return",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "step": 17,
+      "value": [
+        10.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "agent": 1,
+      "agent_id": 26172458426,
+      "call": "none",
+      "frame": 19,
+      "kind": "after_queries",
+      "parent_id": 26155681209,
+      "phase": "queries",
+      "position": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "snapshot": {
+        "agent": 1,
+        "distance": 12.0,
+        "final": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "finished": true,
+        "frame": 19,
+        "index": 1,
+        "next": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "parent": [
+          10.0,
+          0.0,
+          2.0
+        ],
+        "path": [
+          [
+            1.99999988079071,
+            0.0,
+            1.99999988079071
+          ],
+          [
+            10.0,
+            0.0,
+            2.0
+          ]
+        ],
+        "reachable": false,
+        "reached": false,
+        "step": 17
+      },
+      "step": 17
+    }
+  ],
+  "geometry": [
+    {
+      "polygon": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.0
+        ],
+        [
+          10.0,
+          0.0,
+          4.0
+        ],
+        [
+          10.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "polygon": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "vertices": [
+        [
+          20.0,
+          0.0,
+          0.0
+        ],
+        [
+          20.0,
+          0.0,
+          4.0
+        ],
+        [
+          30.0,
+          0.0,
+          4.0
+        ],
+        [
+          30.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "identities": [
+    {
+      "actual_parent_id": 26088572337,
+      "agent_id": 26105349558,
+      "label": "Reachable",
+      "map_id": 94489280512,
+      "parent_id": 26088572337,
+      "root_id": 25937577391,
+      "settings": {
+        "avoidance_enabled": false,
+        "navigation_layers": 1,
+        "path_desired_distance": 0.100000001490116,
+        "path_height_offset": 0.0,
+        "path_max_distance": 1.0,
+        "path_metadata_flags": 7,
+        "path_postprocessing": 0,
+        "path_return_max_length": 0.0,
+        "path_return_max_radius": 0.0,
+        "path_search_max_distance": 0.0,
+        "path_search_max_polygons": 4096,
+        "pathfinding_algorithm": 0,
+        "simplify_path": false,
+        "target_desired_distance": 0.100000001490116
+      },
+      "target": [
+        8.0,
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "actual_parent_id": 26155681209,
+      "agent_id": 26172458426,
+      "label": "Partial",
+      "map_id": 94489280512,
+      "parent_id": 26155681209,
+      "root_id": 25937577391,
+      "settings": {
+        "avoidance_enabled": false,
+        "navigation_layers": 1,
+        "path_desired_distance": 0.100000001490116,
+        "path_height_offset": 0.0,
+        "path_max_distance": 1.0,
+        "path_metadata_flags": 7,
+        "path_postprocessing": 0,
+        "path_return_max_length": 0.0,
+        "path_return_max_radius": 0.0,
+        "path_search_max_distance": 0.0,
+        "path_search_max_polygons": 4096,
+        "pathfinding_algorithm": 0,
+        "simplify_path": false,
+        "target_desired_distance": 0.100000001490116
+      },
+      "target": [
+        22.0,
+        0.0,
+        2.0
+      ]
+    }
+  ],
+  "initial_identities": [
+    {
+      "actual_parent_id": 26088572337,
+      "agent_id": 26105349558,
+      "label": "Reachable",
+      "map_id": 94489280512,
+      "parent_id": 26088572337,
+      "root_id": 25937577391,
+      "settings": {
+        "avoidance_enabled": false,
+        "navigation_layers": 1,
+        "path_desired_distance": 0.100000001490116,
+        "path_height_offset": 0.0,
+        "path_max_distance": 1.0,
+        "path_metadata_flags": 7,
+        "path_postprocessing": 0,
+        "path_return_max_length": 0.0,
+        "path_return_max_radius": 0.0,
+        "path_search_max_distance": 0.0,
+        "path_search_max_polygons": 4096,
+        "pathfinding_algorithm": 0,
+        "simplify_path": false,
+        "target_desired_distance": 0.100000001490116
+      }
+    },
+    {
+      "actual_parent_id": 26155681209,
+      "agent_id": 26172458426,
+      "label": "Partial",
+      "map_id": 94489280512,
+      "parent_id": 26155681209,
+      "root_id": 25937577391,
+      "settings": {
+        "avoidance_enabled": false,
+        "navigation_layers": 1,
+        "path_desired_distance": 0.100000001490116,
+        "path_height_offset": 0.0,
+        "path_max_distance": 1.0,
+        "path_metadata_flags": 7,
+        "path_postprocessing": 0,
+        "path_return_max_length": 0.0,
+        "path_return_max_radius": 0.0,
+        "path_search_max_distance": 0.0,
+        "path_search_max_polygons": 4096,
+        "pathfinding_algorithm": 0,
+        "simplify_path": false,
+        "target_desired_distance": 0.100000001490116
+      }
+    }
+  ],
+  "initial_paths": [
+    [
+      [
+        1.99999988079071,
+        0.0,
+        1.99999988079071
+      ],
+      [
+        8.0,
+        0.0,
+        2.0
+      ]
+    ],
+    [
+      [
+        1.99999988079071,
+        0.0,
+        1.99999988079071
+      ],
+      [
+        10.0,
+        0.0,
+        2.0
+      ]
+    ]
+  ],
+  "ready": {
+    "active": true,
+    "async": false,
+    "cell_height": 0.25,
+    "cell_size": 0.25,
+    "edge_connections": false,
+    "initial_iteration": 0,
+    "iteration": 1,
+    "links": 0,
+    "map_id": 94489280512,
+    "matched": true,
+    "projections": [
+      {
+        "input": [
+          2.0,
+          0.0,
+          2.0
+        ],
+        "owner": 98784247808,
+        "point": [
+          2.0,
+          0.0,
+          2.0
+        ]
+      },
+      {
+        "input": [
+          8.0,
+          0.0,
+          2.0
+        ],
+        "owner": 98784247808,
+        "point": [
+          8.0,
+          0.0,
+          2.0
+        ]
+      },
+      {
+        "input": [
+          22.0,
+          0.0,
+          2.0
+        ],
+        "owner": 103079215105,
+        "point": [
+          22.0,
+          0.0,
+          2.0
+        ]
+      }
+    ],
+    "readiness_callbacks": 2,
+    "regions": [
+      {
+        "async": false,
+        "enabled": true,
+        "id": 98784247808,
+        "iteration": 1,
+        "layers": 1,
+        "map": 94489280512
+      },
+      {
+        "async": false,
+        "enabled": true,
+        "id": 103079215105,
+        "iteration": 1,
+        "layers": 1,
+        "map": 94489280512
+      }
+    ],
+    "registered": [
+      98784247808,
+      103079215105
+    ],
+    "up": [
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "root_id": 25937577391,
+  "snapshots": [
+    {
+      "agent": 0,
+      "distance": 6.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 3,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 1
+    },
+    {
+      "agent": 1,
+      "distance": 20.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 3,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        2.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 1
+    },
+    {
+      "agent": 0,
+      "distance": 5.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 4,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 2
+    },
+    {
+      "agent": 1,
+      "distance": 19.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 4,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        2.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 2
+    },
+    {
+      "agent": 0,
+      "distance": 5.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 5,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 3
+    },
+    {
+      "agent": 1,
+      "distance": 19.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 5,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        3.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 3
+    },
+    {
+      "agent": 0,
+      "distance": 4.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 6,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 4
+    },
+    {
+      "agent": 1,
+      "distance": 18.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 6,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        3.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 4
+    },
+    {
+      "agent": 0,
+      "distance": 4.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 7,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 5
+    },
+    {
+      "agent": 1,
+      "distance": 18.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 7,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        4.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 5
+    },
+    {
+      "agent": 0,
+      "distance": 3.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 8,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 6
+    },
+    {
+      "agent": 1,
+      "distance": 17.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 8,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        4.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 6
+    },
+    {
+      "agent": 0,
+      "distance": 3.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 9,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 7
+    },
+    {
+      "agent": 1,
+      "distance": 17.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 9,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        5.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 7
+    },
+    {
+      "agent": 0,
+      "distance": 2.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 10,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 8
+    },
+    {
+      "agent": 1,
+      "distance": 16.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 10,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        5.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 8
+    },
+    {
+      "agent": 0,
+      "distance": 2.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 11,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 9
+    },
+    {
+      "agent": 1,
+      "distance": 16.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 11,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        6.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 9
+    },
+    {
+      "agent": 0,
+      "distance": 1.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 12,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 10
+    },
+    {
+      "agent": 1,
+      "distance": 15.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 12,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        6.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 10
+    },
+    {
+      "agent": 0,
+      "distance": 1.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 13,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 11
+    },
+    {
+      "agent": 1,
+      "distance": 15.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 13,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        7.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 11
+    },
+    {
+      "agent": 0,
+      "distance": 0.5,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 14,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": false,
+      "step": 12
+    },
+    {
+      "agent": 1,
+      "distance": 14.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 14,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        7.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 12
+    },
+    {
+      "agent": 0,
+      "distance": 0.0,
+      "final": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "finished": true,
+      "frame": 15,
+      "index": 1,
+      "next": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          8.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": true,
+      "reached": true,
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "distance": 14.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 15,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        8.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 13
+    },
+    {
+      "agent": 1,
+      "distance": 13.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 16,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        8.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 14
+    },
+    {
+      "agent": 1,
+      "distance": 13.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 17,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        9.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 15
+    },
+    {
+      "agent": 1,
+      "distance": 12.5,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": false,
+      "frame": 18,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        9.5,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 16
+    },
+    {
+      "agent": 1,
+      "distance": 12.0,
+      "final": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "finished": true,
+      "frame": 19,
+      "index": 1,
+      "next": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "parent": [
+        10.0,
+        0.0,
+        2.0
+      ],
+      "path": [
+        [
+          1.99999988079071,
+          0.0,
+          1.99999988079071
+        ],
+        [
+          10.0,
+          0.0,
+          2.0
+        ]
+      ],
+      "reachable": false,
+      "reached": false,
+      "step": 17
+    }
+  ],
+  "steps": 17,
+  "version": {
+    "build": "official",
+    "hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+    "hex": 263683,
+    "major": 4,
+    "minor": 6,
+    "patch": 3,
+    "status": "stable",
+    "string": "4.6.3-stable (official)",
+    "timestamp": 0
+  }
+}

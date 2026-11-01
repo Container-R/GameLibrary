@@ -119,3 +119,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [实时特效美术岗位来源](../research/source-notes/real-time-vfx-artist-role.md)保留日英历史项目材料、实际文字阅读范围与未进行的视觉/玩家验证。
 
 [Killzone 3 行动执行来源](../research/source-notes/killzone3-plan-execution-continuation.md)定位开发者历史章节，避免把原创取消与迟到结果审查表归为原作实现。
+
+[NavigationAgent 路径结束来源](../research/source-notes/navigation-agent-completion.md)区分原始文档、固定比较源码与受控位置更新下的实际状态。

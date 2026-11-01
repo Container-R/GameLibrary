@@ -6,12 +6,12 @@ status: source-backed
 primary_discipline: AI
 related_disciplines: [PROG, ENGINE, QA]
 related_roles: [ai-programmer, gameplay-programmer, engine-programmer, qa-engineer]
-related_topics: [navigation, synchronization, partial-path, negative-cache, initialization, navigation-clearance, agent-radius, physics-overlap]
+related_topics: [navigation, synchronization, partial-path, negative-cache, initialization, navigation-clearance, agent-radius, physics-overlap, path-consumption, target-arrival]
 engines: [Godot]
 versions: ["Godot 4.6 文档：NavigationServer2D 为 Experimental", "Godot 4.6.3.stable.official.7d41c59c4 本地程序自报；发行与源码对应未确认"]
 platforms: [PC]
-updated_at: 2026-10-31
-verification_method: 官方同步与API资料核对；原创CPU无头导航图查询及异步region诊断；两次3D实际烘焙、四条agent路径与静止形状重叠独立复验；未测试角色移动或持续并发更新
+updated_at: 2026-11-01
+verification_method: 官方资料与固定源码核对；既有导航同步、烘焙半径及静止重叠证据；新增作者与独立各一次两agent受控Node3D位置赋值、实际路径结束与目标到达信号观察；未测试角色碰撞移动或持续并发更新
 sources:
   - https://docs.godotengine.org/en/4.6/classes/class_navigationmesh.html
   - https://docs.godotengine.org/en/4.6/classes/class_navigationagent3d.html
@@ -76,7 +76,7 @@ Godot4.6官方说明导航服务器的多数变更在后续物理帧同步而非
 | `query_complete_target_not_reached` | 查询完成，但没有符合原目标的末点 | 根据玩法选择换目标、停在可达边缘或反馈失败 |
 | `navigation_error` | 无效句柄、数据错误、引擎异常或同步超时 | 诊断并恢复；不能解释成几何不可达 |
 
-“路径规划可达”和“角色移动已到达”也要分开：本研究没有移动任何角色。目标可能投影到导航表面时，分别记录原目标、投影目标和最终路径末点。1e-4是本微型几何的数值判据，不是所有游戏应采用的到达半径。
+“路径规划可达”和“角色移动已到达”也要分开：此前查询夹具没有移动任何角色。目标可能投影到导航表面时，分别记录原目标、投影目标和最终路径末点。1e-4是本微型几何的数值判据，不是所有游戏应采用的到达半径。
 
 否定缓存应关联数据身份/版本与查询条件；拓扑、层或相关代理配置改变后使旧结论失效。iteration可能回绕，也不是跨进程稳定身份，不宜直接作为永远递增的持久版本。何时重试需要预算和玩法策略；本夹具没有测量查询性能，不能由“可以重查”推出每帧对所有AI无上限重查。
 
@@ -149,3 +149,46 @@ Godot 4.6 [NavigationMesh 文档](https://docs.godotengine.org/en/4.6/classes/cl
 - [S4] [Using NavigationPaths](https://docs.godotengine.org/en/4.6/tutorials/navigation/navigation_using_navigationpaths.html)：地图与路径查询。具体部分路径坐标来自本实验，不是文档对任意地图的输出承诺。
 
 来源访问2026-10-31；代码和几何原创，无第三方实现复制。关联[固定规则与表现边界](../programming/fixed-step-simulation-boundary.md)：不同系统的“下一次更新”不能自动合并成同一个业务就绪时刻。
+
+## 7. 跟随阶段补充：navigation_finished 不等于原目标已经到达
+
+前面的两组实验检验了查询结果、烘焙间隙与静止重叠，父节点没有沿路径前进。这里另用本机自报 Godot 4.6.3 的程序，实际推进两个 NavigationAgent3D 的路径跟随状态，检验**耗尽当前可走路径**和**到达请求目标**之间的区别。新增结果不把旧查询实验升级成角色移动测试。
+
+Godot 4.6 [navigation_finished / target_reached 文档](https://docs.godotengine.org/en/4.6/classes/class_navigationagent3d.html#class-navigationagent3d-signal-navigation-finished)区分这两个信号。[固定比较源码](https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/3d/navigation/navigation_agent_3d.cpp#L866-L879)先检查父节点是否进入目标距离，否则推进路径点，并允许在不可达路线的最后一点结束导航。因此，业务把所有 `navigation_finished` 都接到“任务成功”，在部分路径场景中可能作出错误决定；有些玩法有意允许停在可达边缘，则应明确记录这种成功语义，而不是混用信号名称。
+
+### 同一地图，两种真正完成的路径状态
+
+[新夹具](../../research/experiments/godot-navigation-completion/README.md)建立两块原始平面凸区域：XZ `[0,10]×[0,4]` 与 `[20,30]×[0,4]`，没有连接、烘焙或碰撞体。两个独立 Node3D 父节点都从 `(2,0,2)` 开始，各带一个关闭避让的 agent；目标分别为 `(8,0,2)` 与 `(22,0,2)`。查询前核对地图/区域就绪、配置和目标所属区域，确认第二个目标确实在断开的导航表面上。
+
+驱动器按实际 `get_next_path_position()` 返回点，每次把父节点向前赋值最多 0.5 单位，直到 agent 发出结束信号。它没有直接把父节点放到请求目标，也没有用自制路径代替引擎路径。实际结果如下：
+
+| 路线 | 实际路径末点 / 最终父节点位置 | 位置赋值次数 | 到达与结束信号 | 最终 getter |
+|---|---|---:|---|---|
+| 同区域目标 x=8 | `(8,0,2)` | 12 | 第 13 次驱动回调先 target_reached，后 navigation_finished | reached=true，finished=true，reachable=true |
+| 断开目标 x=22 | `(10,0,2)` | 16 | 第 17 次驱动回调只有 navigation_finished；窗口内没有 target_reached | reached=false，finished=true，reachable=false |
+
+第二个父节点距原目标仍有 12 单位，但导航确实已结束。一个仅监听 finish 的应用会把两个结果都当成到达；保留目标语义的应用可把第二个结果交给换目标、等待通路或“已到可达边缘”的分支。这是从实际结果导出的原创建议，不是额外执行了游戏任务逻辑。
+
+路径起点的实际坐标约为 `(1.99999988079071,0,1.99999988079071)`，并非理想输入的精确 `(2,0,2)`；它通过预先冻结的 1e-5 几何容差，原始值未被吸附后重写。两项距离阈值都显式为 0.1。具体步数来自本次固定步长驱动，不能换算为真实角色速度、网络时延或导航性能。
+
+### 观察顺序也是合同的一部分
+
+这次使用 `SceneTree.physics_frame` 信号回调，发生于节点物理处理之前；它不是“物理步骤已经完成”的证据。每个活动 agent 依次调用 `get_next_path_position`、`is_navigation_finished`、`is_target_reachable`、`get_final_position`，**四个都可能更新内部导航状态**。两者所有查询完成后才赋值父节点位置；移动后直到下一回调都不再查询。
+
+信号处理器只记录身份、位置、阶段和顺序，不调用这些更新方法，也不改目标或位置。结束信号形成锁存后，驱动不再移动该父节点。这样可以分清“哪个位置被本次查询采样”与“下一步即将写入的位置”，不依赖“同帧重复 getter 一定无操作”的假设。正式游戏不必照搬四次调用；这是本夹具为了可核对证据而声明的有限调用序列。
+
+### 应用交接应保留三个结果
+
+以下是原创验收建议：
+
+1. **规划结果**：原目标、路径最终点、可达判定和所用地图版本，不能只交一个非空路径数组。
+2. **跟随结束原因**：目标距离满足、当前路径耗尽，或由应用取消/失败；后两类不能冒充前一类。本次只验证前两种，不验证取消竞态。
+3. **真实身体与业务到达**：如果角色由 CharacterBody3D、根运动或网络状态推进，再单独验证碰撞、被阻挡、动画及业务触发条件。这里没有碰撞移动，不能声称整条路线物理安全或已经完成任务。
+
+项目还要付出保存目标身份、阶段记录与独立运动验收的成本。若产品明确接受部分完成，应把它作为可审查的规则，而不是靠放大到达距离把断开的目标“吞进去”。
+
+### 新证据边界
+
+作者与独立审阅者分别重复同一有限序列：合计 **2 个行为进程 + 2 个版本查询，共 4 个 Godot 进程**，不是 4 种不同条件；每轮都是上述 2 条路线。独立重复同样观察到 337 个事件、17 次驱动回调与 12/16 次位置赋值。静态 consumer 从原始事件重建步进、信号与数组关联，不只信任子进程结论。运行前的合成记录曾暴露帧顺序及嵌套 bool/int 验收漏洞，已保留初稿与修正；它们不是导航引擎失败或新的移动场景。
+
+新结果仅覆盖受控 Node3D 位置更新下的 agent 状态/信号，不覆盖 CharacterBody3D、碰撞响应、RVO、取消/重规划、动态地图、性能或跨构建稳定性。安装字节与官方源码的对应仍[未认证](../../research/source-notes/godot-runtime-provenance.md)。[来源说明](../../research/source-notes/navigation-agent-completion.md)分开记录文档、源码预期与实际有限观察。

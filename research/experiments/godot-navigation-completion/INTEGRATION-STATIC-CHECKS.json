@@ -1,0 +1,94 @@
+[
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/consumer.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8"
+    ],
+    "returncode": 0,
+    "stdout": "{\"agents\": 2, \"driver_callbacks\": 17, \"finish_signals\": [1, 1], \"position_assignments\": [12, 16], \"status\": \"PASS\", \"target_signals\": [1, 0]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/consumer.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8"
+    ],
+    "returncode": 0,
+    "stdout": "{\"agents\": 2, \"driver_callbacks\": 17, \"finish_signals\": [1, 1], \"position_assignments\": [12, 16], \"status\": \"PASS\", \"target_signals\": [1, 0]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/check_native.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"67f74800-c547-4c0b-aba1-1bea7445f2c8\",\n  \"status\": \"ACCEPTED_OBSERVED_LAYOUT\",\n  \"driver_callbacks\": 17,\n  \"events\": 337,\n  \"moves\": [\n    12,\n    16\n  ],\n  \"target_counts\": [\n    1,\n    0\n  ],\n  \"finish_counts\": [\n    1,\n    1\n  ],\n  \"terminal_positions\": [\n    [\n      8.0,\n      0.0,\n      2.0\n    ],\n    [\n      10.0,\n      0.0,\n      2.0\n    ]\n  ],\n  \"target_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    []\n  ],\n  \"finish_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    [\n      [\n        17,\n        19\n      ]\n    ]\n  ],\n  \"scope\": \"independent finite raw replay; author consumer complements full config/ABI/env/strict JSON checks; not authenticated source or collision motion\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/check_native.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"67f74800-c547-4c0b-aba1-1bea7445f2c8\",\n  \"status\": \"ACCEPTED_OBSERVED_LAYOUT\",\n  \"driver_callbacks\": 17,\n  \"events\": 337,\n  \"moves\": [\n    12,\n    16\n  ],\n  \"target_counts\": [\n    1,\n    0\n  ],\n  \"finish_counts\": [\n    1,\n    1\n  ],\n  \"terminal_positions\": [\n    [\n      8.0,\n      0.0,\n      2.0\n    ],\n    [\n      10.0,\n      0.0,\n      2.0\n    ]\n  ],\n  \"target_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    []\n  ],\n  \"finish_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    [\n      [\n        17,\n        19\n      ]\n    ]\n  ],\n  \"scope\": \"independent finite raw replay; author consumer complements full config/ABI/env/strict JSON checks; not authenticated source or collision motion\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/consumer.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e"
+    ],
+    "returncode": 0,
+    "stdout": "{\"agents\": 2, \"driver_callbacks\": 17, \"finish_signals\": [1, 1], \"position_assignments\": [12, 16], \"status\": \"PASS\", \"target_signals\": [1, 0]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/consumer.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e"
+    ],
+    "returncode": 0,
+    "stdout": "{\"agents\": 2, \"driver_callbacks\": 17, \"finish_signals\": [1, 1], \"position_assignments\": [12, 16], \"status\": \"PASS\", \"target_signals\": [1, 0]}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/check_native.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"20597db7-f5c8-49d4-95eb-c4f80d1d781e\",\n  \"status\": \"ACCEPTED_OBSERVED_LAYOUT\",\n  \"driver_callbacks\": 17,\n  \"events\": 337,\n  \"moves\": [\n    12,\n    16\n  ],\n  \"target_counts\": [\n    1,\n    0\n  ],\n  \"finish_counts\": [\n    1,\n    1\n  ],\n  \"terminal_positions\": [\n    [\n      8.0,\n      0.0,\n      2.0\n    ],\n    [\n      10.0,\n      0.0,\n      2.0\n    ]\n  ],\n  \"target_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    []\n  ],\n  \"finish_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    [\n      [\n        17,\n        19\n      ]\n    ]\n  ],\n  \"scope\": \"independent finite raw replay; author consumer complements full config/ABI/env/strict JSON checks; not authenticated source or collision motion\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-O",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/check_native.py",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat",
+      "gamelibrary-publish-navcompletion/research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"uuid\": \"20597db7-f5c8-49d4-95eb-c4f80d1d781e\",\n  \"status\": \"ACCEPTED_OBSERVED_LAYOUT\",\n  \"driver_callbacks\": 17,\n  \"events\": 337,\n  \"moves\": [\n    12,\n    16\n  ],\n  \"target_counts\": [\n    1,\n    0\n  ],\n  \"finish_counts\": [\n    1,\n    1\n  ],\n  \"terminal_positions\": [\n    [\n      8.0,\n      0.0,\n      2.0\n    ],\n    [\n      10.0,\n      0.0,\n      2.0\n    ]\n  ],\n  \"target_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    []\n  ],\n  \"finish_steps\": [\n    [\n      [\n        13,\n        15\n      ]\n    ],\n    [\n      [\n        17,\n        19\n      ]\n    ]\n  ],\n  \"scope\": \"independent finite raw replay; author consumer complements full config/ABI/env/strict JSON checks; not authenticated source or collision motion\"\n}\n",
+    "stderr": ""
+  }
+]

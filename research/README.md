@@ -123,3 +123,5 @@ python3 scripts/evidence/test_verify.py
 [实时特效美术](../roles/vfx/real-time-vfx-artist.md)区分实际状态、作者线索、运行显示、情境审核和玩家理解；游戏信号交接表为原创未执行建议。
 
 [Killzone 3 计划与执行案例](../case-studies/ai/killzone3-plan-execution-continuation.md)以有限历史事实引出原创未执行的行动交接审查；没有运行游戏或模型，不能把取消请求或报告过滤当作效果回滚。
+
+[导航路径消耗夹具](experiments/godot-navigation-completion/README.md)保留同一两agent配置的作者与独立观察；导航完成不等于请求目标到达，不是碰撞移动或业务成功证明。

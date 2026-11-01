@@ -1,0 +1,54 @@
+{
+  "uuid": "67f74800-c547-4c0b-aba1-1bea7445f2c8",
+  "status": "ACCEPTED_OBSERVED_LAYOUT",
+  "driver_callbacks": 17,
+  "events": 337,
+  "moves": [
+    12,
+    16
+  ],
+  "target_counts": [
+    1,
+    0
+  ],
+  "finish_counts": [
+    1,
+    1
+  ],
+  "terminal_positions": [
+    [
+      8.0,
+      0.0,
+      2.0
+    ],
+    [
+      10.0,
+      0.0,
+      2.0
+    ]
+  ],
+  "target_steps": [
+    [
+      [
+        13,
+        15
+      ]
+    ],
+    []
+  ],
+  "finish_steps": [
+    [
+      [
+        13,
+        15
+      ]
+    ],
+    [
+      [
+        17,
+        19
+      ]
+    ]
+  ],
+  "scope": "independent finite raw replay; author consumer complements full config/ABI/env/strict JSON checks; not authenticated source or collision motion"
+}

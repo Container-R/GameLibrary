@@ -1868,8 +1868,64 @@
     {
       "id": "lcms-transfer/independent/result.json",
       "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/behavior.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/behavior.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/author/parsed",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/source_sha256",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/source_after",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/version.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/version.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/behavior.stdout",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/behavior.stderr",
+      "status": "pass"
+    },
+    {
+      "id": "navigation-completion/independent/parsed",
+      "status": "pass"
     }
   ],
-  "passed": 467,
+  "passed": 481,
   "failed": 0
 }

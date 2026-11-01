@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T010948Z-navigation-completion",
+  "task_ids": [
+    "TASK-2026-0077"
+  ],
+  "started_at": "2026-11-01T01:09:48Z",
+  "ended_at": "2026-11-01T01:20:36.157858Z",
+  "outcome": "reviewed locally; publication pending",
+  "protocol_sha256": "7e5197e2368bb8be30c446b3a8ac1cc2274b781e77e2db8238a1788963d53dad",
+  "native_attempts": 2,
+  "accepted_attempts": [
+    "67f74800-c547-4c0b-aba1-1bea7445f2c8",
+    "20597db7-f5c8-49d4-95eb-c4f80d1d781e"
+  ],
+  "behavior_processes": 2,
+  "separate_version_processes": 2,
+  "unique_configurations": 1,
+  "agents_per_invocation": 2,
+  "binary_sha256": "f64d4ed19fc9df9440321653fcc80df8c6e365ba7b6de0a29e2cfa9fa71bfeb3",
+  "evidence": "Each invocation: 17 driver callbacks, 337 raw events, 12/16 controlled assignments; reachable target then finish at x8, partial finish without target at x10 while target x22",
+  "pre_native_corrections": "Synthetic same-frame and nested-bool false accepts fixed before native; initial snapshots/probes preserved",
+  "limitations": [
+    "Node3D position assignments, not CharacterBody3D or physical collisions",
+    "SceneTree.physics_frame precedes node physics processing",
+    "No mission success, cancellation/repath or concurrent-map guarantee",
+    "No native timeout/cleanup failure branch exercised",
+    "Installed binary/public source identity unauthenticated"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 2552,
+    "indexed_articles": 36,
+    "archive_checks_normal": 481,
+    "archive_checks_optimized": 481,
+    "main_static_commands": 8,
+    "new_native_during_static_checks": 0,
+    "queue_tasks_checked": 77,
+    "declared_paths_checked": 83,
+    "local_links": 583,
+    "relocated_static_commands": 8
+  },
+  "next_action": "Review narrow source-backed UX interaction-flow role under incomplete occupation matrix"
+}

@@ -4895,6 +4895,184 @@
         "result.json"
       ],
       "target": "research/experiments/lcms-transfer-boundary/review/native-repeat/evidence/bb5b395c-6e2c-4f22-89e7-284c5a06f658/result.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "navigation-completion/author/source_sha256",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-navigation-completion/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-navigation-completion/main.gd",
+        "project.godot": "research/experiments/godot-navigation-completion/project.godot",
+        "run.py": "research/experiments/godot-navigation-completion/run.py",
+        "oracle.py": "research/experiments/godot-navigation-completion/oracle.py",
+        "consumer.py": "research/experiments/godot-navigation-completion/consumer.py",
+        "test_pure.py": "research/experiments/godot-navigation-completion/test_pure.py",
+        "isolation.py": "research/experiments/godot-navigation-completion/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "navigation-completion/author/source_after",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-navigation-completion/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-navigation-completion/main.gd",
+        "project.godot": "research/experiments/godot-navigation-completion/project.godot",
+        "run.py": "research/experiments/godot-navigation-completion/run.py",
+        "oracle.py": "research/experiments/godot-navigation-completion/oracle.py",
+        "consumer.py": "research/experiments/godot-navigation-completion/consumer.py",
+        "test_pure.py": "research/experiments/godot-navigation-completion/test_pure.py",
+        "isolation.py": "research/experiments/godot-navigation-completion/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/author/version.stdout",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/author/version.stderr",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/author/behavior.stdout",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/author/behavior.stderr",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/author/parsed",
+      "document": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/evidence/67f74800-c547-4c0b-aba1-1bea7445f2c8/behavior.json"
+    },
+    {
+      "kind": "manifest",
+      "id": "navigation-completion/independent/source_sha256",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "source_sha256"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-navigation-completion/review/native-repeat/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-navigation-completion/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-navigation-completion/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-navigation-completion/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-navigation-completion/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-navigation-completion/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-navigation-completion/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-navigation-completion/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "manifest",
+      "id": "navigation-completion/independent/source_after",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "source_after"
+      ],
+      "files": {
+        "PROTOCOL.md": "research/experiments/godot-navigation-completion/review/native-repeat/PROTOCOL.md",
+        "main.gd": "research/experiments/godot-navigation-completion/review/native-repeat/main.gd",
+        "project.godot": "research/experiments/godot-navigation-completion/review/native-repeat/project.godot",
+        "run.py": "research/experiments/godot-navigation-completion/review/native-repeat/run.py",
+        "oracle.py": "research/experiments/godot-navigation-completion/review/native-repeat/oracle.py",
+        "consumer.py": "research/experiments/godot-navigation-completion/review/native-repeat/consumer.py",
+        "test_pure.py": "research/experiments/godot-navigation-completion/review/native-repeat/test_pure.py",
+        "isolation.py": "research/experiments/godot-navigation-completion/review/native-repeat/isolation.py"
+      }
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/independent/version.stdout",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/version.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/independent/version.stderr",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "processes",
+        0,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/version.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/independent/behavior.stdout",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stdout_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/behavior.stdout"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/independent/behavior.stderr",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "processes",
+        1,
+        "stderr_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/behavior.stderr"
+    },
+    {
+      "kind": "hash",
+      "id": "navigation-completion/independent/parsed",
+      "document": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/receipt.json",
+      "field": [
+        "parsed_sha256"
+      ],
+      "target": "research/experiments/godot-navigation-completion/review/native-repeat/evidence/20597db7-f5c8-49d4-95eb-c4f80d1d781e/behavior.json"
     }
   ]
 }
