@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T064700Z-fmod-event-bank-teardown",
+  "task_ids": [
+    "TASK-2026-0119"
+  ],
+  "started_at": "2026-11-01T06:44:03Z",
+  "ended_at": "2026-11-01T06:46:37.576600Z",
+  "outcome": "independent source and editorial reviews accepted; publication pending",
+  "sources": [
+    "https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html",
+    "https://www.fmod.com/docs/2.04/api/studio-api-bank.html",
+    "https://www.fmod.com/docs/2.04/api/studio-guide.html"
+  ],
+  "evidence": "Main and independent review read release, stop modes, callback meanings, bank unload/sample reference counting and update/thread processing",
+  "original_contribution": "Separate preserving event tails from immediate bank reclamation; event release and sample references do not retain whole-bank ownership",
+  "runtime_experiments": 0,
+  "limitations": [
+    "No FMOD run, SDK implementation inspection, waveform or listening",
+    "Retaining required bank is necessary coordination, not sufficient acoustic completion evidence",
+    "No callback order, later original-handle validity, cross-bank graph or user-memory release implementation guaranteed",
+    "Prior lifecycle model and virtualization scope unchanged"
+  ],
+  "validation": {
+    "indexed_articles": 48,
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 119,
+    "library_errors": 0,
+    "library_warnings": 0,
+    "archive_normal_pass": 519,
+    "archive_optimized_pass": 519,
+    "archive_fail": 0,
+    "archive_scope": "Static archived consistency; no new middleware or audio execution",
+    "declared_paths_checked": 154,
+    "local_links_checked": 820
+  },
+  "next_action": "Continue concrete build/tool dependency source gate",
+  "prepublication_wording_refinement": "Studio update processing avoids implying destruction must always run in asynchronous mode",
+  "reviewed_article_sha256": "0fb9f95ae8070e74c803275dec6b54ca46ab4f0efd297cf680439f54ce4294cb"
+}

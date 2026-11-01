@@ -3090,11 +3090,14 @@
       "id": "TASK-2026-0119",
       "question": "Why does requesting an event fadeout and release not justify immediately unloading its FMOD bank?",
       "discipline": "SFX",
-      "status": "researching",
+      "status": "reviewing",
       "priority": 93,
       "priority_rationale": "Resolve a concrete event-versus-bank lifetime conflict in existing interactive music exit policy",
       "expected_artifact": "Integrated source-backed teardown decision separating tail preservation from immediate bank reclamation",
-      "artifact_paths": [],
+      "artifact_paths": [
+        "solutions/audio/music-state-transition-contract.md",
+        "research/source-notes/fmod-event-bank-teardown.md"
+      ],
       "acceptance": [
         "Read exact versioned event stop/release, bank unload and sample-data reference rules",
         "Separate event deferred destruction from bank ownership and all-handle invalidation",
@@ -3105,8 +3108,8 @@
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T07:30:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:44:16.830620Z",
-      "next_action": "Verify independent FMOD lifetime gate before integrating a bounded teardown choice",
+      "last_progress_at": "2026-11-01T06:46:37.576600Z",
+      "next_action": "Review event-release versus bank teardown policy, copied notification identity and bounded completion claims",
       "blockers": []
     }
   ]

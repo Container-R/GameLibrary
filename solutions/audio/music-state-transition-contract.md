@@ -7,11 +7,12 @@ primary_discipline: SFX
 related_disciplines: [MUSIC, PROG, DESIGN, QA]
 related_roles: [interactive-audio-designer, composer, audio-programmer, gameplay-programmer, qa-engineer]
 updated_at: 2026-11-01
-verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；补充 FMOD 事件／Core 声道虚拟化的官方文本溯源与未执行观察合同；未运行中间件或游戏引擎
+verification_method: FMOD 2.04.00 官方文档与 Wwise 历史一手案例核对；原创假端口模型7项测试及200条有界调度复核；补充 FMOD 虚拟化及事件／bank 生命周期的官方文本溯源与未执行观察、退出合同；未运行中间件或游戏引擎
 sources:
   - https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html
   - https://www.fmod.com/docs/2.04/studio/advanced-topics.html
   - https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html
+  - https://www.fmod.com/docs/2.04/api/studio-api-bank.html
   - https://www.fmod.com/docs/2.04/api/studio-guide.html
   - https://www.fmod.com/docs/2.04/studio/authoring-events.html
   - https://qa.fmod.com/t/best-practices-for-tempo-sync-beatmatched-timing-across-events/20836/2
@@ -68,6 +69,23 @@ sources:
 FMOD 2.04 的复音限制可通过 `START_FAILED` 报告启动拒绝；此路径不会产生 `STARTING`、`STARTED` 或 `STOPPED`。适配器应把它作为独立失败结果处理，按当前 generation 与句柄归属回收或决定有界重试，不能无限等待不存在的 STOPPED。`start` 返回成功仅表示提交，不据此把本地 Starting 标为 Active；Active 的工程定义与观察证据须明确，应用状态并不自动对应SDK枚举。[EventInstance API：callback types](https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html#fmod_studio_event_callback_type)
 
 同值去重假设由此适配器独占参数写入；若外部系统或事件逻辑也会改同一值，先仲裁或使缓存失效。submitted_mode记录的是提交，不冒充参数实时读值。
+
+#### 场景退出时，事件释放与 bank 持有是两项责任
+
+FMOD 2.04 文档中，`stop(ALLOWFADEOUT)` 允许 AHDSR 的 release 与 DSP 尾部继续；`EventInstance::release` 则标记实例待释放，在 stopped 后由 Studio 更新处理销毁。它既不是 stop，也不建立 bank 的保留权。[EventInstance：stop mode / release](https://www.fmod.com/docs/2.04/api/studio-api-eventinstance.html#studio_eventinstance_release)
+
+另一层的 `Bank::unload` 会销毁相关对象、卸载样本并使相关句柄失效；样本加载引用计数也不能阻止整个 bank 卸载。[Bank：unload / unloadSampleData](https://www.fmod.com/docs/2.04/api/studio-api-bank.html#studio_bank_unload) 因而依次请求“允许淡出、释放实例、卸载 bank”，不能被记录成尾音已经完整完成。
+
+**原创未执行退出例：**场景 A 的逻辑对象要结束，但产品希望 A 的音乐尾部继续。这里需要选择资源寿命，而不是只排列三个 API 名称：
+
+- **保留尾部：**停止接受 A 的新意图，按已约定的事件停止／释放策略处理；让音频管理方继续持有所需 bank，而非随 A 的逻辑对象一起卸载。管理方收到项目定义的结束记录后，还须收束其他使用者，再决定卸载。代价是延长资源驻留；这只是保留所需资源，不是保证完整可听输出。
+- **优先回收：**明确允许中断，并处理整体卸载后的对象失效。不能一面立即卸载，一面把早先提交 ALLOWFADEOUT 当作已兑现的尾音承诺；“立即回收”在这里是产品优先级，不是同步释放耗时保证。
+
+通知路径也要保留这个选择。DESTROYED 表示即将销毁，不单独说明自然停止或淡出成功；STOPPED 也不是扬声器声学尾部结束回执。若已调用 release，实例可能在通知排队到游戏线程处理之前失效。搬运的应是具有正确寿命的、已复制的项目身份、通知类型及退出政策记录，而非假定届时还能查询原句柄。不要因一次先前的有效性检查，继续盲目轮询已释放对象。
+
+继续服务 Studio update，并按初始化模式处理回调线程；不能阻塞等待尚待自己提交处理的命令，也不能把 deferred marker/beat 选项推广到所有通知。[Studio API Guide §13.4、§13.11](https://www.fmod.com/docs/2.04/api/studio-guide.html) 具体错误、超时及共享使用者收束仍须项目实现；前文 START_FAILED 的独立失败路径不变，不能让它等待不存在的 STOPPED。
+
+本例没有运行中间件或试听，不证明总线／混响的所有尾部、跨 bank 依赖、流式 I/O 或用户内存回收安全。既有假端口与虚拟化证据也不覆盖这里的卸载行为。版本、读取范围与限制见[来源记录](../../research/source-notes/fmod-event-bank-teardown.md)。
 
 ### 3. 谁拥有时间
 
