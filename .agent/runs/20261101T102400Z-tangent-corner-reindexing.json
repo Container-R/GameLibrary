@@ -6,8 +6,8 @@
     "TASK-2026-0150"
   ],
   "started_at": "2026-11-01T10:24:03Z",
-  "ended_at": "2026-11-01T10:27:21.995709Z",
-  "outcome": "Independently reviewed tangent-corner reception note; publication validation pending",
+  "ended_at": "2026-11-01T10:28:59.604307Z",
+  "outcome": "Tangent reception note and additive prior-note link published with exact readbacks and non-destructive tree verification",
   "sources_examined": [
     "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h",
     "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.c",
@@ -31,7 +31,13 @@
     "archive_consistency_checks": 519,
     "archive_consistency_failures": 0,
     "normal_and_optimized_agree": true,
-    "archive_scope": "Declared archive consistency only, not new runtime, binary authenticity or semantic correctness"
+    "archive_scope": "Declared archive consistency only, not new runtime, binary authenticity or semantic correctness",
+    "selected_blob_hashes_verified": 9,
+    "outside_tree_changes": 0,
+    "local_links_checked": 923,
+    "receipt_queue_tasks_checked": 150,
+    "declared_paths_checked": 204
   },
-  "next_action": "Verify exact publication then adversarially review recent distinct source notes before expanding scope"
+  "next_action": "Adversarially review recent assignment/exposure, lag-compensation and tangent reindexing notes against decisive original sources before adding topics",
+  "commit_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec"
 }

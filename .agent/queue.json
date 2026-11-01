@@ -213,11 +213,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:05:00Z",
+      "lease_until": "2026-11-01T11:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T10:27:21.995709Z",
-      "next_action": "Preserve face-corner tangent outputs before rebuilding indexed vertex sharing",
+      "last_progress_at": "2026-11-01T10:28:59.604307Z",
+      "next_action": "Adversarially review recent assignment/exposure, lag-compensation and tangent reindexing notes against decisive original sources before adding topics",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3957,7 +3957,7 @@
       "id": "TASK-2026-0150",
       "question": "When do newly generated face-corner tangent frames require a different sharing relation than the input vertex indices?",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 86,
       "priority_rationale": "Original generator output contract and explicit mirrored-UV remap close a mesh reception gap separate from transforms and byte addressing",
       "expected_artifact": "Source-only note with two-triangle frame analysis and explicit six-record remap",
@@ -3972,12 +3972,14 @@
         "Preserve all required final attributes and face-corner correspondence, not w alone",
         "No rendered seam, exporter defect or universal vertex-count claim"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T11:15:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T10:27:21.995709Z",
-      "next_action": "Validate final reviewed note hash and exact additive cross-link before publishing",
-      "blockers": []
+      "next_action": "Retain face-corner output and complete-attribute remapping scope; no generator output or rendered result claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T10:28:59.604307Z",
+      "commit_sha": "b0ddb66f1c12793b18ae41b40d4f09f804deb2ec"
     }
   ]
 }
