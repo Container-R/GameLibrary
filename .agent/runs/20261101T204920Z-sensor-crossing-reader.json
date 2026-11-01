@@ -1,0 +1,22 @@
+{
+  "run_id": "20261101T204920Z-sensor-crossing-reader",
+  "observed_at": "2026-11-01T20:49:20Z",
+  "parent_verified_head": "0feb3cf91fd599cc3476f0161a0c3dfea8af22e7",
+  "task": "TASK-2026-0161",
+  "outcome": "Readerized existing sensor research with fixed3.2.0 source verification and a physical navigation entry; retained historical source note.",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "reader_sha256": "2ef0a1b87be35431bc299d5375dbdcb6f4e87780f3ab100cfaa2f5abcb4de7d6",
+  "source_scope": "Official Box2D v3.2.0 tag178495ba35695aefe9c321e569d2277f06db3b90 and historical3.1.1 sensor docs.",
+  "independent_reader_review_sha256": "ec13b9edc531562fd6de8f5ae5184698ed658b2b5b255cbddcb0f03229a213d4",
+  "local_navigation_review_sha256": "9bbf63b331f449de26cd019cb3218e02bc9f3e4dbf2e7762f618223ffc833225",
+  "verification_method": "Primary source analysis, geometric reasoning and independent full-reader/local navigation review; no new native or simulated physics execution.",
+  "review_correction": "Clarified sensor processing occurs at end of world-step call, not after return; final single-term bullet explanation separately checked by editor.",
+  "negative_gate": "UI modal-focus return was already fully covered; official source revisit did not justify an extra article or same-scope expansion.",
+  "prior_publication_readback": {
+    "commit": "0feb3cf91fd599cc3476f0161a0c3dfea8af22e7",
+    "key_files_matched": 3,
+    "reader_books_tree_matched": 63,
+    "reader_links_tree_matched": 155
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

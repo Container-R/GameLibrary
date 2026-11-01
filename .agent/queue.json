@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T21:30:00Z",
+      "lease_until": "2026-11-01T21:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T20:39:41Z",
-      "next_action": "Inspect existing UI keyboard/controller focus coverage and original guidance for return from modal screens; admit only a distinct source-grounded gap, without claiming web patterns are native-game requirements.",
+      "last_progress_at": "2026-11-01T20:49:20Z",
+      "next_action": "Review current source-backed reader chapters for a concrete unresolved engineering gap; avoid duplicating already covered UI focus handling and sensor analysis. Preserve stopped native ENet lane.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6075,6 +6075,33 @@
       "next_action": "Use as limited design and versioned documentation analysis; actual adapter, reentrancy synchronization and engine tests remain unimplemented.",
       "blockers": [],
       "verification_method": "Original application reasoning, primary versioned docs and independent agent review; no Unity, native or memory/network performance test."
+    },
+    {
+      "id": "TASK-2026-0161",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How should a gameplay developer distinguish instantaneous sensor occupancy from crossing during motion?",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "Existing source analysis lacked a natural reader entry; promote it without duplicating research or diluting the scheduling chapter.",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+        "管理档案/审查/触发区域穿越-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Concrete stationary checkpoint and fast circular object",
+        "Fixed historical and newer sensor behavior distinguished",
+        "Query geometry/filter/start/ordering limits explained",
+        "Independent source and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T20:49:20Z",
+      "next_action": "Use as bounded debugging guidance; actual project trajectory and physics events remain untested.",
+      "blockers": [],
+      "verification_method": "Existing research readerization, fixed primary source revisit and independent agent review; no Box2D runtime or general collision-correctness proof."
     }
   ],
   "execution_policy": {

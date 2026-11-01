@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 63
+    "reader_books_total": 64
   },
   "publication": {
-    "last_verified_head_sha": "0a094329e70df3d7ef03794087f745b5fa3c74e3",
+    "last_verified_head_sha": "0feb3cf91fd599cc3476f0161a0c3dfea8af22e7",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "63 readers unchanged; existing Steam cloud-save reader now distinguishes local-account path separation from same-account version conflicts.",
-    "latest_verified_content_sha": "0a094329e70df3d7ef03794087f745b5fa3c74e3",
-    "reader_books_total": 63,
-    "post_baseline_research_books": 8,
-    "counts_basis": "Finite existing-reader integration and independent source review, not a new book or account/runtime test."
+    "scope": "64 reader books; existing sensor research promoted into natural reader hierarchy with fixed-version limits.",
+    "latest_verified_content_sha": "0feb3cf91fd599cc3476f0161a0c3dfea8af22e7",
+    "reader_books_total": 64,
+    "post_baseline_research_books": 9,
+    "counts_basis": "One existing source-note readerization; no new physics result. Frozen55 remediation remains separate."
   },
-  "next_action": "Inspect existing UI keyboard/controller focus coverage and original guidance for return from modal screens; admit only a distinct source-grounded gap, without claiming web patterns are native-game requirements.",
+  "next_action": "Review current source-backed reader chapters for a concrete unresolved engineering gap; avoid duplicating already covered UI focus handling and sensor analysis. Preserve stopped native ENet lane.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T21:30:00Z",
+    "lease_until": "2026-11-01T21:45:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T203941Z-steam-account-path",
+  "last_run_id": "20261101T204920Z-sensor-crossing-reader",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T20:39:41Z",
-  "last_commit_sha": "0a094329e70df3d7ef03794087f745b5fa3c74e3",
+  "last_real_progress_at": "2026-11-01T20:49:20Z",
+  "last_commit_sha": "0feb3cf91fd599cc3476f0161a0c3dfea8af22e7",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
