@@ -2924,7 +2924,7 @@
       "id": "TASK-2026-0113",
       "question": "How can a tutorial-hint experiment define comparable eligibility in both arms without selecting on treatment-only clicks?",
       "discipline": "DATA",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Deepen an exact cohort-selection mechanism in existing ROLE-DATA-001 with a concrete design tradeoff, not another generic causality disclaimer",
       "expected_artifact": "Integrated first-opportunity eligibility and counterfactual-logging method box if independent source review supports assumptions",
@@ -2938,11 +2938,36 @@
         "Discuss logging cost and sensitivity without quantitative power or outcome claims",
         "No SRM/complement-pass sufficiency, individual counterfactual-outcome knowledge or ratio dilution shortcut; no player data/runtime"
       ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:16:18.558382Z",
+      "next_action": "Retain hypothetical eligibility and metric-window assumptions; no player outcomes or causal execution claim",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:18:43.236047Z",
+      "commit_sha": "77edcec8d57967e1dc7b882dd32fef2eeec5d6c7"
+    },
+    {
+      "id": "TASK-2026-0114",
+      "question": "Do the integrated Addressables, localization and DATA depth additions preserve exact evidence scope and valid engineering decisions under adversarial review?",
+      "discipline": "QA",
+      "status": "reviewing",
+      "priority": 95,
+      "priority_rationale": "Independently challenge recent in-place source deepening before further expansion, separately labeling author-side self-review",
+      "expected_artifact": "Bounded three-topic author and fresh-independent source review with exact file identities",
+      "artifact_paths": [],
+      "acceptance": [
+        "Pin exact three final articles and original baselines, not inferred latest content",
+        "Review decisive original documents/code and material cross-source scope",
+        "Clearly disclose author overlap versus fresh reviewer independence",
+        "No whole-repository clearance, runtime rerun or privacy clearance inferred",
+        "Resolve material findings before accepting the review; preserve scoped negatives"
+      ],
       "owner": "gamelibrary-main-integrator",
       "lease_until": "2026-11-01T06:50:00Z",
       "attempts": 1,
-      "last_progress_at": "2026-11-01T06:16:18.558382Z",
-      "next_action": "Review integrated shared eligibility method and metric-window conditions",
+      "last_progress_at": "2026-11-01T06:18:43.236047Z",
+      "next_action": "Receive and verify fresh independent review alongside author-side adversarial check",
       "blockers": []
     }
   ]
