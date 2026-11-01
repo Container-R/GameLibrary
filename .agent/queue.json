@@ -2816,7 +2816,7 @@
       "id": "TASK-2026-0109",
       "question": "What do herringbone tile template constraints establish, and which authored content or connectivity assumptions remain outside tile selection?",
       "discipline": "DESIGN",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Follow a primary procedural-generation lead into an actual authoring/selection contract, rather than inferring semantic level correctness from compatibility labels",
       "expected_artifact": "Bounded original-author and pinned-source mechanism note if review supports the distinction",
@@ -2830,11 +2830,36 @@
         "No visual repetition assessment, Noita implementation transfer or universal connectivity guarantee",
         "Preserve relevant author corrections and finite-boundary limitations; no private metadata"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:25:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T05:56:21.752359Z",
-      "next_action": "Publish reviewed template label, payload and content-interface contract note",
+      "next_action": "Retain source-only template-interface scope; no generated map or Noita implementation guarantee",
+      "blockers": [],
+      "completed_at": "2026-11-01T05:58:24.492442Z",
+      "commit_sha": "59e862880efdcdc7b2283b8dcfca5a75b083f875"
+    },
+    {
+      "id": "TASK-2026-0110",
+      "question": "How did Riot localize an intermittent Chronobreak divergence, and what comparison and diagnostic-intervention identities must remain traceable?",
+      "discipline": "QA",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Concrete original developer diagnosis case fills a gap beyond replay correctness models and generic failure-retention checklists",
+      "expected_artifact": "Bounded source-backed diagnosis note after independent primary-source review",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read original Riot 2018 detection and divergence case text with author attribution",
+        "Distinguish observed symptom from causal origin and controlled diagnostic intervention",
+        "Preserve comparison-pair and constructor-order conditions; no universal bisection guarantee",
+        "Keep original proposed handoff separate from reported studio process",
+        "No runtime, current-product guarantee, private metadata or legacy edits"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:35:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T05:58:24.492442Z",
+      "next_action": "Independently review Riot Chronobreak divergence diagnosis source gate",
       "blockers": []
     }
   ]
