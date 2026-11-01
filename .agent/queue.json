@@ -2134,7 +2134,7 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T02:16:31.174800Z",
-      "next_action": "Retain finite scalar C1 evidence; no engine/contact validation. Optional source/route entries deferred to TASK-2026-0084",
+      "next_action": "Retain finite scalar C1 evidence without engine/contact extrapolation; deferred source and route indexes restored in TASK-2026-0084",
       "blockers": [],
       "completed_at": "2026-11-01T02:28:58.373198Z",
       "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b"
@@ -2143,7 +2143,7 @@
       "id": "TASK-2026-0084",
       "question": "How does a sparse glTF accessor replace indexed elements over dense or implicit-zero base data?",
       "discipline": "MODEL",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Deepen explicitly excluded sparse-accessor semantics without transferring dense-engine evidence",
       "expected_artifact": "Pinned normative source, finite original scalar accessor bytes and independent literal decode checks",
@@ -2158,11 +2158,35 @@
         "No full validator, mesh validity, native sparse importer or morph-evaluation claim",
         "Preserve prior dense evidence and restore deferred scalar source/route indexes with matching generated navigation"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T03:00:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T02:40:45.231284Z",
-      "next_action": "Publish reviewed finite sparse evidence and restore deferred scalar navigation",
+      "next_action": "Maintain separate sparse CPU and dense native evidence; no full validator or morph claims",
+      "blockers": [],
+      "completed_at": "2026-11-01T02:44:21.150605Z",
+      "commit_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d"
+    },
+    {
+      "id": "TASK-2026-0085",
+      "question": "What semantic state and intent must accompany branching dialogue beyond its prose?",
+      "discipline": "NARR",
+      "status": "researching",
+      "priority": 88,
+      "priority_rationale": "Missing narrative role and concrete state-aware content handoff, distinct from existing voice approval and save source analysis",
+      "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read Guerrilla and Monolith first-party practitioner sources and retain actual role distinctions",
+        "Do not infer full studio schema or universal approval authority",
+        "Original bridge-state example explicitly unexecuted; no runtime or translation quality claim",
+        "Independent source and editorial review"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T03:15:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T02:44:21.150605Z",
+      "next_action": "Main read three originals; review narrative role draft against accepted independent source gate",
       "blockers": []
     }
   ]

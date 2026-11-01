@@ -3,13 +3,13 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "coverage-and-depth",
   "active_task_ids": [
-    "TASK-2026-0084"
+    "TASK-2026-0085"
   ],
-  "last_completed_at": "2026-11-01T02:28:58.373198Z",
-  "last_real_progress_at": "2026-11-01T02:40:45.231284Z",
-  "last_commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b",
+  "last_completed_at": "2026-11-01T02:44:21.150605Z",
+  "last_real_progress_at": "2026-11-01T02:44:21.150605Z",
+  "last_commit_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d",
   "last_run_id": "20261101T023055Z-gltf-sparse-accessor",
-  "next_action": "Publish reviewed finite sparse evidence and restore deferred scalar navigation",
+  "next_action": "Main read three originals; review narrative role draft against accepted independent source gate",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
@@ -22,20 +22,16 @@
     "whole_audit_window_healthy": false,
     "audit_snapshot_head": "37b77c3cf2b9efc62c112a82c44330a2ba3d1fb4",
     "snapshot_archive_checks": 457,
-    "latest_post_snapshot_content": "df1aa64b8071f3f6699817abb564106c28ce541b"
+    "latest_post_snapshot_content": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d"
   },
   "publication": {
     "visibility": "public",
     "authorization": "Repository owner confirmed public visibility and continuation",
     "head_verified_before_resume": "9a4ac98b224115f7b49b72f121057f0c1eefcf69",
     "single_writer": "gamelibrary-main-integrator",
-    "latest_verified_content_sha": "df1aa64b8071f3f6699817abb564106c28ce541b",
+    "latest_verified_content_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d",
     "status": "operational-after-unreferenced-commit-verification",
-    "deferred_optional_indexes": [
-      "sources/README.md",
-      "taxonomy/reading-routes.json",
-      "DISCOVERY.md"
-    ],
+    "deferred_optional_indexes": [],
     "object_visibility_recovery": {
       "first_observed": "2026-11-01T02:20:00Z",
       "checkpoint_sha": "5403d6db61b7671a58622cf6da26fb2b145a4b60",
@@ -44,7 +40,8 @@
       "verified_at": "2026-11-01T02:28:58.373198Z",
       "cause": "Unknown; no assumption of general service repair",
       "known_tree": "e4f91a61a85e76f5fedc20de9f4a9cad93f16635"
-    }
+    },
+    "deferred_indexes_restored_at": "2026-11-01T02:44:21.150605Z"
   },
   "last_operational_checkpoint_at": "2026-10-31T18:15:40Z",
   "recovery": {
