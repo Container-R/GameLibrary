@@ -1,0 +1,3 @@
+# Source-depth publication boundary
+
+Main and independent reviewer read three original GGPO files at the pinned commit. This is a source supplement, not an SDK integration or new executable policy. Existing model/runtime evidence remains byte-identical. Two baseline prose qualifications separate replay simulation from external requests and already-output duplicates from newly valid events. First editorial closure and later replacement closure retain their own exact draft identities. Fixed file/method/section locators replace ambiguous rendered line numbers; no claim that confirmed-frame mechanisms are absent. The five-case acceptance matrix is original and unexecuted. No source-code/guide bulk or extended discovery paraphrases are copied.

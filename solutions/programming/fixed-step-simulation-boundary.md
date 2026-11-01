@@ -205,3 +205,5 @@ record(backlog=A, simulatedSteps=steps)
 [当前 v2 归档](../../research/experiments/godot-physics-callback-v2/README.md)只有**两个配置**。初次作者、独立复验、加固解析器后的作者各执行这两个配置和一条版本命令，共六个行为进程、三条版本命令，不是六种场景。当前作者 UUID `b3e7b2d4-351b-4342-8b6b-a084fda177f8`；[独立复核](../../research/experiments/godot-physics-callback-v2/review/REVIEW.md)另存实际 callback 身份、轨迹、诊断和有限窗口判据。解析器纯测试不增加引擎案例数。
 
 [原始 v1](../../research/experiments/godot-physics-callback-v1/README.md)另保留三条版本命令和三次失败的 direct 尝试：首个子进程返回 -6，stderr 另打印 signal 11 诊断；隔离数据目录后，两次 StaticBody2D 配置均未在初始窗口收到接触。其确切原因未证实。v2 的 kinematic 类型是**重新冻结的实验**，不是把 v1 改判成功。初次 v2 解析器还曾遗漏 stdout 中的额外错误文本；实际日志无此错误，现已保留旧解析器及合成负例，并以新解析器重新执行两个配置。整篇仍为 `source-backed`，不升级为所有物理后端、线程、接触顺序或生产伤害系统的保证。
+
+[GGPO回放与表现责任补充](client-prediction-authority-boundary.md)进一步区分重复输出与纠正后新增事件；仅源码核对与未执行验收表，旧固定Tick及物理实验不因此验证回滚表现。

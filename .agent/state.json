@@ -6,23 +6,23 @@
     "TASK-2026-0086"
   ],
   "last_completed_at": "2026-11-01T02:48:49.280844Z",
-  "last_real_progress_at": "2026-11-01T02:48:49.280844Z",
+  "last_real_progress_at": "2026-11-01T02:51:46.099316Z",
   "last_commit_sha": "caf03252380b9faff46b9467c07800880634d146",
-  "last_run_id": "20261101T024104Z-narrative-role",
-  "next_action": "Main and independent source review before source-depth supplement; no implementation authorized",
+  "last_run_id": "20261101T024920Z-rollback-presentation",
+  "next_action": "Publish reviewed source-depth responsibility boundary and original unexecuted acceptance matrix",
   "blockers": [],
   "audit": {
     "consecutive_no_progress_checks": 0,
-    "last_checked_at": "2026-11-01T00:48:33.122137+00:00",
+    "last_checked_at": "2026-11-01T02:50:54Z",
     "research_health": "healthy",
     "publication_hold_resolved_at": "2026-10-31T16:18:40.694275Z",
-    "last_audit_record": ".agent/audits/20261101T005000Z.json",
+    "last_audit_record": ".agent/audits/20261101T025000Z.json",
     "historical_research_health": "healthy_at_1654_observation",
     "current_health": "healthy",
     "whole_audit_window_healthy": false,
-    "audit_snapshot_head": "37b77c3cf2b9efc62c112a82c44330a2ba3d1fb4",
-    "snapshot_archive_checks": 457,
-    "latest_post_snapshot_content": "caf03252380b9faff46b9467c07800880634d146"
+    "audit_snapshot_head": "faa677dc12dc971b1800a26b11cae3cbaed9a3cb",
+    "snapshot_archive_checks": 505,
+    "latest_post_snapshot_content": null
   },
   "publication": {
     "visibility": "public",

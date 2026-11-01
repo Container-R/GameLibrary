@@ -137,3 +137,5 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](..
 [glTF稀疏accessor来源](../research/source-notes/gltf-sparse-accessor.md)定位基底、替换和元数据子集边界。
 
 [叙事设计与写作职责来源](../research/source-notes/narrative-designer-writer-role.md)区分日英实践者角色与任务图历史样本。
+
+[GGPO重放与表现边界](../research/source-notes/rollback-presentation-boundary.md)固定源码中的宿主责任，不将追赶结束解释为外部提交确认。

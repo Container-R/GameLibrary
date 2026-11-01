@@ -141,3 +141,5 @@ python3 scripts/evidence/test_verify.py
 [稀疏accessor实验](experiments/gltf-sparse-accessor/README.md)保存44字节双基底与5拒绝用例；不继承密集网格的引擎证据。
 
 [对白语义交接](../roles/narrative/narrative-designer-writer.md)把世界事实、角色知识和任务资格分别交接；桥梁情境为原创未执行建议。
+
+[客户端预测补充](../solutions/programming/client-prediction-authority-boundary.md)以固定GGPO源码收紧旧表现建议；新增短事件、失效事件与持久输出各有未执行验收问题，没有新增运行实验。

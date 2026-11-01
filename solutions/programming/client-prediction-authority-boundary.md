@@ -7,10 +7,13 @@ primary_discipline: NET
 related_roles: [network-programmer, gameplay-programmer, qa-engineer]
 related_topics: [client-prediction, server-reconciliation, entity-interpolation, fixed-timestep, replay-dependencies, partial-snapshots, rpc-ingress, queued-sender-identity]
 engines: [engine-agnostic, Unity, Godot]
-versions: ["Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档", "Godot 4.6.3.stable.official.7d41c59c4 本机自报；发行及源码对应未认证"]
+versions: ["GGPO source 7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a", "Netcode for Entities 1.4.1 文档", "Netcode for GameObjects 2.2.0 历史文档", "Godot 4.6.3.stable.official.7d41c59c4 本机自报；发行及源码对应未认证"]
 updated_at: 2026-11-01
-verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；新增本机自报Godot4.6.3双进程回环RPC入口与应用授权观察及独立重复，保留初次解析失败；未验证实际预测纠正、WAN、Unity或跨平台物理
+verification_method: 原始来源核对与既有原创离散协议模型16项测试；跨实体依赖补充为未执行手算与验收提案；新增本机自报Godot4.6.3双进程回环RPC入口与应用授权观察及独立重复，保留初次解析失败；另核对固定GGPO回放与宿主输出责任，验收矩阵未执行；未验证实际预测纠正、WAN、Unity或跨平台物理
 sources:
+  - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/doc/DeveloperGuide.md
+  - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h
+  - https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp
   - https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html
   - https://www.gabrielgambetta.com/entity-interpolation.html
   - https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/intro-to-prediction.html
@@ -54,7 +57,7 @@ Unity Netcode for Entities **1.4.1** 描述了快照回退、重模拟及其 CPU
 1. 采集并编号意图，保存到有界 pending 历史；立即预测本地运动并发送命令。重新发送未确认命令只保证尽力恢复，不能承诺任意丢包条件下必然送达。
 2. 收到完整可用快照后，先核对 epoch；忽略 `serverTick <= lastAcceptedTick` 的旧/重复快照。**相同 ack 但更新的 serverTick 不应直接丢弃**，环境碰撞、击退或平台移动可能已改变权威状态。
 3. ack 不得倒退或超过本 epoch 已发送序号。以权威 movementState 替换模拟状态，删除 `seq <= ack` 的命令，按顺序重放其余命令。先恢复所有影响运动的字段，不能只恢复位置而保留错误速度、grounded 或跳跃冷却。
-4. 重放只计算状态，不重复发网络请求、扣永久资源或执行不可逆效果。一次性预测声音/粒子仅首次执行；被服务器否决的可撤销预测效果需要撤销标记，而不是靠去重就解决。击杀、奖励、交易等持久副作用等待权威确认并具备幂等标识。
+4. 将重放模拟与外部输出分离：不因重算重复提交外部副作用请求、扣永久资源或执行不可逆效果。对已经输出的同一有效预测声音/粒子，不因重算而重复输出；纠正后新增、先前未输出的有效事件须由另行定义的表现协调策略处理，不能将“避免重复”实现为无条件丢弃全部重放事件。被服务器否决的可撤销预测效果需要撤销标记，而不是靠去重就解决。击杀、奖励、交易等持久副作用等待权威确认并具备幂等标识。
 5. 模拟状态立即纠正，视觉位置可另存偏移并平滑收敛；碰撞/后续预测不能读取正在平滑的视觉位置。大幅瞬移、重生应重置历史/显示状态，避免“从旧尸体滑回新位置”。
 
 ## 乱序、丢失与历史耗尽
@@ -185,3 +188,29 @@ peer ID 是这次连接中的标识，不是已认证用户。本实验显式关
 修正后的 author sequence 和独立同源重复各有 1 个服务器、1 个客户端，全部正常退出且 stderr 为空。计入首次解析失败，合计 3 次版本查询、3 个服务器进程、2 个客户端进程；只有 2 次交换被接受，仍是同一套三命令配置，而非 8 种情景。纯合成变异、预置合成旧 PASS 的 `-O` 启动拒绝均不是网络运行。后者使用改正 Callable 调用前的源码快照，只证明相同 runner 的前置启动保护。
 
 已安装二进制的 SHA 与自报版本已记录，但它与用于比较的官方源码提交没有完成来源认证。该有限回环实验不证明账号安全、通用反作弊、丢包/重连、重放去重、WAN 表现、预测纠正、物理确定性或其他引擎行为。更完整的[来源定位与分层证据说明](../../research/source-notes/godot-rpc-authority-boundary.md) 将原始文档、源码比较和实际观察分开。
+
+## 补充：模拟重放不等于表现输出重放
+
+**本节只核对固定 GGPO 源码和文档，验收表是原创未执行建议。** 本文前面的权威服务器纠正模型与 GGPO 的对等端回滚不是同一协议；不能把前者的确认、epoch 或事件身份字段当成 GGPO 内建接口。原16项模型测试不变，也不因本节获得声音、粒子或 GGPO 运行证据。
+
+### SDK 恢复了什么，没有替应用完成什么
+
+固定于 `7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a` 的 [GGPO 开发指南](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/doc/DeveloperGuide.md#separate-updating-game-state-from-rendering-in-your-game-loop)要求分离模拟与渲染，并将回滚期间产生的声音/效果延后处理；只有不影响游戏结果的表现部分才可排除在游戏状态之外，模拟使用的随机数状态需保存。指南也提醒，短暂视觉事件可能在追赶中耗尽，玩家根本没有看到它；这不是“只显示最终状态”总能保留反馈的保证。
+
+[回调头文件](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/include/ggponet.h)把保存、恢复和逐帧推进交给应用。[Sync::AdjustSimulation](https://github.com/pond3r/ggpo/blob/7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a/src/lib/ggpo/sync.cpp)恢复旧帧后反复调用推进回调，再结束追赶；所读路径没有提供音频投递确认或应用交易提交。**追赶结束不等于持久奖励已经得到权威确认。**
+
+### “不重复播放”与“不丢新事件”是两个条件
+
+先前已经输出的预测事件，不应仅因重算同一事件就再次播放；但纠正后的重放也可能产生原先不存在的有效事件。若把所有重放一律静音，可能把后者一起丢掉。反过来，每次模拟调用都立即输出，会重复旧事件，也无法通过恢复状态撤回已经听到的声音。
+
+因此需要应用自己定义事件的可比较身份、有效性变化、延后与撤销策略。下面是待执行的验收问题，不是 GGPO 已提供的算法；也不宣称所有效果都适合撤销或延后。
+
+| 情况 | 原创接收条件与需保留的证据 | 不能据此声称什么 |
+|---|---|---|
+| 同一有效事件再次模拟 | 分开记录逻辑事件与实际输出调用，检查没有因重算重复输出 | 状态相同或集合去重不自动证明实际调用只有一次 |
+| 纠正后新增短事件 | 记录其此前不存在、重放后有效，以及选定策略何时将它交给表现层 | 只看最终状态不能证明中间事件被看到或听到 |
+| 旧预测事件失效 | 明确可撤销部分、不可撤销部分及补偿/淡出等项目政策，记录实际结果 | 删除日志不能撤回已经发出的声音；没有通用无痕撤销 |
+| 影响规则的效果或随机性 | 将影响后续模拟的状态纳入恢复和重放判据；区分视觉装饰与实际命中/阻挡 | 名称叫粒子或特效，不代表它可排除在模拟之外 |
+| 永久奖励或外部交易 | 使用另行规定的权威确认与幂等/事务证据，禁止从重放回调直接推导提交许可 | GGPO完成追赶不是服务器授权、数据库原子性或exactly-once保证 |
+
+若准备集成，应先选择一个明确效果和输出接口，再冻结重复、新增、失效各自的预期。当前只有源代码路径和协议建议，没有运行 GGPO、网络对端、音频中间件或粒子系统；也没有新增任何生产投递或玩家感知结论。详见[来源与范围记录](../../research/source-notes/rollback-presentation-boundary.md)。
