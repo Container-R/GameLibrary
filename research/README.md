@@ -201,3 +201,5 @@ python3 scripts/evidence/test_verify.py
 [Valve 情境对白的历史条件与排名](../case-studies/narrative/valve-contextual-dialogue-rule-selection.md)区分规则资格和条件计数竞争；原创两规则轨迹说明一次防重复编辑为何会改变首次排名，未执行引擎或音频测试。
 
 [Steam 流量报表对账](source-notes/steam-report-reconciliation.md)用两个有限集合反例区分总数差、观察集合差、实际未标记访问与自然来源；提供市场到分析的接收条件，未访问真实报表。
+
+[模型烘焙 piece 可见集合](source-notes/model-bake-piece-visibility.md)区分跨输入名称对应与追踪分组不变；原创组件合并反例及接收步骤不预填实际命中或纹理结果。

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "run_id": "20261101T083900Z-model-bake-piece",
+  "task_ids": [
+    "TASK-2026-0008",
+    "TASK-2026-0136"
+  ],
+  "started_at": "2026-11-01T08:35:34Z",
+  "ended_at": "2026-11-01T08:40:24.599563Z",
+  "outcome": "Source-only model bake partition note independently accepted; validated for publication",
+  "sources_examined": [
+    "https://www.sidefx.com/docs/houdini/nodes/cop/bakegeometrytextures-2.0"
+  ],
+  "evidence_added": "Original node best practices, mesh and trace-set definitions directly read; partition-change counterexample reviewed",
+  "original_contribution": "Distinguish primitive correspondence, partition-preserving rename and partition merge in a model-to-bake receiving procedure",
+  "runtime_experiments": 0,
+  "limitations": [
+    "Rolling documentation: Houdini22.0 header, node2.0, Since21.0 not a clause introduction date",
+    "No model creation, bake, image, ray intersection or engine execution",
+    "Candidate hit eligibility does not establish actual texel differences",
+    "No general bake certification or unrestricted pairwise visibility feature claimed"
+  ],
+  "validation": {
+    "unchanged_prior_experiment_files": 3227,
+    "queue_tasks_checked": 136,
+    "indexed_articles": 49,
+    "archive_checks_passed": 519,
+    "archive_checks_failed": 0,
+    "optimized_archive_checks_passed": 519,
+    "optimized_archive_checks_failed": 0,
+    "archive_check_scope": "Static declared archive consistency only, not runtime or semantic testing",
+    "local_links_checked": 858,
+    "declared_paths_checked": 181
+  },
+  "next_action": "Verify publication then continue actual coverage gaps, not document quotas"
+}

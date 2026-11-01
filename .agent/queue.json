@@ -216,8 +216,8 @@
       "lease_until": "2026-11-01T09:25:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T08:34:37.435344Z",
-      "next_action": "Use recorded coverage gaps to inspect one concrete model-authoring handoff from primary production or tool sources, avoiding a generic role profile",
+      "last_progress_at": "2026-11-01T08:40:24.599563Z",
+      "next_action": "Coverage review selected a concrete model-authoring trace-set handoff; no generic role profile required",
       "blockers": [],
       "partial_artifacts": [
         "research/audits/initial-coverage-and-taxonomy.md",
@@ -3556,6 +3556,31 @@
       "blockers": [],
       "completed_at": "2026-11-01T08:34:37.435344Z",
       "commit_sha": "994717808cae597012c0fe8b0ca4c93508506951"
+    },
+    {
+      "id": "TASK-2026-0136",
+      "question": "Can high/low/cage piece names remain corresponding while a grouping edit changes permitted bake tracing interactions?",
+      "discipline": "MODEL",
+      "status": "reviewing",
+      "priority": 92,
+      "priority_rationale": "Clarify model-authoring component partition as a bake input, distinct from coordinate or tangent validity",
+      "expected_artifact": "Source-backed narrow note with original partition merge and bijective rename contrast plus finite receiving procedure",
+      "artifact_paths": [
+        "research/source-notes/model-bake-piece-visibility.md"
+      ],
+      "acceptance": [
+        "Read original node documentation with precise page and node identity",
+        "Separate cross-input correspondence from unchanged primitive partition",
+        "Keep candidate eligibility distinct from actual ray hit or pixel output",
+        "Keep effective filters and cage validity as distinct conditions",
+        "Independently bind exact final source-only artifact"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T09:20:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T08:40:24.599563Z",
+      "next_action": "Complete exact artifact review and publish source-only note with preserved prior evidence",
+      "blockers": []
     }
   ]
 }
