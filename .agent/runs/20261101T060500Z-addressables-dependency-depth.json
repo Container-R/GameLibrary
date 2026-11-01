@@ -5,8 +5,8 @@
     "TASK-2026-0111"
   ],
   "started_at": "2026-11-01T06:03:17Z",
-  "ended_at": "2026-11-01T06:05:14.030491Z",
-  "outcome": "integrated source depth and editorial review accepted; publication pending",
+  "ended_at": "2026-11-01T06:07:44.656291Z",
+  "outcome": "published and read back",
   "sources": [
     "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-examples.html#content-update-dependencies",
     "https://docs.unity3d.com/Packages/com.unity.addressables@1.21/manual/content-update-build-settings.html#unique-bundle-ids-setting",
@@ -32,7 +32,12 @@
     "static_archive_failed": 0,
     "optimized_python_archive_checks": 519,
     "declared_paths_checked": 140,
-    "prepublication_correction": "Remove stale current-scope source count from final navigation label; preserve historical five-page record"
+    "prepublication_correction": "Remove stale current-scope source count from final navigation label; preserve historical five-page record",
+    "selected_blob_hashes_verified": 8,
+    "outside_tree_changes": 0,
+    "local_links_checked": 816,
+    "receipt_queue_tasks_checked": 112
   },
-  "next_action": "Review next concrete existing knowledge gap without expanding article counts"
+  "next_action": "Review Godot context docs and pin targeted extractor/import/message source paths",
+  "commit_sha": "92b5b761ceebb88d6f3dc2becc3f7714b8fa19ce"
 }

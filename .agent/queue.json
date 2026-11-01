@@ -2870,7 +2870,7 @@
       "id": "TASK-2026-0111",
       "question": "How can changed Addressables dependencies affect unedited consumers, and how do restriction-group changes differ from bundle rebuild and download granularity?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 90,
       "priority_rationale": "Deepen an explicitly unread dependency-example gap in existing SOL-ENGINE-002 rather than expanding topic counts",
       "expected_artifact": "Bounded official-source deepening of existing Addressables topic after full-file privacy and evidence review",
@@ -2884,11 +2884,36 @@
         "No arbitrary closure algorithm, byte/download count, current-version or Unity runtime guarantee",
         "Full uploaded files must exclude private execution metadata; preserve separate pending runtime hold"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-01T06:40:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-01T06:05:14.030491Z",
-      "next_action": "Review integrated dependency and packing-granularity section and publish existing-topic depth",
+      "next_action": "Retain integrated source-only dependency and packing scope; actual migration and output remain unexecuted",
+      "blockers": [],
+      "completed_at": "2026-11-01T06:07:44.656291Z",
+      "commit_sha": "92b5b761ceebb88d6f3dc2becc3f7714b8fa19ce"
+    },
+    {
+      "id": "TASK-2026-0112",
+      "question": "How do translator comments and message lookup context differ in the Godot PO workflow, and which identity handoff deepens the existing localization role?",
+      "discipline": "LOC",
+      "status": "researching",
+      "priority": 90,
+      "priority_rationale": "Deepen an exact semantic-context to runtime-identity gap in existing ROLE-LOC-001 using targeted official documents and pinned source",
+      "expected_artifact": "Bounded existing-role integration after documentation and extractor/import/lookup source-chain review",
+      "artifact_paths": [],
+      "acceptance": [
+        "Read official Godot 4.6 translator comments, context and message-identity documentation",
+        "Pin corresponding official source and trace only relevant extraction, PO import and message lookup paths",
+        "Separate translator explanation from machine identity without claiming comments produce distinct keys",
+        "Preserve original language-review decision and unexecuted Confirm scenario; no imposed translation",
+        "No runtime, installed-binary identity, GNU merge/fuzzy behavior or undocumented fallback claims"
+      ],
+      "owner": "gamelibrary-main-integrator",
+      "lease_until": "2026-11-01T06:45:00Z",
+      "attempts": 1,
+      "last_progress_at": "2026-11-01T06:07:44.656291Z",
+      "next_action": "Review Godot context docs and pin targeted extractor/import/message source paths",
       "blockers": []
     }
   ]
