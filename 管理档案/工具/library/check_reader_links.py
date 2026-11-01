@@ -93,6 +93,12 @@ def headings(text):
         if m:
             fence = (m[1][0], len(m[1]))
             continue
+        # Do not certify headings through possible raw HTML block context.
+        # Deliberately conservative: any literal '<' outside a supported fence
+        # makes this whole target unsupported, even if it might be inline text.
+        if '<' in line:
+            unsupported = True
+            continue
         m = re.match(r'^ {0,3}#{1,6}\s+(.+?)\s*$', line)
         if not m:
             if re.match(r'^ {0,3}(?:=+|-+)\s*$', line) and old_previous.strip() and not old_previous.lstrip().startswith('#'):

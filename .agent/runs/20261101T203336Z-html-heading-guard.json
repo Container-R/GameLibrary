@@ -1,0 +1,39 @@
+{
+  "run_id": "20261101T203336Z-html-heading-guard",
+  "observed_at": "2026-11-01T20:33:36Z",
+  "parent_verified_head": "07886fef360905f891844a8814ab5c6aa726fdb5",
+  "task": "TASK-2026-0008",
+  "outcome": "Conservative target-heading guard closes retained raw-HTML false-pass without hiding unsupported syntax or rewriting reader prose.",
+  "paths": [
+    "管理档案/工具/library/check_reader_links.py",
+    "管理档案/工具/library/test_html_heading_scope.py",
+    "管理档案/工具/library/adversarial_reader_html.py",
+    "管理档案/审查/正文片段检查HTML上下文修正.md"
+  ],
+  "verification_method": "Finite pure Python cases and independent code/probe review; no Markdown renderer, browser, engine or network runtime.",
+  "checks": {
+    "link_test_methods": 41,
+    "independent_cases": 18,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "modes_repeat_same_inputs": true,
+    "current_reader_books": 63,
+    "current_local_links": 155,
+    "current_fragments": 22,
+    "current_unsupported": 32,
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "overall_link_status": "incomplete",
+    "integrated_library_test_methods": 55,
+    "integrated_library_test_scope": "41 link methods plus14 existing shelf-route methods, same set repeated in both modes"
+  },
+  "prior_publication_readback": {
+    "commit": "07886fef360905f891844a8814ab5c6aa726fdb5",
+    "key_files_matched": 5,
+    "reader_books_tree_matched": 63,
+    "reader_links_tree_matched": 155
+  },
+  "publication_note": "Containing commit readback follows publication."
+}

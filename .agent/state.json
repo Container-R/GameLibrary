@@ -13,16 +13,16 @@
     "reader_books_total": 63
   },
   "publication": {
-    "last_verified_head_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+    "last_verified_head_sha": "07886fef360905f891844a8814ab5c6aa726fdb5",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "63 reader books; bounded preview-loading ownership strategy grounded in Addressables1.21.21 documentation, no implementation or engine guarantee.",
-    "latest_verified_content_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+    "scope": "63 readers unchanged; finite link-checker false-pass corrected to explicit unsupported; no broad Markdown or reader-quality certification.",
+    "latest_verified_content_sha": "07886fef360905f891844a8814ab5c6aa726fdb5",
     "reader_books_total": 63,
     "post_baseline_research_books": 8,
-    "counts_basis": "62 verified readers plus reviewed SOL-ENGINE-004; frozen55 remediation remains separate."
+    "counts_basis": "No new book; existing reader ownership article and hierarchy verified at prior HEAD."
   },
-  "next_action": "Review current reader-link checker target-heading ambiguity and actual counterexamples for one conservative, fail-closed improvement; retain incomplete results if unsupported syntax prevents a justified check. No native retry.",
+  "next_action": "Check existing Steam cloud-save coverage and official Auto-Cloud account-specific path substitutions; distinguish local account separation from version conflicts, with no account/service access.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -57,10 +57,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-01T21:10:00Z",
+    "lease_until": "2026-11-01T21:15:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T202542Z-preview-load-ownership",
+  "last_run_id": "20261101T203336Z-html-heading-guard",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -79,8 +79,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T20:25:42Z",
-  "last_commit_sha": "e5394dffa3830649a96ded26c88f11fddf0cc1b4",
+  "last_real_progress_at": "2026-11-01T20:33:36Z",
+  "last_commit_sha": "07886fef360905f891844a8814ab5c6aa726fdb5",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
