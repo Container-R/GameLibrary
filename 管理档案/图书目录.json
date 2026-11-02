@@ -20,7 +20,11 @@
       "scope_disposition": "角色表演、制作接入与反馈进入抬臂示意主线；glTF平移重定时详细公式和编码限制明确保留旧精确小节，并提供可选支持入口；重叠职责样本和后台数据有合理排除",
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
-      "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md"
+      "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
+      "reader_sha256": "7ad85d9034d77b8991eca097473119b29fde8670adf8fa76ef007f0c7cca1916",
+      "review_paths": [
+        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "ROLE-ART2D-001",
@@ -1756,6 +1760,24 @@
       ],
       "source_record": "管理档案/来源笔记/ime-confirmation-vs-submit.json",
       "reader_sha256": "87d6adfd292043b2735b64c33122dd7cfe74882b2ea4ea6d9162d49163acdb00"
+    },
+    {
+      "internal_id": "SOL-ANIM-004",
+      "reader_title": "手臂扭转时变细，为什么权重归一化还不够",
+      "floor": "角色动画",
+      "area": "角色变形",
+      "shelf": "蒙皮",
+      "canonical_reader_path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "current_read_path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立全文、关键原源与纸面数学审读接受；不是资产验证",
+      "origin": "source-grounded-skinning-blend-method-comparison",
+      "scope_note": "两个等权影响的同轴纯旋转手推，解释归一化权重与刚体混合的区别；保留非刚体和短路径局限",
+      "review_paths": [
+        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
+      "reader_sha256": "9eecaa383adbd328d1e7aa025c717da0d69b144d0e2664535223f9c98680d93a"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1766,10 +1788,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "a0a821bcd94c75ccebdea843da3083b78329c520",
+  "publication_base_sha": "482847037ad790748b1e8cb418c33b2da13ee215",
   "accounted_for_original_items": 55,
-  "reader_books_total": 75,
-  "post_baseline_research_books": 20,
+  "reader_books_total": 76,
+  "post_baseline_research_books": 21,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

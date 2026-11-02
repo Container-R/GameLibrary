@@ -1,0 +1,71 @@
+{
+  "title": "归一化蒙皮权重与扭转收缩",
+  "read_date": "2026-11-02",
+  "evidence_scope": "Original ideal-real two-influence derivation and targeted primary-paper reading; no asset, renderer, shader or performance execution.",
+  "sources": [
+    {
+      "authors": [
+        "Ladislav Kavan",
+        "Steven Collins",
+        "Jiří Žára",
+        "Carol O’Sullivan"
+      ],
+      "title": "Geometric Skinning with Approximate Dual Quaternion Blending",
+      "publication": "ACM Transactions on Graphics 27(4), 2008",
+      "url": "https://users.cs.utah.edu/~ladislav/kavan08geometric/kavan08geometric.html",
+      "pdf_url": "https://users.cs.utah.edu/~ladislav/kavan08geometric/kavan08geometric.pdf",
+      "pdf_sha256": "c6b8b1b33059cc162a11fd982971b12f4476edf142ad970b2d9144262b1ecd20",
+      "alternate_author_university_pdf": "https://dcgi.fel.cvut.cz/wp-content/wpallimport-dist/publications/pdf/publications-2008-kavan-tog-adqb-paper.pdf",
+      "alternate_copy_byte_identity": "Not certified identical to the hashed Utah copy.",
+      "sections": [
+        "Physical3–4:2.2, equations1–2",
+        "Physical8–9:3.2, equation11",
+        "Physical12–13:4.1–4.2 selected sign and nonrigid discussion",
+        "Physical15–16:Figure20 and6 limitations"
+      ],
+      "supports": [
+        "Weighted rigid matrices need not remain rigid; normalized weights alone do not prevent contraction.",
+        "Normalized dual-quaternion blending handles rigid transforms; nonrigid scale/shear requires separate handling.",
+        "Shortest-path switching can create shape discontinuity near a half-turn."
+      ],
+      "reading_scope": "Targeted sections, not full-paper or appendix reading. Main editor visually checked physical15 Figure20; independent review used its text. No video or linked implementation execution.",
+      "limitations": [
+        "Historical performance figures are not adopted as modern platform measurements.",
+        "No universal volume, visual quality or scale/shear support promise."
+      ]
+    },
+    {
+      "authors": [
+        "Ladislav Kavan",
+        "Steven Collins",
+        "Jiří Žára",
+        "Carol O’Sullivan"
+      ],
+      "title": "Skinning with Dual Quaternions",
+      "publication": "Symposium on Interactive 3D Graphics and Games, 2007",
+      "url": "https://users.cs.utah.edu/~ladislav/kavan07skinning/kavan07skinning.html",
+      "pdf_url": "https://users.cs.utah.edu/~ladislav/kavan07skinning/kavan07skinning.pdf",
+      "pdf_sha256": "e6d12e076d4ddee4206d43bd57d7bda6c5ca2bc14b794332f85b55f2010faeff",
+      "sections": [
+        "3.1–3.4",
+        "5"
+      ],
+      "supports": [
+        "Background cross-check for rigid-transform blending, zero-dual pure rotation case and basic limitations."
+      ],
+      "reading_scope": "Used as editorial cross-check; final reader citations point to the 2008 explanation. No performance or asset claims inherited."
+    }
+  ],
+  "original_example": {
+    "inputs": "A point(1,0,0), effective bind-corrected I and Rz120deg in one frame, weights1/2 each, zero translation and no scale/shear.",
+    "lbs_output": "(1/4,sqrt(3)/4,0), radius1/2",
+    "pure_rotation_dq_special_case": "XYZW normalized average=(0,0,1/2,sqrt(3)/2), giving60deg and point(1/2,sqrt(3)/2,0), radius1",
+    "scope": "One point in ideal real arithmetic, not a mesh volume measurement or general implementation."
+  },
+  "non_goals": [
+    "Engine or exchange-format support certification",
+    "General dual-quaternion implementation",
+    "Whole-character volume or visual acceptance",
+    "Target-hardware cost measurement"
+  ]
+}

@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T10:44:31Z",
+      "last_progress_at": "2026-11-02T11:03:20Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6948,6 +6948,33 @@
       "next_action": "For project adoption, inspect the actual text component and all send entrypoints, then exercise candidate acceptance, cancellation and a genuinely separate send operation.",
       "blockers": [],
       "verification_method": "Fixed and versioned primary-source reading, independent reader review and conditional sequence reasoning; no native, browser, IME or synthetic-event execution."
+    },
+    {
+      "id": "TASK-2026-0203",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can normalized skinning weights still produce twist contraction, and how should a team compare blending methods?",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Concrete character-deformation gap distinct from role handoff and temporal quaternion interpolation.",
+      "expected_artifact": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+        "管理档案/来源笔记/skinning-normalized-weights-twist.json",
+        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Check existing reader overlap",
+        "Read original blending and nonrigid limitation sections",
+        "Independently verify finite same-input example and full reader",
+        "Provide actual floor-area-shelf navigation",
+        "No runtime, global volume or performance overclaim"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T11:03:20Z",
+      "next_action": "For an actual asset, compare identical effective transforms and weights using supported implementations; inspect nonrigid inputs and representative poses before changing the pipeline.",
+      "blockers": [],
+      "verification_method": "Targeted primary-paper reading, original ideal-real derivation and independent full reader/source review; no asset or renderer execution."
     }
   ],
   "execution_policy": {
