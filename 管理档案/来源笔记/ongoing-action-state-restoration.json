@@ -1,0 +1,36 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+  "reader_sha256": "e6eb4eecb1ab682aabe9f7b9a2db9298d3f6ca86f2a65083db3375eb6c7cc296",
+  "prior_reader_sha256": "3b6bfd31057fbf7517f80327f9612704949ca0478e393bda2b3ed8e572d9717f",
+  "support_path": "管理档案/支持资料/没收到动作开始消息，重新看见角色时怎样恢复表现.md",
+  "support_sha256": "0b20e59725593bb81c5c3ed98fe68f286c4a06b1f79ecbc28b8a96e052ab8bd6",
+  "review_path": "管理档案/审查/持续动作状态恢复-来源与读者审查.md",
+  "scope": "Reader-oriented integration of previously unpublished research; original paper example and additional version-series documentation, no new execution.",
+  "sources": [
+    {
+      "author": "Paul Arkem Chamberlain / Riot Games",
+      "title": "Demolishing Wallhacks with VALORANT’s Fog of War",
+      "date": "2020-04-14",
+      "url": "https://www.riotgames.com/en/news/demolishing-wallhacks-valorants-fog-war",
+      "read_scope": "Article text through conclusion; this support uses Consistency & State Management only. No images or video viewed.",
+      "limits": "Historical developer report, no internal Effect Container schema; defuse and planting wording retained as source distinction."
+    },
+    {
+      "author": "Epic Games",
+      "title": "Property Replication",
+      "version": "Unreal Engine 5.2 documentation series",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/property-replication-in-unreal-engine?application_version=5.2",
+      "read_scope": "Full extracted text; claims use opening current-value versus intermediate-change distinction."
+    },
+    {
+      "author": "Epic Games",
+      "title": "RPCs",
+      "version": "Unreal Engine 5.2 documentation series",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/rpcs-in-unreal-engine?application_version=5.2",
+      "read_scope": "Full extracted text; uses purpose, Requirements and Caveats, Reliability."
+    }
+  ],
+  "verification": "Source reading and independent mechanism/reader review; no game, network or engine execution.",
+  "copyright": "Narrow paraphrase and links; no copied article, source code or imagery."
+}
