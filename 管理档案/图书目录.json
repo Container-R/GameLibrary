@@ -1059,9 +1059,10 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "3a70434fd5edb60ed6ed30468eb5d90b50c04e283ea9e7de7422648fecad7f95",
+      "reader_sha256": "4e71404b4d1f407fe7b30a77246ed9b1f24a4a260b4fb568edd38da9c9a030ba",
       "review_paths": [
-        "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md"
+        "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
+        "管理档案/审查/纹理上传行跨度-来源与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Optional texture-coordinate wrapping and explicit-gradient explanation; budget arithmetic and historical results unchanged.",
@@ -1070,6 +1071,13 @@
         "source_note": "管理档案/来源笔记/texture-gradient-wrapping.json",
         "reader_sha256": "3a70434fd5edb60ed6ed30468eb5d90b50c04e283ea9e7de7422648fecad7f95",
         "support_sha256": "90857e42676b5a31e6d34f2ba052fcd2ebda55cb18c003d12202a6a8009212eb"
+      },
+      "row_pitch_support": {
+        "path": "管理档案/支持资料/纹理每行字节数正确，为什么上传后仍会错行.md",
+        "sha256": "6921aa9e3df8d483326982eb7c007b0a88afb191d145b78760ce477e16b92dee",
+        "source_note": "管理档案/来源笔记/texture-upload-row-pitch.json",
+        "review_path": "管理档案/审查/纹理上传行跨度-来源与读者审查.md",
+        "scope": "Hypothetical two-row placement using separate source/destination strides. Existing latest_increment records the earlier gradient supplement and its then-current reader hash; not a rerun."
       }
     },
     {
@@ -1980,7 +1988,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "e2a8479322459444f4abe64375e4f96aad15e921",
+  "publication_base_sha": "a4516f792fa2346b4840db11e5bfba1804431c2c",
   "accounted_for_original_items": 55,
   "reader_books_total": 80,
   "post_baseline_research_books": 25,

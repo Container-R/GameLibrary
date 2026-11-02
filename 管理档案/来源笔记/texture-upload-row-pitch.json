@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "repository": "https://github.com/microsoft/DirectX-Headers",
+  "tag": "v1.614.1",
+  "commit": "48a762973271c5a75869946bf1fdbc489a628a5c",
+  "source_path": "include/directx/d3dx12_resource_helpers.h",
+  "source_sha256": "299b03a93aa89dd55b77d0550e2eb5b5778f0070ee1d10ab907a0ee89d2f4ae3",
+  "read_sections": [
+    "MemcpySubresource 27-69",
+    "UpdateSubresources 94-156 and 224-263",
+    "Independent layout helper 405-535; not complete argument validation"
+  ],
+  "official_docs": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints",
+    "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_subresource_data",
+    "https://learn.microsoft.com/en-us/windows/win32/direct3ddds/dx-graphics-dds-pguide"
+  ],
+  "scope": "Separate source and destination row strides from effective bytes copied per row. Hypothetical two-row positive-pitch single-slice example, not a device footprint query.",
+  "limits": "No compilation, API or GPU execution. Not complete upload, resource-state, synchronization, lifetime, input-safety or performance validation. Existing CPU budget evidence unchanged.",
+  "reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "reader_sha256": "4e71404b4d1f407fe7b30a77246ed9b1f24a4a260b4fb568edd38da9c9a030ba",
+  "support_path": "管理档案/支持资料/纹理每行字节数正确，为什么上传后仍会错行.md",
+  "support_sha256": "6921aa9e3df8d483326982eb7c007b0a88afb191d145b78760ce477e16b92dee",
+  "review_path": "管理档案/审查/纹理上传行跨度-来源与读者审查.md"
+}

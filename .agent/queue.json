@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T16:51:01Z",
+      "last_progress_at": "2026-11-02T17:10:06Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1143,7 +1143,7 @@
         "No inferred production guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T13:48:46Z",
+      "last_progress_at": "2026-11-02T17:10:06Z",
       "next_action": "Maintain scoped offline evidence; no GPU allocation or residence claim",
       "blockers": [],
       "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
@@ -1161,9 +1161,12 @@
         "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
         "管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md",
         "管理档案/来源笔记/texture-gradient-wrapping.json",
-        "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md"
+        "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
+        "管理档案/支持资料/纹理每行字节数正确，为什么上传后仍会错行.md",
+        "管理档案/来源笔记/texture-upload-row-pitch.json",
+        "管理档案/审查/纹理上传行跨度-来源与读者审查.md"
       ],
-      "latest_reader_maintenance": "Optional shader support separates wrapped sampling address, continuous gradients, atlas scale and mip content; source-backed unexecuted arithmetic, not GPU evidence."
+      "latest_reader_maintenance": "Optional row-copy support separates source stride, destination footprint stride and effective bytes; existing budget arithmetic, gradient support and historical CPU scope retained. No new GPU evidence."
     },
     {
       "id": "TASK-2026-0038",
