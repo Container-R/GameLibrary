@@ -13,16 +13,16 @@
     "reader_books_total": 69
   },
   "publication": {
-    "last_verified_head_sha": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
+    "last_verified_head_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "69 reader books unchanged; existing sensor reader gains bounded native observations with safe reproducibility package.",
-    "latest_verified_content_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
+    "scope": "69 reader books unchanged; existing normal-transform note becomes easier to read and find from the matrix book.",
+    "latest_verified_content_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
     "reader_books_total": 69,
     "post_baseline_research_books": 14,
-    "counts_basis": "Original two configurations repeated in same environment; supporting evidence strengthens existing book, no new reader book."
+    "counts_basis": "Editorial/navigation repair of existing knowledge, not a new book, discovery or native test."
   },
-  "next_action": "Continue high-value existing engineering gaps with original sources and reader review; do not extend the fixed sensor result to moving regions or arbitrary velocities.",
+  "next_action": "Check the ECS entity-identity candidate against the current canonical reader/source-note baseline before admitting a draft; keep existing knowledge edits distinct from new research.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T00:45:00Z",
+    "lease_until": "2026-11-02T01:00:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T000741Z-box2d-static-sensor-observation",
+  "last_run_id": "20261102T003852Z-normal-note-reader-entry",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T00:07:41Z",
-  "last_commit_sha": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
+  "last_real_progress_at": "2026-11-02T00:38:52Z",
+  "last_commit_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -122,6 +122,10 @@
     "reconciliation": "At00:22Z master remained e3cfba2cb258fc1b673a606d8103f028cd6c26b5; no commit or ref operation had been invoked and no tree result was available. The expected new queue blob probe returned404.",
     "recovery_scope": "Resume through individually acknowledged smaller unreferenced tree groups and a separately verified large queue blob. Requested yield/wait times are not a proven server-side deadline.",
     "status": "resolved-through-smaller-object-publication-in-containing-commit",
-    "resolution": "Large queue/catalog blobs separately acknowledged and read back; supporting files assembled through individually acknowledged smaller trees. Final reader and publication state are added together. This is recovery of the publication, not proof that requested waits impose a reliable service deadline."
+    "resolution": "Large queue/catalog blobs separately acknowledged and read back; supporting files assembled through individually acknowledged smaller trees. Final reader and publication state are added together. This is recovery of the publication, not proof that requested waits impose a reliable service deadline.",
+    "final_verified_commit": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
+    "final_verified_tree": "103ee691150c2514332acaf1e5225c600f58a453",
+    "key_readbacks": 8,
+    "all_blobs_matched": 828
   }
 }

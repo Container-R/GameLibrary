@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T00:45:00Z",
+      "lease_until": "2026-11-02T01:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T00:07:41Z",
-      "next_action": "Continue high-value existing engineering gaps with original sources and reader review; do not extend the fixed sensor result to moving regions or arbitrary velocities.",
+      "last_progress_at": "2026-11-02T00:38:52Z",
+      "next_action": "Check the ECS entity-identity candidate against the current canonical reader/source-note baseline before admitting a draft; keep existing knowledge edits distinct from new research.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6471,6 +6471,34 @@
       "next_action": "Retain fixed input and source scope; event cache is not endpoint geometry. No further scenarios executed.",
       "blockers": [],
       "verification_method": "Three actual builds (first retained diagnostic-policy failure), two native processes using the same two configurations; independent new-copy build/run and full reader review; no cross-machine or universal CCD claim."
+    },
+    {
+      "id": "TASK-2026-0175",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can matrix readers find and understand the already-existing nonuniform normal/tangent transform example without duplicating the mathematics?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 75,
+      "priority_rationale": "Actual reverse-entry gap and machine-like note framing found during duplicate-source gate; repair existing knowledge instead of creating another book.",
+      "expected_artifact": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+      "artifact_paths": [
+        "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+        "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+        "管理档案/审查/法线说明-既有内容编辑与导航审查.md"
+      ],
+      "acceptance": [
+        "Read current matrix body and existing note before claiming a gap",
+        "Preserve the exact old example, fixed sources and exclusions",
+        "Make normal/tangent purpose understandable before formulas",
+        "Independently follow actual root-to-book-to-note and return route"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T00:38:52Z",
+      "next_action": "Existing content is now reachable from matrix reader; no new theorem, model or rendered result claimed.",
+      "blockers": [],
+      "verification_method": "Independent full-reader and exact paper-math/source review; no new execution."
     }
   ],
   "execution_policy": {
