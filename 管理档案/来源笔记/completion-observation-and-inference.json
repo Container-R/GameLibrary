@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+  "reader_sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+  "prior_reader_sha256": "096770e6cde24c6fe9525a124c3a75141eb2d657ec612c5e654888acf5e2a3cd",
+  "support_path": "管理档案/支持资料/十次都过关，为什么还不能说以后一定过关.md",
+  "support_sha256": "f6de50e5940127653f7fec624a875e32504909d277e442a73e186dbda9a9aef2",
+  "review_path": "管理档案/审查/完成比例与未来判断-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+      "read_scope": "Complete visible text; PMF and parameter estimation, no plots"
+    },
+    {
+      "url": "https://csrc.nist.gov/glossary/term/Binomial_Distribution",
+      "read_scope": "Definition and source context; not linked SP800-22 standard"
+    },
+    {
+      "url": "https://itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "read_scope": "Complete visible text; method conditions, no interval computation"
+    }
+  ],
+  "verification": "Source reading and independently repeated scalar arithmetic only.",
+  "limits": "Declared fixed-n independent common-p binary toy model; no claim of player representativeness, causal effect, future guarantee or statistical release criterion."
+}

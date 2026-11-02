@@ -770,6 +770,13 @@
         "reader_review": "管理档案/审查/完成率构成权重-来源与读者审查.md",
         "source": "E. H. Simpson 1951, sections8–11; original strict-reversal example distinct from paper tables.",
         "execution": "Independent ideal arithmetic and source reading only; no statistical model or player data."
+      },
+      "reader_sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+      "observation_inference_support": {
+        "source_record": "管理档案/来源笔记/completion-observation-and-inference.json",
+        "review": "管理档案/审查/完成比例与未来判断-来源与读者审查.md",
+        "support": "管理档案/支持资料/十次都过关，为什么还不能说以后一定过关.md",
+        "scope": "Declared toy-model conditional probabilities; not player inference or a confidence procedure."
       }
     },
     {
@@ -2154,7 +2161,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "01d0120b7cee6038d5cb91860808837da8d04969",
+  "publication_base_sha": "b32ad1781de58a99f1185bd5825faab156540191",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,
