@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+  "reader_sha256": "65a36ae5de1f78cbeb251cd97786dfad0289eff2ffe15d103ae78983650014dd",
+  "prior_reader_sha256": "3f890d218e11dd33a34867ff083aff3d96f342abf9a301968bd4ee3dc7a87a3e",
+  "support_path": "管理档案/支持资料/每帧都做Lerp，为什么换个帧率追随速度就变了.md",
+  "support_sha256": "75bcf3c7ede3065f92951f719accbaa7b31517f284c2c2ec15b030594d2e7061",
+  "review_path": "管理档案/审查/按时间追随插值-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://www.rorydriscoll.com/2016/03/07/frame-rate-independent-damping-using-lerp/",
+      "author": "Rory Driscoll",
+      "published": "2016-03-07",
+      "read_scope": "Complete readable author prose and code through Summary; formula images and graphs not inspected; comments not used."
+    },
+    {
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/mathf/lerp",
+      "version": "6000.0",
+      "read_scope": "Definition, parameters, returns and remarks; weight clamped to [0,1]."
+    }
+  ],
+  "verification": "Original-source reading, independent complete-reader and mathematical review; paper examples, no runtime.",
+  "scope": "Recursive first-order following differs from interpolation between completed simulation states and from second-order inertialization. Fixed-target subdivision identity does not promise matching sampled moving-target trajectories or bitwise floating-point equality.",
+  "copyright": "Narrow paraphrase and independently constructed examples; no full source or article reproduction."
+}
