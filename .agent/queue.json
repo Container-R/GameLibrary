@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T03:30:00Z",
+      "lease_until": "2026-11-02T03:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T02:52:37Z",
-      "next_action": "Review and test a fail-closed count-consistency checker against current canonical readers, inventory and state; preserve the frozen 55-item baseline and historical run counts.",
+      "last_progress_at": "2026-11-02T03:08:05Z",
+      "next_action": "Review a new EnTT v3 protocol with explicit HOME/XDG/TMPDIR preparation and validation; preserve v2 evidence and separately count any later execution. Add narrowly scoped notices to other reviewed recent runner support pages without changing frozen code or historical outputs.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6852,9 +6852,41 @@
       "lease_until": null,
       "attempts": 1,
       "last_progress_at": "2026-11-02T02:52:37Z",
-      "next_action": "Use the observed distinction in integration checks; do not treat non-null mapping as current validity, business authority or automatic component-reference repair.",
+      "next_action": "Preserve v2 limitation; independently review new environment-preparation protocol and identities before any separately counted repeat.",
       "blockers": [],
-      "verification_method": "Fixed EnTT 3.13.2 native fixture: two builds and two calls within one runner, same condition and environment; independent result review and synthetic checker/mock tests. No cross-machine or independent-operator native repeat."
+      "verification_method": "Fixed EnTT 3.13.2 native fixture: two builds and two calls within one runner, same condition and environment; independent result review and synthetic checker/mock tests. No cross-machine or independent-operator native repeat.",
+      "workflow_limitation": "Published v2 omitted HOME and three XDG directories required by the then-current runner standard; only TMPDIR prepared. Observations remain factual, but v2 is not compliant with that preparation requirement. Frozen inputs/outputs unchanged."
+    },
+    {
+      "id": "TASK-2026-0188",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can current reader inventory and redundant counts fail closed when their values drift?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 90,
+      "priority_rationale": "Close a concrete supervisor finding with actual full path-set and count checks, not another count-only status update.",
+      "expected_artifact": "管理档案/工具/library/check_reader_counts.py",
+      "artifact_paths": [
+        "管理档案/工具/library/check_reader_counts.py",
+        "管理档案/工具/library/test_reader_counts.py",
+        "管理档案/工具/library/test_reader_counts_independent.py",
+        "管理档案/审查/当前书目计数-独立回归审查.md"
+      ],
+      "acceptance": [
+        "Exact current canonical/actual body path-set equality, duplicate and empty rejection",
+        "Explicit caller-supplied frozen baseline rather than metadata-derived authority",
+        "Strict nine current count fields and fail-closed missing inputs/types",
+        "14 author methods and 8 independently written challenge methods in normal and optimized Python",
+        "Retain separate frozen-ID/title/shelf checks and historical counts",
+        "Read-only tool with no auto-correction mode"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T03:08:05Z",
+      "next_action": "Run alongside frozen-ID and route checks when current reader inventory or count metadata changes; equal current sets cannot certify unchanged historical identities.",
+      "blockers": [],
+      "verification_method": "Pure Python temporary fixtures and mocks; same 14 author plus 8 independent methods in normal/-O. Current exact path scan gives71/frozen55/post16. No native, source-quality or reader-comprehension certification."
     }
   ],
   "execution_policy": {

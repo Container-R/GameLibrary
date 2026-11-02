@@ -4,6 +4,8 @@
 
 固定 EnTT v3.13.2 的同一流程，在同一环境下用两个新副本各构建、执行一次。两份输出相同。这是同一操作者的一次 runner 调用内的重复，不是另一操作者独立执行，也不是跨机器验证。本页为既有记录的公开整理，没有重跑。
 
+> **执行准备限定：** 发表后核对发现，冻结 v2 没有落实当时规范要求的 HOME 与三个 XDG 目录准备。原始观察保留，但不能据此声称流程符合该规范。见[具体缺口与后续处理](WORKFLOW-LIMITATION.md)。
+
 ## 实际做了什么
 
 来源注册表只创建一个实体。目标注册表先创建另一个实体，使目标不是空的，再创建连续加载器。夹具用 EnTT 自己的 snapshot writer 生成内存归档，由同一个 loader 读取；随后外部逻辑销毁映射到的本地实体，最后从头重读相同归档。
@@ -43,7 +45,7 @@
 
 为避免重复分发约3.1MB的第三方单头，本目录不包含 EnTT 源文件。希望复现的开发者须先按 [UPSTREAM-SOURCE.json](UPSTREAM-SOURCE.json) 从官方固定提交取得 `single_include/entt/entt.hpp` 和 `LICENSE`，分别放到此目录的 `source/entt.hpp`、`source/LICENSE`，并核对大小与摘要。固定来源是 [EnTT v3.13.2 提交](https://github.com/skypjack/entt/tree/78213075654a688e9da6bc49f7f873d25c26d12c)，[上游许可证](https://github.com/skypjack/entt/blob/78213075654a688e9da6bc49f7f873d25c26d12c/LICENSE)仍适用。没有自动下载器、安装步骤或第三方字体/游戏数据。
 
-还需要可用的 Python 3、C++17 编译器和标准库。runner 使用固定 `c++` 命令、POSIX 进程组及文件操作；不承诺 Windows 等其他运行环境直接可用。源码准备齐全、核对冻结输入后，从本目录运行：
+还需要可用的 Python 3、C++17 编译器和标准库。runner 使用固定 `c++` 命令、POSIX 进程组及文件操作；不承诺 Windows 等其他运行环境直接可用。以下命令描述旧 v2 的复现条件，不是已满足上述目录准备规范的新实验推荐入口。源码准备齐全、核对冻结输入后，可从本目录复查旧流程：
 
 ```text
 python3 -B runner.py fresh-observation
