@@ -1,0 +1,19 @@
+{
+  "run_id": "20261102T010205Z-shared-specialist-capacity",
+  "observed_at": "2026-11-02T01:02:05Z",
+  "parent_verified_head": "d2e707d61413404a71a22d638bab8e831994bc88",
+  "task": "TASK-2026-0178",
+  "outcome": "Limited resource-availability explanation accepted in existing producer reader in containing commit.",
+  "reader_path": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+  "reader_sha256": "0c47ef23aea1fa1c729ca48feb3881808a879bf2560a40259a28c0f1c032a487",
+  "review_path": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
+  "original_source": "GAO-16-89G December2015 printed57–60 and86–87, text only; no figure analysis or full240page review claimed.",
+  "example_scope": "Two ready tasks, one sole specialist fully available for each of next5workdays, effort2+3, no other demand/wait/switch/absence; no claim for whole delivery or all schedules.",
+  "new_runtime_experiments": 0,
+  "reader_books_total": 70,
+  "prior_publication_readback": {
+    "commit": "d2e707d61413404a71a22d638bab8e831994bc88",
+    "all_blobs_matched": 836,
+    "key_files_exact": 4
+  }
+}

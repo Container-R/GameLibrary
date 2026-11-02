@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T01:30:00Z",
+      "lease_until": "2026-11-02T01:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T00:54:44Z",
-      "next_action": "Check the current producer reader and original scheduling sources for a concrete dependency-versus-shared-specialist gap; admit an integration only if existing coverage does not already answer it.",
+      "last_progress_at": "2026-11-02T01:02:05Z",
+      "next_action": "Review a proposed equal-scale vector illustration of the existing normal-transform example; accept only if it improves human understanding without changing evidence scope.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6554,6 +6554,34 @@
       "next_action": "Retain corresponding modules and authorized diagnostic symbols with candidate records; no debugger, symbol-server or dump-parser implementation supplied.",
       "blockers": [],
       "verification_method": "Original hypothetical K/3 versus K/4 example and independent primary-documentation/full-reader review. No build, dump, symbol or debugger execution."
+    },
+    {
+      "id": "TASK-2026-0178",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can two logically independent integration tasks still require five rather than three workdays when they share one specialist?",
+      "discipline": "PROD",
+      "status": "published",
+      "priority": 75,
+      "priority_rationale": "Makes existing staff-bottleneck advice concrete without adding a scheduling tutorial or a new book.",
+      "expected_artifact": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+      "artifact_paths": [
+        "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+        "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md"
+      ],
+      "acceptance": [
+        "Read current production reader and support before identifying limited gap",
+        "Read original GAO16-89G resource leveling and resource critical-path sections",
+        "Independently check full-availability lower-bound plus feasible arrangement assumptions",
+        "Separate resource order from hard dependency and two-task completion from game delivery",
+        "Complete full reader and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:02:05Z",
+      "next_action": "Use real task inputs and personnel availability before discussing sequence or scope; the2+3paper example is not a project estimate.",
+      "blockers": [],
+      "verification_method": "Original conditional capacity arithmetic with primary-source and independent reader review. No scheduling simulation or real project operation."
     }
   ],
   "execution_policy": {
