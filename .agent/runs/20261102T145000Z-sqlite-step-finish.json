@@ -1,0 +1,18 @@
+{
+  "run_id": "20261102T145000Z-sqlite-step-finish",
+  "observed_at": "2026-11-02T14:52:24Z",
+  "parent_verified_head": "a13e863c2253acf5bfde3a52751c62dd8f039032",
+  "task": "TASK-2026-0204",
+  "outcome": "Existing SQLite reader explains why C backup cleanup success is not copying completion.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+  "reader_sha256": "92546850c140c9eed57decef3442c359c8fbf7bad06c3a996f20a63b483b2939",
+  "source_note": "管理档案/来源笔记/sqlite-backup-step-and-finish.json",
+  "review": "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
+  "verification_scope": "Official API and how-to reading, independent full reader review and hypothetical sequences only; no new database execution.",
+  "reader_inventory": {
+    "current": 79,
+    "frozen": 55,
+    "post_baseline": 24
+  },
+  "publication": "Accepted reader supplement and public maintenance records belong to the same containing commit."
+}

@@ -34,6 +34,23 @@ SQLite 官方把 WAL 视为数据库持久状态的一部分，警告将它与�
 
 如果一个存档还引用数据库外的截图、地图块文件或另一个数据库，本次备份也不自动把它们纳入同一个一致时刻。应先确定恢复需要哪些内容及其对应关系，再设计协调方式；不能把单库接口的成功扩大为整套存档包的成功。
 
+## 如果自己分步调用 C 接口，收尾成功不等于备份完成
+
+前面使用的是 Python 的整次 `Connection.backup`。若接入程序改为自己调用 SQLite 的 C 备份接口，就要分清两个结果：`sqlite3_backup_step` 返回 `SQLITE_OK` 表示这一步成功，但仍有页面待复制；返回 `SQLITE_DONE` 才表示复制完成。`sqlite3_backup_finish` 负责收尾，不能从名字或它返回的 OK 推断已经备份完。[4]
+
+下面是两条**假设调用序列，不是运行记录**。都假定初始化成功、源内容不变、第一次分步复制后仍有剩余页面，且各次调用没有错误：
+
+| 接入选择 | 假设序列 | 可以怎样解释 |
+|---|---|---|
+| 玩家取消，放弃候选 | step 返回 OK → finish 返回 OK | 收尾成功，不是完整新备份 |
+| 继续直到完成 | step 返回 OK → 后续 step 最终返回 DONE → finish 返回 OK | 已完成复制并正常收尾，随后再检查业务内容 |
+
+第一行并不矛盾：如果尚未得到 DONE 就调用 finish，目标上仍活动的写事务会回滚；即使复制没有完成，finish 仍可返回 OK。[4] 因此，不能把取消后的这个 OK 显示为“新备份已保存”，也不能仅据它替换此前可用备份。若只是暂时停下来、还想继续同一次备份，就不同于调用 finish 放弃：finish 之后原备份对象已经失效，不能再拿它继续 step。
+
+进度条也不能代替完成判断。剩余页数与总页数反映最近一次 step 更新的记录，不是持续实时查询；源变化后可能暂时过时。[2][4] 从成功初始化到对应 finish 之间，不能把目标连接传给其他 SQLite API，包括为确认内容而执行 SQL；即使 step 已返回 DONE，也应先完成 finish。[4] 完成并收尾后，再按下一节的方法独立读回候选目标，核对本次进度。
+
+这里没有提供可直接投产的重试或取消循环。接入者仍需处理错误；正常完成路径要同时保留已经得到 DONE、正常收尾与业务读回的依据。这是 C 接口文档支持的区别，不是后文 Python 有限观察测得的取消行为，也不增加断电或并发恢复保证。
+
 ## 怎样确认备份里确实有这次进度
 
 回到数量 7 的例子，检查对象应当是**独立打开的备份目标**，不是仍然打开的源连接。程序可以先完成候选备份并结束目标写入，再通过新的连接读回目标中的道具记录，确认 `id=1` 对应数量 7；若本次保存还承诺某个任务状态或存档版本，也要对照相应预期。
@@ -67,5 +84,7 @@ SQLite 官方把 WAL 视为数据库持久状态的一部分，警告将它与�
 [2] SQLite，[SQLite Backup API](https://sqlite.org/backup.html)，§1 Using the SQLite Online Backup API、§3.1 File and Database Connection Locking。用于区别数据库备份与文件复制，并保留并发修改和完成条件的限制。
 
 [3] Python，[sqlite3.Connection.backup](https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup)，参数说明与数据库间备份示例。这里只使用该绑定的含义，没有把文档示例视为本库执行记录。
+
+[4] SQLite，[Online Backup API](https://www.sqlite.org/c3ref/backup_finish.html)，sqlite3_backup_step、sqlite3_backup_finish、remaining/pagecount 与 Concurrent Usage of Database Handles。2026-11-02 阅读的滚动 C API 文档；用于新增分步完成与收尾区别，不是原有 Python 观察的新增执行结果。
 
 [返回本书架](README.md)

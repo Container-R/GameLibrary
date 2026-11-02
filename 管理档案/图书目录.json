@@ -1874,11 +1874,18 @@
       "origin": "source-grounded-sqlite-wal-backup-comparison",
       "scope_note": "单连接稳定源的一表一行比较；不证明并发、断电或完整游戏恢复",
       "review_paths": [
-        "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md"
+        "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md",
+        "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
-      "reader_sha256": "78607c987a3ea0e7b7de000b2932785e1968dbae79058def8c52d19f0c41a7b9",
-      "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md"
+      "reader_sha256": "92546850c140c9eed57decef3442c359c8fbf7bad06c3a996f20a63b483b2939",
+      "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md",
+      "c_backup_completion_increment": {
+        "scope": "Source-only C step/finish distinction and hypothetical cancellation versus completion; no new execution.",
+        "source_note": "管理档案/来源笔记/sqlite-backup-step-and-finish.json",
+        "reader_review": "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
+        "reader_sha256": "92546850c140c9eed57decef3442c359c8fbf7bad06c3a996f20a63b483b2939"
+      }
     },
     {
       "internal_id": "SOL-PLATFORM-002",
@@ -1925,7 +1932,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "95d86ebbb98b2519714884b9cdef273cfb2fd0d1",
+  "publication_base_sha": "a13e863c2253acf5bfde3a52751c62dd8f039032",
   "accounted_for_original_items": 55,
   "reader_books_total": 79,
   "post_baseline_research_books": 24,
