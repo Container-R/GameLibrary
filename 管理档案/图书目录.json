@@ -157,10 +157,13 @@
         "scope": "subject/buildDefinition/runDetails/invocationId、依赖完整性与验证信任边界；原旧段固定Git历史保留。"
       },
       "latest_increment": {
-        "scope": "Two associations for a Windows native crash: actual module, then corresponding Guid/Age symbols. Matching is not complete information or root-cause proof.",
-        "reader_sha256": "202918041ea1889fdf4c85c05efcb4e29d6719ceee5098c8209700fcd18900a5",
-        "reader_review": "管理档案/审查/构建候选与调试符号-增补审读.md",
-        "execution": "None; original hypothetical candidate continuation and primary documentation analysis."
+        "scope": "Distinguish effective keyword request, build retention and strict matching through the existing hypothetical weapon.",
+        "reader_sha256": "67000965fe63eca44cc53aebf23ad7dbe7a1aee0e03fb91ca60bcc49423034c1",
+        "previous_reader_sha256": "202918041ea1889fdf4c85c05efcb4e29d6719ceee5098c8209700fcd18900a5",
+        "reader_review": "管理档案/审查/构建着色器变体-请求保留与诊断审读.md",
+        "source_record": "管理档案/来源笔记/shader-variant-request-retention-matching.json",
+        "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
+        "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       }
     },
     {
@@ -1451,11 +1454,10 @@
         "管理档案/审查/触发区域穿越-来源与读者审查.md"
       ],
       "latest_increment": {
-        "scope": "Fixed3.2.0 static-sensor continuous crossing step events and visitor-event-off control; two native runs of the same two configurations.",
+        "scope": "Fixed-version static-sensor crossing and event-setting limits; detailed observations and limitations are in linked support.",
         "reader_review": "管理档案/审查/传感区穿越-原生与读者审查.md",
         "support_path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
-        "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a",
-        "support_sha256": "9018622146c0a392c8d12c7060f5a95af4415bfe45646c85bee789657580c740"
+        "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a"
       }
     },
     {
@@ -1560,37 +1562,10 @@
         "reader_sha256": "45f61d0708bbe49825aef467ec44a27ab4af9efdb59e63b4ee5003956979544d",
         "reader_review": "管理档案/审查/EnTT组件字段观察-公开与读者审查.md",
         "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md",
-        "source_revision": "skypjack/entt v3.13.2 78213075654a688e9da6bc49f7f873d25c26d12c",
-        "execution": "No-component lifecycle: v2 two calls plus v3 two calls. Separate plain-Link condition: two new builds/two native calls. Two conditions total, not six scenarios; same operator/environment with independent result reviews, no independent native rerun.",
         "excluded": "No explicit member-remapping callback, arbitrary reference graph, snapshot_loader restoration, version wrap, networking or game-business validation.",
-        "workflow_limitation": "v2 did not prepare HOME and three XDG locations required by the existing standard; observations retained without a whole-workflow compliance claim.",
         "workflow_limitation_path": "管理档案/支持资料/EnTT映射存在与当前有效性/WORKFLOW-LIMITATION.md",
-        "environment_revision": {
-          "version": "v3",
-          "support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/v3/README.md",
-          "input_manifest_sha256": "a2d2d8ac37ca11278e737434549c90ee86f5d94047d8ce2f94ea036f28665b20",
-          "new_builds": 2,
-          "new_native_invocations": 2,
-          "condition_count": 1,
-          "independent_native_reexecution": false,
-          "v2_inputs_outputs_unchanged": true,
-          "limitation": "Five-location preparation/validation is not a sandbox or proof of all descendant writes."
-        },
-        "initial_v2_reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d",
-        "pre_component_reader_sha256": "17c688e848565f51d16dd5b898d1910d20c2884497de8eb5cee3bdd7044ea1d4",
         "mapping_lifecycle_support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/README.md",
-        "lifecycle_execution": "v2: two builds/two native calls with the retained environment-preparation omission. v3: separately two builds/two native calls after five-location preparation review. Four calls total, one condition; same operator/environment, independent result review only.",
-        "component_observation": {
-          "builds": 2,
-          "native_invocations": 2,
-          "conditions": 1,
-          "ordinary_link_only": true,
-          "explicit_conversion_callback_executed": false,
-          "business_action_executed": false,
-          "native_stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6",
-          "input_manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
-          "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md"
-        }
+        "verification_method": "Finite observations are described in the linked support and review, with historical limitations preserved; catalog is not an execution receipt."
       }
     },
     {
@@ -1640,5 +1615,10 @@
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
   "reader_books_total": 72,
-  "post_baseline_research_books": 17
+  "post_baseline_research_books": 17,
+  "record_transformation": {
+    "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
+    "date": "2026-11-02",
+    "history_rewritten": false
+  }
 }

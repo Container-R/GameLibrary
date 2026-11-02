@@ -1,0 +1,28 @@
+{
+  "run_id": "20261102T045700Z-shader-request-retention",
+  "observed_at": "2026-11-02T04:57:00Z",
+  "parent_verified_head": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
+  "task": "TASK-2026-0193",
+  "outcome": "Existing build reader separates keyword request, variant retention and runtime exact-match diagnosis through a short hypothetical weapon continuation.",
+  "reader_path": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "reader_sha256": "67000965fe63eca44cc53aebf23ad7dbe7a1aee0e03fb91ca60bcc49423034c1",
+  "source_record": "管理档案/来源笔记/shader-variant-request-retention-matching.json",
+  "review": "管理档案/审查/构建着色器变体-请求保留与诊断审读.md",
+  "reader_inventory": {
+    "current": 72,
+    "frozen": 55,
+    "post_baseline": 17
+  },
+  "supervision_archived": {
+    "path": ".agent/audits/20261102T045000Z-reader.md",
+    "snapshot": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
+    "independent_runtime_rerun": false
+  },
+  "publication": "The accepted reader and metadata are submitted as one tree; the containing commit identifies publication after ref verification.",
+  "catalog_minimization": {
+    "scope": "Catalog and current state omit detailed prior run fields; reader/support content and source evidence unchanged.",
+    "technical_records_modified": false,
+    "history_rewritten": false
+  },
+  "verification_scope": "Official source analysis and independent full reader review; no Unity execution."
+}

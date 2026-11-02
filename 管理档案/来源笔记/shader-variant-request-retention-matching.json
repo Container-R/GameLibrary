@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "topic": "Runtime shader keyword request, build retention and strict matching",
+  "read_date": "2026-11-02",
+  "version_scope": "Unity 6000.0 versioned but mutable official English documentation; redirects to matching docs.unity.com version paths observed. Not a fixed source commit or installed patch identity.",
+  "sources": [
+    {
+      "title": "How Unity compiles branching shaders",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-conditionals-choose-a-type.html",
+      "used_for": "Material-use selection and shader_feature versus multi_compile; declaration does not establish final retention."
+    },
+    {
+      "title": "Toggle shader keywords in a script",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-keywords-scripts.html",
+      "used_for": "Material versus global Shader keyword operations and _local scope."
+    },
+    {
+      "title": "Shader loading",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-loading.html",
+      "used_for": "Missing exact variants can use a similar available variant; strict matching avoids that approximation."
+    },
+    {
+      "title": "Strip shader variants",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/shader-variant-stripping.html",
+      "used_for": "Stripping can depend on settings, platform and callback stages; no universal retention proof."
+    },
+    {
+      "title": "PlayerSettings.strictShaderVariantMatching",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/PlayerSettings-strictShaderVariantMatching.html",
+      "used_for": "Strict matching diagnoses an unsatisfied actual keyword combination; not artistic intent or a retention repair."
+    },
+    {
+      "title": "IPreprocessShaders.OnProcessShader",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Build.IPreprocessShaders.OnProcessShader.html",
+      "used_for": "Both full official examples remove variants declared with multi_compile or multi_compile_local; examples were read, not executed."
+    }
+  ],
+  "method": "Original documentation text and complete code examples read; compare current build, Addressables, technical-art and matrix readers before limited integration.",
+  "original_example": "A hypothetical weapon FROST appearance; no shader created or Player build executed.",
+  "limits": [
+    "No Unity runtime or build validation",
+    "No claim that all shader_feature combinations are stripped",
+    "No claim that multi_compile prevents subsequent stripping",
+    "No full SRP-specific inclusion precedence audit",
+    "No prediction of selected approximate variant or GPU timing",
+    "No identification with the earlier NDC historical project"
+  ]
+}

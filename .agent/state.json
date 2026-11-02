@@ -1,5 +1,10 @@
 {
   "schema_version": 2,
+  "project": "Container-R/GameLibrary",
+  "current_phase": "reader-first-source-research",
+  "active_task_ids": [
+    "TASK-2026-0008"
+  ],
   "reader_baseline": {
     "normal_backlog_paused": false,
     "whole_library_rebuild_complete": true,
@@ -12,34 +17,6 @@
     "physical_root_consolidation_complete": true,
     "reader_books_total": 72
   },
-  "publication": {
-    "last_verified_head_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
-    "status": "accepted-content-recorded-in-containing-commit",
-    "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "New narrow automated-testing method reader distinguishes goal arrival, actual traversal and rules; existing QA/navigation readers receive links only.",
-    "latest_verified_content_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
-    "reader_books_total": 72,
-    "post_baseline_research_books": 17,
-    "counts_basis": "72 current readers, 55 frozen remediations and17 later additions. All redundant count fields checked against the actual current reader path set; not quality approval."
-  },
-  "next_action": "Review existing production and testing coverage for a concrete source-backed integration gap; do not turn additional case summaries into an unbounded QA role article.",
-  "audit": {
-    "overall_reader_rebuild_status": "accepted-scoped",
-    "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
-    "current_health": "active",
-    "scope": "Frozen inventory and reader navigation acceptance; not all historical experiments or all technical claims independently rerun.",
-    "latest_review_path": ".agent/audits/20261102T025000Z-reader.md",
-    "latest_review_observed_at": "2026-11-02T02:49:00Z",
-    "latest_review_status": "healthy-at-observation-with-count-correction",
-    "latest_review_scope": "Independent full repeated-dialogue reader route and fixed ink sources at 75b0efc; local EnTT report scope read, not native rerun or remote publication. Derived count correction requested and integrated in the containing content commit.",
-    "latest_review_observation_window": "2026-11-02T02:46Z through 02:49Z"
-  },
-  "evidence_policy": "Distinguish source analysis, paper calculations, historical observations and new runtime evidence; publish no private execution metadata",
-  "project": "Container-R/GameLibrary",
-  "current_phase": "reader-first-source-research",
-  "active_task_ids": [
-    "TASK-2026-0008"
-  ],
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "reader_inventory": "管理档案/图书目录.json",
@@ -56,100 +33,27 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "lease": {
-    "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T05:20:00Z",
-    "scope": "Single writer for reader-first source research and safe maintenance"
-  },
-  "last_run_id": "20261102T044402Z-testing-agent-verdict",
+  "last_run_id": "20261102T045700Z-shader-request-retention",
+  "last_real_progress_at": "2026-11-02T04:57:00Z",
+  "last_commit_sha": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
   "blockers": [],
-  "compatibility": {
-    "state_schema_changed": true,
-    "legacy_recovery_field_readers": "Known local tools retain progress and queue fields; unknown external consumers are not certified",
-    "local_script_readers_inspected": [
-      "skill/scripts/watchdog.py",
-      "skill/scripts/validate_library.py",
-      "管理档案/工具/queue/validate_queue.py"
-    ],
-    "retained_watchdog_fields": [
-      "last_real_progress_at",
-      "queue.tasks.status",
-      "queue.tasks.owner",
-      "queue.tasks.lease_until",
-      "queue.tasks.last_progress_at",
-      "queue.tasks.next_action"
-    ]
+  "publication": {
+    "last_verified_head_sha": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
+    "latest_verified_content_sha": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
+    "reader_books_total": 72,
+    "post_baseline_research_books": 17,
+    "scope": "Existing build-engineering reader gains a limited shader request/retention/diagnosis section; no new book.",
+    "status": "Reader supplement accepted; publication identified by the containing commit after branch update."
   },
-  "last_real_progress_at": "2026-11-02T04:44:02Z",
-  "last_commit_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
+  "next_action": "Continue source-grounded reader work using .agent/queue.json and 管理档案/图书目录.json; preserve the distinctions between source analysis and actual execution.",
+  "audit": {
+    "latest_review_path": ".agent/audits/20261102T045000Z-reader.md",
+    "snapshot_sha": "59f3ceb52d765e72bc8e79eacb5acf6bb5101cc0",
+    "status": "healthy-at-observation",
+    "scope": "Independent QA reader route, original source and public observation limitations; no native rerun."
+  },
   "record_transformation": {
-    "kind": "public-safe project summary",
-    "removed_categories": [
-      "private execution environment details",
-      "operational recovery internals"
-    ],
-    "history_rewritten": false,
-    "historical_records_sanitized": "Eleven selected run summaries, selected source explanations and one supervisory record explicitly transformed. Original execution archives remain in fixed Git history, not duplicated into the current reader tree; this is not historical erasure.",
-    "technical_claims_changed_in_this_revision": false
-  },
-  "root_consolidation": {
-    "status": "published-and-reader-review-accepted",
-    "basis_commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
-    "current_layout_intent": [
-      "README.md",
-      "GameLibrary",
-      "管理档案",
-      "necessary hidden project files"
-    ],
-    "history_rewritten": false,
-    "old_experiments_executed": false,
-    "verified_commit": "0702cce22b393a038e9d500788b5d022ae39fba5",
-    "verified_tree": "536833c7406af95ead3ec54029a3028c4091274d"
-  },
-  "research_limits": {
-    "TASK-2026-0133": "Bounded official-source revisit still lacked technical content. No mechanism article admitted; other existing research proceeds."
-  },
-  "operational_recovery": {
-    "interval": "2026-11-01T22:39Z through 22:55Z",
-    "issue": "An awaited preparation/read wrapper stopped returning; no research progress claimed during this interval.",
-    "reconciliation": "Sequential checkpoint inspection showed tree creation was not reached; no commit or ref operation was invoked. Fresh read-only HEAD verification at 22:56Z confirmed unchanged 36a16f326556207746ca51a6a16caccd7c3ff39d.",
-    "next_step": "Separate bounded local payload loading from each remote request; publish accepted content only after full tree verification.",
-    "resolution": "At 23:00Z accepted Detour content published as 7098ce36dc049fa15d335752b5e6a317b4be6bae. All 792 tree blobs matched the expected baseline plus delta; reader, support README and state read back exactly. No uncertain mutation remains."
-  },
-  "publication_transport_incident": {
-    "interval": "2026-11-02T00:08Z through 00:22Z",
-    "issue": "A single create_tree request yielded, but its subsequent wait did not return within the requested wait interval. No research progress claimed during this blocked period.",
-    "reconciliation": "At00:22Z master remained e3cfba2cb258fc1b673a606d8103f028cd6c26b5; no commit or ref operation had been invoked and no tree result was available. The expected new queue blob probe returned404.",
-    "recovery_scope": "Resume through individually acknowledged smaller unreferenced tree groups and a separately verified large queue blob. Requested yield/wait times are not a proven server-side deadline.",
-    "status": "resolved-through-smaller-object-publication-in-containing-commit",
-    "resolution": "Large queue/catalog blobs separately acknowledged and read back; supporting files assembled through individually acknowledged smaller trees. Final reader and publication state are added together. This is recovery of the publication, not proof that requested waits impose a reliable service deadline.",
-    "final_verified_commit": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
-    "final_verified_tree": "103ee691150c2514332acaf1e5225c600f58a453",
-    "key_readbacks": 8,
-    "all_blobs_matched": 828
-  },
-  "runner_environment_review": {
-    "scope": "EnTT v2 and specified recent native runners plus one drawing script; not all historical runners.",
-    "finding": "EnTT/Detour missing required keys; Box2D/ENet prepare all five but complete equivalent validation is not established; drawing outer setup evidence insufficient.",
-    "review_path": "管理档案/审查/近期运行器环境准备-限定复核.md",
-    "existing_outputs_rewritten": false,
-    "native_reruns": 2,
-    "next_step": "EnTT v3 and component-reference support are published with explicit environment and independent-review limits; preserve historical notices. No further native rerun is currently queued.",
-    "v3_support": "管理档案/支持资料/EnTT映射存在与当前有效性/v3/README.md"
-  },
-  "current_component_scope": {
-    "task": "TASK-2026-0189",
-    "native_executions": 2,
-    "stage": "published",
-    "review_path": "管理档案/审查/EnTT组件字段观察-公开与读者审查.md",
-    "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md",
-    "verified_publication_sha": "cc5fa423960c2f6f6ee7ba25756b6521159e48b3"
-  },
-  "publication_ref_reconciliation": {
-    "observed_at": "2026-11-02T04:19:02Z",
-    "candidate": "febe33c3d21c3e3edabeb8b43f7072f8dd5b073c",
-    "parent": "cc5fa423960c2f6f6ee7ba25756b6521159e48b3",
-    "status": "published-and-read-back",
-    "scope": "Initial conditional ref update was rejected for possible rollback. Fresh ref, branch, recent commits and candidate parent, plus an independent current-history check, confirmed a direct fast-forward. The original non-force conditional update was retried once and succeeded. Seven changed texts and the final ref were read back; the complete 971-blob tree matched the expected delta. No alternate mutation API or history rewrite."
+    "scope": "Public progress, repository-relative recovery links and commit evidence only. Execution scheduling and transport diagnostics are maintained outside this public state.",
+    "history_rewritten": false
   }
 }
