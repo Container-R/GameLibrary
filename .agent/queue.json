@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T01:15:00Z",
+      "lease_until": "2026-11-02T01:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T00:48:08Z",
-      "next_action": "Select the next existing high-value queue gap only after reading its current reader body and support notes; integrate overlapping knowledge instead of duplicating it.",
+      "last_progress_at": "2026-11-02T00:54:44Z",
+      "next_action": "Check the current producer reader and original scheduling sources for a concrete dependency-versus-shared-specialist gap; admit an integration only if existing coverage does not already answer it.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6526,6 +6526,34 @@
       "next_action": "Apply the explicit restore/import assumptions to the project; no general save format or runtime result supplied.",
       "blockers": [],
       "verification_method": "Fixed primary-source analysis and conditional box example, independently reviewed. No allocation, serialization, native or network execution."
+    },
+    {
+      "id": "TASK-2026-0177",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why is a same-named PDB insufficient to diagnose a crash from a particular delivered candidate?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "Adds a concrete diagnostic artifact association to the existing build-reader handoff, rather than another generic identity book.",
+      "expected_artifact": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+        "管理档案/审查/构建候选与调试符号-增补审读.md"
+      ],
+      "acceptance": [
+        "Read current QA/build reader and relevant support before identifying a gap",
+        "Independently check fixed LLVM8 documentation and Microsoft dump/symbol guidance",
+        "Distinguish crash-to-module from module-to-symbol association",
+        "Keep matching identity separate from diagnostic completeness and cause",
+        "Review complete updated reader and preserve existing prose"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T00:54:44Z",
+      "next_action": "Retain corresponding modules and authorized diagnostic symbols with candidate records; no debugger, symbol-server or dump-parser implementation supplied.",
+      "blockers": [],
+      "verification_method": "Original hypothetical K/3 versus K/4 example and independent primary-documentation/full-reader review. No build, dump, symbol or debugger execution."
     }
   ],
   "execution_policy": {

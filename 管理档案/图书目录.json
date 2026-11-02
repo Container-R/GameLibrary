@@ -145,6 +145,12 @@
       "supporting_material_disposition": {
         "path": "管理档案/支持资料/构建来源字段的保留去向.md",
         "scope": "subject/buildDefinition/runDetails/invocationId、依赖完整性与验证信任边界；原旧段固定Git历史保留。"
+      },
+      "latest_increment": {
+        "scope": "Two associations for a Windows native crash: actual module, then corresponding Guid/Age symbols. Matching is not complete information or root-cause proof.",
+        "reader_sha256": "202918041ea1889fdf4c85c05efcb4e29d6719ceee5098c8209700fcd18900a5",
+        "reader_review": "管理档案/审查/构建候选与调试符号-增补审读.md",
+        "execution": "None; original hypothetical candidate continuation and primary documentation analysis."
       }
     },
     {

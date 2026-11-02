@@ -1,0 +1,24 @@
+{
+  "run_id": "20261102T005444Z-build-symbol-identity",
+  "observed_at": "2026-11-02T00:54:44Z",
+  "parent_verified_head": "414ee429410fa65680ed687e00f366085d0eae97",
+  "task": "TASK-2026-0177",
+  "outcome": "Limited symbol-identity explanation accepted in existing build-engineer reader in containing commit.",
+  "reader_path": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "reader_sha256": "202918041ea1889fdf4c85c05efcb4e29d6719ceee5098c8209700fcd18900a5",
+  "review_path": "管理档案/审查/构建候选与调试符号-增补审读.md",
+  "scope": "Windows native PDB/CodeView association described by fixed LLVM8 docs, with Microsoft dump/version and diagnostic-information limits. Not every debug format or an origin/security certificate.",
+  "native_executions": 0,
+  "reader_books_total": 70,
+  "prior_publication_readback": {
+    "commit": "414ee429410fa65680ed687e00f366085d0eae97",
+    "all_blobs_matched": 833,
+    "key_files_exact": 5
+  },
+  "supervision_archive": {
+    "path": ".agent/audits/20261102T005000Z-reader.md",
+    "snapshot": "a113f11fffffc516330b9634a73f13ca2f21b15e",
+    "observed_window": "2026-11-02T00:45Z through 00:48Z",
+    "scope": "Read-only historical observation, not a new runtime run or current whole-library certification"
+  }
+}
