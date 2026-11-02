@@ -10,29 +10,29 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 70
+    "reader_books_total": 71
   },
   "publication": {
-    "last_verified_head_sha": "f2c60924a43c026d49b9889dd4797459944bf11b",
+    "last_verified_head_sha": "75b0efc59d79dc45eba090af5cbc485751bab39d",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Existing narrative role reader clarifies repeat policy, conditions and visit state using the same guard conversation.",
-    "latest_verified_content_sha": "f2c60924a43c026d49b9889dd4797459944bf11b",
-    "reader_books_total": 70,
-    "post_baseline_research_books": 15,
-    "counts_basis": "71 reader books unchanged; three explanatory paragraphs and fixed-source references added, no story execution."
+    "scope": "Existing entity-handle reader gains a bounded native mapping-lifecycle observation and a reviewed public reproducibility package.",
+    "latest_verified_content_sha": "75b0efc59d79dc45eba090af5cbc485751bab39d",
+    "reader_books_total": 71,
+    "post_baseline_research_books": 16,
+    "counts_basis": "71 distinct canonical readers exactly matched against the remote tree; 55 frozen remediations plus 16 later additions. Native integration adds no book."
   },
-  "next_action": "Assess a bounded native EnTT continuous-loader protocol against existing entity-handle source analysis; do not execute before dependency and independent protocol review.",
+  "next_action": "Review and test a fail-closed count-consistency checker against current canonical readers, inventory and state; preserve the frozen 55-item baseline and historical run counts.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
     "current_health": "active",
     "scope": "Frozen inventory and reader navigation acceptance; not all historical experiments or all technical claims independently rerun.",
-    "latest_review_path": ".agent/audits/20261102T005000Z-reader.md",
-    "latest_review_observed_at": "2026-11-02T00:48:00Z",
-    "latest_review_status": "healthy-at-observation",
-    "latest_review_scope": "Independent full Box2D reader/support route, both public observations, retained first build failure, repeat boundaries and original fixed source checked at a113f11; normal note read but Khronos sources not re-audited.",
-    "latest_review_observation_window": "2026-11-02T00:45Z through 00:48Z"
+    "latest_review_path": ".agent/audits/20261102T025000Z-reader.md",
+    "latest_review_observed_at": "2026-11-02T02:49:00Z",
+    "latest_review_status": "healthy-at-observation-with-count-correction",
+    "latest_review_scope": "Independent full repeated-dialogue reader route and fixed ink sources at 75b0efc; local EnTT report scope read, not native rerun or remote publication. Derived count correction requested and integrated in the containing content commit.",
+    "latest_review_observation_window": "2026-11-02T02:46Z through 02:49Z"
   },
   "evidence_policy": "Distinguish source analysis, paper calculations, historical observations and new runtime evidence; publish no private execution metadata",
   "project": "Container-R/GameLibrary",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T03:00:00Z",
+    "lease_until": "2026-11-02T03:30:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T021558Z-narrative-choice-state",
+  "last_run_id": "20261102T025237Z-entt-loader-native",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T02:15:58Z",
-  "last_commit_sha": "f2c60924a43c026d49b9889dd4797459944bf11b",
+  "last_real_progress_at": "2026-11-02T02:52:37Z",
+  "last_commit_sha": "75b0efc59d79dc45eba090af5cbc485751bab39d",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

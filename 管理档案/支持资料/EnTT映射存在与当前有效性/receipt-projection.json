@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "error": null,
+  "processes": [
+    {
+      "copy": "repeat-1",
+      "phase": "build",
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-g0",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "source",
+        "fixture.cpp",
+        "-o",
+        "out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED"
+    },
+    {
+      "copy": "repeat-1",
+      "phase": "native",
+      "argv": [
+        "./out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "stdout_sha256": "504bdd9c35c4bd06a9c589e14c662206ce87768c316495559b299172aa2b3843",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED"
+    },
+    {
+      "copy": "repeat-2",
+      "phase": "build",
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-g0",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "source",
+        "fixture.cpp",
+        "-o",
+        "out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED"
+    },
+    {
+      "copy": "repeat-2",
+      "phase": "native",
+      "argv": [
+        "./out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "stdout_sha256": "504bdd9c35c4bd06a9c589e14c662206ce87768c316495559b299172aa2b3843",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED"
+    }
+  ],
+  "copies": [
+    {
+      "name": "repeat-1",
+      "before": {
+        "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "after": {
+        "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "content_check": "PASS",
+      "recorded_artifact_before_after_equal": true,
+      "artifact_identity_omitted": true
+    },
+    {
+      "name": "repeat-2",
+      "before": {
+        "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "after": {
+        "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "content_check": "PASS",
+      "recorded_artifact_before_after_equal": true,
+      "artifact_identity_omitted": true
+    }
+  ],
+  "manifest_sha256": "10385e60a4d6a4123d21bf272cd25c315463329ed9e8660e5f8faee044dddcd7",
+  "input_before": {
+    "PROTOCOL-v2.md": "c62d8678facd1b7baf0f68732d2f1e40e9a96cb2b7465082989e3648002ed1c7",
+    "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+    "runner.py": "a6a14a9c4bdcb7a4860791c9e6c1b9e6785f7904467ab3f0d6cc6c2bed3d22d6",
+    "checker.py": "788f72e5e978b90a14047822cd28d023e49c7495d75119cc856525a8cc78d732",
+    "independent-oracle.json": "90169423b365a0a3a553462caff0be05ebb6672de6f58758959b9a5c139497cf",
+    "PROTOCOL-REVIEW.md": "e841790113cc52733679469dff0372d38a84ce758bd6c45b4e25db5b413ce69c",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "test_runner_cleanup.py": "a8688a905875362c3a5243f75c2dfa3c45e777f95fbc793ae0c14af6f6e7e86c"
+  },
+  "input_after": {
+    "PROTOCOL-v2.md": "c62d8678facd1b7baf0f68732d2f1e40e9a96cb2b7465082989e3648002ed1c7",
+    "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+    "runner.py": "a6a14a9c4bdcb7a4860791c9e6c1b9e6785f7904467ab3f0d6cc6c2bed3d22d6",
+    "checker.py": "788f72e5e978b90a14047822cd28d023e49c7495d75119cc856525a8cc78d732",
+    "independent-oracle.json": "90169423b365a0a3a553462caff0be05ebb6672de6f58758959b9a5c139497cf",
+    "PROTOCOL-REVIEW.md": "e841790113cc52733679469dff0372d38a84ce758bd6c45b4e25db5b413ce69c",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "test_runner_cleanup.py": "a8688a905875362c3a5243f75c2dfa3c45e777f95fbc793ae0c14af6f6e7e86c"
+  },
+  "manifest_after_sha256": "10385e60a4d6a4123d21bf272cd25c315463329ed9e8660e5f8faee044dddcd7",
+  "public_derivation": {
+    "kind": "safe_projection_not_new_run",
+    "omitted_fields": [
+      "copies[0].artifact_sha256",
+      "copies[0].artifact_after_sha256",
+      "copies[1].artifact_sha256",
+      "copies[1].artifact_after_sha256"
+    ],
+    "preserved_scope": "one operator runner invocation, same environment, two fresh copies, two builds and two native calls; one four-stage condition repeated",
+    "artifact_equality": "historical comparison retained, omitted identities not independently reauthenticated by this projection",
+    "source_receipt_identity": "Retained locally only; not included in this public projection."
+  }
+}

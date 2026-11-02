@@ -1535,7 +1535,16 @@
       "review_paths": [
         "管理档案/审查/实体句柄保存与映射-来源和读者审查.md"
       ],
-      "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305"
+      "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305",
+      "latest_increment": {
+        "scope": "Observed continuous-loader map presence separately from current target validity through load, external destruction and reload.",
+        "reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d",
+        "reader_review": "管理档案/审查/EnTT映射原生观察-公开与读者审查.md",
+        "support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/README.md",
+        "source_revision": "skypjack/entt v3.13.2 78213075654a688e9da6bc49f7f873d25c26d12c",
+        "execution": "Two builds and two native executions in fresh copies under one runner and environment; independent result review, not an independent operator rerun.",
+        "excluded": "No components, snapshot_loader restoration, version-wrap, network, concurrency or game-business validation."
+      }
     },
     {
       "internal_id": "SOL-PROG-004",
@@ -1565,6 +1574,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 70,
-  "post_baseline_research_books": 15
+  "reader_books_total": 71,
+  "post_baseline_research_books": 16
 }
