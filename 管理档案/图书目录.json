@@ -1639,6 +1639,24 @@
       ],
       "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
       "reader_sha256": "f4ee6dc492a346aec577f99a98dfc0dc41174bad0b574fd872d5b86deeba96fe"
+    },
+    {
+      "internal_id": "SOL-ENGINE-007",
+      "reader_title": "两件物品的 ID 为什么会在网页工具里变成同一个值",
+      "floor": "引擎与工具",
+      "area": "运行时系统",
+      "shelf": "缓存与存档",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/两件物品的 ID 为什么会在网页工具里变成同一个值.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/两件物品的 ID 为什么会在网页工具里变成同一个值.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定原源、独立全文审读与有限同条件原生重复接受；不是库存业务接入认证",
+      "origin": "source-grounded-identity-preservation-method-with-finite-javascript-observation",
+      "scope_note": "可信原值比较与有损解析后稳定往返的区分；不替代权限、世界映射或实际工具链验收",
+      "review_paths": [
+        "管理档案/审查/JSON整数身份-读者与观察审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/json-integer-identity.json",
+      "reader_sha256": "f032ecc28c821000a0e133e938c07cbcde7be556438d78596b8ef36feb06ee54"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1649,10 +1667,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "acf249c8a2e041fe89da1dd9605df64fd2147b83",
+  "publication_base_sha": "3fb108d2f7d8d4e17fb1c07c8c88bf0fee71f5d1",
   "accounted_for_original_items": 55,
-  "reader_books_total": 73,
-  "post_baseline_research_books": 18,
+  "reader_books_total": 74,
+  "post_baseline_research_books": 19,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

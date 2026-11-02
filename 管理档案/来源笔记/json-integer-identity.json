@@ -1,0 +1,31 @@
+{
+  "id": "json-integer-identity",
+  "title": "Preserving persistent integer identifiers across ordinary JavaScript JSON parsing",
+  "accessed_on": "2026-11-02",
+  "verification_method": "Fixed original specifications and independent normative derivation. This source record does not claim runtime execution.",
+  "sources": [
+    {
+      "author": "Ecma International",
+      "title": "ECMA-262, 16th edition",
+      "date": "2025-06",
+      "url": "https://262.ecma-international.org/16.0/",
+      "locator": "Sections 6.1.6.1 and 6.1.6.1.20, 21.1.2.5–6, 21.2.1.1–1.1.1, 25.5.1–1.1 and 25.5.2.2",
+      "read_scope": "Number representation, safe-integer definition and example; ordinary JSON.parse and ParseJSON; BigInt conversion; default JSON property serialization. Not a claim to have read every section of the specification.",
+      "supports": "The two decimal integer texts 9007199254740992 and 9007199254740993 can become the same Number. The first remains exactly representable but is not safe. Conversion from that existing Number cannot recover the lost original distinction. Default serialization of a remaining BigInt throws TypeError after the toJSON/replacer processing steps."
+    },
+    {
+      "author": "Tim Bray, editor; Internet Engineering Task Force",
+      "title": "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format",
+      "date": "2017-12",
+      "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+      "locator": "Sections 6 and 9",
+      "read_scope": "Number grammar, implementation precision limits, interoperable integer interval and parser limitations.",
+      "supports": "JSON syntax does not require every implementation to use binary64. The ordinary JavaScript path is a narrower claim than all JSON implementations."
+    }
+  ],
+  "editorial_application": {
+    "scenario": "A fictional inventory tool sends exact persistent object identifiers through a producer, JSON text, ordinary JavaScript parser and object selection. The numerical collision example itself comes from ECMA-262, not an original discovery.",
+    "decision": "Preserve the identifier representation before the first lossy conversion; compare the received identity against trusted original values, not only against a previously rounded value.",
+    "limits": "No actual game incident, browser application, database, authorization policy or identifier generator is examined. String preservation does not establish identity ownership, uniqueness, permissions or exactly-once processing."
+  }
+}
