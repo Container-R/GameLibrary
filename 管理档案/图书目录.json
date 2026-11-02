@@ -1538,11 +1538,11 @@
       "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305",
       "latest_increment": {
         "scope": "Observed continuous-loader map presence separately from current target validity through load, external destruction and reload.",
-        "reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d",
-        "reader_review": "管理档案/审查/EnTT映射原生观察-公开与读者审查.md",
+        "reader_sha256": "17c688e848565f51d16dd5b898d1910d20c2884497de8eb5cee3bdd7044ea1d4",
+        "reader_review": "管理档案/审查/EnTT环境准备v3-新执行与公开审查.md",
         "support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/README.md",
         "source_revision": "skypjack/entt v3.13.2 78213075654a688e9da6bc49f7f873d25c26d12c",
-        "execution": "Two builds and two native executions in fresh copies under one runner and environment; independent result review, not an independent operator rerun.",
+        "execution": "v2: two builds/two native calls with the retained environment-preparation omission. v3: separately two builds/two native calls after five-location preparation review. Four calls total, one condition; same operator/environment, independent result review only.",
         "excluded": "No components, snapshot_loader restoration, version-wrap, network, concurrency or game-business validation.",
         "workflow_limitation": "v2 did not prepare HOME and three XDG locations required by the existing standard; observations retained without a whole-workflow compliance claim.",
         "workflow_limitation_path": "管理档案/支持资料/EnTT映射存在与当前有效性/WORKFLOW-LIMITATION.md",
@@ -1556,7 +1556,8 @@
           "independent_native_reexecution": false,
           "v2_inputs_outputs_unchanged": true,
           "limitation": "Five-location preparation/validation is not a sandbox or proof of all descendant writes."
-        }
+        },
+        "initial_v2_reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d"
       }
     },
     {

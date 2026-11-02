@@ -1,0 +1,16 @@
+{
+  "origin": "PROTOCOL-REVIEW.md independent literal table, frozen before native execution",
+  "schema": 1,
+  "tokens": [
+    {"kind":"token","index":0,"type":"uint32","value":1},
+    {"kind":"token","index":1,"type":"uint32","value":1},
+    {"kind":"token","index":2,"type":"entity","value":"$source.full"}
+  ],
+  "stages": [
+    {"stage":"before_load","contains":false,"mapped_nonnull":false,"mapped_valid":false,"active_count":1,"initial_valid":null,"source_valid":true,"seed_valid":true,"input_consumed":null},
+    {"stage":"loaded","contains":true,"mapped_nonnull":true,"mapped_valid":true,"active_count":2,"initial_valid":true,"source_valid":true,"seed_valid":true,"input_consumed":3},
+    {"stage":"externally_destroyed","contains":true,"mapped_nonnull":true,"mapped_valid":false,"active_count":1,"initial_valid":false,"source_valid":true,"seed_valid":true,"input_consumed":null},
+    {"stage":"reloaded","contains":true,"mapped_nonnull":true,"mapped_valid":true,"active_count":2,"initial_valid":false,"source_valid":true,"seed_valid":true,"input_consumed":3}
+  ],
+  "relations": ["source and seed unchanged", "before initial null and map entt::null", "loaded map equals initial and differs from seed", "destroyed map equals initial", "reloaded map differs from initial and seed", "initial unchanged from loaded onward"]
+}

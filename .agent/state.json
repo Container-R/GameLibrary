@@ -13,16 +13,16 @@
     "reader_books_total": 71
   },
   "publication": {
-    "last_verified_head_sha": "196dad2f35864826dd1e0f70f256167da486baf5",
+    "last_verified_head_sha": "48cb3b9f63e8c458d41192da8b8034043894c306",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "EnTT v3 separately executed under revised five-location preparation; old support notices preserve original observations and failures.",
-    "latest_verified_content_sha": "196dad2f35864826dd1e0f70f256167da486baf5",
+    "scope": "Supplementary content rejection for existing EnTT observations; new component protocol remains preexecution.",
+    "latest_verified_content_sha": "48cb3b9f63e8c458d41192da8b8034043894c306",
     "reader_books_total": 71,
     "post_baseline_research_books": 16,
     "counts_basis": "71 current readers, 55 frozen remediations,16 later additions; metadata checker is not a quality verdict."
   },
-  "next_action": "Close publication readback for EnTT v3 and limited historical support notices; independently review the existing EnTT component-reference source gate before proposing any new native protocol.",
+  "next_action": "Independently re-review repaired component checker, retained false-accept examples and new input binding before separately authorizing any component native execution; no new topic.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -36,7 +36,7 @@
   },
   "evidence_policy": "Distinguish source analysis, paper calculations, historical observations and new runtime evidence; publish no private execution metadata",
   "project": "Container-R/GameLibrary",
-  "current_phase": "entt-environment-revision-publication",
+  "current_phase": "entt-component-preexecution-review",
   "active_task_ids": [
     "TASK-2026-0008"
   ],
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T04:00:00Z",
+    "lease_until": "2026-11-02T04:15:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T032214Z-entt-v3-environment",
+  "last_run_id": "20261102T034444Z-entt-reserved-handle-supplement",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T03:22:14Z",
-  "last_commit_sha": "196dad2f35864826dd1e0f70f256167da486baf5",
+  "last_real_progress_at": "2026-11-02T03:44:44Z",
+  "last_commit_sha": "48cb3b9f63e8c458d41192da8b8034043894c306",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -136,5 +136,11 @@
     "native_reruns": 2,
     "next_step": "Close publication readback for EnTT v3 and limited historical support notices; independently review the existing EnTT component-reference source gate before proposing any new native protocol.",
     "v3_support": "管理档案/支持资料/EnTT映射存在与当前有效性/v3/README.md"
+  },
+  "current_component_scope": {
+    "task": "TASK-2026-0189",
+    "native_executions": 0,
+    "stage": "repair_and_independent_rereview",
+    "review_path": "管理档案/审查/EnTT组件观察-执行前纠错.md"
   }
 }
