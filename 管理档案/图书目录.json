@@ -212,7 +212,14 @@
       "scope_disposition": "守桥人例说明叙事职责、运行时状态、对白交付与团队边界；Valve情境对白和Cygames录音制作各有独立正文及审查，不以岗位文章的接受代替案例审查。",
       "scope_disposition_review": "管理档案/审查/游戏编剧与叙事设计-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
-      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。"
+      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
+      "latest_increment": {
+        "scope": "Repeatable dialogue choices distinguish current conditions, prior target visits and actual return control flow.",
+        "reader_sha256": "5aee47043a8665504e0c401444119a7a2961f8edd5627f161079604f2e99d503",
+        "reader_review": "管理档案/审查/重复交谈选项-来源与读者审查.md",
+        "source_revision": "inkle/ink v1.2.1 35c63e52f1d36060930dc7ed3cfba38ea224b528",
+        "execution": "Fixed documentation and code interpretation; guard conversation is hypothetical, with no compiled story, menu or audio observation."
+      }
     },
     {
       "internal_id": "ROLE-NET-001",

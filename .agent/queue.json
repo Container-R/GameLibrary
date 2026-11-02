@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T02:50:00Z",
+      "lease_until": "2026-11-02T03:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T02:04:10Z",
-      "next_action": "Read existing narrative readers and fixed ink documentation/source to evaluate a concrete choice-visibility versus visit-state gap; do not draft before source and scope review.",
+      "last_progress_at": "2026-11-02T02:15:58Z",
+      "next_action": "Assess a bounded native EnTT continuous-loader protocol against existing entity-handle source analysis; do not execute before dependency and independent protocol review.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6793,6 +6793,35 @@
       "next_action": "Inspect target strings in actual font/component configurations; mapping coverage alone cannot certify contextual positioning, fallback or rendered language quality.",
       "blockers": [],
       "verification_method": "Fixed primary API/manual analysis and abstract non-executed combining-mark scenario; no font loading, shaping, renderer or device test."
+    },
+    {
+      "id": "TASK-2026-0186",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can a dialogue option remain absent after its condition becomes true again?",
+      "discipline": "NARR",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Give narrative collaborators a concrete distinction between repeat policy, conditions and visited content within the existing guard example.",
+      "expected_artifact": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+      "artifact_paths": [
+        "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+        "管理档案/审查/重复交谈选项-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing narrative role and distinguish adjacent dialogue/recording case scope",
+        "Independently read fixed ink tutorial, ProcessChoice and visit state",
+        "Explicitly assume same state, no reset/load and a return jump after gather",
+        "Explain direct divert without equating visits with audio completion",
+        "Preserve old role, reward, localization and save-content sections",
+        "Full reader and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T02:15:58Z",
+      "next_action": "Validate intended repeat and interruption policy in the target project; source interpretation is not an observed story or audio result.",
+      "blockers": [],
+      "verification_method": "Fixed primary tutorial and C# source review plus non-executed guard-menu reasoning; no native runtime or compiler execution."
     }
   ],
   "execution_policy": {
