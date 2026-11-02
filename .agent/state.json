@@ -13,16 +13,16 @@
     "reader_books_total": 70
   },
   "publication": {
-    "last_verified_head_sha": "65ce553ac20279aac3f0a40e3f78071ba019a1ce",
+    "last_verified_head_sha": "0034a194b0d94a38843ebe0c735a33af4be07751",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Existing independent-copy step distinguishes LFS pointer and actual media content readiness.",
-    "latest_verified_content_sha": "65ce553ac20279aac3f0a40e3f78071ba019a1ce",
+    "scope": "Existing pseudo-localization reader distinguishes initial glyph coverage from contextual shaping and actual component checks.",
+    "latest_verified_content_sha": "0034a194b0d94a38843ebe0c735a33af4be07751",
     "reader_books_total": 70,
     "post_baseline_research_books": 15,
-    "counts_basis": "71 reader books unchanged; no Git/LFS or import execution added."
+    "counts_basis": "71 reader books unchanged; no font or language presentation execution added."
   },
-  "next_action": "Read existing localization/BiDi readers and fixed font-coverage/shaping sources; determine whether a concrete coverage-versus-layout gap remains before drafting.",
+  "next_action": "Read existing narrative readers and fixed ink documentation/source to evaluate a concrete choice-visibility versus visit-state gap; do not draft before source and scope review.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T02:40:00Z",
+    "lease_until": "2026-11-02T02:50:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T015637Z-lfs-materialization",
+  "last_run_id": "20261102T020410Z-font-coverage-shaping",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T01:56:37Z",
-  "last_commit_sha": "65ce553ac20279aac3f0a40e3f78071ba019a1ce",
+  "last_real_progress_at": "2026-11-02T02:04:10Z",
+  "last_commit_sha": "0034a194b0d94a38843ebe0c735a33af4be07751",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

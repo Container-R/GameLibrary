@@ -736,7 +736,17 @@
       "extraction_scope": "现有正文保留语言专属向量与呈现界限；接口生命周期/警告、整数分支与词法分数未覆盖精确保留，不采用待批新材料。",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/localization/pseudo-localization-contract.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "latest_increment": {
+        "scope": "Successful Unicode character mapping is distinct from contextual glyph selection and positioning; configured fallback does not certify a target string.",
+        "reader_sha256": "ab3a819aa858ecfacce79bbf8c5a0bf60669118eb511d988ec59215346ec82a7",
+        "reader_review": "管理档案/审查/字体覆盖与塑形-来源与读者审查.md",
+        "source_revisions": {
+          "FreeType2.13.3": "42608f77f20749dd6ddc9e0536788eaad70ea4b5",
+          "HarfBuzz10.0.1": "a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc"
+        },
+        "execution": "Fixed-source analysis and abstract base/combining-mark explanation; no font load, shaping, rendering or target-language observation."
+      }
     },
     {
       "internal_id": "SOL-MODEL-001",
