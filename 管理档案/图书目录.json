@@ -401,7 +401,7 @@
       "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "b0c39a11e9fddf3b075fa809d66efeac8ed3bf4b927db2da7447164100de0625",
+      "reader_sha256": "a344ae1b01c09f75e02a15a9167e014d5c5c5b9caee462ef0be3b8bc6f5cf5f0",
       "review_paths": [
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md"
       ],
@@ -411,6 +411,13 @@
         "source_note": "管理档案/来源笔记/occlusion-query-feedback.json",
         "support_sha256": "4bc0c65a256d1b16a033f198f3dfb6934a6c55abe664fc999a6de839e77ebbdb",
         "scope": "Unknown, old and current occlusion feedback in a stated opaque scene; no runtime, image or performance observations."
+      },
+      "pipeline_cache_support": {
+        "support_path": "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
+        "source_record": "管理档案/来源笔记/d3d12-pipeline-cache-compatibility.json",
+        "review": "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md",
+        "support_sha256": "dc15b58a9d4655afecac4d9636b04824f1a7985fc491a26dacfd32967ba571b6",
+        "scope": "One optional D3D12-specific entry; previous source and review identities retain their original scope."
       }
     },
     {
@@ -2060,7 +2067,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "6dc8c956e680d55c9632ccb2e9d4be61d2b8f087",
+  "publication_base_sha": "2730c26da9f2790a192f9e1fd873c0d0f4d89901",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

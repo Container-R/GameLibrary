@@ -304,7 +304,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T18:56:28Z",
+      "last_progress_at": "2026-11-02T19:07:35Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1986,7 +1986,10 @@
         "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
         "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
         "管理档案/来源笔记/occlusion-query-feedback.json",
-        "管理档案/审查/遮挡查询反馈-来源与读者审查.md"
+        "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
+        "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
+        "管理档案/来源笔记/d3d12-pipeline-cache-compatibility.json",
+        "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md"
       ],
       "acceptance": [
         "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
@@ -1995,7 +1998,7 @@
         "Independent source review; no runtime, gain claims, universal aliases or completed occupation matrix"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T13:00:20Z",
+      "last_progress_at": "2026-11-02T19:07:35Z",
       "next_action": "Use bounded feature handoff as an unexecuted proposal; continue role coverage without claiming full matrix completion",
       "blockers": [],
       "completed_at": "2026-10-31T21:44:22.341807Z",
@@ -2015,7 +2018,7 @@
           "scope": "Fixed historical directory; no invented file SHA256"
         }
       ],
-      "latest_reader_maintenance": "Optional current-versus-stale occlusion-query feedback support; source-only analysis, no GPU execution or timing claim."
+      "latest_reader_maintenance": "Optional D3D12 persisted-cache compatibility and reconstruction-input support; original role and UE first-use scope retained, no GPU execution."
     },
     {
       "id": "TASK-2026-0060",

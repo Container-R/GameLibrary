@@ -1,0 +1,52 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "reader_sha256": "a344ae1b01c09f75e02a15a9167e014d5c5c5b9caee462ef0be3b8bc6f5cf5f0",
+  "prior_reader_sha256": "b0c39a11e9fddf3b075fa809d66efeac8ed3bf4b927db2da7447164100de0625",
+  "support_path": "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
+  "support_sha256": "dc15b58a9d4655afecac4d9636b04824f1a7985fc491a26dacfd32967ba571b6",
+  "review_path": "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md",
+  "organization": "Microsoft",
+  "sources": [
+    {
+      "title": "D3D12_GRAPHICS_PIPELINE_STATE_DESC",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc",
+      "displayed_updated_on": "2022-09-01",
+      "used_scope": "Members, CachedPSO and Remarks"
+    },
+    {
+      "title": "ID3D12PipelineLibrary::Serialize",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12pipelinelibrary-serialize",
+      "displayed_updated_on": "2024-02-22",
+      "used_scope": "pData compatibility and storage"
+    },
+    {
+      "title": "ID3D12Device1::CreatePipelineLibrary",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device1-createpipelinelibrary",
+      "displayed_updated_on": "2021-08-03",
+      "used_scope": "Support, pLibraryBlob lifetime, return values"
+    },
+    {
+      "title": "ID3D12PipelineLibrary::LoadGraphicsPipeline",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12pipelinelibrary-loadgraphicspipeline",
+      "displayed_updated_on": "2024-02-22",
+      "used_scope": "pDesc and return values"
+    },
+    {
+      "title": "ID3D12PipelineState::GetCachedBlob",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12pipelinestate-getcachedblob",
+      "displayed_updated_on": "2024-02-22",
+      "used_scope": "Returned cache and linked Remarks"
+    },
+    {
+      "title": "D3D12_CACHED_PIPELINE_STATE",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/ns-d3d12-d3d12_cached_pipeline_state",
+      "displayed_updated_on": "2024-02-22",
+      "used_scope": "Remarks, compatibility and remaining valid input"
+    }
+  ],
+  "read_scope": "Full substantive API-page text including parameters, return values and remarks. Rolling documentation, not immutable source or installed runtime identity.",
+  "verification": "Original-source reading and independent mechanism/full-reader review. No API calls, device inspection, compilation, GPU run or performance measurement.",
+  "limits": "D3D12 cache contracts only; not Unreal implementation, portable shader-input prohibition, complete PSO reconstruction implementation or zero-stutter assurance.",
+  "copyright": "Narrow paraphrase and original reasoning, no copied full documentation, structure listing or sample code."
+}

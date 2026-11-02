@@ -1,0 +1,21 @@
+{
+  "run_id": "20261102T190735Z-pipeline-cache-reader",
+  "observed_at": "2026-11-02T19:07:35Z",
+  "parent_verified_head": "2730c26da9f2790a192f9e1fd873c0d0f4d89901",
+  "task": "TASK-2026-0059",
+  "reader_path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "reader_sha256": "a344ae1b01c09f75e02a15a9167e014d5c5c5b9caee462ef0be3b8bc6f5cf5f0",
+  "prior_reader_sha256": "b0c39a11e9fddf3b075fa809d66efeac8ed3bf4b927db2da7447164100de0625",
+  "support_path": "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
+  "support_sha256": "dc15b58a9d4655afecac4d9636b04824f1a7985fc491a26dacfd32967ba571b6",
+  "source_record": "管理档案/来源笔记/d3d12-pipeline-cache-compatibility.json",
+  "review": "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md",
+  "outcome": "Add one optional D3D12 compatibility explanation while preserving the existing graphics role and UE first-use passage.",
+  "verification_scope": "Official API-document reading and independent source/reader review; no API call, device inspection, compilation or GPU execution.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Support, reader entry and public records belong to the same containing commit; parent_verified_head is preceding verified revision."
+}
