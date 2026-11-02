@@ -1545,7 +1545,18 @@
         "execution": "Two builds and two native executions in fresh copies under one runner and environment; independent result review, not an independent operator rerun.",
         "excluded": "No components, snapshot_loader restoration, version-wrap, network, concurrency or game-business validation.",
         "workflow_limitation": "v2 did not prepare HOME and three XDG locations required by the existing standard; observations retained without a whole-workflow compliance claim.",
-        "workflow_limitation_path": "管理档案/支持资料/EnTT映射存在与当前有效性/WORKFLOW-LIMITATION.md"
+        "workflow_limitation_path": "管理档案/支持资料/EnTT映射存在与当前有效性/WORKFLOW-LIMITATION.md",
+        "environment_revision": {
+          "version": "v3",
+          "support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/v3/README.md",
+          "input_manifest_sha256": "a2d2d8ac37ca11278e737434549c90ee86f5d94047d8ce2f94ea036f28665b20",
+          "new_builds": 2,
+          "new_native_invocations": 2,
+          "condition_count": 1,
+          "independent_native_reexecution": false,
+          "v2_inputs_outputs_unchanged": true,
+          "limitation": "Five-location preparation/validation is not a sandbox or proof of all descendant writes."
+        }
       }
     },
     {

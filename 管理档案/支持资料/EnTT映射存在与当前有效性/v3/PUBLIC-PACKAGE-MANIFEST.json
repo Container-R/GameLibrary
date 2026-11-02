@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "kind": "public_package_bytes_not_execution_input_manifest",
+  "files": {
+    "CODE-REVIEW.md": "30b73bd052efd54da17d829a07688f2753985a379f04039a6b8e24c8cd712ec0",
+    "INPUT-MANIFEST.json": "a2d2d8ac37ca11278e737434549c90ee86f5d94047d8ce2f94ea036f28665b20",
+    "NATIVE-REVIEW.md": "1bacc2ff37851830123d491305215e92369fb120b567bcedd62cf382fcb42ac1",
+    "PROTOCOL-REVIEW.md": "e841790113cc52733679469dff0372d38a84ce758bd6c45b4e25db5b413ce69c",
+    "PROTOCOL-v3.md": "1ead0f47acd33b85dfac79dd759cae9cd5f33b66d89bcaa4bba0d857f56760db",
+    "README.md": "b326529bc0a64def3356cb9f5cb7dc0255f581b4cecb152b209155a69755cf02",
+    "UPSTREAM-SOURCE.json": "72fd64024c405f508364383b58e472cbd7fb7814b6ddaa82c742cdbfc14a7ac7",
+    "checker.py": "788f72e5e978b90a14047822cd28d023e49c7495d75119cc856525a8cc78d732",
+    "fixture.cpp": "5bc3b3ad0ffdc2d22e6c11083ce92c60dccbaf1be149a3745c165ce62fa0463f",
+    "independent-oracle.json": "90169423b365a0a3a553462caff0be05ebb6672de6f58758959b9a5c139497cf",
+    "independent_environment_tests.py": "2d7d081a5b170619d73196cf33c2335817444fc67d071901b173807285227dc7",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "observations/repeat-1/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-1/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-1/native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-1/native.stdout": "504bdd9c35c4bd06a9c589e14c662206ce87768c316495559b299172aa2b3843",
+    "observations/repeat-2/build.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-2/build.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-2/native.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observations/repeat-2/native.stdout": "504bdd9c35c4bd06a9c589e14c662206ce87768c316495559b299172aa2b3843",
+    "receipt-projection.json": "f195b5150f1d9bcb645155795e020a3a041fdddcc15033ccb505a1a09e4428b6",
+    "runner.py": "9054b515ae12a6f69253ec2f47c1ecc20c7e1c11b22a6c06c4e88c33a3ff3021",
+    "test_environment.py": "de45ba889d901ad84d2fdf3b1803240831dd830a59c1841fdf78f8fc4650f703",
+    "test_runner_cleanup.py": "a8688a905875362c3a5243f75c2dfa3c45e777f95fbc793ae0c14af6f6e7e86c"
+  }
+}
