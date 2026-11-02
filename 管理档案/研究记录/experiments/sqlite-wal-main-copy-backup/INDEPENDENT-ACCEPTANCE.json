@@ -1,0 +1,61 @@
+{
+  "scope": "Frozen before reviewer execution, after reading author output; derives acceptance from reviewed protocol, not its incidental page counts or file bytes.",
+  "settings": {
+    "journal_mode": "wal",
+    "wal_autocheckpoint": 0,
+    "busy_timeout": 0,
+    "autocommit": -1,
+    "isolation_level": null
+  },
+  "baseline": {
+    "rows": [],
+    "checkpoint": "one row, three integers; first0; last two equal and >=0",
+    "wal_bytes": 0
+  },
+  "committed": {
+    "rows": [
+      [
+        1,
+        7
+      ]
+    ],
+    "in_transaction": false,
+    "wal_bytes": ">0",
+    "main_hash": "equal baseline"
+  },
+  "plain": {
+    "copied_main_hash": "equal baseline",
+    "rows": []
+  },
+  "backup": {
+    "calls": 1,
+    "pages": 1,
+    "sleep": 0.0,
+    "name": "main",
+    "progress": "1..16; nonfinal OK; final DONE remaining0; 0<=remaining<=total",
+    "reopened_rows": [
+      [
+        1,
+        7
+      ]
+    ]
+  },
+  "source_final": {
+    "rows": [
+      [
+        1,
+        7
+      ]
+    ],
+    "main_hash": "equal baseline before close"
+  },
+  "lifecycle": "ordered events with continuous integer seq; plain closes before backup; backup writer closes before reopen; source closes only after final observation; no failure events; exit0 stderr empty termination confirmed; four frozen inputs unchanged",
+  "not_fixed": [
+    "actual page count",
+    "actual positive WAL byte size",
+    "database hash literal",
+    "number of progress calls within bound",
+    "Python/SQLite runtime version"
+  ],
+  "budget": "one fresh reviewer root, one launcher invocation, one SQLite child; fail-stop, no retry"
+}

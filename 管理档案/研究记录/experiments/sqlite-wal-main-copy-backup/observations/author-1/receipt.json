@@ -1,0 +1,30 @@
+{
+  "child_count": 1,
+  "environment": {
+    "HOME": "HOME",
+    "TMPDIR": "TMPDIR",
+    "XDG_CACHE_HOME": "XDG_CACHE_HOME",
+    "XDG_CONFIG_HOME": "XDG_CONFIG_HOME",
+    "XDG_DATA_HOME": "XDG_DATA_HOME"
+  },
+  "returncode": 0,
+  "source_after": {
+    "PROTOCOL.md": "c20fb834b16a9c8b08b382fa458665d095d4ad45a087295c67e99f7a4d3c9f5a",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "launcher.py": "60a13b34bc050bd041d5d306724f180cff25952d921c74c8e64e07ac39f23f07",
+    "runner.py": "3eea751d9c09c70cc0a00c36c5d7172979d89e9713586a8b3cebff3769512712"
+  },
+  "source_before": {
+    "PROTOCOL.md": "c20fb834b16a9c8b08b382fa458665d095d4ad45a087295c67e99f7a4d3c9f5a",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "launcher.py": "60a13b34bc050bd041d5d306724f180cff25952d921c74c8e64e07ac39f23f07",
+    "runner.py": "3eea751d9c09c70cc0a00c36c5d7172979d89e9713586a8b3cebff3769512712"
+  },
+  "status": "PASS",
+  "stderr.bin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout.jsonl_sha256": "8db174a843b25792afa9960401ed41e4827d60faac996372353f0c780e944e9b",
+  "stdout_sha256": "8db174a843b25792afa9960401ed41e4827d60faac996372353f0c780e944e9b",
+  "termination_confirmed": true,
+  "timeout_seconds": 15
+}

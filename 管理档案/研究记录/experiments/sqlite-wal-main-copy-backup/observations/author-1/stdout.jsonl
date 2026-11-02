@@ -1,0 +1,17 @@
+{"data": {"python": "3.12.14", "sqlite": "3.53.1"}, "event": "begin", "seq": 1}
+{"data": {"autocommit": -1, "busy_timeout": 0, "isolation_level": null, "journal_mode": [["wal"]], "wal_autocheckpoint": [[0]]}, "event": "settings", "seq": 2}
+{"data": {"checkpoint": [[0, 0, 0]], "main_sha256": "5f20541cdb883130f0533fd29bac09f5ddffc956725e8a8b9d38e323a021bea6", "rows": [], "wal_bytes": 0}, "event": "baseline", "seq": 3}
+{"data": {"in_transaction": false, "main_sha256": "5f20541cdb883130f0533fd29bac09f5ddffc956725e8a8b9d38e323a021bea6", "rows": [[1, 7]], "wal_bytes": 4152}, "event": "committed", "seq": 4}
+{"data": {"path": "plain/save.db", "sha256": "5f20541cdb883130f0533fd29bac09f5ddffc956725e8a8b9d38e323a021bea6"}, "event": "main_copy", "seq": 5}
+{"data": {"rows": []}, "event": "plain_read", "seq": 6}
+{"data": {"role": "plain"}, "event": "closed", "seq": 7}
+{"data": {"name": "main", "pages": 1, "sleep": 0.0}, "event": "backup_attempt", "seq": 8}
+{"data": {"remaining": 1, "status": 0, "total": 2}, "event": "backup_progress", "seq": 9}
+{"data": {"remaining": 0, "status": 101, "total": 2}, "event": "backup_progress", "seq": 10}
+{"data": {"progress_calls": 2}, "event": "backup_return", "seq": 11}
+{"data": {"role": "backup_writer"}, "event": "closed", "seq": 12}
+{"data": {"rows": [[1, 7]]}, "event": "backup_read", "seq": 13}
+{"data": {"role": "backup_reader"}, "event": "closed", "seq": 14}
+{"data": {"main_sha256": "5f20541cdb883130f0533fd29bac09f5ddffc956725e8a8b9d38e323a021bea6", "rows": [[1, 7]]}, "event": "source_final", "seq": 15}
+{"data": {"role": "remaining"}, "event": "closed", "seq": 16}
+{"data": {"backup_rows": [[1, 7]], "plain_rows": [], "source_rows": [[1, 7]]}, "event": "success", "seq": 17}

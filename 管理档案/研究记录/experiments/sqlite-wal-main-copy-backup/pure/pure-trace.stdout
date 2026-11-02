@@ -1,0 +1,8 @@
+ACCEPT literal-valid
+REJECT delete-stage
+REJECT change-seq
+REJECT change-copy-result
+REJECT change-backup-remaining
+REJECT change-final-success
+REJECT change-source-hash
+PASS 1 accepted + 6 rejected; 7 consumer calls; no sqlite import; no subprocess launch

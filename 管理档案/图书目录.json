@@ -1799,6 +1799,25 @@
       ],
       "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
       "reader_sha256": "9eecaa383adbd328d1e7aa025c717da0d69b144d0e2664535223f9c98680d93a"
+    },
+    {
+      "internal_id": "SOL-ENGINE-008",
+      "reader_title": "SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度",
+      "floor": "引擎与工具",
+      "area": "运行时系统",
+      "shelf": "缓存与存档",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立全文与官方来源审读；一作者加一独立同环境有限观察",
+      "origin": "source-grounded-sqlite-wal-backup-comparison",
+      "scope_note": "单连接稳定源的一表一行比较；不证明并发、断电或完整游戏恢复",
+      "review_paths": [
+        "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
+      "reader_sha256": "78607c987a3ea0e7b7de000b2932785e1968dbae79058def8c52d19f0c41a7b9",
+      "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1809,10 +1828,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "90e864200ae704b3031cdab74bd66731083e2452",
+  "publication_base_sha": "e3972f150744ddaa94c6fc6aed971c9aa8b32fbb",
   "accounted_for_original_items": 55,
-  "reader_books_total": 76,
-  "post_baseline_research_books": 21,
+  "reader_books_total": 77,
+  "post_baseline_research_books": 22,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

@@ -1,0 +1,16 @@
+{
+  "id": "sqlite-wal-main-copy-backup",
+  "title": "SQLite WAL main-file copy versus connection backup",
+  "accessed_at": "2026-11-02",
+  "source_type": "official-documentation",
+  "sources": [
+    {"organization":"SQLite", "title":"Write-Ahead Logging", "url":"https://sqlite.org/wal.html", "sections":"2, 2.1, 4", "use":"Committed changes can remain in WAL; checkpoint and persistent state distinction.", "version_scope":"Rolling official documentation, not source identity of the installed runtime."},
+    {"organization":"SQLite", "title":"SQLite Backup API", "url":"https://sqlite.org/backup.html", "sections":"1, 2.1, 3.1", "use":"Database-level backup and concurrency/restart qualifications; no unconditional fixed-start snapshot claim."},
+    {"organization":"SQLite", "title":"Online Backup API", "url":"https://sqlite.org/c3ref/backup_finish.html", "sections":"backup_init, backup_step, backup_finish", "use":"Completion, destination transaction and source modification limits."},
+    {"organization":"SQLite", "title":"PRAGMA Statements", "url":"https://www.sqlite.org/pragma.html#pragma_wal_checkpoint", "sections":"wal_autocheckpoint, wal_checkpoint", "use":"Finite observation preparation and three-column completion checks; not production tuning guidance."},
+    {"organization":"Python Software Foundation", "title":"sqlite3 — DB-API 2.0 interface for SQLite databases", "url":"https://docs.python.org/3.12/library/sqlite3.html", "sections":"Connection.backup; isolation_level; Transaction control via the isolation_level attribute", "version_scope":"3.12 documentation branch currently displays 3.12.16; observed interpreter separately self-reports 3.12.14.", "use":"Python binding parameters and explicit transaction-control conditions."}
+  ],
+  "read_scope":"Targeted sections listed above; neither complete SQLite documentation nor complete Python reference reviewed.",
+  "copyright_handling":"Original explanation and fixture; documentation linked, not bulk republished.",
+  "scope":"A single stable source connection, explicit WAL preparation, one schema and one committed row. Not crash recovery, arbitrary concurrent writes, multi-file atomicity or provenance certification."
+}
