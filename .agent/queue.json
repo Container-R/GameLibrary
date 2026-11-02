@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T02:20:00Z",
+      "lease_until": "2026-11-02T02:30:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:39:55Z",
-      "next_action": "Identify a bounded content-production gap from existing readers and original sources; keep source sufficiency and no-duplicate integration gates.",
+      "last_progress_at": "2026-11-02T01:48:43Z",
+      "next_action": "Read fixed Git LFS pointer/materialization documentation against existing asset-import and build readers; decide whether a bounded integration adds value, without fetching media or running Git.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6706,6 +6706,35 @@
       "next_action": "In a project report relevant predefined strata and their attempt denominators together with aggregate counts; causal conclusions require additional design and evidence.",
       "blockers": [],
       "verification_method": "Original-paper text reading and independent paper arithmetic; no statistical execution, runtime or actual player data."
+    },
+    {
+      "id": "TASK-2026-0183",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can two asset names preserved in a Git tree fail to remain separately addressable in a target work copy?",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "Deepen existing asset handoff warning with source-list versus target-name representation and configuration boundaries.",
+      "expected_artifact": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+        "管理档案/审查/资产路径大小写-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing import, build and related source scope",
+        "Independently inspect fixed Git tree-name and ignoreCase chain",
+        "Read Microsoft per-directory and application limits",
+        "Preserve unknown concrete tool outcomes and ASCII-only scope",
+        "Retain original URI and Godot observation limits unchanged",
+        "Complete independent full reader and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:48:43Z",
+      "next_action": "For a project compare authoritative source paths with actual target naming and tool lookup rules, preserve both intended assets and adjust references through an approved change.",
+      "blockers": [],
+      "verification_method": "Fixed Git source and Microsoft documentation; hypothetical ASCII case pair, no Git/filesystem/engine execution."
     }
   ],
   "execution_policy": {

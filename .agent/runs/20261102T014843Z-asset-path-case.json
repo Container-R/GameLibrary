@@ -1,0 +1,35 @@
+{
+  "run_id": "20261102T014843Z-asset-path-case",
+  "observed_at": "2026-11-02T01:48:43Z",
+  "parent_verified_head": "b9a46dfebaa8593ce03fe6a928ae09bfb275076a",
+  "task": "TASK-2026-0183",
+  "outcome": "Finite asset-name representation explanation accepted in containing commit.",
+  "reader_path": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+  "reader_sha256": "1e247d12a091f0e25f18e6ea954a87f7978824d562cd3073369c4bdd8ad4c6b0",
+  "review_path": "管理档案/审查/资产路径大小写-来源与读者审查.md",
+  "fixed_git_source": "777489f9e09c8d0dd6b12f9d90de6376330577a2",
+  "new_executions": 0,
+  "scope": "Two ordinary ASCII filenames in a Git subtree versus a target lookup rule that considers them equivalent; concrete checkout/import policy remains unknown.",
+  "excluded": [
+    "No command recipe or configuration change",
+    "No automatic resource-ID/reference repair",
+    "No universal overwrite or rejection prediction",
+    "No Unicode or complete filesystem emulation",
+    "No rerun or upgrade of historical Godot identity/evidence"
+  ],
+  "reader_books_total": 71,
+  "prior_publication_readback": {
+    "commit": "b9a46dfebaa8593ce03fe6a928ae09bfb275076a",
+    "all_blobs_matched": 853,
+    "key_files_exact": 3
+  },
+  "catalog_correction": {
+    "id": "SOL-ENGINE-001",
+    "problem": "Obsolete phase-one original-retained flag contradicted current git_history_only disposition.",
+    "verified_baseline": "b9a46dfebaa8593ce03fe6a928ae09bfb275076a",
+    "old_path_current_tree_present": false,
+    "reader_and_support_current_tree_present": true,
+    "action": "Removed obsolete retained-unchanged flag, explicitly marked current-tree absence, retained exact fixed historical locator and content disposition.",
+    "scope": "One contradictory entry found by targeted catalog scan; no history rewrite or new content migration."
+  }
+}

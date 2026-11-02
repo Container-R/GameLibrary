@@ -695,8 +695,7 @@
       "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
-      "migration_state": "内容去向已核对；旧复合文件原位保留，物理迁移未完成",
-      "legacy_file_retained_unchanged": true,
+      "migration_state": "当前读者正文与支持入口已归位；旧复合文件仅保留于固定 Git 历史",
       "reader_body_status": "published",
       "original_scope_status": "accounted_for",
       "pending_chapter_tasks": [],
@@ -706,7 +705,15 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/engine/asset-import-intent-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
+      "legacy_current_tree_present": false,
+      "latest_increment": {
+        "scope": "Git tree names and target-directory/tool name lookup can differ; ignoreCase is not a filesystem or reference-repair switch.",
+        "reader_sha256": "1e247d12a091f0e25f18e6ea954a87f7978824d562cd3073369c4bdd8ad4c6b0",
+        "reader_review": "管理档案/审查/资产路径大小写-来源与读者审查.md",
+        "source_revision": "Git2.47.0 commit777489f9e09c8d0dd6b12f9d90de6376330577a2; Microsoft rolling case-sensitivity guidance.",
+        "execution": "Fixed-source analysis and hypothetical ASCII paths only; no checkout, rename, import or platform experiment."
+      }
     },
     {
       "internal_id": "SOL-LOC-001",
