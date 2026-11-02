@@ -1,0 +1,30 @@
+{
+  "read_on": "2026-11-02",
+  "author": "Zstandard contributors / Meta",
+  "repository": "https://github.com/meta/zstd",
+  "version": "v1.5.7",
+  "commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+  "source_files": {
+    "lib/zstd.h": "454–466, 950–980, 1038–1076",
+    "doc/zstd_compression_format.md": "125–142, 225–239, 277–307, 1473–1537",
+    "lib/zdict.h": "65–112, 152–178, 210–228",
+    "lib/decompress/zstd_decompress.c": "689–731, 1045–1063",
+    "lib/common/xxhash.h": "1–32",
+    "LICENSE": "complete"
+  },
+  "reading_scope": "Selected original source/documentation ranges, not full decoder audit. RFC8878 sections 3.1.1.1.3 and 5–6 consulted as 2021 Informational background, not current registry or HTTP policy evidence.",
+  "source_git_blobs": {
+    "lib/zstd.h": "b8c0644a7ec6533916e06aa8392a2727cbe55573",
+    "lib/zdict.h": "599b793013ba97745d61dfb62a710da16ae7c86c",
+    "doc/zstd_compression_format.md": "a2bf20cbc7620e82dae6bd93f55ad348b2f9144f",
+    "lib/decompress/zstd_decompress.c": "9eb98327ef3b3d177c2137be5d3d10a372bc10d9",
+    "lib/common/xxhash.h": "b6af402fdf4c9a39207974448a0525e20631c115"
+  },
+  "deduplication": "Complete current import, build, Factorio-cache and Addressables readers checked; none explains compressed-frame dictionary discovery and exact dictionary pairing. Not a whole-library semantic certification.",
+  "example": "Unexecuted old package needing D-old while a same-named file is replaced with D-new. No chosen wrong-dictionary outcome is asserted.",
+  "limits": "No native execution, real compressed payload, compression ratio, speed, production integration, universal wrong-dictionary failure or authentication guarantee.",
+  "license": "BSD software license read; original explanation with links, no upstream source bulk reproduced.",
+  "reader_path": "GameLibrary/引擎与工具/构建发布/内容更新/Zstandard旧资源包为什么还需要配套的压缩字典.md",
+  "reader_sha256": "8d6b6c02283159f9add7786f96f1b491d42818e2557e328f41d9e01ecab3959f",
+  "review_path": "管理档案/审查/Zstandard旧包字典依赖-来源与读者审查.md"
+}
