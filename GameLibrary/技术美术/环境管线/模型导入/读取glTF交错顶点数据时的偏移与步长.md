@@ -171,7 +171,9 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 
 如果这个例子不使用扩展提供元素，也省略基底的 `bufferView` 和 `byteOffset`，就从四个零开始，替换后得到 `[0,7,0,9]`。即便 buffer 的其他位置仍保存10和30，也不能擅自把那些字节当作基底。[5]
 
-稀疏索引和值分别来自自己的 view，各自有偏移、长度和对齐要求；索引还须严格递增且小于 accessor 的元素数量。整个 buffer 够长，不意味着其中某个 view 可以越界。[5] 这里仅解释替换含义，不把前文普通属性的读取公式变成完整稀疏解析器。这个标量例子也不是上面矩形的引擎导入结果，本次没有执行它。
+稀疏索引和值分别来自自己的 view，各自有偏移、长度和对齐要求；索引还须严格递增且小于 accessor 的元素数量。整个 buffer 够长，不意味着其中某个 view 可以越界。[5] 这里解释替换含义，不把前文普通属性的读取公式变成完整稀疏解析器。这个标量例子也不是上面矩形的引擎导入结果。
+
+后续用固定 cgltf v1.15 的 C 实现读取了这两种基底配置：批量展开分别得到 `[10,7,30,9]` 和 `[0,7,0,9]`；同版本的单元素读取接口则对稀疏 accessor 返回 false。这不是文件非法，而是所选接口不支持该读取方式。选读[文件解析成功，为什么还没有读出稀疏属性](../../../../管理档案/支持资料/cgltf稀疏属性展开/README.md)，可区分结构解析、buffer 加载、额外检查与完整浮点展开；该有限观察没有覆盖任意稀疏属性或引擎导入。[8]
 
 关于详细规则和旧有限读取器的适用范围，可选读[稀疏 accessor 来源说明](../../../../管理档案/来源笔记/gltf-sparse-accessor.md)。矩阵、压缩扩展、外部资源加载、蒙皮和动画仍需另作处理。对暂未支持的合法形式，应明确报告“不支持”，而不是把它们一概称为非法文件。
 
@@ -196,10 +198,12 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 3. Khronos Group，[bufferView schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json)。这是同一规范项目的字段定义，不能替代读取数据后的检查。
 4. Khronos Group，[Topology and Connectivity](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-topology)。参见索引与各属性元素的对应关系；属性数量要求位于相邻属性章节。
 
-5. Khronos Group，同一固定规范的 [Accessors：元素来源](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview) 与 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)。2026-11-01重新核对基底来源、替换顺序、稀疏索引及值的独立范围和对齐。标量数组为旧原创例子的手算解释，不是新解码或引擎测量。
+5. Khronos Group，同一固定规范的 [Accessors：元素来源](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview) 与 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)。2026-11-01重新核对基底来源、替换顺序、稀疏索引及值的独立范围和对齐。标量数组源自旧原创例子的手算解释；2026-11-02 另以固定 cgltf C 实现作了两配置的有限展开检查，见[8]，不是引擎测量。
 
 6. Khronos Group，同一固定规范的 [Using Primitive Data](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1808-L1830) 与 [Normal Texture](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2819-L2841)。说明切线基、符号和法线纹理含义；本文未运行渲染。
 7. Morten S. Mikkelsen，[MikkTSpace 输出回调及烘焙／渲染配对说明](https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h#L79-L139)，固定作者提交，2026-11-01复核。这里只转述接口，不复制算法实现；不同三角化即使有相同顶点基，也可能产生不同插值。
+
+8. Johannes Kuhlmann 等，[cgltf v1.15 固定源码：单元素读取与浮点展开](https://github.com/jkuhlmann/cgltf/blob/360db1a95480fe102ae9c69b27c5d101167ff5ba/cgltf.h#L2355-L2449)，提交 `360db1a95480fe102ae9c69b27c5d101167ff5ba`。2026-11-02 核对接口并完成本库两份自产输入的有限 C 执行；[说明与安全结果记录](../../../../管理档案/支持资料/cgltf稀疏属性展开/README.md)区分解析、加载、检查和展开。仅 FLOAT SCALAR 的密集/零基底配置，不代表完整格式验证或模型导入。
 
 ---
 

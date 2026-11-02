@@ -1,0 +1,20 @@
+{
+  "run_id": "20261102T234437Z-cgltf-sparse-native",
+  "observed_at": "2026-11-02T23:44:37Z",
+  "parent_verified_head": "363dca4d59a2885feb6f9db79c72c247ff99bad3",
+  "task": "TASK-2026-0084",
+  "reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "reader_sha256": "61ee91ad76e0723c78d37a01ee0a583a126453551e2ff4cc1faa6d8df8f48c93",
+  "prior_reader_sha256": "c823342ce31093200aef4bafc4e5f6e2e49cb0beb4df16434f62c442b3e81698",
+  "source_record": "管理档案/来源笔记/cgltf-sparse-native.json",
+  "review": "管理档案/审查/cgltf稀疏展开-原生与读者审查.md",
+  "support_path": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+  "outcome": "Integrate limited native sparse replacement evidence and API-stage explanation into existing model reader.",
+  "verification_scope": "Pre-execution independent review; two fresh compile/executions of same two inputs by separate operators on same host; independent result, payload and reader review.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Reader, reproducible safe package and public records belong to the same containing commit; parent_verified_head names preceding verified revision."
+}

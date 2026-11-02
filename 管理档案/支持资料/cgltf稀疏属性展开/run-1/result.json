@@ -1,0 +1,36 @@
+{
+  "cases": 2,
+  "compile_options": [
+    "-std=c99",
+    "-O0",
+    "-Wall",
+    "-Wextra",
+    "-pedantic"
+  ],
+  "observed_compiled_input_sha256": {
+    "cgltf.h": "e378a21c084bf1f288bb799de827bb26906efb024255f1ecf1705ea13f11c6ec",
+    "dense.json": "b2dcfa20c7f51da661bbe70fbcdccd2478b698e65b22aa814d8911b7f5aee5c3",
+    "harness.c": "b5c402ab8a0342f2dd5c813c008e0af9124f961cd99a3826f50d77f0739e9371",
+    "zero.json": "8588d6e5d86595ebbfe66c601b08e26d8d992a7ef5db2ba96100d61db05842ae"
+  },
+  "observed_runner_sha256": "c4083567181a6995f5358c604a2dc884bab5d6aa8352c413a2afe7d983e51005",
+  "observed_status": "PASS_two_fixtures_only",
+  "output_sha256": "082b383a44bd4a06c003750742427ae343227b8c2c9dbb9135ded871b8502045",
+  "public_inputs": {
+    "execution_status": "not_executed_as_this_public_derivative",
+    "manifest_sha256": "d8d3fa2298b42834ce241fc8b3189519541429491da2537ca06ed3a70cdc54f3"
+  },
+  "record_kind": "sanitized_execution_summary",
+  "source_commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+  "stage_results": {
+    "compile": {
+      "exit_code": 0,
+      "status": "exited"
+    },
+    "run": {
+      "exit_code": 0,
+      "status": "exited"
+    }
+  },
+  "transformation": "Summary of the unchanged original execution. Preparation environment observations and original protocol/manifest identities are omitted. Published source, harness, runner, fixture and output identities match the original; the public protocol and manifest are transformed, not retroactively executed."
+}

@@ -1,0 +1,35 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "reader_sha256": "61ee91ad76e0723c78d37a01ee0a583a126453551e2ff4cc1faa6d8df8f48c93",
+  "prior_reader_sha256": "c823342ce31093200aef4bafc4e5f6e2e49cb0beb4df16434f62c442b3e81698",
+  "support_path": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+  "support_sha256": "0a8afbfb69e7fd2d4c717942cb4c3a9796f4457dd8122f6db0c1a2d0a23812b5",
+  "review_path": "管理档案/审查/cgltf稀疏展开-原生与读者审查.md",
+  "implementation": {
+    "repository": "jkuhlmann/cgltf",
+    "historical_tag": "v1.15",
+    "commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+    "header_url": "https://github.com/jkuhlmann/cgltf/blob/360db1a95480fe102ae9c69b27c5d101167ff5ba/cgltf.h",
+    "license": "MIT",
+    "read_scope": "API documentation; load_buffers, accessor/view validation ordering, complete read_float/unpack_floats functions and default stride setup. Not full parser/security review.",
+    "header_sha256": "e378a21c084bf1f288bb799de827bb26906efb024255f1ecf1705ea13f11c6ec"
+  },
+  "normative_source": {
+    "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+    "read_scope": "Accessor element sources; sparse overview/indices/values/usage and component type table"
+  },
+  "verification": {
+    "manifest": "管理档案/支持资料/cgltf稀疏属性展开/manifest.json",
+    "protocol": "管理档案/支持资料/cgltf稀疏属性展开/protocol.md",
+    "executions": [
+      "管理档案/支持资料/cgltf稀疏属性展开/run-1/result.json",
+      "管理档案/支持资料/cgltf稀疏属性展开/run-2/result.json"
+    ],
+    "scope": "Two executions, each with the same two valid compact FLOAT SCALAR configurations; separate operators and fresh compilations on same host.",
+    "outcome": "Dense and implicit-zero base sparse replacements match predeclared literal outputs; read_float rejects sparse without consuming failed output.",
+    "limits": "No malformed input, truncated output, interleaved sparse base, engine import, rendering, performance, cross-platform or complete-validator claim; prior experiments not rerun.",
+    "public_artifact_transformation": "Protocol preparation environment observations omitted; manifest regenerated for unexecuted public derivative. Results are sanitized summaries of unchanged actual executions. Unchanged technical source, harness, runner, fixture and output identities retained; original protocol/manifest identities not republished.",
+    "public_manifest_sha256": "d8d3fa2298b42834ce241fc8b3189519541429491da2537ca06ed3a70cdc54f3"
+  }
+}

@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T23:29:53Z",
+      "last_progress_at": "2026-11-02T23:44:37Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -3097,7 +3097,10 @@
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
         "管理档案/来源笔记/gltf-sparse-accessor.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+        "管理档案/来源笔记/cgltf-sparse-native.json",
+        "管理档案/审查/cgltf稀疏展开-原生与读者审查.md"
       ],
       "acceptance": [
         "Pinned Khronos glTF source and strict sparse replacement/base initialization semantics",
@@ -3106,8 +3109,8 @@
         "Preserve prior dense evidence and restore deferred scalar source/route indexes with matching generated navigation"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:40:45.231284Z",
-      "next_action": "Maintain separate sparse CPU and dense native evidence; no full validator or morph claims",
+      "last_progress_at": "2026-11-02T23:44:37Z",
+      "next_action": "Preserve distinction between normative sparse semantics, old Python subset, limited pinned cgltf execution and unrelated dense engine observations.",
       "blockers": [],
       "completed_at": "2026-11-01T02:44:21.150605Z",
       "commit_sha": "526b803761c8ec02b813c1d0d61fcd5ef4c2983d",
@@ -3124,7 +3127,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "b1a010067bac81e887804a583360e5d44862c10e44720e0b2f30e25185a76940"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Pinned cgltf C implementation observed with two known-safe 44-byte scalar configurations, independently repeated on same host; no transfer to dense engine evidence."
     },
     {
       "id": "TASK-2026-0085",

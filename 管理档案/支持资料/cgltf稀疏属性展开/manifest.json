@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "LICENSE": "f619925f80ef862497aaf8e8155ef218fa6a2190055129523ca3df9119a9ba95",
+    "cgltf.h": "e378a21c084bf1f288bb799de827bb26906efb024255f1ecf1705ea13f11c6ec",
+    "dense.json": "b2dcfa20c7f51da661bbe70fbcdccd2478b698e65b22aa814d8911b7f5aee5c3",
+    "fixture.hex": "feecf56668a9c11130160c0f2f8f60d42a8dc2bf4d156b11c9deb1984e70bd27",
+    "harness.c": "b5c402ab8a0342f2dd5c813c008e0af9124f961cd99a3826f50d77f0739e9371",
+    "protocol.md": "e624edc39bdd9cdead3ec88236fe237b2aedf921dba4337c691468c7cfea0be2",
+    "run.py": "c4083567181a6995f5358c604a2dc884bab5d6aa8352c413a2afe7d983e51005",
+    "zero.json": "8588d6e5d86595ebbfe66c601b08e26d8d992a7ef5db2ba96100d61db05842ae"
+  },
+  "source_commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+  "status": "PUBLIC_DERIVATIVE_NOT_EXECUTED",
+  "transformation": "Local preparation observations omitted from protocol; public hashes identify this derivative, not the original execution package. Unchanged source, harness, runner and fixtures retain their identities."
+}

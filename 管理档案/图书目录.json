@@ -925,7 +925,7 @@
         "support": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
         "reader_sha256": "a7a216e5deb6ca1d1c42ee1b3768999e90c7f4525774b8e2eb7fa0dfc077ae58"
       },
-      "reader_sha256": "c823342ce31093200aef4bafc4e5f6e2e49cb0beb4df16434f62c442b3e81698",
+      "reader_sha256": "61ee91ad76e0723c78d37a01ee0a583a126453551e2ff4cc1faa6d8df8f48c93",
       "review_paths": [
         "管理档案/审查/半透明三角形顺序-来源与读者审查.md"
       ],
@@ -935,6 +935,12 @@
         "reader_review": "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
         "reader_sha256": "c823342ce31093200aef4bafc4e5f6e2e49cb0beb4df16434f62c442b3e81698",
         "execution": "Source-grounded stipulated composition only; no optimizer or GPU execution."
+      },
+      "sparse_native_support": {
+        "source_record": "管理档案/来源笔记/cgltf-sparse-native.json",
+        "review": "管理档案/审查/cgltf稀疏展开-原生与读者审查.md",
+        "support": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+        "scope": "Two fixed scalar configurations through pinned cgltf, repeated by another operator on same host; no model import or general validator claim."
       }
     },
     {
@@ -2168,7 +2174,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "3d98d3693a5947d60feb9591f5a750d0a689069f",
+  "publication_base_sha": "363dca4d59a2885feb6f9db79c72c247ff99bad3",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

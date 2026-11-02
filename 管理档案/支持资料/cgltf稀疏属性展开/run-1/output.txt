@@ -1,0 +1,3 @@
+dense.json parse=success load=success validate=success count=4 values=[10,7,30,9] read_float=false
+zero.json parse=success load=success validate=success count=4 values=[0,7,0,9] read_float=false
+PASS two_fixtures_only
