@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T10:17:48Z",
+      "last_progress_at": "2026-11-02T10:33:11Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -5083,7 +5083,10 @@
       "expected_artifact": "Historical production case and original finite dependency counterexample, with no scheduler implementation claim",
       "artifact_paths": [
         "GameLibrary/引擎与工具/世界加载/资源流送/Horizon如何组织资源读取与依赖初始化.md",
-        "管理档案/研究记录/source-notes/horizon-streaming-dependency-initialization.md"
+        "管理档案/研究记录/source-notes/horizon-streaming-dependency-initialization.md",
+        "管理档案/支持资料/任务敌人出现时，地面为什么还没准备好.md",
+        "管理档案/审查/任务与世界驻留-来源与读者审查.md",
+        "管理档案/来源笔记/sunset-mission-collision.json"
       ],
       "acceptance": [
         "Read original official slide text and inspect order/process pages",
@@ -5094,7 +5097,7 @@
         "Exclude source slides and all private execution metadata"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T09:39:28.837833Z",
+      "last_progress_at": "2026-11-02T10:33:11Z",
       "next_action": "Retain source date uncertainty, separate file/object graphs and original dependency assumptions; no runtime or performance guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T09:41:02.840844Z",
@@ -5112,7 +5115,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "59cf65c29bb494c64b4a0956321f2c6d2aa0a2efca79b3c98864f100a05c700f"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional distinct Sunset production case explains mission versus world residency and collision support; not a shared engine implementation or runtime validation."
     },
     {
       "id": "TASK-2026-0144",

@@ -1,0 +1,36 @@
+{
+  "topic": "Mission-resident enemies and streamed collision ground in Sunset Overdrive",
+  "accessed_on": "2026-11-02",
+  "source": {
+    "author": "Elan Ruskin",
+    "organization": "Insomniac Games",
+    "title": "Streaming in Sunset Overdrive's Open World",
+    "event": "GDC 2015",
+    "session": "https://www.gdcvault.com/play/1022268/Streaming-in-Sunset-Overdrive-s",
+    "slides": "https://media.gdcvault.com/gdc2015/presentations/Ruskin_Elan_SunsetOverdriveStreaming.pdf",
+    "pdf_sha256": "c540fa24a96c5ef2f5945acf9de483d6d9d212d5030fc9d3de4ddbb9a197f175",
+    "pdf_physical_page_count": 185,
+    "page_numbering": "Physical PDF pages, starting at 1; printed slide numbers differ and sometimes repeat.",
+    "relevant_sections": {
+      "79-81": "Mission-global lifetime, memory cost and placement maintenance with world geometry",
+      "82-84": "Shadow-zone condition combines loaded base region with active mission",
+      "140": "Visible stand-ins may remain without solid world collision",
+      "142-146": "Train mission, enemy readiness and spawning before streamed ground",
+      "147-149": "Mission carries full track, disables ordinary track while active, and supplies collision platforms below enemies"
+    }
+  },
+  "main_reading": {
+    "text_physical_pages": ["43-44", "63-76", "78-99", "124-140", "142-166", "174-182"],
+    "visually_inspected_physical_pages": [81, 143, 147, 149],
+    "complete_185_page_reading": false,
+    "video_watched": false
+  },
+  "independent_source_reading": {
+    "text_physical_pages": ["79-84", "140-149"],
+    "visually_inspected_physical_pages": [81, 143, 147, 149],
+    "session_identity_reopened": true,
+    "video_watched": false
+  },
+  "scope": "Historical production case plus explicitly labeled editorial application reasoning; no game, loader, physics, timing, memory or performance execution. Critical support geometry does not establish complete combat, AI or navigation readiness.",
+  "rights": "Link and original analysis only; source PDF, slide images and video are not redistributed in the repository."
+}
