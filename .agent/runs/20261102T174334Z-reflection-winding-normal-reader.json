@@ -1,0 +1,17 @@
+{
+  "run_id": "20261102T174334Z-reflection-winding-normal-reader",
+  "observed_at": "2026-11-02T17:43:34Z",
+  "parent_verified_head": "001d9db0cea337daead92ad6818f12f45eff480d",
+  "task": "TASK-2026-0104",
+  "note_path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+  "note_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8",
+  "source_note": "管理档案/来源笔记/reflection-winding-normal.json",
+  "review": "管理档案/审查/镜像绕序与着色法线-来源与读者审查.md",
+  "verification_scope": "Fixed sources, independent paper mechanism and complete-reader review. No model, shader, GPU or engine execution or redraw.",
+  "reader_inventory": {
+    "current": 81,
+    "frozen": 55,
+    "post_baseline": 26
+  },
+  "publication": "Note and public maintenance records belong to the same containing commit; parent_verified_head is the preceding verified revision, not a claim this local candidate is already remote."
+}

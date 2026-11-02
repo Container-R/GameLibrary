@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "specification_commit": "59ecbdba704206bb656965ab4e202881806066f1",
+  "specification_url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+  "read_sections": [
+    "874-913 global transform",
+    "1808-1834 tangent convention",
+    "2190-2215 winding",
+    "2819-2842 normal texture",
+    "2917-2934 double sided"
+  ],
+  "renderer_commit": "6e8a3d1aaa6f07e9f1310a488453e21325677786",
+  "renderer_url": "https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/renderer.js",
+  "renderer_sections": [
+    "680-720 grouping; not complete instancing audit",
+    "1810-1885 matrix/frontFace/culling"
+  ],
+  "vertex_url": "https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/shaders/primitive.vert",
+  "vertex_scope": "File read; new explanation restricts to NORMAL without TANGENT, no skin/morph/USE_INSTANCING and ordinary single-sided non-picking draw.",
+  "note_path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+  "note_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8",
+  "review_path": "管理档案/审查/镜像绕序与着色法线-来源与读者审查.md",
+  "scope": "Original paper triangle reflection separates ordered edge cross product, inverse-transpose shading normal and front-face state.",
+  "limits": "No execution, GPU result, renderer-bug finding, general tangent-w prescription or new image. Earlier Mikk UV evidence is not reflection evidence."
+}

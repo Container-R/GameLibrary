@@ -68,11 +68,23 @@ N_{\rm wrong}\cdot T'=\frac{4-1}{5}=\frac35.
 
 固定 Khronos 示例渲染器提供了一个具体代码对照：renderer.js 构造逆转置法线矩阵；所选 primitive.vert 分支用它变换法线，用模型矩阵变换切线，再构造副切线。[2] 这说明一种实现如何区分两种方向，不代表所有引擎都采用相同代码。
 
-本文选择的路径已有 N/T、对象静态、没有形变目标（morph）或骨骼蒙皮（skin）、未启用着色器的 USE_INSTANCING 分支，也未启用法线贴图的UV变换分支（normal-UV transform）；只讨论顶点处的基向量。“未启用该分支”不等于禁止普通 glTF 节点实例化。两份源提交的时间分别为 2026-10-30（规范）与 2026-10-26（示例实现），仅用于标识修订，不作为独立发布版本日期。
+前述非均匀缩放代码对照选择的路径已有 N/T、对象静态、没有形变目标（morph）或骨骼蒙皮（skin）、未启用着色器的 USE_INSTANCING 分支，也未启用法线贴图的UV变换分支（normal-UV transform）；只讨论顶点处的基向量。“未启用该分支”不等于禁止普通 glTF 节点实例化。两份源提交的时间分别为 2026-10-30（规范）与 2026-10-26（示例实现），仅用于标识修订，不作为独立发布版本日期。
+
+## 镜像以后，绕序与着色法线要分开检查
+
+把模型的 X 坐标取反后，一面突然看不见，是否只要把法线反过来？先别把“哪个面会被画出来”和“照明使用什么方向”合并成一个问题。以下另用反射矩阵 `R=diag(−1,1,1)`，不是前面的拉伸矩阵 A；仍是纸面例子，没有观察实际画面。
+
+取三角形三个顶点依序为 `(0,0,0)`、`(1,0,0)`、`(0,1,0)`，给定着色法线 `N=(0,0,1)`。约定右手叉积，观察者从 +Z 正交看向原点，屏幕向右、向上分别对应 +X、+Y，不额外引入翻转屏幕方向的变换。原来的顶点顺序在屏幕上是逆时针，两条边的叉积为 +Z。保持索引顺序不变，镜像后顶点变成 `(0,0,0)`、`(−1,0,0)`、`(0,1,0)`：顺序变成顺时针，边的叉积成为 −Z；但给定法线按逆转置变换后，`R⁻ᵀN` 仍为 +Z，仍垂直于表面。
+
+这不是两个计算互相矛盾。边的叉积还携带了**顶点排列的定向**，逆转置变换的是事先给定的着色法线。这里没有封闭物体，不能只凭这个孤立三角形宣布哪一侧是物体“外部”。如果保持 +Z 这一侧为镜像后希望呈现的正面，就必须让正面判定与新的顺时针排列相容。若三角形在可见裁剪范围内，仍将逆时针设为正面并启用背面剔除，它就会被按背面剔除；这只是给定规则后的推论，不是实际画面观察。只改用于照明的法线，而不改位置、索引或正面状态，不会改变这个分类；这里不包括用法线驱动顶点位移的自定义效果。
+
+固定 glTF 规范按节点的**全局变换**行列式规定实例的正面绕序：正值对应逆时针，负值对应顺时针。[3] 全局变换包含父节点的变换，不能只看当前节点某个局部缩放框里的负号。固定示例渲染器也把两件事分开：先构造逆转置法线矩阵，再独立设置 `frontFace`；按单面或双面材质决定是否剔除背面。[2] 此处只对照提供 NORMAL、没有 TANGENT，且没有 skin、morph、USE_INSTANCING 的普通单面绘制路径，不含拾取绘制。
+
+把材质改成双面也不是含义不变的修复。glTF 的双面规则不仅关闭背面剔除，还要求将背面三角形的法线取反。[3] 排查时先说明希望哪一侧被当作正面，再分别核对顶点变换、正面状态和着色方向，而不是见到负缩放便同时翻法线、改索引或翻切线 w。本节只补充绕序与法线的区别，不给出副切线重建的统一修法。
 
 ## 这个例子还没有解决什么
 
-本例 A 可逆且行列式为正。glTF 对行列式符号与正面绕序另有规定，但绕序、法线方向和副切线构造不是同一个问题。[3] 不能从这里推出所有负缩放都应该统一翻转 w，也不能据此宣称示例渲染器存在缺陷。
+前述 A 缩放例可逆且行列式为正；新增的 R 反射例只补充绕序与着色法线的区别，没有完成负变换下的切线基处理。绕序、法线方向和副切线构造不是同一个问题。[3] 不能从这里推出所有负缩放都应该统一翻转 w，也不能据此宣称示例渲染器存在缺陷。
 
 顶点处方向正确，还不等于插值后的基一定正交、法线贴图重建一定正确，或最终画面没有伪影。奇异或近退化变换、剪切、蒙皮、morph、切线生成、双面材质与纹理变换不在本例验证范围内；实际材质和设备上的表现仍须另外检查。本文没有执行数值模型、导入器、着色器或引擎渲染，也没有生成或导入游戏资产；新增平面插图只呈现已有代数关系。
 
@@ -84,10 +96,12 @@ N_{\rm wrong}\cdot T'=\frac{4-1}{5}=\frac35.
 
 [1] Khronos，glTF 2.0 固定规范提交 `59ecbdba704206bb656965ab4e202881806066f1`：[属性表](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1661-L1662)与 [Using Primitive Data](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1813-L1830)。局部 NORMAL、TANGENT 与副切线的含义。
 
-[2] Khronos，glTF-Sample-Renderer 固定提交 `6e8a3d1aaa6f07e9f1310a488453e21325677786`：[renderer.js 1835–1862](https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/renderer.js#L1835-L1862)及 [primitive.vert 83–161](https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/shaders/primitive.vert#L83-L161)。引用的是所述分支的代码，不是运行观察或通用实现保证。
+[2] Khronos，glTF-Sample-Renderer 固定提交 `6e8a3d1aaa6f07e9f1310a488453e21325677786`：[renderer.js 1835–1872](https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/renderer.js#L1835-L1872)及 [primitive.vert 83–161](https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/6e8a3d1aaa6f07e9f1310a488453e21325677786/source/Renderer/shaders/primitive.vert#L83-L161)。分别对照非均匀缩放的 N/T 分支与反射说明的仅 NORMAL 分支，以及独立的正面、剔除设置；不是运行观察或通用实现保证。
 
-[3] Khronos，同一 glTF 规范快照的[实例化条款](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2195-L2203)。保留行列式符号与绕序的独立边界。
+[3] Khronos，同一 glTF 规范快照的[全局变换定义](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L912)、[实例化条款](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2195-L2203)与[双面材质条款](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2917-L2924)。分别说明全局变换、行列式符号与绕序、剔除及背面法线，不能合并为一个翻转操作。
 
-原笔记来源核对日期为 2026-11-01；本次为同一笔记的读者向整理，数学例子与固定来源范围不变。
+原笔记来源核对日期为 2026-11-01；最初的读者向整理保留了原数学例子与固定来源范围。
 
 2026-11-02 增加平面示意图，数学例子与固定来源范围不变。
+
+2026-11-02 补充 R 反射的纸面例子与上述固定来源对照；未新增运行、导入或渲染观察。
