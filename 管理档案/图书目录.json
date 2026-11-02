@@ -628,8 +628,8 @@
         "管理档案/审查/透明度与PCM-原范围去向核对.md",
         "管理档案/审查/透明度与PCM-支持入口复核.md"
       ],
-      "scope_disposition": "颜色域和转换次序已在新主线覆盖；精度、舍入与有限实验限制留旧double buffer精确小节，新书增加可选入口，不新增颜色管理书",
-      "supporting_material": "solutions/art2d/alpha-association-contract.md#double-buffer-不代表全程-double也不保证最终字节相同",
+      "scope_disposition": "颜色域与转换次序在主线覆盖；精度与舍入由当前自然支持承接，有限旧实验与失败/身份限制保留原来源笔记和固定历史，不新建颜色管理书。",
+      "supporting_material": "管理档案/支持资料/颜色数值足够接近，为什么保存出的字节仍不同.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
@@ -638,9 +638,15 @@
         "reader_review": "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md",
         "reader_sha256": "e0ab9729d3b28d86ecfaef69b364b28f08268247ff9f94874f2002623c0a949d"
       },
-      "reader_body_sha256": "e0ab9729d3b28d86ecfaef69b364b28f08268247ff9f94874f2002623c0a949d",
-      "latest_review_path": "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md",
-      "source_record": "管理档案/来源笔记/alpha-test-mip-coverage.json"
+      "reader_body_sha256": "691026ad8296121335ca8f5c874b68124b01f419ae2f14c49c2d9243133f5395",
+      "latest_review_path": "管理档案/审查/颜色误差与字节量化-读者审查.md",
+      "source_record": "管理档案/来源笔记/alpha-test-mip-coverage.json",
+      "precision_quantization_entry": {
+        "support": "管理档案/支持资料/颜色数值足够接近，为什么保存出的字节仍不同.md",
+        "source_note": "管理档案/来源笔记/color-quantization-reader.json",
+        "review": "管理档案/审查/颜色误差与字节量化-读者审查.md",
+        "scope": "Existing historical mathematics made readable with a constructed allowed-error counterexample; no new CMM or GPU execution."
+      }
     },
     {
       "internal_id": "SOL-SFX-001",
@@ -1950,7 +1956,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "75502302e13186d5d1f8af01bb27989e9ca1dd74",
+  "publication_base_sha": "0a2c4c02fbbd6b4a30e3ed4faecd7ab811084255",
   "accounted_for_original_items": 55,
   "reader_books_total": 80,
   "post_baseline_research_books": 25,

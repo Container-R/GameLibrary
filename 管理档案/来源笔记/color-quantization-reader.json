@@ -1,0 +1,30 @@
+{
+  "title": "颜色误差与最终通道字节",
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+  "reader_sha256": "691026ad8296121335ca8f5c874b68124b01f419ae2f14c49c2d9243133f5395",
+  "support_path": "管理档案/支持资料/颜色数值足够接近，为什么保存出的字节仍不同.md",
+  "support_sha256": "6efff6b9d1fc47434b25086fb2c706df722564ad35b146507451328e6fd850ea",
+  "sources": [
+    {
+      "url": "https://www.w3.org/TR/2024/CRD-css-color-4-20240213/#color-conversion-code",
+      "scope": "Dated nonnormative section17 lin_sRGB and gam_sRGB; mathematical reference only"
+    },
+    {
+      "repository": "https://github.com/mm2/Little-CMS",
+      "commit": "b76633e60c8387a77268fb3359277ca25b5fd75c",
+      "files": {
+        "src/cmspack.c": "1402–1450 and3108–3155, double boundary to/from float arrays",
+        "src/cmsxform.c": "258–316, FloatXFORM intermediate arrays"
+      },
+      "scope": "Selected fixed code paths, not all plugins or installed-build provenance"
+    }
+  ],
+  "historical_basis": {
+    "article_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "section": "double buffer 不代表全程 double，也不保证最终字节相同",
+    "retained_source_note": "管理档案/研究记录/source-notes/lcms-transfer-boundary.md"
+  },
+  "verification_method": "Primary fixed-source reading, mathematical recomputation and independently reviewed constructed counterexample. No new LittleCMS, image export or GPU execution.",
+  "example_scope": "Final encoded normalized sRGB absolute error1e-4, nearest-integer8-bit quantization without dithering, non-tie in-range values; not actual CMM output differences or visual quality."
+}

@@ -300,7 +300,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T15:20:43Z",
+      "last_progress_at": "2026-11-02T15:38:54Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -2665,7 +2665,10 @@
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
         "管理档案/研究记录/source-notes/lcms-transfer-boundary.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/支持资料/颜色数值足够接近，为什么保存出的字节仍不同.md",
+        "管理档案/来源笔记/color-quantization-reader.json",
+        "管理档案/审查/颜色误差与字节量化-读者审查.md"
       ],
       "acceptance": [
         "Read and hash the exact prior article and tested fixture",
@@ -2675,7 +2678,7 @@
         "Do not run native or graphics tests before protocol acceptance"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:00:20.212095Z",
+      "last_progress_at": "2026-11-02T15:38:54Z",
       "next_action": "Retain finite normalized conversion scope and independent prior alpha evidence; target renderer/display pipelines require separate validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:06:10.224999Z",
@@ -2699,7 +2702,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "0aa8f0b63baa1a396e6b88fbcc656503753baf0b8ab4c700f314e2992ad1a68d"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Replace the historical precision detour with a current readable support; preserve previous experiment and failed-review scope without rerunning."
     },
     {
       "id": "TASK-2026-0076",
