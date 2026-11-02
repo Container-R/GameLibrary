@@ -1,0 +1,41 @@
+{
+  "topic": "SQLite WAL stale read snapshots and reward rechecks",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "publisher": "SQLite",
+      "title": "Transaction",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "version_scope": "Mutable official documentation; inspected page footer updated 2026-02-18",
+      "read_scope": "Full page; sections 2.1, 2.2, 2.3 and 3 used for transaction and error distinctions",
+      "use": "Multiple readers, one writer, deferred upgrade and transaction-state-sensitive recovery; not a rule to retry every BUSY identically"
+    },
+    {
+      "publisher": "SQLite",
+      "title": "Isolation In SQLite",
+      "url": "https://www.sqlite.org/isolation.html",
+      "version_scope": "Mutable official documentation; inspected page footer updated 2022-04-18",
+      "read_scope": "Full page, including separate-connection and same-connection discussion",
+      "use": "WAL snapshot read, obsolete snapshot upgrade, ending the old read transaction before obtaining a new view"
+    },
+    {
+      "publisher": "SQLite",
+      "title": "Result and Error Codes",
+      "url": "https://www.sqlite.org/rescode.html#busy_snapshot",
+      "version_scope": "Mutable official documentation",
+      "read_scope": "Overview, primary/extended code definitions, complete SQLITE_BUSY_SNAPSHOT (517) explanation and its three-step example; not every result-code entry",
+      "use": "Require the actual extended code 517 rather than inferring it from a generic locked message"
+    },
+    {
+      "publisher": "Python Software Foundation",
+      "title": "sqlite3 — DB-API 2.0 interface for SQLite databases",
+      "url": "https://docs.python.org/3.12/library/sqlite3.html",
+      "version_scope": "Python 3.12 documentation; inspected page displayed 3.12.16, not an assertion about the executing binary",
+      "read_scope": "Connection parameters, autocommit/isolation_level/in_transaction attributes, sqlite_errorcode and sqlite_errorname, transaction-control explanation",
+      "use": "Explicit LEGACY_TRANSACTION_CONTROL and isolation_level=None for this manual-SQL protocol; actual connection attributes and structured errors observed"
+    }
+  ],
+  "deduplication": "Historical DELETE-mode ledger, writer-contention and COMMIT-BUSY fixtures did not cover a reader retaining an old WAL snapshot after another connection commits. New work is a bounded supplement to the existing economy article, not a replacement or rerun of those historical experiments.",
+  "protocol_scope": "One thread, one file, predetermined calls on two overlapping connections in WAL. Two attempted upgrades within each invocation are the same stale-snapshot condition. Normal close/reopen is not crash recovery or power-loss durability.",
+  "copyright": "Original explanation and small purpose-written fixture; no copied documentation bulk or third-party source archive."
+}

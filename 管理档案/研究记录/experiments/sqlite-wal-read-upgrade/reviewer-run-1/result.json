@@ -1,0 +1,28 @@
+{
+  "child_exit": 0,
+  "cleanup_complete": true,
+  "environment_validated": true,
+  "input_hashes_after": {
+    "PROTOCOL.md": "22e02a6b04a6865d81c873ba556366ce194dffab884b1390798a6fe666263556",
+    "checker.py": "a29d87fccd5171332ee443c9a1709b72df6da5f2f4e6b573fe7fb563d6a398b2",
+    "child.py": "dcc33158d1192124213a6abaea7d2ec02f6ffe336f78915c83f146751ed11902",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "run.py": "aedbdcf446a469a7e26405ab39600514fe2d99c9385e3a7ed5e7b4c5da47f0d4",
+    "test_checker.py": "30bf05dc10ea4f7a578cba10dc0348423535a257331c9cf3680e2398bd1a2540"
+  },
+  "input_hashes_before": {
+    "PROTOCOL.md": "22e02a6b04a6865d81c873ba556366ce194dffab884b1390798a6fe666263556",
+    "checker.py": "a29d87fccd5171332ee443c9a1709b72df6da5f2f4e6b573fe7fb563d6a398b2",
+    "child.py": "dcc33158d1192124213a6abaea7d2ec02f6ffe336f78915c83f146751ed11902",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "run.py": "aedbdcf446a469a7e26405ab39600514fe2d99c9385e3a7ed5e7b4c5da47f0d4",
+    "test_checker.py": "30bf05dc10ea4f7a578cba10dc0348423535a257331c9cf3680e2398bd1a2540"
+  },
+  "native_children_started": 1,
+  "native_spawn_attempts": 1,
+  "schema": 1,
+  "status": "PASS",
+  "stderr_empty": true,
+  "stdout_sha256": "ffa59d4845dc9174e9d7582ca712230c61d8755e4f31dcadfa623c2b7ea86f76",
+  "timed_out": false
+}

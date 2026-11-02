@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "OBSERVED",
+  "steps": [
+    {"step":"configuration","set_mode":[["wal"]],"A_mode":[["wal"]],"B_mode":[["wal"]],"A_busy_timeout":[[0]],"B_busy_timeout":[[0]],"A_read_uncommitted":[[0]],"B_read_uncommitted":[[0]],"A_autocommit":-1,"B_autocommit":-1,"A_isolation_level":null,"B_isolation_level":null,"distinct_connections":true,"A_in_transaction":false,"B_in_transaction":false},
+    {"step":"initialized","balances":[["player-one",100]],"operations":[],"in_transaction":false},
+    {"step":"A_initial_read","balances":[["player-one",100]],"operations":[],"in_transaction":true},
+    {"step":"B_before_write","balances":[["player-one",100]],"operations":[],"in_transaction":true},
+    {"step":"B_committed","balances":[["player-one",112]],"operations":[["player-one","reward-one",112]],"in_transaction":false},
+    {"step":"A_old_snapshot","balances":[["player-one",100]],"operations":[],"in_transaction":true},
+    {"step":"A_upgrade_attempt_1","outcome":"exception","code":517,"name":"SQLITE_BUSY_SNAPSHOT","primary_code":5,"in_transaction":true},
+    {"step":"A_upgrade_attempt_2","outcome":"exception","code":517,"name":"SQLITE_BUSY_SNAPSHOT","primary_code":5,"in_transaction":true},
+    {"step":"A_rollback","in_transaction":false},
+    {"step":"A_recheck","balances":[["player-one",112]],"operations":[["player-one","reward-one",112]],"in_transaction":true},
+    {"step":"A_duplicate_committed","branch":"duplicate_result","result_amount":112,"in_transaction":false},
+    {"step":"fresh_connection","balances":[["player-one",112]],"operations":[["player-one","reward-one",112]],"in_transaction":false}
+  ],
+  "fixture_sha256":"dcc33158d1192124213a6abaea7d2ec02f6ffe336f78915c83f146751ed11902",
+  "versions":{"python":"3.12.0","sqlite":"3.45.0"},
+  "connections_opened":3,
+  "connections_closed":3,
+  "cleanup_complete":true
+}

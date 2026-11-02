@@ -6748,6 +6748,34 @@
       "next_action": "A concrete service still needs its own storage isolation, conflicting-request behavior and recovery validation; the source-only supplement does not provide an implementation.",
       "blockers": [],
       "verification_method": "Original-source text, unexecuted interleaving and independent complete reader review."
+    },
+    {
+      "id": "TASK-2026-0197",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why does repeating an UPDATE in an obsolete WAL read snapshot not re-evaluate whether the same reward was already committed?",
+      "discipline": "DESIGN",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Fill the precise read-upgrade gap without repeating existing DELETE-mode storage examples or adding another general idempotency article.",
+      "expected_artifact": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+      "artifact_paths": [
+        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+        "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
+        "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
+        "管理档案/研究记录/experiments/sqlite-wal-read-upgrade/README.md"
+      ],
+      "acceptance": [
+        "Inspect historical fixtures for overlapping coverage",
+        "Freeze protocol and source before native observations",
+        "Separate author repeats, independent literal checks and independent execution",
+        "Read the full revised article and primary SQLite sources",
+        "Publish only reviewed technical observations, not private diagnostics"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T06:20:00Z",
+      "next_action": "Use the source-specific recovery distinction when reviewing a real storage implementation; this fixture is not an online reward service or durability guarantee.",
+      "blockers": [],
+      "verification_method": "Source-backed mechanism, finite same-environment native sequence, independent literal and complete reader review; detailed scope in the linked support."
     }
   ],
   "execution_policy": {

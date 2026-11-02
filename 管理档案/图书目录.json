@@ -692,7 +692,11 @@
       "scope_disposition_review": "管理档案/审查/经济存储支持入口-增量审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_body_sha256": "d6a213322a657a6cbf2f7cede182c4c50ab83c37863956f73c291eb2b4637451",
+      "latest_review_path": "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
+      "source_record": "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
+      "latest_supplement": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately."
     },
     {
       "internal_id": "SOL-ENGINE-002",
@@ -1638,7 +1642,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
+  "publication_base_sha": "dfff35387414908daf2060f9c3059db297c84d52",
   "accounted_for_original_items": 55,
   "reader_books_total": 73,
   "post_baseline_research_books": 18,
