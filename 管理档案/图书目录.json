@@ -708,11 +708,12 @@
       "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
       "legacy_current_tree_present": false,
       "latest_increment": {
-        "scope": "Git tree names and target-directory/tool name lookup can differ; ignoreCase is not a filesystem or reference-repair switch.",
-        "reader_sha256": "1e247d12a091f0e25f18e6ea954a87f7978824d562cd3073369c4bdd8ad4c6b0",
-        "reader_review": "管理档案/审查/资产路径大小写-来源与读者审查.md",
-        "source_revision": "Git2.47.0 commit777489f9e09c8d0dd6b12f9d90de6376330577a2; Microsoft rolling case-sensitivity guidance.",
-        "execution": "Fixed-source analysis and hypothetical ASCII paths only; no checkout, rename, import or platform experiment."
+        "scope": "LFS pointer presence, object availability and working-file materialization are separate checks in preparing an independent asset copy.",
+        "reader_sha256": "1624509f7624dc2e170322157a81d4cebe6c381f45b57f19f4ce7bce14dd92c3",
+        "reader_review": "管理档案/审查/LFS实际内容-来源与读者审查.md",
+        "source_revision": "git-lfs3.6.1 commitea47a34bde1ba1ecf9eb8dc6d44fcf7aef42f5e3",
+        "execution": "Fixed official document analysis and hypothetical ordinary media path only; no Git/LFS/filter/media download execution.",
+        "preceding_case_review": "管理档案/审查/资产路径大小写-来源与读者审查.md"
       }
     },
     {

@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T02:30:00Z",
+      "lease_until": "2026-11-02T02:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:48:43Z",
-      "next_action": "Read fixed Git LFS pointer/materialization documentation against existing asset-import and build readers; decide whether a bounded integration adds value, without fetching media or running Git.",
+      "last_progress_at": "2026-11-02T01:56:37Z",
+      "next_action": "Read existing localization/BiDi readers and fixed font-coverage/shaping sources; determine whether a concrete coverage-versus-layout gap remains before drafting.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6735,6 +6735,35 @@
       "next_action": "For a project compare authoritative source paths with actual target naming and tool lookup rules, preserve both intended assets and adjust references through an approved change.",
       "blockers": [],
       "verification_method": "Fixed Git source and Microsoft documentation; hypothetical ASCII case pair, no Git/filesystem/engine execution."
+    },
+    {
+      "id": "TASK-2026-0184",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can an asset path exist after checkout while its working file still contains an LFS pointer rather than the required media?",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 81,
+      "priority_rationale": "Clarify actual source-content readiness within the existing independent-copy handoff step, not another Git tutorial.",
+      "expected_artifact": "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/资产导入/换一台电脑后如何保持资产导入结果一致.md",
+        "管理档案/审查/LFS实际内容-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read current import and build coverage",
+        "Independently read fixed LFS specification and two filter manuals",
+        "Explain path-filter pointer passthrough without inventing failure behavior",
+        "Distinguish object retrieval from working-file replacement",
+        "Preserve all earlier path/import experiments and limitations",
+        "Complete full reader and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:56:37Z",
+      "next_action": "For project handoff confirm selected content, availability and actual importer input through the approved toolchain; then perform the existing import-setting/result checks.",
+      "blockers": [],
+      "verification_method": "Fixed official LFS3.6.1 document analysis; hypothetical path-filter scenario, no Git, filters, media download or new import execution."
     }
   ],
   "execution_policy": {
