@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 69
+    "reader_books_total": 70
   },
   "publication": {
-    "last_verified_head_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
+    "last_verified_head_sha": "a113f11fffffc516330b9634a73f13ca2f21b15e",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "69 reader books unchanged; existing normal-transform note becomes easier to read and find from the matrix book.",
-    "latest_verified_content_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
-    "reader_books_total": 69,
-    "post_baseline_research_books": 14,
-    "counts_basis": "Editorial/navigation repair of existing knowledge, not a new book, discovery or native test."
+    "scope": "Entity identity reader distinguishes controlled snapshot restoration from source-scoped import mapping.",
+    "latest_verified_content_sha": "a113f11fffffc516330b9634a73f13ca2f21b15e",
+    "reader_books_total": 70,
+    "post_baseline_research_books": 15,
+    "counts_basis": "One independently reviewed source-grounded reader book, not a new runtime test."
   },
-  "next_action": "Check the ECS entity-identity candidate against the current canonical reader/source-note baseline before admitting a draft; keep existing knowledge edits distinct from new research.",
+  "next_action": "Select the next existing high-value queue gap only after reading its current reader body and support notes; integrate overlapping knowledge instead of duplicating it.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T01:00:00Z",
+    "lease_until": "2026-11-02T01:15:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T003852Z-normal-note-reader-entry",
+  "last_run_id": "20261102T004808Z-ecs-entity-identity",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T00:38:52Z",
-  "last_commit_sha": "e6b9dc1f9539e42ab5c715b0eca23926342faee0",
+  "last_real_progress_at": "2026-11-02T00:48:08Z",
+  "last_commit_sha": "a113f11fffffc516330b9634a73f13ca2f21b15e",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

@@ -3,7 +3,7 @@
 从仓库根检查当前无YAML的69篇正文：
 
 ```sh
-python3 管理档案/工具/taxonomy/check_taxonomy.py --root . --taxonomy 管理档案/分类/disciplines.json --mode reader --expected-count 69 --manifest 管理档案/图书目录.json
+python3 管理档案/工具/taxonomy/check_taxonomy.py --root . --taxonomy 管理档案/分类/disciplines.json --mode reader --expected-count 70 --manifest 管理档案/图书目录.json
 python3 -B 管理档案/工具/taxonomy/test_check_taxonomy.py
 python3 -B -O 管理档案/工具/taxonomy/test_check_taxonomy.py
 ```
