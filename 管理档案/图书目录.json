@@ -1250,7 +1250,15 @@
       "scope_disposition_review": "管理档案/审查/Killzone行动计划-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/killzone3-plan-execution-continuation.md",
-      "old_path_history_commit": "cc99dab476ab93db828afed227eb88b93574fcde"
+      "old_path_history_commit": "cc99dab476ab93db828afed227eb88b93574fcde",
+      "reader_sha256": "80ffb44904f88fae8878ed27d0529c06bc8f1ea5e7782c9d29800478c499e5a5",
+      "behavior_tree_support": {
+        "path": "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
+        "sha256": "a37459d420b91b3cf2a1a58793fd8cfb953e03f75807ac7e6b6b2b0a9a8f01aa",
+        "source_record": "管理档案/来源笔记/behavior-tree-reactive-sequence.json",
+        "review": "管理档案/审查/行为树条件重评估-来源与读者审查.md",
+        "scope": "Separate fixed BehaviorTree.CPP source comparison, not Killzone implementation or execution."
+      }
     },
     {
       "internal_id": "CASE-AI-002",
@@ -2033,7 +2041,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c8c6db2668233ced199fc566349f8b6d7389fcb9",
+  "publication_base_sha": "c4f59fce14ff584d878d6ce42699f5802b414dc5",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

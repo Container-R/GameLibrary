@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T18:01:48Z",
+      "last_progress_at": "2026-11-02T18:13:29Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -2719,7 +2719,10 @@
       "expected_artifact": "Source-backed Killzone3 historical case and explicitly unexecuted original execution/continuation acceptance worksheet",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
-        "管理档案/研究记录/source-notes/killzone3-plan-execution-continuation.md"
+        "管理档案/研究记录/source-notes/killzone3-plan-execution-continuation.md",
+        "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
+        "管理档案/来源笔记/behavior-tree-reactive-sequence.json",
+        "管理档案/审查/行为树条件重评估-来源与读者审查.md"
       ],
       "acceptance": [
         "Read original author chapter29 GameAIPro2013 and exact task/continuation/queue pages",
@@ -2729,8 +2732,8 @@
         "Independent source/editorial review and exact crosslinks to existing navigation/programming evidence"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:08:33.301165Z",
-      "next_action": "Retain historical source-only scope and unexecuted original acceptance worksheet; no shipped reproduction or cancellation guarantee",
+      "last_progress_at": "2026-11-02T18:13:29Z",
+      "next_action": "Maintain historical Killzone scope and separate fixed BehaviorTree.CPP optional control-flow comparison; neither is a native cancellation guarantee.",
       "blockers": [],
       "completed_at": "2026-11-01T01:13:23.479743Z",
       "commit_sha": "cbd47c78a859d49563b44e13cd29b2ed21b1826c",
@@ -2747,7 +2750,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "78d19d2e30b29db5d23bda3bf3fd894f9f414464d2cdd823e11c790e7d0da40c"
         }
-      ]
+      ],
+      "latest_maintenance_scope": "Optional source-only two-tick sequence comparison; original historical publication identity and completion retained."
     },
     {
       "id": "TASK-2026-0077",

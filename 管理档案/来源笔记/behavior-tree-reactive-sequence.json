@@ -1,0 +1,28 @@
+{
+  "read_on": "2026-11-02",
+  "repository": "https://github.com/BehaviorTree/BehaviorTree.CPP",
+  "version": "4.6.2",
+  "commit": "2a8a226fbbd99f524f0796e0d8a3145773c61c06",
+  "read_scope": {
+    "src/controls/sequence_node.cpp": "complete; tick36–102 and halt30–34",
+    "src/controls/reactive_sequence.cpp": "complete; tick25–91 and halt93–97",
+    "src/control_node.cpp": "complete; resetChildren38–48 and haltChild55–63",
+    "src/tree_node.cpp": "executeTick71–140, haltNode142–152, checkPreConditions187–240 and state reset region",
+    "src/action_node.cpp": "complete by author, StatefulActionNode153–187 emphasized; not all action types treated as equivalent",
+    "include/behaviortree_cpp/controls/sequence_node.h": "complete",
+    "include/behaviortree_cpp/controls/reactive_sequence.h": "complete",
+    "include/behaviortree_cpp/action_node.h": "complete by author",
+    "src/condition_node.cpp": "complete",
+    "LICENSE": "complete by author"
+  },
+  "scope": "Specific two-child control-flow explanation, not complete library audit or Killzone implementation. Current 4.8 online tutorial was background only and is not used as this fixed version source.",
+  "counterexample": "Condition changes between two actual ticks while Move remains RUNNING. Ordinary Sequence continues current index; ReactiveSequence reevaluates condition and routes failure to running action halt. Unexecuted.",
+  "excluded": "Additional scripts/callback overrides, external halt, action self-check, exceptional exits, arbitrary multiple asynchronous children, cancellation latency, actual movement results.",
+  "source_cautions": "Header reset_on_failure and exception comments do not override actual fixed cpp branches/default; no claim every misconfiguration throws.",
+  "license": "MIT; original explanation and links, no upstream implementation bulk copied.",
+  "support_path": "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
+  "support_sha256": "a37459d420b91b3cf2a1a58793fd8cfb953e03f75807ac7e6b6b2b0a9a8f01aa",
+  "reader_path": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+  "reader_sha256": "80ffb44904f88fae8878ed27d0529c06bc8f1ea5e7782c9d29800478c499e5a5",
+  "review_path": "管理档案/审查/行为树条件重评估-来源与读者审查.md"
+}

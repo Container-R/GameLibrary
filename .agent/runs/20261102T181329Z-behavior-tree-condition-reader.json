@@ -1,0 +1,20 @@
+{
+  "run_id": "20261102T181329Z-behavior-tree-condition-reader",
+  "observed_at": "2026-11-02T18:13:29Z",
+  "parent_verified_head": "c4f59fce14ff584d878d6ce42699f5802b414dc5",
+  "task": "TASK-2026-0076",
+  "reader_path": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+  "reader_sha256": "80ffb44904f88fae8878ed27d0529c06bc8f1ea5e7782c9d29800478c499e5a5",
+  "support_path": "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
+  "support_sha256": "a37459d420b91b3cf2a1a58793fd8cfb953e03f75807ac7e6b6b2b0a9a8f01aa",
+  "source_note": "管理档案/来源笔记/behavior-tree-reactive-sequence.json",
+  "review": "管理档案/审查/行为树条件重评估-来源与读者审查.md",
+  "outcome": "One optional paragraph connects existing continuation discussion to a fixed two-tick sequence comparison; remaining reader body unchanged.",
+  "verification_scope": "Primary source and independent control-flow/full-reader review; no native, game or cancellation timing experiment.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Support, entry and public records belong to same containing commit; parent_verified_head is preceding verified revision."
+}
