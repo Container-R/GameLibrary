@@ -1,0 +1,20 @@
+{
+  "run_id": "20261102T225005Z-near-extension-two-bone-geometry",
+  "observed_at": "2026-11-02T22:50:05Z",
+  "parent_verified_head": "e3925b11a1b452846e28eb1d5fb5433f154cd485",
+  "task": "TASK-2026-0003",
+  "reader_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+  "reader_sha256": "da00e03784c21f5ce396bc3e1b47739f646ac4d14f5b9eff191fe224d4a3f2db",
+  "prior_reader_sha256": "382d09c00463d3bf097ae09503f23d95e02483d0e0fd2da3decdffb6b7ea9794",
+  "source_record": "管理档案/来源笔记/near-extension-two-bone-geometry.json",
+  "review": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
+  "support_path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+  "outcome": "Add original equal-bone geometry support and a bounded source comparison to existing footsliding reader.",
+  "verification_scope": "Original arithmetic plus paper and independent reader review; no skeletal or engine execution.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Reader and public records belong to the same containing commit; parent_verified_head names preceding verified revision."
+}

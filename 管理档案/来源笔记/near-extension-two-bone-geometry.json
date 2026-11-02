@@ -1,0 +1,31 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+  "reader_sha256": "da00e03784c21f5ce396bc3e1b47739f646ac4d14f5b9eff191fe224d4a3f2db",
+  "prior_reader_sha256": "382d09c00463d3bf097ae09503f23d95e02483d0e0fd2da3decdffb6b7ea9794",
+  "support_path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+  "support_sha256": "03e7cfe5ec261a1f9513af1d2d944978b1db5769d4c914dece472c254bca17f1",
+  "review_path": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
+  "source": {
+    "authors_as_read": [
+      "Lucas Kovar",
+      "Michael Gleicher",
+      "John Schreiner"
+    ],
+    "title": "Footskate Cleanup for Motion Capture Editing",
+    "year": 2002,
+    "identity": "Eight-page author-group preprint; not a claim of byte identity to the final publisher edition.",
+    "url": "https://graphics.cs.wisc.edu/Papers/2002/KSG02/cleanup.pdf",
+    "sha256": "29bf5cae68d904f99f346cbf4d0796382692729da7cd1d8ff01e87bc5f9b4ad2",
+    "sections": [
+      "2",
+      "4.3–4.6",
+      "6"
+    ],
+    "main_read": "All text; physical page5 and6 images",
+    "independent_read": "Problem definition, algorithm, results and discussion text plus relevant captions; physical page6 image. Not a full related-work audit."
+  },
+  "scope": "Original equal-bone sensitivity example and finite historical algorithm tradeoff, linked from existing footsliding reader.",
+  "verification": "Independent arithmetic and source/reader review, not skeletal execution or paper reproduction.",
+  "limits": "Fixed planar equal bones; no joint limits, collisions, pole selection or performance measurement. No current engine guarantee."
+}

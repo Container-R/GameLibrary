@@ -134,12 +134,15 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T12:59:03.575994Z",
-      "last_progress_at": "2026-10-31T12:57:31.875426Z",
+      "last_progress_at": "2026-11-02T22:50:05Z",
       "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
       "blockers": [],
       "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc",
       "artifact_paths": [
-        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md"
+        "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+        "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+        "管理档案/来源笔记/near-extension-two-bone-geometry.json",
+        "管理档案/审查/近伸直两骨几何-来源与读者审查.md"
       ],
       "historical_artifacts": [
         {
@@ -148,7 +151,8 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "3aef4d5dfbe5be185ca787b3adb196e017198cbb713920af3c45778a24347ae2"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Explain reachable near-extension sensitivity with original equal-bone geometry; separate fixed-bone reach, knee angle response and a historical cleanup tradeoff."
     },
     {
       "id": "TASK-2026-0004",
@@ -310,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T22:41:22Z",
+      "last_progress_at": "2026-11-02T22:50:05Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
