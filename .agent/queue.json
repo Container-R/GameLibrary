@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T12:19:32Z",
+      "last_progress_at": "2026-11-02T12:43:19Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7038,6 +7038,33 @@
       "next_action": "For an actual native Steam Input integration, inspect the chosen device/context and current returned origins alongside displayed prompts; client and device checks remain unperformed here.",
       "blockers": [],
       "verification_method": "Targeted official-documentation reading, original unexecuted menu scenario and pseudocode, independent complete reader/source review."
+    },
+    {
+      "id": "TASK-2026-0206",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can changing position units alter motion-matching rankings, and how do shared feature scales differ from design weights?",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "A concrete numeric integration gap distinct from event timing and transition continuity.",
+      "expected_artifact": "GameLibrary/角色动画/动画运行时/动作选择/动作匹配没换素材，为什么改个单位就选了别的动作.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/动画运行时/动作选择/动作匹配没换素材，为什么改个单位就选了别的动作.md",
+        "管理档案/来源笔记/motion-matching-feature-scale.json",
+        "管理档案/审查/动作匹配特征尺度-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read adjacent readers to avoid duplicate mechanisms",
+        "Pin original-author feature normalization and search code",
+        "Separate unit consistency, statistical scale and design importance",
+        "Independent full reader/source review and hand-calculation",
+        "No observed animation or complete-controller selection claim"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T12:43:19Z",
+      "next_action": "For a concrete integration, compare the same eligible candidates using declared units and shared database/query parameters; actual animation and runtime checks remain unperformed.",
+      "blockers": [],
+      "verification_method": "Fixed original-source code reading, original unexecuted algebra and independent complete reader/source review."
     }
   ],
   "execution_policy": {

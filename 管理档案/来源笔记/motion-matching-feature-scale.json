@@ -1,0 +1,39 @@
+{
+  "title": "动作匹配没换素材，为什么改个单位就选了别的动作",
+  "read_date": "2026-11-02",
+  "book_sha256": "434c7cfe44b36150fc912556118c2bcdbd33a197c3282404ca87ae4175f0ff56",
+  "evidence": "source reading and original unexecuted algebra; no animation database, model, engine or native execution",
+  "sources": [
+    {
+      "url": "https://theorangeduck.com/page/inertialization-transition-cost",
+      "author": "Daniel Holden",
+      "date": "02/06/2022 (as displayed; date order not inferred here)",
+      "read_scope": "Opening motivation and concluding limitations; no image/video inspection; alternative integral cost not analyzed here"
+    },
+    {
+      "url": "https://github.com/orangeduck/Motion-Matching/blob/57b7250e0d34a4e456a34d47e24c2f05fdcc711e/README.md",
+      "read_scope": "Full README, no commands executed"
+    },
+    {
+      "url": "https://github.com/orangeduck/Motion-Matching/blob/57b7250e0d34a4e456a34d47e24c2f05fdcc711e/database.h",
+      "read_scope": "normalize_feature 100–161; position/velocity/trajectory feature construction approximately 379–493; group assembly 529–562; complete motion_matching_search 568–696 and database_search 699–732",
+      "limits": "Positive finite scales and positive weights for derivation; group-average coordinate SD, not per-coordinate standardization; assert-only positive group scale check; query and database share stored parameters; candidate filters and extra costs excluded by teaching assumptions"
+    }
+  ],
+  "original_example": {
+    "candidate_residuals": {
+      "A": {
+        "position_m": 0.1,
+        "velocity_m_per_s": 2
+      },
+      "B": {
+        "position_m": 0.2,
+        "velocity_m_per_s": 0.1
+      }
+    },
+    "scales": "Pedagogically chosen 0.1 m and 1 m/s, not statistics computed from these candidates",
+    "scope": "Unit representation and cost semantics only, not observed candidate choice or animation quality"
+  },
+  "reader_path": "GameLibrary/角色动画/动画运行时/动作选择/动作匹配没换素材，为什么改个单位就选了别的动作.md",
+  "navigation_scope": "Natural animation route is checked separately during integration."
+}
