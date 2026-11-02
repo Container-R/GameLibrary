@@ -1,6 +1,6 @@
 # 延迟补偿：命令目标、采用目标与历史样本不是同一个量
 
-2026-11-01。本文只核对 Valve 官方 SDK 的一个固定源码版本，并给出原创手算；没有运行游戏、网络或命中测试。关联[客户端预测与权威边界](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md)，不改变其原有验证范围。
+2026-11-01。本文只核对 Valve 官方 SDK 的一个固定源码版本，并给出原创手算；没有运行游戏、网络或命中测试。关联[客户端移动预测与服务器纠正](../../../GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md)，不改变其原有验证范围。
 
 ## 固定来源中的时间选择
 
@@ -67,3 +67,7 @@ $$
 Valve 开发者站的 *Latency Compensating Methods in Client/Server In-game Protocol Design and Optimization* 页面本次返回 403，未重试或绕过；未将搜索摘要、转载或旧论文机制拼接为本提交的实现证据。
 
 本说明不包含编译、引擎、网络、模型或玩家实验，也不继承关联文章的测试。表格、位置算式和接收建议均为原创未执行分析；不转载大段代码或源资产。
+
+---
+
+[返回《客户端移动预测与服务器纠正》](../../../GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md)

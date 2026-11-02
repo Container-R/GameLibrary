@@ -300,7 +300,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T13:48:46Z",
+      "last_progress_at": "2026-11-02T14:03:55Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -5346,7 +5346,9 @@
       "priority_rationale": "Concrete time-validation and conditional history-sampling mechanism absent from existing movement prediction and dependency-time notes",
       "expected_artifact": "Fixed-source mechanism note with ideal two-command arithmetic and conditional position sample",
       "artifact_paths": [
-        "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md"
+        "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+        "管理档案/审查/既有命中回溯支持-读者入口审查.md"
       ],
       "acceptance": [
         "Resolve and read exact official SDK source without inferring current commercial behavior",
@@ -5357,7 +5359,7 @@
         "No actual hit, all-world rewind, live game or runtime claim"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T10:21:45.726091Z",
+      "last_progress_at": "2026-11-02T14:03:55Z",
       "next_action": "Retain fixed-source target/history/candidate distinctions; no actual hit, global rewind or commercial-game guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T10:23:15.753941Z",
@@ -5369,7 +5371,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "4c1c0b2c01d31a90dcf4143198a1ba34a5a8b9083808ce25544372b1c261c6a1"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Existing fixed-source analysis is now linked from the movement reader with a current return path; mechanism and historical evidence unchanged."
     },
     {
       "id": "TASK-2026-0150",

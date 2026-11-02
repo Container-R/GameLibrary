@@ -949,9 +949,10 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "cc1a59d702c03c70a2836b323aa5bc8b521d01ecd46cb2ebb15d8c9c3e473a66",
+      "reader_sha256": "3b6bfd31057fbf7517f80327f9612704949ca0478e393bda2b3ed8e572d9717f",
       "review_paths": [
-        "管理档案/审查/快照插值时间-来源与读者审查.md"
+        "管理档案/审查/快照插值时间-来源与读者审查.md",
+        "管理档案/审查/既有命中回溯支持-读者入口审查.md"
       ],
       "snapshot_time_support": {
         "scope": "Optional sample-time versus arrival-time interpolation with explicit missing-endpoint and exact-sample branches.",
@@ -959,6 +960,13 @@
         "reader_review": "管理档案/审查/快照插值时间-来源与读者审查.md",
         "reader_sha256": "cc1a59d702c03c70a2836b323aa5bc8b521d01ecd46cb2ebb15d8c9c3e473a66",
         "execution": "Source-grounded paper timeline only; no network or clock implementation."
+      },
+      "lag_compensation_support": {
+        "scope": "Discoverability only: existing source analysis, no new mechanism or execution.",
+        "support_path": "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
+        "reader_review": "管理档案/审查/既有命中回溯支持-读者入口审查.md",
+        "reader_sha256": "3b6bfd31057fbf7517f80327f9612704949ca0478e393bda2b3ed8e572d9717f",
+        "support_sha256": "552b75d0733e32efadccf1fb1d0517bfbfd70a8790de4744f58f4c221b3353b9"
       }
     },
     {
@@ -1898,7 +1906,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "15c177822b4c46fa6f9714d371ea291beb099e3b",
+  "publication_base_sha": "473f2e64c6e870214bf2b0e671d4333c160a1f76",
   "accounted_for_original_items": 55,
   "reader_books_total": 79,
   "post_baseline_research_books": 24,
