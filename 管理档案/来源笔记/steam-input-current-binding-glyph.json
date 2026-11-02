@@ -1,0 +1,84 @@
+{
+  "title": "Steam Input 重绑后，为什么按键提示还在显示旧按钮",
+  "article_sha256": "de3e2596d2ff56e77b3c401dc145d1b2eefc8966954f72de0b937ab39c65c23e",
+  "read_date": "2026-11-02",
+  "evidence_kind": "官方文档来源阅读与原创未执行接入分析",
+  "version_scope": "滚动 Steamworks 公开文档；未固定客户端或 SDK 构建号",
+  "sources": [
+    {
+      "publisher": "Valve",
+      "title": "ISteamInput Interface",
+      "url": "https://partner.steamgames.com/doc/api/ISteamInput",
+      "read_sections": [
+        "ActivateActionSet",
+        "GetActiveActionSetLayers",
+        "GetCurrentActionSet",
+        "GetDigitalActionHandle",
+        "GetAnalogActionHandle",
+        "GetDigitalActionOrigins",
+        "GetAnalogActionOrigins",
+        "GetConnectedControllers",
+        "GetGlyphPNGForActionOrigin",
+        "GetGlyphSVGForActionOrigin",
+        "GetStringForActionOrigin",
+        "SteamInputConfigurationLoaded_t",
+        "SteamInputDeviceConnected_t",
+        "SteamInputDeviceDisconnected_t",
+        "InputDigitalActionData_t",
+        "InputAnalogActionData_t",
+        "EInputActionOrigin",
+        "GetActionOriginFromXboxOrigin"
+      ],
+      "limits": "未给出 Origins 全部失败原因；不从 bActive 推导 Origins 零返回条件，不假定层查询所有冲突语义。"
+    },
+    {
+      "publisher": "Valve",
+      "title": "Getting Started for Developers",
+      "url": "https://partner.steamgames.com/doc/features/steam_controller/getting_started_for_devs",
+      "read_sections": [
+        "Step 3.2 - Input Handling",
+        "Step 3.3 - On-screen Glyphs",
+        "Poll continuously!",
+        "Dedicated Menu Actions"
+      ],
+      "limits": "仅所列文字范围；旧字形名称与当前 API 页区分，不声称全文或配置执行。"
+    },
+    {
+      "publisher": "Valve",
+      "title": "Action Set Layers",
+      "url": "https://partner.steamgames.com/doc/features/steam_controller/action_set_layers",
+      "read_sections": [
+        "开篇与 Notes",
+        "Careful with multiple layers!",
+        "A practical example 的文字说明"
+      ],
+      "limits": "未观看示意图片；本文简化例无启用层，不给出多层完整解析算法。"
+    },
+    {
+      "publisher": "Valve",
+      "title": "General Concepts",
+      "url": "https://partner.steamgames.com/doc/features/steam_controller/concepts",
+      "read_sections": [
+        "Legacy Mode",
+        "Native Mode",
+        "Steam Input API"
+      ],
+      "limits": "仅限定 Native 动作 API 接入，不验证 Legacy 或混合配置。"
+    }
+  ],
+  "original_contribution": "菜单确认动作的语义、绑定来源、提示资源三层划分；P/Q 过期提示场景；数量分支伪代码与有限项目检查。",
+  "not_observed": [
+    "Steam 客户端或 SDK 执行",
+    "手柄与配置实际变化",
+    "素材加载及玩家可读性",
+    "提示触发正确控件",
+    "图片或视频内容"
+  ],
+  "author_checks": [
+    "全文技术与叙事读回",
+    "当前三篇相关正文全文去重",
+    "跨书链接按拟议目标深度核对"
+  ],
+  "navigation_scope": "Navigation is checked during repository integration, not established by source reading alone.",
+  "reader_path": "GameLibrary/平台与发行/平台接入/手柄输入/Steam Input 重绑后，为什么按键提示还在显示旧按钮.md"
+}

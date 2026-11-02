@@ -1818,6 +1818,24 @@
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
       "reader_sha256": "78607c987a3ea0e7b7de000b2932785e1968dbae79058def8c52d19f0c41a7b9",
       "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md"
+    },
+    {
+      "internal_id": "SOL-PLATFORM-002",
+      "reader_title": "Steam Input 重绑后，为什么按键提示还在显示旧按钮",
+      "floor": "平台与发行",
+      "area": "平台接入",
+      "shelf": "手柄输入",
+      "canonical_reader_path": "GameLibrary/平台与发行/平台接入/手柄输入/Steam Input 重绑后，为什么按键提示还在显示旧按钮.md",
+      "current_read_path": "GameLibrary/平台与发行/平台接入/手柄输入/Steam Input 重绑后，为什么按键提示还在显示旧按钮.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立全文与Valve原始文档审读接受；未执行客户端或设备",
+      "origin": "source-grounded-native-steam-input-prompt-integration",
+      "scope_note": "单玩家设备、已启用基础菜单动作集、无层的接入分析；不是完整绑定解释器",
+      "review_paths": [
+        "管理档案/审查/SteamInput当前绑定与提示-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/steam-input-current-binding-glyph.json",
+      "reader_sha256": "de3e2596d2ff56e77b3c401dc145d1b2eefc8966954f72de0b937ab39c65c23e"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1828,10 +1846,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "e3972f150744ddaa94c6fc6aed971c9aa8b32fbb",
+  "publication_base_sha": "db42b2e0e4fe81fcf079672b71d1fb99e52d0a5b",
   "accounted_for_original_items": 55,
-  "reader_books_total": 77,
-  "post_baseline_research_books": 22,
+  "reader_books_total": 78,
+  "post_baseline_research_books": 23,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
