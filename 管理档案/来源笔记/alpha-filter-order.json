@@ -1,0 +1,33 @@
+{
+  "id": "alpha-filter-order",
+  "title": "Alpha association before image interpolation",
+  "accessed_on": "2026-11-02",
+  "verification_method": "Original specification reading and independent paper arithmetic; no image-processing or GPU execution.",
+  "sources": [
+    {
+      "author": "The Khronos Group; editors Daniel Rice and Robert J. Simpson",
+      "title": "OpenVG Specification Version 1.1 Revision 1",
+      "date": "2008-12-03",
+      "url": "https://registry.khronos.org/OpenVG/specs/openvg-1.1.pdf",
+      "locator": "Section 3.4.3, printed page 23; Section 10.8 vgDrawImage, printed page 150",
+      "read_scope": "Title/date, alpha association definition, image interpolation and its image-color-space qualification; not the entire specification.",
+      "supports": "This API specifies premultiplied image interpolation. It does not establish behavior for arbitrary game engines or assert every image uses a linear-light format."
+    },
+    {
+      "author": "Thomas Porter and Tom Duff",
+      "title": "Compositing Digital Images",
+      "date": "1984-07",
+      "publication": "Computer Graphics 18(3), pages 253–259",
+      "url": "https://keithp.com/~keithp/porterduff/p253-porter.pdf",
+      "locator": "Section 2, page 254; Section 4.3, page 256",
+      "read_scope": "Full extracted paper text; figures are not used as independently verified visual evidence.",
+      "supports": "Associated color representation and compositing arithmetic. The two-texel filtering example is an editorial derivation, not an example attributed to this paper."
+    }
+  ],
+  "editorial_derivation": {
+    "inputs": "Straight RGBA red (1,0,0,1) and transparent blue (0,0,1,0), equal positive weights, one linear RGB working space, ordinary non-emissive colors.",
+    "premultiply_then_average": "Associated RGB (0.5,0,0), alpha 0.5.",
+    "average_then_premultiply": "Associated RGB (0.25,0,0.25), alpha 0.5.",
+    "limits": "Ideal arithmetic only. No GPU, browser, texture import, mip generation, compression, atlas, visual quality or performance result. Specific equal-color or equal-alpha inputs can make the orders coincide."
+  }
+}
