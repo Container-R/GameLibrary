@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T12:43:19Z",
+      "last_progress_at": "2026-11-02T13:00:20Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1965,7 +1965,11 @@
       "artifact_paths": [
         "管理档案/历史正文/roles/rendering/graphics-programmer.md",
         "管理档案/研究记录/source-notes/graphics-programmer-role.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+        "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
+        "管理档案/来源笔记/occlusion-query-feedback.json",
+        "管理档案/审查/遮挡查询反馈-来源与读者审查.md"
       ],
       "acceptance": [
         "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
@@ -1974,7 +1978,7 @@
         "Independent source review; no runtime, gain claims, universal aliases or completed occupation matrix"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T21:42:23.098284Z",
+      "last_progress_at": "2026-11-02T13:00:20Z",
       "next_action": "Use bounded feature handoff as an unexecuted proposal; continue role coverage without claiming full matrix completion",
       "blockers": [],
       "completed_at": "2026-10-31T21:44:22.341807Z",
@@ -1993,7 +1997,8 @@
           "kind": "historical_directory",
           "scope": "Fixed historical directory; no invented file SHA256"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional current-versus-stale occlusion-query feedback support; source-only analysis, no GPU execution or timing claim."
     },
     {
       "id": "TASK-2026-0060",
