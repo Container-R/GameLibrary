@@ -1,0 +1,19 @@
+{
+  "run_id": "20261102T053309Z-audio-render-callback",
+  "observed_at": "2026-11-02T05:33:09Z",
+  "parent_verified_head": "f1167c66edc4746e59d0b538d338c737fa514524",
+  "task": "TASK-2026-0195",
+  "outcome": "A new reader explains how the current sample block remains separate from late game-thread work, including capacity, finite work and resource lifetime decisions.",
+  "reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "reader_sha256": "f4ee6dc492a346aec577f99a98dfc0dc41174bad0b574fd872d5b86deeba96fe",
+  "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
+  "review": "管理档案/审查/音频渲染回调-读者与来源审查.md",
+  "verification_scope": "Fixed public source and original unexecuted example; no audio device, playback, recording, concurrency or deadline test.",
+  "reader_inventory": {
+    "current": 73,
+    "frozen": 55,
+    "post_baseline": 18
+  },
+  "maintenance_correction": "The library tool README example was still 71 while the previous actual inventory was 72; its explicit example and named additions are now synchronized to the accepted 73-item inventory. Historical observations remain unchanged.",
+  "publication": "Accepted body and public progress records belong to the same containing commit."
+}

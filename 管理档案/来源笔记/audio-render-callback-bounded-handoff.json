@@ -1,0 +1,47 @@
+{
+  "topic": "Audio render callback preparation and bounded handoff",
+  "accessed": "2026-11-02",
+  "evidence_scope": "Official interface documentation and fixed public source reading; original unexecuted engineering example. No audio device access, build, playback, recording or concurrency validation.",
+  "sources": [
+    {
+      "organization": "PortAudio",
+      "title": "portaudio.h callback and stream interface",
+      "version": "v19.7.0",
+      "commit": "147dd722548358763a8b649b3e4b41dfffbcfbb6",
+      "url": "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/include/portaudio.h",
+      "read_scope": "Callback time information, flags, return values, complete PaStreamCallback documentation, stream opening and frame count, stopping and CPU load documentation.",
+      "supports": "Fill the entire output buffer according to the actual frame count; avoid blocking and unpredictable work. Data duration, callback time and first output sample time are different quantities.",
+      "does_not_support": "A universal exclusive CPU budget, measured end-to-end latency, guaranteed uninterrupted playback, or treatment of every middleware notification as the same callback type."
+    },
+    {
+      "organization": "PortAudio",
+      "title": "Writing a Callback Function",
+      "url": "https://portaudio.com/docs/v19-doxydocs/writing_a_callback.html",
+      "version_scope": "Rolling v19 documentation, not a fixed installed binary identity",
+      "read_scope": "Complete page and short example; example not executed or copied into the library.",
+      "supports": "Unpredictable-duration allocation, I/O and synchronization cannot be made safe merely by assuming the ordinary thread will finish soon."
+    },
+    {
+      "organization": "PortAudio",
+      "title": "Single-reader/single-writer ring buffer interface and implementation",
+      "commit": "147dd722548358763a8b649b3e4b41dfffbcfbb6",
+      "urls": [
+        "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/src/common/pa_ringbuffer.h",
+        "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/src/common/pa_ringbuffer.c"
+      ],
+      "read_scope": "Complete header and implementation; not a full review of platform memory-barrier branches.",
+      "supports": "The described utility has a single producer and consumer, preallocated backing storage, power-of-two capacity, actual read/write counts and a flush precondition excluding concurrent reads or writes.",
+      "does_not_support": "A general multi-producer container, arbitrary-language memory-model proof, caller object lifetime management or a project-specific overflow policy."
+    },
+    {
+      "organization": "FMOD",
+      "title": "Studio API Guide",
+      "url": "https://www.fmod.com/docs/2.04/api/studio-guide.html",
+      "version_scope": "Versioned 2.04 documentation URL, mutable content",
+      "read_scope": "Sections 13.4 and 13.11, command processing and event notification, read by the source author to distinguish callback responsibilities.",
+      "supports": "Studio event notifications should not be equated with the PortAudio sample-buffer callback solely because both are called callbacks."
+    }
+  ],
+  "original_example_scope": "A prepared cutting-tool motor sound, nominal frame duration and a finite control-message handoff. No queue implementation, scheduler bound, actual resource reclamation protocol or audible result has been tested.",
+  "deduplication": "The existing music-switching reader explains musical intent and notification; the PCM-loop reader explains sample intervals. This topic concerns filling the current output block despite unavailable ordinary-thread work."
+}

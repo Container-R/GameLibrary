@@ -286,8 +286,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T05:17:17Z",
-      "next_action": "Continue concrete reader questions using .agent/queue.json and 管理档案/图书目录.json; avoid repeating already explained encoding and layout boundaries.",
+      "last_progress_at": "2026-11-02T05:33:09Z",
+      "next_action": "Continue concrete source-grounded reader questions from .agent/queue.json; audio callback limits are not a tested queue or a real-time guarantee.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6694,6 +6694,33 @@
       "next_action": "Retain the limited explanation; concrete component behavior and language quality require separate evidence.",
       "blockers": [],
       "verification_method": "Fixed official specification text, original paper example and independent complete reader review; no runtime execution."
+    },
+    {
+      "id": "TASK-2026-0195",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can an audio render callback fill the current output block without waiting for game-thread preparation?",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "Distinct low-level output responsibility missing from existing musical notifications and PCM asset readers.",
+      "expected_artifact": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+        "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
+        "管理档案/审查/音频渲染回调-读者与来源审查.md"
+      ],
+      "acceptance": [
+        "Read current music, PCM and audio-role scope before choosing independent narrow method",
+        "Read fixed PortAudio callback and ring-buffer interface plus relevant implementation",
+        "Explain unavailable resources, finite capacity, bounded command work and object lifetime with one original example",
+        "Independent full reader and actual navigation review",
+        "No audio execution, queue implementation, latency or audible-quality guarantee"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T05:33:09Z",
+      "next_action": "Concrete integration requires a reviewed handoff and reclamation protocol plus target-specific measurements; this reader does not certify either.",
+      "blockers": [],
+      "verification_method": "Fixed public source and official documentation, original unexecuted example and independent reader review."
     }
   ],
   "execution_policy": {

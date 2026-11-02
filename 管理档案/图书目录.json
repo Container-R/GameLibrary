@@ -1601,6 +1601,24 @@
       ],
       "source_record": "管理档案/来源笔记/testing-agent-reachability-and-verdict.json",
       "reader_sha256": "3f7ecdcaac7482c1309a3f042a49977b3514a5db16f58a5198250584a2c6c165"
+    },
+    {
+      "internal_id": "SOL-SFX-005",
+      "reader_title": "音频回调来不及等游戏线程时，怎样交出当前声音",
+      "floor": "声音与音乐",
+      "area": "游戏音效",
+      "shelf": "音频渲染",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+      "current_read_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定原源、原创未运行例子与独立全文及实际路线审读接受；不是实时或并发实现认证",
+      "origin": "source-grounded-audio-output-method",
+      "scope_note": "准备资源、有限交接、当前输出与回收责任；不实现队列、不保证时延或听感",
+      "review_paths": [
+        "管理档案/审查/音频渲染回调-读者与来源审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
+      "reader_sha256": "f4ee6dc492a346aec577f99a98dfc0dc41174bad0b574fd872d5b86deeba96fe"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1613,8 +1631,8 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 72,
-  "post_baseline_research_books": 17,
+  "reader_books_total": 73,
+  "post_baseline_research_books": 18,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
