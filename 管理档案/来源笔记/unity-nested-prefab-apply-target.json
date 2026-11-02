@@ -1,0 +1,20 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
+  "reader_sha256": "bc30d037ce796575530380b05c6dd1ebf477f8cd740e523c8f78dabc157142bb",
+  "prior_reader_sha256": "4f309805b7208f3f6b4f6dcd16354adfb0721c8f06fcd505adaeadc38c2fd283",
+  "review_path": "管理档案/审查/嵌套灯具应用目标-来源与读者审查.md",
+  "source": {
+    "author": "Unity Technologies",
+    "title": "Overrides at multiple levels",
+    "version": "Unity 2022.3 Manual",
+    "url": "https://docs.unity3d.com/2022.3/Documentation/Manual/PrefabOverridesMultiLevel.html",
+    "sections": [
+      "Choice of apply target",
+      "Applying to inner Prefabs may affect outer Prefabs too"
+    ]
+  },
+  "scope": "Nested apply-target storage and conditional same-field outer-override reversion, integrated into the existing shared-light reader.",
+  "verification": "Full substantive manual text, complete existing reader and independent reader review; no editor execution or image inspection.",
+  "limits": "2022.3 documentation only; not all tools or all ancestors/fields. No lighting quality, performance or production result."
+}

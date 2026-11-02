@@ -310,7 +310,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T22:36:00Z",
+      "last_progress_at": "2026-11-02T22:41:22Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -3315,7 +3315,9 @@
       "expected_artifact": "roles/rendering/game-lighting-artist.md and source note",
       "artifact_paths": [
         "GameLibrary/技术美术/环境管线/场景光照/共享灯具如何管理资产与场景实例的修改.md",
-        "管理档案/研究记录/source-notes/game-lighting-artist-role.md"
+        "管理档案/研究记录/source-notes/game-lighting-artist-role.md",
+        "管理档案/来源笔记/unity-nested-prefab-apply-target.json",
+        "管理档案/审查/嵌套灯具应用目标-来源与读者审查.md"
       ],
       "acceptance": [
         "Direct named primary practitioner interviews and independent source/editorial review",
@@ -3324,7 +3326,7 @@
         "Original comparison proposal clearly unexecuted; preserve initial novelty critique"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T03:47:13.519206Z",
+      "last_progress_at": "2026-11-02T22:41:22Z",
       "next_action": "Retain original unrendered correction-ownership proposal; actual scene, causal, performance and player evidence remain absent",
       "blockers": [],
       "completed_at": "2026-11-01T03:50:22.667497Z",
@@ -3342,7 +3344,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "5c9533309bcf2b8461dae43b52f5ae750759d8f10ce434b440856b17c09b28d4"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Explain three nested prefab storage targets and the conditional outer same-field override reversion using Unity 2022.3 documentation."
     },
     {
       "id": "TASK-2026-0091",

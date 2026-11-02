@@ -387,7 +387,13 @@
       "scope_disposition_review": "管理档案/审查/共享灯具-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_sha256": "bc30d037ce796575530380b05c6dd1ebf477f8cd740e523c8f78dabc157142bb",
+      "nested_apply_maintenance": {
+        "source_record": "管理档案/来源笔记/unity-nested-prefab-apply-target.json",
+        "review": "管理档案/审查/嵌套灯具应用目标-来源与读者审查.md",
+        "scope": "Version-scoped nested prefab example; no editor, lighting or performance validation."
+      }
     },
     {
       "internal_id": "ROLE-GFX-001",
@@ -2123,7 +2129,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5669910deaf287bc53df3db768e19d5ddfc578da",
+  "publication_base_sha": "92db9fe450fd745ce149f8b3130f9faa4ab85889",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,
