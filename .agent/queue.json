@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T01:40:00Z",
+      "lease_until": "2026-11-02T01:50:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:02:05Z",
-      "next_action": "Review a proposed equal-scale vector illustration of the existing normal-transform example; accept only if it improves human understanding without changing evidence scope.",
+      "last_progress_at": "2026-11-02T01:08:14Z",
+      "next_action": "Continue current-baseline source and usability review under the existing coverage task; do not count illustration rendering as new engine or mathematical evidence.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6582,6 +6582,37 @@
       "next_action": "Use real task inputs and personnel availability before discussing sequence or scope; the2+3paper example is not a project estimate.",
       "blockers": [],
       "verification_method": "Original conditional capacity arithmetic with primary-source and independent reader review. No scheduling simulation or real project operation."
+    },
+    {
+      "id": "TASK-2026-0179",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Can an equal-scale vector drawing make the existing unit-length-versus-perpendicularity normal example easier to understand?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 72,
+      "priority_rationale": "Improve established reader support rather than duplicate mathematics or add another book.",
+      "expected_artifact": "管理档案/支持资料/法线变换示意/normal-transform.svg",
+      "artifact_paths": [
+        "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+        "管理档案/支持资料/法线变换示意/normal-transform.svg",
+        "管理档案/支持资料/法线变换示意/draw.py",
+        "管理档案/支持资料/法线变换示意/README.md",
+        "管理档案/审查/法线平面示意-独立视觉与导航审查.md"
+      ],
+      "acceptance": [
+        "Preserve exact existing vector coordinates and dot0/3over5",
+        "Inspect author preview and independently render actual SVG",
+        "Check equal axes, right-angle mark, labels and non-color distinction",
+        "Exclude active/external resources and private execution metadata",
+        "Read actual matrix-to-note-to-support routes and adequate text alternative"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:08:14Z",
+      "next_action": "Use the figure as an explanation of the existing algebra, not as lighting or engine validation.",
+      "blockers": [],
+      "verification_method": "Static SVG/source inspection and actual local SVG rendering with explicitly retained setup/diagnostic warnings; no new engine or numerical-model experiment."
     }
   ],
   "execution_policy": {

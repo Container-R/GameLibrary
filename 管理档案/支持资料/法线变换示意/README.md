@@ -1,0 +1,15 @@
+# 法线变换的平面示意
+
+[返回原例与推导](../../来源笔记/tangent-handedness-normal-transform.md)
+
+本图只把既有例子的三个单位向量画在等比例 xy 平面中：正确法线与变换后的切线垂直，错误法线虽然同样长为 1，却与切线成非直角。浅灰圆弧是单位圆的一部分。没有增加变换、引擎观察、照明截图或浮点精度实验。
+
+[查看 SVG](normal-transform.svg)。正文提供描述向量方向的替代文字；错误方向同时使用虚线，不只依靠颜色区别。
+
+## 重画说明
+
+`draw.py` 使用 Python、Matplotlib 与 Noto Sans CJK JP 字体，在脚本所在目录输出 SVG 和 PNG。运行 `python draw.py` 可重画；这会替换同目录同名输出，宜在自己的工作副本中操作。仓库保留 SVG，PNG 只是本地视觉检查用的预览。不同绘图库或字体版本可能改变排版和文件字节，不承诺字节复现。
+
+脚本使用同一个图形定义输出两个格式，显式使用等比例坐标。生成时去掉日期和绘图软件署名元数据；脚本不收集主机身份，不需要网络。SVG 字形转为路径，不分发字体软件。Noto CJK 的[官方字体许可](https://github.com/notofonts/noto-cjk/blob/main/Sans/LICENSE)为 SIL OFL；OFL 的[图形作品说明](https://openfontlicense.org/ofl-faq/)区分图形作品与字体软件的再分发。
+
+数学依据和固定 Khronos 源码范围仍在原笔记，不由这张示意图扩大。图中文字说明它不是三维表面或引擎结果。
