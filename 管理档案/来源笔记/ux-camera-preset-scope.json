@@ -1,0 +1,37 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+  "reader_sha256": "5529122b86a2d6c7e52a953b6ea127a9ccf577d7992c6280ec057db55ca65db3",
+  "prior_reader_sha256": "acae35bffaf190d243d504f83755a154b6c9c86b4948b32a0a09fea23ba139a6",
+  "review_path": "管理档案/审查/体验设置预设-来源与读者审查.md",
+  "scope": "Three paragraphs distinguish effects, camera assistance and state feedback within UX presets; existing subtitle-flow body and first three sources retained.",
+  "sources": [
+    {
+      "organization": "Microsoft",
+      "title": "Xbox Accessibility Guideline 117: Visual distractions and motion settings",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+      "displayed_updated_on": "2026-03-04",
+      "used_sections": [
+        "Scoping questions",
+        "Implementation guidelines: camera movement and non-core motion",
+        "Active gameplay background-motion scope"
+      ]
+    },
+    {
+      "author": "Matthew Dunnerstick",
+      "organization": "Naughty Dog",
+      "title": "The Last of Us Part II: Accessibility Features Detailed",
+      "published_on": "2020-06-09",
+      "url": "https://www.naughtydog.com/blog/the_last_of_us_part_ii_accessibility_features_detailed",
+      "used_sections": [
+        "Accessibility Presets",
+        "Assistance: Camera Assist",
+        "Motion Sickness: Camera Shake and Full Screen Effects"
+      ]
+    }
+  ],
+  "read_scope": "Public substantive guideline text and specified first-party feature sections, not game operation or all images/videos.",
+  "verification": "Primary-source reading and independent full-reader/source review; no gameplay, participant study or medical conclusion.",
+  "limits": "Menu descriptions do not establish implementation independence, all-combination effects or current-PC behavior. Hypothetical custom preset is not an observed defect in the cited game.",
+  "copyright": "Narrow paraphrase and original design reasoning; no copied menu tables, screenshots or complete source material."
+}
