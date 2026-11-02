@@ -1504,6 +1504,23 @@
         "管理档案/审查/实体句柄保存与映射-来源和读者审查.md"
       ],
       "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305"
+    },
+    {
+      "internal_id": "SOL-PROG-004",
+      "reader_title": "分别处理摇杆两条轴，为什么会改变斜推方向",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "输入接入",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定实现与独立纸面数学、完整读者及实际路线审查接受；未运行 Unity 或硬件",
+      "origin": "original-two-vector-comparison-of-axis-and-radial-input-mapping",
+      "scope_note": "同一处理器入口数值下的方向与幅度推导；非设备原始报告、最佳参数或玩家体验保证",
+      "review_paths": [
+        "管理档案/审查/摇杆死区-来源与读者审查.md"
+      ],
+      "reader_sha256": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c"
     }
   ],
   "rewritten_reader_books": 55,

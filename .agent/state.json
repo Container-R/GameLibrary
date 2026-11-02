@@ -13,16 +13,16 @@
     "reader_books_total": 70
   },
   "publication": {
-    "last_verified_head_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
+    "last_verified_head_sha": "a9c1d61c694a1cc566bc7c20296edd9f97959e6b",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Scoped matrix/presentation completion review and one reader crosslink; no new book or GPU execution.",
-    "latest_verified_content_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
+    "scope": "Reader explanation of axis/radial stick dead-zone mapping, with distinct whole-control reading and downstream-chain boundaries.",
+    "latest_verified_content_sha": "a9c1d61c694a1cc566bc7c20296edd9f97959e6b",
     "reader_books_total": 70,
     "post_baseline_research_books": 15,
-    "counts_basis": "70 reader books unchanged."
+    "counts_basis": "71 reader books; original 55 remediation remains separately accounted. No new runtime result."
   },
-  "next_action": "Review the fixed-source stick dead-zone gate against existing reader coverage before authoring; do not infer hardware or player results.",
+  "next_action": "Review existing non-rendering reader coverage for a concrete production or content-pipeline gap; prioritize integration over additional generic tutorials.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T02:10:00Z",
+    "lease_until": "2026-11-02T02:15:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T012806Z-gpu-completion-cross-reader",
+  "last_run_id": "20261102T013310Z-stick-deadzone",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T01:28:06Z",
-  "last_commit_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
+  "last_real_progress_at": "2026-11-02T01:33:10Z",
+  "last_commit_sha": "a9c1d61c694a1cc566bc7c20296edd9f97959e6b",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

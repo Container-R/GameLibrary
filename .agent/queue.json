@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T02:10:00Z",
+      "lease_until": "2026-11-02T02:15:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:28:06Z",
-      "next_action": "Review the fixed-source stick dead-zone gate against existing reader coverage before authoring; do not infer hardware or player results.",
+      "last_progress_at": "2026-11-02T01:33:10Z",
+      "next_action": "Review existing non-rendering reader coverage for a concrete production or content-pipeline gap; prioritize integration over additional generic tutorials.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6648,6 +6648,35 @@
         "reader_sha256": "8db662819315260769ac9cfb1f2e1b9bda1b219810c92972e74a9b5d07862480",
         "scope": "Four scoped texts and fixed original clauses independently checked; one real navigation gap closed; no runtime rerun."
       }
+    },
+    {
+      "id": "TASK-2026-0181",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can filtering two stick axes separately alter the direction of a diagonal input?",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "Concrete input-mapping mechanism not covered by collision clipping or held-button accessibility readers.",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+        "管理档案/审查/摇杆死区-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing gameplay/input/movement coverage",
+        "Verify fixed AxisDeadzone and StickDeadzone implementations and parameter defaults",
+        "Independently derive direction and magnitude examples",
+        "Distinguish whole-stick state reading from processed child-axis reads",
+        "Complete full reader and actual root/shelf/crosslink review",
+        "No hardware calibration or universal-best-parameter claims"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:33:10Z",
+      "next_action": "For project use inspect actual control, binding and action chain; evaluate device/player response separately.",
+      "blockers": [],
+      "verification_method": "Fixed Unity Input System 1.11.2 source analysis and independent ideal-real arithmetic; no Unity, model, controller or hardware execution."
     }
   ],
   "execution_policy": {

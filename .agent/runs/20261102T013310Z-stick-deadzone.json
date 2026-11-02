@@ -1,0 +1,26 @@
+{
+  "run_id": "20261102T013310Z-stick-deadzone",
+  "observed_at": "2026-11-02T01:33:10Z",
+  "parent_verified_head": "a9c1d61c694a1cc566bc7c20296edd9f97959e6b",
+  "task": "TASK-2026-0181",
+  "outcome": "Source-grounded stick dead-zone reader and actual retrieval routes accepted in containing commit.",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+  "reader_sha256": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c",
+  "review_path": "管理档案/审查/摇杆死区-来源与读者审查.md",
+  "fixed_source_commit": "c8518694c7fdd2c755755e028e2ec19cdceda19b",
+  "package_version": "1.11.2",
+  "new_runtime_executions": 0,
+  "scope": "Ideal-real two-vector comparisons; explicit nonzero min/max; fixed default layout and processing-path analysis.",
+  "excluded": [
+    "No float32 bitwise oracle",
+    "No real device report or controller failure diagnosis",
+    "No best parameter or player/accessibility result",
+    "No assumption that unprocessed control value is raw hardware data"
+  ],
+  "reader_books_total": 71,
+  "prior_publication_readback": {
+    "commit": "a9c1d61c694a1cc566bc7c20296edd9f97959e6b",
+    "all_blobs_matched": 847,
+    "key_files_exact": 3
+  }
+}
