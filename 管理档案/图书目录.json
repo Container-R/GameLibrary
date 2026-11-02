@@ -915,7 +915,12 @@
         "reader_sha256": "8ec177a029bfdd3f841ef9202a7d719acd054c1f648e0e6019dca292d7df00bf",
         "reader_review": "管理档案/审查/矩阵缓冲复用-来源与读者审查.md",
         "source_revision": "Vulkan1.3.296 commit486e4b289053a7d64784e7ce791711843c60c235",
-        "execution": "Source-grounded hypothetical single-thread/single-queue example; no new GPU, shader or capability run."
+        "execution": "Source-grounded hypothetical single-thread/single-queue example; no new GPU, shader or capability run.",
+        "navigation_followup": {
+          "reader_sha256": "8db662819315260769ac9cfb1f2e1b9bda1b219810c92972e74a9b5d07862480",
+          "review_path": "管理档案/审查/GPU完成证据-跨文阅读与导航审查.md",
+          "scope": "One optional link from matrix-slot completion to existing presentation-semaphore explanation; technical content unchanged."
+        }
       },
       "latest_support_illustration": {
         "scope": "Equal-scale planar drawing of the same accepted three unit vectors; no new transform or engine evidence.",

@@ -13,16 +13,16 @@
     "reader_books_total": 70
   },
   "publication": {
-    "last_verified_head_sha": "f64fa85d067dfffa12f373bd8da8e246be5524e1",
+    "last_verified_head_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Existing matrix reader gains a finite CPU/GPU storage reuse explanation, separate from layout and presentation.",
-    "latest_verified_content_sha": "f64fa85d067dfffa12f373bd8da8e246be5524e1",
+    "scope": "Scoped matrix/presentation completion review and one reader crosslink; no new book or GPU execution.",
+    "latest_verified_content_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
     "reader_books_total": 70,
     "post_baseline_research_books": 15,
-    "counts_basis": "70 reader books unchanged; fixed-source integration, no new GPU result."
+    "counts_basis": "70 reader books unchanged."
   },
-  "next_action": "Perform a scoped cross-reader review of matrix-buffer completion and existing presentation/fence-retirement explanations before expanding the topic; preserve differences in resource and completion scope.",
+  "next_action": "Review the fixed-source stick dead-zone gate against existing reader coverage before authoring; do not infer hardware or player results.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T02:00:00Z",
+    "lease_until": "2026-11-02T02:10:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T011930Z-matrix-buffer-reuse",
+  "last_run_id": "20261102T012806Z-gpu-completion-cross-reader",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T01:19:30Z",
-  "last_commit_sha": "f64fa85d067dfffa12f373bd8da8e246be5524e1",
+  "last_real_progress_at": "2026-11-02T01:28:06Z",
+  "last_commit_sha": "0d5dc38ae76f0dcb658a0cf049586efd2577ed17",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
