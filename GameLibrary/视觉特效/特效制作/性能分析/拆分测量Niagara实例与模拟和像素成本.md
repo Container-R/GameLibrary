@@ -82,13 +82,23 @@ Niagara Debugger 能确认实例、粒子和包围范围，FX Outliner 的性能
 
 回到固定战斗，在相同目标设备上多次交错运行旧版和候选，而不是只保留最好的一次。记录每帧样本、样本数量、冷热状态、运行顺序、异常事件和视觉问题，比较中位数与尾部尖峰。帧时间的第99百分位数（p99，用于观察较慢的一端）应从合适的帧样本汇总计算，不能直接平均几个运行各自的p99。
 
+为什么不能直接平均？先约定本例的 p99 算法：将纳入的 `N` 个帧时间从短到长排序，取第 `ceil(0.99×N)` 项，位置从1开始，`ceil` 表示向上取整。这是一种离散分位数约定，不是所有性能工具的默认方法；其他方法可能在相邻值之间插值。[7][8] 现在假设同一候选版本、同一配置有两段各100帧的记录，数字专为手算构造，并非实际游戏测量：
+
+| 纳入哪些帧 | 排序后的组成 | 本例的 p99 |
+|---|---|---:|
+| 运行甲的100帧 | 99帧为10毫秒，1帧为100毫秒 | 第99项，10毫秒 |
+| 运行乙的100帧 | 98帧为10毫秒，2帧为100毫秒 | 第99项，100毫秒 |
+| 合并两段的200帧 | 197帧为10毫秒，3帧为100毫秒 | 第198项，100毫秒 |
+
+两个运行的 p99 平均是55毫秒，却不是合并帧样本的 p99。两段帧数已经相等，所以按帧数加权这两个预先算好的分位数，也不能解决问题。合并回答的是“所纳入全部帧”的分布；分别保留运行 p99，则仍能显示运行间的差异。先决定要回答哪个问题，再选纳入规则与算法：旧版和候选要分别统计，不要把不同版本或冷热条件混成一个数字。这里的100帧只是小型反例，不代表足够的生产采样量；更改汇总方式也不等于游戏已经变快。
+
 候选需要同时回答两件事：目标阶段或整帧是否确实改善，以及玩法信息与生命周期是否仍然正确。合并实例还要回到真实分布看剔除；改GPU模拟要看另一侧余量；减材质或粒子要看轮廓、亮度和时机；调整预算要看高压下关键提示及恢复；固定范围则要通过全寿命与边缘重入。
 
 若变化小于重复测量的波动，就写“当前样本无法确认收益”。若CPU减少而整帧未变，可以报告释放了CPU余量，但不要改写成帧率提升。没有项目与目标硬件时，这篇文章只能帮助准备比较，不能替代真实的毫秒和视觉结果。
 
 ## 参考来源
 
-Epic Games 官方文档，2026-11-01重新读取相关文字。没有运行Unreal、采集硬件数据或检查官方示例截图中的具体性能数值；烟雾场景与比较安排是原创建议。
+以下1–6为Epic Games官方文档，2026-11-01重新读取相关文字。没有运行Unreal、采集硬件数据或检查官方示例截图中的具体性能数值；烟雾场景与比较安排是原创建议。
 
 1. [Scalability and Best Practices](https://dev.epicgames.com/documentation/en-us/unreal-engine/scalability-and-best-practices-for-niagara?application_version=5.6)，UE5.6：实例、发射器、GPU/CPU、固定与动态范围。页面部分段落仍保留较早版本前瞻，不据此推断功能当前成熟度。
 2. [Niagara Debugger](https://dev.epicgames.com/documentation/en-us/unreal-engine/niagara-debugger-for-unreal-engine?application_version=5.6)，UE5.6：Debug HUD、GPU Readback与FX Outliner Performance View。
@@ -96,6 +106,9 @@ Epic Games 官方文档，2026-11-01重新读取相关文字。没有运行Unrea
 4. [Introduction to Performance Profiling and Configuration](https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine?application_version=5.6)，UE5.6：帧时间、不同瓶颈与目标设备分析。
 5. [Measuring Performance](https://dev.epicgames.com/documentation/en-us/unreal-engine/measuring-performance-in-niagara)，本轮页面为UE5.8：具名记录开销、计时器与复杂度视图。仅补充测量思路，不保证5.6工具表现一致。
 6. [UNiagaraEffectType](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/Niagara/UNiagaraEffectType)，本轮页面为UE5.8：相对重要性相关说明，不构成项目分支字段的实测。
+
+7. PostgreSQL 15，[*Aggregate Functions*](https://www.postgresql.org/docs/15/functions-aggregate.html)，Table 9.60的 `percentile_disc` 与 `percentile_cont`。2026-11-02读取，分别用于说明离散取值与可能插值的区别；不是Unreal工具的算法说明，没有执行数据库。
+8. NIST/SEMATECH，[*7.2.6.2 Percentiles*](https://www.itl.nist.gov/div898/handbook/prc/section2/prc262.htm)，百分位估计及不同算法说明。2026-11-02读取；本例自行明确采用离散约定，不把该页的默认插值公式称作最近秩法。表中的帧时间为原创手算示例，不是来源中的实验数据。
 
 ---
 

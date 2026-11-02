@@ -241,12 +241,14 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T13:12:49.695863Z",
-      "last_progress_at": "2026-10-31T13:11:28.886629Z",
+      "last_progress_at": "2026-11-02T21:27:47Z",
       "next_action": "按版本和真实集成实验维护",
       "blockers": [],
       "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4",
       "artifact_paths": [
-        "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md"
+        "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md",
+        "管理档案/来源笔记/frame-percentile-aggregation.json",
+        "管理档案/审查/帧时间分位数汇总-来源与读者审查.md"
       ],
       "historical_artifacts": [
         {
@@ -255,7 +257,8 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "5c7a4a3d6fa9a10aa5891803928340418c67d2402446ecef2fa046e0ebce5a8e"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Explain pooled frame p99 versus averaging per-run p99 using explicit discrete convention and original finite counts; no new performance measurement."
     },
     {
       "id": "TASK-2026-0007",
@@ -307,7 +310,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T21:16:14Z",
+      "last_progress_at": "2026-11-02T21:27:47Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [

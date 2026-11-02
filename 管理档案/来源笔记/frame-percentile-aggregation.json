@@ -1,0 +1,22 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md",
+  "reader_sha256": "4339d12eae5a7d952688d2c6d559197946208a7cd14998a5b8402fc6286d7721",
+  "prior_reader_sha256": "102d1bbe551922c96db367871e8da65fced36dacbba778f3dbc69aab01760bc4",
+  "review_path": "管理档案/审查/帧时间分位数汇总-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://www.postgresql.org/docs/15/functions-aggregate.html",
+      "version": "15",
+      "scope": "Table9.60 and surrounding ordered-set text: discrete selection versus interpolated continuous percentiles."
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc262.htm",
+      "scope": "Order statistics and percentile method variation; its default R6 interpolation is not attributed as the example method."
+    }
+  ],
+  "example": "Original hypothetical same-candidate records:99*10ms+1*100ms and98*10ms+2*100ms. Nearest-rank p99 values10ms/100ms; their mean55ms differs from pooled rank198 of200,100ms.",
+  "verification": "Independent paper arithmetic and complete-reader/source review; no database or engine execution.",
+  "limits": "Explicit finite-sample convention, not profiler default. Pool only a defined comparable frame population; retain run differences and separate baseline/candidate. No sample-size recommendation or significance claim.",
+  "copyright": "Narrow paraphrase and independently constructed counts, no copied source datasets or full documents."
+}
