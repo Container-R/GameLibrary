@@ -1,0 +1,21 @@
+{
+  "topic": "系统挂起是否计入经过时间",
+  "source_url": "https://man7.org/linux/man-pages/man2/clock_gettime.2.html",
+  "source_authority": "Linux man-pages project",
+  "document_version": "man-pages 6.19; page dated 2026-03-07; HTML colophon reports tarball fetched 2026-09-09",
+  "accessed": "2026-11-02",
+  "read_scope": [
+    "DESCRIPTION: CLOCK_MONOTONIC and CLOCK_BOOTTIME",
+    "COLOPHON and document footer"
+  ],
+  "supported_claims": [
+    "On Linux CLOCK_MONOTONIC excludes system suspend; CLOCK_BOOTTIME includes it.",
+    "Monotonic ordering does not by itself specify suspend accounting."
+  ],
+  "own_derivation": "Ideal same-clock difference over 2 active seconds, 30 suspended seconds and 1 active second is 3 excluding suspend or 33 including it. A local 10-second deadline therefore has 7 seconds remaining or has elapsed.",
+  "limits": [
+    "Source-backed explanation and paper arithmetic, not a clock invocation or suspend test.",
+    "No claim about a game engine clock mapping, callback execution during suspend, wake-up behavior or server session authority.",
+    "The rolling documentation URL is not an immutable source commit or installed-system identity."
+  ]
+}
