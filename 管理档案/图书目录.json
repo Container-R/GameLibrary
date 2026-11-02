@@ -2100,7 +2100,13 @@
         "管理档案/审查/WFC分支矛盾与规则有解-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/wfc-branch-contradiction.json",
-      "reader_sha256": "7b168e739d28ece38112fcb876b9206c3d92f8ba41c0bd7b12c856a9863380e8"
+      "reader_sha256": "34f95ea792bfb576370ffd189785e4ae322b8a1e04b19ac00486ea31cc9fa9e8",
+      "generation_layer_support": {
+        "source_record": "管理档案/来源笔记/dead-cells-generation-layers.json",
+        "review": "管理档案/审查/房间生成流程分工-来源与读者审查.md",
+        "support": "管理档案/支持资料/随机房间能接上，不等于玩家会按预期经过补给点.md",
+        "scope": "Historical authoring layers and original static-graph reasoning; no generator execution."
+      }
     },
     {
       "internal_id": "SOL-ENGINE-010",
@@ -2136,7 +2142,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "e3925b11a1b452846e28eb1d5fb5433f154cd485",
+  "publication_base_sha": "d7028b6213a3e5483cc3052e8f035dc19dea3ea7",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

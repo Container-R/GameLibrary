@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
+  "reader_sha256": "34f95ea792bfb576370ffd189785e4ae322b8a1e04b19ac00486ea31cc9fa9e8",
+  "prior_reader_sha256": "7b168e739d28ece38112fcb876b9206c3d92f8ba41c0bd7b12c856a9863380e8",
+  "support_path": "管理档案/支持资料/随机房间能接上，不等于玩家会按预期经过补给点.md",
+  "support_sha256": "b18fcf96d0ac9405b2fd64f4b053225847b91bd84b10dfb903ce719e7e9d3005",
+  "review_path": "管理档案/审查/房间生成流程分工-来源与读者审查.md",
+  "source": {
+    "author": "Sébastien Bénard",
+    "title": "The Level Design of Dead Cells",
+    "url": "https://deepnight.net/tutorial/the-level-design-of-dead-cells-a-hybrid-approach/",
+    "displayed_republication_date": "2020-02-15",
+    "original_publication_date": "Not independently confirmed",
+    "read_scope": "Full article and signed comments, especially steps 1–4 and 2021/2022 author replies",
+    "main_images_viewed": [
+      "https://deepnight.net/wordpress/wp-content/uploads/2020/02/6-1.png",
+      "https://deepnight.net/wordpress/wp-content/uploads/2020/02/7.png"
+    ],
+    "independent_scope": "Text and signed comments; no image or video claim"
+  },
+  "scope": "Historical authoring-layer example plus original mandatory-room graph reasoning; not a game algorithm reconstruction.",
+  "verification": "Original source and independent reader/logical review; no generator or game execution.",
+  "limits": "Static graph only; no dynamic gate, actual navigation, pacing, performance or current-game guarantee."
+}
