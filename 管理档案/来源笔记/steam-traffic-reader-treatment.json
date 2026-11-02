@@ -1,0 +1,66 @@
+{
+  "purpose": "既有支持原位读者化，非新研究或新增书",
+  "read_date": "2026-11-02",
+  "proposed_path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
+  "old_identity": "NOTE-BIZ-STEAM-TRAFFIC-001",
+  "old_sha256": "e9b52b7461ac76503c00545b3984fe3133a6fc9ca56072668506efa747940536",
+  "support_sha256": "a27f010b0df7c8da0036c158a0d38e2d3384c977709d66fce1f770f602c39286",
+  "insertion_sha256": "7daedd684dd5e860ad05ef5d010b1d6fc6227a86e0fb6c9e87e4a8bce166b40d",
+  "old_read_date": "2026-11-01",
+  "sources": [
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/traffic_reporting?l=english",
+      "version": "公开滚动英文文档，无固定修订号",
+      "actual_read_scope": "正文引入至FAQ，重点Accessing Reports、Visits、Notes on Data collection date ranges；未看截图或账户报表"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/marketing/utm_analytics?l=english",
+      "version": "公开滚动英文文档，无固定修订号",
+      "actual_read_scope": "What is UTM 至 Discrepancies，另读FAQ开头；含Privacy、Tracked Visits、Conversions/Conversion timeframe、Creating/Testing a link、sale/widget、Known Challenges；未看视频/截图，未核FAQ后半"
+    }
+  ],
+  "knowledge_retention": [
+    {
+      "old": "两张Total Visits并非天然总体与子集",
+      "new": "先确认两张表到底数了什么"
+    },
+    {
+      "old": "Visits页面加载而非玩家，app/partner范围",
+      "new": "先确认两张表到底数了什么"
+    },
+    {
+      "old": "两组有限集合及集合差等式",
+      "new": "正差不证明对账成功，负差也不一定是减错了"
+    },
+    {
+      "old": "观察集合差不等于实际未带参数",
+      "new": "没有被观察到还不是没有带参数"
+    },
+    {
+      "old": "非UTM不等于自然，未标记付费链接反例",
+      "new": "没有被观察到还不是没有带参数"
+    },
+    {
+      "old": "隐私覆盖、门槛隐藏不等于零",
+      "new": "范围段与交接段，未增加个体推断"
+    },
+    {
+      "old": "小时访问更新与四天转化成熟分开",
+      "new": "交接时保留原数，不强求它们拼成一张总表"
+    },
+    {
+      "old": "原接收表、未执行与跨资料边界",
+      "new": "改自然交接段，保留单位/筛选/时间/提取/分类；现完成率相对链接和分析师返回"
+    }
+  ],
+  "editorial_changes": [
+    "去正文YAML墙，旧身份保留于本来源记录",
+    "旧胶囊图关联不再作为正文旁支，不修改其独立资料",
+    "不新增归因算法、退款结论、投放建议或真实账户结果"
+  ],
+  "verification": "两集合人工复核；仅文本/链接检查，无代码实验、账户访问、Steam调用或运行结果继承",
+  "status": "accepted-editorial-treatment-source-only",
+  "previous_note_commit": "95d86ebbb98b2519714884b9cdef273cfb2fd0d1",
+  "reader_path": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+  "reader_sha256": "24867f27c5af66e09b3d85e4b32d5028adf20193dcdfa8f3152ddab2388e822b"
+}

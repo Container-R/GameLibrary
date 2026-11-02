@@ -71,7 +71,7 @@
 - [静音 stem 与结束输入：来源与有限取证范围](source-notes/silent-stem-normalization.md)
 - [内建 LookAt 顺序与姿态观察：来源及证据范围](source-notes/skeleton-modifier-order.md)
 - [Steam胶囊图交接：尺寸通过不等于用途、文案与排期通过](source-notes/steam-capsule-handoff.md)
-- [Steam 流量报表对账：两个 Total Visits 不能直接相减为自然流量](source-notes/steam-report-reconciliation.md)
+- [两张 Steam 流量表相减，为什么算不出自然流量](source-notes/steam-report-reconciliation.md)
 - [切线生成的面角输出：旧顶点索引不是结果接收索引](source-notes/tangent-corner-output-and-reindexing.md)
 - [Time Dilation：历史时钟政策与过载边界的来源定位](source-notes/time-dilation-overload-clocks.md)
 - [Unreal Notify 执行资格与权威请求：来源边界](source-notes/unreal-notify-eligibility-authority.md)
