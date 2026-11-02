@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-02",
+  "status": "accepted-source-only",
+  "decision": "optional-support-no-new-book",
+  "support_path": "管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md",
+  "reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "reader_before_sha256": "2cd17b1f5f5d8e2403b0788cced675af8278d78180ad29eb861a3b100c211a1d",
+  "sources": [
+    {
+      "url": "https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.pdf",
+      "identity": "GLSL 4.60.8, 2023-08-14; generation commit 747576a437935b79d72cc07b6cbed7136b613e71",
+      "read_scope": "3.8.2; 8.3 fract; 8.9 introduction and textureGrad; 8.14.1. Text only, not entire specification."
+    },
+    {
+      "url": "https://developer.nvidia.com/gpugems/gpugems2/part-ii-shading-lighting-and-shadows/chapter-12-tile-based-texture-mapping",
+      "identity": "Li-Yi Wei, GPU Gems 2 Chapter 12",
+      "read_scope": "12.1–12.5 visible text and Listings 12-1/12-2; 12.6 text also read but performance not adopted. No images or demo execution."
+    },
+    {
+      "url": "https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf",
+      "identity": "OpenGL 4.6 Core Profile, 2022-05-05",
+      "read_scope": "8.14 introduction, selected 8.14.1 derivative/LOD prose, 8.14.2 and Table 8.20. No exact LOD derivation from extracted equations."
+    }
+  ],
+  "original_example": "Paper differences .99/1.01 before and after fract; fixed atlas scale (1/4,1/2); not actual GPU derivative or selected mip observations.",
+  "limits": [
+    "No compilation, rendering, model or demo execution",
+    "Correct gradients require continuous intended transforms and valid derivative control flow",
+    "Explicit gradients do not solve atlas border or mip content contamination",
+    "No universal performance, padding-width or device result guarantee",
+    "Previous budget article and historical observations remain unchanged apart from the optional support entry."
+  ],
+  "support_sha256": "90857e42676b5a31e6d34f2ba052fcd2ebda55cb18c003d12202a6a8009212eb",
+  "reader_sha256": "3a70434fd5edb60ed6ed30468eb5d90b50c04e283ea9e7de7422648fecad7f95"
+}

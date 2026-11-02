@@ -300,7 +300,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T13:19:56Z",
+      "last_progress_at": "2026-11-02T13:48:46Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1142,7 +1142,7 @@
         "No inferred production guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:40:11.675407Z",
+      "last_progress_at": "2026-11-02T13:48:46Z",
       "next_action": "Maintain scoped offline evidence; no GPU allocation or residence claim",
       "blockers": [],
       "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
@@ -1155,7 +1155,14 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "5c1b991aff9e4f0d8d23662bbada6a36667282d316e53bade7fc8cade03e4663"
         }
-      ]
+      ],
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+        "管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md",
+        "管理档案/来源笔记/texture-gradient-wrapping.json",
+        "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md"
+      ],
+      "latest_reader_maintenance": "Optional shader support separates wrapped sampling address, continuous gradients, atlas scale and mip content; source-backed unexecuted arithmetic, not GPU evidence."
     },
     {
       "id": "TASK-2026-0038",
