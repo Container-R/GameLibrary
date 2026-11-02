@@ -1057,7 +1057,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "65a36ae5de1f78cbeb251cd97786dfad0289eff2ffe15d103ae78983650014dd",
+      "reader_sha256": "372b3cdefcb4fad1e231fe3dbe534d0ec2d37c8ca544b8942c5a59a0121e5058",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
@@ -1093,6 +1093,12 @@
         "review": "管理档案/审查/按时间追随插值-来源与读者审查.md",
         "support_sha256": "75bcf3c7ede3065f92951f719accbaa7b31517f284c2c2ec15b030594d2e7061",
         "scope": "Optional first-order recursive following distinction; older reader increments and execution identities retain their original scope."
+      },
+      "mouse_displacement_support": {
+        "source_record": "管理档案/来源笔记/mouse-displacement-consumption.json",
+        "review": "管理档案/审查/鼠标位移与速率-来源与读者审查.md",
+        "support": "管理档案/支持资料/鼠标转向乘了deltaTime，为什么帧率越高反而越慢.md",
+        "scope": "Input meaning, accumulation boundaries and original scalar arithmetic; no device execution."
       }
     },
     {
@@ -1901,7 +1907,13 @@
       "review_paths": [
         "管理档案/审查/摇杆死区-来源与读者审查.md"
       ],
-      "reader_sha256": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c"
+      "reader_sha256": "9214e688b28cd495b50a6f93f6c47b049ff35a1ed3f82f2e8118af099d151ae7",
+      "mouse_displacement_support": {
+        "source_record": "管理档案/来源笔记/mouse-displacement-consumption.json",
+        "review": "管理档案/审查/鼠标位移与速率-来源与读者审查.md",
+        "support": "管理档案/支持资料/鼠标转向乘了deltaTime，为什么帧率越高反而越慢.md",
+        "scope": "Input meaning, accumulation boundaries and original scalar arithmetic; no device execution."
+      }
     },
     {
       "internal_id": "KNOW-QA-001",
@@ -2142,7 +2154,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "d7028b6213a3e5483cc3052e8f035dc19dea3ea7",
+  "publication_base_sha": "01d0120b7cee6038d5cb91860808837da8d04969",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

@@ -1,0 +1,25 @@
+{
+  "run_id": "20261102T231146Z-mouse-displacement-consumption",
+  "observed_at": "2026-11-02T23:11:46Z",
+  "parent_verified_head": "01d0120b7cee6038d5cb91860808837da8d04969",
+  "task": "TASK-2026-0181",
+  "reader_sha256": {
+    "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md": "9214e688b28cd495b50a6f93f6c47b049ff35a1ed3f82f2e8118af099d151ae7",
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md": "372b3cdefcb4fad1e231fe3dbe534d0ec2d37c8ca544b8942c5a59a0121e5058"
+  },
+  "prior_reader_sha256": {
+    "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c",
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md": "65a36ae5de1f78cbeb251cd97786dfad0289eff2ffe15d103ae78983650014dd"
+  },
+  "source_record": "管理档案/来源笔记/mouse-displacement-consumption.json",
+  "review": "管理档案/审查/鼠标位移与速率-来源与读者审查.md",
+  "support_path": "管理档案/支持资料/鼠标转向乘了deltaTime，为什么帧率越高反而越慢.md",
+  "outcome": "Link displacement-versus-rate support from existing input and fixed-step readers.",
+  "verification_scope": "Primary API/source reading and independent scalar arithmetic/readability review; no runtime or device execution.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Reader and public records belong to the same containing commit; parent_verified_head names preceding verified revision."
+}

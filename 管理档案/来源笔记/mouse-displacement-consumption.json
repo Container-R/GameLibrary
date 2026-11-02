@@ -1,0 +1,31 @@
+{
+  "read_on": "2026-11-02",
+  "reader_paths": [
+    "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md"
+  ],
+  "reader_sha256": {
+    "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md": "9214e688b28cd495b50a6f93f6c47b049ff35a1ed3f82f2e8118af099d151ae7",
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md": "372b3cdefcb4fad1e231fe3dbe534d0ec2d37c8ca544b8942c5a59a0121e5058"
+  },
+  "prior_reader_sha256": {
+    "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c",
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md": "65a36ae5de1f78cbeb251cd97786dfad0289eff2ffe15d103ae78983650014dd"
+  },
+  "support_path": "管理档案/支持资料/鼠标转向乘了deltaTime，为什么帧率越高反而越慢.md",
+  "support_sha256": "93a1dddadf56a4203b05b51890d247a85810673373ba03a01cda0bc0e212d94f",
+  "review_path": "管理档案/审查/鼠标位移与速率-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://wiki.libsdl.org/SDL3/SDL_GetRelativeMouseState",
+      "scope": "Whole short current page; rolling documentation, no historical implementation claim"
+    },
+    {
+      "url": "https://github.com/Unity-Technologies/InputSystem/blob/c8518694c7fdd2c755755e028e2ec19cdceda19b/Packages/com.unity.inputsystem/InputSystem/Devices/Pointer.cs",
+      "version": "Input System 1.11.2",
+      "scope": "delta comments and OnNextUpdate/OnStateEvent; not whole package review"
+    }
+  ],
+  "verification": "Original-source reading and independent reader/arithmetic review; no runtime or device execution.",
+  "limits": "Given equal delivered movement, linear scalar mapping and complete single consumption; not a hardware invariance, responsiveness or multidimensional rotation guarantee."
+}
