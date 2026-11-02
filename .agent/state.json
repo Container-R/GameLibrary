@@ -10,19 +10,19 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 71
+    "reader_books_total": 72
   },
   "publication": {
-    "last_verified_head_sha": "febe33c3d21c3e3edabeb8b43f7072f8dd5b073c",
+    "last_verified_head_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "Existing contextual-dialogue reader gains a limited conversation-state supplement; no new book.",
-    "latest_verified_content_sha": "febe33c3d21c3e3edabeb8b43f7072f8dd5b073c",
-    "reader_books_total": 71,
-    "post_baseline_research_books": 16,
-    "counts_basis": "71 current readers, 55 frozen remediations,16 later additions; metadata checker is not a quality verdict."
+    "scope": "New narrow automated-testing method reader distinguishes goal arrival, actual traversal and rules; existing QA/navigation readers receive links only.",
+    "latest_verified_content_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
+    "reader_books_total": 72,
+    "post_baseline_research_books": 17,
+    "counts_basis": "72 current readers, 55 frozen remediations and17 later additions. All redundant count fields checked against the actual current reader path set; not quality approval."
   },
-  "next_action": "Review one existing reader for a concrete original-source implementation gap; preserve source-only versus execution boundaries and prefer integration over duplicate books.",
+  "next_action": "Review existing production and testing coverage for a concrete source-backed integration gap; do not turn additional case summaries into an unbounded QA role article.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -58,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T05:00:00Z",
+    "lease_until": "2026-11-02T05:20:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261102T042923Z-conversation-control-boundary",
+  "last_run_id": "20261102T044402Z-testing-agent-verdict",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -80,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-02T04:29:23Z",
-  "last_commit_sha": "febe33c3d21c3e3edabeb8b43f7072f8dd5b073c",
+  "last_real_progress_at": "2026-11-02T04:44:02Z",
+  "last_commit_sha": "9d28939067256a30e4347edcf0f9beddad37fa99",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [

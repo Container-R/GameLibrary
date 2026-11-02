@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T05:00:00Z",
+      "lease_until": "2026-11-02T05:20:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T04:29:23Z",
-      "next_action": "Review one existing reader for a concrete original-source implementation gap; preserve source-only versus execution boundaries and prefer integration over duplicate books.",
+      "last_progress_at": "2026-11-02T04:44:02Z",
+      "next_action": "Review existing production and testing coverage for a concrete source-backed integration gap; do not turn additional case summaries into an unbounded QA role article.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -7008,6 +7008,36 @@
       "next_action": "Retain as a source-backed supplement; a complete interruption/ownership implementation requires separate protocol and evidence.",
       "blockers": [],
       "verification_method": "Original conference PDF extracted text and session identity; paper branch example and independent reader/source review. No diagram pixels or presentation audio viewed, no runtime execution."
+    },
+    {
+      "id": "TASK-2026-0192",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How should automated game tests distinguish reaching a goal from observing that the actual route obeyed game rules?",
+      "discipline": "QA",
+      "status": "published",
+      "priority": 86,
+      "priority_rationale": "A narrow test-design method complements existing role guidance without adding another case to the long QA role article.",
+      "expected_artifact": "GameLibrary/项目管理与测试/质量保证/自动化测试/自动测试角色到达终点后，还要检查什么.md",
+      "artifact_paths": [
+        "GameLibrary/项目管理与测试/质量保证/自动化测试/自动测试角色到达终点后，还要检查什么.md",
+        "管理档案/审查/测试代理到达与判据-读者与来源审查.md",
+        "管理档案/来源笔记/testing-agent-reachability-and-verdict.json"
+      ],
+      "acceptance": [
+        "Read existing QA and navigation coverage before choosing a distinct method",
+        "Read original four-page EA SEED paper and visually inspect relevant figures with exact source identity",
+        "Separate controller exploration and reward from a game-rule testing verdict",
+        "Keep five supplied sandbox stuck areas and author visual analysis distinct from automatic bug detection",
+        "Independent complete-reader and actual root/cross-navigation review",
+        "No model training, game execution, universal timeout threshold or player-effectiveness claim"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T04:44:02Z",
+      "next_action": "Apply declared product rules and inspect actual time-aligned actions/state before classifying a project observation; no ready-made oracle supplied.",
+      "blockers": [],
+      "verification_method": "Primary paper text and figures plus original unexecuted corridor example; independent reader/source review. No experiment reproduction or runtime execution."
     }
   ],
   "execution_policy": {

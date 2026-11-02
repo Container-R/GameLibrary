@@ -1,0 +1,38 @@
+{
+  "title": "Augmenting Automated Game Testing with Deep Reinforcement Learning",
+  "authors": [
+    "Joakim Bergdahl",
+    "Camilo Gordillo",
+    "Konrad Tollmar",
+    "Linus Gisslén"
+  ],
+  "event": "CoG 2020",
+  "accessed_at": "2026-11-02",
+  "primary_url": "https://media.contentapi.ea.com/content/dam/eacom/en-us/images/2020/08/seed-augmenting-automated-game-testing-with-deep-reinforcement-learning.pdf",
+  "bytes": 9328559,
+  "sha256": "b752b2b767a8460bd7580ec610531c40cc6b638241cab4a446e8ee89b32a1c75",
+  "read_scope": "All four pages of original text; physical pages2–4 visually inspected by main and independent reviewer. No video/audio, source code or training-data execution.",
+  "positions": {
+    "movement_and_observation": "III-B/C, physical page2",
+    "controlled_sandboxes": "III-D, physical page2",
+    "shortcut_and_timeouts": "IV-A, physical pages3–4, figures1/4/5",
+    "visitation_distribution": "IV-B, physical page4; figure4 on page3",
+    "modular_limit": "V, physical page4"
+  },
+  "limits": [
+    "Five stuck areas are deliberately supplied sandbox conditions, identified by authors visual inspection; not a universal automatic bug oracle",
+    "No reuse of paper action-throughput comparison as human QA effectiveness",
+    "No conversion of training frames into validated human difficulty",
+    "No pixel-derived coverage percentage or common heatmap normalization assumed"
+  ],
+  "alternate_official_file": {
+    "official_page_link": "https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-augmenting-automated-game-testing-with-deep-reinforcement-learning.pdf",
+    "status": 200,
+    "bytes": 9328566,
+    "sha256": "63e68641beb4a6c228ccd5bb8803ec4b4673f1664644a5b4b28b3f8ee50b8eb9",
+    "same_bytes_as_rendered_source": false,
+    "rendered_source_url": "https://media.contentapi.ea.com/content/dam/eacom/en-us/images/2020/08/seed-augmenting-automated-game-testing-with-deep-reinforcement-learning.pdf"
+  },
+  "third_party_assets_redistributed": false,
+  "experiment_reproduced": false
+}

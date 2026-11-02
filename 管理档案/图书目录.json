@@ -1609,6 +1609,24 @@
         "管理档案/审查/摇杆死区-来源与读者审查.md"
       ],
       "reader_sha256": "5da116f381a6c185b8ea7a465dd12ff1bd036e335eeaa8e80b91c808f062448c"
+    },
+    {
+      "internal_id": "KNOW-QA-001",
+      "reader_title": "自动测试角色到达终点后，还要检查什么",
+      "floor": "项目管理与测试",
+      "area": "质量保证",
+      "shelf": "自动化测试",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/质量保证/自动化测试/自动测试角色到达终点后，还要检查什么.md",
+      "current_read_path": "GameLibrary/项目管理与测试/质量保证/自动化测试/自动测试角色到达终点后，还要检查什么.md",
+      "reader_body_status": "published",
+      "editorial_status": "限定原始论文、原创未运行场景及独立全文/来源/真实入口审读接受；不代表训练或游戏验证",
+      "origin": "source-grounded-testing-method-with-original-door-wall-example",
+      "scope_note": "行动探索范围与通行规则判据分工；合法到达、违规经过与超时未达需要不同复查",
+      "review_paths": [
+        "管理档案/审查/测试代理到达与判据-读者与来源审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/testing-agent-reachability-and-verdict.json",
+      "reader_sha256": "3f7ecdcaac7482c1309a3f042a49977b3514a5db16f58a5198250584a2c6c165"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1621,6 +1639,6 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "2a9573326c8a280965aa2881d41022d7a634c5df",
   "accounted_for_original_items": 55,
-  "reader_books_total": 71,
-  "post_baseline_research_books": 16
+  "reader_books_total": 72,
+  "post_baseline_research_books": 17
 }
