@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T18:13:29Z",
+      "last_progress_at": "2026-11-02T18:26:47Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6798,7 +6798,9 @@
       "artifact_paths": [
         "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
         "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
-        "管理档案/审查/音频渲染回调-读者与来源审查.md"
+        "管理档案/审查/音频渲染回调-读者与来源审查.md",
+        "管理档案/来源笔记/inside-audio-output-diagnosis.json",
+        "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md"
       ],
       "acceptance": [
         "Read current music, PCM and audio-role scope before choosing independent narrow method",
@@ -6808,10 +6810,11 @@
         "No audio execution, queue implementation, latency or audible-quality guarantee"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T05:33:09Z",
+      "last_progress_at": "2026-11-02T18:26:47Z",
       "next_action": "Concrete integration requires a reviewed handoff and reclamation protocol plus target-specific measurements; this reader does not certify either.",
       "blockers": [],
-      "verification_method": "Fixed public source and official documentation, original unexecuted example and independent reader review."
+      "verification_method": "Fixed public source and official documentation, original unexecuted example and independent reader review.",
+      "latest_maintenance_scope": "Add a narrow historical INSIDE source case to the existing diagnostic section; no new experiment or replacement of original callback sources."
     },
     {
       "id": "TASK-2026-0196",

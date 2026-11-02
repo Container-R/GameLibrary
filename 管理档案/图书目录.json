@@ -1860,7 +1860,12 @@
         "管理档案/审查/音频渲染回调-读者与来源审查.md"
       ],
       "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
-      "reader_sha256": "f4ee6dc492a346aec577f99a98dfc0dc41174bad0b574fd872d5b86deeba96fe"
+      "reader_sha256": "4b37dd11e01d4279224fc97d677b81c0281648373f4a60950097c55070da79fb",
+      "inside_case_supplement": {
+        "source_record": "管理档案/来源笔记/inside-audio-output-diagnosis.json",
+        "review": "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md",
+        "scope": "Two historical-case paragraphs and one reference added; previous review/source records retain their original scope and identities."
+      }
     },
     {
       "internal_id": "SOL-ENGINE-007",
@@ -2041,7 +2046,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c4f59fce14ff584d878d6ce42699f5802b414dc5",
+  "publication_base_sha": "34163fd24f7f159588b6b7a3ecdd4ea702142b8e",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

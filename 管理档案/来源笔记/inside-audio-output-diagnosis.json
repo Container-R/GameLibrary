@@ -1,0 +1,32 @@
+{
+  "read_on": "2026-11-02",
+  "authors": [
+    "Martin Stig Andersen",
+    "Jakob Schmid"
+  ],
+  "organization": "Playdead",
+  "title": "Unbreaking Immersion: Audio Implementation for INSIDE",
+  "event": "Wwise Tour presentation, Warsaw, 2016-06-16",
+  "author_index": "https://schmid.dk/talks/",
+  "source_url": "https://schmid.dk/talks/2016-06-16-wwise/schmid-Wwise_2016-INSIDE_Audio.pdf",
+  "public_source_sha256": "2dfb2fd29a100112015e76fa0e52b66f773c70a5dbec769f16b6abbfc4c840d2",
+  "pdf_page_count": 73,
+  "selected_physical_pages_one_based": [
+    50,
+    51,
+    55,
+    69
+  ],
+  "visual_read_pages_one_based": [
+    50,
+    55,
+    69
+  ],
+  "read_scope": "Relevant selected slide text and images; historical case paragraph only, not review of every diagram/demo or entire production implementation. Author index confirms date/location.",
+  "limits": "No demo/video listening, original output recording access, game reproduction, new audio execution, independent sample recount or current middleware recommendation. Screenshots only support what the authors presented.",
+  "copyright": "Narrow paraphrase with original link; no PDF, slide image, code listing or recording redistributed.",
+  "reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "reader_sha256": "4b37dd11e01d4279224fc97d677b81c0281648373f4a60950097c55070da79fb",
+  "prior_reader_sha256": "f4ee6dc492a346aec577f99a98dfc0dc41174bad0b574fd872d5b86deeba96fe",
+  "review_path": "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md"
+}
