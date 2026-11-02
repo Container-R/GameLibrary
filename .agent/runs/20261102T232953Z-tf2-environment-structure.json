@@ -1,0 +1,20 @@
+{
+  "run_id": "20261102T232953Z-tf2-environment-structure",
+  "observed_at": "2026-11-02T23:29:53Z",
+  "parent_verified_head": "3d98d3693a5947d60feb9591f5a750d0a689069f",
+  "task": "TASK-2026-0080",
+  "reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+  "reader_sha256": "1ce2bc8015ab5dfdf42969058ed47c7d92358c3b29f073a3f38ff395831ff8d5",
+  "prior_reader_sha256": "1ddabab6bd8e5accbf014b391209ee0548987a8125b6e3f096a4d0e5e78e4b19",
+  "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
+  "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
+  "support_path": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+  "outcome": "Add optional source-grounded environment-art support while preserving original spatial/material handoff discussion.",
+  "verification_scope": "Historical primary text, selected source images and independent reader review; no runtime, asset production or player observation.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Reader and public records belong to the same containing commit; parent_verified_head names preceding verified revision."
+}

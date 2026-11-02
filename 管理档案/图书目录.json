@@ -55,6 +55,13 @@
         "verification_method": "Source text and actual two-image visual reading; editorial transfer example, not tested studio workflow.",
         "image_files_published": 0,
         "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
+      },
+      "reader_sha256": "1ce2bc8015ab5dfdf42969058ed47c7d92358c3b29f073a3f38ff395831ff8d5",
+      "visual_structure_support": {
+        "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
+        "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
+        "support": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+        "scope": "Historical environment-art source and original comparison suggestions; no measured readability or rendering."
       }
     },
     {
@@ -2161,7 +2168,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "b32ad1781de58a99f1185bd5825faab156540191",
+  "publication_base_sha": "3d98d3693a5947d60feb9591f5a750d0a689069f",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

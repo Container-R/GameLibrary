@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T23:20:23Z",
+      "last_progress_at": "2026-11-02T23:29:53Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -2920,7 +2920,10 @@
       "expected_artifact": "Narrow environment concept role and original unexecuted preserve/change/unknown handoff worksheet",
       "artifact_paths": [
         "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
-        "管理档案/研究记录/source-notes/environment-concept-artist-role.md"
+        "管理档案/研究记录/source-notes/environment-concept-artist-role.md",
+        "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+        "管理档案/来源笔记/tf2-environment-visual-structure.json",
+        "管理档案/审查/环境细节与明暗分组-来源与读者审查.md"
       ],
       "acceptance": [
         "Named PlatinumGames and Bungie original practitioner text with exact historical dates",
@@ -2929,7 +2932,7 @@
         "Independent source/editorial review and precise existing TA/design/model links"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:49:48.989263Z",
+      "last_progress_at": "2026-11-02T23:29:53Z",
       "next_action": "Retain historical practitioner scope and unexecuted handoff; no visual or production-outcome validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:54:08.221118Z",
@@ -2947,7 +2950,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "d6a647584a32b4d4d49e7fc4afa3480d0da5e6dcd7e4087add5f4a0d51b51d63"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Link historical TF2 environment-art practice and original entrance example to distinguish detailed production from preserving broad visual grouping."
     },
     {
       "id": "TASK-2026-0081",

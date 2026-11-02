@@ -1,0 +1,27 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+  "reader_sha256": "1ce2bc8015ab5dfdf42969058ed47c7d92358c3b29f073a3f38ff395831ff8d5",
+  "prior_reader_sha256": "1ddabab6bd8e5accbf014b391209ee0548987a8125b6e3f096a4d0e5e78e4b19",
+  "support_path": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+  "support_sha256": "713cb9c6d268e2925174afca4ee0f5f7afd7f1a488aceb5557472ef101c77087",
+  "review_path": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
+  "source": {
+    "authors": [
+      "Jason Mitchell",
+      "Moby Francke",
+      "Dhabih Eng"
+    ],
+    "title": "Illustrative Rendering in Team Fortress 2",
+    "year": 2007,
+    "venue": "NPAR",
+    "official_index": "https://www.valvesoftware.com/en/publications",
+    "url": "https://cdn.fastly.steamstatic.com/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2.pdf",
+    "pdf_sha256": "4645483c9354c756d08788f604a69a5a7d7ecf47338a45de07ba33a222a89ad8",
+    "used_scope": "Sections4.2/4.3 and figures3/5 on physical page3",
+    "main_read_scope": "All six pages extracted text; images on physical pages2/3, no shader validation",
+    "independent_scope": "Environment reader and VFX deduplication; relevant source text and actual page3 image view, not whole-paper algorithm review"
+  },
+  "verification": "Historical author-source interpretation and independent reader/image review; original hypothetical production suggestions.",
+  "limits": "No controlled image comparison, game/runtime/performance/player observation, current-version claim or universal style prescription. Source PDF/images not republished."
+}
