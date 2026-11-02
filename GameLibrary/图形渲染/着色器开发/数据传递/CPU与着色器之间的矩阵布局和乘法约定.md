@@ -81,6 +81,22 @@ GLSL 的 `row_major` 和 `column_major` 限定符控制矩阵在缓冲区中的�
 
 如果矩阵上传和乘法都正确，模型非均匀缩放后法线方向仍可能不对；选读[非均匀缩放后的法线与切线](../../../../管理档案/来源笔记/tangent-handedness-normal-transform.md)，可以用一个手算例理解为什么恢复单位长度还不够。
 
+## 字节没错，也不能提前覆写上一帧的数据
+
+还有一种问题与行列布局无关：CPU 已经准备好新矩阵，GPU 却还在读取同一块存储中的旧矩阵。此时，即使每个偏移和数值都正确，直接覆盖也破坏了读写之间的安排。**轮流选用几块存储，只是在分配位置；确认旧使用结束，才是在安排复用时机。**
+
+用一个未执行的两槽例子说明。假设由同一个 CPU 线程写入并提交，只使用一条 GPU 队列，设备正常；U0、U1 是两个独立、不重叠、可由 CPU 写入的矩阵存储区域。这里特意选用 Vulkan 的 host-coherent 内存，即主机写入不需要另做显式缓存刷新；绑定、范围等其他条件都合法，且各区域的全部旧 GPU 使用都归入对应提交，没有其他读者。
+
+CPU 写好 U0，提交读取它的工作；下一次写 U1，再提交读取 U1 的工作。第三次按帧号取模又选中 U0，却不能因此立即改写它：CPU 走完两轮，不代表 GPU 已经读完第一轮。Vulkan 1.3.296 的规范明确区分提交与完成，提交调用把控制权交回应用时，并不等待队列工作结束。[4]
+
+一种做法是让 U0 的那次提交关联一个 **fence（完成同步对象）**。在这个限定例子中，CPU 成功等待到该次关联的 fence 发出完成信号，并确认它覆盖 U0 的全部旧使用、没有新的使用插入，才继续覆写 U0。[5] fence 不是唯一可用的完成确认方式，但无论采用什么办法，都需要对应到真正会读取这块区域的工作；不能用另一槽的完成或一个从未关联本次工作的初始信号来替代。
+
+这条正常路径还应接完整：**确认旧使用完成 → CPU 普通写入新的 coherent 矩阵数据 → 再提交读取新矩阵的工作。** 主机写入发生在下一次提交之前；规范规定的提交操作提供相关的主机到设备内存域操作。对这里限定的路径，不需要凭空再加一次 flush 或通用屏障。[6] 旧使用的完成与新数据的可见性是两项责任，只是本例选择的内存属性和提交顺序让后者较简单。
+
+如果等待超时或返回错误，就不能沿用这条成功分支。fence 的重置和再次使用也须合法，并保留它当前对应哪次工作的关系；本例不提供失败恢复流程。若改用非 coherent 内存，还须处理主机写入的刷新及 `nonCoherentAtomSize` 所规定的粒度：两个逻辑记录不重叠，并不自动排除它们共用同一同步／刷新粒度。[6]
+
+这里的槽号不是交换链图像索引，提交完成也不是图像已经显示。例子没有运行 Vulkan、测量等待时间或证明旧矩阵实验已经进入 GPU 执行；它只是把“同步满足要求”落实到一次 CPU 更新的具体前提。
+
 ## 旧验证记录证明了什么
 
 旧稿记录过两个只改变布局限定的 GLSL 编译案例。编译产物使用相同的 3×3 浮点逻辑类型，目标成员分别带行优先和列优先标记，偏移均为 0、步长均为 16。旧检查还追踪了该成员被读取、参与矩阵乘向量并写出结果的关系，而不只是查找某个指令名称。
@@ -98,6 +114,14 @@ GLSL 的 `row_major` 和 `column_major` 限定符控制矩阵在缓冲区中的�
 [2] Khronos，同一快照的 [Variables and Types：Uniform and Shader Storage Block Layout Qualifiers](https://github.com/KhronosGroup/GLSL/blob/0099bf83b0288469917fc2e2972cb0a2b74d6711/chapters/variables.adoc#L4908-L4912)，以及 [row_major / column_major](https://github.com/KhronosGroup/GLSL/blob/0099bf83b0288469917fc2e2972cb0a2b74d6711/chapters/variables.adoc#L5020-L5031) 段。布局与语言使用语义分开。
 
 [3] Khronos，《Vulkan Specification》，固定源码快照的 [Shader Resource Interface：矩阵布局与对齐](https://github.com/KhronosGroup/Vulkan-Docs/blob/b94f8bd2d004d2949469d8a5071ee10eb7d23566/chapters/interfaces.adoc#L1844-L1928)，以及同章 Standard Buffer Layout 的特性条件和 Offset / MatrixStride 规则。2026-11-01 重新核对以上原始规范；这里引用的是指定快照，不代表已验证所有 API、布局或设备。
+
+以下新增同步条款于 2026-11-02 直接读取，均固定为 Vulkan 1.3.296 的规范提交 `486e4b289053a7d64784e7ce791711843c60c235`，不是本库的驱动执行结果。
+
+[4] Khronos，[Fundamentals：Queue Operation](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/fundamentals.adoc#L94-L125)，提交返回与执行完成；[Host Access Hazards](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/memory.adoc#L3540-L3559)，CPU 访问映射区域时需保证的旧设备访问完成条件。
+
+[5] 同版本，[vkQueueSubmit](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/cmdbuffers.adoc#L2156-L2205)和 [Fence Signaling / Waiting](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/synchronization.adoc#L2657-L2766)，关联提交、等待条件与主机访问边界。本文不把它扩成所有队列或呈现工作的完成保证。
+
+[6] 同版本，[Host Access Types](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/synchronization.adoc#L1578-L1604)、[映射内存的刷新](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/memory.adoc#L3792-L3868)、[Host Write Ordering Guarantees](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/synchronization.adoc#L7612-L7642)及 [非 coherent 范围条件](https://github.com/KhronosGroup/Vulkan-Docs/blob/486e4b289053a7d64784e7ce791711843c60c235/chapters/memory.adoc#L3540-L3559)。仅支持所述普通主机写入及后续提交的限定说明，不提供设备写回 CPU、跨队列或任意内存分配的完整方案。
 
 ---
 

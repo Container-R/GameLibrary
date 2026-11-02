@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T01:50:00Z",
+      "lease_until": "2026-11-02T02:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:08:14Z",
-      "next_action": "Continue current-baseline source and usability review under the existing coverage task; do not count illustration rendering as new engine or mathematical evidence.",
+      "last_progress_at": "2026-11-02T01:19:30Z",
+      "next_action": "Perform a scoped cross-reader review of matrix-buffer completion and existing presentation/fence-retirement explanations before expanding the topic; preserve differences in resource and completion scope.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6613,6 +6613,35 @@
       "next_action": "Use the figure as an explanation of the existing algebra, not as lighting or engine validation.",
       "blockers": [],
       "verification_method": "Static SVG/source inspection and actual local SVG rendering with explicitly retained setup/diagnostic warnings; no new engine or numerical-model experiment."
+    },
+    {
+      "id": "TASK-2026-0180",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "When may a CPU overwrite a mapped matrix slot that a previous GPU submission was reading?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "Concrete data-lifetime gap in existing matrix reader, distinct from already covered presentation-semaphore retirement.",
+      "expected_artifact": "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+      "artifact_paths": [
+        "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+        "管理档案/审查/矩阵缓冲复用-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read current matrix/presentation readers and relevant scope notes",
+        "Independently read fixed Vulkan submit/host-hazard/fence/host-write clauses",
+        "Preserve full old-use coverage,current association and successful-wait assumptions",
+        "Give positive coherent write-before-submit path without mandatory extra barrier",
+        "Retain all original matrix math and failed GPU-capability boundaries",
+        "Complete independent full reader and actual navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:19:30Z",
+      "next_action": "For a real project, track all users and proper host/device ordering; this is not a complete allocator, reset/recovery or cross-queue protocol.",
+      "blockers": [],
+      "verification_method": "Fixed primary specification analysis and conditional two-slot explanation; no GPU execution, validation layer or numerical model."
     }
   ],
   "execution_policy": {
