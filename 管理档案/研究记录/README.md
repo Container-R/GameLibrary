@@ -47,7 +47,7 @@
 - [网格简化请求与返回结果：目标比例不是资产验收回执](source-notes/mesh-simplification-request-result.md)
 - [模型烘焙交接：piece 名称对应，不等于追踪集合未变](source-notes/model-bake-piece-visibility.md)
 - [叙事设计与写作职责：来源定位](source-notes/narrative-designer-writer-role.md)
-- [NativeArray：值副本的 IsCreated，不是全局存活或释放完成通知](source-notes/nativearray-copy-and-disposal-ownership.md)
+- [复制了 NativeArray 变量，为什么不能各自释放](source-notes/nativearray-copy-and-disposal-ownership.md)
 - [NavigationAgent3D 路径结束与目标到达：来源说明](source-notes/navigation-agent-completion.md)
 - [Noita 的 dirty region 与更新所有权：少做工作，不等于可以随意并行](source-notes/noita-dirty-region-update-ownership.md)
 - [Ogg Opus frame-count boundary: source receipt](source-notes/ogg-opus-frame-boundary.md)

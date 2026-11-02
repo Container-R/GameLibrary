@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-02",
+  "status": "accepted-editorial-treatment-source-only",
+  "decision": "replace-existing-note-in-place-no-new-book",
+  "target_path": "管理档案/研究记录/source-notes/nativearray-copy-and-disposal-ownership.md",
+  "title": "复制了 NativeArray 变量，为什么不能各自释放",
+  "original_note_sha256": "7d5183079e70eeeceaa4a79026da9071edd1e025e02ae4ca37bcef6439a58507",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
+  "reader_before_sha256": "bb5a468511a83081bb673acbd372f5c5cb0660ebe1b98522510a6f0e2e9c48ec",
+  "preserved_knowledge": [
+    {
+      "old": "普通值副本与 IsCreated 局部字段",
+      "new": "三个变量仍一份元素；同步释放后副本仍可能为 true；不授权失效访问或再释放"
+    },
+    {
+      "old": "allocator 字段保留，普通副本不同于非拥有 view",
+      "new": "三个变量小节保留；团队借用称谓不自动改变类型"
+    },
+    {
+      "old": "拥有分配的 Dispose(JobHandle) 清空与真正释放不同",
+      "new": "延迟释放小节，输入 lastUse 与返回 release 分开，不承诺可观测未 free 窗口"
+    },
+    {
+      "old": "全部消费者依赖、同步借用、关闭新借用",
+      "new": "J1/J2 例和正向收尾步骤；旧已登记 job 仍应按依赖完成"
+    },
+    {
+      "old": "唯一负责人、Complete 返回释放依赖",
+      "new": "延迟释放与交出去之前两节；无自动依赖发现"
+    },
+    {
+      "old": "固定源码与文档版本身份",
+      "new": "参考来源分别保留6000.0.0f1固定提交、Collections2.1.4、6000.0滚动API"
+    },
+    {
+      "old": "非覆盖项与无运行",
+      "new": "最后范围节保留异常/调度/并发恢复、allocator/view/unsafe/防御性复制及检查配置局限"
+    },
+    {
+      "old": "Addressables机制对照",
+      "new": "指向当前更新书，明确不同引用管理，不再指历史正文"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/Unity-Technologies/UnityCsReference/blob/0d0e6a11923ed73f1e8481eb5a6b2e67fe5ddc09/Runtime/Export/NativeArray/NativeArray.cs",
+      "identity": "6000.0.0f1 tag resolved to fixed commit on reading date",
+      "read_scope": "34–67,156–270,924–947; related JobHandle.bindings.cs22–100"
+    },
+    {
+      "url": "https://docs.unity3d.com/Packages/com.unity.collections@2.1/manual/allocator-overview.html",
+      "identity": "Collections2.1.4; generated2024-04-02",
+      "read_scope": "body including Persistent, Deallocating an allocator, IsCreated property"
+    },
+    {
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Unity.Jobs.JobHandle.CombineDependencies.html",
+      "identity": "6000.0 rolling API; redirected docs.unity.com",
+      "read_scope": "description, Remarks, example; related Complete description and Remarks"
+    }
+  ],
+  "limits": [
+    "Existing source-only knowledge, not new discovery or execution",
+    "Fictitious sample array and two consumers, no Unity run",
+    "Ordinary nonempty successful Persistent allocation and legal successful disposal paths only",
+    "No installation combination authentication or production memory-safety guarantee",
+    "Existing support rewritten in place and linked from the current reader; no new book or execution."
+  ],
+  "original_note_date": "2026-11-01",
+  "original_note_commit": "3c9f0ea2a8d8fca77737ba292f95e1e98326a966",
+  "support_sha256": "f6b5833fe9dadf9da9ce681cf4610669ad4eaaa7a59e4af2b6553d47628dcf1d",
+  "reader_sha256": "cd59c00a24b3e0bac24826163adfc717ac167701ff4a604cc92ef4b422979e20"
+}

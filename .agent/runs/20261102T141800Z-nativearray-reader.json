@@ -1,0 +1,20 @@
+{
+  "run_id": "20261102T141800Z-nativearray-reader",
+  "observed_at": "2026-11-02T14:18:36Z",
+  "parent_verified_head": "3c9f0ea2a8d8fca77737ba292f95e1e98326a966",
+  "task": "TASK-2026-0130",
+  "outcome": "Existing NativeArray ownership analysis rewritten in place, preserving knowledge and adding the equipment-preview reader entry.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
+  "reader_sha256": "cd59c00a24b3e0bac24826163adfc717ac167701ff4a604cc92ef4b422979e20",
+  "support_path": "管理档案/研究记录/source-notes/nativearray-copy-and-disposal-ownership.md",
+  "support_sha256": "f6b5833fe9dadf9da9ce681cf4610669ad4eaaa7a59e4af2b6553d47628dcf1d",
+  "source_note": "管理档案/来源笔记/nativearray-reader-treatment.json",
+  "review": "管理档案/审查/NativeArray副本与释放-读者化审查.md",
+  "verification_scope": "Fixed-source and official-document rereading, independent original/new knowledge mapping and complete reader review; no Unity or job execution.",
+  "reader_inventory": {
+    "current": 79,
+    "frozen": 55,
+    "post_baseline": 24
+  },
+  "publication": "Accepted rewritten support, reader and public maintenance record belong to the same containing commit."
+}
