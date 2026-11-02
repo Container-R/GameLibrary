@@ -1,0 +1,30 @@
+{
+  "article_url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+  "author": "Tomoko Nishii / PlatinumGames",
+  "publication_date": "2025-09-19",
+  "accessed_date": "2026-11-02",
+  "read_route": "Article text via web; web image cache misses; ordinary direct public HTTPS reads returned200, then actual image viewing. No access restriction bypass.",
+  "images": [
+    {
+      "source_url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/wp-content/uploads/sites/21/2025/09/498c3fe92647949ca90baea0504d6236.png",
+      "sha256": "d0418085409c4b5b337056f6733c31bc53f9235444ef880d02da5f24caee08e6",
+      "bytes": 5088179,
+      "pixels": [
+        3200,
+        1800
+      ],
+      "public_repo_copy_authorized_or_planned": false
+    },
+    {
+      "source_url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/wp-content/uploads/sites/21/2025/09/3b9f50d6adca845a3643ab648459ef0c.png",
+      "sha256": "5d625e765b92dd5a902e4ee3aaf35ef8df1641e00d46958ae5aace8d0797ac2f",
+      "bytes": 3973210,
+      "pixels": [
+        3200,
+        1800
+      ],
+      "public_repo_copy_authorized_or_planned": false
+    }
+  ],
+  "scope": "Two official background-overpaint examples actually viewed for local-design/scene correspondence only; no dimensions, collision, player-attention or final-game verification."
+}

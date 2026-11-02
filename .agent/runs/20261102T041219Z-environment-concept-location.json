@@ -1,0 +1,40 @@
+{
+  "run_id": "20261102T041219Z-environment-concept-location",
+  "observed_at": "2026-11-02T04:12:19Z",
+  "parent_verified_head": "cc5fa423960c2f6f6ee7ba25756b6521159e48b3",
+  "task": "TASK-2026-0190",
+  "outcome": "Two short paragraphs distinguish local-design/scene correspondence from dimensions, using actually viewed official production illustrations and a clearly fictional transfer example.",
+  "reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+  "reader_sha256": "1ddabab6bd8e5accbf014b391209ee0548987a8125b6e3f096a4d0e5e78e4b19",
+  "source_record": "管理档案/来源笔记/environment-concept-location-links.json",
+  "review": "管理档案/审查/环境概念局部设计对应-图文与读者审查.md",
+  "actual_source_reading": {
+    "primary_article": "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+    "language": "Japanese",
+    "official_images_viewed": 2,
+    "web_image_fetch": "cache_miss",
+    "ordinary_direct_public_reads": "both returned HTTP200",
+    "reviewers_independently_redownloaded_images": false,
+    "reviewers_actually_viewed_exact_copies": true
+  },
+  "image_files_published": 0,
+  "native_invocations": 0,
+  "scope_not_inferred": [
+    "Dimensions or collision boundaries",
+    "Player attention or route choice",
+    "Final game implementation",
+    "Unchanged Bungie interview revalidation"
+  ],
+  "reader_inventory": {
+    "current": 71,
+    "frozen": 55,
+    "post_baseline": 16
+  },
+  "prior_publication_readback": {
+    "head": "cc5fa423960c2f6f6ee7ba25756b6521159e48b3",
+    "all_blobs_matched": 968,
+    "key_files_exact": 8,
+    "component_condition_builds": 2,
+    "component_condition_native_calls": 2
+  }
+}

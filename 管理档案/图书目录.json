@@ -41,7 +41,17 @@
       "scope_disposition": "Useful old content mapped to the accepted reader article; repeated occupational lists, adjacent links and agent metadata explicitly excluded from reader scope. Historical original remains unchanged.",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/environment-concept-artist.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "latest_increment": {
+        "scope": "Local-design insets linked to a scene view; position correspondence distinguished from geometry and dimensional specification.",
+        "reader_sha256": "1ddabab6bd8e5accbf014b391209ee0548987a8125b6e3f096a4d0e5e78e4b19",
+        "previous_reader_sha256": "ef20844406f88af7290e4593f125590b5f6d5cc54f4e4f60e8fa21240c07330d",
+        "reader_review": "管理档案/审查/环境概念局部设计对应-图文与读者审查.md",
+        "source_record": "管理档案/来源笔记/environment-concept-location-links.json",
+        "verification_method": "Source text and actual two-image visual reading; editorial transfer example, not tested studio workflow.",
+        "image_files_published": 0,
+        "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
+      }
     },
     {
       "internal_id": "ROLE-ART2D-002",

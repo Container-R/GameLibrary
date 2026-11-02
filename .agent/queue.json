@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T04:25:00Z",
+      "lease_until": "2026-11-02T04:40:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T03:57:38Z",
-      "next_action": "Review the existing environment-concept article against original Ninja Gaiden 4 production images and captions; extend only if direct inspection supplies a concrete new production explanation, not another generic role summary.",
+      "last_progress_at": "2026-11-02T04:12:19Z",
+      "next_action": "Read current interactive-audio and crossfade readers before choosing a concrete original-source production gap; require a coverage/source gate and do not repeat generic role explanations.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6950,6 +6950,35 @@
         "business_action_executed": false,
         "native_stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6"
       }
+    },
+    {
+      "id": "TASK-2026-0190",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can a local asset drawing be tied to a scene position without treating a leader line as dimensional or collision evidence?",
+      "discipline": "ART2D",
+      "status": "published",
+      "priority": 86,
+      "priority_rationale": "Add a small concrete visual-production example to the existing environment-concept reader rather than another generic handoff checklist.",
+      "expected_artifact": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+      "artifact_paths": [
+        "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+        "管理档案/审查/环境概念局部设计对应-图文与读者审查.md",
+        "管理档案/来源笔记/environment-concept-location-links.json"
+      ],
+      "acceptance": [
+        "Read original Japanese background-overpaint commentary and publication-editing caveat",
+        "Actually view the two referenced official images and distinguish visible insets/leader lines from author-stated gameplay requirements",
+        "Independent final-text review with concrete reader benefit and disclosed prior involvement",
+        "Keep fictional entrance advice separate from actual project events",
+        "No third-party image redistribution or measured geometry/player-behavior claim"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T04:12:19Z",
+      "next_action": "Retain this limited illustration; new geometric, collision or player-attention claims require their own evidence.",
+      "blockers": [],
+      "verification_method": "Primary Japanese text plus actual viewing of two official image copies; independent source and reader review. No model, game, engine, fixture, or player test."
     }
   ],
   "execution_policy": {
