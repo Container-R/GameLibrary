@@ -1,0 +1,27 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/图形渲染/空间查询/光线求交/均匀网格中的最近命中与提前停止.md",
+  "reader_sha256": "1859d4e336381e82dfb33e7269ea4c230f0b40c4881a5544b7da72afe9cd89d3",
+  "prior_reader_sha256": "0779bcb10a7c17acf0a30325ef66bd8fdf7255c20bf2e4d6ae350fc6c36ff6ef",
+  "review_path": "管理档案/审查/网格局部射线上限-来源与读者审查.md",
+  "project": "pbrt-v2",
+  "source_commit": "e6f6334f3c26ca29eba2b27af4e60fec9fdc7a8d",
+  "sources": [
+    {
+      "url": "https://github.com/mmp/pbrt-v2/blob/e6f6334f3c26ca29eba2b27af4e60fec9fdc7a8d/src/accelerators/grid.cpp#L123-L224",
+      "scope": "Grid local Ray copy, voxel dispatch, stopping comparison and return; Voxel candidate dispatch"
+    },
+    {
+      "url": "https://github.com/mmp/pbrt-v2/blob/e6f6334f3c26ca29eba2b27af4e60fec9fdc7a8d/src/core/primitive.cpp",
+      "scope": "GeometricPrimitive::Intersect updates the supplied Ray upper bound"
+    },
+    {
+      "url": "https://github.com/mmp/pbrt-v2/blob/e6f6334f3c26ca29eba2b27af4e60fec9fdc7a8d/src/core/geometry.h#L322-L345",
+      "scope": "Ray upper bounds are mutable value fields"
+    }
+  ],
+  "verification": "Fixed-source reading and independent complete-reader review; no execution.",
+  "scope": "A single local-versus-caller interval clarification; existing direct-triangle stopping example remains unchanged.",
+  "limits": "No assertion of observed nested-grid or full-instance failure; no runtime reproduction, complete library audit or renewed PDF verification.",
+  "copyright": "Narrow source description and original reasoning, no complete source reproduction."
+}
