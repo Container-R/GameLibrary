@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "topic": "Task-label truncation: combining sequence boundaries and final displayed width",
+  "read_date": "2026-11-02",
+  "version_scope": "Unicode 17.0.0, UAX29 revision47; fixed version paths, not a claim about an installed text component.",
+  "sources": [
+    {
+      "title": "Unicode Text Segmentation",
+      "url": "https://www.unicode.org/reports/tr29/tr29-47.html",
+      "sections": [
+        "3 Grapheme Cluster Boundaries",
+        "3.1.1 Grapheme Cluster Boundary Rules"
+      ],
+      "used_for": "Default extended grapheme boundary approximation and GB9; not glyph count or all language editing behavior."
+    },
+    {
+      "title": "GraphemeBreakProperty-17.0.0.txt",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/auxiliary/GraphemeBreakProperty.txt",
+      "sections": [
+        "File header",
+        "Default Other",
+        "0300..036F Extend"
+      ],
+      "used_for": "The selected U+0301 combining mark has Extend property."
+    },
+    {
+      "title": "Unicode 17.0.0 Core Specification Chapter5",
+      "url": "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-5/",
+      "sections": [
+        "5.12.2 Truncation"
+      ],
+      "used_for": "Storage length and display width are distinct; context-dependent widths require final checking. Implementation guidance, not a universal product policy."
+    }
+  ],
+  "method": "Current bidi and pseudolocalization readers compared; relevant official source text read; original hypothetical decomposed-name example derived on paper.",
+  "scope": "One short supplement to the existing pseudolocalization reader, not a new book or general truncation implementation.",
+  "excluded": [
+    "No segmentation runtime or engine execution",
+    "No font, pixel width, shaping or target-language result",
+    "No Unicode17 support claim for any installed component",
+    "No Figure5-5 image observation",
+    "No typewriter animation, cursor editing, rich-text or line-breaking algorithm"
+  ]
+}

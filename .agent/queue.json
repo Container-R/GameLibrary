@@ -286,8 +286,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T04:57:00Z",
-      "next_action": "Assess a distinct unresolved reader question against original sources; prefer finite integration over repeating known production examples. Preserve source-only and native-execution boundaries.",
+      "last_progress_at": "2026-11-02T05:17:17Z",
+      "next_action": "Continue concrete reader questions using .agent/queue.json and 管理档案/图书目录.json; avoid repeating already explained encoding and layout boundaries.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6667,6 +6667,33 @@
       "next_action": "Retain the limited source-backed explanation; any SRP-specific retention or runtime claim requires a separate versioned protocol.",
       "blockers": [],
       "verification_method": "Versioned mutable official English documentation, complete callback examples read but not run, original hypothetical weapon and independent reader review."
+    },
+    {
+      "id": "TASK-2026-0194",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Where can a shortened task label end without splitting its combining sequence, and how is that distinct from fitting the display width?",
+      "discipline": "LOC",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "Clarify the existing ellipsis recommendation with one exact combining-mark example rather than another encoding or shaping tutorial.",
+      "expected_artifact": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+        "管理档案/来源笔记/text-truncation-grapheme-and-width.json",
+        "管理档案/审查/任务标签省略-边界与宽度审读.md"
+      ],
+      "acceptance": [
+        "Read current bidi and pseudolocalization readers in full before choosing a finite supplement",
+        "Read fixed Unicode17 Core truncation guidance, UAX29 revision47 and selected property data",
+        "Keep valid encoding distinct from preserving a grapheme cluster and from measured display width",
+        "Independent complete reader review and exact final wording check",
+        "No font, segmentation, engine, pixel-width or language-validation claim"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T05:17:17Z",
+      "next_action": "Retain the limited explanation; concrete component behavior and language quality require separate evidence.",
+      "blockers": [],
+      "verification_method": "Fixed official specification text, original paper example and independent complete reader review; no runtime execution."
     }
   ],
   "execution_policy": {
