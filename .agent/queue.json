@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T00:30:00Z",
+      "lease_until": "2026-11-02T00:45:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-01T23:55:30Z",
-      "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
+      "last_progress_at": "2026-11-02T00:07:41Z",
+      "next_action": "Continue high-value existing engineering gaps with original sources and reader review; do not extend the fixed sensor result to moving regions or arbitrary velocities.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6449,12 +6449,14 @@
       "parent_task_id": "TASK-2026-0008",
       "question": "In fixed Box2D3.2.0, how are a complete static-sensor crossing and visitor-event flag reflected in step-end begin/end and cached overlap?",
       "discipline": "PROG",
-      "status": "researching",
+      "status": "published",
       "priority": 85,
       "priority_rationale": "Strengthen an existing sensor reader with a tightly bounded native observation rather than another generic CCD explanation.",
       "expected_artifact": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
       "artifact_paths": [
-        "管理档案/研究记录/在途/Box2D静止传感区穿越验证.md"
+        "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+        "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
+        "管理档案/审查/传感区穿越-原生与读者审查.md"
       ],
       "acceptance": [
         "Fixed original source and independent pre-execution oracle review",
@@ -6462,13 +6464,13 @@
         "Separate source-identified build and execution with retained failures",
         "Independent raw observation and reader review before claiming runtime findings"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T00:30:00Z",
+      "owner": null,
+      "lease_until": null,
       "attempts": 1,
-      "last_progress_at": "2026-11-01T23:55:30Z",
-      "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
+      "last_progress_at": "2026-11-02T00:07:41Z",
+      "next_action": "Retain fixed input and source scope; event cache is not endpoint geometry. No further scenarios executed.",
       "blockers": [],
-      "verification_method": "Source and pure mock checks complete; first build stopped at diagnostic gate; no native observation yet."
+      "verification_method": "Three actual builds (first retained diagnostic-policy failure), two native processes using the same two configurations; independent new-copy build/run and full reader review; no cross-machine or universal CCD claim."
     }
   ],
   "execution_policy": {

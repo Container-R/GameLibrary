@@ -13,16 +13,16 @@
     "reader_books_total": 69
   },
   "publication": {
-    "last_verified_head_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
+    "last_verified_head_sha": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
     "status": "accepted-content-recorded-in-containing-commit",
     "authorization": "Reader-standard-consistent recoverable publishing and public-safe record transformation authorized; no history rewrite.",
-    "scope": "69 reader books unchanged; a source-backed in-progress native sensor investigation is checkpointed, not a runtime result.",
+    "scope": "69 reader books unchanged; existing sensor reader gains bounded native observations with safe reproducibility package.",
     "latest_verified_content_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
     "reader_books_total": 69,
     "post_baseline_research_books": 14,
-    "counts_basis": "No new reader book or native behavior accepted in this checkpoint."
+    "counts_basis": "Original two configurations repeated in same environment; supporting evidence strengthens existing book, no new reader book."
   },
-  "next_action": "Complete exact diagnostic exception review, then separately authorize a bounded second build and first native execution; preserve first failed build and distinguish zero executions from zero events.",
+  "next_action": "Continue high-value existing engineering gaps with original sources and reader review; do not extend the fixed sensor result to moving regions or arbitrary velocities.",
   "audit": {
     "overall_reader_rebuild_status": "accepted-scoped",
     "meaning": "Frozen reader remediation accepted through individual editorial reviews, content dispositions, root consolidation and final independent remote sampling; ongoing research continues.",
@@ -38,8 +38,7 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "source-grounded-reader-research",
   "active_task_ids": [
-    "TASK-2026-0008",
-    "TASK-2026-0174"
+    "TASK-2026-0008"
   ],
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -59,10 +58,10 @@
   },
   "lease": {
     "owner": "gamelibrary-main-integrator",
-    "lease_until": "2026-11-02T00:30:00Z",
+    "lease_until": "2026-11-02T00:45:00Z",
     "scope": "Single writer for reader-first source research and safe maintenance"
   },
-  "last_run_id": "20261101T235530Z-box2d-native-source-gate",
+  "last_run_id": "20261102T000741Z-box2d-static-sensor-observation",
   "blockers": [],
   "compatibility": {
     "state_schema_changed": true,
@@ -81,8 +80,8 @@
       "queue.tasks.next_action"
     ]
   },
-  "last_real_progress_at": "2026-11-01T23:55:30Z",
-  "last_commit_sha": "a11fd05a40adc88858fa1b2c7db144edb4e4c2da",
+  "last_real_progress_at": "2026-11-02T00:07:41Z",
+  "last_commit_sha": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
   "record_transformation": {
     "kind": "public-safe project summary",
     "removed_categories": [
@@ -116,5 +115,13 @@
     "reconciliation": "Sequential checkpoint inspection showed tree creation was not reached; no commit or ref operation was invoked. Fresh read-only HEAD verification at 22:56Z confirmed unchanged 36a16f326556207746ca51a6a16caccd7c3ff39d.",
     "next_step": "Separate bounded local payload loading from each remote request; publish accepted content only after full tree verification.",
     "resolution": "At 23:00Z accepted Detour content published as 7098ce36dc049fa15d335752b5e6a317b4be6bae. All 792 tree blobs matched the expected baseline plus delta; reader, support README and state read back exactly. No uncertain mutation remains."
+  },
+  "publication_transport_incident": {
+    "interval": "2026-11-02T00:08Z through 00:22Z",
+    "issue": "A single create_tree request yielded, but its subsequent wait did not return within the requested wait interval. No research progress claimed during this blocked period.",
+    "reconciliation": "At00:22Z master remained e3cfba2cb258fc1b673a606d8103f028cd6c26b5; no commit or ref operation had been invoked and no tree result was available. The expected new queue blob probe returned404.",
+    "recovery_scope": "Resume through individually acknowledged smaller unreferenced tree groups and a separately verified large queue blob. Requested yield/wait times are not a proven server-side deadline.",
+    "status": "resolved-through-smaller-object-publication-in-containing-commit",
+    "resolution": "Large queue/catalog blobs separately acknowledged and read back; supporting files assembled through individually acknowledged smaller trees. Final reader and publication state are added together. This is recovery of the publication, not proof that requested waits impose a reliable service deadline."
   }
 }

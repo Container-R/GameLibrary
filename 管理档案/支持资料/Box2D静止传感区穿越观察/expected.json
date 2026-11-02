@@ -1,0 +1,2456 @@
+{
+  "schema": 1,
+  "scope": "literal pre-execution two-world six-step specification",
+  "rows": [
+    {
+      "case": "global",
+      "phase": "version",
+      "key": "version",
+      "rule": "exact",
+      "value": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "case": "global",
+      "phase": "version",
+      "key": "length_scale",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "default_definitions",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "update_body_mass",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "task_callbacks_null",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "custom_callbacks_absent",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "custom_filtering",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "dt",
+      "rule": "exact",
+      "value": 0.015625
+    },
+    {
+      "case": "events_on",
+      "phase": "requested",
+      "key": "substeps",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "world"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "length_scale",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.gravity",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.continuous",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.sleep",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.max_speed",
+      "rule": "exact",
+      "value": 512.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "world.workers",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "body"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "body"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "shape"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.created_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "shape"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.created_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.type",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.type",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.shape_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.shapes_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor_body.shape",
+      "rule": "ref",
+      "value": "sensor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.shape_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.shapes_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor_body.shape",
+      "rule": "ref",
+      "value": "visitor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.linear_damping",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.angular_damping",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.gravity_scale",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.sleep",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.awake",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.enabled",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.lock_x",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.lock_y",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.lock_rotation",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.mass",
+      "rule": "positive",
+      "value": null
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.local_center",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.world_center",
+      "rule": "exact",
+      "value": [
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.type",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.body",
+      "rule": "ref",
+      "value": "sensor_body.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.world",
+      "rule": "ref",
+      "value": "world.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.sensor",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.contact_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.hit_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.presolve_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.density",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "sensor.filter",
+      "rule": "exact",
+      "value": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.type",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.body",
+      "rule": "ref",
+      "value": "visitor_body.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.world",
+      "rule": "ref",
+      "value": "world.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.sensor",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.contact_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.hit_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.presolve_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.density",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "visitor.filter",
+      "rule": "exact",
+      "value": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.count",
+      "rule": "exact",
+      "value": 4
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.vertex.0",
+      "rule": "exact",
+      "value": [
+        -0.125,
+        -1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.normal.0",
+      "rule": "exact",
+      "value": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.vertex.1",
+      "rule": "exact",
+      "value": [
+        0.125,
+        -1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.normal.1",
+      "rule": "exact",
+      "value": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.vertex.2",
+      "rule": "exact",
+      "value": [
+        0.125,
+        1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.normal.2",
+      "rule": "exact",
+      "value": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.vertex.3",
+      "rule": "exact",
+      "value": [
+        -0.125,
+        1.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.normal.3",
+      "rule": "exact",
+      "value": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.centroid",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "polygon.radius",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "circle.center",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "setup",
+      "key": "circle.radius",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        -2.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        -2.25,
+        -1.75
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "initial",
+      "key": "gap",
+      "rule": "gap",
+      "value": 1.625
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        2.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        1.75,
+        2.25
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "gap",
+      "rule": "gap",
+      "value": 1.625
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "begin.sensor",
+      "rule": "ref",
+      "value": "sensor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "begin.visitor",
+      "rule": "ref",
+      "value": "visitor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "pair.sensor_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "pair.visitor_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "cache_visitor",
+      "rule": "ref",
+      "value": "visitor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "cache_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_1",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        6.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        5.75,
+        6.25
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "gap",
+      "rule": "gap",
+      "value": 5.625
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "end.sensor",
+      "rule": "ref",
+      "value": "sensor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "end.visitor",
+      "rule": "ref",
+      "value": "visitor.id"
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "pair.sensor_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "pair.visitor_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_2",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        10.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        9.75,
+        10.25
+      ]
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "gap",
+      "rule": "gap",
+      "value": 9.625
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "events_on",
+      "phase": "step_3",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "events_on",
+      "phase": "destroy",
+      "key": "world_destroyed",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "default_definitions",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "update_body_mass",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "task_callbacks_null",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "custom_callbacks_absent",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "custom_filtering",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "dt",
+      "rule": "exact",
+      "value": 0.015625
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "requested",
+      "key": "substeps",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "world"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "length_scale",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.gravity",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.continuous",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.sleep",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.max_speed",
+      "rule": "exact",
+      "value": 512.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "world.workers",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "body"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "body"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "shape"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.created_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.id",
+      "rule": "bind",
+      "value": null,
+      "kind": "shape"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.created_valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.type",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.type",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.shape_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.shapes_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor_body.shape",
+      "rule": "ref",
+      "value": "sensor.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.shape_count",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.shapes_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor_body.shape",
+      "rule": "ref",
+      "value": "visitor.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.linear_damping",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.angular_damping",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.gravity_scale",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.sleep",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.awake",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.enabled",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.lock_x",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.lock_y",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.lock_rotation",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.mass",
+      "rule": "positive",
+      "value": null
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.local_center",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.world_center",
+      "rule": "exact",
+      "value": [
+        -2.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.type",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.body",
+      "rule": "ref",
+      "value": "sensor_body.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.world",
+      "rule": "ref",
+      "value": "world.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.sensor",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.contact_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.hit_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.presolve_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.density",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "sensor.filter",
+      "rule": "exact",
+      "value": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.valid",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.type",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.body",
+      "rule": "ref",
+      "value": "visitor_body.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.world",
+      "rule": "ref",
+      "value": "world.id"
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.sensor",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.contact_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.hit_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.presolve_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.density",
+      "rule": "exact",
+      "value": 1.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "visitor.filter",
+      "rule": "exact",
+      "value": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.count",
+      "rule": "exact",
+      "value": 4
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.vertex.0",
+      "rule": "exact",
+      "value": [
+        -0.125,
+        -1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.normal.0",
+      "rule": "exact",
+      "value": [
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.vertex.1",
+      "rule": "exact",
+      "value": [
+        0.125,
+        -1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.normal.1",
+      "rule": "exact",
+      "value": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.vertex.2",
+      "rule": "exact",
+      "value": [
+        0.125,
+        1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.normal.2",
+      "rule": "exact",
+      "value": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.vertex.3",
+      "rule": "exact",
+      "value": [
+        -0.125,
+        1.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.normal.3",
+      "rule": "exact",
+      "value": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.centroid",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "polygon.radius",
+      "rule": "exact",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "circle.center",
+      "rule": "exact",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "setup",
+      "key": "circle.radius",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        -2.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        -2.25,
+        -1.75
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "initial",
+      "key": "gap",
+      "rule": "gap",
+      "value": 1.625
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        2.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        1.75,
+        2.25
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "gap",
+      "rule": "gap",
+      "value": 1.625
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_1",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 1
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        6.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        5.75,
+        6.25
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "gap",
+      "rule": "gap",
+      "value": 5.625
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_2",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "step_begin",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "step_returned",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "sensor.pose",
+      "rule": "motion",
+      "value": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.pose",
+      "rule": "motion",
+      "value": [
+        10.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.velocity",
+      "rule": "motion",
+      "value": [
+        256.0,
+        0.0
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.angular_velocity",
+      "rule": "motion",
+      "value": 0.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.min_extent",
+      "rule": "exact",
+      "value": 0.25
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.safety_factor",
+      "rule": "exact",
+      "value": 0.5
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.bullet",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "sensor.sensor_events",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "visitor.sensor_events",
+      "rule": "exact",
+      "value": false
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "projection",
+      "rule": "projection",
+      "value": [
+        -0.125,
+        0.125,
+        9.75,
+        10.25
+      ]
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "gap",
+      "rule": "gap",
+      "value": 9.625
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "dx",
+      "rule": "dx",
+      "value": 4.0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "begin_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "end_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "cache_capacity",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "cache_count",
+      "rule": "exact",
+      "value": 0
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "step_3",
+      "key": "step_complete",
+      "rule": "exact",
+      "value": 3
+    },
+    {
+      "case": "visitor_events_off",
+      "phase": "destroy",
+      "key": "world_destroyed",
+      "rule": "exact",
+      "value": true
+    },
+    {
+      "case": "global",
+      "phase": "complete",
+      "key": "worlds",
+      "rule": "exact",
+      "value": 2
+    },
+    {
+      "case": "global",
+      "phase": "complete",
+      "key": "steps",
+      "rule": "exact",
+      "value": 6
+    }
+  ]
+}

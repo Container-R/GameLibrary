@@ -1,0 +1,50 @@
+{
+  "run_id": "20261102T000741Z-box2d-static-sensor-observation",
+  "observed_at": "2026-11-02T00:07:41Z",
+  "parent_verified_head": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
+  "task": "TASK-2026-0174",
+  "outcome": "Accepted native observation and reader integration in containing commit, with original failed build retained.",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a",
+  "support_path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
+  "support_sha256": "9018622146c0a392c8d12c7060f5a95af4415bfe45646c85bee789657580c740",
+  "support_archive_manifest_sha256": "e0995ac0b0415c3c6fe2cb86d94375457ba896d00cf759558a23ebf941793a55",
+  "review_path": "管理档案/审查/传感区穿越-原生与读者审查.md",
+  "public_summary": "管理档案/支持资料/Box2D静止传感区穿越观察/execution-summary.json",
+  "source_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "build_attempts": 3,
+  "accepted_builds": 2,
+  "native_invocations": 2,
+  "world_instances": 4,
+  "world_steps": 12,
+  "distinct_configurations": 2,
+  "observations_per_run": 314,
+  "raw_observation_sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+  "result": "At x2, enabled case begin1/end0/cache1 despite geometry gap1.625; next step x6 end1/cache0; disabled visitor events allzero with same motion.",
+  "limits": "Fixed static box and circle, same environment, no moving sensor, arbitrary-speed, cross-machine, real-time callback or exact TOI claim.",
+  "failure_preserved": "Initial compiler exit0 but nonempty diagnostic gate failed before native; exact reviewed full-byte exception adopted without changing source, fixture, oracle or build argv.",
+  "pure_checks": "Final author15 and independent9 synthetic/mock methods in normal/optimized interpreter; same methods repeated, not native case count. Additional distribution smoke repeated same methods without native.",
+  "reader_links": {
+    "status": "incomplete",
+    "local_targets_checked": 175,
+    "fragments_checked": 22,
+    "target_errors": 0,
+    "fragment_errors": 0,
+    "unsupported_syntax": 31,
+    "scope": "Known simple Markdown subset only, not full-parser or factual certification."
+  },
+  "prior_publication_readback": {
+    "commit": "e3cfba2cb258fc1b673a606d8103f028cd6c26b5",
+    "all_blobs_matched": 804,
+    "key_files_exact": 3
+  },
+  "privacy": "Only public-safe derived receipt summary, original parameter observations and public source/input/output hashes; no private execution identifiers or binary fingerprints copied.",
+  "publication_transport_incident": {
+    "interval": "2026-11-02T00:08Z through 00:22Z",
+    "issue": "A single create_tree request yielded, but its subsequent wait did not return within the requested wait interval. No research progress claimed during this blocked period.",
+    "reconciliation": "At00:22Z master remained e3cfba2cb258fc1b673a606d8103f028cd6c26b5; no commit or ref operation had been invoked and no tree result was available. The expected new queue blob probe returned404.",
+    "recovery_scope": "Resume through individually acknowledged smaller unreferenced tree groups and a separately verified large queue blob. Requested yield/wait times are not a proven server-side deadline.",
+    "status": "resolved-through-smaller-object-publication-in-containing-commit",
+    "resolution": "Large queue/catalog blobs separately acknowledged and read back; supporting files assembled through individually acknowledged smaller trees. Final reader and publication state are added together. This is recovery of the publication, not proof that requested waits impose a reliable service deadline."
+  }
+}

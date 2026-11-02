@@ -1361,12 +1361,19 @@
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
       "current_read_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
       "reader_body_status": "published",
-      "editorial_status": "固定官方源码、独立全文审读与本地逐级检索接受；无物理运行",
+      "editorial_status": "固定源码与完整正文审读接受；新增两配置原生观察及同环境独立重复，其他查询/旋转内容仍为来源解释",
       "origin": "readerization-of-existing-box2d-sensor-step-and-sweep-note",
       "scope_note": "端点占用与区间经过的区别；固定3.1.1和3.2.0条件，不是跨引擎CCD保证",
       "review_paths": [
         "管理档案/审查/触发区域穿越-来源与读者审查.md"
-      ]
+      ],
+      "latest_increment": {
+        "scope": "Fixed3.2.0 static-sensor continuous crossing step events and visitor-event-off control; two native runs of the same two configurations.",
+        "reader_review": "管理档案/审查/传感区穿越-原生与读者审查.md",
+        "support_path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
+        "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a",
+        "support_sha256": "9018622146c0a392c8d12c7060f5a95af4415bfe45646c85bee789657580c740"
+      }
     },
     {
       "internal_id": "SOL-ANIM-003",

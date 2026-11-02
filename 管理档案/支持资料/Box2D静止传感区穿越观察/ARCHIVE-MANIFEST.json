@@ -1,0 +1,89 @@
+{
+  "scope": "Public reproduction inputs, original observation bytes and explicitly derived summary; no upstream source bulk or private binary identity.",
+  "files": {
+    "BUILD-ARGV.json": {
+      "sha256": "03ab5b803b0b9cd205cd4b64677db73dc19f5ddff2dbbb32c2b460ca6f9af353",
+      "bytes": 1535
+    },
+    "BUILD-DIAGNOSTIC-REVIEW.md": {
+      "sha256": "16db2dca4f44e625a86efd031b07603efa26914e3718922cd104be6759985284",
+      "bytes": 5664
+    },
+    "CODE-MANIFEST.json": {
+      "sha256": "bd4b97e9b3676378ccc00ebfa1927c75cbaf25f950ff8a33860c08ba33e03a8f",
+      "bytes": 928
+    },
+    "INDEPENDENT-IMPLEMENTATION-REVIEW.md": {
+      "sha256": "6410187b7872bc4c2ff0123bdc8831521f292323480b7f19434bc1f0cb917b30",
+      "bytes": 8925
+    },
+    "NATIVE-REVIEW.md": {
+      "sha256": "d5b44db069e5a1f8089393763a4cbba68b6396eb1d387c19b3efc481ff70ccd3",
+      "bytes": 4910
+    },
+    "PROTOCOL-DRAFT.md": {
+      "sha256": "c12f4e9b26747d8cf18d36b1e844cd3ea3a0ed4aeac9317ee6056c3f6fcff890",
+      "bytes": 17781
+    },
+    "PROTOCOL-REVIEW.md": {
+      "sha256": "9a98ca25552a68a301e972b56c38333ba5160cceba370c252c3d3e3c29fbcaee",
+      "bytes": 4765
+    },
+    "README.md": {
+      "sha256": "9018622146c0a392c8d12c7060f5a95af4415bfe45646c85bee789657580c740",
+      "bytes": 6095
+    },
+    "SOURCE-MANIFEST.json": {
+      "sha256": "7b4b4756e22e0ad9bc72110034c5e8b1be3c1fb74090a3a3874f1694795e9396",
+      "bytes": 18647
+    },
+    "UPSTREAM-LICENSE": {
+      "sha256": "68a3e676d7e94093b102d5cba0d4e04af812040d6f230c3db67a6664574e43d2",
+      "bytes": 1067
+    },
+    "execution-summary.json": {
+      "sha256": "e535274fe579d7a9b3f02eaf35a32470a8eb8ddef85cb78e487d535bc2633ee9",
+      "bytes": 2591
+    },
+    "expected.json": {
+      "sha256": "42db20a5ed693dff27b96789976d3db53661b28bb5fc8b4de2a67fc817f1e7c5",
+      "bytes": 48118
+    },
+    "fixture.c": {
+      "sha256": "3ed5674db919dcb12df6ecb3e25aa408367965612ea09401823f1e55cf7271e5",
+      "bytes": 14789
+    },
+    "independent/challenge.py": {
+      "sha256": "14d27f497fb6476959d47e10d1b6c9471e0ce90e27db845c0e922d1fc3a3ed1b",
+      "bytes": 7740
+    },
+    "make_expected.py": {
+      "sha256": "9d0ee1adf57b110d4617034b3435e345b2255639e28b45171cda2fa25fa714fb",
+      "bytes": 4255
+    },
+    "observations/independent.jsonl": {
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "bytes": 27874
+    },
+    "observations/main.jsonl": {
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "bytes": 27874
+    },
+    "reviewed-build-stderr.txt": {
+      "sha256": "c55f639fa5da94fed9737ff07f07048c47386213d14fe39dbefaf75e281ff4b5",
+      "bytes": 32263
+    },
+    "run.py": {
+      "sha256": "666f5f81ad0ca9e5c81d74756c089be6ef7ffb55dd8bf70e517220a37c1f8b5b",
+      "bytes": 12992
+    },
+    "test_validate.py": {
+      "sha256": "689719832385353f3fd9dff181fff8103d5dbb5f0aa1c1e7ff24572b452341ea",
+      "bytes": 14719
+    },
+    "validate.py": {
+      "sha256": "15a48c7c61c765906123260036aa5bb6b5ada69feff1fb483ca0df26a38c8e13",
+      "bytes": 5190
+    }
+  }
+}

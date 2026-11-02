@@ -1,0 +1,505 @@
+In file included from upstream/src/solver.h:51,
+                 from upstream/src/contact_solver.h:6,
+                 from upstream/src/contact_solver.c:4:
+upstream/src/contact_solver.c: In function 'b2GetWideContactConstraintByteCount':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact_solver.c:831:9: note: in expansion of macro 'B2_UNUSED'
+  831 |         B2_UNUSED( simdWidth );
+      |         ^~~~~~~~~
+In file included from upstream/src/container.h:6,
+                 from upstream/src/contact.h:6,
+                 from upstream/src/contact.c:4:
+upstream/src/contact.c: In function 'b2CircleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:99:9: note: in expansion of macro 'B2_UNUSED'
+   99 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2CapsuleAndCircleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:106:9: note: in expansion of macro 'B2_UNUSED'
+  106 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2CapsuleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:112:9: note: in expansion of macro 'B2_UNUSED'
+  112 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2PolygonAndCircleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2PolygonAndCapsuleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:126:9: note: in expansion of macro 'B2_UNUSED'
+  126 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2PolygonManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:132:9: note: in expansion of macro 'B2_UNUSED'
+  132 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2SegmentAndCircleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:139:9: note: in expansion of macro 'B2_UNUSED'
+  139 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2SegmentAndCapsuleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:146:9: note: in expansion of macro 'B2_UNUSED'
+  146 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2SegmentAndPolygonManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:153:9: note: in expansion of macro 'B2_UNUSED'
+  153 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2ChainSegmentAndCircleManifold':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:160:9: note: in expansion of macro 'B2_UNUSED'
+  160 |         B2_UNUSED( cache );
+      |         ^~~~~~~~~
+upstream/src/contact.c: In function 'b2UpdateContact':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/contact.c:677:17: note: in expansion of macro 'B2_UNUSED'
+  677 |                 B2_UNUSED( unmatchedCount );
+      |                 ^~~~~~~~~
+In file included from upstream/src/distance.c:5:
+upstream/src/distance.c: In function 'b2ComputeShapeDistance':
+upstream/src/distance.c:426:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  426 |         B2_UNUSED( simplexes, simplexCapacity );
+      |                             ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/distance.c:426:9: note: in expansion of macro 'B2_UNUSED'
+  426 |         B2_UNUSED( simplexes, simplexCapacity );
+      |         ^~~~~~~~~
+In file included from upstream/src/container.h:6,
+                 from upstream/src/joint.h:5,
+                 from upstream/src/joint.c:4:
+upstream/src/joint.c: In function 'b2GetJointSimCheckType':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/joint.c:145:9: note: in expansion of macro 'B2_UNUSED'
+  145 |         B2_UNUSED( type );
+      |         ^~~~~~~~~
+In file included from upstream/src/container.h:6,
+                 from upstream/src/arena_allocator.h:6,
+                 from upstream/src/physics_world.h:8,
+                 from upstream/src/physics_world.c:8:
+upstream/src/physics_world.c: In function 'b2DefaultAddTaskFcn':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:91:9: note: in expansion of macro 'B2_UNUSED'
+   91 |         B2_UNUSED( userContext );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'b2DefaultFinishTaskFcn':
+upstream/src/physics_world.c:98:28: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   98 |         B2_UNUSED( userTask, userContext );
+      |                            ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:98:9: note: in expansion of macro 'B2_UNUSED'
+   98 |         B2_UNUSED( userTask, userContext );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'DrawQueryCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:1116:9: note: in expansion of macro 'B2_UNUSED'
+ 1116 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'TreeQueryCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2384:9: note: in expansion of macro 'B2_UNUSED'
+ 2384 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'TreeOverlapCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2468:9: note: in expansion of macro 'B2_UNUSED'
+ 2468 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'RayCastCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2571:9: note: in expansion of macro 'B2_UNUSED'
+ 2571 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'ShapeCastCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2751:9: note: in expansion of macro 'B2_UNUSED'
+ 2751 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'MoverCastCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2878:9: note: in expansion of macro 'B2_UNUSED'
+ 2878 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'TreeCollideCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:2981:9: note: in expansion of macro 'B2_UNUSED'
+ 2981 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+upstream/src/physics_world.c: In function 'ExplosionCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/physics_world.c:3119:9: note: in expansion of macro 'B2_UNUSED'
+ 3119 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+In file included from upstream/src/container.h:6,
+                 from upstream/src/body.h:6,
+                 from upstream/src/pogo_joint.c:4:
+upstream/src/pogo_joint.c: In function 'b2SolvePogoJoint':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/pogo_joint.c:208:9: note: in expansion of macro 'B2_UNUSED'
+  208 |         B2_UNUSED( useBias );
+      |         ^~~~~~~~~
+In file included from upstream/src/bitset.h:6,
+                 from upstream/src/sensor.h:6,
+                 from upstream/src/sensor.c:4:
+upstream/src/sensor.c: In function 'b2SensorQueryCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/sensor.c:46:9: note: in expansion of macro 'B2_UNUSED'
+   46 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+In file included from upstream/src/container.h:6,
+                 from upstream/src/shape.h:6,
+                 from upstream/src/shape.c:4:
+upstream/src/shape.c: In function 'b2CreateChain':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/shape.c:571:9: note: in expansion of macro 'B2_UNUSED'
+  571 |         B2_UNUSED( tolSqr );
+      |         ^~~~~~~~~
+In file included from upstream/src/solver.h:51,
+                 from upstream/src/solver.c:4:
+upstream/src/solver.c: In function 'b2ContinuousQueryCallback':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/solver.c:159:9: note: in expansion of macro 'B2_UNUSED'
+  159 |         B2_UNUSED( proxyId );
+      |         ^~~~~~~~~
+In file included from upstream/src/bitset.h:6,
+                 from upstream/src/table.c:6:
+upstream/src/table.c: In function 'b2GrowTable':
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/table.c:86:9: note: in expansion of macro 'B2_UNUSED'
+   86 |         B2_UNUSED( oldCount );
+      |         ^~~~~~~~~
+In file included from upstream/src/types.c:4:
+upstream/src/types.c: In function 'b2EmptyDrawPolygon':
+upstream/src/types.c:103:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  103 |         B2_UNUSED( transform, vertices, vertexCount, color, context );
+      |                             ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:103:39: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  103 |         B2_UNUSED( transform, vertices, vertexCount, color, context );
+      |                                       ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:103:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  103 |         B2_UNUSED( transform, vertices, vertexCount, color, context );
+      |                                                    ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:103:59: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  103 |         B2_UNUSED( transform, vertices, vertexCount, color, context );
+      |                                                           ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:103:9: note: in expansion of macro 'B2_UNUSED'
+  103 |         B2_UNUSED( transform, vertices, vertexCount, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawSolidPolygon':
+upstream/src/types.c:109:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |                             ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:109:39: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |                                       ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:109:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |                                                    ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:109:60: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |                                                            ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:109:67: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |                                                                   ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:109:9: note: in expansion of macro 'B2_UNUSED'
+  109 |         B2_UNUSED( transform, vertices, vertexCount, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawCircle':
+upstream/src/types.c:114:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  114 |         B2_UNUSED( center, radius, color, context );
+      |                          ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:114:34: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  114 |         B2_UNUSED( center, radius, color, context );
+      |                                  ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:114:41: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  114 |         B2_UNUSED( center, radius, color, context );
+      |                                         ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:114:9: note: in expansion of macro 'B2_UNUSED'
+  114 |         B2_UNUSED( center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawSolidCircle':
+upstream/src/types.c:119:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |                             ^
+upstream/src/types.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c:119:37: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |                                     ^
+upstream/src/types.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c:119:45: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |                                             ^
+upstream/src/types.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |                                                    ^
+upstream/src/types.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:119:9: note: in expansion of macro 'B2_UNUSED'
+  119 |         B2_UNUSED( transform, center, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawSolidCapsule':
+upstream/src/types.c:124:22: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  124 |         B2_UNUSED( p1, p2, radius, color, context );
+      |                      ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:124:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  124 |         B2_UNUSED( p1, p2, radius, color, context );
+      |                          ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:124:34: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  124 |         B2_UNUSED( p1, p2, radius, color, context );
+      |                                  ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:124:41: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  124 |         B2_UNUSED( p1, p2, radius, color, context );
+      |                                         ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:124:9: note: in expansion of macro 'B2_UNUSED'
+  124 |         B2_UNUSED( p1, p2, radius, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawSegment':
+upstream/src/types.c:129:22: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  129 |         B2_UNUSED( p1, p2, color, context );
+      |                      ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:129:26: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  129 |         B2_UNUSED( p1, p2, color, context );
+      |                          ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:129:33: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  129 |         B2_UNUSED( p1, p2, color, context );
+      |                                 ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:129:9: note: in expansion of macro 'B2_UNUSED'
+  129 |         B2_UNUSED( p1, p2, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawTransform':
+upstream/src/types.c:134:29: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  134 |         B2_UNUSED( transform, context );
+      |                             ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:134:9: note: in expansion of macro 'B2_UNUSED'
+  134 |         B2_UNUSED( transform, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawPoint':
+upstream/src/types.c:139:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  139 |         B2_UNUSED( p, size, color, context );
+      |                     ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:139:27: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  139 |         B2_UNUSED( p, size, color, context );
+      |                           ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:139:34: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  139 |         B2_UNUSED( p, size, color, context );
+      |                                  ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:139:9: note: in expansion of macro 'B2_UNUSED'
+  139 |         B2_UNUSED( p, size, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawString':
+upstream/src/types.c:144:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  144 |         B2_UNUSED( p, s, color, context );
+      |                     ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:144:24: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  144 |         B2_UNUSED( p, s, color, context );
+      |                        ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:144:31: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  144 |         B2_UNUSED( p, s, color, context );
+      |                               ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:144:9: note: in expansion of macro 'B2_UNUSED'
+  144 |         B2_UNUSED( p, s, color, context );
+      |         ^~~~~~~~~
+upstream/src/types.c: In function 'b2EmptyDrawBounds':
+upstream/src/types.c:149:24: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  149 |         B2_UNUSED( aabb, color, context );
+      |                        ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/types.c:149:31: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  149 |         B2_UNUSED( aabb, color, context );
+      |                               ^
+upstream/src/core.h:119:41: note: in definition of macro 'B2_UNUSED'
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                         ^~~~~~~~~~~
+upstream/src/core.h:119:52: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  119 | #define B2_UNUSED( ... ) (void)sizeof(( __VA_ARGS__, 0 ))
+      |                                                    ^
+upstream/src/types.c:149:9: note: in expansion of macro 'B2_UNUSED'
+  149 |         B2_UNUSED( aabb, color, context );
+      |         ^~~~~~~~~

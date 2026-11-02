@@ -1,0 +1,71 @@
+{
+  "record_type": "public-safe execution summary derived from local receipts and raw observation",
+  "transformation": "Private machine paths, process identifiers and generated/installed binary fingerprints omitted. This summary is not the original full execution receipt. No history rewritten.",
+  "source_repository": "erincatto/box2d",
+  "source_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "code_manifest_sha256": "bd4b97e9b3676378ccc00ebfa1927c75cbaf25f950ff8a33860c08ba33e03a8f",
+  "source_manifest_sha256": "7b4b4756e22e0ad9bc72110034c5e8b1be3c1fb74090a3a3874f1694795e9396",
+  "compiler_self_report": "cc (Debian 14.2.0-19) 14.2.0; self-report, not installation provenance certification",
+  "builds": [
+    {
+      "label": "initial",
+      "compiler_exit": 0,
+      "accepted": false,
+      "reason": "Initial policy required empty stderr; reviewed upstream diagnostics were present. No native call."
+    },
+    {
+      "label": "main-v2",
+      "compiler_exit": 0,
+      "accepted": true,
+      "diagnostics": "exact reviewed full bytes"
+    },
+    {
+      "label": "independent-v2",
+      "compiler_exit": 0,
+      "accepted": true,
+      "diagnostics": "exact reviewed full bytes"
+    }
+  ],
+  "native_runs": [
+    {
+      "label": "main",
+      "observation_path": "observations/main.jsonl",
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "records": 314,
+      "exit_code": 0,
+      "stderr_empty": true,
+      "final_acceptance": "pass after source/code/receipt/artifact identity checks",
+      "worlds": 2,
+      "steps": 6
+    },
+    {
+      "label": "independent",
+      "observation_path": "observations/independent.jsonl",
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "records": 314,
+      "exit_code": 0,
+      "stderr_empty": true,
+      "final_acceptance": "pass after source/code/receipt/artifact identity checks",
+      "worlds": 2,
+      "steps": 6
+    }
+  ],
+  "totals": {
+    "build_attempts": 3,
+    "accepted_builds": 2,
+    "native_invocations": 2,
+    "world_instances": 4,
+    "world_steps": 12,
+    "distinct_configurations": 2
+  },
+  "repeat_scope": "Fresh independent source/code copy and build in the same environment, not cross-machine or extra configurations",
+  "pure_checks": {
+    "author_methods": 15,
+    "independent_methods": 9,
+    "modes": [
+      "normal",
+      "optimized interpreter with mocked normal-runner flag in workflow tests"
+    ],
+    "scope": "Pure synthetic/mock checks only; repeated modes do not increase native coverage."
+  }
+}
