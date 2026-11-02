@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T02:15:00Z",
+      "lease_until": "2026-11-02T02:20:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T01:33:10Z",
-      "next_action": "Review existing non-rendering reader coverage for a concrete production or content-pipeline gap; prioritize integration over additional generic tutorials.",
+      "last_progress_at": "2026-11-02T01:39:55Z",
+      "next_action": "Identify a bounded content-production gap from existing readers and original sources; keep source sufficiency and no-duplicate integration gates.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6677,6 +6677,35 @@
       "next_action": "For project use inspect actual control, binding and action chain; evaluate device/player response separately.",
       "blockers": [],
       "verification_method": "Fixed Unity Input System 1.11.2 source analysis and independent ideal-real arithmetic; no Unity, model, controller or hardware execution."
+    },
+    {
+      "id": "TASK-2026-0182",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can aggregate level completion fall while completion proportions increase in both predefined experience groups?",
+      "discipline": "DATA",
+      "status": "published",
+      "priority": 81,
+      "priority_rationale": "Make existing composition warning actionable through denominator-weighted counts, without adding a general statistics tutorial.",
+      "expected_artifact": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+      "artifact_paths": [
+        "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+        "管理档案/审查/完成率构成权重-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing completion and data-role scope",
+        "Read original Simpson paper within reported accessible text scope",
+        "Independently verify the original integer table and denominator weights",
+        "Keep new complete-outcome example distinct from old unknown-outcome example",
+        "Do not infer causal effects or prefer stratification universally",
+        "Complete full reader and root/shelf navigation review"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T01:39:55Z",
+      "next_action": "In a project report relevant predefined strata and their attempt denominators together with aggregate counts; causal conclusions require additional design and evidence.",
+      "blockers": [],
+      "verification_method": "Original-paper text reading and independent paper arithmetic; no statistical execution, runtime or actual player data."
     }
   ],
   "execution_policy": {

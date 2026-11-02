@@ -634,7 +634,14 @@
       ],
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/data/attempt-completion-denominator-contract.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "latest_increment": {
+        "scope": "Original two-stratum attempt-count example explains how changing mixture weights can reverse aggregate direction without a counting error.",
+        "reader_sha256": "096770e6cde24c6fe9525a124c3a75141eb2d657ec612c5e654888acf5e2a3cd",
+        "reader_review": "管理档案/审查/完成率构成权重-来源与读者审查.md",
+        "source": "E. H. Simpson 1951, sections8–11; original strict-reversal example distinct from paper tables.",
+        "execution": "Independent ideal arithmetic and source reading only; no statistical model or player data."
+      }
     },
     {
       "internal_id": "SOL-DESIGN-001",
