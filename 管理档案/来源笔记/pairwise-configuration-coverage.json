@@ -1,0 +1,26 @@
+{
+  "topic": "Pairwise configuration coverage, higher-order omissions and invalid-row deletion",
+  "accessed_on": "2026-11-02",
+  "source": {
+    "authors": ["D. Richard Kuhn", "Raghu N. Kacker", "Yu Lei"],
+    "organization": "NIST",
+    "title": "Practical Combinatorial Testing",
+    "publication": "SP 800-142",
+    "date": "2010-10",
+    "landing_page": "https://csrc.nist.gov/pubs/sp/800/142/final",
+    "pdf": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-142.pdf",
+    "pdf_sha256": "72d169a9fe3b2dd8558916848a8fb51698a10228d0035233ae51054259333943",
+    "sections_used": ["2: pairwise and higher-order interactions", "2.1: configuration versus input-parameter testing", "2.2: test oracle", "3.3.1: invalid combinations and constraints"],
+    "main_reading": {"physical_pages_text": ["10-23", "34-39"], "visual_physical_pages": [37], "complete_82_page_read": false},
+    "local_example_issue": "Physical pages36-37: displayed Figure16 eight rows omit ab=11. Direct projection gives23/24 pair-value configurations and5/6 fully covered factor pairs, inconsistent with nearby100% and19/24 descriptions. Independently checked displayed values; no official erratum or general rejection of the publication is claimed. These numerical examples are not used for reader claims."
+  },
+  "original_example": {
+    "parameters": "Three binary configuration factors, all eight combinations initially stipulated valid",
+    "rows": ["000", "011", "101", "110"],
+    "pairwise_projection": "Each of AB, AC and BC contains00,01,10,11;111 is not selected.",
+    "constraint_variant": "If C implies B,101 is invalid. Removing it loses still-valid AB=10 and AC=11;100 and111 can supply those respective pairs. The changed valid domain must be checked separately.",
+    "method": "Direct finite arithmetic and set projection, including a small local enumeration cross-check; not a game, ACTS generator, engine or empirical defect experiment."
+  },
+  "excluded_claims": ["Game-specific fault percentages", "Pairwise coverage as a complete quality or release guarantee", "Generated rows as executed checks", "Configuration coverage as action-order coverage", "A universal recommended interaction strength", "Coverage percentage as failure probability"],
+  "rights": "Original Chinese explanation and original finite example; reference links only, no PDF or page images included in publication."
+}

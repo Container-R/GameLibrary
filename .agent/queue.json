@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T10:33:11Z",
+      "last_progress_at": "2026-11-02T10:44:31Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -966,13 +966,16 @@
         "No inferred production guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T16:25:34.959720Z",
+      "last_progress_at": "2026-11-02T10:44:31Z",
       "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
       "blockers": [],
       "completed_at": "2026-10-31T16:25:34.959720Z",
       "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
       "artifact_paths": [
-        "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md"
+        "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
+        "管理档案/支持资料/两两组合都测过，为什么三个设置一起开仍会出错.md",
+        "管理档案/审查/两两组合覆盖-来源与读者审查.md",
+        "管理档案/来源笔记/pairwise-configuration-coverage.json"
       ],
       "historical_artifacts": [
         {
@@ -981,7 +984,8 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "989a072c530774e48ba4075ed0a606011a2e4ee04995977a404d34d21d6b4ea6"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional configuration example distinguishes pairwise coverage, triple omissions and valid coverage lost by deleting invalid rows; no game test."
     },
     {
       "id": "TASK-2026-0032",
