@@ -1,0 +1,45 @@
+{
+  "title": "细节法线叠加中的平坦中性输入",
+  "read_date": "2026-11-02",
+  "evidence_scope": "Original finite ideal-real derivation and primary-author explanation; no GPU, texture, material or image execution.",
+  "sources": [
+    {
+      "authors": [
+        "Colin Barré-Brisebois",
+        "Stephen Hill"
+      ],
+      "title": "Blending in Detail",
+      "date": "2012-07-10",
+      "url": "https://blog.selfshadow.com/publications/blending-in-detail/",
+      "identity": "Dated author article, mutable page; not a pinned source-code revision.",
+      "sections": [
+        "Does it Blend? / Linear Blending",
+        "Detail Oriented",
+        "The Nitty Gritty",
+        "Devil in the Details"
+      ],
+      "supports": [
+        "Directions require a combination rule appropriate to the intended detail-addition operation.",
+        "Reorienting the flat reference toward the base gives a geometric interpretation for detail mapping."
+      ],
+      "reading_scope": "Article text and formulas read; no source images, video or demo execution. Other methods and historical instruction counts are not adopted as project evidence.",
+      "limitations": [
+        "Neutral-input behavior is not full material correctness.",
+        "Specific implementation needs its own unit-length, antiparallel and representation handling."
+      ]
+    }
+  ],
+  "original_example": {
+    "inputs": "Same tangent-coordinate convention; decoded unit base(3/5,0,4/5), flat detail(0,0,1).",
+    "normalized_sum": "(1/sqrt(10),0,3/sqrt(10)), not the base direction.",
+    "encoding_case": "For c=(n+1)/2 only, equal encoded average decodes to(3/10,0,9/10), giving the same normalized direction.",
+    "positive_geometric_condition": "Choose R with Rf=b; when d=f, Rd=b. This condition alone does not uniquely specify general R or a complete RNM implementation."
+  },
+  "non_goals": [
+    "Rejecting all interpolation between material states",
+    "Universal normal-combination recommendation",
+    "Copy-paste RNM implementation",
+    "Compression, filtering or lighting certification",
+    "Modern hardware performance claims"
+  ]
+}

@@ -1044,7 +1044,8 @@
       },
       "reader_sha256": "3bc78911d9a866e2422b434435ef8e9dcb51a6ed9b93e3232ce063b18ddf5073",
       "review_paths": [
-        "管理档案/审查/GPU复制可见性-来源与读者审查.md"
+        "管理档案/审查/GPU复制可见性-来源与读者审查.md",
+        "管理档案/审查/平坦细节法线-来源与读者审查.md"
       ],
       "gpu_copy_visibility_support": {
         "scope": "Optional same-queue device copy-to-vertex-input memory dependency; does not alter the existing host-coherent upload path.",
@@ -1052,6 +1053,15 @@
         "reader_review": "管理档案/审查/GPU复制可见性-来源与读者审查.md",
         "reader_sha256": "3bc78911d9a866e2422b434435ef8e9dcb51a6ed9b93e3232ce063b18ddf5073",
         "execution": "Source-grounded hypothetical arrangement only; no new GPU or validation run."
+      },
+      "detail_normal_support": {
+        "scope": "Optional neutral-input check for detail addition, distinct from inverse-transpose surface transformation and material interpolation.",
+        "entry_path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+        "entry_sha256": "42ff58f9813a0f5a82c483aa9c99922c5389d88b7bb8b830477eb20f176c816f",
+        "support_path": "管理档案/支持资料/没有细节的法线，为什么还会改掉底层方向.md",
+        "review_path": "管理档案/审查/平坦细节法线-来源与读者审查.md",
+        "execution": "Primary author text and original ideal-real derivation; no new image, shader or material execution.",
+        "earlier_illustration_identity": "The existing illustration record retains the note hash at that earlier review; its mathematics and image bytes are unchanged."
       }
     },
     {
@@ -1788,7 +1798,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "482847037ad790748b1e8cb418c33b2da13ee215",
+  "publication_base_sha": "266f90435aad731ecb874a1706a75ebf0909422a",
   "accounted_for_original_items": 55,
   "reader_books_total": 76,
   "post_baseline_research_books": 21,

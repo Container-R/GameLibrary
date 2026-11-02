@@ -78,6 +78,8 @@ N_{\rm wrong}\cdot T'=\frac{4-1}{5}=\frac35.
 
 如果问题发生在生成切线之后、重新组织顶点索引之前，可另读[面角切线输出与重索引](../研究记录/source-notes/tangent-corner-output-and-reindexing.md)：旧索引能提供输入属性，却未必能保存新增切线的逐面角区别。那是属性共享的问题，不是这里的空间变换问题。
 
+如果问题出在两张法线图的细节叠加，可选读[没有细节的法线，为什么还会改掉底层方向](../支持资料/没有细节的法线，为什么还会改掉底层方向.md)：平坦细节是否保留底层方向，是组合运算的要求，不是逆转置变换要解决的问题。
+
 ## 参考来源
 
 [1] Khronos，glTF 2.0 固定规范提交 `59ecbdba704206bb656965ab4e202881806066f1`：[属性表](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1661-L1662)与 [Using Primitive Data](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1813-L1830)。局部 NORMAL、TANGENT 与副切线的含义。

@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T11:03:20Z",
+      "last_progress_at": "2026-11-02T11:18:05Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6169,7 +6169,10 @@
       "artifact_paths": [
         "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
         "管理档案/来源笔记/tangent-handedness-normal-transform.md",
-        "管理档案/审查/法线说明-既有内容编辑与导航审查.md"
+        "管理档案/审查/法线说明-既有内容编辑与导航审查.md",
+        "管理档案/支持资料/没有细节的法线，为什么还会改掉底层方向.md",
+        "管理档案/来源笔记/detail-normal-neutral-input.json",
+        "管理档案/审查/平坦细节法线-来源与读者审查.md"
       ],
       "acceptance": [
         "Read current matrix body and existing note before claiming a gap",
@@ -6178,10 +6181,11 @@
         "Independently follow actual root-to-book-to-note and return route"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T00:38:52Z",
+      "last_progress_at": "2026-11-02T11:18:05Z",
       "next_action": "Existing content is now reachable from matrix reader; no new theorem, model or rendered result claimed.",
       "blockers": [],
-      "verification_method": "Independent full-reader and exact paper-math/source review; no new execution."
+      "verification_method": "Independent full-reader and exact paper-math/source review; no new execution.",
+      "latest_reader_maintenance": "Optional detail-normal support distinguishes neutral detail addition from material interpolation; original transform mathematics and illustration unchanged."
     },
     {
       "id": "TASK-2026-0176",
