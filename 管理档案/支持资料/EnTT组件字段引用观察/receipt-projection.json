@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "status": "PASS",
+  "error": null,
+  "processes": [
+    {
+      "copy": "repeat-1",
+      "phase": "build",
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-g0",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "source",
+        "fixture.cpp",
+        "-o",
+        "out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "environment": "VALIDATED_BEFORE_LAUNCH",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED",
+      "environment_cleanup": "REMOVED"
+    },
+    {
+      "copy": "repeat-1",
+      "phase": "native",
+      "argv": [
+        "./out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "environment": "VALIDATED_BEFORE_LAUNCH",
+      "stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED",
+      "environment_cleanup": "REMOVED"
+    },
+    {
+      "copy": "repeat-2",
+      "phase": "build",
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-g0",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-Werror",
+        "-I",
+        "source",
+        "fixture.cpp",
+        "-o",
+        "out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "environment": "VALIDATED_BEFORE_LAUNCH",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED",
+      "environment_cleanup": "REMOVED"
+    },
+    {
+      "copy": "repeat-2",
+      "phase": "native",
+      "argv": [
+        "./out/fixture"
+      ],
+      "status": "RETURNED",
+      "returncode": 0,
+      "timeout": false,
+      "environment": "VALIDATED_BEFORE_LAUNCH",
+      "stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "group_cleanup": "NO_GROUP",
+      "leader_cleanup": "REAPED",
+      "environment_cleanup": "REMOVED"
+    }
+  ],
+  "copies": [
+    {
+      "name": "repeat-1",
+      "before": {
+        "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "after": {
+        "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "content_check": "PASS",
+      "recorded_artifact_before_after_equal": true,
+      "artifact_identity_omitted": true
+    },
+    {
+      "name": "repeat-2",
+      "before": {
+        "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "after": {
+        "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+        "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+        "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329"
+      },
+      "content_check": "PASS",
+      "recorded_artifact_before_after_equal": true,
+      "artifact_identity_omitted": true
+    }
+  ],
+  "manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
+  "input_before": {
+    "PROTOCOL.md": "faa507b4a1cb3c3efd274c174a6a8e32377983db4aa9685871d0c65b5b47aa2d",
+    "EXPECTED-SCHEMA.md": "b89e746367b99ece69066a4a279b32d678a7bf2cb6fc615a8a04be53becd812c",
+    "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+    "runner.py": "1d7a61cb4f0e2a89350b5939c0ab4da23171f7cd5e461cf43a90466e97f3bd69",
+    "checker.py": "21dffbb35f6ae3365c8d8c14b581f6e36e566da449464446ff484a3cc05a2a2e",
+    "independent-oracle.json": "92f2fe2c5dbfe5e3fa3a8a281b171e2bbde033bdcea0257ea86658f9d32eeb15",
+    "PROTOCOL-REVIEW.md": "ebcd9b1c1655723bacac9b035a9ef497817c4e1f0ea449057971d55fe0e7b381",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "test_runner_cleanup.py": "a8688a905875362c3a5243f75c2dfa3c45e777f95fbc793ae0c14af6f6e7e86c",
+    "test_environment.py": "de45ba889d901ad84d2fdf3b1803240831dd830a59c1841fdf78f8fc4650f703",
+    "test_checker.py": "29febeb02cd6d8fb098e4cf2e81d77f58a175ec662e18f58500cbf48ae14760d",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "PROTOCOL-REVIEW-v2.md": "5aeb287381c86ecbb5c81ce95546d95cb8056b06d3b0a36e796c8efd7333fa68"
+  },
+  "input_after": {
+    "PROTOCOL.md": "faa507b4a1cb3c3efd274c174a6a8e32377983db4aa9685871d0c65b5b47aa2d",
+    "EXPECTED-SCHEMA.md": "b89e746367b99ece69066a4a279b32d678a7bf2cb6fc615a8a04be53becd812c",
+    "fixture.cpp": "a0ef9f35226c791bfb8917541737faabfcedd35a578bb07462739995e8eb7e57",
+    "runner.py": "1d7a61cb4f0e2a89350b5939c0ab4da23171f7cd5e461cf43a90466e97f3bd69",
+    "checker.py": "21dffbb35f6ae3365c8d8c14b581f6e36e566da449464446ff484a3cc05a2a2e",
+    "independent-oracle.json": "92f2fe2c5dbfe5e3fa3a8a281b171e2bbde033bdcea0257ea86658f9d32eeb15",
+    "PROTOCOL-REVIEW.md": "ebcd9b1c1655723bacac9b035a9ef497817c4e1f0ea449057971d55fe0e7b381",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "test_runner_cleanup.py": "a8688a905875362c3a5243f75c2dfa3c45e777f95fbc793ae0c14af6f6e7e86c",
+    "test_environment.py": "de45ba889d901ad84d2fdf3b1803240831dd830a59c1841fdf78f8fc4650f703",
+    "test_checker.py": "29febeb02cd6d8fb098e4cf2e81d77f58a175ec662e18f58500cbf48ae14760d",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+    "PROTOCOL-REVIEW-v2.md": "5aeb287381c86ecbb5c81ce95546d95cb8056b06d3b0a36e796c8efd7333fa68"
+  },
+  "manifest_after_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
+  "public_derivation": {
+    "kind": "safe_projection_not_new_run",
+    "source_receipt_identity": "Retained locally only, not public.",
+    "omitted_fields": [
+      "copies[0].artifact_sha256",
+      "copies[0].artifact_after_sha256",
+      "copies[1].artifact_sha256",
+      "copies[1].artifact_after_sha256"
+    ],
+    "equality_scope": "Historical artifact equality only, not reauthentication of omitted identity.",
+    "scope": "One operator, one condition, two fresh builds and two native invocations in the same environment."
+  }
+}

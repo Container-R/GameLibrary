@@ -1,0 +1,240 @@
+{
+  "kind": "independent_preimplementation_relational_oracle",
+  "schema": 1,
+  "protocol_sha256": "faa507b4a1cb3c3efd274c174a6a8e32377983db4aa9685871d0c65b5b47aa2d",
+  "author_schema_sha256": "b89e746367b99ece69066a4a279b32d678a7bf2cb6fc615a8a04be53becd812c",
+  "source_commit": "78213075654a688e9da6bc49f7f873d25c26d12c",
+  "basis": "snapshot writer count/free_list/entities; ordinary component reach tuple comma-fold; continuous get restores owner then copies Link value without calling update",
+  "executed": false,
+  "condition_count": 1,
+  "success_line_count": 11,
+  "record_order": [
+    "declaration",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "token",
+    "prepared",
+    "entities_loaded",
+    "component_loaded"
+  ],
+  "types": {
+    "integer": "JSON integer, never boolean; nonnegative where count or macro; no floating encodings",
+    "boolean": "exact JSON boolean",
+    "handle": {
+      "keys": [
+        "full",
+        "index",
+        "version"
+      ],
+      "full_min": 0,
+      "full_max": 4294967295,
+      "index_mask": 1048575,
+      "version_shift": 20
+    },
+    "null_handle": {
+      "full": 4294967295,
+      "index": 1048575,
+      "version": 4095
+    },
+    "missing_observation": "JSON null, not a null entity handle",
+    "reject": [
+      "duplicate keys",
+      "extra keys",
+      "missing keys",
+      "extra records",
+      "nonfinite numbers",
+      "bool-number equality coercion"
+    ],
+    "live_handle": {
+      "symbols": [
+        "R",
+        "H",
+        "S",
+        "B",
+        "L"
+      ],
+      "index_min": 0,
+      "index_max": 1048574,
+      "version_min": 0,
+      "version_max": 4094,
+      "scope": "Only identities reported live in this frozen ordinary create/no-hint/no-destruction condition; not a fixed allocation or version-zero oracle"
+    }
+  },
+  "declaration": {
+    "schema": 1,
+    "cplusplus_min": 201703,
+    "entt": [
+      3,
+      13,
+      2
+    ],
+    "entity_mask": 1048575,
+    "version_mask": 4095,
+    "compiler_macros": "gcc and clang each null or exactly three nonnegative integers; no specific compiler version prescribed"
+  },
+  "symbols": {
+    "R": "remote_box",
+    "H": "remote_holder",
+    "S": "local_seed",
+    "B": "mapped_box after entity load",
+    "L": "mapped_holder after entity load"
+  },
+  "tokens": [
+    {
+      "stream": "entities",
+      "index": 0,
+      "type": "uint32",
+      "value": 2
+    },
+    {
+      "stream": "entities",
+      "index": 1,
+      "type": "uint32",
+      "value": 2
+    },
+    {
+      "stream": "entities",
+      "index": 2,
+      "type": "entity",
+      "value": "one of R,H"
+    },
+    {
+      "stream": "entities",
+      "index": 3,
+      "type": "entity",
+      "value": "the other of R,H"
+    },
+    {
+      "stream": "links",
+      "index": 0,
+      "type": "uint32",
+      "value": 1
+    },
+    {
+      "stream": "links",
+      "index": 1,
+      "type": "entity",
+      "value": "H"
+    },
+    {
+      "stream": "links",
+      "index": 2,
+      "type": "Link",
+      "value": {
+        "target": "R"
+      }
+    }
+  ],
+  "writer_calls": {
+    "entities": 4,
+    "links": 3,
+    "arity_each": 1
+  },
+  "invariants": [
+    "Every live R,H,S,B,L must have index != 1048575 and version != 4095, in addition to exact full/index/version decomposition; full != 4294967295 alone is insufficient",
+    "R,H,S are non-null; R != H; do not require R or H to differ from S across registries",
+    "R,H,S and source_target/archive_target remain identical across stages",
+    "source_target == archive_target == R == links token target",
+    "source_box_valid == source_holder_valid == seed_valid == true at every complete stage",
+    "entity_written == 4 and link_written == 3 at every stage",
+    "after entity load: B,L non-null and target-valid, B != L, B != S, L != S",
+    "B != R must pass before attempting Link consumption; do not add seeds or modify inputs if it fails",
+    "component stage preserves B,L from entity stage",
+    "loaded_target == input_target == R and loaded_target != B",
+    "loaded_target_equals_seed is the exact full-handle comparison R == S",
+    "loaded_target_in_local_valid is descriptive, not fixed true or false; for this closed three-live-entity target it must be consistent with R belonging to {S,B,L}",
+    "no component access before mapped holder validity and Link presence checks"
+  ],
+  "stages": [
+    {
+      "name": "prepared",
+      "mapped_box": "null_handle",
+      "mapped_holder": "null_handle",
+      "contains": [
+        false,
+        false
+      ],
+      "mapped_valid": [
+        false,
+        false
+      ],
+      "holder_has_link": false,
+      "active": 1,
+      "links": 0,
+      "read_counts": [
+        0,
+        0
+      ],
+      "input_target": null,
+      "loaded_target": null,
+      "target_local_valid": null,
+      "target_equals_seed": null
+    },
+    {
+      "name": "entities_loaded",
+      "mapped_box": "B",
+      "mapped_holder": "L",
+      "contains": [
+        true,
+        true
+      ],
+      "mapped_valid": [
+        true,
+        true
+      ],
+      "holder_has_link": false,
+      "active": 3,
+      "links": 0,
+      "read_counts": [
+        4,
+        0
+      ],
+      "input_target": null,
+      "loaded_target": null,
+      "target_local_valid": null,
+      "target_equals_seed": null
+    },
+    {
+      "name": "component_loaded",
+      "mapped_box": "B",
+      "mapped_holder": "L",
+      "contains": [
+        true,
+        true
+      ],
+      "mapped_valid": [
+        true,
+        true
+      ],
+      "holder_has_link": true,
+      "active": 3,
+      "links": 1,
+      "read_counts": [
+        4,
+        3
+      ],
+      "input_target": "R",
+      "loaded_target": "R",
+      "target_local_valid": "observed with consistency relation",
+      "target_equals_seed": "R == S"
+    }
+  ],
+  "repeat_policy": "At most two fresh copies after separate code/execution approval; identical typed records including actual entity token order; never sort records to conceal differences",
+  "failure_policy": "Emit actual facts then check stage; safety preconditions before get; any truncated or inconsistent run is not success; stop without repair or retry",
+  "environment_gate": "New owned build/native phase roots; five HOME/XDG/TMPDIR directories prepared and validated immediately before each Popen; partial preparation and process cleanup separate; not a sandbox",
+  "excluded": [
+    "snapshot_loader execution",
+    "explicit member remapping callback",
+    "components beyond one plain Link",
+    "generation wrap",
+    "network",
+    "disk save format",
+    "business command",
+    "cross-platform guarantee"
+  ],
+  "clarification": "v2: live identity guards distinguish EnTT null index semantics and reserved tombstone version from the concrete unknown-map null representation; no new native condition"
+}

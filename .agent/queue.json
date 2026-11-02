@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T04:15:00Z",
+      "lease_until": "2026-11-02T04:25:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T03:44:44Z",
-      "next_action": "Independently re-review repaired component checker, retained false-accept examples and new input binding before separately authorizing any component native execution; no new topic.",
+      "last_progress_at": "2026-11-02T03:57:38Z",
+      "next_action": "Review the existing environment-concept article against original Ninja Gaiden 4 production images and captions; extend only if direct inspection supplies a concrete new production explanation, not another generic role summary.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6913,11 +6913,16 @@
       "parent_task_id": "TASK-2026-0008",
       "question": "Does a plain Link field retain its source entity value while its owning entity is mapped during continuous loading?",
       "discipline": "ENGINE",
-      "status": "reviewing",
+      "status": "published",
       "priority": 87,
       "priority_rationale": "Deepen an explicit untested component-reference gap in the existing entity-handle article, with one bounded condition rather than a new book.",
       "expected_artifact": "GameLibrary/引擎与工具/运行时系统/缓存与存档/实体句柄什么时候能保存，什么时候需要映射.md",
       "artifact_paths": [
+        "GameLibrary/引擎与工具/运行时系统/缓存与存档/实体句柄什么时候能保存，什么时候需要映射.md",
+        "管理档案/支持资料/EnTT组件字段引用观察/README.md",
+        "管理档案/支持资料/EnTT组件字段引用观察/receipt-projection.json",
+        "管理档案/支持资料/EnTT组件字段引用观察/fixture.cpp",
+        "管理档案/审查/EnTT组件字段观察-公开与读者审查.md",
         "管理档案/审查/EnTT组件观察-执行前纠错.md"
       ],
       "acceptance": [
@@ -6928,16 +6933,23 @@
         "Five owned writable locations validated immediately before each process launch",
         "No native before repaired input binding and independent code review"
       ],
-      "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T04:15:00Z",
-      "attempts": 0,
-      "last_progress_at": "2026-11-02T03:44:44Z",
-      "next_action": "Independently re-review repaired component checker, retained false-accept examples and new input binding before separately authorizing any component native execution; no new topic.",
-      "blockers": [
-        "Minimal repair is frozen; independent code and unchanged-counterexample re-review remain pending before native authorization."
-      ],
-      "verification_method": "Source review and pure synthetic checker challenges only; zero component builds/native calls.",
-      "repair_input_manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38"
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T03:57:38Z",
+      "next_action": "Retain this one-condition result and preexecution corrections; explicit field-remapping callbacks and arbitrary component graphs remain outside the executed scope.",
+      "blockers": [],
+      "verification_method": "Fixed EnTT 3.13.2 simple Link fixture: two builds and two native calls in one runner, same operator/environment. Independent results review and pure tests, not an independent native repeat. Observed owner mapping but unchanged field value equal to target seed.",
+      "repair_input_manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
+      "execution_scope": {
+        "builds": 2,
+        "native_invocations": 2,
+        "conditions": 1,
+        "ordinary_link_only": true,
+        "explicit_conversion_callback_executed": false,
+        "business_action_executed": false,
+        "native_stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6"
+      }
     }
   ],
   "execution_policy": {

@@ -1537,13 +1537,13 @@
       ],
       "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305",
       "latest_increment": {
-        "scope": "Observed continuous-loader map presence separately from current target validity through load, external destruction and reload.",
-        "reader_sha256": "17c688e848565f51d16dd5b898d1910d20c2884497de8eb5cee3bdd7044ea1d4",
-        "reader_review": "管理档案/审查/EnTT环境准备v3-新执行与公开审查.md",
-        "support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/README.md",
+        "scope": "Two separate finite observations: mapping presence versus validity, and plain component field preservation versus owner mapping.",
+        "reader_sha256": "45f61d0708bbe49825aef467ec44a27ab4af9efdb59e63b4ee5003956979544d",
+        "reader_review": "管理档案/审查/EnTT组件字段观察-公开与读者审查.md",
+        "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md",
         "source_revision": "skypjack/entt v3.13.2 78213075654a688e9da6bc49f7f873d25c26d12c",
-        "execution": "v2: two builds/two native calls with the retained environment-preparation omission. v3: separately two builds/two native calls after five-location preparation review. Four calls total, one condition; same operator/environment, independent result review only.",
-        "excluded": "No components, snapshot_loader restoration, version-wrap, network, concurrency or game-business validation.",
+        "execution": "No-component lifecycle: v2 two calls plus v3 two calls. Separate plain-Link condition: two new builds/two native calls. Two conditions total, not six scenarios; same operator/environment with independent result reviews, no independent native rerun.",
+        "excluded": "No explicit member-remapping callback, arbitrary reference graph, snapshot_loader restoration, version wrap, networking or game-business validation.",
         "workflow_limitation": "v2 did not prepare HOME and three XDG locations required by the existing standard; observations retained without a whole-workflow compliance claim.",
         "workflow_limitation_path": "管理档案/支持资料/EnTT映射存在与当前有效性/WORKFLOW-LIMITATION.md",
         "environment_revision": {
@@ -1557,7 +1557,21 @@
           "v2_inputs_outputs_unchanged": true,
           "limitation": "Five-location preparation/validation is not a sandbox or proof of all descendant writes."
         },
-        "initial_v2_reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d"
+        "initial_v2_reader_sha256": "038a046e95b6f24ee5dfb0225ab06bf76b1eef8a54fc074695ef77335788be8d",
+        "pre_component_reader_sha256": "17c688e848565f51d16dd5b898d1910d20c2884497de8eb5cee3bdd7044ea1d4",
+        "mapping_lifecycle_support_path": "管理档案/支持资料/EnTT映射存在与当前有效性/README.md",
+        "lifecycle_execution": "v2: two builds/two native calls with the retained environment-preparation omission. v3: separately two builds/two native calls after five-location preparation review. Four calls total, one condition; same operator/environment, independent result review only.",
+        "component_observation": {
+          "builds": 2,
+          "native_invocations": 2,
+          "conditions": 1,
+          "ordinary_link_only": true,
+          "explicit_conversion_callback_executed": false,
+          "business_action_executed": false,
+          "native_stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6",
+          "input_manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
+          "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md"
+        }
       }
     },
     {

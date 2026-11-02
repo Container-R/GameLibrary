@@ -1,0 +1,57 @@
+{
+  "run_id": "20261102T035738Z-entt-component-reference",
+  "observed_at": "2026-11-02T03:57:38Z",
+  "parent_verified_head": "b8ef005ebd58daba79ca7206810f582e0566111f",
+  "task": "TASK-2026-0189",
+  "outcome": "Plain Link field remained the source value while owner was mapped; that field was valid in target because it equaled seed, not the mapped source box.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/实体句柄什么时候能保存，什么时候需要映射.md",
+  "reader_sha256": "45f61d0708bbe49825aef467ec44a27ab4af9efdb59e63b4ee5003956979544d",
+  "support_path": "管理档案/支持资料/EnTT组件字段引用观察/README.md",
+  "input_manifest_sha256": "7af256d00360edbed9722d80196503548afada426016060312f42f96ef1faf38",
+  "public_package_manifest_sha256": "a2a7ef7f6ae5c87df58ece1c12d4f1cb2eb15c70a16f14caa0213620312ea392",
+  "execution": {
+    "builds": 2,
+    "native_invocations": 2,
+    "conditions": 1,
+    "ordinary_link_only": true,
+    "explicit_conversion_callback_executed": false,
+    "business_action_executed": false,
+    "native_stdout_sha256": "c10b06e4ec7c2ab71b003c529f1c6a0cae7921728de71f0f1ee3deb79764c8d6",
+    "all_return_codes": 0,
+    "all_stderr_empty": true,
+    "all_build_stdout_empty": true,
+    "same_operator_environment": true,
+    "independent_native_repeat": false,
+    "environment": "Five selected owned directories validated before each Popen; not sandbox or all-write tracing."
+  },
+  "pure_checks": {
+    "author_methods": 23,
+    "author_consumer_positive": 3,
+    "author_consumer_negative": 45,
+    "independent_consumer_positive": 5,
+    "independent_consumer_negative": 91,
+    "modes": [
+      "normal",
+      "optimized"
+    ],
+    "initial_consumer_false_accepts": 10,
+    "same_initial_false_accepts_rejected_after_fix": 10,
+    "not_native_scenarios": true
+  },
+  "preexecution_corrections": [
+    "Comma-fold invokes archive separately for each argument; initial double-argument reading withdrawn before implementation.",
+    "Known ordinary live handles reject reserved index and version; initial consumer and false accepts preserved.",
+    "Support prose distinguishes loader loading from subsequent registry component access."
+  ],
+  "raw_and_frozen_inputs_unchanged_by_public_derivation": true,
+  "reader_inventory": {
+    "current": 71,
+    "frozen": 55,
+    "post_baseline": 16
+  },
+  "prior_publication_readback": {
+    "head": "b8ef005ebd58daba79ca7206810f582e0566111f",
+    "blobs_matched": 932,
+    "key_files_exact": 6
+  }
+}
