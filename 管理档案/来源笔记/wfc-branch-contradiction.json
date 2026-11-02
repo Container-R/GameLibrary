@@ -1,0 +1,22 @@
+{
+  "read_on": "2026-11-02",
+  "author": "Maxim Gumin",
+  "repository": "https://github.com/mxgmn/WaveFunctionCollapse",
+  "commit": "de7d22e705e816b62b4d613199d0463820fcaef3",
+  "source_files": [
+    "README.md",
+    "Model.cs",
+    "Program.cs",
+    "Helper.cs",
+    "LICENSE"
+  ],
+  "read_scope": "README algorithm, contradiction and tiled-model sections; complete Model methods including Run73-97, Observe135-141, Propagate143-180, Ban182-197, Clear199-248 and initialization; Program seed/retry49-66; Helper.Random14-27; complete LICENSE. No image/video inspection.",
+  "model_git_blob": "9d0bc5959930f533d279ba2594af74d72395ca0c",
+  "example": "Original unexecuted three-cell periodic ring: A-B/B-A and C-C horizontal adjacency; no added vertical restriction. A branch conflicts; CCC is a complete legal assignment.",
+  "limits": "No project execution, seed trace, production tileset, failure-rate, global gameplay or exhaustive unsatisfiability guarantee. Run finite-limit true is not a universal completion certificate.",
+  "license": "MIT software; supplied image samples and tiles explicitly excluded. No such assets reproduced.",
+  "prepublication_correction": "Explicit seed statement limited to nonnegative seed, matching seedStart<0 branch. Not an execution failure.",
+  "reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
+  "reader_sha256": "7b168e739d28ece38112fcb876b9206c3d92f8ba41c0bd7b12c856a9863380e8",
+  "review_path": "管理档案/审查/WFC分支矛盾与规则有解-来源与读者审查.md"
+}

@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T17:10:06Z",
+      "last_progress_at": "2026-11-02T17:26:59Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7138,6 +7138,34 @@
       "next_action": "For an actual integration, verify host close methods, wakeup ownership and dependency lifetime using the declared runtime; no production scheduler or execution guarantee is supplied.",
       "blockers": [],
       "verification_method": "Primary manual and fixed source reading, original unexecuted Lua scenario, independent full reader/source review."
+    },
+    {
+      "id": "TASK-2026-0208",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why does a failed WFC selection branch not prove that tile adjacency rules have no complete solution?",
+      "discipline": "DESIGN",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "A concrete rule-authoring distinction absent from existing level-design and navigation readers.",
+      "expected_artifact": "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
+      "artifact_paths": [
+        "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
+        "管理档案/来源笔记/wfc-branch-contradiction.json",
+        "管理档案/审查/WFC分支矛盾与规则有解-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read current inventory and adjacent level-design reader for duplication",
+        "Read fixed original README and complete relevant Model methods",
+        "Separate failed branch, invalid input, finite-limit termination and unsatisfiability",
+        "Independent source/arithmetic and full reader review",
+        "No invented execution, image or production guarantee"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T17:26:59Z",
+      "next_action": "Maintain source-scoped reader; actual tools must distinguish stopping conditions and validate complete assignments against their own rules.",
+      "blockers": [],
+      "verification_method": "Fixed original source reading and independent paper example/full-reader review; no project execution.",
+      "publication_scope": "Reader, source record and review are part of the same containing commit; previous verified head remains separately recorded."
     }
   ],
   "execution_policy": {
