@@ -2056,7 +2056,14 @@
         "管理档案/审查/Zstandard旧包字典依赖-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/zstd-dictionary-dependency.json",
-      "reader_sha256": "8d6b6c02283159f9add7786f96f1b491d42818e2557e328f41d9e01ecab3959f"
+      "reader_sha256": "049c7626f339ef97ce7c8cf1e3891a8fc01ad0c01ed3c370206dbd41b67ca482",
+      "decompression_budget_support": {
+        "support_path": "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
+        "source_record": "管理档案/来源笔记/zstd-decompression-budget.json",
+        "review": "管理档案/审查/Zstandard解压预算-来源与读者审查.md",
+        "support_sha256": "dea1df86c5829a0a55c8e0bd0eafe6e766ff46242ef5d487a87172014ed8b113",
+        "scope": "One optional adjacent output-budget explanation; original dictionary source and review identities retain their scope."
+      }
     }
   ],
   "rewritten_reader_books": 55,
@@ -2067,7 +2074,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2730c26da9f2790a192f9e1fd873c0d0f4d89901",
+  "publication_base_sha": "9c0e2a5074c78e0060b8559cad2500681a0a8b25",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

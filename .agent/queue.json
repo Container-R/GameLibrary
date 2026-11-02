@@ -304,7 +304,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T19:07:35Z",
+      "last_progress_at": "2026-11-02T19:55:15Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7200,7 +7200,10 @@
       "artifact_paths": [
         "GameLibrary/引擎与工具/构建发布/内容更新/Zstandard旧资源包为什么还需要配套的压缩字典.md",
         "管理档案/来源笔记/zstd-dictionary-dependency.json",
-        "管理档案/审查/Zstandard旧包字典依赖-来源与读者审查.md"
+        "管理档案/审查/Zstandard旧包字典依赖-来源与读者审查.md",
+        "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
+        "管理档案/来源笔记/zstd-decompression-budget.json",
+        "管理档案/审查/Zstandard解压预算-来源与读者审查.md"
       ],
       "acceptance": [
         "Deduplicate adjacent reader mechanisms",
@@ -7210,11 +7213,12 @@
         "Do not invent decoding, performance or real-game results"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T18:01:48Z",
+      "last_progress_at": "2026-11-02T19:55:15Z",
       "next_action": "Maintain the source-scoped dependency explanation; actual integrations must separately test their package/dictionary selection and decoding.",
       "blockers": [],
       "verification_method": "Fixed primary source and independent mechanism/full-reader review; no executable experiment.",
-      "publication_scope": "Reader and public records are published in the same containing commit."
+      "publication_scope": "Reader and public records are published in the same containing commit.",
+      "latest_reader_maintenance": "Optional fixed-version decompression output-budget explanation; original dictionary-dependency scope retained, no execution."
     }
   ],
   "execution_policy": {

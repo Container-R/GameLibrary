@@ -1,0 +1,38 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/引擎与工具/构建发布/内容更新/Zstandard旧资源包为什么还需要配套的压缩字典.md",
+  "reader_sha256": "049c7626f339ef97ce7c8cf1e3891a8fc01ad0c01ed3c370206dbd41b67ca482",
+  "prior_reader_sha256": "8d6b6c02283159f9add7786f96f1b491d42818e2557e328f41d9e01ecab3959f",
+  "support_path": "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
+  "support_sha256": "dea1df86c5829a0a55c8e0bd0eafe6e766ff46242ef5d487a87172014ed8b113",
+  "review_path": "管理档案/审查/Zstandard解压预算-来源与读者审查.md",
+  "project": "Zstandard",
+  "version": "v1.5.7",
+  "source_commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+  "sources": [
+    {
+      "url": "https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L164-L205",
+      "scope": "Simple decompression and full frame-content-size query contract"
+    },
+    {
+      "url": "https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L628-L685",
+      "scope": "Advanced decompression parameters and window-buffer limit"
+    },
+    {
+      "url": "https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L876-L948",
+      "scope": "Streaming how-to, output positions, frame completion and error-state reset"
+    },
+    {
+      "url": "https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/doc/zstd_compression_format.md#L235-L275",
+      "scope": "Window descriptor and allowed memory-range refusal"
+    },
+    {
+      "url": "https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress.c#L2185-L2264",
+      "scope": "Selected single-pass shortcut, subsequent window check and internal allocation branch"
+    }
+  ],
+  "verification": "Fixed original-source reading plus independent mechanism and complete reader review; no executable experiment.",
+  "example": "Original hypothetical 16 MiB resource budget and 64 KiB temporary output. Arithmetic is not measured decoding or memory usage.",
+  "limits": "Application cumulative output policy is distinct from decoder workspace. No complete loader, total memory/CPU guarantee or all-path security audit.",
+  "copyright": "Narrow paraphrase and original reasoning; no full third-party source or document reproduction."
+}
