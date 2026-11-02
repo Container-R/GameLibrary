@@ -1,0 +1,37 @@
+{
+  "topic": "随机流消费顺序与重放",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "author": "M. E. O’Neill",
+      "title": "Using the Minimal C Implementation",
+      "url": "https://www.pcg-random.org/using-pcg-c-basic.html",
+      "read_scope": "API, initialization, explicit/global generator and bounded sampling sections.",
+      "version_scope": "Rolling documentation; no publication date established.",
+      "adopted_scope": "Initialization parameters, explicit state objects, repeatability within the described generator and potentially repeated raw sampling."
+    },
+    {
+      "repository": "imneme/pcg-c-basic",
+      "commit": "bc39cd76ac3d541e618606bcc6e1e5ba5e5e6aa3",
+      "paths": [
+        "pcg_basic.c",
+        "pcg_basic.h"
+      ],
+      "read_scope": "Complete source and header; random_r state advancement, srandom_r initialization and boundedrand_r rejection loop.",
+      "adopted_scope": "Calls mutate the chosen generator state; one bounded call may consume multiple raw outputs. Private internal representation is not a portable save format."
+    },
+    {
+      "repository": "pond3r/ggpo",
+      "commit": "7ddadef8546a7d99ff0b3530c6056bc8ee4b9c0a",
+      "path": "doc/DeveloperGuide.md",
+      "read_scope": "Game State and Inputs; deterministic prerequisites; Separate Updating Game State from Rendering; Beware of Random Number Generators.",
+      "adopted_scope": "Rollback integration includes random generator state among game state; it does not promise unchanged decisions after inserting extra consumers."
+    }
+  ],
+  "own_example": "The stipulated sequence0.8,0.2,0.9 and threshold0.5 are paper inputs, not PCG output. Each toy operation consumes exactly one value; an inserted cosmetic draw changes which value the second attack receives.",
+  "limits": [
+    "No generator, engine, network or benchmark execution.",
+    "Separate state objects isolate this specific consumption interference, not statistical independence, thread safety or whole-game determinism.",
+    "No cross-library, distribution-version or platform equivalence proof; no raw-memory persistence format."
+  ]
+}

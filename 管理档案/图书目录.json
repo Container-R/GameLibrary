@@ -923,15 +923,16 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "5afefabfd5858d9c4155960c122d8beddc7eff9f3076d802ec6b7a39b0105c93",
+      "reader_sha256": "eb4cf0105774ea8cfece56ae4a6e3ae33226206f38090151149e8f887afe4fbe",
       "review_paths": [
-        "管理档案/审查/挂起计时-来源与读者审查.md"
+        "管理档案/审查/挂起计时-来源与读者审查.md",
+        "管理档案/审查/随机流消费-来源与读者审查.md"
       ],
       "latest_increment": {
-        "scope": "Monotonic ordering does not determine system-suspend accounting; source-only optional support and two precise reader clarifications.",
-        "support_path": "管理档案/支持资料/设备挂起的时间，应该算进倒计时吗.md",
-        "reader_review": "管理档案/审查/挂起计时-来源与读者审查.md",
-        "reader_sha256": "5afefabfd5858d9c4155960c122d8beddc7eff9f3076d802ec6b7a39b0105c93"
+        "scope": "Optional abstract random-consumption example clarifies why unchanged initialization alone does not preserve gameplay decisions.",
+        "support_path": "管理档案/支持资料/随机种子没变，为什么第二次攻击的结果变了.md",
+        "reader_review": "管理档案/审查/随机流消费-来源与读者审查.md",
+        "reader_sha256": "eb4cf0105774ea8cfece56ae4a6e3ae33226206f38090151149e8f887afe4fbe"
       }
     },
     {
@@ -1710,7 +1711,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "10b6674e87889b98b838221d6ff8e48e642ff29a",
+  "publication_base_sha": "3699537df1d0144021f9148c6f5113003aaa8c1c",
   "accounted_for_original_items": 55,
   "reader_books_total": 75,
   "post_baseline_research_books": 20,
