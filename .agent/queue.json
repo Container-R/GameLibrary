@@ -286,7 +286,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T05:45:55Z",
+      "last_progress_at": "2026-11-02T06:36:45Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6776,6 +6776,33 @@
       "next_action": "Use the source-specific recovery distinction when reviewing a real storage implementation; this fixture is not an online reward service or durability guarantee.",
       "blockers": [],
       "verification_method": "Source-backed mechanism, finite same-environment native sequence, independent literal and complete reader review; detailed scope in the linked support."
+    },
+    {
+      "id": "TASK-2026-0198",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can plural selection from a raw numeric value disagree with the same value deliberately displayed with one decimal place?",
+      "discipline": "LOC",
+      "status": "published",
+      "priority": 79,
+      "priority_rationale": "Clarify one documented interface distinction beyond historical integer-only examples, without another generic plural article.",
+      "expected_artifact": "管理档案/支持资料/数字显示精度与复数选择.md",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+        "管理档案/支持资料/数字显示精度与复数选择.md",
+        "管理档案/来源笔记/formatted-number-plural-selection.json",
+        "管理档案/审查/数字精度与复数类别-来源审读.md"
+      ],
+      "acceptance": [
+        "Read existing pseudo-localization and historical locale scope",
+        "Pin ICU rules and APIs plus corresponding CLDR operand specification",
+        "Separate source derivation from native observations and translation quality",
+        "Review complete reader and compact programmer support independently"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T06:36:45Z",
+      "next_action": "Verify the actual project formatter and language resources before applying the source-derived comparison; existing integer observations do not validate this condition.",
+      "blockers": [],
+      "verification_method": "Fixed-source reasoning and independent full reader review only; no ICU or game execution."
     }
   ],
   "execution_policy": {

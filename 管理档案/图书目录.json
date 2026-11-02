@@ -778,7 +778,11 @@
         "source_record": "管理档案/来源笔记/text-truncation-grapheme-and-width.json",
         "verification_method": "Fixed Unicode17 text and independent reader review; no component execution.",
         "excluded": "No universal segmentation implementation, pixel measurements, language approval or typewriter-animation algorithm."
-      }
+      },
+      "reader_body_sha256": "4ca8286f4fbd71df90be0a75b71b2a526c8057df57b7415a85a9295e0db36745",
+      "latest_review_path": "管理档案/审查/数字精度与复数类别-来源审读.md",
+      "source_record": "管理档案/来源笔记/formatted-number-plural-selection.json",
+      "latest_supplement": "One optional support link explains raw numeric input versus visible decimal precision; old integer-only evidence remains limited."
     },
     {
       "internal_id": "SOL-MODEL-001",
@@ -1642,7 +1646,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "dfff35387414908daf2060f9c3059db297c84d52",
+  "publication_base_sha": "7a6d81eba3cc58eb4117a72297e65f8cc33e73ab",
   "accounted_for_original_items": 55,
   "reader_books_total": 73,
   "post_baseline_research_books": 18,

@@ -1,0 +1,24 @@
+{
+  "topic": "Visible fraction precision and plural selection input",
+  "accessed": "2026-11-02",
+  "fixed_icu_commit": "8eca245c7484ac6cc179e3e5f7c1ea7680810f39",
+  "fixed_icu_release": "76.1",
+  "specification": {
+    "title": "LDML 46 Part 3: Numbers, revision 73",
+    "url": "https://www.unicode.org/reports/tr35/tr35-73/tr35-numbers.html#Operands",
+    "read_scope": "Header Version46, plural operand definitions and examples, rules/samples context; not the entire numbers specification"
+  },
+  "source_paths_read": {
+    "icu4c/source/i18n/unicode/upluralrules.h": "Full declarations; stable selectFormatted versus raw select and internal selectWithFormat",
+    "icu4c/source/i18n/upluralrules.cpp": "Full file; raw-double and DecimalQuantity receiving paths",
+    "icu4c/source/i18n/plurrule.cpp": "select overloads, FixedDecimal::init and decimals integer fast path",
+    "icu4c/source/data/misc/plurals.txt": "Cardinal en mapping and set3 block; not every locale or ordinal",
+    "icu4c/source/i18n/unicode/unumberformatter.h": "Overview, trailing-zero enum and creation/formatting/closing APIs",
+    "icu4c/source/i18n/unicode/numberformatter.h": "fixedFraction contract",
+    "icu4c/source/i18n/unicode/uformattednumber.h": "Reusable result lifetime and string extraction",
+    "icu4c/source/i18n/number_decimalquantity.cpp": "Minimum fraction setting, v operand and fractionCount"
+  },
+  "derivation_scope": "Only en cardinal, mathematical value1, plain decimal without scale, exponent, offset or exact-value selectors. Raw-double versus displayed1 and deliberately displayed1.0; all categories source-derived, not measured.",
+  "deduplication": "Keep existing pseudo-localization body; add one optional programmer-support link rather than another plural tutorial or independent book. Historical integer observations remain unchanged and do not cover this condition.",
+  "verification_method": "Primary-source reading, explicit source derivation and independent reader review; no ICU loading, version probe, formatting, game runtime or translation-quality test."
+}
