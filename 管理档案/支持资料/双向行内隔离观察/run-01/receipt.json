@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "FAIL",
+  "sandbox_requested": true,
+  "manifest_before_sha256": "b546289bab4f1984225c0db64cb214386dcdda230f38d47eec054ea097a0c8c7",
+  "input_before": {
+    "PROTOCOL.md": "b1906b00858b6cae2db2c684eda3eae4ed9735ecf73e462fa8966d8cdfd25a46",
+    "fixture.html": "a69158e12875d78838c173897d22e9c93c875b0272ad5aa32073c6ca1fe359bd",
+    "runner.py": "4439d2ad817ce606d33e01583f1f91a798ca084a9984378487a7be162ed2a88c",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "environment": "VALIDATED_BEFORE_WORKER_LAUNCH",
+  "worker_returncode": 1,
+  "group_cleanup": "NO_GROUP",
+  "leader_cleanup": "REAPED",
+  "group_absence": "CONFIRMED_ABSENT",
+  "input_after": {
+    "PROTOCOL.md": "b1906b00858b6cae2db2c684eda3eae4ed9735ecf73e462fa8966d8cdfd25a46",
+    "fixture.html": "a69158e12875d78838c173897d22e9c93c875b0272ad5aa32073c6ca1fe359bd",
+    "runner.py": "4439d2ad817ce606d33e01583f1f91a798ca084a9984378487a7be162ed2a88c",
+    "isolation.py": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970"
+  },
+  "manifest_after_sha256": "b546289bab4f1984225c0db64cb214386dcdda230f38d47eec054ea097a0c8c7",
+  "post_binding": "UNCHANGED",
+  "environment_cleanup": "REMOVED",
+  "error": "worker_failed"
+}

@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T15:54:21Z",
+      "last_progress_at": "2026-11-02T16:28:19Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -3363,7 +3363,11 @@
         "管理档案/支持资料/ICU双向索引历史观察/README.md",
         "管理档案/支持资料/ICU双向索引历史观察/observation-summary.json",
         "管理档案/审查/ICU双向索引-公开衍生审查.md",
-        "管理档案/审查/ICU双向索引-读者与原始来源审读.md"
+        "管理档案/审查/ICU双向索引-读者与原始来源审读.md",
+        "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+        "管理档案/来源笔记/bidi-inline-isolation.json",
+        "管理档案/审查/行内昵称方向隔离-来源与有限尝试审查.md",
+        "管理档案/支持资料/双向行内隔离观察/README.md"
       ],
       "acceptance": [
         "Read exact current articles and evidence before proposing a gap",
@@ -3372,10 +3376,11 @@
         "Do not transfer runtime claims from a related fixture or manufacture performance guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T17:35:57Z",
+      "last_progress_at": "2026-11-02T16:28:19Z",
       "next_action": "Retain finite observation and source boundaries; do not treat the public projection as the original replay package.",
       "blockers": [],
-      "completion_scope": "Reader article and reviewed public-safe historical projection; original private runtime package not published; no new native run."
+      "completion_scope": "Reader article and reviewed public-safe historical projection; original private runtime package not published; no new native run.",
+      "latest_reader_maintenance": "Separate inline-name isolation from UTF-16 index copying. Source-backed support and one unsuccessful browser attempt; historical ICU evidence unchanged."
     },
     {
       "id": "TASK-2026-0093",

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" dir="ltr"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'none'">
+<title>Inline isolation — synthetic names</title>
+<style>
+body { margin: 32px; background: white; color: black; font: 24px/1.6 Arial, sans-serif; }
+.row { direction: ltr; unicode-bidi: normal; white-space: nowrap; margin: 12px 0; }
+.label { font: 14px/1.2 monospace; color: #333; }
+span { unicode-bidi: normal; }
+bdi { unicode-bidi: isolate; }
+</style></head><body>
+<div class="label">Hebrew / raw</div><div class="row" id="he-raw"></div>
+<div class="label">Hebrew / isolated</div><div class="row" id="he-bdi"></div>
+<div class="label">ASCII / raw</div><div class="row" id="ascii-raw"></div>
+<div class="label">ASCII / isolated</div><div class="row" id="ascii-bdi"></div>
+</body></html>

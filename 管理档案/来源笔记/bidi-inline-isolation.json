@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/双向文本的索引映射为何不能直接用来重排字符串.md",
+  "support_path": "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+  "support_sha256": "579226a9a233ae90b919059753b30b333a71e02934a227a90a314ea5a3d53f7a",
+  "sources": [
+    {
+      "url": "https://www.unicode.org/reports/tr9/tr9-50.html",
+      "version": "Unicode16.0.0 rev50 2024-09-02",
+      "scope": "Isolation introduction and controls; BD9, P2/P3, X5c, X6a, adjacent paragraph termination; not complete algorithm review."
+    },
+    {
+      "url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "scope": "Quick answer, inline spillover, unknown direction and plain-text alternatives."
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element",
+      "scope": "4.5.24 semantics/default auto and user-label example; main editor also viewed original example images, not new runtime results.",
+      "page_updated": "2026-10-30"
+    }
+  ],
+  "verification": "Source-backed mechanism; one frozen four-row browser attempt failed without measurable rows or screenshot. No rendering claim, no second execution, no inheritance of historical ICU observations.",
+  "failed_attempt": "管理档案/支持资料/双向行内隔离观察/README.md",
+  "review": "管理档案/审查/行内昵称方向隔离-来源与有限尝试审查.md"
+}
