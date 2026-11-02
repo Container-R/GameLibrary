@@ -115,7 +115,7 @@
       "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "24867f27c5af66e09b3d85e4b32d5028adf20193dcdfa8f3152ddab2388e822b",
+      "reader_sha256": "cb832b340c2991b2d1bc8872853d25199ab5bc4f5dfce6f1301daf710fa12f38",
       "steam_traffic_support": {
         "scope": "Existing two-report set and classification analysis rewritten for readers; no actual account results.",
         "support_path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
@@ -123,6 +123,13 @@
         "source_note": "管理档案/来源笔记/steam-traffic-reader-treatment.json",
         "reader_sha256": "24867f27c5af66e09b3d85e4b32d5028adf20193dcdfa8f3152ddab2388e822b",
         "support_sha256": "a27f010b0df7c8da0036c158a0d38e2d3384c977709d66fce1f770f602c39286"
+      },
+      "sample_population_support": {
+        "support_path": "管理档案/支持资料/分流后的玩家，为什么在实验报表里消失了.md",
+        "source_record": "管理档案/来源笔记/experiment-sample-ratio-population.json",
+        "review": "管理档案/审查/实验样本成员去向-来源与读者审查.md",
+        "support_sha256": "385c60e79aa7043695e56e126f95f76f7e61b6231257e32525e4f1904bccbaa3",
+        "scope": "One optional entry extending an existing quality-check concept; historical sources and reviews retain their original revision scope."
       }
     },
     {
@@ -2053,7 +2060,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "00534a7ed5290a137431a96e961f79457872b9f1",
+  "publication_base_sha": "6dc8c956e680d55c9632ccb2e9d4be61d2b8f087",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

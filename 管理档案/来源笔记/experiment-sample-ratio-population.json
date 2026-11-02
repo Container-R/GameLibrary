@@ -1,0 +1,32 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+  "reader_sha256": "cb832b340c2991b2d1bc8872853d25199ab5bc4f5dfce6f1301daf710fa12f38",
+  "prior_reader_sha256": "24867f27c5af66e09b3d85e4b32d5028adf20193dcdfa8f3152ddab2388e822b",
+  "support_path": "管理档案/支持资料/分流后的玩家，为什么在实验报表里消失了.md",
+  "support_sha256": "385c60e79aa7043695e56e126f95f76f7e61b6231257e32525e4f1904bccbaa3",
+  "review_path": "管理档案/审查/实验样本成员去向-来源与读者审查.md",
+  "authors": [
+    "Aleksander Fabijan",
+    "Jayant Gupchup",
+    "Somit Gupta",
+    "Jeff Omhover",
+    "Wen Qin",
+    "Lukas Vermeer",
+    "Pavel Dmitriev"
+  ],
+  "title": "Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners",
+  "conference": "KDD 2019",
+  "doi": "10.1145/3292500.3330722",
+  "source_url": "https://exp-platform.com/Documents/2019_KDDFabijanGupchupFuptaOmhoverVermeerDmitriev.pdf",
+  "identity_record": "https://www.microsoft.com/en-us/research/publication/diagnosing-sample-ratio-mismatch-in-online-controlled-experiments-a-taxonomy-and-rules-of-thumb-for-practitioners/",
+  "citation_scope": [
+    "2.3.1, physical pages 2–3: definition and detection",
+    "4.4 and 4.6, physical page 4: diagnosis and causes",
+    "5.3, physical page 6: log processing",
+    "6, physical page 8, items 9–10: stage and pipeline comparison"
+  ],
+  "read_scope": "Substantive extracted paper text and publication identity; citations limited to listed sections. Figures not inspected, references not fully followed, author datasets not obtained.",
+  "verification": "Independent source and full-reader review; fictional population bookkeeping only, no statistical computation, player records, production query or experiment.",
+  "copyright": "Author preprint not redistributed; narrow paraphrase and original example, no copied PDF or figures."
+}
