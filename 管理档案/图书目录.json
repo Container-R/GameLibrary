@@ -1356,8 +1356,15 @@
       "scope_note": "固定Box2D几何移动器，位置限额/活动push/速度开关区别；无运行、复杂场景或引擎集成保证",
       "review_paths": [
         "管理档案/审查/角色移动-独立读者与来源审读.md",
-        "管理档案/审查/角色移动-裁剪代数复核.md"
-      ]
+        "管理档案/审查/角色移动-裁剪代数复核.md",
+        "管理档案/审查/角色移动多平面说明-读者整合审查.md"
+      ],
+      "reader_sha256": "5d944e885f964647b45be30d16f7fccfd84b224b4e1871f297de3dbe5283888a",
+      "latest_increment": {
+        "scope": "Existing published two-plane derivation made readable inline with return link; no new finding or execution.",
+        "reader_review": "管理档案/审查/角色移动多平面说明-读者整合审查.md",
+        "reader_sha256": "5d944e885f964647b45be30d16f7fccfd84b224b4e1871f297de3dbe5283888a"
+      }
     },
     {
       "internal_id": "SOL-A11Y-002",
@@ -1685,7 +1692,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "06d99c9f642e74b9215b73a43cf0002745352e13",
+  "publication_base_sha": "328f71e69b46d1f211bc702b63d30cbe40af90b5",
   "accounted_for_original_items": 55,
   "reader_books_total": 75,
   "post_baseline_research_books": 20,
