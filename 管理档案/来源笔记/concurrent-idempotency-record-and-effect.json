@@ -1,0 +1,25 @@
+{
+  "topic": "Concurrent duplicate checks and atomic reward recording",
+  "accessed": "2026-11-02",
+  "source": {
+    "author": "Malcolm Featonby",
+    "publisher": "Amazon Builders' Library",
+    "title": "Making retries safe with idempotent APIs",
+    "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+    "publication_date": "Not confirmed from the inspected page",
+    "version_scope": "Mutable official engineering article, not a fixed service implementation",
+    "read_scope": "All article sections from Introduction through Conclusion and shown command/response text; figures not inspected and commands not executed.",
+    "key_location": "Reducing client complexity: token recording and related mutations must form an ACID operation, avoiding either a record without the change or a change without the record.",
+    "limits": "Does not implement the library's game service, select a database isolation level or supply automatic atomicity across external services."
+  },
+  "background_reading": {
+    "title": "RFC 9110 HTTP Semantics",
+    "date": "2022-06",
+    "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2",
+    "read_scope": "Complete section 9.2.2 and adjacent method context",
+    "use": "Terminology check only unless the supplement actually discusses HTTP retry semantics; not a database implementation source."
+  },
+  "original_example": "Two workers for the same authenticated caller and completion identity both observe no prior record before either applies an unprotected change. This is an unexecuted interleaving illustrating why a separate existence query is not mutual exclusion.",
+  "deduplication_decision": "Reject a new general idempotency book: existing online-service and economy readers already explain intent identity, retention, result uncertainty and joint state persistence. Retain only the concurrent-check gap as a finite supplement.",
+  "verification_scope": "Source reading and editorial reasoning only. No service request, database execution, crash injection or original-source command execution."
+}
