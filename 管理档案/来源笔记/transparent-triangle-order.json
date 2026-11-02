@@ -1,0 +1,33 @@
+{
+  "topic": "三角形排列与半透明source-over合成",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "repository": "zeux/meshoptimizer",
+      "commit": "6daea4695c48338363b08022d2fb15deaef6ac09",
+      "version_scope": "0.25 fixed source, not latest release or a runtime identity.",
+      "paths": [
+        "README.md",
+        "src/meshoptimizer.h"
+      ],
+      "read_scope": "README indexing context and vertex cache, overdraw, vertex fetch sections; corresponding API comments.",
+      "adopted_scope": "Triangle reordering and vertex-storage remapping are distinct operations; API documentation is not a blanket appearance-preservation guarantee for arbitrary rendering."
+    },
+    {
+      "author": "W3C CSS Working Group",
+      "title": "Compositing and Blending Level 1",
+      "url": "https://www.w3.org/TR/2024/CRD-compositing-1-20240321/#simplealphacompositing",
+      "version_scope": "2024-03-21 Candidate Recommendation Draft, not final Recommendation.",
+      "read_scope": "Version status, section5.1 formulas/variables and section9.1.4 source-over.",
+      "adopted_scope": "Source-over algebra used to compare two stipulated fragment orders; not a GPU primitive scheduling specification."
+    }
+  ],
+  "own_example": "In one fixed linear RGB space, two retained fragments cover the same sample over opaque black: red alpha1/4 and cyan alpha3/4. Red then cyan gives (1/16,3/4,3/4); reversed gives (1/4,9/16,9/16), both final alpha1.",
+  "limits": [
+    "No optimizer, renderer, image or performance execution.",
+    "List order is explicitly assumed to determine this example composition, without later sorting or rejection.",
+    "No claim the fixed library actually swaps these two triangles or officially prohibits all transparent optimization.",
+    "Triangle order, per-triangle winding and vertex-storage numbering are distinguished.",
+    "No general sorting, order-independent transparency or arbitrary-shader equivalence guarantee."
+  ]
+}

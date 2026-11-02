@@ -297,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T10:04:46Z",
+      "last_progress_at": "2026-11-02T10:17:48Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1160,13 +1160,16 @@
         "Bounded invalid and semantic counterexamples"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T18:49:57.824989Z",
+      "last_progress_at": "2026-11-02T10:17:48Z",
       "next_action": "Maintain limited view-backed geometry evidence; no full validator or engine claim",
       "blockers": [],
       "completed_at": "2026-10-31T18:49:57.824989Z",
       "commit_sha": "2eaf640f5b6869c70eddccb2399638564dba084b",
       "artifact_paths": [
-        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md"
+        "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+        "管理档案/支持资料/半透明三角形重排为何会改变颜色.md",
+        "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
+        "管理档案/来源笔记/transparent-triangle-order.json"
       ],
       "historical_artifacts": [
         {
@@ -1175,7 +1178,8 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "827eee81dd5a90ac002293693c7955e1fb4f465725bdc645085f5a95d8e12863"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional triangle-order and transparent-composition explanation; paper example only, prior geometry and historical execution scope unchanged."
     },
     {
       "id": "TASK-2026-0039",
