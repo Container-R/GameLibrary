@@ -310,7 +310,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T21:27:47Z",
+      "last_progress_at": "2026-11-02T21:41:29Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -2948,7 +2948,9 @@
       "expected_artifact": "Historical Left 4 Dead pacing case and original unexecuted telemetry worksheet",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/体验调节/战斗节奏/Left4Dead导演系统如何调节战斗节奏.md",
-        "管理档案/研究记录/source-notes/left4dead-director-pacing.md"
+        "管理档案/研究记录/source-notes/left4dead-director-pacing.md",
+        "管理档案/来源笔记/l4d-spawn-space.json",
+        "管理档案/审查/L4D生成位置-来源与读者审查.md"
       ],
       "acceptance": [
         "Original Michael Booth AIIDE 2009 presentation and publisher index",
@@ -2957,7 +2959,7 @@
         "Independent source and editorial review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T01:57:36.830673Z",
+      "last_progress_at": "2026-11-02T21:41:29Z",
       "next_action": "Retain historical algorithm scope and unexecuted observation worksheet; no game or player validation",
       "blockers": [],
       "completed_at": "2026-11-01T01:59:15.977030Z",
@@ -2975,7 +2977,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "88f0af300f43314b87628ee450c05b57e44159145f68704f7455b5127e594316"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Explain spatial candidate selection separately from pacing requests using the original 2009 lecture; retain class-specific and empty-set limits."
     },
     {
       "id": "TASK-2026-0082",
