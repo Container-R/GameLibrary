@@ -1657,6 +1657,24 @@
       ],
       "source_record": "管理档案/来源笔记/json-integer-identity.json",
       "reader_sha256": "f032ecc28c821000a0e133e938c07cbcde7be556438d78596b8ef36feb06ee54"
+    },
+    {
+      "internal_id": "SOL-UX-002",
+      "reader_title": "确认输入法候选时，为什么不该顺便发送聊天消息",
+      "floor": "界面与体验",
+      "area": "交互设计",
+      "shelf": "文本输入",
+      "canonical_reader_path": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+      "current_read_path": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立全文与关键原源审读接受；有限来源推理，不是输入法兼容性认证",
+      "origin": "source-grounded-text-input-and-application-action-distinction",
+      "scope_note": "虚构聊天情境与草案退出按键反例；保留不同草案顺序差异及Unity接口限定",
+      "review_paths": [
+        "管理档案/审查/输入法确认与聊天发送-读者与来源审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/ime-confirmation-vs-submit.json",
+      "reader_sha256": "87d6adfd292043b2735b64c33122dd7cfe74882b2ea4ea6d9162d49163acdb00"
     }
   ],
   "rewritten_reader_books": 55,
@@ -1667,10 +1685,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "ff516e08dfede616ff4483b143f6ae166ac77146",
+  "publication_base_sha": "06d99c9f642e74b9215b73a43cf0002745352e13",
   "accounted_for_original_items": 55,
-  "reader_books_total": 74,
-  "post_baseline_research_books": 19,
+  "reader_books_total": 75,
+  "post_baseline_research_books": 20,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

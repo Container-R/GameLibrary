@@ -1,0 +1,82 @@
+{
+  "title": "输入法组字确认与聊天发送的区别",
+  "read_date": "2026-11-02",
+  "evidence_scope": "Source-derived event-sequence explanation and original unexecuted game-chat design example. No browser, IME, Unity or SDL execution.",
+  "sources": [
+    {
+      "organization": "W3C",
+      "title": "UI Events",
+      "url": "https://www.w3.org/TR/2026/WD-uievents-20260221/",
+      "version": "Working Draft 2026-02-21",
+      "sections": [
+        "3.5 Keyboard Events",
+        "3.6.5 Key Events During Composition",
+        "3.6.7.3 compositionend"
+      ],
+      "supports": [
+        "The draft ending sequence labels exit keydown as composing and subsequent keyup as not composing.",
+        "Composition end covers completion and cancellation, not a game message-send operation."
+      ],
+      "limitations": [
+        "Working draft, not a measured browser implementation or universal native ordering."
+      ]
+    },
+    {
+      "organization": "W3C",
+      "title": "Input Events Level 2",
+      "url": "https://www.w3.org/TR/2026/WD-input-events-2-20261015/",
+      "version": "Working Draft 2026-10-15",
+      "sections": [
+        "Status",
+        "3 Definitions",
+        "7 Input Event Order During Composition"
+      ],
+      "supports": [
+        "Editing intention and composition are distinct from application-level message submission."
+      ],
+      "limitations": [
+        "Section7 orders compositionupdate before beforeinput/input; UI Events section3.6.6 describes a differing order. This reader does not resolve the discrepancy or build on that ordering."
+      ]
+    },
+    {
+      "organization": "WHATWG",
+      "title": "HTML Standard — Implicit submission",
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#implicit-submission",
+      "version": "Living Standard; page showed updated2026-10-30 when read",
+      "sections": [
+        "4.10.22.2"
+      ],
+      "supports": [
+        "Implicit submission can activate a default submit button under the specified support and button conditions."
+      ],
+      "limitations": [
+        "Does not say every IME confirmation triggers submission. Application must inspect actual control/form pathways, no browser run."
+      ]
+    },
+    {
+      "organization": "Unity",
+      "title": "Keyboard support",
+      "url": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/manual/Keyboard.html",
+      "version": "Branch1.11 page identified as1.11.2 when read",
+      "sections": [
+        "Controls",
+        "Text input",
+        "IME"
+      ],
+      "supports": [
+        "Text input uses text callbacks rather than manually assembled key presses.",
+        "onIMECompositionChange describes composition text; imeSelected reports enabled IME processing, not by itself an active composition detector."
+      ],
+      "limitations": [
+        "Mutable version branch, not pinned implementation. No Unity callback ordering or actual UI behavior measured."
+      ]
+    }
+  ],
+  "non_goals": [
+    "Complete text editor implementation",
+    "Cross-browser compatibility certification",
+    "Actual accidental-send incident reproduction",
+    "All languages or devices validated"
+  ],
+  "original_example": "Fictional chat recipient and draft, candidate confirmation must not be reinterpreted as a fresh send from the release half of the same action. Actual routing depends on the selected component."
+}
