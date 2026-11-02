@@ -281,6 +281,12 @@
         "source_record": "管理档案/来源笔记/concurrent-idempotency-record-and-effect.json",
         "verification_method": "Official engineering text and independent reader review; no database execution.",
         "excluded": "No new book, PlayFab implementation claim, cross-service transaction guarantee or permanent exactly-once promise."
+      },
+      "reader_sha256": "3865b2b6381a55f131ecadfcb407d71f5dc161b18fdba9991d4b7dff9fa5dea2",
+      "auth_pending_maintenance": {
+        "source_record": "管理档案/来源笔记/steam-session-auth-pending.json",
+        "review": "管理档案/审查/Steam会话身份等待-来源与读者审查.md",
+        "scope": "Selected Steam ticket API example; no complete authentication or service validation."
       }
     },
     {
@@ -2117,7 +2123,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "fb211d34c7ca211d49aaa0c53ef8357d5687a720",
+  "publication_base_sha": "5669910deaf287bc53df3db768e19d5ddfc578da",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

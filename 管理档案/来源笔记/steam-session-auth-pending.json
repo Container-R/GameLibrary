@@ -1,0 +1,38 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+  "reader_sha256": "3865b2b6381a55f131ecadfcb407d71f5dc161b18fdba9991d4b7dff9fa5dea2",
+  "prior_reader_sha256": "bfe740f625c49a2693d151c3c8aa0ab9513b1b565d48fe8b40dd14c53ca934bc",
+  "review_path": "管理档案/审查/Steam会话身份等待-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://partner.steamgames.com/doc/api/ISteamGameServer",
+      "sections": [
+        "BeginAuthSession",
+        "EndAuthSession"
+      ]
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/features/auth",
+      "sections": [
+        "P2P or Game Servers / Session Tickets / User Authentication"
+      ]
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/api/steam_api",
+      "sections": [
+        "EBeginAuthSessionResult",
+        "EAuthSessionResponse"
+      ]
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/api/ISteamUser",
+      "sections": [
+        "ValidateAuthTicketResponse_t"
+      ]
+    }
+  ],
+  "scope": "Finite platform example of immediate success versus asynchronously confirmed identity, integrated into the existing service-role reader.",
+  "verification": "Selected official source sections and independent full-reader review; no SDK or service execution.",
+  "limits": "Rolling documentation, not a fixed SDK version or full authentication implementation. Waiting is not invalidity; game authorization is separate."
+}

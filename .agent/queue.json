@@ -310,7 +310,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T22:00:32Z",
+      "last_progress_at": "2026-11-02T22:36:00Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -2318,7 +2318,9 @@
       "expected_artifact": "Source-backed role profile and original unexecuted handoff worksheet grounded in Japanese employer interview and historical Riot platform test",
       "artifact_paths": [
         "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
-        "管理档案/研究记录/source-notes/online-services-engineer-role.md"
+        "管理档案/研究记录/source-notes/online-services-engineer-role.md",
+        "管理档案/来源笔记/steam-session-auth-pending.json",
+        "管理档案/审查/Steam会话身份等待-来源与读者审查.md"
       ],
       "acceptance": [
         "Read primary BNS Japanese responsibilities and Riot2020 load-harness scope",
@@ -2328,7 +2330,7 @@
         "Validate links and taxonomy; keep whole role matrix incomplete"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:51:07.134069Z",
+      "last_progress_at": "2026-11-02T22:36:00Z",
       "next_action": "Keep original role handoff unexecuted and broader matrix incomplete; service allocation timing is a separate case",
       "blockers": [],
       "completed_at": "2026-10-31T22:53:12.628710Z",
@@ -2346,7 +2348,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "23f4a72e922d8d06c80b04d811f7de3c4a748c461cf244aa6d57a3e7ce46465e"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Distinguish Steam immediate ticket-check success from asynchronous identity confirmation, without treating pending as invalid or granting project authorization."
     },
     {
       "id": "TASK-2026-0067",
