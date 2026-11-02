@@ -300,7 +300,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T14:52:24Z",
+      "last_progress_at": "2026-11-02T15:20:43Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7094,6 +7094,33 @@
       "next_action": "For a concrete integration, compare the same eligible candidates using declared units and shared database/query parameters; actual animation and runtime checks remain unperformed.",
       "blockers": [],
       "verification_method": "Fixed original-source code reading, original unexecuted algebra and independent complete reader/source review."
+    },
+    {
+      "id": "TASK-2026-0207",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why does suspending a Lua 5.4 coroutine not close its resource scope, and what does explicit closing actually establish?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "A concrete script lifetime gap distinct from asynchronous load ownership and native allocation disposal.",
+      "expected_artifact": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
+        "管理档案/来源笔记/lua-coroutine-close.json",
+        "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read adjacent current readers to exclude duplicate mechanism",
+        "Separate rolling manual from fixed Lua 5.4.8 source",
+        "Explain suspension, error termination, close result and host responsibility",
+        "Independent complete reader and key-source review",
+        "Do not claim Lua or game-resource execution"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T15:20:43Z",
+      "next_action": "For an actual integration, verify host close methods, wakeup ownership and dependency lifetime using the declared runtime; no production scheduler or execution guarantee is supplied.",
+      "blockers": [],
+      "verification_method": "Primary manual and fixed source reading, original unexecuted Lua scenario, independent full reader/source review."
     }
   ],
   "execution_policy": {

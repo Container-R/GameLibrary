@@ -1,0 +1,38 @@
+{
+  "title": "Lua 5.4 协程暂停后，资源为什么还没有关闭",
+  "book_sha256": "79a193b854d88c08be749d442acd9028ccb8e4aa917d453645f794e1e117034b",
+  "read_on": "2026-11-02",
+  "manual": {
+    "url": "https://www.lua.org/manual/5.4/manual.html",
+    "version_scope": "5.4 series rolling page",
+    "sections": [
+      "2.6",
+      "3.3.7–3.3.8",
+      "6.2",
+      "2.5.3"
+    ]
+  },
+  "fixed_source": {
+    "repository": "https://github.com/lua/lua",
+    "tag": "v5.4.8",
+    "commit": "6e22fedb74cf0c9b6656e9fce8b7331db847c605",
+    "tag_ref_independently_fetched": true,
+    "files": {
+      "lcorolib.c": "Full file; auxresume, coresume, auxwrap, auxstatus, close",
+      "lstate.c": "luaE_freethread, luaE_resetthread, lua_closethread",
+      "lfunc.c": "callclosemethod, prepcallclosemth, newtbcupval, closeupval, close",
+      "ldo.c": "precover, lua_resume, closepaux, luaD_closeprotected"
+    }
+  },
+  "verification_method": "Primary manual and fixed code reading; original unexecuted Lua scenario and semantic reasoning. No Lua/native/compiler/engine run.",
+  "not_claimed": [
+    "Production scheduler",
+    "Host resource release certification",
+    "Thread safety or reentrancy safety",
+    "Cleanup without errors",
+    "External async work cancellation"
+  ],
+  "copyright": "Original prose and short original example; no bulk upstream source copied into reader.",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
+  "source_history": "Initial gate read official 5.4.9 source pages; final article independently reread fixed v5.4.8 code and does not inherit the earlier page version."
+}
