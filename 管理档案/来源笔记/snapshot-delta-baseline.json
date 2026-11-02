@@ -1,0 +1,28 @@
+{
+  "topic": "差分快照的可用基线",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "author": "Glenn Fiedler",
+      "title": "Snapshot Compression",
+      "date": "2015-01-04",
+      "url": "https://gafferongames.com/post/snapshot_compression/",
+      "read_scope": "Entire textual article; especially Delta Compression. Embedded video and linked code not inspected.",
+      "adopted_scope": "The author encodes against acknowledged received snapshots and describes a known initial state or non-delta initialization before a baseline is available."
+    },
+    {
+      "author": "Glenn Fiedler",
+      "title": "Reliability and Congestion Avoidance over UDP",
+      "date": "2008-10-20",
+      "url": "https://gafferongames.com/post/reliability_ordering_and_congestion_avoidance_over_udp/",
+      "read_scope": "Sequence Numbers, Acks, Reliable Acks, Detecting Lost Packets.",
+      "adopted_scope": "Packet reception acknowledgements and loss of acknowledgements; no adoption of congestion parameters, TCP summary, sequence-comparison code or reliability guarantees."
+    }
+  ],
+  "own_example": "Same valid session, exact integer states100:x10,101:x11,102:x12. If101 is lost,102 relative to101 cannot be decoded using100. Relative to retained100, delta+2 reconstructs12. These are alternative paper encodings, not transmitted packets.",
+  "limits": [
+    "No network, library, engine or service execution; no benchmark or shipped-game result.",
+    "Receipt, successful snapshot reconstruction, baseline acceptance and later retention are distinct protocol obligations. The sources do not provide a complete eviction or resynchronization algorithm.",
+    "Rolling article URLs are dated publications, not immutable source snapshots."
+  ]
+}

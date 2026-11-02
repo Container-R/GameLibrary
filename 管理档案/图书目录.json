@@ -1455,8 +1455,16 @@
       "origin": "fragment-selection-source-analysis-from-task-0008",
       "scope_note": "固定上游ENet的长度与选项分支；快照设计取舍不是测得的网络延迟",
       "review_paths": [
-        "管理档案/审查/ENet分片发送选择-来源与读者审查.md"
-      ]
+        "管理档案/审查/ENet分片发送选择-来源与读者审查.md",
+        "管理档案/审查/差分快照基线-来源与读者审查.md"
+      ],
+      "reader_sha256": "1c731634ceaf68e818ad5f95129d6aa897f4d5e7e4427926f7bcc4851f300e15",
+      "latest_increment": {
+        "scope": "Optional integer loss example makes existing delta-baseline dependency warning concrete; source-only, not an ENet snapshot protocol.",
+        "support_path": "管理档案/支持资料/差分快照为什么不能总以上次发送为基线.md",
+        "reader_review": "管理档案/审查/差分快照基线-来源与读者审查.md",
+        "reader_sha256": "1c731634ceaf68e818ad5f95129d6aa897f4d5e7e4427926f7bcc4851f300e15"
+      }
     },
     {
       "internal_id": "SOL-ENGINE-004",
@@ -1702,7 +1710,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "967fac4425a20020540770ee85ac5f4132d40cbc",
+  "publication_base_sha": "10b6674e87889b98b838221d6ff8e48e642ff29a",
   "accounted_for_original_items": 55,
   "reader_books_total": 75,
   "post_baseline_research_books": 20,

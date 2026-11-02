@@ -290,7 +290,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T09:00:28Z",
+      "last_progress_at": "2026-11-02T09:13:42Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -5696,7 +5696,10 @@
       "expected_artifact": "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
       "artifact_paths": [
         "GameLibrary/网络与在线服务/实时同步/消息传输/ENet状态包变大后为什么开始可靠传输.md",
-        "管理档案/审查/ENet分片发送选择-来源与读者审查.md"
+        "管理档案/审查/ENet分片发送选择-来源与读者审查.md",
+        "管理档案/支持资料/差分快照为什么不能总以上次发送为基线.md",
+        "管理档案/审查/差分快照基线-来源与读者审查.md",
+        "管理档案/来源笔记/snapshot-delta-baseline.json"
       ],
       "acceptance": [
         "Concrete independent-versus-delta snapshot scenario",
@@ -5705,10 +5708,11 @@
         "Independent full-reader questions and actual hierarchy navigation"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T19:35:58Z",
+      "last_progress_at": "2026-11-02T09:13:42Z",
       "next_action": "Retain fixed-upstream scope; actual network timing, engine modifications and project snapshot policy require separate checks.",
       "blockers": [],
-      "verification_method": "Primary source and independent agent source/full-reader/local navigation review; no network/native tests."
+      "verification_method": "Primary source and independent agent source/full-reader/local navigation review; no network/native tests.",
+      "latest_reader_maintenance": "Optional source-backed delta-baseline loss example distinguishes sent, acknowledged, decodable and retained states; no new network execution."
     },
     {
       "id": "TASK-2026-0159",
