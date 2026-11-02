@@ -1918,11 +1918,17 @@
         "管理档案/审查/音频渲染回调-读者与来源审查.md"
       ],
       "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
-      "reader_sha256": "4b37dd11e01d4279224fc97d677b81c0281648373f4a60950097c55070da79fb",
+      "reader_sha256": "c5dbd797450140bbde492dd24eab1a8ca1c843318f06708f8604edfbdff7e0ba",
       "inside_case_supplement": {
         "source_record": "管理档案/来源笔记/inside-audio-output-diagnosis.json",
         "review": "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md",
         "scope": "Two historical-case paragraphs and one reference added; previous review/source records retain their original scope and identities."
+      },
+      "ring_functional_maintenance": {
+        "source_record": "管理档案/来源笔记/portaudio-ring-functional.json",
+        "review": "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md",
+        "support": "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
+        "scope": "Six sequential original-utility cases repeated; no audio stream or concurrency validation."
       }
     },
     {
@@ -2111,7 +2117,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "20215c2583ba8c97e811901d2ea594627b611065",
+  "publication_base_sha": "fb211d34c7ca211d49aaa0c53ef8357d5687a720",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,

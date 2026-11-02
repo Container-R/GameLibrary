@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "scope": "Six sequential functional cases; no concurrency, audio device, deadline or sound-quality test.",
+  "accepted_cases": 6,
+  "not_run_cases": [],
+  "input_manifest_sha256": "ee1758c2a491c3d0f63222607b23f71869ee962b8f0342553c1f1e0a6fc5dcd6",
+  "inputs": {
+    "probe.c": "3ec0f08a051625437c74aa345ea61bc2307411f80db4267cec26269b758959ad",
+    "run_probe.py": "97a6611f2bcf8cfdb4b47ef344e8230d14dcdf95dc21d885e9bb73f0a6263780",
+    "EXPECTED.json": "973dcfa8fcbd40a3eaae1f13b1b3840f3506dba78c59edfc168d009b41f481f0",
+    "PROTOCOL-DRAFT.md": "d46fe300fa9cbcdd9b1bf66e298ef686a43cfbbe3815fab2990edbc8e2bfa312",
+    "upstream/pa_ringbuffer.c": "b37c4fabbdaf3656268fb3ad4508ed34ca2f28fccaa181327ebd6b946dff5d8b",
+    "upstream/pa_ringbuffer.h": "6458666c4100e596d4fa7667063c3add386701442cae50976321323e3594b3f7",
+    "upstream/pa_memorybarrier.h": "76b3ea596eae86dc8558bdd55232c33951a2005210f02c0fc63b49c020a0fbfc"
+  },
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "compile_command": [
+    "cc",
+    "-std=c11",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-Iupstream",
+    "probe.c",
+    "upstream/pa_ringbuffer.c",
+    "-o",
+    "probe"
+  ],
+  "compile_exit": 0,
+  "run_command": [
+    "./probe"
+  ],
+  "run_attempted": true,
+  "run_exit": 0,
+  "output_sha256": "639dc06cbbe778c12938b614be143a04a99f14377886eccd5614818513386ea2",
+  "observed_cases": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "observed_phases": 13
+}

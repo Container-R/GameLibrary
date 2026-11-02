@@ -1,0 +1,12 @@
+{
+  "source_commit": "147dd722548358763a8b649b3e4b41dfffbcfbb6",
+  "sha256": {
+    "probe.c": "3ec0f08a051625437c74aa345ea61bc2307411f80db4267cec26269b758959ad",
+    "run_probe.py": "97a6611f2bcf8cfdb4b47ef344e8230d14dcdf95dc21d885e9bb73f0a6263780",
+    "EXPECTED.json": "973dcfa8fcbd40a3eaae1f13b1b3840f3506dba78c59edfc168d009b41f481f0",
+    "PROTOCOL-DRAFT.md": "d46fe300fa9cbcdd9b1bf66e298ef686a43cfbbe3815fab2990edbc8e2bfa312",
+    "upstream/pa_ringbuffer.c": "b37c4fabbdaf3656268fb3ad4508ed34ca2f28fccaa181327ebd6b946dff5d8b",
+    "upstream/pa_ringbuffer.h": "6458666c4100e596d4fa7667063c3add386701442cae50976321323e3594b3f7",
+    "upstream/pa_memorybarrier.h": "76b3ea596eae86dc8558bdd55232c33951a2005210f02c0fc63b49c020a0fbfc"
+  }
+}

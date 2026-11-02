@@ -1,0 +1,21 @@
+{
+  "run_id": "20261102T220032Z-portaudio-ring-functional",
+  "observed_at": "2026-11-02T22:00:32Z",
+  "parent_verified_head": "fb211d34c7ca211d49aaa0c53ef8357d5687a720",
+  "task": "TASK-2026-0195",
+  "reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "reader_sha256": "c5dbd797450140bbde492dd24eab1a8ca1c843318f06708f8604edfbdff7e0ba",
+  "prior_reader_sha256": "4b37dd11e01d4279224fc97d677b81c0281648373f4a60950097c55070da79fb",
+  "support_path": "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
+  "support_sha256": "1a2055bab8a55e2aaecc272d22fc0a907d04a4d49c07cc628d7ef4ce16880db4",
+  "source_record": "管理档案/来源笔记/portaudio-ring-functional.json",
+  "review": "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md",
+  "outcome": "Publish original-utility sequential observations and an optional human-readable explanation of region acquisition and index advancement.",
+  "verification_scope": "Six distinct cases, thirteen phases per execution, two same-environment executions with fresh builds; no audio or concurrency test.",
+  "reader_inventory": {
+    "current": 82,
+    "frozen": 55,
+    "post_baseline": 27
+  },
+  "publication": "Reader, support, immutable evidence and public progress records belong to the same containing commit; parent_verified_head names preceding verified revision."
+}

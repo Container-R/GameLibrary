@@ -1,0 +1,13 @@
+{"case":1,"phase":"A_init","returned":0,"readable":0,"writable":8}
+{"case":1,"phase":"A_write","returned":8,"readable":8,"writable":0}
+{"case":2,"phase":"A_read","returned":8,"values":[0,1,2,3,4,5,6,7,-999],"readable":0,"writable":8}
+{"case":3,"phase":"B_init","returned":0,"readable":0,"writable":8}
+{"case":3,"phase":"B_write","returned":6,"readable":6,"writable":2}
+{"case":3,"phase":"B_read","returned":5,"values":[10,11,12,13,14],"readable":1,"writable":7}
+{"case":4,"phase":"B_get_write","returned":5,"lengths":[2,3],"slots":[6,0],"readable":1,"writable":7}
+{"case":4,"phase":"B_fill","filled":5,"readable":1,"writable":7}
+{"case":5,"phase":"B_advance_write","returned":11,"readable":6,"writable":2}
+{"case":5,"phase":"B_get_read","returned":6,"lengths":[3,3],"slots":[5,0],"readable":6,"writable":2}
+{"case":5,"phase":"B_copy_read","copied":6,"values":[15,20,21,22,23,24],"readable":6,"writable":2}
+{"case":6,"phase":"B_advance_read","returned":11,"readable":0,"writable":8}
+{"case":6,"phase":"B_empty","returned":0,"values":[-999],"readable":0,"writable":8}

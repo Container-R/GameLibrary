@@ -310,7 +310,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T21:41:29Z",
+      "last_progress_at": "2026-11-02T22:00:32Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6829,7 +6829,11 @@
         "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
         "管理档案/审查/音频渲染回调-读者与来源审查.md",
         "管理档案/来源笔记/inside-audio-output-diagnosis.json",
-        "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md"
+        "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md",
+        "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
+        "管理档案/支持资料/PortAudio环形缓冲有限观察/README.md",
+        "管理档案/来源笔记/portaudio-ring-functional.json",
+        "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md"
       ],
       "acceptance": [
         "Read current music, PCM and audio-role scope before choosing independent narrow method",
@@ -6839,11 +6843,11 @@
         "No audio execution, queue implementation, latency or audible-quality guarantee"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T18:26:47Z",
+      "last_progress_at": "2026-11-02T22:00:32Z",
       "next_action": "Concrete integration requires a reviewed handoff and reclamation protocol plus target-specific measurements; this reader does not certify either.",
       "blockers": [],
-      "verification_method": "Fixed public source and official documentation, original unexecuted example and independent reader review.",
-      "latest_maintenance_scope": "Add a narrow historical INSIDE source case to the existing diagnostic section; no new experiment or replacement of original callback sources."
+      "verification_method": "Main callback reader remains source-backed with unimplemented cutter example; optional fixed original ring utility has six predetermined sequential functional cases repeated in the same environment, plus independent result and reader review.",
+      "latest_maintenance_scope": "Add optional original PortAudio ring-buffer sequential functional observation: six cases repeated with fresh compilation, not an audio or concurrency result."
     },
     {
       "id": "TASK-2026-0196",

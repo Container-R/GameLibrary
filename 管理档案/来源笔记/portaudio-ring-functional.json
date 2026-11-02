@@ -1,0 +1,24 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "reader_sha256": "c5dbd797450140bbde492dd24eab1a8ca1c843318f06708f8604edfbdff7e0ba",
+  "prior_reader_sha256": "4b37dd11e01d4279224fc97d677b81c0281648373f4a60950097c55070da79fb",
+  "support_path": "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
+  "support_sha256": "1a2055bab8a55e2aaecc272d22fc0a907d04a4d49c07cc628d7ef4ce16880db4",
+  "package_path": "管理档案/支持资料/PortAudio环形缓冲有限观察",
+  "review_path": "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md",
+  "source": {
+    "project": "PortAudio",
+    "tag": "v19.7.0",
+    "commit": "147dd722548358763a8b649b3e4b41dfffbcfbb6",
+    "url": "https://github.com/PortAudio/portaudio/tree/147dd722548358763a8b649b3e4b41dfffbcfbb6/src/common",
+    "scope": "Complete pa_ringbuffer.c, pa_ringbuffer.h and pa_memorybarrier.h read, retained byte-identical with licenses; tag directly resolved to stated commit."
+  },
+  "frozen_input_manifest": "管理档案/支持资料/PortAudio环形缓冲有限观察/INPUTS.json",
+  "executions": [
+    "管理档案/支持资料/PortAudio环形缓冲有限观察/run-main-1/result.json",
+    "管理档案/支持资料/PortAudio环形缓冲有限观察/run-independent-1/result.json"
+  ],
+  "verification": "Six predetermined sequential original-utility cases, thirteen phases per execution, repeated by a second operator with fresh compilation in the same environment; independent result/reader review.",
+  "limits": "Protocol author participated in independent repetition. No audio stream, device, concurrency, deadline, race, reclamation or performance validation. Main cutter remains hypothetical."
+}
