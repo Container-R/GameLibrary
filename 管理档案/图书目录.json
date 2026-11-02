@@ -982,17 +982,28 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "eb4cf0105774ea8cfece56ae4a6e3ae33226206f38090151149e8f887afe4fbe",
+      "reader_sha256": "3f890d218e11dd33a34867ff083aff3d96f342abf9a301968bd4ee3dc7a87a3e",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
-        "管理档案/审查/随机流消费-来源与读者审查.md"
+        "管理档案/审查/随机流消费-来源与读者审查.md",
+        "管理档案/审查/持续力与一次冲量-来源与读者审查.md"
       ],
       "latest_increment": {
-        "scope": "Optional abstract random-consumption example clarifies why unchanged initialization alone does not preserve gameplay decisions.",
-        "support_path": "管理档案/支持资料/随机种子没变，为什么第二次攻击的结果变了.md",
-        "reader_review": "管理档案/审查/随机流消费-来源与读者审查.md",
-        "reader_sha256": "eb4cf0105774ea8cfece56ae4a6e3ae33226206f38090151149e8f887afe4fbe"
-      }
+        "scope": "Optional force and impulse units/lifetime explanation; not a new physics run or trajectory-equivalence claim.",
+        "support_path": "管理档案/支持资料/持续推力为什么不能每个画面帧都发一次冲量.md",
+        "reader_review": "管理档案/审查/持续力与一次冲量-来源与读者审查.md",
+        "source_note": "管理档案/来源笔记/force-impulse-world-step.json",
+        "reader_sha256": "3f890d218e11dd33a34867ff083aff3d96f342abf9a301968bd4ee3dc7a87a3e",
+        "support_sha256": "90be42cc332cb1d60c54943d16e4e49eabb56582050109a95cbe218d9f68846d"
+      },
+      "previous_reader_increments": [
+        {
+          "scope": "Optional abstract random-consumption example clarifies why unchanged initialization alone does not preserve gameplay decisions.",
+          "support_path": "管理档案/支持资料/随机种子没变，为什么第二次攻击的结果变了.md",
+          "reader_review": "管理档案/审查/随机流消费-来源与读者审查.md",
+          "reader_sha256": "eb4cf0105774ea8cfece56ae4a6e3ae33226206f38090151149e8f887afe4fbe"
+        }
+      ]
     },
     {
       "internal_id": "SOL-GFX-001",
@@ -1875,7 +1886,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "724203bdbaa4406da60d0e5eba31103ff90c7102",
+  "publication_base_sha": "2ac6a835f6a4c37f81d37f7c221df8f0217dca4b",
   "accounted_for_original_items": 55,
   "reader_books_total": 79,
   "post_baseline_research_books": 24,

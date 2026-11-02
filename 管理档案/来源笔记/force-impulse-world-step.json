@@ -1,0 +1,40 @@
+{
+  "title": "持续推力为什么不能每个画面帧都发一次冲量",
+  "read_date": "2026-11-02",
+  "evidence": "Fixed official source analysis and original unexecuted arithmetic; no physics, model or engine run",
+  "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "sources": [
+    {
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/simulation.md#L579-L605",
+      "read_scope": "Forces and impulses 579–605"
+    },
+    {
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/box2d.h#L467-L526",
+      "read_scope": "Force/impulse units, wake conditions, ClearForces and mass 467–526"
+    },
+    {
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/body.c#L987-L1107",
+      "read_scope": "ApplyForceToCenter 987–1010; ClearForces approximately1036–1045; ApplyLinearImpulseToCenter1079–1107"
+    },
+    {
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/physics_world.c#L946-L962",
+      "read_scope": "dt and substep h946–962"
+    },
+    {
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/solver.c",
+      "read_scope": "Integration40–115; finalization580–640; substep loop1088–1188; finalization scheduling1619–1668"
+    }
+  ],
+  "arithmetic_scope": "Mass2kg, F10N, dt0.1s, 4 substeps; free awake enabled dynamic body, center loading, zero gravity/damping, no contacts/joints/locks/speed caps. J=Fdt compares net velocity only, not trajectory or contacts. Render counts are related call-count reasoning, not measurements.",
+  "support_path": "管理档案/支持资料/持续推力为什么不能每个画面帧都发一次冲量.md",
+  "support_sha256": "90be42cc332cb1d60c54943d16e4e49eabb56582050109a95cbe218d9f68846d",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+  "reader_sha256": "3f890d218e11dd33a34867ff083aff3d96f342abf9a301968bd4ee3dc7a87a3e",
+  "author_version_scope": "Box2D 3.2.0; tag identity inherited from existing pinned source record, not reverified this round",
+  "integration_tag_check": {
+    "url": "https://api.github.com/repos/erincatto/box2d/git/ref/tags/v3.2.0",
+    "observed_on": "2026-11-02",
+    "resolved_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+    "scope": "Main writer fresh GitHub reference readback; not local binary provenance or proof tags never change."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "20261102T131800Z-force-impulse",
+  "observed_at": "2026-11-02T13:19:56Z",
+  "parent_verified_head": "2ac6a835f6a4c37f81d37f7c221df8f0217dca4b",
+  "task": "TASK-2026-0009",
+  "outcome": "Existing fixed-step reader gains a narrow optional explanation of sustained force, one-shot impulse and normal world-step force lifetime.",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+  "reader_sha256": "3f890d218e11dd33a34867ff083aff3d96f342abf9a301968bd4ee3dc7a87a3e",
+  "support_path": "管理档案/支持资料/持续推力为什么不能每个画面帧都发一次冲量.md",
+  "support_sha256": "90be42cc332cb1d60c54943d16e4e49eabb56582050109a95cbe218d9f68846d",
+  "source_note": "管理档案/来源笔记/force-impulse-world-step.json",
+  "review": "管理档案/审查/持续力与一次冲量-来源与读者审查.md",
+  "verification_scope": "Fixed official source and independent full reader review; original unexecuted free-body arithmetic, not an engine, trajectory or collision test.",
+  "reader_inventory": {
+    "current": 79,
+    "frozen": 55,
+    "post_baseline": 24
+  },
+  "candidate_decisions": [
+    {
+      "topic": "Snapshot delta baseline identity and retention",
+      "decision": "NO-GO duplicate",
+      "existing_support_path": "管理档案/支持资料/差分快照为什么不能总以上次发送为基线.md",
+      "reason": "Full current support and existing natural entries already cover this question; no new article, source search or runtime was needed."
+    }
+  ],
+  "publication": "Accepted supplement, reader and public progress belong to the same containing commit."
+}

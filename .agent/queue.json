@@ -21,7 +21,7 @@
       ],
       "attempts": 1,
       "completed_at": "2026-10-31T12:53:58.977252Z",
-      "last_progress_at": "2026-11-02T09:28:52Z",
+      "last_progress_at": "2026-11-02T13:19:56Z",
       "next_action": "按版本变化或引擎复现证据维护；不外推模型结论",
       "blockers": [],
       "commit_sha": "b166843c07dc69c591fa736e1559ca51785e0de8",
@@ -32,7 +32,10 @@
         "管理档案/来源笔记/suspend-clock-accounting.json",
         "管理档案/支持资料/随机种子没变，为什么第二次攻击的结果变了.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
-        "管理档案/来源笔记/random-stream-replay.json"
+        "管理档案/来源笔记/random-stream-replay.json",
+        "管理档案/支持资料/持续推力为什么不能每个画面帧都发一次冲量.md",
+        "管理档案/来源笔记/force-impulse-world-step.json",
+        "管理档案/审查/持续力与一次冲量-来源与读者审查.md"
       ],
       "historical_artifacts": [
         {
@@ -42,7 +45,7 @@
           "sha256": "b4c319cc43fb4636955f88458b584c9885886de3274ff7b274c1218a358d3043"
         }
       ],
-      "latest_reader_maintenance": "Source-only random consumption example separates initialization, current state and assignment to gameplay operations; no generator or engine execution."
+      "latest_reader_maintenance": "Optional force/impulse support distinguishes continuous input, one-shot momentum, world steps and internal substeps; fixed source and unexecuted arithmetic only."
     },
     {
       "id": "TASK-2026-0001",
@@ -297,7 +300,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T13:00:20Z",
+      "last_progress_at": "2026-11-02T13:19:56Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [

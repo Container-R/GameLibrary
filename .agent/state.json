@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261102T130000Z-occlusion-feedback",
-  "last_real_progress_at": "2026-11-02T13:00:20Z",
-  "last_commit_sha": "724203bdbaa4406da60d0e5eba31103ff90c7102",
+  "last_run_id": "20261102T131800Z-force-impulse",
+  "last_real_progress_at": "2026-11-02T13:19:56Z",
+  "last_commit_sha": "2ac6a835f6a4c37f81d37f7c221df8f0217dca4b",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "724203bdbaa4406da60d0e5eba31103ff90c7102",
-    "latest_verified_content_sha": "724203bdbaa4406da60d0e5eba31103ff90c7102",
+    "last_verified_head_sha": "2ac6a835f6a4c37f81d37f7c221df8f0217dca4b",
+    "latest_verified_content_sha": "2ac6a835f6a4c37f81d37f7c221df8f0217dca4b",
     "reader_books_total": 79,
     "post_baseline_research_books": 24,
-    "scope": "Existing graphics reader links a narrow occlusion-query feedback explanation; no new book or GPU run. Independent 12:50–12:53 UTC audit archived at its observed snapshot.",
+    "scope": "Existing fixed-step reader links force versus impulse units and world/substep timing; no new book or physics execution.",
     "status": "Accepted supplement and public progress records are published together in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
