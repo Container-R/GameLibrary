@@ -194,12 +194,15 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T13:12:49.695863Z",
-      "last_progress_at": "2026-10-31T13:11:28.886629Z",
+      "last_progress_at": "2026-11-02T10:04:46Z",
       "next_action": "按版本和真实集成实验维护",
       "blockers": [],
       "commit_sha": "cbcc02054265388f7d0d7481a17fe85ac45e99b4",
       "artifact_paths": [
-        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md"
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+        "管理档案/支持资料/快照样本时间与到达时间.md",
+        "管理档案/审查/快照插值时间-来源与读者审查.md",
+        "管理档案/来源笔记/snapshot-interpolation-time.json"
       ],
       "historical_artifacts": [
         {
@@ -208,7 +211,8 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "929effcf240967dead92b1fb51af26e1c36ef7691526ea843f9181e0ef4dce39"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional snapshot time-axis explanation; source-only paper examples, prior prediction and historical execution scope unchanged."
     },
     {
       "id": "TASK-2026-0006",
@@ -293,7 +297,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T09:49:09Z",
+      "last_progress_at": "2026-11-02T10:04:46Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [

@@ -1,0 +1,30 @@
+{
+  "topic": "快照样本时间、到达时间与显示目标",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "author": "Gabriel Gambetta",
+      "title": "Entity Interpolation",
+      "url": "https://www.gabrielgambetta.com/entity-interpolation.html",
+      "publication_date": "Not established; copyright year is not publication date.",
+      "read_scope": "Complete visible article text; no images or live demo.",
+      "adopted_scope": "Delayed presentation between known server states differs from predicting future state."
+    },
+    {
+      "author": "Glenn Fiedler",
+      "title": "Snapshot Interpolation",
+      "url": "https://gafferongames.com/post/snapshot_interpolation/",
+      "publication_date": "2014-11-30",
+      "read_scope": "Complete visible article text from Introduction through Conclusion; no video or linked implementation.",
+      "adopted_scope": "Arrival jitter motivates delayed buffering; missing intermediate samples and extrapolation require distinct treatment, not a universally safe delay."
+    }
+  ],
+  "own_example": "Server samples (100ms,0) and (200ms,10); arrival paths (120ms,220ms) or (120ms,240ms); assumed exact clock mapping, client current250ms, delay100ms, target150ms. These are stipulated paper inputs, not network observations.",
+  "limits": [
+    "Clock mapping is assumed, not implemented or derived from either article.",
+    "Only already decoded, retained, same-object and same-generation samples without a discontinuity are considered.",
+    "Linear reconstruction need not equal actual intermediate simulation trajectory.",
+    "No network, engine, jitter emulator, latency measurement or new execution.",
+    "No universal transport, buffer duration, adaptive clock, loss recovery or hit-compensation guarantee."
+  ]
+}
