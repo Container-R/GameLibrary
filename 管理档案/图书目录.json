@@ -588,13 +588,13 @@
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/art2d/alpha-association-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
       "latest_increment": {
-        "scope": "One optional support entry explains alpha association before filtering, with ideal two-texel arithmetic and fixed OpenVG scope; no image or GPU execution.",
-        "reader_review": "管理档案/审查/透明纹素过滤顺序-来源审读.md",
-        "reader_sha256": "96a2557fbbc991b1e1a2ed67c6b45437b7fe343a9fc9c6a36fd515666379776b"
+        "scope": "One optional support entry distinguishes averaged alpha from thresholded coverage, with finite paper arithmetic and versioned importer reference pairing; no execution.",
+        "reader_review": "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md",
+        "reader_sha256": "e0ab9729d3b28d86ecfaef69b364b28f08268247ff9f94874f2002623c0a949d"
       },
-      "reader_body_sha256": "96a2557fbbc991b1e1a2ed67c6b45437b7fe343a9fc9c6a36fd515666379776b",
-      "latest_review_path": "管理档案/审查/透明纹素过滤顺序-来源审读.md",
-      "source_record": "管理档案/来源笔记/alpha-filter-order.json"
+      "reader_body_sha256": "e0ab9729d3b28d86ecfaef69b364b28f08268247ff9f94874f2002623c0a949d",
+      "latest_review_path": "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md",
+      "source_record": "管理档案/来源笔记/alpha-test-mip-coverage.json"
     },
     {
       "internal_id": "SOL-SFX-001",
@@ -1667,7 +1667,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "3fb108d2f7d8d4e17fb1c07c8c88bf0fee71f5d1",
+  "publication_base_sha": "ff516e08dfede616ff4483b143f6ae166ac77146",
   "accounted_for_original_items": 55,
   "reader_books_total": 74,
   "post_baseline_research_books": 19,

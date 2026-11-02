@@ -286,7 +286,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T07:38:00Z",
+      "last_progress_at": "2026-11-02T08:07:01Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -6860,6 +6860,34 @@
       "next_action": "For an actual integration, compare against trusted source IDs and validate field types throughout selection and return; this finite runtime observation does not test that application.",
       "blockers": [],
       "verification_method": "Fixed primary standards, independent reader review, and two author plus two independent calls under one observed runtime condition; preexecution static and mock findings are separately retained."
+    },
+    {
+      "id": "TASK-2026-0201",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can averaging alpha for a smaller mip change the fraction of samples passing an alpha-test threshold, independently of RGB premultiplication?",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 79,
+      "priority_rationale": "Close a deferred mip-generation decision in the existing transparency reader without another alpha primer or runtime framework.",
+      "expected_artifact": "管理档案/支持资料/树叶缩小后为什么会被透明裁剪掉.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+        "管理档案/支持资料/树叶缩小后为什么会被透明裁剪掉.md",
+        "管理档案/来源笔记/alpha-test-mip-coverage.json",
+        "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing alpha/color-filtering and mip-budget explanations to avoid duplication",
+        "Verify original developer explanation and versioned importer cutoff documentation",
+        "Independently check the finite texel-count derivation and single-sample limit",
+        "Keep actual shader comparison and implementation estimates distinct",
+        "Retain one reader entry and no engine or visual test claim"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T08:07:01Z",
+      "next_action": "For project adoption, compare the actual material cutoff/comparison and generated lower-resolution images under the real sampling path; no universal appearance guarantee follows.",
+      "blockers": [],
+      "verification_method": "Original sources, independent full reader review and finite paper arithmetic; no image, engine, GPU or native execution."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,42 @@
+{
+  "id": "alpha-test-mip-coverage",
+  "title": "Alpha-test coverage after mip generation",
+  "accessed_on": "2026-11-02",
+  "verification_method": "Original developer article and versioned API documentation reading, with an independent finite paper derivation; no texture processing, Unity or GPU execution.",
+  "sources": [
+    {
+      "author": "Ignacio Castaño",
+      "title": "Computing Alpha Mipmaps",
+      "date": "2010-09-09",
+      "url": "https://the-witness.net/news/2010/09/computing-alpha-mipmaps/",
+      "locator": "Coverage definition and alpha rescaling explanation in the main article",
+      "read_scope": "Full article text and relevant author replies about premultiplication and blending; screenshots not independently inspected. The page also displays a later 2017-01-11 date, not used as the original publication date.",
+      "supports": "The developer describes fading vegetation, defines threshold coverage, proposes scaling mip alpha toward the original coverage, and acknowledges that discrete coverage generally prevents an exact solution. This is not a universal visual or physical-correctness guarantee."
+    },
+    {
+      "author": "Unity Technologies",
+      "title": "TextureImporter.mipMapsPreserveCoverage",
+      "version": "6000.0 documentation",
+      "date": "Not established from the relative update label",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/TextureImporter-mipMapsPreserveCoverage.html",
+      "locator": "Definition and Remarks",
+      "read_scope": "Official versioned API page; redirects to docs.unity.com under the same 6000.0 version.",
+      "supports": "The option rescales computed mipmap alpha to preserve coverage and is disabled by default in this documentation. No internal search algorithm or measured image result is inferred."
+    },
+    {
+      "author": "Unity Technologies",
+      "title": "TextureImporter.alphaTestReferenceValue",
+      "version": "6000.0 documentation",
+      "date": "Not established from the relative update label",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/TextureImporter-alphaTestReferenceValue.html",
+      "locator": "Definition and Remarks",
+      "read_scope": "Official versioned API page; actual reference-value description read.",
+      "supports": "The importer coverage reference should match the application's alpha-test cutoff. This documentation considers alpha at or below the reference transparent; it does not establish every material's shader comparison or automatic parameter synchronization."
+    }
+  ],
+  "editorial_derivation": {
+    "inputs": "Four alpha texels [1,0,0,0], equal box averaging to one texel, one strict alpha>0.5 decision per texel.",
+    "result": "The discrete passing proportion changes from 1/4 to 0/1 after averaging to alpha0.25. A single binary outcome cannot exactly reproduce the fractional target1/4 by scalar multiplication alone.",
+    "limits": "Not the archived NVTT bilinear estimator, Unity implementation, camera-space coverage, filtered screen samples, compression, MSAA or visual quality. Premultiplying RGB alone does not change this example's alpha values."
+  }
+}
