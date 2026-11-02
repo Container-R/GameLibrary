@@ -1,0 +1,28 @@
+{
+  "topic": "GPU复制写入到顶点输入读取的同队列内存依赖",
+  "accessed": "2026-11-02",
+  "sources": [
+    {
+      "repository": "KhronosGroup/Vulkan-Guide",
+      "commit": "82887e8444045655cc4578827e4183be9de593ff",
+      "path": "chapters/synchronization_examples.adoc",
+      "read_scope": "Vertex upload setup and unified transfer/graphics queue branch. Adjacent paths inspected only to delimit scope.",
+      "adopted_scope": "Actual broad TRANSFER/MEMORY_WRITE to VERTEX_ATTRIBUTE_INPUT/MEMORY_READ barrier; appropriate semaphore dependencies can provide an alternative."
+    },
+    {
+      "repository": "KhronosGroup/Vulkan-Docs",
+      "commit": "486e4b289053a7d64784e7ce791711843c60c235",
+      "version": "Vulkan 1.3.296",
+      "path": "chapters/synchronization.adoc",
+      "read_scope": "Execution and Memory Dependencies; Submission Order; Fence Signaling/Waiting; vkCmdPipelineBarrier2; VkMemoryBarrier2; relevant stage/access definitions. Not the whole chapter or all generated validity includes.",
+      "adopted_scope": "Submission order alone is not a memory dependency; stages and access scopes both matter; a final host completion wait does not repair a missing earlier copy-to-draw dependency."
+    }
+  ],
+  "example": "Hypothetical same graphics/transfer queue, valid synchronization2, prepared staging source and legal buffer ranges/lifetimes; no competing accesses or replacement semaphore dependency.",
+  "limits": [
+    "Source analysis only; no Vulkan, shader, validation-layer or performance execution.",
+    "Existing ordinary coherent host-write-before-submit path remains valid under its stated prerequisites.",
+    "No cross-queue ownership, image layout, noncoherent flush or complete allocator implementation.",
+    "No prediction of a particular corrupted frame when dependencies are absent."
+  ]
+}

@@ -293,7 +293,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T09:28:52Z",
+      "last_progress_at": "2026-11-02T09:49:09Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1500,14 +1500,17 @@
         "No GPU execution, driver validation, performance or exact official binary provenance claims"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:14:09.268058Z",
+      "last_progress_at": "2026-11-02T09:49:09Z",
       "next_action": "Maintain compiler/CPU/GPU evidence distinction and revalidate changed shader interface variants",
       "blockers": [],
       "completed_at": "2026-10-31T20:14:09.268058Z",
       "commit_sha": "33e6fcc59eb0ce27a6acc868a3cabd92e4ce51be",
       "artifact_paths": [
         "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/支持资料/GPU复制写入与顶点读取.md",
+        "管理档案/审查/GPU复制可见性-来源与读者审查.md",
+        "管理档案/来源笔记/gpu-copy-vertex-visibility.json"
       ],
       "historical_artifacts": [
         {
@@ -1523,7 +1526,8 @@
           "kind": "historical_directory",
           "scope": "Fixed historical directory; no invented file SHA256"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional same-queue GPU-copy-to-vertex-input explanation; source analysis only, prior coherent host path and historical execution scope unchanged."
     },
     {
       "id": "TASK-2026-0049",
