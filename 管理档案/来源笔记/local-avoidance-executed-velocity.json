@@ -1,0 +1,53 @@
+{
+  "title": "局部避让选速与角色实际执行的区别",
+  "read_date": "2026-11-02",
+  "evidence_scope": "Targeted primary-paper reading and original abstract receiving-constraint example; no avoidance implementation, game, native or physical robot execution.",
+  "sources": [
+    {
+      "authors": [
+        "Jur van den Berg",
+        "Stephen J. Guy",
+        "Ming Lin",
+        "Dinesh Manocha"
+      ],
+      "title": "Reciprocal n-body collision avoidance",
+      "project_page": "https://gamma-web.iacs.umd.edu/ORCA/",
+      "url": "https://gamma.cs.unc.edu/ORCA/publications/ORCA.pdf",
+      "pdf_sha256": "3738db18ea5d24aca1e483241db3cce1a068a7adbea4489d59b3ea542335a19a",
+      "bibliography": "Robotics Research: The14th International Symposium ISRR, Springer Tracts in Advanced Robotics70, May2011, pp3–19.",
+      "pagination": "This linked author PDF has16 physical pages, numbered1–16; not mechanically mapped to book pagination.",
+      "sections": [
+        "Physical2: simplified model assumptions",
+        "Physical4–9: sections3–5.1",
+        "Physical10–12: sections5.2–5.3",
+        "Physical12–13: section5.4",
+        "Physical15: section7"
+      ],
+      "supports": [
+        "Preferred velocity, permitted-velocity choice and actual position update play distinct roles.",
+        "Empty intersection and least-violating fallback do not mean all original constraints are satisfied.",
+        "Post-clamping the selected velocity to dynamics no longer retains a strict avoidance guarantee."
+      ],
+      "reading_scope": "Main/editor and independent reviewers read relevant text/formulas. No paper images, project video or implementation execution.",
+      "limitations": [
+        "Finite-horizon conditions under the selected simplified model, not universal progress, arbitrary asynchronous execution or initially overlapping states.",
+        "Zero optimization velocity is distinct from zero preferred velocity; candidate does not rely on that special-case strategy.",
+        "Historical scales and performance are not target-game budget evidence."
+      ]
+    }
+  ],
+  "original_example": {
+    "assumed_constraint": "vx<=0.75m/s for this illustrative receiving step; not an observed ORCA solver output.",
+    "solver_candidate": "0.75m/s",
+    "controller_inputs": "previousvx0.9m/s; maximum decrease0.1m/s in this step",
+    "executed_component": "0.8m/s violates the assumed bound.",
+    "claim_limit": "Demonstrates non-preservation of a stipulated constraint, not inevitable physical collision or a tested tolerance."
+  },
+  "non_goals": [
+    "General ORCA implementation",
+    "Universal deadlock diagnosis",
+    "Guaranteed arrival or traffic scheduling",
+    "Sensing, timing or acceleration error bounds",
+    "Native/runtime verification"
+  ]
+}

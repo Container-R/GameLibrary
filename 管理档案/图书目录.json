@@ -526,6 +526,17 @@
         "reader_review": "管理档案/审查/导航输出容量-原生观察与读者审查.md",
         "support_path": "管理档案/支持资料/Detour路径输出容量观察/README.md",
         "reader_sha256": "f9c4b9a40fdca6ffad12f3202cf554d94be6ade77068ce03b3572f61d9d86c1c"
+      },
+      "reader_sha256": "6913632380bdadb8e7ff85b69924ee7c78ff0de566318486064c1c8f876789d9",
+      "review_paths": [
+        "管理档案/审查/局部避让与实际执行-来源与读者审查.md"
+      ],
+      "local_avoidance_support": {
+        "scope": "Optional finite-horizon local velocity and post-processing distinction, not a new navigation runtime or route guarantee.",
+        "support_path": "管理档案/支持资料/局部避让算出的速度，为什么不等于角色最终安全移动.md",
+        "review_path": "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
+        "reader_sha256": "6913632380bdadb8e7ff85b69924ee7c78ff0de566318486064c1c8f876789d9",
+        "execution": "Primary-paper sections and original abstract half-plane counterexample; no algorithm, controller or engine execution."
       }
     },
     {
@@ -1798,7 +1809,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "266f90435aad731ecb874a1706a75ebf0909422a",
+  "publication_base_sha": "90e864200ae704b3031cdab74bd66731083e2452",
   "accounted_for_original_items": 55,
   "reader_books_total": 76,
   "post_baseline_research_books": 21,
