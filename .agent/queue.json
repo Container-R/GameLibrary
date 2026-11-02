@@ -301,11 +301,11 @@
       ],
       "source_leads": [],
       "owner": "gamelibrary-main-integrator",
-      "lease_until": "2026-11-02T04:40:00Z",
+      "lease_until": "2026-11-02T05:00:00Z",
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T04:12:19Z",
-      "next_action": "Read current interactive-audio and crossfade readers before choosing a concrete original-source production gap; require a coverage/source gate and do not repeat generic role explanations.",
+      "last_progress_at": "2026-11-02T04:29:23Z",
+      "next_action": "Review one existing reader for a concrete original-source implementation gap; preserve source-only versus execution boundaries and prefer integration over duplicate books.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -6979,6 +6979,35 @@
       "next_action": "Retain this limited illustration; new geometric, collision or player-attention claims require their own evidence.",
       "blockers": [],
       "verification_method": "Primary Japanese text plus actual viewing of two official image copies; independent source and reader review. No model, game, engine, fixture, or player test."
+    },
+    {
+      "id": "TASK-2026-0191",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "When non-linear dialogue jumps out of a conversation, what happens to control restrictions installed at entry?",
+      "discipline": "NARR",
+      "status": "published",
+      "priority": 86,
+      "priority_rationale": "Add a concrete historical production constraint to the existing contextual-dialogue reader without duplicating selection/playback distinctions.",
+      "expected_artifact": "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
+      "artifact_paths": [
+        "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
+        "管理档案/来源笔记/firewatch-conversation-control-boundary.json",
+        "管理档案/审查/情境对白-会话限制状态补证审读.md"
+      ],
+      "acceptance": [
+        "Read original Firewatch conference text and distinguish implemented start/stop events from Further Work",
+        "Read current dialogue, audio and modal-focus coverage before choosing the limited supplement",
+        "Label the camp branch as an original paper example, not an interpretation of unseen diagram arrows",
+        "Independent complete-reader review and primary-source check",
+        "No native, audio, game or human usability test claim"
+      ],
+      "owner": null,
+      "lease_until": null,
+      "attempts": 1,
+      "last_progress_at": "2026-11-02T04:29:23Z",
+      "next_action": "Retain as a source-backed supplement; a complete interruption/ownership implementation requires separate protocol and evidence.",
+      "blockers": [],
+      "verification_method": "Original conference PDF extracted text and session identity; paper branch example and independent reader/source review. No diagram pixels or presentation audio viewed, no runtime execution."
     }
   ],
   "execution_policy": {

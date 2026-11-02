@@ -1,0 +1,30 @@
+{
+  "title": "Do You Copy? The dialog system in Firewatch",
+  "authors": [
+    "Patrick Ewing",
+    "William Armstrong"
+  ],
+  "event": "GDC 2017",
+  "primary_url": "https://media.gdcvault.com/gdc2017/Presentations/Armstrong_Do_you_copy.pdf",
+  "identity_url": "https://www.gdcvault.com/play/1024415/Do-You-Copy-Dialog-System",
+  "accessed_at": "2026-11-02",
+  "read_scope": "Complete extracted text of 77 physical PDF pages, including speaker notes; session identity page. No diagram pixels, presentation video or audio reviewed.",
+  "claims": [
+    {
+      "physical_pages": "51–52",
+      "scope": "Authors describe interrupted Julia conversations leaving character knowledge ahead of information conveyed to the player; not evidence of precise fact-write timing."
+    },
+    {
+      "physical_pages": "56–58",
+      "scope": "Authors report start/stop events with reference counting for normal player control, and discuss fragility of non-linear conversational state. No reconstruction of unseen diagram arrows."
+    },
+    {
+      "physical_pages": "73–75",
+      "scope": "Conversation container and automatic state entry/exit are explicitly further-work proposals, not a demonstrated shipped repair."
+    }
+  ],
+  "editorial_boundary": "The camp branch is an original paper example. Do not merge story-information progress and control restriction ownership; no complete state/lock implementation or runtime verification.",
+  "source_artifacts_redistributed": false,
+  "native_or_audio_execution": false,
+  "retrieval_limit": "Ordinary local PDF retrieval returned HTTP403 and was not bypassed; browser extracted source text remained readable. Screenshot requests supplied no viewable pixels."
+}

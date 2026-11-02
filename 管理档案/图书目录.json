@@ -1251,7 +1251,16 @@
       "scope_disposition_review": "管理档案/审查/Valve情境对白-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/valve-contextual-dialogue-rule-selection.md",
-      "old_path_history_commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb"
+      "old_path_history_commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
+      "latest_increment": {
+        "scope": "Conversation restrictions and non-linear exits: limited Firewatch production evidence alongside an original camp branch.",
+        "reader_sha256": "9f8e5516a0f41b663f7aa69f54fe05cd245b744b9011727d3393c6c1d0ddc7f2",
+        "previous_reader_sha256": "71cfa2625d448da02e58cd38c9720d1e607bd433ebd801e691fb54f2f9498d51",
+        "reader_review": "管理档案/审查/情境对白-会话限制状态补证审读.md",
+        "source_record": "管理档案/来源笔记/firewatch-conversation-control-boundary.json",
+        "verification_method": "Primary source text and independent reader review; no runtime execution or unseen-diagram inference.",
+        "excluded": "No claim that Firewatch shipped the proposed conversation container; no complete state-ownership implementation."
+      }
     },
     {
       "internal_id": "CASE-NET-001",
