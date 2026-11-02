@@ -301,7 +301,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-02T16:28:19Z",
+      "last_progress_at": "2026-11-02T16:51:01Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -5203,7 +5203,10 @@
       "expected_artifact": "Source-backed production case with original conditional timing analysis, not a reconstructed private queue",
       "artifact_paths": [
         "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
-        "管理档案/研究记录/source-notes/warlander-cancel-input-reservation.md"
+        "管理档案/研究记录/source-notes/warlander-cancel-input-reservation.md",
+        "管理档案/支持资料/Celeste Classic移植版：缓存还有效，为什么冲刺结束时仍没有起跳.md",
+        "管理档案/来源笔记/celeste-classic-jump-consumption.json",
+        "管理档案/审查/Celeste移植跳跃缓存-源码与读者审查.md"
       ],
       "acceptance": [
         "Read original Japanese developer article and establish author/date/project scope",
@@ -5214,7 +5217,7 @@
         "Exclude source images and preserve existing runtime evidence boundaries"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T09:53:41.230274Z",
+      "last_progress_at": "2026-11-02T16:51:01Z",
       "next_action": "Retain separate command trials, conditional clock/eligibility assumptions and source-only historical scope",
       "blockers": [],
       "completed_at": "2026-11-01T09:54:54.043930Z",
@@ -5232,7 +5235,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "ce9cbe64261333be0256eaa49e3beac78084e3d3762114555fbea0873dd0dbf2"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Optional source-backed C# port comparison separates counter aging from execution of a consumption branch; original Warlander claims and arithmetic retained."
     },
     {
       "id": "TASK-2026-0146",

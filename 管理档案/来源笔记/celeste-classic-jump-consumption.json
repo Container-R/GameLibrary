@@ -1,0 +1,19 @@
+{
+  "read_on": "2026-11-02",
+  "repository": "https://github.com/NoelFB/Celeste",
+  "commit": "1b0ce45c75e05649ae91b44a8bb6b196684e4352",
+  "source_paths": [
+    "Source/PICO-8/Classic.cs",
+    "Source/PICO-8/Readme.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scope": "Author C# port, not original Lua or full-game player implementation. Player.update fields/init and full method, outer Classic.Update and relevant movement/ground-query context; README and license. Main also read limited Emulator scheduling/input context without making a wall-clock claim.",
+  "source_file_sha256": "657515f88328d0269fca3d5b83acbafb8bc61b24db7f5b6bff8a7d442fcb833d",
+  "example": "Assumed prestate buffer2/dash1, grounded query and no new press: buffer1 but dash branch skips consumption; next update buffer0. Conditional control-flow reasoning, not actual level reachability or execution.",
+  "reader_path": "GameLibrary/游戏设计/战斗设计/操作响应/Warlander如何区分招式取消与输入缓存.md",
+  "support_path": "管理档案/支持资料/Celeste Classic移植版：缓存还有效，为什么冲刺结束时仍没有起跳.md",
+  "support_sha256": "5bf7fc9ddfc16ece06a5236cc792a1c1f6373a79d20520e9b4e791075d7f2749",
+  "review": "管理档案/审查/Celeste移植跳跃缓存-源码与读者审查.md",
+  "limits": "No compilation, model execution, game input trace, original Lua equivalence or performance guarantee. Repository code license not extended to commercial game/assets or linked cartridge."
+}

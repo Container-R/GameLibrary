@@ -1315,7 +1315,16 @@
       "scope_disposition_review": "管理档案/审查/Warlander输入-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba/case-studies/design/warlander-cancel-input-reservation.md",
-      "old_path_history_commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba"
+      "old_path_history_commit": "34a2297a4ca7bf7981fe7be0173d2a7a2200a9ba",
+      "reader_sha256": "7236720b41eb1c054e215f0bdbab09599fab2264c382966dad39ef492c865ec1",
+      "review_paths": [
+        "管理档案/审查/Celeste移植跳跃缓存-源码与读者审查.md"
+      ],
+      "jump_consumption_support": {
+        "path": "管理档案/支持资料/Celeste Classic移植版：缓存还有效，为什么冲刺结束时仍没有起跳.md",
+        "sha256": "5bf7fc9ddfc16ece06a5236cc792a1c1f6373a79d20520e9b4e791075d7f2749",
+        "scope": "Conditional source trace from a different project C# port, not Warlander implementation or game execution."
+      }
     },
     {
       "internal_id": "CASE-ENGINE-001",
@@ -1971,7 +1980,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "13cd15ee8a14c7b2803b2a127ea6d391dbbcb528",
+  "publication_base_sha": "e2a8479322459444f4abe64375e4f96aad15e921",
   "accounted_for_original_items": 55,
   "reader_books_total": 80,
   "post_baseline_research_books": 25,
