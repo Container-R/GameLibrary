@@ -1553,7 +1553,13 @@
       "scope_disposition_review": "管理档案/审查/TLOU2光照-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/02eb6dbf6897b8582b31c2169c04060d5d6dccf4/case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
-      "old_path_history_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4"
+      "old_path_history_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
+      "reader_sha256": "155d40d920e547b2feb2af4b59d7e1b6c90d8cb39dacd221cd79d6ceef06eac8",
+      "deringing_stage_maintenance": {
+        "source_record": "管理档案/来源笔记/tlou2-deringing-stage-boundary.json",
+        "review": "管理档案/审查/TLOU2去振铃阶段-来源与读者审查.md",
+        "scope": "One source-backed processing-stage section; prior hybrid representation and hypothetical wall comparison preserved."
+      }
     },
     {
       "internal_id": "SOL-LOC-002",
@@ -2093,7 +2099,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5acfc9c68355652cca452012c515807cd228814d",
+  "publication_base_sha": "db14f871c8a203bf59cb1ceccabbedc315db1ff1",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,
