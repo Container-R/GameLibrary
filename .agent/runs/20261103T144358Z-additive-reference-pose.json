@@ -1,0 +1,24 @@
+{
+  "id": "20261103T144358Z-additive-reference-pose",
+  "task_ids": [
+    "TASK-2026-0214"
+  ],
+  "recorded_at": "2026-11-03T14:43:58Z",
+  "baseline_sha": "fdda51cabb5d8be1476b73c6a584f32385afd5e8",
+  "outcome": "accepted-fixed-source-reader",
+  "reader": "GameLibrary/角色动画/动画运行时/姿态叠加/叠加呼吸动作前，为什么要先确认参考姿势.md",
+  "artifacts": [
+    "管理档案/审查/加法动画参考姿势-来源与读者审查.md",
+    "管理档案/来源笔记/additive-reference-pose.json",
+    "GameLibrary/角色动画/动画运行时/姿态叠加/README.md"
+  ],
+  "verification": "Fixed ozz-animation0.17.0 source and UE5.6 documentation analysis with original local-translation arithmetic; no native, skeletal, editor, export or visual execution.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 88,
+    "frozen_baseline": 55,
+    "post_baseline": 33,
+    "queue_tasks": 214
+  },
+  "counts_are_not_quality_evidence": true
+}

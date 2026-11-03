@@ -1,0 +1,28 @@
+{
+  "title": "Additive animation reference pose and runtime base",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "Guillaume Blanc / ozz-animation",
+      "version": "0.17.0",
+      "commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/tree/744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "scope": "Builder header/implementation and runtime BlendingJob fully read; main and independent fixed-source review. Official additive sample text also read; not run."
+    },
+    {
+      "publisher": "Epic Games",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/aim-offset-in-unreal-engine?application_version=5.6",
+      "version": "5.6",
+      "scope": "Main editor read complete extracted prose; source reviewer checked mesh-space and base/reference settings. No image or engine inspection."
+    }
+  ],
+  "reader": "GameLibrary/角色动画/动画运行时/姿态叠加/叠加呼吸动作前，为什么要先确认参考姿势.md",
+  "review": "管理档案/审查/加法动画参考姿势-来源与读者审查.md",
+  "verification": "Fixed ozz-animation0.17.0 source and UE5.6 documentation analysis with original local-translation arithmetic; no native, skeletal, editor, export or visual execution.",
+  "limits": [
+    "Unit-quaternion and nonzero-reference-scale premises",
+    "Default first key per channel distinguished from explicit reference overload",
+    "No direct equivalence between local ozz representation and UE mesh-space assets",
+    "No native or visual experiment"
+  ]
+}
