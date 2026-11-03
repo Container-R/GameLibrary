@@ -1,0 +1,27 @@
+{
+  "id": "20261103T074308Z-normal-mip-specular",
+  "task_ids": [
+    "TASK-2026-0037"
+  ],
+  "recorded_at": "2026-11-03T07:43:08Z",
+  "baseline_sha": "68b5f669aff71eaf208f7265a9e88847fbabeca6",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "artifacts": [
+    "管理档案/支持资料/法线贴图缩小后，高光为什么不能只靠重新归一化.md",
+    "管理档案/审查/法线Mip高光-原文与独立代数审读.md",
+    "管理档案/来源笔记/normal-mip-specular-filtering.json"
+  ],
+  "verification": "Original exact equal-weight algebra independently derived; historical primary source interpretation only. No shader, normal-mip generator or game renderer execution.",
+  "algorithm_native_runs": 0,
+  "source_reading_note": "Read-only source rendering is not an algorithm execution; initial incomplete preparation retained separately from corrected source-reading render.",
+  "existing_native_evidence_unchanged": true,
+  "closed_duplicate_gate": "Alpha-test mip coverage already fully explained by existing support; no duplicate article or experiment.",
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

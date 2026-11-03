@@ -1,0 +1,21 @@
+{
+  "title": "Mipmapping Normal Maps",
+  "author": "Michael Toksvig / NVIDIA",
+  "version": "2004technical brief/submitted manuscript; not verified2005journalfinal",
+  "url": "https://developer.download.nvidia.com/whitepapers/2006/Mipmapping_Normal_Maps.pdf",
+  "read_on": "2026-11-03",
+  "pdf_pages": 10,
+  "pdf_sha256": "078c8b8c9fff14e9ba1abb8bf9aa3aa59e7f60abdc90422e7076a73563730737",
+  "read_scope": "Main and independent source reviewer: full extracted text and actual printed1–6 figure/formula pages. Cited prior references not read.",
+  "used_pages": "Printed1–5: normal variation, nonlinear highlight response, approximation and precision",
+  "reader": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "support": "管理档案/支持资料/法线贴图缩小后，高光为什么不能只靠重新归一化.md",
+  "review": "管理档案/审查/法线Mip高光-原文与独立代数审读.md",
+  "verification": "Original exact equal-weight algebra independently derived; historical primary source interpretation only. No shader, normal-mip generator or game renderer execution.",
+  "limits": [
+    "Mean length is not complete distribution",
+    "Blinn-Phong approximation is not universal GGX/roughness conversion",
+    "No observed temporal quality/performance, no existing native evidence reused"
+  ],
+  "alternate_source_access": "Alternative official assets URL failed; not claimed read."
+}
