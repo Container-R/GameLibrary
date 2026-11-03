@@ -1,0 +1,18 @@
+{
+  "read_on": "2026-11-03",
+  "reader_support": "管理档案/支持资料/输入法候选窗为什么会离开文字光标.md",
+  "support_sha256": "b6bb65605df964a9208cd9720aaae5a077d0bd3882ad13877516fce998913656",
+  "parent_reader": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "repository": "https://github.com/libsdl-org/SDL",
+  "version": "release-3.2.0",
+  "source_commit": "535d80badefc83c5c527ec5748f2a20d6a9310fe",
+  "source_ranges": {
+    "include/SDL3/SDL_keyboard.h": "530–551 SetTextInputArea declaration comment",
+    "src/render/SDL_render.c": "2856–2883 complete RenderCoordinatesToWindow",
+    "docs/README-highdpi.md": "Complete text and numeric table; not copied into support"
+  },
+  "source_scope": "Selected fixed interface/function and highDPI documentation, not full backend audit.",
+  "example_scope": "Original declared positive scale and translation, integer dimensions, window pixel density1. Independent paper arithmetic, not GUI execution.",
+  "limits": "No universal DPI factor, exact OS candidate placement, arbitrary offscreen conversion or cross-engine event guarantee.",
+  "review": "管理档案/审查/输入法候选区域坐标-来源与读者审查.md"
+}

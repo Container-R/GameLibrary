@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T00:29:27Z",
+      "last_progress_at": "2026-11-03T00:38:58Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7067,7 +7067,10 @@
       "artifact_paths": [
         "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
         "管理档案/来源笔记/ime-confirmation-vs-submit.json",
-        "管理档案/审查/输入法确认与聊天发送-读者与来源审查.md"
+        "管理档案/审查/输入法确认与聊天发送-读者与来源审查.md",
+        "管理档案/支持资料/输入法候选窗为什么会离开文字光标.md",
+        "管理档案/来源笔记/ime-candidate-coordinates.json",
+        "管理档案/审查/输入法候选区域坐标-来源与读者审查.md"
       ],
       "acceptance": [
         "Check existing input and localization reader overlap",
@@ -7077,10 +7080,11 @@
         "No universal input handler or unexecuted compatibility claim"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T08:32:38Z",
+      "last_progress_at": "2026-11-03T00:38:58Z",
       "next_action": "For project adoption, inspect the actual text component and all send entrypoints, then exercise candidate acceptance, cancellation and a genuinely separate send operation.",
       "blockers": [],
-      "verification_method": "Fixed and versioned primary-source reading, independent reader review and conditional sequence reasoning; no native, browser, IME or synthetic-event execution."
+      "verification_method": "Fixed and versioned primary-source reading, independent reader review and conditional sequence reasoning; no native, browser, IME or synthetic-event execution.",
+      "latest_reader_maintenance": "Optional candidate-area coordinate handoff explanation; existing composition and send-action boundaries unchanged, no GUI experiment."
     },
     {
       "id": "TASK-2026-0203",
