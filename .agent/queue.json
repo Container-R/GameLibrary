@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T21:29:58Z",
+      "last_progress_at": "2026-11-03T21:41:06Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -8324,6 +8324,32 @@
       "next_action": "Do not turn aggregate Wanted Mips or loaded status into per-pixel or physical residency guarantees.",
       "blockers": [],
       "verification_method": "Source-backed interpretation and independent reader review; no texture-streamer execution.",
+      "publication_scope": "Revised reader, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0235",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为了让失同步报告可读而重新加载存档，为什么可能改变待调查的差异？",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Add a concrete historical production mechanism without duplicating generic QA diagnostic-intervention guidance.",
+      "expected_artifact": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+        "管理档案/审查/失同步报告转换-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read current cache, replay and QA scope for duplication",
+        "Read original FFF47 and FFF158 with exact chronology",
+        "Independently review complete candidate and proposal/observation distinction",
+        "Check QA cross-entry and retained original content"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T21:41:06Z",
+      "next_action": "Preserve raw-versus-converted report distinction without claiming complete state capture or new runtime reproduction.",
+      "blockers": [],
+      "verification_method": "Primary-source historical account and original explanation, independently read; no game execution.",
       "publication_scope": "Revised reader, review and public progress in containing commit."
     }
   ],
