@@ -1,0 +1,37 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "support": "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+  "support_sha256": "8313b564a647b7fbd34666f2a17ca8207135c38a6bc7acd715c59be43002f8f5",
+  "review": "管理档案/审查/深度度量与相机起点-来源和读者审查.md",
+  "origin": "Reader-oriented extraction of existing historical depth comparison analysis, not a new mechanism discovery.",
+  "historical_basis": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
+  "sources": [
+    {
+      "author": "Nathan Reed",
+      "title": "Visualizing Depth Precision",
+      "date": "2021-10-21",
+      "url": "https://developer.nvidia.com/blog/visualizing-depth-precision/",
+      "read_scope": "Main reader read original body Why1/z through conclusions; independent source reviewer read Why1/z and mapping text. No AI summary evidence, image inspection, author simulation or measured precision claim."
+    },
+    {
+      "author": "Clay John / Godot",
+      "title": "Introducing Reverse Z",
+      "date": "2024-04-29",
+      "url": "https://godotengine.org/article/introducing-reverse-z/",
+      "read_scope": "4.3 historical migration body: POSITION, DEPTH, depth_texture and comparison-space sections; not current all-version assurance."
+    },
+    {
+      "author": "Godot documentation",
+      "title": "Advanced post-processing",
+      "version": "4.6",
+      "url": "https://docs.godotengine.org/en/4.6/tutorials/shaders/advanced_postprocessing.html",
+      "read_scope": "Depth texture, renderer NDC conventions and inverse projection/divide; no copied complete shader or execution."
+    }
+  ],
+  "original_examples": [
+    "Assumed perspective near1/infinite far d=1-1/z: equal0.01 depth changes yield axis gaps2/49 and10/9",
+    "View point(3,0,-4): positive axis depth4 versus Euclidean distance5"
+  ],
+  "verification": "Independent original-source reading, complete reader review and paper arithmetic. No new shader, GPU, engine, image or water-effect execution."
+}

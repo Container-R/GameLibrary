@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261103T170130Z-openal-distance-native",
-  "last_real_progress_at": "2026-11-03T17:01:30Z",
-  "last_commit_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
+  "last_run_id": "20261103T172235Z-depth-camera",
+  "last_real_progress_at": "2026-11-03T17:22:35Z",
+  "last_commit_sha": "b61b231db5716095146c01f48034b79cfbe75ea8",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
-    "latest_verified_content_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
+    "last_verified_head_sha": "b61b231db5716095146c01f48034b79cfbe75ea8",
+    "latest_verified_content_sha": "b61b231db5716095146c01f48034b79cfbe75ea8",
     "reader_books_total": 90,
     "post_baseline_research_books": 35,
-    "scope": "Two same-environment fixed five-case OpenAL Soft self-reported1.24.2 loopback runs, one by a second operator with prior knowledge; identical complete output bytes and independent offline recomputation. Fifteen render calls and72000 frames per run; fixed thresholds, configuration not fully excluded. Not device audio, listening, performance, FMOD/CRI, cross-machine reproduction or binary provenance certification.",
+    "scope": "Source-only reader integration: existing depth comparison analysis with original paper examples, plus a narrow Unity6000.0 Raycast origin-containing Collider limitation. No new native execution; prior OpenAL observations and Box2D evidence unchanged.",
     "status": "Reader/support/source/review/progress are published together in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",

@@ -13,6 +13,10 @@
     {
       "url": "https://docs.unity3d.com/Packages/com.unity.cinemachine@2.10/manual/CinemachineCollider.html",
       "scope": "Page identifies2.10.7; full introduction/property table, not implementation or engine execution."
+    },
+    {
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/physics/raycast",
+      "scope": "Unity 6000.0 versioned mutable documentation: origin/direction/range/filter parameters, returns, and inside-origin Collider exclusion in Remarks. No engine execution or Cinemachine implementation inspection."
     }
   ],
   "reader": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
@@ -24,5 +28,12 @@
     "Original finite geometry, no predicted pixels",
     "No universal camera sphere radius or whole-frustum collision requirement",
     "Independent source and complete reader review, not native replication"
-  ]
+  ],
+  "origin_inside_increment": {
+    "read_on": "2026-11-03",
+    "scope": "One API-limited inspection paragraph within existing camera support; an excluded containing Collider does not exclude hits on other objects. A false ray result does not certify starting occupancy or near-plane clearance. No new reader book or native observation.",
+    "support_sha256": "bd8c3252f5bc30c01d506cd18a45254503f00552397afc2d38487b6d08db0056",
+    "review_status": "Independent original-source and complete reader review accepted; no native execution.",
+    "review": "管理档案/审查/深度度量与相机起点-来源和读者审查.md"
+  }
 }

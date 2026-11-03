@@ -516,12 +516,13 @@
       "scope_disposition": "虚构阴影改版贯穿接口、画面、性能与维护；Factorio历史制作例和精确深度度量支持保留，无shader运行或性能结果。",
       "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
-      "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "c9d3805455e3ecce5ca348756f5cf5f9960f6a28dd9483cff23b0832d83f485b",
+      "legacy_retention": "完整旧技术上下文仍归历史正文；当前深度入口承接为自然读者支持，历史审查绑定保持原范围。",
+      "reader_sha256": "747b4b3e0e0bde1ebcfba74b4890375ec2b79939db29a3d027314f78749c811e",
       "review_paths": [
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
-        "管理档案/审查/INSIDE时域历史-来源与读者审查.md"
+        "管理档案/审查/INSIDE时域历史-来源与读者审查.md",
+        "管理档案/审查/深度度量与相机起点-来源和读者审查.md"
       ],
       "occlusion_query_support": {
         "support_path": "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
@@ -543,6 +544,14 @@
         "review": "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
         "source": "管理档案/来源笔记/compute-tail-barrier.json",
         "scope": "Official specification reading and independently reviewed original ten-integer workgroup walkthrough; no shader compilation or GPU execution."
+      },
+      "depth_comparison_support": {
+        "path": "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+        "sha256": "8313b564a647b7fbd34666f2a17ca8207135c38a6bc7acd715c59be43002f8f5",
+        "source": "管理档案/来源笔记/depth-value-distance.json",
+        "review": "管理档案/审查/深度度量与相机起点-来源和读者审查.md",
+        "historical_basis_preserved": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
+        "scope": "Natural reader explanation replaces the old historical-entry link; original technical scope retained, no new runtime evidence."
       }
     },
     {
@@ -2091,7 +2100,8 @@
       "review_paths": [
         "管理档案/审查/触发区域穿越-来源与读者审查.md",
         "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
-        "管理档案/审查/相机近裁区域-来源与读者审查.md"
+        "管理档案/审查/相机近裁区域-来源与读者审查.md",
+        "管理档案/审查/深度度量与相机起点-来源和读者审查.md"
       ],
       "latest_increment": {
         "scope": "Fixed-version static-sensor crossing and event-setting limits; detailed observations and limitations are in linked support.",
@@ -2109,7 +2119,9 @@
         "path": "管理档案/支持资料/相机到角色的射线没碰墙，为什么画面边缘仍可能穿墙.md",
         "source": "管理档案/来源笔记/camera-near-plane-clearance.json",
         "review": "管理档案/审查/相机近裁区域-来源与读者审查.md",
-        "scope": "Independently source- and reader-reviewed near-plane geometry example; no camera, rendering or native execution. Existing Box2D evidence unchanged."
+        "scope": "Independently source- and reader-reviewed near-plane geometry example; no camera, rendering or native execution. Existing Box2D evidence unchanged.",
+        "sha256": "bd8c3252f5bc30c01d506cd18a45254503f00552397afc2d38487b6d08db0056",
+        "origin_inside_review": "管理档案/审查/深度度量与相机起点-来源和读者审查.md"
       }
     },
     {
@@ -2730,7 +2742,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
+  "publication_base_sha": "b61b231db5716095146c01f48034b79cfbe75ea8",
   "accounted_for_original_items": 55,
   "reader_books_total": 90,
   "post_baseline_research_books": 35,
