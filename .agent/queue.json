@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T18:50:56Z",
+      "last_progress_at": "2026-11-03T19:06:32Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -8196,6 +8196,32 @@
       "blockers": [],
       "verification_method": "Source interpretation and exact finite arithmetic, not simulated or observed player results.",
       "publication_scope": "Support, entry, sources, review and progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0230",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "更换身体动作后，为什么还要回到原来的对话镜头检查构图？",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Specific production handoff gap: changed body movement can invalidate prior framing; not generic import or camera collision guidance.",
+      "expected_artifact": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+        "管理档案/审查/动作更新与镜头构图-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read existing animator and adjacent reader material to avoid duplication",
+        "Verify first-party production statement and named speaker",
+        "Separate real project facts from hypothetical collaboration example",
+        "Review full reader and actual navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T19:06:32Z",
+      "next_action": "Preserve finite source-only scope; do not imply validated imports, complete production pipeline or runtime results.",
+      "blockers": [],
+      "verification_method": "Primary-source interpretation and independent reader review, no native run.",
+      "publication_scope": "Reader increment, review and public progress in containing commit."
     }
   ],
   "execution_policy": {

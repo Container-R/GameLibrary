@@ -21,12 +21,13 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "d57c3b9d4d0105aaec5cdeeb1b1df11c6962d95ee35ce8869cfdbc4241042fef",
+      "reader_sha256": "ee90d384a2412d2774514f189cb63a42d45a09e294d0884f1fe2b0d31774d9f2",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
         "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
         "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
-        "管理档案/审查/加法动画参考姿势-来源与读者审查.md"
+        "管理档案/审查/加法动画参考姿势-来源与读者审查.md",
+        "管理档案/审查/动作更新与镜头构图-来源与读者审查.md"
       ],
       "helper_bone_representation_support": {
         "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
@@ -39,6 +40,10 @@
         "path": "管理档案/支持资料/让攻击姿势多停一会儿，和命中时停顿有什么不同.md",
         "review": "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
         "scope": "Primary-source text interpretation and independently checked original16-unit timing example; no animation or game execution."
+      },
+      "camera_framing_increment": {
+        "review": "管理档案/审查/动作更新与镜头构图-来源与读者审查.md",
+        "scope": "Existing animator reader adds source-backed production case and explicitly hypothetical framing review; no new book or runtime validation."
       }
     },
     {
@@ -2781,7 +2786,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "8b1beab8a7eac86a2fd37309b9b7ea591db28ba8",
+  "publication_base_sha": "2484db822620a3b45263e4587851a706f678bec0",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,
