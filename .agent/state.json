@@ -33,24 +33,25 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261103T012324Z-zstd-stream-native",
-  "last_real_progress_at": "2026-11-03T01:23:24Z",
-  "last_commit_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
+  "last_run_id": "20261103T050808Z-eve-fixed-valuation",
+  "last_real_progress_at": "2026-11-03T05:08:08Z",
+  "last_commit_sha": "b2e5c3af551891c5d55ba5c2a7479ee291884713",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
-    "latest_verified_content_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
+    "last_verified_head_sha": "b2e5c3af551891c5d55ba5c2a7479ee291884713",
+    "latest_verified_content_sha": "b2e5c3af551891c5d55ba5c2a7479ee291884713",
     "reader_books_total": 83,
     "post_baseline_research_books": 28,
-    "scope": "Finite native output-budget evidence adjacent to existing Zstandard source explanation; no new book or dictionary test.",
+    "scope": "Optional fixed item valuation explanation in existing data-analysis reader; no new book or runtime execution.",
     "status": "Accepted supplement and public progress records are published together in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
-    "latest_review_path": ".agent/audits/20261103T005000Z-reader.md",
-    "snapshot_sha": "1368dff47c1f09d9a99eedd980a7991712a316da",
-    "status": "healthy-at-observation",
-    "scope": "Independent cgltf route, original source, public derivative and output review; limited model-bake reader/source spot-check. No rerun or later SQLite/KineDriver audit."
+    "latest_review_path": ".agent/audits/20261103T045000Z-reader.md",
+    "additional_archived_review": ".agent/audits/20261103T025000Z-reader.md",
+    "snapshot_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
+    "status": "historical-blocked-external-at-observation",
+    "scope": "Original KineDriver and SQLite source/reader reviews retain their actual observation times. Publication wait then recorded was resolved by the subsequently verified Zstandard commit b2e5c3af551891c5d55ba5c2a7479ee291884713; no research progress is attributed to the wait."
   },
   "record_transformation": {
     "scope": "Public progress, repository-relative recovery links and commit evidence only. Execution scheduling and transport diagnostics are maintained outside this public state.",

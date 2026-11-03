@@ -1,0 +1,40 @@
+{
+  "topic": "Fixed item valuation and quantity interpretation",
+  "observed_on": "2026-11-03",
+  "classification": "source-backed explanation with original arithmetic, not economic data analysis",
+  "sources": [
+    {
+      "organization": "EVE Online Economic Council",
+      "title": "Monthly Economic Report - September 2025",
+      "published_on": "2025-10-14",
+      "url": "https://www.eveonline.com/news/view/monthly-economic-report-september-2025",
+      "read_scope": "Complete article text, especially replacement and added chart methodology; no chart-image trend extraction.",
+      "supports": "Historical announced use of static type values in specified activity charts, with details referred to the report README."
+    },
+    {
+      "url": "https://web.ccpgamescdn.com/aws/community/EVEOnline_MER_202509.zip",
+      "member": "README.md",
+      "member_sha256": "931a1ee1a23486f4d9c96247eb962b724a332daed33af65da38edc7c1767107e",
+      "read_scope": "Complete 4816-byte method README extracted from the official archive; not a whole-archive hash or full data analysis.",
+      "supports": "Production category restriction, destroyed-versus-dropped distinction and static-value references.",
+      "limitations": "No explicit valuation base period, complete price algorithm, missing/new type policy or full historical recomputation procedure. Mining ratios differ between one regional plot paragraph (0.83) and other descriptions (0.835); not used in the reader arithmetic. The static-value section repeats regional field descriptions and is not treated as an executable pricing specification."
+    }
+  ],
+  "additional_inspection": {
+    "member": "data/static_type_values.csv",
+    "member_sha256": "6750a989d430ef3d970bf20b290875692079ef4d1483fc4316feb5e98b67d83a",
+    "scope": "CRC and full member hash checked during extraction; only header and first eight rows read. Fields type_id and mean_isk_value do not establish the averaging period or missing-value policy. No business dataset is redistributed."
+  },
+  "original_example": "Two item types illustrate unchanged quantities with changing prices, then equal total item count with different fixed-weight composition. Not EVE observations or a replication of its pricing method.",
+  "not_claimed": [
+    "player participation change",
+    "policy causality",
+    "all report charts use the same algorithm",
+    "complete economic report reproduction",
+    "runtime validation"
+  ],
+  "reader_support": "管理档案/支持资料/生产价值上升，为什么不一定是生产得更多.md",
+  "support_sha256": "98c08513bf4f1dc3ebd945163c7e86473e75caa2b69385d891106d47fc2c3929",
+  "parent_reader": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+  "review": "管理档案/审查/固定物品估值-来源与读者审查.md"
+}

@@ -129,7 +129,7 @@
       "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "cb832b340c2991b2d1bc8872853d25199ab5bc4f5dfce6f1301daf710fa12f38",
+      "reader_sha256": "9cc62846c8d8c264c7e7de9f54af1ac25d3cd784e9ab43b4ca8a000c74756da0",
       "steam_traffic_support": {
         "scope": "Existing two-report set and classification analysis rewritten for readers; no actual account results.",
         "support_path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
@@ -144,6 +144,13 @@
         "review": "管理档案/审查/实验样本成员去向-来源与读者审查.md",
         "support_sha256": "385c60e79aa7043695e56e126f95f76f7e61b6231257e32525e4f1904bccbaa3",
         "scope": "One optional entry extending an existing quality-check concept; historical sources and reviews retain their original revision scope."
+      },
+      "fixed_item_valuation_support": {
+        "support_path": "管理档案/支持资料/生产价值上升，为什么不一定是生产得更多.md",
+        "support_sha256": "98c08513bf4f1dc3ebd945163c7e86473e75caa2b69385d891106d47fc2c3929",
+        "source_record": "管理档案/来源笔记/eve-fixed-item-valuation.json",
+        "review": "管理档案/审查/固定物品估值-来源与读者审查.md",
+        "scope": "Historical reporting-method example and original arithmetic; no economic data analysis or player result."
       }
     },
     {
@@ -2239,7 +2246,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
+  "publication_base_sha": "b2e5c3af551891c5d55ba5c2a7479ee291884713",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,
