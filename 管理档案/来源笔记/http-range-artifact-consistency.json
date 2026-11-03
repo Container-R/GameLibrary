@@ -1,0 +1,23 @@
+{
+  "title": "HTTP partial-response continuity versus release artifact identity",
+  "publisher": "IETF / RFC Editor",
+  "document": "RFC 9110, HTTP Semantics, June 2022",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "scope": "Sections 8.8.1, 13.1.5, 14.1.2–14.4, 15.3.7 and single-part/combining-parts subsections, 15.5.17; not entire RFC. Adjacent multipart text read but excluded from implementation scope."
+    }
+  ],
+  "reader": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "support": "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
+  "review": "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
+  "verification": "Primary fixed standard and independent source/full-reader review of an original ASCII prefix/suffix calculation; no server, example HTTP request, download client or network experiment.",
+  "limits": [
+    "Single resource, contiguous saved prefix, single byte range and no content-coding transform in the example",
+    "Strong representation continuity does not authenticate the intended release candidate",
+    "200 new-candidate handling is an application policy, not a ban on all partial 200 combination",
+    "Actual returned ranges and received coverage differ from request size and per-response Content-Length",
+    "No Addressables implementation claim, CDN guarantee, redirect/authentication/multipart/concurrent-write/crash/installation implementation"
+  ]
+}

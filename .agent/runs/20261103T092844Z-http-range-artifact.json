@@ -1,0 +1,25 @@
+{
+  "id": "20261103T092844Z-http-range-artifact",
+  "task_ids": [
+    "TASK-2026-0062"
+  ],
+  "recorded_at": "2026-11-03T09:28:44Z",
+  "baseline_sha": "d86f7b6a76d453b0193fe3d9ec38fb1ba5c56ae9",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "artifacts": [
+    "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
+    "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
+    "管理档案/来源笔记/http-range-artifact-consistency.json"
+  ],
+  "verification": "Primary fixed standard and independent source/full-reader review of an original ASCII prefix/suffix calculation; no server, example HTTP request, download client or network experiment.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

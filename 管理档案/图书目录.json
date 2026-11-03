@@ -212,15 +212,23 @@
         "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
         "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       },
-      "reader_sha256": "7262b89c4c3d5fd8cc65cebf78214892f38d07202f9e8b69b11022c7ad21c98a",
+      "reader_sha256": "fb957b6d90c82230c4659b856276c6b6d821cda3c8d14636174a0ded71147491",
       "shared_output_support": {
         "path": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
         "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
         "scope": "Versioned official documentation and original hypothetical dependency graph; no build execution."
       },
       "review_paths": [
-        "管理档案/审查/共享生成输出-来源与读者审查.md"
-      ]
+        "管理档案/审查/共享生成输出-来源与读者审查.md",
+        "管理档案/审查/HTTP资源包续传-来源与读者审查.md"
+      ],
+      "http_range_support": {
+        "path": "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
+        "sha256": "4a6d6dee26387f9a38511b5464adc9ebc6a1c78ba01cee4d46f7c2d19e9ed7ba",
+        "review": "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
+        "source": "管理档案/来源笔记/http-range-artifact-consistency.json",
+        "scope": "Primary fixed standard and independent source/full-reader review of an original ASCII prefix/suffix calculation; no server, example HTTP request, download client or network experiment."
+      }
     },
     {
       "internal_id": "ROLE-LOC-001",

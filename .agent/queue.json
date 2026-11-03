@@ -2183,7 +2183,10 @@
       "artifact_paths": [
         "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
         "管理档案/研究记录/source-notes/build-engineer-role.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
+        "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
+        "管理档案/来源笔记/http-range-artifact-consistency.json"
       ],
       "acceptance": [
         "Read exact current role coverage and primary employer/team sources across Japanese and English evidence",
@@ -2193,7 +2196,7 @@
         "Independent source and applicability review before publication"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T22:18:06.407290Z",
+      "last_progress_at": "2026-11-03T09:28:44Z",
       "next_action": "Keep candidate worksheet unexecuted; investigate real external-content baseline selection separately",
       "blockers": [],
       "completed_at": "2026-10-31T22:19:42.198473Z",
@@ -2218,7 +2221,13 @@
           "kind": "historical_directory",
           "scope": "Fixed historical directory; no invented file SHA256"
         }
-      ]
+      ],
+      "http_range_support": {
+        "support": "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
+        "review": "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
+        "source": "管理档案/来源笔记/http-range-artifact-consistency.json",
+        "scope": "Primary fixed standard and independent source/full-reader review of an original ASCII prefix/suffix calculation; no server, example HTTP request, download client or network experiment."
+      }
     },
     {
       "id": "TASK-2026-0063",
