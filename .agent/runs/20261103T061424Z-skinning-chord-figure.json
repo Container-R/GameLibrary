@@ -1,0 +1,49 @@
+{
+  "id": "20261103T061424Z-skinning-chord-figure",
+  "task_ids": [
+    "TASK-2026-0203"
+  ],
+  "recorded_at": "2026-11-03T06:14:24Z",
+  "baseline_sha": "56601add487ce10a8b6133f60ff41207e2f42478",
+  "outcome": "accepted-reader-figure-increment",
+  "reader_path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+  "artifact_paths": [
+    "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md",
+    "管理档案/支持资料/蒙皮弦中点示意/INITIAL-EXECUTION-LIMIT.md",
+    "管理档案/支持资料/蒙皮弦中点示意/render-manifest.json",
+    "管理档案/支持资料/蒙皮弦中点示意/skinning-chord.svg",
+    "管理档案/支持资料/蒙皮弦中点示意/render_isolated.py",
+    "管理档案/支持资料/蒙皮弦中点示意/render-result.json",
+    "管理档案/支持资料/蒙皮弦中点示意/README.md",
+    "管理档案/支持资料/蒙皮弦中点示意/geometry.json",
+    "管理档案/支持资料/蒙皮弦中点示意/RENDER-PROTOCOL.md",
+    "管理档案/支持资料/蒙皮弦中点示意/generate.py"
+  ],
+  "verification": "Independent hand-math review and actual final raster viewing by two reviewers; final isolated generation/render passed with recorded warnings. Not a skinning runtime.",
+  "initial_process_limitation": "First generation/render omitted prescribed selected writable-location preparation; originals retained, later execution separate, no retroactive correction.",
+  "unexecuted_paths": [
+    "Timeout cleanup test",
+    "Cross-platform font rendering",
+    "Engine skinning",
+    "Real-user readability study"
+  ],
+  "other_source_gates": [
+    {
+      "topic": "Steam Input layers and origins",
+      "decision": "no-change",
+      "reason": "Existing reader covers refresh; official texts do not establish arbitrary layer-resolution algorithm."
+    },
+    {
+      "topic": "Hades dialogue production",
+      "decision": "no-change",
+      "reason": "Official video entry redirected to maintenance; available primary interview insufficient for a distinct production mechanism."
+    }
+  ],
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

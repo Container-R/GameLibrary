@@ -1,0 +1,34 @@
+{
+  "space": "XY viewed along Z; all z=0",
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "input_endpoints": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      -0.5,
+      0.8660254037844386
+    ]
+  ],
+  "lbs": [
+    0.25,
+    0.4330127018922193
+  ],
+  "normalized_rotation_result": [
+    0.5,
+    0.8660254037844386
+  ],
+  "distance_to_axis": {
+    "lbs": 0.5,
+    "rotation": 1.0
+  },
+  "drawing_pixels_per_unit": {
+    "x": 260,
+    "y": 260
+  },
+  "scope": "original ideal single-vertex geometry; not a skinning runtime"
+}

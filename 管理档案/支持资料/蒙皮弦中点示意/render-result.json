@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "stage": "complete",
+  "manifest_sha256": "c533093a17bdb2b84582cd64160b81d53114f623c6ec5d5724b2313f7d4092fa",
+  "input_sha256": {
+    "generate.py": "5de4f2defddd3f6cebddaf4d01501c6ee5229743725bc72a2378382e159c0e87",
+    "RENDER-PROTOCOL.md": "958d77ecc7a2abe75e247ca303666183220cd80555c69e27cd84a059b3d8f66e",
+    "render_isolated.py": "da84a049e2129d050926571ddebb28ec41b3f42718bbdc80d6797a4e1f9573e3"
+  },
+  "copied_inputs_verified": true,
+  "generation_returncode": 0,
+  "render_returncode": 0,
+  "outputs": {
+    "skinning-chord.svg": "122267e9a0b0c1f2f1ff4eb581e53b4aeb2455a1b46481a78eb1ab2f132f074d",
+    "geometry.json": "e4c8bf491f01015209c94e83b2cb7a2c0b260b8bd29c83d0ac32df3f85ec8f6a",
+    "skinning-chord.png": "e2e04fa59b026b9a5bfcd442c57c286ef512dbd64757386b33a7cae4ed89bb54"
+  },
+  "scope": "original mathematical SVG and raster rendering only; not skinning execution",
+  "environment_prepared": true,
+  "generation_stdout_empty": true,
+  "generation_stderr_empty": true,
+  "render_stdout_empty": true,
+  "render_stderr_empty": false
+}

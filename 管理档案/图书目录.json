@@ -2088,10 +2088,17 @@
       "origin": "source-grounded-skinning-blend-method-comparison",
       "scope_note": "两个等权影响的同轴纯旋转手推，解释归一化权重与刚体混合的区别；保留非刚体和短路径局限",
       "review_paths": [
-        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
+        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
+        "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md"
       ],
       "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
-      "reader_sha256": "9eecaa383adbd328d1e7aa025c717da0d69b144d0e2664535223f9c98680d93a"
+      "reader_sha256": "9e1d8f2597ae427581078a402e8e9eafe14356606217aa889adf841e804cc950",
+      "figure_support": {
+        "path": "管理档案/支持资料/蒙皮弦中点示意/README.md",
+        "svg": "管理档案/支持资料/蒙皮弦中点示意/skinning-chord.svg",
+        "svg_sha256": "122267e9a0b0c1f2f1ff4eb581e53b4aeb2455a1b46481a78eb1ab2f132f074d",
+        "scope": "Existing single-vertex hand calculation illustrated, not engine or volume validation."
+      }
     },
     {
       "internal_id": "SOL-ENGINE-008",

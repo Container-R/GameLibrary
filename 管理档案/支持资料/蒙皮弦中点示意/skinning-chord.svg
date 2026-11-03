@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="800" viewBox="0 0 1120 800" role="img" aria-labelledby="title desc">
+<title id="title">平均位置不在旋转圆上</title>
+<desc id="desc">沿Z轴看XY平面，X与Y等比例。单位圆上0度与120度两个端点的等权LBS结果是弦中点，距原点二分之一；本例归一化旋转混合的60度结果位于圆上，距原点一。只是一个顶点，不代表体积保持。</desc>
+<rect width="1120" height="800" fill="#ffffff"/>
+<g font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" fill="#172b3a">
+<text x="50" y="54" font-size="30" font-weight="bold">同样两个旋转：平均位置与混合旋转并不相同</text>
+<text x="50" y="91" font-size="18">沿 Z 轴看 XY 平面 · 两项各占 1/2 · 无平移、缩放或剪切 · 等比例坐标</text>
+<circle cx="380" cy="450" r="260" fill="#f8fafc" stroke="#a8b5c3" stroke-width="2"/>
+<line x1="78.400000" y1="450.000000" x2="692.000000" y2="450.000000" stroke="#a8b5c3" stroke-width="1.5"/>
+<line x1="380.000000" y1="741.200000" x2="380.000000" y2="156.200000" stroke="#a8b5c3" stroke-width="1.5"/>
+<text x="696" y="457" font-size="19">X</text><text x="391" y="151" font-size="19">Y</text>
+<text x="352" y="479" font-size="19">O</text>
+<path d="M 640.000000,450.000000 A 260,260 0 0 0 250.000000,224.833395" fill="none" stroke="#16816b" stroke-width="5"/>
+<line x1="640.000000" y1="450.000000" x2="250.000000" y2="224.833395" stroke="#c16b13" stroke-width="4"/>
+<line x1="380.000000" y1="450.000000" x2="510.000000" y2="224.833395" stroke="#16816b" stroke-width="2" stroke-dasharray="6 6"/>
+<line x1="380.000000" y1="450.000000" x2="445.000000" y2="337.416698" stroke="#c16b13" stroke-width="5"/>
+<circle cx="640.000000" cy="450.000000" r="7" fill="#253c5a" stroke="white" stroke-width="2"/><circle cx="250.000000" cy="224.833395" r="7" fill="#253c5a" stroke="white" stroke-width="2"/><circle cx="510.000000" cy="224.833395" r="7" fill="#16816b" stroke="white" stroke-width="2"/><circle cx="445.000000" cy="337.416698" r="7" fill="#c16b13" stroke="white" stroke-width="2"/>
+<text x="650" y="478" font-size="18">p₀ = (1, 0)</text>
+<text x="91" y="197" font-size="18">p₁ = (−1/2, √3/2)</text>
+<text x="472" y="194" font-size="18" fill="#126452">旋转混合：60°</text>
+<text x="460" y="345" font-size="18" fill="#96500b">LBS：弦中点</text>
+<text x="280" y="748" font-size="17" fill="#536577">单位圆：到 Z 轴的距离为 1</text>
+<g transform="translate(775,190)">
+<text x="0" y="0" font-size="22" font-weight="bold">比较同一个顶点</text>
+<circle cx="8" cy="45" r="7" fill="#253c5a"/>
+<text x="29" y="51" font-size="19">两个输入终点</text>
+<text x="29" y="83" font-size="18">分别为 0° 与 120°</text>
+<text x="29" y="113" font-size="18">到轴距离均为 1</text>
+<circle cx="8" cy="167" r="7" fill="#c16b13"/>
+<text x="29" y="173" font-size="19" fill="#96500b">先旋转，再平均位置</text>
+<text x="29" y="205" font-size="18">(1/4, √3/4)</text>
+<text x="29" y="235" font-size="18">到轴距离 = 1/2</text>
+<circle cx="8" cy="289" r="7" fill="#16816b"/>
+<text x="29" y="295" font-size="19" fill="#126452">本例先混合旋转</text>
+<text x="29" y="327" font-size="18">(1/2, √3/2)</text>
+<text x="29" y="357" font-size="18">到轴距离 = 1</text>
+<text x="0" y="420" font-size="17">圆弧表示本例的旋转位置，</text>
+<text x="0" y="448" font-size="17">不是动画采样或执行轨迹。</text>
+</g>
+<text x="50" y="784" font-size="16" fill="#536577">原创理想几何示意；只比较一个顶点，不证明网格体积保持，也不是角色、着色器或性能实测。</text>
+</g></svg>
