@@ -1,0 +1,32 @@
+{
+  "title": "BC1 budget versus decoded alpha representability",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "Khronos",
+      "title": "EXT_texture_compression_s3tc",
+      "version": "1.6, 2013-07-15",
+      "commit": "6af574a14089ccfee87efe230ebcdd8742859813",
+      "url": "https://github.com/KhronosGroup/OpenGL-Registry/blob/6af574a14089ccfee87efe230ebcdd8742859813/extensions/EXT/EXT_texture_compression_s3tc.txt",
+      "scope": "Header, Issues 4/5, complete RGB/RGBA DXT1 decoding appendix 675–740; not whole-extension implementation audit"
+    },
+    {
+      "publisher": "Microsoft",
+      "title": "Opaque and 1-bit alpha textures",
+      "url": "https://learn.microsoft.com/en-us/windows/uwp/graphics-concepts/opaque-and-1-bit-alpha-textures",
+      "scope": "Full technical prose and layout tables; image pixels not inspected",
+      "page_updated": "2022-10-20"
+    }
+  ],
+  "reader": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "support": "管理档案/支持资料/BC1省下了字节，为什么柔和透明度却保不住.md",
+  "review": "管理档案/审查/BC1透明模式-来源与读者审查.md",
+  "verification": "Official format reading and independently reviewed original black/white endpoint example; no compressed file, codec, GPU, visual or quality experiment.",
+  "limits": [
+    "OpenGL RGB/RGBA internal-format distinction is not a universal API enum claim",
+    "Endpoint equality uses three-color branch; unsigned comparison is not brightness",
+    "Decoded binary alpha does not imply filtered samples must be binary",
+    "No universal offline encoder cutoff or best replacement format",
+    "Existing DDS CPU evidence unchanged and not reused as alpha quality validation"
+  ]
+}

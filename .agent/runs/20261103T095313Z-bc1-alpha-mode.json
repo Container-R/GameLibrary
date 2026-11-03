@@ -1,0 +1,25 @@
+{
+  "id": "20261103T095313Z-bc1-alpha-mode",
+  "task_ids": [
+    "TASK-2026-0037"
+  ],
+  "recorded_at": "2026-11-03T09:53:13Z",
+  "baseline_sha": "30086b6bd1f0535b5b27f1117f29713f26c9a1dd",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "artifacts": [
+    "管理档案/支持资料/BC1省下了字节，为什么柔和透明度却保不住.md",
+    "管理档案/审查/BC1透明模式-来源与读者审查.md",
+    "管理档案/来源笔记/bc1-alpha-mode.json"
+  ],
+  "verification": "Official format reading and independently reviewed original black/white endpoint example; no compressed file, codec, GPU, visual or quality experiment.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

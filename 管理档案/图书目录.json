@@ -1248,11 +1248,12 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "21b647774b9453993aa0da61cac3cffe5681f0866dba12f9a9dcba6f984db337",
+      "reader_sha256": "fc3c7fa3e82dbff71ab2f186a7d45abd5b76314b8ea5f7678f44ce76d92381a8",
       "review_paths": [
         "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
         "管理档案/审查/纹理上传行跨度-来源与读者审查.md",
-        "管理档案/审查/法线Mip高光-原文与独立代数审读.md"
+        "管理档案/审查/法线Mip高光-原文与独立代数审读.md",
+        "管理档案/审查/BC1透明模式-来源与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Optional texture-coordinate wrapping and explicit-gradient explanation; budget arithmetic and historical results unchanged.",
@@ -1280,6 +1281,13 @@
         "path": "管理档案/支持资料/法线贴图缩小后，高光为什么不能只靠重新归一化.md",
         "review": "管理档案/审查/法线Mip高光-原文与独立代数审读.md",
         "scope": "Original exact equal-weight algebra independently derived; historical primary source interpretation only. No shader, normal-mip generator or game renderer execution."
+      },
+      "bc1_alpha_support": {
+        "path": "管理档案/支持资料/BC1省下了字节，为什么柔和透明度却保不住.md",
+        "sha256": "3fcb7414ade7523eda93a510b0926bd362e2038ccaaa5744ea26498d1706d2d2",
+        "review": "管理档案/审查/BC1透明模式-来源与读者审查.md",
+        "source": "管理档案/来源笔记/bc1-alpha-mode.json",
+        "scope": "Official format reading and independently reviewed original black/white endpoint example; no compressed file, codec, GPU, visual or quality experiment."
       }
     },
     {
