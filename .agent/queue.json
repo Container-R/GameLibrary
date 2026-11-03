@@ -8378,6 +8378,59 @@
       "blockers": [],
       "verification_method": "Selected first-party source text and original paper construction, independently read; no runtime or image inspection.",
       "publication_scope": "New reader, real shelf and entries, review, source note and public progress in containing commit."
+    },
+    {
+      "parent_task_id": "TASK-2026-0008",
+      "priority": 85,
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T22:41:00Z",
+      "id": "TASK-2026-0237",
+      "question": "Can original Ghost of Tsushima grass material sampling support a discrete-type selection case?",
+      "discipline": "TA",
+      "status": "blocked",
+      "priority_rationale": "Distinct production mechanism requires actual first-party technical content.",
+      "expected_artifact": "管理档案/研究记录/source-gates/tsushima-grass-type-sampling.md",
+      "artifact_paths": [
+        "管理档案/研究记录/source-gates/tsushima-grass-type-sampling.md"
+      ],
+      "acceptance": [
+        "Confirm original source identity",
+        "Read actual technical section before attributing implementation",
+        "Preserve finite access failure without third-party substitution"
+      ],
+      "next_action": "Resume only when an authorized inspectable original technical segment is available; no repeated generic search.",
+      "blockers": [
+        "Official PDF returned403; public player and video page did not provide technical content."
+      ],
+      "verification_method": "Source identity and access boundary only; mechanism not established."
+    },
+    {
+      "parent_task_id": "TASK-2026-0008",
+      "priority": 85,
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T22:41:00Z",
+      "id": "TASK-2026-0238",
+      "question": "环境落叶合并实例后，哪里需要生成效果的关系由谁维护？",
+      "discipline": "VFX",
+      "status": "published",
+      "priority_rationale": "A first-party production case adds spatial-input and lifecycle reasoning to an existing measurement reader.",
+      "expected_artifact": "管理档案/支持资料/落叶跟着森林走，为什么不一定要给每棵树挂一个发射器.md",
+      "artifact_paths": [
+        "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md",
+        "管理档案/支持资料/落叶跟着森林走，为什么不一定要给每棵树挂一个发射器.md",
+        "管理档案/审查/群落落叶位置归属-来源与读者审查.md",
+        "管理档案/来源笔记/tsushima-biome-ambience.json"
+      ],
+      "acceptance": [
+        "Read original public text and existing neighboring readers",
+        "Keep historical facts brief and original geometry explicitly hypothetical",
+        "Independently review full support and reciprocal host route",
+        "Preserve actual performance and lifecycle limits"
+      ],
+      "next_action": "Preserve source-only case and original-condition limits; add only a concrete independently sourced gap.",
+      "blockers": [],
+      "verification_method": "First-party text and original paper geometry with independent reader review; no execution.",
+      "publication_scope": "Support, host entry, source note, review and public progress in containing commit."
     }
   ],
   "execution_policy": {
