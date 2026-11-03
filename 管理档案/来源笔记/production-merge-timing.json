@@ -1,0 +1,23 @@
+{
+  "read_on": "2026-11-02",
+  "reader_path": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+  "reader_sha256": "037e6e015aae4808b31302bcf477e2e38212dd2b1ce17b0d8793fdffaa4a6c53",
+  "prior_reader_sha256": "0c47ef23aea1fa1c729ca48feb3881808a879bf2560a40259a28c0f1c032a487",
+  "support_path": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
+  "support_sha256": "fdec2d7c6ddd17bd0bf3c19d902fbf9cc2ec90c9608f9d8c8d8547729d5e9bb9",
+  "review_path": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
+  "primary_source": {
+    "institution": "U.S. Government Accountability Office",
+    "title": "Schedule Assessment Guide: Best Practices for Project Schedules",
+    "publication": "GAO-16-89G, December 2015",
+    "url": "https://www.gao.gov/assets/gao-16-89g.pdf",
+    "used_scope": "Printed pages100–102 Merge Bias and Schedule Underestimation;115–116 Correlation. Relevant text only, no figure inspection or whole-guide review.",
+    "supports": "Required parallel inputs merge at latest completion; shared causes may correlate activity durations. Not game-specific execution data."
+  },
+  "original_example": {
+    "inputs": "Two separately resourced independent tasks, same start; each1or3days equiprobable.",
+    "four_cases": "Joint probabilities each1/4; completion1/3/3/3days; mean2.5days vs max of means2days.",
+    "boundary": "If both always fast or slow together, each marginal mean remains2 and completion mean2. No universal strict bias or buffer rule.",
+    "verification": "Independent finite hand calculation and reader review; no randomized simulation or real project observation."
+  }
+}

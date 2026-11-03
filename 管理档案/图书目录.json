@@ -320,6 +320,13 @@
         "reader_sha256": "0c47ef23aea1fa1c729ca48feb3881808a879bf2560a40259a28c0f1c032a487",
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
+      },
+      "reader_sha256": "037e6e015aae4808b31302bcf477e2e38212dd2b1ce17b0d8793fdffaa4a6c53",
+      "parallel_merge_support": {
+        "source_record": "管理档案/来源笔记/production-merge-timing.json",
+        "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
+        "support": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
+        "scope": "Original finite hand calculation and primary schedule guidance; no game project data or simulation."
       }
     },
     {
@@ -2174,7 +2181,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "363dca4d59a2885feb6f9db79c72c247ff99bad3",
+  "publication_base_sha": "760c3a4db728779e8844dbd797ef5cf7ddba6bd3",
   "accounted_for_original_items": 55,
   "reader_books_total": 82,
   "post_baseline_research_books": 27,
