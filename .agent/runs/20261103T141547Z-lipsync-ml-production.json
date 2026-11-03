@@ -1,0 +1,24 @@
+{
+  "id": "20261103T141547Z-lipsync-ml-production",
+  "task_ids": [
+    "TASK-2026-0212"
+  ],
+  "recorded_at": "2026-11-03T14:15:47Z",
+  "baseline_sha": "7bc38a7dca0c7161ac06a0dddf1fdd06d0b19e3f",
+  "outcome": "accepted-production-case",
+  "reader": "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+  "artifacts": [
+    "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
+    "管理档案/来源笔记/lipsync-ml-production.json",
+    "GameLibrary/角色动画/动画制作/口型与表情/README.md"
+  ],
+  "verification": "First-party 2024 production case on generated animation representations, editable rig controls and pose-weight playback dependencies; no model, audio, game or training execution.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 86,
+    "frozen_baseline": 55,
+    "post_baseline": 31,
+    "queue_tasks": 212
+  },
+  "counts_are_not_quality_evidence": true
+}

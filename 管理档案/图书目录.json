@@ -21,10 +21,11 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "7a9441a4569848385aeb888e38465a8743edc83a9c2b2d1f643134c9a33ab4a9",
+      "reader_sha256": "e823fbaedbeb48a1bd3a3638f9a155379d32cf70edbfb7ad86b2eda2ed2f3745",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
-        "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md"
+        "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
+        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md"
       ],
       "helper_bone_representation_support": {
         "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
@@ -1785,7 +1786,11 @@
       "scope_disposition_review": "管理档案/审查/Cygames对白-独立审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/cygames-scenario-voice-handoff.md",
-      "old_path_history_commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb"
+      "old_path_history_commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
+      "reader_sha256": "54de28f795b14f7e2114acee7fda3757561263b4ed6153bde54813c0951e75a6",
+      "review_paths": [
+        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "CASE-NARR-002",
@@ -2563,6 +2568,24 @@
       ],
       "source_record": "管理档案/来源笔记/steampipe-pack-update.json",
       "reader_sha256": "31a45b657c762fc9d9253f4903676cba3861c5aa47a4b44c352347dd1fe8a8f7"
+    },
+    {
+      "internal_id": "CASE-ANIM-003",
+      "reader_title": "FFVII REBIRTH如何把自动口型交给动画师和引擎",
+      "floor": "角色动画",
+      "area": "动画制作",
+      "shelf": "口型与表情",
+      "canonical_reader_path": "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+      "current_read_path": "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立原始来源、关键图和完整读者视角审读接受；未运行模型或评价视听效果",
+      "origin": "first-party-lipsync-production-case",
+      "scope_note": "生成表示、继续编辑和播放依赖的生产分工，不是完整训练配方或任意角色语言保证。",
+      "review_paths": [
+        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/lipsync-ml-production.json",
+      "reader_sha256": "b14f1a44ade273dc1fb0876574313c15d1afa5b21b88e54636c958a17e6d0ef3"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2573,10 +2596,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c437f66423beb41637c8ce66694cfe3c5521e0c7",
+  "publication_base_sha": "7bc38a7dca0c7161ac06a0dddf1fdd06d0b19e3f",
   "accounted_for_original_items": 55,
-  "reader_books_total": 85,
-  "post_baseline_research_books": 30,
+  "reader_books_total": 86,
+  "post_baseline_research_books": 31,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

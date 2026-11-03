@@ -7686,6 +7686,34 @@
       "blockers": [],
       "verification_method": "Original hypothetical pack explanation based on independently read official technical sections; no SteamPipe, download or disk execution.",
       "publication_scope": "Reader and public records are published together in the containing commit."
+    },
+    {
+      "id": "TASK-2026-0212",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How does the FFVII REBIRTH Lip-Sync ML production workflow distinguish generated bone animation, editable rig controls and pose-weight playback dependencies?",
+      "discipline": "ANIM",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Concrete first-party facial-animation production gap absent from the existing role and voice-version handoff readers.",
+      "expected_artifact": "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+      "artifact_paths": [
+        "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
+        "管理档案/来源笔记/lipsync-ml-production.json"
+      ],
+      "acceptance": [
+        "Read first-party paper and inspect key workflow/output diagrams",
+        "Distinguish generated, editable and playback representations",
+        "Independent full reader and source review",
+        "No unsupported model, generalization or efficiency claims",
+        "Verify actual shelf and cross-disciplinary routes"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T14:15:47Z",
+      "next_action": "Maintain output representation and source scope; actual model or target-rig capability requires separately scoped evidence.",
+      "blockers": [],
+      "verification_method": "First-party 2024 production case on generated animation representations, editable rig controls and pose-weight playback dependencies; no model, audio, game or training execution.",
+      "publication_scope": "Reader and public records are published together in the containing commit."
     }
   ],
   "execution_policy": {

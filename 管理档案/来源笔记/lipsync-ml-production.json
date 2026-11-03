@@ -1,0 +1,30 @@
+{
+  "title": "Lip-Sync ML: Machine Learning-based Framework to Generate Lip-sync Animations in FINAL FANTASY VII REBIRTH",
+  "authors": [
+    "Masato Nakada",
+    "Leandro Graciá Gil",
+    "Akira Iwasawa",
+    "Ryo Hara"
+  ],
+  "publisher": "Square Enix / SIGGRAPH Talks 2024",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.jp.square-enix.com/tech/library/pdf/LipSyncML_SIGGRAPH_Talks_2024_abst.pdf",
+      "scope": "Two-page author version fully read; sections3–5 central; no redistribution."
+    },
+    {
+      "url": "https://www.jp.square-enix.com/tech/library/pdf/LipSyncML_SIGGRAPH_Talks_2024_slides.pdf",
+      "scope": "Main editor read all39 pages extracted text, inspected printed10/33/34 diagrams. Independent reviewer read specified9–13,18–20,30–35 text and same3 diagrams; no audiovisual playback."
+    }
+  ],
+  "reader": "GameLibrary/角色动画/动画制作/口型与表情/FFVII REBIRTH如何把自动口型交给动画师和引擎.md",
+  "review": "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
+  "verification": "First-party 2024 production case on generated animation representations, editable rig controls and pose-weight playback dependencies; no model, audio, game or training execution.",
+  "limits": [
+    "No private training data or full conversion implementation",
+    "No cross-title causal efficiency estimate",
+    "No real-time zero-lookahead or universal-language claim",
+    "Original source PDFs/images not redistributed"
+  ]
+}
