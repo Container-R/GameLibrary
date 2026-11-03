@@ -2057,7 +2057,10 @@
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
         "管理档案/来源笔记/d3d12-pipeline-cache-compatibility.json",
-        "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md"
+        "管理档案/审查/D3D12管线缓存兼容-来源与读者审查.md",
+        "管理档案/支持资料/无数据的调用为什么仍要走到组内屏障.md",
+        "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
+        "管理档案/来源笔记/compute-tail-barrier.json"
       ],
       "acceptance": [
         "Directly read Ubisoft Montreal, Capcom Japanese and Techland primary role descriptions",
@@ -2066,7 +2069,7 @@
         "Independent source review; no runtime, gain claims, universal aliases or completed occupation matrix"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T19:07:35Z",
+      "last_progress_at": "2026-11-03T10:16:06Z",
       "next_action": "Use bounded feature handoff as an unexecuted proposal; continue role coverage without claiming full matrix completion",
       "blockers": [],
       "completed_at": "2026-10-31T21:44:22.341807Z",
@@ -2086,7 +2089,13 @@
           "scope": "Fixed historical directory; no invented file SHA256"
         }
       ],
-      "latest_reader_maintenance": "Optional D3D12 persisted-cache compatibility and reconstruction-input support; original role and UE first-use scope retained, no GPU execution."
+      "latest_reader_maintenance": "Optional D3D12 persisted-cache compatibility and reconstruction-input support; original role and UE first-use scope retained, no GPU execution.",
+      "compute_tail_support": {
+        "support": "管理档案/支持资料/无数据的调用为什么仍要走到组内屏障.md",
+        "review": "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
+        "source": "管理档案/来源笔记/compute-tail-barrier.json",
+        "scope": "Official specification reading and independently reviewed original ten-integer workgroup walkthrough; no shader compilation or GPU execution."
+      }
     },
     {
       "id": "TASK-2026-0060",

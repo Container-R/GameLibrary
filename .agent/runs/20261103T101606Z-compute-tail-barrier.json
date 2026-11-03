@@ -1,0 +1,25 @@
+{
+  "id": "20261103T101606Z-compute-tail-barrier",
+  "task_ids": [
+    "TASK-2026-0059"
+  ],
+  "recorded_at": "2026-11-03T10:16:06Z",
+  "baseline_sha": "eb49e1e3fac88b54ad79a20bc67bc605fb41b4e3",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "artifacts": [
+    "管理档案/支持资料/无数据的调用为什么仍要走到组内屏障.md",
+    "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
+    "管理档案/来源笔记/compute-tail-barrier.json"
+  ],
+  "verification": "Official specification reading and independently reviewed original ten-integer workgroup walkthrough; no shader compilation or GPU execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
