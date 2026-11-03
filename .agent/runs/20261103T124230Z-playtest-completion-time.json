@@ -1,0 +1,24 @@
+{
+  "id": "20261103T124230Z-playtest-completion-time",
+  "task_ids": [
+    "TASK-2026-0026"
+  ],
+  "recorded_at": "2026-11-03T12:42:30Z",
+  "baseline_sha": "0c3fac565133ed1a5c3c93e9da1b4dfbdf5396fd",
+  "outcome": "accepted-source-and-reader-addition",
+  "reader": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
+  "artifacts": [
+    "管理档案/审查/试玩完成者耗时-来源与读者审查.md",
+    "管理档案/来源笔记/playtest-completion-time.json"
+  ],
+  "verification": "Independent original-source reading and synthetic paper arithmetic; no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}
