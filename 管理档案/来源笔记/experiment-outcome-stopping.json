@@ -1,0 +1,44 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+  "support": "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+  "review": "管理档案/审查/实验显著即停-来源与读者审查.md",
+  "sources": [
+    {
+      "authors": [
+        "Ramesh Johari",
+        "Leo Pekelis",
+        "David Walsh"
+      ],
+      "title": "Always Valid Inference: Continuous Monitoring of A/B Tests",
+      "url": "https://arxiv.org/html/1512.04922v3",
+      "version": "arXiv:1512.04922v3, 2019-07-16",
+      "metadata_title_difference": "Abstract metadata retains Bringing Sequential Analysis to A/B Testing; citation follows fixed manuscript title. Not merged with conference or journal author/version metadata.",
+      "read_scope": "Main: complete introduction and sections3–4 HTML, selected6–7; independent source reviewer checked corresponding PDF sections and separately identified conference version. Not whole-paper or algorithm replication.",
+      "locators": "Fixed-horizon validity; HTML Definition4.1; two-stream and multiple-testing scope. PDF definition numbering differs."
+    },
+    {
+      "authors": [
+        "Widad Machmouchi",
+        "Somit Gupta",
+        "Ruhan Zhang"
+      ],
+      "organization": "Microsoft Experimentation Platform",
+      "title": "Patterns of Trustworthy Experimentation: During-Experiment Stage",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-during-experiment-stage/",
+      "date": "2021-01-25",
+      "read_scope": "Article text read; selected use of Measure Early and Often, Monitor Metrics to Intervene when Needed, Auto-Shutdown Egregious A/B Tests. No image review or historical numeric recommendation adopted."
+    }
+  ],
+  "verification": "Source-backed finite explanation plus original exact fair-binomial two-look calculation independently checked by algebra and exhaustive enumeration; no player observations or sequential-testing implementation.",
+  "calculation": {
+    "total_equal_probability_sequences": 1048576,
+    "early_rejections": 22528,
+    "fixed_final_rejections": 43400,
+    "intersection": 8996,
+    "union": 56932,
+    "null": "20 iid Bernoulli(1/2) bits, looks10/20, symmetric exact two-sided p<=1/20",
+    "scope": "One-sample teaching construction, not two-arm game A/B estimator or universal inflation factor"
+  },
+  "support_sha256": "ff451d556acd4ef64946508cb24cddad7e087ad5bfa0c2aae1bbe871bd14a49f"
+}

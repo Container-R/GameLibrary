@@ -1,0 +1,43 @@
+{
+  "run_id": "20261103T185056Z-experiment-stopping",
+  "base_sha": "8b1beab8a7eac86a2fd37309b9b7ea591db28ba8",
+  "task_ids": [
+    "TASK-2026-0229"
+  ],
+  "outcome": "Reader support and progress published together in containing commit; verify ref and exact readback after update.",
+  "scope": "Existing data analyst reader gains finite stopping-rule explanation and exact original arithmetic; no new book or player study.",
+  "reader_books_total": 91,
+  "post_baseline_research_books": 36,
+  "frozen_baseline_books": 55,
+  "task_count": 229,
+  "artifact_paths": [
+    "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+    "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+    "管理档案/来源笔记/experiment-outcome-stopping.json",
+    "管理档案/审查/实验显著即停-来源与读者审查.md",
+    ".agent/audits/20261103T185000Z-reader.md"
+  ],
+  "checks": {
+    "independent_exact_arithmetic": "algebra and exhaustive enumeration agree",
+    "final_reader_and_navigation": "Complete host/support and navigation pages independently read; seven actual route edges accepted",
+    "new_native_runs": 0,
+    "real_player_observations": 0
+  },
+  "previous_content_readback": {
+    "sha": "8b1beab8a7eac86a2fd37309b9b7ea591db28ba8",
+    "changed_files_exact": 13,
+    "actual_remote_edges": 17,
+    "canonical_blobs_matched": 1769
+  },
+  "deduplication": "GLSL non-uniform derivative candidate closed NO-CHANGE because current texture wrapping support already explains the core issue.",
+  "metadata_corrections": {
+    "scope": "Two stale top-level reader hash aliases synchronized to unchanged current bodies; TASK-0028 retired navigation explicitly pinned to verified original publication history.",
+    "reader_ids": [
+      "SOL-ENGINE-006",
+      "SOL-ART2D-001"
+    ],
+    "historical_task": "TASK-2026-0028",
+    "historical_commit": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+    "body_changes_for_corrections": 0
+  }
+}

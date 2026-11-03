@@ -156,7 +156,7 @@
       "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "9cc62846c8d8c264c7e7de9f54af1ac25d3cd784e9ab43b4ca8a000c74756da0",
+      "reader_sha256": "31494b5370c0259e5738e55ebfd1cef192c00311b0ff4cb63bf55554e7ad4f78",
       "steam_traffic_support": {
         "scope": "Existing two-report set and classification analysis rewritten for readers; no actual account results.",
         "support_path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
@@ -178,6 +178,12 @@
         "source_record": "管理档案/来源笔记/eve-fixed-item-valuation.json",
         "review": "管理档案/审查/固定物品估值-来源与读者审查.md",
         "scope": "Historical reporting-method example and original arithmetic; no economic data analysis or player result."
+      },
+      "stopping_rule_support": {
+        "path": "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+        "source_record": "管理档案/来源笔记/experiment-outcome-stopping.json",
+        "review": "管理档案/审查/实验显著即停-来源与读者审查.md",
+        "scope": "One optional support, source interpretation and exact finite arithmetic; no player experiment or general sequential-method implementation."
       }
     },
     {
@@ -843,7 +849,7 @@
         "reader_review": "管理档案/审查/透明裁剪mip覆盖率-来源与读者审查.md",
         "reader_sha256": "e0ab9729d3b28d86ecfaef69b364b28f08268247ff9f94874f2002623c0a949d"
       },
-      "reader_body_sha256": "691026ad8296121335ca8f5c874b68124b01f419ae2f14c49c2d9243133f5395",
+      "reader_body_sha256": "47f99745ce3470985a5930dc0c246b5cfa4a03e1123c65add9428110da6b878b",
       "latest_review_path": "管理档案/审查/颜色误差与字节量化-读者审查.md",
       "source_record": "管理档案/来源笔记/alpha-test-mip-coverage.json",
       "precision_quantization_entry": {
@@ -2251,7 +2257,7 @@
       "review_paths": [
         "管理档案/审查/实体句柄保存与映射-来源和读者审查.md"
       ],
-      "reader_sha256": "914dd362e1b5c545cc9e67a6d0fd6ccd9a5ad30b0953ab91ee38ee1024455305",
+      "reader_sha256": "45f61d0708bbe49825aef467ec44a27ab4af9efdb59e63b4ee5003956979544d",
       "latest_increment": {
         "scope": "Two separate finite observations: mapping presence versus validity, and plain component field preservation versus owner mapping.",
         "reader_sha256": "45f61d0708bbe49825aef467ec44a27ab4af9efdb59e63b4ee5003956979544d",
@@ -2775,7 +2781,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "76b5ff73dda145a750076afc61389b5db554489b",
+  "publication_base_sha": "8b1beab8a7eac86a2fd37309b9b7ea591db28ba8",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,

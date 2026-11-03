@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T18:34:36Z",
+      "last_progress_at": "2026-11-03T18:50:56Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -980,7 +980,17 @@
       "next_action": "Maintain source versions and scoped evidence; no unmeasured user outcomes",
       "blockers": [],
       "completed_at": "2026-10-31T16:25:34.959720Z",
-      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8"
+      "commit_sha": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+      "artifact_availability": "git_history_only",
+      "historical_artifacts": [
+        {
+          "path": "DISCOVERY.md",
+          "commit": "e64942f772771fc4eedcbc79509264ebf34eddd8",
+          "url": "https://github.com/Container-R/GameLibrary/blob/e64942f772771fc4eedcbc79509264ebf34eddd8/DISCOVERY.md"
+        }
+      ],
+      "current_navigation": "GameLibrary/README.md",
+      "scope_note": "The original navigation output is preserved at its publication commit; retired from current root during reader-first reorganization. Current guide is a later maintained entry, not the original task artifact."
     },
     {
       "id": "TASK-2026-0029",
@@ -8158,6 +8168,34 @@
       "blockers": [],
       "verification_method": "Fixed W3C source interpretation; one browser-launch failure, zero executed cases.",
       "publication_scope": "Support, entry link, source, review and progress published in containing commit."
+    },
+    {
+      "id": "TASK-2026-0229",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "累计实验结果首次显著时停止，为什么不能沿用固定终点的误报保证？",
+      "discipline": "DATA",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Concrete outcome-dependent stopping gap, distinct from population accounting and existing QA selection caution.",
+      "expected_artifact": "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+      "artifact_paths": [
+        "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+        "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+        "管理档案/来源笔记/experiment-outcome-stopping.json",
+        "管理档案/审查/实验显著即停-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Deduplicate current analytics readers",
+        "Read fixed original definitions and first-party monitoring guidance",
+        "Independently check exact dependent two-look arithmetic",
+        "Reader-first integration with source and scope boundaries"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T18:50:56Z",
+      "next_action": "Keep single-sample illustration separate from actual A/B inference and preserve monitoring versus outcome decisions.",
+      "blockers": [],
+      "verification_method": "Source interpretation and exact finite arithmetic, not simulated or observed player results.",
+      "publication_scope": "Support, entry, sources, review and progress in containing commit."
     }
   ],
   "execution_policy": {
