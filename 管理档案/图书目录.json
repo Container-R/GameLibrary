@@ -2187,14 +2187,23 @@
       "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
       "current_read_path": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
       "reader_body_status": "published",
-      "editorial_status": "独立全文与固定原源审读接受；未执行Lua或宿主资源",
+      "editorial_status": "主体来源解释及未执行宿主示意保留；增补三分支纯Lua观察与独立同宿主复核，编译诊断单独审读",
       "origin": "source-grounded-lua-coroutine-scope-and-explicit-closing",
       "scope_note": "Lua5.4有限生命周期解释与原创未执行场景；不是生产调度器、线程或外部资源关闭认证",
       "review_paths": [
-        "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md"
+        "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md",
+        "管理档案/审查/Lua协程关闭-原生观察与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/lua-coroutine-close.json",
-      "reader_sha256": "79a193b854d88c08be749d442acd9028ccb8e4aa917d453645f794e1e117034b"
+      "reader_sha256": "0ad2060383c0a27d87c2965fce4e910df9548275db7ba9a0b349b22493119c61",
+      "native_close_support": {
+        "path": "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
+        "sha256": "04e567e042cd1e3a5d22b9456f13dfe789c172f8298f005fb29ee5ecf5363b88",
+        "experiment": "管理档案/支持资料/Lua协程关闭观察/README.md",
+        "source_record": "管理档案/来源笔记/lua-close-native.json",
+        "review": "管理档案/审查/Lua协程关闭-原生观察与读者审查.md",
+        "scope": "One main and one independent operator execution, same host and fixed release inputs; second operator knew first result. Three pure Lua table/event branches per run, seven recorded stages. Not blind or cross-platform."
+      }
     },
     {
       "internal_id": "SOL-DESIGN-002",

@@ -1,0 +1,44 @@
+{
+  "project": "Lua",
+  "release": "5.4.8",
+  "release_date": "2025-05-21",
+  "source_url": "https://www.lua.org/ftp/lua-5.4.8.tar.gz",
+  "official_checksums": "https://www.lua.org/ftp/",
+  "archive_bytes": 374332,
+  "archive_sha256": "4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae",
+  "retrieved_and_verified_on": "2026-11-03",
+  "license": {
+    "name": "MIT",
+    "copyright": "Copyright (C) 1994-2025 Lua.org, PUC-Rio",
+    "fixed_notice": "lua-5.4.8/src/lua.h copyright block",
+    "official_page": "https://www.lua.org/license.html",
+    "requirement": "Keep copyright and permission notices with copies or substantial portions; software supplied without warranty."
+  },
+  "archive_distribution": "Not included; obtain official archive and place in fixture/lua-5.4.8.tar.gz before reproducing.",
+  "fixed_repository_comparison": {
+    "repository": "https://github.com/lua/lua",
+    "commit": "6e22fedb74cf0c9b6656e9fce8b7331db847c605",
+    "byte_identical_files": {
+      "lcorolib.c": "5408ccec737678d045d421f84a56e1ce03192a42c55440ffef07bec356aaec89",
+      "lfunc.c": "38809428b76fafa79db9f65b7248cc0c02c9b696e7410fc4ab1699940768f1b2",
+      "lstate.c": "5b2003a6bd7c8d98af10f4851ced899581130d5ba9db831cedcc7ac53314e806",
+      "ldo.c": "ff588c58143d3dd75157004a5a785044beb9a6746378ccc6e46d4b3a303657c2"
+    },
+    "scope": "Only these four files were compared; no claim of whole-tree or whole-archive equivalence."
+  },
+  "observation_scope": "Three original Lua table/event branches; no host game resource release verification.",
+  "observations": {
+    "date": "2026-11-03",
+    "runs": 2,
+    "cases_per_run": 3,
+    "recorded_stages_per_run": 7,
+    "scope": "Same host, different operators, fresh directories and independent builds; second operator knew first result. Not blind, cross-platform or different algorithm.",
+    "outputs_byte_identical": true,
+    "output_sha256": "60044656693589b171bde180a0eff17f3de0f77260ff59f2154ef41c4d98c436",
+    "receipts_byte_identical": true,
+    "receipt_sha256": "0ee30a38b39e6bdd7eb2fd4e4765f67999f163807ff56032ae6d1c094ccb1fbb",
+    "compiler_diagnostics": "tmpnam safety warning; independently reviewed for this non-calling fixture only. No warning suppression or rerun.",
+    "diagnostic_review": "DIAGNOSTIC-REVIEW.md",
+    "receipt_history": "Original review-required flags retained; later diagnostic review closes the review separately."
+  }
+}

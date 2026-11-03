@@ -1,0 +1,23 @@
+{
+  "title": "Lua 5.4.8 coroutine closure finite native observations",
+  "accessed_date": "2026-11-03",
+  "source_identity": "管理档案/支持资料/Lua协程关闭观察/SOURCE.json",
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
+  "support_path": "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
+  "experiment_readme": "管理档案/支持资料/Lua协程关闭观察/README.md",
+  "manifest_sha256": "abca9985262bfe5198b453ac737260f969ccdabdfed6fbff68f1f337fce47f75",
+  "verification": "One main and one independent operator execution, same host and fixed release inputs; second operator knew first result. Three pure Lua table/event branches per run, seven recorded stages. Not blind or cross-platform.",
+  "source_read_scope": "Release manual close/resume and to-be-closed variables; lcorolib close/status/resume, lstate reset/close, lfunc close method, ldo resume/protected close, lbaselib error, loslib tmpnam branch. Four implementation files independently compared bytewise with existing fixed Git source, not whole tree.",
+  "excluded": [
+    "Game or host resource release",
+    "GC or wrap runtime behavior",
+    "Close method throwing a second error",
+    "Threads, reentry, production scheduler",
+    "Temporary-file API security",
+    "Timeout fault testing"
+  ],
+  "original_evidence": "2026-11-02 reader/source review remains source-only. Original acquire_scene_resource host example remains unexecuted. New pure-Lua observations are separately attached.",
+  "compiler_diagnostics": "Nonempty tmpnam safety warning retained in both original receipts; separately reviewed for fixture that never calls that API, not suppressed or rerun. Raw environment-specific logs not distributed.",
+  "reader_sha256": "0ad2060383c0a27d87c2965fce4e910df9548275db7ba9a0b349b22493119c61",
+  "support_sha256": "04e567e042cd1e3a5d22b9456f13dfe789c172f8298f005fb29ee5ecf5363b88"
+}

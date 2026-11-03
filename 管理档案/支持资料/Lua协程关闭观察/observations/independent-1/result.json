@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "stage": "complete",
+  "manifest_sha256": "abca9985262bfe5198b453ac737260f969ccdabdfed6fbff68f1f337fce47f75",
+  "inputs_sha256": {
+    "lua-5.4.8.tar.gz": "4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae",
+    "case.lua": "a8a1fdb205b9396a308812359264f3be5b94c9a8a21e191d549ffabc98a47314",
+    "PROTOCOL.md": "3d65d71eb056d90686bca16e520741fc497fcce0953df54193fd743d125afc8f",
+    "runner.py": "2a4eb74735b87ff51572e5381ba050acfdc452e64f26132277507fbc0196d3e2"
+  },
+  "copied_inputs_verified": true,
+  "environment_prepared": true,
+  "compile_returncode": 0,
+  "run_returncode": 0,
+  "compile_options": [
+    "-std=c99",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-DLUA_COMPAT_5_3",
+    "-lm"
+  ],
+  "scope": "Three original table/event coroutine cases only; no game or host resource execution",
+  "source_members_verified": true,
+  "compile_stdout_empty": true,
+  "compile_stderr_empty": false,
+  "compile_diagnostics_require_review": true,
+  "run_stdout_empty": false,
+  "run_stderr_empty": true,
+  "output_sha256": "60044656693589b171bde180a0eff17f3de0f77260ff59f2154ef41c4d98c436",
+  "output_lines": 7,
+  "publication_review_required": true
+}

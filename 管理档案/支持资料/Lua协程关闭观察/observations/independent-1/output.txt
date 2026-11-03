@@ -1,0 +1,7 @@
+normal|yield|n=2|ok=true|value=waiting|state=suspended|closes=0|events=enter
+normal|finish|n=2|ok=true|value=done|state=dead|closes=1|close_error_nil=true|events=enter,after-yield,close
+close|yield|n=2|ok=true|value=waiting|state=suspended|closes=0|events=enter
+close|finish|n=1|ok=true|state=dead|closes=1|close_error_nil=true|events=enter,close
+error|yield|n=2|ok=true|value=waiting|state=suspended|closes=0|events=enter
+error|resume-error|n=2|ok=false|error_identity=true|state=dead|closes=0|events=enter,before-error
+error|finish|n=2|ok=false|error_identity=true|state=dead|closes=1|close_error_identity=true|events=enter,before-error,close

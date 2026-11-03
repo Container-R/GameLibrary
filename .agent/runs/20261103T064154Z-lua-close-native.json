@@ -1,0 +1,55 @@
+{
+  "id": "20261103T064154Z-lua-close-native",
+  "task_ids": [
+    "TASK-2026-0207"
+  ],
+  "recorded_at": "2026-11-03T06:41:54Z",
+  "baseline_sha": "eb8c20726c7d3f16d46bb957bcce746ab814218b",
+  "outcome": "accepted-native-and-reader-increment",
+  "changed_reader": "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
+  "artifacts": [
+    "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
+    "管理档案/审查/Lua协程关闭-原生观察与读者审查.md",
+    "管理档案/来源笔记/lua-close-native.json",
+    "管理档案/支持资料/Lua协程关闭观察/DIAGNOSTIC-REVIEW.md",
+    "管理档案/支持资料/Lua协程关闭观察/SOURCE.json",
+    "管理档案/支持资料/Lua协程关闭观察/README.md",
+    "管理档案/支持资料/Lua协程关闭观察/fixture/case.lua",
+    "管理档案/支持资料/Lua协程关闭观察/fixture/manifest.json",
+    "管理档案/支持资料/Lua协程关闭观察/fixture/PROTOCOL.md",
+    "管理档案/支持资料/Lua协程关闭观察/fixture/runner.py",
+    "管理档案/支持资料/Lua协程关闭观察/observations/independent-1/result.json",
+    "管理档案/支持资料/Lua协程关闭观察/observations/independent-1/output.txt",
+    "管理档案/支持资料/Lua协程关闭观察/observations/main-1/result.json",
+    "管理档案/支持资料/Lua协程关闭观察/observations/main-1/output.txt"
+  ],
+  "verification": "One main and one independent operator execution, same host and fixed release inputs; second operator knew first result. Three pure Lua table/event branches per run, seven recorded stages. Not blind or cross-platform.",
+  "observations": {
+    "runs": 2,
+    "branches_per_run": 3,
+    "recorded_stages_per_run": 7,
+    "outputs_byte_identical": true,
+    "receipt_bytes_identical": true,
+    "native_failed_attempts": 0,
+    "output_sha256": "60044656693589b171bde180a0eff17f3de0f77260ff59f2154ef41c4d98c436"
+  },
+  "limits": [
+    "Game or host resource release",
+    "GC or wrap runtime behavior",
+    "Close method throwing a second error",
+    "Threads, reentry, production scheduler",
+    "Temporary-file API security",
+    "Timeout fault testing"
+  ],
+  "diagnostic_review": "Nonempty tmpnam safety warning retained in both original receipts; separately reviewed for fixture that never calls that API, not suppressed or rerun. Raw environment-specific logs not distributed.",
+  "preexecution_decision": "Before any native execution, generic options retained and compiler diagnostics separated from runtime oracle; no platform-switch or post-result oracle change.",
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true,
+  "navigation_updated": "GameLibrary/引擎与工具/运行时系统/异步资源/README.md",
+  "prepublication_correction": "Shelf still described interpreter as unexecuted; updated to separate pure Lua observations from untested game/host resources before publication."
+}

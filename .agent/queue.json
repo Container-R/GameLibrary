@@ -7263,20 +7263,39 @@
       "artifact_paths": [
         "GameLibrary/引擎与工具/运行时系统/异步资源/Lua 5.4 协程暂停后，资源为什么还没有关闭.md",
         "管理档案/来源笔记/lua-coroutine-close.json",
-        "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md"
+        "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md",
+        "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
+        "管理档案/审查/Lua协程关闭-原生观察与读者审查.md",
+        "管理档案/来源笔记/lua-close-native.json",
+        "管理档案/支持资料/Lua协程关闭观察/DIAGNOSTIC-REVIEW.md",
+        "管理档案/支持资料/Lua协程关闭观察/SOURCE.json",
+        "管理档案/支持资料/Lua协程关闭观察/README.md",
+        "管理档案/支持资料/Lua协程关闭观察/fixture/case.lua",
+        "管理档案/支持资料/Lua协程关闭观察/fixture/manifest.json",
+        "管理档案/支持资料/Lua协程关闭观察/fixture/PROTOCOL.md",
+        "管理档案/支持资料/Lua协程关闭观察/fixture/runner.py",
+        "管理档案/支持资料/Lua协程关闭观察/observations/independent-1/result.json",
+        "管理档案/支持资料/Lua协程关闭观察/observations/independent-1/output.txt",
+        "管理档案/支持资料/Lua协程关闭观察/observations/main-1/result.json",
+        "管理档案/支持资料/Lua协程关闭观察/observations/main-1/output.txt"
       ],
       "acceptance": [
         "Read adjacent current readers to exclude duplicate mechanism",
         "Separate rolling manual from fixed Lua 5.4.8 source",
         "Explain suspension, error termination, close result and host responsibility",
         "Independent complete reader and key-source review",
-        "Do not claim Lua or game-resource execution"
+        "Preserve unexecuted host scenario; distinguish separately observed pure-Lua cases from real resource release"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T15:20:43Z",
+      "last_progress_at": "2026-11-03T06:41:54Z",
       "next_action": "For an actual integration, verify host close methods, wakeup ownership and dependency lifetime using the declared runtime; no production scheduler or execution guarantee is supplied.",
       "blockers": [],
-      "verification_method": "Primary manual and fixed source reading, original unexecuted Lua scenario, independent full reader/source review."
+      "verification_method": "Original manual/fixed source reading and unexecuted host scenario retained; added two fixed Lua 5.4.8 pure-table executions by main and independent same-host operator, with frozen pre-execution, diagnostic and reader reviews.",
+      "latest_native_observation": {
+        "support_path": "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
+        "experiment_readme": "管理档案/支持资料/Lua协程关闭观察/README.md",
+        "scope": "One main and one independent operator execution, same host and fixed release inputs; second operator knew first result. Three pure Lua table/event branches per run, seven recorded stages. Not blind or cross-platform."
+      }
     },
     {
       "id": "TASK-2026-0208",
