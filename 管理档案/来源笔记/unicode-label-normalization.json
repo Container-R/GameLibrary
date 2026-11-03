@@ -1,0 +1,45 @@
+{
+  "title": "Canonical-equivalent display labels versus stable save identity",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "Unicode Consortium",
+      "title": "Unicode Normalization Forms",
+      "version": "Unicode 16.0.0 / UAX #15 revision 56 / 2024-08-14",
+      "url": "https://www.unicode.org/reports/tr15/tr15-56.html",
+      "scope": "Header/status, sections 1.1–1.4, section 3 stability and section 4 conformance; no full core algorithm audit or image inspection"
+    },
+    {
+      "publisher": "Unicode Consortium",
+      "title": "UnicodeData 16.0.0",
+      "url": "https://www.unicode.org/Public/16.0.0/ucd/UnicodeData.txt",
+      "scope": "00E9, 0301, 2460 records; not full database validation"
+    },
+    {
+      "publisher": "W3C Internationalization Working Group",
+      "title": "Character Model for the World Wide Web: String Matching",
+      "version": "2019-02-04 Working Group Note",
+      "url": "https://www.w3.org/TR/2019/NOTE-charmod-norm-20190204/",
+      "scope": "Document status, selected passages in section 2.2 and complete section 2.3 on normalization and visual-similarity limits; not whole-document reading or blanket application policy"
+    },
+    {
+      "publisher": "Unicode Consortium",
+      "title": "NormalizationTest 16.0.0",
+      "version": "2024-04-30",
+      "url": "https://www.unicode.org/Public/16.0.0/ucd/NormalizationTest.txt",
+      "scope": "Header column definitions and NFC/NFKC invariants, 00E9 and 2460 rows; reading expected data, not test execution"
+    }
+  ],
+  "reader": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "support": "管理档案/支持资料/名称看起来相同，为什么仍然查不到存档.md",
+  "review": "管理档案/审查/显示名规范化-来源与读者审查.md",
+  "verification": "Fixed standard and data-record reading plus independently reviewed original full-label matching policy; no normalizer, IME, database or save execution.",
+  "limits": [
+    "Normalization policy explicitly selected for a fictional display-label filter, not all game fields",
+    "Both sides use same matching policy; stable IDs retained despite equal labels",
+    "Normalized chunks may concatenate to a non-normalized whole",
+    "NFC does not fold all compatibility, case or visually similar characters",
+    "No raw input-method preedit rewrite, cursor mapping or existing protocol change",
+    "No real player data or migrated saves"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "20261103T100328Z-unicode-label-normalization",
+  "task_ids": [
+    "TASK-2026-0202"
+  ],
+  "recorded_at": "2026-11-03T10:03:28Z",
+  "baseline_sha": "793aac7f744822842e799b019a055bf512cde540",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "artifacts": [
+    "管理档案/支持资料/名称看起来相同，为什么仍然查不到存档.md",
+    "管理档案/审查/显示名规范化-来源与读者审查.md",
+    "管理档案/来源笔记/unicode-label-normalization.json"
+  ],
+  "verification": "Fixed standard and data-record reading plus independently reviewed original full-label matching policy; no normalizer, IME, database or save execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
