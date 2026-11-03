@@ -1,0 +1,30 @@
+{
+  "read_on": "2026-11-03",
+  "source_commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+  "version": "Zstandard v1.5.7",
+  "source_identity_record": "管理档案/支持资料/Zstandard流式输出预算/vendor/source-origin.json",
+  "parent_reader": "GameLibrary/引擎与工具/构建发布/内容更新/Zstandard旧资源包为什么还需要配套的压缩字典.md",
+  "budget_support": "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
+  "observation_reader": "管理档案/支持资料/Zstandard流式输出预算/README.md",
+  "observation_reader_sha256": "74ec6a519d0c3d75d2d456a362135811099635f39791db74b4415eb6815c91f0",
+  "manifest": "管理档案/支持资料/Zstandard流式输出预算/manifest.json",
+  "manifest_sha256": "55e002e2dda54714d211cde3daf50a8e69feae3c8e3c2aab2d68d6043b78dbc0",
+  "protocol_sha256": "bcef7932b40fb45c04ffddd7aeaa2f561c96c111c3662e45b756a40a85154d45",
+  "verification": "Two different agents independently compiled and ran the same three finite configurations on the same host in fresh directories; source and full-reader review.",
+  "results": [
+    {
+      "path": "管理档案/支持资料/Zstandard流式输出预算/results/main-1/result.json",
+      "sha256": "cffd77c6c4577fbaec99cf7e5c9f9b80a6ea140073efbdeba366d0dd97b464ef",
+      "output": "管理档案/支持资料/Zstandard流式输出预算/results/main-1/output.txt",
+      "output_sha256": "f15d11d0ce33fd35a6aeb62f6ab384fa98f17aaf925a9240637dd161ffb09018"
+    },
+    {
+      "path": "管理档案/支持资料/Zstandard流式输出预算/results/independent-1/result.json",
+      "sha256": "cffd77c6c4577fbaec99cf7e5c9f9b80a6ea140073efbdeba366d0dd97b464ef",
+      "output": "管理档案/支持资料/Zstandard流式输出预算/results/independent-1/output.txt",
+      "output_sha256": "f15d11d0ce33fd35a6aeb62f6ab384fa98f17aaf925a9240637dd161ffb09018"
+    }
+  ],
+  "limits": "Tiny raw-block frame and one controlled truncation only; no dictionary, entropy-compressed blocks, multiple frames, performance, memory or arbitrary-input guarantees.",
+  "review": "管理档案/审查/Zstandard有限流式预算-原生与读者审查.md"
+}

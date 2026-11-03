@@ -1,0 +1,17 @@
+case=R32 call=1 in_before=0 in_after=40 produced=8 accepted=8 return=pending
+case=R32 call=2 in_before=40 in_after=40 produced=8 accepted=16 return=pending
+case=R32 call=3 in_before=40 in_after=40 produced=8 accepted=24 return=pending
+case=R32 call=4 in_before=40 in_after=41 produced=8 accepted=32 return=frame_end
+case=R32 final=accepted frame_complete=1 asset_accepted=1 produced_total=32 accepted_total=32 input_consumed=41 input_size=41
+case=R33 call=1 in_before=0 in_after=41 produced=8 accepted=8 return=pending
+case=R33 call=2 in_before=41 in_after=41 produced=8 accepted=16 return=pending
+case=R33 call=3 in_before=41 in_after=41 produced=8 accepted=24 return=pending
+case=R33 call=4 in_before=41 in_after=41 produced=8 accepted=32 return=pending
+case=R33 call=5 in_before=41 in_after=42 produced=1 accepted=32 return=frame_end
+case=R33 final=budget_rejected frame_complete=1 asset_accepted=0 produced_total=33 accepted_total=32 input_consumed=42 input_size=42
+case=R32_truncated call=1 in_before=0 in_after=40 produced=8 accepted=8 return=pending
+case=R32_truncated call=2 in_before=40 in_after=40 produced=8 accepted=16 return=pending
+case=R32_truncated call=3 in_before=40 in_after=40 produced=8 accepted=24 return=pending
+case=R32_truncated call=4 in_before=40 in_after=40 produced=7 accepted=31 return=pending
+case=R32_truncated final=incomplete frame_complete=0 asset_accepted=0 produced_total=31 accepted_total=31 input_consumed=40 input_size=40
+PASS three bounded cases

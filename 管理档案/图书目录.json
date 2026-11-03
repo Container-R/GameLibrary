@@ -2201,8 +2201,15 @@
         "support_path": "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
         "source_record": "管理档案/来源笔记/zstd-decompression-budget.json",
         "review": "管理档案/审查/Zstandard解压预算-来源与读者审查.md",
-        "support_sha256": "dea1df86c5829a0a55c8e0bd0eafe6e766ff46242ef5d487a87172014ed8b113",
-        "scope": "One optional adjacent output-budget explanation; original dictionary source and review identities retain their scope."
+        "support_sha256": "7c5a85197d1299271bbcc1fd00b34bf294a83c83934fa6ebf3b64e46887b0874",
+        "scope": "One optional adjacent output-budget explanation; original dictionary source and review identities retain their scope.",
+        "native_observation": {
+          "path": "管理档案/支持资料/Zstandard流式输出预算/README.md",
+          "sha256": "74ec6a519d0c3d75d2d456a362135811099635f39791db74b4415eb6815c91f0",
+          "source_record": "管理档案/来源笔记/zstd-stream-native.json",
+          "review": "管理档案/审查/Zstandard有限流式预算-原生与读者审查.md",
+          "scope": "Three tiny raw-block inputs, two same-host different-agent compilations; not a dictionary experiment."
+        }
       }
     },
     {
@@ -2232,7 +2239,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "05baffc744bf0ca7f39a7d625ec5fc8a6e148abf",
+  "publication_base_sha": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,

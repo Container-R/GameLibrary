@@ -1,0 +1,23 @@
+{
+  "run_id": "20261103T012324Z-zstd-stream-native",
+  "observed_at": "2026-11-03T01:23:24Z",
+  "parent_verified_head": "2936c37ea87423f9b17704ba2d7e647238b4dc1c",
+  "task": "TASK-2026-0209",
+  "reader_path": "GameLibrary/引擎与工具/构建发布/内容更新/Zstandard旧资源包为什么还需要配套的压缩字典.md",
+  "reader_sha256": "049c7626f339ef97ce7c8cf1e3891a8fc01ad0c01ed3c370206dbd41b67ca482",
+  "budget_support": "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
+  "budget_support_sha256": "7c5a85197d1299271bbcc1fd00b34bf294a83c83934fa6ebf3b64e46887b0874",
+  "native_observation": "管理档案/支持资料/Zstandard流式输出预算/README.md",
+  "observation_sha256": "74ec6a519d0c3d75d2d456a362135811099635f39791db74b4415eb6815c91f0",
+  "source_note": "管理档案/来源笔记/zstd-stream-native.json",
+  "review": "管理档案/审查/Zstandard有限流式预算-原生与读者审查.md",
+  "outcome": "32-byte frame accepted,33-byte frame completed but budget-rejected,31-byte prefix from truncated block not accepted; both independent executions agree.",
+  "execution_scope": "Two different agents, same host, fresh compilation each, same three tiny raw-block inputs. No dictionary or compressed-block, performance or memory guarantee.",
+  "manifest_sha256": "55e002e2dda54714d211cde3daf50a8e69feae3c8e3c2aab2d68d6043b78dbc0",
+  "reader_inventory": {
+    "current": 83,
+    "frozen": 55,
+    "post_baseline": 28
+  },
+  "publication": "Observation and public records belong to same containing commit; parent_verified_head is preceding verified revision."
+}

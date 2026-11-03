@@ -1,0 +1,252 @@
+{
+  "repository": "https://github.com/facebook/zstd",
+  "commit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+  "status": "SOURCE_DERIVATIVE_TEXT_GENERATED_NOT_NATIVE_EXECUTION",
+  "generation_command": "python upstream/build/single_file_libs/combine.py -r upstream/lib -x legacy/zstd_legacy.h -o zstddeclib.c upstream/build/single_file_libs/zstddeclib-in.c",
+  "generator_path": "build/single_file_libs/combine.py",
+  "legacy_excluded_path": "lib/legacy/zstd_legacy.h",
+  "missing_includes": 0,
+  "expected_excluded_error_directives": 2,
+  "upstream_files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/LICENSE",
+      "git_blob_sha1": "75800288cc243f164b9d130f125e2ffae28f8e39",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "bytes": 1549
+    },
+    {
+      "path": "build/single_file_libs/combine.py",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/single_file_libs/combine.py",
+      "git_blob_sha1": "771dd20bfb14c94ee9afaed7d67eecb82f27b1ee",
+      "sha256": "4fd5e30ab95f558cb46159abe81a620878b53c0aeba7ebd20f0c23d12ae8bff5",
+      "bytes": 10120
+    },
+    {
+      "path": "build/single_file_libs/zstddeclib-in.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/single_file_libs/zstddeclib-in.c",
+      "git_blob_sha1": "8d9c1f54bb79f3409235aae89e597f3eaa6cfadd",
+      "sha256": "bc92e749753feac9beaeae6e5fd8efe80f8ba31f937a71179ffa2876c903d6b6",
+      "bytes": 2007
+    },
+    {
+      "path": "lib/common/allocations.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/allocations.h",
+      "git_blob_sha1": "5e8995501090fd631c0773e2c5ec233e7acc05e6",
+      "sha256": "6a718e8edaca112abdc0bdfa7de67edefaa44c8d9e514b79672ab58ab3a9118a",
+      "bytes": 1637
+    },
+    {
+      "path": "lib/common/bits.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/bits.h",
+      "git_blob_sha1": "f452f0889142cb0db6c4db8b74dfc34f5343a22e",
+      "sha256": "5bb7693a35d7ce03f8715c0b1e237062285e052250fdd34f72f38e7e92365090",
+      "bytes": 5956
+    },
+    {
+      "path": "lib/common/bitstream.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/bitstream.h",
+      "git_blob_sha1": "3b7ad483d9e978537679e8b00796ba169295dfe7",
+      "sha256": "a9461685c9add6f609078acc950a08db4c02e6e6a849d550f45182ba2ae38556",
+      "bytes": 18727
+    },
+    {
+      "path": "lib/common/compiler.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/compiler.h",
+      "git_blob_sha1": "1f7da50e6da9fb6269cb56550a12271938759dc1",
+      "sha256": "d19829705d8039437ffba873df2b58d20d7b876d58da479121d2e515df55cbf7",
+      "bytes": 16644
+    },
+    {
+      "path": "lib/common/cpu.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/cpu.h",
+      "git_blob_sha1": "3f15d560f0ccf9b9aa259a4c080bb04e6359d4aa",
+      "sha256": "23d520b536a6f23114e66549d03a967b1f24b15560c5b1ebd47ee392ccee4a1c",
+      "bytes": 5438
+    },
+    {
+      "path": "lib/common/debug.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/debug.c",
+      "git_blob_sha1": "9d0b7d229c14ca63dc365c53b2089570ae958e43",
+      "sha256": "7ab1ea104acf3243fc1cd4e6d2514046f1dfc1101c7c676145c8da080e8c24ca",
+      "bytes": 1091
+    },
+    {
+      "path": "lib/common/debug.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/debug.h",
+      "git_blob_sha1": "4b60ddf7f51e779fb17b843ffeca41579664d4ae",
+      "sha256": "8260cd5087b8309679c61b772b535688993c61a675a30481b8ae55b45740ba15",
+      "bytes": 3925
+    },
+    {
+      "path": "lib/common/entropy_common.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/entropy_common.c",
+      "git_blob_sha1": "e2173afb0a8b0c8c070033ac404f830157c27c6a",
+      "sha256": "7dfce29c6bc807645b1f0c373dad94bbb49603b175a84e72d1739bf9df65feb8",
+      "bytes": 13308
+    },
+    {
+      "path": "lib/common/error_private.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/error_private.c",
+      "git_blob_sha1": "7e7f24f6756535cf379251987e49421a2341df5e",
+      "sha256": "3f5873b2626ca1cdf554b7ec7b04ea0ef296fd0f6882d7fad42448b7e2dbb41c",
+      "bytes": 3905
+    },
+    {
+      "path": "lib/common/error_private.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/error_private.h",
+      "git_blob_sha1": "9dcc8595123cd70c8e3a7808ab36da8402141d08",
+      "sha256": "ae077bb433eb150ee247410a0357f910b9c07be839c6a9abe0b2e6b18ceb716d",
+      "bytes": 6438
+    },
+    {
+      "path": "lib/common/fse.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/fse.h",
+      "git_blob_sha1": "b6c2a3e9ccc762ebdcb8986ffeb5ce46e77a1c80",
+      "sha256": "5235ce1e512bf80204d013b1f4cecd776fdaa9effddb48308bce08f6d0b84499",
+      "bytes": 30033
+    },
+    {
+      "path": "lib/common/fse_decompress.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/fse_decompress.c",
+      "git_blob_sha1": "c8f1bb0cf23363354af1cf3b33bb46e1993cbe0a",
+      "sha256": "84eba7030a036b36363a5108e760428ce549f1a833bec6464dc755f6ed51a6fb",
+      "bytes": 12478
+    },
+    {
+      "path": "lib/common/huf.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/huf.h",
+      "git_blob_sha1": "4b142c4f996c1f9cc77d38270091f5948d049aa2",
+      "sha256": "9a83d899c8c9bf03389d482562090ec2443bc0f87f27864a2b891b180333f2d4",
+      "bytes": 14119
+    },
+    {
+      "path": "lib/common/mem.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/mem.h",
+      "git_blob_sha1": "e66a2eaeb27c7ec80def54bd4dee50c48ecf308d",
+      "sha256": "4dd5fe76fa30a020cd4b3af3134ae143920300a1fe54baac1a5da73297e66783",
+      "bytes": 12939
+    },
+    {
+      "path": "lib/common/portability_macros.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/portability_macros.h",
+      "git_blob_sha1": "860734141dfbd934ea104aae98b6e7675e8b8ffb",
+      "sha256": "75e2b43968b70decc6bd17876833be04894035594ddc1e745cd6b70be8265637",
+      "bytes": 4916
+    },
+    {
+      "path": "lib/common/xxhash.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/xxhash.h",
+      "git_blob_sha1": "b6af402fdf4c9a39207974448a0525e20631c115",
+      "sha256": "8cb837b21a8fe9a6b9dbcd0961ab16e733bfcbfa9e003f3a496ce07ae80aa8ee",
+      "bytes": 262488
+    },
+    {
+      "path": "lib/common/zstd_common.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_common.c",
+      "git_blob_sha1": "3f04c22abf6cc331c63e7ea926a456b74b205e3e",
+      "sha256": "f49eb8023a90d3de925373bd9ee0d36ed46b26c529840b64220397446cd73795",
+      "bytes": 1683
+    },
+    {
+      "path": "lib/common/zstd_deps.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_deps.h",
+      "git_blob_sha1": "8a9c7cc5313ad8c507f456e43f2b3afaad374673",
+      "sha256": "9c77ea7d0afa8d5c868a7839e178a446a82d88eb75fd56f2fd7d9d96c5ab7c11",
+      "bytes": 3010
+    },
+    {
+      "path": "lib/common/zstd_internal.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_internal.h",
+      "git_blob_sha1": "2789a359122ca704c7c60f826a4147426980bc16",
+      "sha256": "ad3d95ce2b81a8c5c6b00cfe6323d8e80cacb690d3b5883725cd0d939f4f576f",
+      "bytes": 10911
+    },
+    {
+      "path": "lib/common/zstd_trace.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_trace.h",
+      "git_blob_sha1": "d8eec100758fa4ade9e502e77c1e1a8c58026304",
+      "sha256": "17f6daa4c7e97055cd1ed7bcf4d9241a4e79b465f083c5d732fda1df2f0be11e",
+      "bytes": 4562
+    },
+    {
+      "path": "lib/decompress/huf_decompress.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/huf_decompress.c",
+      "git_blob_sha1": "f85dd0beea060e3358099b94e5bd39d480e3a2cd",
+      "sha256": "710a88d877d5dc5c83a4f839392996f337ec81cf38006c4a5be6042de5b54828",
+      "bytes": 76910
+    },
+    {
+      "path": "lib/decompress/zstd_ddict.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_ddict.c",
+      "git_blob_sha1": "309ec0d03642a1372aa9130eed51bc56d9d67ab5",
+      "sha256": "38bf812283d61f4cd1f6aea30f84b43317418257c4e6fc198b09b436bd484397",
+      "bytes": 9182
+    },
+    {
+      "path": "lib/decompress/zstd_ddict.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_ddict.h",
+      "git_blob_sha1": "c4ca8877a077c84d97c095481175f12de03860db",
+      "sha256": "a97a250fd2f956e3ae419ddde68ae1f9fe4025bc0373254058d31bbd352fa71c",
+      "bytes": 1319
+    },
+    {
+      "path": "lib/decompress/zstd_decompress.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress.c",
+      "git_blob_sha1": "9eb98327ef3b3d177c2137be5d3d10a372bc10d9",
+      "sha256": "029580818b7e9cd38d9d07c63516b00ceaa943ffcfbd099fc5ccbe3628fa362f",
+      "bytes": 102400
+    },
+    {
+      "path": "lib/decompress/zstd_decompress_block.c",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress_block.c",
+      "git_blob_sha1": "862785a49c6853024d17df57c658c18566e56029",
+      "sha256": "9cb8bcb07aeb87e4717a9c8a86d20832dc525dde2c1b72efdaaab7c937f43b87",
+      "bytes": 101467
+    },
+    {
+      "path": "lib/decompress/zstd_decompress_block.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress_block.h",
+      "git_blob_sha1": "ab152404ba057a2e22abd669951a435e6b3fddc9",
+      "sha256": "62ee0c6ae3f7353020538397f436b59743da8acb922068841b346f480f7078ac",
+      "bytes": 2682
+    },
+    {
+      "path": "lib/decompress/zstd_decompress_internal.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress_internal.h",
+      "git_blob_sha1": "e4bffdbc6cf219c0cf1f205bd80328e8cbc5138c",
+      "sha256": "73217b49a644c0fcf567b70677cae31449ba9f50a235ef3b681001c3f36dc56d",
+      "bytes": 9683
+    },
+    {
+      "path": "lib/legacy/zstd_legacy.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_legacy.h",
+      "git_blob_sha1": "7a8a04e593c23a6ff08dc33942b0fff04a7c07ba",
+      "sha256": "90ecc3816d28da0e0537c610fe99209fb9603b1ecdb764bd1228a5226f5c7484",
+      "bytes": 15026
+    },
+    {
+      "path": "lib/zstd.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h",
+      "git_blob_sha1": "b8c0644a7ec6533916e06aa8392a2727cbe55573",
+      "sha256": "9b4bc8245565c98ccfc61c07749928b57e7c0f6fddb0530c4f6aa1971893d88b",
+      "bytes": 181748
+    },
+    {
+      "path": "lib/zstd_errors.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd_errors.h",
+      "git_blob_sha1": "8ebc95cbb2ab882027a3e6cc92cdd5abc1a0dee4",
+      "sha256": "66a8c3f71d12ea6e797e4f622f31f3f8f81c41b36f48cad4f5de7d8bfb6aac0a",
+      "bytes": 4278
+    }
+  ],
+  "generated_decoder": {
+    "sha256": "5eb38abe0a7eea13674b312a006df72002d4192f0f0b4d09e6f03fb927a1f3d0",
+    "bytes": 927181
+  },
+  "license_file": {
+    "upstream_path": "LICENSE",
+    "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+  },
+  "scope": "Fixed original source inputs verified against git blob identities. Command describes source-preparation layout; vendor-only files are not a self-contained regeneration tree. No installed binary or compiler identity."
+}

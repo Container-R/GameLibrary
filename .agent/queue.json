@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T00:59:00Z",
+      "last_progress_at": "2026-11-03T01:23:24Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7280,7 +7280,14 @@
         "管理档案/审查/Zstandard旧包字典依赖-来源与读者审查.md",
         "管理档案/支持资料/解压缓冲只有64KiB，为什么资源仍可能越过大小预算.md",
         "管理档案/来源笔记/zstd-decompression-budget.json",
-        "管理档案/审查/Zstandard解压预算-来源与读者审查.md"
+        "管理档案/审查/Zstandard解压预算-来源与读者审查.md",
+        "管理档案/支持资料/Zstandard流式输出预算/README.md",
+        "管理档案/支持资料/Zstandard流式输出预算/PROTOCOL.md",
+        "管理档案/支持资料/Zstandard流式输出预算/manifest.json",
+        "管理档案/支持资料/Zstandard流式输出预算/results/main-1/result.json",
+        "管理档案/支持资料/Zstandard流式输出预算/results/independent-1/result.json",
+        "管理档案/来源笔记/zstd-stream-native.json",
+        "管理档案/审查/Zstandard有限流式预算-原生与读者审查.md"
       ],
       "acceptance": [
         "Deduplicate adjacent reader mechanisms",
@@ -7290,12 +7297,12 @@
         "Do not invent decoding, performance or real-game results"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T19:55:15Z",
+      "last_progress_at": "2026-11-03T01:23:24Z",
       "next_action": "Maintain the source-scoped dependency explanation; actual integrations must separately test their package/dictionary selection and decoding.",
       "blockers": [],
-      "verification_method": "Fixed primary source and independent mechanism/full-reader review; no executable experiment.",
+      "verification_method": "Dictionary dependency remains fixed-source and reader review; separate adjacent raw-block output-budget observation has two finite native executions, not dictionary or general decoder validation.",
       "publication_scope": "Reader and public records are published in the same containing commit.",
-      "latest_reader_maintenance": "Optional fixed-version decompression output-budget explanation; original dictionary-dependency scope retained, no execution."
+      "latest_reader_maintenance": "Adjacent output-budget three-case native observation with two same-host different-agent fresh compilations; dictionary reader remains source-only."
     }
   ],
   "execution_policy": {

@@ -42,6 +42,8 @@
 
 2026-11-02 阅读固定 Zstandard **v1.5.7**，commit `f8745da6ff1ad1e7bab384bd1f9d742439278e99`。上述 16MiB/64KiB 是原创算术情境，没有生成压缩样本、调用库或测量内存与耗时；源码路径分析不是实际执行证明。
 
+另于2026-11-03完成了[8字节输出缓冲与32字节预算的有限原生观察](Zstandard流式输出预算/README.md)：三个自产raw-block输入分别显示正常完成、库已完成但应用因超额拒收，以及输入已尽却仍未完整；这不改变上面16MiB/64KiB算术和旧字典交付情境的纸面身份，也不提供性能、内存或全部压缩路径结论。
+
 1. [`lib/zstd.h`：单次解压和帧内容尺寸查询，164–205行](https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L164-L205)。
 2. [`lib/zstd.h`：流式解码说明与函数契约，876–948行](https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L876-L948)。累计额度比较是本文的加载器设计说明，不是库自动提供的检查。
 3. [`lib/zstd.h`：解码参数与窗口限制，628–685行](https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/zstd.h#L628-L685)；[格式说明：窗口与可拒绝的内存要求，235–275行](https://github.com/meta/zstd/blob/f8745da6ff1ad1e7bab384bd1f9d742439278e99/doc/zstd_compression_format.md#L235-L275)。
