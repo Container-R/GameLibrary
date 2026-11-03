@@ -8,7 +8,7 @@ AI 和关卡设计共同面对的问题是：怎样根据正在发生的战斗�
 
 ## 历史机制：估计强度，再调整威胁供应
 
-Valve 发布目录将 *The AI Systems of Left 4 Dead* 列为 Michael Booth 的 AIIDE 2009 演讲。[1] 相关幻灯片说明：系统从受伤等游戏事件估计各幸存者的强度，取四人最大值，交战中不让估计自然衰减。它经历 Build Up（积累）、Sustain Peak（维持峰值）、Peak Fade（等待峰值消退）、Relax（缓和）四阶段：先供应威胁直到越过峰值阈值，短暂维持，再降低供应、等待强度退出峰值范围，最后保持一段缓和并返回积累。Peak Fade 为现有交战留下结束时间。低威胁配置并不保证没有攻击：既存特殊感染者仍可攻击，Boss 不受该自适应节奏控制。作者将这套算法描述为调节节奏而非难度；物品则另有设计师安排的候选点。[2，第75、79–82、92页]
+Valve 发布目录将 *The AI Systems of Left 4 Dead* 列为 Michael Booth 的 AIIDE 2009 演讲。[1] 相关幻灯片说明：系统从受伤等游戏事件估计各幸存者的强度，取四人最大值，交战中不让估计自然衰减。它经历 Build Up（积累）、Sustain Peak（维持峰值）、Peak Fade（等待峰值消退）、Relax（缓和）四阶段：先供应威胁直到越过峰值阈值，短暂维持，再降低供应、等待强度退出峰值范围，最后保持缓和，直到计时结束或队伍已向下一安全屋前进足够距离，再返回积累。Peak Fade 为现有交战留下结束时间。低威胁配置并不保证没有攻击：既存特殊感染者仍可攻击，Boss 不受该自适应节奏控制。作者将这套算法描述为调节节奏而非难度；物品则另有设计师安排的候选点。[2，第75、79–82、92页]
 
 这是原作者当时的算法说明，不是当前游戏配置的复核，也不意味着整个游戏从不改变难度。尤其不能由“调节节奏”推断所有玩家感受到的难度都保持不变。下面的数字、场景和检查建议均为原创解释，不是演讲中的实测结果。
 
@@ -102,6 +102,8 @@ Valve 发布目录将 *The AI Systems of Left 4 Dead* 列为 Michael Booth 的 A
 2026 年 11 月 1 日重新读取官方发布目录与演讲 PDF 的相关文字。未观看演讲视频、解读演示曲线或读取游戏运行档案；没有时间戳、实时玩家测量或本文的复现结果。
 
 2026年11月2日补读同一讲义第57–74页文字，查看第58、59、60、70、73页空间示意图，用于说明生成位置选择。没有由示意图测量范围或性能，也没有观看视频或运行游戏。
+
+2026年11月3日复核第81页文字，补齐缓和阶段按推进距离退出的另一条件；没有运行游戏或推断具体距离阈值。
 
 1. Valve，[Publications](https://www.valvesoftware.com/en/publications)，2009 年条目：Michael Booth，*The AI Systems of Left 4 Dead*，Artificial Intelligence and Interactive Digital Entertainment Conference，Stanford University。精确演讲日未确定，不与同年相邻 GDC 演讲混用。
 2. Michael Booth，[The AI Systems of Left 4 Dead](https://cdn.fastly.steamstatic.com/apps/valve/2009/ai_systems_of_l4d_mike_booth.pdf)，2009，95 页。这里页码均为从 1 开始的 PDF 页面序号：第75页物品候选；第79–80页强度估计；第81页四阶段；第82页控制范围与例外；第92页作者对节奏和难度的区分。本文不把历史参数或作者效果判断作为其他项目的保证。本次空间规则增补对应第58–60页的Flow Distance与AAS、第69页的特殊感染者位置约束、第70–73页的方向候选与有限回退；不把这些片段称为所有敌人完整生成算法。
