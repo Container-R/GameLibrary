@@ -8431,6 +8431,35 @@
       "blockers": [],
       "verification_method": "First-party text and original paper geometry with independent reader review; no execution.",
       "publication_scope": "Support, host entry, source note, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0239",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "局部流向造成贴图形变时，怎样让每层在贡献归零时复位？",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Concrete first-party material-control mechanism beyond existing wind phase and UV address wrapping.",
+      "expected_artifact": "管理档案/支持资料/流动贴图为什么要定期复位，又怎样藏住跳变.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+        "GameLibrary/技术美术/环境管线/纹理与材质/README.md",
+        "管理档案/支持资料/流动贴图为什么要定期复位，又怎样藏住跳变.md",
+        "管理档案/审查/流动贴图相位复位-来源与读者审查.md",
+        "管理档案/来源笔记/valve-flowmap-phase-reset.json"
+      ],
+      "acceptance": [
+        "Read original text and key phase diagrams",
+        "Independently check full human-readable explanation and original arithmetic",
+        "Keep static-field/scalar model separate from actual shader and physics",
+        "Provide real role/material entrances and reciprocal returns"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T22:58:27Z",
+      "next_action": "Maintain finite historical and paper-model scope; expand only for an independently sourced concrete reader gap.",
+      "blockers": [],
+      "verification_method": "Original presentation text/static diagrams and independent full reader/paper review; no runtime execution.",
+      "publication_scope": "Support, host and shelf entries, review, source record, audit and public progress in containing commit."
     }
   ],
   "execution_policy": {

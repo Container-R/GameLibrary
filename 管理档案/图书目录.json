@@ -597,7 +597,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "94ecfd32922a9ec6a888896623c98f57fed17e363ca633d62f06f9a83655698b",
+      "reader_sha256": "0a8102b4c780bec0d115337b0be9fc15302c2235270e84588374515c238fc24d",
       "vegetation_control_support": {
         "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
@@ -607,7 +607,13 @@
       },
       "review_paths": [
         "管理档案/审查/植被控制数据-来源与读者审查.md"
-      ]
+      ],
+      "flowmap_phase_maintenance": {
+        "support": "管理档案/支持资料/流动贴图为什么要定期复位，又怎样藏住跳变.md",
+        "source_record": "管理档案/来源笔记/valve-flowmap-phase-reset.json",
+        "review": "管理档案/审查/流动贴图相位复位-来源与读者审查.md",
+        "scope": "Finite original-source and paper phase-reset explanation; no new reader book or runtime claim."
+      }
     },
     {
       "internal_id": "ROLE-UX-001",
@@ -2835,7 +2841,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "cae3a53004768f3d0262b3606be9ea7fed28d222",
+  "publication_base_sha": "04339a170a1115464e009f4d9cb5e2f8738c0b05",
   "accounted_for_original_items": 55,
   "reader_books_total": 92,
   "post_baseline_research_books": 37,

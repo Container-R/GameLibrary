@@ -1,0 +1,30 @@
+{
+  "read_on": "2026-11-03",
+  "support": "管理档案/支持资料/流动贴图为什么要定期复位，又怎样藏住跳变.md",
+  "support_sha256": "bf20538bde3966d7a9ef3845fe5edb5ceaa864f85f7546b3a8f0b3c34765b612",
+  "host": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "review": "管理档案/审查/流动贴图相位复位-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Alex Vlachos / Valve",
+      "title": "Water Flow in Portal 2",
+      "cover_date": "2010-07-28",
+      "official_index": "https://advances.realtimerendering.com/s2010/index.html",
+      "url": "https://advances.realtimerendering.com/s2010/Vlachos-Waterflow%28SIGGRAPH%202010%20Advanced%20RealTime%20Rendering%20Course%29.pdf",
+      "publisher_index": "https://www.valvesoftware.com/en/publications",
+      "publisher_copy": "https://cdn.fastly.steamstatic.com/apps/valve/2010/siggraph2010_vlachos_waterflow.pdf",
+      "pdf_sha256": "63c37c16b1c04d1420bca916d263a77b2411528ba90468725409df6b3ff1f1c5",
+      "pages": 54,
+      "locators": "Physical PDF pages2,9,18,20,23–24,32,41,46–47; one-based",
+      "reading": "Complete extracted text; actual relevant static images including24,46,47. Not a video/talk viewing or full animated-content inspection.",
+      "identity_limit": "Valve list saysJune2010, coverJuly28, course material updateAugust7; not conflated. Two byte-identical distributions are one source."
+    }
+  ],
+  "verification": "Independent full-reader and paper derivation review; no shader, GPU or physical simulation execution.",
+  "limits": [
+    "Original formulas and4-second example are not source shader code",
+    "Continuous bounded scalar sampling with static field is not complete color or normal implementation",
+    "No physical advection, preserved debris identity, performance or playtest guarantee",
+    "Source slides and images not redistributed"
+  ]
+}
