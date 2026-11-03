@@ -1,0 +1,116 @@
+{
+  "checkpoints": [
+    {
+      "case": "A",
+      "phase": "baseline",
+      "writer_qty": 10,
+      "reader_qty": 10,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "A",
+      "phase": "outer_update",
+      "writer_qty": 20,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "A",
+      "phase": "inner_update",
+      "writer_qty": 30,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "A",
+      "phase": "inner_release",
+      "writer_qty": 30,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "A",
+      "phase": "outer_rollback",
+      "writer_qty": 10,
+      "reader_qty": 10,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "baseline",
+      "writer_qty": 10,
+      "reader_qty": 10,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "outer_update",
+      "writer_qty": 20,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "inner_update",
+      "writer_qty": 30,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "rollback_to",
+      "writer_qty": 20,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "inner_release",
+      "writer_qty": 20,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "B",
+      "phase": "outer_commit",
+      "writer_qty": 20,
+      "reader_qty": 20,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "C",
+      "phase": "baseline",
+      "writer_qty": 10,
+      "reader_qty": 10,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "C",
+      "phase": "before_outermost_release",
+      "writer_qty": 40,
+      "reader_qty": 10,
+      "writer_in_transaction": true,
+      "reader_in_transaction": false
+    },
+    {
+      "case": "C",
+      "phase": "outermost_release",
+      "writer_qty": 40,
+      "reader_qty": 40,
+      "writer_in_transaction": false,
+      "reader_in_transaction": false
+    }
+  ]
+}

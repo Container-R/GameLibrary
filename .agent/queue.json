@@ -7231,7 +7231,20 @@
         "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/output.jsonl",
         "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/result.json",
         "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/output.jsonl",
-        "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/result.json"
+        "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/result.json",
+        "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+        "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
+        "管理档案/支持资料/SQLite保存点两连接/README.md",
+        "管理档案/支持资料/SQLite保存点两连接/fixture/PROTOCOL.md",
+        "管理档案/支持资料/SQLite保存点两连接/fixture/driver.py",
+        "管理档案/支持资料/SQLite保存点两连接/fixture/runner.py",
+        "管理档案/支持资料/SQLite保存点两连接/fixture/expected.json",
+        "管理档案/支持资料/SQLite保存点两连接/fixture/manifest.json",
+        "管理档案/支持资料/SQLite保存点两连接/observations/main-1/output.json",
+        "管理档案/支持资料/SQLite保存点两连接/observations/main-1/result.json",
+        "管理档案/支持资料/SQLite保存点两连接/observations/independent-1/output.json",
+        "管理档案/支持资料/SQLite保存点两连接/observations/independent-1/result.json",
+        "管理档案/来源笔记/sqlite-savepoint-boundary.json"
       ],
       "acceptance": [
         "Read official WAL, backup, checkpoint and binding documentation",
@@ -7241,7 +7254,7 @@
         "Separate same-environment observation from crash, concurrency and multi-file guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T05:51:44Z",
+      "last_progress_at": "2026-11-03T08:48:42Z",
       "next_action": "For a real save system, define the intended business save boundary and restoration checks before integrating backup; this finite observation does not validate project recovery.",
       "blockers": [],
       "verification_method": "Original Python/WAL observation unchanged; added fixed SQLite 3.50.4 direct C complete/cancel observation by author and independent same-host operator, with pre-execution and reader/source review.",
@@ -7250,6 +7263,13 @@
         "support_path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
         "experiment_readme": "管理档案/支持资料/SQLite备份提前收尾/README.md",
         "scope": "One author and one independent operator execution, same host and fixed inputs, known first result; two lifecycle branches and common close/reopen oracle. Not blind or cross-platform."
+      },
+      "savepoint_boundary_support": {
+        "support": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+        "review": "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
+        "source": "管理档案/来源笔记/sqlite-savepoint-boundary.json",
+        "experiment": "管理档案/支持资料/SQLite保存点两连接/README.md",
+        "scope": "One main editor and one independent reviewer execution, same environment and fixed inputs, known first result; three SQL branches and14literal checkpoints per execution. Independent source and complete reader review."
       }
     },
     {

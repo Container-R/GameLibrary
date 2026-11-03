@@ -2166,10 +2166,11 @@
       "review_paths": [
         "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md",
         "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
-        "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md"
+        "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md",
+        "管理档案/审查/SQLite保存点-来源执行与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
-      "reader_sha256": "101a8aa3bea2c334a2fcd8579852b0ccc559ae76bfb55b5667b9a11349144e39",
+      "reader_sha256": "8821e9f5c08f9ef30671af5f4eb7fe1eb0b6421899e76933678aa38cf88f2432",
       "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md",
       "c_backup_completion_increment": {
         "scope": "Source-only C step/finish distinction and hypothetical cancellation versus completion; no new execution.",
@@ -2191,6 +2192,13 @@
         "source_record": "管理档案/来源笔记/sqlite-backup-finish-native.json",
         "review": "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md",
         "scope": "One author and one independent operator execution, same host and fixed inputs, known first result; two lifecycle branches and common close/reopen oracle. Not blind or cross-platform."
+      },
+      "savepoint_boundary_support": {
+        "path": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+        "sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2",
+        "review": "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
+        "experiment": "管理档案/支持资料/SQLite保存点两连接/README.md",
+        "scope": "One main editor and one independent reviewer execution, same environment and fixed inputs, known first result; three SQL branches and14literal checkpoints per execution. Independent source and complete reader review."
       }
     },
     {

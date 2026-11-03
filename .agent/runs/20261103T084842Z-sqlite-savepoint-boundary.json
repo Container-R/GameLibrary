@@ -1,0 +1,30 @@
+{
+  "id": "20261103T084842Z-sqlite-savepoint-boundary",
+  "task_ids": [
+    "TASK-2026-0204"
+  ],
+  "recorded_at": "2026-11-03T08:48:42Z",
+  "baseline_sha": "8f3b8a0ccc353885a59c63e6bbedc9100d86986d",
+  "outcome": "accepted-source-native-and-reader-support",
+  "reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+  "artifacts": [
+    "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+    "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
+    "管理档案/来源笔记/sqlite-savepoint-boundary.json",
+    "管理档案/支持资料/SQLite保存点两连接/README.md"
+  ],
+  "verification": "One main editor and one independent reviewer execution, same environment and fixed inputs, known first result; three SQL branches and14literal checkpoints per execution. Independent source and complete reader review.",
+  "native_runs": 2,
+  "unique_branches": 3,
+  "checkpoints_per_execution": 14,
+  "actual_run_failures": 0,
+  "preexecution_rejection_preserved": true,
+  "existing_backup_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
