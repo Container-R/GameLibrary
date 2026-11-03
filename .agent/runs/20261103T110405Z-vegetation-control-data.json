@@ -1,0 +1,25 @@
+{
+  "id": "20261103T110405Z-vegetation-control-data",
+  "task_ids": [
+    "TASK-2026-0002"
+  ],
+  "recorded_at": "2026-11-03T11:04:05Z",
+  "baseline_sha": "a66af63314aec01aab64aaee8fbe6ece291d243f",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "artifacts": [
+    "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
+    "管理档案/审查/植被控制数据-来源与读者审查.md",
+    "管理档案/来源笔记/crysis-vegetation-control-data.json"
+  ],
+  "verification": "Primary production account and independently reviewed original sinusoid illustration and proposed authoring checks; no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}

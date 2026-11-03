@@ -1,0 +1,25 @@
+{
+  "title": "Vegetation control data: amplitude, period and phase as distinct authoring concerns",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "NVIDIA / GPU Gems3",
+      "author": "Tiago Sousa, Crytek",
+      "title": "Vegetation Procedural Animation and Shading in Crysis",
+      "version": "Chapter16; authors writing-time CryENGINE2 snapshot, not a current implementation identity",
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-16-vegetation-procedural-animation-and-shading-crysis",
+      "scope": "Full technical chapter text and displayed listings; actual figures16-1 through16-4, not16-5 through16-8. Listed code formatting damage prevents treating it as verified runnable source."
+    }
+  ],
+  "reader": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "support": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
+  "review": "管理档案/审查/植被控制数据-来源与读者审查.md",
+  "verification": "Primary production account and independently reviewed original sinusoid illustration and proposed authoring checks; no execution.",
+  "limits": [
+    "Limited source summary, no source code or image republication",
+    "No universal vertex-color channel/value convention",
+    "No current engine, final game build, performance or visual-quality verification",
+    "Phase changes instantaneous velocity at a fixed time even when period is unchanged",
+    "Mesh representation limits control granularity; no complete vegetation shader supplied"
+  ]
+}

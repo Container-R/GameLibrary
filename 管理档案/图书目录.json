@@ -542,7 +542,18 @@
       "scope_disposition_review": "管理档案/审查/角色约束顺序-增量审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_sha256": "d46780addd906d42af25b657ad8ac1f8eb61bc148899419c046bc5b76a58ad5f",
+      "vegetation_control_support": {
+        "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
+        "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
+        "review": "管理档案/审查/植被控制数据-来源与读者审查.md",
+        "source": "管理档案/来源笔记/crysis-vegetation-control-data.json",
+        "scope": "Primary production account and independently reviewed original sinusoid illustration and proposed authoring checks; no execution."
+      },
+      "review_paths": [
+        "管理档案/审查/植被控制数据-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "ROLE-UX-001",
