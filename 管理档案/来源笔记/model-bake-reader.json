@@ -1,0 +1,32 @@
+{
+  "read_on": "2026-11-03",
+  "reader_path": "GameLibrary/美术设计/模型制作/贴图烘焙/法线烘焙串到附近零件时，为什么不能只加大投射笼.md",
+  "reader_sha256": "57a27ec3adc1029d327158a8c8dbc1c05ee1b4d750f7cfffc1189cd0b3cceb4a",
+  "origin_note": "管理档案/研究记录/source-notes/model-bake-piece-visibility.md",
+  "origin_task": "TASK-2026-0136",
+  "scope": "Reader-oriented reorganization of existing hypothetical piece-partition analysis; additional official Toolbag controls and author workflow, not new execution.",
+  "sources": [
+    {
+      "url": "https://docs.marmoset.co/docs/bake-groups/",
+      "scope": "High/Low, group and cage settings; rolling documentation"
+    },
+    {
+      "url": "https://docs.marmoset.co/docs/cage/",
+      "scope": "Coverage, offset/skew and distance limiter; only limiter explicitly introduced in 5.03"
+    },
+    {
+      "url": "https://docs.marmoset.co/docs/baking-attributes/",
+      "scope": "Geometry, Quick Loader and Output settings"
+    },
+    {
+      "url": "https://www.sidefx.com/docs/houdini/nodes/cop/bakegeometrytextures-2.0.html",
+      "scope": "Mesh types, best practices and piece matching; Houdini22.0 page, node Since21.0 not all-behavior guarantee"
+    },
+    {
+      "url": "https://marmoset.co/posts/baking-a-hard-surface-weapon-in-toolbag/",
+      "scope": "Ben Armstrong identity, low-poly preparation and Baking in Toolbag text; no full modeling review or image/video viewing"
+    }
+  ],
+  "limits": "No bake, asset, pixel, performance, renderer or universal artifact diagnosis; hypothetical comparison only.",
+  "review_path": "管理档案/审查/模型烘焙分组与投射-读者审查.md"
+}

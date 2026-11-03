@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T00:08:03Z",
+      "last_progress_at": "2026-11-03T00:20:39Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -4933,7 +4933,10 @@
       "priority_rationale": "Clarify model-authoring component partition as a bake input, distinct from coordinate or tangent validity",
       "expected_artifact": "Source-backed narrow note with original partition merge and bijective rename contrast plus finite receiving procedure",
       "artifact_paths": [
-        "管理档案/研究记录/source-notes/model-bake-piece-visibility.md"
+        "管理档案/研究记录/source-notes/model-bake-piece-visibility.md",
+        "GameLibrary/美术设计/模型制作/贴图烘焙/法线烘焙串到附近零件时，为什么不能只加大投射笼.md",
+        "管理档案/来源笔记/model-bake-reader.json",
+        "管理档案/审查/模型烘焙分组与投射-读者审查.md"
       ],
       "acceptance": [
         "Read original node documentation with precise page and node identity",
@@ -4943,7 +4946,7 @@
         "Independently bind exact final source-only artifact"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T08:40:24.599563Z",
+      "last_progress_at": "2026-11-03T00:20:39Z",
       "next_action": "Retain primitive partition and candidate-hit scope; no actual bake or image result",
       "blockers": [],
       "completed_at": "2026-11-01T08:42:38.760677Z",
@@ -4955,7 +4958,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "54805925c54f3a5302cc41f84db86181d144cf9f8dec2ad3cb367d214d2c1a27"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Bring existing piece-partition analysis into an artist-facing bake troubleshooting route; no new bake result."
     },
     {
       "id": "TASK-2026-0137",
