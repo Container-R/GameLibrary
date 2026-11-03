@@ -33,25 +33,25 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261103T162030Z-audio-distance",
-  "last_real_progress_at": "2026-11-03T16:20:30Z",
-  "last_commit_sha": "be5de5d652e586a712293b803860d55dc9aa186a",
+  "last_run_id": "20261103T170130Z-openal-distance-native",
+  "last_real_progress_at": "2026-11-03T17:01:30Z",
+  "last_commit_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "be5de5d652e586a712293b803860d55dc9aa186a",
-    "latest_verified_content_sha": "be5de5d652e586a712293b803860d55dc9aa186a",
+    "last_verified_head_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
+    "latest_verified_content_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
     "reader_books_total": 90,
     "post_baseline_research_books": 35,
-    "scope": "OpenAL1.1 inverse-clamped distance formula and FMOD2.03.15 documented inverse/linear mode distinction, with original paper arithmetic and proposed checks; no SDK, audio output, listening, device, voice-allocation or performance execution.",
+    "scope": "Two same-environment fixed five-case OpenAL Soft self-reported1.24.2 loopback runs, one by a second operator with prior knowledge; identical complete output bytes and independent offline recomputation. Fifteen render calls and72000 frames per run; fixed thresholds, configuration not fully excluded. Not device audio, listening, performance, FMOD/CRI, cross-machine reproduction or binary provenance certification.",
     "status": "Reader/support/source/review/progress are published together in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
-    "latest_review_path": ".agent/audits/20261103T145000Z-reader.md",
-    "snapshot_sha": "392d32aa1f0b149f1e56124e262670863a291697",
+    "latest_review_path": ".agent/audits/20261103T165000Z-reader.md",
+    "snapshot_sha": "bb298c4d7f126806e289103538f92f8a50e0a356",
     "status": "healthy-at-observation",
-    "observed_interval_utc": "2026-11-03 14:50–14:52",
-    "scope": "Independent INSIDE TAA reader route, fixed source and selected original slide text at snapshot 392d32aa; not a review of this Horizon batch or all library content. Public derivative clarifies zero-based extractor indices with section-title locators."
+    "observed_interval_utc": "2026-11-03 16:52–16:53",
+    "scope": "Independent published distance-support route, original OpenAL/FMOD source and paper arithmetic at bb298c; not a review of this later native batch, historical FMOD footer identity or whole library."
   },
   "record_transformation": {
     "scope": "Public progress, repository-relative recovery links and commit evidence only. Execution scheduling and transport diagnostics are maintained outside this public state.",

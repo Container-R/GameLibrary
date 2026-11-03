@@ -1,7 +1,7 @@
 {
   "read_on": "2026-11-03",
   "support": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
-  "support_sha256": "e2e18eb5867d0a0bec9631dee27a0447df6eb5eead26b143bc983f2493b19455",
+  "support_sha256": "166f54c4f4c8ca2eedf99f8c8a8575ff96077faa9b5e264c98fe4db381b9a25f",
   "review": "管理档案/审查/声音最大距离-来源与读者审查.md",
   "sources": [
     {
@@ -24,12 +24,20 @@
       "read_scope": "Complete named interface parameters and mode notes; neighboring custom-rolloff notes; not all Sound APIs or installed SDK."
     }
   ],
-  "verification": "OpenAL1.1 inverse-clamped distance formula and FMOD2.03.15 documented inverse/linear mode distinction, with original paper arithmetic and proposed checks; no SDK, audio output, listening, device, voice-allocation or performance execution.",
+  "verification": "Two same-environment fixed five-case OpenAL Soft self-reported1.24.2 loopback runs, one by a second operator with prior knowledge; identical complete output bytes and independent offline recomputation. Fifteen render calls and72000 frames per run; fixed thresholds, configuration not fully excluded. Not device audio, listening, performance, FMOD/CRI, cross-machine reproduction or binary provenance certification.",
   "limits": [
     "Original numerical example is distance gain only, not loudness or samples",
     "No automatic transfer of OpenAL formula to FMOD implementation",
     "No implication of CRI configuration equivalence",
     "Version-series documentation may change",
     "No copyrighted source PDF, image or large text redistribution"
-  ]
+  ],
+  "original_verification_before_native": "OpenAL1.1 inverse-clamped distance formula and FMOD2.03.15 documented inverse/linear mode distinction, with original paper arithmetic and proposed checks; no SDK, audio output, listening, device, voice-allocation or performance execution.",
+  "native_observation": {
+    "path": "管理档案/研究记录/openal-distance-loopback/README.md",
+    "manifest_sha256": "869add380880cc0a04d44cabe173abc8c571ef836d44f49080526a3668871ebb",
+    "review": "管理档案/审查/声音最大距离-离线观察审查.md",
+    "output_sha256": "2016c34debaf66da83bfce8181a7433f26f07233bc7cca615fe68b23b10d40cd",
+    "source_commit": "b621b5fce739525418f36e0474a46f9e1cab5e64"
+  }
 }

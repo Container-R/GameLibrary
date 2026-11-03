@@ -1,0 +1,1 @@
+{"checks": ["synthetic_valid", "bad_length", "bad_base64", "nan_sample", "inf_sample", "wrong_case", "wrong_ratio", "missing_window", "missing_case", "bad_digest", "bool_frame_count", "weak_baseline", "unstable_windows", "linear_nonzero", "duplicate_key", "json_nan", "bad_seq"], "scope": "pure synthetic offline selftest; not OpenAL output", "status": "PASS"}

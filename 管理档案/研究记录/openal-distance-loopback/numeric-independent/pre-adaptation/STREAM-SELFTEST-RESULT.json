@@ -1,0 +1,1 @@
+{"status": "PASS", "scope": "synthetic schema and arithmetic only, no native execution", "checks": ["complete_synthetic_stream", "missing_window", "wrong_case", "false_cleanup", "forged_metrics", "trailing_event"]}
