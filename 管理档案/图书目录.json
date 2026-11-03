@@ -2831,6 +2831,24 @@
       ],
       "source_record": "管理档案/来源笔记/xrd-character-shading.json",
       "reader_sha256": "b13aafa8899d215c784faaa8eef16ad205d213c0c942e3bc59df7f55f150bddf"
+    },
+    {
+      "internal_id": "SOL-PLATFORM-003",
+      "reader_title": "Android 切到后台后，为什么不能等 onDestroy 才保存进度",
+      "floor": "平台与发行",
+      "area": "平台接入",
+      "shelf": "移动平台",
+      "canonical_reader_path": "GameLibrary/平台与发行/平台接入/移动平台/Android 切到后台后，为什么不能等 onDestroy 才保存进度.md",
+      "current_read_path": "GameLibrary/平台与发行/平台接入/移动平台/Android 切到后台后，为什么不能等 onDestroy 才保存进度.md",
+      "reader_body_status": "published",
+      "editorial_status": "第一方文档、原创恢复场景与独立完整读者审读；未运行 Android 或游戏引擎",
+      "origin": "first-party-platform-lifecycle-analysis",
+      "scope_note": "区分界面材料、进程寿命与实际提交；不提供设备断电保证或跨引擎保存插件。",
+      "review_paths": [
+        "管理档案/审查/Android后台保存-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/android-save-lifecycle.json",
+      "reader_sha256": "72e26ad6537e1277026b9c1a2b0a16672d872c3309c4356b1150882593ec5786"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2841,10 +2859,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "04339a170a1115464e009f4d9cb5e2f8738c0b05",
+  "publication_base_sha": "6c9eac26ed25eaa5070c0b19d9af8264b9a8446d",
   "accounted_for_original_items": 55,
-  "reader_books_total": 92,
-  "post_baseline_research_books": 37,
+  "reader_books_total": 93,
+  "post_baseline_research_books": 38,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

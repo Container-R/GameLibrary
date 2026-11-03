@@ -8460,6 +8460,33 @@
       "blockers": [],
       "verification_method": "Original presentation text/static diagrams and independent full reader/paper review; no runtime execution.",
       "publication_scope": "Support, host and shelf entries, review, source record, audit and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0240",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Android后台进程可能不再执行时，游戏该如何区分界面恢复、保存请求与实际检查点？",
+      "discipline": "PLATFORM",
+      "status": "published",
+      "priority": 86,
+      "priority_rationale": "Concrete mobile-platform gap not covered by cloud conflict, migration, WAL backup or asynchronous ownership readers.",
+      "expected_artifact": "GameLibrary/平台与发行/平台接入/移动平台/Android 切到后台后，为什么不能等 onDestroy 才保存进度.md",
+      "artifact_paths": [
+        "GameLibrary/平台与发行/平台接入/移动平台/Android 切到后台后，为什么不能等 onDestroy 才保存进度.md",
+        "管理档案/审查/Android后台保存-来源与读者审查.md",
+        "管理档案/来源笔记/android-save-lifecycle.json"
+      ],
+      "acceptance": [
+        "Read first-party lifecycle and UI-state boundaries",
+        "Independently review full reader and lost-acknowledgment branches",
+        "Keep all runtime and package claims explicitly untested",
+        "Provide real mobile shelf and storage cross-entry with consistent reader inventory"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T23:11:26Z",
+      "next_action": "Maintain source-scoped platform explanation; engine-specific integration requires pinned implementation evidence and separate validation.",
+      "blockers": [],
+      "verification_method": "First-party document reading, original finite recovery example and independent reader review; no runtime test.",
+      "publication_scope": "Reader, real entries, sources, review and public progress in containing commit."
     }
   ],
   "execution_policy": {

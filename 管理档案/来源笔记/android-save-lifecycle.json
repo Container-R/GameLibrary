@@ -1,0 +1,83 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/平台与发行/平台接入/移动平台/Android 切到后台后，为什么不能等 onDestroy 才保存进度.md",
+  "reader_sha256": "72e26ad6537e1277026b9c1a2b0a16672d872c3309c4356b1150882593ec5786",
+  "review": "管理档案/审查/Android后台保存-来源与读者审查.md",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The activity lifecycle",
+      "url": "https://developer.android.com/guide/components/activities/activity-lifecycle",
+      "page_last_updated_utc": "2026-10-22",
+      "locators": [
+        "onPause, observed lines 199–227",
+        "onStop, 228–244",
+        "onDestroy, 245–256",
+        "Saving and restoring transient UI state, 271–302"
+      ],
+      "supported_facts": "Keep onPause brief; the current guide advises against using it for saves, network requests or database transactions. Persist during suitable foreground opportunities, with onStop as fallback. Configuration-driven Activity destruction is not equivalent to the end of an application process.",
+      "limits": "Current Compose-first guide; use lifecycle principles only, not a requirement to rewrite a native game with Compose. No deadline, completion or universal durability guarantee."
+    },
+    {
+      "id": "S2",
+      "title": "Processes and app lifecycle",
+      "url": "https://developer.android.com/guide/components/activities/process-lifecycle",
+      "page_last_updated_utc": "2025-02-10",
+      "locators": [
+        "Process lifetime and spawned-thread example, 108–112",
+        "Cached process, 127–134"
+      ],
+      "supported_facts": "The system controls process lifetime. Cached processes may be killed without onDestroy. From Android 13, a process may receive limited or no execution time until active again. An ordinary in-process worker is not independent of process death.",
+      "limits": "Do not prescribe a foreground service or job API as an automatic save fix. The page supplies process-lifecycle constraints, not a game checkpoint transaction protocol."
+    },
+    {
+      "id": "S3",
+      "title": "Activity API reference",
+      "url": "https://developer.android.com/reference/android/app/Activity",
+      "page_last_updated_utc": "2026-09-16",
+      "locators": [
+        "Activity Lifecycle, 1997–2002",
+        "Configuration Changes, 2003–2009",
+        "onDestroy(), 7786",
+        "onSaveInstanceState(android.os.Bundle), 7971–7985",
+        "onStop(), 8014–8024"
+      ],
+      "supported_facts": "If onSaveInstanceState is called, targets starting at P/API 28 receive it after onStop; earlier targets receive it before onStop, without a guaranteed order relative to onPause. It is omitted in some lifecycle transitions. Since Honeycomb targets, ordinary killability begins after onStop returns; extreme memory pressure remains an exception.",
+      "limits": "Target SDK conditions are not merely device OS conditions. Older general onPause-saving prose is retained on this reference; use S1 for current workload guidance, rather than combining the paragraphs into a synchronous save recipe."
+    },
+    {
+      "id": "S4",
+      "title": "Save UI states",
+      "url": "https://developer.android.com/topic/libraries/architecture/saving-states",
+      "page_last_updated_utc": "2026-10-07",
+      "locators": [
+        "User-initiated UI state dismissal, 124–133",
+        "Options for preserving UI state, 140–175",
+        "Hook into saved state using SavedStateRegistry, 176–180 and 245",
+        "Use local persistence to handle process death for complex or large data, 246–249",
+        "Managing UI state / Restore complex states, 250–269"
+      ],
+      "supported_facts": "ViewModel survives configuration changes but not system process death. Saved state supports small transient recovery data, not long-term app storage; persistent storage covers retained app data. Complete dismissal and finish differ from system recreation. SavedStateRegistry writes while stopped are not saved without another onStart/onStop cycle.",
+      "limits": "No fixed universal Bundle payload-size budget is established here. Saved state is not a durable game-save receipt. Do not apply SavedStateRegistry timing to an unrelated engine callback without integration evidence."
+    },
+    {
+      "id": "S6",
+      "title": "GameActivity",
+      "url": "https://developer.android.com/games/agdk/game-activity",
+      "page_last_updated_utc": "2026-10-08",
+      "locators": [
+        "Overview architecture, 201–222",
+        "Release locations / Contents of Jetpack library, 224–241"
+      ],
+      "supported_facts": "Java-side GameActivity interaction and JNI enqueue app-cycle events to native_app_glue; game code consumes the queue on the glue native thread. The Java and native layers must be distinguished.",
+      "limits": "The overview calls GameActivity a descendant of NativeActivity but also says it derives from AppCompatActivity; avoid relying on the ambiguous first phrase as a Java inheritance claim. No AAR version or packaged source was inspected."
+    }
+  ],
+  "scope": "Current first-party documentation and original checkpoint42/pending43 reasoning. No device, emulator, engine, package implementation, persistent-write or power-loss tests.",
+  "scope_limits": [
+    "Missing completion acknowledgment does not prove a failed commit",
+    "Target SDK conditions differ from device OS identity",
+    "UI recovery is not durable game-save completion",
+    "Native integration is an ownership caution, not a cross-engine recipe"
+  ]
+}
