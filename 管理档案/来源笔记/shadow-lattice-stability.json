@@ -1,0 +1,30 @@
+{
+  "read_on": "2026-11-03",
+  "support": "管理档案/支持资料/镜头移动时，为什么静止物体的阴影仍会晃动.md",
+  "support_sha256": "32eb1ff0f0ae9aae5ebb1ca64e505f6403aa88ebbd14f47f912e944f4316f257",
+  "host": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "review": "管理档案/审查/阴影采样格稳定性-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Microsoft",
+      "title": "Common Techniques to Improve Shadow Depth Maps",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/dxtecharts/common-techniques-to-improve-shadow-depth-maps",
+      "page_date": "2020-08-31",
+      "reading": "Selected text and short code: Calculating a Tight Projection; Moving the Light in Texel-Sized Increments; Shadow Acne; Peter Panning; Slope-Scale Depth Bias."
+    },
+    {
+      "author": "Microsoft",
+      "title": "Cascaded Shadow Maps",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/dxtecharts/cascaded-shadow-maps",
+      "page_date": "2021-04-01",
+      "reading": "Selected text: Partitioning the Frustum; Calculating a View-Frustum Bound; Fit to Scene; Fit to Cascade. Sample naming is retained as sample-specific."
+    }
+  ],
+  "verification": "Independent complete reader review and original one-dimensional rational arithmetic; no images, SDK implementation or runtime validation.",
+  "limits": [
+    "Fixed directional-light coordinate basis and origin, orthographic XY mapping and common interior",
+    "Snapping translation does not stabilize changes in projection scale or effective resolution",
+    "Coverage padding and final texel spacing must be reconciled",
+    "No universal visibility, filter, bias or performance guarantee"
+  ]
+}
