@@ -1,0 +1,37 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/技术美术/美术管线/角色着色/罪恶装备Xrd如何控制角色的明暗分界.md",
+  "reader_sha256": "b13aafa8899d215c784faaa8eef16ad205d213c0c942e3bc59df7f55f150bddf",
+  "review": "管理档案/审查/Xrd角色明暗-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Junya Christopher Motomura / Arc System Works",
+      "title": "GuiltyGear Xrd’s Art Style: The X Factor Between 2D and 3D",
+      "url": "https://www.ggxrd.com/Motomura_Junya_GuiltyGearXrd.pdf",
+      "event": "GDC2015",
+      "identity_url": "https://www.gdcvault.com/play/1022031/GuiltyGearXrd-s-Art-Style-The",
+      "reading": "Selected public extracted text including Giving Characters the Right Look, A Breakdown of Cel-shading and threshold/lighting/vertex-normal controls; printed slide labels15,18–21, physical PDF page order unverified. No images or live demo inspected; not a full-talk viewing."
+    },
+    {
+      "author": "Microsoft",
+      "title": "HLSL step",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-step",
+      "page_date": "2020-08-19",
+      "reading": "Parameters, Return Value and Remarks"
+    },
+    {
+      "author": "Microsoft",
+      "title": "HLSL dot",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-dot",
+      "page_date": "2020-08-19",
+      "reading": "Parameters and Return Value"
+    }
+  ],
+  "verification": "Primary-source historical case and original paper example with independent full-reader review; no engine or shader execution.",
+  "limits": [
+    "No unpublished threshold encoding or full production shader is supplied",
+    "No physical geometry or pixel-area conclusion follows from two unit-direction examples",
+    "Historical lighting choices are not general current-engine requirements",
+    "No source slides or images redistributed"
+  ]
+}

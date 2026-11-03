@@ -597,7 +597,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "d46780addd906d42af25b657ad8ac1f8eb61bc148899419c046bc5b76a58ad5f",
+      "reader_sha256": "94ecfd32922a9ec6a888896623c98f57fed17e363ca633d62f06f9a83655698b",
       "vegetation_control_support": {
         "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
@@ -2801,6 +2801,24 @@
       ],
       "source_record": "管理档案/来源笔记/horizon-asset-query.json",
       "reader_sha256": "de6f0f26687d691908d107877088606a62bded841aff6407bd73f8ad6af6ca56"
+    },
+    {
+      "internal_id": "CASE-TA-002",
+      "reader_title": "罪恶装备Xrd如何控制角色的明暗分界",
+      "floor": "技术美术",
+      "area": "美术管线",
+      "shelf": "角色着色",
+      "canonical_reader_path": "GameLibrary/技术美术/美术管线/角色着色/罪恶装备Xrd如何控制角色的明暗分界.md",
+      "current_read_path": "GameLibrary/技术美术/美术管线/角色着色/罪恶装备Xrd如何控制角色的明暗分界.md",
+      "reader_body_status": "published",
+      "editorial_status": "第一手讲稿文字、公式文档与独立完整读者审读；原创单位方向纸面例，未运行",
+      "origin": "first-party-historical-character-shading-case",
+      "scope_note": "阈值、光照方向和作者法线的不同影响；不含完整生产着色器或通用美术效果保证。",
+      "review_paths": [
+        "管理档案/审查/Xrd角色明暗-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/xrd-character-shading.json",
+      "reader_sha256": "b13aafa8899d215c784faaa8eef16ad205d213c0c942e3bc59df7f55f150bddf"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2811,10 +2829,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "16efb11ad6a81182f7430efbda863d4faeba1b25",
+  "publication_base_sha": "abc86f99cfb06ba17d4da6106675a15b27ba1f12",
   "accounted_for_original_items": 55,
-  "reader_books_total": 91,
-  "post_baseline_research_books": 36,
+  "reader_books_total": 92,
+  "post_baseline_research_books": 37,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
