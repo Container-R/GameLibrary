@@ -1,0 +1,59 @@
+[
+  {
+    "case": "dense-normalized.json",
+    "load": 0,
+    "parse": 0,
+    "query_count": 8,
+    "read_float": false,
+    "unpack_count": 8,
+    "validate": 0,
+    "values": [
+      1,
+      0,
+      0,
+      0,
+      0.250980407,
+      0.749019623,
+      0,
+      0
+    ]
+  },
+  {
+    "case": "zero-normalized.json",
+    "load": 0,
+    "parse": 0,
+    "query_count": 8,
+    "read_float": false,
+    "unpack_count": 8,
+    "validate": 0,
+    "values": [
+      0,
+      0,
+      0,
+      0,
+      0.250980407,
+      0.749019623,
+      0,
+      0
+    ]
+  },
+  {
+    "case": "dense-raw.json",
+    "load": 0,
+    "parse": 0,
+    "query_count": 8,
+    "read_float": false,
+    "unpack_count": 8,
+    "validate": 0,
+    "values": [
+      255,
+      0,
+      0,
+      0,
+      64,
+      191,
+      0,
+      0
+    ]
+  }
+]

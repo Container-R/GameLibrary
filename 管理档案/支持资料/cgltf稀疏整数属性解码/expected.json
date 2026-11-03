@@ -1,0 +1,35 @@
+{
+  "fraction_absolute_tolerance": 1e-07,
+  "cases": {
+    "dense-normalized.json": [
+      1,
+      0,
+      0,
+      0,
+      "64/255",
+      "191/255",
+      0,
+      0
+    ],
+    "zero-normalized.json": [
+      0,
+      0,
+      0,
+      0,
+      "64/255",
+      "191/255",
+      0,
+      0
+    ],
+    "dense-raw.json": [
+      255,
+      0,
+      0,
+      0,
+      64,
+      191,
+      0,
+      0
+    ]
+  }
+}

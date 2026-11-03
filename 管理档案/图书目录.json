@@ -1056,7 +1056,8 @@
       "reader_sha256": "85a31e29b07eb9b75089dfd1e2d72a71e210a4e7b17fdff3f763cf893a982216",
       "review_paths": [
         "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
-        "管理档案/审查/glTF整数属性-固定规范与读者审查.md"
+        "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+        "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md"
       ],
       "triangle_order_support": {
         "scope": "Optional triangle-order example distinguishes geometry preservation from order-sensitive source-over composition.",
@@ -1073,10 +1074,19 @@
       },
       "normalized_attribute_support": {
         "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
-        "sha256": "ffa8f68bf0d331f1a10fe3b5aa9cc0421ae4f837326438e876145fd98922224c",
+        "sha256": "70c76a07320e22899b4beb3b03c10f7e920ad0d8949bfeb2761afb5e79f5ea25",
         "review": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
         "source": "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
-        "scope": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution."
+        "scope": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution.",
+        "reviewed_before_link_sha256": "ffa8f68bf0d331f1a10fe3b5aa9cc0421ae4f837326438e876145fd98922224c",
+        "link_addition_review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md"
+      },
+      "unorm_sparse_native_support": {
+        "path": "管理档案/支持资料/cgltf稀疏整数属性解码/README.md",
+        "sha256": "4ba6ec68578831068714f3e2ad2785020f71854046cfb03261954a125e6b378c",
+        "review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+        "source": "管理档案/来源笔记/cgltf-unorm-sparse-native.json",
+        "scope": "Two different operators, same host and frozen program, three generic accessor configurations per run; real C compilation and native execution."
       }
     },
     {

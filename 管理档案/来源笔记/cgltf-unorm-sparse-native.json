@@ -1,0 +1,28 @@
+{
+  "title": "Finite unsigned-byte VEC4 sparse accessor decoding",
+  "read_on": "2026-11-03",
+  "source_commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+  "sources": [
+    {
+      "url": "https://github.com/jkuhlmann/cgltf/blob/360db1a95480fe102ae9c69b27c5d101167ff5ba/cgltf.h",
+      "scope": "Component conversion, read_float, full unpack_floats and related stride fixup; not full library review"
+    },
+    {
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "scope": "Accessor overview, component types and sparse replacement; fixed previously retrieved source, not whole specification review"
+    }
+  ],
+  "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "support": "管理档案/支持资料/cgltf稀疏整数属性解码/README.md",
+  "review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+  "verification": "Two different operators, same host and frozen program, three generic accessor configurations per run; real C compilation and native execution.",
+  "manifest_sha256": "774e45d5e4f32ea14ac109dd1b0d881ecea4d23abf7538a30a2a9369cb8e5a95",
+  "reader_sha256": "4ba6ec68578831068714f3e2ad2785020f71854046cfb03261954a125e6b378c",
+  "limits": [
+    "Not six distinct configurations",
+    "No mesh, skin, joint mapping, engine or GPU",
+    "No partial output capacity, arbitrary malformed input or security guarantee",
+    "No cross-platform or independent implementation result",
+    "No timeout or exceptional cleanup branch runtime challenge"
+  ]
+}

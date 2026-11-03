@@ -1,0 +1,48 @@
+{
+  "asset": {
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "byteLength": 16,
+      "uri": "data:application/octet-stream;base64,/wAAAAD/AAABAAAAQL8AAA=="
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8,
+      "byteLength": 1
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 12,
+      "byteLength": 4
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5121,
+      "type": "VEC4",
+      "count": 2,
+      "normalized": true,
+      "sparse": {
+        "count": 1,
+        "indices": {
+          "bufferView": 1,
+          "componentType": 5121
+        },
+        "values": {
+          "bufferView": 2
+        }
+      },
+      "bufferView": 0,
+      "byteOffset": 0
+    }
+  ]
+}
