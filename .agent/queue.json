@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T19:06:32Z",
+      "last_progress_at": "2026-11-03T19:40:21Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -8222,6 +8222,33 @@
       "blockers": [],
       "verification_method": "Primary-source interpretation and independent reader review, no native run.",
       "publication_scope": "Reader increment, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0231",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "两个可执行动作评分接近时，怎样减少反复改选而不保留无效动作？",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Concrete action-selection gap distinct from plan completion, condition ticking and team allocation.",
+      "expected_artifact": "管理档案/支持资料/AI为什么在两个差不多的选择之间来回切换.md",
+      "artifact_paths": [
+        "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+        "管理档案/支持资料/AI为什么在两个差不多的选择之间来回切换.md",
+        "管理档案/审查/效用选择惯性-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read adjacent current texts to avoid duplication",
+        "Verify original utility and option-context sources",
+        "Separate eligibility, current-option bias and execution commitment",
+        "Independently review finite arithmetic and reader navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T19:40:21Z",
+      "next_action": "Preserve explicit hypothetical scoring and no-runtime limits; do not generalize a fixed bonus to all designs.",
+      "blockers": [],
+      "verification_method": "Original exact finite arithmetic and source-backed reader explanation; not actual AI simulation.",
+      "publication_scope": "Support, host entry, review and public progress in containing commit."
     }
   ],
   "execution_policy": {

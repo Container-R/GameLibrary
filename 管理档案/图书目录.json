@@ -1626,7 +1626,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/ai/killzone3-plan-execution-continuation.md",
       "old_path_history_commit": "cc99dab476ab93db828afed227eb88b93574fcde",
-      "reader_sha256": "f078e9e2fe3ffeeb5ddd83e291064657e76e38c1dbc2deb187e9ba68a12a249a",
+      "reader_sha256": "2d088141e670b11a9b6f131ce3a138d56f1698e6e6a49613cdabcede380f41c8",
       "behavior_tree_support": {
         "path": "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
         "sha256": "a37459d420b91b3cf2a1a58793fd8cfb953e03f75807ac7e6b6b2b0a9a8f01aa",
@@ -1643,7 +1643,13 @@
       },
       "review_paths": [
         "管理档案/审查/团队目标人数分配-来源与读者审查.md"
-      ]
+      ],
+      "utility_inertia_support": {
+        "path": "管理档案/支持资料/AI为什么在两个差不多的选择之间来回切换.md",
+        "support_sha256": "4b86eb112400fb0d1dbfe5e4bd097e49dfc1d2d4dbe2ec5584d9c45ba71a917f",
+        "review": "管理档案/审查/效用选择惯性-来源与读者审查.md",
+        "scope": "Original finite comparable-score example with first-party chapter support; no runtime execution or claimed Killzone implementation."
+      }
     },
     {
       "internal_id": "CASE-AI-002",
@@ -2786,7 +2792,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2484db822620a3b45263e4587851a706f678bec0",
+  "publication_base_sha": "e17ccfa3d4c9dedf990df024cb8daf2649204c2f",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,
