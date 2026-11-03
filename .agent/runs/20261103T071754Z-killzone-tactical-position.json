@@ -1,0 +1,25 @@
+{
+  "id": "20261103T071754Z-killzone-tactical-position",
+  "task_ids": [
+    "TASK-2026-0023"
+  ],
+  "recorded_at": "2026-11-03T07:17:54Z",
+  "baseline_sha": "0fab9eb10abc92f24dec8b8e4159d8aa438f26eb",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+  "artifacts": [
+    "管理档案/支持资料/守卫能走到那里，为什么仍不该站在那里.md",
+    "管理档案/审查/战术选点-历史来源与读者审查.md",
+    "管理档案/来源笔记/killzone-tactical-position.json"
+  ],
+  "verification": "Primary-slide interpretation and original hypothetical integration example; no scorer/game execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

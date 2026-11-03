@@ -1,0 +1,24 @@
+{
+  "title": "Killzone tactical candidate evaluation",
+  "authors": [
+    "Arjen Beij",
+    "Remco Straatman"
+  ],
+  "date": "2005-08-31",
+  "read_on": "2026-11-03",
+  "url": "https://www.guerrilla-games.com/media/News/Files/gdce05_killzone_ai.pdf",
+  "official_entry": "https://www.guerrilla-games.com/read/killzones-ai-dynamic-procedural-tactics",
+  "page_count": 39,
+  "pdf_sha256": "31f6e7e06aac4c73abc4bff32d84b49adcedec8205b41699d5ef1aa97488152b",
+  "used_pages": "6–16; same-candidate numeric layers10–14 and input configuration16",
+  "read_scope": "Main: all39 extracted text, actual figures8–16. Independent: identity1,text6–16/32–36, actual figures8–16. Not every figure in document.",
+  "reader": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+  "support": "管理档案/支持资料/守卫能走到那里，为什么仍不该站在那里.md",
+  "review": "管理档案/审查/战术选点-历史来源与读者审查.md",
+  "verification": "Primary-slide interpretation and original hypothetical integration example; no scorer/game execution.",
+  "limits": [
+    "Original Killzone, not Killzone3 planning system",
+    "No universal coefficients, optimality, performance or perception completeness claim",
+    "No source code/proceedings/video review"
+  ]
+}

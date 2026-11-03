@@ -623,9 +623,10 @@
         "support_path": "管理档案/支持资料/Detour路径输出容量观察/README.md",
         "reader_sha256": "f9c4b9a40fdca6ffad12f3202cf554d94be6ade77068ce03b3572f61d9d86c1c"
       },
-      "reader_sha256": "6913632380bdadb8e7ff85b69924ee7c78ff0de566318486064c1c8f876789d9",
+      "reader_sha256": "9857c76449cb8744c4ccd41d9a3717dff700d8e32301f1d590dba72e3ed46516",
       "review_paths": [
-        "管理档案/审查/局部避让与实际执行-来源与读者审查.md"
+        "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
+        "管理档案/审查/战术选点-历史来源与读者审查.md"
       ],
       "local_avoidance_support": {
         "scope": "Optional finite-horizon local velocity and post-processing distinction, not a new navigation runtime or route guarantee.",
@@ -633,6 +634,11 @@
         "review_path": "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
         "reader_sha256": "6913632380bdadb8e7ff85b69924ee7c78ff0de566318486064c1c8f876789d9",
         "execution": "Primary-paper sections and original abstract half-plane counterexample; no algorithm, controller or engine execution."
+      },
+      "tactical_position_support": {
+        "path": "管理档案/支持资料/守卫能走到那里，为什么仍不该站在那里.md",
+        "review": "管理档案/审查/战术选点-历史来源与读者审查.md",
+        "scope": "Primary-slide interpretation and original hypothetical integration example; no scorer/game execution."
       }
     },
     {

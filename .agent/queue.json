@@ -767,7 +767,7 @@
         "https://docs.godotengine.org/en/4.6/classes/class_navigationserver2d.html"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T11:31:36Z",
+      "last_progress_at": "2026-11-03T07:17:54Z",
       "next_action": "同步与部分路径证据已归档，持续更新/多写者前提仍需另验",
       "blockers": [],
       "completed_at": "2026-10-31T14:30:40.037539Z",
@@ -776,7 +776,10 @@
         "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
         "管理档案/支持资料/局部避让算出的速度，为什么不等于角色最终安全移动.md",
         "管理档案/来源笔记/local-avoidance-executed-velocity.json",
-        "管理档案/审查/局部避让与实际执行-来源与读者审查.md"
+        "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
+        "管理档案/支持资料/守卫能走到那里，为什么仍不该站在那里.md",
+        "管理档案/审查/战术选点-历史来源与读者审查.md",
+        "管理档案/来源笔记/killzone-tactical-position.json"
       ],
       "historical_artifacts": [
         {
@@ -786,7 +789,7 @@
           "sha256": "04f94461c4295b898e068bbbe5f1effba6a9486fb11374cb9c33172281b20a94"
         }
       ],
-      "latest_reader_maintenance": "Optional local-avoidance support separates finite permitted velocities, fallback, goal progress and actual controller execution; no avoidance runtime claim."
+      "latest_reader_maintenance": "Optional original Killzone candidate-scoring support distinguishes reachable destination, action requirements, weighted preferences and actual route execution; no new runtime."
     },
     {
       "id": "TASK-2026-0024",
