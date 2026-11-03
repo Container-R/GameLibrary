@@ -1,0 +1,41 @@
+{
+  "title": "Keyboard reset-generated up versus gameplay cancellation and commit",
+  "publisher": "SDL project",
+  "version": "release-3.2.8",
+  "commit": "f6864924f76e1a0b4abaefc76ae2ed22b1a8916e",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/include/SDL3/SDL_keyboard.h",
+      "scope": "ResetKeyboard public declaration and adjacent keyboard state semantics; reset documentation 161–172"
+    },
+    {
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/events/SDL_keyboard.c",
+      "scope": "217–230 ResetKeyboard; 324–380 focus transition; 510–650 key handling; 685–688 sending bridge"
+    },
+    {
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/include/SDL3/SDL_events.h",
+      "scope": "351–364 keyboard event fields; 1324–1356 PushEvent filtering and failure documentation"
+    },
+    {
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/events/SDL_windowevents.c",
+      "scope": "Relevant window state checks and focus flags; event watchers and posting, including 175–185 and 219–275"
+    },
+    {
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/include/SDL3/SDL_version.h",
+      "scope": "Major/minor/micro header macros 3/2/8, not installed binary identity"
+    }
+  ],
+  "reader": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+  "support": "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
+  "review": "管理档案/审查/SDL键盘重置-来源与读者审查.md",
+  "verification": "Fixed public header/source call-path reading plus independently reviewed original charged-attack input policy; no SDL compilation, keyboard, window-focus, gameplay adapter or native execution.",
+  "limits": [
+    "General focus/pause/resume policy already covered; only concrete reset-generated up mechanism is added",
+    "Existing focus to null reset branch is not a guarantee for all platform focus changes or two non-null windows",
+    "Function call order is not universal application callback delivery order",
+    "Reset state and queued event delivery have different conditions",
+    "Application-owned cancellation before explicit reset is a proposed limited policy, not automatic OS focus-loss remediation",
+    "No physical release provenance inferred from which=0 or internal keyboard-source naming"
+  ]
+}

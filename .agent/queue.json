@@ -68,12 +68,15 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T12:59:03.575994Z",
-      "last_progress_at": "2026-10-31T12:57:31.875426Z",
+      "last_progress_at": "2026-11-03T09:42:31Z",
       "next_action": "后续实际引擎/交付证据可增强此档案；维持范围声明",
       "blockers": [],
       "commit_sha": "e1318d52de9584440659a3dd8a3db286c9488ecc",
       "artifact_paths": [
-        "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md"
+        "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+        "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
+        "管理档案/审查/SDL键盘重置-来源与读者审查.md",
+        "管理档案/来源笔记/sdl-keyboard-reset-gameplay-commit.json"
       ],
       "historical_artifacts": [
         {
@@ -82,7 +85,13 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "8572f6cf530f6f7dfd87bb86c86b4d894fa405a1d6192923beeff11a279eb3c8"
         }
-      ]
+      ],
+      "keyboard_reset_support": {
+        "support": "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
+        "review": "管理档案/审查/SDL键盘重置-来源与读者审查.md",
+        "source": "管理档案/来源笔记/sdl-keyboard-reset-gameplay-commit.json",
+        "scope": "Fixed public header/source call-path reading plus independently reviewed original charged-attack input policy; no SDL compilation, keyboard, window-focus, gameplay adapter or native execution."
+      }
     },
     {
       "id": "TASK-2026-0002",

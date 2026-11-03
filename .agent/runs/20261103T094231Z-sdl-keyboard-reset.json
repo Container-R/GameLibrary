@@ -1,0 +1,25 @@
+{
+  "id": "20261103T094231Z-sdl-keyboard-reset",
+  "task_ids": [
+    "TASK-2026-0001"
+  ],
+  "recorded_at": "2026-11-03T09:42:31Z",
+  "baseline_sha": "af6f2f962672152cb1561a669ee856bb576809a4",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+  "artifacts": [
+    "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
+    "管理档案/审查/SDL键盘重置-来源与读者审查.md",
+    "管理档案/来源笔记/sdl-keyboard-reset-gameplay-commit.json"
+  ],
+  "verification": "Fixed public header/source call-path reading plus independently reviewed original charged-attack input policy; no SDL compilation, keyboard, window-focus, gameplay adapter or native execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
