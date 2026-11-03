@@ -1,0 +1,23 @@
+{
+  "title": "Critical-path changes and shared total float in a fixed four-activity schedule",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "U.S. Government Accountability Office",
+      "title": "Schedule Assessment Guide: Best Practices for Project Schedules",
+      "version": "GAO-16-89G / December 2015",
+      "url": "https://www.gao.gov/assets/gao-16-89g.pdf",
+      "scope": "Main author printed75–78,87–88,91–96 text and actual figures28/35; independent source review has separately recorded limited text scope, no figure inspection; not full PDF"
+    }
+  ],
+  "reader": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+  "support": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+  "review": "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+  "verification": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution.",
+  "limits": [
+    "Fixed durations, one common calendar, finish-to-start dependencies and sufficient separate resources",
+    "No additional date constraints, waits, missing prerequisite work or rework",
+    "Float calculated relative to the stated final check, not an unspecified release",
+    "No resource-leveling optimization, uncertainty simulation or delivery guarantee"
+  ]
+}

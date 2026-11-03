@@ -1,0 +1,25 @@
+{
+  "id": "20261103T104550Z-schedule-critical-path",
+  "task_ids": [
+    "TASK-2026-0070"
+  ],
+  "recorded_at": "2026-11-03T10:45:50Z",
+  "baseline_sha": "0a68c8ce59fb4b34503c1a295e614bcd45222700",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+  "artifacts": [
+    "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+    "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+    "管理档案/来源笔记/schedule-critical-path-float.json"
+  ],
+  "verification": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}

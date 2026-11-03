@@ -2567,7 +2567,10 @@
         "管理档案/研究记录/source-notes/production-manager-role.md",
         "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
         "管理档案/来源笔记/production-merge-timing.json",
-        "管理档案/审查/并行输入汇合估时-来源与读者审查.md"
+        "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
+        "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+        "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+        "管理档案/来源笔记/schedule-critical-path-float.json"
       ],
       "acceptance": [
         "Verify original Ubisoft Frank Roy interview, BNS Oshiyama historical project experience and Riot cosmetics responsibility sample",
@@ -2577,7 +2580,7 @@
         "Independently review source alignment; complete navigation and queue checks before publication"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T00:00:15Z",
+      "last_progress_at": "2026-11-03T10:45:50Z",
       "next_action": "Retain source-specific role/authority distinctions and unexecuted worksheet; whole role matrix remains incomplete",
       "blockers": [],
       "completed_at": "2026-10-31T23:38:28.473301Z",
@@ -2596,7 +2599,13 @@
           "sha256": "931dc1390e77e5c51aa7ce9923dd283610b0d452c70b97077dc7b14f654ed144"
         }
       ],
-      "latest_reader_maintenance": "Optional finite uncertain parallel-merge example distinguishes individual means, joint completion mean and commitment, without replacing deterministic resource example."
+      "latest_reader_maintenance": "Optional finite uncertain parallel-merge example distinguishes individual means, joint completion mean and commitment, without replacing deterministic resource example.",
+      "critical_path_support": {
+        "support": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+        "review": "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+        "source": "管理档案/来源笔记/schedule-critical-path-float.json",
+        "scope": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution."
+      }
     },
     {
       "id": "TASK-2026-0071",

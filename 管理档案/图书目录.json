@@ -368,13 +368,23 @@
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
       },
-      "reader_sha256": "037e6e015aae4808b31302bcf477e2e38212dd2b1ce17b0d8793fdffaa4a6c53",
+      "reader_sha256": "702821f27771d52568cb6138e9b659355fd1bc830ea0511681f668cfbf8317d9",
       "parallel_merge_support": {
         "source_record": "管理档案/来源笔记/production-merge-timing.json",
         "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
         "support": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
         "scope": "Original finite hand calculation and primary schedule guidance; no game project data or simulation."
-      }
+      },
+      "critical_path_support": {
+        "path": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+        "sha256": "23e2d58dc14b8779fa75ba70c7786cac9572f3b53d9cb5e5893a76977f13631c",
+        "review": "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+        "source": "管理档案/来源笔记/schedule-critical-path-float.json",
+        "scope": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution."
+      },
+      "review_paths": [
+        "管理档案/审查/关键路径与共享浮动-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "ROLE-PROG-001",
