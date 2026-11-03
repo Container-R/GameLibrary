@@ -2157,8 +2157,18 @@
       "origin": "original-reader-explanation-grounded-in-cri-authoring-and-native-documentation",
       "scope_note": "三恢复位置为限定循环的设计示意；工具音量零政策与原生分配重试分开，未验证全部组合或采样同步",
       "review_paths": [
-        "管理档案/审查/循环声音恢复位置-读者与导航审查.md"
-      ]
+        "管理档案/审查/循环声音恢复位置-读者与导航审查.md",
+        "管理档案/审查/声音最大距离-来源与读者审查.md"
+      ],
+      "reader_sha256": "2a530ead49e13b97cc55023f6f3cb0ecf7ae80cad320979c52b939a749c917b9",
+      "distance_gain_support": {
+        "path": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
+        "sha256": "e2e18eb5867d0a0bec9631dee27a0447df6eb5eead26b143bc983f2493b19455",
+        "source": "管理档案/来源笔记/audio-distance-clamp.json",
+        "review": "管理档案/审查/声音最大距离-来源与读者审查.md",
+        "previous_reader_sha256": "a8357fd9c6310a7f6047b10e1eead9d6494813964b0e56d5c7efcec5abd8a42d",
+        "scope": "Optional parameter-semantic support; previous CRI reader text and original source/observation scope unchanged."
+      }
     },
     {
       "internal_id": "SOL-AI-002",
@@ -2714,7 +2724,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "7779670119fb3f953147d4fdb668e1644c73ab82",
+  "publication_base_sha": "be5de5d652e586a712293b803860d55dc9aa186a",
   "accounted_for_original_items": 55,
   "reader_books_total": 90,
   "post_baseline_research_books": 35,

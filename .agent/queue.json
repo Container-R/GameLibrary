@@ -7935,6 +7935,34 @@
       "blockers": [],
       "verification_method": "Limited2013 first-party kit-production case with original two-dimensional endpoint arithmetic and proposed editing checks; no model, game, editor, collision, navigation, visual or performance execution.",
       "publication_scope": "Support, entry and progress belong to the containing commit."
+    },
+    {
+      "id": "TASK-2026-0221",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can maximum audio distance leave a nonzero distance gain, and why is this separate from playback and voice-resource policy?",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Finite parameter-semantic gap before the existing voice-virtualization reader; avoids treating distance labels as silence guarantees.",
+      "expected_artifact": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
+      "artifact_paths": [
+        "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
+        "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+        "管理档案/来源笔记/audio-distance-clamp.json",
+        "管理档案/审查/声音最大距离-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read original OpenAL1.1 formula and no-culling section",
+        "Read versioned FMOD inverse/linear mode distinction",
+        "Independently review complete reader and finite gain arithmetic",
+        "Preserve CRI reader boundaries and verify optional route"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T16:20:30Z",
+      "next_action": "Maintain distance-gain, audibility, playback-time and resource-lifecycle distinctions; do not infer runtime output from paper arithmetic.",
+      "blockers": [],
+      "verification_method": "OpenAL1.1 inverse-clamped distance formula and FMOD2.03.15 documented inverse/linear mode distinction, with original paper arithmetic and proposed checks; no SDK, audio output, listening, device, voice-allocation or performance execution.",
+      "publication_scope": "Support, entry and progress belong to the containing commit."
     }
   ],
   "execution_policy": {
