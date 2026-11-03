@@ -26,5 +26,33 @@
     "Internal optional opportunities differ from mandatory end of text",
     "Default opportunities do not prescribe the chosen greedy layout",
     "No shaping, font measurement, engine or locale-tailoring verification"
-  ]
+  ],
+  "shaping_reuse_increment": {
+    "read_on": "2026-11-03",
+    "version": "HarfBuzz10.0.1",
+    "fixed_commit": "a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc",
+    "sources": [
+      {
+        "url": "https://github.com/harfbuzz/harfbuzz/blob/a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc/src/hb-buffer.h#L44-L89",
+        "scope": "Cluster and unsafe-to-break API comments; neighboring flags read only to avoid conflation, not full shaper audit"
+      },
+      {
+        "url": "https://github.com/harfbuzz/harfbuzz/blob/a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc/docs/usermanual-integration.xml#L26-L74",
+        "scope": "Input segment properties and font responsibilities"
+      },
+      {
+        "url": "https://github.com/harfbuzz/harfbuzz/blob/a1d9bfe62818ef0fa9cf63b6e6d51436b1c93cbc/meson.build#L1-L10",
+        "scope": "Version10.0.1 from source; no binary identity or tag re-resolution"
+      }
+    ],
+    "review": "管理档案/审查/换行机会与塑形复用-增量审读.md",
+    "verification": "Independent source and complete reader review; conditional integration illustration, no shaping or font execution.",
+    "limits": [
+      "Line-break opportunity and shaped-run reuse are separate decisions",
+      "Flag concerns corresponding cluster start, not arbitrary visual glyph index",
+      "No flag does not approve a language break",
+      "Original Unicode table and paper layout unchanged, not reverified against full property database in this increment",
+      "No unsafe-to-concat optimization, glyph measurements, native tests or complete layout algorithm"
+    ]
+  }
 }

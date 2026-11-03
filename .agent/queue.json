@@ -8075,6 +8075,33 @@
       "blockers": [],
       "verification_method": "UE5.6 official documentation and hypothetical integration example; no engine execution.",
       "publication_scope": "Reader text, source, review and progress belong to the containing commit."
+    },
+    {
+      "id": "TASK-2026-0226",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Unicode允许换行时，已塑形的字形结果是否能直接切开复用？",
+      "discipline": "LOC",
+      "status": "published",
+      "priority": 70,
+      "priority_rationale": "Clarify a concrete integration limit in an existing reader support.",
+      "expected_artifact": "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
+      "artifact_paths": [
+        "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
+        "管理档案/来源笔记/unicode-line-break-opportunities.json",
+        "管理档案/审查/换行机会与塑形复用-增量审读.md"
+      ],
+      "acceptance": [
+        "Deduplicate current reader coverage",
+        "Read fixed original API and integration docs",
+        "Independent full reader and source review",
+        "Preserve original Unicode example and navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T17:47:45Z",
+      "next_action": "Maintain cluster-start and input identity limits; no font-output guarantees.",
+      "blockers": [],
+      "verification_method": "Fixed HarfBuzz10.0.1 source documentation and a conditional example; no native execution.",
+      "publication_scope": "Support, source, review and progress belong to containing commit."
     }
   ],
   "execution_policy": {
