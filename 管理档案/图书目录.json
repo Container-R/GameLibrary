@@ -2741,6 +2741,24 @@
       ],
       "source_record": "管理档案/来源笔记/overwatch-statescript.json",
       "reader_sha256": "9fa30eca3112b6d6085de79ee98b1f3f0573a4fea5ce42d18b3fdc60e9feee5f"
+    },
+    {
+      "internal_id": "CASE-ENGINE-003",
+      "reader_title": "Horizon怎样让工具查询资产关系，而不必先读取全部内容",
+      "floor": "引擎与工具",
+      "area": "资产工具",
+      "shelf": "资产查询",
+      "canonical_reader_path": "GameLibrary/引擎与工具/资产工具/资产查询/Horizon怎样让工具查询资产关系，而不必先读取全部内容.md",
+      "current_read_path": "GameLibrary/引擎与工具/资产工具/资产查询/Horizon怎样让工具查询资产关系，而不必先读取全部内容.md",
+      "reader_body_status": "published",
+      "editorial_status": "第一手讲义文字与备注、关键静态图和独立完整读者审读接受；原创门与脚本示意，未运行",
+      "origin": "first-party-historical-asset-indexer-production-case",
+      "scope_note": "显式内容依赖、有限关系索引、提交检查与按需内容分工；不提供完整缓存一致性协议或当前Decima接口。",
+      "review_paths": [
+        "管理档案/审查/Horizon资产查询-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/horizon-asset-query.json",
+      "reader_sha256": "de6f0f26687d691908d107877088606a62bded841aff6407bd73f8ad6af6ca56"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2751,10 +2769,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "57d230daf33088d1d8bac53aecf0531efb0d5a4d",
+  "publication_base_sha": "c532462b45d53e2fbc8501f9d264c98bfb6dea6f",
   "accounted_for_original_items": 55,
-  "reader_books_total": 90,
-  "post_baseline_research_books": 35,
+  "reader_books_total": 91,
+  "post_baseline_research_books": 36,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

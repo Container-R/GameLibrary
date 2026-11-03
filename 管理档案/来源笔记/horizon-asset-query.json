@@ -1,0 +1,28 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/引擎与工具/资产工具/资产查询/Horizon怎样让工具查询资产关系，而不必先读取全部内容.md",
+  "reader_sha256": "de6f0f26687d691908d107877088606a62bded841aff6407bd73f8ad6af6ca56",
+  "review": "管理档案/审查/Horizon资产查询-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "David Marcelis / Guerrilla",
+      "title": "Scaling Tools for Millions of Assets for Horizon Forbidden West",
+      "url": "https://www.guerrilla-games.com/read/scaling-tools-for-millions-of-assets-for-horizon-forbidden-west",
+      "page_date": "2023-05-02",
+      "slide_cover_date": "25/2/2023, not asserted as the event date",
+      "presentation_url": "https://d3d3g8mu99pzk9.cloudfront.net/DavidMarcelis/David%20Marcelis%20-%20Scaling%20Tools%20for%20Millions%20of%20Assets.pptx",
+      "presentation_sha256": "8fab7dda180c68c86106830df75fdcc0d80b8e9fc102682dbc0f53a6884df45c",
+      "reading": "All 84 slides extracted visible text and corresponding speaker notes read by main writer and source-gate reviewer. Article reviewer independently read cited key slides and checked note relationships. Main viewed local static renders of slides 20,35,37,75,76,77; animation details were not fully represented, so lifecycle explanation relies on explicit speaker notes, not inferred diagram topology.",
+      "locators": "14–21,35,37,50,63,67–78; 1-based PPTX slide numbers"
+    }
+  ],
+  "verification": "Historical production case and original hypothetical door/script explanation; no implementation, streaming, indexing or performance experiment.",
+  "limits": [
+    "Index fields are not all object attributes",
+    "Explicit content links do not prove all dynamic dependencies are captured",
+    "Path/size/modification-time extract key is not a universal content identity or invalidation proof",
+    "Submission transaction and concurrency recovery are not supplied by source",
+    "Historical network tradeoffs are not universal database or storage benchmarks",
+    "Original presentation and images are not redistributed"
+  ]
+}
