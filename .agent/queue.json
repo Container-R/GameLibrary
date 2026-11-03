@@ -1784,7 +1784,11 @@
       "artifact_paths": [
         "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
         "管理档案/研究记录/历史单元索引.json",
-        "管理档案/研究记录/source-notes/factorio-derived-cache-sources.md"
+        "管理档案/研究记录/source-notes/factorio-derived-cache-sources.md",
+        "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
+        "管理档案/支持资料/entt-update-notification/README.md",
+        "管理档案/审查/EnTT更新通知-来源与结果审查.md",
+        "管理档案/来源笔记/entt-update-notification.json"
       ],
       "acceptance": [
         "Compact first-party FFF340 account with correct notify/recalculate remedy, not invented serialization fix",
@@ -1792,8 +1796,8 @@
         "Original mutation/cache/read/load worksheet labeled unimplemented; no Factorio runtime or current release claims"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T20:38:45.712878Z",
-      "next_action": "Apply original legal-checkpoint and cache-dependency acceptance questions to actual projects; no shipped-fix or runtime claim",
+      "last_progress_at": "2026-11-03T13:45:33Z",
+      "next_action": "Keep historical Factorio evidence distinct from the optional EnTT update-notification observation; extend only for a concrete reader or engineering gap.",
       "blockers": [],
       "completed_at": "2026-10-31T20:38:45.712878Z",
       "commit_sha": "d86746fab455b45d96cac4cad7a9a439d24b741c",
@@ -1817,7 +1821,14 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "c04aceae2ed3279ecff144690e213062b5d319fa8dcd5bb592cc8d44fb17be55"
         }
-      ]
+      ],
+      "entt_update_support": {
+        "support": "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
+        "package": "管理档案/支持资料/entt-update-notification/README.md",
+        "review": "管理档案/审查/EnTT更新通知-来源与结果审查.md",
+        "source": "管理档案/来源笔记/entt-update-notification.json",
+        "verification": "Fixed EnTT v3.13.2 default-storage source review and two same-operator native repetitions of the same three cases; independent result and reader review, not independent native replication or Factorio evidence."
+      }
     },
     {
       "id": "TASK-2026-0053",

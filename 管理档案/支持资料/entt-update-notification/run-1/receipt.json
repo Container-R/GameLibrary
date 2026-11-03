@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "status": "pass",
+  "processes": [
+    {
+      "argv": [
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-Isource",
+        "fixture.cpp",
+        "-o",
+        "fixture"
+      ],
+      "timeout_seconds": 60,
+      "status": "returned_zero",
+      "returncode": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    },
+    {
+      "argv": [
+        "./fixture"
+      ],
+      "timeout_seconds": 10,
+      "status": "returned_zero",
+      "returncode": 0,
+      "stdout_sha256": "34f20f642909a8a1b8e50b1fea918922a669243f4cf5cc55ff98fe5b62adedeb",
+      "stdout_bytes": 368,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0
+    }
+  ],
+  "scope": "one input, three independent registries",
+  "input_manifest_sha256": "65186c150b7bd98a96dcec89a6c9395d597a605395e7f56e5bc6a33b5f1740aa",
+  "input_hashes": {
+    "PROTOCOL.md": "1014c0eb8ea178fef45850be8e0e9a3a69215ce55d034ddfb8f72191daebdd2e",
+    "fixture.cpp": "b4d008eaf70b147eccfbbd9a82a89ded3ccf0f52674b5abd338ab787deb8eeaa",
+    "checker.py": "a6b86571f0e3e3f996616a0794a327fa74119a3a9c1e766ab5d570b81f4f5709",
+    "expected.json": "7c69434efd6576b5710524306946a7525cd536592a065f1bd1c91171f3ff61c2",
+    "runner.py": "172bc276a9f2ff18a0ec302149564b0d12d68ed90a6b45bb68b146caf83fc8fa",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5"
+  },
+  "consumer": {
+    "result_kind": "consumer_only",
+    "cases": 3,
+    "match": true
+  },
+  "input_hashes_after": {
+    "PROTOCOL.md": "1014c0eb8ea178fef45850be8e0e9a3a69215ce55d034ddfb8f72191daebdd2e",
+    "fixture.cpp": "b4d008eaf70b147eccfbbd9a82a89ded3ccf0f52674b5abd338ab787deb8eeaa",
+    "checker.py": "a6b86571f0e3e3f996616a0794a327fa74119a3a9c1e766ab5d570b81f4f5709",
+    "expected.json": "7c69434efd6576b5710524306946a7525cd536592a065f1bd1c91171f3ff61c2",
+    "runner.py": "172bc276a9f2ff18a0ec302149564b0d12d68ed90a6b45bb68b146caf83fc8fa",
+    "source/LICENSE": "cc00abca23253f78ed25c87b9839ca38fea424c135f5d9f0c5aa7bb5903f1329",
+    "source/entt.hpp": "31be51708c7325ecb7877182fa9ee68a20fb2121ce6bcd6c1687506f0fb1c8b5"
+  },
+  "input_manifest_sha256_after": "65186c150b7bd98a96dcec89a6c9395d597a605395e7f56e5bc6a33b5f1740aa"
+}

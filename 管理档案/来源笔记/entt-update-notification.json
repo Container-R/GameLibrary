@@ -1,0 +1,19 @@
+{
+  "title": "EnTT direct writes versus explicit update notification",
+  "read_on": "2026-11-03",
+  "repository": "skypjack/entt",
+  "version": "v3.13.2",
+  "commit": "78213075654a688e9da6bc49f7f873d25c26d12c",
+  "source_paths": [
+    "src/entt/entity/fwd.hpp",
+    "src/entt/entity/registry.hpp",
+    "src/entt/entity/mixin.hpp",
+    "src/entt/entity/storage.hpp",
+    "src/entt/signal/sigh.hpp"
+  ],
+  "source_scope": "Selected relevant fixed-source ranges, not whole-repository review",
+  "reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+  "support": "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
+  "package": "管理档案/支持资料/entt-update-notification/README.md",
+  "verification": "Fixed EnTT v3.13.2 default-storage source review and two same-operator native repetitions of the same three cases; independent result and reader review, not independent native replication or Factorio evidence."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "20261103T134533Z-entt-update-notification",
+  "task_ids": [
+    "TASK-2026-0052"
+  ],
+  "recorded_at": "2026-11-03T13:45:33Z",
+  "baseline_sha": "5bd76dda573aab28501e3b74270537a79c1f2bfb",
+  "outcome": "accepted-finite-native-support",
+  "reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+  "artifacts": [
+    "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
+    "管理档案/支持资料/entt-update-notification/README.md",
+    "管理档案/审查/EnTT更新通知-来源与结果审查.md",
+    "管理档案/来源笔记/entt-update-notification.json"
+  ],
+  "verification": "Fixed EnTT v3.13.2 default-storage source review and two same-operator native repetitions of the same three cases; independent result and reader review, not independent native replication or Factorio evidence.",
+  "native_attempts": 2,
+  "native_accepted": 2,
+  "distinct_cases": 3,
+  "independent_native_reruns": 0,
+  "counts": {
+    "reader_books": 85,
+    "frozen_baseline": 55,
+    "post_baseline": 30,
+    "queue_tasks": 211
+  },
+  "counts_are_not_quality_evidence": true
+}
