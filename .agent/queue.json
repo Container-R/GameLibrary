@@ -2866,7 +2866,10 @@
         "管理档案/研究记录/source-notes/killzone3-plan-execution-continuation.md",
         "管理档案/支持资料/条件已经变了，行为树为什么还在继续移动.md",
         "管理档案/来源笔记/behavior-tree-reactive-sequence.json",
-        "管理档案/审查/行为树条件重评估-来源与读者审查.md"
+        "管理档案/审查/行为树条件重评估-来源与读者审查.md",
+        "管理档案/支持资料/每个机器人都选了最近的据点，为什么另一处没人守.md",
+        "管理档案/审查/团队目标人数分配-来源与读者审查.md",
+        "管理档案/来源笔记/killzone-objective-assignment.json"
       ],
       "acceptance": [
         "Read original author chapter29 GameAIPro2013 and exact task/continuation/queue pages",
@@ -2876,7 +2879,7 @@
         "Independent source/editorial review and exact crosslinks to existing navigation/programming evidence"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T18:13:29Z",
+      "last_progress_at": "2026-11-03T11:42:47Z",
       "next_action": "Maintain historical Killzone scope and separate fixed BehaviorTree.CPP optional control-flow comparison; neither is a native cancellation guarantee.",
       "blockers": [],
       "completed_at": "2026-11-01T01:13:23.479743Z",
@@ -2895,7 +2898,13 @@
           "sha256": "78d19d2e30b29db5d23bda3bf3fd894f9f414464d2cdd823e11c790e7d0da40c"
         }
       ],
-      "latest_maintenance_scope": "Optional source-only two-tick sequence comparison; original historical publication identity and completion retained."
+      "latest_maintenance_scope": "Optional source-only two-tick sequence comparison; original historical publication identity and completion retained.",
+      "team_assignment_support": {
+        "support": "管理档案/支持资料/每个机器人都选了最近的据点，为什么另一处没人守.md",
+        "review": "管理档案/审查/团队目标人数分配-来源与读者审查.md",
+        "source": "管理档案/来源笔记/killzone-objective-assignment.json",
+        "scope": "Primary historical source and independently checked original four-bot fixed-cost counterexample; no execution."
+      }
     },
     {
       "id": "TASK-2026-0077",

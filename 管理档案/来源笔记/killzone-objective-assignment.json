@@ -1,0 +1,30 @@
+{
+  "title": "Team objective demand is distinct from individual nearest-target choice",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "authors": [
+        "Remco Straatman",
+        "Tim Verweij",
+        "Alex Champandard",
+        "Robert Morcus",
+        "Hylke Kleve"
+      ],
+      "title": "Hierarchical AI for Multiplayer Bots in Killzone 3",
+      "publication": "Game AI Pro volume1 chapter29",
+      "url": "https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter29_Hierarchical_AI_for_Multiplayer_Bots_in_Killzone_3.pdf",
+      "used_pages": "Printed386–388 section29.6.1 and389 section29.8",
+      "read_scope": "Main all14 extracted text pages; independent byline and commander sections386–388, then389 future-work text. No actual image, video or game examination."
+    }
+  ],
+  "reader": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+  "support": "管理档案/支持资料/每个机器人都选了最近的据点，为什么另一处没人守.md",
+  "review": "管理档案/审查/团队目标人数分配-来源与读者审查.md",
+  "verification": "Primary historical source and independently checked original four-bot fixed-cost counterexample; no execution.",
+  "limits": [
+    "Desired counts in historical source are not the illustrative hard two-per-objective rule",
+    "No reconstruction of full production assignment algorithm or coefficients",
+    "No global-optimality, dynamic stability, performance or win-rate claim",
+    "No invocation of HTN future-work exploration as shipped base implementation"
+  ]
+}
