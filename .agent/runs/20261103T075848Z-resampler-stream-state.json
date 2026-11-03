@@ -1,0 +1,25 @@
+{
+  "id": "20261103T075848Z-resampler-stream-state",
+  "task_ids": [
+    "TASK-2026-0042"
+  ],
+  "recorded_at": "2026-11-03T07:58:48Z",
+  "baseline_sha": "8726baa6d7d97d139fead068acf667d295191b13",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+  "artifacts": [
+    "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+    "管理档案/审查/连续分块重采样-来源与读者审查.md",
+    "管理档案/来源笔记/libsamplerate-stream-state.json"
+  ],
+  "verification": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening.",
+  "native_runs": 0,
+  "existing_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

@@ -1020,7 +1020,16 @@
       "supporting_material": "solutions/music/pcm-loop-frame-contract.md#7-编码补充呈现帧数最终-granule-与包时长不是同一数字",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/music/pcm-loop-frame-contract.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_sha256": "d0b8b9cad5fffd419488fe689a0a447a2627d9ca51e2d9aa61af39078a5b3997",
+      "resampler_support": {
+        "path": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+        "review": "管理档案/审查/连续分块重采样-来源与读者审查.md",
+        "scope": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening."
+      },
+      "review_paths": [
+        "管理档案/审查/连续分块重采样-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "SOL-PLATFORM-001",

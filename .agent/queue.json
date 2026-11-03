@@ -1352,13 +1352,16 @@
         "Independent byte/frame oracle; no hearing/device/middleware guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T19:23:05.063665Z",
+      "last_progress_at": "2026-11-03T07:58:48Z",
       "next_action": "Maintain finite offline scope; target middleware and listening remain untested",
       "blockers": [],
       "completed_at": "2026-10-31T19:23:05.063665Z",
       "commit_sha": "9ebc9baf78c3a61bd014bf14b9d710485f7ba6c5",
       "artifact_paths": [
-        "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md"
+        "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+        "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+        "管理档案/审查/连续分块重采样-来源与读者审查.md",
+        "管理档案/来源笔记/libsamplerate-stream-state.json"
       ],
       "historical_artifacts": [
         {
@@ -1367,7 +1370,13 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "86e0a3c9a37ac16e47e6a3b223d1b5a36e1860d05cad202f0a62d23c7195080c"
         }
-      ]
+      ],
+      "resampler_reader_support": {
+        "support": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+        "review": "管理档案/审查/连续分块重采样-来源与读者审查.md",
+        "source": "管理档案/来源笔记/libsamplerate-stream-state.json",
+        "scope": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening."
+      }
     },
     {
       "id": "TASK-2026-0043",

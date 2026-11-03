@@ -1,0 +1,23 @@
+{
+  "title": "libsamplerate continuous stream state and actual frame accounting",
+  "upstream_repository": "libsndfile/libsamplerate",
+  "tag": "0.2.2",
+  "commit": "c96f5e3de9c4488f4e6c97f59f5245f22fda22f7",
+  "urls": [
+    "https://libsndfile.github.io/libsamplerate/api_full.html",
+    "https://libsndfile.github.io/libsamplerate/faq.html",
+    "https://github.com/libsndfile/libsamplerate/tree/c96f5e3de9c4488f4e6c97f59f5245f22fda22f7"
+  ],
+  "read_on": "2026-11-03",
+  "read_scope": "Official API and FAQ; fixed header, samplerate.c, linear implementation. Upstream streaming test read by main and independent reviewer; termination test by main only. No tests executed.",
+  "reader": "GameLibrary/声音与音乐/音频制作/循环素材/如何标记和检查PCM音乐循环区间.md",
+  "support": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+  "review": "管理档案/审查/连续分块重采样-来源与读者审查.md",
+  "verification": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening.",
+  "limits": [
+    "No uniform converter flush recipe",
+    "No installed binary provenance certification",
+    "No real-time safety, arbitrary partition equivalence or audio quality guarantee",
+    "Existing PCM and Opus observations unchanged and not reused as this support evidence"
+  ]
+}
