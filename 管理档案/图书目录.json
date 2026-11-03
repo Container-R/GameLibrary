@@ -2079,13 +2079,20 @@
         "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
-      "reader_sha256": "92546850c140c9eed57decef3442c359c8fbf7bad06c3a996f20a63b483b2939",
+      "reader_sha256": "3743294da80cca87280e7879b09cb2792cce205938c0fb4181c6f710cfe985ba",
       "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md",
       "c_backup_completion_increment": {
         "scope": "Source-only C step/finish distinction and hypothetical cancellation versus completion; no new execution.",
         "source_note": "管理档案/来源笔记/sqlite-backup-step-and-finish.json",
         "reader_review": "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
         "reader_sha256": "92546850c140c9eed57decef3442c359c8fbf7bad06c3a996f20a63b483b2939"
+      },
+      "statement_binding_support": {
+        "support_path": "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+        "support_sha256": "e031ea382af52f2a1a68ec61f8eddf5326d6cc013b76137cb7172749be4e0d6d",
+        "source_record": "管理档案/来源笔记/sqlite-reset-binding.json",
+        "review": "管理档案/审查/SQLite语句重置与参数保留-来源与读者审查.md",
+        "scope": "Official C API contract and hypothetical row values; prior backup experiments unchanged."
       }
     },
     {
@@ -2218,7 +2225,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "7b25efaeca86d7e23df17b8e8a3840179c60400a",
+  "publication_base_sha": "1368dff47c1f09d9a99eedd980a7991712a316da",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,

@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T00:38:58Z",
+      "last_progress_at": "2026-11-03T00:47:58Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7128,7 +7128,10 @@
         "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
         "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md",
         "管理档案/来源笔记/sqlite-backup-step-and-finish.json",
-        "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md"
+        "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
+        "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+        "管理档案/来源笔记/sqlite-reset-binding.json",
+        "管理档案/审查/SQLite语句重置与参数保留-来源与读者审查.md"
       ],
       "acceptance": [
         "Read official WAL, backup, checkpoint and binding documentation",
@@ -7138,11 +7141,11 @@
         "Separate same-environment observation from crash, concurrency and multi-file guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T14:52:24Z",
+      "last_progress_at": "2026-11-03T00:47:58Z",
       "next_action": "For a real save system, define the intended business save boundary and restoration checks before integrating backup; this finite observation does not validate project recovery.",
       "blockers": [],
       "verification_method": "One author and one independent same-environment native SQLite observation through Python, seven separate synthetic consumer calls, targeted official-source and independent full-reader review.",
-      "latest_reader_maintenance": "Optional source-backed C API explanation distinguishes copying completion from successful cleanup; existing Python observations unchanged."
+      "latest_reader_maintenance": "Optional source-write parameter reuse explanation; distinguishes wrong source values from backup omission, no new database experiment."
     },
     {
       "id": "TASK-2026-0205",

@@ -1,0 +1,28 @@
+{
+  "read_on": "2026-11-03",
+  "reader_support": "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+  "support_sha256": "e031ea382af52f2a1a68ec61f8eddf5326d6cc013b76137cb7172749be4e0d6d",
+  "parent_reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+  "sources": [
+    {
+      "url": "https://sqlite.org/c3ref/reset.html",
+      "scope": "Complete API body; reset retains bindings and return codes require checking"
+    },
+    {
+      "url": "https://sqlite.org/c3ref/clear_bindings.html",
+      "scope": "Complete short API body; host parameters becomeNULL"
+    },
+    {
+      "url": "https://sqlite.org/c3ref/bind_blob.html",
+      "scope": "Complete API body read; only integer binding/order and NULL semantics used"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_createtable.html#not_null_constraints",
+      "scope": "Sections3.8 and4.1; page marks updated2025-04-30"
+    }
+  ],
+  "version_scope": "Rolling official documentation, not fixed SQLite source or prior Python runtime identity.",
+  "example_scope": "Original hypothetical two-row integer save and alternative second-row branches; no SQL/native execution.",
+  "limits": "No string buffer lifetime, ORM equivalence, statement pool concurrency or complete retry protocol.",
+  "review": "管理档案/审查/SQLite语句重置与参数保留-来源与读者审查.md"
+}
