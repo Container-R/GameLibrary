@@ -1,0 +1,42 @@
+{
+  "title": "Deferred scene activation and a conditional application waiting cycle",
+  "publisher": "Unity Technologies",
+  "read_on": "2026-11-03",
+  "versions": [
+    "Unity Engine documentation 6000.0",
+    "Addressables documentation 2.7.6, served by @2.7 routes"
+  ],
+  "sources": [
+    {
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/AsyncOperation-allowSceneActivation.html",
+      "scope": "Complete technical Remarks and example; normal same-series redirect"
+    },
+    {
+      "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/manual/LoadingScenes.html",
+      "scope": "Complete technical body including queue warning; not linked project execution"
+    },
+    {
+      "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/api/UnityEngine.AddressableAssets.Addressables.LoadSceneAsync.html",
+      "scope": "First object/LoadSceneMode/bool/int/SceneReleaseMode overload declaration, parameters and return; not all overloads"
+    },
+    {
+      "url": "https://docs.unity3d.com/Packages/com.unity.addressables@2.7/api/UnityEngine.ResourceManagement.ResourceProviders.SceneInstance.ActivateAsync.html",
+      "scope": "Complete method technical body and return type"
+    },
+    {
+      "url": "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html",
+      "scope": "First int/LoadSceneMode overload declaration, return, Remarks and example; not all overloads"
+    }
+  ],
+  "reader": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
+  "support": "管理档案/支持资料/Unity场景暂不激活时，为什么会等不到后面的加载.md",
+  "review": "管理档案/审查/延迟场景激活-来源与读者审查.md",
+  "verification": "Versioned official documentation and independently reviewed conditional dependency analysis; no Unity, scene build, loading adapter, scheduling implementation or runtime execution.",
+  "limits": [
+    "Host equipment-assets policy remains Addressables 1.21.21; new scene support is separately scoped",
+    "Engine AsyncOperation is not the Addressables wrapper handle",
+    "No claim that all threads, tasks or network requests stop",
+    "A/B waiting cycle requires all three stated premises",
+    "No certified engine/package combination, cache/mode timing or complete cancellation/unload adapter"
+  ]
+}

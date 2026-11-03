@@ -5954,7 +5954,10 @@
       "expected_artifact": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
       "artifact_paths": [
         "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
-        "管理档案/审查/装备预览加载-来源与读者审查.md"
+        "管理档案/审查/装备预览加载-来源与读者审查.md",
+        "管理档案/支持资料/Unity场景暂不激活时，为什么会等不到后面的加载.md",
+        "管理档案/审查/延迟场景激活-来源与读者审查.md",
+        "管理档案/来源笔记/unity-deferred-scene-activation-queue.json"
       ],
       "acceptance": [
         "Separate user intent from underlying work and reference lifetime",
@@ -5963,10 +5966,16 @@
         "Independent full-reader/source and actual local retrieval review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T20:25:42Z",
+      "last_progress_at": "2026-11-03T09:17:26Z",
       "next_action": "Use as limited design and versioned documentation analysis; actual adapter, reentrancy synchronization and engine tests remain unimplemented.",
       "blockers": [],
-      "verification_method": "Original application reasoning, primary versioned docs and independent agent review; no Unity, native or memory/network performance test."
+      "verification_method": "Original application reasoning, primary versioned docs and independent agent review; no Unity, native or memory/network performance test.",
+      "scene_activation_support": {
+        "support": "管理档案/支持资料/Unity场景暂不激活时，为什么会等不到后面的加载.md",
+        "review": "管理档案/审查/延迟场景激活-来源与读者审查.md",
+        "source": "管理档案/来源笔记/unity-deferred-scene-activation-queue.json",
+        "scope": "Versioned official documentation and independently reviewed conditional dependency analysis; no Unity, scene build, loading adapter, scheduling implementation or runtime execution."
+      }
     },
     {
       "id": "TASK-2026-0161",

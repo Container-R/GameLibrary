@@ -1872,9 +1872,10 @@
       "scope_note": "原创应用策略与Addressables1.21.21文档条件；不是可直接投产的取消管理器",
       "review_paths": [
         "管理档案/审查/装备预览加载-来源与读者审查.md",
-        "管理档案/审查/NativeArray副本与释放-读者化审查.md"
+        "管理档案/审查/NativeArray副本与释放-读者化审查.md",
+        "管理档案/审查/延迟场景激活-来源与读者审查.md"
       ],
-      "reader_sha256": "cd59c00a24b3e0bac24826163adfc717ac167701ff4a604cc92ef4b422979e20",
+      "reader_sha256": "4ee1c8b105fa712261994db6fada943a10eb05f11dc65d77c89776f2569892ef",
       "nativearray_support": {
         "scope": "Existing fixed-source analysis rewritten for readers, explicitly distinct from Addressables reference ownership.",
         "support_path": "管理档案/研究记录/source-notes/nativearray-copy-and-disposal-ownership.md",
@@ -1882,6 +1883,13 @@
         "source_note": "管理档案/来源笔记/nativearray-reader-treatment.json",
         "reader_sha256": "cd59c00a24b3e0bac24826163adfc717ac167701ff4a604cc92ef4b422979e20",
         "support_sha256": "f6b5833fe9dadf9da9ce681cf4610669ad4eaaa7a59e4af2b6553d47628dcf1d"
+      },
+      "scene_activation_support": {
+        "path": "管理档案/支持资料/Unity场景暂不激活时，为什么会等不到后面的加载.md",
+        "sha256": "76ed9764fa78ebf3dff77e5139ca0af3faf101ff8804a8aa809dd08615686a94",
+        "review": "管理档案/审查/延迟场景激活-来源与读者审查.md",
+        "source": "管理档案/来源笔记/unity-deferred-scene-activation-queue.json",
+        "scope": "Versioned official documentation and independently reviewed conditional dependency analysis; no Unity, scene build, loading adapter, scheduling implementation or runtime execution."
       }
     },
     {
