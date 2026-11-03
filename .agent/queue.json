@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T05:17:06Z",
+      "last_progress_at": "2026-11-03T05:29:22Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -661,8 +661,8 @@
         "https://github.com/inkle/ink"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T14:04:29.220255Z",
-      "next_action": "来源审计已发布；实际ink回调/恢复验证仍需合适运行环境，不以模型替代",
+      "last_progress_at": "2026-11-03T05:29:22Z",
+      "next_action": "Maintain fixed-source limits; any future runtime validation needs newly confirmed compiler/runtime and a frozen finite protocol, not this paper analysis.",
       "blockers": [],
       "completed_at": "2026-10-31T14:05:24.852332Z",
       "commit_sha": "97ad7653fa99ab1560e00f25d276d5581b3a3bfd",
@@ -673,7 +673,14 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "4b2d56d4c24629de010761a56ce59eea81c0452e471bcb8fdb74314b6d658acf"
         }
-      ]
+      ],
+      "artifact_paths": [
+        "管理档案/研究记录/source-notes/ink-v1.2.1-host-boundary.md",
+        "管理档案/研究记录/source-notes/ink-save-content-compatibility.md",
+        "管理档案/来源笔记/ink-background-save-boundary.json",
+        "管理档案/审查/ink后台保存-固定源码与读者审查.md"
+      ],
+      "latest_reader_maintenance": "Fixed-source background serialization section added to existing technical support; narrative role reader unchanged. No runtime or thread-safety certification."
     },
     {
       "id": "TASK-2026-0021",

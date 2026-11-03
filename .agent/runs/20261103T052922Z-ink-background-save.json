@@ -1,0 +1,23 @@
+{
+  "run_id": "20261103T052922Z-ink-background-save",
+  "observed_at": "2026-11-03T05:29:22Z",
+  "parent_verified_head": "5a5ce930142fb20b26078e2ebd9ae74bdcf02dd8",
+  "task": "TASK-2026-0020",
+  "unchanged_reader": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+  "unchanged_reader_sha256": "5aee47043a8665504e0c401444119a7a2961f8edd5627f161079604f2e99d503",
+  "host_support": "管理档案/研究记录/source-notes/ink-v1.2.1-host-boundary.md",
+  "host_support_sha256": "0f2330bb713c66ea9f3c975baad5d5f3ab9a68118ec36628d6c707d1c894e29d",
+  "section_sha256": "0de919707d50096b9259b2941154f51fe40c6975bdd755c0da97f3e7001e1bed",
+  "compatibility_entry": "管理档案/研究记录/source-notes/ink-save-content-compatibility.md",
+  "compatibility_sha256": "4684175d043bb153eca8a118fbc1a348161cb0cbe32db282e30b598150f5f3fc",
+  "source_note": "管理档案/来源笔记/ink-background-save-boundary.json",
+  "review": "管理档案/审查/ink后台保存-固定源码与读者审查.md",
+  "outcome": "Separate the captured serialization object from patching live state and distinguish the save-release signal from durable file or host-state commit.",
+  "verification_scope": "Fixed C# source paths and independent reader review; conditional state reasoning, no compiled story, threads or JSON output.",
+  "reader_inventory": {
+    "current": 83,
+    "frozen": 55,
+    "post_baseline": 28
+  },
+  "publication": "Support and public records belong to same containing commit; parent_verified_head is preceding verified revision."
+}

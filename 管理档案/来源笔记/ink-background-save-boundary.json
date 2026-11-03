@@ -1,0 +1,80 @@
+{
+  "topic": "ink background state serialization ownership",
+  "observed_on": "2026-11-03",
+  "fixed_repository": "inkle/ink",
+  "fixed_commit": "35c63e52f1d36060930dc7ed3cfba38ea224b528",
+  "version_label": "v1.2.1 as previously resolved; this study pins the commit rather than re-resolving the current tag",
+  "classification": "fixed-source analysis and declared state-transition reasoning; no runtime",
+  "sources": [
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs",
+      "read_ranges": [
+        "300-367",
+        "388-460",
+        "783-869",
+        "1775-1779",
+        "2948-2956"
+      ],
+      "scope": "Capture, flow guards, async evaluation gate, newline snapshots and completion."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/StoryState.cs",
+      "read_ranges": [
+        "25-61",
+        "65-159",
+        "548-794"
+      ],
+      "scope": "Serialization/load entrances, count updates, patching copy, shared fields, merge and JSON output."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/VariablesState.cs",
+      "read_ranges": [
+        "1-429"
+      ],
+      "scope": "Source reviewer read full file; main and independent review focus getter, write/merge/JSON and load paths."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/StatePatch.cs",
+      "read_ranges": [
+        "1-66"
+      ],
+      "scope": "Source reviewer and main full small file."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Choice.cs",
+      "scope": "Full small file read; not a universal deep-copy guarantee."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Flow.cs",
+      "scope": "Source reviewer full file; choice-thread serialization support."
+    },
+    {
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/CallStack.cs",
+      "read_ranges": [
+        "2-54",
+        "106-145",
+        "176-232"
+      ],
+      "scope": "Source reviewer selected copy and serialization methods, not whole file."
+    }
+  ],
+  "mechanism": "Capture returns former state while Story.state points to a patching copy. Base global/count storage is shared; designated serialization reads base data while normal updates use a patch. Completion can merge immediately or defer through a newline snapshot.",
+  "host_constraint": "Serialize the returned state, coordinate completion only after reads have ended, and serialize Story operations on an owning thread. This is an integration constraint inferred from shared mutations, not an implementation thread-ID assertion or complete concurrency proof.",
+  "original_example": "Default global report_count0, captured value1, later normal update2, no previous patch/newline snapshot or load/reset/flow-management/content mutation. Conditional source reasoning only, no story compilation or produced JSON.",
+  "not_claimed": [
+    "full object immutability",
+    "arbitrary multi-threaded Story access",
+    "all invalid lifecycle operations are rejected",
+    "observed data race or library defect",
+    "file durability or host inventory transaction",
+    "complete exception/cancellation strategy"
+  ],
+  "host_support": "管理档案/研究记录/source-notes/ink-v1.2.1-host-boundary.md",
+  "host_support_sha256": "0f2330bb713c66ea9f3c975baad5d5f3ab9a68118ec36628d6c707d1c894e29d",
+  "section_sha256": "0de919707d50096b9259b2941154f51fe40c6975bdd755c0da97f3e7001e1bed",
+  "compatibility_entry": "管理档案/研究记录/source-notes/ink-save-content-compatibility.md",
+  "compatibility_sha256": "4684175d043bb153eca8a118fbc1a348161cb0cbe32db282e30b598150f5f3fc",
+  "unchanged_reader": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+  "unchanged_reader_sha256": "5aee47043a8665504e0c401444119a7a2961f8edd5627f161079604f2e99d503",
+  "review": "管理档案/审查/ink后台保存-固定源码与读者审查.md"
+}
