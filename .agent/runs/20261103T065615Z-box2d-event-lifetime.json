@@ -1,0 +1,32 @@
+{
+  "id": "20261103T065615Z-box2d-event-lifetime",
+  "task_ids": [
+    "TASK-2026-0161"
+  ],
+  "recorded_at": "2026-11-03T06:56:15Z",
+  "baseline_sha": "2a4efc2ee455b469872e0b10bbc1e05b85c5c9eb",
+  "outcome": "accepted-source-and-reader-increment",
+  "changed_reader": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "artifacts": [
+    "管理档案/来源笔记/box2d-sensor-end-lifetime.json",
+    "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
+    ".agent/audits/20261103T065000Z-reader.md"
+  ],
+  "verification": "Fixed official source and complete independent reader review only; no new native execution.",
+  "native_runs": 0,
+  "existing_observations_unchanged": true,
+  "limits": [
+    "No destruction timeline execution",
+    "No concurrent access or generation-wrap guarantee",
+    "No production entity-lifetime framework"
+  ],
+  "reader_review_correction": "Clarified that body/shape destruction can invalidate event data as well as object identity; no runtime evidence changed.",
+  "closed_duplicate_gate": "Existing glTF/baking reader already covers tangent corner identity, reindexing and finite MikkTSpace observations; no repeated article or experiment.",
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

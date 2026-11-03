@@ -1,0 +1,49 @@
+{
+  "title": "Box2D sensor end event identity lifetime",
+  "version": "3.2.0",
+  "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "read_on": "2026-11-03",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "reader_sha256": "01b21e9c316a32c081e4573ddd90fb7222beb2a3bf429a83f1bac996435f4f51",
+  "verification": "Fixed official source and complete independent reader review only; no new native execution.",
+  "sources": [
+    {
+      "path": "include/box2d/types.h",
+      "lines": "1041–1100",
+      "scope": "Event-array modification caveats, both sensor/visitor IDs may refer to destroyed shapes"
+    },
+    {
+      "path": "include/box2d/box2d.h",
+      "lines": "63–65,727–752",
+      "scope": "Transient sensor event data and shape identity/accessor declarations"
+    },
+    {
+      "path": "docs/simulation.md",
+      "lines": "1070–1175",
+      "scope": "Sensor processing and event consumption guidance"
+    },
+    {
+      "path": "src/shape.c",
+      "lines": "19–26,150–172,384–498,1176–1203",
+      "scope": "Shape access, allocation generation, sensor destruction and accessors"
+    },
+    {
+      "path": "src/sensor.c",
+      "lines": "1–125,138–411",
+      "scope": "Stored overlap references and event differences, not whole-algorithm certification"
+    },
+    {
+      "path": "src/physics_world.c",
+      "lines": "890–915,1010–1032,1494–1516,1617–1649",
+      "scope": "Selected event buffers/getter and shape validity, not full world-step review"
+    }
+  ],
+  "source_base_url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/",
+  "existing_native_scope": "Existing two-configuration crossing observations do not execute destruction-generated end events; original inputs/output remain unchanged.",
+  "limits": [
+    "No destruction timeline execution",
+    "No concurrent access or generation-wrap guarantee",
+    "No production entity-lifetime framework"
+  ],
+  "reader_review": "管理档案/审查/传感结束事件-对象有效性与读者审查.md"
+}

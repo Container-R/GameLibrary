@@ -1845,13 +1845,20 @@
       "origin": "readerization-of-existing-box2d-sensor-step-and-sweep-note",
       "scope_note": "端点占用与区间经过的区别；固定3.1.1和3.2.0条件，不是跨引擎CCD保证",
       "review_paths": [
-        "管理档案/审查/触发区域穿越-来源与读者审查.md"
+        "管理档案/审查/触发区域穿越-来源与读者审查.md",
+        "管理档案/审查/传感结束事件-对象有效性与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Fixed-version static-sensor crossing and event-setting limits; detailed observations and limitations are in linked support.",
         "reader_review": "管理档案/审查/传感区穿越-原生与读者审查.md",
         "support_path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
         "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a"
+      },
+      "reader_sha256": "01b21e9c316a32c081e4573ddd90fb7222beb2a3bf429a83f1bac996435f4f51",
+      "event_identity_increment": {
+        "source": "管理档案/来源笔记/box2d-sensor-end-lifetime.json",
+        "review": "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
+        "scope": "Source-only event-data vs shape-ID lifetime distinction; original crossing observations unchanged"
       }
     },
     {
