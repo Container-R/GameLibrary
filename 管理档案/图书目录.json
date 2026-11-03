@@ -71,7 +71,7 @@
         "image_files_published": 0,
         "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
       },
-      "reader_sha256": "c30ba8dfa9a6f82b66f8e07653eee32ef2daf990d7eb3ff04fa0cb6a17740e65",
+      "reader_sha256": "f81cea31825a77e8c9917356dc940fe1322edcc525f757372a90d8796bb7e04c",
       "visual_structure_support": {
         "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
         "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
@@ -86,8 +86,17 @@
         "scope": "Primary historical production interview plus independently reviewed original two-box handoff example; no execution."
       },
       "review_paths": [
-        "管理档案/审查/环境道具交互类别-来源与读者审查.md"
-      ]
+        "管理档案/审查/环境道具交互类别-来源与读者审查.md",
+        "管理档案/审查/模块套件回接-来源与读者审查.md"
+      ],
+      "modular_kit_support": {
+        "path": "管理档案/支持资料/走廊绕回房间却接不上，为什么不急着补一块短墙.md",
+        "sha256": "870078fbbb5610aad31d13a192e21e9d93a751e550d178c7f4dffc20c718fd7f",
+        "source": "管理档案/来源笔记/skyrim-modular-closure.json",
+        "review": "管理档案/审查/模块套件回接-来源与读者审查.md",
+        "previous_reader_sha256": "c30ba8dfa9a6f82b66f8e07653eee32ef2daf990d7eb3ff04fa0cb6a17740e65",
+        "scope": "Optional support only; original concept text and previous evidence preserved."
+      }
     },
     {
       "internal_id": "ROLE-ART2D-002",
@@ -2705,7 +2714,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c43972a0e526a3034444f5fcaea94c49e00221ff",
+  "publication_base_sha": "7779670119fb3f953147d4fdb668e1644c73ab82",
   "accounted_for_original_items": 55,
   "reader_books_total": 90,
   "post_baseline_research_books": 35,
