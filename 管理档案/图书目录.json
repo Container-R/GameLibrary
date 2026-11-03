@@ -763,14 +763,20 @@
         "reader_sha256": "418db06b5a21d7bafd11cf5f3fba4c49a44b00e3e1d4914f4912c86998ab73ea",
         "support_sha256": "2c270f28806dbedcf5bd4f60da8f32ce455e0c0a729ee9fab53fc31abcd6032b"
       },
-      "reader_sha256": "ce521e135cde575918d43ee3276edcebbe31d82eef5abd0fafc8c7f1d86872e5",
+      "reader_sha256": "06fecee16ee5d2514abc54f992f05b31379a6c5db1aad7339e555d2c2bebbe3a",
       "review_paths": [
-        "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md"
+        "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
+        "管理档案/审查/惯性化过渡-源序列通知审读.md"
       ],
       "lookat_offset_comparison": {
         "source": "管理档案/来源笔记/ffxvi-lookat-offset.json",
         "review": "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
         "scope": "Short source-grounded production-talk comparison: preserve base animation while tracking IK offsets; selected slide text and speaker notes only, no image/video/game execution or new scalar-model result."
+      },
+      "source_notification_scope": {
+        "source": "管理档案/来源笔记/inertial-source-notifications.json",
+        "review": "管理档案/审查/惯性化过渡-源序列通知审读.md",
+        "scope": "UE5.6 versioned source-sequence notification limit after inertial blending begins; no runtime observation or change to scalar evidence."
       }
     },
     {
@@ -2742,7 +2748,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "b61b231db5716095146c01f48034b79cfbe75ea8",
+  "publication_base_sha": "310a57d76572dcc1ee28ee4cdb6cc05135a89841",
   "accounted_for_original_items": 55,
   "reader_books_total": 90,
   "post_baseline_research_books": 35,

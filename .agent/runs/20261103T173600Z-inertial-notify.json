@@ -1,0 +1,28 @@
+{
+  "run_id": "20261103T173600Z-inertial-notify",
+  "base_sha": "310a57d76572dcc1ee28ee4cdb6cc05135a89841",
+  "task_ids": [
+    "TASK-2026-0225"
+  ],
+  "outcome": "Reader, source, review and progress published together in containing commit; verify reference and readback after update.",
+  "scope": "Finite UE5.6 source-sequence notification clarification in existing inertialization article; no new book or execution.",
+  "reader_books_total": 90,
+  "post_baseline_research_books": 35,
+  "frozen_baseline_books": 55,
+  "task_count": 225,
+  "artifact_paths": [
+    "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+    "管理档案/来源笔记/inertial-source-notifications.json",
+    "管理档案/审查/惯性化过渡-源序列通知审读.md"
+  ],
+  "checks": {
+    "independent_source_and_complete_reader_review": "accepted",
+    "new_native_runs": 0
+  },
+  "previous_content_readback": {
+    "sha": "310a57d76572dcc1ee28ee4cdb6cc05135a89841",
+    "changed_files_exact": 10,
+    "actual_remote_edges": 13,
+    "canonical_blobs_matched": 1749
+  }
+}

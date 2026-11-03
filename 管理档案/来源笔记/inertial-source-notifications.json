@@ -1,0 +1,24 @@
+{
+  "topic": "Inertial pose continuity does not promise future source-sequence notifications",
+  "source": {
+    "organization": "Epic Games",
+    "title": "Animation Blueprint Blend Nodes",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-blueprint-blend-nodes-in-unreal-engine?application_version=5.6",
+    "version": "Unreal Engine 5.6 documentation; mutable versioned page, not immutable source code",
+    "accessed_on": "2026-11-03",
+    "read_scope": "Inertialization through node comparison; request sections for Blend Nodes, State Machine Transitions and linked graphs. Text only, no images or video.",
+    "locator": "Inertialization and warning after Additive Inertial Blending; extracted lines 121–151 and 188–201",
+    "supported_claim": "Once inertial blending begins, the source pose is no longer evaluated and Animation Notifies from the source sequence no longer trigger."
+  },
+  "application_inference": "A hypothetical sustained effect whose only shutdown point is a later source-sequence notification needs an independently specified interruption cleanup policy. This is not an observed engine failure or an implemented cleanup framework.",
+  "limits": [
+    "No Unreal Engine execution or source-code inspection",
+    "No conclusion about Notify State End, montage update paths, already delivered notifications or other engines",
+    "The existing scalar spring explanation is not asserted to implement Epic's node",
+    "Existing scalar observations and CEDEC comparison are unchanged; not rerun or reverified by this increment"
+  ],
+  "deduplication": "Current scalar article lacks this concrete notification contract; general asynchronous-resource cancellation already adequately covered and left unchanged.",
+  "review_status": "accepted",
+  "reader_path": "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+  "review_path": "管理档案/审查/惯性化过渡-源序列通知审读.md"
+}
