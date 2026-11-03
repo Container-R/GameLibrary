@@ -1,0 +1,46 @@
+{
+  "topic": "D3D12 process budget changes without a texture-content change",
+  "observed_on": "2026-11-03",
+  "classification": "source-backed interface interpretation and declared arithmetic example",
+  "sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_4/ns-dxgi1_4-dxgi_query_video_memory_info",
+      "updated_on": "2024-02-22",
+      "read_scope": "Full technical body: four members, remarks and requirements.",
+      "adopted": "Budget is process target; CurrentUsage current application usage; reservation fields are not a count of available allocation bytes."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-queryvideomemoryinfo",
+      "updated_on": "2024-02-22",
+      "read_scope": "Full technical body including NodeIndex, memory segment group, HRESULT and remarks.",
+      "adopted": "Interpret successful query output within the specified node and local/non-local segment group."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiadapter3-setvideomemoryreservation",
+      "updated_on": "2024-02-22",
+      "read_scope": "Full technical body including parameters, HRESULT and remarks.",
+      "adopted": "Reservation communicates minimum working-set needs; this is not heap/resource creation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/direct3d12/residency",
+      "updated_on": "2021-12-30",
+      "read_scope": "Full technical body read; reader use limited to Residency budget paragraphs and reservation restrictions.",
+      "adopted": "Process budget can change with background activity and application focus. Reservation does not increase the normally received budget and availability is not guaranteed in background.",
+      "not_adopted": "Dated hardware-wide page-fault statement, priority algorithm, architecture-wide behavior or a complete residency implementation."
+    }
+  ],
+  "version_limit": "Rolling official pages, not a tested SDK, driver or hardware identity.",
+  "original_example": "Same process/node/segment group, current usage remains3GiB while budget changes4GiB to2GiB. Paper conditions only, not a measured transition or recommended graphics setting.",
+  "not_claimed": [
+    "GPU execution",
+    "actual memory budget query",
+    "future allocation success from present headroom",
+    "universal platform behavior",
+    "Snowdrop implementation",
+    "safe resource destruction without GPU lifetime synchronization"
+  ],
+  "reader_support": "管理档案/支持资料/没有新增纹理，为什么D3D12仍会超出显存预算.md",
+  "support_sha256": "847adc34feb9a0ed47c9e88a5aaf0fbab4323c6c073575e314b25514e89fe5fb",
+  "parent_reader": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
+  "review": "管理档案/审查/D3D12动态预算-来源与读者审查.md"
+}

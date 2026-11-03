@@ -1173,7 +1173,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "4e71404b4d1f407fe7b30a77246ed9b1f24a4a260b4fb568edd38da9c9a030ba",
+      "reader_sha256": "3c57c10054d07e47a9c577941ed66a3a87e801a9c82635458bafab4782fc0320",
       "review_paths": [
         "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
         "管理档案/审查/纹理上传行跨度-来源与读者审查.md"
@@ -1192,6 +1192,13 @@
         "source_note": "管理档案/来源笔记/texture-upload-row-pitch.json",
         "review_path": "管理档案/审查/纹理上传行跨度-来源与读者审查.md",
         "scope": "Hypothetical two-row placement using separate source/destination strides. Existing latest_increment records the earlier gradient supplement and its then-current reader hash; not a rerun."
+      },
+      "dynamic_process_budget_support": {
+        "support_path": "管理档案/支持资料/没有新增纹理，为什么D3D12仍会超出显存预算.md",
+        "support_sha256": "847adc34feb9a0ed47c9e88a5aaf0fbab4323c6c073575e314b25514e89fe5fb",
+        "source_record": "管理档案/来源笔记/dxgi-process-budget.json",
+        "review": "管理档案/审查/D3D12动态预算-来源与读者审查.md",
+        "scope": "Windows DXGI/D3D12 documentation and original budget example; no GPU query or resource creation."
       }
     },
     {
@@ -2246,7 +2253,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "b2e5c3af551891c5d55ba5c2a7479ee291884713",
+  "publication_base_sha": "2b96b9c798e75f77f294c3017c61306dfcd5a2bd",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,
