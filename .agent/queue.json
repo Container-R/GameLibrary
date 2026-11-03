@@ -5207,7 +5207,9 @@
       "artifact_paths": [
         "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
         "管理档案/来源笔记/tlou2-deringing-stage-boundary.json",
-        "管理档案/审查/TLOU2去振铃阶段-来源与读者审查.md"
+        "管理档案/审查/TLOU2去振铃阶段-来源与读者审查.md",
+        "管理档案/审查/TLOU2法线遮罩与探针遮挡-来源与读者审查.md",
+        "管理档案/来源笔记/tlou2-probe-occlusion-inputs.json"
       ],
       "acceptance": [
         "Read original two-page report and selected official slide text and notes",
@@ -5218,7 +5220,7 @@
         "Do not redistribute slides or imply rendering, visual or performance reproduction"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T21:16:14Z",
+      "last_progress_at": "2026-11-03T12:05:00Z",
       "next_action": "Retain historical content premise, direction dependencies and unexecuted comparison scope",
       "blockers": [],
       "completed_at": "2026-11-01T09:09:39.602956Z",
@@ -5231,7 +5233,12 @@
           "sha256": "c8f08c70665b3a59733f6b75d7449bf8b28ab25c80054d9d093eeb4e2c7d5052"
         }
       ],
-      "latest_reader_maintenance": "Clarify static versus dynamic deringing in the existing hybrid-lighting reader; historical source evidence, no rendering experiment."
+      "latest_reader_maintenance": "Clarify static versus dynamic deringing in the existing hybrid-lighting reader; historical source evidence, no rendering experiment.",
+      "occlusion_input_maintenance": {
+        "source": "管理档案/来源笔记/tlou2-probe-occlusion-inputs.json",
+        "review": "管理档案/审查/TLOU2法线遮罩与探针遮挡-来源与读者审查.md",
+        "scope": "Original-source mechanism with independent source and full-reader review; no new execution."
+      }
     },
     {
       "id": "TASK-2026-0140",

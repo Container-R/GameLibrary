@@ -1,0 +1,24 @@
+{
+  "id": "20261103T120500Z-probe-occlusion-inputs",
+  "task_ids": [
+    "TASK-2026-0139"
+  ],
+  "recorded_at": "2026-11-03T12:05:00Z",
+  "baseline_sha": "f58f90b743d4ac9663ca81293f647e04013c3d64",
+  "outcome": "accepted-source-and-reader-integration",
+  "reader": "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+  "artifacts": [
+    "管理档案/审查/TLOU2法线遮罩与探针遮挡-来源与读者审查.md",
+    "管理档案/来源笔记/tlou2-probe-occlusion-inputs.json"
+  ],
+  "verification": "Original-source mechanism with independent source and full-reader review; no new execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}
