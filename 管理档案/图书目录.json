@@ -369,11 +369,17 @@
         "verification_method": "Official engineering text and independent reader review; no database execution.",
         "excluded": "No new book, PlayFab implementation claim, cross-service transaction guarantee or permanent exactly-once promise."
       },
-      "reader_sha256": "3865b2b6381a55f131ecadfcb407d71f5dc161b18fdba9991d4b7dff9fa5dea2",
+      "reader_sha256": "fdefb4ba60358940290270d0086e14e3b0626aa655fe071098f00b3f69bb1f5b",
       "auth_pending_maintenance": {
         "source_record": "管理档案/来源笔记/steam-session-auth-pending.json",
         "review": "管理档案/审查/Steam会话身份等待-来源与读者审查.md",
         "scope": "Selected Steam ticket API example; no complete authentication or service validation."
+      },
+      "daily_reset_support": {
+        "path": "管理档案/支持资料/每日任务重置，为什么不能总是再加24小时.md",
+        "support_sha256": "5530ae2328f7b4d9ad5d79bfe6ff513d31880c242bc2fed09edb3a2846f83590",
+        "review": "管理档案/审查/每日重置与固定时长-来源与读者审查.md",
+        "scope": "Source-backed historical civil-day versus rolling-duration example; no timezone-library or service execution."
       }
     },
     {
@@ -2792,7 +2798,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "e17ccfa3d4c9dedf990df024cb8daf2649204c2f",
+  "publication_base_sha": "2d69969ac4355d904f6022768f96eae50f46c40d",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,

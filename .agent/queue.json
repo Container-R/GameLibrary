@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T19:40:21Z",
+      "last_progress_at": "2026-11-03T20:24:12Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1156,7 +1156,6 @@
       "last_progress_at": "2026-10-31T18:27:00Z",
       "next_action": "Maintain scoped process and contention evidence; no power-loss or remote authority extrapolation",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
       "completed_at": "2026-10-31T18:27:00Z",
       "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623",
       "historical_artifacts": [
@@ -1185,7 +1184,6 @@
       "last_progress_at": "2026-10-31T18:27:00Z",
       "next_action": "Maintain scoped process and contention evidence; no power-loss or remote authority extrapolation",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:22:05Z",
       "completed_at": "2026-10-31T18:27:00Z",
       "commit_sha": "12a8cdf8c8c72785bfee5a405f448d87d6369623",
       "historical_artifacts": [
@@ -1234,7 +1232,6 @@
       "last_progress_at": "2026-11-03T09:53:13Z",
       "next_action": "Maintain scoped offline evidence; no GPU allocation or residence claim",
       "blockers": [],
-      "last_operational_checkpoint_at": "2026-10-31T18:36:37.925799Z",
       "completed_at": "2026-10-31T18:40:11.675407Z",
       "commit_sha": "b5104e494dc2c1da34fd8b939e2b089297d91580",
       "historical_artifacts": [
@@ -8248,6 +8245,33 @@
       "next_action": "Preserve explicit hypothetical scoring and no-runtime limits; do not generalize a fixed bonus to all designs.",
       "blockers": [],
       "verification_method": "Original exact finite arithmetic and source-backed reader explanation; not actual AI simulation.",
+      "publication_scope": "Support, host entry, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0232",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "每日任务的当地日期重置与完成后等待24小时为什么可能不同？",
+      "discipline": "NET",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Clarify civil recurrence separately from existing reward identity and retry semantics.",
+      "expected_artifact": "管理档案/支持资料/每日任务重置，为什么不能总是再加24小时.md",
+      "artifact_paths": [
+        "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+        "管理档案/支持资料/每日任务重置，为什么不能总是再加24小时.md",
+        "管理档案/审查/每日重置与固定时长-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Deduplicate related current readers",
+        "Verify fixed historical timezone rules and original documentation",
+        "Independently review UTC arithmetic and readable policy boundaries",
+        "Check host entry and support return navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T20:24:12Z",
+      "next_action": "Preserve historical and no-runtime scope; do not infer reward or current legal guarantees.",
+      "blockers": [],
+      "verification_method": "Source-backed explanation and independent paper arithmetic; no date-library execution.",
       "publication_scope": "Support, host entry, review and public progress in containing commit."
     }
   ],

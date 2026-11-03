@@ -1,0 +1,30 @@
+{
+  "run_id": "20261103T202412Z-daily-reset",
+  "base_sha": "2d69969ac4355d904f6022768f96eae50f46c40d",
+  "task_ids": [
+    "TASK-2026-0232"
+  ],
+  "outcome": "Support and public progress published together in containing commit; verify ref and exact readback after update.",
+  "scope": "Existing online-services reader links finite daily-reset support; no new book or native execution.",
+  "reader_books_total": 91,
+  "post_baseline_research_books": 36,
+  "frozen_baseline_books": 55,
+  "task_count": 232,
+  "artifact_paths": [
+    "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+    "管理档案/支持资料/每日任务重置，为什么不能总是再加24小时.md",
+    "管理档案/审查/每日重置与固定时长-来源与读者审查.md"
+  ],
+  "checks": {
+    "independent_reader_and_arithmetic": "Accepted exact revised support after full reread; initial two reader ambiguities and cross-library wording corrected.",
+    "new_native_runs": 0,
+    "real_player_observations": 0
+  },
+  "previous_content_readback": {
+    "sha": "2d69969ac4355d904f6022768f96eae50f46c40d",
+    "changed_files_exact": 7,
+    "actual_remote_edges": 11,
+    "canonical_blobs_matched": 1779
+  },
+  "metadata_cleanup": "Omitted three obsolete execution-checkpoint timestamps from historical queue entries; technical observations and task identities are unchanged."
+}
