@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T05:29:22Z",
+      "last_progress_at": "2026-11-03T12:59:01Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -7630,6 +7630,34 @@
       "blockers": [],
       "verification_method": "Original single-linear-constraint paper arithmetic and independently reviewed source/reader explanation; no solver, engine or GPU execution.",
       "publication_scope": "Reader and public records are published in the same containing commit."
+    },
+    {
+      "id": "TASK-2026-0211",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can a small Steam download still reconstruct a large pack file, and how can localized source changes spread through packaged bytes?",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "Concrete distribution and local-update cost distinction absent from existing compatibility and identity readers.",
+      "expected_artifact": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+        "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md",
+        "管理档案/来源笔记/steampipe-pack-update.json"
+      ],
+      "acceptance": [
+        "Deduplicate existing content-update readers",
+        "Read official mechanism and its version limits",
+        "Independent complete reader and source review",
+        "No predicted performance or unexecuted Steam test claims",
+        "Publish actual shelf route and consistent inventory"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T12:59:01Z",
+      "next_action": "Maintain platform and packaging scope; actual update-size and installation claims require separately scoped product observations.",
+      "blockers": [],
+      "verification_method": "Original hypothetical pack explanation based on independently read official technical sections; no SteamPipe, download or disk execution.",
+      "publication_scope": "Reader and public records are published together in the containing commit."
     }
   ],
   "execution_policy": {

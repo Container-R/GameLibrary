@@ -1,0 +1,20 @@
+{
+  "title": "SteamPipe pack-file update layout and local reconstruction",
+  "url": "https://partner.steamgames.com/doc/sdk/uploading",
+  "author": "Valve / Steamworks Documentation",
+  "read_date": "2026-11-03",
+  "version_scope": "Rolling official documentation; publication date and immutable algorithm version not established.",
+  "reading_scope": [
+    "Introduction to the SteamPipe Content System",
+    "Game Content Structure - Best Practices",
+    "Unreal Engine - Special Notes"
+  ],
+  "excluded": [
+    "Account and deployment workflow not treated as fully read",
+    "No video or screenshot viewing",
+    "No current Unreal toolchain verification"
+  ],
+  "verification": "Independent primary text and reader review; original hypothetical pack and suggested checks; no execution.",
+  "reader": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+  "review": "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md"
+}

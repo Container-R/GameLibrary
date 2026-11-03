@@ -222,7 +222,7 @@
         "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
         "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       },
-      "reader_sha256": "fb957b6d90c82230c4659b856276c6b6d821cda3c8d14636174a0ded71147491",
+      "reader_sha256": "dcfd90d73d9a1bf0e1f583d86222b3ba63983a9f83aef048f8cdea23a4c831bb",
       "shared_output_support": {
         "path": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
         "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
@@ -238,7 +238,8 @@
         "review": "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
         "source": "管理档案/来源笔记/http-range-artifact-consistency.json",
         "scope": "Primary fixed standard and independent source/full-reader review of an original ASCII prefix/suffix calculation; no server, example HTTP request, download client or network experiment."
-      }
+      },
+      "steampipe_reading_link": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md"
     },
     {
       "internal_id": "ROLE-LOC-001",
@@ -2517,6 +2518,24 @@
       ],
       "source_record": "管理档案/来源笔记/xpbd-compliance.json",
       "reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2"
+    },
+    {
+      "internal_id": "SOL-ENGINE-011",
+      "reader_title": "Steam补丁很小，为什么仍可能重建大资源包",
+      "floor": "引擎与工具",
+      "area": "构建发布",
+      "shelf": "内容更新",
+      "canonical_reader_path": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+      "current_read_path": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立原始技术段与完整读者审读接受；未执行Steam或真实包测试",
+      "origin": "source-grounded-steampipe-pack-update",
+      "scope_note": "区分源资产、包字节、下载与本地重建；不推算实际耗时、空间或通用最优布局。",
+      "review_paths": [
+        "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/steampipe-pack-update.json",
+      "reader_sha256": "31a45b657c762fc9d9253f4903676cba3861c5aa47a4b44c352347dd1fe8a8f7"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2529,8 +2548,8 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "5a5ce930142fb20b26078e2ebd9ae74bdcf02dd8",
   "accounted_for_original_items": 55,
-  "reader_books_total": 84,
-  "post_baseline_research_books": 29,
+  "reader_books_total": 85,
+  "post_baseline_research_books": 30,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

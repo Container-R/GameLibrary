@@ -1,0 +1,25 @@
+{
+  "id": "20261103T125901Z-steampipe-pack-update",
+  "task_ids": [
+    "TASK-2026-0211"
+  ],
+  "recorded_at": "2026-11-03T12:59:01Z",
+  "baseline_sha": "f8cbf644247353bb49f6bae9dbd070b6a8288af3",
+  "outcome": "accepted-source-and-reader-book",
+  "reader": "GameLibrary/引擎与工具/构建发布/内容更新/Steam补丁很小，为什么仍可能重建大资源包.md",
+  "artifacts": [
+    "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md",
+    "管理档案/来源笔记/steampipe-pack-update.json",
+    ".agent/audits/20261103T125000Z-reader.md"
+  ],
+  "verification": "Independent original technical-section and complete reader reviews; no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 85,
+    "frozen_baseline": 55,
+    "post_baseline": 30,
+    "queue_tasks": 211
+  },
+  "counts_are_not_quality_evidence": true
+}
