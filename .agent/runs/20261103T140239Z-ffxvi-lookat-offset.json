@@ -1,0 +1,23 @@
+{
+  "id": "20261103T140239Z-ffxvi-lookat-offset",
+  "task_ids": [
+    "TASK-2026-0083"
+  ],
+  "recorded_at": "2026-11-03T14:02:39Z",
+  "baseline_sha": "c437f66423beb41637c8ce66694cfe3c5521e0c7",
+  "outcome": "accepted-source-and-reader-increment",
+  "reader": "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+  "artifacts": [
+    "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
+    "管理档案/来源笔记/ffxvi-lookat-offset.json"
+  ],
+  "verification": "Short source-grounded production-talk comparison: preserve base animation while tracking IK offsets; selected slide text and speaker notes only, no image/video/game execution or new scalar-model result.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 85,
+    "frozen_baseline": 55,
+    "post_baseline": 30,
+    "queue_tasks": 211
+  },
+  "counts_are_not_quality_evidence": true
+}

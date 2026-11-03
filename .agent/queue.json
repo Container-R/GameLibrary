@@ -3224,7 +3224,9 @@
       "artifact_paths": [
         "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
         "管理档案/研究记录/source-notes/scalar-inertialization-continuity.md",
-        "管理档案/研究记录/历史单元索引.json"
+        "管理档案/研究记录/历史单元索引.json",
+        "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
+        "管理档案/来源笔记/ffxvi-lookat-offset.json"
       ],
       "acceptance": [
         "Read original author mathematical source and distinguish spring residual from tracking spring and finite-time quintic",
@@ -3233,8 +3235,8 @@
         "No skeleton, contact, root-motion, visual quality or engine performance guarantee"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:16:31.174800Z",
-      "next_action": "Retain finite scalar C1 evidence without engine/contact extrapolation; deferred source and route indexes restored in TASK-2026-0084",
+      "last_progress_at": "2026-11-03T14:02:39Z",
+      "next_action": "Preserve the distinction between switch-time residual decay and ongoing IK-offset tracking; no complete Look-at controller or new native evidence is claimed.",
       "blockers": [],
       "completed_at": "2026-11-01T02:28:58.373198Z",
       "commit_sha": "df1aa64b8071f3f6699817abb564106c28ce541b",
@@ -3257,7 +3259,13 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "19d65e3fadad18fda8a8e8c2912e8e4d8e1e4bca8fa9fe4595998ee380f65ea7"
         }
-      ]
+      ],
+      "lookat_offset_comparison": {
+        "reader": "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+        "review": "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
+        "source": "管理档案/来源笔记/ffxvi-lookat-offset.json",
+        "verification": "Short source-grounded production-talk comparison: preserve base animation while tracking IK offsets; selected slide text and speaker notes only, no image/video/game execution or new scalar-model result."
+      }
     },
     {
       "id": "TASK-2026-0084",

@@ -741,6 +741,15 @@
         "support_path": "管理档案/支持资料/旋转向量与角速度/README.md",
         "reader_sha256": "418db06b5a21d7bafd11cf5f3fba4c49a44b00e3e1d4914f4912c86998ab73ea",
         "support_sha256": "2c270f28806dbedcf5bd4f60da8f32ce455e0c0a729ee9fab53fc31abcd6032b"
+      },
+      "reader_sha256": "ce521e135cde575918d43ee3276edcebbe31d82eef5abd0fafc8c7f1d86872e5",
+      "review_paths": [
+        "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md"
+      ],
+      "lookat_offset_comparison": {
+        "source": "管理档案/来源笔记/ffxvi-lookat-offset.json",
+        "review": "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
+        "scope": "Short source-grounded production-talk comparison: preserve base animation while tracking IK offsets; selected slide text and speaker notes only, no image/video/game execution or new scalar-model result."
       }
     },
     {
@@ -2564,7 +2573,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5bd76dda573aab28501e3b74270537a79c1f2bfb",
+  "publication_base_sha": "c437f66423beb41637c8ce66694cfe3c5521e0c7",
   "accounted_for_original_items": 55,
   "reader_books_total": 85,
   "post_baseline_research_books": 30,
