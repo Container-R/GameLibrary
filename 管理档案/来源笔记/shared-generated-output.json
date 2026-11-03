@@ -1,0 +1,29 @@
+{
+  "title": "Shared generated output ownership",
+  "version": "CMake3.31.12",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://cmake.org/cmake/help/v3.31/command/add_custom_command.html",
+      "scope": "Generating Files, COMMAND, DEPENDS, OUTPUT, complete Generating Files for Multiple Targets"
+    },
+    {
+      "url": "https://cmake.org/cmake/help/v3.31/command/add_custom_target.html",
+      "scope": "No-output/out-of-date target, optional empty commands and DEPENDS"
+    }
+  ],
+  "fixed_document_crosscheck": {
+    "url": "https://github.com/Kitware/CMake/blob/6acf7153156bb45038be62e79a32ed5a6ea2d00e/Help/command/add_custom_command.rst#L538-L579",
+    "scope": "Main read same full multi-target example/explanation; no generator implementation audit"
+  },
+  "read_scope": "Main read both whole version pages; independent source reviewer read relevant listed sections and complete example. Both final candidates read fully.",
+  "reader": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "support": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
+  "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
+  "verification": "Versioned official documentation and original hypothetical dependency graph; no build execution.",
+  "limits": [
+    "Same build graph and explicit output ownership",
+    "No universal concurrency, cache or content correctness guarantee",
+    "No cross-directory, multi-configuration or independent-process claim"
+  ]
+}
