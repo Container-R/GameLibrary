@@ -1,0 +1,24 @@
+{
+  "child_exit_confirmed": true,
+  "cleanup_failures": [],
+  "copied_inputs_verified": true,
+  "environment_directory_count": 11,
+  "execution_scope": "sequential_deferred_foreign_key_SQL",
+  "failure_category": null,
+  "inputs_sha256": {
+    "PROTOCOL.md": "d6b8c8c59714e57f563e7bccacf5f09c52d52b221f68fa1ac4a29c31ba362371",
+    "driver.py": "bde55c41d1dd5f94498b5bef58f3a2b958c45d91a862fe3c746048ce89b8057a",
+    "expected.json": "0e66839cb98b1a5ceed92a9e82b3780790b81830e6519ae4970af071b062c742",
+    "runner.py": "bfe6fe2890ecee42e9e36821704aa471d9e2767944b620782bfd46ace6e18551"
+  },
+  "manifest_sha256": "9e458ae0cad8cdd91e6e0946a8320f30c8b5472671b531aea2257c87c5f002b7",
+  "output_sha256": "35ef98ca925be661d84c3d348f1fe158a6e26e2ee625d033d66d820264b2753b",
+  "post_execution_inputs_verified": true,
+  "post_kill_wait_seconds": 2,
+  "python_version": "3.12.14",
+  "returncode": 0,
+  "sqlite_version": "3.53.1",
+  "status": "PASS",
+  "stderr_empty": true,
+  "timeout_seconds": 15
+}

@@ -1,0 +1,28 @@
+{
+  "id": "20261103T153800Z-sqlite-deferred-fk",
+  "recorded_at": "2026-11-03T15:37:45Z",
+  "task_ids": [
+    "TASK-2026-0218"
+  ],
+  "baseline_sha": "f9075fbbec94da6ed78d2d09cde8d0879d77f9d4",
+  "outcome": "accepted-reader-and-two-finite-native-observations",
+  "artifacts": [
+    "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+    "管理档案/支持资料/SQLite延迟外键两连接/README.md",
+    "管理档案/来源笔记/sqlite-deferred-foreign-key.json",
+    "管理档案/审查/SQLite延迟外键-来源执行与读者审查.md"
+  ],
+  "previous_support_sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2",
+  "current_support_sha256": "63d3380cf868610bf74c1999b9f59b8c1b98fdb01fe7fee9075856dbddfd1e35",
+  "verification": "Source-grounded existing savepoint support amendment; one main editor and one independent operator execution of the same frozen three-case, thirteen-checkpoint fixture, same environment with known first result. Not blind, cross-platform or complete game-save validation.",
+  "native_runs": 2,
+  "checkpoints_per_run": 13,
+  "counts": {
+    "reader_books": 89,
+    "frozen_baseline": 55,
+    "post_baseline": 34,
+    "queue_tasks": 218
+  },
+  "counts_are_not_quality_evidence": true,
+  "publication_scope": "This record and the support amendment belong to the same containing commit; baseline is prior verified content."
+}

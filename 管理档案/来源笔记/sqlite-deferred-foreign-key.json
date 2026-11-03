@@ -1,0 +1,38 @@
+{
+  "read_on": "2026-11-03",
+  "support": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+  "support_sha256": "63d3380cf868610bf74c1999b9f59b8c1b98fdb01fe7fee9075856dbddfd1e35",
+  "previous_support_sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2",
+  "review": "管理档案/审查/SQLite延迟外键-来源执行与读者审查.md",
+  "observation": "管理档案/支持资料/SQLite延迟外键两连接/README.md",
+  "sources": [
+    {
+      "title": "Foreign Key Support",
+      "url": "https://www.sqlite.org/foreignkeys.html",
+      "read_scope": "Sections2,4.2 and opening4.3; rolling documentation, not runtime identity"
+    },
+    {
+      "title": "Savepoints",
+      "url": "https://www.sqlite.org/lang_savepoint.html",
+      "read_scope": "Complete technical text sections2–3, not syntax images"
+    },
+    {
+      "title": "Result and Error Codes",
+      "url": "https://www.sqlite.org/rescode.html#constraint_foreignkey",
+      "read_scope": "Primary/extended distinction and787 SQLITE_CONSTRAINT_FOREIGNKEY"
+    },
+    {
+      "title": "Python3.12 sqlite3",
+      "url": "https://docs.python.org/3.12/library/sqlite3.html",
+      "read_scope": "Exception attributes and transaction control, not full binding implementation"
+    }
+  ],
+  "verification": "Source-grounded existing savepoint support amendment; one main editor and one independent operator execution of the same frozen three-case, thirteen-checkpoint fixture, same environment with known first result. Not blind, cross-platform or complete game-save validation.",
+  "limits": [
+    "Versions self-reported, no binary provenance certification",
+    "Three cases and13checkpoints per run, not13independent runs",
+    "No failures retried and no expected values changed after execution",
+    "Old14checkpoint archive unchanged",
+    "No production recovery, business authorization or complete saving guarantee"
+  ]
+}

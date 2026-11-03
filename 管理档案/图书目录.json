@@ -2373,7 +2373,8 @@
         "管理档案/审查/SQLite主文件复制与备份-读者与执行审查.md",
         "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
         "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md",
-        "管理档案/审查/SQLite保存点-来源执行与读者审查.md"
+        "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
+        "管理档案/审查/SQLite延迟外键-来源执行与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
       "reader_sha256": "8821e9f5c08f9ef30671af5f4eb7fe1eb0b6421899e76933678aa38cf88f2432",
@@ -2401,10 +2402,19 @@
       },
       "savepoint_boundary_support": {
         "path": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
-        "sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2",
         "review": "管理档案/审查/SQLite保存点-来源执行与读者审查.md",
         "experiment": "管理档案/支持资料/SQLite保存点两连接/README.md",
-        "scope": "One main editor and one independent reviewer execution, same environment and fixed inputs, known first result; three SQL branches and14literal checkpoints per execution. Independent source and complete reader review."
+        "scope": "One main editor and one independent reviewer execution, same environment and fixed inputs, known first result; three SQL branches and14literal checkpoints per execution. Independent source and complete reader review.",
+        "reviewed_sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2"
+      },
+      "deferred_foreign_key_support": {
+        "path": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+        "sha256": "63d3380cf868610bf74c1999b9f59b8c1b98fdb01fe7fee9075856dbddfd1e35",
+        "previous_support_sha256": "ea31cc5944b8c5f743a86638b39f5428c0adf3a6da9670a901181eb54ea910b2",
+        "experiment": "管理档案/支持资料/SQLite延迟外键两连接/README.md",
+        "source_record": "管理档案/来源笔记/sqlite-deferred-foreign-key.json",
+        "review": "管理档案/审查/SQLite延迟外键-来源执行与读者审查.md",
+        "scope": "Source-grounded existing savepoint support amendment; one main editor and one independent operator execution of the same frozen three-case, thirteen-checkpoint fixture, same environment with known first result. Not blind, cross-platform or complete game-save validation."
       }
     },
     {
@@ -2670,7 +2680,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c42d66f301708453973052f32209fd320b012861",
+  "publication_base_sha": "f9075fbbec94da6ed78d2d09cde8d0879d77f9d4",
   "accounted_for_original_items": 55,
   "reader_books_total": 89,
   "post_baseline_research_books": 34,
