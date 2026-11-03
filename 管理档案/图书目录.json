@@ -21,9 +21,10 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "5ca59a0d240e4c9531b8d7695759e4a7d8d118dc1b6b67a3d2cc77f2cb336745",
+      "reader_sha256": "7a9441a4569848385aeb888e38465a8743edc83a9c2b2d1f643134c9a33ab4a9",
       "review_paths": [
-        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
+        "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
+        "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md"
       ],
       "helper_bone_representation_support": {
         "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
@@ -31,6 +32,11 @@
         "source_record": "管理档案/来源笔记/kinedriver-representation.json",
         "review": "管理档案/审查/辅助骨层级与动画流-来源与读者审查.md",
         "scope": "Historical source interpretation and declared coordinate illustration; no Unity execution."
+      },
+      "pose_hold_support": {
+        "path": "管理档案/支持资料/让攻击姿势多停一会儿，和命中时停顿有什么不同.md",
+        "review": "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
+        "scope": "Primary-source text interpretation and independently checked original16-unit timing example; no animation or game execution."
       }
     },
     {

@@ -1,0 +1,26 @@
+{
+  "id": "20261103T081330Z-pose-hold-hitstop",
+  "task_ids": [
+    "TASK-2026-0072"
+  ],
+  "recorded_at": "2026-11-03T08:13:30Z",
+  "baseline_sha": "0d221fe9fdd8b6c40e91b3d148a9b4485a3682f5",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+  "artifacts": [
+    "管理档案/支持资料/让攻击姿势多停一会儿，和命中时停顿有什么不同.md",
+    "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
+    "管理档案/来源笔记/cartwright-pose-hold-hitstop.json"
+  ],
+  "verification": "Primary-source text interpretation and independently checked original16-unit timing example; no animation or game execution.",
+  "native_runs": 0,
+  "source_reading_limits": "Extracted text only; no usable images or video, download403 before local render. No blocked retry.",
+  "existing_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
