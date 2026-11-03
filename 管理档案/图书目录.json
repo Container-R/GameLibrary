@@ -2624,6 +2624,24 @@
       ],
       "source_record": "管理档案/来源笔记/additive-reference-pose.json",
       "reader_sha256": "bc179a626508f37b4ab1db3d25853c4f9f35b86d6f794c3a67b4bf056210dc5e"
+    },
+    {
+      "internal_id": "CASE-TA-001",
+      "reader_title": "Horizon如何避免两类植被争用同一个候选点",
+      "floor": "技术美术",
+      "area": "环境管线",
+      "shelf": "程序化布景",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+      "reader_body_status": "published",
+      "editorial_status": "第一手讲义文字与关键图、完整读者视角审读接受；原创纸面阈值例，无运行",
+      "origin": "first-party-procedural-placement-case",
+      "scope_note": "共享候选和相同footprint下的层间归属，不是通用几何碰撞或全部Decima实现。",
+      "review_paths": [
+        "管理档案/审查/Horizon分层候选-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/horizon-procedural-placement.json",
+      "reader_sha256": "48b7b87e6627838bf8aca3b853f2e68badabd8bb9f76d5442e4e5550f4889067"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2634,10 +2652,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "fdda51cabb5d8be1476b73c6a584f32385afd5e8",
+  "publication_base_sha": "392d32aa1f0b149f1e56124e262670863a291697",
   "accounted_for_original_items": 55,
-  "reader_books_total": 88,
-  "post_baseline_research_books": 33,
+  "reader_books_total": 89,
+  "post_baseline_research_books": 34,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

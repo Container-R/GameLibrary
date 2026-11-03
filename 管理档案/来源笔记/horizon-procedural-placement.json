@@ -1,0 +1,26 @@
+{
+  "title": "GPU-based Procedural Placement in Horizon Zero Dawn",
+  "author": "Jaap van Muijden / Guerrilla Games",
+  "event": "GDC 2017",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.guerrilla-games.com/media/News/Files/GDC2017_VanMuijden_GPUBasedProceduralPlacementInHorizonZeroDawn.pdf",
+      "scope": "Both source readers read all 50 pages extracted text. Main visually inspected physical pages 9,15,18,28,30,32,34–37 (10); independent source reviewer inspected 9,15,18,28,30,32–37 (11). No video; source files not redistributed."
+    },
+    {
+      "url": "https://www.guerrilla-games.com/read/gpu-based-procedural-placement-in-horizon-zero-dawn",
+      "published_on": "2017-03-01",
+      "scope": "Official author, presentation provenance and artist-rule overview."
+    }
+  ],
+  "reader": "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+  "review": "管理档案/审查/Horizon分层候选-来源与读者审查.md",
+  "verification": "First-party Horizon 2017 placement slides and original three-point interval reasoning; same-footprint shared candidates distinguished from geometry collision. No map generation, GPU, Decima, game, performance or visual-quality execution.",
+  "limits": [
+    "Example thresholds, endpoints and order are original paper assumptions",
+    "Same-point ownership is not geometry collision avoidance",
+    "No unpublished shader endpoint or overflow implementation claim",
+    "No native or visual-quality experiment"
+  ]
+}

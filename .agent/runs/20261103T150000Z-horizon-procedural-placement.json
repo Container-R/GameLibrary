@@ -1,0 +1,26 @@
+{
+  "id": "20261103T150000Z-horizon-procedural-placement",
+  "task_ids": [
+    "TASK-2026-0215"
+  ],
+  "recorded_at": "2026-11-03T15:00:00Z",
+  "baseline_sha": "392d32aa1f0b149f1e56124e262670863a291697",
+  "outcome": "accepted-source-reader-local-integration",
+  "reader": "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+  "artifacts": [
+    "管理档案/审查/Horizon分层候选-来源与读者审查.md",
+    "管理档案/来源笔记/horizon-procedural-placement.json",
+    "GameLibrary/技术美术/环境管线/程序化布景/README.md",
+    ".agent/audits/20261103T145000Z-reader.md"
+  ],
+  "verification": "First-party Horizon 2017 placement slides and original three-point interval reasoning; same-footprint shared candidates distinguished from geometry collision. No map generation, GPU, Decima, game, performance or visual-quality execution.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 89,
+    "frozen_baseline": 55,
+    "post_baseline": 34,
+    "queue_tasks": 215
+  },
+  "counts_are_not_quality_evidence": true,
+  "audit_derivative_scope": "Earlier INSIDE TAA review only; page-index wording clarified, local original unchanged."
+}

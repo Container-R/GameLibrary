@@ -7770,6 +7770,34 @@
       "blockers": [],
       "verification_method": "Fixed ozz-animation0.17.0 source and UE5.6 documentation analysis with original local-translation arithmetic; no native, skeletal, editor, export or visual execution.",
       "publication_scope": "Reader and public progress are published together in the containing commit."
+    },
+    {
+      "id": "TASK-2026-0215",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "How can shared procedural-placement candidates be assigned across equal-footprint vegetation layers without both layers accepting the same point?",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "First-party environment placement mechanism separates candidate ownership, density and geometric collision.",
+      "expected_artifact": "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/环境管线/程序化布景/Horizon如何避免两类植被争用同一个候选点.md",
+        "管理档案/审查/Horizon分层候选-来源与读者审查.md",
+        "管理档案/来源笔记/horizon-procedural-placement.json"
+      ],
+      "acceptance": [
+        "Read original slide text and inspect key diagrams",
+        "Separate original interval example from unpublished implementation details",
+        "Independently review full reader and sources",
+        "Verify actual environment-pipeline shelf route",
+        "No map, collision or performance execution claim"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T15:00:00Z",
+      "next_action": "Maintain shared-candidate and equal-footprint limits; actual asset geometry and generation require separate scoped evidence.",
+      "blockers": [],
+      "verification_method": "First-party Horizon 2017 placement slides and original three-point interval reasoning; same-footprint shared candidates distinguished from geometry collision. No map generation, GPU, Decima, game, performance or visual-quality execution.",
+      "publication_scope": "Reader and public records are published together in the containing commit."
     }
   ],
   "execution_policy": {
