@@ -1,0 +1,30 @@
+{
+  "id": "20261103T105412Z-economy-batch-rounding",
+  "task_ids": [
+    "TASK-2026-0007"
+  ],
+  "recorded_at": "2026-11-03T10:54:12Z",
+  "baseline_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+  "artifacts": [
+    "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
+    "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+    "管理档案/来源笔记/economy-batch-rounding.json"
+  ],
+  "verification": "Primary definitions and independently reviewed original finite arithmetic and remainder invariant; no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true,
+  "archived_audit": {
+    "path": ".agent/audits/20261103T105000Z-reader.md",
+    "snapshot_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
+    "scope": "Historical independent XPBD review, separate from this exchange support."
+  }
+}

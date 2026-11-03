@@ -1,0 +1,38 @@
+{
+  "title": "Batch boundaries, rounding and persistent fractional remainder in a single-player exchange",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "Microsoft",
+      "title": "Math.Floor Method",
+      "version": ".NET9 documentation view, rolling page",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.math.floor?view=net-9.0",
+      "scope": "Technical definitions, overload semantics, examples and Remarks; no implementation execution"
+    },
+    {
+      "publisher": "Microsoft",
+      "title": "Math.Ceiling Method",
+      "version": ".NET9 documentation view, rolling page",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.math.ceiling?view=net-9.0",
+      "scope": "Technical definitions, overload semantics, examples and Remarks; no implementation execution"
+    },
+    {
+      "publisher": "Ian Schreiber",
+      "title": "Level 10: Final Boss",
+      "version": "2010-09-08",
+      "url": "https://gamebalanceconcepts.wordpress.com/2010/09/08/level-10-final-boss/",
+      "scope": "Economic Systems opening resource definitions only; not whole lesson or support for the proposed rounding policy"
+    }
+  ],
+  "reader": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+  "support": "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
+  "review": "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+  "verification": "Primary definitions and independently reviewed original finite arithmetic and remainder invariant; no execution.",
+  "limits": [
+    "Nonnegative integer input and fixed3/2 exchange ratio",
+    "No fees, caps, refunds, player trading or real-money exchange",
+    "Persistent remainder belongs to the same fixed-policy stream",
+    "Integer range, persistence, atomicity and retry behavior remain implementation responsibilities",
+    "No real game behavior, universal economic prescription or infinite-arbitrage claim"
+  ]
+}

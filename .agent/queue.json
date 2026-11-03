@@ -290,12 +290,15 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T13:18:40.323328Z",
-      "last_progress_at": "2026-10-31T13:17:23.011356Z",
+      "last_progress_at": "2026-11-03T10:54:12Z",
       "next_action": "基于实际工程或版本变化维护，不外推模型/岗位样本",
       "blockers": [],
       "commit_sha": "6a787bb1ed86aade8249f2deb401ec4985ddff61",
       "artifact_paths": [
-        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md"
+        "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+        "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
+        "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+        "管理档案/来源笔记/economy-batch-rounding.json"
       ],
       "historical_artifacts": [
         {
@@ -304,7 +307,13 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "541b4669ab0dca38180664593d2bb5e8dd9b5e4ff7be35038c5c96dbbda220b0"
         }
-      ]
+      ],
+      "batch_rounding_support": {
+        "support": "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
+        "review": "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+        "source": "管理档案/来源笔记/economy-batch-rounding.json",
+        "scope": "Primary definitions and independently reviewed original finite arithmetic and remainder invariant; no execution."
+      }
     },
     {
       "id": "TASK-2026-0008",

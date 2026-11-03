@@ -33,25 +33,25 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261103T104550Z-schedule-critical-path",
-  "last_real_progress_at": "2026-11-03T10:45:50Z",
-  "last_commit_sha": "0a68c8ce59fb4b34503c1a295e614bcd45222700",
+  "last_run_id": "20261103T105412Z-economy-batch-rounding",
+  "last_real_progress_at": "2026-11-03T10:54:12Z",
+  "last_commit_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "0a68c8ce59fb4b34503c1a295e614bcd45222700",
-    "latest_verified_content_sha": "0a68c8ce59fb4b34503c1a295e614bcd45222700",
+    "last_verified_head_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
+    "latest_verified_content_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
     "reader_books_total": 84,
     "post_baseline_research_books": 29,
-    "scope": "Existing production reader gains a finite critical-path and shared-float support; no new book or runtime.",
+    "scope": "Existing single-player economy reader gains a finite batch-rounding support; no new book or runtime.",
     "status": "Reader entry and support/source/review/progress are published together in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
-    "latest_review_path": ".agent/audits/20261103T085000Z-reader.md",
-    "snapshot_sha": "8f3b8a0ccc353885a59c63e6bbedc9100d86986d",
+    "latest_review_path": ".agent/audits/20261103T105000Z-reader.md",
+    "snapshot_sha": "0225b86d32645b76b5fe5902b018436216d8c3e6",
     "status": "healthy-at-observation",
-    "observed_interval_utc": "2026-11-03 08:50–08:51",
-    "scope": "Independent resampler reader route, official FAQ/API and original arithmetic; no converter rerun or fixed implementation reread. Snapshot predates the savepoint publication; not whole-library certification."
+    "observed_interval_utc": "2026-11-03 10:52–10:53",
+    "scope": "Independent XPBD reader route, original paper algorithm1/equations17–18/section7 and finite arithmetic; not solver execution or full six-page paper review. Does not cover the subsequent batch-rounding support."
   },
   "record_transformation": {
     "scope": "Public progress, repository-relative recovery links and commit evidence only. Execution scheduling and transport diagnostics are maintained outside this public state.",

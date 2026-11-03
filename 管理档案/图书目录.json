@@ -904,10 +904,20 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_body_sha256": "d6a213322a657a6cbf2f7cede182c4c50ab83c37863956f73c291eb2b4637451",
+      "reader_body_sha256": "3c5126526708d59148102e9ac5f3ecea9d1443be64c236a2f3eacf4b2f148e34",
       "latest_review_path": "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
       "source_record": "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
-      "latest_supplement": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately."
+      "latest_supplement": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately.",
+      "batch_rounding_support": {
+        "path": "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
+        "sha256": "307b4e4937edc548b153ddf80a648da6623db7a9c4a1d543336886805e697c7b",
+        "review": "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+        "source": "管理档案/来源笔记/economy-batch-rounding.json",
+        "scope": "Primary definitions and independently reviewed original finite arithmetic and remainder invariant; no execution."
+      },
+      "review_paths": [
+        "管理档案/审查/分批兑换与取整-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "SOL-ENGINE-002",
