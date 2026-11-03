@@ -2557,10 +2557,19 @@
       "origin": "source-grounded-xpbd-compliance",
       "scope_note": "单个线性约束解释柔度、步长缩放及步内累计；不提供耦合布料、碰撞、同轨迹或性能保证。",
       "review_paths": [
-        "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md"
+        "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md",
+        "管理档案/审查/XPBD子步推进-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/xpbd-compliance.json",
-      "reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2"
+      "reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+      "small_steps_increment": {
+        "reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+        "previous_reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2",
+        "source_record": "管理档案/来源笔记/xpbd-small-steps.json",
+        "review_path": "管理档案/审查/XPBD子步推进-来源与读者审查.md",
+        "scope": "Source-grounded time-stepping comparison and original one-dimensional paper arithmetic only; no numerical model, native solver, collision, GPU, performance or visual experiment.",
+        "historical_identity": "The original source_record and XPBD compliance review retain the 2016-source scope and then-reviewed reader identity; this amendment does not rerun their evidence."
+      }
     },
     {
       "internal_id": "SOL-ENGINE-011",
@@ -2661,7 +2670,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "392d32aa1f0b149f1e56124e262670863a291697",
+  "publication_base_sha": "c42d66f301708453973052f32209fd320b012861",
   "accounted_for_original_items": 55,
   "reader_books_total": 89,
   "post_baseline_research_books": 34,

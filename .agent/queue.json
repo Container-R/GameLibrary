@@ -7825,6 +7825,33 @@
       "blockers": [],
       "verification_method": "Fixed-source rereading and original orthogonal-reflection basis reasoning only; no baking, import, shader, renderer, GPU or native execution.",
       "publication_scope": "Support and public records are published together in the containing commit."
+    },
+    {
+      "id": "TASK-2026-0217",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why do two XPBD constraint iterations differ from two time substeps even with the same number of constraint visits?",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Existing compliance reader benefits from a finite prediction and velocity-update comparison rather than a new solver tutorial.",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+        "管理档案/来源笔记/xpbd-small-steps.json",
+        "管理档案/审查/XPBD子步推进-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read the 2019 original paper text and key pages",
+        "Independently review complete reader and paper arithmetic",
+        "Preserve earlier 2016 source and reader evidence",
+        "Verify existing shelf and fixed-step links"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T15:16:00Z",
+      "next_action": "Keep substep, within-step accumulation, cost and contact-set limitations distinct.",
+      "blockers": [],
+      "verification_method": "Source-grounded time-stepping comparison and original one-dimensional paper arithmetic only; no numerical model, native solver, collision, GPU, performance or visual experiment.",
+      "publication_scope": "Reader amendment and public records are published together in the containing commit."
     }
   ],
   "execution_policy": {

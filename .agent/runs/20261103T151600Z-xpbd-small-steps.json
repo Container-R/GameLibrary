@@ -1,0 +1,26 @@
+{
+  "id": "20261103T151600Z-xpbd-small-steps",
+  "recorded_at": "2026-11-03T15:16:00Z",
+  "task_ids": [
+    "TASK-2026-0217"
+  ],
+  "baseline_sha": "c42d66f301708453973052f32209fd320b012861",
+  "outcome": "accepted-source-reader-local-integration",
+  "artifacts": [
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+    "管理档案/来源笔记/xpbd-small-steps.json",
+    "管理档案/审查/XPBD子步推进-来源与读者审查.md"
+  ],
+  "previous_reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2",
+  "current_reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+  "verification": "Source-grounded time-stepping comparison and original one-dimensional paper arithmetic only; no numerical model, native solver, collision, GPU, performance or visual experiment.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 89,
+    "frozen_baseline": 55,
+    "post_baseline": 34,
+    "queue_tasks": 217
+  },
+  "counts_are_not_quality_evidence": true,
+  "publication_scope": "This record and the amendment belong to the same containing commit; the baseline identifies previously verified content."
+}

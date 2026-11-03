@@ -1,0 +1,25 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+  "reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+  "previous_reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2",
+  "review": "管理档案/审查/XPBD子步推进-来源与读者审查.md",
+  "sources": [
+    {
+      "title": "Small Steps in Physics Simulation",
+      "authors": "Miles Macklin et al.",
+      "event": "SCA 2019",
+      "url": "https://mmacklin.com/smallsteps.pdf",
+      "doi": "https://doi.org/10.1145/3309486.3340247",
+      "read_scope": "Main and independent source reviewer each read all seven pages extracted text and visually inspected physical pages 3,4,6. Algorithm 1; section 4 equations (5)–(7); sections 4.2 and 6.2. No companion video."
+    }
+  ],
+  "verification": "Source-grounded time-stepping comparison and original one-dimensional paper arithmetic only; no numerical model, native solver, collision, GPU, performance or visual experiment.",
+  "limits": [
+    "Original numbers are not paper experiment parameters or solver output",
+    "Equal constraint visits are not equal measured cost",
+    "Different endpoints do not establish accuracy or material quality",
+    "Existing 2016 source and review remain historical; no experiment recertification",
+    "Source PDF and page images not redistributed"
+  ]
+}
