@@ -1,0 +1,16 @@
+{
+  "read_on": "2026-11-03",
+  "reader_support": "管理档案/支持资料/法线贴图也是RGB，为什么不能照着颜色图做sRGB解码.md",
+  "support_sha256": "48103a93c7ddbc2febed3ab04c8dd04b07d9aa4fda2125a1e245ce8b3aec4fad",
+  "parent_reader": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+  "source_commit": "59ecbdba704206bb656965ab4e202881806066f1",
+  "source_ranges": {
+    "specification/2.0/Specification.adoc": "Base-color texture and complete Normal Texture sections; not whole spec",
+    "specification/2.0/schema/material.normalTextureInfo.schema.json": "Complete scale schema"
+  },
+  "formula_source": "https://registry.khronos.org/DataFormat/specs/1.4/dataformat.1.4.html",
+  "formula_scope": "Section13.3.1 sRGB EOTF only",
+  "example_scope": "Ideal real-valued sample, scale1, no filtering/quantization/compression. Original algebra and arithmetic checking, not executable rendering evidence.",
+  "limits": "No new GPU/native/asset experiment; no universal engine import switch or diagnosis of real pixels.",
+  "review": "管理档案/审查/法线纹理误作颜色解码-来源与读者审查.md"
+}

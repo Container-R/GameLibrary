@@ -705,6 +705,14 @@
         "source_note": "管理档案/来源笔记/color-quantization-reader.json",
         "review": "管理档案/审查/颜色误差与字节量化-读者审查.md",
         "scope": "Existing historical mathematics made readable with a constructed allowed-error counterexample; no new CMM or GPU execution."
+      },
+      "reader_sha256": "47f99745ce3470985a5930dc0c246b5cfa4a03e1123c65add9428110da6b878b",
+      "normal_texture_transfer_support": {
+        "support_path": "管理档案/支持资料/法线贴图也是RGB，为什么不能照着颜色图做sRGB解码.md",
+        "support_sha256": "48103a93c7ddbc2febed3ab04c8dd04b07d9aa4fda2125a1e245ce8b3aec4fad",
+        "source_record": "管理档案/来源笔记/normal-texture-transfer.json",
+        "review": "管理档案/审查/法线纹理误作颜色解码-来源与读者审查.md",
+        "scope": "Optional ideal-sample counterexample; no new execution or change to existing alpha and color evidence."
       }
     },
     {
@@ -2203,7 +2211,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "86aa5878fe82c3e30d57a7d63a54079bf6d71676",
+  "publication_base_sha": "7ab5a7457fa458a11b5c94876201350a3cb7a578",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,
