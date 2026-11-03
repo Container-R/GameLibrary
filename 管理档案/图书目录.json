@@ -1189,7 +1189,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "372b3cdefcb4fad1e231fe3dbe534d0ec2d37c8ca544b8942c5a59a0121e5058",
+      "reader_sha256": "2f07c913a6a74f5322c4f728c858f759737c80d48190cac17feeca51edd362cf",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
@@ -2396,6 +2396,24 @@
       ],
       "source_record": "管理档案/来源笔记/model-bake-reader.json",
       "reader_sha256": "57a27ec3adc1029d327158a8c8dbc1c05ee1b4d750f7cfffc1189cd0b3cceb4a"
+    },
+    {
+      "internal_id": "SOL-PROG-005",
+      "reader_title": "多做几次约束修正，为什么物体反而更硬",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "时间与模拟",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立完整原源与读者审查接受；数值为纸面推导，非运行或真人测试",
+      "origin": "source-grounded-xpbd-compliance",
+      "scope_note": "单个线性约束解释柔度、步长缩放及步内累计；不提供耦合布料、碰撞、同轨迹或性能保证。",
+      "review_paths": [
+        "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/xpbd-compliance.json",
+      "reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2408,8 +2426,8 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "5a5ce930142fb20b26078e2ebd9ae74bdcf02dd8",
   "accounted_for_original_items": 55,
-  "reader_books_total": 83,
-  "post_baseline_research_books": 28,
+  "reader_books_total": 84,
+  "post_baseline_research_books": 29,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

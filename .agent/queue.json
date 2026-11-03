@@ -7505,6 +7505,34 @@
       "verification_method": "Dictionary dependency remains fixed-source and reader review; separate adjacent raw-block output-budget observation has two finite native executions, not dictionary or general decoder validation.",
       "publication_scope": "Reader and public records are published in the same containing commit.",
       "latest_reader_maintenance": "Adjacent output-budget three-case native observation with two same-host different-agent fresh compilations; dictionary reader remains source-only."
+    },
+    {
+      "id": "TASK-2026-0210",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why does increasing PBD projection iterations alter apparent stiffness, and what do XPBD compliance and the accumulated multiplier change in a single linear constraint?",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 78,
+      "priority_rationale": "Concrete simulation-parameter distinction absent from existing time scheduling and detection readers.",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+        "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md",
+        "管理档案/来源笔记/xpbd-compliance.json"
+      ],
+      "acceptance": [
+        "Deduplicate current physical simulation explanations",
+        "Read original paper including limitations and visually inspect core algorithm/equations",
+        "Independently check finite arithmetic, dimensions and clear reader narrative",
+        "Preserve single-constraint, no-runtime and finite-iteration limits",
+        "Publish real shelf route and consistent inventory counts"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T10:26:05Z",
+      "next_action": "Maintain the narrow source-based explanation; coupled solver and engine behavior require separately scoped evidence.",
+      "blockers": [],
+      "verification_method": "Original single-linear-constraint paper arithmetic and independently reviewed source/reader explanation; no solver, engine or GPU execution.",
+      "publication_scope": "Reader and public records are published in the same containing commit."
     }
   ],
   "execution_policy": {

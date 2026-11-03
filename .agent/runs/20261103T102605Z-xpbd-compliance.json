@@ -1,0 +1,24 @@
+{
+  "id": "20261103T102605Z-xpbd-compliance",
+  "task_ids": [
+    "TASK-2026-0210"
+  ],
+  "recorded_at": "2026-11-03T10:26:05Z",
+  "baseline_sha": "4a9d190f3359ea942a02f5a366d061b7f5ddb69c",
+  "outcome": "accepted-source-and-reader-article",
+  "reader": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+  "artifacts": [
+    "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md",
+    "管理档案/来源笔记/xpbd-compliance.json"
+  ],
+  "verification": "Original single-linear-constraint paper arithmetic and independently reviewed source/reader explanation; no solver, engine or GPU execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}
