@@ -985,9 +985,10 @@
         "support": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
         "reader_sha256": "a7a216e5deb6ca1d1c42ee1b3768999e90c7f4525774b8e2eb7fa0dfc077ae58"
       },
-      "reader_sha256": "61ee91ad76e0723c78d37a01ee0a583a126453551e2ff4cc1faa6d8df8f48c93",
+      "reader_sha256": "85a31e29b07eb9b75089dfd1e2d72a71e210a4e7b17fdff3f763cf893a982216",
       "review_paths": [
-        "管理档案/审查/半透明三角形顺序-来源与读者审查.md"
+        "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
+        "管理档案/审查/glTF整数属性-固定规范与读者审查.md"
       ],
       "triangle_order_support": {
         "scope": "Optional triangle-order example distinguishes geometry preservation from order-sensitive source-over composition.",
@@ -1001,6 +1002,13 @@
         "review": "管理档案/审查/cgltf稀疏展开-原生与读者审查.md",
         "support": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
         "scope": "Two fixed scalar configurations through pinned cgltf, repeated by another operator on same host; no model import or general validator claim."
+      },
+      "normalized_attribute_support": {
+        "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+        "sha256": "ffa8f68bf0d331f1a10fe3b5aa9cc0421ae4f837326438e876145fd98922224c",
+        "review": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+        "source": "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+        "scope": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution."
       }
     },
     {

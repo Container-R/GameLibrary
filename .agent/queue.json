@@ -6068,7 +6068,10 @@
         "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
         "管理档案/支持资料/MikkTSpace镜像UV面角输出/fixture.c",
         "管理档案/支持资料/MikkTSpace镜像UV面角输出/observation.json",
-        "管理档案/支持资料/MikkTSpace镜像UV面角输出/NATIVE-REVIEW.md"
+        "管理档案/支持资料/MikkTSpace镜像UV面角输出/NATIVE-REVIEW.md",
+        "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+        "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+        "管理档案/来源笔记/gltf-normalized-skin-attributes.json"
       ],
       "acceptance": [
         "Pre-execution literal oracle and independent source/fixture review",
@@ -6078,10 +6081,16 @@
         "Reader/support/return navigation and finite claims reviewed"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T21:23:57Z",
+      "last_progress_at": "2026-11-03T09:01:40Z",
       "next_action": "Retain this one-input result as limited importer evidence; do not infer exporter, renderer or arbitrary-mesh guarantees.",
       "blockers": [],
-      "verification_method": "Pinned original C compiled and called in two independently built copies of the same fixed input; no additional geometric coverage or rendering."
+      "verification_method": "Pinned original C compiled and called in two independently built copies of the same fixed input; no additional geometric coverage or rendering.",
+      "normalized_attribute_support": {
+        "support": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+        "review": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+        "source": "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+        "scope": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution."
+      }
     },
     {
       "id": "TASK-2026-0165",

@@ -1,0 +1,26 @@
+{
+  "id": "20261103T090140Z-gltf-normalized-attributes",
+  "task_ids": [
+    "TASK-2026-0164"
+  ],
+  "recorded_at": "2026-11-03T09:01:40Z",
+  "baseline_sha": "4f615e0eb365554004542abe4c16cf5878d801f6",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "artifacts": [
+    "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+    "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+    "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+    ".agent/audits/20261103T085000Z-reader.md"
+  ],
+  "verification": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

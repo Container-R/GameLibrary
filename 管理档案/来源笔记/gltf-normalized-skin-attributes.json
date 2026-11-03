@@ -1,0 +1,27 @@
+{
+  "title": "glTF joint indices and normalized weight components",
+  "publisher": "Khronos Group",
+  "commit": "59ecbdba704206bb656965ab4e202881806066f1",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "scope": "Accessor Data Types, Vertex Attributes compatibility table, Skinned Mesh Primitive Attributes, Skins Overview and relevant instantiation constraints; not entire specification"
+    },
+    {
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json",
+      "scope": "normalized default and restrictions"
+    }
+  ],
+  "reader": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "support": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+  "review": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+  "verification": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution.",
+  "limits": [
+    "Core specification scope; no arbitrary extension claim",
+    "Attribute fragment is not a complete valid asset",
+    "All-quantized MUST and floating-point SHOULD are distinct",
+    "Editor diagnostic advice is not a normative ban on all repair tools",
+    "Prior sparse/Mikk/native results unchanged and not reused"
+  ]
+}
