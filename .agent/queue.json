@@ -6115,7 +6115,10 @@
         "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
         "管理档案/审查/触发区域穿越-来源与读者审查.md",
         "管理档案/来源笔记/box2d-sensor-end-lifetime.json",
-        "管理档案/审查/传感结束事件-对象有效性与读者审查.md"
+        "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
+        "管理档案/支持资料/相机到角色的射线没碰墙，为什么画面边缘仍可能穿墙.md",
+        "管理档案/审查/相机近裁区域-来源与读者审查.md",
+        "管理档案/来源笔记/camera-near-plane-clearance.json"
       ],
       "acceptance": [
         "Concrete stationary checkpoint and fast circular object",
@@ -6124,8 +6127,8 @@
         "Independent source and actual navigation review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T06:56:15Z",
-      "next_action": "Use as bounded debugging guidance; actual project trajectory and physics events remain untested.",
+      "last_progress_at": "2026-11-03T13:14:59Z",
+      "next_action": "Keep sensor event evidence and camera geometry scopes separate; extend only for a concrete independently reviewed gap.",
       "blockers": [],
       "verification_method": "This task retains fixed-source reader explanation, now including end-event shape identity and transient event-array limits; independent full reader/source review. Separate TASK-2026-0174 crossing execution remains unchanged and does not test destruction.",
       "latest_event_lifetime_support": {
@@ -6133,6 +6136,12 @@
         "source": "管理档案/来源笔记/box2d-sensor-end-lifetime.json",
         "review": "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
         "scope": "Fixed official source and complete independent reader review only; no new native execution."
+      },
+      "camera_near_plane_support": {
+        "support": "管理档案/支持资料/相机到角色的射线没碰墙，为什么画面边缘仍可能穿墙.md",
+        "review": "管理档案/审查/相机近裁区域-来源与读者审查.md",
+        "source": "管理档案/来源笔记/camera-near-plane-clearance.json",
+        "verification": "Independently source- and reader-reviewed near-plane geometry example; no camera, rendering or native execution. Existing Box2D evidence unchanged."
       }
     },
     {
