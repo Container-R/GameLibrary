@@ -5497,7 +5497,9 @@
       "artifact_paths": [
         "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
         "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
-        "管理档案/审查/既有命中回溯支持-读者入口审查.md"
+        "管理档案/审查/既有命中回溯支持-读者入口审查.md",
+        "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
+        "管理档案/来源笔记/lagcomp-query-filter-callchain.json"
       ],
       "acceptance": [
         "Resolve and read exact official SDK source without inferring current commercial behavior",
@@ -5508,7 +5510,7 @@
         "No actual hit, all-world rewind, live game or runtime claim"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T14:03:55Z",
+      "last_progress_at": "2026-11-03T08:29:37Z",
       "next_action": "Retain fixed-source target/history/candidate distinctions; no actual hit, global rewind or commercial-game guarantee",
       "blockers": [],
       "completed_at": "2026-11-01T10:23:15.753941Z",
@@ -5521,7 +5523,13 @@
           "sha256": "4c1c0b2c01d31a90dcf4143198a1ba34a5a8b9083808ce25544372b1c261c6a1"
         }
       ],
-      "latest_reader_maintenance": "Existing fixed-source analysis is now linked from the movement reader with a current return path; mechanism and historical evidence unchanged."
+      "latest_reader_maintenance": "Existing support now adds bounded single-shot query/filter call chain; original time/history arithmetic and native-evidence scope unchanged.",
+      "query_callchain_revision": {
+        "support": "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
+        "review": "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
+        "source": "管理档案/来源笔记/lagcomp-query-filter-callchain.json",
+        "scope": "Static call-chain and filter interpretation only; fixed18sourceblob identity check, no compile or runtime."
+      }
     },
     {
       "id": "TASK-2026-0150",

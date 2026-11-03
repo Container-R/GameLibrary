@@ -1,0 +1,19 @@
+{
+  "title": "Fixed HL2MP lag-compensation wrapper to single-shot trace query",
+  "upstream_repository": "ValveSoftware/source-sdk-2013",
+  "commit": "be57e3d01ac7d7aa6a2cacbfef187c0b46616db0",
+  "url": "https://github.com/ValveSoftware/source-sdk-2013/tree/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0",
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+  "support": "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
+  "review": "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
+  "read_scope": "Full CBaseEntity FireBullets and bullet filter; targeted inheritance declarations, wrappers, game filters, mask and lag-compensation selection. Main full IEngineTrace header; independent source reviewer lines1–170. No wholeSDK audit.",
+  "verification": "Static call-chain and filter interpretation only; fixed18sourceblob identity check, no compile or runtime.",
+  "limits": [
+    "HL2MP GAME_DLL nonPORTAL nonTF single-shot branch",
+    "Engine TraceRay implementation remains unavailable",
+    "Compensation selection is not query whitelist",
+    "No concrete door occlusion, hit, damage or global temporal guarantee"
+  ],
+  "historical_evidence": "Original time/history arithmetic retained; initial2026-11-01source access limit is not a new attempt."
+}

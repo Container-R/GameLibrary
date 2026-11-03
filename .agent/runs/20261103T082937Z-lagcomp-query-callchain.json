@@ -1,0 +1,26 @@
+{
+  "id": "20261103T082937Z-lagcomp-query-callchain",
+  "task_ids": [
+    "TASK-2026-0149"
+  ],
+  "recorded_at": "2026-11-03T08:29:37Z",
+  "baseline_sha": "fd7c93faf299d615103e9f190c75401a8c405c02",
+  "outcome": "accepted-existing-support-source-depth",
+  "reader": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+  "artifacts": [
+    "管理档案/研究记录/source-notes/lag-compensation-target-and-history-sample.md",
+    "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
+    "管理档案/来源笔记/lagcomp-query-filter-callchain.json"
+  ],
+  "verification": "Static call-chain and filter interpretation only; fixed18sourceblob identity check, no compile or runtime.",
+  "native_runs": 0,
+  "reader_body_unchanged": true,
+  "original_arithmetic_unchanged": true,
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}
