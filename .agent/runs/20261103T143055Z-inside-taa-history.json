@@ -1,0 +1,24 @@
+{
+  "id": "20261103T143055Z-inside-taa-history",
+  "task_ids": [
+    "TASK-2026-0213"
+  ],
+  "recorded_at": "2026-11-03T14:30:55Z",
+  "baseline_sha": "86e98d8a37dc139b95e605efab19e95f7ad90142",
+  "outcome": "accepted-fixed-source-reader",
+  "reader": "GameLibrary/图形渲染/画面呈现/时域抗锯齿/INSIDE如何限制时域抗锯齿留下的旧颜色.md",
+  "artifacts": [
+    "管理档案/审查/INSIDE时域历史-来源与读者审查.md",
+    "管理档案/来源笔记/inside-taa-history.json",
+    "GameLibrary/图形渲染/画面呈现/时域抗锯齿/README.md"
+  ],
+  "verification": "Fixed Playdead source analysis and original scalar arithmetic on history reprojection, neighborhood constraint and separate display/history outputs; no Unity, GPU, game, image-quality or performance execution.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 87,
+    "frozen_baseline": 55,
+    "post_baseline": 32,
+    "queue_tasks": 213
+  },
+  "counts_are_not_quality_evidence": true
+}

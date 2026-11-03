@@ -1,0 +1,24 @@
+{
+  "title": "Temporal Reprojection Anti-Aliasing in INSIDE",
+  "author": "Lasse Jon Fuglsang Pedersen / Playdead",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://media.gdcvault.com/gdc2016/Presentations/Pedersen_LasseJonFuglsang_TemporalReprojectionAntiAliasing.pdf",
+      "scope": "Main editor read all47 pages extracted text. Key sections: Stepping back in time; Stepping into void; Reprojection of dynamic scenes; Constraining history sample through Final blend with motion blur fallback; Summary of implementation; Clipping in YCoCg. No verified visual or video inspection."
+    },
+    {
+      "url": "https://github.com/playdeadgames/temporal/tree/4795aa0007d464371abe60b7b28a1cf893a4e349",
+      "scope": "Fixed source; main read TemporalReprojection.shader/.cs; independent reviewer also read six relevant shader/script/include files and README. Not all platform or scene behavior."
+    }
+  ],
+  "reader": "GameLibrary/图形渲染/画面呈现/时域抗锯齿/INSIDE如何限制时域抗锯齿留下的旧颜色.md",
+  "review": "管理档案/审查/INSIDE时域历史-来源与读者审查.md",
+  "verification": "Fixed Playdead source analysis and original scalar arithmetic on history reprojection, neighborhood constraint and separate display/history outputs; no Unity, GPU, game, image-quality or performance execution.",
+  "limits": [
+    "No rendered pixel or performance results",
+    "C# field initializers are not all runtime configurations",
+    "Current color range does not establish historical surface identity",
+    "No source PDFs/images or full code redistributed"
+  ]
+}
