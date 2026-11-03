@@ -1,0 +1,36 @@
+{
+  "title": "SQLite C backup finish and early cancellation",
+  "version": "3.50.4",
+  "source_id": "2025-07-30 19:33:53 4d8adfb30e03f9cf27f800a2c1ba3c48fb4ca1b08b0f5ed59a4d5ecbf45e20a3",
+  "accessed_date": "2026-11-03",
+  "sources": [
+    {
+      "url": "https://www.sqlite.org/releaselog/3_50_4.html",
+      "scope": "Release identity and sqlite3.c SHA3-256"
+    },
+    {
+      "url": "https://www.sqlite.org/2025/sqlite-amalgamation-3500400.zip",
+      "scope": "Original c/h identity and finite backup/rollback implementation reading; full source not distributed"
+    },
+    {
+      "url": "https://www.sqlite.org/c3ref/backup_finish.html",
+      "scope": "Rolling API step/finish/progress and destination-connection contract"
+    }
+  ],
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+  "support_path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+  "experiment_readme": "管理档案/支持资料/SQLite备份提前收尾/README.md",
+  "manifest_sha256": "f32c9f8d9f032a02de2f42ecd4217c23ee3dc4e50175c7d4050b866bb02e4505",
+  "verification": "One author and one independent operator execution, same host and fixed inputs, known first result; two lifecycle branches and common close/reopen oracle. Not blind or cross-platform.",
+  "source_read_scope": "Fixed sqlite3.h backup API, sqlite3.c backup_step/finish and selected BtreeRollback/PagerRollback paths; not whole engine/VFS review.",
+  "excluded": [
+    "Concurrent writes or lock retry",
+    "WAL copying",
+    "Crash/power loss/I/O fault",
+    "Cloud synchronization",
+    "Performance or default build guarantee"
+  ],
+  "old_evidence": "Original Python/WAL outputs unchanged; OK/DONE and target readback already observed there. New direct C finish and partial cancellation evidence is separate.",
+  "reader_sha256": "101a8aa3bea2c334a2fcd8579852b0ccc559ae76bfb55b5667b9a11349144e39",
+  "support_sha256": "45e363b906f544a8a5f5ea2b0fdb7302cbb641dd15f9a5c0e16c18ade43da5db"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "20261103T055144Z-sqlite-c-backup-finish",
+  "task_ids": [
+    "TASK-2026-0204"
+  ],
+  "recorded_at": "2026-11-03T05:51:44Z",
+  "baseline_sha": "609dc51f6c24f3394c8d234fdc8229ce8663ad07",
+  "outcome": "accepted-native-and-reader-increment",
+  "changed_reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+  "artifacts": [
+    "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+    "管理档案/支持资料/SQLite备份提前收尾/README.md",
+    "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md",
+    "管理档案/来源笔记/sqlite-backup-finish-native.json",
+    "管理档案/支持资料/SQLite备份提前收尾/SOURCE.json",
+    "管理档案/支持资料/SQLite备份提前收尾/fixture/manifest.json",
+    "管理档案/支持资料/SQLite备份提前收尾/fixture/PROTOCOL.md",
+    "管理档案/支持资料/SQLite备份提前收尾/fixture/runner.py",
+    "管理档案/支持资料/SQLite备份提前收尾/fixture/driver.c",
+    "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/output.jsonl",
+    "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/result.json",
+    "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/output.jsonl",
+    "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/result.json"
+  ],
+  "verification": "One author and one independent operator execution, same host and fixed inputs, known first result; two lifecycle branches and common close/reopen oracle. Not blind or cross-platform.",
+  "observations": {
+    "runs": 2,
+    "branches_per_run": 2,
+    "output_lines_per_run": 27,
+    "complete_steps": 18,
+    "cancel_steps": 1,
+    "finish_rc_both": 0,
+    "complete_quantity": 7,
+    "cancel_quantity": 3
+  },
+  "limits": [
+    "Concurrent writes or lock retry",
+    "WAL copying",
+    "Crash/power loss/I/O fault",
+    "Cloud synchronization",
+    "Performance or default build guarantee"
+  ],
+  "preexecution_correction": "Initial candidate rejected before execution; process-group timeout cleanup, directory modes and symlink checks corrected, independently re-reviewed; C data/oracle unchanged. No native failed retry.",
+  "counts": {
+    "reader_books": 83,
+    "frozen_baseline": 55,
+    "post_baseline": 28,
+    "queue_tasks": 209
+  },
+  "counts_are_not_quality_evidence": true
+}

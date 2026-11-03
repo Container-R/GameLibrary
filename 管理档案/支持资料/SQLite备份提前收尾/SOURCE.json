@@ -1,0 +1,33 @@
+{
+  "retrieved_date_utc": "2026-11-03",
+  "version": "3.50.4",
+  "release_date": "2025-07-30",
+  "official_archive_url": "https://www.sqlite.org/2025/sqlite-amalgamation-3500400.zip",
+  "official_release_url": "https://www.sqlite.org/releaselog/3_50_4.html",
+  "archive_member_prefix": "sqlite-amalgamation-3500400/",
+  "source_id": "2025-07-30 19:33:53 4d8adfb30e03f9cf27f800a2c1ba3c48fb4ca1b08b0f5ed59a4d5ecbf45e20a3",
+  "official_sqlite3_c_sha3_256": "9145255e83da6529e70121ee4d7a4c88fe83ca4511da0c9ed13d10842df36782",
+  "verification": {
+    "sqlite3_c_sha3_256_matches_official_release": true,
+    "sqlite3_c_and_h_source_id_match_release": true
+  },
+  "files": [
+    {
+      "path": "source/sqlite-amalgamation-3500400.zip",
+      "bytes": 2845716,
+      "sha256": "1d3049dd0f830a025a53105fc79fd2ab9431aea99e137809d064d8ee8356b032"
+    },
+    {
+      "path": "source/sqlite3.c",
+      "bytes": 9282866,
+      "sha256": "e3f5d6901e7492af4a1fc8c4d745cae84c264942524c3fbfc02b82a5ca8818c8",
+      "sha3_256": "9145255e83da6529e70121ee4d7a4c88fe83ca4511da0c9ed13d10842df36782"
+    },
+    {
+      "path": "source/sqlite3.h",
+      "bytes": 661968,
+      "sha256": "abd1514e0351f79393d1be882830afdb40a8099e8257f311f0bfdf8486f11bea"
+    }
+  ],
+  "distribution": "Official archive and full source are not included; obtain c/h from the named official archive and verify the preserved manifest before offline reproduction."
+}

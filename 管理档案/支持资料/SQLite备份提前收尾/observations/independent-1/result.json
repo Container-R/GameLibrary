@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "stage": "complete",
+  "manifest_sha256": "f32c9f8d9f032a02de2f42ecd4217c23ee3dc4e50175c7d4050b866bb02e4505",
+  "input_sha256": {
+    "fixture/PROTOCOL.md": "e149374b252b7183f5a6a16ab56f0829569c0ae470ee5700664f9835b9403c31",
+    "fixture/driver.c": "66067210156bc72c5bb7d300b4dfba98fe6c851612632402c431938ddc7a2e2d",
+    "fixture/runner.py": "3bc483bcea4bd22afbd04ab15b754db11f9c30e829b771a1bc716e97ef2128b5",
+    "source/sqlite3.c": "e3f5d6901e7492af4a1fc8c4d745cae84c264942524c3fbfc02b82a5ca8818c8",
+    "source/sqlite3.h": "abd1514e0351f79393d1be882830afdb40a8099e8257f311f0bfdf8486f11bea"
+  },
+  "copied_inputs_verified": true,
+  "compile_returncode": 0,
+  "run_returncode": 0,
+  "output_sha256": "d17bc5b2c149a934e9904e7870fc88f40bdef4012bf2fd1a36faceb059850778",
+  "compile_stdout_empty": true,
+  "compile_stderr_empty": true,
+  "run_stderr_empty": true,
+  "scope": "same-host finite single-thread build; two fixed branches; no concurrency or crash test"
+}

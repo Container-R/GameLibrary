@@ -1,0 +1,27 @@
+{"event":"identity","version":"3.50.4","source_id":"2025-07-30 19:33:53 4d8adfb30e03f9cf27f800a2c1ba3c48fb4ca1b08b0f5ed59a4d5ecbf45e20a3","threadsafe":0}
+{"branch":"complete","event":"precheck","page_size":4096,"journal_mode":"delete","source_pages":18,"source_row":[1,7,65536],"target_row":[1,3,0],"target_reopened":true}
+{"branch":"complete","event":"step","index":1,"rc":0,"remaining":17,"pagecount":18}
+{"branch":"complete","event":"step","index":2,"rc":0,"remaining":16,"pagecount":18}
+{"branch":"complete","event":"step","index":3,"rc":0,"remaining":15,"pagecount":18}
+{"branch":"complete","event":"step","index":4,"rc":0,"remaining":14,"pagecount":18}
+{"branch":"complete","event":"step","index":5,"rc":0,"remaining":13,"pagecount":18}
+{"branch":"complete","event":"step","index":6,"rc":0,"remaining":12,"pagecount":18}
+{"branch":"complete","event":"step","index":7,"rc":0,"remaining":11,"pagecount":18}
+{"branch":"complete","event":"step","index":8,"rc":0,"remaining":10,"pagecount":18}
+{"branch":"complete","event":"step","index":9,"rc":0,"remaining":9,"pagecount":18}
+{"branch":"complete","event":"step","index":10,"rc":0,"remaining":8,"pagecount":18}
+{"branch":"complete","event":"step","index":11,"rc":0,"remaining":7,"pagecount":18}
+{"branch":"complete","event":"step","index":12,"rc":0,"remaining":6,"pagecount":18}
+{"branch":"complete","event":"step","index":13,"rc":0,"remaining":5,"pagecount":18}
+{"branch":"complete","event":"step","index":14,"rc":0,"remaining":4,"pagecount":18}
+{"branch":"complete","event":"step","index":15,"rc":0,"remaining":3,"pagecount":18}
+{"branch":"complete","event":"step","index":16,"rc":0,"remaining":2,"pagecount":18}
+{"branch":"complete","event":"step","index":17,"rc":0,"remaining":1,"pagecount":18}
+{"branch":"complete","event":"step","index":18,"rc":101,"remaining":0,"pagecount":18}
+{"branch":"complete","event":"finish","rc":0,"saw_done":true}
+{"branch":"complete","event":"readback","row":[1,7,65536],"schema_exact":true,"row_count":1,"zero_blob_exact":true}
+{"branch":"cancel","event":"precheck","page_size":4096,"journal_mode":"delete","source_pages":18,"source_row":[1,7,65536],"target_row":[1,3,0],"target_reopened":true}
+{"branch":"cancel","event":"step","index":1,"rc":0,"remaining":17,"pagecount":18}
+{"branch":"cancel","event":"finish","rc":0,"saw_done":false}
+{"branch":"cancel","event":"readback","row":[1,3,0],"schema_exact":true,"row_count":1,"zero_blob_exact":true}
+{"event":"all_checks_passed"}

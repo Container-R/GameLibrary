@@ -7149,7 +7149,20 @@
         "管理档案/审查/SQLite分步完成与收尾-来源与读者审查.md",
         "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
         "管理档案/来源笔记/sqlite-reset-binding.json",
-        "管理档案/审查/SQLite语句重置与参数保留-来源与读者审查.md"
+        "管理档案/审查/SQLite语句重置与参数保留-来源与读者审查.md",
+        "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+        "管理档案/支持资料/SQLite备份提前收尾/README.md",
+        "管理档案/审查/SQLite提前收尾-来源与原生读者审查.md",
+        "管理档案/来源笔记/sqlite-backup-finish-native.json",
+        "管理档案/支持资料/SQLite备份提前收尾/SOURCE.json",
+        "管理档案/支持资料/SQLite备份提前收尾/fixture/manifest.json",
+        "管理档案/支持资料/SQLite备份提前收尾/fixture/PROTOCOL.md",
+        "管理档案/支持资料/SQLite备份提前收尾/fixture/runner.py",
+        "管理档案/支持资料/SQLite备份提前收尾/fixture/driver.c",
+        "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/output.jsonl",
+        "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/result.json",
+        "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/output.jsonl",
+        "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/result.json"
       ],
       "acceptance": [
         "Read official WAL, backup, checkpoint and binding documentation",
@@ -7159,11 +7172,16 @@
         "Separate same-environment observation from crash, concurrency and multi-file guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T00:47:58Z",
+      "last_progress_at": "2026-11-03T05:51:44Z",
       "next_action": "For a real save system, define the intended business save boundary and restoration checks before integrating backup; this finite observation does not validate project recovery.",
       "blockers": [],
-      "verification_method": "One author and one independent same-environment native SQLite observation through Python, seven separate synthetic consumer calls, targeted official-source and independent full-reader review.",
-      "latest_reader_maintenance": "Optional source-write parameter reuse explanation; distinguishes wrong source values from backup omission, no new database experiment."
+      "verification_method": "Original Python/WAL observation unchanged; added fixed SQLite 3.50.4 direct C complete/cancel observation by author and independent same-host operator, with pre-execution and reader/source review.",
+      "latest_reader_maintenance": "Optional source-write parameter reuse explanation; distinguishes wrong source values from backup omission, no new database experiment.",
+      "latest_c_finish_observation": {
+        "support_path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+        "experiment_readme": "管理档案/支持资料/SQLite备份提前收尾/README.md",
+        "scope": "One author and one independent operator execution, same host and fixed inputs, known first result; two lifecycle branches and common close/reopen oracle. Not blind or cross-platform."
+      }
     },
     {
       "id": "TASK-2026-0205",
