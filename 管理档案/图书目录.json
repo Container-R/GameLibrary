@@ -1409,7 +1409,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "fc3c7fa3e82dbff71ab2f186a7d45abd5b76314b8ea5f7678f44ce76d92381a8",
+      "reader_sha256": "aee9d502efea5eb3d37d7fcbb2895183232172b52783f94213600c469ddd3b32",
       "review_paths": [
         "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
         "管理档案/审查/纹理上传行跨度-来源与读者审查.md",
@@ -1449,6 +1449,10 @@
         "review": "管理档案/审查/BC1透明模式-来源与读者审查.md",
         "source": "管理档案/来源笔记/bc1-alpha-mode.json",
         "scope": "Official format reading and independently reviewed original black/white endpoint example; no compressed file, codec, GPU, visual or quality experiment."
+      },
+      "streaming_state_review": {
+        "review": "管理档案/审查/纹理流送计划与当前状态-来源与读者审查.md",
+        "scope": "Finite Epic5.6 source-backed distinction between wanted plan and loaded state; aggregate metrics are not per-texture or per-pixel proof."
       }
     },
     {
@@ -2803,7 +2807,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5c06b184db1f610a134689bc7814d664d73d6efe",
+  "publication_base_sha": "385db016ddbdfc696c12fc525fa35c41cc915d43",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,

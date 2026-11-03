@@ -99,6 +99,18 @@ h_i = max(1, floor(H / 2^i))
 
 若资产没有变化，Windows运行时却报告超预算，TA与渲染接入者可选读[没有新增纹理，为什么D3D12仍会超出显存预算](../../../../管理档案/支持资料/没有新增纹理，为什么D3D12仍会超出显存预算.md)，进一步区分进程当前用量、动态预算与reservation；它们不能直接由离线BC字节数替代。
 
+## 计划加载的细节，不等于这一刻已经可用
+
+假设玩家突然走近一只箱子，想读清标签，画面却先显示模糊纹理。源图尺寸很大，完整链也已算进资产预算，为什么仍会这样？除了先确认导入和打包没有丢掉所需级数，还要看运行时是否已经把这次画面需要的细节准备好。下面是排查思路，不是本库重现的一次故障。
+
+以 Unreal Engine 5.6 的普通纹理流送文档为例，流送器先根据场景与观察位置计算理想分辨率，再根据池预算选择可实现的计划，安排更新顺序，最后发出加载或卸载请求。[8] 因而，想要更清楚、决定加载更清楚，以及加载已经完成，是不同阶段。源图改大并不会跳过这些阶段；一次请求尚未完成，也不能单独证明磁盘损坏或预算不足。
+
+一个容易看错的指标是 **Wanted Mips**。Epic 将 **Required Pool** 解释为按需求计算的 mip 数据量，将 **Wanted Pool** 解释为其中计划实际流入的部分；Wanted Mips 则表示这个计划有多少已经流入。[9] 如果预算已迫使计划降低分辨率，即使 Wanted Mips 达到100%，也不能据此断言全部理想细节或源图最高级已经就绪。反过来，尚未达到100%提示计划与当前状态仍有差别，却没有独自说明原因。这里解释的是该版本文档的指标含义，不是所有引擎共用的一套属性。这组汇总数字不能单独判定某张纹理或某个像素的状态。
+
+排查箱子标签时，应对着同一纹理、镜头和时点，先问需要什么级数、预算后的计划是什么，再看请求和当前加载情况，避免把不同镜头的数字放在一起比较。若所需图像已经具备而仍显得模糊，才进一步核对采样的 LOD、过滤与各级内容；已经加载，不保证每个像素都使用最高分辨率。前面的[手动重复坐标与Mip选择说明](../../../../管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md)讨论的就是另一类采样问题。
+
+这些判断不能用引擎的“已加载”代替操作系统或 GPU 的物理驻留测量，也不能替代画面质量检查。本例没有运行流送器、测量延迟或调整池大小；增加池预算、强制最高级都不是本文给出的通用处方。
+
 ## 如何把计算用于一次资产调整
 
 开始比较前，从目标平台的导入结果确认宽高、格式和实际 mip 级数，而不是只看源图片。然后写清目标：要减少下载体积，还是降低纹理数据量、上传峰值或运行时驻留？单位也要明确；若使用 MiB，1 MiB 等于 1,048,576 字节。
@@ -117,7 +129,7 @@ h_i = max(1, floor(H / 2^i))
 
 ## 参考来源
 
-更新与来源复核：2026-11-01。网页为滚动文档，不等同于某个已测试 SDK；以下只引用实际读取的格式定义、布局与接口含义。
+原有来源[1]–[7]更新与复核：2026-11-01；新增流送说明及[8]–[9]读取：2026-11-03。网页为滚动文档，不等同于某个已测试 SDK；以下只引用实际读取的格式定义、布局与接口含义。
 
 [1] Microsoft，*Texture Block Compression in Direct3D 11*，BC1 与 BC7 格式表：4×4 块分别占 8、16 字节。[原文](https://learn.microsoft.com/en-us/windows/win32/direct3d11/texture-block-compression-in-direct3d-11)
 
@@ -132,6 +144,10 @@ h_i = max(1, floor(H / 2^i))
 [6] Khronos，*VkMemoryRequirements*，Members 中的 `size` 与 `alignment`。[原文](https://docs.vulkan.org/refpages/latest/refpages/source/VkMemoryRequirements.html)
 
 [7] Khronos，*Sparse Resources*，“Sparse Resource Features”“Mip Tail Regions”及 `VkSparseImageMemoryRequirements` 的尾区字段。仅解释可能的管理粒度，不表示本例执行了流送或目标设备支持 BC 稀疏资源。[原文](https://docs.vulkan.org/spec/latest/chapters/sparsemem.html)
+
+[8] Epic Games，*Texture Streaming Overview*，Unreal Engine 5.6 文档，更新循环、理想分辨率与预算取舍、请求批次段。只取当前解释，不采用页面4.15历史性能百分比。[原文](https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-streaming-overview-for-unreal-engine?application_version=5.6)
+
+[9] Epic Games，*Texture Streaming Metrics*，Unreal Engine 5.6 文档，Memory Counters 中 Required Pool、Wanted Pool、Wanted Mips。本文只解释定义，未执行统计命令，不采用历史案例数据作为本例测量。[原文](https://dev.epicgames.com/documentation/en-us/unreal-engine/texture-streaming-metrics-in-unreal-engine?application_version=5.6)
 
 ---
 
