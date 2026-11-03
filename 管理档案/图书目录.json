@@ -283,7 +283,12 @@
       "supporting_material": "管理档案/来源笔记/localization-coordinator-role.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_sha256": "66a27d2322db4f1749be7048b512d2cfff9fc7ca7d2af637434466a6134ac8fb",
+      "subtitle_presentation_review": {
+        "review": "管理档案/审查/字幕显示与推进-来源与读者审查.md",
+        "scope": "Finite existing-reader increment distinguishes audio end, text removal and scene advancement; original unexecuted review questions backed by scoped XAG116 guidance."
+      }
     },
     {
       "internal_id": "ROLE-MUSIC-001",
@@ -2798,7 +2803,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2d69969ac4355d904f6022768f96eae50f46c40d",
+  "publication_base_sha": "5c06b184db1f610a134689bc7814d664d73d6efe",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,

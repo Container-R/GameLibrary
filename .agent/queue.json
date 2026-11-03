@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T20:24:12Z",
+      "last_progress_at": "2026-11-03T21:20:50Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -8273,6 +8273,32 @@
       "blockers": [],
       "verification_method": "Source-backed explanation and independent paper arithmetic; no date-library execution.",
       "publication_scope": "Support, host entry, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0233",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "译文没有改字，自动推进替代等待确认后，字幕呈现为什么仍需复查？",
+      "discipline": "LOC",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Finite existing localization-context gap rather than another subtitle system article.",
+      "expected_artifact": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+        "管理档案/审查/字幕显示与推进-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read adjacent current books and supports to avoid duplication",
+        "Read original XAG116 guidance and preserve scope",
+        "Independently reread full revised article",
+        "Check actual cross-disciplinary target and fragment"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T21:20:50Z",
+      "next_action": "Preserve proposed-check and no-player-test scope; do not generalize manual advancement to all gameplay.",
+      "blockers": [],
+      "verification_method": "Source-backed guidance and independent full reader review; no media or game execution.",
+      "publication_scope": "Revised reader, review, audit and public progress in containing commit."
     }
   ],
   "execution_policy": {
