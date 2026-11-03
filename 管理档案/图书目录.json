@@ -1216,11 +1216,12 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "e6eb4eecb1ab682aabe9f7b9a2db9298d3f6ca86f2a65083db3375eb6c7cc296",
+      "reader_sha256": "3ef7aeb65c063a50280e51ec2467848951dd8340442f616b03a820a9f72e2461",
       "review_paths": [
         "管理档案/审查/快照插值时间-来源与读者审查.md",
         "管理档案/审查/既有命中回溯支持-读者入口审查.md",
-        "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md"
+        "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
+        "管理档案/审查/Overwatch技能脚本同步-来源与读者审查.md"
       ],
       "snapshot_time_support": {
         "scope": "Optional sample-time versus arrival-time interpolation with explicit missing-endpoint and exact-sample branches.",
@@ -1249,6 +1250,12 @@
         "review": "管理档案/审查/持续动作状态恢复-来源与读者审查.md",
         "support_sha256": "0b20e59725593bb81c5c3ed98fe68f286c4a06b1f79ecbc28b8a96e052ab8bd6",
         "scope": "One optional entry, state-reference-time paper example; previous reader and support identities remain scoped to their original revisions."
+      },
+      "statescript_case_entry": {
+        "case_path": "GameLibrary/网络与在线服务/实时同步/技能同步/Overwatch如何区分本机预测与旁观者的技能同步.md",
+        "previous_reader_sha256": "e6eb4eecb1ab682aabe9f7b9a2db9298d3f6ca86f2a65083db3375eb6c7cc296",
+        "current_reader_sha256": "3ef7aeb65c063a50280e51ec2467848951dd8340442f616b03a820a9f72e2461",
+        "scope": "Optional reader entry only; previous prediction source and observation scopes unchanged."
       }
     },
     {
@@ -2670,6 +2677,24 @@
       ],
       "source_record": "管理档案/来源笔记/horizon-procedural-placement.json",
       "reader_sha256": "48b7b87e6627838bf8aca3b853f2e68badabd8bb9f76d5442e4e5550f4889067"
+    },
+    {
+      "internal_id": "CASE-NET-002",
+      "reader_title": "Overwatch如何区分本机预测与旁观者的技能同步",
+      "floor": "网络与在线服务",
+      "area": "实时同步",
+      "shelf": "技能同步",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/技能同步/Overwatch如何区分本机预测与旁观者的技能同步.md",
+      "current_read_path": "GameLibrary/网络与在线服务/实时同步/技能同步/Overwatch如何区分本机预测与旁观者的技能同步.md",
+      "reader_body_status": "published",
+      "editorial_status": "第一手讲义文字与关键原图、完整独立读者审读接受；原创设计与数值轨迹，未运行",
+      "origin": "first-party-historical-statescript-production-case",
+      "scope_note": "2017技能脚本的本地恢复与远端消费区别，不是当前Overwatch2或完整网络协议。",
+      "review_paths": [
+        "管理档案/审查/Overwatch技能脚本同步-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/overwatch-statescript.json",
+      "reader_sha256": "9fa30eca3112b6d6085de79ee98b1f3f0573a4fea5ce42d18b3fdc60e9feee5f"
     }
   ],
   "rewritten_reader_books": 55,
@@ -2680,10 +2705,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "f9075fbbec94da6ed78d2d09cde8d0879d77f9d4",
+  "publication_base_sha": "c43972a0e526a3034444f5fcaea94c49e00221ff",
   "accounted_for_original_items": 55,
-  "reader_books_total": 89,
-  "post_baseline_research_books": 34,
+  "reader_books_total": 90,
+  "post_baseline_research_books": 35,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

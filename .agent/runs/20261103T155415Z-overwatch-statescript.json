@@ -1,0 +1,25 @@
+{
+  "id": "20261103T155415Z-overwatch-statescript",
+  "recorded_at": "2026-11-03T15:54:15Z",
+  "task_ids": [
+    "TASK-2026-0219"
+  ],
+  "baseline_sha": "c43972a0e526a3034444f5fcaea94c49e00221ff",
+  "outcome": "accepted-first-party-historical-case-and-reader-integration",
+  "artifacts": [
+    "GameLibrary/网络与在线服务/实时同步/技能同步/Overwatch如何区分本机预测与旁观者的技能同步.md",
+    "管理档案/来源笔记/overwatch-statescript.json",
+    "管理档案/审查/Overwatch技能脚本同步-来源与读者审查.md"
+  ],
+  "reader_sha256": "9fa30eca3112b6d6085de79ee98b1f3f0573a4fea5ce42d18b3fdc60e9feee5f",
+  "verification": "First-party2017 Statescript slide case and original charge-ring dependency exercise/finite value trace only; no video viewing, source implementation, game, network or performance execution; not current Overwatch2.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 90,
+    "frozen_baseline": 55,
+    "post_baseline": 35,
+    "queue_tasks": 219
+  },
+  "counts_are_not_quality_evidence": true,
+  "publication_scope": "This reader, actual shelf and progress record belong to the containing commit; baseline is prior verified content."
+}

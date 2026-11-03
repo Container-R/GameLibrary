@@ -1,0 +1,26 @@
+{
+  "read_on": "2026-11-03",
+  "reader": "GameLibrary/网络与在线服务/实时同步/技能同步/Overwatch如何区分本机预测与旁观者的技能同步.md",
+  "reader_sha256": "9fa30eca3112b6d6085de79ee98b1f3f0573a4fea5ce42d18b3fdc60e9feee5f",
+  "review": "管理档案/审查/Overwatch技能脚本同步-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Dan Reed, Blizzard Entertainment",
+      "title": "Networking Scripted Weapons and Abilities in Overwatch",
+      "event": "GDC2017",
+      "url": "https://media.gdcvault.com/gdc2017/Presentations/Reed_Dan_NetworkingScriptedWeapons.pdf",
+      "session_identity": "https://gdcvault.com/play/1024653/Networking-Scripted-Weapons-and-Abilities",
+      "source_pdf_sha256": "b88802872b6e02b21d5e7dd4174c6fd33c3762909f7bfb24a9d040e09891b8f1",
+      "read_scope": "All82pages extractable text; main visually inspected25physical pages:21,38–41,44–48,51,54–58,60,63–66,77–80. Independent source reviewer inspected cited key original pages. Physical1-based pages, not printed labels or video timestamps."
+    }
+  ],
+  "verification": "First-party2017 Statescript slide case and original charge-ring dependency exercise/finite value trace only; no video viewing, source implementation, game, network or performance execution; not current Overwatch2.",
+  "limits": [
+    "Original charge-ring design and value trace are not actual game data",
+    "Merged current values alone do not reconstruct all intermediate values; actual Action serialization is not reverse-engineered",
+    "Mirrored data is not full-world rollback",
+    "No source PDF/images/code redistributed",
+    "Static figures do not supply unspoken video explanations",
+    "Prior prediction observations are not rerun"
+  ]
+}
