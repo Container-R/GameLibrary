@@ -314,7 +314,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T00:47:58Z",
+      "last_progress_at": "2026-11-03T00:59:00Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -1861,7 +1861,11 @@
       "artifact_paths": [
         "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
         "管理档案/研究记录/历史单元索引.json",
-        "管理档案/研究记录/source-notes/rig-evaluation-handoff.md"
+        "管理档案/研究记录/source-notes/rig-evaluation-handoff.md",
+        "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+        "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
+        "管理档案/来源笔记/kinedriver-representation.json",
+        "管理档案/审查/辅助骨层级与动画流-来源与读者审查.md"
       ],
       "acceptance": [
         "Distinguish Square Enix CEDEC2015 production workflow from Unity Animation Rigging1.2.1 implementation and Capcom employer role scope",
@@ -1870,7 +1874,7 @@
         "Compact source paraphrases and selective PDF physical-page receipts; no slides or third-party material bulk"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T21:21:24.488030Z",
+      "last_progress_at": "2026-11-03T00:59:00Z",
       "next_action": "Use explicit artifact identity and actual constraint/spatial-input controls; no runtime acceptance inferred from this source-backed worksheet",
       "blockers": [],
       "completed_at": "2026-10-31T21:25:33.780756Z",
@@ -1895,7 +1899,8 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "802b6bffaf240ff986ec35362dc7705aa75d4afc265b4beb7dc3e850b02ce8e2"
         }
-      ]
+      ],
+      "latest_reader_maintenance": "Finite CEDEC2023 KineDriver representation and parent-reference supplement, distinct from prior evaluation-order handoff; no runtime or performance claim."
     },
     {
       "id": "TASK-2026-0057",

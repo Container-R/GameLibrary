@@ -1,0 +1,36 @@
+{
+  "read_on": "2026-11-03",
+  "subject": "Helper-bone processing across authoring hierarchy, exposed scene transforms and animation-stream representation",
+  "sources": [
+    {
+      "author": "佐々木 隆典",
+      "organization": "Square Enix",
+      "title": "DCCツールの補助骨システムをUnityで動かす — Burst と Job System の活用事例",
+      "event": "CEDEC2023",
+      "date": "2023-08-24",
+      "url": "https://www.jp.square-enix.com/tech/library/pdf/CEDEC2023_KD_Unity.pdf",
+      "sha256": "aa1d5dcdcdd474d041ea4504d6fe8d7b418d4ecc1c1205b7367e076fc806128d",
+      "pages_used": "6, 84, 97–107; printed page numbers match PDF physical pages",
+      "reading_scope": "Relevant Transform/Playable chapters read; figures 1,84,100,105,106,107 inspected. Not a complete 120-page reading or video review.",
+      "application_scope": "Historical internal KineDriver Unity integration; no commercial game attribution or reproduced performance results."
+    },
+    {
+      "organization": "Unity Technologies",
+      "version": "2022.3 documentation series",
+      "url": "https://docs.unity3d.com/2022.3/Documentation/ScriptReference/AnimatorUtility.OptimizeTransformHierarchy.html",
+      "scope": "Complete short API page; removed/flattened scene hierarchy and runtime Animator reinitialization."
+    },
+    {
+      "organization": "Unity Technologies",
+      "version": "2022.3 documentation series",
+      "url": "https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Animations.AnimatorJobExtensions.BindStreamTransform.html",
+      "scope": "Complete short API page; binding to Transform already bound to Animator; no universal handle-validity guarantee after reinitialization."
+    }
+  ],
+  "execution_scope": "Source analysis and declared coordinate illustration only. No Unity/plugin installation, runtime, imported assets, implementation, performance measurement or historical experiment rerun.",
+  "deduplication": "Existing rig handoff concerns evaluation dependencies; this supplement distinguishes accessible representation and parent-relative coordinates even with correct order.",
+  "reader_support": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
+  "support_sha256": "12eb74b0f288cf368f78514574747667fdf1ac7791c068e3b3773c42a2e5dc89",
+  "parent_reader": "GameLibrary/角色动画/动画制作/岗位与协作/游戏动画师的工作与协作.md",
+  "review": "管理档案/审查/辅助骨层级与动画流-来源与读者审查.md"
+}

@@ -21,10 +21,17 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "7ad85d9034d77b8991eca097473119b29fde8670adf8fa76ef007f0c7cca1916",
+      "reader_sha256": "5ca59a0d240e4c9531b8d7695759e4a7d8d118dc1b6b67a3d2cc77f2cb336745",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md"
-      ]
+      ],
+      "helper_bone_representation_support": {
+        "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
+        "support_sha256": "12eb74b0f288cf368f78514574747667fdf1ac7791c068e3b3773c42a2e5dc89",
+        "source_record": "管理档案/来源笔记/kinedriver-representation.json",
+        "review": "管理档案/审查/辅助骨层级与动画流-来源与读者审查.md",
+        "scope": "Historical source interpretation and declared coordinate illustration; no Unity execution."
+      }
     },
     {
       "internal_id": "ROLE-ART2D-001",
@@ -2225,7 +2232,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "1368dff47c1f09d9a99eedd980a7991712a316da",
+  "publication_base_sha": "05baffc744bf0ca7f39a7d625ec5fc8a6e148abf",
   "accounted_for_original_items": 55,
   "reader_books_total": 83,
   "post_baseline_research_books": 28,
