@@ -1,0 +1,25 @@
+{
+  "id": "20261103T122707Z-fma-rounding-replay",
+  "task_ids": [
+    "TASK-2026-0009"
+  ],
+  "recorded_at": "2026-11-03T12:27:07Z",
+  "baseline_sha": "2993566425661024fd45300f108def9f9ae2c772",
+  "outcome": "accepted-source-and-reader-support",
+  "reader": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+  "artifacts": [
+    "管理档案/支持资料/乘完再加与融合乘加，为什么会走进不同分支.md",
+    "管理档案/审查/乘加舍入与回放-来源与读者审查.md",
+    "管理档案/来源笔记/fma-rounding-replay.json"
+  ],
+  "verification": "Independent source reading and paper derivation under specified binary32/rounding operations; no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}
