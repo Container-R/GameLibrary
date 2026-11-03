@@ -1459,11 +1459,20 @@
       },
       "reflection_normal_support": {
         "path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
-        "current_note_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8",
         "source_note": "管理档案/来源笔记/reflection-winding-normal.json",
         "review_path": "管理档案/审查/镜像绕序与着色法线-来源与读者审查.md",
         "scope": "Paper orthogonal reflection separates winding and shading normal; no generic w adjustment, renderer execution or new illustration.",
-        "historical_identity": "latest_support_illustration.support_sha256 and detail_normal_support.entry_sha256 retain their then-reviewed note identities. Existing SVG and mathematical A example unchanged; not revalidated runtime."
+        "historical_identity": "latest_support_illustration.support_sha256 and detail_normal_support.entry_sha256 retain their then-reviewed note identities. Existing SVG and mathematical A example unchanged; not revalidated runtime.",
+        "reviewed_note_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8"
+      },
+      "bitangent_reflection_support": {
+        "support_path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+        "current_note_sha256": "255e94d1f3c0b8c11a43a97fd83be914ec4b2f19ee2cd5340151b3f4712c5f97",
+        "previous_note_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8",
+        "source_record": "管理档案/来源笔记/tangent-reflection-basis.json",
+        "review_path": "管理档案/审查/反射副切线重建-来源与读者审查.md",
+        "scope": "Fixed-source rereading and original orthogonal-reflection basis reasoning only; no baking, import, shader, renderer, GPU or native execution.",
+        "historical_identity": "The reflection_normal_support, detail_normal_support and latest_support_illustration hashes identify their earlier reviews, not the current amended note. Their source records, SVG and observations remain unchanged."
       }
     },
     {

@@ -1,0 +1,26 @@
+{
+  "id": "20261103T150900Z-tangent-reflection-basis",
+  "recorded_at": "2026-11-03T15:09:00Z",
+  "task_ids": [
+    "TASK-2026-0216"
+  ],
+  "baseline_sha": "715d9295437096ac7daa1bbfb99f14f7fd61b655",
+  "outcome": "accepted-source-reader-local-integration",
+  "artifacts": [
+    "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+    "管理档案/来源笔记/tangent-reflection-basis.json",
+    "管理档案/审查/反射副切线重建-来源与读者审查.md"
+  ],
+  "previous_support_sha256": "3f13d58afe00bb20803dc70f573fc0a6474aef4316ee959ce4c2b459a856f5c8",
+  "current_support_sha256": "255e94d1f3c0b8c11a43a97fd83be914ec4b2f19ee2cd5340151b3f4712c5f97",
+  "verification": "Fixed-source rereading and original orthogonal-reflection basis reasoning only; no baking, import, shader, renderer, GPU or native execution.",
+  "native_runs": 0,
+  "counts": {
+    "reader_books": 89,
+    "frozen_baseline": 55,
+    "post_baseline": 34,
+    "queue_tasks": 216
+  },
+  "counts_are_not_quality_evidence": true,
+  "publication_scope": "This record and the support amendment belong to the same containing commit; the baseline identifies previously verified content."
+}

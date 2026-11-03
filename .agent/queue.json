@@ -7798,6 +7798,33 @@
       "blockers": [],
       "verification_method": "First-party Horizon 2017 placement slides and original three-point interval reasoning; same-footprint shared candidates distinguished from geometry collision. No map generation, GPU, Decima, game, performance or visual-quality execution.",
       "publication_scope": "Reader and public records are published together in the containing commit."
+    },
+    {
+      "id": "TASK-2026-0216",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Why can reconstructing a bitangent after an orthogonal reflection differ from transforming the original basis?",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "A bounded extension of an existing direction-transform explanation, separating basis orientation from front-face classification.",
+      "expected_artifact": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+      "artifact_paths": [
+        "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+        "管理档案/来源笔记/tangent-reflection-basis.json",
+        "管理档案/审查/反射副切线重建-来源与读者审查.md"
+      ],
+      "acceptance": [
+        "Read fixed primary-source clauses and selected shader path",
+        "Independently review complete candidate and original paper derivation",
+        "Preserve earlier note, illustration and runtime evidence identities",
+        "Verify existing matrix-to-support navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T15:09:00Z",
+      "next_action": "Preserve the stated basis-mapping target and avoid universal w-flip or renderer-defect claims.",
+      "blockers": [],
+      "verification_method": "Fixed-source rereading and original orthogonal-reflection basis reasoning only; no baking, import, shader, renderer, GPU or native execution.",
+      "publication_scope": "Support and public records are published together in the containing commit."
     }
   ],
   "execution_policy": {
