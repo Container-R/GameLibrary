@@ -1,0 +1,21 @@
+{
+  "protocol_id": "pointer-capture-routing-v1",
+  "inputs": {
+    "PROTOCOL.md": "6a97b0c3e5741ea447fca395b54b9f42d96fc3ffa6de0bc9a2b00a990f2785b9",
+    "fixture.html": "a0f5317d663376814d941fd546643b561cc75b7ba8135855681bd3eda4f53503",
+    "runner.cjs": "e8b60405a3fb9b92e7812779ff49194f9d6949887f69366c0ba737083ce55caa"
+  },
+  "runtime": {
+    "node": "v24.22.1",
+    "playwright": "1.62.1",
+    "browser": null
+  },
+  "cases": [],
+  "status": "FAIL",
+  "errors": [
+    {
+      "stage": "browser-launch",
+      "category": "BROWSER_LAUNCH_FAILED"
+    }
+  ]
+}

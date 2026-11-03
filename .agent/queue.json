@@ -350,7 +350,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T18:08:21Z",
+      "last_progress_at": "2026-11-03T18:34:36Z",
       "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
       "blockers": [],
       "partial_artifacts": [
@@ -8129,6 +8129,35 @@
       "blockers": [],
       "verification_method": "Original 84-slide author presentation and hypothetical reader example, not a reproduced production system.",
       "publication_scope": "Reader, navigation, source, review, inventory and progress belong to containing commit."
+    },
+    {
+      "id": "TASK-2026-0228",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "网页拖动时，捕获事件接收者为什么不是物品放置目标？",
+      "discipline": "UX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Distinct event-routing mechanism integrated into existing UX reader, not another general cancellation article.",
+      "expected_artifact": "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+      "artifact_paths": [
+        "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+        "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+        "管理档案/来源笔记/pointer-capture-drop-target.json",
+        "管理档案/审查/指针捕获与放置目标-来源与读者审查.md",
+        "管理档案/研究记录/pointer-capture-routing-v1/README.md"
+      ],
+      "acceptance": [
+        "Deduplicate existing UI and input readers",
+        "Read fixed normative capture and release rules",
+        "Explain original inventory example and click/cancel limits",
+        "Independent complete reader review; preserve failed browser attempt without native claims"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-03T18:34:36Z",
+      "next_action": "Maintain source-backed scope; no native retry or expanded framework is required by this finite explanation.",
+      "blockers": [],
+      "verification_method": "Fixed W3C source interpretation; one browser-launch failure, zero executed cases.",
+      "publication_scope": "Support, entry link, source, review and progress published in containing commit."
     }
   ],
   "execution_policy": {

@@ -606,11 +606,17 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/ux/game-ux-designer.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "5529122b86a2d6c7e52a953b6ea127a9ccf577d7992c6280ec057db55ca65db3",
+      "reader_sha256": "462f16b79bc00f279b8c20ce2f84a4eea2fa924f5e1530fe92bee9ab72728db0",
       "preset_scope_maintenance": {
         "source_record": "管理档案/来源笔记/ux-camera-preset-scope.json",
         "review": "管理档案/审查/体验设置预设-来源与读者审查.md",
         "scope": "Three paragraphs and two sources; original role-reader review and source identities remain limited to their prior version."
+      },
+      "pointer_capture_support": {
+        "path": "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+        "source_record": "管理档案/来源笔记/pointer-capture-drop-target.json",
+        "review": "管理档案/审查/指针捕获与放置目标-来源与读者审查.md",
+        "scope": "One Web-specific link; source-backed recipient-versus-drop explanation with failed launch, no native behavior result."
       }
     },
     {
@@ -2769,7 +2775,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "c532462b45d53e2fbc8501f9d264c98bfb6dea6f",
+  "publication_base_sha": "76b5ff73dda145a750076afc61389b5db554489b",
   "accounted_for_original_items": 55,
   "reader_books_total": 91,
   "post_baseline_research_books": 36,

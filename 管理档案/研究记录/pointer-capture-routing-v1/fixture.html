@@ -1,0 +1,13 @@
+<!doctype html><html><meta charset="utf-8"><title>Pointer capture routing fixture</title>
+<style>body{margin:0} .box{position:absolute;top:20px;width:100px;height:100px;box-sizing:border-box;user-select:none;touch-action:none}#source{left:20px;background:#acf}#destination{left:220px;background:#cfa}</style>
+<div id="source" class="box">Source</div><div id="destination" class="box">Destination</div>
+<script>
+const source=document.getElementById('source');
+window.trace=[];window.captureErrors=[];window.mode='control';window.activePointer=null;
+for(const type of ['pointerdown','pointermove','pointerup','gotpointercapture','lostpointercapture']){
+ document.addEventListener(type,e=>{window.trace.push({type:e.type,target:e.target.id||'',x:e.clientX,y:e.clientY,button:e.button,buttons:e.buttons,pointerId:e.pointerId,isTrusted:e.isTrusted,hit:document.elementFromPoint(e.clientX,e.clientY)?.id||''});},true);
+}
+source.addEventListener('pointerdown',e=>{window.activePointer=e.pointerId;if(window.mode!=='control'){try{source.setPointerCapture(e.pointerId)}catch{window.captureErrors.push('SET_CAPTURE_FAILED')}}});
+window.begin=mode=>{window.mode=mode;window.trace=[];window.captureErrors=[];window.activePointer=null};
+window.releaseCapture=()=>{try{source.releasePointerCapture(window.activePointer)}catch{window.captureErrors.push('RELEASE_CAPTURE_FAILED')}};
+</script></html>
