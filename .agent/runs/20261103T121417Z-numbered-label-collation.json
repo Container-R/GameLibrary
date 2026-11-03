@@ -1,0 +1,25 @@
+{
+  "id": "20261103T121417Z-numbered-label-collation",
+  "task_ids": [
+    "TASK-2026-0202"
+  ],
+  "recorded_at": "2026-11-03T12:14:17Z",
+  "baseline_sha": "30b7c5cf4a586db08137f8a8e4325342c0c37767",
+  "outcome": "accepted-source-and-reader-integration",
+  "reader": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "artifacts": [
+    "管理档案/支持资料/名称看起来相同，为什么仍然查不到存档.md",
+    "管理档案/审查/编号标签排序-来源与读者审查.md",
+    "管理档案/来源笔记/numbered-label-collation.json"
+  ],
+  "verification": "Fixed upstream API documentation and independent reader/source review; finite original numbered-label reasoning, no execution.",
+  "native_runs": 0,
+  "prior_native_evidence_unchanged": true,
+  "counts": {
+    "reader_books": 84,
+    "frozen_baseline": 55,
+    "post_baseline": 29,
+    "queue_tasks": 210
+  },
+  "counts_are_not_quality_evidence": true
+}

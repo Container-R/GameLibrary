@@ -1,0 +1,28 @@
+{
+  "title": "Numbered label collation versus matching and business-value ordering",
+  "read_on": "2026-11-03",
+  "source_commit": "8eca245c7484ac6cc179e3e5f7c1ea7680810f39",
+  "release_tag": "release-76-1",
+  "tag_resolution": "Main independently checked tag ref maps to source_commit; not installed binary identity.",
+  "sources": [
+    {
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/ucol.h",
+      "scope": "Selected complete settings/strength/numeric comments, strcoll, sort-key and version APIs; not whole implementation."
+    },
+    {
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/docs/userguide/collation/api.md",
+      "scope": "Instantiation, comparison and GetSortKey/Sort Key Features. Independent source review also reads fixed document; rolling guide used as supplemental discovery."
+    }
+  ],
+  "reader": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "support": "管理档案/支持资料/名称看起来相同，为什么仍然查不到存档.md",
+  "review": "管理档案/审查/编号标签排序-来源与读者审查.md",
+  "verification": "Fixed upstream API documentation and independent reader/source review; finite original numbered-label reasoning, no execution.",
+  "limits": [
+    "Numeric digit runs are not a general signed/decimal/exponent parser",
+    "No exact order claimed for out-of-scope numeric labels",
+    "Sort equivalence does not change identity or existing matching policy",
+    "No mandatory cache or performance claim",
+    "Prior normalization evidence not rerun or re-certified"
+  ]
+}

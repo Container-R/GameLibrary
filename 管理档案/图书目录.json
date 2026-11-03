@@ -2245,7 +2245,8 @@
       "scope_note": "虚构聊天情境与草案退出按键反例；保留不同草案顺序差异及Unity接口限定",
       "review_paths": [
         "管理档案/审查/输入法确认与聊天发送-读者与来源审查.md",
-        "管理档案/审查/显示名规范化-来源与读者审查.md"
+        "管理档案/审查/显示名规范化-来源与读者审查.md",
+        "管理档案/审查/编号标签排序-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/ime-confirmation-vs-submit.json",
       "reader_sha256": "71c04f606391314d75ca9307344fe3682af857e933dbaffe28ca3abef0d51aa9",
@@ -2258,10 +2259,16 @@
       },
       "unicode_label_support": {
         "path": "管理档案/支持资料/名称看起来相同，为什么仍然查不到存档.md",
-        "sha256": "a3212ab01b0a8bfbbe833ac001e478d2a79be6350225944ca174968f1295aa1b",
+        "sha256": "971ec5d2e4bb0fcc28437db7801e58299ad6aa4c195fdf98902da538a6d21b51",
         "review": "管理档案/审查/显示名规范化-来源与读者审查.md",
         "source": "管理档案/来源笔记/unicode-label-normalization.json",
-        "scope": "Fixed standard and data-record reading plus independently reviewed original full-label matching policy; no normalizer, IME, database or save execution."
+        "scope": "Prior normalization sections remain unchanged; their source/review binds the before-sort revision. Current complete support also includes separately reviewed numbered-label sorting.",
+        "normalization_reviewed_before_sort_sha256": "a3212ab01b0a8bfbbe833ac001e478d2a79be6350225944ca174968f1295aa1b",
+        "sort_addition": {
+          "source": "管理档案/来源笔记/numbered-label-collation.json",
+          "review": "管理档案/审查/编号标签排序-来源与读者审查.md",
+          "scope": "Fixed upstream API documentation and independent reader/source review; finite original numbered-label reasoning, no execution."
+        }
       }
     },
     {
