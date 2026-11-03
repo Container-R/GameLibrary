@@ -416,13 +416,16 @@
       ],
       "source_leads": [],
       "attempts": 1,
-      "last_progress_at": "2026-10-31T13:22:59.146248Z",
+      "last_progress_at": "2026-11-03T10:37:37Z",
       "next_action": "按引擎/格式化器真实集成证据维护，不外推模型",
       "blockers": [],
       "completed_at": "2026-10-31T13:25:27.472113Z",
       "commit_sha": "aca5eb0475019b61092085bb33cb2643a9dc5f4d",
       "artifact_paths": [
-        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md"
+        "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+        "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
+        "管理档案/审查/换行机会与选行宽度-来源与读者审查.md",
+        "管理档案/来源笔记/unicode-line-break-opportunities.json"
       ],
       "historical_artifacts": [
         {
@@ -431,7 +434,13 @@
           "commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
           "sha256": "73f1ca5fce9865fc30196e78816a4dbae80b27f40e38d1aad766a18795cff350"
         }
-      ]
+      ],
+      "line_break_support": {
+        "support": "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
+        "review": "管理档案/审查/换行机会与选行宽度-来源与读者审查.md",
+        "source": "管理档案/来源笔记/unicode-line-break-opportunities.json",
+        "scope": "Fixed official text and data plus independent source/reader review of an original six-code-point paper example; no execution."
+      }
     },
     {
       "id": "TASK-2026-0013",

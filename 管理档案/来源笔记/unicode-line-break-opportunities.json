@@ -1,0 +1,30 @@
+{
+  "title": "Legal line-break opportunities versus width-based line selection",
+  "read_on": "2026-11-03",
+  "sources": [
+    {
+      "publisher": "Unicode Consortium",
+      "title": "Unicode Line Breaking Algorithm",
+      "version": "Unicode 16.0.0 / revision 53 / 2024-09-02",
+      "url": "https://www.unicode.org/reports/tr14/tr14-53.html",
+      "scope": "Sections 1–4 and complete section 6; selected class and tailoring passages, not full annex"
+    },
+    {
+      "publisher": "Unicode Consortium",
+      "title": "LineBreak-16.0.0.txt",
+      "version": "2024-07-29",
+      "url": "https://www.unicode.org/Public/16.0.0/ucd/LineBreak.txt",
+      "scope": "Header and 4E00..9FFF ID, FF08 OP, FF09 CL records; not full database validation"
+    }
+  ],
+  "reader": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+  "support": "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
+  "review": "管理档案/审查/换行机会与选行宽度-来源与读者审查.md",
+  "verification": "Fixed official text and data plus independent source/reader review of an original six-code-point paper example; no execution.",
+  "limits": [
+    "One-cell-per-character width is an explicit artificial assumption",
+    "Internal optional opportunities differ from mandatory end of text",
+    "Default opportunities do not prescribe the chosen greedy layout",
+    "No shaping, font measurement, engine or locale-tailoring verification"
+  ]
+}
