@@ -1267,7 +1267,12 @@
       "review_paths": [
         "管理档案/审查/换行机会与选行宽度-来源与读者审查.md",
         "管理档案/审查/换行机会与塑形复用-增量审读.md"
-      ]
+      ],
+      "reader_sha256": "f717b3578f3200b17ff68a97fca2333b42b4c5cf46a6944f29c1e2df8fbeccd1",
+      "shaping_context_increment": {
+        "review": "管理档案/审查/字体覆盖与塑形-来源与读者审查.md",
+        "scope": "Target item range versus surrounding shaping context; fixed-source explanation, no execution or new book."
+      }
     },
     {
       "internal_id": "SOL-MODEL-001",

@@ -6914,10 +6914,15 @@
         "Complete full reader and actual navigation review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-02T02:04:10Z",
+      "last_progress_at": "2026-11-04T19:20:08Z",
       "next_action": "Inspect target strings in actual font/component configurations; mapping coverage alone cannot certify contextual positioning, fallback or rendered language quality.",
       "blockers": [],
-      "verification_method": "Fixed primary API/manual analysis and abstract non-executed combining-mark scenario; no font loading, shaping, renderer or device test."
+      "verification_method": "Fixed primary API/manual analysis and abstract non-executed combining-mark scenario; no font loading, shaping, renderer or device test.",
+      "shaping_context_increment": {
+        "reader": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+        "review": "管理档案/审查/字体覆盖与塑形-来源与读者审查.md",
+        "scope": "Two fresh context-free buffers distinguish a selected target within a paragraph from an isolated substring; no specific glyph or render result."
+      }
     },
     {
       "id": "TASK-2026-0186",
