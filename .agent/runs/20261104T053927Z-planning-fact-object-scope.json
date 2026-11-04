@@ -1,0 +1,31 @@
+{
+  "run_id": "20261104T053927Z-planning-fact-object-scope",
+  "base_sha": "a3b87e94dcc09054764882a7c40395e029dc3cbe",
+  "task_ids": [
+    "TASK-2026-0250"
+  ],
+  "outcome": "Support, host link and public progress in containing commit; remote files and actual routes require readback.",
+  "reader_books_total": 95,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 40,
+  "task_count": 250,
+  "artifact_paths": [
+    "管理档案/支持资料/规划里的武器已装弹，说的是哪一把武器.md",
+    "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+    "管理档案/审查/规划条件对象范围-来源与读者审查.md",
+    "管理档案/来源笔记/planning-fact-object-scope.json"
+  ],
+  "scope": "One finite supporting explanation and host link; no new reader book or runtime execution.",
+  "checks": {
+    "new_reader_bodies": 0,
+    "new_supports": 1,
+    "runtime_executions": 0,
+    "independent_reader": "Complete support and host, original selected section and finite argument; not human usability testing."
+  },
+  "previous_content_readback": {
+    "sha": "a3b87e94dcc09054764882a7c40395e029dc3cbe",
+    "changed_files_exact": 14,
+    "actual_remote_edges": 14,
+    "canonical_blobs_matched": 1870
+  }
+}

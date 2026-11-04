@@ -8802,6 +8802,37 @@
         "管理档案/审查/Reckoning镜头避障-来源与读者审查.md",
         "管理档案/来源笔记/reckoning-camera-history.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0250",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Selected original source and independent complete reader/finite logical review; no execution.",
+      "publication_scope": "Support and host link in containing commit.",
+      "question": "条件为真时，如何明确它指向哪个对象？",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "以有限反例解释条件输入的含义，承接既有计划执行正文。",
+      "expected_artifact": "管理档案/支持资料/规划里的武器已装弹，说的是哪一把武器.md",
+      "acceptance": [
+        "原始相关段落核对",
+        "原创输入与来源事实分开",
+        "完整支持及宿主独立审读",
+        "导航与完整公开载荷检查"
+      ],
+      "source_leads": [
+        "https://www.gamedevs.org/uploads/three-states-plan-ai-of-fear.pdf"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T05:39:27Z",
+      "next_action": "仅按具体集成问题补充，不将有限例子扩成完整规划实现。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/规划里的武器已装弹，说的是哪一把武器.md",
+        "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+        "管理档案/审查/规划条件对象范围-来源与读者审查.md",
+        "管理档案/来源笔记/planning-fact-object-scope.json"
+      ]
     }
   ],
   "execution_policy": {

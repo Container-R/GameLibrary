@@ -1,0 +1,19 @@
+{
+  "support": "管理档案/支持资料/规划里的武器已装弹，说的是哪一把武器.md",
+  "support_sha256": "2bfff308d34390c7d2c42c265240ae7ebd0aab01761e9057f8a12a73fbd53a0d",
+  "host": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
+  "host_sha256": "7adfd65287fd3ba4bc99d69ab1373db596c96acf2a7905d62c8d75be6f800520",
+  "review": "管理档案/审查/规划条件对象范围-来源与读者审查.md",
+  "read_date": "2026-11-04",
+  "source": {
+    "bibliographic_reference": "Support reference [1]",
+    "url": "https://www.gamedevs.org/uploads/three-states-plan-ai-of-fear.pdf",
+    "official_session": "https://www.gdcvault.com/play/1013282/Three-States-and-a-Plan",
+    "public_pdf_sha256": "72965c88cbb2fd4185834e5aebd36a969960452878b75ff484daf2dc849a143b",
+    "selected_page": 12,
+    "reading_scope": "Selected original section and context; not the entire paper or video.",
+    "identity_limit": "Authored public mirror, not byte identity against the unavailable original author host."
+  },
+  "analysis": "Original two-world equal-input/different-eligibility argument; no engine execution or reported production defect.",
+  "publication_scope": "Finite support and optional host link; no source PDF, screenshots, code or extracted text."
+}
