@@ -1387,6 +1387,13 @@
         "previous_reader_sha256": "e6eb4eecb1ab682aabe9f7b9a2db9298d3f6ca86f2a65083db3375eb6c7cc296",
         "current_reader_sha256": "3ef7aeb65c063a50280e51ec2467848951dd8340442f616b03a820a9f72e2461",
         "scope": "Optional reader entry only; previous prediction source and observation scopes unchanged."
+      },
+      "snapshot_clock_increment": {
+        "support_path": "管理档案/支持资料/快照样本时间与到达时间.md",
+        "support_sha256": "087a6805e20cfcbd3a2c9ba699634926cfe8d01369f984550264349e56be83d7",
+        "source_record": "管理档案/来源笔记/snapshot-interpolation-time.json",
+        "review": "管理档案/审查/快照插值时间-来源与读者审查.md",
+        "scope": "Finite four-timestamp ambiguity in existing interpolation support; host unchanged, no new book/support or execution."
       }
     },
     {
@@ -2950,7 +2957,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "067227ed698a098a1e65ebac64d72af0db57757d",
+  "publication_base_sha": "99ee3a042743bd42dd491b6e39c0e2c23fe33f3b",
   "accounted_for_original_items": 55,
   "reader_books_total": 93,
   "post_baseline_research_books": 38,

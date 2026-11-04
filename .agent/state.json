@@ -33,17 +33,17 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261104T040136Z-sprite-production-merge",
-  "last_real_progress_at": "2026-11-04T04:01:36Z",
-  "last_commit_sha": "067227ed698a098a1e65ebac64d72af0db57757d",
+  "last_run_id": "20261104T041811Z-snapshot-clock-offset",
+  "last_real_progress_at": "2026-11-04T04:18:11Z",
+  "last_commit_sha": "99ee3a042743bd42dd491b6e39c0e2c23fe33f3b",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "067227ed698a098a1e65ebac64d72af0db57757d",
-    "latest_verified_content_sha": "067227ed698a098a1e65ebac64d72af0db57757d",
+    "last_verified_head_sha": "99ee3a042743bd42dd491b6e39c0e2c23fe33f3b",
+    "latest_verified_content_sha": "99ee3a042743bd42dd491b6e39c0e2c23fe33f3b",
     "reader_books_total": 93,
     "post_baseline_research_books": 38,
-    "scope": "Compact3D-source/2D-output historical production case in existing animator reader; no standalone support, new book or execution.",
-    "status": "Reader and public progress are in the containing commit."
+    "scope": "Finite clock-offset ambiguity integrated into existing snapshot interpolation support; no new reader book, support page or runtime execution.",
+    "status": "Support and public progress are in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
