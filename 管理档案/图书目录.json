@@ -21,13 +21,14 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "ee90d384a2412d2774514f189cb63a42d45a09e294d0884f1fe2b0d31774d9f2",
+      "reader_sha256": "a313aaea1006c44bc026c880e99f0dd546f575c35386fbdefea41ed571f13f74",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
         "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
         "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
         "管理档案/审查/加法动画参考姿势-来源与读者审查.md",
-        "管理档案/审查/动作更新与镜头构图-来源与读者审查.md"
+        "管理档案/审查/动作更新与镜头构图-来源与读者审查.md",
+        "管理档案/审查/三维动作与二维输出-来源与读者审查.md"
       ],
       "helper_bone_representation_support": {
         "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
@@ -44,6 +45,11 @@
       "camera_framing_increment": {
         "review": "管理档案/审查/动作更新与镜头构图-来源与读者审查.md",
         "scope": "Existing animator reader adds source-backed production case and explicitly hypothetical framing review; no new book or runtime validation."
+      },
+      "sprite_production_increment": {
+        "review": "管理档案/审查/三维动作与二维输出-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/dead-cells-editable-sprite-production.json",
+        "scope": "Compact historical3D-to-2D production example directly integrated; no new book/support or execution."
       }
     },
     {
@@ -2944,7 +2950,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "110a546d4f8590380d9d84468eff6f818125fd26",
+  "publication_base_sha": "067227ed698a098a1e65ebac64d72af0db57757d",
   "accounted_for_original_items": 55,
   "reader_books_total": 93,
   "post_baseline_research_books": 38,
