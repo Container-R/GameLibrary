@@ -1,0 +1,30 @@
+{
+  "run_id": "20261104T135856Z-factorio-boiler-case",
+  "base_sha": "447aa37d98b5f5b0caf8fe56d2239e0652bc9314",
+  "task_ids": [
+    "TASK-2026-0265"
+  ],
+  "outcome": "Reader and navigation in containing commit; remote readback still required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 265,
+  "artifact_paths": [
+    "GameLibrary/玩法程序/玩法系统/资源网络/Factorio的锅炉只收水，为什么润滑油仍能穿过去.md",
+    "管理档案/审查/锅炉案例-来源与读者审查.md",
+    "管理档案/来源笔记/factorio-boiler-filter-ownership.json"
+  ],
+  "checks": {
+    "new_reader_books": 1,
+    "executions": 0,
+    "independent_reader_review": true,
+    "original_figures_inspected": true,
+    "original_figures_republished": false
+  },
+  "previous_readback": {
+    "sha": "447aa37d98b5f5b0caf8fe56d2239e0652bc9314",
+    "changed_files": 8,
+    "remote_route_edges": 9,
+    "scope": "Optional source-backed support; no execution."
+  }
+}
