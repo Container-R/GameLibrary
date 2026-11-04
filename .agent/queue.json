@@ -8929,6 +8929,38 @@
         "管理档案/来源笔记/zip-entry-identity.json",
         "管理档案/研究记录/zip-entry-identity-20261104/README.md"
       ]
+    },
+    {
+      "id": "TASK-2026-0254",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Selected fixed original headers/implementation, complete reader review and original hypothetical policy comparison; no execution.",
+      "publication_scope": "New reader, existing shelf/area links and public progress in containing commit.",
+      "question": "如何核对正文 P/Q 示例中的三处项目记录？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "补足既有输入接入书架的明确键盘政策问题，不混入手柄或文本编辑职责。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/输入接入/切换键盘布局后，移动键应该跟着位置还是字母走.md",
+      "acceptance": [
+        "现有正文与支持去重",
+        "固定原始接口与实现分支核对",
+        "假设与未执行范围明确",
+        "独立完整读者与来源审查",
+        "真实入口和完整公开载荷检查"
+      ],
+      "source_leads": [
+        "https://wiki.libsdl.org/SDL3/BestKeyboardPractices",
+        "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/include/SDL3/SDL_keyboard.h"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T07:12:13Z",
+      "next_action": "只按具体读者问题补充，不把假设映射或旧版本分支推广到所有设备和后端。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/输入接入/切换键盘布局后，移动键应该跟着位置还是字母走.md",
+        "管理档案/审查/键盘绑定身份-来源与读者审查.md",
+        "管理档案/来源笔记/keyboard-binding-identity.json"
+      ]
     }
   ],
   "execution_policy": {

@@ -3020,6 +3020,27 @@
       "related_roles": [
         "ROLE-PROG-001"
       ]
+    },
+    {
+      "internal_id": "SOL-PROG-006",
+      "reader_title": "切换键盘布局后，移动键应该跟着位置还是字母走",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "输入接入",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/切换键盘布局后，移动键应该跟着位置还是字母走.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/输入接入/切换键盘布局后，移动键应该跟着位置还是字母走.md",
+      "reader_body_status": "published",
+      "editorial_status": "完整正文、固定原始相关接口/分支与独立读者审读；无设备或SDL执行",
+      "origin": "source-backed-original-integration-analysis",
+      "scope_note": "两套假设映射、事先释放相关键；不提供完整按键状态机或所有平台行为保证。",
+      "review_paths": [
+        "管理档案/审查/键盘绑定身份-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/keyboard-binding-identity.json",
+      "reader_sha256": "27e4fbe1b4d4f6fb89a491e53164817efdb1c47c0b9f66a83f4cdf834f94e0cf",
+      "related_roles": [
+        "ROLE-PROG-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3030,10 +3051,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "26e8d7541b8a1a90300f4fed63dc07f9dbc0ae35",
+  "publication_base_sha": "5842f2fd32157f19a0f6c9873a2167f19d584924",
   "accounted_for_original_items": 55,
-  "reader_books_total": 95,
-  "post_baseline_research_books": 40,
+  "reader_books_total": 96,
+  "post_baseline_research_books": 41,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
