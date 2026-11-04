@@ -148,12 +148,19 @@
       "scope_disposition_review": "管理档案/审查/交互音频岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/audio/interactive-audio-designer.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "f305ee0fe6f51ae094f16baae14c9c304640bc9c3f2ecdf8c8f3ad6f950bc163",
+      "reader_sha256": "0369ca7c67cf3b621be0259af9d3bd0c6a2ca78fdb2bf88f66085626eb78e168",
       "reverb_send_support": {
         "support": "管理档案/支持资料/挡住直达声后，为什么混响也断了.md",
         "source_record": "管理档案/来源笔记/reverb-send-order.json",
         "review": "管理档案/审查/直达声与混响发送位置-来源与读者审查.md",
         "scope": "Historical send-order example and original finite signal graph; no new book or execution."
+      },
+      "doppler_support": {
+        "support": "管理档案/支持资料/音源和听者一起移动，为什么音高仍会变.md",
+        "sha256": "771edb50fa6874f33233f19c3f8880b28339a6c86c88f034d8689f8b760c8383",
+        "source_record": "管理档案/来源笔记/doppler-velocity-state.json",
+        "review": "管理档案/审查/同向移动音高-来源与读者审查.md",
+        "scope": "Optional original paper example; selected-source and complete-reader review only, no execution."
       }
     },
     {
@@ -3074,7 +3081,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "9372d4b52362c7524040abdae1a2b93a0fbf2b5c",
+  "publication_base_sha": "70ea6834406be91404de4cdd42385fb0ce760b1f",
   "accounted_for_original_items": 55,
   "reader_books_total": 96,
   "post_baseline_research_books": 41,

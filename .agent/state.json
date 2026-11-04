@@ -33,17 +33,17 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261104T092845Z-zip-destination-scope",
-  "last_real_progress_at": "2026-11-04T09:28:45Z",
-  "last_commit_sha": "9372d4b52362c7524040abdae1a2b93a0fbf2b5c",
+  "last_run_id": "20261104T095749Z-doppler-reader-support",
+  "last_real_progress_at": "2026-11-04T09:57:49Z",
+  "last_commit_sha": "70ea6834406be91404de4cdd42385fb0ce760b1f",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "9372d4b52362c7524040abdae1a2b93a0fbf2b5c",
-    "latest_verified_content_sha": "9372d4b52362c7524040abdae1a2b93a0fbf2b5c",
+    "last_verified_head_sha": "70ea6834406be91404de4cdd42385fb0ce760b1f",
+    "latest_verified_content_sha": "70ea6834406be91404de4cdd42385fb0ce760b1f",
     "reader_books_total": 96,
     "post_baseline_research_books": 41,
-    "scope": "One bounded source-only addition to existing ZIP support; no new reader book, native case or extraction.",
-    "status": "Updated support and public progress are in the containing commit."
+    "scope": "One optional source-only support in an existing reader route; no new book or native execution.",
+    "status": "Support, host entry and public progress are in the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {

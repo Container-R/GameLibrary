@@ -9063,6 +9063,34 @@
         "管理档案/审查/深度存储粒度-来源与读者审查.md",
         "管理档案/来源笔记/depth-storage-precision.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0258",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "音源和听者一起移动，为什么音高仍会变？",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "补充既有音频读者入口的一项有限问题，不另建同义书目。",
+      "expected_artifact": "管理档案/支持资料/音源和听者一起移动，为什么音高仍会变.md",
+      "acceptance": [
+        "原始文字与完整读者审查",
+        "原创纸算独立复核",
+        "未执行范围明确",
+        "完整公开载荷与实际导航核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T09:57:49Z",
+      "next_action": "按具体项目检查适用性，不将纸面例子当作输出观察。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/音源和听者一起移动，为什么音高仍会变.md",
+        "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+        "管理档案/审查/同向移动音高-来源与读者审查.md",
+        "管理档案/来源笔记/doppler-velocity-state.json"
+      ],
+      "verification_method": "Selected original text, original finite arithmetic and independent complete reader review; no audio implementation execution.",
+      "publication_scope": "Support, host entry and progress belong to containing commit."
     }
   ],
   "execution_policy": {

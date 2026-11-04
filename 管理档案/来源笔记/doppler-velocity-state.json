@@ -1,0 +1,17 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/音源和听者一起移动，为什么音高仍会变.md",
+  "support_sha256": "771edb50fa6874f33233f19c3f8880b28339a6c86c88f034d8689f8b760c8383",
+  "host": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+  "host_sha256": "0369ca7c67cf3b621be0259af9d3bd0c6a2ca78fdb2bf88f66085626eb78e168",
+  "review": "管理档案/审查/同向移动音高-来源与读者审查.md",
+  "source_url": "https://www.openal.org/documentation/openal-1.1-specification.pdf",
+  "identity": "OpenAL 1.1 Specification and Reference, June 2005",
+  "read_scope": [
+    "3.5.2",
+    "4.1",
+    "4.3.2 Source Positioning"
+  ],
+  "verification": "Selected original text and independent complete reader review; original finite paper calculation only.",
+  "limits": "No rendered-page inspection, native audio execution, playback, listening, device or engine observation."
+}
