@@ -8961,6 +8961,40 @@
         "管理档案/审查/键盘绑定身份-来源与读者审查.md",
         "管理档案/来源笔记/keyboard-binding-identity.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0255",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Original textual passages and independent complete reader review; no visual inspection or execution.",
+      "publication_scope": "Support, host link and public progress in containing commit.",
+      "question": "怎样讨论已经精修的入口仍需改动的决定？",
+      "discipline": "DESIGN",
+      "status": "published",
+      "priority": 83,
+      "priority_rationale": "为既有关卡交接正文补充有限的制作决策案例。",
+      "expected_artifact": "管理档案/支持资料/入口已经精修，为什么还要拆掉重来.md",
+      "acceptance": [
+        "既有正文与支持去重",
+        "项目记述与原创解释分开",
+        "来源与独立完整读者审查",
+        "完整公开载荷及导航检查"
+      ],
+      "source_leads": [
+        "https://www.artofluis.com/3d-work/the-art-of-the-witness/entry-yard/",
+        "https://the-witness.net/news/2014/06/road-to-e3-day-1/",
+        "https://the-witness.net/news/2014/06/road-to-e3-day-3/",
+        "https://the-witness.net/news/2014/06/road-to-e3-day-4/"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T07:38:46Z",
+      "next_action": "只按具体读者问题补充；不把文字回顾扩为视觉或玩家效果验证。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/入口已经精修，为什么还要拆掉重来.md",
+        "GameLibrary/游戏设计/关卡设计/岗位与协作/关卡策划从白盒到制作交付的工作.md",
+        "管理档案/审查/入口改造取舍-来源与读者审查.md",
+        "管理档案/来源笔记/witness-entry-yard.json"
+      ]
     }
   ],
   "execution_policy": {
