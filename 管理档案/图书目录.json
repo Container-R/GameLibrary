@@ -272,7 +272,7 @@
         "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
         "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       },
-      "reader_sha256": "9c513a087567f9237ed562304f061b394eb042135d24f3f6dd2ccc1f5582d5f0",
+      "reader_sha256": "e09567d27d4cb1520d70dbfdd73a5ae3584ababb09a05bc762ac3fd3202cbe2a",
       "shared_output_support": {
         "path": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
         "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
@@ -315,6 +315,14 @@
         "sha256": "b7691e4f2b0b350da3e1ac6af3d066f47b2820e6b9d5e341d29e934b390e3072",
         "review": "管理档案/审查/构建路径映射-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/build-path-prefix-map.json"
+      },
+      "ninja_dependency_observation": {
+        "path": "管理档案/支持资料/生成文件已经更新，为什么后续产物仍是旧内容.md",
+        "sha256": "30bb1c2d7e54dcc40f985eeff1bf288c66711b759ce346f5b6725e1a6215f2c9",
+        "package": "管理档案/支持资料/Ninja依赖变化观察/README.md",
+        "review": "管理档案/审查/Ninja依赖变化-原生与读者审查.md",
+        "source_record": "管理档案/来源笔记/ninja-order-only-observation.json",
+        "scope": "Finite hand-written Ninja graph observation; existing CMake explanation remains source-backed, not executed."
       }
     },
     {

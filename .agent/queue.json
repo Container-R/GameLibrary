@@ -9356,6 +9356,45 @@
       ],
       "verification_method": "Source-grounded support and original paper substitution; no shader or rendering execution.",
       "publication_scope": "Optional support and shelf entry in containing commit."
+    },
+    {
+      "id": "TASK-2026-0268",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "只保证生成步骤先完成，是否足以让下游读取改后的内容？",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 79,
+      "priority_rationale": "为现有构建依赖解释提供有限实际观察，避免把干净构建成功当增量正确。",
+      "expected_artifact": "管理档案/支持资料/生成文件已经更新，为什么后续产物仍是旧内容.md",
+      "acceptance": [
+        "固定来源与存量去重",
+        "执行前冻结及独立协议审查",
+        "实际字节和时间前提",
+        "独立原始结果与公开衍生审查",
+        "实际读者导航"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T15:55:32Z",
+      "next_action": "保持有限图观察与CMake文档解释分层，真实资产管线需另定输入和验证。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/生成文件已经更新，为什么后续产物仍是旧内容.md",
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/README.md",
+        "管理档案/来源笔记/ninja-order-only-observation.json",
+        "管理档案/审查/Ninja依赖变化-原生与读者审查.md",
+        "管理档案/支持资料/Ninja依赖变化观察/README.md",
+        "管理档案/支持资料/Ninja依赖变化观察/artifact-manifest.json",
+        "管理档案/支持资料/Ninja依赖变化观察/check_observations.py",
+        "管理档案/支持资料/Ninja依赖变化观察/fixture_helper.py",
+        "管理档案/支持资料/Ninja依赖变化观察/implicit.ninja",
+        "管理档案/支持资料/Ninja依赖变化观察/observations.json",
+        "管理档案/支持资料/Ninja依赖变化观察/order_only.ninja",
+        "管理档案/支持资料/Ninja依赖变化观察/recipe-v1.txt",
+        "管理档案/支持资料/Ninja依赖变化观察/recipe-v2.txt"
+      ],
+      "verification_method": "One official-source tool build, two same-operator fresh-directory fixture repeats and independent read-only review; sixteen fixture calls. One earlier preflight rejection launched no native program.",
+      "publication_scope": "Optional support, observation package and existing reader entries in containing commit."
     }
   ],
   "execution_policy": {

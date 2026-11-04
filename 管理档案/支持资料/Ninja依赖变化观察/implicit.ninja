@@ -1,0 +1,9 @@
+ninja_required_version = 1.13
+python = python3
+helper = fixture_helper.py
+rule generate
+  command = "$python" -I -B "$helper" generate
+rule bundle
+  command = "$python" -I -B "$helper" bundle
+build generated.txt: generate recipe.txt
+build bundle.txt: bundle | generated.txt

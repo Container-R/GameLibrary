@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "purpose": "Published original example and sanitized finite observations; not execution attestation.",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 6535,
+      "sha256": "4a1f98b47ffbd2248030080f466c6cf288cf7a8fa77baccc3ddd59fd305dddba"
+    },
+    {
+      "path": "check_observations.py",
+      "size": 6430,
+      "sha256": "5252a1f11fc2a205691df8ea0c80e98e255f48559dcc5f2642bdd9bf04421b00"
+    },
+    {
+      "path": "fixture_helper.py",
+      "size": 1221,
+      "sha256": "3b732b1b05b5a4c120bb25ced903a90f38097468d1604dc43c67d1c3db8e0287"
+    },
+    {
+      "path": "implicit.ninja",
+      "size": 274,
+      "sha256": "19a3a5de4bb15d84ff070b62029de9aec461a20e734dc80162f8a597da8bbaf8"
+    },
+    {
+      "path": "observations.json",
+      "size": 30681,
+      "sha256": "8e56578c5c3867a94e0746cc0e960bbe23df295d31a969d8568e7b203e4205ee"
+    },
+    {
+      "path": "order_only.ninja",
+      "size": 275,
+      "sha256": "8a37528284a7b780f9a2c10a71bc334e12ce0cf235c7da0ece282cdfb87b6d84"
+    },
+    {
+      "path": "recipe-v1.txt",
+      "size": 16,
+      "sha256": "ae9748a9df0ae74c78203082f8293895ced46a9e517c551f607199d2daf9b8d0"
+    },
+    {
+      "path": "recipe-v2.txt",
+      "size": 16,
+      "sha256": "d98470cd020000db7f27f801d18a42366ddc23f8beda0f706dab90e76efcf06f"
+    }
+  ]
+}

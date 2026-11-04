@@ -1,0 +1,28 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/生成文件已经更新，为什么后续产物仍是旧内容.md",
+  "support_sha256": "30bb1c2d7e54dcc40f985eeff1bf288c66711b759ce346f5b6725e1a6215f2c9",
+  "host": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "review": "管理档案/审查/Ninja依赖变化-原生与读者审查.md",
+  "observation_package": "管理档案/支持资料/Ninja依赖变化观察/README.md",
+  "package_manifest_sha256": "56b4290d43f2e2c689db57a3267e5566df167404aabf6bfb4548eb62600e4089",
+  "sources": [
+    {
+      "url": "https://github.com/ninja-build/ninja/tree/3441b633c2fe2c494e958780ba0f4227b1327634",
+      "revision": "3441b633c2fe2c494e958780ba0f4227b1327634",
+      "version": "v1.13.2",
+      "read_scope": "Selected manual dependency sections, graph input readiness and dirty propagation, ordinary build completion, selected upstream tests and original bootstrap path. Not a complete code audit; upstream tests were not run.",
+      "license": "Apache-2.0; selected vendored emhash and rapidhash notices separately preserved under MIT and BSD-2-Clause. No third-party source or binary redistributed in this package."
+    }
+  ],
+  "verification_method": "Two same-operator fresh-directory repetitions sharing one locally built tool; sixteen finite fixture calls, fourteen helper starts, independent read-only source/result/reader review. Not independent native replication.",
+  "public_derivation": "Original helper and input bytes retained; graph machine bindings replaced without re-execution; observation mtimes shifted by one origin per graph. No original host logs or binary fingerprints published.",
+  "excluded": [
+    "CMake generation",
+    "real game assets",
+    "all dependency mechanisms",
+    "cross-platform behavior",
+    "performance",
+    "runtime testing of timeout cleanup"
+  ]
+}
