@@ -341,7 +341,7 @@
       "historical_body_path": "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
       "latest_increment": {
-        "scope": "Repeatable dialogue choices distinguish current conditions, prior target visits and actual return control flow.",
+        "scope": "Repeatable dialogue choices distinguish current conditions, prior target visits and actual return control flow. Historical reader hash below binds the earlier repeatable-choice revision.",
         "reader_sha256": "5aee47043a8665504e0c401444119a7a2961f8edd5627f161079604f2e99d503",
         "reader_review": "管理档案/审查/重复交谈选项-来源与读者审查.md",
         "source_revision": "inkle/ink v1.2.1 35c63e52f1d36060930dc7ed3cfba38ea224b528",
@@ -356,6 +356,14 @@
         "source_record": "管理档案/来源笔记/ink-background-save-boundary.json",
         "review": "管理档案/审查/ink后台保存-固定源码与读者审查.md",
         "scope": "Fixed-source ownership and serialization reasoning; reader body unchanged, no runtime or generic thread-safety claim."
+      },
+      "reader_sha256": "086d742d60ca8629f79e1873dd3eaa83f28227c5606bcbe6590e65535b56dc9c",
+      "epilogue_pool_support": {
+        "support": "管理档案/支持资料/新增后日谈，为什么可能让玩家避开原来的故事.md",
+        "support_sha256": "a1876b0b1bdb61b061acadcc3d4aef34a4d70ba980209aaeebdfab54dc9929d6",
+        "review": "管理档案/审查/后日谈与机会池-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/epilogue-opportunity-pool.json",
+        "scope": "Historical opportunity-deck production issue and original bounded narrative consequence analysis; no new reader book."
       }
     },
     {
@@ -2922,7 +2930,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2f441798fd028bab7c687e762a7bd0fcde331635",
+  "publication_base_sha": "1e2aa2e3641352f2a49e6956b6450a6907a6cf73",
   "accounted_for_original_items": 55,
   "reader_books_total": 93,
   "post_baseline_research_books": 38,

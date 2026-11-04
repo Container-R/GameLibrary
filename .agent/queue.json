@@ -3345,7 +3345,12 @@
       "expected_artifact": "Narrow first-party role profile and original unexecuted dialogue-state handoff",
       "artifact_paths": [
         "管理档案/历史正文/roles/narrative/narrative-designer-writer.md",
-        "管理档案/研究记录/source-notes/narrative-designer-writer-role.md"
+        "管理档案/研究记录/source-notes/narrative-designer-writer-role.md",
+        "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+        "GameLibrary/叙事设计/剧情制作/岗位与协作/README.md",
+        "管理档案/支持资料/新增后日谈，为什么可能让玩家避开原来的故事.md",
+        "管理档案/审查/后日谈与机会池-来源与读者审查.md",
+        "管理档案/来源笔记/epilogue-opportunity-pool.json"
       ],
       "acceptance": [
         "Read Guerrilla and Monolith first-party practitioner sources and retain actual role distinctions",
@@ -3354,7 +3359,7 @@
         "Independent source and editorial review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T02:46:37.124660Z",
+      "last_progress_at": "2026-11-04T03:03:58Z",
       "next_action": "Retain role-specific historical evidence and unexecuted semantic-state worksheet; no dialogue runtime or language result",
       "blockers": [],
       "completed_at": "2026-11-01T02:48:49.280844Z",
@@ -3366,7 +3371,13 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "50227851a12061c9dbd5d8d725ad11c0cadcedba26b2fd5a805a8ebdb9bf543a"
         }
-      ]
+      ],
+      "epilogue_pool_support": {
+        "support": "管理档案/支持资料/新增后日谈，为什么可能让玩家避开原来的故事.md",
+        "review": "管理档案/审查/后日谈与机会池-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/epilogue-opportunity-pool.json",
+        "verification": "First-party historical design reports and independent full reader review; no game or player measurement."
+      }
     },
     {
       "id": "TASK-2026-0086",
