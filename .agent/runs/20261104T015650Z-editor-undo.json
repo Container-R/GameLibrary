@@ -1,0 +1,31 @@
+{
+  "run_id": "20261104T015650Z-editor-undo",
+  "base_sha": "164827acdb39a95797d64f82a50f4ed51d56ed0e",
+  "task_ids": [
+    "TASK-2026-0246"
+  ],
+  "outcome": "Support and public progress in containing commit; actual ref and file readback remain to be verified after publication.",
+  "reader_books_total": 93,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 38,
+  "task_count": 246,
+  "artifact_paths": [
+    "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+    "GameLibrary/技术美术/美术管线/岗位与协作/README.md",
+    "管理档案/支持资料/点击一次撤销，为什么只恢复了部分修改.md",
+    "管理档案/审查/编辑器撤销记录与分组-来源与读者审查.md",
+    "管理档案/来源笔记/editor-undo-recording-scope.json"
+  ],
+  "scope": "Finite Undo recording and grouping support attached to existing TA reader; no new book or execution.",
+  "checks": {
+    "new_native_runs": 0,
+    "new_editor_runs": 0,
+    "independent_reader": "Complete hypothetical object-editing example and official source boundaries accepted"
+  },
+  "previous_content_readback": {
+    "sha": "164827acdb39a95797d64f82a50f4ed51d56ed0e",
+    "changed_files_exact": 9,
+    "actual_remote_edges": 9,
+    "canonical_blobs_matched": 1829
+  }
+}

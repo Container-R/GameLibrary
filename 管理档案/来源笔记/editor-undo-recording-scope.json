@@ -1,0 +1,41 @@
+{
+  "read_date_utc": "2026-11-04",
+  "host": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "support": "管理档案/支持资料/点击一次撤销，为什么只恢复了部分修改.md",
+  "support_sha256": "9946368038c94293fa999362ca72d20e741abaa453ca1bdb37a8726568efea78",
+  "review": "管理档案/审查/编辑器撤销记录与分组-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Unity Technologies",
+      "title": "Undo.RecordObject",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityeditor/undo/recordobject",
+      "reading": "Definition, Parameters, Remarks and examples; supported object changes and exclusions.",
+      "publication_date": "Not confirmed; relative update label not converted to a date."
+    },
+    {
+      "author": "Unity Technologies",
+      "title": "Undo.SetTransformParent",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityeditor/undo/settransformparent",
+      "reading": "Both overload definitions, parameters and remarks; parent assignment and Undo recording.",
+      "publication_date": "Not confirmed; relative update label not converted to a date."
+    },
+    {
+      "author": "Unity Technologies",
+      "title": "Undo.CollapseUndoOperations",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityeditor/undo/collapseundooperations",
+      "reading": "Definition, parameters, remarks and example; grouping existing operations.",
+      "publication_date": "Not confirmed; relative update label not converted to a date."
+    }
+  ],
+  "verification": "Independent complete reader and original-source review; hypothetical object-editing example, no execution.",
+  "limits": [
+    "GameObject and Transform record targets are distinct",
+    "Record coverage and grouping are different responsibilities",
+    "Display name is not group identity",
+    "No claimed exact Undo output or engine defect",
+    "No automatic transaction, external-file or failure-recovery guarantee"
+  ]
+}

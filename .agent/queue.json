@@ -8630,6 +8630,35 @@
       "blockers": [],
       "verification_method": "Original-source analysis and independently reviewed hypothetical scenario; no game or framework execution.",
       "publication_scope": "Support and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0246",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "编辑器批处理已经合并为一步，为什么仍需逐项核对变化是否进入撤销记录？",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Concrete tool acceptance gap beyond general automation and shared-asset ownership guidance.",
+      "expected_artifact": "管理档案/支持资料/点击一次撤销，为什么只恢复了部分修改.md",
+      "artifact_paths": [
+        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+        "GameLibrary/技术美术/美术管线/岗位与协作/README.md",
+        "管理档案/支持资料/点击一次撤销，为什么只恢复了部分修改.md",
+        "管理档案/审查/编辑器撤销记录与分组-来源与读者审查.md",
+        "管理档案/来源笔记/editor-undo-recording-scope.json"
+      ],
+      "acceptance": [
+        "Read versioned official method contracts",
+        "Independently review object-versus-operation boundaries in a hypothetical example",
+        "Do not infer transaction or disk recovery from grouping",
+        "Verify reader entry and return links without adding a book"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T01:56:50Z",
+      "next_action": "Only deepen with a specific implementation and scoped Undo/Redo observations; do not infer persistence or exception recovery.",
+      "blockers": [],
+      "verification_method": "Versioned original-source analysis and independent complete reader review; no editor execution.",
+      "publication_scope": "Support and public progress in containing commit."
     }
   ],
   "execution_policy": {
