@@ -1,0 +1,166 @@
+{
+  "input_sha256": {
+    "PROTOCOL.md": "07a3462a7e46ce57a296b0c6e56355c16853d5de807d4e4aff8ea88fd58aef2e",
+    "probe.py": "87d3c9a38d305f32f3afe7561e343e3f73717d3c9067b1eaf4d9887b82fd689b",
+    "run_probe.py": "7a2d1fd49cc574a28cb05def6ea898a43824524eafe28f5aac93ad988bca3f77"
+  },
+  "observation": {
+    "cases": [
+      {
+        "case": "unique",
+        "distinct_entry_objects": true,
+        "duplicates": [],
+        "entry_count": 2,
+        "project_decision": "accept",
+        "read_warnings": [],
+        "rows": [
+          {
+            "by_entry": "{\"damage\":1}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":1}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 0,
+            "ordinal": 0
+          },
+          {
+            "by_entry": "{\"damage\":2}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":2}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/pistol.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 1
+          }
+        ],
+        "write_warnings": []
+      },
+      {
+        "case": "duplicate_ab",
+        "distinct_entry_objects": true,
+        "duplicates": [
+          "weapons/rifle.json"
+        ],
+        "entry_count": 2,
+        "project_decision": "reject",
+        "read_warnings": [],
+        "rows": [
+          {
+            "by_entry": "{\"damage\":1}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":2}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 0
+          },
+          {
+            "by_entry": "{\"damage\":2}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":2}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 1
+          }
+        ],
+        "write_warnings": [
+          {
+            "category": "UserWarning",
+            "message": "Duplicate name: 'weapons/rifle.json'"
+          }
+        ]
+      },
+      {
+        "case": "duplicate_ba",
+        "distinct_entry_objects": true,
+        "duplicates": [
+          "weapons/rifle.json"
+        ],
+        "entry_count": 2,
+        "project_decision": "reject",
+        "read_warnings": [],
+        "rows": [
+          {
+            "by_entry": "{\"damage\":2}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":1}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 0
+          },
+          {
+            "by_entry": "{\"damage\":1}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":1}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 1
+          }
+        ],
+        "write_warnings": [
+          {
+            "category": "UserWarning",
+            "message": "Duplicate name: 'weapons/rifle.json'"
+          }
+        ]
+      },
+      {
+        "case": "duplicate_aa",
+        "distinct_entry_objects": true,
+        "duplicates": [
+          "weapons/rifle.json"
+        ],
+        "entry_count": 2,
+        "project_decision": "reject",
+        "read_warnings": [],
+        "rows": [
+          {
+            "by_entry": "{\"damage\":1}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":1}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 0
+          },
+          {
+            "by_entry": "{\"damage\":1}\n",
+            "by_entry_size": 13,
+            "by_name": "{\"damage\":1}\n",
+            "by_name_size": 13,
+            "metadata_size": 13,
+            "name": "weapons/rifle.json",
+            "name_selected_ordinal": 1,
+            "ordinal": 1
+          }
+        ],
+        "write_warnings": [
+          {
+            "category": "UserWarning",
+            "message": "Duplicate name: 'weapons/rifle.json'"
+          }
+        ]
+      }
+    ],
+    "python": [
+      3,
+      12,
+      14
+    ],
+    "schema": 1,
+    "status": "observed"
+  },
+  "run": "run2",
+  "schema": 1,
+  "status": "pass"
+}

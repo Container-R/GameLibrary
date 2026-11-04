@@ -1,0 +1,10 @@
+{
+  "decision": "approved",
+  "sha256": {
+    "PROTOCOL.md": "07a3462a7e46ce57a296b0c6e56355c16853d5de807d4e4aff8ea88fd58aef2e",
+    "probe.py": "87d3c9a38d305f32f3afe7561e343e3f73717d3c9067b1eaf4d9887b82fd689b",
+    "run_probe.py": "7a2d1fd49cc574a28cb05def6ea898a43824524eafe28f5aac93ad988bca3f77"
+  },
+  "approved_at": "2026-11-04T06:42:36.670465+00:00",
+  "scope": "Four in-memory ZIP_STORED cases, two same-operator fresh-process executions; independent protocol review, no engine test."
+}

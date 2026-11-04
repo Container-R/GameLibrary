@@ -1,0 +1,32 @@
+{
+  "support": "管理档案/支持资料/同一个ZIP里两份同名武器数据，清单读的是哪份.md",
+  "support_sha256": "1b7713b1caa260bc41a11911e7c046e6bdd4d7fa28feb2ca2542567030110c9e",
+  "host": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "host_sha256": "9c513a087567f9237ed562304f061b394eb042135d24f3f6dd2ccc1f5582d5f0",
+  "review": "管理档案/审查/ZIP成员选择-来源与读者审查.md",
+  "package": "管理档案/研究记录/zip-entry-identity-20261104/README.md",
+  "package_file_sha256": {
+    "README.md": "417e8ba83f01b03f57ecf23f0763927120ddd3542bd4b1182f58a64963afad86",
+    "PROTOCOL.md": "07a3462a7e46ce57a296b0c6e56355c16853d5de807d4e4aff8ea88fd58aef2e",
+    "probe.py": "87d3c9a38d305f32f3afe7561e343e3f73717d3c9067b1eaf4d9887b82fd689b",
+    "run_probe.py": "7a2d1fd49cc574a28cb05def6ea898a43824524eafe28f5aac93ad988bca3f77",
+    "FREEZE.json": "eb5b4e3108382dfb553acdae2ab00355abf238907fa788de69d08856054628d2",
+    "run1.json": "cca3778ee9f6fc4a344d906e822c60e42e6467cdb716812d890026cf6a9cbcce",
+    "run2.json": "f782ec3e8f0d1fa42b9187c171808052a147fabeecc9f4bbfcb445c44897514b"
+  },
+  "read_date": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://docs.python.org/3.12/library/zipfile.html#zipfile.ZipFile.open",
+      "scope": "Selected member access documentation; mutable branch document.",
+      "fixed_document_url": "https://github.com/python/cpython/blob/v3.12.0/Doc/library/zipfile.rst"
+    },
+    {
+      "url": "https://github.com/python/cpython/blob/v3.12.0/Lib/zipfile/__init__.py",
+      "scope": "Selected functions identified in the support references.",
+      "identity": "Version tag, not a verified commit identity; distinct from executed installation."
+    }
+  ],
+  "execution_scope": "Four original cases per invocation; two same-operator fresh-process invocations plus independent review, not independent native replication.",
+  "publication_scope": "Original frozen research artifacts and unchanged observations; no third-party implementation or private runtime metadata."
+}
