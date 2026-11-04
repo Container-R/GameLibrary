@@ -8545,6 +8545,33 @@
       "blockers": [],
       "verification_method": "Primary-source reading and independently reviewed exact paper reasoning; no numerical or engine execution.",
       "publication_scope": "Support, reader entry, source record, review and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0243",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为什么同机原生目录中找到过资源，仍不能证明导出包中的请求能匹配？",
+      "discipline": "ENGINE",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "Specific package/API boundary in existing candidate acceptance reader; broad filesystem/Git topic rejected as duplicate.",
+      "expected_artifact": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+      "artifact_paths": [
+        "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+        "管理档案/审查/包内资源名称查找-来源与读者审查.md",
+        "管理档案/来源笔记/packaged-resource-case-lookup.json"
+      ],
+      "acceptance": [
+        "Read original PCK and Resources.Load rules",
+        "Keep native directory, package lookup and API scope distinct",
+        "Preserve original reader and sources except two paragraphs and references",
+        "Independently review whole reader and real navigation"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T00:44:56Z",
+      "next_action": "Only deepen with a concrete loading chain and export inclusion question; do not reopen the duplicate general casing tutorial.",
+      "blockers": [],
+      "verification_method": "Versioned original documentation and independent complete reader review; no execution.",
+      "publication_scope": "Reader increment and public progress in containing commit."
     }
   ],
   "execution_policy": {

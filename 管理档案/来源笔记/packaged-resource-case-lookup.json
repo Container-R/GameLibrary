@@ -1,0 +1,29 @@
+{
+  "read_date_utc": "2026-11-04",
+  "host": "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+  "host_sha256": "a10e28111cbbcba967841b7d83c881e997edb0598a95bd22449173d11db0ea53",
+  "review": "管理档案/审查/包内资源名称查找-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Godot Engine",
+      "title": "Project organization",
+      "version": "4.6",
+      "url": "https://docs.godotengine.org/en/4.6/tutorials/best_practices/project_organization.html#case-sensitivity",
+      "reading": "Case sensitivity; PCK versus native directory lookup. No system-setting commands adopted."
+    },
+    {
+      "author": "Unity",
+      "title": "Resources.Load",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/resources/load",
+      "reading": "Load(string) Remarks; only this API parameter matching rule."
+    }
+  ],
+  "scope": "Two-paragraph reader increment; general filesystem/Git topic rejected as duplicate. Versioned mutable documents, not pinned implementation.",
+  "verification": "Primary-source interpretation, full independent reader review and unchanged-context comparison; no runtime experiment.",
+  "limits": [
+    "Actual loading entry and package inclusion remain conditions",
+    "No universal engine or operating-system matching rule",
+    "No file rename or migration recipe"
+  ]
+}
