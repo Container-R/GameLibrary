@@ -2673,12 +2673,19 @@
         "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md"
       ],
       "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
-      "reader_sha256": "9e1d8f2597ae427581078a402e8e9eafe14356606217aa889adf841e804cc950",
+      "reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
       "figure_support": {
         "path": "管理档案/支持资料/蒙皮弦中点示意/README.md",
         "svg": "管理档案/支持资料/蒙皮弦中点示意/skinning-chord.svg",
         "svg_sha256": "122267e9a0b0c1f2f1ff4eb581e53b4aeb2455a1b46481a78eb1ab2f132f074d",
         "scope": "Existing single-vertex hand calculation illustrated, not engine or volume validation."
+      },
+      "inverse_bind_support": {
+        "path": "管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+        "sha256": "506ead859c2d63453e6ee7417686b77cd3382456a13e6be3094e595d248a09b5",
+        "review": "管理档案/审查/逆绑定空间-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/gltf-inverse-bind-space.json",
+        "scope": "Optional fixed-glTF single-joint space derivation; original blend-method example and figure unchanged."
       }
     },
     {
