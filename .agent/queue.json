@@ -3310,7 +3310,7 @@
     },
     {
       "id": "TASK-2026-0084",
-      "question": "How does a sparse glTF accessor replace indexed elements over dense or implicit-zero base data?",
+      "question": "Sparse-accessor explanation and bounded supporting checks",
       "discipline": "MODEL",
       "status": "published",
       "priority": 90,
@@ -3328,7 +3328,7 @@
         "管理档案/来源笔记/cgltf-unorm-sparse-native.json"
       ],
       "acceptance": [
-        "Pinned Khronos glTF source and strict sparse replacement/base initialization semantics",
+        "Preserve the pinned source and the accepted explanation in the listed source note",
         "Freeze44-byte input, offsets, two literal outputs and bounded rejects before implementation",
         "No full validator, mesh validity, native sparse importer or morph-evaluation claim",
         "Preserve prior dense evidence and restore deferred scalar source/route indexes with matching generated navigation"
@@ -4063,7 +4063,7 @@
     },
     {
       "id": "TASK-2026-0104",
-      "question": "How does glTF tangent handedness relate to a transformed tangent basis, and which finite example separates local data from reflection/normal transformation?",
+      "question": "Tangent-basis source study and original finite example",
       "discipline": "MODEL",
       "status": "published",
       "priority": 90,
@@ -4076,17 +4076,17 @@
       ],
       "acceptance": [
         "Pin actual Khronos specification revision and inspect primary semantics",
-        "Separate asset-local tangent convention from transformed basis and degeneracy assumptions",
+        "Preserve the assumptions documented in the listed source note, including degeneracy exclusions",
         "Verify finite hand derivation independently; no renderer or exporter failure inferred",
         "No runtime, model execution, private execution metadata or legacy article edits"
       ],
       "attempts": 1,
       "last_progress_at": "2026-11-02T17:43:34Z",
-      "next_action": "Retain local handedness and finite vertex-basis scope; no rendered acceptance inferred",
+      "next_action": "Maintain the listed note and its accepted scope; no new rendering evidence",
       "blockers": [],
       "completed_at": "2026-11-01T05:27:13.565510Z",
       "commit_sha": "9b693fc462f0eec24147b244fdf9aa629d473b87",
-      "latest_reader_maintenance": "Existing normal note gains a paper reflection example separating ordered winding, inverse-transpose shading normal and front-face state. No runtime, redraw or general tangent-basis policy; historical completion retained."
+      "latest_reader_maintenance": "The listed note and review contain the later original paper example. No runtime, redraw or general tangent-basis policy; historical completion retained."
     },
     {
       "id": "TASK-2026-0105",
@@ -4475,7 +4475,7 @@
     },
     {
       "id": "TASK-2026-0117",
-      "question": "Why must glTF CUBICSPLINE translation tangents change when uniformly retiming stored key times to preserve the normalized trajectory?",
+      "question": "Published translation-retiming example and its evidence",
       "discipline": "ANIM",
       "status": "published",
       "priority": 92,
@@ -4487,7 +4487,7 @@
       ],
       "acceptance": [
         "Read exact fixed Khronos formula and sampler constraints",
-        "Independently check tangent scaling and midpoint arithmetic",
+        "Preserve the independently reviewed calculation in the listed supporting artifact",
         "Restrict to positive uniform asset retiming and translation; exclude quaternion/time-warp generalization",
         "Separate stored-key modification from playback-clock scaling",
         "No exported asset or runtime playback claimed"
@@ -6228,7 +6228,7 @@
     {
       "id": "TASK-2026-0162",
       "parent_task_id": "TASK-2026-0008",
-      "question": "Why can choosing an equivalent quaternion sign per key change a glTF cubic rotation curve?",
+      "question": "Published cubic-rotation reader and its evidence",
       "discipline": "ANIM",
       "status": "published",
       "priority": 83,
@@ -7864,7 +7864,7 @@
     {
       "id": "TASK-2026-0216",
       "parent_task_id": "TASK-2026-0008",
-      "question": "Why can reconstructing a bitangent after an orthogonal reflection differ from transforming the original basis?",
+      "question": "Published reflection-basis support and its evidence",
       "discipline": "GFX",
       "status": "published",
       "priority": 80,
@@ -9189,6 +9189,33 @@
       ],
       "verification_method": "Original paper examples, independent complete reader and source review; no rendering execution.",
       "publication_scope": "Reader, navigation and progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0262",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "如何用一个小例子审查模型导入中的这类计算？",
+      "discipline": "MODEL",
+      "status": "published",
+      "priority": 79,
+      "priority_rationale": "补足既有模型导入书架的有限问题，不重传长正文或新增同义书目。",
+      "expected_artifact": "管理档案/支持资料/glTF变形目标的位置值，为什么不能直接当作终点.md",
+      "acceptance": [
+        "固定原始相关来源",
+        "明确输入与纸算对照",
+        "独立完整支持和来源审读",
+        "保留旧证据并核对导航与载荷"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T12:18:56Z",
+      "next_action": "按真实导入需求补充；不得把纸算扩成解析器或运行验证。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/glTF变形目标的位置值，为什么不能直接当作终点.md",
+        "管理档案/审查/glTF变形位置-来源与读者审查.md",
+        "管理档案/来源笔记/gltf-morph-position-delta.json"
+      ],
+      "verification_method": "Original finite paper example and independent source/reader review; no asset or runtime execution.",
+      "publication_scope": "Support, shelf and progress in containing commit."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,31 @@
+{
+  "run_id": "20261104T121856Z-morph-position-support",
+  "base_sha": "12b2d0e92c39ca3e9c1a0a1581d419dd947bfbfd",
+  "task_ids": [
+    "TASK-2026-0262"
+  ],
+  "outcome": "Support and shelf in containing commit; remote readback still required.",
+  "reader_books_total": 97,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 42,
+  "task_count": 262,
+  "artifact_paths": [
+    "管理档案/支持资料/glTF变形目标的位置值，为什么不能直接当作终点.md",
+    "管理档案/审查/glTF变形位置-来源与读者审查.md",
+    "管理档案/来源笔记/gltf-morph-position-delta.json"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "runtime_executions": 0,
+    "independent_complete_reader_review": true,
+    "old_technical_content_unchanged": true,
+    "metadata_fields_compacted": 10,
+    "historical_identity_and_exclusions_preserved": true
+  },
+  "previous_content_readback": {
+    "sha": "12b2d0e92c39ca3e9c1a0a1581d419dd947bfbfd",
+    "exact_files": 10,
+    "remote_navigation_edges": 13,
+    "canonical_blobs": 1968
+  }
+}
