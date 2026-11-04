@@ -847,7 +847,8 @@
       "review_paths": [
         "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
         "管理档案/审查/战术选点-历史来源与读者审查.md",
-        "管理档案/审查/同伴跟随选点-来源与读者审查.md"
+        "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+        "管理档案/审查/同伴直连与绕行-有限原生观察审查.md"
       ],
       "local_avoidance_support": {
         "scope": "Optional finite-horizon local velocity and post-processing distinction, not a new navigation runtime or route guarantee.",
@@ -863,12 +864,18 @@
       },
       "companion_follow_support": {
         "path": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
-        "sha256": "bcf24344a696b812361d73a272d7dcc941acf5509453aca1273fed4db2ea0473",
+        "sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
         "entry": "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
         "source": "管理档案/来源笔记/ellie-follow-position-case.json",
         "review": "管理档案/审查/同伴跟随选点-来源与读者审查.md",
         "diagram": "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
-        "scope": "Optional historical-source support with original illustration; long host and prior observations unchanged."
+        "scope": "Historical source and original illustration, with a separately bounded native appendix; long host unchanged.",
+        "native_addendum": {
+          "archive": "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
+          "source": "管理档案/来源笔记/companion-detour-l-shape.json",
+          "review": "管理档案/审查/同伴直连与绕行-有限原生观察审查.md",
+          "scope": "Two same-operator fixed-input executions and independent result review; not game recreation."
+        }
       }
     },
     {
@@ -3100,7 +3107,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "a60a3958b1a541d7e23eb44bfa08f97ecd2fed29",
+  "publication_base_sha": "25deed2f92132018638b150866fd3c9d0d82a612",
   "accounted_for_original_items": 55,
   "reader_books_total": 96,
   "post_baseline_research_books": 41,

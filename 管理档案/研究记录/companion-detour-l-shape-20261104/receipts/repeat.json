@@ -1,0 +1,61 @@
+{
+  "record_type": "public_receipt_derivative",
+  "execution_label": "repeat",
+  "transformation": {
+    "new_execution": false,
+    "method": "Selected technical fields copied from the saved receipt; three identical 27-entry identity maps reduced to manifest bindings and explicit equality checks. Original native.stdout and validation.json retained byte-for-byte.",
+    "omitted": "Private execution context and redundant identity maps are not included."
+  },
+  "status": "pass",
+  "stage": "complete",
+  "source_commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+  "input_bindings": {
+    "CODE-MANIFEST.json": "b311bfe204c5aa13175a35d346374a13eda0e3b72aad3a63068e80697a4f2577",
+    "SOURCE-MANIFEST.json": "0cfadaf8b16ebfc537259734b752f75a3baeac2186245d30191c6fe35d76c9ea",
+    "PROTOCOL.md": "d581b175d4c14b420f88afe18238e3d4f9f643b17ee58f01dddfaf685be56c04",
+    "expected.json": "a6a9b6a3fc4f863883b8364266bd545fdaef616b4316f641e1522bf621eac644"
+  },
+  "identity_checks": {
+    "entries": 27,
+    "code_entries": 10,
+    "manifest_self_entries": 1,
+    "upstream_entries": 16,
+    "before_matches_frozen_manifests": true,
+    "original_after_equals_before": true,
+    "copy_after_equals_before": true
+  },
+  "build": {
+    "attempted": true,
+    "invocations": 1,
+    "returncode": 0,
+    "timeout_seconds": 60,
+    "environment_validated": true,
+    "cleanup_errors": [],
+    "diagnostic_policy": "reviewed-exact",
+    "diagnostic_result": "reviewed_exact",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "d887b09f1c4f304b009fbfbcf61834c5d71dd80a44d8cc1cdb7f9978952f0bd5"
+  },
+  "native": {
+    "attempted": true,
+    "invocations": 1,
+    "returncode": 0,
+    "timeout_seconds": 10,
+    "environment_validated": true,
+    "cleanup_errors": [],
+    "reported_calls": {
+      "builder": 1,
+      "nav_init": 1,
+      "query_init": 1,
+      "raycast": 3,
+      "findPath": 1
+    },
+    "reported_calls_validated": true,
+    "stdout_sha256": "4367e42182c8cd058cf4b773ea1002575272264c60ce220bf5d5434c4bc26c40",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "output_bindings": {
+    "native.stdout": "4367e42182c8cd058cf4b773ea1002575272264c60ce220bf5d5434c4bc26c40",
+    "validation.json": "75a6b8899dceaa8ce26850b887720f4b8d0940febce6a90732f1b083b80a1ac2"
+  }
+}

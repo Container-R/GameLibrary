@@ -1,0 +1,28 @@
+{
+  "format": "sha256-files-v1",
+  "excludes_self": true,
+  "files": {
+    "CODE-MANIFEST.json": "b311bfe204c5aa13175a35d346374a13eda0e3b72aad3a63068e80697a4f2577",
+    "PROTOCOL.md": "d581b175d4c14b420f88afe18238e3d4f9f643b17ee58f01dddfaf685be56c04",
+    "README.md": "822b084f3f9e29e665055c27bbbfdb7cc097a0c38c0fa4e9d32705da32cb3d47",
+    "RESULT-SUMMARY.md": "acff1a5e17a00f041932a6fd7243969f6d0e6d92abfe226a8f80493c6c463a9f",
+    "SCHEMA.md": "08ab0c986f3b1844fdf1f41f77e496999a1b7749be4cfecc843ba7aa69c644e8",
+    "SOURCE-ALLOWANCE.md": "f5aa9733af93ffd02f163dbdf4796c6cb0ca2b9653b8f9eada93a67abfec9416",
+    "SOURCE-CHECK.json": "0dad08a1506bc31f161924d55573acfb1852b8b5dc1d257693d0c1500d6ea05d",
+    "SOURCE-MANIFEST.json": "0cfadaf8b16ebfc537259734b752f75a3baeac2186245d30191c6fe35d76c9ea",
+    "SOURCE-URLS.md": "5306aa544f8f8f932008fe1aac1da2d40885dc6e21f55c75299a10d407d5aa7b",
+    "consumer.py": "d28f6b15f19bcc0d38717a04e31ec5d8f1fbc88c4b7d7d5f0823b0966c6ce13d",
+    "expected.json": "a6a9b6a3fc4f863883b8364266bd545fdaef616b4316f641e1522bf621eac644",
+    "fixture.cpp": "6bc74afe2d2f9c522918ad31f5a6170b9571d09fbd63e8b587d05750bd35413d",
+    "observations/main/native.stdout": "4367e42182c8cd058cf4b773ea1002575272264c60ce220bf5d5434c4bc26c40",
+    "observations/main/validation.json": "75a6b8899dceaa8ce26850b887720f4b8d0940febce6a90732f1b083b80a1ac2",
+    "observations/repeat/native.stdout": "4367e42182c8cd058cf4b773ea1002575272264c60ce220bf5d5434c4bc26c40",
+    "observations/repeat/validation.json": "75a6b8899dceaa8ce26850b887720f4b8d0940febce6a90732f1b083b80a1ac2",
+    "receipts/main.json": "cff20229266908a04c9e273a5a49bb9621c0b95e77d74eed995c7a13267de27a",
+    "receipts/repeat.json": "76f9d529ea3e3110518822b3f0bc6acbe919294aeb49b7f234e9211ab4eaa3d4",
+    "reviewed-build-stderr.txt": "d887b09f1c4f304b009fbfbcf61834c5d71dd80a44d8cc1cdb7f9978952f0bd5",
+    "runner.py": "5dbc088900242e81a510f27898b3089b41b64072b6f727c1ae932bdbc716e34b",
+    "test_consumer.py": "b2fa94f5fd96337ff88626218a5c527bf55361690c761fe2c8450eec4ca68c83",
+    "test_runner.py": "9eff9043e1a0420180108ed7901bc36131b54f0622371a529cfe0dce958b780e"
+  }
+}

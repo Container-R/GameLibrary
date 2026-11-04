@@ -1,0 +1,26 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+  "support_sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
+  "archive": "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
+  "archive_manifest_sha256": "f15e2c9e467b603401ee4a44f40759913e83f6c94826a3c5d16f4f1622d2c5b6",
+  "review": "管理档案/审查/同伴直连与绕行-有限原生观察审查.md",
+  "upstream": {
+    "repository": "recastnavigation/recastnavigation",
+    "commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+    "manifest": "管理档案/研究记录/companion-detour-l-shape-20261104/SOURCE-MANIFEST.json",
+    "scope": "Selected fixed interfaces and implementation; existing materialized bytes matched to prior fixed manifests, not a new full upstream audit."
+  },
+  "observations": {
+    "same_operator_executions": 2,
+    "builds": 2,
+    "fixture_starts": 2,
+    "raycast_calls_total": 6,
+    "findPath_calls_total": 2,
+    "stdout_sha256": "4367e42182c8cd058cf4b773ea1002575272264c60ce220bf5d5434c4bc26c40",
+    "both_outputs_identical": true,
+    "independent_native_replication": false
+  },
+  "public_derivative": "Selected receipt fields and collapsed identical identity maps; original observation and validation bytes unchanged; no additional execution.",
+  "limits": "Finite fixed library inputs only; prior historical source and paper illustration remain separate. No game, body movement, collision, dynamic topology or performance test."
+}

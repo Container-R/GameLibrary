@@ -1,0 +1,89 @@
+{
+  "check": "read-only-byte-identity",
+  "commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+  "files": [
+    {
+      "path": "Detour/Include/DetourAlloc.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourAssert.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourCommon.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourMath.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourNavMesh.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourNavMeshBuilder.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourNavMeshQuery.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourNode.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Include/DetourStatus.h",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourAlloc.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourAssert.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourCommon.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourNavMesh.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourNavMeshBuilder.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourNavMeshQuery.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    },
+    {
+      "path": "Detour/Source/DetourNode.cpp",
+      "sha256_match": true,
+      "git_blob_match": true
+    }
+  ],
+  "count": 16,
+  "native_calls": 0,
+  "builds": 0
+}

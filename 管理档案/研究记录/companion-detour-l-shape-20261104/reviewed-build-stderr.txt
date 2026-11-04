@@ -1,0 +1,8 @@
+upstream/Detour/Source/DetourNavMesh.cpp: In member function 'dtStatus dtNavMesh::init(const dtNavMeshParams*)':
+upstream/Detour/Source/DetourNavMesh.cpp:243:15: warning: 'void* memset(void*, int, size_t)' clearing an object of type 'struct dtMeshTile' with no trivial copy-assignment [-Wclass-memaccess]
+  243 |         memset(m_tiles, 0, sizeof(dtMeshTile)*m_maxTiles);
+      |         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from upstream/Detour/Source/DetourNavMesh.cpp:22:
+upstream/Detour/Include/DetourNavMesh.h:281:8: note: 'struct dtMeshTile' declared here
+  281 | struct dtMeshTile
+      |        ^~~~~~~~~~

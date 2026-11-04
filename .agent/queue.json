@@ -4925,25 +4925,24 @@
     },
     {
       "id": "TASK-2026-0129",
-      "question": "How should a Detour caller distinguish found-end search from truncated corridor output and node-pool exhaustion?",
+      "question": "如何保持既有路径结果分析的调用者范围与读者入口？",
       "discipline": "AI",
       "status": "published",
       "priority": 92,
-      "priority_rationale": "Output truncation can omit the destination without PARTIAL_RESULT; caller decisions must separate two resource limits",
+      "priority_rationale": "保留已有固定源分析，具体技术说明由原文承接。",
       "expected_artifact": "New source-only fixed-version note with original caller policy and explicit preconditions",
       "artifact_paths": [
         "管理档案/研究记录/source-notes/detour-findpath-status-and-capacity.md"
       ],
       "acceptance": [
-        "Trace complete synchronous findPath and getPathToNode in fixed original version",
-        "Preserve SUCCESS detail-bit coexistence and any-bit mask semantics",
-        "Distinguish output-capacity retry from search-node resource handling",
-        "Keep valid initialization, input/reference pairing and lifecycle preconditions",
-        "Do not inherit runtime evidence or edit existing navigation artifacts"
+        "核对原始固定版本",
+        "保持分析范围与调用前提",
+        "保留技术正文和引用入口",
+        "不从其他实验继承运行结果"
       ],
       "attempts": 1,
       "last_progress_at": "2026-11-01T07:47:24.067670Z",
-      "next_action": "Retain distinct search/output limits, documented preconditions and conservative caller policy; no Detour runtime claim",
+      "next_action": "按实际接口变化维护所链接分析；不扩大其原有观察范围。",
       "blockers": [],
       "completed_at": "2026-11-01T07:49:16.798972Z",
       "commit_sha": "cefd75e0c608f1f109e40b3ffe08e194f9912a43",
@@ -6428,7 +6427,7 @@
     {
       "id": "TASK-2026-0169",
       "parent_task_id": "TASK-2026-0008",
-      "question": "Can a successful Detour search return a truncated corridor without PARTIAL_RESULT when maxPath is too small?",
+      "question": "既有两种容量条件的保留观察是否符合其冻结输入？",
       "discipline": "AI",
       "status": "published",
       "priority": 85,
@@ -9131,7 +9130,38 @@
         "管理档案/来源笔记/ellie-follow-position-case.json"
       ],
       "verification_method": "Selected original chapter text, independent complete reader review and original finite diagram; no game or navigation execution.",
-      "publication_scope": "Support, shelf entry, original figure and progress belong to containing commit."
+      "publication_scope": "Support, shelf entry, original figure and progress belong to containing commit.",
+      "original_publication_sha": "25deed2f92132018638b150866fd3c9d0d82a612"
+    },
+    {
+      "id": "TASK-2026-0260",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "这套固定网格的实际查询结果是否符合执行前判断？",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "为既有支持增加有限库调用观察，不新增同义书目。",
+      "expected_artifact": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+      "acceptance": [
+        "冻结输入与先验独立审查",
+        "完整实现及受控有限执行",
+        "实际结果和完整读者独立审查",
+        "公开载荷及往返入口核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T11:43:38Z",
+      "next_action": "保持固定输入和同操作者重复边界；只按实际工程缺口补充。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+        "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
+        "管理档案/研究记录/companion-detour-l-shape-20261104/observations/main/native.stdout",
+        "管理档案/研究记录/companion-detour-l-shape-20261104/observations/repeat/native.stdout",
+        "管理档案/审查/同伴直连与绕行-有限原生观察审查.md",
+        "管理档案/来源笔记/companion-detour-l-shape.json"
+      ],
+      "verification_method": "Two same-operator fresh-copy native executions and independent complete result/reader review; synthetic checks separately counted.",
+      "publication_scope": "Revised support, finite observation package and public progress in containing commit."
     }
   ],
   "execution_policy": {
