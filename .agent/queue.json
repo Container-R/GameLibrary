@@ -9102,6 +9102,36 @@
       ],
       "verification_method": "Selected original text, original finite arithmetic and independent complete reader review; no audio implementation execution.",
       "publication_scope": "Support, host entry and progress belong to containing commit."
+    },
+    {
+      "id": "TASK-2026-0259",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "把已核原作者资料与原创示意接入既有导航阅读路线。",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "将可读的原作者生产经验与原创有限示意接入既有路线，不复制原书或增加同义书目。",
+      "expected_artifact": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+      "acceptance": [
+        "原作者技术段与独立读者审查",
+        "原创几何和图件实际查看",
+        "历史来源与未执行范围明确",
+        "完整载荷和往返导航核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T10:58:38Z",
+      "next_action": "按实际项目审查适用条件，不把纸面示意当作原作复现。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+        "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
+        "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
+        "管理档案/支持资料/同伴跟随几何示意/README.md",
+        "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+        "管理档案/来源笔记/ellie-follow-position-case.json"
+      ],
+      "verification_method": "Selected original chapter text, independent complete reader review and original finite diagram; no game or navigation execution.",
+      "publication_scope": "Support, shelf entry, original figure and progress belong to containing commit."
     }
   ],
   "execution_policy": {

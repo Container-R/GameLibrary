@@ -1,0 +1,24 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+  "support_sha256": "bcf24344a696b812361d73a272d7dcc941acf5509453aca1273fed4db2ea0473",
+  "shelf": "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
+  "host": "GameLibrary/游戏人工智能/移动导航/路径查询/如何判断导航路径是否真正可用.md",
+  "host_changed": false,
+  "review": "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+  "source": {
+    "url": "https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter35_Ellie_Buddy_AI_in_The_Last_of_Us.pdf",
+    "selected_reading": "35.3.1-35.3.2, printed pages433-434; 35.4 opening, printed page435",
+    "identity_index": "https://www.gameaipro.com/",
+    "source_figure_viewed": false,
+    "talk_viewed": false
+  },
+  "original_diagram": {
+    "path": "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
+    "sha256": "2403d5ad38dd28e01e85292818f276141c2d3f06e0a6748493b825d33d1a6a28",
+    "origin_and_scope": "管理档案/支持资料/同伴跟随几何示意/README.md",
+    "method": "Original point-plane geometry; vector rendering and actual preview inspection, not an engine observation."
+  },
+  "verification": "Independent complete reader and selected original-source review; original finite geometry and visual inspection.",
+  "limits": "No game, navigation, body controller, animation or player experiment; not a full chapter or source-figure review."
+}

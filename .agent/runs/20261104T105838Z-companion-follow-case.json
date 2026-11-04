@@ -1,0 +1,35 @@
+{
+  "run_id": "20261104T105838Z-companion-follow-case",
+  "base_sha": "a60a3958b1a541d7e23eb44bfa08f97ecd2fed29",
+  "task_ids": [
+    "TASK-2026-0259"
+  ],
+  "outcome": "Support, shelf and original figure in containing commit; remote readback still required.",
+  "reader_books_total": 96,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 41,
+  "task_count": 259,
+  "artifact_paths": [
+    "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+    "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
+    "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
+    "管理档案/支持资料/同伴跟随几何示意/README.md",
+    "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+    "管理档案/来源笔记/ellie-follow-position-case.json",
+    ".agent/audits/20261104T105000Z-reader-summary.md"
+  ],
+  "scope": "One optional historical-source reader support and original illustration via existing shelf; no new book or game execution.",
+  "checks": {
+    "new_reader_books": 0,
+    "new_native_executions": 0,
+    "host_changed": false,
+    "independent_review": "Complete support, shelf and original diagram; selected chapter text, finite geometry and actual image inspection.",
+    "source_figure_viewed": false
+  },
+  "previous_content_readback": {
+    "sha": "a60a3958b1a541d7e23eb44bfa08f97ecd2fed29",
+    "changed_files_exact": 8,
+    "actual_remote_edges": 12,
+    "canonical_blobs_matched": 1930
+  }
+}

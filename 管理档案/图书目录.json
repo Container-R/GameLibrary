@@ -846,7 +846,8 @@
       "reader_sha256": "9857c76449cb8744c4ccd41d9a3717dff700d8e32301f1d590dba72e3ed46516",
       "review_paths": [
         "管理档案/审查/局部避让与实际执行-来源与读者审查.md",
-        "管理档案/审查/战术选点-历史来源与读者审查.md"
+        "管理档案/审查/战术选点-历史来源与读者审查.md",
+        "管理档案/审查/同伴跟随选点-来源与读者审查.md"
       ],
       "local_avoidance_support": {
         "scope": "Optional finite-horizon local velocity and post-processing distinction, not a new navigation runtime or route guarantee.",
@@ -859,6 +860,15 @@
         "path": "管理档案/支持资料/守卫能走到那里，为什么仍不该站在那里.md",
         "review": "管理档案/审查/战术选点-历史来源与读者审查.md",
         "scope": "Primary-slide interpretation and original hypothetical integration example; no scorer/game execution."
+      },
+      "companion_follow_support": {
+        "path": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+        "sha256": "bcf24344a696b812361d73a272d7dcc941acf5509453aca1273fed4db2ea0473",
+        "entry": "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
+        "source": "管理档案/来源笔记/ellie-follow-position-case.json",
+        "review": "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+        "diagram": "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
+        "scope": "Optional historical-source support with original illustration; long host and prior observations unchanged."
       }
     },
     {
@@ -3090,7 +3100,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "61b7fad2dc5d2498a8e3f27836f6d26b50692f45",
+  "publication_base_sha": "a60a3958b1a541d7e23eb44bfa08f97ecd2fed29",
   "accounted_for_original_items": 55,
   "reader_books_total": 96,
   "post_baseline_research_books": 41,
