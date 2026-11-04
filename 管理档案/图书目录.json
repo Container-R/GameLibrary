@@ -3126,6 +3126,28 @@
       "related_roles": [
         "ROLE-GFX-001"
       ]
+    },
+    {
+      "internal_id": "CASE-PROG-003",
+      "reader_title": "Celeste与TowerFall的移动平台为什么要区分搭乘与推挤",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "角色移动",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/角色移动/Celeste与TowerFall的移动平台为什么要区分搭乘与推挤.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/角色移动/Celeste与TowerFall的移动平台为什么要区分搭乘与推挤.md",
+      "reader_body_status": "published",
+      "editorial_status": "完整正文、原始作者材料、原创图和独立读者审读；无游戏运行",
+      "origin": "source-backed-production-explanation-with-original-finite-geometry",
+      "scope_note": "明确输入的单步纸面案例；不代表完整控制器或当前游戏版本。",
+      "review_paths": [
+        "管理档案/审查/移动平台搭乘与推挤-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/platform-push-carry-case.json",
+      "reader_sha256": "5c63bdf4567592a23d52c4e1f35f6fabc9d0f9d3635d3d84a242e24e85b3f14c",
+      "figure": "管理档案/支持资料/移动平台几何示意/platform-step.svg",
+      "related_roles": [
+        "ROLE-PROG-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3136,10 +3158,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "12b2d0e92c39ca3e9c1a0a1581d419dd947bfbfd",
+  "publication_base_sha": "4b247b25acf78a40ba1667ace1c1c6047270a0e9",
   "accounted_for_original_items": 55,
-  "reader_books_total": 97,
-  "post_baseline_research_books": 42,
+  "reader_books_total": 98,
+  "post_baseline_research_books": 43,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

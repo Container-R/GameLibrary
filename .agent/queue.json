@@ -9216,6 +9216,34 @@
       ],
       "verification_method": "Original finite paper example and independent source/reader review; no asset or runtime execution.",
       "publication_scope": "Support, shelf and progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0263",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "如何用一个明确的几何场景区分平台周围角色的处理？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 81,
+      "priority_rationale": "补足现有角色移动书架未回答的有限问题，不改写既有贴墙和脚滑正文。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/角色移动/Celeste与TowerFall的移动平台为什么要区分搭乘与推挤.md",
+      "acceptance": [
+        "完整原始相关材料阅读",
+        "明确输入与错误对照",
+        "独立全文和原创图审读",
+        "完整公开载荷与导航核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T13:04:06Z",
+      "next_action": "只按实际控制器需求补充，保留本例范围和未运行边界。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/角色移动/Celeste与TowerFall的移动平台为什么要区分搭乘与推挤.md",
+        "管理档案/支持资料/移动平台几何示意/platform-step.svg",
+        "管理档案/审查/移动平台搭乘与推挤-来源与读者审查.md",
+        "管理档案/来源笔记/platform-push-carry-case.json"
+      ],
+      "verification_method": "Original paper geometry and independently inspected authored diagram; no physics or game execution.",
+      "publication_scope": "Reader, figure, navigation and progress in containing commit."
     }
   ],
   "execution_policy": {

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="400" viewBox="0 0 1120 400" role="img" aria-labelledby="title desc">
+<title id="title">Original paper example: one horizontal platform move</title>
+<desc id="desc">Two panels show integer rectangles before and after a platform moves three units right. C moves three, R moves three, N moves one. This is an original illustration, not game footage or a runtime result.</desc>
+<rect width="1120" height="400" fill="#ffffff"/>
+<g font-family="DejaVu Sans,sans-serif" fill="#142331">
+<text x="40" y="32" font-size="21" font-weight="bold">One horizontal step · original paper example</text>
+<text x="70" y="76" font-size="18" font-weight="bold">BEFORE</text>
+<line x1="70" y1="117" x2="70" y2="285" stroke="#e3e8ed"/>
+<line x1="94" y1="117" x2="94" y2="285" stroke="#e3e8ed"/>
+<line x1="118" y1="117" x2="118" y2="285" stroke="#e3e8ed"/>
+<line x1="142" y1="117" x2="142" y2="285" stroke="#e3e8ed"/>
+<line x1="166" y1="117" x2="166" y2="285" stroke="#e3e8ed"/>
+<line x1="190" y1="117" x2="190" y2="285" stroke="#e3e8ed"/>
+<line x1="214" y1="117" x2="214" y2="285" stroke="#e3e8ed"/>
+<line x1="238" y1="117" x2="238" y2="285" stroke="#e3e8ed"/>
+<line x1="262" y1="117" x2="262" y2="285" stroke="#e3e8ed"/>
+<line x1="286" y1="117" x2="286" y2="285" stroke="#e3e8ed"/>
+<line x1="310" y1="117" x2="310" y2="285" stroke="#e3e8ed"/>
+<line x1="334" y1="117" x2="334" y2="285" stroke="#e3e8ed"/>
+<line x1="358" y1="117" x2="358" y2="285" stroke="#e3e8ed"/>
+<line x1="382" y1="117" x2="382" y2="285" stroke="#e3e8ed"/>
+<line x1="406" y1="117" x2="406" y2="285" stroke="#e3e8ed"/>
+<line x1="430" y1="117" x2="430" y2="285" stroke="#e3e8ed"/>
+<line x1="454" y1="117" x2="454" y2="285" stroke="#e3e8ed"/>
+<line x1="70" y1="117" x2="454" y2="117" stroke="#e3e8ed"/>
+<line x1="70" y1="141" x2="454" y2="141" stroke="#e3e8ed"/>
+<line x1="70" y1="165" x2="454" y2="165" stroke="#e3e8ed"/>
+<line x1="70" y1="189" x2="454" y2="189" stroke="#e3e8ed"/>
+<line x1="70" y1="213" x2="454" y2="213" stroke="#e3e8ed"/>
+<line x1="70" y1="237" x2="454" y2="237" stroke="#e3e8ed"/>
+<line x1="70" y1="261" x2="454" y2="261" stroke="#e3e8ed"/>
+<line x1="70" y1="285" x2="454" y2="285" stroke="#e3e8ed"/>
+<text x="70" y="308" text-anchor="middle" font-size="13">0</text>
+<text x="142" y="308" text-anchor="middle" font-size="13">3</text>
+<text x="310" y="308" text-anchor="middle" font-size="13">10</text>
+<text x="382" y="308" text-anchor="middle" font-size="13">13</text>
+<text x="430" y="308" text-anchor="middle" font-size="13">15</text>
+<text x="467" y="308" font-size="13">x</text>
+<text x="60" y="146" text-anchor="end" font-size="13">-1</text>
+<text x="60" y="170" text-anchor="end" font-size="13">0</text>
+<text x="60" y="218" text-anchor="end" font-size="13">2</text>
+<text x="60" y="266" text-anchor="end" font-size="13">4</text>
+<text x="45" y="285" font-size="13">y↓</text>
+<rect x="70" y="165" width="240" height="96" fill="#d5dce2" stroke="#243747" stroke-width="1.5"/>
+<text x="190.0" y="218.0" text-anchor="middle" font-size="16" font-weight="bold">S</text>
+<rect x="70" y="141" width="48" height="24" fill="#5ab5e3" stroke="#243747" stroke-width="1.5"/>
+<text x="94.0" y="158.0" text-anchor="middle" font-size="16" font-weight="bold">C</text>
+<rect x="310" y="165" width="48" height="24" fill="#f6b654" stroke="#243747" stroke-width="1.5"/>
+<text x="334.0" y="182.0" text-anchor="middle" font-size="16" font-weight="bold">R</text>
+<rect x="358" y="213" width="48" height="24" fill="#bd99e6" stroke="#243747" stroke-width="1.5"/>
+<text x="382.0" y="230.0" text-anchor="middle" font-size="16" font-weight="bold">N</text>
+<text x="70" y="350" font-size="15">S: [0,10) × [0,4)</text>
+<text x="620" y="76" font-size="18" font-weight="bold">AFTER</text>
+<line x1="620" y1="117" x2="620" y2="285" stroke="#e3e8ed"/>
+<line x1="644" y1="117" x2="644" y2="285" stroke="#e3e8ed"/>
+<line x1="668" y1="117" x2="668" y2="285" stroke="#e3e8ed"/>
+<line x1="692" y1="117" x2="692" y2="285" stroke="#e3e8ed"/>
+<line x1="716" y1="117" x2="716" y2="285" stroke="#e3e8ed"/>
+<line x1="740" y1="117" x2="740" y2="285" stroke="#e3e8ed"/>
+<line x1="764" y1="117" x2="764" y2="285" stroke="#e3e8ed"/>
+<line x1="788" y1="117" x2="788" y2="285" stroke="#e3e8ed"/>
+<line x1="812" y1="117" x2="812" y2="285" stroke="#e3e8ed"/>
+<line x1="836" y1="117" x2="836" y2="285" stroke="#e3e8ed"/>
+<line x1="860" y1="117" x2="860" y2="285" stroke="#e3e8ed"/>
+<line x1="884" y1="117" x2="884" y2="285" stroke="#e3e8ed"/>
+<line x1="908" y1="117" x2="908" y2="285" stroke="#e3e8ed"/>
+<line x1="932" y1="117" x2="932" y2="285" stroke="#e3e8ed"/>
+<line x1="956" y1="117" x2="956" y2="285" stroke="#e3e8ed"/>
+<line x1="980" y1="117" x2="980" y2="285" stroke="#e3e8ed"/>
+<line x1="1004" y1="117" x2="1004" y2="285" stroke="#e3e8ed"/>
+<line x1="620" y1="117" x2="1004" y2="117" stroke="#e3e8ed"/>
+<line x1="620" y1="141" x2="1004" y2="141" stroke="#e3e8ed"/>
+<line x1="620" y1="165" x2="1004" y2="165" stroke="#e3e8ed"/>
+<line x1="620" y1="189" x2="1004" y2="189" stroke="#e3e8ed"/>
+<line x1="620" y1="213" x2="1004" y2="213" stroke="#e3e8ed"/>
+<line x1="620" y1="237" x2="1004" y2="237" stroke="#e3e8ed"/>
+<line x1="620" y1="261" x2="1004" y2="261" stroke="#e3e8ed"/>
+<line x1="620" y1="285" x2="1004" y2="285" stroke="#e3e8ed"/>
+<text x="620" y="308" text-anchor="middle" font-size="13">0</text>
+<text x="692" y="308" text-anchor="middle" font-size="13">3</text>
+<text x="860" y="308" text-anchor="middle" font-size="13">10</text>
+<text x="932" y="308" text-anchor="middle" font-size="13">13</text>
+<text x="980" y="308" text-anchor="middle" font-size="13">15</text>
+<text x="1017" y="308" font-size="13">x</text>
+<text x="610" y="146" text-anchor="end" font-size="13">-1</text>
+<text x="610" y="170" text-anchor="end" font-size="13">0</text>
+<text x="610" y="218" text-anchor="end" font-size="13">2</text>
+<text x="610" y="266" text-anchor="end" font-size="13">4</text>
+<text x="595" y="285" font-size="13">y↓</text>
+<rect x="692" y="165" width="240" height="96" fill="#d5dce2" stroke="#243747" stroke-width="1.5"/>
+<text x="812.0" y="218.0" text-anchor="middle" font-size="16" font-weight="bold">S</text>
+<rect x="692" y="141" width="48" height="24" fill="#5ab5e3" stroke="#243747" stroke-width="1.5"/>
+<text x="716.0" y="158.0" text-anchor="middle" font-size="16" font-weight="bold">C</text>
+<rect x="932" y="165" width="48" height="24" fill="#f6b654" stroke="#243747" stroke-width="1.5"/>
+<text x="956.0" y="182.0" text-anchor="middle" font-size="16" font-weight="bold">R</text>
+<rect x="932" y="213" width="48" height="24" fill="#bd99e6" stroke="#243747" stroke-width="1.5"/>
+<text x="956.0" y="230.0" text-anchor="middle" font-size="16" font-weight="bold">N</text>
+<text x="620" y="350" font-size="15">S: +3   C: +3   R: +3   N: +1</text>
+<text x="40" y="385" font-size="13">Strict overlap excludes touching edges. No other obstacles; all fractional remainders start at zero.</text>
+</g></svg>
