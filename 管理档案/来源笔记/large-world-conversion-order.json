@@ -1,0 +1,47 @@
+{
+  "read_dates_utc": [
+    "2026-11-03",
+    "2026-11-04"
+  ],
+  "support": "管理档案/支持资料/已经减去相机位置，为什么大坐标仍会丢失细节.md",
+  "support_sha256": "9b36f4c06dbf7818af71e9389e2425d9529f6f3852e56237a4af51cdef8bbb16",
+  "host": "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+  "review": "管理档案/审查/大坐标转换顺序-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Microsoft",
+      "title": "IEEE Floating-Point Representation",
+      "url": "https://learn.microsoft.com/en-us/cpp/build/ieee-floating-point-representation?view=msvc-170",
+      "page_date": "2021-08-03",
+      "reading": "Format field table and implicit leading significand bit; not IEEE standard full text."
+    },
+    {
+      "author": "Nathan Whitehead and Alex Fit-Florea / NVIDIA",
+      "title": "Floating Point and IEEE 754",
+      "url": "https://docs.nvidia.com/cuda/archive/11.6.2/floating-point/index.html",
+      "page_date": "2022-03-24",
+      "reading": "Formats, Operations and Accuracy, Rounding Modes; only format and rounding assumptions used, not historical hardware performance."
+    },
+    {
+      "author": "Epic Games",
+      "title": "Large World Coordinates Rendering Overview",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/large-world-coordinates-rendering-in-unreal-engine-5?application_version=5.6",
+      "version": "UE5.6",
+      "reading": "Translated World Space and Mathematical Background for DoubleFloat, with material and conversion scope checked; versioned document, not pinned implementation."
+    },
+    {
+      "author": "Godot Engine",
+      "title": "Large world coordinates",
+      "url": "https://docs.godotengine.org/en/4.6/tutorials/physics/large_world_coordinates.html",
+      "version": "Godot4.6",
+      "reading": "How large world coordinates work and Limitations; no universal world-size thresholds adopted."
+    }
+  ],
+  "verification": "Original exact paper reasoning and independently reviewed readable explanation; no numerical program, native, engine or shader execution.",
+  "limits": [
+    "Specified binary32/binary64 values and nearest-even rounding only",
+    "Input conversion loss is not inaccurate subtraction",
+    "Relative position must itself retain adequate precision",
+    "Rendering translation does not establish global rebasing or physics correctness"
+  ]
+}

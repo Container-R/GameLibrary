@@ -8516,6 +8516,35 @@
       "blockers": [],
       "verification_method": "First-party selected text and independently reviewed original rational example; no rendering or runtime.",
       "publication_scope": "Support, host/shelf entries, review, source and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0242",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为什么单独转换大绝对坐标后，再减相机位置可能已经丢失局部差值？",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Concrete representation boundary in existing CPU/shader data-transfer reader, distinct from matrix layout and depth reconstruction.",
+      "expected_artifact": "管理档案/支持资料/已经减去相机位置，为什么大坐标仍会丢失细节.md",
+      "artifact_paths": [
+        "GameLibrary/图形渲染/着色器开发/数据传递/CPU与着色器之间的矩阵布局和乘法约定.md",
+        "GameLibrary/图形渲染/着色器开发/数据传递/README.md",
+        "管理档案/支持资料/已经减去相机位置，为什么大坐标仍会丢失细节.md",
+        "管理档案/审查/大坐标转换顺序-来源与读者审查.md",
+        "管理档案/来源笔记/large-world-conversion-order.json"
+      ],
+      "acceptance": [
+        "Check original format and rounding descriptions",
+        "Independently read exact conversion-order and non-failing control examples",
+        "Keep versioned engine facts and untested implementation limits distinct",
+        "Verify real host/shelf/return paths without changing reader count"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T00:04:50Z",
+      "next_action": "Use a separate pinned implementation investigation only when a concrete project conversion boundary needs verification.",
+      "blockers": [],
+      "verification_method": "Primary-source reading and independently reviewed exact paper reasoning; no numerical or engine execution.",
+      "publication_scope": "Support, reader entry, source record, review and public progress in containing commit."
     }
   ],
   "execution_policy": {
