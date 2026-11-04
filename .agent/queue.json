@@ -9328,6 +9328,34 @@
       ],
       "verification_method": "Two same-operator fresh-directory repeats, 16 native calls each; independent static/protocol/output review only, no independent native replication.",
       "publication_scope": "Existing reader amendment and public observation package in containing commit."
+    },
+    {
+      "id": "TASK-2026-0267",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "材质粗糙度已经转换后，为什么GGX分布内部还会出现平方？",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 77,
+      "priority_rationale": "补充已有材质书架的接口含义，避免重复法线过滤说明。",
+      "expected_artifact": "管理档案/支持资料/粗糙度已经平方，GGX公式里为什么还要平方.md",
+      "acceptance": [
+        "存量全文去重",
+        "固定规范与实现调用链核对",
+        "独立完整读者与有限代数审查",
+        "公开载荷及实际导航检查"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T15:07:23Z",
+      "next_action": "保留限定实现与纸面范围，其他材质接口需单独核对。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/粗糙度已经平方，GGX公式里为什么还要平方.md",
+        "GameLibrary/技术美术/环境管线/纹理与材质/README.md",
+        "管理档案/来源笔记/roughness-ggx-parameter-mapping.json",
+        "管理档案/审查/GGX粗糙度参数-来源与读者审查.md"
+      ],
+      "verification_method": "Source-grounded support and original paper substitution; no shader or rendering execution.",
+      "publication_scope": "Optional support and shelf entry in containing commit."
     }
   ],
   "execution_policy": {

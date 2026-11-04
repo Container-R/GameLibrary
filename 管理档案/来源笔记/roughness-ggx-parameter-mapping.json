@@ -1,0 +1,24 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/粗糙度已经平方，GGX公式里为什么还要平方.md",
+  "support_sha256": "f3b652def7f73f8dc132e63c34f126c7ab9a74f4c03b667eb20465a58b6b6ae5",
+  "entrypoint": "GameLibrary/技术美术/环境管线/纹理与材质/README.md",
+  "review": "管理档案/审查/GGX粗糙度参数-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "scope": "Selected Materials and Appendix B text/formulas plus complete pbrMetallicRoughness schema; no figures or full-spec audit.",
+      "license": "CC-BY-4.0 for these source markup/schema files, not a claim about every glTF repository file.",
+      "license_record": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/COPYING.adoc"
+    },
+    {
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Renderer/tree/df3e51cbea7b0843789be5c9fd27eaa8bb510d4c",
+      "revision": "df3e51cbea7b0843789be5c9fd27eaa8bb510d4c",
+      "scope": "Selected material_info.glsl, pbr.frag and brdf.glsl base isotropic direct-light call chain; not all extensions or IBL implementation.",
+      "license": "Apache-2.0",
+      "license_record": "https://github.com/KhronosGroup/glTF-Sample-Renderer/blob/df3e51cbea7b0843789be5c9fd27eaa8bb510d4c/LICENSE.md"
+    }
+  ],
+  "verification_method": "Independent complete support/source review and original finite paper algebra. No shader, GPU or native runtime execution."
+}
