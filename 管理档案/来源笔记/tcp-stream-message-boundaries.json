@@ -1,0 +1,55 @@
+{
+  "topic": "TCP receive callbacks and application message boundaries",
+  "read_on": "2026-11-04",
+  "evidence_status": "source-backed",
+  "sources": [
+    {
+      "author": "W. Eddy, editor; IETF",
+      "title": "RFC 9293: Transmission Control Protocol (TCP)",
+      "date": "2022-08",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "read_scope": "Sections 2.2, main 3.7, 3.9.1.2, closing text in 3.6 and 3.6.1, section 7; not the entire state machine",
+      "adopted_scope": "Ordered byte-stream; no read/write/segment boundary correspondence; PSH not a record marker; independent directional close; no built-in cryptographic authentication"
+    },
+    {
+      "author": "libuv project",
+      "title": "uv_stream_t — Stream handle",
+      "version": "v1.53.0",
+      "commit": "840404ce8ba7cc0204be52389a6cfff9f2c90fb6",
+      "url": "https://github.com/libuv/libuv/blob/840404ce8ba7cc0204be52389a6cfff9f2c90fb6/docs/src/stream.rst",
+      "blob_sha": "955055b17ab3c0c9fc8c4382c18c28389d4657c2",
+      "read_scope": "Complete text; adopted lines 27–59, 136–157, 159–188; final clarification also checks uv_stream_set_blocking ordering exception",
+      "adopted_scope": "TCP stream read and write callback results, EOF distinction, actual byte count and write-buffer lifetime. No UDP or wrapper equivalence."
+    },
+    {
+      "author": "libuv project",
+      "title": "uv_handle_t — Base handle",
+      "version": "v1.53.0",
+      "commit": "840404ce8ba7cc0204be52389a6cfff9f2c90fb6",
+      "url": "https://github.com/libuv/libuv/blob/840404ce8ba7cc0204be52389a6cfff9f2c90fb6/docs/src/handle.rst#L55-L72",
+      "blob_sha": "2b1b8eec96884497f3516bdb23511568ec710320",
+      "read_scope": "Complete text; adopted uv_alloc_cb lines 55–72",
+      "adopted_scope": "Application buffer allocation and reclamation; suggested_size is not the amount pending or an application message length."
+    }
+  ],
+  "version_identity": {
+    "release_url": "https://github.com/libuv/libuv/releases/tag/v1.53.0",
+    "published_at": "2026-09-24T14:44:00Z",
+    "tag_ref_url": "https://api.github.com/repos/libuv/libuv/git/ref/tags/v1.53.0",
+    "tag_object": "b2f1760973bfaed11a0b8e76b321b9620f8e76f8",
+    "tag_object_url": "https://api.github.com/repos/libuv/libuv/git/tags/b2f1760973bfaed11a0b8e76b321b9620f8e76f8",
+    "peeled_commit": "840404ce8ba7cc0204be52389a6cfff9f2c90fb6"
+  },
+  "example": "Original two-byte unsigned big-endian body length with 1..8-byte pedagogic body policy: 00 03 41 42 43 00 02 44 45 encodes ABC then DE. Split after first header byte and first body byte, alternatively combined input. 00 09 and 00 00 rejected by chosen policy; EOF with partial header/body is truncation.",
+  "limits": [
+    "Paper reasoning only; no runtime, sockets, native library, or game results.",
+    "Single-frame declared-size check is not a total allocation, queue, CPU, or timeout bound.",
+    "Framing does not establish identity, authorization, semantic validity, or business success.",
+    "No changes to ENet, HTTP range, Zstandard, or audio framing mechanisms."
+  ],
+  "reader_path": "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+  "support_path": "管理档案/支持资料/一次TCP读取，为什么不等于一条游戏消息.md",
+  "support_sha256": "8a28b7b7674c8dbbb0bb8ac33535a4fea948561c749e77c372dc8ec233930830",
+  "copyright": "Original byte example and explanation; no third-party figures, source-code excerpts, or document reproduction.",
+  "review": "管理档案/审查/TCP消息边界-来源与读者审查.md"
+}

@@ -9433,6 +9433,36 @@
       ],
       "verification_method": "Source-grounded original finite derivation and independent source/reader review; no browser, segmenter, engine or IME execution.",
       "publication_scope": "Optional support and existing text-input entries in containing commit."
+    },
+    {
+      "id": "TASK-2026-0270",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "自行定义TCP格式时，跨读取的半个头和两条合并消息应怎样处理？",
+      "discipline": "NET",
+      "status": "published",
+      "priority": 76,
+      "priority_rationale": "补齐在线服务接口接收边界，不重复已有消息库与续传机制。",
+      "expected_artifact": "管理档案/支持资料/一次TCP读取，为什么不等于一条游戏消息.md",
+      "acceptance": [
+        "现存正文与队列去重",
+        "固定原始来源与版本身份",
+        "九字节原创推演与EOF边界",
+        "独立全文审读",
+        "公开载荷和实际往返导航"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T16:52:13Z",
+      "next_action": "保持纸面范围；项目接入另行验证实际协议、回调、容量与等待策略。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/一次TCP读取，为什么不等于一条游戏消息.md",
+        "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+        "GameLibrary/网络与在线服务/实时同步/消息传输/README.md",
+        "管理档案/来源笔记/tcp-stream-message-boundaries.json",
+        "管理档案/审查/TCP消息边界-来源与读者审查.md"
+      ],
+      "verification_method": "Original-source reading and independent finite paper walkthrough; no socket, libuv or game execution.",
+      "publication_scope": "Optional support and conditional existing reader entries in containing commit."
     }
   ],
   "execution_policy": {

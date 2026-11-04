@@ -33,27 +33,26 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261104T162536Z-grapheme-selection-units",
-  "last_real_progress_at": "2026-11-04T16:25:36Z",
-  "last_commit_sha": "4ef1b7b0b86de4a1561602241ae78bda0e5c6cdf",
+  "last_run_id": "20261104T165213Z-tcp-message-boundaries",
+  "last_real_progress_at": "2026-11-04T16:52:13Z",
+  "last_commit_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "4ef1b7b0b86de4a1561602241ae78bda0e5c6cdf",
-    "latest_verified_content_sha": "4ef1b7b0b86de4a1561602241ae78bda0e5c6cdf",
+    "last_verified_head_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+    "latest_verified_content_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
     "reader_books_total": 99,
     "post_baseline_research_books": 44,
-    "scope": "One optional text-editing support and reader entries, plus a Ninja public-method filename clarification; no new book or execution.",
+    "scope": "One optional TCP framing support and existing conditional reader entries; no new book or execution.",
     "status": "Support and entry belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
     "status": "healthy",
-    "observed_snapshot": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
-    "closing_head": "e2b70cb23ddd1995925912c857ae3e6fa3d916f7",
-    "observed_at": "2026-11-04T14:52:00Z",
-    "observation_interval": "2026-11-04T14:50:00Z/2026-11-04T14:52:00Z",
-    "record": ".agent/audits/20261104T145000Z-reader-summary.md",
-    "scope": "Public summary of independent moving-platform reader/route/source sample; XPBD closing change list was observed but not a complete new-batch audit.",
+    "observed_snapshot": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+    "observed_at": "2026-11-04T16:49:00Z",
+    "observation_interval": "2026-11-04T16:47:00Z/2026-11-04T16:49:00Z",
+    "record": ".agent/audits/20261104T165000Z-reader-summary.md",
+    "scope": "Public summary of independent Ninja reader, source and observation inspection; not native rerun or whole-library approval.",
     "consecutive_no_progress_checks": 0
   },
   "record_transformation": {

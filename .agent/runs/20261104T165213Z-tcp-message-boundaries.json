@@ -1,0 +1,31 @@
+{
+  "run_id": "20261104T165213Z-tcp-message-boundaries",
+  "base_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+  "task_ids": [
+    "TASK-2026-0270"
+  ],
+  "outcome": "Support and conditional reader entries in containing commit; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 270,
+  "artifact_paths": [
+    "管理档案/支持资料/一次TCP读取，为什么不等于一条游戏消息.md",
+    "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+    "GameLibrary/网络与在线服务/实时同步/消息传输/README.md",
+    "管理档案/来源笔记/tcp-stream-message-boundaries.json",
+    "管理档案/审查/TCP消息边界-来源与读者审查.md",
+    ".agent/audits/20261104T165000Z-reader-summary.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "executions": 0,
+    "independent_source_and_complete_reader_review": true
+  },
+  "previous_readback": {
+    "sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+    "changed_files": 13,
+    "remote_route_edges": 17,
+    "scope": "Text-selection support and Ninja method clarification exact remote readback; no new execution."
+  }
+}
