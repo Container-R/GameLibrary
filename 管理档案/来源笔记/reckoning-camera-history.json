@@ -1,0 +1,23 @@
+{
+  "reader": "GameLibrary/玩法程序/玩法系统/镜头控制/Reckoning的镜头避障为什么要比较前后两步.md",
+  "reader_sha256": "617e172fe18313bb479818b9353765dedbd2ff2c45b3040e3d9f59a39ae85f86",
+  "review": "管理档案/审查/Reckoning镜头避障-来源与读者审查.md",
+  "read_date": "2026-11-04",
+  "source": {
+    "bibliographic_reference": "Reader reference [1]",
+    "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_September_2011.pdf",
+    "pdf_sha256": "8b9b296794fb5e5699ecb6e6d0f8cf3eb30846d7f15b516d70d65d587561ac43",
+    "printed_article_pages": [
+      7,
+      13
+    ],
+    "pdf_one_based_article_pages": [
+      9,
+      15
+    ],
+    "reading_scope": "Complete selected article text and static original pages, not the whole magazine; no code execution."
+  },
+  "original_analysis": "Two prior positions with one current point; finite planar side-distance and angle arithmetic, not a simulation.",
+  "verification": "Independent complete reader/source and finite geometry review. No game or camera execution.",
+  "publication_scope": "Original explanatory reader only; source PDF, images and code excluded."
+}

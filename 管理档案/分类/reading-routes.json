@@ -45,6 +45,11 @@
           "document_id": "CASE-PROG-001",
           "question": "水面样本怎样变成船的目标姿态？",
           "rationale": "通过有限历史案例区分局部几何、目标构造与实际响应，不把平面当成完整水动力或运动保证。"
+        },
+        {
+          "document_id": "CASE-PROG-002",
+          "question": "当前重叠相同，为什么修正目标仍可能不同？",
+          "rationale": "用两种自定记录比较计算结果，并保留例子的适用范围。"
         }
       ],
       "subject_profile_id": "ROLE-PROG-001"

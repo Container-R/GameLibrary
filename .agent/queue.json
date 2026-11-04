@@ -8772,6 +8772,36 @@
         "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md",
         "管理档案/来源笔记/atlas-boat-plane-target.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0249",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Original article and independent finite geometry/reader review; no game or camera execution.",
+      "publication_scope": "Reader and public progress in containing commit.",
+      "question": "同一当前重叠，为什么修正仍需比较前后状态？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 87,
+      "priority_rationale": "提供有明确输入、状态区别与边界的镜头控制案例。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/镜头控制/Reckoning的镜头避障为什么要比较前后两步.md",
+      "acceptance": [
+        "原始文章相关图文核对",
+        "原创几何与源机制分开",
+        "独立完整读者审读",
+        "实际导航与完整公开载荷审查"
+      ],
+      "source_leads": [
+        "https://media.gdcvault.com/GD_Mag_Archives/GDM_September_2011.pdf"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T05:17:37Z",
+      "next_action": "仅在有具体新证据或实际集成问题时扩展，不将有限例子当完整求解器。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/镜头控制/Reckoning的镜头避障为什么要比较前后两步.md",
+        "管理档案/审查/Reckoning镜头避障-来源与读者审查.md",
+        "管理档案/来源笔记/reckoning-camera-history.json"
+      ]
     }
   ],
   "execution_policy": {
