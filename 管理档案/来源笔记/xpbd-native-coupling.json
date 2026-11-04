@@ -1,0 +1,17 @@
+{
+  "read_on": "2026-11-04",
+  "reader": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+  "reader_sha256": "b0ca83d2981cd7b6c59f2af5b5adac117f7ae8e42a21e734d5cf1c3e8102e3ce",
+  "support": "管理档案/支持资料/XPBD耦合约束观察/README.md",
+  "review": "管理档案/审查/XPBD耦合约束-原生与读者审查.md",
+  "upstream": {
+    "repository": "InteractiveComputerGraphics/PositionBasedDynamics",
+    "commit": "10a70bc146a97873dc3c8fef372f5217e010542e",
+    "version_text": "2.2.2",
+    "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/tree/10a70bc146a97873dc3c8fef372f5217e010542e",
+    "scope": "Complete XPBD translation unit and relevant native caller locations; original framework callers inspected, not executed."
+  },
+  "verification_method": "Two same-operator fresh-directory native repeats of one fixed coupled trajectory, 16 calls each; independently reviewed frozen inputs and observed outputs, not independent native replication. Existing single-constraint and substep examples remain paper arithmetic.",
+  "public_observation_manifest": "管理档案/支持资料/XPBD耦合约束观察/artifact-manifest.json",
+  "public_observation_manifest_sha256": "e862229e1770bfb3f46ff8c827ecf133744c65224de2ac4ceb230785fb94ef79"
+}

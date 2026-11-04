@@ -1,0 +1,34 @@
+{
+  "run_id": "20261104T144504Z-xpbd-native-coupling",
+  "base_sha": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
+  "task_ids": [
+    "TASK-2026-0266"
+  ],
+  "outcome": "Reader amendment and public observation package in containing commit; remote readback still required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 266,
+  "artifact_paths": [
+    "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+    "管理档案/支持资料/XPBD耦合约束观察/README.md",
+    "管理档案/审查/XPBD耦合约束-原生与读者审查.md",
+    "管理档案/来源笔记/xpbd-native-coupling.json",
+    "管理档案/支持资料/XPBD耦合约束观察/artifact-manifest.json"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "native_repeats": 2,
+    "native_calls_each": 16,
+    "native_calls_total": 32,
+    "independent_native_replication": false,
+    "independent_reader_review": true,
+    "independent_protocol_and_output_review": true
+  },
+  "previous_readback": {
+    "sha": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
+    "changed_files": 10,
+    "remote_route_edges": 10,
+    "scope": "Factorio reader and navigation readback; not full-library semantic review."
+  }
+}

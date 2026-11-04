@@ -9298,6 +9298,36 @@
       ],
       "verification_method": "Source and reader review only; no execution.",
       "publication_scope": "Reader and navigation in containing commit."
+    },
+    {
+      "id": "TASK-2026-0266",
+      "parent_task_id": "TASK-2026-0210",
+      "question": "两条共享质点的XPBD距离约束，为什么保留乘子后仍需继续迭代？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "补足既有单约束说明的有限原生证据，而非新增概览。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+      "acceptance": [
+        "执行前固定源与协议独立审查",
+        "未修改原生函数的有界调用",
+        "真实输出与纸面预期分别记录",
+        "完整读者与公开衍生审查",
+        "正文到观察包实际导航核验"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T14:45:04Z",
+      "next_action": "保留有限耦合范围，不据此推断完整布料或跨平台结果。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
+        "管理档案/支持资料/XPBD耦合约束观察/README.md",
+        "管理档案/审查/XPBD耦合约束-原生与读者审查.md",
+        "管理档案/来源笔记/xpbd-native-coupling.json",
+        "管理档案/支持资料/XPBD耦合约束观察/artifact-manifest.json"
+      ],
+      "verification_method": "Two same-operator fresh-directory repeats, 16 native calls each; independent static/protocol/output review only, no independent native replication.",
+      "publication_scope": "Existing reader amendment and public observation package in containing commit."
     }
   ],
   "execution_policy": {

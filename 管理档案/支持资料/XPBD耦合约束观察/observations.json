@@ -1,0 +1,365 @@
+{
+  "document_kind": "Public derivative of method and observations; not a byte-identical original protocol; host identity omitted",
+  "native_source_commit": "10a70bc146a97873dc3c8fef372f5217e010542e",
+  "eigen_version": "3.4.0",
+  "compiler_technical_version": "GCC 14.2.0",
+  "real_profile": "default float, IEEE binary32, no USE_DOUBLE",
+  "flags": [
+    "-std=c++17",
+    "-O0",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-DEIGEN_MPL2_ONLY",
+    "-Wall",
+    "-Wextra"
+  ],
+  "same_operator_repeats": 2,
+  "native_calls_per_repeat": 16,
+  "native_calls_total": 32,
+  "checkpoints_per_repeat": [
+    1,
+    2,
+    8
+  ],
+  "absolute_tolerance": 2e-06,
+  "build_warning_summary": {
+    "per_repeat": 6,
+    "category": "unused parameter",
+    "location_category": "tetrahedral routines not called by this fixture"
+  },
+  "runtime_stderr_empty_both": true,
+  "trace_sha256": [
+    "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8",
+    "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8"
+  ],
+  "observations_shared_by_identical_traces": [
+    {
+      "sweep": 1,
+      "q_exact_fraction": "1/6",
+      "observed": [
+        1.2666666507720947,
+        2.433333396911621,
+        -0.10000002384185791,
+        -0.16666662693023682
+      ],
+      "analytical_expected": [
+        1.2666666666666666,
+        2.433333333333333,
+        -0.1,
+        -0.16666666666666669
+      ],
+      "raw_extensions": [
+        0.2666666507720947,
+        0.16666674613952637
+      ],
+      "compliant_residuals": [
+        0.1666666299104697,
+        1.241763419868036e-07
+      ],
+      "distance_to_minimizer_linf": 0.06666665077209477,
+      "max_abs_state_error": 6.35782879676583e-08
+    },
+    {
+      "sweep": 2,
+      "q_exact_fraction": "1/36",
+      "observed": [
+        1.2111111879348755,
+        2.4055557250976562,
+        -0.18333333730697632,
+        -0.1944444179534912
+      ],
+      "analytical_expected": [
+        1.211111111111111,
+        2.4055555555555554,
+        -0.18333333333333335,
+        -0.19444444444444445
+      ],
+      "raw_extensions": [
+        0.2111111879348755,
+        0.19444453716278076
+      ],
+      "compliant_residuals": [
+        0.02777785609165828,
+        1.250041846423411e-07
+      ],
+      "distance_to_minimizer_linf": 0.011111187934875533,
+      "max_abs_state_error": 1.6954210080299958e-07
+    },
+    {
+      "sweep": 8,
+      "q_exact_fraction": "1/1679616",
+      "observed": [
+        1.200000286102295,
+        2.4000003337860107,
+        -0.19999970495700836,
+        -0.19999994337558746
+      ],
+      "analytical_expected": [
+        1.2000002381496722,
+        2.400000119074836,
+        -0.19999964277549157,
+        -0.19999988092516385
+      ],
+      "raw_extensions": [
+        0.20000028610229492,
+        0.20000004768371582
+      ],
+      "compliant_residuals": [
+        5.871057421058534e-07,
+        1.1026859100815578e-07
+      ],
+      "distance_to_minimizer_linf": 3.3378601083100534e-07,
+      "max_abs_state_error": 2.1471117461757672e-07
+    }
+  ],
+  "call_diagnostics_shared_by_identical_traces": [
+    {
+      "call": 1,
+      "sweep": 1,
+      "constraint": 0,
+      "raw_extensions": [
+        0.10000002384185791,
+        0.49999988079071045
+      ],
+      "compliant_residuals": [
+        2.980232879923328e-09,
+        0.49999988079071045
+      ],
+      "distance_to_minimizer_linf": 0.19999990463256845
+    },
+    {
+      "call": 2,
+      "sweep": 1,
+      "constraint": 1,
+      "raw_extensions": [
+        0.2666666507720947,
+        0.16666674613952637
+      ],
+      "compliant_residuals": [
+        0.1666666299104697,
+        1.241763419868036e-07
+      ],
+      "distance_to_minimizer_linf": 0.06666665077209477
+    },
+    {
+      "call": 3,
+      "sweep": 2,
+      "constraint": 0,
+      "raw_extensions": [
+        0.1833333969116211,
+        0.25
+      ],
+      "compliant_residuals": [
+        6.506840388720292e-08,
+        0.08333337803681562
+      ],
+      "distance_to_minimizer_linf": 0.03333339691162118
+    },
+    {
+      "call": 4,
+      "sweep": 2,
+      "constraint": 1,
+      "raw_extensions": [
+        0.2111111879348755,
+        0.19444453716278076
+      ],
+      "compliant_residuals": [
+        0.02777785609165828,
+        1.250041846423411e-07
+      ],
+      "distance_to_minimizer_linf": 0.011111187934875533
+    },
+    {
+      "call": 5,
+      "sweep": 3,
+      "constraint": 0,
+      "raw_extensions": [
+        0.19722223281860352,
+        0.20833349227905273
+      ],
+      "compliant_residuals": [
+        -2.3924641073813646e-08,
+        0.013889080120456615
+      ],
+      "distance_to_minimizer_linf": 0.005555725097656339
+    },
+    {
+      "call": 6,
+      "sweep": 3,
+      "constraint": 1,
+      "raw_extensions": [
+        0.2018519639968872,
+        0.1990741491317749
+      ],
+      "compliant_residuals": [
+        0.004629707253642618,
+        5.063635408197875e-08
+      ],
+      "distance_to_minimizer_linf": 0.0018519639968872514
+    },
+    {
+      "call": 7,
+      "sweep": 4,
+      "constraint": 0,
+      "raw_extensions": [
+        0.19953715801239014,
+        0.20138895511627197
+      ],
+      "compliant_residuals": [
+        5.065015282190721e-08,
+        0.0023148566208511523
+      ],
+      "distance_to_minimizer_linf": 0.0009261131286621982
+    },
+    {
+      "call": 8,
+      "sweep": 4,
+      "constraint": 1,
+      "raw_extensions": [
+        0.20030879974365234,
+        0.1998457908630371
+      ],
+      "compliant_residuals": [
+        0.0007716923814150289,
+        8.046167229713852e-08
+      ],
+      "distance_to_minimizer_linf": 0.00030879974365238816
+    },
+    {
+      "call": 9,
+      "sweep": 5,
+      "constraint": 0,
+      "raw_extensions": [
+        0.19992291927337646,
+        0.200231671333313
+      ],
+      "compliant_residuals": [
+        -2.384415434542042e-08,
+        0.00038596093194817604
+      ],
+      "distance_to_minimizer_linf": 0.00015459060668954194
+    },
+    {
+      "call": 10,
+      "sweep": 5,
+      "constraint": 1,
+      "raw_extensions": [
+        0.20005154609680176,
+        0.19997429847717285
+      ],
+      "compliant_residuals": [
+        0.00012860297927094755,
+        -6.85461053751002e-08
+      ],
+      "distance_to_minimizer_linf": 5.154609680180222e-05
+    },
+    {
+      "call": 11,
+      "sweep": 6,
+      "constraint": 0,
+      "raw_extensions": [
+        0.1999872922897339,
+        0.20003855228424072
+      ],
+      "compliant_residuals": [
+        5.0663567868758363e-08,
+        6.4185260962496e-05
+      ],
+      "distance_to_minimizer_linf": 2.5844573974698193e-05
+    },
+    {
+      "call": 12,
+      "sweep": 6,
+      "constraint": 1,
+      "raw_extensions": [
+        0.20000863075256348,
+        0.199995756149292
+      ],
+      "compliant_residuals": [
+        2.1389126397458602e-05,
+        -8.940822887604227e-09
+      ],
+      "distance_to_minimizer_linf": 8.630752563520971e-06
+    },
+    {
+      "call": 13,
+      "sweep": 7,
+      "constraint": 0,
+      "raw_extensions": [
+        0.1999979019165039,
+        0.20000648498535156
+      ],
+      "compliant_residuals": [
+        -2.3841919688516455e-08,
+        1.0719895236682708e-05
+      ],
+      "distance_to_minimizer_linf": 4.386901855557568e-06
+    },
+    {
+      "call": 14,
+      "sweep": 7,
+      "constraint": 1,
+      "raw_extensions": [
+        0.20000147819519043,
+        0.19999933242797852
+      ],
+      "compliant_residuals": [
+        3.552436766834921e-06,
+        -8.940716306193863e-09
+      ],
+      "distance_to_minimizer_linf": 1.4781951904740964e-06
+    },
+    {
+      "call": 15,
+      "sweep": 8,
+      "constraint": 0,
+      "raw_extensions": [
+        0.19999969005584717,
+        0.20000112056732178
+      ],
+      "compliant_residuals": [
+        -8.940705648052827e-09,
+        1.7791986269555249e-06
+      ],
+      "distance_to_minimizer_linf": 8.106231690341303e-07
+    },
+    {
+      "call": 16,
+      "sweep": 8,
+      "constraint": 1,
+      "raw_extensions": [
+        0.20000028610229492,
+        0.20000004768371582
+      ],
+      "compliant_residuals": [
+        5.871057421058534e-07,
+        1.1026859100815578e-07
+      ],
+      "distance_to_minimizer_linf": 3.3378601083100534e-07
+    }
+  ],
+  "limits": [
+    "Same operator and toolchain repeats, not independent replication",
+    "Fixed positive-order collinear branch only",
+    "No full caller or engine execution",
+    "Tolerance exceeds the analytical sweep-8 residual; exact residual digits are not resolved",
+    "No performance, contact, cloth or cross-platform claim"
+  ],
+  "build_exit_codes": [
+    0,
+    0
+  ],
+  "run_exit_codes": [
+    0,
+    0
+  ],
+  "native_emitted_scaled_compliance": 1,
+  "checker_recomputed_scaled_compliance": 0.9999999701976783,
+  "field_provenance": {
+    "observed": "positions and lambdas copied from native float output records",
+    "analytical_expected": "pre-execution real-arithmetic closed form evaluated for comparison",
+    "raw_extensions": "recomputed by Python checker from saved native positions",
+    "compliant_residuals": "recomputed by Python checker from saved positions/lambdas and recorded actual float stiffness/dt; not emitted by native driver",
+    "distance_to_minimizer_linf": "recomputed by checker for the fixed positive-order collinear branch"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "repository": "InteractiveComputerGraphics/PositionBasedDynamics",
+  "commit": "10a70bc146a97873dc3c8fef372f5217e010542e",
+  "version": "2.2.2",
+  "files": [
+    {
+      "path": "README.md",
+      "git_blob_sha1": "c39898bfefa27529d01eeb7590ccf18f1d439711",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/README.md"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha1": "f14280d6e0ebf61ca22541ea915e7aff84e15e9f",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/LICENSE"
+    },
+    {
+      "path": "version.txt",
+      "git_blob_sha1": "7e541aec69b34fe38bdf6f049e78b9a67003307f",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/version.txt"
+    },
+    {
+      "path": "Common/Common.h",
+      "git_blob_sha1": "425f023371fb7f276d71fdbdecddeb2a5effc4f5",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/Common/Common.h"
+    },
+    {
+      "path": "PositionBasedDynamics/XPBD.cpp",
+      "git_blob_sha1": "1efa560e6caf7e44d2140e9dd6c5717b78b1bf0f",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/XPBD.cpp"
+    },
+    {
+      "path": "PositionBasedDynamics/XPBD.h",
+      "git_blob_sha1": "17846174ee3bd5fcf98451e46110c036f153b62a",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/XPBD.h"
+    },
+    {
+      "path": "PositionBasedDynamics/MathFunctions.cpp",
+      "git_blob_sha1": "fe988d44d3c219375fe5c7981195d3ef16c5ddb6",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/MathFunctions.cpp"
+    },
+    {
+      "path": "PositionBasedDynamics/MathFunctions.h",
+      "git_blob_sha1": "0f7aad057d35dad2d8a84bc9a428b401e03e36e4",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/MathFunctions.h"
+    },
+    {
+      "path": "PositionBasedDynamics/PositionBasedDynamics.cpp",
+      "git_blob_sha1": "bf3c0e0bb126c0ea2274ca3535ef78ff47f534d1",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/PositionBasedDynamics.cpp"
+    },
+    {
+      "path": "PositionBasedDynamics/PositionBasedDynamics.h",
+      "git_blob_sha1": "4a44377f079b02caabcd13befab3f7923ebfeb69",
+      "url": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics/blob/10a70bc146a97873dc3c8fef372f5217e010542e/PositionBasedDynamics/PositionBasedDynamics.h"
+    }
+  ],
+  "eigen": {
+    "version": "3.4.0",
+    "path": "extern/eigen",
+    "tree_sha1": "ac4a3fa3c220c64e30592f2d5b3e8e37d194dd9e",
+    "Eigen_directory_tree_sha1": "c892ec065d7d1422412126fd4caf83117b0df7e5",
+    "selected_header_files": 337,
+    "selection": "All regular non-CMake files under Eigen/; exact upstream blob identities verified before native execution"
+  }
+}

@@ -2860,15 +2860,16 @@
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
       "current_read_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/多做几次约束修正，为什么物体反而更硬.md",
       "reader_body_status": "published",
-      "editorial_status": "独立完整原源与读者审查接受；数值为纸面推导，非运行或真人测试",
+      "editorial_status": "原有纸面说明与新增有限原生观察分开标注，独立审读接受。",
       "origin": "source-grounded-xpbd-compliance",
-      "scope_note": "单个线性约束解释柔度、步长缩放及步内累计；不提供耦合布料、碰撞、同轨迹或性能保证。",
+      "scope_note": "单约束与子步例仍为纸面推导；新增两约束固定顺序的原生核观察，不含完整仿真、碰撞或性能保证。",
       "review_paths": [
         "管理档案/审查/XPBD柔度与迭代-来源与读者审查.md",
-        "管理档案/审查/XPBD子步推进-来源与读者审查.md"
+        "管理档案/审查/XPBD子步推进-来源与读者审查.md",
+        "管理档案/审查/XPBD耦合约束-原生与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/xpbd-compliance.json",
-      "reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+      "reader_sha256": "b0ca83d2981cd7b6c59f2af5b5adac117f7ae8e42a21e734d5cf1c3e8102e3ce",
       "small_steps_increment": {
         "reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
         "previous_reader_sha256": "4ac79ee4c830168de40f1e8bbe5885e75942058cec22e22916ec26ead4283ea2",
@@ -2876,6 +2877,15 @@
         "review_path": "管理档案/审查/XPBD子步推进-来源与读者审查.md",
         "scope": "Source-grounded time-stepping comparison and original one-dimensional paper arithmetic only; no numerical model, native solver, collision, GPU, performance or visual experiment.",
         "historical_identity": "The original source_record and XPBD compliance review retain the 2016-source scope and then-reviewed reader identity; this amendment does not rerun their evidence."
+      },
+      "native_coupling_increment": {
+        "previous_reader_sha256": "05e2b2f234b4c9647634bed7e040a8cf6ce2ebeae6be531fef3f954b7ec08b6a",
+        "reader_sha256": "b0ca83d2981cd7b6c59f2af5b5adac117f7ae8e42a21e734d5cf1c3e8102e3ce",
+        "support": "管理档案/支持资料/XPBD耦合约束观察/README.md",
+        "review_path": "管理档案/审查/XPBD耦合约束-原生与读者审查.md",
+        "source_record": "管理档案/来源笔记/xpbd-native-coupling.json",
+        "scope": "One trajectory, two same-operator repeats, 32 native calls total; independently reviewed outputs, not an independent native rerun.",
+        "historical_identity": "Earlier source and review records keep their then-reviewed reader identities and paper-only scopes."
       }
     },
     {
@@ -3184,7 +3194,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "447aa37d98b5f5b0caf8fe56d2239e0652bc9314",
+  "publication_base_sha": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
   "accounted_for_original_items": 55,
   "reader_books_total": 99,
   "post_baseline_research_books": 44,

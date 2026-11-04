@@ -1,0 +1,81 @@
+{
+  "format_version": 1,
+  "scope": "Bounded native XPBD coupled distance-constraint reproduction appendix",
+  "source_repository": "InteractiveComputerGraphics/PositionBasedDynamics",
+  "source_commit": "10a70bc146a97873dc3c8fef372f5217e010542e",
+  "native_runs": 2,
+  "same_operator_repeats_only": true,
+  "native_calls_each": 16,
+  "native_calls_total": 32,
+  "public_derivatives_do_not_reproduce_original_environment_identity": true,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "42ff63bbed6ddcf7087c4849d5da9650706c921c254ffe48e13354f23007ba4c",
+      "bytes": 9189,
+      "transformation": {
+        "kind": "public method/observation derivative, not byte-identical original protocol; includes simplified manual reproduction commands; host identity omitted"
+      }
+    },
+    {
+      "path": "check_traces.py",
+      "sha256": "471aa2c756a1b1990d66fe52a7149dfb796cd6e7889add493e0dd3c8af790c3f",
+      "bytes": 7223,
+      "transformation": {
+        "kind": "public derivative: four numerical/continuity validation functions retained, CLI replaced, native execution and host identity handling omitted",
+        "retained_functions": [
+          "require",
+          "near",
+          "state",
+          "validate_trace"
+        ],
+        "independent_stored_output_review": "accepted",
+        "reviewed_checker_sha256": "471aa2c756a1b1990d66fe52a7149dfb796cd6e7889add493e0dd3c8af790c3f",
+        "review_scope": "existing two traces validated and malformed private trace copy rejected; no native execution"
+      }
+    },
+    {
+      "path": "driver.cpp",
+      "sha256": "6a1e5e87150e0d8ce8761354e59edbca3bec29703916a13ff252e9c4de5fc87e",
+      "bytes": 5839,
+      "transformation": {
+        "kind": "byte-identical original driver",
+        "original_sha256": "6a1e5e87150e0d8ce8761354e59edbca3bec29703916a13ff252e9c4de5fc87e"
+      }
+    },
+    {
+      "path": "observations.json",
+      "sha256": "db1630e74d6d46f85daf4016e4f00f2a0d5b9137b793a804a39bfc0324b14436",
+      "bytes": 9325,
+      "transformation": {
+        "kind": "public observation derivative; native values and postprocessing provenance separated; host identity omitted"
+      }
+    },
+    {
+      "path": "source-identities.json",
+      "sha256": "5868fddf960bc5e96249b9871e35f9138bcc00560cae146f6495cf5d92c68518",
+      "bytes": 3360,
+      "transformation": {
+        "kind": "public technical source-identity projection: upstream commit/blob/tree IDs only; no vendored implementation or dependency bytes"
+      }
+    },
+    {
+      "path": "trace-repeat-1.jsonl",
+      "sha256": "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8",
+      "bytes": 8203,
+      "transformation": {
+        "kind": "byte-identical synthetic native output, repeat 1",
+        "original_sha256": "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8"
+      }
+    },
+    {
+      "path": "trace-repeat-2.jsonl",
+      "sha256": "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8",
+      "bytes": 8203,
+      "transformation": {
+        "kind": "byte-identical synthetic native output, repeat 2",
+        "original_sha256": "c6ca6a9abdd55ed9421a823acfacd8084fe8edbbd8ad5c25cd6abde62ba318e8"
+      }
+    }
+  ]
+}
