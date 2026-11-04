@@ -1,0 +1,12 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/同一个ZIP里两份同名武器数据，清单读的是哪份.md",
+  "support_sha256": "427940b73615cb435e5970cb8ab9357b843377f24b509099930319a4da997de1",
+  "previous_support_sha256": "1b7713b1caa260bc41a11911e7c046e6bdd4d7fa28feb2ca2542567030110c9e",
+  "review": "管理档案/审查/ZIP目标映射-来源与读者审查.md",
+  "source_url": "https://github.com/python/cpython/blob/v3.12.0/Lib/zipfile/__init__.py#L1737-L1779",
+  "source_scope": "Selected _extract_member body, source-only deduction. Release-tag reference, not installed-binary provenance.",
+  "verification": "Independent complete reader/diff and selected original-source review; no new archive execution or extraction.",
+  "preservation": "Prior four cases and two observations retain their original frozen files and scope; no fifth observed case.",
+  "limits": "Not filesystem, overwrite, case-folding, Unicode, race, engine or complete security validation."
+}

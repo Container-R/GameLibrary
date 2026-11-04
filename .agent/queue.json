@@ -8920,7 +8920,7 @@
         "https://github.com/python/cpython/blob/v3.12.0/Lib/zipfile/__init__.py"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-04T06:51:33Z",
+      "last_progress_at": "2026-11-04T09:28:45Z",
       "next_action": "只按具体读者问题补充，不把有限观察扩成真实游戏包或所有归档实现的保证。",
       "blockers": [],
       "artifact_paths": [
@@ -8928,8 +8928,17 @@
         "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
         "管理档案/审查/ZIP成员选择-来源与读者审查.md",
         "管理档案/来源笔记/zip-entry-identity.json",
-        "管理档案/研究记录/zip-entry-identity-20261104/README.md"
-      ]
+        "管理档案/研究记录/zip-entry-identity-20261104/README.md",
+        "管理档案/审查/ZIP目标映射-来源与读者审查.md",
+        "管理档案/来源笔记/zip-destination-identity.json"
+      ],
+      "source_only_followup": {
+        "support_sha256": "427940b73615cb435e5970cb8ab9357b843377f24b509099930319a4da997de1",
+        "review": "管理档案/审查/ZIP目标映射-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/zip-destination-identity.json",
+        "verification": "Complete reader/diff and fixed-source inspection only; no new native execution or extraction.",
+        "scope": "Separate source-only addition in current support; frozen original observations unchanged."
+      }
     },
     {
       "id": "TASK-2026-0254",

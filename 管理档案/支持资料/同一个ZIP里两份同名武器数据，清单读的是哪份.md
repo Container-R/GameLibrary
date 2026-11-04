@@ -38,10 +38,12 @@ Python 3.12 文档明确说明，`open`、`read` 可以接收名称或 `ZipInfo`
 
 如果运行时使用另一套 ZIP 库或资源索引，还必须核对那个入口的行为。本观察没有运行游戏、生成哈希清单、测量性能，也没有检验名称大小写、Unicode 归一化、提取覆盖或恶意文件；不能拿它替代那些检查。它解决的是更小的一步：清单里这一行，究竟有没有读到这一行对应的成员。
 
+另据固定 CPython v3.12.0 的提取源码推导，`weapons/./rifle.json` 与 `weapons/rifle.json` 会归到同一目标路径；包内名称不同，并不保证提取目标不同。[3] 这不是前述实验观察，也没有执行解压。
+
 ## 来源与复核范围
 
 1. 本库原创[四案例复现材料及两次完整输出](../研究记录/zip-entry-identity-20261104/README.md)，2026-11-04。解释器自报 Python 3.12.14；同一操作者执行，另经独立协议与结果审查，不是独立原生复现。
 2. Python Software Foundation，[zipfile — Work with ZIP archives](https://docs.python.org/3.12/library/zipfile.html#zipfile.ZipFile.open)，3.12 版本路径，2026-11-04读取。该在线文档可变；相同 API 说明另核对固定 [v3.12.0 文档源码，第253–309行](https://github.com/python/cpython/blob/v3.12.0/Doc/library/zipfile.rst#L253-L309)与[第385–392行](https://github.com/python/cpython/blob/v3.12.0/Doc/library/zipfile.rst#L385-L392)。
-3. Python Software Foundation，[CPython v3.12.0，Lib/zipfile/__init__.py](https://github.com/python/cpython/blob/v3.12.0/Lib/zipfile/__init__.py#L1464-L1466)，2026-11-04读取。相关位置：成员收集1464–1466、`getinfo` 1511–1518、`read` 1547–1550、`open` 1576–1599。只采用上述选择机制，不声明覆盖该文件全部行为。
+3. Python Software Foundation，[CPython v3.12.0，Lib/zipfile/__init__.py](https://github.com/python/cpython/blob/v3.12.0/Lib/zipfile/__init__.py#L1464-L1466)，2026-11-04读取。相关位置：成员收集1464–1466、`getinfo` 1511–1518、`read` 1547–1550、`open` 1576–1599、`_extract_member` 1737–1779。仅讨论成员选择及目标映射，不覆盖该文件全部行为。
 
 [返回构建工程师正文](../../GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md)
