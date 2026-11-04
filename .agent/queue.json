@@ -8572,6 +8572,35 @@
       "blockers": [],
       "verification_method": "Versioned original documentation and independent complete reader review; no execution.",
       "publication_scope": "Reader increment and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0244",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为什么只改变直达声控制，仍可能改变混响的新输入？",
+      "discipline": "SFX",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Concrete send-order boundary absent from existing spatial audio role, distinct from virtualization and maximum distance.",
+      "expected_artifact": "管理档案/支持资料/挡住直达声后，为什么混响也断了.md",
+      "artifact_paths": [
+        "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+        "GameLibrary/声音与音乐/游戏音效/岗位与协作/README.md",
+        "管理档案/支持资料/挡住直达声后，为什么混响也断了.md",
+        "管理档案/审查/直达声与混响发送位置-来源与读者审查.md",
+        "管理档案/来源笔记/reverb-send-order.json"
+      ],
+      "acceptance": [
+        "Read historical official replies and distinguish current API scope",
+        "Independently review complete signal example and source limits",
+        "Keep input, effect history and return separate",
+        "Verify real host/shelf/return navigation without adding book count"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T00:56:09Z",
+      "next_action": "Only deepen a current routing implementation under a concrete version and project goal; do not infer current behavior from historical replies.",
+      "blockers": [],
+      "verification_method": "Original-source reading and independently reviewed paper signal model; no audio or runtime execution.",
+      "publication_scope": "Support and public progress in containing commit."
     }
   ],
   "execution_policy": {
