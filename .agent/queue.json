@@ -1229,7 +1229,7 @@
         "No inferred production guarantees"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T09:53:13Z",
+      "last_progress_at": "2026-11-04T02:35:24Z",
       "next_action": "Maintain scoped offline evidence; no GPU allocation or residence claim",
       "blockers": [],
       "completed_at": "2026-10-31T18:40:11.675407Z",
@@ -1258,7 +1258,9 @@
         "管理档案/来源笔记/normal-mip-specular-filtering.json",
         "管理档案/支持资料/BC1省下了字节，为什么柔和透明度却保不住.md",
         "管理档案/审查/BC1透明模式-来源与读者审查.md",
-        "管理档案/来源笔记/bc1-alpha-mode.json"
+        "管理档案/来源笔记/bc1-alpha-mode.json",
+        "管理档案/审查/图集内部边界过滤-来源与读者审查.md",
+        "管理档案/来源笔记/atlas-filter-footprint.json"
       ],
       "latest_reader_maintenance": "Optional Windows-specific process budget and reservation explanation; preserves old BC layout evidence and makes no new GPU observation.",
       "normal_mip_reader_support": {
@@ -1272,6 +1274,12 @@
         "review": "管理档案/审查/BC1透明模式-来源与读者审查.md",
         "source": "管理档案/来源笔记/bc1-alpha-mode.json",
         "scope": "Official format reading and independently reviewed original black/white endpoint example; no compressed file, codec, GPU, visual or quality experiment."
+      },
+      "atlas_filter_support": {
+        "support": "管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md",
+        "review": "管理档案/审查/图集内部边界过滤-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/atlas-filter-footprint.json",
+        "verification": "Specification reading and finite paper arithmetic, independent reader review; no GPU run."
       }
     },
     {

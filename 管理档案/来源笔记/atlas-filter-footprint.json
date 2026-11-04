@@ -1,0 +1,31 @@
+{
+  "read_date_utc": "2026-11-04",
+  "support": "管理档案/支持资料/手动重复纹理坐标，为什么接缝处可能选错Mip.md",
+  "support_sha256": "df84a5db4bc06f5cd6f33f8559a232ffcb5af8804e8b6457548f6ab5cd0f81b2",
+  "host": "GameLibrary/技术美术/环境管线/纹理与材质/预乘透明度与普通透明度的混用问题.md",
+  "host_sha256": "018b3f44895eb3d2dc1d752f596e900f88061c5fbea7b3fc2c7f72b9cda993a3",
+  "review": "管理档案/审查/图集内部边界过滤-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Khronos Group",
+      "title": "OpenGL 4.6 Core Profile Specification",
+      "version_date": "2022-05-05",
+      "url": "https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf",
+      "reading": "Equation8.10 printed257; Section8.14.2 and table8.20 printed259–263; Section8.14.3 printed264–266; generation limitation Section8.14.4 printed266–267. Formula images printed261/266 inspected; not whole specification."
+    },
+    {
+      "author": "Li-Yi Wei",
+      "title": "GPU Gems2 Chapter12 Tile-Based Texture Mapping",
+      "url": "https://developer.nvidia.com/gpugems/gpugems2/part-ii-shading-lighting-and-shadows/chapter-12-tile-based-texture-mapping",
+      "reading": "Section12.3 and12.5 text; related12.4 gradient listing. Not chapter images or executable examples.",
+      "scope": "Special Wang-tile construction is not a universal atlas remedy; historical performance not adopted."
+    }
+  ],
+  "verification": "Primary specification reading, original one-dimensional paper arithmetic, independent full reader review; no GPU execution.",
+  "limits": [
+    "All colors linear and opaque; fixed mip, no offsets or anisotropy",
+    "Whole-image wrap does not know application subrectangles",
+    "Only mip levels contributing to the result need their filtering inputs considered",
+    "No universal padding size, half-texel correction or engine guarantee"
+  ]
+}
