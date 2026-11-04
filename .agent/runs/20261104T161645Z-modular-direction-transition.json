@@ -1,0 +1,32 @@
+{
+  "run_id": "20261104T161645Z-modular-direction-transition",
+  "base_sha": "b6209808926ebc15a1329c719c5fac50a1ce9179",
+  "task_ids": [
+    "TASK-2026-0220"
+  ],
+  "outcome": "Existing support amendment in containing commit; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 268,
+  "artifact_paths": [
+    "管理档案/支持资料/走廊绕回房间却接不上，为什么不急着补一块短墙.md",
+    "管理档案/来源笔记/skyrim-modular-closure.json",
+    "管理档案/审查/模块套件回接-来源与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_support_pages": 0,
+    "executions": 0,
+    "existing_coordinate_example_unchanged": true,
+    "independent_complete_reader_review": true,
+    "original_images_inspected": 2,
+    "images_published": 0
+  },
+  "previous_readback": {
+    "sha": "b6209808926ebc15a1329c719c5fac50a1ce9179",
+    "changed_files": 18,
+    "remote_route_edges": 17,
+    "scope": "Ninja finite observation package and reader entry exact remote readback; native scope documented separately."
+  }
+}
