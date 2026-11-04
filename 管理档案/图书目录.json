@@ -2615,7 +2615,7 @@
         "管理档案/审查/编号标签排序-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/ime-confirmation-vs-submit.json",
-      "reader_sha256": "71c04f606391314d75ca9307344fe3682af857e933dbaffe28ca3abef0d51aa9",
+      "reader_sha256": "fed1a457c8a6d2a5133426233451925d81b15db04b2cd7271606f78070a63103",
       "candidate_coordinate_support": {
         "support_path": "管理档案/支持资料/输入法候选窗为什么会离开文字光标.md",
         "support_sha256": "b6bb65605df964a9208cd9720aaae5a077d0bd3882ad13877516fce998913656",
@@ -2635,6 +2635,13 @@
           "review": "管理档案/审查/编号标签排序-来源与读者审查.md",
           "scope": "Fixed upstream API documentation and independent reader/source review; finite original numbered-label reasoning, no execution."
         }
+      },
+      "grapheme_selection_support": {
+        "path": "管理档案/支持资料/昵称计数是三，光标偏移为什么却是八.md",
+        "sha256": "491c976177659d66f7ad2cd295dda8644ea2def301e83e0e1d15db8f0c132e90",
+        "review": "管理档案/审查/昵称计数与选择偏移-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/grapheme-count-selection-offset.json",
+        "scope": "Current-value selection-unit conversion and explicit deletion policy; existing IME argument unchanged, no execution."
       }
     },
     {

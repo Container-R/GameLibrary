@@ -1,0 +1,44 @@
+{
+  "run_id": "20261104T162536Z-grapheme-selection-units",
+  "base_sha": "4ef1b7b0b86de4a1561602241ae78bda0e5c6cdf",
+  "task_ids": [
+    "TASK-2026-0269",
+    "TASK-2026-0268"
+  ],
+  "outcome": "Support and reader entries in containing commit; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 269,
+  "artifact_paths": [
+    "管理档案/支持资料/昵称计数是三，光标偏移为什么却是八.md",
+    "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+    "GameLibrary/界面与体验/交互设计/文本输入/README.md",
+    "管理档案/来源笔记/grapheme-count-selection-offset.json",
+    "管理档案/审查/昵称计数与选择偏移-来源与读者审查.md",
+    "管理档案/支持资料/Ninja依赖变化观察/README.md",
+    "管理档案/支持资料/Ninja依赖变化观察/artifact-manifest.json",
+    "管理档案/来源笔记/ninja-order-only-observation.json",
+    "管理档案/审查/Ninja依赖变化-原生与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "executions": 0,
+    "original_example_units": [
+      8,
+      6,
+      3
+    ],
+    "independent_source_and_complete_reader_review": true
+  },
+  "previous_readback": {
+    "sha": "4ef1b7b0b86de4a1561602241ae78bda0e5c6cdf",
+    "changed_files": 7,
+    "remote_route_edges": 7,
+    "scope": "Existing modular-kit support amendment exact remote readback; no editor or model execution."
+  },
+  "documentation_correction": {
+    "scope": "Ninja README specifies build.ninja used by its unchanged method; public manifest rebound. Actual original execution already used that name.",
+    "native_rerun": false
+  }
+}

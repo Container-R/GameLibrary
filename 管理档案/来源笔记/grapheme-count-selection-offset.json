@@ -1,0 +1,129 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/昵称计数是三，光标偏移为什么却是八.md",
+  "support_sha256": "491c976177659d66f7ad2cd295dda8644ea2def301e83e0e1d15db8f0c132e90",
+  "host": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+  "review": "管理档案/审查/昵称计数与选择偏移-来源与读者审查.md",
+  "sources": [
+    {
+      "id": "uax29",
+      "organization": "Unicode Consortium",
+      "title": "Unicode Text Segmentation",
+      "version": "Unicode 17.0.0 / UAX #29 revision 47 / 2025-08-17",
+      "url": "https://www.unicode.org/reports/tr29/tr29-47.html",
+      "read_scope": [
+        "1.1 ordered-rule precedence",
+        "2 UAX29-C1-1 and C1-2 default/profile conformance",
+        "3 approximation, tailoring, backspace versus delete and text-editing framework responsibility",
+        "3.1.1 complete grapheme rule table; selected GB1/2/9/11/999 derivation"
+      ],
+      "supports": "Default extended boundaries and why segmentation does not dictate universal editing policy.",
+      "limits": "No installed implementation or all-language behavior established.",
+      "read_on": "2026-11-04"
+    },
+    {
+      "id": "gcb17",
+      "organization": "Unicode Consortium",
+      "title": "GraphemeBreakProperty-17.0.0.txt",
+      "version": "17.0.0, header date 2025-06-30",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/auxiliary/GraphemeBreakProperty.txt",
+      "read_scope": [
+        "Header and @missing Other",
+        "Line84: 0300..036F Extend",
+        "Line1509: 200D ZWJ",
+        "Static range membership lookup for exactly 0041,0065,0301,1F469,200D,1F4BB; unlisted selected values default to Other"
+      ],
+      "supports": "Exact Grapheme_Cluster_Break properties for the original finite input.",
+      "limits": "Document parsing, not segmentation-library execution or database-wide validation.",
+      "read_on": "2026-11-04"
+    },
+    {
+      "id": "ep17",
+      "organization": "Unicode Consortium",
+      "title": "emoji-data.txt",
+      "version": "17.0, header date 2025-07-25",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/emoji/emoji-data.txt",
+      "read_scope": [
+        "Header",
+        "Line1037: 1F466..1F46B Extended_Pictographic",
+        "Line1043: 1F4B8..1F4EB Extended_Pictographic"
+      ],
+      "supports": "U+1F469 and U+1F4BB Extended_Pictographic membership for GB11.",
+      "limits": "Does not establish a particular font draws one glyph or an editor applies this Unicode version.",
+      "read_on": "2026-11-04"
+    },
+    {
+      "id": "unicode-core17",
+      "organization": "Unicode Consortium",
+      "title": "Unicode 17.0.0 Core Specification Chapter 3",
+      "version": "17.0.0",
+      "url": "https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-3/",
+      "read_scope": [
+        "3.9 D76 scalar value",
+        "D85 well-formedness",
+        "3.9.2 D91 UTF-16, Table3-5 and accompanying surrogate explanation"
+      ],
+      "supports": "Six chosen code points are scalar values; supplementary values require surrogate pairs; isolated surrogate is not well-formed UTF-16.",
+      "limits": "No full Unicode core audit; counts and selected surrogate pairs are original arithmetic.",
+      "read_on": "2026-11-04"
+    },
+    {
+      "id": "html-selection",
+      "organization": "WHATWG",
+      "title": "HTML Standard — APIs for the text control selections",
+      "version": "Living Standard read 2026-11-04; main page last updated 2026-11-04",
+      "url": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#textFieldSelection",
+      "read_scope": [
+        "4.10.20 input/textarea shared algorithm and relevant value",
+        "selectionStart/selectionEnd getter steps",
+        "setSelectionRange and set selection range algorithm",
+        "setRangeText definition read for scope only, no implementation provided"
+      ],
+      "supports": "Selection offsets and logical half-open selection ranges use code units, not grapheme ordinals.",
+      "limits": "Normative API reading only; no browser API or editing operation executed. Restrict example to current textarea value, no newline, no composing state, no concurrent mutation. Not contenteditable or DOM Range.",
+      "read_on": "2026-11-04"
+    },
+    {
+      "id": "infra-strings",
+      "organization": "WHATWG",
+      "title": "Infra Standard — Strings",
+      "version": "Commit snapshot459b7829230ad256a690dabd315db974469af8e7; last updated2026-10-19",
+      "url": "https://infra.spec.whatwg.org/commit-snapshots/459b7829230ad256a690dabd315db974469af8e7/#strings",
+      "read_scope": [
+        "4.7 16-bit code units and code-unit length",
+        "Code-point interpretation of surrogate pairs and isolated surrogates",
+        "Scalar-value string distinction",
+        "Substring positions are between code units"
+      ],
+      "supports": "Meaning of the HTML standard code-unit offset; why code-point iteration is not proof of well-formed scalar-value input.",
+      "limits": "No JavaScript runtime tests.",
+      "read_on": "2026-11-04"
+    }
+  ],
+  "original_example": {
+    "code_points": [
+      "0041",
+      "0065",
+      "0301",
+      "1F469",
+      "200D",
+      "1F4BB"
+    ],
+    "utf16_units": 8,
+    "scalar_values": 6,
+    "default_extended_grapheme_clusters": 3,
+    "grapheme_boundaries_in_utf16": [
+      0,
+      1,
+      3,
+      8
+    ]
+  },
+  "verification_method": "Primary specification reading, original finite paper derivation, static property lookup and independent complete reader review; no encoding, segmentation, browser, IME or engine execution.",
+  "limits": [
+    "HTML cited as actually read Living Standard, not a verified fixed snapshot",
+    "Default boundaries do not impose all editing policies",
+    "Logical offsets do not establish screen cursor position",
+    "No private original research records or full property databases uploaded"
+  ]
+}
