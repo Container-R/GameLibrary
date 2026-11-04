@@ -1,0 +1,19 @@
+{
+  "author": "Albert, Wube Software",
+  "title": "Friday Facts #146 — The GFX workflow",
+  "url": "https://www.factorio.com/blog/post/fff-146",
+  "published_on": "2016-07-08",
+  "read_on": "2026-11-04",
+  "read_scope": "Complete webpage technical prose; adopted 3D modeling with Blender scene split and adjacent revision context. Images not inspected.",
+  "host": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "host_sha256": "38d7656cab05432f5e9daceffadd85232d9aaa42c2bc542b9afbff0a3c3c8ca7",
+  "review": "管理档案/审查/制作预览与正式输出-增量审读.md",
+  "adopted_claim": "Historical MODEL/RENDER separation avoided accidental compositor output writes during F12 preview; the then-considered batch alternative did not satisfy RenderLayers requirements.",
+  "editorial_increment": "Original door-asset preview versus deliverable questions, explicitly unexecuted.",
+  "limits": [
+    "No current Blender behavior claim",
+    "No image, software or game execution",
+    "No inference of Wube sandbox, approval or atomic-publishing system",
+    "No new book or support page; original reader contents otherwise preserved"
+  ]
+}

@@ -696,7 +696,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "b30d079d4750e26ad60daf5eeeecd8caabb6848c18f659c725c0ec335bf8990b",
+      "reader_sha256": "38d7656cab05432f5e9daceffadd85232d9aaa42c2bc542b9afbff0a3c3c8ca7",
       "vegetation_control_support": {
         "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
@@ -725,6 +725,11 @@
         "review": "管理档案/审查/模型LOD屏幕高度-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/model-lod-screen-height.json",
         "scope": "Ideal projection and Unity6000.0 documented parameter distinction; no execution or new book."
+      },
+      "preview_output_increment": {
+        "source_record": "管理档案/来源笔记/factorio-preview-render-output.json",
+        "review": "管理档案/审查/制作预览与正式输出-增量审读.md",
+        "scope": "Two historical-workflow and original-check paragraphs; no new book, image inspection or execution."
       }
     },
     {

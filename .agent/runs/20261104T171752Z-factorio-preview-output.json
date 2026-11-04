@@ -1,0 +1,29 @@
+{
+  "run_id": "20261104T171752Z-factorio-preview-output",
+  "base_sha": "cf2285c71723b07ac317d4308f06a8977e6f82de",
+  "task_ids": [
+    "TASK-2026-0272"
+  ],
+  "outcome": "Existing TA reader increment in containing commit; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 272,
+  "artifact_paths": [
+    "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+    "管理档案/来源笔记/factorio-preview-render-output.json",
+    "管理档案/审查/制作预览与正式输出-增量审读.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "executions": 0,
+    "images_inspected": 0,
+    "independent_source_and_reader_review": true
+  },
+  "previous_readback": {
+    "sha": "cf2285c71723b07ac317d4308f06a8977e6f82de",
+    "changed_files": 8,
+    "remote_route_edges": 8,
+    "scope": "SQLite replacement support exact remote readback; no database execution."
+  }
+}

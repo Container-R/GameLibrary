@@ -9492,6 +9492,34 @@
       ],
       "verification_method": "Primary documentation and original conditional paper derivation, independently reviewed; no SQL/native execution.",
       "publication_scope": "Optional existing-reader support in containing commit."
+    },
+    {
+      "id": "TASK-2026-0272",
+      "parent_task_id": "TASK-2026-0002",
+      "question": "查看制作中间结果时，怎样避免把预览操作误当作正式输出？",
+      "discipline": "TA",
+      "status": "published",
+      "priority": 75,
+      "priority_rationale": "以原作者历史生产取舍补充现有自动化职责，不扩成重复管线教程。",
+      "expected_artifact": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+      "acceptance": [
+        "相邻制作案例与队列去重",
+        "原作者全文文字阅读和历史边界",
+        "原创检查与项目事实分层",
+        "独立全文及增量审读",
+        "完整公开载荷与实际导航"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T17:17:52Z",
+      "next_action": "后续接入须按项目工具版本和实际输出验证，不把历史设置作为通用处方。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+        "管理档案/来源笔记/factorio-preview-render-output.json",
+        "管理档案/审查/制作预览与正式输出-增量审读.md"
+      ],
+      "verification_method": "Original production text and independent reader/source review; no images inspected or tools executed.",
+      "publication_scope": "Two paragraphs and bottom reference in existing TA reader, containing commit."
     }
   ],
   "execution_policy": {
