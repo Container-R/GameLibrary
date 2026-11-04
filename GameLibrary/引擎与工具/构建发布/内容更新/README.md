@@ -4,7 +4,7 @@
 
 从旧客户端与旧资源包出发，检查兼容、配套输入，以及更新下载与本地重建的不同成本。
 
-- [Unity Addressables内容更新与旧客户端兼容](Unity Addressables内容更新与旧客户端兼容.md)
+- [Unity Addressables内容更新与旧客户端兼容](Unity%20Addressables内容更新与旧客户端兼容.md)
 
 - [Zstandard旧资源包为什么还需要配套的压缩字典](Zstandard旧资源包为什么还需要配套的压缩字典.md)：区分压缩帧的字典编号与旧包实际依赖的字典内容。
 
