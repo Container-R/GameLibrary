@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261104T165213Z-tcp-message-boundaries",
-  "last_real_progress_at": "2026-11-04T16:52:13Z",
-  "last_commit_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+  "last_run_id": "20261104T170148Z-sqlite-replace-related-rows",
+  "last_real_progress_at": "2026-11-04T17:01:48Z",
+  "last_commit_sha": "e55d142b249edb85128f63e817f2d8279dacb5eb",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
-    "latest_verified_content_sha": "e48015afe3b01b50b3e0cd1ee9b7a772c87499ed",
+    "last_verified_head_sha": "e55d142b249edb85128f63e817f2d8279dacb5eb",
+    "latest_verified_content_sha": "e55d142b249edb85128f63e817f2d8279dacb5eb",
     "reader_books_total": 99,
     "post_baseline_research_books": 44,
-    "scope": "One optional TCP framing support and existing conditional reader entries; no new book or execution.",
+    "scope": "One optional SQLite write-semantics support and existing reader entry; no new book or execution.",
     "status": "Support and entry belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
