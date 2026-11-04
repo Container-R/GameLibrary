@@ -1,0 +1,18 @@
+{
+  "support": "管理档案/支持资料/屏幕还没显示死亡，为什么开火已经来不及.md",
+  "support_sha256": "535aeea88ae5f33431b1202a92f1af290c2c357a77587a2ec22ae7ddc26ac303",
+  "host": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+  "host_sha256": "0e4789d06c480ccccd334636681a7fc7cf19b14e897ba07ad7ece48e752cf9a0",
+  "review": "管理档案/审查/射击时间表-来源与读者审查.md",
+  "read_date": "2026-11-04",
+  "source": {
+    "bibliographic_reference": "Support reference [1]",
+    "url": "https://www.riotgames.com/en/news/peeking-valorants-netcode",
+    "article_date": "2020-07-28",
+    "reading_scope": "Relevant original technical text and three static images: netcode2.png, netcodealg1.png, netcodealg2.png. No GIF or current implementation inspection.",
+    "identity_limit": "Dated developer article, not a fixed code revision or current product guarantee."
+  },
+  "analysis": "Original fixed-input timeline and arithmetic only.",
+  "verification": "Independent complete reader/source and arithmetic review; no network, engine or player test.",
+  "publication_scope": "Support and one host link; no original images or cached article."
+}

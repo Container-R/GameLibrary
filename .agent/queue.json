@@ -8864,6 +8864,37 @@
         "管理档案/审查/合批与实例数据-来源与读者审查.md",
         "管理档案/来源笔记/batch-instance-data.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0252",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Selected original text/images and independent complete reader/arithmetic review; no execution.",
+      "publication_scope": "Support and host link in containing commit.",
+      "question": "如何逐行核对本例235、240和270三个时刻的不同用途？",
+      "discipline": "NET",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "为已有移动预测读者补充一个有限时间表示例。",
+      "expected_artifact": "管理档案/支持资料/屏幕还没显示死亡，为什么开火已经来不及.md",
+      "acceptance": [
+        "原始相关文字与静态图核对",
+        "原创输入和来源事实分开",
+        "完整支持及宿主独立审读",
+        "导航和完整公开载荷检查"
+      ],
+      "source_leads": [
+        "https://www.riotgames.com/en/news/peeking-valorants-netcode"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T06:31:15Z",
+      "next_action": "只按具体证据补充，不把本例扩成当前产品的网络性能结论。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/屏幕还没显示死亡，为什么开火已经来不及.md",
+        "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+        "管理档案/审查/射击时间表-来源与读者审查.md",
+        "管理档案/来源笔记/shot-deadline-timeline.json"
+      ]
     }
   ],
   "execution_policy": {

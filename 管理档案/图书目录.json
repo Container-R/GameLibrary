@@ -1354,7 +1354,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "3ef7aeb65c063a50280e51ec2467848951dd8340442f616b03a820a9f72e2461",
+      "reader_sha256": "0e4789d06c480ccccd334636681a7fc7cf19b14e897ba07ad7ece48e752cf9a0",
       "review_paths": [
         "管理档案/审查/快照插值时间-来源与读者审查.md",
         "管理档案/审查/既有命中回溯支持-读者入口审查.md",
@@ -1401,6 +1401,13 @@
         "source_record": "管理档案/来源笔记/snapshot-interpolation-time.json",
         "review": "管理档案/审查/快照插值时间-来源与读者审查.md",
         "scope": "Finite four-timestamp ambiguity in existing interpolation support; host unchanged, no new book/support or execution."
+      },
+      "shot_timeline_support": {
+        "path": "管理档案/支持资料/屏幕还没显示死亡，为什么开火已经来不及.md",
+        "sha256": "535aeea88ae5f33431b1202a92f1af290c2c357a77587a2ec22ae7ddc26ac303",
+        "review": "管理档案/审查/射击时间表-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/shot-deadline-timeline.json",
+        "scope": "One optional original paper timeline, not a network test or current product certification."
       }
     },
     {
@@ -3015,7 +3022,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "69949aa34b16073e541148d269a76829955b7bad",
+  "publication_base_sha": "2e890ad1d03e491678dc92d9df4a30371d0a1112",
   "accounted_for_original_items": 55,
   "reader_books_total": 95,
   "post_baseline_research_books": 40,
