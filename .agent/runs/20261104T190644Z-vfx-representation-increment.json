@@ -1,0 +1,29 @@
+{
+  "run_id": "20261104T190644Z-vfx-representation-increment",
+  "base_sha": "941037930f2c6dbc310272e1b08fcc9bb46db282",
+  "task_ids": [
+    "TASK-2026-0074"
+  ],
+  "outcome": "Existing VFX reader production-example increment; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 272,
+  "artifact_paths": [
+    "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
+    "管理档案/研究记录/source-notes/real-time-vfx-artist-role.md",
+    "管理档案/审查/预警表示方式-来源与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "executions": 0,
+    "independent_complete_reader_and_source_review": true
+  },
+  "previous_readback": {
+    "sha": "941037930f2c6dbc310272e1b08fcc9bb46db282",
+    "changed_files": 20,
+    "remote_route_edges": 19,
+    "scope": "Existing SQLite support finite native observation package and1850 public audit summary."
+  }
+}

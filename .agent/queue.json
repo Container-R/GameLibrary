@@ -2851,7 +2851,8 @@
       "expected_artifact": "Source-backed VFX artist role and original unexecuted gameplay-signal handoff",
       "artifact_paths": [
         "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
-        "管理档案/研究记录/source-notes/real-time-vfx-artist-role.md"
+        "管理档案/研究记录/source-notes/real-time-vfx-artist-role.md",
+        "管理档案/审查/预警表示方式-来源与读者审查.md"
       ],
       "acceptance": [
         "Read original Japanese BNS project account and English League/VALORANT developer articles",
@@ -2861,7 +2862,7 @@
         "Independently review source alignment and validate final navigation without duplicating performance/asset protocols"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T00:36:56.701815Z",
+      "last_progress_at": "2026-11-04T19:06:44Z",
       "next_action": "Preserve historical source and unexecuted workflow scope; concrete visual/player validation requires a separate accepted protocol",
       "blockers": [],
       "completed_at": "2026-11-01T00:38:21.006705Z",
@@ -2879,7 +2880,12 @@
           "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
           "sha256": "6e24b059104293dff7075f3874c6271f89adbd8af9e1a0c211ff8c899e4aa05e"
         }
-      ]
+      ],
+      "representation_increment": {
+        "reader": "GameLibrary/视觉特效/特效制作/岗位与协作/实时特效如何兼顾表现与玩法信息.md",
+        "review": "管理档案/审查/预警表示方式-来源与读者审查.md",
+        "scope": "A short historical cue-representation tradeoff within existing role reader; not a new discovery or measured improvement."
+      }
     },
     {
       "id": "TASK-2026-0075",
