@@ -1,0 +1,59 @@
+{
+  "read_date_utc": "2026-11-04",
+  "host": "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
+  "host_sha256": "b30d079d4750e26ad60daf5eeeecd8caabb6848c18f659c725c0ec335bf8990b",
+  "support": "管理档案/支持资料/相机距离没变，为什么模型已经换了细节级别.md",
+  "support_sha256": "f472371f9e767228b4b3980cfe05d62ab196ae7098dff5545dddd592ae26fde7",
+  "review": "管理档案/审查/模型LOD屏幕高度-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Unity",
+      "title": "LOD Group component reference",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/analysis/graphics-performance-profiling/simplifying-distant-meshes-with-level-of-detail-lod/class-lodgroup",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    },
+    {
+      "author": "Unity",
+      "title": "LOD.screenRelativeTransitionHeight",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/lod/screenrelativetransitionheight",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    },
+    {
+      "author": "Unity",
+      "title": "Calculate the size of the frustum at a distance",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/cameras/camera-view/frustum-size-at-distance",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    },
+    {
+      "author": "Unity",
+      "title": "Introduction to the camera view",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/cameras/camera-view/understanding-frustum",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    },
+    {
+      "author": "Unity",
+      "title": "LODGroup.size",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/lodgroup/size",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    },
+    {
+      "author": "Unity",
+      "title": "Camera.fieldOfView",
+      "version": "6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/camera/fieldofview",
+      "scope": "Official page body read; adopted parameter/projection definitions, not images or execution."
+    }
+  ],
+  "verification": "Independent full reader/source review and elementary original projection arithmetic only.",
+  "limits": [
+    "Front-facing common-depth plane is not arbitrary native LOD bounds or silhouette computation",
+    "Hypothetical15percent choice is not a Unity execution",
+    "Height ratio is not area, triangle reduction, visual error or GPU cost",
+    "No universal threshold, cross-engine, crossfade or hysteresis guarantee"
+  ]
+}

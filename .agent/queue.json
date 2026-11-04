@@ -119,7 +119,7 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": "2026-10-31T13:08:23.726120Z",
-      "last_progress_at": "2026-11-03T11:04:05Z",
+      "last_progress_at": "2026-11-04T03:42:40Z",
       "next_action": "按版本变化与实际集成证据维护",
       "blockers": [],
       "commit_sha": "a4df0d93c3bd3724c09ce321b7497c78e8474c1e",
@@ -127,7 +127,11 @@
         "GameLibrary/技术美术/美术管线/岗位与协作/技术美术如何连接美术制作与引擎.md",
         "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "管理档案/审查/植被控制数据-来源与读者审查.md",
-        "管理档案/来源笔记/crysis-vegetation-control-data.json"
+        "管理档案/来源笔记/crysis-vegetation-control-data.json",
+        "GameLibrary/技术美术/环境管线/README.md",
+        "管理档案/支持资料/相机距离没变，为什么模型已经换了细节级别.md",
+        "管理档案/审查/模型LOD屏幕高度-来源与读者审查.md",
+        "管理档案/来源笔记/model-lod-screen-height.json"
       ],
       "historical_artifacts": [
         {
@@ -142,6 +146,12 @@
         "review": "管理档案/审查/植被控制数据-来源与读者审查.md",
         "source": "管理档案/来源笔记/crysis-vegetation-control-data.json",
         "scope": "Primary production account and independently reviewed original sinusoid illustration and proposed authoring checks; no execution."
+      },
+      "model_lod_support": {
+        "support": "管理档案/支持资料/相机距离没变，为什么模型已经换了细节级别.md",
+        "review": "管理档案/审查/模型LOD屏幕高度-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/model-lod-screen-height.json",
+        "verification": "Source-backed parameter interpretation and original arithmetic, no engine execution."
       }
     },
     {
