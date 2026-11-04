@@ -1,0 +1,34 @@
+{
+  "read_date_utc": "2026-11-04",
+  "host": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+  "support": "管理档案/支持资料/平均十次能获得的材料，为什么不能保证十次内拿到.md",
+  "support_sha256": "a601debf23d271edb260edf0a799c51ea5fbfb02d7545ba7909fdb13d5336933",
+  "review": "管理档案/审查/首份材料等待要求-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "UC Berkeley CS70",
+      "title": "Geometric and Poisson Distributions, Note19",
+      "edition": "Spring2024",
+      "url": "https://sp24.eecs70.org/assets/pdf/notes/n19.pdf",
+      "reading": "Section1, Section1.1 tail sum and expectation, Section1.2 memorylessness; printed1–4 relevant text, not images or whole9pages."
+    },
+    {
+      "authors": [
+        "Jeremy Orloff",
+        "Jonathan Bloom"
+      ],
+      "title": "18.05 All Probability Reading",
+      "edition": "Spring2022",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_probability.pdf",
+      "reading": "Class4 discrete variables Section3.4 physical36–37; expected value linearity physical42 and Example9 physical43; not whole112pages."
+    }
+  ],
+  "verification": "Original finite example, independent exact-expression arithmetic and complete reader review; no simulation or game execution.",
+  "limits": [
+    "Total attempts include first success",
+    "Fixed independent rule differs from counter-dependent guarantee",
+    "Model probability is not measured player prevalence",
+    "Attempts are not elapsed minutes or actual continued participation",
+    "No recommendation about monetization or reward design quality"
+  ]
+}

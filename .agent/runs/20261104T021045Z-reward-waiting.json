@@ -1,0 +1,32 @@
+{
+  "run_id": "20261104T021045Z-reward-waiting",
+  "base_sha": "a0a3dbf2c504d9ef09aa38fbb3f35d72b031d1eb",
+  "task_ids": [
+    "TASK-2026-0247"
+  ],
+  "outcome": "Support and public progress in containing commit; actual ref and file readback remain to be verified after publication.",
+  "reader_books_total": 93,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 38,
+  "task_count": 247,
+  "artifact_paths": [
+    "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+    "GameLibrary/游戏设计/系统设计/成长与经济/README.md",
+    "管理档案/支持资料/平均十次能获得的材料，为什么不能保证十次内拿到.md",
+    "管理档案/审查/首份材料等待要求-来源与读者审查.md",
+    "管理档案/来源笔记/first-material-waiting.json"
+  ],
+  "scope": "Finite first-material waiting support attached to existing single-player economy reader; no new book or game execution.",
+  "checks": {
+    "new_game_runs": 0,
+    "random_simulations": 0,
+    "independent_arithmetic": "Exact-expression rational arithmetic; capped expectation checked by tail sum and PMF sum",
+    "independent_reader": "Complete hypothetical progression dependency and original-source scope accepted"
+  },
+  "previous_content_readback": {
+    "sha": "a0a3dbf2c504d9ef09aa38fbb3f35d72b031d1eb",
+    "changed_files_exact": 9,
+    "actual_remote_edges": 10,
+    "canonical_blobs_matched": 1833
+  }
+}

@@ -1026,10 +1026,10 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/design/single-player-economy-ledger.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_body_sha256": "3c5126526708d59148102e9ac5f3ecea9d1443be64c236a2f3eacf4b2f148e34",
-      "latest_review_path": "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
-      "source_record": "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
-      "latest_supplement": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately.",
+      "reader_body_sha256": "9866b67d919a5690a93a41c91185e68183dc7c6e56e53f5cba6468489044452d",
+      "latest_review_path": "管理档案/审查/首份材料等待要求-来源与读者审查.md",
+      "source_record": "管理档案/来源笔记/first-material-waiting.json",
+      "latest_supplement": "Optional first-material waiting explanation distinguishes mean, finite-deadline probability and deterministic cap; no new game execution.",
       "batch_rounding_support": {
         "path": "管理档案/支持资料/同样十件材料，分两次兑换为什么少了一枚金币.md",
         "sha256": "307b4e4937edc548b153ddf80a648da6623db7a9c4a1d543336886805e697c7b",
@@ -1038,8 +1038,22 @@
         "scope": "Primary definitions and independently reviewed original finite arithmetic and remainder invariant; no execution."
       },
       "review_paths": [
-        "管理档案/审查/分批兑换与取整-来源与读者审查.md"
-      ]
+        "管理档案/审查/分批兑换与取整-来源与读者审查.md",
+        "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
+        "管理档案/审查/首份材料等待要求-来源与读者审查.md"
+      ],
+      "reader_sha256": "9866b67d919a5690a93a41c91185e68183dc7c6e56e53f5cba6468489044452d",
+      "material_waiting_support": {
+        "support": "管理档案/支持资料/平均十次能获得的材料，为什么不能保证十次内拿到.md",
+        "source_record": "管理档案/来源笔记/first-material-waiting.json",
+        "review": "管理档案/审查/首份材料等待要求-来源与读者审查.md",
+        "scope": "Mean, finite-deadline probability and deterministic cap in a non-paid first-material model; no new book."
+      },
+      "wal_read_upgrade_support": {
+        "source_record": "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
+        "review": "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
+        "scope": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately."
+      }
     },
     {
       "internal_id": "SOL-ENGINE-002",
@@ -2895,7 +2909,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "164827acdb39a95797d64f82a50f4ed51d56ed0e",
+  "publication_base_sha": "a0a3dbf2c504d9ef09aa38fbb3f35d72b031d1eb",
   "accounted_for_original_items": 55,
   "reader_books_total": 93,
   "post_baseline_research_books": 38,
