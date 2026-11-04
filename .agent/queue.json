@@ -9027,6 +9027,33 @@
         "管理档案/研究记录/resampler-stream-linear-20261104/fixture/results/run1.json",
         "管理档案/研究记录/resampler-stream-linear-20261104/fixture/results/run2.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0257",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Original source reading, independent complete reader/diff review and finite paper-model algebra; no rendering experiment.",
+      "publication_scope": "Updated existing support and public progress in containing commit.",
+      "question": "重建位置之后，哪些差别仍可能已经在存储时丢失？",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 82,
+      "priority_rationale": "补充既有读者说明中的具体边界，不新建同义书目。",
+      "expected_artifact": "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+      "acceptance": [
+        "旧知识与范围保留",
+        "原创假设及代数独立复核",
+        "原始来源与完整读者审查",
+        "完整公开载荷及导航核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T09:11:13Z",
+      "next_action": "按实际工程问题检查适用性，不将纸算当作渲染结果。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+        "管理档案/审查/深度存储粒度-来源与读者审查.md",
+        "管理档案/来源笔记/depth-storage-precision.json"
+      ]
     }
   ],
   "execution_policy": {
