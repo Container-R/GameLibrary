@@ -1,0 +1,21 @@
+{
+  "read_on": "2026-11-04",
+  "reader": "管理档案/支持资料/构建路径映射.md",
+  "reader_sha256": "b7691e4f2b0b350da3e1ac6af3d066f47b2820e6b9d5e341d29e934b390e3072",
+  "review": "管理档案/审查/构建路径映射-来源与读者审查.md",
+  "sources": [
+    {
+      "url": "https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Debugging-Options.html",
+      "scope": "fdebug-prefix-map entry only"
+    },
+    {
+      "url": "https://gcc.gnu.org/onlinedocs/gcc-14.2.0/gcc/Preprocessor-Options.html",
+      "scope": "fmacro-prefix-map entry only"
+    },
+    {
+      "url": "https://reproducible-builds.org/docs/build-path/",
+      "scope": "Complete technical body and footnote; publication date not displayed"
+    }
+  ],
+  "verification_method": "Independent complete reader and cited-source review; no execution."
+}
