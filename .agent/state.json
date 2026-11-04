@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261104T180105Z-voice-priority-budget",
-  "last_real_progress_at": "2026-11-04T18:01:05Z",
-  "last_commit_sha": "1f6fc2391b9562c404ce04e4e88007e6f377aa8a",
+  "last_run_id": "20261104T183448Z-visibility-send-margin",
+  "last_real_progress_at": "2026-11-04T18:34:48Z",
+  "last_commit_sha": "f802f48ad21d13daa6cd05ffd54e431a74b498b7",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "1f6fc2391b9562c404ce04e4e88007e6f377aa8a",
-    "latest_verified_content_sha": "1f6fc2391b9562c404ce04e4e88007e6f377aa8a",
+    "last_verified_head_sha": "f802f48ad21d13daa6cd05ffd54e431a74b498b7",
+    "latest_verified_content_sha": "f802f48ad21d13daa6cd05ffd54e431a74b498b7",
     "reader_books_total": 99,
     "post_baseline_research_books": 44,
-    "scope": "One optional voice-priority support for existing loop-restoration reader; no new book, task or execution.",
+    "scope": "One optional visibility-send-margin support for existing remote-player reader; no new book, task or execution.",
     "status": "Support and existing-reader entry belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",

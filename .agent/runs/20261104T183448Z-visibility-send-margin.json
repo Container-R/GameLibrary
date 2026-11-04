@@ -1,0 +1,30 @@
+{
+  "run_id": "20261104T183448Z-visibility-send-margin",
+  "base_sha": "f802f48ad21d13daa6cd05ffd54e431a74b498b7",
+  "task_ids": [
+    "TASK-2026-0005"
+  ],
+  "outcome": "Existing network reader support in containing commit; exact remote readback remains required.",
+  "reader_books_total": 99,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 44,
+  "task_count": 272,
+  "artifact_paths": [
+    "管理档案/支持资料/敌人刚绕出墙角，为什么此时才发送状态仍会突现.md",
+    "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+    "管理档案/来源笔记/valorant-visibility-send-margin.json",
+    "管理档案/审查/可见性与发送时机-来源与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "executions": 0,
+    "independent_source_and_complete_reader_review": true
+  },
+  "previous_readback": {
+    "sha": "f802f48ad21d13daa6cd05ffd54e431a74b498b7",
+    "changed_files": 8,
+    "remote_route_edges": 8,
+    "scope": "Voice-priority support exact remote readback; no middleware execution or listening."
+  }
+}

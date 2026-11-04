@@ -1,0 +1,54 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/敌人刚绕出墙角，为什么此时才发送状态仍会突现.md",
+  "support_sha256": "b8bb0b51b643a3d44a2ff7b892d3c0fb87eb8a2012ec365d8a9e13a1fb48f408",
+  "host": "GameLibrary/网络与在线服务/实时同步/移动预测/客户端移动预测与服务器纠正.md",
+  "review": "管理档案/审查/可见性与发送时机-来源与读者审查.md",
+  "source": {
+    "author": "Paul “Arkem” Chamberlain",
+    "title": "Demolishing Wallhacks with VALORANT’s Fog of War",
+    "date": "2020-04-14",
+    "url": "https://www.riotgames.com/en/news/demolishing-wallhacks-valorants-fog-war",
+    "adopted_sections": [
+      "Server Visibility Issues",
+      "Attempt #2",
+      "Server-Side Occlusion Culling"
+    ],
+    "identity": "Historical first-party development account, not a current implementation/version guarantee. Attempt #2 is an iteration, not evidence that every prototype detail persisted unchanged in the final production pipeline.",
+    "organization": "Riot Games",
+    "reading_scope": "Complete article prose through Final Thoughts and Looking forward, excluding appended news; five original explanatory PNGs inspected."
+  },
+  "original_figure_check": [
+    {
+      "filename": "valanticheat-3.png",
+      "url": "https://www.riotgames.com/darkroom/original/50f4b342435fb7d1e44f08c023513aad:72d3641fcc629a1f101b280d95f9234a/valanticheat-3.png"
+    },
+    {
+      "filename": "valanticheat-4.png",
+      "url": "https://www.riotgames.com/darkroom/original/92bb1dbd432dc5d8032802d82537d6c8:fe735b5df35697f9bea9fc179bdda129/valanticheat-4.png"
+    },
+    {
+      "filename": "valanticheat-5.png",
+      "url": "https://www.riotgames.com/darkroom/original/040b1b8ece832a8338877d38e476697d:12afc799951a3daec4dba6ee109671fb/valanticheat-5.png"
+    },
+    {
+      "filename": "valanticheat-6.png",
+      "url": "https://www.riotgames.com/darkroom/original/a76c420a7268a5b5968679c2dbdc45bf:4f4bae8b54ffb6eed435903573c4d882/valanticheat-6.png"
+    },
+    {
+      "filename": "valanticheat-7.png",
+      "url": "https://www.riotgames.com/darkroom/original/6f0b667579435a2b532a799e2f587b64:e9d7a0ce4fe507b20db0fc68e1f82956/valanticheat-7.png"
+    }
+  ],
+  "figure_limits": "Explanatory diagrams only; no image reproduction or numerical parameter inference.",
+  "research_scope": "Reader completion of previously deferred research; not first discovery or new book.",
+  "original_reasoning": "Shared time basis, intended display instant and positive preparation time; earlier geometric visibility plus sufficient existing display delay is a different sending arrangement.",
+  "verification_method": "Original-source and diagram inspection, independent complete reader review and corrected time distinction; no execution.",
+  "limits": [
+    "Not a complete final VALORANT implementation",
+    "No conversion of ping into a fixed one-way or full preparation budget",
+    "No universal look-ahead, PVS construction or dynamic-occlusion algorithm",
+    "No guarantee against all pop-in or information exposure",
+    "No performance, testing or security-effectiveness result adopted"
+  ]
+}

@@ -1443,7 +1443,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "0e4789d06c480ccccd334636681a7fc7cf19b14e897ba07ad7ece48e752cf9a0",
+      "reader_sha256": "cddf77b37cf8af584c3256b2cf3f795e8189ac74c4f82a581c406b376630a8ae",
       "review_paths": [
         "管理档案/审查/快照插值时间-来源与读者审查.md",
         "管理档案/审查/既有命中回溯支持-读者入口审查.md",
@@ -1497,6 +1497,13 @@
         "review": "管理档案/审查/射击时间表-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/shot-deadline-timeline.json",
         "scope": "One optional original paper timeline, not a network test or current product certification."
+      },
+      "visibility_send_margin_support": {
+        "path": "管理档案/支持资料/敌人刚绕出墙角，为什么此时才发送状态仍会突现.md",
+        "sha256": "b8bb0b51b643a3d44a2ff7b892d3c0fb87eb8a2012ec365d8a9e13a1fb48f408",
+        "review": "管理档案/审查/可见性与发送时机-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/valorant-visibility-send-margin.json",
+        "scope": "Optional sending-time versus spatial-inclusion distinction; existing prediction and state-restoration scope preserved."
       }
     },
     {
