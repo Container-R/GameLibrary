@@ -8141,7 +8141,11 @@
       "artifact_paths": [
         "GameLibrary/引擎与工具/资产工具/资产查询/Horizon怎样让工具查询资产关系，而不必先读取全部内容.md",
         "管理档案/来源笔记/horizon-asset-query.json",
-        "管理档案/审查/Horizon资产查询-来源与读者审查.md"
+        "管理档案/审查/Horizon资产查询-来源与读者审查.md",
+        "GameLibrary/引擎与工具/资产工具/资产查询/README.md",
+        "管理档案/支持资料/目录监视返回成功，为什么资产索引仍会漏更新.md",
+        "管理档案/审查/目录监视与索引恢复-来源与读者审查.md",
+        "管理档案/来源笔记/directory-watch-index-completeness.json"
       ],
       "acceptance": [
         "Deduplicate current reader coverage",
@@ -8150,11 +8154,17 @@
         "Independent complete reader/source and actual navigation review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-03T18:08:21Z",
+      "last_progress_at": "2026-11-04T03:24:31Z",
       "next_action": "Maintain historical scope and distinguish relationship queries from full content, conversion and cache coherence.",
       "blockers": [],
       "verification_method": "Original 84-slide author presentation and hypothetical reader example, not a reproduced production system.",
-      "publication_scope": "Reader, navigation, source, review, inventory and progress belong to containing commit."
+      "publication_scope": "Reader, navigation, source, review, inventory and progress belong to containing commit.",
+      "watch_completeness_support": {
+        "support": "管理档案/支持资料/目录监视返回成功，为什么资产索引仍会漏更新.md",
+        "review": "管理档案/审查/目录监视与索引恢复-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/directory-watch-index-completeness.json",
+        "verification": "Official API and original conditional reasoning, no Windows execution."
+      }
     },
     {
       "id": "TASK-2026-0228",

@@ -1,0 +1,25 @@
+{
+  "read_date_utc": "2026-11-04",
+  "host": "GameLibrary/引擎与工具/资产工具/资产查询/Horizon怎样让工具查询资产关系，而不必先读取全部内容.md",
+  "host_sha256": "018504e8691f28dbaaaf74d3d190003c5bf5f7e629f148ab2f321790aabba0c9",
+  "support": "管理档案/支持资料/目录监视返回成功，为什么资产索引仍会漏更新.md",
+  "support_sha256": "07366ee5a165f49aeb889709d6f960d0646dbc80011d46a9f7702e51b0bed6a7",
+  "review": "管理档案/审查/目录监视与索引恢复-来源与读者审查.md",
+  "sources": [
+    {
+      "author": "Microsoft",
+      "title": "ReadDirectoryChangesW function (winbase.h)",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-readdirectorychangesw",
+      "page_updated": "2022-09-15",
+      "reading": "Complete API page; Parameters, Return value and Remarks adopted. Rolling documentation, not an identified Windows build."
+    }
+  ],
+  "verification": "Original-source behavior and independently reviewed hypothetical asset-index sequence; not execution.",
+  "limits": [
+    "Synchronous local single-directory case only",
+    "Zero bytes do not uniquely diagnose overflow",
+    "Enumeration recovers names, not content relationships or a concurrent consistent snapshot",
+    "No fixed batch size or guaranteed notification timing",
+    "No claim about current Horizon implementation"
+  ]
+}

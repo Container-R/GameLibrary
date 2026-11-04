@@ -2883,7 +2883,14 @@
         "管理档案/审查/Horizon资产查询-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/horizon-asset-query.json",
-      "reader_sha256": "de6f0f26687d691908d107877088606a62bded841aff6407bd73f8ad6af6ca56"
+      "reader_sha256": "018504e8691f28dbaaaf74d3d190003c5bf5f7e629f148ab2f321790aabba0c9",
+      "watch_completeness_support": {
+        "support": "管理档案/支持资料/目录监视返回成功，为什么资产索引仍会漏更新.md",
+        "support_sha256": "07366ee5a165f49aeb889709d6f960d0646dbc80011d46a9f7702e51b0bed6a7",
+        "review": "管理档案/审查/目录监视与索引恢复-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/directory-watch-index-completeness.json",
+        "scope": "Independent Windows synchronous notification example; not a current Horizon implementation or runtime validation."
+      }
     },
     {
       "internal_id": "CASE-TA-002",
@@ -2930,7 +2937,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "1e2aa2e3641352f2a49e6956b6450a6907a6cf73",
+  "publication_base_sha": "d77c74e71392bb80a47fceba1b5b9f6d127956d5",
   "accounted_for_original_items": 55,
   "reader_books_total": 93,
   "post_baseline_research_books": 38,
