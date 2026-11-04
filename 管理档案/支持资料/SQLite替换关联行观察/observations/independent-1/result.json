@@ -1,0 +1,24 @@
+{
+  "child_exit_confirmed": true,
+  "cleanup_failures": [],
+  "copied_inputs_verified": true,
+  "environment_directory_count": 11,
+  "execution_scope": "independent_memory_replace_upsert_cascade_SQL",
+  "failure_category": null,
+  "inputs_sha256": {
+    "PROTOCOL.md": "fd5ce9826cb1a8b9621c67524b5df78d24243fb4db3e890e22c97963cceda513",
+    "driver.py": "1f20139d9eb4d2985142fdd1fd718294aadee42564327c0223a903cae3ad8307",
+    "expected.json": "570d8c0786bbb59db7761abce6a95d56f76a4141f4c532dceaf24dca49d7b14a",
+    "runner.py": "dd4076a88aa15dd80989a24bec8e28a6837709a1c91dfa97653651e78928b4d2"
+  },
+  "manifest_sha256": "e5961d67d7382f9bbc44506fbd2754aa9ad86e210ab923128aecbb98bbcf4de2",
+  "output_sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96",
+  "post_execution_inputs_verified": true,
+  "post_kill_wait_seconds": 2,
+  "python_version": "3.12.14",
+  "returncode": 0,
+  "sqlite_version": "3.53.1",
+  "status": "PASS",
+  "stderr_empty": true,
+  "timeout_seconds": 15
+}

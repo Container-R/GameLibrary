@@ -2730,7 +2730,7 @@
         "管理档案/审查/SQLite延迟外键-来源执行与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
-      "reader_sha256": "40ae9d89e18be99acd293eb2b3a13bb117db7fec189eb02465e9ad52159840bb",
+      "reader_sha256": "29e7384e43dbde23e6d91c5ce90f1ffcc656e1b18120b79eddc225297e6b0aa0",
       "support_path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md",
       "c_backup_completion_increment": {
         "scope": "Source-only C step/finish distinction and hypothetical cancellation versus completion; no new execution.",
@@ -2771,10 +2771,11 @@
       },
       "replace_related_rows_support": {
         "path": "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md",
-        "sha256": "8e46695083b21ba627289474138595fb3da3a1bba1559b25dcb8fdde549cafb0",
-        "review": "管理档案/审查/SQLite替换与关联行-来源与读者审查.md",
+        "sha256": "1fc046acdf75a1dbd863ea1ab00af53cba5f4d763485fabc7b35bdffd9da89ae",
+        "review": "管理档案/审查/SQLite替换关联行-有限执行与读者审查.md",
         "source_record": "管理档案/来源笔记/sqlite-replace-related-rows.json",
-        "scope": "Optional write-semantics example before backup; no new execution or change to existing observations."
+        "scope": "One author and one independent same-environment two-branch memory observation; exact original schema and literal SQL, not blind or cross-platform.",
+        "experiment": "管理档案/支持资料/SQLite替换关联行观察/README.md"
       }
     },
     {

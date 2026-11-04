@@ -1,0 +1,55 @@
+{
+  "purpose": "Exact technical reproduction inputs and outputs; no private logs. The frozen protocol preparation status is retained unchanged.",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 4395,
+      "sha256": "1998578b1acb5221adf9ae5cc44cf29f8d98151713996f3b5f2f200887f1d3a4"
+    },
+    {
+      "path": "fixture/PROTOCOL.md",
+      "size": 8841,
+      "sha256": "fd5ce9826cb1a8b9621c67524b5df78d24243fb4db3e890e22c97963cceda513"
+    },
+    {
+      "path": "fixture/driver.py",
+      "size": 5428,
+      "sha256": "1f20139d9eb4d2985142fdd1fd718294aadee42564327c0223a903cae3ad8307"
+    },
+    {
+      "path": "fixture/expected.json",
+      "size": 1119,
+      "sha256": "570d8c0786bbb59db7761abce6a95d56f76a4141f4c532dceaf24dca49d7b14a"
+    },
+    {
+      "path": "fixture/manifest.json",
+      "size": 374,
+      "sha256": "e5961d67d7382f9bbc44506fbd2754aa9ad86e210ab923128aecbb98bbcf4de2"
+    },
+    {
+      "path": "fixture/runner.py",
+      "size": 9383,
+      "sha256": "dd4076a88aa15dd80989a24bec8e28a6837709a1c91dfa97653651e78928b4d2"
+    },
+    {
+      "path": "observations/author-1/output.json",
+      "size": 1221,
+      "sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96"
+    },
+    {
+      "path": "observations/author-1/result.json",
+      "size": 999,
+      "sha256": "05882f4c40af6077a50c40043dcdd41825bcbb79219e8ca41b005a5596b0fd89"
+    },
+    {
+      "path": "observations/independent-1/output.json",
+      "size": 1221,
+      "sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96"
+    },
+    {
+      "path": "observations/independent-1/result.json",
+      "size": 999,
+      "sha256": "05882f4c40af6077a50c40043dcdd41825bcbb79219e8ca41b005a5596b0fd89"
+    }
+  ]
+}

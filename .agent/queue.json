@@ -9513,17 +9513,26 @@
         "完整公开载荷与往返入口检查"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-04T17:01:48Z",
-      "next_action": "实际接入需另核最终SQL、表结构、版本、连接配置及用户触发器；保持未执行边界。",
+      "last_progress_at": "2026-11-04T18:56:32Z",
+      "next_action": "Maintain this exact-schema observation separately from production storage, user-trigger and concurrency behavior.",
       "blockers": [],
       "artifact_paths": [
         "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md",
         "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
         "管理档案/来源笔记/sqlite-replace-related-rows.json",
-        "管理档案/审查/SQLite替换与关联行-来源与读者审查.md"
+        "管理档案/审查/SQLite替换与关联行-来源与读者审查.md",
+        "管理档案/审查/SQLite替换关联行-有限执行与读者审查.md",
+        "管理档案/支持资料/SQLite替换关联行观察/README.md",
+        "管理档案/支持资料/SQLite替换关联行观察/artifact-manifest.json"
       ],
-      "verification_method": "Primary documentation and original conditional paper derivation, independently reviewed; no SQL/native execution.",
-      "publication_scope": "Optional existing-reader support in containing commit."
+      "verification_method": "Official documentation and original example, now supplemented by one author and one independent same-environment execution of the exact two-branch in-memory fixture; not blind or cross-platform.",
+      "publication_scope": "Optional existing-reader support in containing commit.",
+      "native_observation": {
+        "package": "管理档案/支持资料/SQLite替换关联行观察/README.md",
+        "scope": "Independent in-memory databases, foreign_keys=1 and recursive_triggers=0; no user triggers, ORM, persistence or concurrency.",
+        "execution_count": 2,
+        "independent_run": "Same environment, known author result; separate fresh databases."
+      }
     },
     {
       "id": "TASK-2026-0272",

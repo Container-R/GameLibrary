@@ -1,0 +1,14 @@
+{
+  "checkpoints": [
+    {"branch":"replace","phase":"configured","foreign_keys":[[1]],"recursive_triggers":[[0]],"legacy_control":true,"isolation_level":null,"in_transaction":false},
+    {"branch":"replace","phase":"baseline","parents":[[41,8]],"children":[[41,"frost"]],"in_transaction":false},
+    {"branch":"replace","phase":"save_completed","statement_completed":true,"in_transaction":false},
+    {"branch":"replace","phase":"final","parents":[[41,9]],"children":[],"in_transaction":false},
+    {"branch":"replace","phase":"closed","connection_closed":true},
+    {"branch":"upsert","phase":"configured","foreign_keys":[[1]],"recursive_triggers":[[0]],"legacy_control":true,"isolation_level":null,"in_transaction":false},
+    {"branch":"upsert","phase":"baseline","parents":[[41,8]],"children":[[41,"frost"]],"in_transaction":false},
+    {"branch":"upsert","phase":"save_completed","statement_completed":true,"in_transaction":false},
+    {"branch":"upsert","phase":"final","parents":[[41,9]],"children":[[41,"frost"]],"in_transaction":false},
+    {"branch":"upsert","phase":"closed","connection_closed":true}
+  ]
+}

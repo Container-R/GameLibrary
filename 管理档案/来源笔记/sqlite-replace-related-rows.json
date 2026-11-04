@@ -1,7 +1,7 @@
 {
   "read_on": "2026-11-04",
   "support": "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md",
-  "support_sha256": "8e46695083b21ba627289474138595fb3da3a1bba1559b25dcb8fdde549cafb0",
+  "support_sha256": "1fc046acdf75a1dbd863ea1ab00af53cba5f4d763485fabc7b35bdffd9da89ae",
   "host": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
   "review": "管理档案/审查/SQLite替换与关联行-来源与读者审查.md",
   "sources": [
@@ -28,7 +28,7 @@
     }
   ],
   "source_identity": "Official rolling documents read on stated date; not a fixed runtime or implementation audit.",
-  "verification_method": "Original finite example and independent complete reader/source review; no SQL or database execution.",
+  "verification_method": "Official documentation and original example, now supplemented by one author and one independent same-environment execution of the exact two-branch in-memory fixture; not blind or cross-platform.",
   "example": {
     "initial_item": [
       41,
@@ -51,6 +51,21 @@
   "limits": [
     "No arbitrary ORM or UPSERT side-effect guarantee",
     "No production migration, recovery, concurrency or persistence validation",
-    "Existing native observations do not test this schema"
-  ]
+    "Previous WAL, backup and deferred-constraint observations remain separate"
+  ],
+  "initial_support_sha256": "8e46695083b21ba627289474138595fb3da3a1bba1559b25dcb8fdde549cafb0",
+  "initial_verification_method": "Original finite example and independent complete reader/source review; no SQL or database execution.",
+  "native_observation": {
+    "package": "管理档案/支持资料/SQLite替换关联行观察/README.md",
+    "review": "管理档案/审查/SQLite替换关联行-有限执行与读者审查.md",
+    "manifest_sha256": "e5961d67d7382f9bbc44506fbd2754aa9ad86e210ab923128aecbb98bbcf4de2",
+    "output_sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96",
+    "runs": 2,
+    "branches_per_run": 2,
+    "checkpoints_per_run": 10,
+    "python_version_self_report": "3.12.14",
+    "sqlite_version_self_report": "3.53.1",
+    "provenance": "Installed runtime self-report only; not official binary or fixed-source authentication.",
+    "scope": "Independent in-memory databases, foreign_keys=1 and recursive_triggers=0; no user triggers, ORM, persistence or concurrency."
+  }
 }
