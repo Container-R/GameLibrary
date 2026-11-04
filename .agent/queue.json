@@ -8833,6 +8833,37 @@
         "管理档案/审查/规划条件对象范围-来源与读者审查.md",
         "管理档案/来源笔记/planning-fact-object-scope.json"
       ]
+    },
+    {
+      "id": "TASK-2026-0251",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Selected original text and independent complete reader/finite table review; no execution.",
+      "publication_scope": "Support and host link in containing commit.",
+      "question": "移动屋檐或更改庭院柱子的材质，会改变表中哪些行？",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 83,
+      "priority_rationale": "用四行虚构数据演示岗位文章提出的检查方法。",
+      "expected_artifact": "管理档案/支持资料/合在一批绘制的物体，为什么仍需要各自的数据.md",
+      "acceptance": [
+        "原始相关文字核对",
+        "原创表格与历史说明分开",
+        "完整支持及宿主独立审读",
+        "导航和完整公开载荷检查"
+      ],
+      "source_leads": [
+        "https://advances.realtimerendering.com/s2015/aaltonenhaar_siggraph2015_combined_final_footer_220dpi.pdf"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T06:04:20Z",
+      "next_action": "仅按具体接入证据补充，不把分组例子扩成完整渲染器。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/合在一批绘制的物体，为什么仍需要各自的数据.md",
+        "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+        "管理档案/审查/合批与实例数据-来源与读者审查.md",
+        "管理档案/来源笔记/batch-instance-data.json"
+      ]
     }
   ],
   "execution_policy": {

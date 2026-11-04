@@ -1,0 +1,23 @@
+{
+  "support": "管理档案/支持资料/合在一批绘制的物体，为什么仍需要各自的数据.md",
+  "support_sha256": "073ef52e5ff07216f1cef09207449490091c6da0b7b02fb58884891296b1068f",
+  "host": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "host_sha256": "71edf652bb8ce22a34dcf1820ff4fc75305f33d533833d7de6d9524e9a629f6e",
+  "review": "管理档案/审查/合批与实例数据-来源与读者审查.md",
+  "read_date": "2026-11-04",
+  "source": {
+    "bibliographic_reference": "Support reference [1]",
+    "url": "https://advances.realtimerendering.com/s2015/aaltonenhaar_siggraph2015_combined_final_footer_220dpi.pdf",
+    "official_course": "https://advances.realtimerendering.com/s2015/",
+    "selected_pdf_pages_one_based": [
+      12,
+      14
+    ],
+    "page_count": 60,
+    "reading_scope": "Selected original text, not complete visual review, video or source implementation.",
+    "identity_limit": "Direct course-linked PDF read through text extraction; no downloaded byte identity claimed."
+  },
+  "analysis": "Original four-instance grouping and row-specific changes under stated compatible opaque-input assumptions.",
+  "verification": "Independent complete reader/source and finite table review; no GPU or game execution.",
+  "publication_scope": "Support and optional host link only; no source slides, figures or extracted text."
+}

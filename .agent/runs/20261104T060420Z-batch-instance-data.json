@@ -1,0 +1,31 @@
+{
+  "run_id": "20261104T060420Z-batch-instance-data",
+  "base_sha": "69949aa34b16073e541148d269a76829955b7bad",
+  "task_ids": [
+    "TASK-2026-0251"
+  ],
+  "outcome": "Support, host link and public progress in containing commit; remote files and actual routes require readback.",
+  "reader_books_total": 95,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 40,
+  "task_count": 251,
+  "artifact_paths": [
+    "管理档案/支持资料/合在一批绘制的物体，为什么仍需要各自的数据.md",
+    "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+    "管理档案/审查/合批与实例数据-来源与读者审查.md",
+    "管理档案/来源笔记/batch-instance-data.json"
+  ],
+  "scope": "One finite supporting explanation and host link; no new reader book or runtime execution.",
+  "checks": {
+    "new_reader_bodies": 0,
+    "new_supports": 1,
+    "runtime_executions": 0,
+    "independent_reader": "Complete support and host, original selected text and finite table; not human usability testing."
+  },
+  "previous_content_readback": {
+    "sha": "69949aa34b16073e541148d269a76829955b7bad",
+    "changed_files_exact": 8,
+    "actual_remote_edges": 11,
+    "canonical_blobs_matched": 1874
+  }
+}

@@ -571,7 +571,7 @@
       "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
       "legacy_retention": "完整旧技术上下文仍归历史正文；当前深度入口承接为自然读者支持，历史审查绑定保持原范围。",
-      "reader_sha256": "9a07a853f70cba387aa05e905c6b38dea89c942416c0fc1354713fae9a527d61",
+      "reader_sha256": "71edf652bb8ce22a34dcf1820ff4fc75305f33d533833d7de6d9524e9a629f6e",
       "review_paths": [
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
@@ -612,6 +612,13 @@
         "source_record": "管理档案/来源笔记/shadow-lattice-stability.json",
         "review": "管理档案/审查/阴影采样格稳定性-来源与读者审查.md",
         "scope": "Finite original-source and one-dimensional sampling-grid explanation; not a new reader book or visual validation."
+      },
+      "batch_instance_support": {
+        "path": "管理档案/支持资料/合在一批绘制的物体，为什么仍需要各自的数据.md",
+        "sha256": "073ef52e5ff07216f1cef09207449490091c6da0b7b02fb58884891296b1068f",
+        "review": "管理档案/审查/合批与实例数据-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/batch-instance-data.json",
+        "scope": "Original finite grouping explanation; no rendering experiment or complete historical implementation."
       }
     },
     {
@@ -3008,7 +3015,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "a3b87e94dcc09054764882a7c40395e029dc3cbe",
+  "publication_base_sha": "69949aa34b16073e541148d269a76829955b7bad",
   "accounted_for_original_items": 55,
   "reader_books_total": 95,
   "post_baseline_research_books": 40,
