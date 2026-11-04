@@ -1,0 +1,27 @@
+{
+  "reader": "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+  "reader_sha256": "2a3cc6d839b5b47566e172a4dbb97aed5aeb52896643c70a3b935c36966054a2",
+  "review": "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md",
+  "read_date": "2026-11-04",
+  "source": {
+    "bibliographic_reference": "Reader reference [1]",
+    "url": "https://gpuopen.com/download/gdc-2019-agtd6-interactive-water-simulation-in-atlas.pdf",
+    "pdf_sha256": "aa0ea8d7ccc7890258a17bebb8a7b71f3526a94c68b160dd51393e3ffc56867f",
+    "page_numbering": "Cover is page1",
+    "adopted_pages": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "reading_scope": "Selected text and original static slides; no video or game source."
+  },
+  "original_analysis": "Four coplanar points, equal mean but different normals; translation and collinear-family examples. Checks are proposed, not executed.",
+  "verification": "Independent source, complete reader and original geometry review. No game, water or spring simulation.",
+  "publication_scope": "Original reader narrative only; source PDF, source images and source code excluded."
+}

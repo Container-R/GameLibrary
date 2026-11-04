@@ -2947,6 +2947,29 @@
       ],
       "source_record": "管理档案/来源笔记/android-save-lifecycle.json",
       "reader_sha256": "72e26ad6537e1277026b9c1a2b0a16672d872c3309c4356b1150882593ec5786"
+    },
+    {
+      "internal_id": "CASE-PROG-001",
+      "reader_title": "ATLAS为什么用水面拟合平面来决定船的目标姿态",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "水面与船体",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+      "reader_body_status": "published",
+      "editorial_status": "原始课件关键页、原创几何与独立完整读者视角审读；未运行游戏或船体模拟",
+      "origin": "historical-first-party-production-case",
+      "scope_note": "区别采样、目标平面与实际响应；不提供完整浮力模型或稳定性保证。",
+      "review_paths": [
+        "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/atlas-boat-plane-target.json",
+      "reader_sha256": "2a3cc6d839b5b47566e172a4dbb97aed5aeb52896643c70a3b935c36966054a2",
+      "related_roles": [
+        "ROLE-PROG-001",
+        "ROLE-GFX-001",
+        "ROLE-TA-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -2957,10 +2980,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "99ee3a042743bd42dd491b6e39c0e2c23fe33f3b",
+  "publication_base_sha": "099b700b0e47950af93edd1782ea7a58e6f852a3",
   "accounted_for_original_items": 55,
-  "reader_books_total": 93,
-  "post_baseline_research_books": 38,
+  "reader_books_total": 94,
+  "post_baseline_research_books": 39,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

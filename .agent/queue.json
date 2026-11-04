@@ -8742,6 +8742,36 @@
       "blockers": [],
       "verification_method": "Source-backed mathematics, independent exact-expression arithmetic and complete reader review; no random simulation or game run.",
       "publication_scope": "Support and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0248",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Original historical slides and independent finite geometry/reader review; no game or water simulation.",
+      "publication_scope": "Reader and public progress in containing commit.",
+      "question": "平均水高相同，为什么仍不能确定船的目标姿态？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 87,
+      "priority_rationale": "补齐水面与玩法响应的真实生产案例，保留方案取舍与有限几何推导。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+      "acceptance": [
+        "原始课件相关页与图文核对",
+        "区分讲者方案、比较基线与原创几何",
+        "独立完整读者视角审读",
+        "实际层级导航与公开载荷审查"
+      ],
+      "source_leads": [
+        "https://gpuopen.com/download/gdc-2019-agtd6-interactive-water-simulation-in-atlas.pdf"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T04:39:42Z",
+      "next_action": "仅在获得具体算法或实际集成证据时扩展；当前不声称完整实现。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+        "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md",
+        "管理档案/来源笔记/atlas-boat-plane-target.json"
+      ]
     }
   ],
   "execution_policy": {
