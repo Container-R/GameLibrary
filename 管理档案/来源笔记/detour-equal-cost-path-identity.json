@@ -1,0 +1,60 @@
+{
+  "read_on": "2026-11-04",
+  "version": "Recast Navigation v1.6.0",
+  "commit": "6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+  "support": "管理档案/支持资料/两条路线一样便宜，为什么不一定返回同一条.md",
+  "support_sha256": "2e3b1e9b201527fac9849f33aec24b7e6f6149e5b88302a1a0dcdbe36d2ffc74",
+  "host": "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
+  "review": "管理档案/审查/等费用路线身份-来源与读者审查.md",
+  "sources": [
+    {
+      "path": "Detour/Source/DetourNode.cpp",
+      "url": "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Source/DetourNode.cpp",
+      "sha256": "067ffb9a81f7315f2253ff217263acb1c01590d130e01d4de4500308d756132b"
+    },
+    {
+      "path": "Detour/Include/DetourNode.h",
+      "url": "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Include/DetourNode.h",
+      "sha256": "7c295c61f09dff0de42bdcc873a5d698d687bb2052aca8b293425c0ef0444a9e"
+    },
+    {
+      "path": "Detour/Source/DetourNavMeshQuery.cpp",
+      "url": "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Source/DetourNavMeshQuery.cpp",
+      "sha256": "fb3f040b35633ad01dfec2a18e1dd1433b10ede69780dddf65bd0a016af0183b"
+    }
+  ],
+  "read_scope": [
+    "DetourNode.cpp172–199 queue comparisons",
+    "DetourNode.h36–44 fields and118–140 queue operations",
+    "DetourNavMeshQuery.cpp1003–1204 ordinary findPath and predecessor reconstruction"
+  ],
+  "identity_check": "Preserved source hashes match independently retrieved fixed-commit original text; no source or private runtime package uploaded.",
+  "original_example": {
+    "nodes": [
+      "S",
+      "A",
+      "B",
+      "G"
+    ],
+    "directed_edges": [
+      "S-A",
+      "S-B",
+      "A-G",
+      "B-G"
+    ],
+    "each_edge_cost": 1,
+    "heuristic": 0,
+    "route_costs": [
+      2,
+      2
+    ],
+    "scope": "Finite paper algorithm with at most two open candidates; changed adjacency order is changed input, not a Detour mesh observation."
+  },
+  "verification_method": "Fixed-source reading and independent complete reader/finite derivation review; no native or graph execution.",
+  "limits": [
+    "No FIFO or lowest-reference tie guarantee",
+    "No full Detour optimality or same-input nondeterminism claim",
+    "No inference from displayed rounded costs to exact totals",
+    "Existing native corridor observations have different scope"
+  ]
+}

@@ -6409,7 +6409,10 @@
       "expected_artifact": "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
       "artifact_paths": [
         "GameLibrary/游戏人工智能/移动导航/路径查询/把道路费用调低后，寻路为什么可能绕开便宜路线.md",
-        "管理档案/审查/寻路费用尺度-读者与来源审查.md"
+        "管理档案/审查/寻路费用尺度-读者与来源审查.md",
+        "管理档案/支持资料/两条路线一样便宜，为什么不一定返回同一条.md",
+        "管理档案/来源笔记/detour-equal-cost-path-identity.json",
+        "管理档案/审查/等费用路线身份-来源与读者审查.md"
       ],
       "acceptance": [
         "Fixed Detour tag and query/heap source read",
@@ -6419,10 +6422,15 @@
         "Independent full-reader and actual shelf/cross-link review"
       ],
       "attempts": 1,
-      "last_progress_at": "2026-11-01T22:09:08Z",
+      "last_progress_at": "2026-11-04T17:46:35Z",
       "next_action": "For a real navigation project, check its graph, custom costs, allowed links, heuristic and supported interface; no native result is established here.",
       "blockers": [],
-      "verification_method": "Original source reading and independently checked finite paper derivation; no graph-model execution, engine query or performance measurement."
+      "verification_method": "Original source reading and independently checked finite paper derivation; no graph-model execution, engine query or performance measurement.",
+      "equal_cost_increment": {
+        "path": "管理档案/支持资料/两条路线一样便宜，为什么不一定返回同一条.md",
+        "review": "管理档案/审查/等费用路线身份-来源与读者审查.md",
+        "scope": "Source-backed optional distinction between cost and exact returned route; no native execution."
+      }
     },
     {
       "id": "TASK-2026-0169",
