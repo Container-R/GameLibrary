@@ -3097,6 +3097,27 @@
       "related_roles": [
         "ROLE-PROG-001"
       ]
+    },
+    {
+      "internal_id": "CASE-GFX-003",
+      "reader_title": "Obra Dinn如何减轻转动视角时的抖色游动",
+      "floor": "图形渲染",
+      "area": "画面呈现",
+      "shelf": "抖色采样",
+      "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/抖色采样/Obra Dinn如何减轻转动视角时的抖色游动.md",
+      "current_read_path": "GameLibrary/图形渲染/画面呈现/抖色采样/Obra Dinn如何减轻转动视角时的抖色游动.md",
+      "reader_body_status": "published",
+      "editorial_status": "完整正文、原始作者记录与独立读者审读；原创纸算，无渲染执行",
+      "origin": "source-backed-production-case-with-original-explanatory-models",
+      "scope_note": "限定的历史案例与纸面解释；不是完整着色器、发行版配置或视觉测量。",
+      "review_paths": [
+        "管理档案/审查/Obra-Dinn抖色映射-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/obra-dinn-dither-mapping.json",
+      "reader_sha256": "34fd7621e84e2e2cee4731113e310cd6aceaa39011b0018c9b88541982a9cf27",
+      "related_roles": [
+        "ROLE-GFX-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3107,10 +3128,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "25deed2f92132018638b150866fd3c9d0d82a612",
+  "publication_base_sha": "c2ec4d84bd4b5035d309e7a14f98e25f2f777a5d",
   "accounted_for_original_items": 55,
-  "reader_books_total": 96,
-  "post_baseline_research_books": 41,
+  "reader_books_total": 97,
+  "post_baseline_research_books": 42,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

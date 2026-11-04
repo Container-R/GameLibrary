@@ -9162,6 +9162,33 @@
       ],
       "verification_method": "Two same-operator fresh-copy native executions and independent complete result/reader review; synthetic checks separately counted.",
       "publication_scope": "Revised support, finite observation package and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0261",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "这篇制作案例能怎样帮助读者区分不同坐标与输出选择？",
+      "discipline": "GFX",
+      "status": "published",
+      "priority": 81,
+      "priority_rationale": "补足既有画面呈现区域的具体制作问题，保留与时域历史问题的区别。",
+      "expected_artifact": "GameLibrary/图形渲染/画面呈现/抖色采样/Obra Dinn如何减轻转动视角时的抖色游动.md",
+      "acceptance": [
+        "完整原始相关正文阅读",
+        "原创例子与反例计算",
+        "独立读者及来源审查",
+        "全载荷与真实导航核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T12:04:15Z",
+      "next_action": "仅在实际实现或视觉证据足够时补充，保持本篇未运行范围。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/图形渲染/画面呈现/抖色采样/Obra Dinn如何减轻转动视角时的抖色游动.md",
+        "管理档案/审查/Obra-Dinn抖色映射-来源与读者审查.md",
+        "管理档案/来源笔记/obra-dinn-dither-mapping.json"
+      ],
+      "verification_method": "Original paper examples, independent complete reader and source review; no rendering execution.",
+      "publication_scope": "Reader, navigation and progress in containing commit."
     }
   ],
   "execution_policy": {
