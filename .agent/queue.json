@@ -1470,7 +1470,8 @@
         "support": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
         "review": "管理档案/审查/连续分块重采样-来源与读者审查.md",
         "source": "管理档案/来源笔记/libsamplerate-stream-state.json",
-        "scope": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening."
+        "scope": "Original 2026-11-03 source study and hypothetical stereo arithmetic retained; later native observations are separately identified.",
+        "native_observation_task": "TASK-2026-0256"
       }
     },
     {
@@ -8994,6 +8995,37 @@
         "GameLibrary/游戏设计/关卡设计/岗位与协作/关卡策划从白盒到制作交付的工作.md",
         "管理档案/审查/入口改造取舍-来源与读者审查.md",
         "管理档案/来源笔记/witness-entry-yard.json"
+      ]
+    },
+    {
+      "id": "TASK-2026-0256",
+      "parent_task_id": "TASK-2026-0008",
+      "verification_method": "Two planned same-operator native executions; independent protocol, implementation, complete-result and reader review. Not independent native replication.",
+      "publication_scope": "Updated support, immutable fixture/results and public progress in containing commit.",
+      "question": "这组固定调用的实际数值是否符合执行前预期？",
+      "discipline": "MUSIC",
+      "status": "published",
+      "priority": 84,
+      "priority_rationale": "为既有接入说明补充有限原生证据，不新增同义文章。",
+      "expected_artifact": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+      "acceptance": [
+        "执行前固定输入与独立先验核对",
+        "完整实现和有界执行审查",
+        "实际结果与身份逐项复核",
+        "原假设范围及旧来源保留",
+        "完整公开载荷与实际导航检查"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T08:56:19Z",
+      "next_action": "保持有限输入和自报版本边界；只按明确的新工程问题补充。",
+      "blockers": [],
+      "artifact_paths": [
+        "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
+        "管理档案/研究记录/resampler-stream-linear-20261104/README.md",
+        "管理档案/审查/连续分块重采样-有限原生结果审查.md",
+        "管理档案/来源笔记/resampler-stream-native.json",
+        "管理档案/研究记录/resampler-stream-linear-20261104/fixture/results/run1.json",
+        "管理档案/研究记录/resampler-stream-linear-20261104/fixture/results/run2.json"
       ]
     }
   ],

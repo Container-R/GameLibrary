@@ -1,0 +1,10 @@
+{
+  "upstream_repository": "libsndfile/libsamplerate",
+  "upstream_commit": "c96f5e3de9c4488f4e6c97f59f5245f22fda22f7",
+  "expected_reported_version": "libsamplerate-0.2.2 (c) 2002-2008 Erik de Castro Lopo",
+  "local_inputs": [
+    {"path":".local/upstream/samplerate.h","upstream_path":"include/samplerate.h","git_blob_sha1":"a3d5ae1aa0859c41a33371dc1c3b3f65f63cb417"},
+    {"path":".local/upstream/COPYING","upstream_path":"COPYING","git_blob_sha1":"9f82626e6371ceeb76f8d2c9968748ec1584e10f"}
+  ],
+  "binary_provenance": "Self-reported runtime version only; not authentication of the installed library's source commit or build."
+}

@@ -1294,10 +1294,15 @@
       "resampler_support": {
         "path": "管理档案/支持资料/同一段音乐分块重采样，为什么不能每块从头开始.md",
         "review": "管理档案/审查/连续分块重采样-来源与读者审查.md",
-        "scope": "Source interpretation and independently checked hypothetical stereo frame arithmetic; no native conversion or listening."
+        "scope": "Original source study and hypothetical stereo arithmetic retained; later finite native observations are separately identified.",
+        "sha256": "5118ab662d25b6164f8a38b6cd5fe203090dfa3584ddacc4e90afb191e09db45",
+        "native_entry": "管理档案/研究记录/resampler-stream-linear-20261104/README.md",
+        "native_review": "管理档案/审查/连续分块重采样-有限原生结果审查.md",
+        "native_source_record": "管理档案/来源笔记/resampler-stream-native.json"
       },
       "review_paths": [
-        "管理档案/审查/连续分块重采样-来源与读者审查.md"
+        "管理档案/审查/连续分块重采样-来源与读者审查.md",
+        "管理档案/审查/连续分块重采样-有限原生结果审查.md"
       ]
     },
     {
@@ -3059,7 +3064,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "87a13a1a517bead9dbdbff085702a670a74ed9d4",
+  "publication_base_sha": "bfc3e8cb592e39e7523379ffb0727122d4b7468a",
   "accounted_for_original_items": 55,
   "reader_books_total": 96,
   "post_baseline_research_books": 41,

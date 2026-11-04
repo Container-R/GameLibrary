@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "protocol_id": "resampler-stream-linear-v1",
+  "files": {
+    "PROTOCOL.md": "1d4d59341d3451632403c68c51d0d7ec0d09144bdd1b6f7f9fc4e1b49eb8c664",
+    "README.md": "f5687be618bfe652c9760e2aed9bf3b8937d245af91256a401aec538f1f717fd",
+    "src/probe.c": "fc5db093d71ff2791242ff3e32254176a92a5ae637821c5804548f3094dfcdfa",
+    "run_probe.py": "85b5ee7d065613efd8ae5dd37f215bb15a072215b1490825351440d5b33f0543",
+    "fixtures/oracle.json": "d1abad9b3024e7f7e3f07d54e945dd349b5800a2869be9fc3e68a815e2d1981f",
+    "fixtures/source-identity.json": "33a05de5afa72a77e5b6671f364237c01fadd78c562192e2be74c0fd37fad443",
+    ".local/upstream/samplerate.h": "dfe5f4107782bcf6e9b8421a9e7c4772e19446a4c18727c73b22286d3fbb6626",
+    ".local/upstream/COPYING": "2c1f76ce2effdddb425018405d5690c0b1ab4e6976e35296b0a6db65c5e1a55d"
+  }
+}
