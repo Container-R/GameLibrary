@@ -1,0 +1,29 @@
+{
+  "read_on": "2026-11-04",
+  "support": "管理档案/支持资料/Box2D的组过滤，为什么不能直接沿用到射线.md",
+  "support_sha256": "e716b535574c431fd08898b46804a5aad64b8e7c8974575fdbd6ebfb514a4b8e",
+  "shelf": "GameLibrary/玩法程序/玩法系统/物理检测/README.md",
+  "shelf_sha256": "a772e1354d3cad7f86494fbd9d679cffb79396e6249e387fc99ce68cdec740ef",
+  "host": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "host_changed": false,
+  "review": "管理档案/审查/形状组与查询-来源和读者审查.md",
+  "source_repository": "https://github.com/erincatto/box2d",
+  "source_revision": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "release": "v3.2.0",
+  "selected_sources": [
+    {
+      "path": "include/box2d/types.h",
+      "lines": "318-369"
+    },
+    {
+      "path": "src/shape.h",
+      "lines": "118-131"
+    },
+    {
+      "path": "src/physics_world.c",
+      "lines": "2569-2609"
+    }
+  ],
+  "verification": "Independent complete reader and selected fixed-source review; original finite paper comparison only.",
+  "limits": "No native engine, world simulation, geometry query, actual contact or returned-hit observation."
+}
