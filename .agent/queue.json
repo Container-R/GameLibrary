@@ -8601,6 +8601,35 @@
       "blockers": [],
       "verification_method": "Original-source reading and independently reviewed paper signal model; no audio or runtime execution.",
       "publication_scope": "Support and public progress in containing commit."
+    },
+    {
+      "id": "TASK-2026-0245",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为什么约定独立的自动测试单跑通过，却在另一测试之后失去原先前提？",
+      "discipline": "QA",
+      "status": "published",
+      "priority": 85,
+      "priority_rationale": "Concrete predecessor-state diagnosis beyond existing retry and generic starting-condition guidance.",
+      "expected_artifact": "管理档案/支持资料/单独运行能通过，为什么排在另一个测试后就失败.md",
+      "artifact_paths": [
+        "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
+        "GameLibrary/项目管理与测试/质量保证/岗位与协作/README.md",
+        "管理档案/支持资料/单独运行能通过，为什么排在另一个测试后就失败.md",
+        "管理档案/审查/测试顺序与共享前提-来源与读者审查.md",
+        "管理档案/来源笔记/test-order-shared-state.json"
+      ],
+      "acceptance": [
+        "Read original study methods and relevant mechanism with limitations",
+        "Independently review unchanged-input hypothetical binding scenario",
+        "Distinguish independent fixtures from intentional persistence scenarios",
+        "Verify host/shelf/return routes without increasing reader count"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-04T01:13:20Z",
+      "next_action": "Only deepen with a concrete test harness and observed shared-state path; preserve original failures and declared preconditions.",
+      "blockers": [],
+      "verification_method": "Original-source analysis and independently reviewed hypothetical scenario; no game or framework execution.",
+      "publication_scope": "Support and public progress in containing commit."
     }
   ],
   "execution_policy": {
