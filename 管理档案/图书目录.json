@@ -282,7 +282,7 @@
         "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
         "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       },
-      "reader_sha256": "335477972f66d9732d2725ddd894531823989421b8d8f1e6d9d46cb6863ed2c3",
+      "reader_sha256": "ca2cd9f9f8905c1aca6e48e684b613d28b08d8f6d264a7080daea031211d4e52",
       "shared_output_support": {
         "path": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
         "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
@@ -292,7 +292,8 @@
         "管理档案/审查/共享生成输出-来源与读者审查.md",
         "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
         "管理档案/审查/ZIP目标映射-来源与读者审查.md",
-        "管理档案/审查/有限值检查与编译假设-来源与读者审查.md"
+        "管理档案/审查/有限值检查与编译假设-来源与读者审查.md",
+        "管理档案/审查/变体保留与首次绘制准备-来源与读者审查.md"
       ],
       "http_range_support": {
         "path": "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
@@ -340,6 +341,11 @@
         "sha256": "3b91f5f5c62036737d1c4a25c28eabc1f4ebbbd892d3967e41c74722c875f4f5",
         "review": "管理档案/审查/有限值检查与编译假设-来源与读者审查.md",
         "scope": "Fixed GCC15.2 and Clang20.1 option documentation with independent reader review; no compiler or runtime observation."
+      },
+      "warmup_reading_bridge": {
+        "review": "管理档案/审查/变体保留与首次绘制准备-来源与读者审查.md",
+        "previous_reader_sha256": "335477972f66d9732d2725ddd894531823989421b8d8f1e6d9d46cb6863ed2c3",
+        "scope": "Unity6000.0 conditional documentation explanation linked to existing graphics first-use chapter; no runtime execution."
       }
     },
     {
