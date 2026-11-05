@@ -694,14 +694,17 @@
         "管理档案/审查/INSIDE时域历史-来源与读者审查.md",
         "管理档案/审查/深度度量与相机起点-来源和读者审查.md",
         "管理档案/审查/深度存储粒度-来源与读者审查.md",
-        "管理档案/审查/原子槽位预订与结果完成-来源与读者审查.md"
+        "管理档案/审查/原子槽位预订与结果完成-来源与读者审查.md",
+        "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md"
       ],
       "occlusion_query_support": {
         "support_path": "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
         "review_path": "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "source_note": "管理档案/来源笔记/occlusion-query-feedback.json",
-        "support_sha256": "4bc0c65a256d1b16a033f198f3dfb6934a6c55abe664fc999a6de839e77ebbdb",
-        "scope": "Unknown, old and current occlusion feedback in a stated opaque scene; no runtime, image or performance observations."
+        "support_sha256": "bb4256b9b4fb8bf97b393c7d9c91aed1b4db6f8fd9f4a5c23e77c47861926be8",
+        "scope": "Unknown, old and current occlusion feedback in a stated opaque scene; no runtime, image or performance observations.",
+        "original_support_sha256": "4bc0c65a256d1b16a033f198f3dfb6934a6c55abe664fc999a6de839e77ebbdb",
+        "navigation_revision_review": "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md"
       },
       "pipeline_cache_support": {
         "support_path": "管理档案/支持资料/D3D12管线缓存存了盘，为什么换台设备还要重建.md",
@@ -744,6 +747,12 @@
         "review": "管理档案/审查/合批与实例数据-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/batch-instance-data.json",
         "scope": "Original finite grouping explanation; no rendering experiment or complete historical implementation."
+      },
+      "hierarchical_depth_support": {
+        "path": "管理档案/支持资料/缩小深度图时，为什么不能总取最小值.md",
+        "sha256": "b64a541b25e6fddf18b25527c41cfd60846bab806b72425ad5c886ff60898898",
+        "review": "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
+        "scope": "Fixed-source depth ordering and conservative query coverage with original finite paper examples; no GPU execution or full culling proof."
       }
     },
     {
