@@ -1,0 +1,61 @@
+{
+  "topic": "Final-output flash counting and assessment scope",
+  "read_at": "2026-11-05",
+  "sources": [
+    {
+      "publisher": "Microsoft",
+      "title": "Xbox Accessibility Guideline118: Photosensitivity",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/118",
+      "page_updated": "2026-03-04",
+      "sections": [
+        "Overview",
+        "Scoping questions",
+        "Implementation guidelines"
+      ],
+      "scope": "Game best practices; approximate criteria not combined with W3C denominators."
+    },
+    {
+      "publisher": "W3C",
+      "title": "WCAG2.2",
+      "version": "2024-12-12 Recommendation",
+      "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+      "sections": [
+        "2.3.1",
+        "Glossary: flash",
+        "Glossary: general flash and red flash thresholds"
+      ],
+      "scope": "Selected normative clauses, not whole-standard audit."
+    },
+    {
+      "publisher": "W3C",
+      "title": "G19",
+      "url": "https://www.w3.org/WAI/WCAG22/Techniques/general/G19",
+      "sections": [
+        "Description",
+        "Tests"
+      ],
+      "scope": "Informative sufficient technique, including half-transition boundary."
+    },
+    {
+      "publisher": "W3C",
+      "title": "Understanding SC2.3.1",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "sections": [
+        "Intent",
+        "Key Terms"
+      ],
+      "scope": "Informative context; no video or display certification."
+    },
+    {
+      "publisher": "Microsoft",
+      "title": "Xbox Accessibility Guidelines",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/guidelines",
+      "sections": [
+        "Introduction"
+      ],
+      "scope": "Best practices, not compliance/legal validation checklist."
+    }
+  ],
+  "reader": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/检查闪光风险时，为什么不能只数技能触发次数.md",
+  "original_contribution": "Static fourpulse timing counterexample and editorial capture/context/iteration guidance. No generated flashing stimulus, gameplay capture, tool analysis, medical or player study."
+}

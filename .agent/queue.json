@@ -9633,6 +9633,34 @@
       ],
       "verification_method": "Historical primary chapter and independent source/reader/arithmetic review; original finite hand example, no runtime or performance execution.",
       "publication_scope": "New reader and populated squad-coordination shelf in containing commit."
+    },
+    {
+      "id": "TASK-2026-0275",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "为什么技能触发次数和整秒计数不能代替最终画面的闪光检查？",
+      "discipline": "A11Y",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "补视觉刺激检查的具体时间与范围缺口，不重复HUD空间对比。",
+      "expected_artifact": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/检查闪光风险时，为什么不能只数技能触发次数.md",
+      "acceptance": [
+        "既有特效/HUD内容去重",
+        "原始XAG及W3C规范/解释层次核查",
+        "静态任意一秒反例及半次边界",
+        "独立全文读者审读",
+        "完整公开载荷及真实导航"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-05T07:19:47Z",
+      "next_action": "具体产品另按适用方法分析最终输出与未覆盖情境，不从本文静态例子推出安全或认证。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/检查闪光风险时，为什么不能只数技能触发次数.md",
+        "管理档案/来源笔记/flash-counting-scope.json",
+        "管理档案/审查/闪光计数与检查范围-来源与读者审查.md"
+      ],
+      "verification_method": "Primary guideline reading and independent source/reader review; original static timing argument only. No flashing stimuli, gameplay/video analysis, tool execution, medical or participant study.",
+      "publication_scope": "New reader and existing shelf/VFX cross-entry in containing commit."
     }
   ],
   "execution_policy": {
