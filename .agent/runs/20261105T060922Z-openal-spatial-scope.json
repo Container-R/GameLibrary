@@ -1,0 +1,32 @@
+{
+  "run_id": "20261105T060922Z-openal-spatial-scope",
+  "base_sha": "dac7ba7b3bc94586d2246db4507dc6850394e586",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Clarify actual OpenAL buffer channels before applying distance model; exact remote readback required.",
+  "reader_books_total": 100,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 45,
+  "task_count": 273,
+  "artifact_paths": [
+    "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
+    "管理档案/审查/OpenAL距离计算声道范围-补充审读.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "executions": 0,
+    "scope": "OpenAL1.1 core buffer channel rule; not extension/FMOD/CRI or new observation."
+  },
+  "deduplication_gate": {
+    "topic": "MikkTSpace per-corner tangent output",
+    "outcome": "Exact existing reader and finite native coverage; no duplicate article or experiment."
+  },
+  "previous_readback": {
+    "sha": "dac7ba7b3bc94586d2246db4507dc6850394e586",
+    "readback_at": "2026-11-05T06:05:17.086Z",
+    "changed_files": 5,
+    "remote_route_edges": 6
+  }
+}
