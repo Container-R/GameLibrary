@@ -551,7 +551,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/programming/gameplay-programmer.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "04e759728da389abd1d8fc097ce642d085967220624bbd133b152e6ece716cc6",
+      "reader_sha256": "66a63840f6b27aad2a828a47803f026fee5cca621fb790b970e909e231d6940c",
       "keyboard_reset_support": {
         "path": "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
         "sha256": "89306166e948aeffa549f6d7debf5edc90e8ac5206515606455bb13b84399ef3",
@@ -564,8 +564,14 @@
         ]
       },
       "review_paths": [
-        "管理档案/审查/SDL键盘重置-来源与读者审查.md"
-      ]
+        "管理档案/审查/SDL键盘重置-来源与读者审查.md",
+        "管理档案/审查/动画交叠通知资格-来源与读者审查.md"
+      ],
+      "crossfade_event_revision": {
+        "previous_reader_sha256": "04e759728da389abd1d8fc097ce642d085967220624bbd133b152e6ece716cc6",
+        "review": "管理档案/审查/动画交叠通知资格-来源与读者审查.md",
+        "scope": "Fixed Godot4.4 source and original conditional gameplay example; no engine execution. Prior industry-source review scope retained."
+      }
     },
     {
       "internal_id": "ROLE-QA-001",
