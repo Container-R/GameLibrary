@@ -998,13 +998,22 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "da00e03784c21f5ce396bc3e1b47739f646ac4d14f5b9eff191fe224d4a3f2db",
+      "reader_sha256": "0b3bd650c027d0e1a0dff216342075067cfb1fde12ff21da6bc696bddd0976ab",
       "near_extension_support": {
         "source_record": "管理档案/来源笔记/near-extension-two-bone-geometry.json",
         "review": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
         "support": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
         "scope": "Original finite mathematical support, not a native solver or paper reproduction."
-      }
+      },
+      "marker_phase_support": {
+        "path": "管理档案/支持资料/两段动作播放进度相同，为什么左右脚仍然对不上.md",
+        "sha256": "0cc283e1127e1e9c49ff898ba60d3dc5db555e7bd2a3a0a2339a7b372b41648f",
+        "review": "管理档案/审查/动画标记区间对应-来源与读者审查.md",
+        "scope": "Version-selected UE5.6 documentation and hypothetical interval arithmetic; no character, engine or foot-lock execution."
+      },
+      "review_paths": [
+        "管理档案/审查/动画标记区间对应-来源与读者审查.md"
+      ]
     },
     {
       "internal_id": "SOL-ART2D-001",
