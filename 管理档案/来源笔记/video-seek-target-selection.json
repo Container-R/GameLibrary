@@ -1,0 +1,48 @@
+{
+  "topic": "Video seek target selection and stale decoded pictures",
+  "read_at": "2026-11-05",
+  "version": "FFmpeg n7.1.5",
+  "commit": "3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587",
+  "tag_object": "eefb3654c445a9004712036be4ffb01a68b2c3e1",
+  "tag_resolution": "Original GitHub tag object resolved to the exact commit; no installed binary claim.",
+  "sources": [
+    {
+      "publisher": "FFmpeg",
+      "title": "avcodec input/output and flush documentation",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587/libavcodec/avcodec.h",
+      "lines": [
+        "90–155",
+        "2480–2526",
+        "3074–3089"
+      ],
+      "scope": "Selected interface documentation; caller-held frame references remain valid after decoder flush."
+    },
+    {
+      "publisher": "FFmpeg",
+      "title": "AVStream time base and seek interfaces",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587/libavformat/avformat.h",
+      "lines": [
+        "745–790",
+        "2365–2437"
+      ],
+      "scope": "Timestamp mode and successful positioning do not choose a decoded display picture."
+    },
+    {
+      "publisher": "FFmpeg",
+      "title": "ffplay queue and picture generation handling",
+      "url": "https://github.com/FFmpeg/FFmpeg/blob/3a0867c2bfda4a4d4309ca1a8cbdc6175e67f587/fftools/ffplay.c",
+      "lines": [
+        "490–502",
+        "579–643",
+        "1609–1633",
+        "1753–1816",
+        "3025–3060"
+      ],
+      "license": "LGPL-2.1-or-later file declaration",
+      "scope": "Selected queue serial, decoder reset and stale picture rejection; no complete player, clock, threading or presentation audit."
+    }
+  ],
+  "reader": "GameLibrary/引擎与工具/运行时系统/媒体播放/视频跳转成功，为什么还没得到目标画面.md",
+  "original_contribution": "Hypothetical 1/1000-second stream, target 1050, first-at-or-after policy selects 1080. Alternative containing interval requires duration knowledge. These are editorial examples, not upstream output.",
+  "verification": "Author and independent source/reader review. No native execution, media decoding, latency or screen measurement. No upstream code copied."
+}

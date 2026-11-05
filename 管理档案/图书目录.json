@@ -3549,6 +3549,27 @@
         "ROLE-VFX-001",
         "ROLE-QA-001"
       ]
+    },
+    {
+      "internal_id": "SOL-ENGINE-013",
+      "reader_title": "视频跳转成功，为什么还没得到目标画面",
+      "floor": "引擎与工具",
+      "area": "运行时系统",
+      "shelf": "媒体播放",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/媒体播放/视频跳转成功，为什么还没得到目标画面.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/媒体播放/视频跳转成功，为什么还没得到目标画面.md",
+      "reader_body_status": "published",
+      "editorial_status": "固定原始接口与源码、原创时间戳例经独立审读；未运行播放器或测量呈现。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/视频跳转与目标画面-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/video-seek-target-selection.json",
+      "reader_sha256": "c86335c71b9ad0e4198cb4d0ccc81de76cc803286d7f0b2afcebdb4c8ff5cc4c",
+      "related_roles": [
+        "ROLE-PROG-001",
+        "ROLE-GFX-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3559,10 +3580,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
+  "publication_base_sha": "2eac357a5a963eb06a5e15c152280519045e7a95",
   "accounted_for_original_items": 55,
-  "reader_books_total": 102,
-  "post_baseline_research_books": 47,
+  "reader_books_total": 103,
+  "post_baseline_research_books": 48,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
