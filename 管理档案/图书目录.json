@@ -767,7 +767,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "127d25c4164608051ea63200df387813f6b009ad623d16c11dfb06d5e7eaabae",
+      "reader_sha256": "2815eb755ab70175b7026fac06abef12bb457a3ffe0a78f84fbd830dd2f9737f",
       "vegetation_control_support": {
         "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
@@ -776,7 +776,8 @@
         "scope": "Primary production account and independently reviewed original sinusoid illustration and proposed authoring checks; no execution."
       },
       "review_paths": [
-        "管理档案/审查/植被控制数据-来源与读者审查.md"
+        "管理档案/审查/植被控制数据-来源与读者审查.md",
+        "管理档案/审查/Returnal体积感粒子-来源与读者审查.md"
       ],
       "flowmap_phase_maintenance": {
         "support": "管理档案/支持资料/流动贴图为什么要定期复位，又怎样藏住跳变.md",
@@ -805,6 +806,12 @@
       "source_date_clarification": {
         "scope": "Original 2026-11-01 baseline distinguished from later source-specific reading dates; no technical/source8 change.",
         "review": "管理档案/审查/有限值检查与编译假设-来源与读者审查.md"
+      },
+      "volume_particle_support": {
+        "path": "管理档案/支持资料/模型变成粒子时，为什么只在表面生成会像空壳.md",
+        "sha256": "88a27fe9031ae07c358a8effbfcd0acf147937c125aa31625492476e45c9389a",
+        "review": "管理档案/审查/Returnal体积感粒子-来源与读者审查.md",
+        "scope": "Original Returnal production tradeoff for unsuitable voxelizer input and surface-to-bound-bone particle direction; no simulation or uniform-volume algorithm."
       }
     },
     {
