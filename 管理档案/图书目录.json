@@ -654,11 +654,19 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/rendering/game-lighting-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "bc30d037ce796575530380b05c6dd1ebf477f8cd740e523c8f78dabc157142bb",
+      "reader_sha256": "5b3a4a8f3a4738fe2ce30e0d44366536ce10359bee00b1dd2d1aa42b3a09a76e",
       "nested_apply_maintenance": {
         "source_record": "管理档案/来源笔记/unity-nested-prefab-apply-target.json",
         "review": "管理档案/审查/嵌套灯具应用目标-来源与读者审查.md",
         "scope": "Version-scoped nested prefab example; no editor, lighting or performance validation."
+      },
+      "review_paths": [
+        "管理档案/审查/灯光比较的曝光参照-来源与读者审查.md"
+      ],
+      "exposure_comparison_reference": {
+        "review": "管理档案/审查/灯光比较的曝光参照-来源与读者审查.md",
+        "previous_reader_sha256": "bc30d037ce796575530380b05c6dd1ebf477f8cd740e523c8f78dabc157142bb",
+        "scope": "Fixed exposure comparison versus intended adaptation, limited UE 5.4 documentation example; no rendering."
       }
     },
     {
