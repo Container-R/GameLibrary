@@ -21,14 +21,15 @@
       "scope_disposition_review": "管理档案/审查/动画制作-独立审读.md",
       "supporting_material": "管理档案/历史正文/roles/animation/game-animator.md#曲线交接例片段减速时为什么只改关键帧时间还不够",
       "historical_body_path": "管理档案/历史正文/roles/animation/game-animator.md",
-      "reader_sha256": "a313aaea1006c44bc026c880e99f0dd546f575c35386fbdefea41ed571f13f74",
+      "reader_sha256": "67180f79241bd27f8a15422e2cdbbadd2bff6c554d786442685db106283361f7",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
         "管理档案/审查/姿势停留与命中停顿-文字来源与读者审查.md",
         "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
         "管理档案/审查/加法动画参考姿势-来源与读者审查.md",
         "管理档案/审查/动作更新与镜头构图-来源与读者审查.md",
-        "管理档案/审查/三维动作与二维输出-来源与读者审查.md"
+        "管理档案/审查/三维动作与二维输出-来源与读者审查.md",
+        "管理档案/审查/含空格正文目标-CommonMark导航修复.md"
       ],
       "helper_bone_representation_support": {
         "support_path": "管理档案/支持资料/角色还能播放，为什么辅助骨处理却找不到原来的骨架.md",
@@ -2159,9 +2160,10 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/d0c87c1985778a6956374624b9b5e3c6ddbfd7cb/case-studies/narrative/cygames-scenario-voice-handoff.md",
       "old_path_history_commit": "d0c87c1985778a6956374624b9b5e3c6ddbfd7cb",
-      "reader_sha256": "54de28f795b14f7e2114acee7fda3757561263b4ed6153bde54813c0951e75a6",
+      "reader_sha256": "0453a48f9eb58ef2bc64e5672f061017f458e47fc762824b560e0d31169824fb",
       "review_paths": [
-        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md"
+        "管理档案/审查/Lip-Sync-ML制作交接-来源与读者审查.md",
+        "管理档案/审查/含空格正文目标-CommonMark导航修复.md"
       ]
     },
     {
@@ -3049,10 +3051,11 @@
       "origin": "source-grounded-steampipe-pack-update",
       "scope_note": "区分源资产、包字节、下载与本地重建；不推算实际耗时、空间或通用最优布局。",
       "review_paths": [
-        "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md"
+        "管理档案/审查/SteamPipe资源包更新-来源与读者审查.md",
+        "管理档案/审查/含空格正文目标-CommonMark导航修复.md"
       ],
       "source_record": "管理档案/来源笔记/steampipe-pack-update.json",
-      "reader_sha256": "31a45b657c762fc9d9253f4903676cba3861c5aa47a4b44c352347dd1fe8a8f7"
+      "reader_sha256": "8a4a55c57e3f9ccf369c1a0e0ea9ec0c9e207336dc376c38f25ee81ab0ffda03"
     },
     {
       "internal_id": "CASE-ANIM-003",
