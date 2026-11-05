@@ -3073,10 +3073,11 @@
       "scope_note": "Lua5.4有限生命周期解释与原创未执行场景；不是生产调度器、线程或外部资源关闭认证",
       "review_paths": [
         "管理档案/审查/Lua协程暂停与关闭-来源与读者审查.md",
-        "管理档案/审查/Lua协程关闭-原生观察与读者审查.md"
+        "管理档案/审查/Lua协程关闭-原生观察与读者审查.md",
+        "管理档案/审查/Lua引用复用-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/lua-coroutine-close.json",
-      "reader_sha256": "0ad2060383c0a27d87c2965fce4e910df9548275db7ba9a0b349b22493119c61",
+      "reader_sha256": "3ddd17d394dbb54814ad7c70f01e8f70a14d0d6193b0c17f91338c3f2b477b12",
       "native_close_support": {
         "path": "管理档案/支持资料/协程已经dead，为什么关闭时还能调用收尾方法.md",
         "sha256": "04e567e042cd1e3a5d22b9456f13dfe789c172f8298f005fb29ee5ecf5363b88",
@@ -3084,6 +3085,12 @@
         "source_record": "管理档案/来源笔记/lua-close-native.json",
         "review": "管理档案/审查/Lua协程关闭-原生观察与读者审查.md",
         "scope": "One main and one independent operator execution, same host and fixed release inputs; second operator knew first result. Three pure Lua table/event branches per run, seven recorded stages. Not blind or cross-platform."
+      },
+      "reference_lifetime_support": {
+        "path": "管理档案/支持资料/Lua引用已经释放，为什么迟到回调还可能找到另一个函数.md",
+        "sha256": "b79f791b165a6a1d7f06e6e4dbe1145e5fea6a80ab97fab6c093d30fd341af4e",
+        "review": "管理档案/审查/Lua引用复用-来源与读者审查.md",
+        "scope": "Fixed Lua5.4.8 reference-key reuse and late consumer identity, source-only finite sequence; existing coroutine observations unchanged."
       }
     },
     {
