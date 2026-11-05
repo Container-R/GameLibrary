@@ -1,0 +1,38 @@
+{
+  "run_id": "20261105T202200Z-experiment-assignment-unit",
+  "base_sha": "d3065c453c7d0e98ba5c66ad46198e75f87b5e84",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Added a finite player-assignment support distinguishing valid repeated sessions from independent allocation units.",
+  "artifact_paths": [
+    "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
+    "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+    "GameLibrary/数据分析/指标设计/README.md",
+    "管理档案/来源笔记/experiment-assignment-unit.json",
+    "管理档案/审查/玩家实验分配与场次记录-读者审查.md"
+  ],
+  "sources_examined": [
+    "https://www.exp-platform.com/Documents/IEEE2010ExP.pdf",
+    "https://alexdeng.github.io/public/files/kdd2018-dm.pdf"
+  ],
+  "reader_books_total": 106,
+  "post_baseline_research_books": 51,
+  "frozen_baseline_books": 55,
+  "task_count": 279,
+  "checks": {
+    "new_reader_books": 0,
+    "new_supports": 1,
+    "new_tasks": 0,
+    "game_or_online_experiments": 0,
+    "scope": "Primary sources, independent six-assignment arithmetic and complete reader/source review."
+  },
+  "previous_readback": {
+    "sha": "d3065c453c7d0e98ba5c66ad46198e75f87b5e84",
+    "writer_exact_content_matches": 9,
+    "independent_exact_content_matches": 9,
+    "exact_changed_paths": 9,
+    "scope": "Fixed-commit text/hash/link checks and direct/host/return routes. Historical host preserved apart from optional entry; staticUV book unchanged. No engine/build/runtime/human tests."
+  },
+  "next_action": "Derive the cluster-ratio variance expression from KDD 2018 equation 6, audit assumptions and a deterministic arithmetic check, and decide whether it adds useful operational detail without claiming four-player asymptotic validity."
+}
