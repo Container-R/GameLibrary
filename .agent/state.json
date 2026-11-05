@@ -33,25 +33,25 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T065125Z-dispatcher-publication-boundary",
-  "last_real_progress_at": "2026-11-05T06:51:25Z",
-  "last_commit_sha": "6f8585bbef2dce50ba9a3273099998523131f6ab",
+  "last_run_id": "20261105T070832Z-gpu-clock-domains",
+  "last_real_progress_at": "2026-11-05T07:08:32Z",
+  "last_commit_sha": "054bf09a46f1b7c6241a7e99f9b1f337ec9e8eb9",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "6f8585bbef2dce50ba9a3273099998523131f6ab",
-    "latest_verified_content_sha": "6f8585bbef2dce50ba9a3273099998523131f6ab",
+    "last_verified_head_sha": "054bf09a46f1b7c6241a7e99f9b1f337ec9e8eb9",
+    "latest_verified_content_sha": "054bf09a46f1b7c6241a7e99f9b1f337ec9e8eb9",
     "reader_books_total": 101,
     "post_baseline_research_books": 46,
-    "scope": "Optional fixed-version dispatcher support separates invocation boundaries from frames and payload lifetime; no native execution.",
+    "scope": "D3D12 timestamp interval versus CPU timeline calibration; source and finite arithmetic only.",
     "status": "Accepted support and reader entry belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
     "status": "healthy",
-    "observed_snapshot": "4c814742d1ea712248813a65f3dacf528cc5ceb7",
-    "observation_interval": "2026-11-05T04:51:00Z/2026-11-05T04:53:00Z",
-    "record": ".agent/audits/20261105T045000Z-reader-summary.md",
-    "scope": "Independent EnTT reader and fixed-source sample; no runtime rerun or whole-library approval. Nonblocking task wording clarified in this increment.",
+    "observed_snapshot": "6f8585bbef2dce50ba9a3273099998523131f6ab",
+    "observation_interval": "2026-11-05T06:46:00Z/2026-11-05T06:51:00Z",
+    "record": ".agent/audits/20261105T065000Z-reader-summary.md",
+    "scope": "Public summary of independent Days Gone source, arithmetic and CommonMark route review; not whole-library or native validation.",
     "consecutive_no_progress_checks": 0
   },
   "record_transformation": {

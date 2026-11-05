@@ -1847,7 +1847,17 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/presentation-queue-latency-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。"
+      "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
+      "reader_sha256": "e687a1df94cf145a72f414309eb0838bf41b80c9941b5a290a602a346a4026ad",
+      "review_paths": [
+        "管理档案/审查/GPU计数与CPU时间轴-来源与读者审查.md"
+      ],
+      "gpu_clock_support": {
+        "support": "管理档案/支持资料/GPU计时已经换成毫秒，为什么仍不能直接放到CPU时间线上.md",
+        "sha256": "69175a457822bf8ef6f77b6f4dc4b0f4f7e1f7f22f1b865a4c024801bfd333ce",
+        "review": "管理档案/审查/GPU计数与CPU时间轴-来源与读者审查.md",
+        "scope": "D3D12 official documentation and original finite arithmetic; no GPU execution, clock-setting change or display timing measurement."
+      }
     },
     {
       "internal_id": "SOL-UX-001",
