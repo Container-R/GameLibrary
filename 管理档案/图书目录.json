@@ -1586,13 +1586,14 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "86df3328e39d5e6affc4aeedaf7c7c062fb3bd5de108d75835298a89e60d0f05",
+      "reader_sha256": "20994be01d5dfc36ea786e24d45a5ff3b2f2784de196a3d4588bb0831bddbf46",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
         "管理档案/审查/持续力与一次冲量-来源与读者审查.md",
         "管理档案/审查/有界抽样与随机流消费-来源与读者审查.md",
-        "管理档案/审查/乘加舍入与回放-来源与读者审查.md"
+        "管理档案/审查/乘加舍入与回放-来源与读者审查.md",
+        "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Optional force and impulse units/lifetime explanation; not a new physics run or trajectory-equivalence claim.",
@@ -1636,6 +1637,12 @@
         "review": "管理档案/审查/乘加舍入与回放-来源与读者审查.md",
         "source": "管理档案/来源笔记/fma-rounding-replay.json",
         "scope": "Independent source reading and paper derivation under specified binary32/rounding operations; no execution."
+      },
+      "dispatcher_publication_support": {
+        "support": "管理档案/支持资料/事件排进队列，为什么还不能说它会在下一帧处理.md",
+        "sha256": "7db87e17124c53dd9543ec504d7188c3c56c4ba95d05eff58f2fdf9e53c3751d",
+        "review": "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md",
+        "scope": "Fixed v3.13.2 source and bounded original hand trace; no dispatcher execution or next-frame guarantee."
       }
     },
     {
