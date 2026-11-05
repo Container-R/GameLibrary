@@ -1698,14 +1698,15 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/rendering/block-compressed-mip-budget.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "aee9d502efea5eb3d37d7fcbb2895183232172b52783f94213600c469ddd3b32",
+      "reader_sha256": "146fd1f7771de457014eb835d112211e7be06697c1efd4778fbc456bc43fd65e",
       "review_paths": [
         "管理档案/审查/纹理重复坐标与梯度-来源与读者审查.md",
         "管理档案/审查/纹理上传行跨度-来源与读者审查.md",
         "管理档案/审查/法线Mip高光-原文与独立代数审读.md",
         "管理档案/审查/BC1透明模式-来源与读者审查.md",
         "管理档案/审查/图集内部边界过滤-来源与读者审查.md",
-        "管理档案/审查/Journey闪点与过滤遮罩-来源与读者审查.md"
+        "管理档案/审查/Journey闪点与过滤遮罩-来源与读者审查.md",
+        "管理档案/审查/Mip范围与有效采样器-来源与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Optional texture-coordinate wrapping and explicit-gradient explanation; budget arithmetic and historical results unchanged. Historical hash below binds the earlier gradient-only support version.",
@@ -1762,6 +1763,13 @@
         "sha256": "82d1dd4276c949070dfb2aaf7eaf13cae8e3cc596b5c7e8566b8ccf3823e0a6d",
         "review": "管理档案/审查/Journey闪点与过滤遮罩-来源与读者审查.md",
         "scope": "Selected original 2012 slides and notes; author-reported artistic response and mask choices, no shader or game execution."
+      },
+      "mip_completeness_support": {
+        "path": "管理档案/支持资料/只保留部分Mip时，OpenGL还要核对哪些状态.md",
+        "sha256": "c555ae7a38ed6f6d6f06ee1e0305e69c08a333c8e67ec9a58c14a5aec1892285",
+        "review": "管理档案/审查/Mip范围与有效采样器-来源与读者审查.md",
+        "previous_reader_sha256": "aee9d502efea5eb3d37d7fcbb2895183232172b52783f94213600c469ddd3b32",
+        "scope": "OpenGL4.6 Core fixed specification and conditional mutable RGBA8 example; no GPU execution. Prior BC arithmetic and evidence unchanged."
       }
     },
     {
