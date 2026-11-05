@@ -1517,13 +1517,14 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/client-prediction-authority-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "7144f795a57fea62a7e6226664c66ae783bd6319a941c63e994dba78dbcb1363",
+      "reader_sha256": "5bc86603b529b977e3fdc53326ce071406c433926c05d68797c9cad1f7adb8d3",
       "review_paths": [
         "管理档案/审查/快照插值时间-来源与读者审查.md",
         "管理档案/审查/既有命中回溯支持-读者入口审查.md",
         "管理档案/审查/延迟补偿后续查询-固定源码与读者审查.md",
         "管理档案/审查/Overwatch技能脚本同步-来源与读者审查.md",
-        "管理档案/审查/网络休眠与变化比较基线-来源与读者审查.md"
+        "管理档案/审查/网络休眠与变化比较基线-来源与读者审查.md",
+        "管理档案/审查/RPC与复制状态依赖-来源与读者审查.md"
       ],
       "snapshot_time_support": {
         "scope": "Optional sample-time versus arrival-time interpolation with explicit missing-endpoint and exact-sample branches.",
@@ -1585,6 +1586,13 @@
         "sha256": "4b145bbfd6a1a5efb9c91843ceebf24fca1837bd6954419ecca54618b4c3b90e",
         "review": "管理档案/审查/网络休眠与变化比较基线-来源与读者审查.md",
         "scope": "UE5.6 documentation and original comparison-baseline trace; no engine or network execution."
+      },
+      "rpc_state_support": {
+        "path": "管理档案/支持资料/UE的可靠开火通知到了，武器模式为什么还是旧的.md",
+        "sha256": "25fb35e3949d9591ff2758a46b7e8bb3049130df0671b76f65605304857fc49b",
+        "review": "管理档案/审查/RPC与复制状态依赖-来源与读者审查.md",
+        "previous_reader_sha256": "7144f795a57fea62a7e6226664c66ae783bd6319a941c63e994dba78dbcb1363",
+        "scope": "UE5.5 documentation and original conditional dependency example; no engine or network execution. Prior prediction evidence unchanged."
       }
     },
     {
