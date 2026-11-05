@@ -33,19 +33,19 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T191100Z-skinning-normal-gradient",
-  "last_real_progress_at": "2026-11-05T19:11:00Z",
-  "last_commit_sha": "49df6dbe250cad1c62978cebbd2d397d91e26145",
+  "last_run_id": "20261105T192500Z-zero-weight-normal-data",
+  "last_real_progress_at": "2026-11-05T19:25:00Z",
+  "last_commit_sha": "bb51302fc34b2480e26e5e8fe3ba3e1a5267d011",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "49df6dbe250cad1c62978cebbd2d397d91e26145",
-    "latest_verified_content_sha": "49df6dbe250cad1c62978cebbd2d397d91e26145",
+    "last_verified_head_sha": "bb51302fc34b2480e26e5e8fe3ba3e1a5267d011",
+    "latest_verified_content_sha": "bb51302fc34b2480e26e5e8fe3ba3e1a5267d011",
     "reader_books_total": 105,
     "post_baseline_research_books": 50,
-    "scope": "Finite skinning-normal support with direct existing-area and book entries; no new book, task, asset or renderer execution.",
+    "scope": "Existing skinning-normal support extended with a zero-position-weight data example; no new book, support, task or execution.",
     "status": "Accepted support and entry increment belong to containing commit; SHA fields record preceding verified publication."
   },
-  "next_action": "Read the original Tarini/Panozzo/Sorkine-Hornung 2014 method for stored-mesh weight gradients and normal transformation; identify prerequisites and distinct implementation value before proposing any further reader increment.",
+  "next_action": "Compare Riot's Legends of Runeterra scripting-transition case with existing build/cache support; accept only a distinct decision about explicit system activation rather than inferred data-file presence.",
   "audit": {
     "status": "healthy",
     "observed_snapshot": "15f352eadcf7c3cd4123b72c8026df82faf36965",

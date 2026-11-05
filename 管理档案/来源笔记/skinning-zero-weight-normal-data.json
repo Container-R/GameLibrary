@@ -1,0 +1,50 @@
+{
+  "id": "SRC-SKINNING-ZERO-WEIGHT-20261105",
+  "title": "Zero position weight and per-vertex normal-correction data",
+  "accessed_at": "2026-11-05",
+  "status": "source-backed",
+  "reader": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+  "section": "权重为0的骨骼，为什么还可能留在法线数据里",
+  "sources": [
+    {
+      "authors": [
+        "Marco Tarini",
+        "Daniele Panozzo",
+        "Olga Sorkine-Hornung"
+      ],
+      "title": "Accurate and Efficient Lighting for Skinned Models",
+      "publication": "Computer Graphics Forum 33(2), 421–428, 2014",
+      "url": "https://igl.ethz.ch/projects/skinning/lighting/EG2014-Lighting.pdf",
+      "physical_pages": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "sections": [
+        "3.1 Per-triangle LBS Jacobian",
+        "3.2 Per-vertex LBS Jacobian",
+        "4.1–4.3 Tangent transport, factors and reference bone",
+        "5 Implementation recipe"
+      ],
+      "scope": "Technical text and equations for reconstructed gradients, extra zero-position-weight influences and tangent factors. No original code, figure or performance result adopted."
+    }
+  ],
+  "original_analysis": "A four-face diamond uses piecewise affine bone weight max(x,0). Explicit equal averaging gives center estimate (1/2,0,0), despite zero stored position weight. Chosen tangent factors and a translated second bone yield normal (−1,0,2)/sqrt(5); the transform/index of that zero-position-weight bone remains required.",
+  "limits": [
+    "The center is a kink, not a differentiable nonnegative interior zero with nonzero exact gradient.",
+    "Equal averaging is deliberately selected for this example, not claimed as faithful reproduction of the paper's cotangent/Voronoi preprocessing.",
+    "The estimated center normal is not each finite triangle's normal.",
+    "Tangent transport depends on the supplied shading plane; this is not a replacement for authored normals.",
+    "Discarding extra influences under a capacity limit is an approximation."
+  ],
+  "not_performed": [
+    "Original source-code inspection",
+    "Execution of preprocessing or shader code",
+    "Numerical program",
+    "Game or asset test",
+    "Performance or visual benchmark",
+    "Human usability testing"
+  ],
+  "preservation": "Earlier triangle diagnostic remains unchanged; only its obsolete unread-paper exclusion is removed, and this separate source record covers the new section."
+}

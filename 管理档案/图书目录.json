@@ -3007,13 +3007,20 @@
       "weight_gradient_normal_support": {
         "id": "SUP-ANIM-NORMAL-001",
         "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
-        "sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
+        "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
         "source_record": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
         "review": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
         "previous_reader_blob": "436fd9f987dd54f6270e3ceb4b2d46b59186e70c",
         "previous_recorded_reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
         "reader_revision_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
-        "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result."
+        "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result.",
+        "zero_position_weight_extension": {
+          "previous_support_sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
+          "current_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+          "source_record": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
+          "review": "管理档案/审查/零位置权重与法线数据-补充审查.md",
+          "scope": "Explicit equal-average one-ring reconstruction and retained transform/index requirement; not the original preprocessor implementation."
+        }
       }
     },
     {
@@ -3704,7 +3711,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "49df6dbe250cad1c62978cebbd2d397d91e26145",
+  "publication_base_sha": "bb51302fc34b2480e26e5e8fe3ba3e1a5267d011",
   "accounted_for_original_items": 55,
   "reader_books_total": 105,
   "post_baseline_research_books": 50,
