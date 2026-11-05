@@ -1,0 +1,37 @@
+{
+  "run_id": "20261105T201400Z-vlm-density-budget",
+  "base_sha": "b70e3844b3693af51392f535c1377b08432596b0",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Added a bounded Unreal VLM support distinguishing requested cell size, retained samples and brick-memory limits.",
+  "artifact_paths": [
+    "管理档案/支持资料/Unreal体积光照调细后，为什么角色附近的样本仍不够密.md",
+    "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+    "GameLibrary/图形渲染/场景光照/README.md",
+    "管理档案/来源笔记/unreal-vlm-density-budget.json",
+    "管理档案/审查/Unreal体积光照密度与预算-读者审查.md"
+  ],
+  "sources_examined": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/volumetric-lightmaps-in-unreal-engine?application_version=5.6"
+  ],
+  "reader_books_total": 106,
+  "post_baseline_research_books": 51,
+  "frozen_baseline_books": 55,
+  "task_count": 279,
+  "checks": {
+    "new_reader_books": 0,
+    "new_supports": 1,
+    "new_tasks": 0,
+    "engine_or_bake_executions": 0,
+    "scope": "Version-qualified primary text, conditional comparison and independent complete reader/source review."
+  },
+  "previous_readback": {
+    "sha": "b70e3844b3693af51392f535c1377b08432596b0",
+    "writer_exact_content_matches": 11,
+    "independent_exact_content_matches": 11,
+    "exact_changed_paths": 11,
+    "scope": "Fixed-commit text/hash/link checks; root, direct and shelf routes plus scene-lighting cross-entry. Prior normal-bake reader unchanged. No engine/bake/image/browser-rendering or human testing."
+  },
+  "next_action": "Read primary experimentation guidance on player-level randomization and repeated observations; compare existing analyst, completion-rate and retention readers before accepting a concrete increment."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "SRC-UNREAL-VLM-DENSITY-20261105",
+  "title": "Unreal体积光照调细后，为什么角色附近的样本仍不够密",
+  "type": "source-note",
+  "status": "source-backed",
+  "updated_at": "2026-11-05",
+  "host": "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+  "path": "管理档案/支持资料/Unreal体积光照调细后，为什么角色附近的样本仍不够密.md",
+  "source": {
+    "organization": "Epic Games",
+    "title": "Volumetric Lightmaps",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/volumetric-lightmaps-in-unreal-engine?application_version=5.6",
+    "version": "Unreal Engine 5.6 Documentation",
+    "read_at": "2026-11-05",
+    "publication_date": "unknown",
+    "sections": [
+      "How It Works",
+      "Enabling Volumetric Lightmap Visualization",
+      "Settings: Volumetric Lighting Method, Detail Cell Size, Maximum Brick Memory Mb",
+      "Additional Notes: first item",
+      "Troubleshooting: first item"
+    ]
+  },
+  "original_analysis": "An unexecuted same-baseline comparison keeps d/2 fixed and changes M to M2. More allowed memory is not proof of sufficient memory; denser retained samples are not proof of acceptable character output.",
+  "scope": [
+    "Single-level, non-World-Partition discussion chosen for this explanation, not a documented compatibility conclusion.",
+    "Project must already use the documented VLM precomputed path and settings.",
+    "Low density does not uniquely diagnose memory pressure; nearly uniform lighting is a documented alternative.",
+    "GPU per-pixel and mobile CPU bounds-center evaluation are distinguished.",
+    "No exact eightfold total-memory prediction, measured performance or universal leakage fix."
+  ],
+  "not_performed": [
+    "Source figure inspection",
+    "Engine or implementation-source inspection",
+    "Lighting build, asset inspection or image comparison",
+    "Runtime or performance measurement",
+    "Human usability testing"
+  ],
+  "deduplication": {
+    "snapshot": "b70e3844b3693af51392f535c1377b08432596b0",
+    "readers_compared": [
+      "CASE-GFX-001",
+      "SOL-MODEL-003"
+    ],
+    "source_scope": "Read both complete neighboring readers; screened current catalog/queue and default-branch VLM terminology. Not an exhaustive all-history audit.",
+    "decision": "Optional support for a distinct Unreal build-setting question; existing historical reader only gains a link."
+  }
+}

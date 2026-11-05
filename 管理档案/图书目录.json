@@ -2440,7 +2440,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/02eb6dbf6897b8582b31c2169c04060d5d6dccf4/case-studies/rendering/tlou2-hybrid-probe-content-frequency.md",
       "old_path_history_commit": "02eb6dbf6897b8582b31c2169c04060d5d6dccf4",
-      "reader_sha256": "1cbaacebfe40fef2d775d62da16f12027a2b105fdf412cbb0fc2c0c3bc61c722",
+      "reader_sha256": "7bdf698a72435dcc41021e8c2e8f79df8f224fb7f88e43b65138e3b11df6570d",
       "deringing_stage_maintenance": {
         "source_record": "管理档案/来源笔记/tlou2-deringing-stage-boundary.json",
         "review": "管理档案/审查/TLOU2去振铃阶段-来源与读者审查.md",
@@ -2453,7 +2453,15 @@
       },
       "review_paths": [
         "管理档案/审查/TLOU2法线遮罩与探针遮挡-来源与读者审查.md"
-      ]
+      ],
+      "vlm_density_support": {
+        "path": "管理档案/支持资料/Unreal体积光照调细后，为什么角色附近的样本仍不够密.md",
+        "sha256": "72b083892be4c7877d28c29dcfa91b54f12d185ae4c79a05fcfcd6f9a8006a1c",
+        "previous_host_sha256": "1cbaacebfe40fef2d775d62da16f12027a2b105fdf412cbb0fc2c0c3bc61c722",
+        "source_record": "管理档案/来源笔记/unreal-vlm-density-budget.json",
+        "review": "管理档案/审查/Unreal体积光照密度与预算-读者审查.md",
+        "scope": "Version-qualified official documentation and original conditional comparison; no engine or image testing."
+      }
     },
     {
       "internal_id": "SOL-LOC-002",
@@ -3757,7 +3765,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "d72e5c1fa8fda678efce1092667a557672b10306",
+  "publication_base_sha": "b70e3844b3693af51392f535c1377b08432596b0",
   "accounted_for_original_items": 55,
   "reader_books_total": 106,
   "post_baseline_research_books": 51,
