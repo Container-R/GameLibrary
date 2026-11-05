@@ -1,0 +1,41 @@
+{
+  "id": "SRC-STEAM-DLC-PROGRESS-20261105",
+  "title": "Steam optional DLC progress and installation contracts",
+  "accessed_at": "2026-11-05",
+  "status": "source-backed",
+  "sources": [
+    {
+      "organization": "Valve",
+      "title": "ISteamApps Interface",
+      "url": "https://partner.steamgames.com/doc/api/ISteamApps",
+      "sections": [
+        "GetDlcDownloadProgress",
+        "BIsDlcInstalled",
+        "InstallDLC",
+        "DlcInstalled_t",
+        "BGetDLCDataByIndex"
+      ],
+      "scope": "Progress query predicate; ownership-and-install predicate; void install request; callback App ID; store availability metadata."
+    },
+    {
+      "organization": "Valve",
+      "title": "Downloadable Content (DLC)",
+      "url": "https://partner.steamgames.com/doc/store/application/dlc",
+      "sections": [
+        "Programmatically Downloading and Installing DLC",
+        "Additional Notes"
+      ],
+      "scope": "Optional on-demand installation and manual client installation."
+    }
+  ],
+  "version_scope": "Rolling official documentation; no fixed document revision or SDK binary version asserted.",
+  "original_analysis": "The negation of a progress-query conjunction does not imply installation completion. Four independent hypothetical inputs distinguish progress availability, platform install conditions and game resource loading; they are not an observed event sequence.",
+  "not_performed": [
+    "Steam runtime execution",
+    "Account sign-in or license mutation",
+    "Purchases or downloads",
+    "Performance measurement",
+    "Human usability study"
+  ],
+  "reader": "GameLibrary/平台与发行/平台接入/附加内容/Steam DLC下载进度查不到，为什么不能直接进入新关卡.md"
+}

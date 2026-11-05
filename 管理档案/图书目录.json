@@ -3625,6 +3625,30 @@
       "related_roles": [
         "ROLE-PROG-001"
       ]
+    },
+    {
+      "internal_id": "SOL-PLATFORM-004",
+      "reader_title": "Steam DLC下载进度查不到，为什么不能直接进入新关卡",
+      "floor": "平台与发行",
+      "area": "平台接入",
+      "shelf": "附加内容",
+      "canonical_reader_path": "GameLibrary/平台与发行/平台接入/附加内容/Steam DLC下载进度查不到，为什么不能直接进入新关卡.md",
+      "current_read_path": "GameLibrary/平台与发行/平台接入/附加内容/Steam DLC下载进度查不到，为什么不能直接进入新关卡.md",
+      "reader_body_status": "published",
+      "editorial_status": "官方接口与完整正文经独立审读，非时序假设输入及事件条件修订已复核；未运行Steam。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/SteamDLC进度与安装-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/steam-dlc-progress-installation.json",
+      "reader_sha256": "ef719e17832e31470440ddbb9213772eb8345c38d1b33a48885b07720b6baf90",
+      "related_roles": [
+        "ROLE-PROG-001"
+      ],
+      "updated_at": "2026-11-05",
+      "status": "source-backed",
+      "type": "solution",
+      "primary_discipline": "PLATFORM"
     }
   ],
   "rewritten_reader_books": 55,
@@ -3637,8 +3661,8 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "5181646509bcb7f13c70e0cc01a28dc941935c20",
   "accounted_for_original_items": 55,
-  "reader_books_total": 104,
-  "post_baseline_research_books": 49,
+  "reader_books_total": 105,
+  "post_baseline_research_books": 50,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

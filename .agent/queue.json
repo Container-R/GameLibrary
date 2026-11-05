@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-03T21:41:06Z",
-      "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
+      "last_progress_at": "2026-11-05T17:40:09Z",
+      "next_action": "Continue uncovered concrete engineering questions; preserve blocked source/tracing tasks and prefer integration for overlaps.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -9717,6 +9717,34 @@
       ],
       "verification_method": "Selected primary author text/static slides and independent reader/math review; no engine, runtime, video or player test.",
       "publication_scope": "New finite reader in existing populated camera shelf, in containing commit."
+    },
+    {
+      "id": "TASK-2026-0278",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Steam可选章节的进度查询返回false时，怎样避免误判为安装完成并进入关卡？",
+      "discipline": "PLATFORM",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "补平台接入中的具体DLC条件误用，不重复云存档、手柄或认证等待。",
+      "expected_artifact": "GameLibrary/平台与发行/平台接入/附加内容/Steam DLC下载进度查不到，为什么不能直接进入新关卡.md",
+      "acceptance": [
+        "既有目录与任务语义去重",
+        "官方接口与按需安装来源核对",
+        "假设输入与真实时序明确区分",
+        "独立全文审读与条件修订复核",
+        "实际导航与完整公开载荷检查"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-05T17:40:09Z",
+      "next_action": "具体接入须用获准测试账号与构建检查不同安装入口和加载失败恢复，不把纸面案例当Steam运行结果。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/平台与发行/平台接入/附加内容/Steam DLC下载进度查不到，为什么不能直接进入新关卡.md",
+        "管理档案/来源笔记/steam-dlc-progress-installation.json",
+        "管理档案/审查/SteamDLC进度与安装-来源与读者审查.md"
+      ],
+      "verification_method": "Primary documentation and independent complete reader review; original separate hypothetical inputs, no Steam execution, purchase or account action.",
+      "publication_scope": "New reader and nonempty additional-content shelf in containing commit."
     }
   ],
   "execution_policy": {
