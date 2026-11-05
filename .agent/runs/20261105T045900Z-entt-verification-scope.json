@@ -1,0 +1,13 @@
+{
+  "run_id": "20261105T045900Z-entt-verification-scope",
+  "task_id": "TASK-2026-0176",
+  "outcome": "Clarify component-address source-only scope while retaining historical finite loader observations; archive a public audit summary.",
+  "verification": "Only verification_method and next_action change in the existing queue task. No reader, protocol, output or execution identity changes.",
+  "previous_verified_publication": {
+    "sha": "ef57134fa6d9fceea538b05cdaea991136c309e4",
+    "readback_at": "2026-11-05T04:56:45Z",
+    "scope": "Six changed files and actual reader navigation verified."
+  },
+  "audit_summary": ".agent/audits/20261105T045000Z-reader-summary.md",
+  "limitations": "No new execution; audit covers its fixed snapshot, not later audio content."
+}

@@ -6662,9 +6662,9 @@
       ],
       "attempts": 1,
       "last_progress_at": "2026-11-04T19:39:49Z",
-      "next_action": "Apply the explicit restore/import assumptions to the project; no general save format or runtime result supplied.",
+      "next_action": "Apply the explicit restore/import and component-lifetime assumptions to the project. Do not generalize the historical finite loader observations into a complete save format or a pointer-lifetime runtime result.",
       "blockers": [],
-      "verification_method": "Fixed primary-source analysis and conditional box example, independently reviewed. No allocation, serialization, native or network execution.",
+      "verification_method": "The component-address increment is fixed-source analysis with an independently reviewed conditional example and no new execution. The reader separately retains historical finite loader-mapping and simple component-field observations under their own protocols and limits; these are not pointer-lifetime experiments.",
       "component_reference_increment": {
         "reader": "GameLibrary/引擎与工具/运行时系统/缓存与存档/实体句柄什么时候能保存，什么时候需要映射.md",
         "review": "管理档案/审查/实体句柄保存与映射-来源和读者审查.md",

@@ -33,32 +33,26 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T045123Z-audio-occlusion-sampling",
-  "last_real_progress_at": "2026-11-05T04:51:23Z",
-  "last_commit_sha": "4c814742d1ea712248813a65f3dacf528cc5ceb7",
+  "last_run_id": "20261105T045900Z-entt-verification-scope",
+  "last_real_progress_at": "2026-11-05T04:59:00Z",
+  "last_commit_sha": "ef57134fa6d9fceea538b05cdaea991136c309e4",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "4c814742d1ea712248813a65f3dacf528cc5ceb7",
-    "latest_verified_content_sha": "4c814742d1ea712248813a65f3dacf528cc5ceb7",
+    "last_verified_head_sha": "ef57134fa6d9fceea538b05cdaea991136c309e4",
+    "latest_verified_content_sha": "ef57134fa6d9fceea538b05cdaea991136c309e4",
     "reader_books_total": 99,
     "post_baseline_research_books": 44,
-    "scope": "Existing audio reader gains a valid-sample occlusion support; no new book or execution.",
-    "status": "Accepted reader increment belongs to containing commit."
+    "scope": "Steam Audio support verified; this increment clarifies existing EnTT verification scope without changing historical evidence.",
+    "status": "Metadata correction and historical audit summary belong to the containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
-    "status": "blocked-external",
-    "observed_snapshot": "0e4df16702a48234593c06e4d8d208b6133333d9",
-    "observed_at": "2026-11-05T02:49:00Z",
-    "observation_interval": "2026-11-05T02:46:00Z/2026-11-05T02:49:00Z",
-    "record": ".agent/audits/20261105T025000Z-reader-summary.md",
-    "scope": "Historical public summary of TA reader and local finite-math draft inspection; no runtime rerun or whole-library approval.",
-    "consecutive_no_progress_checks": 0,
-    "subsequent_publication": {
-      "sha": "8dee106cca4ac1446d45bc59e79bc117dc947233",
-      "readback_at": "2026-11-05T04:17:55Z",
-      "scope": "Later EnTT publication verified separately; not retroactively part of the audit."
-    }
+    "status": "healthy",
+    "observed_snapshot": "4c814742d1ea712248813a65f3dacf528cc5ceb7",
+    "observation_interval": "2026-11-05T04:51:00Z/2026-11-05T04:53:00Z",
+    "record": ".agent/audits/20261105T045000Z-reader-summary.md",
+    "scope": "Independent EnTT reader and fixed-source sample; no runtime rerun or whole-library approval. Nonblocking task wording clarified in this increment.",
+    "consecutive_no_progress_checks": 0
   },
   "record_transformation": {
     "scope": "Public progress, repository-relative recovery links and commit evidence only. Execution scheduling and transport diagnostics are maintained outside this public state.",
