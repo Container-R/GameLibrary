@@ -9605,6 +9605,34 @@
       ],
       "verification_method": "Historical primary text and independent reader/arithmetic review; original finite hand model, no game/native/performance execution.",
       "publication_scope": "New reader and actual shelf entry in containing commit."
+    },
+    {
+      "id": "TASK-2026-0274",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "排除绕行成员后，为什么共享战斗方向仍会改变，固定代表位置何时该退出？",
+      "discipline": "AI",
+      "status": "published",
+      "priority": 77,
+      "priority_rationale": "原作者历史小队协同案例，补共享输入集合变化，不重复效用选择惯性。",
+      "expected_artifact": "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
+      "acceptance": [
+        "现有AI与相邻数学问题去重",
+        "原作者文字及关键图核对",
+        "原创有限算术和边界",
+        "独立全文读者审读",
+        "完整公开载荷与真实导航"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-05T06:28:41Z",
+      "next_action": "实际接入另核角色资格、代表位置生命周期及空间消费方，不继承未公开阈值或性能。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
+        "管理档案/来源笔记/days-gone-frontline-ghost.json",
+        "管理档案/审查/DaysGone前线代表位置-来源与读者审查.md"
+      ],
+      "verification_method": "Historical primary chapter and independent source/reader/arithmetic review; original finite hand example, no runtime or performance execution.",
+      "publication_scope": "New reader and populated squad-coordination shelf in containing commit."
     }
   ],
   "execution_policy": {

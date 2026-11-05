@@ -1,0 +1,35 @@
+{
+  "run_id": "20261105T062841Z-days-gone-frontline-ghost",
+  "base_sha": "950cb379500b64645a09ff2b703bbcd0aebc25c6",
+  "task_ids": [
+    "TASK-2026-0274",
+    "TASK-2026-0008"
+  ],
+  "outcome": "New bounded Days Gone spatial-input reader and populated shelf; exact remote readback required.",
+  "reader_books_total": 101,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 46,
+  "task_count": 274,
+  "artifact_paths": [
+    "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
+    "GameLibrary/游戏人工智能/行为决策/小队协同/README.md",
+    "管理档案/来源笔记/days-gone-frontline-ghost.json",
+    "管理档案/审查/DaysGone前线代表位置-来源与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 1,
+    "new_tasks": 1,
+    "executions": 0,
+    "source_scope": "Historical chapter, printedpages6/13 visual inspection by main; not game/source-code execution."
+  },
+  "deduplication_gate": {
+    "topic": "Inverse-transpose normal transformation",
+    "outcome": "Exact existing reader, formula, image and navigation already cover candidate; no duplicate article or new experiment."
+  },
+  "previous_readback": {
+    "sha": "950cb379500b64645a09ff2b703bbcd0aebc25c6",
+    "readback_at": "2026-11-05T06:20:55.337Z",
+    "changed_files": 5,
+    "remote_route_edges": 6
+  }
+}

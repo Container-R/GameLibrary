@@ -3352,6 +3352,26 @@
       "related_roles": [
         "ROLE-PROG-001"
       ]
+    },
+    {
+      "internal_id": "CASE-AI-003",
+      "reader_title": "Days Gone如何避免侧翼成员离开后带偏战线",
+      "floor": "游戏人工智能",
+      "area": "行为决策",
+      "shelf": "小队协同",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
+      "current_read_path": "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
+      "reader_body_status": "published",
+      "editorial_status": "历史原文与原创有限算术经独立审读；无游戏运行或性能测量。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/DaysGone前线代表位置-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/days-gone-frontline-ghost.json",
+      "reader_sha256": "9583dd15d5910ab5ac318b92dd8a482f085cf8ef1483e639120b8fd4683d380b",
+      "related_roles": [
+        "ROLE-PROG-001"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3364,8 +3384,8 @@
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
   "publication_base_sha": "5d3bb9c629828910624ba9ebfb24141596e5fd5c",
   "accounted_for_original_items": 55,
-  "reader_books_total": 100,
-  "post_baseline_research_books": 45,
+  "reader_books_total": 101,
+  "post_baseline_research_books": 46,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
