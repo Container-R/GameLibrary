@@ -1,0 +1,35 @@
+{
+  "run_id": "20261105T110936Z-two-bone-inner-reach",
+  "base_sha": "61a1080b37ecb6a2cd53abb16990a6f1978ac057",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Unequal two-bone inner-bound increment; containing commit requires exact remote readback.",
+  "reader_books_total": 102,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 47,
+  "task_count": 275,
+  "artifact_paths": [
+    "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+    "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+    "管理档案/审查/两骨内侧不可达-来源与读者审查.md",
+    "管理档案/审查/督导/20261105T1050-Steam统计与Unity子对象-摘要.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "executions": 0,
+    "scope": "Original finite geometry, university author text and independent reader review; no native execution."
+  },
+  "supervisor_record": {
+    "kind": "public summary, not original report",
+    "snapshot": "e55d22bc05a61ac0c9214d1208c32b909fc746e5",
+    "actual_observation_utc": "2026-11-05T10:52:47Z/2026-11-05T10:56:25Z"
+  },
+  "previous_readback": {
+    "sha": "61a1080b37ecb6a2cd53abb16990a6f1978ac057",
+    "readback_at": "2026-11-05T10:58:15.275691Z",
+    "changed_files": 5,
+    "commonmark_edges": 6
+  }
+}

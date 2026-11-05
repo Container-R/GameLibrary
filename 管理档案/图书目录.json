@@ -1052,7 +1052,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "0b3bd650c027d0e1a0dff216342075067cfb1fde12ff21da6bc696bddd0976ab",
+      "reader_sha256": "e0917480bdf96e80f4406e94819e585f9b76315925a64e8b651149e85462f0c5",
       "near_extension_support": {
         "source_record": "管理档案/来源笔记/near-extension-two-bone-geometry.json",
         "review": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
@@ -1066,8 +1066,15 @@
         "scope": "Version-selected UE5.6 documentation and hypothetical interval arithmetic; no character, engine or foot-lock execution."
       },
       "review_paths": [
-        "管理档案/审查/动画标记区间对应-来源与读者审查.md"
-      ]
+        "管理档案/审查/动画标记区间对应-来源与读者审查.md",
+        "管理档案/审查/两骨内侧不可达-来源与读者审查.md"
+      ],
+      "inner_reach_support": {
+        "path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+        "sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
+        "review": "管理档案/审查/两骨内侧不可达-来源与读者审查.md",
+        "scope": "Unequal fixed two-link positional reachability; original finite geometry, no solver execution."
+      }
     },
     {
       "internal_id": "SOL-ART2D-001",
