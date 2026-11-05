@@ -1,0 +1,31 @@
+{
+  "run_id": "20261105T053424Z-production-flow-measurement",
+  "base_sha": "7947b961779b8979ea669cc26a3e1f430d2fa764",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Explain unfinished-task boundary in finite flow measurements; exact remote readback required.",
+  "reader_books_total": 100,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 45,
+  "task_count": 273,
+  "artifact_paths": [
+    "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+    "管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
+    "管理档案/审查/在途数量与完成耗时-来源与读者审查.md"
+  ],
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "executions": 0,
+    "source_scope": "Little2011 relevant finite-window sections, not full14-page review or production results",
+    "arithmetic": "Occupancy6/4=1.5; completed-only1/4*4=1; later complete8/6=(2/6)*4"
+  },
+  "previous_readback": {
+    "sha": "7947b961779b8979ea669cc26a3e1f430d2fa764",
+    "readback_at": "2026-11-05T05:28:43.570Z",
+    "changed_files": 10,
+    "remote_route_edges": 7,
+    "physical_reader_books": 100
+  }
+}
