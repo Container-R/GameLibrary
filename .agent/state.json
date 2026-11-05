@@ -33,19 +33,19 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T202200Z-experiment-assignment-unit",
-  "last_real_progress_at": "2026-11-05T20:22:00Z",
-  "last_commit_sha": "d3065c453c7d0e98ba5c66ad46198e75f87b5e84",
+  "last_run_id": "20261105T203000Z-cluster-ratio-variance",
+  "last_real_progress_at": "2026-11-05T20:30:00Z",
+  "last_commit_sha": "20f5c8889fddd4feb15d62354a2360358e0bb032",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "d3065c453c7d0e98ba5c66ad46198e75f87b5e84",
-    "latest_verified_content_sha": "d3065c453c7d0e98ba5c66ad46198e75f87b5e84",
+    "last_verified_head_sha": "20f5c8889fddd4feb15d62354a2360358e0bb032",
+    "latest_verified_content_sha": "20f5c8889fddd4feb15d62354a2360358e0bb032",
     "reader_books_total": 106,
     "post_baseline_research_books": 51,
-    "scope": "Existing analyst reader gains a finite player-assignment support; no new book or task.",
-    "status": "Accepted support and navigation belong to containing commit; SHA fields record preceding verified publication."
+    "scope": "Optional one-arm cluster-ratio variance appendix and original arithmetic check; no new book or task.",
+    "status": "Accepted appendix and navigation belong to containing commit; SHA fields record preceding verified publication."
   },
-  "next_action": "Derive the cluster-ratio variance expression from KDD 2018 equation 6, audit assumptions and a deterministic arithmetic check, and decide whether it adds useful operational detail without claiming four-player asymptotic validity.",
+  "next_action": "Compare the current Cygames recording, narrative-role and Valve dialogue readers, then inspect one first-party Japanese narrative-production source for a nonduplicate branch-state or revision problem.",
   "audit": {
     "status": "healthy",
     "observed_snapshot": "15f352eadcf7c3cd4123b72c8026df82faf36965",
