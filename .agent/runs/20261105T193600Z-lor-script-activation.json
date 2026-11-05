@@ -1,0 +1,38 @@
+{
+  "run_id": "20261105T193600Z-lor-script-activation",
+  "base_sha": "f6e8bbe0f67286dbd83f17a4934479ea01099ab6",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Existing build reader deepened with a short historical system-transition case and original activation/content distinction.",
+  "artifact_paths": [
+    "管理档案/支持资料/旧内容没有改，为什么重建后却启用了新脚本系统.md",
+    "GameLibrary/引擎与工具/构建发布/岗位与协作/构建工程师如何交付可用的游戏版本.md",
+    "GameLibrary/引擎与工具/构建发布/README.md",
+    "管理档案/来源笔记/lor-explicit-script-activation.json",
+    "管理档案/审查/LoR脚本启用条件-来源与读者审查.md"
+  ],
+  "sources_examined": [
+    "https://www.riotgames.com/en/work-with-us/disciplines/engineering/engineering-tools-designers-legends-runeterra"
+  ],
+  "reader_books_total": 105,
+  "post_baseline_research_books": 50,
+  "frozen_baseline_books": 55,
+  "task_count": 278,
+  "checks": {
+    "new_reader_books": 0,
+    "new_supports": 1,
+    "new_tasks": 0,
+    "runtime_executions": 0,
+    "scope": "Direct primary-source reading, bounded latest-remote duplicate check and independent reader review."
+  },
+  "previous_readback": {
+    "sha": "f6e8bbe0f67286dbd83f17a4934479ea01099ab6",
+    "writer_exact_content_matches": 7,
+    "independent_exact_content_matches": 7,
+    "exact_changed_paths": 7,
+    "navigation_and_host_unchanged": true,
+    "scope": "Direct and alternate forward routes, returns and crosslinks resolved at fixed commit; no rendered-browser or human usability test."
+  },
+  "next_action": "Read primary audio scheduling clock-domain documentation and compare with existing music-transition and fade coverage before accepting a further support."
+}

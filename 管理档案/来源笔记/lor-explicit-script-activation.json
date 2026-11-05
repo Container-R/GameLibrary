@@ -1,0 +1,44 @@
+{
+  "id": "SRC-LOR-SCRIPT-ACTIVATION-20261105",
+  "title": "Residual script data and explicit system activation",
+  "type": "source-note",
+  "status": "source-backed",
+  "primary_discipline": "引擎与工具",
+  "updated_at": "2026-11-05",
+  "path": "管理档案/支持资料/旧内容没有改，为什么重建后却启用了新脚本系统.md",
+  "reader": "管理档案/支持资料/旧内容没有改，为什么重建后却启用了新脚本系统.md",
+  "sources": [
+    {
+      "authors": [
+        "Patrick Conaboy",
+        "Jeff Brock"
+      ],
+      "organization": "Riot Games",
+      "title": "Engineering Tools for Designers with Legends of Runeterra",
+      "published_at": "2021-01-26",
+      "accessed_at": "2026-11-05",
+      "url": "https://www.riotgames.com/en/work-with-us/disciplines/engineering/engineering-tools-designers-legends-runeterra",
+      "section": "Story Time: Making the Transition",
+      "supported": "Historical internal playtest failure: presence-based Python activation and residual scripts on reused build nodes. Authors suggest an explicit toggle as a useful safeguard."
+    }
+  ],
+  "original_analysis": "Separate intended execution system, expected content identity, observed effective system and content; define residual-conflict and missing-content behavior. Compare otherwise matched clean and residual workspaces against the chosen policy.",
+  "limits": [
+    "The source does not identify a toggle as the implemented incident fix or disclose its implementation.",
+    "A/B and acceptance checks are original hypothetical suggestions, not Riot fields or procedures.",
+    "An explicit setting can itself be stale or wrong and is not a compatibility, isolation or deployment-safety guarantee.",
+    "No claim about current LoR architecture."
+  ],
+  "not_performed": [
+    "Original source-code inspection",
+    "Image or video inspection",
+    "Build or game execution",
+    "Performance measurement",
+    "Human usability testing"
+  ],
+  "deduplication": {
+    "snapshot": "f6e8bbe0f67286dbd83f17a4934479ea01099ab6",
+    "scope": "Current complete build engineer reader, related prior local gates, full remote tree and default-branch title/author/source keyword queries. Not an exhaustive all-history semantic proof.",
+    "distinct_value": "Residual files influencing the choice of executing system, beyond generic cache invalidation and build output identity."
+  }
+}
