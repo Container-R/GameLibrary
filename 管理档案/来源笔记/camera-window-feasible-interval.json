@@ -1,0 +1,37 @@
+{
+  "topic": "Camera screen window, world-center constraints and smoothing output",
+  "read_at": "2026-11-05",
+  "sources": [
+    {
+      "author": "Itay Keren",
+      "title": "Scroll Back: The Theory and Practice of Cameras in Side-Scrollers",
+      "date": "2015-05-11",
+      "url": "https://www.gamedeveloper.com/design/scroll-back-the-theory-and-practice-of-cameras-in-side-scrollers",
+      "sections": [
+        "Curb Camera Motion",
+        "Smoothing",
+        "Mushroom 11",
+        "related glossary"
+      ],
+      "scope": "Selected author text and identity/date, not full article/media inspection. Mushroom11 region path is not the teaching screen window."
+    },
+    {
+      "author": "Itay Keren",
+      "title": "Scroll Back, GDC2015 original slides",
+      "url": "https://media.gdcvault.com/gdc2015/presentations/Keren_Itay_ScrollBack.pdf",
+      "pages": [
+        16,
+        20,
+        34,
+        91,
+        92,
+        96
+      ],
+      "page_convention": "One-based physical PDF pages in98-page deck",
+      "scope": "Selected static original pages individually viewed; no talk or animated demonstration viewing."
+    }
+  ],
+  "reader": "GameLibrary/玩法程序/玩法系统/镜头控制/镜头平滑后，角色为什么仍会离开构图窗口.md",
+  "original_contribution": "Fixed orthographic width10: screen window0.3–0.7 maps to camera interval[p−2,p+2]. World[-5,9] permits center[0,4]. p5 has[3,4] common range but a halfstep to1.5 yieldsscreen0.85; p7 has no common range. Original teaching policy, not production algorithm.",
+  "verification": "Independent source/reader/math review only; no engine, camera, player or comfort test. No original media copied."
+}

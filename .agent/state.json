@@ -15,7 +15,7 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 103
+    "reader_books_total": 104
   },
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -33,25 +33,25 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T123926Z-returnal-volume-particles",
-  "last_real_progress_at": "2026-11-05T12:39:26Z",
-  "last_commit_sha": "be0fcf4189aa9992337d64ba7c26791672c53400",
+  "last_run_id": "20261105T125304Z-camera-window-feasibility",
+  "last_real_progress_at": "2026-11-05T12:53:04Z",
+  "last_commit_sha": "5181646509bcb7f13c70e0cc01a28dc941935c20",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "be0fcf4189aa9992337d64ba7c26791672c53400",
-    "latest_verified_content_sha": "be0fcf4189aa9992337d64ba7c26791672c53400",
-    "reader_books_total": 103,
-    "post_baseline_research_books": 48,
-    "scope": "Optional TA support on asset requirements for visual volume-particle effects; original role and source baseline preserved.",
-    "status": "Accepted reader increment belongs to containing commit."
+    "last_verified_head_sha": "5181646509bcb7f13c70e0cc01a28dc941935c20",
+    "latest_verified_content_sha": "5181646509bcb7f13c70e0cc01a28dc941935c20",
+    "reader_books_total": 104,
+    "post_baseline_research_books": 49,
+    "scope": "Camera screen-window feasibility and smoothing-output reader; original finite teaching intervals, no execution.",
+    "status": "Accepted reader and task publication belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
     "status": "healthy",
-    "observed_snapshot": "e55d22bc05a61ac0c9214d1208c32b909fc746e5",
-    "observation_interval": "2026-11-05T10:52:47Z/2026-11-05T10:56:25Z",
-    "record": "管理档案/审查/督导/20261105T1050-Steam统计与Unity子对象-摘要.md",
-    "scope": "Public summary of independent Steam statistics and Unity subasset sources/routes, archived and read back at 2eac357a5a963eb06a5e15c152280519045e7a95. Not an audit of this video reader or the whole library.",
+    "observed_snapshot": "5181646509bcb7f13c70e0cc01a28dc941935c20",
+    "observation_interval": "2026-11-05T12:48:00Z/2026-11-05T12:51:00Z",
+    "record": "管理档案/审查/督导/20261105T1250-视频定位与选帧-摘要.md",
+    "scope": "Public summary of independent video-seek reader and fixed FFmpeg source/navigation review; not an audit of this camera book or the whole library.",
     "consecutive_no_progress_checks": 0
   },
   "record_transformation": {

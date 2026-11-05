@@ -9689,6 +9689,34 @@
       ],
       "verification_method": "Fixed original source and independent reader review with hypothetical timestamp arithmetic; no native, media, latency or presentation execution.",
       "publication_scope": "New reader and nonempty media shelf in containing commit."
+    },
+    {
+      "id": "TASK-2026-0277",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "角色构图窗口与关卡镜头范围能否同时满足，平滑追随会改变哪些结果？",
+      "discipline": "PROG",
+      "status": "published",
+      "priority": 79,
+      "priority_rationale": "将屏幕构图要求换算成可行镜头区间，区分目标、实际输出与无解，不重复已有时间Lerp。",
+      "expected_artifact": "GameLibrary/玩法程序/玩法系统/镜头控制/镜头平滑后，角色为什么仍会离开构图窗口.md",
+      "acceptance": [
+        "相关镜头与追随资料语义去重",
+        "原作者文字与原课件选页核查",
+        "固定投影与区间算例独立复核",
+        "完整读者正文和真实入口",
+        "完整公开载荷核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-05T12:53:04Z",
+      "next_action": "具体项目另核完整角色范围、投影变化、区域切换及最终运动；不将教学区间作为Mushroom11实现。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/玩法程序/玩法系统/镜头控制/镜头平滑后，角色为什么仍会离开构图窗口.md",
+        "管理档案/来源笔记/camera-window-feasible-interval.json",
+        "管理档案/审查/镜头构图窗口-来源与读者审查.md"
+      ],
+      "verification_method": "Selected primary author text/static slides and independent reader/math review; no engine, runtime, video or player test.",
+      "publication_scope": "New finite reader in existing populated camera shelf, in containing commit."
     }
   ],
   "execution_policy": {
