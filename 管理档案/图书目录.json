@@ -1188,9 +1188,10 @@
       "review_paths": [
         "管理档案/审查/分批兑换与取整-来源与读者审查.md",
         "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
-        "管理档案/审查/首份材料等待要求-来源与读者审查.md"
+        "管理档案/审查/首份材料等待要求-来源与读者审查.md",
+        "管理档案/审查/成长分支独有回报-来源与读者审查.md"
       ],
-      "reader_sha256": "9866b67d919a5690a93a41c91185e68183dc7c6e56e53f5cba6468489044452d",
+      "reader_sha256": "8fb51cbf091fff3f117092295ee6220b2e855f66c7bcfb3a6a98c44c85aa915f",
       "material_waiting_support": {
         "support": "管理档案/支持资料/平均十次能获得的材料，为什么不能保证十次内拿到.md",
         "source_record": "管理档案/来源笔记/first-material-waiting.json",
@@ -1201,6 +1202,11 @@
         "source_record": "管理档案/来源笔记/sqlite-wal-read-upgrade.json",
         "review": "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
         "scope": "Optional WAL old-snapshot explanation distinguishes restarting the business read from retrying an already-written COMMIT; finite evidence is linked separately."
+      },
+      "branch_reward_increment": {
+        "review": "管理档案/审查/成长分支独有回报-来源与读者审查.md",
+        "source": "https://www.factorio.com/blog/post/fff-275",
+        "scope": "Historical developer account of branch rewards and prerequisites plus hypothetical design example; no current-game or player-effect validation."
       }
     },
     {
