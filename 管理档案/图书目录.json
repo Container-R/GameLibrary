@@ -1287,6 +1287,17 @@
         "source_revision": "git-lfs3.6.1 commitea47a34bde1ba1ecf9eb8dc6d44fcf7aef42f5e3",
         "execution": "Fixed official document analysis and hypothetical ordinary media path only; no Git/LFS/filter/media download execution.",
         "preceding_case_review": "管理档案/审查/资产路径大小写-来源与读者审查.md"
+      },
+      "reader_sha256": "aca37f4a71d8c19337f16d7841ee09f1d287751bd8c1b8d0d2e10ebce39b1355",
+      "review_paths": [
+        "管理档案/审查/Unity子资产身份-来源与读者审查.md"
+      ],
+      "subasset_identity_support": {
+        "path": "管理档案/支持资料/Unity里同一份资产为什么还要区分子对象.md",
+        "sha256": "4311436b2f4f6d21956d8bfeabba503c1601e7d79a1c7b89ab334dea120bee2a",
+        "review": "管理档案/审查/Unity子资产身份-来源与读者审查.md",
+        "previous_reader_sha256": "1624509f7624dc2e170322157a81d4cebe6c381f45b57f19f4ce7bce14dd92c3",
+        "scope": "Unity6000.0 editor documentation and original two-object example; no import/runtime execution. Existing evidence unchanged."
       }
     },
     {
