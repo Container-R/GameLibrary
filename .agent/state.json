@@ -33,19 +33,19 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T174009Z-steam-dlc-progress",
-  "last_real_progress_at": "2026-11-05T17:40:09Z",
-  "last_commit_sha": "8c30c7985310a9917e58f114626e7aa545c57293",
+  "last_run_id": "20261105T182917Z-retention-window-definitions",
+  "last_real_progress_at": "2026-11-05T18:29:17Z",
+  "last_commit_sha": "422edcb43ab1ee44e514ddeb4736a066d6f92639",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "8c30c7985310a9917e58f114626e7aa545c57293",
-    "latest_verified_content_sha": "3dcc290f6db72de37fa8960c201bd4192db3cb28",
+    "last_verified_head_sha": "422edcb43ab1ee44e514ddeb4736a066d6f92639",
+    "latest_verified_content_sha": "422edcb43ab1ee44e514ddeb4736a066d6f92639",
     "reader_books_total": 105,
     "post_baseline_research_books": 50,
-    "scope": "Steam optional-DLC progress-query and installation reader with original nonsequential hypothetical inputs; no runtime or account actions.",
-    "status": "Reader and populated-shelf increment belong to containing commit; verified SHA fields describe preceding readbacks."
+    "scope": "Optional retention-window support and direct DATA-area entry; no new canonical book or analytics execution.",
+    "status": "Accepted support and entry increment belong to containing commit; SHA fields record preceding verified publication."
   },
-  "next_action": "Continue uncovered concrete engineering questions; preserve blocked source/tracing tasks and prefer integration for overlaps.",
+  "next_action": "Review remaining concrete reader gaps against current inventory and original sources; preserve finite source/tracing blockers and avoid duplicating existing timing or ownership explanations.",
   "audit": {
     "status": "healthy",
     "observed_snapshot": "3dcc290f6db72de37fa8960c201bd4192db3cb28",
