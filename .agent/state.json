@@ -33,17 +33,17 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T055358Z-openal-buffer-queue",
-  "last_real_progress_at": "2026-11-05T05:53:58Z",
-  "last_commit_sha": "f58ffd1c6b6a2396ee407bab96fba79f9ff724b9",
+  "last_run_id": "20261105T060148Z-localization-reader-navigation",
+  "last_real_progress_at": "2026-11-05T06:01:48Z",
+  "last_commit_sha": "9d6ba302f114f02d5a4bdd5601773f36b4bdefe0",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "f58ffd1c6b6a2396ee407bab96fba79f9ff724b9",
-    "latest_verified_content_sha": "f58ffd1c6b6a2396ee407bab96fba79f9ff724b9",
+    "last_verified_head_sha": "9d6ba302f114f02d5a4bdd5601773f36b4bdefe0",
+    "latest_verified_content_sha": "9d6ba302f114f02d5a4bdd5601773f36b4bdefe0",
     "reader_books_total": 100,
     "post_baseline_research_books": 45,
-    "scope": "Existing playback management reader gains separate OpenAL buffer queue explanation; no new book or execution.",
-    "status": "Accepted reader increment belongs to containing commit."
+    "scope": "Improve navigation within existing pseudolocalization reader while preserving all technical paragraphs and sources.",
+    "status": "Accepted reader revision belongs to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {

@@ -1297,7 +1297,7 @@
         "verification_method": "Fixed Unicode17 text and independent reader review; no component execution.",
         "excluded": "No universal segmentation implementation, pixel measurements, language approval or typewriter-animation algorithm."
       },
-      "reader_body_sha256": "fcef025cf3c6578aac936f7b203c31b4afe7b359e799525a010294c2b08d35eb",
+      "reader_body_sha256": "0e20fdd9d2bd0e66d1cbe1f6d02217ad01289ea25616a45ffb2f49786fa84260",
       "latest_review_path": "管理档案/审查/数字精度与复数类别-来源审读.md",
       "source_record": "管理档案/来源笔记/formatted-number-plural-selection.json",
       "latest_supplement": "One optional support link explains raw numeric input versus visible decimal precision; old integer-only evidence remains limited.",
@@ -1312,9 +1312,10 @@
       },
       "review_paths": [
         "管理档案/审查/换行机会与选行宽度-来源与读者审查.md",
-        "管理档案/审查/换行机会与塑形复用-增量审读.md"
+        "管理档案/审查/换行机会与塑形复用-增量审读.md",
+        "管理档案/审查/伪本地化长节阅读导航-独立审读.md"
       ],
-      "reader_sha256": "f717b3578f3200b17ff68a97fca2333b42b4c5cf46a6944f29c1e2df8fbeccd1",
+      "reader_sha256": "0e20fdd9d2bd0e66d1cbe1f6d02217ad01289ea25616a45ffb2f49786fa84260",
       "shaping_context_increment": {
         "review": "管理档案/审查/字体覆盖与塑形-来源与读者审查.md",
         "scope": "Target item range versus surrounding shaping context; fixed-source explanation, no execution or new book."
