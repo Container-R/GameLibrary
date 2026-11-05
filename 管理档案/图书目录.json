@@ -2515,9 +2515,10 @@
       "review_paths": [
         "管理档案/审查/循环声音恢复位置-读者与导航审查.md",
         "管理档案/审查/声音最大距离-来源与读者审查.md",
-        "管理档案/审查/声音最大距离-离线观察审查.md"
+        "管理档案/审查/声音最大距离-离线观察审查.md",
+        "管理档案/审查/OpenAL缓冲队列-来源与读者审查.md"
       ],
-      "reader_sha256": "b8a81e72f638285bebdc0d080c59fb28d036f53b3fac0195aa62e7f784b31ac1",
+      "reader_sha256": "4f22e4d8610b7b4599fac78bc57cbb8f21063d5a048382da164a302fde96a207",
       "distance_gain_support": {
         "path": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
         "sha256": "166f54c4f4c8ca2eedf99f8c8a8575ff96077faa9b5e264c98fe4db381b9a25f",
@@ -2537,6 +2538,12 @@
         "review": "管理档案/审查/声道优先级-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/fmod-core-voice-priority.json",
         "scope": "Core priority precedes audibility within finite capacity; original CRI restoration explanation unchanged."
+      },
+      "openal_queue_support": {
+        "path": "管理档案/支持资料/OpenAL队列里还有缓冲区，为什么声音已经停了.md",
+        "sha256": "d52e41a61c3d30c21cd984a76764f839398466807883d2db68473aa7bbf14d75",
+        "review": "管理档案/审查/OpenAL缓冲队列-来源与读者审查.md",
+        "scope": "OpenAL1.1 queue/state distinction and original finite trace; not CRI implementation or runtime observation."
       }
     },
     {
