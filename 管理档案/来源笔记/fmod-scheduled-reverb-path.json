@@ -1,0 +1,60 @@
+{
+  "id": "SRC-FMOD-SCHEDULED-REVERB-20261105",
+  "title": "Scheduled dry path and a custom reverb pull path",
+  "type": "source-note",
+  "status": "source-backed",
+  "primary_discipline": "声音与音乐",
+  "updated_at": "2026-11-05",
+  "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+  "section": "时钟选对了，还要检查另一条输出路径",
+  "sources": [
+    {
+      "organization": "Firelight Technologies",
+      "title": "Core API Using DSP Effects",
+      "url": "https://www.fmod.com/docs/2.04/api/using-dsp-effects-in-the-core-api.html",
+      "sections": [
+        "7.1.2 Creating an effect and making all Channels send to it.",
+        "Order of execution and pull / no pull traversal",
+        "Send vs Standard connection type"
+      ],
+      "scope": "Custom-reverb setup text, code and warning; conditional early pull, two remedies and one-block tradeoff when reverb executes first."
+    },
+    {
+      "organization": "Firelight Technologies",
+      "title": "DSPConnection — FMOD_DSPCONNECTION_TYPE",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-dspconnection.html#fmod_dspconnection_type",
+      "sections": [
+        "STANDARD",
+        "SEND"
+      ],
+      "scope": "Standard executes an unexecuted input; send only reads existing input buffer and requires another executing path."
+    },
+    {
+      "organization": "Firelight Technologies",
+      "title": "DSP::addInput",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-dsp.html#dsp_addinput",
+      "scope": "C++ default connection type is STANDARD."
+    }
+  ],
+  "version_scope": "FMOD Engine User Manual 2.04.00 (2026-09-29), read 2026-11-05; mutable version-series URLs, not fixed binary/source verification.",
+  "original_analysis": "A conceptual C/G/R branch diagram and conditional block-order explanation distinguish input execution from amplitude control. Fresh pre-start input must be distinguished from prior reverb tails and other sources on a shared return.",
+  "limits": [
+    "Not a claim that all STANDARD paths leak early or all SEND paths add a block.",
+    "Not standard reverb setup guidance and not a universal Studio event claim.",
+    "Tutorial does not handle virtual-channel removal/reconnection.",
+    "One mix block is not a fixed millisecond or end-to-end latency statement."
+  ],
+  "not_performed": [
+    "Original figure-pixel inspection",
+    "SDK implementation-source inspection",
+    "FMOD/audio code execution",
+    "Rendering, recording or listening",
+    "Device latency measurement",
+    "Human usability test"
+  ],
+  "deduplication": {
+    "snapshot": "f178bda228413fa756485e765d04b7a2f7a34de1",
+    "compared": "Existing occlusion/send-input support and prior send-position gate.",
+    "distinct_value": "Pull/execution responsibility and schedule enforcement across custom paths, not a new fader-position comparison."
+  }
+}

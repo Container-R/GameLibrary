@@ -2,7 +2,7 @@
 
 一段提示音已经预约播放，打开暂停菜单再回来，却没有按现实中经过的时间响起。另一个实现则给预约值加上相同的采样数，等待长度仍然不对。排查时，除了确认时间单位，还需要问：这个数属于哪一个对象的时钟？
 
-本文面向直接使用 FMOD Core 的音频程序员，只讨论固定路由下的预约坐标。它不替代 Studio 音乐转场规则，也不提供完整播放器。
+本文面向直接使用 FMOD Core 的音频程序员，以固定路由下的预约坐标为主，末节说明手工双路图还需检查的执行顺序。它不替代 Studio 音乐转场规则，也不提供完整播放器。
 
 ## 先认清预约读取的是谁的时间
 
@@ -41,10 +41,36 @@ FMOD 的暂停说明指出，暂停会冻结相应对象的播放进度与时钟
 
 本例没有提供跨时钟转换、运行中换组或修改旧预约的算法，也不讨论已经过去的目标如何处理。内容未准备好、请求没有及时生效和输出路径本身仍可能影响结果。预约坐标正确，不代表玩家已经听见声音；日志中的 tick 差也不是测得的设备延迟。
 
+## 时钟选对了，还要检查另一条输出路径
+若直达声仍在等待预约，混响却先响了，不一定是目标时钟算错。对手工连接的 DSP 图，还要检查哪条支路先让输入执行。这里的 DSP 是处理声音的节点；**拉取（pull）**指下游处理时，使尚未执行的上游节点运行、产生数据。
+
+继续使用声道 C 和所属组 G，另加自定义混响 R。下面是原创关系示意，箭头表示信号方向，不表示执行次序；它只画分支，不是完整内部 DSP 图，也不是对官方截图的视觉复原：
+
+```text
+C ──→ G ──→ 输出
+└───→ R ──→ 输出
+```
+
+FMOD 2.04 的自定义混响教程明确给出一种风险：混响先拉取 C，而预约所依赖的时钟在所属 ChannelGroup 路径中，可能出现直达路仍等待、混响路已有声音的情况。教程给出的处理办法是让所属组先于混响执行，或将通往混响的连接改为 SEND，使它不主动执行输入。后一种办法若仍让混响先执行，会引入一个混音块的额外延迟。[3] 这不是说每条 STANDARD 连接都会提前发声。
+
+区别在于连接是否负责启动输入的处理，而不只是音量：STANDARD 会执行尚未执行的输入 DSP；SEND 只读输出节点执行当时已有的输入缓冲，仍需要其他 standard 或 sidechain 连接让输入产生数据。[4] `DSP::addInput` 的默认类型是 STANDARD，不能因为把某条线口头称为“混响发送”，就以为已经使用 SEND。[5]
+
+用一个简化的块次序理解代价。假设预约已经到点，本块内 R 先处理、C 后产生新数据；R 的 SEND 连接不会为了拿到新数据而启动 C。因此 C 稍后产生的这批数据，赶不上本次 R 的处理，只能等下一次。反过来，若所属组先让 C 产生本块数据，再轮到 R，就没有这个“R 已先处理完”的原因。这个推演解释的是处理次序，不是实测波形；一块也不能固定换成若干毫秒，更不是整机输出延迟。
+
+实际排查可先记录 C 所属的组、预约目标、C 到 R 的连接类型及实际执行次序，再选择要调整顺序还是接受 SEND 的条件性代价。不要只核对时钟变量，也不要不看整张图就替换所有连接。
+
+还要分清：本节问的是**新声源尚未到预约开始时刻，是否已经经另一条路进入混响**；已有混响尾声继续衰减是另一回事。共享返回也可能含有其他声源。应在能区分这三者的条件下检查，而不是看到返回电平就判定预约失效。
+
+这段教程不是标准混响配置建议：官方建议通常使用 `System::setReverbProperties`，示例也没有处理声道虚拟化后退出、再返回 DSP 图的连接恢复。[3] 本节只解释其手工 Core 图的风险，不代表所有 Studio 事件或内建混响都存在此问题。
+
 ## 来源与适用范围
 
 1. Firelight Technologies，FMOD Engine User Manual 2.04，[*ChannelControl*](https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html)：[getDSPClock](https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html#channelcontrol_getdspclock)、[setDelay](https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html#channelcontrol_setdelay)、[addFadePoint](https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html#channelcontrol_addfadepoint)、[setPaused](https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html#channelcontrol_setpaused)的参数和说明。
 2. 同一官方手册，[*Glossary — DSP Clock*](https://www.fmod.com/docs/2.04/api/glossary.html#dsp-clock)，§22.17。
+
+3. Firelight Technologies，[*Core API Using DSP Effects*](https://www.fmod.com/docs/2.04/api/using-dsp-effects-in-the-core-api.html)，§7.1.2：“Creating an effect and making all Channels send to it.”、“Order of execution and pull / no pull traversal”及“‘Send’ vs ‘Standard’ connection type”。采用自定义图的文字、代码与警告；未检查原图像素。
+4. 同一官方手册，[*DSPConnection — FMOD_DSPCONNECTION_TYPE*](https://www.fmod.com/docs/2.04/api/core-api-dspconnection.html#fmod_dspconnection_type)：STANDARD、SEND条目及其说明。
+5. 同一官方手册，[*DSP::addInput*](https://www.fmod.com/docs/2.04/api/core-api-dsp.html#dsp_addinput)：C++签名与type默认参数。
 
 2026-11-05读取。API页面页尾显示2.04.00（2026-09-29）；2.04网址仍是可更新的官方文档系列，不是固定实现提交。数值均为原创条件演算，没有运行 FMOD、制作工程、输出音频或试听，不声称跨版本或跨中间件行为一致。
 
