@@ -1,0 +1,41 @@
+{
+  "run_id": "20261105T184500Z-msdf-distance-range",
+  "base_sha": "a2cf6a456cd8b9ba0cde1b222b30fb7651a02dcd",
+  "task_ids": [
+    "TASK-2026-0008"
+  ],
+  "outcome": "Source-backed MSDF range support with direct existing-area and reader entries; containing commit is publication snapshot.",
+  "artifact_paths": [
+    "管理档案/支持资料/MSDF已经取了中值，为什么换一张字体图后边缘仍变软.md",
+    "管理档案/来源笔记/msdf-distance-range.json",
+    "管理档案/审查/MSDF距离范围-来源与读者审查.md",
+    "GameLibrary/界面与体验/界面美术/README.md",
+    "GameLibrary/界面与体验/界面美术/状态表达/用图形表现按钮和界面的状态.md"
+  ],
+  "sources_examined": [
+    "https://dcgi.fel.cvut.cz/wp-content/wpallimport-dist/publications/pdf/publications-2018-sloup-cgf-msdf-paper.pdf",
+    "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/README.md#using-a-multi-channel-distance-field",
+    "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/Range.hpp#L12-L18",
+    "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/DistanceMapping.cpp#L6-L16",
+    "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/render-sdf.cpp#L70-L92"
+  ],
+  "source_commit": "1c106ed8117893bf943e577f62eb0665fb271e46",
+  "reader_books_total": 105,
+  "frozen_baseline_books": 55,
+  "post_baseline_research_books": 50,
+  "task_count": 278,
+  "checks": {
+    "new_reader_books": 0,
+    "new_tasks": 0,
+    "font_or_renderer_executions": 0,
+    "scope": "Independent complete reader/source review, exact original arithmetic and host-link comparison."
+  },
+  "previous_readback": {
+    "sha": "a2cf6a456cd8b9ba0cde1b222b30fb7651a02dcd",
+    "exact_changed_files": 9,
+    "exact_content_matches": 9,
+    "independent_forward_links": 4,
+    "independent_return_chain": "Support to DATA reader to existing role shelf"
+  },
+  "next_action": "Gate one lower-coverage reader gap against current inventory and primary sources; do not duplicate existing mechanisms or reopen blocked source/tracing tasks without new evidence."
+}

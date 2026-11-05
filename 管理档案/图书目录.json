@@ -129,7 +129,18 @@
       "scope_disposition_review": "管理档案/审查/界面与完成率-原范围去向核对.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/art2d/game-ui-artist.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "msdf_range_support": {
+        "id": "SUP-UI-MSDF-001",
+        "path": "管理档案/支持资料/MSDF已经取了中值，为什么换一张字体图后边缘仍变软.md",
+        "sha256": "e4d555187815cf6765a1f491a4fd9c71be2bc68148ac020c41dedecea1d35721",
+        "review": "管理档案/审查/MSDF距离范围-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/msdf-distance-range.json",
+        "previous_reader_blob": "df6d8be9acb22860186f5e5e91398d94bfe7dafc",
+        "reader_revision_sha256": "189ab239d687679d72aa7a83cc41bc75a22d0a7446b39c656dde39f2ab729f92",
+        "scope": "Optional support and one reader entry; pinned-source reading and ideal mathematical examples only. No font or renderer execution."
+      },
+      "reader_sha256": "189ab239d687679d72aa7a83cc41bc75a22d0a7446b39c656dde39f2ab729f92"
     },
     {
       "internal_id": "ROLE-SFX-001",
@@ -3670,7 +3681,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5181646509bcb7f13c70e0cc01a28dc941935c20",
+  "publication_base_sha": "a2cf6a456cd8b9ba0cde1b222b30fb7651a02dcd",
   "accounted_for_original_items": 55,
   "reader_books_total": 105,
   "post_baseline_research_books": 50,

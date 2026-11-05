@@ -1,0 +1,55 @@
+{
+  "id": "SRC-MSDF-RANGE-20261105",
+  "title": "MSDF reconstruction and distance-range scale",
+  "accessed_at": "2026-11-05",
+  "status": "source-backed",
+  "reader": "管理档案/支持资料/MSDF已经取了中值，为什么换一张字体图后边缘仍变软.md",
+  "source_commit": "1c106ed8117893bf943e577f62eb0665fb271e46",
+  "sources": [
+    {
+      "authors": "V. Chlumský, J. Sloup, I. Šimeček",
+      "title": "Improved Corners with Multi-Channel Signed Distance Fields",
+      "publication": "Computer Graphics Forum 37(1), 2018, 273–287",
+      "doi": "10.1111/cgf.13265",
+      "url": "https://dcgi.fel.cvut.cz/wp-content/wpallimport-dist/publications/pdf/publications-2018-sloup-cgf-msdf-paper.pdf",
+      "sections": [
+        "3.3",
+        "4.1–4.2",
+        "6",
+        "8"
+      ],
+      "scope": "Textual multichannel combination, approximate distances, rendering and limitations. Figures and performance results were not reused."
+    },
+    {
+      "author": "Viktor Chlumský",
+      "url": "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/README.md#using-a-multi-channel-distance-field",
+      "sections": [
+        "Console commands",
+        "Using a multi-channel distance field"
+      ],
+      "scope": "Range and pxrange units, median after sampling, linear numeric interpretation and screen distance. Derivative implementation not adopted."
+    },
+    {
+      "url": "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/Range.hpp#L12-L18",
+      "scope": "Symmetric full width and explicit asymmetric bounds."
+    },
+    {
+      "url": "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/DistanceMapping.cpp#L6-L16",
+      "scope": "Encoding and inverse mapping."
+    },
+    {
+      "url": "https://github.com/Chlumsky/msdfgen/blob/1c106ed8117893bf943e577f62eb0665fb271e46/core/render-sdf.cpp#L70-L92",
+      "scope": "RGB interpolation followed by median and inverse mapping in the CPU reference path."
+    }
+  ],
+  "original_analysis": "An explicitly abstract right-angle model separates median from mean; it is not actual generator output. For a fixed 32×32 independent texture drawn at 64×64, changing symmetric full range R=4 to R=8 while retaining old Q=8 makes the ideal straight-edge transition width 2 rather than 1 screen pixel, with center unchanged. No empirical blur ratio is claimed.",
+  "not_performed": [
+    "Font generation",
+    "CPU reference renderer execution",
+    "GPU shader execution",
+    "Image or performance measurement",
+    "Figure inspection or reproduction",
+    "Human usability testing"
+  ],
+  "licensing_scope": "Original explanatory prose and arithmetic; no complete implementation, font asset, source-code block or paper figure copied."
+}
