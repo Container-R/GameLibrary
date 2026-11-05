@@ -33,17 +33,17 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T060922Z-openal-spatial-scope",
-  "last_real_progress_at": "2026-11-05T06:09:22Z",
-  "last_commit_sha": "dac7ba7b3bc94586d2246db4507dc6850394e586",
+  "last_run_id": "20261105T061800Z-wfc-weight-scope",
+  "last_real_progress_at": "2026-11-05T06:18:00Z",
+  "last_commit_sha": "f132884ab85748a87bfd901a16807ac5e546436a",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "dac7ba7b3bc94586d2246db4507dc6850394e586",
-    "latest_verified_content_sha": "dac7ba7b3bc94586d2246db4507dc6850394e586",
+    "last_verified_head_sha": "f132884ab85748a87bfd901a16807ac5e546436a",
+    "latest_verified_content_sha": "f132884ab85748a87bfd901a16807ac5e546436a",
     "reader_books_total": 100,
     "post_baseline_research_books": 45,
-    "scope": "Clarify actual buffer-channel precondition of existing OpenAL distance support; original arithmetic and observations retained.",
-    "status": "Accepted reader revision belongs to containing commit."
+    "scope": "Explain selection weights versus final tile-count requirements in the existing WFC ring example; no execution.",
+    "status": "Accepted reader increment belongs to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
