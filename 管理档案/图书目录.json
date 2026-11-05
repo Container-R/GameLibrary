@@ -430,13 +430,21 @@
         "review": "管理档案/审查/ink后台保存-固定源码与读者审查.md",
         "scope": "Fixed-source ownership and serialization reasoning; reader body unchanged, no runtime or generic thread-safety claim."
       },
-      "reader_sha256": "086d742d60ca8629f79e1873dd3eaa83f28227c5606bcbe6590e65535b56dc9c",
+      "reader_sha256": "80489a49aa9fba5470ef026973bf5f3647cc2f41eed6f87c4d7ae3efae9408ff",
       "epilogue_pool_support": {
         "support": "管理档案/支持资料/新增后日谈，为什么可能让玩家避开原来的故事.md",
         "support_sha256": "a1876b0b1bdb61b061acadcc3d4aef34a4d70ba980209aaeebdfab54dc9929d6",
         "review": "管理档案/审查/后日谈与机会池-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/epilogue-opportunity-pool.json",
         "scope": "Historical opportunity-deck production issue and original bounded narrative consequence analysis; no new reader book."
+      },
+      "review_paths": [
+        "管理档案/审查/删除任务节点后的旧进度-来源与读者审查.md"
+      ],
+      "quest_deletion_progress": {
+        "review": "管理档案/审查/删除任务节点后的旧进度-来源与读者审查.md",
+        "previous_reader_sha256": "086d742d60ca8629f79e1873dd3eaa83f28227c5606bcbe6590e65535b56dc9c",
+        "scope": "Official REDkit deleted-node forwarding example contrasted with existing ink content migration; no runtime execution."
       }
     },
     {

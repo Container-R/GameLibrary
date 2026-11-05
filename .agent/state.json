@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T100643Z-teleport-display-history",
-  "last_real_progress_at": "2026-11-05T10:06:43Z",
-  "last_commit_sha": "c9174b93a754e28c816ebd6dbf09775124a6ff49",
+  "last_run_id": "20261105T101700Z-quest-deletion-progress",
+  "last_real_progress_at": "2026-11-05T10:17:00Z",
+  "last_commit_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "c9174b93a754e28c816ebd6dbf09775124a6ff49",
-    "latest_verified_content_sha": "c9174b93a754e28c816ebd6dbf09775124a6ff49",
+    "last_verified_head_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
+    "latest_verified_content_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
     "reader_books_total": 102,
     "post_baseline_research_books": 47,
-    "scope": "Existing fixed-step chapter explains teleport display-history reset separately from simulation state.",
+    "scope": "Existing narrative chapter distinguishes old execution-position continuation from narrative prerequisite approval.",
     "status": "Accepted reader increment belongs to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
