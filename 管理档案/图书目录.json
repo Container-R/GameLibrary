@@ -475,7 +475,7 @@
         "verification_method": "Official engineering text and independent reader review; no database execution.",
         "excluded": "No new book, PlayFab implementation claim, cross-service transaction guarantee or permanent exactly-once promise."
       },
-      "reader_sha256": "335b7a7274fa6461a26724b9efda2f77e4f9bcce7b22999d87189ef67e77218a",
+      "reader_sha256": "e62d20c600474833f64461cb80dca025768e91d2ef27c8c6233683367f3495f0",
       "auth_pending_maintenance": {
         "source_record": "管理档案/来源笔记/steam-session-auth-pending.json",
         "review": "管理档案/审查/Steam会话身份等待-来源与读者审查.md",
@@ -493,6 +493,15 @@
         "review": "管理档案/审查/TCP消息边界-来源与读者审查.md",
         "source_record": "管理档案/来源笔记/tcp-stream-message-boundaries.json",
         "scope": "Optional custom TCP framing; source reading and finite paper example, no runtime."
+      },
+      "review_paths": [
+        "管理档案/审查/Steam统计拒绝后回读-来源与读者审查.md"
+      ],
+      "steam_stats_reconciliation_support": {
+        "support": "管理档案/支持资料/Steam统计提交被拒后，为什么只重试还不够.md",
+        "sha256": "c746d051c936dfad94762f1fad234179a7bcca54f0acafb32b8bce24c1ba7f9a",
+        "review": "管理档案/审查/Steam统计拒绝后回读-来源与读者审查.md",
+        "scope": "Conditional application-copy reconciliation after documented InvalidParam; rolling documentation, no Steam execution."
       }
     },
     {

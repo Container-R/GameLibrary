@@ -33,17 +33,17 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T101700Z-quest-deletion-progress",
-  "last_real_progress_at": "2026-11-05T10:17:00Z",
-  "last_commit_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
+  "last_run_id": "20261105T102825Z-steam-stats-reconciliation",
+  "last_real_progress_at": "2026-11-05T10:28:25Z",
+  "last_commit_sha": "4273d222743bd27de101df5f577949e4f6b3f229",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
-    "latest_verified_content_sha": "9216785ffdc580f29b1ce85d2b3137a8936ad70f",
+    "last_verified_head_sha": "4273d222743bd27de101df5f577949e4f6b3f229",
+    "latest_verified_content_sha": "4273d222743bd27de101df5f577949e4f6b3f229",
     "reader_books_total": 102,
     "post_baseline_research_books": 47,
-    "scope": "Existing narrative chapter distinguishes old execution-position continuation from narrative prerequisite approval.",
-    "status": "Accepted reader increment belongs to containing commit."
+    "scope": "Steam stats rejected submission and game display-copy reconciliation support.",
+    "status": "Accepted support and host link belong to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
   "audit": {
