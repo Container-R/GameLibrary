@@ -1,0 +1,56 @@
+{
+  "id": "SRC-MODEL-LIGHTMAP-UV-20261105",
+  "title": "Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率",
+  "type": "source-note",
+  "status": "source-backed",
+  "primary_discipline": "MODEL",
+  "updated_at": "2026-11-05",
+  "path": "GameLibrary/美术设计/模型制作/贴图烘焙/Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率.md",
+  "reader_id": "SOL-MODEL-003",
+  "sources": [
+    {
+      "organization": "Epic Games",
+      "title": "Generating Lightmap UVs",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/generating-lightmap-uvs-in-unreal-engine?application_version=5.6",
+      "sections": [
+        "Caveats and Considerations",
+        "Lightmap Generation Settings",
+        "Generating a Lightmap UV",
+        "Regenerating Existing Lightmap UVs"
+      ],
+      "scope": "Chart repacking without new cuts, source/destination/active channel roles, minimum resolution and regeneration."
+    },
+    {
+      "organization": "Epic Games",
+      "title": "Understanding Lightmapping",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/understanding-lightmapping-in-unreal-engine?application_version=5.6",
+      "sections": [
+        "Texture UV versus Lightmap UV",
+        "Inspecting Lightmaps and Settings",
+        "Error Coloring"
+      ],
+      "scope": "Lightmap layout requirements, instance resolution override and bounded diagnostic conditions."
+    }
+  ],
+  "version_scope": "Official pages explicitly selected as Unreal Engine 5.6 documentation, read 2026-11-05. Mutable pages retain some UE4 wording; not a binary or source-code verification. Publication dates not confirmed.",
+  "original_analysis": "One hypothetical wall decoration distinguishes source cuts, Source0/Destination1/active1 and Min128/default256/instance32. An unintended override and an intentional lower budget require different changes; neither successful regeneration nor correct channel number proves a valid final bake.",
+  "limits": [
+    "Documented Static Mesh Editor LOD0 workflow for precomputed static lighting.",
+    "No assertion about arbitrary chart detection, fixed packing, rotation or UV output.",
+    "No blanket claim all overlapping islands are unfixable by repacking.",
+    "No exact-equality quality guarantee at actual resolution equal to Min, and no universal safe pixel margin.",
+    "No extension to all LODs, Nanite, GPU Lightmass, virtual lightmaps, importers or other engine versions."
+  ],
+  "not_performed": [
+    "Image or asset inspection",
+    "Engine installation or execution",
+    "Importing, UV generation or lighting build",
+    "Runtime or performance tests",
+    "Human usability testing"
+  ],
+  "deduplication": {
+    "snapshot": "d72e5c1fa8fda678efce1092667a557672b10306",
+    "scope": "Fixed neighboring model-bake, texture-budget, hybrid-lighting readers, navigation, local prior gates and default-branch keyword checks. Not an exhaustive all-history semantic audit.",
+    "distinct_value": "Choose between editing source charts, correcting active UV channel and correcting per-instance resolution premises."
+  }
+}

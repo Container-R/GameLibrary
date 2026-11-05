@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-05T19:54:00Z",
-      "next_action": "Read Epic's official lightmap-UV generation documentation and compare chart repacking versus chart cutting with existing baking readers before accepting a new reader.",
+      "last_progress_at": "2026-11-05T20:04:00Z",
+      "next_action": "Read Epic's UE5.6 Volumetric Lightmaps sections on movable objects and limitations, and compare with the static-UV reader and existing hybrid-probe article before accepting another increment.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -9745,6 +9745,34 @@
       ],
       "verification_method": "Primary documentation and independent complete reader review; original separate hypothetical inputs, no Steam execution, purchase or account action.",
       "publication_scope": "New reader and nonempty additional-content shelf in containing commit."
+    },
+    {
+      "id": "TASK-2026-0279",
+      "parent_task_id": "TASK-2026-0008",
+      "question": "Unreal自动生成光照UV后，怎样区分源切分、实际通道及实例分辨率造成的问题？",
+      "discipline": "MODEL",
+      "status": "published",
+      "priority": 80,
+      "priority_rationale": "补模型制作中的静态光照UV条件，区分重排与展开，避免与法线投射或纹理预算混淆。",
+      "expected_artifact": "GameLibrary/美术设计/模型制作/贴图烘焙/Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率.md",
+      "acceptance": [
+        "既有模型烘焙与光照文章语义去重",
+        "Epic5.6原始文档与版本范围核对",
+        "原创实例的通道与分辨率条件独立审读",
+        "完整读者正文与既有书架导航",
+        "完整公开载荷与计数核对"
+      ],
+      "attempts": 1,
+      "last_progress_at": "2026-11-05T20:04:00Z",
+      "next_action": "具体项目须在获准工程中检查实际UV、实例分辨率和烘焙结果，不将条件例子当引擎验证。",
+      "blockers": [],
+      "artifact_paths": [
+        "GameLibrary/美术设计/模型制作/贴图烘焙/Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率.md",
+        "管理档案/来源笔记/unreal-lightmap-uv-repack.json",
+        "管理档案/审查/Unreal光照UV重排与实例分辨率-读者审查.md"
+      ],
+      "verification_method": "Primary version-qualified documentation, hypothetical wall-decoration conditions and independent complete reader review; no Unreal project or bake execution.",
+      "publication_scope": "New focused reader in existing model-baking shelf, in containing commit."
     }
   ],
   "execution_policy": {

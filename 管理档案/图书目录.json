@@ -3726,6 +3726,27 @@
       "status": "source-backed",
       "type": "solution",
       "primary_discipline": "PLATFORM"
+    },
+    {
+      "internal_id": "SOL-MODEL-003",
+      "reader_title": "Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率",
+      "floor": "美术设计",
+      "area": "模型制作",
+      "shelf": "贴图烘焙",
+      "canonical_reader_path": "GameLibrary/美术设计/模型制作/贴图烘焙/Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率.md",
+      "current_read_path": "GameLibrary/美术设计/模型制作/贴图烘焙/Unreal自动生成光照UV后，为什么仍要检查切缝与分辨率.md",
+      "reader_body_status": "published",
+      "editorial_status": "官方5.6文档与完整读者正文经独立审读，虚构实例与生成/使用边界区分；非引擎烘焙或真人测试。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/Unreal光照UV重排与实例分辨率-读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/unreal-lightmap-uv-repack.json",
+      "reader_sha256": "967558cea78bfa6d89283748238b031b948358960d240648a1695ed34426b002",
+      "updated_at": "2026-11-05",
+      "status": "source-backed",
+      "type": "solution",
+      "primary_discipline": "MODEL"
     }
   ],
   "rewritten_reader_books": 55,
@@ -3736,10 +3757,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "f178bda228413fa756485e765d04b7a2f7a34de1",
+  "publication_base_sha": "d72e5c1fa8fda678efce1092667a557672b10306",
   "accounted_for_original_items": 55,
-  "reader_books_total": 105,
-  "post_baseline_research_books": 50,
+  "reader_books_total": 106,
+  "post_baseline_research_books": 51,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
