@@ -1633,14 +1633,15 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "20994be01d5dfc36ea786e24d45a5ff3b2f2784de196a3d4588bb0831bddbf46",
+      "reader_sha256": "1fc365aae546411cf137787440473db2bf83565a466d57cc49063d9f36471966",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
         "管理档案/审查/持续力与一次冲量-来源与读者审查.md",
         "管理档案/审查/有界抽样与随机流消费-来源与读者审查.md",
         "管理档案/审查/乘加舍入与回放-来源与读者审查.md",
-        "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md"
+        "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md",
+        "管理档案/审查/瞬移显示历史-来源与读者审查.md"
       ],
       "latest_increment": {
         "scope": "Optional force and impulse units/lifetime explanation; not a new physics run or trajectory-equivalence claim.",
@@ -1690,6 +1691,11 @@
         "sha256": "7db87e17124c53dd9543ec504d7188c3c56c4ba95d05eff58f2fdf9e53c3751d",
         "review": "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md",
         "scope": "Fixed v3.13.2 source and bounded original hand trace; no dispatcher execution or next-frame guarantee."
+      },
+      "teleport_display_history": {
+        "review": "管理档案/审查/瞬移显示历史-来源与读者审查.md",
+        "previous_reader_sha256": "20994be01d5dfc36ea786e24d45a5ff3b2f2784de196a3d4588bb0831bddbf46",
+        "scope": "Finite display-history discontinuity example and scoped Godot4.4 documentation/source reading; no runtime execution."
       }
     },
     {
