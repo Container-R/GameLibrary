@@ -1,0 +1,45 @@
+{
+  "id": "SRC-SKINNING-WEIGHT-GRADIENT-20261105",
+  "title": "Spatially varying skinning weights and normal approximation",
+  "accessed_at": "2026-11-05",
+  "status": "source-backed",
+  "reader": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+  "sources": [
+    {
+      "author": "Ladislav Kavan",
+      "title": "Part I: Direct Skinning Methods and Deformation Primitives",
+      "publication": "Skinning: Real-time Shape Deformation, ACM SIGGRAPH 2014 course",
+      "course_url": "https://skinning.org/",
+      "url": "https://skinning.org/direct-methods.pdf#page=9",
+      "physical_pages": [
+        9
+      ],
+      "sections": [
+        "6 Computing normals of skinned surfaces"
+      ],
+      "equations": [
+        16,
+        17
+      ],
+      "figure": 10,
+      "scope": "Original section text, equations and Figure 10 adjacent explanation inspected. Translation-only deformation with identity linear parts, changing weights and a gradient contribution to the normal transformation. No paper figure or implementation copied."
+    }
+  ],
+  "original_analysis": "Chosen input-space weights 1−x and x blend identity with translation (0,0,1), giving F=(x,y,z+x). The triangle face normal becomes (−1,0,1)/sqrt(2), while both per-bone normal blending and inverse-transpose of the blended identity block retain +Z. A dimensionally explicit 3×3 Jacobian recovers the target direction.",
+  "limits": [
+    "Authored shading normals need not equal individual geometric face normals.",
+    "The finite triangle and differential normal coincide here because F is affine.",
+    "Per-bone inverse-transpose blending and inverse-transpose of the blended linear block are not generally equivalent.",
+    "Stored vertex weights alone do not specify a unique continuous weight field or gradient.",
+    "Constant weights are a sufficient simple case, not a necessary condition for every correct result."
+  ],
+  "dedup_scope": "Latest fixed snapshot complete tree and current static-normal, inverse-bind and skinning-blend reader texts inspected. Existing static inverse-transpose explanation is preserved, not republished.",
+  "not_performed": [
+    "Mesh or asset execution",
+    "Shader or engine execution",
+    "Numerical program or performance benchmark",
+    "Runtime implementation of a gradient method",
+    "Human usability testing"
+  ],
+  "deferred": "The course-cited detailed optimization paper is not used as implementation evidence for this bounded support."
+}
