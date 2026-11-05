@@ -1,0 +1,54 @@
+{
+  "id": "SRC-EVENT-ORDER-ADJACENCY-20261105",
+  "title": "Nonadjacent event order versus consecutive transitions",
+  "accessed_at": "2026-11-05",
+  "status": "source-backed",
+  "reader": "管理档案/支持资料/两两组合都测过，为什么三个设置一起开仍会出错.md",
+  "section": "覆盖了操作先后，还要问它们是否连续",
+  "sources": [
+    {
+      "organization": "NIST",
+      "title": "Testing Event Sequences",
+      "url": "https://csrc.nist.gov/Projects/automated-combinatorial-testing-for-software/combinatorial-methods-in-testing/event-sequence-testing",
+      "page_updated": "2026-06-08",
+      "sections": [
+        "Need for Sequence Covering",
+        "Definition",
+        "Example 2"
+      ],
+      "scope": "Event-order coverage permits interleaving; a permutation and its reversal cover all two-event relative orders."
+    },
+    {
+      "authors": [
+        "D. Richard Kuhn",
+        "James M. Higdon",
+        "James F. Lawrence",
+        "Raghu N. Kacker"
+      ],
+      "title": "Combinatorial Methods for Event Sequence Testing",
+      "version": "Author preprint as hosted by NIST; exact preprint date not established",
+      "url": "https://www.nist.gov/customcf/get_pdf.cfm?pub_id=906770",
+      "physical_pages": [
+        1,
+        2
+      ],
+      "sections": [
+        "Sequence-Covering Arrays",
+        "Definition",
+        "Example 2"
+      ],
+      "scope": "Each row is a permutation, ordered subsets need not be adjacent. Author list follows this PDF, not the different conference citation on the project page."
+    }
+  ],
+  "original_analysis": "LSP and PSL contain all six ordered pairs but only LS, SP, PS, SL as adjacent pairs. Adding LPS and PLS includes LP and PL. A fictional language change, interface-scale rebuild and subtitle preview example explains why checking immediately after preview, before rebuild, can matter.",
+  "dedup_scope": "Read current QA reader, pairwise configuration support and shared-precondition support; targeted existing source/support search. This adds within-scenario order semantics rather than repeating independent-test contamination or higher-order configuration coverage.",
+  "not_performed": [
+    "Game execution",
+    "Sequence generator or ACTS execution",
+    "Automation framework execution",
+    "Observed defect or production benefit",
+    "Paper algorithm or performance reproduction",
+    "Human usability testing"
+  ],
+  "preservation": "Prior configuration examples, constraints and source note remain unchanged; this record supports only the new event-order section and its entry descriptions."
+}
