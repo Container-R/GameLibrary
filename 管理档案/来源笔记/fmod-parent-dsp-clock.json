@@ -1,0 +1,52 @@
+{
+  "id": "SRC-FMOD-PARENT-CLOCK-20261105",
+  "title": "FMOD Core scheduling in the parent DSP clock domain",
+  "type": "source-note",
+  "status": "source-backed",
+  "primary_discipline": "声音与音乐",
+  "updated_at": "2026-11-05",
+  "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+  "sources": [
+    {
+      "organization": "Firelight Technologies",
+      "title": "FMOD Engine User Manual 2.04 — ChannelControl",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html",
+      "sections": [
+        "getDSPClock",
+        "setDelay",
+        "addFadePoint",
+        "setPaused"
+      ],
+      "accessed_at": "2026-11-05",
+      "scope": "Clock ownership for scheduled start/fade, parent pause and individual pause flag. Versioned mutable documentation, not a fixed implementation commit."
+    },
+    {
+      "organization": "Firelight Technologies",
+      "title": "FMOD Engine User Manual 2.04 — Glossary",
+      "url": "https://www.fmod.com/docs/2.04/api/glossary.html#dsp-clock",
+      "section": "22.17 DSP Clock",
+      "accessed_at": "2026-11-05",
+      "scope": "Per-DSP clocks, default speed and pitch-dependent rate."
+    }
+  ],
+  "original_analysis": "Under fixed routing C belongs directly to G. Hypothetical P=480000 and M=960000 with delta4800 produce targets484800 and964800; wrong-domain distance is484800, not4800. Actual pause of G at482400 leaves2400ticks before the scheduled484800.",
+  "limits": [
+    "C.parentclock refers to G own clock, not G.parentclock.",
+    "Child-only pause does not imply that parentclock freezes.",
+    "Readings are hypothetical conditions, not logs or an atomic query snapshot.",
+    "Tick distance is not a measured wall-clock or device latency.",
+    "No conversion algorithm, expired-target behavior, propagation guarantee or live rerouting claim.",
+    "Studio event timing and Core ChannelGroup behavior are not conflated."
+  ],
+  "not_performed": [
+    "FMOD or SDK execution",
+    "Audio rendering or listening",
+    "Performance and device latency test",
+    "Human usability testing"
+  ],
+  "deduplication": {
+    "snapshot": "830438ae4bae06fb6e459ccbe0b806fa8af1771c",
+    "scope": "Current complete music-transition reader, related local playback/fade/callback readers and prior gates, default-branch queries parentclock/getDSPClock/setDelay without matches. Not exhaustive whole-history semantic proof.",
+    "distinct_value": "Select the required parent clock within one Core mixer hierarchy and diagnose parent pause independently of a child local flag."
+  }
+}

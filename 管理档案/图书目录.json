@@ -1207,7 +1207,16 @@
       "scope_disposition_review": "管理档案/审查/音乐与伪本地化有限补充-增量审读.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
-      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985"
+      "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+      "reader_sha256": "64869a3258351aedd7f2191129d94613413e8b5ef442a49af84e413a280fcd79",
+      "parent_clock_support": {
+        "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+        "sha256": "1899d0e1d833290a8308db2d5771818cfbdbc6d250b274f80ca29b7b9d05030f",
+        "previous_host_sha256": "bbca26dc7ca046aa5ac9cbee8da16efe7e6598b0124d44736a01e934a71d6029",
+        "review": "管理档案/审查/FMOD父混音组时钟-来源与读者审查.md",
+        "source_record": "管理档案/来源笔记/fmod-parent-dsp-clock.json",
+        "scope": "Versioned official documentation and original finite clock-domain arithmetic; no SDK/audio/runtime execution."
+      }
     },
     {
       "internal_id": "SOL-SFX-002",
@@ -3720,7 +3729,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "f6e8bbe0f67286dbd83f17a4934479ea01099ab6",
+  "publication_base_sha": "830438ae4bae06fb6e459ccbe0b806fa8af1771c",
   "accounted_for_original_items": 55,
   "reader_books_total": 105,
   "post_baseline_research_books": 50,
