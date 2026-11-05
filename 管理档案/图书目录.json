@@ -656,7 +656,8 @@
         "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
         "管理档案/审查/INSIDE时域历史-来源与读者审查.md",
         "管理档案/审查/深度度量与相机起点-来源和读者审查.md",
-        "管理档案/审查/深度存储粒度-来源与读者审查.md"
+        "管理档案/审查/深度存储粒度-来源与读者审查.md",
+        "管理档案/审查/原子槽位预订与结果完成-来源与读者审查.md"
       ],
       "occlusion_query_support": {
         "support_path": "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
@@ -674,10 +675,15 @@
       },
       "compute_tail_support": {
         "path": "管理档案/支持资料/无数据的调用为什么仍要走到组内屏障.md",
-        "sha256": "e9adca556bb1924bf34a9001c5a714690b5321bea78f6eb65f9186980238e805",
+        "sha256": "b93a7f0c6087c9418b414c069f642e8686c1556fad7ffd094c535263fdc7738c",
         "review": "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
         "source": "管理档案/来源笔记/compute-tail-barrier.json",
-        "scope": "Official specification reading and independently reviewed original ten-integer workgroup walkthrough; no shader compilation or GPU execution."
+        "scope": "Official specification reading and independently reviewed original ten-integer workgroup walkthrough; no shader compilation or GPU execution.",
+        "initial_sha256": "e9adca556bb1924bf34a9001c5a714690b5321bea78f6eb65f9186980238e805",
+        "atomic_counter_revision": {
+          "review": "管理档案/审查/原子槽位预订与结果完成-来源与读者审查.md",
+          "scope": "Explicit HLSL reservation versus completion subsection; no GPU execution. Existing source and review retain original GLSL scope."
+        }
       },
       "depth_comparison_support": {
         "path": "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
