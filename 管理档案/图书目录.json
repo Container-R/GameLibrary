@@ -272,7 +272,7 @@
         "verification_method": "Official Unity 6000.0 documentation and independent complete reader review; no build or runtime execution.",
         "excluded": "No universal retention guarantee, no SRP-specific precedence audit, no equivalence between strict matching and intended appearance."
       },
-      "reader_sha256": "e09567d27d4cb1520d70dbfdd73a5ae3584ababb09a05bc762ac3fd3202cbe2a",
+      "reader_sha256": "335477972f66d9732d2725ddd894531823989421b8d8f1e6d9d46cb6863ed2c3",
       "shared_output_support": {
         "path": "管理档案/支持资料/两个构建目标都要武器数据，为什么不能各自生成同一份文件.md",
         "review": "管理档案/审查/共享生成输出-来源与读者审查.md",
@@ -281,7 +281,8 @@
       "review_paths": [
         "管理档案/审查/共享生成输出-来源与读者审查.md",
         "管理档案/审查/HTTP资源包续传-来源与读者审查.md",
-        "管理档案/审查/ZIP目标映射-来源与读者审查.md"
+        "管理档案/审查/ZIP目标映射-来源与读者审查.md",
+        "管理档案/审查/有限值检查与编译假设-来源与读者审查.md"
       ],
       "http_range_support": {
         "path": "管理档案/支持资料/资源包断点续传时，为什么不能把新响应直接接在旧文件后面.md",
@@ -323,6 +324,12 @@
         "review": "管理档案/审查/Ninja依赖变化-原生与读者审查.md",
         "source_record": "管理档案/来源笔记/ninja-order-only-observation.json",
         "scope": "Finite hand-written Ninja graph observation; existing CMake explanation remains source-backed, not executed."
+      },
+      "finite_math_support": {
+        "path": "管理档案/支持资料/写了有限值检查，为什么还要检查编译选项.md",
+        "sha256": "3b91f5f5c62036737d1c4a25c28eabc1f4ebbbd892d3967e41c74722c875f4f5",
+        "review": "管理档案/审查/有限值检查与编译假设-来源与读者审查.md",
+        "scope": "Fixed GCC15.2 and Clang20.1 option documentation with independent reader review; no compiler or runtime observation."
       }
     },
     {
@@ -700,7 +707,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/technical-art/technical-artist.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "38d7656cab05432f5e9daceffadd85232d9aaa42c2bc542b9afbff0a3c3c8ca7",
+      "reader_sha256": "127d25c4164608051ea63200df387813f6b009ad623d16c11dfb06d5e7eaabae",
       "vegetation_control_support": {
         "path": "管理档案/支持资料/给植被画控制色之前，先分清相位和摆幅.md",
         "sha256": "cd9d372d1137bedf676ada4fbc6101bf696b88790e82c56c8a86f1765a01cc15",
@@ -734,6 +741,10 @@
         "source_record": "管理档案/来源笔记/factorio-preview-render-output.json",
         "review": "管理档案/审查/制作预览与正式输出-增量审读.md",
         "scope": "Two historical-workflow and original-check paragraphs; no new book, image inspection or execution."
+      },
+      "source_date_clarification": {
+        "scope": "Original 2026-11-01 baseline distinguished from later source-specific reading dates; no technical/source8 change.",
+        "review": "管理档案/审查/有限值检查与编译假设-来源与读者审查.md"
       }
     },
     {
