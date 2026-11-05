@@ -47,6 +47,20 @@ SDL3 的 `SDL_GetRelativeMouseState` 返回自上次调用以来累计的相对�
 
 因此要选清楚一条读取路径：逐事件消费尚未累计的增量，或者在约定更新点读取一次累计结果。不能一边把每次累计读数当独立增量相加，一边又在更新末尾应用总量。具体 API、动作类型、处理器和输入更新模式仍要在项目里核对；SDL 的“上次调用”与 Unity 的“输入更新”不是同一个清零条件。
 
+## 为界面换了坐标，镜头读到的位移也可能变了
+
+即使已经去掉多余的 `dt`，还有另一类接入问题：界面处理与镜头控制共用了同一个事件对象，前者先把它转换成渲染坐标，后者却仍按转换前的单位解释相对位移。
+
+SDL 3.2.8 的 `SDL_ConvertEventToRenderCoordinates` 会原地修改事件。对属于该渲染器窗口的鼠标移动事件，它不只转换绝对位置 `x、y`，也转换 `xrel、yrel`。[3] “只是让按钮能正确命中”的一次调用，因此可能同时改变后面交给镜头的数字。
+
+看一个限定条件下的纸面例子：窗口与渲染器匹配，DPI 比例为 1，未启用逻辑呈现，渲染缩放为 2。固定实现的向量转换会将相对位移除以渲染缩放，于是水平位移 10 变成 5。[3] 若镜头仍使用按转换前单位设置的 `0.1 度/单位`，同一事件就会从 1 度变成 0.5 度。这里没有改变鼠标运动，也没有多乘时间；是数据经过处理后换了单位，灵敏度却没跟着换。
+
+这不是说渲染缩放会自动改变所有游戏的镜头，更不是说这 10 个单位必然等于 10 个硬件计数或屏幕像素。问题只发生在本例约定的处理链里：先转换同一份事件，再把被改写的位移交给仍期待原单位的消费者。其他 DPI、逻辑呈现或缩放设置会产生不同换算，不能直接照抄除以 2。
+
+如果镜头需要保留接入时的位移，可以保留原事件，另外复制一份供界面转换；也可以只把需要的绝对位置转换到单独的界面变量中。官方接口说明同样建议：不希望相对字段被修改时，对特定字段调用 `SDL_RenderCoordinatesFromWindow`，而非转换整个事件。[3] 绝对位置和位移也不能混着用同一个点转换：位置需要处理视口原点等偏移，位移向量不应因此增加一段平移。
+
+无论选择哪种方式，都要把“这份数据已经转换到哪里”说清楚，避免同一事件被两个界面层重复转换。这仍没有决定界面消费输入后是否允许镜头继续转动；那是另外一项路由规则。复制事件保存单位，不等于应该让菜单和游戏同时响应。
+
 ## 固定步长不会替你决定该把位移放在哪一步
 
 如果一次渲染更新间隔里补算三步，项目需要规定这批位移交给哪一步，或怎样按事件时间分配；如果暂时没有模拟步，也需要决定是否暂存，避免直接丢掉。将总量拆分到数步时，可以检查各步分量之和是否等于原总量，但这只检查总量守恒，**不证明事件时刻、延迟、碰撞或游戏结果相同**。转动过程中若触发限位等非线性规则，分配顺序也可能影响结果。
@@ -55,11 +69,13 @@ SDL3 的 `SDL_GetRelativeMouseState` 返回自上次调用以来累计的相对�
 
 ## 参考来源
 
-读取日期：2026-11-02。
+原有累计位移与时间处理部分于 2026-11-02 阅读；SDL 事件坐标转换增补于 2026-11-05 核对固定 3.2.8 源码。两部分均未运行。
 
 [1] SDL 官方：[SDL_GetRelativeMouseState](https://wiki.libsdl.org/SDL3/SDL_GetRelativeMouseState)，定义、Remarks、Thread Safety 与 Version。当前 SDL3 文档说明该接口自 3.2.0 提供；本文未运行 SDL，也不据滚动文档声称审查了所有历史版本。
 
 [2] Unity Technologies：[Pointer.cs](https://github.com/Unity-Technologies/InputSystem/blob/c8518694c7fdd2c755755e028e2ec19cdceda19b/Packages/com.unity.inputsystem/InputSystem/Devices/Pointer.cs)，`delta` 文档与 `OnNextUpdate`、`OnStateEvent`。固定 Input System 1.11.2 提交；另见[对应 API 文档的 delta 段](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.11/api/UnityEngine.InputSystem.Pointer.html#UnityEngine_InputSystem_Pointer_delta)。本文不把输入更新次数直接等同于渲染帧数。
+
+[3] SDL 3.2.8，固定提交 `f6864924f76e1a0b4abaefc76ae2ed22b1a8916e` 的 [SDL_render.h 1523–1557](https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/include/SDL3/SDL_render.h#L1523-L1557)，整事件转换与相对字段说明；[SDL_render.c 2829–2880](https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/render/SDL_render.c#L2829-L2880)，向量与位置转换；[2912–2921行](https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/render/SDL_render.c#L2912-L2921)，鼠标移动事件的窗口检查及原地写入。只分析这些接入路径，不声称审查全部后端或实际设备行为。
 
 ---
 

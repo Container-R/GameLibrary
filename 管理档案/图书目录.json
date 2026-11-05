@@ -2626,14 +2626,17 @@
       "origin": "original-two-vector-comparison-of-axis-and-radial-input-mapping",
       "scope_note": "同一处理器入口数值下的方向与幅度推导；非设备原始报告、最佳参数或玩家体验保证",
       "review_paths": [
-        "管理档案/审查/摇杆死区-来源与读者审查.md"
+        "管理档案/审查/摇杆死区-来源与读者审查.md",
+        "管理档案/审查/鼠标事件坐标转换-来源与读者审查.md"
       ],
       "reader_sha256": "9214e688b28cd495b50a6f93f6c47b049ff35a1ed3f82f2e8118af099d151ae7",
       "mouse_displacement_support": {
         "source_record": "管理档案/来源笔记/mouse-displacement-consumption.json",
         "review": "管理档案/审查/鼠标位移与速率-来源与读者审查.md",
         "support": "管理档案/支持资料/鼠标转向乘了deltaTime，为什么帧率越高反而越慢.md",
-        "scope": "Input meaning, accumulation boundaries and original scalar arithmetic; no device execution."
+        "scope": "Input meaning, accumulation boundaries and original scalar arithmetic; no device execution.",
+        "coordinate_conversion_review": "管理档案/审查/鼠标事件坐标转换-来源与读者审查.md",
+        "support_sha256": "1a45b33e6e69fe620a07fe1f2c91b6136e9b68019fec9efe5bce79172a0e7799"
       }
     },
     {

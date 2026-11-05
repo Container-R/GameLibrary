@@ -33,16 +33,16 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261105T053424Z-production-flow-measurement",
-  "last_real_progress_at": "2026-11-05T05:34:24Z",
-  "last_commit_sha": "7947b961779b8979ea669cc26a3e1f430d2fa764",
+  "last_run_id": "20261105T054354Z-mouse-event-conversion",
+  "last_real_progress_at": "2026-11-05T05:43:54Z",
+  "last_commit_sha": "69f13da69955e594be30377fcd09abd9cd78ae6f",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "7947b961779b8979ea669cc26a3e1f430d2fa764",
-    "latest_verified_content_sha": "7947b961779b8979ea669cc26a3e1f430d2fa764",
+    "last_verified_head_sha": "69f13da69955e594be30377fcd09abd9cd78ae6f",
+    "latest_verified_content_sha": "69f13da69955e594be30377fcd09abd9cd78ae6f",
     "reader_books_total": 100,
     "post_baseline_research_books": 45,
-    "scope": "Producer reader gains finite-window measurement support; no new book or execution.",
+    "scope": "Existing mouse displacement support adds shared-event coordinate conversion analysis; no new book or execution.",
     "status": "Accepted reader increment belongs to containing commit."
   },
   "next_action": "Continue concrete reader gaps from .agent/queue.json; prefer finite integration where existing readers already cover the main mechanism.",
