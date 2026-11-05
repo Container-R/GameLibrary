@@ -1,0 +1,12 @@
+{
+  "title": "Friday Facts #176 - Belts optimization for 0.15",
+  "author": "Harkonnen / Wube Software",
+  "published": "2017-02-03",
+  "url": "https://www.factorio.com/blog/post/fff-176",
+  "read_at": "2026-11-05",
+  "used_section": "Belts optimization",
+  "reading_scope": "Main editor and independent reviewers read technical text; one source reviewer sampled three frames from each of two original animations. Reader claims rely on text, not complete animation inspection.",
+  "identity_limit": "Historical 0.15 development account; no private implementation, current-game identity or performance reproduction.",
+  "reader": "GameLibrary/引擎与工具/运行时系统/数据表示/传送带上的物品都在移动，为什么不必逐件更新位置.md",
+  "original_contribution": "Explicit finite equal-width line model, position reconstruction, blocked-gap table and removal counterexample. All hand calculations, no runtime output."
+}
