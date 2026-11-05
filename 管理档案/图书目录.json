@@ -2703,9 +2703,10 @@
       "review_paths": [
         "管理档案/审查/交叉淡化相关性-读者与来源审查.md",
         "管理档案/审查/样本峰值与理想重建-来源与读者审查.md",
-        "管理档案/审查/音频增益斜坡交接-来源与读者审查.md"
+        "管理档案/审查/音频增益斜坡交接-来源与读者审查.md",
+        "管理档案/审查/单声道检查操作-来源与读者审查.md"
       ],
-      "reader_sha256": "18af3d44ae01a3ae421fb878fddff3cff442f7b47432510457f62cf43999f4a3",
+      "reader_sha256": "bcad60bbcbd720eff96523b10de2ff1e4da96a79f653190d584da9b16283f228",
       "true_peak_support": {
         "support": "管理档案/支持资料/样本都没到满刻度，为什么还要检查真峰值.md",
         "sha256": "2990e420a6b25fe7680393cde89be3d7baf835a824e9d41ddde0ce6580c1f81c",
@@ -2716,6 +2717,11 @@
         "previous_reader_sha256": "fd0acdf3f3ac15f4cd65a415f424925a41484b5f08f730611c56167986099114",
         "review": "管理档案/审查/音频增益斜坡交接-来源与读者审查.md",
         "scope": "Fixed W3C2021 parameter automation and finite original time example; no browser or audio execution. Prior source reviews retain original scopes."
+      },
+      "mono_check_operation": {
+        "review": "管理档案/审查/单声道检查操作-来源与读者审查.md",
+        "previous_reader_sha256": "18af3d44ae01a3ae421fb878fddff3cff442f7b47432510457f62cf43999f4a3",
+        "scope": "Finite Audacity split-versus-mix operation distinction in existing audio delivery checks; no software execution."
       }
     },
     {
