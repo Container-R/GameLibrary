@@ -3388,15 +3388,20 @@
       "origin": "historical-first-party-production-case",
       "scope_note": "区别采样、目标平面与实际响应；不提供完整浮力模型或稳定性保证。",
       "review_paths": [
-        "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md"
+        "管理档案/审查/ATLAS船体目标姿态-来源与读者审查.md",
+        "管理档案/审查/水面绘制与物理表示-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/atlas-boat-plane-target.json",
-      "reader_sha256": "2a3cc6d839b5b47566e172a4dbb97aed5aeb52896643c70a3b935c36966054a2",
+      "reader_sha256": "e82f072f8a8c0bad15d7fa450051e2c966ad27021dbd0729aae89cd2edc73b00",
       "related_roles": [
         "ROLE-PROG-001",
         "ROLE-GFX-001",
         "ROLE-TA-001"
-      ]
+      ],
+      "water_representation_increment": {
+        "review": "管理档案/审查/水面绘制与物理表示-来源与读者审查.md",
+        "scope": "War Thunder GDC2015 selected original pages: server/client physics use synced time and the same spectrum; rendering uses downsampled spectra and different update timing; no runtime or determinism proof."
+      }
     },
     {
       "internal_id": "CASE-PROG-002",
