@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+  "publication_base_sha": "0f6307c7dc20751c988a7dfcd8f6b84871f8f7ee",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -5059,13 +5059,13 @@
       "canonical_reader_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
       "current_read_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
       "reader_body_status": "published",
-      "reader_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
-      "editorial_status": "完整有限期限风险方法经独立全文、读者任务与盲导航审查。",
+      "reader_sha256": "7e9370581e495bc9539c253f249498a01305ecbbd9896c562662a824fbfe2427",
+      "editorial_status": "完整方法保留；第五节相关系数范围经独立全文技术复核、读者新任务和既有路径检查修订。",
       "review_paths": [
-        "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
+        "管理档案/审稿/SOL-PROD-004/20261106-correlation-scope.json"
       ],
-      "source_record": "管理档案/研究/TASK-2026-0298/sources.json",
-      "source_sha256": "6f911a9e2ba3dc47e5253fd055ba503b570b203f8a4a5d2752e2460d0d1302b6",
+      "source_record": "管理档案/研究/TASK-2026-0298/相关系数范围修订.json",
+      "source_sha256": "77b69867198958f9053002de3b1c816658aaf73ec113696d1fad149c9d42697b",
       "materials_record": "管理档案/研究/TASK-2026-0298/materials.json",
       "scope_disposition_review": "管理档案/研究/TASK-2026-0298/范围与保留.md",
       "related_article_ids": [
@@ -5073,7 +5073,18 @@
         "SOL-PROD-002"
       ],
       "updated_at": "2026-11-06",
-      "scope": "Accepted-input merge with explicit calendars and resource availability, finite joint/conditional scenarios, deadline probability, left quantiles, marginal bounds, mitigation comparison and information requests. Original conditional model, not calibrated project prediction or universal stochastic scheduling."
+      "scope": "Accepted-input merge with explicit calendars and resource availability, finite joint/conditional scenarios, deadline probability, left quantiles, marginal bounds, mitigation comparison and information requests. Original conditional model, not calibrated project prediction or universal stochastic scheduling.",
+      "revision_history": [
+        {
+          "article_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+          "review_paths": [
+            "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
+          ],
+          "source_record": "管理档案/研究/TASK-2026-0298/sources.json",
+          "source_sha256": "6f911a9e2ba3dc47e5253fd055ba503b570b203f8a4a5d2752e2460d0d1302b6",
+          "scope": "Original publication retained; a later independent finding required a bounded correlation-scope correction."
+        }
+      ]
     },
     {
       "internal_id": "SOL-UX-003",
@@ -5101,5 +5112,5 @@
       "scope": "Single-document ordinary DOM, dedicated handle, one mouse-left session, no capture transfer, synchronous local accepted move to empty slot; no browser runtime or universal inventory framework claim."
     }
   ],
-  "current_batch_scope": "One complete local mouse-drag method, bounded old-support retirement and direct-child UX navigation; prior loading/localization relations moved to role prose. Not whole-library acceptance."
+  "current_batch_scope": "One bounded correlation-scope correction and new version-bound review. No article relocation, new formal article or whole-library acceptance."
 }

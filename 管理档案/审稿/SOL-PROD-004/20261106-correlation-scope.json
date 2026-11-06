@@ -1,0 +1,110 @@
+{
+  "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+  "article_sha256": "7e9370581e495bc9539c253f249498a01305ecbbd9896c562662a824fbfe2427",
+  "publication_kind": "bounded-correlation-scope-correction",
+  "author": "GameLibrary editorial maintainer",
+  "verdict": "pass",
+  "previous_version": {
+    "commit": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+    "article_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+    "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+    "review_sha256": "9c67cbb52aea92bb47b4f01d8fb3077a50a5cfeaa40adc39d5e0a4e8367cfa1a"
+  },
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-correlation-technical-20261106",
+      "method": "Full revised manuscript reread, affected original-source pages and exact finite arithmetic; prior needs-revision finding retained in report.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-004/20261106-correlation-scope.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-correlation-reader-20261106",
+      "method": "Full revised manuscript and independently solved unseen three-valued task plus a distinct conditional-update task.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-004/20261106-correlation-scope.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-correlation-reader-20261106",
+      "method": "Current root-to-article and return link walk with known target; not a new blind discovery test. Prior blind test remains historical.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-004/20261106-correlation-scope.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0298/相关系数范围修订.json",
+      "sha256": "77b69867198958f9053002de3b1c816658aaf73ec113696d1fad149c9d42697b"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0298/sources.json",
+      "sha256": "6f911a9e2ba3dc47e5253fd055ba503b570b203f8a4a5d2752e2460d0d1302b6"
+    }
+  ],
+  "report_sha256": "e2698486c9ea1cc317cb0a46ed036cb133efeb72b84fdc35dd2b4668c7a73d0d",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "83d05b4327bfeab3af3fed9e54e2d93559858f15db99b476adf39950d8640100"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/README.md",
+      "sha256": "41932ebe7cb7b1f39ef3b79eeeca23a75433581532824d91b408f6277cdda8d1"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/README.md",
+      "sha256": "719eda78253d5ab0f56fd2d3f22828d6f4c0efd164d72be8300398eb253929da"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/README.md",
+      "sha256": "137daf10476e69488deabe53cccd5c4e07bbacde4fb713be13823deb3529254e"
+    }
+  ],
+  "article_figure_fingerprints": [
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/examples/common-event-merge.svg",
+      "sha256": "3cc53d0ee73816ab4c9872d403f9b2c7b4ee07a6be4a5f76ca3aa02067a8b237",
+      "bytes": 3401
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/examples/finish-cdf.svg",
+      "sha256": "87165f104c636ac36961fcbff4077d49a5effb34396aa7455932de55ec96c24b",
+      "bytes": 4932
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0298/复现/README.md",
+      "sha256": "f54732077150c7b5000ce19ec7c8ef079615c0e11034c15bf06d27d9ebadd4d8",
+      "bytes": 3129
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0298/复现/case-data.json",
+      "sha256": "1031baf837218af577222abfa54753780d437182e70513dce59ecccf45e69a05",
+      "bytes": 1045
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0298/复现/reproduce_case.py",
+      "sha256": "a0d88e2b680f64f733c5200bed004c198807c877fa6c0082ac234cbd1560a1d6",
+      "bytes": 11882
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0298/复现/results.json",
+      "sha256": "b99ec6c83a031c1600d025d671147d9d7bc690defcff6482c94b4296fb66085c",
+      "bytes": 12683
+    }
+  ],
+  "change_scope": [
+    "Replace only section-five final paragraph with variable-specific correlation explanation and binary exception.",
+    "Expand source-six page locators for definition and affine property."
+  ],
+  "unchanged_scope": "All other text, headings, local links, figures, original eight-scenario data, scripts and navigation.",
+  "limits": "Selected primary-source pages, full-text independent model reviews and exact finite arithmetic. No project calibration, statistical guarantee, human study, engine or production experiment.",
+  "updated_at": "2026-11-06T17:10:00Z"
+}

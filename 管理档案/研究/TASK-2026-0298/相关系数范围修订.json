@@ -1,0 +1,98 @@
+{
+  "task_id": "TASK-2026-0298",
+  "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+  "article_sha256": "7e9370581e495bc9539c253f249498a01305ecbbd9896c562662a824fbfe2427",
+  "revision_kind": "Correction of correlation scope after independent supervision",
+  "read_on": "2026-11-06",
+  "previous_source_record": {
+    "path": "管理档案/研究/TASK-2026-0298/sources.json",
+    "sha256": "6f911a9e2ba3dc47e5253fd055ba503b570b203f8a4a5d2752e2460d0d1302b6",
+    "article_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+    "scope": "Unchanged source claims and original teaching materials remain documented in this historical record; it does not approve the revised correlation passage."
+  },
+  "sources": [
+    {
+      "article_reference": 6,
+      "authors": [
+        "Paul Embrechts",
+        "Alexander McNeil",
+        "Daniel Straumann"
+      ],
+      "title": "Correlation and Dependency in Risk Management: Properties and Pitfalls",
+      "version": "1998年11月作者稿，共37页",
+      "url": "https://people.math.ethz.ch/~embrecht/ftp/pitfalls.pdf",
+      "pdf_sha256": "2705fc20f5bad0de8bf45ab6325cee27fe86f119b9919438a455c3393e6653cd",
+      "claims": [
+        {
+          "claim": "Pearson correlation is covariance divided by the product of standard deviations; applying that definition to two nondegenerate deadline indicators identifies their joint success probability.",
+          "locator": "Printed page 6, Definition 2",
+          "observed_content": "Definition, covariance as E[XY]−E[X]E[Y], and finite nonzero variance conditions.",
+          "conditions": "The event formula is an editorial derivation, not a game-production result from the source. Exact population parameters and compatible marginals are required.",
+          "article_section": "五、只有边际概率，也能给出有用的界"
+        },
+        {
+          "claim": "Affine changes with two slopes whose product is positive preserve correlation, so this complete two-point timing example and its fast/slow indicators have the same correlation.",
+          "locator": "Printed page 7, linearity property",
+          "observed_content": "ρ(αX+β, γY+δ)=sgn(αγ)ρ(X,Y).",
+          "conditions": "Here both slopes equal −3; the binary relationship is derived for this teaching example. It does not identify arbitrary multivalued timing distributions.",
+          "article_section": "五、只有边际概率，也能给出有用的界"
+        },
+        {
+          "claim": "For general timing distributions, zero correlation does not establish independence, and marginals plus a timing correlation do not generally identify the joint law or every deadline probability.",
+          "locator": "Printed pages 8 and 20–22, section 3.2, positive dependence discussion and Fallacy 1",
+          "observed_content": "Zero-correlation dependence example, positive quadrant dependence implication, and multiple joint laws sharing marginals and correlation.",
+          "conditions": "Distinguish timing correlation from the correlation of two indicators at one deadline. A single-deadline indicator correlation identifies only that deadline event, not the full timing distribution.",
+          "article_section": "五、只有边际概率，也能给出有用的界"
+        }
+      ],
+      "actually_viewed_source_pages": [
+        {
+          "printed_page": 6,
+          "render_sha256": "35d6015ebee40e1a37d1aed15fcb2b5d685581ca45754cdc474414c3e0bd00f0",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        },
+        {
+          "printed_page": 7,
+          "render_sha256": "fb8981dd36983a7cf678b3d504fa3145b1258247bbf8c92e1b4174bae5d8552d",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        },
+        {
+          "printed_page": 8,
+          "render_sha256": "b883e53edd9c277964958d788f2b907342eff96ac0f005bb39feeb4a2212cdcb",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        },
+        {
+          "printed_page": 20,
+          "render_sha256": "3b47c1f03cb2a7c20fa9aa929627cec833da8c4237a21e182ceb4d34f6a4c1df",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        },
+        {
+          "printed_page": 21,
+          "render_sha256": "2b59f35845c26fea3c1dcc0080ba5dcad1f57108ae63a3b5ad9be660e31ec0b2",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        },
+        {
+          "printed_page": 22,
+          "render_sha256": "d47f4164df9ea5645ccd2e6d9a8770941b10a8713204beaa9e66725449b2d9f4",
+          "observed_content": "Actual original page image inspected for this correction; research image not redistributed."
+        }
+      ],
+      "conditions": "Selected original probability definitions and scope statements; no financial parameters or decision system applied to games."
+    }
+  ],
+  "original_derivations": {
+    "binary_relation": "q = 0.64 + 0.16ρ for the complete 2/5-day two-point example",
+    "exact_case": {
+      "rho": "1/2",
+      "q": "18/25",
+      "four_cells": [
+        "18/25",
+        "2/25",
+        "2/25",
+        "3/25"
+      ]
+    },
+    "indicator_relation": "q = p_A p_B + ρ_I sqrt[p_A(1−p_A)p_B(1−p_B)]"
+  },
+  "limits": "Selected primary-source pages, full-text independent model reviews and exact finite arithmetic. No project calibration, statistical guarantee, human study, engine or production experiment."
+}

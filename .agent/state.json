@@ -6,22 +6,22 @@
     "TASK-2026-0300"
   ],
   "last_completed_task_id": "TASK-2026-0299",
-  "last_real_progress_at": "2026-11-06T16:45:20Z",
-  "last_commit_sha": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+  "last_real_progress_at": "2026-11-06T17:10:00Z",
+  "last_commit_sha": "0f6307c7dc20751c988a7dfcd8f6b84871f8f7ee",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-UX-003/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-PROD-004/20261106-correlation-scope.json"
   },
   "publication": {
-    "kind": "complete-local-pointer-drag-method",
-    "article": "GameLibrary/界面与体验/交互设计/指针交互/网页背包物品拖放：捕获、命中与取消.md",
-    "article_sha256": "f605c9a517bd40cdff499b2ed52dba77fb1624ef3b21efac26738b0c8763bbfe",
-    "previous_verified_head": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+    "kind": "bounded-correlation-scope-correction",
+    "article": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+    "article_sha256": "7e9370581e495bc9539c253f249498a01305ecbbd9896c562662a824fbfe2427",
+    "previous_verified_head": "0f6307c7dc20751c988a7dfcd8f6b84871f8f7ee",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "One complete finite method and bounded migration; not whole discipline or library acceptance."
+    "scope": "Only the identified correlation claim and its evidence bindings; not whole-library acceptance."
   },
-  "next_action": "Complete current concept-handoff source/visual research and duplicate assessment, then write the selected bounded complete manuscript rather than another isolated warning.",
+  "next_action": "Complete independent full technical, reader and root navigation reviews of the drafted environment-scene hierarchy method, integrate findings and migrate the bounded historical support.",
   "pending_topics": [
     {
       "task_id": "TASK-2026-0300",
