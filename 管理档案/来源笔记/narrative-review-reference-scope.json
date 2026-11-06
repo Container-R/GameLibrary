@@ -1,0 +1,48 @@
+{
+  "id": "SRC-NARR-REVIEW-REFERENCE-SCOPE-20261106",
+  "title": "人物审核依据的适用阶段",
+  "type": "source-note",
+  "status": "source-backed",
+  "primary_discipline": "NARR",
+  "updated_at": "2026-11-06",
+  "path": "GameLibrary/叙事设计/剧情制作/岗位与协作/游戏编剧与叙事设计师如何协作.md",
+  "sources": [
+    {
+      "author": "立福寛",
+      "organization": "Cygames",
+      "title": "【CEDEC2026 フォローアップ】ゲームシナリオライターを支援するAIツールの開発の実践 ～設計とプロンプトの工夫～",
+      "date": "2026-08-03",
+      "url": "https://tech.cygames.co.jp/archives/77178/",
+      "location": "質問への回答: final Q&A about character settings changing with game progression",
+      "read_at": "2026-11-06",
+      "scope": "Initial-profile limitation and an update-candidate approach still under investigation."
+    },
+    {
+      "author": "立福寛",
+      "organization": "Cygames",
+      "title": "ゲームシナリオライターを支援するAIツール開発の実践 ― 設計とプロンプトの工夫 ―",
+      "event": "CEDEC2026",
+      "date": "Exact presentation date not checked",
+      "url": "https://speakerdeck.com/player/425507ad401f4eb782ec3087331c8890",
+      "location": "Slide text 19, 21 and 23",
+      "read_at": "2026-11-06",
+      "scope": "Prototype, writer interpretation and integration limitations; no image-based inference."
+    }
+  ],
+  "original_analysis": "The hypothetical bridge guard becomes trusting after a shared escape. Review first aligns story stage, actually experienced events and profile applicability, then distinguishes an intended development from a missing transition or a wrong branch premise. Earlier applicable profiles are not globally overwritten.",
+  "deduplication": {
+    "snapshot": "999e5818c301109c4e7d14ded2ae3d399ae7313c",
+    "scope": "Read three complete current narrative readers: Cygames recording, narrative-role collaboration and Valve contextual dialogue.",
+    "distinct_value": "Applicability of the review reference, separate from runtime choice/history, save restoration and recording approval.",
+    "decision": "One small existing-reader section, no new book or task."
+  },
+  "limits": [
+    "No public branch-specific versioning or automatic migration mechanism established.",
+    "No tool, model, story, game, audio or save execution.",
+    "No measured accuracy, production-effect claim or human usability test.",
+    "No copied slides, prompt templates or source screenshots."
+  ],
+  "review": "管理档案/审查/人物审核依据的适用阶段-来源与读者审查.md",
+  "publication_status": "Primary-source findings and a reviewed proposed section are recorded; the proposed article section is not yet published.",
+  "proposed_reader_sha256": "69f24fb2b1301db9f671030000675b1abfa5036c9a768ce9874ee60ef8c1f8d8"
+}
