@@ -1,0 +1,135 @@
+{
+  "task_id": "TASK-2026-0299",
+  "article_path": "GameLibrary/界面与体验/交互设计/指针交互/网页背包物品拖放：捕获、命中与取消.md",
+  "article_sha256": "f605c9a517bd40cdff499b2ed52dba77fb1624ef3b21efac26738b0c8763bbfe",
+  "sources": [
+    {
+      "reference": 1,
+      "claim": "捕获覆盖普通命中；pointerId 仅标识当前活跃指针，可复用。up/cancel 后释放捕获，lost 本身不定义游戏成功或失败。cancel 坐标沿用同指针最近事件。捕获中的边界事件不能当空间探针。hasPointerCapture 检查待定捕获；设置还受活跃指针、按键状态、连接与文档限制。鼠标 pointerup 是退出所有按钮按下状态。若生成由已捕获 up 导致的 click，其目标仍有捕获相关规则。",
+      "source": {
+        "organization": "W3C Pointer Events Working Group",
+        "title": "Pointer Events, Level 3",
+        "url": "https://www.w3.org/TR/2026/REC-pointerevents3-20260630/",
+        "version": "W3C Recommendation, 2026-06-30",
+        "read_on": "2026-11-06"
+      },
+      "locator": [
+        "§4.1 pointerId",
+        "§4.1.1–2 button/buttons/primary",
+        "§4.1.3–4 分派、待定捕获、流抑制及布局",
+        "§4.2.6–7、§4.2.11–12 up/cancel/lost/click",
+        "§5、§9.1–9.5 捕获接口和释放"
+      ],
+      "observed_content": "捕获覆盖普通命中；pointerId 仅标识当前活跃指针，可复用。up/cancel 后释放捕获，lost 本身不定义游戏成功或失败。cancel 坐标沿用同指针最近事件。捕获中的边界事件不能当空间探针。hasPointerCapture 检查待定捕获；设置还受活跃指针、按键状态、连接与文档限制。鼠标 pointerup 是退出所有按钮按下状态。若生成由已捕获 up 导致的 click，其目标仍有捕获相关规则。",
+      "conditions": [
+        "只声称所列固定规范的要求，不从规范侧栏浏览器支持表推成完整方法已兼容",
+        "应用若允许捕获转交，活动中 lost 不能一律解释为取消；本候选明确不转交",
+        "移除捕获节点时可能改向 document，且应核对规范 SHOULD 与 MUST 的强度",
+        "一般命中细节不由 Pointer Events 规范完整规定",
+        "触控平移/缩放需另核 touch-action；捕获不保证输入永不取消"
+      ],
+      "application_inference": "会话身份、稳定捕获根、匹配指针过滤、异常失捕获的保守取消、up 后一次业务终结是本专题设计，不是W3C背包算法。",
+      "article_sections": [
+        "从 A 到 B，分别问三个问题",
+        "开始时保存的是这一次操作",
+        "哪些通知结束拖动，哪些只是后续消息"
+      ]
+    },
+    {
+      "reference": 2,
+      "claim": "相关API坐标通常为CSS像素。client坐标相对视口；elementFromPoint接收视口坐标并处理规定的视口越界，命中考虑适用变换。它返回可命中元素，未必是最前绘制元素；无目标时还可能返回根元素。elementsFromPoint按从前到后的绘制顺序列出命中元素。offset坐标的原点与变换处理不同。",
+      "source": {
+        "organization": "W3C CSS Working Group",
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/2025/WD-cssom-view-1-20250916/",
+        "version": "Working Draft, 2025-09-16",
+        "read_on": "2026-11-06"
+      },
+      "locator": [
+        "§5 elementFromPoint/elementsFromPoint完整算法与注",
+        "§10 client/page/offset坐标"
+      ],
+      "observed_content": "相关API坐标通常为CSS像素。client坐标相对视口；elementFromPoint接收视口坐标并处理规定的视口越界，命中考虑适用变换。它返回可命中元素，未必是最前绘制元素；无目标时还可能返回根元素。elementsFromPoint按从前到后的绘制顺序列出命中元素。offset坐标的原点与变换处理不同。",
+      "conditions": [
+        "这是工作草案，不称Recommendation或浏览器一致性证明",
+        "正文采用同文档、普通DOM，不涵盖iframe/Shadow DOM/Canvas、自定义3D坐标与捏合缩放",
+        "null、根元素或非本背包元素必须作为无候选处理",
+        "不可把预先缓存的矩形或当前高亮当成最终命中"
+      ],
+      "application_inference": "clientX/clientY直接进入同文档当前命中；普通滚动/布局变化后重算，up再评估。使用elementsFromPoint搜索下层格子必须先有明确阻挡政策。",
+      "article_sections": [
+        "每次重新命中，只解析最前面的有效对象"
+      ]
+    },
+    {
+      "reference": 3,
+      "claim": "pointer-events:none把该元素的盒子排除在相应命中之外；后代可显式设auto重新参与。属性不阻止顺序焦点导航。规范也说明完整普通命中仍有未充分规定的细节。",
+      "source": {
+        "organization": "W3C CSS Working Group",
+        "title": "CSS Basic User Interface Module Level 4",
+        "url": "https://www.w3.org/TR/2026/WD-css-ui-4-20260120/",
+        "version": "Working Draft, 2026-01-20",
+        "read_on": "2026-11-06"
+      },
+      "locator": [
+        "§6.2 Exclusion from Hit-testing: pointer-events"
+      ],
+      "observed_content": "pointer-events:none把该元素的盒子排除在相应命中之外；后代可显式设auto重新参与。属性不阻止顺序焦点导航。规范也说明完整普通命中仍有未充分规定的细节。",
+      "conditions": [
+        "装饰预览与真正阻挡层必须分开",
+        "预览子树不得意外恢复auto",
+        "none不能作为全部交互禁用或无障碍隔离证明",
+        "不依据一个矩形案例宣布任意CSS叠层/裁剪兼容"
+      ],
+      "application_inference": "专用纯装饰预览及其后代排除命中；业务阻挡层保持可命中；不无条件跳过遮挡寻找格子。",
+      "article_sections": [
+        "每次重新命中，只解析最前面的有效对象"
+      ]
+    },
+    {
+      "reference": 4,
+      "claim": "target与当前调用监听器的currentTarget不同；分派结束currentTarget会清空。closest只寻找本元素及祖先中的选择器匹配；isConnected检查连接，contains检查后代关系，均不判断格子的游戏接纳规则。",
+      "source": {
+        "organization": "WHATWG",
+        "title": "DOM Standard / dom.bs",
+        "url": "https://github.com/whatwg/dom/blob/6cc24159f1fe0857686d6712affb37d33229777e/dom.bs",
+        "version": "固定提交6cc24159f1fe0857686d6712affb37d33229777e；源码blob 8b0b8e13531783d792e5b933be45bebcb5c31af9",
+        "read_on": "2026-11-06"
+      },
+      "locator": [
+        "L524–530 target/currentTarget说明",
+        "L594–601 target与currentTarget属性",
+        "L1545–1552分派完成后currentTarget清空",
+        "L4832–4833 isConnected",
+        "L5401–5403 contains",
+        "L8119–8136 closest算法"
+      ],
+      "observed_content": "target与当前调用监听器的currentTarget不同；分派结束currentTarget会清空。closest只寻找本元素及祖先中的选择器匹配；isConnected检查连接，contains检查后代关系，均不判断格子的游戏接纳规则。",
+      "conditions": [
+        "DOM同名id、CSS类、非空引用、连接状态都不是物品业务身份或接纳许可",
+        "本候选不跨Shadow DOM解析落点",
+        "事件数据需在同步处理阶段提取；不把晚读currentTarget当持久拥有者"
+      ],
+      "application_inference": "当前命中元素向上解析格子后，仍核对本背包所属、登记业务ID和当前模型；会话中保存明确拥有者，不保存事件对象以待未来决定。",
+      "article_sections": [
+        "从 A 到 B，分别问三个问题",
+        "开始时保存的是这一次操作",
+        "每次重新命中，只解析最前面的有效对象"
+      ]
+    }
+  ],
+  "original_method": {
+    "scope": "Single-document ordinary DOM, dedicated handle, one mouse-left session, no capture transfer, local synchronous accepted move to empty slot; application policy is not a W3C inventory algorithm.",
+    "models": "Injected hit labels and capture outcomes drive a pure application-state model. Neither DOM geometry nor browser event dispatch is executed.",
+    "representative_inputs": "R01–R10 and M01–M04 are original finite teaching inputs, not captured observations.",
+    "full_model_run": "Two author executions and one editor execution produced identical14-case output and summaries; native browser, CSS hit testing and device inputs not run.",
+    "article_rule_regression": "Exact current article planMove block executed against12 additional ID/qualification cases, with actual output. This checks article code rather than relying on simplified fixed-label model protection.",
+    "figure": "One original SVG, actually rendered and viewed, not a screenshot or runtime result."
+  },
+  "limits": [
+    "Working Draft source versions remain drafts.",
+    "No browser internal implementation inspected.",
+    "No browser, DCC, engine, device, performance, accessibility or human validation.",
+    "No third-party source binaries or screenshots republished."
+  ]
+}

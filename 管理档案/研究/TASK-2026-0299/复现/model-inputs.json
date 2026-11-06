@@ -1,0 +1,966 @@
+{
+  "provenance": "原创应用层输入。R01–R10转写发现输入；命中与捕获结果是注入事实。M01–M04为新增防御输入。不是浏览器日志。",
+  "cases": [
+    {
+      "id": "R01",
+      "name": "捕获中的松手与后续通知",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "click",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "候选处收到取消",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "cancel",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "先失去捕获再松手",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "label-B"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "label-B"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "移出背包后松手",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "移出背包后返回",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "预览下有真正阻挡层",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "inventory-busy-mask",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "inventory-busy-mask",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "inventory-busy-mask",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "目标状态变化但DOM不变",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "disable-B",
+          "hit": "label-B"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "不移动指针时布局改变",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "refresh",
+          "hit": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "panel-main",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "panel-main",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "来源物品已被另一次操作改变",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "replace-source",
+          "hit": "label-B"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "其他指针与旧尝试回调",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 99,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "label-B"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "close",
+          "epoch": 20
+        },
+        {
+          "type": "lost",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "page-decoration"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 580,
+          "y": 100,
+          "hit": "page-decoration",
+          "eventTarget": "page-decoration"
+        },
+        {
+          "type": "reopen",
+          "epoch": 21
+        },
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "got",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "old-callback",
+          "attemptId": 101,
+          "epoch": 20
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "name": "捕获请求抛错的适配结果",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": false,
+          "cause": "throw"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "调用返回但没有待定捕获",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": false,
+          "cause": "hasPointerCapture=false"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "左键会话中按下右键",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 2,
+          "buttons": 3,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "清理与通知重入",
+      "hooks": "reenter",
+      "steps": [
+        {
+          "type": "down",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 1,
+          "x": 70,
+          "y": 100,
+          "hit": "handle-sword-17",
+          "eventTarget": "handle-sword-17",
+          "handle": "sword-17"
+        },
+        {
+          "type": "capture-result",
+          "pointerId": 7,
+          "ok": true
+        },
+        {
+          "type": "move",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": -1,
+          "buttons": 1,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        },
+        {
+          "type": "up",
+          "pointerId": 7,
+          "pointerType": "mouse",
+          "button": 0,
+          "buttons": 0,
+          "x": 250,
+          "y": 100,
+          "hit": "label-B",
+          "eventTarget": "panel-main"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "kind": "article-rule-regression",
+  "runtime": "v24.22.1",
+  "rows": [
+    {
+      "id": "no-hit-null",
+      "targetType": "object",
+      "targetLabel": "null",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "undefined-is-not-id",
+      "targetType": "undefined",
+      "targetLabel": "undefined (value)",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "number-is-not-id",
+      "targetType": "number",
+      "targetLabel": "0",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "empty-is-not-id",
+      "targetType": "string",
+      "targetLabel": "\"\"",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "actual-string-null",
+      "targetType": "string",
+      "targetLabel": "\"null\"",
+      "expectedAccepted": true,
+      "accepted": true,
+      "inputUnchanged": true,
+      "finalItemSlot": "null"
+    },
+    {
+      "id": "actual-string-undefined",
+      "targetType": "string",
+      "targetLabel": "\"undefined\"",
+      "expectedAccepted": true,
+      "accepted": true,
+      "inputUnchanged": true,
+      "finalItemSlot": "undefined"
+    },
+    {
+      "id": "actual-string-zero",
+      "targetType": "string",
+      "targetLabel": "\"0\"",
+      "expectedAccepted": true,
+      "accepted": true,
+      "inputUnchanged": true,
+      "finalItemSlot": "0"
+    },
+    {
+      "id": "normal-B",
+      "targetType": "string",
+      "targetLabel": "\"B\"",
+      "expectedAccepted": true,
+      "accepted": true,
+      "inputUnchanged": true,
+      "finalItemSlot": "B"
+    },
+    {
+      "id": "same-source",
+      "targetType": "string",
+      "targetLabel": "\"A\"",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "occupied-B",
+      "targetType": "string",
+      "targetLabel": "\"B\"",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "changed-source-version",
+      "targetType": "string",
+      "targetLabel": "\"B\"",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    },
+    {
+      "id": "wrong-inventory",
+      "targetType": "string",
+      "targetLabel": "\"B\"",
+      "expectedAccepted": false,
+      "accepted": false,
+      "inputUnchanged": true,
+      "finalItemSlot": "A"
+    }
+  ],
+  "limits": "Runs the literal rule block, not DOM hit testing, browser capture or native input."
+}

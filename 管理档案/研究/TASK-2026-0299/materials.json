@@ -1,0 +1,260 @@
+{
+  "task_id": "TASK-2026-0299",
+  "base_commit": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+  "article": {
+    "path": "GameLibrary/界面与体验/交互设计/指针交互/网页背包物品拖放：捕获、命中与取消.md",
+    "bytes": 25314,
+    "sha256": "f605c9a517bd40cdff499b2ed52dba77fb1624ef3b21efac26738b0c8763bbfe"
+  },
+  "historical_materials": [
+    {
+      "path": ".agent/audits/20261103T185000Z-reader.md",
+      "bytes": 4717,
+      "sha256": "71c30518aa1c401a9cd4fa843e4cfcf926a9b5660429f3f0d2f40e53cb9028bd",
+      "git_blob_sha1": "3953d4afc64e55b163c0b164ac2bcd25253fa5d6",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": ".agent/runs/20261103T183436Z-pointer-capture.json",
+      "bytes": 1621,
+      "sha256": "a947bd6ede4370280be86dbb2d5b19896b528e6af48a04170cb20b2a41cb2116",
+      "git_blob_sha1": "2fa14a3a7d1b302b17d7d62930a7e8d87aa591a0",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/异步资源/关闭装备预览后，未完成的资源加载怎样收尾.md",
+      "bytes": 11899,
+      "sha256": "4ee1c8b105fa712261994db6fada943a10eb05f11dc65d77c89776f2569892ef",
+      "git_blob_sha1": "9d0b0cfd6eb93b2c93bf8643fc6313e9aeea4747",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/本地化与无障碍/无障碍设计/输入操作/把持续按住改成点按时如何保留取消与完成的含义.md",
+      "bytes": 9709,
+      "sha256": "e29f4fd6497e1599601c4bca215740ad15df3312bb75a66139fade20540dac98",
+      "git_blob_sha1": "9b2c07137822f32261cc9a559fa085001a758863",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+      "bytes": 24654,
+      "sha256": "0e20fdd9d2bd0e66d1cbe1f6d02217ad01289ea25616a45ffb2f49786fa84260",
+      "git_blob_sha1": "16a44427c58bf5ff528390327393b01e9beb7511",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/岗位与协作/玩法程序员如何实现和验证设计规则.md",
+      "bytes": 16320,
+      "sha256": "66a63840f6b27aad2a828a47803f026fee5cca621fb790b970e909e231d6940c",
+      "git_blob_sha1": "b9a2953d17e7df21caadacca82a20811a4570930",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/输入接入/README.md",
+      "bytes": 1339,
+      "sha256": "2f9710e776fde63c0d3421137d23f456df892e01774ee1914046c1536e9d86fc",
+      "git_blob_sha1": "4c0de05d529cfc19ab153677556837cdcbab7e5c",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/界面与体验/README.md",
+      "bytes": 606,
+      "sha256": "a469d514e59a0622be5d982bc34829fc0373e7be55ce6f73675df3d32687fca1",
+      "git_blob_sha1": "23c1ffe560f7fffad5294bb77453789ee6726ecc",
+      "disposition": "Only direct-child choices; original cross-topic relations moved into role body",
+      "unchanged_in_this_batch": false
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/README.md",
+      "bytes": 677,
+      "sha256": "355a50a4fa41f5e4d1c18fda632ce528165ccc4a58ea5ca8a656a721d6354f95",
+      "git_blob_sha1": "5e8a432aa4fe2ad03415ce103c3300c68c9f04cc",
+      "disposition": "Only direct-child choices; original cross-topic relations moved into role body",
+      "unchanged_in_this_batch": false
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+      "bytes": 16391,
+      "sha256": "b6bdf49130c5c09349d7239cb7790e7fa452bd99c67fc3477d45278a13bc30f0",
+      "git_blob_sha1": "96d3ce8d1067b45804e84135008cc7fd46d13247",
+      "disposition": "Bounded pointer relation and relocated old navigation relations; original role and UMG claims retained",
+      "unchanged_in_this_batch": false
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/文本输入/确认输入法候选时，为什么不该顺便发送聊天消息.md",
+      "bytes": 12064,
+      "sha256": "fed1a457c8a6d2a5133426233451925d81b15db04b2cd7271606f78070a63103",
+      "git_blob_sha1": "bc2f214a5467be455f4e2c27448017cf291b7b5a",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
+      "bytes": 15003,
+      "sha256": "853ed71b2d6b194e0d5072711e933f6c727931cbab0b1ab43dbf81a675d0f500",
+      "git_blob_sha1": "62c2d19d342523d08190caff0a066f82e81973eb",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/UMG显示与朗读文本-增量审读.md",
+      "bytes": 1662,
+      "sha256": "009712c466e6ce247e4271eeeb4ef8d0cbea6fdc03d711934df86263152cb754",
+      "git_blob_sha1": "7676041fb8fc3c0d0956da04a20a890bd3dd6d09",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/指针捕获与放置目标-来源与读者审查.md",
+      "bytes": 1217,
+      "sha256": "6c1e762351bd73b5be130c90294bf7da1e462704dc6a831103ed1dfb9ddefbec",
+      "git_blob_sha1": "f46b3a56902994400e85ae05f65e0e6d52da9242",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+      "bytes": 5516,
+      "sha256": "d3790f73536151faa5682c7db54558ba225af6d1bd7d5d58fe28a0ab2815b658",
+      "git_blob_sha1": "95479fb77cbe90fb8385edfceb5b00403ff548c3",
+      "disposition": "Historical body replaced with fixed-version index; full old text remains in Git history",
+      "unchanged_in_this_batch": false
+    },
+    {
+      "path": "管理档案/支持资料/清空键盘状态，为什么可能触发一次蓄力攻击.md",
+      "bytes": 8508,
+      "sha256": "89306166e948aeffa549f6d7debf5edc90e8ac5206515606455bb13b84399ef3",
+      "git_blob_sha1": "afd39161906645e14ca14893a68af9d73904d191",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/来源笔记/pointer-capture-drop-target.json",
+      "bytes": 1365,
+      "sha256": "868760076e1512ea0d3e722c07140b8c5cbb7c3e38ead81379100008f84d8188",
+      "git_blob_sha1": "826ef51b0472bd37e634d5e9a10f4f8a29246dbc",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/来源笔记/umg-accessible-text.json",
+      "bytes": 3812,
+      "sha256": "4bed827a27a04503e4c38cb4a4a6ff990052037ed370c9c9bf2eb58aaa6aed7d",
+      "git_blob_sha1": "25e7d218446cbc3ea4914dab904fd017aa1fb924",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/研究记录/pointer-capture-routing-v1/PROTOCOL.md",
+      "bytes": 5385,
+      "sha256": "6a97b0c3e5741ea447fca395b54b9f42d96fc3ffa6de0bc9a2b00a990f2785b9",
+      "git_blob_sha1": "2c8745b3522f8994a339b2cb2b7bbe013dd4962c",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/研究记录/pointer-capture-routing-v1/README.md",
+      "bytes": 1450,
+      "sha256": "c7e557f30f88a5e4b027d7fb0a6310484a6d1fb5ac62e0032dc95e01e2bbc80f",
+      "git_blob_sha1": "7121d8430df729a7561f06074513c975849ba24a",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/研究记录/pointer-capture-routing-v1/fixture.html",
+      "bytes": 1384,
+      "sha256": "a0f5317d663376814d941fd546643b561cc75b7ba8135855681bd3eda4f53503",
+      "git_blob_sha1": "89207ae0df7fc3de0040f212162b3efc86075354",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/研究记录/pointer-capture-routing-v1/output.json",
+      "bytes": 562,
+      "sha256": "a015b886dd32446f22cd2b3a993fc0fc72c40d4043d2a5bb37738657dc943088",
+      "git_blob_sha1": "c10551330f461882c5fa303355b1b86b4efad6d5",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/研究记录/pointer-capture-routing-v1/runner.cjs",
+      "bytes": 5105,
+      "sha256": "e8b60405a3fb9b92e7812779ff49194f9d6949887f69366c0ba737083ce55caa",
+      "git_blob_sha1": "ea6413b8fe42896a754d270bcd04c6deab966dee",
+      "disposition": "Unchanged; old observation/review identity does not approve new method",
+      "unchanged_in_this_batch": true
+    }
+  ],
+  "reproduction_materials": [
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/README.md",
+      "bytes": 3803,
+      "sha256": "f49abf058fabdc95872b1d8d2262d1e5cc0ffa931d07dc20f0aab9478da86b6a"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/model.mjs",
+      "bytes": 6617,
+      "sha256": "36bf14f0cbcf2f8f05167ea0e0215181104837299118ecb4d2df1146832ada2f"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run.mjs",
+      "bytes": 3641,
+      "sha256": "4ee907d54173be67b651466d2ab2e328f03da845fa74bc8fa97d3884145e4eff"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/model-inputs.json",
+      "bytes": 22534,
+      "sha256": "f13e5d7a9adff04008267980ba36a4440b59a51fe0dab9ed5ded1fd632cf6cc0"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run-02/output.json",
+      "bytes": 81771,
+      "sha256": "2253917117560969e70bf30c9ba061306903a4fb2e4c3067051fd5462e356f76"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run-02/summary.txt",
+      "bytes": 867,
+      "sha256": "548f5d1a7e2fbcb2f4ab6ccdbbfa0e7d2e2deab674a9bbc47ef07b4a7c342611"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/rule-regression.mjs",
+      "bytes": 3000,
+      "sha256": "768f912c98590bc2c4bacf9591936a64fc8b4afbb45c490a3aa6f6e487804173"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/rule-regression-output.json",
+      "bytes": 2836,
+      "sha256": "71988fd63f4eb19260d8875e5835b18641159c64fe1bb4505485bf0fb20415f0"
+    }
+  ],
+  "article_figures": [
+    {
+      "path": "GameLibrary/界面与体验/交互设计/指针交互/examples/capture-hit-rule.svg",
+      "bytes": 6636,
+      "sha256": "dd524d08b2d72998270f0046ff14d291f5bc4f9ba91e530f5289a9fe1f2497e1"
+    }
+  ],
+  "historical_body_snapshot": {
+    "path": "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+    "commit": "c051e9e40fd7c95feb19b677ee43eecfe39396a7",
+    "sha256": "d3790f73536151faa5682c7db54558ba225af6d1bd7d5d58fe28a0ab2815b658",
+    "url": "https://github.com/Container-R/GameLibrary/blob/c051e9e40fd7c95feb19b677ee43eecfe39396a7/管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md"
+  },
+  "preservation_scope": "All specified old failure artifacts, source/review records and other formal method bodies retained byte-for-byte. No old runtime retried. Original drafts remain research history.",
+  "host_revisions": [
+    {
+      "path": "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+      "previous_sha256": "b6bdf49130c5c09349d7239cb7790e7fa452bd99c67fc3477d45278a13bc30f0",
+      "bytes": 16904,
+      "sha256": "c2079a4d41fafeb57f84dc7e1d1f781fdc5f26f019976cf294c4451bf4f0fe86",
+      "scope": "One old pointer reading paragraph replaced and one localization relation inserted; async and localization links moved from higher-level navigation, not new claims about their execution."
+    }
+  ]
+}

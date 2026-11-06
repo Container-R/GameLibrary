@@ -1,0 +1,3329 @@
+{
+  "kind": "pure-application-model",
+  "runtime": "v24.22.1",
+  "rows": [
+    {
+      "id": "R01",
+      "name": "捕获中的松手与后续通知",
+      "end": {
+        "active": null,
+        "itemSlot": "B",
+        "slots": {
+          "A": null,
+          "B": "sword-17",
+          "C": null
+        },
+        "commits": 1,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "accepted",
+            "reason": "up",
+            "targetId": "B"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "click",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "name": "候选处收到取消",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "cancel"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "cancel",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "cancel"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "cancel"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "name": "先失去捕获再松手",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "lost"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "lost"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "label-B"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "lost"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "label-B"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "lost"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "name": "移出背包后松手",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "no-target"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "name": "移出背包后返回",
+      "end": {
+        "active": null,
+        "itemSlot": "B",
+        "slots": {
+          "A": null,
+          "B": "sword-17",
+          "C": null
+        },
+        "commits": 1,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "accepted",
+            "reason": "up",
+            "targetId": "B"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "name": "预览下有真正阻挡层",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "no-target"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "inventory-busy-mask",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "inventory-busy-mask",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "inventory-busy-mask",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "name": "目标状态变化但DOM不变",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "target-disabled"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "disable-B",
+            "hit": "label-B"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "target-disabled"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "target-disabled"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "name": "不移动指针时布局改变",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "no-target"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "refresh",
+            "hit": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "panel-main",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "panel-main",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "no-target"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "name": "来源物品已被另一次操作改变",
+      "end": {
+        "active": null,
+        "itemSlot": "C",
+        "slots": {
+          "A": "sword-18",
+          "B": null,
+          "C": "sword-17"
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "source-invalid"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "replace-source",
+            "hit": "label-B"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "C",
+            "slots": {
+              "A": "sword-18",
+              "B": null,
+              "C": "sword-17"
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "source-invalid"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "C",
+            "slots": {
+              "A": "sword-18",
+              "B": null,
+              "C": "sword-17"
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "source-invalid"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "C",
+            "slots": {
+              "A": "sword-18",
+              "B": null,
+              "C": "sword-17"
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "source-invalid"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "name": "其他指针与旧尝试回调",
+      "end": {
+        "active": {
+          "attemptId": 102,
+          "epoch": 21,
+          "phase": "dragging",
+          "candidate": "B"
+        },
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": 102,
+        "ignoredCallbacks": 1,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "closed"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 99,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "label-B"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "close",
+            "epoch": 20
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "lost",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "page-decoration"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 580,
+            "y": 100,
+            "hit": "page-decoration",
+            "eventTarget": "page-decoration"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "reopen",
+            "epoch": 21
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 21,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 21,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": 102,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "got",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 21,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": 102,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "old-callback",
+            "attemptId": 101,
+            "epoch": 20
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 21,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": 102,
+            "ignoredCallbacks": 1,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 21,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": 102,
+            "ignoredCallbacks": 1,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "closed"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "name": "捕获请求抛错的适配结果",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "capture-failed"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": false,
+            "cause": "throw"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "capture-failed"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "name": "调用返回但没有待定捕获",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "capture-failed"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": false,
+            "cause": "hasPointerCapture=false"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "capture-failed"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "name": "左键会话中按下右键",
+      "end": {
+        "active": null,
+        "itemSlot": "A",
+        "slots": {
+          "A": "sword-17",
+          "B": null,
+          "C": null
+        },
+        "commits": 0,
+        "cleanups": 1,
+        "previewOwner": null,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "canceled",
+            "reason": "buttons-changed"
+          }
+        ]
+      },
+      "probes": [],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 2,
+            "buttons": 3,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "buttons-changed"
+              }
+            ]
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": null,
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 1,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "canceled",
+                "reason": "buttons-changed"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "name": "清理与通知重入",
+      "end": {
+        "active": {
+          "attemptId": 102,
+          "epoch": 20,
+          "phase": "dragging",
+          "candidate": null
+        },
+        "itemSlot": "B",
+        "slots": {
+          "A": null,
+          "B": "sword-17",
+          "C": null
+        },
+        "commits": 1,
+        "cleanups": 1,
+        "previewOwner": 102,
+        "ignoredCallbacks": 0,
+        "results": [
+          {
+            "attemptId": 101,
+            "epoch": 20,
+            "status": "accepted",
+            "reason": "up",
+            "targetId": "B"
+          }
+        ]
+      },
+      "probes": [
+        {
+          "at": "cleanup",
+          "commits": 1,
+          "active": null
+        },
+        {
+          "at": "notify",
+          "commits": 1,
+          "active": 102,
+          "previewOwner": 102
+        }
+      ],
+      "trace": [
+        {
+          "input": {
+            "type": "down",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 1,
+            "x": 70,
+            "y": 100,
+            "hit": "handle-sword-17",
+            "eventTarget": "handle-sword-17",
+            "handle": "sword-17"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "starting",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": null,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "capture-result",
+            "pointerId": 7,
+            "ok": true
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "move",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": -1,
+            "buttons": 1,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 101,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": "B"
+            },
+            "itemSlot": "A",
+            "slots": {
+              "A": "sword-17",
+              "B": null,
+              "C": null
+            },
+            "commits": 0,
+            "cleanups": 0,
+            "previewOwner": 101,
+            "ignoredCallbacks": 0,
+            "results": []
+          }
+        },
+        {
+          "input": {
+            "type": "up",
+            "pointerId": 7,
+            "pointerType": "mouse",
+            "button": 0,
+            "buttons": 0,
+            "x": 250,
+            "y": 100,
+            "hit": "label-B",
+            "eventTarget": "panel-main"
+          },
+          "state": {
+            "active": {
+              "attemptId": 102,
+              "epoch": 20,
+              "phase": "dragging",
+              "candidate": null
+            },
+            "itemSlot": "B",
+            "slots": {
+              "A": null,
+              "B": "sword-17",
+              "C": null
+            },
+            "commits": 1,
+            "cleanups": 1,
+            "previewOwner": 102,
+            "ignoredCallbacks": 0,
+            "results": [
+              {
+                "attemptId": 101,
+                "epoch": 20,
+                "status": "accepted",
+                "reason": "up",
+                "targetId": "B"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "wrongPolicies": [
+    {
+      "id": "R01",
+      "targetBasedMoveCalls": 0,
+      "unconditionalRollbackCalls": 1,
+      "cachedCandidateMoveCalls": 2
+    },
+    {
+      "id": "R02",
+      "targetBasedMoveCalls": 0,
+      "unconditionalRollbackCalls": 1,
+      "cachedCandidateMoveCalls": 2
+    },
+    {
+      "id": "R04",
+      "targetBasedMoveCalls": 0,
+      "unconditionalRollbackCalls": 1,
+      "cachedCandidateMoveCalls": 2
+    },
+    {
+      "id": "R07",
+      "targetBasedMoveCalls": 0,
+      "unconditionalRollbackCalls": 1,
+      "cachedCandidateMoveCalls": 2
+    },
+    {
+      "id": "R08",
+      "targetBasedMoveCalls": 0,
+      "unconditionalRollbackCalls": 1,
+      "cachedCandidateMoveCalls": 2
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "article_path": "GameLibrary/界面与体验/交互设计/指针交互/网页背包物品拖放：捕获、命中与取消.md",
+  "article_sha256": "f605c9a517bd40cdff499b2ed52dba77fb1624ef3b21efac26738b0c8763bbfe",
+  "publication_kind": "complete-local-pointer-drag-method",
+  "author": "GameLibrary editorial author",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-pointer-drag-technical-20261106",
+      "method": "Independent full manuscript, primary standards and distinct application probes",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-003/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-pointer-drag-reader-20261106",
+      "method": "Independent full reader task with unseen inputs",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-003/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-pointer-drag-navigation-20261106",
+      "method": "Blind root-to-article navigation and actual return",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-003/20261106-full-article.md"
+    }
+  ],
+  "article_figure_fingerprints": [
+    {
+      "path": "GameLibrary/界面与体验/交互设计/指针交互/examples/capture-hit-rule.svg",
+      "bytes": 6636,
+      "sha256": "dd524d08b2d72998270f0046ff14d291f5bc4f9ba91e530f5289a9fe1f2497e1"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0299/sources.json",
+      "sha256": "3c61d2b0107cd7af1a8d43f55a87e2dc025345462fcb4832212654a563a77ebb"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/materials.json",
+      "sha256": "080208adb0a43c14819058cd19f00d8a86799d766bec1d602a12f24882eb727b"
+    }
+  ],
+  "report_sha256": "727ee5437b4f40b0350e524814ea2a08281e80a5247d24253d39d99e177ff1c6",
+  "scope_record": "管理档案/研究/TASK-2026-0299/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "83d05b4327bfeab3af3fed9e54e2d93559858f15db99b476adf39950d8640100"
+    },
+    {
+      "path": "GameLibrary/界面与体验/README.md",
+      "sha256": "8d9a8bcceb3feac95862c8f18a23330aae044a31cc7524eb2fd87abce19e7844"
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/README.md",
+      "sha256": "ec60ad3cf87b2e6b5b834f81eb4925a86e8f21b3f3ba66e909389e509bfcd773"
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/指针交互/README.md",
+      "sha256": "48b12282b71543683b11d1e66965b3a3d6646bfb0b4b5bc57fa986960f59fece"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/拖动物品时，事件目标为什么不是落点.md",
+      "sha256": "ee9a2ca71fdf4244c6184974e733d92ddb68b50ddc1b851c1c1c9475cd708190"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/README.md",
+      "bytes": 3803,
+      "sha256": "f49abf058fabdc95872b1d8d2262d1e5cc0ffa931d07dc20f0aab9478da86b6a"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/model.mjs",
+      "bytes": 6617,
+      "sha256": "36bf14f0cbcf2f8f05167ea0e0215181104837299118ecb4d2df1146832ada2f"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run.mjs",
+      "bytes": 3641,
+      "sha256": "4ee907d54173be67b651466d2ab2e328f03da845fa74bc8fa97d3884145e4eff"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/model-inputs.json",
+      "bytes": 22534,
+      "sha256": "f13e5d7a9adff04008267980ba36a4440b59a51fe0dab9ed5ded1fd632cf6cc0"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run-02/output.json",
+      "bytes": 81771,
+      "sha256": "2253917117560969e70bf30c9ba061306903a4fb2e4c3067051fd5462e356f76"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/run-02/summary.txt",
+      "bytes": 867,
+      "sha256": "548f5d1a7e2fbcb2f4ab6ccdbbfa0e7d2e2deab674a9bbc47ef07b4a7c342611"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/rule-regression.mjs",
+      "bytes": 3000,
+      "sha256": "768f912c98590bc2c4bacf9591936a64fc8b4afbb45c490a3aa6f6e487804173"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0299/复现/rule-regression-output.json",
+      "bytes": 2836,
+      "sha256": "71988fd63f4eb19260d8875e5835b18641159c64fe1bb4505485bf0fb20415f0"
+    }
+  ],
+  "host_revisions": [
+    {
+      "path": "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+      "sha256": "c2079a4d41fafeb57f84dc7e1d1f781fdc5f26f019976cf294c4451bf4f0fe86",
+      "previous_sha256": "b6bdf49130c5c09349d7239cb7790e7fa452bd99c67fc3477d45278a13bc30f0",
+      "scope": "One pointer-method paragraph replaced and one existing localization relation inserted; previous async/loading and localization relations moved out of higher navigation, old role and UMG content retained."
+    }
+  ],
+  "limits": "Independent model review, original standards and fixed DOM source, finite application-state runs and original SVG inspection. No browser dispatch, CSS hit-testing, engine, device, performance, accessibility or human validation.",
+  "updated_at": "2026-11-06T16:45:20Z",
+  "technical_correction": {
+    "previous_article_sha256": "586a00cfafa2efa8f0246b22b09a4f8e6ca4f0e66f57b05153b2801cbe8f0246",
+    "scope": "Explicit target-ID domain and guard before dictionary lookup prevent no-hit null from aliasing a legitimate string ID; direct article-rule regressions added. Other original model data and SVG unchanged.",
+    "review": "管理档案/审稿/SOL-UX-003/20261106-full-article.md"
+  }
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+<defs>
+ <marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#2367c9" stroke-width="1.5"/></marker>
+ <marker id="green" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#218358" stroke-width="1.5"/></marker>
+ <g id="sword"><path d="M-7,17 L13,-22 L22,-28 L22,-17 L0,21 Z" fill="#a9b9cc" stroke="#33485d" stroke-width="2"/><path d="M-13,13 L7,25 M-4,23 L-10,34" stroke="#8e5c29" stroke-width="6" stroke-linecap="round"/></g>
+</defs>
+<rect width="1100" height="800" fill="#f7f9fc"/>
+<g font-family="Noto Sans CJK SC, sans-serif" fill="#223349">
+<text x="36" y="42" font-size="26" font-weight="700">一次拖动，三个不同的问题</text>
+<text x="36" y="73" font-size="15">示意图：非浏览器截图 · 教学状态快照，不承诺浏览器的实际事件分派</text>
+<text x="40" y="106" font-size="15" font-weight="700">视口：640 × 360 CSS 像素（内部坐标 1:1）</text>
+<!-- The viewport uses literal client-coordinate geometry via translation. -->
+<g transform="translate(40 130)">
+ <rect width="640" height="360" fill="white" stroke="#9eacbd" stroke-width="1.5"/>
+ <path d="M0,0 H620 M0,0 V340" fill="none" stroke="#9eacbd" stroke-width="1"/>
+ <text x="4" y="-8" font-size="12">(0,0)</text><text x="596" y="17" font-size="12">clientX →</text><text x="5" y="350" font-size="12">↓ clientY</text>
+ <rect x="20" y="20" width="520" height="280" rx="8" fill="#edf4ff" stroke="#2367c9" stroke-width="3"/>
+ <text x="34" y="43" font-size="15" font-weight="700" fill="#2367c9">panel-main · 稳定根 / 捕获持有者</text>
+ <rect x="40" y="60" width="100" height="100" rx="5" fill="#fff" stroke="#a4b3c5" stroke-width="2"/>
+ <rect x="200" y="60" width="100" height="100" rx="5" fill="#e9f8ee" stroke="#218358" stroke-width="2.5"/>
+ <rect x="360" y="60" width="100" height="100" rx="5" fill="#fff6e9" stroke="#bf7513" stroke-width="2"/>
+ <text x="48" y="80" font-size="13">slot-A</text><text x="208" y="80" font-size="13">slot-B · 空</text><text x="368" y="80" font-size="13">slot-C</text>
+ <use href="#sword" x="85" y="112"/>
+ <text x="50" y="150" font-size="12">sword-17 原件</text>
+ <rect x="218" y="87" width="64" height="26" rx="3" fill="#c9efd8" stroke="#218358"/>
+ <text x="224" y="105" font-size="12">label-B</text>
+ <text x="368" y="112" font-size="12">只接受</text><text x="368" y="131" font-size="14">potion</text>
+ <text x="40" y="199" font-size="12">[40,60,100,100]</text><text x="200" y="199" font-size="12">[200,60,100,100]</text><text x="360" y="199" font-size="12">[360,60,100,100]</text>
+ <!-- Ghost is decorative; source object remains in slot A. -->
+ <g opacity="0.55" pointer-events="none"><rect x="265" y="119" width="62" height="68" rx="8" fill="#d8e1eb" stroke="#64798d" stroke-dasharray="4 3"/><use href="#sword" x="292" y="151"/></g>
+ <circle cx="250" cy="100" r="7" fill="white" stroke="#218358" stroke-width="2"/>
+ <path d="M239,100 H261 M250,89 V111" stroke="#218358" stroke-width="1.5"/>
+ <path d="M250,100 V215 H20" fill="none" stroke="#2367c9" stroke-width="2.5" stroke-dasharray="7 4" marker-end="url(#blue)"/>
+ <text x="36" y="240" font-size="14" fill="#2367c9">捕获期间：pointermove / pointerup → panel-main</text>
+ <text x="36" y="265" font-size="13">根边界 [20,20,520,280]；所有方括号为 [x,y,w,h]</text>
+ <text x="36" y="286" font-size="13">原件仍在 A；半透明 ghost 仅为拖动预览副本</text>
+ <text x="168" y="330" font-size="13">ghost 整棵子树：pointer-events:none</text>
+ <path d="M295,315 L305,190" fill="none" stroke="#64798d" stroke-width="1"/>
+</g>
+<!-- Distinct conceptual channels, not a simulated browser dispatch trace. -->
+<rect x="710" y="119" width="354" height="101" rx="9" fill="#eaf2ff" stroke="#bfd4f6"/>
+<text x="728" y="147" font-size="18" font-weight="700" fill="#2367c9">1 · 事件路由：谁收到事件？</text>
+<text x="728" y="174" font-size="15">稳定根 panel-main 持有指针捕获。</text>
+<text x="728" y="199" font-size="15">事件接收者 ≠ 指针下方的元素。</text>
+<rect x="710" y="235" width="354" height="141" rx="9" fill="#eaf8ef" stroke="#b7dfc7"/>
+<text x="728" y="264" font-size="18" font-weight="700" fill="#218358">2 · 空间命中：此刻指向哪里？</text>
+<text x="728" y="291" font-size="15">client 坐标 (250,100)</text>
+<text x="728" y="317" font-size="15">elementFromPoint(250,100) → label-B</text>
+<text x="728" y="347" font-size="15">从命中元素向上解析 → slot-B</text>
+<path d="M297,230 L625,230 L625,306 L699,306" fill="none" stroke="#218358" stroke-width="2" marker-end="url(#green)"/>
+<rect x="710" y="391" width="354" height="123" rx="9" fill="#fff3e1" stroke="#e9c58e"/>
+<text x="728" y="420" font-size="18" font-weight="700" fill="#a46109">3 · 规则判断：允许放下吗？</text>
+<text x="728" y="447" font-size="15">业务检查 slot-B 的归属、空位、</text>
+<text x="728" y="472" font-size="15">物品类型等资格，再决定是否接受。</text>
+<text x="728" y="496" font-size="13">例如：sword-17 不符合 C 的 potion 限制。</text>
+<text x="40" y="528" font-size="14" fill="#586a80">蓝色虚线为概念路由；绿色实线为空间查询关系，不表示 DOM 冒泡路径。</text>
+<rect x="36" y="554" width="1028" height="210" rx="10" fill="#fff" stroke="#ccd5e0"/>
+<text x="56" y="587" font-size="18" font-weight="700">阻挡反例：真实遮罩不会被当作装饰预览跳过</text>
+<rect x="66" y="611" width="170" height="122" rx="5" fill="#e9f8ee" stroke="#218358" stroke-width="2"/>
+<text x="77" y="632" font-size="13" fill="#218358">底层 slot-B</text>
+<rect x="88" y="641" width="170" height="99" rx="5" fill="#d7dce4" stroke="#5c6b7b" stroke-width="2"/>
+<text x="104" y="667" font-size="14">真实遮罩 overlay</text>
+<text x="104" y="691" font-size="13">pointer-events:auto</text>
+<circle cx="170" cy="714" r="6" fill="#fff" stroke="#33485d" stroke-width="2"/>
+<text x="288" y="631" font-size="15">同一坐标被遮罩覆盖，且遮罩不属于任何 slot：</text>
+<text x="288" y="661" font-size="16" fill="#218358">elementFromPoint → overlay → 向上解析无 slot → 无候选</text>
+<text x="288" y="693" font-size="15">不穿透真实遮罩去找 B；“捕获根仍收事件”不等于“B 可放下”。</text>
+<text x="288" y="724" font-size="14" fill="#586a80">此小图是另一个阻挡状态；上方主图未显示真实遮罩。</text>
+</g></svg>

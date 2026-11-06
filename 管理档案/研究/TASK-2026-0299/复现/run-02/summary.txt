@@ -1,0 +1,14 @@
+R01: item=B; commits=1; cleanup=1; active=-; reason=up
+R02: item=A; commits=0; cleanup=1; active=-; reason=cancel
+R03: item=A; commits=0; cleanup=1; active=-; reason=lost
+R04: item=A; commits=0; cleanup=1; active=-; reason=no-target
+R05: item=B; commits=1; cleanup=1; active=-; reason=up
+R06: item=A; commits=0; cleanup=1; active=-; reason=no-target
+R07: item=A; commits=0; cleanup=1; active=-; reason=target-disabled
+R08: item=A; commits=0; cleanup=1; active=-; reason=no-target
+R09: item=C; commits=0; cleanup=1; active=-; reason=source-invalid
+R10: item=A; commits=0; cleanup=1; active=102; reason=closed
+M01: item=A; commits=0; cleanup=1; active=-; reason=capture-failed
+M02: item=A; commits=0; cleanup=1; active=-; reason=capture-failed
+M03: item=A; commits=0; cleanup=1; active=-; reason=buttons-changed
+M04: item=B; commits=1; cleanup=1; active=102; reason=up
