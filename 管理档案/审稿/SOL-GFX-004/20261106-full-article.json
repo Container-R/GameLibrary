@@ -1,0 +1,84 @@
+{
+  "article_path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
+  "article_sha256": "74b4b5642cda60b7a2fb48e37fc694aa3e41aad72314dda39102959cf5e5a694",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "complete-single-queue-placed-RT-alias-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-d3d12-alias-technical-20261106",
+      "mode": "independent-full-technical-primary-source-and-procedure-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-GFX-004/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-d3d12-alias-reader-20261106",
+      "mode": "independent-layout-command-and-retirement-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-GFX-004/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-d3d12-alias-navigation-20261106",
+      "mode": "independent-root-route-and-limited-inbound-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-GFX-004/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0289/sources.json",
+      "sha256": "4d57e39f0a9504a18f3f3ba9d6cf83d5a3885bb6665e0be84442197f7726ccdc"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0289/materials.json",
+      "sha256": "1c3811d832bc049acd74d21398df9452925bd04b9428cf0be93842206b5c432d"
+    }
+  ],
+  "report_sha256": "c637b6a128f30e435d2a676f160501c3874fbdba9ecbd7ea58a90d22ce703466",
+  "scope_record": "管理档案/研究/TASK-2026-0289/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/图形渲染/README.md",
+      "sha256": "bc1c13345ae7d806e6120291fa3879dc83ec39d40b6162c1ce18832a8449e615"
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/README.md",
+      "sha256": "6d674f686cdbe58daec56264635bde67dcec2e43d40608adff9353996e742a00"
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/README.md",
+      "sha256": "b9764d78c7bfed18adfccc20624e56751e856cd968a9473adfd07d718433fb3e"
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+      "sha256": "fe5984fad2e51162f7b518ae1fb9f9491b7ac7194dd996e9b2bd36bdd11df1a9"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+      "sha256": "df3870ca6495762e62a71e6d86581b286a9ab3a01615de2f96b5fc36b8d78cd7"
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
+      "previous_sha256": "32dfd1dabd08f1c45f0e8fefa0b1f0393ed07d503ea2ed945ab530872d52308d",
+      "scope": "Alias method relation, two pre-existing related links relocated from direction and return label only; not renewed whole-role technical acceptance."
+    }
+  ],
+  "limits": "Independent model reviews, fixed documentation and bounded reasoning/arithmetic. No SDK integration, resource creation, GPU execution, debug-layer/visual/performance or human test. Not whole-library v2 acceptance.",
+  "updated_at": "2026-11-06T12:05:27Z"
+}

@@ -1,0 +1,161 @@
+{
+  "task_id": "TASK-2026-0289",
+  "baseline_commit": "2db93e9c422707b3ecfbdd5b758afba75b2f11fa",
+  "base_tree": "c5fa19547ecd69a5b2d13425524c2c743e0635fa",
+  "current_method": {
+    "id": "SOL-GFX-004",
+    "path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
+    "role": "Only formal complete alias method."
+  },
+  "historical_records": [
+    {
+      "path": "管理档案/来源笔记/d3d12-placed-resource-aliasing.json",
+      "sha256": "3b73def3037903353218152a9ca1285d31ac86227e3fd9918fd9c4d6e14da04d",
+      "git_blob_sha1": "ea168eb43a72a154f29ae96b55db0353ae2442a7",
+      "bytes": 5734,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/来源笔记/d3d12-placed-resource-aliasing.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/D3D12资源别名-来源与读者审查.md",
+      "sha256": "bcc10ff30139dc56fc0cb8a5d12c2f1d69988c6c0382d3ab732d5b97d9cabfe4",
+      "git_blob_sha1": "a02cf364c19f289fcd9ac8a7ab3b4a0c18ae5827",
+      "bytes": 1835,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/审查/D3D12资源别名-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": ".agent/runs/20261106T073912Z-d3d12-placed-aliasing.json",
+      "sha256": "ed60d0f434efa9987c2e1d64a84335189700fb86105222df5b3363a4794b5209",
+      "git_blob_sha1": "912e5dc547895adc55084c46662a13102565ed88",
+      "bytes": 3911,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/.agent/runs/20261106T073912Z-d3d12-placed-aliasing.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/缩小深度图时，为什么不能总取最小值.md",
+      "sha256": "b64a541b25e6fddf18b25527c41cfd60846bab806b72425ad5c886ff60898898",
+      "git_blob_sha1": "66980f4db7302f4fb8c47245c8c3956121f2bfcb",
+      "bytes": 7154,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/缩小深度图时，为什么不能总取最小值.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
+      "sha256": "30570b6b30369733f48b57a917ea89347c66d37efd3fe2be0c8e602bfc4b46b9",
+      "git_blob_sha1": "e4b9d9f19f9d91b671f6c1e736736f626c046c30",
+      "bytes": 1717,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/镜头移动时，为什么静止物体的阴影仍会晃动.md",
+      "sha256": "32eb1ff0f0ae9aae5ebb1ca64e505f6403aa88ebbd14f47f912e944f4316f257",
+      "git_blob_sha1": "ed468235ef841fa19adaea8f7b9a29783eb705f4",
+      "bytes": 7897,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/镜头移动时，为什么静止物体的阴影仍会晃动.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+      "sha256": "03b83a8745638341a73ea587cfa9208f9284acc165bc3515208906cb794cf470",
+      "git_blob_sha1": "0cd87750dbb07c6d9581fda031b5f0f7c5759db7",
+      "bytes": 6973,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/来源笔记/shadow-comparison-filter-order.json",
+      "sha256": "53972d432f58fdd3ddfaf484d844281d9de528218c33ccbc79638049343672e6",
+      "git_blob_sha1": "cb5d579054a9594efe197e58bcba7a300a9a58e9",
+      "bytes": 2437,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/来源笔记/shadow-comparison-filter-order.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/阴影比较过滤-来源与读者审查.md",
+      "sha256": "9f005e1794c4730db90291f7ba37220431a3e3164f44b123de072d3f72b300f8",
+      "git_blob_sha1": "2475d7ce3e22ac82cb71b42779b06f6b08058a48",
+      "bytes": 1670,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/审查/阴影比较过滤-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+      "sha256": "e82f072f8a8c0bad15d7fa450051e2c966ad27021dbd0729aae89cd2edc73b00",
+      "git_blob_sha1": "415d3f54c45e2d003720b050a5ded7e2a8b8151e",
+      "bytes": 11188,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/GameLibrary/玩法程序/玩法系统/水面与船体/ATLAS为什么用水面拟合平面来决定船的目标姿态.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/GPU复制写入与顶点读取.md",
+      "sha256": "f8ee3dc5dc1eca3a3eaad650cedae1fac732d4099a86fdacbd9594c35d5ccbd4",
+      "git_blob_sha1": "282921ea287f876247b06dad138ae8c1183e35f8",
+      "bytes": 5808,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/GPU复制写入与顶点读取.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/没有新增纹理，为什么D3D12仍会超出显存预算.md",
+      "sha256": "847adc34feb9a0ed47c9e88a5aaf0fbab4323c6c073575e314b25514e89fe5fb",
+      "git_blob_sha1": "cf4afbf8bbdd771fbdbe9eed9977b44c54b461f2",
+      "bytes": 4850,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/没有新增纹理，为什么D3D12仍会超出显存预算.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+      "sha256": "60af070602ce4372d51bfd387b0a48f360096a33d666e5169b36b545b9404e4e",
+      "git_blob_sha1": "1ab14a887a741f61a313f731f981d8b7ea700a81",
+      "bytes": 11525,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+      "disposition": "Current path becomes historical index; old full body remains at fixed commit."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "sha256": "32dfd1dabd08f1c45f0e8fefa0b1f0393ed07d503ea2ed945ab530872d52308d",
+      "git_blob_sha1": "8e5c7948ce237e7405f18668ddcb9e0f094ff298",
+      "bytes": 16088,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "disposition": "Only alias relation paragraph, two pre-existing related entries moved from direction page, and return label change; rest of body unchanged."
+    },
+    {
+      "path": "GameLibrary/图形渲染/README.md",
+      "sha256": "6678386a2dc934c66d9230cdbe58d264c5140ac933896027ab76057ca1aa118b",
+      "git_blob_sha1": "2fd07db9d48a13319be837b621ac962272756472",
+      "bytes": 470,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/GameLibrary/图形渲染/README.md",
+      "disposition": "Finite direct-child navigation repair; old text retained at fixed commit."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/README.md",
+      "sha256": "4a07fa51863e82c0fc70019daf832b33ecd72d8eacdbdebd097beb357c24d05e",
+      "git_blob_sha1": "39cc8c202ae2ee48204a3e451807dc86090747cd",
+      "bytes": 723,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/GameLibrary/图形渲染/渲染开发/README.md",
+      "disposition": "Finite direct-child navigation repair; old text retained at fixed commit."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+      "sha256": "92407b71fdc59950729c85f5d0cd7c6f512103f4f2d844a82ba45b85c14acf98",
+      "git_blob_sha1": "1d023c97667fd3eae3f97795b59aad7bfd431e12",
+      "bytes": 1054,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/2db93e9c422707b3ecfbdd5b758afba75b2f11fa/GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+      "disposition": "Finite direct-child navigation repair; old text retained at fixed commit."
+    }
+  ],
+  "migration": {
+    "current_corpus_files": 2406,
+    "scope": "Complete blob identity match and finite old-title/source-name inbound scan; not whole-corpus semantic review.",
+    "old_title_hit_files": 8,
+    "old_reader_inbound_paths": [
+      "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "GameLibrary/图形渲染/渲染开发/岗位与协作/README.md"
+    ],
+    "catalog": "Retain full original ROLE-GFX-001 placed_resource_aliasing_support inside historical_record; new article registers separately. Other support fields preserved.",
+    "related_entries": "Move existing ATLAS/Hi-Z related links and descriptions from rendering direction to role body without new technical claims; shadow relations already exist in unchanged role paragraphs, so redundant topic links removed.",
+    "history": "Old source/review/run hashes retain original meaning. Their old support paths lead to historical index; no silent rewriting of historical acceptance."
+  },
+  "limits": "Finite rendering path and one complete method, not all rendering-support relocation or whole-library v2 acceptance."
+}

@@ -10060,17 +10060,42 @@
       "reader": "图形与渲染程序员",
       "scope": "先全文核别名技术稿、现有资源同步正文、原始文档及附属证据，确定状态/生命周期/队列输入与实际读者任务；不扩成全部D3D12资源管理，不一批重排图形学科。",
       "expected_outcome": "确定完整方法、必须保留的细节、来源边界和有限迁移计划，或报告具体研究缺口。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0289/sources.json",
+        "管理档案/研究/TASK-2026-0289/materials.json",
+        "管理档案/研究/TASK-2026-0289/范围与保留.md",
+        "管理档案/审稿/SOL-GFX-004/20261106-full-article.json"
+      ],
+      "next_action": "核阴影比较过滤技术稿与邻近阴影正文，确定完整方法、必要来源和有限正式归属。",
+      "blocker": null,
+      "updated_at": "2026-11-06T12:05:27Z",
+      "related_task_ids": [
+        "TASK-2026-0288"
+      ],
+      "article_path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
+      "review": "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0290",
+      "question": "阴影比较过滤技术稿怎样形成不重复邻文的完整方法，并进入唯一正式位置？",
+      "reader": "图形程序与着色器开发者",
+      "scope": "全文比较已有比较过滤、阴影采样与相邻正文，核原始规范/文档，界定实际读者判断和必要验证；不扩成全部阴影实现或重排图形学科。",
+      "expected_outcome": "确定完整方法、来源边界、读者任务与有限迁移，或报告具体研究缺口。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0288/范围与保留.md"
+        "管理档案/研究/TASK-2026-0289/范围与保留.md"
       ],
-      "next_action": "对照D3D12别名正文与资源同步文章，核官方原始约定，界定可交付的资源复用步骤和诊断任务。",
+      "next_action": "核旧比较过滤原文及相邻方法，选择可完整交付的采样与比较决策问题。",
       "blocker": null,
-      "updated_at": "2026-11-06T11:41:57Z",
+      "updated_at": "2026-11-06T12:05:27Z",
       "related_task_ids": [
-        "TASK-2026-0288"
+        "TASK-2026-0289"
       ]
     }
   ],
@@ -10078,7 +10103,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "对照D3D12别名正文与资源同步文章，核官方原始约定，界定可交付的资源复用步骤和诊断任务。"
+    "next_priority": "核旧比较过滤原文及相邻方法，选择可完整交付的采样与比较决策问题。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
