@@ -1,0 +1,30 @@
+{
+  "kind": "Original application-set model and scalar arithmetic; not Box2D execution",
+  "callback_orders_with_success": 720,
+  "callback_orders_with_capacity_failure": 720,
+  "expected_success_keys": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "additional_checks": [
+    "third distinct key fails whole attempt; same-input larger-capacity retry succeeds",
+    "missing and stale bindings fail whole attempt",
+    "article callback-order trace",
+    "wrong early role dedup and wrong early AABB dedup counterexamples",
+    "both query filter directions and same-group -7/+7 contrast",
+    "rotated box coordinates and origin translation",
+    "triangle separation and source-threshold arithmetic",
+    "generation-key reuse protection"
+  ],
+  "limits": [
+    "Callback input acceptance is stipulated; no Box2D query is executed",
+    "No GJK, tree traversal, native floating-point boundary, physics, performance, or concurrency validation",
+    "Set model verifies the stated application policy, not every possible implementation"
+  ]
+}

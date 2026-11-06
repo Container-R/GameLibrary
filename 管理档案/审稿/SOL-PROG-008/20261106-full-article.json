@@ -1,0 +1,107 @@
+{
+  "article_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D当前区域查询与实体命中集合.md",
+  "article_sha256": "286a4ef17ad96aa57ec8a819fb95ac97fd52bce3d5c75588fb9147a727f94610",
+  "publication_kind": "complete-current-region-to-entity-set-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-box2d-query-technical-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-008/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-box2d-query-reader-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-008/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-box2d-query-navigation-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-008/20261106-full-article.md"
+    }
+  ],
+  "reviewed_original_sha256": "cfcf6c702623de690e994ce60468d4b1a00dbb59f45ec079ddb98bf0c8ad2ac4",
+  "integration_scope": "Original full method separately reviewed; optional reproduction and semantic-return additions verified by limited diff. Host read in full for migration coherence; prior native observations unchanged, not rerun or recertified.",
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0292/sources.json",
+      "sha256": "821d207ee17627cbcca11a9a096af8e735f5e118b31630b9de48435e811c82d9"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/materials.json",
+      "sha256": "f2eb10bf96c51fe95b26374032d9ae3005850800db7456ae4ef6ff94c7b6f717"
+    }
+  ],
+  "report_sha256": "6335fe4ba74ecca270990fb0933ea4c7a2418aaaf7c1f330191b9050c105751d",
+  "scope_record": "管理档案/研究/TASK-2026-0292/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/玩法程序/README.md",
+      "sha256": "201155d699ad02f4e6bf69bca3da732e2e3e9f9484535293c9b2cc58bc9eb997"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/README.md",
+      "sha256": "8f56d703c6e15382317dc4ef58161c63bd61246f0bd8b8eaad109e3a53394e57"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/物理检测/README.md",
+      "sha256": "c90d2e016345188c9434522afb7d3b25bf1dbf1e64094a6093786b7513226eb7"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/Box2D的组过滤，为什么不能直接沿用到射线.md",
+      "sha256": "f085c9de34313858eca10c92718166b5483effa87f9042f0af4d08aadd9f1cb6"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/README.md",
+      "sha256": "d5af30741cd8a89ca1e153095fa3bbc7c4805897e5d59a310a775e574dbb3373",
+      "bytes": 976
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/check_application_model.py",
+      "sha256": "596fe03b4609dd8a90cb9a28fa8d67981df5b2f645816357efa4ff6a2cf14e98",
+      "bytes": 7064
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/results.json",
+      "sha256": "acc42b10395d0f953c3947bdd70c795b109d8cdac1ea7b53543a719c675c9842",
+      "bytes": 1063
+    }
+  ],
+  "host_revision": {
+    "path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+    "sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+    "previous_sha256": "a4474a739308277b2fc1fa67b4390b70442eb694560039fcf527f60bfd9edc99",
+    "scope": "Full host coherence read after current-query section migration, source-list reduction and semantic return; old observations and remaining technical content unchanged."
+  },
+  "historical_link_fingerprints": [
+    {
+      "path": ".agent/audits/20261104T105000Z-reader-summary.md",
+      "previous_sha256": "81544065bec8c5fb626cbaec8d2ec84fa6c45c3914ba4f41fef8f786fb22d357",
+      "sha256": "049f0e596745becf4c92898c810b3c96feeaf364f7fcba800f0fdd8b5c0228ef",
+      "scope": "Only historical support URL pinned; previous review claim and identity retained."
+    },
+    {
+      "path": "管理档案/审查/形状组与查询-来源和读者审查.md",
+      "previous_sha256": "c873b4332e8c280994a23a96ef08b6e3282c430aeafda63d561218e2befbc725",
+      "sha256": "13587579e02f567de76869eb3ee5398c45f65707466e75658d7293a5fc08043e",
+      "scope": "Only historical support URL pinned; previous review claim and identity retained."
+    }
+  ],
+  "limits": "Model source/readability/navigation reviews and original application arithmetic only. No native Box2D/GJK/physics, engine-boundary, performance, concurrency, game or human test. No complete physics-topic/library v2 acceptance.",
+  "updated_at": "2026-11-06T13:19:10Z"
+}
