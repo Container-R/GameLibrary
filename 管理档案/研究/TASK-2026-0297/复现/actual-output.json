@@ -1,0 +1,1531 @@
+{
+  "scope": "原创教学输入的算术复算，不是独立审稿或真实团队/软件验证",
+  "main": {
+    "T": "48",
+    "initial_count": 3,
+    "final_count": 3,
+    "incoming": 4,
+    "outgoing": 4,
+    "successful": 3,
+    "non_success_exits": 1,
+    "H_event": "132",
+    "H_items": "132",
+    "L": "11/4",
+    "Q_exit": "90",
+    "B_start": "30",
+    "B_end": "72",
+    "all_exit_mean": "45/2",
+    "success_mean": "24",
+    "known_success_durations": [
+      "36",
+      "24",
+      "12"
+    ],
+    "S": 7,
+    "window_visit_mean": "132/7",
+    "per_item": [
+      {
+        "id": "A-1",
+        "window_hours": "12",
+        "full_exit_hours": "36",
+        "age_at_end": null
+      },
+      {
+        "id": "B-1",
+        "window_hours": "48",
+        "full_exit_hours": null,
+        "age_at_end": "54"
+      },
+      {
+        "id": "C-1",
+        "window_hours": "18",
+        "full_exit_hours": "18",
+        "age_at_end": null
+      },
+      {
+        "id": "D-1",
+        "window_hours": "24",
+        "full_exit_hours": "24",
+        "age_at_end": null
+      },
+      {
+        "id": "C-2",
+        "window_hours": "18",
+        "full_exit_hours": null,
+        "age_at_end": "18"
+      },
+      {
+        "id": "E-1",
+        "window_hours": "12",
+        "full_exit_hours": "12",
+        "age_at_end": null
+      },
+      {
+        "id": "F-1",
+        "window_hours": "0",
+        "full_exit_hours": null,
+        "age_at_end": "0"
+      }
+    ],
+    "segments": [
+      {
+        "from": "0",
+        "to": "6",
+        "count": 3,
+        "area": "18"
+      },
+      {
+        "from": "6",
+        "to": "12",
+        "count": 4,
+        "area": "24"
+      },
+      {
+        "from": "12",
+        "to": "18",
+        "count": 3,
+        "area": "18"
+      },
+      {
+        "from": "18",
+        "to": "30",
+        "count": 2,
+        "area": "24"
+      },
+      {
+        "from": "30",
+        "to": "36",
+        "count": 2,
+        "area": "12"
+      },
+      {
+        "from": "36",
+        "to": "48",
+        "count": 3,
+        "area": "36"
+      }
+    ],
+    "events": [
+      {
+        "time": "6",
+        "in": [
+          "D-1"
+        ],
+        "out": [],
+        "after": [
+          "A-1",
+          "B-1",
+          "C-1",
+          "D-1"
+        ]
+      },
+      {
+        "time": "12",
+        "in": [],
+        "out": [
+          "A-1"
+        ],
+        "after": [
+          "B-1",
+          "C-1",
+          "D-1"
+        ]
+      },
+      {
+        "time": "18",
+        "in": [],
+        "out": [
+          "C-1"
+        ],
+        "after": [
+          "B-1",
+          "D-1"
+        ]
+      },
+      {
+        "time": "30",
+        "in": [
+          "C-2"
+        ],
+        "out": [
+          "D-1"
+        ],
+        "after": [
+          "B-1",
+          "C-2"
+        ]
+      },
+      {
+        "time": "36",
+        "in": [
+          "E-1"
+        ],
+        "out": [],
+        "after": [
+          "B-1",
+          "C-2",
+          "E-1"
+        ]
+      },
+      {
+        "time": "48",
+        "in": [
+          "F-1"
+        ],
+        "out": [
+          "E-1"
+        ],
+        "after": [
+          "B-1",
+          "C-2",
+          "F-1"
+        ]
+      }
+    ]
+  },
+  "recorded_person_hours": "15",
+  "variants": {
+    "older_A_same_window_events": {
+      "T": "48",
+      "initial_count": 3,
+      "final_count": 3,
+      "incoming": 4,
+      "outgoing": 4,
+      "successful": 3,
+      "non_success_exits": 1,
+      "H_event": "132",
+      "H_items": "132",
+      "L": "11/4",
+      "Q_exit": "162",
+      "B_start": "102",
+      "B_end": "72",
+      "all_exit_mean": "81/2",
+      "success_mean": "48",
+      "known_success_durations": [
+        "108",
+        "24",
+        "12"
+      ],
+      "S": 7,
+      "window_visit_mean": "132/7",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "12",
+          "full_exit_hours": "108",
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "48",
+          "full_exit_hours": null,
+          "age_at_end": "54"
+        },
+        {
+          "id": "C-1",
+          "window_hours": "18",
+          "full_exit_hours": "18",
+          "age_at_end": null
+        },
+        {
+          "id": "D-1",
+          "window_hours": "24",
+          "full_exit_hours": "24",
+          "age_at_end": null
+        },
+        {
+          "id": "C-2",
+          "window_hours": "18",
+          "full_exit_hours": null,
+          "age_at_end": "18"
+        },
+        {
+          "id": "E-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "6",
+          "to": "12",
+          "count": 4,
+          "area": "24"
+        },
+        {
+          "from": "12",
+          "to": "18",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "18",
+          "to": "30",
+          "count": 2,
+          "area": "24"
+        },
+        {
+          "from": "30",
+          "to": "36",
+          "count": 2,
+          "area": "12"
+        },
+        {
+          "from": "36",
+          "to": "48",
+          "count": 3,
+          "area": "36"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [
+            "D-1"
+          ],
+          "out": [],
+          "after": [
+            "A-1",
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "12",
+          "in": [],
+          "out": [
+            "A-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "18",
+          "in": [],
+          "out": [
+            "C-1"
+          ],
+          "after": [
+            "B-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "30",
+          "in": [
+            "C-2"
+          ],
+          "out": [
+            "D-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2"
+          ]
+        },
+        {
+          "time": "36",
+          "in": [
+            "E-1"
+          ],
+          "out": [],
+          "after": [
+            "B-1",
+            "C-2",
+            "E-1"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [
+            "F-1"
+          ],
+          "out": [
+            "E-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2",
+            "F-1"
+          ]
+        }
+      ]
+    },
+    "unknown_initial_entry_times": {
+      "T": "48",
+      "initial_count": 3,
+      "final_count": 3,
+      "incoming": 4,
+      "outgoing": 4,
+      "successful": 3,
+      "non_success_exits": 1,
+      "H_event": "132",
+      "H_items": "132",
+      "L": "11/4",
+      "Q_exit": null,
+      "B_start": null,
+      "B_end": null,
+      "all_exit_mean": null,
+      "success_mean": null,
+      "known_success_durations": [
+        "24",
+        "12"
+      ],
+      "S": 7,
+      "window_visit_mean": "132/7",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "12",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "48",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "C-1",
+          "window_hours": "18",
+          "full_exit_hours": "18",
+          "age_at_end": null
+        },
+        {
+          "id": "D-1",
+          "window_hours": "24",
+          "full_exit_hours": "24",
+          "age_at_end": null
+        },
+        {
+          "id": "C-2",
+          "window_hours": "18",
+          "full_exit_hours": null,
+          "age_at_end": "18"
+        },
+        {
+          "id": "E-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "6",
+          "to": "12",
+          "count": 4,
+          "area": "24"
+        },
+        {
+          "from": "12",
+          "to": "18",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "18",
+          "to": "30",
+          "count": 2,
+          "area": "24"
+        },
+        {
+          "from": "30",
+          "to": "36",
+          "count": 2,
+          "area": "12"
+        },
+        {
+          "from": "36",
+          "to": "48",
+          "count": 3,
+          "area": "36"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [
+            "D-1"
+          ],
+          "out": [],
+          "after": [
+            "A-1",
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "12",
+          "in": [],
+          "out": [
+            "A-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "18",
+          "in": [],
+          "out": [
+            "C-1"
+          ],
+          "after": [
+            "B-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "30",
+          "in": [
+            "C-2"
+          ],
+          "out": [
+            "D-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2"
+          ]
+        },
+        {
+          "time": "36",
+          "in": [
+            "E-1"
+          ],
+          "out": [],
+          "after": [
+            "B-1",
+            "C-2",
+            "E-1"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [
+            "F-1"
+          ],
+          "out": [
+            "E-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2",
+            "F-1"
+          ]
+        }
+      ]
+    },
+    "zero_exits": {
+      "T": "48",
+      "initial_count": 1,
+      "final_count": 1,
+      "incoming": 0,
+      "outgoing": 0,
+      "successful": 0,
+      "non_success_exits": 0,
+      "H_event": "48",
+      "H_items": "48",
+      "L": "1",
+      "Q_exit": "0",
+      "B_start": "6",
+      "B_end": "54",
+      "all_exit_mean": null,
+      "success_mean": null,
+      "known_success_durations": [],
+      "S": 1,
+      "window_visit_mean": "48",
+      "per_item": [
+        {
+          "id": "B-only",
+          "window_hours": "48",
+          "full_exit_hours": null,
+          "age_at_end": "54"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "48",
+          "count": 1,
+          "area": "48"
+        }
+      ],
+      "events": [
+        {
+          "time": "48",
+          "in": [],
+          "out": [],
+          "after": [
+            "B-only"
+          ]
+        }
+      ]
+    },
+    "empty": {
+      "T": "48",
+      "initial_count": 0,
+      "final_count": 0,
+      "incoming": 0,
+      "outgoing": 0,
+      "successful": 0,
+      "non_success_exits": 0,
+      "H_event": "0",
+      "H_items": "0",
+      "L": "0",
+      "Q_exit": "0",
+      "B_start": "0",
+      "B_end": "0",
+      "all_exit_mean": null,
+      "success_mean": null,
+      "known_success_durations": [],
+      "S": 0,
+      "window_visit_mean": null,
+      "per_item": [],
+      "segments": [
+        {
+          "from": "0",
+          "to": "48",
+          "count": 0,
+          "area": "0"
+        }
+      ],
+      "events": [
+        {
+          "time": "48",
+          "in": [],
+          "out": [],
+          "after": []
+        }
+      ]
+    },
+    "split_left_0_30": {
+      "T": "30",
+      "initial_count": 3,
+      "final_count": 2,
+      "incoming": 2,
+      "outgoing": 3,
+      "successful": 2,
+      "non_success_exits": 1,
+      "H_event": "84",
+      "H_items": "84",
+      "L": "14/5",
+      "Q_exit": "78",
+      "B_start": "30",
+      "B_end": "36",
+      "all_exit_mean": "26",
+      "success_mean": "30",
+      "known_success_durations": [
+        "36",
+        "24"
+      ],
+      "S": 5,
+      "window_visit_mean": "84/5",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "12",
+          "full_exit_hours": "36",
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "30",
+          "full_exit_hours": null,
+          "age_at_end": "36"
+        },
+        {
+          "id": "C-1",
+          "window_hours": "18",
+          "full_exit_hours": "18",
+          "age_at_end": null
+        },
+        {
+          "id": "D-1",
+          "window_hours": "24",
+          "full_exit_hours": "24",
+          "age_at_end": null
+        },
+        {
+          "id": "C-2",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        },
+        {
+          "id": "E-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "6",
+          "to": "12",
+          "count": 4,
+          "area": "24"
+        },
+        {
+          "from": "12",
+          "to": "18",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "18",
+          "to": "30",
+          "count": 2,
+          "area": "24"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [
+            "D-1"
+          ],
+          "out": [],
+          "after": [
+            "A-1",
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "12",
+          "in": [],
+          "out": [
+            "A-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "18",
+          "in": [],
+          "out": [
+            "C-1"
+          ],
+          "after": [
+            "B-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "30",
+          "in": [
+            "C-2"
+          ],
+          "out": [
+            "D-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2"
+          ]
+        }
+      ]
+    },
+    "split_right_30_48": {
+      "T": "18",
+      "initial_count": 2,
+      "final_count": 3,
+      "incoming": 2,
+      "outgoing": 1,
+      "successful": 1,
+      "non_success_exits": 0,
+      "H_event": "48",
+      "H_items": "48",
+      "L": "8/3",
+      "Q_exit": "12",
+      "B_start": "36",
+      "B_end": "72",
+      "all_exit_mean": "12",
+      "success_mean": "12",
+      "known_success_durations": [
+        "12"
+      ],
+      "S": 4,
+      "window_visit_mean": "12",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "18",
+          "full_exit_hours": null,
+          "age_at_end": "54"
+        },
+        {
+          "id": "C-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "D-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "C-2",
+          "window_hours": "18",
+          "full_exit_hours": null,
+          "age_at_end": "18"
+        },
+        {
+          "id": "E-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        }
+      ],
+      "segments": [
+        {
+          "from": "30",
+          "to": "36",
+          "count": 2,
+          "area": "12"
+        },
+        {
+          "from": "36",
+          "to": "48",
+          "count": 3,
+          "area": "36"
+        }
+      ],
+      "events": [
+        {
+          "time": "36",
+          "in": [
+            "E-1"
+          ],
+          "out": [],
+          "after": [
+            "B-1",
+            "C-2",
+            "E-1"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [
+            "F-1"
+          ],
+          "out": [
+            "E-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2",
+            "F-1"
+          ]
+        }
+      ]
+    },
+    "start_and_end_events_0_12": {
+      "T": "12",
+      "initial_count": 1,
+      "final_count": 1,
+      "incoming": 1,
+      "outgoing": 1,
+      "successful": 1,
+      "non_success_exits": 0,
+      "H_event": "12",
+      "H_items": "12",
+      "L": "1",
+      "Q_exit": "12",
+      "B_start": "0",
+      "B_end": "0",
+      "all_exit_mean": "12",
+      "success_mean": "12",
+      "known_success_durations": [
+        "12"
+      ],
+      "S": 2,
+      "window_visit_mean": "6",
+      "per_item": [
+        {
+          "id": "X",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "Y",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "Z",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "12",
+          "count": 1,
+          "area": "12"
+        }
+      ],
+      "events": [
+        {
+          "time": "12",
+          "in": [
+            "Z"
+          ],
+          "out": [
+            "Y"
+          ],
+          "after": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    "adjacent_events_12_24": {
+      "T": "12",
+      "initial_count": 1,
+      "final_count": 1,
+      "incoming": 0,
+      "outgoing": 0,
+      "successful": 0,
+      "non_success_exits": 0,
+      "H_event": "12",
+      "H_items": "12",
+      "L": "1",
+      "Q_exit": "0",
+      "B_start": "0",
+      "B_end": "12",
+      "all_exit_mean": null,
+      "success_mean": null,
+      "known_success_durations": [],
+      "S": 1,
+      "window_visit_mean": "12",
+      "per_item": [
+        {
+          "id": "X",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "Y",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": null
+        },
+        {
+          "id": "Z",
+          "window_hours": "12",
+          "full_exit_hours": null,
+          "age_at_end": "12"
+        }
+      ],
+      "segments": [
+        {
+          "from": "12",
+          "to": "24",
+          "count": 1,
+          "area": "12"
+        }
+      ],
+      "events": [
+        {
+          "time": "24",
+          "in": [],
+          "out": [],
+          "after": [
+            "Z"
+          ]
+        }
+      ]
+    },
+    "wrong_merged_C": {
+      "T": "48",
+      "initial_count": 3,
+      "final_count": 3,
+      "incoming": 3,
+      "outgoing": 3,
+      "successful": 3,
+      "non_success_exits": 0,
+      "H_event": "144",
+      "H_items": "144",
+      "L": "3",
+      "Q_exit": "72",
+      "B_start": "30",
+      "B_end": "102",
+      "all_exit_mean": "24",
+      "success_mean": "24",
+      "known_success_durations": [
+        "36",
+        "24",
+        "12"
+      ],
+      "S": 6,
+      "window_visit_mean": "24",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "12",
+          "full_exit_hours": "36",
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "48",
+          "full_exit_hours": null,
+          "age_at_end": "54"
+        },
+        {
+          "id": "C-1",
+          "window_hours": "48",
+          "full_exit_hours": null,
+          "age_at_end": "48"
+        },
+        {
+          "id": "D-1",
+          "window_hours": "24",
+          "full_exit_hours": "24",
+          "age_at_end": null
+        },
+        {
+          "id": "E-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "0",
+          "full_exit_hours": null,
+          "age_at_end": "0"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "6",
+          "to": "12",
+          "count": 4,
+          "area": "24"
+        },
+        {
+          "from": "12",
+          "to": "30",
+          "count": 3,
+          "area": "54"
+        },
+        {
+          "from": "30",
+          "to": "36",
+          "count": 2,
+          "area": "12"
+        },
+        {
+          "from": "36",
+          "to": "48",
+          "count": 3,
+          "area": "36"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [
+            "D-1"
+          ],
+          "out": [],
+          "after": [
+            "A-1",
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "12",
+          "in": [],
+          "out": [
+            "A-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "30",
+          "in": [],
+          "out": [
+            "D-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1"
+          ]
+        },
+        {
+          "time": "36",
+          "in": [
+            "E-1"
+          ],
+          "out": [],
+          "after": [
+            "B-1",
+            "C-1",
+            "E-1"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [
+            "F-1"
+          ],
+          "out": [
+            "E-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "F-1"
+          ]
+        }
+      ]
+    },
+    "same_sparse_snapshots_history_A": {
+      "T": "48",
+      "initial_count": 1,
+      "final_count": 1,
+      "incoming": 1,
+      "outgoing": 1,
+      "successful": 1,
+      "non_success_exits": 0,
+      "H_event": "48",
+      "H_items": "48",
+      "L": "1",
+      "Q_exit": "25",
+      "B_start": "1",
+      "B_end": "24",
+      "all_exit_mean": "25",
+      "success_mean": "25",
+      "known_success_durations": [
+        "25"
+      ],
+      "S": 2,
+      "window_visit_mean": "24",
+      "per_item": [
+        {
+          "id": "P",
+          "window_hours": "24",
+          "full_exit_hours": "25",
+          "age_at_end": null
+        },
+        {
+          "id": "Q",
+          "window_hours": "24",
+          "full_exit_hours": null,
+          "age_at_end": "24"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "24",
+          "count": 1,
+          "area": "24"
+        },
+        {
+          "from": "24",
+          "to": "48",
+          "count": 1,
+          "area": "24"
+        }
+      ],
+      "events": [
+        {
+          "time": "24",
+          "in": [
+            "Q"
+          ],
+          "out": [
+            "P"
+          ],
+          "after": [
+            "Q"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [],
+          "out": [],
+          "after": [
+            "Q"
+          ]
+        }
+      ]
+    },
+    "same_sparse_snapshots_history_B": {
+      "T": "48",
+      "initial_count": 1,
+      "final_count": 1,
+      "incoming": 1,
+      "outgoing": 1,
+      "successful": 1,
+      "non_success_exits": 0,
+      "H_event": "12",
+      "H_items": "12",
+      "L": "1/4",
+      "Q_exit": "7",
+      "B_start": "1",
+      "B_end": "6",
+      "all_exit_mean": "7",
+      "success_mean": "7",
+      "known_success_durations": [
+        "7"
+      ],
+      "S": 2,
+      "window_visit_mean": "6",
+      "per_item": [
+        {
+          "id": "P",
+          "window_hours": "6",
+          "full_exit_hours": "7",
+          "age_at_end": null
+        },
+        {
+          "id": "Q",
+          "window_hours": "6",
+          "full_exit_hours": null,
+          "age_at_end": "6"
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 1,
+          "area": "6"
+        },
+        {
+          "from": "6",
+          "to": "42",
+          "count": 0,
+          "area": "0"
+        },
+        {
+          "from": "42",
+          "to": "48",
+          "count": 1,
+          "area": "6"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [],
+          "out": [
+            "P"
+          ],
+          "after": []
+        },
+        {
+          "time": "42",
+          "in": [
+            "Q"
+          ],
+          "out": [],
+          "after": [
+            "Q"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [],
+          "out": [],
+          "after": [
+            "Q"
+          ]
+        }
+      ]
+    },
+    "later_observed_exits_extend_to_60": {
+      "T": "60",
+      "initial_count": 3,
+      "final_count": 0,
+      "incoming": 4,
+      "outgoing": 7,
+      "successful": 6,
+      "non_success_exits": 1,
+      "H_event": "168",
+      "H_items": "168",
+      "L": "14/5",
+      "Q_exit": "198",
+      "B_start": "30",
+      "B_end": "0",
+      "all_exit_mean": "198/7",
+      "success_mean": "30",
+      "known_success_durations": [
+        "36",
+        "66",
+        "24",
+        "30",
+        "12",
+        "12"
+      ],
+      "S": 7,
+      "window_visit_mean": "24",
+      "per_item": [
+        {
+          "id": "A-1",
+          "window_hours": "12",
+          "full_exit_hours": "36",
+          "age_at_end": null
+        },
+        {
+          "id": "B-1",
+          "window_hours": "60",
+          "full_exit_hours": "66",
+          "age_at_end": null
+        },
+        {
+          "id": "C-1",
+          "window_hours": "18",
+          "full_exit_hours": "18",
+          "age_at_end": null
+        },
+        {
+          "id": "D-1",
+          "window_hours": "24",
+          "full_exit_hours": "24",
+          "age_at_end": null
+        },
+        {
+          "id": "C-2",
+          "window_hours": "30",
+          "full_exit_hours": "30",
+          "age_at_end": null
+        },
+        {
+          "id": "E-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        },
+        {
+          "id": "F-1",
+          "window_hours": "12",
+          "full_exit_hours": "12",
+          "age_at_end": null
+        }
+      ],
+      "segments": [
+        {
+          "from": "0",
+          "to": "6",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "6",
+          "to": "12",
+          "count": 4,
+          "area": "24"
+        },
+        {
+          "from": "12",
+          "to": "18",
+          "count": 3,
+          "area": "18"
+        },
+        {
+          "from": "18",
+          "to": "30",
+          "count": 2,
+          "area": "24"
+        },
+        {
+          "from": "30",
+          "to": "36",
+          "count": 2,
+          "area": "12"
+        },
+        {
+          "from": "36",
+          "to": "48",
+          "count": 3,
+          "area": "36"
+        },
+        {
+          "from": "48",
+          "to": "60",
+          "count": 3,
+          "area": "36"
+        }
+      ],
+      "events": [
+        {
+          "time": "6",
+          "in": [
+            "D-1"
+          ],
+          "out": [],
+          "after": [
+            "A-1",
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "12",
+          "in": [],
+          "out": [
+            "A-1"
+          ],
+          "after": [
+            "B-1",
+            "C-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "18",
+          "in": [],
+          "out": [
+            "C-1"
+          ],
+          "after": [
+            "B-1",
+            "D-1"
+          ]
+        },
+        {
+          "time": "30",
+          "in": [
+            "C-2"
+          ],
+          "out": [
+            "D-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2"
+          ]
+        },
+        {
+          "time": "36",
+          "in": [
+            "E-1"
+          ],
+          "out": [],
+          "after": [
+            "B-1",
+            "C-2",
+            "E-1"
+          ]
+        },
+        {
+          "time": "48",
+          "in": [
+            "F-1"
+          ],
+          "out": [
+            "E-1"
+          ],
+          "after": [
+            "B-1",
+            "C-2",
+            "F-1"
+          ]
+        },
+        {
+          "time": "60",
+          "in": [],
+          "out": [
+            "B-1",
+            "C-2",
+            "F-1"
+          ],
+          "after": []
+        }
+      ]
+    },
+    "rejected_inputs": {
+      "duplicate_id": "Duplicate flow ID",
+      "missing_recorded_exit": "Final snapshot disagrees with event records"
+    }
+  }
+}

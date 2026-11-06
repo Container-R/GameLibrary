@@ -1,0 +1,32 @@
+{
+  "provenance": "本文原创教学记录；所有工单、候选、状态、时间及投入均为假设，不来自真实游戏团队。",
+  "window": {"start": 0, "end": 48, "unit": "自然小时", "origin": "2026-06-01T09:00:00+08:00", "event_interval": "(start,end]", "snapshot": "该时刻全部事件处理后"},
+  "initial_snapshot": ["A-1", "B-1", "C-1"],
+  "final_snapshot": ["B-1", "C-2", "F-1"],
+  "flows": [
+    {"id": "A-1", "ticket": "AUD-41", "asset": "城门开启触发包", "start": -24, "end": 12, "outcome": "success", "evidence": "候选 C17 的触发/复位检查被接入负责人接受"},
+    {"id": "B-1", "ticket": "AUD-42", "asset": "祭坛触发包", "start": -6, "end": null, "outcome": null, "open_confirmed_at": 48},
+    {"id": "C-1", "ticket": "AUD-43", "asset": "支线门开启触发包", "start": 0, "end": 18, "outcome": "cancel", "evidence": "支线暂撤，制作负责人取消本次接入；流程不再承担此项交付"},
+    {"id": "D-1", "ticket": "AUD-44", "asset": "升降台触发包", "start": 6, "end": 30, "outcome": "success", "evidence": "候选 C18 的触发/复位检查被接入负责人接受"},
+    {"id": "C-2", "ticket": "AUD-43", "asset": "支线门开启触发包", "start": 30, "end": null, "outcome": null, "open_confirmed_at": 48},
+    {"id": "E-1", "ticket": "AUD-45", "asset": "检查点复活触发包", "start": 36, "end": 48, "outcome": "success", "evidence": "候选 C20 的触发/复位检查被接入负责人接受"},
+    {"id": "F-1", "ticket": "AUD-46", "asset": "战斗结束触发包", "start": 48, "end": null, "outcome": null, "open_confirmed_at": 48}
+  ],
+  "internal_events": [
+    {"time": 4, "flow": "A-1", "state": "等候构建", "evidence": "已提交资源，尚未接受指定候选中的检查结果"},
+    {"time": 8, "flow": "B-1", "state": "等待设计确认", "evidence": "祭坛重复触发规则尚未确认；截至 48 仍等待"},
+    {"time": 16, "flow": "D-1", "state": "内部退回修改", "evidence": "复位时未停止旧事件；本流程继续负责修复，没有正式退出"},
+    {"time": 20, "flow": "D-1", "state": "重新提交并等候构建", "evidence": "仍为 D-1，不新增接入次数"},
+    {"time": 40, "flow": "C-2", "state": "等候构建", "evidence": "再次接收后完成提交，尚未得到候选检查接受"}
+  ],
+  "labor": [
+    {"person": "接入甲", "flow": "A-1", "from": 1, "to": 3},
+    {"person": "设计乙", "flow": "B-1", "from": 8, "to": 9},
+    {"person": "接入甲", "flow": "B-1", "from": 9, "to": 11},
+    {"person": "接入甲", "flow": "C-1", "from": 13, "to": 14.5},
+    {"person": "接入甲", "flow": "D-1", "from": 6, "to": 8},
+    {"person": "接入甲", "flow": "D-1", "from": 16, "to": 18},
+    {"person": "接入甲", "flow": "C-2", "from": 30, "to": 32},
+    {"person": "接入甲", "flow": "E-1", "from": 36, "to": 38.5}
+  ]
+}

@@ -3,29 +3,29 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0297"
+    "TASK-2026-0298"
   ],
-  "last_completed_task_id": "TASK-2026-0296",
-  "last_real_progress_at": "2026-11-06T15:20:12Z",
-  "last_commit_sha": "be8c62595dc9e1ddb6afc08c1c603e633e8aeba1",
+  "last_completed_task_id": "TASK-2026-0297",
+  "last_real_progress_at": "2026-11-06T15:46:08Z",
+  "last_commit_sha": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-playable-delivery-planning-method",
-    "article": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
-    "article_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
-    "previous_verified_head": "be8c62595dc9e1ddb6afc08c1c603e633e8aeba1",
+    "kind": "complete-finite-window-flow-measurement-method",
+    "article": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+    "article_sha256": "83b91d4c216f6318249d959e15a6f0a872ffc01ef0ee251356fff8991ea48bda",
+    "previous_verified_head": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
     "identity": "Containing commit; exact remote readback required before reporting success.",
     "scope": "One finite production method and bounded migration; not whole discipline or library acceptance."
   },
-  "next_action": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews.",
+  "next_action": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input.",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0297",
-      "question": "怎样从有限窗口的制作记录核对平均在途、退出耗时与未完累积，而不混淆人员工时或预测？"
+      "task_id": "TASK-2026-0298",
+      "question": "并行制作输入的完成时间不确定时，怎样区分平均值、固定日期交齐概率与共同变化，并明确记录不足的边界？"
     },
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",

@@ -1,0 +1,68 @@
+{
+  "task_id": "TASK-2026-0297",
+  "article_path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+  "article_sha256": "83b91d4c216f6318249d959e15a6f0a872ffc01ef0ee251356fff8991ea48bda",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "author": "John D. C. Little",
+      "title": "Little’s Law as Viewed on Its 50th Anniversary",
+      "publication": "Operations Research59(3),536–549,2011",
+      "doi": "10.1287/opre.1110.0940",
+      "url": "https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf",
+      "pdf_sha256": "6d9087db712d2214fcff9e71b06efba1bce21fe52a339286d6ed901fd4e3a63e",
+      "claims": [
+        {
+          "locator": "§2.1.1, printed537",
+          "claim": "Choose a stable counted object and system boundary; arrival and exit records recover system occupancy.",
+          "article_section": "先约定一项工作是什么，什么时候仍在流程内"
+        },
+        {
+          "locator": "§2.1.2–2.1.4, printed537–538, LL.1 and Figure2",
+          "claim": "Area under occupancy and summed residence use the same item-time; time averages, item averages and rates have different denominators. The known finite path is retrospective, not a stationary/FIFO requirement.",
+          "article_section": "按事件之间的持续时间，计算平均在途；换个方向相加：每项在窗口里待了多久"
+        },
+        {
+          "locator": "§2.2.1–2.2.3, printed538–540, LL.2 and Figure3",
+          "claim": "With nonempty boundaries S(T) includes initial items and cumulative arrivals; A/S measures incremental residence in the window, not arbitrary full completion times.",
+          "article_section": "Little 的有限窗口关系，到底用了哪一批项目"
+        },
+        {
+          "locator": "§2.3, printed540",
+          "claim": "The relation structures consistent measurement and further investigation; it does not by itself choose staffing, intervention or dates.",
+          "article_section": "把核对结果变成一次可行动的沟通"
+        }
+      ],
+      "actually_viewed_source_pages": [
+        {
+          "printed_page": 537,
+          "render_sha256": "d0bd3b827c554f531f1dc09f3a9721a0d53d2845a4ace130c60b7876cd5ddb63",
+          "observed_content": "System boundary, counted objects and LL.1 area/time, count/time and area/count definitions.",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        },
+        {
+          "printed_page": 538,
+          "render_sha256": "9c737c431bf99804cf480742e9d938d2881c8acb7e938c957415bcb2eb3c249d",
+          "observed_content": "Figure2, item-time accumulation, distinct averaging measures and retrospective sample-path conditions.",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        },
+        {
+          "printed_page": 539,
+          "render_sha256": "32b9cf9df6d313b1bb3722329a8c0476aec27933efd709f8d1a04d9535228469",
+          "observed_content": "LL.2 defines S(t) from initial items plus cumulative arrivals, and W from area/S; Figure3 nonempty boundaries and the practical meaning caveat.",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        },
+        {
+          "printed_page": 540,
+          "render_sha256": "53ad9787b2052ef398a7795e7548bc0eb9283838934475a1fe39b1a656b3a068",
+          "observed_content": "Classes and practical use: observed history constrains measures but does not itself choose an intervention; engineering estimates need additional judgment.",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        }
+      ],
+      "conditions": "Finite already-observed records with explicit counting and consistent time measure. Empty sample means remain undefined; article requires positive duration and S>0 for LL.2 average. No real game-team evidence or future forecast inferred."
+    }
+  ],
+  "original_work": "Audio-trigger package workflow, acceptance/exit boundaries, half-open occupancy and post-event snapshots, cancellation/reentry identifiers, both-boundary age derivation, original diagrams and all teaching records. These are not game cases or formulas quoted from the source.",
+  "limits": "Original paper and actual selected page images, original retrospective arithmetic and independent model review. No real team log, engine, tracking product, prediction validation, causal experiment or human study. No source PDF, extracted text or source screenshots redistributed."
+}

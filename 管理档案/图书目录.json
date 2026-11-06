@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "be8c62595dc9e1ddb6afc08c1c603e633e8aeba1",
+  "publication_base_sha": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -696,7 +696,7 @@
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
       },
-      "reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+      "reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
       "parallel_merge_support": {
         "source_record": "管理档案/来源笔记/production-merge-timing.json",
         "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
@@ -724,13 +724,24 @@
         "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
         "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
         "管理档案/审查/资源超配检测粒度-增量审读.md",
-        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
+        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+        "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
       ],
       "finite_flow_measurement_support": {
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+        "current_review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+        "historical_record": {
+          "path": "管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
+          "sha256": "deb369d3f31c9ba9047e961ff975d58ef1956b82416ea9ffcb888e2efd5ad916",
+          "review": "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
+          "scope": "Original-author finite-window definitions and hypothetical task-time arithmetic; no production data, forecast or experiment."
+        },
         "path": "管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
-        "sha256": "deb369d3f31c9ba9047e961ff975d58ef1956b82416ea9ffcb888e2efd5ad916",
-        "review": "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
-        "scope": "Original-author finite-window definitions and hypothetical task-time arithmetic; no production data, forecast or experiment."
+        "material_index_sha256": "cd59ddbe4e88cfdc05372214a3b3412df0682766ca9d11de1a5036b843593e91",
+        "pre_retirement_body_sha256": "deb369d3f31c9ba9047e961ff975d58ef1956b82416ea9ffcb888e2efd5ad916",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/5b0d5391b38b79a8b5f3b80a2184c0909ebddde0/管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
+        "scope": "Complete original finite-flow support record preserved; new complete method independently reviewed."
       },
       "updated_at": "2026-11-06",
       "resource_detection_extension": {
@@ -739,10 +750,10 @@
         "scope": "Existing reader only: vendor day/week resource-leveling detection example and its decision boundary. No scheduling-software or actual-project test."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
-        "current_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
-        "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
-        "scope": "One method relation and return label only; original role, resource and source content not recertified."
+        "previous_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+        "current_reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
+        "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+        "scope": "One finite-flow method relation only; original role, prior delivery relation, resource and source content not recertified."
       },
       "related_formal_articles": [
         {
@@ -750,6 +761,20 @@
           "path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
           "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
           "relationship": "From producer coordination to explicit acceptance, dependency, resource and progress-based delivery planning."
+        },
+        {
+          "internal_id": "SOL-PROD-003",
+          "path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+          "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+          "relationship": "From producer coordination to consistent historical work-in-process, residence, exits and boundary-age measurement."
+        }
+      ],
+      "link_revision_history": [
+        {
+          "previous_reader_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
+          "current_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+          "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+          "scope": "One method relation and return label only; original role, resource and source content not recertified."
         }
       ]
     },
@@ -4935,7 +4960,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Acceptance-defined small playable delivery, explicit FS dependency lower bound, resource-feasible choices, float, changes and remaining-work updates. Original conditional teaching method, not real schedule, global optimum or date probability."
+    },
+    {
+      "internal_id": "SOL-PROD-003",
+      "reader_title": "有限观察窗口中的在途数量与完成时间",
+      "discipline": "项目管理与测试",
+      "direction": "制作管理",
+      "topic": "流程度量",
+      "type": "production-method",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+      "current_read_path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+      "reader_body_status": "published",
+      "reader_sha256": "83b91d4c216f6318249d959e15a6f0a872ffc01ef0ee251356fff8991ea48bda",
+      "editorial_status": "完整有限窗口度量方法经独立全文、读者任务与全新盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0297/sources.json",
+      "source_sha256": "4fba7dd47147b77af70e56bbdcfb29fbe420482d74475be70377f0e254159421",
+      "materials_record": "管理档案/研究/TASK-2026-0297/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0297/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-PROD-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Explicit acceptance/exit boundaries and visit identities; finite event area and per-item residence, successful versus all exits, both-boundary ages, missing history and consistent clocks. Original historical teaching method, not personnel utilization, bottleneck certification, future delivery or causal intervention."
     }
   ],
-  "current_batch_scope": "One complete small playable-delivery planning method with bounded producer relation, critical-path support retirement and direct-child navigation; a separate finite modular-environment review archived. Other production methods and library debt remain scoped separately."
+  "current_batch_scope": "One complete finite historical workflow-measurement method with bounded producer relation, old flow support retirement and direct-child navigation. Earlier delivery method and all other production scopes remain intact; not whole-library acceptance."
 }

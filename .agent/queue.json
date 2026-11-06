@@ -10258,14 +10258,40 @@
       "reader": "能读时间表并做基本算术的游戏制作、接入与技术负责人。",
       "scope": "Complete historical workflow measurement from explicit flow units and event boundaries, including both initial and final unfinished items, successful versus all exits and two independent area calculations. No staffing capacity, date probability or causal productivity claim.",
       "expected_outcome": "A complete original game-production teaching case with primary finite-window definitions, technical and independent reader application, and a single formal flow-measurement location after review.",
-      "next_action": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews.",
-      "phase": "drafting",
+      "next_action": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0297/sources.json",
+        "管理档案/研究/TASK-2026-0297/materials.json",
+        "管理档案/研究/TASK-2026-0297/范围与保留.md",
+        "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T15:46:08Z",
+      "related_task_ids": [
+        "TASK-2026-0296"
+      ],
+      "article_path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
+      "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0298",
+      "question": "并行制作输入的完成时间不确定时，怎样区分平均值、固定日期交齐概率与共同变化，并明确记录不足的边界？",
+      "reader": "需要协调多个专业输入和交付判断的游戏制作与技术负责人。",
+      "scope": "Compare existing dependency-planning method, producer role and historical merge-time support. Determine a nonduplicate complete reader task from joint outcomes, acceptance conditions and uncertainty evidence before drafting. No inference of real delivery probabilities from invented cases.",
+      "expected_outcome": "Evidence-backed scope decision, actual primary-source reading and a distinct representative task; develop a full finite method only if the remaining production question supports it.",
+      "next_action": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input.",
+      "phase": "researching",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T15:20:12Z",
+      "updated_at": "2026-11-06T15:46:08Z",
       "related_task_ids": [
+        "TASK-2026-0297",
         "TASK-2026-0296"
       ]
     }
@@ -10274,7 +10300,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews."
+    "next_priority": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
