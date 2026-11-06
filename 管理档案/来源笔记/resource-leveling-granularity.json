@@ -1,0 +1,36 @@
+{
+  "id": "SRC-PROD-RESOURCE-GRANULARITY-001",
+  "reader_id": "ROLE-PROD-001",
+  "reader_path": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+  "updated_at": "2026-11-06",
+  "status": "source-backed",
+  "sources": [
+    {
+      "author": "Microsoft",
+      "title": "Resource Leveling dialog box",
+      "url": "https://support.microsoft.com/en-us/project/resource-leveling-dialog-box",
+      "published_at": null,
+      "accessed_at": "2026-11-06",
+      "location": "Details > Leveling calculations > Look for overallocations on a basis",
+      "listed_products": [
+        "Project Online Desktop Client",
+        "Project Standard 2024",
+        "Project Professional 2021",
+        "Project Standard 2021",
+        "Project Professional 2019",
+        "Project Standard 2019",
+        "Project Professional 2016",
+        "Project Standard 2016"
+      ],
+      "supports": "The time basis controls recognition of overallocations for leveling. The vendor's two same-day one-day tasks can be identified by day while not flagged under a forty-hour weekly availability.",
+      "example_attribution": "The 16-hour day versus 40-hour week example is the vendor's, not an original library example or software execution."
+    }
+  ],
+  "deduplication": {
+    "baseline": "1a1e6675910fe657dfee962a2b7abec3bf9f9418",
+    "decision": "Retain existing GAO-backed two-task resource conflict and its original two-plus-three-day example unchanged. Add only the distinct tool-detection granularity caution inside the existing reader; no new scheduling book or support article.",
+    "scope": "Main reader and three directly linked scheduling supports read; not whole-library semantic audit."
+  },
+  "editorial_inference": "A weekly total within capacity does not establish daily feasibility or authorization to move a promised date. Inspect calendar, availability, task occupancy and chosen detection period before interpreting the absence of an indicator.",
+  "evidence_boundary": "Documentation-only bounded addition. No Microsoft Project, scheduling solver, actual project, productivity measurement or human test. No claim that changing detection granularity resolves all conflicts. Existing source and experiment boundaries remain unchanged."
+}

@@ -1,0 +1,45 @@
+{
+  "run_id": "20261106T064255Z-resource-leveling-granularity",
+  "started_at": "2026-11-06T06:38:00Z",
+  "ended_at": "2026-11-06T06:45:28Z",
+  "task_id": "TASK-2026-0008",
+  "actions": [
+    "Rejected duplicating the existing two-plus-three-day resource-conflict example after targeted reader/support comparison.",
+    "Read the Microsoft official day/week resource-leveling detection example and exact listed product scope.",
+    "Added two short paragraphs and expanded the existing shelf entry without changing prior technical claims.",
+    "Corrected the undated-reference summary during independent review and retained explicit no-software-execution limits."
+  ],
+  "sources_examined": [
+    "https://support.microsoft.com/en-us/project/resource-leveling-dialog-box"
+  ],
+  "evidence_added": [
+    "管理档案/来源笔记/resource-leveling-granularity.json",
+    "管理档案/审查/资源超配检测粒度-增量审读.md"
+  ],
+  "files_changed": [
+    ".agent/queue.json",
+    ".agent/runs/20261106T064255Z-resource-leveling-granularity.json",
+    ".agent/state.json",
+    "GameLibrary/项目管理与测试/制作管理/岗位与协作/README.md",
+    "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+    "管理档案/图书目录.json",
+    "管理档案/审查/资源超配检测粒度-增量审读.md",
+    "管理档案/来源笔记/resource-leveling-granularity.json"
+  ],
+  "commit_sha": null,
+  "base_commit_sha": "1a1e6675910fe657dfee962a2b7abec3bf9f9418",
+  "commit_note": "Containing commit identifies this publication. Remote confirmation is performed after publication.",
+  "validation": {
+    "source_review": "pass within official detection-granularity and listed-product sections",
+    "independent_reader_review": "accepted bounded addition; existing arithmetic and sources retained",
+    "counts": {
+      "frozen": 55,
+      "total": 110,
+      "post_baseline": 55
+    },
+    "limits": "No scheduling software, real project, productivity or human test."
+  },
+  "blockers": [],
+  "next_action": "Compare weighted Shannon entropy with candidate-count selection in the existing WFC reader and its pinned mxgmn implementation. Verify the exact heuristic and weight handling before deciding on one bounded original probability example; do not repeat the already-covered quota or contradiction explanations, and do not create a new book automatically.",
+  "outcome": "Existing-reader interpretation of a resource indicator clarified, without repeating the prior conflict example."
+}

@@ -615,7 +615,7 @@
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
       },
-      "reader_sha256": "62f6d4e8342229449b7eef909a4d5cdfe7bfc592067bc472373e47f9ae8e7864",
+      "reader_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
       "parallel_merge_support": {
         "source_record": "管理档案/来源笔记/production-merge-timing.json",
         "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
@@ -631,13 +631,20 @@
       },
       "review_paths": [
         "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
-        "管理档案/审查/在途数量与完成耗时-来源与读者审查.md"
+        "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
+        "管理档案/审查/资源超配检测粒度-增量审读.md"
       ],
       "finite_flow_measurement_support": {
         "path": "管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
         "sha256": "deb369d3f31c9ba9047e961ff975d58ef1956b82416ea9ffcb888e2efd5ad916",
         "review": "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
         "scope": "Original-author finite-window definitions and hypothetical task-time arithmetic; no production data, forecast or experiment."
+      },
+      "updated_at": "2026-11-06",
+      "resource_detection_extension": {
+        "source_record": "管理档案/来源笔记/resource-leveling-granularity.json",
+        "review": "管理档案/审查/资源超配检测粒度-增量审读.md",
+        "scope": "Existing reader only: vendor day/week resource-leveling detection example and its decision boundary. No scheduling-software or actual-project test."
       }
     },
     {
@@ -4017,7 +4024,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "601bf440e7652d3ab85da6dd27931ab9069ae032",
+  "publication_base_sha": "1a1e6675910fe657dfee962a2b7abec3bf9f9418",
   "accounted_for_original_items": 55,
   "reader_books_total": 110,
   "post_baseline_research_books": 55,
