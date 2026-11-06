@@ -1,0 +1,223 @@
+{
+  "scope": "Original exact-coordinate teaching model only",
+  "units": "metres",
+  "dcc_engine_game_or_human_tests": false,
+  "checks": {
+    "five_piece_seams_point_normal_up_and_rectangle": true,
+    "legal_pivots": true,
+    "all_six_footprint_interiors_disjoint": true,
+    "all_legal_port_offsets_match_two_times_normal": true,
+    "center_room_impossibility": "Invariant proof in article; not finite search",
+    "actual_mesh_or_collision_checked": false
+  },
+  "route": [
+    {
+      "piece": "C",
+      "rotation": 180,
+      "pivot": [
+        -6,
+        2,
+        0
+      ],
+      "input": [
+        -4,
+        2,
+        "2/5"
+      ],
+      "input_normal": [
+        1,
+        0,
+        0
+      ],
+      "output": [
+        -6,
+        0,
+        "2/5"
+      ],
+      "output_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "piece": "S",
+      "rotation": 90,
+      "pivot": [
+        -6,
+        -2,
+        0
+      ],
+      "input": [
+        -6,
+        0,
+        "2/5"
+      ],
+      "input_normal": [
+        0,
+        1,
+        0
+      ],
+      "output": [
+        -6,
+        -4,
+        "2/5"
+      ],
+      "output_normal": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "piece": "C",
+      "rotation": 270,
+      "pivot": [
+        -6,
+        -6,
+        0
+      ],
+      "input": [
+        -6,
+        -4,
+        "2/5"
+      ],
+      "input_normal": [
+        0,
+        1,
+        0
+      ],
+      "output": [
+        -4,
+        -6,
+        "2/5"
+      ],
+      "output_normal": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "piece": "S",
+      "rotation": 0,
+      "pivot": [
+        -2,
+        -6,
+        0
+      ],
+      "input": [
+        -4,
+        -6,
+        "2/5"
+      ],
+      "input_normal": [
+        -1,
+        0,
+        0
+      ],
+      "output": [
+        0,
+        -6,
+        "2/5"
+      ],
+      "output_normal": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "piece": "C",
+      "rotation": 0,
+      "pivot": [
+        2,
+        -6,
+        0
+      ],
+      "input": [
+        0,
+        -6,
+        "2/5"
+      ],
+      "input_normal": [
+        -1,
+        0,
+        0
+      ],
+      "output": [
+        2,
+        -4,
+        "2/5"
+      ],
+      "output_normal": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "center_room_pivot_class": [
+    2,
+    0
+  ],
+  "center_room_north_exit_class": [
+    2,
+    2
+  ],
+  "center_room_target_class": [
+    0,
+    0
+  ],
+  "defect": {
+    "third_piece_actual_exit": [
+      "-19/5",
+      -6,
+      "2/5"
+    ],
+    "following_pivots": [
+      [
+        "-9/5",
+        -6,
+        0
+      ],
+      [
+        "11/5",
+        -6,
+        0
+      ]
+    ],
+    "following_end": [
+      "11/5",
+      -4,
+      "2/5"
+    ],
+    "end_error": [
+      "1/5",
+      0,
+      0
+    ],
+    "on_grid_local_seam_error": [
+      "1/5",
+      0,
+      0
+    ],
+    "following_pivots_off_grid": true
+  },
+  "floor": {
+    "lower_walk_z": "2/5",
+    "upper_base_z": "18/5",
+    "upper_walk_z": "4",
+    "slab_bottom_z": "18/5",
+    "slab_top_z": "4",
+    "slab_thickness": "2/5",
+    "lower_structural_clear_height": "16/5",
+    "door_clear_height": "14/5"
+  },
+  "stale_marker_example": {
+    "actual_floor": "3/5",
+    "marker": "2/5",
+    "port_data_comparison_passes": true,
+    "geometry_vs_marker_passes": false
+  }
+}

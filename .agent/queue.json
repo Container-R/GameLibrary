@@ -10183,15 +10183,40 @@
       "reader": "制作正交房间、走廊套件的环境美术与关卡搭建者。",
       "scope": "Finite orthogonal room/corridor kit interface design and representative combination validation: consistent units and origin, floor-referenced ports, rotations, footprint and passage occupancy, phase compatibility, thickness and genuine adapter decisions. Preserve existing concept guidance and all old drafts.",
       "expected_outcome": "A complete readable method with original geometric examples, grounded in actually read developer material and viewed original images, followed by independent full technical, reader and navigation reviews.",
-      "next_action": "Complete the bounded modular-environment discovery, then draft an interface-design and combination-validation method. Distinguish asset errors, incompatible kit rules and justified adapters; do not infer source dimensions or testing from diagrams.",
+      "next_action": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0294/sources.json",
+        "管理档案/研究/TASK-2026-0294/materials.json",
+        "管理档案/研究/TASK-2026-0294/范围与保留.md",
+        "管理档案/审稿/SOL-ENV-001/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T14:10:54Z",
+      "related_task_ids": [
+        "TASK-2026-0293"
+      ],
+      "article_path": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
+      "review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0295",
+      "question": "按玩家分组后，怎样比较场次完成率，同时分清活动量变化与单场改善？",
+      "reader": "具备均值、方差和基础A/B知识的游戏数据分析师与数据工程师。",
+      "scope": "Fixed-endpoint two-arm ratio comparison from complete player aggregates under explicitly independent-player model. Explain weighting, two-arm uncertainty and changing denominators; preserve separate missing-data, stopping and interference methods.",
+      "expected_outcome": "Complete comparison and interpretation method, grounded in primary sources and original input, with independent full technical, reader and navigation review.",
+      "next_action": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods.",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T13:44:25Z",
+      "updated_at": "2026-11-06T14:10:54Z",
       "related_task_ids": [
-        "TASK-2026-0293"
+        "TASK-2026-0294"
       ]
     }
   ],
@@ -10199,7 +10224,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Complete the bounded modular-environment discovery, then draft an interface-design and combination-validation method. Distinguish asset errors, incompatible kit rules and justified adapters; do not infer source dimensions or testing from diagrams."
+    "next_priority": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

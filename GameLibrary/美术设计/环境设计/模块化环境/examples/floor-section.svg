@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="740" viewBox="0 0 1200 740">
+<title>层间断面：楼板归属与净高</title>
+<rect width="1200" height="740" fill="#f7f9fc"/>
+<style>text{font-family:Noto Sans CJK SC, sans-serif;fill:#193047;font-size:20px} .small{font-size:17px} .title{font-size:30px;font-weight:700} .sub{font-size:24px;font-weight:600} .mono{font-family:Noto Sans Mono CJK SC,monospace;font-size:18px}</style>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#234b70"/></marker></defs>
+<text x="34" y="48" class="title" >层间断面：楼板厚度必须占据真实空间</text>
+<text x="34" y="84" class="small" >原创示例。Z 向上，单位米。每层拥有底部 0.4 米楼板；层间基面相距 3.6 米。</text>
+<rect x="160" y="142.0" width="430" height="468.0" fill="#edf3fa" stroke="#a5bbce" stroke-width="2" />
+<rect x="160" y="574.0" width="430" height="36" fill="#b39163" stroke="#896d46" stroke-width="2" />
+<rect x="160" y="250" width="430" height="36" fill="#b39163" stroke="#896d46" stroke-width="2" />
+<line x1="144" y1="610" x2="610" y2="610" stroke="#637c93" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="646" y="617" class="small" >0：下层基面</text>
+<line x1="144" y1="574.0" x2="610" y2="574.0" stroke="#637c93" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="646" y="581.0" class="small" >0.4：下层行走面</text>
+<line x1="144" y1="286.0" x2="610" y2="286.0" stroke="#637c93" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="646" y="293.0" class="small" >3.6：上层基面</text>
+<line x1="144" y1="250" x2="610" y2="250" stroke="#637c93" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="646" y="257" class="small" >4.0：上层行走面</text>
+<text x="190" y="448.0" class="" >下层</text>
+<text x="190" y="187.0" class="" >上层</text>
+<line x1="95" y1="574.0" x2="95" y2="286.0" stroke="#234b70" stroke-width="2" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<text x="33" y="370" class="small" >3.2 米</text>
+<text x="29" y="397" class="small" >结构净高</text>
+<rect x="345" y="322.0" width="135" height="251.99999999999997" fill="none" stroke="#008c8e" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="350" y="439.0" class="small" >门洞 2.8 米</text>
+<text x="350" y="475.0" class="small" >最低净空</text>
+<line x1="590" y1="268.0" x2="638" y2="268.0" stroke="#896d46" stroke-width="2" />
+<text x="646" y="274.0" class="small" >中间楼板 [3.6,4.0]，由上层拥有</text>
+<rect x="650" y="354" width="510" height="148" fill="#ffffff" stroke="#bdcbd8" stroke-width="2" />
+<text x="672" y="390" class="small" >同一块实体，不再由下层重复创建。</text>
+<text x="672" y="429" class="small" >门楣、饰面、设备可以降低局部净高。</text>
+<text x="672" y="468" class="small" >从楼梯口或洞口检查上下表面与侧边封口。</text>
+<text x="34" y="679" class="small" >这里没有楼梯、洞口网格或碰撞模型。若需 3.6 米结构净高并保留 0.4 米楼板，层间距须重新分配。</text>
+<text x="34" y="712" class="small" >图中向上的空间仅作截面背景，未把整层填成实体；门洞虚线表示待落实到实际模型的净空边界。</text>
+</svg>

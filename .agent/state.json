@@ -3,29 +3,29 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0294"
+    "TASK-2026-0295"
   ],
-  "last_completed_task_id": "TASK-2026-0293",
-  "last_real_progress_at": "2026-11-06T13:44:25Z",
-  "last_commit_sha": "8d7689d8418a0e3020e616996ddb45ac1cce880a",
+  "last_completed_task_id": "TASK-2026-0294",
+  "last_real_progress_at": "2026-11-06T14:10:54Z",
+  "last_commit_sha": "a5357670df6f02f652e4c1d445c2f6c0478261ec",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-PROG-009/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-pairwise-surface-gap-method",
-    "article": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
-    "article_sha256": "99318f3e2e248da6cd181177f9e18a75d7c11a0c415fae780b0d1548d5706dd7",
-    "previous_verified_head": "8d7689d8418a0e3020e616996ddb45ac1cce880a",
+    "kind": "complete-modular-environment-interface-method",
+    "article": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
+    "article_sha256": "5875e0272f4018eab207bef519057e183fdd514488a94532b22e881f5dc2b472",
+    "previous_verified_head": "a5357670df6f02f652e4c1d445c2f6c0478261ec",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "Complete finite method and bounded migration; not entire physics topic or library v2 acceptance."
+    "scope": "Complete finite method and bounded migration; not whole environment discipline or library acceptance."
   },
-  "next_action": "Complete the bounded modular-environment discovery, then draft an interface-design and combination-validation method. Distinguish asset errors, incompatible kit rules and justified adapters; do not infer source dimensions or testing from diagrams.",
+  "next_action": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods.",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0294",
-      "question": "模块化环境的房间与走廊套件，怎样定义接口并验证真实组合，而不是靠临时补片掩盖规则冲突？"
+      "task_id": "TASK-2026-0295",
+      "question": "按玩家分组后，怎样比较场次完成率，同时分清活动量变化与单场改善？"
     },
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",

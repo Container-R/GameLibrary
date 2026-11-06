@@ -1,0 +1,165 @@
+{
+  "task_id": "TASK-2026-0294",
+  "article_path": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
+  "article_sha256": "5875e0272f4018eab207bef519057e183fdd514488a94532b22e881f5dc2b472",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "id": "S1",
+      "authors": [
+        "Joel Burgess",
+        "Nathan Purkeypile"
+      ],
+      "title": "Skyrim's Modular Approach to Level Design",
+      "event": "GDC 2013, Level Design in a Day",
+      "publication_date": "2013-05-01",
+      "url": "https://www.gamedeveloper.com/design/skyrim-s-modular-approach-to-level-design",
+      "identity": "Author-signed republication identifies the joint talk.",
+      "read_locator": "Things To Know Before Beginning, Concept, Proof, Sidebar, selected Graybox and Polish, Advanced de-twist context. Author targeted reading, not whole-talk or video review.",
+      "claims": [
+        {
+          "claim": "Kit footprint includes structure, not just open passage; graybox stress cases expose loopback, adjacent and stacked incompatibilities.",
+          "article_sections": [
+            "先约定要搭出的空间，再选择模块粒度",
+            "接缝合格之后，还要检查结构占位和上下层"
+          ],
+          "conditions": "Historical production example. No dimensions, universal kit specification or measured project benefit inferred."
+        },
+        {
+          "claim": "The loopback example diagnoses a corner extension rather than concealing it with a half-length piece; a deliberate de-twist can address a different side-interface need.",
+          "article_sections": [
+            "单件出口多出0.2米时，要找到第一次偏离",
+            "几何一致而侧面不相容时，过渡件可以是正确答案"
+          ],
+          "conditions": "Article coordinates and production checklist are original teaching design, not recovered studio asset data."
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "authors": [
+        "Joel Burgess",
+        "Nate Purkeypile"
+      ],
+      "organization": "Bethesda Game Studios",
+      "title": "The Modular Level Design of Fallout 4",
+      "event": "GDC 2016",
+      "url": "https://www.slideshare.net/slideshow/gdc-2016-modular-level-design-of-fallout-4/59770460",
+      "identity": "Author-uploaded page and deck credits; platform automated description excluded.",
+      "read_locator": "Related basic conventions and granularity/workflow text including pages34,40,86,96; actual author image inspection limited to pages86 and96. Page numbers use source 1-based image filenames.",
+      "claims": [
+        {
+          "claim": "Granular floor/wall/ceiling/corner pieces and prefab combinations allow different assembly units; external interface acceptance still needs a defined unit.",
+          "article_sections": [
+            "先约定要搭出的空间，再选择模块粒度"
+          ],
+          "conditions": "No complete274-page or video review, current engine behavior, workflow savings or arbitrary-granularity correctness claim."
+        }
+      ]
+    }
+  ],
+  "source_images": [
+    {
+      "id": "S1-I2",
+      "filename": "GDC2013footprintoverlap.png",
+      "url": "https://2.bp.blogspot.com/-QfjOii6jE_8/UWy4eplzbaI/AAAAAAAAAYM/Auv6ceZE7fY/s640/GDC2013footprintoverlap.png",
+      "sha256": "7361aa9625de24dc551cda8a57cf03077495487f1fa08f261cf4a07060b8d35e",
+      "bytes": 75723,
+      "actual_image_viewed": true,
+      "observed_content": "Yellow boundary and alcove protrusion; circled structural overlap. Not a measured collision model.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S1-I3",
+      "filename": "webFootprintAlcovesCorrected.png",
+      "url": "https://3.bp.blogspot.com/-ZyZhQQ5TC-0/UW_7chuUJtI/AAAAAAAAAZU/1r0ZfTdEDkQ/s320/webFootprintAlcovesCorrected.png",
+      "sha256": "4b5b52d7561b716464987c0387a19532993b2a4c8052bc324c10ac791709a667",
+      "bytes": 45478,
+      "actual_image_viewed": true,
+      "observed_content": "Parallel structures with an intervening structural band; not proof for all arrangements.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S1-I4",
+      "filename": "webLoopbackStressTest.jpg",
+      "url": "https://4.bp.blogspot.com/-Bp4Yq6g2OyI/UW__xGNPNZI/AAAAAAAAAZs/s_Pu2L1mZ-0/s640/webLoopbackStressTest.jpg",
+      "sha256": "14de552fa6c4fca22dda5b94642301d598181ab2914b4b87238d9e9d599f60e6",
+      "bytes": 33082,
+      "actual_image_viewed": true,
+      "observed_content": "Three-column loopback example with route and Bad/Good markers; root cause comes from accompanying developer text, not measured pixels.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S1-I5",
+      "filename": "webVerticalFootprint.jpg",
+      "url": "https://1.bp.blogspot.com/-RqTRqselVO4/UXABbNRyI_I/AAAAAAAAAZ0/R3DaVYAxrHE/s640/webVerticalFootprint.jpg",
+      "sha256": "623d2f570a320b2bb21251319d52d4611bd44b88d8d04ad8ad349034310369b8",
+      "bytes": 18715,
+      "actual_image_viewed": true,
+      "observed_content": "Stacked modules with coincident versus separated layer relationships; no dimension or observed rendering artifact inferred.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S1-I7",
+      "filename": "webAsymmHall.png",
+      "url": "https://2.bp.blogspot.com/-UdYLLSV9Gq8/UXBlxhp3wAI/AAAAAAAAAbc/i6tBVnzS46w/s320/webAsymmHall.png",
+      "sha256": "293bbee2582fb7da7e42936015552f45f99755da9deb07dbafa9ac2071d24a83",
+      "bytes": 75647,
+      "actual_image_viewed": true,
+      "observed_content": "A/B and A/A labels at openings; no full hidden topology inferred.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S1-I8",
+      "filename": "webDetwist.jpg",
+      "url": "https://4.bp.blogspot.com/-QGNc4NpfSu4/UXBmZSZ2K5I/AAAAAAAAAbk/I72rRACobX4/s320/webDetwist.jpg",
+      "sha256": "5f0804d040ef455b3929988b5fde887bbd7db4cd3d1c0ca0d86ed2df794308f8",
+      "bytes": 33501,
+      "actual_image_viewed": true,
+      "observed_content": "Loop with A/B markers and De-Twist locations; no passability or seamless rendering claim.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S2-P34",
+      "filename": "GDC-2016-Modular-Level-Design-of-Fallout-4-34-320.jpg",
+      "url": "https://image.slidesharecdn.com/gdc16modularldfallout4-160319181438/85/GDC-2016-Modular-Level-Design-of-Fallout-4-34-320.jpg",
+      "sha256": "d15a5e789867ad49731b7edc088416081ea3279b56f11589666d2cbb33e4cb54",
+      "bytes": 10691,
+      "actual_image_viewed": true,
+      "observed_content": "Fixed pivot convention on original slide; technical reviewer image reading, author read related text only.",
+      "review_basis": "Independent technical reviewer personally viewed this original image; author image review did not include this page. Referenced, not redistributed."
+    },
+    {
+      "id": "S2-P40",
+      "filename": "GDC-2016-Modular-Level-Design-of-Fallout-4-40-320.jpg",
+      "url": "https://image.slidesharecdn.com/gdc16modularldfallout4-160319181438/85/GDC-2016-Modular-Level-Design-of-Fallout-4-40-320.jpg",
+      "sha256": "996b32291be7efd09d558279ac750e7b531da982842b7f1861c1738421aee74a",
+      "bytes": 11825,
+      "actual_image_viewed": true,
+      "observed_content": "Standardized transitions on original slide; technical reviewer image reading, author read related text only.",
+      "review_basis": "Independent technical reviewer personally viewed this original image; author image review did not include this page. Referenced, not redistributed."
+    },
+    {
+      "id": "S2-P86",
+      "filename": "GDC-2016-Modular-Level-Design-of-Fallout-4-86-320.jpg",
+      "url": "https://image.slidesharecdn.com/gdc16modularldfallout4-160319181438/85/GDC-2016-Modular-Level-Design-of-Fallout-4-86-320.jpg",
+      "sha256": "363ddf2f302d43ed6232a9c592a4d6715da541c5e7803ecca9974782abe484f7",
+      "bytes": 9818,
+      "actual_image_viewed": true,
+      "observed_content": "Separated floor, ceiling, wall pieces and corner with labels.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    },
+    {
+      "id": "S2-P96",
+      "filename": "GDC-2016-Modular-Level-Design-of-Fallout-4-96-320.jpg",
+      "url": "https://image.slidesharecdn.com/gdc16modularldfallout4-160319181438/85/GDC-2016-Modular-Level-Design-of-Fallout-4-96-320.jpg",
+      "sha256": "46c5ccc17ba9afda83adbbdaf1726c0fe0cce27be61d8cc42c72c614590cc81a",
+      "bytes": 9860,
+      "actual_image_viewed": true,
+      "observed_content": "Pack-In Prefab and Exploded Granular shown with a combination image.",
+      "review_basis": "Author and independent technical reviewer personally viewed this original image. Referenced, not redistributed."
+    }
+  ],
+  "original_method": "Port frames, assembly transform, restricted-kit phase invariant, five-piece route,0.2m defect branches and floor ownership are original examples. Required geometry and decisions remain in the article.",
+  "limits": "Actual developer text/image reading and original exact arithmetic only. No DCC, engine, source assets, collision, navigation, lighting, game or human testing. Original source image bytes not republished."
+}
