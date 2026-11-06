@@ -15,7 +15,7 @@
     "legacy_entries_remaining": 0,
     "accounted_for_original_items": 55,
     "physical_root_consolidation_complete": true,
-    "reader_books_total": 109
+    "reader_books_total": 110
   },
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -33,25 +33,26 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261106T062025Z-input-event-representation",
-  "last_real_progress_at": "2026-11-06T06:20:25Z",
-  "last_commit_sha": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
+  "last_run_id": "20261106T063500Z-weighted-transparency",
+  "last_real_progress_at": "2026-11-06T06:37:59Z",
+  "last_commit_sha": "601bf440e7652d3ab85da6dd27931ab9069ae032",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
-    "latest_verified_content_sha": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
-    "reader_books_total": 109,
-    "post_baseline_research_books": 54,
-    "scope": "Bounded existing fixed-step reader addition on application-side input representation loss, with original executed data-only script; no new book or device test.",
-    "status": "Accepted reader addition and reviewed evidence belong to containing commit; SHA fields record preceding verified publication."
+    "last_verified_head_sha": "601bf440e7652d3ab85da6dd27931ab9069ae032",
+    "latest_verified_content_sha": "601bf440e7652d3ab85da6dd27931ab9069ae032",
+    "reader_books_total": 110,
+    "post_baseline_research_books": 55,
+    "scope": "New bounded WBOIT reader with original executed rational checks, navigation and a reciprocal existing support entry. No shader, GPU or performance test.",
+    "status": "Accepted reader and reviewed evidence belong to containing commit; SHA fields record preceding verified publication."
   },
-  "next_action": "Deep-read McGuire/Bavoil Weighted Blended Order-Independent Transparency and its errata against existing premultiplied-alpha and triangle-order readers. Verify corrected accumulation, revealage and composition equations; decide whether a bounded exact-arithmetic counterexample warrants a distinct transparency topic. Do not claim GPU rendering or performance from a data model.",
+  "next_action": "Read the Microsoft Resource Leveling dialog documentation, Details > Leveling calculations > Look for overallocations on a basis, against the existing producer reader and supports. Assess a bounded explanation of day-versus-week capacity detection; do not repeat the existing GAO two-task resource-conflict example or create a new scheduling book.",
   "audit": {
     "status": "healthy",
-    "observed_snapshot": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
-    "observation_interval": "2026-11-06T06:16Z/2026-11-06T06:20Z",
-    "record": "管理档案/审查/输入事件表示-源码与数据审查.md",
+    "observed_snapshot": "601bf440e7652d3ab85da6dd27931ab9069ae032",
+    "observation_interval": "2026-11-06T06:23Z/2026-11-06T06:38Z",
+    "record": "管理档案/审查/加权透明混合-公式与读者审查.md",
     "related_records": [
+      "管理档案/审查/输入事件表示-源码与数据审查.md",
       "管理档案/审查/GameLift分配结果恢复-来源与读者审查.md",
       "管理档案/审查/惯性化动画曲线-来源与读者审查.md",
       "管理档案/审查/概念图背面外观-图文与读者审查.md",
@@ -72,7 +73,7 @@
       "管理档案/审查/督导/20261105T1645-镜头构图窗口-摘要.md",
       "管理档案/审查/督导/20261105T1853-MSDF距离范围-摘要.md"
     ],
-    "scope": "Independent bounded source and full-reader review; original unchanged sections retained. No SDL, OS/device collection, engine, game or human test; not a whole-library audit.",
+    "scope": "Independent bounded article, source and navigation review; original exact-arithmetic script independently executed. No engine, GPU, target API, performance or human test; not a whole-library semantic audit.",
     "consecutive_no_progress_checks": 0
   },
   "record_transformation": {
