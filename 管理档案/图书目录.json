@@ -3865,6 +3865,42 @@
         "https://www.4gamer.net/games/414/G041434/20260729025/"
       ],
       "source_scope": "Official slide16 principle; reported case details remain secondary evidence. No uninspected slide or game validation claimed."
+    },
+    {
+      "internal_id": "SOL-LOC-003",
+      "reader_title": "Unreal文本转成字符串再转回来，为什么切语言后仍不更新",
+      "floor": "本地化与无障碍",
+      "area": "本地化制作",
+      "shelf": "界面验证",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/Unreal文本转成字符串再转回来，为什么切语言后仍不更新.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/Unreal文本转成字符串再转回来，为什么切语言后仍不更新.md",
+      "reader_body_status": "published",
+      "editorial_status": "UE5.6官方文档与完整正文经独立审读；预览措辞修正及变量命名澄清复核通过，原创对照方案未执行。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/Unreal文本字符串往返-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/unreal-ftext-roundtrip.json",
+      "reader_sha256": "a78ed2c36524316879e1fcdff2ac2f77dd52be0e40cacbd0ce09131575c3907c",
+      "related_roles": [
+        "ROLE-LOC-001",
+        "ROLE-UX-001",
+        "ROLE-PROG-001"
+      ],
+      "related_disciplines": [
+        "PROG",
+        "ENGINE",
+        "QA"
+      ],
+      "updated_at": "2026-11-06",
+      "status": "source-backed",
+      "type": "solution",
+      "primary_discipline": "LOC",
+      "sources": [
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/text-localization-in-unreal-engine?application_version=5.6",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/ftext-in-unreal-engine?application_version=5.6",
+        "https://dev.epicgames.com/documentation/en-us/unreal-engine/managing-the-active-culture-at-runtime?application_version=5.6"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -3875,10 +3911,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "7e94f60b47c2f5693277430e515057bde07383a3",
+  "publication_base_sha": "4ec67a80fc02bb6abb3e79e60d1f94f023d6aa46",
   "accounted_for_original_items": 55,
-  "reader_books_total": 108,
-  "post_baseline_research_books": 53,
+  "reader_books_total": 109,
+  "post_baseline_research_books": 54,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",

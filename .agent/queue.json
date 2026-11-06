@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T03:02:54Z",
-      "next_action": "Develop the distinct UE5.6 FText-to-FString round-trip question after completed comparison with current localization readers. Preserve original FText versus cached display-string data flow, editor/non-editor limits, intentional invariant player names, and the separate text-marshalling exception. Draft a bounded reader or support with an unexecuted contrast scenario and independent review; do not insert unrelated runtime history into the context-change article.",
+      "last_progress_at": "2026-11-06T05:09:34Z",
+      "next_action": "Inspect a pinned public first-party Audiokinetic Unity localization test as a limited code-example candidate and compare existing audio readers. Do not infer SDK-wide language/reload semantics without exact-version primary documentation, and do not publish generic stale-resource advice.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -386,7 +386,9 @@
         "GameLibrary/本地化与无障碍/本地化制作/内容协作/本地化时，怎样避免不同角色说成同一种口气.md",
         "管理档案/来源笔记/localized-character-contrast.json",
         "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
-        "管理档案/来源笔记/umg-accessible-text.json"
+        "管理档案/来源笔记/umg-accessible-text.json",
+        "GameLibrary/本地化与无障碍/本地化制作/界面验证/Unreal文本转成字符串再转回来，为什么切语言后仍不更新.md",
+        "管理档案/来源笔记/unreal-ftext-roundtrip.json"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

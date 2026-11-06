@@ -1,0 +1,114 @@
+{
+  "id": "SOL-LOC-003",
+  "title": "Unreal文本转成字符串再转回来，为什么切语言后仍不更新",
+  "type": "solution",
+  "status": "source-backed",
+  "primary_discipline": "LOC",
+  "related_disciplines": [
+    "PROG",
+    "ENGINE",
+    "QA"
+  ],
+  "related_roles": [
+    "ROLE-LOC-001",
+    "ROLE-UX-001",
+    "ROLE-PROG-001"
+  ],
+  "updated_at": "2026-11-06",
+  "path": "GameLibrary/本地化与无障碍/本地化制作/界面验证/Unreal文本转成字符串再转回来，为什么切语言后仍不更新.md",
+  "sources": [
+    {
+      "author": "Epic Games",
+      "title": "Text Localization",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/text-localization-in-unreal-engine?application_version=5.6",
+      "version": "Unreal Engine 5.6",
+      "published_at": null,
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Opening text history and conversion discussion",
+        "Text Literals",
+        "Text Value Marshalling"
+      ],
+      "claims": [
+        "FText history supports culture-correct rebuilding; ordinary FString conversion loses that history.",
+        "Namespace and Key identify localizable text literals.",
+        "Text Value Marshalling is a separate information-preserving representation, not ordinary displayed-string conversion."
+      ],
+      "limits": [
+        "No complete marshalling API/compatibility tutorial or restricted-source inspection.",
+        "No claim that every string representation loses localization information."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "FText",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/ftext-in-unreal-engine?application_version=5.6",
+      "version": "Unreal Engine 5.6",
+      "published_at": null,
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "AsCultureInvariant introduction",
+        "Conversion",
+        "Using FText in User Interfaces"
+      ],
+      "claims": [
+        "ToString does not carry localization data; FromString does not reconstruct original localization data.",
+        "Non-editor FromString matches AsCultureInvariant; in editor it is not flagged invariant and may become localizable through saved-asset FText properties.",
+        "Intentional invariant display of an external player name is a supported use case."
+      ],
+      "limits": [
+        "Later localizability does not prove recovery of the original text identity.",
+        "No guarantee of every custom widget updating."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "Managing the Active Culture at Runtime",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/managing-the-active-culture-at-runtime?application_version=5.6",
+      "version": "Unreal Engine 5.6",
+      "published_at": null,
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Querying and Applying Cultures",
+        "Localization Preview"
+      ],
+      "claims": [
+        "Language chooses localization data; locale controls numeric/date/time formatting.",
+        "PIE/UMG localization previews load localization data without changing language/locale settings; standalone is recommended for runtime representation."
+      ],
+      "limits": [
+        "Standalone launched from the Editor is not automatically a non-editor build.",
+        "No project culture settings, translation packaging or load success verified."
+      ]
+    }
+  ],
+  "comparison": {
+    "baseline": "4ec67a80fc02bb6abb3e79e60d1f94f023d6aa46",
+    "paths": [
+      "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md",
+      "GameLibrary/本地化与无障碍/本地化制作/内容协作/本地化时，怎样避免不同角色说成同一种口气.md"
+    ],
+    "decision": "Distinct runtime text-data problem; use existing interface-verification shelf rather than expand unrelated context-change editing article.",
+    "search_limits": "Tree title scan and GitHub searches FText/FString/culture returned no prior match; this is not proof of exhaustive absence."
+  },
+  "original_scenario": {
+    "execution": "Unexecuted contrast plan, no engine compilation or runtime.",
+    "setup": "One prompt with two already-available translations and a working retained-FText baseline. The data-layer FString snapshot outlives the panel and is not refreshed on reopen.",
+    "cases": [
+      "A retains original FText with resource/widget conditions.",
+      "B wraps the same old display snapshot with FromString; no original identity restoration.",
+      "C uses fictional invariant player name Rin_42, intentionally unchanged."
+    ],
+    "limits": [
+      "Snapshot is a FString variable name, not the FTextSnapshot helper type.",
+      "No measured UI behavior, performance or human outcome.",
+      "If A also fails, investigate language/resources/widget updates before assigning the cause to conversion."
+    ]
+  },
+  "reader_review_corrections": [
+    "Made PIE/UMG preview non-change of language/locale explicit.",
+    "Separated Snapshot variable from FTextSnapshot type."
+  ],
+  "third_party_assets_redistributed": false
+}
