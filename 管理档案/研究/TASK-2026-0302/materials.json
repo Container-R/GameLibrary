@@ -1,0 +1,88 @@
+{
+  "task_id": "TASK-2026-0302",
+  "base_commit": "72f8d104f938225cbd57b0bd9008ea74ffde9dde",
+  "article_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+  "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+  "historical_materials": [
+    {
+      "path": ".agent/runs/20261106T072715Z-unity-chunk-change-filter.json",
+      "sha256": "24a0484c9187fd5bb88f080fa446e656160204144746518eb9719d61c90e0ad0",
+      "git_blob_sha1": "20d1dc6356349c36c75ed6b925f011928e8890c9",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/EnTT更新通知-来源与结果审查.md",
+      "sha256": "eb54fb9731adf02e3f10c0c5d053df62414b1b56a736d9dffa77d9bdbbcc5529",
+      "git_blob_sha1": "9ad4a0789bdf35c44f6824cdcff7757abac9f27a",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/Factorio缓存-独立审读.md",
+      "sha256": "1ce797b7838a87f88ef826e7bc77305e1515207b3f1d851ff6e5442b5d5884c1",
+      "git_blob_sha1": "f17211e00f60aa872ce1bbf6081c977090357889",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/Unity块变化过滤-来源与读者审查.md",
+      "sha256": "85e2b0eda96f8e44373893d2c59e62fb9b429976d321a54b32ebd213def9551a",
+      "git_blob_sha1": "689edd1a1bebe7e41d048df755db202099bf44b5",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/审查/失同步报告转换-来源与读者审查.md",
+      "sha256": "5360bfb216c71146d9bedb412f49c3b35300a4c933d51d936b6fdff5eea874f6",
+      "git_blob_sha1": "62cfb248a6df165b4a5daa81c75fe95fb160744d",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+      "sha256": "e1fe06ac043e921cb53f85462b3070c4e54f59c10991082089cc08339ffbd153",
+      "git_blob_sha1": "b78b293f7cd3ccad0c0ca6e0fe241b73e6715267",
+      "unchanged_in_this_batch": false
+    },
+    {
+      "path": "管理档案/支持资料/entt-update-notification/README.md",
+      "sha256": "42a6ba6a803543c8f3654beedf7264ee3b8390021a9ab2002045adebb316ba17",
+      "git_blob_sha1": "7060dddc9406ee4336b89fd8f01c2dc79e507d41",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
+      "sha256": "c4bb6e148c101f133a8353a5e8c9bbbef2a22e9702f00e6da37675a06b86e18c",
+      "git_blob_sha1": "f161d6be8a202c7629222b6d4959ade756e033c4",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/来源笔记/entt-update-notification.json",
+      "sha256": "a84c70883a9ebb096de1e2f4c7748da4f4223725e5e633ba089cf468d62547d0",
+      "git_blob_sha1": "433778ae27ce4a43e0df6266325cced784fd068d",
+      "unchanged_in_this_batch": true
+    },
+    {
+      "path": "管理档案/来源笔记/unity-chunk-change-filter.json",
+      "sha256": "9df5f287dc5afb0803099b7d13c8285e88adc67c67f93f5d430a214e5886d655",
+      "git_blob_sha1": "1a793bd1b917777e27e2faa9d4aff67c85dd8b77",
+      "unchanged_in_this_batch": true
+    }
+  ],
+  "original_assets": [
+    {
+      "path": "管理档案/研究/TASK-2026-0302/examples/SelectiveMoveCache.cs",
+      "sha256": "992e502ed7265371ab6804a5bdd9d638a882989d1fda11189e573c1efca6d526",
+      "bytes": 8498
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0302/examples/refresh-stages.svg",
+      "sha256": "2fa1f24dbf693bd5ac03515f23d08353f9ebd26734014145778151839c498094",
+      "bytes": 5735
+    }
+  ],
+  "asset_scope": "Original complete C# example and SVG. C# is uncompiled and unexecuted. SVG was actually rendered and inspected, not an engine trace.",
+  "retired_support": {
+    "path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+    "previous_sha256": "e1fe06ac043e921cb53f85462b3070c4e54f59c10991082089cc08339ffbd153",
+    "index_sha256": "ba403abde51a41728da8cd8523edf4680a71156ee325c3d591f514bf0695a108",
+    "fixed_original": "https://github.com/Container-R/GameLibrary/blob/72f8d104f938225cbd57b0bd9008ea74ffde9dde/管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md"
+  },
+  "limits": "One finite method and the existing optional Unity reading relation. Factorio case, EnTT evidence and unrelated historical tasks remain unchanged except the declared link paragraph. No whole-library acceptance."
+}

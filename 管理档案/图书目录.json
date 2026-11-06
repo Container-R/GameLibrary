@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "a6ae5f488ab280fc45076bb9c447e2f5591a07ec",
+  "publication_base_sha": "72f8d104f938225cbd57b0bd9008ea74ffde9dde",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -2862,10 +2862,11 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/cc99dab476ab93db828afed227eb88b93574fcde/case-studies/engine/factorio-derived-cache-load-equivalence.md",
       "old_path_history_commit": "cc99dab476ab93db828afed227eb88b93574fcde",
-      "reader_sha256": "2c014974d27072606dffe7230c309301e14d6b1be554ec849d5ebe684ec6c5a0",
+      "reader_sha256": "5d83ff7ace0a19452a2dbf673e15ce7d8b33007dddfa003156020c3176e0ea37",
       "review_paths": [
         "管理档案/审查/EnTT更新通知-来源与结果审查.md",
-        "管理档案/审查/Unity块变化过滤-来源与读者审查.md"
+        "管理档案/审查/Unity块变化过滤-来源与读者审查.md",
+        "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json"
       ],
       "entt_update_support": {
         "path": "管理档案/支持资料/改了组件字段，为什么缓存还没收到更新通知.md",
@@ -2880,12 +2881,36 @@
       },
       "updated_at": "2026-11-06",
       "unity_chunk_change_support": {
-        "support_path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
-        "support_sha256": "e1fe06ac043e921cb53f85462b3070c4e54f59c10991082089cc08339ffbd153",
-        "source_record": "管理档案/来源笔记/unity-chunk-change-filter.json",
-        "review": "管理档案/审查/Unity块变化过滤-来源与读者审查.md",
-        "scope": "Optional source-backed Entities 1.3.15 chunk/type change-filter explanation and original stable-chunk integer-speed example; no Unity execution or inherited EnTT evidence."
-      }
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+        "current_review": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json",
+        "historical_record": {
+          "support_path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+          "support_sha256": "e1fe06ac043e921cb53f85462b3070c4e54f59c10991082089cc08339ffbd153",
+          "source_record": "管理档案/来源笔记/unity-chunk-change-filter.json",
+          "review": "管理档案/审查/Unity块变化过滤-来源与读者审查.md",
+          "scope": "Optional source-backed Entities 1.3.15 chunk/type change-filter explanation and original stable-chunk integer-speed example; no Unity execution or inherited EnTT evidence."
+        },
+        "path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+        "material_index_sha256": "ba403abde51a41728da8cd8523edf4680a71156ee325c3d591f514bf0695a108",
+        "pre_retirement_body_sha256": "e1fe06ac043e921cb53f85462b3070c4e54f59c10991082089cc08339ffbd153",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/72f8d104f938225cbd57b0bd9008ea74ffde9dde/管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+        "scope": "Former developer-facing support becomes an index. The complete current method has its own full reviews; historical identities remain intact."
+      },
+      "latest_link_revision": {
+        "previous_reader_sha256": "2c014974d27072606dffe7230c309301e14d6b1be554ec849d5ebe684ec6c5a0",
+        "current_reader_sha256": "5d83ff7ace0a19452a2dbf673e15ce7d8b33007dddfa003156020c3176e0ea37",
+        "review": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json",
+        "scope": "Only one optional Unity relation paragraph. No new certification of other case-study conclusions."
+      },
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-ENGINE-014",
+          "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+          "review": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json",
+          "relationship": "From dependency validity and legal reading times to a bounded Unity query/job refresh protocol."
+        }
+      ]
     },
     {
       "internal_id": "CASE-ENGINE-002",
@@ -5209,7 +5234,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Object family action capabilities/current conditions, operation selection, cue and result semantics, disclosure, diagnosis and variant checks. Unexecuted original design method, not a proven player-effect claim."
+    },
+    {
+      "internal_id": "SOL-ENGINE-014",
+      "reader_title": "Unity Entities中派生组件的选择性刷新",
+      "discipline": "引擎与工具",
+      "direction": "运行时系统",
+      "topic": "缓存与存档",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+      "current_read_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+      "reader_body_status": "published",
+      "reader_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+      "editorial_status": "完整有限方法经独立全文技术、读者任务与根入口导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0302/sources.json",
+      "source_sha256": "f5a04cdfaaea1abbaccf67fb60a0618264924c2efb03435265e49ad6cc35a46d",
+      "materials_record": "管理档案/研究/TASK-2026-0302/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0302/范围与保留.md",
+      "related_article_ids": [
+        "CASE-ENGINE-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Complete-domain pure derived state, chunk version skipping, explicit invalidation and synchronous phase/read-gate protocol. Fixed Entities1.3.15 source explanation and unexecuted original C#; no performance claim."
     }
   ],
-  "current_batch_scope": "One complete object-interaction method and bounded old support migration; no whole-library acceptance."
+  "current_batch_scope": "One complete Unity derived-component refresh method and bounded historical support migration; no whole-library acceptance."
 }

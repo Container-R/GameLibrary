@@ -10395,15 +10395,40 @@
       "reader": "熟悉 Unity Entities 基本组件、系统和作业的玩法与引擎开发者。",
       "scope": "Compare existing ECS/cache articles and historical chunk-change support, trace fixed implementation and identify a complete bounded refresh method. Do not turn one API warning into a purported full method or claim engine/performance results without execution.",
       "expected_outcome": "A nonduplicate source-backed method scope and reader task, followed by full technical writing and independent reviews if evidence is sufficient.",
-      "next_action": "Scope the distinct chunk-change derived-data refresh method against current ECS articles and fixed primary implementation; complete a bounded method only after its production problem and necessary lifecycle conditions are supported.",
+      "next_action": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0302/sources.json",
+        "管理档案/研究/TASK-2026-0302/materials.json",
+        "管理档案/研究/TASK-2026-0302/范围与保留.md",
+        "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T19:35:04Z",
+      "related_task_ids": [
+        "TASK-2026-0301"
+      ],
+      "article_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+      "review": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0303",
+      "question": "音效请求突发时，怎样在创建前控制重复与层数，并在真实、虚拟和终止状态之间正确管理播放额度？",
+      "reader": "运行时音频程序员和技术音频设计师。",
+      "scope": "A bounded FMOD Core control-side method for fixed loaded PCM resources and a single playback owner. Compare existing recovery/scheduling methods, account for admission, resource limits and terminal cleanup; do not infer sound quality or resource savings from counts.",
+      "expected_outcome": "A complete source-backed request-to-terminal method with an independent reader task, full technical/reader/navigation reviews and bounded former priority-support disposition.",
+      "next_action": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication.",
       "phase": "researching",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T18:59:23Z",
+      "updated_at": "2026-11-06T19:35:04Z",
       "related_task_ids": [
-        "TASK-2026-0301"
+        "TASK-2026-0302"
       ]
     }
   ],
@@ -10411,7 +10436,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Scope the distinct chunk-change derived-data refresh method against current ECS articles and fixed primary implementation; complete a bounded method only after its production problem and necessary lifecycle conditions are supported."
+    "next_priority": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

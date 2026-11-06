@@ -1,0 +1,95 @@
+{
+  "article_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+  "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+  "publication_kind": "complete-unity-derived-state-refresh-method",
+  "verdict": "pass",
+  "author": "GameLibrary editorial author",
+  "reviews": [
+    {
+      "reviewer": "Independent model technical reviewer",
+      "role": "technical",
+      "verdict": "pass",
+      "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+      "scope": "Full article and C#; actual SVG rendering; key claims checked against fixed source mirror and official documentation. Independent lifecycle and failure counterexamples. No Unity execution.",
+      "report": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.md"
+    },
+    {
+      "reviewer": "Independent model reader reviewer",
+      "role": "reader",
+      "verdict": "pass",
+      "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+      "scope": "Full article and explicit assets only; six practical cases and independent clustered-versus-scattered cost decision. Rendered diagram inspected. No source audit or runtime test.",
+      "report": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.md"
+    },
+    {
+      "reviewer": "Independent model navigation and application reviewer",
+      "role": "navigation",
+      "verdict": "pass",
+      "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+      "scope": "Root-to-article blind route and returns, full article and explicit assets, independent turret-cache task; bounded final topic revision recheck is not a second blind test. Adjacent EnTT classification debt remains separate.",
+      "report": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.md"
+    }
+  ],
+  "asset_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0302/examples/SelectiveMoveCache.cs",
+      "sha256": "992e502ed7265371ab6804a5bdd9d638a882989d1fda11189e573c1efca6d526",
+      "bytes": 8498
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0302/examples/refresh-stages.svg",
+      "sha256": "2fa1f24dbf693bd5ac03515f23d08353f9ebd26734014145778151839c498094",
+      "bytes": 5735
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0302/sources.json",
+      "sha256": "f5a04cdfaaea1abbaccf67fb60a0618264924c2efb03435265e49ad6cc35a46d"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0302/materials.json",
+      "sha256": "a7d4b03ea12db12000fefa75816ccc5ea024f59b03e423c55e734fb91cfdbbd8"
+    }
+  ],
+  "report_sha256": "6f7935306cd508bbb29e18a89266593efb6e6071ba822cdc14a23a06d155b2b1",
+  "scope_record": "管理档案/研究/TASK-2026-0302/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "c5c630b017d46d6c1ce785ed7ce28fcd2497437899e6c777f71907eefa26ec99"
+    },
+    {
+      "path": "GameLibrary/引擎与工具/README.md",
+      "sha256": "0c6a464f51867bff66cac92de0297e2d47197cdfc79d948427a4697a57af64dc"
+    },
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/README.md",
+      "sha256": "771eb9bb3ac72ea66d437f6f1f57963c42e63e32f33608fa9dcf4c6dc6d34f1f"
+    },
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/README.md",
+      "sha256": "14350bd9d585b6d43d5fdfb367e53eefb9fb9aa3d8047949feb6e163da36f7e2"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+      "sha256": "ba403abde51a41728da8cd8523edf4680a71156ee325c3d591f514bf0695a108"
+    }
+  ],
+  "host_revisions": [
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+      "previous_sha256": "2c014974d27072606dffe7230c309301e14d6b1be554ec849d5ebe684ec6c5a0",
+      "sha256": "5d83ff7ace0a19452a2dbf673e15ce7d8b33007dddfa003156020c3176e0ea37",
+      "scope": "Only the optional Unity reading paragraph changes; historical Factorio and EnTT claims are not recertified."
+    }
+  ],
+  "limits": "Independent model full reviews, source-based uncompiled C# and original rendered diagram. No native runtime, performance, human test or whole-library acceptance.",
+  "updated_at": "2026-11-06T19:35:04Z"
+}

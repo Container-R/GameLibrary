@@ -1,0 +1,105 @@
+{
+  "task_id": "TASK-2026-0302",
+  "article_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
+  "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "reference": 1,
+      "description": "Unity Technologies，Entities 包身份。[package.json](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/package.json)：自报 `com.unity.entities 1.3.15`、Unity 2022.3 / 20f1、内部来源 revision。官方 [Implement IJobChunk](https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/iterating-data-ijobchunk-implement.html) 的同日元数据与之相容；未核对官方安装包签名。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/package.json",
+        "https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/iterating-data-ijobchunk-implement.html"
+      ]
+    },
+    {
+      "reference": 2,
+      "description": "Unity Technologies，[EntityQuery filters](https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/systems-entityquery-filters.html#use-a-change-filter)，Use a change filter。固定实现：[ArchetypeChunk.GetNativeArray](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ArchetypeChunkArray.cs#L1716-L1745) 与 [ChunkDataUtility.GetOptionalComponentDataWithTypeRW](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L182-L205)：读写分流及取得地址时设置版本。",
+      "urls": [
+        "https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/systems-entityquery-filters.html#use-a-change-filter",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ArchetypeChunkArray.cs#L1716-L1745",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L182-L205"
+      ]
+    },
+    {
+      "reference": 3,
+      "description": "Unity Technologies，固定源码 [SystemState.BeforeUpdateVersioning / AfterUpdateVersioning](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L453-L471)、[BeforeOnUpdate / AfterOnUpdate](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L582-L606)、[SystemBase.Update](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemBase.cs#L390-L455)、[ChangeVersionUtility.DidChange](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChangeVersionUtility.cs#L15-L34)。这些实现共同支持消费者窗口、提前返回和停止过渡的说明；不是逐实体完成记录。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L453-L471",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L582-L606",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemBase.cs#L390-L455",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChangeVersionUtility.cs#L15-L34"
+      ]
+    },
+    {
+      "reference": 4,
+      "description": "Unity Technologies，固定包文档 [System groups](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/systems-update-order.md)，Creation order、Update order、System ordering attributes。只使用文字规定，不采用其中编辑器截图作为观察依据。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/systems-update-order.md"
+      ]
+    },
+    {
+      "reference": 5,
+      "description": "Unity Technologies，固定源码 [EntityManager.CompleteAllTrackedJobs](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/EntityManager.cs#L4209-L4217)：等待当前世界已登记作业，阻塞主线程。本文只在有生命周期修改的边界使用这项保守同步，不声称它等待任何未登记的外部工作。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/EntityManager.cs#L4209-L4217"
+      ]
+    },
+    {
+      "reference": 6,
+      "description": "Unity Technologies，固定源码 [ChunkDataUtility.Allocate](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L915-L929)、[原地 archetype 调整](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L1085-L1102)、[CloneChangeVersions](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L1191-L1232)。用于区分普通新建与可能保留共同类型版本的路径，不是全部加载、克隆和结构变更流程审计。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L915-L929",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L1085-L1102",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ChunkDataUtility.cs#L1191-L1232"
+      ]
+    },
+    {
+      "reference": 7,
+      "description": "Unity Technologies，固定包文档 [Implement IJobChunk](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/iterating-data-ijobchunk-implement.md)，ComponentTypeHandle fields、Schedule the job、Skipping chunks；固定源码 [ComponentTypeHandle.Update](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ArchetypeChunkArray.cs#L2695-L2718)、[SystemState.Dependency](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L392-L426)、[IJobChunk.ScheduleParallel](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/IJobChunk.cs#L163-L182)及其[调度实现](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/IJobChunk.cs#L279-L336)。句柄、数组对应关系和依赖登记的依据。原包[示例](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/DocCodeSamples.Tests/JobChunkExamples.cs#L189-L240)存在输出只读标记与后续写入不一致，本文未照搬该声明。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/iterating-data-ijobchunk-implement.md",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ArchetypeChunkArray.cs#L2695-L2718",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/SystemState.cs#L392-L426",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/IJobChunk.cs#L163-L182",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/IJobChunk.cs#L279-L336",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/DocCodeSamples.Tests/JobChunkExamples.cs#L189-L240"
+      ]
+    },
+    {
+      "reference": 8,
+      "description": "Unity Technologies，固定源码 [EntityQuery 过滤重置](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQuery.cs#L1590-L1601)、[SetChangedVersionFilter / AddChangedVersionFilter](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQuery.cs#L1654-L1695)、[两个类型的容量](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQueryFilter.cs#L10-L35)、[MatchingArchetype.ChunkMatchesFilter](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQueryManager.cs#L1373-L1410)。进入 Execute 之前跳过过滤不匹配块的合约，见 [IJobChunk 固定文档](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/iterating-data-ijobchunk-implement.md#the-unfilteredchunkindex-parameter)。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQuery.cs#L1590-L1601",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQuery.cs#L1654-L1695",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQueryFilter.cs#L10-L35",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/EntityQueryManager.cs#L1373-L1410",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/iterating-data-ijobchunk-implement.md#the-unfilteredchunkindex-parameter"
+      ]
+    },
+    {
+      "reference": 9,
+      "description": "Unity Technologies，固定包文档 [Use enableable components](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/components-enableable-use.md)，Querying enableable components；固定源码 [ChunkEntityEnumerator](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ChunkEntityEnumerator.cs#L22-L60)。它们支持匹配与遍历的机制；域重入需要重建是本文从消费窗口推导的集成要求。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Documentation~/components-enableable-use.md",
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/Iterators/ChunkEntityEnumerator.cs#L22-L60"
+      ]
+    },
+    {
+      "reference": 10,
+      "description": "Unity Technologies，固定源码 [ComponentSystemGroup.UpdateAllSystems](https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ComponentSystemGroup.cs#L692-L733)：捕获子系统异常并记录，随后继续更新。异常不自动建立本项目的有效性或回滚语义。",
+      "urls": [
+        "https://github.com/needle-mirror/com.unity.entities/blob/c5c05da45c71c388896c7895b15c3aa96bf9fbe4/Unity.Entities/ComponentSystemGroup.cs#L692-L733"
+      ]
+    }
+  ],
+  "version": {
+    "package": "com.unity.entities",
+    "version": "1.3.15",
+    "source_mirror": "needle-mirror/com.unity.entities",
+    "source_commit": "c5c05da45c71c388896c7895b15c3aa96bf9fbe4",
+    "provenance": "Third-party mirror of Unity package sources, corroborated with official mutable @1.3 documentation reporting 1.3.15. No official package signature or installation attestation."
+  },
+  "original_work": "Pure movement-derived-state example, complete-domain refresh protocol, phase ownership and read gate, lifecycle requests, original C# and SVG, diagnosis and cost comparison.",
+  "limits": "Source reading, model reasoning and actual original SVG inspection. No C# compilation, Unity execution, upstream test execution, game, device performance or participant study."
+}
