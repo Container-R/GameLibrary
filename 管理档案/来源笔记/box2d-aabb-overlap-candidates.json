@@ -1,0 +1,125 @@
+{
+  "reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "reader_section": "范围查询回调，不一定是形状已经相交",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "upstream_version": "Box2D v3.2.0",
+  "upstream_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "scope": "Existing physical-detection chapter, current AABB candidate versus shape-overlap geometry; no new book or runtime observation.",
+  "sources": [
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/box2d.h",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "include/box2d/box2d.h",
+      "blob_sha": "64d77f244e098aa6177ffbea996f99d649f06c69",
+      "locator": "75–86 AABB/shape-overlap API and origin-relative input",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/physics_world.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/physics_world.c",
+      "blob_sha": "6b001ffb2d83c137370bd38d96342ff0567c582d",
+      "locator": "2382–2454 AABB path; 2466–2547 shape distance, radii, tolerance and candidate path",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/shape.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/shape.c",
+      "blob_sha": "7d40992ab100ca319e7388ad27503152d236292c",
+      "locator": "89–104 shape and fat AABB; 1131–1142 proxy creation",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/dynamic_tree.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/dynamic_tree.c",
+      "blob_sha": "a4c2eccce4463fa3db80a7eba9430c4efe5c73d6",
+      "locator": "580–595 proxy creation; 884–945 tree AABB callback",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/broad_phase.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/broad_phase.c",
+      "blob_sha": "229b804ceefd94c23b264663a692c29da8d98257",
+      "locator": "55–66 passing bounds to tree",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/simulation.md",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "docs/simulation.md",
+      "blob_sha": "f462d72fc2d0ad3004b24147b22b0ba962252287",
+      "locator": "1953–2002 AABB/shape overlap use cases and proxy",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/geometry.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/geometry.c",
+      "blob_sha": "5c7463bb01b08b010b65b387f802bf3e42a4b689",
+      "locator": "430–451 polygon fat AABB",
+      "read_on": "2026-11-06"
+    }
+  ],
+  "paper_example": {
+    "triangle_vertices": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "triangle_radius": 0,
+    "query_x_y_interval": [
+      3,
+      3.5
+    ],
+    "query_radius": 0,
+    "triangle_tight_aabb": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "nearest_points": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "squared_distance": 2,
+    "reason": "Triangle x+y<=4 versus query x+y>=6; closest pair lies along perpendicular to x+y=4. False positive exists even without fat AABB enlargement.",
+    "execution": "Original stationary geometry only; no world or query executed."
+  },
+  "limitations": [
+    "AABB callback is not a shape intersection or damage decision.",
+    "Shape overlap first requires candidate and query filter, then uses distance tolerance 0.1*B2_LINEAR_SLOP, not exact mathematical intersection.",
+    "Shape radius, tree margin and distance tolerance are distinct.",
+    "No compilation, engine, game, visual, performance or human test; earlier sensor native observations remain separate."
+  ]
+}

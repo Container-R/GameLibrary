@@ -33,25 +33,26 @@
     "model_selection": "管理档案/工具/models/run_model_tests.py",
     "reader_outlink_checker": "管理档案/工具/library/check_reader_links.py"
   },
-  "last_run_id": "20261106T080407Z-shadow-compare-filter",
-  "last_real_progress_at": "2026-11-06T08:06:01Z",
-  "last_commit_sha": "c3b162f73ff7b5b1e4f7316ecbd038f7c59ac51c",
+  "last_run_id": "20261106T081609Z-box2d-aabb-overlap",
+  "last_real_progress_at": "2026-11-06T08:21:26Z",
+  "last_commit_sha": "97d424158fb776bc59515274f35abe0a0e9503e3",
   "blockers": [],
   "publication": {
-    "last_verified_head_sha": "c3b162f73ff7b5b1e4f7316ecbd038f7c59ac51c",
-    "latest_verified_content_sha": "c3b162f73ff7b5b1e4f7316ecbd038f7c59ac51c",
+    "last_verified_head_sha": "97d424158fb776bc59515274f35abe0a0e9503e3",
+    "latest_verified_content_sha": "97d424158fb776bc59515274f35abe0a0e9503e3",
     "reader_books_total": 111,
     "post_baseline_research_books": 56,
-    "scope": "Optional existing-graphics support distinguishes filtering comparison results, comparing filtered depth and unweighted averaging. No new book or runtime test.",
+    "scope": "Existing physical-detection chapter gains current AABB versus shape-overlap decision; no new canonical book or runtime test.",
     "status": "Accepted reader addition and reviewed evidence belong to containing commit; SHA fields record preceding verified publication."
   },
-  "next_action": "Compare existing physical detection, group-filter, convex-distance and uniform-grid readers with fixed Box2D broadphase-overlap contracts. Determine whether AABB candidates versus exact shape overlap presents a distinct useful decision; do not duplicate CCD/filter coverage or infer world execution, damage semantics or broadphase bounds without source.",
+  "next_action": "Compare existing music switching, composer role, transition-entry, ramp and audio-clock readers against official musical-boundary condition evaluation. Add only a distinct version-supported decision; do not duplicate request/commit/observation timing or infer playback from a paper timeline.",
   "audit": {
     "status": "healthy",
-    "observed_snapshot": "c3b162f73ff7b5b1e4f7316ecbd038f7c59ac51c",
-    "observation_interval": "2026-11-06T07:58Z/2026-11-06T08:06Z",
-    "record": "管理档案/审查/阴影比较过滤-来源与读者审查.md",
+    "observed_snapshot": "97d424158fb776bc59515274f35abe0a0e9503e3",
+    "observation_interval": "2026-11-06T08:08Z/2026-11-06T08:21Z",
+    "record": "管理档案/审查/Box2D范围查询-来源与读者审查.md",
     "related_records": [
+      "管理档案/审查/阴影比较过滤-来源与读者审查.md",
       "管理档案/审查/Box2D凸距离-源码与读者审查.md",
       "管理档案/审查/D3D12资源别名-来源与读者审查.md",
       "管理档案/审查/Unity块变化过滤-来源与读者审查.md",
@@ -82,7 +83,7 @@
       "管理档案/审查/督导/20261105T1645-镜头构图窗口-摘要.md",
       "管理档案/审查/督导/20261105T1853-MSDF距离范围-摘要.md"
     ],
-    "scope": "Independent bounded reader, navigation and two fixed Microsoft comparison-sampling documents. No GPU, image, performance, engine or human test; not a whole-library audit.",
+    "scope": "Independent bounded new-section, navigation, selected fixed Box2D sources and original geometry review. Existing sensor native evidence not rerun or recertified; no engine, game, visual, performance or human test.",
     "consecutive_no_progress_checks": 0
   },
   "record_transformation": {
