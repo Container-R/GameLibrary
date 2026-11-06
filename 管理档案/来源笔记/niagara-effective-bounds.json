@@ -1,0 +1,124 @@
+{
+  "id": "SUPPORT-VFX-BOUNDS-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/视觉特效/特效制作/性能分析/拆分测量Niagara实例与模拟和像素成本.md",
+  "scope": "Existing UE5.6 reader addition: identify effective bounds, then compare one fixed-box variable. Not a new book or a reproduced bug.",
+  "sources": [
+    {
+      "author": "Epic Games",
+      "title": "NiagaraEmitterCalculateBoundMode",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraEmitterCalculateBoundMode?application_version=5.6",
+      "version": "Unreal Python 5.6 (Experimental) documentation",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "DYNAMIC",
+        "FIXED",
+        "PROGRAMMABLE"
+      ],
+      "claims": [
+        "Dynamic is calculated each frame and available only for CPU emitters.",
+        "Fixed uses emitter fixed bounds; Programmable must receive script/blueprint bounds or emitter has no bounds."
+      ],
+      "limits": [
+        "No complete GPU support claim for Programmable or other versions.",
+        "No Python API execution."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "VersionedNiagaraEmitterData",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/VersionedNiagaraEmitterData?application_version=5.6",
+      "version": "5.6",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "calculate_bounds_mode",
+        "fixed_bounds"
+      ],
+      "claims": [
+        "Emitter fields are greyed and ignored when System Properties fixed bounds are enabled."
+      ],
+      "limits": [
+        "No extrapolated complete ordering among every instance setter and asset option."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "NiagaraComponent",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraComponent?application_version=5.6",
+      "version": "5.6",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "set_system_fixed_bounds",
+        "get_system_fixed_bounds",
+        "set_emitter_fixed_bounds"
+      ],
+      "claims": [
+        "System-instance fixed bounds override other bounds and expect a local-space box.",
+        "Getter returns user or system fixed bounds and may be invalid if no fixed bounds exist.",
+        "Emitter-instance fixed bounds are another override to inspect; no total precedence order between setters inferred."
+      ],
+      "limits": [
+        "Getter is not presented as a general dynamic bounds query.",
+        "No project call order or engine implementation inspected.",
+        "bounds_scale inherited description only specifies StaticMeshComponent and SkeletalMeshComponent; no Niagara bounds-scale repair prescribed."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "NiagaraSystemVisibilityCullingSettings",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraSystemVisibilityCullingSettings?application_version=5.6",
+      "version": "5.6",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "allow_pre_culling_by_view_frustum",
+        "cull_by_view_frustum",
+        "cull_when_not_rendered",
+        "max_time_outside_view_frustum",
+        "max_time_without_render"
+      ],
+      "claims": [
+        "Independent view-frustum pre-culling can prevent offscreen system spawning and requires fixed bounds.",
+        "CullWhenNotRendered depends on rendering feedback and cannot pre-cull; each rule has a time threshold."
+      ],
+      "limits": [
+        "Do not treat all disappearance as one culling mechanism."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "Niagara Debugger",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/niagara-debugger-for-unreal-engine?application_version=5.6",
+      "version": "5.6",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Debug Filters",
+        "Debug System"
+      ],
+      "claims": [
+        "A matching enabled filter is required for system detail display; System Show Bounds shows system bounds.",
+        "Basic/Verbose shows scalability culling reasons; disabling Active Only displays scalability-culled systems."
+      ],
+      "limits": [
+        "Text only, no example screenshots inspected.",
+        "HUD is not claimed to report every renderer culling reason."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "960c445be0268d0e255ca3b71757d847439dee70",
+    "decision": "Existing bounds discussion already covers cost/size tradeoff; add exact mode and override limits plus an original controlled diagnostic.",
+    "new_book": false
+  },
+  "original_scenario": {
+    "execution": "Unexecuted",
+    "description": "Start a simple CPU smoke jet visible, then move the camera along one fixed path so the origin leaves view while particles should remain visible. Compare two fixed boxes at the same confirmed effective level, changing no other settings.",
+    "limits": [
+      "No engine run, API calls, GPU comparison, frame capture or human test.",
+      "Improvement would support bounds involvement, not unique-cause proof.",
+      "A later CPU Dynamic comparison must exclude both system-fixed and emitter-instance-fixed overrides and is not combined with CPU/GPU change."
+    ]
+  },
+  "third_party_assets_redistributed": false,
+  "reader_review_correction": "Added emitter-instance fixed override inspection before a later CPU Dynamic comparison; did not invent a total setter precedence order."
+}

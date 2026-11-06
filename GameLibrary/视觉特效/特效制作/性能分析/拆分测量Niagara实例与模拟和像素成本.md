@@ -70,6 +70,25 @@ Niagara Debugger 能确认实例、粒子和包围范围，FX Outliner 的性能
 
 对于跨越大段场景的轨迹，可以比较适当的生命周期分段、坐标空间或动态策略；不要先用一个覆盖整条路线的大盒，便宣称固定范围一定更快。记录选择依据，关闭调试显示后再计时。
 
+### UE5.6：改范围前，先确认实际生效的是哪一个盒
+
+如果烟雾的出生点已经离开画面，飘出的粒子却还应该可见，先检查实际用于判断可见性的范围，不要只盯着出生点。也不要看到 Emitter 的 Fixed Bounds 数值已经改大，就认定运行实例一定用了这个盒。
+
+在 UE5.6 的属性文档中，System Properties 启用固定范围时，Emitter 的范围设置会灰显并被忽略。[10] 运行时还可能有实例覆盖：`set_system_fixed_bounds` 设置系统实例的固定范围，文档说明它会覆盖其他范围，而且传入的是**局部空间**盒，不是世界坐标盒。[11] 因此，应先查系统资产，以及项目中设置系统和发射器实例范围的调用（包括 `set_emitter_fixed_bounds`），再决定修改哪里；这里不把两个实例设置函数拼成未经核实的完整优先级表。读取 `get_system_fixed_bounds` 只能帮助检查固定范围；没有固定范围时返回盒可能无效，不能把它当成通用的动态范围查询。[11]
+
+模式名称也不能代替版本条件。5.6 枚举把 Dynamic 定义为逐帧计算，并明确仅用于 CPU 发射器；Fixed 使用发射器的固定范围；Programmable 要由脚本或蓝图提供，未提供时发射器没有范围。[9] 所以“GPU 效果消失，改成 Dynamic 就好”不是本页支持的修法。这里也不据此推断其他版本或 Programmable 的完整 GPU 支持情况。
+
+可以在诊断副本里安排一个**尚未执行的 CPU 烟雾喷流对照**：开始时让系统可见，再按预设轨迹移动镜头，使出生点离开画面，同时让一部分粒子仍应进入画内。使用简单材质、无碰撞的运动，固定步长、随机种子和寿命，排除复杂形变带来的额外变量。
+
+1. 先查系统资产及实例覆盖，确认当前修改的是实际生效的固定盒。
+2. 版本 A 的盒只包含出生区；版本 B 在同一层级覆盖完整运动和粒子可见尺寸。除盒的范围外，粒子、材质、生命周期及剔除配置都保持相同。
+3. 在 Niagara Debugger 启用 Debug HUD、匹配目标系统的过滤器和 System Show Bounds，比较画出的范围与预期可见粒子。用 Basic 或 Verbose 查看 scalability 剔除原因；需要显示被这类规则剔除的系统时，关闭 System Show Active Only in World。[2]
+4. 记录何时消失、镜头返回后怎样恢复，以及诊断显示提供了什么原因。B 改善现象只能支持“范围参与了问题”，不能凭一次画面变化就认定唯一根因。若没有变化，先复查覆盖层级，再检查生命周期和其他剔除条件。
+
+“根本没有生成”与“播放后不再渲染”还需要分开。5.6 的可见性设置允许独立视锥规则在生成前剔除画外系统，这一路预剔除要求固定范围；Cull When Not Rendered 则依赖渲染反馈，包括遮挡、视锥和隐藏等原因，不能用于生成前的判断。[12] 两类规则还有各自的时间阈值。因此，调试窗口中的 scalability 原因有用，但不代表它列出了全部渲染剔除原因。
+
+完成这组比较后，才考虑没有系统固定范围及发射器实例固定范围覆盖的 CPU Dynamic 对照，不同时切换 CPU/GPU。最终保留的范围应紧凑而完整覆盖视觉生命周期；用于诊断的大盒不能自动成为生产配置。本节是官方文档限定下的检查安排，没有复现离屏缺陷、执行 API 或测得性能收益。
+
 ## 压力大时，先保住玩家需要读懂的东西
 
 烟尘、余烬和装饰性光点可以考虑缩减；伤害范围与发生时刻则可能不能延后或消失。分类依据是玩法意义，不只是距离：远处的狙击预警，可能比近处的一团装饰烟雾更重要。
@@ -111,6 +130,11 @@ Niagara Debugger 能确认实例、粒子和包围范围，FX Outliner 的性能
 
 7. PostgreSQL 15，[*Aggregate Functions*](https://www.postgresql.org/docs/15/functions-aggregate.html)，Table 9.60的 `percentile_disc` 与 `percentile_cont`。2026-11-02读取，分别用于说明离散取值与可能插值的区别；不是Unreal工具的算法说明，没有执行数据库。
 8. NIST/SEMATECH，[*7.2.6.2 Percentiles*](https://www.itl.nist.gov/div898/handbook/prc/section2/prc262.htm)，百分位估计及不同算法说明。2026-11-02读取；本例自行明确采用离散约定，不把该页的默认插值公式称作最近秩法。表中的帧时间为原创手算示例，不是来源中的实验数据。
+
+9. Epic Games，[NiagaraEmitterCalculateBoundMode](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraEmitterCalculateBoundMode?application_version=5.6)，Unreal Python 5.6（Experimental）文档，Dynamic、Fixed、Programmable 枚举定义。2026-11-06读取；仅取范围计算模式说明，未执行 Python API。
+10. Epic Games，[VersionedNiagaraEmitterData](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/VersionedNiagaraEmitterData?application_version=5.6)，同版本 `calculate_bounds_mode`、`fixed_bounds` 属性说明，系统固定范围启用时的忽略关系。2026-11-06读取。
+11. Epic Games，[NiagaraComponent](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraComponent?application_version=5.6)，同版本 `set_system_fixed_bounds`、`set_emitter_fixed_bounds` 与 `get_system_fixed_bounds`，局部空间、实例覆盖与可能无效的返回盒。2026-11-06读取；不据此宣称已检查所有项目调用次序或组件实现。
+12. Epic Games，[NiagaraSystemVisibilityCullingSettings](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/NiagaraSystemVisibilityCullingSettings?application_version=5.6)，同版本 `allow_pre_culling_by_view_frustum`、`cull_by_view_frustum`、`cull_when_not_rendered` 及时间阈值。2026-11-06读取。来源2的 Debug Filters 与 Debug System 同日重读，仅检查文字说明，未检查示例图像或运行调试器。
 
 ---
 
