@@ -1,0 +1,82 @@
+{
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "article_sha256": "63cc59b8a108eb58005d95761df9d05d10434e631abdbe0a76aab2035952c4de",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "full-article-and-scoped-navigation-revision",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-technical-gltf-full-20261106",
+      "mode": "independent-model-full-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-reader-gltf-full-20261106",
+      "mode": "independent-model-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-navigation-gltf-20261106",
+      "mode": "independent-markdown-route-and-static-link-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0281/sources.json",
+      "sha256": "e587e90ca391a092cb4056f1d200dd95c7bc25d6a29a307c2be4e035a249dc18"
+    }
+  ],
+  "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md",
+  "report_sha256": "a30f490e3249294dfd01e71dd6f051ce30d52650f189ad92a4cd0189fbfc6e8f",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/技术美术/README.md",
+      "sha256": "19fdbe3550da7d3276ed70ce38f4697311b7e533b853b8d4670d97e3ccd79257"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/README.md",
+      "sha256": "e8d402a4789df3c1d2d7d76638c0ef6addf390d47406c7ac3ea65c1c458db2ea"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/模型导入/README.md",
+      "sha256": "a7a02184321426dbb5a7eb8154f34c9af1bcc5e273ffbdff3f4563cf37f0960d"
+    },
+    {
+      "path": "管理档案/README.md",
+      "sha256": "cdae52b127bad0a8871bbfda86257255abbaaf9dbef9aee76bd99c71eaa7711f"
+    },
+    {
+      "path": "管理档案/规范/研究与发表规范.md",
+      "sha256": "5936f5e2dcc8dc8081daf2f71b3b269daf9441a826734172e5d299b1d58f8472"
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "GameLibrary/美术设计/模型制作/贴图烘焙/法线烘焙串到附近零件时，为什么不能只加大投射笼.md",
+      "sha256": "6e382f2c608db71caa3f5aa7f2c5f6d49dc6d9238fdecebdf4d166294ddc8975",
+      "scope": "Single association wording correction only; not renewed full-article acceptance."
+    },
+    {
+      "path": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+      "sha256": "ab9806fbd9e098c413b28eb48d0c02621429a522751b5d11a538744ef2b87e64",
+      "scope": "Single association wording correction only; not renewed full-article acceptance."
+    }
+  ],
+  "limits": "One full article and one navigation route. Independent model review, no human trial or browser click test. No full parser, engine, renderer or legacy experiment rerun. Other management technical prose still awaits formal migration.",
+  "updated_at": "2026-11-06T09:23:42Z"
+}

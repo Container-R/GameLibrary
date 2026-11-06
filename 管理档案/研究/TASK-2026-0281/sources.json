@@ -1,0 +1,79 @@
+{
+  "task_id": "TASK-2026-0281",
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "sources": [
+    {
+      "source": {
+        "organization": "Khronos Group",
+        "title": "glTF 2.0 Specification",
+        "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+        "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+        "git_blob": "e5088cdc9a4e344e836568f57e2db6726f5a6740",
+        "accessed_at": "2026-11-06"
+      },
+      "locator": "Buffer Views; Accessors overview; Accessor Data Types and Accessor Element Size; Accessing Data from Buffer Views; Vertex Attributes; Topology and Connectivity",
+      "claim": "Separate offset origins/defaults, buffer/view bounds, little-endian component representation, FLOAT=4 bytes and VEC3=3 components; address/end formulas and independent alignment; stride constraints; shared attribute indices, equal counts, finite FLOAT values, position bounds, allowed index types and forbidden maximum index, triangle-list triples.",
+      "observed_content": "Separate offset origins/defaults, buffer/view bounds, little-endian component representation, FLOAT=4 bytes and VEC3=3 components; address/end formulas and independent alignment; stride constraints; shared attribute indices, equal counts, finite FLOAT values, position bounds, allowed index types and forbidden maximum index, triangle-list triples.",
+      "conditions": "Core specification at this fixed revision. Article scopes ordinary non-sparse FLOAT VEC3 attributes and uint16 triangle-list indices; not a complete format validator. Article-specific dispatch requires indices and a bufferView-backed, non-sparse index accessor. The specification also permits non-indexed geometry and other valid element sources; these are outside this article path.",
+      "article_section": "三层描述各自回答一个问题；把字段翻译成一次实际读取；长度检查必须同时尊重view和buffer；读取位置以后，还要按索引恢复三角形"
+    },
+    {
+      "source": {
+        "organization": "Khronos Group",
+        "title": "accessor.schema.json",
+        "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+        "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json",
+        "git_blob": "07f890ac349b3622ac589f6c3fe0cfb405d60e96",
+        "accessed_at": "2026-11-06"
+      },
+      "locator": "properties.byteOffset; properties.count; properties.normalized; dependentRequired; required",
+      "claim": "Offsets are nonnegative integers defaulting to0 when omitted; byteOffset requires bufferView; count minimum1; normalized defaults false and must not be true for FLOAT.",
+      "observed_content": "Offsets are nonnegative integers defaulting to0 when omitted; byteOffset requires bufferView; count minimum1; normalized defaults false and must not be true for FLOAT.",
+      "conditions": "Core specification at this fixed revision. Article scopes ordinary non-sparse FLOAT VEC3 attributes and uint16 triangle-list indices; not a complete format validator.",
+      "article_section": "把字段翻译成一次实际读取；把检查顺序写进读取器"
+    },
+    {
+      "source": {
+        "organization": "Khronos Group",
+        "title": "bufferView.schema.json",
+        "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+        "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json",
+        "git_blob": "d10717a51a7e489bbee40e57f88b67a0f65f656d",
+        "accessed_at": "2026-11-06"
+      },
+      "locator": "properties.byteLength/byteOffset/byteStride; required",
+      "claim": "View length positive; offset nonnegative integer default0; explicit stride4..252,multiple4. Combined with prose constraints stride>=element size and<=view length.",
+      "observed_content": "View length positive; offset nonnegative integer default0; explicit stride4..252,multiple4. Combined with prose constraints stride>=element size and<=view length.",
+      "conditions": "Core specification at this fixed revision. Article scopes ordinary non-sparse FLOAT VEC3 attributes and uint16 triangle-list indices; not a complete format validator.",
+      "article_section": "长度检查必须同时尊重view和buffer"
+    },
+    {
+      "source": {
+        "organization": "Khronos Group",
+        "title": "mesh.primitive.schema.json",
+        "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+        "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/mesh.primitive.schema.json",
+        "git_blob": "82bcfd7fcb75695f2ba8c08f05a23b27b598fe51",
+        "accessed_at": "2026-11-06"
+      },
+      "locator": "properties.attributes/indices/mode",
+      "claim": "Primitive semantic attributes and indices select accessor array entries; mode default4 is TRIANGLES. Other legal modes cannot reuse triangle-list assembly.",
+      "observed_content": "Primitive semantic attributes and indices select accessor array entries; mode default4 is TRIANGLES. Other legal modes cannot reuse triangle-list assembly.",
+      "conditions": "Core specification at this fixed revision. Article scopes ordinary non-sparse FLOAT VEC3 attributes and uint16 triangle-list indices; not a complete format validator.",
+      "article_section": "把字段翻译成一次实际读取；读取位置以后，还要按索引恢复三角形"
+    }
+  ],
+  "original_explanations": [
+    {
+      "claim": "For checked nonnegative a,L,e and positive n,s, sequentially checking a<=L, e<=L-a, n-1<=floor((L-a-e)/s) is equivalent to the accessor end inequality without first computing the possibly overflowing product.",
+      "basis": "Algebraic rearrangement of cited end inequality; does not replace declaration, alignment or host-index representability checks.",
+      "article_section": "把检查顺序写进读取器"
+    },
+    {
+      "claim": "Four-record teaching bytes distinguish in-bounds interpretation mistakes from out-of-range reads; direct stride traversal and a packed output copy have different storage requirements.",
+      "basis": "Explicit record layout and elementary indexing/storage reasoning, not engine or performance measurement.",
+      "article_section": "为什么没有越界，也会读错顶点；用故障表现区分修正对象"
+    }
+  ],
+  "validation_scope": "Author reread fixed primary clauses. Independent model technical/reader/navigation reviews are recorded separately and bind final article bytes. No legacy native fixture, engine, renderer or full parser was rerun for this edit."
+}

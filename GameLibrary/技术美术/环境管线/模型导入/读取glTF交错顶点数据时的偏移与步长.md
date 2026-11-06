@@ -2,7 +2,7 @@
 
 你写了一个模型处理工具，从 glTF 文件中读取顶点位置。文件能够打开，二进制数据也足够长，可读出的第二个顶点却成了 `(0,0,1)`，后面甚至出现了本不属于模型的数值 `99`。这不一定是美术导出损坏了文件：读取器可能从正确位置开始，却按错误的距离寻找下一个顶点。
 
-本文面向编写模型检查、转换或导入工具的程序员，以及需要排查数据布局的技术美术。需要知道字节、数组下标和三维坐标；不要求已经熟悉 glTF。我们用四个顶点解释三个问题：从哪里开始读、每次向后走多远、读到哪里必须停。若你只负责模型外观制作，不必先掌握这些字段才能与导入工具的维护者合作。
+本文面向编写模型检查、转换或导入工具的程序员，以及需要排查数据布局的技术美术。需要知道字节、数组下标和三维坐标；不要求已经熟悉 glTF。我们用四个顶点解释三个问题：从哪里开始读、每次向后走多远、读到哪里必须停。本文只处理已经取得 buffer 字节、带 bufferView、无稀疏替换的普通 FLOAT VEC3 位置和法线，并用无符号16位索引恢复三角形。外部资源加载、压缩扩展、稀疏属性展开和切线生成各需额外步骤；遇到这些输入，应转入相应处理路径，而不是套用本例或认定文件非法。
 
 ## 先看想得到的模型，再看它怎样存储
 
@@ -25,8 +25,6 @@
 ```
 
 其中每个数都按32位浮点数保存，占4字节。每个位置或法线由三个分量组成，合计12字节，但相邻两条位置之间相隔28字节。**元素大小**回答一次要读多少，**步长**回答下一个元素从哪里开始；交错布局里二者通常不同。
-
-这是本库已有的小型教学输入，不是某个商业模型。本文重新讲解它的布局和地址计算，不提供通用 glTF 解析器。
 
 ## 三层描述各自回答一个问题
 
@@ -61,7 +59,19 @@ glTF 用 JSON 描述模型结构，实际数值通常存于二进制数据中。
 | `type` | VEC3，即三个分量 | VEC3 |
 | `count` | 4个元素 | 4个元素 |
 
-第0个位置从 buffer 字节 `16+4=20` 开始，读取12字节。下一次读取的起点比本次起点后移28字节，而不是只跳过刚读完的12字节。实现读取器时，还要先处理字段的默认值：`view.byteOffset` 和 `accessor.byteOffset` 都可以省略，省略的一项各按0计算。[1][3][9] 第 `i` 个元素的地址因此是：
+在真正的 glTF JSON 中，不能只凭 accessor 在数组中的排列猜测用途。`mesh.primitives` 中每个图元的 `attributes.POSITION` 与 `attributes.NORMAL` 分别给出位置和法线 accessor 的数组编号，`indices` 给出索引 accessor 的编号。假设三个 accessor 依次是位置、法线、索引，本例图元的相关字段就是：[5][6]
+
+```json
+{
+  "attributes": { "POSITION": 0, "NORMAL": 1 },
+  "indices": 2,
+  "mode": 4
+}
+```
+
+这只是图元片段，不是完整 glTF 文件。`mode=4` 表示三角形列表，省略 mode 时也按4；合法的线列表或三角形条带采用其他 mode，不能直接每三个索引拼一面。只有确认输入属于本例的模式和属性配置后，才采用下文的三角形恢复步骤。[5][6]
+
+第0个位置从 buffer 字节 `16+4=20` 开始，读取12字节。下一次读取的起点比本次起点后移28字节，而不是只跳过刚读完的12字节。实现读取器时，还要先处理字段的默认值：`view.byteOffset` 和 `accessor.byteOffset` 都可以省略，省略的一项各按0计算。[1][3][4] 第 `i` 个元素的地址因此是：
 
 ```text
 view_offset     = view.byteOffset，省略时取0
@@ -69,7 +79,7 @@ accessor_offset = accessor.byteOffset，省略时取0
 buffer内起点 = view_offset + accessor_offset + i × stride
 ```
 
-`i`从0开始，小于 `count`。对本文有 view 的普通属性，`stride` 来自该 view 的 `byteStride`；没有这个字段时，按紧密排列的元素大小推进。[2] 这里的默认值只处理省略，不能把显式的 `null`、负数或错误类型也改成0；这些值应按字段要求报错。[3][9] 如果 accessor 没有 `bufferView`，则没有可供这条公式寻址的 view，应按后文的元素来源规则处理。
+`i`从0开始，小于 `count`。对本文有 view 的普通属性，`stride` 来自该 view 的 `byteStride`；没有这个字段时，按紧密排列的元素大小推进。[2] 这里的默认值只处理省略，不能把显式的 `null`、负数或错误类型也改成0；这些值应按字段要求报错。[3][4] 如果 accessor 没有 `bufferView`，则没有可供这条公式寻址的 view，且不得声明 accessor.byteOffset。规范允许由扩展提供元素；没有元素来源时以零为基底，有 sparse 时再应用稀疏替换。[1]
 
 例如，另一个普通 `FLOAT VEC3` accessor 引用一个36字节的 view，`count=3`，两项 `byteOffset` 和 `byteStride` 都省略。两个有效偏移均为0，步长为12，三个元素的起点就是0、12、24，最后一个元素在字节36之前结束。字段没有写出，并不意味着读取器可以跳过默认值处理。
 
@@ -133,86 +143,63 @@ accessor所需末端 <= view.byteLength
 
 ## 读取位置以后，还要按索引恢复三角形
 
-本例索引从 buffer 字节128开始，共6个无符号16位整数，每个占2字节，不交错。其元素起点依次是128、130、132、134、136、138，值为 `0,1,2,2,1,3`。
+本文这条恢复路径要求图元的 indices 存在，所引用的索引 accessor 有 bufferView 且没有 sparse。indices 省略时采用非索引图元路径；索引的其他合法元素来源或稀疏替换也须另行处理，不能直接读基底字节当成最终索引。[1][5][6]
 
-glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元（primitive）**可以理解为按同一种连接方式组装的一组顶点；本例连接方式是三角形列表。因此索引2同时选择位置数组第2项和法线数组第2项，不能另给它一套独立法线编号。[4]
+本例索引 accessor 引用独立的索引 view：view.byteOffset 为128、byteLength 为12，accessor.byteOffset 省略取0、count 为6。索引 accessor 的类型为 SCALAR、componentType 为 UNSIGNED_SHORT（5123），normalized 为 false 或省略；不能把索引归一化成小数。view 的偏移和 accessor 的偏移须各自满足2字节对齐，索引 view 不得声明 byteStride。[1][2][4][5] 因而索引从 buffer 字节128开始，共6个无符号16位整数，每个占2字节，不交错。其元素起点依次是128、130、132、134、136、138，值为 `0,1,2,2,1,3`。
+
+glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元（primitive）**可以理解为按同一种连接方式组装的一组顶点；本例连接方式是三角形列表。因此索引2同时选择位置数组第2项和法线数组第2项，不能另给它一套独立法线编号。[5]
 
 恢复两个三角形后，可以核对它们是否与预期矩形一致：坐标都在 `z=3`，X范围为1到5，Y范围为2到8；两个三角形的绕序都朝 +Z。**绕序**是三角形三个顶点的排列顺序，与读出三个坐标本身不是一回事。
 
-还应检查索引是否在属性数量允许的范围内，以及各属性的数量是否一致。若两个角点位置相同但法线或UV不同，不能仅按位置合并记录；索引引用的是整组属性。[4] 本例没有这些接缝，只说明阅读和检查索引时应保留这种含义。
+还应检查索引是否小于每个属性的 count，以及各属性的 count 是否一致。这种无符号16位索引还不得出现65535，因为规范排除了分量类型的最大值，避免其被当作图元重启标记。三角形列表每三个索引组成一面，索引数量必须是3的倍数。[5]
 
-### 补上切线后，原来的共享关系也可能需要改变
+若两个角点位置相同但法线或UV不同，不能仅按位置合并记录；索引引用的是整组属性。[5] 本例没有这些接缝，只说明阅读和检查索引时应保留这种含义。
 
-**切线**用于描述沿表面的方向。法线贴图里的方向不是直接写在模型的 XYZ 坐标中，而是相对于表面的切线、副切线和法线来解释；glTF 用 `TANGENT.xyz` 保存切线方向，第四个分量 `w` 保存重建副切线所需的正负号。[6] 所以，位置读对了、切线的前三个数也相同，仍不足以证明两份顶点记录可以共用。
+## 把检查顺序写进读取器
 
-例如，两片面沿一条边连接，其中一片的 UV 是镜像的。共享边上的位置、法线和 UV 可以相同，切线方向也可以相同，但所需的 `w` 一正一负。一个顶点槽只能保存一个符号；若把两面的结果依次写回这个槽，后写的会覆盖先写的。这里描述的是一种可构造的属性冲突，不是说所有镜像 UV 都必须采用同样的拆分方式，也不是本文矩形已经出现的渲染故障。
+读一个元素只需一次地址计算，但诊断需要把字段错误、资源错误和布局错误分开。可按下面的顺序组织本例读取路径；每一阶段都保留 accessor、view 和 buffer 的编号，报错时同时给出实际值与需要的值。
 
-负责补切线的导入器尤其需要注意这一步。MikkTSpace 的结果回调按“第几个面、该面的第几个角点”返回，而不是承诺每个旧顶点编号只有一份结果；作者明确警告不要沿用旧索引去平均或覆盖这些输出。[7] 可以先保存各面角的完整属性，再决定哪些记录仍能共享，并同时更新索引。不能只增加一个切线数组，却继续假定原来的共享关系一定正确。
+1. **先决定是否由这条路径处理。** 从图元的 attributes 与 indices 绑定找到相应 accessor，确认 mode 是三角形列表、所需扩展已经处理，位置和法线采用 FLOAT VEC3、有 bufferView、没有 sparse；FLOAT 的 normalized 不得为 true。[4] 合法但尚未实现的数据形式应返回“不支持”，不要静默当作普通 FLOAT 属性。
+2. **核对字段和引用。** 检查数组编号存在、count 是正整数、长度为正、偏移为非负整数；只对省略的两项偏移取0。buffer 数据已加载并至少覆盖它的声明长度，才继续检查 view。
+3. **检查每个 view 和 accessor 的范围、对齐及步长。** 先确认 view 落在 buffer 内，再算 accessor 的末端；两者不能合并成一次“实际文件够大”的判断。带 stride 的 view 只用于顶点属性，本例索引另用一个无 stride 的 view。[1][2]
+4. **按小端序取值，并保留元素编号。** 位置和法线分别按各自偏移读取，按同一 stride 前进。浮点属性不能含 NaN 或无穷值；POSITION 还须声明 min/max，本例分别为 `[1,2,3]` 和 `[5,8,3]`。[5] 字节检查通过之后仍需验证属性的语义，不能把范围检查叫作完整文件验证。
+5. **用索引选择整组属性。** 核对属性数量与索引范围，再按三角形列表恢复两面。把解码结果与已知小模型比较，最后才判断目标模型是否符合制作意图。
 
-需要实现这一步时，可继续读[两片镜像 UV 面如何从四份旧记录整理成六份新记录](../../../../管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md)。这份原有笔记保留了完整输入和手算对应表。后来，本库用固定版本的 MikkTSpace C 实现实际生成了同一组双三角形的切线：六个面角的切线方向都是 +X，但第一面的符号都是 +1，第二面都是 −1。把捕获的结果按正序或倒序写回四个旧槽，各会让两个面角读到错误符号；按面角保留六份完整记录并更新索引，则能保留这组输入的全部结果。正反顺序是**生成完成后的应用覆盖演示**，不是生成器用了不同输入，也不是上游算法出了故障。
+使用固定宽度整数时，可把范围检查写成先减后除的形式，避免先算乘法再发现已溢出。令 `L` 为 view 长度，`a` 为有效 accessor 偏移，`n` 为 count，`s` 为 stride，`e` 为元素大小。字段都经过类型与正负检查、`n≥1`、`s>0` 后，依次检查（floor 表示向下取整）：
 
-[镜像 UV 面角输出的输入、观察与复现说明](../../../../管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md)保留了这一有限检查。另一个独立副本得到了相同结果，但两次仍是同一输入，没有增加几何场景覆盖；六份记录也不是任意模型的最小去重数证明。它验证的是这里的**属性与索引对应关系**，没有运行 glTF 导出器或渲染器。烘焙与渲染是否使用一致的网格、三角化和切线基，仍要另外核对。字节读取正确，不能单独保证法线贴图没有接缝。
+```text
+a <= L
+e <= L - a
+n - 1 <= floor((L - a - e) / s)
+```
 
-## 调试时，区分三类结论
+它与前面的末端公式检查同一范围，但每次减法都在确认不会下溢后进行。view 范围同理，先检查 `view_offset <= buffer长度`，再检查 `view.byteLength <= buffer长度 - view_offset`。这只替换范围运算，不替代步长、对齐和类型限制；最后计算实际指针或切片地址时，还要确认宿主语言的索引类型能够表示该地址。这是根据范围不等式改写的实现办法，不是新增 glTF 字段。[2]
 
-完成上面的计算后，你可以把问题分得更清楚：
+## 用故障表现区分修正对象
 
-| 检查对象 | 本例中的问题 | 接下来查哪里 |
+| 检查对象 | 本例中的问题 | 应修正的对象 |
 |---|---|---|
-| 数据范围 | view只有108字节，法线需要112字节 | 文件声明、生成该声明的代码 |
-| 数据解释 | view足够，却每12字节找一个位置 | accessor偏移、view步长、分量类型和字节序 |
-| 几何用途 | 数据可读，但索引或属性不是预期模型 | 图元属性关联、索引顺序、模型预期 |
+| 资源或 view 范围 | buffer 未完整加载，或 view 只有108字节而法线需要112字节 | 资源加载结果、文件声明或生成声明的代码 |
+| 布局解释 | view 足够，却每12字节找一个位置 | accessor 偏移、view 步长、分量类型和字节序的解释 |
+| 属性与拓扑 | 数据可读，但索引超出属性数量，或按位置误合并不同法线的记录 | 图元的属性关联与索引生成 |
+| 制作意图 | 文件内部自洽，模型却不是预期尺寸或连接方式 | 导出输入和转换规则，而非盲目扩大读取范围 |
 
-这三类不能都用“文件损坏”概括。尤其是格式正确并不等于内容符合制作意图：一个完全自洽的文件，也可能保存了你不想要的模型。
+调试时输出“元素编号、buffer 内起点、读取类型、解码值”，比只输出文件长度更能定位问题。上例错误步长下的第二个位置恰好等于第一条法线；这个有辨识度的输入能够直接暴露布局误解。没有崩溃不说明读对了，出现错误形状也不等于制作者必须重导文件。
 
-本库旧版研究曾用这个小输入进行有限CPU读取和独立数值对照。这里保留足以手算的布局与预期，不把有限读取器当成生产导入器，也不要求读者先看运行日志。本次没有重跑该交错读取实验。
+工具可以按 stride 直接遍历源数据，也可以把解码后的属性复制到连续数组。前者保留源布局，避免额外的属性副本；后者让后续算法使用连续数据，但增加转换与存储成本。选择取决于后续处理接口，二者都必须先正确解释偏移、类型和范围。引擎导入后可能重排属性或三角形；应按目标表示的明确规则比较，而不能把源文件的28字节步长要求强加给所有阶段。
 
-如果读的是关节编号和蒙皮权重，还要区分存储整数与解码后的含义。可选读[glTF关节编号和权重为什么不能按同一种数值读取](../../../../管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md)，用同为四个字节的两组属性说明 normalized 编码、权重总和和皮肤内编号映射；不改变前面 FLOAT 位置的示例。
-
-## 遇到稀疏属性，先找基底，再做替换
-
-前面的逐项地址计算针对有 bufferView、无稀疏替换的普通属性。稀疏 accessor 则先确定元素的基底来源，再替换其中指定的元素；不是把补丁数值加上去。[5]
-
-用旧版研究的另一个小例子手算：基底为 `[10,20,30,40]`，从0开始编号，要替换的元素编号为1和3，对应新值为7和9。最终得到 `[10,7,30,9]`，而不是相加后的 `[10,27,30,49]`。这里的1和3是在 accessor 中选择待替换元素，不是前文用来连接三角形的索引流。
-
-如果这个例子不使用扩展提供元素，也省略基底的 `bufferView` 和 `byteOffset`，就从四个零开始，替换后得到 `[0,7,0,9]`。即便 buffer 的其他位置仍保存10和30，也不能擅自把那些字节当作基底。[5]
-
-稀疏索引和值分别来自自己的 view，各自有偏移、长度和对齐要求；索引还须严格递增且小于 accessor 的元素数量。整个 buffer 够长，不意味着其中某个 view 可以越界。[5] 这里解释替换含义，不把前文普通属性的读取公式变成完整稀疏解析器。这个标量例子也不是上面矩形的引擎导入结果。
-
-后续用固定 cgltf v1.15 的 C 实现读取了这两种基底配置：批量展开分别得到 `[10,7,30,9]` 和 `[0,7,0,9]`；同版本的单元素读取接口则对稀疏 accessor 返回 false。这不是文件非法，而是所选接口不支持该读取方式。选读[文件解析成功，为什么还没有读出稀疏属性](../../../../管理档案/支持资料/cgltf稀疏属性展开/README.md)，可区分结构解析、buffer 加载、额外检查与完整浮点展开；该有限观察没有覆盖任意稀疏属性或引擎导入。[8]
-
-关于详细规则和旧有限读取器的适用范围，可选读[稀疏 accessor 来源说明](../../../../管理档案/来源笔记/gltf-sparse-accessor.md)。矩阵、压缩扩展、外部资源加载、蒙皮和动画仍需另作处理。对暂未支持的合法形式，应明确报告“不支持”，而不是把它们一概称为非法文件。
-
-## 导入之后，应按目标表示的规则比较
-
-源 buffer 的布局不一定就是引擎或GPU最终使用的布局。某个引擎导入后可能重组数据或转换表示；那是下一层问题，不能由本文的28字节步长推出。
-
-若优化还调整了三角形的先后次序，可选读[半透明三角形重排为何会改变颜色](../../../../管理档案/支持资料/半透明三角形重排为何会改变颜色.md)，检查几何保持之外的合成用途。
-
-比较时应先确认目标表示的约定，再决定哪些值必须保持一致。例如，若目标采用不同的三角形正面绕序，就应按明确的转换规则核对索引与正面含义，不能只因索引数组不再逐项相等便判定模型损坏。属性精度或包围盒处理也要分别说明；一个小样例观察到的差异，不能自动成为所有网格的容差标准。
-
-这是对导入结果的检查建议，不是本章已完成的引擎验证。既不能要求所有阶段逐字相等，也不能没有依据地把任何差异都归为“引擎优化”。先确认目标规则，再检查该规则是否被正确执行；本章的交错读取主线仍只解决：**按glTF声明读到正确的属性，并知道每一次读取为什么合法。**
-
-若要继续核对具体的引擎差异，旧资料的[两阶段导入与零厚度断言失败](https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md#7-同一文件真正进入引擎后不能再要求所有表示逐字相等)保留了 ImporterMesh、ArrayMesh、绕序及法线近似的有限观察。该历史支持不是本次重跑，也不能用其中一个平面网格的容差批准任意模型。
+本文的交付到此为止：从声明求出每个元素应读的字节，拒绝越界或不合法布局，并按索引恢复整组属性。生成切线、展开稀疏属性、解释蒙皮权重或转换引擎表示会引入不同的数据处理规则，需要各自的方法，不能由这一次字节读取检查代替。
 
 ## 参考来源
 
-以下使用固定的 Khronos glTF 2.0 规范修订，于2026-11-01重新核对；2026-11-06补核两项偏移的省略默认值及固定schema。示例坐标、填充数值和布局来自本库原有教学输入；错误步长表与边界计算是对该输入的逐项解释，不是新增引擎或GPU观察。
+以下链接指向同一个固定修订的 Khronos glTF 2.0 规范及 schema，2026-11-06核对。四顶点布局与错误读取表是教学算例；没有把它当成完整解析器、引擎导入或 GPU 测量。
 
-1. Khronos Group，[glTF 2.0 Specification：Buffer Views、Accessors及组件类型](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#buffer-views)。参见 view 范围、accessor元素来源、FLOAT大小与小端序要求。
-2. Khronos Group，[Accessing Data from Buffer Views](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#data-alignment)。参见元素地址、所需范围、独立偏移对齐与步长条件。
-3. Khronos Group，[bufferView schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json)。这是同一规范项目的字段定义，不能替代读取数据后的检查。
-4. Khronos Group，[Topology and Connectivity](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-topology)。参见索引与各属性元素的对应关系；属性数量要求位于相邻属性章节。
+1. Khronos Group，[glTF 2.0 Specification：Buffer Views 与 Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#buffer-views)。两项偏移默认值、view 使用与范围、accessor 元素来源、FLOAT 大小和小端序。
+2. Khronos Group，[Accessing Data from Buffer Views](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#data-alignment)。元素地址、末端公式、独立偏移对齐和步长约束。
+3. Khronos Group，[bufferView schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json)。长度、偏移、步长的字段类型和约束。
+4. Khronos Group，[accessor schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json)。偏移默认值、count、normalized 及 byteOffset 对 bufferView 的依赖。
+5. Khronos Group，[Vertex Attributes 与 Topology and Connectivity](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-attributes)。属性数量、有限浮点值、位置 min/max、统一索引与图元连接要求。
 
-5. Khronos Group，同一固定规范的 [Accessors：元素来源](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview) 与 [Sparse Accessors](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#sparse-accessors)。2026-11-01重新核对基底来源、替换顺序、稀疏索引及值的独立范围和对齐。标量数组源自旧原创例子的手算解释；2026-11-02 另以固定 cgltf C 实现作了两配置的有限展开检查，见[8]，不是引擎测量。
+6. Khronos Group，[mesh.primitive schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/mesh.primitive.schema.json)。attributes 与 indices 的 accessor 引用，以及 mode=4 的默认值。
 
-6. Khronos Group，同一固定规范的 [Using Primitive Data](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L1808-L1830) 与 [Normal Texture](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#L2819-L2841)。说明切线基、符号和法线纹理含义；本文未运行渲染。
-7. Morten S. Mikkelsen，[MikkTSpace 输出回调及烘焙／渲染配对说明](https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h#L79-L139)，固定作者提交，2026-11-01复核。这里只转述接口，不复制算法实现；不同三角化即使有相同顶点基，也可能产生不同插值。
-
-8. Johannes Kuhlmann 等，[cgltf v1.15 固定源码：单元素读取与浮点展开](https://github.com/jkuhlmann/cgltf/blob/360db1a95480fe102ae9c69b27c5d101167ff5ba/cgltf.h#L2355-L2449)，提交 `360db1a95480fe102ae9c69b27c5d101167ff5ba`。2026-11-02 核对接口并完成本库两份自产输入的有限 C 执行；[说明与安全结果记录](../../../../管理档案/支持资料/cgltf稀疏属性展开/README.md)区分解析、加载、检查和展开。仅 FLOAT SCALAR 的密集/零基底配置，不代表完整格式验证或模型导入。
-
-9. Khronos Group，同一固定规范修订的 [accessor schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json)：`byteOffset` 的整数类型、非负约束、默认0以及对 `bufferView` 的依赖；结合[3]的 view 默认值使用。2026-11-06核对。
-
----
-
-[返回本书架](README.md)
+[返回模型导入](README.md)

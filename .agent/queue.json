@@ -9849,12 +9849,58 @@
         "TASK-2026-0008"
       ],
       "publication_identity": "Containing commit; remote readback is performed after publication."
+    },
+    {
+      "id": "TASK-2026-0281",
+      "question": "如何把普通glTF交错读取整理为完整方法，并修复其逐层入口与已知失真的入站说明？",
+      "reader": "模型检查、转换或导入工具程序员及技术美术",
+      "scope": "普通FLOAT VEC3属性、uint16索引、相关导航与有限去向记录；不搬迁其他技术正文。",
+      "expected_outcome": "正文完成字段绑定、地址、范围、类型与拓扑分流，独立全文技术/读者/导航审查后正常发表。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0281/sources.json",
+        "管理档案/审稿/SOL-MODEL-001/20261106-full-article.json",
+        "管理档案/研究/TASK-2026-0281/范围与保留.md"
+      ],
+      "next_action": "转入独立cgltf稀疏展开正式化任务；保留其他迁移问题。",
+      "blocker": null,
+      "updated_at": "2026-11-06T09:23:42Z",
+      "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "review": "管理档案/审稿/SOL-MODEL-001/20261106-full-article.json",
+      "related_task_ids": [
+        "TASK-2026-0280"
+      ],
+      "publication_identity": "Containing commit; success reported only after remote readback."
+    },
+    {
+      "id": "TASK-2026-0282",
+      "question": "如何用固定cgltf版本完整展开稀疏属性，并正确处理基底、替换、整数规范化和输出容量？",
+      "reader": "维护glTF属性读取工具的程序员",
+      "scope": "整合现有FLOAT SCALAR与UINT8 VEC4两份技术说明为一篇正式方法；两套输入、协议和历史结果身份保留。",
+      "expected_outcome": "完成原始来源与现有材料核对、正文、入站映射和独立审查后发表；不混入皮肤关节映射或切线生成。",
+      "phase": "researching",
+      "status": "active",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0281/范围与保留.md",
+        "管理档案/来源笔记/cgltf-sparse-native.json",
+        "管理档案/来源笔记/cgltf-unorm-sparse-native.json"
+      ],
+      "next_action": "核固定cgltf完整展开实现与Khronos替换/转换规则，核两套材料身份，确定完整方法及有限验证范围。",
+      "blocker": null,
+      "updated_at": "2026-11-06T09:23:42Z",
+      "related_task_ids": [
+        "TASK-2026-0281"
+      ]
     }
   ],
   "execution_policy": {
-    "normal_research_paused": true,
-    "highest_priority": "v2-topic-review-and-corrections",
-    "resume_condition": "Finish the authorized corrective batch; preserve other topics until v2 adoption coordination confirms their next scope. This temporary pause is not a fixed-count rebuild requirement."
+    "active_scope": "Incremental v2 research and finite topic remediation",
+    "unrelated_new_topics_paused": true,
+    "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
+    "next_priority": "Formalize existing glTF sparse decoding prose after the ordinary-reading publication."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

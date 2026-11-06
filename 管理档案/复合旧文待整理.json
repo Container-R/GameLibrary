@@ -74,32 +74,49 @@
     },
     {
       "old_path": "solutions/modeling/gltf-interleaved-attribute-contract.md",
-      "pending_subtopics": [],
-      "scope_status": "accounted_for",
+      "pending_subtopics": [
+        "源属性与引擎表示的独立验证方法",
+        "稀疏属性展开与数值解释的正式文章"
+      ],
+      "scope_status": "ordinary-reader-method-complete-related-methods-await-v2-formalization",
       "chapter_tasks": [
         {
           "id": "REMEDIATION-03-01",
           "topic": "源几何与引擎表示的区别",
-          "status": "completed",
+          "status": "preserved-awaiting-v2-formalization",
           "resolution": {
-            "method": "reviewed_merge_or_explicit_support_retention",
-            "reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-            "review": "管理档案/审查/glTF有限补充-增量审读.md",
-            "new_book_required": false
+            "method": "preserved-specific-material-awaiting-formal-topic-review",
+            "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md",
+            "historical_resolution": {
+              "commit": "b3eeb2c47311a98006e18ef027336ae33633b83e",
+              "path": "管理档案/复合旧文待整理.json"
+            },
+            "current_reader_article_scope": "Ordinary byte layout and index assembly only; not this separate method."
           },
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "completion_rule": "Retain detailed material and publish a complete independently reviewed formal method, or document a substantiated alternative disposition; old management-support retention alone is not new v2 completion.",
+          "preserved_history": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
+          "next_action": "核读固定历史的两阶段导入、绕序、近似和失败，单独界定目标表示验证任务。"
         },
         {
           "id": "REMEDIATION-03-02",
           "topic": "稀疏属性替换",
-          "status": "completed",
+          "status": "preserved-awaiting-v2-formalization",
           "resolution": {
-            "method": "reviewed_merge_or_explicit_support_retention",
-            "reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-            "review": "管理档案/审查/glTF有限补充-增量审读.md",
-            "new_book_required": false
+            "method": "preserved-specific-material-awaiting-formal-topic-review",
+            "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md",
+            "historical_resolution": {
+              "commit": "b3eeb2c47311a98006e18ef027336ae33633b83e",
+              "path": "管理档案/复合旧文待整理.json"
+            },
+            "current_reader_article_scope": "Ordinary byte layout and index assembly only; not this separate method."
           },
-          "completion_rule": "Reviewed coverage in an existing section, concise merge, supporting-note disposition, or explicit duplicate/out-of-scope rationale; no automatic new-book requirement."
+          "completion_rule": "Retain detailed material and publish a complete independently reviewed formal method, or document a substantiated alternative disposition; old management-support retention alone is not new v2 completion.",
+          "next_task": "TASK-2026-0282",
+          "preserved_paths": [
+            "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+            "管理档案/支持资料/cgltf稀疏整数属性解码/README.md",
+            "管理档案/来源笔记/gltf-sparse-accessor.md"
+          ]
         }
       ],
       "old_path_availability": "git_history_only",
