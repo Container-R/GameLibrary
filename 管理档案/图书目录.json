@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "2efad1af5d661d7d61a4c60f2cf460336524cdaa",
+  "publication_base_sha": "0803aab971d7b4d295fab10470d23c14623f4aec",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -1604,14 +1604,12 @@
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "legacy_retention": "旧完整主文和历史实验保持固定版本；现有技术稿按范围与保留记录逐项接续，不继承旧完成状态为新版全文验收。",
-      "extraction_scope": "普通交错读取正文保持本身范围；稀疏完整展开已独立正式化，目标表示及其他相关方法继续保留待审。",
+      "extraction_scope": "普通源读取、稀疏展开与源/目标分阶段比较已分别正式成文；切线、关节权重和其他相关技术稿仍逐题保留待审。",
       "reader_body_status": "published",
-      "original_scope_status": "partially-formalized-related-methods-preserved",
-      "pending_chapter_tasks": [
-        "REMEDIATION-03-01"
-      ],
-      "scope_disposition": "普通交错读取正文保持本身范围；稀疏完整展开已独立正式化，目标表示及其他相关方法继续保留待审。",
-      "scope_disposition_review": "管理档案/研究/TASK-2026-0282/迁移与保留.md",
+      "original_scope_status": "registered-byte-sparse-target-methods-formalized-other-related-prose-preserved",
+      "pending_chapter_tasks": [],
+      "scope_disposition": "普通源读取、稀疏展开与源/目标分阶段比较已分别正式成文；切线、关节权重和其他相关技术稿仍逐题保留待审。",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0283/范围与保留.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
@@ -1621,14 +1619,15 @@
         "reader_sha256": "63cc59b8a108eb58005d95761df9d05d10434e631abdbe0a76aab2035952c4de",
         "related_material_status": "Preserved; see scoped migration record, not accepted as a second content tree."
       },
-      "reader_sha256": "63cc59b8a108eb58005d95761df9d05d10434e631abdbe0a76aab2035952c4de",
+      "reader_sha256": "b61d3899b2d8aa98a3bfcdc0bca8e02b6dfec3f1195afcfb8181855aa8091abf",
       "review_paths": [
         "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
         "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
         "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
         "管理档案/审查/glTF变形位置-来源与读者审查.md",
         "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json",
-        "管理档案/审稿/SOL-MODEL-001/20261106-full-article.json"
+        "管理档案/审稿/SOL-MODEL-001/20261106-full-article.json",
+        "管理档案/审稿/SOL-MODEL-005/20261106-full-article.json"
       ],
       "triangle_order_support": {
         "scope": "Optional triangle-order example distinguishes geometry preservation from order-sensitive source-over composition.",
@@ -1703,8 +1702,19 @@
           "path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
           "review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
           "relationship": "Sparse full-array decoding is a separate engineering method; ordinary reading article is unchanged."
+        },
+        {
+          "internal_id": "SOL-MODEL-005",
+          "path": "GameLibrary/技术美术/环境管线/模型导入/验证glTF导入结果时，先区分源数据和目标表示.md",
+          "review": "管理档案/审稿/SOL-MODEL-005/20261106-full-article.json",
+          "relationship": "Source-to-import-to-runtime comparison is a separate method, not a broader acceptance of source decoding."
         }
-      ]
+      ],
+      "latest_link_revision": {
+        "review": "管理档案/审稿/SOL-MODEL-005/20261106-full-article.json",
+        "previous_reader_sha256": "63cc59b8a108eb58005d95761df9d05d10434e631abdbe0a76aab2035952c4de",
+        "scope": "Only a link added inside the existing target-representation boundary sentence; ordinary reading method unchanged."
+      }
     },
     {
       "internal_id": "SOL-MUSIC-001",
@@ -4187,7 +4197,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Pinned cgltf full sparse expansion for controlled tight FLOAT SCALAR and UINT8 VEC4 input; normative and implementation limits explained."
+    },
+    {
+      "internal_id": "SOL-MODEL-005",
+      "reader_title": "验证glTF导入结果时，先区分源数据和目标表示",
+      "discipline": "技术美术",
+      "direction": "环境管线",
+      "topic": "模型导入",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/验证glTF导入结果时，先区分源数据和目标表示.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/验证glTF导入结果时，先区分源数据和目标表示.md",
+      "reader_body_status": "published",
+      "reader_sha256": "48558cb49ba9f9f993ab8823f6ebe8e1de90fbd464e29104b8a488280346d2bf",
+      "editorial_status": "源/目标逐阶段比较完整方法及有限导航经新版独立审查通过。",
+      "review_paths": [
+        "管理档案/审稿/SOL-MODEL-005/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0283/sources.json",
+      "source_sha256": "676e776bbf35cc7d7f48a7ce77b960e7648638bcec38d64f3fa85bacfc1ef66d",
+      "materials_record": "管理档案/研究/TASK-2026-0283/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0283/范围与保留.md",
+      "related_article_ids": [
+        "SOL-MODEL-001",
+        "SOL-MODEL-004"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Pinned Godot source, explicit paper mapping and limited historical observations; actual format gates and per-field requirements, no current engine certification or general tolerance."
     }
   ],
-  "current_batch_scope": "SOL-MODEL-004 full formal method, two reproduction indices and their route; one limited inbound link. Existing unrelated articles remain unchanged and are not newly certified."
+  "current_batch_scope": "SOL-MODEL-005 full method and route; two one-paragraph inbound changes. Other retained technical prose and whole-library review remain unfinished."
 }

@@ -1,0 +1,704 @@
+{
+  "task": "TASK-2026-0283",
+  "baseline_commit": "0803aab971d7b4d295fab10470d23c14623f4aec",
+  "role": "Historical material identity index; no new observation, execution, archive copy, or build-provenance authentication.",
+  "historical_package": {
+    "path": "research/experiments/godot-gltf-import-boundary",
+    "commit": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+    "url": "https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary",
+    "files": 81,
+    "bytes": 129249,
+    "unique_git_blobs": 40,
+    "groups": {
+      "(root)": 11,
+      "historical-zero-depth-aabb": 11,
+      "integration": 7,
+      "results": 5,
+      "review": 47
+    },
+    "identity_crosscheck": "15 immediate file/subtree Git object identities match the complete 1a7bf18b24ba56395892c4c0cdb3b2acecc16985 discovery tree. All 81 archived file blobs were independently recomputed from retained local bytes.",
+    "current_tree_presence": "No package or README in current tree. Current source-gate derivative is a different file."
+  },
+  "current_source_records": [
+    {
+      "path": "管理档案/研究记录/experiments/godot-gltf-import-boundary/source-gate.md",
+      "git_blob_sha1": "a66b55f171eb8959fff8832384990fd1ec7981b1",
+      "sha256": "4ec9dd8a36f0a15d57effbbe0f146417cb18bcd0574279f0e4a9240fa54c5b76",
+      "bytes": 8194,
+      "role": "Historical source reading and prospective protocol; not the later actual-result README."
+    },
+    {
+      "path": "管理档案/研究记录/source-notes/godot-runtime-provenance.md",
+      "git_blob_sha1": "259c113cac78f611ce835bf302e9598f939d270a",
+      "sha256": "b10b0e29e54b58ea0a609f7748892066404d18fd986f234ea736037f92575e57",
+      "bytes": 4024,
+      "role": "Current public derivative retaining unresolved installed-build provenance."
+    }
+  ],
+  "preservation": {
+    "original_bytes": "All original source, input, contract, result, failure and review files remain at their immutable historical paths.",
+    "private_environment_data": "Not copied into this index or a new reader article. File-content hashes below identify archived files, not the installed executable.",
+    "runtime_provenance": "Installed runtime self-report and pinned public source comparison remain distinct; exact build provenance is unresolved.",
+    "reexecution": "None. No old runner, engine, source program, raw output, or attachment was executed."
+  },
+  "files": [
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/README.md",
+      "git_blob_sha1": "9de6b18c2145d899343b07a37a306685ad030f47",
+      "sha256": "939eaa90789e058384564cff1842b072f4e3ff275a4b0763174d3ef678d97b40",
+      "bytes": 6190,
+      "role": "historical technical experimental explanation",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/README.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/SHA256SUMS",
+      "git_blob_sha1": "538d9ca69c15137ed70a989b45e3b4dfa8dfd94e",
+      "sha256": "e98e9644be57f5127cbc3f91f67cf8a7b72a05d504bedc601fce0b6b1fb62379",
+      "bytes": 598,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/SHA256SUMS"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/SHA256SUMS",
+      "git_blob_sha1": "648247bf4f209ceca1b3223506e13fc3423bb423",
+      "sha256": "588aaa09c26830b7008b301afaf55052fe0d51bd911d64e3704ec3333b834f53",
+      "bytes": 598,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/SHA256SUMS"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.json",
+      "git_blob_sha1": "488ce5f522fed927234c0ec36f3107f037616c40",
+      "sha256": "3c9c9f6a02aa7cbe8661c5f96b0daf584e2ab36c64a3560efd2871e47890ecdb",
+      "bytes": 2965,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stderr.txt",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stderr.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stdout.txt",
+      "git_blob_sha1": "e1da90af4491d5866c5a8102d7a28aef9eec58f6",
+      "sha256": "6feac358171b914099e85128f0a9f21499c4b73abe3990a94c801fe6e9e49d38",
+      "bytes": 1459,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/import.stdout.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/process.json",
+      "git_blob_sha1": "abbfa5a58fd1d3f1e27c77317771016571075802",
+      "sha256": "48244973b7845d0d071741e140b49683125efda66b360f35bd3fa7f48175e74d",
+      "bytes": 365,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/results/process.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/run-output.txt",
+      "git_blob_sha1": "c43b01de38a96caf2e94d8d32ca5fa428e85033f",
+      "sha256": "54643bee67b422c0933879a6856b0ce821f0934fa242465c39d2e5aa93df6ee7",
+      "bytes": 398,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/run-output.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/run.py",
+      "git_blob_sha1": "aefce4da66002b27714b065b03eeadffbf80d243",
+      "sha256": "e7823cbb8eb7bdbcb811855f127b0dd9d253efff72aaab4c8e6c1039b8e88613",
+      "bytes": 5286,
+      "role": "historical failed AABB assertion and frozen output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/historical-zero-depth-aabb/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/input-identity.json",
+      "git_blob_sha1": "e7df6ea4470d37baca18975d97a104e71320738c",
+      "sha256": "7169a1061e6eda2e7e638ce306748ef90a965f3c8b0c6b05856be8059eb84f44",
+      "bytes": 461,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/input-identity.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/check-O.json",
+      "git_blob_sha1": "5f5572a22fa572b52e915e9853aa80a655b8e02c",
+      "sha256": "6a4b927708835993354ee588c0ce82322c73e33f70e54af4dbb135a72a053056",
+      "bytes": 2326,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/check-O.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/check.json",
+      "git_blob_sha1": "5f5572a22fa572b52e915e9853aa80a655b8e02c",
+      "sha256": "6a4b927708835993354ee588c0ce82322c73e33f70e54af4dbb135a72a053056",
+      "bytes": 2326,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/check.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/check_archives.py",
+      "git_blob_sha1": "3a6cac3c96b7226e93f31a7417b5b0f5e1f9fb70",
+      "sha256": "4024cc5fabf7d94163f3cfad1eb9e1f1b887a3d0a14082faffe9c7e5071255fb",
+      "bytes": 4232,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/check_archives.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/integration-hashes.json",
+      "git_blob_sha1": "35bcf285d2840d187669dd56ec6a30e5ca3eede0",
+      "sha256": "67c1f8f6b09dc788ca755f12587322749d18b56425b13b9c3461189fe72ed683",
+      "bytes": 578,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/integration-hashes.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/integration-review.md",
+      "git_blob_sha1": "d78ad0f3473d37dfd9d6273c970201e861bf6d0e",
+      "sha256": "1d4e414f0d9b8cb646deb2361625b769e408834f88dd39a88ea8ada8250be090",
+      "bytes": 1852,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/integration-review.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/main-review.md",
+      "git_blob_sha1": "668a561721bb2725e5e82381cd5c17bb477fb962",
+      "sha256": "8b8620125f7c4984d26a113b8548d79a0a8edd867a043a19a938c8a4a3693e66",
+      "bytes": 2216,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/main-review.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/integration/preservation.json",
+      "git_blob_sha1": "787fa9d87bcd518b85074cd83cfbea6c06c99372",
+      "sha256": "de0fce00068d40f7a50020b16817bec183e47c694693a83ad994abaa2b023ba0",
+      "bytes": 138,
+      "role": "historical integration review and retention checks",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/integration/preservation.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/import.json",
+      "git_blob_sha1": "488ce5f522fed927234c0ec36f3107f037616c40",
+      "sha256": "3c9c9f6a02aa7cbe8661c5f96b0daf584e2ab36c64a3560efd2871e47890ecdb",
+      "bytes": 2965,
+      "role": "historical actual output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/results/import.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/import.stderr.txt",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical actual output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/results/import.stderr.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/import.stdout.txt",
+      "git_blob_sha1": "e1da90af4491d5866c5a8102d7a28aef9eec58f6",
+      "sha256": "6feac358171b914099e85128f0a9f21499c4b73abe3990a94c801fe6e9e49d38",
+      "bytes": 1459,
+      "role": "historical actual output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/results/import.stdout.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/process.json",
+      "git_blob_sha1": "abbfa5a58fd1d3f1e27c77317771016571075802",
+      "sha256": "48244973b7845d0d071741e140b49683125efda66b360f35bd3fa7f48175e74d",
+      "bytes": 365,
+      "role": "historical actual output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/results/process.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/results/summary.json",
+      "git_blob_sha1": "13e7abcee903140f897a0b87239c6bdb65aab1a3",
+      "sha256": "78f1991dbe8efc2fdb814d6ec023b3a93987d7c2c0123cc057da7e187bb40d51",
+      "bytes": 4604,
+      "role": "historical actual output",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/results/summary.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/REVIEW.md",
+      "git_blob_sha1": "cb5c6a4eec566de97999768ab5aa602bd6f519fe",
+      "sha256": "ea46588629667687d021310ae1b2d44f85146ffd6c4b3d8a9ee172e4d44de810",
+      "bytes": 3318,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/REVIEW.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/check.py",
+      "git_blob_sha1": "5cf5bcb799f8429566e32187eae6ddfb67742d5f",
+      "sha256": "c7a6f39d278fc3d9e40aae06b58fdee75a9dbbc753ea27e11d24021b78e90784",
+      "bytes": 2597,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/check.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/check.stdout",
+      "git_blob_sha1": "83deff2f127740c3df0c6d07ca66110d0d166ef8",
+      "sha256": "533101b8f357c0a952fd9d631ea60804c6700980914abf83e2d049771056f5de",
+      "bytes": 747,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/check.stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.json",
+      "git_blob_sha1": "488ce5f522fed927234c0ec36f3107f037616c40",
+      "sha256": "3c9c9f6a02aa7cbe8661c5f96b0daf584e2ab36c64a3560efd2871e47890ecdb",
+      "bytes": 2965,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/results/import.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.stderr.txt",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/results/import.stderr.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/results/import.stdout.txt",
+      "git_blob_sha1": "e1da90af4491d5866c5a8102d7a28aef9eec58f6",
+      "sha256": "6feac358171b914099e85128f0a9f21499c4b73abe3990a94c801fe6e9e49d38",
+      "bytes": 1459,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/results/import.stdout.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/results/process.json",
+      "git_blob_sha1": "cd3dd1a166f898d516e1655247be2aa9c4dc65b4",
+      "sha256": "7e1b67b85edf953307fbaa4c40837f7408d7a03730385195b1182c2750cd3503",
+      "bytes": 397,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/results/process.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/results/summary.json",
+      "git_blob_sha1": "13e7abcee903140f897a0b87239c6bdb65aab1a3",
+      "sha256": "78f1991dbe8efc2fdb814d6ec023b3a93987d7c2c0123cc057da7e187bb40d51",
+      "bytes": 4604,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/results/summary.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/fixture/run.py",
+      "git_blob_sha1": "406639d978d5afc088d61d2c1ede4d73c9e758e8",
+      "sha256": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+      "bytes": 5342,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/fixture/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative-results.json",
+      "git_blob_sha1": "30807bfcd7da5ae8b0a9d4a2b2b433fcd0d3fe87",
+      "sha256": "75e01c0ec57cf1a736f7a957f0632f52797267052f5f93c487377135fedaa15b",
+      "bytes": 1118,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative-results.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative.py",
+      "git_blob_sha1": "89ee6bd429246d700a93dcef8a418d807740195e",
+      "sha256": "94c9a181c09a541ba29a06a0d2951990842e4f76dcc19d90a09bf6354802b264",
+      "bytes": 1465,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative.stdout",
+      "git_blob_sha1": "30807bfcd7da5ae8b0a9d4a2b2b433fcd0d3fe87",
+      "sha256": "75e01c0ec57cf1a736f7a957f0632f52797267052f5f93c487377135fedaa15b",
+      "bytes": 1118,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative.stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/fake-called",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/fake-called"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/fake-engine",
+      "git_blob_sha1": "a1f01f22ad240a29e07a8de966a44aa986a4639b",
+      "sha256": "fc3eb11877160e351787a007f4984b43db26349ee8541603814f8cb82b8ea196",
+      "bytes": 171,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/fake-engine"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/import.stderr.txt",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/import.stderr.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/import.stdout.txt",
+      "git_blob_sha1": "96ce5202c0487a47232a1ccfe2ac3c3ecff9f88b",
+      "sha256": "6a103ee6d3a7a8b16c781854d9e6dc5348e8c112ce4a32867e8ecbf18783f028",
+      "bytes": 21,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/import.stdout.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/process.json",
+      "git_blob_sha1": "a380a9b955afd4096069ad5541ae9ba70072c772",
+      "sha256": "6bf2422a2d596e1f201d1f299b1f8451cdfeca8731f96fbda4b3a1c3f3372345",
+      "bytes": 533,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/results/process.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/run.py",
+      "git_blob_sha1": "406639d978d5afc088d61d2c1ede4d73c9e758e8",
+      "sha256": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+      "bytes": 5342,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/stderr",
+      "git_blob_sha1": "1edd8328fdad2e6f367dba609308fa5705b3a533",
+      "sha256": "0ab3a9a0c8044495cbca476feecdb73329da51712c0361e657e3a42ea517f5b7",
+      "bytes": 985,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/stderr"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/stdout",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/malformed-result/stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/fake-engine",
+      "git_blob_sha1": "0d0b2e9cd12e6a4ba76d296c4a57d3d510192803",
+      "sha256": "96383560349ef55ca4de19b0fa0804b47415e112ee793ea431bd6e13c027b598",
+      "bytes": 169,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/fake-engine"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/run.py",
+      "git_blob_sha1": "406639d978d5afc088d61d2c1ede4d73c9e758e8",
+      "sha256": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+      "bytes": 5342,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/stderr",
+      "git_blob_sha1": "1974759fc644a61d0458d10fdcc527a8a3eab8c6",
+      "sha256": "325a31bdd3644741934ae7e28a34c8b1c78c3856d795f36aa9f9844914865728",
+      "bytes": 1097,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/stderr"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/stdout",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/missing-binary/stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/contract.json",
+      "git_blob_sha1": "cbf09310967b8c12e5b57c7194d6ab51db5b657f",
+      "sha256": "c1e6f75c30861650ab0c65590ded2ba136f2aba1686f4677c3cd9b83c42e5f58",
+      "bytes": 816,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/contract.json"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/fake-engine",
+      "git_blob_sha1": "3390bd28bd4c5e695db3fdac6e861a50891b17b2",
+      "sha256": "f4393a948f97204faf4a583905367deb96e412d6dc3a5686397d537b914c40dd",
+      "bytes": 164,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/fake-engine"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/main.gd",
+      "git_blob_sha1": "75b017e7a8f6c556bd2ecb4ac593f5b9fc697164",
+      "sha256": "4c3c41e3bc4fa282caecc69a7a24b04188c0a3e11ab66ad6685009b1ab5bbbaf",
+      "bytes": 2496,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/main.gd"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/mesh.gltf",
+      "git_blob_sha1": "2b0c64974774fc7ac3857733efb13abb06f35221",
+      "sha256": "883939499a958e58d1fff1041345ca2b8819f2febf7a43f8447b2ec09d91d50b",
+      "bytes": 1456,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/mesh.gltf"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/project.godot",
+      "git_blob_sha1": "daf54f77c4498a148d02f99ef3f8f80e318c0cf8",
+      "sha256": "bbe3466ceb1fb1c97a44606b47bf296c9bb615b7eb2ec14189bc5da11ca584ee",
+      "bytes": 138,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/project.godot"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/run.py",
+      "git_blob_sha1": "406639d978d5afc088d61d2c1ede4d73c9e758e8",
+      "sha256": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+      "bytes": 5342,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/stderr",
+      "git_blob_sha1": "ad5a434d7e16f439ba4d11e34cc71597949e5878",
+      "sha256": "2c06654a49fb7780a68de902af747ffee8cf3216063749dd0420ad4e0858a56b",
+      "bytes": 33,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/stderr"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/negative/optimized/stdout",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/negative/optimized/stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/oracle-before-run.md",
+      "git_blob_sha1": "be16de555f1d7e127b3641cb423d30d1292b93e4",
+      "sha256": "eefcd22012e3a59f6b58e278f2ece890f95ffa9b5dc65a9a0dd597b13fd1c43f",
+      "bytes": 534,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/oracle-before-run.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/run.stderr",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/run.stderr"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/review/run.stdout",
+      "git_blob_sha1": "e43408e344482b1bce185a0bd50263fa39c59074",
+      "sha256": "c237a3539891fc60c480a313b11962297f07c6c2a2bb9d084f63dfc90698e92d",
+      "bytes": 81,
+      "role": "historical review and bounded-repeat/control records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/review/run.stdout"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/run-output.txt",
+      "git_blob_sha1": "e43408e344482b1bce185a0bd50263fa39c59074",
+      "sha256": "c237a3539891fc60c480a313b11962297f07c6c2a2bb9d084f63dfc90698e92d",
+      "bytes": 81,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/run-output.txt"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/run.py",
+      "git_blob_sha1": "406639d978d5afc088d61d2c1ede4d73c9e758e8",
+      "sha256": "a87e064e305b97da04a05eb555422461c12ebcf0879882beecfd9f455f6e0c96",
+      "bytes": 5342,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/run.py"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/source-gate.md",
+      "git_blob_sha1": "1cb0f47b726257cd98f48051ccb3130ef50f113f",
+      "sha256": "23ac29354454a96d615f0e7e58bb5fe49ecb38f64fd18d433807cace7ca42fe2",
+      "bytes": 7816,
+      "role": "historical source/prospective protocol",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/source-gate.md"
+    },
+    {
+      "path": "research/experiments/godot-gltf-import-boundary/version-probe.json",
+      "git_blob_sha1": "34339a7f5f3b14909b2cef7b9c8658c66238e333",
+      "sha256": "7632ab85b9fe34658a3ca9b3e1eafb166a1ab3780291bc4245c58a966043f967",
+      "bytes": 249,
+      "role": "frozen program/input/contract/identity records",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary/version-probe.json"
+    },
+    {
+      "path": "research/source-notes/godot-runtime-provenance.md",
+      "git_blob_sha1": "11fbcd00a00783ea42ff40b87b080018cd519cdc",
+      "sha256": "4894e74c9fa2738b3939eb2db44c9d7d9182d43463615d9bbbe533fb76c1a651",
+      "bytes": 3644,
+      "role": "shared provenance record",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/research/source-notes/godot-runtime-provenance.md"
+    }
+  ],
+  "article_historical_anchor": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+  "article_anchor_relation": "Same package file/subtree identities as existing800d505 archive; no new archive copy."
+}

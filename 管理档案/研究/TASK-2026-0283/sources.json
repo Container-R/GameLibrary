@@ -1,0 +1,167 @@
+{
+  "task_id": "TASK-2026-0283",
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/验证glTF导入结果时，先区分源数据和目标表示.md",
+  "primary_sources": [
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "modules/gltf/doc_classes/GLTFDocument.xml",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/gltf/doc_classes/GLTFDocument.xml",
+        "git_blob": "ee7d91c29f4bfdc6e2b480f030b970fdafc51c9f",
+        "sha256": "bfc37dde233d37390e9633b1481023267cb5cb8939e6f4e3e6585ee7b02f73dc"
+      },
+      "locator": "append_from_file28–38",
+      "claim": "The file API imports data into the supplied GLTFState and returns an Error.",
+      "observed_content": "API contract distinguishes state population from scene/render completion.",
+      "conditions": "The article inspects local mesh arrays and enumerates actual objects; no editor import or render guarantee.",
+      "article_sections": [
+        "交接层",
+        "取数与失败顺序"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "doc/classes/ImporterMesh.xml",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/doc/classes/ImporterMesh.xml",
+        "git_blob": "8d4bc028a0d59c3bf2533d1f6190c06ea0e8a4b7",
+        "sha256": "addd86247f31149758557d870c0a13ccd81c2fa0395d0a6757486b99fcafc854"
+      },
+      "locator": "get_mesh90–98; get_surface_arrays99–106",
+      "claim": "ImporterMesh exposes stored surface arrays and generates/caches an ArrayMesh.",
+      "observed_content": "Repeated get_mesh calls return cached data until cleared; base_mesh can be mutated.",
+      "conditions": "Fresh state per case; two representations from one import are not independent parsers.",
+      "article_sections": [
+        "交接层",
+        "取数与失败顺序"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "scene/resources/3d/importer_mesh.cpp",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/3d/importer_mesh.cpp",
+        "git_blob": "cd57606417fcdd799c9c45a850386958a5c71472",
+        "sha256": "ca123b78b3da61e0d3b8256cad402af283c234cc12995f0ae3f65ec0ed9ed8b8"
+      },
+      "locator": "get_surface_arrays113–116; get_mesh578–610;get_surface_format149–151",
+      "claim": "Initial runtime conversion iterates surfaces and passes each primitive, arrays, blend shapes, LODs and flags to ArrayMesh.; get_surface_format exposes stored flags for branch inspection.",
+      "observed_content": "The decisive conversion is add_surface_from_arrays with surface.flags.",
+      "conditions": "Pinned source implementation, not authentication of the archived binary.",
+      "article_sections": [
+        "交接层",
+        "逐阶段比较"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "scene/resources/mesh.cpp",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/scene/resources/mesh.cpp",
+        "git_blob": "9c3ba7df8ba4ba864e93eb4f60e2828cb8477a54",
+        "sha256": "631626c6c051b94eb552409c3fb0fb07c60daccf62ea009f332f231ccd7ba775"
+      },
+      "locator": "add_surface_from_arrays1818–1842;surface_get_format1935–1939",
+      "claim": "ArrayMesh creates surface data through RenderingServer and routes surface_get_arrays back through RenderingServer.; surface_get_format exposes actual runtime surface format.",
+      "observed_content": "The logical array-to-runtime representation boundary is an actual call chain, not inferred from class names.",
+      "conditions": "No physical GPU layout or actual rendering test is claimed.",
+      "article_sections": [
+        "交接层",
+        "目标读回"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "modules/gltf/gltf_document.cpp",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/modules/gltf/gltf_document.cpp",
+        "git_blob": "563d53d8b6dd9fb06c4b20ba226b0ec78a99ffae"
+      },
+      "locator": "1469–1526 and1692–1715;1438–1444 and1738–1750",
+      "claim": "Indexed TRIANGLES swap second/third indices, collect used vertices in source order, map complete attribute arrays and remap indices.; primitive flags start with COMPRESS_ATTRIBUTES and are cleared only under explicit conditions.",
+      "observed_content": "Source shows index validity checks, used bitmap, ordered mapping, position/normal decode with mapping, and reverse mapping of indices.; z-is-approximately-zero condition is distinct from merely planar geometry.",
+      "conditions": "Only this explicit mapping and face-winding path; no general optimizer equivalence or observed triangle-sequence reordering.",
+      "article_sections": [
+        "编号与绕序",
+        "完整属性关系",
+        "实际分支选择"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "doc/classes/ArrayMesh.xml",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/doc/classes/ArrayMesh.xml",
+        "git_blob": "36185dbedf2f923487b2f338a7b02452b879b0ba",
+        "sha256": "70e5e5d7e15e5cb16d93234dea142c73679a7059825903353eb4c29f970aa02e"
+      },
+      "locator": "line49",
+      "claim": "Godot uses clockwise winding for front faces of triangle primitives.",
+      "observed_content": "Explicit public class documentation.",
+      "conditions": "Source convention and shading normal are distinct; no scene transform is inferred.",
+      "article_sections": [
+        "编号与绕序"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "servers/rendering/rendering_server.cpp",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/servers/rendering/rendering_server.cpp",
+        "git_blob": "ccaa6d09357978f81dfda4b9a268e94a0807099b",
+        "sha256": "3ad47a2d1f7fd8221ceb30fecc5f0f9501ca46ed43dbc55d2f21c5e50af01f17"
+      },
+      "locator": "451–458;597–624;1484–1511",
+      "claim": "AABB size is clamped; non-compressed-flag 3D positions are cast to float and normals are octahedrally encoded and quantized to two uint16 components, then decoded.",
+      "observed_content": "Read exact branches and corresponding reconstruction. Compression-enabled representation follows a separate path.",
+      "conditions": "Normal example is explicitly the no-ARRAY_FLAG_COMPRESS_ATTRIBUTES branch; it does not explain the specific old binary or prove a global error bound. No native execution.",
+      "article_sections": [
+        "目标读回",
+        "容差",
+        "AABB"
+      ]
+    },
+    {
+      "source": {
+        "organization": "Godot Engine contributors",
+        "title": "core/math/vector3.cpp",
+        "revision": "35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+        "url": "https://github.com/godotengine/godot/blob/35e80b3a8822a9df9be390814b62f44c0a9c69e8/core/math/vector3.cpp",
+        "git_blob": "336cd9ba26e07b945eecb091ead91d2da9d71853",
+        "sha256": "1dbe4d75463a555a660002ecdaaf72de19d861c04c3b7080c6c64a754b89962e"
+      },
+      "locator": "90–113",
+      "claim": "Octahedral encoding maps +Z to(0.5,0.5); decoding reconstructs and normalizes the vector.",
+      "observed_content": "Read encode and decode implementation; uint16 representation of0.5×65535 cannot retain half an integer unit.",
+      "conditions": "Finite source-based arithmetic, not measured errors or a bound for all directions.",
+      "article_sections": [
+        "近似机制"
+      ]
+    }
+  ],
+  "original_method_and_paper_example": {
+    "role": "Editorial synthesis and explicit mathematical reasoning, not a new engine observation.",
+    "method": "Freeze source identity and field-level expectations; compare a known map and winding relation at import, then discrete structure and predeclared numerical requirements at readback; preserve the first divergent stage.",
+    "paper_example": "Five source vertices with source0 unused, complete used-vertex map and two ordered triangles. Exact source-to-target mapping and cross products are derived, not executed in Godot.",
+    "tolerance": "Length and direction are separate contract choices. No default epsilon or all-direction quantization bound is supplied.",
+    "format_gate": "Read both stage formats, test COMPRESS_ATTRIBUTES bit, use requirements for that selected branch; unknown or unsupported conditions remain not accepted. Import option flags and storage format flags are distinct."
+  },
+  "historical_evidence": {
+    "materials_record": "管理档案/研究/TASK-2026-0283/materials.json",
+    "article_anchor": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
+    "existing_archive_anchor": "800d505633df0ceaa0bab8de643b0244ba1a5476",
+    "scope": "One original four-vertex/two-triangle input; preserved first full-runner failure, corrected run and same-input independent repeat. The added unused-vertex paper example was not run.",
+    "claims": "Two array stages, exact selected positions and changed winding, observed small normal difference, nonzero AABB thickness, original acceptance threshold and failed extra assertion.",
+    "provenance": "Archived installed build is not authenticated to pinned public source. Source mechanism and historical observations are distinct evidence.",
+    "preservation": "No original code, inputs, contracts, outputs, failures or historical source gate rewritten; no old raw environment data copied."
+  },
+  "excluded": "No current engine/native/compiler/GPU/render/performance/editor/DCC/security or cross-platform test. No universal tolerance, arbitrary optimizer equivalence or whole-library acceptance.",
+  "accessed_at": "2026-11-06"
+}

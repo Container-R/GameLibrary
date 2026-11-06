@@ -97,7 +97,7 @@ Godot暂停/合成输入的4.6官方资料和二进制哈希见[夹具档案](ht
 
 [SQLite 提交恢复边界](https://github.com/Container-R/GameLibrary/blob/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/sqlite-commit-busy/README.md)将滚动 Transaction/lockingv3 文档与本地 DELETE journal 实测区分；BEGIN 入口拒绝和仍活动事务内的 COMMIT BUSY 不共用重试假设。旧本地证据丢失后以新 UUID 重跑，不冒充恢复。
 
-[原生 glTF 导入阶段](../研究记录/experiments/godot-gltf-import-boundary/source-gate.md)保留固定规范、Godot API 与公开比较源码的边界；原生逻辑数组观察不等于编辑器/GPU证据。首轮额外AABB断言失败与修正过程公开保留，未调整冻结几何意图。
+[glTF导入结果的分阶段比较](../../GameLibrary/技术美术/环境管线/模型导入/验证glTF导入结果时，先区分源数据和目标表示.md)给出源数据、导入数组和运行时读回的比较方法。[历史来源与预定协议](../研究记录/experiments/godot-gltf-import-boundary/source-gate.md)及[固定实验档案](https://github.com/Container-R/GameLibrary/tree/800d505633df0ceaa0bab8de643b0244ba1a5476/research/experiments/godot-gltf-import-boundary)保留不同证据身份、首轮额外AABB断言失败与后续修正；不将这些旧记录当作当前官方构建、编辑器或GPU的认证。
 
 [Rig 求值交接来源](../研究记录/source-notes/rig-evaluation-handoff.md)将 Square Enix 的2015年日文项目材料、Unity Animation Rigging 1.2.1 的版本化规则与 Capcom 雇主职责例子分开。原创接收矩阵尚未执行；原根运动证据仍是 Python 几何模型，不因其他 Godot 实验存在而升级为引擎证据。
 
