@@ -9957,18 +9957,44 @@
       "reader": "模型导入工具程序员及技术美术",
       "scope": "核现有管理技术稿与正式普通/稀疏读取的重叠，研究实例绑定、成对集合、count、关节范围、跨集合重复及权重数值校验；不实现变换、蒙皮或动画。",
       "expected_outcome": "明确一个不重复的完整影响表方法及必要来源，成熟后独立全文审查和有限归属修复。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0285/sources.json",
+        "管理档案/研究/TASK-2026-0285/materials.json",
+        "管理档案/研究/TASK-2026-0285/范围与保留.md",
+        "管理档案/审稿/SOL-MODEL-007/20261106-full-article.json"
+      ],
+      "next_action": "核定与影响表衔接的glTF逆绑定/蒙皮矩阵现有技术稿范围及独立价值。",
+      "blocker": null,
+      "updated_at": "2026-11-06T10:48:18Z",
+      "related_task_ids": [
+        "TASK-2026-0284",
+        "TASK-2026-0282"
+      ],
+      "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
+      "review": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0286",
+      "question": "从已经正确的关节影响表到glTF蒙皮变换，现有逆绑定与节点空间技术说明缺少哪些可独立交付的方法？",
+      "reader": "模型导入工具程序员及技术美术",
+      "scope": "对照现有逆绑定/蒙皮节点空间技术稿、LBS正文与固定规范，先核独立问题和完整方法边界；不重复权重解码，不扩成全动画系统。",
+      "expected_outcome": "明确有价值且不重复的矩阵空间读者任务、证据和缺口，再决定是否成文或合并补足。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0284/范围与保留.md"
+        "管理档案/研究/TASK-2026-0285/范围与保留.md"
       ],
-      "next_action": "对照固定glTF规范与当前管理稿，界定从节点实例、各JOINTS/WEIGHTS集合到可靠影响表的缺失步骤和读者任务。",
+      "next_action": "全文对照现有矩阵说明、LBS正式文章及固定glTF实例/逆绑定原文，记录读者需要完成的具体变换判断和剩余缺口。",
       "blocker": null,
-      "updated_at": "2026-11-06T10:35:34Z",
+      "updated_at": "2026-11-06T10:48:18Z",
       "related_task_ids": [
-        "TASK-2026-0284",
-        "TASK-2026-0282"
+        "TASK-2026-0285",
+        "TASK-2026-0281"
       ]
     }
   ],
@@ -9976,7 +10002,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Scope the complete instance-specific joint/weight influence-table method without duplicating generic decoding or expanding to full skinning."
+    "next_priority": "Scope retained inverse-bind and skin-instance matrix explanation against existing LBS and joint-weight methods before another finite publication."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

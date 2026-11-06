@@ -1,0 +1,104 @@
+{
+  "task_id": "TASK-2026-0285",
+  "baseline_commit": "ff2826880d75af30c04f53e33e64c668410979ed",
+  "role": "Historical prose/source/review identity and current material index, not execution evidence for a new parser or skinning implementation.",
+  "files": [
+    {
+      "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+      "git_blob_sha1": "bf36011d2d26be286a1c683085521e92b68157a9",
+      "sha256": "a72ab8517905dc833251ef9d711af6bdc5c0b2bfa580fc6f1aff5df1ec9679c6",
+      "bytes": 7063,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+      "disposition": "Current file becomes a historical material index; old full prose remains at fixed snapshot."
+    },
+    {
+      "path": "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+      "git_blob_sha1": "f49fbbbc302dac47744877d5b7df5f289974f553",
+      "sha256": "1ea5fbc3e4416db132b16b72f949f4e7b8eddd93564313d40a78b6da91e0990e",
+      "bytes": 1590,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    },
+    {
+      "path": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+      "git_blob_sha1": "2139996adba7aecb2eca87b09f0c074007ec60ce",
+      "sha256": "c94234f8decd600b200a0fcc858e5d8cdade224171e1f2795b325e3728e33c28",
+      "bytes": 2656,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    },
+    {
+      "path": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+      "git_blob_sha1": "027adad64955f893d383feb7052b37700ccf8955",
+      "sha256": "062fd68284cf91a54b8da35a21d386d21d7cf34e425f9a51e58007657b8f36ed",
+      "bytes": 2823,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    },
+    {
+      "path": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+      "git_blob_sha1": "f19780840a602d4fe57bb10dd85e2d26a9ded6a3",
+      "sha256": "76b54bbc9dcc71e8792817e3768cf909305961107caaf41a3ece87c281bf3409",
+      "bytes": 3430,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    },
+    {
+      "path": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.md",
+      "git_blob_sha1": "d6048ef1cb01fae05dccc1aef915ebb5d0802007",
+      "sha256": "6742a43e74efe1520b7b0b18e55ab73177e9aadd5433118d4808476af0c0b96b",
+      "bytes": 7874,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/管理档案/审稿/SOL-MODEL-004/20261106-full-article.md",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    },
+    {
+      "path": ".agent/runs/20261103T090140Z-gltf-normalized-attributes.json",
+      "git_blob_sha1": "835e36b9eb89c94b6e93590655659675182b55a1",
+      "sha256": "38a8f94a8edfe572ff027b55456743d781a643cb05b8683d0b518736a0756e35",
+      "bytes": 1094,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ff2826880d75af30c04f53e33e64c668410979ed/.agent/runs/20261103T090140Z-gltf-normalized-attributes.json",
+      "disposition": "Keep exact bytes; historical review/source relation is not a new article acceptance."
+    }
+  ],
+  "old_article_prior_digests": [
+    {
+      "sha256": "ffa8f68bf0d331f1a10fe3b5aa9cc0421ae4f837326438e876145fd98922224c",
+      "record_field": "SOL-MODEL-001.normalized_attribute_support.reviewed_before_link_sha256",
+      "verification": "Recorded historical digest, not newly fetched historical bytes."
+    },
+    {
+      "sha256": "70c76a07320e22899b4beb3b03c10f7e920ad0d8949bfeb2761afb5e79f5ea25",
+      "record_field": "SOL-MODEL-001.normalized_attribute_support.previous_link_version_sha256",
+      "verification": "Recorded historical digest, not newly fetched historical bytes."
+    }
+  ],
+  "binding_warning": "SOL-MODEL-004 limited_link_edits approves only one former link paragraph at old article SHA256 a72ab8517905dc833251ef9d711af6bdc5c0b2bfa580fc6f1aff5df1ec9679c6. Neither it nor the old source/reader review accepts a new method or new history index.",
+  "source_note_disposition": "This is a historical JSON source record, not a second technical article. Preserve exact current bytes and explain its legacy reader/support association in new TASK-2026-0285 materials; create new sources.json for newly read sources and new claims.",
+  "current_index": {
+    "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+    "sha256": "a24345cf4f933bd438c11f23ce62c86aa1d55aeac284a08ca4a133beaada38d3",
+    "role": "Index to one new formal method, old fixed article, preserved source and old scoped reviews."
+  },
+  "inbound_scan": {
+    "matched_current_blobs": 2377,
+    "total_bytes": 11744716,
+    "markdown_files": 1163,
+    "json_files": 927,
+    "manifest_named_files": 45,
+    "direct_markdown_inbound": 1,
+    "direct_markdown_disposition": "TASK-2026-0282 historical migration note retains original link; its target transparently becomes a history index.",
+    "manifest_binding_found": false,
+    "limit": "Exact current bytes and specified paths/titles/digests only; not whole-library technical reading, unknown aliases, external inbound links or all historical commits."
+  },
+  "preserved_paths": [
+    "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
+    "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
+    "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+    "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+    "管理档案/审稿/SOL-MODEL-004/20261106-full-article.md",
+    ".agent/runs/20261103T090140Z-gltf-normalized-attributes.json",
+    "管理档案/研究/TASK-2026-0281/范围与保留.md",
+    "管理档案/研究/TASK-2026-0282/迁移与保留.md"
+  ],
+  "limits": "Prior fractions and mapping were original paper/source work, not a complete asset or parser/Validator/skinning/engine/GPU test. New method reviewed independently; no old pass inherited."
+}

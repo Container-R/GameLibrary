@@ -1,0 +1,178 @@
+{
+  "task_id": "TASK-2026-0285",
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "gltf-spec",
+      "publisher": "Khronos Group",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "git_blob_sha1": "e5088cdc9a4e344e836568f57e2db6726f5a6740",
+      "sha256": "8951acd6f3299e2ca28b4017e128626731049932ef316556e320e05266e73f41",
+      "bytes": 194203,
+      "reviewed_scope": "Selected decisive sections for joint/weight source semantics, not the whole specification or full asset certification."
+    },
+    {
+      "id": "accessor-schema",
+      "publisher": "Khronos Group",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json",
+      "git_blob_sha1": "07f890ac349b3622ac589f6c3fe0cfb405d60e96",
+      "sha256": "836d6678a985f3ffda0ab0c88ba6c0b83a8a5a484880c8da22d512525be3f418",
+      "bytes": 6099,
+      "reviewed_scope": "Selected decisive sections for joint/weight source semantics, not the whole specification or full asset certification."
+    },
+    {
+      "id": "skin-schema",
+      "publisher": "Khronos Group",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/skin.schema.json",
+      "git_blob_sha1": "800fe6f39bf3720f6366c0d874296149ef0da65c",
+      "sha256": "1ecd6daca82bacbd280bc9abcf812fcd97108b6dce50c22dd52dbc6066756bc1",
+      "bytes": 1608,
+      "reviewed_scope": "joints is required, nonempty, unique; schema read, not executed."
+    },
+    {
+      "id": "node-schema",
+      "publisher": "Khronos Group",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/node.schema.json",
+      "git_blob_sha1": "6e028ad5810c5b2bbefc2b6ef430893235686a20",
+      "sha256": "1a88ac975a6eb05adf51484ce3104b687f260cd75157223826bfcf9fc05ce52c",
+      "bytes": 4023,
+      "reviewed_scope": "mesh/skin and morph weights field relationships; supplementary source read, not full schema execution."
+    }
+  ],
+  "claims": [
+    {
+      "id": "element-source",
+      "source": "gltf-spec",
+      "lines": "1140–1151",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessors-overview",
+      "read_finding": "Resolve accessor element source then sparse substitution. Semantic checks consume resulting complete elements, not dense source only."
+    },
+    {
+      "id": "effective-type",
+      "source": "gltf-spec",
+      "lines": "1185–1229",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#accessor-data-types",
+      "read_finding": "Effective component type combines componentType and normalized; unorm8 c/255 and unorm16 c/65535; float32 and uint32 must not use normalized=true."
+    },
+    {
+      "id": "semantic-bindings-types",
+      "source": "gltf-spec",
+      "lines": "1637–1677",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-attributes",
+      "read_finding": "attributes map semantic names to accessor indices; JOINTS VEC4 uint8/uint16 discrete, WEIGHTS VEC4 float32/unorm8/unorm16 continuous."
+    },
+    {
+      "id": "set-syntax-contiguity",
+      "source": "gltf-spec",
+      "lines": "1679–1692",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-attributes",
+      "read_finding": "Indexed suffix valid decimal, no leading positive zeros, <=9 digits; each same semantic sequence has no gaps."
+    },
+    {
+      "id": "finite-and-counts",
+      "source": "gltf-spec",
+      "lines": "1699–1705",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-attributes",
+      "read_finding": "Float vertex attributes cannot have NaN/infinity; all primitive attribute accessor counts equal."
+    },
+    {
+      "id": "vertex-correspondence",
+      "source": "gltf-spec",
+      "lines": "1712–1738",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#meshes-topology",
+      "read_finding": "Same accessor element corresponds to same logical vertex; an indexed primitive uses one index to select all attributes."
+    },
+    {
+      "id": "paired-influences",
+      "source": "gltf-spec",
+      "lines": "2019–2033",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#skinned-mesh-primitive-attributes",
+      "read_finding": "Per-n JOINTS and WEIGHTS both present or absent, VEC4 up to four influences; weights nonnegative; nonzero joint indices unique per vertex; zero-weight placeholders SHOULD be zero."
+    },
+    {
+      "id": "quantized-sum",
+      "source": "gltf-spec",
+      "lines": "2058–2075",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#skinned-mesh-primitive-attributes",
+      "read_finding": "If all sets unorm8/unorm16 exact total after dequantization MUST be1; implementation note supplies uint8×257 to common denominator65535."
+    },
+    {
+      "id": "float-sum",
+      "source": "gltf-spec",
+      "lines": "2078–2088",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#skinned-mesh-primitive-attributes",
+      "read_finding": "If any float set, total SHOULD be as close as reasonably possible to1; RECOMMENDED epsilon2e-7 times nonzero count. Authoring renormalization and implementations supporting one set distinguished from full preservation."
+    },
+    {
+      "id": "joint-map",
+      "source": "gltf-spec",
+      "lines": "2093–2124",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#skins-overview",
+      "read_finding": "skin.joints maps skin indices to node indices; optional inverseBindMatrices uses same joint order, but matrix processing is outside proposed method."
+    },
+    {
+      "id": "instance-identity",
+      "source": "gltf-spec",
+      "lines": "2163–2167",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#instantiation-overview",
+      "read_finding": "Same mesh may be instantiated by nodes with different skins; mapping must be scoped by selected instance skin."
+    },
+    {
+      "id": "all-joint-bounds",
+      "source": "gltf-spec",
+      "lines": "2236–2246",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#instantiation-skinned",
+      "read_finding": "node.skin determines skin for skinning-related primitives; every JOINTS accessor index MUST be < referenced skin.joints length, not only nonzero influences."
+    },
+    {
+      "id": "all-zero-boundary",
+      "source": "gltf-spec",
+      "lines": "2265–2268",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#instantiation-skinned",
+      "read_finding": "Implementation note explains all-zero weights have no applicable transformation; not an ordinary-mesh fallback."
+    },
+    {
+      "id": "skin-joint-structure",
+      "source": "skin-schema",
+      "locator": "properties.joints and required",
+      "read_finding": "joints required, minItems 1, uniqueItems true; node identifiers are separately resolved before method."
+    }
+  ],
+  "schema_claims": [
+    {
+      "source": "accessor-schema",
+      "locator": "properties.normalized",
+      "finding": "Boolean flag defaults false and cannot be true for FLOAT or UNSIGNED_INT."
+    },
+    {
+      "source": "accessor-schema",
+      "locator": "properties.count/type/componentType and required",
+      "finding": "count is positive integer; elements, components and bytes must not be confused; basic accessor required fields."
+    }
+  ],
+  "method_design": [
+    "Keep instance identity, complete paired-set traversal and accessor provenance to produce a traceable influence table.",
+    "Retain post-sparse raw unsigned weight components for exact quantized sums; do not certify original integers from rounded inverse conversion.",
+    "All zero-weight joint indices are range-checked, while only nonzero influences participate in cross-set uniqueness.",
+    "Separate unsupported complete reading, mandatory source errors, recommended FLOAT-sum quality diagnostics and explicit project acceptance.",
+    "Bound counts/allocations and integer accumulation; no generator, parser or asset-repair API is claimed."
+  ],
+  "scope": "Core semantics for selected node mesh/skin instance and primitive with skin attributes. Foundation includes parsed structure/reference validity and complete accessor decoding. No matrix, skinning, animation, renderer or full asset certification.",
+  "not_executed": [
+    "asset construction",
+    "original library scripts",
+    "parser",
+    "JSON Schema Validator",
+    "cgltf",
+    "skinning",
+    "engine",
+    "GPU",
+    "visual or performance test"
+  ],
+  "source_independence": "Normative sources from one Khronos revision, not multiple independent implementations. Fresh model technical review independently checks decisive sources; paper calculations are not parser execution.",
+  "source_discrepancy_boundary": "node schema top description says all primitives require JOINTS_0/WEIGHTS_0 when node has skin; main specification 2238–2242 distinguishes primitives with and without skin attributes. This article selects a primitive with the pair and does not use the discrepant sentence to validate other primitives or whole scenes."
+}

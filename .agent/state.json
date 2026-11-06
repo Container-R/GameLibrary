@@ -3,33 +3,33 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0285"
+    "TASK-2026-0286"
   ],
-  "last_completed_task_id": "TASK-2026-0284",
-  "last_real_progress_at": "2026-11-06T10:35:34Z",
-  "last_commit_sha": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+  "last_completed_task_id": "TASK-2026-0285",
+  "last_real_progress_at": "2026-11-06T10:48:18Z",
+  "last_commit_sha": "ff2826880d75af30c04f53e33e64c668410979ed",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-MODEL-006/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.json"
   },
   "publication": {
-    "kind": "full-face-corner-reindexing-method-and-material-migration",
-    "article": "GameLibrary/技术美术/环境管线/模型导入/接收MikkTSpace面角切线后，怎样重建顶点与索引.md",
-    "article_sha256": "cf839a715d0abd6ee6c31c463698ebab85be596dc94395902855b98d763b1e91",
-    "previous_verified_head": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+    "kind": "complete-joint-weight-influence-table-method",
+    "article": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
+    "article_sha256": "342b78ae6452412f7196047063bfe1e8e3df98e193f85e487719359ff1e9eeb2",
+    "previous_verified_head": "ff2826880d75af30c04f53e33e64c668410979ed",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "One complete method, route, two material indices and two limited inbound edits; frozen execution inputs unchanged. Not whole-library acceptance."
+    "scope": "One complete method and topic entry, one historical material index. Existing historical source/reviews unchanged. Not whole-library acceptance."
   },
-  "next_action": "对照固定glTF规范与当前管理稿，界定从节点实例、各JOINTS/WEIGHTS集合到可靠影响表的缺失步骤和读者任务。",
+  "next_action": "全文对照现有矩阵说明、LBS正式文章及固定glTF实例/逆绑定原文，记录读者需要完成的具体变换判断和剩余缺口。",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0285",
-      "question": "给定glTF mesh/skin实例，怎样解码并验证关节编号和权重，得到可靠的逐顶点关节节点—权重影响表？",
-      "scope_record": "管理档案/研究/TASK-2026-0284/范围与保留.md"
+      "task_id": "TASK-2026-0286",
+      "question": "从已经正确的关节影响表到glTF蒙皮变换，现有逆绑定与节点空间技术说明缺少哪些可独立交付的方法？",
+      "scope_record": "管理档案/研究/TASK-2026-0285/范围与保留.md"
     },
     {
-      "question": "其余管理技术正文及其他学科导航依实际依赖逐题整理。",
+      "question": "其他学科管理技术正文和导航按实际依赖逐题整理。",
       "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md"
     }
   ],

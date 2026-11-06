@@ -1,0 +1,72 @@
+{
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
+  "article_sha256": "342b78ae6452412f7196047063bfe1e8e3df98e193f85e487719359ff1e9eeb2",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "complete-instance-specific-influence-table-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-joint-weight-technical-20261106",
+      "mode": "independent-full-technical-primary-source-and-data-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-joint-weight-reader-20261106",
+      "mode": "independent-complete-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-joint-weight-navigation-20261106",
+      "mode": "independent-root-markdown-route-and-document-role-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0285/sources.json",
+      "sha256": "c5b08ed17024b0d550507f033a9795b7ad2e2cf9f694b142248aed0332138394"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0285/materials.json",
+      "sha256": "fa39bffb90c9679a5b1d6f4a1c764fd783663e84953462c5b49af05dad329072"
+    }
+  ],
+  "report_sha256": "d09d05eccdb4a68c58530be2a7b5b55e6878c9e84594714c75fdb7576b584f6b",
+  "scope_record": "管理档案/研究/TASK-2026-0285/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/技术美术/README.md",
+      "sha256": "19fdbe3550da7d3276ed70ce38f4697311b7e533b853b8d4670d97e3ccd79257"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/README.md",
+      "sha256": "8dc7564b6115119be80ccc2ae82263b90a594a232d4a8f5a1e6364763f3acc2d"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/模型导入/README.md",
+      "sha256": "0b3b37d00a37198a085251b892631749bba8dd5443992b9af41897615b2f9d6d"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
+      "sha256": "a24345cf4f933bd438c11f23ce62c86aa1d55aeac284a08ca4a133beaada38d3"
+    }
+  ],
+  "limits": "Independent model reviews and bounded original data/arithmetic checks. No parser, Validator, schema engine, skinning, animation, engine, GPU, image, performance or human test. Historical source/reviews remain historical. Other technical prose and whole-library acceptance unfinished.",
+  "updated_at": "2026-11-06T10:48:18Z"
+}
