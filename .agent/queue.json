@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T06:13:51Z",
-      "next_action": "Compare SDL3 event capture and keyboard-state semantics with the existing fixed-step and input-buffer readers. Those readers already cover short-press loss and repeat filtering; add only a genuinely nonduplicate data-representation example, otherwise record no-go and continue source research. Do not claim device input or engine execution.",
+      "last_progress_at": "2026-11-06T06:20:25Z",
+      "next_action": "Deep-read McGuire/Bavoil Weighted Blended Order-Independent Transparency and its errata against existing premultiplied-alpha and triangle-order readers. Verify corrected accumulation, revealage and composition equations; decide whether a bounded exact-arithmetic counterexample warrants a distinct transparency topic. Do not claim GPU rendering or performance from a data model.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -404,7 +404,10 @@
         "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
         "管理档案/来源笔记/inertial-filtered-curves.json",
         "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
-        "管理档案/来源笔记/gamelift-placement-recovery.json"
+        "管理档案/来源笔记/gamelift-placement-recovery.json",
+        "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+        "管理档案/来源笔记/input-event-representation.json",
+        "管理档案/实验/输入事件表示/verify_event_reduction.py"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

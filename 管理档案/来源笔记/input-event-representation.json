@@ -1,0 +1,62 @@
+{
+  "id": "SUPPORT-PROG-INPUT-EVENT-REPRESENTATION-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
+  "scope": "Existing reader adds two application-side information-loss cases; no new input-system article.",
+  "sources": [
+    {
+      "author": "SDL contributors",
+      "repository": "https://github.com/libsdl-org/SDL",
+      "commit": "f6864924f76e1a0b4abaefc76ae2ed22b1a8916e",
+      "version": "SDL 3.2.8, verified from version header",
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/events/SDL_keyboard.c#L510-L650",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "include/SDL3/SDL_version.h lines 45-66",
+        "include/SDL3/SDL_keyboard.h lines 128-158",
+        "include/SDL3/SDL_events.h lines 337-364, 1049-1069 and 1224-1268",
+        "src/events/SDL_keyboard.c lines 510-650"
+      ],
+      "claims": [
+        "Current keystate and queued event history are different data.",
+        "Key state is updated before the internal path attempts event posting.",
+        "PollEvent retrieves a queued event, not a rewind of the current state array."
+      ],
+      "limits": [
+        "Pinned source reading does not verify live SDL, OS or device behavior.",
+        "Event posting is conditional; example assumes accepted events fully delivered to the application.",
+        "No claim that every DOWN is observed after release, or that every PollEvent call repumps all devices."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
+    "comparison_commit": "5293cedf9ad814419ce2bd603ac19e30b5aed391",
+    "existing_coverage": "Fixed-step reader already covers short-press loss, repeat policy, tick assignment, zero-step retention and single consumption. Related layout, cancellation and combat-buffer material serves different boundaries.",
+    "new_value": [
+      "Current-state recheck can discard an already queued short press.",
+      "Latched Boolean preserves at least one occurrence but merges two occurrences."
+    ],
+    "decision": "Two bounded representation examples in existing reader only; no separate support or new book."
+  },
+  "original_data_check": {
+    "script": "管理档案/实验/输入事件表示/verify_event_reduction.py",
+    "executed": true,
+    "observations": [
+      "No events: held false, pressed false, zero requests.",
+      "Short press: held false, pressed true, one request.",
+      "Two short presses: held false, pressed true, two ordered requests.",
+      "Held with repeats: held true, pressed true, one request.",
+      "Using final false to gate the earlier DOWN discards the short-press request."
+    ],
+    "policy": "Initially unheld; pressed_seen false at interval start, set by nonrepeat DOWN and not cleared by UP. One request per nonrepeat DOWN.",
+    "limits": "Four supplied data sequences, not hardware acquisition, event-queue completeness, SDL execution or game simulation."
+  },
+  "execution_limits": [
+    "No SDL library, OS/device event collection, engine, game or human test.",
+    "No device-time to simulation-tick mapping or guaranteed action execution.",
+    "Original script reads no files, devices, credentials or network."
+  ],
+  "third_party_assets_redistributed": false
+}

@@ -1833,7 +1833,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/programming/fixed-step-simulation-boundary.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "1fc365aae546411cf137787440473db2bf83565a466d57cc49063d9f36471966",
+      "reader_sha256": "1cd86d0d74cc36c5343e2da25970207cd566d4dc79234a3350367d50cb691069",
       "review_paths": [
         "管理档案/审查/挂起计时-来源与读者审查.md",
         "管理档案/审查/随机流消费-来源与读者审查.md",
@@ -1841,7 +1841,8 @@
         "管理档案/审查/有界抽样与随机流消费-来源与读者审查.md",
         "管理档案/审查/乘加舍入与回放-来源与读者审查.md",
         "管理档案/审查/EnTT事件队列发布边界-来源与读者审查.md",
-        "管理档案/审查/瞬移显示历史-来源与读者审查.md"
+        "管理档案/审查/瞬移显示历史-来源与读者审查.md",
+        "管理档案/审查/输入事件表示-源码与数据审查.md"
       ],
       "latest_increment": {
         "scope": "Optional force and impulse units/lifetime explanation; not a new physics run or trajectory-equivalence claim.",
@@ -1896,6 +1897,12 @@
         "review": "管理档案/审查/瞬移显示历史-来源与读者审查.md",
         "previous_reader_sha256": "20994be01d5dfc36ea786e24d45a5ff3b2f2784de196a3d4588bb0831bddbf46",
         "scope": "Finite display-history discontinuity example and scoped Godot4.4 documentation/source reading; no runtime execution."
+      },
+      "updated_at": "2026-11-06",
+      "event_representation_extension": {
+        "source_record": "管理档案/来源笔记/input-event-representation.json",
+        "review": "管理档案/审查/输入事件表示-源码与数据审查.md",
+        "scope": "Current-state guards may drop queued presses; a latched Boolean merges occurrence counts. Original four-sequence data check executed; no SDL or device test."
       }
     },
     {
@@ -3973,7 +3980,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5293cedf9ad814419ce2bd603ac19e30b5aed391",
+  "publication_base_sha": "8d6434ff2d2f98d7c78fe8efc52a89ab5b0235d7",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,
