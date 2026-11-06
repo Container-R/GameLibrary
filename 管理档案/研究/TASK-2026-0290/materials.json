@@ -1,0 +1,176 @@
+{
+  "task_id": "TASK-2026-0290",
+  "baseline_commit": "12c1ccbd891a08ee93c324e4aefb121f2388a8aa",
+  "base_tree": "e11f25209aff03df6fa12c91a80ac21fcc6a9f71",
+  "current_method": {
+    "id": "SOL-GFX-005",
+    "path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+    "role": "Only formal complete comparison-kernel method."
+  },
+  "historical_records": [
+    {
+      "path": "管理档案/来源笔记/shadow-comparison-filter-order.json",
+      "sha256": "53972d432f58fdd3ddfaf484d844281d9de528218c33ccbc79638049343672e6",
+      "git_blob_sha1": "cb5d579054a9594efe197e58bcba7a300a9a58e9",
+      "bytes": 2437,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/来源笔记/shadow-comparison-filter-order.json",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/审查/阴影比较过滤-来源与读者审查.md",
+      "sha256": "9f005e1794c4730db90291f7ba37220431a3e3164f44b123de072d3f72b300f8",
+      "git_blob_sha1": "2475d7ce3e22ac82cb71b42779b06f6b08058a48",
+      "bytes": 1670,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/审查/阴影比较过滤-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": ".agent/runs/20261106T080407Z-shadow-compare-filter.json",
+      "sha256": "9015c9f0b1e8c31d8abbbdea900a13ae2afaffb01377e237804c06ce500b98dc",
+      "git_blob_sha1": "ea630d250586ba8f68eef0cb6913753124195f26",
+      "bytes": 3101,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/.agent/runs/20261106T080407Z-shadow-compare-filter.json",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0289/materials.json",
+      "sha256": "1c3811d832bc049acd74d21398df9452925bd04b9428cf0be93842206b5c432d",
+      "git_blob_sha1": "aeeb1df7fc119146e8affc1a15a54f1895d50e9e",
+      "bytes": 10842,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/研究/TASK-2026-0289/materials.json",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
+      "sha256": "6c28c14cbd03a781ffd9d3e8462209c8a6060579240cef37ef1e57200eac96c0",
+      "git_blob_sha1": "fc1c4162bafffaba877591fafc6565c19fd4227e",
+      "bytes": 3692,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/审稿/SOL-GFX-004/20261106-full-article.md",
+      "sha256": "c637b6a128f30e435d2a676f160501c3874fbdba9ecbd7ea58a90d22ce703466",
+      "git_blob_sha1": "5f2b66fc676766412804e4183dc6e862cbacc79a",
+      "bytes": 6227,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/审稿/SOL-GFX-004/20261106-full-article.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
+      "sha256": "74b4b5642cda60b7a2fb48e37fc694aa3e41aad72314dda39102959cf5e5a694",
+      "git_blob_sha1": "db5aa8d7e442a85b4d28449038829e43b5f8f6d0",
+      "bytes": 31970,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/README.md",
+      "sha256": "b9764d78c7bfed18adfccc20624e56751e856cd968a9473adfd07d718433fb3e",
+      "git_blob_sha1": "1c47d4cb96620b14855b8fbe337d589596a9bcde",
+      "bytes": 279,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/渲染开发/GPU资源管理/README.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/README.md",
+      "sha256": "6d674f686cdbe58daec56264635bde67dcec2e43d40608adff9353996e742a00",
+      "git_blob_sha1": "c10c40ffa72f06aa47f7574360e0399ea973442b",
+      "bytes": 287,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/渲染开发/README.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+      "sha256": "fe5984fad2e51162f7b518ae1fb9f9491b7ac7194dd996e9b2bd36bdd11df1a9",
+      "git_blob_sha1": "8b515e543849a82ddc592758f0815b8170e86a14",
+      "bytes": 242,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/镜头移动时，为什么静止物体的阴影仍会晃动.md",
+      "sha256": "32eb1ff0f0ae9aae5ebb1ca64e505f6403aa88ebbd14f47f912e944f4316f257",
+      "git_blob_sha1": "ed468235ef841fa19adaea8f7b9a29783eb705f4",
+      "bytes": 7897,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/镜头移动时，为什么静止物体的阴影仍会晃动.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/缩小深度图时，为什么不能总取最小值.md",
+      "sha256": "b64a541b25e6fddf18b25527c41cfd60846bab806b72425ad5c886ff60898898",
+      "git_blob_sha1": "66980f4db7302f4fb8c47245c8c3956121f2bfcb",
+      "bytes": 7154,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/缩小深度图时，为什么不能总取最小值.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+      "sha256": "c75272f3e90def7cad556366225562d56a3a2cc56ec1e290c6faa964919a48bd",
+      "git_blob_sha1": "a899847ac615658d1edce1895d2055e329dde043",
+      "bytes": 10703,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/深度纹理里的差值，为什么不能直接当作距离.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/Unreal体积光照调细后，为什么角色附近的样本仍不够密.md",
+      "sha256": "72b083892be4c7877d28c29dcfa91b54f12d185ae4c79a05fcfcd6f9a8006a1c",
+      "git_blob_sha1": "6a3c2dcfee0409a44a88344a3919aa932ed5c59f",
+      "bytes": 5300,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/Unreal体积光照调细后，为什么角色附近的样本仍不够密.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+      "sha256": "7bdf698a72435dcc41021e8c2e8f79df8f224fb7f88e43b65138e3b11df6570d",
+      "git_blob_sha1": "05684895ef67a998d7de2d6005a922dcb4cbaa61",
+      "bytes": 12152,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/场景光照/间接光照/最后生还者第二部如何结合顶点与探针照明.md",
+      "disposition": "Preserve exact bytes and original historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+      "sha256": "03b83a8745638341a73ea587cfa9208f9284acc165bc3515208906cb794cf470",
+      "git_blob_sha1": "0cd87750dbb07c6d9581fda031b5f0f7c5759db7",
+      "bytes": 6973,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+      "disposition": "Current path becomes historical index; original four-depth explanation remains at fixed commit."
+    },
+    {
+      "path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
+      "git_blob_sha1": "d64e661dab9c9c2b73b61503041744f3d42344ac",
+      "bytes": 16611,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+      "disposition": "One comparison-filter relation sentence only; all preceding D3D12 edits and other body text preserved."
+    },
+    {
+      "path": "GameLibrary/图形渲染/README.md",
+      "sha256": "bc1c13345ae7d806e6120291fa3879dc83ec39d40b6162c1ce18832a8449e615",
+      "git_blob_sha1": "4cf8257d42bb8c2e0b71b0463bb41ea14260cb4e",
+      "bytes": 437,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/README.md",
+      "disposition": "Finite direct-child route update; prior text remains at fixed commit."
+    },
+    {
+      "path": "GameLibrary/图形渲染/场景光照/README.md",
+      "sha256": "33a4a4bf74c3339bf8537ba36fc4ce80ee4e2f623ed0a324190c96a8ad6663e2",
+      "git_blob_sha1": "91109eb4ff142486ced4080beb1c70896a0339fe",
+      "bytes": 482,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/GameLibrary/图形渲染/场景光照/README.md",
+      "disposition": "Finite direct-child route update; prior text remains at fixed commit."
+    }
+  ],
+  "migration": {
+    "current_corpus_files": 2414,
+    "scope": "Complete blob identity match plus finite old-title/source/review-name scan; not whole-library semantic acceptance.",
+    "matched_files": 8,
+    "current_reader_inbound": [
+      "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md"
+    ],
+    "catalog": "Preserve complete original ROLE-GFX-001 comparison_filter_support as historical_record; register SOL-GFX-005 separately, preserve previous alias support and latest relation revision history.",
+    "navigation": "Scene-lighting direction retains only direct topics. Removed cross-level Unreal recommendation already remains in unchanged LastOfUs indirect-lighting body. Previous rendering-direction/role-topic repairs unchanged.",
+    "historical_bindings": "TASK-2026-0289 materials and review records keep their original base/version and limited-role-edit scope; do not rewrite their historical shadow hashes to current body."
+  },
+  "limits": "One finite source-grounded sampling method; remaining sampling-grid/Hi-Z/depth/other management technical bodies remain separate migration work."
+}

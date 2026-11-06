@@ -10085,17 +10085,42 @@
       "reader": "图形程序与着色器开发者",
       "scope": "全文比较已有比较过滤、阴影采样与相邻正文，核原始规范/文档，界定实际读者判断和必要验证；不扩成全部阴影实现或重排图形学科。",
       "expected_outcome": "确定完整方法、来源边界、读者任务与有限迁移，或报告具体研究缺口。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0290/sources.json",
+        "管理档案/研究/TASK-2026-0290/materials.json",
+        "管理档案/研究/TASK-2026-0290/范围与保留.md",
+        "管理档案/审稿/SOL-GFX-005/20261106-full-article.json"
+      ],
+      "next_action": "按v2重新核保留两骨草稿及已有足部接触正文，确定可交付的完整方法与必要来源。",
+      "blocker": null,
+      "updated_at": "2026-11-06T12:29:24Z",
+      "related_task_ids": [
+        "TASK-2026-0289"
+      ],
+      "article_path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+      "review": "管理档案/审稿/SOL-GFX-005/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0291",
+      "question": "保留的两骨弯曲方向草稿与距离敏感性说明，怎样形成有价值且不重复邻文的完整方法？",
+      "reader": "动画程序、技术动画与绑定开发者",
+      "scope": "按v2全文核已有脚滑、两骨距离支持和保留草稿；重新阅读原始来源，确定位置构造、可达性与弯曲方向的完整任务或具体研究缺口，不直接续加旧支持段。",
+      "expected_outcome": "确定完整方法、来源边界、读者任务与有限迁移，或报告具体研究缺口。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0289/范围与保留.md"
+        "管理档案/研究/TASK-2026-0290/范围与保留.md"
       ],
-      "next_action": "核旧比较过滤原文及相邻方法，选择可完整交付的采样与比较决策问题。",
+      "next_action": "核保留草稿、现有正文与合法原始来源，界定一个完整两骨问题及必要实现/验证，不沿用旧窄增量验收。",
       "blocker": null,
-      "updated_at": "2026-11-06T12:05:27Z",
+      "updated_at": "2026-11-06T12:29:24Z",
       "related_task_ids": [
-        "TASK-2026-0289"
+        "TASK-2026-0290"
       ]
     }
   ],
@@ -10103,7 +10128,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "核旧比较过滤原文及相邻方法，选择可完整交付的采样与比较决策问题。"
+    "next_priority": "核保留草稿、现有正文与合法原始来源，界定一个完整两骨问题及必要实现/验证，不沿用旧窄增量验收。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

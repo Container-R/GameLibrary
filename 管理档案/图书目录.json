@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "2db93e9c422707b3ecfbdd5b758afba75b2f11fa",
+  "publication_base_sha": "12c1ccbd891a08ee93c324e4aefb121f2388a8aa",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -806,7 +806,7 @@
       "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
       "legacy_retention": "完整旧技术上下文仍归历史正文；当前深度入口承接为自然读者支持，历史审查绑定保持原范围。",
-      "reader_sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
+      "reader_sha256": "7b688b06c94b63eb481b1052a25375532ed1cf254fc3b89d5dee36c131a5abee",
       "review_paths": [
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
@@ -817,7 +817,8 @@
         "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
         "管理档案/审查/D3D12资源别名-来源与读者审查.md",
         "管理档案/审查/阴影比较过滤-来源与读者审查.md",
-        "管理档案/审稿/SOL-GFX-004/20261106-full-article.json"
+        "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
+        "管理档案/审稿/SOL-GFX-005/20261106-full-article.json"
       ],
       "occlusion_query_support": {
         "support_path": "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
@@ -895,17 +896,27 @@
         "scope": "Original source/review hashes keep historical meaning; complete single-queue method has independent current review."
       },
       "comparison_filter_support": {
-        "support_path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
-        "support_sha256": "03b83a8745638341a73ea587cfa9208f9284acc165bc3515208906cb794cf470",
-        "source_record": "管理档案/来源笔记/shadow-comparison-filter-order.json",
-        "review": "管理档案/审查/阴影比较过滤-来源与读者审查.md",
-        "scope": "Optional fixed Microsoft comparison-filter documentation and original nonuniform-weight counterexample; no GPU, image or sampler-output claim."
+        "path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+        "role": "historical-material-index",
+        "material_index_sha256": "aec9d2cc00c2a6e0bb1582411e7471d516b05fcfceae6d2b550d8a108e5d4f50",
+        "material_index_review": "管理档案/审稿/SOL-GFX-005/20261106-full-article.json",
+        "formal_article_path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+        "historical_body_sha256": "03b83a8745638341a73ea587cfa9208f9284acc165bc3515208906cb794cf470",
+        "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/12c1ccbd891a08ee93c324e4aefb121f2388a8aa/管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+        "historical_record": {
+          "support_path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+          "support_sha256": "03b83a8745638341a73ea587cfa9208f9284acc165bc3515208906cb794cf470",
+          "source_record": "管理档案/来源笔记/shadow-comparison-filter-order.json",
+          "review": "管理档案/审查/阴影比较过滤-来源与读者审查.md",
+          "scope": "Optional fixed Microsoft comparison-filter documentation and original nonuniform-weight counterexample; no GPU, image or sampler-output claim."
+        },
+        "scope": "Original four-depth example source/review identities keep historical meaning; complete kernel design has independent current review."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "32dfd1dabd08f1c45f0e8fefa0b1f0393ed07d503ea2ed945ab530872d52308d",
-        "current_reader_sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
-        "review": "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
-        "scope": "Alias relation paragraph, two existing related entries moved from direction, and return label. All other role text unchanged; no new acceptance of other technical supports."
+        "previous_reader_sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
+        "current_reader_sha256": "7b688b06c94b63eb481b1052a25375532ed1cf254fc3b89d5dee36c131a5abee",
+        "review": "管理档案/审稿/SOL-GFX-005/20261106-full-article.json",
+        "scope": "One comparison-filter relation sentence only; prior D3D12 edits and all other role text preserved."
       },
       "related_formal_articles": [
         {
@@ -913,6 +924,20 @@
           "path": "GameLibrary/图形渲染/渲染开发/GPU资源管理/D3D12临时渲染目标的别名复用.md",
           "review": "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
           "relationship": "Concrete single-direct-queue temporary RT alias method linked from role resource responsibilities."
+        },
+        {
+          "internal_id": "SOL-GFX-005",
+          "path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+          "review": "管理档案/审稿/SOL-GFX-005/20261106-full-article.json",
+          "relationship": "Concrete comparison-kernel design and reference method linked from role shadow review responsibilities."
+        }
+      ],
+      "historical_link_revisions": [
+        {
+          "previous_reader_sha256": "32dfd1dabd08f1c45f0e8fefa0b1f0393ed07d503ea2ed945ab530872d52308d",
+          "current_reader_sha256": "4158c82f9447f7bae4923a05e7177425f81b63feca998f320220f14e4ff29575",
+          "review": "管理档案/审稿/SOL-GFX-004/20261106-full-article.json",
+          "scope": "Alias relation paragraph, two existing related entries moved from direction, and return label. All other role text unchanged; no new acceptance of other technical supports."
         }
       ]
     },
@@ -4521,7 +4546,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Single direct queue, ordinary command list, traditional barriers and placed simple model; per-resource allocation, all-use intervals, activation/state/initialization and final retirement. No inheritance, cross-queue/full render graph/native or visual claims."
+    },
+    {
+      "internal_id": "SOL-GFX-005",
+      "reader_title": "D3D11阴影比较过滤的采样核设计与核对",
+      "discipline": "图形渲染",
+      "direction": "场景光照",
+      "topic": "阴影贴图",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+      "current_read_path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+      "reader_body_status": "published",
+      "reader_sha256": "de6983182205e2a70997be0d373bbc1d52507f2639e5d39e7835246f07c59f73",
+      "editorial_status": "完整比较采样核方法与有限导航经独立审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-GFX-005/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0290/sources.json",
+      "source_sha256": "ffd8c5256a826af5baee04b5a6087988ef33e07d9569cedd02047cb0857adfd1",
+      "materials_record": "管理档案/研究/TASK-2026-0290/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0290/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-GFX-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Given legal D3D11 depth texture/view and finite valid inputs, define addressing, comparison, sampler/LOD, composite weights, border and independent reference; ideal math distinct from native results. Not a complete shadow renderer or cross-API/visual/performance proof."
     }
   ],
-  "current_batch_scope": "One complete D3D12 alias method, finite direct-child graphics route, historical support index and limited role relation edits. Old evidence and other support bodies unchanged; not all graphics or whole-library acceptance."
+  "current_batch_scope": "One complete comparison-kernel method, finite lighting route, history index and one role relation sentence. Previous D3D12 method/navigation and other histories preserved; no whole-library acceptance."
 }

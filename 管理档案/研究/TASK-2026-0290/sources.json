@@ -1,0 +1,142 @@
+{
+  "task_id": "TASK-2026-0290",
+  "article_path": "GameLibrary/图形渲染/场景光照/阴影贴图/D3D11阴影比较过滤的采样核设计与核对.md",
+  "sources": [
+    {
+      "id": "cascaded-shadow",
+      "publisher": "Microsoft",
+      "title": "Cascaded Shadow Maps",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/DxTechArts/cascaded-shadow-maps.md",
+      "read_date": "2026-11-06",
+      "locator": "PCF/Depth Bias,L197–223;exampleL307–330;paddingL343–345",
+      "claim": "Larger filters alter neighbor comparisons and require coverage/border/bias considerations.",
+      "conditions": "Text and finite example inspection only, no screenshots, sample execution or historical performance adoption.",
+      "source_text_sha256": "504819f351b99c9d6bfffe635070022ac0e2f7afd84b0b22939d75cad14aef40",
+      "source_git_blob_sha1": "455f670d6f3b9c24fbd0d2ed81855b48203fdc13",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "common-shadow",
+      "publisher": "Microsoft",
+      "title": "Common Techniques to Improve Shadow Depth Maps",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/DxTechArts/common-techniques-to-improve-shadow-depth-maps.md",
+      "read_date": "2026-11-06",
+      "locator": "Moving the Light in Texel-Sized Increments,L187–239",
+      "claim": "Projection-grid stabilization is distinct from comparison-read kernel design.",
+      "conditions": "Neighbor-topic boundary only; no visual-quality observation.",
+      "source_text_sha256": "26a8e53e67fe76bbcef81369e2aabeabe7abb6f0e0015d712e4a52f16f27ae9e",
+      "source_git_blob_sha1": "f050e4594b76ec7521db0e483c521db46d7adb50",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "filter-enum",
+      "publisher": "Microsoft",
+      "title": "D3D11_FILTER",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/12ea658d1d81468de8b2c521ed1e667942767c51/sdk-api-src/content/d3d11/ne-d3d11-d3d11_filter.md",
+      "read_date": "2026-11-06",
+      "locator": "Comparison enums,L93–124;Remarks",
+      "claim": "Comparison min/mag linear plus point mip is explicit; min and mag differing can be undefined; documented comparison formats include R32_FLOAT.",
+      "conditions": "Select matching min/mag behavior, not implicit defaults or general format support claim.",
+      "source_text_sha256": "5fd3cde920e668034eef215d3a0da4a87a40a118c4bc16d094fc1bdad6ec7183",
+      "source_git_blob_sha1": "a96775f18242d5d04b0975414b6b1112d4b8326e",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "load",
+      "publisher": "Microsoft",
+      "title": "Load",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/dx-graphics-hlsl-to-load.md",
+      "read_date": "2026-11-06",
+      "locator": "L45–70",
+      "claim": "Texture2D uses integer coordinates and mip; out-of-bounds load returns zero.",
+      "conditions": "Independent reference explicitly implements selected border/clamp; not sampler inheritance.",
+      "source_text_sha256": "1c690b4502014a58a4a183662c4d1878091cb2f4767b9d6b2f7de2a42ffcf7a3",
+      "source_git_blob_sha1": "ee242bc57a6da97bf77b32570fa0a747bbc19952",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "sample-c",
+      "publisher": "Microsoft",
+      "title": "sample_c (sm4-asm)",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/sample-c--sm4---asm-.md",
+      "read_date": "2026-11-06",
+      "locator": "Remarks,L44–64",
+      "claim": "Reference is left comparison operand, texel.R right; format conversion, per-tap addressing/BorderColorR, then comparison-result filtering.",
+      "conditions": "LESS_EQUAL gives reference<=depth; format conversion must be reconsidered outside scoped R32_FLOAT.",
+      "source_text_sha256": "c665348fb5a64cbd8f9738755f50fe3c8af84803fa2796887212030c45cd503b",
+      "source_git_blob_sha1": "b5e62fd54df643b2575456848bd66c8d8be9ad13",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "samplecmp",
+      "publisher": "Microsoft",
+      "title": "SampleCmp",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/dx-graphics-hlsl-to-samplecmp.md",
+      "read_date": "2026-11-06",
+      "locator": "Return Value/Remarks,L87–102",
+      "claim": "Comparison results are formed per sampled texel and filtered by sampler; float reference is not automatically clamped to[0,1].",
+      "conditions": "Already valid finite reference in same encoding as depth; not all-format bitwise emulation.",
+      "source_text_sha256": "b755b1e4e5c7da8a7675ab22ee5480dd6107615508b07dab830ab9703aef2b67",
+      "source_git_blob_sha1": "e1a61e2026010aba33f16c8cfaef7c75d86ea073",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "samplecmplevelzero",
+      "publisher": "Microsoft",
+      "title": "SampleCmpLevelZero",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/dx-graphics-hlsl-to-samplecmplevelzero.md",
+      "read_date": "2026-11-06",
+      "locator": "L15–17",
+      "claim": "Object method describes level-zero comparison sampling.",
+      "conditions": "Combine with specification22.4.20; name alone does not override LOD clamps/bias.",
+      "source_text_sha256": "aa3606ffdd08f341eb2f3ea60af9b952ace16f872e242da9d6286deee61e2d87",
+      "source_git_blob_sha1": "7abe4e8fa7d0b46a72f9079b754e86896e2a0046",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "sampler-desc",
+      "publisher": "Microsoft",
+      "title": "D3D11_SAMPLER_DESC",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/12ea658d1d81468de8b2c521ed1e667942767c51/sdk-api-src/content/d3d11/ns-d3d11-d3d11_sampler_desc.md",
+      "read_date": "2026-11-06",
+      "locator": "L54–122",
+      "claim": "Filter, addressing, comparison, border and mip bias/clamps are separate explicit fields.",
+      "conditions": "Known legal view/resource and supported device path; no full creation tutorial.",
+      "source_text_sha256": "d006bb7916fb4d706cadd66338fe9d12844d9aa294c0bc932262da7286fcfb20",
+      "source_git_blob_sha1": "8c6d8c4fd4588ce98f14f2deb063ac74201ee72f",
+      "read_scope": "Listed original text sections; exact fixed-source bytes bound, no native/sample or visual observation."
+    },
+    {
+      "id": "d3d11-3-spec",
+      "publisher": "Microsoft",
+      "title": "Direct3D11.3 Functional Specification",
+      "version": "1.17,2025-06-20",
+      "repository_commit": "f37b0d6033a184bd716e4483e9a8fb192f1e63c7",
+      "url": "https://github.com/microsoft/DirectX-Specs/blob/f37b0d6033a184bd716e4483e9a8fb192f1e63c7/d3d/archive/D3D11_3_FunctionalSpec.htm",
+      "read_url": "https://raw.githubusercontent.com/microsoft/DirectX-Specs/f37b0d6033a184bd716e4483e9a8fb192f1e63c7/d3d/archive/D3D11_3_FunctionalSpec.htm",
+      "read_date": "2026-11-06",
+      "locator": [
+        "5.8.2",
+        "5.8.3",
+        "7.18.7",
+        "7.18.8",
+        "7.18.9",
+        "7.18.9.1",
+        "7.18.16.1",
+        "7.18.16.2",
+        "22.4.19",
+        "22.4.20"
+      ],
+      "claim": "View/resource mip numbering, point and linear texel addressing, per-tap address modes, precision bounds, comparison operation and level-zero LOD behavior.",
+      "conditions": "Ideal coordinate/weight derivation is not bitwise hardware simulation. sample_c_lz still honors LOD clamp/bias; main path fixes legal resource/view and sampler state.",
+      "read_scope": "Selected fixed-URL HTML passages; full HTML was neither cached nor hashed. Document header independently checked as version1.17 dated2025-06-20."
+    }
+  ],
+  "original_reasoning": "UV-to-weight walkthrough, finite kernel composition, unique-texel aggregation, border/atlas counterexamples and independent reference design are original mathematical/application reasoning based on the cited contracts.",
+  "limits": [
+    "No shader compilation, D3D11 device, native readback, image, performance or human test.",
+    "Exact rational examples are ideal models, not arbitrary GPU return guarantees.",
+    "No complete shadow renderer, general UNORM bitwise emulator, receiver-plane correction or cross-API implementation.",
+    "Full upstream documents not redistributed; use original explanations and fixed-source links."
+  ]
+}
