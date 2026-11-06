@@ -1,0 +1,61 @@
+{
+  "id": "SUPPORT-ANIM-INERTIAL-FILTERED-CURVES-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/角色动画/动画运行时/动作过渡/用惯性化平滑被中断的动画过渡.md",
+  "scope": "Existing UE5.6 integration discussion adds named animation-curve filtering and an unexecuted IK-weight decision example; no new scalar experiment or book.",
+  "sources": [
+    {
+      "author": "Epic Games",
+      "title": "Animation Blueprint Blend Nodes",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-blueprint-blend-nodes-in-unreal-engine?application_version=5.6",
+      "version": "Unreal Engine 5.6 documentation",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Inertialization: tracks changes within Animation Curves.",
+        "Initialization Node Reference: Filtered Curves on Inertialization node.",
+        "Inertialization Node vs Dead Blending: transition blend curves are distinct."
+      ],
+      "claims": [
+        "Animation-curve changes are tracked by inertial blending.",
+        "Named curves in Filtered Curves bypass inertial blending and change immediately.",
+        "Inertialization ignores transition blend curves; this does not mean animation-curve values are ignored."
+      ],
+      "limits": [
+        "Mutable versioned documentation, not immutable engine source or runtime verification.",
+        "No transfer of Dead Blending-specific properties."
+      ]
+    },
+    {
+      "author": "Epic Games",
+      "title": "Animation Curves",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-curves-in-unreal-engine?application_version=5.6",
+      "version": "Unreal Engine 5.6 documentation",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Opening curve-value definition.",
+        "Animation Blueprints: curve-driven AnimGraph alpha such as IK.",
+        "Curve Filtering: editor list visibility."
+      ],
+      "claims": [
+        "Animation Curves are animated floating-point values.",
+        "Curves may drive IK alpha weights.",
+        "Editor curve-list filtering is not the Inertialization node exclusion setting."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "ba2e4261b346a9e8af33ae9d5a19a63967aa0987",
+    "comparison": "Existing reader already covers stopped source notifications and effect cleanup; associated rotation-rate support does not cover named animation curves.",
+    "decision": "Add one UE-specific subsection to existing reader; no new article.",
+    "original_example": "Unexecuted FootIKWeight curve with source 1 and target 0; decide continuous fade versus immediate change from intended meaning, then inspect actual usage.",
+    "reader_comparison_commit": "b5ebedfcd99b5b94ad48cc4454f8d99057d37124",
+    "reader_unchanged_since_comparison": true
+  },
+  "execution_limits": [
+    "No Unreal project, animation asset, graph evaluation, player or human test.",
+    "No exact decay values, consumer frame-order, root-motion, montage or Notify State lifecycle claims.",
+    "Filtering does not restore the source animation, replay notifications or automatically disable an entire IK system."
+  ],
+  "third_party_assets_redistributed": false
+}

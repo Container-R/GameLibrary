@@ -1137,10 +1137,11 @@
         "reader_sha256": "418db06b5a21d7bafd11cf5f3fba4c49a44b00e3e1d4914f4912c86998ab73ea",
         "support_sha256": "2c270f28806dbedcf5bd4f60da8f32ce455e0c0a729ee9fab53fc31abcd6032b"
       },
-      "reader_sha256": "06fecee16ee5d2514abc54f992f05b31379a6c5db1aad7339e555d2c2bebbe3a",
+      "reader_sha256": "394ad783286eb729ea5fbe411073c7fb3c4cd539b5b3b810605ff783e55e08d5",
       "review_paths": [
         "管理档案/审查/FFXVI注视偏移-有限来源与读者审查.md",
-        "管理档案/审查/惯性化过渡-源序列通知审读.md"
+        "管理档案/审查/惯性化过渡-源序列通知审读.md",
+        "管理档案/审查/惯性化动画曲线-来源与读者审查.md"
       ],
       "lookat_offset_comparison": {
         "source": "管理档案/来源笔记/ffxvi-lookat-offset.json",
@@ -1151,6 +1152,12 @@
         "source": "管理档案/来源笔记/inertial-source-notifications.json",
         "review": "管理档案/审查/惯性化过渡-源序列通知审读.md",
         "scope": "UE5.6 versioned source-sequence notification limit after inertial blending begins; no runtime observation or change to scalar evidence."
+      },
+      "updated_at": "2026-11-06",
+      "filtered_curves_extension": {
+        "source_record": "管理档案/来源笔记/inertial-filtered-curves.json",
+        "review": "管理档案/审查/惯性化动画曲线-来源与读者审查.md",
+        "scope": "UE5.6 named animation-curve exclusion with original unexecuted IK-weight decision example; distinct from notifications, display filtering and transition blend curves."
       }
     },
     {
@@ -3959,7 +3966,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "b5ebedfcd99b5b94ad48cc4454f8d99057d37124",
+  "publication_base_sha": "ba2e4261b346a9e8af33ae9d5a19a63967aa0987",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,
