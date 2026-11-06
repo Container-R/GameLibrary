@@ -1,0 +1,661 @@
+{
+  "description": "原创有限教学模型；不是项目观测数据或已校准的估时。时间为同一起点、共同日历的工作日边界。",
+  "base": {
+    "scenarios": [
+      {
+        "X_A": "2",
+        "X_B": "2",
+        "Z": "0",
+        "T_A": "2",
+        "T_B": "2",
+        "F": "3",
+        "p": {
+          "exact": "64/125",
+          "decimal": 0.512
+        }
+      },
+      {
+        "X_A": "2",
+        "X_B": "2",
+        "Z": "3",
+        "T_A": "5",
+        "T_B": "5",
+        "F": "6",
+        "p": {
+          "exact": "16/125",
+          "decimal": 0.128
+        }
+      },
+      {
+        "X_A": "2",
+        "X_B": "4",
+        "Z": "0",
+        "T_A": "2",
+        "T_B": "4",
+        "F": "5",
+        "p": {
+          "exact": "16/125",
+          "decimal": 0.128
+        }
+      },
+      {
+        "X_A": "2",
+        "X_B": "4",
+        "Z": "3",
+        "T_A": "5",
+        "T_B": "7",
+        "F": "8",
+        "p": {
+          "exact": "4/125",
+          "decimal": 0.032
+        }
+      },
+      {
+        "X_A": "4",
+        "X_B": "2",
+        "Z": "0",
+        "T_A": "4",
+        "T_B": "2",
+        "F": "5",
+        "p": {
+          "exact": "16/125",
+          "decimal": 0.128
+        }
+      },
+      {
+        "X_A": "4",
+        "X_B": "2",
+        "Z": "3",
+        "T_A": "7",
+        "T_B": "5",
+        "F": "8",
+        "p": {
+          "exact": "4/125",
+          "decimal": 0.032
+        }
+      },
+      {
+        "X_A": "4",
+        "X_B": "4",
+        "Z": "0",
+        "T_A": "4",
+        "T_B": "4",
+        "F": "5",
+        "p": {
+          "exact": "4/125",
+          "decimal": 0.032
+        }
+      },
+      {
+        "X_A": "4",
+        "X_B": "4",
+        "Z": "3",
+        "T_A": "7",
+        "T_B": "7",
+        "F": "8",
+        "p": {
+          "exact": "1/125",
+          "decimal": 0.008
+        }
+      }
+    ],
+    "finish_distribution": [
+      {
+        "F": "3",
+        "p": {
+          "exact": "64/125",
+          "decimal": 0.512
+        },
+        "cdf": {
+          "exact": "64/125",
+          "decimal": 0.512
+        }
+      },
+      {
+        "F": "5",
+        "p": {
+          "exact": "36/125",
+          "decimal": 0.288
+        },
+        "cdf": {
+          "exact": "4/5",
+          "decimal": 0.8
+        }
+      },
+      {
+        "F": "6",
+        "p": {
+          "exact": "16/125",
+          "decimal": 0.128
+        },
+        "cdf": {
+          "exact": "116/125",
+          "decimal": 0.928
+        }
+      },
+      {
+        "F": "8",
+        "p": {
+          "exact": "9/125",
+          "decimal": 0.072
+        },
+        "cdf": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      }
+    ],
+    "mean_T_A": {
+      "exact": "3",
+      "decimal": 3.0
+    },
+    "mean_T_B": {
+      "exact": "3",
+      "decimal": 3.0
+    },
+    "mean_F": {
+      "exact": "108/25",
+      "decimal": 4.32
+    },
+    "merge_of_means_plus_tail": {
+      "exact": "4",
+      "decimal": 4.0
+    },
+    "deadline_probabilities": {
+      "3": {
+        "exact": "64/125",
+        "decimal": 0.512
+      },
+      "4": {
+        "exact": "64/125",
+        "decimal": 0.512
+      },
+      "4.32": {
+        "exact": "64/125",
+        "decimal": 0.512
+      },
+      "5": {
+        "exact": "4/5",
+        "decimal": 0.8
+      },
+      "6": {
+        "exact": "116/125",
+        "decimal": 0.928
+      },
+      "8": {
+        "exact": "1",
+        "decimal": 1.0
+      }
+    },
+    "left_quantiles": {
+      "0.8": "5",
+      "0.9": "6",
+      "0.95": "8"
+    }
+  },
+  "alternatives": {
+    "A_always_2": {
+      "scenarios": [
+        {
+          "X_A": "2",
+          "X_B": "2",
+          "Z": "0",
+          "T_A": "2",
+          "T_B": "2",
+          "F": "3",
+          "p": {
+            "exact": "16/25",
+            "decimal": 0.64
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "2",
+          "Z": "3",
+          "T_A": "5",
+          "T_B": "5",
+          "F": "6",
+          "p": {
+            "exact": "4/25",
+            "decimal": 0.16
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "4",
+          "Z": "0",
+          "T_A": "2",
+          "T_B": "4",
+          "F": "5",
+          "p": {
+            "exact": "4/25",
+            "decimal": 0.16
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "4",
+          "Z": "3",
+          "T_A": "5",
+          "T_B": "7",
+          "F": "8",
+          "p": {
+            "exact": "1/25",
+            "decimal": 0.04
+          }
+        }
+      ],
+      "finish_distribution": [
+        {
+          "F": "3",
+          "p": {
+            "exact": "16/25",
+            "decimal": 0.64
+          },
+          "cdf": {
+            "exact": "16/25",
+            "decimal": 0.64
+          }
+        },
+        {
+          "F": "5",
+          "p": {
+            "exact": "4/25",
+            "decimal": 0.16
+          },
+          "cdf": {
+            "exact": "4/5",
+            "decimal": 0.8
+          }
+        },
+        {
+          "F": "6",
+          "p": {
+            "exact": "4/25",
+            "decimal": 0.16
+          },
+          "cdf": {
+            "exact": "24/25",
+            "decimal": 0.96
+          }
+        },
+        {
+          "F": "8",
+          "p": {
+            "exact": "1/25",
+            "decimal": 0.04
+          },
+          "cdf": {
+            "exact": "1",
+            "decimal": 1.0
+          }
+        }
+      ],
+      "mean_T_A": {
+        "exact": "13/5",
+        "decimal": 2.6
+      },
+      "mean_T_B": {
+        "exact": "3",
+        "decimal": 3.0
+      },
+      "mean_F": {
+        "exact": "4",
+        "decimal": 4.0
+      },
+      "merge_of_means_plus_tail": {
+        "exact": "4",
+        "decimal": 4.0
+      },
+      "deadline_probabilities": {
+        "3": {
+          "exact": "16/25",
+          "decimal": 0.64
+        },
+        "4": {
+          "exact": "16/25",
+          "decimal": 0.64
+        },
+        "4.32": {
+          "exact": "16/25",
+          "decimal": 0.64
+        },
+        "5": {
+          "exact": "4/5",
+          "decimal": 0.8
+        },
+        "6": {
+          "exact": "24/25",
+          "decimal": 0.96
+        },
+        "8": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      },
+      "left_quantiles": {
+        "0.8": "5",
+        "0.9": "6",
+        "0.95": "6"
+      }
+    },
+    "common_risk_0.1": {
+      "scenarios": [
+        {
+          "X_A": "2",
+          "X_B": "2",
+          "Z": "0",
+          "T_A": "2",
+          "T_B": "2",
+          "F": "3",
+          "p": {
+            "exact": "72/125",
+            "decimal": 0.576
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "2",
+          "Z": "3",
+          "T_A": "5",
+          "T_B": "5",
+          "F": "6",
+          "p": {
+            "exact": "8/125",
+            "decimal": 0.064
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "4",
+          "Z": "0",
+          "T_A": "2",
+          "T_B": "4",
+          "F": "5",
+          "p": {
+            "exact": "18/125",
+            "decimal": 0.144
+          }
+        },
+        {
+          "X_A": "2",
+          "X_B": "4",
+          "Z": "3",
+          "T_A": "5",
+          "T_B": "7",
+          "F": "8",
+          "p": {
+            "exact": "2/125",
+            "decimal": 0.016
+          }
+        },
+        {
+          "X_A": "4",
+          "X_B": "2",
+          "Z": "0",
+          "T_A": "4",
+          "T_B": "2",
+          "F": "5",
+          "p": {
+            "exact": "18/125",
+            "decimal": 0.144
+          }
+        },
+        {
+          "X_A": "4",
+          "X_B": "2",
+          "Z": "3",
+          "T_A": "7",
+          "T_B": "5",
+          "F": "8",
+          "p": {
+            "exact": "2/125",
+            "decimal": 0.016
+          }
+        },
+        {
+          "X_A": "4",
+          "X_B": "4",
+          "Z": "0",
+          "T_A": "4",
+          "T_B": "4",
+          "F": "5",
+          "p": {
+            "exact": "9/250",
+            "decimal": 0.036
+          }
+        },
+        {
+          "X_A": "4",
+          "X_B": "4",
+          "Z": "3",
+          "T_A": "7",
+          "T_B": "7",
+          "F": "8",
+          "p": {
+            "exact": "1/250",
+            "decimal": 0.004
+          }
+        }
+      ],
+      "finish_distribution": [
+        {
+          "F": "3",
+          "p": {
+            "exact": "72/125",
+            "decimal": 0.576
+          },
+          "cdf": {
+            "exact": "72/125",
+            "decimal": 0.576
+          }
+        },
+        {
+          "F": "5",
+          "p": {
+            "exact": "81/250",
+            "decimal": 0.324
+          },
+          "cdf": {
+            "exact": "9/10",
+            "decimal": 0.9
+          }
+        },
+        {
+          "F": "6",
+          "p": {
+            "exact": "8/125",
+            "decimal": 0.064
+          },
+          "cdf": {
+            "exact": "241/250",
+            "decimal": 0.964
+          }
+        },
+        {
+          "F": "8",
+          "p": {
+            "exact": "9/250",
+            "decimal": 0.036
+          },
+          "cdf": {
+            "exact": "1",
+            "decimal": 1.0
+          }
+        }
+      ],
+      "mean_T_A": {
+        "exact": "27/10",
+        "decimal": 2.7
+      },
+      "mean_T_B": {
+        "exact": "27/10",
+        "decimal": 2.7
+      },
+      "mean_F": {
+        "exact": "201/50",
+        "decimal": 4.02
+      },
+      "merge_of_means_plus_tail": {
+        "exact": "37/10",
+        "decimal": 3.7
+      },
+      "deadline_probabilities": {
+        "3": {
+          "exact": "72/125",
+          "decimal": 0.576
+        },
+        "4": {
+          "exact": "72/125",
+          "decimal": 0.576
+        },
+        "4.32": {
+          "exact": "72/125",
+          "decimal": 0.576
+        },
+        "5": {
+          "exact": "9/10",
+          "decimal": 0.9
+        },
+        "6": {
+          "exact": "241/250",
+          "decimal": 0.964
+        },
+        "8": {
+          "exact": "1",
+          "decimal": 1.0
+        }
+      },
+      "left_quantiles": {
+        "0.8": "5",
+        "0.9": "5",
+        "0.95": "6"
+      }
+    }
+  },
+  "marginal_bounds": {
+    "lower": {
+      "exact": "3/5",
+      "decimal": 0.6
+    },
+    "upper": {
+      "exact": "4/5",
+      "decimal": 0.8
+    },
+    "couplings": [
+      {
+        "q": "0.6",
+        "weights_fast_fast_fast_slow_slow_fast_slow_slow": [
+          {
+            "exact": "3/5",
+            "decimal": 0.6
+          },
+          {
+            "exact": "1/5",
+            "decimal": 0.2
+          },
+          {
+            "exact": "1/5",
+            "decimal": 0.2
+          },
+          {
+            "exact": "0",
+            "decimal": 0.0
+          }
+        ],
+        "P_deadline": {
+          "exact": "3/5",
+          "decimal": 0.6
+        }
+      },
+      {
+        "q": "0.64",
+        "weights_fast_fast_fast_slow_slow_fast_slow_slow": [
+          {
+            "exact": "16/25",
+            "decimal": 0.64
+          },
+          {
+            "exact": "4/25",
+            "decimal": 0.16
+          },
+          {
+            "exact": "4/25",
+            "decimal": 0.16
+          },
+          {
+            "exact": "1/25",
+            "decimal": 0.04
+          }
+        ],
+        "P_deadline": {
+          "exact": "16/25",
+          "decimal": 0.64
+        }
+      },
+      {
+        "q": "0.8",
+        "weights_fast_fast_fast_slow_slow_fast_slow_slow": [
+          {
+            "exact": "4/5",
+            "decimal": 0.8
+          },
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "0",
+            "decimal": 0.0
+          },
+          {
+            "exact": "1/5",
+            "decimal": 0.2
+          }
+        ],
+        "P_deadline": {
+          "exact": "4/5",
+          "decimal": 0.8
+        }
+      }
+    ]
+  },
+  "risk_range_endpoints": [
+    {
+      "r": "0.1",
+      "P_F_le_6": {
+        "exact": "241/250",
+        "decimal": 0.964
+      }
+    },
+    {
+      "r": "0.3",
+      "P_F_le_6": {
+        "exact": "223/250",
+        "decimal": 0.892
+      }
+    }
+  ],
+  "risk_rate_threshold_for_P90_by_6": {
+    "exact": "5/18",
+    "decimal": 0.2777777777777778
+  },
+  "legacy_example": {
+    "branch_mean": {
+      "exact": "2",
+      "decimal": 2.0
+    },
+    "independent_merge_mean": {
+      "exact": "5/2",
+      "decimal": 2.5
+    },
+    "synchronous_merge_mean": {
+      "exact": "2",
+      "decimal": 2.0
+    }
+  },
+  "six_successes_probability_if_p_0_7": {
+    "exact": "117649/1000000",
+    "decimal": 0.117649
+  }
+}

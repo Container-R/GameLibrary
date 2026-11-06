@@ -10283,16 +10283,41 @@
       "reader": "需要协调多个专业输入和交付判断的游戏制作与技术负责人。",
       "scope": "Compare existing dependency-planning method, producer role and historical merge-time support. Determine a nonduplicate complete reader task from joint outcomes, acceptance conditions and uncertainty evidence before drafting. No inference of real delivery probabilities from invented cases.",
       "expected_outcome": "Evidence-backed scope decision, actual primary-source reading and a distinct representative task; develop a full finite method only if the remaining production question supports it.",
-      "next_action": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input.",
-      "phase": "researching",
+      "next_action": "Complete the pointer-drag method from finished current-corpus and fixed-spec discovery; keep browser dispatch/hit testing distinct from synthetic application-model traces, then perform independent full reviews.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0298/sources.json",
+        "管理档案/研究/TASK-2026-0298/materials.json",
+        "管理档案/研究/TASK-2026-0298/范围与保留.md",
+        "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T16:22:28Z",
+      "related_task_ids": [
+        "TASK-2026-0297",
+        "TASK-2026-0296"
+      ],
+      "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+      "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0299",
+      "question": "网页背包单次鼠标拖放怎样区分捕获接收者、当前落点和物品资格，并在松手或中断时至多提交一次？",
+      "reader": "理解JavaScript事件、DOM与基础状态管理的网页游戏开发者。",
+      "scope": "Single-document DOM inventory, dedicated drag handle, one left-mouse session, no capture transfer, synchronous local move-to-empty-slot rule. Integrate current hit testing, attempt/item identity, cancellation and terminal cleanup; no native browser behavior claim without actual observation.",
+      "expected_outcome": "A complete source-backed bounded method with original state/trace reasoning and diagrams, followed by independent technical, reader and blind-navigation reviews; preserve old pointer-support history.",
+      "next_action": "Complete the pointer-drag method from finished current-corpus and fixed-spec discovery; keep browser dispatch/hit testing distinct from synthetic application-model traces, then perform independent full reviews.",
+      "phase": "drafting",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T15:46:08Z",
+      "updated_at": "2026-11-06T16:22:28Z",
       "related_task_ids": [
-        "TASK-2026-0297",
-        "TASK-2026-0296"
+        "TASK-2026-0298"
       ]
     }
   ],
@@ -10300,7 +10325,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input."
+    "next_priority": "Complete the pointer-drag method from finished current-corpus and fixed-spec discovery; keep browser dispatch/hit testing distinct from synthetic application-model traces, then perform independent full reviews."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

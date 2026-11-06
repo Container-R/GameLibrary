@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
+  "publication_base_sha": "321bfb63707b94d2d230b8820a41d56d578d9b8c",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -696,12 +696,22 @@
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
       },
-      "reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
+      "reader_sha256": "0ba4584439586b21e9e6fb219852bc96d8a8e79af8989e9065dfe82ab663399e",
       "parallel_merge_support": {
-        "source_record": "管理档案/来源笔记/production-merge-timing.json",
-        "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
-        "support": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
-        "scope": "Original finite hand calculation and primary schedule guidance; no game project data or simulation."
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+        "current_review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+        "historical_record": {
+          "source_record": "管理档案/来源笔记/production-merge-timing.json",
+          "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
+          "support": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
+          "scope": "Original finite hand calculation and primary schedule guidance; no game project data or simulation."
+        },
+        "path": "管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
+        "material_index_sha256": "35a63ad078e3a1170ba76d11febaa0626fd0ca7bfb6572494d6a8cffe0ab3d38",
+        "pre_retirement_body_sha256": "fdec2d7c6ddd17bd0bf3c19d902fbf9cc2ec90c9608f9d8c8d8547729d5e9bb9",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/321bfb63707b94d2d230b8820a41d56d578d9b8c/管理档案/支持资料/各项任务平均两天，为什么不代表两天后都能交齐.md",
+        "scope": "Complete original finite merge-time support object preserved; new complete deadline method independently reviewed."
       },
       "critical_path_support": {
         "role": "historical-source-and-review",
@@ -725,7 +735,8 @@
         "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
         "管理档案/审查/资源超配检测粒度-增量审读.md",
         "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
-        "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
+        "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+        "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
       ],
       "finite_flow_measurement_support": {
         "role": "historical-source-and-review",
@@ -750,10 +761,10 @@
         "scope": "Existing reader only: vendor day/week resource-leveling detection example and its decision boundary. No scheduling-software or actual-project test."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
-        "current_reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
-        "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
-        "scope": "One finite-flow method relation only; original role, prior delivery relation, resource and source content not recertified."
+        "previous_reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
+        "current_reader_sha256": "0ba4584439586b21e9e6fb219852bc96d8a8e79af8989e9065dfe82ab663399e",
+        "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+        "scope": "One optional merge-risk method relation only; original full technical and source scope not recertified."
       },
       "related_formal_articles": [
         {
@@ -767,6 +778,12 @@
           "path": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
           "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
           "relationship": "From producer coordination to consistent historical work-in-process, residence, exits and boundary-age measurement."
+        },
+        {
+          "internal_id": "SOL-PROD-004",
+          "path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+          "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+          "relationship": "From established coordination and resource-feasible plans to conditional deadline and quantile judgment."
         }
       ],
       "link_revision_history": [
@@ -775,6 +792,12 @@
           "current_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
           "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
           "scope": "One method relation and return label only; original role, resource and source content not recertified."
+        },
+        {
+          "previous_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+          "current_reader_sha256": "7ba02e4eea15274a1d76ab93cbed8be550328bdcb7be6d1a4db51600e949ec4a",
+          "review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json",
+          "scope": "One finite-flow method relation only; original role, prior delivery relation, resource and source content not recertified."
         }
       ]
     },
@@ -4946,10 +4969,11 @@
       "canonical_reader_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
       "current_read_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
       "reader_body_status": "published",
-      "reader_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
+      "reader_sha256": "006ef051fc29d0445dd4832710a20a01d5db59b5b92c202cefb88fe536d99e2e",
       "editorial_status": "完整有限交付计划方法经独立全文、读者任务与盲导航审查。",
       "review_paths": [
-        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
+        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+        "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
       ],
       "source_record": "管理档案/研究/TASK-2026-0296/sources.json",
       "source_sha256": "3925527afda27b6f8791244a9dbb45ebe6947c1b55e9eeb3ff6068c01e84c78c",
@@ -4959,7 +4983,21 @@
         "ROLE-PROD-001"
       ],
       "updated_at": "2026-11-06",
-      "scope": "Acceptance-defined small playable delivery, explicit FS dependency lower bound, resource-feasible choices, float, changes and remaining-work updates. Original conditional teaching method, not real schedule, global optimum or date probability."
+      "scope": "Acceptance-defined small playable delivery, explicit FS dependency lower bound, resource-feasible choices, float, changes and remaining-work updates. Original conditional teaching method, not real schedule, global optimum or date probability.",
+      "latest_link_revision": {
+        "previous_reader_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
+        "current_reader_sha256": "006ef051fc29d0445dd4832710a20a01d5db59b5b92c202cefb88fe536d99e2e",
+        "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+        "scope": "One optional merge-risk method relation only; original full technical and source scope not recertified."
+      },
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-PROD-004",
+          "path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+          "review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json",
+          "relationship": "From established coordination and resource-feasible plans to conditional deadline and quantile judgment."
+        }
+      ]
     },
     {
       "internal_id": "SOL-PROD-003",
@@ -4985,7 +5023,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Explicit acceptance/exit boundaries and visit identities; finite event area and per-item residence, successful versus all exits, both-boundary ages, missing history and consistent clocks. Original historical teaching method, not personnel utilization, bottleneck certification, future delivery or causal intervention."
+    },
+    {
+      "internal_id": "SOL-PROD-004",
+      "reader_title": "并行输入汇合的期限风险判断",
+      "discipline": "项目管理与测试",
+      "direction": "制作管理",
+      "topic": "交付计划",
+      "type": "production-method",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+      "current_read_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+      "reader_body_status": "published",
+      "reader_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+      "editorial_status": "完整有限期限风险方法经独立全文、读者任务与盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0298/sources.json",
+      "source_sha256": "6f911a9e2ba3dc47e5253fd055ba503b570b203f8a4a5d2752e2460d0d1302b6",
+      "materials_record": "管理档案/研究/TASK-2026-0298/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0298/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-PROD-001",
+        "SOL-PROD-002"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Accepted-input merge with explicit calendars and resource availability, finite joint/conditional scenarios, deadline probability, left quantiles, marginal bounds, mitigation comparison and information requests. Original conditional model, not calibrated project prediction or universal stochastic scheduling."
     }
   ],
-  "current_batch_scope": "One complete finite historical workflow-measurement method with bounded producer relation, old flow support retirement and direct-child navigation. Earlier delivery method and all other production scopes remain intact; not whole-library acceptance."
+  "current_batch_scope": "One complete parallel-input deadline-risk method, two bounded reading relations, old merge-time support retirement and direct-child navigation. Earlier flow measurement and other methods preserved; no whole-library acceptance."
 }

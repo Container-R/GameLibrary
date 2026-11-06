@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="575" viewBox="0 0 1100 575" role="img">
+<title>共同事件只取一次，再计算两路汇合</title><desc>共同接口修订延迟Z同时进入T_A和T_B；先对每个情境取max，再加一工作日确定尾段。</desc>
+<style>text{font-family:'Noto Sans CJK SC','Noto Sans CJK JP',sans-serif;fill:#173042} .small{font-size:17px} .body{font-size:20px} .title{font-size:27px;font-weight:700} .grid{stroke:#d8e2e9;stroke-width:1} .line{stroke:#24465c;stroke-width:2;fill:none} .risk{stroke:#b15d16;stroke-width:3;fill:none}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#24465c"/></marker><marker id="orange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#b15d16"/></marker></defs>
+<text x="40" y="48" class="title">共同事件只取一次，再计算两路汇合</text>
+<text x="40" y="80" class="small">原创教学模型｜工作日边界｜不同人员与设备，容量已预留</text>
+<rect x="355" y="113" width="350" height="78" rx="12" fill="#fff0da" stroke="#b15d16"/>
+<text x="530" y="145" text-anchor="middle" class="body">同一次接口修订 Z</text>
+<text x="530" y="173" text-anchor="middle" class="small">不发生 0 天（80%）／发生 +3 天（20%）</text>
+<rect x="40" y="247" width="230" height="80" rx="12" fill="#eef5f8" stroke="#6c94aa"/>
+<text x="155" y="279" text-anchor="middle" class="body">动画导出 X_A</text>
+<text x="155" y="307" text-anchor="middle" class="small">2 天 80%／4 天 20%</text>
+<rect x="40" y="377" width="230" height="80" rx="12" fill="#eef5f8" stroke="#6c94aa"/>
+<text x="155" y="409" text-anchor="middle" class="body">事件映射 X_B</text>
+<text x="155" y="437" text-anchor="middle" class="small">2 天 80%／4 天 20%</text>
+<rect x="355" y="252" width="240" height="70" rx="12" fill="#f0f8f7" stroke="#4c8a81"/>
+<text x="475" y="294" text-anchor="middle" class="body">T_A = X_A + Z</text>
+<rect x="355" y="382" width="240" height="70" rx="12" fill="#f0f8f7" stroke="#4c8a81"/>
+<text x="475" y="424" text-anchor="middle" class="body">T_B = X_B + Z</text>
+<path d="M270,287 H349 M270,417 H349" class="line" marker-end="url(#arrow)"/>
+<path d="M475,191 V246" class="risk" marker-end="url(#orange)"/>
+<path d="M620,191 V350 H475 V376" class="risk" marker-end="url(#orange)"/>
+<path d="M595,287 H715 V322" stroke="white" stroke-width="7" fill="none"/>
+<path d="M595,287 H715 V322 M595,417 H715 V383" class="line" marker-end="url(#arrow)"/>
+<rect x="645" y="328" width="145" height="50" rx="10" fill="#e6effb" stroke="#4876a6"/>
+<text x="717" y="360" text-anchor="middle" class="body">M = max</text>
+<path d="M790,353 H827" class="line" marker-end="url(#arrow)"/>
+<rect x="833" y="310" width="225" height="85" rx="12" fill="#eef5f8" stroke="#6c94aa"/>
+<text x="945" y="344" text-anchor="middle" class="body">F = M + 1</text>
+<text x="945" y="373" text-anchor="middle" class="small">整合准备完成</text>
+<text x="40" y="510" class="body">X_A、X_B、Z 在本模型中相互独立；T_A、T_B 因共享 Z 而共同变化。</text>
+<text x="40" y="543" class="small">箭头表示计算输入，不是共享审核人的资源顺序；尾段不代表 QA 通过或正式发布。</text>
+</svg>

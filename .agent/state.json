@@ -3,29 +3,29 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0298"
+    "TASK-2026-0299"
   ],
-  "last_completed_task_id": "TASK-2026-0297",
-  "last_real_progress_at": "2026-11-06T15:46:08Z",
-  "last_commit_sha": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
+  "last_completed_task_id": "TASK-2026-0298",
+  "last_real_progress_at": "2026-11-06T16:22:28Z",
+  "last_commit_sha": "321bfb63707b94d2d230b8820a41d56d578d9b8c",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-PROD-003/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-PROD-004/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-finite-window-flow-measurement-method",
-    "article": "GameLibrary/项目管理与测试/制作管理/流程度量/有限观察窗口中的在途数量与完成时间.md",
-    "article_sha256": "83b91d4c216f6318249d959e15a6f0a872ffc01ef0ee251356fff8991ea48bda",
-    "previous_verified_head": "5b0d5391b38b79a8b5f3b80a2184c0909ebddde0",
+    "kind": "complete-parallel-input-deadline-risk-method",
+    "article": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+    "article_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+    "previous_verified_head": "321bfb63707b94d2d230b8820a41d56d578d9b8c",
     "identity": "Containing commit; exact remote readback required before reporting success.",
     "scope": "One finite production method and bounded migration; not whole discipline or library acceptance."
   },
-  "next_action": "Finish comparing parallel-merge uncertainty support with current delivery and measurement articles; verify primary definitions and joint-outcome assumptions, then decide the smallest complete reader method and prepare independent reader input.",
+  "next_action": "Complete the pointer-drag method from finished current-corpus and fixed-spec discovery; keep browser dispatch/hit testing distinct from synthetic application-model traces, then perform independent full reviews.",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0298",
-      "question": "并行制作输入的完成时间不确定时，怎样区分平均值、固定日期交齐概率与共同变化，并明确记录不足的边界？"
+      "task_id": "TASK-2026-0299",
+      "question": "网页背包单次鼠标拖放怎样区分捕获接收者、当前落点和物品资格，并在松手或中断时至多提交一次？"
     },
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",

@@ -1,0 +1,19 @@
+{
+  "description": "原创有限教学模型；不是项目观测数据或已校准的估时。时间为同一起点、共同日历的工作日边界。",
+  "base": {
+    "A": [["2", "0.8"], ["4", "0.2"]],
+    "B": [["2", "0.8"], ["4", "0.2"]],
+    "common_delay": [["0", "0.8"], ["3", "0.2"]],
+    "tail": "1",
+    "independence": "X_A、X_B和共同延迟Z相互独立；每情境只有一个Z，同时用于两条到达时间。T_A与T_B不是独立变量。"
+  },
+  "queries": {"deadlines": ["3", "4", "4.32", "5", "6", "8"], "quantiles": ["0.8", "0.9", "0.95"]},
+  "alternatives": {
+    "A_always_2": {"A": [["2", "1"]]},
+    "common_risk_0.1": {"common_delay": [["0", "0.9"], ["3", "0.1"]]}
+  },
+  "common_risk_range": ["0.1", "0.3"],
+  "marginal_only": {"fast": "2", "slow": "5", "fast_probability": "0.8", "tail": "1", "deadline": "3", "q_examples": ["0.6", "0.64", "0.8"]},
+  "legacy_example": {"fast": "1", "slow": "3", "fast_probability": "0.5"},
+  "small_sample_counterexample": {"n": 6, "hypothetical_success_probability": "0.7"}
+}

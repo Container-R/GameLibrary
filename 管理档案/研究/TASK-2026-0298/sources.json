@@ -1,0 +1,167 @@
+{
+  "task_id": "TASK-2026-0298",
+  "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/并行输入汇合的期限风险判断.md",
+  "article_sha256": "7a02e37cb08cfe81886e0ae57fb3c1c0ceace7c24c717bf950d251516e69ab54",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "organization": "U.S. Government Accountability Office",
+      "title": "Schedule Assessment Guide: Best Practices for Project Schedules",
+      "version": "GAO-16-89G, December2015",
+      "url": "https://www.gao.gov/assets/gao-16-89g.pdf",
+      "pdf_sha256": "ab3257eb8fe500d286a001c12d74dd074cdbf105003efb072f3370410235bfce",
+      "claims": [
+        {
+          "locator": "Printed100–103",
+          "claim": "The last required arrival determines the merge; fixed-date and cumulative-probability questions differ.",
+          "article_sections": [
+            "一",
+            "四"
+          ]
+        },
+        {
+          "locator": "Printed105–106",
+          "claim": "Risk inputs require work-specific evidence from responsible people and experts rather than arbitrary percentages.",
+          "article_sections": [
+            "七"
+          ]
+        },
+        {
+          "locator": "Printed108 and115–117",
+          "claim": "One risk can influence multiple activities within the same scenario.",
+          "article_sections": [
+            "三"
+          ]
+        },
+        {
+          "locator": "Printed110–113",
+          "claim": "Correlation ranking is not mitigation benefit; compare changed outcomes and actual cost. Test failure can introduce additional work.",
+          "article_sections": [
+            "一",
+            "六"
+          ]
+        },
+        {
+          "locator": "Printed117 and119",
+          "claim": "Probability targets depend on risk tolerance; progress and changed conditions require updated analysis.",
+          "article_sections": [
+            "四",
+            "七"
+          ]
+        }
+      ],
+      "observed_content": "Author read selected original text on100–106,108,110–113,115–117,119; other nearby pages only partial. The article does not claim visual analysis of GAO figures36 or44.",
+      "conditions": "Public-project scheduling guidance, not game-team data, a universal correlation monotonicity theorem or a measured benefit. Game scene, probability parameters and resource availability are invented teaching conditions."
+    },
+    {
+      "article_reference": 2,
+      "author": "Hossein Pishro-Nik",
+      "title": "Introduction to Probability, Statistics, and Random Processes",
+      "publisher": "Kappa Research LLC",
+      "version": "2014 author-maintained open textbook",
+      "conditions": "Mathematical probability definitions and explicitly assumed models, not evidence that game activities or their arrival events are independent. Text/formulas read; webpage videos or images not used.",
+      "url": "https://www.probabilitycourse.com/chapter5/5_1_2_joint_cdf.php",
+      "locator": "§5.1.2 Joint Cumulative Distribution Function",
+      "observed_content": "Definition of joint CDF, marginal and independent Bernoulli example opening.",
+      "claim": "Joint CDF is an intersection event; the article derives its max-arrival deadline equivalence.",
+      "article_section": "一、把“周五能交”改成一个明确的完成事件"
+    },
+    {
+      "article_reference": 3,
+      "author": "Hossein Pishro-Nik",
+      "title": "Introduction to Probability, Statistics, and Random Processes",
+      "publisher": "Kappa Research LLC",
+      "version": "2014 author-maintained open textbook",
+      "conditions": "Mathematical probability definitions and explicitly assumed models, not evidence that game activities or their arrival events are independent. Text/formulas read; webpage videos or images not used.",
+      "url": "https://www.probabilitycourse.com/chapter1/1_4_1_independence.php",
+      "locator": "§1.4.1 Independence",
+      "observed_content": "Two-event definition and conditions for three/n events.",
+      "claim": "Mutual independence is sufficient to justify the all-input probability product; pairwise independence alone does not suffice for three or more events. Coincidental equality need not imply mutual independence.",
+      "article_section": "二、先判断手里的信息允许算到哪一步"
+    },
+    {
+      "article_reference": 4,
+      "author": "Hossein Pishro-Nik",
+      "title": "Introduction to Probability, Statistics, and Random Processes",
+      "publisher": "Kappa Research LLC",
+      "version": "2014 author-maintained open textbook",
+      "conditions": "Mathematical probability definitions and explicitly assumed models, not evidence that game activities or their arrival events are independent. Text/formulas read; webpage videos or images not used.",
+      "url": "https://www.probabilitycourse.com/chapter1/1_4_2_total_probability.php",
+      "locator": "§1.4.2 Law of Total Probability",
+      "observed_content": "Partition and total-probability formula with set decomposition.",
+      "claim": "Complete mutually exclusive conditions are weighted by their probabilities.",
+      "article_section": "三、把共同变化放进同一张情境表"
+    },
+    {
+      "article_reference": 5,
+      "author": "Hossein Pishro-Nik",
+      "title": "Introduction to Probability, Statistics, and Random Processes",
+      "publisher": "Kappa Research LLC",
+      "version": "2014 author-maintained open textbook",
+      "conditions": "Mathematical probability definitions and explicitly assumed models, not evidence that game activities or their arrival events are independent. Text/formulas read; webpage videos or images not used.",
+      "url": "https://www.probabilitycourse.com/chapter1/1_4_4_conditional_independence.php",
+      "locator": "§1.4.4 Conditional Independence",
+      "observed_content": "Equation1.8, coin example and final dice counterexample.",
+      "claim": "Conditional and unconditional independence do not imply each other; remaining joint outcomes require their own conditions.",
+      "article_section": "三、把共同变化放进同一张情境表"
+    },
+    {
+      "article_reference": 6,
+      "authors": [
+        "Paul Embrechts",
+        "Alexander McNeil",
+        "Daniel Straumann"
+      ],
+      "title": "Correlation and Dependency in Risk Management: Properties and Pitfalls",
+      "version": "November1998 author manuscript,37pages",
+      "url": "https://people.math.ethz.ch/~embrecht/ftp/pitfalls.pdf",
+      "pdf_sha256": "2705fc20f5bad0de8bf45ab6325cee27fe86f119b9919438a455c3393e6653cd",
+      "claims": [
+        {
+          "locator": "Printed4, Proposition1",
+          "claim": "Left quantile uses the first threshold where cumulative probability is at least the target.",
+          "article_section": "四、用累计分布分别回答期限与分位问题"
+        },
+        {
+          "locator": "Printed8 and21–22, Fallacy1",
+          "claim": "Zero linear correlation does not generally imply independence; marginals and a linear correlation coefficient do not generally identify a joint law.",
+          "article_section": "五、只有边际概率，也能给出有用的界"
+        },
+        {
+          "locator": "Printed24, displayed Fréchet bound in Theorem4 proof",
+          "claim": "A two-variable joint CDF lies between max(F_A+F_B−1,0) and min(F_A,F_B). The article separately derives the deadline-event and n-input bounds by elementary set relations.",
+          "article_section": "五、只有边际概率，也能给出有用的界"
+        }
+      ],
+      "actually_viewed_source_pages": [
+        {
+          "printed_page": 4,
+          "render_sha256": "aaf889f2efb9700304c9ae765ba9d3acab7b1e5d808356d1cb220f7dca3a31d8",
+          "observed_content": "Quantile infimum and ≥ convention",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        },
+        {
+          "printed_page": 24,
+          "render_sha256": "4bf0b61b85bf06d4d4f16ae5ec2010f29f967280999bc0d4f29da0e299be720c",
+          "observed_content": "Joint CDF max/min lower and upper bound",
+          "reading_scope": "Actual original page image viewed; not redistributed."
+        }
+      ],
+      "conditions": "Probability definitions and constraints only; no financial parameters or financial decision framework transferred to game production. Selected text/pages, not a claim to have fully read all37pages."
+    },
+    {
+      "article_reference": 7,
+      "organization": "NIST/SEMATECH",
+      "title": "e-Handbook of Statistical Methods,§7.2.4.1 Confidence Intervals",
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "locator": "Exact Intervals for Small Numbers of Failures and/or Small Sample Sizes",
+      "observed_content": "Small-sample and few-failure conditions in binomial interval discussion.",
+      "claim": "A routine symmetric normal approximation may be inadequate for small samples; probability inference requires a suitable method and assumptions.",
+      "article_section": "七、少量记录怎样进入判断，而不被当成保证",
+      "conditions": "The article does not perform interval estimation. The six-successes calculation is an original conditional counterexample, not a fitted real success probability."
+    }
+  ],
+  "original_work": "Training-area acceptance event, resource and work-calendar contract, eight joint scenarios, conditional alternatives, fixed-marginal couplings, sensitivity threshold, original SVGs and finite rational enumeration. All probability parameters are invented teaching assumptions.",
+  "limits": "Selected original text and actual mathematical page images, exact finite teaching enumeration and independent model review. No real project records, risk calibration, scheduling product, randomized experiment, causal validation or human study. No source PDF/screenshots redistributed."
+}
