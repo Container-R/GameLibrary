@@ -1,0 +1,106 @@
+{
+  "task_id": "TASK-2026-0286",
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "gltf-spec",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "git_blob_sha1": "e5088cdc9a4e344e836568f57e2db6726f5a6740",
+      "sha256": "8951acd6f3299e2ca28b4017e128626731049932ef316556e320e05266e73f41",
+      "bytes": 194203,
+      "read_scope": "Read selected original text: 815–826; 874–912; 979–990; 1109–1149; 1238–1299; 1310–1362; 1970–2012; 2090–2308. Includes original instantiation example 2271–2307; not whole specification."
+    },
+    {
+      "id": "skin-schema",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/skin.schema.json",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "git_blob_sha1": "800fe6f39bf3720f6366c0d874296149ef0da65c",
+      "sha256": "1ecd6daca82bacbd280bc9abcf812fcd97108b6dce50c22dd52dbc6066756bc1",
+      "bytes": 1608,
+      "read_scope": "Full JSON read. Identity matches TASK0285 source record; not executed."
+    },
+    {
+      "id": "node-schema",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/node.schema.json",
+      "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+      "git_blob_sha1": "6e028ad5810c5b2bbefc2b6ef430893235686a20",
+      "sha256": "1a88ac975a6eb05adf51484ce3104b687f260cd75157223826bfcf9fc05ce52c",
+      "bytes": 4023,
+      "read_scope": "Supplementary schema field relationships; the old top-level description is not used to override normative primitive instantiation text."
+    }
+  ],
+  "claims": [
+    {
+      "id": "hierarchy",
+      "source": "gltf-spec",
+      "locator": "815–826;874–912;979–990",
+      "finding": "Strict trees; local matrix or TRS; parent-global × local, with nonjoint ancestors included. Double precision SHOULD for local/global calculation. Explicit scale may be zero, so an optional inverse-output transform cannot be assumed invertible."
+    },
+    {
+      "id": "ibm-contract",
+      "source": "gltf-spec",
+      "locator": "2098–2129",
+      "finding": "Skin-local order; omitted inverseBindMatrices => identity. Present accessor MAT4/float32, count≥joints, associated matrices finite and fourth row [0,0,0,1]. Bind-shape may be baked into geometry or IBM."
+    },
+    {
+      "id": "matrix-layout",
+      "source": "gltf-spec",
+      "locator": "1109–1149;1238–1299;1310–1362",
+      "finding": "Column-major storage. MAT4 FLOAT element is64 bytes. IBM is not vertex attribute data: no byteStride/target; final elements after source resolution and sparse replacement are consumed. Do not import vertex interleaving assumptions."
+    },
+    {
+      "id": "skeleton-and-scene",
+      "source": "gltf-spec",
+      "locator": "2132–2158;2244",
+      "finding": "Skeleton optional common ancestor/pivot; not required to compute transforms and not an extra multiplier. Joint common root may be nonjoint and must be in same scene as skinned instance."
+    },
+    {
+      "id": "instance-and-effective-matrix",
+      "source": "gltf-spec",
+      "locator": "2167;2238–2268",
+      "finding": "Same mesh may use different skins; ordinary primitive separate; world-output weighted joint-global × IBM; mesh node global not applied again. All-zero influence has no usable transformation."
+    },
+    {
+      "id": "original-example",
+      "source": "gltf-spec",
+      "locator": "2271–2307",
+      "finding": "Mesh branch nodes1/2 rotation/scale excluded from skinning; joint branch nodes3/4 translation/scale contribute; skeleton0 does not itself define a separate formula factor."
+    },
+    {
+      "id": "morph-input-boundary",
+      "source": "gltf-spec",
+      "locator": "1998",
+      "finding": "POSITION/NORMAL/TANGENT morph displacements precede skinning/node transforms. Proposed method either excludes active morph or receives already evaluated source-space position; not a morph tutorial."
+    },
+    {
+      "id": "output-adapter",
+      "source": "author-derivation",
+      "locator": "From effective-matrix formula, assuming invertible chosen output transform H",
+      "finding": "K_local=H^-1 G_j B_j and final H cancel to world K. This is an algebraic adapter, not glTF missing factor, engine execution, or claim about a named renderer."
+    },
+    {
+      "id": "diagnostic-example",
+      "source": "author-derivation",
+      "locator": "Proposed exact 2D-in-3D matrices",
+      "finding": "G_bind=T_x(2), B=T_x(-2), G_current=T_x(2)R_z(90deg), p=(3,0,0,1): correct=(2,1,0,1); reversed B G=(0,3,0,1). Proposed hand-computable test, not executed code/asset."
+    }
+  ],
+  "method_design": [
+    "Preserve current node/skin/pose/output-frame identity while pairing each j with its skin-local IBM and global joint node.",
+    "Build G over the complete valid node tree, not just the joints array; then C=G B.",
+    "A different output frame requires an explicit invertible H and H^-1 adapter, with actual downstream H preserved; not a hidden glTF factor or tested engine API.",
+    "Finite values, budgets and chosen precision are implementation gates, not a universal numerical tolerance.",
+    "Keep inherited FLOAT-weight diagnostics; do not silently normalize or divide homogeneous w to hide them.",
+    "Translation, noncommuting rotation and two hierarchy arrangements are original bounded mathematics, not imported sample runs."
+  ],
+  "source_scope": "Pinned normative sections support the method. The original instantiation example is a structural fragment without vertex/IBM data, not a rendered complete asset. Old tutorial context stays historical and is not used as independent execution evidence.",
+  "limits": [
+    "No complete scene/schema/accessor conformance certification",
+    "No importer/animation/skinning/renderer/GPU execution",
+    "No normal/tangent method or DQS/IK validation",
+    "No image/performance/human test"
+  ],
+  "next_stage": "Independent full technical, reader and root-route review is recorded separately; this source record alone is not acceptance.",
+  "source_discrepancy": "Node schema description still says all primitives need skin attributes under a skinned node. Fixed normative Specification.adoc 2238–2240 distinguishes them; JSON Schema Reference is Informative and this description is not a structured constraint. Article follows explicit normative text, not a full schema execution claim."
+}

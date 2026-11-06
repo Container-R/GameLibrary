@@ -1,0 +1,152 @@
+{
+  "task_id": "TASK-2026-0286",
+  "baseline_commit": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
+  "role": "Historical prose/source/review identities and current limited migration; no new runtime experiment.",
+  "historical_records": [
+    {
+      "path": "管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+      "git_blob_sha1": "a97d322f838e7381dfe9f38ef76eb4c39e45dafc",
+      "sha256": "506ead859c2d63453e6ee7417686b77cd3382456a13e6be3094e595d248a09b5",
+      "bytes": 7441,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+      "disposition": "Old prose retained at fixed snapshot; current path becomes material index."
+    },
+    {
+      "path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "git_blob_sha1": "91beaaa8627eca746c023e7299d172a3bbea7fcd",
+      "sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+      "bytes": 10902,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "disposition": "One prerequisite paragraph/link changed; old full-review identities remain historical."
+    },
+    {
+      "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+      "git_blob_sha1": "125814de30af88cc51936679c0cb6f3f92565fda",
+      "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+      "bytes": 14744,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+      "disposition": "One prerequisite paragraph/link changed; old full-review identities remain historical."
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/模型导入/README.md",
+      "git_blob_sha1": "d8138352dd3deaff72eb82ea55dcce796ffa4ffe",
+      "sha256": "0b3b37d00a37198a085251b892631749bba8dd5443992b9af41897615b2f9d6d",
+      "bytes": 1227,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/GameLibrary/技术美术/环境管线/模型导入/README.md",
+      "disposition": "Topic gets one new direct-child entry."
+    },
+    {
+      "path": "管理档案/来源笔记/gltf-inverse-bind-space.json",
+      "git_blob_sha1": "8e20249967dadbb18a8250cd03a43889e8a4293d",
+      "sha256": "c0b7be7cdf0cce75f9bb932c29f22c4275f52898aba6224be312b6c1c2e0b6f9",
+      "bytes": 2480,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/来源笔记/gltf-inverse-bind-space.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/逆绑定空间-来源与读者审查.md",
+      "git_blob_sha1": "068b21b4f92f978b26d6c7fc96e6d467f4f7d6a2",
+      "sha256": "92016bc5d7203489c7019ce458caa5152fa213ac8a1f83bd6f68cc96058905b1",
+      "bytes": 1432,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/审查/逆绑定空间-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": ".agent/runs/20261104T173504Z-gltf-bind-space.json",
+      "git_blob_sha1": "5445a95ae448dbc19e15d1476450e6b898fec9d5",
+      "sha256": "9d021852e88071008006033a6ec1fe8b71cde1d2f9d5eaae455c7f486c60a6e6",
+      "bytes": 1128,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/.agent/runs/20261104T173504Z-gltf-bind-space.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": ".agent/runs/20261105T192500Z-zero-weight-normal-data.json",
+      "git_blob_sha1": "05c3fbb5e4d9548ede30dec402a08b2f0a6e5fc1",
+      "sha256": "87f826be767e64223a45c8436d16f6af77f791127371edc42f6a5c1ee5a3502d",
+      "bytes": 1736,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/.agent/runs/20261105T192500Z-zero-weight-normal-data.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
+      "git_blob_sha1": "8b93eda2b78ac6df704866e50f6a84cc35eaa9dd",
+      "sha256": "56cf0b069fe143cf58f151a64784f51e47a22d238eac6199ee055c741a1e495e",
+      "bytes": 2530,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/来源笔记/skinning-weight-gradient-normals.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
+      "git_blob_sha1": "2b75a6c16fb75e9c2d06c14775722b9ed6fff3a9",
+      "sha256": "ab419356d29a57b1eeb68d864258b7b970d1ad9b7fb41eb9b235902e1c23b3e0",
+      "bytes": 2507,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/来源笔记/skinning-zero-weight-normal-data.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
+      "git_blob_sha1": "c187617ddda7f318780c968997bf5c13c62c4403",
+      "sha256": "1d3730f3a2316785bf1e0886deae564ad5157b17202f5ce1d25628a0a9bf8166",
+      "bytes": 3641,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/来源笔记/skinning-normalized-weights-twist.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
+      "git_blob_sha1": "9238156fa43b2eb84bf1bbc566fdd9b33161fbad",
+      "sha256": "2be5ddda6de9db478d799cc3ba136256f86b36d64270fb7952956fe3d023396b",
+      "bytes": 2394,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/审查/零位置权重与法线数据-补充审查.md",
+      "git_blob_sha1": "2c6d074a245de4c22c032e760d81a4628dd9b0b9",
+      "sha256": "5fef07d7f7ecd81a443ea46f1baa2effb8ae2613e3aa6a543891272cc83d2cc6",
+      "bytes": 2066,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/审查/零位置权重与法线数据-补充审查.md",
+      "disposition": "Preserve exact bytes and historical scope."
+    },
+    {
+      "path": "管理档案/支持资料/蒙皮弦中点示意/render-manifest.json",
+      "git_blob_sha1": "dcd50e383697264fc2234039144af947d9767a66",
+      "sha256": "c533093a17bdb2b84582cd64160b81d53114f623c6ec5d5724b2313f7d4092fa",
+      "bytes": 296,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/蒙皮弦中点示意/render-manifest.json",
+      "disposition": "Preserve exact bytes and historical scope."
+    }
+  ],
+  "current_changed_materials": [
+    {
+      "path": "管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+      "sha256": "f754c54f5ff9d980b4f529e9bb0acf8548cfd068a101e6a322c8465f181927a0",
+      "role": "material-index"
+    },
+    {
+      "path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+      "role": "one-paragraph-link-revision-only"
+    },
+    {
+      "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+      "sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+      "role": "one-paragraph-link-revision-only"
+    }
+  ],
+  "scan": {
+    "matched_current_blobs": 2384,
+    "tree_reconstructed": "cf3132b0bd67711d884dab3e7e705b7c994aa105",
+    "direct_live_inbounds": 2,
+    "named_manifests_scanned": 45,
+    "matching_manifest_binding": false,
+    "limits": "Specified titles/paths/hashes and direct current links, not full technical reading, unknown aliases, external inbound links or all historical commits."
+  },
+  "identity_handling": [
+    "Current inverse-bind index and new formal article are separately reviewed; whole old support object preserved as historical_record.",
+    "Current LBS reader hash reflects one link paragraph; its prior full technical acceptance is not renewed.",
+    "Normal-body current link version separately bound; its old reader_revision_sha256 and nested zero-position extension hashes remain unchanged inside historical_record.",
+    "Historical zero-weight data run binds original inverse-bind Git blob; preserve that run unchanged.",
+    "Figure manifest binds generation scripts/protocol, not prose; preserve inputs, manifest and results without rerun."
+  ],
+  "limits": "Old original hand calculations and source reading remain historical. No importer, animation, engine, GPU, image, performance or human test. Normal method and other technical bodies still await separate formalization."
+}

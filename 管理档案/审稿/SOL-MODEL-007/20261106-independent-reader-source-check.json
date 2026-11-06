@@ -1,0 +1,15 @@
+{
+  "reviewed_commit": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
+  "date": "2026-11-06",
+  "scope": "Independent model full-reader/source check of the joint-weight influence-table article and its root route.",
+  "findings": "Root route and returns resolved. A distinct two-set mixed-encoding and different-skin mapping task correctly classified zero-weight out-of-range indices, nonzero duplicates and FLOAT-sum deviation. Fixed Khronos specification and schema checked; no blocking issue.",
+  "not_executed": [
+    "parser",
+    "engine",
+    "GPU"
+  ],
+  "nonblocking": "Environment pipeline is a somewhat narrow name for character assets; consider a coherent naming review when scope grows, not an immediate whole-library rearrangement.",
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
+  "article_sha256": "342b78ae6452412f7196047063bfe1e8e3df98e193f85e487719359ff1e9eeb2",
+  "verdict": "pass-with-nonblocking-classification-observation"
+}

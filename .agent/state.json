@@ -3,33 +3,33 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0286"
+    "TASK-2026-0287"
   ],
-  "last_completed_task_id": "TASK-2026-0285",
-  "last_real_progress_at": "2026-11-06T10:48:18Z",
-  "last_commit_sha": "ff2826880d75af30c04f53e33e64c668410979ed",
+  "last_completed_task_id": "TASK-2026-0286",
+  "last_real_progress_at": "2026-11-06T11:03:11Z",
+  "last_commit_sha": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-joint-weight-influence-table-method",
-    "article": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
-    "article_sha256": "342b78ae6452412f7196047063bfe1e8e3df98e193f85e487719359ff1e9eeb2",
-    "previous_verified_head": "ff2826880d75af30c04f53e33e64c668410979ed",
+    "kind": "complete-skin-matrix-space-method",
+    "article": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+    "article_sha256": "2fce483d7401ad656ff35ce6acdad3b07a9de23362430fad5c7e945a41323d67",
+    "previous_verified_head": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "One complete method and topic entry, one historical material index. Existing historical source/reviews unchanged. Not whole-library acceptance."
+    "scope": "One full method and topic entry, one history index and two limited links; unchanged historical/figure evidence. Not whole-library acceptance."
   },
-  "next_action": "全文对照现有矩阵说明、LBS正式文章及固定glTF实例/逆绑定原文，记录读者需要完成的具体变换判断和剩余缺口。",
+  "next_action": "全文对照旧法线正文与原始推导/实现来源，确定代表数据处理任务、哪些旧内容必须保留及真正缺失步骤。",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0286",
-      "question": "从已经正确的关节影响表到glTF蒙皮变换，现有逆绑定与节点空间技术说明缺少哪些可独立交付的方法？",
-      "scope_record": "管理档案/研究/TASK-2026-0285/范围与保留.md"
+      "task_id": "TASK-2026-0287",
+      "question": "位置蒙皮已经正确时，现存权重变化与零位置权重法线说明怎样形成不遗漏必要数据的完整法线方法？",
+      "scope_record": "管理档案/研究/TASK-2026-0286/范围与保留.md"
     },
     {
-      "question": "其他学科管理技术正文和导航按实际依赖逐题整理。",
+      "question": "其他学科管理技术正文和导航按实际依赖逐题整理；专业方向命名日后统一评估。",
       "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md"
     }
   ],

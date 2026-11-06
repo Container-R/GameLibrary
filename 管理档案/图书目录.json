@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "ff2826880d75af30c04f53e33e64c668410979ed",
+  "publication_base_sha": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -1604,12 +1604,12 @@
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "legacy_retention": "旧完整主文和历史实验保持固定版本；现有技术稿按范围与保留记录逐项接续，不继承旧完成状态为新版全文验收。",
-      "extraction_scope": "普通读取、稀疏展开、源/目标比较、面角重索引及实例关节权重影响表已分别正式成文；坐标/蒙皮矩阵及其他关联技术稿仍逐题核定，未宣称全部相关主题完成。",
+      "extraction_scope": "普通读取、稀疏展开、源/目标比较、面角重索引、实例影响表及本题glTF逆绑定/节点空间方法已分别正式成文；其他关联技术稿仍逐题核定，未宣称全部相关主题完成。",
       "reader_body_status": "published",
       "original_scope_status": "registered-byte-sparse-target-methods-formalized-other-related-prose-preserved",
       "pending_chapter_tasks": [],
-      "scope_disposition": "普通读取、稀疏展开、源/目标比较、面角重索引及实例关节权重影响表已分别正式成文；坐标/蒙皮矩阵及其他关联技术稿仍逐题核定，未宣称全部相关主题完成。",
-      "scope_disposition_review": "管理档案/研究/TASK-2026-0285/范围与保留.md",
+      "scope_disposition": "普通读取、稀疏展开、源/目标比较、面角重索引、实例影响表及本题glTF逆绑定/节点空间方法已分别正式成文；其他关联技术稿仍逐题核定，未宣称全部相关主题完成。",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0286/范围与保留.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
@@ -1730,6 +1730,12 @@
           "path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF蒙皮影响时，如何配对关节编号与权重.md",
           "review": "管理档案/审稿/SOL-MODEL-007/20261106-full-article.json",
           "relationship": "Complete instance-specific joint/weight influence table; no change to ordinary reader bytes or prior full review."
+        },
+        {
+          "internal_id": "SOL-MODEL-008",
+          "path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+          "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+          "relationship": "Selected-skin IBM, complete node hierarchy and explicit output-space method; ordinary reader bytes unchanged."
         }
       ],
       "latest_link_revision": {
@@ -3274,10 +3280,11 @@
       "scope_note": "两个等权影响的同轴纯旋转手推，解释归一化权重与刚体混合的区别；保留非刚体和短路径局限",
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
-        "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md"
+        "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md",
+        "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json"
       ],
       "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
-      "reader_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+      "reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
       "figure_support": {
         "path": "管理档案/支持资料/蒙皮弦中点示意/README.md",
         "svg": "管理档案/支持资料/蒙皮弦中点示意/skinning-chord.svg",
@@ -3286,29 +3293,67 @@
       },
       "inverse_bind_support": {
         "path": "管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
-        "sha256": "506ead859c2d63453e6ee7417686b77cd3382456a13e6be3094e595d248a09b5",
-        "review": "管理档案/审查/逆绑定空间-来源与读者审查.md",
-        "source_record": "管理档案/来源笔记/gltf-inverse-bind-space.json",
-        "scope": "Optional fixed-glTF single-joint space derivation; original blend-method example and figure unchanged."
+        "role": "historical-material-index",
+        "material_index_sha256": "f754c54f5ff9d980b4f529e9bb0acf8548cfd068a101e6a322c8465f181927a0",
+        "material_index_review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+        "formal_article_path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+        "historical_body_sha256": "506ead859c2d63453e6ee7417686b77cd3382456a13e6be3094e595d248a09b5",
+        "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+        "historical_record": {
+          "path": "管理档案/支持资料/关节已经移动了，为什么蒙皮还需要逆绑定矩阵.md",
+          "sha256": "506ead859c2d63453e6ee7417686b77cd3382456a13e6be3094e595d248a09b5",
+          "review": "管理档案/审查/逆绑定空间-来源与读者审查.md",
+          "source_record": "管理档案/来源笔记/gltf-inverse-bind-space.json",
+          "scope": "Optional fixed-glTF single-joint space derivation; original blend-method example and figure unchanged."
+        },
+        "scope": "Old source/review applies to historical prose only; one new formal method is current teaching location."
       },
       "weight_gradient_normal_support": {
         "id": "SUP-ANIM-NORMAL-001",
         "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
-        "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
-        "source_record": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
-        "review": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
-        "previous_reader_blob": "436fd9f987dd54f6270e3ceb4b2d46b59186e70c",
-        "previous_recorded_reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
-        "reader_revision_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
-        "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result.",
-        "zero_position_weight_extension": {
-          "previous_support_sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
-          "current_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
-          "source_record": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
-          "review": "管理档案/审查/零位置权重与法线数据-补充审查.md",
-          "scope": "Explicit equal-average one-ring reconstruction and retained transform/index requirement; not the original preprocessor implementation."
+        "sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+        "role": "retained-technical-body-pending-formalization",
+        "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+        "historical_record": {
+          "id": "SUP-ANIM-NORMAL-001",
+          "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+          "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+          "source_record": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
+          "review": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
+          "previous_reader_blob": "436fd9f987dd54f6270e3ceb4b2d46b59186e70c",
+          "previous_recorded_reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
+          "reader_revision_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+          "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result.",
+          "zero_position_weight_extension": {
+            "previous_support_sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
+            "current_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+            "source_record": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
+            "review": "管理档案/审查/零位置权重与法线数据-补充审查.md",
+            "scope": "Explicit equal-average one-ring reconstruction and retained transform/index requirement; not the original preprocessor implementation."
+          }
+        },
+        "latest_link_revision": {
+          "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+          "previous_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+          "current_support_sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+          "scope": "Only glTF prerequisite href changed. All normal derivations unchanged; no new full-method or v2 location acceptance."
         }
-      }
+      },
+      "latest_link_revision": {
+        "previous_reader_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+        "current_reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+        "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+        "scope": "One prerequisite paragraph now points to the full formal matrix method; all blend-method technical content and figure unchanged."
+      },
+      "updated_at": "2026-11-06",
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-MODEL-008",
+          "path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+          "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+          "relationship": "Constructs effective position transforms before the unchanged blend-method comparison."
+        }
+      ]
     },
     {
       "internal_id": "SOL-ENGINE-008",
@@ -4297,7 +4342,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Pinned core glTF joint/weight semantics for selected node mesh/skin instance, complete accessor rows and all paired sets; not full schema/scene/transform/skinning or engine certification."
+    },
+    {
+      "internal_id": "SOL-MODEL-008",
+      "reader_title": "构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换",
+      "discipline": "技术美术",
+      "direction": "环境管线",
+      "topic": "模型导入",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
+      "reader_body_status": "published",
+      "reader_sha256": "2fce483d7401ad656ff35ce6acdad3b07a9de23362430fad5c7e945a41323d67",
+      "editorial_status": "同空间蒙皮矩阵完整方法、材料索引与有限入站经独立审查通过。",
+      "review_paths": [
+        "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0286/sources.json",
+      "source_sha256": "027e6e56113533226758a69d573461e098a870ddbe9516b85e5f170f0be097fe",
+      "materials_record": "管理档案/研究/TASK-2026-0286/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0286/范围与保留.md",
+      "related_article_ids": [
+        "SOL-MODEL-007",
+        "SOL-ANIM-004"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Pinned glTF position-transform chain, provided valid current pose and influence table; output adapter derived under invertible actual H. Not normals, pose solver, full assets or renderer certification."
     }
   ],
-  "current_batch_scope": "SOL-MODEL-007 full influence-table method and topic entry; old support becomes a history index with explicit old/new identity. Other technical bodies and library remediation unfinished."
+  "current_batch_scope": "SOL-MODEL-008 full matrix-space method and topic entry; inverse-bind history index and two scoped prerequisite revisions. Extra fixed-head review of SOL-MODEL-007 archived separately. Other library work unfinished."
 }
