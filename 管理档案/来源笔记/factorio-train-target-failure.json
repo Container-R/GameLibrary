@@ -1,0 +1,58 @@
+{
+  "id": "SRC-PROG-TRAIN-INTERRUPTS-001",
+  "reader_id": "CASE-PROG-005",
+  "reader_path": "GameLibrary/玩法程序/玩法系统/自动运输/Factorio的列车找不到卸货站时，为什么不直接跳过.md",
+  "updated_at": "2026-11-06",
+  "status": "source-backed",
+  "historical_scope": "Wube 2023–2024 development explanations for Factorio 2.0, not a verified current-release behavior or settings tutorial.",
+  "sources": [
+    {
+      "authors": [
+        "kovarex",
+        "Klonan"
+      ],
+      "publisher": "Wube Software",
+      "title": "Friday Facts #389 - Train control improvements",
+      "url": "https://www.factorio.com/blog/post/fff-389",
+      "published_at": "2023-12-15",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Train Schedule Interrupts",
+        "The generic trains",
+        "Conclusion"
+      ],
+      "read_scope": "Full visible article text. No actual image/video inspection.",
+      "supports": "Departure-time condition checks create temporary stops alongside normal schedule work; leaving a temporary stop removes that entry. Historical development context, not private scheduling implementation."
+    },
+    {
+      "authors": [
+        "Klonan"
+      ],
+      "publisher": "Wube Software",
+      "title": "Friday Facts #395 - Generic interrupts and Train stop priority",
+      "url": "https://www.factorio.com/blog/post/fff-395",
+      "published_at": "2024-01-26",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Generic interrupt",
+        "But what if I don't have a Personal Battery equipment MK2 dropoff?",
+        "Does it still skip if I disable a stop with circuit network?"
+      ],
+      "read_scope": "Full visible article text. Argument excludes priority algorithms, visual/UI interpretation and current-version guarantees.",
+      "supports": "Cargo-selected placeholder binding; missing-stop No path instead of skipping; disabled-before-dispatch versus disabled-en-route distinction in the described 2.0 design.",
+      "limits": "No cargo enumeration order, physical reachability algorithm, general deadlock freedom or inverse diagnosis of every No path result."
+    }
+  ],
+  "original_example": {
+    "cargo": "40 units of one item kind",
+    "scope": "Paper design sequence only: normal pickup intent, cargo-derived temporary destination, missing target, and contrasting skip-versus-retain policies.",
+    "limits": "Not an observed train run, actual blueprint, reconstructed internal schedule array, or claim that 1.1 had generic interrupts. No simulation executed."
+  },
+  "deduplication": {
+    "snapshot": "ca6a6fb35bbf34babd1717fd8089dcf85a05bcca",
+    "scope": "Catalog paths and targeted exact-version readers on Factorio belts, fluids, caches, AI plans, path queries and gameplay roles; not whole-library line-by-line semantic search.",
+    "result": "Distinct historical scheduling/failure-semantics problem. Existing Factorio articles concern other mechanisms and are not extended merely because they share a game."
+  },
+  "reuse": "Original explanations and paper example with source links. No source screenshots, videos, private code, blueprints or game assets redistributed.",
+  "evidence_boundary": "Historical first-party text and original unexecuted design analysis only. No game, mod, simulator, engine, network, performance, visual or human test."
+}

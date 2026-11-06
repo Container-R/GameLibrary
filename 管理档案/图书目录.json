@@ -4030,6 +4030,39 @@
         "https://jcgt.org/published/0002/02/09/paper-lowres.pdf",
         "https://casual-effects.blogspot.com/2015/03/implemented-weighted-blended-order.html"
       ]
+    },
+    {
+      "internal_id": "CASE-PROG-005",
+      "reader_title": "Factorio的列车找不到卸货站时，为什么不直接跳过",
+      "floor": "玩法程序",
+      "area": "玩法系统",
+      "shelf": "自动运输",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/自动运输/Factorio的列车找不到卸货站时，为什么不直接跳过.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/自动运输/Factorio的列车找不到卸货站时，为什么不直接跳过.md",
+      "reader_body_status": "published",
+      "editorial_status": "历史开发案例经独立读者视角与原始文字审读；原创纸面序列未执行，不认证当前版本。",
+      "origin": "source-backed-historical-production-case",
+      "review_paths": [
+        "管理档案/审查/列车临时目标失效-历史案例与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/factorio-train-target-failure.json",
+      "reader_sha256": "ed2d1154cfc7a303b88da725a9518ed2742aa220f20c0bfa4128e458cbf5ac63",
+      "related_roles": [
+        "ROLE-PROG-001",
+        "ROLE-QA-001"
+      ],
+      "related_disciplines": [
+        "DESIGN",
+        "AI"
+      ],
+      "updated_at": "2026-11-06",
+      "status": "source-backed",
+      "type": "case-study",
+      "primary_discipline": "PROG",
+      "sources": [
+        "https://www.factorio.com/blog/post/fff-389",
+        "https://www.factorio.com/blog/post/fff-395"
+      ]
     }
   ],
   "rewritten_reader_books": 55,
@@ -4040,10 +4073,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "eb35d1daa43f51a57166989d438f0f908285dac0",
+  "publication_base_sha": "ca6a6fb35bbf34babd1717fd8089dcf85a05bcca",
   "accounted_for_original_items": 55,
-  "reader_books_total": 110,
-  "post_baseline_research_books": 55,
+  "reader_books_total": 111,
+  "post_baseline_research_books": 56,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
