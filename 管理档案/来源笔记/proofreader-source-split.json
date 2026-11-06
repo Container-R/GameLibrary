@@ -1,0 +1,129 @@
+{
+  "id": "KNOW-QA-002",
+  "title": "校对模型的测试集，为什么要在生成错字之前划分",
+  "type": "knowledge",
+  "status": "source-backed",
+  "primary_discipline": "QA",
+  "related_disciplines": [
+    "AI",
+    "NARR"
+  ],
+  "related_roles": [
+    "ROLE-QA-001",
+    "ROLE-NARR-001"
+  ],
+  "updated_at": "2026-11-06",
+  "path": "GameLibrary/项目管理与测试/质量保证/自动化测试/校对模型的测试集，为什么要在生成错字之前划分.md",
+  "question": "When typo variants share an original dialogue line, what must remain outside training to evaluate unseen original lines?",
+  "sources": [
+    {
+      "author": "立福 寛 / Cygames",
+      "title": "AIによる自然言語処理を活用したゲームシナリオの誤字検出への取り組み",
+      "url": "https://speakerdeck.com/cygames/ainiyoruzi-ran-yan-yu-chu-li-wohuo-yong-sitagemusinarionowu-zi-jian-chu-henoqu-rizu-mi",
+      "event": "CEDEC2022",
+      "presented_at": "2022-08-25",
+      "uploaded_at": "2023-08-31",
+      "date_confirmation": "https://cedec.cesa.or.jp/2022/session/detail/32.html",
+      "accessed_at": "2026-11-06",
+      "read_scope": "Slide text 21–22 and 34–37; slide 35 diagram visually inspected independently.",
+      "locations": {
+        "data_construction": "21–22",
+        "split_order": "34–35",
+        "historical_metrics": "36–37"
+      },
+      "verified_image_url": "https://files.speakerdeck.com/presentations/dc86984f4bca40708883b08b966a41ce/slide_34.jpg",
+      "claims": [
+        "Old pipeline augments original game text before shuffling/splitting; diagram warns that derivatives of the same original occur on both sides.",
+        "New pipeline partitions original scenario data before adding errors separately."
+      ],
+      "limits": [
+        "No split-only ablation supports attributing score change to this repair.",
+        "No claim that all repeated lines or templates were isolated.",
+        "No assumption of GroupKFold use, current deployment, natural-error coverage or unseen-project performance."
+      ]
+    },
+    {
+      "author": "scikit-learn developers",
+      "title": "Cross-validation: evaluating estimator performance",
+      "url": "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
+      "accessed_at": "2026-11-06",
+      "version_label_at_access": "1.9.1",
+      "locations": [
+        "3.1 introductory discussion",
+        "3.1.2.4",
+        "3.1.2.4.1"
+      ],
+      "claims": [
+        "Evaluation of unseen groups requires groups excluded from the corresponding training fold.",
+        "GroupKFold enforces supplied group separation; group definition remains a data-design responsibility.",
+        "Test data used to choose settings is no longer an untouched final evaluation."
+      ]
+    },
+    {
+      "author": "scikit-learn developers",
+      "title": "Common pitfalls and recommended practices: Data leakage",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage",
+      "accessed_at": "2026-11-06",
+      "version_label_at_access": "1.9.1",
+      "locations": [
+        "12.2",
+        "12.2.1"
+      ],
+      "claims": [
+        "Split before learned preprocessing; fit only on training data.",
+        "Pipelines help control fitted preprocessing leakage but do not identify shared source lines."
+      ]
+    }
+  ],
+  "selection_history": {
+    "localization_comparison": {
+      "baseline": "208a0b48aad839b5775d65f5283b8ec1189eb87d",
+      "existing_reader": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "candidate_url": "https://speakerdeck.com/cygames/cygames_202607_cedec2026_01",
+      "locations": "36–46",
+      "decision": "Do not publish a new dialect/localization article from this material.",
+      "reason": "Japanese original-writing assistance and qualitative character-specific phrasing feedback do not add a distinct method beyond the existing context/review reader. No verified stale-reference conflict or acceptance procedure."
+    },
+    "adjacent_proofreading_feedback": {
+      "url": "https://speakerdeck.com/cygames/cygames_202607_cedec2026_01",
+      "locations": "48–64, with slide 63 image inspected",
+      "verified_image_url": "https://files.speakerdeck.com/presentations/425507ad401f4eb782ec3087331c8890/slide_62.jpg",
+      "finding": "Reviewer feedback distinguishes suspected typo from intentional decorative expression and ambiguous readings. This was a research lead, not evidence of accuracy or a standalone new reader.",
+      "next_source": "CEDEC2022 predecessor"
+    },
+    "novelty_compared": [
+      "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
+      "GameLibrary/项目管理与测试/质量保证/自动化测试/自动测试角色到达终点后，还要检查什么.md",
+      "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md"
+    ],
+    "novelty_result": "Predictive evaluation with augmented samples is distinct from automated action/verdict checks and causal player-assignment randomization. Repository keyword search found no indexed matches for 训练集 or 校对, which is supporting search evidence rather than proof of absence.",
+    "distinct_localization_candidate": {
+      "url": "https://speakerdeck.com/cygames/httpsspeakerdeckcomcygamescygames_202607_cedec2026_12",
+      "alternate_official_url": "https://speakerdeck.com/cygames/cygames_202607_cedec2026_05",
+      "authors": [
+        "Allison Cottrell",
+        "Ryohei Morita"
+      ],
+      "presented_at": "2026-07-24",
+      "uploaded_at": "2026-08-13",
+      "accessed_at": "2026-11-06",
+      "read_scope": "Independent visual inspection of English slides 1, 9 and 16 only.",
+      "finding": "Slide16 proposes project-specific nonstandard spelling rules to convey rhythm, speed and phonetics and distinguish character voices; no claim of measured success.",
+      "decision": "Retain as a distinct candidate; no reader publication until actual rules and examples are inspected.",
+      "remaining_scope": "English slides17–23 and, if needed,24–33. No inferred examples, stereotype rationale, audio similarity or reader-effectiveness claim."
+    }
+  },
+  "original_example": {
+    "path": "管理档案/研究记录/proofreader-source-split/check_split.py",
+    "result": "管理档案/研究记录/proofreader-source-split/result.json",
+    "method": "Eight authored strings from four known source lines. Compare a variant-level split with a source-level split.",
+    "result_summary": "Both arrangements have 4 rows and 2 changed rows per side, and no exact text overlap. Shared source IDs are A/B/C/D in the first and none in the second.",
+    "scope": "Known identity/count verification only; not semantic independence, labeling validity or model performance."
+  },
+  "limitations": [
+    "No model training, engine run, natural-error corpus evaluation or human test.",
+    "No third-party slide image or dataset redistributed.",
+    "A known-line/new-error evaluation may legitimately share source lines if its narrower objective is stated.",
+    "Source-level isolation does not settle repeated text under different IDs, templates, chapter/project/time grouping, pretraining exposure or test-driven tuning."
+  ]
+}

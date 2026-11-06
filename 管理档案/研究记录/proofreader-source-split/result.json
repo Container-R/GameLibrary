@@ -1,0 +1,24 @@
+{
+  "split_variants": {
+    "train_rows": 4,
+    "test_rows": 4,
+    "train_changed_rows": 2,
+    "test_changed_rows": 2,
+    "shared_texts": [],
+    "shared_sources": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "split_sources": {
+    "train_rows": 4,
+    "test_rows": 4,
+    "train_changed_rows": 2,
+    "test_changed_rows": 2,
+    "shared_texts": [],
+    "shared_sources": []
+  },
+  "scope": "Synthetic identity and count checks only; no model, accuracy or natural-error assessment."
+}
