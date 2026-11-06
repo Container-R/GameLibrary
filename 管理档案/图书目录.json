@@ -1660,15 +1660,22 @@
       "scope_disposition": "水泵房试玩主线不变；细粗标签一致率的推导与限制通过明确可选入口保留于旧自动编码小节。",
       "scope_disposition_review": "管理档案/审查/试玩标签支持入口-增量审读.md",
       "historical_body_path": "管理档案/历史正文/solutions/production/playtest-intervention-evidence.md",
-      "reader_sha256": "2fec85dd6add236891d2bf57e17f95bf839cd5203995082f11eb79d2d088c313",
+      "reader_sha256": "2a8c8933f374c1ee24065ea5986f60ef6c2dac09646bfc19ffa5da97d13484f3",
       "completion_time_addition": {
         "review": "管理档案/审查/试玩完成者耗时-来源与读者审查.md",
         "source": "管理档案/来源笔记/playtest-completion-time.json",
         "scope": "Original conditional-mean example; no real playtest or causal inference."
       },
       "review_paths": [
-        "管理档案/审查/试玩完成者耗时-来源与读者审查.md"
-      ]
+        "管理档案/审查/试玩完成者耗时-来源与读者审查.md",
+        "管理档案/审查/试玩顺序与解题学习-增量审读.md"
+      ],
+      "updated_at": "2026-11-06",
+      "order_learning_extension": {
+        "source_record": "管理档案/来源笔记/playtest-order-learning.json",
+        "review": "管理档案/审查/试玩顺序与解题学习-增量审读.md",
+        "scope": "AB/BA order balance does not restore first-encounter knowledge; asymmetric transfer is a bounded possibility, not a measured game outcome. No player or statistical test."
+      }
     },
     {
       "internal_id": "SOL-NET-001",
@@ -3929,7 +3936,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "960c445be0268d0e255ca3b71757d847439dee70",
+  "publication_base_sha": "2c917cc8ea09ca4cf8dfdb2ee9b17960b6d95bc0",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,

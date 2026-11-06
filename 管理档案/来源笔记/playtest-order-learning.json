@@ -1,0 +1,74 @@
+{
+  "id": "SUPPORT-PLAYTEST-ORDER-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/主持人提示会怎样影响关卡测试结论.md",
+  "scope": "Three-paragraph existing-reader addition distinguishes order counterbalancing from recovery of a first-encounter question and flags asymmetric knowledge transfer.",
+  "sources": [
+    {
+      "author": "I. Scott MacKenzie",
+      "organization": "York University",
+      "title": "Within-subjects vs. Between-subjects Designs: Which to Use?",
+      "url": "https://www.yorku.ca/mack/RN-Counterbalancing.html",
+      "updated_at": "2013-03-29",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Interference Effects and Learning Effects",
+        "Latin Squares: two-condition order example",
+        "Did Counterbalancing Work?"
+      ],
+      "claims": [
+        "Prior condition can affect later performance through practice.",
+        "Different condition orders address fixed presentation order, but asymmetric transfer remains a limitation."
+      ],
+      "limits": [
+        "Author methods note, not a game experiment.",
+        "Does not validate the fictional map/lighting scenario.",
+        "Do not adopt non-significant group effect as proof that transfer is absent.",
+        "No reading of the cited 1966 paper or copying of diagrams."
+      ]
+    },
+    {
+      "author": "Raluca Budiu",
+      "organization": "Nielsen Norman Group",
+      "title": "Between-Subjects vs. Within-Subjects Study Design",
+      "url": "https://www.nngroup.com/articles/between-within-subjects/",
+      "published_at": "2023-07-10",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Between-Subjects, Within-Subjects, or Both?: reading-learning example",
+        "Between-Subjects Minimizes the Learning and Transfer Across Conditions",
+        "Randomization: Essential for Both Types of Design"
+      ],
+      "claims": [
+        "A manipulation may change participant knowledge so later exposure is not the same starting state.",
+        "Separate-condition assignment avoids study-created cross-condition exposure; recruitment and assignment still matter."
+      ],
+      "limits": [
+        "Original methods guidance, not controlled game evidence.",
+        "No universal sample size, significance threshold or causal guarantee imported.",
+        "Repeated participation remains appropriate when learning/retention is the actual question."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "2c917cc8ea09ca4cf8dfdb2ee9b17960b6d95bc0",
+    "comparison": [
+      "Current full host-intervention reader",
+      "Related historical host-intervention text",
+      "Player-grouped experimental-unit support"
+    ],
+    "decision": "No standalone reader. Existing memory-reset warning is retained; only AB/BA counterbalancing and directional transfer limitation added.",
+    "search_limits": "Public tree-title screening and selected related full texts; not exhaustive full-library semantic proof."
+  },
+  "original_scenario": {
+    "execution": "Unexecuted fictional example",
+    "description": "Same pump-room exit: A provides a route map, B uses lighting/composition. A participant who learned the route may complete B without using B cues.",
+    "limits": [
+      "No players, measured outcomes, causal effect or confirmed asymmetry.",
+      "Possible difference in A-to-B versus B-to-A transfer is hypothetical.",
+      "Different rooms/puzzles require separate difficulty/transfer checks; changing decoration is not proof of independence."
+    ]
+  },
+  "third_party_assets_redistributed": false
+}
