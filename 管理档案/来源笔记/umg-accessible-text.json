@@ -1,0 +1,68 @@
+{
+  "id": "ROLE-UX-001-umg-accessible-text",
+  "title": "UMG显示标签与辅助技术文本来源",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
+  "reader_section": "Unreal 5.6：画面文字与朗读文字可能来自不同地方",
+  "sources": [
+    {
+      "author": "Epic Games",
+      "title": "Supporting Screen Readers",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/supporting-screen-readers-in-unreal-engine?application_version=5.6",
+      "version": "Unreal Engine 5.6",
+      "accessed_at": "2026-11-06",
+      "published_at": null,
+      "locations": [
+        "Experimental notice",
+        "Enabling Screen Reader Support",
+        "Using Accessibility in UMG"
+      ],
+      "claims": [
+        "Screen-reader support described for Windows third-party readers and iOS VoiceOver.",
+        "Accessible Behavior Auto uses assigned widget text, Custom uses developer-provided text, Summary concatenates child text.",
+        "Override Accessible Defaults exposes behavior settings; activation is required."
+      ],
+      "limits": [
+        "Experimental and shipping caution preserved.",
+        "No API member signature, automatic child-label resolution, platform-wide compatibility or execution claim.",
+        "Summary duplication is a proposed check, not an observed or guaranteed failure."
+      ]
+    },
+    {
+      "author": "Microsoft",
+      "title": "Xbox Accessibility Guideline 106: Screen narration",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/106",
+      "updated_at": "2026-03-04",
+      "accessed_at": "2026-11-06",
+      "location": "How should an item be narrated?",
+      "claim": "A visible control label should be available as the corresponding narrated label; names, roles and applicable state/value remain distinct concerns.",
+      "limits": [
+        "Guidance is not platform certification or implementation verification.",
+        "No requirement to normalize dialect or intentional spelling is inferred."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "7e94f60b47c2f5693277430e515057bde07383a3",
+    "existing": "UX reader already covers name, role, state, focus interruption and repeat; additions address where the text input is sourced in a bounded UMG configuration.",
+    "comparison": [
+      "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
+      "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+      "GameLibrary/本地化与无障碍/本地化制作/界面验证/用伪本地化发现布局与占位符问题.md"
+    ],
+    "decision": "Add a bounded section to the existing UX reader and descriptive shelf link; no new book."
+  },
+  "original_example": {
+    "setup": "The existing hypothetical subtitle-settings flow changes its visible button from 取消 to 继续调整. A hypothetical Custom narration input remains old.",
+    "checks": [
+      "Identify focused widget and selected mode.",
+      "Trace visible and narrated text sources through current language/content.",
+      "Inspect child aggregation only if Summary is selected.",
+      "Actually operate/listen on the target platform before claiming a result."
+    ],
+    "execution": "Unexecuted design/checking example; no engine, screen reader, audio or human test."
+  },
+  "rejected_scope": "No support for a general rule that intentional character spelling should be replaced with standard-language narration. Separate semantics and platform behavior require their own evidence.",
+  "third_party_assets_redistributed": false
+}
