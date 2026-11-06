@@ -10009,18 +10009,43 @@
       "reader": "角色变形与图形工具程序员",
       "scope": "对照现存法线技术正文、固定来源和LBS/位置矩阵正式方法，先确定连续场与离散网格的读者任务、数据需求及实际验证边界；不扩成通用几何百科或恢复IK。",
       "expected_outcome": "确定值得正式化且不重复的完整方法，保留既有梯度与零位置权重细节，选择合理正式分类与必要证据。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0287/sources.json",
+        "管理档案/研究/TASK-2026-0287/materials.json",
+        "管理档案/研究/TASK-2026-0287/范围与保留.md",
+        "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json"
+      ],
+      "next_action": "核现存交互音乐与FMOD父时钟材料的分工、来源及完整读者方法，再决定有限正式化和导航范围。",
+      "blocker": null,
+      "updated_at": "2026-11-06T11:19:22Z",
+      "related_task_ids": [
+        "TASK-2026-0286",
+        "TASK-2026-0285"
+      ],
+      "article_path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+      "review": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0288",
+      "question": "现存交互音乐与FMOD父时钟材料怎样交付不重复的完整同步方法，并使读者逐层找到唯一正式正文？",
+      "reader": "音频程序员与技术声音设计师",
+      "scope": "先核现有音乐正文、父时钟技术稿和原始来源，确定实际读者任务、技术缺口及来源支持；仅在成熟后处理该专题必要归属和导航，不重排全声音学科。",
+      "expected_outcome": "确定可完整交付的同步方法、保留价值和有限迁移计划，或指出确切研究缺口。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0286/范围与保留.md"
+        "管理档案/研究/TASK-2026-0287/范围与保留.md"
       ],
-      "next_action": "全文对照旧法线正文与原始推导/实现来源，确定代表数据处理任务、哪些旧内容必须保留及真正缺失步骤。",
+      "next_action": "全文比较当前交互音乐文章和FMOD父时钟支持稿，核原始文档及实际时钟/调度约定，确定不重复的完整问题。",
       "blocker": null,
-      "updated_at": "2026-11-06T11:03:11Z",
+      "updated_at": "2026-11-06T11:19:22Z",
       "related_task_ids": [
-        "TASK-2026-0286",
-        "TASK-2026-0285"
+        "TASK-2026-0287"
       ]
     }
   ],
@@ -10028,7 +10053,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Scope the retained skinning-normal technical body against existing position and blend methods before another finite migration."
+    "next_priority": "全文比较当前交互音乐文章和FMOD父时钟支持稿，核原始文档及实际时钟/调度约定，确定不重复的完整问题。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

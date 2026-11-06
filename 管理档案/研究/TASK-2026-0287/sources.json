@@ -1,0 +1,108 @@
+{
+  "task_id": "TASK-2026-0287",
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "KAVAN2014",
+      "authors": [
+        "Ladislav Kavan"
+      ],
+      "title": "Part I: Direct Skinning Methods and Deformation Primitives",
+      "publication": "SIGGRAPH 2014 course Skinning: Real-time Shape Deformation",
+      "url": "https://skinning.org/direct-methods.pdf#page=9",
+      "read_date": "2026-11-06",
+      "read_scope": [
+        "Section 6",
+        "Equations 16–17",
+        "Figure 10 and surrounding text"
+      ],
+      "inspection": "Original PDF retrieved, extracted text read, physical page 9 rendered and viewed locally.",
+      "supports": "Spatially varying weights can change surface directions despite translation-only bones; Jacobian contains a gradient term.",
+      "limits": "Not a mesh preprocessing implementation, current-engine audit, or reproduced experiment.",
+      "retrieval": {
+        "url": "https://skinning.org/direct-methods.pdf",
+        "final_url": "https://skinning.org/direct-methods.pdf",
+        "status": 200,
+        "bytes": 1615004,
+        "sha256": "6d3739569f39798086fe470e25a4b365610ac69b7e4f9c03d279987abcda2e56"
+      }
+    },
+    {
+      "id": "TARINI2014",
+      "authors": [
+        "Marco Tarini",
+        "Daniele Panozzo",
+        "Olga Sorkine-Hornung"
+      ],
+      "title": "Accurate and Efficient Lighting for Skinned Models",
+      "publication": "Computer Graphics Forum 33(2), 421–428, 2014",
+      "url": "https://igl.ethz.ch/projects/skinning/lighting/EG2014-Lighting.pdf",
+      "read_date": "2026-11-06",
+      "read_scope": [
+        "Sections 2.2–5: equations and implementation recipe",
+        "Section 6: evaluation assumptions and evidence scope"
+      ],
+      "inspection": "Original PDF retrieved and text read. Physical pages 4–6 rendered and viewed locally; no video viewed.",
+      "supports": "Face-derived and vertex-averaged gradients, additional zero-position influences, tangent transport, precomputed factors, reference-bone differences, and limits of capping.",
+      "limits": "Paper cotangent/Voronoi preprocessing not reproduced; no supplement/code inspected or executed; historical visual and operation-count claims not adopted as new or contemporary evidence.",
+      "retrieval": {
+        "url": "https://igl.ethz.ch/projects/skinning/lighting/EG2014-Lighting.pdf",
+        "final_url": "https://igl.ethz.ch/projects/skinning/lighting/EG2014-Lighting.pdf",
+        "status": 200,
+        "bytes": 6908447,
+        "sha256": "ff1b454bed5c82db844e7522608ae41eebd3df801bda6baa3656661ba69a2463"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "translation-and-jacobian",
+      "source": "KAVAN2014",
+      "locator": "§6 equations16–17 and Figure10",
+      "finding": "Variable weights add outer-product terms even with translation-only transforms."
+    },
+    {
+      "id": "shading-plane",
+      "source": "TARINI2014",
+      "locator": "§2.2 and §4.1 equations8–9",
+      "finding": "Preserve the supplied shading normal through a compatible tangent plane, rather than replacing it with geometric normals."
+    },
+    {
+      "id": "face-reconstruction",
+      "source": "TARINI2014",
+      "locator": "§3.1 equation5",
+      "finding": "Face-affine weights with zero normal derivative. Article independently expands this as an explicit2×2 Gram solve."
+    },
+    {
+      "id": "vertex-estimate",
+      "source": "TARINI2014",
+      "locator": "§3.2",
+      "finding": "Neighborhood estimate and additional zero-position influences. Article deliberately uses equal face averaging, not the paper cotangent/Voronoi weighting."
+    },
+    {
+      "id": "reference-form",
+      "source": "TARINI2014",
+      "locator": "§4.2–4.3 equations10–13",
+      "finding": "Precompute directional coefficients; complete partition-of-unity gives zero sums and reference differences."
+    },
+    {
+      "id": "recipe-and-cap",
+      "source": "TARINI2014",
+      "locator": "§4.4 and §5",
+      "finding": "Original implementation recipe and historical capping. Article chooses complete-influence capacity rejection, not silent trimming or a universal c=.9 guarantee."
+    },
+    {
+      "id": "original-expansion",
+      "source": "author-mathematical-derivation",
+      "locator": "Article preprocessing, orientation, two explicit examples and failure policies",
+      "finding": "Equal averaging, Gram solve, normal-only helper basis, cof(J) orientation, data lifecycle and examples are explicit editorial derivations/design choices, not claimed execution of the supplemental program."
+    }
+  ],
+  "limits": [
+    "No supplement/code/video read or executed",
+    "No renderer, engine, GPU, visual, performance or human validation",
+    "Paper PDF and rendered pages are reading material only, not redistributed",
+    "No claim to reproduce paper cotangent/Voronoi preprocessing or historical performance"
+  ],
+  "next_stage": "Current independent full technical/reader/navigation review is separate from this source record."
+}

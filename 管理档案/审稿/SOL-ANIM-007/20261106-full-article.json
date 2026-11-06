@@ -1,0 +1,80 @@
+{
+  "article_path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+  "article_sha256": "4eb57832765ca1997c3cdf6594e0086942dfc320ad1f2dfef704c9b9623d8e33",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "complete-neighborhood-skinning-normal-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-skin-normal-technical-20261106",
+      "mode": "independent-full-technical-primary-source-and-mathematical-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-skin-normal-reader-20261106",
+      "mode": "independent-complete-mesh-to-normal-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-skin-normal-navigation-20261106",
+      "mode": "independent-root-route-and-limited-inbound-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0287/sources.json",
+      "sha256": "301118b2c3f1fbb701cc04006cc56f92f3df877befe54a11da589c1fe4c8574f"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0287/materials.json",
+      "sha256": "6f1d03204604b488ad8df5b2531cc8d21c2b93f5b42579e7644b1566664289cb"
+    }
+  ],
+  "report_sha256": "16d29c3299f75c3d94f39de2be2634f706b292fc0e944e3d070a4911ebbaddef",
+  "scope_record": "管理档案/研究/TASK-2026-0287/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/角色动画/README.md",
+      "sha256": "fe0dbd07495235b118acc054c6577d39921736e15c8d1eb581dd92dc972e0012"
+    },
+    {
+      "path": "GameLibrary/角色动画/角色变形/README.md",
+      "sha256": "e0cf541458364c4e9550b63ac3cd7460b33926f28a4e6f358c815b2dc92a8f27"
+    },
+    {
+      "path": "GameLibrary/角色动画/角色变形/蒙皮/README.md",
+      "sha256": "215d25ae0eb9b7c81bde0f097ad3353bb31a7cfa5278af493ca47c35c074cfe3"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+      "sha256": "a24ff6aec416cc3fdde0eb4f5b9283aae70d4b681be5d807d74fd7f42ac4d2e2"
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "GameLibrary/角色动画/角色变形/蒙皮/手臂扭转时变细，为什么权重归一化还不够.md",
+      "sha256": "d0b8db277d583953ab83167c898da70245584885177d1b8de5876225e0e46fb3",
+      "previous_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+      "scope": "One related-method paragraph and return label only; not renewed full LBS/DQS technical acceptance."
+    }
+  ],
+  "limits": "Independent model reviews and bounded new mathematics. No production preprocessing, shader, engine, GPU, visual, performance or human test. Equal face average is a declared method choice, not reproduction of paper cotangent/Voronoi preprocessing. Whole-library acceptance remains unfinished.",
+  "updated_at": "2026-11-06T11:19:22Z"
+}

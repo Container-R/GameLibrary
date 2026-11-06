@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "f3dd2cc5206347e8ec90bb8a04799ac05c7e3514",
+  "publication_base_sha": "8d5917b2f3c61c8cc35c34ca86a1e0d6f79ffd3f",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -3281,10 +3281,11 @@
       "review_paths": [
         "管理档案/审查/蒙皮权重与扭转收缩-来源与读者审查.md",
         "管理档案/审查/蒙皮弦中点图-数学与阅读审查.md",
-        "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json"
+        "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+        "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json"
       ],
       "source_record": "管理档案/来源笔记/skinning-normalized-weights-twist.json",
-      "reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+      "reader_sha256": "d0b8db277d583953ab83167c898da70245584885177d1b8de5876225e0e46fb3",
       "figure_support": {
         "path": "管理档案/支持资料/蒙皮弦中点示意/README.md",
         "svg": "管理档案/支持资料/蒙皮弦中点示意/skinning-chord.svg",
@@ -3311,39 +3312,50 @@
       "weight_gradient_normal_support": {
         "id": "SUP-ANIM-NORMAL-001",
         "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
-        "sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
-        "role": "retained-technical-body-pending-formalization",
-        "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+        "role": "historical-material-index",
+        "material_index_sha256": "a24ff6aec416cc3fdde0eb4f5b9283aae70d4b681be5d807d74fd7f42ac4d2e2",
+        "material_index_review": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json",
+        "formal_article_path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+        "historical_body_sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+        "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/8d5917b2f3c61c8cc35c34ca86a1e0d6f79ffd3f/管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
         "historical_record": {
           "id": "SUP-ANIM-NORMAL-001",
           "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
-          "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
-          "source_record": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
-          "review": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
-          "previous_reader_blob": "436fd9f987dd54f6270e3ceb4b2d46b59186e70c",
-          "previous_recorded_reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
-          "reader_revision_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
-          "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result.",
-          "zero_position_weight_extension": {
-            "previous_support_sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
-            "current_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
-            "source_record": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
-            "review": "管理档案/审查/零位置权重与法线数据-补充审查.md",
-            "scope": "Explicit equal-average one-ring reconstruction and retained transform/index requirement; not the original preprocessor implementation."
+          "sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+          "role": "retained-technical-body-pending-formalization",
+          "historical_snapshot": "https://github.com/Container-R/GameLibrary/blob/f3dd2cc5206347e8ec90bb8a04799ac05c7e3514/管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+          "historical_record": {
+            "id": "SUP-ANIM-NORMAL-001",
+            "path": "管理档案/支持资料/骨骼没有旋转，为什么变形后的法线仍可能需要改变.md",
+            "sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+            "source_record": "管理档案/来源笔记/skinning-weight-gradient-normals.json",
+            "review": "管理档案/审查/蒙皮权重变化与法线-来源与读者审查.md",
+            "previous_reader_blob": "436fd9f987dd54f6270e3ceb4b2d46b59186e70c",
+            "previous_recorded_reader_sha256": "6e82524f584a94cca06b2cefa6b44e357c5bfa14465677470377fa6759a2db8c",
+            "reader_revision_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+            "scope": "Source-backed finite translated-bone triangle and local derivative explanation; not a general mesh implementation or rendered result.",
+            "zero_position_weight_extension": {
+              "previous_support_sha256": "2db5d258d6f4d5e849b96d6fecf98aff96ef4485ce2e572492ed75b1e28ddad8",
+              "current_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+              "source_record": "管理档案/来源笔记/skinning-zero-weight-normal-data.json",
+              "review": "管理档案/审查/零位置权重与法线数据-补充审查.md",
+              "scope": "Explicit equal-average one-ring reconstruction and retained transform/index requirement; not the original preprocessor implementation."
+            }
+          },
+          "latest_link_revision": {
+            "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+            "previous_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
+            "current_support_sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
+            "scope": "Only glTF prerequisite href changed. All normal derivations unchanged; no new full-method or v2 location acceptance."
           }
         },
-        "latest_link_revision": {
-          "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
-          "previous_support_sha256": "785ee0f02ff4c7be7b4141de15d40a8d94dd8ef8f84e450232f63bd4c238d338",
-          "current_support_sha256": "d9f72f3746a8f7a39af3117a5a8f0d48a9a55c6fc3a661368e7706a7c6e971c0",
-          "scope": "Only glTF prerequisite href changed. All normal derivations unchanged; no new full-method or v2 location acceptance."
-        }
+        "scope": "Historical prose/source/review and previous href-only revision retained exactly; new complete normal method has independent current acceptance."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
-        "current_reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
-        "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
-        "scope": "One prerequisite paragraph now points to the full formal matrix method; all blend-method technical content and figure unchanged."
+        "previous_reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+        "current_reader_sha256": "d0b8db277d583953ab83167c898da70245584885177d1b8de5876225e0e46fb3",
+        "review": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json",
+        "scope": "One normal-method paragraph plus return-label now point to the complete formal method/topic; remaining LBS/DQS body and figure unchanged."
       },
       "updated_at": "2026-11-06",
       "related_formal_articles": [
@@ -3352,6 +3364,20 @@
           "path": "GameLibrary/技术美术/环境管线/模型导入/构造glTF蒙皮矩阵时，怎样对齐绑定空间与节点变换.md",
           "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
           "relationship": "Constructs effective position transforms before the unchanged blend-method comparison."
+        },
+        {
+          "internal_id": "SOL-ANIM-007",
+          "path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+          "review": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json",
+          "relationship": "Preprocesses declared mesh neighborhoods and transports shading planes, distinct from unchanged positional blend-method comparison."
+        }
+      ],
+      "historical_link_revisions": [
+        {
+          "previous_reader_sha256": "150332c6aada22f9825fffcc55e65f1b4744976fd8e96668616cd2e4b67a1a6e",
+          "current_reader_sha256": "2e2ebe21e58a5922dc3c1bfeabd978ca24d99359b652c691ad02e0dab8a728aa",
+          "review": "管理档案/审稿/SOL-MODEL-008/20261106-full-article.json",
+          "scope": "One prerequisite paragraph now points to the full formal matrix method; all blend-method technical content and figure unchanged."
         }
       ]
     },
@@ -4368,7 +4394,34 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Pinned glTF position-transform chain, provided valid current pose and influence table; output adapter derived under invertible actual H. Not normals, pose solver, full assets or renderer certification."
+    },
+    {
+      "internal_id": "SOL-ANIM-007",
+      "reader_title": "线性混合蒙皮的法线修正：从邻域权重到逐顶点计算",
+      "discipline": "角色动画",
+      "direction": "角色变形",
+      "topic": "蒙皮",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+      "current_read_path": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
+      "reader_body_status": "published",
+      "reader_sha256": "4eb57832765ca1997c3cdf6594e0086942dfc320ad1f2dfef704c9b9623d8e33",
+      "editorial_status": "完整邻域法线方法、有限导航及历史索引经独立审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0287/sources.json",
+      "source_sha256": "301118b2c3f1fbb701cc04006cc56f92f3df877befe54a11da589c1fe4c8574f",
+      "materials_record": "管理档案/研究/TASK-2026-0287/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0287/范围与保留.md",
+      "related_article_ids": [
+        "SOL-ANIM-004",
+        "SOL-MODEL-008",
+        "SOL-MODEL-007"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Fixed-source triangular LBS mesh, supplied normalized weights/shading normals and explicit neighborhoods. Equal face-gradient estimate, helper plane, complete influence data, reference-difference runtime and failure policy; not morph/DQS/normal maps or rendered-asset certification."
     }
   ],
-  "current_batch_scope": "SOL-MODEL-008 full matrix-space method and topic entry; inverse-bind history index and two scoped prerequisite revisions. Extra fixed-head review of SOL-MODEL-007 archived separately. Other library work unfinished."
+  "current_batch_scope": "One complete skinning-normal method, three finite animation navigation pages, one historical index and one limited LBS relationship paragraph/return label. Original evidence and other topics unchanged; not whole-library v2 acceptance."
 }
