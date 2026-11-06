@@ -1,0 +1,65 @@
+{
+  "id": "SUPPORT-NET-GAMELIFT-PLACEMENT-RECOVERY-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/网络与在线服务/在线服务/岗位与协作/在线服务工程师如何保障游戏会话.md",
+  "scope": "Existing online-service reader gains a bounded placement-status recovery example; not an idempotent Start or exactly-once protocol.",
+  "sources": [
+    {
+      "author": "AWS",
+      "title": "StartGameSessionPlacement",
+      "url": "https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_StartGameSessionPlacement.html",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Result",
+        "PlacementId"
+      ],
+      "claims": [
+        "Successful request submission differs from completed placement.",
+        "PlacementId is developer-defined, unique across Regions and cannot be reused."
+      ]
+    },
+    {
+      "author": "AWS",
+      "title": "DescribeGameSessionPlacement",
+      "url": "https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeGameSessionPlacement.html",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Description and SNS tracking restriction",
+        "NotFoundException"
+      ],
+      "claims": [
+        "PlacementId identifies the queried request.",
+        "Continuous production polling is not recommended; documentation requires SNS tracking.",
+        "NotFound can mean not yet created or deleted."
+      ]
+    },
+    {
+      "author": "AWS",
+      "title": "GameSessionPlacement",
+      "url": "https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_GameSessionPlacement.html",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Opening Note",
+        "Status"
+      ],
+      "claims": [
+        "PENDING placement properties are not final; FULFILLED means ready to accept players.",
+        "Service TIMED_OUT differs from a local missing response."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "5293cedf9ad814419ce2bd603ac19e30b5aed391",
+    "comparison_commit": "ba2e4261b346a9e8af33ae9d5a19a63967aa0987",
+    "decision": "Existing general retry and reward-idempotency advice lacked an actual placement-state example. Existing Riot scheduling case does not claim this recovery protocol.",
+    "scope": "Compared relevant readers, shelves and path names; not exhaustive full-text duplicate review.",
+    "original_example": "Unexecuted coop-example-001 lost-response scenario using the recorded placement identifier and confirmed service status; existing surrounding text retains current-team-intent checks."
+  },
+  "execution_limits": [
+    "No AWS service call, account operation, cloud resource, game or human test.",
+    "No duplicate Start result contract, placement retention period, notification implementation or exactly-once guarantee.",
+    "Rolling API references are not a service-build snapshot."
+  ],
+  "third_party_assets_redistributed": false
+}

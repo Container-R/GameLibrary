@@ -554,7 +554,7 @@
         "verification_method": "Official engineering text and independent reader review; no database execution.",
         "excluded": "No new book, PlayFab implementation claim, cross-service transaction guarantee or permanent exactly-once promise."
       },
-      "reader_sha256": "e62d20c600474833f64461cb80dca025768e91d2ef27c8c6233683367f3495f0",
+      "reader_sha256": "865059aadb8df9b946f008b4f7b1a1625fbba6ef78e6d2e368fc2d7c4b6a1d01",
       "auth_pending_maintenance": {
         "source_record": "管理档案/来源笔记/steam-session-auth-pending.json",
         "review": "管理档案/审查/Steam会话身份等待-来源与读者审查.md",
@@ -574,13 +574,20 @@
         "scope": "Optional custom TCP framing; source reading and finite paper example, no runtime."
       },
       "review_paths": [
-        "管理档案/审查/Steam统计拒绝后回读-来源与读者审查.md"
+        "管理档案/审查/Steam统计拒绝后回读-来源与读者审查.md",
+        "管理档案/审查/GameLift分配结果恢复-来源与读者审查.md"
       ],
       "steam_stats_reconciliation_support": {
         "support": "管理档案/支持资料/Steam统计提交被拒后，为什么只重试还不够.md",
         "sha256": "c746d051c936dfad94762f1fad234179a7bcca54f0acafb32b8bce24c1ba7f9a",
         "review": "管理档案/审查/Steam统计拒绝后回读-来源与读者审查.md",
         "scope": "Conditional application-copy reconciliation after documented InvalidParam; rolling documentation, no Steam execution."
+      },
+      "updated_at": "2026-11-06",
+      "placement_recovery_extension": {
+        "source_record": "管理档案/来源笔记/gamelift-placement-recovery.json",
+        "review": "管理档案/审查/GameLift分配结果恢复-来源与读者审查.md",
+        "scope": "GameLift placement query and status distinguish local timeout from service result; no repeated-Start idempotency, retention or exactly-once claim."
       }
     },
     {
@@ -3966,7 +3973,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "ba2e4261b346a9e8af33ae9d5a19a63967aa0987",
+  "publication_base_sha": "5293cedf9ad814419ce2bd603ac19e30b5aed391",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,
