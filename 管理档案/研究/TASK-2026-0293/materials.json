@@ -1,0 +1,297 @@
+{
+  "base_commit": "8d7689d8418a0e3020e616996ddb45ac1cce880a",
+  "base_tree": "b813b8b1561a63352b94d9899d669bcd654529bd",
+  "historical_materials": [
+    {
+      "path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+      "sha256": "5aa7fbeae3ae35bfc9f6e5254b30ba6e490d44bcc840ee0d52c2f663bc00b72e",
+      "git_blob_sha1": "46b8aa0fedbf5c95c1bec85beaf38c383643d3b9",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+      "sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+      "git_blob_sha1": "539466d7b8d7e064e9cf742859ef2222094d30a0",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md"
+    },
+    {
+      "path": "管理档案/来源笔记/box2d-convex-core-radii.json",
+      "sha256": "c3e486841ad9146f15f094ca587cc16791f8802c4e9e82baaa5290f83f957184",
+      "git_blob_sha1": "91a987b3d12c80b131c238db962d0c23697ed792",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/来源笔记/box2d-convex-core-radii.json"
+    },
+    {
+      "path": "管理档案/审查/Box2D凸距离-源码与读者审查.md",
+      "sha256": "ddf917348417c348a6134cec45ed49a55bbcf7d171d0fd258e1d36675b7ab1c0",
+      "git_blob_sha1": "34de553220c3467c3a5af77f4d18d102ef8e6ad8",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审查/Box2D凸距离-源码与读者审查.md"
+    },
+    {
+      "path": ".agent/runs/20261106T075239Z-box2d-convex-distance.json",
+      "sha256": "bcea853d1f9c1e2a1a989b1f6c3d4c8eb263e220cd9f15368ce105327a586cdb",
+      "git_blob_sha1": "fc1d1a57e8574878348445664f06b967b95f3c09",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/.agent/runs/20261106T075239Z-box2d-convex-distance.json"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D当前区域查询与实体命中集合.md",
+      "sha256": "286a4ef17ad96aa57ec8a819fb95ac97fd52bce3d5c75588fb9147a727f94610",
+      "git_blob_sha1": "cb95bf176e17b795d54ca6632c93adb93785456e",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/GameLibrary/玩法程序/玩法系统/物理检测/Box2D当前区域查询与实体命中集合.md"
+    },
+    {
+      "path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+      "sha256": "307803a6e9922d5e5336f52f49d48e04d3d590b0752f2f5c721cb8bcea3d2b8b",
+      "git_blob_sha1": "303cd3502baaaaae2018db2f9c082411aedbac61",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md"
+    },
+    {
+      "path": "管理档案/审查/Box2D范围查询-来源与读者审查.md",
+      "sha256": "e0eb910bc33e0821b70ab248f5a54d1e9fffbf7a93b079d57767306d3040af69",
+      "git_blob_sha1": "262c5ad34131538e260b97b10c214d7b424c0568",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审查/Box2D范围查询-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/审查/传感区穿越-原生与读者审查.md",
+      "sha256": "b1dbd460cac48c6ef9862810995f197ca58062a47981cf7326f9396d4e749752",
+      "git_blob_sha1": "df9644da7d6a890c8bb811ff770ce346c6877dde",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审查/传感区穿越-原生与读者审查.md"
+    },
+    {
+      "path": "管理档案/审查/形状组与查询-来源和读者审查.md",
+      "sha256": "13587579e02f567de76869eb3ee5398c45f65707466e75658d7293a5fc08043e",
+      "git_blob_sha1": "bae5ea618b6feec0e137c08683286db38311002b",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审查/形状组与查询-来源和读者审查.md"
+    },
+    {
+      "path": "管理档案/审稿/SOL-PROG-008/20261106-full-article.json",
+      "sha256": "dd13f14c9fa355139cad4ea8237f05b785994d0f1659956e0f752fcbe2441596",
+      "git_blob_sha1": "f0ab1fdc0c080d869482d1b86b10d77fe9c477c1",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审稿/SOL-PROG-008/20261106-full-article.json"
+    },
+    {
+      "path": "管理档案/审稿/SOL-PROG-008/20261106-full-article.md",
+      "sha256": "6335fe4ba74ecca270990fb0933ea4c7a2418aaaf7c1f330191b9050c105751d",
+      "git_blob_sha1": "eb2ca82f2a9da4e578be53003e35041d85bd97fd",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/审稿/SOL-PROG-008/20261106-full-article.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D的组过滤，为什么不能直接沿用到射线.md",
+      "sha256": "f085c9de34313858eca10c92718166b5483effa87f9042f0af4d08aadd9f1cb6",
+      "git_blob_sha1": "9b4ac039104d6e45f4820ec3dc05d91338204231",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D的组过滤，为什么不能直接沿用到射线.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/ARCHIVE-MANIFEST.json",
+      "sha256": "69a2f07d9284d100f711bd55418a533eadcf9e85f1337e6bf1340812a79f53cc",
+      "git_blob_sha1": "5213198544d6d5b7c55146157f66662dcb7e7ecb",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/ARCHIVE-MANIFEST.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/BUILD-ARGV.json",
+      "sha256": "03ab5b803b0b9cd205cd4b64677db73dc19f5ddff2dbbb32c2b460ca6f9af353",
+      "git_blob_sha1": "c8dd8de1e12cfe15a50dec0b3af17488276ce35d",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/BUILD-ARGV.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/BUILD-DIAGNOSTIC-REVIEW.md",
+      "sha256": "16db2dca4f44e625a86efd031b07603efa26914e3718922cd104be6759985284",
+      "git_blob_sha1": "5b96d470ff5fe5415e4f55459adab743f892c41e",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/BUILD-DIAGNOSTIC-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/CODE-MANIFEST.json",
+      "sha256": "bd4b97e9b3676378ccc00ebfa1927c75cbaf25f950ff8a33860c08ba33e03a8f",
+      "git_blob_sha1": "b334707f12e41ba47fdbd200db3e1f75b63880e8",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/CODE-MANIFEST.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/INDEPENDENT-IMPLEMENTATION-REVIEW.md",
+      "sha256": "6410187b7872bc4c2ff0123bdc8831521f292323480b7f19434bc1f0cb917b30",
+      "git_blob_sha1": "9b2ab7b569ae1768e22d608891f6a60844178124",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/INDEPENDENT-IMPLEMENTATION-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/NATIVE-REVIEW.md",
+      "sha256": "d5b44db069e5a1f8089393763a4cbba68b6396eb1d387c19b3efc481ff70ccd3",
+      "git_blob_sha1": "a868460e1f8c32baccfcdad8833b80128ca06f91",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/NATIVE-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/PROTOCOL-DRAFT.md",
+      "sha256": "c12f4e9b26747d8cf18d36b1e844cd3ea3a0ed4aeac9317ee6056c3f6fcff890",
+      "git_blob_sha1": "972ce271ce58419baf9ad32f69512360b49d51fd",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/PROTOCOL-DRAFT.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/PROTOCOL-REVIEW.md",
+      "sha256": "9a98ca25552a68a301e972b56c38333ba5160cceba370c252c3d3e3c29fbcaee",
+      "git_blob_sha1": "74c3d12ba3dca1376b5ffe2de761d60d3ae96268",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/PROTOCOL-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
+      "sha256": "fe1116a24cec0569df84e60073488f9c6d35b9e3dd38214c6d24909a87eb2f1b",
+      "git_blob_sha1": "899ec9d3fe3d14d8cfb33dcb481c9357cd55546d",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/README.md"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/SOURCE-MANIFEST.json",
+      "sha256": "7b4b4756e22e0ad9bc72110034c5e8b1be3c1fb74090a3a3874f1694795e9396",
+      "git_blob_sha1": "7292238f6a5212edd1e5ee9f5822804af03d1e17",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/SOURCE-MANIFEST.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/UPSTREAM-LICENSE",
+      "sha256": "68a3e676d7e94093b102d5cba0d4e04af812040d6f230c3db67a6664574e43d2",
+      "git_blob_sha1": "e32198ea937cdcfb5028c149b97ea211d8064da6",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/UPSTREAM-LICENSE"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/execution-summary.json",
+      "sha256": "e535274fe579d7a9b3f02eaf35a32470a8eb8ddef85cb78e487d535bc2633ee9",
+      "git_blob_sha1": "e292b7ff77bd644f371f090fdcf54fc2aceddd60",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/execution-summary.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/expected.json",
+      "sha256": "42db20a5ed693dff27b96789976d3db53661b28bb5fc8b4de2a67fc817f1e7c5",
+      "git_blob_sha1": "debdc6dd0f85b7452f1b8ae295b59d5dc5994046",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/expected.json"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/fixture.c",
+      "sha256": "3ed5674db919dcb12df6ecb3e25aa408367965612ea09401823f1e55cf7271e5",
+      "git_blob_sha1": "4314eb79e24aa40a3f65a3dbdd1ebb1f4f0801bc",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/fixture.c"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/independent/challenge.py",
+      "sha256": "14d27f497fb6476959d47e10d1b6c9471e0ce90e27db845c0e922d1fc3a3ed1b",
+      "git_blob_sha1": "0bed7a913d25f862b1f855ccf3ef2b402d724eb1",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/independent/challenge.py"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/make_expected.py",
+      "sha256": "9d0ee1adf57b110d4617034b3435e345b2255639e28b45171cda2fa25fa714fb",
+      "git_blob_sha1": "c31fd27cfc0391d8ecd1ca7f89c346c1021f4851",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/make_expected.py"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/observations/independent.jsonl",
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "git_blob_sha1": "1f1b014b4ef23855bb236b8e7003cc4509ed6465",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/observations/independent.jsonl"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/observations/main.jsonl",
+      "sha256": "02b492efdc7db0967f49da2d72eb8b6c5d2bddfbe9e528742e0e082959941bb6",
+      "git_blob_sha1": "1f1b014b4ef23855bb236b8e7003cc4509ed6465",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/observations/main.jsonl"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/reviewed-build-stderr.txt",
+      "sha256": "c55f639fa5da94fed9737ff07f07048c47386213d14fe39dbefaf75e281ff4b5",
+      "git_blob_sha1": "0e7f9f6058f3163d3710e329437f696ce3e1c129",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/reviewed-build-stderr.txt"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/run.py",
+      "sha256": "666f5f81ad0ca9e5c81d74756c089be6ef7ffb55dd8bf70e517220a37c1f8b5b",
+      "git_blob_sha1": "625457314994ee73da92943697ded26827272bf8",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/run.py"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/test_validate.py",
+      "sha256": "689719832385353f3fd9dff181fff8103d5dbb5f0aa1c1e7ff24572b452341ea",
+      "git_blob_sha1": "e6536b0b592968e646d17cbd24034a373d3e6c42",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/test_validate.py"
+    },
+    {
+      "path": "管理档案/支持资料/Box2D静止传感区穿越观察/validate.py",
+      "sha256": "15a48c7c61c765906123260036aa5bb6b5ada69feff1fb483ca0df26a38c8e13",
+      "git_blob_sha1": "76184c8ebe59ca9cb84349b3282f9aebec8ea882",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D静止传感区穿越观察/validate.py"
+    },
+    {
+      "path": "管理档案/来源笔记/box2d-aabb-overlap-candidates.json",
+      "sha256": "3e43f19c0e100352fc766c9c01f64b1ee6e3d185796f76e6daae80b57c2f156a",
+      "git_blob_sha1": "8d4bf8e4dec59d41cfd35fffde9b12186e415127",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/来源笔记/box2d-aabb-overlap-candidates.json"
+    },
+    {
+      "path": "管理档案/来源笔记/shape-group-query-filter.json",
+      "sha256": "ff3ffc2c16ee67036b21b925b7573e50e044cdfec8a9f911c2ece13198f61518",
+      "git_blob_sha1": "93c910ae672305afc5191576dd7078e9f8647c9a",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/来源笔记/shape-group-query-filter.json"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/materials.json",
+      "sha256": "f2eb10bf96c51fe95b26374032d9ae3005850800db7456ae4ef6ff94c7b6f717",
+      "git_blob_sha1": "19106b4ab22268b486827dc67f467fe42cde4a63",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/materials.json"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/progress.json",
+      "sha256": "87ac62e33959fa95a521fbedb804aac6287efcb63cb7756abad105fb029d7e45",
+      "git_blob_sha1": "1147875e208c73aebf597c57c910aaade4fe83b5",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/progress.json"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/sources.json",
+      "sha256": "821d207ee17627cbcca11a9a096af8e735f5e118b31630b9de48435e811c82d9",
+      "git_blob_sha1": "932d0642802f2f4e212699aa68117bf4d2867c3d",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/sources.json"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/README.md",
+      "sha256": "d5af30741cd8a89ca1e153095fa3bbc7c4805897e5d59a310a775e574dbb3373",
+      "git_blob_sha1": "d2d1d519e204c3099d63e0ad547dd8254edb63bd",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/复现/README.md"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/check_application_model.py",
+      "sha256": "596fe03b4609dd8a90cb9a28fa8d67981df5b2f645816357efa4ff6a2cf14e98",
+      "git_blob_sha1": "d84197e909e8163fda949a8a450eab3a4b147fc4",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/复现/check_application_model.py"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/复现/results.json",
+      "sha256": "acc42b10395d0f953c3947bdd70c795b109d8cdac1ea7b53543a719c675c9842",
+      "git_blob_sha1": "ef9ede6ebabd7df0ec81d5816feaa858ad7ff366",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/复现/results.json"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0292/范围与保留.md",
+      "sha256": "8612d3662a8ed1e8263e270767668e72644d3204cec0b2a62656ec808f1d2618",
+      "git_blob_sha1": "6cb884ed2831a9be8c51433b2446c187d55dea24",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/研究/TASK-2026-0292/范围与保留.md"
+    }
+  ],
+  "reproduction_materials": [
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/README.md",
+      "sha256": "52f097bb281377ed2ac0da99d0a98b06f45959d8bd8de059829d5a52af7775d9",
+      "bytes": 995
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/check_contract_model.py",
+      "sha256": "80d9c6b4469036cca6e0579d6f2ee1d91444d399a64a1299f9590ae62627166d",
+      "bytes": 4196
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/results.json",
+      "sha256": "623fdaa1299199b9a9405086cfc0a54890a4a693da370853ba54bde100e7c24d",
+      "bytes": 2857
+    }
+  ],
+  "migration": {
+    "new_article": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+    "host": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+    "host_previous_sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+    "host_current_sha256": "2b2861ca1508ca7c90802366caf0dcafedab99ae709bf676469a513703d87483",
+    "retired_body": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+    "retired_body_sha256": "5aa7fbeae3ae35bfc9f6e5254b30ba6e490d44bcc840ee0d52c2f663bc00b72e",
+    "scope": "Full pairwise surface-gap/witness method; existing sensor distance relation retargeted, old technical support becomes history index. Current-region method and all previous observations unchanged."
+  },
+  "limits": "Finite physical-detection migration only. Existing camera and other technical support debt not certified; no whole-library v2 acceptance."
+}

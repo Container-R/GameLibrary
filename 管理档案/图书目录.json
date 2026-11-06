@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "98b321b468e4f3c8aef24114e8289753240884fc",
+  "publication_base_sha": "8d7689d8418a0e3020e616996ddb45ac1cce880a",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -3012,7 +3012,8 @@
         "管理档案/审查/形状组与查询-来源和读者审查.md",
         "管理档案/审查/Box2D凸距离-源码与读者审查.md",
         "管理档案/审查/Box2D范围查询-来源与读者审查.md",
-        "管理档案/审稿/SOL-PROG-008/20261106-full-article.json"
+        "管理档案/审稿/SOL-PROG-008/20261106-full-article.json",
+        "管理档案/审稿/SOL-PROG-009/20261106-full-article.json"
       ],
       "latest_increment": {
         "scope": "Fixed-version static-sensor crossing and event-setting limits; detailed observations and limitations are in linked support.",
@@ -3020,7 +3021,7 @@
         "support_path": "管理档案/支持资料/Box2D静止传感区穿越观察/README.md",
         "reader_sha256": "e91987ee43ba51c3d8c385f01ee5a1a0b6cf19540858e54a70aaffc0e92e6f7a"
       },
-      "reader_sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+      "reader_sha256": "2b2861ca1508ca7c90802366caf0dcafedab99ae709bf676469a513703d87483",
       "event_identity_increment": {
         "source": "管理档案/来源笔记/box2d-sensor-end-lifetime.json",
         "review": "管理档案/审查/传感结束事件-对象有效性与读者审查.md",
@@ -3055,11 +3056,21 @@
       },
       "updated_at": "2026-11-06",
       "convex_distance_support": {
-        "support_path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
-        "support_sha256": "5aa7fbeae3ae35bfc9f6e5254b30ba6e490d44bcc840ee0d52c2f663bc00b72e",
-        "source_record": "管理档案/来源笔记/box2d-convex-core-radii.json",
-        "review": "管理档案/审查/Box2D凸距离-源码与读者审查.md",
-        "scope": "Optional fixed Box2D v3.2.0 core-distance and radius-postprocessing explanation; original capsule/circle paper geometry, no native distance-query execution or inherited sensor evidence."
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+        "current_review": "管理档案/审稿/SOL-PROG-009/20261106-full-article.json",
+        "historical_record": {
+          "support_path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+          "support_sha256": "5aa7fbeae3ae35bfc9f6e5254b30ba6e490d44bcc840ee0d52c2f663bc00b72e",
+          "source_record": "管理档案/来源笔记/box2d-convex-core-radii.json",
+          "review": "管理档案/审查/Box2D凸距离-源码与读者审查.md",
+          "scope": "Optional fixed Box2D v3.2.0 core-distance and radius-postprocessing explanation; original capsule/circle paper geometry, no native distance-query execution or inherited sensor evidence."
+        },
+        "path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+        "material_index_sha256": "b4d4514392bcd0dd51566e49853d0aeb931ad3db800bdb68ab90d4ba1e5da0d4",
+        "pre_retirement_body_sha256": "5aa7fbeae3ae35bfc9f6e5254b30ba6e490d44bcc840ee0d52c2f663bc00b72e",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/8d7689d8418a0e3020e616996ddb45ac1cce880a/管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+        "scope": "Original finite source/review identity retained; complete surface-gap method separately reviewed."
       },
       "aabb_overlap_section": {
         "role": "historical-source-and-review",
@@ -3088,8 +3099,20 @@
           "path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D当前区域查询与实体命中集合.md",
           "review": "管理档案/审稿/SOL-PROG-008/20261106-full-article.json",
           "relationship": "Current-region entity set, distinct from interval crossing and sensor events."
+        },
+        {
+          "internal_id": "SOL-PROG-009",
+          "path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+          "review": "管理档案/审稿/SOL-PROG-009/20261106-full-article.json",
+          "relationship": "Selected-pair current surface gap and witnesses, distinct from region entity selection or interval crossing."
         }
-      ]
+      ],
+      "latest_link_revision": {
+        "previous_reader_sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+        "current_reader_sha256": "2b2861ca1508ca7c90802366caf0dcafedab99ae709bf676469a513703d87483",
+        "review": "管理档案/审稿/SOL-PROG-009/20261106-full-article.json",
+        "scope": "Single distance-related paragraph retargeted and summarized; prior content revision and native observation evidence retained unchanged."
+      }
     },
     {
       "internal_id": "SOL-ANIM-003",
@@ -4694,7 +4717,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Fixed Box2D v3.2.0 convex current-state query acceptance, dual filtering, shape-to-entity aggregation, complete collection and post-query consumption. No swept/concave/penetration/native guarantee."
+    },
+    {
+      "internal_id": "SOL-PROG-009",
+      "reader_title": "Box2D两凸形状的表面间距与见证点查询",
+      "discipline": "玩法程序",
+      "direction": "玩法系统",
+      "topic": "物理检测",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+      "current_read_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+      "reader_body_status": "published",
+      "reader_sha256": "99318f3e2e248da6cd181177f9e18a75d7c11a0c415fae780b0d1548d5706dd7",
+      "editorial_status": "完整成对间距方法及有限迁移经独立全文与导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-PROG-009/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0293/sources.json",
+      "source_sha256": "15b5e9d338255c804bd348f7d4c598157dad0b4ca882c779ea77d2e6812cadaa",
+      "materials_record": "管理档案/研究/TASK-2026-0293/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0293/范围与保留.md",
+      "related_article_ids": [
+        "SOL-PROG-003",
+        "SOL-PROG-008"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Fixed Box2D v3.2.0 legal local geometry, same-state transforms, relative pose, radii, world witnesses, positive/zero/error consumption and optional cache lifetime. No penetration, swept/concave, native accuracy or performance guarantee."
     }
   ],
-  "current_batch_scope": "One complete current-region entity-set method and finite host/support/navigation migration. Remaining distance and camera support debt not certified."
+  "current_batch_scope": "One complete pairwise surface-gap method, one relation paragraph and finite support/navigation migration. Remaining technical support debt not certified."
 }

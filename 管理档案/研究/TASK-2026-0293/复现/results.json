@@ -1,0 +1,147 @@
+{
+  "kind": "exact_original_geometry_and_application_policy_only",
+  "box2d_or_gjk_executed": false,
+  "result": "passed",
+  "geometry_rows": [
+    {
+      "B_world_origin": [
+        "11",
+        "8"
+      ],
+      "B_to_A_translation": [
+        "3",
+        "-1"
+      ],
+      "B_to_A_quarter_turns": 1,
+      "B_center_in_A": [
+        "3",
+        "0"
+      ],
+      "core_gap": "1",
+      "ordinary_branch_gap": "1/4",
+      "ordinary_branch_points_A": [
+        [
+          "9/4",
+          "0"
+        ],
+        [
+          "5/2",
+          "0"
+        ]
+      ],
+      "ordinary_branch_point_length": "1/4",
+      "consumer_result": "PositiveGap",
+      "consumer_world_points": [
+        [
+          "10",
+          "29/4"
+        ],
+        [
+          "10",
+          "15/2"
+        ]
+      ],
+      "consumer_normal_world": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "B_world_origin": [
+        "11",
+        "31/4"
+      ],
+      "B_to_A_translation": [
+        "11/4",
+        "-1"
+      ],
+      "B_to_A_quarter_turns": 1,
+      "B_center_in_A": [
+        "11/4",
+        "0"
+      ],
+      "core_gap": "3/4",
+      "ordinary_branch_gap": "0",
+      "ordinary_branch_points_A": [
+        [
+          "9/4",
+          "0"
+        ],
+        [
+          "9/4",
+          "0"
+        ]
+      ],
+      "ordinary_branch_point_length": "0",
+      "consumer_result": "ZeroDistance",
+      "consumer_world_points": null,
+      "consumer_normal_world": null
+    },
+    {
+      "B_world_origin": [
+        "11",
+        "15/2"
+      ],
+      "B_to_A_translation": [
+        "5/2",
+        "-1"
+      ],
+      "B_to_A_quarter_turns": 1,
+      "B_center_in_A": [
+        "5/2",
+        "0"
+      ],
+      "core_gap": "1/2",
+      "ordinary_branch_gap": "0",
+      "ordinary_branch_points_A": [
+        [
+          "9/4",
+          "0"
+        ],
+        [
+          "2",
+          "0"
+        ]
+      ],
+      "ordinary_branch_point_length": "1/4",
+      "consumer_result": "ZeroDistance",
+      "consumer_world_points": null,
+      "consumer_normal_world": null
+    }
+  ],
+  "cache_policy_cases": [
+    {
+      "case": "same_pair_adjacent_pose",
+      "reuse": true
+    },
+    {
+      "case": "swapped_order",
+      "reuse": false
+    },
+    {
+      "case": "geometry_changed",
+      "reuse": false
+    },
+    {
+      "case": "same_slot_new_generation",
+      "reuse": false
+    },
+    {
+      "case": "mode_changed",
+      "reuse": false
+    },
+    {
+      "case": "discontinuous_pose",
+      "reuse": false
+    },
+    {
+      "case": "index_range_guard",
+      "reuse": false
+    }
+  ],
+  "limits": [
+    "Does not execute the article pseudocode against the Box2D library.",
+    "Does not verify native output, rounding, convergence, or performance.",
+    "Native integration tests remain to be performed by an adopting project."
+  ]
+}

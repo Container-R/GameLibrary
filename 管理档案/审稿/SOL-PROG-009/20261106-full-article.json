@@ -1,0 +1,100 @@
+{
+  "article_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+  "article_sha256": "99318f3e2e248da6cd181177f9e18a75d7c11a0c415fae780b0d1548d5706dd7",
+  "publication_kind": "complete-pairwise-surface-gap-method",
+  "verdict": "pass",
+  "author": "GameLibrary editorial author",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-box2d-distance-technical-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-009/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-box2d-distance-reader-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-009/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-box2d-distance-navigation-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROG-009/20261106-full-article.md"
+    }
+  ],
+  "reviewed_original_sha256": "dc7d7f046e7a4136c60addb8690d9e3102645817ec6c4f2d9172f77e51a139a6",
+  "integration_scope": "Full original article separately reviewed; final optional reproduction link and per-proxy wording checked by limited diff. Host change limited to one existing distance relation paragraph, prior native observations unchanged and not recertified.",
+  "navigation_revision": {
+    "initial_result": "Needs revision: first blind route tried graphics and runtime before gameplay; broad summaries did not distinguish the reader task.",
+    "change": "Clarify discipline and topic descriptions without cross-level article links.",
+    "fresh_reviewer": "independent-model-distance-route-20261106",
+    "fresh_result": "Root through direct-child directories to article and back, without search or wrong turns. Limited to this task."
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0293/sources.json",
+      "sha256": "15b5e9d338255c804bd348f7d4c598157dad0b4ca882c779ea77d2e6812cadaa"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0293/materials.json",
+      "sha256": "40130a087208bd6150555e2ab56cc092270481b29e161a228518e4773dc0e3c4"
+    }
+  ],
+  "report_sha256": "0f7b7423a98bbb1b841c1d7a9775d6919784a9f8072dbe13824c241ce1edb594",
+  "scope_record": "管理档案/研究/TASK-2026-0293/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "40aeaa427c4496f65519015a12fcfa332a5a874cc37a4cb29dca39b3b2c88734"
+    },
+    {
+      "path": "GameLibrary/玩法程序/README.md",
+      "sha256": "201155d699ad02f4e6bf69bca3da732e2e3e9f9484535293c9b2cc58bc9eb997"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/README.md",
+      "sha256": "411916edd69e199630d647ae3795f8b452fe8c2e6ae0414b9c8101abed7044e8"
+    },
+    {
+      "path": "GameLibrary/玩法程序/玩法系统/物理检测/README.md",
+      "sha256": "d02a73997550e6653c159da09918d16cf23bd4d5baa8209d0346d2e482f80b3f"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+      "sha256": "b4d4514392bcd0dd51566e49853d0aeb931ad3db800bdb68ab90d4ba1e5da0d4"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/README.md",
+      "sha256": "52f097bb281377ed2ac0da99d0a98b06f45959d8bd8de059829d5a52af7775d9",
+      "bytes": 995
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/check_contract_model.py",
+      "sha256": "80d9c6b4469036cca6e0579d6f2ee1d91444d399a64a1299f9590ae62627166d",
+      "bytes": 4196
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0293/复现/results.json",
+      "sha256": "623fdaa1299199b9a9405086cfc0a54890a4a693da370853ba54bde100e7c24d",
+      "bytes": 2857
+    }
+  ],
+  "host_revision": {
+    "path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+    "sha256": "2b2861ca1508ca7c90802366caf0dcafedab99ae709bf676469a513703d87483",
+    "previous_sha256": "f62a8082eec70d3b16d57503fce16937ec356c121155cae511abf26e423273eb",
+    "scope": "Only distance relation and summary retargeted. Previous query migration, native observations and remaining host unchanged."
+  },
+  "limits": "Independent model source/readability/navigation reviews and original arithmetic/application models. No native Box2D/GJK, upstream test, world simulation, convergence, precision, performance, concurrency or human test. No entire topic or library v2 acceptance.",
+  "updated_at": "2026-11-06T13:44:25Z"
+}

@@ -1,0 +1,120 @@
+{
+  "task_id": "TASK-2026-0293",
+  "article_path": "GameLibrary/玩法程序/玩法系统/物理检测/Box2D两凸形状的表面间距与见证点查询.md",
+  "article_sha256": "99318f3e2e248da6cd181177f9e18a75d7c11a0c415fae780b0d1548d5706dd7",
+  "fixed_release": "Box2D v3.2.0",
+  "fixed_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "sources": [
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "include/box2d/collision.h",
+      "blob_sha": "1fe93d0b40c552d87b67bcd372c174afc7113a2d",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/collision.h",
+      "read_locator": "24–60,120–170,372–455,594–660",
+      "supports": "Proxy and local geometry; relative pose, output points in A, invalid normal at zero, cache and manifold separation contract.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/distance.c",
+      "blob_sha": "9666a721bf4e09e78f463763a8a7690b0e083cfe",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/distance.c",
+      "read_locator": "108–611",
+      "supports": "Full selected proxy/support/cache/witness/simplex/distance implementation. Actual difference assignment wA−wB; early zero returns and normal radius postprocessing.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "include/box2d/math_types.h",
+      "blob_sha": "ce5a2e66308c5c436c28b5789a8e37fe1125b2ec",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/math_types.h",
+      "read_locator": "Complete file",
+      "supports": "Local float vectors/rotations versus optional double world position; transform and identity types.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "include/box2d/math_functions.h",
+      "blob_sha": "4c2a860ec0312b1f9d880a5cba74ad3b590b06a6",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/math_functions.h",
+      "read_locator": "1–60,450–610",
+      "supports": "World and local validity, correct relative helper, subtract world positions before float conversion, world point conversion and direction rotation.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "include/box2d/box2d.h",
+      "blob_sha": "64d77f244e098aa6177ffbea996f99d649f06c69",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/box2d.h",
+      "read_locator": "406–444,720–755,827–854",
+      "supports": "Body world origin/transform, shape validity/type/body and matching geometry-copy getters.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/shape.c",
+      "blob_sha": "7d40992ab100ca319e7388ad27503152d236292c",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/shape.c",
+      "read_locator": "1150–1177,1560–1607",
+      "supports": "Internal proxy construction as source evidence only; copy getters and type assertions.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "src/geometry.c",
+      "blob_sha": "5c7463bb01b08b010b65b387f802bf3e42a4b689",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/geometry.c",
+      "read_locator": "130–168",
+      "supports": "Rounded-box half dimensions describe core; radius added separately.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "docs/collision.md",
+      "blob_sha": "63734792bd84870731b97cec86dc033d5bfd96a0",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/collision.md",
+      "read_locator": "1–155,249–280",
+      "supports": "Independent geometry use, legitimate polygon/hull construction, distance versus motion query and warm-start scope; no image-derived claim.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "repository": "https://github.com/erincatto/box2d",
+      "release": "v3.2.0",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "path": "samples/sample_collision.cpp",
+      "blob_sha": "d2e9fda31acf87e3037424703a6021675e0f07eb",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/samples/sample_collision.cpp",
+      "read_locator": "16–118,300–332",
+      "supports": "Fixed sample proxy/cache/call and the premise that A is at world origin when displaying A-frame points directly.",
+      "read_on": "2026-11-06"
+    }
+  ],
+  "evidence_kind": "Fixed declarations/functions and original exact arithmetic. Snapshot/result/cache policies are application design, not additional engine fields.",
+  "source_discrepancy": "Debug simplex w comment uses wB−wA, while actual fixed implementation assigns wA−wB; article follows executed-source assignment.",
+  "limits": "No native Box2D/GJK, upstream test, physics, convergence/precision/performance or human execution. Original model does not certify native warm/cold cache equivalence. No full upstream-text reproduction."
+}
