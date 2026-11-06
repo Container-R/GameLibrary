@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T05:09:34Z",
-      "next_action": "Inspect a pinned public first-party Audiokinetic Unity localization test as a limited code-example candidate and compare existing audio readers. Do not infer SDK-wide language/reload semantics without exact-version primary documentation, and do not publish generic stale-resource advice.",
+      "last_progress_at": "2026-11-06T05:19:55Z",
+      "next_action": "Expand the existing Niagara performance reader on which bounds actually apply in UE5.6. Verify emitter/system/instance overrides and CPU-only dynamic bounds against the already identified official pages; add one unexecuted single-variable CPU-jet comparison, not a duplicate book or universal GPU claim.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -388,7 +388,9 @@
         "GameLibrary/界面与体验/交互设计/岗位与协作/游戏体验设计师如何梳理操作流程.md",
         "管理档案/来源笔记/umg-accessible-text.json",
         "GameLibrary/本地化与无障碍/本地化制作/界面验证/Unreal文本转成字符串再转回来，为什么切语言后仍不更新.md",
-        "管理档案/来源笔记/unreal-ftext-roundtrip.json"
+        "管理档案/来源笔记/unreal-ftext-roundtrip.json",
+        "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+        "管理档案/来源笔记/voice-content-assertions.json"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

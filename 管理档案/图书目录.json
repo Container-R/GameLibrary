@@ -418,10 +418,19 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/roles/localization/localization-coordinator.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "66a27d2322db4f1749be7048b512d2cfff9fc7ca7d2af637434466a6134ac8fb",
+      "reader_sha256": "3987fbbeec9ee82bb74aea0d0a18908650b529391a9822e2c58eab28eff9120b",
       "subtitle_presentation_review": {
         "review": "管理档案/审查/字幕显示与推进-来源与读者审查.md",
         "scope": "Finite existing-reader increment distinguishes audio end, text removal and scene advancement; original unexecuted review questions backed by scoped XAG116 guidance."
+      },
+      "review_paths": [
+        "管理档案/审查/语音语言与播放标识-增量审读.md"
+      ],
+      "updated_at": "2026-11-06",
+      "voice_content_assertion_extension": {
+        "source_record": "管理档案/来源笔记/voice-content-assertions.json",
+        "review": "管理档案/审查/语音语言与播放标识-增量审读.md",
+        "scope": "Pinned Audiokinetic Gyms caller/test example separates language strings and PlayingId from direct speech-content evidence. No SDK, engine or audio execution."
       }
     },
     {
@@ -3911,7 +3920,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "4ec67a80fc02bb6abb3e79e60d1f94f023d6aa46",
+  "publication_base_sha": "1e3fc5bb2ed9512a6707f06175f063de964daadd",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,

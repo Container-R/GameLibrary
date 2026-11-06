@@ -1,0 +1,48 @@
+{
+  "run_id": "20261106T051955Z-voice-content-assertions",
+  "started_at": "2026-11-06T05:15:00Z",
+  "ended_at": "2026-11-06T05:19:55Z",
+  "task_id": "TASK-2026-0008",
+  "actions": [
+    "Compared the existing localization context reader and retained one concrete candidate-content verification addition.",
+    "Read pinned public Audiokinetic Gyms caller, test assertions and version/integration requirements.",
+    "Separated caller order, language strings and PlayingId from direct recording-language evidence; no SDK-wide behavior claimed.",
+    "Corrected playback identifier terminology and explained SoundBank following independent reader review.",
+    "Added descriptive shelf anchor without creating another reader."
+  ],
+  "sources_examined": [
+    "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/Unity/Assets/Gyms/2-Basic/BasicLocalizedVoice/BasicLocalizedVoice.cs#L78-L111",
+    "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/Unity/Assets/Tests/2-Basic/BasicLocalizedVoice/BasicLocalizedVoiceTests.cs#L46-L100",
+    "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/README.md#L6-L18"
+  ],
+  "evidence_added": [
+    "管理档案/来源笔记/voice-content-assertions.json",
+    "管理档案/审查/语音语言与播放标识-增量审读.md"
+  ],
+  "files_changed": [
+    ".agent/queue.json",
+    ".agent/runs/20261106T051955Z-voice-content-assertions.json",
+    ".agent/state.json",
+    "GameLibrary/本地化与无障碍/本地化制作/内容协作/README.md",
+    "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+    "管理档案/图书目录.json",
+    "管理档案/审查/语音语言与播放标识-增量审读.md",
+    "管理档案/来源笔记/voice-content-assertions.json"
+  ],
+  "commit_sha": null,
+  "base_commit_sha": "1e3fc5bb2ed9512a6707f06175f063de964daadd",
+  "commit_note": "Containing commit identifies this publication. Remote confirmation is performed after publication.",
+  "validation": {
+    "source_review": "pass within pinned caller, explicit test assertions and README scope",
+    "independent_reader_review": "accepted with playback-identifier terminology and SoundBank explanation corrected",
+    "counts": {
+      "frozen": 55,
+      "total": 109,
+      "post_baseline": 54
+    },
+    "limits": "No SDK internals, engine, audio playback, automated-test execution or human usability test."
+  },
+  "blockers": [],
+  "next_action": "Expand the existing Niagara performance reader on which bounds actually apply in UE5.6. Verify emitter/system/instance overrides and CPU-only dynamic bounds against the already identified official pages; add one unexecuted single-variable CPU-jet comparison, not a duplicate book or universal GPU claim.",
+  "outcome": "Existing-reader implementation boundary clarified; same book and task counts."
+}

@@ -1,0 +1,73 @@
+{
+  "id": "SUPPORT-LOC-VOICE-ASSERTIONS-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+  "scope": "Finite existing-reader addition distinguishes language configuration and PlayingId assertions from direct recorded-speech content evidence. No new book.",
+  "sources": [
+    {
+      "author": "Audiokinetic",
+      "title": "Wwise Gyms — BasicLocalizedVoice",
+      "url": "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/Unity/Assets/Gyms/2-Basic/BasicLocalizedVoice/BasicLocalizedVoice.cs#L78-L111",
+      "commit": "2d3118ed9d33077a653651a859eb08c6fbf40a3e",
+      "blob": "2ab60ca27c71915b29a603358ba4340caaa73b7d",
+      "accessed_at": "2026-11-06",
+      "claims": [
+        "Caller creates a one-entry bankToReload list using WwiseObjectReference.DisplayName.",
+        "Coroutine or Task waits on SetLanguageAndReloadLocalizedBanks; with both Addressables symbols, waits on CompleteLoadBank before posting the event."
+      ],
+      "limits": [
+        "Only caller-side order inspected; manager internals, all-bank behavior and SDK-wide contracts are not established.",
+        "No production timing guarantee."
+      ]
+    },
+    {
+      "author": "Audiokinetic",
+      "title": "Wwise Gyms — BasicLocalizedVoiceTests",
+      "url": "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/Unity/Assets/Tests/2-Basic/BasicLocalizedVoice/BasicLocalizedVoiceTests.cs#L46-L100",
+      "commit": "2d3118ed9d33077a653651a859eb08c6fbf40a3e",
+      "blob": "723508d4ca344bfc7083fa9b2a37122a3d846a48",
+      "accessed_at": "2026-11-06",
+      "claims": [
+        "Inspected test explicitly compares current language strings and PlayingId values after empty-language and fr_FR calls.",
+        "Those assertions do not directly compare emitted recording language, media identity or waveform."
+      ],
+      "limits": [
+        "Do not confuse PlayingId with Event ID.",
+        "Expected PlayingId arithmetic depends on both AK_WWISE_ADDRESSABLES and UNITY_ADDRESSABLES; error expectations use !AK_WWISE_ADDRESSABLES.",
+        "A hypothetical wrong-language recording is not proven to pass the complete test, other logs/framework paths may fail.",
+        "Non-WebGL SetLanguageAndWait polls Task.IsCompleted rather than awaiting/rethrowing the task result; no successful execution claimed."
+      ]
+    },
+    {
+      "author": "Audiokinetic",
+      "title": "Wwise Gyms — README version and integration requirements",
+      "url": "https://github.com/audiokinetic/Gyms/blob/2d3118ed9d33077a653651a859eb08c6fbf40a3e/README.md#L6-L18",
+      "commit": "2d3118ed9d33077a653651a859eb08c6fbf40a3e",
+      "blob": "96412b0f24c2000926eba9138c28a1c209b1a325",
+      "accessed_at": "2026-11-06",
+      "claims": [
+        "Repository targets Wwise 2024.1 and minor releases.",
+        "Required engine integration is not included."
+      ],
+      "limits": [
+        "Recorded target is not an installed or executed SDK version."
+      ]
+    }
+  ],
+  "original_scenario": {
+    "status": "unexecuted",
+    "description": "Existing fictional pass-loan scenario receives a hypothetical wrong-language recording mapping. Configuration/PlayingId assertions alone are not direct speech-language evidence.",
+    "limits": [
+      "Not a reported Audiokinetic defect or measured test escape.",
+      "No runtime, SDK internals, audio listening or human test."
+    ]
+  },
+  "novelty": {
+    "baseline": "1e3fc5bb2ed9512a6707f06175f063de964daadd",
+    "decision": "Add one concrete public-code observation boundary under the existing candidate-content verification section; retain established narrative and LQA guidance.",
+    "new_book": false
+  },
+  "editorial_correction": "Changed event identifier wording to playback identifier to avoid confusing PlayingId with event resource identity.",
+  "third_party_assets_redistributed": false
+}
