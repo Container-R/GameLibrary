@@ -1,0 +1,42 @@
+{
+  "id": "SUPPORT-ART-CONCEPT-BACK-VIEWS-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+  "scope": "Bounded observation of front, side and rear views in an existing source image, added to existing concept-reader handoff discussion. No new case or book.",
+  "sources": [
+    {
+      "author": "西井智子 (Tomoko Nishii)",
+      "organization": "PlatinumGames",
+      "title": "コンセプトアートについて",
+      "published_at": "2025-09-19",
+      "url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+      "image_url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/wp-content/uploads/sites/21/2025/09/1f8c819a2b27d411d5125d8e3c3605ca.png",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Asset-art section and its composite image, lower-left expanded device views labeled 前 / 横 / 後.",
+        "Opening note: public material edited for release and may differ from final product."
+      ],
+      "method": "Original image pixels inspected by the authoring reader and independent reviewers; page prose reread. Image linked but not reproduced.",
+      "observations": [
+        "Same expanded device has front, side and rear views.",
+        "Front cyan display region and rear panel appearance differ."
+      ],
+      "limits": [
+        "Alternate visible appearance does not establish complete hidden connections, dimensions, collision or actual handoff outcomes.",
+        "Small mechanical annotations and functional explanations were not interpreted.",
+        "Historical image-reading dates for previous paintovers remain separate."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "b5ebedfcd99b5b94ad48cc4454f8d99057d37124",
+    "decision": "Existing prose already recommends important rear views. Add one actual image observation instead of repeating a generic process or creating a new case.",
+    "original_application": "Ask which front-view features should carry to the rear: material, outline or panel layout. Fictional entrance advice, not the studio workflow."
+  },
+  "execution_limits": [
+    "No game, editor, model, collision, player or human usability test.",
+    "No measured geometry or technical drawings inferred."
+  ],
+  "third_party_assets_redistributed": false
+}

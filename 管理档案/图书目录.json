@@ -83,7 +83,7 @@
         "image_files_published": 0,
         "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
       },
-      "reader_sha256": "85a03c4976127c7ca4f8df03b2e3b86adb18098293f627d0c539ebd5e653fa5e",
+      "reader_sha256": "03911460c0d28dbc43a2072a4ebd2207256b294456ec62046fa514e3b45dbab8",
       "visual_structure_support": {
         "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
         "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
@@ -100,7 +100,8 @@
       "review_paths": [
         "管理档案/审查/环境道具交互类别-来源与读者审查.md",
         "管理档案/审查/模块套件回接-来源与读者审查.md",
-        "管理档案/审查/模块楼板厚度-增量审读.md"
+        "管理档案/审查/模块楼板厚度-增量审读.md",
+        "管理档案/审查/概念图背面外观-图文与读者审查.md"
       ],
       "modular_kit_support": {
         "path": "管理档案/支持资料/走廊绕回房间却接不上，为什么不急着补一块短墙.md",
@@ -114,7 +115,13 @@
       "modular_floor_thickness_extension": {
         "source_record": "管理档案/来源笔记/modular-floor-thickness.json",
         "review": "管理档案/审查/模块楼板厚度-增量审读.md",
-        "scope": "Existing corridor-kit support now distinguishes vertical alignment from allocated floor thickness; parent link describes the new scope. No model or engine test."
+        "scope": "Existing corridor-kit support now distinguishes vertical alignment from allocated floor thickness; parent link describes the new scope. No model or engine test.",
+        "support_sha256": "51d3d2a01d8e71eddebe0e9fba11390778fcc97ddc01625acfe7002a02bab7b6"
+      },
+      "concept_back_views_extension": {
+        "source_record": "管理档案/来源笔记/concept-back-views.json",
+        "review": "管理档案/审查/概念图背面外观-图文与读者审查.md",
+        "scope": "Original asset image shows distinct front and rear appearance; limited existing-reader example, not complete structure, measured dimensions or actual handoff outcome."
       }
     },
     {
@@ -3952,7 +3959,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "5a03c9113dc00bdcc5e3debda7f8463659c75784",
+  "publication_base_sha": "b5ebedfcd99b5b94ad48cc4454f8d99057d37124",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,
