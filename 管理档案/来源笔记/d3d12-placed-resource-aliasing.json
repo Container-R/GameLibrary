@@ -1,0 +1,99 @@
+{
+  "reader_path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "support_path": "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "scope": "Traditional D3D12 ResourceBarrier and placed-resource simple model; one direct queue, one command list and one ExecuteCommandLists invocation. No GPU or SDK execution version established.",
+  "sources": [
+    {
+      "id": 1,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12device-createplacedresource.md",
+      "repository": "MicrosoftDocs/sdk-api",
+      "commit": "656e9656bfaef34dd29cd7ee9e1146aec17e924c",
+      "path": "sdk-api-src/content/d3d12/nf-d3d12-id3d12device-createplacedresource.md",
+      "blob_sha": "54a8f37d7a9d6b6dfe60c2bc4f3062877e5490f5",
+      "locator": "Simple model; required resource initialization; Advanced model; Notes on aliasing barrier",
+      "document_ms_date": "12/05/2018",
+      "date_scope": "Documentation metadata, not original publication, SDK, runtime or current release date.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "id": 2,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier.md",
+      "repository": "MicrosoftDocs/sdk-api",
+      "commit": "656e9656bfaef34dd29cd7ee9e1146aec17e924c",
+      "path": "sdk-api-src/content/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier.md",
+      "blob_sha": "2861d2d11c0fcd39aba3161fcd5a8417514f9d3f",
+      "locator": "pResourceBefore, pResourceAfter and Remarks",
+      "document_ms_date": "12/05/2018",
+      "date_scope": "Documentation metadata, not original publication, SDK, runtime or current release date.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "id": 3,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12graphicscommandlist-clearrendertargetview.md",
+      "repository": "MicrosoftDocs/sdk-api",
+      "commit": "656e9656bfaef34dd29cd7ee9e1146aec17e924c",
+      "path": "sdk-api-src/content/d3d12/nf-d3d12-id3d12graphicscommandlist-clearrendertargetview.md",
+      "blob_sha": "d5a54d3936218d9765ef4b55f3e710549a0051bd",
+      "locator": "pRects, Remarks and Debug layer RENDER_TARGET requirement",
+      "document_ms_date": "12/05/2018",
+      "date_scope": "Documentation metadata, not original publication, SDK, runtime or current release date.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "id": 4,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/51c9b7cc54ef393b6406c8320a7840fdd88209d5/desktop-src/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md",
+      "repository": "MicrosoftDocs/win32",
+      "commit": "51c9b7cc54ef393b6406c8320a7840fdd88209d5",
+      "path": "desktop-src/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md",
+      "blob_sha": "d48eba5b8eea75ed447b02c6e5dbc378b1fe5977",
+      "locator": "Using the ResourceBarrier API; Initial states for resources",
+      "document_ms_date": "05/31/2018",
+      "date_scope": "Documentation metadata, not original publication, SDK, runtime or current release date.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "id": 5,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/51c9b7cc54ef393b6406c8320a7840fdd88209d5/desktop-src/direct3d12/memory-aliasing-and-data-inheritance.md",
+      "repository": "MicrosoftDocs/win32",
+      "commit": "51c9b7cc54ef393b6406c8320a7840fdd88209d5",
+      "path": "desktop-src/direct3d12/memory-aliasing-and-data-inheritance.md",
+      "blob_sha": "88e371fd6ca94e811edabbdeb9b0040682726cd8",
+      "locator": "Data Inheritance, scoped boundary only",
+      "document_ms_date": "05/31/2018",
+      "date_scope": "Documentation metadata, not original publication, SDK, runtime or current release date.",
+      "read_on": "2026-11-06"
+    },
+    {
+      "id": 6,
+      "publisher": "Microsoft",
+      "url": "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists.md",
+      "repository": "MicrosoftDocs/sdk-api",
+      "commit": "656e9656bfaef34dd29cd7ee9e1146aec17e924c",
+      "path": "sdk-api-src/content/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists.md",
+      "blob_sha": "c731d03b6fbec03e57d11973150710ce5c275831",
+      "locator": "Remarks, successive calls versus two lists in one call",
+      "document_ms_date": "12/05/2018",
+      "date_scope": "Documentation metadata, not runtime or release date.",
+      "read_on": "2026-11-06"
+    }
+  ],
+  "original_example": "Two fully overlapping one-subresource placed render targets, legal descriptions and lifetime assumed. B begins in valid RENDER_TARGET state but inactive. A last use, alias(A,B), full-subresource Clear B, B drawing. No inheritance or current output observed.",
+  "not_tested": [
+    "GPU resource creation or execution",
+    "debug layer",
+    "images",
+    "performance",
+    "cross-queue ordering",
+    "advanced allocator",
+    "enhanced barriers",
+    "human use"
+  ],
+  "content_note": "Original explanation and semantic table; no upstream implementation or sample copied. Official fixed documentation snapshots establish source identity, not tested device behavior."
+}

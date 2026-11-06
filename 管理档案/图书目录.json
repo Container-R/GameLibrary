@@ -798,7 +798,7 @@
       "scope_disposition_review": "管理档案/审查/图形程序岗位-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/rendering/graphics-programmer.md",
       "legacy_retention": "完整旧技术上下文仍归历史正文；当前深度入口承接为自然读者支持，历史审查绑定保持原范围。",
-      "reader_sha256": "71edf652bb8ce22a34dcf1820ff4fc75305f33d533833d7de6d9524e9a629f6e",
+      "reader_sha256": "86104c0febcbf738134d25536e2276bd2f9e6e9e5407d54878b48e5f793166f9",
       "review_paths": [
         "管理档案/审查/遮挡查询反馈-来源与读者审查.md",
         "管理档案/审查/计算着色器尾组屏障-来源与读者审查.md",
@@ -806,7 +806,8 @@
         "管理档案/审查/深度度量与相机起点-来源和读者审查.md",
         "管理档案/审查/深度存储粒度-来源与读者审查.md",
         "管理档案/审查/原子槽位预订与结果完成-来源与读者审查.md",
-        "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md"
+        "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
+        "管理档案/审查/D3D12资源别名-来源与读者审查.md"
       ],
       "occlusion_query_support": {
         "support_path": "管理档案/支持资料/为了少画物体，为什么反而卡在等待GPU结果上.md",
@@ -864,6 +865,14 @@
         "sha256": "b64a541b25e6fddf18b25527c41cfd60846bab806b72425ad5c886ff60898898",
         "review": "管理档案/审查/深度金字塔界限与覆盖-来源与读者审查.md",
         "scope": "Fixed-source depth ordering and conservative query coverage with original finite paper examples; no GPU execution or full culling proof."
+      },
+      "updated_at": "2026-11-06",
+      "placed_resource_aliasing_support": {
+        "support_path": "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+        "support_sha256": "60af070602ce4372d51bfd387b0a48f360096a33d666e5169b36b545b9404e4e",
+        "source_record": "管理档案/来源笔记/d3d12-placed-resource-aliasing.json",
+        "review": "管理档案/审查/D3D12资源别名-来源与读者审查.md",
+        "scope": "Optional fixed-document D3D12 simple-model resource activation and initialization explanation; original one-submission no-inheritance example, no GPU execution."
       }
     },
     {
@@ -4082,7 +4091,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "24b9efc4b92287d66313fef5e1dc24e7eef730da",
+  "publication_base_sha": "579da7c0b39bdab29d5382708993dfb4a800778e",
   "accounted_for_original_items": 55,
   "reader_books_total": 111,
   "post_baseline_research_books": 56,

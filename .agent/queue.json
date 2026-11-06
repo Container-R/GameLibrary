@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T07:27:15Z",
-      "next_action": "Inspect existing graphics-role, GPU copy-barrier and memory-budget support against official D3D12 placed-resource aliasing documentation. Determine whether overlapping resource activation, aliasing barriers and initialization provide a distinct reader need; do not infer GPU execution, cross-queue correctness or a production allocator.",
+      "last_progress_at": "2026-11-06T07:41:33Z",
+      "next_action": "Inspect existing physical-detection and Box2D supports against fixed convex-distance documentation and source. Determine whether core-shape closest points, optional shape radii and clamped surface separation provide a distinct useful question; do not repeat CCD, filter or sensor-lifetime coverage, or infer penetration depth and runtime results.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -423,7 +423,10 @@
         "管理档案/来源笔记/factorio-train-target-failure.json",
         "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
         "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
-        "管理档案/来源笔记/unity-chunk-change-filter.json"
+        "管理档案/来源笔记/unity-chunk-change-filter.json",
+        "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+        "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+        "管理档案/来源笔记/d3d12-placed-resource-aliasing.json"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

@@ -1,0 +1,53 @@
+{
+  "run_id": "20261106T073912Z-d3d12-placed-aliasing",
+  "started_at": "2026-11-06T07:33:00Z",
+  "ended_at": "2026-11-06T07:41:33Z",
+  "task_id": "TASK-2026-0008",
+  "actions": [
+    "Compared existing graphics role, Vulkan copy-dependency and D3D12 budget readers before selecting a distinct optional resource-aliasing boundary.",
+    "Read six official D3D12 documentation files at fixed MicrosoftDocs snapshots and verified source identities.",
+    "Separated simple-model active resource, traditional transition state and render-target initialization.",
+    "Wrote original unexecuted A-to-B one-submission sequence with a full-subresource Clear and no data inheritance.",
+    "Preserved the advanced-model separate-call exception without claiming a complete allocator or cross-queue implementation.",
+    "Added conditional main-reader and shelf entries while preserving all existing source and support scopes."
+  ],
+  "sources_examined": [
+    "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12device-createplacedresource.md",
+    "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/ns-d3d12-d3d12_resource_aliasing_barrier.md",
+    "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12graphicscommandlist-clearrendertargetview.md",
+    "https://github.com/MicrosoftDocs/win32/blob/51c9b7cc54ef393b6406c8320a7840fdd88209d5/desktop-src/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12.md",
+    "https://github.com/MicrosoftDocs/win32/blob/51c9b7cc54ef393b6406c8320a7840fdd88209d5/desktop-src/direct3d12/memory-aliasing-and-data-inheritance.md",
+    "https://github.com/MicrosoftDocs/sdk-api/blob/656e9656bfaef34dd29cd7ee9e1146aec17e924c/sdk-api-src/content/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists.md"
+  ],
+  "evidence_added": [
+    "管理档案/来源笔记/d3d12-placed-resource-aliasing.json",
+    "管理档案/审查/D3D12资源别名-来源与读者审查.md"
+  ],
+  "files_changed": [
+    ".agent/queue.json",
+    ".agent/runs/20261106T073912Z-d3d12-placed-aliasing.json",
+    ".agent/state.json",
+    "GameLibrary/图形渲染/渲染开发/岗位与协作/README.md",
+    "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+    "管理档案/图书目录.json",
+    "管理档案/审查/D3D12资源别名-来源与读者审查.md",
+    "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
+    "管理档案/来源笔记/d3d12-placed-resource-aliasing.json"
+  ],
+  "commit_sha": null,
+  "base_commit_sha": "579da7c0b39bdab29d5382708993dfb4a800778e",
+  "commit_note": "Containing commit identifies this publication. Remote confirmation is performed after publication.",
+  "validation": {
+    "source_review": "six official documentation files at fixed MicrosoftDocs snapshots",
+    "independent_reader_review": "accepted bounded activation/initialization sequence, conditional navigation and source scopes",
+    "counts": {
+      "frozen": 55,
+      "total": 111,
+      "post_baseline": 56
+    },
+    "limits": "No GPU, device, driver, game, runtime, image, performance or human test; original paper sequence only."
+  },
+  "blockers": [],
+  "next_action": "Inspect existing physical-detection and Box2D supports against fixed convex-distance documentation and source. Determine whether core-shape closest points, optional shape radii and clamped surface separation provide a distinct useful question; do not repeat CCD, filter or sensor-lifetime coverage, or infer penetration depth and runtime results.",
+  "outcome": "Existing-graphics reader gains a distinct optional D3D12 resource-aliasing boundary without a new canonical book."
+}
