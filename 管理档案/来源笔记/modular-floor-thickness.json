@@ -1,0 +1,58 @@
+{
+  "id": "SUPPORT-ART-MODULAR-THICKNESS-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+  "support_path": "管理档案/支持资料/走廊绕回房间却接不上，为什么不急着补一块短墙.md",
+  "scope": "Existing modular-kit support addition on vertical footprint and exposed floor thickness; parent link description updated. No new book.",
+  "sources": [
+    {
+      "authors": [
+        "Joel Burgess",
+        "Nathan Purkeypile"
+      ],
+      "title": "Skyrim's Modular Approach to Level Design",
+      "url": "https://www.gamedeveloper.com/design/skyrim-s-modular-approach-to-level-design",
+      "published_at": "2013-05-01",
+      "presentation": "GDC2013 Level Design in a Day",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "Sidebar: The role of the Level Designer, stacked hallways and predetermined floor thickness"
+      ],
+      "claims": [
+        "Using the full vertical footprint can leave floor and ceiling coplanar; stairwells or holes can expose missing thickness.",
+        "Authors recommend determining floor thickness in advance."
+      ],
+      "limits": [
+        "Module-kit and level/art collaboration evidence, not a direct concept-artist handoff case.",
+        "No numerical floor thickness, collision or navigation guarantee.",
+        "New work read text only; no new image inspection or reproduction."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "5a03c9113dc00bdcc5e3debda7f8463659c75784",
+    "decision": "Existing support only briefly asked to check upper/lower levels; add the specific visible-section and allocated-space question without a separate article.",
+    "original_check": "Unexecuted rough-kit stairwell viewpoint checks both exposed thickness and which level's space it occupies."
+  },
+  "rejected_research_direction": {
+    "topic": "New concept camera/perspective or hidden-construction handoff case",
+    "outcome": "No-go for a new case based on the examined prose; current reader already covers thickness direction, hidden backs and material interpretation.",
+    "sources_examined": [
+      {
+        "url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+        "scope": "Asset-art text requires imagining background but does not establish camera parameters or a hidden-face/material annotation procedure."
+      },
+      {
+        "url": "https://www.bungie.net/7/en/News/article/10543",
+        "scope": "Environment-art duties and real-world assembly experience are not a concrete handoff incident."
+      }
+    ],
+    "visual_limit": "No visual finding is used to establish the floor-thickness claim. A separately inspected asset-design image may support a later bounded existing-reader example, not a new handoff case."
+  },
+  "execution_limits": [
+    "No kit model, game, editor, rendering, collision, navigation or human test.",
+    "Existing historical image-review record remains dated and is not re-certified."
+  ],
+  "third_party_assets_redistributed": false
+}
