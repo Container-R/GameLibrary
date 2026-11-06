@@ -1,0 +1,46 @@
+{
+  "run_id": "20261106T054642Z-fmod-relative-offset",
+  "started_at": "2026-11-06T05:43:00Z",
+  "ended_at": "2026-11-06T05:46:42Z",
+  "task_id": "TASK-2026-0008",
+  "actions": [
+    "Read existing composer and transition readers; rejected a standalone duplicate exit/entrance topic.",
+    "Verified official FMOD2.04.00 source sections and footer for quantization, offset and transition timeline scope.",
+    "Added one paper example of third-bar entry with different BPM but the same time signature.",
+    "Preserved authored-introduction and phrase-suitability decisions rather than assuming position mapping guarantees music quality.",
+    "Completed independent source, calculation and reader review; added a descriptive shelf anchor."
+  ],
+  "sources_examined": [
+    "https://www.fmod.com/docs/2.04/studio/authoring-events.html"
+  ],
+  "evidence_added": [
+    "管理档案/来源笔记/fmod-relative-offset.json",
+    "管理档案/审查/FMOD相对入口位置-增量审读.md"
+  ],
+  "files_changed": [
+    ".agent/queue.json",
+    ".agent/runs/20261106T054642Z-fmod-relative-offset.json",
+    ".agent/state.json",
+    "GameLibrary/声音与音乐/交互音乐/音乐切换/README.md",
+    "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+    "管理档案/图书目录.json",
+    "管理档案/审查/FMOD相对入口位置-增量审读.md",
+    "管理档案/来源笔记/fmod-relative-offset.json"
+  ],
+  "commit_sha": null,
+  "base_commit_sha": "cff0f85ef5ce640d39a3095f0aeaed1993955a41",
+  "commit_note": "Containing commit identifies this publication. Remote confirmation is performed after publication.",
+  "validation": {
+    "source_review": "pass within exact FMOD2.04.00 documentation sections",
+    "independent_reader_review": "accepted without required correction; paper arithmetic independently recomputed",
+    "counts": {
+      "frozen": 55,
+      "total": 109,
+      "post_baseline": 54
+    },
+    "limits": "No middleware project, engine, audio playback, score production or human test."
+  },
+  "blockers": [],
+  "next_action": "Concept-handoff source followup found no justified new camera/hidden-structure case. Next compare the existing corridor-kit support against Burgess/Purkeypile Skyrim modular-design article, Sidebar: The role of the Level Designer, for a limited vertical-footprint and exposed-floor-thickness addition. Do not relabel it as a concept-artist case or claim new image inspection.",
+  "outcome": "Existing-reader implementation boundary clarified; same book and task counts."
+}

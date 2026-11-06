@@ -1257,7 +1257,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "64869a3258351aedd7f2191129d94613413e8b5ef442a49af84e413a280fcd79",
+      "reader_sha256": "7d5dc998b7060fdde9057c420d3e2a401fb48c98c3c9a409282dca0ef101c55b",
       "parent_clock_support": {
         "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
         "sha256": "498cbe901c0b5682e124c8941a787d22bbcd73aff4a248f543c290eba4cad035",
@@ -1272,6 +1272,15 @@
           "review": "管理档案/审查/FMOD预约与自定义混响支路-补充审查.md",
           "scope": "Conditional custom DSP pull/scheduling explanation and block-order reasoning; no audio runtime."
         }
+      },
+      "review_paths": [
+        "管理档案/审查/FMOD相对入口位置-增量审读.md"
+      ],
+      "updated_at": "2026-11-06",
+      "relative_offset_extension": {
+        "source_record": "管理档案/来源笔记/fmod-relative-offset.json",
+        "review": "管理档案/审查/FMOD相对入口位置-增量审读.md",
+        "scope": "FMOD2.04 None/Relative maps target region position; differing-BPM paper example uses bars rather than elapsed seconds. No project execution or audio test."
       }
     },
     {
@@ -3936,7 +3945,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "2c917cc8ea09ca4cf8dfdb2ee9b17960b6d95bc0",
+  "publication_base_sha": "cff0f85ef5ce640d39a3095f0aeaed1993955a41",
   "accounted_for_original_items": 55,
   "reader_books_total": 109,
   "post_baseline_research_books": 54,

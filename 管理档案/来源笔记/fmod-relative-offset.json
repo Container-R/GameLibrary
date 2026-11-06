@@ -1,0 +1,60 @@
+{
+  "id": "SUPPORT-MUSIC-OFFSET-20261106",
+  "status": "source-backed",
+  "updated_at": "2026-11-06",
+  "reader_path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+  "scope": "Existing-reader finite FMOD entry-position example; not a new state-transition tutorial.",
+  "sources": [
+    {
+      "author": "Firelight Technologies",
+      "title": "FMOD Studio User Manual — Authoring Events",
+      "url": "https://www.fmod.com/docs/2.04/studio/authoring-events.html",
+      "version": "2.04.00",
+      "document_footer_date": "2026-09-29",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "4.11.1 Trigger Conditions",
+        "4.11.3 Offset",
+        "4.11.4 Transition Timelines"
+      ],
+      "claims": [
+        "Transition and magnet regions support quantization; offset is a distinct destination-position property.",
+        "None reaches the destination start. Relative preserves distance from the source region start in bars, including differing BPM with the same time signature."
+      ],
+      "limits": [
+        "Published text, not executed patch-version behavior.",
+        "Example specifically uses a transition region and destination region, not all marker types.",
+        "No source illustrations, audio or project assets copied."
+      ]
+    }
+  ],
+  "novelty": {
+    "baseline": "cff0f85ef5ce640d39a3095f0aeaed1993955a41",
+    "comparison": [
+      "Existing full composer reader",
+      "Existing full interactive-music transition reader",
+      "Relevant shelf and support titles"
+    ],
+    "decision": "General exit/entrance distinction already covered. Add only concrete None/Relative mapping in bars versus seconds, no new book.",
+    "search_limits": "Selected bodies and title scan, not exhaustive full-library absence proof."
+  },
+  "original_scenario": {
+    "execution": "Unexecuted paper calculation",
+    "conditions": [
+      "Two four-bar sections A/B, same4/4, quarter-note beat.",
+      "A120BPM, B90BPM; transition source and destination region origins aligned with their sections; no transition timeline.",
+      "Jump happens at A third-bar start, a two-bar offset."
+    ],
+    "results": [
+      "None maps to B first-bar start.",
+      "Relative maps to B third-bar start.",
+      "A two bars=4seconds; B two bars=16/3seconds. Source elapsed seconds are not copied."
+    ],
+    "limits": [
+      "No engine, middleware, audio, score creation or human test.",
+      "Phrase suitability and necessary introductory material are authoring decisions, not guaranteed by position mapping.",
+      "No measured latency or musical-success claim."
+    ]
+  },
+  "third_party_assets_redistributed": false
+}
