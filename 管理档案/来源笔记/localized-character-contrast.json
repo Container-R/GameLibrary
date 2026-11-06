@@ -1,0 +1,120 @@
+{
+  "id": "KNOW-LOC-001",
+  "title": "本地化时，怎样避免不同角色说成同一种口气",
+  "type": "knowledge",
+  "status": "source-backed",
+  "primary_discipline": "LOC",
+  "related_disciplines": [
+    "NARR",
+    "QA"
+  ],
+  "related_roles": [
+    "ROLE-LOC-001",
+    "ROLE-NARR-001"
+  ],
+  "path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/本地化时，怎样避免不同角色说成同一种口气.md",
+  "updated_at": "2026-11-06",
+  "question": "How can localization preserve intended differences between character voices rather than give several characters the same broadly colloquial style?",
+  "sources": [
+    {
+      "type": "primary",
+      "authors": [
+        "Allison Cottrell",
+        "Ryohei Morita"
+      ],
+      "organization": "Cygames",
+      "title": "Creative Approaches to Localizing the Dialects and Unique Speech of Umamusume: Pretty Derby Characters in English",
+      "url": "https://speakerdeck.com/cygames/httpsspeakerdeckcomcygamescygames_202607_cedec2026_12",
+      "presented_at": "2026-07-24",
+      "uploaded_at": "2026-08-13",
+      "accessed_at": "2026-11-06",
+      "visual_scope": "English slides 1, 9 and 16; article mechanism relies only on slide16.",
+      "location": "Slide16, Sonic Similarities",
+      "claims": [
+        "The team needed to distinguish character speech through text alone.",
+        "Existing English dialect choices can create character-voice overlap in this project.",
+        "The slide proposes nonstandard spelling rules to represent rhythm, speed and phonetics."
+      ],
+      "limits": [
+        "No claims from uninspected rules/examples pages.",
+        "No audio inspection, recognizability metric or current game verification.",
+        "No general regional-dialect mapping or universal recommendation to change spelling."
+      ]
+    },
+    {
+      "type": "primary",
+      "author": "CEDEC2026",
+      "title": "『ウマ娘 プリティーダービー』 英語版のキャラクターの方言や口調をローカライズするための創造的アプローチ",
+      "url": "https://cedec.cesa.or.jp/2026/timetable/detail/s697c896ccdd26/",
+      "date": "2026-07-24",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "セッション内容",
+        "講演者"
+      ],
+      "claims": [
+        "Confirms presenters, objectives and inclusion of task management/guidelines."
+      ],
+      "limits": [
+        "Promotional outcome language not treated as measured audience evidence."
+      ]
+    },
+    {
+      "type": "secondary",
+      "author": "池紀彦",
+      "publisher": "GAME Watch",
+      "title": "Umazing！「ウマ娘」英語版では方言や口調をいかに再現したか。従来と異なるアプローチのローカライゼーションとは【CEDEC2026】",
+      "url": "https://game.watch.impress.co.jp/docs/news/2127676.html",
+      "published_at": "2026-07-24",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "ローカライゼーションの本質は「喋り方のシルエット」",
+        "愛と熱意の担当制"
+      ],
+      "claims": [
+        "Reports the Tamamo Cross/Taiki Shuttle overlap constraint and older vocabulary for Yukino Bijin.",
+        "Reports guideline drafting by responsible translators followed by language quality checks."
+      ],
+      "limits": [
+        "Reporter account, not direct inspection of original example slides, internal guide or game.",
+        "No success metric reproduced."
+      ]
+    },
+    {
+      "type": "secondary",
+      "author": "Gin",
+      "publisher": "4Gamer",
+      "title": "「方言は訳す」のではなく「個性を作り直す」――「ウマ娘 プリティーダービー」英語版ローカライズの舞台裏［CEDEC 2026］",
+      "url": "https://www.4gamer.net/games/414/G041434/20260729025/",
+      "published_at": "2026-07-29",
+      "accessed_at": "2026-11-06",
+      "location": "方言を「音の印象」と「言葉遣い」に分解する",
+      "claims": [
+        "Reports short spelling examples you/ya and having/havin', treated only as reported examples."
+      ],
+      "limits": [
+        "No full dialogue copied; no attribution as directly verified game text.",
+        "Two media reports are not independent performance experiments."
+      ]
+    }
+  ],
+  "selection": {
+    "baseline": "9d1d5dce03d390298b917ae97730fe0cb5cc2b0c",
+    "compared_reader": "GameLibrary/本地化与无障碍/本地化制作/内容协作/原文未变时哪些语境变化需要重新翻译.md",
+    "difference": "Cross-character expressive contrast differs from per-message context-change review. Preserve one canonical home on existing content-collaboration shelf.",
+    "prior_gate": "Earlier record retained candidate pending examples. Current draft uses normally accessible, independently published secondary reporting with explicit attribution, not uninspected slide contents."
+  },
+  "original_example": {
+    "type": "unexecuted editorial example",
+    "description": "Fictional messenger and clerk communicate the same west-bridge closure and east-bridge direction. Candidate expressions contrast directness and politeness. An initial Go! candidate is explicitly rejected for adding unsupported urgency. Different scene conditions mean the pair alone cannot establish stable character voice.",
+    "limits": [
+      "Not an approved translation or evidence of player understanding.",
+      "Role traits belong only to the fictional setup, not occupational or regional stereotypes."
+    ]
+  },
+  "limitations": [
+    "No extra slide examples inspected, no source audio listened to, no game or human test.",
+    "No third-party images or internal guidelines redistributed.",
+    "Editorial workflow suggestions are identified as original, not Cygames internal procedure."
+  ]
+}

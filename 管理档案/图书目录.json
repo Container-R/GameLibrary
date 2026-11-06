@@ -3820,6 +3820,42 @@
         "https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators-for-grouped-data",
         "https://scikit-learn.org/stable/common_pitfalls.html#data-leakage"
       ]
+    },
+    {
+      "internal_id": "KNOW-LOC-001",
+      "reader_title": "本地化时，怎样避免不同角色说成同一种口气",
+      "floor": "本地化与无障碍",
+      "area": "本地化制作",
+      "shelf": "内容协作",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/本地化时，怎样避免不同角色说成同一种口气.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/内容协作/本地化时，怎样避免不同角色说成同一种口气.md",
+      "reader_body_status": "published",
+      "editorial_status": "官方原则与明确标注的二手案例经独立审读；原创例子删去无依据催促并补充场景限制后复核接受，非译文或真人效果验证。",
+      "origin": "source-backed-reader-research",
+      "review_paths": [
+        "管理档案/审查/本地化角色口气对照-来源与读者审查.md"
+      ],
+      "source_record": "管理档案/来源笔记/localized-character-contrast.json",
+      "reader_sha256": "decacb1eaafb45dc19444b781c027543123b08d6e53fcbb1553396474447abb4",
+      "related_roles": [
+        "ROLE-LOC-001",
+        "ROLE-NARR-001"
+      ],
+      "related_disciplines": [
+        "NARR",
+        "QA"
+      ],
+      "updated_at": "2026-11-06",
+      "status": "source-backed",
+      "type": "knowledge",
+      "primary_discipline": "LOC",
+      "sources": [
+        "https://speakerdeck.com/cygames/httpsspeakerdeckcomcygamescygames_202607_cedec2026_12",
+        "https://cedec.cesa.or.jp/2026/timetable/detail/s697c896ccdd26/",
+        "https://game.watch.impress.co.jp/docs/news/2127676.html",
+        "https://www.4gamer.net/games/414/G041434/20260729025/"
+      ],
+      "source_scope": "Official slide16 principle; reported case details remain secondary evidence. No uninspected slide or game validation claimed."
     }
   ],
   "rewritten_reader_books": 55,
@@ -3830,10 +3866,10 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "208a0b48aad839b5775d65f5283b8ec1189eb87d",
+  "publication_base_sha": "9d1d5dce03d390298b917ae97730fe0cb5cc2b0c",
   "accounted_for_original_items": 55,
-  "reader_books_total": 107,
-  "post_baseline_research_books": 52,
+  "reader_books_total": 108,
+  "post_baseline_research_books": 53,
   "record_transformation": {
     "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
     "date": "2026-11-02",
