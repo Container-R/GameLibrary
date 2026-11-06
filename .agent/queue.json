@@ -10035,17 +10035,42 @@
       "reader": "音频程序员与技术声音设计师",
       "scope": "先核现有音乐正文、父时钟技术稿和原始来源，确定实际读者任务、技术缺口及来源支持；仅在成熟后处理该专题必要归属和导航，不重排全声音学科。",
       "expected_outcome": "确定可完整交付的同步方法、保留价值和有限迁移计划，或指出确切研究缺口。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0288/sources.json",
+        "管理档案/研究/TASK-2026-0288/materials.json",
+        "管理档案/研究/TASK-2026-0288/范围与保留.md",
+        "管理档案/审稿/SOL-SFX-006/20261106-full-article.json"
+      ],
+      "next_action": "核D3D12别名技术稿与正式资源同步文章的分工，确定有限完整方法与必要导航。",
+      "blocker": null,
+      "updated_at": "2026-11-06T11:41:57Z",
+      "related_task_ids": [
+        "TASK-2026-0287"
+      ],
+      "article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+      "review": "管理档案/审稿/SOL-SFX-006/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0289",
+      "question": "D3D12别名支持稿怎样形成不重复现有同步文章的完整资源复用方法，并进入唯一正式位置？",
+      "reader": "图形与渲染程序员",
+      "scope": "先全文核别名技术稿、现有资源同步正文、原始文档及附属证据，确定状态/生命周期/队列输入与实际读者任务；不扩成全部D3D12资源管理，不一批重排图形学科。",
+      "expected_outcome": "确定完整方法、必须保留的细节、来源边界和有限迁移计划，或报告具体研究缺口。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0287/范围与保留.md"
+        "管理档案/研究/TASK-2026-0288/范围与保留.md"
       ],
-      "next_action": "全文比较当前交互音乐文章和FMOD父时钟支持稿，核原始文档及实际时钟/调度约定，确定不重复的完整问题。",
+      "next_action": "对照D3D12别名正文与资源同步文章，核官方原始约定，界定可交付的资源复用步骤和诊断任务。",
       "blocker": null,
-      "updated_at": "2026-11-06T11:19:22Z",
+      "updated_at": "2026-11-06T11:41:57Z",
       "related_task_ids": [
-        "TASK-2026-0287"
+        "TASK-2026-0288"
       ]
     }
   ],
@@ -10053,7 +10078,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "全文比较当前交互音乐文章和FMOD父时钟支持稿，核原始文档及实际时钟/调度约定，确定不重复的完整问题。"
+    "next_priority": "对照D3D12别名正文与资源同步文章，核官方原始约定，界定可交付的资源复用步骤和诊断任务。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

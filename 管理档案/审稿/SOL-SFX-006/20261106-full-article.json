@@ -1,0 +1,84 @@
+{
+  "article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+  "article_sha256": "97d4cbb379e4ae9ca8445a191cc2597e60a1fa754f7a0b1d3b43b086f1a57f12",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "complete-fixed-route-core-scheduling-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-fmod-clock-technical-20261106",
+      "mode": "independent-full-technical-primary-source-and-procedure-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-SFX-006/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-fmod-clock-reader-20261106",
+      "mode": "independent-complete-scheduling-and-diagnostic-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-SFX-006/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-fmod-clock-navigation-20261106",
+      "mode": "independent-root-route-and-limited-inbound-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-SFX-006/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0288/sources.json",
+      "sha256": "03ce13e08fe4b47ca970158759e771f1eb69643a8fd26f2cd89340d6e7d12300"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0288/materials.json",
+      "sha256": "4182d1bcd7345db70f8084342af26759400b283dbcae23909c8bfa2008e1def1"
+    }
+  ],
+  "report_sha256": "05cf4fb9957cf6f6854cc43bfd63a83baf3da92afb0bf49a349208cc59263c8e",
+  "scope_record": "管理档案/研究/TASK-2026-0288/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/README.md",
+      "sha256": "2fd0afbf45aea05d09426f4f39e84c10b02b1b32914dcdaf482dcaca789ad915"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "sha256": "e27138549dccbefdc39afe1236ac44dea5dfb1373273b311d0e6ff542c16f15f"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "sha256": "159a2ff0a4ffef68acdd030d890086f1630d2e81195e2fffefb0c78cd4cbf8b4"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/交互音乐/README.md",
+      "sha256": "6c3b6e9fd540b77f125c4a3c1e82fd92be073dc73bd1b80b4d8f024b64b0065e"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+      "sha256": "6b552506326ba54ef19e41f7bf0ba22fc0838d5eca2c68c56cb48631d9765146"
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "sha256": "d7a6b96e15e101ceb526f91d9b62818b634e677f54742f2ac76735abba9504fd",
+      "previous_sha256": "e42149bc1e27a67803f0a9176e5d5919be85c508a8e40700d2b9302608411bdc",
+      "scope": "One optional Core-method relation paragraph only; not renewed full Studio-transition technical acceptance."
+    }
+  ],
+  "limits": "Independent model reviews and bounded procedure/arithmetic checks. No FMOD installation/execution, compilation, generated audio, listening, recording, hardware-output timing or human test. Official documentation is mutable version-series text; historical reply is not current implementation proof. Whole-library acceptance unfinished.",
+  "updated_at": "2026-11-06T11:41:57Z"
+}

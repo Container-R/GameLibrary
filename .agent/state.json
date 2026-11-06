@@ -3,33 +3,33 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0288"
+    "TASK-2026-0289"
   ],
-  "last_completed_task_id": "TASK-2026-0287",
-  "last_real_progress_at": "2026-11-06T11:19:22Z",
-  "last_commit_sha": "8d5917b2f3c61c8cc35c34ca86a1e0d6f79ffd3f",
+  "last_completed_task_id": "TASK-2026-0288",
+  "last_real_progress_at": "2026-11-06T11:41:57Z",
+  "last_commit_sha": "b5afd1e2e86ae025e46a3c0365ab5f898876ca07",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-ANIM-007/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-SFX-006/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-neighborhood-skinning-normal-method",
-    "article": "GameLibrary/角色动画/角色变形/蒙皮/线性混合蒙皮的法线修正：从邻域权重到逐顶点计算.md",
-    "article_sha256": "4eb57832765ca1997c3cdf6594e0086942dfc320ad1f2dfef704c9b9623d8e33",
-    "previous_verified_head": "8d5917b2f3c61c8cc35c34ca86a1e0d6f79ffd3f",
+    "kind": "complete-fixed-route-core-scheduling-method",
+    "article": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+    "article_sha256": "97d4cbb379e4ae9ca8445a191cc2597e60a1fa754f7a0b1d3b43b086f1a57f12",
+    "previous_verified_head": "b5afd1e2e86ae025e46a3c0365ab5f898876ca07",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "One full method, three finite route pages, one material index and limited related-method paragraph/return label. Historical evidence unchanged; no whole-library acceptance."
+    "scope": "One full method, four finite route pages, one history index and limited music relation paragraph. Accessibility relationship and historical evidence preserved; no whole-library acceptance."
   },
-  "next_action": "全文比较当前交互音乐文章和FMOD父时钟支持稿，核原始文档及实际时钟/调度约定，确定不重复的完整问题。",
+  "next_action": "对照D3D12别名正文与资源同步文章，核官方原始约定，界定可交付的资源复用步骤和诊断任务。",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0288",
-      "question": "现存交互音乐与FMOD父时钟材料怎样交付不重复的完整同步方法，并使读者逐层找到唯一正式正文？",
-      "scope_record": "管理档案/研究/TASK-2026-0287/范围与保留.md"
+      "task_id": "TASK-2026-0289",
+      "question": "D3D12别名支持稿怎样形成不重复现有同步文章的完整资源复用方法，并进入唯一正式位置？",
+      "scope_record": "管理档案/研究/TASK-2026-0288/范围与保留.md"
     },
     {
-      "question": "其他学科管理技术正文和导航仍逐题处理；两骨草稿保留。",
+      "question": "阴影比较过滤等管理技术正文仍逐题处理；两骨草稿保留。",
       "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md"
     }
   ],

@@ -1,0 +1,178 @@
+{
+  "task_id": "TASK-2026-0288",
+  "baseline_commit": "b5afd1e2e86ae025e46a3c0365ab5f898876ca07",
+  "historical_records": [
+    {
+      "path": "README.md",
+      "git_blob_sha1": "e000e02647ccdc2b887293b327bbf7f6f5689dd9",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864",
+      "bytes": 282,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/README.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "git_blob_sha1": "f0b7c7675af51e7e186974e6cd85bfd19fa1e71f",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06",
+      "bytes": 1652,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/README.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/README.md",
+      "git_blob_sha1": "4053ccfddb764130a8688a7fa9628e9d73ea1a76",
+      "sha256": "ec91163b6bc8c47a57f53d83c98e26decad38d8eb66f83912562007a886a09c7",
+      "bytes": 674,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/README.md",
+      "disposition": "Finite navigation changes for formal method and former cross-level entries."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/交互音乐/README.md",
+      "git_blob_sha1": "f045d5ca60e82308f83a55a46ebc431b3192e553",
+      "sha256": "b57c6e58216dd38eb371a6314b334a3eeea7d9c4b39217a59a1709b85da0ae48",
+      "bytes": 564,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/交互音乐/README.md",
+      "disposition": "Finite navigation changes for formal method and former cross-level entries."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/交互音乐/音乐切换/README.md",
+      "git_blob_sha1": "8c9c9e530822f15a02ed7266f1459a3ee936e1de",
+      "sha256": "cd11f1434057e05c914b86a81e2cba129e07d323410714364511d775e1af4130",
+      "bytes": 1382,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/交互音乐/音乐切换/README.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "git_blob_sha1": "e5ae5c5c09c85a5876162fb4f6b96793b90d6b23",
+      "sha256": "9487bb181b07c36018d0ce234d82f517823c1cb2c4e8bbe1ab9bc638af24b4aa",
+      "bytes": 428,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/游戏音效/README.md",
+      "disposition": "Finite navigation changes for formal method and former cross-level entries."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "git_blob_sha1": "6adbb84bbdb84a52ff9882069b7a97191aa1098d",
+      "sha256": "22146c0fea2dafbd3fd03846f71d6cfd4a042e2397ce8921b022aedef29ca3d8",
+      "bytes": 388,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "disposition": "Finite navigation changes for formal method and former cross-level entries."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "git_blob_sha1": "aa7c433f32ae5aed8a2f11836b973572508bd5bf",
+      "sha256": "e42149bc1e27a67803f0a9176e5d5919be85c508a8e40700d2b9302608411bdc",
+      "bytes": 20690,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "disposition": "Only optional Core-method relation paragraph changes, not new full Studio-transition acceptance."
+    },
+    {
+      "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+      "git_blob_sha1": "3241b3d7c7bbc0892b2318fcbc84365272bf62fb",
+      "sha256": "498cbe901c0b5682e124c8941a787d22bbcd73aff4a248f543c290eba4cad035",
+      "bytes": 8874,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
+      "disposition": "Old full body remains at fixed commit; current path becomes historical material index."
+    },
+    {
+      "path": "管理档案/来源笔记/fmod-parent-dsp-clock.json",
+      "git_blob_sha1": "71c4cea4b8d58e1a63ddd2ccaaf0ba82df6c91d2",
+      "sha256": "611cb78ab3ff21ec2667cacabc634f87da6d743d93e71dd7d15d142b14b8470f",
+      "bytes": 2611,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/管理档案/来源笔记/fmod-parent-dsp-clock.json",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "管理档案/来源笔记/fmod-scheduled-reverb-path.json",
+      "git_blob_sha1": "1bc3a2a12d21ab16d401021e2495255c4d7f9f14",
+      "sha256": "c68476c9feef8cf169a083959d0a1355e0b1df230be82a29405ffe39f69b11b7",
+      "bytes": 2931,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/管理档案/来源笔记/fmod-scheduled-reverb-path.json",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "管理档案/审查/FMOD父混音组时钟-来源与读者审查.md",
+      "git_blob_sha1": "4c9a9fd545d1046cf141b33618e14bb9469857db",
+      "sha256": "74d1366a1bba2da9efcd6cc5690800148af710e007c9622ad6ac227b8263a08f",
+      "bytes": 1617,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/管理档案/审查/FMOD父混音组时钟-来源与读者审查.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "管理档案/审查/FMOD预约与自定义混响支路-补充审查.md",
+      "git_blob_sha1": "8e2e4e190dd9a499e9d00cb22e661d2ed0c38e3f",
+      "sha256": "66d4367b8641c4e3d54a306d58919cc48e8478d12d61608bd70f30fc5e594e85",
+      "bytes": 1304,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/管理档案/审查/FMOD预约与自定义混响支路-补充审查.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": ".agent/runs/20261105T194600Z-fmod-parent-clock.json",
+      "git_blob_sha1": "e85b2fb54a07384daff3710f7b1153c303e0a8e1",
+      "sha256": "35635effd4f4a935648c55a4e502a44d00432030abd5c9279de0a055055083b1",
+      "bytes": 1738,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/.agent/runs/20261105T194600Z-fmod-parent-clock.json",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": ".agent/runs/20261105T195400Z-scheduled-reverb-path.json",
+      "git_blob_sha1": "d535ff2170b3df81020fa8433ed2eea9c69bdd2f",
+      "sha256": "a62d58c84db404557f6c4c70c5f33dcc5d6b56f4d1454d3fed57dd491b6c592c",
+      "bytes": 1698,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/.agent/runs/20261105T195400Z-scheduled-reverb-path.json",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "git_blob_sha1": "9eb0a5371cd38498c9a092be27e4168ad5a81cab",
+      "sha256": "4f22e4d8610b7b4599fac78bc57cbb8f21063d5a048382da164a302fde96a207",
+      "bytes": 10563,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+      "git_blob_sha1": "c8445b37c941dbe83585b6fd29e985d3645f567a",
+      "sha256": "bcad60bbcbd720eff96523b10de2ff1e4da96a79f653190d584da9b16283f228",
+      "bytes": 11825,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/音频制作/混音/交叉淡化时为什么声音中间变大或变小.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+      "git_blob_sha1": "8f1dc3f6d007e686adf469a143db1a6d216e1159",
+      "sha256": "b9893323c8a8051e2fcf8884dbf4a00ea7b796c08e61a238dcda67da5c7c703a",
+      "bytes": 12457,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    },
+    {
+      "path": "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
+      "git_blob_sha1": "c1621bb9e244dd46d8261325d8fdeecb6cd7d95c",
+      "sha256": "41958856406cb0962943e4e33da737fdb91ba2453fd3ccc8e98ac71b40bf331c",
+      "bytes": 13914,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/b5afd1e2e86ae025e46a3c0365ab5f898876ca07/GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
+      "disposition": "Preserve exact original bytes and historical evidence scope."
+    }
+  ],
+  "current_method": {
+    "path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+    "role": "Only formal teaching body for this fixed-route Core scheduling method."
+  },
+  "migration": {
+    "current_corpus_files": 2399,
+    "base_tree": "a6efa118835ddf24db451e8cfd118471b373f127",
+    "method": "Rehashed current baseline from exact prior corpus and verified publication overlay; finite known path/title/digest scan, not whole-library semantic reading.",
+    "live_inbound_count": 2,
+    "live_inbound_paths": [
+      "GameLibrary/声音与音乐/交互音乐/README.md",
+      "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md"
+    ],
+    "manifest_name_files_scanned": 45,
+    "known_target_bindings_in_manifests": 0,
+    "catalog": "SOL-SFX-001 retains complete original parent_clock_support including custom-reverb extension as historical_record; SOL-SFX-006 separately registers current method.",
+    "accessibility_relation": "Remove cross-level discipline recommendation; unchanged interactive-audio role article already links the same accessibility body.",
+    "preservation": "Old source/reviews/runs and other body records retain exact bytes; historic music review hashes not reused to approve new Core method."
+  },
+  "limits": "Official-source reading, independent model review and bounded reasoning; no native audio or device result."
+}

@@ -1,0 +1,288 @@
+{
+  "task_id": "TASK-2026-0288",
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "id": "FMOD-CC",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Reference | ChannelControl",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "getDSPClock",
+        "setDelay",
+        "getDelay",
+        "addFadePoint",
+        "getFadePoints",
+        "setPaused",
+        "setVolume",
+        "setVolumeRamp"
+      ],
+      "role": "Core scheduling rule",
+      "concise_evidence_summary": "目标坐标及淡化点使用目标对象的父组tail DSP时钟；单位samples。淡化点间线性插值且叠乘其他音量。暂停、端点停止/暂停语义与对象自己的暂停标志分别记录。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-GLOSSARY",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Glossary",
+      "url": "https://www.fmod.com/docs/2.04/api/glossary.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "22.8 Channel Group",
+        "22.9 Channel",
+        "22.11.1 Parameter Tokens",
+        "22.16 DSP Chain",
+        "22.17 DSP Clock"
+      ],
+      "role": "Clock and parameter interpretation",
+      "concise_evidence_summary": "Opt参数可用null/0忽略。默认时钟同速，pitch可能改变推进速率。Channel是一次Sound播放，不是立体声的一条输出通道。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-DSP-TUTORIAL",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Using DSP Effects",
+      "url": "https://www.fmod.com/docs/2.04/api/using-dsp-effects-in-the-core-api.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "7.1.2 Creating an effect and making all Channels send to it",
+        "Order of execution and pull / no pull traversal",
+        "Send vs Standard connection type"
+      ],
+      "role": "Custom-path counterexample and remedies",
+      "concise_evidence_summary": "手工混响先拉取可能绕开所属组路径的预约等待；可让组先执行或使用SEND。SEND且混响先执行有一块湿路延迟。示例不处理虚拟化重连，不宜当标准混响方案。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-DSP-CONNECTION",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Reference | DSPConnection",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-dspconnection.html#fmod_dspconnection_type",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "STANDARD",
+        "SEND",
+        "Send buffer explanation"
+      ],
+      "role": "Connection execution responsibilities",
+      "concise_evidence_summary": "STANDARD可执行尚未执行的输入；SEND只读已存在的输入缓冲，还需要其他STANDARD或SIDECHAIN执行路径产生数据。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-DSP",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Reference | DSP",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-dsp.html#dsp_addinput",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "DSP::addInput"
+      ],
+      "role": "Connection default",
+      "concise_evidence_summary": "addInput默认连接类型为STANDARD；称呼一条支路为发送不能替代真实type。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-SYSTEM",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Reference | System",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-system.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "System::playSound",
+        "System::getDSPBufferSize",
+        "System::getSoftwareFormat"
+      ],
+      "role": "Prepare before unpause and sample-rate units",
+      "concise_evidence_summary": "playSound可直接指定组并暂停创建，以便先设置属性。软件混音块大小及混音采样率可查询；块时长不是设备端到端时延。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-GROUP",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Reference | ChannelGroup",
+      "url": "https://www.fmod.com/docs/2.04/api/core-api-channelgroup.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "ChannelGroup::addGroup",
+        "ChannelGroup::release"
+      ],
+      "role": "Fixed-hierarchy boundary",
+      "concise_evidence_summary": "addGroup的propagatedspclock默认true，递归传播调用组时钟值。释放组会将输入移到master。没有据此推出运行中改组的预约重映射算法。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-LOADING",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Loading and Playing Sounds",
+      "url": "https://www.fmod.com/docs/2.04/api/loading-and-playing-sounds-in-the-core-api.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "4.1 Loading Samples for Playback",
+        "4.1.1 Non-blocking Sound Creation",
+        "4.1.2 Loading modes",
+        "4.2 Playing a sound"
+      ],
+      "role": "Ready resource precondition",
+      "concise_evidence_summary": "非阻塞创建返回Sound句柄不代表可播放，要等待READY。内存解压样本与流式读取的准备条件不同；本轮不研究流式饥饿。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": "2.04.00",
+        "footer_date": "2026-09-29",
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-ROUTING",
+      "publisher": "Firelight Technologies Pty Ltd.",
+      "title": "FMOD Engine User Manual: Core API Mixing and Routing",
+      "url": "https://www.fmod.com/docs/2.04/api/mixing-and-routing-in-the-core-api.html",
+      "read_date": "2026-11-06",
+      "sections_read": [
+        "6.1 channel-group hierarchy",
+        "6.1.1 Channel and Channel Group Handles"
+      ],
+      "role": "Ownership and lifetime boundary",
+      "concise_evidence_summary": "声道停止/自然结束后句柄失效；组销毁后不能再调用其指针。对象寿命是预约前提，不把函数返回成功当作后续寿命保证。",
+      "page_identity": {
+        "series": "2.04",
+        "footer_version": null,
+        "footer_date": null,
+        "identity_limit": "Mutable version-series documentation, not installed SDK or fixed implementation source."
+      },
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    },
+    {
+      "id": "FMOD-QA-FUTURE-FADE",
+      "author": "Derek Burnheim",
+      "publisher": "FMOD Forums",
+      "title": "Some muted knocking sounds when using pitch bend — reply 2",
+      "url": "https://qa.fmod.com/t/some-muted-knocking-sounds-when-using-pitch-bend/15883/2",
+      "published_at": "2020-06-16",
+      "read_date": "2026-11-06",
+      "read_scope": "Full text of reply 2 including procedure, explanatory comments and code; no execution or SDK download.",
+      "concise_evidence_summary": "历史答复直接说明未来淡化点与同起点delay的准备顺序；两块建议为情境化建议，不是通用期限保证。",
+      "version_limit": "Historical original forum reply, not 2.04 implementation evidence.",
+      "retrieval_scope": "Selected original text and API signatures read; mutable web documentation or dated original reply, no immutable HTML snapshot or executed SDK."
+    }
+  ],
+  "claims": [
+    {
+      "id": "clock-domain",
+      "source": "FMOD-CC",
+      "locator": "getDSPClock;setDelay;addFadePoint",
+      "finding": "For C in G, query C parentclock, the G tail-DSP clock; start and fade coordinates use that domain."
+    },
+    {
+      "id": "fade-factor",
+      "source": "FMOD-CC",
+      "locator": "addFadePoint;setVolume",
+      "finding": "Fade points are linear between specified points and scale against other volume settings. No endpoint-outside transfer function inferred."
+    },
+    {
+      "id": "paused-preparation",
+      "source": "FMOD-SYSTEM",
+      "locator": "System::playSound",
+      "finding": "Explicit target group and paused creation permit setup before audibility; later local unpause does not override parent pause."
+    },
+    {
+      "id": "readiness",
+      "source": "FMOD-LOADING",
+      "locator": "4.1.1;4.2",
+      "finding": "A nonblocking handle is not readiness; wait for READY. Scoped method uses already prepared memory samples, not streaming starvation handling."
+    },
+    {
+      "id": "hierarchy",
+      "source": "FMOD-GROUP",
+      "locator": "addGroup;release",
+      "finding": "Clock propagation defaults true. Releasing group reroutes inputs to master; fixed ownership and routing are preconditions, not an arbitrary clock conversion algorithm."
+    },
+    {
+      "id": "optional-end",
+      "source": "FMOD-GLOSSARY",
+      "locator": "Parameter Tokens",
+      "finding": "Opt zero ignores optional argument; scoped start scheduling does not set an end target."
+    },
+    {
+      "id": "pause-and-rate",
+      "source": "FMOD-CC;FMOD-GLOSSARY",
+      "locator": "setPaused;DSP Clock",
+      "finding": "Local pause flags and effective ancestor pause differ; pitch/rate and pause mean clock distance is not a universal wall/device interval."
+    },
+    {
+      "id": "custom-route",
+      "source": "FMOD-DSP-TUTORIAL;FMOD-DSP-CONNECTION;FMOD-DSP",
+      "locator": "7.1.2;STANDARD/SEND;addInput",
+      "finding": "Manual reverb pulling before owner-group scheduling can expose a second path; order or SEND remedy has conditions, including one-block wet delay if reverb still executes first."
+    },
+    {
+      "id": "lifetime",
+      "source": "FMOD-ROUTING",
+      "locator": "Channel and Channel Group Handles",
+      "finding": "Stopped/naturally-ended Channel handles become invalid. Failed preparation must not continue using invalid handles."
+    },
+    {
+      "id": "historical-procedure",
+      "source": "FMOD-QA-FUTURE-FADE",
+      "locator": "Derek Burnheim reply2,2020-06-16",
+      "finding": "Paused creation, parent clock, future fades and same-start delay, then unpause. Historical two-block lead suggestion is not a universal current guarantee."
+    },
+    {
+      "id": "application-policy",
+      "source": "author-method-design",
+      "locator": "Preparation and diagnostic sequence",
+      "finding": "Positive intervals, overflow checks, return-value gates, reserve recheck and abandon-if-late policy are explicit application design, not native past-target behavior or atomic commit guarantee."
+    }
+  ],
+  "source_scope": "Official FMOD 2.04 selected APIs/tutorial plus dated original forum reply. Core scheduling distinct from the existing Studio music-transition body.",
+  "limits": [
+    "No SDK installation/execution or compilation",
+    "No generated audio, listening, recording, hardware latency or human test",
+    "No official graph pixel inspection or redistribution of manuals/code/images",
+    "No universal lead interval, endpoint-outside fade function or arbitrary clock conversion claimed"
+  ],
+  "next_stage": "Independent final full-article technical/reader/navigation review is recorded separately."
+}
