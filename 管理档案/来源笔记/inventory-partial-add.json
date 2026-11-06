@@ -1,0 +1,42 @@
+{
+  "id": "SRC-DESIGN-INVENTORY-PARTIAL-001",
+  "reader_id": "SOL-DESIGN-001",
+  "reader_path": "GameLibrary/游戏设计/系统设计/成长与经济/用收支记录检查单机游戏的成长经济.md",
+  "support_path": "管理档案/支持资料/背包能放入物品，为什么不等于奖励已经领完.md",
+  "updated_at": "2026-11-06",
+  "status": "source-backed",
+  "sources": [
+    {
+      "author": "Wube Software",
+      "title": "Factorio Runtime Docs 2.1.24 — LuaInventory",
+      "version": "2.1.24",
+      "published_at": null,
+      "accessed_at": "2026-11-06",
+      "url": "https://lua-api.factorio.com/2.1.24/classes/LuaInventory.html",
+      "locations": [
+        "can_insert: return-value description",
+        "insert: return-value description"
+      ],
+      "primary_excerpts": [
+        "true if at least a part of the given items could be inserted into this inventory.",
+        "Number of items actually inserted."
+      ],
+      "evidence_scope": "Versioned page title and these two exact return contracts were read and preserved. Independent review uses the preserved primary excerpts; it does not claim a fresh page retrieval or a game execution.",
+      "limits": "No conclusions about get_insertable_count, source-stack mutation, concurrency, rollback, atomic reward settlement or persistence."
+    }
+  ],
+  "original_example": {
+    "requested": 10,
+    "assumed_inserted": 4,
+    "remaining": 6,
+    "policy": "Allow partial claims and retain undelivered quantity in the same reward entitlement. This is an original design choice, not an API-provided reward policy.",
+    "accounting": "Cumulative delivered plus still due equals original entitlement. This is not an equation for current inventory holdings after consumption.",
+    "execution": "Paper count illustration only; no API, game, mod, database or test harness run."
+  },
+  "deduplication": {
+    "baseline": "eb35d1daa43f51a57166989d438f0f908285dac0",
+    "scope": "Gameplay and economy readers, nearby rounding/waiting supports and relevant catalog entries; not a whole-library semantic audit.",
+    "decision": "Optional economy support with conditional reader/shelf entries. No new book or inventory shelf; preserve original all-or-nothing upgrade requirement."
+  },
+  "evidence_boundary": "Source-backed interface distinction plus original unexecuted accounting. Partial acceptance is neither zero effect nor complete reward delivery. No cross-system consistency, fault recovery, runtime or human-test guarantee."
+}

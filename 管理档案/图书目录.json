@@ -1418,9 +1418,10 @@
         "管理档案/审查/分批兑换与取整-来源与读者审查.md",
         "管理档案/审查/经济附录WAL旧快照-读者与执行审查.md",
         "管理档案/审查/首份材料等待要求-来源与读者审查.md",
-        "管理档案/审查/成长分支独有回报-来源与读者审查.md"
+        "管理档案/审查/成长分支独有回报-来源与读者审查.md",
+        "管理档案/审查/库存部分接收-接口与读者审查.md"
       ],
-      "reader_sha256": "8fb51cbf091fff3f117092295ee6220b2e855f66c7bcfb3a6a98c44c85aa915f",
+      "reader_sha256": "5c69a59540b6ecb3b7ccc81cf019f66b54efd3074cb47351bdf1cb695b75da91",
       "material_waiting_support": {
         "support": "管理档案/支持资料/平均十次能获得的材料，为什么不能保证十次内拿到.md",
         "source_record": "管理档案/来源笔记/first-material-waiting.json",
@@ -1436,6 +1437,14 @@
         "review": "管理档案/审查/成长分支独有回报-来源与读者审查.md",
         "source": "https://www.factorio.com/blog/post/fff-275",
         "scope": "Historical developer account of branch rewards and prerequisites plus hypothetical design example; no current-game or player-effect validation."
+      },
+      "updated_at": "2026-11-06",
+      "partial_inventory_support": {
+        "support_path": "管理档案/支持资料/背包能放入物品，为什么不等于奖励已经领完.md",
+        "support_sha256": "838e36d9c87a5ea0f5920152c00262093589eedb8b3b35c509d612d484f25070",
+        "source_record": "管理档案/来源笔记/inventory-partial-add.json",
+        "review": "管理档案/审查/库存部分接收-接口与读者审查.md",
+        "scope": "Optional original partial-delivery count illustration and preserved versioned interface excerpts; no runtime or transactional guarantee."
       }
     },
     {
@@ -4031,7 +4040,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "fe5b2729b2227b765ac31fbf46e48add2c168434",
+  "publication_base_sha": "eb35d1daa43f51a57166989d438f0f908285dac0",
   "accounted_for_original_items": 55,
   "reader_books_total": 110,
   "post_baseline_research_books": 55,
