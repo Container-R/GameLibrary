@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK-2026-0291",
+  "article_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+  "sources": [
+    {
+      "id": "ozzHeader",
+      "authors": [
+        "Guillaume Blanc"
+      ],
+      "project": "ozz-animation",
+      "title": "IKTwoBoneJob contract",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/blob/744eb9d99f606eda849acb0b1204f7a3dc20bca1/include/ozz/animation/runtime/ik_two_bone_job.h",
+      "repository_commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "read_date": "2026-11-06",
+      "source_text_sha256": "14e50614e56b4e433cb0ab0c767e575693f513d410f5a1ec43f40c866850c999",
+      "source_git_blob_sha1": "ded310fdc182af82daad22978c11e502808d0280",
+      "locator": "L45–119",
+      "claim": "Model-space target point and pole direction, local mid axis, ancestor-chain and correction outputs; caller manages pole-axis crossing.",
+      "conditions": "Interface contract, not tested character behavior."
+    },
+    {
+      "id": "ozzImpl",
+      "authors": [
+        "Guillaume Blanc"
+      ],
+      "project": "ozz-animation",
+      "title": "IKTwoBoneJob implementation",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/blob/744eb9d99f606eda849acb0b1204f7a3dc20bca1/src/animation/runtime/ik_two_bone_job.cc",
+      "repository_commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "read_date": "2026-11-06",
+      "source_text_sha256": "c528e016951e507589c661fa8a03b9d478022a0c63fc710bb0e6c6851888ccaa",
+      "source_git_blob_sha1": "84066fb74846ca27b5fbf7998638bf3a67252d38",
+      "locator": "L41–379",
+      "claim": "Validate, geometry/soften, local corrections and weighting; reached is computed before final FK. Scalar angle correction and transformed-axis plane normal imply a current-pose perpendicular-axis condition under rigid/positive-similarity paths; this is source-derived geometry, not an extra header assertion.",
+      "conditions": "Source logic, not execution or equivalence to this article original position solver."
+    },
+    {
+      "id": "ozzSample",
+      "authors": [
+        "Guillaume Blanc"
+      ],
+      "project": "ozz-animation",
+      "title": "Two-bone sample integration",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/blob/744eb9d99f606eda849acb0b1204f7a3dc20bca1/samples/two_bone_ik/sample_two_bone_ik.cc",
+      "repository_commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "read_date": "2026-11-06",
+      "source_text_sha256": "7ce88116f288c125297ec4c2fccfbaa44e33c8378989486badf6a13117a67eec",
+      "source_git_blob_sha1": "fae3fab5ca0a472dfbd9a8a05696ef308e984b0f",
+      "locator": "L52–151",
+      "claim": "Separate point/vector transforms, same-stage model matrices, correction writeback and recomputed FK.",
+      "conditions": "Sample rest-pose reset is an option, not a general runtime requirement."
+    },
+    {
+      "id": "ozzTests",
+      "authors": [
+        "Guillaume Blanc"
+      ],
+      "project": "ozz-animation",
+      "title": "IKTwoBoneJob upstream tests",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/blob/744eb9d99f606eda849acb0b1204f7a3dc20bca1/test/animation/runtime/ik_two_bone_job_tests.cc",
+      "repository_commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "read_date": "2026-11-06",
+      "source_text_sha256": "be3c37bf0680a66b9ba8baca2a0d1773fd12e0dcd85f3af2938d8c171111da65",
+      "source_git_blob_sha1": "3fc862f0b7d0cb663f3b4c25324949b5f055af2b",
+      "locator": "L40–82,694–760,899–961",
+      "claim": "Final pose error is separately checked; collinear pole test leaves start correction unspecified; zero-distance and zero-bone test limits.",
+      "conditions": "Tests read, not run; do not adopt test tolerance or continuity as a universal guarantee."
+    },
+    {
+      "id": "ozzUtils",
+      "authors": [
+        "Guillaume Blanc"
+      ],
+      "project": "ozz-animation",
+      "title": "MultiplySoATransformQuaternion",
+      "url": "https://github.com/guillaumeblanc/ozz-animation/blob/744eb9d99f606eda849acb0b1204f7a3dc20bca1/samples/framework/utils.cc",
+      "repository_commit": "744eb9d99f606eda849acb0b1204f7a3dc20bca1",
+      "read_date": "2026-11-06",
+      "source_text_sha256": "8eab729511f75b4af510d38229e9427216bc77fb97b461e8bf3012a53c97104d",
+      "source_git_blob_sha1": "eed9c754ee64b9b1c2729e0805f0122565908de6",
+      "locator": "L259–280",
+      "claim": "Original local quaternion left-multiplies the correction on its right in this sample helper.",
+      "conditions": "Specific source convention, not all mathematical libraries."
+    },
+    {
+      "id": "hauser-ik",
+      "author": "Kris Hauser",
+      "title": "Robotic Systems, Chapter 6: Inverse Kinematics",
+      "url": "https://motion.cs.illinois.edu/RoboticSystems/InverseKinematics.html",
+      "version": "Online textbook draft; mutable URL, not pinned source bytes.",
+      "read_date": "2026-11-06",
+      "locator": "General discussion; Task space; Choosing from a set of solutions; Singularities; Analytical IK in 2D / 2R manipulator",
+      "claim": "Position and orientation are different tasks; extra constraints and solution selection are external choices; inner and outer distance bounds.",
+      "conditions": "Selected text read, no full chapter/image/code execution. Article derives 3D circle and branch policy independently rather than copying the special 2RIK inner-boundary shortcut."
+    },
+    {
+      "id": "kovar-foot-cleanup",
+      "authors": [
+        "Lucas Kovar",
+        "Michael Gleicher",
+        "John Schreiner"
+      ],
+      "title": "Footskate Cleanup for Motion Capture Editing",
+      "year": 2002,
+      "url": "https://graphics.cs.wisc.edu/Papers/2002/KSG02/cleanup.pdf",
+      "identity": "Eight-page author-group preprint; no claim of publisher-edition byte identity.",
+      "read_date": "2026-11-06",
+      "locator": "Opening,§2,§4.3–4.6,§6; relevant physical pages 5–6 passages,especially§4.4",
+      "claim": "Near-extension knee-angle limiting trades against limb-length adjustment; contact markers and neighboring-frame requirements restrict adoption.",
+      "conditions": "Current article uses text-supported tradeoffs, not paper quality/performance results or a reproduced solver. Own equal-length derivative and examples are independently derived. PDF identity was separately verified during independent technical review; older source/review records remain unchanged.",
+      "independent_review_pdf_sha256": "29bf5cae68d904f99f346cbf4d0796382692729da7cd1d8ff01e87bc5f9b4ad2",
+      "independent_review_image_scope": "Physical page 6 viewed to verify source equations and constraints, not animation quality."
+    }
+  ],
+  "original_reasoning": "Fixed-length 3D position circle, signed axial term, projected bend direction, nearest reachable target proof, explicit zero-distance and failure states, scale-normalized reference pseudocode and residual policy. Not an ozz port.",
+  "limits": [
+    "Independent source reading and original finite numeric reference, no ozz/upstream-test/engine execution.",
+    "No arbitrary-input continuity, full skeleton orientation, contacts, collision or joint-limit solver.",
+    "Numerical thresholds are explicit implementation policies, not a universal binary64 error bound.",
+    "Upstream source caches and papers not redistributed."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "12c1ccbd891a08ee93c324e4aefb121f2388a8aa",
+  "publication_base_sha": "52334530d39acce3af748b4b92aeced67f09faf9",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -1270,12 +1270,23 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/animation/turn-in-place-foot-sliding.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "e0917480bdf96e80f4406e94819e585f9b76315925a64e8b651149e85462f0c5",
+      "reader_sha256": "859165b4ac863658cf3c95a30526e7a51ec3c7d4ba52a4d6bb3e1346e31e12af",
       "near_extension_support": {
-        "source_record": "管理档案/来源笔记/near-extension-two-bone-geometry.json",
-        "review": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
-        "support": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
-        "scope": "Original finite mathematical support, not a native solver or paper reproduction."
+        "path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+        "role": "historical-material-index",
+        "material_index_sha256": "d193640fc8ca6af623c58ff2f48e03fb9067a0a7461c4ffa33b3b4ffced2c59a",
+        "material_index_review": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json",
+        "formal_article_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+        "original_reviewed_body_sha256": "03e7cfe5ec261a1f9513af1d2d944978b1db5769d4c914dece472c254bca17f1",
+        "pre_retirement_body_sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/52334530d39acce3af748b4b92aeced67f09faf9/管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+        "historical_record": {
+          "source_record": "管理档案/来源笔记/near-extension-two-bone-geometry.json",
+          "review": "管理档案/审查/近伸直两骨几何-来源与读者审查.md",
+          "support": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+          "scope": "Original finite mathematical support, not a native solver or paper reproduction."
+        },
+        "scope": "Original limited source/review identity retained; pre-retirement snapshot is distinct from each original reviewed version, not current full-method acceptance."
       },
       "marker_phase_support": {
         "path": "管理档案/支持资料/两段动作播放进度相同，为什么左右脚仍然对不上.md",
@@ -1285,14 +1296,41 @@
       },
       "review_paths": [
         "管理档案/审查/动画标记区间对应-来源与读者审查.md",
-        "管理档案/审查/两骨内侧不可达-来源与读者审查.md"
+        "管理档案/审查/两骨内侧不可达-来源与读者审查.md",
+        "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json"
       ],
       "inner_reach_support": {
         "path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
-        "sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
-        "review": "管理档案/审查/两骨内侧不可达-来源与读者审查.md",
-        "scope": "Unequal fixed two-link positional reachability; original finite geometry, no solver execution."
-      }
+        "role": "historical-material-index",
+        "material_index_sha256": "d193640fc8ca6af623c58ff2f48e03fb9067a0a7461c4ffa33b3b4ffced2c59a",
+        "material_index_review": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json",
+        "formal_article_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+        "original_reviewed_body_sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
+        "pre_retirement_body_sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/52334530d39acce3af748b4b92aeced67f09faf9/管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+        "historical_record": {
+          "path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+          "sha256": "99c3027db8452ba92abc0d6b8de505bba2dc585933d1b0623a3f2edaffca125c",
+          "review": "管理档案/审查/两骨内侧不可达-来源与读者审查.md",
+          "scope": "Unequal fixed two-link positional reachability; original finite geometry, no solver execution."
+        },
+        "scope": "Original limited source/review identity retained; pre-retirement snapshot is distinct from each original reviewed version, not current full-method acceptance."
+      },
+      "latest_link_revision": {
+        "previous_reader_sha256": "e0917480bdf96e80f4406e94819e585f9b76315925a64e8b651149e85462f0c5",
+        "current_reader_sha256": "859165b4ac863658cf3c95a30526e7a51ec3c7d4ba52a4d6bb3e1346e31e12af",
+        "review": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json",
+        "scope": "Two-bone related-method explanation and return label only. Other body and historical evidence unchanged."
+      },
+      "updated_at": "2026-11-06",
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-ANIM-008",
+          "path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+          "review": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json",
+          "relationship": "Complete fixed-length position construction and solver integration, linked from footslide diagnosis."
+        }
+      ]
     },
     {
       "internal_id": "SOL-ART2D-001",
@@ -4571,7 +4609,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Given legal D3D11 depth texture/view and finite valid inputs, define addressing, comparison, sampler/LOD, composite weights, border and independent reference; ideal math distinct from native results. Not a complete shadow renderer or cross-API/visual/performance proof."
+    },
+    {
+      "internal_id": "SOL-ANIM-008",
+      "reader_title": "两骨IK的位置构造与弯曲方向控制",
+      "discipline": "角色动画",
+      "direction": "动画运行时",
+      "topic": "逆向运动学",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+      "current_read_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+      "reader_body_status": "published",
+      "reader_sha256": "307803a6e9922d5e5336f52f49d48e04d3d590b0752f2f5c721cb8bcea3d2b8b",
+      "editorial_status": "完整位置方法、经修订的转轴条件及有限导航经独立审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-ANIM-008/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0291/sources.json",
+      "source_sha256": "5b018fc43f04d17f2aae24e41c999d253b23e8de9859da069f0c5519c4dba1f8",
+      "materials_record": "管理档案/研究/TASK-2026-0291/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0291/范围与保留.md",
+      "related_article_ids": [
+        "SOL-ANIM-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Stateless positive fixed-length 3D position construction with reject/nearest target policies, explicit direction/numerical states, and fixed ozz local-correction/FK integration. No universal continuity or full character solver."
     }
   ],
-  "current_batch_scope": "One complete comparison-kernel method, finite lighting route, history index and one role relation sentence. Previous D3D12 method/navigation and other histories preserved; no whole-library acceptance."
+  "current_batch_scope": "One complete two-bone method, original reproduction artifacts, finite animation route and host relation; both old support histories preserved. No whole-library acceptance."
 }

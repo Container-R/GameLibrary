@@ -1,0 +1,1737 @@
+{
+  "scope": "Original position-only binary64 reference; no engine or upstream test execution.",
+  "named_cases": 41,
+  "seeded_cases": 256,
+  "seed": 291,
+  "max_seeded_residual": 1.581843345108717e-15,
+  "cases": [
+    {
+      "name": "normal_06_04",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.44999999999999996,
+            0.3968626966596886,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "normal_04_06",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.4,
+        "b": 0.6,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.05000000000000005,
+            0.3968626966596886,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "decimal_inner_a_lt_b",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.2,
+          0.0,
+          0.0
+        ],
+        "a": 0.4,
+        "b": 0.6,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            -0.39999999999999974,
+            1.2644054553268208e-08,
+            0.0
+          ],
+          "E": [
+            0.2,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 1.6653345369377346e-16,
+          "second_relative": 1.1102230246251565e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "binary_exact_inner_a_lt_b",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.5,
+        "b": 1.0,
+        "p": null
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            -0.5,
+            0.0,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": null,
+        "shape": "inner_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "binary_exact_inner_a_gt_b",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 1.0,
+        "b": 0.5,
+        "p": null
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": null,
+        "shape": "inner_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "binary_exact_outer",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "a": 1.0,
+        "b": 0.5,
+        "p": null
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "E": [
+            1.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": null,
+        "shape": "outer_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "reject_0.1",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "UNREACHABLE",
+        "positions": null,
+        "relation": "too_close",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "project_0.1",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null,
+        "mode": "nearest"
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.6,
+            0.0,
+            0.0
+          ],
+          "E": [
+            0.19999999999999996,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "too_close",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": null,
+        "shape": "inner_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.16666666666666657,
+        "policy_error_scaled": 0.16666666666666657
+      }
+    },
+    {
+      "name": "reject_1.1",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1.1,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "UNREACHABLE",
+        "positions": null,
+        "relation": "too_far",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "project_1.1",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1.1,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null,
+        "mode": "nearest"
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.6,
+            0.0,
+            0.0
+          ],
+          "E": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "too_far",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": null,
+        "shape": "outer_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.16666666666666674,
+        "policy_error_scaled": 0.16666666666666674
+      }
+    },
+    {
+      "name": "no_pole",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null
+      },
+      "output": {
+        "status": "NEED_BEND_DIRECTION",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_pole",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NEED_BEND_DIRECTION",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "collinear_pole",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NEED_BEND_DIRECTION",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null,
+        "pole_sine": 0.0
+      }
+    },
+    {
+      "name": "weak_pole",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          1.0,
+          1e-08,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NEED_BEND_DIRECTION",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null,
+        "pole_sine": 1e-08
+      }
+    },
+    {
+      "name": "pole_positive",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          1.0,
+          0.01,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.44999999999999996,
+            0.3968626966596886,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 0.009999500037496877,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "pole_negative",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          1.0,
+          -0.01,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.44999999999999996,
+            -0.3968626966596886,
+            0.0
+          ],
+          "E": [
+            0.5,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "pole_sine": 0.009999500037496877,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "zero_equal_no_direction",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.5,
+        "b": 0.5,
+        "p": null
+      },
+      "output": {
+        "status": "NEED_FOLD_DIRECTION",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_equal_direction",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.5,
+        "b": 0.5,
+        "p": null,
+        "zero_dir": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "E": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "shape": "folded_at_root",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "zero_unequal_reject_0.6",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null
+      },
+      "output": {
+        "status": "UNREACHABLE",
+        "positions": null,
+        "relation": "too_close",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_unequal_nearest_missing_0.6",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null,
+        "mode": "nearest"
+      },
+      "output": {
+        "status": "NEED_TARGET_DIRECTION",
+        "positions": null,
+        "relation": "too_close",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_unequal_nearest_direction_0.6",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": null,
+        "mode": "nearest",
+        "zero_dir": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            0.6,
+            0.0,
+            0.0
+          ],
+          "E": [
+            0.19999999999999996,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "too_close",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "shape": "inner_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.33333333333333326,
+        "policy_error_scaled": 0.33333333333333326
+      }
+    },
+    {
+      "name": "zero_unequal_reject_0.4",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.4,
+        "b": 0.6,
+        "p": null
+      },
+      "output": {
+        "status": "UNREACHABLE",
+        "positions": null,
+        "relation": "too_close",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_unequal_nearest_missing_0.4",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.4,
+        "b": 0.6,
+        "p": null,
+        "mode": "nearest"
+      },
+      "output": {
+        "status": "NEED_TARGET_DIRECTION",
+        "positions": null,
+        "relation": "too_close",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": null
+      }
+    },
+    {
+      "name": "zero_unequal_nearest_direction_0.4",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "a": 0.4,
+        "b": 0.6,
+        "p": null,
+        "mode": "nearest",
+        "zero_dir": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            -0.4,
+            0.0,
+            0.0
+          ],
+          "E": [
+            0.19999999999999996,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "too_close",
+        "target_changed": true,
+        "near_boundary": false,
+        "direction_used": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "shape": "inner_boundary",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.33333333333333326,
+        "policy_error_scaled": 0.33333333333333326
+      }
+    },
+    {
+      "name": "invalid_a_0.0",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.0,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_a_-1.0",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": -1.0,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_a_nan",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": "nan",
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_b_inf",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": "inf",
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_T_(nan, 0.0, 0.0)",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          "nan",
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_p_(0.0, inf, 0.0)",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          "inf",
+          0.0
+        ]
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "invalid_mode_stretch",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "mode": "stretch"
+      },
+      "output": {
+        "status": "INVALID_INPUT",
+        "positions": null
+      }
+    },
+    {
+      "name": "unsupported_length_ratio",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "a": 1e-10,
+        "b": 1.0,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NUMERIC_RANGE",
+        "positions": null
+      }
+    },
+    {
+      "name": "coordinate_subtraction_overflow",
+      "input": {
+        "O": [
+          -1e+308,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1e+308,
+          0.0,
+          0.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NUMERIC_RANGE",
+        "positions": null
+      }
+    },
+    {
+      "name": "large_origin_residual_failure",
+      "input": {
+        "O": [
+          1e+16,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1e+16,
+          0.0,
+          0.0
+        ],
+        "a": 0.5,
+        "b": 0.5,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "zero_dir": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "NUMERIC_FAILURE",
+        "positions": null,
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "residuals": {
+          "first_relative": 1.0,
+          "second_relative": 1.0,
+          "effective_scaled": 0.0
+        }
+      }
+    },
+    {
+      "name": "scale_1e-120",
+      "input": {
+        "O": [
+          2.9999999999999998e-120,
+          -5e-120,
+          2e-120
+        ],
+        "T": [
+          3.5e-120,
+          -5e-120,
+          2e-120
+        ],
+        "a": 6e-121,
+        "b": 4e-121,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            2.9999999999999998e-120,
+            -5e-120,
+            2e-120
+          ],
+          "K": [
+            3.4499999999999996e-120,
+            -4.6031373033403114e-120,
+            2e-120
+          ],
+          "E": [
+            3.5e-120,
+            -5e-120,
+            2e-120
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 1.1102230246251565e-16,
+          "second_relative": 3.3306690738754696e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "scale_1e-06",
+      "input": {
+        "O": [
+          3e-06,
+          -4.9999999999999996e-06,
+          2e-06
+        ],
+        "T": [
+          3.5e-06,
+          -4.9999999999999996e-06,
+          2e-06
+        ],
+        "a": 6e-07,
+        "b": 4e-07,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            3e-06,
+            -4.9999999999999996e-06,
+            2e-06
+          ],
+          "K": [
+            3.45e-06,
+            -4.603137303340311e-06,
+            2e-06
+          ],
+          "E": [
+            3.5e-06,
+            -4.9999999999999996e-06,
+            2e-06
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 2.220446049250313e-16,
+          "second_relative": 1.6653345369377348e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "scale_1.0",
+      "input": {
+        "O": [
+          3.0,
+          -5.0,
+          2.0
+        ],
+        "T": [
+          3.5,
+          -5.0,
+          2.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            3.0,
+            -5.0,
+            2.0
+          ],
+          "K": [
+            3.45,
+            -4.603137303340311,
+            2.0
+          ],
+          "E": [
+            3.5,
+            -5.0,
+            2.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 4.440892098500626e-16,
+          "second_relative": 0.0,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "scale_1000000.0",
+      "input": {
+        "O": [
+          3000000.0,
+          -5000000.0,
+          2000000.0
+        ],
+        "T": [
+          3500000.0,
+          -5000000.0,
+          2000000.0
+        ],
+        "a": 600000.0,
+        "b": 400000.0,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            3000000.0,
+            -5000000.0,
+            2000000.0
+          ],
+          "K": [
+            3450000.0,
+            -4603137.303340311,
+            2000000.0
+          ],
+          "E": [
+            3500000.0,
+            -5000000.0,
+            2000000.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 2.220446049250313e-16,
+          "second_relative": 6.661338147750939e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "scale_1e+120",
+      "input": {
+        "O": [
+          3e+120,
+          -4.9999999999999996e+120,
+          2e+120
+        ],
+        "T": [
+          3.5e+120,
+          -4.9999999999999996e+120,
+          2e+120
+        ],
+        "a": 5.999999999999999e+119,
+        "b": 4.0000000000000005e+119,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            3e+120,
+            -4.9999999999999996e+120,
+            2e+120
+          ],
+          "K": [
+            3.45e+120,
+            -4.603137303340311e+120,
+            2e+120
+          ],
+          "E": [
+            3.5e+120,
+            -4.9999999999999996e+120,
+            2e+120
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 2.220446049250313e-16,
+          "second_relative": 4.996003610813203e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "tiny_nonzero_equal_target",
+      "input": {
+        "O": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "T": [
+          1e-200,
+          0.0,
+          0.0
+        ],
+        "a": 0.5,
+        "b": 0.5,
+        "p": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "K": [
+            5e-201,
+            0.5000000000000001,
+            0.0
+          ],
+          "E": [
+            1e-200,
+            0.0,
+            0.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": true,
+        "direction_used": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 2.220446049250313e-16,
+          "second_relative": 2.220446049250313e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    },
+    {
+      "name": "rigid_transform",
+      "input": {
+        "O": [
+          3.0,
+          -2.0,
+          5.0
+        ],
+        "T": [
+          3.0,
+          -1.5,
+          5.0
+        ],
+        "a": 0.6,
+        "b": 0.4,
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "output": {
+        "status": "SOLVED",
+        "positions": {
+          "O": [
+            3.0,
+            -2.0,
+            5.0
+          ],
+          "K": [
+            3.0,
+            -1.55,
+            5.396862696659689
+          ],
+          "E": [
+            3.0,
+            -1.5,
+            5.0
+          ]
+        },
+        "relation": "inside",
+        "target_changed": false,
+        "near_boundary": false,
+        "direction_used": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "pole_sine": 1.0,
+        "shape": "bent",
+        "residuals": {
+          "first_relative": 0.0,
+          "second_relative": 1.6653345369377346e-16,
+          "effective_scaled": 0.0
+        },
+        "original_error_scaled": 0.0,
+        "policy_error_scaled": 0.0
+      }
+    }
+  ]
+}

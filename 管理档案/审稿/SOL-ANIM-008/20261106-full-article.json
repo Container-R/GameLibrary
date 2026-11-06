@@ -1,0 +1,131 @@
+{
+  "article_path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+  "article_sha256": "307803a6e9922d5e5336f52f49d48e04d3d590b0752f2f5c721cb8bcea3d2b8b",
+  "publication_kind": "complete-stateless-two-bone-position-and-integration-method",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-two-bone-technical-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-two-bone-reader-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-two-bone-navigation-20261106",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ANIM-008/20261106-full-article.md"
+    }
+  ],
+  "revision_history": [
+    {
+      "article_sha256": "5b0ab2ea5a1f0717d6f8cd873bec1b00173f767ba0d6f1af922b485e6124f4ee",
+      "technical_verdict": "revise",
+      "finding": "Normalization and small positive opening test alone do not establish the current-pose mid-axis plane required by the source-derived integration model."
+    },
+    {
+      "article_sha256": "7642063bfb51ff4b5801d25f68d2a2900712b538e61f8e8a1c58cb4372f78142",
+      "navigation_verdict": "revise",
+      "finding": "Literal absolute-value pipes split GFM table columns; frozen bundle rejected before publication."
+    },
+    {
+      "article_sha256": "307803a6e9922d5e5336f52f49d48e04d3d590b0752f2f5c721cb8bcea3d2b8b",
+      "technical_verdict": "pass",
+      "resolution": "Current mid-space vectors, perpendicular-axis and conformal-path conditions, sign/collinear behavior and counterexample explained; whole revised body and original reproduction artifacts independently reviewed; table notation corrected and actual GFM cells checked."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0291/sources.json",
+      "sha256": "5b018fc43f04d17f2aae24e41c999d253b23e8de9859da069f0c5519c4dba1f8"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/materials.json",
+      "sha256": "cd10db909b4a2e608164608121a5bc30cd6d2efd4b2c02b862a67c03b9997bf3"
+    }
+  ],
+  "report_sha256": "5349f949702cc1ff84ba4f81478b6188e4da70e9fe2aeac4bb66c8bfac39b9a7",
+  "scope_record": "管理档案/研究/TASK-2026-0291/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/角色动画/README.md",
+      "sha256": "06bcb8e8cc54e817ab21ae6ee8b44b5b5b5f1768b417be36918617de8c55423c"
+    },
+    {
+      "path": "GameLibrary/角色动画/动画运行时/README.md",
+      "sha256": "6d9c78bf4bb7b8d4bd96da7f85fd31647622dc4a6a4b6671915e44cf629ce337"
+    },
+    {
+      "path": "GameLibrary/角色动画/动画运行时/逆向运动学/README.md",
+      "sha256": "8475150c6a1324ff380bbfe78d07446251d41bda75e06f7dbbee01ab20b8b3d4"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/脚的目标只移动一点，为什么膝盖会明显弹动.md",
+      "sha256": "d193640fc8ca6af623c58ff2f48e03fb9067a0a7461c4ffa33b3b4ffced2c59a"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/README.md",
+      "sha256": "fcee350ac13d7a32d6e1e8286e909e2f7210f9b8f474eac0c6915d247d1b4f92",
+      "bytes": 2321,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/axis-obliquity-check.py",
+      "sha256": "19990751b7814360bc88846f856154ce4e5fa95e3281e623313790267f2e8950",
+      "bytes": 2855,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/axis-obliquity-results.json",
+      "sha256": "7dbfce0725a76e8e19c2a705479b3a517c26d18b39843682a8a62491d2007479",
+      "bytes": 2323,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/check_reference.py",
+      "sha256": "a5676419b78721da6d5edf65dd607403c253f0363a8128f438cbdf220bb07fd9",
+      "bytes": 4551,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/reference.py",
+      "sha256": "989f6072b714c126527bfd6b2295dbd6850e8e68423c3c014c7a45ff1045181a",
+      "bytes": 4851,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0291/复现/results.json",
+      "sha256": "6dcd66100f7f303c29d4a3ed74e3a3fba2cfb2f00a2eeb30c8da9de328cebad1",
+      "bytes": 32947,
+      "scope": "Original finite reference/calculation artifact; no upstream solver or engine execution."
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+      "sha256": "859165b4ac863658cf3c95a30526e7a51ec3c7d4ba52a4d6bb3e1346e31e12af",
+      "previous_sha256": "e0917480bdf96e80f4406e94819e585f9b76315925a64e8b651149e85462f0c5",
+      "scope": "Related two-bone method explanation and return label only; not renewed whole-foot-slide article acceptance."
+    }
+  ],
+  "limits": "Model reviews, original finite numerical calculations and fixed-source inspection only. No ozz/upstream-test/engine/character, visual, performance or human test. No whole-library v2 acceptance.",
+  "updated_at": "2026-11-06T13:06:33Z"
+}

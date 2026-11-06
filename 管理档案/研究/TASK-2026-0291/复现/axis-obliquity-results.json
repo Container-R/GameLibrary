@@ -1,0 +1,115 @@
+{
+  "scope": "Original Rodrigues/length checks for a source-derived ozz axis counterexample.\nNot an ozz implementation, engine run, SIMD test or upstream test execution.\n",
+  "input": {
+    "O": [
+      0,
+      0,
+      0
+    ],
+    "K": [
+      1,
+      0,
+      0
+    ],
+    "E": [
+      1,
+      1,
+      0
+    ],
+    "target": [
+      2,
+      0,
+      0
+    ],
+    "joint_rotations": "identity",
+    "weight": 1,
+    "soften": 1
+  },
+  "cases": [
+    {
+      "name": "oblique",
+      "axis": [
+        0.0,
+        0.7071067811865475,
+        -0.7071067811865475
+      ],
+      "dot_first": 0.0,
+      "dot_second": 0.7071067811865475,
+      "positive_001_angle_change": 0.0070710088852692365,
+      "source_formula_angle_delta": 1.5707963267948966,
+      "second_vector_after": [
+        0.7071067811865475,
+        0.4999999999999999,
+        -0.49999999999999983
+      ],
+      "root_end_distance": 1.8477590650225735,
+      "best_possible_error_after_rigid_start_rotation": 0.15224093497742652
+    },
+    {
+      "name": "perpendicular",
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "dot_first": 0.0,
+      "dot_second": 0.0,
+      "positive_001_angle_change": 0.010000000000000009,
+      "source_formula_angle_delta": 1.5707963267948966,
+      "second_vector_after": [
+        1.0,
+        6.123233995736766e-17,
+        0.0
+      ],
+      "root_end_distance": 2.0,
+      "best_possible_error_after_rigid_start_rotation": 0.0
+    }
+  ],
+  "positive_similarity_cases": [
+    {
+      "scale": 0.125,
+      "target": 0.125,
+      "residual": 2.7755575615628914e-17
+    },
+    {
+      "scale": 0.125,
+      "target": 0.1875,
+      "residual": 2.7755575615628914e-17
+    },
+    {
+      "scale": 0.125,
+      "target": 0.25,
+      "residual": 0.0
+    },
+    {
+      "scale": 1.0,
+      "target": 1.0,
+      "residual": 2.220446049250313e-16
+    },
+    {
+      "scale": 1.0,
+      "target": 1.5,
+      "residual": 2.220446049250313e-16
+    },
+    {
+      "scale": 1.0,
+      "target": 2.0,
+      "residual": 0.0
+    },
+    {
+      "scale": 8.0,
+      "target": 8.0,
+      "residual": 1.7763568394002505e-15
+    },
+    {
+      "scale": 8.0,
+      "target": 12.0,
+      "residual": 1.7763568394002505e-15
+    },
+    {
+      "scale": 8.0,
+      "target": 16.0,
+      "residual": 0.0
+    }
+  ]
+}
