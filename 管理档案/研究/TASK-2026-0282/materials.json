@@ -1,0 +1,239 @@
+{
+  "baseline_commit": "2efad1af5d661d7d61a4c60f2cf460336524cdaa",
+  "purpose": "Preserve exact historical experiment identities while replacing only two reader-facing README bodies with material indexes. No new execution.",
+  "packages": [
+    {
+      "root": "管理档案/支持资料/cgltf稀疏属性展开",
+      "readme_in_manifest": false,
+      "manifest_status": "PUBLIC_DERIVATIVE_NOT_EXECUTED",
+      "source_commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+      "manifest_sha256": "d8d3fa2298b42834ce241fc8b3189519541429491da2537ca06ed3a70cdc54f3",
+      "manifest_input_count": 8,
+      "preserved_files": [
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/LICENSE",
+          "blob": "599d9341a7d681d7f68b614625c0664c949a6a90",
+          "sha256": "f619925f80ef862497aaf8e8155ef218fa6a2190055129523ca3df9119a9ba95",
+          "size": 1066
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/cgltf.h",
+          "blob": "78ea905f0230a36fae4b7ac69cd70a61296689f0",
+          "sha256": "e378a21c084bf1f288bb799de827bb26906efb024255f1ecf1705ea13f11c6ec",
+          "size": 202865
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/dense.json",
+          "blob": "600db1aa5e590e2fa46ccb299c95105a86a728c0",
+          "sha256": "b2dcfa20c7f51da661bbe70fbcdccd2478b698e65b22aa814d8911b7f5aee5c3",
+          "size": 867
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/fixture.hex",
+          "blob": "21104fd4250a59062a0829889c161e4fd846377e",
+          "sha256": "feecf56668a9c11130160c0f2f8f60d42a8dc2bf4d156b11c9deb1984e70bd27",
+          "size": 89
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/harness.c",
+          "blob": "1fa91b4d667c27cf806a638106ce6f42fb39df59",
+          "sha256": "b5c402ab8a0342f2dd5c813c008e0af9124f961cd99a3826f50d77f0739e9371",
+          "size": 4444
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/manifest.json",
+          "blob": "1dc72bfff0379fdb32467b7cd9476c415fc150c9",
+          "sha256": "d8d3fa2298b42834ce241fc8b3189519541429491da2537ca06ed3a70cdc54f3",
+          "size": 1033
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/protocol.md",
+          "blob": "9970af789c9a7df217b73cfc08eda6efd66f21db",
+          "sha256": "e624edc39bdd9cdead3ec88236fe237b2aedf921dba4337c691468c7cfea0be2",
+          "size": 6135
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/run-1/output.txt",
+          "blob": "dd6d9142185b537cfda2d14fae213308b93519e3",
+          "sha256": "082b383a44bd4a06c003750742427ae343227b8c2c9dbb9135ded871b8502045",
+          "size": 218
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/run-1/result.json",
+          "blob": "535af6c0a230668d3baebabe0f17b1be15ff7a13",
+          "sha256": "7145f537e0f507b4edd52f2f0b89ef529358b4b81d22bdad67e7c75d1e4890e6",
+          "size": 1506
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/run-2/output.txt",
+          "blob": "dd6d9142185b537cfda2d14fae213308b93519e3",
+          "sha256": "082b383a44bd4a06c003750742427ae343227b8c2c9dbb9135ded871b8502045",
+          "size": 218
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/run-2/result.json",
+          "blob": "535af6c0a230668d3baebabe0f17b1be15ff7a13",
+          "sha256": "7145f537e0f507b4edd52f2f0b89ef529358b4b81d22bdad67e7c75d1e4890e6",
+          "size": 1506
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/run.py",
+          "blob": "5f72eb3a2d6130fdc99290e57200e40da633611b",
+          "sha256": "c4083567181a6995f5358c604a2dc884bab5d6aa8352c413a2afe7d983e51005",
+          "size": 5528
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏属性展开/zero.json",
+          "blob": "422f2b5b4ecc8a8c8bd3293cb421f2421c0ca7e6",
+          "sha256": "8588d6e5d86595ebbfe66c601b08e26d8d992a7ef5db2ba96100d61db05842ae",
+          "size": 821
+        }
+      ],
+      "previous_reader": {
+        "path": "管理档案/支持资料/cgltf稀疏属性展开/README.md",
+        "blob": "b98c99516a53bac4f71d5f37aefcfa3125ab25bd",
+        "sha256": "ab9806fbd9e098c413b28eb48d0c02621429a522751b5d11a538744ef2b87e64",
+        "size": 8351,
+        "fixed_history_url": "https://github.com/Container-R/GameLibrary/blob/2efad1af5d661d7d61a4c60f2cf460336524cdaa/管理档案/支持资料/cgltf稀疏属性展开/README.md"
+      }
+    },
+    {
+      "root": "管理档案/支持资料/cgltf稀疏整数属性解码",
+      "readme_in_manifest": false,
+      "manifest_status": "PREPARED_NOT_EXECUTED",
+      "source_commit": "360db1a95480fe102ae9c69b27c5d101167ff5ba",
+      "manifest_sha256": "774e45d5e4f32ea14ac109dd1b0d881ecea4d23abf7538a30a2a9369cb8e5a95",
+      "manifest_input_count": 11,
+      "preserved_files": [
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/INDEPENDENT-REPEAT.md",
+          "blob": "880b844747b482fa2f2ac8e300c9ee1817501c77",
+          "sha256": "e208ca3eb39811479359888b2a219ff078c147796dcab6417616fb180153e4ea",
+          "size": 4800
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/LICENSE",
+          "blob": "599d9341a7d681d7f68b614625c0664c949a6a90",
+          "sha256": "f619925f80ef862497aaf8e8155ef218fa6a2190055129523ca3df9119a9ba95",
+          "size": 1066
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/cgltf.h",
+          "blob": "78ea905f0230a36fae4b7ac69cd70a61296689f0",
+          "sha256": "e378a21c084bf1f288bb799de827bb26906efb024255f1ecf1705ea13f11c6ec",
+          "size": 202865
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/check.py",
+          "blob": "85fa9cb59a5769f52386252e919ae1dde7468e49",
+          "sha256": "d26c1cc07ca816315e469cda651b41b93aaa2a873b743831d47f6c5eb1036610",
+          "size": 1676
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/dense-normalized.json",
+          "blob": "9aa5b527c518e108e1070e6de0d241a72cbc7e63",
+          "sha256": "52bfc4e57a246e58786a1b84a99299ec6032802674d7c76c7153cf08b2eedefa",
+          "size": 798
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/dense-raw.json",
+          "blob": "4aec720f671ffb84e9d6908112068d6e235e7298",
+          "sha256": "8ade0195c74e2898d8892cde39f47f544bd44c71c2746be6e844dc8a2ec993a9",
+          "size": 799
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/expected.json",
+          "blob": "d628a5ae61fdcb9d8d4ebcb25a61c1b081cb477e",
+          "sha256": "7112bc00f5cfdbe88014b6c1738823cfde0985765e3875666f5d807c346fe178",
+          "size": 414
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/fixture.hex",
+          "blob": "b6cca73e9e696d04bc2010a1c23f44a87378851b",
+          "sha256": "0d74d53c43b6cdd0a309145d67ea2c56c9fbb4c1a0f8897434397c9852ec719e",
+          "size": 33
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/harness.c",
+          "blob": "68ffff799934d4f6b2d4b0af6f6dd5c9a7010fdd",
+          "sha256": "09e9c773c47cd7f1e6c7eefb3b21e16178ca2d249d8477be6822cede6c731375",
+          "size": 4829
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/manifest.json",
+          "blob": "ca297534cd9c3cc05463a5208e67e632aa8972d5",
+          "sha256": "774e45d5e4f32ea14ac109dd1b0d881ecea4d23abf7538a30a2a9369cb8e5a95",
+          "size": 1084
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/protocol.md",
+          "blob": "d3c95b9a3cc44957e8ac96e51da8e747006feeff",
+          "sha256": "02f4e43799238237ab602d02e7e3236e5518bd76c01c64a531df541135d6cc94",
+          "size": 7130
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/run-1/result.json",
+          "blob": "0d2e76cb15b122f09af1e0a16a08e120ae98f73a",
+          "sha256": "e1656f6cc7c595af2cec454efdc69a16f79ce6a00691cdef970c3124926f6343",
+          "size": 1933
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/run-1/values.json",
+          "blob": "c7ed520cc3d56c9cc1a0a4a382a9dc5046a37ea8",
+          "sha256": "5703a37ca9d36e24f053871413377aeaade518cc670c110da8896590385a318d",
+          "size": 817
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/run-2/result.json",
+          "blob": "0d2e76cb15b122f09af1e0a16a08e120ae98f73a",
+          "sha256": "e1656f6cc7c595af2cec454efdc69a16f79ce6a00691cdef970c3124926f6343",
+          "size": 1933
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/run-2/values.json",
+          "blob": "c7ed520cc3d56c9cc1a0a4a382a9dc5046a37ea8",
+          "sha256": "5703a37ca9d36e24f053871413377aeaade518cc670c110da8896590385a318d",
+          "size": 817
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/run.py",
+          "blob": "96faf399b3544b328cea02384f6ef27ffc9b57e8",
+          "sha256": "a7f98208f2e6456506ac05094cf1c28ac32a38d15c41a6c6d9449cd41e7e5eec",
+          "size": 7925
+        },
+        {
+          "path": "管理档案/支持资料/cgltf稀疏整数属性解码/zero-normalized.json",
+          "blob": "eae085ba9291d56abdbce816e943492a70ae9eb4",
+          "sha256": "6e02977463818ace681c3736c9de5bd83dc5bde6fdb85b6987447808070deeb4",
+          "size": 752
+        }
+      ],
+      "previous_reader": {
+        "path": "管理档案/支持资料/cgltf稀疏整数属性解码/README.md",
+        "blob": "9ee35b0d19ea393e3ceb578a5fd26ffc27501995",
+        "sha256": "4ba6ec68578831068714f3e2ad2785020f71854046cfb03261954a125e6b378c",
+        "size": 6876,
+        "fixed_history_url": "https://github.com/Container-R/GameLibrary/blob/2efad1af5d661d7d61a4c60f2cf460336524cdaa/管理档案/支持资料/cgltf稀疏整数属性解码/README.md"
+      }
+    }
+  ],
+  "coverage": {
+    "head": "2efad1af5d661d7d61a4c60f2cf460336524cdaa",
+    "tree_entries": 2690,
+    "all_blobs": 2356,
+    "exact_blobs_verified": 2356,
+    "md_json_paths": 2069,
+    "md_json_scanned": 2069,
+    "utf8_nonnul_text_blobs_scanned": 2356,
+    "unmatched_blob_paths": [],
+    "unscanned_md_json_paths": [],
+    "literal_reference_lines": 22,
+    "structured_reference_values": 16,
+    "limits": [
+      "Only the fixed HEAD is covered; rescan changed blobs at publication.",
+      "Literal decoded package-name and Markdown-target matching plus parsed JSON values. Not a general Markdown/HTML parser or semantic proof of every alias, computed link, external inbound URL, binary attachment or historical commit.",
+      "No links were edited and no candidate article was created or reviewed."
+    ],
+    "stage": "Pre-migration read-only mapping; the final edits are described separately by this task migration record."
+  }
+}

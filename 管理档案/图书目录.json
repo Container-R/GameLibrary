@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "b3eeb2c47311a98006e18ef027336ae33633b83e",
+  "publication_base_sha": "2efad1af5d661d7d61a4c60f2cf460336524cdaa",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -1604,15 +1604,14 @@
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "legacy_retention": "旧完整主文和历史实验保持固定版本；现有技术稿按范围与保留记录逐项接续，不继承旧完成状态为新版全文验收。",
-      "extraction_scope": "当前正文仅承接普通交错属性读取、范围与索引方法；稀疏、切线与目标表示等独立问题完整保留待正式化。",
+      "extraction_scope": "普通交错读取正文保持本身范围；稀疏完整展开已独立正式化，目标表示及其他相关方法继续保留待审。",
       "reader_body_status": "published",
       "original_scope_status": "partially-formalized-related-methods-preserved",
       "pending_chapter_tasks": [
-        "REMEDIATION-03-01",
-        "REMEDIATION-03-02"
+        "REMEDIATION-03-01"
       ],
-      "scope_disposition": "当前正文仅承接普通交错属性读取、范围与索引方法；稀疏、切线与目标表示等独立问题完整保留待正式化。",
-      "scope_disposition_review": "管理档案/研究/TASK-2026-0281/范围与保留.md",
+      "scope_disposition": "普通交错读取正文保持本身范围；稀疏完整展开已独立正式化，目标表示及其他相关方法继续保留待审。",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0282/迁移与保留.md",
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/modeling/gltf-interleaved-attribute-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
@@ -1650,23 +1649,36 @@
           "review": "管理档案/审稿/SOL-MODEL-001/20261106-full-article.json",
           "sha256": "ab9806fbd9e098c413b28eb48d0c02621429a522751b5d11a538744ef2b87e64",
           "scope": "Only example-location wording changed; full method migration pending."
-        }
+        },
+        "material_role": "Historical finite execution and current reproduction index; explanation now in formal article.",
+        "formal_article_path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+        "material_index_sha256": "d0630c8cdcb2be9807e022467973108b8ee07232c3ed0d45f40e4d873f432ca1",
+        "material_index_review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json"
       },
       "normalized_attribute_support": {
         "path": "管理档案/支持资料/glTF关节编号和权重为什么不能按同一种数值读取.md",
-        "sha256": "70c76a07320e22899b4beb3b03c10f7e920ad0d8949bfeb2761afb5e79f5ea25",
+        "sha256": "a72ab8517905dc833251ef9d711af6bdc5c0b2bfa580fc6f1aff5df1ec9679c6",
         "review": "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
         "source": "管理档案/来源笔记/gltf-normalized-skin-attributes.json",
         "scope": "Fixed normative source and independently reviewed original fractions/index mapping; no asset construction, parser, validator, skinning, engine or GPU execution.",
         "reviewed_before_link_sha256": "ffa8f68bf0d331f1a10fe3b5aa9cc0421ae4f837326438e876145fd98922224c",
-        "link_addition_review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md"
+        "link_addition_review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
+        "previous_link_version_sha256": "70c76a07320e22899b4beb3b03c10f7e920ad0d8949bfeb2761afb5e79f5ea25",
+        "latest_link_revision": {
+          "review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+          "scope": "Only one method-link paragraph changed; full technical prose and formal classification still pending."
+        }
       },
       "unorm_sparse_native_support": {
         "path": "管理档案/支持资料/cgltf稀疏整数属性解码/README.md",
-        "sha256": "4ba6ec68578831068714f3e2ad2785020f71854046cfb03261954a125e6b378c",
         "review": "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
         "source": "管理档案/来源笔记/cgltf-unorm-sparse-native.json",
-        "scope": "Two different operators, same host and frozen program, three generic accessor configurations per run; real C compilation and native execution."
+        "scope": "Two different operators, same host and frozen program, three generic accessor configurations per run; real C compilation and native execution.",
+        "historical_body_sha256": "4ba6ec68578831068714f3e2ad2785020f71854046cfb03261954a125e6b378c",
+        "formal_article_path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+        "material_index_sha256": "8247bc830ce75caf3b1c9ae21e34915ca2316636d88dcbe2b5666de926af908a",
+        "material_index_review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+        "material_role": "Historical finite execution and reproduction index; prior review does not certify new article."
       },
       "morph_position_support": {
         "path": "管理档案/支持资料/glTF变形目标的位置值，为什么不能直接当作终点.md",
@@ -1684,7 +1696,15 @@
       },
       "discipline": "技术美术",
       "direction": "环境管线",
-      "topic": "模型导入"
+      "topic": "模型导入",
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-MODEL-004",
+          "path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+          "review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+          "relationship": "Sparse full-array decoding is a separate engineering method; ordinary reading article is unchanged."
+        }
+      ]
     },
     {
       "internal_id": "SOL-MUSIC-001",
@@ -4142,7 +4162,32 @@
         "https://www.factorio.com/blog/post/fff-389",
         "https://www.factorio.com/blog/post/fff-395"
       ]
+    },
+    {
+      "internal_id": "SOL-MODEL-004",
+      "reader_title": "用cgltf完整展开glTF稀疏属性",
+      "discipline": "技术美术",
+      "direction": "环境管线",
+      "topic": "模型导入",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+      "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+      "reader_body_status": "published",
+      "reader_sha256": "05596c98486bdcd500e493de03c631636ea757e5b7edde56b55cdd71e20c10f5",
+      "editorial_status": "完整方法、有限材料归类与实际导航经新版独立审查通过。",
+      "review_paths": [
+        "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0282/sources.json",
+      "source_sha256": "ac69d852f6a71c025225b2630758a54a396b9639091b37248b9a322d7caae3be",
+      "materials_record": "管理档案/研究/TASK-2026-0282/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0282/迁移与保留.md",
+      "related_article_ids": [
+        "SOL-MODEL-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Pinned cgltf full sparse expansion for controlled tight FLOAT SCALAR and UINT8 VEC4 input; normative and implementation limits explained."
     }
   ],
-  "current_batch_scope": "SOL-MODEL-001 full article and its route; SOL-MODEL-002 only one related-link wording. Remaining inventory and reviews are not implied."
+  "current_batch_scope": "SOL-MODEL-004 full formal method, two reproduction indices and their route; one limited inbound link. Existing unrelated articles remain unchanged and are not newly certified."
 }

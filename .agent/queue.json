@@ -9880,18 +9880,43 @@
       "reader": "维护glTF属性读取工具的程序员",
       "scope": "整合现有FLOAT SCALAR与UINT8 VEC4两份技术说明为一篇正式方法；两套输入、协议和历史结果身份保留。",
       "expected_outcome": "完成原始来源与现有材料核对、正文、入站映射和独立审查后发表；不混入皮肤关节映射或切线生成。",
-      "phase": "researching",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0282/sources.json",
+        "管理档案/研究/TASK-2026-0282/materials.json",
+        "管理档案/研究/TASK-2026-0282/迁移与保留.md",
+        "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json"
+      ],
+      "next_action": "接续目标表示验证的有限范围发现，检查旧材料与当前文章重叠。",
+      "blocker": null,
+      "updated_at": "2026-11-06T09:49:45Z",
+      "related_task_ids": [
+        "TASK-2026-0281"
+      ],
+      "article_path": "GameLibrary/技术美术/环境管线/模型导入/用cgltf完整展开glTF稀疏属性.md",
+      "review": "管理档案/审稿/SOL-MODEL-004/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0283",
+      "question": "源属性数值正确后，如何区分导入器解码错误与引擎目标表示中的绕序、近似或重排差异？",
+      "reader": "维护模型导入和验证工具的程序员及技术美术",
+      "scope": "先核REMEDIATION-03-01保留的两阶段验证材料与现有文章，选定不重复的完整方法范围；不扩写无关草稿。",
+      "expected_outcome": "明确读者判断、完整验证过程和采用限制；证据不足时记录问题而不发布空壳。",
+      "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0281/范围与保留.md",
-        "管理档案/来源笔记/cgltf-sparse-native.json",
-        "管理档案/来源笔记/cgltf-unorm-sparse-native.json"
+        "管理档案/研究/TASK-2026-0282/迁移与保留.md",
+        "管理档案/复合旧文待整理.json"
       ],
-      "next_action": "核固定cgltf完整展开实现与Khronos替换/转换规则，核两套材料身份，确定完整方法及有限验证范围。",
+      "next_action": "读取固定历史的源读取与目标表示验证段落，对照当前正式文章，定位能支撑完整方法的来源和未解缺口。",
       "blocker": null,
-      "updated_at": "2026-11-06T09:23:42Z",
+      "updated_at": "2026-11-06T09:49:45Z",
       "related_task_ids": [
+        "TASK-2026-0282",
         "TASK-2026-0281"
       ]
     }
@@ -9900,7 +9925,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Formalize existing glTF sparse decoding prose after the ordinary-reading publication."
+    "next_priority": "Scope the retained source-to-engine-target verification method; continue finite v2 research without changing unrelated drafts."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
