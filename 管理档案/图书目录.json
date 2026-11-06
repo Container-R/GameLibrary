@@ -1309,7 +1309,7 @@
       "old_path_availability": "git_history_only",
       "old_path_history_url": "https://github.com/Container-R/GameLibrary/blob/1a7bf18b24ba56395892c4c0cdb3b2acecc16985/solutions/audio/music-state-transition-contract.md",
       "old_path_history_commit": "1a7bf18b24ba56395892c4c0cdb3b2acecc16985",
-      "reader_sha256": "7d5dc998b7060fdde9057c420d3e2a401fb48c98c3c9a409282dca0ef101c55b",
+      "reader_sha256": "e42149bc1e27a67803f0a9176e5d5919be85c508a8e40700d2b9302608411bdc",
       "parent_clock_support": {
         "path": "管理档案/支持资料/FMOD预约声音时，为什么要读取父混音组的时钟.md",
         "sha256": "498cbe901c0b5682e124c8941a787d22bbcd73aff4a248f543c290eba4cad035",
@@ -1326,13 +1326,20 @@
         }
       },
       "review_paths": [
-        "管理档案/审查/FMOD相对入口位置-增量审读.md"
+        "管理档案/审查/FMOD相对入口位置-增量审读.md",
+        "管理档案/审查/FMOD量化退出-来源与读者审查.md"
       ],
       "updated_at": "2026-11-06",
       "relative_offset_extension": {
         "source_record": "管理档案/来源笔记/fmod-relative-offset.json",
         "review": "管理档案/审查/FMOD相对入口位置-增量审读.md",
         "scope": "FMOD2.04 None/Relative maps target region position; differing-BPM paper example uses bars rather than elapsed seconds. No project execution or audio test."
+      },
+      "quantized_untrigger_section": {
+        "section": "FMOD 2.04：按小节进入，不等于按小节退出",
+        "source_record": "管理档案/来源笔记/fmod-quantized-untrigger.json",
+        "review": "管理档案/审查/FMOD量化退出-来源与读者审查.md",
+        "scope": "FMOD 2.04 documentation: start conditions at quantization boundary versus unquantized untriggering, with a synchronous/no-AHDSR conditional example. No runtime or listening claim."
       }
     },
     {
@@ -4115,7 +4122,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "97d424158fb776bc59515274f35abe0a0e9503e3",
+  "publication_base_sha": "a9025254b830641c3223e684c2c4f398a938b30e",
   "accounted_for_original_items": 55,
   "reader_books_total": 111,
   "post_baseline_research_books": 56,

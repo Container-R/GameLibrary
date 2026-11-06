@@ -1,0 +1,57 @@
+{
+  "reader_path": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+  "reader_section": "FMOD 2.04：按小节进入，不等于按小节退出",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "scope": "Small existing-music chapter addition distinguishes quantized starting conditions, untriggering and configuration-dependent stopping. No middleware execution.",
+  "sources": [
+    {
+      "publisher": "Firelight Technologies",
+      "title": "FMOD Studio User Manual: Working with Instruments",
+      "url": "https://www.fmod.com/docs/2.04/studio/working-with-instruments.html#trigger-conditions",
+      "document_version": "2.04.00",
+      "document_footer_date": "2026-09-29",
+      "read_on": "2026-11-06",
+      "locator": "5.3.1–5.3.2 synchronous/async;5.5 untriggering and table;5.8.2 tempo;5.9 trigger conditions",
+      "locator_detail": "Retrieved text lines251–274,302–361,404–428; key conditions427 and sync stopping320–322. Line numbers are retrieval locators, not stable public anchors.",
+      "version_limit": "Versioned documentation URL with visible footer; not immutable source code or runtime version verification."
+    }
+  ],
+  "original_example": {
+    "tempo_bpm": 120,
+    "beat_unit": "quarter note",
+    "time_signature": "4/4",
+    "bar_boundaries_seconds": [
+      0,
+      2,
+      4
+    ],
+    "scope": "Music positions at which conditions have already taken effect in the instance, not game API send times or device-output timestamps.",
+    "configuration": [
+      "one synchronous audio instrument on timeline parameter sheet",
+      "one combat parameter condition",
+      "one-bar quantization",
+      "audio asset and trigger region cover the relevant interval",
+      "no additional time delay, probability setting or AHDSR modulator"
+    ],
+    "branch_before_start": {
+      "true_at": 1.2,
+      "false_at": 1.6,
+      "boundary": 2,
+      "derived_result": "Condition absent at boundary; no start based solely on earlier true value."
+    },
+    "branch_after_start": {
+      "true_at": 1.2,
+      "condition_held_through": 2,
+      "false_at": 2.3,
+      "derived_result": "Under synchronous/no-AHDSR documented rule stops at untriggering, without waiting for next bar4."
+    },
+    "execution": "Original conditional timeline inference; no project, recording or output measurement."
+  },
+  "limitations": [
+    "Instrument trigger conditions do not establish universal transition-region or bridge cancellation.",
+    "Untriggering is distinct from immediate silence in other modes or envelope configurations.",
+    "No claim that historical asynchronous bugs are fixed or still present in current products.",
+    "No engine, middleware, listening, device-output, performance or human test."
+  ]
+}
