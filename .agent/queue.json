@@ -10345,15 +10345,40 @@
       "reader": "环境概念、模型、材质和灯光协作人员。",
       "scope": "Read current complete concept article and related methods, determine integration versus distinct method from actual knowledge gap, inspect primary production images and sources, preserve original drafts. No DCC/engine or player-effect claim without actual observation.",
       "expected_outcome": "A finite, source-backed complete method or coherent full-article revision, with purposeful original comparisons and independent full technical, reader and navigation reviews.",
-      "next_action": "Complete independent full technical, reader and root navigation reviews of the drafted environment-scene hierarchy method, integrate findings and migrate the bounded historical support.",
-      "phase": "reviewing",
+      "next_action": "Research the distinct object interaction cue task, compare existing methods, inspect original developer evidence and select a complete nonduplicate scope before drafting.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0300/sources.json",
+        "管理档案/研究/TASK-2026-0300/materials.json",
+        "管理档案/研究/TASK-2026-0300/范围与保留.md",
+        "管理档案/审稿/SOL-ENV-002/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T17:18:00Z",
+      "related_task_ids": [
+        "TASK-2026-0299"
+      ],
+      "article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+      "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0301",
+      "question": "场景物件的动作与状态规则，怎样与可见分类和操作反馈协调，避免相似物件给出不同交互预期？",
+      "reader": "关卡、环境、玩法与交互协作人员。",
+      "scope": "Compare existing formal methods and historical two-box support; verify original developer sources and decisive media, then select a complete bounded method and one formal home. No superficial rename or inferred player-effect guarantee.",
+      "expected_outcome": "Source-backed scope and reader task, followed by a complete coherent method if evidence supports it, with independent full reviews and necessary inbound migration.",
+      "next_action": "Research the distinct object interaction cue task, compare existing methods, inspect original developer evidence and select a complete nonduplicate scope before drafting.",
+      "phase": "researching",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T17:10:00Z",
+      "updated_at": "2026-11-06T17:18:00Z",
       "related_task_ids": [
-        "TASK-2026-0299"
+        "TASK-2026-0300"
       ]
     }
   ],
@@ -10361,7 +10386,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Complete current concept-handoff source/visual research and duplicate assessment, then write the selected bounded complete manuscript rather than another isolated warning."
+    "next_priority": "Research the distinct object interaction cue task, compare existing methods, inspect original developer evidence and select a complete nonduplicate scope before drafting."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

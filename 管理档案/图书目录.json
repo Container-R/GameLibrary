@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "0f6307c7dc20751c988a7dfcd8f6b84871f8f7ee",
+  "publication_base_sha": "d1ce86b72a2a11e69f3faa576de4598a77dc7297",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -91,12 +91,22 @@
         "image_files_published": 0,
         "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
       },
-      "reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
+      "reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
       "visual_structure_support": {
-        "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
-        "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
-        "support": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
-        "scope": "Historical environment-art source and original comparison suggestions; no measured readability or rendering."
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+        "current_review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+        "historical_record": {
+          "source_record": "管理档案/来源笔记/tf2-environment-visual-structure.json",
+          "review": "管理档案/审查/环境细节与明暗分组-来源与读者审查.md",
+          "support": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+          "scope": "Historical environment-art source and original comparison suggestions; no measured readability or rendering."
+        },
+        "path": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+        "material_index_sha256": "3e1e23f93ab128185c268213ebb703cd4202f3804136a4f1f58e289eb9d8ebf2",
+        "pre_retirement_body_sha256": "713cb9c6d268e2925174afca4ee0f5f7afd7f1a488aceb5557472ef101c77087",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/0f6307c7dc20751c988a7dfcd8f6b84871f8f7ee/管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+        "scope": "Former full technical support is now an index. Current complete method has independent full reviews; original identities preserved."
       },
       "interaction_cue_support": {
         "path": "管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
@@ -110,7 +120,8 @@
         "管理档案/审查/模块套件回接-来源与读者审查.md",
         "管理档案/审查/模块楼板厚度-增量审读.md",
         "管理档案/审查/概念图背面外观-图文与读者审查.md",
-        "管理档案/审稿/SOL-ENV-001/20261106-full-article.json"
+        "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
+        "管理档案/审稿/SOL-ENV-002/20261106-full-article.json"
       ],
       "modular_kit_support": {
         "role": "historical-source-and-review",
@@ -153,10 +164,10 @@
         "scope": "Original asset image shows distinct front and rear appearance; limited existing-reader example, not complete structure, measured dimensions or actual handoff outcome."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "03911460c0d28dbc43a2072a4ebd2207256b294456ec62046fa514e3b45dbab8",
-        "current_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
-        "review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
-        "scope": "One reading relation and semantic return label changed; existing concept source and image evidence not recertified."
+        "previous_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
+        "current_reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+        "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+        "scope": "One existing visual-detailing reading paragraph replaced; other concept conclusions are not newly recertified."
       },
       "related_formal_articles": [
         {
@@ -164,6 +175,20 @@
           "path": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
           "review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
           "relationship": "From repeated-module choice to explicit kit interfaces and combination validation."
+        },
+        {
+          "internal_id": "SOL-ENV-002",
+          "path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+          "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+          "relationship": "From concept handoff to comparable scene-detailing checks and material/gameplay trade-offs."
+        }
+      ],
+      "link_revision_history": [
+        {
+          "previous_reader_sha256": "03911460c0d28dbc43a2072a4ebd2207256b294456ec62046fa514e3b45dbab8",
+          "current_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
+          "review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
+          "scope": "One reading relation and semantic return label changed; existing concept source and image evidence not recertified."
         }
       ]
     },
@@ -5110,7 +5135,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Single-document ordinary DOM, dedicated handle, one mouse-left session, no capture transfer, synchronous local accepted move to empty slot; no browser runtime or universal inventory framework claim."
+    },
+    {
+      "internal_id": "SOL-ENV-002",
+      "reader_title": "环境场景细化中的明暗分组与视觉层级检查",
+      "discipline": "美术设计",
+      "direction": "环境设计",
+      "topic": "概念设计",
+      "type": "production-method",
+      "canonical_reader_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+      "current_read_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+      "reader_body_status": "published",
+      "reader_sha256": "c789e155b29670aeff17672b0593a16c6cf94f7d6fe6c46602f139601424c7a3",
+      "editorial_status": "完整有限制作检查方法经独立全文技术、读者任务与盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-ENV-002/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0300/sources.json",
+      "source_sha256": "78fba9cb0601332c9cb2aa50d5b17bc376600ac7b4967ed583b94c4d1066bfe0",
+      "materials_record": "管理档案/研究/TASK-2026-0300/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0300/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-ART2D-001",
+        "SOL-ENV-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Comparable scene views, coupled inputs, local candidates, lighting interaction and material/gameplay trade-offs with final-context regression. Original 2D schematic; no engine or player-effect validation."
     }
   ],
-  "current_batch_scope": "One bounded correlation-scope correction and new version-bound review. No article relocation, new formal article or whole-library acceptance."
+  "current_batch_scope": "One complete scene-detailing method and bounded former visual-structure support migration; remaining object-cue prose explicitly pending. Not whole-library acceptance."
 }

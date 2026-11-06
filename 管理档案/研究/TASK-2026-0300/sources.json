@@ -1,0 +1,116 @@
+{
+  "task_id": "TASK-2026-0300",
+  "article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+  "article_sha256": "c789e155b29670aeff17672b0593a16c6cf94f7d6fe6c46602f139601424c7a3",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "author": "西井智子 / PlatinumGames",
+      "title": "コンセプトアートについて",
+      "version_or_date": "2025-09-19",
+      "url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/article/42",
+      "claims": [
+        {
+          "claim": "Background paintover starts from a whitebox screenshot containing existing mechanisms and enemy placement.",
+          "locator": "背景オーバーペイント",
+          "observed_content": "Original text and the combined whitebox/paintover image were read and viewed.",
+          "article_section": "把“像概念”说成具体关系"
+        }
+      ],
+      "conditions": "Historical production input relationship, not dimensions, final shipped geometry or a controlled comparison.",
+      "visual_evidence": [
+        {
+          "url": "https://www.platinumgames.co.jp/dev-ninjagaiden4/wp-content/uploads/sites/21/2025/09/3b9f50d6adca845a3643ab648459ef0c.png",
+          "sha256": "5d625e765b92dd5a902e4ee3aaf35ef8df1641e00d46958ae5aace8d0797ac2f",
+          "bytes": 3973210,
+          "rechecked_against_original": true
+        }
+      ]
+    },
+    {
+      "article_reference": 2,
+      "author": "Jason Mitchell, Moby Francke, Dhabih Eng / Valve",
+      "title": "Illustrative Rendering in Team Fortress 2",
+      "version_or_date": "NPAR 2007",
+      "url": "https://cdn.fastly.steamstatic.com/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2.pdf",
+      "claims": [
+        {
+          "claim": "Selective geometry repetition and painted texture detail jointly support the project visual style and gameplay priorities.",
+          "locator": "Sections 4.2–4.3; file page 3, Figures 3 and 5",
+          "observed_content": "Concept and in-game cameras differ; the texture example is a flat texture and its three-dimensional application.",
+          "article_section": "把“像概念”说成具体关系"
+        }
+      ],
+      "conditions": "Historical project choices, not a universal low-detail prescription or measured player benefit.",
+      "visual_evidence": [
+        {
+          "url": "https://cdn.fastly.steamstatic.com/apps/valve/2007/NPAR07_IllustrativeRenderingInTeamFortress2.pdf",
+          "sha256": "4645483c9354c756d08788f604a69a5a7d7ecf47338a45de07ba33a222a89ad8",
+          "bytes": 2790576,
+          "rechecked_against_original": true
+        }
+      ]
+    },
+    {
+      "article_reference": 3,
+      "author": "Lydia “PHRISK” Zanotti / Riot Games",
+      "title": "The Art of VALORANT Map Environments",
+      "version_or_date": "2020-11-16, UE4-era project",
+      "url": "https://playvalorant.com/en-us/news/dev/the-art-of-valorant-map-environments/",
+      "claims": [
+        {
+          "claim": "Blockout, continuing layout changes, play checks, material contrast and environment/character information are considered together.",
+          "locator": "AFTER LEVEL DESIGN; MAP FOUNDATIONS; CONSTRUCTION, MINUS THE HARD HATS; MORE ON MAP CLARITY; MAP MOTIFS",
+          "observed_content": "Production article read; stage GIF has GREYBOX, ART BLOCKOUT, ART BLOCKOUT and ART PRODUCTION, with many simultaneous changes.",
+          "article_section": "把“像概念”说成具体关系；墙面安静下来以后，重新放回材料与玩法"
+        }
+      ],
+      "conditions": "All four static frames viewed and matched to original GIF; no playback-timing observation, current-map check or causal/player-effect inference.",
+      "visual_evidence": [
+        {
+          "url": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/12e158ca6619be8b1daa4b35679f3e25609834b3-1755x1024.gif",
+          "sha256": "9730e99e31e769998a39184c5120f7367fa5772bb3cf2c37d62cf2670ebea36d",
+          "bytes": 2076734,
+          "rechecked_against_original": true
+        }
+      ]
+    },
+    {
+      "article_reference": 4,
+      "author": "Epic Games",
+      "title": "Auto Exposure",
+      "version_or_date": "Unreal Engine 5.6",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/auto-exposure-in-unreal-engine?application_version=5.6",
+      "claims": [
+        {
+          "claim": "Global exposure, Local Exposure, editor override and temporal adaptation are distinct controls relevant to comparable views.",
+          "locator": "Manual Algorithm; Local Exposure; Exposure Change Speed and Movement; Editor Viewport Override; Visualization and Debugging",
+          "observed_content": "Read these entries and the pertinent configuration explanations. Fixed global exposure does not automatically remove local processing or an override.",
+          "article_section": "先取得一组可以比较的画面；回归到最终情境，再决定交付什么"
+        }
+      ],
+      "conditions": "Documentation-based tool example. No engine execution, default-project claim, measured luminance or screenshot-effect verification.",
+      "visual_evidence": []
+    },
+    {
+      "article_reference": 5,
+      "author": "Epic Games",
+      "title": "Viewport Modes",
+      "version_or_date": "Unreal Engine 5.6",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/viewport-modes-in-unreal-engine?application_version=5.6",
+      "claims": [
+        {
+          "claim": "Detail Lighting uses neutral material while retaining normal maps; Lighting Only does not show those normal maps. Base Color and Roughness display inputs.",
+          "locator": "Lit; Detail Lighting; Lighting Only; Buffer Visualization: Base Color and Roughness",
+          "observed_content": "Original corresponding text directly read; diagnostic mode differences are clues rather than independent decompositions of the final render.",
+          "article_section": "从异常关系选下一次比较"
+        }
+      ],
+      "conditions": "Check actual special shading paths and engine version. No universal Unlit claim, physical-brightness measurement or source-code/engine test.",
+      "visual_evidence": []
+    }
+  ],
+  "original_work": "Finite entrance task, paired comparison method, local candidates, interaction check, material/gameplay trade-offs, and original two-dimensional schematic. Not attributed as a studio internal procedure.",
+  "limits": "Original two-dimensional drawing only. No game, renderer, DCC, material, lighting, physics, performance or human experiment. Original historical images used only for research, not redistributed."
+}

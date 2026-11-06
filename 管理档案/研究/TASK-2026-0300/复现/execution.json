@@ -1,0 +1,12 @@
+{
+  "article_sha256": "c789e155b29670aeff17672b0593a16c6cf94f7d6fe6c46602f139601424c7a3",
+  "script_sha256": "2b9bd8ca39ba53cb4b89a284a2e8edfa863a589407ae40d7f165aa293256eb9a",
+  "original_author_script_sha256": "207b66817007653136975c667549ff38ec0906adab83466eab35df5f128d9139",
+  "script_preparation": "Only two fixed temporary-cache defaults and their unused os import removed; drawing inputs and logic identical.",
+  "actual_run": "Python with existing Matplotlib, offline in an isolated output directory.",
+  "png_sha256": "ffcfec0a83b9c59123c4071983d9bbec84b3ad88f98ad0bc8b45ae56ba33938b",
+  "fresh_png_matches_reviewed_image_bytes": true,
+  "svg_byte_identity_claimed": false,
+  "svg_identity_note": "Generation date metadata and internal identifiers may vary. Published SVG is the unchanged independently reviewed artifact.",
+  "limits": "Original two-dimensional drawing only. No game, renderer, DCC, material, lighting, physics, performance or human experiment."
+}

@@ -1,0 +1,110 @@
+{
+  "article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+  "article_sha256": "c789e155b29670aeff17672b0593a16c6cf94f7d6fe6c46602f139601424c7a3",
+  "publication_kind": "complete-scene-visual-hierarchy-method",
+  "author": "GameLibrary editorial author",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-scene-hierarchy-technical-20261106",
+      "method": "Independent full text, primary production sources and actual original/source visual review with a distinct counterexample",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ENV-002/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-scene-hierarchy-reader-20261106",
+      "method": "Independent full text and figures, unseen pump-station task and self-selected reflective/shared-material task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ENV-002/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-scene-hierarchy-navigation-20261106",
+      "method": "Blind root-to-article traversal, actual returns, scoped linked-material inspection and independent merge decision",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-ENV-002/20261106-full-article.md"
+    }
+  ],
+  "article_figure_fingerprints": [
+    {
+      "path": "GameLibrary/美术设计/环境设计/概念设计/examples/value-group-comparison.svg",
+      "sha256": "2c733f9910c03c8fef37ddfdf941d02eb51d4d0e9065d532bb0e202f8466b783",
+      "bytes": 82123
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0300/sources.json",
+      "sha256": "78fba9cb0601332c9cb2aa50d5b17bc376600ac7b4967ed583b94c4d1066bfe0"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0300/materials.json",
+      "sha256": "2ca8d861ba1f16e2f82d45ec189e3f814ed11fe555c807cc9bb7feeecaa0d667"
+    }
+  ],
+  "report_sha256": "05be2c7a0155ab6e5116d0d5bb1752fd0888acf1304751a346a983f29b23e838",
+  "scope_record": "管理档案/研究/TASK-2026-0300/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "83d05b4327bfeab3af3fed9e54e2d93559858f15db99b476adf39950d8640100"
+    },
+    {
+      "path": "GameLibrary/美术设计/README.md",
+      "sha256": "114d3d9959c1f87f1b32d327eb902d9b3be0cbfaa5d2bbcc0e48bafa44f0a022"
+    },
+    {
+      "path": "GameLibrary/美术设计/环境设计/README.md",
+      "sha256": "a496243b2d37f026a0b2cc2ae09e1afccbbd1b1b794f4f1b96f69ae5f61a980e"
+    },
+    {
+      "path": "GameLibrary/美术设计/环境设计/概念设计/README.md",
+      "sha256": "a1598052a2bb3c1cc8f0f2f3aa053b425300dae4d667653e5b38e579e2b0752f"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/概念图里的大块明暗，为什么加完细节后反而看不见了.md",
+      "sha256": "3e1e23f93ab128185c268213ebb703cd4202f3804136a4f1f58e289eb9d8ebf2"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0300/复现/draw_comparison.py",
+      "sha256": "2b9bd8ca39ba53cb4b89a284a2e8edfa863a589407ae40d7f165aa293256eb9a",
+      "bytes": 3721
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0300/复现/README.md",
+      "sha256": "1f2d913d3cbc858395afba092ccf36177d9bfdf3924b5f7ce3720c8cc7daa0c7",
+      "bytes": 2261
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0300/复现/execution.json",
+      "sha256": "610a1cedee726ca46cb1d30dfdca6b1aea44b98daa4e7520bf9d1637cb24eb0c",
+      "bytes": 975
+    }
+  ],
+  "host_revisions": [
+    {
+      "path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+      "sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+      "previous_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
+      "scope": "Only the visual-detailing reading relation is replaced. Other concept prose, historical source and image identities remain unchanged."
+    }
+  ],
+  "known_remaining_gap": {
+    "path": "管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
+    "sha256": "b700b236c1e9269fc105ea0f8e92e1c4a27273a98fb7c57eebb599c3b82d2bf5",
+    "task_id": "TASK-2026-0301",
+    "reason": "Complete object interaction cue prose remains in the historical support location; separately scope, source-check and migrate it."
+  },
+  "limits": "Original two-dimensional drawing only. No game, renderer, DCC, material, lighting, physics, performance or human experiment. Independent model reviews, not human trials or whole-library acceptance.",
+  "updated_at": "2026-11-06T17:18:00Z"
+}
