@@ -1,0 +1,49 @@
+{
+  "run_id": "20261106T075239Z-box2d-convex-distance",
+  "started_at": "2026-11-06T07:45:00Z",
+  "ended_at": "2026-11-06T07:55:13Z",
+  "task_id": "TASK-2026-0008",
+  "actions": [
+    "Compared existing physical detection, filtering and sensor-lifetime material before selecting a distinct optional geometry question.",
+    "Read fixed Box2D v3.2.0 header, implementation and documentation, retaining the actual relative-transform API.",
+    "Separated convex-core witnesses, radius subtraction, clamped scalar separation and shifted perimeter points.",
+    "Wrote original unexecuted capsule/circle geometry for three positive core gaps with explicit zero-normal and early-return limits.",
+    "Added conditional reader and shelf entries without inheriting native sensor evidence or adding a canonical book."
+  ],
+  "sources_examined": [
+    "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/collision.h",
+    "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/distance.c",
+    "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/collision.md"
+  ],
+  "evidence_added": [
+    "管理档案/来源笔记/box2d-convex-core-radii.json",
+    "管理档案/审查/Box2D凸距离-源码与读者审查.md"
+  ],
+  "files_changed": [
+    ".agent/queue.json",
+    ".agent/runs/20261106T075239Z-box2d-convex-distance.json",
+    ".agent/state.json",
+    "GameLibrary/玩法程序/玩法系统/物理检测/README.md",
+    "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+    "管理档案/图书目录.json",
+    "管理档案/审查/Box2D凸距离-源码与读者审查.md",
+    "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+    "管理档案/来源笔记/box2d-convex-core-radii.json"
+  ],
+  "commit_sha": null,
+  "base_commit_sha": "bffe87cef4884421ec97a934bafb9713d3f62e39",
+  "commit_note": "Containing commit identifies this publication. Remote confirmation is performed after publication.",
+  "validation": {
+    "source_review": "three fixed Box2D v3.2.0 source/documentation files",
+    "independent_reader_review": "accepted bounded capsule/circle geometry, conditional navigation and separate sensor evidence",
+    "counts": {
+      "frozen": 55,
+      "total": 111,
+      "post_baseline": 56
+    },
+    "limits": "No Box2D compilation or execution, game, image, performance or human test; original paper geometry only."
+  },
+  "blockers": [],
+  "next_action": "Compare existing depth-distance, conservative depth-pyramid and shadow-lattice readers with primary comparison-filter sampling documentation. Determine whether compare-then-filter versus filter-then-compare adds a distinct practical boundary; preserve comparison direction, sampler scope and no-GPU/no-image limits.",
+  "outcome": "Existing-physics reader gains a distinct optional fixed-version convex-distance boundary without a new canonical book."
+}

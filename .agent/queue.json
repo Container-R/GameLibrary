@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T07:41:33Z",
-      "next_action": "Inspect existing physical-detection and Box2D supports against fixed convex-distance documentation and source. Determine whether core-shape closest points, optional shape radii and clamped surface separation provide a distinct useful question; do not repeat CCD, filter or sensor-lifetime coverage, or infer penetration depth and runtime results.",
+      "last_progress_at": "2026-11-06T07:55:13Z",
+      "next_action": "Compare existing depth-distance, conservative depth-pyramid and shadow-lattice readers with primary comparison-filter sampling documentation. Determine whether compare-then-filter versus filter-then-compare adds a distinct practical boundary; preserve comparison direction, sampler scope and no-GPU/no-image limits.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -426,7 +426,10 @@
         "管理档案/来源笔记/unity-chunk-change-filter.json",
         "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
         "管理档案/支持资料/D3D12两张纹理共用显存，为什么不能只切换状态.md",
-        "管理档案/来源笔记/d3d12-placed-resource-aliasing.json"
+        "管理档案/来源笔记/d3d12-placed-resource-aliasing.json",
+        "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+        "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+        "管理档案/来源笔记/box2d-convex-core-radii.json"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

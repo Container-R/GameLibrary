@@ -1,0 +1,87 @@
+{
+  "reader_path": "GameLibrary/玩法程序/玩法系统/物理检测/物体穿过触发区却没有事件时，先检查什么.md",
+  "support_path": "管理档案/支持资料/Box2D距离为零，为什么两个返回点还不重合.md",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "upstream_version": "Box2D v3.2.0",
+  "upstream_commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+  "scope": "Original capsule/circle core geometry and ordinary separated-core radius post-processing; not complete GJK, native execution, sensor evidence or penetration solver.",
+  "sources": [
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/include/box2d/collision.h",
+      "path": "include/box2d/collision.h",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "blob_sha": "1fe93d0b40c552d87b67bcd372c174afc7113a2d",
+      "locator": "b2ShapeProxy 41–57; cache/input/output and declaration 372–440",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/src/distance.c",
+      "path": "src/distance.c",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "blob_sha": "9666a721bf4e09e78f463763a8a7690b0e083cfe",
+      "locator": "b2ComputeWitnessPoints 220–247; b2ComputeShapeDistance 424–611, including early returns and radius post-processing",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Erin Catto and Box2D contributors",
+      "url": "https://github.com/erincatto/box2d/blob/178495ba35695aefe9c321e569d2277f06db3b90/docs/collision.md",
+      "path": "docs/collision.md",
+      "commit": "178495ba35695aefe9c321e569d2277f06db3b90",
+      "blob_sha": "63734792bd84870731b97cec86dc033d5bfd96a0",
+      "locator": "Distance 257–264",
+      "read_on": "2026-11-06"
+    }
+  ],
+  "paper_example": {
+    "A_core": [
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "B_core_local": [
+      0,
+      0
+    ],
+    "B_in_A_translation_x": [
+      3,
+      2,
+      1.5
+    ],
+    "rotation": "identity",
+    "radii": [
+      1,
+      1
+    ],
+    "core_gap": [
+      3,
+      2,
+      1.5
+    ],
+    "clamped_gap": [
+      1,
+      0,
+      0
+    ],
+    "shifted_witness_length": [
+      1,
+      0,
+      0.5
+    ],
+    "execution": "not executed; original geometry and selected source branch arithmetic"
+  },
+  "limitations": [
+    "Zero final distance has no valid output-normal guarantee.",
+    "Core-overlap and tiny-direction early returns bypass the radius post-processing.",
+    "Both points and normal are expressed in A frame at this fixed API revision.",
+    "No Box2D compilation or execution, physics world, image, performance or human test.",
+    "No transfer of existing sensor native observations to distance query."
+  ]
+}
