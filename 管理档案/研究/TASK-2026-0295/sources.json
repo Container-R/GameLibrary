@@ -1,0 +1,166 @@
+{
+  "task_id": "TASK-2026-0295",
+  "article_path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+  "article_sha256": "9a228cde8212d8013f2590ec5a0d8d54c3f24528a0f7917895e6f5692a47372f",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "authors": [
+        "Microsoft Experimentation Platform"
+      ],
+      "title": "Patterns of Trustworthy Experimentation: Pre-Experiment Stage",
+      "publication_date": "2020-07-31",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-pre-experiment-stage/",
+      "read_locator": "Formulate your Hypothesis and Success Metrics; Choose the Appropriate Unit of Randomization; opening of Set Up Counterfactual Logging.",
+      "supports": "Predefined question and metric, stable randomization identity and network/interference boundaries.",
+      "limits": "No source-image claim, Seedfinder, CUPED or triggered-analysis implementation.",
+      "article_sections": [
+        "先确定哪些玩家、哪些开始和哪些结果属于比较",
+        "要估计的是两种政策所产生场次的比例",
+        "在出报告前，判断这套近似是否值得采用"
+      ]
+    },
+    {
+      "article_reference": 2,
+      "authors": [
+        "Ramesh Johari",
+        "Leo Pekelis",
+        "David Walsh"
+      ],
+      "title": "Always Valid Inference: Continuous Monitoring of A/B Tests",
+      "version": "arXiv:1512.04922v3, 2019-07-16",
+      "url": "https://arxiv.org/html/1512.04922v3",
+      "read_locator": "Section3 decision rule, fixed-horizon testing and interval; section4 definitions4.1 and4.4.",
+      "supports": "Fixed-endpoint guarantees do not automatically extend to outcome-dependent stopping.",
+      "limits": "No sequential algorithm, source figure, platform result or old enumeration reproduced.",
+      "article_sections": [
+        "先确定哪些玩家、哪些开始和哪些结果属于比较",
+        "在出报告前，判断这套近似是否值得采用"
+      ]
+    },
+    {
+      "article_reference": 3,
+      "authors": [
+        "Aleksander Fabijan",
+        "Jayant Gupchup",
+        "Somit Gupta",
+        "Jeff Omhover",
+        "Wen Qin",
+        "Lukas Vermeer",
+        "Pavel Dmitriev"
+      ],
+      "title": "Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners",
+      "event": "KDD 2019",
+      "doi": "10.1145/3292500.3330722",
+      "url": "https://exp-platform.com/Documents/2019_KDDFabijanGupchupFuptaOmhoverVermeerDmitriev.pdf",
+      "read_locator": "Sections2.2–2.3.2,4.4,5.3.",
+      "supports": "Distinguish assignment, logging and analysis selection; failed joins and missing observations need diagnosis.",
+      "limits": "No SRM test or company alert-rate claim. Personal-use PDF not redistributed.",
+      "article_sections": [
+        "先确定哪些玩家、哪些开始和哪些结果属于比较"
+      ]
+    },
+    {
+      "article_reference": 4,
+      "authors": [
+        "Ron Kohavi",
+        "Roger Longbotham",
+        "Toby Walker"
+      ],
+      "title": "Online Experiments: Practical Lessons",
+      "publication": "IEEE Computer, September2010, pages82–85",
+      "url": "https://www.exp-platform.com/Documents/IEEE2010ExP.pdf",
+      "read_locator": "Printed page83 LIMITATIONS OF STATISTICAL FORMULAS and adjacent Data loss/Event tracking.",
+      "supports": "Repeated observations within a user can be correlated; independent-Bernoulli precision cannot be assumed.",
+      "limits": "Text reading only. No source-image inspection, multiplier transplanted to games or bootstrap implementation.",
+      "article_sections": [
+        "玩家账表保留了场次权重"
+      ]
+    },
+    {
+      "article_reference": 5,
+      "authors": [
+        "Alex Deng",
+        "Ulf Knoblich",
+        "Jiannan Lu"
+      ],
+      "title": "Applying the Delta Method in Metric Analytics: A Practical Guide with Novel Ideas",
+      "event": "KDD 2018, pages233–242",
+      "doi": "10.1145/3219819.3219919",
+      "url": "https://alexdeng.github.io/public/files/kdd2018-dm.pdf",
+      "read_locator": "Sections1.2,2.1 including footnote4,2.2 equations3–4,3.1–3.2 equation6. Physical pages3–4 / printed235–236 personally viewed by author and technical reviewer.",
+      "supports": "Randomization versus metric unit; ratio linearization and numerator-denominator covariance. The article independently states its iid player model and derives residual and absolute-difference forms.",
+      "limits": "Equation4 is relative change with minus1, not a single-arm ratio. No finite-sample unbiasedness, simulation-based player threshold, Algorithm1 or source-software reproduction claimed.",
+      "article_sections": [
+        "要估计的是两种政策所产生场次的比例",
+        "用玩家残差计算比例的近似方差",
+        "两臂组合，并把每一步对回账表"
+      ]
+    },
+    {
+      "article_reference": 6,
+      "authors": [
+        "Pavel Dmitriev",
+        "Somit Gupta",
+        "Dong Woo Kim",
+        "Garnet Vaz"
+      ],
+      "title": "A Dirty Dozen: Twelve Common Metric Interpretation Pitfalls in Online Controlled Experiments",
+      "event": "KDD 2017",
+      "doi": "10.1145/3097983.3098024",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2020/08/2017-08-KDDMetricInterpretationPitfalls.pdf",
+      "read_locator": "Sections4,5.1–5.3; physical page4 actually viewed.",
+      "supports": "Distinguish average user proportions from ratio of totals and interpret numerator and denominator together.",
+      "limits": "Not a game experiment. Does not establish that user weighting is always preferable or that all changing-denominator targets are invalid.",
+      "article_sections": [
+        "比例改善和人均完成减少可以同时发生"
+      ]
+    },
+    {
+      "article_reference": 7,
+      "authors": [
+        "Microsoft Experimentation Platform"
+      ],
+      "title": "Patterns of Trustworthy Experimentation: Post-Experiment Stage",
+      "publication_date": "2021-12-24",
+      "url": "https://www.microsoft.com/en-us/research/articles/patterns-of-trustworthy-experimentation-post-experiment-stage/",
+      "read_locator": "Check for any Telemetry-Breaking Changes; Check for Imbalance in Metric Observation Units; related triggered-analysis text.",
+      "supports": "Check measurement changes and changing observation-unit counts separately.",
+      "limits": "No source-image claim, triggered estimator or post-hoc replacement of the primary metric.",
+      "article_sections": [
+        "比例改善和人均完成减少可以同时发生"
+      ]
+    }
+  ],
+  "source_visual_identity": [
+    {
+      "url": "https://alexdeng.github.io/public/files/kdd2018-dm.pdf",
+      "pdf_sha256": "6778797c3b6a5ec5f9bc4713f64720cdb57e66caa235da2f8c5a480fe062fdff",
+      "actually_viewed_pages": [
+        {
+          "label": "kdd2018-03.png",
+          "render_sha256": "6dba9a81e2cb13078555a39caa5a91f4f52355e47709f0db6023471a78117097"
+        },
+        {
+          "label": "kdd2018-04.png",
+          "render_sha256": "6ab53f16911e9c00f4eefdb5724d98982fbea0e7b9ff1b69a20690f91ad45e3e"
+        }
+      ],
+      "scope": "Actual formula/image reading; source PDF and page images not redistributed."
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2020/08/2017-08-KDDMetricInterpretationPitfalls.pdf",
+      "pdf_sha256": "b5383e3f869f67719c8b881396d64120501b9ec2f02f9dc6fd3f38858990f781",
+      "actually_viewed_pages": [
+        {
+          "label": "kdd2017-04.png",
+          "render_sha256": "a813ccff3e36dd8644721e4c34b823f73a5276d5aa69da028f02327dabaa5b87"
+        }
+      ],
+      "scope": "Actual formula/image reading; source PDF and page images not redistributed."
+    }
+  ],
+  "original_work": "Player potential-aggregate model, half-open observation windows, twelve-player teaching ledger, residual derivation, zero-versus-unknown branches and absolute two-arm comparison are original exposition, not a reported game experiment.",
+  "limits": "Primary-source text and selected actual formula images plus deterministic arithmetic and independent model review. No actual players, live experiment, production query, statistical-platform run, confidence-coverage calibration or human study."
+}

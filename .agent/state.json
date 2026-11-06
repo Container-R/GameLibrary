@@ -3,29 +3,29 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [
-    "TASK-2026-0295"
+    "TASK-2026-0296"
   ],
-  "last_completed_task_id": "TASK-2026-0294",
-  "last_real_progress_at": "2026-11-06T14:10:54Z",
-  "last_commit_sha": "a5357670df6f02f652e4c1d445c2f6c0478261ec",
+  "last_completed_task_id": "TASK-2026-0295",
+  "last_real_progress_at": "2026-11-06T14:35:50Z",
+  "last_commit_sha": "5e06703aef32594e35cf8df1faee8e0545112385",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json"
   },
   "publication": {
-    "kind": "complete-modular-environment-interface-method",
-    "article": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
-    "article_sha256": "5875e0272f4018eab207bef519057e183fdd514488a94532b22e881f5dc2b472",
-    "previous_verified_head": "a5357670df6f02f652e4c1d445c2f6c0478261ec",
+    "kind": "complete-player-randomized-session-ratio-method",
+    "article": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+    "article_sha256": "9a228cde8212d8013f2590ec5a0d8d54c3f24528a0f7917895e6f5692a47372f",
+    "previous_verified_head": "5e06703aef32594e35cf8df1faee8e0545112385",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "Complete finite method and bounded migration; not whole environment discipline or library acceptance."
+    "scope": "One complete finite statistical method and bounded migration; not whole data discipline or library acceptance."
   },
-  "next_action": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods.",
+  "next_action": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting.",
   "pending_topics": [
     {
-      "task_id": "TASK-2026-0295",
-      "question": "按玩家分组后，怎样比较场次完成率，同时分清活动量变化与单场改善？"
+      "task_id": "TASK-2026-0296",
+      "question": "小型可玩版本怎样把验收条件、任务依赖与共享资源接成可执行的交付计划？"
     },
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",

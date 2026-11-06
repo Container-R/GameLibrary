@@ -10208,15 +10208,40 @@
       "reader": "具备均值、方差和基础A/B知识的游戏数据分析师与数据工程师。",
       "scope": "Fixed-endpoint two-arm ratio comparison from complete player aggregates under explicitly independent-player model. Explain weighting, two-arm uncertainty and changing denominators; preserve separate missing-data, stopping and interference methods.",
       "expected_outcome": "Complete comparison and interpretation method, grounded in primary sources and original input, with independent full technical, reader and navigation review.",
-      "next_action": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods.",
+      "next_action": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0295/sources.json",
+        "管理档案/研究/TASK-2026-0295/materials.json",
+        "管理档案/研究/TASK-2026-0295/范围与保留.md",
+        "管理档案/审稿/SOL-DATA-002/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T14:35:50Z",
+      "related_task_ids": [
+        "TASK-2026-0294"
+      ],
+      "article_path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+      "review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0296",
+      "question": "小型可玩版本怎样把验收条件、任务依赖与共享资源接成可执行的交付计划？",
+      "reader": "承担小型游戏可玩版本交付的制作人与跨专业负责人。",
+      "scope": "Compare current dependency and scheduling material, then research a finite acceptance-to-activity-to-resource-feasible-plan workflow. Distinguish precedence lower bounds, resource choices, uncertainty and actual acceptance; do not fold unfinished-work averages or player-research methods into scheduling.",
+      "expected_outcome": "A source-grounded finite production method if discovery supports it, with an independent new planning task and full technical, reader and navigation review before publication.",
+      "next_action": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting.",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T14:10:54Z",
+      "updated_at": "2026-11-06T14:35:50Z",
       "related_task_ids": [
-        "TASK-2026-0294"
+        "TASK-2026-0295"
       ]
     }
   ],
@@ -10224,7 +10249,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Write the player-randomized session-completion ratio comparison from the completed discovery package, including zero-session versus missing players, two-arm uncertainty, fixed windows and denominator interpretation; preserve existing count and adjacent-design methods."
+    "next_priority": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

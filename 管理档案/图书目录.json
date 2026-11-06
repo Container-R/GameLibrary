@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "a5357670df6f02f652e4c1d445c2f6c0478261ec",
+  "publication_base_sha": "5e06703aef32594e35cf8df1faee8e0545112385",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -259,7 +259,7 @@
       "scope_disposition_review": "管理档案/审查/游戏数据分析师-独立审读.md",
       "historical_body_path": "管理档案/历史正文/roles/data/game-data-analyst.md",
       "legacy_retention": "完整旧技术上下文归入历史正文；现行读者正文不变。历史审查绑定保留原字节含义。",
-      "reader_sha256": "8ea28e3131de4f48fa16f5967768741376dea3b4a325c8dd9320b84f47450c14",
+      "reader_sha256": "7484668c15c9d805fb4995cf0bb1c164025b1454b8a68b9d4b03a44c43d469df",
       "steam_traffic_support": {
         "scope": "Existing two-report set and classification analysis rewritten for readers; no actual account results.",
         "support_path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
@@ -300,23 +300,61 @@
         "scope": "Optional support and one reader entry; original UTC interval reasoning with rolling primary documentation. No analytics service or player data."
       },
       "experiment_unit_support": {
-        "path": "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
-        "sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
-        "previous_host_sha256": "8fb692f42d8ef39e26db60b1cf4017a3fa9f7e4aecad8ff0e363de81f36a9104",
-        "source_record": "管理档案/来源笔记/experiment-assignment-unit.json",
-        "review": "管理档案/审查/玩家实验分配与场次记录-读者审查.md",
-        "scope": "Original finite assignment enumeration and primary statistical-method reading; no real experiment or asymptotic validation.",
-        "ratio_variance_appendix": {
-          "path": "管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md",
-          "sha256": "9fe49f8c04a04e0d65a100b09aef376152aeb5d57ef8dbb905ce62016cd47d0d",
-          "previous_parent_support_sha256": "0dd91a8a5dd120a4dcbca9f63f35d231f65aa8ae4e4c892913f6a9503ed124c7",
-          "current_parent_support_sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
-          "arithmetic_check": "管理档案/支持资料/玩家完成率近似方差/check_algebra.py",
-          "source_record": "管理档案/来源笔记/cluster-ratio-variance.json",
-          "review": "管理档案/审查/玩家完成率近似方差-数学与读者审查.md",
-          "scope": "One-arm iid-pair derivation and deterministic exact arithmetic; no finite-sample calibration or real experiment."
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+        "current_review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+        "historical_record": {
+          "path": "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
+          "sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
+          "previous_host_sha256": "8fb692f42d8ef39e26db60b1cf4017a3fa9f7e4aecad8ff0e363de81f36a9104",
+          "source_record": "管理档案/来源笔记/experiment-assignment-unit.json",
+          "review": "管理档案/审查/玩家实验分配与场次记录-读者审查.md",
+          "scope": "Original finite assignment enumeration and primary statistical-method reading; no real experiment or asymptotic validation.",
+          "ratio_variance_appendix": {
+            "path": "管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md",
+            "sha256": "9fe49f8c04a04e0d65a100b09aef376152aeb5d57ef8dbb905ce62016cd47d0d",
+            "previous_parent_support_sha256": "0dd91a8a5dd120a4dcbca9f63f35d231f65aa8ae4e4c892913f6a9503ed124c7",
+            "current_parent_support_sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
+            "arithmetic_check": "管理档案/支持资料/玩家完成率近似方差/check_algebra.py",
+            "source_record": "管理档案/来源笔记/cluster-ratio-variance.json",
+            "review": "管理档案/审查/玩家完成率近似方差-数学与读者审查.md",
+            "scope": "One-arm iid-pair derivation and deterministic exact arithmetic; no finite-sample calibration or real experiment."
+          }
+        },
+        "material_indexes": [
+          {
+            "path": "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
+            "material_index_sha256": "4dba4073ed244df6b1dd6f43d342b180eaffcae99d181f45350c47c49e947ad4",
+            "pre_retirement_body_sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
+            "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md"
+          },
+          {
+            "path": "管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md",
+            "material_index_sha256": "cde6e4993bfda5b5ee9844fb33235f00d4438c7f1cfab2572ceb49ea96589398",
+            "pre_retirement_body_sha256": "9fe49f8c04a04e0d65a100b09aef376152aeb5d57ef8dbb905ce62016cd47d0d",
+            "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md"
+          }
+        ],
+        "scope": "Complete original unit-support object and nested ratio-variance appendix preserved, including earlier parent revision hashes; old finite reviews do not certify the new method."
+      },
+      "review_paths": [
+        "管理档案/审稿/SOL-DATA-002/20261106-full-article.json"
+      ],
+      "latest_link_revision": {
+        "previous_reader_sha256": "8ea28e3131de4f48fa16f5967768741376dea3b4a325c8dd9320b84f47450c14",
+        "current_reader_sha256": "7484668c15c9d805fb4995cf0bb1c164025b1454b8a68b9d4b03a44c43d469df",
+        "review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+        "scope": "One method reading relation and return label only; other content and old source evidence not recertified."
+      },
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-DATA-002",
+          "path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+          "review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+          "relationship": "From original player assignment and reliable session counts to an explicitly scoped two-arm ratio comparison."
         }
-      }
+      ],
+      "updated_at": "2026-11-06"
     },
     {
       "internal_id": "ROLE-DESIGN-001",
@@ -1554,13 +1592,31 @@
         "source": "E. H. Simpson 1951, sections8–11; original strict-reversal example distinct from paper tables.",
         "execution": "Independent ideal arithmetic and source reading only; no statistical model or player data."
       },
-      "reader_sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+      "reader_sha256": "77497f2e42d1dc5ebffa6560f0a767cdcf7192ad9282b86f93def0e718cf9b49",
       "observation_inference_support": {
         "source_record": "管理档案/来源笔记/completion-observation-and-inference.json",
         "review": "管理档案/审查/完成比例与未来判断-来源与读者审查.md",
         "support": "管理档案/支持资料/十次都过关，为什么还不能说以后一定过关.md",
         "scope": "Declared toy-model conditional probabilities; not player inference or a confidence procedure."
-      }
+      },
+      "review_paths": [
+        "管理档案/审稿/SOL-DATA-002/20261106-full-article.json"
+      ],
+      "latest_link_revision": {
+        "previous_reader_sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+        "current_reader_sha256": "77497f2e42d1dc5ebffa6560f0a767cdcf7192ad9282b86f93def0e718cf9b49",
+        "review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+        "scope": "One method reading relation and return label only; other content and old source evidence not recertified."
+      },
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-DATA-002",
+          "path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+          "review": "管理档案/审稿/SOL-DATA-002/20261106-full-article.json",
+          "relationship": "From original player assignment and reliable session counts to an explicitly scoped two-arm ratio comparison."
+        }
+      ],
+      "updated_at": "2026-11-06"
     },
     {
       "internal_id": "SOL-DESIGN-001",
@@ -4803,7 +4859,33 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Defined orthogonal room/corridor ports, assembly transforms, phase reachability, occupancy, floor ownership, error diagnosis and handoff. Original geometric method, not actual engine or production acceptance."
+    },
+    {
+      "internal_id": "SOL-DATA-002",
+      "reader_title": "按玩家分组的场次完成率比较",
+      "discipline": "数据分析",
+      "direction": "实验分析",
+      "topic": "统计推断",
+      "type": "statistical-method",
+      "canonical_reader_path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+      "current_read_path": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+      "reader_body_status": "published",
+      "reader_sha256": "9a228cde8212d8013f2590ec5a0d8d54c3f24528a0f7917895e6f5692a47372f",
+      "editorial_status": "完整有限比例比较方法经独立全文、读者任务和盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-DATA-002/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0295/sources.json",
+      "source_sha256": "711052b8b1779b11980a9f4507f985a7d1b3be3ff4f18c9bff9e6e2c3a1c0a0f",
+      "materials_record": "管理档案/研究/TASK-2026-0295/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0295/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-DATA-001",
+        "SOL-DATA-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Fixed-endpoint two-arm session-weighted ratio difference from complete original player aggregates under independent iid potential-player model; residual variance, zero versus unknown, changing-denominator interpretation and adoption limits. Not finite-population exact randomization or coverage validation."
     }
   ],
-  "current_batch_scope": "One modular-environment interface method with required original figures and finite concept-host/support/navigation migration. Other concept support and library debt remain scoped separately."
+  "current_batch_scope": "One full player-level ratio-comparison method, two bounded host relations and two historical support indexes. Other data-analysis methods and v2 debt remain scoped separately."
 }

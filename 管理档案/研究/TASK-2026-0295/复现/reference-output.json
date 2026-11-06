@@ -1,0 +1,103 @@
+{
+  "scope": "Arithmetic only; no coverage calibration, significance test, or launch decision",
+  "model_required": "Independent iid player potential-outcome vectors and outcome-independent simple assignment; not finite-population exact randomization variance",
+  "groups": {
+    "C": {
+      "players": 6,
+      "total_successes": 8,
+      "total_starts": 16,
+      "zero_start_players": 1,
+      "zero_start_fraction": "1/6",
+      "mean_successes": "4/3",
+      "mean_starts": "8/3",
+      "ratio": "1/2",
+      "maximum_player_start_share": "1/2",
+      "residuals": [
+        {
+          "player": "C0",
+          "value": "0"
+        },
+        {
+          "player": "C1",
+          "value": "1/2"
+        },
+        {
+          "player": "C2",
+          "value": "1"
+        },
+        {
+          "player": "C3",
+          "value": "0"
+        },
+        {
+          "player": "C4",
+          "value": "-1"
+        },
+        {
+          "player": "C5",
+          "value": "-1/2"
+        }
+      ],
+      "residual_sum": "0",
+      "residual_sum_squares": "5/2",
+      "residual_sample_variance": "1/2",
+      "success_sample_variance": "22/15",
+      "start_sample_variance": "26/3",
+      "success_start_sample_covariance": "47/15",
+      "ratio_variance_plugin": "3/256",
+      "ratio_variance_covariance_check": "3/256"
+    },
+    "T": {
+      "players": 6,
+      "total_successes": 5,
+      "total_starts": 8,
+      "zero_start_players": 1,
+      "zero_start_fraction": "1/6",
+      "mean_successes": "5/6",
+      "mean_starts": "4/3",
+      "ratio": "5/8",
+      "maximum_player_start_share": "3/8",
+      "residuals": [
+        {
+          "player": "T0",
+          "value": "0"
+        },
+        {
+          "player": "T1",
+          "value": "3/8"
+        },
+        {
+          "player": "T2",
+          "value": "3/8"
+        },
+        {
+          "player": "T3",
+          "value": "-1/4"
+        },
+        {
+          "player": "T4",
+          "value": "-7/8"
+        },
+        {
+          "player": "T5",
+          "value": "3/8"
+        }
+      ],
+      "residual_sum": "0",
+      "residual_sum_squares": "5/4",
+      "residual_sample_variance": "1/4",
+      "success_sample_variance": "1/6",
+      "start_sample_variance": "16/15",
+      "success_start_sample_covariance": "4/15",
+      "ratio_variance_plugin": "3/128",
+      "ratio_variance_covariance_check": "3/128"
+    }
+  },
+  "comparison": {
+    "T_minus_C": "1/8",
+    "difference_percentage_points": "25/2",
+    "variance_plugin": "9/256",
+    "standard_error_plugin": 0.1875,
+    "standard_error_percentage_points": 18.75
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "base_commit": "5e06703aef32594e35cf8df1faee8e0545112385",
+  "base_tree": "976d3ceae855225d42459f13af430928e68c0672",
+  "historical_materials": [
+    {
+      "path": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+      "sha256": "8ea28e3131de4f48fa16f5967768741376dea3b4a325c8dd9320b84f47450c14",
+      "git_blob_sha1": "f9d554755cfe2256e8fbcf03d1d475be41531b9d",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md"
+    },
+    {
+      "path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+      "sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+      "git_blob_sha1": "d42f8b6f43b92cf71ca8a754ee6a747471e5e90c",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md"
+    },
+    {
+      "path": "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
+      "sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580",
+      "git_blob_sha1": "13dc9ad6b936a47a3b832dbc0a6a57871b54d521",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md"
+    },
+    {
+      "path": "管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md",
+      "sha256": "9fe49f8c04a04e0d65a100b09aef376152aeb5d57ef8dbb905ce62016cd47d0d",
+      "git_blob_sha1": "dffe3ba517ebb42a9828eb8166de43497c8b0eb1",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md"
+    },
+    {
+      "path": "管理档案/审查/游戏数据分析师-独立审读.md",
+      "sha256": "190bda5c43c80337c47180efdb434fc1c9a9e8c77553f1d42811bf08711d831f",
+      "git_blob_sha1": "592334623d1e441368b353dc438a086ff7d0e764",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/游戏数据分析师-独立审读.md"
+    },
+    {
+      "path": "管理档案/历史正文/roles/data/game-data-analyst.md",
+      "sha256": "88c1e2a82b6c6c7256201d58f653f8a1e6ad8bbb84233cd56b8891104d36b96f",
+      "git_blob_sha1": "c94b33d99f47cba44a5f720f9b21c705724bf4bc",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/历史正文/roles/data/game-data-analyst.md"
+    },
+    {
+      "path": "管理档案/研究记录/source-notes/steam-report-reconciliation.md",
+      "sha256": "a27f010b0df7c8da0036c158a0d38e2d3384c977709d66fce1f770f602c39286",
+      "git_blob_sha1": "7c8ac5b770abd817f4753250d7bc4a53deee1723",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/研究记录/source-notes/steam-report-reconciliation.md"
+    },
+    {
+      "path": "管理档案/审查/Steam流量报表-读者化审查.md",
+      "sha256": "cfb3f92953aac2302bdf2b60bebf5a24e9014d20dec662fc450ef806f9e620f2",
+      "git_blob_sha1": "256d48ae7695eef507ab601b92768525ff58bf80",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/Steam流量报表-读者化审查.md"
+    },
+    {
+      "path": "管理档案/来源笔记/steam-traffic-reader-treatment.json",
+      "sha256": "164f53e669e86a0818625601853ffc04e052db15b7a553014c4527cc3c0fd9d9",
+      "git_blob_sha1": "c9156df7fa0bf30e388ac504da87cee539ac390b",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/steam-traffic-reader-treatment.json"
+    },
+    {
+      "path": "管理档案/支持资料/分流后的玩家，为什么在实验报表里消失了.md",
+      "sha256": "385c60e79aa7043695e56e126f95f76f7e61b6231257e32525e4f1904bccbaa3",
+      "git_blob_sha1": "355812393bdef5e425caa902c88891c1d32c4012",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/分流后的玩家，为什么在实验报表里消失了.md"
+    },
+    {
+      "path": "管理档案/来源笔记/experiment-sample-ratio-population.json",
+      "sha256": "46bfedbc0a88cf0505eb8c109f1bcc1d06ebf592c2a7c229892b7b5161ddac1c",
+      "git_blob_sha1": "270994f70049e33f9eeca809fd5f7da6abbadc71",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/experiment-sample-ratio-population.json"
+    },
+    {
+      "path": "管理档案/审查/实验样本成员去向-来源与读者审查.md",
+      "sha256": "a2f6d19a9f77490b9312423feae21bcd007c8b8c7f256cb85ab1ba7067c89125",
+      "git_blob_sha1": "1a662bc0c0b58cb40bbaea415d08a6db2d58bcca",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/实验样本成员去向-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/支持资料/生产价值上升，为什么不一定是生产得更多.md",
+      "sha256": "98c08513bf4f1dc3ebd945163c7e86473e75caa2b69385d891106d47fc2c3929",
+      "git_blob_sha1": "21772287ac5631e83122f7074381381573c7b461",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/生产价值上升，为什么不一定是生产得更多.md"
+    },
+    {
+      "path": "管理档案/来源笔记/eve-fixed-item-valuation.json",
+      "sha256": "67d5bfb0d9a5cd53795c45547a7f12019633d373fd73a1cdc74c0f165ae3607b",
+      "git_blob_sha1": "b08c5c42ad25f9f74c0a0ce71209d6a576b635ac",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/eve-fixed-item-valuation.json"
+    },
+    {
+      "path": "管理档案/审查/固定物品估值-来源与读者审查.md",
+      "sha256": "f806ce59569740e1f78b2e9799d3bce94391549344737f3286289d9895258a05",
+      "git_blob_sha1": "183f89764ea6e5b86a5c0214213dbec6c5c384d9",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/固定物品估值-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md",
+      "sha256": "ff451d556acd4ef64946508cb24cddad7e087ad5bfa0c2aae1bbe871bd14a49f",
+      "git_blob_sha1": "67a4b7185d194e674ced753e1923ab192f31c1a3",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/每天看实验结果，为什么不能一显著就停.md"
+    },
+    {
+      "path": "管理档案/来源笔记/experiment-outcome-stopping.json",
+      "sha256": "cecc3509bf284fbeba3ce476bdd69f9e23d0439bbd2bea3c6666d9c86f063596",
+      "git_blob_sha1": "e3d643df66a4c3545d4f245f72931e20b2bfd604",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/experiment-outcome-stopping.json"
+    },
+    {
+      "path": "管理档案/审查/实验显著即停-来源与读者审查.md",
+      "sha256": "daecc4bd4439897d798eaa4d3f8ac8e58c1fb80545ae5d18a38dfaaa02b89027",
+      "git_blob_sha1": "eddcea63b168b2fb25f6bba0092c16fd2ad6cc76",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/实验显著即停-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/支持资料/同一批玩家，为什么两张次日留存报表不一致.md",
+      "sha256": "5ad6430e71e1074b8da4f54e46ebb85900dc49bf80ce97fd043577510734d25b",
+      "git_blob_sha1": "9514488fddf0a822f84d6eeabf21f6ed89aa9a88",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/同一批玩家，为什么两张次日留存报表不一致.md"
+    },
+    {
+      "path": "管理档案/审查/次日留存窗口-来源与读者审查.md",
+      "sha256": "dbf85f88d474a81a21f74c8546cf0b5d948d14009db763d7189e2c2a69222dd2",
+      "git_blob_sha1": "a936de897d0e2ced9d1603b5e6dfef399af4786c",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/次日留存窗口-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/来源笔记/retention-window-definitions.json",
+      "sha256": "0fe89dbe9636b0319944b0c1cc5cdffd9969e048312996e26d5522eababe642f",
+      "git_blob_sha1": "4b56e209bbc3491cfc4b850f21ee6a910578e35e",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/retention-window-definitions.json"
+    },
+    {
+      "path": "管理档案/来源笔记/experiment-assignment-unit.json",
+      "sha256": "fb669026ca5f8da6253912a76f48227af9da3dd3cc9bb0267086b5d4074da989",
+      "git_blob_sha1": "a86b9fbbddf519c805867c728b07df71907c01e8",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/experiment-assignment-unit.json"
+    },
+    {
+      "path": "管理档案/审查/玩家实验分配与场次记录-读者审查.md",
+      "sha256": "56aef62dc3f41d2340d8e863924689c6823c8cd5b91251811717b2f38048841b",
+      "git_blob_sha1": "ee392c65fade4a862a49d0308d46383629881375",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/玩家实验分配与场次记录-读者审查.md"
+    },
+    {
+      "path": "管理档案/支持资料/玩家完成率近似方差/check_algebra.py",
+      "sha256": "500a83b07be75e76f0e2767b999b38a863c75e4aab3fd3d31beeaec84a55c574",
+      "git_blob_sha1": "b158efaf0234403a2f535d557b4fe753b974b5e7",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/玩家完成率近似方差/check_algebra.py"
+    },
+    {
+      "path": "管理档案/来源笔记/cluster-ratio-variance.json",
+      "sha256": "64a31322114a80987f31ac453604adcd67ad7c5dae7e77193cd91646209cf0b7",
+      "git_blob_sha1": "dc3df25d88a85f9ae08cb8b8248e393e043e3e5b",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/cluster-ratio-variance.json"
+    },
+    {
+      "path": "管理档案/审查/玩家完成率近似方差-数学与读者审查.md",
+      "sha256": "d2382cec9c0d3f012a8d8931dd0fd2b2ae3e015a58acb7a2d983a4d6279374db",
+      "git_blob_sha1": "4a5d1bad12d473b8415fd63a0bbc7922ce8e8620",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/玩家完成率近似方差-数学与读者审查.md"
+    },
+    {
+      "path": "管理档案/审查/界面与完成率-原范围去向核对.md",
+      "sha256": "4ed6d9dabd18053996a0b542c1110a85edbe1b5ddd70079a9bbbef7621a84b97",
+      "git_blob_sha1": "92e6fdf27f8e7e0cde55060a57e88f409a615c9b",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/界面与完成率-原范围去向核对.md"
+    },
+    {
+      "path": "管理档案/审查/完成率范围补充-独立审读.md",
+      "sha256": "a8e4c5b0448cf1f2077a8670707a2925bd9b8cfdecd2c5a4022e6044db18f303",
+      "git_blob_sha1": "b84ab55e7c724eb033c919da69d1fb43ec571032",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/完成率范围补充-独立审读.md"
+    },
+    {
+      "path": "管理档案/审查/完成率构成权重-来源与读者审查.md",
+      "sha256": "98a07f02ba7cc18711c706517fa14c9bfcb349309e3a4fa336768312a85364cb",
+      "git_blob_sha1": "37246db044104ce52bb46658db4cea0a7a8e703a",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/完成率构成权重-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/来源笔记/completion-observation-and-inference.json",
+      "sha256": "d8463225cdd9cddb32a527bbdf4a0ade82b2f3bd54a407df8dfd1c58fb8b4a36",
+      "git_blob_sha1": "b2b018cb846876d56b32049f89393583b05ed307",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/来源笔记/completion-observation-and-inference.json"
+    },
+    {
+      "path": "管理档案/审查/完成比例与未来判断-来源与读者审查.md",
+      "sha256": "b621375662c24a3561187595d6cbe09f45a681460a1db323a01d11587c64345e",
+      "git_blob_sha1": "2ca709d0ed27fd11b6fdc50bb3c63c46bb9c484f",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/审查/完成比例与未来判断-来源与读者审查.md"
+    },
+    {
+      "path": "管理档案/支持资料/十次都过关，为什么还不能说以后一定过关.md",
+      "sha256": "f6de50e5940127653f7fec624a875e32504909d277e442a73e186dbda9a9aef2",
+      "git_blob_sha1": "259036026a0a444be915b45ac35e3284bd3908ea",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/管理档案/支持资料/十次都过关，为什么还不能说以后一定过关.md"
+    },
+    {
+      "path": "GameLibrary/数据分析/指标设计/README.md",
+      "sha256": "771dbe9352e0879d8a2451ebf5ea72fb1a07bf8b85afff7402d742e1d69ebe00",
+      "git_blob_sha1": "9dfae8dd6bf6d3e3b478560525566ecdeb9ac91f",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/数据分析/指标设计/README.md"
+    },
+    {
+      "path": "GameLibrary/数据分析/指标设计/岗位与协作/README.md",
+      "sha256": "1ebce910871ebccb7f364bc1ada40191ac606d2aa09fb05b96764f9f3c0ffdd4",
+      "git_blob_sha1": "1a49531b30b913c1396a23e34aa4155b19d9bec0",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/数据分析/指标设计/岗位与协作/README.md"
+    },
+    {
+      "path": "GameLibrary/数据分析/指标设计/玩家行为/README.md",
+      "sha256": "28118feef279957d81cf30f0e54f9bc04746fbd3a2082d0a6818bd0d19d93e19",
+      "git_blob_sha1": "6f8e1d3536d61ce286f75c14ebd95480a54f92f9",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/数据分析/指标设计/玩家行为/README.md"
+    },
+    {
+      "path": "GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md",
+      "sha256": "307803a6e9922d5e5336f52f49d48e04d3d590b0752f2f5c721cb8bcea3d2b8b",
+      "git_blob_sha1": "303cd3502baaaaae2018db2f9c082411aedbac61",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/角色动画/动画运行时/逆向运动学/两骨IK的位置构造与弯曲方向控制.md"
+    },
+    {
+      "path": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md",
+      "sha256": "5875e0272f4018eab207bef519057e183fdd514488a94532b22e881f5dc2b472",
+      "git_blob_sha1": "5057cc8194193d3e354a083577f58851aa2603cf",
+      "snapshot": "https://github.com/Container-R/GameLibrary/blob/5e06703aef32594e35cf8df1faee8e0545112385/GameLibrary/美术设计/环境设计/模块化环境/模块化环境套件的接口设计与组合验证.md"
+    }
+  ],
+  "reproduction_materials": [
+    {
+      "path": "管理档案/研究/TASK-2026-0295/复现/README.md",
+      "sha256": "c5617062b43a620eae7b310a47c5ec49aff997e401e1b5d1a69fccfd7ebd0503",
+      "bytes": 2860
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0295/复现/compare_player_ratios.py",
+      "sha256": "e06eaf45d5574fef8f8f14af06d9aa8c64749c1f70d337e5cda513bf75f40807",
+      "bytes": 5749
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0295/复现/player-ledger.csv",
+      "sha256": "7af271ac5e16a3a19cdfe37ead8516426b71e2b67f89b61529a76173f8c52f05",
+      "bytes": 339
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0295/复现/reference-output.json",
+      "sha256": "0198a08b6f594e3818a665c5ffb25cdbeda15ebe8bed510806a4014c37e4d449",
+      "bytes": 2616
+    }
+  ],
+  "migration": {
+    "new_article": "GameLibrary/数据分析/实验分析/统计推断/按玩家分组的场次完成率比较.md",
+    "hosts": [
+      {
+        "path": "GameLibrary/数据分析/指标设计/岗位与协作/游戏数据分析师如何支持设计决策.md",
+        "previous_sha256": "8ea28e3131de4f48fa16f5967768741376dea3b4a325c8dd9320b84f47450c14",
+        "current_sha256": "7484668c15c9d805fb4995cf0bb1c164025b1454b8a68b9d4b03a44c43d469df"
+      },
+      {
+        "path": "GameLibrary/数据分析/指标设计/玩家行为/如何计算关卡完成率.md",
+        "previous_sha256": "e3152904255b11f884e5ad3bb90a83879edbc859696e30f236b358f1db9017b3",
+        "current_sha256": "77497f2e42d1dc5ebffa6560f0a767cdcf7192ad9282b86f93def0e718cf9b49"
+      }
+    ],
+    "retired_bodies": [
+      {
+        "path": "管理档案/支持资料/按玩家分组的实验，为什么不能把每场当成独立样本.md",
+        "sha256": "9d9ca838a2e86cd55cf21182ffacb76010e280f60a184d6ba9d21b6d50d1e580"
+      },
+      {
+        "path": "管理档案/支持资料/按玩家汇总后，怎样估计场次完成率的近似方差.md",
+        "sha256": "9fe49f8c04a04e0d65a100b09aef376152aeb5d57ef8dbb905ce62016cd47d0d"
+      }
+    ],
+    "scope": "Retain the complete nested experiment-unit and ratio-variance historical catalog object. Two former technical supports become fixed-history indexes. Role and counting hosts only gain/update one relation and semantic return label."
+  },
+  "retention_disposition": "Remove the cross-level direction recommendation; retain unchanged retention body and the existing role-article link. Retention method is not migrated or recertified.",
+  "limits": "Finite player-level ratio-comparison method; other missing-members, retention, stopping, interference and measurement supports remain separate work. No whole data-discipline or library acceptance."
+}
