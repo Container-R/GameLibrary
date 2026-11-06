@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T07:19:22Z",
-      "next_action": "Inspect versioned Unity Entities change-filter and DidChange documentation against the existing parallel-simulation reader and component-notification support. Determine whether chunk-wide version tracking and writable access create a distinct useful boundary; do not duplicate existing component-notification coverage or infer per-entity changes from a changed chunk.",
+      "last_progress_at": "2026-11-06T07:27:15Z",
+      "next_action": "Inspect existing graphics-role, GPU copy-barrier and memory-budget support against official D3D12 placed-resource aliasing documentation. Determine whether overlapping resource activation, aliasing barriers and initialization provide a distinct reader need; do not infer GPU execution, cross-queue correctness or a production allocator.",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -420,7 +420,10 @@
         "管理档案/支持资料/背包能放入物品，为什么不等于奖励已经领完.md",
         "管理档案/来源笔记/inventory-partial-add.json",
         "GameLibrary/玩法程序/玩法系统/自动运输/Factorio的列车找不到卸货站时，为什么不直接跳过.md",
-        "管理档案/来源笔记/factorio-train-target-failure.json"
+        "管理档案/来源笔记/factorio-train-target-failure.json",
+        "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+        "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+        "管理档案/来源笔记/unity-chunk-change-filter.json"
       ],
       "scope_note": "局部覆盖审计不是全学科分类研究完成",
       "previous_status": "researching",

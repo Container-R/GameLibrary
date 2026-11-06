@@ -1,0 +1,105 @@
+{
+  "reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Factorio缓存失效与读档后的重算.md",
+  "support_path": "管理档案/支持资料/Unity变化过滤选中了实体，为什么字段仍可能没变.md",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "scope": "Official documentation observed as Entities 1.3.15 under @1.3 alias; not immutable patch URL, installed package or current-version claim. Original stable-chunk integer-speed example was not executed.",
+  "sources": [
+    {
+      "id": "U1",
+      "publisher": "Unity Technologies",
+      "title": "EntityQuery filters",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/systems-entityquery-filters.html",
+      "locator": "Use a change filter; observed HTML lines 159–172",
+      "supports": [
+        "Filter acts at whole archetype-chunk granularity, not per entity.",
+        "A job with write capability accessing a chunk can include all matching entities even without actual value changes.",
+        "Declare read-only access when modification is unnecessary."
+      ],
+      "caveat": "The earlier paragraph links SetChangedVersionFilter text to SetSharedComponentFilter and mentions Translation while its sample uses ObjectPosition. Use prose contract plus dedicated API, not that link or sample as version-specific executable code.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    },
+    {
+      "id": "U2",
+      "publisher": "Unity Technologies",
+      "title": "ArchetypeChunk.DidChange",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/api/Unity.Entities.ArchetypeChunk.DidChange.html",
+      "locator": "DidChange<T>(ref ComponentTypeHandle<T>, uint), Parameters/Returns/Remarks; observed HTML lines 122–200",
+      "supports": [
+        "Explicit uint version comparison input.",
+        "Use consumer system current LastSystemVersion at job run/schedule.",
+        "Result compares component-type change version stored in the chunk to supplied version.",
+        "Write-permitted component access updates tracked change version even without actual value change."
+      ],
+      "caveat": "Use ref overload; by-value overload is marked obsolete. No implementation-source audit or raw wraparound algorithm established.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    },
+    {
+      "id": "U3",
+      "publisher": "Unity Technologies",
+      "title": "ComponentSystemBase.LastSystemVersion",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/api/Unity.Entities.ComponentSystemBase.LastSystemVersion.html",
+      "locator": "Property Value and Remarks; observed HTML lines 140–159",
+      "supports": [
+        "System-specific prior-run basis for change detection, not a rendered-frame number.",
+        "SetChangedVersionFilter and DidChange use LastSystemVersion as the basis for potential change since the system last ran.",
+        "Change tracking does not select individually changed entities within a changed chunk."
+      ],
+      "caveat": "Use for normal system-managed context; do not infer arbitrary query ownership/initialization behavior or every current package.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    },
+    {
+      "id": "U4",
+      "publisher": "Unity Technologies",
+      "title": "Implement IJobChunk",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/manual/iterating-data-ijobchunk-implement.html",
+      "locator": "Schedule the job, especially lines 304–305; Skipping chunks with unchanged entities, lines 313–389",
+      "supports": [
+        "Manual DidChange comparison uses LastSystemVersion and false permits skipping for that component type.",
+        "Pass LastSystemVersion into a job field before scheduling.",
+        "Read/write access configuration should agree in handles, job struct, and query.",
+        "Same whole-chunk/writable-access caveat as API."
+      ],
+      "caveat": "Illustrative job marks OutputTypeHandle [ReadOnly] while later writing it. Do not copy verbatim. Example includes masks and scheduling concerns outside this research proposal.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    },
+    {
+      "id": "U5",
+      "publisher": "Unity Technologies",
+      "title": "ComponentSystemBase.GetComponentTypeHandle",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/api/Unity.Entities.ComponentSystemBase.GetComponentTypeHandle.html",
+      "locator": "GetComponentTypeHandle<T>(bool), declaration and parameters; observed HTML lines 122–145",
+      "supports": [
+        "isReadOnly defaults to false.",
+        "Explicit true is appropriate when component data is only read."
+      ],
+      "caveat": "API declaration is verified; no claim about all access APIs having this default.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    },
+    {
+      "id": "U6",
+      "publisher": "Unity Technologies",
+      "title": "EntityQuery.SetChangedVersionFilter",
+      "url": "https://docs.unity3d.com/Packages/com.unity.entities@1.3/api/Unity.Entities.EntityQuery.SetChangedVersionFilter.html",
+      "locator": "Both overloads Remarks; observed HTML lines 148–150 and 181–183",
+      "supports": [
+        "Selects component types for change filtering.",
+        "Disables existing chunk filtering; documentation directs additive use to AddChangedVersionFilter."
+      ],
+      "caveat": "Integration note only; no SetChangedFilterRequiredVersion public API was established.",
+      "observed_doc_version": "Entities 1.3.15",
+      "version_evidence": "Successful page output includes thisPackageMetaData version: 1.3.15 and matching title/packageTitle. URL alias @1.3 alone was not used to infer patch version."
+    }
+  ],
+  "editorial_limits": [
+    "No native, Unity, C# compilation, game, performance, thread-safety, visual or human test.",
+    "No first-run, structural-move, enableable-component or version-wraparound implementation claim.",
+    "EnTT fixed-version runtime evidence remains separate and unchanged.",
+    "Source sample discrepancies are disclosed; no official example copied as executable code."
+  ]
+}
