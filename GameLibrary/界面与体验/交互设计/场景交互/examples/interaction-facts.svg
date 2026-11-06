@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080" role="img" aria-labelledby="title desc">
+  <title id="title">D 工具车：提示与确认之间，车盖状态改变</title>
+  <desc id="desc">原创设计推演。推行需要空手、合盖、未占用且满足接近与操作位置条件。提示时全部条件满足，列表显示可以请求推行；玩家后来确认同一个工具车的推行动作时，盖子已经打开，因此拒绝推行，显示先合上盖子，不自动改为合盖。条件满足只表示可以开始推行，不证明车已移开或通道已畅通。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 Z" fill="#42546a"/></marker>
+    <style>
+      text{font-family:'Noto Sans CJK SC','Noto Sans CJK JP',sans-serif;fill:#172b40}
+      .title{font-size:40px;font-weight:700}.sub{font-size:23px;fill:#53677b}
+      .label{font-size:27px;font-weight:700}.body{font-size:25px}.small{font-size:22px}
+      .line{fill:none;stroke:#42546a;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1500" height="1080" fill="#f5f7fa"/>
+  <text class="title" x="58" y="70">D 工具车：提示与确认之间，车盖状态改变</text>
+  <text class="sub" x="60" y="112">原创设计推演；不是运行记录。相同动作，必须按确认时的实际条件判断。</text>
+
+  <rect x="58" y="150" width="1384" height="130" rx="14" fill="#e5edf5" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="86" y="193">稳定的动作定义</text>
+  <text class="body" x="86" y="234">D 支持推行，不支持搬起。开始推行要求：空手、盖子合上、车辆未占用、接近与操作位置有效。</text>
+
+  <text class="label" x="60" y="333">① 提示时：这些条件都满足</text>
+  <rect x="58" y="360" width="382" height="170" rx="12" fill="#ffffff" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="83" y="400">查询当前事实</text>
+  <text class="body" x="83" y="446">D 的盖子合上，角色空手</text>
+  <text class="body" x="83" y="487">未占用，操作位置有效</text>
+  <path class="line" d="M440 446 H505"/>
+  <rect x="514" y="360" width="382" height="170" rx="12" fill="#ffffff" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="539" y="400">当前选中动作</text>
+  <text class="body" x="539" y="446">D ／ 推行 ／ 可请求</text>
+  <text class="small" x="539" y="487">这不是已经开始推行的凭证</text>
+  <path class="line" d="M896 446 H961"/>
+  <rect x="970" y="360" width="472" height="170" rx="12" fill="#ffffff" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="995" y="400">表达同一项含义</text>
+  <text class="body" x="995" y="446">列表文字“推行”＋可选朗读</text>
+  <text class="small" x="995" y="487">目标标记仅表示当前查看 D</text>
+
+  <path class="line" d="M249 530 V600"/>
+  <rect x="346" y="552" width="1096" height="65" rx="10" fill="#fff0d9" stroke="#b88b4c" stroke-width="2"/>
+  <text class="body" x="371" y="594">期间车盖被另一项允许的交互打开，其他条件保持。旧提示可能尚未更新。</text>
+
+  <text class="label" x="60" y="659">② 玩家确认：仍然请求 D 的推行，不改为其他动作</text>
+  <rect x="58" y="686" width="382" height="184" rx="12" fill="#ffffff" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="83" y="729">读取确认时的事实</text>
+  <text class="body" x="83" y="775">目标与动作：D ／ 推行</text>
+  <text class="body" x="83" y="813">盖子已打开</text>
+  <text class="body" x="83" y="850">→ 推行条件不满足</text>
+  <path class="line" d="M440 779 H505"/>
+  <rect x="514" y="686" width="382" height="184" rx="12" fill="#fff5e8" stroke="#b88b4c" stroke-width="2"/>
+  <text class="label" x="539" y="729">实际结果：拒绝开始</text>
+  <text class="body" x="539" y="775">不进入推行控制</text>
+  <text class="body" x="539" y="820">不自动替玩家合上盖子</text>
+  <path class="line" d="M896 779 H961"/>
+  <rect x="970" y="686" width="472" height="184" rx="12" fill="#ffffff" stroke="#9fb2c4" stroke-width="2"/>
+  <text class="label" x="995" y="729">更新为可公开的限制原因</text>
+  <text class="body" x="995" y="775">“推行：先合上盖子”</text>
+  <text class="small" x="995" y="817">玩家另选“合上”，重新确认</text>
+  <text class="small" x="995" y="850">实际合盖后，才重新判断推行</text>
+
+  <rect x="58" y="917" width="1384" height="112" rx="14" fill="#e6f0eb" stroke="#8aa89b" stroke-width="2"/>
+  <text class="label" x="86" y="960">若确认时条件全部满足</text>
+  <text class="body" x="86" y="1003">接受只表示可以开始推行；进入控制、实际位移、通道清空仍是不同事实，反馈按各自结果触发。</text>
+</svg>

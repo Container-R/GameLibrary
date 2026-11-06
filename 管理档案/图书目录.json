@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "d1ce86b72a2a11e69f3faa576de4598a77dc7297",
+  "publication_base_sha": "a6ae5f488ab280fc45076bb9c447e2f5591a07ec",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -91,7 +91,7 @@
         "image_files_published": 0,
         "excluded": "No dimensions, collision, attention measures, final-game matching or whole-library source revalidation."
       },
-      "reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+      "reader_sha256": "4358d3fd3e4e299e87f52f80762309cc293d6f427839758b932c512a545ca23b",
       "visual_structure_support": {
         "role": "historical-source-and-review",
         "formal_article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
@@ -109,11 +109,21 @@
         "scope": "Former full technical support is now an index. Current complete method has independent full reviews; original identities preserved."
       },
       "interaction_cue_support": {
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+        "current_review": "管理档案/审稿/SOL-UX-004/20261106-full-article.json",
+        "historical_record": {
+          "path": "管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
+          "sha256": "b700b236c1e9269fc105ea0f8e92e1c4a27273a98fb7c57eebb599c3b82d2bf5",
+          "review": "管理档案/审查/环境道具交互类别-来源与读者审查.md",
+          "source": "管理档案/来源笔记/environment-interaction-cues.json",
+          "scope": "Primary historical production interview plus independently reviewed original two-box handoff example; no execution."
+        },
         "path": "管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
-        "sha256": "b700b236c1e9269fc105ea0f8e92e1c4a27273a98fb7c57eebb599c3b82d2bf5",
-        "review": "管理档案/审查/环境道具交互类别-来源与读者审查.md",
-        "source": "管理档案/来源笔记/environment-interaction-cues.json",
-        "scope": "Primary historical production interview plus independently reviewed original two-box handoff example; no execution."
+        "material_index_sha256": "fa0ca39763bb2157ac92ab3ba96a47886790b0ebcba7da7b14136d2800866583",
+        "pre_retirement_body_sha256": "b700b236c1e9269fc105ea0f8e92e1c4a27273a98fb7c57eebb599c3b82d2bf5",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/a6ae5f488ab280fc45076bb9c447e2f5591a07ec/管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
+        "scope": "Former technical support is now an index. Current complete method has independent full reviews; original identities are preserved."
       },
       "review_paths": [
         "管理档案/审查/环境道具交互类别-来源与读者审查.md",
@@ -121,7 +131,8 @@
         "管理档案/审查/模块楼板厚度-增量审读.md",
         "管理档案/审查/概念图背面外观-图文与读者审查.md",
         "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
-        "管理档案/审稿/SOL-ENV-002/20261106-full-article.json"
+        "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+        "管理档案/审稿/SOL-UX-004/20261106-full-article.json"
       ],
       "modular_kit_support": {
         "role": "historical-source-and-review",
@@ -164,10 +175,10 @@
         "scope": "Original asset image shows distinct front and rear appearance; limited existing-reader example, not complete structure, measured dimensions or actual handoff outcome."
       },
       "latest_link_revision": {
-        "previous_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
-        "current_reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
-        "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
-        "scope": "One existing visual-detailing reading paragraph replaced; other concept conclusions are not newly recertified."
+        "previous_reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+        "current_reader_sha256": "4358d3fd3e4e299e87f52f80762309cc293d6f427839758b932c512a545ca23b",
+        "review": "管理档案/审稿/SOL-UX-004/20261106-full-article.json",
+        "scope": "One existing object-interaction reading paragraph replaced; other concept conclusions are not newly recertified."
       },
       "related_formal_articles": [
         {
@@ -181,6 +192,12 @@
           "path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
           "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
           "relationship": "From concept handoff to comparable scene-detailing checks and material/gameplay trade-offs."
+        },
+        {
+          "internal_id": "SOL-UX-004",
+          "path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+          "review": "管理档案/审稿/SOL-UX-004/20261106-full-article.json",
+          "relationship": "From asset-use handoff to per-action eligibility, explicit operation choice, cues/results and object-family maintenance."
         }
       ],
       "link_revision_history": [
@@ -189,6 +206,12 @@
           "current_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
           "review": "管理档案/审稿/SOL-ENV-001/20261106-full-article.json",
           "scope": "One reading relation and semantic return label changed; existing concept source and image evidence not recertified."
+        },
+        {
+          "previous_reader_sha256": "4ae4bea112125c3180e5f9dff9f3d9f42d71fc85fd744ce5d2a42082b26a85b3",
+          "current_reader_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+          "review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+          "scope": "One existing visual-detailing reading paragraph replaced; other concept conclusions are not newly recertified."
         }
       ]
     },
@@ -5161,7 +5184,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Comparable scene views, coupled inputs, local candidates, lighting interaction and material/gameplay trade-offs with final-context regression. Original 2D schematic; no engine or player-effect validation."
+    },
+    {
+      "internal_id": "SOL-UX-004",
+      "reader_title": "场景物件的交互规则与提示设计",
+      "discipline": "界面与体验",
+      "direction": "交互设计",
+      "topic": "场景交互",
+      "type": "design-method",
+      "canonical_reader_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+      "current_read_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+      "reader_body_status": "published",
+      "reader_sha256": "e0808b3a44152231d70543ee5893ba57bdeed1444d056d802ae567a9bd87f81a",
+      "editorial_status": "完整有限设计方法经独立全文技术、读者任务与盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-UX-004/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0301/sources.json",
+      "source_sha256": "a71fd250f7a77a8f18c19ea19f63a9fc0a15b09abf3166ddc637770710ea5331",
+      "materials_record": "管理档案/研究/TASK-2026-0301/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0301/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-ART2D-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Object family action capabilities/current conditions, operation selection, cue and result semantics, disclosure, diagnosis and variant checks. Unexecuted original design method, not a proven player-effect claim."
     }
   ],
-  "current_batch_scope": "One complete scene-detailing method and bounded former visual-structure support migration; remaining object-cue prose explicitly pending. Not whole-library acceptance."
+  "current_batch_scope": "One complete object-interaction method and bounded old support migration; no whole-library acceptance."
 }

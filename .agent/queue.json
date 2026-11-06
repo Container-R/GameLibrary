@@ -10370,15 +10370,40 @@
       "reader": "关卡、环境、玩法与交互协作人员。",
       "scope": "Compare existing formal methods and historical two-box support; verify original developer sources and decisive media, then select a complete bounded method and one formal home. No superficial rename or inferred player-effect guarantee.",
       "expected_outcome": "Source-backed scope and reader task, followed by a complete coherent method if evidence supports it, with independent full reviews and necessary inbound migration.",
-      "next_action": "Research the distinct object interaction cue task, compare existing methods, inspect original developer evidence and select a complete nonduplicate scope before drafting.",
+      "next_action": "Scope the distinct chunk-change derived-data refresh method against current ECS articles and fixed primary implementation; complete a bounded method only after its production problem and necessary lifecycle conditions are supported.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0301/sources.json",
+        "管理档案/研究/TASK-2026-0301/materials.json",
+        "管理档案/研究/TASK-2026-0301/范围与保留.md",
+        "管理档案/审稿/SOL-UX-004/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T18:59:23Z",
+      "related_task_ids": [
+        "TASK-2026-0300"
+      ],
+      "article_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+      "review": "管理档案/审稿/SOL-UX-004/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0302",
+      "question": "使用块级变化过滤时，怎样保证派生数据在被消费前完成选择性刷新，并处理版本窗口和失效后的恢复？",
+      "reader": "熟悉 Unity Entities 基本组件、系统和作业的玩法与引擎开发者。",
+      "scope": "Compare existing ECS/cache articles and historical chunk-change support, trace fixed implementation and identify a complete bounded refresh method. Do not turn one API warning into a purported full method or claim engine/performance results without execution.",
+      "expected_outcome": "A nonduplicate source-backed method scope and reader task, followed by full technical writing and independent reviews if evidence is sufficient.",
+      "next_action": "Scope the distinct chunk-change derived-data refresh method against current ECS articles and fixed primary implementation; complete a bounded method only after its production problem and necessary lifecycle conditions are supported.",
       "phase": "researching",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T17:18:00Z",
+      "updated_at": "2026-11-06T18:59:23Z",
       "related_task_ids": [
-        "TASK-2026-0300"
+        "TASK-2026-0301"
       ]
     }
   ],
@@ -10386,7 +10411,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Research the distinct object interaction cue task, compare existing methods, inspect original developer evidence and select a complete nonduplicate scope before drafting."
+    "next_priority": "Scope the distinct chunk-change derived-data refresh method against current ECS articles and fixed primary implementation; complete a bounded method only after its production problem and necessary lifecycle conditions are supported."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

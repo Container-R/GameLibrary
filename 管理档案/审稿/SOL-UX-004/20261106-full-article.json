@@ -1,0 +1,92 @@
+{
+  "article_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+  "article_sha256": "e0808b3a44152231d70543ee5893ba57bdeed1444d056d802ae567a9bd87f81a",
+  "publication_kind": "complete-object-interaction-rules-and-cues-method",
+  "author": "GameLibrary editorial author",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-object-interaction-technical-20261106",
+      "method": "Independent full text, seven primary sources, original/source visual inspection and counterexamples; substantive T1 revised and whole text reread.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-004/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-object-interaction-reader-20261106",
+      "method": "Independent complete final text and figure, six-part unseen task, partial-state counterexample and distinct dependency-change task.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-004/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-object-interaction-navigation-20261106",
+      "method": "Initial blind traversal with one real backtrack, final informed route recheck, actual media and complete application/change-impact tasks.",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-UX-004/20261106-full-article.md"
+    }
+  ],
+  "article_figure_fingerprints": [
+    {
+      "path": "GameLibrary/界面与体验/交互设计/场景交互/examples/interaction-facts.svg",
+      "sha256": "88990ed263be81c746fdd11e172dc22a16ba393cbd6ebd54a268c5b71df385f3",
+      "bytes": 4959
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0301/sources.json",
+      "sha256": "a71fd250f7a77a8f18c19ea19f63a9fc0a15b09abf3166ddc637770710ea5331"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0301/materials.json",
+      "sha256": "1c39b2acf866d397afcfcd15c86b39efa81d60c1cdb32f67a925bc1d3d8af0ea"
+    }
+  ],
+  "report_sha256": "d10d62331a5731a6939d6d286e260677aa1abf069a1598e19843427c0234a409",
+  "scope_record": "管理档案/研究/TASK-2026-0301/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "c5c630b017d46d6c1ce785ed7ce28fcd2497437899e6c777f71907eefa26ec99"
+    },
+    {
+      "path": "GameLibrary/界面与体验/README.md",
+      "sha256": "494491fee3a1cccab1702ebe31de34a2f22a6ef1067ffcbbb5c57132febd2fde"
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/README.md",
+      "sha256": "3b162ebfd1d5ba2f6c89dfa94b4502d643422bb47fc9280ef1ff9519d6310cfe"
+    },
+    {
+      "path": "GameLibrary/界面与体验/交互设计/场景交互/README.md",
+      "sha256": "13a5019627975d9b12d096611439635c172ad23e391a2da2037aa8b2f3d9549c"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/同样的木箱，为什么一只能搬，另一只不能搬.md",
+      "sha256": "fa0ca39763bb2157ac92ab3ba96a47886790b0ebcba7da7b14136d2800866583"
+    }
+  ],
+  "host_revisions": [
+    {
+      "path": "GameLibrary/美术设计/环境设计/概念设计/环境概念图怎样指导后续制作.md",
+      "sha256": "4358d3fd3e4e299e87f52f80762309cc293d6f427839758b932c512a545ca23b",
+      "previous_sha256": "cca72146fc3b4127b83d63e3e18b812554c46c4e2646b1201c40dec1318c119c",
+      "scope": "Only the existing object-interaction reading relation changes; other concept prose and historical source/image identities remain unchanged."
+    }
+  ],
+  "limits": "Independent model reviews and original static illustration inspection, not game execution, audio audition, participant evidence or whole-library acceptance.",
+  "updated_at": "2026-11-06T18:59:23Z",
+  "related_supervision_archive": {
+    "path": "管理档案/审稿/SOL-ENV-002/20261106-independent-supervision.json",
+    "sha256": "a35117622439bedd58a6a8f3ad4bb317b3cb6673425e5ca036ca6de92ea1b41a",
+    "scope": "Separate already-published scene-hierarchy review, not evidence approving the object-interaction manuscript."
+  }
+}

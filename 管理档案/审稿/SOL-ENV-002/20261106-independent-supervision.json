@@ -1,0 +1,27 @@
+{
+  "kind": "Independent model supervision, finite review of an already published article",
+  "reviewer": "independent-model-scene-hierarchy-supervision-20261106",
+  "reviewed_commit": "a6ae5f488ab280fc45076bb9c447e2f5591a07ec",
+  "article_path": "GameLibrary/美术设计/环境设计/概念设计/环境场景细化中的明暗分组与视觉层级检查.md",
+  "article_sha256": "c789e155b29670aeff17672b0593a16c6cf94f7d6fe6c46602f139601424c7a3",
+  "figure_path": "GameLibrary/美术设计/环境设计/概念设计/examples/value-group-comparison.svg",
+  "figure_sha256": "2c733f9910c03c8fef37ddfdf941d02eb51d4d0e9065d532bb0e202f8466b783",
+  "verdict": "No substantive defect found in the reviewed scope",
+  "actual_scope": [
+    "Complete article read",
+    "Original SVG actually inspected",
+    "TF2 original paper figures checked",
+    "All four Riot stage frames checked",
+    "UE5.6 official viewport and exposure explanations checked",
+    "Reader decisions for motion flicker and damaged ledge-information scenarios"
+  ],
+  "navigation": {
+    "route": "Project root → GameLibrary → Art → Environment Design → Concept Design → Article",
+    "result": "Stepwise route reachable",
+    "blind": false,
+    "reason": "Reviewer had previously seen the path; this is a route recheck, not blind discovery."
+  },
+  "limits": "Original two-dimensional schematic only. No engine, game, GPU, performance or participant validation. Source recheck limited to listed materials; not whole-library acceptance.",
+  "original_full_review": "管理档案/审稿/SOL-ENV-002/20261106-full-article.json",
+  "archived_on": "2026-11-06"
+}

@@ -1,0 +1,143 @@
+{
+  "task_id": "TASK-2026-0301",
+  "article_path": "GameLibrary/界面与体验/交互设计/场景交互/场景物件的交互规则与提示设计.md",
+  "article_sha256": "e0808b3a44152231d70543ee5893ba57bdeed1444d056d802ae567a9bd87f81a",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "author": "Thomas Grip / Frictional Games",
+      "title": "Penumbra: Black Plague Developer Diary #3 – Screens",
+      "version_or_date": "2008-01-23; page also displays 2023-10-10",
+      "url": "https://frictionalgames.com/2008-01-penumbra-black-plague-developer-diary-3-screens/",
+      "claims": [
+        {
+          "claim": "Objects have different interaction modes and per-object adjustments; changing forces or mass has coupled consequences.",
+          "locator": "Implementing physics; Using the physics to design puzzles",
+          "observed_content": "Full developer text read, including grab/push/move categories, force correction and AI/puzzle constraints.",
+          "article_section": "从物件用途写出动作，不从材质推断能力"
+        }
+      ],
+      "conditions": "Historical development account, not a reproduced controller, parameter recommendation or current-game test.",
+      "media_inspected": []
+    },
+    {
+      "article_reference": 2,
+      "author": "Nintendo; Hidemaro Fujibayashi and Takahiro Dohta",
+      "title": "Ask the Developer: The Legend of Zelda Tears of the Kingdom, part 5",
+      "version_or_date": "2023-05-11",
+      "url": "https://www.nintendo.com/jp/interview/totk/05.html",
+      "claims": [
+        {
+          "claim": "Some immovable boxes were made movable; necessary immovability received rope/cloth cues.",
+          "locator": "できるかな？がちゃんとできる; first Fujibayashi wood-box paragraph and following Dohta paragraph",
+          "observed_content": "Original Japanese text read; the official illustration depicts bare construction material and a covered/tied pile with added category labels.",
+          "article_section": "保留哪些差异，先作设计决定"
+        }
+      ],
+      "conditions": "Not an otherwise identical box comparison, not one-cue causal evidence or a player study. Lidded-pot statement is textual and does not imply every lidded container is unbreakable. Page includes development media.",
+      "media_inspected": [
+        {
+          "url": "https://www.nintendo.com/jp/interview/totk/photo/06.jpg",
+          "sha256": "14a11b9d631dcdfc126a0566567091e9b9086ff0b5818a179535baf49c4def8b",
+          "bytes": 169482,
+          "kind": "Actual static image inspected, research reference only; not redistributed."
+        }
+      ]
+    },
+    {
+      "article_reference": 3,
+      "author": "Frictional Wiki",
+      "title": "HPL2/TDD/Entity Types",
+      "version_or_date": "Live editable documentation, accessed 2026-11-06",
+      "url": "https://wiki.frictionalgames.com/page/HPL2/TDD/Entity_Types",
+      "claims": [
+        {
+          "claim": "Type, instance, mobility, breaking and interaction feedback have distinct documented responsibilities.",
+          "locator": "StaticProp; Object common/type/instance fields; Static and Grab; LevelDoor fields",
+          "observed_content": "Read StaticProp/Object(Static), StaticPhysics, BreakActive, DisableBreakable and focus/locked feedback descriptions.",
+          "article_section": "保留哪些差异，先作设计决定"
+        }
+      ],
+      "conditions": "Documentation only, not a fixed source revision or execution. Does not prescribe the warehouse implementation.",
+      "media_inspected": []
+    },
+    {
+      "article_reference": 4,
+      "author": "Don Norman",
+      "title": "Signifiers, not affordances",
+      "version_or_date": "2008-11-17; ACM Interactions 15(6), author version",
+      "url": "https://jnd.org/signifiers-not-affordances/",
+      "claims": [
+        {
+          "claim": "Action possibilities and perceivable/interpretable cues are distinct; cues may be accidental and unreliable.",
+          "locator": "Signifier definition; reliability discussion; Signifiers, Not Affordances",
+          "observed_content": "Full essay read, including agent/environment relationship and intended/unintended cues.",
+          "article_section": "让稳定外观表达稳定能力，让短期提示解释当前条件"
+        }
+      ],
+      "conditions": "Conceptual design account, not evidence for the efficacy of a particular game asset cue.",
+      "media_inspected": []
+    },
+    {
+      "article_reference": 5,
+      "author": "Nintendo; Eiji Aonuma, Satoru Takizawa and Hajime Wakai",
+      "title": "Ask the Developer: The Legend of Zelda Tears of the Kingdom, part 4",
+      "version_or_date": "2023-05-11",
+      "url": "https://www.nintendo.com/jp/interview/totk/04.html",
+      "claims": [
+        {
+          "claim": "Connected objects have a visible adhesive representation.",
+          "locator": "Adhesive appearance discussion; official photo/04.jpg",
+          "observed_content": "Actual static image shows green adhesive at log seams and mast base, with three instructional red arrows.",
+          "article_section": "提示说明当前判断，操作结果要等待实际事实"
+        }
+      ],
+      "conditions": "No audio audition, timing/animation review or evidence of recognition without annotations; not a fixed retail-version observation.",
+      "media_inspected": [
+        {
+          "url": "https://www.nintendo.com/jp/interview/totk/photo/04.jpg",
+          "sha256": "e230102897a2a9dd653e58471b824b288b14d4c6ba799efe6fceafff4d019320",
+          "bytes": 241356,
+          "kind": "Actual static image inspected, research reference only; not redistributed."
+        }
+      ]
+    },
+    {
+      "article_reference": 6,
+      "author": "Microsoft",
+      "title": "Xbox Accessibility Guideline 103: Additional channels for visual and audio cues",
+      "version_or_date": "Accessed 2026-11-06",
+      "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/103",
+      "claims": [
+        {
+          "claim": "Important cues need sensory alternatives; multiple visual representations still depend on vision, color cannot be the sole distinction, and haptics may be disabled/unavailable.",
+          "locator": "Goal; Overview; Color; Haptic options; Implementation guidelines",
+          "observed_content": "The corresponding text requirements were read, rather than inferring guidance from example media.",
+          "article_section": "不把内部拒绝原因变成泄题提示"
+        }
+      ],
+      "conditions": "Platform guidance, not certification or a human accessibility evaluation. Example videos and pictures not used as observed evidence.",
+      "media_inspected": []
+    },
+    {
+      "article_reference": 7,
+      "author": "Matthew Dunnerstick / Naughty Dog",
+      "title": "The Last of Us Part II: Accessibility Features Detailed",
+      "version_or_date": "2020-06-09",
+      "url": "https://www.naughtydog.com/blog/the_last_of_us_part_ii_accessibility_features_detailed",
+      "claims": [
+        {
+          "claim": "Interaction/exploration sound cues can have configurable volume and a glossary for hearing and learning the cues.",
+          "locator": "Text-to-Speech and Audio Cues; Traversal Cues; Audio Volumes; Audio Cue Glossary",
+          "observed_content": "Read the listed interaction/pick-up cues, volume control and browse/listen glossary feature.",
+          "article_section": "不把内部拒绝原因变成泄题提示"
+        }
+      ],
+      "conditions": "Historical announced features, not current-patch verification or audition; no claims about timbre, perceptibility or player benefit.",
+      "media_inspected": []
+    }
+  ],
+  "original_work": "Warehouse object family, per-action conditions, explicit action-selection alternatives, current execution checks, cue/result distinctions, disclosure policy, diagnostic branches and variant regression. Original unexecuted design method, not a studio internal procedure.",
+  "limits": "No game/engine/controller execution, audio audition, causal effectiveness measurement, accessibility certification or human trial. Historical source images are research references, not redistributed."
+}
