@@ -1,0 +1,59 @@
+{
+  "reader_path": "GameLibrary/图形渲染/渲染开发/岗位与协作/图形程序员如何交付和维护渲染功能.md",
+  "support_path": "管理档案/支持资料/阴影深度先插值再比较，为什么不能代替比较过滤.md",
+  "status": "source-backed",
+  "read_on": "2026-11-06",
+  "scope": "Fixed Microsoft comparison-sampling documentation and original finite weighted-comparison arithmetic. No device, SDK, runtime or image result.",
+  "sources": [
+    {
+      "publisher": "Microsoft",
+      "title": "SampleCmp",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/dx-graphics-hlsl-to-samplecmp.md",
+      "commit": "5d7abd54cf709b7db92744e09eac7d806ccd5403",
+      "path": "desktop-src/direct3dhlsl/dx-graphics-hlsl-to-samplecmp.md",
+      "blob_sha": "e1a61e2026010aba33f16c8cfaef7c75d86ea073",
+      "locator": "Return Value, Remarks and comparison sampler parameter",
+      "read_on": "2026-11-06"
+    },
+    {
+      "publisher": "Microsoft",
+      "title": "sample_c (sm4 - asm)",
+      "url": "https://github.com/MicrosoftDocs/win32/blob/5d7abd54cf709b7db92744e09eac7d806ccd5403/desktop-src/direct3dhlsl/sample-c--sm4---asm-.md",
+      "commit": "5d7abd54cf709b7db92744e09eac7d806ccd5403",
+      "path": "desktop-src/direct3dhlsl/sample-c--sm4---asm-.md",
+      "blob_sha": "b5e62fd54df643b2575456848bd66c8d8be9ad13",
+      "locator": "Remarks L44–60: operand order, per-tap comparison, filtering and input conditions",
+      "read_on": "2026-11-06"
+    }
+  ],
+  "paper_example": {
+    "depths": [
+      "1/4",
+      "3/4",
+      "1/4",
+      "3/4"
+    ],
+    "reference": "1/2",
+    "comparison": "reference <= depth",
+    "weights": [
+      "3/8",
+      "1/8",
+      "3/8",
+      "1/8"
+    ],
+    "compare_then_filter": "1/4",
+    "filtered_depth": "3/8",
+    "filter_then_compare": "0",
+    "unweighted_comparison_average": "1/2",
+    "limits": "Specified ideal interpolation weights, not observed sampler configuration or a guarantee of exact hardware output or geometric visible area."
+  },
+  "not_tested": [
+    "HLSL or shader assembly execution",
+    "GPU",
+    "images",
+    "performance",
+    "engine integration",
+    "human use"
+  ],
+  "excluded": "OpenGL implementation-specific filtering remains outside this narrow Microsoft-source explanation; historical shader-stage tables are not generalized to current APIs."
+}
