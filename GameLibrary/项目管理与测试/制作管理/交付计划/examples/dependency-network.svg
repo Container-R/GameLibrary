@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="555" viewBox="0 0 1320 555">
+<title>货运码头：只有输入依赖的网络</title>
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:"Noto Sans CJK SC",sans-serif;fill:#152638} .small{font-size:15px}</style>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#506578"/></marker></defs>
+<text x="28" y="30" font-size="22">货运码头内部可玩区：输入依赖（FS）</text>
+<path d="M 218,216.0 L 224.0,216.0 L 224.0,96.0 L 230,96.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 420,96.0 L 432.5,96.0 L 432.5,96.0 L 445,96.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 218,216.0 L 331.5,216.0 L 331.5,216.0 L 445,216.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 218,216.0 L 224.0,216.0 L 224.0,336.0 L 230,336.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 420,336.0 L 432.5,336.0 L 432.5,336.0 L 445,336.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 635,96.0 L 647.5,96.0 L 647.5,96.0 L 660,96.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 635,216.0 L 755.0,216.0 L 755.0,216.0 L 875,216.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 635,336.0 L 755.0,336.0 L 755.0,216.0 L 875,216.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 850,96.0 L 862.5,96.0 L 862.5,216.0 L 875,216.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 1065,216.0 L 1077.5,216.0 L 1077.5,216.0 L 1090,216.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 1185.0,252 L 1185.0,300" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M 1185.0,372 L 1185.0,456.0 L 1065,456.0" fill="none" stroke="#506578" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="28" y="180" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="38" y="209" font-size="17">A 路线与接收约定</text>
+<text x="38" y="235" font-size="15">0.5 工作日 · L</text>
+<rect x="230" y="60" width="190" height="72" rx="7" fill="#fff0ce" stroke="#8da3b3"/>
+<text x="240" y="89" font-size="17">B 锚点与导出样件</text>
+<text x="240" y="115" font-size="15">1 工作日 · T</text>
+<rect x="445" y="60" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="455" y="89" font-size="17">C 装卸动画</text>
+<text x="455" y="115" font-size="15">3 工作日 · N</text>
+<rect x="445" y="180" width="190" height="72" rx="7" fill="#fff0ce" stroke="#8da3b3"/>
+<text x="455" y="209" font-size="17">D 码头环境与碰撞</text>
+<text x="455" y="235" font-size="15">4 工作日 · T</text>
+<rect x="230" y="300" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="240" y="329" font-size="17">E 推车与交付状态</text>
+<text x="240" y="355" font-size="15">1.5 工作日 · P</text>
+<rect x="445" y="300" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="455" y="329" font-size="17">F 检查点复位</text>
+<text x="455" y="355" font-size="15">1 工作日 · P</text>
+<rect x="660" y="60" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="670" y="89" font-size="17">G 动画输入检查</text>
+<text x="670" y="115" font-size="15">0.5 工作日 · Q</text>
+<rect x="875" y="180" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="885" y="209" font-size="17">H 三路整合</text>
+<text x="885" y="235" font-size="15">1 工作日 · P</text>
+<rect x="1090" y="180" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="1100" y="209" font-size="17">I 候选构建</text>
+<text x="1100" y="235" font-size="15">0.5 工作日 · V</text>
+<rect x="1090" y="300" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="1100" y="329" font-size="17">J 目标设备走查</text>
+<text x="1100" y="355" font-size="15">0.5 工作日 · Q</text>
+<rect x="875" y="420" width="190" height="72" rx="7" fill="#eaf3f9" stroke="#8da3b3"/>
+<text x="885" y="449" font-size="17">K 核对证据与接收</text>
+<text x="885" y="475" font-size="15">0.25 工作日 · L</text>
+<text x="28" y="468" font-size="16">黄色 B、D 同属技术美术 T，但二者没有输入先后关系。</text>
+<text x="28" y="495" font-size="16">为解决资源冲突而选择 B→D 或 D→B，另记为资源顺序。</text>
+<text x="28" y="523" class="small">原创教学假设；方框不按持续时间缩放；接收终点为 K 完成。角色及判据见正文活动表。</text>
+</svg>

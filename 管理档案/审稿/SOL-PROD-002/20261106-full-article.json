@@ -1,0 +1,128 @@
+{
+  "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+  "article_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
+  "publication_kind": "complete-playable-delivery-planning-method",
+  "author": "GameLibrary editorial author",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-playable-delivery-technical-20261106",
+      "method": "Independent full manuscript, primary source and counterexample review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-002/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-playable-delivery-reader-20261106",
+      "method": "Independent full reader task with unseen input",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-002/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-playable-delivery-navigation-20261106",
+      "method": "Blind root-to-article and actual return",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-PROD-002/20261106-full-article.md"
+    }
+  ],
+  "article_figure_fingerprints": [
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/examples/dependency-network.svg",
+      "sha256": "f6dacda72d75906edd695535357331d2548b6b9ca98c3bb13a6f5da1fd8894d1",
+      "bytes": 4832
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/examples/resource-timeline.svg",
+      "sha256": "a64f30928386d3eb40d3280643a13d26c99148910c719385e54b7fc1eab490fd",
+      "bytes": 7944
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0296/sources.json",
+      "sha256": "3925527afda27b6f8791244a9dbb45ebe6947c1b55e9eeb3ff6068c01e84c78c"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0296/materials.json",
+      "sha256": "758626e210e846c5ccf22cff6461fd5f9401b9757fb8d73746d0b84ce101fabb"
+    }
+  ],
+  "report_sha256": "9b1d6595e8db1da6686662b64a3f21f04f531dbc66d935495110ea977efc7555",
+  "scope_record": "管理档案/研究/TASK-2026-0296/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "83d05b4327bfeab3af3fed9e54e2d93559858f15db99b476adf39950d8640100"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/README.md",
+      "sha256": "54d96e4f14f7741a4dc7d6e332cbc7641bb6ee7ba4182501eb42a1e98546a0fa"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/README.md",
+      "sha256": "33c82a5e40e04b174b3d1e8f675c7bf7eab6f60b6b6a1cac09672879ba7cdea2"
+    },
+    {
+      "path": "GameLibrary/项目管理与测试/制作管理/交付计划/README.md",
+      "sha256": "2f60d28e7fb213ea10212af27b0f7625751cb43795b52d628d6c510e3578a139"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+      "sha256": "a697a2a15f3eff389d390f80ed38cd673b1573fd8da1f03c9630618c169541c3"
+    }
+  ],
+  "reproduction_fingerprints": [
+    {
+      "path": "管理档案/研究/TASK-2026-0296/复现/README.md",
+      "sha256": "71cdc3392a92f3169be0576d5c4e26ff459d815cd2d18799f1997e18d7f8b963",
+      "bytes": 1913
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0296/复现/calculation-results.json",
+      "sha256": "0b6a2329a7b5b8404abdfcbd24e719001d1f00106bb4a34b7edf678534d1fa50",
+      "bytes": 3851
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0296/复现/case-data.json",
+      "sha256": "6b494a8a05ff7735c040a850252cfce4643654942920a88e5e842dee1a0bb4a5",
+      "bytes": 1301
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0296/复现/reproduce_case.py",
+      "sha256": "668d77195a8313d78792bc181de6f4c7219a8561a072195365b15aa04b6d3281",
+      "bytes": 11205
+    }
+  ],
+  "host_revision": {
+    "path": "GameLibrary/项目管理与测试/制作管理/岗位与协作/制作人如何协调任务依赖与交付.md",
+    "sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+    "previous_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
+    "scope": "One existing reading relation and semantic return label only; remaining producer prose and old sources unchanged."
+  },
+  "minor_correction": {
+    "scope": "SVG accessible title and its identical generator literal only; rendered labels, geometry, data and arithmetic unchanged.",
+    "before": "同一资源顺序的两种可行安排",
+    "after": "两种资源顺序的可行安排",
+    "reviewers": [
+      "Original independent technical reviewer",
+      "Original independent reader reviewer"
+    ],
+    "verification": "Exact differences against original reviewed bytes; technical reviewer also reproduced all four files and confirmed rendered PNG byte identity. Reader review did not inspect code.",
+    "report": "管理档案/审稿/SOL-PROD-002/20261106-full-article.md"
+  },
+  "separate_archived_audit": {
+    "path": "管理档案/审稿/SOL-ENV-001/20261106-independent-reader-source-check.json",
+    "sha256": "71996fd2d07cc2705604f58fc0a00736873b55139fcb459be21709452505e9ab",
+    "scope": "Previously published modular-environment article only; no extra acceptance of current manuscript or whole library."
+  },
+  "limits": "Independent model review, original source reading and selected images, deterministic teaching arithmetic and original SVG inspection. No real game project, scheduling product, global optimization, delivery-probability validation or human testing.",
+  "updated_at": "2026-11-06T15:20:12Z"
+}

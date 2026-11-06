@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "5e06703aef32594e35cf8df1faee8e0545112385",
+  "publication_base_sha": "be8c62595dc9e1ddb6afc08c1c603e633e8aeba1",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -696,7 +696,7 @@
         "reader_review": "管理档案/审查/依赖与共享人员容量-制作正文增补审读.md",
         "execution": "Original conditional arithmetic and original GAO scheduling text; no actual game schedule or simulation."
       },
-      "reader_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
+      "reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
       "parallel_merge_support": {
         "source_record": "管理档案/来源笔记/production-merge-timing.json",
         "review": "管理档案/审查/并行输入汇合估时-来源与读者审查.md",
@@ -704,16 +704,27 @@
         "scope": "Original finite hand calculation and primary schedule guidance; no game project data or simulation."
       },
       "critical_path_support": {
+        "role": "historical-source-and-review",
+        "formal_article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+        "current_review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+        "historical_record": {
+          "path": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+          "sha256": "23e2d58dc14b8779fa75ba70c7786cac9572f3b53d9cb5e5893a76977f13631c",
+          "review": "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
+          "source": "管理档案/来源笔记/schedule-critical-path-float.json",
+          "scope": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution."
+        },
         "path": "管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
-        "sha256": "23e2d58dc14b8779fa75ba70c7786cac9572f3b53d9cb5e5893a76977f13631c",
-        "review": "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
-        "source": "管理档案/来源笔记/schedule-critical-path-float.json",
-        "scope": "Official scheduling guidance and independently reviewed original conditional paper arithmetic; no scheduling software or real project execution."
+        "material_index_sha256": "a697a2a15f3eff389d390f80ed38cd673b1573fd8da1f03c9630618c169541c3",
+        "pre_retirement_body_sha256": "23e2d58dc14b8779fa75ba70c7786cac9572f3b53d9cb5e5893a76977f13631c",
+        "pre_retirement_snapshot": "https://github.com/Container-R/GameLibrary/blob/be8c62595dc9e1ddb6afc08c1c603e633e8aeba1/管理档案/支持资料/提前做完一项任务，为什么试玩日期没有跟着提前.md",
+        "scope": "Complete original finite critical-path record preserved; new complete method independently reviewed."
       },
       "review_paths": [
         "管理档案/审查/关键路径与共享浮动-来源与读者审查.md",
         "管理档案/审查/在途数量与完成耗时-来源与读者审查.md",
-        "管理档案/审查/资源超配检测粒度-增量审读.md"
+        "管理档案/审查/资源超配检测粒度-增量审读.md",
+        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
       ],
       "finite_flow_measurement_support": {
         "path": "管理档案/支持资料/只看完成的任务，为什么算不回平均在途数量.md",
@@ -726,7 +737,21 @@
         "source_record": "管理档案/来源笔记/resource-leveling-granularity.json",
         "review": "管理档案/审查/资源超配检测粒度-增量审读.md",
         "scope": "Existing reader only: vendor day/week resource-leveling detection example and its decision boundary. No scheduling-software or actual-project test."
-      }
+      },
+      "latest_link_revision": {
+        "previous_reader_sha256": "d6ef1b436e5f03e1ee1b14376c2c8f94c2ad2ffb7a4b5fff031f834529fc5334",
+        "current_reader_sha256": "5f7cce58bd547f4a2e153109519d1f846ca514fe9177d68a5319c30ce7e7dcb0",
+        "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+        "scope": "One method relation and return label only; original role, resource and source content not recertified."
+      },
+      "related_formal_articles": [
+        {
+          "internal_id": "SOL-PROD-002",
+          "path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+          "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+          "relationship": "From producer coordination to explicit acceptance, dependency, resource and progress-based delivery planning."
+        }
+      ]
     },
     {
       "internal_id": "ROLE-PROG-001",
@@ -4885,7 +4910,32 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Fixed-endpoint two-arm session-weighted ratio difference from complete original player aggregates under independent iid potential-player model; residual variance, zero versus unknown, changing-denominator interpretation and adoption limits. Not finite-population exact randomization or coverage validation."
+    },
+    {
+      "internal_id": "SOL-PROD-002",
+      "reader_title": "小型可玩版本的依赖计划与交付判断",
+      "discipline": "项目管理与测试",
+      "direction": "制作管理",
+      "topic": "交付计划",
+      "type": "production-method",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+      "current_read_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+      "reader_body_status": "published",
+      "reader_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
+      "editorial_status": "完整有限交付计划方法经独立全文、读者任务与盲导航审查。",
+      "review_paths": [
+        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0296/sources.json",
+      "source_sha256": "3925527afda27b6f8791244a9dbb45ebe6947c1b55e9eeb3ff6068c01e84c78c",
+      "materials_record": "管理档案/研究/TASK-2026-0296/materials.json",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0296/范围与保留.md",
+      "related_article_ids": [
+        "ROLE-PROD-001"
+      ],
+      "updated_at": "2026-11-06",
+      "scope": "Acceptance-defined small playable delivery, explicit FS dependency lower bound, resource-feasible choices, float, changes and remaining-work updates. Original conditional teaching method, not real schedule, global optimum or date probability."
     }
   ],
-  "current_batch_scope": "One full player-level ratio-comparison method, two bounded host relations and two historical support indexes. Other data-analysis methods and v2 debt remain scoped separately."
+  "current_batch_scope": "One complete small playable-delivery planning method with bounded producer relation, critical-path support retirement and direct-child navigation; a separate finite modular-environment review archived. Other production methods and library debt remain scoped separately."
 }

@@ -10233,15 +10233,40 @@
       "reader": "承担小型游戏可玩版本交付的制作人与跨专业负责人。",
       "scope": "Compare current dependency and scheduling material, then research a finite acceptance-to-activity-to-resource-feasible-plan workflow. Distinguish precedence lower bounds, resource choices, uncertainty and actual acceptance; do not fold unfinished-work averages or player-research methods into scheduling.",
       "expected_outcome": "A source-grounded finite production method if discovery supports it, with an independent new planning task and full technical, reader and navigation review before publication.",
-      "next_action": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting.",
-      "phase": "discovery",
+      "next_action": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews.",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0296/sources.json",
+        "管理档案/研究/TASK-2026-0296/materials.json",
+        "管理档案/研究/TASK-2026-0296/范围与保留.md",
+        "管理档案/审稿/SOL-PROD-002/20261106-full-article.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-06T15:20:12Z",
+      "related_task_ids": [
+        "TASK-2026-0295"
+      ],
+      "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+      "review": "管理档案/审稿/SOL-PROD-002/20261106-full-article.json",
+      "publication_identity": "Containing commit; success reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0297",
+      "question": "怎样从有限窗口的制作记录核对平均在途、退出耗时与未完累积，而不混淆人员工时或预测？",
+      "reader": "能读时间表并做基本算术的游戏制作、接入与技术负责人。",
+      "scope": "Complete historical workflow measurement from explicit flow units and event boundaries, including both initial and final unfinished items, successful versus all exits and two independent area calculations. No staffing capacity, date probability or causal productivity claim.",
+      "expected_outcome": "A complete original game-production teaching case with primary finite-window definitions, technical and independent reader application, and a single formal flow-measurement location after review.",
+      "next_action": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews.",
+      "phase": "drafting",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
       "blocker": null,
-      "updated_at": "2026-11-06T14:35:50Z",
+      "updated_at": "2026-11-06T15:20:12Z",
       "related_task_ids": [
-        "TASK-2026-0295"
+        "TASK-2026-0296"
       ]
     }
   ],
@@ -10249,7 +10274,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Complete the comparison of the producer article and three existing dependency/schedule/flow supports with primary game-team and scheduling sources; define the smallest coherent playable-delivery method before drafting."
+    "next_priority": "Complete the finite-window flow-measurement draft from the finished source discovery; retain old knowledge and distinguish event semantics from arithmetic closure, then perform independent full reviews."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

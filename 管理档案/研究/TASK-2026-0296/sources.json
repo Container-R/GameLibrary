@@ -1,0 +1,122 @@
+{
+  "task_id": "TASK-2026-0296",
+  "article_path": "GameLibrary/项目管理与测试/制作管理/交付计划/小型可玩版本的依赖计划与交付判断.md",
+  "article_sha256": "9f86e5b90f5aec5b1ad0e8c12f9718a0dde527ddfc768a210286c4bcbfe1668a",
+  "read_on": "2026-11-06",
+  "sources": [
+    {
+      "article_reference": 1,
+      "organization": "Double Fine Productions",
+      "title": "Psychonauts 2 — Episode 5: First Playable Milestone",
+      "url": "https://www.doublefine.com/games/psychonauts-2/updates/episode-5-first-playable-milestone",
+      "publication_date": "Not independently confirmed",
+      "locator": "Opening paragraphs on first-playable purpose, cross-department integration, temporary content and not-yet-shippable quality.",
+      "claim": "A playable integration milestone has a declared purpose and need not represent release-ready quality.",
+      "article_sections": [
+        "一、先说清楚接收什么，才知道要算到哪里"
+      ],
+      "conditions": "Historical statement by this project, not a universal milestone definition, measured process improvement or evidence that later risks disappeared. Text read; embedded images/video not used for quality claims."
+    },
+    {
+      "article_reference": 2,
+      "organization": "Double Fine Productions",
+      "title": "Psychonauts 2 — Episode 4: We're in Full Production!",
+      "url": "https://www.doublefine.com/games/psychonauts-2/updates/episode-4-were-in-full-production",
+      "publication_date": "Not independently confirmed",
+      "locator": "Core movement before level building; other abilities developed alongside levels with revision; pipelines, Quarry and whiteboxing-to-art paragraphs.",
+      "claim": "Dependencies and independently usable intermediate deliveries should reflect the actual production process rather than blanket serial or parallel assumptions.",
+      "article_sections": [
+        "二、把接收条件变成能安排、能交接的活动"
+      ],
+      "conditions": "Same project as reference1, not another independent outcome sample. No source video viewed or studio durations inferred."
+    },
+    {
+      "article_reference": 3,
+      "organization": "U.S. Government Accountability Office",
+      "title": "Schedule Assessment Guide: Best Practices for Project Schedules",
+      "version": "GAO-16-89G, December2015",
+      "url": "https://www.gao.gov/assets/gao-16-89g.pdf",
+      "pdf_sha256": "ab3257eb8fe500d286a001c12d74dd074cdbf105003efb072f3370410235bfce",
+      "claims": [
+        {
+          "claim": "Milestone conditions require explicit actual activities; inputs and successor logic must be validated.",
+          "locator": "Printed11–14 and27–30",
+          "article_sections": [
+            "一、先说清楚接收什么，才知道要算到哪里",
+            "二、把接收条件变成能安排、能交接的活动"
+          ]
+        },
+        {
+          "claim": "Resource loading, effort, duration, availability and leveling are different; chosen resource sequences need not be hard input logic.",
+          "locator": "Printed49–50,53–61,65–67,86–87; note20 on60",
+          "article_sections": [
+            "二、把接收条件变成能安排、能交接的活动",
+            "四、把下界改成具体人员可以执行的安排"
+          ]
+        },
+        {
+          "claim": "Under the stated deterministic network, forward/backward passes and longest paths describe timing constraints; total/free float differ and shared float is not additive.",
+          "locator": "Printed75–78,87,91–93,95–96; AppendixIV172–178, figures35,52,56",
+          "article_sections": [
+            "三、先算只考虑依赖时，最快能到哪里",
+            "五、改动应比较完整终点，而不只比较被改的任务"
+          ]
+        },
+        {
+          "claim": "Actual starts/completions and remaining work at a status date must be distinguished from replanning future activities.",
+          "locator": "Printed121–125",
+          "article_sections": [
+            "六、工作已经发生以后，只重排未来"
+          ]
+        },
+        {
+          "claim": "A merge of uncertain paths cannot generally be evaluated by simply substituting marginal means; correlation affects probability claims.",
+          "locator": "Printed100–102,115–116",
+          "article_sections": [
+            "七、哪些输入不足时，应先取得信息"
+          ]
+        }
+      ],
+      "conditions": "Primary public-project scheduling guidance, not a game-team measurement or universal governance prescription. Article uses explicit FS interval boundaries, deterministic durations and original resource assumptions; no global optimality, reliability probability or simulation result inferred.",
+      "actually_viewed_source_pages": [
+        {
+          "printed_page": 59,
+          "figure": 26,
+          "render_sha256": "c5886f696e9c38ae5e62bd8321bbb2ec4a04ad4ae65d596f589be8e091beb72b",
+          "observed_content": "Input logic allows parallel activities but daily resource demand is overallocated.",
+          "reading_scope": "Author and source-discovery reader personally viewed the original page image; not redistributed."
+        },
+        {
+          "printed_page": 60,
+          "figure": 27,
+          "render_sha256": "16c9d17455f6b1b8117228ab0ff9e88a7327bd21aa01f58834d12a5f15bfeef5",
+          "observed_content": "Resource distribution after moving activities; accompanying note20 distinguishes resource choices from input logic.",
+          "reading_scope": "Author and source-discovery reader personally viewed the original page image; not redistributed."
+        },
+        {
+          "printed_page": 93,
+          "figure": 35,
+          "render_sha256": "6f832f65b74badb284404c6362106b4c51fd5f547241a6d1ba50e88c819a09dd",
+          "observed_content": "Two successive activities share four days of total float, while only the second has four days of free float.",
+          "reading_scope": "Author and source-discovery reader personally viewed the original page image; not redistributed."
+        },
+        {
+          "printed_page": 174,
+          "figure": 52,
+          "render_sha256": "2d90ee8d68f680713eb1b017f4c278a0c4754aa49e8e7e5fa7f398dccd784879",
+          "observed_content": "Inclusive calendar-date formula EF = ES + duration - 1; not the article’s interval-boundary convention.",
+          "reading_scope": "Author and source-discovery reader personally viewed the original page image; not redistributed."
+        },
+        {
+          "printed_page": 178,
+          "figure": 56,
+          "render_sha256": "057d3246b2c035dd73b2167e801df82ed70d6b805c7be9f573b35ca5154ae2db",
+          "observed_content": "Forward/backward calculation boxes and both total-float expressions.",
+          "reading_scope": "Author and source-discovery reader personally viewed the original page image; not redistributed."
+        }
+      ]
+    }
+  ],
+  "original_work": "Cargo-dock playable-area acceptance contract, activities, durations, resource windows, diagrams, status update and conditional support plan are original teaching design.",
+  "limits": "Selected original text and actual GAO page images, original deterministic teaching arithmetic and model review. No real project execution, scheduling product, optimization solver, probability validation or human study. No source PDF or screenshots redistributed."
+}
