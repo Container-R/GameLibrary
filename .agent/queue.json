@@ -361,7 +361,7 @@
       "id": "TASK-2026-0008",
       "question": "核实游戏开发全学科职责矩阵，补齐未覆盖的重要方向",
       "discipline": "PROD",
-      "status": "researching",
+      "status": "paused",
       "priority": 88,
       "priority_rationale": "具体问题具有跨学科复用价值及公开一手资料潜力",
       "expected_artifact": "管理档案/分类/roles-and-work-areas.md",
@@ -374,8 +374,8 @@
       "source_leads": [],
       "attempts": 1,
       "completed_at": null,
-      "last_progress_at": "2026-11-06T08:28:43Z",
-      "next_action": "Compare existing technical-animation role, foot-placement, skeleton-modifier, root-motion and Look-at readers against versioned two-bone IK bend-hint contracts. Determine whether endpoint versus bend-plane geometry is a distinct useful question; do not infer engine fallback, motion stability or visual results from static geometry.",
+      "last_progress_at": "2026-11-06T08:48:52Z",
+      "next_action": "按原职责矩阵问题重新确认范围；保留既有成果，不再作为无关专题的通用任务容器。",
       "blockers": [],
       "partial_artifacts": [
         "管理档案/研究记录/历史单元索引.json",
@@ -435,7 +435,7 @@
         "管理档案/来源笔记/box2d-aabb-overlap-candidates.json",
         "管理档案/来源笔记/fmod-quantized-untrigger.json"
       ],
-      "scope_note": "局部覆盖审计不是全学科分类研究完成",
+      "scope_note": "原职责矩阵未完成；后续独立问题分别登记。既有研究与已暂停草稿保持保留。",
       "previous_status": "researching",
       "historical_artifacts": [
         {
@@ -9826,12 +9826,35 @@
       ],
       "verification_method": "Primary version-qualified documentation, hypothetical wall-decoration conditions and independent complete reader review; no Unreal project or bake execution.",
       "publication_scope": "New focused reader in existing model-baking shelf, in containing commit."
+    },
+    {
+      "id": "TASK-2026-0280",
+      "question": "glTF普通属性读取怎样处理省略偏移，并避免只凭末端公式批准非法显式步长？",
+      "reader": "模型检查、转换或导入工具程序员与技术美术",
+      "scope": "已发表交错属性文章的偏移默认值与紧邻布局约束纠错；不包括全文重组和全库迁移。",
+      "expected_outcome": "有效偏移用于地址及范围公式，说明非法显式字段与步长限制，经独立技术及读者任务复核后发表。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0280/sources.json",
+        "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json"
+      ],
+      "next_action": "纠错完成；按审稿发现继续安排glTF专题边界、管理目录技术正文与导航整改，不把本任务当作全文验收。",
+      "blocker": null,
+      "updated_at": "2026-11-06T08:48:52Z",
+      "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+      "review": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json",
+      "related_task_ids": [
+        "TASK-2026-0008"
+      ],
+      "publication_identity": "Containing commit; remote readback is performed after publication."
     }
   ],
   "execution_policy": {
-    "normal_research_paused": false,
-    "highest_priority": "reader-first-source-grounded-research",
-    "resume_condition": "Frozen reader-baseline rebuild accepted; preserve reader-first standards and scoped evidence limits."
+    "normal_research_paused": true,
+    "highest_priority": "v2-topic-review-and-corrections",
+    "resume_condition": "Finish the authorized corrective batch; preserve other topics until v2 adoption coordination confirms their next scope. This temporary pause is not a fixed-count rebuild requirement."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

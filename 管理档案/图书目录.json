@@ -1,6 +1,14 @@
 {
-  "baseline_sha": "6bd1dfbec5e22126189ec87171d9bcadde4a6997",
-  "phase": "reader-first-maintenance",
+  "schema_version": 2,
+  "phase": "v2-inventory-pending",
+  "publication_base_sha": "8ef805174b5144c7e47635b83dcd00013fe4a1ae",
+  "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
+  "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
+  "legacy_header": {
+    "commit": "8ef805174b5144c7e47635b83dcd00013fe4a1ae",
+    "path": "管理档案/图书目录.json",
+    "scope": "Previous fixed-count and whole-library-complete metadata is retained in this immutable history, not used as current acceptance."
+  },
   "entries": [
     {
       "internal_id": "ROLE-ANIM-001",
@@ -1595,7 +1603,7 @@
       "area": "环境管线",
       "shelf": "模型导入",
       "proposed_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
-      "editorial_status": "正文已通过独立代理读者视角审读；本修订将正文与导航一并上架，不代表真人可用性测试",
+      "editorial_status": "已发布技术纠错；全文与导航仍待v2专题整改，不沿用历史通过作为新版验收。",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "current_read_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
       "legacy_retention": "旧技术全文退出当前树；原内容和有限失败历史保留固定历史链接，当前正文及明确支持入口继续承接。未重新认证历史运行。",
@@ -1614,12 +1622,13 @@
         "support": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
         "reader_sha256": "a7a216e5deb6ca1d1c42ee1b3768999e90c7f4525774b8e2eb7fa0dfc077ae58"
       },
-      "reader_sha256": "85a31e29b07eb9b75089dfd1e2d72a71e210a4e7b17fdff3f763cf893a982216",
+      "reader_sha256": "e5cda04d1f8aee138a8f5efa4f6901968c9514a6ddbfcbe685d53462e7435a5e",
       "review_paths": [
         "管理档案/审查/半透明三角形顺序-来源与读者审查.md",
         "管理档案/审查/glTF整数属性-固定规范与读者审查.md",
         "管理档案/审查/cgltf稀疏整数属性-协议与读者审查.md",
-        "管理档案/审查/glTF变形位置-来源与读者审查.md"
+        "管理档案/审查/glTF变形位置-来源与读者审查.md",
+        "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json"
       ],
       "triangle_order_support": {
         "scope": "Optional triangle-order example distinguishes geometry preservation from order-sensitive source-over composition.",
@@ -1659,6 +1668,13 @@
         "source": "管理档案/来源笔记/gltf-morph-position-delta.json",
         "review": "管理档案/审查/glTF变形位置-来源与读者审查.md",
         "scope": "Optional finite paper example; original reader and existing observations unchanged."
+      },
+      "updated_at": "2026-11-06",
+      "v2_review": {
+        "record": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json",
+        "article_verdict": "needs-revision",
+        "navigation_verdict": "needs-revision",
+        "accepted_correction": "Effective byteOffset defaults and explicit vertex stride constraints."
       }
     },
     {
@@ -4113,22 +4129,5 @@
         "https://www.factorio.com/blog/post/fff-395"
       ]
     }
-  ],
-  "rewritten_reader_books": 55,
-  "legacy_entries_remaining": 0,
-  "whole_library_rebuild_complete": true,
-  "counting_note": "冻结的55项旧书整改及内容去向已验收，根目录归并见0702cce；最后独立远端审读抽查三条路线，不代表所有知识和历史实验重新认证。",
-  "completion_rule": "Every retained useful subtopic must be mapped to an accepted reader treatment or an explicit reviewed exclusion/merge decision; a published core book does not complete its old composite item.",
-  "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
-  "inventory_state": "published-reader-inventory",
-  "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "a9025254b830641c3223e684c2c4f398a938b30e",
-  "accounted_for_original_items": 55,
-  "reader_books_total": 111,
-  "post_baseline_research_books": 56,
-  "record_transformation": {
-    "scope": "Catalog minimized to bibliographic progress, repository paths, reader identity and review summaries. Detailed run fields and input/output bindings are omitted here; linked technical evidence is unchanged.",
-    "date": "2026-11-02",
-    "history_rewritten": false
-  }
+  ]
 }

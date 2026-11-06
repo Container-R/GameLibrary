@@ -1,0 +1,67 @@
+{
+  "task_id": "TASK-2026-0280",
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "read_on": "2026-11-06",
+  "source_version": "glTF2.0 specification fixed commit59ecbdba704206bb656965ab4e202881806066f1",
+  "sources": [
+    {
+      "id": "spec",
+      "author": "Khronos Group",
+      "title": "glTF2.0 Specification",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+      "blob_sha": "e5088cdc9a4e344e836568f57e2db6726f5a6740"
+    },
+    {
+      "id": "accessor",
+      "author": "Khronos Group",
+      "title": "accessor.schema.json",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json",
+      "blob_sha": "07f890ac349b3622ac589f6c3fe0cfb405d60e96"
+    },
+    {
+      "id": "view",
+      "author": "Khronos Group",
+      "title": "bufferView.schema.json",
+      "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/bufferView.schema.json",
+      "blob_sha": "d10717a51a7e489bbee40e57f88b67a0f65f656d"
+    }
+  ],
+  "claims": [
+    {
+      "claim": "For an accessor sourced from a bufferView, either byteOffset may independently be omitted and its effective value is zero.",
+      "source": [
+        "spec",
+        "accessor",
+        "view"
+      ],
+      "locator": "Buffer Views overview1078–1080;Accessors overview1143;each properties.byteOffset and required list.",
+      "observed_content": "Both specification paragraphs state an undefined offset is zero;both schemas give default0 and omit byteOffset from required fields.",
+      "conditions": "Existing accessor.bufferView association;do not invent a view when absent.",
+      "article_section": "把字段翻译成一次实际读取"
+    },
+    {
+      "claim": "Defaulting does not legalize explicit null, negative or wrong-type byteOffset values.",
+      "source": [
+        "accessor",
+        "view"
+      ],
+      "locator": "properties.byteOffset.type and minimum",
+      "observed_content": "Both properties require integer with minimum0.",
+      "conditions": "Validate present fields before arithmetic.",
+      "article_section": "把字段翻译成一次实际读取"
+    },
+    {
+      "claim": "An explicit vertex stride has constraints beyond the accessor end formula.",
+      "source": [
+        "spec",
+        "view"
+      ],
+      "locator": "Buffer Views1124–1130;Accessing Data1348–1375;schema properties.byteStride",
+      "observed_content": "Explicit stride is a multiple of4,in4..252,no greater than view.byteLength,no smaller than accessor element size,and aligned to component size.",
+      "conditions": "Vertex attribute accessors;nonvertex data must not define byteStride.",
+      "article_section": "长度检查必须同时尊重view和buffer"
+    }
+  ],
+  "interpretation": "The article now names effective offsets in address and range expressions. A three-element tightly packed FLOAT VEC3 layout explains omitted fields. A reviewer-selected single-element layout exposes why the end formula alone cannot validate a declared stride.",
+  "validation_limits": "Specification and schema reading plus arithmetic;no new parser,validator,asset import,renderer,engine or historical experiment execution. Not complete glTF or whole-library v2 review."
+}

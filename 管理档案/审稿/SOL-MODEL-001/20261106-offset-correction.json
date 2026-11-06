@@ -1,0 +1,42 @@
+{
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "article_sha256": "e5cda04d1f8aee138a8f5efa4f6901968c9514a6ddbfcbe685d53462e7435a5e",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "corrective-patch-to-existing-article",
+  "correction_verdict": "accepted",
+  "full_article_v2_verdict": "needs-revision",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-technical-gltf-20261106",
+      "mode": "independent-agent",
+      "verdict": "needs-revision",
+      "correction_verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-reader-gltf-20261106",
+      "mode": "independent-agent",
+      "verdict": "needs-revision",
+      "correction_verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-reader-gltf-20261106",
+      "mode": "independent-agent",
+      "verdict": "needs-revision",
+      "report": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0280/sources.json",
+      "sha256": "55597450b00af4db2f83eee31a0b3b4019881ce98f26cdd8e71b0efbb294b1aa"
+    }
+  ],
+  "review_report_sha256": "26ba32df7be8342bd70576831c442a4c89be84324060c4bc836a405aec7139a4",
+  "publication_basis": "Correct published technical errors while retaining explicit outstanding full-article and navigation revisions; not a new full-article v2 acceptance.",
+  "updated_at": "2026-11-06T08:48:52Z"
+}

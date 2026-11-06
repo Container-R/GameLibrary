@@ -61,15 +61,19 @@ glTF 用 JSON 描述模型结构，实际数值通常存于二进制数据中。
 | `type` | VEC3，即三个分量 | VEC3 |
 | `count` | 4个元素 | 4个元素 |
 
-第0个位置从 buffer 字节 `16+4=20` 开始，读取12字节。下一次读取的起点比本次起点后移28字节，而不是只跳过刚读完的12字节。第 `i` 个元素的地址因此是：
+第0个位置从 buffer 字节 `16+4=20` 开始，读取12字节。下一次读取的起点比本次起点后移28字节，而不是只跳过刚读完的12字节。实现读取器时，还要先处理字段的默认值：`view.byteOffset` 和 `accessor.byteOffset` 都可以省略，省略的一项各按0计算。[1][3][9] 第 `i` 个元素的地址因此是：
 
 ```text
-buffer内起点 = view.byteOffset + accessor.byteOffset + i × stride
+view_offset     = view.byteOffset，省略时取0
+accessor_offset = accessor.byteOffset，省略时取0
+buffer内起点 = view_offset + accessor_offset + i × stride
 ```
 
-`i`从0开始，小于 `count`。对本文有 view 的普通属性，`stride` 来自该 view 的 `byteStride`；没有这个字段时，按紧密排列的元素大小推进。[2]
+`i`从0开始，小于 `count`。对本文有 view 的普通属性，`stride` 来自该 view 的 `byteStride`；没有这个字段时，按紧密排列的元素大小推进。[2] 这里的默认值只处理省略，不能把显式的 `null`、负数或错误类型也改成0；这些值应按字段要求报错。[3][9] 如果 accessor 没有 `bufferView`，则没有可供这条公式寻址的 view，应按后文的元素来源规则处理。
 
-将四个编号代入，可以得到完整的对照：
+例如，另一个普通 `FLOAT VEC3` accessor 引用一个36字节的 view，`count=3`，两项 `byteOffset` 和 `byteStride` 都省略。两个有效偏移均为0，步长为12，三个元素的起点就是0、12、24，最后一个元素在字节36之前结束。字段没有写出，并不意味着读取器可以跳过默认值处理。
+
+回到前面的四顶点交错布局，将四个编号代入，可以得到完整的对照：
 
 | 顶点编号 | 位置起点 | 位置读取区间 | 法线起点 | 法线读取区间 |
 |---:|---:|---|---:|---|
@@ -102,7 +106,7 @@ glTF 的多字节分量采用小端序；本例要按小端32位浮点数解释�
 要计算一个 accessor 需要多长的 view，先找到最后一个元素的起点，再加上这个元素本身的大小：
 
 ```text
-view内所需末端 = accessor.byteOffset
+view内所需末端 = accessor_offset
               + (count - 1) × stride
               + element_size
 ```
@@ -119,13 +123,13 @@ view内所需末端 = accessor.byteOffset
 读取前还要检查 view 自身是否落在 buffer 的声明范围内，以及实际取得的数据是否足够。对于本文这种普通数据，可以分别核对：
 
 ```text
-view.byteOffset + view.byteLength <= buffer声明长度
+view_offset + view.byteLength <= buffer声明长度
 accessor所需末端 <= view.byteLength
 ```
 
 实现时先检查字段是否合法，再做地址运算；使用固定宽度整数的语言还要防止加法和乘法溢出。不能让一个溢出后变小的末端值蒙混通过范围检查。
 
-范围正确也不是所有格式要求都满足。以本例4字节浮点分量为例，view 偏移与 accessor 偏移要**分别**满足4字节对齐，而非只检查二者相加的结果。顶点步长还受规范约束，例如它必须容得下一个元素；两个顶点属性共用 view 时，需要声明步长。本文28字节的布局满足这些条件，索引 view 则不使用顶点步长。[2][3]
+范围正确也不是所有格式要求都满足。以本例4字节浮点分量为例，view 偏移与 accessor 偏移要**分别**满足4字节对齐，而非只检查二者相加的结果。显式声明的顶点 `byteStride` 必须是4的倍数、处于4至252之间，既不能小于一个元素的大小，也不能大于 `view.byteLength`；它还必须满足分量类型的字节对齐。[1][2][3] 因而即使只有一个12字节的元素、末端计算为12，`byteStride=28` 配合 `view.byteLength=12` 仍不合法，不能只通过末端公式就放行。两个顶点属性共用 view 时，需要声明步长。本文28字节的布局满足这些条件，索引 view 则不使用顶点步长。[2][3]
 
 ## 读取位置以后，还要按索引恢复三角形
 
@@ -193,7 +197,7 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 
 ## 参考来源
 
-以下使用固定的 Khronos glTF 2.0 规范修订，于2026-11-01重新核对。示例坐标、填充数值和布局来自本库原有教学输入；错误步长表与边界计算是对该输入的逐项解释，不是新增引擎或GPU观察。
+以下使用固定的 Khronos glTF 2.0 规范修订，于2026-11-01重新核对；2026-11-06补核两项偏移的省略默认值及固定schema。示例坐标、填充数值和布局来自本库原有教学输入；错误步长表与边界计算是对该输入的逐项解释，不是新增引擎或GPU观察。
 
 1. Khronos Group，[glTF 2.0 Specification：Buffer Views、Accessors及组件类型](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#buffer-views)。参见 view 范围、accessor元素来源、FLOAT大小与小端序要求。
 2. Khronos Group，[Accessing Data from Buffer Views](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc#data-alignment)。参见元素地址、所需范围、独立偏移对齐与步长条件。
@@ -206,6 +210,8 @@ glTF 将同一个索引用于该图元的全部顶点属性。这里的**图元�
 7. Morten S. Mikkelsen，[MikkTSpace 输出回调及烘焙／渲染配对说明](https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h#L79-L139)，固定作者提交，2026-11-01复核。这里只转述接口，不复制算法实现；不同三角化即使有相同顶点基，也可能产生不同插值。
 
 8. Johannes Kuhlmann 等，[cgltf v1.15 固定源码：单元素读取与浮点展开](https://github.com/jkuhlmann/cgltf/blob/360db1a95480fe102ae9c69b27c5d101167ff5ba/cgltf.h#L2355-L2449)，提交 `360db1a95480fe102ae9c69b27c5d101167ff5ba`。2026-11-02 核对接口并完成本库两份自产输入的有限 C 执行；[说明与安全结果记录](../../../../管理档案/支持资料/cgltf稀疏属性展开/README.md)区分解析、加载、检查和展开。仅 FLOAT SCALAR 的密集/零基底配置，不代表完整格式验证或模型导入。
+
+9. Khronos Group，同一固定规范修订的 [accessor schema](https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/schema/accessor.schema.json)：`byteOffset` 的整数类型、非负约束、默认0以及对 `bufferView` 的依赖；结合[3]的 view 默认值使用。2026-11-06核对。
 
 ---
 

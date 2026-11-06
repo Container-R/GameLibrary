@@ -1,0 +1,17 @@
+{
+  "task_id": "TASK-2026-0280",
+  "phase": "published",
+  "updated_at": "2026-11-06T08:48:52Z",
+  "base_commit": "8ef805174b5144c7e47635b83dcd00013fe4a1ae",
+  "article": "GameLibrary/技术美术/环境管线/模型导入/读取glTF交错顶点数据时的偏移与步长.md",
+  "source_record": "管理档案/研究/TASK-2026-0280/sources.json",
+  "review_record": "管理档案/审稿/SOL-MODEL-001/20261106-offset-correction.json",
+  "decision": "Publish narrow technical correction; retain needs-revision for full article and navigation.",
+  "remaining": [
+    "Reorganize article scope and independent methods.",
+    "Classify technical prose currently in management storage.",
+    "Repair affected hierarchical navigation after content inventory."
+  ],
+  "limits": "No new engine, renderer or full-format validator test; no legacy experiment recertification or whole-library v2 acceptance.",
+  "remote_identity": "Containing commit; publication is only reported successful after remote readback."
+}
