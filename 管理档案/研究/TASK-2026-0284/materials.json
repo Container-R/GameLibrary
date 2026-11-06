@@ -1,0 +1,168 @@
+{
+  "task_id": "TASK-2026-0284",
+  "baseline_commit": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+  "role": "Current editorial material-index identity with immutable historical explanation; no new native run or inherited acceptance.",
+  "historical_explanations": [
+    {
+      "path": "管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md",
+      "git_blob_sha1": "698096c4a02c659bf965bc129832ae6f621a3eaa",
+      "sha256": "63ee7d6af8d65fc3ebc5a54562511e7f21528e0bb0cc1656a952374fc17121bf",
+      "bytes": 7356,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md",
+      "current_disposition": "Replace teaching prose with a short material/history index pointing to the new formal article and this immutable historical snapshot."
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+      "git_blob_sha1": "9e9f320556d6b7003dcba0f07f97457200c59b52",
+      "sha256": "bb8aaedbfca19382fe9e62a1ab07bf4acd96c7adb7591c7f5eff9b050d7726ed",
+      "bytes": 7862,
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+      "current_disposition": "Replace teaching prose with a short material/history index pointing to the new formal article and this immutable historical snapshot."
+    }
+  ],
+  "frozen_package_members": [
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/ACCEPTANCE.json",
+      "git_blob_sha1": "eae058b78dd46839240bb7d311bdce3a1c27c12c",
+      "sha256": "a2843ed2d1b54815ea1982ee2cd1b2d3f5703d9824c49944397b2261f2dc22ab",
+      "bytes": 620,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/ACCEPTANCE.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/NATIVE-REVIEW.md",
+      "git_blob_sha1": "86709bc197b574fd40a49b03a659e7c548009203",
+      "sha256": "96e655e43d75f89698125ac44a8ba78dc1a8d6660dd9ab57a97d5851ee8b916b",
+      "bytes": 3974,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/NATIVE-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/PRE-REVIEW.md",
+      "git_blob_sha1": "fac07fc3becd810c2da4fde4e33d8ea701744b48",
+      "sha256": "0f7edc4e952b6883c86b0bceb4aadad0eb0368a3e72cbe46d14510320eaea143",
+      "bytes": 7673,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/PRE-REVIEW.md"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/PROTOCOL.md",
+      "git_blob_sha1": "b1916d607822a241f2874b27ba5477f9b14b3c74",
+      "sha256": "8ca3ef52313f411cc6d18b658b69e5bf8a1d9d652fddae6cdf6d5447b5772ef5",
+      "bytes": 6274,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/PROTOCOL.md"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/SOURCE-MANIFEST.json",
+      "git_blob_sha1": "9649f9f70e63493e821f55627ef88c70f07dfc65",
+      "sha256": "49ecb85282c057d78a4851074aee9f13c808f655bca0aed603cd925288bcd9a8",
+      "bytes": 642,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/SOURCE-MANIFEST.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/expected.json",
+      "git_blob_sha1": "f230cfb4c653ee8cc34e0a0666819ab83426b2b9",
+      "sha256": "bb0b71cc525a8f4438a1ddc464e2a42d16aa83055bfc232be129f6139e3a3532",
+      "bytes": 604,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/expected.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/fixture.c",
+      "git_blob_sha1": "22c66acc06cda75a5e97fa1896a2bdc8eb5b422a",
+      "sha256": "315529ee9079983bebadefa8fe3ee02233fc48c614fbe29b0d3651f15d8e43d5",
+      "bytes": 4467,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/fixture.c"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/observation.json",
+      "git_blob_sha1": "dbcdf29888eab85cc0eac26083620413a1dbdc7f",
+      "sha256": "e44f11bbf5407738f7aabfb8f3d2660acc6392c0012ecc6d2c02edb2aeb35881",
+      "bytes": 955,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/observation.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-consumer-review.py",
+      "git_blob_sha1": "95e0b6ee581396bd9183bdaa551ff4ccd8b52c0c",
+      "sha256": "e132bcd4955b538bcee2e964e678f691d8512cac1abc066b54bfd7ca0ca2c4cd",
+      "bytes": 2547,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-consumer-review.py"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-normal.json",
+      "git_blob_sha1": "23f53cf619c3832c44c40c87aca0ec025d4b4b61",
+      "sha256": "30719ef97070297081540951a83787557821c2d92ea3cd75a62424a01bc7139f",
+      "bytes": 1848,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-normal.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-optimized.json",
+      "git_blob_sha1": "a58b5f1f16e580fa1055c8dd599f60e245cd4e3c",
+      "sha256": "31650498b8809dc2cab3926f5893e855c2fc43b344e7dd5fcbfe4598c2254d17",
+      "bytes": 1851,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/synthetic-optimized.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/validate.py",
+      "git_blob_sha1": "4bc21d69213bade82ac0a04adaafb1f7950d77e6",
+      "sha256": "c9210e5017c2ef50b40c9008634d99068d1cb282d7e237425ba9f4818b61dd13",
+      "bytes": 3867,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/validate.py"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/validation-optimized.json",
+      "git_blob_sha1": "5a7f4505a0c5ac7557ed2f84eca0cc256b7d1b2c",
+      "sha256": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19",
+      "bytes": 210,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/validation-optimized.json"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/validation.json",
+      "git_blob_sha1": "5a7f4505a0c5ac7557ed2f84eca0cc256b7d1b2c",
+      "sha256": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19",
+      "bytes": 210,
+      "preserve": "byte-identical",
+      "historical_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/validation.json"
+    }
+  ],
+  "archive_revision": {
+    "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/ARCHIVE-MANIFEST.json",
+    "sha256": "46db318497812fbba96f99d83113fbdd919d3ee10f3ddc957c092c33ca085c95",
+    "previous": {
+      "commit": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+      "manifest_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/ARCHIVE-MANIFEST.json",
+      "manifest_sha256": "993d67734a2f64ee60df7c4be4120306c3746d67b97d5aec28a406d5eee43b22",
+      "readme_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+      "readme_sha256": "bb8aaedbfca19382fe9e62a1ab07bf4acd96c7adb7591c7f5eff9b050d7726ed"
+    },
+    "files_map_change": "Only README.sha256 changed among the15 existing members; other14 entries and member bytes unchanged.",
+    "source_manifest_sha256": "49ecb85282c057d78a4851074aee9f13c808f655bca0aed603cd925288bcd9a8",
+    "execution_input_identity": "Six frozen source inputs unchanged; four in public package, upstream C/H intentionally obtained separately.",
+    "historical_acceptance": "Existing ACCEPTANCE, NATIVE-REVIEW, PRE-REVIEW and old reader review remain original bytes, with their original scope and identities."
+  },
+  "current_indices": [
+    {
+      "path": "管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md",
+      "sha256": "d044d3c115555d74a0df0cdef3666e5cda6ab5304a039a42bfd46aca872cbe78"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+      "sha256": "e94834091afc6c654c99e3a551ee7ecd290bffadfdec0235a87ac8142ad9b9b0"
+    }
+  ],
+  "coverage": {
+    "fixed_head": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+    "all_current_blobs_matched": 2370,
+    "scope": "Exact current text corpus, bounded path/hash and JSON/Markdown link search; not complete professional reading, external aliases or every historical commit."
+  },
+  "observation_limits": "One mirrored-UV two-triangle input, two historical generator calls. Cover-order replay and14 synthetic consumer conditions are not new geometry cases. No current Mikk/compiler/engine/GPU/image/platform/performance run."
+}

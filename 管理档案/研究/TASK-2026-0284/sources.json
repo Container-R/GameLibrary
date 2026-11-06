@@ -1,0 +1,80 @@
+{
+  "task_id": "TASK-2026-0284",
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/接收MikkTSpace面角切线后，怎样重建顶点与索引.md",
+  "primary_sources": [
+    {
+      "source": {
+        "author": "Morten S. Mikkelsen",
+        "title": "mikktspace.h Version1.0",
+        "revision": "3e895b49d05ea07e4c2133156cfa94369e19e409",
+        "url": "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.h",
+        "git_blob": "52c44a713c60ebff71133a41e0711bbf7199fc5e",
+        "sha256": "17fc433894f24c73753d548086cc4d8c5c0379f4a6edfb98b5da243e4f0bc3d0"
+      },
+      "locator": "65–115",
+      "claim": "Input callbacks are addressed by face/corner; Basic output is unit tangent and sign with simplified bitangent relation, unindexed, and must not be averaged/overwritten through old indices.",
+      "observed_content": "Read selected callbacks, both-output option, explicit new-index warning and default generation API.",
+      "conditions": "Basic-only reception for the stated static nondegenerate triangle scope; no full-output magnitude/real-bitangent equivalence or global algorithm proof.",
+      "article_sections": [
+        "输出身份",
+        "保存完整回调",
+        "符号关系"
+      ]
+    },
+    {
+      "source": {
+        "author": "Morten S. Mikkelsen",
+        "title": "mikktspace.c",
+        "revision": "3e895b49d05ea07e4c2133156cfa94369e19e409",
+        "url": "https://github.com/mmikk/MikkTSpace/blob/3e895b49d05ea07e4c2133156cfa94369e19e409/mikktspace.c",
+        "git_blob": "0342ae0146f1e14854ad8d3309bbbc3d27adc9bc",
+        "sha256": "de87e74107df766ce68108801262bd8d53899414236b59810509a8fc2a51e288"
+      },
+      "locator": "235–275;373–419;965–1007;1139–1280",
+      "claim": "The generator builds internal P/N/UV sharing and later groups; final callbacks retain original face/corner and sign. Successful generation is distinct from receiving a complete output table.",
+      "observed_content": "Read supported-face count, initial internal welding, final loop and conditional output calls, orientation calculation and subgroup decisions.",
+      "conditions": "Ordinary nondegenerate triangles only; degenerates/quads have separate paths. Internal welding is not approval of application final vertex sharing. No current native run.",
+      "article_sections": [
+        "输入与输出域",
+        "内部计算和最终共享",
+        "镜像UV",
+        "回调完整性"
+      ]
+    },
+    {
+      "source": {
+        "author": "Khronos Group",
+        "title": "glTF2.0 Specification",
+        "revision": "59ecbdba704206bb656965ab4e202881806066f1",
+        "url": "https://github.com/KhronosGroup/glTF/blob/59ecbdba704206bb656965ab4e202881806066f1/specification/2.0/Specification.adoc",
+        "git_blob": "e5088cdc9a4e344e836568f57e2db6726f5a6740",
+        "sha256": "8951acd6f3299e2ca28b4017e128626731049932ef316556e320e05266e73f41"
+      },
+      "locator": "1660–1747;1813–1830",
+      "claim": "TANGENT is four components; one primitive index selects corresponding elements of all attributes; counts and index type/range/reserved maximum matter. Mikk generation uses coordinates associated with normal texture; equal triangle W is SHOULD and differing W gives undefined tangent space.",
+      "observed_content": "Read type/finiteness/count/shared-index constraints and exact generation/bitangent wording.",
+      "conditions": "No extension, morph or skin pipeline verification; logical reconstruction is not completed serialization. Do not turn SHOULD into MUST.",
+      "article_sections": [
+        "成套属性",
+        "逐角不变量",
+        "索引宽度",
+        "生成采用条件"
+      ]
+    }
+  ],
+  "original_method": {
+    "status": "Engineering synthesis derived from source contracts, not an upstream provided reindexing API.",
+    "algorithm": "Capture by immutable face/corner; after complete accepted results build a per-primitive key(oldIndex, exact accepted tangent4 representation), copy the full source record and assign corner-to-new index; validate by per-corner expansion before whole-result handoff.",
+    "equality": "Explicit bit-pattern policy, finite values required, signed zero may remain split. Unit-length acceptance tolerance is separate from sharing equality. No epsilon welding or cross-platform bitwise guarantee.",
+    "proof_scope": "Keeping oldIndex forbids cross-source welding; accepted new tangent data can only refine sharing. Other face-corner or subsequently changed attributes need their own representation/keys.",
+    "cost": "At most one logical output record per input corner for this method, subject to count/budget/index-type checks. No measured reduction or performance claim."
+  },
+  "historical_materials": {
+    "record": "管理档案/研究/TASK-2026-0284/materials.json",
+    "input": "One mirrored-UV double triangle, six Basic outputs with+X and opposing face signs.",
+    "identity": "Source manifest six inputs frozen; current archive README change is editorial, not a new execution or acceptance.",
+    "limits": "Two historical same-input calls, not two geometry cases. Overwrite replay and consumer checks do not add Mikk runs. No original program rerun for this publication."
+  },
+  "source_reading": "Retained primary bytes rehashed to fixed identities and decisive original paths reread; independent technical review separately verifies source references.",
+  "accessed_at": "2026-11-06"
+}

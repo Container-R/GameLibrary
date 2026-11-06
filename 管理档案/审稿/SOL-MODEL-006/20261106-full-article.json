@@ -1,0 +1,92 @@
+{
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/接收MikkTSpace面角切线后，怎样重建顶点与索引.md",
+  "article_sha256": "cf839a715d0abd6ee6c31c463698ebab85be596dc94395902855b98d763b1e91",
+  "author": "GameLibrary editorial maintainer",
+  "publication_kind": "full-method-and-material-index-migration",
+  "verdict": "pass",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "independent-model-tangent-technical-20261106",
+      "mode": "independent-full-technical-review-primary-sources-and-archive-identity",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-006/20261106-full-article.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "independent-model-tangent-reader-20261106",
+      "mode": "independent-full-reader-task",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-006/20261106-full-article.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "independent-model-tangent-navigation-20261106",
+      "mode": "independent-root-markdown-route-and-link-review",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-006/20261106-full-article.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0284/sources.json",
+      "sha256": "b029e09fdecfb7306e6ac8e23d01baf139dc71b6dbc41f08571509bc2f6709e0"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0284/materials.json",
+      "sha256": "f4d5ab9d156a011742cc86606a55a659b4e9e12a8457f411463cbf2801f395cc"
+    }
+  ],
+  "report_sha256": "f685c273a04379dfe35e806bf6dab51d1df27c5ce28674653b664dacd2287434",
+  "scope_record": "管理档案/研究/TASK-2026-0284/范围与保留.md",
+  "navigation_fingerprints": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864"
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "f82d83b30ea46790b9ad983fab882cd564a52109d528c34c420caedd0c440b06"
+    },
+    {
+      "path": "GameLibrary/技术美术/README.md",
+      "sha256": "19fdbe3550da7d3276ed70ce38f4697311b7e533b853b8d4670d97e3ccd79257"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/README.md",
+      "sha256": "8dc7564b6115119be80ccc2ae82263b90a594a232d4a8f5a1e6364763f3acc2d"
+    },
+    {
+      "path": "GameLibrary/技术美术/环境管线/模型导入/README.md",
+      "sha256": "ae5ceeab41351493761f01ecc96af3d20870a2bf993840f7ee71ee074c0aa32d"
+    }
+  ],
+  "material_index_fingerprints": [
+    {
+      "path": "管理档案/研究记录/source-notes/tangent-corner-output-and-reindexing.md",
+      "sha256": "d044d3c115555d74a0df0cdef3666e5cda6ab5304a039a42bfd46aca872cbe78"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+      "sha256": "e94834091afc6c654c99e3a551ee7ecd290bffadfdec0235a87ac8142ad9b9b0"
+    },
+    {
+      "path": "管理档案/支持资料/MikkTSpace镜像UV面角输出/ARCHIVE-MANIFEST.json",
+      "sha256": "46db318497812fbba96f99d83113fbdd919d3ee10f3ddc957c092c33ca085c95"
+    }
+  ],
+  "limited_link_edits": [
+    {
+      "path": "管理档案/来源笔记/tangent-handedness-normal-transform.md",
+      "sha256": "fbf190a5e6e8816a5d47521cfd4a5fe84ef222002f94c879ba010540e0aabaf0",
+      "scope": "One href or display label only; not renewed full acceptance of older prose."
+    },
+    {
+      "path": "管理档案/研究记录/README.md",
+      "sha256": "77d03df9b3cd3ce317d554bfb7811fecdde2cd0d5255ee0ae2311116c45fcc37",
+      "scope": "One href or display label only; not renewed full acceptance of older prose."
+    }
+  ],
+  "limits": "Independent model reviews and bounded original arithmetic/data/hash checks. No new native generator, fixture, consumer, engine, GPU, visual, performance or human test. Production generator size constraints not safety-audited. Other retained technical prose and whole-library acceptance unfinished.",
+  "updated_at": "2026-11-06T10:35:34Z"
+}

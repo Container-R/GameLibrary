@@ -1,11 +1,11 @@
 {
-  "scope": "Published source protocol and numeric observations; no local executable identity or rerun claim. Upstream sources referenced by SOURCE-MANIFEST must be obtained separately.",
+  "scope": "Current editorial material-index revision: only README presentation changed; the other14 listed members retain exact bytes. Not a new execution, frozen input set, or acceptance. Upstream sources in SOURCE-MANIFEST remain separately obtained.",
   "files": {
     "ACCEPTANCE.json": "a2843ed2d1b54815ea1982ee2cd1b2d3f5703d9824c49944397b2261f2dc22ab",
     "NATIVE-REVIEW.md": "96e655e43d75f89698125ac44a8ba78dc1a8d6660dd9ab57a97d5851ee8b916b",
     "PRE-REVIEW.md": "0f7edc4e952b6883c86b0bceb4aadad0eb0368a3e72cbe46d14510320eaea143",
     "PROTOCOL.md": "8ca3ef52313f411cc6d18b658b69e5bf8a1d9d652fddae6cdf6d5447b5772ef5",
-    "README.md": "bb8aaedbfca19382fe9e62a1ab07bf4acd96c7adb7591c7f5eff9b050d7726ed",
+    "README.md": "e94834091afc6c654c99e3a551ee7ecd290bffadfdec0235a87ac8142ad9b9b0",
     "SOURCE-MANIFEST.json": "49ecb85282c057d78a4851074aee9f13c808f655bca0aed603cd925288bcd9a8",
     "expected.json": "bb0b71cc525a8f4438a1ddc464e2a42d16aa83055bfc232be129f6139e3a3532",
     "fixture.c": "315529ee9079983bebadefa8fe3ee02233fc48c614fbe29b0d3651f15d8e43d5",
@@ -16,5 +16,19 @@
     "validate.py": "c9210e5017c2ef50b40c9008634d99068d1cb282d7e237425ba9f4818b61dd13",
     "validation-optimized.json": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19",
     "validation.json": "0b255ab57cbe1fb9f1a6659c9296b10fbebdd4303b978f184008fc904c1ebb19"
+  },
+  "historical_archive": {
+    "commit": "ba9a11a2ffcb10bec72574c447f2246fdd746a71",
+    "manifest_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/ARCHIVE-MANIFEST.json",
+    "manifest_sha256": "993d67734a2f64ee60df7c4be4120306c3746d67b97d5aec28a406d5eee43b22",
+    "readme_url": "https://github.com/Container-R/GameLibrary/blob/ba9a11a2ffcb10bec72574c447f2246fdd746a71/管理档案/支持资料/MikkTSpace镜像UV面角输出/README.md",
+    "readme_sha256": "bb8aaedbfca19382fe9e62a1ab07bf4acd96c7adb7591c7f5eff9b050d7726ed"
+  },
+  "editorial_change": {
+    "task": "TASK-2026-0284",
+    "formal_article": "GameLibrary/技术美术/环境管线/模型导入/接收MikkTSpace面角切线后，怎样重建顶点与索引.md",
+    "change": "Move method explanation to one formal article; retain original experiment identity and history.",
+    "source_manifest_changed": false,
+    "acceptance_or_review_changed": false
   }
 }

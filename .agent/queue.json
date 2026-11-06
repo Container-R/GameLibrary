@@ -9931,18 +9931,44 @@
       "reader": "模型处理工具程序员及技术美术",
       "scope": "核现有面角切线、镜像UV和重索引技术稿及固定实现，先排除重复后形成一个连贯方法；不扩写其他导入或动画问题。",
       "expected_outcome": "读者能判断拆分条件、保持完整属性关系并重建索引；来源和历史证据身份明确后独立全文审查。",
+      "phase": "published",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0284/sources.json",
+        "管理档案/研究/TASK-2026-0284/materials.json",
+        "管理档案/研究/TASK-2026-0284/范围与保留.md",
+        "管理档案/审稿/SOL-MODEL-006/20261106-full-article.json"
+      ],
+      "next_action": "接续关节编号与权重的实例绑定及逐顶点影响表范围研究。",
+      "blocker": null,
+      "updated_at": "2026-11-06T10:35:34Z",
+      "related_task_ids": [
+        "TASK-2026-0283",
+        "TASK-2026-0281"
+      ],
+      "article_path": "GameLibrary/技术美术/环境管线/模型导入/接收MikkTSpace面角切线后，怎样重建顶点与索引.md",
+      "review": "管理档案/审稿/SOL-MODEL-006/20261106-full-article.json",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0285",
+      "question": "给定glTF mesh/skin实例，怎样解码并验证关节编号和权重，得到可靠的逐顶点关节节点—权重影响表？",
+      "reader": "模型导入工具程序员及技术美术",
+      "scope": "核现有管理技术稿与正式普通/稀疏读取的重叠，研究实例绑定、成对集合、count、关节范围、跨集合重复及权重数值校验；不实现变换、蒙皮或动画。",
+      "expected_outcome": "明确一个不重复的完整影响表方法及必要来源，成熟后独立全文审查和有限归属修复。",
       "phase": "discovery",
       "status": "active",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [
-        "管理档案/研究/TASK-2026-0283/范围与保留.md"
+        "管理档案/研究/TASK-2026-0284/范围与保留.md"
       ],
-      "next_action": "核现行正式正文与两份管理技术说明的范围、固定MikkTSpace输出约定、历史材料身份和缺失步骤。",
+      "next_action": "对照固定glTF规范与当前管理稿，界定从节点实例、各JOINTS/WEIGHTS集合到可靠影响表的缺失步骤和读者任务。",
       "blocker": null,
-      "updated_at": "2026-11-06T10:11:57Z",
+      "updated_at": "2026-11-06T10:35:34Z",
       "related_task_ids": [
-        "TASK-2026-0283",
-        "TASK-2026-0281"
+        "TASK-2026-0284",
+        "TASK-2026-0282"
       ]
     }
   ],
@@ -9950,7 +9976,7 @@
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Formalize the retained face-corner tangent and complete-vertex reindexing method after overlap and source checks."
+    "next_priority": "Scope the complete instance-specific joint/weight influence-table method without duplicating generic decoding or expanding to full skinning."
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
