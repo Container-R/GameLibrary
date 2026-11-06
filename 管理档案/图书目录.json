@@ -3327,15 +3327,22 @@
       "scope_note": "固定原实现与原创三格环；一次分支失败不证明规则无解，不保证生成完整、全局连通或品质。",
       "review_paths": [
         "管理档案/审查/WFC分支矛盾与规则有解-来源与读者审查.md",
-        "管理档案/审查/WFC权重与数量要求-补充审读.md"
+        "管理档案/审查/WFC权重与数量要求-补充审读.md",
+        "管理档案/审查/WFC候选数量与熵-来源与读者审查.md"
       ],
       "source_record": "管理档案/来源笔记/wfc-branch-contradiction.json",
-      "reader_sha256": "f504052813a97a3ef61d11f524669743837d60c47f7bbe96a4d1edcbddf6aa1a",
+      "reader_sha256": "66679d0ea24af040e52a565d7cc927ca25568190e439671a4454ad42fc0e49e4",
       "generation_layer_support": {
         "source_record": "管理档案/来源笔记/dead-cells-generation-layers.json",
         "review": "管理档案/审查/房间生成流程分工-来源与读者审查.md",
         "support": "管理档案/支持资料/随机房间能接上，不等于玩家会按预期经过补给点.md",
         "scope": "Historical authoring layers and original static-graph reasoning; no generator execution."
+      },
+      "updated_at": "2026-11-06",
+      "weighted_entropy_extension": {
+        "source_record": "管理档案/来源笔记/wfc-weighted-entropy.json",
+        "review": "管理档案/审查/WFC候选数量与熵-来源与读者审查.md",
+        "scope": "One static candidate-set example separates MRV and weighted Shannon selection. Original arithmetic executed; no upstream WFC run or output-distribution guarantee."
       }
     },
     {
@@ -4024,7 +4031,7 @@
   "original_scope_count_meaning": "Counts content dispositions, not physical deletion or relocation of historical originals; no expansion of evidence-publication authority.",
   "inventory_state": "published-reader-inventory",
   "counts_scope": "55 rewritten reader bodies from the frozen original inventory; later research additions must be counted separately.",
-  "publication_base_sha": "1a1e6675910fe657dfee962a2b7abec3bf9f9418",
+  "publication_base_sha": "fe5b2729b2227b765ac31fbf46e48add2c168434",
   "accounted_for_original_items": 55,
   "reader_books_total": 110,
   "post_baseline_research_books": 55,

@@ -1,0 +1,74 @@
+{
+  "id": "SRC-DESIGN-WFC-ENTROPY-001",
+  "reader_id": "SOL-DESIGN-002",
+  "reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
+  "updated_at": "2026-11-06",
+  "status": "source-backed",
+  "upstream_commit": "de7d22e705e816b62b4d613199d0463820fcaef3",
+  "sources": [
+    {
+      "author": "Maxim Gumin",
+      "title": "WaveFunctionCollapse Model.cs",
+      "url": "https://github.com/mxgmn/WaveFunctionCollapse/blob/de7d22e705e816b62b4d613199d0463820fcaef3/Model.cs",
+      "accessed_at": "2026-11-06",
+      "blob_sha": "9d0bc5959930f533d279ba2594af74d72395ca0c",
+      "locations": [
+        "51–62: entropy initialization",
+        "99–133: next position and heuristics",
+        "135–140: candidate observation",
+        "191–196: cached entropy update"
+      ],
+      "supports": "Entropy uses weighted Shannon score; MRV uses remaining candidate count. The selected position and selected candidate are separate decisions. The score receives a small random perturbation."
+    },
+    {
+      "author": "Maxim Gumin",
+      "title": "WaveFunctionCollapse README",
+      "url": "https://github.com/mxgmn/WaveFunctionCollapse/blob/de7d22e705e816b62b4d613199d0463820fcaef3/README.md",
+      "accessed_at": "2026-11-06",
+      "locations": [
+        "14–21: observation and propagation",
+        "67–77: Algorithm"
+      ],
+      "supports": "Observation distinguishes selecting an undetermined position from selecting its state. No performance or output-distribution claims imported."
+    },
+    {
+      "author": "Maxim Gumin",
+      "title": "WaveFunctionCollapse Helper.cs",
+      "url": "https://github.com/mxgmn/WaveFunctionCollapse/blob/de7d22e705e816b62b4d613199d0463820fcaef3/Helper.cs#L14-L27",
+      "accessed_at": "2026-11-06",
+      "supports": "Remaining weights feed cumulative candidate selection. Random-source quality and exact finite-discrete probabilities were not measured."
+    }
+  ],
+  "original_example": {
+    "global_weights": {
+      "P": 1,
+      "Q": 1,
+      "R": 98
+    },
+    "candidate_sets": {
+      "X": [
+        "P",
+        "Q"
+      ],
+      "Y": [
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    "entropy_nats": {
+      "X": 0.6931471805599453,
+      "Y": 0.1119020568909309
+    },
+    "script": "管理档案/实验/WFC候选熵/check_example.py",
+    "execution": "Original Python arithmetic executed; direct and cached forms, opposite score ordering, separation beyond perturbation and equal-weight simplification checked.",
+    "limits": "Given static candidate sets, not an observed generation state or constructed adjacency model. No seed search or upstream generator execution."
+  },
+  "deduplication": {
+    "baseline": "fe5b2729b2227b765ac31fbf46e48add2c168434",
+    "scope": "Existing WFC reader, direct Dead Cells flow support and procedural-layout shelf; no whole-library semantic search.",
+    "decision": "One bounded section in the existing reader, no new book. Existing quota, contradiction, retry and global-layout boundaries retained."
+  },
+  "reuse": "Upstream software is MIT; no upstream source file, image or tileset included in this publication. Checking script and candidate snapshot are original.",
+  "evidence_boundary": "Fixed-source explanation and original numerical illustration only. Local normalized weights are not complete-solution marginal probabilities. No upstream WFC, engine, game, rendering, success-rate, performance or human test."
+}
