@@ -13,6 +13,15 @@ STATUSES={'verified','source-backed','experimental','disputed','outdated','needs
 REQUIRED=('id','title','type','status','primary_discipline')
 class Invalid(ValueError): pass
 
+def reader_path(entry):
+    """Use the canonical path; reject conflicting legacy aliases."""
+    canonical = entry.get('canonical_reader_path')
+    current = entry.get('current_read_path')
+    if 'canonical_reader_path' in entry and 'current_read_path' in entry and canonical != current:
+        raise Invalid('current/canonical path mismatch')
+    return canonical if 'canonical_reader_path' in entry else current
+
+
 def json_object(pairs):
     result={}
     for key,value in pairs:
@@ -145,13 +154,11 @@ def reader_documents(root, manifest, expected_count):
         if not isinstance(ident, str) or not re.fullmatch(r'[A-Z0-9]+(?:-[A-Z0-9]+)+', ident):
             raise Invalid('invalid reader ID')
         plain(title)
-        raw = entry.get('current_read_path')
+        raw = reader_path(entry)
         if (not isinstance(raw, str) or not raw.startswith('GameLibrary/') or not raw.endswith('.md')
                 or '\\' in raw or re.search(r'[\x00-\x1f\x7f]',raw)
                 or any(x in ('', '.', '..') for x in raw.split('/'))):
             raise Invalid('invalid reader path')
-        if entry.get('canonical_reader_path') != raw:
-            raise Invalid('current/canonical path mismatch')
         target = (root / raw).resolve(strict=True)
         if not target.is_relative_to(root/'GameLibrary'): raise Invalid('reader path escapes library')
         if ident in docs or target in paths: raise Invalid('duplicate reader ID/path')

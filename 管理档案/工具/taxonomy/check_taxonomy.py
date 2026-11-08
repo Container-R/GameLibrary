@@ -8,6 +8,15 @@ LEGACY_IDS = set('PROG NET ENGINE TA ART2D MODEL ANIM VFX GFX SFX MUSIC DESIGN N
 FOLDERS = ('roles', 'knowledge', 'solutions', 'case-studies', 'comparisons')
 
 
+def reader_path(entry):
+    """Use the canonical path; reject conflicting legacy aliases."""
+    canonical = entry.get('canonical_reader_path')
+    current = entry.get('current_read_path')
+    if 'canonical_reader_path' in entry and 'current_read_path' in entry and canonical != current:
+        raise ValueError('current/canonical path mismatch')
+    return canonical if 'canonical_reader_path' in entry else current
+
+
 def require(ok, message):
     if not ok:
         raise ValueError(message)
@@ -79,9 +88,8 @@ def check(root, taxonomy, mode, expected_count, manifest=None):
         for item in data['entries']:
             require(isinstance(item, dict), 'invalid manifest entry')
             ident = stable_id(item.get('internal_id'))
-            path_name = item.get('canonical_reader_path')
+            path_name = reader_path(item)
             require(isinstance(path_name, str) and path_name.startswith('GameLibrary/') and path_name.endswith('.md'), 'canonical reader path required')
-            require(item.get('current_read_path') == path_name, 'current/canonical reader path mismatch')
             path = within(root, path_name)
             title = item.get('reader_title')
             require(isinstance(title, str) and title.strip() and '\n' not in title and '\r' not in title, 'invalid reader title')

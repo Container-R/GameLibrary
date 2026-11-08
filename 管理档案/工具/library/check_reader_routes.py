@@ -7,6 +7,15 @@ import re
 from urllib.parse import unquote, urlsplit
 
 
+def reader_path(entry):
+    """Use the canonical path; reject conflicting legacy aliases."""
+    canonical = entry.get('canonical_reader_path')
+    current = entry.get('current_read_path')
+    if 'canonical_reader_path' in entry and 'current_read_path' in entry and canonical != current:
+        raise ValueError('current/canonical path mismatch')
+    return canonical if 'canonical_reader_path' in entry else current
+
+
 def strict_json(text):
     def pairs(items):
         result={}
@@ -46,11 +55,15 @@ def check(root, expected_count, expected_ids):
     for item in entries:
         ident=item['internal_id']
         try:
-            parts=[item[k] for k in ('floor','area','shelf')]
-            if any(not isinstance(x,str) or '/' in x or x in ('','.','..') for x in parts):raise ValueError('invalid shelf component')
+            path=reader_path(item)
+            if not isinstance(path,str):raise ValueError('reader path required')
+            components=path.split('/')
+            if len(components)!=5 or components[0]!='GameLibrary' or not path.endswith('.md') or components[-1]=='README.md':raise ValueError('reader must have discipline/direction/topic path')
+            parts=components[1:4]
+            if any(x in ('','.','..') for x in parts):raise ValueError('invalid shelf component')
+            for key,value in zip(('floor','area','shelf'),parts):
+                if key in item and item[key]!=value:raise ValueError('legacy shelf mismatch')
             shelf=local(root,'/'.join(['GameLibrary',*parts,'README.md']))
-            path=item['current_read_path'];canonical=item['canonical_reader_path']
-            if path!=canonical or not path.startswith('GameLibrary/') or not path.endswith('.md'):raise ValueError('canonical/current mismatch')
             target=local(root,path)
             if target in seen:raise ValueError('duplicate target')
             seen.add(target)

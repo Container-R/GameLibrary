@@ -45,20 +45,27 @@ def read_json(root, relative):
     return strict_json(path.read_text(encoding='utf-8'))
 
 
-def check(root, frozen_count):
-    require(type(frozen_count) is int and frozen_count > 0,
-            'explicit positive frozen count required')
+def check(root, frozen_count=None):
+    if frozen_count is not None:
+        require(type(frozen_count) is int and frozen_count > 0,
+                'explicit positive frozen count required')
     root = Path(root).resolve(strict=True)
     require(root.is_dir(), 'missing root')
     catalog = read_json(root, '管理档案/图书目录.json')
-    state = read_json(root, '.agent/state.json')
-    require(type(catalog) is dict and type(state) is dict, 'metadata must be objects')
+    require(type(catalog) is dict, 'catalog must be object')
+    minimal = type(catalog.get('schema_version')) is int and catalog['schema_version'] == 3
+    if not minimal:
+        require(frozen_count is not None, 'legacy catalog requires explicit frozen count')
+        state = read_json(root, '.agent/state.json')
+        require(type(state) is dict, 'state must be object')
     entries = catalog.get('entries')
     require(type(entries) is list and len(entries) > 0, 'nonempty entries required')
     paths = set()
     for entry in entries:
         require(type(entry) is dict, 'entry must be object')
         value = entry.get('canonical_reader_path')
+        if 'current_read_path' in entry:
+            require(entry['current_read_path'] == value, 'current/canonical path mismatch')
         require(type(value) is str and bool(value), 'canonical path required')
         require('\\' not in value and ':' not in value and not any(ord(c) < 32 for c in value),
                 'invalid canonical path')
@@ -86,6 +93,9 @@ def check(root, frozen_count):
     require(bool(actual), 'empty reader library')
     require(paths == actual, 'canonical and actual reader path sets differ')
     total = len(actual)
+    if minimal:
+        return {'status': 'pass', 'canonical_paths': total, 'actual_reader_bodies': total,
+                'scope': 'Current path-set equality only; legacy count/state checks not applicable to schema 3; not historical, editorial, source or navigation approval'}
     require(total >= frozen_count, 'total below explicit frozen count')
     post = total - frozen_count
     for section in (catalog, state.get('reader_baseline')):
@@ -103,7 +113,7 @@ def check(root, frozen_count):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, required=True)
-    parser.add_argument('--frozen-count', type=int, required=True)
+    parser.add_argument('--frozen-count', type=int, help='Required only for legacy catalogs with redundant count metadata')
     args = parser.parse_args()
     try:
         result = check(args.root, args.frozen_count)

@@ -11,6 +11,15 @@ import unicodedata
 from urllib.parse import unquote, urlsplit
 
 
+def reader_path(entry):
+    """Use the canonical path; reject conflicting legacy aliases."""
+    canonical = entry.get('canonical_reader_path')
+    current = entry.get('current_read_path')
+    if 'canonical_reader_path' in entry and 'current_read_path' in entry and canonical != current:
+        raise ValueError('current/canonical path mismatch')
+    return canonical if 'canonical_reader_path' in entry else current
+
+
 def strict_json(text):
     def pairs(items):
         obj = {}
@@ -221,9 +230,9 @@ def check(root, manifest_path, expected_count):
         raise ValueError('manifest count mismatch')
     readers = []
     for entry in entries:
-        if not isinstance(entry, dict) or not isinstance(entry.get('current_read_path'), str):
-            raise ValueError('current_read_path required')
-        p = within(root, root, entry['current_read_path'])
+        if not isinstance(entry, dict) or not isinstance(reader_path(entry), str):
+            raise ValueError('reader path required')
+        p = within(root, root, reader_path(entry))
         if p.suffix.lower() != '.md' or p in readers:
             raise ValueError('unique Markdown reader paths required')
         if not p.read_text(encoding='utf-8').strip():

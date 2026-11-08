@@ -17,6 +17,11 @@ class ReaderTests(unittest.TestCase):
  def save(self): (self.root/self.man).write_text(json.dumps({'entries':self.entries}))
  def render(self,**kw):return render(self.root,self.reg,self.output,reader_manifest=self.man,expected_count=kw.pop('expected_count',2),**kw)
  def cli(self,*args):return subprocess.run([sys.executable,'-B',*(['-O'] if sys.flags.optimize else []),str(self.tool),str(self.root),'--registry',str(self.registry),'--output',str(self.output),*map(str,args)],capture_output=True,text=True,cwd=self.root)
+ def test_canonical_only_and_legacy_alias(self):
+  for entry in self.entries:del entry['current_read_path']
+  self.save();self.assertIn('GameLibrary/Book.md',self.render())
+  for entry in self.entries:entry['current_read_path']=entry.pop('canonical_reader_path')
+  self.save();self.assertIn('GameLibrary/Book.md',self.render())
  def test_nonempty_no_yaml(self):
   text=self.render();self.assertIn('GameLibrary/Book.md',text);self.assertNotIn('source-backed',text)
  def test_empty(self):

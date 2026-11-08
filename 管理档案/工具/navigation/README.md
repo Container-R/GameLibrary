@@ -7,12 +7,13 @@
 在仓库根运行：
 
 ```sh
+: "${EXPECTED_READER_COUNT:?先设置本批独立核对的正文数量}"
 mkdir -p 管理档案/草稿
-python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md
-python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count 55 --output 管理档案/草稿/稳定ID路线候选.md --check
+python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count "$EXPECTED_READER_COUNT" --output 管理档案/草稿/稳定ID路线候选.md
+python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案/分类/reading-routes.json --reader-manifest 管理档案/图书目录.json --expected-count "$EXPECTED_READER_COUNT" --output 管理档案/草稿/稳定ID路线候选.md --check
 ```
 
-要求非空清单、正数且精确匹配的预期篇数、唯一稳定ID/文件、有效当前与canonical路径、实际H1一致，路线目标须可解析。不从无YAML正文猜证据等级或学科；岗位起点只按稳定ID的ROLE命名空间判断，不另认证职业分类。预期55不是黄金ID集合，历史完整性仍需对照冻结清单。
+要求非空清单、正数且精确匹配的预期篇数、唯一稳定ID/文件、有效当前与canonical路径、实际H1一致，路线目标须可解析。不从无YAML正文猜证据等级或学科；岗位起点只按稳定ID的ROLE命名空间判断，不另认证职业分类。预期篇数不是黄金ID集合，历史完整性仍需对照冻结清单。
 
 ## 保留的legacy模式
 
@@ -32,7 +33,7 @@ python3 管理档案/工具/navigation/build_routes.py . --registry 管理档案
 
 ## 两套回归一起运行
 
-在仓库根运行，原29测试与新增17 reader测试不能遗漏其中之一：
+在仓库根运行，既有29项路线测试与当前18项 reader 测试不能遗漏其中之一：
 
 ```sh
 python3 -B -m unittest discover -s 管理档案/工具/navigation -p 'test_*.py'
@@ -41,4 +42,8 @@ python3 -B -O -m unittest discover -s 管理档案/工具/navigation -p 'test_*.
 
 均为临时合成目录，不执行引擎/历史实验。新CLI反例在子进程显式继承优化标志。
 
-旧 `scripts/navigation` 三文件退出当前树，不保留根wrapper。历史 `research/audits/reading-routes` 中探针/旧测试以及 `research/audits/release-regression-1900` 命令属于其当时版本，不能对新API当现行验收入口；不要重写历史审查或用新版结果替代旧记录。需要复核旧接口时按历史commit检出整组，旧树可从迁移前的 `d0c87c` 修订定位；本次现行测试是上面的46方法。registry仍留原路径，本迁移不宣告其他旧正文或根工具全部退出。
+旧 `scripts/navigation` 三文件退出当前树，不保留根wrapper。历史 `research/audits/reading-routes` 中探针/旧测试以及 `research/audits/release-regression-1900` 命令属于其当时版本，不能对新API当现行验收入口；不要重写历史审查或用新版结果替代旧记录。需要复核旧接口时按历史commit检出整组，旧树可从迁移前的 `d0c87c` 修订定位；此前46项方法属于旧版本，本次现行测试为47项方法。registry仍留原路径，本迁移不宣告其他旧正文或根工具全部退出。
+
+## 精简目录兼容
+
+当前路径优先读取 canonical_reader_path，兼容仅有 current_read_path 的旧条目；两者同时存在但不一致仍拒绝。精简目录不需要流程或审稿历史字段。预期数量必须独立核对，不能直接把待检查清单的长度代入以掩盖漏项。既有未支持项和错误不会因字段精简自动获得通过。

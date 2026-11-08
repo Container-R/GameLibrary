@@ -24,6 +24,15 @@ class Checks(unittest.TestCase):
     def legacy(self):
         for folder in FOLDERS:(self.root/folder).mkdir(exist_ok=True)
         (self.root/'roles/one.md').write_text('---\nid: ROLE-A-001\nprimary_discipline: GFX\nrelated_disciplines: [TA]\n---\n# Old\n')
+    def test_canonical_only_and_legacy_alias(self):
+        entry=self.man['entries'][0];del entry['current_read_path']
+        self.write('管理档案/books.json',self.man);self.assertEqual(self.reader()['documents_checked'],1)
+        entry['current_read_path']=entry.pop('canonical_reader_path')
+        self.write('管理档案/books.json',self.man);self.assertEqual(self.reader()['documents_checked'],1)
+    def test_conflicting_alias_rejected(self):
+        self.man['entries'][0]['current_read_path']='GameLibrary/A/other.md'
+        self.write('管理档案/books.json',self.man)
+        with self.assertRaises(ValueError):self.reader()
     def test_reader_nonempty_no_yaml(self):
         self.assertEqual(self.reader()['documents_checked'],1)
     def test_legacy_nonempty(self):

@@ -33,9 +33,11 @@ class Independent(unittest.TestCase):
    os.chdir(self.r/'GameLibrary/S');self.assertEqual(check(self.r,1)['canonical_paths'],2)
   finally:os.chdir(old)
  def test_missing_required_cli(self):
-  for args in [[],['--root',str(self.r)],['--frozen-count','1']]:
+  for args in [[],['--frozen-count','1']]:
    with patch('sys.argv',['checker']+args),contextlib.redirect_stderr(io.StringIO()),contextlib.redirect_stdout(io.StringIO()),self.assertRaises(SystemExit) as e:main()
    self.assertEqual(e.exception.code,2)
+ def test_legacy_cli_still_requires_frozen_count(self):
+  with patch('sys.argv',['checker','--root',str(self.r)]),contextlib.redirect_stdout(io.StringIO()):self.assertEqual(main(),1)
  def test_nested_duplicate_key(self):
   p=self.r/'.agent/state.json';p.write_text(p.read_text().replace('"reader_books_total": 2','"reader_books_total": 2, "reader_books_total": 2',1))
   with self.assertRaises(ValueError):check(self.r,1)
