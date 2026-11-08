@@ -102,7 +102,7 @@
       "reader_title": "游戏测试如何复现缺陷和评估版本风险",
       "canonical_reader_path": "GameLibrary/项目管理与测试/质量保证/岗位与协作/游戏测试如何复现缺陷和评估版本风险.md",
       "reader_body_status": "published",
-      "reader_sha256": "95e46fd0b0505a599e702132a72e79c21cec10bf173ab0ce1aec860b7e1bd8a6"
+      "reader_sha256": "79aa99b272ad268de0bc822129aa30c5915be817a00865dedd1f0a458bbb5260"
     },
     {
       "internal_id": "ROLE-GFX-002",
@@ -1070,6 +1070,18 @@
       "reader_body_status": "published",
       "reader_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
       "source_record": "管理档案/研究/TASK-2026-0303/sources.json"
+    },
+    {
+      "internal_id": "KNOW-QA-003",
+      "reader_title": "游戏 UI 配置回归的约束建模与组合覆盖",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/质量保证/测试设计/游戏UI配置回归的约束建模与组合覆盖.md",
+      "reader_sha256": "10699b43a90d3b7d1066211b88f80698863422ea350cded28c83da8c40536d21",
+      "source_record": "管理档案/研究/TASK-2026-0307/research.md",
+      "sources": [
+        "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-142.pdf",
+        "https://csrc.nist.gov/csrc/media/Projects/automated-combinatorial-testing-for-software/documents/acts_user_guide_for_basic1.0_and_advanced3.3_versions_nov23.pdf"
+      ],
+      "reader_body_status": "awaiting_remote_verification"
     }
   ]
 }

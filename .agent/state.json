@@ -6,7 +6,7 @@
     "TASK-2026-0307"
   ],
   "last_completed_task_id": "TASK-2026-0303",
-  "last_real_progress_at": "2026-11-08T11:01:00Z",
+  "last_real_progress_at": "2026-11-08T13:24:34Z",
   "last_commit_sha": "f6ef8e1cd780f0253d8d507e54050ae89ffc2b64",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -23,7 +23,7 @@
     "identity": "Containing commit; report success only after exact remote readback.",
     "scope": "One complete control-side method and bounded related navigation/history updates; no SDK runtime, audio output or performance tests."
   },
-  "next_action": "GameLibrary 编辑维护者继续 TASK-2026-0307 的完整配置回归方法写作、迁移准备和独立审稿；研究包不是正式发表。保留既有暂停/受阻任务，不重复创建调度。",
+  "next_action": "仅完成 TASK-2026-0307 清单发表、逐文件远端回读和完成记录；保留其他活跃、暂停或受阻事项。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -46,9 +46,9 @@
   "active_research": {
     "task_id": "TASK-2026-0307",
     "owner": "GameLibrary 编辑维护者",
-    "phase": "researching",
-    "last_progress": "约束下合法覆盖分母、混合强度模型和从配置到判据的工程步骤已研究并验证；完整稿与独立发表审查尚未完成。",
-    "next_action": "Write the bounded full manuscript and prepare migration, then obtain independent full technical, reader and root-navigation reviews.",
+    "phase": "awaiting_remote_verification",
+    "last_progress": "完整方法及独立技术、读者、盲导航审稿已整合；有限 Python 模型重跑一致，游戏与 ACTS 未执行。",
+    "next_action": "逐文件远端回读后记录完成。",
     "blocker": null
   }
 }
