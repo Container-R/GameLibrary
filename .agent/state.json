@@ -2,15 +2,17 @@
   "schema_version": 2,
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
-  "active_task_ids": [],
+  "active_task_ids": [
+    "TASK-2026-0308"
+  ],
   "last_completed_task_id": "TASK-2026-0307",
-  "last_real_progress_at": "2026-11-08T13:28:11Z",
-  "last_commit_sha": "6c9bd3c93d0168c74debe1af14cfab710dba58cd",
+  "last_real_progress_at": "2026-11-08T14:56:05Z",
+  "last_commit_sha": "660c01e2858941b266d7f123ea3e6b712f580eb6",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
     "latest_review": "管理档案/审稿/KNOW-QA-003/20261108-technical.md",
-    "latest_supervision": "管理档案/审查/督导/20261108-1901/报告.md"
+    "latest_supervision": "管理档案/审查/督导/20261108-2256/报告.md"
   },
   "publication": {
     "kind": "constrained-ui-configuration-regression",
@@ -22,7 +24,7 @@
     "verification": "13 content and shared-record files read back in full with exact UTF-8 identity; Python finite model only.",
     "scope": "One complete configuration test-design method, reviewed navigation and bounded historical migration; no game or ACTS execution."
   },
-  "next_action": "TASK-2026-0307 已发表并完成回读；其余队列与待处理主题保持原有状态，旧操作序列研究未作为正式文章发表。",
+  "next_action": "确定设置页绑定与布局测试适配层，明确缓存/延迟路径的请求身份和检查点，补同值重复输入及失败取消场景，再形成完整稿；未做引擎执行时如实保留边界。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -41,6 +43,18 @@
     "note": "旧固定书目数、修复完成和整体健康标记只保留于历史，不作为当前验收。"
   },
   "blockers": [],
-  "last_commit_sha_scope": "TASK-0307 content publication verified by exact full-file remote readback; this completion record is identified by its containing commit.",
-  "active_research": null
+  "last_commit_sha_scope": "本轮复核与研究归档之前的已验证基线；本轮记录由所在提交标识。",
+  "active_research": {
+    "task_id": "TASK-2026-0308",
+    "phase": "research-to-implementation",
+    "owner": "GameLibrary 编辑维护者",
+    "evidence": "管理档案/研究/TASK-2026-0308/research.md",
+    "last_real_progress_at": "2026-11-08T14:56:05Z"
+  },
+  "follow_up_checks": [
+    {
+      "question": "按发表与迁移依据独立核对冻结ID集合；现96项与137正文不等，不能由扫描自动补齐。",
+      "evidence": "管理档案/审查/督导/20261108-2256/目录核验.json"
+    }
+  ]
 }

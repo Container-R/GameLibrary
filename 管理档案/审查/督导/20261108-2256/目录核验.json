@@ -1,0 +1,137 @@
+{
+  "checked_at": "2026-11-08T14:56:05Z",
+  "base_commit": "eeed184943ddbc6630124455b3730501684e127b",
+  "cleanup_commit": "a0d7a3c86c8e18943a55a8cee346b8b7267f7d23",
+  "checked_head": "660c01e2858941b266d7f123ea3e6b712f580eb6",
+  "catalog_bytes_before": 395483,
+  "catalog_bytes_after": 64123,
+  "entries_before": 136,
+  "entries_after": 136,
+  "preserved_fields": [
+    "internal_id",
+    "reader_title",
+    "canonical_reader_path",
+    "reader_body_status"
+  ],
+  "preserved_source_fields": {
+    "source_record": 68,
+    "sources": 5,
+    "materials_record": 21
+  },
+  "new_missing_hashes_filled": [
+    {
+      "id": "ROLE-MUSIC-001",
+      "path": "GameLibrary/声音与音乐/交互音乐/岗位与协作/游戏作曲如何为交互安排音乐.md",
+      "expected": "0dff663ccc9e073d491a6e2fe5251e821d05103b6f8d7b2dad442906ea7f581e",
+      "actual": "0dff663ccc9e073d491a6e2fe5251e821d05103b6f8d7b2dad442906ea7f581e"
+    },
+    {
+      "id": "SOL-A11Y-001",
+      "path": "GameLibrary/本地化与无障碍/无障碍设计/声音信息/怎样让关键声音信息不只依赖听觉.md",
+      "expected": "41958856406cb0962943e4e33da737fdb91ba2453fd3ccc8e98ac71b40bf331c",
+      "actual": "41958856406cb0962943e4e33da737fdb91ba2453fd3ccc8e98ac71b40bf331c"
+    },
+    {
+      "id": "SOL-SFX-002",
+      "path": "GameLibrary/声音与音乐/音频制作/混音/静音分轨为何会影响其他音轨的增益.md",
+      "expected": "171dbacd51a56827b207ec3fe8413227a0de6baf530f4f2e0889a8c63ff2eedf",
+      "actual": "171dbacd51a56827b207ec3fe8413227a0de6baf530f4f2e0889a8c63ff2eedf"
+    },
+    {
+      "id": "SOL-ENGINE-002",
+      "path": "GameLibrary/引擎与工具/构建发布/内容更新/Unity Addressables内容更新与旧客户端兼容.md",
+      "expected": "df4de41a03aa8a39072b8a7d72b82971706f2d20984c360afe0d508c4c55ae93",
+      "actual": "df4de41a03aa8a39072b8a7d72b82971706f2d20984c360afe0d508c4c55ae93"
+    },
+    {
+      "id": "SOL-PLATFORM-001",
+      "path": "GameLibrary/平台与发行/平台接入/云存档/Steam动态云同步恢复后的存档冲突处理.md",
+      "expected": "26997502dc534837f364061d132c56d7320d25f292df42e944db8ad1635446a8",
+      "actual": "26997502dc534837f364061d132c56d7320d25f292df42e944db8ad1635446a8"
+    },
+    {
+      "id": "SOL-UX-001",
+      "path": "GameLibrary/界面与体验/交互设计/键盘与手柄导航/关闭弹窗后如何恢复操作焦点.md",
+      "expected": "853ed71b2d6b194e0d5072711e933f6c727931cbab0b1ab43dbf81a675d0f500",
+      "actual": "853ed71b2d6b194e0d5072711e933f6c727931cbab0b1ab43dbf81a675d0f500"
+    },
+    {
+      "id": "CASE-ANIM-002",
+      "path": "GameLibrary/角色动画/动画运行时/动作选择/FFXV如何组织越障动画的后续片段.md",
+      "expected": "4f5ed2288c3aec218806a84890dee5fc189dd0704b566f7061ff57868df0b3ef",
+      "actual": "4f5ed2288c3aec218806a84890dee5fc189dd0704b566f7061ff57868df0b3ef"
+    },
+    {
+      "id": "CASE-ANIM-001",
+      "path": "GameLibrary/角色动画/动画运行时/动作选择/ForHonor动作匹配中的事件与请求时机.md",
+      "expected": "22f5c746c8cb1c33819de504adb50d47cdaad66f6dfcd6dc46db77ee62935d8c",
+      "actual": "22f5c746c8cb1c33819de504adb50d47cdaad66f6dfcd6dc46db77ee62935d8c"
+    },
+    {
+      "id": "CASE-LIVE-001",
+      "path": "GameLibrary/网络与在线服务/在线运维/配置与回退/Destiny2配置回退事故中的数据恢复问题.md",
+      "expected": "c083e10a9a52c3eff7af909094f3afbcd4b3f3ba07a7b803fa6e6e32e6881b39",
+      "actual": "c083e10a9a52c3eff7af909094f3afbcd4b3f3ba07a7b803fa6e6e32e6881b39"
+    },
+    {
+      "id": "CASE-NET-001",
+      "path": "GameLibrary/网络与在线服务/在线服务/服务器调度/英雄联盟如何用负载信息分配对局服务器.md",
+      "expected": "7c97faf6c107e38529532779bffcf2cc70bcbc6bb92269f02bbf4ab06e1a85a7",
+      "actual": "7c97faf6c107e38529532779bffcf2cc70bcbc6bb92269f02bbf4ab06e1a85a7"
+    },
+    {
+      "id": "SOL-A11Y-002",
+      "path": "GameLibrary/本地化与无障碍/无障碍设计/输入操作/把持续按住改成点按时如何保留取消与完成的含义.md",
+      "expected": "e29f4fd6497e1599601c4bca215740ad15df3312bb75a66139fade20540dac98",
+      "actual": "e29f4fd6497e1599601c4bca215740ad15df3312bb75a66139fade20540dac98"
+    },
+    {
+      "id": "SOL-NET-002",
+      "path": "GameLibrary/网络与在线服务/实时同步/消息顺序/序列号回到零时怎样判断消息的新旧.md",
+      "expected": "6d2e2916c0b9ccbfea066ce0813e89ce55c5026366a5650888489ef8fe53aec5",
+      "actual": "6d2e2916c0b9ccbfea066ce0813e89ce55c5026366a5650888489ef8fe53aec5"
+    },
+    {
+      "id": "SOL-A11Y-003",
+      "path": "GameLibrary/本地化与无障碍/无障碍设计/视觉信息/背景变化时怎样保持HUD文字的对比度.md",
+      "expected": "0e6490c8a9df5bfb7992a3aaede2cafed56b5e118581328d2804100130907297",
+      "actual": "0e6490c8a9df5bfb7992a3aaede2cafed56b5e118581328d2804100130907297"
+    },
+    {
+      "id": "SOL-ENGINE-003",
+      "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/迁移函数返回了数据为什么还不能直接保存.md",
+      "expected": "361e2d69855e264a0603dbf9f4dbb3c54e5509da2e34caf3cc470d3dfbdeb002",
+      "actual": "361e2d69855e264a0603dbf9f4dbb3c54e5509da2e34caf3cc470d3dfbdeb002"
+    },
+    {
+      "id": "SOL-ANIM-003",
+      "path": "GameLibrary/角色动画/动画运行时/动画插值/统一四元数符号为什么会改掉三次插值动画.md",
+      "expected": "445f9c22f012ad5413d617d3cb76191aaa9efa71984cbd684f2d031e24bba839",
+      "actual": "445f9c22f012ad5413d617d3cb76191aaa9efa71984cbd684f2d031e24bba839"
+    },
+    {
+      "id": "SOL-ENGINE-005",
+      "path": "GameLibrary/引擎与工具/运行时系统/并行模拟/分块模拟中，为什么写不同位置仍可能互相影响.md",
+      "expected": "21f144ccda5bb6f4398ce6e5fe851a94b02307fe359c139129c95a65d794b8d7",
+      "actual": "21f144ccda5bb6f4398ce6e5fe851a94b02307fe359c139129c95a65d794b8d7"
+    },
+    {
+      "id": "CASE-NARR-002",
+      "path": "GameLibrary/叙事设计/运行时叙事/情境对白/Valve如何根据游戏情境选择对白.md",
+      "expected": "9f8e5516a0f41b663f7aa69f54fe05cd245b744b9011727d3393c6c1d0ddc7f2",
+      "actual": "9f8e5516a0f41b663f7aa69f54fe05cd245b744b9011727d3393c6c1d0ddc7f2"
+    }
+  ],
+  "current_article_paths": 137,
+  "current_catalog_paths": 137,
+  "path_sets_equal": true,
+  "current_frozen_ids": 96,
+  "frozen_route_check": "configuration_error",
+  "unit_tests": {
+    "library": 94,
+    "navigation": 47,
+    "taxonomy": 20,
+    "result": "passed in normal Python mode"
+  },
+  "scope": "Exact catalog preservation and current path-set checks; not whole-library content, source, navigation or privacy certification."
+}

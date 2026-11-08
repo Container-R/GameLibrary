@@ -1,0 +1,106 @@
+{
+  "legal": 28,
+  "pair_counts": {
+    "PV": 3,
+    "PU": 5,
+    "PT": 4,
+    "PC": 4,
+    "VU": 5,
+    "VT": 4,
+    "VC": 4,
+    "UT": 6,
+    "UC": 6,
+    "TC": 4
+  },
+  "rows_all_legal": true,
+  "full": {
+    "pairs": 45,
+    "utc": 12,
+    "missing_utc": []
+  },
+  "first8": {
+    "pairs": 45,
+    "utc": 8,
+    "missing_utc": [
+      [
+        "100",
+        "large",
+        "0"
+      ],
+      [
+        "125",
+        "large",
+        "0"
+      ],
+      [
+        "125",
+        "normal",
+        "5"
+      ],
+      [
+        "150",
+        "large",
+        "5"
+      ]
+    ]
+  },
+  "minus1": {
+    "pairs": 45,
+    "utc": 11,
+    "missing_utc": [
+      [
+        "100",
+        "normal",
+        "0"
+      ]
+    ]
+  },
+  "minus12": {
+    "pairs": 45,
+    "utc": 11,
+    "missing_utc": [
+      [
+        "150",
+        "large",
+        "5"
+      ]
+    ]
+  },
+  "pair_greedy_equals_first8": true,
+  "mixed_greedy_equals12": true,
+  "PU_handheld150_witnesses": [],
+  "minus3": {
+    "pairs": 42,
+    "utc": 11,
+    "missing_utc": [
+      [
+        "100",
+        "large",
+        "5"
+      ]
+    ]
+  },
+  "minus3_missing_pairs": [
+    [
+      "PU",
+      [
+        "handheld",
+        "100"
+      ]
+    ],
+    [
+      "PT",
+      [
+        "handheld",
+        "large"
+      ]
+    ],
+    [
+      "PC",
+      [
+        "handheld",
+        "5"
+      ]
+    ]
+  ]
+}

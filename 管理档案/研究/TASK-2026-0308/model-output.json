@@ -1,0 +1,97 @@
+{
+  "scope": "finite teaching model; not engine execution",
+  "legal_orders": [
+    [
+      "L1",
+      "L2",
+      "C1",
+      "C2"
+    ],
+    [
+      "L1",
+      "L2",
+      "C2",
+      "C1"
+    ],
+    [
+      "L1",
+      "C1",
+      "L2",
+      "C2"
+    ]
+  ],
+  "counterexample_without_revision_guard": [
+    {
+      "event": "L1",
+      "desired": "ja",
+      "rendered": "en",
+      "revision": 1,
+      "matches_current": false
+    },
+    {
+      "event": "L2",
+      "desired": "fr",
+      "rendered": "en",
+      "revision": 2,
+      "matches_current": false
+    },
+    {
+      "event": "C2",
+      "desired": "fr",
+      "rendered": "fr",
+      "revision": 2,
+      "matches_current": true
+    },
+    {
+      "event": "C1",
+      "desired": "fr",
+      "rendered": "ja",
+      "revision": 2,
+      "matches_current": false
+    },
+    {
+      "event": "S",
+      "desired": "fr",
+      "rendered": "fr",
+      "revision": 2,
+      "matches_current": true
+    }
+  ],
+  "same_trace_with_revision_guard": [
+    {
+      "event": "L1",
+      "desired": "ja",
+      "rendered": "en",
+      "revision": 1,
+      "matches_current": false
+    },
+    {
+      "event": "L2",
+      "desired": "fr",
+      "rendered": "en",
+      "revision": 2,
+      "matches_current": false
+    },
+    {
+      "event": "C2",
+      "desired": "fr",
+      "rendered": "fr",
+      "revision": 2,
+      "matches_current": true
+    },
+    {
+      "event": "C1",
+      "desired": "fr",
+      "rendered": "fr",
+      "revision": 2,
+      "matches_current": true
+    },
+    {
+      "event": "S",
+      "desired": "fr",
+      "rendered": "fr",
+      "revision": 2,
+      "matches_current": true
+    }
+  ]
+}

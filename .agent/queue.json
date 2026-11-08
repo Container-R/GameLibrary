@@ -10565,6 +10565,29 @@
       "completed_at": "2026-11-08T13:28:11Z",
       "publication_commit": "6c9bd3c93d0168c74debe1af14cfab710dba58cd",
       "publication_verified_at": "2026-11-08T13:27:28.229Z"
+    },
+    {
+      "id": "TASK-2026-0308",
+      "question": "游戏设置页操作序列与异步完成怎样测试，才能发现被后续操作掩盖的错误提交？",
+      "reader": "QA与UI程序，具备基本回归执行和异步回调知识。",
+      "scope": "设置页语言、缩放与预览的事件合同、先后/相邻覆盖、重复请求身份与受控完成交错、修复前检查点；不重写资源所有权教程，不扩展配置覆盖正文。",
+      "expected_outcome": "一篇能据以设计并诊断设置页序列测试的完整方法，必要适配层和代表任务，完成独立技术、读者及导航审查后发表。",
+      "phase": "research-to-implementation",
+      "status": "researching",
+      "owner": "GameLibrary 编辑维护者",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0308/research.md",
+        "管理档案/研究/TASK-2026-0308/check_model.py",
+        "管理档案/研究/TASK-2026-0308/model-output.json"
+      ],
+      "last_real_progress": "核读NIST与Unity等官方材料，区分请求受理、字符串完成、当前预览提交与布局完成；有限乱序模型证实首次正确与最终正确仍可漏掉中间旧提交回退。",
+      "next_action": "确定设置页绑定与布局测试适配层，明确缓存/延迟路径的请求身份和检查点，补同值重复输入及失败取消场景，再形成完整稿；未做引擎执行时如实保留边界。",
+      "blocker": null,
+      "updated_at": "2026-11-08T14:56:05Z",
+      "related_task_ids": [
+        "TASK-2026-0307"
+      ],
+      "validation_scope": "原始文档、相邻正文范围和Python有限模型；未运行Unity、Playwright或真实游戏；未成稿、未获得发表审稿。"
     }
   ],
   "execution_policy": {
