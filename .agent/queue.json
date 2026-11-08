@@ -7271,7 +7271,9 @@
         "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
         "管理档案/支持资料/PortAudio环形缓冲有限观察/README.md",
         "管理档案/来源笔记/portaudio-ring-functional.json",
-        "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md"
+        "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md",
+        "管理档案/研究/SOL-SFX-005/20261107-ring-integration-sources.json",
+        "管理档案/审稿/SOL-SFX-005/20261107-full-article.json"
       ],
       "acceptance": [
         "Read current music, PCM and audio-role scope before choosing independent narrow method",
@@ -7284,8 +7286,19 @@
       "last_progress_at": "2026-11-02T22:00:32Z",
       "next_action": "Concrete integration requires a reviewed handoff and reclamation protocol plus target-specific measurements; this reader does not certify either.",
       "blockers": [],
-      "verification_method": "Main callback reader remains source-backed with unimplemented cutter example; optional fixed original ring utility has six predetermined sequential functional cases repeated in the same environment, plus independent result and reader review.",
-      "latest_maintenance_scope": "Add optional original PortAudio ring-buffer sequential functional observation: six cases repeated with fresh compilation, not an audio or concurrency result."
+      "verification_method": "原主文为来源支持的组织方法；区域章节依据固定原工具及既有六项顺序观察。2026-11-07 合并稿完成独立模型技术全文、读者任务与导航审查；没有新的设备、并发或探针执行。",
+      "latest_maintenance_scope": "将区域取得、完成处理与索引推进解释并入现有正文，修正引用与资料返回入口；历史实验和原审查不改写。",
+      "artifact_roles": {
+        "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md": "migration-link",
+        "管理档案/支持资料/PortAudio环形缓冲有限观察/README.md": "reproduction-materials"
+      },
+      "maintenance_review": {
+        "date": "2026-11-07",
+        "status": "reviewed",
+        "record": "管理档案/审稿/SOL-SFX-005/20261107-full-article.json",
+        "reader_sha256": "51140248ce372a0c7eb98077fd0a79b8bdbefbd79c59b8070b3a9ca02e433b76",
+        "publication_identity": "Containing commit; success requires remote readback."
+      }
     },
     {
       "id": "TASK-2026-0196",

@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-07",
+  "article_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "article_sha256": "51140248ce372a0c7eb98077fd0a79b8bdbefbd79c59b8070b3a9ca02e433b76",
+  "scope": "区域接口解释并入既有音频回调正文；引用定位更正。没有新增音频、并发或性能实验。",
+  "upstream": {
+    "project": "PortAudio",
+    "version": "v19.7.0",
+    "commit": "147dd722548358763a8b649b3e4b41dfffbcfbb6"
+  },
+  "claims": [
+    {
+      "claim": "回调按实际帧数和输出组织填满整块输出，即使返回结束状态；不可做阻塞或不可预测耗时工作。",
+      "source": "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/include/portaudio.h#L629-L835",
+      "locator": "L770–797 回调要求及 frameCount；L799–809 时间与状态参数；L811–835 返回行为、全部输出和函数声明。",
+      "observed_content": "必须填满全部输出的原句在 L822–823；旧链接截至 L815，未覆盖该句。",
+      "conditions": "PortAudio v19.7.0 样本输出回调，不扩展到所有中间件通知。",
+      "article_section": "回调收到的是一块声音的工作，不是一次玩法通知；排查时，把四个时刻分开",
+      "source_sha256": "0e2d81de9cd89fb93bfd7f5dc1807627884cc7fe8a5483107328215e7bd447e5"
+    },
+    {
+      "claim": "环形缓冲限定单读者、单写者、调用方预分配有效存储、二的幂容量；区域与推进接口分工不同。",
+      "source": "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/src/common/pa_ringbuffer.h#L49-L231",
+      "locator": "L49–69 使用前提；L141–231 复制式、区域与推进接口。",
+      "observed_content": "存储必须比缓冲使用期更长；复制函数返回数量，推进函数返回新位置。",
+      "conditions": "容量和记录大小为正；不把头文件的 volatile 或无锁描述当平台内存模型证明。",
+      "article_section": "取得区域之后，何时才算完成交接",
+      "source_sha256": "6458666c4100e596d4fa7667063c3add386701442cae50976321323e3594b3f7"
+    },
+    {
+      "claim": "获取区域裁剪到可用量并在物理末端分两段；只有推进才更新索引。复制式接口组合获取、复制和推进。",
+      "source": "https://github.com/PortAudio/portaudio/blob/147dd722548358763a8b649b3e4b41dfffbcfbb6/src/common/pa_ringbuffer.c#L59-L237",
+      "locator": "L104–146 写区域与推进；L154–194 读区域与推进；L198–237 复制接口。",
+      "observed_content": "写索引 (6+5)&15=11；可读量由 (writeIndex-readIndex)&bigMask 得到。低层推进没有检查是否超出此前取得区域。",
+      "conditions": "算例为顺序调用；推进量来自实际连续完成的记录，不能用新内部索引代替数量。",
+      "article_section": "取得区域之后，何时才算完成交接",
+      "source_sha256": "b37c4fabbdaf3656268fb3ad4508ed34ca2f28fccaa181327ebd6b946dff5d8b"
+    }
+  ],
+  "historical_evidence": [
+    {
+      "path": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
+      "sha256": "ed174623748f149695f97632f87ee787ec2aac50260f841bd72be58e9f659e76",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    },
+    {
+      "path": "管理档案/来源笔记/inside-audio-output-diagnosis.json",
+      "sha256": "001099f914495abaec7ed37295ab719611110b60bdc6b908f727346535cf099f",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    },
+    {
+      "path": "管理档案/来源笔记/portaudio-ring-functional.json",
+      "sha256": "08c924457759694bfb7efbb4fe138d033fe78f2e8b75d2e84dfd17b949127c30",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    },
+    {
+      "path": "管理档案/支持资料/PortAudio环形缓冲有限观察/INPUTS.json",
+      "sha256": "ee1758c2a491c3d0f63222607b23f71869ee962b8f0342553c1f1e0a6fc5dcd6",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    },
+    {
+      "path": "管理档案/支持资料/PortAudio环形缓冲有限观察/run-main-1/observed.jsonl",
+      "sha256": "639dc06cbbe778c12938b614be143a04a99f14377886eccd5614818513386ea2",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    },
+    {
+      "path": "管理档案/支持资料/PortAudio环形缓冲有限观察/run-independent-1/observed.jsonl",
+      "sha256": "639dc06cbbe778c12938b614be143a04a99f14377886eccd5614818513386ea2",
+      "scope": "原字节保留；旧审查与执行只适用于其原记录版本。"
+    }
+  ],
+  "actual_new_work": "读取固定源码、手工复算、正文整合、独立模型全文/读者/导航审查和完整版本入链扫描；未重新运行探针。",
+  "old_versions": {
+    "base_commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
+    "article_sha256": "c5dbd797450140bbde492dd24eab1a8ca1c843318f06708f8604edfbdff7e0ba",
+    "support_sha256": "1a2055bab8a55e2aaecc272d22fc0a907d04a4d49c07cc628d7ef4ce16880db4",
+    "support_url": "https://github.com/Container-R/GameLibrary/blob/502fc563fef3ac7e896f8cfc08cf39e8a5701f09/管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md"
+  }
+}

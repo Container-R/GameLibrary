@@ -3608,14 +3608,15 @@
       "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
       "current_read_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
       "reader_body_status": "published",
-      "editorial_status": "固定原源、原创未运行例子与独立全文及实际路线审读接受；不是实时或并发实现认证",
+      "editorial_status": "固定源码复核、合并后独立模型全文/读者任务与逐层导航审查通过；不是实时或并发实现认证",
       "origin": "source-grounded-audio-output-method",
       "scope_note": "准备资源、有限交接、当前输出与回收责任；不实现队列、不保证时延或听感",
       "review_paths": [
-        "管理档案/审查/音频渲染回调-读者与来源审查.md"
+        "管理档案/审查/音频渲染回调-读者与来源审查.md",
+        "管理档案/审稿/SOL-SFX-005/20261107-full-article.json"
       ],
       "source_record": "管理档案/来源笔记/audio-render-callback-bounded-handoff.json",
-      "reader_sha256": "c5dbd797450140bbde492dd24eab1a8ca1c843318f06708f8604edfbdff7e0ba",
+      "reader_sha256": "51140248ce372a0c7eb98077fd0a79b8bdbefbd79c59b8070b3a9ca02e433b76",
       "inside_case_supplement": {
         "source_record": "管理档案/来源笔记/inside-audio-output-diagnosis.json",
         "review": "管理档案/审查/INSIDE输出录音案例-读者与来源审查.md",
@@ -3624,8 +3625,11 @@
       "ring_functional_maintenance": {
         "source_record": "管理档案/来源笔记/portaudio-ring-functional.json",
         "review": "管理档案/审查/PortAudio环形缓冲-有限观察与读者审查.md",
-        "support": "管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
-        "scope": "Six sequential original-utility cases repeated; no audio stream or concurrency validation."
+        "scope": "原六项顺序功能观察与两次输出保持原字节；交接解释已并入主文，旧审查保留历史范围。",
+        "historical_support_url": "https://github.com/Container-R/GameLibrary/blob/502fc563fef3ac7e896f8cfc08cf39e8a5701f09/管理档案/支持资料/取得环形缓冲区的区域，为什么还不算交出消息.md",
+        "current_reader_section": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md#取得区域之后何时才算完成交接",
+        "package_path": "管理档案/支持资料/PortAudio环形缓冲有限观察/README.md",
+        "current_review": "管理档案/审稿/SOL-SFX-005/20261107-full-article.json"
       }
     },
     {

@@ -1,0 +1,39 @@
+{
+  "article_path": "GameLibrary/声音与音乐/游戏音效/音频渲染/音频回调来不及等游戏线程时，怎样交出当前声音.md",
+  "article_sha256": "51140248ce372a0c7eb98077fd0a79b8bdbefbd79c59b8070b3a9ca02e433b76",
+  "date": "2026-11-07",
+  "status": "reviewed",
+  "scope": "既有全文有限整改，正式文章数量与主路径不变。",
+  "author": "GameLibrary editorial maintainer",
+  "technical_review": {
+    "report": "管理档案/审稿/SOL-SFX-005/20261107-technical.md",
+    "sha256": "fb772919b3c954bb99af5c33d617a33ccbd69f8c94bfe2a06b1714dcc5d51303",
+    "method": "independent model review",
+    "verdict": "pass"
+  },
+  "reader_review": {
+    "report": "管理档案/审稿/SOL-SFX-005/20261107-reader.md",
+    "sha256": "278b7e09054f6f147b265ac3321cbf9e354267ab7d6772251e38153ed8e474ad",
+    "method": "independent model review",
+    "verdict": "pass"
+  },
+  "navigation_review": {
+    "report": "管理档案/审稿/SOL-SFX-005/20261107-navigation.md",
+    "sha256": "86716109547a89389528dc36d6f6df86611fbf29c6bcbf321f1a16403b0c38ca",
+    "method": "independent model review",
+    "verdict": "pass"
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/SOL-SFX-005/20261107-ring-integration-sources.json",
+      "sha256": "b04b5526284d1324e07e901854d8150d98e5952ba496a6b576b8292da2776ec6"
+    }
+  ],
+  "resolved_findings": [
+    "区域交接的必要解释归入正式正文，旧支持页改为短迁移指向。",
+    "完整输出要求和区域/推进接口的引用范围覆盖实际原文。",
+    "明确独立空缓冲起点和发布后旧写指针不能继续修改已交出记录。"
+  ],
+  "limits": "模型审稿和本地链接/锚点检查，不是开发者实测、远端浏览器验收、音频或并发验证。历史材料的沿用范围见技术审稿。",
+  "publication_identity": "Containing commit; external publication is confirmed only after remote readback."
+}
