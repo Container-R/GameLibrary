@@ -1,0 +1,51 @@
+{
+  "article_path": "GameLibrary/项目管理与测试/质量保证/测试设计/游戏设置页的操作序列与异步完成测试.md",
+  "article_sha256": "431544e66abdc85ba2fee83b556de100e569f7e37dd783fa11d23043f155f199",
+  "author": "GameLibrary 设置页序列研究作者",
+  "reviewed_at": "2026-11-08T15:13:55.343202+00:00",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "设置序列独立技术审稿模型",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/KNOW-QA-004/technical.md",
+      "report_sha256": "ded48f04c0a8397eae6d7cc27df356b81f4fb7debe71490bdd42bab867bc69c2"
+    },
+    {
+      "role": "reader",
+      "reviewer": "设置序列独立读者审读模型",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/KNOW-QA-004/reader.md",
+      "report_sha256": "81976222fc5a30550913b62941f8bc23306efccb93e84804015f7f8560cab94e"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "设置序列独立盲导航审查模型",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/KNOW-QA-004/navigation.md",
+      "report_sha256": "6d05226e1718ca8f0a86805a4bb079b1cb79648d976d9a6d6e91faffb4e34420"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0308/sources.md",
+      "sha256": "8d8e01c018191d65df3d0179921bc5616f38460546848d3602edfef6bd1a108a"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0308/model/settings_model.py",
+      "sha256": "1bd33020d3e30a2bd9dbd8cc9f7500e15d550c3e0086e7de0cc344fa80a3f656"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0308/model/results.json",
+      "sha256": "db9f8951ee66af67774dc310fe2145fc57fedd60b8f48b2e9d791d1438be4ebb"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0308/model/README.md",
+      "sha256": "397e75729c2a29e9791d0ac9ce3441691995b137b490dd71e0057ae93f39a74c"
+    }
+  ],
+  "scope": "独立模型审稿与有限Python模型；没有Unity或真实游戏执行。"
+}

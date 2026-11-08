@@ -6,7 +6,7 @@
     "TASK-2026-0308"
   ],
   "last_completed_task_id": "TASK-2026-0307",
-  "last_real_progress_at": "2026-11-08T14:56:05Z",
+  "last_real_progress_at": "2026-11-08T15:19:05Z",
   "last_commit_sha": "660c01e2858941b266d7f123ea3e6b712f580eb6",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
@@ -24,7 +24,7 @@
     "verification": "13 content and shared-record files read back in full with exact UTF-8 identity; Python finite model only.",
     "scope": "One complete configuration test-design method, reviewed navigation and bounded historical migration; no game or ACTS execution."
   },
-  "next_action": "确定设置页绑定与布局测试适配层，明确缓存/延迟路径的请求身份和检查点，补同值重复输入及失败取消场景，再形成完整稿；未做引擎执行时如实保留边界。",
+  "next_action": "仅完成 TASK-2026-0308 的候选发表及远端逐文件回读，再记录完成；其余队列与存量检查保持原状态。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -46,10 +46,12 @@
   "last_commit_sha_scope": "本轮复核与研究归档之前的已验证基线；本轮记录由所在提交标识。",
   "active_research": {
     "task_id": "TASK-2026-0308",
-    "phase": "research-to-implementation",
+    "phase": "awaiting_remote_verification",
     "owner": "GameLibrary 编辑维护者",
-    "evidence": "管理档案/研究/TASK-2026-0308/research.md",
-    "last_real_progress_at": "2026-11-08T14:56:05Z"
+    "evidence": "管理档案/研究/TASK-2026-0308/sources.md",
+    "last_real_progress_at": "2026-11-08T15:19:05Z",
+    "article": "GameLibrary/项目管理与测试/质量保证/测试设计/游戏设置页的操作序列与异步完成测试.md",
+    "last_progress": "全文、三项独立模型审稿和15例Python有限模型验证完成，待发表回读；未运行Unity或真实游戏。"
   },
   "follow_up_checks": [
     {

@@ -1,0 +1,902 @@
+{
+  "scope": "有限 Python 教学模型；无 Unity，无真实布局、无帧时序或游戏验证。",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "test_count": 15,
+  "passed": 15,
+  "cases": [
+    {
+      "name": "delayed_out_of_order",
+      "passed": true,
+      "supports": "后受理 fr 先完成后，ja 的迟到结果不能提交。",
+      "not_tested": "真实线程竞争、加载器行为。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr",
+          "content_version": 1
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "ja_fr_ja_same_value",
+      "passed": true,
+      "supports": "相同语言值不代表同一次请求；第一次 ja 不能冒充第三次 ja。",
+      "not_tested": "语言资源内容、字体。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 3
+          },
+          "language": "ja"
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": null
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "error": null
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 3
+          },
+          "language": "ja",
+          "content_version": 1
+        }
+      ]
+    },
+    {
+      "name": "close_reopen",
+      "passed": true,
+      "supports": "关闭重开后的请求与旧视图请求分离。",
+      "not_tested": "Unity 生命周期及销毁回调。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "close",
+          "generation": 2
+        },
+        {
+          "event": "reopen",
+          "generation": 3
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 3,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": null
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 3,
+            "request_id": 2
+          },
+          "language": "fr",
+          "content_version": 1
+        }
+      ]
+    },
+    {
+      "name": "current_and_stale_failure",
+      "passed": true,
+      "supports": "过期失败不改当前状态；当前失败终结请求，不伪造成功。",
+      "not_tested": "错误 UI、自动重试策略。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": "old failure"
+        },
+        {
+          "event": "current_failure",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "error": "current failure"
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "cancel_then_late_completion",
+      "passed": true,
+      "supports": "取消后的迟到回调不能提交。",
+      "not_tested": "底层操作是否停止及资源释放。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "cancel"
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "duplicate_completion",
+      "passed": true,
+      "supports": "成功回调重复到达不重复提交或增加内容版本。",
+      "not_tested": "多线程原子性。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        },
+        {
+          "event": "ignored_completion",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "rejected_admission",
+      "passed": true,
+      "supports": "未受理请求不取代最后受理请求。",
+      "not_tested": "实际受理/限流条件。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "rejected",
+          "language": "fr"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        }
+      ]
+    },
+    {
+      "name": "synchronous_cache_completion",
+      "passed": true,
+      "supports": "先保存受理记录再启动加载，允许启动函数内同步完成。",
+      "not_tested": "真实缓存 API 及其重入约定。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        }
+      ]
+    },
+    {
+      "name": "old_layout_receipts",
+      "passed": true,
+      "supports": "布局输入标记同时含内容版本与缩放版本，任一改变均使旧回执失效。",
+      "not_tested": "真实布局几何、换行、帧顺序。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        },
+        {
+          "event": "scale",
+          "value": 1.5,
+          "scale_version": 1
+        },
+        {
+          "event": "ignored_layout",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 0
+          }
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 1
+          }
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr",
+          "content_version": 2
+        },
+        {
+          "event": "ignored_layout",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 1
+          }
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 2,
+            "scale_version": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "layout_across_reopen",
+      "passed": true,
+      "supports": "布局输入也带视图代际，旧视图回执不能确认新视图。",
+      "not_tested": "视图重建时真实组件状态。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        },
+        {
+          "event": "close",
+          "generation": 2
+        },
+        {
+          "event": "reopen",
+          "generation": 3
+        },
+        {
+          "event": "ignored_layout",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "failure_preserves_previous_content",
+      "passed": true,
+      "supports": "当前失败保留逻辑历史 content，但状态明确为失败；没有验证旧内容实际显示。",
+      "not_tested": "产品对旧内容展示或清空的选择。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "current_failure",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "error": "unavailable"
+        }
+      ]
+    },
+    {
+      "name": "operation_readiness_requires_identity_and_layout",
+      "passed": true,
+      "supports": "本次请求就绪同时要求当前提交身份、content_ready 和匹配布局签名；旧内容回执不能确认新请求。",
+      "not_tested": "实际占位/旧内容显示策略、像素上屏或引擎布局质量。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja",
+          "content_version": 1
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "status": "content_ready",
+          "ready": false
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 0
+          }
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "status": "content_ready",
+          "ready": true
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 0
+          }
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "status": "pending",
+          "ready": false
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "status": "pending",
+          "ready": false
+        },
+        {
+          "event": "commit",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr",
+          "content_version": 2
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "content_ready",
+          "ready": false
+        },
+        {
+          "event": "ignored_layout",
+          "input": {
+            "generation": 1,
+            "content_version": 1,
+            "scale_version": 0
+          }
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 2,
+            "scale_version": 0
+          }
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "content_ready",
+          "ready": true
+        },
+        {
+          "event": "scale",
+          "value": 1.5,
+          "scale_version": 1
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "content_ready",
+          "ready": false
+        },
+        {
+          "event": "layout_receipt",
+          "input": {
+            "generation": 1,
+            "content_version": 2,
+            "scale_version": 1
+          }
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "content_ready",
+          "ready": true
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 3
+          },
+          "language": "de"
+        },
+        {
+          "event": "current_failure",
+          "token": {
+            "generation": 1,
+            "request_id": 3
+          },
+          "error": "unavailable"
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 3
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "failed",
+          "ready": false
+        },
+        {
+          "event": "close",
+          "generation": 2
+        },
+        {
+          "event": "reopen",
+          "generation": 3
+        },
+        {
+          "event": "operation_ready",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "committed_token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "status": "idle",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "name": "all_three_completion_permutations",
+      "passed": true,
+      "supports": "三次请求全部先受理的六种完成排列均只提交第三次。",
+      "not_tested": "受理、取消、关闭与完成的所有交织；不是模型检查证明。",
+      "events": [
+        {
+          "event": "six_orders",
+          "results": [
+            {
+              "completion_order": [
+                0,
+                1,
+                2
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            },
+            {
+              "completion_order": [
+                0,
+                2,
+                1
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            },
+            {
+              "completion_order": [
+                1,
+                0,
+                2
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            },
+            {
+              "completion_order": [
+                1,
+                2,
+                0
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            },
+            {
+              "completion_order": [
+                2,
+                0,
+                1
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            },
+            {
+              "completion_order": [
+                2,
+                1,
+                0
+              ],
+              "commit_token": {
+                "generation": 1,
+                "request_id": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "refresh_masks_stale_commit_counterexample",
+      "passed": true,
+      "supports": "L1(ja)→L2(fr)→C2→C1→S：旧 ja 曾覆盖 fr，有限模型定义的 S 按当前目标重建后恢复 fr；最终正确不排除旧提交。",
+      "not_tested": "S 不是 Unity 或布局系统机制，未验证实际缩放是否触发内容重建或错误是否上屏。",
+      "events": [
+        {
+          "event": "L1",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "target": "ja"
+        },
+        {
+          "event": "L2",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "target": "fr"
+        },
+        {
+          "event": "C2",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "logical_content": "fr",
+          "illegal_commit": false
+        },
+        {
+          "event": "C1",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "logical_content": "ja",
+          "illegal_commit": true
+        },
+        {
+          "event": "S",
+          "model_action": "rebuild_from_current_target",
+          "scale": 1.5,
+          "target": "fr",
+          "logical_content": "fr"
+        }
+      ],
+      "final_snapshot_passes": true,
+      "illegal_commit_count": 1
+    },
+    {
+      "name": "masked_stale_commit_counterexample",
+      "passed": true,
+      "supports": "错误实现最终逻辑内容仍为 fr，但曾提交过期 ja；最终快照不能证明过程中没有旧提交。",
+      "not_tested": "错误状态是否真的出现在屏幕上；模型没有渲染帧。",
+      "events": [
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "language": "ja"
+        },
+        {
+          "event": "admitted",
+          "token": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        },
+        {
+          "event": "bad_commit",
+          "original": {
+            "generation": 1,
+            "request_id": 1
+          },
+          "checked": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "ja"
+        },
+        {
+          "event": "bad_commit",
+          "original": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "checked": {
+            "generation": 1,
+            "request_id": 2
+          },
+          "language": "fr"
+        }
+      ],
+      "final_snapshot_passes": true,
+      "illegal_commit_count": 1
+    }
+  ]
+}
