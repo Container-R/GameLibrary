@@ -2,29 +2,27 @@
   "schema_version": 2,
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
-  "active_task_ids": [
-    "TASK-2026-0309"
-  ],
-  "last_completed_task_id": "TASK-2026-0308",
-  "last_real_progress_at": "2026-11-08T17:22:34Z",
-  "last_commit_sha": "50c6a9288e41d0b91551b707c33da50e65ee733c",
+  "active_task_ids": [],
+  "last_completed_task_id": "TASK-2026-0309",
+  "last_real_progress_at": "2026-11-08T17:27:46Z",
+  "last_commit_sha": "25be05680ac8a7fb4193001f072cd4ff3b8b1fcb",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/KNOW-QA-004/review.json",
+    "latest_review": "管理档案/审稿/SOL-AI-004/review.json",
     "latest_supervision": "管理档案/审查/督导/20261109-0056/报告.md"
   },
   "publication": {
-    "kind": "settings-sequences-and-asynchronous-completion",
-    "article": "GameLibrary/项目管理与测试/质量保证/测试设计/游戏设置页的操作序列与异步完成测试.md",
-    "article_sha256": "431544e66abdc85ba2fee83b556de100e569f7e37dd783fa11d23043f155f199",
-    "commit": "900883902d4d29d39c993a35db683f525a38d8f3",
-    "previous_verified_head": "3f459949d8e580326ba77e18add259598458cbe5",
-    "verified_at": "2026-11-08T15:23:37.901Z",
-    "verification": "15 manifest and shared-record files read back in full with exact UTF-8 identity; finite Python model 15 cases independently rerun.",
-    "scope": "One complete settings-sequence test-design method; official docs and fixed uGUI source analysis, independent model reviews. No Unity or real-game execution."
+    "kind": "utility-candidate-retention-and-synchronous-lifecycle",
+    "article": "GameLibrary/游戏人工智能/行为决策/效用选择/效用AI的目标保留与行动切换.md",
+    "article_sha256": "f0ffdeb1fa6b095bd22e7d81e6989b4bfe984fb36500645863cf5abc0942dfbd",
+    "commit": "25be05680ac8a7fb4193001f072cd4ff3b8b1fcb",
+    "previous_verified_head": "50c6a9288e41d0b91551b707c33da50e65ee733c",
+    "verified_at": "2026-11-08T17:27:35.315Z",
+    "verification": "19 manifest and shared-record files read back in full with exact UTF-8 identity; synchronous Python trace and threshold checks independently rerun.",
+    "scope": "One complete utility-candidate retention method; three original sources, independent model reviews, 64 ticks and 2646 threshold checks. No game, engine, performance or player test; runtime failure not injected."
   },
-  "next_action": "完成正文、导航、来源、模型和审稿记录发表后逐文件远端核对，再记录完成。",
+  "next_action": "TASK-2026-0309 已发表并远端核对。依据当前未完成研究与覆盖缺口选择下一项具体专业问题，保留旧材料及历史任务范围。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -43,15 +41,7 @@
     "note": "旧固定书目数、修复完成和整体健康标记只保留于历史，不作为当前验收。"
   },
   "blockers": [],
-  "last_commit_sha_scope": "本次待发表增量的已核远端基线；完成记录以逐文件远端回读为准。",
-  "active_research": {
-    "task_id": "TASK-2026-0309",
-    "phase": "ready_to_publish",
-    "owner": "GameLibrary 编辑维护者",
-    "evidence": "管理档案/审稿/SOL-AI-004/review.json",
-    "last_real_progress_at": "2026-11-08T17:22:34Z",
-    "last_progress": "完整候选保留与同步行为接入方法已通过独立技术、读者和导航审查；有限 Python 模型64个 tick及2646组阈值检查通过，待远端逐文件回读。"
-  },
+  "last_commit_sha_scope": "已逐文件远端回读的正文发表提交；完成状态记录由其后的提交承载。",
   "follow_up_checks": [
     {
       "question": "按各项发表与迁移依据独立核对冻结ID集合；当前96项尚未覆盖全部138篇，不能由扫描自动补齐。",
