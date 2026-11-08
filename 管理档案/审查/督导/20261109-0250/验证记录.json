@@ -1,0 +1,91 @@
+{
+  "head": "9ef9464c9dad8073356dd3e6fe6ad1f5ecaf48ed",
+  "exact_model_rerun": true,
+  "ticks": 64,
+  "counts": {
+    "start_attempt": 5,
+    "start_success": 4,
+    "stop": 4,
+    "update": 31
+  },
+  "final_owners": {
+    "mine:A": null,
+    "mine:B": null
+  },
+  "independent_three_candidate_order_checks": 4608,
+  "same_tick_completion_and_new_run": {
+    "time_ms": 100,
+    "previous": "mine:A",
+    "guard": {
+      "key": "mine:A",
+      "continue_ok": true,
+      "reason": "owned_by_self",
+      "completed": true,
+      "work": 10
+    },
+    "scoring": {
+      "time_ms": 100,
+      "candidates": [
+        {
+          "key": "mine:A",
+          "mode": "start",
+          "eligible": true,
+          "reason": "free",
+          "base": 2,
+          "bonus": 0
+        },
+        {
+          "key": "mine:B",
+          "mode": "start",
+          "eligible": true,
+          "reason": "free",
+          "base": 0,
+          "bonus": 0
+        }
+      ],
+      "selected": "mine:A"
+    },
+    "decision": "start_from_none",
+    "calls": [
+      {
+        "op": "stop",
+        "key": "mine:A",
+        "run_id": 1,
+        "reason": "completed",
+        "work": 10
+      },
+      {
+        "op": "start",
+        "key": "mine:A",
+        "run_id": 2
+      },
+      {
+        "op": "update",
+        "key": "mine:A",
+        "run_id": 2,
+        "work": 1
+      }
+    ],
+    "current": "mine:A",
+    "owners": {
+      "mine:A": "actor",
+      "mine:B": null
+    },
+    "active_work": 1,
+    "counts": {
+      "start_attempt": 2,
+      "start_success": 2,
+      "stop": 1,
+      "update": 11
+    }
+  },
+  "binding_hashes": {
+    "GameLibrary/游戏人工智能/行为决策/效用选择/效用AI的目标保留与行动切换.md": "f0ffdeb1fa6b095bd22e7d81e6989b4bfe984fb36500645863cf5abc0942dfbd",
+    "管理档案/审稿/SOL-AI-004/technical.md": "157e020c9234d693738e596b717e82e8e7321666e72f012cdbc5879bf7c5450d",
+    "管理档案/审稿/SOL-AI-004/reader.md": "cf9d3e718a0612074197262a50b28e58ddd776fba197bebf155568c3a8a444e7",
+    "管理档案/审稿/SOL-AI-004/navigation.md": "223fd0f714987ab9dc7750ded13c8d70a2549098441c38830bdc213406d87de1",
+    "管理档案/研究/TASK-2026-0309/model/behavior_fixture.py": "5441055b0ee1184da1c8714e147f216a2d429194ba92cdb259267cd2a2d1eafa",
+    "管理档案/研究/TASK-2026-0309/model/results.json": "5809109e602cfbdee6e67411b73c298bf81274c477a79d241633cf3a470c4fc5"
+  },
+  "scope": "Finite Python model and independent mathematical ranking checks only. No engine, timing, perception, runtime failure, or player validation."
+}

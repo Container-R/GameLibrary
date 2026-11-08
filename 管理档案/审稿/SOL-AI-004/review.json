@@ -3,7 +3,7 @@
   "article_id": "SOL-AI-004",
   "task_id": "TASK-2026-0309",
   "status": "ready_for_publication",
-  "publication_status": "not_published",
+  "publication_status": "published",
   "base_commit": "50c6a9288e41d0b91551b707c33da50e65ee733c",
   "article_path": "GameLibrary/游戏人工智能/行为决策/效用选择/效用AI的目标保留与行动切换.md",
   "article_sha256": "f0ffdeb1fa6b095bd22e7d81e6989b4bfe984fb36500645863cf5abc0942dfbd",
@@ -51,7 +51,9 @@
   ],
   "remaining_scope_limits": [
     "No game engine, navigation, animation, perception, concurrency, asynchronous stopping or player test.",
-    "No runtime-failure injection or actual response-time guarantee.",
-    "Remote publication and exact-byte readback are pending the sole publisher."
-  ]
+    "No runtime-failure injection or actual response-time guarantee."
+  ],
+  "publication_commit": "25be05680ac8a7fb4193001f072cd4ff3b8b1fcb",
+  "publication_verified_at": "2026-11-08T17:27:35.315Z",
+  "publication_record_reconciled_at": "2026-11-08T18:56:00Z"
 }

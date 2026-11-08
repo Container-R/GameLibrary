@@ -10668,6 +10668,30 @@
       "completed_at": "2026-11-08T17:27:46Z",
       "publication_commit": "25be05680ac8a7fb4193001f072cd4ff3b8b1fcb",
       "publication_verified_at": "2026-11-08T17:27:35.315Z"
+    },
+    {
+      "id": "TASK-2026-0310",
+      "question": "当重复建筑空间需要局部破墙、去顶及地板替换时，怎样选择整段、分件与标准预制组合，并明确修改后的边界与维护保证？",
+      "reader": "具备基础模型、坐标和编辑器装配经验的环境美术、关卡搭建者与技术美术。",
+      "scope": "重复建筑空间的建模、日常摆放及例外修改粒度；接续既有模块化环境专题，不重复接口坐标推导或共享灯具的预制覆盖教程，不推导运行时性能。",
+      "expected_outcome": "完整的制作决策与例外验证方法，具备贯穿案例和独立读者任务；成熟后完成技术、读者及逐层导航审查，再发表。",
+      "phase": "researching",
+      "status": "researching",
+      "owner": "GameLibrary 编辑维护者",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0310/scope.md",
+        "管理档案/研究/TASK-2026-0310/sources.md",
+        "管理档案/研究/TASK-2026-0310/findings.md",
+        "管理档案/研究/TASK-2026-0310/next-action.md"
+      ],
+      "last_real_progress": "核对现有完整接口方法并排除重复题；已深读Fallout 4原始课件与五张原图、相邻正文及官方预制文档，形成三种粒度、边界暴露、继承范围与比较方案。",
+      "next_action": "完成正常走廊局部破墙与地板替换的贯穿制作方案，补原创关系和断面示意，形成完整方法正文后独立三审；不把抽象依赖模型当真实编辑器结果。",
+      "blocker": null,
+      "updated_at": "2026-11-08T18:56:00Z",
+      "related_article_ids": [
+        "SOL-ENV-001"
+      ],
+      "validation_scope": "原始材料、图像和现有正文研究；未执行原生DCC/引擎、工时、性能或玩家实验。"
     }
   ],
   "execution_policy": {
