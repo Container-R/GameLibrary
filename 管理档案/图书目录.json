@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "72f8d104f938225cbd57b0bd9008ea74ffde9dde",
+  "publication_base_sha": "b788e8c675ed48eacff8ce4ec7914521463e854d",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -1402,21 +1402,35 @@
         "review": "管理档案/审查/战术选点-历史来源与读者审查.md",
         "scope": "Primary-slide interpretation and original hypothetical integration example; no scorer/game execution."
       },
-      "companion_follow_support": {
-        "path": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
-        "sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
-        "entry": "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
-        "source": "管理档案/来源笔记/ellie-follow-position-case.json",
-        "review": "管理档案/审查/同伴跟随选点-来源与读者审查.md",
-        "diagram": "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
-        "scope": "Historical source and original illustration, with a separately bounded native appendix; long host unchanged.",
-        "native_addendum": {
-          "archive": "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
-          "source": "管理档案/来源笔记/companion-detour-l-shape.json",
-          "review": "管理档案/审查/同伴直连与绕行-有限原生观察审查.md",
-          "scope": "Two same-operator fixed-input executions and independent result review; not game recreation."
+      "historical_support_records": [
+        {
+          "topic": "companion-follow",
+          "record": {
+            "path": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+            "sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
+            "entry": "GameLibrary/游戏人工智能/移动导航/路径查询/README.md",
+            "source": "管理档案/来源笔记/ellie-follow-position-case.json",
+            "review": "管理档案/审查/同伴跟随选点-来源与读者审查.md",
+            "diagram": "管理档案/支持资料/同伴跟随几何示意/follow-checks.svg",
+            "scope": "Historical source and original illustration, with a separately bounded native appendix; long host unchanged.",
+            "native_addendum": {
+              "archive": "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
+              "source": "管理档案/来源笔记/companion-detour-l-shape.json",
+              "review": "管理档案/审查/同伴直连与绕行-有限原生观察审查.md",
+              "scope": "Two same-operator fixed-input executions and independent result review; not game recreation."
+            },
+            "snapshot_commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
+            "history_url": "https://github.com/Container-R/GameLibrary/blob/502fc563fef3ac7e896f8cfc08cf39e8a5701f09/管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md"
+          }
         }
-      }
+      ],
+      "related_articles": [
+        {
+          "id": "SOL-AI-003",
+          "path": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+          "relation": "Separate local forward-connectivity candidate method; not an extension of path-completeness or body-arrival proof."
+        }
+      ]
     },
     {
       "internal_id": "SOL-ANIM-002",
@@ -1921,10 +1935,10 @@
         "verification_method": "Fixed Unicode17 text and independent reader review; no component execution.",
         "excluded": "No universal segmentation implementation, pixel measurements, language approval or typewriter-animation algorithm."
       },
-      "reader_body_sha256": "0e20fdd9d2bd0e66d1cbe1f6d02217ad01289ea25616a45ffb2f49786fa84260",
+      "reader_body_sha256": "dcf62d26c161da09d16299b7d54685f35f83c5b27e67d45bbc2bb11da1691235",
       "latest_review_path": "管理档案/审查/数字精度与复数类别-来源审读.md",
       "source_record": "管理档案/来源笔记/formatted-number-plural-selection.json",
-      "latest_supplement": "One optional support link explains raw numeric input versus visible decimal precision; old integer-only evidence remains limited.",
+      "latest_supplement": "数字显示精度的独立正式文章与相关阅读链接；历史整数观察范围不变。",
       "line_break_support": {
         "path": "管理档案/支持资料/没拆开字，为什么右括号还是跑到了下一行.md",
         "sha256": "bcd738aa0cb2810de24347c052bc8c796e6efebf1d5d2988e470c20d413b27c2",
@@ -1939,10 +1953,15 @@
         "管理档案/审查/换行机会与塑形复用-增量审读.md",
         "管理档案/审查/伪本地化长节阅读导航-独立审读.md"
       ],
-      "reader_sha256": "0e20fdd9d2bd0e66d1cbe1f6d02217ad01289ea25616a45ffb2f49786fa84260",
+      "reader_sha256": "dcf62d26c161da09d16299b7d54685f35f83c5b27e67d45bbc2bb11da1691235",
       "shaping_context_increment": {
         "review": "管理档案/审查/字体覆盖与塑形-来源与读者审查.md",
         "scope": "Target item range versus surrounding shaping context; fixed-source explanation, no execution or new book."
+      },
+      "localization_migration": {
+        "scope": "仅改变相关阅读链接及其身份说明，不重审伪本地化全文。",
+        "review": "管理档案/审稿/本地化正文迁移-20261108/host-link-review.md",
+        "related_article_id": "SOL-LOC-004"
       }
     },
     {
@@ -3099,11 +3118,20 @@
         "管理档案/审查/ICU双向索引-公开衍生审查.md",
         "管理档案/审查/行内昵称方向隔离-来源与有限尝试审查.md"
       ],
-      "reader_sha256": "2f0b16ca3d106d307cee1935a47fcac7be98b12a6ded1f0c8b62299485e6ffe7",
-      "inline_isolation_support": {
-        "path": "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
-        "sha256": "579226a9a233ae90b919059753b30b333a71e02934a227a90a314ea5a3d53f7a",
-        "scope": "Source-backed inline isolation; browser attempt failed without rendering observations; previous ICU evidence scope unchanged."
+      "reader_sha256": "277e3165fd60d2c9b6300a7cb574586c1343c5db83b5997f38a82e4f5b93d5f5",
+      "inline_isolation_article": {
+        "article_id": "SOL-LOC-005",
+        "path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+        "current_review": "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-005.json",
+        "historical_support": {
+          "path": "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+          "sha256": "579226a9a233ae90b919059753b30b333a71e02934a227a90a314ea5a3d53f7a",
+          "scope": "Source-backed inline isolation; browser attempt failed without rendering observations; previous ICU evidence scope unchanged."
+        }
+      },
+      "localization_migration": {
+        "scope": "仅改变可选行内隔离文章链接，不重审索引正文全文。",
+        "review": "管理档案/审稿/本地化正文迁移-20261108/host-link-review.md"
       }
     },
     {
@@ -5263,6 +5291,71 @@
       ],
       "updated_at": "2026-11-06",
       "scope": "Complete-domain pure derived state, chunk version skipping, explicit invalidation and synchronous phase/read-gate protocol. Fixed Entities1.3.15 source explanation and unexecuted original C#; no performance claim."
+    },
+    {
+      "internal_id": "SOL-LOC-004",
+      "reader_title": "显示成 1.0 时，复数类别为什么不能只看原值",
+      "discipline": "本地化与无障碍",
+      "direction": "本地化制作",
+      "topic": "数字与消息格式",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立模型全文技术、读者和逐层导航审查通过；本提交收录正式正文和有限迁移，未新增运行或真人验证。",
+      "reader_sha256": "8f3029be276173bdb6c12ce4991d0923e6d9f735caf86fff133b6f300aa48178",
+      "review": "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-004.json",
+      "source_record": "管理档案/研究/本地化正文迁移-20261108/来源复核.json",
+      "scope_note": "英文 en cardinal 与普通十进制的显示精度一致性；只作固定来源推导，未运行 ICU。",
+      "historical_material": {
+        "path": "管理档案/支持资料/数字显示精度与复数选择.md",
+        "commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
+        "sha256": "fd454a02bd67295f9799595c7415f1aeca30d1290ccbec1ae5599cd3c0c6494a",
+        "disposition": "旧路径仅为迁移指引，固定历史保留完整原文及原审查。"
+      },
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "internal_id": "SOL-LOC-005",
+      "reader_title": "玩家昵称为什么会影响旁边数字和标点的顺序",
+      "discipline": "本地化与无障碍",
+      "direction": "本地化制作",
+      "topic": "文字排版",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "current_read_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立模型全文技术、读者和逐层导航审查通过；本提交收录正式正文和有限迁移，未新增运行或真人验证。",
+      "reader_sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+      "review": "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-005.json",
+      "source_record": "管理档案/研究/本地化正文迁移-20261108/来源复核.json",
+      "scope_note": "已确定外层方向的行内昵称隔离；区分 HTML 与受约束纯文本路径，未取得浏览器或引擎结果。",
+      "historical_material": {
+        "path": "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+        "commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
+        "sha256": "579226a9a233ae90b919059753b30b333a71e02934a227a90a314ea5a3d53f7a",
+        "disposition": "旧路径仅为迁移指引，固定历史保留完整原文及原审查。"
+      },
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "internal_id": "SOL-AI-003",
+      "reader_title": "同伴跟随候选位置的前方连通检查",
+      "discipline": "游戏人工智能",
+      "specialty": "移动导航",
+      "topic": "同伴跟随",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+      "current_read_path": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+      "reader_body_status": "published",
+      "editorial_status": "独立模型全文技术、读者和逐层导航审查通过；本提交收录正式正文和有限迁移，未新增运行或真人验证。",
+      "reader_sha256": "92f7300fb46a0b60f2846259b4583949b38cba3e30470e28784dd882e56291c3",
+      "review_paths": [
+        "管理档案/审稿/SOL-AI-003/20261108-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0306/sources.json",
+      "historical_path": "管理档案/支持资料/最后生还者的同伴跟随，为什么要多查一段路.md",
+      "historical_commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
+      "historical_sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
+      "scope_note": "Fixed original source, original geometry and conservative integration method; historical native observations reread, not rerun.",
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
     }
   ],
   "current_batch_scope": "One complete Unity derived-component refresh method and bounded historical support migration; no whole-library acceptance."

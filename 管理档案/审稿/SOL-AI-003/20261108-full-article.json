@@ -1,0 +1,40 @@
+{
+  "article_path": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+  "article_sha256": "92f7300fb46a0b60f2846259b4583949b38cba3e30470e28784dd882e56291c3",
+  "date": "2026-11-08",
+  "author": "本轮编辑",
+  "review_method": "Independent model technical review and independent model reader/navigation review; not human testing or runtime validation.",
+  "technical": {
+    "reviewer": "独立模型技术审查",
+    "decision": "通过",
+    "report": "管理档案/审稿/SOL-AI-003/20261108-technical.md",
+    "scope": "Full article, original source figure 35.1, fixed Detour implementation, geometry and historical input/output identities."
+  },
+  "reader": {
+    "reviewer": "独立模型读者审读",
+    "decision": "通过",
+    "report": "管理档案/审稿/SOL-AI-003/20261108-reader-navigation.md",
+    "task": "New geometric input, mixed query states and recovery choices, changed floor condition; no management notes required for core explanation."
+  },
+  "navigation": {
+    "reviewer": "独立模型导航审查",
+    "decision": "通过",
+    "report": "管理档案/审稿/SOL-AI-003/20261108-reader-navigation.md",
+    "route": [
+      "README.md",
+      "GameLibrary/README.md",
+      "GameLibrary/游戏人工智能/README.md",
+      "GameLibrary/游戏人工智能/移动导航/README.md",
+      "GameLibrary/游戏人工智能/移动导航/同伴跟随/README.md",
+      "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md"
+    ],
+    "method": "Root-to-article link navigation without search or directory traversal."
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0306/sources.json",
+      "sha256": "702fe1bc60445d5071677ae40d37cc83b9fd8beb854795536d1e3f9c4de87d2e"
+    }
+  ],
+  "limits": "Only this finite article and its route accepted. No new native, game, collision, animation, performance, visual-effect or participant study."
+}

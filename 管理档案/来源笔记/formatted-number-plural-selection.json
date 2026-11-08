@@ -19,6 +19,9 @@
     "icu4c/source/i18n/number_decimalquantity.cpp": "Minimum fraction setting, v operand and fractionCount"
   },
   "derivation_scope": "Only en cardinal, mathematical value1, plain decimal without scale, exponent, offset or exact-value selectors. Raw-double versus displayed1 and deliberately displayed1.0; all categories source-derived, not measured.",
-  "deduplication": "Keep existing pseudo-localization body; add one optional programmer-support link rather than another plural tutorial or independent book. Historical integer observations remain unchanged and do not cover this condition.",
-  "verification_method": "Primary-source reading, explicit source derivation and independent reader review; no ICU loading, version probe, formatting, game runtime or translation-quality test."
+  "verification_method": "Primary-source reading, explicit source derivation and independent reader review; no ICU loading, version probe, formatting, game runtime or translation-quality test.",
+  "historical_classification_note": "Keep existing pseudo-localization body; add one optional programmer-support link rather than another plural tutorial or independent book. Historical integer observations remain unchanged and do not cover this condition.",
+  "current_article_path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+  "classification": "2026-11-08 候选迁移：技术方法进入正式数字与消息格式专题；原先仅列为支持资料的定位保留为历史。",
+  "current_review_record": "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-004.json"
 }

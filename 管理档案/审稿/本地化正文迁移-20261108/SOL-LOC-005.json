@@ -1,0 +1,47 @@
+{
+  "article_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+  "article_sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+  "publication_kind": "formal-localization-method-migration",
+  "publication_state": "ready_local_unpublished",
+  "verdict": "pass",
+  "author": "GameLibrary editorial maintainer",
+  "reviews": [
+    {
+      "reviewer": "Independent model technical reviewer",
+      "role": "technical",
+      "verdict": "pass",
+      "article_sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+      "report": "管理档案/审稿/本地化正文迁移-20261108/technical.md",
+      "scope": "Full article and original sources, independent boundary cases; final numeric clarification reread. No runtime execution."
+    },
+    {
+      "reviewer": "Independent model reader and navigation reviewer",
+      "role": "reader",
+      "verdict": "pass",
+      "article_sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+      "report": "管理档案/审稿/本地化正文迁移-20261108/reader-navigation.md",
+      "scope": "Full article with representative new task; final numeric revision reread. Not a human usability test."
+    },
+    {
+      "reviewer": "Independent model reader and navigation reviewer",
+      "role": "navigation",
+      "verdict": "pass",
+      "article_sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+      "report": "管理档案/审稿/本地化正文迁移-20261108/reader-navigation.md",
+      "scope": "Two actual root-to-article blind routes, followed by bounded reread of the corrected discipline index. Not a whole-library navigation audit."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/本地化正文迁移-20261108/来源复核.json",
+      "sha256": "4be50e5f936baf9b5c3d47ec0d462ac9aab4761695bfe311c12532701859fe67"
+    }
+  ],
+  "scope_record": "管理档案/研究/本地化正文迁移-20261108/范围与保留.md",
+  "history": {
+    "previous_path": "管理档案/支持资料/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+    "commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09"
+  },
+  "limits": "Source-backed explanation and model review only. No ICU formatting, browser/engine presentation, native game or human tests. Remote publication remains blocked by an unrelated unresolved write.",
+  "updated_at": "2026-11-07T19:01:58.624430+00:00"
+}

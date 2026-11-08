@@ -1,0 +1,66 @@
+{
+  "source_read_at": "2026-11-08",
+  "article": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+  "claims": [
+    {
+      "claim": "三组导航网格射线生成与检查跟随候选；候选评分及移动过滤另行处理。",
+      "source": {
+        "author": "Max Dyckhoff",
+        "title": "Ellie: Buddy AI in The Last of Us",
+        "publication": "Game AI Pro 2, 2015, Chapter 35",
+        "url": "https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter35_Ellie_Buddy_AI_in_The_Last_of_Us.pdf"
+      },
+      "locator": "§35.3.1–35.3.2, pp.433–434; Figure 35.1; scope §35.4 p.435",
+      "observed_content": "实际通读12页章节；实际渲染查看印刷页433的图35.1。图示分别是领队发出候选射线、候选向前、领队到前方端点。",
+      "conditions": "原版游戏历史说明；不提供完整参数、失败恢复或评分实现；未运行游戏。",
+      "article_section": "三组查询检查三种位置关系",
+      "pdf_sha256": "3edf733813bf28eb3d9a7bd1d064ced442f66c712a8c369de41a3f2375736f4d",
+      "redistribution": "Only original link and original explanation; source PDF and page render are not included in publication."
+    },
+    {
+      "claim": "raycast成功位不证明无墙命中；t、容量状态和终点高度限制需分别解释。",
+      "source": {
+        "author": "recastnavigation/recastnavigation",
+        "title": "DetourNavMeshQuery.h and DetourNavMeshQuery.cpp",
+        "version": "v1.6.0, 6dc1667f580357e8a2154c28b7867bea7e8ad3a7",
+        "urls": [
+          "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Include/DetourNavMeshQuery.h#L121-L146",
+          "https://github.com/recastnavigation/recastnavigation/blob/6dc1667f580357e8a2154c28b7867bea7e8ad3a7/Detour/Source/DetourNavMeshQuery.cpp#L2430-L2691"
+        ]
+      },
+      "locator": "dtRaycastHit; raycast documentation, endpoint-inside and no-neighbour return branches, path-capacity handling",
+      "observed_content": "核对固定实现及头文件；本轮文本快照与历史源身份清单逐字节一致。",
+      "conditions": "局部单层导航表面；保守分类为本文接入策略，不声称所有附加状态都会使几何参数失效。",
+      "article_section": "Detour 中的成功位不等于直线通过",
+      "source_identities": [
+        {
+          "path": "DetourNavMeshQuery.h",
+          "sha256": "7fec77b2d0f0ed8d588fb271a01da41943d4cd9b33d0809e761083950e2d625d",
+          "git_blob": "101b3c852257d9c968982dd7ad751c8ae151518b"
+        },
+        {
+          "path": "DetourNavMeshQuery.cpp",
+          "sha256": "fb3f040b35633ad01dfec2a18e1dd1433b10ede69780dddf65bd0a016af0183b",
+          "git_blob": "cebe26b5d0363c5131dfdd7026227344714594f7"
+        }
+      ]
+    },
+    {
+      "claim": "固定L形输入上，三条raycast与一条findPath有不同几何/通道结果。",
+      "source": {
+        "repository_record": "管理档案/研究记录/companion-detour-l-shape-20261104/README.md",
+        "base_commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09"
+      },
+      "locator": "observations/main/native.stdout; observations/repeat/native.stdout; SOURCE-MANIFEST.json",
+      "observed_content": "读取保留输入和两份原始输出；L→F的t=.5、绕行通道P0/P1/P2，与正文表格一致。",
+      "conditions": "历史同操作者同环境两副本执行；本轮没有新原生运行。",
+      "article_section": "Detour 中的成功位不等于直线通过"
+    }
+  ],
+  "original_work": [
+    "二维矩形反例与试探距离d的相交区间推导",
+    "候选资格、查询未确定与移动策略的接口划分",
+    "保守返回值分类与失败诊断任务"
+  ],
+  "limits": "No new engine, game, native navigation, controller, performance or participant tests. Original SVG inspected; historical output records reread, not rerun."
+}

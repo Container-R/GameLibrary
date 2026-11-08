@@ -3741,7 +3741,9 @@
       "next_action": "Retain finite observation and source boundaries; do not treat the public projection as the original replay package.",
       "blockers": [],
       "completion_scope": "Reader article and reviewed public-safe historical projection; original private runtime package not published; no new native run.",
-      "latest_reader_maintenance": "Separate inline-name isolation from UTF-16 index copying. Source-backed support and one unsuccessful browser attempt; historical ICU evidence unchanged."
+      "latest_reader_maintenance": "Separate inline-name isolation from UTF-16 index copying. Source-backed support and one unsuccessful browser attempt; historical ICU evidence unchanged.",
+      "related_isolation_article": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "related_remediation_task": "TASK-2026-0305"
     },
     {
       "id": "TASK-2026-0093",
@@ -7380,7 +7382,9 @@
       "last_progress_at": "2026-11-02T06:36:45Z",
       "next_action": "Verify the actual project formatter and language resources before applying the source-derived comparison; existing integer observations do not validate this condition.",
       "blockers": [],
-      "verification_method": "Fixed-source reasoning and independent full reader review only; no ICU or game execution."
+      "verification_method": "Fixed-source reasoning and independent full reader review only; no ICU or game execution.",
+      "current_article_path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "related_remediation_task": "TASK-2026-0304"
     },
     {
       "id": "TASK-2026-0199",
@@ -10433,16 +10437,87 @@
       "reader": "运行时音频程序员和技术音频设计师。",
       "scope": "A bounded FMOD Core control-side method for fixed loaded PCM resources and a single playback owner. Compare existing recovery/scheduling methods, account for admission, resource limits and terminal cleanup; do not infer sound quality or resource savings from counts.",
       "expected_outcome": "A complete source-backed request-to-terminal method with an independent reader task, full technical/reader/navigation reviews and bounded former priority-support disposition.",
-      "next_action": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication.",
-      "phase": "researching",
-      "status": "active",
+      "next_action": "Recover and verify the complete manuscript and final review/source materials; if unavailable, resume from the preserved public scope rather than treating it as a published article.",
+      "phase": "material_recovery",
+      "status": "blocked",
       "owner": "GameLibrary editorial maintainer",
       "evidence_paths": [],
-      "blocker": null,
-      "updated_at": "2026-11-06T19:35:04Z",
+      "blocker": "The prior manuscript and its final source/review bindings must be recovered and verified before publication.",
+      "updated_at": "2026-11-08T08:27:36Z",
       "related_task_ids": [
         "TASK-2026-0302"
       ]
+    },
+    {
+      "id": "TASK-2026-0304",
+      "question": "解释原始值与可见小数位怎样影响英文 cardinal 类别，并判断显示与类别选择是否使用同一格式依据。",
+      "reader": "接入 ICU 数字格式器的程序人员。",
+      "scope": "英文 en cardinal 与普通十进制的显示精度一致性；只作固定来源推导，未运行 ICU。",
+      "expected_outcome": "一篇独立正式文章、唯一现行路径、适当专题导航及与最终字节绑定的完整审查。",
+      "phase": "complete",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/本地化正文迁移-20261108/范围与保留.md",
+        "管理档案/研究/本地化正文迁移-20261108/来源复核.json",
+        "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-004.json"
+      ],
+      "article_path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "next_action": "Revisit source versions and applicability as needed; this publication adds no new runtime or human testing.",
+      "blocker": null,
+      "updated_at": "2026-11-08T08:27:36Z",
+      "related_task_ids": [
+        "TASK-2026-0198"
+      ],
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0305",
+      "question": "区分行内昵称与外层消息的方向边界，选择适用的隔离接口并识别输入约束。",
+      "reader": "接入 HTML 或纯文本排版组件的开发者。",
+      "scope": "已确定外层方向的行内昵称隔离；区分 HTML 与受约束纯文本路径，未取得浏览器或引擎结果。",
+      "expected_outcome": "一篇独立正式文章、唯一现行路径、适当专题导航及与最终字节绑定的完整审查。",
+      "phase": "complete",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "evidence_paths": [
+        "管理档案/研究/本地化正文迁移-20261108/范围与保留.md",
+        "管理档案/研究/本地化正文迁移-20261108/来源复核.json",
+        "管理档案/审稿/本地化正文迁移-20261108/SOL-LOC-005.json"
+      ],
+      "article_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "next_action": "Revisit source versions and applicability as needed; this publication adds no new runtime or human testing.",
+      "blocker": null,
+      "updated_at": "2026-11-08T08:27:36Z",
+      "related_task_ids": [
+        "TASK-2026-0092"
+      ],
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0306",
+      "question": "怎样把同伴候选的前方直连检查与绕行路径、查询错误及移动触发分开，并让该技术正文从正式学科入口可达？",
+      "reader": "熟悉导航网格与路径查询的 AI 程序和关卡制作人员。",
+      "scope": "One finite companion-follow candidate method and recoverable historical migration. No full follow controller, combat cover, runtime performance or new native execution.",
+      "expected_outcome": "Reviewed formal article, single canonical location, original sources and bounded historical preservation.",
+      "phase": "complete",
+      "status": "published",
+      "owner": "GameLibrary editorial maintainer",
+      "article_path": "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md",
+      "article_sha256": "92f7300fb46a0b60f2846259b4583949b38cba3e30470e28784dd882e56291c3",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0306/sources.json",
+        "管理档案/研究/TASK-2026-0306/范围与保留.md",
+        "管理档案/审稿/SOL-AI-003/20261108-full-article.json"
+      ],
+      "related_task_ids": [
+        "TASK-2026-0259",
+        "TASK-2026-0260"
+      ],
+      "next_action": "Revisit source versions and applicability as needed; this publication adds no new runtime or human testing.",
+      "blocker": null,
+      "updated_at": "2026-11-08T08:27:36Z",
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
     }
   ],
   "execution_policy": {

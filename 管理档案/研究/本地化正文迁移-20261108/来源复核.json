@@ -1,0 +1,264 @@
+{
+  "read_at_utc": "2026-11-07T19:00:28.890640+00:00",
+  "review_type": "独立模型技术审稿",
+  "articles": [
+    {
+      "path": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "sha256": "8f3029be276173bdb6c12ce4991d0923e6d9f735caf86fff133b6f300aa48178",
+      "verdict": "通过",
+      "review_type": "独立模型技术审稿",
+      "runtime_tested": false
+    },
+    {
+      "path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "sha256": "010da0f281f294c5a790810e92023ffbf4baa2e29babd7b44d0b8605ec2f30ed",
+      "verdict": "通过",
+      "review_type": "独立模型技术审稿",
+      "runtime_tested": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "P1",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/data/misc/plurals.txt",
+      "version": "ICU 76.1 / CLDR46",
+      "locations": [
+        "locales/en（原文件第46行）",
+        "rules/set3（627–633）"
+      ],
+      "supports": [
+        "en cardinal使用i=1且v=0的one规则"
+      ],
+      "read_method": "原始源码下载并按行阅读"
+    },
+    {
+      "id": "P2",
+      "url": "https://www.unicode.org/reports/tr35/tr35-73/tr35-numbers.html#Operands",
+      "version": "LDML46 revision73",
+      "locations": [
+        "Operands",
+        "Plural Operand Meanings",
+        "Plural Operand Examples"
+      ],
+      "supports": [
+        "v计入尾零，1、1.0、1.00的操作数不同"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "P3",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/upluralrules.h",
+      "version": "ICU76.1",
+      "locations": [
+        "uplrules_open / uplrules_openForType",
+        "uplrules_select",
+        "uplrules_selectFormatted",
+        "U_HIDE_INTERNAL_API / uplrules_selectWithFormat"
+      ],
+      "supports": [
+        "规则对象决定locale和cardinal/ordinal",
+        "formatted接口支持尾零；stable ICU64",
+        "selectWithFormat为internal ICU59 technology preview，并非所提方案依赖"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "P4",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/upluralrules.cpp#L80-L117",
+      "version": "ICU76.1",
+      "locations": [
+        "uplrules_select",
+        "uplrules_selectFormatted",
+        "validateUFormattedNumberToDecimalQuantity后select(*dq)"
+      ],
+      "supports": [
+        "double与formatted选择的数据路径不同"
+      ],
+      "read_method": "原始源码下载并按行阅读"
+    },
+    {
+      "id": "P5",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/plurrule.cpp",
+      "version": "ICU76.1",
+      "locations": [
+        "PluralRules::select(double) 第292行",
+        "FixedDecimal(double) 第1671行",
+        "FixedDecimal::init(double) 1753–1755",
+        "FixedDecimal::decimals(double) 1828–1836"
+      ],
+      "supports": [
+        "double 1的v为0，源码字面量尾零不会保留"
+      ],
+      "read_method": "原始源码下载并按符号/行阅读"
+    },
+    {
+      "id": "P6",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/unumberformatter.h",
+      "version": "ICU76.1",
+      "locations": [
+        "文件总述",
+        "unumf_openForSkeletonAndLocale",
+        "unumf_formatDouble",
+        "输出buffer预检示例"
+      ],
+      "supports": [
+        "格式器与可复用结果分离，C API使用skeleton"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "P7",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/numberformatter.h#L503-L531",
+      "version": "ICU76.1",
+      "locations": [
+        "Precision::fixedFraction",
+        "Precision::maxFraction"
+      ],
+      "supports": [
+        "固定小数位不足补零，最大位数策略不等于固定策略"
+      ],
+      "read_method": "公开API正文及下载源码定位"
+    },
+    {
+      "id": "P8",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/unicode/uformattednumber.h",
+      "version": "ICU76.1",
+      "locations": [
+        "unumf_openResult",
+        "unumf_resultAsValue",
+        "unumf_resultToString"
+      ],
+      "supports": [
+        "复用会清除原结果；字符串buffer与对象寿命约束"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "P9",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/i18n/number_decimalquantity.cpp",
+      "version": "ICU76.1",
+      "locations": [
+        "getPluralOperand 271起",
+        "getLowerDisplayMagnitude 325起",
+        "fractionCount 343起"
+      ],
+      "supports": [
+        "formatted选择中的v依赖显示小数界限"
+      ],
+      "read_method": "原始源码下载并按行阅读"
+    },
+    {
+      "id": "P10",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/data/misc/supplementalData.txt",
+      "version": "ICU76.1",
+      "locations": [
+        "cldrVersion"
+      ],
+      "supports": [
+        "固定树声明CLDR46"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "P11",
+      "url": "https://github.com/unicode-org/icu/blob/8eca245c7484ac6cc179e3e5f7c1ea7680810f39/icu4c/source/common/unicode/uvernum.h",
+      "version": "ICU76.1",
+      "locations": [
+        "U_ICU_VERSION 第135行"
+      ],
+      "supports": [
+        "固定树声明版本76.1"
+      ],
+      "read_method": "原始源码下载并按行阅读"
+    },
+    {
+      "id": "B1",
+      "url": "https://www.unicode.org/reports/tr9/tr9-50.html",
+      "version": "UAX9 rev50 / Unicode16.0.0 / 2024-09-02",
+      "locations": [
+        "§2, §2.4–2.7",
+        "BD9",
+        "P2/P3",
+        "X5c/X6a",
+        "HL1/HL3"
+      ],
+      "supports": [
+        "隔离的中性外部效果与逻辑存储",
+        "嵌套匹配与用户PDI提前终止",
+        "FSI跳过嵌套内容、无强方向取LTR；HL1不改变该规则"
+      ],
+      "read_method": "下载官方HTML并提取正文逐节阅读"
+    },
+    {
+      "id": "B2",
+      "url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "version": "滚动指南，本轮读取时间见read_at_utc",
+      "locations": [
+        "Quick answer",
+        "Where the bidi algorithm needs help",
+        "Spillover effects",
+        "If you do not know the direction of the phrase",
+        "What if I cannot use markup"
+      ],
+      "supports": [
+        "紧密包裹未知方向片段",
+        "bdi/dir=auto及纯文本隔离码的适用范围"
+      ],
+      "read_method": "公开原始正文阅读"
+    },
+    {
+      "id": "B3",
+      "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element",
+      "version": "本轮页面Last Updated 6 November 2026",
+      "locations": [
+        "§4.5.24 bdi",
+        "用户名、冒号和帖子计数示例"
+      ],
+      "supports": [
+        "bdi默认auto且不直接继承父元素；用户名串扰案例"
+      ],
+      "read_method": "公开原始正文阅读",
+      "note": "正文记录的2026-10-30属于作者此前阅读版本；本轮没有假称读取到该日期快照。未读图片作为视觉验证。"
+    },
+    {
+      "id": "B4",
+      "url": "https://html.spec.whatwg.org/multipage/dom.html#the-dir-attribute",
+      "version": "本轮页面Last Updated 6 November 2026",
+      "locations": [
+        "§3.2.6.4 dir",
+        "directionality / auto directionality / contained text auto directionality / text node directionality",
+        "§3.2.8.2"
+      ],
+      "supports": [
+        "补核HTML auto自己的方向算法；无强字符返回ltr",
+        "HTML与Unicode算法/CSS映射需按HTML要求处理"
+      ],
+      "read_method": "公开原始正文阅读"
+    }
+  ],
+  "limits": [
+    "没有ICU调用、浏览器/游戏引擎呈现、真人试读或玩家测试",
+    "边界案例是来源推导，不是运行结果",
+    "导航不在本轮判定范围",
+    "原始来源快照仅作本地核对，不需要随公开报告复制"
+  ],
+  "optional_recommendations": [
+    {
+      "id": "N1",
+      "article": "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "location": "最终稿第15、23行",
+      "text": "可明确规则对象的locale/cardinal配置，并区分固定与最大小数位",
+      "blocking": false,
+      "status": "已落实，全文复读及来源复核通过"
+    },
+    {
+      "id": "N2",
+      "article": "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "location": "第41或72行",
+      "text": "可提醒核对项目CSS对unicode-bidi/direction的覆盖",
+      "blocking": false,
+      "status": "可选，未实施，不阻断"
+    }
+  ],
+  "final_review_at_utc": "2026-11-07T19:00:56.500571+00:00"
+}

@@ -2,26 +2,27 @@
   "schema_version": 2,
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
-  "active_task_ids": [
-    "TASK-2026-0303"
-  ],
-  "last_completed_task_id": "TASK-2026-0302",
-  "last_real_progress_at": "2026-11-06T19:35:04Z",
-  "last_commit_sha": "72f8d104f938225cbd57b0bd9008ea74ffde9dde",
+  "active_task_ids": [],
+  "last_completed_task_id": "TASK-2026-0306",
+  "last_real_progress_at": "2026-11-08T08:27:36Z",
+  "last_commit_sha": "b788e8c675ed48eacff8ce4ec7914521463e854d",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-ENGINE-014/20261106-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-AI-003/20261108-full-article.json"
   },
   "publication": {
-    "kind": "complete-unity-derived-state-refresh-method",
-    "article": "GameLibrary/引擎与工具/运行时系统/缓存与存档/Unity Entities中派生组件的选择性刷新.md",
-    "article_sha256": "1d26eaf85a9bcdaef2d7491ef67fbe2becc08b6f93dfaa0442d9458c00a33ba4",
-    "previous_verified_head": "72f8d104f938225cbd57b0bd9008ea74ffde9dde",
+    "kind": "reviewed-localization-and-companion-navigation-migrations",
+    "articles": [
+      "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
+      "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
+      "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md"
+    ],
+    "previous_verified_head": "b788e8c675ed48eacff8ce4ec7914521463e854d",
     "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "One finite complete method and bounded historical migration, not whole-library acceptance."
+    "scope": "Three reviewed articles and their finite navigation migrations; no new runtime testing or whole-library acceptance."
   },
-  "next_action": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication.",
+  "next_action": "Recover and verify the complete manuscript and final review/source materials; if unavailable, resume from the preserved public scope rather than treating it as a published article.",
   "pending_topics": [
     {
       "task_id": "TASK-2026-0303",
@@ -43,5 +44,11 @@
     },
     "note": "旧固定书目数、修复完成和整体健康标记只保留于历史，不作为当前验收。"
   },
-  "blockers": []
+  "blockers": [
+    {
+      "task_id": "TASK-2026-0303",
+      "reason": "The prior manuscript and its final source/review bindings must be recovered and verified before publication."
+    }
+  ],
+  "last_commit_sha_scope": "Verified parent before this publication; the containing commit identifies this state update."
 }
