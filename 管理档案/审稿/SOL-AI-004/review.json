@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "article_id": "SOL-AI-004",
+  "task_id": "TASK-2026-0309",
+  "status": "ready_for_publication",
+  "publication_status": "not_published",
+  "base_commit": "50c6a9288e41d0b91551b707c33da50e65ee733c",
+  "article_path": "GameLibrary/游戏人工智能/行为决策/效用选择/效用AI的目标保留与行动切换.md",
+  "article_sha256": "f0ffdeb1fa6b095bd22e7d81e6989b4bfe984fb36500645863cf5abc0942dfbd",
+  "review_type": "independent model technical, reader and blind navigation review; no human or engine validation",
+  "reviews": {
+    "technical": {
+      "status": "passed",
+      "path": "管理档案/审稿/SOL-AI-004/technical.md",
+      "sha256": "157e020c9234d693738e596b717e82e8e7321666e72f012cdbc5879bf7c5450d"
+    },
+    "reader": {
+      "status": "passed",
+      "path": "管理档案/审稿/SOL-AI-004/reader.md",
+      "sha256": "cf9d3e718a0612074197262a50b28e58ddd776fba197bebf155568c3a8a444e7"
+    },
+    "navigation": {
+      "status": "passed",
+      "path": "管理档案/审稿/SOL-AI-004/navigation.md",
+      "sha256": "223fd0f714987ab9dc7750ded13c8d70a2549098441c38830bdc213406d87de1"
+    }
+  },
+  "model": {
+    "source": "管理档案/研究/TASK-2026-0309/model/behavior_fixture.py",
+    "source_sha256": "5441055b0ee1184da1c8714e147f216a2d429194ba92cdb259267cd2a2d1eafa",
+    "results": "管理档案/研究/TASK-2026-0309/model/results.json",
+    "results_sha256": "5809109e602cfbdee6e67411b73c298bf81274c477a79d241633cf3a470c4fc5",
+    "exact_rerun": true,
+    "ticks": 64,
+    "start_attempts": 5,
+    "start_successes": 4,
+    "stops": 4,
+    "updates": 31,
+    "independent_threshold_checks": 2646,
+    "metadata_redaction": "Removed environment metadata only; algorithm, inputs, assertions and non-environment output unchanged. Exact rerun confirmed."
+  },
+  "resolved_findings": [
+    "Extracted and called update method; output unchanged.",
+    "Disclosed that execution-time failure was not modeled; start failure does not substitute for it."
+  ],
+  "editorial_checks": [
+    "Final full article reread.",
+    "Current-candidate identity and begin/continue distinction are in the main text.",
+    "No source claim attributes the original model to a game or paper.",
+    "Old support changed to migration-only entry with fixed historical source."
+  ],
+  "remaining_scope_limits": [
+    "No game engine, navigation, animation, perception, concurrency, asynchronous stopping or player test.",
+    "No runtime-failure injection or actual response-time guarantee.",
+    "Remote publication and exact-byte readback are pending the sole publisher."
+  ]
+}

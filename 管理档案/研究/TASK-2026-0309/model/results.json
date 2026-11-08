@@ -1,0 +1,2225 @@
+{
+  "contract": "original synchronous fixture, no engine",
+  "margin": 50,
+  "score_unit": "integer milli-units",
+  "world_events": [
+    {
+      "time_ms": 241,
+      "A": false,
+      "B": false
+    },
+    {
+      "time_ms": 351,
+      "A": true,
+      "B": false
+    },
+    {
+      "time_ms": 451,
+      "A": false,
+      "B": true
+    }
+  ],
+  "trace": [
+    {
+      "time_ms": 0,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 0,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 600,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 590,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:A"
+      },
+      "decision": "start_from_none",
+      "calls": [
+        {
+          "op": "start",
+          "key": "mine:A",
+          "run_id": 1
+        },
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 1
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 1,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 1
+      }
+    },
+    {
+      "time_ms": 10,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 1
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 2
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 2,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 2
+      }
+    },
+    {
+      "time_ms": 20,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 2
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 3
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 3,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 3
+      }
+    },
+    {
+      "time_ms": 30,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 3
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 4
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 4,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 4
+      }
+    },
+    {
+      "time_ms": 40,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 4
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 5
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 5,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 5
+      }
+    },
+    {
+      "time_ms": 50,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 5
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 6
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 6,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 6
+      }
+    },
+    {
+      "time_ms": 60,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 6
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 7
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 7,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 7
+      }
+    },
+    {
+      "time_ms": 70,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 7
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 8
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 8,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 8
+      }
+    },
+    {
+      "time_ms": 80,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 8
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 9
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 9,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 9
+      }
+    },
+    {
+      "time_ms": 90,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 9
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 10
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 10,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 10
+      }
+    },
+    {
+      "time_ms": 100,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 10
+      },
+      "scoring": {
+        "time_ms": 100,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "continue",
+            "eligible": true,
+            "reason": "owned_by_self",
+            "base": 600,
+            "bonus": 50
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 620,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:A"
+      },
+      "decision": "retain",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 11
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 11,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 11
+      }
+    },
+    {
+      "time_ms": 110,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 11
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 12
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 12,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 12
+      }
+    },
+    {
+      "time_ms": 120,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 12
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 13
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 13,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 13
+      }
+    },
+    {
+      "time_ms": 130,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 13
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 14
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 14,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 14
+      }
+    },
+    {
+      "time_ms": 140,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 14
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 15
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 15,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 15
+      }
+    },
+    {
+      "time_ms": 150,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 15
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 16
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 16,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 16
+      }
+    },
+    {
+      "time_ms": 160,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 16
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 17
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 17,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 17
+      }
+    },
+    {
+      "time_ms": 170,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 17
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 18
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 18,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 18
+      }
+    },
+    {
+      "time_ms": 180,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 18
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 19
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 19,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 19
+      }
+    },
+    {
+      "time_ms": 190,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 19
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 20
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 20,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 20
+      }
+    },
+    {
+      "time_ms": 200,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 20
+      },
+      "scoring": {
+        "time_ms": 200,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "continue",
+            "eligible": true,
+            "reason": "owned_by_self",
+            "base": 600,
+            "bonus": 50
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 700,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:B"
+      },
+      "decision": "switch",
+      "calls": [
+        {
+          "op": "stop",
+          "key": "mine:A",
+          "run_id": 1,
+          "reason": "better_candidate",
+          "work": 20
+        },
+        {
+          "op": "start",
+          "key": "mine:B",
+          "run_id": 2
+        },
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 2,
+          "work": 1
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 1,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 1,
+        "update": 21
+      }
+    },
+    {
+      "time_ms": 210,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 1
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 2,
+          "work": 2
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 2,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 1,
+        "update": 22
+      }
+    },
+    {
+      "time_ms": 220,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 2
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 2,
+          "work": 3
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 3,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 1,
+        "update": 23
+      }
+    },
+    {
+      "time_ms": 230,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 3
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 2,
+          "work": 4
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 4,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 1,
+        "update": 24
+      }
+    },
+    {
+      "time_ms": 240,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 4
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 2,
+          "work": 5
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 5,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 1,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 250,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": false,
+        "reason": "unavailable",
+        "completed": false,
+        "work": 5
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "stop",
+          "key": "mine:B",
+          "run_id": 2,
+          "reason": "invalid",
+          "work": 5
+        }
+      ],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 260,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 270,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 280,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 290,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 300,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 300,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": false,
+            "reason": "unavailable",
+            "base": 600,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": false,
+            "reason": "unavailable",
+            "base": 700,
+            "bonus": 0
+          }
+        ],
+        "selected": null
+      },
+      "decision": "empty",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 310,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 320,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 330,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 340,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 350,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 360,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 370,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 380,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 390,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 2,
+        "stop": 2,
+        "update": 25
+      }
+    },
+    {
+      "time_ms": 400,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 400,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 0,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": false,
+            "reason": "unavailable",
+            "base": 700,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:A"
+      },
+      "decision": "start_from_none",
+      "calls": [
+        {
+          "op": "start",
+          "key": "mine:A",
+          "run_id": 3
+        },
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 3,
+          "work": 1
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 1,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 2,
+        "update": 26
+      }
+    },
+    {
+      "time_ms": 410,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 1
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 3,
+          "work": 2
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 2,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 2,
+        "update": 27
+      }
+    },
+    {
+      "time_ms": 420,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 2
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 3,
+          "work": 3
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 3,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 2,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 430,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": true,
+        "work": 3
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "stop",
+          "key": "mine:A",
+          "run_id": 3,
+          "reason": "completed",
+          "work": 3
+        }
+      ],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 440,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 450,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 460,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 470,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 480,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 490,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 3,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 500,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 500,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": false,
+            "reason": "unavailable",
+            "base": 0,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 900,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:B"
+      },
+      "decision": "start_failed_remain_none",
+      "calls": [
+        {
+          "op": "start_failed",
+          "key": "mine:B",
+          "reason": "injected_failure"
+        }
+      ],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 510,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 520,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 530,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 540,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 550,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 560,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 570,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 580,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 590,
+      "previous": null,
+      "guard": null,
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 4,
+        "start_success": 3,
+        "stop": 3,
+        "update": 28
+      }
+    },
+    {
+      "time_ms": 600,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 600,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": false,
+            "reason": "unavailable",
+            "base": 0,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 900,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:B"
+      },
+      "decision": "start_from_none",
+      "calls": [
+        {
+          "op": "start",
+          "key": "mine:B",
+          "run_id": 4
+        },
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 4,
+          "work": 1
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 1,
+      "counts": {
+        "start_attempt": 5,
+        "start_success": 4,
+        "stop": 3,
+        "update": 29
+      }
+    },
+    {
+      "time_ms": 610,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 1
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 4,
+          "work": 2
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 2,
+      "counts": {
+        "start_attempt": 5,
+        "start_success": 4,
+        "stop": 3,
+        "update": 30
+      }
+    },
+    {
+      "time_ms": 620,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 2
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "update",
+          "key": "mine:B",
+          "run_id": 4,
+          "work": 3
+        }
+      ],
+      "current": "mine:B",
+      "owners": {
+        "mine:A": null,
+        "mine:B": "actor"
+      },
+      "active_work": 3,
+      "counts": {
+        "start_attempt": 5,
+        "start_success": 4,
+        "stop": 3,
+        "update": 31
+      }
+    },
+    {
+      "time_ms": 630,
+      "previous": "mine:B",
+      "guard": {
+        "key": "mine:B",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": true,
+        "work": 3
+      },
+      "scoring": null,
+      "decision": "wait_for_ordinary_scoring",
+      "calls": [
+        {
+          "op": "stop",
+          "key": "mine:B",
+          "run_id": 4,
+          "reason": "completed",
+          "work": 3
+        }
+      ],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 5,
+        "start_success": 4,
+        "stop": 4,
+        "update": 31
+      }
+    }
+  ],
+  "eligibility_difference": {
+    "start_ok": false,
+    "start_reason": "occupied",
+    "continue_ok": true,
+    "continue_reason": "owned_by_self"
+  },
+  "failed_switch": [
+    {
+      "time_ms": 0,
+      "previous": null,
+      "guard": null,
+      "scoring": {
+        "time_ms": 0,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 600,
+            "bonus": 0
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 590,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:A"
+      },
+      "decision": "start_from_none",
+      "calls": [
+        {
+          "op": "start",
+          "key": "mine:A",
+          "run_id": 1
+        },
+        {
+          "op": "update",
+          "key": "mine:A",
+          "run_id": 1,
+          "work": 1
+        }
+      ],
+      "current": "mine:A",
+      "owners": {
+        "mine:A": "actor",
+        "mine:B": null
+      },
+      "active_work": 1,
+      "counts": {
+        "start_attempt": 1,
+        "start_success": 1,
+        "stop": 0,
+        "update": 1
+      }
+    },
+    {
+      "time_ms": 100,
+      "previous": "mine:A",
+      "guard": {
+        "key": "mine:A",
+        "continue_ok": true,
+        "reason": "owned_by_self",
+        "completed": false,
+        "work": 1
+      },
+      "scoring": {
+        "time_ms": 100,
+        "candidates": [
+          {
+            "key": "mine:A",
+            "mode": "continue",
+            "eligible": true,
+            "reason": "owned_by_self",
+            "base": 600,
+            "bonus": 50
+          },
+          {
+            "key": "mine:B",
+            "mode": "start",
+            "eligible": true,
+            "reason": "free",
+            "base": 900,
+            "bonus": 0
+          }
+        ],
+        "selected": "mine:B"
+      },
+      "decision": "start_failed_remain_none",
+      "calls": [
+        {
+          "op": "stop",
+          "key": "mine:A",
+          "run_id": 1,
+          "reason": "better_candidate",
+          "work": 1
+        },
+        {
+          "op": "start_failed",
+          "key": "mine:B",
+          "reason": "injected_failure"
+        }
+      ],
+      "current": null,
+      "owners": {
+        "mine:A": null,
+        "mine:B": null
+      },
+      "active_work": null,
+      "counts": {
+        "start_attempt": 2,
+        "start_success": 1,
+        "stop": 1,
+        "update": 1
+      }
+    }
+  ],
+  "tie_checks": {
+    "incumbent_equal": "mine:A",
+    "no_incumbent_stable_key": "mine:A"
+  },
+  "counterexamples": {
+    "candidate_bonus": [
+      {
+        "time_ms": 0,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:A",
+        "transition": false
+      },
+      {
+        "time_ms": 100,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": false
+      },
+      {
+        "time_ms": 200,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:A",
+        "transition": false
+      },
+      {
+        "time_ms": 300,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": false
+      },
+      {
+        "time_ms": 400,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:A",
+        "transition": false
+      },
+      {
+        "time_ms": 500,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": false
+      }
+    ],
+    "type_bonus": [
+      {
+        "time_ms": 0,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 100,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": true
+      },
+      {
+        "time_ms": 200,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 300,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": true
+      },
+      {
+        "time_ms": 400,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 600,
+          "mine:B": 610
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 500,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 610,
+          "mine:B": 600
+        },
+        "selected": "mine:A",
+        "transition": true
+      }
+    ],
+    "large_reversal": [
+      {
+        "time_ms": 0,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 500,
+          "mine:B": 560
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 100,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 560,
+          "mine:B": 500
+        },
+        "selected": "mine:A",
+        "transition": true
+      },
+      {
+        "time_ms": 200,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 500,
+          "mine:B": 560
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 300,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 560,
+          "mine:B": 500
+        },
+        "selected": "mine:A",
+        "transition": true
+      },
+      {
+        "time_ms": 400,
+        "previous": "mine:A",
+        "scores": {
+          "mine:A": 500,
+          "mine:B": 560
+        },
+        "selected": "mine:B",
+        "transition": true
+      },
+      {
+        "time_ms": 500,
+        "previous": "mine:B",
+        "scores": {
+          "mine:A": 560,
+          "mine:B": 500
+        },
+        "selected": "mine:A",
+        "transition": true
+      }
+    ]
+  },
+  "all_protocol_assertions_passed": true
+}

@@ -315,7 +315,7 @@
       "reader_title": "Killzone3如何判断计划继续和动作结束",
       "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md",
       "reader_body_status": "published",
-      "reader_sha256": "7adfd65287fd3ba4bc99d69ab1373db596c96acf2a7905d62c8d75be6f800520"
+      "reader_sha256": "7e9d9f03cd8337edaf62c944fc53526f621987a06b34f4013a7b9213641f82da"
     },
     {
       "internal_id": "CASE-AI-002",
@@ -743,7 +743,7 @@
       "reader_title": "Days Gone如何避免侧翼成员离开后带偏战线",
       "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md",
       "reader_body_status": "published",
-      "reader_sha256": "9583dd15d5910ab5ac318b92dd8a482f085cf8ef1483e639120b8fd4683d380b",
+      "reader_sha256": "21092566a0cc2a564415ad5ffd1d3d1f77a1aedf94a3e1d43c8778884582ddee",
       "source_record": "管理档案/来源笔记/days-gone-frontline-ghost.json"
     },
     {
@@ -1093,6 +1093,14 @@
       "review": "管理档案/审稿/KNOW-QA-004/review.json",
       "reader_body_status": "published",
       "publication_commit": "900883902d4d29d39c993a35db683f525a38d8f3"
+    },
+    {
+      "internal_id": "SOL-AI-004",
+      "reader_title": "效用AI的目标保留与行动切换",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/效用选择/效用AI的目标保留与行动切换.md",
+      "reader_body_status": "awaiting_remote_verification",
+      "reader_sha256": "f0ffdeb1fa6b095bd22e7d81e6989b4bfe984fb36500645863cf5abc0942dfbd",
+      "source_record": "管理档案/研究/TASK-2026-0309/method-research.md"
     }
   ]
 }
