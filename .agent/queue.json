@@ -10534,6 +10534,28 @@
       "blocker": null,
       "updated_at": "2026-11-08T08:27:36Z",
       "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "id": "TASK-2026-0307",
+      "question": "游戏 UI 配置受产品约束时，怎样选择与复核组合覆盖，并把候选配置转成带判据的回归检查？",
+      "reader": "能执行回归的 QA 与 UI 程序；不要求预先掌握组合生成算法。",
+      "scope": "固定构建与语料下的离散 UI 配置：参数/约束建模、合法 tuple 的完整补全条件、全局两两及局部三元目标、实际值与检查点/判据。操作序列、时间交错、全语料和真实游戏结果不在本轮范围。",
+      "expected_outcome": "一篇完整、非重复的测试设计方法；经独立技术、读者和根入口导航审查后正式发表，并保留旧操作序列研究和修正相关引用。",
+      "phase": "researching",
+      "status": "researching",
+      "owner": "GameLibrary 编辑维护者",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0307/research.md",
+        "管理档案/研究/TASK-2026-0307/check_model.py",
+        "管理档案/研究/TASK-2026-0307/model-result.json"
+      ],
+      "last_real_progress": "已核读邻文、NIST SP 800-142 与官方 ACTS 指南；实际验证五参数约束模型的28个合法配置及45个二元/12个三元目标，区分计划覆盖和实际执行。",
+      "next_action": "依据研究大纲写完整候选稿，准备单一测试设计位置及旧配置/序列材料迁移；安排独立全文技术、读者与根入口导航审查后再发表。",
+      "blocker": null,
+      "updated_at": "2026-11-08T11:01:00Z",
+      "related_task_ids": [],
+      "validation_scope": "原创有限模型运行与独立枚举复核；游戏执行0次、ACTS执行0次。未发表正式文章。",
+      "predecessor_task_id": "TASK-2026-0303"
     }
   ],
   "execution_policy": {

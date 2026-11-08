@@ -2,14 +2,18 @@
   "schema_version": 2,
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
-  "active_task_ids": [],
+  "active_task_ids": [
+    "TASK-2026-0307"
+  ],
   "last_completed_task_id": "TASK-2026-0303",
-  "last_real_progress_at": "2026-11-08T09:25:01.325Z",
-  "last_commit_sha": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+  "last_real_progress_at": "2026-11-08T11:01:00Z",
+  "last_commit_sha": "f6ef8e1cd780f0253d8d507e54050ae89ffc2b64",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-SFX-007/20261108-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-SFX-007/20261108-full-article.json",
+    "latest_supervision": "管理档案/审查/督导/20261108-1901/报告.md",
+    "active_research": "管理档案/研究/TASK-2026-0307/research.md"
   },
   "publication": {
     "kind": "fmod-core-admission-and-playback-lifecycle",
@@ -19,7 +23,7 @@
     "identity": "Containing commit; report success only after exact remote readback.",
     "scope": "One complete control-side method and bounded related navigation/history updates; no SDK runtime, audio output or performance tests."
   },
-  "next_action": "Continue the next bounded professional research or remediation task after confirming this publication; preserve all unrelated queue entries.",
+  "next_action": "GameLibrary 编辑维护者继续 TASK-2026-0307 的完整配置回归方法写作、迁移准备和独立审稿；研究包不是正式发表。保留既有暂停/受阻任务，不重复创建调度。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -38,5 +42,13 @@
     "note": "旧固定书目数、修复完成和整体健康标记只保留于历史，不作为当前验收。"
   },
   "blockers": [],
-  "last_commit_sha_scope": "Verified parent before this publication; the containing commit identifies this state update."
+  "last_commit_sha_scope": "Verified parent before this research and supervision archive; the containing commit identifies this state update.",
+  "active_research": {
+    "task_id": "TASK-2026-0307",
+    "owner": "GameLibrary 编辑维护者",
+    "phase": "researching",
+    "last_progress": "约束下合法覆盖分母、混合强度模型和从配置到判据的工程步骤已研究并验证；完整稿与独立发表审查尚未完成。",
+    "next_action": "Write the bounded full manuscript and prepare migration, then obtain independent full technical, reader and root-navigation reviews.",
+    "blocker": null
+  }
 }
