@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "v2-inventory-pending",
-  "publication_base_sha": "b788e8c675ed48eacff8ce4ec7914521463e854d",
+  "publication_base_sha": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
   "inventory_scope": "Existing registered article paths are preserved. Developer-facing technical prose in management directories still requires classification; this is not a complete v2 inventory.",
   "format_mapping": "Existing entries and canonical_reader_path fields are retained for incremental compatibility. Historical per-entry review statuses are not new v2 acceptance.",
   "legacy_header": {
@@ -3453,9 +3453,10 @@
         "管理档案/审查/声音最大距离-来源与读者审查.md",
         "管理档案/审查/声音最大距离-离线观察审查.md",
         "管理档案/审查/OpenAL缓冲队列-来源与读者审查.md",
-        "管理档案/审查/OpenAL距离计算声道范围-补充审读.md"
+        "管理档案/审查/OpenAL距离计算声道范围-补充审读.md",
+        "管理档案/审稿/SOL-SFX-007/20261108-full-article.json"
       ],
-      "reader_sha256": "4f22e4d8610b7b4599fac78bc57cbb8f21063d5a048382da164a302fde96a207",
+      "reader_sha256": "2ee4812c5cd2db3bdfa47f40a0bd789a7a2907b17862401b54db85bcf2356903",
       "distance_gain_support": {
         "path": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
         "sha256": "46415e02b05e742be9819f3efa74dcc77c9b32e1555e61a2028d8691cdb4ef20",
@@ -3471,17 +3472,30 @@
         "channel_scope_review": "管理档案/审查/OpenAL距离计算声道范围-补充审读.md"
       },
       "voice_priority_support": {
+        "role": "migration-index",
         "path": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md",
-        "sha256": "c91543d3ccae780b2f2adb22cbacb6f2a901d0d5f179e3779f14b2322bd22e4f",
-        "review": "管理档案/审查/声道优先级-来源与读者审查.md",
-        "source_record": "管理档案/来源笔记/fmod-core-voice-priority.json",
-        "scope": "Core priority precedes audibility within finite capacity; original CRI restoration explanation unchanged."
+        "sha256": "2b1bdb1dcb388fe40e5f3e220e9b3bd403c64f4bc5d743a3db3a72542a27113e",
+        "formal_article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+        "review": "管理档案/审稿/SOL-SFX-007/20261108-full-article.json",
+        "historical_record": {
+          "path": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md",
+          "sha256": "c91543d3ccae780b2f2adb22cbacb6f2a901d0d5f179e3779f14b2322bd22e4f",
+          "review": "管理档案/审查/声道优先级-来源与读者审查.md",
+          "source_record": "管理档案/来源笔记/fmod-core-voice-priority.json",
+          "scope": "Core priority precedes audibility within finite capacity; original CRI restoration explanation unchanged."
+        }
       },
       "openal_queue_support": {
         "path": "管理档案/支持资料/OpenAL队列里还有缓冲区，为什么声音已经停了.md",
         "sha256": "d52e41a61c3d30c21cd984a76764f839398466807883d2db68473aa7bbf14d75",
         "review": "管理档案/审查/OpenAL缓冲队列-来源与读者审查.md",
         "scope": "OpenAL1.1 queue/state distinction and original finite trace; not CRI implementation or runtime observation."
+      },
+      "latest_link_revision": {
+        "previous_reader_sha256": "4f22e4d8610b7b4599fac78bc57cbb8f21063d5a048382da164a302fde96a207",
+        "current_reader_sha256": "2ee4812c5cd2db3bdfa47f40a0bd789a7a2907b17862401b54db85bcf2356903",
+        "review": "管理档案/审稿/SOL-SFX-007/20261108-full-article.json",
+        "scope": "仅替换原优先级支持文章关联段；原CRI技术内容与历史证据不变。"
       }
     },
     {
@@ -5355,6 +5369,38 @@
       "historical_commit": "502fc563fef3ac7e896f8cfc08cf39e8a5701f09",
       "historical_sha256": "69a29b8203696ed66bc6ab8268daefb6e54065629df7aa66e77f1023e3c771fa",
       "scope_note": "Fixed original source, original geometry and conservative integration method; historical native observations reread, not rerun.",
+      "publication_identity": "Containing commit; success is reported only after exact remote readback."
+    },
+    {
+      "internal_id": "SOL-SFX-007",
+      "reader_title": "FMOD Core音效请求的准入与播放回收",
+      "discipline": "声音与音乐",
+      "direction": "游戏音效",
+      "topic": "播放管理",
+      "type": "engineering-method",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "current_read_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "reader_body_status": "published",
+      "reader_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+      "editorial_status": "独立模型全文技术、读者与严格盲导航审查通过；实质修订重新全文复核，未新增SDK运行、输出或性能验证。",
+      "review_paths": [
+        "管理档案/审稿/SOL-SFX-007/20261108-full-article.json"
+      ],
+      "source_record": "管理档案/研究/TASK-2026-0303/sources.json",
+      "source_sha256": "811a6d67efb226e632d4dcc800467b4baa66d96e1b7cec69d7a37aa9990ba1fc",
+      "scope_disposition_review": "管理档案/研究/TASK-2026-0303/范围与保留.md",
+      "related_article_ids": [
+        "SOL-SFX-003",
+        "SOL-SFX-006"
+      ],
+      "updated_at": "2026-11-08",
+      "scope": "固定预加载内存PCM与2D/3D/循环资源映射、固定路由、纯Core单控制所有者的有界请求至终止方法；未知创建失败冻结准入，不含自动系统重建。",
+      "historical_material": {
+        "path": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md",
+        "commit": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+        "sha256": "c91543d3ccae780b2f2adb22cbacb6f2a901d0d5f179e3779f14b2322bd22e4f",
+        "disposition": "原限定优先级算例与机制并入正式文；旧页仅为迁移指引。"
+      },
       "publication_identity": "Containing commit; success is reported only after exact remote readback."
     }
   ],

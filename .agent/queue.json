@@ -10437,16 +10437,32 @@
       "reader": "运行时音频程序员和技术音频设计师。",
       "scope": "A bounded FMOD Core control-side method for fixed loaded PCM resources and a single playback owner. Compare existing recovery/scheduling methods, account for admission, resource limits and terminal cleanup; do not infer sound quality or resource savings from counts.",
       "expected_outcome": "A complete source-backed request-to-terminal method with an independent reader task, full technical/reader/navigation reviews and bounded former priority-support disposition.",
-      "next_action": "Recover and verify the complete manuscript and final review/source materials; if unavailable, resume from the preserved public scope rather than treating it as a published article.",
-      "phase": "material_recovery",
-      "status": "blocked",
+      "next_action": "Revisit documented API changes and target-SDK checks as needed; this publication is a control-side method without native or audio-output verification.",
+      "phase": "complete",
+      "status": "published",
       "owner": "GameLibrary editorial maintainer",
-      "evidence_paths": [],
-      "blocker": "The prior manuscript and its final source/review bindings must be recovered and verified before publication.",
-      "updated_at": "2026-11-08T08:27:36Z",
+      "evidence_paths": [
+        "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+        "管理档案/审稿/SOL-SFX-007/20261108-full-article.json",
+        "管理档案/研究/TASK-2026-0303/sources.json"
+      ],
+      "blocker": null,
+      "updated_at": "2026-11-08T09:25:01.325Z",
       "related_task_ids": [
         "TASK-2026-0302"
-      ]
+      ],
+      "recovery_history": [
+        {
+          "record_commit": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+          "previous_phase": "material_recovery",
+          "previous_status": "blocked",
+          "previous_blocker": "The prior manuscript and its final source/review bindings must be recovered and verified before publication.",
+          "resolution": "A new complete manuscript was developed from rechecked official sources and independently reviewed. The missing earlier draft is not treated as recovered or published."
+        }
+      ],
+      "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+      "article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "publication_identity": "Containing commit; report success only after exact remote readback."
     },
     {
       "id": "TASK-2026-0304",

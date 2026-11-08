@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "task_id": "TASK-2026-0303",
+  "article_id": "SOL-SFX-007",
+  "article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+  "basis": "官方接口与机制原文核读，以及原创控制侧设计和纸面推演；没有 SDK 编译、原生运行、设备输出、听音或性能结果。",
+  "accessed_at": "2026-11-08",
+  "document_identity": "FMOD Engine User Manual 2.04.00 (2026-09-29)。本轮读取的七种页面均核对页脚；系列 URL 可更新，这不是运行库版本或不可变网页快照。",
+  "claims": [
+    {
+      "claim": "Sound 资源与单次 Channel 播放分开；释放共享 Sound 不等于回收本次播放额度。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Reference | Sound",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/core-api-sound.html#sound_release"
+      },
+      "locator": "Sound 定义；Sound::release（网页提取行84、1842–1867）",
+      "observed_content": "Sound 是可播放样本数据容器；release 会停止该资源的实例并释放资源。",
+      "conditions": "本文资源预加载并持续有效；不处理异步加载和动态卸载。",
+      "article_section": "三种上限分别管什么；暂停创建完成前，额度已经被占用"
+    },
+    {
+      "claim": "总 Channel 容量、软件真实声容量与暂停创建的职责不同。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Reference | System",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/core-api-system.html"
+      },
+      "locator": "init 4827–4843；setSoftwareChannels 6316–6323；playSound 5190–5208；update 6678–6685",
+      "observed_content": "maxchannels 包括虚拟声；软件混音容量在 init 前或 close 后设置；暂停创建返回 Channel，使用 Sound 默认频率和优先级；update 参与虚拟化、延后回调等。",
+      "conditions": "纯 Core；单一控制侧所有者；B 是应用自设预算，不是上述接口提供的计数。",
+      "article_section": "三种上限分别管什么；暂停创建完成前，额度已经被占用；用终止事实回收"
+    },
+    {
+      "claim": "虚拟不是终止；总容量偷取不可等待恢复；后创建后配置的优先级不能撤销已发生的竞争。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Managing Resources",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/managing-resources-in-the-core-api.html"
+      },
+      "locator": "§9.1.1 行126；§9.1.3–9.1.6 行130–148；§9.2.3 行201–204",
+      "observed_content": "虚拟继续维护时间；总 Channel 上限触发永久偷取；实际混音上限只决定真实子集；playSound 后需要 update 完成虚拟排序。Core 默认线程安全。",
+      "conditions": "文中纸面排序固定比较参数，排除暂停、静音、静音阈值和其他资源限制；文章不把文档性能措辞当成测量。",
+      "inference": "应用额度若在虚拟时退还，会允许继续增加存活实例；先检查额度与创建的业务事务需自行串行化。",
+      "article_section": "三种上限分别管什么；准入之后，优先级才决定哪些声获得混音位置"
+    },
+    {
+      "claim": "已登记原 Channel 的终止凭据是有对象来源条件的，不是所有 INVALID_HANDLE 都能正常归还。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Mixing and Routing",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/mixing-and-routing-in-the-core-api.html#channel-and-channel-group-handles"
+      },
+      "locator": "§6.1.1 行89–99",
+      "observed_content": "Channel 外观像指针，内部为打包句柄；自然结束或 stop 后失效；被偷取旧句柄返回 CHANNEL_STOLEN。ChannelGroup 是不同生命周期的直接指针。",
+      "conditions": "成功创建所得、未覆盖的原句柄；System 与固定路由有效，无未管理的资源释放。",
+      "inference": "应用代次用于隔离可复用记录槽位，幂等归还不依赖裸地址认领。",
+      "article_section": "一次准入，要同时占住所有相关额度；用终止事实回收"
+    },
+    {
+      "claim": "暂停对象仍可 playing，stop 成功与未知错误必须区别；audibility 不是实际波形。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Reference | ChannelControl",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/core-api-channelcontrol.html"
+      },
+      "locator": "isPlaying 行1776–1818；stop 行3480–3507；getAudibility 行950–988；set3DAttributes 行1909–1967",
+      "observed_content": "playSound 后即使暂停也 considered playing；stop 回收内部播放资源，非循环到尾自动停止；停止后句柄失效；audibility 是资源选择用估计。 空间属性调用要求 FMOD_3D 已设，否则 NEEDS3D。",
+      "conditions": "输出参数仅在结果 OK 后解释；每次查询独立处理结果。 资源映射预先固定2D/3D和循环模式，拒绝请求不匹配。",
+      "article_section": "暂停创建完成前，额度已经被占用；用终止事实回收；准入之后，优先级才决定哪些声获得混音位置"
+    },
+    {
+      "claim": "playSound 失败不能凭错误名称推导完整原子回滚；未知结果采取应用的保守隔离。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Reference | Common",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/core-api-common.html#fmod_result"
+      },
+      "locator": "FMOD_RESULT 行1625–1632；结合 System::playSound 原文",
+      "observed_content": "CHANNEL_ALLOC 描述为 Channel 分配出错；CHANNEL_STOLEN 描述指定 Channel 已复用。已读原文未给出所有 playSound 非 OK 路径的原子回滚细节。",
+      "conditions": "不使用失败输出句柄；未确认错误不撤销预留；冻结新准入是本文政策，不是声称必然存在残留播放。",
+      "article_section": "创建失败和配置失败是两类不同问题"
+    },
+    {
+      "claim": "数值较小的 priority 更重要，同级再比较 audibility；isVirtual 是观测不是回收条件。",
+      "source": {
+        "organization": "Firelight Technologies",
+        "title": "Core API Reference | Channel",
+        "version": "2.04.00",
+        "url": "https://www.fmod.com/docs/2.04/api/core-api-channel.html"
+      },
+      "locator": "getPriority 行460–499；isVirtual 行501–539；setPriority 行770–811",
+      "observed_content": "优先级方向为0最重要，256最不重要；同级可听性较低者先被让出；isVirtual 查询模拟状态。",
+      "conditions": "排序算例排除其他入口，数字为原创假设；不承诺输出或玩家接收。",
+      "article_section": "用终止事实回收；准入之后，优先级才决定哪些声获得混音位置"
+    }
+  ],
+  "original_method": {
+    "description": "事件去重与业务合并、入口及结果表有界、批次排序、全局/类别/发声者额度、预留后暂停创建、轮询和幂等归还、未知创建故障隔离。 未登记拒绝与已登记结果采用不同的有限重投契约。",
+    "evidence_class": "从明确的官方对象与调用约定推导的应用设计；没有声称是 FMOD 原生业务功能。",
+    "validation_status": "待目标 SDK 集成验证。文中列表是待执行验证场景，不是已执行输出。"
+  },
+  "source_disagreement": {
+    "location": "Managing Resources §9.1.5 与 Mixing and Routing §6.1.1",
+    "detail": "前者称被偷 Channel 返回 INVALID_HANDLE，后者明确 CHANNEL_STOLEN；全文保留差异并在限定原句柄前提下接收两者，不声称每条路径唯一错误码。"
+  },
+  "lineage": {
+    "base_commit": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+    "prior_research": "2026-11-08 先前来源接续草案被重新核读；原完整稿和最终审查包没有恢复，本稿为同一任务的重新写作，不沿用旧通过结论。",
+    "adjacent_articles": [
+      "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md"
+    ],
+    "integrated_historical_material": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "仅新文章与4个相关改动页面的Markdown相对链接、引用编号、代码围栏和迁移锚点；目标存在性以候选加固定远端树核验。不是全库检查或外部URL联网校验。",
+  "base_commit": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+  "status": "passed",
+  "relative_links_checked": 17,
+  "checks": [
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core预约播放的时钟与执行顺序.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/岗位与协作/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/音频渲染/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "target": "GameLibrary/声音与音乐/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "target": "管理档案/支持资料/超过最大距离，为什么声音还没有消失.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "target": "管理档案/支持资料/OpenAL队列里还有缓冲区，为什么声音已经停了.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "target": "GameLibrary/声音与音乐/交互音乐/音乐切换/玩法变化怎样触发可听见的音乐切换.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": ""
+    },
+    {
+      "from": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md",
+      "target": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+      "exists_in_candidate_or_base": true,
+      "anchor": "准入之后优先级才决定哪些声获得混音位置"
+    }
+  ],
+  "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e"
+}

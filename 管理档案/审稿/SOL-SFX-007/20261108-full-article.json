@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "article_id": "SOL-SFX-007",
+  "task_id": "TASK-2026-0303",
+  "article_path": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+  "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+  "author": "GameLibrary 编辑者",
+  "method": "文档依据的工程方法与原创纸面推演；独立模型技术审稿、读者审读与盲导航。",
+  "initial_article_sha256": "ac2a0f5f8157f9349c746bdba216ad5acd5c0c037a32fb694b62c1b8429c128e",
+  "date": "2026-11-08",
+  "status": "accepted-for-publication",
+  "reviews": {
+    "technical": {
+      "reviewer": "独立模型技术审稿者",
+      "status": "passed",
+      "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+      "report": "管理档案/审稿/SOL-SFX-007/技术审稿.md",
+      "report_sha256": "1d11e1f1ff47136efe0f23eed687f9b4516d86f64205d89708e89e75812533c0",
+      "method": "官方2.04原文独立核读、全文初审与修订全文复核"
+    },
+    "reader": {
+      "reviewer": "独立模型读者审读者",
+      "status": "passed",
+      "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+      "report": "管理档案/审稿/SOL-SFX-007/读者审读.md",
+      "report_sha256": "70aa65fb9628ac2bf0b2c8712eee2f179116009758c3a918879b3431e15c33de",
+      "method": "仅凭正文独立构造多预算任务并逐步完成，修订全文复读"
+    },
+    "navigation": {
+      "reviewer": "独立模型导航审查者",
+      "status": "passed",
+      "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+      "report": "管理档案/审稿/SOL-SFX-007/导航审查.md",
+      "report_sha256": "aaef85c03ca5d5e68eda0c9ed4af25caa0c71316526803b06c1cc4d9f4256074",
+      "method": "首次从根入口逐层盲查；名称路径不变后的有限摘要/迁移链接核验"
+    }
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0303/sources.json",
+      "sha256": "811a6d67efb226e632d4dcc800467b4baa66d96e1b7cec69d7a37aa9990ba1fc"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0303/范围与保留.md",
+      "sha256": "406b0c62856a422fb59f6410da0ce557ca97ca73c77727fdf882991c8333e5d9"
+    },
+    {
+      "path": "管理档案/研究/TASK-2026-0303/机械检查.json",
+      "sha256": "d7c8ee3d34346a5741c46ea70cf6f76e11a0d667de95eea2275a8d4408dc749b"
+    }
+  ],
+  "editorial_decision": {
+    "status": "accepted",
+    "full_text_reread": true,
+    "basis": "初审指出模式调用前提与结果表满后的重投契约缺口，修改后两名独立审查者重新通读全文并复核反例。编辑者全文重读，原范围与优先级算例保留，来源与运行边界一致。",
+    "remaining_limits": [
+      "未执行 FMOD SDK 原生测试、音频输出或性能测量。",
+      "该方法在未知创建失败时冻结准入，不提供自动系统重建。",
+      "全库其他历史内容未因本篇通过而重新认证。"
+    ]
+  },
+  "companion_changes": [
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/README.md",
+      "sha256": "2384cc9624cb3656878615d896b5f22801d850c1f5d5b0a54370d8d84fa4a0c7",
+      "scope": "导航或迁移关联；循环正文仅更换关系段，不重新认证原CRI技术内容。"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/播放管理/README.md",
+      "sha256": "35773c40514d0045898941c01ec525f42a86d8d44c0b2a9b64b729436f11e92a",
+      "scope": "导航或迁移关联；循环正文仅更换关系段，不重新认证原CRI技术内容。"
+    },
+    {
+      "path": "GameLibrary/声音与音乐/游戏音效/播放管理/循环声音重新听见时，应该从哪里继续.md",
+      "sha256": "2ee4812c5cd2db3bdfa47f40a0bd789a7a2907b17862401b54db85bcf2356903",
+      "scope": "导航或迁移关联；循环正文仅更换关系段，不重新认证原CRI技术内容。"
+    },
+    {
+      "path": "管理档案/支持资料/把声音调小，为什么不等于它会先让出声道.md",
+      "sha256": "2b1bdb1dcb388fe40e5f3e220e9b3bd403c64f4bc5d743a3db3a72542a27113e",
+      "scope": "导航或迁移关联；循环正文仅更换关系段，不重新认证原CRI技术内容。"
+    }
+  ]
+}

@@ -3,31 +3,24 @@
   "project": "Container-R/GameLibrary",
   "current_phase": "v2-incremental-remediation",
   "active_task_ids": [],
-  "last_completed_task_id": "TASK-2026-0306",
-  "last_real_progress_at": "2026-11-08T08:27:36Z",
-  "last_commit_sha": "b788e8c675ed48eacff8ce4ec7914521463e854d",
+  "last_completed_task_id": "TASK-2026-0303",
+  "last_real_progress_at": "2026-11-08T09:25:01.325Z",
+  "last_commit_sha": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-AI-003/20261108-full-article.json"
+    "latest_review": "管理档案/审稿/SOL-SFX-007/20261108-full-article.json"
   },
   "publication": {
-    "kind": "reviewed-localization-and-companion-navigation-migrations",
-    "articles": [
-      "GameLibrary/本地化与无障碍/本地化制作/数字与消息格式/显示成 1.0 时，复数类别为什么不能只看原值.md",
-      "GameLibrary/本地化与无障碍/本地化制作/文字排版/玩家昵称为什么会影响旁边数字和标点的顺序.md",
-      "GameLibrary/游戏人工智能/移动导航/同伴跟随/同伴跟随候选位置的前方连通检查.md"
-    ],
-    "previous_verified_head": "b788e8c675ed48eacff8ce4ec7914521463e854d",
-    "identity": "Containing commit; exact remote readback required before reporting success.",
-    "scope": "Three reviewed articles and their finite navigation migrations; no new runtime testing or whole-library acceptance."
+    "kind": "fmod-core-admission-and-playback-lifecycle",
+    "article": "GameLibrary/声音与音乐/游戏音效/播放管理/FMOD Core音效请求的准入与播放回收.md",
+    "article_sha256": "5b17c8beb471ced1faf8329c84ec060af359230f3ec480c7b630bffa9cadda1e",
+    "previous_verified_head": "adc5d742355be863ae42ff99ee5f82bec7e6389f",
+    "identity": "Containing commit; report success only after exact remote readback.",
+    "scope": "One complete control-side method and bounded related navigation/history updates; no SDK runtime, audio output or performance tests."
   },
-  "next_action": "Recover and verify the complete manuscript and final review/source materials; if unavailable, resume from the preserved public scope rather than treating it as a published article.",
+  "next_action": "Continue the next bounded professional research or remediation task after confirming this publication; preserve all unrelated queue entries.",
   "pending_topics": [
-    {
-      "task_id": "TASK-2026-0303",
-      "question": "音效请求突发时，怎样在创建前控制重复与层数，并在真实、虚拟和终止状态之间正确管理播放额度？"
-    },
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
       "scope_record": "管理档案/研究/TASK-2026-0281/范围与保留.md"
@@ -44,11 +37,6 @@
     },
     "note": "旧固定书目数、修复完成和整体健康标记只保留于历史，不作为当前验收。"
   },
-  "blockers": [
-    {
-      "task_id": "TASK-2026-0303",
-      "reason": "The prior manuscript and its final source/review bindings must be recovered and verified before publication."
-    }
-  ],
+  "blockers": [],
   "last_commit_sha_scope": "Verified parent before this publication; the containing commit identifies this state update."
 }
