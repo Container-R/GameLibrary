@@ -10611,13 +10611,41 @@
       "completed_at": "2026-11-08T15:24:26Z",
       "publication_commit": "900883902d4d29d39c993a35db683f525a38d8f3",
       "publication_verified_at": "2026-11-08T15:23:37.901Z"
+    },
+    {
+      "id": "TASK-2026-0309",
+      "question": "效用AI怎样稳定具体行动候选，同时及时撤销失效选择，避免动作类型与目标层的惯性错位？",
+      "reader": "已能实现基础效用评分的AI程序与行为设计师。",
+      "scope": "确定性最大分选择器的一次一个具体目标行为：候选身份、评分尺度与切换门槛、有效性、低频评分与响应边界。接续旧效用支持正文，不重复计划接管、GOAP对象状态或群体空间表示，不声称生产或玩家效果。",
+      "expected_outcome": "完整、非重复的候选保留与切换方法，具有可重放的代表任务；成熟后经独立技术、读者与根导航审查，再迁入唯一正式位置。",
+      "phase": "researching",
+      "status": "researching",
+      "owner": "GameLibrary 编辑维护者",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0309/README.md",
+        "管理档案/研究/TASK-2026-0309/findings.md",
+        "管理档案/研究/TASK-2026-0309/sources.md",
+        "管理档案/研究/TASK-2026-0309/protocol.md",
+        "管理档案/研究/TASK-2026-0309/selector_model.py",
+        "管理档案/研究/TASK-2026-0309/results.json",
+        "管理档案/研究/TASK-2026-0309/assessment.md",
+        "管理档案/研究/TASK-2026-0309/scope-and-continuation.md"
+      ],
+      "last_real_progress": "核读原始效用理论、结构架构及对象选择材料，通读邻接正文；确定类型奖励在同类目标比较中抵消，完成六项确定性回放并独立复跑一致。窄评审明确仍缺完整行为接入闭环。",
+      "next_action": "继续 TASK-2026-0309：明确具体候选身份、开始与继续资格、评分/资格检查的责任及单个持续行为的接入轨迹，再完成方法全文与独立审稿；不扩建通用调度框架，不把选择器模型当游戏验证。",
+      "blocker": null,
+      "updated_at": "2026-11-08T16:56:40Z",
+      "related_task_ids": [
+        "TASK-2026-0231"
+      ],
+      "validation_scope": "原始资料与有限同步选择器模型，非引擎、游戏、感知或玩家验证。仅研究包，未生成正式文章。"
     }
   ],
   "execution_policy": {
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "Develop the bounded FMOD Core burst admission and voice-budget method from the completed primary-source discovery; preserve loop recovery and distance scopes, and independently review the whole method before publication."
+    "next_priority": "继续 TASK-2026-0309：明确具体候选身份、开始与继续资格、评分/资格检查的责任及单个持续行为的接入轨迹，再完成方法全文与独立审稿；不扩建通用调度框架，不把选择器模型当游戏验证。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

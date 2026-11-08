@@ -1,0 +1,64 @@
+{
+  "scope": "独立有限枚举与已发表Python模型复跑；没有Unity或游戏执行",
+  "two_request_legal_orders": [
+    [
+      "L1",
+      "L2",
+      "C1",
+      "C2"
+    ],
+    [
+      "L1",
+      "L2",
+      "C2",
+      "C1"
+    ],
+    [
+      "L1",
+      "C1",
+      "L2",
+      "C2"
+    ]
+  ],
+  "serial_rows": [
+    "LSP",
+    "PSL"
+  ],
+  "ordered_pair_coverage": [
+    "LP",
+    "LS",
+    "PL",
+    "PS",
+    "SL",
+    "SP"
+  ],
+  "adjacent_pair_coverage": [
+    "LS",
+    "PS",
+    "SL",
+    "SP"
+  ],
+  "missing_adjacent": [
+    "LP",
+    "PL"
+  ],
+  "model_cases": 15,
+  "model_passed": 15,
+  "exact_rerun_matches_remote": true,
+  "article_sha256": "431544e66abdc85ba2fee83b556de100e569f7e37dd783fa11d23043f155f199",
+  "review_bindings_verified": {
+    "article": "431544e66abdc85ba2fee83b556de100e569f7e37dd783fa11d23043f155f199",
+    "sources": "8d8e01c018191d65df3d0179921bc5616f38460546848d3602edfef6bd1a108a",
+    "model_code": "1bd33020d3e30a2bd9dbd8cc9f7500e15d550c3e0086e7de0cc344fa80a3f656",
+    "model_output": "db9f8951ee66af67774dc310fe2145fc57fedd60b8f48b2e9d791d1438be4ebb",
+    "model_readme": "397e75729c2a29e9791d0ac9ce3441691995b137b490dd71e0057ae93f39a74c",
+    "original_technical_report": "ded48f04c0a8397eae6d7cc27df356b81f4fb7debe71490bdd42bab867bc69c2",
+    "original_reader_report": "81976222fc5a30550913b62941f8bc23306efccb93e84804015f7f8560cab94e",
+    "original_navigation_report": "6d05226e1718ca8f0a86805a4bb079b1cb79648d976d9a6d6e91faffb4e34420"
+  },
+  "this_review_sha256": {
+    "technical.md": "b29be59f64d5562da5486680cdebe887e2215156182a2a0b7cd0e51cb32fec02",
+    "reader-navigation.md": "0d3a3d8c454a29f8041643a38aa68c6439b92a0df7b1c66b6da527fbb01d302e"
+  },
+  "new_selector_replay_matches_recorded": true
+}

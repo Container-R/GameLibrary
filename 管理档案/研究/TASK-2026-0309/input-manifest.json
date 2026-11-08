@@ -1,0 +1,44 @@
+{
+  "task_id": "TASK-2026-0309",
+  "phase": "researching",
+  "base_commit": "5031906dc66e2be218fc5c8901583d764d390292",
+  "predecessor": {
+    "id": "TASK-2026-0231",
+    "status": "published",
+    "question": "两个可执行动作评分接近时，怎样减少反复改选而不保留无效动作？",
+    "evidence_paths": [
+      ".agent/queue.json",
+      ".agent/runs/20261103T194021Z-utility-inertia.json",
+      "管理档案/审查/效用选择惯性-来源与读者审查.md"
+    ]
+  },
+  "inputs": [
+    {
+      "source_url": "https://github.com/Container-R/GameLibrary/blob/5031906dc66e2be218fc5c8901583d764d390292/%E7%AE%A1%E7%90%86%E6%A1%A3%E6%A1%88/%E6%94%AF%E6%8C%81%E8%B5%84%E6%96%99/AI%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E4%B8%A4%E4%B8%AA%E5%B7%AE%E4%B8%8D%E5%A4%9A%E7%9A%84%E9%80%89%E6%8B%A9%E4%B9%8B%E9%97%B4%E6%9D%A5%E5%9B%9E%E5%88%87%E6%8D%A2.md",
+      "git_blob_sha": "2a21f54feb1f817776493575c8f8fbd37f5681db",
+      "repository_path": "管理档案/支持资料/AI为什么在两个差不多的选择之间来回切换.md"
+    },
+    {
+      "source_url": "https://github.com/Container-R/GameLibrary/blob/5031906dc66e2be218fc5c8901583d764d390292/GameLibrary/%E6%B8%B8%E6%88%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%A1%8C%E4%B8%BA%E5%86%B3%E7%AD%96/%E8%A1%8C%E5%8A%A8%E8%AE%A1%E5%88%92/Killzone3%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E8%AE%A1%E5%88%92%E7%BB%A7%E7%BB%AD%E5%92%8C%E5%8A%A8%E4%BD%9C%E7%BB%93%E6%9D%9F.md",
+      "git_blob_sha": "1c99933838c50c36e5fd2be17b3a1a016def5e91",
+      "repository_path": "GameLibrary/游戏人工智能/行为决策/行动计划/Killzone3如何判断计划继续和动作结束.md"
+    },
+    {
+      "source_url": "https://github.com/Container-R/GameLibrary/blob/5031906dc66e2be218fc5c8901583d764d390292/GameLibrary/%E6%B8%B8%E6%88%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%A1%8C%E4%B8%BA%E5%86%B3%E7%AD%96/%E5%B0%8F%E9%98%9F%E5%8D%8F%E5%90%8C/Days%20Gone%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E4%BE%A7%E7%BF%BC%E6%88%90%E5%91%98%E7%A6%BB%E5%BC%80%E5%90%8E%E5%B8%A6%E5%81%8F%E6%88%98%E7%BA%BF.md",
+      "git_blob_sha": "3e613f8d549c4f61e0c258b3289a3cb6799d01b8",
+      "repository_path": "GameLibrary/游戏人工智能/行为决策/小队协同/Days Gone如何避免侧翼成员离开后带偏战线.md"
+    },
+    {
+      "source_url": "https://github.com/Container-R/GameLibrary/blob/5031906dc66e2be218fc5c8901583d764d390292/%E7%AE%A1%E7%90%86%E6%A1%A3%E6%A1%88/%E6%94%AF%E6%8C%81%E8%B5%84%E6%96%99/%E8%A7%84%E5%88%92%E9%87%8C%E7%9A%84%E6%AD%A6%E5%99%A8%E5%B7%B2%E8%A3%85%E5%BC%B9%EF%BC%8C%E8%AF%B4%E7%9A%84%E6%98%AF%E5%93%AA%E4%B8%80%E6%8A%8A%E6%AD%A6%E5%99%A8.md",
+      "git_blob_sha": "c51e8a909d7feadb602cb4c3b184d46b87f0d566",
+      "repository_path": "管理档案/支持资料/规划里的武器已装弹，说的是哪一把武器.md"
+    },
+    {
+      "source_url": "https://github.com/Container-R/GameLibrary/blob/5031906dc66e2be218fc5c8901583d764d390292/GameLibrary/%E6%B8%B8%E6%88%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E8%A1%8C%E4%B8%BA%E5%86%B3%E7%AD%96/README.md",
+      "git_blob_sha": "a4be738ae8b851135bd1f289de792d14d4682625",
+      "repository_path": "GameLibrary/游戏人工智能/行为决策/README.md"
+    }
+  ],
+  "reads_utc": "2026-11-08",
+  "changes_to_remote": false
+}

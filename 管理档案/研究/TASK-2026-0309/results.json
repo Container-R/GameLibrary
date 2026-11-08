@@ -1,0 +1,635 @@
+{
+  "python": "3.12.14",
+  "model_kind": "original synchronous selector replay; no engine or game simulation",
+  "score_units": "integer milli-units",
+  "margin": 50,
+  "same_type_candidate_bonus": [
+    {
+      "step": 0,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    },
+    {
+      "step": 1,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    },
+    {
+      "step": 2,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    },
+    {
+      "step": 3,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    },
+    {
+      "step": 4,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    },
+    {
+      "step": 5,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false
+    }
+  ],
+  "same_type_type_bonus": [
+    {
+      "step": 0,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 1,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    },
+    {
+      "step": 2,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 3,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    },
+    {
+      "step": 4,
+      "scores": {
+        "mine:ore-A": 600,
+        "mine:ore-B": 610
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 5,
+      "scores": {
+        "mine:ore-A": 610,
+        "mine:ore-B": 600
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    }
+  ],
+  "eligibility_and_empty": [
+    {
+      "step": 0,
+      "scores": {
+        "mine:ore-A": 400,
+        "mine:ore-B": 900
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 1,
+      "scores": {
+        "mine:ore-A": 100
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    },
+    {
+      "step": 2,
+      "scores": {},
+      "previous": "mine:ore-A",
+      "selected": null,
+      "transition": true
+    },
+    {
+      "step": 3,
+      "scores": {
+        "mine:ore-B": 0
+      },
+      "previous": null,
+      "selected": "mine:ore-B",
+      "transition": true
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "step": 0,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 440
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -60
+    },
+    {
+      "step": 1,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 450
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -50
+    },
+    {
+      "step": 2,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 460
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -40
+    },
+    {
+      "step": 3,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 470
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -30
+    },
+    {
+      "step": 4,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 480
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -20
+    },
+    {
+      "step": 5,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 490
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": -10
+    },
+    {
+      "step": 6,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 500
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 0
+    },
+    {
+      "step": 7,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 510
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 10
+    },
+    {
+      "step": 8,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 520
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 20
+    },
+    {
+      "step": 9,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 530
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 30
+    },
+    {
+      "step": 10,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 540
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 40
+    },
+    {
+      "step": 11,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 550
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-A",
+      "transition": false,
+      "difference_B_minus_A": 50
+    },
+    {
+      "step": 12,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 560
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true,
+      "difference_B_minus_A": 60
+    },
+    {
+      "step": 13,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 550
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 50
+    },
+    {
+      "step": 14,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 540
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 40
+    },
+    {
+      "step": 15,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 530
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 30
+    },
+    {
+      "step": 16,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 520
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 20
+    },
+    {
+      "step": 17,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 510
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 10
+    },
+    {
+      "step": 18,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 500
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": 0
+    },
+    {
+      "step": 19,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 490
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": -10
+    },
+    {
+      "step": 20,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 480
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": -20
+    },
+    {
+      "step": 21,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 470
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": -30
+    },
+    {
+      "step": 22,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 460
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": -40
+    },
+    {
+      "step": 23,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 450
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-B",
+      "transition": false,
+      "difference_B_minus_A": -50
+    },
+    {
+      "step": 24,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 440
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true,
+      "difference_B_minus_A": -60
+    }
+  ],
+  "large_reversal_each_step": [
+    {
+      "step": 0,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 560
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 1,
+      "scores": {
+        "mine:ore-A": 560,
+        "mine:ore-B": 500
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    },
+    {
+      "step": 2,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 560
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 3,
+      "scores": {
+        "mine:ore-A": 560,
+        "mine:ore-B": 500
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    },
+    {
+      "step": 4,
+      "scores": {
+        "mine:ore-A": 500,
+        "mine:ore-B": 560
+      },
+      "previous": "mine:ore-A",
+      "selected": "mine:ore-B",
+      "transition": true
+    },
+    {
+      "step": 5,
+      "scores": {
+        "mine:ore-A": 560,
+        "mine:ore-B": 500
+      },
+      "previous": "mine:ore-B",
+      "selected": "mine:ore-A",
+      "transition": true
+    }
+  ],
+  "scale_dependence": {
+    "original_h50": "mine:ore-A",
+    "scores_x10_h50": "mine:ore-B",
+    "scores_x10_h500": "mine:ore-A"
+  },
+  "eligibility_schedule": [
+    {
+      "time_ms": 0,
+      "eligible": [
+        "mine:ore-A",
+        "mine:ore-B"
+      ],
+      "ordinary_due": true,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-A"
+    },
+    {
+      "time_ms": 10,
+      "eligible": [
+        "mine:ore-A",
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-A"
+    },
+    {
+      "time_ms": 20,
+      "eligible": [
+        "mine:ore-A",
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-A"
+    },
+    {
+      "time_ms": 30,
+      "eligible": [
+        "mine:ore-A",
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-A"
+    },
+    {
+      "time_ms": 40,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 50,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 60,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 70,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 80,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 90,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-A",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 100,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": true,
+      "slow_check": "mine:ore-B",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 110,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-B",
+      "per_tick_guard": "mine:ore-B"
+    },
+    {
+      "time_ms": 120,
+      "eligible": [
+        "mine:ore-B"
+      ],
+      "ordinary_due": false,
+      "slow_check": "mine:ore-B",
+      "per_tick_guard": "mine:ore-B"
+    }
+  ],
+  "all_protocol_assertions_passed": true
+}
