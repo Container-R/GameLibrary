@@ -5,8 +5,8 @@
     "sha256": "304c4cc60c240df0c14de8b6d9c379b7828897fa3ee84d982ad4c5d47c62e752"
   },
   "author": "GameLibrary 编辑维护者",
-  "status": "ready",
-  "publication_status": "unpublished",
+  "status": "published",
+  "publication_status": "published",
   "method": "独立模型审查；不代表真人试用或引擎实验。",
   "reviews": {
     "technical": {
@@ -79,5 +79,7 @@
       "sha256": "0cf2918b285d7acb93edb91463892f0919e6bdc5f44b53915e2dc9e536d34b5e"
     }
   ],
-  "reviewed_at": "2026-11-09T01:13:47Z"
+  "reviewed_at": "2026-11-09T01:13:47Z",
+  "publication_commit": "e591e20fcaeb4f5522e2962e32b78dcf18efe0f7",
+  "publication_verified_at": "2026-11-09T01:21:45.251Z"
 }

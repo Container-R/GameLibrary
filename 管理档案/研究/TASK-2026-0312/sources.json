@@ -1,0 +1,69 @@
+{
+  "read_at": "2026-11-09",
+  "steam_audio_tag": "v4.8.1",
+  "commit": "0da18255cca520771f363ee01f100572b39a308e",
+  "tag_verified_url": "https://api.github.com/repos/ValveSoftware/steam-audio/git/ref/tags/v4.8.1",
+  "sources": [
+    {
+      "path": "fmod/src/spatialize_effect.cpp",
+      "blob_sha": "f2ac703562f0c066804615e18233a44d808cedaa",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/src/spatialize_effect.cpp",
+      "read_scope": "参数描述、State、lazyInit；精读655–673与864–1297"
+    },
+    {
+      "path": "core/src/core/api_direct_effect.cpp",
+      "blob_sha": "0e233cccb25f4e9af3f474eb77aea2e1ef08303f",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/api_direct_effect.cpp",
+      "read_scope": "全文"
+    },
+    {
+      "path": "core/src/core/direct_effect.cpp",
+      "blob_sha": "1fdb4aa2f0c9d805b5d31c47636a6b16abdaf645",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/direct_effect.cpp",
+      "read_scope": "全文"
+    },
+    {
+      "path": "core/src/core/gain_effect.cpp",
+      "blob_sha": "8516588f51cfbd37c3f34863e6a3291211ffe20e",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/gain_effect.cpp",
+      "read_scope": "全文"
+    },
+    {
+      "path": "fmod/src/mix_return_effect.cpp",
+      "blob_sha": "3cd00a066d066efde7bd60b8513145d68ab0d665",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/src/mix_return_effect.cpp",
+      "read_scope": "精读process 300–415；不声称完成核心mixer算法核读"
+    },
+    {
+      "path": "fmod/src/reverb_effect.cpp",
+      "blob_sha": "20cfdb89a1dc7b9bf05af96bd8ac961458666473",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/src/reverb_effect.cpp",
+      "read_scope": "精读process：gReverbSource、downmix、reflection apply、decode；其余仅读取供定位"
+    },
+    {
+      "path": "fmod/doc/spatializer.rst",
+      "blob_sha": "ae0e970a45cf5b6ecbe23dc87b06dd14359577e8",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/doc/spatializer.rst",
+      "read_scope": "全文"
+    },
+    {
+      "path": "fmod/doc/guide.rst",
+      "blob_sha": "12771c071dee3b3a086e2e2c5e156c4709bb9943",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/doc/guide.rst",
+      "read_scope": "全文"
+    },
+    {
+      "path": "fmod/doc/mixer-return.rst",
+      "blob_sha": "c11f7a8b12a847623dd13a993a5600cf88f06f30",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/doc/mixer-return.rst",
+      "read_scope": "全文"
+    }
+  ],
+  "additional_source": {
+    "url": "https://www.fmod.com/docs/2.03/api/plugin-api-dsp.html#fmod_dsp_parameter_overallgain",
+    "read_scope": "FMOD_DSP_PARAMETER_OVERALLGAIN, 页面行2418–2455；页脚3818",
+    "observed_version": "2.03.15 (2026-09-21)",
+    "claim": "Overall gain结构用于voice virtualization；不是测量波形",
+    "limit": "滚动文档；不证明运行SDK版本"
+  }
+}

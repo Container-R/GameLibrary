@@ -1,0 +1,35 @@
+{
+  "draw_api": "glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, client_indices)",
+  "vertex_input": "interleaved xyz/RGBA compatibility client arrays, 28-byte stride",
+  "config_bits": {
+    "red": 8,
+    "green": 8,
+    "blue": 8,
+    "alpha": 8,
+    "samples": 0
+  },
+  "framebuffer_encoding": 9729,
+  "pixel_coordinate": [
+    8,
+    8
+  ],
+  "red_then_cyan_rgba8": [
+    64,
+    128,
+    128,
+    192
+  ],
+  "cyan_then_red_rgba8": [
+    128,
+    64,
+    64,
+    192
+  ],
+  "fetch_red_then_cyan_rgba8": [
+    64,
+    128,
+    128,
+    192
+  ],
+  "all_assertions_passed": true
+}

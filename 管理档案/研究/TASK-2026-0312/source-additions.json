@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-09",
+  "commit": "0da18255cca520771f363ee01f100572b39a308e",
+  "sources": [
+    {
+      "path": "core/src/core/api_indirect_effect.cpp",
+      "blob_sha": "5b6aced214523dbddde08c2c77c32ae3c1da7401",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/api_indirect_effect.cpp",
+      "read_scope": "全文，重点核对 apply/tail 与 mixer 路径"
+    },
+    {
+      "path": "core/src/core/indirect_effect.cpp",
+      "blob_sha": "6ca656cb05d012a93c9ba74da7219c5b2350921d",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/indirect_effect.cpp",
+      "read_scope": "全文，重点核对 apply/tail 与 mixer 路径"
+    },
+    {
+      "path": "core/src/core/overlap_save_convolution_effect.cpp",
+      "blob_sha": "8f9693e5550fe29f823ff6bce3fa3095bc30612b",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/core/src/core/overlap_save_convolution_effect.cpp",
+      "read_scope": "全文，重点核对 apply/tail 与 mixer 路径"
+    },
+    {
+      "path": "fmod/src/steamaudio_fmod.cpp",
+      "blob_sha": "bde01f134af18b16080982d6511d7784e52cc26c",
+      "url": "https://github.com/ValveSoftware/steam-audio/blob/0da18255cca520771f363ee01f100572b39a308e/fmod/src/steamaudio_fmod.cpp",
+      "read_scope": "applyVolumeRamp；其他帮助定位"
+    }
+  ],
+  "docs": {
+    "url": "https://www.fmod.com/docs/2.03/api/managing-resources-in-the-core-api.html#virtual-voice-system",
+    "read_scope": "Virtual Voice System、Audibility Calculation、Channel Priority、Software Channels vs Virtual Channels、Virtual to Real Transition、Studio API Voice Control 开头；返回页行103–160",
+    "claim": "区分 Core Channel 与 Studio EventInstance 的虚拟状态查询；overall gain只是可听性输入之一"
+  },
+  "execution": "未编译、未运行SDK、未生成、捕获或试听音频。"
+}

@@ -1,0 +1,69 @@
+{
+  "article_path": "GameLibrary/技术美术/环境管线/模型导入/优化半透明网格时，怎样保留三角形顺序语义.md",
+  "article_sha256": "9e68429a137359f98cc12ce5f34a982dd6b421d8e93ce7b948b34ae9a0072743",
+  "author": "GameLibrary 透明网格顺序研究编辑",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "独立模型技术审稿者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-009/technical.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "独立模型读者与导航审稿者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-009/reader-navigation.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "独立模型读者与导航审稿者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/SOL-MODEL-009/reader-navigation.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/透明网格顺序/sources.md",
+      "sha256": "f1b1f05bdcdf95d728c1cbfc1ced7dbd625a5354d5dc431e31922d3e10fb3be8"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/README.md",
+      "sha256": "3d8814a91cff83124ec0683f2c2e3b0bb5179e4034889d9565350413699acf04"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/checksums.sha256",
+      "sha256": "91a3d4e28d1b23561c34f596f014009a4e0de60dd752bc3d643216ee13f7a843"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/ordering.cpp",
+      "sha256": "3701296aa5be6500fa82960dfe618dfe6c8aae9b9ca50cf9543ed12a3863122d"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/raster.py",
+      "sha256": "c66b592f04cd5e1893be55a615460ec32aefc2e261428c79a4d948df435293eb"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/structure.json",
+      "sha256": "8c221669421c0f0be9b86eb634deff2094a9ba88bceb9a94c5f72c38713909ec"
+    },
+    {
+      "path": "管理档案/实验/透明网格顺序/raster.json",
+      "sha256": "ca116b0e6deb14d2fc189f7e64b3733e7bcc6d68f7f2718ae5961e50ae226c45"
+    }
+  ],
+  "scope": "固定源码与规范核查、原生meshoptimizer结构测试及软件光栅、独立模型读者与局部导航；未测目标引擎/真实资产/GPU性能。",
+  "public_copy_scope": "仅移除运行环境记录及相关采集、引用；正文方法、固定来源、结构输出和像素数据不变。",
+  "public_copy_review": {
+    "base_article_sha256": "08d1cac1f346c2af545c73e50021ec046e1ccd195d3e74a4b0f35b7ba8919c2b",
+    "article_sha256": "9e68429a137359f98cc12ce5f34a982dd6b421d8e93ce7b948b34ae9a0072743",
+    "report": "管理档案/审稿/SOL-MODEL-009/public-copy-review.md",
+    "verdict": "pass",
+    "scope": "移除环境记录后，独立核对差异、复跑结果与审稿绑定。",
+    "mode": "independent-model-review",
+    "report_sha256": "ec48d191ae97cd17ca8bb35513fbda8b5ae400a6d9795656e82b1d5ffa77bef3"
+  }
+}

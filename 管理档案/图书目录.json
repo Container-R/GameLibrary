@@ -32,7 +32,7 @@
       "reader_title": "交互音频设计师的工作与协作",
       "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/岗位与协作/交互音频设计师的工作与协作.md",
       "reader_body_status": "published",
-      "reader_sha256": "b9893323c8a8051e2fcf8884dbf4a00ea7b796c08e61a238dcda67da5c7c703a"
+      "reader_sha256": "bf2cf809e6f6c43ec8150ce82e4d2ee2e9c7693d00e95f86f6484acd2447ef02"
     },
     {
       "internal_id": "ROLE-DATA-001",
@@ -831,7 +831,7 @@
       "reader_title": "加权透明混合不用排序，为什么仍不等于逐层合成",
       "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/透明合成/加权透明混合不用排序，为什么仍不等于逐层合成.md",
       "reader_body_status": "published",
-      "reader_sha256": "76e8f3bb0a41bf0159232dbe06ff978f3b4f8572504f5c0c2e561456600ded70",
+      "reader_sha256": "d2abc0a4b83eb8e47cfc861b361d04700d662c2be001d34569788d6af5739384",
       "source_record": "管理档案/来源笔记/weighted-transparency.json",
       "sources": [
         "https://jcgt.org/published/0002/02/09/paper-lowres.pdf",
@@ -1107,11 +1107,31 @@
       "internal_id": "SOL-ENV-003",
       "reader_title": "模块化环境的分件粒度与预制组合设计",
       "canonical_reader_path": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境的分件粒度与预制组合设计.md",
-      "reader_body_status": "ready",
-      "publication_status": "unpublished",
+      "reader_body_status": "published",
+      "publication_status": "published",
       "reader_sha256": "304c4cc60c240df0c14de8b6d9c379b7828897fa3ee84d982ad4c5d47c62e752",
       "source_record": "管理档案/研究/TASK-2026-0310/sources.json",
-      "review": "管理档案/审稿/SOL-ENV-003/review.json"
+      "review": "管理档案/审稿/SOL-ENV-003/review.json",
+      "publication_commit": "e591e20fcaeb4f5522e2962e32b78dcf18efe0f7"
+    },
+    {
+      "internal_id": "SOL-MODEL-009",
+      "reader_title": "优化半透明网格时，怎样保留三角形顺序语义",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型导入/优化半透明网格时，怎样保留三角形顺序语义.md",
+      "reader_body_status": "ready",
+      "reader_sha256": "9e68429a137359f98cc12ce5f34a982dd6b421d8e93ce7b948b34ae9a0072743",
+      "source_record": "管理档案/研究/透明网格顺序/sources.md",
+      "materials_record": "管理档案/实验/透明网格顺序/README.md",
+      "review": "管理档案/审稿/SOL-MODEL-009/review.json"
+    },
+    {
+      "internal_id": "SOL-SFX-008",
+      "reader_title": "Steam Audio遮挡与反射声的路由诊断",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/空间音频/Steam Audio遮挡与反射声的路由诊断.md",
+      "reader_body_status": "ready",
+      "reader_sha256": "741b322bf49eb4668bf69f24e8bfc84a1d541468758b1d0bbd6c5aaa0b521499",
+      "source_record": "管理档案/研究/TASK-2026-0312/sources.json",
+      "review": "管理档案/审稿/SOL-SFX-008/review.json"
     }
   ]
 }
