@@ -10675,30 +10675,39 @@
       "reader": "具备基础模型、坐标和编辑器装配经验的环境美术、关卡搭建者与技术美术。",
       "scope": "重复建筑空间的建模、日常摆放及例外修改粒度；接续既有模块化环境专题，不重复接口坐标推导或共享灯具的预制覆盖教程，不推导运行时性能。",
       "expected_outcome": "完整的制作决策与例外验证方法，具备贯穿案例和独立读者任务；成熟后完成技术、读者及逐层导航审查，再发表。",
-      "phase": "researching",
-      "status": "researching",
+      "phase": "ready",
+      "status": "ready",
       "owner": "GameLibrary 编辑维护者",
       "evidence_paths": [
         "管理档案/研究/TASK-2026-0310/scope.md",
         "管理档案/研究/TASK-2026-0310/sources.md",
         "管理档案/研究/TASK-2026-0310/findings.md",
-        "管理档案/研究/TASK-2026-0310/next-action.md"
+        "管理档案/研究/TASK-2026-0310/next-action.md",
+        "管理档案/研究/TASK-2026-0310/sources.json",
+        "管理档案/审稿/SOL-ENV-003/review.json",
+        "管理档案/研究/TASK-2026-0310/recovery.json"
       ],
-      "last_real_progress": "核对现有完整接口方法并排除重复题；已深读Fallout 4原始课件与五张原图、相邻正文及官方预制文档，形成三种粒度、边界暴露、继承范围与比较方案。",
-      "next_action": "完成正常走廊局部破墙与地板替换的贯穿制作方案，补原创关系和断面示意，形成完整方法正文后独立三审；不把抽象依赖模型当真实编辑器结果。",
+      "last_real_progress": "完成全文、两张重制图及来源的独立技术审稿、代表任务读者审读与逐层导航审查；最终图文与来源指纹已绑定。",
+      "next_action": "最终技术、读者及逐层导航审查已通过；核对最新仓库版本后按完整候选清单准备增量发表，远端逐文件确认前保持 unpublished。",
       "blocker": null,
-      "updated_at": "2026-11-08T18:56:00Z",
+      "updated_at": "2026-11-09T01:13:47Z",
       "related_article_ids": [
         "SOL-ENV-001"
       ],
-      "validation_scope": "原始材料、图像和现有正文研究；未执行原生DCC/引擎、工时、性能或玩家实验。"
+      "validation_scope": "原始材料、图像和现有正文研究；未执行原生DCC/引擎、工时、性能或玩家实验。",
+      "publication_status": "unpublished",
+      "artifact_paths": [
+        "GameLibrary/美术设计/环境设计/模块化环境/模块化环境的分件粒度与预制组合设计.md"
+      ],
+      "article_id": "SOL-ENV-003",
+      "article_sha256": "304c4cc60c240df0c14de8b6d9c379b7828897fa3ee84d982ad4c5d47c62e752"
     }
   ],
   "execution_policy": {
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "继续 TASK-2026-0309：明确具体候选身份、开始与继续资格、评分/资格检查的责任及单个持续行为的接入轨迹，再完成方法全文与独立审稿；不扩建通用调度框架，不把选择器模型当游戏验证。"
+    "next_priority": "完成 TASK-2026-0310 已审候选的增量发表；保持 ready / unpublished，远端确认前不登记 published。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }

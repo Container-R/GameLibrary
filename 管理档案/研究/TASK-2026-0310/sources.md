@@ -21,14 +21,14 @@ Unity 6.0 Manual，Override prefab instances，Behavior of overrides。
 https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/override/prefab-instance-overrides
 原 6000.0 文档 URL 重定向到该版本页面。文字支持同字段覆盖优先、源值修改不会作用于已覆盖字段。仅作为具体实现例，不等同 Fallout 4 Pack-In。
 
-## S4：解包与依赖边界
-Unity 6.0 Manual，Revert a prefab instance to a GameObject。
-https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/unpacking-prefab-instances
-全文技术段。普通解包解除所选层链接但保留嵌套实例；完全解包进一步解除嵌套。解包不是“不再引用任何网格或材质”，文档没有支持这种说法。
-
-## S5：变体的定位
+## S4：变体的定位
 Unity 6.0 Manual，Create variations of prefabs。
 https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/prefab-variants
 技术文字：变体继承基础预制，覆盖优先，基础也可为其他变体。这里用于区分“可重复例外”与“任意散件”，不展开应用目标按钮教程。
+
+## S5：解包与依赖边界
+Unity 6.0 Manual，Revert a prefab instance to a GameObject。
+https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/unpacking-prefab-instances
+全文技术段。普通解包解除所选层链接但保留嵌套实例；完全解包进一步解除嵌套。解包不是“不再引用任何网格或材质”，文档没有支持这种说法。
 
 以上网页于2026-11-08本轮研究时读取。无原生 DCC/引擎测试，无玩家或效率实验。全部公开来源只适度摘要，不转载课件。

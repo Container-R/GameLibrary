@@ -6,12 +6,12 @@
     "TASK-2026-0310"
   ],
   "last_completed_task_id": "TASK-2026-0309",
-  "last_real_progress_at": "2026-11-08T18:56:00Z",
+  "last_real_progress_at": "2026-11-09T01:13:47Z",
   "last_commit_sha": "25be05680ac8a7fb4193001f072cd4ff3b8b1fcb",
   "recovery_entrypoints": {
     "queue": ".agent/queue.json",
     "catalog": "管理档案/图书目录.json",
-    "latest_review": "管理档案/审稿/SOL-AI-004/review.json",
+    "latest_review": "管理档案/审稿/SOL-ENV-003/review.json",
     "latest_supervision": "管理档案/审查/督导/20261109-0250/报告.md"
   },
   "publication": {
@@ -24,7 +24,7 @@
     "verification": "19 manifest and shared-record files read back in full with exact UTF-8 identity; synchronous Python trace and threshold checks independently rerun.",
     "scope": "One complete utility-candidate retention method; three original sources, independent model reviews, 64 ticks and 2646 threshold checks. No game, engine, performance or player test; runtime failure not injected."
   },
-  "next_action": "完成正常走廊局部破墙与地板替换的贯穿制作方案，补原创关系和断面示意，形成完整方法正文后独立三审；不把抽象依赖模型当真实编辑器结果。",
+  "next_action": "最终技术、读者及逐层导航审查已通过；核对最新仓库版本后按完整候选清单准备增量发表，远端逐文件确认前保持 unpublished。",
   "pending_topics": [
     {
       "question": "其他管理技术正文继续逐题处理；原研究草稿保留。",
@@ -52,10 +52,13 @@
   ],
   "active_research": {
     "task_id": "TASK-2026-0310",
-    "phase": "researching",
+    "phase": "ready",
     "owner": "GameLibrary 编辑维护者",
-    "evidence": "管理档案/研究/TASK-2026-0310/findings.md",
-    "last_real_progress_at": "2026-11-08T18:56:00Z",
-    "last_progress": "核对现有完整接口方法并排除重复题；已深读Fallout 4原始课件与五张原图、相邻正文及官方预制文档，形成三种粒度、边界暴露、继承范围与比较方案。"
+    "evidence": "管理档案/研究/TASK-2026-0310/sources.json",
+    "last_real_progress_at": "2026-11-09T01:13:47Z",
+    "last_progress": "完成全文、两张重制图及来源的独立技术审稿、代表任务读者审读与逐层导航审查；最终图文与来源指纹已绑定。",
+    "publication_status": "unpublished",
+    "article": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境的分件粒度与预制组合设计.md",
+    "article_sha256": "304c4cc60c240df0c14de8b6d9c379b7828897fa3ee84d982ad4c5d47c62e752"
   }
 }

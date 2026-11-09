@@ -1,0 +1,86 @@
+{
+  "article": "GameLibrary/美术设计/环境设计/模块化环境/模块化环境的分件粒度与预制组合设计.md",
+  "article_sha256": "304c4cc60c240df0c14de8b6d9c379b7828897fa3ee84d982ad4c5d47c62e752",
+  "reading_record": "sources.md",
+  "research_read_at": "2026-11-08",
+  "independent_source_check_at": "2026-11-09",
+  "claims": [
+    {
+      "id": "S1",
+      "claim": "拆分提供布局和破损自由，同时增加装配对象；对象数不能换算工时。",
+      "source": {
+        "author": "Joel Burgess、Nate Purkeypile / Bethesda Game Studios",
+        "title": "The Modular Level Design of Fallout 4",
+        "date_or_version": "GDC 2016",
+        "url": "https://www.slideshare.net/slideshow/gdc-2016-modular-level-design-of-fallout-4/59770460"
+      },
+      "locator": "第86、88、94、96、99页",
+      "observed_content": "墙、墙角、地板、天花分列；第94页标注20和123；第96页对照Pack-In Prefab与Exploded Granular。",
+      "conditions": "只支持课件案例，不推断Pack-In实现、性能或效率比例。",
+      "article_section": "模型、摆放和修改不必使用同一种单元"
+    },
+    {
+      "id": "S2",
+      "claim": "灰盒体现结构特征，常用件优先，编辑器辅助标记帮助交接。",
+      "source": {
+        "author": "Joel Burgess、Nathan Purkeypile",
+        "title": "Skyrim’s Modular Approach to Level Design",
+        "date_or_version": "GDC 2013；2013-05-01作者署名转载",
+        "url": "https://www.gamedeveloper.com/design/skyrim-s-modular-approach-to-level-design"
+      },
+      "locator": "The Graybox Phase、The Build-Out Phase、The Polish Phase",
+      "observed_content": "灰盒反映功能结构；常用件优先；editor-only helper markers帮助选取天花。",
+      "conditions": "制作经验，不是本文走廊的引擎验证。",
+      "article_section": "先做可以复用的内部关系，再包装成标准组合"
+    },
+    {
+      "id": "S3",
+      "claim": "同字段的实例覆盖优先于基础值。",
+      "source": {
+        "author": "Unity Technologies",
+        "title": "Override prefab instances",
+        "date_or_version": "Unity 6.0 / 6000.0",
+        "url": "https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/override/prefab-instance-overrides"
+      },
+      "locator": "Behavior of overrides",
+      "observed_content": "覆盖优先，基础字段值更新不覆盖已有的实例覆盖。",
+      "conditions": "指定版本文档规则；不是资源内容更新规则或任意结构修改保证。",
+      "article_section": "给日常摆放保留组合，给例外选择正确的维护范围"
+    },
+    {
+      "id": "S4",
+      "claim": "变体继承基础预制并用覆盖表达差异。",
+      "source": {
+        "author": "Unity Technologies",
+        "title": "Create variations of prefabs",
+        "date_or_version": "Unity 6.0 / 6000.0",
+        "url": "https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/prefab-variants"
+      },
+      "locator": "基础预制与覆盖关系",
+      "observed_content": "variant继承基础预制，差异通过覆盖表达。",
+      "conditions": "当前页面不证明任意重设父级都可行。",
+      "article_section": "给日常摆放保留组合，给例外选择正确的维护范围"
+    },
+    {
+      "id": "S5",
+      "claim": "普通解包与完全解包的解除范围不同，变体有根关系例外。",
+      "source": {
+        "author": "Unity Technologies",
+        "title": "Revert a prefab instance to a GameObject",
+        "date_or_version": "Unity 6.0 / 6000.0",
+        "url": "https://docs.unity.com/en-us/engine/6000.0/manual/working-with-gameobjects/prefabs/unpacking-prefab-instances"
+      },
+      "locator": "Unpack / Unpack Completely",
+      "observed_content": "普通实例Unpack保留嵌套实例；变体实例Unpack后根成为基础预制实例；Unpack Completely进一步解除关系。",
+      "conditions": "不等于网格或材料资源私有化；未执行原生编辑器测试。",
+      "article_section": "给日常摆放保留组合，给例外选择正确的维护范围"
+    }
+  ],
+  "version_caution": {
+    "url": "https://docs.unity.cn/6000.0/Documentation/Manual/PrefabInstanceOverrides.html",
+    "version": "Unity 6 Beta",
+    "finding": "2026-11-09核对的当前docs.unity.com 6000.0实例覆盖和变体页允许增加或删除子对象；旧docs.unity.cn页面明确标为Unity 6 Beta，列有继承对象删除及改父级限制。不能以旧Beta页面禁止删除替代当前文档；当前页面也不足以保证任意改父级。正文只要求按目标版本核对结构操作。"
+  },
+  "original_example": "走廊尺寸、破墙和换地板为原创说明性方案，不是实际项目或引擎实验。",
+  "evidence_basis": "沿用2026-11-08来源阅读记录，并纳入2026-11-09独立技术审查实际读取的官方页面与课件图像定位。"
+}
