@@ -10706,8 +10706,8 @@
     {
       "id": "TASK-2026-0311",
       "question": "半透明网格经过资产优化后，怎样选择保序步骤、正确重映射共享顶点域，并验收最终绘制输入？",
-      "status": "ready",
-      "publication_status": "unpublished",
+      "status": "completed",
+      "publication_status": "published",
       "article_id": "SOL-MODEL-009",
       "article_sha256": "9e68429a137359f98cc12ce5f34a982dd6b421d8e93ce7b948b34ae9a0072743",
       "artifact_paths": [
@@ -10717,13 +10717,14 @@
         "管理档案/研究/透明网格顺序/sources.md",
         "管理档案/实验/透明网格顺序/README.md",
         "管理档案/审稿/SOL-MODEL-009/review.json"
-      ]
+      ],
+      "publication_commit": "378a37e76e32495fbb095626a19638a012a0f844"
     },
     {
       "id": "TASK-2026-0312",
       "question": "墙后直达与反射声同时消失时，怎样区分输入、返回路由、资源资格与已有尾声？",
-      "status": "ready",
-      "publication_status": "unpublished",
+      "status": "completed",
+      "publication_status": "published",
       "article_id": "SOL-SFX-008",
       "article_sha256": "741b322bf49eb4668bf69f24e8bfc84a1d541468758b1d0bbd6c5aaa0b521499",
       "artifact_paths": [
@@ -10733,14 +10734,15 @@
         "管理档案/研究/TASK-2026-0312/sources.json",
         "管理档案/研究/TASK-2026-0312/source-additions.json",
         "管理档案/审稿/SOL-SFX-008/review.json"
-      ]
+      ],
+      "publication_commit": "378a37e76e32495fbb095626a19638a012a0f844"
     }
   ],
   "execution_policy": {
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "TASK-2026-0310 已发表；TASK-2026-0311 与 TASK-2026-0312 正文、来源与审稿已备齐，待发表结果核对。"
+    "next_priority": "TASK-2026-0310、TASK-2026-0311 与 TASK-2026-0312 均已发表并核对文件；按现有研究范围维护来源、正文与导航。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
