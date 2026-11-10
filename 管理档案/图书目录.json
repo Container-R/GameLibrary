@@ -1136,6 +1136,17 @@
       "review": "管理档案/审稿/SOL-SFX-008/review.json",
       "publication_status": "published",
       "publication_commit": "378a37e76e32495fbb095626a19638a012a0f844"
+    },
+    {
+      "internal_id": "SOL-A11Y-005",
+      "reader_title": "菜单朗读的过期淘汰与操作结果保留",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/无障碍设计/屏幕朗读/菜单朗读的过期淘汰与操作结果保留.md",
+      "reader_body_status": "ready",
+      "publication_status": "unpublished",
+      "reader_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+      "source_record": "管理档案/研究/TASK-2026-0313/sources.json",
+      "materials_record": "管理档案/实验/菜单朗读仲裁/README.md",
+      "review": "管理档案/审稿/SOL-A11Y-005/review.json"
     }
   ]
 }

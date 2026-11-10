@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "task_id": "TASK-2026-0313",
+  "article_id": "SOL-A11Y-005",
+  "article_path": "GameLibrary/本地化与无障碍/无障碍设计/屏幕朗读/菜单朗读的过期淘汰与操作结果保留.md",
+  "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+  "scope": "原始资料阅读与固定源码核对；原创有限模型另列。",
+  "claims": [
+    {
+      "id": "S1",
+      "claim": "焦点变化、取消重听、语速和周期提示需要分别处理。",
+      "source": {
+        "author": "Microsoft",
+        "title": "Xbox Accessibility Guideline 106: Screen narration",
+        "date_or_version": "2026-03-04",
+        "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/106",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "Implementation guidelines",
+      "observed_content": "旧焦点未完成朗读应停止并开始新焦点项；支持取消、重听和语速设置，周期状态不应干扰其他朗读。",
+      "conditions": "指南目标，不是本文队列算法；只读文字，未观看或试听嵌入视频。",
+      "article_section": "先给信息划出可以替换的范围"
+    },
+    {
+      "id": "S2",
+      "claim": "UIA通知成功不是发送方可用的播放完成回执。",
+      "source": {
+        "author": "Microsoft",
+        "title": "UiaRaiseNotificationEvent / HandleNotificationEvent / AddNotificationEventHandler",
+        "date_or_version": "2024-02-22；订阅接口2024-08-07",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/api/uiautomationcoreapi/nf-uiautomationcoreapi-uiaraisenotificationevent",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "Parameters、Return value及对应客户端通知回调与订阅接口",
+      "observed_content": "参数传递provider、首选处理方式、文字与activityId；S_OK表示函数成功。接收事件的接口不是向发送方报告可听完成。",
+      "conditions": "未做原生UIA或听觉试验；不将activityId当定向取消句柄。",
+      "article_section": "外部读屏不能冒充应用拥有的播放队列",
+      "related_sources": [
+        {
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/uiautomationclient/nf-uiautomationclient-iuiautomationnotificationeventhandler-handlenotificationevent",
+          "locator": "Syntax、Parameters、Remarks"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/uiautomationclient/nf-uiautomationclient-iuiautomation5-addnotificationeventhandler",
+          "locator": "Syntax、Parameters"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "claim": "通知处理枚举是偏好且带逐项版本限制。",
+      "source": {
+        "author": "Microsoft",
+        "title": "NotificationProcessing enumeration",
+        "date_or_version": "2025-06-09",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationprocessing",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "Constants",
+      "observed_content": "区分全部、最新及当前后接最新；ImportantAll有洪泛提醒；ImportantCurrentThenMostRecent从Windows build 26100引入。",
+      "conditions": "不等同所有客户端执行一致；所读页面没有给出应用替换键的通用隔离公式。",
+      "article_section": "外部读屏不能冒充应用拥有的播放队列"
+    },
+    {
+      "id": "S4",
+      "claim": "固定NVDA默认通知路径不按activityId分组。",
+      "source": {
+        "author": "NV Access",
+        "title": "NVDA UIA.event_UIA_notification、UIAHandler、ui.message",
+        "date_or_version": "c3a70853b8fabe64eeb1da50de9b8bd49d44056d，2026-10-19",
+        "url": "https://github.com/nvaccess/nvda/blob/c3a70853b8fabe64eeb1da50de9b8bd49d44056d/source/NVDAObjects/UIA/__init__.py#L2550-L2584",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "UIA 2550–2584；UIAHandler 1060–1153；ui.py 166–178",
+      "observed_content": "接收但不使用activityId；MostRecent两值共分支，非say-all调用cancelSpeech；ImportantCurrentThenMostRecent映射NEXT；ui.message同时进入语音和盲文。",
+      "conditions": "静态源码事实；应用模块、子类、插件、say-all状态和安装版本可改变行为。",
+      "article_section": "外部读屏不能冒充应用拥有的播放队列"
+    },
+    {
+      "id": "S5",
+      "claim": "该取消链可能影响同一manager的其他队列内容。",
+      "source": {
+        "author": "NV Access",
+        "title": "NVDA speech.cancelSpeech、SpeechManager.cancel与_reset",
+        "date_or_version": "c3a70853b8fabe64eeb1da50de9b8bd49d44056d",
+        "url": "https://github.com/nvaccess/nvda/blob/c3a70853b8fabe64eeb1da50de9b8bd49d44056d/source/speech/manager.py#L768-L773",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "speech/speech.py 217–233；speech/manager.py 768–773及220–234",
+      "observed_content": "状态门之后调用manager.cancel，后者取消合成器并重置优先队列和回调映射，不接收provider或activityId。",
+      "conditions": "固定路径上的范围推导，不是试听到的游戏故障或全部版本保证。",
+      "article_section": "外部读屏不能冒充应用拥有的播放队列"
+    },
+    {
+      "id": "S6",
+      "claim": "ETag不可排序成提交顺序；If-Match提供条件前提。",
+      "source": {
+        "author": "R. Fielding、M. Nottingham、J. Reschke",
+        "title": "RFC 9110: HTTP Semantics",
+        "date_or_version": "2022-06",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "§8.8.3、§8.8.3.2、§13.1.1",
+      "observed_content": "ETag是不透明校验值，强比较检验相等；If-Match在状态改变前检查前提以避免丢失更新。",
+      "conditions": "不提供本文保存或朗读算法；完整替换、可比较权威修订及接受值是本文显式模型契约。",
+      "article_section": "保存失败晚到时，先问当前目标是否还没完成"
+    },
+    {
+      "id": "S7",
+      "claim": "单调时钟原点无定义，需在同一时钟域计算差值。",
+      "source": {
+        "author": "Python Software Foundation",
+        "title": "Python 3.12 time.monotonic",
+        "date_or_version": "Python 3.12文档",
+        "url": "https://docs.python.org/3.12/library/time.html#time.monotonic",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "time.monotonic说明",
+      "observed_content": "不倒退、不受系统时钟修改影响，原点未定义，只比较差值。",
+      "conditions": "运行环境Python3.12.14，文档当前3.12分支；没有跨时钟同步或OS暂停试验。",
+      "article_section": "倒计时要在提交时重新计算"
+    },
+    {
+      "id": "S8",
+      "claim": "QPC独立于UTC且计入待机和休眠，不自动服从游戏暂停。",
+      "source": {
+        "author": "Microsoft",
+        "title": "Acquiring high-resolution time stamps",
+        "date_or_version": null,
+        "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/acquiring-high-resolution-time-stamps",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "General FAQ、Absolute Clocks and Difference Clocks、Hardware timer",
+      "observed_content": "QPC用于差值计时，独立于UTC，范围包括待机、休眠与connected standby。",
+      "conditions": "仅文档阅读，未运行Windows；业务暂停与截止点转换需项目另行定义。",
+      "article_section": "倒计时要在提交时重新计算"
+    },
+    {
+      "id": "S9",
+      "claim": "可用状态表达而不先夺取焦点，仍需避免过多播报。",
+      "source": {
+        "author": "W3C WAI",
+        "title": "Understanding SC 4.1.3: Status Messages",
+        "date_or_version": null,
+        "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+        "accessed_at": "2026-11-10"
+      },
+      "locator": "Intent、Modification/Removal of status text、Other uses of live regions",
+      "observed_content": "讨论不改变用户上下文的状态通知、状态修改或移除及过度播报风险。",
+      "conditions": "解释性材料而非规范正文；本文借鉴交互原则，不据此认证游戏。",
+      "article_section": "取消、重听和回查要各有明确含义"
+    }
+  ],
+  "original_models": [
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/trace_model.py",
+      "sha256": "744bce70651c629b32f5b1286dbe0dcebff0cda2e617d3aa14d24f56aed676f6",
+      "observations": "24步主轨迹、10步打断轨迹、11步会话切换回归通过；回调为人工输入。"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/causal_freshness_model.py",
+      "sha256": "4d18ab2c6c4c9c2a1f576c327a8e08140b03799c2f65a88803af2f73cc707b37",
+      "observations": "8项因果情形、15条计时日志通过；权威值、修订和时刻为人工输入。"
+    }
+  ],
+  "not_verified": [
+    "Windows/NVDA/引擎运行",
+    "声音输出及试听",
+    "真实存储和网络",
+    "显式停止/重听及可访问结果面板实现",
+    "相关参与者任务研究"
+  ]
+}

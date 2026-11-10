@@ -1,0 +1,850 @@
+{
+  "model_only": true,
+  "checks": "all finite assertions passed",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux",
+    "reported_monotonic_clock": {
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    }
+  },
+  "causality_cases": {
+    "same_intent_retry_and_late_render": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "reply",
+          "r1",
+          "failed",
+          null,
+          null
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "reply",
+          "r2",
+          "succeeded",
+          10,
+          "24"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "failed",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "retry_succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "24",
+            "last_confirmed": [
+              10,
+              "24",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 1,
+          "status": "succeeded",
+          "revision": 10,
+          "accepted_value": "24",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "24",
+            "last_confirmed": [
+              10,
+              "24",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        }
+      ]
+    },
+    "new_intent_success_before_old_failure": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "choose",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "reply",
+          "r2",
+          "succeeded",
+          11,
+          "28"
+        ],
+        [
+          "reply",
+          "r1",
+          "failed",
+          null,
+          null
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "failed",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "superseded_by_confirmed_intent",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              11,
+              "28",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 2,
+          "value": "28",
+          "order": 1,
+          "status": "succeeded",
+          "revision": 11,
+          "accepted_value": "28",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              11,
+              "28",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        }
+      ]
+    },
+    "older_reply_does_not_regress": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "choose",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "reply",
+          "r2",
+          "succeeded",
+          11,
+          "28"
+        ],
+        [
+          "reply",
+          "r1",
+          "succeeded",
+          10,
+          "24"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "succeeded",
+          "revision": 10,
+          "accepted_value": "24",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              11,
+              "28",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 2,
+          "value": "28",
+          "order": 1,
+          "status": "succeeded",
+          "revision": 11,
+          "accepted_value": "28",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              11,
+              "28",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        }
+      ]
+    },
+    "old_intent_newer_commit": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "choose",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "reply",
+          "r2",
+          "succeeded",
+          11,
+          "28"
+        ],
+        [
+          "reply",
+          "r1",
+          "succeeded",
+          12,
+          "24"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "succeeded",
+          "revision": 12,
+          "accepted_value": "24",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              12,
+              "24",
+              "r1"
+            ],
+            "unresolved": [],
+            "state": "confirmed_different"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 2,
+          "value": "28",
+          "order": 1,
+          "status": "succeeded",
+          "revision": 11,
+          "accepted_value": "28",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": [
+              12,
+              "24",
+              "r1"
+            ],
+            "unresolved": [],
+            "state": "confirmed_different"
+          }
+        }
+      ]
+    },
+    "independent_resource_and_timeout_reconciliation": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "reply",
+          "r1",
+          "failed",
+          null,
+          null
+        ],
+        [
+          "choose",
+          "graphics",
+          1,
+          "high"
+        ],
+        [
+          "begin",
+          "g1",
+          "graphics",
+          1,
+          "high"
+        ],
+        [
+          "reply",
+          "g1",
+          "succeeded",
+          99,
+          "high"
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "reply",
+          "r2",
+          "uncertain",
+          null,
+          null
+        ],
+        [
+          "reply",
+          "r2",
+          "succeeded",
+          1,
+          "24"
+        ],
+        [
+          "duplicate",
+          "r2",
+          "succeeded",
+          1,
+          "24"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "failed",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "retry_succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "24",
+            "last_confirmed": [
+              1,
+              "24",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        },
+        {
+          "operation": "g1",
+          "resource": "graphics",
+          "intent": 1,
+          "value": "high",
+          "order": 1,
+          "status": "succeeded",
+          "revision": 99,
+          "accepted_value": "high",
+          "relation": "succeeded",
+          "current": {
+            "resource": "graphics",
+            "intent": 1,
+            "desired": "high",
+            "last_confirmed": [
+              99,
+              "high",
+              "g1"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 2,
+          "status": "succeeded",
+          "revision": 1,
+          "accepted_value": "24",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "24",
+            "last_confirmed": [
+              1,
+              "24",
+              "r2"
+            ],
+            "unresolved": [],
+            "state": "confirmed_current"
+          }
+        }
+      ]
+    },
+    "new_intent_is_not_yet_saved": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "24"
+        ],
+        [
+          "reply",
+          "r1",
+          "failed",
+          null,
+          null
+        ],
+        [
+          "choose",
+          "subtitle",
+          2,
+          "28"
+        ],
+        [
+          "begin",
+          "r2",
+          "subtitle",
+          2,
+          "28"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "24",
+          "order": 0,
+          "status": "failed",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "superseded_intent_unconfirmed",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": null,
+            "unresolved": [
+              "r2"
+            ],
+            "state": "pending_or_uncertain"
+          }
+        },
+        {
+          "operation": "r2",
+          "resource": "subtitle",
+          "intent": 2,
+          "value": "28",
+          "order": 1,
+          "status": "pending",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "pending",
+          "current": {
+            "resource": "subtitle",
+            "intent": 2,
+            "desired": "28",
+            "last_confirmed": null,
+            "unresolved": [
+              "r2"
+            ],
+            "state": "pending_or_uncertain"
+          }
+        }
+      ]
+    },
+    "accepted_value_is_not_requested_value": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "28"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "28"
+        ],
+        [
+          "reply",
+          "r1",
+          "succeeded",
+          1,
+          "26"
+        ],
+        [
+          "duplicate",
+          "r1",
+          "succeeded",
+          1,
+          "26"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "28",
+          "order": 0,
+          "status": "succeeded",
+          "revision": 1,
+          "accepted_value": "26",
+          "relation": "succeeded",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "28",
+            "last_confirmed": [
+              1,
+              "26",
+              "r1"
+            ],
+            "unresolved": [],
+            "state": "confirmed_different"
+          }
+        }
+      ]
+    },
+    "missing_accepted_value_rejected": {
+      "inputs": [
+        [
+          "choose",
+          "subtitle",
+          1,
+          "28"
+        ],
+        [
+          "begin",
+          "r1",
+          "subtitle",
+          1,
+          "28"
+        ]
+      ],
+      "history": [
+        {
+          "operation": "r1",
+          "resource": "subtitle",
+          "intent": 1,
+          "value": "28",
+          "order": 0,
+          "status": "pending",
+          "revision": null,
+          "accepted_value": null,
+          "relation": "pending",
+          "current": {
+            "resource": "subtitle",
+            "intent": 1,
+            "desired": "28",
+            "last_confirmed": null,
+            "unresolved": [
+              "r1"
+            ],
+            "state": "pending_or_uncertain"
+          }
+        }
+      ]
+    }
+  },
+  "timer_inputs_and_outputs": [
+    [
+      "create",
+      "p1",
+      "s1",
+      8000,
+      1
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      2400,
+      {
+        "seconds": 6,
+        "revision": 1
+      }
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      8000,
+      {
+        "drop": "deadline_reached_without_start_confirmation"
+      }
+    ],
+    [
+      "deadline",
+      "s1",
+      12000,
+      2,
+      true
+    ],
+    [
+      "deadline",
+      "s1",
+      9000,
+      1,
+      false
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      8500,
+      {
+        "seconds": 4,
+        "revision": 2
+      }
+    ],
+    [
+      "pause",
+      9000,
+      3000
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      20000,
+      {
+        "drop": "paused"
+      }
+    ],
+    [
+      "resume",
+      20000,
+      23000
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      21000,
+      {
+        "seconds": 2,
+        "revision": 2
+      }
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p2",
+      21000,
+      {
+        "drop": "old_page"
+      }
+    ],
+    [
+      "cancel"
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      21000,
+      {
+        "drop": "cancelled"
+      }
+    ]
+  ],
+  "replacement_timer": [
+    [
+      "create",
+      "p1",
+      "s2",
+      30000,
+      1
+    ],
+    [
+      "render",
+      {
+        "page": "p1",
+        "session": "s1"
+      },
+      "p1",
+      21000,
+      {
+        "drop": "old_session"
+      }
+    ]
+  ],
+  "not_tested": [
+    "storage",
+    "network",
+    "OS sleep/pause behavior",
+    "UIA",
+    "audio",
+    "user experience"
+  ]
+}

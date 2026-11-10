@@ -1,0 +1,77 @@
+{
+  "article_path": "GameLibrary/本地化与无障碍/无障碍设计/屏幕朗读/菜单朗读的过期淘汰与操作结果保留.md",
+  "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+  "author": "GameLibrary 菜单朗读研究编辑",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "独立模型技术审稿者",
+      "mode": "independent-model-review",
+      "verdict": "pass",
+      "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+      "report": "管理档案/审稿/SOL-A11Y-005/technical.md",
+      "report_sha256": "0d70f99ff976a2cfdd7dcf8c7ed98f44ba6152ab6c41f61a0a3cc7510aeaf9e3"
+    },
+    {
+      "role": "reader",
+      "reviewer": "独立模型读者审读者",
+      "mode": "independent-model-review",
+      "verdict": "pass",
+      "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+      "report": "管理档案/审稿/SOL-A11Y-005/reader.md",
+      "report_sha256": "2410c975b2f3d663c1a1894a07bbc2b05dde01eff0f6276bed2b6e74285ed1cb"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "独立模型技术审稿者兼导航审查",
+      "mode": "independent-model-review",
+      "verdict": "pass",
+      "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+      "report": "管理档案/审稿/SOL-A11Y-005/navigation.md",
+      "report_sha256": "086003d42743654365d344846bb94a0078c9cc5248cdf6a54065ab564cb0ecc5"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/研究/TASK-2026-0313/sources.json",
+      "sha256": "e56f334039e9419b52894223db5ad5978099a744cd255443895cf83bcea01023"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/event-trace.md",
+      "sha256": "8b56df60f0182d36fe76ee46f37b356d2c369a97d20cea723abef0c2844f88b6"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/trace_model.py",
+      "sha256": "744bce70651c629b32f5b1286dbe0dcebff0cda2e617d3aa14d24f56aed676f6"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/trace-result.json",
+      "sha256": "2e02212ff52dab486c72b50e29a65b46964c0637e6fbd17f365b098aa6e525d4"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/causal-freshness.md",
+      "sha256": "8e0a4aa7778bf6f2726a84eae3fc8ca8876d5596e12abdbad71e1593f23e57c2"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/causal_freshness_model.py",
+      "sha256": "4d18ab2c6c4c9c2a1f576c327a8e08140b03799c2f65a88803af2f73cc707b37"
+    },
+    {
+      "path": "管理档案/实验/菜单朗读仲裁/causal-freshness-result.json",
+      "sha256": "a3fe6eec82e7b085741c4df9485c9b012f818924aa5cceea2b0ab15df04552f3"
+    }
+  ],
+  "scope": "应用层设计、有限模型、独立读者判断任务及相关逐层导航；没有平台、声音、真实存储网络或真人验证。",
+  "record_note": "所附报告为对实际独立审查的发表记录归整；不新增审查结论。技术与读者审读由不同的独立审查者承担。",
+  "source_review_fingerprints": {
+    "technical_report_sha256": "738951f8193692cd215772fb3582e2a1aefdcc1d4404f151f1ec8a65e606f88b",
+    "reader_report_sha256": "88c9662b232cf874100ebf371eecccd44d7845ffb04fef6247b2c60e4e8a35c6",
+    "reader_binding_sha256": "6d29e67b385387b9c3a0f856befb6303b2245a053df92df7c2a64b70eb78d32d"
+  },
+  "reader_binding": {
+    "first_reviewed_sha256": "a330337322295b1a732a617e25238b6950fb113e3861e6a9f80c0c300e822429",
+    "final_reviewed_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+    "difference": "仅六个复现链接改址与末尾返回链接；独立读者再次通读最终稿并逐一核对。"
+  },
+  "nonblocking_finding": "停止抑制中的新相关事件可进一步明确为新的语义状态变化。本次未改正文，建议非阻断。"
+}

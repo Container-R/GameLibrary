@@ -1,0 +1,1166 @@
+{
+  "model_only": true,
+  "completion_callbacks": "synthetic test driver input; no audio or UIA acknowledgements",
+  "environment": {
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "baseline_input": [
+    "focus-A",
+    "focus-B",
+    "focus-C",
+    "r1-failed",
+    "countdown-8",
+    "countdown-7",
+    "countdown-6"
+  ],
+  "fifo_retains_obsolete_focus": true,
+  "latest_only_loses_operation_result": true,
+  "checks": "assertions passed for this finite trace only",
+  "submitted": [
+    {
+      "kind": "focus",
+      "identity": "p1/focus/1",
+      "page": "p1",
+      "text": "A",
+      "token": 1,
+      "session": null
+    },
+    {
+      "kind": "focus",
+      "identity": "p1/focus/2",
+      "page": "p1",
+      "text": "B",
+      "token": 2,
+      "session": null
+    },
+    {
+      "kind": "focus",
+      "identity": "p1/focus/3",
+      "page": "p1",
+      "text": "C",
+      "token": 3,
+      "session": null
+    },
+    {
+      "kind": "result",
+      "identity": "r1",
+      "page": "p1",
+      "text": "字幕设置保存失败",
+      "token": 4,
+      "session": null
+    },
+    {
+      "kind": "countdown",
+      "identity": "p1/match1/6",
+      "page": "p1",
+      "text": "剩余6秒",
+      "token": 5,
+      "session": "match1"
+    },
+    {
+      "kind": "focus",
+      "identity": "p2/focus/1",
+      "page": "p2",
+      "text": "C",
+      "token": 6,
+      "session": null
+    },
+    {
+      "kind": "result",
+      "identity": "r2",
+      "page": "p1",
+      "text": "之前的画质设置保存失败",
+      "token": 7,
+      "session": null
+    },
+    {
+      "kind": "result",
+      "identity": "r3",
+      "page": "p2",
+      "text": "字幕设置保存失败",
+      "token": 8,
+      "session": null
+    }
+  ],
+  "retained_operation_history": {
+    "r1": {
+      "page": "p1",
+      "target": "字幕设置",
+      "result": "failed"
+    },
+    "r2": {
+      "page": "p1",
+      "target": "画质设置",
+      "result": "failed"
+    },
+    "r3": {
+      "page": "p2",
+      "target": "字幕设置",
+      "result": "failed"
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "input": [
+        "open",
+        "p1",
+        "match1",
+        1
+      ],
+      "actions": [],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 2,
+      "input": [
+        "focus",
+        "p1",
+        1,
+        "A"
+      ],
+      "actions": [
+        "request:p1/focus/1:token1"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/1",
+        "page": "p1",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 3,
+      "input": [
+        "focus",
+        "p1",
+        2,
+        "B"
+      ],
+      "actions": [
+        "cancel_token:1",
+        "request:p1/focus/2:token2"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/2",
+        "page": "p1",
+        "text": "B",
+        "token": 2,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 4,
+      "input": [
+        "focus",
+        "p1",
+        3,
+        "C"
+      ],
+      "actions": [
+        "cancel_token:2",
+        "request:p1/focus/3:token3"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 5,
+      "input": [
+        "begin",
+        "r1",
+        "字幕设置"
+      ],
+      "actions": [],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 6,
+      "input": [
+        "begin",
+        "r2",
+        "画质设置"
+      ],
+      "actions": [],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 7,
+      "input": [
+        "countdown",
+        "p1",
+        "match1",
+        1,
+        8
+      ],
+      "actions": [
+        "replace_pending_countdown:8"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p1/match1/8"
+    },
+    {
+      "step": 8,
+      "input": [
+        "failure",
+        "r1"
+      ],
+      "actions": [],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [
+        "r1"
+      ],
+      "pending_countdown": "p1/match1/8"
+    },
+    {
+      "step": 9,
+      "input": [
+        "countdown",
+        "p1",
+        "match1",
+        2,
+        7
+      ],
+      "actions": [
+        "replace_pending_countdown:7"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p1/focus/3",
+        "page": "p1",
+        "text": "C",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [
+        "r1"
+      ],
+      "pending_countdown": "p1/match1/7"
+    },
+    {
+      "step": 10,
+      "input": [
+        "complete",
+        3
+      ],
+      "actions": [
+        "synthetic_complete:p1/focus/3",
+        "request:r1:token4"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "result",
+        "identity": "r1",
+        "page": "p1",
+        "text": "字幕设置保存失败",
+        "token": 4,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p1/match1/7"
+    },
+    {
+      "step": 11,
+      "input": [
+        "countdown",
+        "p1",
+        "match1",
+        3,
+        6
+      ],
+      "actions": [
+        "replace_pending_countdown:6"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "result",
+        "identity": "r1",
+        "page": "p1",
+        "text": "字幕设置保存失败",
+        "token": 4,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p1/match1/6"
+    },
+    {
+      "step": 12,
+      "input": [
+        "complete",
+        4
+      ],
+      "actions": [
+        "synthetic_complete:r1",
+        "request:p1/match1/6:token5"
+      ],
+      "page": "p1",
+      "current_session": "match1",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "countdown",
+        "identity": "p1/match1/6",
+        "page": "p1",
+        "text": "剩余6秒",
+        "token": 5,
+        "session": "match1"
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 13,
+      "input": [
+        "close",
+        "p1"
+      ],
+      "actions": [
+        "cancel_token:5"
+      ],
+      "page": null,
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 14,
+      "input": [
+        "open",
+        "p2"
+      ],
+      "actions": [],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 15,
+      "input": [
+        "focus",
+        "p2",
+        1,
+        "C"
+      ],
+      "actions": [
+        "request:p2/focus/1:token6"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 16,
+      "input": [
+        "complete",
+        5
+      ],
+      "actions": [
+        "ignore_stale_completion:5"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 17,
+      "input": [
+        "focus",
+        "p1",
+        4,
+        "obsolete-C"
+      ],
+      "actions": [
+        "ignore_stale_focus"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 18,
+      "input": [
+        "failure",
+        "r1"
+      ],
+      "actions": [
+        "ignore_duplicate_result:r1"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 19,
+      "input": [
+        "failure",
+        "r2"
+      ],
+      "actions": [],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [
+        "r2"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 20,
+      "input": [
+        "begin",
+        "r3",
+        "字幕设置"
+      ],
+      "actions": [],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [
+        "r2"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 21,
+      "input": [
+        "failure",
+        "r3"
+      ],
+      "actions": [],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p2/focus/1",
+        "page": "p2",
+        "text": "C",
+        "token": 6,
+        "session": null
+      },
+      "pending_results": [
+        "r2",
+        "r3"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 22,
+      "input": [
+        "complete",
+        6
+      ],
+      "actions": [
+        "synthetic_complete:p2/focus/1",
+        "request:r2:token7"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "result",
+        "identity": "r2",
+        "page": "p1",
+        "text": "之前的画质设置保存失败",
+        "token": 7,
+        "session": null
+      },
+      "pending_results": [
+        "r3"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 23,
+      "input": [
+        "complete",
+        7
+      ],
+      "actions": [
+        "synthetic_complete:r2",
+        "request:r3:token8"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "result",
+        "identity": "r3",
+        "page": "p2",
+        "text": "字幕设置保存失败",
+        "token": 8,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 24,
+      "input": [
+        "complete",
+        8
+      ],
+      "actions": [
+        "synthetic_complete:r3"
+      ],
+      "page": "p2",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    }
+  ],
+  "interrupted_result_trace": [
+    {
+      "step": 1,
+      "input": [
+        "open",
+        "p3"
+      ],
+      "actions": [],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 2,
+      "input": [
+        "focus",
+        "p3",
+        1,
+        "A"
+      ],
+      "actions": [
+        "request:p3/focus/1:token1"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p3/focus/1",
+        "page": "p3",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 3,
+      "input": [
+        "begin",
+        "r4",
+        "字幕设置"
+      ],
+      "actions": [],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p3/focus/1",
+        "page": "p3",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 4,
+      "input": [
+        "failure",
+        "r4"
+      ],
+      "actions": [],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p3/focus/1",
+        "page": "p3",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [
+        "r4"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 5,
+      "input": [
+        "complete",
+        1
+      ],
+      "actions": [
+        "synthetic_complete:p3/focus/1",
+        "request:r4:token2"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "result",
+        "identity": "r4",
+        "page": "p3",
+        "text": "字幕设置保存失败",
+        "token": 2,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 6,
+      "input": [
+        "focus",
+        "p3",
+        2,
+        "B"
+      ],
+      "actions": [
+        "cancel_token:2",
+        "request:p3/focus/2:token3"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p3/focus/2",
+        "page": "p3",
+        "text": "B",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [
+        "r4"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 7,
+      "input": [
+        "complete",
+        2
+      ],
+      "actions": [
+        "ignore_stale_completion:2"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "focus",
+        "identity": "p3/focus/2",
+        "page": "p3",
+        "text": "B",
+        "token": 3,
+        "session": null
+      },
+      "pending_results": [
+        "r4"
+      ],
+      "pending_countdown": null
+    },
+    {
+      "step": 8,
+      "input": [
+        "complete",
+        3
+      ],
+      "actions": [
+        "synthetic_complete:p3/focus/2",
+        "request:r4:token4"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": {
+        "kind": "result",
+        "identity": "r4",
+        "page": "p3",
+        "text": "字幕设置保存失败",
+        "token": 4,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 9,
+      "input": [
+        "complete",
+        4
+      ],
+      "actions": [
+        "synthetic_complete:r4"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 10,
+      "input": [
+        "failure",
+        "r4"
+      ],
+      "actions": [
+        "ignore_duplicate_result:r4"
+      ],
+      "page": "p3",
+      "current_session": null,
+      "session_binding_revision": 0,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    }
+  ],
+  "interrupted_result_request_count": 2,
+  "session_switch_trace": [
+    {
+      "step": 1,
+      "input": [
+        "open",
+        "p4",
+        "old",
+        1
+      ],
+      "actions": [],
+      "page": "p4",
+      "current_session": "old",
+      "session_binding_revision": 1,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 2,
+      "input": [
+        "focus",
+        "p4",
+        1,
+        "A"
+      ],
+      "actions": [
+        "request:p4/focus/1:token1"
+      ],
+      "page": "p4",
+      "current_session": "old",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 3,
+      "input": [
+        "countdown",
+        "p4",
+        "old",
+        1,
+        8
+      ],
+      "actions": [
+        "replace_pending_countdown:8"
+      ],
+      "page": "p4",
+      "current_session": "old",
+      "session_binding_revision": 1,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p4/old/8"
+    },
+    {
+      "step": 4,
+      "input": [
+        "session",
+        "p4",
+        2,
+        "new"
+      ],
+      "actions": [
+        "invalidate_old_session_countdown"
+      ],
+      "page": "p4",
+      "current_session": "new",
+      "session_binding_revision": 2,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 5,
+      "input": [
+        "countdown",
+        "p4",
+        "new",
+        1,
+        20
+      ],
+      "actions": [
+        "replace_pending_countdown:20"
+      ],
+      "page": "p4",
+      "current_session": "new",
+      "session_binding_revision": 2,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p4/new/20"
+    },
+    {
+      "step": 6,
+      "input": [
+        "countdown",
+        "p4",
+        "old",
+        2,
+        7
+      ],
+      "actions": [
+        "ignore_stale_countdown"
+      ],
+      "page": "p4",
+      "current_session": "new",
+      "session_binding_revision": 2,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p4/new/20"
+    },
+    {
+      "step": 7,
+      "input": [
+        "session",
+        "p4",
+        1,
+        "old"
+      ],
+      "actions": [
+        "ignore_stale_session_binding"
+      ],
+      "page": "p4",
+      "current_session": "new",
+      "session_binding_revision": 2,
+      "active": {
+        "kind": "focus",
+        "identity": "p4/focus/1",
+        "page": "p4",
+        "text": "A",
+        "token": 1,
+        "session": null
+      },
+      "pending_results": [],
+      "pending_countdown": "p4/new/20"
+    },
+    {
+      "step": 8,
+      "input": [
+        "complete",
+        1
+      ],
+      "actions": [
+        "synthetic_complete:p4/focus/1",
+        "request:p4/new/20:token2"
+      ],
+      "page": "p4",
+      "current_session": "new",
+      "session_binding_revision": 2,
+      "active": {
+        "kind": "countdown",
+        "identity": "p4/new/20",
+        "page": "p4",
+        "text": "剩余20秒",
+        "token": 2,
+        "session": "new"
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 9,
+      "input": [
+        "session",
+        "p4",
+        3,
+        "newer"
+      ],
+      "actions": [
+        "cancel_token:2",
+        "invalidate_old_session_countdown"
+      ],
+      "page": "p4",
+      "current_session": "newer",
+      "session_binding_revision": 3,
+      "active": null,
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 10,
+      "input": [
+        "countdown",
+        "p4",
+        "newer",
+        1,
+        30
+      ],
+      "actions": [
+        "replace_pending_countdown:30",
+        "request:p4/newer/30:token3"
+      ],
+      "page": "p4",
+      "current_session": "newer",
+      "session_binding_revision": 3,
+      "active": {
+        "kind": "countdown",
+        "identity": "p4/newer/30",
+        "page": "p4",
+        "text": "剩余30秒",
+        "token": 3,
+        "session": "newer"
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    },
+    {
+      "step": 11,
+      "input": [
+        "complete",
+        2
+      ],
+      "actions": [
+        "ignore_stale_completion:2"
+      ],
+      "page": "p4",
+      "current_session": "newer",
+      "session_binding_revision": 3,
+      "active": {
+        "kind": "countdown",
+        "identity": "p4/newer/30",
+        "page": "p4",
+        "text": "剩余30秒",
+        "token": 3,
+        "session": "newer"
+      },
+      "pending_results": [],
+      "pending_countdown": null
+    }
+  ],
+  "session_switch_submitted": [
+    {
+      "kind": "focus",
+      "identity": "p4/focus/1",
+      "page": "p4",
+      "text": "A",
+      "token": 1,
+      "session": null
+    },
+    {
+      "kind": "countdown",
+      "identity": "p4/new/20",
+      "page": "p4",
+      "text": "剩余20秒",
+      "token": 2,
+      "session": "new"
+    },
+    {
+      "kind": "countdown",
+      "identity": "p4/newer/30",
+      "page": "p4",
+      "text": "剩余30秒",
+      "token": 3,
+      "session": "newer"
+    }
+  ]
+}

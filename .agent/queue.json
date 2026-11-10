@@ -10736,6 +10736,30 @@
         "管理档案/审稿/SOL-SFX-008/review.json"
       ],
       "publication_commit": "378a37e76e32495fbb095626a19638a012a0f844"
+    },
+    {
+      "id": "TASK-2026-0313",
+      "question": "菜单快速导航、保存回执与匹配倒计时同时争用朗读时，怎样淘汰过期信息并保留操作结果？",
+      "reader": "熟悉焦点、异步回调和基本队列的游戏UI程序、无障碍设计与QA",
+      "scope": "单用户菜单、完整替换设置保存与普通大厅状态；应用层设计及有限模型，不认证实际听觉体验。",
+      "expected_outcome": "按页面、意图、资源和会话区分替代关系，在提交前重算摘要和时间，并识别外部读屏能力边界。",
+      "status": "ready",
+      "phase": "ready",
+      "publication_status": "unpublished",
+      "owner": "本题研究编辑",
+      "article_id": "SOL-A11Y-005",
+      "article_sha256": "c7f8d11266f8f674b58fdb4cb8b110bc5c067cc556bc425548cce7c4873f31d0",
+      "artifact_paths": [
+        "GameLibrary/本地化与无障碍/无障碍设计/屏幕朗读/菜单朗读的过期淘汰与操作结果保留.md"
+      ],
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0313/sources.json",
+        "管理档案/审稿/SOL-A11Y-005/review.json",
+        "管理档案/实验/菜单朗读仲裁/README.md"
+      ],
+      "next_action": "核对最终审稿绑定与最新基线，按独立增量发表范围提交并读回。",
+      "blocker": null,
+      "updated_at": "2026-11-10T05:17:04.709163+00:00"
     }
   ],
   "execution_policy": {
