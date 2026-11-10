@@ -1147,6 +1147,24 @@
       "source_record": "管理档案/研究/TASK-2026-0313/sources.json",
       "materials_record": "管理档案/实验/菜单朗读仲裁/README.md",
       "review": "管理档案/审稿/SOL-A11Y-005/review.json"
+    },
+    {
+      "internal_id": "SOL-DATA-003",
+      "reader_title": "实验开始场数下降时的遥测对账",
+      "canonical_reader_path": "GameLibrary/数据分析/实验分析/实验数据质量/实验开始场数下降时的遥测对账.md",
+      "reader_body_status": "published",
+      "publication_status": "published",
+      "reader_sha256": "2ba35d0a8cf9365d473148ff4164ebe5638633bf93f23e8bcff63d98585a24f7",
+      "source_record": "管理档案/实验/实验开始场数遥测对账/sources.json",
+      "materials_record": "管理档案/实验/实验开始场数遥测对账/README.md",
+      "review": "管理档案/审稿/实验开始场数遥测对账/review.json",
+      "type": "engineering-method",
+      "classification": {
+        "discipline": "数据分析",
+        "direction": "实验分析",
+        "topic": "实验数据质量"
+      },
+      "scope": "以原分配台账、权威开始、客户端收件、解析和最终查询逐ID核对开始场数变化；教学模型不识别未观测的真实开始，也不构成生产验证。"
     }
   ]
 }

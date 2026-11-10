@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "author": "Aleksander Fabijan 等",
+      "title": "Diagnosing Sample Ratio Mismatch in Online Controlled Experiments: A Taxonomy and Rules of Thumb for Practitioners",
+      "url": "https://exp-platform.com/Documents/2019_KDDFabijanGupchupFuptaOmhoverVermeerDmitriev.pdf",
+      "location": "§5.2–5.4；作者版物理页5–7",
+      "supports": "实验标签与执行不一致、批量上传和退出时机影响资格日志、保留加工与触发前基线。",
+      "conditions": "游戏中的逐ID对账为本文迁移设计，不是该论文的游戏生产实现。",
+      "article_sections": [
+        "开篇",
+        "处理后的资格为什么会改变问题",
+        "能恢复什么，就恢复什么"
+      ],
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": 2,
+      "author": "Jayant Gupchup 等",
+      "title": "Trustworthy Experimentation Under Telemetry Loss",
+      "url": "https://arxiv.org/html/1903.12470",
+      "location": "§4.1–4.4，Algorithms 3–4",
+      "supports": "服务器锚点只能覆盖到达服务器的尝试；序号缺口有端点、短序列与重置边界。",
+      "conditions": "不移用平台阈值、丢失容忍率或缺失校正模型；教学代码不声称复现论文生产实现。",
+      "article_sections": [
+        "先把“开始”落实到一个可核对的动作",
+        "序号补充线索，但没有证明整段完整",
+        "无法识别时，保留未知比补零更有用"
+      ],
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": 3,
+      "author": "Microsoft Experimentation Platform",
+      "title": "Data Quality: Fundamental Building Blocks for Trustworthy A/B testing Analysis",
+      "url": "https://www.microsoft.com/en-us/research/articles/data-quality-fundamental-building-blocks-for-trustworthy-a-b-testing-analysis/",
+      "location": "What are the critical data quality requirements for A/B testing?；How can we continuously monitor data quality?",
+      "supports": "账号与会话键、标签、时间戳、连接率、唯一性、延迟及分段监控。",
+      "conditions": "发生时间与收件时间不能互换；公开材料不证明具体游戏权威表完整。",
+      "article_sections": [
+        "固定两个时间范围，保存旧快照",
+        "四个计数层次，分别保留",
+        "让对账成本与风险相称"
+      ],
+      "accessed": "2026-11-10"
+    }
+  ],
+  "experiment": "原创确定性教学模型；源码与数据摘要见 run-record.json"
+}

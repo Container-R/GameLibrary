@@ -1,0 +1,32 @@
+{
+  "01": "T has fewer server-accepted starts. No causal mechanism asserted.",
+  "02": "T1-2 permanently lost before raw receipt.",
+  "03": "T2 excluded by post-treatment prompt qualification.",
+  "04": "T1-2 is delayed until 150; future arrival is not supplied to analyzer at snapshot 100.",
+  "05": "Same source history as 04, later snapshot.",
+  "06": "Exact duplicate transmission.",
+  "07": "T2-3 incorrectly tagged C; actual assignment remains T.",
+  "08": "All T2 start telemetry lost; server anchors survive.",
+  "09": {
+    "additional_unseen": [],
+    "client_clicks": 12
+  },
+  "10": {
+    "additional_unseen": [
+      "T2 click rejected before server, whole epoch absent",
+      "T1 click rejected before server, unseen tail",
+      "T1 another unseen tail click"
+    ],
+    "client_clicks": 15
+  },
+  "11": {
+    "server_accepts": 12,
+    "unseen_authority_records": []
+  },
+  "12": {
+    "server_accepts": 15,
+    "unseen_authority_records": [
+      "three T2 starts absent from authority and client pipeline"
+    ]
+  }
+}

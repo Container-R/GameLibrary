@@ -1,0 +1,183 @@
+{
+  "accepted": [
+    {
+      "id": "C1-1",
+      "player": "C1",
+      "start_at": 10
+    },
+    {
+      "id": "C1-2",
+      "player": "C1",
+      "start_at": 20
+    },
+    {
+      "id": "C1-3",
+      "player": "C1",
+      "start_at": 30
+    },
+    {
+      "id": "C2-1",
+      "player": "C2",
+      "start_at": 10
+    },
+    {
+      "id": "C2-2",
+      "player": "C2",
+      "start_at": 20
+    },
+    {
+      "id": "C2-3",
+      "player": "C2",
+      "start_at": 30
+    },
+    {
+      "id": "T1-1",
+      "player": "T1",
+      "start_at": 10
+    },
+    {
+      "id": "T1-2",
+      "player": "T1",
+      "start_at": 20
+    },
+    {
+      "id": "T1-3",
+      "player": "T1",
+      "start_at": 30
+    },
+    {
+      "id": "T2-1",
+      "player": "T2",
+      "start_at": 10
+    },
+    {
+      "id": "T2-2",
+      "player": "T2",
+      "start_at": 20
+    },
+    {
+      "id": "T2-3",
+      "player": "T2",
+      "start_at": 30
+    }
+  ],
+  "assignment": [
+    {
+      "arm": "C",
+      "assigned_at": 0,
+      "player": "C1"
+    },
+    {
+      "arm": "C",
+      "assigned_at": 0,
+      "player": "C2"
+    },
+    {
+      "arm": "T",
+      "assigned_at": 0,
+      "player": "T1"
+    },
+    {
+      "arm": "T",
+      "assigned_at": 0,
+      "player": "T2"
+    }
+  ],
+  "contract": {
+    "authority_complete": true,
+    "snapshot": 100,
+    "start_window": [
+      0,
+      60
+    ],
+    "target_start": "server_accept"
+  },
+  "observation_stream_id": "stream-08",
+  "query": {
+    "mode": "all_assigned",
+    "qualifying_players": []
+  },
+  "received": [
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C1-1",
+      "player": "C1",
+      "received_at": 11,
+      "seq": 1,
+      "start_at": 10
+    },
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C1-2",
+      "player": "C1",
+      "received_at": 21,
+      "seq": 2,
+      "start_at": 20
+    },
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C1-3",
+      "player": "C1",
+      "received_at": 31,
+      "seq": 3,
+      "start_at": 30
+    },
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C2-1",
+      "player": "C2",
+      "received_at": 11,
+      "seq": 1,
+      "start_at": 10
+    },
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C2-2",
+      "player": "C2",
+      "received_at": 21,
+      "seq": 2,
+      "start_at": 20
+    },
+    {
+      "arm": "C",
+      "epoch": "install1",
+      "id": "C2-3",
+      "player": "C2",
+      "received_at": 31,
+      "seq": 3,
+      "start_at": 30
+    },
+    {
+      "arm": "T",
+      "epoch": "install1",
+      "id": "T1-1",
+      "player": "T1",
+      "received_at": 11,
+      "seq": 1,
+      "start_at": 10
+    },
+    {
+      "arm": "T",
+      "epoch": "install1",
+      "id": "T1-2",
+      "player": "T1",
+      "received_at": 21,
+      "seq": 2,
+      "start_at": 20
+    },
+    {
+      "arm": "T",
+      "epoch": "install1",
+      "id": "T1-3",
+      "player": "T1",
+      "received_at": 31,
+      "seq": 3,
+      "start_at": 30
+    }
+  ]
+}

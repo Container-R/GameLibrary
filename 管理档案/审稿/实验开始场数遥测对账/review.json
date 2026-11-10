@@ -1,0 +1,69 @@
+{
+  "article_path": "GameLibrary/数据分析/实验分析/实验数据质量/实验开始场数下降时的遥测对账.md",
+  "article_sha256": "2ba35d0a8cf9365d473148ff4164ebe5638633bf93f23e8bcff63d98585a24f7",
+  "author": "实验开始场数遥测对账研究编辑",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "technical-model-reviewer",
+      "mode": "independent-agent",
+      "review_type": "独立模型审查",
+      "verdict": "pass",
+      "report": "管理档案/审稿/实验开始场数遥测对账/technical.md",
+      "report_sha256": "f07c1273875bb0eaf0f2681c5ecd415c338ce0d7237f4109cb52a38f5d96172a"
+    },
+    {
+      "role": "reader",
+      "reviewer": "reader-model-reviewer",
+      "mode": "independent-agent",
+      "review_type": "独立模型审查",
+      "verdict": "pass",
+      "report": "管理档案/审稿/实验开始场数遥测对账/reader.md",
+      "report_sha256": "623b2d5084c9f05af606f643982d07103cd3fd21b347ce9b188a072dbb72319c"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "navigation-model-reviewer",
+      "mode": "independent-agent",
+      "review_type": "独立模型审查",
+      "verdict": "pass",
+      "report": "管理档案/审稿/实验开始场数遥测对账/navigation.md",
+      "report_sha256": "94ecd0f9dc74eaed9058a4905fd424fdda1113b7575ca449b17d4d2a8404733f"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/sources.json",
+      "sha256": "4d6808e5285d34ff426aaea5982d55592b8888632fd040ad6f59857c6093f536"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/ENGINEERING.md",
+      "sha256": "6fb2217d83b2542cbc4b433aa03b62f0bf4d641aa55b8ef9010bf915a3303d7a"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/run-record.json",
+      "sha256": "f4e536f567ce0d0fc8eb496e8b98f5347129014ef49fe106afff977b66b2a311"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/README.md",
+      "sha256": "a4fd93ca5fb3c7b8c88a9c748c9d6d43c4d6d45200db47ebd5a1bf51131920a8"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/analyze.py",
+      "sha256": "5cb69aa54fa8a774f87c88ba5a208075a2fe20d1d89f25a395db3c8d5ea6018e"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/make_fixtures.py",
+      "sha256": "cd0b325e4e8a37beb91447a622d267682bc52ae07e0f94b74ffd65c4339b0f54"
+    },
+    {
+      "path": "管理档案/实验/实验开始场数遥测对账/test_experiment.py",
+      "sha256": "c9eca14d8583747be3a2f17ff3648440ef616c610937c06e407fb57db55560df"
+    }
+  ],
+  "status": "reviewed",
+  "article_registration": "registered",
+  "stable_article_id": "SOL-DATA-003",
+  "scope": "三项独立模型审查绑定本轮最终落位全文；不是真人试用或生产认证。",
+  "catalog_path": "管理档案/图书目录.json"
+}

@@ -1,0 +1,73 @@
+{
+  "anchor_not_received_at_snapshot": [],
+  "duplicate_copies_removed": [],
+  "groups": {
+    "C": {
+      "assigned": 2,
+      "authority_observed": 6,
+      "final_members": 2,
+      "final_observed": 6,
+      "target_N": null
+    },
+    "T": {
+      "assigned": 2,
+      "authority_observed": 6,
+      "final_members": 2,
+      "final_observed": 6,
+      "target_N": null
+    }
+  },
+  "members_excluded": [],
+  "parsed_not_final": [],
+  "parsed_sequence_gaps": {
+    "C1/install1": [],
+    "C2/install1": [],
+    "T1/install1": [],
+    "T2/install1": []
+  },
+  "players": [
+    {
+      "arm": "C",
+      "authority_observed": 3,
+      "final_observed": 3,
+      "in_final_members": true,
+      "parsed_observed": 3,
+      "player": "C1",
+      "target_N": null,
+      "target_status": "unknown"
+    },
+    {
+      "arm": "C",
+      "authority_observed": 3,
+      "final_observed": 3,
+      "in_final_members": true,
+      "parsed_observed": 3,
+      "player": "C2",
+      "target_N": null,
+      "target_status": "unknown"
+    },
+    {
+      "arm": "T",
+      "authority_observed": 3,
+      "final_observed": 3,
+      "in_final_members": true,
+      "parsed_observed": 3,
+      "player": "T1",
+      "target_N": null,
+      "target_status": "unknown"
+    },
+    {
+      "arm": "T",
+      "authority_observed": 3,
+      "final_observed": 3,
+      "in_final_members": true,
+      "parsed_observed": 3,
+      "player": "T2",
+      "target_N": null,
+      "target_status": "unknown"
+    }
+  ],
+  "received_not_parsed": [],
+  "sequence_coverage": "Stage: parsed after validation and deduplication. Gaps may arise in transport OR rejection during parsing; inspect received_not_parsed and raw receipt IDs. Only internal endpoints; no assertion about absent epochs or tails.",
+  "target_semantics": "server_accept"
+}

@@ -1,0 +1,541 @@
+{
+  "09": {
+    "clicks": [
+      {
+        "accept_record": {
+          "id": "C1-1",
+          "player": "C1",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-C1-1",
+        "click_seq": 1,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-1",
+          "player": "C1",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C1-2",
+          "player": "C1",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-C1-2",
+        "click_seq": 2,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-2",
+          "player": "C1",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C1-3",
+          "player": "C1",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-C1-3",
+        "click_seq": 3,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-3",
+          "player": "C1",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-1",
+          "player": "C2",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-C2-1",
+        "click_seq": 1,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-1",
+          "player": "C2",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-2",
+          "player": "C2",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-C2-2",
+        "click_seq": 2,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-2",
+          "player": "C2",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-3",
+          "player": "C2",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-C2-3",
+        "click_seq": 3,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-3",
+          "player": "C2",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-1",
+          "player": "T1",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-T1-1",
+        "click_seq": 1,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-1",
+          "player": "T1",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-2",
+          "player": "T1",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-T1-2",
+        "click_seq": 2,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-2",
+          "player": "T1",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-3",
+          "player": "T1",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-T1-3",
+        "click_seq": 3,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-3",
+          "player": "T1",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-1",
+          "player": "T2",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-T2-1",
+        "click_seq": 1,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-1",
+          "player": "T2",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-2",
+          "player": "T2",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-T2-2",
+        "click_seq": 2,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-2",
+          "player": "T2",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-3",
+          "player": "T2",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-T2-3",
+        "click_seq": 3,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-3",
+          "player": "T2",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      }
+    ]
+  },
+  "10": {
+    "clicks": [
+      {
+        "accept_record": {
+          "id": "C1-1",
+          "player": "C1",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-C1-1",
+        "click_seq": 1,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-1",
+          "player": "C1",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C1-2",
+          "player": "C1",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-C1-2",
+        "click_seq": 2,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-2",
+          "player": "C1",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C1-3",
+          "player": "C1",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-C1-3",
+        "click_seq": 3,
+        "player": "C1",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C1-3",
+          "player": "C1",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-1",
+          "player": "C2",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-C2-1",
+        "click_seq": 1,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-1",
+          "player": "C2",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-2",
+          "player": "C2",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-C2-2",
+        "click_seq": 2,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-2",
+          "player": "C2",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "C2-3",
+          "player": "C2",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-C2-3",
+        "click_seq": 3,
+        "player": "C2",
+        "start_receipt": {
+          "arm": "C",
+          "epoch": "install1",
+          "id": "C2-3",
+          "player": "C2",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-1",
+          "player": "T1",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-T1-1",
+        "click_seq": 1,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-1",
+          "player": "T1",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-2",
+          "player": "T1",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-T1-2",
+        "click_seq": 2,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-2",
+          "player": "T1",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T1-3",
+          "player": "T1",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-T1-3",
+        "click_seq": 3,
+        "player": "T1",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T1-3",
+          "player": "T1",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-1",
+          "player": "T2",
+          "start_at": 10
+        },
+        "click_at": 9,
+        "click_epoch": "original",
+        "click_id": "click-T2-1",
+        "click_seq": 1,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-1",
+          "player": "T2",
+          "received_at": 11,
+          "seq": 1,
+          "start_at": 10
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-2",
+          "player": "T2",
+          "start_at": 20
+        },
+        "click_at": 19,
+        "click_epoch": "original",
+        "click_id": "click-T2-2",
+        "click_seq": 2,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-2",
+          "player": "T2",
+          "received_at": 21,
+          "seq": 2,
+          "start_at": 20
+        }
+      },
+      {
+        "accept_record": {
+          "id": "T2-3",
+          "player": "T2",
+          "start_at": 30
+        },
+        "click_at": 29,
+        "click_epoch": "original",
+        "click_id": "click-T2-3",
+        "click_seq": 3,
+        "player": "T2",
+        "start_receipt": {
+          "arm": "T",
+          "epoch": "install1",
+          "id": "T2-3",
+          "player": "T2",
+          "received_at": 31,
+          "seq": 3,
+          "start_at": 30
+        }
+      },
+      {
+        "accept_record": null,
+        "click_at": 40,
+        "click_epoch": "unseen-install",
+        "click_id": "unseen-0",
+        "click_seq": 1,
+        "player": "T2",
+        "start_receipt": null
+      },
+      {
+        "accept_record": null,
+        "click_at": 41,
+        "click_epoch": "original",
+        "click_id": "unseen-1",
+        "click_seq": 4,
+        "player": "T1",
+        "start_receipt": null
+      },
+      {
+        "accept_record": null,
+        "click_at": 42,
+        "click_epoch": "original",
+        "click_id": "unseen-2",
+        "click_seq": 5,
+        "player": "T1",
+        "start_receipt": null
+      }
+    ]
+  }
+}
