@@ -1,0 +1,124 @@
+{
+  "checked_on": "2026-11-11",
+  "basis": "独立技术审稿者实际读取的一手页面与固定源码；编辑集成人员据完整报告归档。",
+  "claims": [
+    {
+      "claim": "远端状态按源时间延后重建",
+      "source": {
+        "author": "Gabriel Gambetta",
+        "title": "Entity Interpolation",
+        "version": "日期未明",
+        "url": "https://www.gabrielgambetta.com/entity-interpolation.html"
+      },
+      "locator": "Entity interpolation",
+      "observed_content": "延后展示已有状态；不是预测未来",
+      "conditions": "需有可用历史样本；不包含本文校时算法",
+      "article_section": "快照篇：两条到达路径；移动篇：模拟与画面"
+    },
+    {
+      "claim": "缓冲增加后继样本可用机会但有延迟代价",
+      "source": {
+        "author": "Glenn Fiedler",
+        "title": "Snapshot Interpolation",
+        "version": "2014-11-30",
+        "url": "https://gafferongames.com/post/snapshot_interpolation/"
+      },
+      "locator": "Jitter and Hitches / Linear Interpolation",
+      "observed_content": "到达抖动、缓冲和线性插值的范围",
+      "conditions": "未观看演示，不采用视觉结论或模拟参数为推荐配置",
+      "article_section": "快照篇：后一份还没到"
+    },
+    {
+      "claim": "四时间戳偏移与往返公式",
+      "source": {
+        "author": "D. Mills、J. Martin 等",
+        "title": "RFC 5905",
+        "version": "2010-06",
+        "url": "https://www.rfc-editor.org/rfc/rfc5905.html#section-8"
+      },
+      "locator": "§8，印刷29–30页",
+      "observed_content": "四时间戳交换和钟速差异限制",
+      "conditions": "本文非对称路径是纸面推导，不是NTP测量",
+      "article_section": "快照篇：时间戳齐全"
+    },
+    {
+      "claim": "通道内排序不等于应用Ready",
+      "source": {
+        "author": "ENet",
+        "title": "Design overview / enet.h / peer.c",
+        "version": "v1.3.18; 2662c0de09e36f2a2030ccc2c528a3e4c9e8138a",
+        "url": "https://github.com/lsalzman/enet/tree/2662c0de09e36f2a2030ccc2c528a3e4c9e8138a"
+      },
+      "locator": "docs/design.dox 39–83; include/enet/enet.h 242–252; peer.c 637–675、808–843",
+      "observed_content": "通道序号、ACK分支、连续序号与分片完整性控制交付队列",
+      "conditions": "没有实体Ready状态；未运行ENet；不是完整安全审计",
+      "article_section": "实体篇：通道顺序与有界流程"
+    },
+    {
+      "claim": "通道是分离的数据流",
+      "source": {
+        "author": "Godot Engine",
+        "title": "High-level multiplayer",
+        "version": "4.6",
+        "url": "https://docs.godotengine.org/en/4.6/tutorials/networking/high_level_multiplayer.html#channels"
+      },
+      "locator": "Channels与modified ENet说明",
+      "observed_content": "概念层流量分离及修改版ENet",
+      "conditions": "不能以上游源码证明Godot内部实现",
+      "article_section": "实体篇：一条通道的顺序"
+    },
+    {
+      "claim": "确认前缀后恢复服务器基线并重放后缀",
+      "source": {
+        "author": "Gabriel Gambetta",
+        "title": "Client-Side Prediction and Server Reconciliation",
+        "version": "日期未明",
+        "url": "https://www.gabrielgambetta.com/client-side-prediction-server-reconciliation.html"
+      },
+      "locator": "Server reconciliation / Odds and ends",
+      "observed_content": "输入编号、已处理前缀和剩余输入重放",
+      "conditions": "整数协议、拒绝及窗口政策为文章教学设计",
+      "article_section": "移动篇：确认与重放"
+    },
+    {
+      "claim": "部分回退实体有不同时间归属",
+      "source": {
+        "author": "Unity",
+        "title": "Prediction edge cases and known issues",
+        "version": "Netcode for Entities 1.4.1",
+        "url": "https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/prediction-details.html"
+      },
+      "locator": "Interactions between predicted ghosts using partial snapshots",
+      "observed_content": "回退与未回退实体时间差影响交互",
+      "conditions": "格子反例未运行，不是Unity碰撞实现",
+      "article_section": "移动篇：重放读取的世界"
+    },
+    {
+      "claim": "重模拟有CPU成本",
+      "source": {
+        "author": "Unity",
+        "title": "Introduction to prediction",
+        "version": "Netcode for Entities 1.4.1",
+        "url": "https://docs.unity3d.com/Packages/com.unity.netcode@1.4/manual/intro-to-prediction.html"
+      },
+      "locator": "CPU usage",
+      "observed_content": "重模拟步数增加计算工作",
+      "conditions": "没有通用窗口或性能实测",
+      "article_section": "移动篇：历史成本"
+    },
+    {
+      "claim": "anticipation不是完整回退重放循环",
+      "source": {
+        "author": "Unity",
+        "title": "Client anticipation",
+        "version": "Netcode for GameObjects 2.2.0",
+        "url": "https://mp-docs.dl.it.unity3d.com/netcode/2.2.0/advanced-topics/client-anticipation/"
+      },
+      "locator": "开篇功能范围与旧站提示",
+      "observed_content": "简化客户端预期功能的范围",
+      "conditions": "历史版本，不推断当前包能力",
+      "article_section": "移动篇：现有模型范围"
+    }
+  ],
+  "original_design": "实体有界流程与所有数字反例属于未运行的原创设计/纸面推导；独立审查不转写为网络或引擎实验。"
+}

@@ -1,0 +1,38 @@
+{
+  "article_path": "GameLibrary/网络与在线服务/实时同步/快照插值/快照样本时间与到达时间.md",
+  "article_sha256": "c963022312439de8c65a6bb7818721ca6456ddbbc50ebcd6fdf6caf3d29b1dce",
+  "author": "GameLibrary 网络专题模型作者（本轮编辑修订）",
+  "reviews": [
+    {
+      "role": "technical",
+      "reviewer": "独立模型技术审稿者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/network-classification-20261111/technical.md"
+    },
+    {
+      "role": "reader",
+      "reviewer": "独立模型读者审读者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/network-classification-20261111/reader.md"
+    },
+    {
+      "role": "navigation",
+      "reviewer": "独立模型读者审读者",
+      "mode": "independent-agent",
+      "verdict": "pass",
+      "report": "管理档案/审稿/network-classification-20261111/reader.md"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "管理档案/审稿/network-classification-20261111/sources.json",
+      "sha256": "a31a32573dfd98f3e6dafd9ae8fab5789376e36cf38623e76e0fa71f6aefcdb9"
+    },
+    {
+      "path": "管理档案/研究记录/network-classification-20261111.md",
+      "sha256": "d86ebd2f24599c58b6657eb4c86b37b981593e25cf40fcd5e74d1452cdc45c1a"
+    }
+  ]
+}

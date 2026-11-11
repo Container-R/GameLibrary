@@ -1,0 +1,20 @@
+{
+  "baseline": "2519774950c388d6a7100e3e6e6e38c7d14167f4",
+  "moves": [
+    {
+      "old": "管理档案/支持资料/快照样本时间与到达时间.md",
+      "new": "GameLibrary/网络与在线服务/实时同步/快照插值/快照样本时间与到达时间.md",
+      "old_blob_sha256": "087a6805e20cfcbd3a2c9ba699634926cfe8d01369f984550264349e56be83d7",
+      "new_sha256": "c963022312439de8c65a6bb7818721ca6456ddbbc50ebcd6fdf6caf3d29b1dce"
+    },
+    {
+      "old": "管理档案/研究记录/source-notes/reliable-channel-entity-readiness.md",
+      "new": "GameLibrary/网络与在线服务/实时同步/实体生命周期/可靠通道顺序与实体就绪.md",
+      "old_blob_sha256": "5fe53d0ecc881f7ea94c84e4c28ad7adf361af4c40c722670b9759a4cf4ec446",
+      "new_sha256": "855f10cfb097a6d862afb41458dcbdd4e60db39cc4635bece987f88d7cea77a3"
+    }
+  ],
+  "history_policy": "Existing JSON records retain their historical paths and hashes; this mapping plus fixed baseline identifies their original bytes. Historical Markdown review links are pinned to baseline. No old pass is transferred.",
+  "inbound_occurrences": 15,
+  "inbound_files": 9
+}

@@ -59,7 +59,6 @@
 - [PSO 预缓存首显验收：新增 pass 应对照什么，而不只等待什么](source-notes/pso-precache-first-use-acceptance.md)
 - [四元数关键姿势等价，不代表立方动画等价](source-notes/quaternion-sign-and-cubic-animation.md)
 - [实时特效美术岗位：来源记录](source-notes/real-time-vfx-artist-role.md)
-- [可靠通道的顺序边界：先发送创建，不等于依赖实体已经就绪](source-notes/reliable-channel-entity-readiness.md)
 - [Resource复制图：来源与证据范围](source-notes/resource-duplication-policy.md)
 - [释放与复用合同：先选择责任单位，再设计 adapter](source-notes/resource-release-and-reuse-routing.md)
 - [Rig 求值顺序与跨岗位交接：来源边界](source-notes/rig-evaluation-handoff.md)
