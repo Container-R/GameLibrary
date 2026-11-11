@@ -32,5 +32,12 @@
     "calculation": "A: (0.45-0.2)/(0.7-0.2)=0.5; B overall 45%=0.36, interval=(0.36-0.1)/(0.5-0.1)=0.65; interval-matched B=0.1+0.5*(0.5-0.1)=0.3.",
     "conditions": "Hypothetical adjacent nonzero intervals with corresponding semantics; no wrap/repeated-marker matching.",
     "interpretation": "Time correspondence does not constrain world-space contact. Semantic placement and actual assets require project checks."
+  },
+  "contact_phase_clarification": {
+    "date": "2026-11-11",
+    "basis": "Original finite counterexample using the article’s hypothetical marker times, plus explicit hypothetical contact annotations. Not an asset observation or engine result.",
+    "reasoning": "A at 0.45 s and B at 0.3 s have equal inter-marker progress. If A left-foot lift-off is 0.75 s and B left-foot lift-off is 0.25 s with right touchdown at 0.5 s, equal progress does not determine equal support state. Touchdown endpoints do not encode lift-off.",
+    "reader_method": "Compare left/right contact intervals or touchdown/lift-off events under the chosen time mapping; decide which state differences fit the intended blend before evaluating world-space contact.",
+    "source_recheck": "Epic UE 5.6 Sync Groups official page reread 2026-11-11; marker/common-name/fallback claims remain unchanged."
   }
 }

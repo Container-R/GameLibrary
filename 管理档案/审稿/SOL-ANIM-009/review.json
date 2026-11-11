@@ -1,17 +1,17 @@
 {
   "article": {
     "path": "GameLibrary/角色动画/角色移动/步态同步/循环步态的落脚标记与阶段同步.md",
-    "sha256": "e10eb0a4224349b61d828d5a914bb6e595cf32c09311a44f4e9acaa9ee233595",
-    "bytes": 4613
+    "sha256": "e3630b0852c81494e0aba8a86c4f46daa1cde34a01b56bcb5c8feb22d4dea22c",
+    "bytes": 5672
   },
-  "author": "动画分类编辑（模型）",
+  "author": "集成编辑（模型）",
   "publication_status": "published",
-  "baseline_commit": "f2902ea03eac93db9213bb31d3b48cf3d98a582f",
+  "baseline_commit": "27a22be4adcc54bbbc963e1079c0ab58f74933c1",
   "evidence": [
     {
       "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
-      "sha256": "581d8b169157b88e71da1a0e766c6338a0dc146a211605d2fa3e7ca46f276b7b",
-      "bytes": 2177
+      "sha256": "5933c84fc37468521ef9c6246f91bce1c1b3d7fa588721a764acf7b10a65860a",
+      "bytes": 3058
     },
     {
       "path": "管理档案/研究/animation-phase-classification-20261111/materials.json",
@@ -19,77 +19,78 @@
       "bytes": 2814
     }
   ],
-  "evidence_normalization": {
-    "reviewed_source_record": {
-      "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
-      "sha256": "7742ad3263dce23d4da3d4179f5c46ffe0aa4a7c41802efe1645cb07b1dd0bd8",
-      "bytes": 2210
-    },
-    "current_source_record": {
-      "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
-      "sha256": "581d8b169157b88e71da1a0e766c6338a0dc146a211605d2fa3e7ca46f276b7b",
-      "bytes": 2177
-    },
-    "change": "Removed access.reference only. Source facts, interpretation, scope and limitations unchanged. Original reviewed digest remains in technical report.",
-    "verification": "Author compared parsed JSON before and after; deletion is the sole difference."
-  },
   "reviews": {
     "technical": {
       "status": "pass",
       "reviewer": "独立技术审稿者（模型）",
-      "method": "Full article, independently opened UE 5.6 official source text, independent arithmetic checks.",
+      "method": "Full article, independently reopened official UE 5.6 documentation, exact rational arithmetic and independent contact-state counterexamples.",
       "report": {
-        "path": "管理档案/审稿/SOL-ANIM-009/technical.md",
-        "sha256": "9dd08d0f3031020c9b0c455f2983dbc5c368f94240b45d98b38ec3c63d75c439",
-        "bytes": 5142
+        "path": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-technical.md",
+        "sha256": "d52158691103ff6b2e0279b33e76411e7f4ad08fe45c15df464dd252788be4b1",
+        "bytes": 7312
       },
-      "scope": "Current article and recorded source scope, no native engine or visual-result acceptance."
+      "scope": "Bounded time correspondence and contact-state explanation, not an engine or visual-result acceptance."
     },
     "reader": {
       "status": "pass",
       "reviewer": "独立读者审稿者（模型）",
-      "method": "Full article and new representative reader task.",
+      "method": "Full revised article; new whole-interval contact-state task with independent times and blend requirements.",
       "report": {
-        "path": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
-        "sha256": "d187cab17f0282588b006c48a749dd709c3bd86b3ffcf56af27fa6a689ef30b2",
-        "bytes": 7993
+        "path": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-reader.md",
+        "sha256": "cffd64c0d0e53d27a6169ae5d007cbeaa4d73d87259ce4ebc343e75314cc8a46",
+        "bytes": 9992
       },
-      "scope": "Bounded explanation and asset checks; not a complete UE configuration or wraparound algorithm guide."
+      "scope": "Distinguishes event phase, support state and world contact under stated conditions."
     },
     "navigation": {
       "status": "pass",
       "reviewer": "独立读者审稿者（模型）",
-      "method": "Actual root-to-article browsing, five downward selections without search or backtracking.",
+      "method": "Initial root-to-article navigation without search, followed by same-route revision regression.",
       "report": {
-        "path": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
-        "sha256": "d187cab17f0282588b006c48a749dd709c3bd86b3ffcf56af27fa6a689ef30b2",
-        "bytes": 7993
+        "path": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-reader.md",
+        "sha256": "cffd64c0d0e53d27a6169ae5d007cbeaa4d73d87259ce4ebc343e75314cc8a46",
+        "bytes": 9992
       },
-      "scope": "Observed route, migration index and foot-slide crosslink; not full-library duplication or all-external-links audit."
+      "scope": "Observed route only; second read was not a second blind navigation experiment."
     }
   },
-  "host_relation": {
-    "path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
-    "sha256": "1c60db87140b206ecd3c4043e5d0b469ffa21af0b7307ad5220ecbd307fe98f5",
-    "bytes": 15315
+  "revision_reason": {
+    "finding": "落脚事件区间进度没有包含离地信息；原文尚未交付与支撑状态的具体区分和检查。",
+    "initial_reader_report": {
+      "path": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-reader-initial.md",
+      "sha256": "b71d87c18bc4aba84d5c7625600b96ae0c9bec32cf37e59d99a04e9506c2e159",
+      "bytes": 11745
+    },
+    "correction": "增加有限接触时序反例、并排核对接触区间的方法和按混合意图作采用判断，保留原时间算式、共同标记与空间边界。"
+  },
+  "previous_review": {
+    "commit": "27a22be4adcc54bbbc963e1079c0ab58f74933c1",
+    "path": "管理档案/审稿/SOL-ANIM-009/review.json",
+    "sha256": "45523e5d3045f78a013dafadf9c5f43f4af882fea6d197cc304c5c8bb4f174da",
+    "bytes": 4648,
+    "scope": "Previous article and evidence only; not reused to approve this technical revision."
   },
   "report_normalization": [
     {
-      "original_sha256": "ae3015ce934cb25d7aa6f3faaeab1cb13c7202363604180f6be816b564403685",
-      "public_report": "管理档案/审稿/SOL-ANIM-009/technical.md",
-      "normalization": "Only repository-relative paths and removal of irrelevant process descriptions; findings, verdict, task and limits preserved."
+      "report": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-reader-initial.md",
+      "original_report_sha256": "c82b97bff26edddddfb698bb353e93b12bfecb5afab9700117ad0198187d52d8",
+      "change": "只删除执行环境路径与无关流程说明，保持技术发现、独立任务、数值、判定与限制不变。"
     },
     {
-      "original_sha256": "ed8e24786307fe81ab14627cecaf63038b85f4a3ee3054a4b06c84160798767f",
-      "public_report": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
-      "normalization": "Only repository-relative paths and removal of irrelevant process descriptions; findings, verdict, task and limits preserved."
+      "report": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-reader.md",
+      "original_report_sha256": "732eb8a3d37499350148cc6068bce54a32679ac2592e6cab95a294da827668b0",
+      "change": "只删除执行环境路径与无关流程说明，保持技术发现、独立任务、数值、判定与限制不变。"
+    },
+    {
+      "report": "管理档案/审稿/SOL-ANIM-009/20261111-contact-state-technical.md",
+      "original_report_sha256": "aa0f452c161901f5e3c54f019484c6a3709b7d73b1da3d8fcb70552ffdb3878d",
+      "change": "只删除执行环境路径与无关流程说明，保持技术发现、独立任务、数值、判定与限制不变。"
     }
   ],
-  "editorial_status": "Final integrating-editor verification completed; publication status takes effect with the atomic repository commit.",
   "final_editorial_verification": {
     "reviewer": "集成编辑（模型）",
     "date": "2026-11-11",
-    "scope": "Read full article and both original independent reports; checked public report normalization, all 13 changed paths, evidence/report digests and source metadata-only difference; confirmed unchanged historical and .agent files.",
-    "decision": "Publish this bounded increment."
+    "scope": "Read final full article and all three new reports; checked normalization, exact evidence/report digests, unchanged navigation and history, catalog set, and limited publication diff.",
+    "decision": "Publish the reviewed contact-state clarification; no new research experiment or whole-library quality claim."
   }
 }
