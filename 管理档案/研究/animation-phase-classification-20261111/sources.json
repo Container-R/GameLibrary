@@ -1,0 +1,36 @@
+{
+  "read_at": "2026-11-11T11:00:37.412666+00:00",
+  "source": {
+    "author": "Epic Games",
+    "title": "Animation Sync Groups",
+    "version": "Unreal Engine 5.6",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/animation-sync-groups-in-unreal-engine?application_version=5.6"
+  },
+  "access": {
+    "method": "web open full page text",
+    "returned_title": "Animation Sync Groups in Unreal Engine | Unreal Engine 5.6 Documentation | Epic Developer Community",
+    "coverage": "107 lines; relevant Overview and Marker-Based Syncing",
+    "limits": "No image/motion inspection, engine source reading or native runtime experiment. Version selector is mutable, not a pinned implementation."
+  },
+  "claims": [
+    {
+      "claim": "标记同步以相邻标记之间的相对时间位置对应动画。",
+      "locator": "Marker-Based Syncing, line 65",
+      "observed_content": "页面以时间线标记间的相对播放位置解释同步。",
+      "conditions": "动画与标记需要满足组及名称条件；不据此声称复现内部匹配。",
+      "article_section": "先对应这一段步态，再找另一个片段的时间"
+    },
+    {
+      "claim": "同组、同名标记；仅全组共有标记参与；无匹配标记回退长度同步。",
+      "locator": "Marker-Based Syncing, lines 78, 83–85",
+      "observed_content": "正文要求组名与标记名匹配；示例缺少 Right Foot Down 时该标记被忽略，并说明无匹配时的长度回退。",
+      "conditions": "缺少一种标记不推出完全回退，不推断最少标记数、重复名称或循环跨界实现。",
+      "article_section": "加了标记，还要检查哪些标记真的参与"
+    }
+  ],
+  "original_reasoning": {
+    "calculation": "A: (0.45-0.2)/(0.7-0.2)=0.5; B overall 45%=0.36, interval=(0.36-0.1)/(0.5-0.1)=0.65; interval-matched B=0.1+0.5*(0.5-0.1)=0.3.",
+    "conditions": "Hypothetical adjacent nonzero intervals with corresponding semantics; no wrap/repeated-marker matching.",
+    "interpretation": "Time correspondence does not constrain world-space contact. Semantic placement and actual assets require project checks."
+  }
+}

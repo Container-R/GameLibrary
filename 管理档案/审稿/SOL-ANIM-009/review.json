@@ -1,0 +1,95 @@
+{
+  "article": {
+    "path": "GameLibrary/角色动画/角色移动/步态同步/循环步态的落脚标记与阶段同步.md",
+    "sha256": "e10eb0a4224349b61d828d5a914bb6e595cf32c09311a44f4e9acaa9ee233595",
+    "bytes": 4613
+  },
+  "author": "动画分类编辑（模型）",
+  "publication_status": "published",
+  "baseline_commit": "f2902ea03eac93db9213bb31d3b48cf3d98a582f",
+  "evidence": [
+    {
+      "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
+      "sha256": "581d8b169157b88e71da1a0e766c6338a0dc146a211605d2fa3e7ca46f276b7b",
+      "bytes": 2177
+    },
+    {
+      "path": "管理档案/研究/animation-phase-classification-20261111/materials.json",
+      "sha256": "89dfa1249abc020483d69da8a6801bc46f9f534126f652204ea4d41675957df4",
+      "bytes": 2814
+    }
+  ],
+  "evidence_normalization": {
+    "reviewed_source_record": {
+      "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
+      "sha256": "7742ad3263dce23d4da3d4179f5c46ffe0aa4a7c41802efe1645cb07b1dd0bd8",
+      "bytes": 2210
+    },
+    "current_source_record": {
+      "path": "管理档案/研究/animation-phase-classification-20261111/sources.json",
+      "sha256": "581d8b169157b88e71da1a0e766c6338a0dc146a211605d2fa3e7ca46f276b7b",
+      "bytes": 2177
+    },
+    "change": "Removed access.reference only. Source facts, interpretation, scope and limitations unchanged. Original reviewed digest remains in technical report.",
+    "verification": "Author compared parsed JSON before and after; deletion is the sole difference."
+  },
+  "reviews": {
+    "technical": {
+      "status": "pass",
+      "reviewer": "独立技术审稿者（模型）",
+      "method": "Full article, independently opened UE 5.6 official source text, independent arithmetic checks.",
+      "report": {
+        "path": "管理档案/审稿/SOL-ANIM-009/technical.md",
+        "sha256": "9dd08d0f3031020c9b0c455f2983dbc5c368f94240b45d98b38ec3c63d75c439",
+        "bytes": 5142
+      },
+      "scope": "Current article and recorded source scope, no native engine or visual-result acceptance."
+    },
+    "reader": {
+      "status": "pass",
+      "reviewer": "独立读者审稿者（模型）",
+      "method": "Full article and new representative reader task.",
+      "report": {
+        "path": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
+        "sha256": "d187cab17f0282588b006c48a749dd709c3bd86b3ffcf56af27fa6a689ef30b2",
+        "bytes": 7993
+      },
+      "scope": "Bounded explanation and asset checks; not a complete UE configuration or wraparound algorithm guide."
+    },
+    "navigation": {
+      "status": "pass",
+      "reviewer": "独立读者审稿者（模型）",
+      "method": "Actual root-to-article browsing, five downward selections without search or backtracking.",
+      "report": {
+        "path": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
+        "sha256": "d187cab17f0282588b006c48a749dd709c3bd86b3ffcf56af27fa6a689ef30b2",
+        "bytes": 7993
+      },
+      "scope": "Observed route, migration index and foot-slide crosslink; not full-library duplication or all-external-links audit."
+    }
+  },
+  "host_relation": {
+    "path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+    "sha256": "1c60db87140b206ecd3c4043e5d0b469ffa21af0b7307ad5220ecbd307fe98f5",
+    "bytes": 15315
+  },
+  "report_normalization": [
+    {
+      "original_sha256": "ae3015ce934cb25d7aa6f3faaeab1cb13c7202363604180f6be816b564403685",
+      "public_report": "管理档案/审稿/SOL-ANIM-009/technical.md",
+      "normalization": "Only repository-relative paths and removal of irrelevant process descriptions; findings, verdict, task and limits preserved."
+    },
+    {
+      "original_sha256": "ed8e24786307fe81ab14627cecaf63038b85f4a3ee3054a4b06c84160798767f",
+      "public_report": "管理档案/审稿/SOL-ANIM-009/reader-navigation.md",
+      "normalization": "Only repository-relative paths and removal of irrelevant process descriptions; findings, verdict, task and limits preserved."
+    }
+  ],
+  "editorial_status": "Final integrating-editor verification completed; publication status takes effect with the atomic repository commit.",
+  "final_editorial_verification": {
+    "reviewer": "集成编辑（模型）",
+    "date": "2026-11-11",
+    "scope": "Read full article and both original independent reports; checked public report normalization, all 13 changed paths, evidence/report digests and source metadata-only difference; confirmed unchanged historical and .agent files.",
+    "decision": "Publish this bounded increment."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "f2902ea03eac93db9213bb31d3b48cf3d98a582f",
+  "old_path": "管理档案/支持资料/两段动作播放进度相同，为什么左右脚仍然对不上.md",
+  "new_path": "GameLibrary/角色动画/角色移动/步态同步/循环步态的落脚标记与阶段同步.md",
+  "historical_materials": [
+    {
+      "path": "管理档案/支持资料/两段动作播放进度相同，为什么左右脚仍然对不上.md",
+      "sha256": "0cc283e1127e1e9c49ff898ba60d3dc5db555e7bd2a3a0a2339a7b372b41648f",
+      "bytes": 4479,
+      "fixed_snapshot": "https://github.com/Container-R/GameLibrary/blob/f2902ea03eac93db9213bb31d3b48cf3d98a582f/管理档案/支持资料/两段动作播放进度相同，为什么左右脚仍然对不上.md"
+    },
+    {
+      "path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
+      "sha256": "859165b4ac863658cf3c95a30526e7a51ec3c7d4ba52a4d6bb3e1346e31e12af",
+      "bytes": 15385,
+      "fixed_snapshot": "https://github.com/Container-R/GameLibrary/blob/f2902ea03eac93db9213bb31d3b48cf3d98a582f/GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md"
+    },
+    {
+      "path": "管理档案/审查/动画标记区间对应-来源与读者审查.md",
+      "sha256": "5c4a15dbc45234faa5f577df3d9c01046e066b53ace220916ea09ae44b1df548",
+      "bytes": 1923,
+      "fixed_snapshot": "https://github.com/Container-R/GameLibrary/blob/f2902ea03eac93db9213bb31d3b48cf3d98a582f/管理档案/审查/动画标记区间对应-来源与读者审查.md"
+    }
+  ],
+  "historical_acceptance": "2026-11-05 source/reader report remains byte-identical. It is historical evidence only, not new independent acceptance. Other historical references and TASK-2026-0291 materials are unchanged.",
+  "classification": "主要读者任务是走跑循环的落脚阶段对应，唯一归属角色动画／角色移动／步态同步。脚部接触侧重空间接触与脚滑诊断，采用交叉链接；不另在动画运行时复制。",
+  "inbound_current": [
+    "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md"
+  ],
+  "inbound_historical": [
+    "管理档案/审查/动画标记区间对应-来源与读者审查.md",
+    "管理档案/研究/TASK-2026-0291/materials.json"
+  ],
+  "technical_changes": [
+    "保持全部数值、推导、共同标记与回退结论。显式补出原算例区间非零这一前提。",
+    "将依赖“主文”的措辞改为独立文章的相关链接；保留时间同步不等于锁脚、非循环/跨界/重复标记未复现的边界。",
+    "UE 文档于 2026-11-11 重新读取5.6文字；不增加源码或运行验证声明。"
+  ],
+  "scope": "Finite classification repair, not a broader runtime synchronization guide."
+}

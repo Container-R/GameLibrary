@@ -172,7 +172,7 @@
       "reader_title": "排查原地转身时的脚滑",
       "canonical_reader_path": "GameLibrary/角色动画/角色移动/脚部接触/排查原地转身时的脚滑.md",
       "reader_body_status": "published",
-      "reader_sha256": "859165b4ac863658cf3c95a30526e7a51ec3c7d4ba52a4d6bb3e1346e31e12af"
+      "reader_sha256": "1c60db87140b206ecd3c4043e5d0b469ffa21af0b7307ad5220ecbd307fe98f5"
     },
     {
       "internal_id": "SOL-ART2D-001",
@@ -1192,6 +1192,16 @@
       "reader_sha256": "d730a1ea5ad2e76d57725805cac9f339dc84520e04b2c693328a8405e3aa1ab1",
       "review_record": "管理档案/审稿/NARR-SAVE-MIGRATION-20261110/review.json",
       "source_record": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/sources.json"
+    },
+    {
+      "internal_id": "SOL-ANIM-009",
+      "reader_title": "循环步态的落脚标记与阶段同步",
+      "canonical_reader_path": "GameLibrary/角色动画/角色移动/步态同步/循环步态的落脚标记与阶段同步.md",
+      "reader_body_status": "published",
+      "reader_sha256": "e10eb0a4224349b61d828d5a914bb6e595cf32c09311a44f4e9acaa9ee233595",
+      "source_record": "管理档案/研究/animation-phase-classification-20261111/sources.json",
+      "materials_record": "管理档案/研究/animation-phase-classification-20261111/materials.json",
+      "review": "管理档案/审稿/SOL-ANIM-009/review.json"
     }
   ]
 }
