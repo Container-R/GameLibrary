@@ -1,0 +1,30 @@
+# ink 公开复验包独立审查
+
+结论：通过。审查方式为独立模型审查，非真人试用或生产认证。
+
+审查对象：GameLibrary/叙事设计/运行时叙事/剧情状态与迁移/ink内容更新后的存档迁移.md。
+正文 SHA-256：d730a1ea5ad2e76d57725805cac9f339dc84520e04b2c693328a8405e3aa1ab1。
+复验包：管理档案/研究/NARR-SAVE-MIGRATION-20261110/。
+
+## 实际检查
+
+从根README逐层经过学科、方向、专题进入文章，通读最终全文，两条复现链接均可解析至所提供文件。与原稿逐字比较，九节技术内容未改变，变化仅为复现链接和公开格式披露；不以旧审稿结论代替本次公开包检查。
+
+阅读固定 ink 提交35c63e52f1d36060930dc7ed3cfba38ea224b528的五份关键源码/官方文档定位，并验证文件摘要与sources.json相符。核对最终true/false两份原生trace及025759Z历史失败，检查默认值省略、类型、后续选项、查询、洗牌与四出口mock观察。阅读冻结宿主run.py、Continue.cs、results.json和命令记录，核对它们对文章有限结论的支持。
+
+207项provenance原/公开摘要全部一致：166项原字节、37项路径脱敏、4项SQL逻辑导出。214项SHA256SUMS校验全部一致。四份SQL在内存数据库还原后，与只读原始数据库逐表比较schema、全部表行及BLOB一致；活动修订9/5、库存10、收据/操作各1，最终BLOB等于对应终点存档。历史package摘要与operations.digest相符；公开package路径脱敏导致摘要变化，说明准确区分了这两者。
+
+检查公开包文本，未发现实际环境绝对路径、私密环境标识或无关内部流程信息。占位命令、未附程序集、SQL非原数据库字节、适配脚本未另行运行均已明确说明。适配原生脚本已传播最后harness退出码；宿主说明准确列出SDK及输入目录两项适配。首启失败原日志未纳入公开包这一范围已明确披露，false失败完整轨迹仍在。修订后重新验证清单一致。
+
+## 绑定与限制
+
+以下路径均相对于复验包：
+- sources.json：a81e5da032be02864fdcd296c877827c91a7f588a9ecac0019a2a63a0db89e98
+- provenance.json：d2db7ee214d598e091f40c64ecb4fa1cdab26b9f3e87e6c366c869844554f9cb
+- SHA256SUMS：b9f40c7dcfb659bfcf96b48920b9a3f2be482db2621fc07d94f2456c6522aa06
+- README.md：13e8b2e9cb2440642abe441cb7ed0553bea5248d87ea069086da6b4fb2f9550a
+- reproduce-native.py：d60862cee1d6b4519f103a4c3a66482409ef83d213732a1d4006ac173be13d78
+- host-integration/run.py：f89af7e0958f9914b90a4c33e51e9142a0d085bc34d078322505bdb365b0c453
+- host-integration/run-20261111T045701Z/results.json：42cd18dfce0cabbeb83ebddcf8bbee62bbda36d5b5c7971d7ab28db040af1a88
+
+本次未重新执行原生实验链、未执行发表时整理的适配脚本、未联网重抓上游；源码核查使用固定版本副本。本报告不认证完整游戏、断电、并发、多谱系、跨服务exactly-once或未知奖励历史，也不认证历史全库的脱敏状态。观察只覆盖合成故事及SQLite有限同库流程，生产信任边界与作者批准的语义恢复范围仍按正文限制。此次无未关闭的实质修订要求。

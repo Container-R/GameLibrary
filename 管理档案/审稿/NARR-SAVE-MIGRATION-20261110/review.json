@@ -1,0 +1,72 @@
+{
+  "article_id": "NARR-SAVE-MIGRATION-20261110",
+  "article_path": "GameLibrary/叙事设计/运行时叙事/剧情状态与迁移/ink内容更新后的存档迁移.md",
+  "article_sha256": "d730a1ea5ad2e76d57725805cac9f339dc84520e04b2c693328a8405e3aa1ab1",
+  "author": "GameLibrary 叙事迁移研究编辑",
+  "reviewed_original_sha256": "5b885e61faaddab201b1a737de16a08f6501f041195588d5e565dcd75416ac8b",
+  "final_changes": "Only two reproduction link targets and an evidence-format disclosure sentence; no technical claims changed.",
+  "technical": {
+    "reviewer": "独立模型专业审稿者",
+    "method": "全文与固定来源、真实轨迹、只读数据库核对",
+    "result": "pass; original technical content unchanged, final derivative checked by independent public package review",
+    "report": "管理档案/审稿/NARR-SAVE-MIGRATION-20261110/technical.md"
+  },
+  "reader": {
+    "reviewer": "独立模型读者编辑",
+    "method": "全文与独立港口恢复任务",
+    "result": "pass; original technical content unchanged, final derivative checked by independent public package review",
+    "report": "管理档案/审稿/NARR-SAVE-MIGRATION-20261110/reader.md"
+  },
+  "navigation": {
+    "reviewer": "独立模型公开包与导航审查者",
+    "method": "从根逐层导航、全文差异及两条公开复现入口核查",
+    "result": "pass",
+    "report": "管理档案/审稿/NARR-SAVE-MIGRATION-20261110/public-package-navigation.md"
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/sources.json",
+      "sha256": "a81e5da032be02864fdcd296c877827c91a7f588a9ecac0019a2a63a0db89e98"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/provenance.json",
+      "sha256": "d2db7ee214d598e091f40c64ecb4fa1cdab26b9f3e87e6c366c869844554f9cb"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/SHA256SUMS",
+      "sha256": "b9f40c7dcfb659bfcf96b48920b9a3f2be482db2621fc07d94f2456c6522aa06"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/README.md",
+      "sha256": "13e8b2e9cb2440642abe441cb7ed0553bea5248d87ea069086da6b4fb2f9550a"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/native-results/RESULTS.md",
+      "sha256": "dd4541cd49b4ee0e059d26255ce8cf3fa3f808a055da41b2aa8fc5c2067a42dd"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/host-integration/RESULTS.md",
+      "sha256": "e955e91446bc0bea0ce470dc48ff66341f973ec6edd67df1f3c0accbe558380e"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/reproduce-native.py",
+      "sha256": "d60862cee1d6b4519f103a4c3a66482409ef83d213732a1d4006ac173be13d78"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/host-integration/run.py",
+      "sha256": "f89af7e0958f9914b90a4c33e51e9142a0d085bc34d078322505bdb365b0c453"
+    },
+    {
+      "path": "管理档案/研究/NARR-SAVE-MIGRATION-20261110/host-integration/run-20261111T045701Z/results.json",
+      "sha256": "42cd18dfce0cabbeb83ebddcf8bbee62bbda36d5b5c7971d7ab28db040af1a88"
+    }
+  ],
+  "status": "approved for publication",
+  "public_package": {
+    "reviewer": "独立模型公开包与导航审查者",
+    "method": "207对原/公开摘要、214项公开清单、四份SQL全表与BLOB对照、固定源码及三份trace核查；未重跑原生链或适配脚本",
+    "result": "pass",
+    "report": "管理档案/审稿/NARR-SAVE-MIGRATION-20261110/public-package-navigation.md"
+  },
+  "final_review_report_sha256": "96c56216164fba675561ffbf2588a79bcebf989dc3306ce9bdbe6572410fd02f"
+}

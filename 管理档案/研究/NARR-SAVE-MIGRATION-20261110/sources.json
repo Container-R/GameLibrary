@@ -1,0 +1,46 @@
+{
+  "upstream_commit": "35c63e52f1d36060930dc7ed3cfba38ea224b528",
+  "primary_sources": [
+    {
+      "id": 1,
+      "kind": "primary_fixed_source",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/VariablesState.cs",
+      "locator": "L145-L185",
+      "claim": "加载遍历当前默认声明；存在保存键按 token 恢复，缺键采用当前默认；保存默认值省略",
+      "local_sha256": "a1a2fe694b8e2b41b85991fc76c4dfb0012215334833747fdbfb28cc8a13d265"
+    },
+    {
+      "id": 2,
+      "kind": "primary_fixed_source",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/Story.cs",
+      "locator": "L1752-L1809;L1943-L2028;L2777-L2818",
+      "claim": "跳路径/选项线程不同；预读限制后仍调用外部委托；洗牌依赖路径字符和、轮次、域长和种子",
+      "local_sha256": "10a150e6438360f346bfad4ffd17749bcdc5ae851fd11e4bb957ed27e0604340"
+    },
+    {
+      "id": 3,
+      "kind": "primary_fixed_source",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/StoryState.cs",
+      "locator": "L769-L793",
+      "claim": "加载访问计数、轮次、种子与 previousRandom",
+      "local_sha256": "a44bf0bbc26b6a6a9b3a34b658330f97b742ebde63578c11125873d69c4a5d7a"
+    },
+    {
+      "id": 4,
+      "kind": "primary_fixed_source",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/ink-engine-runtime/JsonSerialisation.cs",
+      "locator": "L331-L343",
+      "claim": "token 按自身类型创建 Runtime Value",
+      "local_sha256": "4b8b214505ede872e724675bd05c7ecc87ec6d86b09105394c63bde1178da747"
+    },
+    {
+      "id": 5,
+      "kind": "primary_fixed_source",
+      "url": "https://github.com/inkle/ink/blob/35c63e52f1d36060930dc7ed3cfba38ea224b528/Documentation/RunningYourInk.md",
+      "locator": "L292-L334",
+      "claim": "官方说明观察者、tag、文本命令，以及 Actions/Pure functions 与 lookaheadSafe",
+      "local_sha256": "94031c0de03ffa6f9109728f4fe11e05ddc3fdd7e9f05dd52251ee93c9f859ba"
+    }
+  ],
+  "limits": "固定 ink C# 提交的作者批准语义检查点恢复；真实原生小故事与 SQLite 单库有限观察；可信构包、历史分类及跨服务部分为工程方法/设计，不是生产认证。"
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "branch": "true",
+    "route": "bridge",
+    "initial": {
+      "revision": 7,
+      "host_revision": 3,
+      "content": "b8142e9aea01be148bb5466454d21609128287a5a83d8305ad784fdb68cb164f",
+      "save_sha256": "2716278f7aae5431bc6fde1fb4a7a6f268adaabb1257c4130cae32b328528931",
+      "inventory": 0,
+      "receipts": 0,
+      "operations": 0
+    },
+    "committed": {
+      "revision": 8,
+      "host_revision": 4,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "3f04a4b74a940564d590e6c4d5e8afea477ff5d05740f4f19b7e837483283c74",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "progressed": {
+      "revision": 9,
+      "host_revision": 5,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "6c49e65d5aee1aeb741a45286db6c8b473c7a87bc98e4e85c51822f5892a5504",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "retry_result": {
+      "operation_id": "lineage-A:migrate-v1",
+      "committed_revision": 8,
+      "candidate_save": "3f04a4b74a940564d590e6c4d5e8afea477ff5d05740f4f19b7e837483283c74"
+    },
+    "conflicts": [
+      "operation-package-conflict",
+      "operation-package-conflict",
+      "stale-source"
+    ],
+    "native": {
+      "before": [
+        "bridge_route",
+        "road_route"
+      ],
+      "choice": "bridge_route",
+      "text": "Bridge.\n",
+      "score": 10,
+      "ended": true
+    },
+    "checks": "passed"
+  },
+  {
+    "branch": "true",
+    "route": "road",
+    "initial": {
+      "revision": 7,
+      "host_revision": 3,
+      "content": "b8142e9aea01be148bb5466454d21609128287a5a83d8305ad784fdb68cb164f",
+      "save_sha256": "2716278f7aae5431bc6fde1fb4a7a6f268adaabb1257c4130cae32b328528931",
+      "inventory": 0,
+      "receipts": 0,
+      "operations": 0
+    },
+    "committed": {
+      "revision": 8,
+      "host_revision": 4,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "3f04a4b74a940564d590e6c4d5e8afea477ff5d05740f4f19b7e837483283c74",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "progressed": {
+      "revision": 9,
+      "host_revision": 5,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "9fc6d92e45aea94262aebaae3262f5b5234f63f7921db2feb951ce591d93b5b2",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "retry_result": {
+      "operation_id": "lineage-A:migrate-v1",
+      "committed_revision": 8,
+      "candidate_save": "3f04a4b74a940564d590e6c4d5e8afea477ff5d05740f4f19b7e837483283c74"
+    },
+    "conflicts": [
+      "operation-package-conflict",
+      "operation-package-conflict",
+      "stale-source"
+    ],
+    "native": {
+      "before": [
+        "bridge_route",
+        "road_route"
+      ],
+      "choice": "road_route",
+      "text": "Road.\n",
+      "score": 10,
+      "ended": true
+    },
+    "checks": "passed"
+  },
+  {
+    "branch": "false",
+    "route": "bridge",
+    "initial": {
+      "revision": 7,
+      "host_revision": 3,
+      "content": "b8142e9aea01be148bb5466454d21609128287a5a83d8305ad784fdb68cb164f",
+      "save_sha256": "4bfaf3a8342dc899bb0ed4619bcaacdf80f14ac301eda42656f7ebf4502747db",
+      "inventory": 0,
+      "receipts": 0,
+      "operations": 0
+    },
+    "committed": {
+      "revision": 8,
+      "host_revision": 4,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "ab459948a895724607f0c8416a586ef4bd17bea75696ee7a1b59c8d6fa918ea8",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "progressed": {
+      "revision": 9,
+      "host_revision": 5,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "c7231425725c3b73135e9a793f9bd60915d0b700cc535c6474b863934eb49efa",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "retry_result": {
+      "operation_id": "lineage-A:migrate-v1",
+      "committed_revision": 8,
+      "candidate_save": "ab459948a895724607f0c8416a586ef4bd17bea75696ee7a1b59c8d6fa918ea8"
+    },
+    "conflicts": [
+      "operation-package-conflict",
+      "operation-package-conflict",
+      "stale-source"
+    ],
+    "native": {
+      "before": [
+        "bridge_route",
+        "road_route"
+      ],
+      "choice": "bridge_route",
+      "text": "Bridge.\n",
+      "score": 0,
+      "ended": true
+    },
+    "checks": "passed"
+  },
+  {
+    "branch": "false",
+    "route": "road",
+    "initial": {
+      "revision": 7,
+      "host_revision": 3,
+      "content": "b8142e9aea01be148bb5466454d21609128287a5a83d8305ad784fdb68cb164f",
+      "save_sha256": "4bfaf3a8342dc899bb0ed4619bcaacdf80f14ac301eda42656f7ebf4502747db",
+      "inventory": 0,
+      "receipts": 0,
+      "operations": 0
+    },
+    "committed": {
+      "revision": 8,
+      "host_revision": 4,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "ab459948a895724607f0c8416a586ef4bd17bea75696ee7a1b59c8d6fa918ea8",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "progressed": {
+      "revision": 9,
+      "host_revision": 5,
+      "content": "30c080d8aed0e6cf08c1e5ce84fbe019a1370db3c08b10183443ae0cedd8ce15",
+      "save_sha256": "07d5e9f65110da3462972951538ee902e78ae5eaf6d3d2a829c50e99c939dc1d",
+      "inventory": 10,
+      "receipts": 1,
+      "operations": 1
+    },
+    "retry_result": {
+      "operation_id": "lineage-A:migrate-v1",
+      "committed_revision": 8,
+      "candidate_save": "ab459948a895724607f0c8416a586ef4bd17bea75696ee7a1b59c8d6fa918ea8"
+    },
+    "conflicts": [
+      "operation-package-conflict",
+      "operation-package-conflict",
+      "stale-source"
+    ],
+    "native": {
+      "before": [
+        "bridge_route",
+        "road_route"
+      ],
+      "choice": "road_route",
+      "text": "Road.\n",
+      "score": 0,
+      "ended": true
+    },
+    "checks": "passed"
+  }
+]

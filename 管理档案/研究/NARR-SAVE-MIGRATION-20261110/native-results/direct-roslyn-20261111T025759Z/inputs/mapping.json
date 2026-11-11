@@ -1,0 +1,33 @@
+{
+  "version": "original-fixture-v1",
+  "old": "variables-old.ink",
+  "new": "variables-new.ink",
+  "save_point": "checkpoint choice pending; host then sets both old bools true",
+  "mapping": [
+    {
+      "from": "knows_bridge",
+      "requiredClrType": "System.Boolean",
+      "to": "heard_bridge",
+      "policy": "identity"
+    },
+    {
+      "from": "score",
+      "requiredClrType": "System.Boolean",
+      "to": "score",
+      "policy": "false -> 0; true -> 10; authored reward-tier conversion, NOT numeric cast"
+    }
+  ],
+  "new_entry": "migration_resume",
+  "preserve": [
+    "bridge knowledge",
+    "authored reward tier"
+  ],
+  "reset": [
+    "call stack",
+    "visit history",
+    "turn indices",
+    "random state",
+    "pending choices"
+  ],
+  "approval_scope": "synthetic fixture only, no real player migration"
+}

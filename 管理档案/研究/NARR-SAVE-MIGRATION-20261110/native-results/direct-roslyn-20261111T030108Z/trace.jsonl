@@ -1,0 +1,321 @@
+{"kind":"scenario-input","data":{"oldScoreValue":true}}
+{"kind":"input-sha256","data":{"file":"effects.ink","sha256":"1d68384175f77cbcc3ca77959d713a662fab24439de386d0908a2c42b8d65392"}}
+{"kind":"input-sha256","data":{"file":"mapping.json","sha256":"249e35aa089ef4adb27f38c45209accb193b20c5724911e670154967f92a58ab"}}
+{"kind":"input-sha256","data":{"file":"query.ink","sha256":"7f1f53315b2fd14b1dd0cc197b7cddb8e86437f684bcff2ed976c1981c270451"}}
+{"kind":"input-sha256","data":{"file":"sequence-new-length.ink","sha256":"de8c79e11f7676074850c8b27e0f421bee4f6daf510a2975efd4903e60113e60"}}
+{"kind":"input-sha256","data":{"file":"sequence-new-path.ink","sha256":"40fb4718eb4135441bc26e6d2c6426e391c254e6d2a39b27c7139c90232a3b13"}}
+{"kind":"input-sha256","data":{"file":"sequence-old.ink","sha256":"9130de377e04c490fe4dc691118c347eee7d83427c8df2424904af8f5266785d"}}
+{"kind":"input-sha256","data":{"file":"variables-new.ink","sha256":"25482293c20d64ef47343f1a5426408a1ef0ffb6c1b97c3abec6b5014dd8bc50"}}
+{"kind":"input-sha256","data":{"file":"variables-old.ink","sha256":"a0eff83517e88fff60a4e7f803f6d180c630b26695e07f87118a90bf29900936"}}
+{"kind":"assert","data":{"label":"compile variables-old","ok":true}}
+{"kind":"assert","data":{"label":"old-checkpoint step budget","ok":true}}
+{"kind":"line","data":{"label":"old-checkpoint","line":"Checkpoint.\n","tags":[]}}
+{"kind":"choices","data":{"label":"old-checkpoint","choices":[{"index":0,"text":"Continue"}]}}
+{"kind":"assert","data":{"label":"checkpoint reached","ok":true}}
+{"kind":"assert","data":{"label":"old explicit bool preserved before save","ok":true}}
+{"kind":"assert","data":{"label":"compile variables-old","ok":true}}
+{"kind":"assert","data":{"label":"old content reload preserves bool facts","ok":true}}
+{"kind":"assert","data":{"label":"old-baseline-after step budget","ok":true}}
+{"kind":"line","data":{"label":"old-baseline-after","line":"\n","tags":[]}}
+{"kind":"choices","data":{"label":"old-baseline-after","choices":[{"index":0,"text":"bridge_route"},{"index":1,"text":"road_route"}]}}
+{"kind":"assert","data":{"label":"baseline bridge choice","ok":true}}
+{"kind":"assert","data":{"label":"compile variables-new","ok":true}}
+{"kind":"direct-load-variables","data":[{"name":"knows_bridge","value":null,"clrType":null},{"name":"heard_bridge","value":false,"clrType":"System.Boolean"},{"name":"score","value":true,"clrType":"System.Boolean"}]}
+{"kind":"assert","data":{"label":"direct old name absent","ok":true}}
+{"kind":"assert","data":{"label":"direct renamed fact defaults false","ok":true}}
+{"kind":"serialized-score-presence","data":{"scoreWasSerialized":true,"oldScoreValue":true}}
+{"kind":"assert","data":{"label":"revised prediction: serialized score preserves bool; omitted score uses new int default","ok":true}}
+{"kind":"assert","data":{"label":"direct-continuation step budget","ok":true}}
+{"kind":"line","data":{"label":"direct-continuation","line":"Arithmetic: 2.\n","tags":[]}}
+{"kind":"choices","data":{"label":"direct-continuation","choices":[{"index":0,"text":"road_route"}]}}
+{"kind":"assert","data":{"label":"compile variables-old","ok":true}}
+{"kind":"assert","data":{"label":"mapping precondition: both old facts bool","ok":true}}
+{"kind":"assert","data":{"label":"compile variables-new","ok":true}}
+{"kind":"assert","data":{"label":"semantic-migration step budget","ok":true}}
+{"kind":"line","data":{"label":"semantic-migration","line":"Arithmetic: 11.\n","tags":[]}}
+{"kind":"choices","data":{"label":"semantic-migration","choices":[{"index":0,"text":"bridge_route"},{"index":1,"text":"road_route"}]}}
+{"kind":"candidate-variables","data":[{"name":"knows_bridge","value":null,"clrType":null},{"name":"heard_bridge","value":true,"clrType":"System.Boolean"},{"name":"score","value":10,"clrType":"System.Int32"}]}
+{"kind":"assert","data":{"label":"mapped facts and exact CLR types","ok":true}}
+{"kind":"assert","data":{"label":"approved reachable choices","ok":true}}
+{"kind":"assert","data":{"label":"authored arithmetic after mapping","ok":true}}
+{"kind":"assert","data":{"label":"compile variables-new","ok":true}}
+{"kind":"assert","data":{"label":"candidate save reload","ok":true}}
+{"kind":"assert","data":{"label":"compile query","ok":true}}
+{"kind":"assert","data":{"label":"historical-input step budget","ok":true}}
+{"kind":"line","data":{"label":"historical-input","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"historical-input","choices":[{"index":0,"text":"rope_route"}]}}
+{"kind":"assert","data":{"label":"one query branch","ok":true}}
+{"kind":"query-input","data":{"label":"historical-input","equipped":true,"calls":1}}
+{"kind":"assert","data":{"label":"compile query","ok":true}}
+{"kind":"assert","data":{"label":"frozen-replay step budget","ok":true}}
+{"kind":"line","data":{"label":"frozen-replay","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"frozen-replay","choices":[{"index":0,"text":"rope_route"}]}}
+{"kind":"assert","data":{"label":"one query branch","ok":true}}
+{"kind":"query-input","data":{"label":"frozen-replay","equipped":true,"calls":1}}
+{"kind":"assert","data":{"label":"compile query","ok":true}}
+{"kind":"assert","data":{"label":"current-input step budget","ok":true}}
+{"kind":"line","data":{"label":"current-input","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"current-input","choices":[{"index":0,"text":"walk_route"}]}}
+{"kind":"assert","data":{"label":"one query branch","ok":true}}
+{"kind":"query-input","data":{"label":"current-input","equipped":false,"calls":1}}
+{"kind":"assert","data":{"label":"query replay needs historical input","ok":true}}
+{"kind":"assert","data":{"label":"compile sequence-old","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-seed step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-seed","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-seed","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-0","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-0","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-1","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-1","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 1","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-2 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-2","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-2","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 2","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-3 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-3","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-3","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-4 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-4","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-4","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 4","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-5 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-5","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-5","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 5","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-6 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-6","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-6","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-7 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-7","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-7","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 7","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-8 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-8","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-8","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 8","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-9 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-9","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-9","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 9","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-10 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-10","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-10","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 10","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-11 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-11","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-11","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 11","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 9","ok":true}}
+{"kind":"sequence-trace","data":{"name":"sequence-old","trace":["B","A","C","C","A","B","C","B","A","A","B","C"]}}
+{"kind":"assert","data":{"label":"compile sequence-old","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-seed step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-seed","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-seed","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-0","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-0","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-1","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-1","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 1","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-2 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-2","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-2","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 2","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-3 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-3","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-3","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-4 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-4","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-4","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 4","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-5 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-5","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-5","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 5","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-6 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-6","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-6","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-7 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-7","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-7","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 7","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-8 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-8","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-8","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 8","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-9 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-9","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-9","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 9","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-10 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-10","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-10","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 10","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old-11 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-old-11","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-old-11","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-old one valid sample at visit 11","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-old full shuffle cycle covers domain at 9","ok":true}}
+{"kind":"sequence-trace","data":{"name":"sequence-old","trace":["B","A","C","C","A","B","C","B","A","A","B","C"]}}
+{"kind":"assert","data":{"label":"same content seed and visit schedule repeat","ok":true}}
+{"kind":"assert","data":{"label":"compile sequence-new-length","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-seed step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-seed","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-seed","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-0","line":"D\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-0","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-1","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-1","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 1","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-2 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-2","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-2","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 2","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-3 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-3","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-3","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-4 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-4","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-4","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 4","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-5 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-5","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-5","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 5","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-6 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-6","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-6","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-7 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-7","line":"D\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-7","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 7","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-8 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-8","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-8","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 8","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-9 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-9","line":"D\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-9","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 9","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-10 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-10","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-10","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 10","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length-11 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-length-11","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-length-11","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-length one valid sample at visit 11","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length full shuffle cycle covers domain at 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length full shuffle cycle covers domain at 4","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-length full shuffle cycle covers domain at 8","ok":true}}
+{"kind":"sequence-trace","data":{"name":"sequence-new-length","trace":["D","C","A","B","C","A","B","D","C","D","B","A"]}}
+{"kind":"assert","data":{"label":"compile sequence-new-path","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-seed step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-seed","line":"","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-seed","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-0","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-0","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-1","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-1","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 1","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-2 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-2","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-2","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 2","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-3 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-3","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-3","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-4 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-4","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-4","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 4","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-5 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-5","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-5","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 5","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-6 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-6","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-6","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-7 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-7","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-7","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 7","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-8 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-8","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-8","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 8","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-9 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-9","line":"C\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-9","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 9","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-10 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-10","line":"A\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-10","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 10","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path-11 step budget","ok":true}}
+{"kind":"line","data":{"label":"sequence-new-path-11","line":"B\n","tags":[]}}
+{"kind":"choices","data":{"label":"sequence-new-path-11","choices":[]}}
+{"kind":"assert","data":{"label":"sequence-new-path one valid sample at visit 11","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path full shuffle cycle covers domain at 0","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path full shuffle cycle covers domain at 3","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path full shuffle cycle covers domain at 6","ok":true}}
+{"kind":"assert","data":{"label":"sequence-new-path full shuffle cycle covers domain at 9","ok":true}}
+{"kind":"sequence-trace","data":{"name":"sequence-new-path","trace":["A","B","C","B","C","A","B","A","C","C","A","B"]}}
+{"kind":"sequence-comparison","data":{"lengthChanged":true,"pathChanged":true,"note":"No assertion that structural change MUST differ for this seed."}}
+{"kind":"assert","data":{"label":"compile effects","ok":true}}
+{"kind":"assert","data":{"label":"effects-False-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-False-0","line":"Reward.\n","tags":["command:reward:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"effects-False-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-False-0","line":"CMD reward bridge.reward.1 10\n","tags":[]}}
+{"kind":"choices","data":{"label":"effects-False-0","choices":[]}}
+{"kind":"assert","data":{"label":"compile effects","ok":true}}
+{"kind":"assert","data":{"label":"effects-False-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-False-1","line":"Reward.\n","tags":["command:reward:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"effects-False-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-False-1","line":"CMD reward bridge.reward.1 10\n","tags":[]}}
+{"kind":"choices","data":{"label":"effects-False-1","choices":[]}}
+{"kind":"mock-host","data":{"candidate":false,"inventory":80,"externalCalls":2,"observers":2,"tags":2,"commands":2,"plan":["external:bridge.reward.1:10","observer:bridge.reward.1:10","tag:bridge.reward.1:10","text:bridge.reward.1:10","external:bridge.reward.1:10","observer:bridge.reward.1:10","tag:bridge.reward.1:10","text:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"all four outlets exercised twice","ok":true}}
+{"kind":"assert","data":{"label":"isolated plan versus intentionally unsafe mock writes","ok":true}}
+{"kind":"assert","data":{"label":"compile effects","ok":true}}
+{"kind":"assert","data":{"label":"effects-True-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-True-0","line":"Reward.\n","tags":["command:reward:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"effects-True-0 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-True-0","line":"CMD reward bridge.reward.1 10\n","tags":[]}}
+{"kind":"choices","data":{"label":"effects-True-0","choices":[]}}
+{"kind":"assert","data":{"label":"compile effects","ok":true}}
+{"kind":"assert","data":{"label":"effects-True-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-True-1","line":"Reward.\n","tags":["command:reward:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"effects-True-1 step budget","ok":true}}
+{"kind":"line","data":{"label":"effects-True-1","line":"CMD reward bridge.reward.1 10\n","tags":[]}}
+{"kind":"choices","data":{"label":"effects-True-1","choices":[]}}
+{"kind":"mock-host","data":{"candidate":true,"inventory":0,"externalCalls":2,"observers":2,"tags":2,"commands":2,"plan":["external:bridge.reward.1:10","observer:bridge.reward.1:10","tag:bridge.reward.1:10","text:bridge.reward.1:10","external:bridge.reward.1:10","observer:bridge.reward.1:10","tag:bridge.reward.1:10","text:bridge.reward.1:10"]}}
+{"kind":"assert","data":{"label":"all four outlets exercised twice","ok":true}}
+{"kind":"assert","data":{"label":"isolated plan versus intentionally unsafe mock writes","ok":true}}
+{"kind":"summary","data":{"failures":0,"note":"Mock outlet test only; no transactional host integration."}}
