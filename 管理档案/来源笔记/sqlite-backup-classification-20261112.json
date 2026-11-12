@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-12",
+  "kind": "classification-merge-and-full-review",
+  "base_commit": "5f927a13f4c106db94c67bcc4dafe74f5e0daf4a",
+  "formal_article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+    "sha256": "b7e59b376e698230f0f758053dfcf7afe864864767fc9c3840125c33ce8bcedb",
+    "git_blob_sha": "eed17c236bc1cf2c3cbfe0ce0adf464d810d0217",
+    "bytes": 14859
+  },
+  "old_technical_path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+  "change": "将取消备份完整技术解释和既有C观察并入唯一正式主文，替换原重复假设说明；旧址仅留迁移入口，实验数据和代码保留管理位置。",
+  "scope": "只处理取消备份主题，不声称其他管理目录技术正文或全库分类已清零。",
+  "sources_rechecked_by": "independent model technical reviewer, full official pages and actual experiment files",
+  "sources": [
+    {
+      "url": "https://sqlite.org/wal.html",
+      "version": "rolling page read 2026-11-12",
+      "locations": [
+        "2 How WAL Works",
+        "2.1 Checkpointing",
+        "2.2 Concurrency",
+        "4 The WAL File"
+      ],
+      "supports": "提交、读取、检查点与WAL持久状态"
+    },
+    {
+      "url": "https://sqlite.org/backup.html",
+      "version": "rolling page read 2026-11-12",
+      "locations": [
+        "1 Using the SQLite Online Backup API",
+        "3.1 File and Database Connection Locking",
+        "3.2 backup_remaining() and backup_pagecount()"
+      ],
+      "supports": "数据库层备份、源变化重启、进度时效性"
+    },
+    {
+      "url": "https://www.sqlite.org/c3ref/backup_finish.html",
+      "version": "rolling page read 2026-11-12",
+      "locations": [
+        "sqlite3_backup_step",
+        "sqlite3_backup_finish",
+        "Concurrent Usage of Database Handles"
+      ],
+      "supports": "DONE完成判据、未完成finish回滚、finish不替代完成、目标句柄限制"
+    },
+    {
+      "url": "https://docs.python.org/3.12/library/sqlite3.html#sqlite3.Connection.backup",
+      "version": "3.12 series, page displayed 3.12.16 on recheck",
+      "supports": "target、pages、progress、name含义；不将页面版本当历史运行库认证"
+    },
+    {
+      "url": "https://www.sqlite.org/releaselog/3_50_4.html",
+      "version": "SQLite 3.50.4 released 2025-07-30",
+      "supports": "既存SOURCE.json记录的SOURCE_ID及sqlite3.c SHA3-256一致；本轮未重新下载源码"
+    }
+  ],
+  "experiment_scope": "本轮不新增或重跑实验。独立审稿读两套协议、代码与原始结果；C/DELETE和Python/WAL分别绑定，不混算。历史同宿主知情复现不称盲测、跨机器、并发、崩溃或断电验证。",
+  "evidence_phase": "编辑前29个材料对象与远端树一致；最终28个未变。C README只变更两处正式主文回链，其当前摘要在下表。",
+  "evidence": [
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/README.md",
+      "sha256": "5b7e1825709743ee4ee5612b778db93d018ec849d86a8f33d49fda6269929f13",
+      "git_blob_sha": "1ff39b7fdd92ad9b4057999a0409363d62311da7",
+      "bytes": 4816,
+      "base_git_blob_sha": "198a4c25c6b6d66481e83de91e876d6d677be261",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/SOURCE.json",
+      "sha256": "7018df6e7bb801546e83928e5986247f56099ed088d2b18a6b6fafe1b71d9069",
+      "git_blob_sha": "56a332c92c753238ac7b400bb2341b799e3d923e",
+      "bytes": 1421,
+      "base_git_blob_sha": "56a332c92c753238ac7b400bb2341b799e3d923e",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/fixture/PROTOCOL.md",
+      "sha256": "e149374b252b7183f5a6a16ab56f0829569c0ae470ee5700664f9835b9403c31",
+      "git_blob_sha": "77c704bd1523281bcd154491f4553190840a7954",
+      "bytes": 7103,
+      "base_git_blob_sha": "77c704bd1523281bcd154491f4553190840a7954",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/fixture/driver.c",
+      "sha256": "66067210156bc72c5bb7d300b4dfba98fe6c851612632402c431938ddc7a2e2d",
+      "git_blob_sha": "9aa759480f940b328c18d9dd0f721399efded350",
+      "bytes": 6377,
+      "base_git_blob_sha": "9aa759480f940b328c18d9dd0f721399efded350",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/fixture/manifest.json",
+      "sha256": "f32c9f8d9f032a02de2f42ecd4217c23ee3dc4e50175c7d4050b866bb02e4505",
+      "git_blob_sha": "9a414046d47ed7b7c5b1aeff8faad5fb48b16ec4",
+      "bytes": 703,
+      "base_git_blob_sha": "9a414046d47ed7b7c5b1aeff8faad5fb48b16ec4",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/fixture/runner.py",
+      "sha256": "3bc483bcea4bd22afbd04ab15b754db11f9c30e829b771a1bc716e97ef2128b5",
+      "git_blob_sha": "8af9d30990692e902709b784f9702e442a9256b7",
+      "bytes": 7403,
+      "base_git_blob_sha": "8af9d30990692e902709b784f9702e442a9256b7",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/output.jsonl",
+      "sha256": "d17bc5b2c149a934e9904e7870fc88f40bdef4012bf2fd1a36faceb059850778",
+      "git_blob_sha": "f6f8f322f3bffd7ec75418f5cccc4a193bee1656",
+      "bytes": 2464,
+      "base_git_blob_sha": "f6f8f322f3bffd7ec75418f5cccc4a193bee1656",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/observations/independent-1/result.json",
+      "sha256": "5260f32379506dd99696b8a86118ab3f7efb2c48252782b0f75288ae45dceb06",
+      "git_blob_sha": "54d2734cf54d47c4815884b2931d8b1777af2ec3",
+      "bytes": 989,
+      "base_git_blob_sha": "54d2734cf54d47c4815884b2931d8b1777af2ec3",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/output.jsonl",
+      "sha256": "d17bc5b2c149a934e9904e7870fc88f40bdef4012bf2fd1a36faceb059850778",
+      "git_blob_sha": "f6f8f322f3bffd7ec75418f5cccc4a193bee1656",
+      "bytes": 2464,
+      "base_git_blob_sha": "f6f8f322f3bffd7ec75418f5cccc4a193bee1656",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/observations/main-1/result.json",
+      "sha256": "5260f32379506dd99696b8a86118ab3f7efb2c48252782b0f75288ae45dceb06",
+      "git_blob_sha": "54d2734cf54d47c4815884b2931d8b1777af2ec3",
+      "bytes": 989,
+      "base_git_blob_sha": "54d2734cf54d47c4815884b2931d8b1777af2ec3",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/INDEPENDENT-ACCEPTANCE.json",
+      "sha256": "ec540628a895a3d40ba5a08079f73dabbbe96c20096998fbc7343f378a552030",
+      "git_blob_sha": "c0e530223e343193abb4f6c38806e9c862cfc71c",
+      "bytes": 1617,
+      "base_git_blob_sha": "c0e530223e343193abb4f6c38806e9c862cfc71c",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/NATIVE-REVIEW.md",
+      "sha256": "8ebbc3bde60944755718b42c277cc930d73c932d57a3daf7eb60268fd58063e1",
+      "git_blob_sha": "c2dd826e97aab3fa3b0bd77b7661b6d07950f7c3",
+      "bytes": 4968,
+      "base_git_blob_sha": "c2dd826e97aab3fa3b0bd77b7661b6d07950f7c3",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/PREEXEC-REVIEW.md",
+      "sha256": "64ce8a5380ec7c0e65f93f3442f321c7470ef5d2d4efe3838f9218fcfb2b240e",
+      "git_blob_sha": "64a3d83c6d9f0b042d973d8612303d0e035ee1b5",
+      "bytes": 7171,
+      "base_git_blob_sha": "64a3d83c6d9f0b042d973d8612303d0e035ee1b5",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/README.md",
+      "sha256": "8fc67e7bc26448f8f93e44fa1a570795247d0ebe921d08d676b21c654fe22a16",
+      "git_blob_sha": "04332971b682472c18b3a1d466a6f50cf8008200",
+      "bytes": 5593,
+      "base_git_blob_sha": "04332971b682472c18b3a1d466a6f50cf8008200",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/SHA256SUMS",
+      "sha256": "b0e046fa533f3cf88d368d1c41a7023a1b2e97542f2eb3f5c53b98edbfbf0481",
+      "git_blob_sha": "cde7597b847ecf5826eace673a30d64d79c37733",
+      "bytes": 1686,
+      "base_git_blob_sha": "cde7597b847ecf5826eace673a30d64d79c37733",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/fixture/PROTOCOL.md",
+      "sha256": "c20fb834b16a9c8b08b382fa458665d095d4ad45a087295c67e99f7a4d3c9f5a",
+      "git_blob_sha": "2d8d22bcdefecaa0366370c55ca2233a2603e239",
+      "bytes": 6380,
+      "base_git_blob_sha": "2d8d22bcdefecaa0366370c55ca2233a2603e239",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/fixture/isolation.py",
+      "sha256": "bcade74136ae51643b00c5bac60a05655d76db3765250481dde843cc9d4f3970",
+      "git_blob_sha": "19e52c4b18123025dbd886ac4d5dc8fb74938a05",
+      "bytes": 2137,
+      "base_git_blob_sha": "19e52c4b18123025dbd886ac4d5dc8fb74938a05",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/fixture/launcher.py",
+      "sha256": "60a13b34bc050bd041d5d306724f180cff25952d921c74c8e64e07ac39f23f07",
+      "git_blob_sha": "e023ac3aed990bf3edda07de9b29b089038d0b30",
+      "bytes": 6753,
+      "base_git_blob_sha": "e023ac3aed990bf3edda07de9b29b089038d0b30",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/fixture/runner.py",
+      "sha256": "3eea751d9c09c70cc0a00c36c5d7172979d89e9713586a8b3cebff3769512712",
+      "git_blob_sha": "b72ce06df1274a2a789cd9e6fd3c14e97b5b1ccc",
+      "bytes": 6988,
+      "base_git_blob_sha": "b72ce06df1274a2a789cd9e6fd3c14e97b5b1ccc",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/fixture/test_trace.py",
+      "sha256": "becd5820b7b3931e69c11e20b59c20d506de9c261c1cce1bf66a80363b78280e",
+      "git_blob_sha": "aeb23f2613890ff9a0302e0c85ec8460ead981e6",
+      "bytes": 2598,
+      "base_git_blob_sha": "aeb23f2613890ff9a0302e0c85ec8460ead981e6",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/author-1/receipt.json",
+      "sha256": "390daa5dc34407994d62df14357e65e63ecaaf400a0bbdd152c3aa3016eeb202",
+      "git_blob_sha": "23291d384a417f19907bf54498b5e37ef73ba5cd",
+      "bytes": 1408,
+      "base_git_blob_sha": "23291d384a417f19907bf54498b5e37ef73ba5cd",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/author-1/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "base_git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/author-1/stdout.jsonl",
+      "sha256": "8db174a843b25792afa9960401ed41e4827d60faac996372353f0c780e944e9b",
+      "git_blob_sha": "155ccaf91d3a0438109a0fb9cfdfa2a564183802",
+      "bytes": 1725,
+      "base_git_blob_sha": "155ccaf91d3a0438109a0fb9cfdfa2a564183802",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/independent-1/receipt.json",
+      "sha256": "390daa5dc34407994d62df14357e65e63ecaaf400a0bbdd152c3aa3016eeb202",
+      "git_blob_sha": "23291d384a417f19907bf54498b5e37ef73ba5cd",
+      "bytes": 1408,
+      "base_git_blob_sha": "23291d384a417f19907bf54498b5e37ef73ba5cd",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/independent-1/stderr.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "base_git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/observations/independent-1/stdout.jsonl",
+      "sha256": "8db174a843b25792afa9960401ed41e4827d60faac996372353f0c780e944e9b",
+      "git_blob_sha": "155ccaf91d3a0438109a0fb9cfdfa2a564183802",
+      "bytes": 1725,
+      "base_git_blob_sha": "155ccaf91d3a0438109a0fb9cfdfa2a564183802",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/pure/pure-trace.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "git_blob_sha": "573541ac9702dd3969c9bc859d2b91ec1f7e6e56",
+      "bytes": 2,
+      "base_git_blob_sha": "573541ac9702dd3969c9bc859d2b91ec1f7e6e56",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/pure/pure-trace.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "base_git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/研究记录/experiments/sqlite-wal-main-copy-backup/pure/pure-trace.stdout",
+      "sha256": "f55dd0ea4807a353ecd18105e180b9c37363f4c9a83af0d6d844c1f314af3360",
+      "git_blob_sha": "250b38ef34ebb5da67e3c65f878403c89c61552d",
+      "bytes": 257,
+      "base_git_blob_sha": "250b38ef34ebb5da67e3c65f878403c89c61552d",
+      "unchanged_from_base": true
+    }
+  ],
+  "remaining_classification_debt": [
+    "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+    "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+    "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md"
+  ],
+  "unreviewed_scope": "剩余三篇全文不在本次通过内。读者首次试走涉及两份旧旁支快照，集成时按固定基线纠正后补审；不把旧材料缺陷当当前远端事实。"
+}

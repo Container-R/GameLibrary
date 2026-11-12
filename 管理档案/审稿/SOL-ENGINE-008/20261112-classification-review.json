@@ -1,0 +1,119 @@
+{
+  "review_date": "2026-11-12",
+  "review_type": "independent-model-full-text-review",
+  "base_commit": "5f927a13f4c106db94c67bcc4dafe74f5e0daf4a",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+    "sha256": "b7e59b376e698230f0f758053dfcf7afe864864767fc9c3840125c33ce8bcedb",
+    "git_blob_sha": "eed17c236bc1cf2c3cbfe0ce0adf464d810d0217",
+    "bytes": 14859
+  },
+  "verdict": {
+    "technical": "pass",
+    "reader": "pass",
+    "navigation": "pass-for-recorded-route"
+  },
+  "reports": [
+    {
+      "path": "管理档案/审稿/SOL-ENGINE-008/20261112-technical.md",
+      "sha256": "b9e695c042192e78e56163f41ad8ff3385fa07b059441ff42775808511a4fbf4",
+      "git_blob_sha": "88c03d95ded4614fc6fc2e6bac5e8a8c5063af09",
+      "bytes": 7697
+    },
+    {
+      "path": "管理档案/审稿/SOL-ENGINE-008/20261112-reader-navigation.md",
+      "sha256": "b37025b6b557ff67e198dbc17c8e1fb9587d8420c4a0782024d3a0e598595bd0",
+      "git_blob_sha": "0a60ca9ae91d739831630506209e9763df8bddd5",
+      "bytes": 9076
+    }
+  ],
+  "source_and_migration_record": {
+    "path": "管理档案/来源笔记/sqlite-backup-classification-20261112.json",
+    "sha256": "0d38a417080ed37b6c77fa032ca2860beb4c99f85de5716a655a1e30689b214d",
+    "git_blob_sha": "ae92b084b0eb22e391261a4063973ef4cf2279b0",
+    "bytes": 14951
+  },
+  "route_binding": [
+    {
+      "path": "README.md",
+      "sha256": "b62e79daa370b2e697308dae663faa0891f2f89b21dd5e744cee725fd9dbf864",
+      "git_blob_sha": "e000e02647ccdc2b887293b327bbf7f6f5689dd9",
+      "bytes": 282,
+      "base_git_blob_sha": "e000e02647ccdc2b887293b327bbf7f6f5689dd9",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/README.md",
+      "sha256": "c5c630b017d46d6c1ce785ed7ce28fcd2497437899e6c777f71907eefa26ec99",
+      "git_blob_sha": "b7402112215df1f2244afca02d5f2e816bfafde0",
+      "bytes": 1757,
+      "base_git_blob_sha": "b7402112215df1f2244afca02d5f2e816bfafde0",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/平台与发行/README.md",
+      "sha256": "dcaa0e60389caec4d454d639bdfd9580aba7d7be0afd40fc63f7dc3a5077f563",
+      "git_blob_sha": "c93c340ae753618e08985e6684b01570bbc16be6",
+      "bytes": 190,
+      "base_git_blob_sha": "c93c340ae753618e08985e6684b01570bbc16be6",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/平台与发行/平台接入/README.md",
+      "sha256": "ac79bcfcf57d8a42ce6fae8c0d102b4a3275906418730e99a68958ee90c7ae9e",
+      "git_blob_sha": "b1c3b6e2e201321dcff222dabbf7827f512e9ef5",
+      "bytes": 439,
+      "base_git_blob_sha": "b1c3b6e2e201321dcff222dabbf7827f512e9ef5",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/引擎与工具/README.md",
+      "sha256": "0c6a464f51867bff66cac92de0297e2d47197cdfc79d948427a4697a57af64dc",
+      "git_blob_sha": "138ed7af9f417d5b00115fc15e3b0fd23fb7c124",
+      "bytes": 406,
+      "base_git_blob_sha": "138ed7af9f417d5b00115fc15e3b0fd23fb7c124",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/README.md",
+      "sha256": "771eb9bb3ac72ea66d437f6f1f57963c42e63e32f33608fa9dcf4c6dc6d34f1f",
+      "git_blob_sha": "8ecfa9a56d39d716356fbb3b0dd5ae10ac3d17e1",
+      "bytes": 637,
+      "base_git_blob_sha": "8ecfa9a56d39d716356fbb3b0dd5ae10ac3d17e1",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/README.md",
+      "sha256": "65601dca8bb3468756497704839e101d9f311d5b49f67f881e761b780df69597",
+      "git_blob_sha": "75c4a65dc8ca8050c4b2bd38dfe58a69ec8aba74",
+      "bytes": 1962,
+      "base_git_blob_sha": "0b025e248ba311b50bddb2d1513edc16f88b6545",
+      "unchanged_from_base": false
+    }
+  ],
+  "editor_final_read": "Final full text read after both independent reviews; no required substantive revision remained.",
+  "migration_check": {
+    "old_path": {
+      "path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+      "sha256": "b65ec9f25f30bb833821750669000fe00ff551cb5eff4f263f8410df53d3f6f3",
+      "git_blob_sha": "2145f034f384465868099cdd45f506ed83ab69e8",
+      "bytes": 489
+    },
+    "experiment_entry": {
+      "path": "管理档案/支持资料/SQLite备份提前收尾/README.md",
+      "sha256": "5b7e1825709743ee4ee5612b778db93d018ec849d86a8f33d49fda6269929f13",
+      "git_blob_sha": "1ff39b7fdd92ad9b4057999a0409363d62311da7",
+      "bytes": 4816
+    },
+    "duplicate_technical_body_removed": true,
+    "canonical_article_path_unchanged": true
+  },
+  "scope_limits": [
+    "不是真人试读或生产接入验证",
+    "不继承历史通过；绑定本次全文字节",
+    "未新增实验或扩大断电/并发/跨设备保证",
+    "其他三篇技术支持文仍待分类",
+    "本文件是审稿记录，不是远端发表回执"
+  ],
+  "publication_integrity": "只在固定远端树上提交本次列明增量，不提交候选目录内其他历史快照内容；不改.agent、不删文件、不重写历史。"
+}
