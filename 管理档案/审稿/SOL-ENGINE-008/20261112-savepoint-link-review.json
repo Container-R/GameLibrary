@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+    "sha256": "418ab4658446d91a10e069aa421cee186fe7d5729861c6c4f0efaad051c3c008",
+    "git_blob_sha": "a5f2d57219a64426b96419d61b60cdbb59cebcef",
+    "bytes": 14777
+  },
+  "base_commit": "4ed6db29921c942ad2a6dddf2ab2df6d1c0e2e7c",
+  "base_article_sha256": "b7e59b376e698230f0f758053dfcf7afe864864767fc9c3840125c33ce8bcedb",
+  "prior_full_review": "管理档案/审稿/SOL-ENGINE-008/20261112-classification-review.json",
+  "scope": "仅更换保存点可选读链接及显示题名，无技术段落变化。",
+  "verification": "本轮编辑全文复读，并逐字比较限定替换；新目标经过独立全文技术、读者和根导航审查。旧全文通过不冒称新技术复审。",
+  "new_target": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 保存点与整次存档的提交边界.md",
+    "sha256": "9aa2c84deb980f5955f5fd7d2d1916ba411fc4a0fd7fbaab8f325e23e7c65406",
+    "git_blob_sha": "a17409ebfdb3bb214d2ee2c38cc96f9e385137d9",
+    "bytes": 12316
+  },
+  "new_target_review": "管理档案/审稿/GL-SQLITE-SAVEPOINT-BOUNDARY/20261112-review.json",
+  "verdict": "pass-for-link-only-edit"
+}

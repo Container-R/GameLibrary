@@ -1,0 +1,258 @@
+{
+  "date": "2026-11-12",
+  "kind": "formal-classification-of-complete-topic",
+  "base_commit": "4ed6db29921c942ad2a6dddf2ab2df6d1c0e2e7c",
+  "editor": "SQLite topic editor",
+  "question": "怎样为分模块保存划定局部回退与整次提交职责，并处理延迟外键拒绝后仍开放的事务？",
+  "scope": "将保存点完整主题独立归入缓存与存档，保留假设、实际观察与失败条件；不继续扩大备份正文。",
+  "old_path": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+  "old_body_git_blob_sha": "67d8be5d4af8feace7dec0ddaa5293c917fe8c7d",
+  "formal_article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 保存点与整次存档的提交边界.md",
+    "sha256": "9aa2c84deb980f5955f5fd7d2d1916ba411fc4a0fd7fbaab8f325e23e7c65406",
+    "git_blob_sha": "a17409ebfdb3bb214d2ee2c38cc96f9e385137d9",
+    "bytes": 12316
+  },
+  "editorial_changes": [
+    "采用含SQLite对象的题名及明确前提/承诺",
+    "保留完整机制、两组不同观察和既有范围；本轮不重跑实验",
+    "旧址只留迁移入口，备份文仅更换相关链接与显示题名",
+    "实验两README回链正式文，更新延迟外键包SHA256SUMS的README项；冻结实验输入输出不变"
+  ],
+  "source_recheck": {
+    "date": "2026-11-12",
+    "method": "独立模型专业审稿读取官方来源并核对实际代码和原始输出；不是历史通过沿用",
+    "sources": [
+      {
+        "url": "https://www.sqlite.org/lang_savepoint.html",
+        "locator": "sections 2–3",
+        "claim": "内层释放、最外层释放、ROLLBACK TO和整次回滚不同",
+        "conditions": "显式同连接事务及成功操作；不提供任意错误通用恢复规则"
+      },
+      {
+        "url": "https://www.sqlite.org/lang_transaction.html",
+        "locator": "sections 2–3",
+        "claim": "BEGIN不可嵌套，提交/回滚和错误后状态须区分",
+        "conditions": "使用支持回滚的日志模式；示例没有包装层隐式提交"
+      },
+      {
+        "url": "https://docs.python.org/3.12/library/sqlite3.html#transaction-control",
+        "locator": "transaction control, isolation_level, executescript",
+        "claim": "LEGACY_TRANSACTION_CONTROL加isolation_level=None允许显式SQL；executescript会提交已有事务",
+        "conditions": "只针对明确的Python3.12控制模式，不泛化包装器"
+      },
+      {
+        "url": "https://www.sqlite.org/isolation.html",
+        "locator": "same and separate connection visibility",
+        "claim": "写连接自己能看到未提交修改，不代表其他连接已接受",
+        "conditions": "观察为DELETE、private cache、读查询耗尽且无持有读事务的顺序调度"
+      },
+      {
+        "url": "https://www.sqlite.org/foreignkeys.html",
+        "locator": "sections 2, 4.2",
+        "claim": "内层释放可通过延迟约束，外层COMMIT/最外RELEASE仍检查；拒绝后事务需收束",
+        "conditions": "事务前开启并确认外键；DEFERRABLE INITIALLY DEFERRED；不扩大为RESTRICT或磁盘错误规则"
+      },
+      {
+        "url": "https://www.sqlite.org/rescode.html#constraint_foreignkey",
+        "locator": "SQLITE_CONSTRAINT_FOREIGNKEY",
+        "claim": "扩展错误码787说明外键违反，不替应用决定修复或放弃",
+        "conditions": "区分主错误码与扩展错误码"
+      }
+    ],
+    "version_scope": "SQLite滚动官方页面，不绑定实现提交；Python3.12文档和实验自报3.12.14/SQLite3.53.1分开。未认证历史运行库来源。"
+  },
+  "evidence": [
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/README.md",
+      "sha256": "5153716ffe6446640c4a80bb00fc3ce98f72525f0e6385e86695b6b894f95978",
+      "git_blob_sha": "361b4a276a1087902d699e907f1e4f322f5cfd38",
+      "bytes": 5392,
+      "base_git_blob_sha": "31189af68b5787ce89155295ae09b62655952c47",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/fixture/PROTOCOL.md",
+      "sha256": "ba30dd2bfc251866c1862edb15e3f009d019ae35139eecf01fd1706eca9a2537",
+      "git_blob_sha": "55d3913af5ae93f699ac353a7519ff6a924ea513",
+      "bytes": 6505,
+      "base_git_blob_sha": "55d3913af5ae93f699ac353a7519ff6a924ea513",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/fixture/driver.py",
+      "sha256": "284abd85728d19ff601af7e3e59e837e83dee262c9f2807bf5b141b4a31227d6",
+      "git_blob_sha": "b17dc59d7b3ecbfd15b3d9f93fa25feab09cf5ed",
+      "bytes": 4227,
+      "base_git_blob_sha": "b17dc59d7b3ecbfd15b3d9f93fa25feab09cf5ed",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/fixture/expected.json",
+      "sha256": "085a819e5fa206f99f08ff63b1664cbf94c68032d2bac34cd77b8d1e36c3e363",
+      "git_blob_sha": "aceafa2dcf28d02d11222ba04f2e995ab2da46a5",
+      "bytes": 2630,
+      "base_git_blob_sha": "aceafa2dcf28d02d11222ba04f2e995ab2da46a5",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/fixture/manifest.json",
+      "sha256": "111ec2d9a6b460ced9a63b2d48cfacd905b7428f53aea559f8f62256b73ada06",
+      "git_blob_sha": "f65f0e020c10de4c8f4bf9e6f9d95f1ebb5bb67d",
+      "bytes": 420,
+      "base_git_blob_sha": "f65f0e020c10de4c8f4bf9e6f9d95f1ebb5bb67d",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/fixture/runner.py",
+      "sha256": "4683d9aebdeacd5f15985e0e34bfa502e30978e98b7150a68b0f9b64ae899a38",
+      "git_blob_sha": "8dc48d0491592182d715455e1459ae4b7f97f358",
+      "bytes": 8821,
+      "base_git_blob_sha": "8dc48d0491592182d715455e1459ae4b7f97f358",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/observations/independent-1/output.json",
+      "sha256": "6caeea06bf0bb5447c48c0da3d5757cccbebe30752f579f0a411b88c7f00627a",
+      "git_blob_sha": "48b4b168a65fb1ffbcc9eb1e3c89c5a69b3884a6",
+      "bytes": 2035,
+      "base_git_blob_sha": "48b4b168a65fb1ffbcc9eb1e3c89c5a69b3884a6",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/observations/independent-1/result.json",
+      "sha256": "62e39ccfccd91bdd8b374432c6ccc52b0f4b0e54d2124afba8b3a19ad499d988",
+      "git_blob_sha": "abaac473956275e1c5ad54b8762f24cc312410ea",
+      "bytes": 983,
+      "base_git_blob_sha": "abaac473956275e1c5ad54b8762f24cc312410ea",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/observations/main-1/output.json",
+      "sha256": "6caeea06bf0bb5447c48c0da3d5757cccbebe30752f579f0a411b88c7f00627a",
+      "git_blob_sha": "48b4b168a65fb1ffbcc9eb1e3c89c5a69b3884a6",
+      "bytes": 2035,
+      "base_git_blob_sha": "48b4b168a65fb1ffbcc9eb1e3c89c5a69b3884a6",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite保存点两连接/observations/main-1/result.json",
+      "sha256": "62e39ccfccd91bdd8b374432c6ccc52b0f4b0e54d2124afba8b3a19ad499d988",
+      "git_blob_sha": "abaac473956275e1c5ad54b8762f24cc312410ea",
+      "bytes": 983,
+      "base_git_blob_sha": "abaac473956275e1c5ad54b8762f24cc312410ea",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/README.md",
+      "sha256": "f14751097c34cee456e4202d2f608a8ed725b82218eb41af80a7f2eab5fe2741",
+      "git_blob_sha": "9382ae437897cc43ae6fe66ce69f8e059d3c06c9",
+      "bytes": 5607,
+      "base_git_blob_sha": "7e59f8943ed806f53ac17b93d84c36b3dad7753f",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/SHA256SUMS",
+      "sha256": "aa33cc981b3b2bd5f950a891d3a29c99d8439138f3f075d7d1d553561127b319",
+      "git_blob_sha": "42dcb021d94b907647c7d3a1faed48a7b8a37d65",
+      "bytes": 936,
+      "base_git_blob_sha": "b26985a2a913a996ac60e15ea2e752e51242a1a3",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/fixture/PROTOCOL.md",
+      "sha256": "d6b8c8c59714e57f563e7bccacf5f09c52d52b221f68fa1ac4a29c31ba362371",
+      "git_blob_sha": "891de5b1d009b9cab54e01d2887451a0fdf94905",
+      "bytes": 4796,
+      "base_git_blob_sha": "891de5b1d009b9cab54e01d2887451a0fdf94905",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/fixture/driver.py",
+      "sha256": "bde55c41d1dd5f94498b5bef58f3a2b958c45d91a862fe3c746048ce89b8057a",
+      "git_blob_sha": "c36979c4d4ea790b031f269e0fd3f881d354f9e2",
+      "bytes": 5233,
+      "base_git_blob_sha": "c36979c4d4ea790b031f269e0fd3f881d354f9e2",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/fixture/expected.json",
+      "sha256": "0e66839cb98b1a5ceed92a9e82b3780790b81830e6519ae4970af071b062c742",
+      "git_blob_sha": "b947d97a342ea341b4a58fd26967fdc1837d3a04",
+      "bytes": 4168,
+      "base_git_blob_sha": "b947d97a342ea341b4a58fd26967fdc1837d3a04",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/fixture/manifest.json",
+      "sha256": "9e458ae0cad8cdd91e6e0946a8320f30c8b5472671b531aea2257c87c5f002b7",
+      "git_blob_sha": "207c168f7355e85abc253a2cfe23798cbac2632b",
+      "bytes": 374,
+      "base_git_blob_sha": "207c168f7355e85abc253a2cfe23798cbac2632b",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/fixture/runner.py",
+      "sha256": "bfe6fe2890ecee42e9e36821704aa471d9e2767944b620782bfd46ace6e18551",
+      "git_blob_sha": "3bf3eb79e5bf27c1f3840449c8a6f71f1b6c757a",
+      "bytes": 8827,
+      "base_git_blob_sha": "3bf3eb79e5bf27c1f3840449c8a6f71f1b6c757a",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/observations/author-1/output.json",
+      "sha256": "35ef98ca925be661d84c3d348f1fe158a6e26e2ee625d033d66d820264b2753b",
+      "git_blob_sha": "b29854763971110be762b48deee1195b6342652e",
+      "bytes": 2883,
+      "base_git_blob_sha": "b29854763971110be762b48deee1195b6342652e",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/observations/author-1/result.json",
+      "sha256": "6e16f4ee6f257dcbd1d9ea5daf48a5c231adda77232b0ac3651a42901b4a7961",
+      "git_blob_sha": "11fe43609bc78360ef63c5a407c3424f82475065",
+      "bytes": 989,
+      "base_git_blob_sha": "11fe43609bc78360ef63c5a407c3424f82475065",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/observations/independent-1/output.json",
+      "sha256": "35ef98ca925be661d84c3d348f1fe158a6e26e2ee625d033d66d820264b2753b",
+      "git_blob_sha": "b29854763971110be762b48deee1195b6342652e",
+      "bytes": 2883,
+      "base_git_blob_sha": "b29854763971110be762b48deee1195b6342652e",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite延迟外键两连接/observations/independent-1/result.json",
+      "sha256": "6e16f4ee6f257dcbd1d9ea5daf48a5c231adda77232b0ac3651a42901b4a7961",
+      "git_blob_sha": "11fe43609bc78360ef63c5a407c3424f82475065",
+      "bytes": 989,
+      "base_git_blob_sha": "11fe43609bc78360ef63c5a407c3424f82475065",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/来源笔记/sqlite-deferred-foreign-key.json",
+      "sha256": "3a3ed16fee5f8c9cc52e29763458f2072fd24755bd93da07e9b361a49fb28353",
+      "git_blob_sha": "420005b676ae98bbdd329f451e83073bb5187675",
+      "bytes": 1973,
+      "base_git_blob_sha": "420005b676ae98bbdd329f451e83073bb5187675",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/来源笔记/sqlite-savepoint-boundary.json",
+      "sha256": "426f635a7f5a51f5132435b50cbb1e651269c189036e6556d846a952488a87dd",
+      "git_blob_sha": "1f202f4a557155d15dd777dfbd231caa85e98e75",
+      "bytes": 2157,
+      "base_git_blob_sha": "1f202f4a557155d15dd777dfbd231caa85e98e75",
+      "unchanged_from_base": true
+    }
+  ],
+  "evidence_boundary": "编辑前23对象与固定远端树一致。最终20未变，2README和1README摘要清单有导航改动；两套driver、协议、预期、输出、接收结果不变。",
+  "readme_baseline": "送盲导航前已逐blob认证候选242个README；仅本次目标专题入口随后有意编辑。其他候选正文未全面同步，不作为发表输入。",
+  "remaining_classification_debt": [
+    "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+    "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md"
+  ],
+  "scope_limit": "只完成保存点主题的正式归类，不宣称整专题或全库分类清零。"
+}

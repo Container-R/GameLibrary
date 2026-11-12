@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 保存点与整次存档的提交边界.md",
+    "sha256": "9aa2c84deb980f5955f5fd7d2d1916ba411fc4a0fd7fbaab8f325e23e7c65406",
+    "git_blob_sha": "a17409ebfdb3bb214d2ee2c38cc96f9e385137d9",
+    "bytes": 12316
+  },
+  "author": "SQLite topic editor",
+  "base_commit": "4ed6db29921c942ad2a6dddf2ab2df6d1c0e2e7c",
+  "review_type": "independent-model-full-text-review",
+  "verdict": {
+    "technical": "pass",
+    "reader": "pass",
+    "navigation": "pass-after-topic-list-placement-fix"
+  },
+  "reports": [
+    {
+      "path": "管理档案/审稿/GL-SQLITE-SAVEPOINT-BOUNDARY/20261112-technical.md",
+      "sha256": "ff0fa08ae5151d0e5934899828337c525b21cb729ba0271bb5d71960caa3738b",
+      "git_blob_sha": "25f168b1421b2b61924d980832087a437c5ef264",
+      "bytes": 9553,
+      "original_report_sha256": "ff0fa08ae5151d0e5934899828337c525b21cb729ba0271bb5d71960caa3738b",
+      "public_transform": "无变换"
+    },
+    {
+      "path": "管理档案/审稿/GL-SQLITE-SAVEPOINT-BOUNDARY/20261112-reader-navigation.md",
+      "sha256": "4d4399101167fbc7c6e9180217447094502456067dfc6ec4be84ebdd8ffafe66",
+      "git_blob_sha": "e228cecd00e607b73f3c45c4691cc1ce48e6962d",
+      "bytes": 10057,
+      "original_report_sha256": "94aef3ae2b1caa9551af55a36ac85a09453056db6d60f4d56e17d23a7928243d",
+      "public_transform": "移除本地候选目录行，其余逐字保留"
+    }
+  ],
+  "evidence": {
+    "path": "管理档案/来源笔记/sqlite-savepoint-classification-20261112.json",
+    "sha256": "64be7623b63046066ddd8782c53c79bfb62949255395dd472f6dabb39ff855e9",
+    "git_blob_sha": "233ddaf805194bda23cff9392af764f91966376b",
+    "bytes": 13211
+  },
+  "editor_final_read": "Final full text reread; objections and navigation placement checked.",
+  "navigation_correction": "独立读者发现新文章误放相关专题下，集成者移到正式文章列表，读者定点复核。正文摘要未因此改变。",
+  "scope_limits": [
+    "模型审稿不是真人试用",
+    "本轮未重跑实验或验证断电/并发",
+    "剩余两篇技术支持文不在本次通过内",
+    "记录本身不替代远端发表回执"
+  ]
+}
