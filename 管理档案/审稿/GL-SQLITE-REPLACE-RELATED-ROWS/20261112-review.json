@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite REPLACE 与 UPSERT：更新存档时保留关联数据.md",
+    "sha256": "83d72b02dcc978b5af609b5469778a80f678e9f053b294a0299a03cdc591dc17",
+    "git_blob_sha": "06c3095700aaa1d86cd9e71d77aa0b9715ef0390",
+    "bytes": 6904
+  },
+  "author": "SQLite topic editor",
+  "base_commit": "1373a74f929486d78c81ef8fbd04f4f8b0254016",
+  "review_type": "independent-model-full-text-review",
+  "verdict": {
+    "technical": "pass",
+    "reader": "pass",
+    "navigation": "pass-for-recorded-route"
+  },
+  "reports": [
+    {
+      "path": "管理档案/审稿/GL-SQLITE-REPLACE-RELATED-ROWS/20261112-technical.md",
+      "sha256": "f29237be819b69721f600de322bf2ea396cd8d45de30f8163578f2bfd9f76836",
+      "git_blob_sha": "d5ec7e23a9bd8d20a9803122557432d3e886943a",
+      "bytes": 6692,
+      "original_report_sha256": "3b0f6891bdfb986037285b39e20908a52a53a91422240f9ca7a14492eca25162",
+      "public_transform": "移除本地候选目录行，其他字节不变"
+    },
+    {
+      "path": "管理档案/审稿/GL-SQLITE-REPLACE-RELATED-ROWS/20261112-reader-navigation.md",
+      "sha256": "ce86d75d94bcf828192875803de6acc71f4c9b90a8553c0af8cbda6eb116810e",
+      "git_blob_sha": "f04d37df1eef13a76f159dbe43bab9380dc9ac2f",
+      "bytes": 8081,
+      "original_report_sha256": "ce86d75d94bcf828192875803de6acc71f4c9b90a8553c0af8cbda6eb116810e",
+      "public_transform": "无变换"
+    }
+  ],
+  "evidence": {
+    "path": "管理档案/来源笔记/sqlite-replace-classification-20261112.json",
+    "sha256": "b746bdafd56e708e9d93a7bcc1e38e53cc642d44ad53a2711baa839f5af8058e",
+    "git_blob_sha": "a385cdce87e66294098d2e996c96019c61f5e817",
+    "bytes": 7941
+  },
+  "editor_final_read": "Full final article read; technical and reader findings checked.",
+  "scope_limits": [
+    "模型审稿不是真人试用",
+    "本轮未重新执行数据库实验",
+    "不认证生产恢复、并发、持久性或任意UPSERT",
+    "剩余参数重绑正文仍待分类",
+    "本记录不替代远端发表回执"
+  ]
+}

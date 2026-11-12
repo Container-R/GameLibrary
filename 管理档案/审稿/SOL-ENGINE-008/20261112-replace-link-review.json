@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+    "sha256": "4a076bed129cb06ed373470c1dc9f67c742107eb39bacb92501cd74f41e8805a",
+    "git_blob_sha": "875914502d4f44bcebab1a0d8d87d97b2e123f76",
+    "bytes": 14747
+  },
+  "base_commit": "1373a74f929486d78c81ef8fbd04f4f8b0254016",
+  "base_article_sha256": "418ab4658446d91a10e069aa421cee186fe7d5729861c6c4f0efaad051c3c008",
+  "prior_revision_review": "管理档案/审稿/SOL-ENGINE-008/20261112-savepoint-link-review.json",
+  "original_full_review": "管理档案/审稿/SOL-ENGINE-008/20261112-classification-review.json",
+  "scope": "仅替换REPLACE可选读链接及显示题名，没有技术段落变化。",
+  "verification": "编辑全文复读和精确限定替换比较；新目标独立全文审查和根导航通过。",
+  "new_target": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite REPLACE 与 UPSERT：更新存档时保留关联数据.md",
+    "sha256": "83d72b02dcc978b5af609b5469778a80f678e9f053b294a0299a03cdc591dc17",
+    "git_blob_sha": "06c3095700aaa1d86cd9e71d77aa0b9715ef0390",
+    "bytes": 6904
+  },
+  "new_target_review": "管理档案/审稿/GL-SQLITE-REPLACE-RELATED-ROWS/20261112-review.json",
+  "verdict": "pass-for-link-only-edit"
+}

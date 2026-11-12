@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-12",
+  "kind": "formal-classification-of-complete-topic",
+  "base_commit": "1373a74f929486d78c81ef8fbd04f4f8b0254016",
+  "editor": "SQLite topic editor",
+  "question": "同编号装备父行仍在、属性值正确时，为何REPLACE能删除从属词条，怎样选择保留关系的更新并检查结果？",
+  "scope": "独立正式归类既有REPLACE/UPSERT机制、对照SQL、接受检查及有限观察；不继续扩写备份正文。",
+  "old_path": "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md",
+  "old_body_git_blob_sha": "70606ea44fddc37f17dad85ab40bfe0ea2dd0d2b",
+  "formal_article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite REPLACE 与 UPSERT：更新存档时保留关联数据.md",
+    "sha256": "83d72b02dcc978b5af609b5469778a80f678e9f053b294a0299a03cdc591dc17",
+    "git_blob_sha": "06c3095700aaa1d86cd9e71d77aa0b9715ef0390",
+    "bytes": 6904
+  },
+  "editorial_changes": [
+    "题名明确SQLite对象，补明确读者前提及范围",
+    "技术解释完整迁入正式目录，旧址仅留迁移入口",
+    "备份文只更换可选读的目标与显示题名",
+    "实验README更新回链/支持文称谓，artifact-manifest只更新README条目；冻结实验与结果不变"
+  ],
+  "source_recheck": {
+    "date": "2026-11-12",
+    "method": "独立模型专业审稿亲读官方来源和当前完整正文，并核对实验代码、预期、实际输出；不沿用旧通过",
+    "sources": [
+      {
+        "url": "https://www.sqlite.org/lang_conflict.html",
+        "locator": "REPLACE and ABORT",
+        "claim": "主键/唯一性冲突的REPLACE删除旧行，删除触发器的recursive_triggers条件不等于外键动作开关",
+        "conditions": "本文普通表、所示主键冲突，不外推NOT NULL的不同REPLACE规则"
+      },
+      {
+        "url": "https://www.sqlite.org/lang_upsert.html",
+        "locator": "sections 2, 2.1, 3, 4",
+        "claim": "冲突目标指定唯一性约束；excluded取本次拟插入值；DO UPDATE违规ABORT整条INSERT；版本门槛3.24.0",
+        "conditions": "单个明确目标的冲突子句，只改durability，不改父键；不是任意UPSERT或包装器保证"
+      },
+      {
+        "url": "https://www.sqlite.org/foreignkeys.html",
+        "locator": "sections 2, 4.3, 6 item 3",
+        "claim": "外键须启用并读回；CASCADE随父删除删除子行，recursive_triggers不能禁用外键动作",
+        "conditions": "支持外键的构建，事务外启用，当前连接读回1，无其他修改者/用户触发器"
+      }
+    ],
+    "version_scope": "滚动官方文档，不是固定源码或运行库来源认证。历史运行自报Python3.12.14/SQLite3.53.1，实验观察与语义来源分开。"
+  },
+  "evidence": [
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/README.md",
+      "sha256": "06fe2a4bbd340cfe982d25acf01061343692faafe5beaf7b6ca8211a9adb8b8d",
+      "git_blob_sha": "1e7f3d8fb7e84e6f6436c948cb8ab335c1e90b36",
+      "bytes": 4542,
+      "base_git_blob_sha": "58bf5c4f9924ef34d87c1d8da58f4c3861199add",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/artifact-manifest.json",
+      "sha256": "57994411be12b8a6bdcf1e3b6990701eaa5c46ebca098fe34def29cd0b096b33",
+      "git_blob_sha": "477e2c2b9409d7bacdd996b95351c7b780feac76",
+      "bytes": 1747,
+      "base_git_blob_sha": "83fc9c64170a716fea0e9e584c4aacac26658498",
+      "unchanged_from_base": false
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/fixture/PROTOCOL.md",
+      "sha256": "fd5ce9826cb1a8b9621c67524b5df78d24243fb4db3e890e22c97963cceda513",
+      "git_blob_sha": "c86f19ac03a09a4ef5f4ffc74ed59f5ac41e5d34",
+      "bytes": 8841,
+      "base_git_blob_sha": "c86f19ac03a09a4ef5f4ffc74ed59f5ac41e5d34",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/fixture/driver.py",
+      "sha256": "1f20139d9eb4d2985142fdd1fd718294aadee42564327c0223a903cae3ad8307",
+      "git_blob_sha": "aa435da569b4b81d8e314ff83b18513e11b6f5e9",
+      "bytes": 5428,
+      "base_git_blob_sha": "aa435da569b4b81d8e314ff83b18513e11b6f5e9",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/fixture/expected.json",
+      "sha256": "570d8c0786bbb59db7761abce6a95d56f76a4141f4c532dceaf24dca49d7b14a",
+      "git_blob_sha": "b4a149d347f878b019e59403a04c67ad04c61efc",
+      "bytes": 1119,
+      "base_git_blob_sha": "b4a149d347f878b019e59403a04c67ad04c61efc",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/fixture/manifest.json",
+      "sha256": "e5961d67d7382f9bbc44506fbd2754aa9ad86e210ab923128aecbb98bbcf4de2",
+      "git_blob_sha": "deb8f9f9c17b743ba51d5eea961522d8bca05218",
+      "bytes": 374,
+      "base_git_blob_sha": "deb8f9f9c17b743ba51d5eea961522d8bca05218",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/fixture/runner.py",
+      "sha256": "dd4076a88aa15dd80989a24bec8e28a6837709a1c91dfa97653651e78928b4d2",
+      "git_blob_sha": "7fb559fdce0a56e9cbb82bb6d8533e2845a2102c",
+      "bytes": 9383,
+      "base_git_blob_sha": "7fb559fdce0a56e9cbb82bb6d8533e2845a2102c",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/observations/author-1/output.json",
+      "sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96",
+      "git_blob_sha": "2105af22712a18e1f200d953f6a47336af4f4bf4",
+      "bytes": 1221,
+      "base_git_blob_sha": "2105af22712a18e1f200d953f6a47336af4f4bf4",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/observations/author-1/result.json",
+      "sha256": "05882f4c40af6077a50c40043dcdd41825bcbb79219e8ca41b005a5596b0fd89",
+      "git_blob_sha": "ce5abac5147acc0d3f225a6252e6baac86edf097",
+      "bytes": 999,
+      "base_git_blob_sha": "ce5abac5147acc0d3f225a6252e6baac86edf097",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/observations/independent-1/output.json",
+      "sha256": "7c0ba9c782e07b76bf1914065c9739e4f01efb5b15d8703c97c6a6258b8c0e96",
+      "git_blob_sha": "2105af22712a18e1f200d953f6a47336af4f4bf4",
+      "bytes": 1221,
+      "base_git_blob_sha": "2105af22712a18e1f200d953f6a47336af4f4bf4",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/支持资料/SQLite替换关联行观察/observations/independent-1/result.json",
+      "sha256": "05882f4c40af6077a50c40043dcdd41825bcbb79219e8ca41b005a5596b0fd89",
+      "git_blob_sha": "ce5abac5147acc0d3f225a6252e6baac86edf097",
+      "bytes": 999,
+      "base_git_blob_sha": "ce5abac5147acc0d3f225a6252e6baac86edf097",
+      "unchanged_from_base": true
+    },
+    {
+      "path": "管理档案/来源笔记/sqlite-replace-related-rows.json",
+      "sha256": "cddbd81cd2e07937d7be4e69befb1a44a0c71f33d2a9b109f359dc61a8d0b03d",
+      "git_blob_sha": "e2bc8ee2e187d90d308bc30d375573fb53a7498a",
+      "bytes": 3473,
+      "base_git_blob_sha": "e2bc8ee2e187d90d308bc30d375573fb53a7498a",
+      "unchanged_from_base": true
+    }
+  ],
+  "evidence_boundary": "12相关对象在编辑前与远端树匹配；最终10个未变，2个导航/摘要包装文件有意改变。本轮未重跑、新增或借用其他SQLite实验。",
+  "remaining_classification_debt": [
+    "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md"
+  ],
+  "scope_limit": "只完成REPLACE关联数据这一完整主题；剩余参数重绑和其他未审查正文不在本次通过内。"
+}

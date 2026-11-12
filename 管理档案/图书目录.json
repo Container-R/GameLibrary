@@ -553,9 +553,9 @@
       "reader_title": "SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度",
       "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
       "reader_body_status": "published",
-      "reader_sha256": "418ab4658446d91a10e069aa421cee186fe7d5729861c6c4f0efaad051c3c008",
+      "reader_sha256": "4a076bed129cb06ed373470c1dc9f67c742107eb39bacb92501cd74f41e8805a",
       "source_record": "管理档案/来源笔记/sqlite-wal-main-copy-backup.json",
-      "review": "管理档案/审稿/SOL-ENGINE-008/20261112-savepoint-link-review.json"
+      "review": "管理档案/审稿/SOL-ENGINE-008/20261112-replace-link-review.json"
     },
     {
       "internal_id": "SOL-PLATFORM-002",
@@ -1212,6 +1212,15 @@
       "reader_sha256": "9aa2c84deb980f5955f5fd7d2d1916ba411fc4a0fd7fbaab8f325e23e7c65406",
       "source_record": "管理档案/来源笔记/sqlite-savepoint-classification-20261112.json",
       "review": "管理档案/审稿/GL-SQLITE-SAVEPOINT-BOUNDARY/20261112-review.json"
+    },
+    {
+      "internal_id": "GL-SQLITE-REPLACE-RELATED-ROWS",
+      "reader_title": "SQLite REPLACE 与 UPSERT：更新存档时保留关联数据",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite REPLACE 与 UPSERT：更新存档时保留关联数据.md",
+      "reader_body_status": "published",
+      "reader_sha256": "83d72b02dcc978b5af609b5469778a80f678e9f053b294a0299a03cdc591dc17",
+      "source_record": "管理档案/来源笔记/sqlite-replace-classification-20261112.json",
+      "review": "管理档案/审稿/GL-SQLITE-REPLACE-RELATED-ROWS/20261112-review.json"
     }
   ]
 }
