@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档已经提交，为什么只复制数据库文件还会漏掉进度.md",
+    "sha256": "9ca184cbbf3c76dab778718ad8284f8999de32a2a1b1aa61f128a837f5f682ac",
+    "git_blob_sha": "a0a780b207fd67e52ce3e993f49b2ba2ce108ec6",
+    "bytes": 14665
+  },
+  "base_commit": "293c3f933592bbf5116d81d2adfcf2f8e4275aee",
+  "base_article_sha256": "4a076bed129cb06ed373470c1dc9f67c742107eb39bacb92501cd74f41e8805a",
+  "prior_revision_review": "管理档案/审稿/SOL-ENGINE-008/20261112-replace-link-review.json",
+  "original_full_review": "管理档案/审稿/SOL-ENGINE-008/20261112-classification-review.json",
+  "scope": "仅替换参数重绑可选读链接及显示题名，无技术段落变化。",
+  "verification": "本轮进行精确限定替换比较；新目标独立全文技术、读者与根导航审查通过。不把链接更换称为备份技术复审。",
+  "new_target": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档写入中的语句复用与参数重绑.md",
+    "sha256": "77980c8be90fed019c948e6208b6ee3f498e6ce443eb65f93815439127390a8d",
+    "git_blob_sha": "22ae3a40d27ec5ba670c21895d28a7bf3f5615c9",
+    "bytes": 5252
+  },
+  "new_target_review": "管理档案/审稿/GL-SQLITE-BINDING-REUSE/20261112-review.json",
+  "verdict": "pass-for-link-only-edit"
+}

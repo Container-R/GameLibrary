@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-12",
+  "kind": "formal-classification-of-complete-topic",
+  "base_commit": "293c3f933592bbf5116d81d2adfcf2f8e4275aee",
+  "editor": "SQLite topic editor",
+  "question": "同一预处理语句再次执行时，为何旧数量仍合法写入，怎样区分执行重置、参数清空及本行完整绑定？",
+  "scope": "SQLite C接口的语句复用和整数参数来源诊断，完整四分支推导与业务读回；不是语句池、并发或通用错误恢复实现。",
+  "old_path": "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+  "old_body_git_blob_sha": "0f3560a59a24d08ad57a5c262a029243579398ca",
+  "formal_article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档写入中的语句复用与参数重绑.md",
+    "sha256": "77980c8be90fed019c948e6208b6ee3f498e6ce443eb65f93815439127390a8d",
+    "git_blob_sha": "22ae3a40d27ec5ba670c21895d28a7bf3f5615c9",
+    "bytes": 5252
+  },
+  "editorial_changes": [
+    "采用明确SQLite对象及任务的正式题名，补读者前提与范围",
+    "保留机制、四种替代选择、错误返回与NULL边界；不制造运行结果",
+    "旧址仅留迁移入口，备份文只替换可选读链接和显示题名",
+    "正式专题文章列表和目录登记同步"
+  ],
+  "source_recheck": {
+    "date": "2026-11-12",
+    "method": "编辑与独立技术模型直接读取官方C接口及SQL约束文档；独立全文审稿不沿用旧通过",
+    "sources": [
+      {
+        "url": "https://sqlite.org/c3ref/reset.html",
+        "locator": "complete API body, reset semantics and return codes",
+        "claim": "reset恢复可执行位置但保留绑定；返回值可能报告上次执行或重置期间错误",
+        "conditions": "本文已检查成功的普通两行INSERT，不能按reset名字推断业务接受"
+      },
+      {
+        "url": "https://sqlite.org/c3ref/clear_bindings.html",
+        "locator": "complete API body",
+        "claim": "clear_bindings将所有宿主参数设为NULL，不是0或本行所需值",
+        "conditions": "清空成功仍需本行完整赋值；约束能否拒绝取决于实际模式"
+      },
+      {
+        "url": "https://sqlite.org/c3ref/bind_blob.html",
+        "locator": "parameter indexes, bind_int, call preconditions, unbound parameters and return codes",
+        "claim": "?NNN按NNN索引绑定，已step后须reset再重绑；未绑定参数为NULL；绑定返回码须检查",
+        "conditions": "同一有效预处理语句、整数绑定；不外推字符串生命周期和包装器行为"
+      },
+      {
+        "url": "https://www.sqlite.org/lang_createtable.html#not_null_constraints",
+        "locator": "3.8 NOT NULL, 4.1 constraint response",
+        "claim": "本例qty NOT NULL下清空后漏绑会失败，普通INSERT未覆写冲突策略",
+        "conditions": "若允许NULL，漏绑可能合法写入NULL；不是通用漏绑探测方法"
+      }
+    ],
+    "version_scope": "官方滚动文档，不是固定实现提交或此前实验的运行库认证。"
+  },
+  "evidence_basis": "原创假设与官方文档推导；原文和本轮均未运行SQL或C程序。没有实验附件，不借用WAL/备份/保存点/REPLACE实验。",
+  "historical_source_record": {
+    "path": "管理档案/来源笔记/sqlite-reset-binding.json",
+    "sha256": "85f666da73b40c1a6b605e1d53c40b3002605b812b26d0d7ff4a5aa20cfe1100",
+    "git_blob_sha": "7b635a463910a986eef6853cd6b4b45bd36a4a00",
+    "bytes": 1500
+  },
+  "original_four_support_links": {
+    "scope": "仅此前从SQLite备份正文识别出的四篇解释型支持正文，不代表整个专题或全库分类普查",
+    "prior_remote_stubs_verified_at_base": [
+      {
+        "path": "管理档案/支持资料/取消备份也返回OK，怎样判断新存档是否真的备份完成.md",
+        "sha": "2145f034f384465868099cdd45f506ed83ab69e8",
+        "sha256": "b65ec9f25f30bb833821750669000fe00ff551cb5eff4f263f8410df53d3f6f3",
+        "observation": "远端全文是短迁移入口，无第二份技术解释"
+      },
+      {
+        "path": "管理档案/支持资料/辅助保存函数已经成功，为什么外层回滚仍会撤销它.md",
+        "sha": "612fbf1a0e92de0c99662f4ae3565e47f9785751",
+        "sha256": "053d22ed50516dc0d5540c8d4f0f37edfe92e634bd4a36b36f8da0bb98e4b300",
+        "observation": "远端全文是短迁移入口，无第二份技术解释"
+      },
+      {
+        "path": "管理档案/支持资料/保存后装备编号还在，为什么附加词条却没了.md",
+        "sha": "c926af36003ab304fc5bed9e7a490e0438211faa",
+        "sha256": "8e1191824fc4f76e53e5eb8ccaa3b5f11a849fb2617f366efed40dcc70346b75",
+        "observation": "远端全文是短迁移入口，无第二份技术解释"
+      }
+    ],
+    "current_stub": {
+      "path": "管理档案/支持资料/复用保存语句时，为什么上一件道具的数量会留到下一件.md",
+      "sha256": "846af7f3211f89edd9a9cb30299524641970737dc7fa9003aac25493691234bd",
+      "git_blob_sha": "5b242d361ea1e589769283e951fce111fa0972f4",
+      "bytes": 457
+    },
+    "backup_no_longer_links_to_those_old_technical_paths": true,
+    "remaining_in_this_identified_set": []
+  },
+  "scope_limit": "本次专业通过只覆盖参数重绑正文。其余三项的迁移现状已读取，未冒称重新全文审查其技术内容；不作全库分类清零判断。"
+}

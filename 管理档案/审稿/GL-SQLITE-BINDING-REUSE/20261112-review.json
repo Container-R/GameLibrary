@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-12",
+  "article": {
+    "path": "GameLibrary/引擎与工具/运行时系统/缓存与存档/SQLite 存档写入中的语句复用与参数重绑.md",
+    "sha256": "77980c8be90fed019c948e6208b6ee3f498e6ce443eb65f93815439127390a8d",
+    "git_blob_sha": "22ae3a40d27ec5ba670c21895d28a7bf3f5615c9",
+    "bytes": 5252
+  },
+  "author": "SQLite topic editor",
+  "base_commit": "293c3f933592bbf5116d81d2adfcf2f8e4275aee",
+  "review_type": "independent-model-full-text-review",
+  "verdict": {
+    "technical": "pass",
+    "reader": "pass",
+    "navigation": "pass-for-recorded-route"
+  },
+  "reports": [
+    {
+      "path": "管理档案/审稿/GL-SQLITE-BINDING-REUSE/20261112-technical.md",
+      "sha256": "7172ac23d38bb3dfa103a23137218482573d1a3226ffdc95f0cc166996953da1",
+      "git_blob_sha": "315b30f0f2db419cc88001c2afb36e1c97c64234",
+      "bytes": 5856,
+      "original_report_sha256": "7172ac23d38bb3dfa103a23137218482573d1a3226ffdc95f0cc166996953da1",
+      "public_transform": "无变换"
+    },
+    {
+      "path": "管理档案/审稿/GL-SQLITE-BINDING-REUSE/20261112-reader-navigation.md",
+      "sha256": "c1c2f15b9c609d7c78e705a0c0ddf97b2cb4fdecad493a03805fd2ac608a3234",
+      "git_blob_sha": "caf1df3b99245d0a70f0b62ccc2c1c2ada6bc9e5",
+      "bytes": 7953,
+      "original_report_sha256": "c1c2f15b9c609d7c78e705a0c0ddf97b2cb4fdecad493a03805fd2ac608a3234",
+      "public_transform": "无变换"
+    }
+  ],
+  "evidence": {
+    "path": "管理档案/来源笔记/sqlite-binding-classification-20261112.json",
+    "sha256": "eef9a087fcb3e9bcc16d85944eb0d47521061044d783be3ab2be183bf7cff5b8",
+    "git_blob_sha": "2bee15118b95f216c68b2c46c53f5b987034660e",
+    "bytes": 5495
+  },
+  "editor_final_read": "Final full article read; scope and independent findings checked.",
+  "scope_limits": [
+    "模型审读不是真人试用",
+    "文档推导不是执行观察，无实验通过声明",
+    "不认证包装器、字符串内存管理、并发或错误重试",
+    "闭合已识别四篇分类集合，不宣称全库健康",
+    "本记录不替代远端发表回执"
+  ]
+}
