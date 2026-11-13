@@ -6,7 +6,6 @@ Run from any directory. Writes trace-result.json next to this script.
 from dataclasses import asdict, dataclass
 from pathlib import Path
 import json
-import platform
 
 
 @dataclass
@@ -227,7 +226,6 @@ def run():
     report = {
         "model_only": True,
         "completion_callbacks": "synthetic test driver input; no audio or UIA acknowledgements",
-        "environment": {"python": platform.python_version(), "system": platform.system()},
         "baseline_input": baseline,
         "fifo_retains_obsolete_focus": "focus-A" in baseline and "focus-B" in baseline,
         "latest_only_loses_operation_result": baseline[-1] != "r1-failed",

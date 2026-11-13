@@ -1,10 +1,6 @@
 {
   "model_only": true,
   "completion_callbacks": "synthetic test driver input; no audio or UIA acknowledgements",
-  "environment": {
-    "python": "3.12.14",
-    "system": "Linux"
-  },
   "baseline_input": [
     "focus-A",
     "focus-B",

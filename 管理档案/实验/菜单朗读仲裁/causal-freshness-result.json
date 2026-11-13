@@ -1,16 +1,6 @@
 {
   "model_only": true,
   "checks": "all finite assertions passed",
-  "environment": {
-    "python": "3.12.14",
-    "platform": "Linux",
-    "reported_monotonic_clock": {
-      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
-      "monotonic": true,
-      "adjustable": false,
-      "resolution": 1e-09
-    }
-  },
   "causality_cases": {
     "same_intent_retry_and_late_render": {
       "inputs": [

@@ -56,11 +56,11 @@
 
 ## 实际执行与所得判断
 
-2026-11-10在Linux/Python3.12.14执行 `python3 causal_freshness_model.py`。上述有限判据通过；保留完整人工事件输入、最终操作历史、每次计时求值输入与输出。未进行网络请求、存储变更或声音输出。
+2026-11-10执行 `python3 causal_freshness_model.py`。上述有限判据通过；保留完整人工事件输入、最终操作历史、每次计时求值输入与输出。未进行网络请求、存储变更或声音输出。
 
 核心区别确实出现：r1终态仍为failed，但分别得到retry_succeeded与superseded_by_confirmed_intent两种关联；后发请求未确认时只得到superseded_intent_unconfirmed。旧意图若获得更高权威提交号，当前解释变成confirmed_different，没有因UI事件“过期”而隐藏。排队期间成功后，按资源重新生成的提交视图为confirmed_current，而不是缓存的失败句子。
 
-计时轨迹中，8000ms截止点在2400ms提交得到6秒；8000ms本身返回到期淘汰。截止点后更新到12000ms、修订2，再到的修订1没有覆盖它；8500ms求得4秒。9000ms暂停冻结3000ms，20000ms恢复为23000ms截止，21000ms求得2秒。旧页面、取消与替换会话都返回明确淘汰原因。本机仅查询了monotonic时钟元信息，报告clock_gettime(CLOCK_MONOTONIC)；这不是OS休眠或暂停行为测试。
+计时轨迹中，8000ms截止点在2400ms提交得到6秒；8000ms本身返回到期淘汰。截止点后更新到12000ms、修订2，再到的修订1没有覆盖它；8500ms求得4秒。9000ms暂停冻结3000ms，20000ms恢复为23000ms截止，21000ms求得2秒。旧页面、取消与替换会话都返回明确淘汰原因。没有进行OS休眠或暂停行为测试。
 
 原始仲裁模型也重新执行，24步主轨迹与10步打断轨迹仍通过。两个模型没有接入真实输出管线，因此不能把合并检查称为完整系统集成测试。
 
@@ -69,7 +69,7 @@
 ## 原始来源及本轮阅读范围
 
 1. R. Fielding、M. Nottingham、J. Reschke，[*RFC9110: HTTP Semantics*](https://www.rfc-editor.org/rfc/rfc9110.html)，2022-06，§8.8.3、§8.8.3.2、§13.1.1。2026-11-10读取。用于校验值不保证可排序及条件请求边界，不提供本文朗读算法。
-2. Python Software Foundation，[*time — Time access and conversions*](https://docs.python.org/3.12/library/time.html#time.monotonic)，3.12文档，2026-11-10读取time.monotonic与monotonic_ns。执行器Python自报3.12.14；文档页面当前显示3.12.16。本轮不声称版本源码逐字匹配。
+2. Python Software Foundation，[*time — Time access and conversions*](https://docs.python.org/3.12/library/time.html#time.monotonic)，3.12文档，2026-11-10读取time.monotonic与monotonic_ns。不声称执行环境与文档源码逐字匹配。
 3. Microsoft，[*Acquiring high-resolution time stamps*](https://learn.microsoft.com/en-us/windows/win32/sysinfo/acquiring-high-resolution-time-stamps)，2026-11-10读取General FAQ、Absolute Clocks and Difference Clocks、Hardware timer说明中的待机/休眠计时句。没运行Windows，不从未检查的图推导精度结论。
 4. W3C WAI，[*Understanding SC4.1.3: Status Messages*](https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html)，2026-11-10读取Intent、Modification/Removal of status text及Other uses of live regions。解释状态可在不夺取焦点的情况下传达，以及修改/移除状态也可能需要可访问说明。该解释材料非规范正文，本文借鉴交互原则，不据此认证游戏或建立强制结果历史规范。
 

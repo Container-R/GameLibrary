@@ -2,8 +2,6 @@
 from dataclasses import asdict, dataclass
 from pathlib import Path
 import json
-import platform
-import time
 
 
 @dataclass
@@ -18,7 +16,11 @@ class Attempt:
 
 
 class Ledger:
-    """Full replacement with authority revisions and explicit accepted values."""
+    """Trusted full-replacement replies only; assertions are not a protocol validator.
+
+    No historical revision/value index or version-epoch reset support.
+    Validate authority replies upstream before using current() for narration.
+    """
     def __init__(self):
         self.intents = {}
         self.attempts = {}
@@ -260,10 +262,7 @@ def run():
     assert timer.render(request, "p1", 21000) == {"drop": "cancelled"}
     replacement = Countdown("p1", "s2", 30000)
     assert replacement.render(request, "p1", 21000) == {"drop": "old_session"}
-    clock = time.get_clock_info("monotonic")
     result = {"model_only": True, "checks": "all finite assertions passed",
-              "environment": {"python": platform.python_version(), "platform": platform.system(),
-                              "reported_monotonic_clock": vars(clock)},
               "causality_cases": cases, "timer_inputs_and_outputs": timer.events,
               "replacement_timer": replacement.events,
               "not_tested": ["storage", "network", "OS sleep/pause behavior", "UIA", "audio", "user experience"]}
