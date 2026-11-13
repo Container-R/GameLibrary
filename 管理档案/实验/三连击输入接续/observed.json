@@ -1,0 +1,111 @@
+{
+  "scope": "original application model, no engine execution",
+  "results": {
+    "advance": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        3,
+        2,
+        "B"
+      ],
+      [
+        6,
+        3,
+        "C"
+      ]
+    ],
+    "deferred_seek": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        3,
+        2,
+        "B"
+      ],
+      [
+        6,
+        3,
+        "C"
+      ]
+    ],
+    "immediate_seek": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        3,
+        2,
+        "B"
+      ],
+      [
+        6,
+        3,
+        "C"
+      ]
+    ],
+    "update_only": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        3,
+        2,
+        "B"
+      ],
+      [
+        6,
+        3,
+        "C"
+      ]
+    ],
+    "expired": [
+      [
+        0,
+        1,
+        "A"
+      ]
+    ],
+    "window_closed": [
+      [
+        0,
+        1,
+        "A"
+      ]
+    ],
+    "interrupt": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        4,
+        1,
+        "D"
+      ]
+    ],
+    "duplicate": [
+      [
+        0,
+        1,
+        "A"
+      ],
+      [
+        3,
+        2,
+        "B"
+      ]
+    ]
+  }
+}

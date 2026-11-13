@@ -1,0 +1,13 @@
+{
+  "article": "GameLibrary/玩法程序/玩法系统/战斗状态/三连击的输入缓冲、接续窗口与打断清理.md",
+  "basis": [
+    "原创应用模型与既有输出",
+    "既有方法轨探针、最小配置及输出"
+  ],
+  "fixed_source": "https://github.com/godotengine/godot/tree/35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+  "symbols": [
+    "AnimationPlayer::seek_internal",
+    "AnimationMixer TYPE_METHOD"
+  ],
+  "limits": "二进制来源与固定源码构建绑定未确认；应用模型不是原生连招测试"
+}
