@@ -1,0 +1,6 @@
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/baseline/character.tmp", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/baseline/character.tmp", "requested": 92, "returned": 92}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/baseline/character.tmp", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/baseline/character.tmp", "result": 0}
+{"op": "replace_baseline_character", "result": 0}
+{"name": "mixed", "op": "barrier"}

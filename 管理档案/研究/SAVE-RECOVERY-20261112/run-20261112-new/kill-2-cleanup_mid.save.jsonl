@@ -1,0 +1,59 @@
+{"bytes": 247, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT", "sha256": "7cab12ee786072e3eaf0cf83ab0f68d0a0408bd353f0143a481b73e8dd30dd73"}
+{"bytes": 626, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/A/manifest.json", "sha256": "77de9c6f92938595648808703e42871e1562bbe4a4b5cdd6cd50b3557904be62"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/A/metadata.json", "sha256": "8f8ed7c77b532b96b76f3b67c99c13d2025bcc408fe51360d259035d355ab3a6"}
+{"bytes": 93, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/A/character.json", "sha256": "e41912438a1c28156b7e0457e1c95295537b9e4a129145b3a0057a254fcb2f9e"}
+{"bytes": 105, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/A/chunks/town.json", "sha256": "39651f8bcf923ab32f8169115c46f83443e5b7781358b0b45b724d921cc85acd"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/A/chunks/old.json", "sha256": "6a2907281d40db66d767782381b2124d32066f10fec920c16b4164cd32e17a7e"}
+{"op": "mkdir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B"}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/metadata.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/metadata.json", "requested": 104, "returned": 104}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/metadata.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/metadata.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/character.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/character.json", "requested": 92, "returned": 92}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/character.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/character.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "requested": 52, "returned": 52}
+{"name": "half_chunk", "op": "barrier"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "requested": 52, "returned": 52}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/new.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/new.json", "requested": 104, "returned": 104}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/new.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/new.json", "result": 0}
+{"name": "data_done", "op": "barrier"}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/manifest.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/manifest.json", "requested": 625, "returned": 625}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/manifest.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/manifest.json", "result": 0}
+{"name": "manifest_done", "op": "barrier"}
+{"bytes": 625, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/manifest.json", "sha256": "349f9f8c3e592ba4cfb312a82060162ade39ed8867e95f943d835d46b0b59363"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/metadata.json", "sha256": "3f365f7751e2356264c34b883f57c2ce29d5dbc9b0358015a19a2c4bc51e478b"}
+{"bytes": 92, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/character.json", "sha256": "eeefe8119737f0d554be54a1602bb83a76620c3ab3c5c90d35479a8d682abd72"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/town.json", "sha256": "3a49bf61ff28cdf09493e6a3d1595826dca7a63db6fad9a6e98a72f92d639d30"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks/new.json", "sha256": "113374ee807c9efada45caa7a55b496030edee39c6e135244459b8b1ca9c9309"}
+{"name": "validated", "op": "barrier"}
+{"op": "fsync_dir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B/chunks", "result": 0}
+{"op": "fsync_dir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations/B", "result": 0}
+{"op": "fsync_dir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/generations", "result": 0}
+{"op": "fsync_dir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid", "result": 0}
+{"name": "directories_synced", "op": "barrier"}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "requested": 173, "returned": 173}
+{"name": "half_root", "op": "barrier"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "requested": 173, "returned": 173}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "result": 0}
+{"bytes": 346, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp", "sha256": "2ab735e26b99ca2bf16f2b358f6b6760063413ee0196247ce33fe037e255895f"}
+{"name": "root_ready", "op": "barrier"}
+{"name": "before_replace", "op": "barrier"}
+{"destination": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT", "op": "replace", "result": 0, "source": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/CURRENT.B.tmp"}
+{"name": "after_replace", "op": "barrier"}
+{"op": "fsync_dir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid", "result": 0}
+{"name": "root_synced", "op": "barrier"}
+{"generation": "B", "op": "acknowledgement"}
+{"name": "notified", "op": "barrier"}
+{"op": "unlink", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-cleanup_mid/garbage/one"}
+{"name": "cleanup_mid", "op": "barrier"}

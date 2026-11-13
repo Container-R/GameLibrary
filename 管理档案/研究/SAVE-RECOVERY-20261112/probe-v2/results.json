@@ -1,0 +1,252 @@
+{
+  "EIO": {
+    "first": {
+      "command": [
+        "<PYTHON>",
+        "<EVIDENCE_ROOT>/fixture-v2.py",
+        "worker",
+        "save",
+        "<EVIDENCE_ROOT>/probe-v2/EIO",
+        "B",
+        "A",
+        "-",
+        "EIO",
+        "<EVIDENCE_ROOT>/probe-v2/EIO-first.jsonl"
+      ],
+      "exit_code": 2,
+      "stdout": "{\"error\": \"[Errno 5] injected directory fsync error\", \"type\": \"OSError\"}\n",
+      "stderr": "",
+      "result": {
+        "error": "[Errno 5] injected directory fsync error",
+        "type": "OSError"
+      }
+    },
+    "retry": {
+      "command": [
+        "<PYTHON>",
+        "<EVIDENCE_ROOT>/fixture-v2.py",
+        "worker",
+        "save",
+        "<EVIDENCE_ROOT>/probe-v2/EIO",
+        "B",
+        "A",
+        "-",
+        "-",
+        "<EVIDENCE_ROOT>/probe-v2/EIO-retry.jsonl"
+      ],
+      "exit_code": 3,
+      "stdout": "{\"status\": \"observed_active\", \"generation\": \"B\", \"durability\": \"not_established\", \"requires_resolution\": true}\n",
+      "stderr": "",
+      "result": {
+        "status": "observed_active",
+        "generation": "B",
+        "durability": "not_established",
+        "requires_resolution": true
+      }
+    },
+    "disk_unchanged": true,
+    "snapshot": {
+      "files": {
+        "CURRENT": {
+          "length": 346,
+          "sha256": "2ab735e26b99ca2bf16f2b358f6b6760063413ee0196247ce33fe037e255895f"
+        },
+        "garbage/one": {
+          "length": 6,
+          "sha256": "88f6811ab5d8fc6d3177f9b7609ae0fcebfda187e5046b62d38bb539e88b74d7"
+        },
+        "garbage/two": {
+          "length": 6,
+          "sha256": "88f6811ab5d8fc6d3177f9b7609ae0fcebfda187e5046b62d38bb539e88b74d7"
+        },
+        "generations/A/character.json": {
+          "length": 93,
+          "sha256": "e41912438a1c28156b7e0457e1c95295537b9e4a129145b3a0057a254fcb2f9e"
+        },
+        "generations/A/chunks/old.json": {
+          "length": 104,
+          "sha256": "6a2907281d40db66d767782381b2124d32066f10fec920c16b4164cd32e17a7e"
+        },
+        "generations/A/chunks/town.json": {
+          "length": 105,
+          "sha256": "39651f8bcf923ab32f8169115c46f83443e5b7781358b0b45b724d921cc85acd"
+        },
+        "generations/A/manifest.json": {
+          "length": 626,
+          "sha256": "77de9c6f92938595648808703e42871e1562bbe4a4b5cdd6cd50b3557904be62"
+        },
+        "generations/A/metadata.json": {
+          "length": 104,
+          "sha256": "8f8ed7c77b532b96b76f3b67c99c13d2025bcc408fe51360d259035d355ab3a6"
+        },
+        "generations/B/character.json": {
+          "length": 92,
+          "sha256": "eeefe8119737f0d554be54a1602bb83a76620c3ab3c5c90d35479a8d682abd72"
+        },
+        "generations/B/chunks/new.json": {
+          "length": 104,
+          "sha256": "113374ee807c9efada45caa7a55b496030edee39c6e135244459b8b1ca9c9309"
+        },
+        "generations/B/chunks/town.json": {
+          "length": 104,
+          "sha256": "3a49bf61ff28cdf09493e6a3d1595826dca7a63db6fad9a6e98a72f92d639d30"
+        },
+        "generations/B/manifest.json": {
+          "length": 625,
+          "sha256": "349f9f8c3e592ba4cfb312a82060162ade39ed8867e95f943d835d46b0b59363"
+        },
+        "generations/B/metadata.json": {
+          "length": 104,
+          "sha256": "3f365f7751e2356264c34b883f57c2ce29d5dbc9b0358015a19a2c4bc51e478b"
+        }
+      },
+      "CURRENT_base64": "eyJib2R5Ijp7ImFjdGl2ZSI6eyJnZW5lcmF0aW9uIjoiQiIsIm1hbmlmZXN0X3NoYTI1NiI6IjM0OWY5ZjhjM2U1OTJiYTRjZmIzMTJhODIwNjAxNjJhZGUzOWVkODg2N2U5NWY5NDNkODM1ZDQ2YjBiNTkzNjMifSwicHJldmlvdXMiOnsiZ2VuZXJhdGlvbiI6IkEiLCJtYW5pZmVzdF9zaGEyNTYiOiI3N2RlOWM2ZjkyOTM4NTk1NjQ4ODA4NzAzZTQyODcxZTE1NjJiYmU0YTRiNWNkZDZjZDUwYjM1NTc5MDRiZTYyIn0sInNsb3QiOiJkZW1vLXNsb3QiLCJ2ZXJzaW9uIjoxfSwic2hhMjU2IjoiNDcyMWIzNDRhYTY4M2ZjZWViZTYwZTNjYTMyNmYxNzI1ODhlNDViZjdkMzU1YjA5NjNlN2MyMDk1ZDhiZGRjZCJ9Cg=="
+    },
+    "retry_ops": [
+      "read",
+      "read",
+      "read",
+      "read",
+      "read",
+      "read"
+    ],
+    "passed": true
+  },
+  "ENOSPC": {
+    "first": {
+      "command": [
+        "<PYTHON>",
+        "<EVIDENCE_ROOT>/fixture-v2.py",
+        "worker",
+        "save",
+        "<EVIDENCE_ROOT>/probe-v2/ENOSPC",
+        "B",
+        "A",
+        "-",
+        "ENOSPC",
+        "<EVIDENCE_ROOT>/probe-v2/ENOSPC-first.jsonl"
+      ],
+      "exit_code": 2,
+      "stdout": "{\"error\": \"[Errno 28] injected write error\", \"type\": \"OSError\"}\n",
+      "stderr": "",
+      "result": {
+        "error": "[Errno 28] injected write error",
+        "type": "OSError"
+      }
+    },
+    "retry": {
+      "command": [
+        "<PYTHON>",
+        "<EVIDENCE_ROOT>/fixture-v2.py",
+        "worker",
+        "save",
+        "<EVIDENCE_ROOT>/probe-v2/ENOSPC",
+        "B",
+        "A",
+        "-",
+        "-",
+        "<EVIDENCE_ROOT>/probe-v2/ENOSPC-retry.jsonl"
+      ],
+      "exit_code": 3,
+      "stdout": "{\"status\": \"candidate_exists\", \"generation\": \"B\", \"publication\": \"not_attempted\", \"requires_resolution\": true}\n",
+      "stderr": "",
+      "result": {
+        "status": "candidate_exists",
+        "generation": "B",
+        "publication": "not_attempted",
+        "requires_resolution": true
+      }
+    },
+    "disk_unchanged": true,
+    "snapshot": {
+      "files": {
+        "CURRENT": {
+          "length": 247,
+          "sha256": "7cab12ee786072e3eaf0cf83ab0f68d0a0408bd353f0143a481b73e8dd30dd73"
+        },
+        "garbage/one": {
+          "length": 6,
+          "sha256": "88f6811ab5d8fc6d3177f9b7609ae0fcebfda187e5046b62d38bb539e88b74d7"
+        },
+        "garbage/two": {
+          "length": 6,
+          "sha256": "88f6811ab5d8fc6d3177f9b7609ae0fcebfda187e5046b62d38bb539e88b74d7"
+        },
+        "generations/A/character.json": {
+          "length": 93,
+          "sha256": "e41912438a1c28156b7e0457e1c95295537b9e4a129145b3a0057a254fcb2f9e"
+        },
+        "generations/A/chunks/old.json": {
+          "length": 104,
+          "sha256": "6a2907281d40db66d767782381b2124d32066f10fec920c16b4164cd32e17a7e"
+        },
+        "generations/A/chunks/town.json": {
+          "length": 105,
+          "sha256": "39651f8bcf923ab32f8169115c46f83443e5b7781358b0b45b724d921cc85acd"
+        },
+        "generations/A/manifest.json": {
+          "length": 626,
+          "sha256": "77de9c6f92938595648808703e42871e1562bbe4a4b5cdd6cd50b3557904be62"
+        },
+        "generations/A/metadata.json": {
+          "length": 104,
+          "sha256": "8f8ed7c77b532b96b76f3b67c99c13d2025bcc408fe51360d259035d355ab3a6"
+        },
+        "generations/B/character.json": {
+          "length": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "generations/B/metadata.json": {
+          "length": 104,
+          "sha256": "3f365f7751e2356264c34b883f57c2ce29d5dbc9b0358015a19a2c4bc51e478b"
+        }
+      },
+      "CURRENT_base64": "eyJib2R5Ijp7ImFjdGl2ZSI6eyJnZW5lcmF0aW9uIjoiQSIsIm1hbmlmZXN0X3NoYTI1NiI6Ijc3ZGU5YzZmOTI5Mzg1OTU2NDg4MDg3MDNlNDI4NzFlMTU2MmJiZTRhNGI1Y2RkNmNkNTBiMzU1NzkwNGJlNjIifSwicHJldmlvdXMiOm51bGwsInNsb3QiOiJkZW1vLXNsb3QiLCJ2ZXJzaW9uIjoxfSwic2hhMjU2IjoiYjA1MjlkNThkOThkNThmMGJiNDg0NTMxNTdiYjE5Nzg3Yzc1NDM5NzM1NmU0ZTc1YTRlMjU2NWYwNDBkYjI3NSJ9Cg=="
+    },
+    "retry_ops": [
+      "read",
+      "read",
+      "read",
+      "read",
+      "read",
+      "read"
+    ],
+    "passed": true
+  },
+  "dash-O": {
+    "command": [
+      "<PYTHON>",
+      "-O",
+      "<EVIDENCE_ROOT>/fixture-v2.py",
+      "suite",
+      "<EVIDENCE_ROOT>/probe-v2/dash-O"
+    ],
+    "environment_override": {},
+    "exit_code": 4,
+    "stdout": "{\"status\": \"unsupported_optimized_mode\", \"reason\": \"validation assertions require normal interpreter mode\"}\n",
+    "stderr": "",
+    "output_exists": false,
+    "passed": true
+  },
+  "PYTHONOPTIMIZE": {
+    "command": [
+      "<PYTHON>",
+      "<EVIDENCE_ROOT>/fixture-v2.py",
+      "suite",
+      "<EVIDENCE_ROOT>/probe-v2/PYTHONOPTIMIZE"
+    ],
+    "environment_override": {
+      "PYTHONOPTIMIZE": "1"
+    },
+    "exit_code": 4,
+    "stdout": "{\"status\": \"unsupported_optimized_mode\", \"reason\": \"validation assertions require normal interpreter mode\"}\n",
+    "stderr": "",
+    "output_exists": false,
+    "passed": true
+  },
+  "metadata": {
+    "fixture_sha256": "f1f87729300076762095aa48481adfd55d329a372c64ecbb835a5c7cc82bcaa7",
+    "revision_plan_sha256": "3589b1742fcbce85ace1cf41795d3706611bdd9e30361ffe836fe7dea750db57",
+    "probe_sha256": "4aa44411124886ab5284c04ca8e93bc55c8ea0a8382e25a026549aca010c4fe6"
+  }
+}

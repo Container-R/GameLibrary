@@ -1,0 +1,112 @@
+{
+  "article": "GameLibrary/引擎与工具/运行时系统/缓存与存档/多文件本地存档的代际发布与恢复.md",
+  "article_sha256": "df2b8cc7ee89b11557c28a4eb9265553b18352ad204734057e8b1b960e2f087c",
+  "claims": [
+    {
+      "source": {
+        "author": "Linux man-pages",
+        "title": "rename(2)",
+        "url": "https://man7.org/linux/man-pages/man2/rename.2.html",
+        "version_scope": "rolling documentation; bibliographic version/date stated in article"
+      },
+      "locator": "DESCRIPTION",
+      "observed_content": "名称查找替换及已打开描述符语义；不证明多文件事务或掉电结果",
+      "conditions": "limited single-machine serial-writer protocol; see article-specific qualifications",
+      "article_section": "2"
+    },
+    {
+      "source": {
+        "author": "Linux man-pages",
+        "title": "fsync(2)",
+        "url": "https://man7.org/linux/man-pages/man2/fsync.2.html",
+        "version_scope": "rolling documentation; bibliographic version/date stated in article"
+      },
+      "locator": "DESCRIPTION, RETURN VALUE, ERRORS",
+      "observed_content": "文件同步不替代父目录同步；错误必须保留并区分",
+      "conditions": "limited single-machine serial-writer protocol; see article-specific qualifications",
+      "article_section": "2,5"
+    },
+    {
+      "source": {
+        "author": "Microsoft",
+        "title": "ReplaceFileW",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-replacefilew",
+        "version_scope": "rolling documentation; bibliographic version/date stated in article"
+      },
+      "locator": "dwReplaceFlags, Return value, Remarks",
+      "observed_content": "WRITE_THROUGH不支持，失败可能留下不同状态；不能统一假定旧根未动",
+      "conditions": "limited single-machine serial-writer protocol; see article-specific qualifications",
+      "article_section": "2"
+    },
+    {
+      "source": {
+        "author": "SQLite",
+        "title": "Atomic Commit In SQLite",
+        "url": "https://www.sqlite.org/atomiccommit.html",
+        "version_scope": "rolling documentation; bibliographic version/date stated in article"
+      },
+      "locator": "3.7–3.11,4.2–4.5,5.1–5.6,8",
+      "observed_content": "rollback-journal准备与共同提交判据；不推导WAL跨库保证",
+      "conditions": "limited single-machine serial-writer protocol; see article-specific qualifications",
+      "article_section": "2,5"
+    },
+    {
+      "source": {
+        "author": "Google LevelDB",
+        "title": "Implementation notes",
+        "url": "https://github.com/google/leveldb/blob/main/doc/impl.md",
+        "version_scope": "rolling documentation; bibliographic version/date stated in article"
+      },
+      "locator": "Manifest, Current",
+      "observed_content": "MANIFEST与CURRENT只用作集合/根的结构对照，不继承实现的崩溃保证",
+      "conditions": "limited single-machine serial-writer protocol; see article-specific qualifications",
+      "article_section": "2"
+    }
+  ],
+  "verification": "五项原始来源的既有核查支持列出的限定主张；现稿模型复核核对未变技术内容、代码与结果，不代表重新运行实验或再次通读所有来源。",
+  "experiment": {
+    "suite_cases": 51,
+    "probe_checks": 4,
+    "limits": [
+      "process termination while kernel remains running",
+      "software-injected EIO/ENOSPC",
+      "no power-loss validation",
+      "not production engine or platform certification"
+    ],
+    "environment_disclosure": "No actual runtime environment metadata is published; behavior observations do not establish portability."
+  },
+  "evidence": [
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/fixture-v2.py",
+      "sha256": "f1f87729300076762095aa48481adfd55d329a372c64ecbb835a5c7cc82bcaa7"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/probe-v2.py",
+      "sha256": "4aa44411124886ab5284c04ca8e93bc55c8ea0a8382e25a026549aca010c4fe6"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/experiment-plan.md",
+      "sha256": "c1492bb4664795a17d5b9cfeb4cd542b7d3d1132993a0615bd17307ed07cf6b8"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/revision-plan-v2.md",
+      "sha256": "3589b1742fcbce85ace1cf41795d3706611bdd9e30361ffe836fe7dea750db57"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/run-20261112-new/results.jsonl",
+      "sha256": "2cbcb3199c62f12485dc15438dc46ea8411b1bd6421a27b4c9165224779f0259"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/run-20261112-new/summary.json",
+      "sha256": "b222edee753cceb940d942cd3cd6f5c27317e9141f013414b9f59ec96fce2206"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/probe-v2/results.json",
+      "sha256": "22c89ae3e5957fc85b2adb2b18c4b8667ff8b1b9055914aa041a79730d85d05c"
+    },
+    {
+      "path": "管理档案/研究/SAVE-RECOVERY-20261112/redaction-manifest.json",
+      "sha256": "76f1ab243eabbe3d666f1868517761b3758d9fb9443a513234da482f5576c8a8"
+    }
+  ]
+}

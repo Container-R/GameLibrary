@@ -1,0 +1,26 @@
+{"bytes": 247, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/CURRENT", "sha256": "7cab12ee786072e3eaf0cf83ab0f68d0a0408bd353f0143a481b73e8dd30dd73"}
+{"bytes": 626, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/A/manifest.json", "sha256": "77de9c6f92938595648808703e42871e1562bbe4a4b5cdd6cd50b3557904be62"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/A/metadata.json", "sha256": "8f8ed7c77b532b96b76f3b67c99c13d2025bcc408fe51360d259035d355ab3a6"}
+{"bytes": 93, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/A/character.json", "sha256": "e41912438a1c28156b7e0457e1c95295537b9e4a129145b3a0057a254fcb2f9e"}
+{"bytes": 105, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/A/chunks/town.json", "sha256": "39651f8bcf923ab32f8169115c46f83443e5b7781358b0b45b724d921cc85acd"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/A/chunks/old.json", "sha256": "6a2907281d40db66d767782381b2124d32066f10fec920c16b4164cd32e17a7e"}
+{"op": "mkdir", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B"}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/metadata.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/metadata.json", "requested": 104, "returned": 104}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/metadata.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/metadata.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/character.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/character.json", "requested": 92, "returned": 92}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/character.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/character.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/town.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/town.json", "requested": 52, "returned": 52}
+{"name": "half_chunk", "op": "barrier"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/town.json", "requested": 52, "returned": 52}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/town.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/town.json", "result": 0}
+{"op": "open_exclusive", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/new.json", "result": "ok"}
+{"op": "write", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/new.json", "requested": 104, "returned": 104}
+{"op": "fsync_file", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/new.json", "result": 0}
+{"op": "close", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-2-data_done/generations/B/chunks/new.json", "result": 0}
+{"name": "data_done", "op": "barrier"}

@@ -1,0 +1,8 @@
+{"bytes": 346, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/CURRENT", "sha256": "2ab735e26b99ca2bf16f2b358f6b6760063413ee0196247ce33fe037e255895f"}
+{"bytes": 625, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/generations/B/manifest.json", "sha256": "349f9f8c3e592ba4cfb312a82060162ade39ed8867e95f943d835d46b0b59363"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/generations/B/metadata.json", "sha256": "3f365f7751e2356264c34b883f57c2ce29d5dbc9b0358015a19a2c4bc51e478b"}
+{"bytes": 92, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/generations/B/character.json", "sha256": "eeefe8119737f0d554be54a1602bb83a76620c3ab3c5c90d35479a8d682abd72"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/generations/B/chunks/town.json", "sha256": "3a49bf61ff28cdf09493e6a3d1595826dca7a63db6fad9a6e98a72f92d639d30"}
+{"bytes": 104, "op": "read", "path": "<EVIDENCE_ROOT>/run-20261112-new/kill-1-root_synced/generations/B/chunks/new.json", "sha256": "113374ee807c9efada45caa7a55b496030edee39c6e135244459b8b1ca9c9309"}
+{"name": "recovery_validated", "op": "barrier"}
+{"name": "before_memory_swap", "op": "barrier"}
