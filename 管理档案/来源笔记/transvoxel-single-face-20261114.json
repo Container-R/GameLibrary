@@ -1,0 +1,34 @@
+{
+  "article": "GameLibrary/图形渲染/地形渲染/体素地形/2比1体素地形接缝的诊断：交点、连线与判例编码.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "claim": "对已跨符号的粗边按实际中点选活跃半边，直到目标最高分辨率再插值；两面与各自常规单元分别匹配，共用侧面边要求相反方向。",
+      "url": "https://transvoxel.org/Lengyel-VoxelTerrain.pdf",
+      "locator": "§4.2.1 印刷页 29–30；§4.3 印刷页 43–44；§4.5 印刷页 54。"
+    },
+    {
+      "claim": "粗面的四角复制细面角值，9 个独立符号位按作者规定排序，采样编号不是位编号。",
+      "url": "https://transvoxel.org/Lengyel-VoxelTerrain.pdf",
+      "locator": "§4.5 印刷页 51–53；采样编号和位权使用提取的表格，不是目视原图。"
+    },
+    {
+      "claim": "表类别高位控制逆绕序，低七位取三角化；顶点低字节的两个半字节为采样端点。",
+      "url": "https://github.com/EricLengyel/Transvoxel/blob/51a494f03c5b024cd153b596bcc7152eb3cc93a6/Transvoxel.cpp",
+      "locator": "transitionCellClass、transitionCellData、transitionVertexData，blob 2c4ceb79a513e368dbf24ea2650947044f089d7c。"
+    }
+  ],
+  "verification": {
+    "table_rows": 512,
+    "endpoint_references": 4096,
+    "scope": "核对表行数量、索引范围与每个列出采样边的符号；非完整网格验收。",
+    "cases": [
+      "0x100 仅中心为负，四条边均接中心；错码 0x010 的四条边均不跨该输入的零值。",
+      "0x0C1 的基线细侧 AB、BC，粗侧 DE；单改 B 只报位置错，保持位置改变连接则丢 BC、出现 AC。"
+    ]
+  },
+  "limits": [
+    "单个 2:1 邻接面诊断和非零样本教学案例。",
+    "无设备、引擎、真实地形运行及画面结论。"
+  ]
+}
