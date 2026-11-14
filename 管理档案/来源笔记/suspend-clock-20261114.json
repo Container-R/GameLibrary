@@ -1,0 +1,40 @@
+{
+  "article": "GameLibrary/引擎与工具/运行时系统/时间服务/系统挂起前后的本地期限计时.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "claim": "Linux 的 MONOTONIC 与 MONOTONIC_RAW 不计系统挂起，BOOTTIME 计入。",
+      "url": "https://man7.org/linux/man-pages/man2/clock_gettime.2.html",
+      "locator": "DESCRIPTION 中三种时钟；同一时钟的两次读数用于取差。"
+    },
+    {
+      "claim": "BOOTTIME 与 BOOTTIME_ALARM 使用计入挂起的时间基准，只有后者具有到期唤醒语义，设置需要相应能力。",
+      "url": "https://man7.org/linux/man-pages/man2/timerfd_create.2.html",
+      "locator": "DESCRIPTION、ERRORS 权限条目。"
+    },
+    {
+      "claim": "Android 两种 ELAPSED_REALTIME alarm 类型计入睡眠；非 WAKEUP 不主动唤醒。",
+      "url": "https://developer.android.com/reference/android/app/AlarmManager",
+      "locator": "两个公开常量；类型不等于实际准时投递。"
+    },
+    {
+      "claim": "Windows 8／Server 2012 及之后负值相对期限不计低功耗时间，fResume 另行申请唤醒。",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-setwaitabletimer",
+      "locator": "lpDueTime、fResume；较老版本的相对期限规则不同。"
+    },
+    {
+      "claim": "Godot 4.6.3 的微秒读数转发到底层 OS，Linux 与 Windows 使用不同系统时钟。",
+      "url": "https://github.com/godotengine/godot/tree/35e80b3a8822a9df9be390814b62f44c0a9c69e8",
+      "locator": "core/os/time.cpp:387–389；platform/linuxbsd/os_linuxbsd.h:52；drivers/unix/os_unix.cpp:123–132、389–401；platform/windows/os_windows.cpp:293、987–1015。只限已检查实现。"
+    },
+    {
+      "claim": "Windows QPC 计入睡眠。",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/acquiring-high-resolution-time-stamps",
+      "locator": "QPC 计算经过时间的说明；不同于等待计时器相对期限语义，不证明回调或唤醒。"
+    }
+  ],
+  "limits": [
+    "限同次启动内状态可恢复的本地期限；不涵盖跨重启、服务器裁决或保证主动唤醒。",
+    "纸面算例与源码推导；无设备运行或发行二进制验证。"
+  ]
+}

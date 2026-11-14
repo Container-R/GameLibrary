@@ -274,7 +274,7 @@
       "reader_title": "用固定时间步组织战斗模拟",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
       "reader_body_status": "published",
-      "reader_sha256": "d373b45708ec45bfb8fea395ac5415b6a33f79a7ece91ee70048ef2de6e82e16"
+      "reader_sha256": "348ab9a889fe516939a2ed48a1fb96ae347c4b646edb08206c78f19326397f27"
     },
     {
       "internal_id": "SOL-GFX-001",
@@ -1257,6 +1257,15 @@
       "reader_sha256": "95d71d3eb8f77293b96f424ac0bb7df40623772c20b2c86236780ea43db6fc5f",
       "review": "管理档案/审稿/GL-MOUSE-CAMERA-DIAGNOSTICS/20261114-review.md",
       "source_record": "管理档案/来源笔记/mouse-camera-diagnostics-20261114.json"
+    },
+    {
+      "internal_id": "GL-SUSPEND-CLOCK-ACCOUNTING",
+      "reader_title": "系统挂起前后的本地期限计时",
+      "canonical_reader_path": "GameLibrary/引擎与工具/运行时系统/时间服务/系统挂起前后的本地期限计时.md",
+      "reader_body_status": "published",
+      "reader_sha256": "0de80f4aaf6eb379f34396d33eaefcc3391b1cc679a45ff16e2e16df27845c68",
+      "review": "管理档案/审稿/GL-SUSPEND-CLOCK-ACCOUNTING/20261114-review.md",
+      "source_record": "管理档案/来源笔记/suspend-clock-20261114.json"
     }
   ]
 }
