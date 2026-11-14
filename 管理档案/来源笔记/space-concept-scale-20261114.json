@@ -1,0 +1,25 @@
+{
+  "article": "GameLibrary/美术设计/环境设计/概念设计/太空场景概念图的尺度参照与透视检查.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "claim": "针孔透视横向坐标与相机横轴坐标成正比、与相机空间深度成反比；同深度两端相减得到像素宽度关系。正交投影的比例不依赖深度。",
+      "url": "https://visionbook.mit.edu/imaging.html",
+      "locators": ["5.3.1 式 5.3 与图 5.9", "5.3.2 式 5.5"]
+    },
+    {
+      "claim": "舰队分列带单位名称；战场图有占较大画幅的近景黄色飞行器及遮挡和尾迹；环形巨构有重复表面细节、开口与环体。是对三张原图的独立读图，非访谈作者提出的实验或设计法。",
+      "url": "https://aftermath.site/homeworld-3-concept-art-making-of/",
+      "published_on": "2024-07-09",
+      "locators": ["Karl Gryc 段落舰队图", "Brennan Massicotte 段落战场图", "Paul Chadeisson 段落环形巨构图"]
+    },
+    {
+      "claim": "NLIPS 按相机距离放大舰船模型，方便缩远后辨认与选择小型舰船，公告提供关闭选项。这不是概念图取证，也未验证实际版本的碰撞、模拟或显示倍率。",
+      "url": "https://steamcommunity.com/games/1840080/announcements/detail/4145073329281827772",
+      "text_mirror": "https://store.steampowered.com/news/posts/?enddate=1711562861&feed=steam_community_announcements",
+      "published_on": "2024-03-27",
+      "locators": ["第 4 节：HUD, NLIPS, and other fun acronyms"]
+    }
+  ],
+  "materials": "管理档案/实验/太空场景透视对照/README.md"
+}

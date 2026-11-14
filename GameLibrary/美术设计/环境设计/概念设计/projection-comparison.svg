@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="424" viewBox="0 0 1024 424" role="img">
+<title>Same camera, same ship, different shuttle depth</title>
+<rect width="1024" height="424" fill="#131e2b" />
+<text fill="#f0f5ff" x="512" y="45" font-size="28" text-anchor="middle">Same camera, same ship, different shuttle depth</text>
+<g transform="translate(-256 0)">
+<rect x="278" y="77" width="468" height="314" rx="13" fill="#203040" />
+<text fill="#f0f5ff" x="512" y="113" font-size="23" text-anchor="middle">A / Shuttle depth: 1000 m</text>
+<polygon points="383,252.8 396.2,234.8 462.2,234.8 479,239.6 503,245.6 488.6,254.6 390.2,254.6" fill="#86c5e8" />
+<path d="M383,278v12 M383,284H503 M503,278v12" stroke="#86c5e8" stroke-width="2" fill="none" />
+<text x="443" y="318" fill="#86c5e8" font-size="20" text-anchor="middle">120 px</text>
+<polygon points="575,215.6 576.8,213.2 582.8,212.6 587,214.4 584,215.6" fill="#ffce6b" />
+<path d="M575,160v12 M575,166H587 M587,160v12" stroke="#ffce6b" stroke-width="2" fill="none" />
+<text x="581" y="152" fill="#ffce6b" font-size="20" text-anchor="middle">12 px</text>
+<text fill="#f0f5ff" x="512" y="365" font-size="19" text-anchor="middle">Ship: 200 m wide · Shuttle: 20 m wide</text></g>
+<g transform="translate(256 0)">
+<rect x="278" y="77" width="468" height="314" rx="13" fill="#203040" />
+<text fill="#f0f5ff" x="512" y="113" font-size="23" text-anchor="middle">B / Shuttle depth: 100 m</text>
+<polygon points="383,252.8 396.2,234.8 462.2,234.8 479,239.6 503,245.6 488.6,254.6 390.2,254.6" fill="#86c5e8" />
+<path d="M383,278v12 M383,284H503 M503,278v12" stroke="#86c5e8" stroke-width="2" fill="none" />
+<text x="443" y="318" fill="#86c5e8" font-size="20" text-anchor="middle">120 px</text>
+<polygon points="521,226.4 539,202.4 599,196.4 641,214.4 611,226.4" fill="#ffce6b" />
+<path d="M521,160v12 M521,166H641 M641,160v12" stroke="#ffce6b" stroke-width="2" fill="none" />
+<text x="581" y="152" fill="#ffce6b" font-size="20" text-anchor="middle">120 px</text>
+<text fill="#f0f5ff" x="512" y="365" font-size="19" text-anchor="middle">Ship: 200 m wide · Shuttle: 20 m wide</text></g>
+<style>text {font-family: DejaVu Sans, sans-serif;}</style></svg>
