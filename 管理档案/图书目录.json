@@ -274,7 +274,7 @@
       "reader_title": "用固定时间步组织战斗模拟",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
       "reader_body_status": "published",
-      "reader_sha256": "1cd86d0d74cc36c5343e2da25970207cd566d4dc79234a3350367d50cb691069"
+      "reader_sha256": "d373b45708ec45bfb8fea395ac5415b6a33f79a7ece91ee70048ef2de6e82e16"
     },
     {
       "internal_id": "SOL-GFX-001",
@@ -506,7 +506,7 @@
       "reader_title": "分别处理摇杆两条轴，为什么会改变斜推方向",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/分别处理摇杆两条轴，为什么会改变斜推方向.md",
       "reader_body_status": "published",
-      "reader_sha256": "9214e688b28cd495b50a6f93f6c47b049ff35a1ed3f82f2e8118af099d151ae7"
+      "reader_sha256": "11b8895e4bdcdf2bb15ffbb130d06cebd29573ede4f30206e53fd28a4d63df41"
     },
     {
       "internal_id": "KNOW-QA-001",
@@ -1248,6 +1248,15 @@
       "reader_sha256": "3f8c91df689efaa516cf5f7f38f63b71e7997ed1a2b5dec0ece55dfb980e1fd1",
       "source_record": "管理档案/来源笔记/combo-input-continuation-20261114.json",
       "review": "管理档案/审稿/GL-COMBO-INPUT-CONTINUATION/20261114-review.md"
+    },
+    {
+      "internal_id": "GL-MOUSE-CAMERA-DIAGNOSTICS",
+      "reader_title": "鼠标到镜头的输入诊断：单位、读取边界与坐标空间",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/鼠标到镜头的输入诊断：单位、读取边界与坐标空间.md",
+      "reader_body_status": "published",
+      "reader_sha256": "95d71d3eb8f77293b96f424ac0bb7df40623772c20b2c86236780ea43db6fc5f",
+      "review": "管理档案/审稿/GL-MOUSE-CAMERA-DIAGNOSTICS/20261114-review.md",
+      "source_record": "管理档案/来源笔记/mouse-camera-diagnostics-20261114.json"
     }
   ]
 }

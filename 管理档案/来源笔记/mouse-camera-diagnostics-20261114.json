@@ -1,0 +1,42 @@
+{
+  "article": "GameLibrary/玩法程序/玩法系统/输入接入/鼠标到镜头的输入诊断：单位、读取边界与坐标空间.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "claim": "SDL3 相对位移读取以两次调用之间的累计窗口为界，使用最近一次事件泵更新的缓存。",
+      "source": "SDL Wiki · SDL_GetRelativeMouseState",
+      "url": "https://wiki.libsdl.org/SDL3/SDL_GetRelativeMouseState",
+      "locator": "Remarks；Version",
+      "conditions": "SDL3 公开 API 文档；不外推所有后端或历史版本。",
+      "article_section": "正确的单位，还需要正确的消费次数"
+    },
+    {
+      "claim": "SDL 3.2.8 相对查询无条件清零两轴；普通状态查询返回同类缓存按键位图但不清相对累计。",
+      "source": "SDL 3.2.8 · SDL_mouse.c",
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/events/SDL_mouse.c#L1118-L1144",
+      "locator": "SDL_GetMouseState；SDL_GetRelativeMouseState",
+      "conditions": "两个输出指针可空；后续读取受中间新入账的运动影响。",
+      "article_section": "正确的单位，还需要正确的消费次数"
+    },
+    {
+      "claim": "Unity 的 Pointer.delta 在输入更新开始重置，并在事件处理时累计；动作读取可见累计值。",
+      "source": "Unity Input System 1.11.2 · Pointer.cs",
+      "url": "https://github.com/Unity-Technologies/InputSystem/blob/c8518694c7fdd2c755755e028e2ec19cdceda19b/Packages/com.unity.inputsystem/InputSystem/Devices/Pointer.cs",
+      "locator": "delta；OnNextUpdate；OnStateEvent",
+      "conditions": "不假设动作的配置或回调次数，不把输入更新等同于渲染帧。",
+      "article_section": "正确的单位，还需要正确的消费次数"
+    },
+    {
+      "claim": "SDL 3.2.8 将所属窗口的鼠标事件位置和相对向量分别原地换算，相对向量不受视口位置平移。",
+      "source": "SDL 3.2.8 · SDL_render.c 与 SDL_render.h",
+      "url": "https://github.com/libsdl-org/SDL/blob/f6864924f76e1a0b4abaefc76ae2ed22b1a8916e/src/render/SDL_render.c#L2829-L2924",
+      "locator": "SDL_RenderVectorFromWindow；SDL_RenderCoordinatesFromWindow；SDL_ConvertEventToRenderCoordinates",
+      "conditions": "已匹配渲染窗口；纸面算例固定 DPI=1、未启用逻辑呈现、窗口主视图缩放为 2。",
+      "article_section": "为界面换了坐标，镜头读到的位移也可能变了"
+    }
+  ],
+  "limits": [
+    "固定源码、原始文档与纸面诊断，不是设备或引擎运行。",
+    "线性偏航角用以定位接入误差，不评价手感或时间分配的等价性。"
+  ]
+}
