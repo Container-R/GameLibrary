@@ -1,0 +1,45 @@
+{
+  "article": "GameLibrary/技术美术/环境管线/模型细节级别/相机距离没变，为什么模型已经换了细节级别.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/analysis/graphics-performance-profiling/simplifying-distant-meshes-with-level-of-detail-lod/class-lodgroup",
+      "locator": "屏幕高度比例、重算边界、Lod Bias 和预览条件"
+    },
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/lod/screenrelativetransitionheight",
+      "locator": "相对高度阈值 0–1"
+    },
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/cameras/camera-view/frustum-size-at-distance",
+      "locator": "从垂直视场角和轴向深度求视锥高度"
+    },
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/manual/cameras/camera-view/understanding-frustum",
+      "locator": "对称透视与正交前提"
+    },
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/lodgroup/size",
+      "locator": "size 是局部空间大小"
+    },
+    {
+      "source": "Unity 6000.0",
+      "url": "https://docs.unity.com/en-us/engine/6000.0/script-reference/unityengine/camera/fieldofview",
+      "locator": "fieldOfView 是垂直角；正交和自定义投影例外"
+    }
+  ],
+  "verification": {
+    "kind": "official documentation and arithmetic only",
+    "examples": [
+      "h=2,d=10,θ=60° → 17.32051%",
+      "h=2,d=10,θ=90° → 10%",
+      "h=4,d=10,θ=90° → 20%"
+    ],
+    "limits": "理想对称透视与正向平面，不反推Unity内部包围体、实际选级阈值、真实像素或性能。"
+  }
+}
