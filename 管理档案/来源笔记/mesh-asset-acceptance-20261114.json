@@ -1,0 +1,30 @@
+{
+  "article": "GameLibrary/技术美术/环境管线/模型细节级别/简化网格的验收：实际索引预算与曲面偏差.md",
+  "checked_on": "2026-11-14",
+  "claims": [
+    {
+      "claim": "普通简化 API 接收目标索引数，可能停在目标以上，输出引用原顶点；目的容量按原索引数。误差尺度换算不是曲面误差证书。",
+      "url": "https://github.com/zeux/meshoptimizer/blob/6daea4695c48338363b08022d2fb15deaef6ac09/src/meshoptimizer.h",
+      "locators": [
+        "meshopt_simplify",
+        "meshopt_simplifyScale"
+      ],
+      "version": "v0.25"
+    },
+    {
+      "claim": "带界有向估计误差至多为参数 error_bound；对称函数取两个方向中的最大值。",
+      "url": "https://doc.cgal.org/latest/Polygon_mesh_processing/group__PMP__distance__grp.html",
+      "locators": [
+        "bounded_error_Hausdorff_distance",
+        "bounded_error_symmetric_Hausdorff_distance"
+      ],
+      "version": "6.2.1（核读时页面版本）"
+    }
+  ],
+  "materials": "管理档案/实验/网格简化验收/README.md",
+  "limits": [
+    "原生探针只覆盖固定 meshoptimizer 与两个小输入，未执行 CGAL。",
+    "对角例确证单点大于 0.5，不求全局最大值，不是实际减面输出。",
+    "不外推屏幕轮廓、材质、变形或性能。"
+  ]
+}
