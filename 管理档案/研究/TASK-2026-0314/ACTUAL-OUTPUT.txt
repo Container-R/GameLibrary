@@ -1,0 +1,7 @@
+openjdk version "21.0.13" 2026-10-20
+baseline | arguments=[0, 1] | subformats=[null, null] | 发送：SENDER_TOKEN；接收：RECIPIENT_TOKEN
+legal-reorder | arguments=[1, 0] | subformats=[null, null] | 接收：RECIPIENT_TOKEN；发送：SENDER_TOKEN
+roles-inverted | arguments=[0, 1] | subformats=[null, null] | 接收：SENDER_TOKEN；发送：RECIPIENT_TOKEN
+quoted-slot | arguments=[1] | subformats=[null, null] | 发送：{0}；接收：RECIPIENT_TOKEN
+missing-index | arguments=[1] | subformats=[null, null, null] | 发送：{2}；接收：RECIPIENT_TOKEN
+literal-mimic | arguments=[1] | subformats=[null, null] | 发送：SENDER_TOKEN；接收：RECIPIENT_TOKEN

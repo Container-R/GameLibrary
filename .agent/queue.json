@@ -10762,13 +10762,30 @@
       "blocker": null,
       "updated_at": "2026-11-14T04:50:00Z",
       "publication_commit": "1063eca2cf220ea9d94c05d1484f498aed291695"
+    },
+    {
+      "id": "TASK-2026-0314",
+      "question": "如何验收可重排的译文占位符，区分格式合法、实际取参和语义错绑？",
+      "reader": "本地化工具程序与语言接收人员",
+      "scope": "非分支游戏消息及合成值的 OpenJDK 21 探针；不验证复数、引擎接入或语种自然度。",
+      "expected_outcome": "允许译文换序，检查格式器是否实际消费必需的参数，再由语义样例判断发送与接收是否错绑。",
+      "status": "in_progress",
+      "phase": "researching",
+      "owner": "本题研究编辑",
+      "evidence_paths": [
+        "管理档案/研究/TASK-2026-0314/WORKING-RECORD.md",
+        "管理档案/研究/TASK-2026-0314/RoleContractProbe.java",
+        "管理档案/研究/TASK-2026-0314/ACTUAL-OUTPUT.txt"
+      ],
+      "next_action": "根据研究记录安排译文导入验收与独立审稿；实验归档不等同于发表正文。",
+      "blocker": null
     }
   ],
   "execution_policy": {
     "active_scope": "Incremental v2 research and finite topic remediation",
     "unrelated_new_topics_paused": true,
     "preserved_drafts": "Existing unrelated drafts are retained; resume by explicit topic scope, not fixed article counts.",
-    "next_priority": "TASK-2026-0310、TASK-2026-0311 与 TASK-2026-0312 均已发表并核对文件；按现有研究范围维护来源、正文与导航。"
+    "next_priority": "TASK-2026-0314：译文占位符导入验收；先复做参数来源与语义绑定对照，再验收候选正文。"
   },
   "public_record_scope": "Task IDs, questions, statuses, reader outcomes and repository-relative evidence; execution scheduling is not a public queue field."
 }
