@@ -1,0 +1,7 @@
+sameTickKeyAlreadySeen: submit metal
+moveToNextTickKeyNotSeen: submit metal | submit stone
+idOnlyAlreadySeen: submit metal
+withOldWindow: replace record | do not submit
+withOldWindowAndSecondCorrection: keep | do not submit
+croppedOldWindow: add | submit
+secondCorrectionAfterLosingLedger: add | submit
