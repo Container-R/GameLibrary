@@ -10779,6 +10779,24 @@
       ],
       "next_action": "根据研究记录安排译文导入验收与独立审稿；实验归档不等同于发表正文。",
       "blocker": null
+    },
+    {
+      "id": "TASK-2026-0315",
+      "question": "怎样让 HUD 截图回归区分采集缺失、局部错误与经批准的设计变化？",
+      "reader": "游戏 UI QA 与程序",
+      "scope": "合成 PNG 对照与 Unreal、Playwright 公开接口分析；不宣称引擎实测",
+      "expected_outcome": "验证采集覆盖，按稳定锚点设计局部判据，确认基线审批不掩盖无关缺陷。",
+      "status": "completed",
+      "phase": "completed",
+      "owner": "本题研究编辑",
+      "evidence_paths": [
+        "GameLibrary/项目管理与测试/质量保证/测试设计/HUD截图回归的采集与基线审批.md",
+        "管理档案/研究/HUD截图回归/README.md",
+        "管理档案/审稿/GL-HUD-SCREENSHOT/20261117-review.md"
+      ],
+      "next_action": "按实际项目采集证据维护；本批证据不视为引擎实测。",
+      "blocker": null,
+      "publication_status": "published"
     }
   ],
   "execution_policy": {
