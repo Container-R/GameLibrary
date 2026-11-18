@@ -1,0 +1,72 @@
+{
+  "two_one_line_cues": [
+    {
+      "starts_100ms": [
+        0,
+        10
+      ],
+      "max_visible_lines": 2,
+      "fits": true
+    },
+    {
+      "starts_100ms": [
+        0,
+        11
+      ],
+      "max_visible_lines": 2,
+      "fits": true
+    },
+    {
+      "starts_100ms": [
+        0,
+        12
+      ],
+      "max_visible_lines": 2,
+      "fits": true
+    }
+  ],
+  "radio_wraps_to_two": [
+    {
+      "starts_100ms": [
+        0,
+        10
+      ],
+      "max_visible_lines": 3,
+      "fits": false
+    },
+    {
+      "starts_100ms": [
+        0,
+        11
+      ],
+      "max_visible_lines": 3,
+      "fits": false
+    },
+    {
+      "starts_100ms": [
+        0,
+        12
+      ],
+      "max_visible_lines": 3,
+      "fits": false
+    }
+  ],
+  "recorded_radio_moved": [
+    {
+      "starts_100ms": [
+        0,
+        22
+      ],
+      "max_visible_lines": 2,
+      "fits": true
+    },
+    {
+      "starts_100ms": [
+        0,
+        23
+      ],
+      "max_visible_lines": 2,
+      "fits": true
+    }
+  ]
+}
