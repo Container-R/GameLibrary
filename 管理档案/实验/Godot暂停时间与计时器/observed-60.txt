@@ -1,0 +1,12 @@
+Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org
+
+timeout=always_unscaled paused=true elapsed_ms=100
+check=short_pause ok=true
+timeout=always_scaled paused=true elapsed_ms=1450
+check=long_pause ok=true
+timeout=pause_unscaled paused=false elapsed_ms=2100
+check=resume_still_slow ok=true
+timeout=pause_scaled paused=false elapsed_ms=2400
+check=resume ok=true
+check=node_process_active_but_not_while_paused ok=true
+check=once_each ok=true
