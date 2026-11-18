@@ -1,0 +1,78 @@
+{
+  "before": [
+    {
+      "id": "hammer:ground:hit",
+      "tick": 6,
+      "value": 14
+    },
+    {
+      "id": "hammer:ground:dust",
+      "tick": 6,
+      "asset": "fx.ground.dust"
+    }
+  ],
+  "after": {
+    "ground": [
+      {
+        "id": "hammer:ground:hit",
+        "tick": 7,
+        "value": 14
+      },
+      {
+        "id": "hammer:ground:dust",
+        "tick": 8,
+        "asset": "fx.ground.dust"
+      }
+    ],
+    "air": [
+      {
+        "id": "hammer:air:hit",
+        "tick": 8,
+        "value": 14
+      },
+      {
+        "id": "hammer:air:wind",
+        "tick": 8,
+        "asset": "fx.air.wind"
+      }
+    ]
+  },
+  "otherContext": [
+    {
+      "id": "hammer:ground:hit",
+      "tick": 7,
+      "value": 19
+    },
+    {
+      "id": "hammer:ground:dust",
+      "tick": 8,
+      "asset": "fx.ground.dust"
+    }
+  ],
+  "unsafeRound": [
+    {
+      "id": "hammer:ground:hit",
+      "tick": 7,
+      "value": 14
+    },
+    {
+      "id": "hammer:ground:dust",
+      "tick": 7,
+      "asset": "fx.ground.dust"
+    }
+  ],
+  "sameKeyDifferentRule": [
+    {
+      "id": "hammer:ground:hit",
+      "tick": 7,
+      "value": 18
+    },
+    {
+      "id": "hammer:ground:dust",
+      "tick": 8,
+      "asset": "fx.ground.dust"
+    }
+  ],
+  "missingRuleRejected": true,
+  "missingAssetRejected": true
+}
