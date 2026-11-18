@@ -1,0 +1,22 @@
+{
+  "independent_50_percent": {
+    "control_mean": "32",
+    "treated_mean": "81/2",
+    "difference": "17/2"
+  },
+  "exactly_one_per_team": {
+    "control_mean": "34",
+    "treated_mean": "36",
+    "difference": "2"
+  },
+  "entire_team_randomized": {
+    "control_mean": "30",
+    "treated_mean": "45",
+    "difference": "15"
+  },
+  "same_partner_comparisons": {
+    "own_change_partner_off": 6,
+    "own_change_partner_on": 11,
+    "partner_change_own_off": 4
+  }
+}
