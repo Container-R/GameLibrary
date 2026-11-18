@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-PROCGEN-STATEFUL-PATH",
+      "reader_title": "程序生成的关卡：地图连通，玩家为什么还过不了",
+      "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/程序生成的关卡：地图连通，玩家为什么还过不了.md",
+      "reader_body_status": "published",
+      "reader_sha256": "3d5d13141f96bac4984f42a29c1f04969bf75cc0ae634aa78edaa0514de97576",
+      "source_record": "管理档案/来源笔记/procgen-stateful-path-20261118.md",
+      "review": "管理档案/审稿/GL-PROCGEN-STATEFUL-PATH/20261118-review.md",
+      "materials_record": "管理档案/实验/程序化关卡的有状态通路/README.md"
+    },
+    {
       "internal_id": "GL-PARTY-ROLLOUT-INTERFERENCE",
       "reader_title": "组队玩法做 A/B 测试：按玩家分组会漏掉什么",
       "canonical_reader_path": "GameLibrary/数据分析/实验分析/统计推断/组队玩法做 A_B 测试：按玩家分组会漏掉什么.md",

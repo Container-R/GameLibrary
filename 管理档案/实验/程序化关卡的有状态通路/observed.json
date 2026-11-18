@@ -1,0 +1,103 @@
+{
+  "landing": {
+    "topology": {
+      "reachable": true,
+      "path": [
+        {
+          "room": "entry",
+          "key": false
+        },
+        {
+          "room": "hall",
+          "key": false
+        },
+        {
+          "room": "landing",
+          "key": false
+        },
+        {
+          "room": "exit",
+          "key": false
+        }
+      ],
+      "blocked_edges_seen": []
+    },
+    "room_only_seen": {
+      "reachable": false,
+      "path": null,
+      "blocked_edges_seen": [
+        "hall->landing: key missing"
+      ]
+    },
+    "full_state": {
+      "reachable": false,
+      "path": null,
+      "blocked_edges_seen": [
+        "hall->landing: key missing"
+      ]
+    }
+  },
+  "niche": {
+    "topology": {
+      "reachable": true,
+      "path": [
+        {
+          "room": "entry",
+          "key": false
+        },
+        {
+          "room": "hall",
+          "key": false
+        },
+        {
+          "room": "landing",
+          "key": false
+        },
+        {
+          "room": "exit",
+          "key": false
+        }
+      ],
+      "blocked_edges_seen": []
+    },
+    "room_only_seen": {
+      "reachable": false,
+      "path": null,
+      "blocked_edges_seen": [
+        "hall->landing: key missing"
+      ]
+    },
+    "full_state": {
+      "reachable": true,
+      "path": [
+        {
+          "room": "entry",
+          "key": false
+        },
+        {
+          "room": "hall",
+          "key": false
+        },
+        {
+          "room": "niche",
+          "key": true
+        },
+        {
+          "room": "hall",
+          "key": true
+        },
+        {
+          "room": "landing",
+          "key": true
+        },
+        {
+          "room": "exit",
+          "key": true
+        }
+      ],
+      "blocked_edges_seen": [
+        "hall->landing: key missing"
+      ]
+    }
+  }
+}
