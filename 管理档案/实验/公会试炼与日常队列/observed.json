@@ -1,0 +1,52 @@
+{
+  "none": {
+    "live": {
+      "gear": 9,
+      "food": 2,
+      "ore": 18,
+      "position": 2
+    },
+    "trialGear": null,
+    "tokens": 0
+  },
+  "normal": {
+    "live": {
+      "gear": 9,
+      "food": 2,
+      "ore": 18,
+      "position": 2
+    },
+    "trialGear": 3,
+    "tokens": 5
+  },
+  "alias": {
+    "live": {
+      "gear": 9,
+      "food": 2,
+      "ore": 18,
+      "position": 2
+    },
+    "trialGear": 9,
+    "tokens": 0
+  },
+  "coupled": {
+    "live": {
+      "gear": 9,
+      "food": 1,
+      "ore": 18,
+      "position": 2
+    },
+    "trialGear": 3,
+    "tokens": 5
+  },
+  "double": {
+    "live": {
+      "gear": 9,
+      "food": 2,
+      "ore": 18,
+      "position": 2
+    },
+    "trialGear": 3,
+    "tokens": 10
+  }
+}
