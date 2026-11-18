@@ -1,0 +1,45 @@
+{
+  "before": {
+    "revision": 1,
+    "key": "Space"
+  },
+  "rejected": {
+    "revision": 1,
+    "key": "Space"
+  },
+  "after": {
+    "revision": 2,
+    "key": "KeyF"
+  },
+  "menu": {
+    "revision": 2,
+    "key": "Space"
+  },
+  "repeated": null,
+  "received": [
+    [
+      1,
+      "game",
+      "Space",
+      "dodge"
+    ],
+    [
+      2,
+      "game",
+      "Space",
+      "interact"
+    ],
+    [
+      2,
+      "menu",
+      "Space",
+      "confirm"
+    ],
+    [
+      2,
+      "game",
+      "KeyF",
+      "dodge"
+    ]
+  ]
+}

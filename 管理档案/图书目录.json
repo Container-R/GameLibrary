@@ -7,6 +7,15 @@
   },
   "entries": [
     {
+      "internal_id": "GL-REMAP-CONTEXT-PROMPT",
+      "reader_title": "改键后动作对了，提示为什么还在指旧键",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/无障碍设计/输入操作/改键后动作对了，提示为什么还在指旧键.md",
+      "reader_body_status": "published",
+      "reader_sha256": "7fb798733a6c5a8a2328dd65dcb5580fdfe3c75267d87a9fa6621e1224b1ac83",
+      "source_record": "管理档案/来源笔记/input-remap-context-20261118.md",
+      "review": "管理档案/审稿/GL-REMAP-CONTEXT-PROMPT/20261118-review.md"
+    },
+    {
       "internal_id": "GL-ALPHA-CUTOUT-MIP",
       "reader_title": "树叶贴图缩小后为什么变稀：裁剪阈值与 Mip 覆盖率",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/树叶贴图缩小后为什么变稀：裁剪阈值与 Mip 覆盖率.md",
