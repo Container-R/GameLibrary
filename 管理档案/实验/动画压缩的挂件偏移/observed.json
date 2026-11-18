@@ -1,0 +1,61 @@
+{
+  "rotation_axis": [
+    0,
+    0,
+    1
+  ],
+  "rotation_degrees": 0.1,
+  "metric": "3D point chord; fixed origin; no scale or translation",
+  "result": {
+    "origin": {
+      "point_cm": [
+        0,
+        0,
+        0
+      ],
+      "axis_radius_cm": 0.0,
+      "error_cm": 0.0,
+      "within_illustrative_001_cm": true
+    },
+    "short_perpendicular": {
+      "point_cm": [
+        3,
+        0,
+        0
+      ],
+      "axis_radius_cm": 3.0,
+      "error_cm": 0.005235987,
+      "within_illustrative_001_cm": true
+    },
+    "prop_perpendicular": {
+      "point_cm": [
+        80,
+        0,
+        0
+      ],
+      "axis_radius_cm": 80.0,
+      "error_cm": 0.139626322,
+      "within_illustrative_001_cm": false
+    },
+    "prop_on_axis": {
+      "point_cm": [
+        0,
+        0,
+        80
+      ],
+      "axis_radius_cm": 0.0,
+      "error_cm": 0.0,
+      "within_illustrative_001_cm": true
+    },
+    "prop_oblique": {
+      "point_cm": [
+        48,
+        0,
+        64
+      ],
+      "axis_radius_cm": 48.0,
+      "error_cm": 0.083775793,
+      "within_illustrative_001_cm": false
+    }
+  }
+}
