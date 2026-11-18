@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-STATIC-SUPPLY-ROUTE",
+      "reader_title": "程序化房间的补给必经检查：删掉节点，再找出口",
+      "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/程序化房间的补给必经检查：删掉节点，再找出口.md",
+      "reader_body_status": "published",
+      "reader_sha256": "01ddba4cb096c01b7c100f7646b07746cfb926ac5a6c8d6119b5067d5ffff69b",
+      "source_record": "管理档案/来源笔记/static-supply-route-20261119.md",
+      "review": "管理档案/审稿/GL-STATIC-SUPPLY-ROUTE/20261119-review.md",
+      "materials_record": "管理档案/实验/静态补给必经/README.md"
+    },
+    {
       "internal_id": "GL-GODOT-PAUSE-TIMER",
       "reader_title": "Godot 暂停和慢动作：计时器发不发信号，要看两件事",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/Godot 暂停和慢动作：计时器发不发信号，要看两件事.md",
@@ -711,7 +721,7 @@
       "reader_title": "瓦片生成遇到矛盾，为什么不一定要放宽规则",
       "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/瓦片生成遇到矛盾，为什么不一定要放宽规则.md",
       "reader_body_status": "published",
-      "reader_sha256": "66679d0ea24af040e52a565d7cc927ca25568190e439671a4454ad42fc0e49e4",
+      "reader_sha256": "e83d004d913e1705c07333eb06b2cbe599092a29c723744f970f8765a5d685cd",
       "source_record": "管理档案/来源笔记/wfc-branch-contradiction.json"
     },
     {

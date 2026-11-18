@@ -1,0 +1,139 @@
+{
+  "base": {
+    "graph": {
+      "S": [
+        "A"
+      ],
+      "A": [
+        "R",
+        "T"
+      ],
+      "T": [
+        "A"
+      ],
+      "R": [
+        "E"
+      ],
+      "E": []
+    },
+    "status": "mandatory",
+    "original": [
+      "S",
+      "A",
+      "R",
+      "E"
+    ],
+    "bypass": null
+  },
+  "bypass": {
+    "graph": {
+      "S": [
+        "A"
+      ],
+      "A": [
+        "R",
+        "T",
+        "E"
+      ],
+      "T": [
+        "A"
+      ],
+      "R": [
+        "E"
+      ],
+      "E": []
+    },
+    "status": "bypass",
+    "original": [
+      "S",
+      "A",
+      "E"
+    ],
+    "bypass": [
+      "S",
+      "A",
+      "E"
+    ]
+  },
+  "unreachable": {
+    "graph": {
+      "S": [
+        "A"
+      ],
+      "A": [
+        "R",
+        "T"
+      ],
+      "T": [
+        "A"
+      ],
+      "R": [],
+      "E": []
+    },
+    "status": "unreachable",
+    "original": null,
+    "bypass": null
+  },
+  "reverse_edge": {
+    "graph": {
+      "S": [
+        "A"
+      ],
+      "A": [
+        "R",
+        "T"
+      ],
+      "T": [
+        "A"
+      ],
+      "R": [
+        "E"
+      ],
+      "E": [
+        "A"
+      ]
+    },
+    "status": "mandatory",
+    "original": [
+      "S",
+      "A",
+      "R",
+      "E"
+    ],
+    "bypass": null
+  },
+  "dead_end_supply": {
+    "graph": {
+      "S": [
+        "A"
+      ],
+      "A": [
+        "R",
+        "T",
+        "E"
+      ],
+      "T": [
+        "A"
+      ],
+      "R": [],
+      "E": []
+    },
+    "status": "bypass",
+    "original": [
+      "S",
+      "A",
+      "E"
+    ],
+    "bypass": [
+      "S",
+      "A",
+      "E"
+    ]
+  },
+  "wrong_room": {
+    "topology": "mandatory",
+    "required_role": "supply",
+    "actual_role": "combat",
+    "role_accepted": false
+  }
+}
