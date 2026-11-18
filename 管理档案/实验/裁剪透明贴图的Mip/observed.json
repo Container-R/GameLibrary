@@ -1,0 +1,26 @@
+{
+  "base": "3/8",
+  "plain": "3/16",
+  "same_coverage_different_positions": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "scaled": "3/8",
+  "scaled_lower_cutoff": "15/16",
+  "tie_attainable": [
+    "0",
+    "1",
+    "1/4"
+  ],
+  "tie_base": "3/8"
+}
