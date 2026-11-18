@@ -1,0 +1,46 @@
+{
+  "same_side": {
+    "in_range_and_in_mask": {
+      "A": {
+        "distance": 5.0,
+        "side": "right"
+      },
+      "B": {
+        "distance": 10.0,
+        "side": "right"
+      }
+    },
+    "nearest_in_this_example": "A"
+  },
+  "opposing_sides": {
+    "in_range_and_in_mask": {
+      "A": {
+        "distance": 5.0,
+        "side": "right"
+      },
+      "B": {
+        "distance": 10.0,
+        "side": "left"
+      }
+    },
+    "nearest_in_this_example": "A"
+  },
+  "b_outside": {
+    "in_range_and_in_mask": {
+      "A": {
+        "distance": 5.0,
+        "side": "right"
+      }
+    },
+    "nearest_in_this_example": "A"
+  },
+  "b_only": {
+    "in_range_and_in_mask": {
+      "B": {
+        "distance": 10.0,
+        "side": "left"
+      }
+    },
+    "nearest_in_this_example": "B"
+  }
+}
