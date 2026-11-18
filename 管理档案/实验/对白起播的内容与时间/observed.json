@@ -1,0 +1,31 @@
+{
+  "scope": "constructed PCM transformations, no engine or device timing measured",
+  "sample_rate_hz": 48000,
+  "python": "3.12.14",
+  "results": {
+    "reference": {
+      "frames": 48000,
+      "first_nonzero_frame": 0,
+      "lead_frame": 0,
+      "later_frame": 9600,
+      "body_frame": 19200,
+      "sha256_wav": "28fe8b940a3676f6116e7fdcc70c94393e9c4329f0916e4d9b632c5b7394c28d"
+    },
+    "whole_delayed": {
+      "frames": 53760,
+      "first_nonzero_frame": 5760,
+      "lead_frame": 5760,
+      "later_frame": 15360,
+      "body_frame": 24960,
+      "sha256_wav": "f4008841622a6613a70fa616a2c0eaf64fe74591eff6d91d054c38aa4ea6ae19"
+    },
+    "prefix_removed": {
+      "frames": 44160,
+      "first_nonzero_frame": 5760,
+      "lead_frame": null,
+      "later_frame": 5760,
+      "body_frame": 15360,
+      "sha256_wav": "4ef2ed7141e52d9407f90ed4b4836760a03a72eaafa76c75fb3edcdbed09bf31"
+    }
+  }
+}

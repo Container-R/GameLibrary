@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-AUDIO-COLD-START",
+      "reader_title": "对白第一次播放迟到：预热完成以后，首块音频还在吗",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/播放管理/对白第一次播放迟到：预热完成以后，首块音频还在吗.md",
+      "reader_body_status": "published",
+      "reader_sha256": "4e64b27a225e8e0cdfb276af3bc9eb730b58a4e20f080db3dae72fed8914bd57",
+      "source_record": "管理档案/来源笔记/audio-cold-start-20261119.md",
+      "review": "管理档案/审稿/GL-AUDIO-COLD-START/20261119-review.md",
+      "materials_record": "管理档案/实验/对白起播的内容与时间/README.md"
+    },
+    {
       "internal_id": "GL-STATIC-SUPPLY-ROUTE",
       "reader_title": "程序化房间的补给必经检查：删掉节点，再找出口",
       "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/程序化房间的补给必经检查：删掉节点，再找出口.md",
