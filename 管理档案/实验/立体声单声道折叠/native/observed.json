@@ -1,0 +1,202 @@
+{
+  "scope": "actual FFmpeg pan on synthesized integer PCM, no perceptual or game-runtime claims",
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "sample_rate": 48000,
+  "frames": 48000,
+  "amplitude_pcm": 4096,
+  "delay_samples": 32,
+  "metrics_interval_half_open": [
+    1024,
+    47104
+  ],
+  "filters": {
+    "fold": "pan=mono|c0=0.5*c0+0.5*c1",
+    "left_replicate": "pan=stereo|c0=c0|c1=c0",
+    "fold_replicate": "pan=stereo|c0=0.5*c0+0.5*c1|c1=0.5*c0+0.5*c1"
+  },
+  "cases": {
+    "identical_750": {
+      "input_left": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "input_right": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "outputs": {
+        "fold": {
+          "channels": 1,
+          "metrics": [
+            {
+              "peak_pcm": 4096,
+              "sum_squares_pcm": 386555109120,
+              "rms_pcm": 2896.3395432856278,
+              "nonzero_samples": 44640
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "c4e5ee32017ceafa2885c912af4ea94ddd19bd3c951304698bd0bb4d93eb065c"
+        }
+      }
+    },
+    "opposite_750": {
+      "input_left": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "input_right": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "outputs": {
+        "fold": {
+          "channels": 1,
+          "metrics": [
+            {
+              "peak_pcm": 0,
+              "sum_squares_pcm": 0,
+              "rms_pcm": 0.0,
+              "nonzero_samples": 0
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "0a8f76d89c709043814cb74f331a4578d17ff61256303bd0019a263d053f86e8"
+        }
+      }
+    },
+    "delay32_750": {
+      "input_left": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "input_right": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386555109120,
+        "rms_pcm": 2896.3395432856278,
+        "nonzero_samples": 44640
+      },
+      "outputs": {
+        "fold": {
+          "channels": 1,
+          "metrics": [
+            {
+              "peak_pcm": 0,
+              "sum_squares_pcm": 0,
+              "rms_pcm": 0.0,
+              "nonzero_samples": 0
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "0de2c1c6a1bd6472b239a0ce1d9eaaf44b5b9c3f8b708c1274d1946fe637a7f1"
+        }
+      }
+    },
+    "delay32_1500": {
+      "input_left": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386599910400,
+        "rms_pcm": 2896.5073795866633,
+        "nonzero_samples": 43200
+      },
+      "input_right": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386599910400,
+        "rms_pcm": 2896.5073795866633,
+        "nonzero_samples": 43200
+      },
+      "outputs": {
+        "fold": {
+          "channels": 1,
+          "metrics": [
+            {
+              "peak_pcm": 4096,
+              "sum_squares_pcm": 386599910400,
+              "rms_pcm": 2896.5073795866633,
+              "nonzero_samples": 43200
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "2507c76e77e39e5ec877a1b3d0475af8b131d52e0873745b74081fa76fee43dd"
+        }
+      }
+    },
+    "right_only_cue_1500": {
+      "input_left": {
+        "peak_pcm": 0,
+        "sum_squares_pcm": 0,
+        "rms_pcm": 0.0,
+        "nonzero_samples": 0
+      },
+      "input_right": {
+        "peak_pcm": 4096,
+        "sum_squares_pcm": 386599910400,
+        "rms_pcm": 2896.5073795866633,
+        "nonzero_samples": 43200
+      },
+      "outputs": {
+        "fold": {
+          "channels": 1,
+          "metrics": [
+            {
+              "peak_pcm": 2048,
+              "sum_squares_pcm": 96649977600,
+              "rms_pcm": 1448.2536897933317,
+              "nonzero_samples": 43200
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "1f59cc23af2f3fdd2ca991a0b7759d8c19e84e9b3d617faeb108001961ee5a70"
+        },
+        "left_replicate": {
+          "channels": 2,
+          "metrics": [
+            {
+              "peak_pcm": 0,
+              "sum_squares_pcm": 0,
+              "rms_pcm": 0.0,
+              "nonzero_samples": 0
+            },
+            {
+              "peak_pcm": 0,
+              "sum_squares_pcm": 0,
+              "rms_pcm": 0.0,
+              "nonzero_samples": 0
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "ede1f6dd33abfce7bb3a45ba79b0ab5f8baae692709dd32214a41da9af55ab13"
+        },
+        "fold_replicate": {
+          "channels": 2,
+          "metrics": [
+            {
+              "peak_pcm": 2048,
+              "sum_squares_pcm": 96649977600,
+              "rms_pcm": 1448.2536897933317,
+              "nonzero_samples": 43200
+            },
+            {
+              "peak_pcm": 2048,
+              "sum_squares_pcm": 96649977600,
+              "rms_pcm": 1448.2536897933317,
+              "nonzero_samples": 43200
+            }
+          ],
+          "all_samples_match_explicit_matrix": true,
+          "sha256_wav": "bd5e86d860920471b882338068fbb0b3c9d6b76493803cd08090a32b5873d95c"
+        }
+      }
+    }
+  }
+}
