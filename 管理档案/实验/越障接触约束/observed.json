@@ -1,0 +1,14 @@
+{
+  "unwarped": {
+    "contact_error_cm": "-20",
+    "end_error_cm": "-30"
+  },
+  "end_only": {
+    "contact_error_cm": "-5",
+    "end_error_cm": "0"
+  },
+  "two_constraints": {
+    "contact_error_cm": "0",
+    "end_error_cm": "0"
+  }
+}
