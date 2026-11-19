@@ -1,0 +1,91 @@
+{
+  "baseline": [
+    {
+      "bound_item": "B",
+      "logical": "B",
+      "node": "Slot1",
+      "pending": false
+    },
+    [
+      "B"
+    ]
+  ],
+  "fresh_press_on_new_row": [
+    {
+      "bound_item": "D",
+      "logical": "D",
+      "node": "Slot1",
+      "pending": false
+    },
+    [
+      "D"
+    ]
+  ],
+  "half_press_cancels_stale_release": [
+    {
+      "bound_item": "D",
+      "logical": "D",
+      "node": "Slot1",
+      "pending": false
+    },
+    []
+  ],
+  "half_press_only_checks_release": [
+    {
+      "bound_item": "D",
+      "logical": "D",
+      "node": "Slot1",
+      "pending": false
+    },
+    [
+      "D"
+    ]
+  ],
+  "late_scroll_after_new_intent": [
+    {
+      "bound_item": "C",
+      "logical": "C",
+      "node": "Slot0",
+      "pending": false
+    },
+    false,
+    [
+      "C"
+    ]
+  ],
+  "pending_rebind": [
+    {
+      "bound_item": "",
+      "logical": "B",
+      "node": "ListSurface",
+      "pending": true
+    },
+    []
+  ],
+  "same_item_new_binding": [
+    {
+      "bound_item": "B",
+      "logical": "B",
+      "node": "Slot1",
+      "pending": false
+    },
+    false,
+    true,
+    [
+      "C",
+      "B"
+    ]
+  ],
+  "unstyled_rebind": [
+    {
+      "bound_item": "D",
+      "logical": "B",
+      "node": "Slot1",
+      "pending": false
+    },
+    [
+      "B",
+      "D"
+    ]
+  ]
+}
