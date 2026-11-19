@@ -1,0 +1,72 @@
+{
+  "same_file_same_uid": {
+    "direct_old_path_marker": "ff0000ff",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": true,
+    "gradient_marker": "ff0000ff",
+    "gradient_path": "res://assets/old.tres",
+    "texture_exists": true,
+    "uid_mapped_path": "res://assets/old.tres",
+    "warned_invalid_uid": false
+  },
+  "moved_with_uid": {
+    "direct_old_path_marker": "",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": true,
+    "gradient_marker": "ff0000ff",
+    "gradient_path": "res://assets/new.tres",
+    "texture_exists": true,
+    "uid_mapped_path": "res://assets/new.tres",
+    "warned_invalid_uid": false
+  },
+  "missing_uid_path_missing": {
+    "direct_old_path_marker": "",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": false,
+    "gradient_marker": "",
+    "gradient_path": "",
+    "texture_exists": false,
+    "uid_mapped_path": "",
+    "warned_invalid_uid": true
+  },
+  "missing_uid_path_reused": {
+    "direct_old_path_marker": "0000ffff",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": true,
+    "gradient_marker": "0000ffff",
+    "gradient_path": "res://assets/old.tres",
+    "texture_exists": true,
+    "uid_mapped_path": "",
+    "warned_invalid_uid": true
+  },
+  "uid_and_path_both_resolve": {
+    "direct_old_path_marker": "0000ffff",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": true,
+    "gradient_marker": "ff0000ff",
+    "gradient_path": "res://assets/new.tres",
+    "texture_exists": true,
+    "uid_mapped_path": "res://assets/new.tres",
+    "warned_invalid_uid": false
+  },
+  "stale_registered_uid_path": {
+    "direct_old_path_marker": "0000ffff",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": false,
+    "gradient_marker": "",
+    "gradient_path": "",
+    "texture_exists": false,
+    "uid_mapped_path": "res://assets/new.tres",
+    "warned_invalid_uid": false
+  },
+  "stale_registered_uid_file_replaced": {
+    "direct_old_path_marker": "",
+    "engine": "4.6.3-stable (official)",
+    "gradient_exists": true,
+    "gradient_marker": "0000ffff",
+    "gradient_path": "res://assets/new.tres",
+    "texture_exists": true,
+    "uid_mapped_path": "res://assets/new.tres",
+    "warned_invalid_uid": false
+  }
+}
