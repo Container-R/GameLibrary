@@ -1,0 +1,104 @@
+{
+  "ordinary_optional_vault": {
+    "reachable_states": 4,
+    "completion_exists": true,
+    "success_example": [
+      "unlock exit-door and enter goal"
+    ],
+    "irrecoverable_count": 2,
+    "first_bad_prefix": [
+      "unlock vault-door and enter vault"
+    ],
+    "why_first_bad": {
+      "room": "vault",
+      "keys": 0,
+      "opened": [
+        "vault-door"
+      ],
+      "collected": []
+    }
+  },
+  "refund_in_vault": {
+    "reachable_states": 7,
+    "completion_exists": true,
+    "success_example": [
+      "unlock exit-door and enter goal"
+    ],
+    "irrecoverable_count": 0,
+    "first_bad_prefix": null,
+    "why_first_bad": null
+  },
+  "one_way_escape_from_vault": {
+    "reachable_states": 5,
+    "completion_exists": true,
+    "success_example": [
+      "unlock exit-door and enter goal"
+    ],
+    "irrecoverable_count": 0,
+    "first_bad_prefix": null,
+    "why_first_bad": null
+  },
+  "refund_but_one_way_pit": {
+    "reachable_states": 10,
+    "completion_exists": true,
+    "success_example": [
+      "unlock exit-door and enter goal"
+    ],
+    "irrecoverable_count": 3,
+    "first_bad_prefix": [
+      "enter pit"
+    ],
+    "why_first_bad": {
+      "room": "pit",
+      "keys": 1,
+      "opened": [],
+      "collected": []
+    }
+  },
+  "position_and_count_are_not_enough": {
+    "reachable_states": 6,
+    "completion_exists": true,
+    "success_example": [
+      "unlock exit-door and enter antechamber",
+      "enter goal"
+    ],
+    "irrecoverable_count": 2,
+    "first_bad_prefix": [
+      "unlock vault-door and enter vault"
+    ],
+    "why_first_bad": {
+      "room": "vault",
+      "keys": 0,
+      "opened": [
+        "vault-door"
+      ],
+      "collected": []
+    },
+    "same_room_and_key_count": [
+      {
+        "room": "hall",
+        "keys": 0,
+        "opened": [
+          "exit-door"
+        ],
+        "can_continue": true,
+        "prefix": [
+          "unlock exit-door and enter antechamber",
+          "enter hall"
+        ]
+      },
+      {
+        "room": "hall",
+        "keys": 0,
+        "opened": [
+          "vault-door"
+        ],
+        "can_continue": false,
+        "prefix": [
+          "unlock vault-door and enter vault",
+          "enter hall"
+        ]
+      }
+    ]
+  }
+}

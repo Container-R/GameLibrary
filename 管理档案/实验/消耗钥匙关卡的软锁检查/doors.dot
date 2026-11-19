@@ -1,0 +1,16 @@
+digraph DungeonKey {
+  graph [rankdir=LR,bgcolor="#f3f5f8",pad=.32,nodesep=.42,ranksep=.9,
+         fontname="DejaVu Sans",fontsize=20,label="One route works; another spends the only key",labelloc=t];
+  node [shape=box,style="rounded,filled",fontname="DejaVu Sans",fontsize=12,
+        color="#465a73",fillcolor="#ffffff",margin=".19,.14",penwidth=1.4];
+  edge [fontname="DejaVu Sans",fontsize=11,color="#465a73",arrowsize=.8];
+  s [label="Hall\n1 key, both doors locked",fillcolor="#dce8f4"];
+  v [label="Vault\n0 keys, vault door open",fillcolor="#f8dfd5"];
+  h0 [label="Hall\n0 keys, vault door open",fillcolor="#f8dfd5"];
+  g [label="Exit\nReached goal",fillcolor="#d8f2e4"];
+  s -> v [label="Spend 1 on vault"];
+  v -> h0 [label="Return free"];
+  h0 -> v [label="Re-enter free"];
+  s -> g [label="Spend 1 on exit",color="#218051",penwidth=2];
+  h0 -> g [label="No key for exit",style=dashed,arrowhead=tee,color="#a34427",constraint=false];
+}
