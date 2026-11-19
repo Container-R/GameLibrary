@@ -1,0 +1,52 @@
+{
+  "keep_old_direction_at_target_depth": [
+    "2",
+    "5"
+  ],
+  "reaim_at_saved_world_focus": [
+    "0",
+    "5"
+  ],
+  "clearance": {
+    "start_endpoint": {
+      "distance_sq": "1",
+      "threshold_sq": "121/400",
+      "clear": true
+    },
+    "end_endpoint": {
+      "distance_sq": "1",
+      "threshold_sq": "121/400",
+      "clear": true
+    },
+    "direct_lateral_segment": {
+      "distance_sq": "0",
+      "threshold_sq": "121/400",
+      "clear": false
+    },
+    "detour_left_segment": {
+      "distance_sq": "1/2",
+      "threshold_sq": "121/400",
+      "clear": true
+    },
+    "detour_right_segment": {
+      "distance_sq": "1/2",
+      "threshold_sq": "121/400",
+      "clear": true
+    },
+    "focus_ray_start_local_segment": {
+      "distance_sq": "64/65",
+      "threshold_sq": "49/400",
+      "clear": true
+    },
+    "focus_ray_end_local_segment": {
+      "distance_sq": "64/65",
+      "threshold_sq": "49/400",
+      "clear": true
+    }
+  },
+  "focus_visibility_with_second_prop": {
+    "left": true,
+    "waypoint": false,
+    "right": true
+  }
+}

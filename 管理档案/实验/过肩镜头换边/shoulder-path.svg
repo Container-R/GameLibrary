@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" role="img" aria-label="Shoulder swap: physical path and target visibility are different checks">
+<rect width="900" height="460" fill="#111c2a"/>
+<text x="29" y="34" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="25">A shoulder swap has two separate checks</text>
+<rect x="25" y="57" width="432" height="366" rx="12" fill="#172637" stroke="#435369"/>
+<rect x="473" y="57" width="402" height="366" rx="12" fill="#172637" stroke="#435369"/>
+<text x="45" y="88" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">A. Can the camera move across?</text>
+<text x="493" y="88" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">B. Is the focus still visible?</text>
+<line x1="165" y1="228" x2="331" y2="228" stroke="#ff8c81" stroke-width="3" stroke-dasharray="5 5"/>
+<line x1="165" y1="228" x2="248" y2="145" stroke="#8be4cb" stroke-width="3"/>
+<line x1="248" y1="145" x2="331" y2="228" stroke="#8be4cb" stroke-width="3"/>
+<circle cx="248" cy="228" r="29.049999999999997" fill="#994e4e" stroke="#ffadad" stroke-width="1.5"/>
+<circle cx="165" cy="228" r="16.6" fill="#c7fff4" stroke="#8be4cb" stroke-width="1.5"/>
+<circle cx="165" cy="228" r="4" fill="#102a2f" stroke="#102a2f" stroke-width="1.5"/>
+<text x="125" y="284" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Left</text>
+<circle cx="331" cy="228" r="16.6" fill="#c7fff4" stroke="#8be4cb" stroke-width="1.5"/>
+<circle cx="331" cy="228" r="4" fill="#102a2f" stroke="#102a2f" stroke-width="1.5"/>
+<text x="341" y="284" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Right</text>
+<circle cx="248" cy="145" r="16.6" fill="#c7fff4" stroke="#8be4cb" stroke-width="1.5"/>
+<circle cx="248" cy="145" r="4" fill="#102a2f" stroke="#102a2f" stroke-width="1.5"/>
+<text x="271" y="140" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Via</text>
+<text x="49" y="348" fill="#ffb4ab" font-family="DejaVu Sans, sans-serif" font-size="16">Red: blocked direct move</text>
+<text x="49" y="378" fill="#bcffe7" font-family="DejaVu Sans, sans-serif" font-size="16">Green: both detour segments clear</text>
+<line x1="641" y1="384" x2="675" y2="112" stroke="#8be4cb" stroke-width="3"/>
+<line x1="709" y1="384" x2="675" y2="112" stroke="#8be4cb" stroke-width="3"/>
+<line x1="675" y1="350" x2="675" y2="112" stroke="#ff8c81" stroke-width="3" stroke-dasharray="5 5"/>
+<circle cx="641" cy="384" r="4" fill="#e4fcf4" stroke="#e4fcf4" stroke-width="1.5"/>
+<text x="606" y="375" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Left</text>
+<circle cx="709" cy="384" r="4" fill="#e4fcf4" stroke="#e4fcf4" stroke-width="1.5"/>
+<text x="719" y="375" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Right</text>
+<circle cx="675" cy="350" r="4" fill="#e4fcf4" stroke="#e4fcf4" stroke-width="1.5"/>
+<text x="683" y="343" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Via</text>
+<circle cx="675" cy="112" r="4" fill="#e4fcf4" stroke="#e4fcf4" stroke-width="1.5"/>
+<text x="687" y="122" fill="#edf3ff" font-family="DejaVu Sans, sans-serif" font-size="16">Focus</text>
+<circle cx="675" cy="248" r="6.8" fill="#ff8c81" stroke="#ffbdb5" stroke-width="1.5"/>
+<text x="700" y="255" fill="#ffb4ab" font-family="DejaVu Sans, sans-serif" font-size="14">Prop blocks</text>
+<text x="700" y="275" fill="#ffb4ab" font-family="DejaVu Sans, sans-serif" font-size="14">only the via ray</text>
+<text x="46" y="447" fill="#c6d5e7" font-family="DejaVu Sans, sans-serif" font-size="14">Illustration: sphere proxy and a single point of focus; not a rendered gameplay view.</text>
+</svg>
