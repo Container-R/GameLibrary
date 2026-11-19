@@ -1,0 +1,79 @@
+{
+  "scope": "exact linear opaque row-constant box mips; explicit sample coordinates and LOD; no engine",
+  "aligned_sample_only": {
+    "edge": 8,
+    "level": 2,
+    "neighbor_cell_B": [
+      "0",
+      "1"
+    ],
+    "x": "15/2",
+    "right_weight": "3/8",
+    "sample_B": "3/8",
+    "clamped_x": 6,
+    "clamped_B": "0"
+  },
+  "unaligned_already_mixed": {
+    "edge": 7,
+    "level": 2,
+    "footprint": [
+      4,
+      8
+    ],
+    "x": 6,
+    "sample_B": "1/4"
+  },
+  "extrusion_base_texels": {
+    "0": {
+      "B_at_original_last_A_center_x_7.5_levels_0_to_3": [
+        "0",
+        "1/4",
+        "3/8",
+        "7/16"
+      ],
+      "level_4_cell_0_footprint": [
+        0,
+        16
+      ],
+      "level_4_cell_0_B_fraction": "1/2",
+      "level_4_exact_center_x_8_B_fraction": "1/2"
+    },
+    "1": {
+      "B_at_original_last_A_center_x_7.5_levels_0_to_3": [
+        "0",
+        "1/8",
+        "9/32",
+        "49/128"
+      ],
+      "level_4_cell_0_footprint": [
+        0,
+        16
+      ],
+      "level_4_cell_0_B_fraction": "7/16",
+      "level_4_exact_center_x_8_B_fraction": "7/16"
+    },
+    "2": {
+      "B_at_original_last_A_center_x_7.5_levels_0_to_3": [
+        "0",
+        "0",
+        "3/16",
+        "21/64"
+      ],
+      "level_4_cell_0_footprint": [
+        0,
+        16
+      ],
+      "level_4_cell_0_B_fraction": "3/8",
+      "level_4_exact_center_x_8_B_fraction": "3/8"
+    }
+  },
+  "explicit_trilinear": {
+    "gutter": 2,
+    "x": "15/2",
+    "LOD": "3/2",
+    "level_1_B": "0",
+    "level_2_B": "3/16",
+    "sample_B": "3/32"
+  },
+  "limit": "1 or 2 base extrusion texels are not universally safe across mip levels. This does not claim no safe level or derive a production padding budget."
+}
