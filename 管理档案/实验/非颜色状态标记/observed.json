@@ -1,0 +1,31 @@
+{
+  "sRGB_colors": {
+    "ready": [
+      0,
+      148,
+      0
+    ],
+    "blocked": [
+      255,
+      0,
+      0
+    ]
+  },
+  "relative_luminance": {
+    "ready": 0.211798,
+    "blocked": 0.2126
+  },
+  "contrast_each_on_black": {
+    "ready": 5.23596,
+    "blocked": 5.252
+  },
+  "contrast_between_state_colors": 1.00306,
+  "grayscale_encoded_8bit": {
+    "ready": 127,
+    "blocked": 127
+  },
+  "distinct_state_focus_combinations_after_color_removed": {
+    "of_four_color_only": 2,
+    "of_four_separate_pattern_and_focus": 4
+  }
+}

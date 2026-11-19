@@ -1,0 +1,36 @@
+{
+  "24": {
+    "thin_aligned_between_rows": {
+      "max_alpha": "3/5",
+      "nonzero_pixels_before_cut": 24,
+      "solid_pixels_after_half_alpha_cut": 24
+    },
+    "thin_offset_half_pixel": {
+      "max_alpha": "1",
+      "nonzero_pixels_before_cut": 36,
+      "solid_pixels_after_half_alpha_cut": 12
+    },
+    "wide_aligned_between_rows": {
+      "max_alpha": "1",
+      "nonzero_pixels_before_cut": 48,
+      "solid_pixels_after_half_alpha_cut": 48
+    }
+  },
+  "12": {
+    "thin_aligned_between_rows": {
+      "max_alpha": "3/10",
+      "nonzero_pixels_before_cut": 12,
+      "solid_pixels_after_half_alpha_cut": 0
+    },
+    "thin_offset_half_pixel": {
+      "max_alpha": "3/5",
+      "nonzero_pixels_before_cut": 6,
+      "solid_pixels_after_half_alpha_cut": 6
+    },
+    "wide_aligned_between_rows": {
+      "max_alpha": "1",
+      "nonzero_pixels_before_cut": 12,
+      "solid_pixels_after_half_alpha_cut": 12
+    }
+  }
+}

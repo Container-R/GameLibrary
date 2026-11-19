@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="455" viewBox="0 0 960 455" role="img" aria-label="Map door availability cues independent of current selection">
+<rect width="960" height="455" fill="#121b29"/>
+<text x="24" y="38" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="26">A bright icon can still hide its meaning</text>
+<rect x="25" y="55" width="220" height="348" rx="4" fill="#192838" stroke="#42566c" stroke-width="1"/>
+<text x="37" y="84" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="17">Color only</text>
+<text x="37" y="108" fill="#ccdcee" font-family="DejaVu Sans, sans-serif" font-size="12">Same silhouette for both states</text>
+<text x="38" y="151" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Ready</text>
+<rect x="56" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="73" y="177" width="26" height="30" rx="4" fill="#009400"/>
+<text x="62" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="160" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="160" y="162" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<rect x="177" y="177" width="26" height="30" rx="4" fill="#009400"/>
+<text x="166" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<text x="38" y="284" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Blocked</text>
+<rect x="56" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="73" y="310" width="26" height="30" rx="4" fill="#ff0000"/>
+<text x="62" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="160" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="160" y="295" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<rect x="177" y="310" width="26" height="30" rx="4" fill="#ff0000"/>
+<text x="166" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<rect x="253" y="55" width="220" height="348" rx="4" fill="#192838" stroke="#42566c" stroke-width="1"/>
+<text x="265" y="84" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="17">Remove hue</text>
+<text x="265" y="108" fill="#ccdcee" font-family="DejaVu Sans, sans-serif" font-size="12">Both map to gray 127</text>
+<text x="266" y="151" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Ready</text>
+<rect x="284" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="301" y="177" width="26" height="30" rx="4" fill="#7f7f7f"/>
+<text x="290" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="388" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="388" y="162" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<rect x="405" y="177" width="26" height="30" rx="4" fill="#7f7f7f"/>
+<text x="394" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<text x="266" y="284" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Blocked</text>
+<rect x="284" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="301" y="310" width="26" height="30" rx="4" fill="#7f7f7f"/>
+<text x="290" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="388" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="388" y="295" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<rect x="405" y="310" width="26" height="30" rx="4" fill="#7f7f7f"/>
+<text x="394" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<rect x="481" y="55" width="220" height="348" rx="4" fill="#192838" stroke="#42566c" stroke-width="1"/>
+<text x="493" y="84" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="17">Shape and color</text>
+<text x="493" y="108" fill="#ccdcee" font-family="DejaVu Sans, sans-serif" font-size="12">Crossbar means blocked</text>
+<text x="494" y="151" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Ready</text>
+<rect x="512" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<path d="M 529,207 V 178 H 555 V 207" stroke="#009400" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<text x="518" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="616" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="616" y="162" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<path d="M 633,207 V 178 H 659 V 207" stroke="#009400" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<text x="622" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<text x="494" y="284" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Blocked</text>
+<rect x="512" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<path d="M 529,340 V 311 H 555 V 340" stroke="#ff0000" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<path d="M 529,325 H 555" stroke="#ff0000" stroke-width="5"/>
+<text x="518" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="616" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="616" y="295" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<path d="M 633,340 V 311 H 659 V 340" stroke="#ff0000" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<path d="M 633,325 H 659" stroke="#ff0000" stroke-width="5"/>
+<text x="622" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<rect x="709" y="55" width="220" height="348" rx="4" fill="#192838" stroke="#42566c" stroke-width="1"/>
+<text x="721" y="84" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="17">Shape without hue</text>
+<text x="721" y="108" fill="#ccdcee" font-family="DejaVu Sans, sans-serif" font-size="12">Availability is still encoded</text>
+<text x="722" y="151" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Ready</text>
+<rect x="740" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<path d="M 757,207 V 178 H 783 V 207" stroke="#7f7f7f" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<text x="746" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="844" y="162" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="844" y="162" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<path d="M 861,207 V 178 H 887 V 207" stroke="#7f7f7f" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<text x="850" y="244" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<text x="722" y="284" fill="#edf5ff" font-family="DejaVu Sans, sans-serif" font-size="14">Blocked</text>
+<rect x="740" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<path d="M 757,340 V 311 H 783 V 340" stroke="#7f7f7f" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<path d="M 757,325 H 783" stroke="#7f7f7f" stroke-width="5"/>
+<text x="746" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Idle</text>
+<rect x="844" y="295" width="60" height="60" rx="4" fill="#000000"/>
+<rect x="844" y="295" width="60" height="60" rx="4" fill="none" stroke="#f0f5ff" stroke-width="3"/>
+<path d="M 861,340 V 311 H 887 V 340" stroke="#7f7f7f" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<path d="M 861,325 H 887" stroke="#7f7f7f" stroke-width="5"/>
+<text x="850" y="377" fill="#dce9f7" font-family="DejaVu Sans, sans-serif" font-size="12">Focus</text>
+<text x="26" y="438" fill="#d7e9fa" font-family="DejaVu Sans, sans-serif" font-size="15">White outer border = current focus. Silhouette and focus are separate visual layers.</text>
+</svg>
