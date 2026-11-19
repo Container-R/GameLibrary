@@ -1,0 +1,173 @@
+{
+  "python": "3.12.14",
+  "kind": "synthetic finite model, not ink runtime",
+  "cases": [
+    {
+      "version": "approved",
+      "complete": true,
+      "old_states": 9,
+      "new_states": 8,
+      "all_reachable_states_can_finish": true,
+      "differences": [
+        {
+          "state": {
+            "scene": "audience",
+            "trust": 1,
+            "badge": true
+          },
+          "old_prefix": [
+            "credential"
+          ],
+          "new_prefix": [
+            "credential"
+          ],
+          "removed": [
+            "parley"
+          ],
+          "added": [],
+          "approved": true
+        }
+      ],
+      "new_only_states": [],
+      "old_only_states": [
+        {
+          "state": {
+            "scene": "agreement",
+            "trust": 1,
+            "badge": true
+          },
+          "prefix": [
+            "credential",
+            "parley"
+          ]
+        }
+      ],
+      "obligations_met": true,
+      "graph_delta_approved": true,
+      "accepted": true
+    },
+    {
+      "version": "bad_threshold",
+      "complete": true,
+      "old_states": 9,
+      "new_states": 7,
+      "all_reachable_states_can_finish": true,
+      "differences": [
+        {
+          "state": {
+            "scene": "audience",
+            "trust": 1,
+            "badge": true
+          },
+          "old_prefix": [
+            "credential"
+          ],
+          "new_prefix": [
+            "credential"
+          ],
+          "removed": [
+            "parley"
+          ],
+          "added": [],
+          "approved": true
+        },
+        {
+          "state": {
+            "scene": "audience",
+            "trust": 2,
+            "badge": false
+          },
+          "old_prefix": [
+            "help"
+          ],
+          "new_prefix": [
+            "help"
+          ],
+          "removed": [
+            "parley"
+          ],
+          "added": [],
+          "approved": false
+        }
+      ],
+      "new_only_states": [],
+      "old_only_states": [
+        {
+          "state": {
+            "scene": "agreement",
+            "trust": 2,
+            "badge": false
+          },
+          "prefix": [
+            "help",
+            "parley"
+          ]
+        },
+        {
+          "state": {
+            "scene": "agreement",
+            "trust": 1,
+            "badge": true
+          },
+          "prefix": [
+            "credential",
+            "parley"
+          ]
+        }
+      ],
+      "obligations_met": false,
+      "graph_delta_approved": false,
+      "accepted": false
+    },
+    {
+      "version": "bad_open",
+      "complete": true,
+      "old_states": 9,
+      "new_states": 10,
+      "all_reachable_states_can_finish": true,
+      "differences": [
+        {
+          "state": {
+            "scene": "audience",
+            "trust": 0,
+            "badge": false
+          },
+          "old_prefix": [
+            "rush"
+          ],
+          "new_prefix": [
+            "rush"
+          ],
+          "removed": [],
+          "added": [
+            "parley"
+          ],
+          "approved": false
+        }
+      ],
+      "new_only_states": [
+        {
+          "state": {
+            "scene": "agreement",
+            "trust": 0,
+            "badge": false
+          },
+          "prefix": [
+            "rush",
+            "parley"
+          ]
+        }
+      ],
+      "old_only_states": [],
+      "obligations_met": false,
+      "graph_delta_approved": false,
+      "accepted": false
+    }
+  ],
+  "budget_limit_2": "undetermined",
+  "unreachable_combination": {
+    "scene": "audience",
+    "trust": 2,
+    "badge": true
+  }
+}
