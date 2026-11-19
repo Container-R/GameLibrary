@@ -1,0 +1,58 @@
+{
+  "unwarped": {
+    "nonzero_x_alpha": [
+      [
+        2,
+        "1/2"
+      ],
+      [
+        6,
+        "1/2"
+      ]
+    ],
+    "mass": "1",
+    "centroid_x": "4",
+    "l1_to_truth_midpoint": "2"
+  },
+  "correct": {
+    "nonzero_x_alpha": [
+      [
+        4,
+        "1"
+      ]
+    ],
+    "mass": "1",
+    "centroid_x": "4",
+    "l1_to_truth_midpoint": "0"
+  },
+  "wrong_sign": {
+    "nonzero_x_alpha": [
+      [
+        0,
+        "1/2"
+      ],
+      [
+        8,
+        "1/2"
+      ]
+    ],
+    "mass": "1",
+    "centroid_x": "4",
+    "l1_to_truth_midpoint": "2"
+  },
+  "half_scale": {
+    "nonzero_x_alpha": [
+      [
+        3,
+        "1/2"
+      ],
+      [
+        5,
+        "1/2"
+      ]
+    ],
+    "mass": "1",
+    "centroid_x": "4",
+    "l1_to_truth_midpoint": "2"
+  }
+}
