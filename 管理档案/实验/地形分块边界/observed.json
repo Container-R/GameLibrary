@@ -1,0 +1,56 @@
+{
+  "projection": "orthographic side profile; u=320+s*x,v=150-s*z",
+  "units": "metres and pixels",
+  "results": [
+    {
+      "case": "ridge_shift",
+      "scale_px_per_m": 40,
+      "metric": "horizontal peak displacement",
+      "value_px": 40
+    },
+    {
+      "case": "chunk_gap",
+      "scale_px_per_m": 40,
+      "metric": "vertical seam endpoint gap",
+      "value_px": 7.999999999999998
+    },
+    {
+      "case": "rule_shift",
+      "scale_px_per_m": 40,
+      "metric": "horizontal rule ridge displacement",
+      "value_px": 40
+    },
+    {
+      "case": "ridge_shift",
+      "scale_px_per_m": 10,
+      "metric": "horizontal peak displacement",
+      "value_px": 10
+    },
+    {
+      "case": "chunk_gap",
+      "scale_px_per_m": 10,
+      "metric": "vertical seam endpoint gap",
+      "value_px": 1.9999999999999996
+    },
+    {
+      "case": "rule_shift",
+      "scale_px_per_m": 10,
+      "metric": "horizontal rule ridge displacement",
+      "value_px": 10
+    }
+  ],
+  "shot_x_interval": [
+    -0.5,
+    0.5
+  ],
+  "baseline_blocks": true,
+  "shifted_blocks": false,
+  "rule_shift_render_identical": true,
+  "height_rule_example": {
+    "baseline_height_m": 2,
+    "stale_height_m": 1.5,
+    "advantage_threshold_m": 1.75,
+    "baseline_has_advantage": true,
+    "stale_has_advantage": false
+  }
+}
