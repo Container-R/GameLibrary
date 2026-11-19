@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-STABLE-CASCADE",
+      "reader_title": "级联阴影做了纹素对齐，为什么还会晃",
+      "canonical_reader_path": "GameLibrary/图形渲染/场景光照/阴影贴图/级联阴影做了纹素对齐，为什么还会晃.md",
+      "reader_body_status": "published",
+      "reader_sha256": "2512ea67bafd24af23996a25531a3e6e205aad01f0e459468b2217086731d6e9",
+      "source_record": "管理档案/来源笔记/stable-cascade-20261119.md",
+      "review": "管理档案/审稿/GL-STABLE-CASCADE/20261119-review.md",
+      "materials_record": "管理档案/实验/稳定级联阴影/README.md"
+    },
+    {
       "internal_id": "GL-CROSS-RUNTIME-REPLAY",
       "reader_title": "玩法迁移后结果看着一样，怎样找到第一次分歧",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/玩法迁移后结果看着一样，怎样找到第一次分歧.md",

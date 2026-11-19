@@ -1,0 +1,89 @@
+{
+  "moving_fixed_extent_no_snap": [
+    {
+      "origin": [
+        "-8",
+        "-8"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 0
+    },
+    {
+      "origin": [
+        "-77/10",
+        "-63/8"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 12672
+    },
+    {
+      "origin": [
+        "-149/20",
+        "-35/4"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 22272
+    }
+  ],
+  "moving_fixed_extent_snap": [
+    {
+      "origin": [
+        "-8",
+        "-8"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 0
+    },
+    {
+      "origin": [
+        "-8",
+        "-8"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 0
+    },
+    {
+      "origin": [
+        "-7",
+        "-9"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 0
+    }
+  ],
+  "changing_extent_despite_snap": [
+    {
+      "origin": [
+        "-8",
+        "-8"
+      ],
+      "pitch": "1",
+      "shadow_count": 40960,
+      "mask_changed_points": 0
+    },
+    {
+      "origin": [
+        "-17/2",
+        "-17/2"
+      ],
+      "pitch": "17/16",
+      "shadow_count": 32368,
+      "mask_changed_points": 12912
+    },
+    {
+      "origin": [
+        "-56/5",
+        "-56/5"
+      ],
+      "pitch": "7/5",
+      "shadow_count": 40141,
+      "mask_changed_points": 18135
+    }
+  ]
+}
