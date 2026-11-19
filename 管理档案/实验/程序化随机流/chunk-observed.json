@@ -1,0 +1,116 @@
+{
+  "canonical_serialization_test_vector": {
+    "record": [
+      "game-atlas-v1",
+      20261119,
+      "layout",
+      -1,
+      2,
+      "turn-and-height"
+    ],
+    "u64_hex": "d297cb622ab2effb"
+  },
+  "scope": "synthetic map domain tests using actual stdlib PRNG",
+  "scoped_baseline": {
+    "-1,2": {
+      "ground_plant": "reed",
+      "layout": [
+        2,
+        2
+      ]
+    },
+    "0,2": {
+      "ground_plant": "lichen",
+      "layout": [
+        0,
+        0
+      ]
+    },
+    "1,2": {
+      "ground_plant": "reed",
+      "layout": [
+        1,
+        0
+      ]
+    }
+  },
+  "scoped_with_extra_draw_reversed_order": {
+    "-1,2": {
+      "ground_plant": "reed",
+      "layout": [
+        2,
+        2
+      ]
+    },
+    "0,2": {
+      "ground_plant": "moss",
+      "layout": [
+        0,
+        0
+      ]
+    },
+    "1,2": {
+      "ground_plant": "reed",
+      "layout": [
+        1,
+        0
+      ]
+    }
+  },
+  "shared_baseline": {
+    "-1,2": [
+      3,
+      2
+    ],
+    "0,2": [
+      1,
+      0
+    ],
+    "1,2": [
+      2,
+      2
+    ]
+  },
+  "shared_extra_draw_one_chunk": {
+    "-1,2": [
+      3,
+      2
+    ],
+    "0,2": [
+      1,
+      1
+    ],
+    "1,2": [
+      3,
+      1
+    ]
+  },
+  "shared_reversed_load_order": {
+    "-1,2": [
+      2,
+      2
+    ],
+    "0,2": [
+      1,
+      0
+    ],
+    "1,2": [
+      3,
+      2
+    ]
+  },
+  "shared_three_extra_draws_one_chunk": {
+    "-1,2": [
+      3,
+      2
+    ],
+    "0,2": [
+      1,
+      2
+    ],
+    "1,2": [
+      3,
+      1
+    ]
+  }
+}

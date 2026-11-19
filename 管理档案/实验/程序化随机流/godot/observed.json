@@ -1,0 +1,105 @@
+{
+  "base_seed": 424242,
+  "checks": {
+    "decoration_took_next_layout_value": true,
+    "fresh_seed_repeats_exactly": true,
+    "pinned_build_sequence_exact": true,
+    "same_build_state_replay_exact": true,
+    "separate_layout_matches_baseline": true,
+    "separate_layout_unchanged": true,
+    "shared_prefix_equal": true,
+    "shared_suffix_changed": true,
+    "shared_suffix_shifted_by_one": true
+  },
+  "decoration_seed": 701293,
+  "engine": "4.6.3-stable (official)",
+  "engine_hash": "7d41c59c457bd5a245092b4e7eb2d833e3b3f8c3",
+  "operation": "randi_range(0,999999), same calls throughout",
+  "restore": {
+    "first": [
+      865485,
+      462888,
+      51428,
+      904232,
+      692613
+    ],
+    "prefix": [
+      751541,
+      756337,
+      149008
+    ],
+    "replay": [
+      865485,
+      462888,
+      51428,
+      904232,
+      692613
+    ],
+    "state_decimal_string": "-9030198590371274667"
+  },
+  "scope": "Actual built-in Godot RNG, no cross-build guarantee or statistical-independence claim",
+  "separate_with_extra": {
+    "decoration": [
+      821771
+    ],
+    "prefix": [
+      751541,
+      756337
+    ],
+    "remaining_rooms": [
+      149008,
+      865485,
+      462888,
+      51428,
+      904232,
+      692613
+    ]
+  },
+  "separate_without_extra": {
+    "decoration": [],
+    "prefix": [
+      751541,
+      756337
+    ],
+    "remaining_rooms": [
+      149008,
+      865485,
+      462888,
+      51428,
+      904232,
+      692613
+    ]
+  },
+  "shared_with_extra": {
+    "decoration": [
+      149008
+    ],
+    "prefix": [
+      751541,
+      756337
+    ],
+    "remaining_rooms": [
+      865485,
+      462888,
+      51428,
+      904232,
+      692613,
+      816460
+    ]
+  },
+  "shared_without_extra": {
+    "decoration": [],
+    "prefix": [
+      751541,
+      756337
+    ],
+    "remaining_rooms": [
+      149008,
+      865485,
+      462888,
+      51428,
+      904232,
+      692613
+    ]
+  }
+}
