@@ -1,0 +1,39 @@
+{
+  "deltas": [
+    -1,
+    1,
+    -10,
+    1,
+    9,
+    10
+  ],
+  "reference_python": [
+    "1,-1,-1,enter:-1",
+    "2,0,0,enter:0",
+    "3,-10,-1,enter:-1",
+    "4,-9,-1,-",
+    "5,0,0,enter:0",
+    "6,10,1,enter:1"
+  ],
+  "candidate_cpp_trunc": [
+    "1,-1,0,-",
+    "2,0,0,-",
+    "3,-10,-1,enter:-1",
+    "4,-9,0,enter:0",
+    "5,0,0,-",
+    "6,10,1,enter:1"
+  ],
+  "candidate_cpp_floor": [
+    "1,-1,-1,enter:-1",
+    "2,0,0,enter:0",
+    "3,-10,-1,enter:-1",
+    "4,-9,-1,-",
+    "5,0,0,enter:0",
+    "6,10,1,enter:1"
+  ],
+  "first_mismatch_tick": 1,
+  "identity_node": {
+    "number_ids_distinct": false,
+    "decimal_string_ids_distinct": true
+  }
+}
