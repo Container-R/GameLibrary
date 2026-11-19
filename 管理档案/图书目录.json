@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-LOCAL-GAMEPAD-RECONNECT",
+      "reader_title": "本地合作手柄断开后，怎样恢复原来的玩家席位",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/本地合作手柄断开后，怎样恢复原来的玩家席位.md",
+      "reader_body_status": "published",
+      "reader_sha256": "fccf7997a71a54cdb4b9e71df9b360195bc5c775357110bf1e45b6b97ba08258",
+      "source_record": "管理档案/来源笔记/local-gamepad-reconnect-20261119.md",
+      "review": "管理档案/审稿/GL-LOCAL-GAMEPAD-RECONNECT/20261119-review.md",
+      "materials_record": "管理档案/实验/本地合作手柄重连/README.md"
+    },
+    {
       "internal_id": "GL-CAMERA-RELATIVE-PHASE",
       "reader_title": "大世界材质改用相机相对坐标，怎样让花纹仍固定在世界上",
       "canonical_reader_path": "GameLibrary/图形渲染/着色器开发/世界坐标与精度/大世界材质改用相机相对坐标，怎样让花纹仍固定在世界上.md",

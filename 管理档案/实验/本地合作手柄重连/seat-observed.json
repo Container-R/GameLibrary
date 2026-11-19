@@ -1,0 +1,114 @@
+[
+  {
+    "step": "old_device_queued_press",
+    "outcome": "invalid_or_gone",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "replacement_arrives_held",
+    "outcome": "waiting_for_claim",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "invalid_zero_cannot_clear",
+    "outcome": "invalid_or_gone",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "cannot_claim_yet",
+    "outcome": "waiting_for_claim",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "replacement_releases",
+    "outcome": "waiting_for_claim",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "occupied_P2_cannot_claim_P1",
+    "outcome": "wrong_instance_or_generation",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "other_device_ready",
+    "outcome": "waiting_for_claim",
+    "owner": null,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "claim_press_consumed",
+    "outcome": "claimed_consumed",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "other_device_stale_claim",
+    "outcome": "wrong_instance_or_generation",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "same_device_wrong_generation",
+    "outcome": "wrong_instance_or_generation",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "claim_button_stays_held",
+    "outcome": "waiting_for_release",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "button_released_but_axis_still_held",
+    "outcome": "waiting_for_release",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "other_gameplay_button_still_held",
+    "outcome": "waiting_for_release",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "release_and_valid_neutral",
+    "outcome": "armed_without_action",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "first_fresh_press",
+    "outcome": "game_press",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  },
+  {
+    "step": "still_held_not_second_edge",
+    "outcome": "no_game_press",
+    "owner": 2,
+    "p1_move": 0,
+    "p2_move": 1
+  }
+]

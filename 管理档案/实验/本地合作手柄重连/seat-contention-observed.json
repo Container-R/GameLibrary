@@ -1,0 +1,313 @@
+{
+  "scope": "synthetic arbitration policy, no hardware or SDL behavior measured",
+  "policy": "reject all ambiguous valid claims per frame; explicit one-use UI identity; serialized atomic commit; connection incarnation and seat epoch checked",
+  "invariants": "single owner per connection; no occupied seat theft; incumbent state unchanged; stale claims/gameplay rejected after each loss",
+  "trace": [
+    {
+      "case": "same_connection_two_vacant_seats_same_frame",
+      "result": {
+        "ui-1": "ambiguous_frame_rejected",
+        "ui-2": "ambiguous_frame_rejected"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "one_seat_two_connections_same_frame",
+      "result": {
+        "ui-5": "ambiguous_frame_rejected",
+        "ui-6": "ambiguous_frame_rejected"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "incumbent_device_and_seat_cannot_be_stolen",
+      "result": {
+        "ui-7": "device_occupied",
+        "ui-8": "seat_occupied"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "same_request_key_different_payloads_fail_closed",
+      "result": {
+        "ui-9": "conflicting_payload_for_same_ui_request"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "duplicate_confirmations_in_same_frame_are_one_claim",
+      "result": {
+        "ui-10": "claimed_confirmation_consumed"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 1,
+          "owner": [
+            "pad",
+            1
+          ],
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "same_request_replayed_next_frame_does_not_change_binding",
+      "result": {
+        "ui-10": "unknown_consumed_or_invalidated_ui_request"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 1,
+          "owner": [
+            "pad",
+            1
+          ],
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "accepted_claim_replayed_after_first_loss_and_replacement",
+      "result": {
+        "ui-10": "unknown_consumed_or_invalidated_ui_request"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 2,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "second_loss_rejects_second_accepted_claim_and_old_gameplay",
+      "result": {
+        "ui-11": "unknown_consumed_or_invalidated_ui_request"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 4,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "unaccepted_request_invalidated_by_connection_loss",
+      "result": {
+        "ui-12": "unknown_consumed_or_invalidated_ui_request"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 4,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 0,
+          "owner": null,
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    },
+    {
+      "case": "independent_claims_can_commit_in_same_frame",
+      "result": {
+        "ui-13": "claimed_confirmation_consumed",
+        "ui-14": "claimed_confirmation_consumed"
+      },
+      "seats": {
+        "P1": {
+          "epoch": 5,
+          "owner": [
+            "pad",
+            4
+          ],
+          "armed": false,
+          "move": 0
+        },
+        "P2": {
+          "epoch": 1,
+          "owner": [
+            "other",
+            1
+          ],
+          "armed": false,
+          "move": 0
+        },
+        "P3": {
+          "epoch": 0,
+          "owner": [
+            "incumbent",
+            1
+          ],
+          "armed": true,
+          "move": 7
+        }
+      }
+    }
+  ]
+}

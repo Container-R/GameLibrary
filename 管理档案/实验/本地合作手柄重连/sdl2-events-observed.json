@@ -1,0 +1,97 @@
+{
+  "sdl2_version": "2.32.4",
+  "two_virtual": [
+    {
+      "device_index": 0,
+      "instance_id": 0,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    },
+    {
+      "device_index": 1,
+      "instance_id": 1,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    }
+  ],
+  "after_remove_first": [
+    {
+      "device_index": 0,
+      "instance_id": 1,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    }
+  ],
+  "after_add_identical_type": [
+    {
+      "device_index": 0,
+      "instance_id": 1,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    },
+    {
+      "device_index": 1,
+      "instance_id": 2,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    }
+  ],
+  "after_remove_shifted": [
+    {
+      "device_index": 0,
+      "instance_id": 2,
+      "guid": "ff0013db5669727475616c2043007601",
+      "name": "Virtual Controller"
+    }
+  ],
+  "device_events_sorted": {
+    "initial": [
+      [
+        "controller_added",
+        0
+      ],
+      [
+        "controller_added",
+        1
+      ],
+      [
+        "joystick_added",
+        0
+      ],
+      [
+        "joystick_added",
+        1
+      ]
+    ],
+    "remove_first": [
+      [
+        "controller_removed",
+        0
+      ],
+      [
+        "joystick_removed",
+        0
+      ]
+    ],
+    "add_same_type": [
+      [
+        "controller_added",
+        1
+      ],
+      [
+        "joystick_added",
+        1
+      ]
+    ],
+    "remove_shifted": [
+      [
+        "controller_removed",
+        1
+      ],
+      [
+        "joystick_removed",
+        1
+      ]
+    ]
+  }
+}
