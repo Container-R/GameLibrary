@@ -1,0 +1,99 @@
+{
+  "scope": "CPU-authored AABB draw admission plus actual software GL vertex displacement and raster readback; no native engine culling or performance claim",
+  "vendor": "Mesa",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "version": "4.5 (Core Profile) Mesa 25.0.7-2+deb13u1",
+  "glsl": "4.50",
+  "source_xy_aabb": [
+    2.5,
+    -0.5,
+    3.5,
+    0.5
+  ],
+  "declared_displacement_envelope": [
+    -3.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "expanded_xy_aabb": [
+    -0.5,
+    -0.5,
+    3.5,
+    0.5
+  ],
+  "clip_xy": [
+    -1,
+    -1,
+    1,
+    1
+  ],
+  "framebuffer": [
+    64,
+    64
+  ],
+  "cases": [
+    {
+      "case": "disable_app_cull_visible",
+      "shader_dx": -3.0,
+      "app_submitted_draw": true,
+      "red_pixels": 1024,
+      "center_rgba": [
+        255,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "case": "source_aabb_app_cull_visible",
+      "shader_dx": -3.0,
+      "app_submitted_draw": false,
+      "red_pixels": 0,
+      "center_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "case": "envelope_app_cull_visible",
+      "shader_dx": -3.0,
+      "app_submitted_draw": true,
+      "red_pixels": 1024,
+      "center_rgba": [
+        255,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "case": "envelope_false_positive_offscreen",
+      "shader_dx": 0.0,
+      "app_submitted_draw": true,
+      "red_pixels": 0,
+      "center_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "case": "disable_app_cull_offscreen",
+      "shader_dx": 0.0,
+      "app_submitted_draw": true,
+      "red_pixels": 0,
+      "center_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ],
+  "ppm_sha256": "a4c292bfdc0ea0c0a5e6173aef01b8e8c9bd88633ac60795577cfc1655302a20",
+  "gl_error": 0
+}

@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-SHADER-DISPLACEMENT-BOUNDS",
+      "reader_title": "顶点着色器把网格移进镜头，为什么还没被画出来",
+      "canonical_reader_path": "GameLibrary/图形渲染/空间查询/可见性剔除/顶点着色器把网格移进镜头，为什么还没被画出来.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8346d7ac393f473d41091b04ae76e2676e7e7c14966d5904fed27b834053ed87",
+      "source_record": "管理档案/来源笔记/shader-displacement-bounds-20261119.md",
+      "review": "管理档案/审稿/GL-SHADER-DISPLACEMENT-BOUNDS/20261119-review.md",
+      "materials_record": "管理档案/实验/顶点位移剔除/README.md"
+    },
+    {
       "internal_id": "GL-PROCEDURAL-RNG-STREAMS",
       "reader_title": "同一个种子，加一点装饰为什么关卡也变了",
       "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/程序化布局/同一个种子，加一点装饰为什么关卡也变了.md",

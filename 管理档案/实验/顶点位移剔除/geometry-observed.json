@@ -1,0 +1,42 @@
+{
+  "scope": "2D exact axis envelope and clip overlap, synthetic reference",
+  "offscreen_base": [
+    "11/4",
+    "-1/4",
+    "13/4",
+    "1/4"
+  ],
+  "shader_position_box": [
+    "-1/4",
+    "-1/4",
+    "1/4",
+    "1/4"
+  ],
+  "bounded_union": [
+    "-1/4",
+    "-1/4",
+    "13/4",
+    "1/4"
+  ],
+  "stale_frustum_cull": true,
+  "accepts_bounded_union": true,
+  "union_admits_rest_pose_as_false_positive": true,
+  "world_dxdy_range": [
+    0,
+    -2,
+    3,
+    4
+  ],
+  "inverse_transformed_vector_range": [
+    -1,
+    -1,
+    2,
+    0
+  ],
+  "required_local_bounds": [
+    -2,
+    -3,
+    5,
+    4
+  ]
+}
