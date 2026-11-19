@@ -1,0 +1,30 @@
+{
+  "late_old_full_without_retirement": [
+    8,
+    10,
+    {
+      "lift_height": 20,
+      "door": "closed"
+    }
+  ],
+  "late_old_full_with_retirement": null,
+  "same_scope_full_retry_without_retirement": [
+    9,
+    19,
+    {
+      "lift_height": 72,
+      "door": "open"
+    }
+  ],
+  "same_scope_full_retry_with_retirement": null,
+  "late_older_hide_and_duplicate_full": [
+    9,
+    20,
+    {
+      "lift_height": 75,
+      "door": "open"
+    }
+  ],
+  "delta_before_initial_state": "need baseline",
+  "no_loss_delivery_orders_ending_with_retired_view": 120
+}

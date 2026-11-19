@@ -1,0 +1,35 @@
+{
+  "existing_entity_identity": [
+    "S",
+    7,
+    4
+  ],
+  "apply_new_delta_to_old_cache": "missing baseline",
+  "apply_old_delta_to_old_cache_without_retiring_view": {
+    "scope": 8,
+    "tick": 12,
+    "state": {
+      "lift_height": 30,
+      "door": "closed"
+    }
+  },
+  "apply_old_delta_while_no_view": "no matching view",
+  "apply_old_delta_after_full": "no matching view",
+  "apply_new_delta_after_full": {
+    "scope": 9,
+    "tick": 20,
+    "state": {
+      "lift_height": 75,
+      "door": "open"
+    }
+  },
+  "apply_late_scope8_hide_after_scope9_full": {
+    "scope": 9,
+    "state": {
+      "lift_height": 72,
+      "door": "open"
+    },
+    "tick": 19
+  },
+  "apply_current_scope9_hide": null
+}
