@@ -1,0 +1,96 @@
+{
+  "scope": "synthetic two-character station narrative, not an engine",
+  "trace": [
+    {
+      "case": "noticed_panel_but_left_before_reveal",
+      "actor": "visitor",
+      "options": [
+        "ask_current_platform"
+      ]
+    },
+    {
+      "case": "notice_actually_delivered",
+      "actor": "visitor",
+      "options": [
+        "ask_current_platform",
+        "cite_posted_notice:east@1"
+      ]
+    },
+    {
+      "case": "switch_protagonist_no_implicit_transfer",
+      "actor": "new_arrival",
+      "options": [
+        "ask_current_platform"
+      ]
+    },
+    {
+      "case": "new_protagonist_hears_report",
+      "actor": "new_arrival",
+      "options": [
+        "ask_current_platform",
+        "cite_hearsay:east@1"
+      ]
+    },
+    {
+      "case": "hidden_world_revision_does_not_leak_in_ui",
+      "actor": "visitor",
+      "options": [
+        "ask_current_platform",
+        "cite_posted_notice:east@1"
+      ]
+    },
+    {
+      "case": "reply_has_not_yet_revealed_replacement",
+      "actor": "visitor",
+      "options": [
+        "ask_current_platform",
+        "cite_posted_notice:east@1"
+      ]
+    },
+    {
+      "case": "new_notice_actually_delivered",
+      "actor": "visitor",
+      "options": [
+        "ask_current_platform",
+        "cite_posted_notice:west@2"
+      ]
+    },
+    {
+      "case": "hearsay_retains_its_old_provenance",
+      "actor": "new_arrival",
+      "options": [
+        "ask_current_platform",
+        "cite_hearsay:east@1"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "actor": "visitor",
+      "fact": "tram_platform",
+      "value": "east",
+      "subject_version": 1,
+      "channel": "posted_notice",
+      "source": "station_noticeboard",
+      "delivery": "notice/a/v1"
+    },
+    {
+      "actor": "new_arrival",
+      "fact": "tram_platform",
+      "value": "east",
+      "subject_version": 1,
+      "channel": "hearsay",
+      "source": "visitor",
+      "delivery": "talk/b/east"
+    },
+    {
+      "actor": "visitor",
+      "fact": "tram_platform",
+      "value": "west",
+      "subject_version": 2,
+      "channel": "posted_notice",
+      "source": "station_noticeboard",
+      "delivery": "notice/a/v2"
+    }
+  ]
+}

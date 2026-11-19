@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-DIALOGUE-KNOWLEDGE",
+      "reader_title": "对话选项为什么知道角色还没弄清的事",
+      "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/情境对白/对话选项为什么知道角色还没弄清的事.md",
+      "reader_body_status": "published",
+      "reader_sha256": "5c9d34dea90731fc1dc2e1a75b5dac17bd08fab4d439a04d552f6a5c16fce9d5",
+      "source_record": "管理档案/来源笔记/dialogue-knowledge-20261119.md",
+      "review": "管理档案/审稿/GL-DIALOGUE-KNOWLEDGE/20261119-review.md",
+      "materials_record": "管理档案/实验/对白线索交付/README.md"
+    },
+    {
       "internal_id": "GL-ATLAS-MIP-BLEED",
       "reader_title": "图集缩小时为什么串色：区分 Mip 生成与边界采样",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/图集缩小时为什么串色：区分 Mip 生成与边界采样.md",

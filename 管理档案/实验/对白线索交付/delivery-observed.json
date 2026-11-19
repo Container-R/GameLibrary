@@ -1,0 +1,66 @@
+{
+  "scope": "synthetic disclosure, not middleware or audio/text rendering",
+  "trace": [
+    {
+      "case": "preview",
+      "result": "metadata_only",
+      "known": false
+    },
+    {
+      "case": "focus_known_topic",
+      "result": "changed_relevance_only",
+      "known": false
+    },
+    {
+      "case": "queue_line_before_cue",
+      "result": "no_delivery",
+      "known": false
+    },
+    {
+      "case": "cancel_then_late_voice",
+      "result": "no_matching_live_delivery",
+      "known": false
+    },
+    {
+      "case": "old_callback_after_same_line_reopened",
+      "result": "no_matching_live_delivery",
+      "known": false
+    },
+    {
+      "case": "unsupported_channel_cannot_disclose",
+      "result": "channel_not_enabled",
+      "known": false
+    },
+    {
+      "case": "wrong_recipient",
+      "result": "no_matching_live_delivery",
+      "known": false
+    },
+    {
+      "case": "reload_without_uncommitted_queued_lines",
+      "result": "no_matching_live_delivery",
+      "known": false
+    },
+    {
+      "case": "old_callback_after_loading_and_reopening_same_line",
+      "result": "no_matching_live_delivery",
+      "known": false
+    },
+    {
+      "case": "same_fact_delivered_by_enabled_subtitle",
+      "result": "granted_from_subtitle",
+      "known": true
+    },
+    {
+      "case": "voice_callback_is_same_disclosure",
+      "result": "duplicate_delivery",
+      "known": true
+    },
+    {
+      "case": "reload_and_replay_already_committed_delivery",
+      "result": "duplicate_delivery",
+      "known": true
+    }
+  ],
+  "voice_only_commit_checked": true
+}
