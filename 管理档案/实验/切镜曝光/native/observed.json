@@ -1,0 +1,43 @@
+{
+  "backend": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "version": "4.5 (Core Profile) Mesa 25.0.7-2+deb13u1",
+    "glsl": "4.50"
+  },
+  "source": "RGBA16F",
+  "output": "RGBA32F",
+  "results": {
+    "old_pre": {
+      "pre": 8.0,
+      "stored_linear": [
+        23.03125,
+        230.375
+      ],
+      "correct": [
+        0.179931640625,
+        1.7998046875
+      ],
+      "mistaken_direct_gain": [
+        1.439453125,
+        14.3984375
+      ]
+    },
+    "new_pre": {
+      "pre": 0.0625,
+      "stored_linear": [
+        0.179931640625,
+        1.7998046875
+      ],
+      "correct": [
+        0.179931640625,
+        1.7998046875
+      ],
+      "mistaken_direct_gain": [
+        0.0112457275390625,
+        0.11248779296875
+      ]
+    }
+  },
+  "gl_error": 0
+}

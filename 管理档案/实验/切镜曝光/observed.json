@@ -1,0 +1,186 @@
+{
+  "retained_old_history_guard_meter": [
+    {
+      "frame": 0,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": 3.0,
+      "applied_stops_gain": 3.0,
+      "exposed_linear": 23.04
+    },
+    {
+      "frame": 1,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": 3.0,
+      "applied_stops_gain": 3.0,
+      "exposed_linear": 23.04
+    },
+    {
+      "frame": 2,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": 2.6,
+      "exposed_linear": 17.461055
+    },
+    {
+      "frame": 3,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": 2.2,
+      "exposed_linear": 13.233005
+    },
+    {
+      "frame": 4,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": 1.8,
+      "exposed_linear": 10.028742
+    },
+    {
+      "frame": 5,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": 1.4,
+      "exposed_linear": 7.600366
+    }
+  ],
+  "seeded_new_shot_guard_meter": [
+    {
+      "frame": 0,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 1,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 2,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 3,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 4,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 5,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    }
+  ],
+  "seeded_new_shot_unfiltered_old_meter": [
+    {
+      "frame": 0,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": 3.0,
+      "applied_stops_gain": -3.6,
+      "exposed_linear": 0.237511
+    },
+    {
+      "frame": 1,
+      "meter": "hall",
+      "current_shot": "roof",
+      "target_stops_gain": 3.0,
+      "applied_stops_gain": -3.2,
+      "exposed_linear": 0.313398
+    },
+    {
+      "frame": 2,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -3.6,
+      "exposed_linear": 0.237511
+    },
+    {
+      "frame": 3,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 4,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    },
+    {
+      "frame": 5,
+      "meter": "roof",
+      "current_shot": "roof",
+      "target_stops_gain": -4.0,
+      "applied_stops_gain": -4.0,
+      "exposed_linear": 0.18
+    }
+  ],
+  "linear_scale_cases": [
+    {
+      "pre_scale": 8.0,
+      "final_gain": 0.0625,
+      "stored_linear": [
+        23.04,
+        230.4
+      ],
+      "correct_exposed": [
+        0.18,
+        1.8
+      ],
+      "incorrect_double_scaled": [
+        1.44,
+        14.4
+      ]
+    },
+    {
+      "pre_scale": 0.0625,
+      "final_gain": 0.0625,
+      "stored_linear": [
+        0.18,
+        1.8
+      ],
+      "correct_exposed": [
+        0.18,
+        1.8
+      ],
+      "incorrect_double_scaled": [
+        0.01125,
+        0.1125
+      ]
+    }
+  ]
+}
