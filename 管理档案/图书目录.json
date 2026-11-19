@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-TERRAIN-RASTER-RIDGE",
+      "reader_title": "地形重采样后山脊变平：检查高程、网格和影像",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/地形数据/地形重采样后山脊变平：检查高程、网格和影像.md",
+      "reader_body_status": "published",
+      "reader_sha256": "2b8b52627e582552e3c78121aafe96affeaa892c22874cf306dea09fa96199dc",
+      "source_record": "管理档案/来源笔记/terrain-raster-ridge-20261119.md",
+      "review": "管理档案/审稿/GL-TERRAIN-RASTER-RIDGE/20261119-review.md",
+      "materials_record": "管理档案/实验/地形栅格重采样与配准/README.md"
+    },
+    {
       "internal_id": "GL-NONPAID-DROP-GUARANTEE",
       "reader_title": "非付费掉落的保底次数：平均等待和最晚获得不是一件事",
       "canonical_reader_path": "GameLibrary/游戏设计/系统设计/成长与经济/非付费掉落的保底次数：平均等待和最晚获得不是一件事.md",

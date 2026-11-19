@@ -1,0 +1,101 @@
+{
+  "opposed_slopes": {
+    "grades": [
+      "1/4",
+      "0",
+      "-1/4"
+    ],
+    "B_minus_A_m": [
+      "8/25",
+      "3/25",
+      "-2/25"
+    ],
+    "pull_shift_m": "4/5",
+    "height_bias_m": "3/25",
+    "single_slope_false_bias_if_shift_assumed_zero_m": "8/25"
+  },
+  "same_geometry_different_image": {
+    "x_m": [
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "height_m": [
+      0,
+      0,
+      0,
+      0,
+      0.5,
+      1,
+      0.5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "results": {
+      "base": {
+        "geometry_peak_x_m": 0,
+        "image_edge_x_m": "-3/2",
+        "strongest_one_pixel_luma_step": 216,
+        "luma": [
+          16,
+          16,
+          16,
+          16,
+          232,
+          232,
+          232,
+          232,
+          232,
+          232,
+          232
+        ]
+      },
+      "image_shift_only": {
+        "geometry_peak_x_m": 0,
+        "image_edge_x_m": "-1/2",
+        "strongest_one_pixel_luma_step": 216,
+        "luma": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          232,
+          232,
+          232,
+          232,
+          232,
+          232
+        ]
+      },
+      "image_blur_only": {
+        "geometry_peak_x_m": 0,
+        "image_edge_x_m": "-3/2",
+        "strongest_one_pixel_luma_step": 72,
+        "luma": [
+          16,
+          16,
+          16,
+          88,
+          160,
+          232,
+          232,
+          232,
+          232,
+          232,
+          232
+        ]
+      }
+    }
+  }
+}

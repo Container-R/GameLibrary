@@ -1,0 +1,7 @@
+# 地形栅格重采样与配准：来源与实测
+
+- USGS [HiRISE DTMs and Orthoimages](https://stac.astrogeology.usgs.gov/docs/data/mars/hirise_dtms/) 的 Accuracy、General Usability：不同产品的像元间距、实际分辨力、绝对精度与各类质量问题。[CTX 动图](https://stac.astrogeology.usgs.gov/docs/images/data/mars/ctx_dtms/CTX_craters.gif) 已下载查看 12 帧接触表，独立看了第 5、6 张（以 1 起计）的 800×800 原像素帧；右下未分辨坑是正射有、阴影地形无。指南指出有部分分辨和产生形状伪影的两类。原 GIF SHA256 `9d9ea7fc5c27dcb5c7a344c4b6d946f86a0a5c73c27d3f2df43d784a23d0432b`，只链接原图，不打包。与 Gale 产品无视觉同一性关系。
+- Arizona HiRISE [Gale DTM](https://www.uahirise.org/dtm/PSP_009650_1755) 标称 1.01 米/像元，立体对 `PSP_009650_1755 / PSP_009716_1755`。USGS [1 m DEM v3](https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_dem_1m) 和 [25 cm ortho mosaic](https://astrogeology.usgs.gov/search/map/mars_msl_gale_merged_orthophoto_mosaic_25cm) 分别列该立体对。目录中 Abstract、Process Description 及 Completeness Report 给 MOLA、HRSC、CTX 与 HiRISE 配准，DEM 说明缺 HiRISE 的区域用 CTX、HRSC 或 MOLA 高程。直接门户 403 时只采用可访问的官方索引文本，不声称运行、测量、亲见该镶嵌栅格或知道某游戏的具体资产选择。
+- GDAL [Geotransform](https://gdal.org/en/stable/tutorials/geotransforms_tut.html)、[gdalwarp](https://gdal.org/en/stable/programs/gdalwarp.html)：角与中心以及 -tap、-tr、近邻、面积平均、内部概览以及 -ovr NONE。另用原生 GDAL 3.10.3 跑合成源得到剖面；与生产素材或引擎处理相互独立。
+- Nuth & Kääb 2011 [原文](https://tc.copernicus.org/articles/5/271/2011/) §4.1（印刷页 275，图 2、式 1–2）：配准差值与坡向、坡度、垂直偏置相关。本文只用它支持简化的一轴机制，不采用归一化拟合，也不外推到复杂地形的实际误差。
+- [复现](../实验/地形栅格重采样与配准/README.md) 留界上及离开界线的栅格原点、面积平均输出、稳定坡面和固定几何/改影像两个控制。实测与火星来源严格分开。
