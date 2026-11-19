@@ -1,0 +1,60 @@
+{
+  "version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "input48_control_1k": {
+    "sample_dbfs": -1.9382,
+    "ffmpeg_summary_sample_dbfs": -1.9,
+    "ffmpeg_summary_true_dbtp": -1.9
+  },
+  "input48_12k": {
+    "sample_dbfs": -1.9382,
+    "ffmpeg_summary_sample_dbfs": -1.9,
+    "ffmpeg_summary_true_dbtp": 1.1
+  },
+  "isolated_layer": {
+    "sample_dbfs": -7.9588,
+    "ffmpeg_summary_sample_dbfs": -8.0,
+    "ffmpeg_summary_true_dbtp": -4.9
+  },
+  "two_identical_aligned_layers": {
+    "sample_dbfs": -1.9382,
+    "ffmpeg_summary_sample_dbfs": -1.9,
+    "ffmpeg_summary_true_dbtp": 1.1
+  },
+  "same_input_converted_to_44100": {
+    "float_output": {
+      "sample_dbfs": 1.072,
+      "ffmpeg_summary_sample_dbfs": 1.1,
+      "ffmpeg_summary_true_dbtp": 1.1
+    },
+    "float_samples_above_unit": 12660,
+    "s16_rails": 12660,
+    "samples": 44100
+  },
+  "same_input_converted_to_96000": {
+    "float_output": {
+      "sample_dbfs": 1.0721,
+      "ffmpeg_summary_sample_dbfs": 1.1,
+      "ffmpeg_summary_true_dbtp": 1.1
+    },
+    "float_samples_above_unit": 22130,
+    "s16_rails": 22130,
+    "samples": 96000
+  },
+  "known_silent_tail": {
+    "short_capture": {
+      "sample_dbfs": -1.4116,
+      "ffmpeg_summary_sample_dbfs": -1.4,
+      "ffmpeg_summary_true_dbtp": -66.4
+    },
+    "same_with_20ms_silence": {
+      "sample_dbfs": -1.4116,
+      "ffmpeg_summary_sample_dbfs": -1.4,
+      "ffmpeg_summary_true_dbtp": 0.5
+    },
+    "pair_placed_100_samples_before_eof": {
+      "sample_dbfs": -1.4116,
+      "ffmpeg_summary_sample_dbfs": -1.4,
+      "ffmpeg_summary_true_dbtp": 0.5
+    }
+  }
+}
