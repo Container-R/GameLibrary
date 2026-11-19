@@ -1,0 +1,57 @@
+{
+  "runtime": "v24.22.1",
+  "scope": "serial application model, manual completions",
+  "tests": 9,
+  "transcript": [
+    {
+      "case": "recycle",
+      "output": {
+        "safe": "icons/herb-v1",
+        "cancel-only": "icons/sword-v1"
+      }
+    },
+    {
+      "name": "recycle: B finishes before stale A; cancellation alone fails",
+      "status": "PASS"
+    },
+    {
+      "case": "same-key",
+      "output": {
+        "safe": "icons/sword-v1",
+        "id-only": "ERROR"
+      }
+    },
+    {
+      "name": "same id and icon rebound: old failure must not erase new success",
+      "status": "PASS"
+    },
+    {
+      "name": "placeholder is checked BEFORE the replacement result",
+      "status": "PASS"
+    },
+    {
+      "name": "unbound/closed cell ignores late completion and releases lease",
+      "status": "PASS"
+    },
+    {
+      "name": "live reorder rebinds both visible cells; index-only accepts old owners",
+      "status": "PASS"
+    },
+    {
+      "name": "same item changes icon revision: model notification triggers fresh bind",
+      "status": "PASS"
+    },
+    {
+      "name": "current failure stays error; stale success cannot become fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "synchronous cache completion is queued; old queued success loses qualification",
+      "status": "PASS"
+    },
+    {
+      "name": "late callback keeps old cell object, never writes replacement cell",
+      "status": "PASS"
+    }
+  ]
+}
