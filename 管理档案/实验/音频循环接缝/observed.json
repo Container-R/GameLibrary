@@ -1,0 +1,46 @@
+{
+  "phase_matched_full_cycles": {
+    "left": {
+      "last_kept": -589,
+      "first_kept": 0,
+      "unused_end_sample": 0,
+      "next_kept": 589,
+      "jump_vs_natural_step": 0,
+      "actual_join_step": 589,
+      "first_step_after_join": 589,
+      "first_difference_change_at_first_kept": 0
+    },
+    "right": {
+      "last_kept": 11986,
+      "first_kept": 12000,
+      "unused_end_sample": 12000,
+      "next_kept": 11986,
+      "jump_vs_natural_step": 0,
+      "actual_join_step": 14,
+      "first_step_after_join": -14,
+      "first_difference_change_at_first_kept": -28
+    }
+  },
+  "left_zero_opposite_slopes": {
+    "left": {
+      "last_kept": 589,
+      "first_kept": 0,
+      "unused_end_sample": 0,
+      "next_kept": 589,
+      "jump_vs_natural_step": 0,
+      "actual_join_step": -589,
+      "first_step_after_join": 589,
+      "first_difference_change_at_first_kept": 1178
+    },
+    "right": {
+      "last_kept": -11986,
+      "first_kept": 12000,
+      "unused_end_sample": -12000,
+      "next_kept": 11986,
+      "jump_vs_natural_step": 24000,
+      "actual_join_step": 23986,
+      "first_step_after_join": -14,
+      "first_difference_change_at_first_kept": -24000
+    }
+  }
+}

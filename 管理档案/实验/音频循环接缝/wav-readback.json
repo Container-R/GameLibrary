@@ -1,0 +1,32 @@
+{
+  "phase_matched_full_cycles": {
+    "frames": 49152,
+    "first_internal_seam_triplets": {
+      "left": [
+        -589,
+        0,
+        589
+      ],
+      "right": [
+        11986,
+        12000,
+        11986
+      ]
+    }
+  },
+  "left_zero_opposite_slopes": {
+    "frames": 49664,
+    "first_internal_seam_triplets": {
+      "left": [
+        589,
+        0,
+        589
+      ],
+      "right": [
+        -11986,
+        12000,
+        11986
+      ]
+    }
+  }
+}

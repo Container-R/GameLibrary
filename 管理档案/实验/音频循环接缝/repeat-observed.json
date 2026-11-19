@@ -1,0 +1,15 @@
+{
+  "local_ffmpeg_ogg_opus_length_only": {
+    "original_pcm_frames": 49152,
+    "decoded_pcm_frames": 49152,
+    "first_packet_skip_samples": 312,
+    "final_packet_discard_padding": 456
+  },
+  "hypothetical_different_periods": {
+    "period_a_frames": 48000,
+    "period_b_frames": 48032,
+    "interval_count": 150,
+    "offset_frames": 4800,
+    "offset_milliseconds": "100"
+  }
+}

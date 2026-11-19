@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 367" width="990" height="367" role="img" aria-label="Sample frames before and after two stereo loop joins">
+<rect width="990" height="367" fill="#111c2a"/>
+<text x="21" y="34" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="25">A zero marker can hide a change in the join</text>
+<rect x="20" y="57" width="304" height="258" rx="10" fill="#19283a" stroke="#455c71"/>
+<text x="33" y="84" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="17">A. Matched phase, left</text>
+<line x1="53" y1="179" x2="296" y2="179" stroke="#62798d" stroke-width="1"/>
+<text x="31" y="184" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">0</text>
+<line x1="83" y1="226.12" x2="173" y2="179.0" stroke="#8be4cb" stroke-width="3"/>
+<line x1="173" y1="179.0" x2="263" y2="131.88" stroke="#8be4cb" stroke-width="3"/>
+<circle cx="83" cy="226.12" r="4.5" fill="#8be4cb"/>
+<text x="66" y="214.12" fill="#8be4cb" font-family="DejaVu Sans, sans-serif" font-size="12">-589</text>
+<text x="55" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">last kept</text>
+<circle cx="173" cy="179.0" r="4.5" fill="#8be4cb"/>
+<text x="156" y="167.0" fill="#8be4cb" font-family="DejaVu Sans, sans-serif" font-size="12">0</text>
+<text x="145" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">first kept</text>
+<circle cx="263" cy="131.88" r="4.5" fill="#8be4cb"/>
+<text x="246" y="119.88" fill="#8be4cb" font-family="DejaVu Sans, sans-serif" font-size="12">589</text>
+<text x="235" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">next</text>
+<text x="32" y="296" fill="#bdcede" font-family="DejaVu Sans, sans-serif" font-size="12">Vertical scale: ±900 PCM</text>
+<rect x="338" y="57" width="304" height="258" rx="10" fill="#19283a" stroke="#455c71"/>
+<text x="351" y="84" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="17">B. Opposite slopes, left</text>
+<line x1="371" y1="179" x2="614" y2="179" stroke="#62798d" stroke-width="1"/>
+<text x="349" y="184" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">0</text>
+<line x1="401" y1="131.88" x2="491" y2="179.0" stroke="#ffc994" stroke-width="3"/>
+<line x1="491" y1="179.0" x2="581" y2="131.88" stroke="#ffc994" stroke-width="3"/>
+<circle cx="401" cy="131.88" r="4.5" fill="#ffc994"/>
+<text x="384" y="119.88" fill="#ffc994" font-family="DejaVu Sans, sans-serif" font-size="12">589</text>
+<text x="373" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">last kept</text>
+<circle cx="491" cy="179.0" r="4.5" fill="#ffc994"/>
+<text x="474" y="167.0" fill="#ffc994" font-family="DejaVu Sans, sans-serif" font-size="12">0</text>
+<text x="463" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">first kept</text>
+<circle cx="581" cy="131.88" r="4.5" fill="#ffc994"/>
+<text x="564" y="119.88" fill="#ffc994" font-family="DejaVu Sans, sans-serif" font-size="12">589</text>
+<text x="553" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">next</text>
+<text x="350" y="296" fill="#bdcede" font-family="DejaVu Sans, sans-serif" font-size="12">Vertical scale: ±900 PCM</text>
+<rect x="656" y="57" width="304" height="258" rx="10" fill="#19283a" stroke="#455c71"/>
+<text x="669" y="84" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="17">C. Same B join, right</text>
+<line x1="689" y1="179" x2="932" y2="179" stroke="#62798d" stroke-width="1"/>
+<text x="667" y="184" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">0</text>
+<line x1="719" y1="245.38400000000001" x2="809" y2="112.53846153846153" stroke="#ff9b90" stroke-width="3"/>
+<line x1="809" y1="112.53846153846153" x2="899" y2="112.616" stroke="#ff9b90" stroke-width="3"/>
+<circle cx="719" cy="245.38400000000001" r="4.5" fill="#ff9b90"/>
+<text x="693" y="233.38400000000001" fill="#ff9b90" font-family="DejaVu Sans, sans-serif" font-size="12">-11986</text>
+<text x="691" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">last kept</text>
+<circle cx="809" cy="112.53846153846153" r="4.5" fill="#ff9b90"/>
+<text x="783" y="100.53846153846153" fill="#ff9b90" font-family="DejaVu Sans, sans-serif" font-size="12">12000</text>
+<text x="781" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">first kept</text>
+<circle cx="899" cy="112.616" r="4.5" fill="#ff9b90"/>
+<text x="873" y="100.616" fill="#ff9b90" font-family="DejaVu Sans, sans-serif" font-size="12">11986</text>
+<text x="871" y="269" fill="#e8f2ff" font-family="DejaVu Sans, sans-serif" font-size="12">next</text>
+<text x="668" y="296" fill="#bdcede" font-family="DejaVu Sans, sans-serif" font-size="12">Vertical scale: ±13000 PCM</text>
+<text x="21" y="345" fill="#d0deed" font-family="DejaVu Sans, sans-serif" font-size="14">Only kept samples are shown. The end marker is excluded in this example.</text>
+</svg>
