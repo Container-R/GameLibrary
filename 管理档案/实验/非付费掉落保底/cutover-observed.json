@@ -1,0 +1,27 @@
+{
+  "distinct_eligibility": {
+    "new_rule_before_late_old_settlement": 1,
+    "identical_late_replay": "duplicate",
+    "replay_wrongly_reclassified": "conflict",
+    "new_rule_after_both_replays": 1,
+    "awards": [
+      [
+        "standard-10",
+        "amber:standard",
+        "guarantee"
+      ]
+    ]
+  },
+  "equivalent_offline_format": {
+    "moved_unconsumed": 9,
+    "rerun_migration_after_award": "already_applied",
+    "counter_after_award_and_rerun": 0,
+    "awards": [
+      [
+        "same-10",
+        "formatB",
+        "guarantee"
+      ]
+    ]
+  }
+}

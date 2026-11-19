@@ -1,0 +1,23 @@
+{
+  "independent_rolls_only": {
+    "mean_attempts": "5",
+    "median": 4,
+    "p90": 11,
+    "p95": 14,
+    "share_waiting_after_10": "1048576/9765625"
+  },
+  "force_at_attempt_10": {
+    "mean_attempts": "8717049/1953125",
+    "median": 4,
+    "p90": 10,
+    "p95": 10,
+    "share_waiting_after_10": "0"
+  },
+  "fixed_earned_target": {
+    "mean_attempts": "5",
+    "median": 5,
+    "p90": 5,
+    "p95": 5,
+    "share_waiting_after_10": "0"
+  }
+}
