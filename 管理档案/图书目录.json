@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-NORMAL-MIP-DIRECTION",
+      "reader_title": "法线贴图缩小后，怎样保住高光的方向",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/法线贴图缩小后，怎样保住高光的方向.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8f192e7d8ae4ccb45b741365f25bea8c527c23287bc28a11172d805d8e7db87f",
+      "source_record": "管理档案/来源笔记/normal-mip-direction-20261119.md",
+      "review": "管理档案/审稿/GL-NORMAL-MIP-DIRECTION/20261119-review.md",
+      "materials_record": "管理档案/实验/法线Mip斜率统计/README.md"
+    },
+    {
       "internal_id": "GL-NARRATIVE-CHOICE-DIFF",
       "reader_title": "任务选项改了条件，怎样找出被关掉的剧情路线",
       "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/选项与路线验证/任务选项改了条件，怎样找出被关掉的剧情路线.md",
@@ -456,7 +466,7 @@
       "reader_title": "计算BC压缩纹理和Mip链的数据量",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
       "reader_body_status": "published",
-      "reader_sha256": "146fd1f7771de457014eb835d112211e7be06697c1efd4778fbc456bc43fd65e"
+      "reader_sha256": "668dd313c3f757645334a2e5a3bb6e8a48442d28ac7b67a159b160c58a518f15"
     },
     {
       "internal_id": "SOL-GFX-002",

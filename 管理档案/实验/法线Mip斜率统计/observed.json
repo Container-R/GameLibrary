@@ -1,0 +1,36 @@
+{
+  "positive": {
+    "mean_unit_normal_z_squared": "2/3",
+    "slope_cov_xx_yy_xy": [
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "directional_variance_plus_minus_45_deg": [
+      "1/2",
+      "0"
+    ],
+    "naive_average_child_cov": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "negative": {
+    "mean_unit_normal_z_squared": "2/3",
+    "slope_cov_xx_yy_xy": [
+      "1/4",
+      "1/4",
+      "-1/4"
+    ],
+    "directional_variance_plus_minus_45_deg": [
+      "0",
+      "1/2"
+    ],
+    "naive_average_child_cov": [
+      "0",
+      "0",
+      "0"
+    ]
+  }
+}
