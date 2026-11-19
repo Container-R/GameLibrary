@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ROOT-MOTION-LOOP",
+      "reader_title": "循环动画回到起点时，怎样提取连续的根运动",
+      "canonical_reader_path": "GameLibrary/角色动画/角色移动/根运动与动作对齐/循环动画回到起点时，怎样提取连续的根运动.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8c8cd5940f0be6da43e771f1d4a57c5e7656f0f8e31614f749bfa970a0ddbbd3",
+      "source_record": "管理档案/来源笔记/root-motion-loop-20261119.md",
+      "review": "管理档案/审稿/GL-ROOT-MOTION-LOOP/20261119-review.md",
+      "materials_record": "管理档案/实验/循环根运动/README.md"
+    },
+    {
       "internal_id": "GL-LOCAL-GAMEPAD-RECONNECT",
       "reader_title": "本地合作手柄断开后，怎样恢复原来的玩家席位",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/本地合作手柄断开后，怎样恢复原来的玩家席位.md",
