@@ -1,0 +1,55 @@
+{
+  "scope": "actual SQLite local transactions over synthetic intents",
+  "time_relative_to_boundary": [
+    [
+      -1,
+      "2026-03-07",
+      "a",
+      "committed:2026-03-07"
+    ],
+    [
+      0,
+      "2026-03-07",
+      "a",
+      "same_request_receipt:2026-03-07"
+    ],
+    [
+      0,
+      "2026-03-08",
+      "a",
+      "changed_request_payload"
+    ],
+    [
+      0,
+      "2026-03-07",
+      "b",
+      "stale_period"
+    ],
+    [
+      0,
+      "2026-03-08",
+      "c",
+      "rolled_back"
+    ],
+    [
+      0,
+      "2026-03-08",
+      "c",
+      "committed:2026-03-08"
+    ],
+    [
+      1,
+      "2026-03-08",
+      "d",
+      "already_claimed_this_period"
+    ],
+    [
+      86400,
+      "2026-03-08",
+      "e",
+      "unknown_schedule"
+    ]
+  ],
+  "points": 2,
+  "claims": 2
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "actual zoneinfo conversion; sample policy choices, not server runtime",
+  "zone": "America/Los_Angeles",
+  "spring_05_to_05": {
+    "start": "2026-03-07T13:00:00+00:00",
+    "end": "2026-03-08T12:00:00+00:00",
+    "elapsed_hours": 23.0,
+    "python_same_zone_delta_hours": 24.0,
+    "wrong_24h_local_time": "2026-03-08T06:00:00-07:00"
+  },
+  "autumn_05_to_05": {
+    "start": "2026-10-31T12:00:00+00:00",
+    "end": "2026-11-01T13:00:00+00:00",
+    "elapsed_hours": 25.0,
+    "python_same_zone_delta_hours": 24.0,
+    "wrong_24h_local_time": "2026-11-01T04:00:00-08:00"
+  },
+  "nonexistent_0230": {
+    "candidates": 0,
+    "selected_utc": "2026-03-08T10:00:00+00:00",
+    "selected_local": "2026-03-08T03:00:00-07:00"
+  },
+  "repeated_0130": {
+    "candidates_utc": [
+      "2026-11-01T08:30:00+00:00",
+      "2026-11-01T09:30:00+00:00"
+    ],
+    "selected_utc": "2026-11-01T08:30:00+00:00"
+  }
+}
