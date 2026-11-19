@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="770" height="386" viewBox="0 0 770 386" role="img" aria-labelledby="title desc">
+  <title id="title">窗口安全范围与实际 HUD 视口的交集</title>
+  <desc id="desc">窗口2400乘1080，HUD视口横向240到2160，设备报告的窗口安全区域横向100到2310。蓝线安全区域两侧落进黑边，因此HUD只在上下退让。</desc>
+  <rect width="770" height="386" fill="#111827" rx="16"/>
+  <style>
+    text{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif;fill:#f1f5f9;font-size:16px}
+    .small{font-size:14px}.title{font-size:20px;font-weight:600}.muted{fill:#b9c6d8}
+  </style>
+  <text x="40" y="34" class="title">先求交，再从窗口像素换到 HUD 逻辑单位</text>
+  <text x="40" y="59" class="small muted">比例示意：2400×1080 的窗口，左右有黑边</text>
+  <!-- Common scale 0.25 px / source pixel. Window origin at (80,78). -->
+  <rect x="80" y="78" width="600" height="270" fill="#0a101c" stroke="#cad4e2" stroke-width="1.5"/>
+  <rect x="140" y="78" width="480" height="270" fill="#263446" stroke="#f9be66" stroke-width="2"/>
+  <rect x="140" y="86" width="480" height="249" fill="#234937" stroke="#b3f3bc" stroke-width="2"/>
+  <rect x="105" y="86" width="552.5" height="249" fill="none" stroke="#8bd5fa" stroke-width="2" stroke-dasharray="7 4"/>
+  <text x="90" y="158" class="small muted" transform="rotate(-90 90 158)">黑边</text>
+  <text x="664" y="158" class="small muted" transform="rotate(90 664 158)">黑边</text>
+  <line x1="224" y1="134" x2="142" y2="104" stroke="#f9be66" stroke-width="1.5"/>
+  <text x="228" y="139">橙线：实际 HUD 视口 V</text>
+  <line x1="224" y1="171" x2="107" y2="197" stroke="#8bd5fa" stroke-width="1.5"/>
+  <text x="228" y="177">蓝虚线：窗口安全区 S</text>
+  <text x="228" y="225">绿区：交集 R，左右无额外退让</text>
+  <text x="228" y="253" class="small">换回 960×540 画布：上退 16，下退 26</text>
+  <text x="80" y="372" class="small muted">数字是合成坐标，不是特定设备读数。</text>
+</svg>

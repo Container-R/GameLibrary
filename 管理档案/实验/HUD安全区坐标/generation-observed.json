@@ -1,0 +1,27 @@
+{
+  "scope": "synthetic geometry, not a device rotation trace",
+  "coherent_landscape": [
+    8,
+    0,
+    2400,
+    1080
+  ],
+  "mixed_but_nonempty": [
+    0,
+    80,
+    1075,
+    1080
+  ],
+  "mixed_right_percent": 44.792,
+  "same_generation_guard_rejects_mixed": true,
+  "same_obstruction_world_left_once": 30,
+  "same_obstruction_world_left_twice": 60,
+  "correct_reflected_vertical_bounds": [
+    76,
+    2176
+  ],
+  "reflected_lower_edge_mistaken_for_top": [
+    2176,
+    4276
+  ]
+}

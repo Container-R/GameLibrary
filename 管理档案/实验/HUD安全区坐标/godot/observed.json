@@ -1,0 +1,165 @@
+{
+  "engine": "4.6.3-stable (official)",
+  "exact_assertions_passed": true,
+  "mock_physical_safe": [
+    120.0,
+    80.0,
+    2160.0,
+    1440.0
+  ],
+  "mock_physical_window": [
+    0.0,
+    0.0,
+    2400.0,
+    1600.0
+  ],
+  "nodes": {
+    "already_inset_parent": {
+      "anchors": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "global_rect": [
+        60.0,
+        40.0,
+        1080.0,
+        720.0
+      ],
+      "local_position": [
+        60.0,
+        40.0
+      ],
+      "offsets": [
+        60.0,
+        40.0,
+        -60.0,
+        -40.0
+      ],
+      "size": [
+        1080.0,
+        720.0
+      ]
+    },
+    "full_parent": {
+      "anchors": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "global_rect": [
+        0.0,
+        0.0,
+        1200.0,
+        800.0
+      ],
+      "local_position": [
+        0.0,
+        0.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1200.0,
+        800.0
+      ]
+    },
+    "full_parent_correct_child": {
+      "anchors": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "global_rect": [
+        60.0,
+        40.0,
+        1080.0,
+        720.0
+      ],
+      "local_position": [
+        60.0,
+        40.0
+      ],
+      "offsets": [
+        60.0,
+        40.0,
+        -60.0,
+        -40.0
+      ],
+      "size": [
+        1080.0,
+        720.0
+      ]
+    },
+    "inset_parent_correct_child": {
+      "anchors": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "global_rect": [
+        60.0,
+        40.0,
+        1080.0,
+        720.0
+      ],
+      "local_position": [
+        0.0,
+        0.0
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1080.0,
+        720.0
+      ]
+    },
+    "inset_parent_duplicate_inset_child": {
+      "anchors": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "global_rect": [
+        120.0,
+        80.0,
+        960.0,
+        640.0
+      ],
+      "local_position": [
+        60.0,
+        40.0
+      ],
+      "offsets": [
+        60.0,
+        40.0,
+        -60.0,
+        -40.0
+      ],
+      "size": [
+        960.0,
+        640.0
+      ]
+    }
+  },
+  "physical_pixels_per_ui_unit": 2.0,
+  "process_frames_waited": 2,
+  "scope": "actual headless Godot Control layout; mocked physical rectangle; no mobile platform safe-area query",
+  "subviewport_size": [
+    1200,
+    800
+  ]
+}
