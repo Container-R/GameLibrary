@@ -1,0 +1,199 @@
+{
+  "scope": "synthetic event reconciliation, not replay or engine audio evidence",
+  "trace": [
+    {
+      "case": "first_prediction",
+      "ops": [
+        [
+          "start_loop",
+          [
+            11,
+            "kite",
+            4,
+            "flutter",
+            "loop"
+          ],
+          "dry"
+        ],
+        [
+          "play_one_shot",
+          [
+            10,
+            "hero",
+            1,
+            "contact",
+            "predicted_one_shot"
+          ],
+          "soft_chime"
+        ]
+      ]
+    },
+    {
+      "case": "same_frames_rebuilt_no_duplicate",
+      "ops": []
+    },
+    {
+      "case": "same_loop_corrected_payload",
+      "ops": [
+        [
+          "update_loop",
+          [
+            11,
+            "kite",
+            4,
+            "flutter",
+            "loop"
+          ],
+          "bright"
+        ]
+      ]
+    },
+    {
+      "case": "one_old_prediction_removed_reused_entity_new_choices",
+      "ops": [
+        [
+          "cancel_loop",
+          [
+            11,
+            "kite",
+            4,
+            "flutter",
+            "loop"
+          ],
+          "bright"
+        ],
+        [
+          "start_loop",
+          [
+            13,
+            "kite",
+            5,
+            "flutter",
+            "loop"
+          ],
+          "wet"
+        ],
+        [
+          "drop_expired",
+          [
+            2,
+            "hero",
+            1,
+            "ripple",
+            "predicted_one_shot"
+          ],
+          "too_old"
+        ],
+        [
+          "play_one_shot",
+          [
+            8,
+            "hero",
+            1,
+            "landing",
+            "predicted_one_shot"
+          ],
+          "past_hop"
+        ],
+        [
+          "play_one_shot",
+          [
+            10,
+            "hero",
+            1,
+            "contact_right",
+            "predicted_one_shot"
+          ],
+          "second_chime"
+        ],
+        [
+          "play_one_shot",
+          [
+            10,
+            "hero",
+            2,
+            "contact",
+            "predicted_one_shot"
+          ],
+          "reused_entity_new_life"
+        ]
+      ]
+    },
+    {
+      "case": "confirmation_releases_only_waiting_badge",
+      "ops": [
+        [
+          "play_one_shot",
+          [
+            12,
+            "hero",
+            1,
+            "ticket",
+            "confirmed_one_shot"
+          ],
+          "badge"
+        ]
+      ]
+    },
+    {
+      "case": "shallow_rebuild_no_dup",
+      "ops": []
+    },
+    {
+      "case": "waiting_confirmed_notice_not_treated_as_old_transient",
+      "ops": [
+        [
+          "cancel_loop",
+          [
+            13,
+            "kite",
+            5,
+            "flutter",
+            "loop"
+          ],
+          "wet"
+        ]
+      ]
+    },
+    {
+      "case": "late_confirmation_still_presents_notice_once",
+      "ops": [
+        [
+          "play_one_shot",
+          [
+            14,
+            "hero",
+            1,
+            "quest_map",
+            "confirmed_one_shot"
+          ],
+          "map_marker"
+        ]
+      ]
+    },
+    {
+      "case": "late_confirmation_retry_no_duplicate",
+      "ops": []
+    },
+    {
+      "case": "future_loop_not_admitted_early",
+      "ops": []
+    },
+    {
+      "case": "future_loop_starts_when_frame_is_reached",
+      "ops": [
+        [
+          "start_loop",
+          [
+            41,
+            "kite",
+            5,
+            "flutter_later",
+            "loop"
+          ],
+          "future"
+        ]
+      ]
+    }
+  ]
+}

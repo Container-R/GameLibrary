@@ -1,0 +1,171 @@
+{
+  "corrected": {
+    "active_at_frame_5": [
+      "1:player-1:torch_loop:0",
+      "4:player-1:glow_loop:0"
+    ],
+    "inputs": {
+      "2": [
+        "land"
+      ],
+      "3": [
+        "take_coin"
+      ],
+      "4": [
+        "glow_on"
+      ]
+    },
+    "states": [
+      {
+        "beam_origin": 0,
+        "coins": 0,
+        "frame": 2,
+        "glow_origin": 0,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 0,
+        "coins": 1,
+        "frame": 3,
+        "glow_origin": 0,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 0,
+        "coins": 1,
+        "frame": 4,
+        "glow_origin": 4,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 0,
+        "coins": 1,
+        "frame": 5,
+        "glow_origin": 4,
+        "torch_origin": 1
+      }
+    ],
+    "transient_journal": [
+      "2:player-1:landing:0",
+      "3:player-1:coin_chime:0"
+    ]
+  },
+  "eager_replay": {
+    "active": [
+      "1:player-1:torch_loop:0",
+      "3:player-1:beam_loop:0",
+      "4:player-1:glow_loop:0"
+    ],
+    "delivered_calls": [
+      "2:player-1:landing:0",
+      "2:player-1:landing:0",
+      "3:player-1:coin_chime:0"
+    ],
+    "failure": "unchanged landing replayed; wrong predicted beam survives"
+  },
+  "identity_contract": "(integer frame, stable actor, event kind, local ordinal); same identity has same payload here",
+  "limits": [
+    "Already heard incorrect one-shots cannot be undone by registry replacement.",
+    "Production identities must distinguish changed semantic events; payload updates need an explicit policy.",
+    "No claim of exactly-once delivery across crashes or external consumers.",
+    "Continuous state here is binary existence; phase, position and parameter reconciliation are not modeled.",
+    "No event retention/confirmation window, overlapping corrections or lifecycle garbage collection modeled."
+  ],
+  "predicted": {
+    "active_at_frame_5": [
+      "1:player-1:torch_loop:0",
+      "3:player-1:beam_loop:0"
+    ],
+    "inputs": {
+      "2": [
+        "land"
+      ],
+      "3": [
+        "beam_on"
+      ]
+    },
+    "states": [
+      {
+        "beam_origin": 0,
+        "coins": 0,
+        "frame": 2,
+        "glow_origin": 0,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 3,
+        "coins": 0,
+        "frame": 3,
+        "glow_origin": 0,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 3,
+        "coins": 0,
+        "frame": 4,
+        "glow_origin": 0,
+        "torch_origin": 1
+      },
+      {
+        "beam_origin": 3,
+        "coins": 0,
+        "frame": 5,
+        "glow_origin": 0,
+        "torch_origin": 1
+      }
+    ],
+    "transient_journal": [
+      "2:player-1:landing:0"
+    ]
+  },
+  "reconcile": {
+    "active": [
+      "1:player-1:torch_loop:0",
+      "4:player-1:glow_loop:0"
+    ],
+    "new_transient_calls": [
+      "3:player-1:coin_chime:0"
+    ],
+    "registered_corrected_suffix": [
+      "2:player-1:landing:0",
+      "3:player-1:coin_chime:0"
+    ],
+    "repeat_new_calls": [],
+    "repeat_starts": [],
+    "repeat_stops": [],
+    "retained_without_restart": [
+      "1:player-1:torch_loop:0"
+    ],
+    "started": [
+      "4:player-1:glow_loop:0"
+    ],
+    "stopped": [
+      "3:player-1:beam_loop:0"
+    ]
+  },
+  "rollback": {
+    "replacement_suffix_inclusive": [
+      2,
+      5
+    ],
+    "snapshot": {
+      "beam_origin": 0,
+      "coins": 0,
+      "frame": 1,
+      "glow_origin": 0,
+      "torch_origin": 1
+    },
+    "snapshot_after_frame": 1
+  },
+  "scope": "Deterministic integer item puzzle; simulated presentation registry only; no engine, audio, transport, timing or concurrency test",
+  "suppress_all_replay": {
+    "active": [
+      "1:player-1:torch_loop:0",
+      "3:player-1:beam_loop:0"
+    ],
+    "delivered_calls": [
+      "2:player-1:landing:0"
+    ],
+    "failure": "intermediate coin chime and new glow missing; wrong beam survives"
+  }
+}
