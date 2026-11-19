@@ -1,0 +1,33 @@
+{
+  "origin": 10000000.0,
+  "ulp32_at_origin": 1.0,
+  "world_rounds_before_subtract": [
+    0.0,
+    0.0
+  ],
+  "subtract_before_rounding": [
+    0.125,
+    0.375
+  ],
+  "fixed_point_material_phase_relative_only": [
+    0.125,
+    0.0
+  ],
+  "fixed_point_material_phase_origin_anchored": [
+    0.375,
+    0.375
+  ],
+  "large_relative_still_loses_phase": {
+    "r": 1000000.0,
+    "ulp32": 0.0625,
+    "period": 0.01,
+    "input_origin_phases": [
+      0.003,
+      0.008
+    ],
+    "f32_r_plus_phase": [
+      1000000.0,
+      1000000.0
+    ]
+  }
+}

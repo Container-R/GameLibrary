@@ -1,0 +1,80 @@
+{
+  "scope": "actual desktop OpenGL vertex shader transform feedback; software driver; not engine, GPU hardware, rasterization or image quality",
+  "egl_version": [
+    1,
+    5
+  ],
+  "vendor": "Mesa",
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "version": "4.5 (Core Profile) Mesa 25.0.7-2+deb13u1",
+  "glsl": "4.50",
+  "period": 0.75,
+  "rows": [
+    {
+      "world_host_double": 10000000.125,
+      "origin_host_double": 10000000.0,
+      "uploaded_float32": [
+        10000000.0,
+        10000000.0,
+        0.125,
+        0.25
+      ],
+      "readback_world_subtract_relative_relative_phase_anchored_phase": [
+        0.0,
+        0.125,
+        0.125,
+        0.375
+      ]
+    },
+    {
+      "world_host_double": 10000000.375,
+      "origin_host_double": 10000000.0,
+      "uploaded_float32": [
+        10000000.0,
+        10000000.0,
+        0.375,
+        0.25
+      ],
+      "readback_world_subtract_relative_relative_phase_anchored_phase": [
+        0.0,
+        0.375,
+        0.375,
+        0.625
+      ]
+    },
+    {
+      "world_host_double": 10000000.125,
+      "origin_host_double": 10000000.125,
+      "uploaded_float32": [
+        10000000.0,
+        10000000.0,
+        0.0,
+        0.375
+      ],
+      "readback_world_subtract_relative_relative_phase_anchored_phase": [
+        0.0,
+        0.0,
+        0.0,
+        0.375
+      ]
+    },
+    {
+      "world_host_double": 10000000.375,
+      "origin_host_double": 10000000.125,
+      "uploaded_float32": [
+        10000000.0,
+        10000000.0,
+        0.25,
+        0.375
+      ],
+      "readback_world_subtract_relative_relative_phase_anchored_phase": [
+        0.0,
+        0.25,
+        0.25,
+        0.625
+      ]
+    }
+  ],
+  "all_exact_assertions_passed": true,
+  "gl_error": 0
+}

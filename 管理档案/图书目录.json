@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-CAMERA-RELATIVE-PHASE",
+      "reader_title": "大世界材质改用相机相对坐标，怎样让花纹仍固定在世界上",
+      "canonical_reader_path": "GameLibrary/图形渲染/着色器开发/世界坐标与精度/大世界材质改用相机相对坐标，怎样让花纹仍固定在世界上.md",
+      "reader_body_status": "published",
+      "reader_sha256": "62acd2743ff1d815a8bf77626d262c89da898a7dfa9a18e9c6d8d496836456ec",
+      "source_record": "管理档案/来源笔记/camera-relative-material-20261119.md",
+      "review": "管理档案/审稿/GL-CAMERA-RELATIVE-PHASE/20261119-review.md",
+      "materials_record": "管理档案/实验/大世界材质相位/README.md"
+    },
+    {
       "internal_id": "GL-NPC-LAST-SEEN-SEARCH",
       "reader_title": "游戏 NPC 丢失视线后，怎样用最后目击点搜索",
       "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/感知与搜索/游戏 NPC 丢失视线后，怎样用最后目击点搜索.md",

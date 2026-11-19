@@ -1,0 +1,15 @@
+{
+  "period": "3/4",
+  "unwrapped_endpoints": [
+    "47/64",
+    "49/64"
+  ],
+  "wrapped_endpoints": [
+    "47/64",
+    "1/64"
+  ],
+  "wrap_then_interpolate": "3/8",
+  "interpolate_then_wrap": "0",
+  "unwrapped_endpoint_delta": "1/32",
+  "wrapped_endpoint_delta": "-23/32"
+}
