@@ -1,0 +1,38 @@
+{
+  "lost_visible_contact": [
+    "check_last_sight",
+    [
+      4,
+      0
+    ]
+  ],
+  "sound_received": "applied",
+  "out_of_order_older_sight": "nonnew_vision",
+  "noise_does_not_replace_recent_last_seen": [
+    "check_last_sight",
+    [
+      4,
+      0
+    ]
+  ],
+  "expired_sight_uses_unexpired_noise": [
+    "inspect_noise",
+    [
+      2,
+      2
+    ]
+  ],
+  "expired_both": [
+    "resume_patrol",
+    null
+  ],
+  "reacquired": "applied",
+  "late_old_loss": "nonnew_vision",
+  "fresh_vision": [
+    "observe_visible",
+    [
+      1,
+      7
+    ]
+  ]
+}

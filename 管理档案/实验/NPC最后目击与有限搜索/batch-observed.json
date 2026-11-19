@@ -1,0 +1,63 @@
+{
+  "permutations": 6,
+  "naive_possible_final_states": [
+    [
+      false,
+      null
+    ],
+    [
+      true,
+      [
+        8,
+        1
+      ]
+    ],
+    [
+      true,
+      [
+        90,
+        70
+      ]
+    ]
+  ],
+  "committed_final_states": [
+    [
+      [
+        14,
+        5
+      ],
+      true,
+      [
+        [
+          14,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    ]
+  ],
+  "positive_then_loss_same_tick": [
+    [
+      20,
+      2
+    ],
+    false,
+    [
+      [
+        20,
+        1
+      ],
+      [
+        23,
+        12
+      ]
+    ]
+  ],
+  "late_older_batch_does_not_revert": true,
+  "same_record_again": "no change",
+  "conflicting_same_key": "diagnostic; not treated as a fresh observation",
+  "previous_generation_only": "ignored"
+}

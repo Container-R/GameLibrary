@@ -1,0 +1,16 @@
+{
+  "cancelled_during_reacquire": "stale",
+  "cancelled_during_new_search": "stale",
+  "partial_does_not_clear": "route_incomplete",
+  "next_arrival": "record_observation",
+  "cleared": [
+    "north visible near half"
+  ],
+  "end_state": "patrol",
+  "third_goal": null,
+  "unresponsive_path_deadline": {
+    "state": "patrol",
+    "late_callback": "stale",
+    "cleared": []
+  }
+}

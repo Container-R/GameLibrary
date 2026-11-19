@@ -1,0 +1,52 @@
+{
+  "committed_trace_unchanged": [
+    [
+      "check_visible",
+      "junction"
+    ],
+    [
+      "check_last_seen",
+      "junction"
+    ],
+    [
+      "inspect_noise",
+      "service entry"
+    ]
+  ],
+  "wrong_loss_goals": [
+    "loading bay",
+    "stairs"
+  ],
+  "candidate_timeline": [
+    [
+      "storage"
+    ],
+    [
+      "storage"
+    ],
+    [
+      "junction",
+      "storage"
+    ],
+    [
+      "alcove",
+      "junction",
+      "storage"
+    ]
+  ],
+  "permanent_clearance_timeline": [
+    [
+      "storage"
+    ],
+    [
+      "storage"
+    ],
+    [
+      "storage"
+    ],
+    [
+      "storage"
+    ]
+  ],
+  "observation_post_reach_and_view": "junction overlook"
+}
