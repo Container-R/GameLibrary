@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ROOT-MOTION-CROSSFADE",
+      "reader_title": "动画交叉淡化时，为什么混合根位置做差会让角色猛冲",
+      "canonical_reader_path": "GameLibrary/角色动画/角色移动/根运动与动作对齐/动画交叉淡化时，为什么混合根位置做差会让角色猛冲.md",
+      "reader_body_status": "published",
+      "reader_sha256": "9ff7891be7501906bbc9dfa1f2e80379283299a6e70e52de3f57ceae54697e71",
+      "source_record": "管理档案/来源笔记/root-delta-crossfade-20261120.md",
+      "review": "管理档案/审稿/GL-ROOT-MOTION-CROSSFADE/20261120-review.md",
+      "materials_record": "管理档案/实验/根运动淡化的位移/README.md"
+    },
+    {
       "internal_id": "GL-TRIPLANAR-NORMAL-BLEND",
       "reader_title": "三平面材质换成平法线，为什么坡面还是变暗",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/三平面材质换成平法线，为什么坡面还是变暗.md",
