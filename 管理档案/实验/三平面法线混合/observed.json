@@ -1,0 +1,78 @@
+{
+  "fp32_equal_axis_high_exponent": {
+    "p": 256,
+    "original_unnormalized": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rescaled_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "neutral_baseline": {
+    "normal_angle_degrees": 25,
+    "naive_axis_blend_error_degrees": {
+      "1": 0.0,
+      "2": 12.732407,
+      "4": 22.292992
+    },
+    "surface_gradient_error_degrees": {
+      "1": 0.0,
+      "2": 0.0,
+      "4": 0.0
+    }
+  },
+  "negative_u_and_scale": {
+    "sample_uv_gradient": [
+      -0.35,
+      0.15
+    ],
+    "world_gradient_chain_rule": [
+      0.0,
+      0.15,
+      0.7
+    ],
+    "world_gradient_finite_difference": [
+      0.0,
+      0.14999999999876223,
+      0.7000000000090266
+    ],
+    "resolved_normal": [
+      0.8131156281817418,
+      -0.12196734422726126,
+      -0.5691809397272192
+    ],
+    "resolved_if_flip_ignored": [
+      0.8131156281817418,
+      -0.12196734422726126,
+      0.5691809397272192
+    ]
+  },
+  "projection_removes_normal_component": {
+    "base": [
+      0.2672612419124244,
+      0.5345224838248488,
+      0.8017837257372732
+    ],
+    "weights": [
+      0.07142857142857144,
+      0.28571428571428575,
+      0.6428571428571429
+    ],
+    "weighted_world_gradient": [
+      -0.05714285714285715,
+      0.2678571428571429,
+      0.007142857142857138
+    ],
+    "tangent_gradient": [
+      -0.09285714285714289,
+      0.19642857142857142,
+      -0.10000000000000003
+    ],
+    "dot_before": 0.13363062095621223,
+    "dot_after": -3.122502256758253e-17
+  }
+}

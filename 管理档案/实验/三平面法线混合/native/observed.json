@@ -1,0 +1,74 @@
+{
+  "backend": {
+    "glsl": "4.50",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "vendor": "Mesa",
+    "version": "4.5 (Core Profile) Mesa 25.0.7-2+deb13u1"
+  },
+  "cases": {
+    "p1_axis_blend": {
+      "error_degrees": 2.8881456870522015e-07,
+      "linear_lighting": 0.7532247304916382,
+      "normal": [
+        0.4226182699203491,
+        0.0,
+        0.9063078165054321
+      ],
+      "tilt_degrees": 24.99999971118543
+    },
+    "p1_baseline": {
+      "error_degrees": 1.3630307549306053e-06,
+      "linear_lighting": 0.7532254457473755,
+      "normal": [
+        0.4226183295249939,
+        0.0,
+        0.9063078761100769
+      ],
+      "tilt_degrees": 25.000001363030755
+    },
+    "p1_surface_gradient": {
+      "error_degrees": 1.1544667870566627e-06,
+      "linear_lighting": 0.7532247304916382,
+      "normal": [
+        0.4226182699203491,
+        0.0,
+        0.9063077569007874
+      ],
+      "tilt_degrees": 25.000001154466787
+    },
+    "p4_axis_blend": {
+      "error_degrees": 22.292991741587528,
+      "linear_lighting": 0.4324381649494171,
+      "normal": [
+        0.047228630632162094,
+        0.0,
+        0.9988840818405151
+      ],
+      "tilt_degrees": 2.7070082584124737
+    },
+    "p4_baseline": {
+      "error_degrees": 1.3630307549306053e-06,
+      "linear_lighting": 0.7532254457473755,
+      "normal": [
+        0.4226183295249939,
+        0.0,
+        0.9063078761100769
+      ],
+      "tilt_degrees": 25.000001363030755
+    },
+    "p4_surface_gradient": {
+      "error_degrees": 1.1544667870566627e-06,
+      "linear_lighting": 0.7532247304916382,
+      "normal": [
+        0.4226182699203491,
+        0.0,
+        0.9063077569007874
+      ],
+      "tilt_degrees": 25.000001154466787
+    }
+  },
+  "flat_gradient_max_rgba_difference": 7.152557373046875e-07,
+  "geometry": "plane z=-tan(25deg)*x; 2 triangles; orthographic; 96x96 float RGBA",
+  "gl_error": 0,
+  "texture": "1x1 RGBA32F decoded tangent normal (0,0,1)"
+}
