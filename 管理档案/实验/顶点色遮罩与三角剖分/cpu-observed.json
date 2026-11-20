@@ -1,0 +1,25 @@
+{
+  "scope": "Numerical cell-center samples only, not pixels, renderer, simplifier, production asset or perceptual test",
+  "threshold": 0.503,
+  "sample_grid": [
+    100,
+    100
+  ],
+  "diagonal": {
+    "center": [
+      1,
+      0
+    ],
+    "whiteOn": 7450,
+    "blackOn": 2450,
+    "paired": 5000,
+    "raw_mae": 0.3334,
+    "closest_threshold_margin": 0.003
+  },
+  "strips": {
+    "leftOn": 2000,
+    "rightOn": 2000,
+    "stripPaired": 4000,
+    "overlap": 0
+  }
+}

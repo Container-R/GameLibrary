@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-LOD-PAINTED-MASK",
+      "reader_title": "网格轮廓没变，为什么顶点色遮罩会跳",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/模型细节级别/网格轮廓没变，为什么顶点色遮罩会跳.md",
+      "reader_body_status": "published",
+      "reader_sha256": "ce4f0515fcfaa96f7ba5551daf98aa1017f9bbbcba681678276540865cd27778",
+      "source_record": "管理档案/来源笔记/lod-painted-mask-20261121.md",
+      "review": "管理档案/审稿/GL-LOD-PAINTED-MASK/20261121-review.md",
+      "materials_record": "管理档案/实验/顶点色遮罩与三角剖分/README.md"
+    },
+    {
       "internal_id": "GL-EFFECTIVE-PLAY-HEARTBEATS",
       "reader_title": "心跳断续时，怎样估算账号的游玩时长",
       "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/心跳断续时，怎样估算账号的游玩时长.md",
