@@ -1,0 +1,11 @@
+scope=synthetic link-time ELF address, GNU host tools; no crash/ASLR/APK/NDK
+pc=0x6000
+A=1b93019c949f59e294fe894441490f5a60d473bd
+B=a2732567db340b6d9be35165440c4dd05201a5a6
+candidate	local identity status	direct GNU lookup (ignores frame ID)
+a_full	BUILD_ID_MATCH	award_room_key quest_room.c:42 
+b_wrong	REJECT_MISMATCH	refresh_shop_badge shop_ui.c:94 
+frame_missing_id	UNVERIFIED	refresh_shop_badge shop_ui.c:94 
+library_missing_id	UNVERIFIED	refresh_shop_badge shop_ui.c:94 
+a_stripped	BUILD_ID_MATCH	award_room_key ??:? 
+a_separate_debug	BUILD_ID_MATCH	award_room_key quest_room.c:42 
