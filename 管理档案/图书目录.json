@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-PARTICLE-OUTPUT-BOUNDS",
+      "reader_title": "粒子输出几何超出包围盒时，怎样修正视锥剔除",
+      "canonical_reader_path": "GameLibrary/视觉特效/特效制作/性能分析/粒子输出几何超出包围盒时，怎样修正视锥剔除.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8a6a9b3c450ca266e45e1afe81e12efb4a752354d095e2c95f099f82078d837f",
+      "source_record": "管理档案/来源笔记/particle-output-bounds-20261120.md",
+      "review": "管理档案/审稿/GL-PARTICLE-OUTPUT-BOUNDS/20261120-review.md",
+      "materials_record": "管理档案/实验/粒子输出包围盒/README.md"
+    },
+    {
       "internal_id": "GL-SAVE-SESSION-EPOCH",
       "reader_title": "玩家重连后，怎样防止旧会话覆盖新存档",
       "canonical_reader_path": "GameLibrary/网络与在线服务/在线服务/会话与存档/玩家重连后，怎样防止旧会话覆盖新存档.md",

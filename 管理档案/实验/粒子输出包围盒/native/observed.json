@@ -1,0 +1,109 @@
+{
+  "backend": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "version": "4.5 (Compatibility Profile) Mesa 25.0.7-2+deb13u1"
+  },
+  "size": [
+    64,
+    32
+  ],
+  "actual_quad_x": [
+    -3,
+    1
+  ],
+  "cases": {
+    "main_small_culled": {
+      "camera_x": [
+        0,
+        4
+      ],
+      "cpu_bound_x": [
+        -2.25,
+        -1.75
+      ],
+      "cpu_admitted": false,
+      "cpu_override": false,
+      "gl_draws": 0,
+      "red_pixels": 0,
+      "touched_xy_inclusive": null,
+      "rgba_sha256": "1f6ae7657fcc3027fc979c20db3b0b75eb9ce6e02465f81a30f0abc3633935c2"
+    },
+    "main_small_forced_draw": {
+      "camera_x": [
+        0,
+        4
+      ],
+      "cpu_bound_x": [
+        -2.25,
+        -1.75
+      ],
+      "cpu_admitted": false,
+      "cpu_override": true,
+      "gl_draws": 1,
+      "red_pixels": 256,
+      "touched_xy_inclusive": [
+        0,
+        8,
+        15,
+        23
+      ],
+      "rgba_sha256": "c030c49f27ec2a4d88b719a2dd67218caf25918da69f12337e83821402cb4c0d"
+    },
+    "main_exact_admitted": {
+      "camera_x": [
+        0,
+        4
+      ],
+      "cpu_bound_x": [
+        -3,
+        1
+      ],
+      "cpu_admitted": true,
+      "cpu_override": false,
+      "gl_draws": 1,
+      "red_pixels": 256,
+      "touched_xy_inclusive": [
+        0,
+        8,
+        15,
+        23
+      ],
+      "rgba_sha256": "c030c49f27ec2a4d88b719a2dd67218caf25918da69f12337e83821402cb4c0d"
+    },
+    "second_exact_culled": {
+      "camera_x": [
+        -5,
+        -4
+      ],
+      "cpu_bound_x": [
+        -3,
+        1
+      ],
+      "cpu_admitted": false,
+      "cpu_override": false,
+      "gl_draws": 0,
+      "red_pixels": 0,
+      "touched_xy_inclusive": null,
+      "rgba_sha256": "1f6ae7657fcc3027fc979c20db3b0b75eb9ce6e02465f81a30f0abc3633935c2"
+    },
+    "second_loose_admitted": {
+      "camera_x": [
+        -5,
+        -4
+      ],
+      "cpu_bound_x": [
+        -5,
+        1
+      ],
+      "cpu_admitted": true,
+      "cpu_override": false,
+      "gl_draws": 1,
+      "red_pixels": 0,
+      "touched_xy_inclusive": null,
+      "rgba_sha256": "1f6ae7657fcc3027fc979c20db3b0b75eb9ce6e02465f81a30f0abc3633935c2"
+    }
+  },
+  "scope": "Own CPU interval culling; real OpenGL orthographic clipping and raster",
+  "gl_error": 0
+}

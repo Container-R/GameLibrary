@@ -1,0 +1,32 @@
+{
+  "camera": [
+    0,
+    4
+  ],
+  "update_bound": [
+    -2.25,
+    -1.75
+  ],
+  "rendered": [
+    -3.0,
+    1.0
+  ],
+  "extension_neg_pos": [
+    0.75,
+    2.75
+  ],
+  "exact_bounds": [
+    -3.0,
+    1.0
+  ],
+  "symmetric_bounds": [
+    -5.0,
+    1.0
+  ],
+  "camera_admitted_before": false,
+  "camera_admitted_after": true,
+  "oversized_extra_admission": [
+    -5,
+    -4
+  ]
+}
