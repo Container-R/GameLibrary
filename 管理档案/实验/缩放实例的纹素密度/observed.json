@@ -1,0 +1,56 @@
+{
+  "backend": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "version": "4.5 (Compatibility Profile) Mesa 25.0.7-2+deb13u1"
+  },
+  "target": [
+    64,
+    32
+  ],
+  "translation_m": 0.25,
+  "cases": {
+    "raw": {
+      "base": {
+        "horizontal_transitions": 7,
+        "vertical_transitions": 7,
+        "first_level": 0,
+        "sha256": "6e735dedbd3c7ffb502f4f3ca1cdaa737affebdb79d9aa7878a6622b77f497be"
+      },
+      "shifted": {
+        "horizontal_transitions": 7,
+        "vertical_transitions": 7,
+        "first_level": 0,
+        "sha256": "6e735dedbd3c7ffb502f4f3ca1cdaa737affebdb79d9aa7878a6622b77f497be"
+      }
+    },
+    "anchored": {
+      "base": {
+        "horizontal_transitions": 15,
+        "vertical_transitions": 7,
+        "first_level": 0,
+        "sha256": "fd2013f88e04cc2df5d8cf035071dc28bb02a0cd87e6728666314d96fc085ee5"
+      },
+      "shifted": {
+        "horizontal_transitions": 15,
+        "vertical_transitions": 7,
+        "first_level": 0,
+        "sha256": "fd2013f88e04cc2df5d8cf035071dc28bb02a0cd87e6728666314d96fc085ee5"
+      }
+    },
+    "world": {
+      "base": {
+        "horizontal_transitions": 15,
+        "vertical_transitions": 7,
+        "first_level": 0,
+        "sha256": "fd2013f88e04cc2df5d8cf035071dc28bb02a0cd87e6728666314d96fc085ee5"
+      },
+      "shifted": {
+        "horizontal_transitions": 15,
+        "vertical_transitions": 7,
+        "first_level": 255,
+        "sha256": "f3a51f71bed3a21fc772a714af955d9026aae42623d6b37f069b6a9452d95d39"
+      }
+    }
+  }
+}
