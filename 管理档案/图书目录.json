@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-CINEMATIC-COMPLETION",
+      "reader_title": "跳过过场后，怎样交接任务状态、相机和输入",
+      "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/过场演出/跳过过场后，怎样交接任务状态、相机和输入.md",
+      "reader_body_status": "published",
+      "reader_sha256": "df9d84e8d86e9dbf2cdd25ebcd1856895d394a8d6bc53c93a5691ecea052198a",
+      "source_record": "管理档案/来源笔记/cinematic-completion-20261120.md",
+      "review": "管理档案/审稿/GL-CINEMATIC-COMPLETION/20261120-review.md",
+      "materials_record": "管理档案/实验/过场完成与控制权/README.md"
+    },
+    {
       "internal_id": "GL-PARTICLE-OUTPUT-BOUNDS",
       "reader_title": "粒子输出几何超出包围盒时，怎样修正视锥剔除",
       "canonical_reader_path": "GameLibrary/视觉特效/特效制作/性能分析/粒子输出几何超出包围盒时，怎样修正视锥剔除.md",

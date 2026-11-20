@@ -1,0 +1,426 @@
+{
+    "cases": {
+        "compare_release": {
+            "cancel_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 0,
+                    "input_lease": "clip#2"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 0,
+                    "input_lease": "clip#2"
+                }
+            },
+            "cleanup_reentry": {
+                "accepted": true,
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                }
+            },
+            "skip_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                }
+            },
+            "split_resource": {
+                "accepted": true,
+                "final": {
+                    "active": "",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "overlay#1"
+                }
+            }
+        },
+        "entry_guard": {
+            "cancel_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 0,
+                    "input_lease": "clip#2"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 0,
+                    "input_lease": "clip#2"
+                }
+            },
+            "cleanup_reentry": {
+                "accepted": true,
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                }
+            },
+            "skip_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": false,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                }
+            },
+            "split_resource": {
+                "accepted": true,
+                "final": {
+                    "active": "",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                }
+            }
+        },
+        "grant_only": {
+            "cancel_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": true,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 0,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": true,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 0,
+                    "input_lease": "clip#2"
+                }
+            },
+            "cleanup_reentry": {
+                "accepted": true,
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                }
+            },
+            "skip_late_duplicate": {
+                "deliveries": [
+                    {
+                        "accepted": true,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "clip#2",
+                            "current_camera": "clip#2",
+                            "gameplay_input_allowed": false,
+                            "grants": 1,
+                            "input_lease": "clip#2"
+                        }
+                    },
+                    {
+                        "accepted": true,
+                        "after": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        },
+                        "before": {
+                            "active": "clip#2",
+                            "camera_lease": "game",
+                            "current_camera": "game",
+                            "gameplay_input_allowed": true,
+                            "grants": 1,
+                            "input_lease": "game"
+                        }
+                    }
+                ],
+                "final": {
+                    "active": "clip#2",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                },
+                "successor_before_callbacks": {
+                    "active": "clip#2",
+                    "camera_lease": "clip#2",
+                    "current_camera": "clip#2",
+                    "gameplay_input_allowed": false,
+                    "grants": 1,
+                    "input_lease": "clip#2"
+                }
+            },
+            "split_resource": {
+                "accepted": true,
+                "final": {
+                    "active": "",
+                    "camera_lease": "game",
+                    "current_camera": "game",
+                    "gameplay_input_allowed": true,
+                    "grants": 1,
+                    "input_lease": "game"
+                }
+            }
+        }
+    },
+    "engine": "4.7.2-stable (official)",
+    "scope": "Native call_deferred and Viewport.get_camera_3d; synthetic quest flag and project input gate, not save persistence or devices"
+}
