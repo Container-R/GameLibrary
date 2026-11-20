@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-EFFECTIVE-PLAY-HEARTBEATS",
+      "reader_title": "心跳断续时，怎样估算账号的游玩时长",
+      "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/心跳断续时，怎样估算账号的游玩时长.md",
+      "reader_body_status": "published",
+      "reader_sha256": "dc1b0c59f03595c84047a62d3d171ea93925848f69dba5206ba6776867bfc05f",
+      "source_record": "管理档案/来源笔记/effective-play-heartbeats-20261121.md",
+      "review": "管理档案/审稿/GL-EFFECTIVE-PLAY-HEARTBEATS/20261121-review.md",
+      "materials_record": "管理档案/实验/断续心跳的游玩时长/README.md"
+    },
+    {
       "internal_id": "GL-INSTANCE-TEXEL-DENSITY",
       "reader_title": "墙面横向拉长后，怎样保持两向纹素密度",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/墙面横向拉长后，怎样保持两向纹素密度.md",
