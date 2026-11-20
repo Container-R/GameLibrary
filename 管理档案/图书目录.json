@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ANDROID-GAME-AUDIO-FOCUS",
+      "reader_title": "Android 游戏失去音频焦点后，什么时候该恢复声音",
+      "canonical_reader_path": "GameLibrary/平台与发行/平台接入/移动平台/Android 游戏失去音频焦点后，什么时候该恢复声音.md",
+      "reader_body_status": "published",
+      "reader_sha256": "acbfda36ddd4e35eb6e0c24ef464b22e265da8e290c8d9381db37bf185094b65",
+      "source_record": "管理档案/来源笔记/android-game-audio-focus-20261120.md",
+      "review": "管理档案/审稿/GL-ANDROID-GAME-AUDIO-FOCUS/20261120-review.md",
+      "materials_record": "管理档案/实验/Android音频焦点状态/README.md"
+    },
+    {
       "internal_id": "GL-BAKED-DOOR-OCCLUSION",
       "reader_title": "可开启的门怎样参与烘焙遮挡",
       "canonical_reader_path": "GameLibrary/图形渲染/空间查询/可见性剔除/可开启的门怎样参与烘焙遮挡.md",
