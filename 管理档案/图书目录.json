@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-HINT-ELIGIBILITY-AB",
+      "reader_title": "帮助卡只给卡住的人看，为什么不能按“看过”比较通关率",
+      "canonical_reader_path": "GameLibrary/项目管理与测试/玩家测试/关卡引导/帮助卡只给卡住的人看，为什么不能按“看过”比较通关率.md",
+      "reader_body_status": "published",
+      "reader_sha256": "86fe2cf012860e213abb7aec927f0e1f123d88b1f72b63aaeaded503cbd78f0e",
+      "source_record": "管理档案/来源笔记/hint-eligibility-ab-20261120.md",
+      "review": "管理档案/审稿/GL-HINT-ELIGIBILITY-AB/20261120-review.md",
+      "materials_record": "管理档案/实验/新手提示的共同资格/README.md"
+    },
+    {
       "internal_id": "GL-INTER-SAMPLE-PEAK",
       "reader_title": "样本峰值没到 0 dBFS，为什么游戏音频转采样后还是削顶",
       "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/混音/样本峰值没到 0 dBFS，为什么游戏音频转采样后还是削顶.md",
