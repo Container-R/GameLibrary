@@ -1,0 +1,197 @@
+{
+  "sqlite": "3.53.1",
+  "epoch_limit": {
+    "unchecked_overflow_type": "real",
+    "unchecked_next_increment_stalls": true,
+    "bounded_claim_rows": [
+      1,
+      0
+    ],
+    "bounded_final": [
+      9223372036854775807,
+      "integer"
+    ]
+  },
+  "precheck_only": {
+    "precheck": {
+      "save": [
+        "A",
+        17,
+        "before"
+      ],
+      "receipts": []
+    },
+    "aborted_takeover": {
+      "save": [
+        "A",
+        17,
+        "before"
+      ],
+      "receipts": []
+    },
+    "concurrent_writer": "SQLITE_BUSY",
+    "after_takeover_before_new_save": {
+      "save": [
+        "B",
+        18,
+        "before"
+      ],
+      "receipts": []
+    },
+    "old_rows": 1,
+    "after_old": {
+      "save": [
+        "B",
+        18,
+        "late-A"
+      ],
+      "receipts": [
+        "old-A"
+      ]
+    },
+    "new_rows": 1,
+    "after_new": {
+      "save": [
+        "B",
+        18,
+        "current-B"
+      ],
+      "receipts": [
+        "new-B",
+        "old-A"
+      ]
+    },
+    "writer_reused": {
+      "save": [
+        "A",
+        19,
+        "current-B"
+      ],
+      "receipts": [
+        "new-B",
+        "old-A"
+      ]
+    },
+    "reused_writer_controls": [
+      {
+        "guard": "writer",
+        "submitted_epoch": 17,
+        "rows": 1,
+        "within_save": [
+          "A",
+          19,
+          "request-17"
+        ]
+      },
+      {
+        "guard": "epoch",
+        "submitted_epoch": 17,
+        "rows": 0,
+        "within_save": [
+          "A",
+          19,
+          "current-B"
+        ]
+      },
+      {
+        "guard": "epoch",
+        "submitted_epoch": 19,
+        "rows": 1,
+        "within_save": [
+          "A",
+          19,
+          "request-19"
+        ]
+      }
+    ]
+  },
+  "epoch_guard": {
+    "precheck": {
+      "save": [
+        "A",
+        17,
+        "before"
+      ],
+      "receipts": []
+    },
+    "aborted_takeover": {
+      "save": [
+        "A",
+        17,
+        "before"
+      ],
+      "receipts": []
+    },
+    "concurrent_writer": "SQLITE_BUSY",
+    "after_takeover_before_new_save": {
+      "save": [
+        "B",
+        18,
+        "before"
+      ],
+      "receipts": []
+    },
+    "old_rows": 0,
+    "after_old": {
+      "save": [
+        "B",
+        18,
+        "before"
+      ],
+      "receipts": []
+    },
+    "new_rows": 1,
+    "after_new": {
+      "save": [
+        "B",
+        18,
+        "current-B"
+      ],
+      "receipts": [
+        "new-B"
+      ]
+    },
+    "writer_reused": {
+      "save": [
+        "A",
+        19,
+        "current-B"
+      ],
+      "receipts": [
+        "new-B"
+      ]
+    },
+    "reused_writer_controls": [
+      {
+        "guard": "writer",
+        "submitted_epoch": 17,
+        "rows": 1,
+        "within_save": [
+          "A",
+          19,
+          "request-17"
+        ]
+      },
+      {
+        "guard": "epoch",
+        "submitted_epoch": 17,
+        "rows": 0,
+        "within_save": [
+          "A",
+          19,
+          "current-B"
+        ]
+      },
+      {
+        "guard": "epoch",
+        "submitted_epoch": 19,
+        "rows": 1,
+        "within_save": [
+          "A",
+          19,
+          "request-19"
+        ]
+      }
+    ]
+  }
+}
