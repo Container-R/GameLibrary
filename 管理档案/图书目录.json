@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-BAKED-DOOR-OCCLUSION",
+      "reader_title": "可开启的门怎样参与烘焙遮挡",
+      "canonical_reader_path": "GameLibrary/图形渲染/空间查询/可见性剔除/可开启的门怎样参与烘焙遮挡.md",
+      "reader_body_status": "published",
+      "reader_sha256": "f2a7abf5c33443e5b06d6265cf0e71acbd9b913dbe868811809256fb338a0f8a",
+      "source_record": "管理档案/来源笔记/baked-door-occlusion-20261120.md",
+      "review": "管理档案/审稿/GL-BAKED-DOOR-OCCLUSION/20261120-review.md",
+      "materials_record": "管理档案/实验/门洞的遮挡剔除/README.md"
+    },
+    {
       "internal_id": "GL-CINEMATIC-COMPLETION",
       "reader_title": "跳过过场后，怎样交接任务状态、相机和输入",
       "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/过场演出/跳过过场后，怎样交接任务状态、相机和输入.md",
