@@ -1,0 +1,32 @@
+{
+  "first": {
+    "arrival": 4,
+    "current": 0.7,
+    "produced": {
+      "frame": 0,
+      "scale": 1,
+      "gpuMs": 22
+    }
+  },
+  "validLow": {
+    "arrival": 8,
+    "current": 0.7,
+    "produced": {
+      "frame": 4,
+      "scale": 0.7,
+      "gpuMs": 14.35
+    }
+  },
+  "queueExample": {
+    "graphics": [
+      0,
+      8
+    ],
+    "compute": [
+      4,
+      10
+    ],
+    "sum": 14,
+    "union": 10
+  }
+}
