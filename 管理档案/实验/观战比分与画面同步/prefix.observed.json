@@ -1,0 +1,94 @@
+[
+  {
+    "step": "later batch, earlier interval missing",
+    "frame": 145,
+    "strict": {
+      "completeThrough": 100,
+      "status": "wait"
+    },
+    "provisional": {
+      "completeThrough": 100,
+      "status": "provisional",
+      "score": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "step": "gap repaired while frame is paused",
+    "frame": 145,
+    "strict": {
+      "completeThrough": 150,
+      "status": "exact",
+      "score": [
+        2,
+        2
+      ]
+    },
+    "provisional": {
+      "completeThrough": 150,
+      "status": "exact",
+      "score": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "step": "ready after seek into buffered history",
+    "frame": 125,
+    "strict": {
+      "completeThrough": 150,
+      "status": "exact",
+      "score": [
+        2,
+        1
+      ]
+    },
+    "provisional": {
+      "completeThrough": 150,
+      "status": "exact",
+      "score": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "step": "no events arrived after 150 does not prove completeness",
+    "frame": 151,
+    "strict": {
+      "completeThrough": 150,
+      "status": "wait"
+    },
+    "provisional": {
+      "completeThrough": 150,
+      "status": "provisional",
+      "score": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "step": "authoritative empty batch covers the quiet interval",
+    "frame": 151,
+    "strict": {
+      "completeThrough": 170,
+      "status": "exact",
+      "score": [
+        2,
+        2
+      ]
+    },
+    "provisional": {
+      "completeThrough": 170,
+      "status": "exact",
+      "score": [
+        2,
+        2
+      ]
+    }
+  }
+]

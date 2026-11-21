@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-SPECTATOR-HUD-CURSOR",
+      "reader_title": "延迟观战的比分与画面同步",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/观战与回放/延迟观战的比分与画面同步.md",
+      "reader_body_status": "published",
+      "reader_sha256": "39c4e49c414153a3d6716fce29f22ebc7d46cba99abb7bb8bb6fba41cb234be2",
+      "source_record": "管理档案/来源笔记/spectator-hud-playback-cursor-20261122.md",
+      "review": "管理档案/审稿/GL-SPECTATOR-HUD-CURSOR/20261122-review.md",
+      "materials_record": "管理档案/实验/观战比分与画面同步/README.md"
+    },
+    {
       "internal_id": "GL-FOOTSTEP-SUPPORT-SURFACE",
       "reader_title": "左脚踩金属、右脚踩石板，为什么脚步音却一样",
       "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/表面音效/左脚踩金属、右脚踩石板，为什么脚步音却一样.md",
