@@ -1,0 +1,149 @@
+{
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "default": {
+    "face_index_setting": false,
+    "initial": [
+      {
+        "collider": "Floor",
+        "face_index": -1,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": -0.2,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Floor",
+        "face_index": -1,
+        "local_x": 0.2,
+        "material": "soil",
+        "shape_slot": 0,
+        "world_x": 0.2,
+        "world_y": 0.0
+      }
+    ],
+    "physics_engine_setting": "Jolt Physics",
+    "support": [
+      {
+        "collider": "Floor",
+        "face_index": -1,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Wood",
+        "face_index": -1,
+        "local_x": 0.0,
+        "material": "Wood",
+        "shape_slot": 0,
+        "world_x": 3.2,
+        "world_y": 0.25
+      },
+      {
+        "collider": "Trigger",
+        "face_index": -1,
+        "local_x": 0.0,
+        "material": "Trigger",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.65
+      }
+    ],
+    "translated": [
+      {
+        "collider": "Floor",
+        "face_index": -1,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Floor",
+        "face_index": -1,
+        "local_x": 0.2,
+        "material": "soil",
+        "shape_slot": 0,
+        "world_x": 3.2,
+        "world_y": 0.0
+      }
+    ]
+  },
+  "explicit_face_index": {
+    "face_index_setting": true,
+    "initial": [
+      {
+        "collider": "Floor",
+        "face_index": 0,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": -0.2,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Floor",
+        "face_index": 3,
+        "local_x": 0.2,
+        "material": "soil",
+        "shape_slot": 0,
+        "world_x": 0.2,
+        "world_y": 0.0
+      }
+    ],
+    "physics_engine_setting": "Jolt Physics",
+    "support": [
+      {
+        "collider": "Floor",
+        "face_index": 0,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Wood",
+        "face_index": -1,
+        "local_x": 0.0,
+        "material": "Wood",
+        "shape_slot": 0,
+        "world_x": 3.2,
+        "world_y": 0.25
+      },
+      {
+        "collider": "Trigger",
+        "face_index": -1,
+        "local_x": 0.0,
+        "material": "Trigger",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.65
+      }
+    ],
+    "translated": [
+      {
+        "collider": "Floor",
+        "face_index": 0,
+        "local_x": -0.2,
+        "material": "stone",
+        "shape_slot": 0,
+        "world_x": 2.8,
+        "world_y": 0.0
+      },
+      {
+        "collider": "Floor",
+        "face_index": 3,
+        "local_x": 0.2,
+        "material": "soil",
+        "shape_slot": 0,
+        "world_x": 3.2,
+        "world_y": 0.0
+      }
+    ]
+  }
+}

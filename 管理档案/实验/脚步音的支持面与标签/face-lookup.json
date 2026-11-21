@@ -1,0 +1,54 @@
+[
+  {
+    "tx": 0,
+    "foot": "L",
+    "x": -0.2,
+    "collider": "platform",
+    "shape": 7,
+    "faceId": 10,
+    "withoutFace": -1,
+    "objectTag": "generic",
+    "withFace": "metal",
+    "localZone": "metal",
+    "worldZone": "metal"
+  },
+  {
+    "tx": 0,
+    "foot": "R",
+    "x": 0.2,
+    "collider": "platform",
+    "shape": 7,
+    "faceId": 21,
+    "withoutFace": -1,
+    "objectTag": "generic",
+    "withFace": "stone",
+    "localZone": "stone",
+    "worldZone": "stone"
+  },
+  {
+    "tx": 3,
+    "foot": "L",
+    "x": 2.8,
+    "collider": "platform",
+    "shape": 7,
+    "faceId": 10,
+    "withoutFace": -1,
+    "objectTag": "generic",
+    "withFace": "metal",
+    "localZone": "metal",
+    "worldZone": "stone"
+  },
+  {
+    "tx": 3,
+    "foot": "R",
+    "x": 3.2,
+    "collider": "platform",
+    "shape": 7,
+    "faceId": 21,
+    "withoutFace": -1,
+    "objectTag": "generic",
+    "withFace": "stone",
+    "localZone": "stone",
+    "worldZone": "stone"
+  }
+]
