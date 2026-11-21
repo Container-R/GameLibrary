@@ -1,0 +1,66 @@
+[
+  {
+    "name": "same baked value, neighboring chart contaminates only left",
+    "atlas": [
+      0.6,
+      0.2,
+      0.6,
+      0.6
+    ],
+    "edge_uv_texel_centers": [
+      0.25,
+      2.75
+    ],
+    "left": 0.5,
+    "right": 0.6,
+    "jump": 0.1
+  },
+  {
+    "name": "same baked value, own values copied into gutters",
+    "atlas": [
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "edge_uv_texel_centers": [
+      0.25,
+      2.75
+    ],
+    "left": 0.6,
+    "right": 0.6,
+    "jump": 0
+  },
+  {
+    "name": "the two baked edge values disagree despite own gutters",
+    "atlas": [
+      0.48,
+      0.48,
+      0.66,
+      0.66
+    ],
+    "edge_uv_texel_centers": [
+      0.25,
+      2.75
+    ],
+    "left": 0.48,
+    "right": 0.66,
+    "jump": 0.18
+  },
+  {
+    "name": "synthetic continuous chart uses same sampling position on seam",
+    "atlas": [
+      0.48,
+      0.54,
+      0.6,
+      0.66
+    ],
+    "edge_uv_texel_centers": [
+      1.5,
+      1.5
+    ],
+    "left": 0.57,
+    "right": 0.57,
+    "jump": 0
+  }
+]

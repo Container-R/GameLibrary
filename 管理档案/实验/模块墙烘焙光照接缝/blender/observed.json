@@ -1,0 +1,99 @@
+{
+    "blender": "4.3.2",
+    "device": "Cycles CPU",
+    "diffuse_bake": "DIRECT only",
+    "joined": {
+        "center_row_last2_left_first2_right": [
+            0.6868364810943604,
+            0.6802306771278381,
+            0.6734369993209839,
+            0.6662494540214539
+        ],
+        "core_min_max": [
+            [
+                0.5640320777893066,
+                0.7598382830619812
+            ],
+            [
+                0.34815725684165955,
+                0.6973273158073425
+            ]
+        ],
+        "covered_core_texels": [
+            1024,
+            1024
+        ],
+        "mean_abs_raw_neighbor_difference": 0.006628777831792831
+    },
+    "joined_segmented": {
+        "center_row_last2_left_first2_right": [
+            0.6867969632148743,
+            0.6804282069206238,
+            0.6733971834182739,
+            0.6661989688873291
+        ],
+        "core_min_max": [
+            [
+                0.5640236139297485,
+                0.7598397135734558
+            ],
+            [
+                0.3480815589427948,
+                0.6972337961196899
+            ]
+        ],
+        "covered_core_texels": [
+            1024,
+            1024
+        ],
+        "mean_abs_raw_neighbor_difference": 0.006672242656350136
+    },
+    "joined_segmented_vs_joined": {
+        "max_abs_edge_jump_excess_over_joined": 0.00042682886123657227,
+        "max_abs_matched_core": 0.001090705394744873,
+        "mean_abs_matched_core": 8.731581328902394e-05
+    },
+    "margin": 8,
+    "samples": 16,
+    "seed": 4,
+    "size": [
+        128,
+        128
+    ],
+    "split": {
+        "center_row_last2_left_first2_right": [
+            0.6867969632148743,
+            0.6804282069206238,
+            0.6733971834182739,
+            0.6661989688873291
+        ],
+        "core_min_max": [
+            [
+                0.5640236139297485,
+                0.7598397135734558
+            ],
+            [
+                0.3480815589427948,
+                0.6972337961196899
+            ]
+        ],
+        "covered_core_texels": [
+            1024,
+            1024
+        ],
+        "mean_abs_raw_neighbor_difference": 0.006672242656350136
+    },
+    "split_same_packing_identical_samples": true,
+    "split_vs_joined": {
+        "max_abs_edge_jump_excess_over_joined": 0.00042682886123657227,
+        "max_abs_matched_core": 0.001090705394744873,
+        "mean_abs_matched_core": 8.731581328902394e-05
+    },
+    "split_vs_joined_segmented_same_packing": {
+        "max_abs_edge_jump_excess_over_joined": 0.0,
+        "max_abs_matched_core": 0.0,
+        "mean_abs_matched_core": 0.0
+    },
+    "texels_per_unit": 32,
+    "world": "black"
+}
