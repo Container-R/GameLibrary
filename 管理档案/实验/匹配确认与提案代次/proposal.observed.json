@@ -1,0 +1,285 @@
+{
+  "unsafe": [
+    {
+      "ts": 90,
+      "event": "A accepts P1; reply lost",
+      "outcome": "accepted:P1",
+      "active": "P1",
+      "phase": "confirming",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 43
+    },
+    {
+      "ts": 100,
+      "event": "B never accepts; expiry",
+      "outcome": "expired:P1",
+      "active": "P1",
+      "phase": "expired",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 44
+    },
+    {
+      "ts": 110,
+      "event": "candidate P2 reuses TA",
+      "outcome": "opened",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [],
+      "placements": [],
+      "revision": 45
+    },
+    {
+      "ts": 130,
+      "event": "retry same P1 request",
+      "outcome": "accepted:P2",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 46
+    },
+    {
+      "ts": 140,
+      "event": "stale timer for P1",
+      "outcome": "no transition",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 46
+    },
+    {
+      "ts": 150,
+      "event": "C accepts P2",
+      "outcome": "accepted:P2",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    },
+    {
+      "ts": 151,
+      "event": "C duplicates P2",
+      "outcome": "not confirming",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    },
+    {
+      "ts": 155,
+      "event": "new delayed submission still names P1",
+      "outcome": "not confirming",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    },
+    {
+      "ts": 160,
+      "event": "A accepts P2",
+      "outcome": "not confirming",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    },
+    {
+      "ts": 161,
+      "event": "A duplicates P2",
+      "outcome": "not confirming",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    }
+  ],
+  "guarded": [
+    {
+      "ts": 90,
+      "event": "A accepts P1; reply lost",
+      "outcome": "accepted:P1",
+      "active": "P1",
+      "phase": "confirming",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 43
+    },
+    {
+      "ts": 100,
+      "event": "B never accepts; expiry",
+      "outcome": "expired:P1",
+      "active": "P1",
+      "phase": "expired",
+      "accepted": [
+        "A"
+      ],
+      "placements": [],
+      "revision": 44
+    },
+    {
+      "ts": 110,
+      "event": "candidate P2 reuses TA",
+      "outcome": "opened",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [],
+      "placements": [],
+      "revision": 45
+    },
+    {
+      "ts": 130,
+      "event": "retry same P1 request",
+      "outcome": "replayed accepted:P1",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [],
+      "placements": [],
+      "revision": 45
+    },
+    {
+      "ts": 140,
+      "event": "stale timer for P1",
+      "outcome": "no transition",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [],
+      "placements": [],
+      "revision": 45
+    },
+    {
+      "ts": 150,
+      "event": "C accepts P2",
+      "outcome": "accepted:P2",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [
+        "C"
+      ],
+      "placements": [],
+      "revision": 46
+    },
+    {
+      "ts": 151,
+      "event": "C duplicates P2",
+      "outcome": "replayed accepted:P2",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [
+        "C"
+      ],
+      "placements": [],
+      "revision": 46
+    },
+    {
+      "ts": 155,
+      "event": "new delayed submission still names P1",
+      "outcome": "stale proposal",
+      "active": "P2",
+      "phase": "confirming",
+      "accepted": [
+        "C"
+      ],
+      "placements": [],
+      "revision": 46
+    },
+    {
+      "ts": 160,
+      "event": "A accepts P2",
+      "outcome": "accepted:P2",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    },
+    {
+      "ts": 161,
+      "event": "A duplicates P2",
+      "outcome": "replayed accepted:P2",
+      "active": "P2",
+      "phase": "ready",
+      "accepted": [
+        "A",
+        "C"
+      ],
+      "placements": [
+        "allocate:P2"
+      ],
+      "revision": 47
+    }
+  ],
+  "display": {
+    "lastArrival": {
+      "ticket": "TA",
+      "rev": 42,
+      "phase": "expired:P1"
+    },
+    "highestRevision": {
+      "ticket": "TA",
+      "rev": 43,
+      "phase": "confirming:P2"
+    }
+  },
+  "exclusiveDeadline": [
+    [
+      199,
+      true
+    ],
+    [
+      200,
+      false
+    ],
+    [
+      201,
+      false
+    ]
+  ]
+}

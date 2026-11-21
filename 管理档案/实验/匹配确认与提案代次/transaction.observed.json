@@ -1,0 +1,43 @@
+{
+  "sqlite": "3.53.1",
+  "writer_conflict": "SQLITE_BUSY",
+  "steps": [
+    [
+      "old P1 did not count for P2; duplicate C counts once",
+      "confirming",
+      [
+        "C"
+      ],
+      [],
+      [
+        "c2"
+      ]
+    ],
+    [
+      "rollback removes final accept AND allocation intent",
+      "confirming",
+      [
+        "C"
+      ],
+      [],
+      [
+        "c2"
+      ]
+    ],
+    [
+      "one allocation intent after committed final decision",
+      "ready",
+      [
+        "A",
+        "C"
+      ],
+      [
+        "P2"
+      ],
+      [
+        "a2",
+        "c2"
+      ]
+    ]
+  ]
+}
