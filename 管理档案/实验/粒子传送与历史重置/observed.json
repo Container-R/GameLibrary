@@ -1,0 +1,82 @@
+{
+  "scope": "deterministic history-policy model, not a renderer or stock emitter",
+  "histories": {
+    "no_resets": {
+      "world_old": 1,
+      "local_old": 101,
+      "interpolated_emitter": 50,
+      "spawned": 200,
+      "first_spawn": 0.5,
+      "last_spawn": 100,
+      "trail_edges": [
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "rebase_distance": {
+      "world_old": 1,
+      "local_old": 101,
+      "interpolated_emitter": 50,
+      "spawned": 0,
+      "first_spawn": null,
+      "last_spawn": null,
+      "trail_edges": [
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "rebase_and_reset_pose": {
+      "world_old": 1,
+      "local_old": 101,
+      "interpolated_emitter": 100,
+      "spawned": 0,
+      "first_spawn": null,
+      "last_spawn": null,
+      "trail_edges": [
+        [
+          0,
+          100
+        ]
+      ]
+    },
+    "all_three": {
+      "world_old": 1,
+      "local_old": 101,
+      "interpolated_emitter": 100,
+      "spawned": 0,
+      "first_spawn": null,
+      "last_spawn": null,
+      "trail_edges": []
+    }
+  },
+  "phase": {
+    "continuing": [
+      {
+        "positions": [
+          100.25
+        ],
+        "carry": 0
+      },
+      {
+        "positions": [],
+        "carry": 0.25
+      }
+    ],
+    "fresh": [
+      {
+        "positions": [],
+        "carry": 0.25
+      },
+      {
+        "positions": [
+          100.5
+        ],
+        "carry": 0
+      }
+    ]
+  }
+}

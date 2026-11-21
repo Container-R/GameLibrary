@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320">
+<rect width="760" height="320" fill="#111827"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#f9fafb">
+<text x="30" y="37" font-size="22" font-weight="bold">Teleport 0 → 100: what to inspect</text>
+<text x="30" y="88" font-size="15">Old particles</text><text x="30" y="152" font-size="15">Pose interpolation</text><text x="30" y="216" font-size="15">Distance sampling</text><text x="30" y="280" font-size="15">Trail segments</text>
+<text x="195" y="64" font-size="12" fill="#9ca3af">entrance 0</text><text x="635" y="64" font-size="12" fill="#9ca3af">exit 100</text>
+<text x="196" y="110" font-size="12" fill="#5eead4">world particle: x=1</text><text x="585" y="110" font-size="12" fill="#fde68a">local particle: world x=101</text>
+<text x="410" y="140" font-size="12" fill="#fda4af">x=50</text><text x="619" y="140" font-size="12" fill="#9ca3af">after reset</text>
+<text x="359" y="202" font-size="12" fill="#fda4af">200 requests if treated as travel</text>
+<text x="375" y="266" font-size="12" fill="#fda4af">unwanted single edge</text><text x="368" y="302" font-size="12" fill="#5eead4">split: no edge between ends</text>
+</g>
+<g stroke="#374151" stroke-width="1"><path d="M225 91 H658 M225 154 H658 M225 218 H658 M225 277 H658"/><path d="M225 68 V302 M658 68 V302" stroke-dasharray="3 6"/></g>
+<circle cx="229" cy="91" r="6" fill="#5eead4"/><circle cx="662" cy="91" r="6" fill="#fde68a"/>
+<circle cx="441.5" cy="154" r="5" fill="#fda4af"/><circle cx="658" cy="154" r="5" fill="#5eead4"/>
+<path d="M225 218 H658" stroke="#fda4af" stroke-width="3" stroke-dasharray="1 5" stroke-linecap="round"/>
+<path d="M225 277 H658" stroke="#fda4af" stroke-width="3"/>
+<circle cx="225" cy="294" r="4" fill="#5eead4"/><circle cx="658" cy="294" r="4" fill="#5eead4"/>
+</svg>
