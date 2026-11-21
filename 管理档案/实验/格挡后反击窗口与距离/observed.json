@@ -1,0 +1,55 @@
+{
+  "window8": {
+    "close_fast": {
+      "tick": 3,
+      "outcome": "punish"
+    },
+    "tip_fast": {
+      "tick": null,
+      "outcome": "whiff"
+    },
+    "tip_long": {
+      "tick": 7,
+      "outcome": "punish"
+    },
+    "tip_long_one_tick_late": {
+      "tick": 8,
+      "outcome": "blocked"
+    },
+    "tip_first_active_misses_later_touch": {
+      "tick": 8,
+      "outcome": "blocked"
+    },
+    "alternate_branch_guards_earlier": {
+      "tick": 7,
+      "outcome": "blocked"
+    }
+  },
+  "oneTickHurtbox": [
+    {
+      "delay": 0,
+      "tick": null,
+      "outcome": "whiff"
+    },
+    {
+      "delay": 1,
+      "tick": null,
+      "outcome": "whiff"
+    },
+    {
+      "delay": 2,
+      "tick": 5,
+      "outcome": "punish"
+    },
+    {
+      "delay": 3,
+      "tick": null,
+      "outcome": "whiff"
+    },
+    {
+      "delay": 4,
+      "tick": null,
+      "outcome": "whiff"
+    }
+  ]
+}
