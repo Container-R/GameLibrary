@@ -1,0 +1,72 @@
+{
+  "sqlite": "3.53.1",
+  "attempts": [
+    [
+      "A",
+      "a1",
+      "completed"
+    ],
+    [
+      "B",
+      "b1",
+      "completed"
+    ],
+    [
+      "C",
+      "c1",
+      "completed"
+    ],
+    [
+      "D",
+      "d1",
+      "closed"
+    ],
+    [
+      "D",
+      "d2",
+      "open"
+    ],
+    [
+      "E",
+      "e1",
+      "open"
+    ],
+    [
+      "F",
+      "f1",
+      "skipped"
+    ],
+    [
+      "G",
+      "g1",
+      "unknown"
+    ],
+    [
+      "H",
+      "h1",
+      "unknown"
+    ],
+    [
+      "I",
+      "i1",
+      "unknown"
+    ]
+  ],
+  "ordered_by_account": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "ordered_in_session": [
+    "A",
+    "B",
+    "D"
+  ],
+  "correct_players": [
+    "A",
+    "B",
+    "C"
+  ],
+  "i_after_late_skip": "skipped"
+}
