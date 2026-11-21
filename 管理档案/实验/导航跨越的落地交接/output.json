@@ -1,0 +1,61 @@
+{
+  "rows": [
+    {
+      "name": "air",
+      "distance": 0.12,
+      "owner": "exit",
+      "support": null,
+      "basic": false,
+      "onDeck": false,
+      "exitAttached": true,
+      "accept": false
+    },
+    {
+      "name": "lower shelf",
+      "distance": 0,
+      "owner": "lower",
+      "support": "shelf",
+      "basic": true,
+      "onDeck": false,
+      "exitAttached": false,
+      "accept": false
+    },
+    {
+      "name": "unbaked lip",
+      "distance": 0.35,
+      "owner": "exit",
+      "support": "deck",
+      "basic": true,
+      "onDeck": true,
+      "exitAttached": false,
+      "accept": false
+    },
+    {
+      "name": "separate plate",
+      "distance": 0.08,
+      "owner": "exit",
+      "support": "plate",
+      "basic": true,
+      "onDeck": false,
+      "exitAttached": true,
+      "accept": false
+    },
+    {
+      "name": "deck",
+      "distance": 0,
+      "owner": "exit",
+      "support": "deck",
+      "basic": true,
+      "onDeck": true,
+      "exitAttached": true,
+      "accept": true
+    }
+  ],
+  "control": [
+    "disabled: replan without completion",
+    "new target: cross then complete once and replan",
+    "airborne: remain in cross",
+    "wrong grounded landings: recover",
+    "duplicate and old callbacks: ignore"
+  ]
+}
