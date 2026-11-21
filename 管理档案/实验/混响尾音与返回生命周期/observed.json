@@ -1,0 +1,257 @@
+{
+  "sample_rate": 16000,
+  "seconds_per_case": 1.2,
+  "stop_sample": 1760,
+  "fade_samples": 1280,
+  "reopen_sample": 4320,
+  "second_knock_sample": 5600,
+  "scope": "synthetic FIR, post-return gain gates, state-clear equivalent with zero subsequent A send; not engine implementation or listening study",
+  "windows_half_open": {
+    "first_after_stop": [
+      1920,
+      3040
+    ],
+    "reopen_no_new_send": [
+      4320,
+      5440
+    ],
+    "second_after_its_dry": [
+      7520,
+      9920
+    ]
+  },
+  "cases": {
+    "01_keep_return": {
+      "wav_sha256": "ba538535206f5f7efe9685c5d278298299fda01466c1f763708765b0da6c4cb2",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.31767566,
+          "rms": 0.0929271
+        },
+        "reopen_no_new_send": {
+          "peak": 0.13332597,
+          "rms": 0.03309563
+        },
+        "second_after_its_dry": {
+          "peak": 0.00841546,
+          "rms": 0.00290667
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "02_hard_cut_return": {
+      "wav_sha256": "8d5f14ac9b2347a2cc26536c362dd10c9bc568f63083d76a89444ccae7cc7d40",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "03_fade_return_80ms": {
+      "wav_sha256": "d07b9fa0ea207bc098ff74461eedc076bbcbfc7c10b98abffbc5669525beb203",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.22212478,
+          "rms": 0.05200834
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "04_mute_then_reopen_state_kept": {
+      "wav_sha256": "f035460a8103dce74190f6c8f51ede6e73c00c91635f8e1941fc67f3796bc7ec",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.13332597,
+          "rms": 0.03309563
+        },
+        "second_after_its_dry": {
+          "peak": 0.00841546,
+          "rms": 0.00290667
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "05_clear_then_reopen": {
+      "wav_sha256": "8d5f14ac9b2347a2cc26536c362dd10c9bc568f63083d76a89444ccae7cc7d40",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "06_shared_return_keep": {
+      "wav_sha256": "bee6ccc8b1fa05d09c987ccc7140730ee377a2e23266c1b8f4ae5dfb60da831c",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.31767566,
+          "rms": 0.0929271
+        },
+        "reopen_no_new_send": {
+          "peak": 0.13332597,
+          "rms": 0.03309563
+        },
+        "second_after_its_dry": {
+          "peak": 0.21358572,
+          "rms": 0.04833781
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    },
+    "07_shared_return_cut": {
+      "wav_sha256": "2ec185c548ca2f4b107e3bf8702699d6c9d762cd79aacfb828426e69f99fdc0f",
+      "wet_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      },
+      "dry_window_stats": {
+        "first_after_stop": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "reopen_no_new_send": {
+          "peak": 0.0,
+          "rms": 0.0
+        },
+        "second_after_its_dry": {
+          "peak": 0.0,
+          "rms": 0.0
+        }
+      }
+    }
+  },
+  "second_source_wet_in_shared_window": {
+    "peak": 0.21601945,
+    "rms": 0.04846355
+  },
+  "audition_order": [
+    "01_keep_return",
+    "02_hard_cut_return",
+    "03_fade_return_80ms",
+    "04_mute_then_reopen_state_kept",
+    "05_clear_then_reopen",
+    "06_shared_return_keep",
+    "07_shared_return_cut"
+  ],
+  "audition_gap_samples": 4000,
+  "audition_sha256": "080d89e8fb61657ebd68978b5e03fe6d77f9759c2cb42cf703be000ba67274dc"
+}
