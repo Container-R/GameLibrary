@@ -1,0 +1,53 @@
+{
+  "reference": {
+    "ok": true,
+    "dialogueA": {
+      "start": 600,
+      "speechEnd": 2500,
+      "sectionEnd": 2650
+    },
+    "dialogueB": {
+      "start": 3400,
+      "speechEnd": 4880,
+      "sectionEnd": 4950
+    },
+    "reaction": 750,
+    "afterB": 550,
+    "neutralHold": 1000,
+    "hardCue": 6500
+  },
+  "stretch": {
+    "ok": true,
+    "dialogueA": {
+      "start": 600,
+      "speechEnd": 3450,
+      "sectionEnd": 3730
+    },
+    "dialogueB": {
+      "start": 4290,
+      "speechEnd": 5980,
+      "sectionEnd": 6100
+    },
+    "reaction": 560,
+    "afterB": 400,
+    "neutralHold": 0,
+    "hardCue": 6500
+  },
+  "impossible": {
+    "ok": false,
+    "overflow": 180,
+    "hardCue": 6500,
+    "minimumPlan": {
+      "aStart": 600,
+      "aEnd": 4030,
+      "bStart": 4480,
+      "bEnd": 6280,
+      "finish": 6680
+    }
+  },
+  "copyOldBStart": {
+    "bStart": 3400,
+    "aSectionEnd": 3730,
+    "overlap": 330
+  }
+}
