@@ -1,0 +1,115 @@
+{
+  "200_tone": {
+    "I_lufs_reported": -70.0,
+    "relative_threshold_lufs_reported": 0.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": null
+  },
+  "350_tone": {
+    "I_lufs_reported": -70.0,
+    "relative_threshold_lufs_reported": 0.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": null
+  },
+  "200_tone_200_tail": {
+    "I_lufs_reported": -26.0,
+    "relative_threshold_lufs_reported": -36.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -26.0,
+      -26.0
+    ]
+  },
+  "350_tone_50_tail": {
+    "I_lufs_reported": -23.6,
+    "relative_threshold_lufs_reported": -33.6,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -23.6,
+      -23.6
+    ]
+  },
+  "400_tone": {
+    "I_lufs_reported": -23.0,
+    "relative_threshold_lufs_reported": -33.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -23.0,
+      -23.0
+    ]
+  },
+  "1000_tone": {
+    "I_lufs_reported": -23.0,
+    "relative_threshold_lufs_reported": -33.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -23.0,
+      -23.0
+    ]
+  },
+  "1000_tone_1000_tail": {
+    "I_lufs_reported": -23.7,
+    "relative_threshold_lufs_reported": -34.1,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -23.0,
+      -23.0
+    ]
+  },
+  "1000_lead_1000_tone": {
+    "I_lufs_reported": -23.7,
+    "relative_threshold_lufs_reported": -33.7,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -163.5,
+      -70.0
+    ]
+  },
+  "200_lead_1000_tone_200_tail": {
+    "I_lufs_reported": -23.6,
+    "relative_threshold_lufs_reported": -33.6,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -26.0,
+      -26.0
+    ]
+  },
+  "1000_tone_quiet_role": {
+    "I_lufs_reported": -35.0,
+    "relative_threshold_lufs_reported": -45.0,
+    "sample_peak_dbfs": -32.0,
+    "true_peak_dbtp": -32.0,
+    "first_400ms": [
+      0.399979,
+      -35.0,
+      -35.0
+    ]
+  },
+  "1000_tone_same_role_plus_12dB": {
+    "I_lufs_reported": -23.1,
+    "relative_threshold_lufs_reported": -33.0,
+    "sample_peak_dbfs": -20.0,
+    "true_peak_dbtp": -20.0,
+    "first_400ms": [
+      0.399979,
+      -23.0,
+      -23.1
+    ]
+  }
+}

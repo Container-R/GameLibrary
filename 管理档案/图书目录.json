@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-SHORT-DIALOGUE-LOUDNESS",
+      "reader_title": "短对白测不出综合响度，别先把增益拉上去",
+      "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/混音/短对白测不出综合响度，别先把增益拉上去.md",
+      "reader_body_status": "published",
+      "reader_sha256": "92f5809347477a9b3b2f02af061bd0014f6af312330174b58829d24d14107dea",
+      "source_record": "管理档案/来源笔记/short-dialogue-loudness-20261123.md",
+      "review": "管理档案/审稿/GL-SHORT-DIALOGUE-LOUDNESS/20261123-review.md",
+      "materials_record": "管理档案/实验/短对白响度门控/README.md"
+    },
+    {
       "internal_id": "GL-GEOMETRIC-SPECULAR-AA",
       "reader_title": "关掉法线贴图后，怎样排查曲面高光闪烁",
       "canonical_reader_path": "GameLibrary/图形渲染/着色器开发/表面着色/关掉法线贴图后，怎样排查曲面高光闪烁.md",
