@@ -1,0 +1,27 @@
+{
+  "full": {
+    "fees": [
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "1"
+    ],
+    "gross": "100",
+    "buyer": "0",
+    "seller": "97",
+    "treasury": "3"
+  },
+  "partial": {
+    "fees": [
+      "0",
+      "1"
+    ],
+    "gross": "34",
+    "buyer": "66",
+    "seller": "33",
+    "treasury": "1"
+  },
+  "partitions": 4851
+}
