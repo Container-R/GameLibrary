@@ -1,0 +1,180 @@
+[
+  {
+    "revision": 1,
+    "A": {
+      "distance": 4,
+      "budget": 10,
+      "path": {
+        "cost": 8,
+        "path": [
+          "S",
+          "Left opening",
+          "A"
+        ],
+        "length": 8,
+        "loss": 0
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "left doorway"
+      }
+    },
+    "B": {
+      "distance": 4,
+      "budget": 10,
+      "path": {
+        "cost": 20,
+        "path": [
+          "S",
+          "Hall mouth",
+          "B hall exit",
+          "B"
+        ],
+        "length": 18,
+        "loss": 2
+      },
+      "heard": false,
+      "observation": null
+    }
+  },
+  {
+    "revision": 2,
+    "A": {
+      "distance": 4,
+      "budget": 10,
+      "path": {
+        "cost": 8,
+        "path": [
+          "S",
+          "Left opening",
+          "A"
+        ],
+        "length": 8,
+        "loss": 0
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "left doorway"
+      }
+    },
+    "B": {
+      "distance": 4,
+      "budget": 10,
+      "path": {
+        "cost": 4,
+        "path": [
+          "S",
+          "B door",
+          "B"
+        ],
+        "length": 4,
+        "loss": 0
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "workshop doorway"
+      }
+    }
+  },
+  {
+    "revision": 3,
+    "A": {
+      "distance": 4,
+      "budget": 20,
+      "path": {
+        "cost": 8,
+        "path": [
+          "S",
+          "Left opening",
+          "A"
+        ],
+        "length": 8,
+        "loss": 0
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "left doorway"
+      }
+    },
+    "B": {
+      "distance": 4,
+      "budget": 20,
+      "path": {
+        "cost": 20,
+        "path": [
+          "S",
+          "Hall mouth",
+          "B hall exit",
+          "B"
+        ],
+        "length": 18,
+        "loss": 2
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "hall arrival area"
+      }
+    }
+  },
+  {
+    "revision": 4,
+    "A": {
+      "distance": 4,
+      "budget": 16,
+      "path": {
+        "cost": 8,
+        "path": [
+          "S",
+          "Left opening",
+          "A"
+        ],
+        "length": 8,
+        "loss": 0
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "left doorway"
+      }
+    },
+    "B": {
+      "distance": 4,
+      "budget": 16,
+      "path": {
+        "cost": 15,
+        "path": [
+          "S",
+          "Vent mouth",
+          "B grate",
+          "B"
+        ],
+        "length": 7,
+        "loss": 8
+      },
+      "heard": true,
+      "observation": {
+        "eventId": "rattle/17",
+        "tick": 100,
+        "tag": "prop_impact",
+        "estimatedRegion": "vent-side alcove"
+      }
+    }
+  }
+]

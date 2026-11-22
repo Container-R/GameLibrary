@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-NPC-HEARING-TOPOLOGY",
+      "reader_title": "同样近的两个 NPC，为什么只有一个听见",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/行为决策/感知与搜索/同样近的两个 NPC，为什么只有一个听见.md",
+      "reader_body_status": "published",
+      "reader_sha256": "4a51ee86f0044e8e8b3ee6748c9c1891eab5f325cb5bdd878877c25b95f3ec1a",
+      "source_record": "管理档案/来源笔记/npc-hearing-topology-20261122.md",
+      "review": "管理档案/审稿/GL-NPC-HEARING-TOPOLOGY/20261122-review.md",
+      "materials_record": "管理档案/实验/虚构关卡的NPC听觉/README.md"
+    },
+    {
       "internal_id": "GL-REIMPORT-SUBOBJECT-IDENTITY",
       "reader_title": "资产重导入后，怎样防止引用悄悄接错子对象",
       "canonical_reader_path": "GameLibrary/引擎与工具/资产工具/资产标识与引用/资产重导入后，怎样防止引用悄悄接错子对象.md",
