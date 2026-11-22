@@ -1,0 +1,54 @@
+{
+  "byRegion": {
+    "lower": {
+      "failed": 10,
+      "exposure": 200,
+      "risk": 0.05
+    },
+    "upper": {
+      "failed": 4,
+      "exposure": 10,
+      "risk": 0.4
+    },
+    "connector": {
+      "failed": 1,
+      "exposure": 1,
+      "risk": 1
+    },
+    "unknown": {
+      "failed": 0,
+      "exposure": 1,
+      "risk": 0
+    },
+    "unused": {
+      "failed": 0,
+      "exposure": 0,
+      "risk": null
+    }
+  },
+  "collapsedWithoutConnectorsOrUnknown": {
+    "failed": 14,
+    "exposure": 210,
+    "risk": 0.06666666666666667
+  },
+  "openByRegion": {
+    "lower": 0,
+    "upper": 1,
+    "connector": 0,
+    "unknown": 0,
+    "unused": 0
+  },
+  "otherEndingByRegion": {
+    "lower": 0,
+    "upper": 1,
+    "connector": 0,
+    "unknown": 0,
+    "unused": 0
+  },
+  "exclusions": {
+    "oldOrOutOfScope": 1,
+    "ineligible": 1,
+    "open": 1,
+    "retry": 1
+  }
+}
