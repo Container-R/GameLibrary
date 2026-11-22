@@ -1,0 +1,174 @@
+{
+  "matrix": [
+    [
+      105,
+      []
+    ],
+    [
+      106,
+      [
+        {
+          "id": "A",
+          "area": [
+            0,
+            4
+          ],
+          "phase": "warning",
+          "impact": 110,
+          "left": 4,
+          "startBurst": false
+        },
+        {
+          "id": "B",
+          "area": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "impact": 116,
+          "left": 10,
+          "startBurst": false
+        }
+      ]
+    ],
+    [
+      109,
+      [
+        {
+          "id": "A",
+          "area": [
+            0,
+            4
+          ],
+          "phase": "warning",
+          "impact": 110,
+          "left": 1,
+          "startBurst": false
+        },
+        {
+          "id": "B",
+          "area": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "impact": 116,
+          "left": 7,
+          "startBurst": false
+        }
+      ]
+    ],
+    [
+      110,
+      [
+        {
+          "id": "A",
+          "area": [
+            0,
+            4
+          ],
+          "phase": "active",
+          "impact": 110,
+          "left": 0,
+          "startBurst": false
+        },
+        {
+          "id": "B",
+          "area": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "impact": 116,
+          "left": 6,
+          "startBurst": false
+        }
+      ]
+    ],
+    [
+      114,
+      [
+        {
+          "id": "B",
+          "area": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "impact": 116,
+          "left": 2,
+          "startBurst": false
+        }
+      ]
+    ],
+    [
+      116,
+      [
+        {
+          "id": "B",
+          "area": [
+            3,
+            7
+          ],
+          "phase": "active",
+          "impact": 116,
+          "left": 0,
+          "startBurst": false
+        }
+      ]
+    ],
+    [
+      120,
+      []
+    ]
+  ],
+  "byOrigin": [
+    "B"
+  ],
+  "decorationFirst": [
+    "dust-0",
+    "dust-1",
+    "dust-2",
+    "dust-3"
+  ],
+  "criticalFirst": [
+    "A",
+    "B",
+    "dust-0",
+    "dust-1"
+  ],
+  "grid": [
+    [
+      110
+    ],
+    [
+      110
+    ],
+    [
+      110
+    ],
+    [
+      110,
+      116
+    ],
+    [
+      116
+    ],
+    [
+      116
+    ],
+    [
+      116
+    ]
+  ],
+  "wrongEarly": [
+    4,
+    5,
+    6
+  ],
+  "wrongLate": [
+    0,
+    1,
+    2
+  ]
+}

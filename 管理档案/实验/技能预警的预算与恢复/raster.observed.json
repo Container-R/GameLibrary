@@ -1,0 +1,394 @@
+{
+  "frames": {
+    "tick105_outside": {
+      "view": [
+        8,
+        16
+      ],
+      "hazards": {},
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick106_return": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "A": {
+          "x": [
+            0,
+            4
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 4
+        },
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 10
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 384,
+            "B": 384,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 96,
+            "B": 96,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick110_A_active": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "A": {
+          "x": [
+            0,
+            4
+          ],
+          "phase": "active",
+          "ticks_to_impact": null
+        },
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 6
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 1440,
+            "B": 384,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 360,
+            "B": 96,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick114_A_expired": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 2
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 384,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 96,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick116_B_active": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "active",
+          "ticks_to_impact": null
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 1440,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 360,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick120_both_expired": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {},
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick106_wrong_origin_cull": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 10
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 384,
+            "C": 0
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 0,
+            "B": 96,
+            "C": 0
+          }
+        }
+      }
+    },
+    "tick106_wrong_disclose_C": {
+      "view": [
+        0,
+        8
+      ],
+      "hazards": {
+        "A": {
+          "x": [
+            0,
+            4
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 4
+        },
+        "B": {
+          "x": [
+            3,
+            7
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 10
+        },
+        "C": {
+          "x": [
+            2,
+            5
+          ],
+          "phase": "warning",
+          "ticks_to_impact": 6
+        }
+      },
+      "internal_readback": {
+        "1": {
+          "size": [
+            144,
+            80
+          ],
+          "glyph_pixels": {
+            "A": 336,
+            "B": 336,
+            "C": 288
+          }
+        },
+        "0.5": {
+          "size": [
+            72,
+            40
+          ],
+          "glyph_pixels": {
+            "A": 84,
+            "B": 84,
+            "C": 72
+          }
+        }
+      }
+    }
+  },
+  "outline": {
+    "thin_centered": {
+      "1": {
+        "internal_columns": [
+          71,
+          72
+        ],
+        "pixels": 104
+      },
+      "0.5": {
+        "internal_columns": [],
+        "pixels": 0
+      }
+    },
+    "thin_shifted": {
+      "1": {
+        "internal_columns": [
+          72
+        ],
+        "pixels": 52
+      },
+      "0.5": {
+        "internal_columns": [
+          36
+        ],
+        "pixels": 26
+      }
+    },
+    "wider_centered": {
+      "1": {
+        "internal_columns": [
+          71,
+          72
+        ],
+        "pixels": 104
+      },
+      "0.5": {
+        "internal_columns": [
+          35,
+          36
+        ],
+        "pixels": 52
+      }
+    }
+  },
+  "backend": {
+    "vendor": "Mesa",
+    "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+    "version": "4.5 (Compatibility Profile) Mesa 25.0.7-2+deb13u1",
+    "samples": 0
+  },
+  "figures": {
+    "timeline.png": "bcb4e62d0fcb3cdef69a0ce21a8a2c9e46276fa64b3b442693dad177b421e6fe",
+    "controls.png": "1b3c0b58c6a9924a17e812eced2f73f6918afb11e45a5dc59766349ea46d8fb2",
+    "outline.png": "d2e397c35f08860eb38b9d1e77e6b2bce71bcf866c83cee10f0ac07829b78c23"
+  }
+}
