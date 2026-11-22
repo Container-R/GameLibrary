@@ -1,0 +1,54 @@
+{
+  "blender": "4.3.2",
+  "before": [
+    {
+      "index": 0,
+      "name": "Metal",
+      "source_id": "80a06da0-efde-4550-a0af-000000000001"
+    },
+    {
+      "index": 1,
+      "name": "Glass",
+      "source_id": "80a06da0-efde-4550-a0af-000000000002"
+    },
+    {
+      "index": 2,
+      "name": "Latch",
+      "source_id": "80a06da0-efde-4550-a0af-000000000003"
+    }
+  ],
+  "after": [
+    {
+      "index": 0,
+      "name": "Glass",
+      "source_id": "80a06da0-efde-4550-a0af-000000000002"
+    },
+    {
+      "index": 1,
+      "name": "Latch",
+      "source_id": "80a06da0-efde-4550-a0af-000000000004"
+    },
+    {
+      "index": 2,
+      "name": "Exterior Metal",
+      "source_id": "80a06da0-efde-4550-a0af-000000000001"
+    }
+  ],
+  "without_extras": [
+    {
+      "index": 0,
+      "name": "Glass",
+      "source_id": null
+    },
+    {
+      "index": 1,
+      "name": "Latch",
+      "source_id": null
+    },
+    {
+      "index": 2,
+      "name": "Exterior Metal",
+      "source_id": null
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "index": [
+    {
+      "expected": "outer rail",
+      "observed": "window pane",
+      "result": "wrong"
+    },
+    {
+      "expected": "window pane",
+      "observed": "window clip",
+      "result": "wrong"
+    },
+    {
+      "expected": "side door",
+      "observed": "outer rail",
+      "result": "wrong"
+    }
+  ],
+  "label": [
+    {
+      "expected": "outer rail",
+      "observed": null,
+      "result": "missing"
+    },
+    {
+      "expected": "window pane",
+      "observed": "window pane",
+      "result": "same"
+    },
+    {
+      "expected": "side door",
+      "observed": "window clip",
+      "result": "wrong"
+    }
+  ],
+  "stable": [
+    {
+      "expected": "outer rail",
+      "observed": "outer rail",
+      "result": "same"
+    },
+    {
+      "expected": "window pane",
+      "observed": "window pane",
+      "result": "same"
+    },
+    {
+      "expected": "side door",
+      "observed": null,
+      "result": "missing"
+    }
+  ],
+  "content": [
+    {
+      "expected": "outer rail",
+      "observed": null,
+      "result": "missing"
+    },
+    {
+      "expected": "window pane",
+      "observed": "window pane",
+      "result": "same"
+    },
+    {
+      "expected": "side door",
+      "observed": null,
+      "result": "missing"
+    }
+  ]
+}
