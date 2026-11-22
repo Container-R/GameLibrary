@@ -1,0 +1,51 @@
+{
+  "beforeAndSpent": {
+    "have": false,
+    "found": true,
+    "after": false
+  },
+  "sameTickBefore": {
+    "have": true,
+    "found": true,
+    "after": false
+  },
+  "sameTickAfter": {
+    "have": true,
+    "found": true,
+    "after": true
+  },
+  "nonTarget": {
+    "have": false,
+    "found": false,
+    "after": false
+  },
+  "oldSaveUnknown": {
+    "have": false,
+    "found": null,
+    "after": false
+  },
+  "adoptExistingWithoutScene": [
+    {
+      "have": true,
+      "found": true,
+      "after": false
+    },
+    0
+  ],
+  "wrongPresent": [
+    true,
+    false,
+    0
+  ],
+  "afterReload": [
+    "covered",
+    "covered",
+    {
+      "have": false,
+      "found": true,
+      "after": false
+    },
+    true,
+    1
+  ]
+}
