@@ -1,0 +1,67 @@
+{
+  "chartBeat": 2000,
+  "calibration": 10,
+  "played": {
+    "when": 3000,
+    "song": 2000,
+    "rate": 1,
+    "epoch": 7,
+    "begin": 2950
+  },
+  "render": {
+    "when": 3000,
+    "song": 2060,
+    "rate": 1,
+    "epoch": 7
+  },
+  "output": [
+    {
+      "event": 3010,
+      "frame": 3030,
+      "renderClock": 60,
+      "deliveredFrame": 20,
+      "scoring": 0,
+      "verdict": "hit"
+    },
+    {
+      "event": 3055,
+      "frame": 3060,
+      "renderClock": 105,
+      "deliveredFrame": 50,
+      "scoring": 45,
+      "verdict": "late"
+    },
+    {
+      "event": 2982,
+      "frame": 3060,
+      "renderClock": 32,
+      "deliveredFrame": 50,
+      "scoring": -28,
+      "verdict": "hit"
+    }
+  ],
+  "stageComparison": {
+    "exactBoundaries": [
+      "early",
+      "hit",
+      "hit",
+      "late"
+    ],
+    "wrongSignedOffset": 20,
+    "staleAfterSeek": null
+  },
+  "switched": {
+    "oldMapping": 80,
+    "missingAnchor": null,
+    "newMapping": 0,
+    "correctedBeforeValidSegment": null
+  },
+  "batchInWindow": [
+    2982
+  ],
+  "finalization": {
+    "latestCorrected": 3030,
+    "latestReport": 3040,
+    "earliestFinalAfterDrain": 3065
+  }
+}
