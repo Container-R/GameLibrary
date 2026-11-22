@@ -1,0 +1,11 @@
+{"id":"overlap","variant":"PRIVATE","errors":[]}
+{"id":"rows reversed","variant":"PRIVATE","errors":[]}
+{"id":"selectors swapped","variant":"ONE","errors":[]}
+{"id":"first key alone not enough","variant":"ONE","errors":[]}
+{"id":"same text, missing slots","variant":"PRIVATE","errors":[["unresolved-variable","Variable not available: $slots"]]}
+{"id":"valid catchall","variant":"DEFAULT","errors":[]}
+{"id":"catchall, missing slots","variant":"DEFAULT","errors":[["unresolved-variable","Variable not available: $slots"]]}
+{"id":"formatting-only selector","variant":"PRIVATE","errors":[["bad-selector","Selector does not support selection"]]}
+{"id":"formatting-only selector not registered","variant":"PRIVATE","errors":[["unknown-function","Unknown function :datetime"],["bad-selector","Selector does not support selection"]]}
+{"id":"raw active branch adds missing room","text":"仅邀请加入：⁨{$room}⁩","errors":["unresolved-variable"]}
+{"id":"constructor without catchall","type":"missing-fallback"}
