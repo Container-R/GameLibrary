@@ -1,0 +1,18 @@
+{
+  "expiryFirst": [
+    {
+      "event": "expiry",
+      "remaining": 0
+    }
+  ],
+  "pulseFirst": [
+    {
+      "event": "pulse",
+      "contributingLayers": 2
+    },
+    {
+      "event": "expiry",
+      "remaining": 0
+    }
+  ]
+}
