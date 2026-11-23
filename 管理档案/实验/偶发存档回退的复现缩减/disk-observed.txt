@@ -1,0 +1,14 @@
+baseline sha256=0387d343d65dc7d886be4e0bb509255f205308fd08004588600ee8d93696ac05
+reduced: enter request1 request2 commit2 commit1 verify
+full: FAIL:stale-autosave
+reduced: FAIL:stale-autosave
+swapped: PASS
+orphan_commit: UNRESOLVED
+missing_observation: UNRESOLVED
+guarded: PASS
+drop enter: UNRESOLVED
+drop request1: UNRESOLVED
+drop request2: UNRESOLVED
+drop commit2: UNRESOLVED
+drop commit1: UNRESOLVED
+drop verify: UNRESOLVED
