@@ -1,0 +1,7 @@
+config_version=5
+[application]
+config/name="Bidirectional Bottleneck Reproduction"
+[physics]
+common/physics_ticks_per_second=60
+[rendering]
+renderer/rendering_method="gl_compatibility"

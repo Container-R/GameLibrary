@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-NPC-BOTTLENECK-ADMISSION",
+      "reader_title": "两队 NPC 卡在单人宽门口，什么时候该排队",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/局部避让与通行/单列窄门的双向排队与放行.md",
+      "reader_body_status": "published",
+      "reader_sha256": "28344670b0b8582e6374e88336645501dfa18412b820e6b7e298912111faf959",
+      "source_record": "管理档案/来源笔记/npc-doorway-queue-20261123.md",
+      "review": "管理档案/审稿/GL-NPC-BOTTLENECK-ADMISSION/20261123-review.md",
+      "materials_record": "管理档案/实验/NPC双向窄门排队/README.md"
+    },
+    {
       "internal_id": "GL-TUTORIAL-AB-DENOMINATOR",
       "reader_title": "新手引导的完成率，为什么会被「只看进入者」看反",
       "canonical_reader_path": "GameLibrary/数据分析/实验分析/实验数据质量/新手引导实验中的完成率分母.md",
