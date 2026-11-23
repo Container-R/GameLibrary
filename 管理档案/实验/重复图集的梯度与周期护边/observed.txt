@@ -1,0 +1,9 @@
+llvmpipe (LLVM 19.1.7, 256 bits)
+4.5 (Compatibility Profile) Mesa 25.0.7-2+deb13u1
+Atlas implicit after fract: LOD by x=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Atlas explicit continuous gradient: LOD by x=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Standalone GL_REPEAT: LOD by x=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Atlas foreign neighbor: x=0 left edge (32, 0, 128), x=8 first center (64, 0, 0), x=24 last center (192, 0, 0), x=31 right approach (108, 0, 112)
+Atlas duplicate own edge: x=0 left edge (64, 0, 0), x=8 first center (64, 0, 0), x=24 last center (192, 0, 0), x=31 right approach (192, 0, 0)
+Atlas copy opposite edge: x=0 left edge (128, 0, 0), x=8 first center (64, 0, 0), x=24 last center (192, 0, 0), x=31 right approach (136, 0, 0)
+Standalone GL_REPEAT: x=0 left edge (128, 0, 0), x=8 first center (64, 0, 0), x=24 last center (192, 0, 0), x=31 right approach (136, 0, 0)

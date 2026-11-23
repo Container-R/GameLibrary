@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ATLAS-REPEAT-WRAP",
+      "reader_title": "重复贴图在图集接缝处发糊，先分清梯度与周期边缘",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/重复图集的采样梯度与周期护边.md",
+      "reader_body_status": "published",
+      "reader_sha256": "81f8ebdfebfbd2c03d2686de85b11f7a7f3c36f0817c3284a641ed10d731f5cf",
+      "source_record": "管理档案/来源笔记/atlas-repeat-wrap-20261124.md",
+      "review": "管理档案/审稿/GL-ATLAS-REPEAT-WRAP/20261124-review.md",
+      "materials_record": "管理档案/实验/重复图集的梯度与周期护边/README.md"
+    },
+    {
       "internal_id": "GL-PARTICLE-PATH-SPACING",
       "reader_title": "低帧率转弯时，按距离发射的粒子为什么会抄近路",
       "canonical_reader_path": "GameLibrary/视觉特效/特效制作/粒子模拟与发射/粒子距离发射的路径采样.md",
@@ -601,7 +611,7 @@
       "reader_title": "图集缩小时为什么串色：区分 Mip 生成与边界采样",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/图集缩小时为什么串色：区分 Mip 生成与边界采样.md",
       "reader_body_status": "published",
-      "reader_sha256": "a32e667728b502d857d33545df022f3356f6da33d5cb8c9a190219328b205eef",
+      "reader_sha256": "555ff975abda6aa09527d95de630d73662d20661854fbc3fce5b348a3fd47506",
       "source_record": "管理档案/来源笔记/atlas-mip-bleed-20261119.md",
       "review": "管理档案/审稿/GL-ATLAS-MIP-BLEED/20261119-review.md",
       "materials_record": "管理档案/实验/图集Mip串色/README.md"
@@ -1206,7 +1216,7 @@
       "reader_title": "计算BC压缩纹理和Mip链的数据量",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/计算BC压缩纹理和Mip链的数据量.md",
       "reader_body_status": "published",
-      "reader_sha256": "668dd313c3f757645334a2e5a3bb6e8a48442d28ac7b67a159b160c58a518f15"
+      "reader_sha256": "6a964e72616d1420da6b26361477856e36f41e6762fcbb1365c4dab3133629e6"
     },
     {
       "internal_id": "SOL-GFX-002",
