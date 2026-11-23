@@ -1,0 +1,9 @@
+case | sprite hit | warm size | clean size | audio hit
+unchanged | True | 256 | 256 | True
+edit omitted rule | True | 256 | 512 | True
+edit effective rule | False | 512 | 512 | True
+new override base-only | True | 256 | 1024 | True
+new override effective | False | 1024 | 1024 | True
+switch platform | False | 256 | 256 | False
+unrelated metadata | True | 256 | 256 | True
+Same 256 key: result with live reread=512; result with pinned input=256

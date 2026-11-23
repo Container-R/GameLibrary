@@ -1,0 +1,14 @@
+GNU Make 4.4.1, Pillow 13.0.0
+broken cold               256x192 sprite=ran audio=ran
+broken warm               256x192 sprite=skipped audio=skipped
+broken add override       256x192 sprite=skipped audio=skipped
+broken warm+override      256x192 sprite=skipped audio=skipped
+broken remove override    256x192 sprite=skipped audio=skipped
+broken warm again         256x192 sprite=skipped audio=skipped
+broken cold+override      1024x768 sprite=ran audio=ran
+fixed  cold               256x192 sprite=ran audio=ran
+fixed  warm               256x192 sprite=skipped audio=skipped
+fixed  add override       1024x768 sprite=ran audio=skipped
+fixed  warm+override      1024x768 sprite=skipped audio=skipped
+fixed  remove override    256x192 sprite=ran audio=skipped
+fixed  warm again         256x192 sprite=skipped audio=skipped

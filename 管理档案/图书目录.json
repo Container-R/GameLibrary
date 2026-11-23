@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-INCREMENTAL-IMPORT-RULES",
+      "reader_title": "素材没变，导入规则改了，为什么还拿到旧资产",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/资产导入/增量导入中的有效规则与缓存失效.md",
+      "reader_body_status": "published",
+      "reader_sha256": "26e2901a8cdd1b89010584c965895fe2e49b3c99f13a300d5ef7482bacc5485e",
+      "source_record": "管理档案/来源笔记/import-cache-declared-inputs-20261123.md",
+      "review": "管理档案/审稿/GL-INCREMENTAL-IMPORT-RULES/20261123-review.md",
+      "materials_record": "管理档案/实验/增量导入规则依赖/README.md"
+    },
+    {
       "internal_id": "GL-MAP-LABEL-STABILITY",
       "reader_title": "游戏地图缩放时，怎样保住关键任务标注",
       "canonical_reader_path": "GameLibrary/界面与体验/界面编程/画布与布局/游戏地图缩放中的任务标注优先级与锚点.md",
