@@ -1,0 +1,8 @@
+Pillow 13.0.0
+straight, same count at endpoint: 8 x (4.000,0.000)
+straight, along path: (0.500,0.000) (1.000,0.000) (1.500,0.000) (2.000,0.000) (2.500,0.000) (3.000,0.000) (3.500,0.000) (4.000,0.000)
+straight, split path: (0.500,0.000) (1.000,0.000) (1.500,0.000) (2.000,0.000) (2.500,0.000) (3.000,0.000) (3.500,0.000) (4.000,0.000)
+corner, retained waypoint: (0.500,0.000) (1.000,0.000) (1.500,0.000) (2.000,0.000) (2.000,0.500) (2.000,1.000) (2.000,1.500) (2.000,2.000)
+corner, endpoint chord only: (0.354,0.354) (0.707,0.707) (1.061,1.061) (1.414,1.414) (1.768,1.768); residual=0.328427
+budget first frame: attempted=4 actual=2 dropped=2 phase=0.250
+budget next frame: attempted=1 actual=1 positions=(2.500,0.000)
