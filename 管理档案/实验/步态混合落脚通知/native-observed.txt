@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+trial,clip,key_ms,advance_to_ms,blend_run
+only_walk,walk,480,490,0.00
+only_run,run,520,530,1.00
+steady_half,walk,480,490,0.50
+steady_half,run,520,530,0.50
+handoff_aligned,walk,500,510,0.55
+handoff_aligned,run,500,900,1.00
+handoff_walk_early,walk,480,490,0.45
+handoff_walk_early,run,520,920,1.00
+handoff_walk_late,walk,520,530,0.65
+handoff_walk_late,run,480,880,1.00
+synced_handoff_aligned,walk,500,510,0.55
+synced_handoff_aligned,run,500,510,0.55
+synced_handoff_walk_early,walk,480,490,0.45
+synced_handoff_walk_early,run,520,530,0.65
+synced_handoff_walk_late,run,480,490,0.45
+synced_handoff_walk_late,walk,520,530,0.65
