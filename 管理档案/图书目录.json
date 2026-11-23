@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-MAP-LABEL-STABILITY",
+      "reader_title": "游戏地图缩放时，怎样保住关键任务标注",
+      "canonical_reader_path": "GameLibrary/界面与体验/界面编程/画布与布局/游戏地图缩放中的任务标注优先级与锚点.md",
+      "reader_body_status": "published",
+      "reader_sha256": "c39a7a97a1a2468186eeba48a77fae44395381a11ab06dd9b6b1160dde0a3f88",
+      "source_record": "管理档案/来源笔记/map-label-stability-20261123.md",
+      "review": "管理档案/审稿/GL-MAP-LABEL-STABILITY/20261123-review.md",
+      "materials_record": "管理档案/实验/游戏地图标注布局/README.md"
+    },
+    {
       "internal_id": "GL-GAIT-CUE-HANDOFF",
       "reader_title": "从走路切到跑步，为什么同一次落脚触发两次脚步声",
       "canonical_reader_path": "GameLibrary/角色动画/角色移动/步态同步/步态混合中的落脚通知去重与补漏.md",

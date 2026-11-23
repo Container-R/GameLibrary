@@ -1,0 +1,954 @@
+{
+  "software": {
+    "pillow": "13.0.0",
+    "freetype": "2.14.3",
+    "raqm": "0.11.0",
+    "font_name": [
+      "Noto Sans CJK SC",
+      "Regular"
+    ],
+    "face_index": 2,
+    "px": 18
+  },
+  "labels": {
+    "camp": {
+      "text": "砂脊营地",
+      "bbox": [
+        0,
+        5,
+        72,
+        24
+      ],
+      "advance_px": 72.0,
+      "box_width_px": 84
+    },
+    "goal": {
+      "text": "当前任务：北门",
+      "bbox": [
+        0,
+        5,
+        126,
+        24
+      ],
+      "advance_px": 126.0,
+      "box_width_px": 138
+    },
+    "tower": {
+      "text": "West Watchtower",
+      "bbox": [
+        0,
+        6,
+        146,
+        21
+      ],
+      "advance_px": 145.234375,
+      "box_width_px": 158
+    },
+    "harbor": {
+      "text": "Porte des Étoiles",
+      "bbox": [
+        0,
+        2,
+        139,
+        21
+      ],
+      "advance_px": 138.890625,
+      "box_width_px": 151
+    },
+    "garden": {
+      "text": "旧花园",
+      "bbox": [
+        0,
+        5,
+        54,
+        23
+      ],
+      "advance_px": 54.0,
+      "box_width_px": 66
+    }
+  },
+  "placements": {
+    "A_prior_visibility_first": {
+      "A0": {
+        "placed": {
+          "camp": [
+            "R",
+            [
+              147,
+              34,
+              231,
+              62
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              64,
+              78,
+              222,
+              106
+            ]
+          ]
+        },
+        "points": {
+          "camp": [
+            139,
+            48
+          ],
+          "tower": [
+            230,
+            92
+          ]
+        },
+        "trace": {
+          "camp": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "A1": {
+        "placed": {
+          "camp": [
+            "R",
+            [
+              140,
+              33,
+              224,
+              61
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              60,
+              79,
+              218,
+              107
+            ]
+          ]
+        },
+        "points": {
+          "camp": [
+            132,
+            47
+          ],
+          "tower": [
+            226,
+            93
+          ],
+          "goal": [
+            165,
+            47
+          ]
+        },
+        "trace": {
+          "camp": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "goal": {
+            "status": "hidden",
+            "rejected": {
+              "R": [
+                "camp"
+              ],
+              "L": [
+                "camp"
+              ]
+            }
+          }
+        }
+      },
+      "A2": {
+        "placed": {
+          "camp": [
+            "R",
+            [
+              127,
+              32,
+              211,
+              60
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              56,
+              82,
+              214,
+              110
+            ]
+          ]
+        },
+        "points": {
+          "camp": [
+            119,
+            46
+          ],
+          "tower": [
+            222,
+            96
+          ],
+          "goal": [
+            155,
+            46
+          ]
+        },
+        "trace": {
+          "camp": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "goal": {
+            "status": "hidden",
+            "rejected": {
+              "R": [
+                "camp"
+              ],
+              "L": [
+                "camp"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "A_rank_then_previous": {
+      "A0": {
+        "placed": {
+          "camp": [
+            "R",
+            [
+              147,
+              34,
+              231,
+              62
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              64,
+              78,
+              222,
+              106
+            ]
+          ]
+        },
+        "points": {
+          "camp": [
+            139,
+            48
+          ],
+          "tower": [
+            230,
+            92
+          ]
+        },
+        "trace": {
+          "camp": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "A1": {
+        "placed": {
+          "goal": [
+            "R",
+            [
+              173,
+              33,
+              311,
+              61
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              60,
+              79,
+              218,
+              107
+            ]
+          ]
+        },
+        "points": {
+          "goal": [
+            165,
+            47
+          ],
+          "camp": [
+            132,
+            47
+          ],
+          "tower": [
+            226,
+            93
+          ]
+        },
+        "trace": {
+          "goal": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "camp": {
+            "status": "hidden",
+            "rejected": {
+              "R": [
+                "goal"
+              ]
+            }
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "A2": {
+        "placed": {
+          "goal": [
+            "R",
+            [
+              163,
+              32,
+              301,
+              60
+            ]
+          ],
+          "tower": [
+            "L",
+            [
+              56,
+              82,
+              214,
+              110
+            ]
+          ]
+        },
+        "points": {
+          "goal": [
+            155,
+            46
+          ],
+          "camp": [
+            119,
+            46
+          ],
+          "tower": [
+            222,
+            96
+          ]
+        },
+        "trace": {
+          "goal": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "camp": {
+            "status": "hidden",
+            "rejected": {
+              "R": [
+                "goal"
+              ]
+            }
+          },
+          "tower": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      }
+    },
+    "B_recompute_focal_side": {
+      "B0": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              82,
+              232,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              206,
+              39,
+              357,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            96
+          ],
+          "harbor": [
+            198,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B1": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              170,
+              82,
+              236,
+              110
+            ]
+          ],
+          "harbor": [
+            "L",
+            [
+              43,
+              39,
+              194,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            162,
+            96
+          ],
+          "harbor": [
+            202,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B2": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              83,
+              232,
+              111
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              207,
+              39,
+              358,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            97
+          ],
+          "harbor": [
+            199,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B3": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              170,
+              82,
+              236,
+              110
+            ]
+          ],
+          "harbor": [
+            "L",
+            [
+              43,
+              39,
+              194,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            162,
+            96
+          ],
+          "harbor": [
+            202,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B4": {
+        "placed": {
+          "garden": [
+            "L",
+            [
+              224,
+              84,
+              290,
+              112
+            ]
+          ],
+          "harbor": [
+            "L",
+            [
+              181,
+              38,
+              332,
+              66
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            298,
+            98
+          ],
+          "harbor": [
+            340,
+            52
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B5": {
+        "placed": {},
+        "points": {
+          "garden": [
+            408,
+            98
+          ],
+          "harbor": [
+            450,
+            52
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "offscreen-point"
+          },
+          "harbor": {
+            "status": "offscreen-point"
+          }
+        }
+      },
+      "B6": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              82,
+              232,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              206,
+              39,
+              357,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            96
+          ],
+          "harbor": [
+            198,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      }
+    },
+    "B_rank_then_previous": {
+      "B0": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              82,
+              232,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              206,
+              39,
+              357,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            96
+          ],
+          "harbor": [
+            198,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B1": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              170,
+              82,
+              236,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              210,
+              39,
+              361,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            162,
+            96
+          ],
+          "harbor": [
+            202,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B2": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              83,
+              232,
+              111
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              207,
+              39,
+              358,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            97
+          ],
+          "harbor": [
+            199,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B3": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              170,
+              82,
+              236,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              210,
+              39,
+              361,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            162,
+            96
+          ],
+          "harbor": [
+            202,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      },
+      "B4": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              306,
+              84,
+              372,
+              112
+            ]
+          ],
+          "harbor": [
+            "L",
+            [
+              181,
+              38,
+              332,
+              66
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            298,
+            98
+          ],
+          "harbor": [
+            340,
+            52
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {
+              "R": "outside"
+            }
+          }
+        }
+      },
+      "B5": {
+        "placed": {},
+        "points": {
+          "garden": [
+            408,
+            98
+          ],
+          "harbor": [
+            450,
+            52
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "offscreen-point"
+          },
+          "harbor": {
+            "status": "offscreen-point"
+          }
+        }
+      },
+      "B6": {
+        "placed": {
+          "garden": [
+            "R",
+            [
+              166,
+              82,
+              232,
+              110
+            ]
+          ],
+          "harbor": [
+            "R",
+            [
+              206,
+              39,
+              357,
+              67
+            ]
+          ]
+        },
+        "points": {
+          "garden": [
+            158,
+            96
+          ],
+          "harbor": [
+            198,
+            53
+          ]
+        },
+        "trace": {
+          "garden": {
+            "status": "visible",
+            "rejected": {}
+          },
+          "harbor": {
+            "status": "visible",
+            "rejected": {}
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "goal_visible_when_active": {
+      "previous_visible_first": "0/2",
+      "rank_then_previous": "2/2"
+    },
+    "harbor_anchor_flips_frames_B0_B3": {
+      "fresh": 3,
+      "rank_then_previous": 0
+    },
+    "retention_invalidates": {
+      "B4": "outside on previous R, switches to L",
+      "B5": "source point exits view",
+      "B6": "re-enters with fresh R choice"
+    },
+    "viewport_px": [
+      400,
+      130
+    ],
+    "rectangles": "half-open; validates whole box and no pairwise overlap"
+  }
+}
