@@ -1,0 +1,13 @@
+Pillow 13.0.0, float masks; output 32x12
+s=1.00 fixed      geometry=3.0000 peak=1.0000 coverage=3.0000 alpha>.5=3
+s=1.00 rounded    geometry=3.0000 peak=1.0000 coverage=3.0000 alpha>.5=3
+s=1.00 fractional geometry=3.0000 peak=1.0000 coverage=3.0000 alpha>.5=3
+s=0.75 fixed      geometry=4.0000 peak=1.0000 coverage=4.0000 alpha>.5=4
+s=0.75 rounded    geometry=2.6667 peak=1.0000 coverage=2.6250 alpha>.5=3
+s=0.75 fractional geometry=3.0000 peak=1.0000 coverage=2.9688 alpha>.5=3
+s=0.50 fixed      geometry=6.0000 peak=1.0000 coverage=6.0000 alpha>.5=6
+s=0.50 rounded    geometry=4.0000 peak=1.0000 coverage=4.0000 alpha>.5=4
+s=0.50 fractional geometry=3.0000 peak=0.8750 coverage=3.0000 alpha>.5=3
+thin 50% NEAREST  peak=0.5000 coverage=1.0000 alpha>.5=0
+thin 50% BILINEAR peak=0.3750 coverage=1.0000 alpha>.5=0
+padding tap UV=0.75: allocation-clamp=1, active-viewport-clamp=0
