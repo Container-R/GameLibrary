@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "at": 390,
+      "active": [
+        "A"
+      ],
+      "targetDb": -5
+    },
+    {
+      "at": 410,
+      "active": [
+        "A"
+      ],
+      "targetDb": -5
+    },
+    {
+      "at": 430,
+      "active": [
+        "A",
+        "B"
+      ],
+      "targetDb": -7.5
+    },
+    {
+      "at": 460,
+      "active": [
+        "B"
+      ],
+      "targetDb": -7.5
+    },
+    {
+      "at": 470,
+      "active": [
+        "B"
+      ],
+      "targetDb": -7.5
+    },
+    {
+      "at": 680,
+      "active": [],
+      "targetDb": 0
+    },
+    {
+      "at": 690,
+      "active": [],
+      "targetDb": 0
+    }
+  ],
+  "delayedOnset": {
+    "active": [
+      "B"
+    ],
+    "targetDb": -4
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "ffmpeg": "ffmpeg version 7.1.5-0+deb13u1",
+  "rate_hz": 48000,
+  "voice_activity_rms_threshold": 0.002,
+  "windows_ms": {
+    "first_35ms": [
+      500.0,
+      535.0
+    ],
+    "full_first": [
+      500.0,
+      845.0
+    ],
+    "between_words": [
+      845.0,
+      985.0
+    ],
+    "body": [
+      985.0,
+      1930.0
+    ]
+  },
+  "voice_peak_amplitude_by_window": {
+    "first_35ms": 0.091117,
+    "full_first": 0.145,
+    "between_words": 0.0,
+    "body": 0.4
+  },
+  "variants": {
+    "no-duck": {
+      "background_rms_change_db": {
+        "first_35ms": 0.0,
+        "full_first": 0.0,
+        "between_words": 0.0,
+        "body": 0.0
+      },
+      "render_peak_dbfs": -5.639
+    },
+    "fast-reactive": {
+      "background_rms_change_db": {
+        "first_35ms": -0.0,
+        "full_first": -0.0,
+        "between_words": -0.0,
+        "body": -1.105
+      },
+      "render_peak_dbfs": -6.552
+    },
+    "pre-duck": {
+      "background_rms_change_db": {
+        "first_35ms": -7.5,
+        "full_first": -7.5,
+        "between_words": -7.5,
+        "body": -7.5
+      },
+      "render_peak_dbfs": -7.296
+    }
+  }
+}
