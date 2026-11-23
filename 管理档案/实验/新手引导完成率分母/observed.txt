@@ -1,0 +1,15 @@
+SQLite 3.53.1
+A: 50/100 assigned (50%), 50/100 entrants (50%), unknown=0
+B: 42/100 assigned (42%), 42/60 entrants (70%), unknown=0
+A/experienced: 40/50 (80%)
+A/new: 10/50 (20%)
+B/experienced: 40/50 (80%)
+B/new: 2/10 (20%)
+A pre_eligible=1: 48/90 assigned
+B pre_eligible=1: 40/90 assigned
+A pre_eligible=0: 2/10 assigned
+B pre_eligible=0: 2/10 assigned
+B naive event join: 47/65 rows; deduplicated: 42/60 players
+time/sequence controls: pre-assignment entry, pre-entry completion and horizon boundary excluded
+B at t=120: 41 confirmed completions, 57 known non-completions, 2 unknown; bounds 41–43%
+B at t=150: 42 confirmed completions, 58 known non-completions, 0 unknown
