@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-LIVE-LEADERBOARD",
+      "reader_title": "实时排行榜用游标翻页，为什么还是会重复或漏人",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/在线服务/排行榜/实时排行榜的快照翻页与同分名次.md",
+      "reader_body_status": "published",
+      "reader_sha256": "d89c09ae19fa229f4b41980e358951cb918a1d4108b7fa6e170401629c498760",
+      "source_record": "管理档案/来源笔记/live-leaderboard-pagination-20261124.md",
+      "review": "管理档案/审稿/GL-LIVE-LEADERBOARD/20261124-review.md",
+      "materials_record": "管理档案/实验/实时排行榜翻页/README.md"
+    },
+    {
       "internal_id": "GL-ARABIC-FALLBACK-SHAPING",
       "reader_title": "字母都显示了，阿拉伯文为什么还是断开",
       "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/阿拉伯文的字体回退与连写塑形.md",

@@ -1,0 +1,14 @@
+SQLite 3.53.1
+movement page 1 @epoch 1: [('A', 100), ('B', 90)]
+movement live OFFSET @epoch 2: [('D', 70), ('B', 65)]
+movement live keyset @epoch 2: [('D', 70), ('B', 65)]
+movement pinned keyset @epoch 1: [('C', 80), ('D', 70)]
+tie page 1: [('A', 100, 1), ('B', 90, 2)]
+tie page 2, shared rank over snapshot: [('C', 90, 2), ('D', 80, 4)]
+tie BUG: cursor filter before window: [('C', 90, 1), ('D', 80, 2)]
+tie BUG: ID inside rank window: [('C', 90, 3), ('D', 80, 4)]
+tie page 3: [('E', 80, 4)]
+tie previous page in reverse query order: [('B', 90, 2), ('A', 100, 1)]
+tie previous page in display order: [('A', 100, 1), ('B', 90, 2)]
+refresh race (Python, not SQL): append without guard = ['X', 'A', 'C', 'D'] ; with epoch/generation guard = ['X', 'A']
+same epoch reopened (Python): older generation rejected
