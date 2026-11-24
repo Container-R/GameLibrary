@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-MIRRORED-INSTANCE-WINDING",
+      "reader_title": "单面模型镜像后的绕序与实例剔除",
+      "canonical_reader_path": "GameLibrary/图形渲染/渲染开发/光栅化/单面模型镜像后的绕序与实例剔除.md",
+      "reader_body_status": "published",
+      "reader_sha256": "356c25e87eca28182aaedf9ac71ba37739d1ec4742e49857b92c206d06f51b52",
+      "source_record": "管理档案/来源笔记/mirrored-instance-winding-20261124.md",
+      "review": "管理档案/审稿/GL-MIRRORED-INSTANCE-WINDING/20261124-review.md",
+      "materials_record": "管理档案/实验/单面模型镜像绕序/README.md"
+    },
+    {
       "internal_id": "GL-DOPPLER-TELEPORT",
       "reader_title": "角色瞬移后，空间音效为什么突然变调",
       "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/空间音频/空间音频的瞬移与多普勒速度.md",

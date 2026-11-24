@@ -1,0 +1,15 @@
+llvmpipe (LLVM 19.1.7, 256 bits)
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+viewport=96x64, depth_bits=24
+Cards: CCW + back cull [Counter({'A/front': 160}), Counter(), Counter({'A/front': 160})]
+Cards: CW + back cull [Counter(), Counter({'A/front': 160}), Counter()]
+Cards: CCW, no cull [Counter({'A/front': 160}), Counter({'A/back': 160}), Counter({'A/front': 160})]
+Cards: split by parity [Counter({'A/front': 160}), Counter({'A/front': 160}), Counter({'A/front': 160})]
+Walls: original, CCW: {'A/front': 1536}; near=A; center depth=0.25; same silhouette
+Walls: X mirror, CCW: {'B/front': 1536}; near=A; center depth=0.75; same silhouette
+Walls: X mirror, CW: {'A/front': 1536}; near=A; center depth=0.25; same silhouette
+Walls: Z mirror, CCW: {'A/front': 1536}; near=B; center depth=0.75; same silhouette
+Walls: Z mirror, CW: {'B/front': 1536}; near=B; center depth=0.25; same silhouette
+Walls: Z mirror, no cull: {'B/back': 1536}; near=B; center depth=0.25; same silhouette
+Walls: X+Z mirror, CCW: {'B/front': 1536}; near=B; center depth=0.25; same silhouette
+Walls: Z mirror, CW no cull: {'B/front': 1536}; near=B; center depth=0.25; same silhouette
