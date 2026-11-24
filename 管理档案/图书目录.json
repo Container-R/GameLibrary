@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ARABIC-FALLBACK-SHAPING",
+      "reader_title": "字母都显示了，阿拉伯文为什么还是断开",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/阿拉伯文的字体回退与连写塑形.md",
+      "reader_body_status": "published",
+      "reader_sha256": "46cc8d20e050ec67c0baef3d3f86e2621b042dc6bae0fb80a10a1344344f4dcf",
+      "source_record": "管理档案/来源笔记/arabic-fallback-shaping-20261124.md",
+      "review": "管理档案/审稿/GL-ARABIC-FALLBACK-SHAPING/20261124-review.md",
+      "materials_record": "管理档案/实验/阿拉伯文回退切段/README.md"
+    },
+    {
       "internal_id": "GL-MOVING-ONEWAY",
       "reader_title": "移动单向平台，为什么角色向上跳也会落地",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/角色移动/移动单向平台的相对穿越与支撑判定.md",
