@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-RENDER-CAPTURE-ANIMATION",
+      "reader_title": "用 RenderDoc 定位角色变形：一帧能证明什么",
+      "canonical_reader_path": "GameLibrary/图形渲染/渲染开发/帧调试/用 RenderDoc 定位角色变形：一帧能证明什么.md",
+      "reader_body_status": "published",
+      "reader_sha256": "823b663ab064f12fa49cafa096d5742e548c542473407e1fbf75f51af8140a18",
+      "source_record": "管理档案/来源笔记/render-capture-animation-20261125.md",
+      "review": "管理档案/审稿/GL-RENDER-CAPTURE-ANIMATION/20261125-review.md",
+      "materials_record": "管理档案/实验/单帧姿势与动画轨迹/README.md"
+    },
+    {
       "internal_id": "GL-D1-RETENTION-CHANNEL-COMPOSITION",
       "reader_title": "每个渠道的次日留存都下滑，为什么总留存还涨了",
       "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/每个渠道的次日留存都下滑，为什么总留存还涨了.md",
