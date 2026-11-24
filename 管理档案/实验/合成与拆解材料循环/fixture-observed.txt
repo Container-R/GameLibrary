@@ -1,0 +1,15 @@
+state=(scrap, parts, slag, station_charge); action horizon=8
+baseline: states=9 closed=False restored_growth_states=4
+  example: (3, 0, 0, 0) -> craft:(0, 2, 1, 0) -> disassemble:(3, 1, 0, 0) -> craft:(0, 3, 1, 0) -> disassemble:(3, 2, 0, 0) -> craft:(0, 4, 1, 0) -> disassemble:(3, 3, 0, 0) -> craft:(0, 5, 1, 0) -> disassemble:(3, 4, 0, 0)
+no_seed: states=1 closed=True restored_growth_states=0
+  example: (0, 0, 0, 0) -> (none)
+refund_two: states=3 closed=True restored_growth_states=0
+  example: (3, 0, 0, 0) -> craft:(0, 2, 1, 0) -> disassemble:(2, 1, 0, 0)
+one_station_charge: states=4 closed=True restored_growth_states=0
+  example: (3, 0, 0, 1) -> craft:(0, 2, 1, 1) -> disassemble:(3, 1, 0, 0) -> craft:(0, 3, 1, 0)
+bag_three: states=2 closed=True restored_growth_states=0
+  example: (3, 0, 0, 0) -> craft:(0, 2, 1, 0)
+bag_four: states=4 closed=True restored_growth_states=1
+  example: (3, 0, 0, 0) -> craft:(0, 2, 1, 0) -> disassemble:(3, 1, 0, 0)
+baseline: after one round=(3, 1, 0, 0), replay same round=(3, 2, 0, 0)
+bag_four: after one round=(3, 1, 0, 0), replay same round=None
