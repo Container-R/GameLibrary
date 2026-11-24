@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-VOLUMETRIC-FOG-TRAILS",
+      "reader_title": "手电已经移走，体积雾为什么还留着光柱",
+      "canonical_reader_path": "GameLibrary/图形渲染/场景光照/体积光照/体积雾中灯光拖尾的历史诊断.md",
+      "reader_body_status": "published",
+      "reader_sha256": "e9a26499a073c898798c4c5d7e4b70070332bf068fd639f6765a0fbbf788dcf2",
+      "source_record": "管理档案/来源笔记/volumetric-fog-light-trails-20261124.md",
+      "review": "管理档案/审稿/GL-VOLUMETRIC-FOG-TRAILS/20261124-review.md",
+      "materials_record": "管理档案/实验/体积雾的灯光历史/README.md"
+    },
+    {
       "internal_id": "GL-LIVE-LEADERBOARD",
       "reader_title": "实时排行榜用游标翻页，为什么还是会重复或漏人",
       "canonical_reader_path": "GameLibrary/网络与在线服务/在线服务/排行榜/实时排行榜的快照翻页与同分名次.md",
