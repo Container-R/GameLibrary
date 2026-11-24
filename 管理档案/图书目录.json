@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-ASYNC-PATH-RESULT-ACCEPTANCE",
+      "reader_title": "异步寻路结果何时还能交给 NPC",
+      "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/路径查询/异步寻路结果何时还能交给 NPC.md",
+      "reader_body_status": "published",
+      "reader_sha256": "d74ab22e365472463959b625867390ae6b0f7fd23dd95953825fb64c296a45df",
+      "source_record": "管理档案/来源笔记/async-path-stale-results-20261124.md",
+      "review": "管理档案/审稿/GL-ASYNC-PATH-RESULT-ACCEPTANCE/20261124-review.md",
+      "materials_record": "管理档案/实验/异步寻路结果接纳/README.md"
+    },
+    {
       "internal_id": "GL-FIXED-STEP-FORCES-IMPULSES",
       "reader_title": "固定物理步中的持续推力与一次冲量",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/固定物理步中的持续推力与一次冲量.md",

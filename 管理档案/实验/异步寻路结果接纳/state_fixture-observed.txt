@@ -1,0 +1,20 @@
+naive old success: applied, route=A, movement=following, pending=None
+naive old failure: applied, route=None, movement=no-path, pending=None
+guarded old success: unowned, route=B, movement=following, pending=None
+guarded old failure: unowned, route=B, movement=following, pending=None
+owned B failure, not stale-path replan: applied, route=None, movement=no-path, pending=None
+queued A dispatched after B replaces ticket: unowned, route=None, movement=waiting, pending=2
+B after queued A discard: applied, route=B, movement=following, pending=None
+old A frees slot before B can submit: unowned, route=None, movement=waiting, pending=None
+duplicate A cannot release B slot: unowned, route=None, movement=waiting, pending=2
+B submitted after A frees slot: applied, route=B, movement=following, pending=None
+same goal, old request first: unowned, route=None, movement=waiting, pending=2
+same goal, latest request: applied, route=B, movement=following, pending=None
+duplicate latest failure: unowned, route=B, movement=following, pending=None
+object reuse same serial: unowned, route=None, movement=waiting, pending=1
+new lifetime result: applied, route=NEW, movement=following, pending=None
+west region revision: applied, route=E, movement=following, pending=None
+east region revision: replan-revision, route=None, movement=replan, pending=None
+start drift 2: applied, route=E, movement=following, pending=None
+start drift 3: replan-start, route=None, movement=replan, pending=None
+all 6 arrival permutations: C remains followed
