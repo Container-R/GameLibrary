@@ -1,0 +1,6 @@
+48000 Hz; stereo float mix; gate=36000; 100000 frames; width=32 frames
+late_zero: cursor before change=0, left=[0, 24000, 48000, 72000, 96000], right=[36000, 60000, 84000]
+running_muted: cursor before change=36000, left=[0, 24000, 48000, 72000, 96000], right=[48000, 72000, 96000]
+late_aligned: cursor before change=0, left=[0, 24000, 48000, 72000, 96000], right=[48000, 72000, 96000]
+shifted_asset: cursor before change=36000, left=[0, 24000, 48000, 72000, 96000], right=[50400, 74400, 98400]
+OpenAL 1.1 ALSOFT 1.24.2 | OpenAL Soft
