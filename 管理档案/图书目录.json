@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-DOPPLER-TELEPORT",
+      "reader_title": "角色瞬移后，空间音效为什么突然变调",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/空间音频/空间音频的瞬移与多普勒速度.md",
+      "reader_body_status": "published",
+      "reader_sha256": "1b6117e2542ccdacb03671b5ec5058f4acb5efa076f0d39553c178b1deed63d1",
+      "source_record": "管理档案/来源笔记/spatial-doppler-teleport-20261124.md",
+      "review": "管理档案/审稿/GL-DOPPLER-TELEPORT/20261124-review.md",
+      "materials_record": "管理档案/实验/空间音频的瞬移与多普勒/README.md"
+    },
+    {
       "internal_id": "GL-VOLUMETRIC-FOG-TRAILS",
       "reader_title": "手电已经移走，体积雾为什么还留着光柱",
       "canonical_reader_path": "GameLibrary/图形渲染/场景光照/体积光照/体积雾中灯光拖尾的历史诊断.md",
