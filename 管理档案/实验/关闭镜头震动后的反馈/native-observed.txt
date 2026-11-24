@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+viewport=1920x1080 horizontal_fov=90 fixed_reticle=(960,540)
+phase=baseline raw_offset=0.00 scale=1.0 camera_shift=0.00 gameplay_ray_origin=(0.000,0.000,0.000) direction=(0.000,0.000,-1.000)
+depth=5 gameplay_hit=(0.000,0.000,-5.000) marker=(960.000,540.000) dx=0.000 fixed_reticle_ray=hit marker_ray=hit
+depth=20 gameplay_hit=(0.000,0.000,-20.000) marker=(960.000,540.000) dx=0.000 fixed_reticle_ray=hit marker_ray=hit
+phase=shifted raw_offset=0.20 scale=1.0 camera_shift=0.20 gameplay_ray_origin=(0.000,0.000,0.000) direction=(0.000,0.000,-1.000)
+depth=5 gameplay_hit=(0.000,0.000,-5.000) marker=(921.600,540.000) dx=-38.400 fixed_reticle_ray=miss marker_ray=hit
+depth=20 gameplay_hit=(0.000,0.000,-20.000) marker=(950.400,540.000) dx=-9.600 fixed_reticle_ray=miss marker_ray=hit
+phase=disabled_with_active_offset raw_offset=0.20 scale=0.0 camera_shift=0.00 gameplay_ray_origin=(0.000,0.000,0.000) direction=(0.000,0.000,-1.000)
+depth=5 gameplay_hit=(0.000,0.000,-5.000) marker=(960.000,540.000) dx=0.000 fixed_reticle_ray=hit marker_ray=hit
+depth=20 gameplay_hit=(0.000,0.000,-20.000) marker=(960.000,540.000) dx=0.000 fixed_reticle_ray=hit marker_ray=hit
+event=19 tick=100 kind=hit direction=left all_on_label=HIT all_off_label=HIT shake/audio/rumble=off
+event=20 tick=101 kind=block direction=left all_on_label=BLOCK all_off_label=BLOCK shake/audio/rumble=off
+PASS
