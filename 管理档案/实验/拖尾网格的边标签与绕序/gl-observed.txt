@@ -1,0 +1,7 @@
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+llvmpipe (LLVM 19.1.7, 256 bits)
+raw: doubled_area=(+1507.81,-1507.30) union=1137 overlap=382 CCW_only=759 coverage_sha256=45fcad090cc563b7a68dbe1df42b7ec6cb8d23b8fb4f1b47c0bb9dce37e5778d
+consistent: doubled_area=(+1516.45,+1507.30) union=1512 overlap=0 CCW_only=1512 coverage_sha256=c13117ed2439e9edf81d2733ebb2e501a54ec3e60361265effb4ee39631a5b23
+reverse: doubled_area=(-1507.81,-1515.94) union=1512 overlap=0 CCW_only=0 coverage_sha256=c13117ed2439e9edf81d2733ebb2e501a54ec3e60361265effb4ee39631a5b23
+UV at x=50 y=26,14 (seed A vs seed B): [((51, 191, 255), (217, 59, 153)), ((217, 59, 153), (51, 191, 255))]
+minimum normalized cross magnitude along curve: 0.0099995

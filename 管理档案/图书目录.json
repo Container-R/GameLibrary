@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-RIBBON-EDGE-FACING",
+      "reader_title": "拖尾中心线没断，网格为什么会翻面",
+      "canonical_reader_path": "GameLibrary/视觉特效/特效制作/拖尾网格/拖尾中心线没断，网格为什么会翻面.md",
+      "reader_body_status": "published",
+      "reader_sha256": "ed5bd06ae2c89955e8f90939df69879bb9b0def261c40e513bdcb484ca09f121",
+      "source_record": "管理档案/来源笔记/ribbon-facing-grazing-20261125.md",
+      "review": "管理档案/审稿/GL-RIBBON-EDGE-FACING/20261125-review.md",
+      "materials_record": "管理档案/实验/拖尾网格的边标签与绕序/README.md"
+    },
+    {
       "internal_id": "GL-RENDER-CAPTURE-ANIMATION",
       "reader_title": "用 RenderDoc 定位角色变形：一帧能证明什么",
       "canonical_reader_path": "GameLibrary/图形渲染/渲染开发/帧调试/用 RenderDoc 定位角色变形：一帧能证明什么.md",
