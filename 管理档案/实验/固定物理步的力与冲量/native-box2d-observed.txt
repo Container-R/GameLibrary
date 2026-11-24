@@ -1,0 +1,54 @@
+outer_hz=30 internal_substeps=1 simulated_time=1.000 s
+step_1 force_v_mps=0.200000 force_x_m=0.006667 step_J_v_mps=0.100000 step_J_x_m=0.003333
+force_each_tick          v_mps= 6.0000 x_m= 3.1000
+fixed_impulse_each_tick  v_mps= 3.0000 x_m= 1.5500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9333
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.2000 x_m= 0.2000
+double_force_first_tick  v_mps= 0.4000 x_m= 0.4000
+outer_hz=30 internal_substeps=4 simulated_time=1.000 s
+step_1 force_v_mps=0.200000 force_x_m=0.004167 step_J_v_mps=0.100000 step_J_x_m=0.003333
+force_each_tick          v_mps= 6.0000 x_m= 3.0250
+fixed_impulse_each_tick  v_mps= 3.0000 x_m= 1.5500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9333
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.2000 x_m= 0.1975
+double_force_first_tick  v_mps= 0.4000 x_m= 0.3950
+outer_hz=60 internal_substeps=1 simulated_time=1.000 s
+step_1 force_v_mps=0.100000 force_x_m=0.001667 step_J_v_mps=0.100000 step_J_x_m=0.001667
+force_each_tick          v_mps= 6.0000 x_m= 3.0500
+fixed_impulse_each_tick  v_mps= 6.0000 x_m= 3.0500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9667
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.1000 x_m= 0.1000
+double_force_first_tick  v_mps= 0.2000 x_m= 0.2000
+outer_hz=60 internal_substeps=4 simulated_time=1.000 s
+step_1 force_v_mps=0.100000 force_x_m=0.001042 step_J_v_mps=0.100000 step_J_x_m=0.001667
+force_each_tick          v_mps= 6.0000 x_m= 3.0125
+fixed_impulse_each_tick  v_mps= 6.0000 x_m= 3.0500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9667
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.1000 x_m= 0.0994
+double_force_first_tick  v_mps= 0.2000 x_m= 0.1987
+outer_hz=120 internal_substeps=1 simulated_time=1.000 s
+step_1 force_v_mps=0.050000 force_x_m=0.000417 step_J_v_mps=0.100000 step_J_x_m=0.000833
+force_each_tick          v_mps= 6.0000 x_m= 3.0250
+fixed_impulse_each_tick  v_mps=12.0000 x_m= 6.0500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9833
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.0500 x_m= 0.0500
+double_force_first_tick  v_mps= 0.1000 x_m= 0.1000
+outer_hz=120 internal_substeps=4 simulated_time=1.000 s
+step_1 force_v_mps=0.050000 force_x_m=0.000260 step_J_v_mps=0.100000 step_J_x_m=0.000833
+force_each_tick          v_mps= 6.0000 x_m= 3.0063
+fixed_impulse_each_tick  v_mps=12.0000 x_m= 6.0500
+input_event_once         v_mps= 2.0000 x_m= 2.0000
+input_event_repeated     v_mps= 4.0000 x_m= 3.9833
+total_impulse_upfront    v_mps= 6.0000 x_m= 6.0000
+force_one_tick           v_mps= 0.0500 x_m= 0.0498
+double_force_first_tick  v_mps= 0.1000 x_m= 0.0997

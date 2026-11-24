@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-FIXED-STEP-FORCES-IMPULSES",
+      "reader_title": "固定物理步中的持续推力与一次冲量",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/固定物理步中的持续推力与一次冲量.md",
+      "reader_body_status": "published",
+      "reader_sha256": "789a95d45efa23a05c7aa0d84d07a8eaa15793c3e9df3f7faea4f9748e53fc5b",
+      "source_record": "管理档案/来源笔记/fixed-step-forces-impulses-20261124.md",
+      "review": "管理档案/审稿/GL-FIXED-STEP-FORCES-IMPULSES/20261124-review.md",
+      "materials_record": "管理档案/实验/固定物理步的力与冲量/README.md"
+    },
+    {
       "internal_id": "GL-MIRRORED-INSTANCE-WINDING",
       "reader_title": "单面模型镜像后的绕序与实例剔除",
       "canonical_reader_path": "GameLibrary/图形渲染/渲染开发/光栅化/单面模型镜像后的绕序与实例剔除.md",
@@ -1269,7 +1279,7 @@
       "reader_title": "用固定时间步组织战斗模拟",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/用固定时间步组织战斗模拟.md",
       "reader_body_status": "published",
-      "reader_sha256": "a35d087fa28d80af5927cba606b35f42b5353be06fb3e6c1826ae24b0418d4fe"
+      "reader_sha256": "34d967863895102a6bb5c6bc80372a1896afe6b7d749b0047709f4720e47d0ae"
     },
     {
       "internal_id": "SOL-GFX-001",

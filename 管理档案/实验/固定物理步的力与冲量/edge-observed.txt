@@ -1,0 +1,12 @@
+regular
+frame=20 tick=[ 0,20) presses=[]    held_at_end=0 naive_frame_press=0
+frame=40 tick=[20,40) presses=[1]   held_at_end=0 naive_frame_press=1
+frame=60 tick=[40,60) presses=[2]   held_at_end=0 naive_frame_press=1
+frame=80 tick=[60,80) presses=[]    held_at_end=0 naive_frame_press=0
+presses consumed: [(1, 40), (2, 60)]
+stall
+frame=65 tick=[ 0,20) presses=[]    held_at_end=0 naive_frame_press=1
+frame=65 tick=[20,40) presses=[1]   held_at_end=0 naive_frame_press=1
+frame=65 tick=[40,60) presses=[2]   held_at_end=0 naive_frame_press=1
+frame=80 tick=[60,80) presses=[]    held_at_end=0 naive_frame_press=0
+presses consumed: [(1, 40), (2, 60)]
