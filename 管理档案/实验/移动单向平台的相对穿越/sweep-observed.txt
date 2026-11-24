@@ -1,0 +1,10 @@
+world-up / relative-down: world dy=+1; normal gap +4->-1; land, t=4/5, x_local=16/5
+endpoint in width / crossing missed: world dy=+1; normal gap +4->-1; miss-width, t=4/5, x_local=1
+world-down / relative-up from below: world dy=-1; normal gap -2->+2; no-top-crossing, t=None, x_local=None
+explicit drop suppresses landing: world dy=+1; normal gap +4->-1; ignore, t=None, x_local=None
+retain at zero relative approach: True
+leave at segment edge: False
+release on jump/drop request: False
+drop still ignored while body intersects slab: True
+drop still ignored within clearance threshold: True
+drop may re-arm after complete clearance: False
