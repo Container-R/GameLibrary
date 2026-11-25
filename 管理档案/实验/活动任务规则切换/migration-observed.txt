@@ -1,0 +1,12 @@
+conflicting retry rejected
+database SQLite 3.53.1
+readonly preflight, cut=100:
+A: old=4 v2=1 keep_v1
+B: old=4 v2=2 keep_v1
+C: old=2 v2=1 continue_v2
+D: old=2 v2=2 grant_v2
+E: old=2 v2=None hold_for_review
+catch-up at seq=101: C 1 -> 2
+injected failure rolled back the claim before credit
+final budgets: [('A', 10), ('B', 10), ('C', 10), ('D', 10)]
+E missing coverage -> unresolved (not zero), A paid under v1 -> not sent again

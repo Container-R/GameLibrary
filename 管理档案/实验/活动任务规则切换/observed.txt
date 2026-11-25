@@ -1,0 +1,3 @@
+A: old_kills=4 old_goal_3=True new_goal_5=False wins=1 win_goal_2=False
+B: old_kills=4 old_goal_3=True new_goal_5=False wins=2 win_goal_2=True
+same stored kills cannot determine new win progress; identical deliveries do not change either projection
