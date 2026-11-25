@@ -1,0 +1,5 @@
+SQLite 3.53.1 two connections, deterministic overlap
+two stale reads of 3; B sees BUSY during A's write (not full)
+B retry full; A retry keeps one seat; confirm (3,1)->(4,0); old timeout changes 0 rows; repeat confirm stays active
+A1 invalid at deadline; replacement A2 survives old cleanup and admits A
+old hold ceases at boundary even if timer is late; B admitted, late A rejected
