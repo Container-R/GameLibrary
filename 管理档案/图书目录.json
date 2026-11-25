@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-PACKED-TEXTURE-SRGB",
+      "reader_title": "贴图通道接对了，粗糙度为什么还是变了",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/贴图通道接对了，粗糙度为什么还是变了.md",
+      "reader_body_status": "published",
+      "reader_sha256": "fc8279021c9cbca9eb642ae157d152b13273749c32b15135c3b5a8e3a4c56004",
+      "source_record": "管理档案/来源笔记/packed-mask-srgb-20261125.md",
+      "review": "管理档案/审稿/GL-PACKED-TEXTURE-SRGB/20261125-review.md",
+      "materials_record": "管理档案/实验/打包遮罩的颜色解码/README.md"
+    },
+    {
       "internal_id": "GL-FIXED-STEP-DISPLAY",
       "reader_title": "固定物理步下，角色匀速跑为什么还是一顿一顿",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/固定物理步下，角色匀速跑为什么还是一顿一顿.md",
