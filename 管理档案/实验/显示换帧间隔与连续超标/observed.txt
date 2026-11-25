@@ -1,0 +1,5 @@
+scattered: total=10200.000ms, p99=16.667ms, max=50.000ms, episodes=6, longest=50.000ms
+clustered: total=10200.000ms, p99=16.667ms, max=50.000ms, episodes=1, longest=300.000ms
+submit: 1,1,1,1,1 ticks; shown: 1,3,1 ticks; hold B ends at E
+marker [2,5): overlap=33.333ms, filter-first intervals=0
+30fps on 60Hz: overruns at 1 tick=3; at 2 ticks=0
