@@ -1,0 +1,72 @@
+RUN 1 center
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.483333, 0.0) B_pos=(2.483333, 0.0) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=120 A_pos=(-0.860519, 0.0) B_pos=(0.869096, 0.0) A_pref=(1.0, 0.0) A_safe=(0.374502, 0.0) A_actual=(0.374501, 0.0)
+tick=300 A_pos=(-0.501683, 0.0) B_pos=(0.533768, 0.0) A_pref=(1.0, 0.0) A_safe=(0.02354, 0.0) A_actual=(0.023539, 0.0)
+tick=600 A_pos=(-0.415951, 0.0) B_pos=(0.584498, 0.0) A_pref=(1.0, 0.0) A_safe=(0.027309, 0.0) A_actual=(0.027308, 0.0)
+RESULT mode=center arrivals=[-1, -1] min_pair_gap=0.000447 min_analytic_wall_gap=0.800000 max_safe_actual_delta=0.000003
+RUN 1 lanes
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, -0.016667) B_pos=(2.5, 0.016667) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, -1.0)
+tick=120 A_pos=(-1.150001, -0.65) B_pos=(1.150001, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=300 A_pos=(1.849997, -0.65) B_pos=(-1.849997, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=600 A_pos=(2.5, -0.016667) B_pos=(-2.5, 0.016667) A_pref=(0.0, 0.0) A_safe=(0.0, 0.0) A_actual=(0.0, 0.0)
+RESULT mode=lanes arrivals=[377, 377] min_pair_gap=0.300000 min_analytic_wall_gap=0.150000 max_safe_actual_delta=0.000007
+RUN 1 blocked_actuator
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=120 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=300 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=600 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+RESULT mode=blocked_actuator arrivals=[-1, -1] min_pair_gap=4.000000 min_analytic_wall_gap=0.800000 max_safe_actual_delta=1.000000
+RUN 2 center
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.483333, 0.0) B_pos=(2.483333, 0.0) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=120 A_pos=(-0.860485, 0.0) B_pos=(0.869132, 0.0) A_pref=(1.0, 0.0) A_safe=(0.374589, 0.0) A_actual=(0.37459, 0.0)
+tick=300 A_pos=(-0.501399, 0.0) B_pos=(0.534053, 0.0) A_pref=(1.0, 0.0) A_safe=(0.023491, 0.0) A_actual=(0.023489, 0.0)
+tick=600 A_pos=(-0.418031, 0.0) B_pos=(0.582415, 0.0) A_pref=(1.0, 0.0) A_safe=(0.026529, 0.0) A_actual=(0.026529, 0.0)
+RESULT mode=center arrivals=[-1, -1] min_pair_gap=0.000445 min_analytic_wall_gap=0.800000 max_safe_actual_delta=0.000004
+RUN 2 lanes
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, -0.016667) B_pos=(2.5, 0.016667) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, -1.0)
+tick=120 A_pos=(-1.150001, -0.65) B_pos=(1.150001, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=300 A_pos=(1.849997, -0.65) B_pos=(-1.849997, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=600 A_pos=(2.5, -0.016667) B_pos=(-2.5, 0.016667) A_pref=(0.0, 0.0) A_safe=(0.0, 0.0) A_actual=(0.0, 0.0)
+RESULT mode=lanes arrivals=[377, 377] min_pair_gap=0.300000 min_analytic_wall_gap=0.150000 max_safe_actual_delta=0.000007
+RUN 2 blocked_actuator
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=120 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=300 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=600 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+RESULT mode=blocked_actuator arrivals=[-1, -1] min_pair_gap=4.000000 min_analytic_wall_gap=0.800000 max_safe_actual_delta=1.000000
+RUN 3 center
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.483333, 0.0) B_pos=(2.483333, 0.0) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=120 A_pos=(-0.860519, 0.0) B_pos=(0.869096, 0.0) A_pref=(1.0, 0.0) A_safe=(0.374502, 0.0) A_actual=(0.374501, 0.0)
+tick=300 A_pos=(-0.501945, 0.0) B_pos=(0.533507, 0.0) A_pref=(1.0, 0.0) A_safe=(0.023333, 0.0) A_actual=(0.023332, 0.0)
+tick=600 A_pos=(-0.420328, 0.0) B_pos=(0.580103, 0.0) A_pref=(1.0, 0.0) A_safe=(0.025771, 0.0) A_actual=(0.025771, 0.0)
+RESULT mode=center arrivals=[-1, -1] min_pair_gap=0.000430 min_analytic_wall_gap=0.800000 max_safe_actual_delta=0.000003
+RUN 3 lanes
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, -0.016667) B_pos=(2.5, 0.016667) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, -1.0)
+tick=120 A_pos=(-1.150001, -0.65) B_pos=(1.150001, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=300 A_pos=(1.849997, -0.65) B_pos=(-1.849997, 0.65) A_pref=(1.0, 0.0) A_safe=(1.0, 0.0) A_actual=(0.999999, 0.0)
+tick=600 A_pos=(2.5, -0.016667) B_pos=(-2.5, 0.016667) A_pref=(0.0, 0.0) A_safe=(0.0, 0.0) A_actual=(0.0, 0.0)
+RESULT mode=lanes arrivals=[377, 377] min_pair_gap=0.300000 min_analytic_wall_gap=0.150000 max_safe_actual_delta=0.000007
+RUN 3 blocked_actuator
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+tick=1 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=120 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=300 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+tick=600 A_pos=(-2.5, 0.0) B_pos=(2.5, 0.0) A_pref=(0.0, -1.0) A_safe=(0.0, -1.0) A_actual=(0.0, 0.0)
+RESULT mode=blocked_actuator arrivals=[-1, -1] min_pair_gap=4.000000 min_analytic_wall_gap=0.800000 max_safe_actual_delta=1.000000
