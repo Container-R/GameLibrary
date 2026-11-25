@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-HUD-OUTPUT-COMPOSITE",
+      "reader_title": "调低场景分辨率后，HUD 小字为什么也变糊",
+      "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/动态分辨率/调低场景分辨率后，HUD 小字为什么也变糊.md",
+      "reader_body_status": "published",
+      "reader_sha256": "3dab8d95c92481c9f2c5c835e6d526e1652af9251eefb962ef7843feffffed85",
+      "source_record": "管理档案/来源笔记/hud-scene-scale-20261125.md",
+      "review": "管理档案/审稿/GL-HUD-OUTPUT-COMPOSITE/20261125-review.md",
+      "materials_record": "管理档案/实验/HUD与场景缩放的合成顺序/README.md"
+    },
+    {
       "internal_id": "GL-LOCAL-AVOIDANCE-PROGRESS",
       "reader_title": "NPC 明明有路，为什么一相遇就走不动",
       "canonical_reader_path": "GameLibrary/游戏人工智能/移动导航/局部避让与通行/NPC 明明有路，为什么一相遇就走不动.md",

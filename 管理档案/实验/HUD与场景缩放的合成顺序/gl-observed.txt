@@ -1,0 +1,8 @@
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+llvmpipe (LLVM 19.1.7, 256 bits)
+output=96x48 RGBA8; intermediate=48x24 RGBA8; down/up=GL_LINEAR; GL sRGB conversion off
+early x62: line_row=[(61, 32), (62, 96), (63, 96), (64, 32)] frame_sha256=8990f2b94c7934cb827982bdbfc6fafe8215c8eb501bf1f2ccceb2a02226a5eb
+early x63: line_row=[(61, 32), (62, 96), (63, 96), (64, 32)] frame_sha256=8990f2b94c7934cb827982bdbfc6fafe8215c8eb501bf1f2ccceb2a02226a5eb
+late x62: line_row=[(62, 255)] frame_sha256=a2362961219fd9989f2f5d50688bd17dcc1f6f24eebe384bc9c36e7507930ae6
+late x63: line_row=[(63, 255)] frame_sha256=a7c2500ffaca863011467cbf2cfab15493d10feb71b8f504e7d820e7be084f31
+early intermediate sha256: 8db31248ace374ea07b3a2ff2512856fc518f6eb6d87dfd93a4d7f13305f660c
