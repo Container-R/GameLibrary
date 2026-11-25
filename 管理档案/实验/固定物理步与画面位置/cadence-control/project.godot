@@ -1,0 +1,8 @@
+config_version=5
+
+[application]
+config/name="Fixed step view cadence"
+
+[physics]
+common/physics_ticks_per_second=50
+common/physics_interpolation=true

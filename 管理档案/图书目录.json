@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-FIXED-STEP-DISPLAY",
+      "reader_title": "固定物理步下，角色匀速跑为什么还是一顿一顿",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/固定物理步下，角色匀速跑为什么还是一顿一顿.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8a2d7babccbfcdb0fd3e9a0ff30dbba249937299b37720ae28e0eed1e247b534",
+      "source_record": "管理档案/来源笔记/fixed-step-display-20261125.md",
+      "review": "管理档案/审稿/GL-FIXED-STEP-DISPLAY/20261125-review.md",
+      "materials_record": "管理档案/实验/固定物理步与画面位置/README.md"
+    },
+    {
       "internal_id": "GL-HUD-OUTPUT-COMPOSITE",
       "reader_title": "调低场景分辨率后，HUD 小字为什么也变糊",
       "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/动态分辨率/调低场景分辨率后，HUD 小字为什么也变糊.md",

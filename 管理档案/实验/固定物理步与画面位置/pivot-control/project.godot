@@ -1,0 +1,8 @@
+config_version=5
+
+[application]
+config/name="Rigid pivot interpolation control"
+
+[physics]
+common/physics_ticks_per_second=10
+common/physics_interpolation=true
