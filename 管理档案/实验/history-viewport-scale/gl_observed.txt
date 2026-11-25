@@ -1,0 +1,21 @@
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+llvmpipe (LLVM 19.1.7, 256 bits)
+allocation=128x4, previous origin=0, width=64, current width=128
+  correct .75           0.000000 0.501961 0.501961 1.000000
+  wrong .75             1.000000 0.000000 1.000000 1.000000
+  raw inside edge       0.250980 0.749020 0.250980 1.000000
+  bounded inside edge   0.000000 1.000000 0.000000 1.000000
+  rejected outside      0.000000 0.000000 0.000000 0.000000
+allocation=128x4, previous origin=0, width=128, current width=64
+  correct .75           0.000000 0.501961 0.501961 1.000000
+  wrong .75             0.000000 1.000000 0.000000 1.000000
+  raw inside edge       0.000000 1.000000 0.000000 1.000000
+  bounded inside edge   0.000000 1.000000 0.000000 1.000000
+  rejected outside      0.000000 0.000000 0.000000 0.000000
+allocation=128x4, previous origin=12, width=64, current width=100
+  correct .75           0.000000 0.501961 0.501961 1.000000
+  wrong .75             1.000000 0.000000 1.000000 1.000000
+  raw inside edge       0.250980 0.749020 0.250980 1.000000
+  bounded inside edge   0.000000 1.000000 0.000000 1.000000
+  rejected outside      0.000000 0.000000 0.000000 0.000000
+PASS: scale, subrectangle, full-texture control and rejection

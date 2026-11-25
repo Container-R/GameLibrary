@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-TAA-HISTORY-VIEWPORT",
+      "reader_title": "动态分辨率切换时，TAA 怎样找准上一帧的有效像素",
+      "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/时域抗锯齿/动态分辨率切换时，TAA 怎样找准上一帧的有效像素.md",
+      "reader_body_status": "published",
+      "reader_sha256": "b9acb3ded07db2e47369daa145918a5faefa04f4446b499134181ba284607c2a",
+      "source_record": "管理档案/来源笔记/history-viewport-scale-20261126.md",
+      "review": "管理档案/审稿/GL-TAA-HISTORY-VIEWPORT/20261126-review.md",
+      "materials_record": "管理档案/实验/history-viewport-scale/README.md"
+    },
+    {
       "internal_id": "GL-FONT-INK-CLIP",
       "reader_title": "字体已经能显示文字，为什么附标还是被裁掉",
       "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/字体已经能显示文字，为什么附标还是被裁掉.md",
