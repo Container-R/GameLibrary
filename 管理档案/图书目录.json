@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-RANDOMIZED-ROUTE-GUARANTEE",
+      "reader_title": "随机关卡有一条出路，玩家就一定能到出口吗",
+      "canonical_reader_path": "GameLibrary/游戏设计/关卡设计/关卡推进/随机关卡有一条出路，玩家就一定能到出口吗.md",
+      "reader_body_status": "published",
+      "reader_sha256": "88942a7163980a35cba8a082aa7eafb157266ee159302c2b182d6887db8f2df2",
+      "source_record": "管理档案/来源笔记/randomized-route-guarantee-20261127.md",
+      "review": "管理档案/审稿/GL-RANDOMIZED-ROUTE-GUARANTEE/20261127-review.md",
+      "materials_record": "管理档案/实验/随机路径的步数保证/README.md"
+    },
+    {
       "internal_id": "GL-ABILITY-CHARGES-RECHARGE",
       "reader_title": "两格技能充能：第二格为什么在第 20 秒才恢复",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/战斗状态/两格技能充能：第二格为什么在第 20 秒才恢复.md",
