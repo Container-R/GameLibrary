@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-LATE-MATCH-REPORT",
+      "reader_title": "昨天打完的比赛今天才上报，日报该怎么改",
+      "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/昨天打完的比赛今天才上报，日报该怎么改.md",
+      "reader_body_status": "published",
+      "reader_sha256": "9753d8f44030df251c9ea556b3b618afedd81766a9493b4997333cb8ae1a50cf",
+      "source_record": "管理档案/来源笔记/late-match-telemetry-20261126.md",
+      "review": "管理档案/审稿/GL-LATE-MATCH-REPORT/20261126-review.md",
+      "materials_record": "管理档案/实验/late-match-telemetry/README.md"
+    },
+    {
       "internal_id": "GL-OPUS-LOOP-REENTRY",
       "reader_title": "Ogg Opus 循环回跳不连贯，怎样查解码和混音",
       "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/Ogg Opus 循环回跳不连贯，怎样查解码和混音.md",
