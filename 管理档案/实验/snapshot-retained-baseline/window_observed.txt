@@ -1,0 +1,6 @@
+H=107 S=104 B=100: 8 slots decode 11960, ACK stays 107; 5 slots sees ID 105 and rejects
+using newest by mistake: 13486
+H=108 S=104: stale drop before baseline lookup, zero recovery requests
+missing in-window 106: transport saw 109/110, application ACK stays 107, one request
+older full 108 did not clear request; refresh 111 then delta 112 applied
+exhaustive age controls for D=1..8 and R=0..7 passed
