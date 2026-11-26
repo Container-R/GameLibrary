@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-OPUS-LOOP-REENTRY",
+      "reader_title": "Ogg Opus 循环回跳不连贯，怎样查解码和混音",
+      "canonical_reader_path": "GameLibrary/声音与音乐/音频制作/循环素材/Ogg Opus 循环回跳不连贯，怎样查解码和混音.md",
+      "reader_body_status": "published",
+      "reader_sha256": "2b005615e0020728131f1613359911cba9a2fe02e74395d3d1a1d11d97c25fd9",
+      "source_record": "管理档案/来源笔记/opus-loop-boundaries-20261126.md",
+      "review": "管理档案/审稿/GL-OPUS-LOOP-REENTRY/20261126-review.md",
+      "materials_record": "管理档案/实验/opus-loop-boundaries/README.md"
+    },
+    {
       "internal_id": "GL-TAA-HISTORY-VIEWPORT",
       "reader_title": "动态分辨率切换时，TAA 怎样找准上一帧的有效像素",
       "canonical_reader_path": "GameLibrary/图形渲染/画面呈现/时域抗锯齿/动态分辨率切换时，TAA 怎样找准上一帧的有效像素.md",

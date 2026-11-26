@@ -1,0 +1,28 @@
+audio pages: 20 pre-skip: 312 EOS granule: 94313 shifted: 142313
+FFmpeg float PCM: same 94001 frames; sha256= 693ab30833b2df97898780703823b6af4b95b3603445fa427bf142220f25cf39
+libsndfile-1.2.2
+seek-test.opus metadata frames= 94001 read= 94001
+  full-decode RMS against zero-origin fixture= 0.0
+fresh early landed= 713 read= 701 after= 1414 best lag= 0 error -1/0/+1= 0.04963253 0.00000000 0.04964073
+fresh middle landed= 62513 read= 701 after= 63214 best lag= 0 error -1/0/+1= 0.06389722 0.00000000 0.06400609
+backward re-entry landed= 62513 read= 701 after= 63214 best lag= 0 error -1/0/+1= 0.06389722 0.00000000 0.06400609
+off by one control landed= 62514 read= 701 after= 63215 best lag= 1 error -1/0/+1= 0.08810084 0.06400609 0.00000000
+seek-shifted.opus metadata frames= 94001 read= 94001
+  full-decode RMS against zero-origin fixture= 0.19901212010418648
+  shifted full PCM frames 1000:3000 vs zero-origin start 688 RMS= 0.0
+  shifted full PCM frames 1000:3000 vs zero-origin start 1000 RMS= 0.20946436601987228
+  shifted full PCM frames 1000:3000 vs zero-origin start 1312 RMS= 0.2670134978743443
+  seek PCM RMS vs zero-origin same target= 0.0
+fresh early landed= 713 read= 701 after= 1414 best lag= -2 error -1/0/+1= 0.23457912 0.24002016 0.24460718
+  best entire-stream start for first 24 frames= 1025 701-frame RMS there= 0.0
+  seek PCM RMS vs zero-origin same target= 0.0
+fresh middle landed= 62513 read= 701 after= 63214 best lag= -2 error -1/0/+1= 0.18026095 0.19177477 0.20419193
+  best entire-stream start for first 24 frames= 62825 701-frame RMS there= 0.0
+  seek PCM RMS vs zero-origin same target= 0.0
+backward re-entry landed= 62513 read= 701 after= 63214 best lag= -2 error -1/0/+1= 0.18026095 0.19177477 0.20419193
+  best entire-stream start for first 24 frames= 62825 701-frame RMS there= 0.0
+  seek PCM RMS vs zero-origin same target= 0.0
+off by one control landed= 62514 read= 701 after= 63215 best lag= -2 error -1/0/+1= 0.16834091 0.18015736 0.19165128
+  best entire-stream start for first 24 frames= 62826 701-frame RMS there= 0.0
+seek-test.opus fresh head RMS= 0.00000000 seek(0) head RMS= 0.00000000 tail count= 128 seek tail RMS= 0.00000001 EOF frames= 0
+seek-shifted.opus fresh head RMS= 0.14055027 seek(0) head RMS= 0.00000000 tail count= 128 seek tail RMS= 0.00000001 EOF frames= 0
