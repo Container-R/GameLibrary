@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-HITSTOP-BUFFER-CLOCK",
+      "reader_title": "命中停顿里按下的连招，输入缓冲该从什么时候计时",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/战斗状态/命中停顿里按下的连招，输入缓冲该从什么时候计时.md",
+      "reader_body_status": "published",
+      "reader_sha256": "66f800111a32496f5887cb339794a8fee31f2de5c5c56ce063bed0c973a1a48d",
+      "source_record": "管理档案/来源笔记/hitstop-buffer-clock-20261126.md",
+      "review": "管理档案/审稿/GL-HITSTOP-BUFFER-CLOCK/20261126-review.md",
+      "materials_record": "管理档案/实验/hitstop-buffer-clock/README.md"
+    },
+    {
       "internal_id": "GL-VFX-POOL-DRAIN-RESTART",
       "reader_title": "粒子特效回池后重播，怎样避免被上一轮关掉",
       "canonical_reader_path": "GameLibrary/视觉特效/特效制作/粒子模拟与发射/粒子特效回池后重播，怎样避免被上一轮关掉.md",

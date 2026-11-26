@@ -1,0 +1,6 @@
+event=75 receipt=150 check=155 | event-wall=80:expired | receipt-wall=5:consumed | event-action=15:consumed
+event=85 receipt=86 check=155 | event-wall=70:expired | receipt-wall=69:expired | event-action=10:consumed
+event=85 receipt=145 check=155 | event-wall=70:expired | receipt-wall=10:consumed | event-action=10:consumed
+event=100 receipt=101 check=155 | event-wall=55:expired | receipt-wall=54:consumed | event-action=10:consumed
+event=105 receipt=106 check=155 | event-wall=50:consumed | receipt-wall=49:consumed | event-action=10:consumed
+event=105 receipt=156 check=155 | event-wall=-:undelivered | receipt-wall=-:undelivered | event-action=-:undelivered
