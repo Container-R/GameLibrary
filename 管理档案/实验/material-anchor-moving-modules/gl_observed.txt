@@ -1,0 +1,6 @@
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+llvmpipe (LLVM 19.1.7, 256 bits)
+per-piece      seam-neighbor phases 0.661458 0.005208; one moved probe 0.005208 -> 0.005208; full before/after match=True
+fixed world    seam-neighbor phases 0.661458 0.671875; one moved probe 0.671875 -> 0.494792; full before/after match=False
+shared moving  seam-neighbor phases 0.661458 0.671875; one moved probe 0.671875 -> 0.671875; full before/after match=True
+same point after origin shift: raw world 0.338562 -> 0.005219; shared 0.671875 -> 0.671875
