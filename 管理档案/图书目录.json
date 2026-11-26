@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-TEXTURE-DRAW-MIP-BOUNDARIES",
+      "reader_title": "高分辨率 Mip 已加载，为什么这次绘制还是发糊",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/高分辨率 Mip 已加载，为什么这次绘制还是发糊.md",
+      "reader_body_status": "published",
+      "reader_sha256": "51439e38f1c4762cd731bb2fc9cab9fc73a788aa3346876660d90ce6c87efb2a",
+      "source_record": "管理档案/来源笔记/texture-streaming-wanted-resident-20261127.md",
+      "review": "管理档案/审稿/GL-TEXTURE-DRAW-MIP-BOUNDARIES/20261127-review.md",
+      "materials_record": "管理档案/实验/texture-streaming-wanted-resident/README.md"
+    },
+    {
       "internal_id": "GL-RHYTHM-STOP-DELAY-ROW",
       "reader_title": "音游谱面停在一拍时，这颗音符该在停前还是停后按",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/音游谱面停在一拍时，这颗音符该在停前还是停后按.md",

@@ -1,0 +1,5 @@
+llvmpipe (LLVM 19.1.7, 256 bits)
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+full with sampler minLOD=2: implicit/explicit0/neutral0=[2, 2, 0]; level0_width=256; levels=9
+view of asset mip 2..8: implicit/explicit0/neutral0=[2, 2, 2]; level0_width=64; levels=7
+full with gradient choosing mip 2: implicit/explicit0/neutral0=[2, 0, 0]; level0_width=256; levels=9
