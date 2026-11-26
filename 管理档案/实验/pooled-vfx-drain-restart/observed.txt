@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+explicit stop t=6 once=false loop=false signals=0/0
+reacquire t=10 lease=18 restart_once emitting=true
+old timer t=15 requested=17 current=18 naive_active=false guarded_active=true
+natural_once t=20 first emitting=false
+stop_once t=23 finished emitting=false
+stop_loop t=23 finished emitting=false
+natural_once t=34 finished emitting=false
+restart_once t=42 finished emitting=false
+summary ok=true
