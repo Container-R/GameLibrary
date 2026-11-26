@@ -1,0 +1,6 @@
+serial t=3,10,12,20 [(0, 7, 17), (1, 10, 10), (1, 8, 8), (2, None, 0)]
+serial restore-before-spend then jump: ok
+serial ineligible spend then idle cap without credit: ok
+parallel t=3,10,12,20 [(0, 7, 9), (1, 2, 2), (2, None, 0), (2, None, 0)]
+parallel restore-before-spend then jump: ok
+parallel ineligible spend then idle cap without credit: ok
