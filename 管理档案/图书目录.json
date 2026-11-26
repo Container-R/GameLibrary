@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-SHADER-VARIANT-RUNTIME-EVIDENCE",
+      "reader_title": "构建日志里有着色器变体，为什么成品里还是用不上",
+      "canonical_reader_path": "GameLibrary/引擎与工具/构建发布/着色器构建/构建日志里有着色器变体，为什么成品里还是用不上.md",
+      "reader_body_status": "published",
+      "reader_sha256": "078f5ae8dcffc88940c286b76722458b8ad6d083cf657201498be33cac312ad1",
+      "source_record": "管理档案/来源笔记/shader-variant-runtime-evidence-20261126.md",
+      "review": "管理档案/审稿/GL-SHADER-VARIANT-RUNTIME-EVIDENCE/20261126-review.md",
+      "materials_record": "管理档案/实验/shader-variant-runtime-evidence/README.md"
+    },
+    {
       "internal_id": "GL-HITSTOP-BUFFER-CLOCK",
       "reader_title": "命中停顿里按下的连招，输入缓冲该从什么时候计时",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/战斗状态/命中停顿里按下的连招，输入缓冲该从什么时候计时.md",
