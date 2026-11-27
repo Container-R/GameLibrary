@@ -1,0 +1,8 @@
+llvmpipe (LLVM 19.1.7, 256 bits)
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+sprites_group_A_B left (0.25, 0.0, 0.5) right (0.25, 0.0, 0.5)
+sprites_group_B_A left (0.5, 0.0, 0.25) right (0.5, 0.0, 0.25)
+sprites_interleave left (0.25, 0.0, 0.5) right (0.5, 0.0, 0.25)
+intersecting_cards_A_B left (0.25, 0.0, 0.5) right (0.25, 0.0, 0.5)
+intersecting_cards_B_A left (0.5, 0.0, 0.25) right (0.5, 0.0, 0.25)
+sprites_depth_write left (0.25, 0.0, 0.5) right (0.5, 0.0, 0.0)

@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-PARTICLE-TRANSLUCENCY-SORT-SCOPE",
+      "reader_title": "粒子开了深度排序，为什么两团半透明还是会遮反",
+      "canonical_reader_path": "GameLibrary/视觉特效/特效制作/粒子渲染/粒子开了深度排序，为什么两团半透明还是会遮反.md",
+      "reader_body_status": "published",
+      "reader_sha256": "873952480f63c34abde26999fc61ed9f1b1756b3eb99fe9f5f01865a9404e8fa",
+      "source_record": "管理档案/来源笔记/particle-sort-scope-20261128.md",
+      "review": "管理档案/审稿/GL-PARTICLE-TRANSLUCENCY-SORT-SCOPE/20261128-review.md",
+      "materials_record": "管理档案/实验/粒子排序的作用范围/README.md"
+    },
+    {
       "internal_id": "GL-NARROW-UI-WRAP-BOUNDARIES",
       "reader_title": "窄文本框换行，为什么不能按字符数硬切",
       "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/窄文本框换行，为什么不能按字符数硬切.md",
