@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-NARROW-UI-WRAP-BOUNDARIES",
+      "reader_title": "窄文本框换行，为什么不能按字符数硬切",
+      "canonical_reader_path": "GameLibrary/本地化与无障碍/本地化制作/文字排版/窄文本框换行，为什么不能按字符数硬切.md",
+      "reader_body_status": "published",
+      "reader_sha256": "1acbf2b74c274ee5d6dc6bad2ced684a158d2d03302875f15a8f966d3728514e",
+      "source_record": "管理档案/来源笔记/ui-wrap-boundaries-20261127.md",
+      "review": "管理档案/审稿/GL-NARROW-UI-WRAP-BOUNDARIES/20261127-review.md",
+      "materials_record": "管理档案/实验/窄文本框的换行边界/README.md"
+    },
+    {
       "internal_id": "GL-REPLAY-RNG-DRAW-ORDER",
       "reader_title": "同一个随机种子，为什么重放还是抽到了不同奖励",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/同一个随机种子，为什么重放还是抽到了不同奖励.md",
