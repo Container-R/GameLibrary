@@ -1,0 +1,12 @@
+foreign-probes => 1/4
+foreign-probes / mask only => 0
+foreign-probes / rebake same values => 1/4
+contaminated-values => 1/4
+contaminated-values / mask only => 1/4
+contaminated-values / fix values => 0
+both causes => 7/16
+both causes / mask only => 1/4
+both causes / fix values only => 1/4
+both causes / fix both => 0
+no accepted probes => None
+constant field and x-gradient controls => passed
