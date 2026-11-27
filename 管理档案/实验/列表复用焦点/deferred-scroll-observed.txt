@@ -1,0 +1,4 @@
+reorder: replayed index 1 addresses D; current B resolves to 3
+handoff: clipping, focus mismatch and a stale binding all reject
+new navigation intent: older request cannot scroll or take focus
+removed B: no command; -1 would scroll to the last item C

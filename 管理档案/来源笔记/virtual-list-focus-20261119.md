@@ -12,3 +12,12 @@
 项目策略：稳定业务 ID、一次聚焦意图、行绑定代次各有独立生命周期；同一个 ID／控件仍存在不能替代两项版本核对。转交焦点、筛选回退和不提前排队确认是例子所选的行为，不是上述框架强制策略。
 
 [试件](../实验/列表复用焦点/README.md)固定 Godot 4.6.3，实际产生 Button 信号。无守卫改绑、当前目标正确但按下开始于旧对象、旧滚动与新目标争用、同 ID 重绑代次变化提供反例。记录的业务操作只是内存中的道具 ID 无实际物品转移。日期：2026-11-19 UTC。
+
+## 2026-11-28 补读 Unity 6000.0.22f1：延迟滚动的载荷
+
+固定 GitHub 标签 6000.0.22f1 对应提交 2021617d502418406603ffd8e5cee0f4df3c472e。逐个读取 UIElements C# 文件，不是拿 master 猜这个版本。
+
+- `Controls/ListView.cs` 的 CreateViewController 创建 ListViewController；它与基类 BaseListViewController 未覆写两向 ID 映射，`Collections/Controllers/CollectionViewController.cs` 125–139 默认返回参数本身。只据此讨论普通未换控制器的 ListView，不套用树、自定义控制器或其他版本。
+- `Controls/BaseVerticalCollectionView.cs` 1196–1212 的查找从活动行返回根元素，未检查它在裁剪后的可视区。1404–1432 是索引入口和 ID 入口，后者先转成索引。文档另明示 -1 的末项语义。
+- `Collections/Virtualization/FixedHeightVirtualizationController.cs` 49–87 的分支可以先设置偏移，也可以安排布局不干净时的延迟重试。共享 `VerticalVirtualizationController.cs` 244–279 保存并重放索引；282–330 保存焦点所在索引与行内路径。这里是条件性推断，未测到 Unity 实际发生错滚，不声称动态高度、重建或所有分支顺序相同。
+- Godot 4.7.2 stable 下用远端原脚本重跑，JSON 与 4.6.3 存档逐字一致；仍是普通 Button，不能用来验证 Unity。新添 Python 应用模型直接验证重排后索引错位、无目标拒绝、行代次和可见性检查。没有运行 Unity。
