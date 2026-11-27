@@ -1,0 +1,4 @@
+held opener and retry: ['opened/cancel-focused', 'ignored', 'ignored', 'discarded'] still present ['B']
+same identity but newer version: stale, no discard
+old dialog rejected; fresh cancel leaves B version 2
+retry-safe and fresh explicit confirm commits only bound A
