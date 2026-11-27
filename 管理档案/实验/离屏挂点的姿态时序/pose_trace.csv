@@ -1,0 +1,16 @@
+case,frame,requested_sample_id,socket_valid,component_world_x_cm,used_pose_id,socket_component_x_cm,published_id_after_producer,returned_world_x_cm
+normal,2,2,True,200,2,20,2,220
+normal,3,3,True,300,3,30,3,330
+normal,4,4,True,400,4,40,4,440
+stale,2,2,True,200,1,10,1,210
+stale,3,3,True,300,1,10,1,310
+stale,4,4,True,400,4,40,4,440
+early,2,2,True,200,1,10,2,210
+early,3,3,True,300,2,20,3,320
+early,4,4,True,400,3,30,4,430
+missing,2,2,False,200,,,2,200
+missing,3,3,False,300,,,3,300
+missing,4,4,False,400,,,4,400
+fresh_same_value,2,2,True,200,2,10,2,210
+fresh_same_value,3,3,True,300,3,10,3,310
+fresh_same_value,4,4,True,400,4,10,4,410

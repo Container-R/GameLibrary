@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-OFFSCREEN-SOCKET-POSE-FRESHNESS",
+      "reader_title": "角色离开镜头后，道具挂点为什么还在用旧姿势",
+      "canonical_reader_path": "GameLibrary/角色动画/动画运行时/姿态更新/角色离开镜头后，道具挂点为什么还在用旧姿势.md",
+      "reader_body_status": "published",
+      "reader_sha256": "0e3e719f1e80ba39eaf32f6c1d375cd2707294dfc88f1659f552c5f4b82eef35",
+      "source_record": "管理档案/来源笔记/offscreen-socket-pose-20261127.md",
+      "review": "管理档案/审稿/GL-OFFSCREEN-SOCKET-POSE-FRESHNESS/20261127-review.md",
+      "materials_record": "管理档案/实验/离屏挂点的姿态时序/README.md"
+    },
+    {
       "internal_id": "GL-UNITY-INPUT-PACKAGE-BACKPORT",
       "reader_title": "Unity 2022.3 要用新版 Input System 的修复，能只移植输入包吗？",
       "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/Unity 2022.3 要用新版 Input System 的修复，能只移植输入包吗？.md",
