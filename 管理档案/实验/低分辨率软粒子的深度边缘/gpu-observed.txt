@@ -1,0 +1,10 @@
+llvmpipe (LLVM 19.1.7, 256 bits)
+4.5 (Core Profile) Mesa 25.0.7-2+deb13u1
+full [255, 0, 255, 255]
+nearest+bilinear [0, 64, 191, 255]
+nearest+depth pick [255, 0, 255, 255]
+farthest+bilinear [255, 255, 255, 255]
+mean+bilinear [255, 255, 255, 255]
+alternating full [255, 0, 255, 0]
+alternating depth pick [0, 0, 0, 0]
+alternating full fallback [255, 0, 255, 0]
