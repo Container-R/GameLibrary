@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-UNITY-INPUT-PACKAGE-BACKPORT",
+      "reader_title": "Unity 2022.3 要用新版 Input System 的修复，能只移植输入包吗？",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/输入接入/Unity 2022.3 要用新版 Input System 的修复，能只移植输入包吗？.md",
+      "reader_body_status": "published",
+      "reader_sha256": "8d9437f9ca6956866b2dcff16b84e04c01440ba3d4f11eaff50be00bd8a25607",
+      "source_record": "管理档案/来源笔记/unity-input-package-backport-20261127.md",
+      "review": "管理档案/审稿/GL-UNITY-INPUT-PACKAGE-BACKPORT/20261127-review.md",
+      "materials_record": "管理档案/实验/Unity输入包的复合绑定组/README.md"
+    },
+    {
       "internal_id": "GL-HOLD-CONFIRM-ACCESSIBILITY",
       "reader_title": "不用长按，怎样让玩家有意地确认丢弃道具",
       "canonical_reader_path": "GameLibrary/本地化与无障碍/无障碍设计/输入操作/不用长按，怎样让玩家有意地确认丢弃道具.md",
