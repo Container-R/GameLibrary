@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+shared resource: A repeats, adjacent resource calls alternate
+separate resources: A's second call avoids A's first
+duplicate child resource: two entries can yield the same sound
+instantiate without start: still advances history
+9:1 weights, 100 strict alternating selections: 50/50
