@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+{"after":"8547704076954184852","before":"-4545662862090874135","caller":"reward","case":"baseline","event":"open_a","raw":1475472157,"stream":"reward","tick":10}
+{"after":"-4742634819360439133","before":"8547704076954184852","caller":"reward","case":"baseline","event":"open_b","raw":452153291,"stream":"reward","tick":12}
+{"after":"7845161488652824646","before":"-4742634819360439133","caller":"reward","case":"baseline","event":"open_c","raw":3125966219,"stream":"reward","tick":14}
+{"after":"8547704076954184852","before":"-4545662862090874135","caller":"reward","case":"shared","event":"open_a","raw":1475472157,"stream":"reward","tick":10}
+{"after":"-4742634819360439133","before":"8547704076954184852","caller":"preview","case":"shared","event":"sparkle","raw":452153291,"stream":"reward","tick":11}
+{"after":"7845161488652824646","before":"-4742634819360439133","caller":"reward","case":"shared","event":"open_b","raw":3125966219,"stream":"reward","tick":12}
+{"after":"-555595734499526419","before":"7845161488652824646","caller":"reward","case":"shared","event":"open_c","raw":4179419015,"stream":"reward","tick":14}
+{"after":"8547704076954184852","before":"-4545662862090874135","caller":"reward","case":"isolated","event":"open_a","raw":1475472157,"stream":"reward","tick":10}
+{"after":"-2173988639100612972","before":"-344603949552747287","caller":"preview","case":"isolated","event":"sparkle","raw":3454112092,"stream":"visual","tick":11}
+{"after":"-4742634819360439133","before":"8547704076954184852","caller":"reward","case":"isolated","event":"open_b","raw":452153291,"stream":"reward","tick":12}
+{"after":"7845161488652824646","before":"-4742634819360439133","caller":"reward","case":"isolated","event":"open_c","raw":3125966219,"stream":"reward","tick":14}
+{"baseline_bucket_b":1,"case":"checkpoint","expected":[452153291,2828097923],"full":[452153291,2828097923],"partial":[452153291,3454112092],"seed_only":[1475472157,3454112092],"shared_bucket_b":1}

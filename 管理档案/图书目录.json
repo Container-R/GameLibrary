@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-REPLAY-RNG-DRAW-ORDER",
+      "reader_title": "同一个随机种子，为什么重放还是抽到了不同奖励",
+      "canonical_reader_path": "GameLibrary/玩法程序/玩法系统/时间与模拟/同一个随机种子，为什么重放还是抽到了不同奖励.md",
+      "reader_body_status": "published",
+      "reader_sha256": "80eb97d9ea4928f43c8b5a74198f14e5627ca3d8d5e524f07d0861ede9bd37c9",
+      "source_record": "管理档案/来源笔记/replay-rng-draw-order-20261127.md",
+      "review": "管理档案/审稿/GL-REPLAY-RNG-DRAW-ORDER/20261127-review.md",
+      "materials_record": "管理档案/实验/重放与随机取数顺序/README.md"
+    },
+    {
       "internal_id": "GL-OFFSCREEN-SOCKET-POSE-FRESHNESS",
       "reader_title": "角色离开镜头后，道具挂点为什么还在用旧姿势",
       "canonical_reader_path": "GameLibrary/角色动画/动画运行时/姿态更新/角色离开镜头后，道具挂点为什么还在用旧姿势.md",
