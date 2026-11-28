@@ -1,0 +1,9 @@
+reference         sampled_angle=+0 tip_x=+1.750 box_pass=1 geometry_overlap=1
+imported box      sampled_angle=+0 tip_x=+0.250 box_pass=0 geometry_overlap=1
+fixed box         sampled_angle=+0 tip_x=+0.250 box_pass=1 geometry_overlap=1
+replay stale pose sampled_angle=+60 tip_x=-0.375 box_pass=1 geometry_overlap=0
+endpoint only     sampled_angle=-60 tip_x=-0.375 box_pass=0 geometry_overlap=0
+endpoint only     sampled_angle=+60 tip_x=-0.375 box_pass=0 geometry_overlap=0
+missed midpoint   sampled_angle=+0 tip_x=+0.250 box_pass=0 geometry_overlap=1
+loose box         sampled_angle=+0 tip_x=-1.750 box_pass=1 geometry_overlap=0
+tight box far     sampled_angle=+0 tip_x=-1.750 box_pass=0 geometry_overlap=0

@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-SKINNED-MESH-BOUNDS",
+      "reader_title": "蒙皮角色在镜头边缘消失，先查姿态还是包围盒",
+      "canonical_reader_path": "GameLibrary/角色动画/角色变形/蒙皮/蒙皮角色在镜头边缘消失，先查姿态还是包围盒.md",
+      "reader_body_status": "published",
+      "reader_sha256": "e7834ddc54554093a91e65ac3c83c8999fde4e3b8bac54ca16412aa069043914",
+      "source_record": "管理档案/来源笔记/skinned-mesh-bounds-20261128.md",
+      "review": "管理档案/审稿/GL-SKINNED-MESH-BOUNDS/20261128-review.md",
+      "materials_record": "管理档案/实验/蒙皮角色的剔除包围盒/README.md"
+    },
+    {
       "internal_id": "GL-DECAL-OVERLAP-LAYERING",
       "reader_title": "同一面墙上的重叠贴花，为什么会互换上下层",
       "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/同一面墙上的重叠贴花，为什么会互换上下层.md",
