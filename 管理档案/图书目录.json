@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-DECAL-OVERLAP-LAYERING",
+      "reader_title": "同一面墙上的重叠贴花，为什么会互换上下层",
+      "canonical_reader_path": "GameLibrary/技术美术/环境管线/纹理与材质/同一面墙上的重叠贴花，为什么会互换上下层.md",
+      "reader_body_status": "published",
+      "reader_sha256": "cf21c2344c9dd7b93aebf627764b4387bdd98c755b23bc1707420d077e432e4a",
+      "source_record": "管理档案/来源笔记/decal-overlap-layering-20261128.md",
+      "review": "管理档案/审稿/GL-DECAL-OVERLAP-LAYERING/20261128-review.md",
+      "materials_record": "管理档案/实验/重叠贴花的遍历顺序/README.md"
+    },
+    {
       "internal_id": "GL-PREFAB-RADIUS-OVERRIDES",
       "reader_title": "改了基础敌人的碰撞体，为什么有些预制体变体没更新",
       "canonical_reader_path": "GameLibrary/引擎与工具/资产工具/预制体继承与覆写/改了基础敌人的碰撞体，为什么有些预制体变体没更新.md",

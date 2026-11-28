@@ -1,0 +1,4 @@
+fillers=30 indices=(30, 31) masks=0xc0000000 visit=BA rgb=(0.5, 0.0, 0.25)
+fillers=31 indices=(31, 32) masks=0x80000000,0x00000001 visit=AB rgb=(0.25, 0.0, 0.5)
+fillers=32 indices=(32, 33) masks=0x00000000,0x00000003 visit=BA rgb=(0.5, 0.0, 0.25)
+Controls: shuffled input, isolated decals, and opaque top layer passed
