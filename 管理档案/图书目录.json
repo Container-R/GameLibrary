@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-PREFAB-RADIUS-OVERRIDES",
+      "reader_title": "改了基础敌人的碰撞体，为什么有些预制体变体没更新",
+      "canonical_reader_path": "GameLibrary/引擎与工具/资产工具/预制体继承与覆写/改了基础敌人的碰撞体，为什么有些预制体变体没更新.md",
+      "reader_body_status": "published",
+      "reader_sha256": "cbcee71b36344cc3f079ed0f1efd90d37d88574415fdbff9765ad06562b42470",
+      "source_record": "管理档案/来源笔记/prefab-radius-overrides-20261128.md",
+      "review": "管理档案/审稿/GL-PREFAB-RADIUS-OVERRIDES/20261128-review.md",
+      "materials_record": "管理档案/实验/预制体半径覆写/README.md"
+    },
+    {
       "internal_id": "GL-MATCHMAKING-WAIT-SUCCESS-BIAS",
       "reader_title": "匹配成功的人等得更少，排队真的变快了吗",
       "canonical_reader_path": "GameLibrary/数据分析/指标设计/玩家行为/匹配成功的人等得更少，排队真的变快了吗.md",

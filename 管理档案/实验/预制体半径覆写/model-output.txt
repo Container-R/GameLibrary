@@ -1,0 +1,5 @@
+before: 0.40 [BaseEnemy] | 0.35 [Scout] | 0.35 [Scout] | 0.30 [Scout-B]
+update base: 0.50 [BaseEnemy] | 0.35 [Scout] | 0.35 [Scout] | 0.30 [Scout-B]
+revert scene only: 0.50 [BaseEnemy] | 0.35 [Scout] | 0.35 [Scout] | 0.35 [Scout]
+revert variant only: 0.50 [BaseEnemy] | 0.50 [BaseEnemy] | 0.50 [BaseEnemy] | 0.30 [Scout-B]
+second base update: 0.55 [BaseEnemy] | 0.55 [BaseEnemy] | 0.55 [BaseEnemy] | 0.30 [Scout-B]
