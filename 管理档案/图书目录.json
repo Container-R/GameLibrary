@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-LAG-COMPENSATION-BLOCKER-TIME",
+      "reader_title": "延迟补偿查的是旧目标，门也用旧状态吗",
+      "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/延迟补偿/延迟补偿查的是旧目标，门也用旧状态吗.md",
+      "reader_body_status": "published",
+      "reader_sha256": "cdba2f7e1455b937914571a37841a2147d3b6fd5befbba790d933961c336135e",
+      "source_record": "管理档案/来源笔记/lag-compensation-blocker-time-20261128.md",
+      "review": "管理档案/审稿/GL-LAG-COMPENSATION-BLOCKER-TIME/20261128-review.md",
+      "materials_record": "管理档案/实验/延迟补偿的动态阻挡/README.md"
+    },
+    {
       "internal_id": "GL-INK-LOOKAHEAD-SIDE-EFFECTS",
       "reader_title": "ink 对话还没显示下一句，为什么游戏动作已经执行",
       "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/对白推进与游戏交接/ink 对话还没显示下一句，为什么游戏动作已经执行.md",

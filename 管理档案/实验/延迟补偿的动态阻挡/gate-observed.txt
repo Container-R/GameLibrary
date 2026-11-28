@@ -1,0 +1,5 @@
+open->closed     historical=reached [target@31/4]; current=blocked [gate@15/4,target@31/4]
+closed->open     historical=blocked [gate@15/4,target@31/4]; current=reached [target@31/4]
+closed static    historical=blocked [gate@15/4,target@31/4]; current=blocked [gate@15/4,target@31/4]
+gate removed     historical=reached [target@31/4]; current=reached [target@31/4]
+target off line  historical=miss    [-]; current=miss    [-]
