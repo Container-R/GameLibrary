@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-INK-LOOKAHEAD-SIDE-EFFECTS",
+      "reader_title": "ink 对话还没显示下一句，为什么游戏动作已经执行",
+      "canonical_reader_path": "GameLibrary/叙事设计/运行时叙事/对白推进与游戏交接/ink 对话还没显示下一句，为什么游戏动作已经执行.md",
+      "reader_body_status": "published",
+      "reader_sha256": "088c7bf015548bfaec2f3f30f1670a398a1b34a24ec2cf7e6f537d6eb4c350c4",
+      "source_record": "管理档案/来源笔记/ink-lookahead-side-effects-20261128.md",
+      "review": "管理档案/审稿/GL-INK-LOOKAHEAD-SIDE-EFFECTS/20261128-review.md",
+      "materials_record": "管理档案/实验/ink前瞻与宿主动作/README.md"
+    },
+    {
       "internal_id": "GL-SKINNED-MESH-BOUNDS",
       "reader_title": "蒙皮角色在镜头边缘消失，先查姿态还是包围盒",
       "canonical_reader_path": "GameLibrary/角色动画/角色变形/蒙皮/蒙皮角色在镜头边缘消失，先查姿态还是包围盒.md",

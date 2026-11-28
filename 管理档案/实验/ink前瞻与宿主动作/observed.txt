@@ -1,0 +1,9 @@
+action lookaheadSafe=True  Continue#1: 等我看一下。 ink=0 host=1
+action lookaheadSafe=True  Continue#2: 许可已经签好。 ink=1 host=2
+action lookaheadSafe=False Continue#1: 等我看一下。 ink=0 host=0
+action lookaheadSafe=False Continue#2: 许可已经签好。 ink=1 host=1
+pure read lookaheadSafe=True  calls=1 lines=出口在 北门。
+pure read lookaheadSafe=False calls=1 lines=出口在 | 北门。
+tag Continue#1: 等我看一下。 tags=0 grants=0
+tag Continue#2: 许可已经签好。 tags=1 grants=1
+tag replay: 许可已经签好。 tags=1 grants=1
