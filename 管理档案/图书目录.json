@@ -7,6 +7,16 @@
   },
   "entries": [
     {
+      "internal_id": "GL-AUDIO-OCCLUSION-GAIN-SMOOTHING",
+      "reader_title": "音源经过门框时，遮挡音量为什么会啪一声",
+      "canonical_reader_path": "GameLibrary/声音与音乐/游戏音效/空间音频/音源经过门框时，遮挡音量为什么会啪一声.md",
+      "reader_body_status": "published",
+      "reader_sha256": "275446a4ffba75fc44d577be2338f504f2d300fa16d829a06a11340d0e42dde2",
+      "source_record": "管理档案/来源笔记/audio-occlusion-parameter-smoothing-20261128.md",
+      "review": "管理档案/审稿/GL-AUDIO-OCCLUSION-GAIN-SMOOTHING/20261128-review.md",
+      "materials_record": "管理档案/实验/遮挡增益的样本过渡/README.md"
+    },
+    {
       "internal_id": "GL-LAG-COMPENSATION-BLOCKER-TIME",
       "reader_title": "延迟补偿查的是旧目标，门也用旧状态吗",
       "canonical_reader_path": "GameLibrary/网络与在线服务/实时同步/延迟补偿/延迟补偿查的是旧目标，门也用旧状态吗.md",

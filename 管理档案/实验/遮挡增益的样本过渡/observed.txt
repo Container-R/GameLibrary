@@ -1,0 +1,11 @@
+ffmpeg version 7.1.5-0+deb13u1
+48 kHz; carrier 1 kHz; transitions at 25 and 30 ms; tau 5 ms
+mode jump@25ms gain@30ms jump@30ms gain@45ms
+steady 0.004278 1.000000 0.004278 1.000000
+step 0.395722 0.200000 0.000856 0.200000
+smooth 0.004278 0.494304 0.001505 0.214653
+retarget 0.004278 0.494304 0.001505 0.974823
+restart-old-target 0.004278 0.200000 0.145647 0.960170
+control scores 0.20,0.49,0.51,0.48,0.52,0.49,0.70,0.55,0.45,0.30
+single threshold 0010101100 changes 6
+hysteresis 0000001110 changes 2
